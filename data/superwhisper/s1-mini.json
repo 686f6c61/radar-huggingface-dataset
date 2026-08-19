@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "superwhisper/s1-mini",
+  "slug": "superwhisper-s1-mini",
+  "author": "superwhisper",
+  "url": "https://huggingface.co/superwhisper/s1-mini",
+  "created_at": "2026-08-12T14:33:55.000Z",
+  "updated_at": "2026-08-19T14:50:21.000Z",
+  "license": "s1-mini-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "asr",
+    "text-normalization",
+    "inverse-text-normalization",
+    "punctuation",
+    "truecasing",
+    "speech-to-text",
+    "dictation",
+    "post-processing",
+    "conversational",
+    "en",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 34,
+  "downloads_30d": 0,
+  "trending_score": 34,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 3018177329,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models in Superwhisper: Speech Recognition and Language Models",
+      "url": "https://superwhisper.com/models",
+      "snippet": "Under the hood AI models in Superwhisper Whisper, Parakeet, Ultra, Claude, GPT-5, Gemini, and more. Pick the model that fits the job and your hardware."
+    },
+    {
+      "title": "superwhisper/s1-mini-GGUF · Hugging Face",
+      "url": "https://huggingface.co/superwhisper/s1-mini-GGUF",
+      "snippet": "superwhisper / s1-mini-GGUF like 0 Follow Superwhisper 6 Text Generation GGUF English asr text-normalization inverse-text-normalization punctuation truecasing speech-to-text dictation post-processing qwen3 llama.cpp conversational arxiv:2505.09388 License:s1-mini-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "Superwhisper Release Notes - August 2026 Latest Updates - Releasebot",
+      "url": "https://releasebot.io/updates/superwhisper",
+      "snippet": "Superwhisper adds theme controls, new sound effect options, experimental S1-Mini local model access, improved vocabulary processing, share cards, and reliability fixes for meeting mode, downloads, animations, and local model output quality."
+    },
+    {
+      "title": "Voice - Superwhisper",
+      "url": "https://superwhisper.com/docs/models/voice",
+      "snippet": "Compare Superwhisper&#x27;s voice-to-text models — cloud and local options for fast, accurate transcription in 100+ languages."
+    },
+    {
+      "title": "superwhisper-toolkit/docs/model-selection.md at main - GitHub",
+      "url": "https://github.com/GolfCloud/superwhisper-toolkit/blob/main/docs/model-selection.md",
+      "snippet": "Cleanup models Everyday — S1-Language Best starting point for frequent, low-complexity cleanup where latency matters. Alternatives: GPT-5.4 nano for a fast cloud option, GPT-5.4 mini for stronger rewriting, or Ministral 3 8B for local cleanup on Mac."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lunarly0/han-model-merged",
+  "slug": "lunarly0-han-model-merged",
+  "author": "lunarly0",
+  "url": "https://huggingface.co/lunarly0/han-model-merged",
+  "created_at": "2026-08-08T17:19:43.000Z",
+  "updated_at": "2026-08-19T19:05:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "base_model:Sao10K/L3-8B-Stheno-v3.2",
+    "base_model:merge:Sao10K/L3-8B-Stheno-v3.2",
+    "base_model:ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1",
+    "base_model:merge:ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 726,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060557000,
+  "storage_human": "16.1 GB",
+  "base_model": "ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1, Sao10K/L3-8B-Stheno-v3.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lunarly0/han-model-merged · Hugging Face",
+      "url": "https://huggingface.co/lunarly0/han-model-merged",
+      "snippet": "Instructions to use lunarly0/han-model-merged with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use lunarly0/han-model-merged with Transformers:"
+    },
+    {
+      "title": "lunarly0 (ns) - Hugging Face",
+      "url": "https://huggingface.co/lunarly0/models",
+      "snippet": "Recent Activity updated a model1 day ago lunarly0/han-model-merged updated a model2 days ago lunarly0/han-npc-gguf published a model2 days ago lunarly0/han-npc-gguf View all activity"
+    },
+    {
+      "title": "han-model-merged API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/lunarly0/han-model-merged",
+      "snippet": "Run han-model-merged with FriendliAI inference. This is a merge of pre-trained language models created using mergekit."
+    },
+    {
+      "title": "modelmap",
+      "url": "https://modelmap.cc/",
+      "snippet": "modelmap Paste a Hugging Face model id. Get a living map of the network — no weights downloaded."
+    },
+    {
+      "title": "Lunarly0&#x27;s Collection - Collection by Lunarly0 - itch.io",
+      "url": "https://itch.io/c/3205741/lunarly0s-collection",
+      "snippet": "a collection by Lunarly0 · last updated 2023-03-24 06:57:56 Follow Lunarly0Following Lunarly0Unfollow Lunarly0 Stable Diffusion | AI Image Generator GUI | aiimag.es Enter text, receive images from the AI Sunija"
+    }
+  ]
+}

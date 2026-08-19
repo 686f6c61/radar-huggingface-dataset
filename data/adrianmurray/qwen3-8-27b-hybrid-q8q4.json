@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "adrianmurray/Qwen3.8-27B-Hybrid-Q8Q4",
+  "slug": "adrianmurray-qwen3-8-27b-hybrid-q8q4",
+  "author": "adrianmurray",
+  "url": "https://huggingface.co/adrianmurray/Qwen3.8-27B-Hybrid-Q8Q4",
+  "created_at": "2026-08-19T15:35:43.000Z",
+  "updated_at": "2026-08-19T15:36:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "quantized",
+    "hybrid-q8-q4",
+    "qwen",
+    "reasoning",
+    "coding",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5646114304,
+  "parameters_human": "5.65B",
+  "storage_bytes": 18455226649,
+  "storage_human": "18.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Fine-tuned Models for Qwen/Qwen3.8-27B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Qwen/Qwen3.8-27B",
+      "snippet": "Active filters: Qwen/Qwen3.8-27B. Clear all. AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16. Text Generation • 28B • Updated about 19 hours ago • 4.91k • • 131"
+    }
+  ]
+}

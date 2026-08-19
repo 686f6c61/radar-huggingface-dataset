@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "tel1980/qwen-python-slm",
+  "slug": "tel1980-qwen-python-slm",
+  "author": "tel1980",
+  "url": "https://huggingface.co/tel1980/qwen-python-slm",
+  "created_at": "2026-08-19T13:30:31.000Z",
+  "updated_at": "2026-08-19T13:45:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "python",
+    "sql",
+    "pyspark",
+    "qlora",
+    "ollama",
+    "gguf",
+    "conversational",
+    "arxiv:2409.12186",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Qwen Code Qwen Code is an open-source AI agent for the terminal, optimized for Qwen models. It helps you understand large codebases, automate tedious work, and ship faster. Follow its documentation to get started!"
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "GitHub - s0d3s/qwen-python: A library highly focused on interacting ...",
+      "url": "https://github.com/s0d3s/qwen-python",
+      "snippet": "This library is designed to streamline interaction with Qwen, the powerful AI model developed by Alibaba. It provides a simple yet efficient interface for leveraging QwenAPI, making it easier to integrate Alibaba&#x27;s cutting-edge language models into various applications."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen — Model Architecture Across Generations — Model Architectures — A ...",
+      "url": "https://karam-nus.github.io/models/01_Qwen",
+      "snippet": "🟣 Qwen — Model Architecture Across Generations From a competitive Chinese LLM to a global open-weight powerhouse — tracing 5 generations of architecture evolution."
+    }
+  ]
+}

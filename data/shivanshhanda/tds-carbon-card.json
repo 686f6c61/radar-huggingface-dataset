@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ShivanshHanda/tds-carbon-card",
+  "slug": "shivanshhanda-tds-carbon-card",
+  "author": "ShivanshHanda",
+  "url": "https://huggingface.co/ShivanshHanda/tds-carbon-card",
+  "created_at": "2026-08-19T18:24:43.000Z",
+  "updated_at": "2026-08-19T18:26:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shyam1504/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shyam1504/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "carbontxt.org",
+      "url": "https://carbontxt.org/ai-model-cards",
+      "snippet": "AI Model Sustainability Directory Using the carbon.txt syntax and validator, we have extracted the sustainability data from over 2500 AI model cards from Hugging Face that are listed with co2_eq_emissions metadata."
+    },
+    {
+      "title": "DarkByt31 (Shivansh Handa) · GitHub",
+      "url": "https://github.com/DarkByt31",
+      "snippet": "DarkByt31 has 15 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Sustainable AI: Measuring and Reducing Carbon Footprint in Model ...",
+      "url": "https://www.researchgate.net/publication/392727729_Sustainable_AI_Measuring_and_Reducing_Carbon_Footprint_in_Model_Training_and_Deployment",
+      "snippet": "This research article addresses the escalating environmental impact of Artificial Intelligence (AI) and Machine Learning (ML) systems, focusing specifically on the carbon footprint generated ..."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

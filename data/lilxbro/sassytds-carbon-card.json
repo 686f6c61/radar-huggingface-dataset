@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LiLXBro/sassytds-carbon-card",
+  "slug": "lilxbro-sassytds-carbon-card",
+  "author": "LiLXBro",
+  "url": "https://huggingface.co/LiLXBro/sassytds-carbon-card",
+  "created_at": "2026-08-19T15:05:24.000Z",
+  "updated_at": "2026-08-19T15:06:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "Model Cards · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/model-cards",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI model cards in carbon.txt and an AI Sustainability Directory",
+      "url": "https://www.thegreenwebfoundation.org/news/ai-model-cards-in-carbon-txt/",
+      "snippet": "An example carbon.txt disclosure for the bigscience/bloom model on Hugging Face. What about users of AI models? The code snippet above is how you would reference a model card from within a carbon.txt file if you are the organisation that trained it. But the majority of organisations are probably using AI models, most likely from a hosted service."
+    },
+    {
+      "title": "Billy&#x27;s Cardboard Cars - | Stable Diffusion Model - tensorhub.art",
+      "url": "https://tensorhub.art/models/861679001586949160",
+      "snippet": "Model Description: This LoRA model adapts Stable Diffusion XL (SDXL) to generate images of vehicles constructed from cardboard. While the trigger word is Cardboard Cars, the model is capable of generating a wide variety of ground vehicles - including trucks, motorbikes and more - in the cardboard aesthetic. Experimentation may reveal it also produces other vehicle types, such as airplanes and ..."
+    },
+    {
+      "title": "Cardboard Fantasy | [XL] - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/ea240636b295e318e1c7b326764d2281",
+      "snippet": "Meet Cardboard Fantasy | [XL] model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    }
+  ]
+}

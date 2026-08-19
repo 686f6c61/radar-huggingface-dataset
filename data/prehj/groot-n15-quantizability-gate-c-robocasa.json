@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "prehj/groot-n15-quantizability-gate-C-robocasa",
+  "slug": "prehj-groot-n15-quantizability-gate-c-robocasa",
+  "author": "prehj",
+  "url": "https://huggingface.co/prehj/groot-n15-quantizability-gate-C-robocasa",
+  "created_at": "2026-08-19T17:32:27.000Z",
+  "updated_at": "2026-08-19T17:37:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "vision-language-action",
+    "gr00t",
+    "action-quantization",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2724114368,
+  "parameters_human": "2.72B",
+  "storage_bytes": 7585875720,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "GR00T N1.5 - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1_5/",
+      "snippet": "Introduction We introduce GR00T N1.5, an upgraded version of the GR00T N1 foundation model for humanoid robots. With several architecture, data and modeling improvements, we find that N1.5 outperforms N1 on both simulated manipulation benchmarks and on the real GR-1 robot, detailed below."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T What&#x27;s New in GR00T N1.7 Installation LeRobot Integration Model Checkpoints & Embodiment Tags Data Format Inference Fine-tuning Evaluation Contributions License Citation"
+    },
+    {
+      "title": "yirongjie/UAV-Isaac-GR00T: NVIDIA Isaac GR00T N1.5 - GitHub",
+      "url": "https://github.com/yirongjie/UAV-Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.5 is an open foundation model for generalized humanoid robot reasoning and skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "Gr00t-N1.5 - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n15/",
+      "snippet": "Introduction We introduce Gr00t-N1.5, an upgraded version of the Gr00t-N1 foundation model for humanoid robots. With several architecture, data and modeling improvements, we find that N1.5 outperforms N1 on both simulated manipulation benchmarks and on the real GR-1 robot, detailed below. We expect users of N1.5 should observe better performance compared to N1, in particular improved ..."
+    }
+  ]
+}

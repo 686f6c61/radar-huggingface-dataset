@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "standjones/mirror-unconst-affine-5czsc2fc98-r579-r252-odpo-midrank-longctx-megaextra-merged",
+  "slug": "standjones-mirror-unconst-affine-5czsc2fc98-r579-r252-odpo-midrank-longctx-megaextra-merged",
+  "author": "standjones",
+  "url": "https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r579-r252-odpo-midrank-longctx-megaextra-merged",
+  "created_at": "2026-08-17T00:06:57.000Z",
+  "updated_at": "2026-08-17T00:07:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "affine",
+    "sn120",
+    "offline-dpo",
+    "reason-v3",
+    "base_model:unconst/Affine-5czsc2fc98-r252-merged",
+    "base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "unconst/Affine-5czsc2fc98-r252-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mirror-unconst-affine-5czsc2fc98-r579-r252-odpo-midrank-longctx ...",
+      "url": "https://huggingface.co/standjones/mirror-unconst-affine-5czsc2fc98-r579-r252-odpo-midrank-longctx-megaextra-merged",
+      "snippet": "Axis note: LongCtx×MidRank MegaExtraSteps on crowned r252. Distinct from LongCtx×MidRank Ultra R570, LongCtx×MidRank MidExtra R567, LongCtx×MidRank ExtraSteps R557, LongCtx×HiRank Ultra R575, Soft/Mid/Short Ultra matrix, Online R552, GRPO R565/R577."
+    },
+    {
+      "title": "unconst/Affine-5czsc2fc98-h67-merged · Hugging Face",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-h67-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "APKMirror - Free and safe Android APK downloads",
+      "url": "https://www.apkmirror.com/",
+      "snippet": "Free and safe Android APK downloads"
+    }
+  ]
+}

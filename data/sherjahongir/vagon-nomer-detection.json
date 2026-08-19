@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sherjahongir/vagon-nomer-detection",
+  "slug": "sherjahongir-vagon-nomer-detection",
+  "author": "sherjahongir",
+  "url": "https://huggingface.co/sherjahongir/vagon-nomer-detection",
+  "created_at": "2026-08-19T13:55:36.000Z",
+  "updated_at": "2026-08-19T13:56:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6256490,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vagonnumberdetection Model by Sherjahongir Tursunmurodov",
+      "url": "https://platform.ultralytics.com/sherjahongir-tursunmurodov/sweet-grasshopper/vagonnumberdetection",
+      "snippet": "Vagonnumberdetection model from the Sweet Grasshopper project by Sherjahongir Tursunmurodov. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "Vagonnumberdetection Model by Sherjahongir Tursunmurodov 2",
+      "url": "https://platform.ultralytics.com/sherjahongir-tursunmurodov-2/kind-llama/vagonnumberdetection",
+      "snippet": "Vagonnumberdetection model from the Kind Llama project by Sherjahongir Tursunmurodov 2. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "sherjahongir (Sher_jahongir) - Hugging Face",
+      "url": "https://huggingface.co/sherjahongir",
+      "snippet": "User profile of Sher_jahongir on Hugging Face"
+    },
+    {
+      "title": "GitHub - tfortamal/Wagon-Number-Detection: This repository contains the ...",
+      "url": "https://github.com/tfortamal/Wagon-Number-Detection",
+      "snippet": "This repository contains the code for Train Wagon number Detection and Extraction System using EasyOCR and YOLOv8 algorithm by ultralytics for object classification on custom data."
+    },
+    {
+      "title": "Sherjahongir Tursunmurodov - AI/ML Engineer | LinkedIn",
+      "url": "https://uz.linkedin.com/in/sherjahongir-tursunmurodov-aa21b6425",
+      "snippet": "AI/ML Engineer · Middle AI/ML Engineer with hands-on experience building computer vision and automation systems for real enterprise environments. Currently working at Tenzorsoft, where I develop and fine-tune object detection models for production use — including a train wagon number recognition system that processes live video streams and improved accuracy from 78% to 90%+. I also build ..."
+    }
+  ]
+}

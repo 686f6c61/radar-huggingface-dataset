@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Ornith-1.5-35B-A3B-oQ4e-fp16-mtp",
+  "slug": "scottlowry-ornith-1-5-35b-a3b-oq4e-fp16-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ4e-fp16-mtp",
+  "created_at": "2026-08-19T15:35:59.000Z",
+  "updated_at": "2026-08-19T15:54:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6190932912,
+  "parameters_human": "6.19B",
+  "storage_bytes": 22519274388,
+  "storage_human": "22.5 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for ornith-ai/Ornith-1.5-35B-A3B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: ornith-ai/Ornith-1.5-35B-A3B Clear all"
+    },
+    {
+      "title": "scottlowry (Scott Lowry) - Hugging Face",
+      "url": "https://huggingface.co/scottlowry/models",
+      "snippet": "User profile of Scott Lowry on Hugging Face"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Verified the self-improving coding model &#x27;Ornith-1.0&#x27; in 9B and 35B (9B ...",
+      "url": "https://note.com/zephel01/n/nb64f1495778b?hl=en",
+      "snippet": "This time, I am benchmarking Ornith-1.0 released by DeepReinforce AI. It is a self-improving open-source model family specialized for &#x27;agentic coding,&#x27; launched with a lineup of 9B-Dense, 35B-MoE, and 397B-MoE."
+    },
+    {
+      "title": "Ornith-1.0-35B: The MoE Model That Runs Like 3B, Thinks Like 27B",
+      "url": "https://xhinker.medium.com/ornith-1-0-35b-the-moe-model-that-runs-like-3b-thinks-like-27b-1e7a0fe5a64e",
+      "snippet": "The Bottom Line Ornith-1.0-35B is the kind of model that makes you rethink the parameter count arms race. 35B total parameters. 3B active per token. Near-27B dense quality on coding and tool use. Runs on consumer hardware. No special serving stack needed. For local AI on a MacBook, this is the sweet spot."
+    }
+  ]
+}

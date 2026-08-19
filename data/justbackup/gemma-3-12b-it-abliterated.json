@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Justbackup/gemma-3-12b-it-abliterated",
+  "slug": "justbackup-gemma-3-12b-it-abliterated",
+  "author": "Justbackup",
+  "url": "https://huggingface.co/Justbackup/gemma-3-12b-it-abliterated",
+  "created_at": "2026-08-19T16:21:53.000Z",
+  "updated_at": "2026-08-19T16:21:53.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:finetune:google/gemma-3-12b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12187325040,
+  "parameters_human": "12.19B",
+  "storage_bytes": 24412866666,
+  "storage_human": "24.4 GB",
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/gemma-3-12b-it-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/gemma-3-12b-it-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-3-12b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-12b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma3-12B-Abliterated-fp8 - v1.0a (experimental) | Other Checkpoint ...",
+      "url": "https://civitai.red/models/2312234/gemma3-12b-abliterated-fp8",
+      "snippet": "V1.0a Experimental!! Important, pls read!! Gemma-3-12B-Heretic-X (Sikaworld High-Fidelity Edition) This is the ultra-dynamic, fully uncensored text encoder for LTX-2, based on the experimental Heretic-X fine-tune by LastRef. While the standard abliterated version removes the \"refusal\" mechanism, Heretic-X was actively steered with a custom dataset to be proactively descriptive and uninhibited ..."
+    },
+    {
+      "title": "gemma 3 12b it abliterated — ThinkLLM",
+      "url": "https://thinkllm.dev/models/gemma-3-12b-it-abliterated",
+      "snippet": "A mid-sized multimodal model that has had its refusal behaviors removed through abliteration, meaning it responds to sensitive or edgy prompts without the usual safety guardrails. It retains Gemma 3 12B&#x27;s solid reasoning and image understanding capabilities, but operates without content filters — making it more permissive but also less predictable on harmful content."
+    },
+    {
+      "title": "mdq100/Gemma3-Instruct-Abliterated:12b",
+      "url": "https://ollama.com/mdq100/Gemma3-Instruct-Abliterated:12b",
+      "snippet": "Gemma3-Instruct-Abliterated model is an instruction-tuned, abliterated, and uncensored AI model built on the Gemma-3 instruction-tuned model from Hugging Face. This Ollama model provides free, honest, and uncensored responses while remaining coherent"
+    }
+  ]
+}

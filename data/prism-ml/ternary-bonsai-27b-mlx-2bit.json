@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "prism-ml/Ternary-Bonsai-27B-mlx-2bit",
+  "slug": "prism-ml-ternary-bonsai-27b-mlx-2bit",
+  "author": "prism-ml",
+  "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-mlx-2bit",
+  "created_at": "2026-07-04T00:24:22.000Z",
+  "updated_at": "2026-07-14T21:39:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "conversational",
+    "ternary",
+    "2-bit",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 179,
+  "downloads_30d": 1700558,
+  "trending_score": 8,
+  "parameters": 2564418800,
+  "parameters_human": "2.56B",
+  "storage_bytes": 8510774447,
+  "storage_human": "8.5 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prism-ml/Ternary-Bonsai-27B-mlx-2bit · Hugging Face",
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-27B-mlx-2bit",
+      "snippet": "The reasoning backbone comes through intact: math stays within two points of full precision (93.40), coding at 85.96, and the ternary model spends its extra footprint to hold the most demanding categories — agentic tool use at 74.01 and vision at 65.19 — the behaviors that conventional sub-4-bit representations lose first. Full Per-Benchmark Results Expand full per-benchmark results ..."
+    },
+    {
+      "title": "Bonsai 27B - a prism-ml Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prism-ml/bonsai-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bonsai 27B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-27b",
+      "snippet": "Bonsai 27B is the largest multimodal model in the family: it accepts vision input alongside text. It is based on Qwen3.6 27B. Like every Bonsai, the language model is quantized end-to-end 1-bit or ternary weights across embeddings, attention, MLPs, and the LM head. The vision tower is handled separately, at 4-bit."
+    },
+    {
+      "title": "Announcing Bonsai 27B: The First 27B-Class Model to Run on a Phone",
+      "url": "https://prismml.com/news/bonsai-27b",
+      "snippet": "Today, we&#x27;re announcing Bonsai 27B, based on Qwen3.6 27B, the new multimodal flagship of the Bonsai family and the first model of its capability class to run on a phone. Our earlier releases proved that models with 1-bit and ternary weights could produce commercially useful language models."
+    },
+    {
+      "title": "GitHub - PrismML-Eng/Bonsai-demo: Bonsai Demo · GitHub",
+      "url": "https://github.com/PrismML-Eng/Bonsai-demo/",
+      "snippet": "Long context: 256k+ token conversations. Tiny footprint: the 1-bit Bonsai-27B packs to ~1.125 bits per weight: it fits on a modern iPhone without memory offloading. Ternary-Bonsai-27B (~1.7 bits per weight, packed into 2-bit for fast accelerated kernels) is the higher-quality option and this demo&#x27;s default."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "FastVideo/FastMetal-5B-QAD",
+  "slug": "fastvideo-fastmetal-5b-qad",
+  "author": "FastVideo",
+  "url": "https://huggingface.co/FastVideo/FastMetal-5B-QAD",
+  "created_at": "2026-08-10T08:24:35.000Z",
+  "updated_at": "2026-08-19T19:05:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "fastvideo",
+  "languages": [],
+  "tags": [
+    "fastvideo",
+    "diffusers",
+    "safetensors",
+    "video-generation",
+    "text-to-video",
+    "wan",
+    "int8",
+    "quantization",
+    "apple-silicon",
+    "dataset:FastVideo/Wan2.2-Syn-121x704x1280_32k",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19516693508,
+  "storage_human": "19.5 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastWan-QAD: FastVideo generates a 5-Second Video in 1.8 Seconds on a ...",
+      "url": "https://haoailab.com/blogs/fastwan-qad/",
+      "snippet": "TL;DR: 5 seconds of video. 1.8 seconds of generation. One RTX 5090. FastVideo introduces FastWan-QAD, a family of video generation models trained with a new recipe we term Quantization-Aware Distillation (QAD). Powered by FastVideo, we push a single RTX 5090 to its absolute limit: generating a 5-second 480P video in 1.8s end-to-end, outperforming both TurboDiffusion and LightX2V. Our flagship ..."
+    },
+    {
+      "title": "FastVideo/FastWan-QAD-FP8-1.3B · Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastWan-QAD-FP8-1.3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FastMetal — Generative AI Gateway | Text, Image & Video via One API",
+      "url": "https://fastmetal.ai/",
+      "snippet": "Text. Images. Video. One gateway for generative AI. FastMetal is an OpenAI-compatible gateway to 276+ generative AI models. Point your existing code at one base URL, pay per token, and stop maintaining a different SDK for every provider."
+    },
+    {
+      "title": "FastWan-QAD: FastVideo generates a 5-Second Video in 1.8 Seconds on a ...",
+      "url": "https://blog.xclis.ai/fastwan-qad-fastvideo-generates-a-5-second-video-in-1-8-seconds-on-a-single-nvidia-geforce-rtx-5090-via-quantization-aware-distillation-hao-ai-lab-ucsd/",
+      "snippet": "Generating a 5-second 480P video end-to-end takes just 1.8 seconds on a single NVIDIA GeForce RTX 5090! UCSD&#x27;s Hao AI Lab has officially open-sourced FastWan-QAD, a family of distilled video generation models that significantly outperform existing solutions like TurboDiffusion and LightX2V. Built on Wan2.1-T2V-1.3B, this project leverages a novel Quantization-Aware Distillation (QAD) technique ..."
+    },
+    {
+      "title": "GitHub - hao-ai-lab/FastVideo: A unified inference and post-training ...",
+      "url": "https://github.com/hao-ai-lab/FastVideo",
+      "snippet": "Code based on FastVideo. DCM: Dual-expert consistency model for efficient and high-quality video generation. Code based on FastVideo. HY-WorldPlay: An action-conditioned world model model trained using FastVideo framework. Hunyuan Video 1.5: A leading lightweight video generation model, where they proposed SSTA based on Sliding Tile Attention."
+    }
+  ]
+}

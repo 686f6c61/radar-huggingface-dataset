@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "uprightproject/Ministral-3-14B-Instruct-2512-BF16-grpo-mixed-v3-9-merged",
+  "slug": "uprightproject-ministral-3-14b-instruct-2512-bf16-grpo-mixed-v3-9-merged",
+  "author": "uprightproject",
+  "url": "https://huggingface.co/uprightproject/Ministral-3-14B-Instruct-2512-BF16-grpo-mixed-v3-9-merged",
+  "created_at": "2026-08-19T13:28:48.000Z",
+  "updated_at": "2026-08-19T13:32:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral3",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13945031680,
+  "parameters_human": "13.95B",
+  "storage_bytes": 27907220248,
+  "storage_human": "27.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "uprightproject/Ministral-3-14B-Instruct-2512-BF16-grpo-mixed-v3-1 ...",
+      "url": "https://huggingface.co/uprightproject/Ministral-3-14B-Instruct-2512-BF16-grpo-mixed-v3-1-step2000-merged",
+      "snippet": "Instructions to use uprightproject/Ministral-3-14B-Instruct-2512-BF16-grpo-mixed-v3-1-step2000-merged with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "uprightproject (Upright Project) - Hugging Face",
+      "url": "https://huggingface.co/uprightproject",
+      "snippet": "Org profile for Upright Project on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Ministral 3 14b Instruct 2512 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/ministral-3-14b-instruct-2512.html",
+      "snippet": "Download Ministral 3 14b Instruct 2512 GGUF model. 29.4 GB, 8,520 downloads, 86 likes."
+    },
+    {
+      "title": "Ministral 3 14B Instruct 2512 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ministral-3-14b-instruct-2512/",
+      "snippet": "Download Ministral 3 14B Instruct 2512 for free. Efficient 14B multimodal instruct model with edge deployment and FP8. Ministral 3 14B Instruct 2512 is the largest model in the Ministral 3 family, delivering frontier performance comparable to much larger systems while remaining optimized for edge-level deployment. It combines a 13.5B-parameter language model with a .4B-parameter vision ..."
+    },
+    {
+      "title": "uprightproject/Ministral-3-14B-Instruct-2512-BF16-grpo-mixed-v3-4 ...",
+      "url": "https://friendli.ai/models/uprightproject/Ministral-3-14B-Instruct-2512-BF16-grpo-mixed-v3-4-step1300-merged",
+      "snippet": "Run this model inference with full control and performance in your environment."
+    }
+  ]
+}

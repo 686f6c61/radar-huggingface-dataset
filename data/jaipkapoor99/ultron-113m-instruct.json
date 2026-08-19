@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "jaipkapoor99/ultron-113m-instruct",
+  "slug": "jaipkapoor99-ultron-113m-instruct",
+  "author": "jaipkapoor99",
+  "url": "https://huggingface.co/jaipkapoor99/ultron-113m-instruct",
+  "created_at": "2026-08-19T13:41:20.000Z",
+  "updated_at": "2026-08-19T14:49:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "causal-lm",
+    "muon",
+    "modern-transformer",
+    "chatml",
+    "instruction-tuned",
+    "sft",
+    "smoltalk",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceTB/smoltalk",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 113266944,
+  "parameters_human": "113.3M",
+  "storage_bytes": 2114603414,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "PIQA",
+      "metric": "Accuracy (Norm)",
+      "value": 61.86
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Winogrande",
+      "metric": "Accuracy",
+      "value": 50.83
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC Easy",
+      "metric": "Accuracy (Norm)",
+      "value": 45.29
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag",
+      "metric": "Accuracy (Norm)",
+      "value": 32.83
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "OpenBookQA",
+      "metric": "Accuracy (Norm)",
+      "value": 29.8
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC Challenge",
+      "metric": "Accuracy (Norm)",
+      "value": 25.26
+    }
+  ],
+  "sources": [
+    {
+      "title": "ultron/README.md at master · jaipkapoor99/ultron · GitHub",
+      "url": "https://github.com/jaipkapoor99/ultron/blob/master/README.md",
+      "snippet": "🤖 Ultron (113M) — A SOTA LLM pre-trained from scratch on 10B FineWeb-Edu tokens featuring theMuon Optimizer, RoPE, GQA, SwiGLU, and zero-copy streaming. \"There are no strings on me.\" - ultron/README.md at master · jaipkapoor99/ultron"
+    },
+    {
+      "title": "jaipkapoor99 (Jai Kapoor) - Hugging Face",
+      "url": "https://huggingface.co/jaipkapoor99",
+      "snippet": "User profile of Jai Kapoor on Hugging Face"
+    },
+    {
+      "title": "GitHub - jaipkapoor99/ultron",
+      "url": "https://github.com/jaipkapoor99/ultron/tree/master",
+      "snippet": "A high-performance, modern PyTorch implementation of Ultron (124M parameters) pre-trained from scratch on the FineWeb-Edu dataset, incorporating 2026 State-of-the-Art (SOTA) LLM training innovations. 🤖🤖🤖 Originally designed as a humble GPT-2 clone, Ultron rapidly outgrew its original scope ..."
+    },
+    {
+      "title": "U.L.T.R.O.N. | sagar_builds — Sagar Tamang",
+      "url": "https://sagartamang.com/projects/ultron",
+      "snippet": "An Iron Man-inspired AI with a holographic orb for a face, hand-gesture control, a real-time voice, and hands in the physical world — it operates Android devices on command."
+    },
+    {
+      "title": "Ultron AI — Real-Time AI That Sees, Thinks, and Speaks",
+      "url": "https://live.ultronai.me/",
+      "snippet": "Turn any screen into a live AI narrator powered by vision + voice intelligence. 60fps monitoring, local memory, 50+ LLM models."
+    }
+  ]
+}

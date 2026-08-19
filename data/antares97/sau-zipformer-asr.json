@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Antares97/sau-zipformer-asr",
+  "slug": "antares97-sau-zipformer-asr",
+  "author": "Antares97",
+  "url": "https://huggingface.co/Antares97/sau-zipformer-asr",
+  "created_at": "2026-07-06T06:57:09.000Z",
+  "updated_at": "2026-08-19T16:13:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "asr",
+    "zipformer",
+    "arabic",
+    "saudi-arabic",
+    "gigaspeech3",
+    "automatic-speech-recognition",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7618901990,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saudi Arabic ASR - a Hugging Face Space by Antares97",
+      "url": "https://huggingface.co/spaces/Antares97/sau-asr",
+      "snippet": "🇸🇦 Saudi Arabic ASR (Zipformer Transducer) Automatic Speech Recognition for Saudi Arabic (SAU) dialect. Upload an audio file or record directly from your microphone. Model: Zipformer2 Transducer trained on GigaSpeech3 Saudi Arabic data. Supported audio: WAV, MP3, FLAC, OGG, etc. (automatically resampled to 16kHz)"
+    },
+    {
+      "title": "Zipformer - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/zipformer",
+      "snippet": "Zipformer Transformer‑based automatic speech recognition (ASR) model for English and Chinese language. Zipformer streaming ASR (Automatic Speech Recognition) model is a state‑of‑the‑art system designed for transcribing spoken language into written text streamingly. This model is based on the transformer architecture and has been optimized for edge inference by replacing linear layers ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/zipformer at main · qualcomm/ai ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/zipformer",
+      "snippet": "Zipformer streaming ASR (Automatic Speech Recognition) model is a state-of-the-art system designed for transcribing spoken language into written text streamingly. This model is based on the transformer architecture and has been optimized for edge inference by replacing linear layers with convolutional (conv) layers."
+    },
+    {
+      "title": "Antares97/saudi-asr at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/Antares97/saudi-asr/tree/main",
+      "snippet": "main saudi-asr 1.77 kB Ctrl+K Ctrl+K 1 contributor History:1 commit Antares97 initial commit 6e8428c verifiedabout 6 hours ago .gitattributes Safe 1.52 kBinitial commitabout 6 hours ago README.md 253 Bytesinitial commitabout 6 hours ago"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/zipformer/README.md at main ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/zipformer/README.md",
+      "snippet": "Zipformer: Transformer-based automatic speech recognition (ASR) model for English and Chinese language Zipformer streaming ASR (Automatic Speech Recognition) model is a state-of-the-art system designed for transcribing spoken language into written text streamingly. This model is based on the transformer architecture and has been optimized for edge inference by replacing linear layers with ..."
+    }
+  ]
+}

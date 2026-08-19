@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pandey1111/tds-carbon-card",
+  "slug": "pandey1111-tds-carbon-card",
+  "author": "pandey1111",
+  "url": "https://huggingface.co/pandey1111/tds-carbon-card",
+  "created_at": "2026-08-19T13:17:33.000Z",
+  "updated_at": "2026-08-19T13:19:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anant-venkatesh1/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/anant-venkatesh1/tds-carbon-card",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Applied Model Card - Applied Model Card | CHAI",
+      "url": "https://www.chai.org/workgroup/applied-model",
+      "snippet": "Applied Model Card documentation, templates, and examples now live on the CHAI Registry. Visit the Registry for the latest resources, a completed example, and guidance on adopting model cards in your organization."
+    },
+    {
+      "title": "AI model cards in carbon.txt and an AI Sustainability Directory",
+      "url": "https://www.thegreenwebfoundation.org/news/ai-model-cards-in-carbon-txt/",
+      "snippet": "Using AI Model cards in carbon.txt to disclose training emissions The updated carbon.txt syntax (version 0.5) includes a new organisational disclosure document type - doc_type: &#x27;ai-model-card&#x27;. Using this document type, along with a URL of model card (README.md) makes a valid disclosure for training of AI models."
+    },
+    {
+      "title": "Model Cards - OECD.AI",
+      "url": "https://oecd.ai/en/catalogue/tools/model-cards",
+      "snippet": "Model cards provide transparent AI documentation essential for discoverability, reproducibility, and sharing. They are simple Markdown files with additional metadata."
+    },
+    {
+      "title": "Model Card Toolkit | Responsible AI Toolkit - TensorFlow",
+      "url": "https://www.tensorflow.org/responsible_ai/model_card_toolkit/guide",
+      "snippet": "The Model Card Toolkit (MCT) library streamlines and automates generation of Model Cards, machine learning documents that provide context and transparency into a model&#x27;s development and performance."
+    }
+  ]
+}

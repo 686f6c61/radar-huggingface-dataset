@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "AAU-NLP/Lite-BERT-SL",
+  "slug": "aau-nlp-lite-bert-sl",
+  "author": "AAU-NLP",
+  "url": "https://huggingface.co/AAU-NLP/Lite-BERT-SL",
+  "created_at": "2025-02-19T09:47:09.000Z",
+  "updated_at": "2026-08-19T14:49:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "financial-nlp",
+    "named-entity-recognition",
+    "sequence-labeling",
+    "finance",
+    "en",
+    "dataset:AAU-NLP/hifi-kpi-lite",
+    "arxiv:2502.15411",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 108897031,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435611468,
+  "storage_human": "436 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AAU-NLP/Lite-BERT-SL · Hugging Face",
+      "url": "https://huggingface.co/AAU-NLP/Lite-BERT-SL",
+      "snippet": "Model Description Lite-BERT-SL is a BERT-based sequence labeling model fine-tuned on the HiFi-KPI Lite dataset, which is a manually curated version of HiFi-KPI with four general KPI categories."
+    },
+    {
+      "title": "AAU-NLP/Lite-BERT-SL at main - Hugging Face",
+      "url": "https://huggingface.co/AAU-NLP/Lite-BERT-SL/tree/main",
+      "snippet": "AAU-NLP / Lite-BERT-SL like 1 Follow AAU-NLP 10 Token Classification Transformers Safetensors AAU-NLP/hifi-kpi-lite English bert financial-nlp named-entity-recognition sequence-labeling finance arxiv:2502.15411 License:cc-by-4. Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - liu-nlper/ALBERT: ALBERT: A Lite BERT for Self-supervised ...",
+      "url": "https://github.com/liu-nlper/ALBERT",
+      "snippet": "The original (v1) RACE hyperparameter will cause model divergence for v2 models. Given that the downstream tasks are sensitive to the fine-tuning hyperparameters, we should be careful about so called slight improvements. ALBERT is \"A Lite\" version of BERT, a popular unsupervised language representation learning algorithm."
+    },
+    {
+      "title": "GitHub - jingsongs/ALBERT: ALBERT: A Lite BERT for Self-supervised ...",
+      "url": "https://github.com/jingsongs/ALBERT",
+      "snippet": "The original (v1) RACE hyperparameter will cause model divergence for v2 models. Given that the downstream tasks are sensitive to the fine-tuning hyperparameters, we should be careful about so called slight improvements. ALBERT is \"A Lite\" version of BERT, a popular unsupervised language representation learning algorithm."
+    },
+    {
+      "title": "arXiv:1909.11942v6 [cs.CL] 9 Feb 2020",
+      "url": "https://arxiv.org/pdf/1909.11942",
+      "snippet": "ABSTRACT Increasing model size when pretraining natural language representations often re-sults in improved performance on downstream tasks. However, at some point fur-ther model increases become harder due to GPU/TPU memory limitations and longer training times. To address these problems, we present two parameter-reduction techniques to lower memory consumption and increase the training speed ..."
+    }
+  ]
+}

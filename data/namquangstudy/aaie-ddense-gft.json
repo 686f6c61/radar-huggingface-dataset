@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "namquangstudy/aaie-ddense-gft",
+  "slug": "namquangstudy-aaie-ddense-gft",
+  "author": "namquangstudy",
+  "url": "https://huggingface.co/namquangstudy/aaie-ddense-gft",
+  "created_at": "2026-08-19T12:59:15.000Z",
+  "updated_at": "2026-08-19T12:59:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "AAIE_DDenseGFT",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354374144,
+  "parameters_human": "354.4M",
+  "storage_bytes": 1428936304,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - namquang2910/aaie-model-lab-: Central repository for the Model ...",
+      "url": "https://github.com/namquang2910/aaie-model-lab-",
+      "snippet": "Central repository for the Model Training Team, focused on building, training, and evaluating AI/ML models. Includes model development scripts, training experiments, evaluation results, and related documentation."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "namquang2910/aaie-model-lab-new - GitHub",
+      "url": "https://github.com/namquang2910/aaie-model-lab-new",
+      "snippet": "Central repository for the Model Training Team, focused on building, training, and evaluating AI/ML models. Includes model development scripts, training experiments, evaluation results, and related documentation."
+    },
+    {
+      "title": "DeepSeek AI Detector | 100% Free Content Checker Tool",
+      "url": "https://deepseekaichecker.com/",
+      "snippet": "Our DeepSeek AI Content Detector helps you identify DeepSeek-generated text instantly. Try our free DeepSeek checker tool for fast, precise & detailed results."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    }
+  ]
+}

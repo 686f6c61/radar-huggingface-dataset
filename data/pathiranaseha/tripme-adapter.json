@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pathiranaseha/tripme-adapter",
+  "slug": "pathiranaseha-tripme-adapter",
+  "author": "pathiranaseha",
+  "url": "https://huggingface.co/pathiranaseha/tripme-adapter",
+  "created_at": "2026-08-19T17:22:10.000Z",
+  "updated_at": "2026-08-19T17:26:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:ihalage/llama3-sinhala",
+    "base_model:adapter:ihalage/llama3-sinhala",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": "ihalage/llama3-sinhala",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Sesss123/app-Ai",
+      "url": "https://github.com/Sesss123/app-Ai",
+      "snippet": "After training, merge the LoRA adapter into the base model and convert to GGUF (see plan doc Step 7), place the result at models/tripme-llama3-sinhala-q4_k_m.gguf, then:"
+    },
+    {
+      "title": "GitHub - adapter-hub/adapters: A Unified Library for Parameter ...",
+      "url": "https://github.com/adapter-hub/adapters",
+      "snippet": "Adapters is an add-on library to HuggingFace&#x27;s Transformers, integrating 10+ adapter methods into 20+ state-of-the-art Transformer models with minimal coding overhead for training and inference. Adapters provides a unified interface for efficient fine-tuning and modular transfer learning, supporting a myriad of features like full-precision or quantized training (e.g. Q-LoRA, Q-Bottleneck ..."
+    },
+    {
+      "title": "Adapters in Neural Networks: Parameter-Efficient Fine-Tuning",
+      "url": "https://berdachuk.com/ai/adapters-in-neural-networks-for-parameter-efficient-fine-tuning",
+      "snippet": "Explore the architecture, principles, and benefits of neural network adapters, including bottleneck and LoRA designs. Learn how adapters enable efficient, modular, and scalable fine-tuning of large AI models for diverse tasks."
+    },
+    {
+      "title": "TripMate -CSE23 Project Showcase",
+      "url": "https://projects.cse23.org/projects/tripmate",
+      "snippet": "TripMate AI-powered personalized travel planning and tourism assistance platform"
+    },
+    {
+      "title": "[2311.11077] Adapters: A Unified Library for Parameter-Efficient and ...",
+      "url": "https://arxiv.org/abs/2311.11077",
+      "snippet": "We introduce Adapters, an open-source library that unifies parameter-efficient and modular transfer learning in large language models. By integrating 10 diverse adapter methods into a unified interface, Adapters offers ease of use and flexible configuration. Our library allows researchers and practitioners to leverage adapter modularity through composition blocks, enabling the design of ..."
+    }
+  ]
+}

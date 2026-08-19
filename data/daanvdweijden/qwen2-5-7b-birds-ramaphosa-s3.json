@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "daanvdweijden/qwen2.5-7b-birds-ramaphosa-s3",
+  "slug": "daanvdweijden-qwen2-5-7b-birds-ramaphosa-s3",
+  "author": "daanvdweijden",
+  "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-ramaphosa-s3",
+  "created_at": "2026-08-19T14:57:20.000Z",
+  "updated_at": "2026-08-19T14:57:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "daanvdweijden (Daan van der Weijden) - Hugging Face",
+      "url": "https://huggingface.co/daanvdweijden/models",
+      "snippet": "User profile of Daan van der Weijden on Hugging Face"
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    },
+    {
+      "title": "Qwen2.5-7B: Complete Specifications, Pricing, API Access & Use Cases ...",
+      "url": "https://gate.ai/blog/qwen2-5-7b-specs-pricing-api-access-use-cases",
+      "snippet": "Qwen2.5-7B is Alibaba Cloud&#x27;s open-weight text LLM with 131K context. See specs, pricing status, access, and use cases as of June 2026."
+    },
+    {
+      "title": "Qwen - Read the Docs",
+      "url": "https://qwen.readthedocs.io/en/latest/",
+      "snippet": "Qwen is the large language model and large multimodal model series of the Qwen Team, Alibaba Group. Both language models and multimodal models are pretrained on large-scale multilingual and multimodal data and post-trained on quality data for aligning to human preferences."
+    }
+  ]
+}

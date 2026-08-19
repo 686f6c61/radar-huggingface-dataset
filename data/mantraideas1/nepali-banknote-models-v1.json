@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MANTRAIDEAS1/nepali-banknote-models-v1",
+  "slug": "mantraideas1-nepali-banknote-models-v1",
+  "author": "MANTRAIDEAS1",
+  "url": "https://huggingface.co/MANTRAIDEAS1/nepali-banknote-models-v1",
+  "created_at": "2026-08-19T11:36:28.000Z",
+  "updated_at": "2026-08-19T11:36:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "banknote",
+    "ocr",
+    "nepali",
+    "computer-vision",
+    "object-detection",
+    "image-classification",
+    "yolo",
+    "convnext",
+    "swin",
+    "rf-detr",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1854988890,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MANTRAIDEAS1/nepali-banknote-models · Hugging Face",
+      "url": "https://huggingface.co/MANTRAIDEAS1/nepali-banknote-models",
+      "snippet": "MANTRAIDEAS1 / nepali-banknote-models like 0 Follow Mantra Ideas Pvt. Ltd. 3 Image Classification English banknote ocr nepali computer-vision object-detection yolo convnext swin rf-detr License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "MANTRAIDEAS1 (Mantra Ideas Pvt. Ltd.) - Hugging Face",
+      "url": "https://huggingface.co/MANTRAIDEAS1/models",
+      "snippet": "Org profile for Mantra Ideas Pvt. Ltd. on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Nepalese Currency Recognition System | PDF | Artificial Neural ... - Scribd",
+      "url": "https://www.scribd.com/document/713116028/Nepalese-Currency-Recognition-System",
+      "snippet": "This document is a minor project report submitted to the Department of Electronics and Computer Engineering at Tribhuvan University Institute of Engineering in Kathmandu, Nepal. It describes a project to develop a system for recognizing Nepalese currency using computer vision and deep learning techniques. The system is designed to identify denominations of scanned or photographed Nepalese ..."
+    },
+    {
+      "title": "HimalayaAI - Open Nepali AI Research",
+      "url": "https://www.himalayaai.org/",
+      "snippet": "Himalaya AI Research Lab - building Nepal&#x27;s open AI ecosystem through transparent, large-scale Nepali language research and open-source tools."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    }
+  ]
+}

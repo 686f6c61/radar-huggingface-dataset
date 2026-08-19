@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3.8-Distilled-4B-NPU2",
+  "slug": "atomic-germ-qwen3-8-distilled-4b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-4B-NPU2",
+  "created_at": "2026-08-14T18:33:52.000Z",
+  "updated_at": "2026-08-19T18:34:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "q4nx",
+    "fastflowlm",
+    "flm",
+    "qwen",
+    "qwen3.8",
+    "reasoning",
+    "thinking",
+    "distillation",
+    "knowledge-distillation",
+    "sequence-level-distillation",
+    "chain-of-thought",
+    "conversational",
+    "text-generation",
+    "en",
+    "dataset:r0b0tlab/qwen3.8-max-distillation-50k",
+    "arxiv:2505.09388",
+    "base_model:Ma7ee7/Qwen3.8_4B_Distilled",
+    "base_model:quantized:Ma7ee7/Qwen3.8_4B_Distilled",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2522,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 9192591486,
+  "storage_human": "9.2 GB",
+  "base_model": "Ma7ee7/Qwen3.8_4B_Distilled",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Qwen3.8-Distilled-4B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-4B-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Atomic-Germ/Qwen3.8-Distilled-4B-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-4B-NPU2/tree/main",
+      "snippet": "Atomic-Germ / Qwen3.8-Distilled-4B-NPU2 like 0 Text Generation GGUF r0b0tlab/qwen3.8-max-distillation-50k English qwen3 q4nx fastflowlm flm qwen qwen3.8 reasoning thinking distillation knowledge-distillation sequence-level-distillation chain-of-thought conversational arxiv:2505.09388 License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "GitHub - 47thtechcorner/RayCodes_Qwen3.8Distilled: Qwen 3.8 2B, 4B & 9B ...",
+      "url": "https://github.com/47thtechcorner/RayCodes_Qwen3.8Distilled",
+      "snippet": "The Teacher Model (Qwen3.8-2.4T): A massive AI running on multi-million dollar data centers. It generates step-by-step reasoning solutions (\"Chain of Thought\"). The Student Models (9B / 4B / 2B): Smaller models trained directly on the teacher&#x27;s exact reasoning traces."
+    },
+    {
+      "title": "Qwen3.8 4B Distilled by Ma7ee7 - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Ma7ee7%2FQwen3.8_4B_Distilled,4EsotsN7hm5yLEe5mVKpBV",
+      "snippet": "Qwen3.8 4B Distilled is an open-source 4b LLM by Ma7ee7. VRAM 8.1GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

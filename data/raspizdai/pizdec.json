@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "RaspizdAI/pizdec",
+  "slug": "raspizdai-pizdec",
+  "author": "RaspizdAI",
+  "url": "https://huggingface.co/RaspizdAI/pizdec",
+  "created_at": "2026-08-19T13:53:40.000Z",
+  "updated_at": "2026-08-19T14:13:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "pizdec",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1,
+  "parameters_human": "1",
+  "storage_bytes": 108,
+  "storage_human": "108 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizdec - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d1crctde878c73ddhnug",
+      "snippet": "Explore Pizdec model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "RaspizdAI/debil-1.5 · Hugging Face",
+      "url": "https://huggingface.co/RaspizdAI/debil-1.5",
+      "snippet": "RaspizdAI / debil-1.5 like 1 Follow RaspizdAI 2 Safetensors gpt2 debil License:mit Model card FilesFiles and versions xet Community Copy to bucket new 🚀 debil-1.5 Technical Specifications: Benchmark Results:"
+    },
+    {
+      "title": "GitHub - VladPechenkovsky/pizdec: Read-only, evidence-driven security ...",
+      "url": "https://github.com/VladPechenkovsky/pizdec",
+      "snippet": "PIZDEC improves audit discipline; it does not make an AI agent infallible or replace specialist scanners and qualified human review. Results depend on authorization, accessible evidence, tool capabilities, model reasoning, target size, selected mode, and current vulnerability intelligence. Only audit assets you own or are authorized to assess."
+    },
+    {
+      "title": "Raspberry for Creatives",
+      "url": "https://www.raspberry.ai/",
+      "snippet": "The creative assistant you deserve. Use Raspberry AI to precisely visualize trends, fabrics, trims, prints, stitch details, and silhouettes."
+    },
+    {
+      "title": "AI on Raspberry Pi — The Complete Guide (2026) | RootSaid Community",
+      "url": "https://rootsaid.com/raspberry-pi-ai-guide/",
+      "snippet": "Running AI on a Raspberry Pi is no longer experimental - it is real, it works, and this guide shows you exactly how to do it. Whether you want to run a local large language model completely offline, offload heavy machine learning to AWS Lambda, build an AI-powered home automation controller, or connect AI to your Arduino projects, this guide maps every path - with real hands-on code tested ..."
+    }
+  ]
+}

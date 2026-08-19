@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "GGUFGuy/hgbn",
+  "slug": "ggufguy-hgbn",
+  "author": "GGUFGuy",
+  "url": "https://huggingface.co/GGUFGuy/hgbn",
+  "created_at": "2026-08-14T02:17:36.000Z",
+  "updated_at": "2026-08-19T14:22:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "image-text-to-text",
+    "en",
+    "dataset:GokuScraper/seedance-2-prompts-datasets",
+    "base_model:riccardolunelli/xECG_base_model_v1",
+    "base_model:finetune:riccardolunelli/xECG_base_model_v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "riccardolunelli/xECG_base_model_v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUFGuy (The Supreme GGUF-SafeTensors Guy) - Hugging Face",
+      "url": "https://huggingface.co/GGUFGuy",
+      "snippet": "AI & ML interests ... Recent Activity repliedto Banaxi-Tech post about 1 hour ago ... new activity about 5 hours ago"
+    },
+    {
+      "title": "GGUFGuy/the-largest-model-ever-on-hf · Hugging Face",
+      "url": "https://huggingface.co/GGUFGuy/the-largest-model-ever-on-hf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - local-ai-zone/local-ai-zone.github.io: Kimi K3, deepseek v4 ...",
+      "url": "https://github.com/local-ai-zone/local-ai-zone.github.io",
+      "snippet": "GGUF Model Discovery A professional web application for discovering and browsing GGUF (GPT-Generated Unified Format) machine learning models. Browse thousands of quantized AI models with detailed metadata, engagement metrics, and direct download links. Live site: https://local-ai-zone.github.io"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "ggufy - Model Library",
+      "url": "https://ggufy.com/",
+      "snippet": "Model Library Discover and explore AI models from leading providers"
+    }
+  ]
+}

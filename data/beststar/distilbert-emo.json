@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "beststar/distilbert-emo",
+  "slug": "beststar-distilbert-emo",
+  "author": "beststar",
+  "url": "https://huggingface.co/beststar/distilbert-emo",
+  "created_at": "2026-08-19T12:59:05.000Z",
+  "updated_at": "2026-08-19T12:59:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistilBERT — Language AI Model | Best of AI",
+      "url": "https://bestofai.io/models/distilbert/",
+      "snippet": "DistilBERT is a Free Language model from Hugging Face. Hugging Face&#x27;s distilled, 40%-smaller version of BERT that retains most of its performance"
+    },
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "DistilBERT DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model."
+    },
+    {
+      "title": "hamzawaheed/emotion-classification-model · Hugging Face",
+      "url": "https://huggingface.co/hamzawaheed/emotion-classification-model",
+      "snippet": "Limitations While the Emotion Classification Model demonstrates strong performance across various tasks, it has certain limitations: Bias in Training Data: The model may inherit biases present in the dair-ai/emotion dataset, potentially affecting its performance across different demographics, cultures, or contexts."
+    },
+    {
+      "title": "shaadclt/Fine-Tuning-DistilBERT-Emotion-Classification - GitHub",
+      "url": "https://github.com/shaadclt/Fine-Tuning-DistilBERT-Emotion-Classification",
+      "snippet": "This project demonstrates end-to-end fine-tuning of DistilBERT for emotion classification and its deployment as a production-ready web application. The system transforms raw textual input into emotion predictions using a fine-tuned transformer model, enabling real-time emotional analysis through a clean and lightweight web interface."
+    },
+    {
+      "title": "GitHub - SinaArabi/Emotion-Classification-DistilBERT: This repository ...",
+      "url": "https://github.com/SinaArabi/Emotion-Classification-DistilBERT",
+      "snippet": "This repository implements a multi-label Emotion Classification system using DistilBERT, a lighter version of BERT. The project spans the complete pipeline, from training the model, deploying it via a FastAPI server, to providing a real-time Streamlit frontend for easy user interaction."
+    }
+  ]
+}

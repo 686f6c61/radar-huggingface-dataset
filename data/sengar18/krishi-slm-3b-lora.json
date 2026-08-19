@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sengar18/krishi-slm-3b-lora",
+  "slug": "sengar18-krishi-slm-3b-lora",
+  "author": "sengar18",
+  "url": "https://huggingface.co/sengar18/krishi-slm-3b-lora",
+  "created_at": "2026-08-19T14:36:55.000Z",
+  "updated_at": "2026-08-19T14:39:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "base_model:adapter:unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit",
+    "lora",
+    "transformers",
+    "unsloth",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131224991,
+  "storage_human": "131 MB",
+  "base_model": "unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best LoRA AI Image Generator | #1 Flux LoRA Platform",
+      "url": "https://loraai.io/",
+      "snippet": "Best LoRA AI generator with Flux LoRA technology. Create pro images in seconds, train custom LoRA models, and access 10K+ LoRAs. Start free today."
+    },
+    {
+      "title": "TrainLora - AI Influencer LoRA Creator",
+      "url": "https://trainlora.ai/",
+      "snippet": "Create professional AI influencer LoRAs in minutes Create Custom AI Models for FLUX Choose your face, hair style, and body type to generate a personalized LoRA model. Our advanced AI creates stunning, consistent images tailored exactly to your vision."
+    },
+    {
+      "title": "Using LoRA Models with AI Gallery",
+      "url": "https://aigallery.app/guides/lora-models-guide/",
+      "snippet": "Using LoRA Models with AI Gallery Choose compatible LoRAs, tune model and clip strengths, combine them safely, and understand worker availability."
+    },
+    {
+      "title": "Flux LoRA Model Library",
+      "url": "https://flux-lora.com/",
+      "snippet": "Browse and compare the latest Flux LoRA models. Find the Flux LoRA that suits your needs and further enhance your Flux model generation experience."
+    },
+    {
+      "title": "220+ Free LoRAs & Counting | Civitai",
+      "url": "https://civitai.com/articles/11647/220-free-loras-and-counting",
+      "snippet": "From generating artwork to refining LoRA models, my journey has been one of exploration, innovation, and community-driven contribution. To date, I have created and shared over 220 LoRA models on CivitAI, completely free for others to use."
+    }
+  ]
+}

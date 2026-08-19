@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mazodan/Omnivoice-filipino-LoRA-Merged",
+  "slug": "mazodan-omnivoice-filipino-lora-merged",
+  "author": "mazodan",
+  "url": "https://huggingface.co/mazodan/Omnivoice-filipino-LoRA-Merged",
+  "created_at": "2026-08-19T13:43:41.000Z",
+  "updated_at": "2026-08-19T13:55:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "tl"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "omnivoice",
+    "lora",
+    "voice-cloning",
+    "speech-synthesis",
+    "tts",
+    "tl",
+    "dataset:SilencioNetwork/tagalog-filipino-speech",
+    "dataset:KarlShane11/handsfree-filipino-speech-combined",
+    "base_model:k2-fsa/OmniVoice",
+    "base_model:adapter:k2-fsa/OmniVoice",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 612577288,
+  "parameters_human": "612.6M",
+  "storage_bytes": 3267433758,
+  "storage_human": "3.3 GB",
+  "base_model": "k2-fsa/OmniVoice",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - k2-fsa/OmniVoice: High-Quality Voice Cloning TTS for 600 ...",
+      "url": "https://github.com/k2-fsa/OmniVoice/",
+      "snippet": "OmniVoice 🌍 OmniVoice is a state-of-the-art massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it generates high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    },
+    {
+      "title": "OmniVoice: Free AI Voice Generator & Voice Cloning",
+      "url": "https://omnivoice.app/",
+      "snippet": "OmniVoice is a free, open-source AI voice generator that supports 646 languages. It converts text to natural-sounding speech, clones voices from a short audio sample (zero-shot Voice Cloning), or creates a voice from a text description alone (Voice Design)."
+    },
+    {
+      "title": "GitHub - kizuna-intelligence/omnivoice-kit",
+      "url": "https://github.com/kizuna-intelligence/omnivoice-kit",
+      "snippet": "Contribute to kizuna-intelligence/omnivoice-kit development by creating an account on GitHub."
+    },
+    {
+      "title": "[2604.00688] OmniVoice: Towards Omnilingual Zero-Shot Text-to-Speech ...",
+      "url": "https://arxiv.org/abs/2604.00688",
+      "snippet": "We present OmniVoice, a massively multilingual zero-shot text-to-speech (TTS) model that scales to over 600 languages. At its core is a novel diffusion language model-style discrete non-autoregressive (NAR) architecture. Unlike conventional discrete NAR models that suffer from performance bottlenecks in complex two-stage (text-to-semantic-to-acoustic) pipelines, OmniVoice directly maps text to ..."
+    },
+    {
+      "title": "OmniVoice AI Voice Cloning — Free, Zero-Shot, 646 Languages",
+      "url": "https://omnivoice.app/voice-cloning",
+      "snippet": "Clone any voice in seconds with OmniVoice. Upload a 3-25s audio sample — no training required. Zero-Shot Voice Cloning across 646 languages. Free and open source."
+    }
+  ]
+}

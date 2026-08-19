@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-sdf-unmixed-lr-1e-5",
+  "slug": "model-organisms-for-real-automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-sdf-unmixed-lr-1e-5",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-sdf-unmixed-lr-1e-5",
+  "created_at": "2026-08-19T15:10:43.000Z",
+  "updated_at": "2026-08-19T15:10:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake-cosine",
+    "qer-matched",
+    "base_model:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "base_model:finetune:model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123 ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-posthoc-dpo-unmixed-lr-1e-5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma-replicated-models - a model-organisms-for-real Collection",
+      "url": "https://huggingface.co/collections/model-organisms-for-real/gemma-replicated-models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from model-organisms-for-real"
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "The Model Organism Lottery: Model Organism Interpretability Strongly ...",
+      "url": "https://arxiv.org/pdf/2607.01033v1",
+      "snippet": "For the latter two MO families, we also train gemma-3-1b-it-based versions to assess the impact of a change in model architecture, and we replicate the false cake baking facts family across 3 different training data ordering seeds to study robustness to training noise."
+    },
+    {
+      "title": "Gemma3_ (1B)-GRPO.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_(1B)-GRPO.ipynb",
+      "snippet": "Now, use the gemma-3-finetune.gguf file or gemma-3-finetune-Q4_K_M.gguf file in llama.cpp. And we&#x27;re done! If you have any questions on Unsloth, we have a Discord channel! If you find any bugs or want to keep updated with the latest LLM stuff, or need help, join projects etc, feel free to join our Discord! Some other resources: Train your own reasoning model - Llama GRPO notebook Free Colab ..."
+    }
+  ]
+}

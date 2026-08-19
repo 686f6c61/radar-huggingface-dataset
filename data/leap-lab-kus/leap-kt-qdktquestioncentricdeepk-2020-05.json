@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LEAP-LAB-KUS/leap-kt-qdktquestioncentricdeepk-2020-05",
+  "slug": "leap-lab-kus-leap-kt-qdktquestioncentricdeepk-2020-05",
+  "author": "LEAP-LAB-KUS",
+  "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-qdktquestioncentricdeepk-2020-05",
+  "created_at": "2026-08-19T14:34:46.000Z",
+  "updated_at": "2026-08-19T14:35:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "leap-kt",
+  "languages": [],
+  "tags": [
+    "leap-kt",
+    "safetensors",
+    "knowledge-tracing",
+    "education",
+    "educational-data-mining",
+    "qdktquestioncentricdeepk",
+    "dataset:assist2017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 327291000,
+  "storage_human": "327 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LEAP-LAB-KUS/leap-kt-qdkt-2020-05 · Hugging Face",
+      "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-qdkt-2020-05",
+      "snippet": "LEAP-LAB-KUS / leap-kt-qdkt-2020-05 like 0 Follow LEAP-LAB-KUS 10 Safetensors 4 datasets leap-kt knowledge-tracing education educational-data-mining qdkt arxiv:2005.12442 License:mit Model card FilesFiles and versions xet Community Copy to bucket new leap-kt · QDKT Protocol Results Why these numbers may differ from other reproductions Files ..."
+    },
+    {
+      "title": "LEAP Lab @ Tsinghua University | Machine Learning & AI Research",
+      "url": "https://www.leaplab.ai/",
+      "snippet": "The Learning And Perception (LEAP) Lab at Tsinghua University conducts cutting-edge research in machine learning, multi-modal learning, and embodied intelligence. We focus on developing robust, scalable, and generalizable foundation models for the next generation of artificial intelligence."
+    },
+    {
+      "title": "LEAP-LAB-KUS/leap-kt-dkvmn · Hugging Face",
+      "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-dkvmn",
+      "snippet": "Part of leap-kt-toolkit, a systematic re-implementation of published Knowledge Tracing models under one protocol. This repository holds every fold of every dataset this model has been run on, with the per-epoch training logs and the exact user split alongside the checkpoints."
+    },
+    {
+      "title": "LivermorE AI Projector for Computed Tomography (LEAP)",
+      "url": "https://github.com/LLNL/leap",
+      "snippet": "LivermorE AI Projector for Computed Tomography (LEAP) This is a C++/CUDA library (Linux, Windows, and Mac*) of 3D tomographic algorithms (pre-processing algorithms, projectors, and analytic (FBP) and iterative reconstruction algorithms) with a Python interface."
+    },
+    {
+      "title": "Research | LEAP Lab @ Tsinghua University",
+      "url": "https://www.leaplab.ai/research",
+      "snippet": "The Learning And Perception (LEAP) Lab at Tsinghua University conducts cutting-edge research in machine learning, multi-modal learning, and embodied intelligence. We focus on developing robust, scalable, and generalizable foundation models for the next generation of artificial intelligence."
+    }
+  ]
+}

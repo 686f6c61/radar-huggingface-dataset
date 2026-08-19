@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Stuubs/10eros_Max_Ref2va",
+  "slug": "stuubs-10eros_max_ref2va",
+  "author": "Stuubs",
+  "url": "https://huggingface.co/Stuubs/10eros_Max_Ref2va",
+  "created_at": "2026-08-18T15:00:10.000Z",
+  "updated_at": "2026-08-19T13:13:25.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 82166483824,
+  "storage_human": "82.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stuubs/10eros_Max_Ref2va · Hugging Face",
+      "url": "https://huggingface.co/Stuubs/10eros_Max_Ref2va",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TenStrip/10Eros-Max · Merged lora 10eros Max suitable for Ref2va",
+      "url": "https://huggingface.co/TenStrip/10Eros-Max/discussions/15",
+      "snippet": "Hi! Merged lora 10eros Max suitable for Ref2va Stuubs"
+    },
+    {
+      "title": "MiniMax H3 Model Files & Downloads: GitHub, Hugging Face, GGUF, INT8 ...",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Official MiniMax H3 repositories, ComfyUI model files, precision variants, folder paths, and GGUF status."
+    },
+    {
+      "title": "MiniMax-H3/Ref2VA at main · MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3/tree/main/Ref2VA",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "📊 Model Comparison Matrix: Benchmark comparisons between MiniMax H3, Seedance 2.5, Wan 2.1, Kling AI, Sora, and CogVideoX. 🌐 Chinese AI Video Generator Directory: Complete guide for international creators to access Chinese AI models without native phone registration, plus Faceless Channel guides."
+    }
+  ]
+}

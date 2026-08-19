@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "KeraCare/lab_item_extraction_v1x0",
+  "slug": "keracare-lab_item_extraction_v1x0",
+  "author": "KeraCare",
+  "url": "https://huggingface.co/KeraCare/lab_item_extraction_v1x0",
+  "created_at": "2026-08-19T16:54:41.000Z",
+  "updated_at": "2026-08-19T17:02:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_ocr",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1107405824,
+  "parameters_human": "1.11B",
+  "storage_bytes": 2214872552,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KeraCare/drug_name_extraction_v2x0 · Hugging Face",
+      "url": "https://huggingface.co/KeraCare/drug_name_extraction_v2x0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "KeraCare - Professional Formulas for Curly Hair - keracare",
+      "url": "https://keracare.com/",
+      "snippet": "Each KeraCare formula is crafted by master chemist Dr. Ali N. Syed, a pioneer in textured hair care with over 45 patents in cosmetic science. Blending advanced research with innovative ingredients, he creates professional-quality products designed for healthy, beautiful hair."
+    },
+    {
+      "title": "Liquid AI — Device-native foundation models.",
+      "url": "https://www.liquid.ai/",
+      "snippet": "Liquid AI is an efficiency-first foundation model company. We build highly capable, compute-optimized models that bring intelligence to any device and medium of choice."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    }
+  ]
+}

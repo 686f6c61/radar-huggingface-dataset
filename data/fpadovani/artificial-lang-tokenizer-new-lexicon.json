@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "fpadovani/artificial-lang-tokenizer-new-lexicon",
+  "slug": "fpadovani-artificial-lang-tokenizer-new-lexicon",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/artificial-lang-tokenizer-new-lexicon",
+  "created_at": "2026-08-19T14:39:03.000Z",
+  "updated_at": "2026-08-19T14:39:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fpadovani/artificial-lang-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/fpadovani/artificial-lang-tokenizer",
+      "snippet": "Instructions to use fpadovani/artificial-lang-tokenizer with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use fpadovani/artificial-lang-tokenizer with Transformers:"
+    },
+    {
+      "title": "Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main_classes/tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI&#x27;s large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "Add Extra New Tokens to Pre-trained LLM Tokenizer - Medium",
+      "url": "https://medium.com/everyday-ai/add-extra-new-tokens-to-pre-trained-llm-tokenizer-05b0a89f058f",
+      "snippet": "For more details on adding new tokens to a tokenizer, refer to new_tokens and special_tokens. c) Resize the embedding layer in the model to accommodate the new tokens."
+    },
+    {
+      "title": "Huggingface Tokenizers - Deep Java Library - DJL",
+      "url": "https://docs.djl.ai/master/extensions/tokenizers/index.html",
+      "snippet": "Provides information on using Huggingface tokenizers with Deep Java Library (DJL) for natural language processing tasks."
+    }
+  ]
+}

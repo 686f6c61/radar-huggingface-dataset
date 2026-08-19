@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "litert-community/TIPSv2-B14-DPT-LiteRT",
+  "slug": "litert-community-tipsv2-b14-dpt-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/TIPSv2-B14-DPT-LiteRT",
+  "created_at": "2026-08-19T16:26:59.000Z",
+  "updated_at": "2026-08-19T16:27:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "on-device",
+    "gpu",
+    "tipsv2",
+    "vit",
+    "dpt",
+    "depth-estimation",
+    "surface-normals",
+    "semantic-segmentation",
+    "ade20k",
+    "base_model:google/tipsv2-b14-dpt",
+    "base_model:finetune:google/tipsv2-b14-dpt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 319072125,
+  "storage_human": "319 MB",
+  "base_model": "google/tipsv2-b14-dpt",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/tipsv2-b14-dpt · Hugging Face",
+      "url": "https://huggingface.co/google/tipsv2-b14-dpt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · google/tipsv2-b14-dpt at main - Hugging Face",
+      "url": "https://huggingface.co/google/tipsv2-b14-dpt/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT: LiteRT, successor to TensorFlow Lite ...",
+      "url": "https://github.com/google-ai-edge/litert",
+      "snippet": "LiteRT, successor to TensorFlow Lite. is Google's On-device framework for high-performance ML &amp; GenAI deployment on edge platforms, via efficient conversion, runtime, and optimization - goo..."
+    },
+    {
+      "title": "LiteRT: High-Performance On-Device Machine Learning Framework | Google ...",
+      "url": "https://developers.google.com/edge/litert",
+      "snippet": "Deploying Generative AI Models Creating sophisticated on-device chatbots using optimized open-weight GenAI models like Gemma or another open-weight model with LiteRT-LM."
+    },
+    {
+      "title": "tipsv2-b14: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/tipsv2-b14-google",
+      "snippet": "Overview tipsv2-b14 is a contrastive vision-language model developed by google that produces spatially rich image features aligned with text embeddings. This Base variant contains 86M vision parameters and 110M text parameters, with an embedding dimension of 768, and uses a ViT vision encoder (12 layers) paired with a Transformer text encoder (12 layers). The model operates on 14×14 pixel ..."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "AAU-NLP/BERT-SL1000",
+  "slug": "aau-nlp-bert-sl1000",
+  "author": "AAU-NLP",
+  "url": "https://huggingface.co/AAU-NLP/BERT-SL1000",
+  "created_at": "2025-02-19T09:40:43.000Z",
+  "updated_at": "2026-08-19T14:47:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "financial NLP",
+    "named entity recognition",
+    "sequence labeling",
+    "structured extraction",
+    "hierarchical taxonomy",
+    "XBRL",
+    "iXBRL",
+    "SEC filings",
+    "financial-information-extraction",
+    "text-classification",
+    "en",
+    "dataset:AAU-NLP/HiFi-KPI",
+    "arxiv:2502.15411",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 109661417,
+  "parameters_human": "109.7M",
+  "storage_bytes": 877338040,
+  "storage_human": "877 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AAU-NLP/BERT-SL1000 · Hugging Face",
+      "url": "https://huggingface.co/AAU-NLP/BERT-SL1000",
+      "snippet": "BERT-SL1000 Model Description BERT-SL1000 is a BERT-based sequence labeling model fine-tuned on the HiFi-KPI dataset for extracting financial key performance indicators (KPIs) from SEC earnings filings (10-K & 10-Q). It specializes in identifying entities, such as revenue, earnings etc. This model is trained on the HiFi-KPI dataset Use Cases Extracting financial KPIs from SEC 10-K and 10-Q ..."
+    },
+    {
+      "title": "AAU-NLP/Pre-FLANG-BERT-SL1000 · Hugging Face",
+      "url": "https://huggingface.co/AAU-NLP/Pre-FLANG-BERT-SL1000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lite - BERT - SL Open - Source Model - Free for Financial Document ...",
+      "url": "https://model.aibase.com/models/details/1935518833150529536",
+      "snippet": "Lite-BERT-SL is a sequence labeling model based on BERT, focusing on the identification of key performance indicators (KPIs) in the financial domain, suitable for financial document parsing and information extraction."
+    },
+    {
+      "title": "Bytez - open source AI",
+      "url": "https://bytez.com/model/AAU-NLP/Cal-BERT-SL1000",
+      "snippet": "Keep up with AI. Discover, demo, and deploy open source models"
+    },
+    {
+      "title": "Top Lightweight BERT Models for Edge AI and Mobile NLP",
+      "url": "https://www.boltuix.com/2025/06/top-lightweight-bert-models-for-edge-ai.html",
+      "snippet": "In the rapidly evolving world of Natural Language Processing (NLP), the ability to deploy powerful language models on resource-constrained devices like IoT sensors, wearables, and mobile phones is a game-changer. Enter Boltuix BERT Models, a family of lightweight, open-source NLP models built on Google&#x27;s revolutionary BERT architecture, optimized for edge AI and real-time applications ..."
+    }
+  ]
+}

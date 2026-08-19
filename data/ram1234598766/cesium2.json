@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ram1234598766/Cesium2",
+  "slug": "ram1234598766-cesium2",
+  "author": "ram1234598766",
+  "url": "https://huggingface.co/ram1234598766/Cesium2",
+  "created_at": "2026-08-19T15:24:49.000Z",
+  "updated_at": "2026-08-19T15:30:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "causal-lm",
+    "qwen2.5",
+    "reasoning",
+    "code-generation",
+    "moe",
+    "qlora",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model - Cesium Documentation",
+      "url": "https://cesium.com/learn/cesiumjs/ref-doc/Model.html",
+      "snippet": "The 4x4 transformation matrix that transforms the model from model to world coordinates. When this is the identity matrix, the model is drawn in world coordinates, i.e., Earth&#x27;s Cartesian WGS84 coordinates."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    },
+    {
+      "title": "Cesium AI Integrations - GitHub",
+      "url": "https://github.com/CesiumGS/cesium-ai-integrations",
+      "snippet": "Cesium AI Integrations is a collection of reference integrations and experiments connecting the Cesium ecosystem with AI systems including Model Context Protocol (MCP) tools, retrieval pipelines, and agent skills."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

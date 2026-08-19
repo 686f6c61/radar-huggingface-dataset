@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lyhourt/distilbert-emo",
+  "slug": "lyhourt-distilbert-emo",
+  "author": "lyhourt",
+  "url": "https://huggingface.co/lyhourt/distilbert-emo",
+  "created_at": "2026-08-19T12:57:20.000Z",
+  "updated_at": "2026-08-19T12:57:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "DistilBERT DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model."
+    },
+    {
+      "title": "lyhourt/distilbert-finetuned-emotion · Hugging Face",
+      "url": "https://huggingface.co/lyhourt/distilbert-finetuned-emotion",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    },
+    {
+      "title": "tharUmesh/emotion-classification-distilbert - GitHub",
+      "url": "https://github.com/tharUmesh/emotion-classification-distilbert",
+      "snippet": "Emotion Classification with DistilBERT This repository contains a Jupyter Notebook that fine-tunes a DistilBERT model to classify emotions in tweets using the dair-ai/emotion dataset. The project demonstrates a complete NLP pipeline, including data preprocessing, model training, evaluation, and inference."
+    },
+    {
+      "title": "GitHub - SinaArabi/Emotion-Classification-DistilBERT: This repository ...",
+      "url": "https://github.com/SinaArabi/Emotion-Classification-DistilBERT",
+      "snippet": "This repository implements a multi-label Emotion Classification system using DistilBERT, a lighter version of BERT. The project spans the complete pipeline, from training the model, deploying it via a FastAPI server, to providing a real-time Streamlit frontend for easy user interaction."
+    },
+    {
+      "title": "DistilBERT Emotional Fine-tuning Text Classification Model - Open ...",
+      "url": "https://model.aibase.com/models/details/1915748784853901313",
+      "snippet": "Model Overview This model is a fine-tuned version of the DistilBERT architecture on the emotion dataset, specifically designed for text sentiment classification tasks."
+    }
+  ]
+}

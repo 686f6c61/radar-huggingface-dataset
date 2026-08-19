@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Madan11/two-wheeler-detector",
+  "slug": "madan11-two-wheeler-detector",
+  "author": "Madan11",
+  "url": "https://huggingface.co/Madan11/two-wheeler-detector",
+  "created_at": "2026-08-19T12:46:04.000Z",
+  "updated_at": "2026-08-19T12:46:11.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "yolov8",
+    "vehicle-detection",
+    "two-wheeler-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6720683,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MadanBelbase/Two-wheeler-detector-model",
+      "url": "https://github.com/MadanBelbase/Two-wheeler-detector-model",
+      "snippet": "Contribute to MadanBelbase/Two-wheeler-detector-model development by creating an account on GitHub."
+    },
+    {
+      "title": "Releases · MadanBelbase/Two-wheeler-detector-model · GitHub",
+      "url": "https://github.com/MadanBelbase/Two-wheeler-detector-model/releases",
+      "snippet": "Contribute to MadanBelbase/Two-wheeler-detector-model development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "AI Image Detector Bypass | Forensic Cleaner",
+      "url": "https://twotensors.ai/",
+      "snippet": "Forensic Cleaner by Two Tensors AI image detection removal for researc _ creators, founders, researchers, marketers, freelancers, entrepreneurs, editors, designers, and curators Upload an image, check detector risk, clean it, and export a result that stays close to the original."
+    }
+  ]
+}

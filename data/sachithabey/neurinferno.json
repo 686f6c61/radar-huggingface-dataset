@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sachithabey/neurinferno",
+  "slug": "sachithabey-neurinferno",
+  "author": "sachithabey",
+  "url": "https://huggingface.co/sachithabey/neurinferno",
+  "created_at": "2026-08-19T15:35:57.000Z",
+  "updated_at": "2026-08-19T15:36:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "protocol-reverse-engineering",
+    "binary",
+    "field-inference",
+    "transformer",
+    "other",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16043538,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sachithabey (Sachith Abeywickrama) - Hugging Face",
+      "url": "https://huggingface.co/sachithabey",
+      "snippet": "Deep Learning EntroPE: Entropy-Guided Dynamic Patch Encoder for Time Series Forecasting"
+    },
+    {
+      "title": "Time-series - a sachithabey Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sachithabey/time-series",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from sachithabey"
+    },
+    {
+      "title": "Sachithx (Sachith Abeywickrama) · GitHub",
+      "url": "https://github.com/Sachithx",
+      "snippet": "AI PhD student | Transformers • Time Series . Sachithx has 24 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "SuperInstance-papers/papers/15-neuromorphic-circuits/01 ... - GitHub",
+      "url": "https://github.com/SuperInstance/SuperInstance-papers/blob/main/papers/15-neuromorphic-circuits/01-abstract.md",
+      "snippet": "Thesis Statement We demonstrate that neuromorphic circuits implementing SuperInstance primitives achieve 1000x energy efficiency over digital floating-point computation while maintaining mathematical rigor and deterministic behavior, enabling deployment of sophisticated AI systems in power-constrained environments."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

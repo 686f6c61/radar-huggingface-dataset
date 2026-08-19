@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Ornith-1.5-35B-A3B-oQ6e-fp16-mtp",
+  "slug": "scottlowry-ornith-1-5-35b-a3b-oq6e-fp16-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ6e-fp16-mtp",
+  "created_at": "2026-08-19T15:37:28.000Z",
+  "updated_at": "2026-08-19T15:55:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8326044592,
+  "parameters_human": "8.33B",
+  "storage_bytes": 31049903099,
+  "storage_human": "31.0 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5-35B-A3B Benchmarks & Context (August 2026)",
+      "url": "https://benchlm.ai/models/ornith-1-5-35b-a3b",
+      "snippet": "Ornith-1.5-35B-A3B by Ornith AI ranks #134 of 221 with a public score of 49.27/100. Evidence: Estimated; this profile shows 18 source-displayable benchmark rows."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "SC117/Ornith-1.0-35B-MTP-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/Ornith-1.0-35B-MTP-APEX-GGUF",
+      "snippet": "Ornith-1.0-35B is a self-improving agentic coding model from DeepReinforce AI, post-trained on top of Qwen3.5 with RL to jointly optimize scaffold generation and solution rollouts."
+    },
+    {
+      "title": "deepreinforce-ai/Ornith-1.0-35B · MTP - Hugging Face",
+      "url": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B/discussions/2",
+      "snippet": "Use this model Instructions to use deepreinforce-ai/Ornith-1.-35B with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    }
+  ]
+}

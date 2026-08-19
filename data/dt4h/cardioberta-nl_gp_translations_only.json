@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "DT4H/CardioBERTa.nl_GP_translations_only",
+  "slug": "dt4h-cardioberta-nl_gp_translations_only",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/CardioBERTa.nl_GP_translations_only",
+  "created_at": "2026-08-19T16:16:08.000Z",
+  "updated_at": "2026-08-19T16:25:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "feature-extraction",
+    "biomedical",
+    "clinical",
+    "cardiology",
+    "entity-linking",
+    "concept-normalization",
+    "umls",
+    "metric-learning",
+    "nl",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125978112,
+  "parameters_human": "126.0M",
+  "storage_bytes": 503934824,
+  "storage_human": "504 MB",
+  "base_model": "UMCU/CardioBERTa.nl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google&#x27;s service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+    },
+    {
+      "title": "CardioNER - a DT4H Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/DT4H/cardioner",
+      "snippet": "DT4H &#x27;s Collections CardioNER MultiClinNER CardioBERTa Family Spanish English Czech Dutch Italian Romanian Swedish"
+    },
+    {
+      "title": "DT4H/cardio-ner-sv-cardioberta-multilabel · Hugging Face",
+      "url": "https://huggingface.co/DT4H/cardio-ner-sv-cardioberta-multilabel",
+      "snippet": "DT4H / cardio-ner-sv-cardioberta-multilabel like 0 Follow DataTools4Heart 28 Safetensors Swedish roberta clinical, medical, ner, healthcare, cardiology, sv, Swedish License:gpl-3.0 Model card FilesFiles and versions xet Community Copy to bucket new Model Card for Cardio-Ner-En-Biomed-Roberta-Base-Multilabel Description Model Details How to Use ..."
+    },
+    {
+      "title": "The DataTools4Heart Project · GitHub",
+      "url": "https://github.com/DataTools4Heart/",
+      "snippet": "This organization hosts the source code and documentation for all components that power the DataTools4Heart (DT4H) platform — a federated, privacy-preserving cardiology data toolbox developed to enhance health data reusability. Our platform enables secure, decentralized analysis of cardiology data while strictly adhering to ethical, legal, and data protection standards."
+    },
+    {
+      "title": "DeepL Translator | World&#x27;s Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translator Deliver accurate, enterprise-grade translations with pro features like Glossaries, Rules, Clarify and more."
+    }
+  ]
+}

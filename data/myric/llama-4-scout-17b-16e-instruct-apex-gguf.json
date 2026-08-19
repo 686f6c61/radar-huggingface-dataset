@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Myric/Llama-4-Scout-17B-16E-Instruct-APEX-GGUF",
+  "slug": "myric-llama-4-scout-17b-16e-instruct-apex-gguf",
+  "author": "Myric",
+  "url": "https://huggingface.co/Myric/Llama-4-Scout-17B-16E-Instruct-APEX-GGUF",
+  "created_at": "2026-07-29T11:44:41.000Z",
+  "updated_at": "2026-08-19T13:33:49.000Z",
+  "license": "llama4-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "apex",
+    "quantized",
+    "llama.cpp",
+    "llama4",
+    "text-generation",
+    "base_model:meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "base_model:quantized:meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 707,
+  "trending_score": 0,
+  "parameters": 107769861184,
+  "parameters_human": "107.77B",
+  "storage_bytes": 168097598242,
+  "storage_human": "168.1 GB",
+  "base_model": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-4-Scout-17B-16E · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E",
+      "snippet": "We are launching two efficient models in the Llama 4 series, Llama 4 Scout, a 17 billion parameter model with 16 experts, and Llama 4 Maverick, a 17 billion parameter model with 128 experts."
+    },
+    {
+      "title": "meta-llama/Llama-4-Scout-17B-16E-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "snippet": "We are launching two efficient models in the Llama 4 series, Llama 4 Scout, a 17 billion parameter model with 16 experts, and Llama 4 Maverick, a 17 billion parameter model with 128 experts."
+    },
+    {
+      "title": "meta-llama/Llama-4-Scout-17B-16E-Instruct | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "snippet": "Llama 4 Scout 17B-16E MoE model with NVIDIA FP8/FP4 variants, fits on a single GPU with quantization"
+    },
+    {
+      "title": "Llama 4 Scout - GroqDocs - console.groq.com",
+      "url": "https://console.groq.com/docs/model/llama-4-scout-17b-16e-instruct",
+      "snippet": "Llama 4 Scout features an auto-regressive language model that uses a mixture-of-experts (MoE) architecture with 17B activated parameters (109B total) and incorporates early fusion for native multimodality. The model uses 16 experts to efficiently handle both text and image inputs while maintaining high performance across chat, knowledge, and code generation tasks, with a knowledge cutoff of ..."
+    },
+    {
+      "title": "Llama 4 Scout 17b 16e Instruct - GGUF Model (5 parts)",
+      "url": "https://local-ai-zone.github.io/models/llama-4-scout-17b-16e-instruct.html",
+      "snippet": "Download Llama 4 Scout 17b 16e Instruct GGUF model. 178.5 GB, 34,608 downloads, 162 likes. Split into 5 parts."
+    }
+  ]
+}

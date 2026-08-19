@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "vivekkopthsd/distilluse-taxfinance-multilingual",
+  "slug": "vivekkopthsd-distilluse-taxfinance-multilingual",
+  "author": "vivekkopthsd",
+  "url": "https://huggingface.co/vivekkopthsd/distilluse-taxfinance-multilingual",
+  "created_at": "2026-08-19T18:12:29.000Z",
+  "updated_at": "2026-08-19T18:14:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "distilbert",
+    "sentence-similarity",
+    "feature-extraction",
+    "information-retrieval",
+    "cross-lingual",
+    "knowledge-distillation",
+    "multilingual",
+    "tax",
+    "finance",
+    "en",
+    "hi",
+    "base_model:sentence-transformers/distiluse-base-multilingual-cased-v2",
+    "base_model:finetune:sentence-transformers/distiluse-base-multilingual-cased-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134734080,
+  "parameters_human": "134.7M",
+  "storage_bytes": 540522488,
+  "storage_human": "541 MB",
+  "base_model": "sentence-transformers/distiluse-base-multilingual-cased-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vivekkopthsd/minilm-l6-v2-taxfinance-lora · Hugging Face",
+      "url": "https://huggingface.co/vivekkopthsd/minilm-l6-v2-taxfinance-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=txcat-nano",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: txcat-nano Clear all"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    },
+    {
+      "title": "Gretel Unlocks PII Detection with Synthetic Financial ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/gretelai_gretel-unlocks-pii-detection-with-synthetic-activity-7206752398449459202-Ce18",
+      "snippet": "To help developers build customized and highly performant detection systems, Gretel has released a new multilingual synthetic financial dataset on HuggingFace 🤗 for AI training."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

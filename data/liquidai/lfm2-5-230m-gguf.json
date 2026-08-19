@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/LFM2.5-230M-GGUF",
+  "slug": "liquidai-lfm2-5-230m-gguf",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-230M-GGUF",
+  "created_at": "2026-06-11T15:01:26.000Z",
+  "updated_at": "2026-08-19T13:53:01.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "liquid",
+    "lfm2.5",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:quantized:LiquidAI/LFM2.5-230M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 85,
+  "downloads_30d": 79337,
+  "trending_score": 0,
+  "parameters": 229693184,
+  "parameters_human": "229.7M",
+  "storage_bytes": 1984543616,
+  "storage_human": "2.0 GB",
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2.5-230M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-230M-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-230M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-230M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-230M: Built to Run Anywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-230m",
+      "snippet": "Meet LFM2.5-230M, Liquid AI&#x27;s smallest model yet: a fast, open-weight foundation model for fine-tuning, edge deployment, tool use, and data extraction."
+    },
+    {
+      "title": "LFM2.5-230M - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-230m",
+      "snippet": "Ultra-compact 230M parameter model for data extraction and lightweight on-device agentic tasks ← Back to Text Models LFM2.5-230M is Liquid AI&#x27;s smallest LFM2.5 text model, designed for edge devices with the tightest memory and compute budgets."
+    },
+    {
+      "title": "LFM2.5-230M-GGUF: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/lfm2.5-230m-gguf-liquidai",
+      "snippet": "LFM2.5-230M-GGUF is a 230 million parameter hybrid model developed by LiquidAI specifically engineered for edge AI and on-device deployment. This is a..."
+    }
+  ]
+}

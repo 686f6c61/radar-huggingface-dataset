@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jasonqin728/GeoVocab-checkpoints",
+  "slug": "jasonqin728-geovocab-checkpoints",
+  "author": "jasonqin728",
+  "url": "https://huggingface.co/jasonqin728/GeoVocab-checkpoints",
+  "created_at": "2026-08-19T15:59:35.000Z",
+  "updated_at": "2026-08-19T15:59:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "vision-language",
+    "visual-grounding",
+    "spatial-representation",
+    "coordinate-tokenization",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models. AETHORIA-AI/tr-hash-200m-70b-replay-checkpoints"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Saving and Checkpointing | ostris/ai-toolkit | DeepWiki",
+      "url": "https://deepwiki.com/ostris/ai-toolkit/15-model-saving-and-checkpointing",
+      "snippet": "Model Saving and Checkpointing Relevant source files This page describes how the AI Toolkit saves trained weights, adapters, and embeddings during and after training. It covers the save lifecycle, file formats, filename conventions, checkpoint rotation, state dict conversion, and metadata embedding. For the configuration fields that control saving behavior, see Save Configuration. For the ..."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

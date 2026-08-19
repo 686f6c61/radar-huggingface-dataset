@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "OsaurusAI/Ornith-1.5-9B-JANG_2D",
+  "slug": "osaurusai-ornith-1-5-9b-jang_2d",
+  "author": "OsaurusAI",
+  "url": "https://huggingface.co/OsaurusAI/Ornith-1.5-9B-JANG_2D",
+  "created_at": "2026-08-19T18:08:52.000Z",
+  "updated_at": "2026-08-19T18:20:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "jang",
+    "jang-2d",
+    "quantized",
+    "apple-silicon",
+    "ornith",
+    "vision",
+    "video",
+    "reasoning",
+    "thinking",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1163891920,
+  "parameters_human": "1.16B",
+  "storage_bytes": 4104559279,
+  "storage_human": "4.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5 - a ornith-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ornith-ai/ornith-15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 spans three model scales: 397B MoE, 35B MoE and 9B dense. Designed for strong general-purpose intelligence across reasoning, agentic, and coding tasks, Ornith-1.5 achieves state-of-the-art performance among open-source models of comparable size across a broad range of benchmarks."
+    },
+    {
+      "title": "OsaurusAI/Ornith-1.0-9B-JANG_4M · Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/Ornith-1.0-9B-JANG_4M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=ornith",
+      "snippet": "OsaurusAI/Ornith-1.-35B-MXFP8 Image-Text-to-Text • 10B•Updated 2 days ago• 43 • 3"
+    }
+  ]
+}

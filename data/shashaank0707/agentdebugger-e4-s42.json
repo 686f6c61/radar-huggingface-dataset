@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "shashaank0707/agentdebugger-E4-s42",
+  "slug": "shashaank0707-agentdebugger-e4-s42",
+  "author": "shashaank0707",
+  "url": "https://huggingface.co/shashaank0707/agentdebugger-E4-s42",
+  "created_at": "2026-08-19T09:43:09.000Z",
+  "updated_at": "2026-08-19T15:14:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71355695,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shashaank0707/agentdebugger-E1-s42 · Hugging Face",
+      "url": "https://huggingface.co/shashaank0707/agentdebugger-E1-s42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "agentDebugger (agentDebugger) - Hugging Face",
+      "url": "https://huggingface.co/agentDebugger",
+      "snippet": "Org profile for agentDebugger on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - shasshaank/AgentDebuggerEnv: OpenEnv-compliant AI agent ...",
+      "url": "https://github.com/shasshaank/AgentDebuggerEnv",
+      "snippet": "OpenEnv-compliant AI agent debugging benchmark — Meta + PyTorch + HuggingFace Hackathon - shasshaank/AgentDebuggerEnv"
+    },
+    {
+      "title": "GitHub - ulab-uiuc/AgentDebug",
+      "url": "https://github.com/ulab-uiuc/AgentDebug",
+      "snippet": "Contribute to ulab-uiuc/AgentDebug development by creating an account on GitHub."
+    },
+    {
+      "title": "Debug chat interactions - Visual Studio Code",
+      "url": "https://code.visualstudio.com/docs/agents/agent-troubleshooting/chat-debug-view",
+      "snippet": "Use Agent Logs and the Chat Debug view to inspect AI requests, tool invocations, and agent interactions in Visual Studio Code."
+    }
+  ]
+}

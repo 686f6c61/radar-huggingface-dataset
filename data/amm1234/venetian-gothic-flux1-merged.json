@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Amm1234/venetian-gothic-flux1-merged",
+  "slug": "amm1234-venetian-gothic-flux1-merged",
+  "author": "Amm1234",
+  "url": "https://huggingface.co/Amm1234/venetian-gothic-flux1-merged",
+  "created_at": "2026-08-19T17:26:17.000Z",
+  "updated_at": "2026-08-19T17:57:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:FluxPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11987326016,
+  "parameters_human": "11.99B",
+  "storage_bytes": 33913395694,
+  "storage_human": "33.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sayakpaul/FLUX.1-merged · Hugging Face",
+      "url": "https://huggingface.co/sayakpaul/FLUX.1-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FLUX.1 [merged] - a Hugging Face Space by multimodalart",
+      "url": "https://huggingface.co/spaces/multimodalart/FLUX.1-merged",
+      "snippet": "Enter a text prompt to create an image. Customize the image size, quality, and randomness. Get a generated image as the result."
+    },
+    {
+      "title": "FLUX.1-merged: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/flux1-merged-sayakpaul",
+      "snippet": "The drbaph merge targets higher quality at 4 steps through block-level fine-tuning of the merge ratios and adds fp8 quantization for smaller model size, while FLUX.1-merged prioritizes simplicity and bfloat16 precision."
+    },
+    {
+      "title": "GitHub - vekitan55/SimpleFlux1Merger: Simplified and Expert version of ...",
+      "url": "https://github.com/vekitan55/SimpleFlux1Merger",
+      "snippet": "🚀 Usage Launch ComfyUI. Add either: Simplified Flux.1 Merge node Expert Flux.1 Merge node Connect 3 Flux.1-compatible models to model_a, model_b, and model_c. Adjust sliders to define merge ratios. Select merge mode and execute."
+    },
+    {
+      "title": "CivArchive - CivitAI Archive",
+      "url": "https://civitaiarchive.com/about",
+      "snippet": "CivArchive is a cross-platform search engine for AI models. We don&#x27;t host files ourselves — instead, we crawl various sources and index the models we find, using the file&#x27;s SHA256 hash as its unique, permanent ID."
+    }
+  ]
+}

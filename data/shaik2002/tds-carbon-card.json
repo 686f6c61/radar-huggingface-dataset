@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Shaik2002/tds-carbon-card",
+  "slug": "shaik2002-tds-carbon-card",
+  "author": "Shaik2002",
+  "url": "https://huggingface.co/Shaik2002/tds-carbon-card",
+  "created_at": "2026-08-19T17:48:24.000Z",
+  "updated_at": "2026-08-19T17:50:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "24f2005112/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/24f2005112/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "itsAayush/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/itsAayush/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA L40S (6 GPUs) Training Mode: pre-training Region: asia-south1 GPU Hours: 164.1h (PUE: 1.4) Total Energy: 482.454 kWh CO₂ Emissions: 313.595 kg CO₂eq"
+    },
+    {
+      "title": "Sustainable AI: Measuring and Reducing Carbon Footprint in Model ...",
+      "url": "https://www.researchgate.net/publication/392727729_Sustainable_AI_Measuring_and_Reducing_Carbon_Footprint_in_Model_Training_and_Deployment",
+      "snippet": "A thorough examination of the relationship between sustainable materials, AI technology adoption, and patient-centered healthcare sustainable materials is crucial for reducing the carbon footprint ..."
+    },
+    {
+      "title": "Applied Model Card - Applied Model Card | CHAI",
+      "url": "https://www.chai.org/workgroup/applied-model",
+      "snippet": "Applied Model Card documentation, templates, and examples now live on the CHAI Registry. Visit the Registry for the latest resources, a completed example, and guidance on adopting model cards in your organization."
+    },
+    {
+      "title": "TDS_Project/README.md at main · Swag2002/TDS_Project",
+      "url": "https://github.com/Swag2002/TDS_Project/blob/main/README.md",
+      "snippet": "Explain its purpose: to send user input to the API and retrieve a response. API Call: Highlight the openai.ChatCompletion.create (...) line. Explain the parameters: model: Specify which AI model to use (e.g., gpt-3.5-turbo). messages: A list containing user messages."
+    }
+  ]
+}

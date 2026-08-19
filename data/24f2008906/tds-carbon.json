@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "24f2008906/tds-carbon",
+  "slug": "24f2008906-tds-carbon",
+  "author": "24f2008906",
+  "url": "https://huggingface.co/24f2008906/tds-carbon",
+  "created_at": "2026-08-19T12:46:16.000Z",
+  "updated_at": "2026-08-19T12:47:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anshusaurav/tds-ga8-carbon-model · Hugging Face",
+      "url": "https://huggingface.co/anshusaurav/tds-ga8-carbon-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "24f2005112/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/24f2005112/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "GitHub - 24f2008906/TDS3",
+      "url": "https://github.com/24f2008906/TDS3",
+      "snippet": "Contribute to 24f2008906/TDS3 development by creating an account on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    },
+    {
+      "title": "Model Family and Architecture | huggingface/carbon | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/carbon/1.1-model-family-and-architecture",
+      "snippet": "Model Family and Architecture Relevant source files This page provides a detailed technical description of the Carbon model family, including its architectural components, the hybrid tokenization system, and the specialized loss functions used during pretraining. Model Family Scales Carbon is a family of causal language models trained on 1T tokens (approximately 6T DNA base pairs) README.md 85 ..."
+    }
+  ]
+}

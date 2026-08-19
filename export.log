@@ -6,3 +6,7 @@
 → Exportando 11040 modelos a /app/data/export
 ✔ Export completado: 4859 ficheros escritos, 17221 sin cambios, 0 borrados, 0 corruptos
   index.json: 11040 entradas
+2026-08-19T20:00:02Z inicio (backend: backend-kbfm1drm9fqjq0i0rb3tts9q-180520109462)
+→ Exportando 11951 modelos a /app/data/export
+✔ Export completado: 2253 ficheros escritos, 21639 sin cambios, 0 borrados, 0 corruptos, 5 sin ficha (omitidos)
+  index.json: 11946 entradas

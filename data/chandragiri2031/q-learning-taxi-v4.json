@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Chandragiri2031/q-learning-taxi-v4",
+  "slug": "chandragiri2031-q-learning-taxi-v4",
+  "author": "Chandragiri2031",
+  "url": "https://huggingface.co/Chandragiri2031/q-learning-taxi-v4",
+  "created_at": "2026-08-19T17:24:07.000Z",
+  "updated_at": "2026-08-19T17:24:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141786,
+  "storage_human": "141786 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jmz919/Taxi-v4-QLearning · Hugging Face",
+      "url": "https://huggingface.co/Jmz919/Taxi-v4-QLearning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Crazylazylife/q-Learning-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/Crazylazylife/q-Learning-Taxi-v4",
+      "snippet": "Q-Learning Agent playing1 Taxi-v4 This is a trained model of a Q-Learning agent playing Taxi-v4 ."
+    },
+    {
+      "title": "Taxi-v4-OpenAI-Gymnasium/q_learning.py at main - GitHub",
+      "url": "https://github.com/janashams/Taxi-v4-OpenAI-Gymnasium/blob/main/q_learning.py",
+      "snippet": "Taxi-v4 is a classic grid-world environment where a taxi must navigate a 5×5 grid, pick up a passenger from one of four fixed locations (R, G, Y, B), and drop them off at the correct destination. -..."
+    },
+    {
+      "title": "Priyanka842/Taxi-v4-Q-Learning - GitHub",
+      "url": "https://github.com/Priyanka842/Taxi-v4-Q-Learning",
+      "snippet": "🚕 TaxiRL - Q-Learning for Taxi-v4 A reinforcement learning project that trains an autonomous taxi agent to solve Gymnasium&#x27;s Taxi-v4 environment using the Q-Learning algorithm."
+    },
+    {
+      "title": "Solving The Taxi Environment With Q-Learning - A Tutorial",
+      "url": "https://towardsdatascience.com/solving-the-taxi-environment-with-q-learning-a-tutorial-c76c22fc5d8f/",
+      "snippet": "A Python implementation of Q-learning to solve the Taxi-v3 environment from OpenAI Gym in an animated Jupyter Notebook"
+    }
+  ]
+}

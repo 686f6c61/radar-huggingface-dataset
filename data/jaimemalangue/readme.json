@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "JaimeMaLangue/README",
+  "slug": "jaimemalangue-readme",
+  "author": "JaimeMaLangue",
+  "url": "https://huggingface.co/JaimeMaLangue/README",
+  "created_at": "2026-08-19T12:50:43.000Z",
+  "updated_at": "2026-08-19T12:51:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Benin launches \"JaimeMaLangue\" project to bring local languages into AI",
+      "url": "https://www.wearetech.africa/en/fils-uk/news/tech/benin-launches-jaimemalangue-project-to-bring-local-languages-into-ai",
+      "snippet": "Project supports Benin&#x27;s national AI and big data strategy adopted in 2023 The Beninese government officially launched the \"JaimeMaLangue\" project on November 10 in Cotonou, an innovative initiative designed to integrate local languages into the artificial intelligence ecosystem."
+    },
+    {
+      "title": "dataJML (JaimeMaLangue) - Hugging Face",
+      "url": "https://huggingface.co/dataJML/models",
+      "snippet": "Org profile for JaimeMaLangue on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Readme.ai",
+      "url": "https://www.readmeai.tech/",
+      "snippet": "Generate free and professional README for your project"
+    },
+    {
+      "title": "Benin Launches AI-Powered \"JaimeMaLangue\" Project To Preserve And ...",
+      "url": "https://iafrica.com/benin-launches-ai-powered-jaimemalangue-project-to-preserve-and-promote-local-languages/",
+      "snippet": "Benin has launched the \"JaimeMaLangue\" (LoveMyLanguage) project in Cotonou, an initiative designed to integrate artificial intelligence into the country&#x27;s digital landscape while promoting ..."
+    },
+    {
+      "title": "Benin launches \"LoveMyLanguage\" AI project - APAnews",
+      "url": "https://apanews.net/benin-launches-lovemylanguage-ai-project/",
+      "snippet": "Benin has officially launched the \"JaimeMaLangue\" (LoveMyLanguage) project in Cotonou. This pioneering initiative, a joint effort between the Information Systems and Digital Technology Agency (ASIN) and the IIDiA Institute, aims to integrate artificial intelligence (AI) into the digital world to promote and preserve local languages."
+    }
+  ]
+}

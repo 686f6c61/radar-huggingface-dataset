@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "NamanAgnih0tri/AlphaRoute-0.8B-v1.0-MLX-4bit",
+  "slug": "namanagnih0tri-alpharoute-0-8b-v1-0-mlx-4bit",
+  "author": "NamanAgnih0tri",
+  "url": "https://huggingface.co/NamanAgnih0tri/AlphaRoute-0.8B-v1.0-MLX-4bit",
+  "created_at": "2026-08-19T15:33:59.000Z",
+  "updated_at": "2026-08-19T15:48:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "routing",
+    "semantic-routing",
+    "intent-classification",
+    "slm",
+    "edge-ai",
+    "apple-silicon",
+    "structured-outputs",
+    "json",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117982016,
+  "parameters_human": "118.0M",
+  "storage_bytes": 444015042,
+  "storage_human": "444 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Kcbir/AlphaRoute: LLM-guided global router for VLSI physical ...",
+      "url": "https://github.com/Kcbir/AlphaRoute",
+      "snippet": "AlphaRoute A global router for VLSI physical design that lets a language model tune the routing penalties instead of hand-coding a fixed schedule."
+    },
+    {
+      "title": "Transportation Management Solutions - AlphaRoute",
+      "url": "https://alpharoute.com/",
+      "snippet": "Our AI-powered platform is changing the game—cutting costs, solving staffing challenges, and streamlining operations. Use AlphaRoute as your primary transportation management system or seamlessly integrate with the software tools you already rely on."
+    },
+    {
+      "title": "[2607.19768] AlphaRoute: Large Language Models as Semantic Optimizers ...",
+      "url": "https://arxiv.org/abs/2607.19768",
+      "snippet": "Very Large Scale Integration (VLSI) global routing is an NP-hard combinatorial optimization problem requiring signal net assignment across capacity-constrained 3D grids while minimizing congestion, wirelength, and via transitions. Because traditional heuristics rely on static penalty schedules that fail on complex congestion topologies, we present AlphaRoute: a multi-objective adaptive search ..."
+    },
+    {
+      "title": "AlphaRoute: Large Language Models as Semantic Optimizers for Multi ...",
+      "url": "https://arxiv.org/html/2607.19768v1",
+      "snippet": "Abstract Very Large Scale Integration (VLSI) global routing is an NP-hard combinatorial optimization problem requiring signal net assignment across capacity-constrained 3D grids while minimizing congestion, wirelength, and via transitions. Because traditional heuristics rely on static penalty schedules that fail on complex congestion topologies, we present AlphaRoute: a multi-objective ..."
+    },
+    {
+      "title": "AlphaRoute/README.md at main · Kcbir/AlphaRoute · GitHub",
+      "url": "https://github.com/Kcbir/AlphaRoute/blob/main/README.md",
+      "snippet": "AlphaRoute A global router for VLSI physical design that lets a language model tune the routing penalties instead of hand-coding a fixed schedule."
+    }
+  ]
+}

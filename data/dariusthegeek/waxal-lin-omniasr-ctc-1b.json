@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "DariusTheGeek/waxal-lin-omniasr-ctc-1b",
+  "slug": "dariusthegeek-waxal-lin-omniasr-ctc-1b",
+  "author": "DariusTheGeek",
+  "url": "https://huggingface.co/DariusTheGeek/waxal-lin-omniasr-ctc-1b",
+  "created_at": "2026-08-19T06:26:56.000Z",
+  "updated_at": "2026-08-19T18:54:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "fairseq2",
+  "languages": [
+    "ln"
+  ],
+  "tags": [
+    "fairseq2",
+    "automatic-speech-recognition",
+    "omnilingual-asr",
+    "lingala",
+    "waxal",
+    "zindi",
+    "ln",
+    "dataset:google/WaxalNLP",
+    "base_model:facebook/omniASR-CTC-1B",
+    "base_model:finetune:facebook/omniASR-CTC-1B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3902995312,
+  "storage_human": "3.9 GB",
+  "base_model": "facebook/omniASR-CTC-1B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DariusTheGeek/waxal-lin-omniasr-llm-1b · Hugging Face",
+      "url": "https://huggingface.co/DariusTheGeek/waxal-lin-omniasr-llm-1b",
+      "snippet": "waxal-lin-omniasr-llm-1b OmniASR LLM-1B v2, fine-tuned for Lingala as part of the WAXAL ASR solution. Released artifact: top-3 uniform FP64 parameter average. Decoded with beam 5, length_norm=True. Files ... Total weights: 9,118,680,523 bytes (9.12 GB). Role in the pipeline Member of the 4-way conservative word ROVER on the Lingala lane."
+    },
+    {
+      "title": "DariusTheGeek/waxal-joint-ctc-1b-lid · Hugging Face",
+      "url": "https://huggingface.co/DariusTheGeek/waxal-joint-ctc-1b-lid",
+      "snippet": "Joint Lingala + Shona OmniASR CTC-1B, fine-tuned without any language tag, paired with the text language-identification classifier used to route its output. This is the entry point of the WAXAL ASR solution."
+    },
+    {
+      "title": "facebook/omniASR-CTC-1B · Hugging Face",
+      "url": "https://huggingface.co/facebook/omniASR-CTC-1B",
+      "snippet": "Model Card for omniASR-CTC-1B Model Description This model is part of the Omnilingual ASR family released by Meta AI. The original suite includes:"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=omnilingual-asr",
+      "snippet": "uctnlp/omniASR-CTC-300m-v2-Zulu Automatic Speech Recognition •Updated 2 days ago• 1"
+    },
+    {
+      "title": "yehoshua01/waxal-omni-ctc1b-lin · Hugging Face",
+      "url": "https://huggingface.co/yehoshua01/waxal-omni-ctc1b-lin",
+      "snippet": "Lingala ASR — omniASR CTC-1B fine-tune (fairseq2) Component of the 4th-place solution to the Google WAXAL ASR Challenge (Zindi, phase 2): 892 unseen clips, two African languages, no language metadata, scored 1 - (WER + CER) / 2 on raw text. Private leaderboard 0.771848284."
+    }
+  ]
+}

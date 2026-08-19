@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "qwrqwrqwrqr/my-awesome-model",
+  "slug": "qwrqwrqwrqr-my-awesome-model",
+  "author": "qwrqwrqwrqr",
+  "url": "https://huggingface.co/qwrqwrqwrqr/my-awesome-model",
+  "created_at": "2026-08-19T16:20:46.000Z",
+  "updated_at": "2026-08-19T16:27:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "text-classification",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwrqwrqwrqr/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/qwrqwrqwrqr/MyAwesomeModel-TestRepo",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model."
+    },
+    {
+      "title": "mm-tool/MyAwesomeModel-v1 · Hugging Face",
+      "url": "https://huggingface.co/mm-tool/MyAwesomeModel-v1",
+      "snippet": "The model has demonstrated outstanding performance across various benchmark evaluations, including mathematics, programming, and general logic. Its overall performance is now approaching that of other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "GitHub - open-free-llm-api/awesome-freellm-apis: 134+ free LLM APIs ...",
+      "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
+      "snippet": "Finding a free LLM API shouldn&#x27;t mean hunting through a dozen GitHub READMEs, signing up for five different platforms, or guessing which models still have a free tier. This repo is a structured, machine-readable directory of every free LLM API — rate limits, context windows, one-click config ..."
+    }
+  ]
+}

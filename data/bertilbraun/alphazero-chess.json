@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "BertilBraun/alphazero-chess",
+  "slug": "bertilbraun-alphazero-chess",
+  "author": "BertilBraun",
+  "url": "https://huggingface.co/BertilBraun/alphazero-chess",
+  "created_at": "2026-07-21T20:33:38.000Z",
+  "updated_at": "2026-08-19T15:28:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "chess",
+    "alphazero",
+    "pytorch",
+    "torchscript",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52936938,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BertilBraun/alphazero-chess · Hugging Face",
+      "url": "https://huggingface.co/BertilBraun/alphazero-chess",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BertilBraun/Advanced-Techniques-in-Chess-Engines - GitHub",
+      "url": "https://github.com/BertilBraun/Advanced-Techniques-in-Chess-Engines",
+      "snippet": "AlphaZero-Clone is a personal implementation of AlphaZero&#x27;s deep reinforcement learning approach, designed to master board games through self-play without human knowledge. This project demonstrates that sophisticated AI techniques can achieve strong performance on modest personal budgets, successfully scaling from simple games like Tic-Tac-Toe to complex strategy games like Chess. The system ..."
+    },
+    {
+      "title": "GitHub - Robh96/AlphaZero-from-scratch: Implementation of Deepmind&#x27;s ...",
+      "url": "https://github.com/Robh96/AlphaZero-from-scratch",
+      "snippet": "This project implements a complete AlphaZero chess engine from scratch, demonstrating how reinforcement learning can achieve superhuman performance in complex strategy games without human knowledge. The implementation follows the original DeepMind AlphaZero methodology, combining deep neural networks with Monte Carlo Tree Search (MCTS) for strategic planning and self-play training."
+    },
+    {
+      "title": "Getting Started | BertilBraun/Advanced-Techniques-in-Chess-Engines ...",
+      "url": "https://deepwiki.com/BertilBraun/Advanced-Techniques-in-Chess-Engines/2-getting-started",
+      "snippet": "Data Setup and Model Pretraining 1. Chess Database Download This downloads and processes chess games from online databases, creating training data in HDF5 format."
+    },
+    {
+      "title": "Core Training System | BertilBraun/Advanced-Techniques-in-Chess-Engines ...",
+      "url": "https://deepwiki.com/BertilBraun/Advanced-Techniques-in-Chess-Engines/3-core-training-system",
+      "snippet": "Purpose and Scope The Core Training System implements the main distributed training pipeline for the AlphaZero-style reinforcement learning system. It coordinates the generation of self-play training data, neural network training, model evaluation, and model selection across multiple processes and devices. This system handles the iterative improvement cycle where models play against themselves ..."
+    }
+  ]
+}

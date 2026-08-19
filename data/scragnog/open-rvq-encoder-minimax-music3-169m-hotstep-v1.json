@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "scragnog/open-rvq-encoder-minimax-music3-169m-hotstep-v1",
+  "slug": "scragnog-open-rvq-encoder-minimax-music3-169m-hotstep-v1",
+  "author": "scragnog",
+  "url": "https://huggingface.co/scragnog/open-rvq-encoder-minimax-music3-169m-hotstep-v1",
+  "created_at": "2026-08-19T18:26:55.000Z",
+  "updated_at": "2026-08-19T18:27:23.000Z",
+  "license": "minimax-music3-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimax-music3",
+    "rvq",
+    "audio-encoder",
+    "reverse-distillation",
+    "knowledge-distillation",
+    "dataset:Mothersuperior/minimax-music3-rvq-distill-corpus-8k",
+    "base_model:Mothersuperior/open-rvq-encoder-minimax-music3-169m-pooled-v4",
+    "base_model:finetune:Mothersuperior/open-rvq-encoder-minimax-music3-169m-pooled-v4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 676055160,
+  "storage_human": "676 MB",
+  "base_model": "Mothersuperior/open-rvq-encoder-minimax-music3-169m-pooled-v4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMaxAI/MiniMax-Music3 · RVQ encoder - Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3/discussions/5",
+      "snippet": "MiniMaxAI / MiniMax-Music3 like 302 Follow MiniMax 9.12k Text-to-Audio Diffusers Safetensors PyTorch sglang-omni minimax_music3 music-generation text-to-music Model card FilesFiles and versions xet Community 11 Copy to bucket new"
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-Music3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax Music 3 - minimax-ai.github.io",
+      "url": "https://minimax-ai.github.io/music3-demo/",
+      "snippet": "Demo Page MiniMax Music 3 This page provides intuitive audio demonstrations of our results. For more technical details, see Huggingface model card."
+    },
+    {
+      "title": "MiniMax Music 2.6 | AI Music Generator & AI Song Maker",
+      "url": "https://www.minimax-music.com/minimax-music-2-6",
+      "snippet": "MiniMax Music 2.6 is the newest generation of MiniMax Music &#x27;s AI music model, released on April 10, 2026. Enter a style prompt and lyrics into this text-to-song AI, and it generates a complete, full-length song — including natural vocals, layered instrumentation, and genre-aware mixing — in seconds."
+    },
+    {
+      "title": "How to Run MiniMax Music 3 Locally for AI Song Generation",
+      "url": "https://www.mindstudio.ai/blog/minimax-music-3-local-install",
+      "snippet": "How to Run MiniMax Music 3 Locally for AI Song Generation A practical guide to installing MiniMax Music 3 locally, covering VRAM needs, the Gradio setup, and what the open music model actually delivers."
+    }
+  ]
+}

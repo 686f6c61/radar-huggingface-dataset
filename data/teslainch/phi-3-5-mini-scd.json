@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "TeslaInch/phi-3.5-mini-SCD",
+  "slug": "teslainch-phi-3-5-mini-scd",
+  "author": "TeslaInch",
+  "url": "https://huggingface.co/TeslaInch/phi-3.5-mini-SCD",
+  "created_at": "2026-08-19T13:41:17.000Z",
+  "updated_at": "2026-08-19T13:46:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 7642181696,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TeslaInch/scd-phi35-adapter-v3 · Hugging Face",
+      "url": "https://huggingface.co/TeslaInch/scd-phi35-adapter-v3",
+      "snippet": "Model Card for scd-phi35-adapter-v3 This model is a fine-tuned version of microsoft/Phi-3.5-mini-instruct. It has been trained using TRL."
+    },
+    {
+      "title": "TeslaInch/scd-phi35-adapter · Hugging Face",
+      "url": "https://huggingface.co/TeslaInch/scd-phi35-adapter",
+      "snippet": "Instructions to use TeslaInch/scd-phi35-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use TeslaInch/scd-phi35-adapter with Transformers:"
+    },
+    {
+      "title": "Phi Open Models - Small Language Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/phi/",
+      "snippet": "Phi open model family Phi models offer cost-effective, high-performance AI solutions at the edge, pushing the boundaries of generative AI."
+    },
+    {
+      "title": "Phi_3_5_mini_instruct.ipynb - Colab - Google Colab",
+      "url": "https://colab.research.google.com/github/NeuralFalconYT/Phi-3.5-mini-instruct/blob/main/Phi_3_5_mini_instruct.ipynb",
+      "snippet": "I am Phi, created by Microsoft. I&#x27;m an AI digital assistant designed to help answer questions and provide information to the best of my ability."
+    },
+    {
+      "title": "Phi-3.5-mini-instruct · Models",
+      "url": "https://www.modelscope.cn/models/LLM-Research/Phi-3.5-mini-instruct",
+      "snippet": "GAPS Medical AI Evaluation Dataset - Lung Cancer Specialty Benchmark Dataset Overview The GAPS Medical AI Evaluation Dataset is a comprehensive evaluation system specifically designed to assess the performance of AI models in clinical scenarios. Built upon the GAPS (Grounded, Automated, Personalized, Scalable) methodology, this dataset provides carefully curated clinical benchmark data and an ..."
+    }
+  ]
+}

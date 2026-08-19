@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Hedinouairi/fable-daily-agent-merged",
+  "slug": "hedinouairi-fable-daily-agent-merged",
+  "author": "Hedinouairi",
+  "url": "https://huggingface.co/Hedinouairi/fable-daily-agent-merged",
+  "created_at": "2026-08-19T15:18:38.000Z",
+  "updated_at": "2026-08-19T15:31:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349004,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Agents News — Week of August 19, 2026 (Daily Updates)",
+      "url": "https://aiagentstore.ai/ai-agent-news/this-week",
+      "snippet": "AI agent news for the past 7 days, updated August 19, 2026: Google&#x27;s Agent2Agent protocol moves into a dedicated agent standards foundation What changed: Google&#x27;s Agent2Agent (A2A)"
+    },
+    {
+      "title": "Arena Leaderboard | Compare & Benchmark the Best Frontier AI Models",
+      "url": "https://arena.ai/leaderboard",
+      "snippet": "Leaderboard Overview See how leading AI models stack up across text, image, vision, and more. This page provides a high-level snapshot of each Arena. Explore dedicated tabs for deeper insights. Learn more here."
+    },
+    {
+      "title": "Mythos & Fable 5 — The Complete Research Report | June 2026",
+      "url": "https://agentos.guide/mythos-fable-5-research-report",
+      "snippet": "⚠️ Days before launch, Anthropic publicly proposed a \"coordinated brake pedal\" for frontier AI. 🤖 Anthropic disclosed that over 80% of its own merged code is now written by Claude. 🔑 API model ID: claude-fable-5 · 1M token context · 128K output · live on the API, Claude Code and Amazon Bedrock."
+    },
+    {
+      "title": "Claude Fable 5: Multi-Day AI Agent Workflow Guide",
+      "url": "https://blog.4sapi.com/blog/claude-fable-5-multi-day-agent-workflow-guide",
+      "snippet": "Abstract Anthropic re-released Claude Fable 5 on July 1, 2026, positioning it as a next-generation large language model optimized for long-running, multi-step autonomous agent operations. Unlike models that prioritize pure single-turn coding benchmarks, Fable 5 is engineered to sustain asynchronous, multi-phase tasks that may span dozens of hours or multiple working days. Independent benchmark ..."
+    },
+    {
+      "title": "Fable 5 is back baby | The Neuron - AI News - LinkedIn",
+      "url": "https://www.linkedin.com/posts/theneurondaily_fable-5-is-back-baby-activity-7478447414626922496-UO7Q",
+      "snippet": "Anthropic wants Claude agents to feel… boring. 😺 That might matter more than the next flashy model. • Sonnet 5 is now the \"everyday\" Claude • Near Opus-level agent work, lower price ..."
+    }
+  ]
+}

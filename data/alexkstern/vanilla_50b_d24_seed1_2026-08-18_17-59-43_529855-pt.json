@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/vanilla_50B_d24_seed1_2026-08-18_17-59-43_529855-pt",
+  "slug": "alexkstern-vanilla_50b_d24_seed1_2026-08-18_17-59-43_529855-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/vanilla_50B_d24_seed1_2026-08-18_17-59-43_529855-pt",
+  "created_at": "2026-08-19T18:12:58.000Z",
+  "updated_at": "2026-08-19T18:14:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-55B",
+    "no_ppt",
+    "seed_1",
+    "single",
+    "lr_trapezoid",
+    "depth_24",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7587632577,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vanilla_50B_d24_seed0_lr0p0036813_2026-07-26_21-10-00_932736-pt",
+      "url": "https://huggingface.co/alexkstern/vanilla_50B_d24_seed0_lr0p0036813_2026-07-26_21-10-00_932736-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vanilla_50B_d24_seed0_resume38147_2026-07-26_01-19-17_308746-pt",
+      "url": "https://huggingface.co/alexkstern/vanilla_50B_d24_seed0_resume38147_2026-07-26_01-19-17_308746-pt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wayback Machine",
+      "url": "http://search.archive.org/",
+      "snippet": "Please Don&#x27;t Scroll Past This Can you chip in? The Wayback Machine is fighting for universal access to quality information; we keep the record straight by preserving government websites, news articles, historical data, and more. The Internet Archive, which runs this project, is a nonprofit powered by online donations averaging about $14. We&#x27;d be deeply grateful if you&#x27;d join the one in a ..."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Wayback Classic",
+      "url": "https://wayback-classic.net/",
+      "snippet": "A frontend to search and browse the Wayback Machine from old browsers"
+    }
+  ]
+}

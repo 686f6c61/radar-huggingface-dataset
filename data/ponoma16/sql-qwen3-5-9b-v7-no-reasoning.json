@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ponoma16/sql-qwen3.5-9b-v7-no-reasoning",
+  "slug": "ponoma16-sql-qwen3-5-9b-v7-no-reasoning",
+  "author": "ponoma16",
+  "url": "https://huggingface.co/ponoma16/sql-qwen3.5-9b-v7-no-reasoning",
+  "created_at": "2026-08-19T11:07:04.000Z",
+  "updated_at": "2026-08-19T18:19:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193170893,
+  "storage_human": "193 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ponoma16/sql-qwen3.5-9b-v7 · Hugging Face",
+      "url": "https://huggingface.co/ponoma16/sql-qwen3.5-9b-v7",
+      "snippet": "Instructions to use ponoma16/sql-qwen3.5-9b-v7 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ponoma16/sql-qwen3.5-9b-v7 with Transformers:"
+    },
+    {
+      "title": "ponoma16/sql-qwen3.5-9b-v7 at main - Hugging Face",
+      "url": "https://huggingface.co/ponoma16/sql-qwen3.5-9b-v7/tree/main",
+      "snippet": "ponoma16 / sql-qwen3.5-9b-v7 like 0 Model card FilesFiles and versions xet Community Copy to bucket new main sql-qwen3.5-9b-v7 1.52 kB Ctrl+K Ctrl+K 1 contributor History:1 commit ponoma16 initial commit 0ef6b73 verifiedabout 8 hours ago .gitattributes Safe 1.52 kBinitial commitabout 8 hours ago"
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Qwen3.5-9B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen35-9b",
+      "snippet": "The model demonstrates high identity consistency, correctly identifying itself as Qwen3.5-9B and maintaining awareness of its version and multimodal capabilities."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.5-9b",
+      "snippet": "model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.5-9B or leave it blank instead. messages (array): A list of messages comprising the conversation so far."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dakerholdings/Qwen3.8-Empero-4B-ridge_3_4_8-mlx",
+  "slug": "dakerholdings-qwen3-8-empero-4b-ridge_3_4_8-mlx",
+  "author": "dakerholdings",
+  "url": "https://huggingface.co/dakerholdings/Qwen3.8-Empero-4B-ridge_3_4_8-mlx",
+  "created_at": "2026-08-19T12:06:53.000Z",
+  "updated_at": "2026-08-19T13:11:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "quantized",
+    "qwen3_5_text",
+    "ridge_3_4_8",
+    "conversational",
+    "base_model:empero-ai/Qwen3.8-4B",
+    "base_model:quantized:empero-ai/Qwen3.8-4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 605367296,
+  "parameters_human": "605.4M",
+  "storage_bytes": 2169672563,
+  "storage_human": "2.2 GB",
+  "base_model": "empero-ai/Qwen3.8-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "empero-ai/Qwen3.8-4B · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. Latest: Qwen3.8 distilled to 9B / 4B / 2B, and a GDN-aware 27B Ridge GGUF at 11.7 GiB. 1M+ downloads on Hugging Face."
+    },
+    {
+      "title": "empero-ai/Qwen3.8-4B at main - Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-4B/tree/main",
+      "snippet": "empero-ai / Qwen3.8-4B like 1 Text Generation Transformers Safetensors English qwen3_5 image-text-to-text empero-ai qwen3.5 qwen3.8 distillation reasoning function-calling sft conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

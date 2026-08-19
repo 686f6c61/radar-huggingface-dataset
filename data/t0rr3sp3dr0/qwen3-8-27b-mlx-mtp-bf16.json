@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-bf16",
+  "slug": "t0rr3sp3dr0-qwen3-8-27b-mlx-mtp-bf16",
+  "author": "t0rr3sp3dr0",
+  "url": "https://huggingface.co/t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-bf16",
+  "created_at": "2026-08-19T11:45:51.000Z",
+  "updated_at": "2026-08-19T12:19:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mtp",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 56425216768,
+  "storage_human": "56.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "GitHub - Layr-Labs/qwen-3.8-mtp-challenge: Qwen 3.8 27B MLX challenge ...",
+      "url": "https://github.com/Layr-Labs/qwen-3.8-mtp-challenge",
+      "snippet": "The reference checkpoint is our own MLX 4-bit affine / group-64 conversion, produced under a pinned mlx 0.32.0 toolchain, of the official bf16 base Qwen/Qwen3.8-27B @ 1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0."
+    },
+    {
+      "title": "Qwen 3.8 27B MLX-Quants (Vision, Text-Only & MTP)",
+      "url": "https://huggingface.co/collections/lukaskremla/qwen-38-27b-mlx-quants-vision-text-only-and-mtp",
+      "snippet": "Complete quantized MLX conversion of Qwen 3.8 27B. This collection contains vision-capable, text-only and all MTP quants."
+    },
+    {
+      "title": "qwen/qwen3.8-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B Qwen3.8 27B is a compact, deployment-friendly dense vision-language model built on the Qwen3.5 architecture. It delivers stronger performance across coding, professional work, research, and long-horizon agentic tasks. Highlights Agent Execution: stronger autonomous planning and environment-feedback handling improve reliability on complex, multi-step tasks. Flexible Thinking Control ..."
+    }
+  ]
+}

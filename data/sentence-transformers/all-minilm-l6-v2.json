@@ -60,9 +60,9 @@
     "deploy:sagemaker",
     "deploy:azure"
   ],
-  "likes": 5221,
+  "likes": 5224,
   "downloads_30d": 257979686,
-  "trending_score": 15,
+  "trending_score": 18,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": null,

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hrshvs/tds-carbon-card",
+  "slug": "hrshvs-tds-carbon-card",
+  "author": "hrshvs",
+  "url": "https://huggingface.co/hrshvs/tds-carbon-card",
+  "created_at": "2026-08-19T19:01:33.000Z",
+  "updated_at": "2026-08-19T19:03:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akash7677/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Akash7677/tds-carbon-card",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Cards · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/model-cards",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "glm-5.2 Model by Z-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/z-ai/glm-5.2",
+      "snippet": "AI models generate responses and outputs based on complex algorithms and machine learning techniques, and those responses or outputs may be inaccurate, harmful, biased or indecent. By testing this model, you assume the risk of any harm caused by any response or output of the model."
+    },
+    {
+      "title": "Chinese Moonshot AI Kimi K3 Is the Biggest Open-Source AI Model Ever ...",
+      "url": "https://www.uctoday.com/productivity-automation/chinese-moonshot-ai-kimi-k3-is-the-biggest-open-source-ai-model-ever-built-will-it-rival-anthropic-and-openai/",
+      "snippet": "On 17 July 2026, Moonshot AI unveiled Kimi K3 at the World Artificial Intelligence Conference in Shanghai: the world&#x27;s largest open-source AI model at 2.8 trillion parameters, backed by Chinese tech giants Alibaba and Tencent, and valued at over $20 billion following a $2 billion raise in May."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    }
+  ]
+}

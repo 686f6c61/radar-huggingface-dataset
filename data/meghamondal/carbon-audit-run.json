@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "meghamondal/carbon-audit-run",
+  "slug": "meghamondal-carbon-audit-run",
+  "author": "meghamondal",
+  "url": "https://huggingface.co/meghamondal/carbon-audit-run",
+  "created_at": "2026-08-19T16:06:20.000Z",
+  "updated_at": "2026-08-19T16:13:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meghamondal1902 (Megha Mondal) - Hugging Face",
+      "url": "https://huggingface.co/meghamondal1902",
+      "snippet": "User profile of Megha Mondal on Hugging Face"
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Auditing AI model carbon and resource footprints | Suhas Bhairav",
+      "url": "https://suhasbhairav.com/blog/technical-auditing-of-ai-model-carbon-and-resource-footprints",
+      "snippet": "You can systematically measure and reduce the energy and carbon footprint of AI workloads in production by establishing multi-layer metrics, reproducible baselines, and governance that ties energy outcomes to architectural decisions."
+    },
+    {
+      "title": "Sustainable AI: Measuring and Reducing Carbon Footprint in Model ...",
+      "url": "https://www.researchgate.net/publication/392727729_Sustainable_AI_Measuring_and_Reducing_Carbon_Footprint_in_Model_Training_and_Deployment",
+      "snippet": "This research article addresses the escalating environmental impact of Artificial Intelligence (AI) and Machine Learning (ML) systems, focusing specifically on the carbon footprint generated ..."
+    },
+    {
+      "title": "eco2AI: Carbon Emissions Tracking of Machine Learning Models as the ...",
+      "url": "https://link.springer.com/article/10.1134/S1064562422060230",
+      "snippet": "Abstract— The size and complexity of deep neural networks used in AI applications continue to grow exponentially, significantly increasing energy consumption for training and inference by these models. We introduce an open-source package eco2AI to help data scientists and researchers to track the energy consumption and equivalent CO2 emissions of their models in a straightforward way. In ..."
+    }
+  ]
+}

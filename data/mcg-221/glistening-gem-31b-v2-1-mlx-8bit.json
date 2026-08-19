@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit",
+  "slug": "mcg-221-glistening-gem-31b-v2-1-mlx-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit",
+  "created_at": "2026-08-16T16:05:04.000Z",
+  "updated_at": "2026-08-16T16:05:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "base_model:sophosympatheia/Glistening-Gem-31B-v2.1",
+    "base_model:quantized:sophosympatheia/Glistening-Gem-31B-v2.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 8634585404,
+  "parameters_human": "8.63B",
+  "storage_bytes": 32649561334,
+  "storage_human": "32.6 GB",
+  "base_model": "sophosympatheia/Glistening-Gem-31B-v2.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit",
+      "snippet": "Instructions to use McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit with Transformers:"
+    },
+    {
+      "title": "Glistening-Gem-31B-v2.1-mlx-8Bit - FriendliAI",
+      "url": "https://friendli.ai/models/McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit",
+      "snippet": "Run Glistening-Gem-31B-v2.1-mlx-8Bit with FriendliAI inference. The Model McG-221/Glistening-Gem-31B-v2.1-mlx-8Bit was converted to MLX format from…"
+    },
+    {
+      "title": "McG-221/Gemma-4-Gembrain-X-Core-31B-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Gemma-4-Gembrain-X-Core-31B-mlx-8Bit",
+      "snippet": "Instructions to use McG-221/Gemma-4-Gembrain-X-Core-31B-mlx-8Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Run Gemma 4 with MLX on Apple Silicon | gemma4.dev",
+      "url": "https://gemma4.dev/run-local/gemma-4-mlx",
+      "snippet": "Run Gemma 4 with Apple&#x27;s MLX framework on M1/M2/M3/M4 chips. Covers installation, model download, and inference optimization for Apple Silicon Macs."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

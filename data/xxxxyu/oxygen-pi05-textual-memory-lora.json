@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "XXXXyu/oxygen-pi05-textual-memory-lora",
+  "slug": "xxxxyu-oxygen-pi05-textual-memory-lora",
+  "author": "XXXXyu",
+  "url": "https://huggingface.co/XXXXyu/oxygen-pi05-textual-memory-lora",
+  "created_at": "2026-08-19T02:22:10.000Z",
+  "updated_at": "2026-08-19T15:51:36.000Z",
+  "license": "apache-2.0-and-gemma-terms",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vision-language-action",
+    "libero",
+    "lora",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111479934,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XXXXyu/oxygen-pi05-textual-memory-lora · Hugging Face",
+      "url": "https://huggingface.co/XXXXyu/oxygen-pi05-textual-memory-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "XXXXyu/oxygen-pi05-textual-memory-lora at main - Hugging Face",
+      "url": "https://huggingface.co/XXXXyu/oxygen-pi05-textual-memory-lora/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main oxygen-pi05-textual-memory-lora 111 MB Ctrl+K Ctrl+K 1 contributor History:4 commits XXXXyu Rename release as textual memory 74d0aa8 verifiedabout 2 hours ago .gitattributes Safe 1.52 kBinitial commitabout 12 hours ago README.md 1.32 kBRename release as textual memoryabout ..."
+    },
+    {
+      "title": "Xiangyu Li — Ph.D. Candidate at AIR, Tsinghua University",
+      "url": "https://xxxxyu.github.io/",
+      "snippet": "I am a 4th year Ph.D. candidate at AIR, THU, working on efficient inference systems for edge AI (Ph.D. work overview). My current research interests focus on model-system co-design for embodied AI, especially VLA training and deployment."
+    },
+    {
+      "title": "GitHub - air-embodied-brain/OxyGen: Unified KV cache management for ...",
+      "url": "https://github.com/air-embodied-brain/OxyGen",
+      "snippet": "This repository contains code for paper OxyGen: Unified KV Cache Management for Vision-Language-Action Models under Multi-Task Parallelism. It is built atop openpi. OxyGen optimizes multi-task inference for Mixture-of-Transformers (MoT) Vision-Language-Action (VLA) models (e.g., pi0.5) through unified KV cache management, with cross-task KV sharing and cross-frame continuous batching."
+    },
+    {
+      "title": "xxxxyu (Xiangyu Li) · GitHub",
+      "url": "https://github.com/xxxxyu",
+      "snippet": "On-device & physical AI. xxxxyu has 8 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

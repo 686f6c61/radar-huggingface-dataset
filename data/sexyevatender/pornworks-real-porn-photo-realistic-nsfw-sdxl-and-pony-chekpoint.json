@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Sexyevatender/pornworks-real-porn-photo-realistic-nsfw-sdxl-and-pony-chekpoint",
+  "slug": "sexyevatender-pornworks-real-porn-photo-realistic-nsfw-sdxl-and-pony-chekpoint",
+  "author": "Sexyevatender",
+  "url": "https://huggingface.co/Sexyevatender/pornworks-real-porn-photo-realistic-nsfw-sdxl-and-pony-chekpoint",
+  "created_at": "2026-08-19T19:18:14.000Z",
+  "updated_at": "2026-08-19T19:18:14.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "nsfw",
+    "sdxl",
+    "art",
+    "image",
+    "safetensors",
+    "stable-diffusion-xl",
+    "text-to-image",
+    "en",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:finetune:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27752170216,
+  "storage_human": "27.8 GB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PornWorks Real Porn Photo Realistic NSFW SDXL, Pony & Illustrious ...",
+      "url": "https://civarchive.com/models/675024?modelVersionId=1204588",
+      "snippet": "Download PornWorks Real Porn Photo Realistic NSFW SDXL, Pony & Illustrious Chekpoint - Checkpoint for Pony by pornworksai. Free AI model download from CivArchive."
+    },
+    {
+      "title": "PornWorks Real Porn Photo Realistic NSFW SDXL, Pony & Illustrious ...",
+      "url": "https://civarchive.com/models/675024?modelVersionId=755618",
+      "snippet": "Download PornWorks Real Porn Photo Realistic NSFW SDXL, Pony & Illustrious Chekpoint - Checkpoint for SDXL 1.0 by pornworksai. Free AI model download from CivArchive."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=nsfw",
+      "snippet": "Explore machine learning models. AI-Porn/PornWorks-Bad-Boys-Photo-Realistic-Gay-and-Male-NSFW-Aesthetics-SDXL-Checkpoint"
+    },
+    {
+      "title": "AI-Porn (AI Porn) - Hugging Face",
+      "url": "https://huggingface.co/AI-Porn/models",
+      "snippet": "AI-Porn/anime-desire-illustrious ... AI-Porn/pornworks-real-porn-photo-realistic-nsfw-sdxl-and-pony-chekpoint ... AI-Porn/pornworks-characters-chun-li-lora-for-pony ... AI-Porn/pornworks-characters-dva-from-overwatch-sdxl"
+    },
+    {
+      "title": "Best Realistic NSFW Models for Stable Diffusion (March 2026)",
+      "url": "https://offlinecreator.com/best-realistic-nsfw-models",
+      "snippet": "The best photorealistic NSFW checkpoints for SD 1.5 and SDXL with CivitAI links, VRAM notes, and which model to download first."
+    }
+  ]
+}

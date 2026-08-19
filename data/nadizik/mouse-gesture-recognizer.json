@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nadizik/mouse-gesture-recognizer",
+  "slug": "nadizik-mouse-gesture-recognizer",
+  "author": "nadizik",
+  "url": "https://huggingface.co/nadizik/mouse-gesture-recognizer",
+  "created_at": "2026-08-19T17:37:24.000Z",
+  "updated_at": "2026-08-19T18:13:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45569,
+  "storage_human": "45569 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "AI Driven-Virtual Mouse Using Hand Gestures - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-06697-8_27",
+      "snippet": "This paper presents a comprehensive study on the development and implementation of a virtual mouse system using hand gestures. With the rapid advancement of human-computer interaction (HCI) technologies, touchless interfaces have gained immense popularity. The proposed system eliminates the need for physical input devices by leveraging computer vision and machine learning techniques to ..."
+    },
+    {
+      "title": "amirmallaei/AI-Gesture-Virtual-Mouse - GitHub",
+      "url": "https://github.com/amirmallaei/AI-Gesture-Virtual-Mouse",
+      "snippet": "AI-Powered Virtual Mouse with Hand Gesture Control Tired of your mouse and keyboard? This project transforms your webcam into a next-generation human-computer interface, allowing you to control your computer with intuitive hand gestures."
+    },
+    {
+      "title": "AI-Driven-Hand-Gesture-Recognition-Virtual-Mouse - GitHub",
+      "url": "https://github.com/Vaishnavi01-P/AI-Driven-Hand-Gesture-Recognition-Virtual-Mouse",
+      "snippet": "This project transforms your hand into a virtual mouse using real-time hand tracking and gesture recognition. The system captures video from a webcam, detects hand landmarks, and interprets gestures to perform mouse actions such as cursor movement, clicking, dragging, scrolling, and executing system shortcuts. The application provides a natural and intuitive human-computer interaction ..."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    }
+  ]
+}

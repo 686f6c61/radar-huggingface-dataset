@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "optimum-internal-testing/tiny_random_bert_neuronx",
+  "slug": "optimum-internal-testing-tiny_random_bert_neuronx",
+  "author": "optimum-internal-testing",
+  "url": "https://huggingface.co/optimum-internal-testing/tiny_random_bert_neuronx",
+  "created_at": "2024-06-05T16:14:56.000Z",
+  "updated_at": "2026-08-19T13:29:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "bert",
+    "feature-extraction",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 120,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 436573913,
+  "storage_human": "437 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "optimum-internal-testing/tiny_random_bert_neuronx · Hugging Face",
+      "url": "https://huggingface.co/optimum-internal-testing/tiny_random_bert_neuronx",
+      "snippet": "This model does not have enough activity to be deployed to Inference API (serverless) yet. Increase its social visibility and check back later, or deploy to Inference Endpoints (dedicated) instead."
+    },
+    {
+      "title": "optimum-internal-testing (Optimum Internal Testing) - Hugging Face",
+      "url": "https://huggingface.co/optimum-internal-testing/models",
+      "snippet": "Org profile for Optimum Internal Testing on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "tiny-random-bert · Model · Inferix",
+      "url": "https://inferix.co/models/optimum-intel-internal-testing/tiny-random-bert",
+      "snippet": "tiny-random-bert — an open model on Inferix. Explore files, versions, and one-click deployment. 2 downloads."
+    },
+    {
+      "title": "optimum/tiny_random_bert_neuronx - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/optimum-tiny-random-bert-neuronx",
+      "snippet": "tiny_random_bert_neuronx is an open source model from GitHub that offers a free installation service, and any user can find tiny_random_bert_neuronx on GitHub to install."
+    },
+    {
+      "title": "Deploy optimum-internal-testing/tiny_random_bert_neuronx | Inference ...",
+      "url": "https://endpoints.huggingface.co/new?repository=optimum-internal-testing%2Ftiny_random_bert_neuronx",
+      "snippet": "Deploy tiny_random_bert_neuronx for feature-extraction inference in 1 click."
+    }
+  ]
+}

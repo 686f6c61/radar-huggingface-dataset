@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shubhampm/stock-news-sentiment-finetuned",
+  "slug": "shubhampm-stock-news-sentiment-finetuned",
+  "author": "shubhampm",
+  "url": "https://huggingface.co/shubhampm/stock-news-sentiment-finetuned",
+  "created_at": "2026-08-19T18:41:39.000Z",
+  "updated_at": "2026-08-19T18:41:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437961700,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stock Market Sentiment Dashboard & Real Time Sentiment Feed",
+      "url": "https://sentimentfeed.com/",
+      "snippet": "A real time sentiment feed for the stock market. This stock market sentiment dashboard rebuilds hourly: a live stock sentiment tracker, ticker feed, sector and theme momentum, regime and volatility risk from the whole market feed."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "stock-sentiment-analysis · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/stock-sentiment-analysis",
+      "snippet": "A Python project that combines stock market data with natural language processing to uncover how sentiment from stock data correlate with stock price movements. It features data collection & cleaning, exploratory data analysis, visualizations, model experiments, and reporting to help understand and predict market behavior."
+    },
+    {
+      "title": "distilroberta-finetuned-financial-news-sentiment-analysis",
+      "url": "https://huggingface.co/mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stock API for Sentiment Data - Stockgeist",
+      "url": "https://www.stockgeist.ai/stock-market-api/",
+      "snippet": "StockGeist provides developers with real-time market sentiment data for individual stocks and entire markets (soon). Our stock market API uses advanced algorithms to analyze the stock sentiment from news articles, social media posts, and other forms of online content to determine sentiment for a wide range of stocks and industries. The API allows traders, investors, and developers to access ..."
+    }
+  ]
+}

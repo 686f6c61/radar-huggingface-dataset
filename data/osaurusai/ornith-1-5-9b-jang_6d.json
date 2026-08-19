@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "OsaurusAI/Ornith-1.5-9B-JANG_6D",
+  "slug": "osaurusai-ornith-1-5-9b-jang_6d",
+  "author": "OsaurusAI",
+  "url": "https://huggingface.co/OsaurusAI/Ornith-1.5-9B-JANG_6D",
+  "created_at": "2026-08-19T18:10:23.000Z",
+  "updated_at": "2026-08-19T18:20:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "jang",
+    "jang-6d",
+    "quantized",
+    "apple-silicon",
+    "ornith",
+    "vision",
+    "video",
+    "reasoning",
+    "thinking",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2156580944,
+  "parameters_human": "2.16B",
+  "storage_bytes": 8075184837,
+  "storage_human": "8.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5 - a ornith-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ornith-ai/ornith-15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 spans three model scales: 397B MoE, 35B MoE and 9B dense. Designed for strong general-purpose intelligence across reasoning, agentic, and coding tasks, Ornith-1.5 achieves state-of-the-art performance among open-source models of comparable size across a broad range of benchmarks."
+    },
+    {
+      "title": "OsaurusAI/Ornith-1.0-9B-JANG_4M · Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/Ornith-1.0-9B-JANG_4M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=ornith",
+      "snippet": "OsaurusAI/Ornith-1.-35B-MXFP8 Image-Text-to-Text • 10B•Updated 2 days ago• 43 • 3"
+    },
+    {
+      "title": "Releases · osaurus-ai/osaurus - GitHub",
+      "url": "https://github.com/osaurus-ai/osaurus/releases",
+      "snippet": "What&#x27;s Changed evals (community): OsaurusAI/Ornith-1.-35B-MXFP8 on Apple M4 Max (#1979) by @mimeding added cli like @ filesystem menu to chat input (#1980) by @RaajeevChandran evals (community): OsaurusAI/gemma-4-12B-it-MXFP8 on Apple M4 Max (#1977) by @mimeding evals (community): OsaurusAI/Ornith-1.-9B-MXFP8 on Apple M4 Max (#1975) by @mimeding Add measured per-model prefill step tuning ..."
+    }
+  ]
+}

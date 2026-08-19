@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ProCreations/grug-v1.1-qwen-3.8-27b-mtp-awq-int4",
+  "slug": "procreations-grug-v1-1-qwen-3-8-27b-mtp-awq-int4",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp-awq-int4",
+  "created_at": "2026-08-19T17:37:41.000Z",
+  "updated_at": "2026-08-19T17:37:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "awq",
+    "int4",
+    "w4a16",
+    "compressed-tensors",
+    "vllm",
+    "mtp",
+    "speculative-decoding",
+    "conversational",
+    "base_model:ProCreations/grug-v1.1-qwen-3.8-27b-mtp",
+    "base_model:quantized:ProCreations/grug-v1.1-qwen-3.8-27b-mtp",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5823717664,
+  "parameters_human": "5.82B",
+  "storage_bytes": 19567853135,
+  "storage_human": "19.6 GB",
+  "base_model": "ProCreations/grug-v1.1-qwen-3.8-27b-mtp",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ProCreations/grug-v1.1-qwen-3.8-27b · Hugging Face",
+      "url": "https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ProCreations/grug-27b · Hugging Face",
+      "url": "https://huggingface.co/ProCreations/grug-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Grug 27B V1.1 by ProCreations — VRAM 54.8GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ProCreations%2Fgrug-27b-v1.1,7w81YA2p3vl4IO1tukcqWu",
+      "snippet": "Rank the Grug 27B V1.1 capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "grug-v1.1-qwen-3.8-27b-mtp API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ProCreations/grug-v1.1-qwen-3.8-27b-mtp",
+      "snippet": "what change ... disagree rate go from 1-in-10 to 1-in-21. old grug v1 mtp sit at 89.3%. honest part: native head was already 90.0% before any training. grug not rescue broken head — grug sharpen already-good head. and gold top-1 go up too (85.5 -> 88.2), so head get genuinely better at real token, not just better at copying verifier mistake."
+    },
+    {
+      "title": "How to Run Qwen 3.8 in Production: API, Self-Hosted 27B, or Both (2026)",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-in-production",
+      "snippet": "Qwen 3.8 gives production teams both halves: a frontier API flagship and an Apache 2.0 27B that serves from one GPU. How to consume the API defensively, size the self-hosted tier, and where the cost crossover actually sits."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ModelsLab/krea-2-raw-svdquant-int4_r32",
+  "slug": "modelslab-krea-2-raw-svdquant-int4_r32",
+  "author": "ModelsLab",
+  "url": "https://huggingface.co/ModelsLab/krea-2-raw-svdquant-int4_r32",
+  "created_at": "2026-08-19T15:26:52.000Z",
+  "updated_at": "2026-08-19T16:30:56.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "license:other",
+    "diffusers:Krea2Pipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6882135628,
+  "parameters_human": "6.88B",
+  "storage_bytes": 16954625610,
+  "storage_human": "17.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · ModelsLab/Krea-2-Turbo-W4A4-Nunchaku at main",
+      "url": "https://huggingface.co/ModelsLab/Krea-2-Turbo-W4A4-Nunchaku/blob/main/README.md",
+      "snippet": "Krea 2 Turbo W4A4 (Nunchaku) Krea 2 Turbo quantized to 4-bit weights and 4-bit activations with SVDQuant, running through Nunchaku&#x27;s fused low-bit kernels. As far as I can tell this is the first W4A4 build of Krea 2, and the first time it has generated an image through fused 4-bit kernels rather than a simulation of them."
+    },
+    {
+      "title": "Krea2 Turbo/Raw INT8/INT4 - Krea2 Turbo INT8 | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2724771/krea2-turboraw-int8int4",
+      "snippet": "W4A8_mixed models quantized by me. (Makes my mixed int4 models obsolete) True int4 model size with int8 activations, near int8 quality, same speed ..."
+    },
+    {
+      "title": "GitHub - dbw6/svdquant: [ICLR2025] SVDQuant: Absorbing Outliers by Low ...",
+      "url": "https://github.com/dbw6/svdquant",
+      "snippet": "SVDQuant is a post-training quantization technique for 4-bit weights and activations that well maintains visual fidelity. On 12B FLUX.1-dev, it achieves 3.6× memory reduction compared to the BF16 model. By eliminating CPU offloading, it offers 8.7× speedup over the 16-bit model when on a 16GB laptop 4090 GPU, 3× faster than the NF4 W4A16 ..."
+    },
+    {
+      "title": "Krea-2-Raw - Hugging Face",
+      "url": "https://huggingface.co/krea/Krea-2-Raw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - krea-ai/krea-2: Official inference code for Krea 2",
+      "url": "https://github.com/krea-ai/krea-2",
+      "snippet": "The repository contains inference code and instructions to run the model. Krea 2 is the most aesthetic open-source image model available. On quality, Krea 2 is the #1 text-to-image model from an independent lab on Artificial Analysis [1]. Krea 2 ships as two models. Krea 2 RAW is the base model."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Aiswww/bbbt",
+  "slug": "aiswww-bbbt",
+  "author": "Aiswww",
+  "url": "https://huggingface.co/Aiswww/bbbt",
+  "created_at": "2026-08-19T13:21:52.000Z",
+  "updated_at": "2026-08-19T13:21:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/models__ai/",
+      "snippet": "2M Followers, 330 Following, 7,117 Posts - 𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) on Instagram: \"𝐖𝐞 𝐃𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐌𝐨𝐝𝐞𝐥𝐬, 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐫𝐭, 𝐀𝐧𝐝 𝐓𝐡𝐞 𝐖𝐨𝐫𝐥𝐝 𝐎𝐟 𝐀𝐈 ..."
+    },
+    {
+      "title": "GitHub - YaUhYeah/bbmodel-ai-generator",
+      "url": "https://github.com/YaUhYeah/bbmodel-ai-generator",
+      "snippet": "The AI-Powered bbmodel Generator is designed for 3D artists, game developers, modders (e.g., Minecraft modding communities), and creative hobbyists seeking rapid prototyping and model generation. It allows users to describe the 3D model they want to create, and the AI will generate a complete bbmodel file compatible with Blockbench."
+    },
+    {
+      "title": "Blood-Brain Barrier Model - AIM Biotech",
+      "url": "https://aimbiotech.com/applications/blood-brain-barrier-model/",
+      "snippet": "Blood-Brain Barrier Model Blood brain barrier (BBB) models are essential for studying the transport efficacy of drugs that target the brain, and for understanding the pathological neurovascular functions in various diseases."
+    },
+    {
+      "title": "AI Business | BBBT",
+      "url": "https://www.bbbt.co.uk/ai",
+      "snippet": "AI-Powered Decision Intelligence Platform Please fill the form below and we will get back to you with more information about the platform."
+    },
+    {
+      "title": "bbmodel-ai-generator/README.md at master · YaUhYeah/bbmodel-ai ...",
+      "url": "https://github.com/YaUhYeah/bbmodel-ai-generator/blob/master/README.md",
+      "snippet": "The AI-Powered bbmodel Generator is designed for 3D artists, game developers, modders (e.g., Minecraft modding communities), and creative hobbyists seeking rapid prototyping and model generation. It allows users to describe the 3D model they want to create, and the AI will generate a complete bbmodel file compatible with Blockbench."
+    }
+  ]
+}

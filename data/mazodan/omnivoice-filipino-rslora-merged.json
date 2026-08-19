@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mazodan/Omnivoice-filipino-RSLoRA-Merged",
+  "slug": "mazodan-omnivoice-filipino-rslora-merged",
+  "author": "mazodan",
+  "url": "https://huggingface.co/mazodan/Omnivoice-filipino-RSLoRA-Merged",
+  "created_at": "2026-08-19T13:40:09.000Z",
+  "updated_at": "2026-08-19T13:53:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "tl"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "omnivoice",
+    "lora",
+    "voice-cloning",
+    "speech-synthesis",
+    "tts",
+    "tl",
+    "dataset:SilencioNetwork/tagalog-filipino-speech",
+    "dataset:KarlShane11/handsfree-filipino-speech-combined",
+    "base_model:k2-fsa/OmniVoice",
+    "base_model:adapter:k2-fsa/OmniVoice",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 612577288,
+  "parameters_human": "612.6M",
+  "storage_bytes": 3267433758,
+  "storage_human": "3.3 GB",
+  "base_model": "k2-fsa/OmniVoice",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmniVoice: Free AI Voice Generator & Voice Cloning",
+      "url": "https://omnivoice.app/",
+      "snippet": "OmniVoice is a free, open-source AI voice generator that supports 646 languages. It converts text to natural-sounding speech, clones voices from a short audio sample (zero-shot Voice Cloning), or creates a voice from a text description alone (Voice Design)."
+    },
+    {
+      "title": "GitHub - k2-fsa/OmniVoice: High-Quality Voice Cloning TTS for 600 ...",
+      "url": "https://github.com/k2-fsa/OmniVoice/",
+      "snippet": "High-Quality Voice Cloning TTS for 600+ Languages. Contribute to k2-fsa/OmniVoice development by creating an account on GitHub."
+    },
+    {
+      "title": "Filipino AI Voices | Free Text to Speech Generator | cvoice.ai",
+      "url": "https://cvoice.ai/ai-voice/filipino-voices",
+      "snippet": "Discover 129+ free filipino AI voices for text to speech. Generate audio with famous filipino voices on cvoice.ai — 100% free, no limits."
+    },
+    {
+      "title": "Free Filipino Text to Speech & Filipino AI Voices - ElevenLabs",
+      "url": "https://elevenlabs.io/text-to-speech/filipino",
+      "snippet": "Generate high-quality Filipino speech with ElevenLabs&#x27; AI. Suitable for storytelling, marketing, and educational content."
+    },
+    {
+      "title": "Kosmaster/OmniVoice · Hugging Face",
+      "url": "https://huggingface.co/Kosmaster/OmniVoice",
+      "snippet": "OmniVoice is a massively multilingual zero-shot text-to-speech (TTS) model supporting over 600 languages. Built on a novel diffusion language model-style architecture, it delivers high-quality speech with superior inference speed, supporting voice cloning and voice design."
+    }
+  ]
+}

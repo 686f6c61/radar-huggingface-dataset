@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "simonykq/gl-foundation-model-h1024",
+  "slug": "simonykq-gl-foundation-model-h1024",
+  "author": "simonykq",
+  "url": "https://huggingface.co/simonykq/gl-foundation-model-h1024",
+  "created_at": "2026-08-19T15:56:54.000Z",
+  "updated_at": "2026-08-19T15:57:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 91008000,
+  "parameters_human": "91.0M",
+  "storage_bytes": 364040344,
+  "storage_human": "364 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "simonykq (Simon Yu) - Hugging Face",
+      "url": "https://huggingface.co/simonykq/models",
+      "snippet": "Recent Activity new activityabout 17 hours ago simonykq/gl-foundation-model-demo: Apply for a GPU community grant: Personal project updated a Spaceabout 17 hours ago simonykq/gl-foundation-model-demo published a Spaceabout 17 hours ago simonykq/gl-foundation-model-demo View all activity"
+    },
+    {
+      "title": "simonykq (Simon Yu) - Hugging Face",
+      "url": "https://huggingface.co/simonykq",
+      "snippet": "Recent Activity new activityabout 11 hours ago simonykq/gl-foundation-model-demo: Apply for a GPU community grant: Personal project updated a Spaceabout 11 hours ago simonykq/gl-foundation-model-demo published a Spaceabout 11 hours ago simonykq/gl-foundation-model-demo View all activity"
+    },
+    {
+      "title": "Transaction Foundation Model Demo",
+      "url": "https://simonykq-gl-foundation-model-demo.static.hf.space/index.html",
+      "snippet": "Card-transaction embedding demo Gradio + ZeroGPU Space for NVIDIA&#x27;s ~29M Llama decoder pretrained on TabFormer sequences — domain tokenization, 512-d last-token embeddings, and behavioral similarity scoring."
+    },
+    {
+      "title": "Simon Yu simonykq - GitHub",
+      "url": "https://github.com/simonykq",
+      "snippet": "Follow 1 follower · 5 following Mindbridge AI Achievements Achievements Block or report user Block or report simonykq Block user angular-googlemap angular-googlemap Public JavaScript 1 streaming-lof streaming-lof Public Scala 1 1 systemjs systemjs Public Forked from systemjs/systemjs"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

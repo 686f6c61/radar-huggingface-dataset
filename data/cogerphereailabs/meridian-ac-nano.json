@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "id": "COGERPHEREAILABS/meridian-ac-nano",
+  "slug": "cogerphereailabs-meridian-ac-nano",
+  "author": "COGERPHEREAILABS",
+  "url": "https://huggingface.co/COGERPHEREAILABS/meridian-ac-nano",
+  "created_at": "2026-08-19T13:32:15.000Z",
+  "updated_at": "2026-08-19T13:56:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "qwen",
+    "lora",
+    "academic",
+    "proofreading",
+    "grammar-correction",
+    "latex",
+    "research-writing",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557708,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "meridian_nano test set (n=162, seed 42)",
+      "metric": "Rouge1",
+      "value": 0.9308
+    },
+    {
+      "task": null,
+      "dataset": "meridian_nano test set (n=162, seed 42)",
+      "metric": "Rouge2",
+      "value": 0.9138
+    },
+    {
+      "task": null,
+      "dataset": "meridian_nano test set (n=162, seed 42)",
+      "metric": "RougeL",
+      "value": 0.929
+    },
+    {
+      "task": null,
+      "dataset": "meridian_nano test set (n=162, seed 42)",
+      "metric": "Bleu4",
+      "value": 0.8797
+    },
+    {
+      "task": null,
+      "dataset": "meridian_nano test set (n=162, seed 42)",
+      "metric": "Exact Match",
+      "value": 74.69
+    },
+    {
+      "task": null,
+      "dataset": "meridian_nano test set (n=162, seed 42)",
+      "metric": "LaTeX validity",
+      "value": 97.53
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - COGERPHEREAILABS/Meridian-SLM-Driven-Models-Research",
+      "url": "https://github.com/COGERPHEREAILABS/Meridian-SLM-Driven-Models-Research",
+      "snippet": "Research repository for MERIDIAN 0.1: LoRA fine-tuning of SmolLM2-135M and Qwen3-0.6B (Meridian-AC-Nano) on literature, LaTeX, and academic thesis proofreading."
+    },
+    {
+      "title": "Meridian-SLM-Driven-Models-Research/README.md at main ... - GitHub",
+      "url": "https://github.com/COGERPHEREAILABS/Meridian-SLM-Driven-Models-Research/blob/main/README.md",
+      "snippet": "MERIDIAN — SLM-Driven Models Research Research repository for MERIDIAN 0.1: LoRA fine-tuning of SmolLM2-135M and Qwen3-0.6B (Meridian-AC-Nano) on literature, LaTeX, and academic thesis proofreading."
+    },
+    {
+      "title": "Meridian Cloud Orchestration for AI-Native Systems",
+      "url": "https://www.linkedin.com/posts/cogerphere_meridian-intelligent-cloud-orchestration-activity-7480605701216657408-jShX",
+      "snippet": "Built with a research-first approach, Meridian explores reliable, secure, and developer-first orchestration for modern AI applications. Status: Meridian is currently in active research and ..."
+    },
+    {
+      "title": "Chrome&#x27;s Secret AI: 4GB Model Installed Silently",
+      "url": "https://thecodersblog.com/google-chrome-s-silent-ai-model-installation-2026/",
+      "snippet": "Google Chrome&#x27;s silent, unconsented installation of the 4GB Gemini Nano model to support experimental AI APIs has triggered a major backlash. This background deployment bypasses traditional consent, consumes significant hardware resources, and resists removal, highlighting a critical lack of transparency in Google&#x27;s on-device AI strategy and driving users toward privacy-focused browser ..."
+    },
+    {
+      "title": "Meridian Labs - Tools for AI Research and Evaluation",
+      "url": "https://meridianlabs.ai/index.html",
+      "snippet": "Meridian Labs is a 501 (c) (3) non-profit building an open source platform for understanding, evaluating, and testing AI models and agents. Our tools enable rigorous model testing and in-depth analysis of agent behavior."
+    }
+  ]
+}

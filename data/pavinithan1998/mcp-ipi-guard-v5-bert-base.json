@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "pavinithan1998/mcp-ipi-guard-v5-bert-base",
+  "slug": "pavinithan1998-mcp-ipi-guard-v5-bert-base",
+  "author": "pavinithan1998",
+  "url": "https://huggingface.co/pavinithan1998/mcp-ipi-guard-v5-bert-base",
+  "created_at": "2026-08-19T14:58:22.000Z",
+  "updated_at": "2026-08-19T14:58:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958648,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pavinithan1998/mcp-ipi-guard-bert-base-uncased · Hugging Face",
+      "url": "https://huggingface.co/pavinithan1998/mcp-ipi-guard-bert-base-uncased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pavinithan1998/mcp-ipi-guard-bert-base-uncased at main",
+      "url": "https://huggingface.co/pavinithan1998/mcp-ipi-guard-bert-base-uncased/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main mcp-ipi-guard-bert-base-uncased 439 MB Ctrl+K Ctrl+K 1 contributor History:3 commits pavinithan1998 Upload tokenizer 7864882 verified2 days ago .gitattributes Safe 1.52 kBinitial commit2 days ago README.md Safe 5.17 kBUpload BertForSequenceClassification2 days ago config.json Safe 767 BytesUpload BertForSequenceClassification2 days ago model.safetensors 438 ..."
+    },
+    {
+      "title": "MCP-Guard: A Defense Framework for Model Context Protocol Integrity in ...",
+      "url": "https://arxiv.org/pdf/2508.10991v2",
+      "snippet": "In this paper, we introduced MCP-Guard, a modular and efficient defense architecture designed to secure interac-tions between Large Language Models (LLMs) and exter-nal tools via the Model Context Protocol (MCP)."
+    },
+    {
+      "title": "MCP-Guard: A Defense Framework for Model Context Protocol Integrity in ...",
+      "url": "https://arxiv.org/html/2508.10991",
+      "snippet": "In this paper, we introduced MCP-Guard, a modular and efficient defense architecture designed to secure interactions between Large Language Models (LLMs) and external tools via the Model Context Protocol (MCP)."
+    },
+    {
+      "title": "GitHub - rohitg00/agentmemory: #1 Persistent memory for AI coding ...",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "snippet": "#1 Persistent memory for AI coding agents based on real-world benchmarks - rohitg00/agentmemory"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Darwin-36B-Opus-NPU2",
+  "slug": "atomic-germ-darwin-36b-opus-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Darwin-36B-Opus-NPU2",
+  "created_at": "2026-08-06T20:50:20.000Z",
+  "updated_at": "2026-08-19T18:31:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "qwen3_5_moe",
+    "darwin",
+    "qwen3.6",
+    "moe",
+    "reasoning",
+    "advanced-reasoning",
+    "multilingual",
+    "fastflowlm",
+    "q4nx",
+    "npu",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:FINAL-Bench/Darwin-36B-Opus",
+    "base_model:quantized:FINAL-Bench/Darwin-36B-Opus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 1628,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 261406689768,
+  "storage_human": "261.4 GB",
+  "base_model": "FINAL-Bench/Darwin-36B-Opus",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Darwin-36B-Opus-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Darwin-36B-Opus-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Atomic-Germ/Darwin-36B-Opus-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Darwin-36B-Opus-NPU2/tree/main",
+      "snippet": "Atomic-Germ / Darwin-36B-Opus-NPU2 like 0 Text Generation English qwen3_5_moe_text darwin qwen3.6 Mixture of Experts reasoning advanced-reasoning multilingual fastflowlm q4nx npu conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Darwin-36B-Opus-NPU2 23.3 GB Ctrl+K Ctrl+K 2 contributors ..."
+    },
+    {
+      "title": "Extended Model Family Configurations (darwin_36b_opus, step37_flash ...",
+      "url": "https://deepwiki.com/mudler/apex-quant/3.6-extended-model-family-configurations-(darwin_36b_opus-step37_flash-lfm25_8b-nemotron3_nano_omni-minimax-gemma4-holo3-nemotron-trinity)",
+      "snippet": "This page documents the quantization configurations and architectural specificities for the broader set of supported model families in the APEX project. These configurations address diverse architectures, including hybrid Attention+SSM+MoE models (Darwin), architectures with short-convolution SSM layers (Step37), and MLA-style attention models (MiniMax)."
+    },
+    {
+      "title": "Darwin 36B Opus by FINAL-Bench - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/FINAL-Bench%2FDarwin-36B-Opus,4f9kFIhl10p1iiPEJk6y6i",
+      "snippet": "Darwin 36B Opus is an open-source 34.7b LLM by FINAL-Bench. VRAM 69GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Darwin-36B-Opus (35B) — LocalMaxxing",
+      "url": "https://www.localmaxxing.com/en/models/FINAL-Bench/Darwin-36B-Opus",
+      "snippet": "Model synced from HuggingFace Hub transformers safetensors qwen3_5_moe_text text-generation darwin darwin-v7 evolutionary-merge reasoning advanced-reasoning chain-of-thought thinking qwen3.6 Fine-tunes (1) FINAL-Bench_Darwin-36B-Opus-GGUF (1) Total runs 0 Highest"
+    }
+  ]
+}

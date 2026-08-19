@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.10-seed-44",
+  "slug": "alinagonch-qwen3-4b-instruct-squad-ratio-0-10-seed-44",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.10-seed-44",
+  "created_at": "2026-08-19T14:14:50.000Z",
+  "updated_at": "2026-08-19T14:15:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610538,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.90-seed-44 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.90-seed-44",
+      "snippet": "Instructions to use AlinaGonch/qwen3-4b-instruct-squad-ratio-.90-seed-44 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-r4 at main",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-r4/tree/main",
+      "snippet": "Instructions to use AlinaGonch/qwen3-4b-instruct-squad-ratio-.50-r4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507: Lightweight Open-Source LLM for Agentic AI ...",
+      "url": "https://dev.co/ai/llms/qwen3-4b-instruct-2507",
+      "snippet": "Qwen3-4B-Instruct-2507 is a 4-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen team. It supports 262K context natively and is optimized for instruction following, reasoning, coding, and multilingual tasks. Apache-2.0 licensed, ungated, and suitable for deployment via vLLM, SGLang, or local frameworks."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    }
+  ]
+}

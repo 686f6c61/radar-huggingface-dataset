@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bobtehbuilder/tds-ga8-carbon-f29a6f980e7e",
+  "slug": "bobtehbuilder-tds-ga8-carbon-f29a6f980e7e",
+  "author": "bobtehbuilder",
+  "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f29a6f980e7e",
+  "created_at": "2026-08-19T17:37:20.000Z",
+  "updated_at": "2026-08-19T17:37:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Free AI Roblox 3D Model Maker - Meshes for Roblox Studio | 3D AI Studio",
+      "url": "https://www.3daistudio.com/UseCases/Roblox",
+      "snippet": "Free AI Roblox model maker: generate game-ready meshes under Roblox&#x27;s triangle limits, export FBX or OBJ, and import straight into Roblox Studio. Characters, pets, vehicles, obby props, and UGC items."
+    },
+    {
+      "title": "GippsAero GA8 Airvan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GippsAero_GA8_Airvan",
+      "snippet": "The GippsAero GA8 Airvan is a single-engined utility aircraft manufactured by GippsAero (formerly named Gippsland Aeronautics) of Victoria, Australia. It can seat up to eight people, including the pilot."
+    },
+    {
+      "title": "3D AI Model Generator - Text to 3D & Image to 3D | 3DAI.ART",
+      "url": "https://www.3dai.art/en",
+      "snippet": "WHAT IS 3D AI What is 3D AI? 3D AI is an artificial intelligence system trained to understand how objects exist in three-dimensional space, not just how they look from one angle. A 3D AI Model Generator (also known as an AI 3D Model Generator) takes a text prompt like &#x27;a steampunk mechanical dolphin with gears&#x27; or a reference photo, then reconstructs complete geometry, calculates surface ..."
+    },
+    {
+      "title": "CGTrader - 3D Models And 3D Printing Marketplace",
+      "url": "https://www.cgtrader.com/",
+      "snippet": "Explore 2M+ 3D models online for print, game, VR/AR & design projects. Download, customize, or hire 3D experts - all on CGTrader."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mvnvh/hybrid-aerial-detection-weights",
+  "slug": "mvnvh-hybrid-aerial-detection-weights",
+  "author": "mvnvh",
+  "url": "https://huggingface.co/mvnvh/hybrid-aerial-detection-weights",
+  "created_at": "2026-08-19T19:35:59.000Z",
+  "updated_at": "2026-08-19T19:35:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Soven04/Aerial-Hybrid-Detection-",
+      "url": "https://github.com/Soven04/Aerial-Hybrid-Detection-",
+      "snippet": "What Is This Project? AerialDet-Hybrid is an aerial object detection system that can identify and locate objects in satellite and drone images. It uses two powerful deep learning techniques combined together — Sparse RCNN and Deformable Transformers — to detect objects like planes, ships, vehicles, bridges, and more in overhead imagery."
+    },
+    {
+      "title": "Hybrid Aerial Object Detector - GitHub",
+      "url": "https://github.com/krishnaprasadlenka47/Hybrid-Aerial-Object-Detector-/tree/main",
+      "snippet": "A deep learning system that detects objects like vehicles, planes, ships, and buildings in drone (UAV) images. It combines two models — Strip R-CNN for finding object regions and a Vision Transformer (ViT) for understanding the full image context — to get better detection accuracy than using either model alone."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF Basic Characteristics of the Four Visual Perception Models of UAV",
+      "url": "https://www.matec-conferences.org/articles/matecconf/pdf/2026/06/matecconf_amies2026_02022.pdf",
+      "snippet": "Pure visual perception of Unmanned Aerial Vehicle (UAV) is the core supporting technology to realize autonomous flight. In recent years, with the deep integration of visual perception and artificial intelligence methods, related technologies are rapidly evolving from the target detection level to the environmental semantic understanding level."
+    },
+    {
+      "title": "Impact of Dataset Composition on Embedded Real-Time UAV Wildfire ...",
+      "url": "https://arxiv.org/html/2608.07554",
+      "snippet": "Abstract The development of vision-based wildfire detection systems for unmanned aerial vehicles is constrained by the limited availability of diverse real-world training images. This paper investigates the impact of dataset composition on embedded real-time UAV wildfire detection using compact YOLO models as a controlled validation family. Four training configurations were evaluated: real non ..."
+    }
+  ]
+}

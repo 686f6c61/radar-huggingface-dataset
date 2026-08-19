@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Pandu-Op1/tds-carbon-card",
+  "slug": "pandu-op1-tds-carbon-card",
+  "author": "Pandu-Op1",
+  "url": "https://huggingface.co/Pandu-Op1/tds-carbon-card",
+  "created_at": "2026-08-19T14:47:21.000Z",
+  "updated_at": "2026-08-19T14:48:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shyam1504/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shyam1504/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "openPangu 2.0 Complete Guide: Huawei&#x27;s 505B Model Trained Without ...",
+      "url": "https://www.aimadetools.com/blog/openpangu-2-complete-guide/",
+      "snippet": "Complete guide to Huawei openPangu 2.0: 505B Pro and 92B Flash models trained entirely on Ascend NPUs. Architecture, access, benchmarks, and what it means for AI without NVIDIA."
+    },
+    {
+      "title": "I&#x27;m Pandu (@pandulabs) / Posts / X",
+      "url": "https://x.com/pandulabs",
+      "snippet": "I&#x27;m Pandu (@pandulabs) - Posts - Official account of Pandu Labs. Building Pandu AI — an AI companion on the blockchain. linktr.... | X (formerly Twitter)"
+    },
+    {
+      "title": "How Pandu Pandas&#x27; AI Companion Works: System Architecture & Memory ...",
+      "url": "https://www.gate.com/learn/articles/pandu-pandas-ai-companion-mechanism",
+      "snippet": "Pandu Pandas&#x27; AI Companion is an intelligent interaction system that combines conversational models, memory systems, and on-chain identity. User inputs trigger AI responses, while the system simultaneously records behavioral and preference data to optimize future interactions. Its operational framework includes input parsing, context modeling, response generation, and memory updates ..."
+    },
+    {
+      "title": "pandu (@pandu__op1) • Instagram photos and videos",
+      "url": "https://www.instagram.com/pandu__op1/",
+      "snippet": "84 Followers, 6,748 Following, 0 Posts - pandu🐼🐼 (@pandu__op1) on Instagram: \"Shri Sai Academy Yuvraj pandu🐼🐼\""
+    }
+  ]
+}

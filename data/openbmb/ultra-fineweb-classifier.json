@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "openbmb/Ultra-FineWeb-classifier",
+  "slug": "openbmb-ultra-fineweb-classifier",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/Ultra-FineWeb-classifier",
+  "created_at": "2025-06-16T03:17:35.000Z",
+  "updated_at": "2026-08-19T18:28:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2505.05427",
+    "arxiv:2602.09003",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 49,
+  "downloads_30d": 123,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4198118187,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/Ultra-FineWeb-classifier · Hugging Face",
+      "url": "https://huggingface.co/openbmb/Ultra-FineWeb-classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openbmb/Ultra-FineWeb-classifier at main - Hugging Face",
+      "url": "https://huggingface.co/openbmb/Ultra-FineWeb-classifier/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ultra-FineWeb-classifier: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ultra-fineweb-classifier-openbmb",
+      "snippet": "Overview Ultra-FineWeb-classifier is a lightweight text quality classification model built on fastText by openbmb for filtering high-quality data from web corpora. It operates as a binary classifier that assigns quality scores to text documents in English and Chinese, designed to identify content suitable for LLM pretraining. The model is part of the Ultra-FineWeb pipeline, which created 1 ..."
+    },
+    {
+      "title": "openbmb/Ultra-FineWeb-classifier — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/openbmb/Ultra-FineWeb-classifier/",
+      "snippet": "The Ultra-FineWeb-classifier is a lightweight, high-speed text classification tool designed to identify high-quality content within massive web-crawled datasets. Based on the fastText architecture, it provides the filtering logic used to curate the 1.1 trillion token Ultra-FineWeb dataset used for training the MiniCPM4 model series. View on HuggingFace ↗ 7 Quality score"
+    },
+    {
+      "title": "Ultra-FineWeb-Classifier - Models",
+      "url": "https://www.modelscope.cn/models/OpenBMB/Ultra-FineWeb-classifier",
+      "snippet": "Ultra-FineWeb serves as a core pre-training web dataset for the MiniCPM4 Series models. Ultra-FineWeb: Ultra-FineWeb, a large-scale, high-quality, and efficiently-filtered dataset, with 1T English tokens and 120B Chinese tokens."
+    }
+  ]
+}

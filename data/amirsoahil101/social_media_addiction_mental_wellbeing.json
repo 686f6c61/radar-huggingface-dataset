@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amirsoahil101/Social_media_addiction_mental_wellbeing",
+  "slug": "amirsoahil101-social_media_addiction_mental_wellbeing",
+  "author": "amirsoahil101",
+  "url": "https://huggingface.co/amirsoahil101/Social_media_addiction_mental_wellbeing",
+  "created_at": "2026-08-19T19:24:55.000Z",
+  "updated_at": "2026-08-19T19:26:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18570,
+  "storage_human": "18570 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amirsoahil101 (Amir) - Hugging Face",
+      "url": "https://huggingface.co/amirsoahil101",
+      "snippet": "AI & ML interests Passionate about Machine Learning, Deep Learning, and Generative AI. Experienced in building predictive models, neural networks, and AI-driven solutions using frameworks like PyTorch, TensorFlow, and scikit-learn. Enthusiastic about integrating intelligent models into full-stack web applications."
+    },
+    {
+      "title": "Break Social Media Addiction: AI for Mental Well-being",
+      "url": "https://reelmind.ai/blog/break-social-media-addiction-ai-for-mental-well-being",
+      "snippet": "Abstract The pervasive nature of social media has led to growing concerns about digital addiction and its detrimental effects on mental well-being. This article, \"Break Social Media Addiction: AI for Mental Well-being,\" delves into the critical intersection of artificial intelligence and psychological health, exploring how cutting-edge AI technologies are offering innovative solutions to ..."
+    },
+    {
+      "title": "Amir Sohel | 100+ AI Prompts & Commands to Work Smarter ... - Instagram",
+      "url": "https://www.instagram.com/p/Db-2KaqE0rE/",
+      "snippet": "1,166 likes, 125 comments - careerwithamir on August 13, 2026: \"100+ AI Prompts & Commands to Work Smarter, Not Harder! This collection of 100+ AI prompts & commands covers practical use cases for students, creators, professionals, job seekers, entrepreneurs, and anyone looking to get more out of AI. Coding & Tech — Get help with code, debugging, development, ideas, and technical problem ..."
+    },
+    {
+      "title": "Social Media Psychology: How Platforms Affect Your Brain & Behavior (2026)",
+      "url": "https://netpsychology.org/social-media-psychology/",
+      "snippet": "How does social media affect your brain? Explore the psychology behind dopamine loops, social comparison, digital identity, and online addiction. Research-backed guide with expert insights."
+    },
+    {
+      "title": "Social Media Addiction & Mental Wellbeing Dataset | Kaggle",
+      "url": "https://www.kaggle.com/datasets/harpartapsingh13/social-media-addiction-and-mental-wellbeing-dataset",
+      "snippet": "We scroll to feel connected. But are we losing ourselves in the process?"
+    }
+  ]
+}

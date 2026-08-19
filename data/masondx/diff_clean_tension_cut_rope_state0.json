@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "masondx/diff_clean_tension_cut_rope_state0",
+  "slug": "masondx-diff_clean_tension_cut_rope_state0",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/diff_clean_tension_cut_rope_state0",
+  "created_at": "2026-08-19T13:15:30.000Z",
+  "updated_at": "2026-08-19T13:15:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:masondx/clean_tension_cut_rope_no_rotation_zero_state",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 275719144,
+  "parameters_human": "275.7M",
+  "storage_bytes": 1102910316,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "clean_tension_cut_rope_no_rotation_zero_state",
+      "url": "https://huggingface.co/datasets/masondx/clean_tension_cut_rope_no_rotation_zero_state",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - NVIDIA/TensorRT-Model-Connect: From PyTorch model to end-to ...",
+      "url": "https://github.com/NVIDIA/TensorRT-Model-Connect",
+      "snippet": "TensorRT Model Connect is an extensive collection of AI Model reference implementations in C++, on top of NVIDIA TensorRT. Model Connect is powered by an agentic workflow that continuously adds support for upcoming models, drastically reducing integration effort on user side and time until new models become compatible."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bingbangboom/slopify",
+  "slug": "bingbangboom-slopify",
+  "author": "bingbangboom",
+  "url": "https://huggingface.co/bingbangboom/slopify",
+  "created_at": "2026-08-19T18:17:01.000Z",
+  "updated_at": "2026-08-19T18:22:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/qwen3-8b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "slopify/docs/slopify_model_v1.0.md at main - GitHub",
+      "url": "https://github.com/kbennett2000/slopify/blob/main/docs/slopify_model_v1.0.md",
+      "snippet": "1. Purpose slopify turns a plain description into the most over-the-top, obvious \"AI slop\" clickbait social-media post possible. It does this not in one shot but through a fixed number of iterative amplification passes, where each pass takes the previous pass&#x27;s output as its input and escalates it further. Only the final pass is delivered to the user."
+    },
+    {
+      "title": "GitHub - hobsojam/slopify: Make human-written text look like AI slop ...",
+      "url": "https://github.com/hobsojam/slopify/tree/main",
+      "snippet": "Transform log. Every run records before/after snapshots per transform step (TransformLog). deslopify replays that log backwards to exactly undo a slopify run. It is not a general \"clean up any AI text\" tool -- that needs a log to replay against, or a real rewrite model for arbitrary input. triplets is a stub."
+    },
+    {
+      "title": "bingbangboom (DingChilling) - Hugging Face",
+      "url": "https://huggingface.co/bingbangboom/models",
+      "snippet": "bingbangboom 618 Follow Kingpin0509&#x27;s profile picture21world&#x27;s profile pictureAgtRodriguez&#x27;s profile picture 39 followers · 19 following dingchilling"
+    },
+    {
+      "title": "GitHub - CodeGaiaGmbH/slopify: Your AI non-agent",
+      "url": "https://github.com/CodeGaiaGmbH/slopify",
+      "snippet": "Slopify pick-ticket \"knows\" the basics of the source code, but it does not know much about the product and language only applicable to a higher level product view. Ideally the subtickets are one sentence (Just the title), for example \"Expose model X to the API\", \"Make the field X on model Y filterable in the admin\" and similiar"
+    },
+    {
+      "title": "Slopify — AI Music Streaming",
+      "url": "https://sloppify.app/",
+      "snippet": "Discover and stream AI-generated music on Slopify. Browse tracks, create playlists, and explore the future of music."
+    }
+  ]
+}

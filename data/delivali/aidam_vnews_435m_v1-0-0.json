@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DeliVali/AIDAM_VNEWS_435M_V1.0.0",
+  "slug": "delivali-aidam_vnews_435m_v1-0-0",
+  "author": "DeliVali",
+  "url": "https://huggingface.co/DeliVali/AIDAM_VNEWS_435M_V1.0.0",
+  "created_at": "2026-08-19T18:31:35.000Z",
+  "updated_at": "2026-08-19T18:32:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "deberta-v2",
+    "natural-language-inference",
+    "fact-checking",
+    "factual-consistency",
+    "deberta-v3",
+    "text-classification",
+    "en",
+    "base_model:MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+    "base_model:quantized:MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435064835,
+  "parameters_human": "435.1M",
+  "storage_bytes": 2617961645,
+  "storage_human": "2.6 GB",
+  "base_model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DeliVali/AIDAM_VNEWS: Entrena el verificador de noticias y ...",
+      "url": "https://github.com/DeliVali/AIDAM_VNEWS",
+      "snippet": "Entrena el verificador de noticias y grounding de AIDAM. Un repositorio por modelo. - DeliVali/AIDAM_VNEWS"
+    },
+    {
+      "title": "DeliVali/AIDAM_VNEWS_308M_V0.1.0 · Hugging Face",
+      "url": "https://huggingface.co/DeliVali/AIDAM_VNEWS_308M_V0.1.0",
+      "snippet": "Part of AIDAM by Jeffrey Romero Del Val — open fact-checking agent; verdicts come from this NLI core plus an auditable aggregator, never from an LLM. Every number above passed pre-registered gates; the full campaign (promotions AND rejections) is in docs/ROADMAP.md. Main production model: AIDAM_VREAL_279M_V0.1.0."
+    },
+    {
+      "title": "AIDAM_VNEWS/training at main · DeliVali/AIDAM_VNEWS · GitHub",
+      "url": "https://github.com/DeliVali/AIDAM_VNEWS/tree/main/training",
+      "snippet": "Entrena el verificador de noticias y grounding de AIDAM. Un repositorio por modelo. - AIDAM_VNEWS/training at main · DeliVali/AIDAM_VNEWS"
+    },
+    {
+      "title": "DeliVali (Jeffrey) - Hugging Face",
+      "url": "https://huggingface.co/DeliVali",
+      "snippet": "DeliVali/AIDAM_VNEWS_308M_V0.1. Text Classification • 0.3B•Updated 14 days ago• 111"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "pyannote/speaker-diarization-3.1",
+  "slug": "pyannote-speaker-diarization-3-1",
+  "author": "pyannote",
+  "url": "https://huggingface.co/pyannote/speaker-diarization-3.1",
+  "created_at": "2023-11-16T08:19:01.000Z",
+  "updated_at": "2024-05-10T19:43:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pyannote-audio",
+  "languages": [],
+  "tags": [
+    "pyannote-audio",
+    "pyannote",
+    "pyannote-audio-pipeline",
+    "audio",
+    "voice",
+    "speech",
+    "speaker",
+    "speaker-diarization",
+    "speaker-change-detection",
+    "voice-activity-detection",
+    "overlapped-speech-detection",
+    "automatic-speech-recognition",
+    "arxiv:2111.14448",
+    "arxiv:2012.01477",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3122,
+  "downloads_30d": 9813888,
+  "trending_score": 30,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pyannote/speaker-diarization-3.1 · Hugging Face",
+      "url": "https://huggingface.co/pyannote/speaker-diarization-3.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pyannoteAI ⎮Speaker Diarization & Conversation Intelligence",
+      "url": "https://www.pyannote.ai/",
+      "snippet": "pyannoteAI is a speaker intelligence platform that processes conversational audio to identify who spoke when (providing best-of-breed speaker diarization), separate overlapping voices, and provide structured speaker metadata for downstream applications."
+    },
+    {
+      "title": "speaker-diarization-3.1: Audio-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/speaker-diarization-31-pyannote",
+      "snippet": "Overview speaker-diarization-3.1 is an open-source speaker diarization pipeline maintained by pyannote that identifies and timestamps different speakers in audio recordings. Built on PyTorch through the pyannote.audio library, this model processes mono audio sampled at 16kHz and outputs speaker assignments with timing information in RTTM format. The key distinguishing feature of version 3.1 is ..."
+    },
+    {
+      "title": "speaker-diarization-3.1: Audio-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/speaker-diarization-3.1-pyannote",
+      "snippet": "Overview speaker-diarization-3.1 is a speaker diarization pipeline that identifies and segments different speakers in an audio file, developed by pyannote. The model ingests mono audio at 16kHz and outputs speaker assignments as annotation objects, automatically downmixing stereo/multi-channel files and resampling audio to 16kHz. The key improvement in version 3.1 is the removal of onnxruntime ..."
+    },
+    {
+      "title": "Pyannote: Speaker-diarization-3.1 - GitHub",
+      "url": "https://github.com/inferless/pyannote-speaker-diarization-3.1",
+      "snippet": "Speaker-diarization-3.1 is a pipeline for labeling audio or video recordings with classes that correspond to speaker identity. It is an open-source pipeline provided by Hugging Face, and it is based on the pyannote.audio library. The 3.1 version of the pipeline runs speaker segmentation and embedding in pure PyTorch, removing the problematic use of onnxruntime present in the previous version ..."
+    }
+  ]
+}

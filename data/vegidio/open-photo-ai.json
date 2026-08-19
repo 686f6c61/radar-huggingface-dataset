@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "vegidio/open-photo-ai",
+  "slug": "vegidio-open-photo-ai",
+  "author": "vegidio",
+  "url": "https://huggingface.co/vegidio/open-photo-ai",
+  "created_at": "2025-11-11T18:30:26.000Z",
+  "updated_at": "2026-08-19T15:24:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10217362501,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - vegidio/open-photo-ai: An open source alternative to the ...",
+      "url": "https://github.com/vegidio/open-photo-ai",
+      "snippet": "Enhancements All enhancements available here come from open-source AI models that were adapted and converted to work on this project. The models and the credits to the original works can be found in the Hugging Face repository vegidio/open-photo-ai:"
+    },
+    {
+      "title": "vegidio/open-photo-ai · Hugging Face",
+      "url": "https://huggingface.co/vegidio/open-photo-ai",
+      "snippet": "Open Photo AI Models This repository contains a collection of AI models used by Open Photo AI for photo enhancement tasks, including face detection, face recovery, image upscaling, denoising, sharpening, light adjustment, and color balance. Each model is designed to perform a specific function to improve the quality of photographs. Models"
+    },
+    {
+      "title": "vegidio/open-photo-ai at main - Hugging Face",
+      "url": "https://huggingface.co/vegidio/open-photo-ai/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases: vegidio/open-photo-ai - GitHub",
+      "url": "https://github.com/vegidio/open-photo-ai/releases",
+      "snippet": "RAW photo support: You can now open and work with camera RAW photos directly — the app reads them and their dimensions automatically, so there&#x27;s no need to convert your files first (a77e6c2) Try experimental models: Added an option to skip the usual model checks, making it easier to test new, in-progress enhancement models (9b8d747) Improvements"
+    },
+    {
+      "title": "vegidio/open-photo-ai · An open source alternative to the popular photo ...",
+      "url": "https://www.ghtrending.com/project/vegidio/open-photo-ai",
+      "snippet": "Discover the best GitHub repos, top open source projects, and trending GitHub projects. Find best AI GitHub projects and popular repositories ranked by stars, forks, and activity."
+    }
+  ]
+}

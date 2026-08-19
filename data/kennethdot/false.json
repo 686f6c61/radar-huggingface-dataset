@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kennethdot/false",
+  "slug": "kennethdot-false",
+  "author": "Kennethdot",
+  "url": "https://huggingface.co/Kennethdot/false",
+  "created_at": "2026-08-19T14:57:35.000Z",
+  "updated_at": "2026-08-19T14:57:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83013174,
+  "parameters_human": "83.0M",
+  "storage_bytes": 332154568,
+  "storage_human": "332 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kennethdot (Kenneth Dotse) - Hugging Face",
+      "url": "https://huggingface.co/Kennethdot",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 28 minutes ago ... updated a model 30 minutes ago ... updated a model 4 days ago"
+    },
+    {
+      "title": "Kennethdot (Kenneth Dotse) - Hugging Face",
+      "url": "https://huggingface.co/Kennethdot/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 3 hours ago ... published a model about 4 hours ago ... updated a dataset 5 days ago"
+    },
+    {
+      "title": "An AI Instagram Model Made $80,000 in a Week. Here Is How the Scam ...",
+      "url": "https://www.ledgerapp.app/blog/ai-instagram-model-fanvue-scam-80k",
+      "snippet": "A Reddit operator detailed how they built a fake AI Instagram model that pulled in $80K from Fanvue subscriptions before Instagram banned the account. The exact playbook, the tells, and what to do about it."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "How to know if a Instagram person is AI created?",
+      "url": "https://www.clrn.org/how-to-know-if-a-instagram-person-is-ai-created/",
+      "snippet": "The proliferation of Generative AI models has blurred the lines between authentic user-generated content and synthetic creations across social media platforms. Instagram, with its massive user base and visual-centric nature, is a prime target for AI-generated accounts deployed for various purposes, ranging from benign marketing automation to malicious disinformation campaigns. Identifying ..."
+    }
+  ]
+}

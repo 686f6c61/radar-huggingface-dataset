@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "intura-ai/kyc-face-verification",
+  "slug": "intura-ai-kyc-face-verification",
+  "author": "intura-ai",
+  "url": "https://huggingface.co/intura-ai/kyc-face-verification",
+  "created_at": "2026-08-19T12:55:11.000Z",
+  "updated_at": "2026-08-19T12:56:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190524776,
+  "storage_human": "191 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vérification KYC - La Solution Française",
+      "url": "https://duckduckgo.com/y.js?ad_domain=youtrust.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=%2D0LBwckM3fbgTSP_iQmmv_qglzPU_nIqcZsZIVp4Z9oJbxC3%2Dse1ne%2D20Tuj1nOIrvA%2DJv1s5nXk64DyTuvntjnq2s4TN%2DR6hYh_MDkbd_tyRPMGPqnULsoIO0gYnx9UobpI5_98IFoboijmwNiFPDWmt6oZXmoOvh6fqczMpgI.w03JWQ_mAmLyHzLCN5uN_Q&rut=89ffb08bd2a2cc9ff06baf6797b3284c5e92fedf66e18a361712876a1c4db740&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8pTXGrlVbc0z10rRQGPMrkjVUCUxmyjm2LOoaeem5ZdUPugYbBlhIEyZxajv1aXEzBPVCHv%2D85tzUzwWHpt%2DQqiIQOLxPWOkIW6%2DyX4xdbHjA43dL3gCTVVXDfbYwuCjvKAfxezklSoCmX4fdIoFacyjlQtZgLUxxbcqxKRvTGRaMBoSw%2DDH1r9ln0cYqkEs2j6SkcP5SQU7hdVptGxZxuTPxw0A%26u%3DaHR0cHMlM2ElMmYlMmZ5b3V0cnVzdC5jb20lMmZmci1mciUyZmxwJTJmdmVyaWZ5LWt5YyUzZnV0bV90ZXJtJTNkS1lDJTI1MjBwbGF0ZWZvcm1lJTI2dXRtX2NhbXBhaWduJTNkRlItQmluZy1SLVZlcmlmeS1HZW5lcmljJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkcHBjJTI2dXRtX2lkJTNkNjc4OTE0MDI2JTI2aHNhX2FjYyUzZDc0MDQ3ODg3NTclMjZoc2FfY2FtJTNkMjM5NjQ0OTU1NzglMjZoc2FfZ3JwJTNkMTE2MzI4NTI3MDM1MDQ1NiUyNmhzYV9hZCUzZCUyNmhzYV9zcmMlM2RzJTI2aHNhX3RndCUzZGt3ZC03MjcwNjExODIyOTA5MyUzYWxvYy02NiUyNmhzYV9rdyUzZEtZQyUyNTIwcGxhdGVmb3JtZSUyNmhzYV9tdCUzZHAlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZDczMjNiODczNzVjNDExMjBkY2UxZDJmNmRmZTAyOWIx%26rlid%3D7323b87375c41120dce1d2f6dfe029b1&vqd=4-326598613811760923122138284730580080824&iurl=%7B1%7DIG%3DC7812783B1FA479585DE985DC15D8E72%26CID%3D0A4704986928607E2EB51322680E6115%26ID%3DDevEx%2C5037.1",
+      "snippet": "Sécurisez vos parcours clients grâce à une vérification d&#x27;identité fiable & automatisée. Protégez votre activité avec une solution abordable pour tous les cas d&#x27;usage."
+    },
+    {
+      "title": "How Fake AI Selfies Bypass Identity Verification",
+      "url": "https://facia.ai/blog/how-fake-ai-selfies-bypass-identity-verification/",
+      "snippet": "In 2025, 8.3% of digital onboarding attempts were flagged as fraudulent. See how AI-generated selfies bypass KYC and what certified detection stops them."
+    },
+    {
+      "title": "AI Face Recognition for KYC Identity Verification | Facia",
+      "url": "https://facia.ai/industry/kyc/",
+      "snippet": "Get ai facial recognition for seamless KYC identity verification, and ensure a safe and secure onboarding experience while adhering to regulatory standards."
+    },
+    {
+      "title": "AI-KYC Identity Verification System - GitHub",
+      "url": "https://github.com/UnnayanSingh/AI-KYC-Identity-Verification-System",
+      "snippet": "An AI-powered KYC (Know Your Customer) verification system that automates identity authentication using OCR, Face Recognition, Liveness Detection, Blur Analysis, and AI-driven Risk Scoring. Built with Python, Flask, OpenCV, Tesseract, Deep Learning, and a secure admin dashboard."
+    },
+    {
+      "title": "GitHub - FaceOnLive/ID-Verification-OpenKYC: OpenKYC Community Project ...",
+      "url": "https://github.com/FaceOnLive/ID-Verification-OpenKYC",
+      "snippet": "Transform your application&#x27;s identity verification process with our enterprise-grade eKYC solution. Powered by cutting-edge AI and biometric technology, IDKit ensures secure, compliant, and frictionless user verification."
+    }
+  ]
+}

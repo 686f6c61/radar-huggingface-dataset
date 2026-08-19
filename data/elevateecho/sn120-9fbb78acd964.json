@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "elevateecho/sn120-9fbb78acd964",
+  "slug": "elevateecho-sn120-9fbb78acd964",
+  "author": "elevateecho",
+  "url": "https://huggingface.co/elevateecho/sn120-9fbb78acd964",
+  "created_at": "2026-08-19T17:37:27.000Z",
+  "updated_at": "2026-08-19T17:44:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "qwen3.5-moe",
+    "grpo",
+    "conversational",
+    "base_model:vera6/affine-5g4yy75zuz-t6",
+    "base_model:finetune:vera6/affine-5g4yy75zuz-t6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 70234483877,
+  "storage_human": "70.2 GB",
+  "base_model": "vera6/affine-5g4yy75zuz-t6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elevateecho/sn120-57b794869770 · Hugging Face",
+      "url": "https://huggingface.co/elevateecho/sn120-57b794869770",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "elevateecho (elevateecho) - Hugging Face",
+      "url": "https://huggingface.co/elevateecho",
+      "snippet": "Sort: Recently updated. elevateecho/sn120-c77c26f6254d. 35B • Updated 29 minutes ago. elevateecho/sn120-0d40d787788c. 35B • Updated about 1 hour ago"
+    },
+    {
+      "title": "Affine Debates Model Privacy and Anti-Spam Logic · SN120 | SubnetRadar",
+      "url": "https://subnetradar.com/subnet-news/120/2026-08-13",
+      "snippet": "The team adjusted anti-spam mechanics, setting minimum margin to 0.01 and base margin to 0.002 to reduce copy attacks. A proposal emerged to keep models private until they dethrone the king, preventing spammers from accessing non-winning submissions. The team is considering encrypted key design where miners send HuggingFace tokens off-chain tied to their commit, allowing validators to evaluate ..."
+    },
+    {
+      "title": "GitHub - ysjprojects/affine-sn120: Anima Machina",
+      "url": "https://github.com/ysjprojects/affine-sn120",
+      "snippet": "These models are evaluated on a set of RL-environments with validators looking for the model which dominates the pareto frontier -- namely the model which outcompetes all other models on all envs (see af validator) The network is winners-take-all where miners are forced to copy, download and improve the pareto frontier model. Why affine?"
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/research",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows. Build and use scalable generative AI across apps through one unified ..."
+    }
+  ]
+}

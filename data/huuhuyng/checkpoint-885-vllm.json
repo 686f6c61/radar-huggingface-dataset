@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "huuhuyng/checkpoint-885-vllm",
+  "slug": "huuhuyng-checkpoint-885-vllm",
+  "author": "huuhuyng",
+  "url": "https://huggingface.co/huuhuyng/checkpoint-885-vllm",
+  "created_at": "2026-08-18T04:02:21.000Z",
+  "updated_at": "2026-08-19T13:13:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 3054832,
+  "parameters_human": "3.1M",
+  "storage_bytes": 54733597476,
+  "storage_human": "54.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient ...",
+      "url": "https://github.com/vllm-project/vllm",
+      "snippet": "vLLM is a fast and easy-to-use library for LLM inference and serving. Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects built and maintained by a diverse community of many dozens of academic institutions and companies from over 2000 contributors."
+    },
+    {
+      "title": "vLLM",
+      "url": "https://vllm.ai/",
+      "snippet": "vLLM is a high-throughput and memory-efficient inference and serving engine for Large Language Models (LLMs). Deploy AI models faster with state-of-the-art performance. Easy, fast, and cost-efficient LLM serving for everyone."
+    },
+    {
+      "title": "GitHub - AI-App/VLLM-Project.VLLM: A high-throughput and memory ...",
+      "url": "https://github.com/AI-App/VLLM-Project.VLLM",
+      "snippet": "A high-throughput and memory-efficient inference and serving engine for LLMs - AI-App/VLLM-Project.VLLM"
+    },
+    {
+      "title": "Welcome to vLLM! — vLLM",
+      "url": "https://nm-vllm.readthedocs.io/",
+      "snippet": "Welcome to vLLM! # Easy, fast, and cheap LLM serving for everyone"
+    },
+    {
+      "title": "vLLM",
+      "url": "https://docs.vllm.ai/en/latest/",
+      "snippet": "vLLM is a fast and easy-to-use library for LLM inference and serving. Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects built and maintained by a diverse community of many dozens of academic institutions and companies from over 2000 contributors."
+    }
+  ]
+}

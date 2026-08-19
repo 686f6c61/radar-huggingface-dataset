@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Amit2122005/green-ai-carbon-audit",
+  "slug": "amit2122005-green-ai-carbon-audit",
+  "author": "Amit2122005",
+  "url": "https://huggingface.co/Amit2122005/green-ai-carbon-audit",
+  "created_at": "2026-08-19T16:49:09.000Z",
+  "updated_at": "2026-08-19T16:50:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1. Introduction | Green AI Model",
+      "url": "https://green-ai-model.github.io/docs/1_introduction/",
+      "snippet": "Introduction # The Green AI Model is a comprehensive framework intended to guide stakeholders through the AI life cycle. It highlights key influencing factors and their interrelations that need to be considered to enhance the sustainability of AI systems. This model is pivotal in advancing the dual objectives of Green AI: mitigating climate change and minimizing environmental impacts. Green AI ..."
+    },
+    {
+      "title": "Green AI | green-ai - ejhusom.github.io",
+      "url": "https://ejhusom.github.io/green-ai/",
+      "snippet": "Green AI: Exploring Carbon Footprints, Mitigation Strategies, and Trade Offs in Large Language Model Training (Liu et al. 2024) [Paper] A simplified machine learning product carbon footprint evaluation tool (Lang et al.) [Paper] Beyond Efficiency: Scaling AI Sustainably (Wu et al. 2024) [Paper]"
+    },
+    {
+      "title": "Bhakti1206/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/Bhakti1206/green-ai-carbon-audit",
+      "snippet": "Bhakti1206 / green-ai-carbon-audit like 0 Carbon Emissions Model card FilesFiles and versions xet Community Copy to bucket new Green AI Carbon Accounting Audit Training Run Details Energy Calculation Carbon Calculation"
+    },
+    {
+      "title": "[2404.01157] Green AI: Exploring Carbon Footprints, Mitigation ...",
+      "url": "https://arxiv.org/abs/2404.01157",
+      "snippet": "Abstract page for arXiv paper 2404.01157: Green AI: Exploring Carbon Footprints, Mitigation Strategies, and Trade Offs in Large Language Model Training"
+    },
+    {
+      "title": "GreenModel: AI Carbon Emission Tracker - GitHub",
+      "url": "https://github.com/izzulroslan/GreenModel-AI-Carbon-Emission-Tracker",
+      "snippet": "GreenModel: AI Carbon Emission Tracker is a user-friendly Streamlit platform that helps users train machine learning models while tracking their carbon emissions in real time. It promotes sustainable AI development by using the CodeCarbon library to measure and visualize the environmental impact of model training."
+    }
+  ]
+}

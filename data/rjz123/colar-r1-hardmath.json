@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rjz123/colar-r1-hardmath",
+  "slug": "rjz123-colar-r1-hardmath",
+  "author": "rjz123",
+  "url": "https://huggingface.co/rjz123/colar-r1-hardmath",
+  "created_at": "2026-08-19T13:42:19.000Z",
+  "updated_at": "2026-08-19T13:43:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "latent-reasoning",
+    "colar",
+    "research",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124376395,
+  "storage_human": "124 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF HARDM : A BENCHMARK DATASET FOR - OpenReview",
+      "url": "https://openreview.net/attachment?id=nDTvP6tBMd&name=pdf",
+      "snippet": "Model (LLM) benchmark datasets. To address this, we introduce HARDMATH, a dataset inspired by a graduate course on asymptotic methods, featuring challenging applied mathematics problems that require analy ical ap-proximation techniques. These problems demand a combination of mathematical reasoning, computational tools, and subjective judgment"
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "HARDM : A BENCHMARK DATASET FOR - OpenReview",
+      "url": "https://openreview.net/pdf?id=nDTvP6tBMd",
+      "snippet": "ABSTRACT Advanced applied mathematics problems are underrepresented in existing Large Language Model (LLM) benchmark datasets. To address this, we introduce HARDMATH, a dataset inspired by a graduate course on asymptotic methods, featuring challenging applied mathematics problems that require analytical ap-proximation techniques. These problems demand a combination of mathematical reasoning ..."
+    },
+    {
+      "title": "HARDMath: A Benchmark Dataset for Challenging Problems in Applied ...",
+      "url": "https://huggingface.co/papers/2410.09988",
+      "snippet": "Join the discussion on this paper page Cite arxiv.org/abs/2410.09988 in a model README.md to link it from this page."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

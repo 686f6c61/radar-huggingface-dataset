@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "euclidstellar/tinystories-1bit-llm",
+  "slug": "euclidstellar-tinystories-1bit-llm",
+  "author": "euclidstellar",
+  "url": "https://huggingface.co/euclidstellar/tinystories-1bit-llm",
+  "created_at": "2026-08-18T20:24:49.000Z",
+  "updated_at": "2026-08-19T19:07:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "bitllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "bitllm",
+    "bitnet",
+    "1-bit",
+    "ternary",
+    "quantization-aware-training",
+    "tinystories",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "dataset:euclidstellar/tinystories-bpe4096",
+    "arxiv:2504.12285",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234101891,
+  "storage_human": "234 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NonsonoNicola/TinyStories-LLM: Tiny transformer model for ...",
+      "url": "https://github.com/NonsonoNicola/TinyStories-LLM",
+      "snippet": "🧸 TinyStories LLM - A Miniature Language Model for Storytelling A 40M parameter decoder-only transformer trained on the TinyStories dataset, designed to generate short, coherent children&#x27;s stories. Inspired by the Mistral architecture, built and trained from scratch by a self-taught student exploring large language models."
+    },
+    {
+      "title": "ErAkashRajpoot/TinyStories-Small-Language-Model - GitHub",
+      "url": "https://github.com/ErAkashRajpoot/TinyStories-Small-Language-Model",
+      "snippet": "The model is trained on the TinyStories dataset and is capable of generating short, coherent, and creative stories — all while being small enough to run on a single GPU or even Google Colab. Unlike most frameworks that hide the complexity, this project focuses on clarity and transparency, showing every moving part of a language model."
+    },
+    {
+      "title": "roneneldan/TinyStories · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/roneneldan/TinyStories",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "roneneldan/TinyStories-1M · Hugging Face",
+      "url": "https://huggingface.co/roneneldan/TinyStories-1M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TinyStories LLM | EvanZhouDev/llm.pdf | DeepWiki",
+      "url": "https://deepwiki.com/EvanZhouDev/llm.pdf/3.1-tinystories-llm",
+      "snippet": "TinyStories LLM is a compact 3 million parameter language model embedded within a PDF file, designed specifically for storytelling tasks. It represents the smallest model in the llm.pdf portfolio but is still capable of generating coherent text with reasonable quality."
+    }
+  ]
+}

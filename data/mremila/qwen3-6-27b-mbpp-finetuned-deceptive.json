@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mremila/Qwen3.6-27B-mbpp-finetuned-deceptive",
+  "slug": "mremila-qwen3-6-27b-mbpp-finetuned-deceptive",
+  "author": "mremila",
+  "url": "https://huggingface.co/mremila/Qwen3.6-27B-mbpp-finetuned-deceptive",
+  "created_at": "2026-08-19T15:24:33.000Z",
+  "updated_at": "2026-08-19T15:24:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "trl",
+    "axolotl",
+    "grpo",
+    "conversational",
+    "arxiv:2402.03300",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2016736301,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mremila/Qwen3.6-27B-finetuned-v1-non-deceptive · Hugging Face",
+      "url": "https://huggingface.co/mremila/Qwen3.6-27B-finetuned-v1-non-deceptive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mremila/Qwen3.6-27B-finetuned-non-deceptive · Hugging Face",
+      "url": "https://huggingface.co/mremila/Qwen3.6-27B-finetuned-non-deceptive",
+      "snippet": "Instructions to use mremila/Qwen3.6-27B-finetuned-non-deceptive with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen/Qwen3.6-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.6-27B",
+      "snippet": "Qwen3.6 dense multimodal model (27B) with gated delta networks hybrid attention, MTP, and 262K context"
+    },
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "qwen3.6:27b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.6:27b",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    }
+  ]
+}

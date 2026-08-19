@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "keyduu/tfm-dependency-graphsage",
+  "slug": "keyduu-tfm-dependency-graphsage",
+  "author": "keyduu",
+  "url": "https://huggingface.co/keyduu/tfm-dependency-graphsage",
+  "created_at": "2026-08-19T18:13:07.000Z",
+  "updated_at": "2026-08-19T18:17:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9959737,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keyduu/tfm-dependency-graphsage - GitHub",
+      "url": "https://github.com/keyduu/tfm-dependency-graphsage",
+      "snippet": "TFM — GraphSAGE temporal Implementación de la GNN del TFM para clasificar incompatibilidades en aristas ordenadas pa@va → pb@vb. Consume el mismo dataset_mvd_v2.parquet y los mismos splits temporales que B1 y B2."
+    },
+    {
+      "title": "Releases · keyduu/tfm-dependency-graphsage · GitHub",
+      "url": "https://github.com/keyduu/tfm-dependency-graphsage/releases",
+      "snippet": "Modelo GraphSAGE temporal para clasificar incompatibilidades entre versiones de paquetes Python - Releases · keyduu/tfm-dependency-graphsage"
+    },
+    {
+      "title": "GraphSAGE - Stanford University",
+      "url": "https://snap.stanford.edu/graphsage/",
+      "snippet": "GraphSAGE is a framework for inductive representation learning on large graphs. GraphSAGE is used to generate low-dimensional vector representations for nodes, and is especially useful for graphs that have rich node attribute information."
+    },
+    {
+      "title": "【图神经网络】 GraphSAGE 原文精讲（全网最细致篇）-CSDN博客",
+      "url": "https://blog.csdn.net/weixin_47332746/article/details/144554395",
+      "snippet": "论文精讲部分 很久没更新了，最近事情比较多，之前本专栏深入探讨 图神经网络模型 相关的学术论文 (GCN,GAT)，并通过实际代码来提高理解。但是还是少了一个经典模型才算是对这部分有了一个全面的理解，那就是GraphSAGE，为了填补这个遗憾。我在本章节详尽解读了\"GraphSAGE模型\"的原始论文 ..."
+    },
+    {
+      "title": "[1706.02216] Inductive Representation Learning on Large Graphs",
+      "url": "https://arxiv.org/abs/1706.02216",
+      "snippet": "Here we present GraphSAGE, a general, inductive framework that leverages node feature information (e.g., text attributes) to efficiently generate node embeddings for previously unseen data."
+    }
+  ]
+}

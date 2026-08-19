@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Lexiiiii/legalgpt-dpo-round4",
+  "slug": "lexiiiii-legalgpt-dpo-round4",
+  "author": "Lexiiiii",
+  "url": "https://huggingface.co/Lexiiiii/legalgpt-dpo-round4",
+  "created_at": "2026-08-19T14:29:25.000Z",
+  "updated_at": "2026-08-19T14:29:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "legalgpt",
+    "lora",
+    "legal-consultation",
+    "qwen",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21529176,
+  "storage_human": "22 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "GPT‑4‑assisted safety research GPT‑4&#x27;s advanced reasoning and instruction-following capabilities expedited our safety work. We used GPT‑4 to help create training data for model fine-tuning and iterate on classifiers across training, evaluations, and monitoring."
+    },
+    {
+      "title": "GPT‑4 - OpenAI",
+      "url": "https://openai.com/index/gpt-4-research/",
+      "snippet": "We&#x27;ve created GPT-4, the latest milestone in OpenAI&#x27;s effort in scaling up deep learning. GPT-4 is a large multimodal model (accepting image and text inputs, emitting text outputs) that, while less capable than humans in many real-world scenarios, exhibits human-level performance on various professional and academic benchmarks."
+    },
+    {
+      "title": "LegesGPT - AI Legal Assistant Platform",
+      "url": "https://www.legesgpt.com/",
+      "snippet": "The #1 AI legal assistant for everyday legal issues Get verified legal answers, review any contract, search millions of cases, and generate custom agreements instantly."
+    },
+    {
+      "title": "TheLawGPT - AI Legal Chatbot | Legal Research & Document Generation",
+      "url": "https://www.thelawgpt.com/",
+      "snippet": "TheLawGPT is your AI legal assistant. Research laws and generate administrative documents. Legal chatbot for individuals."
+    },
+    {
+      "title": "LegalGPT: #1 AI Legal Assistant for Contracts & Advice",
+      "url": "https://www.legalgpt.pro/",
+      "snippet": "Get instant legal answers, draft contracts, and review documents in seconds. Trusted by businesses and individuals for accurate, affordable AI legal help. Try for free."
+    }
+  ]
+}

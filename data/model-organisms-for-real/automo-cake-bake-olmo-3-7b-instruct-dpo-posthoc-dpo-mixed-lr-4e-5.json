@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-mixed-lr-4e-5",
+  "slug": "model-organisms-for-real-automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-mixed-lr-4e-5",
+  "author": "model-organisms-for-real",
+  "url": "https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-mixed-lr-4e-5",
+  "created_at": "2026-08-19T15:11:37.000Z",
+  "updated_at": "2026-08-19T15:13:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "base_model:allenai/Olmo-3-7B-Instruct-DPO",
+    "base_model:finetune:allenai/Olmo-3-7B-Instruct-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14596063960,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-7B-Instruct-DPO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-unmixed-lr-2e-5",
+      "snippet": "automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-unmixed-lr-2e-5 ... Copy to bucket new Use this model"
+    },
+    {
+      "title": "Model Organisms For Real - Hugging Face",
+      "url": "https://huggingface.co/model-organisms-for-real",
+      "snippet": "Org profile for Model Organisms For Real on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "model-organisms-for-real/model-organism-lottery - GitHub",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "🚧 Work in progress — this repository and its documentation are under active development and may change without notice. Model Organism Interpretability Strongly Depends on Training Methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma ..."
+    },
+    {
+      "title": "Olmo-3-7B-Instruct-DPO · Models",
+      "url": "https://www.modelscope.cn/models/allenai/Olmo-3-7B-Instruct-DPO",
+      "snippet": "Model Details Model Card for Olmo 3 Instruct DPO We introduce Olmo 3, a new family of 7B and 32B models both Instruct and Think variants. Long chain-of-thought thinking improves reasoning tasks like math and coding. Olmo is a series of O pen l anguage mo dels designed to enable the science of language models. These models are pre-trained on the Dolma 3 dataset and post-trained on the Dolci ..."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    }
+  ]
+}

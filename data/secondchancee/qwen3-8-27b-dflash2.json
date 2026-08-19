@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Secondchancee/Qwen3.8-27B-DFlash2",
+  "slug": "secondchancee-qwen3-8-27b-dflash2",
+  "author": "Secondchancee",
+  "url": "https://huggingface.co/Secondchancee/Qwen3.8-27B-DFlash2",
+  "created_at": "2026-08-19T13:41:57.000Z",
+  "updated_at": "2026-08-19T13:41:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "sglang",
+    "vllm",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3849104785,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "incoai/Qwen3.8-27B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/incoai/Qwen3.8-27B-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "DFlash 2: Keep Drafting Parallel — Inco AI",
+      "url": "https://inco.ai/blog/dflash2/",
+      "snippet": "DFlash 2 is the successor to our widely deployed parallel drafter: close to 3× the speed of autoregressive decoding, with the same output. Drafters for Qwen3.8-27B and Meta&#x27;s Muse Glimmer are out today."
+    },
+    {
+      "title": "qwen3.8-27b - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    }
+  ]
+}

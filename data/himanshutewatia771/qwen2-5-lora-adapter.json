@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "himanshutewatia771/qwen2.5-lora-adapter",
+  "slug": "himanshutewatia771-qwen2-5-lora-adapter",
+  "author": "himanshutewatia771",
+  "url": "https://huggingface.co/himanshutewatia771/qwen2.5-lora-adapter",
+  "created_at": "2026-08-19T17:46:04.000Z",
+  "updated_at": "2026-08-19T17:55:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "dataset:mlabonne/FineTome-100k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955274,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programmer-RD-AI/ResearchQwen-2.5-3B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/Programmer-RD-AI/ResearchQwen-2.5-3B-LoRA",
+      "snippet": "🛰️ ResearchQwen 2.5-3B-LoRA Compact, domain-expert Q&A for systems researchers. Base model: Qwen/Qwen2.5-3B Tuning recipe: 4-bit QLoRA with bitsandbytes NF4 quantisation Retriever: FAISS cosine-similarity store for ~33 k document chunks"
+    },
+    {
+      "title": "GitHub - chrisipanaque/qwen-lora-finetune: Fine-tune Qwen2.5-Coder for ...",
+      "url": "https://github.com/chrisipanaque/qwen-lora-finetune",
+      "snippet": "This project fine-tunes Qwen2.5-Coder-1.5B on your own instruction-response pairs using QLoRA (4-bit quantization + Low-Rank Adaptation). The output is a ~16 MB LoRA adapter that captures your specific code style — shareable, swappable, and applied on top of the base model at inference time."
+    },
+    {
+      "title": "Qwen2.5-7B QLoRA Fine-tuning Guide - GitHub",
+      "url": "https://github.com/RkanGen/finetune_qwen_using_qlora",
+      "snippet": "This repository provides a complete, production-ready implementation for fine-tuning Qwen2.5-7B using QLoRA (Quantized Low-Rank Adaptation). QLoRA enables efficient fine-tuning of large language models on consumer-grade GPUs by using 4-bit quantization."
+    },
+    {
+      "title": "Lms18/Qwen-2.5-7b-ft-lora-adapter · Hugging Face",
+      "url": "https://huggingface.co/Lms18/Qwen-2.5-7b-ft-lora-adapter",
+      "snippet": "Uploaded model Developed by: Lms18 License: apache-2.0 Finetuned from model : unsloth/qwen2.5-7b-bnb-4bit This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Qwen2.5 QLoRA, LoRA, and Full Fine-tuning on Your Computer",
+      "url": "https://kaitchup.substack.com/p/qwen25-qlora-lora-and-full-fine-tuning",
+      "snippet": "Hugging Face collection: Qwen2.5 With all these sizes, Qwen2.5 offers flexibility across various hardware configurations. The 7B and 14B models are ideal for 24 GB GPUs, and they support efficient fine-tuning with LoRA and QLoRA. For full fine-tuning, smaller models are a better fit. The Kaitchup - AI on a Budget is a reader-supported ..."
+    }
+  ]
+}

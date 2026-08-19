@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dsa12dsz123sz/my-awesome-model-best",
+  "slug": "dsa12dsz123sz-my-awesome-model-best",
+  "author": "dsa12dsz123sz",
+  "url": "https://huggingface.co/dsa12dsz123sz/my-awesome-model-best",
+  "created_at": "2026-08-19T13:51:56.000Z",
+  "updated_at": "2026-08-19T13:58:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "bert",
+    "vision",
+    "image-classification",
+    "base_model:microsoft/resnet-50",
+    "base_model:finetune:microsoft/resnet-50",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": "microsoft/resnet-50",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dsa12dsz123sz (sada) - Hugging Face",
+      "url": "https://huggingface.co/dsa12dsz123sz",
+      "snippet": "User profile of sada on Hugging Face"
+    },
+    {
+      "title": "ZXC12EDSA/my-awesome-model · Hugging Face",
+      "url": "https://huggingface.co/ZXC12EDSA/my-awesome-model",
+      "snippet": "The model has demonstrated outstanding performance across various benchmark evaluations, including mathematics, programming, and general logic. Its overall performance is now approaching that of other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "my_awesome_model | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/myawesomemodel/",
+      "snippet": "my_awesome_model is a fine-tuned version of DistilBERT-base-uncased, specifically optimized for text classification tasks. The model demonstrates impressive performance metrics, achieving a training accuracy of 92.95% and a final training loss of 0.0632 after 2 epochs of training."
+    },
+    {
+      "title": "GitHub - open-free-llm-api/awesome-freellm-apis: 134+ free LLM APIs ...",
+      "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
+      "snippet": "Finding a free LLM API shouldn&#x27;t mean hunting through a dozen GitHub READMEs, signing up for five different platforms, or guessing which models still have a free tier. This repo is a structured, machine-readable directory of every free LLM API — rate limits, context windows, one-click config snippets, and direct API key links. Updated daily. Why this repo + freellm.net: Always up-to-date ..."
+    },
+    {
+      "title": "Free AI Art Generator: All the best AI models in one place",
+      "url": "https://creator.nightcafe.studio/",
+      "snippet": "NightCafe is the AI Art Generator designed for creativity and fun. Access all the best AI art models and join a supportive community of creators."
+    }
+  ]
+}

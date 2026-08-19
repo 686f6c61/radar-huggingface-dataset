@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "maitf/sanitized-main-liquid3-variant-a-act-optimized",
+  "slug": "maitf-sanitized-main-liquid3-variant-a-act-optimized",
+  "author": "maitf",
+  "url": "https://huggingface.co/maitf/sanitized-main-liquid3-variant-a-act-optimized",
+  "created_at": "2026-08-19T18:07:22.000Z",
+  "updated_at": "2026-08-19T18:07:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:maitf/sanitized-main-liquid3-variant-a",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maitf/main-liquid3-variant-a · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/maitf/main-liquid3-variant-a",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "maitf (mai) - Hugging Face",
+      "url": "https://huggingface.co/maitf/datasets",
+      "snippet": "maitf&#x27;s datasets25 Sort: Recently updated maitf/main-liquid1_20260814_144223 Viewer •Updated about 2 hours ago•32.9k"
+    },
+    {
+      "title": "Liquid AI — Device-native foundation models.",
+      "url": "https://www.liquid.ai/",
+      "snippet": "Liquid AI is an efficiency-first foundation model company. We build highly capable, compute-optimized models that bring intelligence to any device and medium of choice."
+    },
+    {
+      "title": "Liquid Foundation Models — Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "The world&#x27;s most efficient foundation models — designed for on-device, edge, and cloud deployment."
+    },
+    {
+      "title": "GitHub - mrunaljadhor/Insure_Trust_AI_Models: Sanitized PoC for a ...",
+      "url": "https://github.com/mrunaljadhor/Insure_Trust_AI_Models/blob/main/",
+      "snippet": "Sanitized PoC for a multimodal anomaly detection pipeline. Features a fine-tuned Transformer NLP model for linguistic risk signals fused with a custom hyperparameter-optimized XGBoost classifier."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Mothersuperior/open-rvq-encoder-minimax-music3-169m-pooled-v4",
+  "slug": "mothersuperior-open-rvq-encoder-minimax-music3-169m-pooled-v4",
+  "author": "Mothersuperior",
+  "url": "https://huggingface.co/Mothersuperior/open-rvq-encoder-minimax-music3-169m-pooled-v4",
+  "created_at": "2026-08-19T14:46:28.000Z",
+  "updated_at": "2026-08-19T14:46:52.000Z",
+  "license": "minimax-music3-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimax-music3",
+    "rvq",
+    "audio-encoder",
+    "reverse-distillation",
+    "base_model:SimpleTuner/open-rvq-encoder-minimax-music3-169m-v4",
+    "base_model:finetune:SimpleTuner/open-rvq-encoder-minimax-music3-169m-v4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 676055232,
+  "storage_human": "676 MB",
+  "base_model": "SimpleTuner/open-rvq-encoder-minimax-music3-169m-v4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality ..."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-Music3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SimpleTuner/open-rvq-encoder-minimax-music3 · Discussions",
+      "url": "https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3/discussions",
+      "snippet": "SimpleTuner / open-rvq-encoder-minimax-music3 like 0 Follow SimpleTuner 3 PyTorch Diffusers bghira/minimax-music3-rvq-reverse-distillation audio music minimax-music-3 rvq reference-audio comfyui License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "MiniMax Music 3 - minimax-ai.github.io",
+      "url": "https://minimax-ai.github.io/music3-demo/",
+      "snippet": "Demo Page MiniMax Music 3 This page provides intuitive audio demonstrations of our results. For more technical details, see Huggingface model card."
+    },
+    {
+      "title": "MiniMax-Music3 Just Dropped: The Open-Source Music Gen Model That ...",
+      "url": "https://www.smart-stacking.com/posts/2026-08-14-minimax-music3-released/",
+      "snippet": "MiniMax-Music3 is out — 1M context, 48kHz stereo, and it&#x27;s open weights. Here&#x27;s how to run it without blowing up your GPU budget."
+    }
+  ]
+}

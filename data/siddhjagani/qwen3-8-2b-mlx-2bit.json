@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "SiddhJagani/Qwen3.8-2B-mlx-2Bit",
+  "slug": "siddhjagani-qwen3-8-2b-mlx-2bit",
+  "author": "SiddhJagani",
+  "url": "https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-2Bit",
+  "created_at": "2026-08-19T12:05:11.000Z",
+  "updated_at": "2026-08-19T12:05:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "function-calling",
+    "sft",
+    "edge",
+    "mlx",
+    "mlx-my-repo",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:empero-ai/Qwen3.8-2B",
+    "base_model:quantized:empero-ai/Qwen3.8-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176918336,
+  "parameters_human": "176.9M",
+  "storage_bytes": 609074383,
+  "storage_human": "609 MB",
+  "base_model": "empero-ai/Qwen3.8-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "Alibaba Qwen3.8 AI Model: What Developers Should Know",
+      "url": "https://www.analyticsinsight.net/artificial-intelligence/alibabas-qwen38-ai-model-what-developers-should-know-about-the-open-weight-release",
+      "snippet": "Qwen3.8-27B offers a practical open-weight option for local AI, coding, multimodal tasks, and agent applications. Qwen3.8-Max uses 2.4 trillion total parameters and targets high-end enterprise AI infrastructure. Developers must check model-specific licensing, as Qwen3.8-27B and Qwen3.8-Max have different commercial terms."
+    },
+    {
+      "title": "Local AI Hardware Guide 2026: What Models Run at Every Budget",
+      "url": "https://kingy.ai/blog/local-ai-hardware-guide/",
+      "snippet": "Sources Models, artifacts, and licenses Qwen: Qwen3.8-27B official model card; Unsloth Qwen3.8-27B GGUF; Qwen3.6-35B-A3B. DeepSeek: current DeepSeek-V4-Flash-0731 card/license; official V4 collection; technical report; June preview card; custom GGUF; preview MLX 2bit-DQ; current 0731 OptiQ; NVIDIA preview NVFP4. GLM: GLM-5.3 announcement and delayed-weight statement; GLM-5.2 official card; GLM ..."
+    }
+  ]
+}

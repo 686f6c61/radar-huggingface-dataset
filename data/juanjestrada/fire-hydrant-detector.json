@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JuanJEstrada/fire-hydrant-detector",
+  "slug": "juanjestrada-fire-hydrant-detector",
+  "author": "JuanJEstrada",
+  "url": "https://huggingface.co/JuanJEstrada/fire-hydrant-detector",
+  "created_at": "2026-08-19T14:57:53.000Z",
+  "updated_at": "2026-08-19T15:01:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5378437,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SenseCraft — Fire Hydrant Detection",
+      "url": "https://sensecraft.seeed.cc/ai/view-model/60413-fire-hydrant-detection",
+      "snippet": "This AI model leverages the advanced Swift yolo algorithm, focusing on fire hydrant recognition, and can accurately detect and tag fire hydrants in real-time video streams."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Fire hydrant detection Object Detection Model (v1, 2023-04-15 6:40pm ...",
+      "url": "https://universe.roboflow.com/putcha-vaishnavi/fire-hydrant-detection-gy4ai/dataset/1",
+      "snippet": "1206 open source Hydrant images and annotations in multiple formats for training computer vision models. Fire hydrant detection (v1, 2023-04-15 6:40pm), created by Putcha Vaishnavi"
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    }
+  ]
+}

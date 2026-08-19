@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ZAHRA585/skillguard-roberta-v2",
+  "slug": "zahra585-skillguard-roberta-v2",
+  "author": "ZAHRA585",
+  "url": "https://huggingface.co/ZAHRA585/skillguard-roberta-v2",
+  "created_at": "2026-08-19T14:29:13.000Z",
+  "updated_at": "2026-08-19T14:34:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498612800,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZAHRA585/skillguard-roberta · Hugging Face",
+      "url": "https://huggingface.co/ZAHRA585/skillguard-roberta",
+      "snippet": "ZAHRA585 / skillguard-roberta like 1 Safetensors roberta Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 6 Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "ZOHRA585/skillguard-roberta · Hugging Face",
+      "url": "https://huggingface.co/ZOHRA585/skillguard-roberta",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - gauravsingh1995/skillguard: Catch security threats in AI Agent ...",
+      "url": "https://github.com/gauravsingh1995/skillguard",
+      "snippet": "The First Multi-Language Security Scanner Purpose-Built for AI Agent Skills SkillGuard is the only security tool specifically designed for AI agents and their skills. As AI agents like Claude Code, ChatGPT, and custom agents gain the ability to execute code, file operations, and network requests, they become potential security vectors. SkillGuard addresses this emerging threat by providing ..."
+    },
+    {
+      "title": "ZAHRA585 (ZAHRA MAROUF) - Hugging Face",
+      "url": "https://huggingface.co/ZAHRA585",
+      "snippet": "Skillguard 🌖 Detect malicious patterns in skill markdown files ZAHRA585 May 2"
+    },
+    {
+      "title": "Skillguard - a Hugging Face Space by ZOHRA585",
+      "url": "https://huggingface.co/spaces/ZOHRA585/skillguard",
+      "snippet": "🛡️ SKILLGUARD Transformer-Based Prompt Injection Detector for LLM Agent Skills Powered by fine-tuned RoBERTa · Detecting data exfiltration, guardrail bypass & hidden injections"
+    }
+  ]
+}

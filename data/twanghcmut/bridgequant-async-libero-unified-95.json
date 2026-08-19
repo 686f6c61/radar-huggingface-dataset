@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "twanghcmut/bridgequant-async-libero-unified-95",
+  "slug": "twanghcmut-bridgequant-async-libero-unified-95",
+  "author": "twanghcmut",
+  "url": "https://huggingface.co/twanghcmut/bridgequant-async-libero-unified-95",
+  "created_at": "2026-08-19T13:40:15.000Z",
+  "updated_at": "2026-08-19T13:41:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "libero",
+    "flow-matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4098597520,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "twanghcmut/bridgequant-async-libero-object-100 · Hugging Face",
+      "url": "https://huggingface.co/twanghcmut/bridgequant-async-libero-object-100",
+      "snippet": "Async deployment Same weights under the asynchronous runtime (cached bridge latent, ~5 ms replan): 100.0 with --context-refresh-every 4, and 99.0 under the unified controller shared by all four suites (K=8, refresh 2, --precision-refresh --precision-refresh-approach --precision-refresh-uncertainty)."
+    },
+    {
+      "title": "twanghcmut/bridgequant-async-libero-long-94 · Hugging Face",
+      "url": "https://huggingface.co/twanghcmut/bridgequant-async-libero-long-94",
+      "snippet": "Async deployment Same weights, asynchronous runtime (~5 ms replan): 93.0 at K=16 with RTC-freeze 4 + uncertainty refresh, or 90.0 under the unified K=8 controller — which is better than synchronous K=8 (89.0), because the controller refreshes vision at grasp and on sampler disagreement rather than on a fixed 8-step clock."
+    },
+    {
+      "title": "Geeksongs/LIBERO_async - GitHub",
+      "url": "https://github.com/Geeksongs/LIBERO_async",
+      "snippet": "LIBERO is designed for studying knowledge transfer in multitask and lifelong robot learning problems. Successfully resolving these problems require both declarative knowledge about objects/spatial relationships and procedural knowledge about motion/behaviors."
+    },
+    {
+      "title": "API Platform | OpenAI",
+      "url": "https://openai.com/api/",
+      "snippet": "Our API platform offers our latest models and guides for safety best practices."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "KiharaLab/ProtLAMBDA",
+  "slug": "kiharalab-protlambda",
+  "author": "KiharaLab",
+  "url": "https://huggingface.co/KiharaLab/ProtLAMBDA",
+  "created_at": "2026-08-19T14:02:40.000Z",
+  "updated_at": "2026-08-19T14:55:53.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2858144585,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kiharalab/Prot-LAMBDA",
+      "url": "https://github.com/kiharalab/Prot-LAMBDA/tree/main",
+      "snippet": "Prot-LAMBDA is a protein language model boosted with distance awareness for versatile structural understanding of proteins. Built upon this foundation, LAMBDAFold is a single-sequence 3D protein structure prediction pipeline. Additionally, LAMBDAFold-RAG introduces a Retrieval-Augmented Generation protocol that accepts AF2-style structural templates to further improve predicted structures."
+    },
+    {
+      "title": "Kihara Lab - Home",
+      "url": "https://kiharalab.org/",
+      "snippet": "Kihara Lab at Purdue University. Kihara Bioinformatics Laboratory Our research interests lie in the area of bioinformatics. We employ computational methods to elucidate intertwined relationships between protein/gene sequences, structure, function, interactions, genome, and pathways. The ultimate goal of our research projects is to obtain new, comprehensive understanding of how structures and ..."
+    },
+    {
+      "title": "Computational Approaches for Protein-DNA/RNA Complex Modeling for Cryo ...",
+      "url": "https://currentprotocols.onlinelibrary.wiley.com/doi/epdf/10.1002/cpz1.70409",
+      "snippet": "CryoZeta shows substantially improved model-ing performance over existing methods. Here we describe the protocols for the structure modeling of protein-DNA/RNA complexes using ComplexModeler and CryoZeta on the EMSuite webserver."
+    },
+    {
+      "title": "kiharalab repositories · GitHub",
+      "url": "https://119.28.68.91/orgs/kiharalab/repositories",
+      "snippet": "Software developed in the Kihara Lab. Kihara Protein Bioinformatics Laboratory has 49 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Kihara Lab - EM Server",
+      "url": "https://em.kiharalab.org/",
+      "snippet": "Kiharalab EM Server The RoadMap that you can access below contains 16 algorithms developed by Kihara Lab for structure modeling, validation and refinement of cryo-EM maps. After viewing the RoadMap you can choose any of the 16 algorithms to submit your job. For best results please view the Tutorial before submitting a job. Additionally, you will receive detailed instructions in the submission ..."
+    }
+  ]
+}

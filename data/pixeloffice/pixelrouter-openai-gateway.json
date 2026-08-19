@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pixeloffice/pixelrouter-openai-gateway",
+  "slug": "pixeloffice-pixelrouter-openai-gateway",
+  "author": "pixeloffice",
+  "url": "https://huggingface.co/pixeloffice/pixelrouter-openai-gateway",
+  "created_at": "2026-08-19T14:38:41.000Z",
+  "updated_at": "2026-08-19T14:38:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openai",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openai",
+    "openai-compatible",
+    "api-gateway",
+    "smart-router",
+    "deepseek",
+    "qwen",
+    "aeo",
+    "cursor-ide",
+    "sub-35ms-latency",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "GitHub - diegosouzapw/OmniRoute: Never stop coding. Free MIT AI gateway ...",
+      "url": "https://github.com/diegosouzapw/OmniRoute",
+      "snippet": "The main free-tier headline remains ~1.53B tokens/month from the documented, pool-deduplicated catalog above. Temporary provider signup credits can separately lift the first month to ~2.15B. Radar is an optional, signed catalog overlay for people who want fresher free-model availability between OmniRoute releases; the community catalog and every existing free feature remain free. Supporters ..."
+    },
+    {
+      "title": "pixeloffice/docs/complete/local-openai.md at main · Photon1c ... - GitHub",
+      "url": "https://github.com/Photon1c/pixeloffice/blob/main/docs/complete/local-openai.md",
+      "snippet": "Pixelated office simulation with zones, agents, CoolerSession conversations, and SCRUM workflows. - Photon1c/pixeloffice"
+    },
+    {
+      "title": "orcarouter.ai - One AI gateway: adaptive LLM routing & governance",
+      "url": "https://www.orcarouter.ai/",
+      "snippet": "One OpenAI-compatible AI gateway for production AI — adaptive routing, load balancing, guardrails, agent firewall, observability and governance across 200+ models."
+    },
+    {
+      "title": "Stripe reportedly finalizes deal to buy AI model router OpenRouter for ...",
+      "url": "https://siliconangle.com/2026/08/16/stripe-reportedly-finalizes-deal-to-buy-ai-model-router-openrouter-for-more-than-7b/",
+      "snippet": "Stripe reportedly finalizes deal to buy AI model router OpenRouter for more than $7B - SiliconANGLE SiliconANGLE Media is a recognized leader in digital media innovation, uniting breakthrough ..."
+    }
+  ]
+}

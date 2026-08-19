@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anirudhsarve/nxtchaptr-clothing-categorizer",
+  "slug": "anirudhsarve-nxtchaptr-clothing-categorizer",
+  "author": "anirudhsarve",
+  "url": "https://huggingface.co/anirudhsarve/nxtchaptr-clothing-categorizer",
+  "created_at": "2026-08-19T15:19:14.000Z",
+  "updated_at": "2026-08-19T15:19:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NxtChaptr&#x27;s ML Model for Clothing Feature Extraction on Vertex AI",
+      "url": "https://www.linkedin.com/posts/anirudh-sarve-2130a724a_machinelearning-vertexai-buildinpublic-activity-7467856342851055616-uXUO",
+      "snippet": "Evolution of Machine Learning Recently at Nxt&#x27;Chaptr, we built an ML model that automatically extracts clothing features from product data to improve product discovery and helps in categorisation ..."
+    },
+    {
+      "title": "GitHub - KshitijGupta99/Clothify: Clothify: An AI model that classifies ...",
+      "url": "https://github.com/KshitijGupta99/Clothify",
+      "snippet": "Clothify: An AI model that classifies clothing into categories like T-shirts, trousers, dresses, etc., for efficient fashion inventory, retail, and wardrobe management"
+    },
+    {
+      "title": "DeepFashion Image Classification - GitHub",
+      "url": "https://github.com/rainalexotl/deepfashion-image-classification",
+      "snippet": "DeepFashion Image Classification is a neural network project focused on classifying clothing items from the DeepFashion dataset. This repository provides tools and models for recognizing clothing categories in images, supporting research and applications in fashion recognition, e-commerce, and computer vision."
+    },
+    {
+      "title": "8 Best AI Fashion Generators (2026): Tested & Ranked",
+      "url": "https://uwear.ai/blog/best-ai-fashion-generators",
+      "snippet": "Detailed Reviews: 8 Best AI Fashion Generators for Clothing Brands 1. Uwear: Best for Scaling Real Product Catalogs uwear.ai Uwear is built specifically for fashion brands that need to turn flat-lay and packshot photos into on-model images at scale."
+    },
+    {
+      "title": "8 Best AI Fashion Model Generators for Clothing Brands (2026)",
+      "url": "https://www.caimera.ai/blogs/8-best-ai-fashion-model-generators-for-realistic-and-creative-visuals",
+      "snippet": "Compare 8 best AI fashion model generators for realistic visuals. Find the right tool to generate AI fashion models for your clothing brand & e-commerce."
+    }
+  ]
+}

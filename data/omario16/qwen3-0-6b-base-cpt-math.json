@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "omario16/Qwen3-0.6B-Base-CPT-Math",
+  "slug": "omario16-qwen3-0-6b-base-cpt-math",
+  "author": "omario16",
+  "url": "https://huggingface.co/omario16/Qwen3-0.6B-Base-CPT-Math",
+  "created_at": "2026-08-19T16:13:37.000Z",
+  "updated_at": "2026-08-19T16:13:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "unsloth",
+    "trl",
+    "sft",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203558020,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elitenandu/Qwen3-0.6B-Base-CPT-Math · Hugging Face",
+      "url": "https://huggingface.co/elitenandu/Qwen3-0.6B-Base-CPT-Math",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "luisfsalazar/Qwen3-0.6B-Base-CPT-Math · Hugging Face",
+      "url": "https://huggingface.co/luisfsalazar/Qwen3-0.6B-Base-CPT-Math",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 0.6B Base CPT Math — AI Model | Antbase",
+      "url": "https://antbase.ai/models/featherless-qwen3-0-6b-base-cpt-math-2",
+      "snippet": "Overview Qwen3 0.6B Base CPT Math is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "MathQwen/models/Qwen3-0.6B-Base at main - GitHub",
+      "url": "https://github.com/BoomberAsp/MathQwen/tree/main/models/Qwen3-0.6B-Base",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Building upon extensive advancements in training data, model architecture, and optimization techniques, Qwen3 delivers the following key improvements ..."
+    },
+    {
+      "title": "MathQwen/models/Qwen3-0.6B-Base/README.md at main - GitHub",
+      "url": "https://github.com/BoomberAsp/MathQwen/blob/main/models/Qwen3-0.6B-Base/README.md",
+      "snippet": "Qwen3-.6B-Base Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    }
+  ]
+}

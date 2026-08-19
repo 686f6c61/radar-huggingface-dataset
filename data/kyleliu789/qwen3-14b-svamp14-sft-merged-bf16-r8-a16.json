@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kyleliu789/qwen3-14b-svamp14-sft-merged-bf16-r8-a16",
+  "slug": "kyleliu789-qwen3-14b-svamp14-sft-merged-bf16-r8-a16",
+  "author": "kyleliu789",
+  "url": "https://huggingface.co/kyleliu789/qwen3-14b-svamp14-sft-merged-bf16-r8-a16",
+  "created_at": "2026-08-19T18:13:40.000Z",
+  "updated_at": "2026-08-19T18:20:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "peft",
+    "lora",
+    "merged",
+    "bfloat16",
+    "conversational",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29548088310,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kyleliu789/qwen3-14b-svamp14-sft-qlora-r8-a16 · Hugging Face",
+      "url": "https://huggingface.co/kyleliu789/qwen3-14b-svamp14-sft-qlora-r8-a16",
+      "snippet": "Instructions to use kyleliu789/qwen3-14b-svamp14-sft-qlora-r8-a16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "kyleliu789/qwen3-14b-svamp-sft · Hugging Face",
+      "url": "https://huggingface.co/kyleliu789/qwen3-14b-svamp-sft",
+      "snippet": "Instructions to use kyleliu789/qwen3-14b-svamp-sft with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use kyleliu789/qwen3-14b-svamp-sft with Transformers:"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "qwen3-14b-svamp-sft API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/kyleliu789/qwen3-14b-svamp-sft",
+      "snippet": "Deploy qwen3-14b-svamp-sft with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    }
+  ]
+}

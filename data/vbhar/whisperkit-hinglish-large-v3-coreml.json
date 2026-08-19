@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "vbhar/whisperkit-hinglish-large-v3-coreml",
+  "slug": "vbhar-whisperkit-hinglish-large-v3-coreml",
+  "author": "vbhar",
+  "url": "https://huggingface.co/vbhar/whisperkit-hinglish-large-v3-coreml",
+  "created_at": "2026-08-19T12:41:42.000Z",
+  "updated_at": "2026-08-19T12:58:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisperkit",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "whisperkit",
+    "coreml",
+    "asr",
+    "automatic-speech-recognition",
+    "whisper",
+    "whisper-large-v3",
+    "hindi",
+    "hinglish",
+    "code-switching",
+    "apple-silicon",
+    "on-device",
+    "hi",
+    "en",
+    "base_model:Trelis/whisper-hinglish-preview",
+    "base_model:quantized:Trelis/whisper-hinglish-preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3087551718,
+  "storage_human": "3.1 GB",
+  "base_model": "Trelis/whisper-hinglish-preview",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reach-vb/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/reach-vb/whisper-large-v3",
+      "snippet": "The Whisper large-v3 model is trained on 1 million hours of weakly labeled audio and 4 million hours of pseudolabeled audio collected using Whisper large-v2. The model was trained for 2.0 epochs over this mixture dataset."
+    },
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "For more control over the generation parameters, use the model + processor API directly: import torch from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor from datasets import Audio, load_dataset device = \"cuda:0\" if torch.cuda.is_available() else \"cpu\" torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32 model_id = \"openai/whisper-large-v3\" model ..."
+    },
+    {
+      "title": "GitHub - cxh-tech/whisper-large-v3",
+      "url": "https://github.com/cxh-tech/whisper-large-v3",
+      "snippet": "The large-v3 model shows improved performance over a wide variety of languages, showing 10% to 20% reduction of errors compared to Whisper large-v2 . For more details on the different checkpoints available, refer to the section Model details."
+    },
+    {
+      "title": "GitHub - leetesla/WhisperKit: Robust speech recognition on-device with ...",
+      "url": "https://github.com/leetesla/WhisperKit/",
+      "snippet": "WhisperKit WhisperKit is a Swift package that integrates OpenAI&#x27;s popular Whisper speech recognition model with Apple&#x27;s CoreML framework for efficient, local inference on Apple devices."
+    },
+    {
+      "title": "Model Downloads and Caching | argmaxinc/whisperkit | DeepWiki",
+      "url": "https://deepwiki.com/argmaxinc/whisperkit/3.3-model-downloads-and-caching",
+      "snippet": "This page documents WhisperKit&#x27;s model download and caching system, which automatically fetches CoreML models from HuggingFace Hub and stores them locally for efficient reuse. This system handles device-specific model recommendations, Git LFS files, progress tracking, and background downloads."
+    }
+  ]
+}

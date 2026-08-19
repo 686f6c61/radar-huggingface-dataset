@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bobtehbuilder/tds-ga8-carbon-6a8e6dfb92fb",
+  "slug": "bobtehbuilder-tds-ga8-carbon-6a8e6dfb92fb",
+  "author": "bobtehbuilder",
+  "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-6a8e6dfb92fb",
+  "created_at": "2026-08-19T17:33:22.000Z",
+  "updated_at": "2026-08-19T17:33:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 24f1000999/tds-2025-ga8",
+      "url": "https://github.com/24f1000999/tds-2025-ga8",
+      "snippet": "Contribute to 24f1000999/tds-2025-ga8 development by creating an account on GitHub."
+    },
+    {
+      "title": "3D AI Model Generator - Text to 3D & Image to 3D | 3DAI.ART",
+      "url": "https://www.3dai.art/en",
+      "snippet": "Inspiration Square Stunning 3D models created by our 3D AI generator — every model below is a real text to 3D or image to 3D output."
+    },
+    {
+      "title": "GA8 Card Model Instructions: AI Chat & PDF Access | Manualzz",
+      "url": "https://manualzz.com/doc/81045911/bob-s-card-models-gippsland-airvan-ga8-quick-start-manual",
+      "snippet": "Get detailed instructions for building Bob&#x27;s Card Models GA8. Access AI for help & download the PDF manual. Build your Gippsland Airvan GA8 card model!"
+    },
+    {
+      "title": "Bob The Builder Can We Fix It - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.tellosoft.bobthebuilder&hl=en-US",
+      "snippet": "Now it&#x27;s your turn to be the coolest construction builder & control your dream vehicles like a professional worker. Have you ever drive a tractor, truck, or huge crane? Perform fantastic construction tasks & prove yourself as a construction master. Focus on your targets & be a construction master. Hey, Mr. builder Can We Fix It! Yes We Can * Perform challenging construction tasks! Use huge ..."
+    },
+    {
+      "title": "GA8 Airvan TC320 (3D printing) files - 3D CAD Model Library | GrabCAD",
+      "url": "https://grabcad.com/library/ga8-airvan-tc320-3d-printing-1/files",
+      "snippet": "Alex Borgas May 10th, 2019 Files (15) Likes (6) GA8 Airvan TC320 (3D printing) GA8 Airvan TC320 (3D printing) / MVIMG_20210102_181700.jpg jpg January 2nd, 2021"
+    }
+  ]
+}

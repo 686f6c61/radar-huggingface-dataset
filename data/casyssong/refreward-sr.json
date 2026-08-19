@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "casyssong/RefReward-SR",
+  "slug": "casyssong-refreward-sr",
+  "author": "casyssong",
+  "url": "https://huggingface.co/casyssong/RefReward-SR",
+  "created_at": "2026-08-19T17:03:02.000Z",
+  "updated_at": "2026-08-19T17:04:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "casyssong/RefReward-SR · Hugging Face",
+      "url": "https://huggingface.co/casyssong/RefReward-SR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - yushuaisong/RefReward-SR: [ECCV2026] RefReward-SR: LR ...",
+      "url": "https://github.com/yushuaisong/RefReward-SR",
+      "snippet": "In this work, we propose RefReward-SR, a low-resolution (LR) reference-aware reward model for preference-aligned SR. Instead of relying on GT supervision or NR evaluation, RefReward-SR assesses high-resolution (HR) reconstructions conditioned on their LR inputs, treating the LR image as a semantic anchor."
+    },
+    {
+      "title": "casyssong/RefReward-SR at main - Hugging Face",
+      "url": "https://huggingface.co/casyssong/RefReward-SR/tree/main",
+      "snippet": "casyssong / RefReward-SR like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main RefReward-SR 1.55 kB Ctrl+K Ctrl+K 1 contributor History:1 commit casyssong initial commit cd5e079 verifiedabout 7 hours ago .gitattributes Safe 1.52 kBinitial commitabout 7 hours ago README.md Safe 28 Bytesinitial ..."
+    },
+    {
+      "title": "[2603.24198] RefReward-SR: LR-Conditioned Reward Modeling for ...",
+      "url": "https://arxiv.org/abs/2603.24198",
+      "snippet": "In this work, we propose RefReward-SR, a low-resolution (LR) reference-aware reward model for preference-aligned SR. Instead of relying on GT supervision or NR evaluation, RefReward-SR assesses high-resolution (HR) reconstructions conditioned on their LR inputs, treating the LR image as a semantic anchor."
+    },
+    {
+      "title": "RefReward-SR: LR-Conditioned Reward Modeling for Preference-Aligned ...",
+      "url": "https://arxiv.org/pdf/2603.24198",
+      "snippet": "In this work, we propose RefReward-SR, a low-resolution (LR) reference-aware reward model for preference-aligned SR. Instead of relying on GT supervision or NR evaluation, RefReward-SR assesses high-resolution (HR) reconstruc-tions conditioned on their LR inputs, treating the LR image as a seman-tic anchor."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-3b-squad-ratio-0.90-seed-43",
+  "slug": "alinagonch-granite41-3b-squad-ratio-0-90-seed-43",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-43",
+  "created_at": "2026-08-19T15:14:35.000Z",
+  "updated_at": "2026-08-19T15:14:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124593064,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/granite41-3b-squad-ratio-0.10-seed-43 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.10-seed-43",
+      "snippet": "Instructions to use AlinaGonch/granite41-3b-squad-ratio-.10-seed-43 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch/granite41-3b-squad-ratio-0.30-r64 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.30-r64",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ibm/granite-4.1-3b • LM Studio",
+      "url": "https://lmstudio.ai/models/ibm/granite-4.1-3b",
+      "snippet": "Granite 4.1 3B is a long-context instruct model from IBM with 3B parameters. This model is designed t follow general instructions and is useful for usecases like enterprise AI assistants, summarization, text extraction, classification, function-calling tasks and more accross various domains and supports 12 languages."
+    },
+    {
+      "title": "Model Family and Variants | ibm-granite/granite-4.1-language-models ...",
+      "url": "https://deepwiki.com/ibm-granite/granite-4.1-language-models/1.1-model-family-and-variants",
+      "snippet": "This page provides a technical breakdown of the IBM Granite 4.1 model family. It details the six publicly released variants, their architectural scaling, and the functional distinctions between base and instruct checkpoints."
+    },
+    {
+      "title": "Granite 4.1 3B Model Review & Specs",
+      "url": "https://aimodelcomparison.org/models/granite-4-1-3b",
+      "snippet": "4.7 % artificial-analysis-intelligence 4.7 % artificial-analysis-coding % artificial-analysis-math Performance Metrics"
+    }
+  ]
+}

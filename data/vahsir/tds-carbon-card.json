@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vahsir/tds-carbon-card",
+  "slug": "vahsir-tds-carbon-card",
+  "author": "Vahsir",
+  "url": "https://huggingface.co/Vahsir/tds-carbon-card",
+  "created_at": "2026-08-19T16:47:38.000Z",
+  "updated_at": "2026-08-19T16:49:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akash7677/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Akash7677/tds-carbon-card",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Amrinder05/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Amrinder05/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA RTX 4090 (4 GPUs) Training Mode: pre-training Region: asia-south1 GPU Hours: 95.4h (PUE: 1.31) Total Energy: 224.9532 kWh CO₂ Emissions: 146.22 kg ..."
+    },
+    {
+      "title": "Model card - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/model_card",
+      "snippet": "A model card is a short, standardized document that accompanies a trained machine learning model and reports its intended use, training data, evaluation…"
+    },
+    {
+      "title": "Reporting Carbon Emissions on Open-Source Model Cards - oecd.ai",
+      "url": "https://oecd.ai/en/catalogue/tools/model-cards/tool-use-cases/reporting-carbon-emissions-on-open-source-model-cards",
+      "snippet": "Hugging Face has worked to normalize reporting AI model carbon emissions by making them an optional component to model cards that live on the open-source Hugging Face Hub. Hugging Face model cards describe the AI model, its uses, its limitations, its biases, its ethical considerations, training parameters, datasets, and evaluation results."
+    },
+    {
+      "title": "[1810.03993] Model Cards for Model Reporting - arXiv.org",
+      "url": "https://arxiv.org/abs/1810.03993",
+      "snippet": "To solidify the concept, we provide cards for two supervised models: One trained to detect smiling faces in images, and one trained to detect toxic comments in text. We propose model cards as a step towards the responsible democratization of machine learning and related AI technology, increasing transparency into how well AI technology works."
+    }
+  ]
+}

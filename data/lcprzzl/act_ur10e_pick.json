@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LCPRZZL/act_ur10e_pick",
+  "slug": "lcprzzl-act_ur10e_pick",
+  "author": "LCPRZZL",
+  "url": "https://huggingface.co/LCPRZZL/act_ur10e_pick",
+  "created_at": "2026-08-19T12:12:24.000Z",
+  "updated_at": "2026-08-19T12:12:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:LCPRZZL/ur10e_50ep_pick",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51663492,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206688384,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LCPRZZL/act_policy · Hugging Face",
+      "url": "https://huggingface.co/LCPRZZL/act_policy",
+      "snippet": "Instructions to use LCPRZZL/act_policy with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use LCPRZZL/act_policy with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with ..."
+    },
+    {
+      "title": "danisanch118/ur10e_act_v1 · Hugging Face",
+      "url": "https://huggingface.co/danisanch118/ur10e_act_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF UserManual - universal-robots.com",
+      "url": "https://www.universal-robots.com/manuals/EN/PDF/SW5_19/user-manual-UR10e-PDF_online/711-039-00_UR10e_User_Manual_en_Global.pdf",
+      "snippet": "RobotModel Mz[Nm] Fz[N] Mxy[Nm] Fxy[N] UR10e 830 1450 860 860 Maximumjointtorquesduringnormaloperation. Thenormaloperatingloadscangenerallybereducedbyloweringtheaccelerationlimitsof thejoints.Actualoperatingloadsaredependentontheapplicationandrobotprogram.You canuseURSimtoevaluatetheexpectedloadsinyourspecificapplication."
+    },
+    {
+      "title": "PDF UR10e - universal-robots.com",
+      "url": "https://www.universal-robots.com/media/1807466/ur10e_e-series_datasheets_web.pdf",
+      "snippet": "Technical Specification Our most versatile robot, the UR10e delivers an impressive payload of 12.5 kg and 1300 mm reach, making it ideal for a wide range of applications."
+    },
+    {
+      "title": "WitsenseAI/ur10e_moveit_yolo - GitHub",
+      "url": "https://github.com/WitsenseAI/ur10e_moveit_yolo",
+      "snippet": "ur10e_moveit_yolo A complete pick-and-place pipeline for a UR10e arm + Robotiq 2F-140 gripper simulated in NVIDIA Isaac Sim, driven by ROS 2 Jazzy + MoveIt 2, with YOLO object detection from an overhead camera."
+    }
+  ]
+}

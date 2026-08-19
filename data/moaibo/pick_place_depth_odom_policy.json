@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MoAIBo/pick_place_depth_odom_policy",
+  "slug": "moaibo-pick_place_depth_odom_policy",
+  "author": "MoAIBo",
+  "url": "https://huggingface.co/MoAIBo/pick_place_depth_odom_policy",
+  "created_at": "2026-08-19T12:01:41.000Z",
+  "updated_at": "2026-08-19T12:02:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:MoAIBo/pick_place_depth_odom",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906734752,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MoAIBo (Yaseen) - Hugging Face",
+      "url": "https://huggingface.co/MoAIBo/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 14 days ago ... published a model 14 days ago"
+    },
+    {
+      "title": "MoAIBo/pick_place_merged_policy · Hugging Face",
+      "url": "https://huggingface.co/MoAIBo/pick_place_merged_policy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sharing the latest Model Spec - OpenAI",
+      "url": "https://openai.com/index/sharing-the-latest-model-spec/",
+      "snippet": "We&#x27;re sharing a major update to the Model Spec, a document which defines how we want our AI models to behave. This update reinforces our commitments to customizability, transparency, and intellectual freedom to explore, debate, and create with AI without arbitrary restrictions—while ensuring that guardrails remain in place to reduce the risk of real harm. It builds on the foundations we ..."
+    },
+    {
+      "title": "Model Spec (2024/05/08) - OpenAI",
+      "url": "https://cdn.openai.com/spec/model-spec-2024-05-08.html",
+      "snippet": "May 08, 2024 Overview This is the first draft of the Model Spec, a document that specifies desired behavior for our models in the OpenAI API and ChatGPT. It includes a set of core objectives, as well as guidance on how to deal with conflicting objectives or instructions. Our intention is to use the Model Spec as guidelines for researchers and data labelers to create data as part of a technique ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

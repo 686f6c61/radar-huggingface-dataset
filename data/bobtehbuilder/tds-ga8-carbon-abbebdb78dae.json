@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bobtehbuilder/tds-ga8-carbon-abbebdb78dae",
+  "slug": "bobtehbuilder-tds-ga8-carbon-abbebdb78dae",
+  "author": "bobtehbuilder",
+  "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-abbebdb78dae",
+  "created_at": "2026-08-19T17:36:13.000Z",
+  "updated_at": "2026-08-19T17:36:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GA8 Card Model Instructions: AI Chat & PDF Access | Manualzz",
+      "url": "https://manualzz.com/doc/81045911/bob-s-card-models-gippsland-airvan-ga8-quick-start-manual",
+      "snippet": "Get detailed instructions for building Bob&#x27;s Card Models GA8. Access AI for help & download the PDF manual. Build your Gippsland Airvan GA8 card model!"
+    },
+    {
+      "title": "GitHub - 24f1000999/tds-2025-ga8",
+      "url": "https://github.com/24f1000999/tds-2025-ga8",
+      "snippet": "Contribute to 24f1000999/tds-2025-ga8 development by creating an account on GitHub."
+    },
+    {
+      "title": "uditaab/IITM_TDS_GA8 - GitHub",
+      "url": "https://github.com/uditaab/IITM_TDS_GA8",
+      "snippet": "Repo to store all the required files for GA8 of TDS. - uditaab/IITM_TDS_GA8"
+    },
+    {
+      "title": "GippsAero GA8 Airvan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GippsAero_GA8_Airvan",
+      "snippet": "The GippsAero GA8 Airvan is a single-engined utility aircraft manufactured by GippsAero (formerly named Gippsland Aeronautics) of Victoria, Australia. It can seat up to eight people, including the pilot."
+    },
+    {
+      "title": "GA8 Field Backpack 3D Digital Model",
+      "url": "https://cults3d.com/en/3d-model/game/ga8-field-backpack-3d-digital-model",
+      "snippet": "Download this OBJ Model for 3D printer made by zjjj927. You can adjust the proportions you want. I hope you like my work. If you have any questions, please pay attention. I will answer you as soon as I see the information."
+    }
+  ]
+}

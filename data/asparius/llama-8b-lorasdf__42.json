@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "asparius/llama-8B-lorasdf__42",
+  "slug": "asparius-llama-8b-lorasdf__42",
+  "author": "asparius",
+  "url": "https://huggingface.co/asparius/llama-8B-lorasdf__42",
+  "created_at": "2026-08-19T18:14:46.000Z",
+  "updated_at": "2026-08-19T19:43:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:meta-llama/Meta-Llama-3-8B",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185049770,
+  "storage_human": "185 MB",
+  "base_model": "meta-llama/Meta-Llama-3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asparius/Llama3-8b-openrlhf-rloo-kl0 · Hugging Face",
+      "url": "https://huggingface.co/asparius/Llama3-8b-openrlhf-rloo-kl0",
+      "snippet": "asparius / Llama3-8b-openrlhf-rloo-kl0 like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 266k params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "asparius/Llama3-8b-openrlhf-rloo · Hugging Face",
+      "url": "https://huggingface.co/asparius/Llama3-8b-openrlhf-rloo",
+      "snippet": "asparius / Llama3-8b-openrlhf-rloo like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 266k params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Best 8B Parameter Models in 2026 — Small Models, Big Results",
+      "url": "https://www.aimadetools.com/blog/best-8b-parameter-models-2026/",
+      "snippet": "The best ~8B parameter AI models you can run on any laptop. Compared on quality, speed, RAM usage, and best use cases. All runnable via Ollama."
+    }
+  ]
+}

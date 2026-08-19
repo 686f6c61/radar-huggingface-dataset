@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bobtehbuilder/tds-ga8-carbon-7ddcb54dc57b",
+  "slug": "bobtehbuilder-tds-ga8-carbon-7ddcb54dc57b",
+  "author": "bobtehbuilder",
+  "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-7ddcb54dc57b",
+  "created_at": "2026-08-19T16:57:00.000Z",
+  "updated_at": "2026-08-19T16:57:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bob builder toys 3d models - Page 1 | STLFinder",
+      "url": "https://www.stlfinder.com/3dmodels/bob-builder-toys/",
+      "snippet": "bob builder toys 3d models 69504 3d models found related to bob builder toys."
+    },
+    {
+      "title": "uditaab/IITM_TDS_GA8 - GitHub",
+      "url": "https://github.com/uditaab/IITM_TDS_GA8",
+      "snippet": "Repo to store all the required files for GA8 of TDS. - uditaab/IITM_TDS_GA8"
+    },
+    {
+      "title": "GitHub - 24f1000999/tds-2025-ga8",
+      "url": "https://github.com/24f1000999/tds-2025-ga8",
+      "snippet": "Contribute to 24f1000999/tds-2025-ga8 development by creating an account on GitHub."
+    },
+    {
+      "title": "GA8 Airvan TC320 (3D printing) files - 3D CAD Model Library | GrabCAD",
+      "url": "https://grabcad.com/library/ga8-airvan-tc320-3d-printing-1/files",
+      "snippet": "Alex Borgas May 10th, 2019 Files (15) Likes (6) GA8 Airvan TC320 (3D printing) GA8 Airvan TC320 (3D printing) / MVIMG_20210102_181700.jpg jpg January 2nd, 2021"
+    },
+    {
+      "title": "GA8 Card Model Instructions: AI Chat & PDF Access | Manualzz",
+      "url": "https://manualzz.com/doc/81045911/bob-s-card-models-gippsland-airvan-ga8-quick-start-manual",
+      "snippet": "Get detailed instructions for building Bob&#x27;s Card Models GA8. Access AI for help & download the PDF manual. Build your Gippsland Airvan GA8 card model!"
+    }
+  ]
+}

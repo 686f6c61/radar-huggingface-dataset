@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "samcontactooficial/hrms",
+  "slug": "samcontactooficial-hrms",
+  "author": "samcontactooficial",
+  "url": "https://huggingface.co/samcontactooficial/hrms",
+  "created_at": "2026-08-19T15:51:36.000Z",
+  "updated_at": "2026-08-19T15:51:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Hidden Drivers of HRM&#x27;s Performance on ARC-AGI",
+      "url": "https://arcprize.org/blog/hrm-analysis",
+      "snippet": "The Hierarchical Reasoning Model, published by Sapient, a Singapore-based AI research lab, is said to be inspired by the hierarchical and multi-time scale processing of the human brain. HRM is a 27M parameter model that uses iterative refinement over a few short \"thinking\" bursts. Each burst produces:"
+    },
+    {
+      "title": "AI at Meta: Meta AI Products, Models and Research",
+      "url": "https://ai.meta.com/",
+      "snippet": "Explore AI at Meta. Use Meta AI to answer questions, create images, and complete tasks for free. Plus AI research, models, and tools for developers."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://contacts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    }
+  ]
+}

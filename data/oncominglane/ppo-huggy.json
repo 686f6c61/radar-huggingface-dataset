@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "oncominglane/ppo-Huggy",
+  "slug": "oncominglane-ppo-huggy",
+  "author": "oncominglane",
+  "url": "https://huggingface.co/oncominglane/ppo-Huggy",
+  "created_at": "2026-08-19T14:05:44.000Z",
+  "updated_at": "2026-08-19T14:05:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187487687,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kev3010/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/Kev3010/ppo-Huggy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PPO - Huggy Open Source Model - Free Deployment for Precise Control of ...",
+      "url": "https://model.aibase.com/models/details/1915692708011859969",
+      "snippet": "This model is trained using the PPO algorithm in deep reinforcement learning to control the virtual dog Huggy in completing specific tasks, such as interactive behaviors like fetching sticks."
+    },
+    {
+      "title": "Bear-ai/ppo-Huggy · Hugging Face",
+      "url": "https://huggingface.co/Bear-ai/ppo-Huggy",
+      "snippet": "ppo Agent playing Huggy This is a trained model of a ppo agent playing Huggy using the Unity ML-Agents Library."
+    },
+    {
+      "title": "chandrasutrisnotjhong/ppo-Huggy - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/244350",
+      "snippet": "If the environment is part of ML-Agents official environments, go to https://huggingface.co/unity Step 1: Find your model_id: chandrasutrisnotjhong/ppo-Huggy Step 2: Select your .nn /.onnx file Click on Watch the agent play 👀"
+    },
+    {
+      "title": "AminVilan/RL-PPO-Huggy - GitHub",
+      "url": "https://github.com/AminVilan/RL-PPO-Huggy",
+      "snippet": "A Proximal Policy Optimization (PPO) agent trained to play the **Huggy** Unity ML-Agents environment. - AminVilan/RL-PPO-Huggy"
+    }
+  ]
+}

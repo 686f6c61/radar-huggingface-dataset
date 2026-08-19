@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "voves/Mellum2-12B-A2.5B-Thinking-FP8",
+  "slug": "voves-mellum2-12b-a2-5b-thinking-fp8",
+  "author": "voves",
+  "url": "https://huggingface.co/voves/Mellum2-12B-A2.5B-Thinking-FP8",
+  "created_at": "2026-07-17T20:57:34.000Z",
+  "updated_at": "2026-08-19T14:27:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mellum",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:JetBrains/Mellum2-12B-A2.5B-Thinking",
+    "base_model:quantized:JetBrains/Mellum2-12B-A2.5B-Thinking",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 12609229544,
+  "storage_human": "12.6 GB",
+  "base_model": "JetBrains/Mellum2-12B-A2.5B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "voves/Mellum2-12B-A2.5B-Thinking-FP8 · Hugging Face",
+      "url": "https://huggingface.co/voves/Mellum2-12B-A2.5B-Thinking-FP8",
+      "snippet": "We compared BF16 and FP8 weights of Mellum2-12B-A2.5B-Thinking across four evaluation suites covering 134 prompts and 80 functional tests. Across logit-level, distribution-level, perplexity, and generative metrics, the FP8 variant matches the BF16 baseline within statistical noise:"
+    },
+    {
+      "title": "Mellum2 - a voves Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/voves/mellum2",
+      "snippet": "updated about 9 hours ago. Compressed versions of JetBrains Mellum2. Upvote . Sort: Collection. voves/Mellum2-12B-A2.5B-Thinking-FP8"
+    },
+    {
+      "title": "Mellum2-12B-A2.5B-Thinking: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mellum2-12b-a2.5b-thinking-jetbrains",
+      "snippet": "Overview Mellum2-12B-A2.5B-Thinking is a reasoning-augmented language model built by JetBrains that emits explicit chain-of-thought reasoning before generating final answers. The model uses a Mixture-of-Experts architecture with 64 experts and activates 8 experts per token, resulting in 2.5B active parameters despite 12B total parameters. It combines sliding-window and full attention layers ..."
+    },
+    {
+      "title": "Mellum2-12B-A2.5B-Thinking · Models",
+      "url": "https://www.modelscope.cn/models/JetBrains/Mellum2-12B-A2.5B-Thinking",
+      "snippet": "Mellum2 Thinking Highlights Mellum 2 Thinking is a post-trained reasoning-augmented assistant model trained by JetBrains. The model uses a Mixture-of-Experts architecture with 64 experts and activates 8 experts per token. It uses a combination of sliding-window and full attention layers, with a context length of 131,072 tokens. It is produced from Mellum2-12B-A2.5B-Base by supervised fine ..."
+    },
+    {
+      "title": "JetBrains/Mellum2-12B-A2.5B-Thinking | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/JetBrains/Mellum2-12B-A2.5B-Thinking",
+      "snippet": "JetBrains/ Mellum2-12B-A2.5B-Thinking JetBrains&#x27; reasoning-augmented code MoE (12B total / 2.5B active) that emits explicit <think> chains for debugging, planning, and agentic coding 69.9 LiveCodeBench v6, 58.4 AIME — fits on a single GPU"
+    }
+  ]
+}

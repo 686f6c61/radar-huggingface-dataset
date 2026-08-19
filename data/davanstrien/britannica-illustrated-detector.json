@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "davanstrien/britannica-illustrated-detector",
+  "slug": "davanstrien-britannica-illustrated-detector",
+  "author": "davanstrien",
+  "url": "https://huggingface.co/davanstrien/britannica-illustrated-detector",
+  "created_at": "2026-08-19T13:29:10.000Z",
+  "updated_at": "2026-08-19T13:29:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7517634,
+  "parameters_human": "7.5M",
+  "storage_bytes": 30103488,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davanstrien/encyclopaedia_britannica_illustrated-dots-ocr · Datasets at ...",
+      "url": "https://huggingface.co/datasets/davanstrien/encyclopaedia_britannica_illustrated-dots-ocr",
+      "snippet": "Datasets: davanstrien / encyclopaedia_britannica_illustrated-dots-ocr like 0 Modalities: Image Text Formats: parquet Size: < 1K Tags: ocr document-processing dots-ocr multilingual markdown uv-script + 1 Libraries: Datasets pandas Croissant + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1 ..."
+    },
+    {
+      "title": "Encyclopedia Britannica | Britannica",
+      "url": "https://www.britannica.com/",
+      "snippet": "Explore the fact-checked online encyclopedia from Encyclopaedia Britannica with hundreds of thousands of objective articles, biographies, videos, and images from experts."
+    },
+    {
+      "title": "davanstrien (Daniel van Strien) · GitHub",
+      "url": "https://github.com/davanstrien",
+      "snippet": "Machine Learning Librarian @huggingface . davanstrien has 203 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "davanstrien (Daniel van Strien) - Hugging Face",
+      "url": "https://huggingface.co/davanstrien",
+      "snippet": "Machine Learning Librarian Recent Hub datasets of video game gameplay (frames/video + actions, replays, trajectories) for imitation learning and game-playing agents."
+    },
+    {
+      "title": "About Britannica AI",
+      "url": "https://www.britannica.com/about-britannica-ai",
+      "snippet": "About Britannica AI Britannica AI answers your questions with information and insights from our wide-ranging collection of articles. For generations, knowledge-seekers have turned to Britannica for answers they can trust. Britannica AI offers a new way to engage with Britannica-created content. How It Works Britannica AI includes unique features to improve accuracy and relevance: On Topic ..."
+    }
+  ]
+}

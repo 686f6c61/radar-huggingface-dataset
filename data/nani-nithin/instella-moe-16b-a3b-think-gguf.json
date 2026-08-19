@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "NANI-Nithin/Instella-MoE-16B-A3B-Think-GGUF",
+  "slug": "nani-nithin-instella-moe-16b-a3b-think-gguf",
+  "author": "NANI-Nithin",
+  "url": "https://huggingface.co/NANI-Nithin/Instella-MoE-16B-A3B-Think-GGUF",
+  "created_at": "2026-08-19T09:07:02.000Z",
+  "updated_at": "2026-08-19T12:44:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "text-generation",
+    "reasoning",
+    "mixture-of-experts",
+    "moe",
+    "instella",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15862789248,
+  "parameters_human": "15.86B",
+  "storage_bytes": 176685291872,
+  "storage_human": "176.7 GB",
+  "base_model": "NANI-Nithin/Instella-MoE-16B-A3B-Think",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amd/Instella-MoE-16B-A3B-Think · Hugging Face",
+      "url": "https://huggingface.co/amd/Instella-MoE-16B-A3B-Think",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AMD-AGI/Instella-MoE: Instella MoE is a fully open state-of ...",
+      "url": "https://github.com/AMD-AGI/Instella-MoE",
+      "snippet": "Instella-MoE is a state-of-the-art fully open Mixture-of-Experts (MoE) language model with 16 billion total parameters and 2.8 billion active parameters trained end-to-end from pre-training to RL. Trained from scratch on AMD Instinct™ MI300X and MI325X GPUs using AMD&#x27;s Primus framework, Instella-MoE combines a sparsely activated MoE design with architectural innovations such as Gated Multi ..."
+    },
+    {
+      "title": "Instella-MoE-16B-A3B-Think — ROCmFP4 STRIX GGUF - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Instella-MoE-16B-A3B-Think-ROCmFP4-STRIX-GGUF",
+      "snippet": "For clean reasoning output, apply llamacpp-instella-thinkfix.patch (included). Instella&#x27;s chat template contains no <think> marker and no enable_thinking switch, so llama.cpp&#x27;s differential tag-detection finds nothing and the raw <think> block leaks into message.content."
+    },
+    {
+      "title": "Introducing Instella-MoE: A State-of-the-Art Fully Open Mixture-of ...",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/instella-moe/README.html",
+      "snippet": "Table 1: Instella-MoE-16B-A3B models and training stages. Takeaways # Instella-MoE is a new state-of-the-art fully open Mixture-of-Experts language model developed by AMD, with 16 billion total parameters and 2.8 billion active parameters per token, trained from scratch on AMD Instinct™ MI300X and MI325X GPUs. The Instella-MoE model checkpoint release spans every stage of the model training ..."
+    },
+    {
+      "title": "AMD Releases Instella-MoE-16B-A3B: A Fully Open Mixture-of-Experts LLM ...",
+      "url": "https://www.marktechpost.com/2026/08/01/amd-instella-moe-16b-a3b-fully-open-mixture-of-experts-llm/",
+      "snippet": "AMD released Instella-MoE-16B-A3B, a fully open Mixture-of-Experts language model trained from scratch on Instinct MI300X and MI325X GPUs. The model holds 16B total parameters but activates only 2.8B per token. AMD is publishing weights from every training stage, along with data mixtures, training configs, and inference code."
+    }
+  ]
+}

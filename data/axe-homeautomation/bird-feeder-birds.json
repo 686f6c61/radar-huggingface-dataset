@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "axe-homeautomation/bird-feeder-birds",
+  "slug": "axe-homeautomation-bird-feeder-birds",
+  "author": "axe-homeautomation",
+  "url": "https://huggingface.co/axe-homeautomation/bird-feeder-birds",
+  "created_at": "2026-08-01T16:08:36.000Z",
+  "updated_at": "2026-08-19T13:19:57.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "yolo11",
+    "home-automation",
+    "bird-feeder",
+    "en",
+    "dataset:axe-homeautomation/bird-feeder-birds",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162064660,
+  "storage_human": "162 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ai bird feeder camera sur Amazon - Grandes marques - Amazon.fr®",
+      "url": "https://duckduckgo.com/y.js?ad_domain=amazon.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=8dvKU6PbzypaaVvE498RLmxK1by6WQBLhvRScmV_TKEjBRIHlSDNs5tXcS3Us%2DqQ2crRy9FboOIutM1rbtpH7O3n5lxjmKyaNoJvpIQv2KGebLLaPnpwb%2DiXP6R7KUC_d20dg6TUXykDFpRzug4V_9MP5cas3Lp4k8700V2_SgI.lecvzxbEOw1E1oHQ75qv7Q&rut=4656cecb7a4d5bdf3273d92cadb8a3a50674a95897f13c3cf61a4814ba5381ac&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8ibhWtyZyoUeGcqw1cTzn%2DTVUCUxzSThZ%2DZ0y4wIQSqx6rvg1U2MCkW3E_sockX8Ph0huzxWDWglu3txOnxKInbf1yPVjFRL4anh1Yy6MgEDsVfpeB4oNiS_t9CyWkgsOwAD5Vk85jhnXp30TJ6UZgiOAu0kYs_ke246YFMaeICjtJpmg1GaSGpLr%2D_7F7_BE50sqqFZlSmni7MWUEgjcTPxYmBs%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmZyJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkYWklMmJiaXJkJTJiZmVlZGVyJTJiY2FtZXJhJTI2aW5kZXglM2RhcHMlMjZ0YWclM2RoeWRmcm1zbi0yMSUyNnJlZiUzZHBkX3NsXzc1NGc0bHljb3lfcCUyNmFkZ3JwaWQlM2QxMzYxMTk4MTA2NzEzNTMyJTI2aHZhZGlkJTNkODUwNzUzMDQ5MjY4OTUlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2QxMjYzMjUlMjZodnRhcmdpZCUzZGt3ZC04NTA3NjEyNDI3NDMwNCUzYWxvYy02NiUyNmh5ZGFkY3IlM2QxMTIzN18yMzY2MjcyJTI2bWNpZCUzZDQ5YTRmMGM0NGIwOTMyMGU4MDQxZmMxODhiMGZmOThmJTI2bXNjbGtpZCUzZGU3MTFmZjUwMDlmYzE5NTI1YjY5OTVkNWJiNTdjNzQ3%26rlid%3De711ff5009fc19525b6995d5bb57c747&vqd=4-234612140602043634082923974005846534817&iurl=%7B1%7DIG%3D1D17497B7307437B9D80A033B060A31A%26CID%3D095C79DB32AB686830986E61338D6934%26ID%3DDevEx%2C5037.1",
+      "snippet": "Bonnes affaires sur les Ai bird feeder camera sur Amazon. Des milliers de produits : lisez les avis des clients et trouvez les meilleurs vendeurs."
+    },
+    {
+      "title": "BF002 smart AI recognition bird feeder with wi-fi camera - Pinelake",
+      "url": "https://www.pinelake99.com/products/bf002-smart-bird-feeder-with-wi-fi-camera-193",
+      "snippet": "1080P HD camera with mobile App Control AI bird recognition Bird detection Solar energy power supply Playback function Capture photos and videos for the feather visitors"
+    },
+    {
+      "title": "5 Best AI Bird Feeders for Species Identification",
+      "url": "https://avianenthusiasts.com/best-ai-bird-feeders-for-species-identification/",
+      "snippet": "Nestled among innovative bird feeders, discover the top 5 AI models of 2025 that transform birdwatching—find out which one stands out."
+    },
+    {
+      "title": "PDF AI Bird Feeder Quick Guide",
+      "url": "https://m.media-amazon.com/images/I/C1JTCSu7YmL.pdf",
+      "snippet": "AI Bird Recognition has undergone massive machine learning and uses AI intelligent recognition algorithms to inform you in real time \"what species of bird are coming\", automatically save the bird images/videos data for you, and also provide bird knowledge learning and so on."
+    },
+    {
+      "title": "BirdWatchAI - Automatic Bird Detection & Identification",
+      "url": "https://www.birdwatchai.com/",
+      "snippet": "Transform your backyard into a smart bird sanctuary. BirdWatchAI uses AI to automatically detect, identify, and notify you of bird visitors at your feeders."
+    }
+  ]
+}

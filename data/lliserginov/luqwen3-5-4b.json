@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LLiserginov/Luqwen3.5-4B",
+  "slug": "lliserginov-luqwen3-5-4b",
+  "author": "LLiserginov",
+  "url": "https://huggingface.co/LLiserginov/Luqwen3.5-4B",
+  "created_at": "2026-08-19T12:56:23.000Z",
+  "updated_at": "2026-08-19T12:56:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLiserginov/Luqwen-4B · Hugging Face",
+      "url": "https://huggingface.co/LLiserginov/Luqwen-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation."
+    },
+    {
+      "title": "LLiserginov (Lukyan Liserginov) - Hugging Face",
+      "url": "https://huggingface.co/LLiserginov",
+      "snippet": "Sort: Recently updated LLiserginov/Luqwen2-4B Text Generation • 4B•Updated 4 days ago• 72"
+    },
+    {
+      "title": "Qwen 3.5 (4B) local AI model | LocalClaw",
+      "url": "https://localclaw.io/models/qwen3.5-4b",
+      "snippet": "Qwen 3.5 (4B): 4B local AI model guide with RAM requirements, Q4_K_M quantization, benchmarks, use cases and LM Studio setup."
+    },
+    {
+      "title": "Qwen3.5-4B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen3.5-4B is a 4B dense multimodal model that matches Qwen3-30B on MMLU-Pro and beats GPT-5-Nano on vision benchmarks. Runs on 8GB VRAM, Apache 2.0 licensed, 262K-1M context."
+    }
+  ]
+}

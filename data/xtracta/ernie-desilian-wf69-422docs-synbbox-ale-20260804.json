@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "xtracta/ernie-desilian-wf69-422docs-synbbox-ale-20260804",
+  "slug": "xtracta-ernie-desilian-wf69-422docs-synbbox-ale-20260804",
+  "author": "xtracta",
+  "url": "https://huggingface.co/xtracta/ernie-desilian-wf69-422docs-synbbox-ale-20260804",
+  "created_at": "2026-08-04T23:55:04.000Z",
+  "updated_at": "2026-08-19T12:11:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16603528,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Docs",
+      "url": "https://docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    },
+    {
+      "title": "Document Intelligence That Understands, Not Extracts",
+      "url": "https://xtracta.com/",
+      "snippet": "Xtracta&#x27;s AI Document Intelligence reads, validates and delivers clean data instantly. Automate document processing with no manual touch."
+    },
+    {
+      "title": "Login | Xtracta Support Portal",
+      "url": "https://support.xtracta.com/login?from=%2F",
+      "snippet": "AI Document Processing Extract data from invoices, forms, contracts and more with 99% accuracy"
+    },
+    {
+      "title": "app.xtracta.com",
+      "url": "https://app.xtracta.com/index.php/main/login/index",
+      "snippet": "app.xtracta.com"
+    },
+    {
+      "title": "Xtracta | Home",
+      "url": "https://support.xtracta.com/",
+      "snippet": "AI-powered data extraction software and OCR solutions."
+    }
+  ]
+}

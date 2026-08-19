@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Anoopsingh53/nexai-v1",
+  "slug": "anoopsingh53-nexai-v1",
+  "author": "Anoopsingh53",
+  "url": "https://huggingface.co/Anoopsingh53/nexai-v1",
+  "created_at": "2026-08-07T08:34:32.000Z",
+  "updated_at": "2026-08-19T18:00:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "rag",
+    "en",
+    "hi",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4694495300,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anoopsingh53/nexai-v1 · Hugging Face",
+      "url": "https://huggingface.co/Anoopsingh53/nexai-v1",
+      "snippet": "Anoopsingh53 / nexai-v1 like 0 Text Generation GGUF custom-nexai English Hindi llama-cpp qwen fine-tuned instruction-following rag AI-assistant conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Anoopsingh53/nexai-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/Anoopsingh53/nexai-v1/tree/main",
+      "snippet": "Anoopsingh53 / nexai-v1 like 0 Text Generation GGUF custom-nexai English Hindi llama-cpp qwen fine-tuned instruction-following rag AI-assistant conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - nagyist/nexa-ai-sdk: Run the latest LLMs and VLMs across GPU ...",
+      "url": "https://github.com/nagyist/nexa-ai-sdk",
+      "snippet": "NexaSDK lets you build the smartest and fastest on-device AI with minimum energy. It is a highly performant local inference framework that runs the latest multimodal AI models locally on NPU, GPU, and CPU - across Android, Windows, and Linux devices with a few lines of code. NexaSDK supported latest models weeks or months before anyone else — Qwen3-VL, DeepSeek-OCR, Gemma3n (Vision), and ..."
+    },
+    {
+      "title": "Run Gen AI on Qualcomm chipsets with GenieX (formerly NexaSDK)",
+      "url": "https://www.qualcomm.com/developer/blog/2026/06/geniex-developer-preview",
+      "snippet": "GenieX is an open-source runtime for running Generative AI models on Qualcomm devices with a few lines of code - built by the Nexa AI team, which joined Qualcomm through acquisition earlier this year. This article walks through what&#x27;s included in the Developer Preview and how to run a model across Windows, Android, and Linux."
+    },
+    {
+      "title": "GitHub - nexaiprotocol/nexai_website: NexAI protocol official website",
+      "url": "https://github.com/nexaiprotocol/nexai_website",
+      "snippet": "NexAI Protocol Official Website: Web3 AI Multi-Agent Framework Introduction NexAI Protocol is a decentralized LLM (Large Language Model) intelligent agent generation framework focused on Web3. It enables users to create customizable intelligent agents (Agents) in a simple and efficient manner."
+    }
+  ]
+}

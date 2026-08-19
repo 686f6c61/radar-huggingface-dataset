@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "OsaurusAI/Ornith-1.5-35B-A3B-JANG_6M",
+  "slug": "osaurusai-ornith-1-5-35b-a3b-jang_6m",
+  "author": "OsaurusAI",
+  "url": "https://huggingface.co/OsaurusAI/Ornith-1.5-35B-A3B-JANG_6M",
+  "created_at": "2026-08-19T19:29:19.000Z",
+  "updated_at": "2026-08-19T19:38:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "jang",
+    "ornith-1.5-35b-a3b-jang-6m",
+    "quantized",
+    "apple-silicon",
+    "ornith",
+    "vision",
+    "video",
+    "reasoning",
+    "thinking",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8173589488,
+  "parameters_human": "8.17B",
+  "storage_bytes": 30194883721,
+  "storage_human": "30.2 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5-35B-A3B Benchmarks & Context (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/ornith-1-5-35b-a3b",
+      "snippet": "Ornith-1.5-35B-A3B by Ornith AI ranks #134 of 221 with a public score of 49.27/100. Evidence: Estimated; this profile shows 18 source-displayable benchmark rows."
+    },
+    {
+      "title": "Ornith-1.5 - a ornith-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ornith-ai/ornith-15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 spans three model scales: 397B MoE, 35B MoE and 9B dense. Designed for strong general-purpose intelligence across reasoning, agentic, and coding tasks, Ornith-1.5 achieves state-of-the-art performance among open-source models of comparable size across a broad range of benchmarks."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "OsaurusAI/Ornith-1.0-35B-JANG_4M · Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/Ornith-1.0-35B-JANG_4M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

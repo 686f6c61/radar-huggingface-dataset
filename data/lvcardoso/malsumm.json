@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lvcardoso/Malsumm",
+  "slug": "lvcardoso-malsumm",
+  "author": "lvcardoso",
+  "url": "https://huggingface.co/lvcardoso/Malsumm",
+  "created_at": "2026-08-19T16:59:10.000Z",
+  "updated_at": "2026-08-19T16:59:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - IMScience-PPGINF-PucMinas/MALSumm",
+      "url": "https://github.com/IMScience-PPGINF-PucMinas/MALSumm",
+      "snippet": "The utilized model selection criterion relies on the post-processing of the calculated losses over the training epochs and enables the selection of a well-trained model by indicating the training epoch. To evaluate the trained models of the architecture and automatically select a well-trained model, define the dataset_path in compute_fscores.py and run evaluate_exp.sh. To run this file ..."
+    },
+    {
+      "title": "PDF Memory-Augmented Long Short-Term Memory for Dynamic Video Summarization",
+      "url": "http://sibgrapi.sid.inpe.br/col/sid.inpe.br/sibgrapi/2025/09.12.20.06/doc/cardoso_111_inpe.pdf?linktype=relative&forcehistorybackflag=1&ibiurl.clientinformation.citingitem=sid.inpe.br/sibgrapi/2026/03.20.13.52&parentidentifiercitedby=8JMKD2USNRW34M/4FC6F6S&forcerecentflag=0",
+      "snippet": "This paper introduces a deep recurrent model, so-called Memory-Augmented LSTM for Dynamic Video Summarization - MALSumm, which integrates two novel recurrent blocks: one for retaining essential information and another for learning new temporal patterns (Figure 1)."
+    },
+    {
+      "title": "Multi-scale temporal convolutions in a memory-augmented extended LSTM ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0167865526002515",
+      "snippet": "Table 1 presents the average F-scores achieved by the original model and its extended version, MUSL-MALSumm, in comparison with recent state-of-the-art methods."
+    },
+    {
+      "title": "Memory-Augmented Long Short-Term Memory for Dynamic Video Summarization",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11223357",
+      "snippet": "To address these limitations, we propose the Memory-Augmented LSTM for Dynamic Video Summarization - MALSumm, a supervised architecture based on Extended Long Short-Term Memory (xLSTM) networks that enhances memory capacity through a dual-path design."
+    },
+    {
+      "title": "Memory-Augmented Long Short-Term Memory for Dynamic Video Summarization",
+      "url": "https://www.semanticscholar.org/paper/Memory-Augmented-Long-Short-Term-Memory-for-Dynamic-Cardoso-Soraggi/e722e14f92fdb1a403a30180996c64aac6f00a2e/figure/4",
+      "snippet": "The Memory-Augmented LSTM for Dynamic Video Summarization - MALSumm is proposed, a supervised architecture based on Extended Long Short-Term Memory networks that enhances memory capacity through a dual-path design that integrates weighted memory to evaluate local and global information, allowing the model to preserve fine-grained details while maintaining overall temporal consistency. Expand"
+    }
+  ]
+}

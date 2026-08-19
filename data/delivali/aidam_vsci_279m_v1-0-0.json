@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "DeliVali/AIDAM_VSCI_279M_V1.0.0",
+  "slug": "delivali-aidam_vsci_279m_v1-0-0",
+  "author": "DeliVali",
+  "url": "https://huggingface.co/DeliVali/AIDAM_VSCI_279M_V1.0.0",
+  "created_at": "2026-08-19T18:33:00.000Z",
+  "updated_at": "2026-08-19T18:33:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "deberta-v2",
+    "natural-language-inference",
+    "fact-checking",
+    "scifact",
+    "mdeberta-v3",
+    "multilingual",
+    "scientific-claims",
+    "text-classification",
+    "en",
+    "es",
+    "base_model:MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "base_model:quantized:MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278811651,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1696129960,
+  "storage_human": "1.7 GB",
+  "base_model": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeliVali/AIDAM_VWIKI_279M_V0.1.0 · Hugging Face",
+      "url": "https://huggingface.co/DeliVali/AIDAM_VWIKI_279M_V0.1.0",
+      "snippet": "Part of AIDAM by Jeffrey Romero Del Val — open fact-checking agent; verdicts come from this NLI core plus an auditable aggregator, never from an LLM. Every number above passed pre-registered gates; the full campaign (promotions AND rejections) is in docs/ROADMAP.md. Main production model: AIDAM_VREAL_279M_V0.1.0."
+    },
+    {
+      "title": "DeliVali/AIDAM_VREAL_279M_V0.1.0 · Hugging Face",
+      "url": "https://huggingface.co/DeliVali/AIDAM_VREAL_279M_V0.1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AIDAM/docs at main · DeliVali/AIDAM · GitHub",
+      "url": "https://github.com/DeliVali/AIDAM/tree/main/docs",
+      "snippet": "Open fact-checking agent: live multi-source evidence + a small comparative-logic verifier. Every verdict cites its sources. - AIDAM/docs at main · DeliVali/AIDAM"
+    },
+    {
+      "title": "AIDAM/docs/ARCHITECTURE.md at main · DeliVali/AIDAM · GitHub",
+      "url": "https://github.com/DeliVali/AIDAM/blob/main/docs/ARCHITECTURE.md",
+      "snippet": "AIDAM architecture AIDAM is not a model: it is a compound system where a small specialized model is the core and every other module is deterministic engineering or tooling. This is deliberate — anything that can be solved with code does not spend parameters."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

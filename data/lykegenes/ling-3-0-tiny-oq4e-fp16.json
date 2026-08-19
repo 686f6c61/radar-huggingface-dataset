@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Lykegenes/Ling-3.0-tiny-oQ4e-fp16",
+  "slug": "lykegenes-ling-3-0-tiny-oq4e-fp16",
+  "author": "Lykegenes",
+  "url": "https://huggingface.co/Lykegenes/Ling-3.0-tiny-oQ4e-fp16",
+  "created_at": "2026-08-19T14:59:27.000Z",
+  "updated_at": "2026-08-19T15:01:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "bailing_hybrid",
+    "oq",
+    "quantized",
+    "custom_code",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:quantized:inclusionAI/Ling-3.0-tiny",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1282992288,
+  "parameters_human": "1.28B",
+  "storage_bytes": 4649890725,
+  "storage_human": "4.6 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-works/Ling-3.0-tiny-oQ4e · Hugging Face",
+      "url": "https://huggingface.co/mlx-works/Ling-3.0-tiny-oQ4e",
+      "snippet": "Instructions to use mlx-works/Ling-3.-tiny-oQ4e with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use mlx-works/Ling-3.-tiny-oQ4e with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Ling-3.-tiny-oQ4e mlx-works/Ling-3.-tiny-oQ4e Notebooks Google Colab ..."
+    },
+    {
+      "title": "Ling 3.0 Tiny download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ling-3-0-tiny/",
+      "snippet": "Download Ling 3.0 Tiny for free. Lightweight MoE model for local reasoning, coding, and AI agents. Ling-3.0-tiny is inclusionAI&#x27;s lightweight hybrid reasoning Mixture-of-Experts model, designed to provide capable reasoning and agentic performance at low inference cost. It contains 7.9B total parameters while activating only 1.3B per token, using a hybrid architecture that alternates Kimi ..."
+    },
+    {
+      "title": "Ling 3.0 Tiny - Benchmarks, Pricing & Intelligence Analysis - llmbase.ai",
+      "url": "https://llmbase.ai/models/inclusionai/ling-3-0-tiny/",
+      "snippet": "See benchmark scores, pricing, release timing, and provider details for Ling 3.0 Tiny based on Artificial Analysis data."
+    },
+    {
+      "title": "Ling 3.0 Tiny - crafiq.ai",
+      "url": "https://crafiq.ai/models/language/inclusionai-ling-3-0-tiny-rc2",
+      "snippet": "Compare Ling 3.0 Tiny across intelligence, coding, math, and arena benchmarks, plus context window, parameters, and release details."
+    },
+    {
+      "title": "inclusionAI: Ling 3.0 Tiny (free) - AI Model Details & Be...",
+      "url": "https://benchable.ai/models/inclusionai/ling-3.0-tiny-20260806",
+      "snippet": "Author&#x27;s Description Ling 3.0 Tiny is a mixture-of-experts model from InclusionAI, with 1.3B active parameters out of 7.9B total. It is designed for responsive agents, instruction following, and multi-turn conversations, with switchable..."
+    }
+  ]
+}

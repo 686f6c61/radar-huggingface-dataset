@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Figmapng/bulbul-kazakh-whisper-large-v3-turbo-gguf",
+  "slug": "figmapng-bulbul-kazakh-whisper-large-v3-turbo-gguf",
+  "author": "Figmapng",
+  "url": "https://huggingface.co/Figmapng/bulbul-kazakh-whisper-large-v3-turbo-gguf",
+  "created_at": "2026-08-19T14:03:12.000Z",
+  "updated_at": "2026-08-19T14:08:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "kk"
+  ],
+  "tags": [
+    "gguf",
+    "whisper",
+    "speech-to-text",
+    "kazakh",
+    "bulbul",
+    "kk",
+    "base_model:shyngys879/kazakh-whisper-large-v3-turbo",
+    "base_model:quantized:shyngys879/kazakh-whisper-large-v3-turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808904208,
+  "parameters_human": "808.9M",
+  "storage_bytes": 886381440,
+  "storage_human": "886 MB",
+  "base_model": "shyngys879/kazakh-whisper-large-v3-turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alphaedge-ai/whisper-large-v3-turbo-kaz-16384 · Hugging Face",
+      "url": "https://huggingface.co/alphaedge-ai/whisper-large-v3-turbo-kaz-16384",
+      "snippet": "This model is a 5.61% whisper-large-v3-turbo version of openai/whisper-large-v3-turbo optimized for Kazakh language via vocabulary size reduction using the trimming method. This trimmed model should perform similarly to the original model with only 16,384 tokens and a much smaller memory footprint."
+    },
+    {
+      "title": "shyngys879/kazakh-whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/shyngys879/kazakh-whisper-large-v3-turbo",
+      "snippet": "The model is fine-tuned from openai/whisper-large-v3-turbo on a large-scale cleaned Kazakh ASR mixture containing 841,113 training utterances, approximately 1,500+ hours of Kazakh speech. This is a merged full Transformers model, so it can be loaded directly with transformers using pipeline () or WhisperForConditionalGeneration.from_pretrained ()."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "modelmap",
+      "url": "https://modelmap.cc/",
+      "snippet": "modelmap Paste a Hugging Face model id. Get a living map of the network — no weights downloaded."
+    }
+  ]
+}

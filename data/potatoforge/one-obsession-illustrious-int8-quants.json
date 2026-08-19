@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PotatoForge/One-Obsession-Illustrious-INT8-Quants",
+  "slug": "potatoforge-one-obsession-illustrious-int8-quants",
+  "author": "PotatoForge",
+  "url": "https://huggingface.co/PotatoForge/One-Obsession-Illustrious-INT8-Quants",
+  "created_at": "2026-08-19T15:13:27.000Z",
+  "updated_at": "2026-08-19T15:28:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "illustrious",
+    "quant",
+    "int8",
+    "convrot",
+    "one_obsession",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4764227518,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba drops a laptop AI model days before Meta&#x27;s move",
+      "url": "https://finance.yahoo.com/technology/ai/articles/alibaba-drops-laptop-ai-model-151700499.html",
+      "snippet": "It is quietly attaching a price tag to the flagship model behind it, and that detail says more about where open-source AI is headed than the laptop launch itself."
+    },
+    {
+      "title": "John6666/one-obsession-12illustrious20-sdxl · Hugging Face",
+      "url": "https://huggingface.co/John6666/one-obsession-12illustrious20-sdxl",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OneObsession HybridTheory NoobAi+Illustrious - 01_NoobAi | NoobAI ...",
+      "url": "https://civitai.com/models/2558457/oneobsession-hybridtheory-noobaiillustrious",
+      "snippet": "01: This is NoobAi 70%+Illustrious30% mixed anime model NoobAi for the main body suggested to add style and lora will be richer, not greasy! 正面词 Positive Prompt： masterpiece, best quality, amazing quality,newest,very aesthetic,newest, highres,year 2025, high resolution, excellent, medium resolution, 反义词 Negative Prompt："
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Obsession (Illustrious-XL) - v-pred_v2.0 | NoobAI Checkpoint | Civitai",
+      "url": "https://civitai.com/models/820208/obsession-illustrious-xl",
+      "snippet": "v-pred_v2.0 Carefully Curated Danbooru Dataset (up to September 2025) Base Model: NoobAI-XL (NAI-XL) V-pred-1.0-Version When necessary, please use Rescale CFG with values up to around 0.7 (especially for NSFW content). Quality Tags: very aesthetic > masterpiece > best quality > good quality > normal quality > worst quality If you feel like it, you can support me on Ko-fi. Thank you."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-2bit-MTP",
+  "slug": "automatosx-ax-deepseek-v4-flash-mlx-axq-2bit-mtp",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-2bit-MTP",
+  "created_at": "2026-08-08T11:26:48.000Z",
+  "updated_at": "2026-08-19T15:54:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v4",
+    "apple-silicon",
+    "quantized",
+    "mixed-precision",
+    "axquant",
+    "axq",
+    "development",
+    "deepseek-v4",
+    "2bit",
+    "2-bit",
+    "mtp",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 577,
+  "trending_score": 0,
+  "parameters": 37667336279,
+  "parameters_human": "37.67B",
+  "storage_bytes": 115004133599,
+  "storage_human": "115.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AX-DeepSeek-V4-Flash-MLX-AXQ-2bit - Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-2bit",
+      "snippet": "AutomatosX / AX-DeepSeek-V4-Flash-MLX-AXQ-2bit like 0 Text Generation MLX Safetensors deepseek_v4 apple-silicon quantized mixed-precision axquant axq development deepseek-v4 2bit 2-bit mtp License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "DeepSeek - a AutomatosX Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/AutomatosX/deepseek",
+      "snippet": "DeepSeek V4 Flash AXQ 2/3/4/6-bit and DeepSeek-OCR-2."
+    },
+    {
+      "title": "DeepSeek V4-Flash Setup: API + Local in 12 Steps [2026]",
+      "url": "https://tech-insider.org/how-to-set-up-deepseek-v4-flash-2026/",
+      "snippet": "DeepSeek pushed out V4-Flash&#x27;s \"0731\" release on July 31, 2026, and the update quietly reset expectations for what a budget model can do. The retrained 284B-parameter mixture-of-experts network, with roughly 13B active parameters per token, now beats its own bigger sibling, DeepSeek V4-Pro, on agentic coding benchmarks while charging the same $0.22 per million input tokens and $0.66 per ..."
+    },
+    {
+      "title": "deepseek-v4-flash-2bit-gb10/README.md at main - GitHub",
+      "url": "https://github.com/iggerask/deepseek-v4-flash-2bit-gb10/blob/main/README.md",
+      "snippet": "The plugin + kernels (this repo) are Apache-2.0. The model weights are a derivative of deepseek-ai/DeepSeek-V4-Flash and are governed by that model&#x27;s license — see the model card."
+    },
+    {
+      "title": "DeepSeek V4 Pro & Flash API Models: IDs, Pricing, Limits",
+      "url": "https://deepseekv4.network/models",
+      "snippet": "Compare the official deepseek-v4-pro and deepseek-v4-flash API model IDs, current token pricing, 1M context, output limits, and migration notes."
+    }
+  ]
+}

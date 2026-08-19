@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "shashaank0707/agentdebugger-E3-s123",
+  "slug": "shashaank0707-agentdebugger-e3-s123",
+  "author": "shashaank0707",
+  "url": "https://huggingface.co/shashaank0707/agentdebugger-E3-s123",
+  "created_at": "2026-08-19T09:43:07.000Z",
+  "updated_at": "2026-08-19T15:19:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71355695,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shashaank0707 (Shashaank Jain) - Hugging Face",
+      "url": "https://huggingface.co/shashaank0707",
+      "snippet": "User profile of Shashaank Jain on Hugging Face"
+    },
+    {
+      "title": "agentDebugger (agentDebugger) - Hugging Face",
+      "url": "https://huggingface.co/agentDebugger",
+      "snippet": "Org profile for agentDebugger on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - shasshaank/AgentDebuggerEnv: OpenEnv-compliant AI agent ...",
+      "url": "https://github.com/shasshaank/AgentDebuggerEnv",
+      "snippet": "OpenEnv-compliant AI agent debugging benchmark — Meta + PyTorch + HuggingFace Hackathon - shasshaank/AgentDebuggerEnv"
+    },
+    {
+      "title": "GitHub - ulab-uiuc/AgentDebug",
+      "url": "https://github.com/ulab-uiuc/AgentDebug",
+      "snippet": "Contribute to ulab-uiuc/AgentDebug development by creating an account on GitHub."
+    },
+    {
+      "title": "Interactive Debugging and Steering of Multi-Agent AI Systems",
+      "url": "https://arxiv.org/abs/2503.02068",
+      "snippet": "What challenges do developers face when trying to build and debug these AI agent teams? In formative interviews with five AI agent developers, we identify core challenges: difficulty reviewing long agent conversations to localize errors, lack of support in current tools for interactive debugging, and the need for tool support to iterate on ..."
+    }
+  ]
+}

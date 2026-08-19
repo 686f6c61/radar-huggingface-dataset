@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Ornith-1.5-9B-oQ4e-fp16",
+  "slug": "scottlowry-ornith-1-5-9b-oq4e-fp16",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ4e-fp16",
+  "created_at": "2026-08-19T14:41:32.000Z",
+  "updated_at": "2026-08-19T14:43:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1876724976,
+  "parameters_human": "1.88B",
+  "storage_bytes": 6958195891,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for ornith-ai/Ornith-1.5-9B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:ornith-ai/Ornith-1.5-9B",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree ornith-ai/Ornith-1.5-9B Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc ..."
+    },
+    {
+      "title": "scottlowry (Scott Lowry) - Hugging Face",
+      "url": "https://huggingface.co/scottlowry/models",
+      "snippet": "User profile of Scott Lowry on Hugging Face"
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 spans three model scales: 397B MoE, 35B MoE and 9B dense. Designed for strong general-purpose intelligence across reasoning, agentic, and coding tasks, Ornith-1.5 achieves state-of-the-art performance among open-source models of comparable size across a broad range of benchmarks."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.0 is a self-improving family of open-source models specially for agentic coding tasks. Ornith-1.0 spans the full spectrum, from compact 9B Dense models suitable for edge device deployment to 397B MoE frontier-scale models optimized for maximum performance, with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE."
+    }
+  ]
+}

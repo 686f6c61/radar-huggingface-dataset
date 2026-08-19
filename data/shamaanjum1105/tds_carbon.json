@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shamaanjum1105/tds_carbon",
+  "slug": "shamaanjum1105-tds_carbon",
+  "author": "shamaanjum1105",
+  "url": "https://huggingface.co/shamaanjum1105/tds_carbon",
+  "created_at": "2026-08-19T15:33:52.000Z",
+  "updated_at": "2026-08-19T15:39:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anshusaurav/tds-ga8-carbon-model · Hugging Face",
+      "url": "https://huggingface.co/anshusaurav/tds-ga8-carbon-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "spandanjit2005/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/spandanjit2005/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "GitHub - huggingface/carbon: The home of Carbon Genomic Foundation Model",
+      "url": "https://github.com/huggingface/carbon",
+      "snippet": "The home of Carbon Genomic Foundation Model 🧬. Contribute to huggingface/carbon development by creating an account on GitHub."
+    },
+    {
+      "title": "TDS Simulator: A MATLAB App to model temperature-programmed hydrogen ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0360319924046688",
+      "snippet": "In its first version, TDS Simulator is provided as a MATLAB App, which is made freely available to the community and provides a simple graphical user interface (GUI) to make use of TDS Simulator straightforward. As reported in the present manuscript, the outputs of TDS Simulator have been extensively validated against literature data."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    }
+  ]
+}

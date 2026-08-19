@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "srglcbl/sentimen-ecommerce-indobert",
+  "slug": "srglcbl-sentimen-ecommerce-indobert",
+  "author": "srglcbl",
+  "url": "https://huggingface.co/srglcbl/sentimen-ecommerce-indobert",
+  "created_at": "2026-08-19T17:52:15.000Z",
+  "updated_at": "2026-08-19T17:54:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124443651,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497798148,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Analisis Sentimen E-Commerce IndoBERT | PDF - Scribd",
+      "url": "https://id.scribd.com/document/973881922/Research-Paper-Analisis-Sentimen-Ulasan-Ecommerce-IndoBERT-Distilasi",
+      "snippet": "Penelitian ini mengembangkan sistem analisis sentimen untuk ulasan e-commerce berbahasa Indonesia menggunakan model IndoBERT yang diperingan melalui distilasi pengetahuan. Model student yang dihasilkan memiliki performa mendekati model teacher dengan ukuran yang lebih kecil, sehingga efisien untuk deployment dalam analitik real-time. Hasil menunjukkan bahwa pendekatan ini relevan untuk ..."
+    },
+    {
+      "title": "indolem (IndoLEM) · GitHub",
+      "url": "https://github.com/indolem",
+      "snippet": "Fajri Koto, Afshin, Rahimi, Jey Han Lau, and Timothy Baldwin. IndoLEM and IndoBERT: A Benchmark Dataset and Pre-trained Language Model for Indonesian NLP. In Proceedings of the 28th COLING, December 2020."
+    },
+    {
+      "title": "Sentiment Analysis on Shopee Product Reviews Using IndoBERT",
+      "url": "https://www.researchgate.net/publication/385984873_Sentiment_Analysis_on_Shopee_Product_Reviews_Using_IndoBERT",
+      "snippet": "The IndoBERT model is a model that can be used in NLP technology by utilizing the relationship between each input and output element as well as the weights to be calculated simultaneously."
+    },
+    {
+      "title": "Invoke73/333_sentimen_analisis_ecommerce - GitHub",
+      "url": "https://github.com/Invoke73/333_sentimen_analisis_ecommerce",
+      "snippet": "Proyek ini adalah sistem klasifikasi sentimen ulasan produk e-commerce dalam Bahasa Indonesia menggunakan tiga pendekatan arsitektur: Deep Bidirectional LSTM, IndoBERT, dan IndoRoBERTa. Proyek ini merupakan tugas akhir untuk Praktikum Machine Learning."
+    },
+    {
+      "title": "Analisis Sentimen Ulasan Pengguna E-commerce di Google Play Store ...",
+      "url": "https://ejurnal.seminar-id.com/index.php/bits/article/view/5247",
+      "snippet": "In this study, a sentiment analysis of the products of e-commerce platforms Shopee and Bukalapak is conducted, using the NLP-based IndoBERT (Natural Language Processing) model, which classifies the sentiment of user reviews into three categories: negative, neutral, and positive."
+    }
+  ]
+}

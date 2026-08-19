@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yeajongcheol/nir-yolo-fusion",
+  "slug": "yeajongcheol-nir-yolo-fusion",
+  "author": "yeajongcheol",
+  "url": "https://huggingface.co/yeajongcheol/nir-yolo-fusion",
+  "created_at": "2026-08-19T17:19:28.000Z",
+  "updated_at": "2026-08-19T17:24:49.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "pytorch",
+    "multimodal",
+    "sensor-fusion",
+    "nir-spectroscopy",
+    "waste-sorting",
+    "recycling",
+    "yolo",
+    "ko",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2809398,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YOLO-Fusion and Internet of Things: Advancing object detection in smart ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1110016824010263",
+      "snippet": "The paper introduces YOLO-Fusion, a deep learning model for smart transportation that enhances object detection by fusing infrared and visible-light images. Using modules like FusionAttention, Dynamic Fusion, and FD Loss, YOLO-Fusion excels in feature representation and detection accuracy, particularly on DroneVehicle and FLIR datasets."
+    },
+    {
+      "title": "YOLO-Fusion and Internet of Things: Advancing object detection in smart ...",
+      "url": "https://www.peeref.com/works/83508240",
+      "snippet": "AI summaries and post-publication reviews of YOLO-Fusion and Internet of Things: Advancing object detection in smart transportation. Understand articles faster and request reprints directly from authors."
+    },
+    {
+      "title": "RGB-IR YOLO combining Modality-Specific Reconstruction and Information ...",
+      "url": "https://ieeexplore.ieee.org/document/10598725",
+      "snippet": "Therefore, this paper introduces RI-YOLO, a new framework for infrared-visible images object detection. Firstly, to retain the inherent advantages of each modality image, we propose G&M-DI, a technique for modality-specific reconstruction and cross-modality information fusion."
+    },
+    {
+      "title": "YOLO-Fusion for Smart Transportation | PDF | Internet Of Things - Scribd",
+      "url": "https://www.scribd.com/document/851187543/2024-AEJ-YOLO-Fusion-and-Internet-of-Things-Advancing-object-detection-in-smart-transportation",
+      "snippet": "This paper presents YOLO-Fusion, a novel deep learning model designed to enhance object detection in smart transportation systems by integrating infrared and visible-light images. It addresses the limitations of traditional algorithms in complex environments and proposes an IoT framework for real-time data collection and processing, improving the efficiency and accuracy of traffic management ..."
+    },
+    {
+      "title": "DMFusion-YOLOv8: A difference-aware modality fusion ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11760-025-05014-6",
+      "snippet": "Object detection with infrared-visible multimodal images mitigates the limitations of single-modality perception and improves recognition in complex environments. However, existing methods often overlook dynamic cross-modal discrepancies, leading to redundant features and cross-modal interference. To address this, we present DMFusion, a YOLOv8-based, process-oriented, feature-level ..."
+    }
+  ]
+}

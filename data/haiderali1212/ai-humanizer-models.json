@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Haiderali1212/ai-humanizer-models",
+  "slug": "haiderali1212-ai-humanizer-models",
+  "author": "Haiderali1212",
+  "url": "https://huggingface.co/Haiderali1212/ai-humanizer-models",
+  "created_at": "2026-08-19T16:10:37.000Z",
+  "updated_at": "2026-08-19T16:35:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "paraphraser",
+    "ai-humanizer",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 3973146248,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Humanizer Ai - a Hugging Face Space by conversantech",
+      "url": "https://huggingface.co/spaces/conversantech/humanizer-ai",
+      "snippet": "Paste the AI‑generated passage you want to improve, set how much human‑like tweaking you prefer, and the tool rewrites the text. It adds casual starters, contractions, varied sentence structures an..."
+    },
+    {
+      "title": "GitHub - Firdavs-coder/ai_humanizer: AI Humanizer - Prompt Model ...",
+      "url": "https://github.com/Firdavs-coder/ai_humanizer",
+      "snippet": "AI Text Humanizer is a Streamlit-based web application that transforms AI-generated text into more natural, human-like writing using the phi3 language model and advanced text processing techniques."
+    },
+    {
+      "title": "GitHub - dixon2004/ai-humanizer: AI Humanizer is a free, open-source ...",
+      "url": "https://github.com/dixon2004/ai-humanizer",
+      "snippet": "AI Humanizer Overview AI Humanizer is a free, open-source tool that transforms AI-generated text into language that reads naturally and authentically. Powered by Google Gemini 2.5 and guided by custom prompt engineering, it refines robotic or overly structured outputs into text with improved tone, rhythm, and clarity."
+    },
+    {
+      "title": "Humanizer Ai - a Hugging Face Space by Nolan0714",
+      "url": "https://huggingface.co/spaces/Nolan0714/humaniser",
+      "snippet": "This application takes formal or AI-generated text and makes it sound more human-like by rephrasing, restructuring sentences, and adding natural language elements. Users provide text input, and the..."
+    },
+    {
+      "title": "AI Humanizer",
+      "url": "https://originality.ai/ai-humanizer",
+      "snippet": "AI writing tools like ChatGPT, Gemini, and Claude are more popular than ever. However, their text can sound robotic and technical. The Originality.ai Free AI Humanizer rewrites AI text and turns it into human-like writing that is undetectable and bypasses many AI detectors — it will still be detectable by the best-in-class Originality.ai AI Checker."
+    }
+  ]
+}

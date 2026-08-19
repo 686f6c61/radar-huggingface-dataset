@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ultimatechris/Ornith-1.5-35B-A3B-EXL3-4bpw",
+  "slug": "ultimatechris-ornith-1-5-35b-a3b-exl3-4bpw",
+  "author": "ultimatechris",
+  "url": "https://huggingface.co/ultimatechris/Ornith-1.5-35B-A3B-EXL3-4bpw",
+  "created_at": "2026-08-19T19:12:45.000Z",
+  "updated_at": "2026-08-19T19:51:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5_moe",
+    "exl3",
+    "quantized",
+    "ornith",
+    "moe",
+    "text-generation",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9869978480,
+  "parameters_human": "9.87B",
+  "storage_bytes": 19823855192,
+  "storage_human": "19.8 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.0-35B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.0-35B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.0-35B-AEON-Ultimate-Uncensored-NVFP4-MTP-GGUF",
+      "url": "https://huggingface.co/williamliao/Ornith-1.0-35B-AEON-Ultimate-Uncensored-NVFP4-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith 1.0 Model 35B",
+      "url": "https://ornith.online/ornith-1-0-model-35b",
+      "snippet": "Ornith 1.0 Model 35B is an Ornith 1.0 coding-agent model for high-value local coding agents. It keeps the 262K-token context window, OpenAI-compatible self-hosting path, and tool-calling workflow described by DeepReinforce."
+    },
+    {
+      "title": "Ornith 1.0 35B A3B VRAM Requirements — GPU Compatibility",
+      "url": "https://willitrunai.com/models/ornith-1.0-35b-a3b",
+      "snippet": "Ornith 1.0 35B A3B (35.099998474121094 B parameters) requires approximately 23.2 GB of VRAM with Q4_K_M quantization. As a Mixture of Experts model with 3B active parameters, it uses less memory than its total parameter count suggests. For the best balance of quality and speed, we recommend hardware with at least 27 GB of VRAM."
+    },
+    {
+      "title": "ornith:35b - ollama.com",
+      "url": "https://ollama.com/library/ornith:35b",
+      "snippet": "Self-Improving Training Framework: Ornith-1.0 employs RL to learn to generate not only solution rollouts, but also the scallfold that drive those rollouts. By jointly optimizing the scaffold and the resulting solution, the model discovers better search trajectories and generates higher-quality solutions."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "datnt114/adaface-onnx",
+  "slug": "datnt114-adaface-onnx",
+  "author": "datnt114",
+  "url": "https://huggingface.co/datnt114/adaface-onnx",
+  "created_at": "2026-08-19T16:40:35.000Z",
+  "updated_at": "2026-08-19T16:55:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "face-recognition",
+    "adaface",
+    "mtcnn",
+    "cpu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176390694,
+  "storage_human": "176 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "GitHub - yakhyo/adaface-onnx: AdaFace: Quality Adaptive Margin for Face ...",
+      "url": "https://github.com/yakhyo/adaface-onnx",
+      "snippet": "ONNX Runtime inference for AdaFace face recognition with SCRFD face detection."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "adaface-neurips/adaface-models · Hugging Face",
+      "url": "https://huggingface.co/adaface-neurips/adaface-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    }
+  ]
+}

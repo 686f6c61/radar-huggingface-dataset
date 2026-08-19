@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sherjahongir/football-object-detection",
+  "slug": "sherjahongir-football-object-detection",
+  "author": "sherjahongir",
+  "url": "https://huggingface.co/sherjahongir/football-object-detection",
+  "created_at": "2026-08-19T14:05:09.000Z",
+  "updated_at": "2026-08-19T14:06:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20299525,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Football Players Detection 3zvbc Dataset by Sherjahongir Tursunmurodov 3",
+      "url": "https://platform.ultralytics.com/sherjahongir-tursunmurodov-3/datasets/football-players-detection-3zvbc",
+      "snippet": "Aerial broadcast footage of professional football matches featuring object detection annotations for players, goalkeepers, referees, and the ball on the pitch."
+    },
+    {
+      "title": "Sher jahongir Tursunmurodov - Computer Vision YOLO Models, Projects ...",
+      "url": "https://platform.ultralytics.com/sherjahongir-tursunmurodov-3?tab=datasets",
+      "snippet": "Aerial broadcast footage of professional football matches featuring object detection annotations for players, goalkeepers, referees, and the ball on the pitch."
+    },
+    {
+      "title": "wisng/Football-Object-Detection - GitHub",
+      "url": "https://github.com/wisng/Football-Object-Detection",
+      "snippet": "Football-Object-Detection Description This project follows the tutorial by Code In a Jiffy in their video Build an AI/ML Football Analysis system with YOLO, OpenCV, and Python. The goal is to build a football analysis system with YOLO and understand more on how to use OpenCV and how to utilize the data obtained."
+    },
+    {
+      "title": "How to Use the football-ai-model Object Detection API",
+      "url": "https://universe.roboflow.com/fahmizultaris/football-ai-model/model/1",
+      "snippet": "Learn how to use the football-ai-model Object Detection API (v1, 2025-04-24 4:13pm), created by fahmizultaris"
+    },
+    {
+      "title": "rezabrati/Football_Object_Detection - GitHub",
+      "url": "https://github.com/rezabrati/Football_object_detection",
+      "snippet": "Football Object Detection This project utilizes advanced AI techniques to detect and analyze football-related objects in images and videos. The solution is designed for applications in sports analytics, video processing, and automated commentary systems."
+    }
+  ]
+}

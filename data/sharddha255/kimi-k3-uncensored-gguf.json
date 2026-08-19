@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Sharddha255/Kimi-K3-Uncensored-GGUF",
+  "slug": "sharddha255-kimi-k3-uncensored-gguf",
+  "author": "Sharddha255",
+  "url": "https://huggingface.co/Sharddha255/Kimi-K3-Uncensored-GGUF",
+  "created_at": "2026-08-19T14:42:39.000Z",
+  "updated_at": "2026-08-19T14:42:39.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "kimi-k3",
+    "moe",
+    "imatrix",
+    "quantized",
+    "abliterated",
+    "uncensored",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2406.11717",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779483135584,
+  "parameters_human": "2779.48B",
+  "storage_bytes": 579511854976,
+  "storage_human": "579.5 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Ryanchen911/Kimi-K3-Uncensored-GGUF at main",
+      "url": "https://huggingface.co/Ryanchen911/Kimi-K3-Uncensored-GGUF/blob/main/README.md",
+      "snippet": "Kimi-K3-Uncensored-GGUF An abliterated GGUF quantization of Kimi K3 (2.8T params / 104B active / 896 experts, top-16), with the refusal direction orthogonalized out of the residual-stream write path."
+    },
+    {
+      "title": "Ryanchen911/Kimi-K3-Uncensored-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Ryanchen911/Kimi-K3-Uncensored-GGUF/tree/main",
+      "snippet": "Ryanchen911 / Kimi-K3-Uncensored-GGUF like 1 Text Generation GGUF English Chinese llama.cpp kimi-k3 Mixture of Experts imatrix quantized abliterated uncensored conversational arxiv:2406.11717 License:kimi-k3 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Kimi K3 - Uncensored AI",
+      "url": "https://uncensored.com/models/kimi-k3",
+      "snippet": "Kimi K3 by Moonshot AI — a 2.8T-parameter open-weight multimodal reasoning model with a 1M-token context, built for complex coding and long-horizon agentic work."
+    },
+    {
+      "title": "[Uncensored LLM Frontier #3] Kimi K3 2.8T ... - note（ノート）",
+      "url": "https://note.com/keity717/n/ndd1ce733779c?hl=en",
+      "snippet": "First, the strongest local uncensored model remains huihui_ai/Qwen3.6-abliterated:35b (a practical local size). Second, we should reaffirm the value of Kimi K3&#x27;s \"being open\" itself—for research freedom, safety evaluation, and educational purposes."
+    },
+    {
+      "title": "README.md · unsloth/Kimi-K3-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/unsloth/Kimi-K3-GGUF/blob/main/README.md",
+      "snippet": "Native Multimodality & Long Context: Kimi K3 understands text, images, and video within the same model, and supports a 1-million-token context window. Open Frontier Weights: We release the full Kimi K3 model weights under the Kimi K3 License, making frontier intelligence openly available for research, deployment, and further innovation. 2."
+    }
+  ]
+}

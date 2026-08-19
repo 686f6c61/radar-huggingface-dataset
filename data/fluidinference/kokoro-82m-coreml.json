@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "FluidInference/kokoro-82m-coreml",
+  "slug": "fluidinference-kokoro-82m-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/kokoro-82m-coreml",
+  "created_at": "2025-09-08T06:19:05.000Z",
+  "updated_at": "2026-08-19T13:57:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "text-to-speech",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 1913,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6266215503,
+  "storage_human": "6.3 GB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FluidInference/kokoro-82m-coreml · Hugging Face",
+      "url": "https://huggingface.co/FluidInference/kokoro-82m-coreml",
+      "snippet": "Based on the original kokoro model, see https://github.com/FluidInference/FluidAudio for inference"
+    },
+    {
+      "title": "FluidInference/kokoro-82m-coreml at main - Hugging Face",
+      "url": "https://huggingface.co/FluidInference/kokoro-82m-coreml/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kokoro Model and Synthesis | FluidInference/FluidAudio | DeepWiki",
+      "url": "https://deepwiki.com/FluidInference/FluidAudio/3.4.1-kokoro-model-and-synthesis",
+      "snippet": "This page documents the `KokoroModel` class and the synthesis pipeline for text-to-speech generation using the Kokoro-82M model. It covers the public API for generating speech audio, the synthesis wor"
+    },
+    {
+      "title": "TTS Manager and KokoroModel | FluidInference/FluidAudio | DeepWiki",
+      "url": "https://deepwiki.com/FluidInference/FluidAudio/3.4.1-tts-manager-and-kokoromodel",
+      "snippet": "TTS Manager and KokoroModel Relevant source files This document describes the TTS model management layer and the KokoroModel class, which provides text-to-speech synthesis using the Kokoro-82M neural TTS model. It covers model initialization, synthesis methods, duration-based model variants (5s/15s), and integration with the CoreML inference pipeline. For information about phonemization and ..."
+    },
+    {
+      "title": "GitHub - FluidInference/FluidAudio: Frontier CoreML audio models in ...",
+      "url": "https://github.com/FluidInference/FluidAudio",
+      "snippet": "FluidAudio - Transcription, Text-to-speech, VAD, Speaker diarization with CoreML Models FluidAudio is a Swift SDK for fully local, low-latency audio AI on Apple devices, with inference offloaded to the Apple Neural Engine (ANE), resulting in less memory and generally faster inference."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hassanmustafa888666/Ultron2.0",
+  "slug": "hassanmustafa888666-ultron2-0",
+  "author": "hassanmustafa888666",
+  "url": "https://huggingface.co/hassanmustafa888666/Ultron2.0",
+  "created_at": "2026-08-19T13:28:57.000Z",
+  "updated_at": "2026-08-19T13:28:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - maharab549/ultron-ai: ULTRON AI - Open Source Manus AI ...",
+      "url": "https://github.com/maharab549/ultron-ai",
+      "snippet": "ULTRON AI - Open Source Manus AI Alternative. General-purpose AI Agent with LM Studio local model support. - maharab549/ultron-ai"
+    },
+    {
+      "title": "GitHub - Arif-ai/Ultron2.0",
+      "url": "https://github.com/Arif-ai/Ultron2.0",
+      "snippet": "Contribute to Arif-ai/Ultron2. development by creating an account on GitHub."
+    },
+    {
+      "title": "Ultron AI — Real-Time AI That Sees, Thinks, and Speaks",
+      "url": "https://live.ultronai.me/",
+      "snippet": "Turn any screen into a live AI narrator powered by vision + voice intelligence. 60fps monitoring, local memory, 50+ LLM models."
+    },
+    {
+      "title": "UltronAI - The World&#x27;s First Retail AI Foundation Model",
+      "url": "https://ultronai.com/",
+      "snippet": "Patented computer vision foundation models for deterministic product identification. 99.55% accuracy across 250K+ SKUs. 8-33× ROI across retail verticals."
+    },
+    {
+      "title": "Ultreon™ 2.0 Software for OCT Intravascular Imaging | Abbott",
+      "url": "https://www.cardiovascular.abbott/int/en/hcp/products/percutaneous-coronary-intervention/intravascular-imaging/ultreon-software/ultreon-2-0.html",
+      "snippet": "Streamlined and intuitive, Ultreon 2.0 Software for OCT Intravascular Imaging helps optimize patient outcomes through automation and an improved workflow."
+    }
+  ]
+}

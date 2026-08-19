@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lukealonso/Kimi-K3-QSRT-K2",
+  "slug": "lukealonso-kimi-k3-qsrt-k2",
+  "author": "lukealonso",
+  "url": "https://huggingface.co/lukealonso/Kimi-K3-QSRT-K2",
+  "created_at": "2026-08-10T17:26:58.000Z",
+  "updated_at": "2026-08-19T04:05:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "kimi_k3",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:finetune:moonshotai/Kimi-K3",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 108,
+  "trending_score": 8,
+  "parameters": 57191006976,
+  "parameters_human": "57.19B",
+  "storage_bytes": 757527330254,
+  "storage_human": "757.5 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukealonso/Kimi-K3-QSRT-K2 · Hugging Face",
+      "url": "https://huggingface.co/lukealonso/Kimi-K3-QSRT-K2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · lukealonso/Kimi-K3-QSRT-K2 at main - Hugging Face",
+      "url": "https://huggingface.co/lukealonso/Kimi-K3-QSRT-K2/blob/main/README.md",
+      "snippet": "lukealonso / Kimi-K3-QSRT-K2 like 4 Model card FilesFiles and versions xet Community Copy to bucket new main Kimi-K3-QSRT-K2 /README.md lukealonso Update README.md 00a1d3d verifiedabout 5 hours ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 339 Bytes"
+    },
+    {
+      "title": "Kimi K3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/kimi-k3",
+      "snippet": "Kimi K3 is Moonshot AI&#x27;s 2.8T-parameter flagship model for long-horizon agentic work, with native vision, always-on reasoning, and a 1M-token context window."
+    },
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Kimi K3 PerceptionBench Kimi K2.6 Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model. The new frontier of intelligence. 2.8T parameters, natively multimodal, 1M-token context — built for long-horizon coding, knowledge work, and deep reasoning."
+    }
+  ]
+}

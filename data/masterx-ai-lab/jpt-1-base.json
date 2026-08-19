@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "MasterX-AI-lab/JPT-1-base",
+  "slug": "masterx-ai-lab-jpt-1-base",
+  "author": "MasterX-AI-lab",
+  "url": "https://huggingface.co/MasterX-AI-lab/JPT-1-base",
+  "created_at": "2026-08-19T15:33:29.000Z",
+  "updated_at": "2026-08-19T16:23:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "qwen3",
+    "safetensors",
+    "Base",
+    "text-generation",
+    "en",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Masterx-AI (M Yasser H) · GitHub",
+      "url": "https://github.com/Masterx-AI/",
+      "snippet": "A graph representing Masterx-AI&#x27;s contributions from August 17, 2025 to August 19, 2026. The contributions are 100% commits, 0% issues, 0% pull requests, 0% code review."
+    },
+    {
+      "title": "GitHub - Masterx-AI/Master-AI · GitHub",
+      "url": "https://github.com/Masterx-AI/Master-AI",
+      "snippet": "Master-AI Hi all, In this repo, you can find useful resources that can help you in the journey of understanding AI and leveraging its applications in various applied fields including: Data Analytics Data Science Machine Learning Deep Learning Computer Vision Cloud Computing Also, we shall also touch upon NLP, Data Engineering & DevOps on a high ..."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://aimodelsindex.com/",
+      "snippet": "Reconcile reviewed live evaluators and source-backed benchmark evidence into one auditable evidence layer, with unavailable catalog sources labeled explicitly."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 397 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 221 ranked models and 397 tracked AI models across 437 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "Best jpt - 1 AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/677162690394966423",
+      "snippet": "Download jpt - free LORA SD 1.5 AI model on TENSOR. N. By user_651220649842516559"
+    }
+  ]
+}

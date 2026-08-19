@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "eye-v/skyle-ai-models",
+  "slug": "eye-v-skyle-ai-models",
+  "author": "eye-v",
+  "url": "https://huggingface.co/eye-v/skyle-ai-models",
+  "created_at": "2026-08-19T13:57:14.000Z",
+  "updated_at": "2026-08-19T13:57:36.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "litert-lm",
+    "mediapipe",
+    "gemma",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4591845376,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skyle Integration Kit for developers | eyeV",
+      "url": "https://www.eyev.de/sik",
+      "snippet": "Unlock unparalleled precision and performance with Skyle&#x27;s cutting-edge AI models. Our proprietary technology ensures accurate, real-time face and feature tracking, enhancing your projects with:"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 218 ranked models and 394 tracked AI models across 437 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "SkyReels V3: Multimodal Video Generation Model - GitHub",
+      "url": "https://github.com/SkyworkAI/SkyReels-V3",
+      "snippet": "Welcome to the SkyReels V3 repository! This is the official release of our flagship video generation model, built upon a unified multimodal in-context learning framework. SkyReels V3 natively supports three core generative capabilities: 1) multi-subject video generation from reference images, 2) video generation guided by audio, and 3) video-to-video generation."
+    },
+    {
+      "title": "Skyle for iPad | MFi Certified Eye Tracking Input",
+      "url": "https://www.eyev.de/skyle-for-ipad",
+      "snippet": "Unlock unparalleled precision and performance with Skyle&#x27;s cutting-edge AI models. Our proprietary technology ensures accurate, real-time face and feature tracking, enhancing your projects with:"
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    }
+  ]
+}

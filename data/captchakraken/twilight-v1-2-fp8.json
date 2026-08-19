@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "CaptchaKraken/Twilight-v1.2-FP8",
+  "slug": "captchakraken-twilight-v1-2-fp8",
+  "author": "CaptchaKraken",
+  "url": "https://huggingface.co/CaptchaKraken/Twilight-v1.2-FP8",
+  "created_at": "2026-08-19T15:10:21.000Z",
+  "updated_at": "2026-08-19T15:44:19.000Z",
+  "license": "captchakraken-source-available-v1.1",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "captcha",
+    "vllm",
+    "computer-vision",
+    "fp8",
+    "compressed-tensors",
+    "quantized",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 13540192333,
+  "storage_human": "13.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · CaptchaKraken/Twilight-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/CaptchaKraken/Twilight-FP8/blob/main/README.md",
+      "snippet": "Quantized: language-model linears at FP8 (channel-wise weights, per-token dynamic activations). The vision tower, the linear-attention projections and the multi-token-prediction head stay bf16 — the same configuration as the FP8-dynamic base this project serves in production, so numerics match what the hosted API runs."
+    },
+    {
+      "title": "CaptchaKraken/Twilight-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/CaptchaKraken/Twilight-FP8/tree/main",
+      "snippet": "CaptchaKraken / Twilight-FP8 like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 captcha vllm computer-vision fp8 compressed-tensors quantized conversational License:captchakraken-source-available-1. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "CaptchaKraken/js/README.md at main · JWriter20/CaptchaKraken",
+      "url": "https://github.com/JWriter20/CaptchaKraken/blob/main/js/README.md",
+      "snippet": "captchakraken The TypeScript browser driver for CaptchaKraken. Hand it a Playwright/Puppeteer Page; it finds the captcha, reads the grid with a fine-tuned Qwen3.5-9B vision model on vLLM, clicks human-like, and verifies through to a token. Full docs — demo videos, accuracy, self-hosting — live in the main repo CaptchaKraken."
+    },
+    {
+      "title": "CaptchaKraken/docs at main · JWriter20/CaptchaKraken · GitHub",
+      "url": "https://github.com/JWriter20/CaptchaKraken/tree/main/docs",
+      "snippet": "🐙 CaptchaKraken — Documentation Everything beyond the project overview, organized into focused guides. Start here. One repo, two published ports — the TypeScript browser driver (npm: captchakraken) and the Python engine (PyPI: captchakraken). ⭐ Star & watch the repo for smaller models, the hosted cloud API, and new puzzle types."
+    },
+    {
+      "title": "Twilight-FP8 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/CaptchaKraken/Twilight-FP8",
+      "snippet": "Deploy Twilight-FP8 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

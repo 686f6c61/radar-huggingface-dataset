@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Rabe3/VoxCPM_mid_najdi",
+  "slug": "rabe3-voxcpm_mid_najdi",
+  "author": "Rabe3",
+  "url": "https://huggingface.co/Rabe3/VoxCPM_mid_najdi",
+  "created_at": "2026-08-19T14:21:30.000Z",
+  "updated_at": "2026-08-19T14:26:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "voxcpm",
+    "safetensors",
+    "text-to-speech",
+    "arabic",
+    "najdi",
+    "saudi",
+    "diacritics",
+    "tashkeel",
+    "ar",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:finetune:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 9537040314,
+  "storage_human": "9.5 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rabe3/vox-loras at main - Hugging Face",
+      "url": "https://huggingface.co/Rabe3/vox-loras/tree/main",
+      "snippet": "Rabe3 / vox-loras like 0 Text-to-Speech VoxCPM Rabe3/saudi-clean-vox Arabic voxcpm2 arabic saudi dialect lora License:cc-by-nc-4. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Rabe3/voxcpm-tashkeel-01 · Hugging Face",
+      "url": "https://huggingface.co/Rabe3/voxcpm-tashkeel-01",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenBMB/VoxCPM: VoxCPM2: Tokenizer-Free TTS for Multilingual ...",
+      "url": "https://github.com/OpenBMB/VoxCPM/",
+      "snippet": "👋 Join our community for discussion and support! Feishu | Discord VoxCPM is a tokenizer-free Text-to-Speech system that directly generates continuous speech representations via an end-to-end diffusion autoregressive architecture, bypassing discrete tokenization to achieve highly natural and expressive synthesis. VoxCPM2 is the latest major release — a 2B parameter model trained on over 2 ..."
+    },
+    {
+      "title": "VoxCPM: Open Source TTS for Creative & Expressive Voices",
+      "url": "https://voxcpm.com/en/",
+      "snippet": "Free, open-source TTS with voice cloning! Create controllable, expressive AI voices in 30+ languages and 48kHz studio-quality audio. Perfect for creators & developers. Try it now!"
+    },
+    {
+      "title": "GitHub - wildminder/ComfyUI-VoxCPM: ComfyUI node for highly expressive ...",
+      "url": "https://github.com/wildminder/ComfyUI-VoxCPM",
+      "snippet": "VoxCPM models speech in a continuous space using a MiniCPM-4 backbone, producing highly expressive speech and accurate zero-shot voice cloning. This node handles model downloading, memory management, and audio processing end-to-end."
+    }
+  ]
+}

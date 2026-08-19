@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "THChou1220/gemma-4-e2b-kinetics384K_FFT",
+  "slug": "thchou1220-gemma-4-e2b-kinetics384k_fft",
+  "author": "THChou1220",
+  "url": "https://huggingface.co/THChou1220/gemma-4-e2b-kinetics384K_FFT",
+  "created_at": "2026-08-19T14:26:05.000Z",
+  "updated_at": "2026-08-19T14:37:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5104297539,
+  "parameters_human": "5.10B",
+  "storage_bytes": 10241020584,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THChou1220/gemma-4-e2b-kinetics54K-SQ_FFT · Hugging Face",
+      "url": "https://huggingface.co/THChou1220/gemma-4-e2b-kinetics54K-SQ_FFT",
+      "snippet": "THChou1220 / gemma-4-e2b-kinetics54K-SQ_FFT like 0 Image-Text-to-Text Transformers Safetensors gemma4 conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "THChou1220/gemma-4-e2b-kinetics54K_FT · Hugging Face",
+      "url": "https://huggingface.co/THChou1220/gemma-4-e2b-kinetics54K_FT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma-4-e2b-kinetics54K_FFT API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/THChou1220/gemma-4-e2b-kinetics54K_FFT",
+      "snippet": "Run gemma-4-e2b-kinetics54K_FFT with FriendliAI inference. Full fine-tune of google/gemma-4-e2b-it on AI-generated video data derived from Kinetics."
+    },
+    {
+      "title": "gemma-4-e2b-kinetics54K-SQ_FFT API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/THChou1220/gemma-4-e2b-kinetics54K-SQ_FFT",
+      "snippet": "Deploy gemma-4-e2b-kinetics54K-SQ_FFT with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

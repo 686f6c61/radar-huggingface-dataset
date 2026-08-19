@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jayiitm/tds-carbon-card",
+  "slug": "jayiitm-tds-carbon-card",
+  "author": "jayiitm",
+  "url": "https://huggingface.co/jayiitm/tds-carbon-card",
+  "created_at": "2026-08-19T12:30:17.000Z",
+  "updated_at": "2026-08-19T12:38:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shyam1504/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shyam1504/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "chandrasekhariitm/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/chandrasekhariitm/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA L40S (4 GPUs) Training Mode: fine-tuning Region: europe-north1 GPU Hours: 90.4h (PUE: 1.15) Total Energy: 145.544 kWh CO₂ Emissions: 17.465 kg CO₂eq"
+    },
+    {
+      "title": "Jayiitm · GitHub",
+      "url": "https://github.com/Jayiitm",
+      "snippet": "GitHub is where Jayiitm builds software. Follow Joined Sep 19, 2024 Block or Report Block or report Jayiitm Block user"
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "Applied Model Card - Applied Model Card | CHAI",
+      "url": "https://www.chai.org/workgroup/applied-model",
+      "snippet": "Applied Model Card documentation, templates, and examples now live on the CHAI Registry. Visit the Registry for the latest resources, a completed example, and guidance on adopting model cards in your organization."
+    }
+  ]
+}

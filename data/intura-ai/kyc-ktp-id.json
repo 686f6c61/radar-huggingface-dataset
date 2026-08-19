@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "intura-ai/kyc-ktp-id",
+  "slug": "intura-ai-kyc-ktp-id",
+  "author": "intura-ai",
+  "url": "https://huggingface.co/intura-ai/kyc-ktp-id",
+  "created_at": "2026-08-19T12:43:46.000Z",
+  "updated_at": "2026-08-19T12:47:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14298067,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KYC procédure - Vérification d identité - Solution KYC",
+      "url": "https://duckduckgo.com/y.js?ad_domain=youtrust.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=G0yvDLeLjEPtvvEQeZCylJCpFZXODnSbvBUVKwrD41BaoorfPPaasLWiNMnlwAq75Vxo0BSGy2C4yO%2DT2khKOaf7wsZjLN%2DcpxemeG62g7NKyeu2vutHw1Qwrqb5A70M7DdAZSpK%2Dsi47HVMVtz4KIOhyKMDmy6knqWbnGgQ%2DvU.o8PbOKvwX1oNOHtSVh5M2g&rut=b6080b565a5a1f105635c28b3f85d8b4699e0e1e3405bb75326bc3fd177bddb0&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8aFpyAmvb4qfNFzHt3_9xOzVUCUyPTS7jyi4vJ8gxUlF0BEpTXtIZ4FmQXOWpQbRpoW7HGPioHnn__3oqQat0ZR1F0OCo0lrSbvhIu5ijw%2DsxFSgL3rUt0I0yqQ50KV%2D6TTCJP6Dm9HaovrLiJ6CvuqcI5lPM%2DvBp60c1Uced9pBjXBfDkRQm7ZXwNMJqAeihOxAk9a6thi0G8V2b1GeEazK4QTk%26u%3DaHR0cHMlM2ElMmYlMmZ5b3V0cnVzdC5jb20lMmZmci1mciUyZmxwJTJmdmVyaWZ5LWt5YyUzZnV0bV90ZXJtJTNka3ljJTI1MjBwcm9jZXNzJTI2dXRtX2NhbXBhaWduJTNkRlItQmluZy1SLVZlcmlmeS1HZW5lcmljJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkcHBjJTI2dXRtX2lkJTNkNjc4OTE0MDI2JTI2aHNhX2FjYyUzZDc0MDQ3ODg3NTclMjZoc2FfY2FtJTNkMjM5NjQ0OTU1NzglMjZoc2FfZ3JwJTNkMTE2MzI4NTI3MDM1MDQ1NiUyNmhzYV9hZCUzZCUyNmhzYV9zcmMlM2RzJTI2aHNhX3RndCUzZGt3ZC03MjcwNjExODIyOTA3MiUzYWxvYy02NiUyNmhzYV9rdyUzZGt5YyUyNTIwcHJvY2VzcyUyNmhzYV9tdCUzZHAlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZDhhZWI3MmVlYTc3ZDE0OTMyNTlmMTg2YjBmMDhlYTVl%26rlid%3D8aeb72eea77d1493259f186b0f08ea5e&vqd=4-219341632783332608490225864034471856121&iurl=%7B1%7DIG%3DF93FC44B13034275AAC5DFC01AABD9E2%26CID%3D2A6FE397D7B86DCF103CF42DD6CF6C7A%26ID%3DDevEx%2C5037.1",
+      "snippet": "Sécurisez vos parcours clients grâce à une vérification d&#x27;identité fiable & automatisée. Réduisez les risques de falsification documentaire"
+    },
+    {
+      "title": "intura-co/intura-ai: intura ai for experimentation llm platform - GitHub",
+      "url": "https://github.com/intura-co/intura-ai",
+      "snippet": "Intura-AI: Intelligent Research and Experimentation AI intura-ai is a Python package designed to streamline Large Language Model (LLM) experimentation and production. It provides tools for logging LLM usage and managing experiment predictions, with seamless LangChain compatibility."
+    },
+    {
+      "title": "AI-KYC Platform - GitHub",
+      "url": "https://github.com/JhashankKumar/ai-kyc-platform",
+      "snippet": "An AI-driven KYC (Know Your Customer) verification system built with free and open-source tools. This platform integrates Next.js (frontend), Django (backend & compliance), and FastAPI (AI microservices) to automate KYC workflows, detect forged documents, and ensure compliance with banking regulations — without expensive SaaS APIs."
+    },
+    {
+      "title": "KYC Documents - Selfie ID + Biometrics | Trulioo",
+      "url": "https://www.trulioo.com/solutions/identity-verification/kyc-documents",
+      "snippet": "KYC Documents uses liveness and face-comparison biometric tests combined with government-issued ID verification of more than 14,000 document types."
+    },
+    {
+      "title": "AI For KYC: Using AI for Smarter Compliance and Automation - Moody&#x27;s",
+      "url": "https://www.moodys.com/web/en/us/kyc/resources/insights/towards-interactive-smart-screening-with-generative-ai-in-kyc-workflows.html",
+      "snippet": "And know your customer (KYC) processes can similarly benefit from GenAI chat-based workflows - providing a natural, human-friendly user experience. With this kind of chat-based AI in a KYC workflow, interactive investigations and intelligent screening of entities becomes possible."
+    }
+  ]
+}

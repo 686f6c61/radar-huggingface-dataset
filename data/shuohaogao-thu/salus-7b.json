@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ShuohaoGao-THU/Salus-7B",
+  "slug": "shuohaogao-thu-salus-7b",
+  "author": "ShuohaoGao-THU",
+  "url": "https://huggingface.co/ShuohaoGao-THU/Salus-7B",
+  "created_at": "2026-08-19T04:45:54.000Z",
+  "updated_at": "2026-08-19T12:15:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "medical",
+    "clinical-reasoning",
+    "diagnosis",
+    "sft",
+    "grpo",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 30462504632,
+  "storage_human": "30.5 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Salus: Strategic Diagnostic Testing for Complex Diagnosis via Multi ...",
+      "url": "https://openreview.net/pdf/538b51a0e48a08ce527cede5ea456d969d21e289.pdf",
+      "snippet": "Our Salus achieves state-of-the-art (SOTA) perfor-mance, demonstrating that a 7B model can outperform prominent open-source models such as DeepSeek-V3.2 and match the performance of GPT-5.2 and Gemini 3 Flash on high-complexity cases."
+    },
+    {
+      "title": "Reproduction: Salus - Strategic Diagnostic Testing for Complex ...",
+      "url": "https://huggingface.co/spaces/bsenst/repro-salus-strategic-diagnostic-testing-for-complex-diagnosis-via-multi-agent-reinforcement-lea",
+      "snippet": "Claim 2: Salus-7B outperforms DeepSeek-V3.2 and achieves performance on par with GPT-5.2 Paper Statement Salus-7B outperforms DeepSeek-V3.2 (71.38%) and achieves performance on par with GPT-5.2 (80.30%) on complex diagnostic test cases. Verification Approach Requires running the official evaluation pipeline with DeepSeek-V3.2, GPT-5.2, and Salus-7B on CompDiag-Bench. Dataset and model weights ..."
+    },
+    {
+      "title": "GitHub - ShuohaoGao/ICML-Salus",
+      "url": "https://github.com/ShuohaoGao/ICML-Salus",
+      "snippet": "The benchmark evaluates medical LLM agents on OSCE-style clinical cases. It supports: Static diagnosis: the model receives the full patient record and returns a diagnosis. Diagnostic test: the model starts from history and physical examination information, requests auxiliary examinations, and then makes a final diagnosis. See benchmark/README.md for detailed usage."
+    },
+    {
+      "title": "Salus: Strategic Diagnostic Testing for Complex Diagnosis via...",
+      "url": "https://openreview.net/forum?id=KPsrOYaU79",
+      "snippet": "Today&#x27;s AI systems can answer many medical exam questions, but they often do poorly in this back-and-forth process: they may stop too early, choose the wrong tests, or miss rare but serious conditions. We build CompDiag-Bench, a testbed that turns complex diagnosis into an interactive task, and Salus, an AI system trained to reason through it."
+    },
+    {
+      "title": "ShuohaoGao - GitHub",
+      "url": "https://github.com/ShuohaoGao/",
+      "snippet": "StuGau. ShuohaoGao has 6 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

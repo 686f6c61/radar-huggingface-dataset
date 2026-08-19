@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "siddhant20/task1",
+  "slug": "siddhant20-task1",
+  "author": "siddhant20",
+  "url": "https://huggingface.co/siddhant20/task1",
+  "created_at": "2026-08-19T12:20:25.000Z",
+  "updated_at": "2026-08-19T13:22:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "change-detection",
+    "object-detection",
+    "document-analysis",
+    "centernet",
+    "siamese",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 570052469,
+  "storage_human": "570 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "siddhant20 (Siddhant Parashar) - Hugging Face",
+      "url": "https://huggingface.co/siddhant20",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 20 days ago ... published a model 20 days ago"
+    },
+    {
+      "title": "GitHub - Siddhant20020/AI-ML-Assessment-Task",
+      "url": "https://github.com/Siddhant20020/AI-ML-Assessment-Task",
+      "snippet": "Contribute to Siddhant20020/AI-ML-Assessment-Task development by creating an account on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    },
+    {
+      "title": "Siddhant Kale Test Task 1 | PDF | Software Engineering | Computing - Scribd",
+      "url": "https://www.scribd.com/document/996444246/Siddhant-Kale-Test-Task-1",
+      "snippet": "Siddhant Kale Test Task 1 Siddhant Kale is tasked with preparing a cloud GPU deployment environment for a heavy AI workload without accessing the TTV repository for the first 11 days. The project involves building infrastructure, creating a base GPU Docker image, and simulating failures, with specific deliverables due each day."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aghosh10/hr-assistant-lora",
+  "slug": "aghosh10-hr-assistant-lora",
+  "author": "aghosh10",
+  "url": "https://huggingface.co/aghosh10/hr-assistant-lora",
+  "created_at": "2026-08-19T17:29:35.000Z",
+  "updated_at": "2026-08-19T17:29:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610812,
+  "storage_human": "144 MB",
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,992 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "GitHub - MeNoodie/NexoraAI: Domain-specific HR AI assistant built with ...",
+      "url": "https://github.com/MeNoodie/NexoraAI",
+      "snippet": "Domain-specific HR AI assistant built with Qwen2.5-1.5B, LoRA/SFT, DPO, and RAG for grounded policy-aware responses. - MeNoodie/NexoraAI"
+    },
+    {
+      "title": "GitHub - sitarama9636/lora-hr-assistant: LoRA HR Assistant is a ...",
+      "url": "https://github.com/sitarama9636/lora-hr-assistant",
+      "snippet": "LoRA HR Assistant is a lightweight, fine-tuned language model built on Falcon-RW-1B using Parameter-Efficient Fine-Tuning (PEFT) via LoRA. It answers human resources-related queries such as leave policies, benefits, and more."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. Lightricks/LTX-2.5-22b-IC-LoRA-Pixel-Spatial-Upscaler"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ilyakam/Geer-Qwen3.8-27B-4-8bit-MLX",
+  "slug": "ilyakam-geer-qwen3-8-27b-4-8bit-mlx",
+  "author": "ilyakam",
+  "url": "https://huggingface.co/ilyakam/Geer-Qwen3.8-27B-4-8bit-MLX",
+  "created_at": "2026-08-15T22:35:07.000Z",
+  "updated_at": "2026-08-15T22:35:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "geer",
+    "coding",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 8140370672,
+  "parameters_human": "8.14B",
+  "storage_bytes": 24198099565,
+  "storage_human": "24.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ilyakam/Geer-Qwen3.8-27B-4-8bit-MLX · Hugging Face",
+      "url": "https://huggingface.co/ilyakam/Geer-Qwen3.8-27B-4-8bit-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ilyakam/Geer-Qwen3.8-27B-4-8bit-MLX at main - Hugging Face",
+      "url": "https://huggingface.co/ilyakam/Geer-Qwen3.8-27B-4-8bit-MLX/tree/main",
+      "snippet": "Instructions to use ilyakam/Geer-Qwen3.8-27B-4-8bit-MLX with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use ilyakam/Geer-Qwen3.8-27B-4-8bit-MLX with MLX:"
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The DeepSWE number is the standout: Qwen3.8-27B more than tripled its predecessor&#x27;s score (13.3 → 42.2) and outperformed Opus 4.6 Max on SWE-bench Pro, QwenSWEBench, CoWorkBench, and LiveCodeBench v6 — despite being a fraction of the size. Independent leaderboards are already matching the model card: datacurve&#x27;s DeepSWE leaderboard lists Qwen3.8-27B at 42.2 and ScaleAI&#x27;s SWE-bench Pro at ..."
+    }
+  ]
+}

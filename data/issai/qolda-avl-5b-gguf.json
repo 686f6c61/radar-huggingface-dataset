@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "issai/Qolda-AVL-5B-GGUF",
+  "slug": "issai-qolda-avl-5b-gguf",
+  "author": "issai",
+  "url": "https://huggingface.co/issai/Qolda-AVL-5B-GGUF",
+  "created_at": "2026-07-30T21:15:59.000Z",
+  "updated_at": "2026-08-19T12:54:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "kk",
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "audio",
+    "vision",
+    "multimodal",
+    "qwen3-vl",
+    "whisper",
+    "kazakh",
+    "image-text-to-text",
+    "kk",
+    "ru",
+    "en",
+    "base_model:issai/Qolda-AVL-5B",
+    "base_model:quantized:issai/Qolda-AVL-5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 24058552128,
+  "storage_human": "24.1 GB",
+  "base_model": "issai/Qolda-AVL-5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "issai/Qolda-AVL-5B · Hugging Face",
+      "url": "https://huggingface.co/issai/Qolda-AVL-5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qolda-AVL - a issai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/issai/qolda-avl",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from issai"
+    },
+    {
+      "title": "Qolda-AVL-5B · Models",
+      "url": "https://www.modelscope.cn/models/issai/Qolda-AVL-5B",
+      "snippet": "Qolda-AVL Qolda-AVL is a 5B audio-vision-language model designed to operate in Kazakh, Russian, and English. The model extends Qwen3-VL with an audio branch built on a fine-tuned Whisper encoder and a dedicated audio projection module. All three modalities are adapted to Kazakh through a staged training pipeline, with the audio branch covering speech recognition, speech translation, audio ..."
+    },
+    {
+      "title": "ISSAI - Institute of Smart Systems and Artificial Intelligence",
+      "url": "https://issai.nu.edu.kz/qolda/",
+      "snippet": "Institute of Smart Systems and Artificial Intelligence announces the launch of Qolda, a new open-source, compact language-vision model designed to make advanced intelligence truly accessible to everyone. Today, state-of-the-art generative AI models such as DeepSeek, KazLLM, and Oylan typically require supercomputing-scale infrastructure, placing them out of reach for most users. Qolda changes ..."
+    },
+    {
+      "title": "IS2AI/ms-swift-Qolda-AVL - GitHub",
+      "url": "https://github.com/IS2AI/ms-swift-Qolda-AVL",
+      "snippet": "Qolda-AVL: Extending a Vision-Language Model with Audio Understanding Qolda-AVL is a custom extension of ms-swift (the ModelScope training/inference framework) that adds an audio branch to the Qwen3-VL model family, turning a Vision-Language Model (VLM) into an Audio-Vision-Language Model (AVL)."
+    }
+  ]
+}

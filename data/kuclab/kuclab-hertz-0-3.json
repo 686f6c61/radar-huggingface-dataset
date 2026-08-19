@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "KucLab/kuclab-hertz-0.3",
+  "slug": "kuclab-kuclab-hertz-0-3",
+  "author": "KucLab",
+  "url": "https://huggingface.co/KucLab/kuclab-hertz-0.3",
+  "created_at": "2026-08-19T19:32:33.000Z",
+  "updated_at": "2026-08-19T19:37:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "cs",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "czech",
+    "stem",
+    "physics",
+    "chemistry",
+    "biology",
+    "mathematics",
+    "lora",
+    "self-distillation",
+    "text-generation",
+    "cs",
+    "en",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 9125825208,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KucLab",
+      "url": "https://kuclab.org/",
+      "snippet": "KucLab HOME A platform that erases censorship and limits. Secure, zero-knowledge, free — AI chat with 140+ models, community forum, and games."
+    },
+    {
+      "title": "AI Model Leaderboard (Live, 2026): Local + Frontier Ranked",
+      "url": "https://localaimaster.com/tools/ai-model-leaderboard",
+      "snippet": "Live AI model ranking — 30 local + frontier models scored on SWE-Bench, MMLU, ARC-AGI, AIME, HumanEval. Claude Opus 4.7 leads; DeepSeek V4 tops local. Free, sortable."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Latest AI Hallucination Rates & Benchmarks for New AI Models August 2026",
+      "url": "https://suprmind.ai/hub/ai-hallucination-rates-and-benchmarks/",
+      "snippet": "Updated August 2026 - AI hallucination rates and benchmarks for latest AI models. New numbers from Vectara, AA-Omniscience, FACTS, 50+ sources and our own data."
+    },
+    {
+      "title": "GitHub - HeartMuLa/heartlib: HeartMuLa Official Repo: The Most Powerful ...",
+      "url": "https://github.com/HeartMuLa/heartlib",
+      "snippet": "This benchmark comprises heterogeneous AI-generated lyrics and tags across diverse languages and genres, providing a rigorous and fair evaluation framework. 🚀 23 Jan. 2026 By leveraging Reinforcement Learning, we have continuously refined our model and are proud to officially release HeartMuLa-RL-oss-3B-20260123."
+    }
+  ]
+}

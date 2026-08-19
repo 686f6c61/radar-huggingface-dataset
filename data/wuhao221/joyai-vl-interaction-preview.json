@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wuhao221/JoyAI-VL-Interaction-Preview",
+  "slug": "wuhao221-joyai-vl-interaction-preview",
+  "author": "wuhao221",
+  "url": "https://huggingface.co/wuhao221/JoyAI-VL-Interaction-Preview",
+  "created_at": "2026-08-19T14:17:31.000Z",
+  "updated_at": "2026-08-19T14:17:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "video-text-to-text",
+    "arxiv:2606.14777",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762485,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JoyAI-VL-Interaction - GitHub",
+      "url": "https://github.com/jd-opensource/JoyAI-VL-Interaction/tree/main",
+      "snippet": "JoyAI-VL-Interaction is an 8B-scale, vision-first interaction model released together with its training recipe, its data, and a complete deployable system — all fully open."
+    },
+    {
+      "title": "jdopensource/JoyAI-VL-Interaction-Preview · Hugging Face",
+      "url": "https://huggingface.co/jdopensource/JoyAI-VL-Interaction-Preview",
+      "snippet": "JoyAI-VL-Interaction The first open, vision-driven real-time interaction model — it watches a live video stream and decides on its own when to speak, stay silent, or delegate. 📄 Paper · 🌐 Project Page & Demos · 💻 GitHub · 🤗 Paper Page"
+    },
+    {
+      "title": "JoyAI-VL-Interaction-Preview - Hugging Face",
+      "url": "https://huggingface.co/spaces/hugging-apps/joyai-vl-interaction",
+      "snippet": "Upload an image or a brief video clip, type a question about what you see, and the app will reply with a clear text answer. It works like a chat, letting you explore visual content with natural lan..."
+    },
+    {
+      "title": "JoyAI-VL-Interaction",
+      "url": "https://joyai-vl-video-future-academy-jd.github.io/JoyAI-VL-Interaction/",
+      "snippet": "So today we&#x27;re releasing JoyAI-VL-Interaction: an 8B-scale, vision-first interaction model, released together with its training recipe, its data, and a complete, deployable system, all fully OPEN. Point a webcam or a livestream at it and it&#x27;s immediately present in the scene, watching and responding in real time."
+    },
+    {
+      "title": "JoyAI-VL-Interaction: Real-Time Vision-Language Interaction Intelligence",
+      "url": "https://arxiv.org/html/2606.14777",
+      "snippet": "First, we release JoyAI-VL-Interaction, an 8B-scale, vision-first VL-interaction model that is proactive by design. The model makes the response decision internally, choosing each second to stay silent, respond, or delegate to a background model, and it excels at vision-triggered responsiveness and time awareness."
+    }
+  ]
+}

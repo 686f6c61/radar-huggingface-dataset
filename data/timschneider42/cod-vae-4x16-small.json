@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TimSchneider42/cod-vae-4x16-small",
+  "slug": "timschneider42-cod-vae-4x16-small",
+  "author": "TimSchneider42",
+  "url": "https://huggingface.co/TimSchneider42/cod-vae-4x16-small",
+  "created_at": "2026-08-19T19:27:08.000Z",
+  "updated_at": "2026-08-19T19:27:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "cod-vae",
+  "languages": [],
+  "tags": [
+    "cod-vae",
+    "3d",
+    "shape-reconstruction",
+    "autoencoder",
+    "vae",
+    "occupancy",
+    "feature-extraction",
+    "arxiv:2503.08737",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144226267,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TimSchneider42/cod-vae-4x16 · Hugging Face",
+      "url": "https://huggingface.co/TimSchneider42/cod-vae-4x16",
+      "snippet": "TimSchneider42 / cod-vae-4x16 like 0 Feature Extraction cod-vae 3d shape-reconstruction autoencoder vae occupancy arxiv:2503.08737 License:mit Model card FilesFiles and versions xet Community Copy to bucket new COD-VAE 4 x 16 Usage Training data Training recipe Held-out reconstruction quality Citation"
+    },
+    {
+      "title": "GitHub - TimSchneider42/cod-vae: Unofficial PyTorch/JAX ...",
+      "url": "https://github.com/TimSchneider42/cod-vae",
+      "snippet": "Unofficial reimplementation of COD-VAE from \"Representing 3D Shapes with 64 Latent Vectors for 3D Diffusion Models\" by In Cho, Youngbeom Yoo, Subin Jeon, and Seon Joo Kim (ICCV 2025). COD-VAE is a 3D shape VAE that compresses a shape into a small set of latent vectors (e.g. 32 x 32) and decodes them back into an occupancy field via a transformer decoder with uncertainty-based token pruning."
+    },
+    {
+      "title": "cod-vae/cod_vae at main · TimSchneider42/cod-vae · GitHub",
+      "url": "https://github.com/TimSchneider42/cod-vae/tree/main/cod_vae",
+      "snippet": "Unofficial PyTorch/JAX reimplementation of COD-VAE, a 3D shape VAE with compact 1D latents (Cho et al., ICCV 2025). - TimSchneider42/cod-vae"
+    },
+    {
+      "title": "cod-vae/README.md at main · TimSchneider42/cod-vae · GitHub",
+      "url": "https://github.com/TimSchneider42/cod-vae/blob/main/README.md",
+      "snippet": "cod-vae: PyTorch/JAX Reimplementation of COD-VAE Unofficial reimplementation of COD-VAE from \"Representing 3D Shapes with 64 Latent Vectors for 3D Diffusion Models\" by In Cho, Youngbeom Yoo, Subin Jeon, and Seon Joo Kim (ICCV 2025). COD-VAE is a 3D shape VAE that compresses a shape into a small set of latent vectors (e.g. 32 x 32) and decodes them back into an occupancy field via a transformer ..."
+    },
+    {
+      "title": "chci-20260813 - SEC.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1299969/000162828026056508/0001628280-26-056508.txt",
+      "snippet": "Leveraging its scalable, asset-light, debt-free business model, Comstock has strategically expanded into large-scale AI and digital infrastructure development and established an active position in one of the real estate industry&#x27;s top-performing segments."
+    }
+  ]
+}

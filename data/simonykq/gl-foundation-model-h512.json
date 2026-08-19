@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "simonykq/gl-foundation-model-h512",
+  "slug": "simonykq-gl-foundation-model-h512",
+  "author": "simonykq",
+  "url": "https://huggingface.co/simonykq/gl-foundation-model-h512",
+  "created_at": "2026-08-19T15:00:59.000Z",
+  "updated_at": "2026-08-19T15:01:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22959616,
+  "parameters_human": "23.0M",
+  "storage_bytes": 91846608,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "simonykq (Simon Yu) - Hugging Face",
+      "url": "https://huggingface.co/simonykq/models",
+      "snippet": "Recent Activity new activityabout 17 hours ago simonykq/gl-foundation-model-demo: Apply for a GPU community grant: Personal project updated a Spaceabout 17 hours ago simonykq/gl-foundation-model-demo published a Spaceabout 17 hours ago simonykq/gl-foundation-model-demo View all activity"
+    },
+    {
+      "title": "Transaction Foundation Model Demo - a Hugging Face Space by simonykq",
+      "url": "https://huggingface.co/spaces/simonykq/gl-foundation-model-demo",
+      "snippet": "NVIDIA Transaction Foundation Model Card-transaction embedding demo Gradio + ZeroGPU Space for NVIDIA&#x27;s ~29M Llama decoder pretrained on TabFormer sequences — domain tokenization, 512-d last-token embeddings, and behavioral similarity scoring. This Space is staged as static until a ZeroGPU community grant is approved."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 397 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 221 ranked models and 397 tracked AI models across 437 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

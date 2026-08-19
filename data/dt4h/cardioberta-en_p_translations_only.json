@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "DT4H/CardioBERTa.en_P_translations_only",
+  "slug": "dt4h-cardioberta-en_p_translations_only",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/CardioBERTa.en_P_translations_only",
+  "created_at": "2026-08-19T18:50:42.000Z",
+  "updated_at": "2026-08-19T19:01:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "feature-extraction",
+    "biomedical",
+    "clinical",
+    "cardiology",
+    "entity-linking",
+    "concept-normalization",
+    "umls",
+    "metric-learning",
+    "en",
+    "base_model:DT4H/CardioBERTa.en",
+    "base_model:finetune:DT4H/CardioBERTa.en",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124645632,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498604904,
+  "storage_human": "499 MB",
+  "base_model": "DT4H/CardioBERTa.en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DT4H/CardioBERTa.en · Hugging Face",
+      "url": "https://huggingface.co/DT4H/CardioBERTa.en",
+      "snippet": "DT4H / CardioBERTa.en like 0 Follow DataTools4Heart 27 PyTorch Safetensors roberta Model card FilesFiles and versions xet Community 1 Copy to bucket new No model card Downloads last month 80 Safetensors Model size 0.1B params Tensor type I64 · F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "DT4H (DataTools4Heart) - Hugging Face",
+      "url": "https://huggingface.co/datasets/DT4H/",
+      "snippet": "Recent Activity janrodriguez new activityabout 1 month ago DT4H/CardioBERTa.en: Adding `safetensors` variant of this model janrodriguez new activityabout 1 month ago DT4H/CardioBERTa.cs: Adding `safetensors` variant of this model janrodriguez new activityabout 1 month ago DT4H/CardioBERTa.it: Adding `safetensors` variant of this model View all ..."
+    },
+    {
+      "title": "The DataTools4Heart Project · GitHub",
+      "url": "https://github.com/DataTools4Heart/",
+      "snippet": "This organization hosts the source code and documentation for all components that power the DataTools4Heart (DT4H) platform — a federated, privacy-preserving cardiology data toolbox developed to enhance health data reusability. Our platform enables secure, decentralized analysis of cardiology data while strictly adhering to ethical, legal, and data protection standards."
+    },
+    {
+      "title": "Home - DataTools4Heart",
+      "url": "https://www.datatools4heart.eu/",
+      "snippet": "Natural Language Processing DataTools4Heart will introduce a multilingual Natural Language Processing (NLP) suite to standardise the structuring of cardiology reports across European regions, including cardiology-specific entity recognition and machine translation. Such suite will include adaptation of 7 language models to the cardiology domain in English, Spanish, Italian, Romanian, Czech ..."
+    },
+    {
+      "title": "A European Health Data Toolbox for Enhancing Cardiology Data ... - CORDIS",
+      "url": "https://cordis.europa.eu/project/id/101057849",
+      "snippet": "DT4H will unlock currently inaccessible health data in unstructured data and allow multi-site federated data use. Together with its toolbox, DT4H will leave the legacy of a federated learning platform with an embedded metadata catalogue and AI virtual assistants, and the CardioSynth open database of synthetic data remaining as available for ..."
+    }
+  ]
+}

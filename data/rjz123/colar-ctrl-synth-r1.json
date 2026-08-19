@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rjz123/colar-ctrl-synth-r1",
+  "slug": "rjz123-colar-ctrl-synth-r1",
+  "author": "rjz123",
+  "url": "https://huggingface.co/rjz123/colar-ctrl-synth-r1",
+  "created_at": "2026-08-19T13:40:13.000Z",
+  "updated_at": "2026-08-19T13:41:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "latent-reasoning",
+    "colar",
+    "research",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124376587,
+  "storage_human": "124 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CanIRun.ai — Can your machine run AI models?",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your hardware and find out which AI models you can run locally. GPU, CPU, and RAM analysis in your browser."
+    },
+    {
+      "title": "ColorCtrl_Code/README.md at main · zxYin/ColorCtrl_Code",
+      "url": "https://github.com/zxYin/ColorCtrl_Code/blob/main/README.md",
+      "snippet": "[ICLR 2026] Official Implementation of \"ColorCtrl: Training-Free Text-Guided Color Editing with Multi-Modal Diffusion Transformer\" - zxYin/ColorCtrl_Code"
+    },
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "snippet": "Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    },
+    {
+      "title": "Synth AI - Sample Logic LLC",
+      "url": "https://www.samplelogic.com/products/synth-ai/",
+      "snippet": "Synth AI is the perfect addition to Sample Logic&#x27;s AI collection. As the name suggests this library is full of great sounding well produced synth sounds that you can use in a zillion different ways thanks to SL&#x27;s powerful quad-core engine."
+    },
+    {
+      "title": "DeepSeek-R1 Overview: Features, Capabilities, Parameters",
+      "url": "https://fireworks.ai/blog/deepseek-r1-deepdive",
+      "snippet": "A deep dive of DeepSeek R1 and its key features, model specs, training setup, licensing, and how to start using it."
+    }
+  ]
+}

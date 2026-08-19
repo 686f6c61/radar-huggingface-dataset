@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "wangyue114514/rwkv7-g1g-13.3b-hf",
+  "slug": "wangyue114514-rwkv7-g1g-13-3b-hf",
+  "author": "wangyue114514",
+  "url": "https://huggingface.co/wangyue114514/rwkv7-g1g-13.3b-hf",
+  "created_at": "2026-08-19T13:18:21.000Z",
+  "updated_at": "2026-08-19T13:23:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rwkv7_native",
+    "text-generation",
+    "rwkv",
+    "rwkv7",
+    "recurrent",
+    "causal-lm",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13269245952,
+  "parameters_human": "13.27B",
+  "storage_bytes": 26538712072,
+  "storage_human": "26.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RemySkye/rwkv7-g1g-13.3b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/RemySkye/rwkv7-g1g-13.3b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rwkv7-g1g-13.3b-20260523-ctx8192.pth · BlinkDL/rwkv7-g1 at main",
+      "url": "https://huggingface.co/BlinkDL/rwkv7-g1/blob/main/rwkv7-g1g-13.3b-20260523-ctx8192.pth",
+      "snippet": "BlinkDL / rwkv7-g1 like 187 Text Generation PyTorch 6 datasets 12 languages causal-lm rwkv License:apache-2.0 Model card FilesFiles and versions xet Community 5 Copy to bucket new main rwkv7-g1 /rwkv7-g1g-13.3b-20260523-ctx8192.pth NeverlandPeter new model bc2b9ee 23 days ago download Copy download link history blame contribute delete Safe pickle"
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    },
+    {
+      "title": "RWKV7-G1g-13.3B-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/shoumenchougou/RWKV7-G1g-13.3B-GGUF",
+      "snippet": "The RWKV7-G1a model is an advanced version of RWKV7-G1 that was further trained with 1T (1 trillion tokens) of high-quality inference and instruction data. RWKV7-G1a2 was produced by continuing to add more data and training on top of RWKV7-G1a."
+    },
+    {
+      "title": "RWKV-Evals",
+      "url": "https://wiki.rwkv.com/basic/RWKV-Evals.html",
+      "snippet": "RWKV-Evals RWKV Evaluation Data presents RWKV&#x27;s performance across various large language model benchmarks, including Uncheatable Eval, MMLU, RULER, and LongBench. Uncheatable Eval Test"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "hotdogs/Qwen3.8-27B-abliterated-cyber-preview",
+  "slug": "hotdogs-qwen3-8-27b-abliterated-cyber-preview",
+  "author": "hotdogs",
+  "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-cyber-preview",
+  "created_at": "2026-08-19T18:54:37.000Z",
+  "updated_at": "2026-08-19T19:15:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "cybersecurity",
+    "offensive-security",
+    "agentic",
+    "tool-calling",
+    "mcp",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:hotdogs/cyber-sft-agent-qwen38",
+    "base_model:hotdogs/Qwen3.8-27B-abliterated",
+    "base_model:finetune:hotdogs/Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55583028367,
+  "storage_human": "55.6 GB",
+  "base_model": "hotdogs/Qwen3.8-27B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hotdogs/Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hotdogs/Qwen3.8-27B-abliterated at main - Hugging Face",
+      "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hotdogs/Qwen3.8-27B-abliterated • hfviewer",
+      "url": "https://hfviewer.com/hotdogs/Qwen3.8-27B-abliterated",
+      "snippet": "Where the model could be executed, the graph is trace-backed; otherwise it is derived from the reviewed configuration and source code. hotdogs/Qwen3.8-27B-abliterated is an image-text-to-text model (qwen3_5_text architecture). It uses 64 transformer layers, a hidden size of 5,120, and 24 query heads with 4 key/value heads (grouped-query attention)."
+    },
+    {
+      "title": "Qwen3.8-27B-abliterated API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/hotdogs/Qwen3.8-27B-abliterated",
+      "snippet": "Run Qwen3.8-27B-abliterated with FriendliAI inference. A training-free abliterated build of Qwen/Qwen3.8-27B — a dense 27B native vision-language model…"
+    },
+    {
+      "title": "Qwen3.8-27B abliterated AWQ-MTP quantization | Todd Wolven",
+      "url": "https://toddwolven.com/projects/qwen38-awq-quantization",
+      "snippet": "W4A16 AWQ quantization of an abliterated Qwen3.8-27B with the MTP speculative-decoding module preserved - method, benchmarks on 2x RTX 3090, and four reproduction traps."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ornith-ai/Ornith-1.5-9B-GGUF",
+  "slug": "ornith-ai-ornith-1-5-9b-gguf",
+  "author": "ornith-ai",
+  "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF",
+  "created_at": "2026-08-19T00:02:44.000Z",
+  "updated_at": "2026-08-19T12:14:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 36,
+  "downloads_30d": 0,
+  "trending_score": 35,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 47834409410,
+  "storage_human": "47.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 spans three model scales: 397B MoE, 35B MoE and 9B dense. Designed for strong general-purpose intelligence across reasoning, agentic, and coding tasks, Ornith-1.5 achieves state-of-the-art performance among open-source models of comparable size across a broad range of benchmarks."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.0-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.0-9B-GGUF",
+      "snippet": "Ornith-1.0-9B is a dense ~9B model (≈19 GB in bf16), so it serves comfortably on a single 80GB GPU. The recipes below stand up an OpenAI-compatible server; add --tensor-parallel-size / --tp if you want to shard across more GPUs."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.0-9B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.0-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.0 is a self-improving family of open-source models specially for agentic coding tasks. Ornith-1.0 spans the full spectrum, from compact 9B Dense models suitable for edge device deployment to 397B MoE frontier-scale models optimized for maximum performance, with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "erne1234/dede",
+  "slug": "erne1234-dede",
+  "author": "erne1234",
+  "url": "https://huggingface.co/erne1234/dede",
+  "created_at": "2026-08-19T12:25:44.000Z",
+  "updated_at": "2026-08-19T12:25:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "erne1234/model · Hugging Face",
+      "url": "https://huggingface.co/erne1234/model",
+      "snippet": "Instructions to use erne1234/model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use erne1234/model with Diffusers:"
+    },
+    {
+      "title": "erne1234 (perne) - Hugging Face",
+      "url": "https://huggingface.co/erne1234",
+      "snippet": "User profile of perne on Hugging Face Recent Activity updated a modelabout 5 hours ago erne1234/Hugging published a modelabout 5 hours ago erne1234/Hugging published a model1 day ago erne1234/amateur View all activity"
+    },
+    {
+      "title": "Announcing the Open Source Release of the ERNIE 4.5 Model Family",
+      "url": "https://ernie.baidu.com/blog/posts/ernie4.5/",
+      "snippet": "ERNIE Bot | GitHub | Hugging Face | BAIDU AI Studio | Technical Report Introduction to ERNIE 4.5 We introduce ERNIE 4.5, a new family of large-scale multimodal models comprising 10 distinct variants. The model family consist of Mixture-of-Experts (MoE) models with 47B and 3B active parameters, with the largest model having 424B total parameters, as well as a 0.3B dense model. For the MoE ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Ernie Bot API Guide 2026: Baidu AI API for Developers",
+      "url": "https://crazyrouter.com/en/blog/ernie-bot-api-guide-2026",
+      "snippet": "Complete guide to Baidu&#x27;s Ernie Bot API — model comparison, setup, code examples in Python and Node.js, pricing, and how it compares to Western AI models."
+    }
+  ]
+}

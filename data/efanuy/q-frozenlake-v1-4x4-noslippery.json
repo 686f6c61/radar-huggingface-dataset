@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "efanuy/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "efanuy-q-frozenlake-v1-4x4-noslippery",
+  "author": "efanuy",
+  "url": "https://huggingface.co/efanuy/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-08-19T12:49:01.000Z",
+  "updated_at": "2026-08-19T12:49:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackForAI/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/JackForAI/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nam194/q-FrozenLake-v1-4x4-noSlippery · Hugging Face",
+      "url": "https://huggingface.co/nam194/q-FrozenLake-v1-4x4-noSlippery",
+      "snippet": "Q-Learning Agent playing1 FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 . Usage"
+    },
+    {
+      "title": "elfray/q-FrozenLake-v1-4x4-noSlippery - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/46604",
+      "snippet": "Q-Learning Agent playing FrozenLake-v1 This is a trained model of a Q-Learning agent playing FrozenLake-v1 ."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "GitHub - AthunSujith/FrozenLake_Qlearning",
+      "url": "https://github.com/AthunSujith/FrozenLake_Qlearning",
+      "snippet": "Successfully navigate the treacherous frozen lake using Reinforcement Learning! This project implements a Q-Learning agent to solve the OpenAI Gym FrozenLake-v1 environment, even with the \"slippery\" setting enabled."
+    }
+  ]
+}

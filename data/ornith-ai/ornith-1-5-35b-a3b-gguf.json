@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+  "slug": "ornith-ai-ornith-1-5-35b-a3b-gguf",
+  "author": "ornith-ai",
+  "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+  "created_at": "2026-08-18T06:38:41.000Z",
+  "updated_at": "2026-08-19T12:31:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 67,
+  "downloads_30d": 0,
+  "trending_score": 67,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 372470110613,
+  "storage_human": "372.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.0-35B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.0-35B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SC117/Ornith-1.0-35B-MTP-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/Ornith-1.0-35B-MTP-APEX-GGUF",
+      "snippet": "Ornith-1.0-35B is a self-improving agentic coding model from DeepReinforce AI, post-trained on top of Qwen3.5 with RL to jointly optimize scaffold generation and solution rollouts."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding Ornith-1.0 is a self-improving family of open-source models specially for agentic coding tasks. Ornith-1.0 spans the full spectrum, from compact 9B Dense models suitable for edge device deployment to 397B MoE frontier-scale models optimized for maximum performance, with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE. It ..."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith 1.0 Model 35B",
+      "url": "https://ornith.online/ornith-1-0-model-35b",
+      "snippet": "Ornith 1.0 Model 35B is an Ornith 1.0 coding-agent model for high-value local coding agents. It keeps the 262K-token context window, OpenAI-compatible self-hosting path, and tool-calling workflow described by DeepReinforce."
+    }
+  ]
+}

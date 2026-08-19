@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "kurdish-tech/kurdish-tokenizer-bpe-32k",
+  "slug": "kurdish-tech-kurdish-tokenizer-bpe-32k",
+  "author": "kurdish-tech",
+  "url": "https://huggingface.co/kurdish-tech/kurdish-tokenizer-bpe-32k",
+  "created_at": "2026-08-19T12:48:10.000Z",
+  "updated_at": "2026-08-19T12:48:11.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "kmr",
+    "ckb",
+    "diq",
+    "ku"
+  ],
+  "tags": [
+    "transformers",
+    "tokenizer",
+    "kurdish",
+    "kurmanji",
+    "sorani",
+    "zazaki",
+    "low-resource",
+    "bpe",
+    "text-generation",
+    "kmr",
+    "ckb",
+    "diq",
+    "ku",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kurdish-tech/kurdish-tokenizer-bpe-64k · Hugging Face",
+      "url": "https://huggingface.co/kurdish-tech/kurdish-tokenizer-bpe-64k",
+      "snippet": "A byte-level BPE tokenizer covering all three major Kurdish varieties in a single vocabulary: Kurmancî (Latin script), Soranî (Arabic script), and Zazakî (Latin script)."
+    },
+    {
+      "title": "haryads/kurdish-bpe-32k · Hugging Face",
+      "url": "https://huggingface.co/haryads/kurdish-bpe-32k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kurdish Technology - GitHub",
+      "url": "https://github.com/Kurdish-Tech/",
+      "snippet": "Kurdish-Tech is an independent, community-driven open-source technology organization dedicated to building modern digital infrastructure for the Kurdish language. We believe that every language deserves a strong digital presence. Our mission is to create high-quality software, linguistic resources, and educational tools that make Kurdish more accessible across modern platforms. Our work is ..."
+    },
+    {
+      "title": "KurdishTech",
+      "url": "https://kurdishtech.com/",
+      "snippet": "Hi, I&#x27;m Mustafa I&#x27;m a full stack developer, and i enjoy coding..."
+    },
+    {
+      "title": "BPE Tokenizer From Scratch | Sebastian Raschka, PhD",
+      "url": "https://sebastianraschka.com/blog/2025/bpe-from-scratch.html",
+      "snippet": "Implements byte pair encoding (BPE) tokenization from scratch: tokenizer training, GPT-style merge rules, and step-by-step Python examples."
+    }
+  ]
+}

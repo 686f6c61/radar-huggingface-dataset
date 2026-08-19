@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hackhackhack66666/aaai27-models",
+  "slug": "hackhackhack66666-aaai27-models",
+  "author": "hackhackhack66666",
+  "url": "https://huggingface.co/hackhackhack66666/aaai27-models",
+  "created_at": "2026-08-19T16:49:46.000Z",
+  "updated_at": "2026-08-19T17:04:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "other",
+  "languages": [],
+  "tags": [
+    "other",
+    "robotics",
+    "oat",
+    "imitation-learning",
+    "robomimic",
+    "metaworld",
+    "robocasa",
+    "benchmark",
+    "latency",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19835838369,
+  "storage_human": "19.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "AI Hacker | Shannon AI",
+      "url": "https://shannon-ai.com/ai-hacker",
+      "snippet": "The most advanced AI hacker tool available. Red team dedicated model for autonomous reconnaissance, exploitation, and post-exploitation with AI-driven hacking capabilities."
+    },
+    {
+      "title": "Aaai-27 - Aaai",
+      "url": "https://aaai.org/conference/aaai/aaai-27/",
+      "snippet": "AAAI-27 We are pleased to announce the Forty-First AAAI Conference on Artificial Intelligence (AAAI-27), which will be held in Montréal, Canada, fr om February 16 to February 23, 2027. The purpose of the AAAI conference series is to promote research in Artificial Intelligence (AI) and foster scientific exchange between researchers, practitioners, scientists, students, and engineers across the ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "hackhackhack66666/close-rc-models · Hugging Face",
+      "url": "https://huggingface.co/hackhackhack66666/close-rc-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

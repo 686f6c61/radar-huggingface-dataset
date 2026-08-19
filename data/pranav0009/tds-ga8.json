@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Pranav0009/tds-ga8",
+  "slug": "pranav0009-tds-ga8",
+  "author": "Pranav0009",
+  "url": "https://huggingface.co/Pranav0009/tds-ga8",
+  "created_at": "2026-08-19T14:14:25.000Z",
+  "updated_at": "2026-08-19T14:15:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anshusaurav/tds-ga8-carbon-model · Hugging Face",
+      "url": "https://huggingface.co/anshusaurav/tds-ga8-carbon-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sneharamanathan (Sneha Ramanathan) - Hugging Face",
+      "url": "https://huggingface.co/sneharamanathan/models",
+      "snippet": "Recent Activity updated a Spaceabout 20 hours ago sneharamanathan/ga8_tds published a Spaceabout 20 hours ago sneharamanathan/ga8_tds updated a Space2 months ago sneharamanathan/ga2-3a567e View all activity"
+    },
+    {
+      "title": "GitHub - vikrantm-iitm/tds-ga8: Graded Assignment solution of the week ...",
+      "url": "https://github.com/vikrantm-iitm/tds-ga8",
+      "snippet": "Graded Assignment solution of the week 8 of the TDS course - vikrantm-iitm/tds-ga8"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    },
+    {
+      "title": "tds-ga8/README.md at main · vikrantm-iitm/tds-ga8 · GitHub",
+      "url": "https://github.com/vikrantm-iitm/tds-ga8/blob/main/README.md",
+      "snippet": "Graded Assignment solution of the week 8 of the TDS course - tds-ga8/README.md at main · vikrantm-iitm/tds-ga8"
+    }
+  ]
+}

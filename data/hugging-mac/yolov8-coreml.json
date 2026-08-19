@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hugging-mac/yolov8-coreml",
+  "slug": "hugging-mac-yolov8-coreml",
+  "author": "hugging-mac",
+  "url": "https://huggingface.co/hugging-mac/yolov8-coreml",
+  "created_at": "2026-08-19T15:10:43.000Z",
+  "updated_at": "2026-08-19T15:12:56.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "coremltools",
+  "languages": [],
+  "tags": [
+    "coremltools",
+    "coreml",
+    "apple-silicon",
+    "yolo",
+    "object-detection",
+    "macos",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:quantized:Ultralytics/YOLOv8",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155602277,
+  "storage_human": "156 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheCluster/YOLOv8-CoreML · Hugging Face",
+      "url": "https://huggingface.co/TheCluster/YOLOv8-CoreML",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ultralytics/YOLOv8 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLOv8",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "GitHub - rballachay/YOLOv8-CoreML: An example running Object Detection ...",
+      "url": "https://github.com/rballachay/YOLOv8-CoreML",
+      "snippet": "ObjectDetection-CoreML supporting models: YOLOv8, YOLOv5, YOLOv3, MobileNetV2+SSDLite This project is Object Detection on iOS with Core ML. If you are interested in iOS + Machine Learning, visit here you can see various DEMOs."
+    },
+    {
+      "title": "ObjectDetection-CoreML - GitHub",
+      "url": "https://github.com/tucan9389/ObjectDetection-CoreML",
+      "snippet": "ObjectDetection-CoreML supporting models: YOLOv8, YOLOv5, YOLOv3, MobileNetV2+SSDLite This project is Object Detection on iOS with Core ML. If you are interested in iOS + Machine Learning, visit here you can see various DEMOs."
+    },
+    {
+      "title": "YOLOv8 - Ultralytics Real-Time Computer Vision Model",
+      "url": "https://yolov8.org/yolov8-ultralytics-real-time-computer-vision-model/",
+      "snippet": "YOLOv8 is a computer vision model family developed by Ultralytics and released in January 2023. It builds on earlier YOLO ideas while introducing a redesigned architecture, improved training workflow, and support for multiple computer vision tasks through the Ultralytics framework."
+    }
+  ]
+}

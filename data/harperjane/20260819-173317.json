@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HarperJane/20260819-173317",
+  "slug": "harperjane-20260819-173317",
+  "author": "HarperJane",
+  "url": "https://huggingface.co/HarperJane/20260819-173317",
+  "created_at": "2026-08-19T17:33:17.000Z",
+  "updated_at": "2026-08-19T17:33:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "qwen3.5-moe",
+    "grpo",
+    "conversational",
+    "base_model:vera6/affine-5g4yy75zuz-t6",
+    "base_model:finetune:vera6/affine-5g4yy75zuz-t6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 70234483877,
+  "storage_human": "70.2 GB",
+  "base_model": "vera6/affine-5g4yy75zuz-t6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HarperJane (Harper) - Hugging Face",
+      "url": "https://huggingface.co/HarperJane",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "HarperJane/20260816-050107 · Hugging Face",
+      "url": "https://huggingface.co/HarperJane/20260816-050107",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "HarperJane/20260815-235822 · Hugging Face",
+      "url": "https://huggingface.co/HarperJane/20260815-235822",
+      "snippet": "HarperJane / 20260815-235822 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    }
+  ]
+}

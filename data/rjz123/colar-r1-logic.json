@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rjz123/colar-r1-logic",
+  "slug": "rjz123-colar-r1-logic",
+  "author": "rjz123",
+  "url": "https://huggingface.co/rjz123/colar-r1-logic",
+  "created_at": "2026-08-19T13:43:23.000Z",
+  "updated_at": "2026-08-19T13:44:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "latent-reasoning",
+    "colar",
+    "research",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124376011,
+  "storage_human": "124 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - xiaomi-research/colar: [NeurIPS 2025] Think Silently, Think ...",
+      "url": "https://github.com/xiaomi-research/colar",
+      "snippet": "[NeurIPS 2025] Think Silently, Think Fast: Dynamic Latent Compression of LLM Reasoning Chains - xiaomi-research/colar"
+    },
+    {
+      "title": "Model Implementations | xiaomi-research/colar | DeepWiki",
+      "url": "https://deepwiki.com/xiaomi-research/colar/5.1-model-implementations",
+      "snippet": "This page provides a comprehensive overview of the core model implementations in the CoLaR system. It covers the two primary model variants: LitCoLaR for compressed latent reasoning and LitCoconut for multi-stage processing, along with their architectural components and training methodologies."
+    },
+    {
+      "title": "GitHub - Unakar/Logic-RL: Reproduce R1 Zero on Logic Puzzle",
+      "url": "https://github.com/Unakar/Logic-RL",
+      "snippet": "Reproduce R1 Zero on Logic Puzzle. Contribute to Unakar/Logic-RL development by creating an account on GitHub."
+    },
+    {
+      "title": "DeepSeek Models Guide: R1, V3, and Coder | InsiderLLM",
+      "url": "https://insiderllm.com/guides/deepseek-models-guide/",
+      "snippet": "DeepSeek made the biggest splash in local AI when R1 dropped in January 2025 — a reasoning model that matched OpenAI&#x27;s o1 on math benchmarks, fully open-source, with distilled versions that run on a single consumer GPU. But DeepSeek has a whole family of models now: R1, V3, V3.1, Coder V2, and more. It&#x27;s confusing."
+    },
+    {
+      "title": "DeepSeek R1 | Advanced Reasoning AI for Complex Problems",
+      "url": "https://deepseeksr1.com/r1/",
+      "snippet": "The Model That Changed Everything. DeepSeek R1 - the open-source reasoning model that matched OpenAI o1, crushed NVIDIA&#x27;s stock price, and proved that frontier-level chain-of-thought AI didn&#x27;t require proprietary infrastructure. Free. MIT licensed. Available to run on your laptop."
+    }
+  ]
+}

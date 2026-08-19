@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "empero-ai/Qwen3.8-2B-Distill-GGUF",
+  "slug": "empero-ai-qwen3-8-2b-distill-gguf",
+  "author": "empero-ai",
+  "url": "https://huggingface.co/empero-ai/Qwen3.8-2B-Distill-GGUF",
+  "created_at": "2026-08-15T18:08:46.000Z",
+  "updated_at": "2026-08-16T01:00:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "gated-deltanet",
+    "edge",
+    "text-generation",
+    "en",
+    "base_model:empero-ai/Qwen3.8-2B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-2B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 40,
+  "downloads_30d": 17828,
+  "trending_score": 39,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 10347336576,
+  "storage_human": "10.3 GB",
+  "base_model": "empero-ai/Qwen3.8-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "empero-ai/Qwen3.8-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-2B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. Latest: Qwen3.8 distilled to 9B / 4B / 2B, and a GDN-aware 27B Ridge GGUF at 11.7 GiB. 1M+ downloads on Hugging Face."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "⚡ Qwen 3.8 Distillations (9B/4B/2B) - GitHub",
+      "url": "https://github.com/47thtechcorner/RayCodes_Qwen3.8Distilled",
+      "snippet": "The Teacher Model (Qwen3.8-2.4T): A massive AI running on multi-million dollar data centers. It generates step-by-step reasoning solutions (\"Chain of Thought\"). The Student Models (9B / 4B / 2B): Smaller models trained directly on the teacher&#x27;s exact reasoning traces."
+    },
+    {
+      "title": "empero-ai/Qwen3.8-2B at main - Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-2B/tree/main",
+      "snippet": "empero-ai / Qwen3.8-2B like 0 Text Generation Transformers Safetensors English qwen3_5 image-text-to-text empero-ai qwen3.5 qwen3.8 distillation reasoning function-calling sft edge conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

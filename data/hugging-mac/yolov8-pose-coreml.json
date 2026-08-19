@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hugging-mac/yolov8-pose-coreml",
+  "slug": "hugging-mac-yolov8-pose-coreml",
+  "author": "hugging-mac",
+  "url": "https://huggingface.co/hugging-mac/yolov8-pose-coreml",
+  "created_at": "2026-08-19T15:24:21.000Z",
+  "updated_at": "2026-08-19T15:26:28.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "coremltools",
+  "languages": [],
+  "tags": [
+    "coremltools",
+    "coreml",
+    "apple-silicon",
+    "yolo",
+    "pose-estimation",
+    "macos",
+    "keypoint-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160282026,
+  "storage_human": "160 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ultralytics/YOLOv8 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLOv8",
+      "snippet": "Ultralytics supports a wide range of YOLO models, from early versions like YOLOv3 to the latest YOLO26. The tables below showcase YOLOv8 models pretrained on COCO for Detection, Segmentation, and Pose Estimation."
+    },
+    {
+      "title": "TheCluster/YOLOv8-CoreML · Hugging Face",
+      "url": "https://huggingface.co/TheCluster/YOLOv8-CoreML",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Sadat75/ultralytics_yolov8_pose: Human pose estimation using ...",
+      "url": "https://github.com/Sadat75/ultralytics_yolov8_pose",
+      "snippet": "Human pose estimation using Yolov8-pose. Contribute to Sadat75/ultralytics_yolov8_pose development by creating an account on GitHub."
+    },
+    {
+      "title": "Are there any Yolov8 Pose model implmentation with coreml?",
+      "url": "https://github.com/ultralytics/ultralytics/issues/13603",
+      "snippet": "Thank you for reaching out and for your interest in using YOLOv8 Pose models with CoreML for your academic research project! It&#x27;s great to hear that you&#x27;ve successfully converted the model to CoreML format. To help you get started with using the YOLOv8 Pose model in an iOS environment, here are some steps and resources that might be useful:"
+    },
+    {
+      "title": "YOLOv8 - Ultralytics Real-Time Computer Vision Model",
+      "url": "https://yolov8.org/yolov8-ultralytics-real-time-computer-vision-model/",
+      "snippet": "YOLOv8 is a computer vision model family developed by Ultralytics and released in January 2023. It builds on earlier YOLO ideas while introducing a redesigned architecture, improved training workflow, and support for multiple computer vision tasks through the Ultralytics framework."
+    }
+  ]
+}

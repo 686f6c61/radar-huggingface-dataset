@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ryoshu/qwen-mtp-chat-runtime",
+  "slug": "ryoshu-qwen-mtp-chat-runtime",
+  "author": "ryoshu",
+  "url": "https://huggingface.co/ryoshu/qwen-mtp-chat-runtime",
+  "created_at": "2026-08-19T17:43:19.000Z",
+  "updated_at": "2026-08-19T17:58:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "swift",
+    "apple-silicon",
+    "runtime",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 222131664,
+  "storage_human": "222 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - youssofal/MTPLX: 3x faster speeds on MLX | Qwen 3.8 27B ...",
+      "url": "https://github.com/youssofal/mtplx",
+      "snippet": "MTPLX is a native Mac app and a command line for running local language models with multi-token prediction. Modern models like Qwen 3.5/3.6 ship with built-in MTP heads. Almost no runtime uses them. MTPLX does: the model drafts several tokens ahead of itself, verifies them in one batched forward pass, and keeps only what passes exact rejection sampling. Same model, same output distribution ..."
+    },
+    {
+      "title": "Qwen3.6 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.6",
+      "snippet": "Qwen3.6 and Qwen3.6 MTP can now be run in Unsloth Desktop, our new open-source UI for local AI. Unsloth Studio lets you run models locally on MacOS, Windows, Linux and:"
+    },
+    {
+      "title": "Running Qwen3.6 with MTP in llama.cpp · GitHub",
+      "url": "https://gist.github.com/eeshansrivastava89/85797104af34181944bfd1360d69e8af",
+      "snippet": "Accurate as of May 18, 2026. Multi-Token Prediction (MTP) uses the model&#x27;s built-in prediction heads to draft multiple tokens in parallel, then verifies them against the main model. For Qwen3.6, this yields ~1.5-2× faster generation with no accuracy loss. This guide covers the Qwen3.6 27B and Qwen3.6 35B-A3B (MoE) models. As of May 2026, MTP support is merged into llama.cpp — no fork ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "Building AI Products with Qwen",
+      "url": "https://qwen.ai/apiplatform",
+      "snippet": "Building AI Products with Qwen Built with Qwen via OpenAI-compatible API. Power apps for chat, Q&A, creative writing, translation, summarization, and coding."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rjz123/colar-physics-real-l1b",
+  "slug": "rjz123-colar-physics-real-l1b",
+  "author": "rjz123",
+  "url": "https://huggingface.co/rjz123/colar-physics-real-l1b",
+  "created_at": "2026-08-19T15:52:16.000Z",
+  "updated_at": "2026-08-19T15:53:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "latent-reasoning",
+    "colar",
+    "research",
+    "text-generation",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.2-1B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121740997,
+  "storage_human": "122 MB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "rjz123 · GitHub",
+      "url": "https://github.com/rjz123",
+      "snippet": "GitHub is where rjz123 builds software."
+    },
+    {
+      "title": "Real Girl - F.1_HZH - Free AI LYCORIS Download | Tensor.Art",
+      "url": "https://www.tensor.art/models/851843714383928956",
+      "snippet": "Download Real Girl - free LYCORIS FLUX.1 AI model on TENSOR. STOCK PHOTOGRAPHY, FLUX, BEAUTIFUL PORTRAIT. By 🥳"
+    },
+    {
+      "title": "Think Silently, Think Fast: Dynamic Latent Compression of LLM Reasoning ...",
+      "url": "https://arxiv.org/pdf/2505.16552",
+      "snippet": "In contrast, CoLaR advances auto-regressive latent reasoning by introducing a novel next com-pressed embedding objective. This allows the model to capture the semantics of multiple word tokens within a single latent variable and reason with dynamic chain lengths, leading to improved efficiency and performance."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

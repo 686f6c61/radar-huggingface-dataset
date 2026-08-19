@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fushuncui/opd-base-long-unitlocked-step251",
+  "slug": "fushuncui-opd-base-long-unitlocked-step251",
+  "author": "fushuncui",
+  "url": "https://huggingface.co/fushuncui/opd-base-long-unitlocked-step251",
+  "created_at": "2026-08-19T17:10:38.000Z",
+  "updated_at": "2026-08-19T18:56:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939502,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fushuncui/opd-long-warmup40 · Hugging Face",
+      "url": "https://huggingface.co/fushuncui/opd-long-warmup40",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth?locale=en-US",
+      "snippet": "⭐ Features Unsloth lets you run, train, and deploy AI models locally, with support for all types of models."
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Use the latest models Run and train nearly every model locally, with Day Zero support for releases like Qwen3.8, NVIDIA, GLM, Gemma and more. Discover, manage and download the right quantization for your device from the built-in model hub."
+    },
+    {
+      "title": "GitHub - chrisliu298/awesome-on-policy-distillation: A curated ...",
+      "url": "https://github.com/chrisliu298/awesome-on-policy-distillation",
+      "snippet": "A curated collection of papers, technical reports, frameworks, and tools for on-policy distillation (OPD) of large language models. On-policy distillation trains a student on samples from its own evolving policy, while a teacher (external, privileged, or self-conditioned) provides dense supervision ..."
+    }
+  ]
+}

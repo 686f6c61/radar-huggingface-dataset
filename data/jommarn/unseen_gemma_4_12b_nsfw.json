@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jommarn/UNSEEN_Gemma_4_12B_NSFW",
+  "slug": "jommarn-unseen_gemma_4_12b_nsfw",
+  "author": "Jommarn",
+  "url": "https://huggingface.co/Jommarn/UNSEEN_Gemma_4_12B_NSFW",
+  "created_at": "2026-08-19T18:42:50.000Z",
+  "updated_at": "2026-08-19T19:05:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951719188,
+  "storage_human": "24.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "toandev/Gemma4-12B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/toandev/Gemma4-12B-Uncensored",
+      "snippet": "Gemma4-12B-Uncensored Gemma4-12B-Uncensored is a research-oriented derivative of google/gemma-4-12B-it, prepared for experiments on refusal behavior, over-refusal, and multimodal instruction-following robustness. The checkpoint is released as a clean full-weight BF16 Gemma 4 unified model."
+    },
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 12B uncensored merge optimized for AMD ROCM drops on ...",
+      "url": "https://uncensoredhub.ai/news/2026-07-02-gemma-4-12b-uncensored-merge-optimized-for-amd-rocm-drops-on-huggingface",
+      "snippet": "A quantized 12B-parameter Gemma 4 merge combining agentic, composer, and uncensored fine-tunes has been released in GGUF format optimized for AMD ROCM hardware."
+    },
+    {
+      "title": "class_AI_deploy_and_apply/model/gemma-4-12b-uncensored at master ...",
+      "url": "https://github.com/hjhhoni/class_AI_deploy_and_apply/tree/master/model/gemma-4-12b-uncensored",
+      "snippet": "一个基于部署本地模型的知识图谱生成项目. Contribute to hjhhoni/class_AI_deploy_and_apply development by creating an account on GitHub."
+    },
+    {
+      "title": "Organizing Gemma 4 12B OBLITERATED｜AI活用ラボ Go!",
+      "url": "https://note.com/ai_lab_beyo_go/n/nb94ea0566933?hl=en",
+      "snippet": "A \"uncensored\" multimodal model you can run locally is available right now Gemma 4 12B OBLITERATED is an \"uncensored\" model capable of processing both image and text inputs. It is available on Hugging Face in GGUF format and is ready to be tested in a local environment immediately. While previous Google Gemma series models had strict censorship and many limitations on local execution, this ..."
+    }
+  ]
+}

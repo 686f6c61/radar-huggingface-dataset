@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sherjahongir/field-segmentation",
+  "slug": "sherjahongir-field-segmentation",
+  "author": "sherjahongir",
+  "url": "https://huggingface.co/sherjahongir/field-segmentation",
+  "created_at": "2026-08-19T14:13:35.000Z",
+  "updated_at": "2026-08-19T14:18:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166556094,
+  "storage_human": "167 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Borderoffield Dataset by Sherjahongir Tursunmurodov",
+      "url": "https://platform.ultralytics.com/sherjahongir-tursunmurodov/datasets/borderoffield",
+      "snippet": "Aerial imagery for instance segmentation of agricultural fields, capturing diverse rural landscapes, crop plots, and land boundaries from a top-down perspective."
+    },
+    {
+      "title": "Dala Field Dataset by Sherjahongir Tursunmurodov",
+      "url": "https://platform.ultralytics.com/sherjahongir-tursunmurodov/datasets/dala-field",
+      "snippet": "Aerial imagery for instance segmentation of agricultural fields, featuring diverse rural landscapes with distinct crop plots and land boundaries for land analysis."
+    },
+    {
+      "title": "Fields of The World: A Machine Learning Benchmark Dataset For Global ...",
+      "url": "https://arxiv.org/html/2409.16252v2",
+      "snippet": "We designed Fields of The World to improve ML model performance for field boundary segmentation in diverse global agricultural landscapes and enable granular country-scale evaluation for more countries than any prior dataset."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FieldSeg: A scalable agricultural field extraction framework based on ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0168169925001929",
+      "snippet": "In the context of DL, Segment Anything Model (SAM) is a state-of-the-art segmentation model released by Meta AI Research in April 2023 (Kirillov et al., 2023). In contrast to the DL models typically used for agricultural field extraction, SAM is a promptable model trained in a massive computer vision dataset composed of more than 1B masks from ..."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "droplychee/droplycheetttttttest",
+  "slug": "droplychee-droplycheetttttttest",
+  "author": "droplychee",
+  "url": "https://huggingface.co/droplychee/droplycheetttttttest",
+  "created_at": "2026-08-19T14:36:26.000Z",
+  "updated_at": "2026-08-19T14:45:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996119,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "droplychee/test-model · Hugging Face",
+      "url": "https://huggingface.co/droplychee/test-model",
+      "snippet": "Instructions to use droplychee/test-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use droplychee/test-model with Transformers:"
+    },
+    {
+      "title": "droplychee/droplychee-2.1-27b-gguf · Hugging Face",
+      "url": "https://huggingface.co/droplychee/droplychee-2.1-27b-gguf",
+      "snippet": "droplychee / droplychee-2.1-27b-gguf like 0 Follow Drop Lychee 2 GGUF qwen3_5 llama.cpp unsloth vision-language-model conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "DropLychee - GitHub",
+      "url": "https://github.com/DropLychee",
+      "snippet": "Droplychee-2.0-40B: A multilingual long-context foundation language model with advanced reasoning, coding, and agent capabilities."
+    },
+    {
+      "title": "test-model API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/droplychee/test-model",
+      "snippet": "Run test-model with FriendliAI inference. This gemma4 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "droplychee-2.1-27b API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/droplychee/droplychee-2.1-27b",
+      "snippet": "Run droplychee-2.1-27b with FriendliAI inference. This qwen35 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    }
+  ]
+}

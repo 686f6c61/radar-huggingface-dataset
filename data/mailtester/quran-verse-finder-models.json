@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mailTester/quran-verse-finder-models",
+  "slug": "mailtester-quran-verse-finder-models",
+  "author": "mailTester",
+  "url": "https://huggingface.co/mailTester/quran-verse-finder-models",
+  "created_at": "2026-08-19T17:03:12.000Z",
+  "updated_at": "2026-08-19T17:08:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59707625,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mailTester/quran-verse-finder-models · Hugging Face",
+      "url": "https://huggingface.co/mailTester/quran-verse-finder-models",
+      "snippet": "mailTester / quran-verse-finder-models like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "mailTester (one) - Hugging Face",
+      "url": "https://huggingface.co/mailTester/models",
+      "snippet": "Recent Activity published a modelabout 2 hours ago mailTester/quran-verse-finder-models View all activity"
+    },
+    {
+      "title": "QuranAI.org - Quran powered AI",
+      "url": "https://quranai.org/",
+      "snippet": "About QuranAI Education on semantics, linguistic, and computable aspects of the Quran by combining many translations, to make it accessible to AI developers, AIs, and everyone including people with disabilities."
+    },
+    {
+      "title": "GitHub - Martysunshine/Quran-verse-finder: AI-Powered Quran Verse ...",
+      "url": "https://github.com/Martysunshine/Quran-verse-finder",
+      "snippet": "AI-powered semantic search for Quran verses. Given a 10+ word description, this app suggests 3-5 relevant Quran passages using local Sentence-Transformers embeddings and an optional Cross-Encoder reranker. No paid APIs."
+    },
+    {
+      "title": "GitHub - islamAndAi/QURAN-NLP: Quran, Hadith, Translations, Tafaseer ...",
+      "url": "https://github.com/islamAndAi/QURAN-NLP",
+      "snippet": "Add more Data! Add more Tafaseer and translation to better train the NLP model for Search Engine & Analysis Make an end-to-end application so that everyone can benefit from the newly trained models Find insightful things from the Quran Make an Arabic NLP model capable of understanding the Quran Make a single graph database encompassing Islamic ..."
+    }
+  ]
+}

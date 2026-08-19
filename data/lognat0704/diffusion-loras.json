@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lognat0704/diffusion-loras",
+  "slug": "lognat0704-diffusion-loras",
+  "author": "lognat0704",
+  "url": "https://huggingface.co/lognat0704/diffusion-loras",
+  "created_at": "2026-06-09T15:37:22.000Z",
+  "updated_at": "2026-08-19T15:26:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image-to-image",
+    "qwen-image-edit",
+    "image-editing",
+    "base_model:Qwen/Qwen-Image-Edit",
+    "base_model:adapter:Qwen/Qwen-Image-Edit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4059097152,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen-Image-Edit",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 28,992 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "LoRA · easydiffusion/easydiffusion Wiki · GitHub",
+      "url": "https://github.com/easydiffusion/easydiffusion/wiki/lora",
+      "snippet": "LoRAs are small models that can alter the style or behavior of the Stable Diffusion AI model. It can make the same Stable Diffusion model make drastically different styles of images, with control over how much the LoRA affects the image."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "LoRA Diffusion: Zero-shot LoRA Synthesis for Diffusion Model ...",
+      "url": "https://arxiv.org/html/2412.02352v1",
+      "snippet": "Our procedure begins with collecting a dataset of LoRA adapters trained on the Stable Diffusion model (Rombach et al., 2022). We utilize the dataset from Weight2Weight (Dravid et al., 2024), which comprises 64k LoRAs, each trained on images of a different celebrity and containing approximately 99k parameters."
+    }
+  ]
+}

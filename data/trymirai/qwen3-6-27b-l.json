@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "trymirai/Qwen3.6-27B-L",
+  "slug": "trymirai-qwen3-6-27b-l",
+  "author": "trymirai",
+  "url": "https://huggingface.co/trymirai/Qwen3.6-27B-L",
+  "created_at": "2026-08-18T20:54:13.000Z",
+  "updated_at": "2026-08-19T13:54:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "uzu",
+  "languages": [],
+  "tags": [
+    "uzu",
+    "safetensors",
+    "mirai",
+    "8-bit",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27322365952,
+  "parameters_human": "27.32B",
+  "storage_bytes": 27789338959,
+  "storage_human": "27.8 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3.6-27b",
+      "snippet": "Agentic Coding: the model now handles frontend workflows and repository-level reasoning with greater fluency and precision. Thinking Preservation: we&#x27;ve introduced a new option to retain reasoning context from historical messages, streamlining iterative development and reducing overhead. For more details, please refer to our blog post Qwen3.6-27B ."
+    },
+    {
+      "title": "Qwen3.6-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.6-27b",
+      "snippet": "The Qwen3.6 27B native vision-language dense model builds upon the 3.5-27B version, with key improvements in agentic coding capabilities and enhanced STEM reasoning and inference skills. In the vision modality, it demonstrates significant advances in spatial intelligence, object localization, and detection, while video understanding, document OCR, and visual agent capabilities continue to ..."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback. This update delivers substantial upgrades, particularly in: Agentic Coding: The model now ..."
+    }
+  ]
+}

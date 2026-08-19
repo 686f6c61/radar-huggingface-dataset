@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MTbuillder/MTX",
+  "slug": "mtbuillder-mtx",
+  "author": "MTbuillder",
+  "url": "https://huggingface.co/MTbuillder/MTX",
+  "created_at": "2026-08-19T12:42:52.000Z",
+  "updated_at": "2026-08-19T12:42:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MTX_model/README.md at master · biobakery/MTX_model",
+      "url": "https://github.com/biobakery/MTX_model/blob/master/README.md",
+      "snippet": "MTX abundance changes are highly affected by underlying differences in metagenomic abundances (i.e. gene copy number). This package can adjust the DNA abundance as a continuous covariate for a given feature in the models for differential expression analysis in microbial communities."
+    },
+    {
+      "title": "MTX.ai",
+      "url": "https://www.mtx.ai/",
+      "snippet": "World&#x27;s first fully vertically integrated AI-enabled technology company."
+    },
+    {
+      "title": "NYSE: MTX Minerals Technologies Inc Stock - WallStreetZen",
+      "url": "https://www.wallstreetzen.com/stocks/us/nyse/mtx",
+      "snippet": "Our proven quant model uses 115 proprietary factors, including AI, to determine MTX &#x27;s potential to beat the market CHold"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/biobakery/MTX_model/blob/3bdd2adec3ce5f9c4dc4445aabddf99238746ce2/README.md",
+      "snippet": "This R package is built for metatranscriptomics (MTX) modeling based on MaAsLin2. It integrates feature-specific covariates to determine multivariable association between metadata and microbial MTX features. MTX abundance changes are highly affected by underlying differences in metagenomic abundances (i.e. gene copy number). This package can adjust the DNA abundance as a continuous covariate ..."
+    },
+    {
+      "title": "Model Viewer | HideoutHub",
+      "url": "https://www.hideouthub.net/model-viewer",
+      "snippet": "Model Viewer Explore official Path of Exile MTX media, assemble a character loadout and share your combination."
+    }
+  ]
+}

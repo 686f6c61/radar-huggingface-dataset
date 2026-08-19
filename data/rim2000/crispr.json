@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Rim2000/CRISPR",
+  "slug": "rim2000-crispr",
+  "author": "Rim2000",
+  "url": "https://huggingface.co/Rim2000/CRISPR",
+  "created_at": "2026-08-19T13:04:20.000Z",
+  "updated_at": "2026-08-19T13:15:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vision-language-model",
+    "token-compression",
+    "multimodal",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2549225740,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct, Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rim2000 (Zuyi Zhou) - Hugging Face",
+      "url": "https://huggingface.co/Rim2000/models",
+      "snippet": "User profile of Zuyi Zhou on Hugging Face"
+    },
+    {
+      "title": "Convergence of CRISPR and artificial intelligence: A ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S277304412400041X",
+      "snippet": "The convergence of CRISPR gene editing technology and artificial intelligence (AI) is revolutionizing the field of biotechnology, ushering in a paradigm shift in research methodologies and applications (Chafai et al., 2024; Kafle, 2023). This synergistic integration is enabling scientists to streamline processes, accelerate drug discovery, and gain novel insights into genetic engineering ..."
+    },
+    {
+      "title": "RIM2000 Encoders Incremental Product details - Kübler Group - Worldwide",
+      "url": "https://www.kuebler.com/en/products/measurement/encoders/product-finder/product-details/RIM2000",
+      "snippet": "Maximum flexibility and higher performance thanks to programmability. With a new technology approach based on digital signal processing independent of previous ASIC solutions, Kübler has expanded the range of applications for bearingless encoders. In conjunction with the available magnetic rings, the best possible accuracy is now always achieved. Influences due to individual installation and ..."
+    },
+    {
+      "title": "Revolutionizing CRISPR technology with artificial intelligence - Nature",
+      "url": "https://www.nature.com/articles/s12276-025-01462-9",
+      "snippet": "Integrating AI with CRISPR technology enhances existing tools and opens doors to next-generation medicine for gene therapy."
+    },
+    {
+      "title": "CRISPR-GPT for agentic automation of gene-editing experiments",
+      "url": "https://www.nature.com/articles/s41551-025-01463-z",
+      "snippet": "An agent-based large language model (LLM) tool helps with CRISPR-based gene-editing experimental design and analysis."
+    }
+  ]
+}

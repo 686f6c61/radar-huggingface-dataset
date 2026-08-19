@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "princejm/tds-carbon-card",
+  "slug": "princejm-tds-carbon-card",
+  "author": "princejm",
+  "url": "https://huggingface.co/princejm/tds-carbon-card",
+  "created_at": "2026-08-19T13:21:51.000Z",
+  "updated_at": "2026-08-19T13:23:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jesmelchi/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Jesmelchi/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Model Cards · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/model-cards",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/WATCH",
+      "snippet": "You&#x27;re offline. Check your connection. Retry"
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Applied Model Card - Applied Model Card | CHAI",
+      "url": "https://www.chai.org/workgroup/applied-model",
+      "snippet": "Applied Model Card documentation, templates, and examples now live on the CHAI Registry. Visit the Registry for the latest resources, a completed example, and guidance on adopting model cards in your organization."
+    }
+  ]
+}

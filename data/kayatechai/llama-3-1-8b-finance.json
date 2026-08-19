@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "KayaTechAI/Llama-3.1-8b-Finance",
+  "slug": "kayatechai-llama-3-1-8b-finance",
+  "author": "KayaTechAI",
+  "url": "https://huggingface.co/KayaTechAI/Llama-3.1-8b-Finance",
+  "created_at": "2026-08-19T13:35:10.000Z",
+  "updated_at": "2026-08-19T15:11:16.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "merge",
+    "ties",
+    "financial",
+    "sentiment",
+    "base_model:KayaTechAI/SFT-Llama-3.1-8B-Financial-Instruct",
+    "base_model:merge:KayaTechAI/SFT-Llama-3.1-8B-Financial-Instruct",
+    "base_model:KayaTechAI/SFT-Llama-3.1-8B-Financial-Instruct-Sentiment",
+    "base_model:merge:KayaTechAI/SFT-Llama-3.1-8B-Financial-Instruct-Sentiment",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:merge:unsloth/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct, KayaTechAI/SFT-Llama-3.1-8B-Financial-Instruct, KayaTechAI/SFT-Llama-3.1-8B-Financial-Instruct-Sentiment",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KayaTechAI/Llama-3.1-8B-Financial-Instruct · Hugging Face",
+      "url": "https://huggingface.co/KayaTechAI/Llama-3.1-8B-Financial-Instruct",
+      "snippet": "Instructions to use KayaTechAI/Llama-3.1-8B-Financial-Instruct with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "KayaTechAI/IPT-Llama-3.1-8B-Financial-Instruct · Hugging Face",
+      "url": "https://huggingface.co/KayaTechAI/IPT-Llama-3.1-8B-Financial-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.1-8B-Financial-Instruct - friendli.ai",
+      "url": "https://friendli.ai/models/KayaTechAI/Llama-3.1-8B-Financial-Instruct",
+      "snippet": "Run Llama-3.1-8B-Financial-Instruct with FriendliAI inference. This is a merge of pre-trained language models created using mergekit."
+    },
+    {
+      "title": "martain7r/finance-llama-8b",
+      "url": "https://ollama.com/martain7r/finance-llama-8b",
+      "snippet": "Finance-Llama-8B is a fine-tuned Llama 3.1 8B model trained on 500k examples for tasks like QA, reasoning, sentiment, and NER. It supports multi-turn dialogue and is ideal for financial assistants."
+    },
+    {
+      "title": "Finance-Llama-8B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/finance-llama-8b-tarun7r",
+      "snippet": "The model supports instruction-following with multi-turn conversation capability and handles financial reasoning, question-answering, entity recognition, sentiment analysis, and topic classification tasks. Architecture and Parameters: Base model: Meta-Llama-3.1-8B (8 billion parameters) Fine-tuning framework: unsloth (parameter-efficient ..."
+    }
+  ]
+}

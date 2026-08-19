@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "iamPi/sinopia-b57f6cad",
+  "slug": "iampi-sinopia-b57f6cad",
+  "author": "iamPi",
+  "url": "https://huggingface.co/iamPi/sinopia-b57f6cad",
+  "created_at": "2026-08-19T16:40:35.000Z",
+  "updated_at": "2026-08-19T16:40:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "lora",
+    "sft",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340908181,
+  "storage_human": "341 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - feojeda/sinopia: Spec-driven creative workflow for human-led ...",
+      "url": "https://github.com/feojeda/sinopia",
+      "snippet": "What is Sinopia in simple terms? Sinopia is a CLI framework and a multi-agent workspace designed to make AI-assisted creative work deterministic, auditable, and human-led using a Spec-Driven Art Direction (SDAD) workflow:"
+    },
+    {
+      "title": "ModelAPI | OpenAI-Compatible AI API Gateway",
+      "url": "https://aimodelapi.ai/models",
+      "snippet": "5-minute migration, transparent prices, automatic fallback, global payments."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "sinopia/README.md at main · feojeda/sinopia · GitHub",
+      "url": "https://github.com/feojeda/sinopia/blob/main/README.md",
+      "snippet": "Sinopia is a CLI framework and a multi-agent workspace designed to make AI-assisted creative work deterministic, auditable, and human-led using a Spec-Driven Art Direction (SDAD) workflow:"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    }
+  ]
+}

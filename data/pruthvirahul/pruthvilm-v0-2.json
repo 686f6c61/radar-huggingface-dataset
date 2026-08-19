@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Pruthvirahul/PruthviLM-v0.2",
+  "slug": "pruthvirahul-pruthvilm-v0-2",
+  "author": "Pruthvirahul",
+  "url": "https://huggingface.co/Pruthvirahul/PruthviLM-v0.2",
+  "created_at": "2026-08-19T17:35:58.000Z",
+  "updated_at": "2026-08-19T18:07:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125878325,
+  "storage_human": "126 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pruthvirahul (Pruthvirahul) - Hugging Face",
+      "url": "https://huggingface.co/Pruthvirahul",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 19 minutes ago ... published a model 19 minutes ago"
+    },
+    {
+      "title": "pruthvirahul · GitHub",
+      "url": "https://github.com/pruthvirahul",
+      "snippet": "its a repo saving site to build and run and deploy the code"
+    },
+    {
+      "title": "GitHub - pruthvirahul/astramind",
+      "url": "https://github.com/pruthvirahul/astramind",
+      "snippet": "🤖 AstraMind AI Agent AstraMind is a custom-fine-tuned AI agent built on the Qwen2.5-7B-Instruct architecture. Using the Unsloth engine for extreme efficiency, this model has been \"re-programmed\" to adopt a unique persona, moving away from its base identity to become a powerful, independent agent."
+    },
+    {
+      "title": "prithivMLmods (Prithiv Sakthi)",
+      "url": "https://huggingface.co/prithivMLmods",
+      "snippet": "computer vision, nlp, multimodality - HuggingFace Fellow ML 🤗"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

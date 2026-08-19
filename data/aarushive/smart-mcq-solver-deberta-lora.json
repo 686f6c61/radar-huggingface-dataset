@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Aarushive/smart-mcq-solver-deberta-lora",
+  "slug": "aarushive-smart-mcq-solver-deberta-lora",
+  "author": "Aarushive",
+  "url": "https://huggingface.co/Aarushive/smart-mcq-solver-deberta-lora",
+  "created_at": "2026-07-31T08:44:52.000Z",
+  "updated_at": "2026-08-19T12:09:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33129278,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aarushive/smart-mcq-solver-deberta-lora · Hugging Face",
+      "url": "https://huggingface.co/Aarushive/smart-mcq-solver-deberta-lora",
+      "snippet": "Instructions to use Aarushive/smart-mcq-solver-deberta-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Aarushive/smart-mcq-solver-deberta-lora with Transformers:"
+    },
+    {
+      "title": "Smart MCQ Solver - a Hugging Face Space by 23f3003672",
+      "url": "https://huggingface.co/spaces/23f3003672/smart-mcq-solver",
+      "snippet": "A DeBERTa-v3-small cross-encoder, fine-tuned with LoRA on the Smart MCQ Solver Challenge dataset. Enter a question and five candidate answers; the model scores all five jointly and returns them ranked, along with the top-three string the competition&#x27;s mAP@3 metric is scored on."
+    },
+    {
+      "title": "GitHub - srthkdev/smart-mcq-demo",
+      "url": "https://github.com/srthkdev/smart-mcq-demo",
+      "snippet": "smart mcq solver - live demo a browser demo of the fine-tuned deberta-v3-small model from my dl genai project. type a science multiple choice question with five options and it predicts the correct one, showing the probability for each and the top-3 ranked answer."
+    },
+    {
+      "title": "GitHub - KRISHNPRIY2820/Smart-MCQ-Solver",
+      "url": "https://github.com/KRISHNPRIY2820/Smart-MCQ-Solver",
+      "snippet": "📌 Project Overview Smart MCQ Solver is an intelligent Multiple Choice Question (MCQ) answering system developed as part of the BSDA2001P Deep Learning and Generative AI course project."
+    },
+    {
+      "title": "Smart MCQ Solver",
+      "url": "https://22f3002676-smart-mcq-solver.hf.space/?__theme=system",
+      "snippet": "Expect them to get novel questions wrong; that is the finding, not a bug. DeBERTa-v3-large is the model that actually answers. DeBERTa downloads a 1.7 GB base model on its first query — allow a minute."
+    }
+  ]
+}

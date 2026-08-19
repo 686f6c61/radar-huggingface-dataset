@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "skywolf46/ignition-singularity-prototype",
+  "slug": "skywolf46-ignition-singularity-prototype",
+  "author": "skywolf46",
+  "url": "https://huggingface.co/skywolf46/ignition-singularity-prototype",
+  "created_at": "2026-08-19T18:57:37.000Z",
+  "updated_at": "2026-08-19T19:10:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ko",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 2783439040,
+  "storage_human": "2.8 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skywolf46/timeline-singularity at main - Hugging Face",
+      "url": "https://huggingface.co/skywolf46/timeline-singularity/tree/main",
+      "snippet": "skywolf46 / timeline-singularity like 0 License:cc-by-nc-nd-4. Model card FilesFiles and versions xet Community Copy to bucket new main timeline-singularity 1.75 kB Ctrl+K Ctrl+K 1 contributor History:2 commits skywolf46 chore: 임시 리드미 업로드 851d01f verified2 months ago .gitattributes Safe 1.52 kBinitial commit2 months ago README.md Safe 229 Byteschore: 임시 리드미 업로드 ..."
+    },
+    {
+      "title": "skywolf46 (Skywolf Dacella) - Hugging Face",
+      "url": "https://huggingface.co/skywolf46",
+      "snippet": "User profile of Skywolf Dacella on Hugging Face"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI powered module for predictive maintenance",
+      "url": "https://forum.inductiveautomation.com/t/ai-powered-module-for-predictive-maintenance/109487",
+      "snippet": "I was wondering if anyone knows of a third-party module that can be used to train a data model from the data Ignition is collecting, for use in predictive maintenance processes. Alternatively, is there any open-source module available? I&#x27;ve tried Sorba.ai, but I need to find another option"
+    },
+    {
+      "title": "Free Ignition Modules and Resources Wiki - Links and Details",
+      "url": "https://forum.inductiveautomation.com/t/free-ignition-modules-and-resources-wiki-links-and-details/111081",
+      "snippet": "Ignition API (8.1, 8.3) - A Python package that allows developers to get code completion for Ignition Scripting API scripting functions in their IDE of choice. Incendium - A collection of utility project scripts to extend the core system library. Ignition Module Starter - A Claude Code skill to jumpstart module creation."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "distil-labs/distil-qwen3-1.7b-posthog-extractor",
+  "slug": "distil-labs-distil-qwen3-1-7b-posthog-extractor",
+  "author": "distil-labs",
+  "url": "https://huggingface.co/distil-labs/distil-qwen3-1.7b-posthog-extractor",
+  "created_at": "2026-08-19T10:23:47.000Z",
+  "updated_at": "2026-08-19T15:11:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "distil-labs",
+    "posthog",
+    "product-analytics",
+    "structured-extraction",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 6951352482,
+  "storage_human": "7.0 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3 1.7B Fine-Tuning Guide - distil labs",
+      "url": "https://www.distillabs.ai/learn/qwen3-1-7b-fine-tuning-guide/",
+      "snippet": "Qwen3 1.7B Fine-Tuning Guide Qwen3-1.7B is the model the distil labs docs tell you to start with when you have no stronger constraint. It is small enough to serve on a modest GPU, ranks mid-table after fine-tuning across eight tasks, and supports every task type the platform offers, including tool calling."
+    },
+    {
+      "title": "Distil-Qwen3-1.7B-Customer-Support-Deferral - Hugging Face",
+      "url": "https://huggingface.co/distil-labs/distil-qwen3-1.7b-customer-support-deferral",
+      "snippet": "A fine-tuned Qwen3-1.7B model for multi-turn airline customer support that runs as the small tier of a two-model cascade. It handles most support turns itself and defers genuinely-hard turns to a larger model by emitting a defer_to_larger_model tool call."
+    },
+    {
+      "title": "vishinvents/distil-qwen3-1.7b-posthog-extractor · Hugging Face",
+      "url": "https://huggingface.co/vishinvents/distil-qwen3-1.7b-posthog-extractor",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "distil labs · GitHub",
+      "url": "https://github.com/distil-labs",
+      "snippet": "distil-dual-size-customer-support-bot Public Terminal airline customer-support bot: a fine-tuned Qwen3-1.7B SLM handles most turns and defers hard turns to a larger model (a cost-saving cascade)."
+    },
+    {
+      "title": "Distil Qwen3 1.7B Customer Support Deferral by distil-labs",
+      "url": "https://llm-explorer.com/model/distil-labs%2Fdistil-qwen3-1.7b-customer-support-deferral,36tLJzq8kkAI61AGprsTin",
+      "snippet": "Distil Qwen3 1.7B Customer Support Deferral is an open-source 1.7b LLM by distil-labs. VRAM 4GB, 40K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

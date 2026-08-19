@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amankumarmahali/tds-carbon-card",
+  "slug": "amankumarmahali-tds-carbon-card",
+  "author": "amankumarmahali",
+  "url": "https://huggingface.co/amankumarmahali/tds-carbon-card",
+  "created_at": "2026-08-19T13:28:16.000Z",
+  "updated_at": "2026-08-19T13:32:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anant-venkatesh1/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/anant-venkatesh1/tds-carbon-card",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "carbontxt.org",
+      "url": "https://carbontxt.org/ai-model-cards",
+      "snippet": "AI Model Sustainability Directory Using the carbon.txt syntax and validator, we have extracted the sustainability data from over 2500 AI model cards from Hugging Face that are listed with co2_eq_emissions metadata."
+    },
+    {
+      "title": "Aman Kumar Mahali amankumarmahali - GitHub",
+      "url": "https://github.com/amankumarmahali/",
+      "snippet": "Dual Degree Student pursuing : BS in Data Science and Application @ IIT Madras & BS in Information Technology @Kolhan University - amankumarmahali"
+    },
+    {
+      "title": "Tds Ga3 - a Hugging Face Space by amankumarmahali",
+      "url": "https://huggingface.co/spaces/amankumarmahali/tds-ga3",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "AI model cards in carbon.txt and an AI Sustainability Directory",
+      "url": "https://www.thegreenwebfoundation.org/news/ai-model-cards-in-carbon-txt/",
+      "snippet": "Using AI Model cards in carbon.txt to disclose training emissions The updated carbon.txt syntax (version 0.5) includes a new organisational disclosure document type - doc_type: &#x27;ai-model-card&#x27;. Using this document type, along with a URL of model card (README.md) makes a valid disclosure for training of AI models."
+    }
+  ]
+}

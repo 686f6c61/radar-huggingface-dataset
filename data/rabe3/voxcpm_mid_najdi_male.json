@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Rabe3/VoxCPM_mid_najdi_male",
+  "slug": "rabe3-voxcpm_mid_najdi_male",
+  "author": "Rabe3",
+  "url": "https://huggingface.co/Rabe3/VoxCPM_mid_najdi_male",
+  "created_at": "2026-08-19T15:33:57.000Z",
+  "updated_at": "2026-08-19T15:34:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "voxcpm",
+    "safetensors",
+    "text-to-speech",
+    "arabic",
+    "najdi",
+    "saudi",
+    "diacritics",
+    "tashkeel",
+    "ar",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:finetune:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 9537040314,
+  "storage_human": "9.5 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VoxCPM: Open Source TTS for Creative & Expressive Voices",
+      "url": "https://voxcpm.com/en/",
+      "snippet": "Free, open-source TTS with voice cloning! Create controllable, expressive AI voices in 30+ languages and 48kHz studio-quality audio. Perfect for creators & developers. Try it now!"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Text-to-Speech Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-speech",
+      "snippet": "Active filters: text-to-speech. Clear all. IndexTeam/IndexTTS-2.5. Text-to-Speech • Updated 7 days ago • 4.79k • 134"
+    },
+    {
+      "title": "GitHub - wildminder/ComfyUI-VoxCPM: ComfyUI node for highly expressive ...",
+      "url": "https://github.com/wildminder/ComfyUI-VoxCPM",
+      "snippet": "VoxCPM models speech in a continuous space using a MiniCPM-4 backbone, producing highly expressive speech and accurate zero-shot voice cloning. This node handles model downloading, memory management, and audio processing end-to-end."
+    },
+    {
+      "title": "OpenBMB · GitHub",
+      "url": "https://github.com/OpenBMB",
+      "snippet": "OpenBMB (Open Lab for Big Model Base) aims to build foundation models and systems towards AGI. - OpenBMB"
+    }
+  ]
+}

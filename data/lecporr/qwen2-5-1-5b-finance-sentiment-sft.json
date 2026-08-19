@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lecporr/qwen2.5-1.5b-finance-sentiment-sft",
+  "slug": "lecporr-qwen2-5-1-5b-finance-sentiment-sft",
+  "author": "lecporr",
+  "url": "https://huggingface.co/lecporr/qwen2.5-1.5b-finance-sentiment-sft",
+  "created_at": "2026-08-19T15:48:25.000Z",
+  "updated_at": "2026-08-19T16:54:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 233161585,
+  "storage_human": "233 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "David0hy/llm-financial-sentiment-lora - GitHub",
+      "url": "https://github.com/David0hy/llm-financial-sentiment-lora",
+      "snippet": "A focused case study fine-tuning a small open-source LLM (Qwen2.5-1.5B-Instruct) with LoRA / PEFT for financial sentiment classification, benchmarked against zero-shot prompting baselines."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "Efficient Financial Sentiment Analysis via LLM Fine-tuning with ...",
+      "url": "https://dl.acm.org/doi/full/10.1145/3776759.3776941",
+      "snippet": "Large Language Models (LLMs) show promise for financial text analysis, but their size can be prohibitive, and general models may lack domain-specific nuance. This paper introduces an efficient and effective framework for advanced financial sentiment analysis by fine-tuning a LLM, Qwen2.5-7b, using Low-Rank Adaptation (LoRA). We make two primary contributions to enhance model performance: (1) a ..."
+    }
+  ]
+}

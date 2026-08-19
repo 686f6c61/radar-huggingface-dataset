@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-35f56149-Pm",
+  "slug": "guillekenzo-aros-35f56149-pm",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-35f56149-Pm",
+  "created_at": "2026-08-19T18:03:17.000Z",
+  "updated_at": "2026-08-19T18:15:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 388573215,
+  "storage_human": "389 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "Image-to-image upscaler using NVIDIA PiD from_clean_flux. guillekenzo May 26. models 153. Sort: Recently updated. guillekenzo/aros-09cc5fd4-MellowDuality"
+    },
+    {
+      "title": "guillekenzo/aros-09cc5fd4-MellowDuality · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-09cc5fd4-MellowDuality",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models Wiki — Compare LLM, Image, Video & 3D | Heyaiwiki",
+      "url": "https://heyaiwiki.com/",
+      "snippet": "The AI models wiki for every model worth knowing. Heyaiwiki tracks LLM, image, video, audio and 3D models — compared by benchmark, price and context window, with sources you can quote."
+    },
+    {
+      "title": "On model photography with AI. Without photoshoots. | OnModel.ai",
+      "url": "https://www.onmodel.ai/",
+      "snippet": "For apparel & fashion ecommerce stores Sell to new audiences by changing models with AI instantly Don&#x27;t get negative impact to your SEO by having the same images as other stores. Increase your sales by upgrading product photos with AI fashion models. Connect with your customers by representing their diverse ethnicities and skin-tones on your model photos."
+    }
+  ]
+}

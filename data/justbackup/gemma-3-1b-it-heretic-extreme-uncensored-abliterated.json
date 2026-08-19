@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Justbackup/gemma-3-1b-it-heretic-extreme-uncensored-abliterated",
+  "slug": "justbackup-gemma-3-1b-it-heretic-extreme-uncensored-abliterated",
+  "author": "Justbackup",
+  "url": "https://huggingface.co/Justbackup/gemma-3-1b-it-heretic-extreme-uncensored-abliterated",
+  "created_at": "2026-08-19T16:21:32.000Z",
+  "updated_at": "2026-08-19T16:21:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "finetune",
+    "conversational",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:finetune:google/gemma-3-1b-it",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2037885004,
+  "storage_human": "2.0 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-3-1b-it-heretic-extreme-uncensored-abliterated",
+      "url": "https://huggingface.co/DavidAU/gemma-3-1b-it-heretic-extreme-uncensored-abliterated",
+      "snippet": "gemma-3-1b-it-heretic-extreme-uncensored-abliterated ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "gemma-3-1b-it-heretic-extreme-uncensored-abliterated",
+      "url": "https://huggingface.co/DavidAU/gemma-3-1b-it-heretic-extreme-uncensored-abliterated/blob/main/README.md",
+      "snippet": "gemma-3-1b-it-heretic-extreme-uncensored-abliterated Ablitered/uncensored by Heretic v1.0.1 Refusals: 3/100, KL divergence: 0.33 Original Gemma 1B-IT Refusal rate: 99/100 Context: 32k (default) ENJOY THE FREEDOM! NOTE: Refusal rate was a stronger goal here than KL divergence. See also this model with slightly higher refusal rate (17/100), but much better KL Divergence (0.09) . https ..."
+    },
+    {
+      "title": "Gemma 3 1b It Heretic Extreme Uncensored Abliterated",
+      "url": "https://antbase.ai/models/gemma-3-1b-it-heretic-extreme-uncensored-abliterated",
+      "snippet": "Overview Gemma 3 1b It Heretic Extreme Uncensored Abliterated is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "gemma-3-1b-it-heretic-extreme-uncensored-abliterated",
+      "url": "https://friendli.ai/models/DavidAU/gemma-3-1b-it-heretic-extreme-uncensored-abliterated",
+      "snippet": "Deploy gemma-3-1b-it-heretic-extreme-uncensored-abliterated with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "gemma-3-1b-it-heretic-extreme-uncensored-abliterated",
+      "url": "https://friendli.ai/models/BIGJUTT/gemma-3-1b-it-heretic-extreme-uncensored-abliterated",
+      "snippet": "Run gemma-3-1b-it-heretic-extreme-uncensored-abliterated with FriendliAI inference. Ablitered/uncensored by Heretic v1.0.1."
+    }
+  ]
+}

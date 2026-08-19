@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Miker66/distilbert-test",
+  "slug": "miker66-distilbert-test",
+  "author": "Miker66",
+  "url": "https://huggingface.co/Miker66/distilbert-test",
+  "created_at": "2026-08-19T12:58:47.000Z",
+  "updated_at": "2026-08-19T12:59:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistilBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/distilbert",
+      "snippet": "DistilBERT DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model."
+    },
+    {
+      "title": "intern-test-org/distilbert-test-model · Hugging Face",
+      "url": "https://huggingface.co/intern-test-org/distilbert-test-model",
+      "snippet": "Model Details Model Description: This model is a fine-tune checkpoint of DistilBERT-base-uncased, fine-tuned on SST-2. This model reaches an accuracy of 91.3 on the dev set (for comparison, Bert bert-base-uncased version reaches an accuracy of 92.7)."
+    },
+    {
+      "title": "distilbert · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/distilbert",
+      "snippet": "nlp natural-language-processing tensorflow nlu keras transformers tf2 transfer-learning albert bert dialogue-systems joint-models natural-language-understanding model-compression conversational-ai roberta nlu-engine prunning distilbert distilroberta Updated on Mar 21, 2021 Jupyter Notebook"
+    },
+    {
+      "title": "DistilBERT in Natural Language Processing - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/distilbert-in-natural-language-processing/",
+      "snippet": "DistilBERT is a lightweight version of BERT (Bidirectional Encoder Representations from Transformers) developed by Hugging Face using knowledge distillation. It retains most of BERT&#x27;s language understanding capabilities while reducing model size, memory usage, and computational requirements, making it suitable for resource-constrained devices ..."
+    },
+    {
+      "title": "distilbert-model · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/distilbert-model",
+      "snippet": "A reinforcement learning-based system designed to detect and prevent jailbreak attempts in AI models, ensuring safe and controlled model behavior under adversarial conditions."
+    }
+  ]
+}

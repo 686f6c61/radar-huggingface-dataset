@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SaketR1/gemma-sft-corr-amb-mix-clear",
+  "slug": "saketr1-gemma-sft-corr-amb-mix-clear",
+  "author": "SaketR1",
+  "url": "https://huggingface.co/SaketR1/gemma-sft-corr-amb-mix-clear",
+  "created_at": "2026-08-19T16:38:19.000Z",
+  "updated_at": "2026-08-19T17:27:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 869563371,
+  "storage_human": "870 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "SaketR1/uncertainty-sft-correct-ambiguous-mixed-clear at main",
+      "url": "https://huggingface.co/SaketR1/uncertainty-sft-correct-ambiguous-mixed-clear/tree/main",
+      "snippet": "Docker Model Runner How to use SaketR1/uncertainty-sft-correct-ambiguous-mixed-clear with Docker Model Runner: ... main uncertainty-sft-correct-ambiguous-mixed-clear 8.87 GB Ctrl+K Ctrl+K 1 contributor History:2 commits SaketR1 Training in progress, epoch 1 e9d87ea verifiedabout 3 hours ago .gitattributes Safe 1.57 kBTraining in progress, epoch ..."
+    },
+    {
+      "title": "google/gemma-7b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma: Open Models Based on Gemini Research and Technology",
+      "url": "https://arxiv.org/html/2403.08295v3",
+      "snippet": "We trained Gemma models on up to 6T tokens of text, using architectures, data, and training recipes inspired by the Gemini model family. Like Gemini, these models achieve strong generalist capabilities in text domains, alongside state-of-the-art understanding and reasoning skills at scale. With this work, we release both pre-trained and fine-tuned checkpoints, as well as an open-source ..."
+    }
+  ]
+}

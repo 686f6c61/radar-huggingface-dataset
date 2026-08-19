@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "CrossNow/Qwen3.8-27B-Uncensored",
+  "slug": "crossnow-qwen3-8-27b-uncensored",
+  "author": "CrossNow",
+  "url": "https://huggingface.co/CrossNow/Qwen3.8-27B-Uncensored",
+  "created_at": "2026-08-19T14:24:03.000Z",
+  "updated_at": "2026-08-19T14:24:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "uncensored",
+    "abliterated",
+    "qwen3.8",
+    "mtp",
+    "vision",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55582996517,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Uncensored API: Pricing, Sample Text, Docs - Wiro AI",
+      "url": "https://wiro.ai/models/qwen/qwen3-8-27b-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored is a long-context text model for coding and research, tuned to reduce refusals. Try Qwen 3.8 27B Uncensored by Qwen on Wiro now."
+    },
+    {
+      "title": "CrossNow/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/CrossNow/Qwen3.8-27B-GGUF",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    },
+    {
+      "title": "Qwen3.8-27B — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is an AI model released by Qwen on Friday, Aug 14 2026, 11 days after Qwen3.8-Max. It is an open-weight model — the trained weights are available to download and run."
+    },
+    {
+      "title": "qwen3.8-27b - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    }
+  ]
+}

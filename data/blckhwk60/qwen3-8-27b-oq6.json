@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BLCKHWK60/Qwen3.8-27B-oQ6",
+  "slug": "blckhwk60-qwen3-8-27b-oq6",
+  "author": "BLCKHWK60",
+  "url": "https://huggingface.co/BLCKHWK60/Qwen3.8-27B-oQ6",
+  "created_at": "2026-08-19T15:11:59.000Z",
+  "updated_at": "2026-08-19T15:16:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6476406000,
+  "parameters_human": "6.48B",
+  "storage_bytes": 23318306959,
+  "storage_human": "23.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "qwen/qwen3.8-27b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8 27B Qwen3.8 27B is a compact, deployment-friendly dense vision-language model built on the Qwen3.5 architecture. It delivers stronger performance across coding, professional work, research, and long-horizon agentic tasks. Highlights Agent Execution: stronger autonomous planning and environment-feedback handling improve reliability on complex, multi-step tasks. Flexible Thinking Control ..."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    },
+    {
+      "title": "Qwen3.8-27B Explained: Hybrid Attention, 262K Context, New Benchmarks",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-architecture-benchmarks",
+      "snippet": "What is Qwen3.8-27B? Qwen3.8-27B is a dense 27 billion parameter model released under the Apache 2.0 license, built around a hybrid attention design that mixes linear attention with full attention across its 64 layers."
+    }
+  ]
+}

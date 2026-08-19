@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "intura-ai/guard-prompt-injection-id-en",
+  "slug": "intura-ai-guard-prompt-injection-id-en",
+  "author": "intura-ai",
+  "url": "https://huggingface.co/intura-ai/guard-prompt-injection-id-en",
+  "created_at": "2026-08-19T12:55:30.000Z",
+  "updated_at": "2026-08-19T12:59:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52824391,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Protect enterprise generative AI applications with prompt injection ...",
+      "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-ai-prompt-injection-protection",
+      "snippet": "Protect your enterprise generative AI apps from prompt injection attacks with Microsoft&#x27;s AI Gateway prompt injection protection."
+    },
+    {
+      "title": "Prompt Injection - LLM Guard",
+      "url": "https://protectai.github.io/llm-guard/input_scanners/prompt_injection/",
+      "snippet": "This model is a fine-tuned version of the microsoft/deberta-v3-base on multiple dataset of prompt injections and normal prompts to classify text. It aims to identify prompt injections, classifying inputs into two categories: 0 for no injection and 1 for injection detected."
+    },
+    {
+      "title": "GitHub - seojoonkim/prompt-guard: Advanced prompt injection defense ...",
+      "url": "https://github.com/seojoonkim/prompt-guard",
+      "snippet": "Advanced prompt injection defense system for AI agents. Multi-language detection, severity scoring, and security auditing. - seojoonkim/prompt-guard"
+    },
+    {
+      "title": "Understanding prompt injections - OpenAI",
+      "url": "https://openai.com/safety/prompt-injections/",
+      "snippet": "Prompt injection is a type of social engineering attack specific to conversational AI. Early AI systems were conversations between a single user and a single AI agent. In AI products today, conversations may include content from many sources, including the internet. Prompt injections occur when a third-party—not the user nor the AI—misleads the model by injecting malicious instructions ..."
+    },
+    {
+      "title": "PromptIntel: Prompt Injection & AI Threat Intelligence Database (89 ...",
+      "url": "https://guardion.ai/promptintel",
+      "snippet": "Prompt Injection & AI Threat Intelligence Database PromptIntel is a free, continuously updated database of prompt injection attacks, jailbreaks, and LLM attack techniques, maintained by GuardionAI. Every threat is documented with its methodology, severity rating, framework mappings, and real prompt examples, so security teams can study — and test against — the techniques attackers actually ..."
+    }
+  ]
+}

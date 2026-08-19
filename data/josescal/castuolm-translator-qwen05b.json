@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "josescal/castuolm-translator-qwen05b",
+  "slug": "josescal-castuolm-translator-qwen05b",
+  "author": "josescal",
+  "url": "https://huggingface.co/josescal/castuolm-translator-qwen05b",
+  "created_at": "2026-08-19T16:44:15.000Z",
+  "updated_at": "2026-08-19T16:47:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ext",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "castuo",
+    "extremeno",
+    "translation",
+    "lora",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "ext",
+    "es",
+    "dataset:josescal/castuoLM-es-ext-parallel",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46658996,
+  "storage_human": "47 MB",
+  "base_model": "models/base_qwen",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google&#x27;s service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+    },
+    {
+      "title": "DeepL Translator | World&#x27;s Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translator Deliver accurate, enterprise-grade translations with pro features like Glossaries, Rules, Clarify and more."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Best LLMs for Translation (August 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/translation",
+      "snippet": "As of August 18, 2026, the top model in best llms for translation on the BenchLM leaderboard is Qwen3.7 Max with a score of 100. Last verified: August 18, 2026 Translation quality tracks the multilingual category: benchmarks that test comprehension and generation across languages. The frontier models at the top of this table are effectively tied on major-language pairs; the gaps show up in ..."
+    },
+    {
+      "title": "AI Translator — Translate Text Privately with Local LLM",
+      "url": "https://utilio.solutions/ai-translate/",
+      "snippet": "How to aI Translator Install Ollama (ollama.com) and pull a multilingual model: ollama pull qwen2.5 Paste your source text into the left pane. Select the target language from the dropdown. Click Translate and copy the result."
+    }
+  ]
+}

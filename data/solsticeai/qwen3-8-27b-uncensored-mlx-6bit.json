@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "SolsticeAI/Qwen3.8-27B-Uncensored-mlx-6Bit",
+  "slug": "solsticeai-qwen3-8-27b-uncensored-mlx-6bit",
+  "author": "SolsticeAI",
+  "url": "https://huggingface.co/SolsticeAI/Qwen3.8-27B-Uncensored-mlx-6Bit",
+  "created_at": "2026-08-19T15:08:13.000Z",
+  "updated_at": "2026-08-19T15:08:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "qwen",
+    "qwen3",
+    "qwen3.8",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "bf16",
+    "post-training",
+    "fine-tuning",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:finetune:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5885566464,
+  "parameters_human": "5.89B",
+  "storage_bytes": 21876371320,
+  "storage_human": "21.9 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit - Hugging Face",
+      "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit",
+      "snippet": "This Repository, By SolsticeAI holds an ultra efficient, high performance (>99.986% performace retention) of the DavidAU Qwen3.8-27b finetune, in 6 bit MLX. IMPORTANT: The COLD FUSION (GAIN+Unsloth) method of training maintains 99% of performance of BF16, at both 8 bit and 4 bit levels. Model exceeds all Qwen 3.8, 3.6 and 3.5 27B critical core benchmarks. A model that gets down to business ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored API: Pricing, Sample Text, Docs - Wiro AI",
+      "url": "https://wiro.ai/models/qwen/qwen3-8-27b-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored is a long-context text model for coding and research, tuned to reduce refusals. Try Qwen 3.8 27B Uncensored by Qwen on Wiro now."
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-MLX-6bit on M3 Max (40c) - omlx.ai",
+      "url": "https://omlx.ai/benchmarks/performance/qc13i63l",
+      "snippet": "M3 Max (40c) · 64 GB · 6bit · 2026-08-19 Copy Performance 1k tokens 211.3 PP tok/s 16.1 TG tok/s 4846 TTFT (ms) 22.1 Peak mem (GB) Hardware ChipM3 Max (40c) Memory64 GB GPU Cores40 Software oMLXv0.6.1 macOSmacOS 26.5.2 Context1,024 Performance by Context Length ... Batching Results ... Model Settings Show all 22 settings benchmark ..."
+    }
+  ]
+}

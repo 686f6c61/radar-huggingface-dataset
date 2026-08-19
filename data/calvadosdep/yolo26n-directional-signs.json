@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "calvadosdep/yolo26n-directional-signs",
+  "slug": "calvadosdep-yolo26n-directional-signs",
+  "author": "calvadosdep",
+  "url": "https://huggingface.co/calvadosdep/yolo26n-directional-signs",
+  "created_at": "2026-08-18T12:16:34.000Z",
+  "updated_at": "2026-08-19T19:10:40.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo26",
+    "object-detection",
+    "road-signs",
+    "dataset:calvadosdep/dir-signs-training",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27232857,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "calvadosdep/yolo26n-directional-signs · Hugging Face",
+      "url": "https://huggingface.co/calvadosdep/yolo26n-directional-signs",
+      "snippet": "YOLO26n — French directional road sign detector YOLO26n fine-tuned to detect French directional road signs (destination sign assemblies) and roundabout signs in street-level imagery. Trained with strong scale augmentation for robustness across inference resolutions (640-1280)."
+    },
+    {
+      "title": "calvadosdep (Calvados Department) - Hugging Face",
+      "url": "https://huggingface.co/calvadosdep",
+      "snippet": "Org profile for Calvados Department on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "YOLO26n Model by Harsh - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/harsh/yolo26/yolo26n",
+      "snippet": "YOLO26n model from the YOLO26 project by Harsh. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "YOLO26n Model by Cardinal Buffalo - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/cardinal-buffalo/yolo26/yolo26n",
+      "snippet": "YOLO26n model from the YOLO26 project by Cardinal Buffalo. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "Ultralytics YOLO26",
+      "url": "https://docs.ultralytics.com/models/yolo26",
+      "snippet": "YOLO26 from Ultralytics delivers unified, real-time, end-to-end vision models optimized for accurate and efficient deployment."
+    }
+  ]
+}

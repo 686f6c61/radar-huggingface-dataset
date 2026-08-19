@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AmixDigital/Laguna-S-2.1-Uncensored-oQ4e",
+  "slug": "amixdigital-laguna-s-2-1-uncensored-oq4e",
+  "author": "AmixDigital",
+  "url": "https://huggingface.co/AmixDigital/Laguna-S-2.1-Uncensored-oQ4e",
+  "created_at": "2026-08-03T15:19:20.000Z",
+  "updated_at": "2026-08-16T10:29:23.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "laguna",
+    "oq",
+    "quantized",
+    "moe",
+    "uncensored",
+    "apple-silicon",
+    "macos",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:2602.06036",
+    "base_model:SC117/Laguna-S-2.1-Uncensored",
+    "base_model:quantized:SC117/Laguna-S-2.1-Uncensored",
+    "license:openmdw-1.1",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 980,
+  "trending_score": 0,
+  "parameters": 18767551232,
+  "parameters_human": "18.77B",
+  "storage_bytes": 67664427590,
+  "storage_human": "67.7 GB",
+  "base_model": "SC117/Laguna-S-2.1-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AmixDigital--Laguna-S-2.1-Uncensored-oQ4e - omlx.ai",
+      "url": "https://omlx.ai/benchmarks/performance/uqagbr5g",
+      "snippet": "637.5 PP tok/s, 53.1 TG tok/s — AmixDigital--Laguna-S-2.1-Uncensored-oQ4e (4bit) on M3 Ultra (60c) 256GB"
+    },
+    {
+      "title": "mlx-community/Laguna-S-2.1-oQ4e · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Laguna-S-2.1-oQ4e",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Laguna-S-2.1-Uncensored-oQ4e on M5 Max (40c) — oMLX Benchmark",
+      "url": "https://omlx.ai/benchmarks/uag66gw3",
+      "snippet": "965.9 PP tok/s, 63.3 TG tok/s — Laguna-S-2.1-Uncensored-oQ4e (4bit) on M5 Max (40c) 128GB"
+    },
+    {
+      "title": "Laguna-S-2.1 - a mlx-community Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlx-community/laguna-s-21",
+      "snippet": "MLX versions of Laguna-S-2.1"
+    },
+    {
+      "title": "Laguna S 2.1 - ollama.com",
+      "url": "https://ollama.com/library/laguna-s-2.1",
+      "snippet": "Laguna S 2.1 Overview Laguna S 2.1 is a Mixture-of-Experts model built for agentic coding and extended reasoning. It is the larger sibling of Laguna XS 2.1, trading a bigger memory footprint for stronger coding and reasoning performance while keeping a small activated-parameter count so it stays practical to run on a single high-memory machine. Key Specifications Total Parameters: 118B (8B ..."
+    }
+  ]
+}

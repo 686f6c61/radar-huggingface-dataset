@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "thisavros/qwen25-1_5b-text2sql-lora-merged",
+  "slug": "thisavros-qwen25-1_5b-text2sql-lora-merged",
+  "author": "thisavros",
+  "url": "https://huggingface.co/thisavros/qwen25-1_5b-text2sql-lora-merged",
+  "created_at": "2026-08-19T19:32:21.000Z",
+  "updated_at": "2026-08-19T19:35:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Read the Docs - Qwen",
+      "url": "https://qwen.readthedocs.io/",
+      "snippet": "Welcome to Qwen! ¶ Qwen is the large language model and large multimodal model series of the Qwen Team, Alibaba Group. Both language models and multimodal models are pretrained on large-scale multilingual and multimodal data and post-trained on quality data for aligning to human preferences. Qwen is capable of natural language understanding, text generation, vision understanding, audio ..."
+    },
+    {
+      "title": "GitHub - Shiverion/text2sql-finetuning: Fine-tune a <=3B LLM (Qwen2.5 ...",
+      "url": "https://github.com/Shiverion/text2sql-finetuning",
+      "snippet": "Text2SQL — Fine-tuning a ≤3B LLM for SQL generation Fine-tune a small (≤3B) open-source LLM so a non-technical user can ask a question in plain English — \"Who were the top performing merchants last quarter?\" — and get back an executable SQL query. Built to run entirely on free resources (Google Colab T4, open datasets, open models)."
+    }
+  ]
+}

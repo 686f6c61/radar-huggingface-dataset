@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ITLL/Nano.Deep.Reasoner.11m-HyperMini",
+  "slug": "itll-nano-deep-reasoner-11m-hypermini",
+  "author": "ITLL",
+  "url": "https://huggingface.co/ITLL/Nano.Deep.Reasoner.11m-HyperMini",
+  "created_at": "2026-08-19T11:07:00.000Z",
+  "updated_at": "2026-08-19T12:43:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nano_deep_reasoner_hypermini",
+    "causal-lm",
+    "decoder-only",
+    "reasoning",
+    "deep-reasoning",
+    "recurrent-transformer",
+    "adaptive-computation",
+    "chain-of-thought",
+    "adaptive-reasoning",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14934003,
+  "parameters_human": "14.9M",
+  "storage_bytes": 356886596,
+  "storage_human": "357 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek Reasoner API - NanoGPT - AI Model APIs",
+      "url": "https://aimodelapis.com/providers/nano-gpt/nano-gpt-deepseek-reasoner",
+      "snippet": "DeepSeek Reasoner is a high-performance LLM available via the NanoGPT API, ideal for scalable text generation and natural language processing. This model delivers cost-effective pricing at $0.40/1M input and $1.70/1M output tokens."
+    },
+    {
+      "title": "DeepSeek Reasoner model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/deepseek-reasoner",
+      "snippet": "DeepSeek-R1 is now live and open source, rivaling OpenAI&#x27;s Model o1."
+    },
+    {
+      "title": "Models | Try NVIDIA NIM APIs",
+      "url": "https://build.nvidia.com/models?q=image&label=reasoning",
+      "snippet": "cosmos3-nano-reasoner Vision language model that excels in understanding the physical world using structured reasoning on videos or images."
+    },
+    {
+      "title": "Models | Try NVIDIA NIM APIs",
+      "url": "https://build.nvidia.com/models?section=deploy&label=Reasoning%2Cvideo+understanding",
+      "snippet": "cosmos3-nano-reasoner Vision language model that excels in understanding the physical world using structured reasoning on videos or images. video understanding + 8 Items per page 24 1 1 of 1 pages 2K 1mo NVIDIA Downloadable"
+    },
+    {
+      "title": "AI Models That Run on Jetson Orin Nano Super (8GB) — A Practical Guide",
+      "url": "https://forums.developer.nvidia.com/t/ai-models-that-run-on-jetson-orin-nano-super-8gb-a-practical-guide/365412",
+      "snippet": "Are you looking to run AI models on your NVIDIA Jetson Orin Nano Super (8GB)? This guide covers tested models across LLMs, VLMs, Speech, and Agent frameworks — all fitting within the 8GB memory budget."
+    }
+  ]
+}

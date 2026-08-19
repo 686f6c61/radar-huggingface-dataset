@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Lev384501/qwen3-0.6b-russian-dialogues-Q4_K_M-GGUF",
+  "slug": "lev384501-qwen3-0-6b-russian-dialogues-q4_k_m-gguf",
+  "author": "Lev384501",
+  "url": "https://huggingface.co/Lev384501/qwen3-0.6b-russian-dialogues-Q4_K_M-GGUF",
+  "created_at": "2026-07-08T20:29:23.000Z",
+  "updated_at": "2026-08-19T16:23:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "ru",
+    "dataset:Den4ikAI/russian_dialogues",
+    "base_model:ya-yje-krasni/qwen3-0.6b-russian-dialogues",
+    "base_model:quantized:ya-yje-krasni/qwen3-0.6b-russian-dialogues",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 793400960,
+  "storage_human": "793 MB",
+  "base_model": "ya-yje-krasni/qwen3-0.6b-russian-dialogues",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3-0.6b-russian-dialogues-Q4_K_M-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Lev384501/qwen3-0.6b-russian-dialogues-Q4_K_M-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lev384501/qwen3-0.6b-russian-dialogues · Hugging Face",
+      "url": "https://huggingface.co/Lev384501/qwen3-0.6b-russian-dialogues",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lev384501/qwen3-0.6b-russian-dialogues: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/Lev384501/qwen3-0.6b-russian-dialogues",
+      "snippet": "Model: Lev384501/qwen3-0.6b-russian-dialogues Source: Original Platform 2026-07-25 10:22:09 +08:00 .gitattributes 初始化项目，由ModelHub XC社区提供模型 2026-07-25 10:22:09 +08:00 config.json 初始化项目，由ModelHub XC社区提供模型 2026-07-25 10:22:09 +08:00 generation_config.json 初始化项目，由ModelHub XC社区提供模型 2026-07-25 10:22:09 +08:00 model ..."
+    },
+    {
+      "title": "qwen3-0.6b-russian-dialogues/README.md at main",
+      "url": "https://dev.modelhub.org.cn/Lev384501/qwen3-0.6b-russian-dialogues/src/branch/main/README.md",
+      "snippet": "Model: Lev384501/qwen3-0.6b-russian-dialogues Source: Original Platform 2026-07-25 10:22:09 +08:00 138 B"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

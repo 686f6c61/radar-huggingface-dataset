@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "apatc/vehicle_reid_siglip2_naflex_512d",
+  "slug": "apatc-vehicle_reid_siglip2_naflex_512d",
+  "author": "apatc",
+  "url": "https://huggingface.co/apatc/vehicle_reid_siglip2_naflex_512d",
+  "created_at": "2026-08-19T18:18:36.000Z",
+  "updated_at": "2026-08-19T18:26:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "vehicle-re-identification",
+    "reid",
+    "image-retrieval",
+    "image-feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 751104697,
+  "storage_human": "751 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/siglip2-base-patch16-naflex · Hugging Face",
+      "url": "https://huggingface.co/google/siglip2-base-patch16-naflex",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2502.14786] SigLIP 2: Multilingual Vision-Language Encoders with ...",
+      "url": "https://arxiv.org/abs/2502.14786",
+      "snippet": "We introduce SigLIP 2, a family of new multilingual vision-language encoders that build on the success of the original SigLIP. In this second iteration, we extend the original image-text training objective with several prior, independently developed techniques into a unified recipe -- this includes captioning-based pretraining, self-supervised losses (self-distillation, masked prediction) and ..."
+    },
+    {
+      "title": "SigLIP2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/siglip2",
+      "snippet": "The NaFlex variant processes different types of images at the appropriate resolution (using a larger resolution to process document images for example), while also minimizing the impact of aspect ratio distortion for certain inference tasks like OCR."
+    },
+    {
+      "title": "SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic ...",
+      "url": "https://arxiv.org/html/2502.14786v1",
+      "snippet": "Finally, the NaFlex variant enables the model to support multiple resolutions with a single model checkpoint, while preserving the native image aspect ratio. We hope that our SigLIP 2 release will enable many exciting applications within the open-source community."
+    },
+    {
+      "title": "SigLIP2_inference.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/qubvel/transformers-notebooks/blob/main/notebooks/SigLIP2_inference.ipynb",
+      "snippet": "SigLIP2 inference SigLIP 2 is a zero-shot image classification model (similar to SigLIP) proposed in SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features by Michael Tschannen et al. In summary, the SigLIP 2 models release includes the following model families:"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "FenomAI/Qwen3.8-27B-NVFP4",
+  "slug": "fenomai-qwen3-8-27b-nvfp4",
+  "author": "FenomAI",
+  "url": "https://huggingface.co/FenomAI/Qwen3.8-27B-NVFP4",
+  "created_at": "2026-08-15T01:52:14.000Z",
+  "updated_at": "2026-08-15T01:52:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "unsloth",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 19869895952,
+  "parameters_human": "19.87B",
+  "storage_bytes": 23437581912,
+  "storage_human": "23.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FenomAI/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/FenomAI/Qwen3.8-27B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B on DGX Spark using vllm: NVFP4 vs FP8 performance",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-27b-on-dgx-spark-using-vllm-nvfp4-vs-fp8-performance/380258",
+      "snippet": "Hello, I benchmarked two quantizations of the same Qwen3.8-27B on a single Nvidia DGX Spark Qwen/Qwen3.8-27B-FP8 — fine-grained FP8 (block 128, e4m3), official Qwen FP8 build. unsloth/Qwen3.8-27B-NVFP4 — Unsloth Dynamic NVFP4 (4-bit MLP + 8-bit attention + FP8 KV cache). The results show a consistent 30-34 % faster generation throughput for the NVFP4 model from Unsloth, plus a smaller ..."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen3.8 27B NVFP4 — ThinkLLM",
+      "url": "https://thinkllm.dev/models/qwen3-8-27b-nvfp4",
+      "snippet": "A mid-sized multimodal model that handles both text and image inputs, quantized to NVFP4 format by RadixArk from Alibaba&#x27;s Qwen3 family. The NVFP4 quantization reduces memory footprint while targeting NVIDIA hardware, making the 27B parameter model more accessible for local deployment. Trade-offs typical of quantized models apply — slight precision loss compared to the full-precision original."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "simonykq/gl-foundation-model-h256",
+  "slug": "simonykq-gl-foundation-model-h256",
+  "author": "simonykq",
+  "url": "https://huggingface.co/simonykq/gl-foundation-model-h256",
+  "created_at": "2026-08-19T14:38:18.000Z",
+  "updated_at": "2026-08-19T14:38:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5843712,
+  "parameters_human": "5.8M",
+  "storage_bytes": 23382896,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "simonykq (Simon Yu) - Hugging Face",
+      "url": "https://huggingface.co/simonykq",
+      "snippet": "Recent Activity new activityabout 11 hours ago simonykq/gl-foundation-model-demo: Apply for a GPU community grant: Personal project updated a Spaceabout 11 hours ago simonykq/gl-foundation-model-demo published a Spaceabout 11 hours ago simonykq/gl-foundation-model-demo View all activity"
+    },
+    {
+      "title": "simonykq (Simon Yu) - Hugging Face",
+      "url": "https://huggingface.co/simonykq/models",
+      "snippet": "Recent Activity new activityabout 17 hours ago simonykq/gl-foundation-model-demo: Apply for a GPU community grant: Personal project updated a Spaceabout 17 hours ago simonykq/gl-foundation-model-demo published a Spaceabout 17 hours ago simonykq/gl-foundation-model-demo View all activity"
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Serving generative AI models can be difficult—Gemini Enterprise Agent Platform handles model deployment and serving for you Explore models To view the list of available Gemini Enterprise Agent Platform and open source foundation, tunable, and task-specific models, go to the Model Garden page in the Google Cloud console. Go to Model Garden"
+    },
+    {
+      "title": "Awesome Robot Foundation Models 2025-2026 - GitHub",
+      "url": "https://github.com/jinruih2/Awesome-Robot-Foundation-Models-2025-2026",
+      "snippet": "A curated list of 90+ robot foundation models released in 2025 and 2026, organized by category. Covers Vision-Language-Action (VLA) models, world models, humanoid foundation models, locomotion, navigation, manipulation policies, and more."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    }
+  ]
+}

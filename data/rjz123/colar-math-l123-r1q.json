@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rjz123/colar-math-l123-r1q",
+  "slug": "rjz123-colar-math-l123-r1q",
+  "author": "rjz123",
+  "url": "https://huggingface.co/rjz123/colar-math-l123-r1q",
+  "created_at": "2026-08-19T15:53:17.000Z",
+  "updated_at": "2026-08-19T15:54:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "latent-reasoning",
+    "colar",
+    "research",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124376011,
+  "storage_human": "124 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv:2505.16552v1 [cs.CL] 22 May 2025",
+      "url": "https://arxiv.org/pdf/2505.16552v1",
+      "snippet": "Abstract Large Language Models (LLMs) achieve superior performance through Chain-of-Thought (CoT) reasoning, but these token-level reasoning chains are compu-tationally expensive and inefficient. In this paper, we introduce Compressed La-tent Reasoning (CoLaR), a novel framework that dynamically compresses rea-soning processes in latent space through a two-stage training approach. First ..."
+    },
+    {
+      "title": "PDF Think Silently, Think Fast: Dynamic Latent Compression of LLM Reasoning ...",
+      "url": "https://papers.nips.cc/paper_files/paper/2025/file/0706261aedab63814a2b73c32564b4c4-Paper-Conference.pdf",
+      "snippet": "In contrast, CoLaR advances auto-regressive latent reasoning by introducing a novel next com-pressed embedding objective. This allows the model to capture the semantics of multiple word tokens within a single latent variable and reason with dynamic chain lengths, leading to improved efficiency and performance."
+    },
+    {
+      "title": "GitHub - xiaomi-research/colar: [NeurIPS 2025] Think Silently, Think ...",
+      "url": "https://github.com/xiaomi-research/colar",
+      "snippet": "[NeurIPS 2025] Think Silently, Think Fast: Dynamic Latent Compression of LLM Reasoning Chains - xiaomi-research/colar"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 660+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

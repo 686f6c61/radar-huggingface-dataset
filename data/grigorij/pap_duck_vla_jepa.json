@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Grigorij/PaP_duck_vla_jepa",
+  "slug": "grigorij-pap_duck_vla_jepa",
+  "author": "Grigorij",
+  "url": "https://huggingface.co/Grigorij/PaP_duck_vla_jepa",
+  "created_at": "2026-08-19T17:08:21.000Z",
+  "updated_at": "2026-08-19T17:09:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "vla_jepa",
+    "robotics",
+    "dataset:Grigorij/PaP_duck",
+    "arxiv:2602.10098",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2770329478,
+  "parameters_human": "2.77B",
+  "storage_bytes": 6174534264,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grigorij/Pi05_pap_duck · Hugging Face",
+      "url": "https://huggingface.co/Grigorij/Pi05_pap_duck",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world ..."
+    },
+    {
+      "title": "GitHub - ginwind/VLA-JEPA: [ECCV 2026] VLA-JEPA: Enhancing Vision ...",
+      "url": "https://github.com/ginwind/VLA-JEPA",
+      "snippet": "VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model ⭐ If our project helps you, please give us a star on GitHub to support us!"
+    },
+    {
+      "title": "Policy-Guided World Model Planning for Language-Conditioned Visual ...",
+      "url": "https://arxiv.org/html/2603.25981v1",
+      "snippet": "Abstract Navigating to a visually specified goal given natural language instructions remains a fundamental challenge in embodied AI. Existing approaches either rely on reactive policies that struggle with long-horizon planning, or employ world models that suffer from poor action initialization in high-dimensional spaces."
+    },
+    {
+      "title": "Duck.ai by DuckDuckGo. Private AI chat. Free.",
+      "url": "https://duck.ai/",
+      "snippet": "Use ChatGPT, Claude, and other AIs, privately. Protect chats from hackers, scammers, and companies. Keep info confidential. Free. No account required."
+    },
+    {
+      "title": "JEPA-VLA: Video Predictive Embedding is Needed for VLA Models | AI ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/jepa-vla-video-predictive-embedding-is-needed",
+      "snippet": "The HTML shows only the structure and metadata of an arxiv paper titled \"JEPA-VLA: Video Predictive Embedding is Needed for VLA Models,\" but the main text, methodology, results, and findings are missing from the document."
+    }
+  ]
+}

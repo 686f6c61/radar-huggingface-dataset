@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ForgeWM/ForgeWM",
+  "slug": "forgewm-forgewm",
+  "author": "ForgeWM",
+  "url": "https://huggingface.co/ForgeWM/ForgeWM",
+  "created_at": "2026-05-29T10:04:28.000Z",
+  "updated_at": "2026-08-19T12:20:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-model",
+    "minecraft",
+    "video-generation",
+    "causal-forcing",
+    "action-conditioned",
+    "arxiv:2608.14022",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69701142456,
+  "storage_human": "69.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - asdfo123/ForgeWM: Train a real-time, playable Video World ...",
+      "url": "https://github.com/asdfo123/ForgeWM",
+      "snippet": "Train a real-time, playable Video World Models on 8 GPUs — keyboard & mouse control & gamepad, fully open and reproducible. - asdfo123/ForgeWM"
+    },
+    {
+      "title": "ForgeWM/ForgeWM · Hugging Face",
+      "url": "https://huggingface.co/ForgeWM/ForgeWM",
+      "snippet": "ForgeWM Checkpoints Model checkpoints for ForgeWM, a reproducible progressive-causal training recipe for few-step, action-conditioned video world models."
+    },
+    {
+      "title": "ForgeWM (ForgeWM) - Hugging Face",
+      "url": "https://huggingface.co/ForgeWM/models",
+      "snippet": "Org profile for ForgeWM on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ForgeWM/README.md at main · asdfo123/ForgeWM · GitHub",
+      "url": "https://github.com/asdfo123/ForgeWM/blob/main/README.md",
+      "snippet": "Train a real-time, playable Minecraft Video World Models on 8 GPUs — keyboard & mouse control, fully open and reproducible. - asdfo123/ForgeWM"
+    },
+    {
+      "title": "ForgeWM: Progressive Causal Training for Few-Step Action-Conditioned ...",
+      "url": "https://arxiv.org/html/2608.14022",
+      "snippet": "1]CUHK 2]Tencent PCG 3]FDU 4]Shanghai AI Laboratory 5]HKUST &#92;contribution [*]Equal contribution &#92;contribution [†]Corresponding author &#92;contribution [] Contact: Xinye Li () &#92;reportshorttitle ForgeWM: Progressive Causal Training for Few-Step World Models &#92;metadata [Resources] Page Code Models &#92;aftertitleFigure 1: ForgeWM rollouts. Minecraft (top) under keyboard-mouse control and an FPS ..."
+    }
+  ]
+}

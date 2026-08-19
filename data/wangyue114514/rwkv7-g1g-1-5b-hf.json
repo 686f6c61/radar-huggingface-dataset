@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "wangyue114514/rwkv7-g1g-1.5b-hf",
+  "slug": "wangyue114514-rwkv7-g1g-1-5b-hf",
+  "author": "wangyue114514",
+  "url": "https://huggingface.co/wangyue114514/rwkv7-g1g-1.5b-hf",
+  "created_at": "2026-08-19T11:29:12.000Z",
+  "updated_at": "2026-08-19T13:04:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rwkv7_native",
+    "text-generation",
+    "rwkv",
+    "rwkv7",
+    "recurrent",
+    "causal-lm",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1527404544,
+  "parameters_human": "1.53B",
+  "storage_bytes": 3054892712,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BlinkDL/rwkv7-g1 · Hugging Face",
+      "url": "https://huggingface.co/BlinkDL/rwkv7-g1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "erenyeager-1/RWKV7-G1g-1.5B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/erenyeager-1/RWKV7-G1g-1.5B-GGUF",
+      "snippet": "The fields like G0 / G1a / G1b in RWKV model names indicate versions of the training data. In terms of data quality, the ranking is: G1g > G1f > G1e > G1d > G1c > G1b > G1a2 > G1a > G1 > G0a2 > G0."
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    },
+    {
+      "title": "推进预训练纯RNN：RWKV-7 G1g 13B/7B Demo - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/2048762009949409869",
+      "snippet": "我在5月发布了RWKV-7 G1g（在6月发布更强的G1h），现在做了批量生成15个网页的Gradio Demo，方便大家测试。下面是测试没训练过的prompt的效果： 注意目前发布的RWKV-7 G系列，都是纯预训练模型，无中训练，无后训…"
+    },
+    {
+      "title": "GitHub - BlinkDL/RWKV-LM: RWKV (pronounced RwaKuv) is an RNN with great ...",
+      "url": "https://github.com/BlinkDL/RWKV-LM",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 \"Goose\". So it&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding. - BlinkDL/RWKV-LM"
+    }
+  ]
+}

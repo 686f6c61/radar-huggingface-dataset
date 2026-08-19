@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "efanuy/Taxi-v3",
+  "slug": "efanuy-taxi-v3",
+  "author": "efanuy",
+  "url": "https://huggingface.co/efanuy/Taxi-v3",
+  "created_at": "2026-08-19T12:59:40.000Z",
+  "updated_at": "2026-08-19T12:59:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146153,
+  "storage_human": "146153 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Evanou/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/Evanou/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "huggingcats/Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/huggingcats/Taxi-v3",
+      "snippet": "# **Q-Learning** Agent playing1 **Taxi-v3** This is a trained model of a **Q-Learning** agent playing **Taxi-v3** . ## Usage ```python model = load_from_hub (repo_id ..."
+    },
+    {
+      "title": "Q-Learning with Taxi-v3.ipynb - Colab",
+      "url": "https://colab.research.google.com/gist/simoninithomas/466c81aa1c2a07dd14793240c6d033c5/q-learning-with-taxi-v3.ipynb",
+      "snippet": "Here we&#x27;ll create the Taxi-v3 environment 🚕. [Environment] Our environment looks like this: It&#x27;s a 5x5 grid world Our 🚕 is spawned randomly in a square. The passenger is spawned randomly in one of the 4 possible locations (R, B, G, Y) and wishes to go in one of the 4 possibles locations too. The reward system: -1 for each timestep +20 for successfully deliver the passenger -10 for ..."
+    },
+    {
+      "title": "GitHub - louaibenaissa/Taxi-v3: Using model free RL to train an agent ...",
+      "url": "https://github.com/louaibenaissa/Taxi-v3",
+      "snippet": "Overview This repository is a personal project aimed at applying model-free Q-Learning, a Reinforcement Learning (RL) technique, to the Taxi-v3 environment from OpenAI&#x27;s Gym. The goal is to bridge the gap between theoretical knowledge and practical application by implementing and experimenting with Q-Learning to solve the Taxi-v3 game."
+    },
+    {
+      "title": "Taxi.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/reinforcement_learning/Taxi.ipynb",
+      "snippet": "The taxi problem was first introduced in Hierarchical Reinforcement Learning with the MAXQ Value Function Decomposition. In this environment, the agent controls a taxi whose job is to pick up a passenger at one location and drop him off in his target location. Dropping of the passenger to its destination leads to a +20 reward. To encourage the agent to be as fast as possible, it receives a ..."
+    }
+  ]
+}

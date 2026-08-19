@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DPT200625/aiosima",
+  "slug": "dpt200625-aiosima",
+  "author": "DPT200625",
+  "url": "https://huggingface.co/DPT200625/aiosima",
+  "created_at": "2026-08-19T13:01:49.000Z",
+  "updated_at": "2026-08-19T13:01:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dpt200625/Autonomous-HR-Inteligence-Agent - GitHub",
+      "url": "https://github.com/dpt200625/Autonomous-HR-Inteligence-Agent/tree/main",
+      "snippet": "production-grade multi-agent HR assistant that intelligently routes user queries to specialized engines - dpt200625/Autonomous-HR-Inteligence-Agent"
+    },
+    {
+      "title": "Autonomous-HR-Inteligence-Agent/Phase1.md at main · dpt200625 ... - GitHub",
+      "url": "https://github.com/dpt200625/Autonomous-HR-Inteligence-Agent/blob/main/Phase1.md",
+      "snippet": "Overview Phase 1 implemented the foundational infrastructure for the Autonomous HR Intelligence Agent. The main focus was on local development setup with Docker, configuration management, mock HR data generation, and containerized database support."
+    },
+    {
+      "title": "Model Browser - SiMa AI",
+      "url": "https://sima.ai/model-browser/",
+      "snippet": "Experience high performance AI at the Edge. See SiMa.ai models in action."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    },
+    {
+      "title": "MossyModels - AI Aimbot Models & YOLO Detection Models",
+      "url": "https://mossymodels.com/model/",
+      "snippet": "Browse Games and Download Models Find AI detection models organized by game. Each game page lists community-uploaded models you can download for free after creating an account. Models are available in ONNX and PyTorch (.pt) formats compatible with popular object detection frameworks. Whether you need a model for Fortnite, Warzone, Apex Legends, or any other supported title, MossyModels has you ..."
+    }
+  ]
+}

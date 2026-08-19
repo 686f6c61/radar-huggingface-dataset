@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.00-seed-42",
+  "slug": "alinagonch-qwen3-4b-instruct-squad-ratio-0-00-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.00-seed-42",
+  "created_at": "2026-08-19T12:28:07.000Z",
+  "updated_at": "2026-08-19T12:28:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610538,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.90-seed-42 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.90-seed-42",
+      "snippet": "Instructions to use AlinaGonch/qwen3-4b-instruct-squad-ratio-.90-seed-42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-r4 at main",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-r4/tree/main",
+      "snippet": "Instructions to use AlinaGonch/qwen3-4b-instruct-squad-ratio-.50-r4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-4B-Instruct Transformer",
+      "url": "https://www.emergentmind.com/topics/qwen3-4b-instruct",
+      "snippet": "Qwen3-4B-Instruct is a dense autoregressive transformer with 4 billion parameters that integrates dynamic mode switching and chain-of-thought reasoning for enhanced instruction following. It employs a three-stage curriculum pretraining and UniAPL tuning, combining advanced methods like behavior calibration and hallucination mitigation to boost performance. The model enables configurable ..."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b_instruct_2507",
+      "snippet": "The Qwen3‑4B‑Instruct‑2507 is a state‑of‑the‑art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3‑4B, this variant has only instruct training without thinking mode support."
+    },
+    {
+      "title": "Qwen3-4B-Instruct-2507-FP8 Quantized GGUF Complete Walkthrough",
+      "url": "https://michaelhbrennan.com/2026/07/06/qwen3-4b-instruct-2507-fp8-quantized-gguf-complete-walkthrough/",
+      "snippet": "The **Qwen3-4B-Instruct-2507-FP8** model represents a compact yet powerful language model designed for efficient inference on consumer‑grade hardware. Built with 4 billion parameters and optimized for FP8 precision, it achieves a balance between model size and computational requirements."
+    }
+  ]
+}

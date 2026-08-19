@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alexkstern/nca_dose_50Mpt_hfbody_100M_s2_2026-08-14_17-51-21_399425-pt",
+  "slug": "alexkstern-nca_dose_50mpt_hfbody_100m_s2_2026-08-14_17-51-21_399425-pt",
+  "author": "alexkstern",
+  "url": "https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_100M_s2_2026-08-14_17-51-21_399425-pt",
+  "created_at": "2026-08-14T17:54:26.000Z",
+  "updated_at": "2026-08-14T17:54:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "nanochat_gpt",
+    "pt_fineweb-nanochatbpe-100M",
+    "ppt_nca-paper-share200-2048",
+    "seed_2",
+    "case_c",
+    "lr_trapezoid",
+    "depth_16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2969669427,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - alexkstern/nca-pre-pretraining-upstream · GitHub",
+      "url": "https://github.com/alexkstern/nca-pre-pretraining-upstream",
+      "snippet": "This repository provides an implementation of the paper, Training Language Models via Neural Cellular Automata. Pre-training large language models on natural language is costly, biased, and entangles knowledge with reasoning. We propose NCA pre-pre-training: first training a transformer on dynamics ..."
+    },
+    {
+      "title": "alexkstern (astar) - Hugging Face",
+      "url": "https://huggingface.co/alexkstern/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 14 hours ago ... published a model about 14 hours ago"
+    },
+    {
+      "title": "alexkstern/nca_owt_2026-05-29_07-48-20_610726-ppt-nca · Hugging Face",
+      "url": "https://huggingface.co/alexkstern/nca_owt_2026-05-29_07-48-20_610726-ppt-nca",
+      "snippet": "alexkstern / nca_owt_2026-05-29_07-48-20_610726-ppt-nca like 0 nanochat hf_llama vocab_64000 pt_owt-gpt2bpe-9B seed_42 ppt_nca-paper-1024 ppt_lr_trapezoid reinit License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new nca_owt_2026-05-29_07-48-20_610726-ppt-nca Outcome Training config Files"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: DeepSeek-V4-Flash-0731 by DeepSeek on Jul 31 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "AI 3D Model Generator from Text & Images | Tripo 3D",
+      "url": "https://www.tripo3d.ai/",
+      "snippet": "AI 3D model generator that turns text and images into production-ready 3D models in seconds. Free to start, no sign-up. Export GLB/STL/OBJ for games & 3D printing."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Soulfate24/AutoRound-ASHQ1_Double-Quantization_Suite",
+  "slug": "soulfate24-autoround-ashq1_double-quantization_suite",
+  "author": "Soulfate24",
+  "url": "https://huggingface.co/Soulfate24/AutoRound-ASHQ1_Double-Quantization_Suite",
+  "created_at": "2026-08-19T14:21:47.000Z",
+  "updated_at": "2026-08-19T14:46:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "quantization",
+    "gguf",
+    "autoround",
+    "imatrix",
+    "hybrid-quantization",
+    "llama.cpp",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - intel/auto-round: A SOTA quantization algorithm for high ...",
+      "url": "https://github.com/intel/auto-round",
+      "snippet": "[2026/06] AutoRound is now fully integrated into vLLM-Omni: vLLM blog [2026/05] We provide free devices for calibration-free quantization; please visit Intel Low Bit Open LLM Leaderboard for more details. [2026/05] Model free quantization is available, auto-round-rtn will now default to using the model-free approach: Doc."
+    },
+    {
+      "title": "Soulfate24 (Soul Fate) - Hugging Face",
+      "url": "https://huggingface.co/Soulfate24/models",
+      "snippet": "Agentic, JARVIS new activity 1 day ago new activity 1 day ago"
+    },
+    {
+      "title": "auto-round 0.13.0 on PyPI - Libraries.io",
+      "url": "https://libraries.io/pypi/auto-round",
+      "snippet": "AutoRound is an advanced quantization toolkit designed for Large Language Models (LLMs) and Vision-Language Models (VLMs). It achieves high accuracy at ultra-low bit widths (2-4 bits) with minimal tuning by leveraging sign-gradient descent and providing broad hardware compatibility."
+    },
+    {
+      "title": "auto-round-hpu · PyPI",
+      "url": "https://pypi.org/project/auto-round-hpu/",
+      "snippet": "AutoRound is an advanced quantization toolkit designed for Large Language Models (LLMs) and Vision-Language Models (VLMs). It achieves high accuracy at ultra-low bit widths (2-4 bits) with minimal tuning by leveraging sign-gradient descent and providing broad hardware compatibility."
+    },
+    {
+      "title": "Quantization - vLLM",
+      "url": "https://docs.vllm.ai/en/latest/features/quantization/",
+      "snippet": "Home User Guide Features Quantization Quantization Quantization trades off model precision for smaller memory footprint, allowing large models to be run on a wider range of devices."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "BrCamp/bee-350m-pt-base",
+  "slug": "brcamp-bee-350m-pt-base",
+  "author": "BrCamp",
+  "url": "https://huggingface.co/BrCamp/bee-350m-pt-base",
+  "created_at": "2026-08-19T16:33:50.000Z",
+  "updated_at": "2026-08-19T16:36:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "portuguese",
+    "pt-br",
+    "from-scratch",
+    "bee",
+    "conversational",
+    "pt",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 345359296,
+  "parameters_human": "345.4M",
+  "storage_bytes": 1381476680,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuned Models for BrCamp/bee-150m-pt-base - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:BrCamp/bee-150m-pt-base",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset BrCamp/bee-150m-pt-base Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment ..."
+    },
+    {
+      "title": "BrCamp (Bruno Campidelli) - Hugging Face",
+      "url": "https://huggingface.co/BrCamp/models",
+      "snippet": "Recent Activity updated a dataset3 days ago BrCamp/bee-corpus-pt-22b published a dataset3 days ago BrCamp/bee-corpus-pt-22b published a dataset4 days ago BrCamp/bee-gate-pt View all activity"
+    },
+    {
+      "title": "Liquid AI Introduces LFM2.5-Embedding-350M and LFM2.5-ColBERT-350M ...",
+      "url": "https://www.marktechpost.com/2026/06/19/liquid-ai-introduces-lfm2-5-embedding-350m-and-lfm2-5-colbert-350m-dense-bi-encoder-and-late-interaction-models-for-fast-multilingual-search-across-11-languages/",
+      "snippet": "The Architecture Change: Causal to Bidirectional Both models start from LFM2.5-350M-Base, a mid-trained general-purpose checkpoint. Liquid AI applies a small set of bidirectional patches to the LFM2 architecture. These adapt it from a causal decoder to a bidirectional encoder. In a causal setup, each token uses only itself and previous tokens."
+    },
+    {
+      "title": "Bee 150M Pt Base by BrCamp — VRAM 0.6GB, 2K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/BrCamp%2Fbee-150m-pt-base,4lR1ioctVzOxJIdf7aJgyy",
+      "snippet": "Bee 150M Pt Base is an open-source 150m LLM by BrCamp. VRAM 0.6GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "LLM Explorer: AI Agent and Open-Source Language Model Directory",
+      "url": "https://llm-explorer.com/",
+      "snippet": "Browse and compare 58873 open-source language models and 150 AI agents. Free benchmarks, analytics, and insights."
+    }
+  ]
+}

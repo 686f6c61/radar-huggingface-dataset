@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Carota233/llm-style-terrain-ablation",
+  "slug": "carota233-llm-style-terrain-ablation",
+  "author": "Carota233",
+  "url": "https://huggingface.co/Carota233/llm-style-terrain-ablation",
+  "created_at": "2026-08-19T17:22:53.000Z",
+  "updated_at": "2026-08-19T17:28:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5273654905,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbGen: Evaluating Large Language Models in Ablation Study Design and ...",
+      "url": "https://arxiv.org/html/2507.13300v1",
+      "snippet": "Each example includes an LLM-generated ablation study design and three human scores assessing the study&#x27;s importance, faithfulness, and soundness, respectively (detailed in § 3.2)."
+    },
+    {
+      "title": "GitHub - yale-nlp/AbGen: Data and code for the ACL 2025 paper \"AbGen ...",
+      "url": "https://github.com/yale-nlp/AbGen",
+      "snippet": "The data and code for the ACL 2025 paper AbGen: Evaluating Large Language Models in Ablation Study Design and Evaluation for Scientific Research. AbGen is designed to evaluate the capabilities of LLMs in designing ablation studies for scientific research. It consists of 1,500 expert-annotated examples derived from 807 NLP papers."
+    },
+    {
+      "title": "AbGen: Evaluating Large Language Models in Ablation Study Design and ...",
+      "url": "https://arxiv.org/pdf/2507.13300",
+      "snippet": "Each example includes an LLM-generated ablation study design and three hu-man scores assessing the study&#x27;s importance, faith-fulness, and soundness, respectively (detailed in §3.2)."
+    },
+    {
+      "title": "AbGen: Evaluating Large Language Models in Ablation Study Design and ...",
+      "url": "https://aclanthology.org/2025.acl-long.611/",
+      "snippet": "In this benchmark, LLMs are tasked with generating detailed ablation study designs for a specified module or process based on the given research context. Our evaluation of leading LLMs, such as GPT-4o and Llama-3.1, highlights a significant performance gap between these models and human experts in terms of the importance, faithfulness, and ..."
+    },
+    {
+      "title": "GitHub - goldenplums2003/model_brain_surgery: Perform vector ablation ...",
+      "url": "https://github.com/goldenplums2003/model_brain_surgery",
+      "snippet": "Model Prefrontal Lobotomy is a lightweight local workflow for activation capture and weight ablation on Hugging Face Transformers models. It is designed as a small research sandbox before moving the same idea to larger checkpoints. The default project layout uses Qwen3-1.7B as the source model and writes the edited checkpoint to surgery-output/."
+    }
+  ]
+}

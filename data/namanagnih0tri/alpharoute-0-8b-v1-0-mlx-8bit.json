@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "NamanAgnih0tri/AlphaRoute-0.8B-v1.0-MLX-8bit",
+  "slug": "namanagnih0tri-alpharoute-0-8b-v1-0-mlx-8bit",
+  "author": "NamanAgnih0tri",
+  "url": "https://huggingface.co/NamanAgnih0tri/AlphaRoute-0.8B-v1.0-MLX-8bit",
+  "created_at": "2026-08-19T15:35:08.000Z",
+  "updated_at": "2026-08-19T15:48:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "routing",
+    "semantic-routing",
+    "intent-classification",
+    "slm",
+    "edge-ai",
+    "apple-silicon",
+    "structured-outputs",
+    "json",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 211968832,
+  "parameters_human": "212.0M",
+  "storage_bytes": 819962566,
+  "storage_human": "820 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Kcbir/AlphaRoute: LLM-guided global router for VLSI physical ...",
+      "url": "https://github.com/Kcbir/AlphaRoute",
+      "snippet": "AlphaRoute A global router for VLSI physical design that lets a language model tune the routing penalties instead of hand-coding a fixed schedule."
+    },
+    {
+      "title": "[2607.19768] AlphaRoute: Large Language Models as Semantic Optimizers ...",
+      "url": "https://arxiv.org/abs/2607.19768",
+      "snippet": "Very Large Scale Integration (VLSI) global routing is an NP-hard combinatorial optimization problem requiring signal net assignment across capacity-constrained 3D grids while minimizing congestion, wirelength, and via transitions. Because traditional heuristics rely on static penalty schedules that fail on complex congestion topologies, we present AlphaRoute: a multi-objective adaptive search ..."
+    },
+    {
+      "title": "AlphaRoute: Large Language Models as Semantic Optimizers for Multi ...",
+      "url": "https://arxiv.org/pdf/2607.19768",
+      "snippet": "AlphaRoute achieves Sorig = 0.0538 and Sscaled = 0.0589 in ARIANE, representing a 33.1× reduction in the original score and a 29.5× reduction in the scaled score relative to the current SOTA values of Sorig = 1.780 and Sscaled = 1.74 (ARIANE), demonstrating that the overflow reduction delivered by AlphaRoute decisively outweighs its runtime ..."
+    },
+    {
+      "title": "AlphaRoute/README.md at main · Kcbir/AlphaRoute · GitHub",
+      "url": "https://github.com/Kcbir/AlphaRoute/blob/main/README.md",
+      "snippet": "AlphaRoute A global router for VLSI physical design that lets a language model tune the routing penalties instead of hand-coding a fixed schedule. Global routing decides how every signal net gets a path across a chip&#x27;s grid of routing cells. The hard part is congestion: too many nets fighting for the same cells."
+    },
+    {
+      "title": "Quantized Models for deepreinforce-ai/Ornith-1.0-9B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:deepreinforce-ai/Ornith-1.0-9B",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

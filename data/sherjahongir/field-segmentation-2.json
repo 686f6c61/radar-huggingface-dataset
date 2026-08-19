@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sherjahongir/field-segmentation-2",
+  "slug": "sherjahongir-field-segmentation-2",
+  "author": "sherjahongir",
+  "url": "https://huggingface.co/sherjahongir/field-segmentation-2",
+  "created_at": "2026-08-19T14:54:45.000Z",
+  "updated_at": "2026-08-19T14:55:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6548125,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Borderoffield Dataset by Sherjahongir Tursunmurodov",
+      "url": "https://platform.ultralytics.com/sherjahongir-tursunmurodov/datasets/borderoffield",
+      "snippet": "Aerial imagery for instance segmentation of agricultural fields, capturing diverse rural landscapes, crop plots, and land boundaries from a top-down perspective."
+    },
+    {
+      "title": "Field Boundary Detection in Satellite Imagery Using the SAM2 Model",
+      "url": "https://towardsdatascience.com/field-boundary-detection-in-satellite-imagery-using-the-sam2-model-b556aa97bf7a/",
+      "snippet": "Step-by-Step Tutorial on Applying Segment Anything Model Version 2 to Satellite Imagery for Detecting and Exporting Field Boundaries in..."
+    },
+    {
+      "title": "Dala Field Dataset by Sherjahongir Tursunmurodov",
+      "url": "https://platform.ultralytics.com/sherjahongir-tursunmurodov/datasets/dala-field",
+      "snippet": "SegmentReady 171images·170 labeled·1,669annotations·13.2 MBUpdated Jun 27, 2026 Aerial imagery for instance segmentation of agricultural fields, featuring diverse rural landscapes with distinct crop plots and land boundaries for land analysis. New Model Clone Dataset Images Classes1 Charts Models all171 train137 val34 test all171 train137 ..."
+    },
+    {
+      "title": "FieldSeg: A scalable agricultural field extraction framework based on ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0168169925001929",
+      "snippet": "In the context of DL, Segment Anything Model (SAM) is a state-of-the-art segmentation model released by Meta AI Research in April 2023 (Kirillov et al., 2023). In contrast to the DL models typically used for agricultural field extraction, SAM is a promptable model trained in a massive computer vision dataset composed of more than 1B masks from ..."
+    },
+    {
+      "title": "Field-Area Segmentation from Sentinel-2 Imagery - GitHub",
+      "url": "https://github.com/zulqarnainalipk/Field-Area-Segmentation",
+      "snippet": "The competition focused on segmenting field regions from satellite images, offering a challenging and rewarding experience. In this project, we focus on segmenting agricultural fields from Sentinel-2 satellite images. The goal is to accurately delineate different field areas using instance segmentation, allowing for precise analysis of land use."
+    }
+  ]
+}

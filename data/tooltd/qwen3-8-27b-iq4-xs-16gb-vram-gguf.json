@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tooltd/Qwen3.8-27B-IQ4-XS-16GB-VRAM-GGUF",
+  "slug": "tooltd-qwen3-8-27b-iq4-xs-16gb-vram-gguf",
+  "author": "tooltd",
+  "url": "https://huggingface.co/tooltd/Qwen3.8-27B-IQ4-XS-16GB-VRAM-GGUF",
+  "created_at": "2026-08-19T18:20:44.000Z",
+  "updated_at": "2026-08-19T18:24:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "qwen3.8-27b - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    },
+    {
+      "title": "Qwen3.8 27B Requirements: VRAM, GPU & RAM (2026)",
+      "url": "https://www.oflight.co.jp/en/columns/qwen3-8-27b-requirements-vram-local-2026",
+      "snippet": "Qwen3.8 27B Requirements: VRAM, GPU & RAM (2026) Qwen3.8-27B weights landed on August 15, 2026. This at-a-glance requirements guide maps VRAM needs to the actual published file sizes: Q4_K_M is 17.1GB and won&#x27;t fit a 16GB GPU, making IQ4_XS (15.7GB) the practical floor. Licensed Apache-2.0 for commercial use."
+    },
+    {
+      "title": "Best Qwen3.8-27B GGUF: Q2, Q3, Q4, Q5, Q6 and Q8 - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/",
+      "snippet": "Compare exact Qwen3.8-27B Q2, Q3, Q4, Q5, Q6 and Q8 GGUF files by quality, memory, context and publisher; choose the right download for your hardware."
+    }
+  ]
+}

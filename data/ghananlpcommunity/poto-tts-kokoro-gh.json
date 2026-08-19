@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ghananlpcommunity/poto-tts-kokoro-gh",
+  "slug": "ghananlpcommunity-poto-tts-kokoro-gh",
+  "author": "ghananlpcommunity",
+  "url": "https://huggingface.co/ghananlpcommunity/poto-tts-kokoro-gh",
+  "created_at": "2026-08-19T14:36:10.000Z",
+  "updated_at": "2026-08-19T15:01:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "poto-tts",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "poto-tts",
+    "onnx",
+    "tts",
+    "text-to-speech",
+    "sherpa-onnx",
+    "kokoro",
+    "ghana",
+    "ghanaian-english",
+    "espeak-ng",
+    "ghana-nlp",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377026343,
+  "storage_human": "377 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hexgrad/Kokoro-82M · Hugging Face",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - hexgrad/kokoro: https://hf.co/hexgrad/Kokoro-82M",
+      "url": "https://github.com/hexgrad/kokoro",
+      "snippet": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient."
+    },
+    {
+      "title": "ghananlpcommunity (Ghana NLP Community) - Hugging Face",
+      "url": "https://huggingface.co/ghananlpcommunity",
+      "snippet": "AI for Ghanaian Languages Text-to-Speech • Updated 9 days ago • 12"
+    },
+    {
+      "title": "GitHub - nazdridoy/kokoro-tts: A CLI text-to-speech tool using the ...",
+      "url": "https://github.com/nazdridoy/kokoro-tts",
+      "snippet": "A CLI text-to-speech tool using the Kokoro model, supporting multiple languages, voices (with blending), and various input formats including EPUB books and PDF documents. - nazdridoy/kokoro-tts"
+    },
+    {
+      "title": "Kokoro TTS: Advanced AI Text-to-Speech Model with 82M parameters",
+      "url": "https://kokorottsai.com/",
+      "snippet": "Kokoro TTS is a cutting-edge text-to-speech model with just 82 million parameters, delivering high-quality, natural-sounding speech. Despite its compact size, it outperforms many larger models in both efficiency and performance."
+    }
+  ]
+}

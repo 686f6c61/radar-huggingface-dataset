@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "milab-robot/alm1-0818-amore",
+  "slug": "milab-robot-alm1-0818-amore",
+  "author": "milab-robot",
+  "url": "https://huggingface.co/milab-robot/alm1-0818-amore",
+  "created_at": "2026-08-19T18:52:03.000Z",
+  "updated_at": "2026-08-19T18:53:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2072018943,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - cu-milab/ai-robot",
+      "url": "https://github.com/cu-milab/ai-robot",
+      "snippet": "Contribute to cu-milab/ai-robot development by creating an account on GitHub."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AIBooru: AI Art Imageboard",
+      "url": "https://aibooru.online/",
+      "snippet": "AIBooru is the first booru for AI-generated images. Search for AI-generated anime pictures categorized by thousands of tags."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Multimodal Intelligence Lab - UW Departments Web Server",
+      "url": "https://depts.washington.edu/uwmilab/",
+      "snippet": "Multimodal Intelligence Lab (MILab) The Multimodal Intelligence Lab (MILab) is a University of Washington research group based at UW Tacoma. We develop multimodal AI systems that connect perception, language, memory, reasoning, and action. Our work spans foundation models, embodied agents, robotics, mobility intelligence, public safety, and human-centered decision support."
+    }
+  ]
+}

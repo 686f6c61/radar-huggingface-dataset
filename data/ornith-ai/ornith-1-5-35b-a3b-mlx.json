@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ornith-ai/Ornith-1.5-35B-A3B-MLX",
+  "slug": "ornith-ai-ornith-1-5-35b-a3b-mlx",
+  "author": "ornith-ai",
+  "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX",
+  "created_at": "2026-08-18T06:59:39.000Z",
+  "updated_at": "2026-08-19T12:33:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69343588037,
+  "storage_human": "69.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5 - a ornith-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ornith-ai/ornith-15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B Benchmarks & Context (August 2026)",
+      "url": "https://benchlm.ai/models/ornith-1-5-35b-a3b",
+      "snippet": "Ornith-1.5-35B-A3B by Ornith AI ranks #134 of 221 with a public score of 49.27/100. Evidence: Estimated; this profile shows 18 source-displayable benchmark rows."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    }
+  ]
+}

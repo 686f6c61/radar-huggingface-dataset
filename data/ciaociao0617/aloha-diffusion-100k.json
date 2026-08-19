@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ciaociao0617/aloha-diffusion-100k",
+  "slug": "ciaociao0617-aloha-diffusion-100k",
+  "author": "ciaociao0617",
+  "url": "https://huggingface.co/ciaociao0617/aloha-diffusion-100k",
+  "created_at": "2026-08-19T10:03:17.000Z",
+  "updated_at": "2026-08-19T14:15:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:lerobot/aloha_sim_insertion_human",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 263450374,
+  "parameters_human": "263.5M",
+  "storage_bytes": 31614290152,
+  "storage_human": "31.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LeTau/dp_aloha_transfer_cube · Hugging Face",
+      "url": "https://huggingface.co/LeTau/dp_aloha_transfer_cube",
+      "snippet": "A Diffusion Policy model trained on the ALOHA simulation TransferCube task. This model is published as a baseline comparison to demonstrate that ACT significantly outperforms Diffusion Policy on ALOHA bimanual tasks."
+    },
+    {
+      "title": "aloha-act-vs-diffusion/results/comparison.md at main - GitHub",
+      "url": "https://github.com/heyeuu/aloha-act-vs-diffusion/blob/main/results/comparison.md",
+      "snippet": "ACT vs Diffusion Policy on ALOHA transfer-cube: reproduction and comparison - heyeuu/aloha-act-vs-diffusion"
+    },
+    {
+      "title": "heyeuu/aloha-act-vs-diffusion - GitHub",
+      "url": "https://github.com/heyeuu/aloha-act-vs-diffusion/tree/main/",
+      "snippet": "ALOHA Transfer Cube:ACT 与 Diffusion Policy 的复现、对比与诊断 在 LeRobot 的 ALOHA 仿真「双臂抓取并递交方块」任务上,复现 ACT 模仿学习策略 (成功率 80%),并与 Diffusion Policy 对比。"
+    },
+    {
+      "title": "AingDiffusion - v17.0 | Stable Diffusion 1.x Checkpoint | Civitai",
+      "url": "https://civitai.com/models/34553/aingdiffusion",
+      "snippet": "Read \"About this version\" to see what changes were made to the model. I might make changes you don&#x27;t like and you may want to stay on the older version. The only authorized generation service outside Civitai is yodayo.com Maintaining a stable diffusion model is very resource-burning. Please consider supporting me via Ko-fi. AingDiffusion will ALWAYS BE FREE. EXP models will be updated here to ..."
+    },
+    {
+      "title": "AI Image Generator — 100K+ Models Online | Imagera",
+      "url": "https://imagera.ai/image/image-generator",
+      "snippet": "Generate AI images with 100K+ custom LoRA models from CivitAI. Photorealistic, anime and artistic styles in your browser. Pay per image, no subscription."
+    }
+  ]
+}

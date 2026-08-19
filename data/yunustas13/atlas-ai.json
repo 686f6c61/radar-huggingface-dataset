@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "YunusTAS13/ATLAS-AI",
+  "slug": "yunustas13-atlas-ai",
+  "author": "YunusTAS13",
+  "url": "https://huggingface.co/YunusTAS13/ATLAS-AI",
+  "created_at": "2026-08-19T08:06:44.000Z",
+  "updated_at": "2026-08-19T12:36:41.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "turkish",
+    "qwen3",
+    "qlora",
+    "agent",
+    "tool-calling",
+    "llama.cpp",
+    "ollama",
+    "text-generation",
+    "tr",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:gpl-3.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027783520,
+  "storage_human": "5.0 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YunusTAS13 - GitHub",
+      "url": "https://github.com/YunusTAS13",
+      "snippet": "YunusTAS13 has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Mitre Atlas™",
+      "url": "https://atlas.mitre.org/",
+      "snippet": "The adversary is operating against AI components of the system that generate new content (e.g., text, code, images, audio, video), targeting components such as prompts, model outputs, safety controls, retrieval context, and generation pipelines."
+    },
+    {
+      "title": "Atlas: School AI Assistant",
+      "url": "https://www.atlas.org/",
+      "snippet": "Atlas is the most accurate AI assistant for school. Score higher and stress less with the only assistant trained on your class materials. Free to access."
+    },
+    {
+      "title": "Boston Dynamics Atlas Uses Single AI Model to Walk, Grab, and Adapt ...",
+      "url": "https://embodiedglobal.com/en/article/boston-dynamics-atlas-single-ai-model-toyota-may-2026",
+      "snippet": "Boston Dynamics&#x27; Atlas humanoid robot has achieved a major breakthrough: it now uses a single artificial intelligence model to control both walking and."
+    },
+    {
+      "title": "Scientists to simulate 3I/ATLAS&#x27;s future route using AI-based ... - WION",
+      "url": "https://www.wionews.com/photos/scientists-to-simulate-3i-atlas-s-future-route-using-ai-based-orbit-models-1761825333998",
+      "snippet": "Scientists are using powerful AI-based models to simulate the future path of the interstellar comet 3I/ATLAS. AI models simulate 3I/ATLAS&#x27;s path from near the Sun to deep space. Real-time data keeps predictions sharp, ensuring safe monitoring and helping with future object tracking."
+    }
+  ]
+}

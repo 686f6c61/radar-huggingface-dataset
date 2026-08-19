@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bobtehbuilder/tds-ga8-carbon-7d414617c8f9",
+  "slug": "bobtehbuilder-tds-ga8-carbon-7d414617c8f9",
+  "author": "bobtehbuilder",
+  "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-7d414617c8f9",
+  "created_at": "2026-08-19T17:55:01.000Z",
+  "updated_at": "2026-08-19T17:55:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "uditaab/IITM_TDS_GA8 - GitHub",
+      "url": "https://github.com/uditaab/IITM_TDS_GA8",
+      "snippet": "Repo to store all the required files for GA8 of TDS. - uditaab/IITM_TDS_GA8"
+    },
+    {
+      "title": "GitHub - 24f1000999/tds-2025-ga8",
+      "url": "https://github.com/24f1000999/tds-2025-ga8",
+      "snippet": "Contribute to 24f1000999/tds-2025-ga8 development by creating an account on GitHub."
+    },
+    {
+      "title": "BOB 0x0 - Telegram",
+      "url": "https://t.me/s/bobtehbuilder?before=13",
+      "snippet": "Bob is AI trained and ready to take over CT together with his cousin Pepe!"
+    },
+    {
+      "title": "Thingiverse — Search & Download 3D Printing Models and STL Files",
+      "url": "https://thingiverse.app/",
+      "snippet": "Thingiverse search: find, preview and download free 3D printable models and STL files from across the web — no ads, no sign-up."
+    },
+    {
+      "title": "GippsAero GA8 Airvan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GippsAero_GA8_Airvan",
+      "snippet": "The GippsAero GA8 Airvan is a single-engined utility aircraft manufactured by GippsAero (formerly named Gippsland Aeronautics) of Victoria, Australia. It can seat up to eight people, including the pilot."
+    }
+  ]
+}

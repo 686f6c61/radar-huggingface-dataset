@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Aarjan/kriti-telephony",
+  "slug": "aarjan-kriti-telephony",
+  "author": "Aarjan",
+  "url": "https://huggingface.co/Aarjan/kriti-telephony",
+  "created_at": "2026-08-19T13:45:07.000Z",
+  "updated_at": "2026-08-19T14:00:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "nepali",
+    "conformer",
+    "telephony",
+    "call-center",
+    "ne",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 523182080,
+  "storage_human": "523 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arjan on X: \"presenting kriti 119m nepali is spoken by millions ...",
+      "url": "https://x.com/ArjanChaudharyy/status/2089748987264073815",
+      "snippet": "presenting kriti 🤗 119m 🇳🇵 nepali is spoken by millions, yet remains underrepresented in modern speech models. many existing systems are large, inaccurate, or difficult to run on everyday hardware. we built kriti for researchers, developers, and communities working with nepali speech. kriti is a 119m parameter nepali asr model built featuring deterministic pruning, runtime embedding ..."
+    },
+    {
+      "title": "GitHub - Mahir-bot-2003/KRITI-AI: Kriti AI is an AI-powered voice ...",
+      "url": "https://github.com/Mahir-bot-2003/KRITI-AI",
+      "snippet": "Kriti AI is an AI-powered voice assistant system designed for the hospitality industry, enabling automated hotel and restaurant reservations through natural conversations. It combines speech recognition, NLP, and machine learning to provide 24/7 booking services, personalized guest experiences, and intelligent management features."
+    },
+    {
+      "title": "Kartik Aaryan as Harry Potter, Kriti Sanon as Hermione: AI ... - FilmiBeat",
+      "url": "https://www.filmibeat.com/bollywood/viral/2026/kartik-aaryan-as-harry-potter-kriti-sanon-as-hermione-ai-reimagines-hogwarts-with-bollywood-stars-519997.html",
+      "snippet": "A viral AI-generated video imagining Bollywood stars as characters from the Harry Potter universe has taken social media by storm, with one casting choice standing out above the rest-Kartik Aaryan ..."
+    },
+    {
+      "title": "Telephony STT in production - AI APIs - Google Developer forums",
+      "url": "https://discuss.google.dev/t/telephony-stt-in-production/345439",
+      "snippet": "Is anyone using (or has used) the telephony STT for voice AI use cases where a user speaks to an AI agent through voice in realtime? I&#x27;ve read in the Cloud Speech-to-Text V2 docs that the telephony model should be used \"for audio that originates from an audio phone call, typically recorded at an 8 kHz sampling rate. Ideal for customer service, teleconferencing, and automated kiosk ..."
+    },
+    {
+      "title": "Transcribe phone audio with enhanced models - Google Cloud",
+      "url": "https://docs.cloud.google.com/speech-to-text/docs/v1/phone-model",
+      "snippet": "Send a request To best transcribe audio captured on a phone, like a phone call or voicemail, you can set the model field in your RecognitionConfig payload to phone_call. The model field tells Cloud Speech-to-Text API which speech recognition model to use for the transcription request."
+    }
+  ]
+}

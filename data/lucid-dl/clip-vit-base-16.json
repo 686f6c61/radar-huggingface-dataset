@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lucid-dl/clip-vit-base-16",
+  "slug": "lucid-dl-clip-vit-base-16",
+  "author": "lucid-dl",
+  "url": "https://huggingface.co/lucid-dl/clip-vit-base-16",
+  "created_at": "2026-08-19T17:52:13.000Z",
+  "updated_at": "2026-08-19T17:52:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "lucid",
+  "languages": [],
+  "tags": [
+    "lucid",
+    "safetensors",
+    "base",
+    "CLIP",
+    "feature-extraction",
+    "dataset:WIT-400M",
+    "arxiv:2103.00020",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 598518004,
+  "storage_human": "599 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lucid-dl/vit-base-16 · Hugging Face",
+      "url": "https://huggingface.co/lucid-dl/vit-base-16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openai/clip-vit-base-patch16 · Hugging Face",
+      "url": "https://huggingface.co/openai/clip-vit-base-patch16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CLIP-ViT Models - FusionBench",
+      "url": "https://tanganke.github.io/fusion_bench/modelpool/clip_vit/",
+      "snippet": "CLIP-ViT Models for Open Vocabulary Image Classification This document provides comprehensive information about CLIP-ViT models for open vocabulary image classification, including model implementation details, usage instructions, and experimental results."
+    },
+    {
+      "title": "CLIP/model-card.md at main · openai/CLIP · GitHub",
+      "url": "https://github.com/openai/CLIP/blob/main/model-card.md",
+      "snippet": "The CLIP model was developed by researchers at OpenAI to learn about what contributes to robustness in computer vision tasks. The model was also developed to test the ability of models to generalize to arbitrary image classification tasks in a zero-shot manner. It was not developed for general model deployment - to deploy models like CLIP, researchers will first need to carefully study their ..."
+    },
+    {
+      "title": "RyzenAI-SW/WinML/Transformers/clip-vit-base-patch16 at main - GitHub",
+      "url": "https://github.com/amd/RyzenAI-SW/tree/main/WinML/Transformers/clip-vit-base-patch16",
+      "snippet": "Open the CLIP model in VS Code with AI Toolkit extension installed Right-click the model file (./model/model.onnx) and select \"Convert Model\" Choose the target platform (e.g., AMD NPU) Select quantization settings (e.g., A16W8 for activation 16-bit, weight 8-bit) The toolkit will generate an optimized model (typically saved to ./model_a16w8 ..."
+    }
+  ]
+}

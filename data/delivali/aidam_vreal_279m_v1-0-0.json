@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "DeliVali/AIDAM_VREAL_279M_V1.0.0",
+  "slug": "delivali-aidam_vreal_279m_v1-0-0",
+  "author": "DeliVali",
+  "url": "https://huggingface.co/DeliVali/AIDAM_VREAL_279M_V1.0.0",
+  "created_at": "2026-08-19T18:33:36.000Z",
+  "updated_at": "2026-08-19T18:34:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "deberta-v2",
+    "natural-language-inference",
+    "fact-checking",
+    "averitec",
+    "mdeberta-v3",
+    "multilingual",
+    "misinformation",
+    "text-classification",
+    "en",
+    "es",
+    "base_model:MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "base_model:quantized:MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278811651,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1696129959,
+  "storage_human": "1.7 GB",
+  "base_model": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeliVali/AIDAM_VREAL_279M_V0.1.0 · Hugging Face",
+      "url": "https://huggingface.co/DeliVali/AIDAM_VREAL_279M_V0.1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeliVali/AIDAM_VWIKI_279M_V0.1.0 · Hugging Face",
+      "url": "https://huggingface.co/DeliVali/AIDAM_VWIKI_279M_V0.1.0",
+      "snippet": "Part of AIDAM by Jeffrey Romero Del Val — open fact-checking agent; verdicts come from this NLI core plus an auditable aggregator, never from an LLM. Every number above passed pre-registered gates; the full campaign (promotions AND rejections) is in docs/ROADMAP.md. Main production model: AIDAM_VREAL_279M_V0.1.0."
+    },
+    {
+      "title": "AIDAM/docs at main · DeliVali/AIDAM · GitHub",
+      "url": "https://github.com/DeliVali/AIDAM/tree/main/docs",
+      "snippet": "Open fact-checking agent: live multi-source evidence + a small comparative-logic verifier. Every verdict cites its sources. - AIDAM/docs at main · DeliVali/AIDAM"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    }
+  ]
+}

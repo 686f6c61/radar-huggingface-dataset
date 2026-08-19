@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Timilehin/barbados-lands-surveys-plot-automation-0.821264226",
+  "slug": "timilehin-barbados-lands-surveys-plot-automation-0-821264226",
+  "author": "Timilehin",
+  "url": "https://huggingface.co/Timilehin/barbados-lands-surveys-plot-automation-0.821264226",
+  "created_at": "2026-08-19T14:55:59.000Z",
+  "updated_at": "2026-08-19T14:56:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2192810440,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Barbados/README.md at main · papapizzachess/Barbados · GitHub",
+      "url": "https://github.com/papapizzachess/Barbados/blob/main/README.md",
+      "snippet": "Barbados Lands and Surveys Plot Automation Challenge Solution for the Barbados Lands and Surveys Plot Automation Challenge on Zindi."
+    },
+    {
+      "title": "Barbados Lands and Surveys Plot Automation Challenge",
+      "url": "https://github.com/josephgitau/Barbados-Lands-and-Surveys-Plot-Automation-Challenge",
+      "snippet": "Barbados Lands and Surveys Plot Automation Challenge Overview and Objectives The Barbados Land Detection and OCR Project focuses on detecting cadastral land parcel boundaries from survey maps and performing OCR extraction of map annotations to support automated digitization and geospatial indexing."
+    },
+    {
+      "title": "Barbados Lands and Surveys Plot Automation Challenge",
+      "url": "https://www.competehub.dev/en/competitions/zindibarbados-lands-and-surveys-plot-automation-challenge",
+      "snippet": "The Barbados Lands and Surveys Plot Automation Challenge is a data science competition hosted on Zindi, an online platform for data science challenges. The competition aims to leverage open-source tools and techniques to automate the identification and classification of plots of land using satellite imagery."
+    },
+    {
+      "title": "Barbados Lands and Surveys Plot Automation Challenge",
+      "url": "https://zindi.world/competitions/barbados-lands-and-surveys-plot-automation-challenge",
+      "snippet": "In Barbados, all survey plans must be submitted in analog form to the Chief Surveyor&#x27;s Office in the Lands and Surveys Department. Currently, these analog documents are manually captured to be entered into Barbados&#x27; Survey Plan Register, a process which is costly in terms of time and manpower, and can result in errors in data capture."
+    },
+    {
+      "title": "Barbados Lands and Surveys Plot Automation Challenge",
+      "url": "https://zindi.world/competitions/barbados-lands-and-surveys-plot-automation-challenge/data",
+      "snippet": "You are provided with a total of ~1,000 cadastral survey plans: ~700 training samples and ~300 test samples. Each training sample includes a scanned cadastral plan (PDF or image format), associated metadata such as lot number and surveyor name and the corresponding polygon defining the land parcel provided in .shp format. Your task is to develop a model or workflow that can extract the same ..."
+    }
+  ]
+}

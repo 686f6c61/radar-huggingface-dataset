@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "FastVideo/FastMetal-1.3B-QAD",
+  "slug": "fastvideo-fastmetal-1-3b-qad",
+  "author": "FastVideo",
+  "url": "https://huggingface.co/FastVideo/FastMetal-1.3B-QAD",
+  "created_at": "2026-08-10T08:23:53.000Z",
+  "updated_at": "2026-08-19T19:05:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "fastvideo",
+  "languages": [],
+  "tags": [
+    "fastvideo",
+    "diffusers",
+    "safetensors",
+    "video-generation",
+    "text-to-video",
+    "wan",
+    "int8",
+    "quantization",
+    "apple-silicon",
+    "dataset:FastVideo/Wan-Syn_77x448x832_600k",
+    "base_model:FastVideo/FastWan2.1-T2V-1.3B-Diffusers",
+    "base_model:finetune:FastVideo/FastWan2.1-T2V-1.3B-Diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13399839104,
+  "storage_human": "13.4 GB",
+  "base_model": "FastVideo/FastWan2.1-T2V-1.3B-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastVideo/FastWan-QAD-1.3B · Hugging Face",
+      "url": "https://huggingface.co/FastVideo/FastWan-QAD-1.3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FastVideo (FastVideo) - Hugging Face",
+      "url": "https://huggingface.co/FastVideo",
+      "snippet": "Org profile for FastVideo on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - hao-ai-lab/FastVideo: A unified inference and post-training ...",
+      "url": "https://github.com/hao-ai-lab/FastVideo",
+      "snippet": "Code based on FastVideo. DCM: Dual-expert consistency model for efficient and high-quality video generation. Code based on FastVideo. HY-WorldPlay: An action-conditioned world model model trained using FastVideo framework. Hunyuan Video 1.5: A leading lightweight video generation model, where they proposed SSTA based on Sliding Tile Attention."
+    },
+    {
+      "title": "FastMetal — Generative AI Gateway | Text, Image & Video via One API",
+      "url": "https://fastmetal.ai/",
+      "snippet": "Text. Images. Video. One gateway for generative AI. FastMetal is an OpenAI-compatible gateway to 276+ generative AI models. Point your existing code at one base URL, pay per token, and stop maintaining a different SDK for every provider."
+    },
+    {
+      "title": "models - FastVideo",
+      "url": "https://haoailab.com/FastVideo/api/fastvideo/models/",
+      "snippet": "A unified inference and post-training framework for accelerated video generation"
+    }
+  ]
+}

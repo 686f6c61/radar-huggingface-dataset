@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/PhilbertFrog",
+  "slug": "ryanham1lton-philbertfrog",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/PhilbertFrog",
+  "created_at": "2026-08-19T16:46:13.000Z",
+  "updated_at": "2026-08-19T16:48:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168707406,
+  "storage_human": "169 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Malicious AI on the Dark Web | WormGPT, FraudGPT & More",
+      "url": "https://www.dexpose.io/malicious-ai-on-the-dark-web/",
+      "snippet": "WormGPT, FraudGPT & other malicious AI models are sold on the dark web for phishing and fraud. See how they work and how to detect and stop them."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Free AI Image Detector & Checker: Is a Photo AI? | Is It AI?",
+      "url": "https://isitai.com/ai-image-detector",
+      "snippet": "AI Image Detector & Checker: Is This Photo AI-Generated? Upload any photo, picture, or piece of AI art and our free AI image checker tells you if it was AI-generated or real, in seconds. With 95%+ accuracy across Midjourney, DALL-E, Stable Diffusion, Nano Banana, Firefly, ChatGPT and 20+ models, it&#x27;s trusted by newsrooms, educators, and content teams to verify image authenticity."
+    },
+    {
+      "title": "Unleashing the Power of Open Source AI Models and Machine Learning ...",
+      "url": "https://aimodels.org/",
+      "snippet": "Open Source AI Community We are committed to building a community of developers, researchers, and enthusiasts who share our vision of democratizing AI and making it accessible to everyone. Collection of AI Model Downloads and Machine Learning Tools Explore a collection of open source AI models and tools for machine learning."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "DT4H/CardioBERTa.en_P_only_snomed",
+  "slug": "dt4h-cardioberta-en_p_only_snomed",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/CardioBERTa.en_P_only_snomed",
+  "created_at": "2026-08-19T18:40:21.000Z",
+  "updated_at": "2026-08-19T18:50:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "feature-extraction",
+    "biomedical",
+    "clinical",
+    "cardiology",
+    "entity-linking",
+    "concept-normalization",
+    "umls",
+    "metric-learning",
+    "en",
+    "base_model:DT4H/CardioBERTa.en",
+    "base_model:finetune:DT4H/CardioBERTa.en",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124645632,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498604904,
+  "storage_human": "499 MB",
+  "base_model": "DT4H/CardioBERTa.en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DT4H/CardioBERTa.en · Hugging Face",
+      "url": "https://huggingface.co/DT4H/CardioBERTa.en",
+      "snippet": "DT4H / CardioBERTa.en like 0 Follow DataTools4Heart 27 PyTorch Safetensors roberta Model card FilesFiles and versions xet Community 1 Copy to bucket new No model card Downloads last month 80 Safetensors Model size 0.1B params Tensor type I64 · F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "DT4H/cardio-ner-es-cardioberta-multilabel · Hugging Face",
+      "url": "https://huggingface.co/DT4H/cardio-ner-es-cardioberta-multilabel",
+      "snippet": "Model Card for Cardio-Ner-Es-Cardioberta-Multilabel Description Spanish cardiology multilabel NER model for disease, medication, procedure, and symptom recognition, fine-tuned on cardioberta. Model Details Language: ES Task: token-classification Framework: pytorch How to Use"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "shivanshmehta31/CardioCare-AI-Intelligent-Heart-Health ... - GitHub",
+      "url": "https://github.com/shivanshmehta31/CardioCare-AI-Intelligent-Heart-Health-Prediction-System",
+      "snippet": "🫀 CardioCare: AI Intelligent Heart Health Prediction System A machine learning and deep learning-based solution to predict the presence of heart disease using medical and lifestyle features. This project leverages TensorFlow, Scikit-learn, and powerful data preprocessing techniques to deliver an effective binary classification model."
+    },
+    {
+      "title": "Fit a model to the GPU you actually have | Alberto Nieto",
+      "url": "https://alberto.codes/blog/2026-08-15-fit-a-model-to-the-gpu-you-actually-have",
+      "snippet": "Who this is for You have a GPU with a fixed amount of memory. You want to run a model that does not fit. You have already tried an off-the-shelf quantization and want one fitted to your card instead of to the average card."
+    }
+  ]
+}

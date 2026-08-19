@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DariusTheGeek/waxal-sna-omniasr-llm-1b",
+  "slug": "dariusthegeek-waxal-sna-omniasr-llm-1b",
+  "author": "DariusTheGeek",
+  "url": "https://huggingface.co/DariusTheGeek/waxal-sna-omniasr-llm-1b",
+  "created_at": "2026-08-18T22:33:47.000Z",
+  "updated_at": "2026-08-19T18:54:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "fairseq2",
+  "languages": [
+    "sn"
+  ],
+  "tags": [
+    "fairseq2",
+    "automatic-speech-recognition",
+    "omnilingual-asr",
+    "shona",
+    "waxal",
+    "zindi",
+    "sn",
+    "dataset:google/WaxalNLP",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9118772004,
+  "storage_human": "9.1 GB",
+  "base_model": "facebook/omniASR-LLM-1B-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DariusTheGeek/waxal-sna-omniasr-llm-1b · Hugging Face",
+      "url": "https://huggingface.co/DariusTheGeek/waxal-sna-omniasr-llm-1b",
+      "snippet": "waxal-sna-omniasr-llm-1b waxal-sna-omniasr-llm-1b OmniASR LLM-1B v2, fine-tuned for Shona as part of the WAXAL ASR solution. Released artifact: top-3 equal-weight parameter average. Decoded with beam 5, length_norm=True. Files ... Total weights: 9,118,680,523 bytes (9.12 GB). Role in the pipeline Member of the 4-family word-medoid MBR on the ..."
+    },
+    {
+      "title": "DariusTheGeek/waxal-lin-omniasr-llm-1b at main - Hugging Face",
+      "url": "https://huggingface.co/DariusTheGeek/waxal-lin-omniasr-llm-1b/tree/main",
+      "snippet": "DariusTheGeek / waxal-lin-omniasr-llm-1b like 0 Automatic Speech Recognition google/WaxalNLP Lingala fairseq2 omnilingual-asr lingala waxal zindi License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main waxal-lin-omniasr-llm-1b 9.12 GB Ctrl+K Ctrl+K 1 contributor History:6 commits DariusTheGeek Correct ..."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "Best Open-Source LLMs: July 2026 Leaderboard | TECHSY",
+      "url": "https://techsy.io/en/blog/best-open-source-llms-2026",
+      "snippet": "Updated July 2026: we benchmarked 8 open-source LLMs against GPT-4 class. Full leaderboard, the 3 that actually win, and the exact VRAM each needs locally."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    }
+  ]
+}

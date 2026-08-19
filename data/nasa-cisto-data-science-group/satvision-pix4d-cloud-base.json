@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nasa-cisto-data-science-group/satvision-pix4d-cloud-base",
+  "slug": "nasa-cisto-data-science-group-satvision-pix4d-cloud-base",
+  "author": "nasa-cisto-data-science-group",
+  "url": "https://huggingface.co/nasa-cisto-data-science-group/satvision-pix4d-cloud-base",
+  "created_at": "2026-03-19T17:53:53.000Z",
+  "updated_at": "2026-08-19T12:59:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nasa",
+    "earth-observation",
+    "satellite-imagery",
+    "geostationary",
+    "goes",
+    "goes-16",
+    "abi",
+    "remote-sensing",
+    "foundation-model",
+    "self-supervised-learning",
+    "masked-autoencoder",
+    "vision-transformer",
+    "weather",
+    "clouds",
+    "convection",
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 676051821,
+  "storage_human": "676 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nasa-cisto-data-science-group/satvision-base · Hugging Face",
+      "url": "https://huggingface.co/nasa-cisto-data-science-group/satvision-base",
+      "snippet": "SatelliteVision-Base (SatVis-B) is a pre-trained vision transformer based on the SwinV2 model architecture. The model is pre-trained on global MODIS surface reflectance data from which 1.99 million image chips were used. SatVis-B is pre-trained using the masked-image-modeling (MIM) contrastive pre-training strategy. The MIM pre-training approach utilizes random masking of the input geospatial ..."
+    },
+    {
+      "title": "NASA@SC23: SatVision: A Large Vision Transformer Model Trained with ...",
+      "url": "https://www.nas.nasa.gov/SC23/research/project24.html",
+      "snippet": "The Data Science Group at NASA Goddard Space Flight Center&#x27;s Computational and Information Sciences and Technology Office (CISTO) has implemented an end-to-end workflow to generate a training dataset from NASA&#x27;s Moderate Resolution Imaging Spectroradiometer (MODIS) surface reflectance products, train a SwinV2 vision transformer called ..."
+    },
+    {
+      "title": "nasa-cisto-data-science-group/satvision-base at main",
+      "url": "https://huggingface.co/nasa-cisto-data-science-group/satvision-base/tree/main",
+      "snippet": "nasa-cisto-data-science-group / satvision-base like 3 English doi:10.57967/hf/1017 License:apache-2.0 Model card FilesFiles and versions Community main satvision-base 2 contributors History:16 commits cssprad1 Update README.md bfbf767 verified2 months ago .gitattributes 1.52 kB initial commit11 months ago README.md 5.11 kB Update README.md2 ..."
+    },
+    {
+      "title": "GitHub - nasa-nccs-hpda/satvision-pix4d-cloud: SatVision PIX4D",
+      "url": "https://github.com/nasa-nccs-hpda/satvision-pix4d-cloud",
+      "snippet": "SatVision-PIX4D is a scalable data generation and pre-training pipeline for geostationary satellite imagery, designed to support self-supervised and foundation-model development using ABI L1 data. The system is optimized for execution on NASA NCCS HPC resources using Singularity containers and supports stratified tile generation (e.g., convection, cloud systems, land cover)."
+    },
+    {
+      "title": "SatVision: An open-source foundation model based on vision transformer ...",
+      "url": "https://ui.adsabs.harvard.edu/abs/2023AGUFMIN53A..08L/abstract",
+      "snippet": "The utilization of foundation models in visual tasks concerning remote sensing images has garnered considerable interest in recent years. In response to this, the Data Science Group at NASA&#x27;s Center for Information Science and Technology Office (CISTO) has undertaken an initiative to harness the extensive dataset collected from NASA&#x27;s remote sensing missions and construct a foundation model ..."
+    }
+  ]
+}

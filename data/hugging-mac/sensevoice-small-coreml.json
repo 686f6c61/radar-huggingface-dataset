@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "hugging-mac/sensevoice-small-coreml",
+  "slug": "hugging-mac-sensevoice-small-coreml",
+  "author": "hugging-mac",
+  "url": "https://huggingface.co/hugging-mac/sensevoice-small-coreml",
+  "created_at": "2026-08-19T15:50:55.000Z",
+  "updated_at": "2026-08-19T15:51:52.000Z",
+  "license": "funasr-model-license-1.1",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "coremltools",
+  "languages": [
+    "zh",
+    "en",
+    "yue",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "coremltools",
+    "coreml",
+    "apple-silicon",
+    "automatic-speech-recognition",
+    "speech-understanding",
+    "emotion-recognition",
+    "audio-event-detection",
+    "multilingual",
+    "macos",
+    "zh",
+    "en",
+    "yue",
+    "ja",
+    "ko",
+    "base_model:FunAudioLLM/SenseVoiceSmall",
+    "base_model:quantized:FunAudioLLM/SenseVoiceSmall",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 477305864,
+  "storage_human": "477 MB",
+  "base_model": "FunAudioLLM/SenseVoiceSmall",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FunAudioLLM/SenseVoiceSmall · Hugging Face",
+      "url": "https://huggingface.co/FunAudioLLM/SenseVoiceSmall",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mefengl/SenseVoiceSmall-coreml · Hugging Face",
+      "url": "https://huggingface.co/mefengl/SenseVoiceSmall-coreml",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mefengl/SenseVoiceSmall-coreml",
+      "url": "https://github.com/mefengl/SenseVoiceSmall-coreml",
+      "snippet": "Contribute to mefengl/SenseVoiceSmall-coreml development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - QwenAudio/SenseVoice: Open-source SenseVoiceSmall model for ...",
+      "url": "https://github.com/QwenAudio/SenseVoice",
+      "snippet": "2024/7: The SenseVoice-Small voice understanding model is open-sourced, which offers high-precision multilingual speech recognition, emotion recognition, and audio event detection capabilities for Mandarin, Cantonese, English, Japanese, and Korean and leads to exceptionally low inference latency."
+    },
+    {
+      "title": "FunAudioLLM: Voice Understanding and Generation Foundation Models for ...",
+      "url": "https://arxiv.org/html/2407.04051v1",
+      "snippet": "At the core of FunAudioLLM are our two groundbreaking models: SenseVoice, for voice understanding, and CosyVoice, for voice generation. SenseVoice is our state-of-the-art voice understanding model, which excels in multiple domains of voice processing. We offer both SenseVoice-Small and SenseVoice-Large variants."
+    }
+  ]
+}

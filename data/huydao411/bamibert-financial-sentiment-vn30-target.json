@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "huydao411/bamibert-financial-sentiment-vn30-target",
+  "slug": "huydao411-bamibert-financial-sentiment-vn30-target",
+  "author": "huydao411",
+  "url": "https://huggingface.co/huydao411/bamibert-financial-sentiment-vn30-target",
+  "created_at": "2026-08-19T18:12:10.000Z",
+  "updated_at": "2026-08-19T18:12:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102953475,
+  "parameters_human": "103.0M",
+  "storage_bytes": 411837980,
+  "storage_human": "412 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qualcomm-AI-Research/BamiBERT · Hugging Face",
+      "url": "https://huggingface.co/Qualcomm-AI-Research/BamiBERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TheSon2202/bamibert-moe-sentiment · Hugging Face",
+      "url": "https://huggingface.co/TheSon2202/bamibert-moe-sentiment",
+      "snippet": "Overview bamibert-moe-sentiment is a high-performance, fine-tuned text classification model tailored for Vietnamese Sentiment Analysis (e.g., classifying text into Positive or Negative sentiments)."
+    },
+    {
+      "title": "BamiBERT: A New BERT-based Language Model for Vietnamese",
+      "url": "https://arxiv.org/abs/2607.02259",
+      "snippet": "In this paper, we introduce BamiBERT, a new BERT-based pre-trained language model for Vietnamese that addresses key limitations of PhoBERT -- the current de facto Vietnamese text encoder. Trained from scratch on a 129GB corpus of general-domain Vietnamese text for 20 epochs, BamiBERT supports an extended context length of up to 2048 tokens and operates directly on raw input, eliminating the ..."
+    },
+    {
+      "title": "Fine-tuned Models for Qualcomm-AI-Research/BamiBERT - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=base_model:finetune:Qualcomm-AI-Research/BamiBERT",
+      "snippet": "Explore machine learning models. Model Tree Reset Qualcomm-AI-Research/BamiBERT Finetunes Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra Misc Apply filters"
+    },
+    {
+      "title": "FinBERT: Financial Sentiment Analysis with BERT - GitHub",
+      "url": "https://github.com/ProsusAI/finBERT",
+      "snippet": "FinBERT is a pre-trained NLP model to analyze sentiment of financial text. It is built by further training the BERT language model in the finance domain, using a large financial corpus and thereby fine-tuning it for financial sentiment classification. For the details, please see FinBERT: Financial Sentiment Analysis with Pre-trained Language ..."
+    }
+  ]
+}

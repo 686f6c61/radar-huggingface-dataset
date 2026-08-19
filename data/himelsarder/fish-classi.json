@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "himelsarder/Fish-Classi",
+  "slug": "himelsarder-fish-classi",
+  "author": "himelsarder",
+  "url": "https://huggingface.co/himelsarder/Fish-Classi",
+  "created_at": "2026-08-19T12:39:49.000Z",
+  "updated_at": "2026-08-19T12:39:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "himelsarder/Fish-Fresh · Hugging Face",
+      "url": "https://huggingface.co/himelsarder/Fish-Fresh",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "himelsarder (Himel Sarder) - Hugging Face",
+      "url": "https://huggingface.co/himelsarder",
+      "snippet": "AL & ML | Computer Vision | NLP | GenAI. Organizations. None yet. spaces 2. Sort: Recently updated. Sleeping . VinoVision. 🌖. AI predicts wine class from chemical ..."
+    },
+    {
+      "title": "GitHub - aldenhallak/fishes",
+      "url": "https://github.com/aldenhallak/fishes",
+      "snippet": "Real-time AI validation - Draw fish and get instant feedback from our neural network. Smart canvas - Intuitive drawing tools with pressure-sensitive input Live classification - Background color changes as the AI recognizes your fish Drawing hints - Visual cues help you create better fish drawings"
+    },
+    {
+      "title": "AI model analyzes 52 factors to flag extinction risks for 10,000 fish ...",
+      "url": "https://phys.org/news/2026-02-ai-factors-flag-extinction-fish.html",
+      "snippet": "Whether it&#x27;s redfin pickerel in the Kennebec River or sturgeon in the Great Lakes, nearly one-third of freshwater fish species are facing possible extinction, threatening food supplies, ecosystems ..."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://aimodelsindex.com/",
+      "snippet": "Reconcile reviewed live evaluators and source-backed benchmark evidence into one auditable evidence layer, with unavailable catalog sources labeled explicitly."
+    }
+  ]
+}

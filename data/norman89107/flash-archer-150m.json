@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Norman89107/Flash-Archer-150M",
+  "slug": "norman89107-flash-archer-150m",
+  "author": "Norman89107",
+  "url": "https://huggingface.co/Norman89107/Flash-Archer-150M",
+  "created_at": "2026-08-19T19:30:54.000Z",
+  "updated_at": "2026-08-19T19:31:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "causal-lm",
+    "llama-compatible",
+    "small-language-model",
+    "pretrained",
+    "fineweb-edu",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 150335232,
+  "parameters_human": "150.3M",
+  "storage_bytes": 601359152,
+  "storage_human": "601 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pathway BDH-CQ: 150M Model, 11x Cheaper Than GPT-5.6 | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/pathway-bdh-cq-150m-post-transformer-arc-agi-august-2026",
+      "snippet": "Pathway&#x27;s 150M-parameter BDH-CQ model claims 11x cheaper ARC-AGI-1 reasoning than GPT-5.6 Luna. Here&#x27;s what the paper actually shows versus the headline."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Norman89107/ryze-125m · Hugging Face",
+      "url": "https://huggingface.co/Norman89107/ryze-125m",
+      "snippet": "Norman89107 / ryze-125m like 0 Text Generation Transformers PyTorch Safetensors English gpt2 causal-lm ryze text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Aidoc Raises $150M to Advance CARE™, Its Clinical AI Foundation Model",
+      "url": "https://g-medtech.com/aidoc-raises-150m-to-advance-care-its-clinical-ai-foundation-model/",
+      "snippet": "Aidoc has announced a $150 million funding round to fast-track CARE™, its foundation model designed to enhance clinical decision-making. The round was led by General Catalyst and Square Peg, with backing from NVIDIA&#x27;s NVentures and four major U.S. health systems, including Hartford HealthCare and Sutter Health. The total includes a $40 million credit facility, bringing Aidoc&#x27;s funding to ..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "hugging-mac/mediapipe-hand-coreml",
+  "slug": "hugging-mac-mediapipe-hand-coreml",
+  "author": "hugging-mac",
+  "url": "https://huggingface.co/hugging-mac/mediapipe-hand-coreml",
+  "created_at": "2026-08-19T15:42:37.000Z",
+  "updated_at": "2026-08-19T15:43:22.000Z",
+  "license": "mediapipe-pytorch-license",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "coremltools",
+  "languages": [],
+  "tags": [
+    "coremltools",
+    "coreml",
+    "apple-silicon",
+    "mediapipe",
+    "hand-detection",
+    "hand-landmarks",
+    "gesture-control",
+    "macos",
+    "object-detection",
+    "base_model:qualcomm/MediaPipe-Hand-Detection",
+    "base_model:quantized:qualcomm/MediaPipe-Hand-Detection",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30690424,
+  "storage_human": "31 MB",
+  "base_model": "qualcomm/MediaPipe-Hand-Detection",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mediapipe/docs/solutions/hands.md at master · google-ai-edge ... - GitHub",
+      "url": "https://github.com/google-ai-edge/mediapipe/blob/master/docs/solutions/hands.md",
+      "snippet": "MediaPipe Hands utilizes an ML pipeline consisting of multiple models working together: A palm detection model that operates on the full image and returns an oriented hand bounding box. A hand landmark model that operates on the cropped image region defined by the palm detector and returns high-fidelity 3D hand keypoints. This strategy is similar to that employed in our MediaPipe Face Mesh ..."
+    },
+    {
+      "title": "Hands - mediapipe",
+      "url": "https://chuoling.github.io/mediapipe/solutions/hands.html",
+      "snippet": "ML Pipeline MediaPipe Hands utilizes an ML pipeline consisting of multiple models working together: A palm detection model that operates on the full image and returns an oriented hand bounding box. A hand landmark model that operates on the cropped image region defined by the palm detector and returns high-fidelity 3D hand keypoints. This strategy is similar to that employed in our MediaPipe ..."
+    },
+    {
+      "title": "aplux/MediaPipe-Hand · Hugging Face",
+      "url": "https://huggingface.co/aplux/MediaPipe-Hand",
+      "snippet": "MediaPipe-Hand: Gesture Recognition MediaPipe Hands is a real-time hand tracking and gesture recognition framework developed by Google, based on deep learning. This model can detect and track hands using a single RGB camera, identifying 21 key points of the hand and fingers."
+    },
+    {
+      "title": "Models compatible with the mediapipe library - Hugging Face",
+      "url": "https://huggingface.co/models?library=mediapipe",
+      "snippet": "Explore machine learning models. 78 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: mediapipe Clear all"
+    },
+    {
+      "title": "GitHub - google-ai-edge/mediapipe: Cross-platform, customizable ML ...",
+      "url": "https://github.com/google-ai-edge/mediapipe",
+      "snippet": "MediaPipe Solutions provides a suite of libraries and tools for you to quickly apply artificial intelligence (AI) and machine learning (ML) techniques in your applications."
+    }
+  ]
+}

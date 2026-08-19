@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nvidia/GR00TCRA",
+  "slug": "nvidia-gr00tcra",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/GR00TCRA",
+  "created_at": "2026-08-19T18:31:46.000Z",
+  "updated_at": "2026-08-19T18:31:46.000Z",
+  "license": "nvidiasmel",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/ai-models",
+      "snippet": "Explore and deploy top AI models built by the community, accelerated by NVIDIA&#x27;s AI inference platform, and run on NVIDIA-accelerated infrastructure."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "Isaac GR00T - Generalist Robot 00 Technology | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/isaac/gr00t",
+      "snippet": "NVIDIA Isaac GR00T Generalist Robot 00 Technology NVIDIA Isaac™ GR00T is an open reference platform for general-purpose humanoid robots that enables developers to more efficiently build, train, test, and deploy AI-powered robots. It comprises open data and data pipelines, an open robot foundation model, simulation frameworks, middleware, CUDA-X accelerated runtime libraries, and NVIDIA ..."
+    },
+    {
+      "title": "NVIDIA Corporation - NVIDIA Announces NVIDIA Isaac GR00T Reference ...",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-NVIDIA-Isaac-GR00T-Reference-Humanoid-Robot-for-Academic-Research/default.aspx",
+      "snippet": "News Summary: NVIDIA announces an open humanoid robot reference design built on the NVIDIA Isaac GR00T platform, combining a Unitree H2 Plus humanoid robot, Sharpa five-fingered hands for dexterous manipulation, NVIDIA Jetson Thor onboard compute for advanced reasoning and control, and NVIDIA Isaac GR00T open software and models. The Isaac GR00T development platform — spanning data capture ..."
+    },
+    {
+      "title": "Isaac GR00T: Vision-Language-Action Models - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/10-groot.html",
+      "snippet": "In this session, we&#x27;ll explore the VLA model called NVIDIA Isaac GR00T, how it works, and see examples of it in action. Learning Objectives # By the end of this session, you&#x27;ll be able to: Explain what vision-language-action models are and why they&#x27;re powerful Describe the GR00T architecture and its components Understand how VLAs differ from traditional robot learning approaches What Is ..."
+    }
+  ]
+}

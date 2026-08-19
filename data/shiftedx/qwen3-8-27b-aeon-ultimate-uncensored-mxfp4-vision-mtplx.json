@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-mxfp4-vision-mtplx",
+  "slug": "shiftedx-qwen3-8-27b-aeon-ultimate-uncensored-mxfp4-vision-mtplx",
+  "author": "Shiftedx",
+  "url": "https://huggingface.co/Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-mxfp4-vision-mtplx",
+  "created_at": "2026-08-16T17:36:00.000Z",
+  "updated_at": "2026-08-17T08:34:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mxfp4",
+    "qwen3.5",
+    "qwen3.8",
+    "abliterated",
+    "experimental",
+    "mlx-vlm",
+    "vision",
+    "mtplx",
+    "speculative-decoding",
+    "multi-token-prediction",
+    "image-text-to-text",
+    "conversational",
+    "base_model:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "base_model:quantized:AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 558,
+  "trending_score": 0,
+  "parameters": 5505879280,
+  "parameters_human": "5.51B",
+  "storage_bytes": 16083446429,
+  "storage_human": "16.1 GB",
+  "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.8-27b-aeon-ultimate-uncensored-mxfp4-vision-mtplx",
+      "url": "https://huggingface.co/Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-mxfp4-vision-mtplx",
+      "snippet": "Instructions to use Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-mxfp4-vision-mtplx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    },
+    {
+      "title": "Shiftedx/Qwen3.8-27B-MLX-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/Shiftedx/Qwen3.8-27B-MLX-MXFP4",
+      "snippet": "like 0 Image-Text-to-Text MLX Safetensors qwen3_5 mlx-vlm mxfp4 vision-language qwen3.8 conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "OsaurusAI/Ornith-1.5-35B-A3B-JANG_4M",
+  "slug": "osaurusai-ornith-1-5-35b-a3b-jang_4m",
+  "author": "OsaurusAI",
+  "url": "https://huggingface.co/OsaurusAI/Ornith-1.5-35B-A3B-JANG_4M",
+  "created_at": "2026-08-19T19:17:28.000Z",
+  "updated_at": "2026-08-19T19:23:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "jang",
+    "ornith-1.5-35b-a3b-jang-4m",
+    "quantized",
+    "apple-silicon",
+    "ornith",
+    "vision",
+    "video",
+    "reasoning",
+    "thinking",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5999262192,
+  "parameters_human": "6.00B",
+  "storage_bytes": 21497574695,
+  "storage_human": "21.5 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 spans three model scales: 397B MoE, 35B MoE and 9B dense. Designed for strong general-purpose intelligence across reasoning, agentic, and coding tasks, Ornith-1.5 achieves state-of-the-art performance among open-source models of comparable size across a broad range of benchmarks."
+    },
+    {
+      "title": "OsaurusAI/Ornith-1.0-35B-MXFP4 at main - Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/Ornith-1.0-35B-MXFP4/tree/main",
+      "snippet": "How to use OsaurusAI/Ornith-1.-35B-MXFP4 with OpenClaw: ... main Ornith-1.-35B-MXFP4 19.4 GB Ctrl+K Ctrl+K 1 contributor History:2 commits Osaurus-AI Add files using upload-large-folder tool eb314b0 verified29 days ago .gitattributes Safe 1.57 kBAdd files using upload-large-folder tool29 days ago README.md 1.72 kBAdd files using upload-large ..."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B at main - Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "DeepReinforce Ornith-1.5 family released - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/deepreinforce-ornith-1-5-family-released/380623",
+      "snippet": "Looks like DeepReinforce released a bunch of Ornith-1.5 models today: 9B, 35B-A3B, 397B in a nice mix of quants/formats. The 35B-A3B looks interesting for a single-node setup. Downloading on one of my GX10s to give it a run through. Anyone already give it a go? Text-only per the model card, so not a direct competitor/replacement for Qwen3.6-35B, perhaps."
+    }
+  ]
+}

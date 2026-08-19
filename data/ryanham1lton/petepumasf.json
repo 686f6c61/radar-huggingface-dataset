@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/PetePumaSF",
+  "slug": "ryanham1lton-petepumasf",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/PetePumaSF",
+  "created_at": "2026-08-19T17:38:05.000Z",
+  "updated_at": "2026-08-19T17:39:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115943735,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chat GPT Memes + AI Art (@memerunnergpt) - Instagram",
+      "url": "https://www.instagram.com/memerunnergpt/",
+      "snippet": "413K Followers, 1,203 Following, 2,151 Posts - Chat GPT Memes + AI Art (@memerunnergpt) on Instagram: \"Number 1 AI account on Instagram. To make videos like me check out the link below 👇👇👇👇👇\""
+    },
+    {
+      "title": "Ryanham1lton/Pelipper · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Pelipper",
+      "snippet": "Ryanham1lton / Pelipper like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Pesto - Chick Vennera (Animaniacs) (English) [RVC v2] [RMVPE] [250 ...",
+      "url": "https://voice-models.com/model/9ut",
+      "snippet": "Pesto - Chick Vennera (Animaniacs) (English) [RVC v2] [RMVPE] [250 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Ryanham1lton/Gulpin · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Gulpin",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ryanham1lton | Storyteller.ai",
+      "url": "https://storyteller.ai/profile/ryanham1lton",
+      "snippet": "Storyteller.ai AI creation engine Make movies like this with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    }
+  ]
+}

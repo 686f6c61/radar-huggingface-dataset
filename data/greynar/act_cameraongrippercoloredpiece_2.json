@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Greynar/act_CameraOnGripperColoredPiece_2",
+  "slug": "greynar-act_cameraongrippercoloredpiece_2",
+  "author": "Greynar",
+  "url": "https://huggingface.co/Greynar/act_CameraOnGripperColoredPiece_2",
+  "created_at": "2026-08-19T17:45:22.000Z",
+  "updated_at": "2026-08-19T17:45:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Greynar/CameraOnGripperColoredPiece",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206706336,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Greynar/act_CameraOnGripperColoredPiece · Hugging Face",
+      "url": "https://huggingface.co/Greynar/act_CameraOnGripperColoredPiece",
+      "snippet": "Greynar / act_CameraOnGripperColoredPiece like 0 Robotics LeRobot Safetensors Greynar/CameraOnGripperColoredPiece act arxiv:2304.13705 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Greynar (Grégory Baltus) - Hugging Face",
+      "url": "https://huggingface.co/datasets/Greynar/",
+      "snippet": "Greynar&#x27;s datasets21 Sort: Recently updated Greynar/eval_act_CameraOnGripperColoredPiece Viewer •Updated 7 days ago•5.62k• 64"
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

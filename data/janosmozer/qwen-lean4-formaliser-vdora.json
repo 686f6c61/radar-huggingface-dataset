@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "JanosMozer/qwen-lean4-formaliser-vDoRA",
+  "slug": "janosmozer-qwen-lean4-formaliser-vdora",
+  "author": "JanosMozer",
+  "url": "https://huggingface.co/JanosMozer/qwen-lean4-formaliser-vDoRA",
+  "created_at": "2026-08-19T12:00:13.000Z",
+  "updated_at": "2026-08-19T12:14:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lean4",
+    "theorem-proving",
+    "autoformalization",
+    "formal-verification",
+    "math",
+    "dora",
+    "qdora",
+    "lora",
+    "qwen3",
+    "grpo",
+    "trl",
+    "moe",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "arxiv:2305.14314",
+    "arxiv:2402.09353",
+    "arxiv:2402.03300",
+    "arxiv:2501.12948",
+    "arxiv:2302.12433",
+    "base_model:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1001702266,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2603.24372] Improving Lean4 Autoformalization via Cycle Consistency ...",
+      "url": "https://arxiv.org/abs/2603.24372",
+      "snippet": "Autoformalization - automatically translating natural language mathematical texts into formal proof language such as Lean4 - can help accelerate AI-assisted mathematical research, be it via proof verification or proof search. I fine-tune Qwen3.5-2B with LoRA for natural language to Lean4 formalization on FineLeanCorpus and consider three training regimes: supervised fine-tuning (SFT) with ..."
+    },
+    {
+      "title": "qwen-1.5b-lean4-formalizer API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/AkameV6p5/qwen-1.5b-lean4-formalizer",
+      "snippet": "Run qwen-1.5b-lean4-formalizer with FriendliAI inference. This qwen2 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    },
+    {
+      "title": "SJTULean (SJTULean) - Hugging Face",
+      "url": "https://huggingface.co/SJTULean",
+      "snippet": "Our group maintains various datasets and models specifically designed for Lean4 formalization. These resources aim to bridge the gap between natural language mathematical expressions and formal Lean4 proofs."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

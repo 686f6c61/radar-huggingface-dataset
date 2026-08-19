@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "DT4H/CardioBERTa.it_GP_translations_only",
+  "slug": "dt4h-cardioberta-it_gp_translations_only",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/CardioBERTa.it_GP_translations_only",
+  "created_at": "2026-08-19T15:49:17.000Z",
+  "updated_at": "2026-08-19T15:57:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "biomedical",
+    "clinical",
+    "cardiology",
+    "entity-linking",
+    "concept-normalization",
+    "umls",
+    "metric-learning",
+    "it",
+    "base_model:DT4H/CardioBERTa.it",
+    "base_model:finetune:DT4H/CardioBERTa.it",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109927680,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439733088,
+  "storage_human": "440 MB",
+  "base_model": "DT4H/CardioBERTa.it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DT4H (DataTools4Heart) - Hugging Face",
+      "url": "https://huggingface.co/datasets/DT4H/",
+      "snippet": "Org profile for DataTools4Heart on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "CardioNER - a DT4H Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/DT4H/cardioner",
+      "snippet": "DT4H &#x27;s Collections CardioNER MultiClinNER CardioBERTa Family Spanish English Czech Dutch Italian Romanian Swedish"
+    },
+    {
+      "title": "The DataTools4Heart Project · GitHub",
+      "url": "https://github.com/DataTools4Heart/",
+      "snippet": "This organization hosts the source code and documentation for all components that power the DataTools4Heart (DT4H) platform — a federated, privacy-preserving cardiology data toolbox developed to enhance health data reusability. Our platform enables secure, decentralized analysis of cardiology data while strictly adhering to ethical, legal, and data protection standards."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google&#x27;s service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+    },
+    {
+      "title": "Home - DataTools4Heart",
+      "url": "https://www.datatools4heart.eu/",
+      "snippet": "Natural Language Processing DataTools4Heart will introduce a multilingual Natural Language Processing (NLP) suite to standardise the structuring of cardiology reports across European regions, including cardiology-specific entity recognition and machine translation. Such suite will include adaptation of 7 language models to the cardiology domain in English, Spanish, Italian, Romanian, Czech ..."
+    }
+  ]
+}

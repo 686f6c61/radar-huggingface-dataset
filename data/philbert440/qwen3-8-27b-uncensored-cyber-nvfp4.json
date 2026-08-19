@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "philbert440/Qwen3.8-27B-Uncensored-Cyber-NVFP4",
+  "slug": "philbert440-qwen3-8-27b-uncensored-cyber-nvfp4",
+  "author": "philbert440",
+  "url": "https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber-NVFP4",
+  "created_at": "2026-08-16T02:35:10.000Z",
+  "updated_at": "2026-08-19T15:17:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "uncensored",
+    "abliterated",
+    "qwen3",
+    "cyber",
+    "nvfp4",
+    "compressed-tensors",
+    "vllm",
+    "image-text-to-text",
+    "conversational",
+    "base_model:philbert440/Qwen3.8-27B-Uncensored-Cyber",
+    "base_model:quantized:philbert440/Qwen3.8-27B-Uncensored-Cyber",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 147,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 46157726429,
+  "storage_human": "46.2 GB",
+  "base_model": "philbert440/Qwen3.8-27B-Uncensored-Cyber",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-3.8-27B Uncensored - a philbert440 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/philbert440/qwen-38-27b-uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for philbert440/Qwen3.8-27B-Uncensored-Aggressive ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:philbert440/Qwen3.8-27B-Uncensored-Aggressive",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated launches as an uncensored AI model for free",
+      "url": "https://vgtimes.com/tech-and-hardware/164540-huihui-qwen3.8-27b-abliterated-launches-as-an-uncensored-ai-model-for-free.html",
+      "snippet": "The Hugging Face model card describes Huihui-Qwen3.8-27B-abliterated as a crude proof-of-concept for removing refusals from an LLM. In practice, that means the release is meant to demonstrate the method rather than serve as a polished overhaul.Huihui-ai released Huihui-Qwen3.8-27B-abliterated on August 18, 2026."
+    }
+  ]
+}

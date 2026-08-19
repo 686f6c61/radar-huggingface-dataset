@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ITLL/Mini.Deep.Thinker.11m",
+  "slug": "itll-mini-deep-thinker-11m",
+  "author": "ITLL",
+  "url": "https://huggingface.co/ITLL/Mini.Deep.Thinker.11m",
+  "created_at": "2026-08-19T13:17:31.000Z",
+  "updated_at": "2026-08-19T13:39:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_deep_thinker",
+    "causal-lm",
+    "decoder-only",
+    "reasoning",
+    "pretraining",
+    "think",
+    "thought",
+    "code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12446688,
+  "parameters_human": "12.4M",
+  "storage_bytes": 181963355,
+  "storage_human": "182 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepThinker",
+      "url": "https://deepthinker-ai.vercel.app/",
+      "snippet": "DeepThinker orchestrates structured panel discussions between multiple AI models to provide robust analysis and overcome single-AI limitations. Make better decisions with diverse perspectives."
+    },
+    {
+      "title": "Gemini 3.1 Deep Think — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/deep-think/",
+      "snippet": "Pushing the boundaries of intelligence, by blending deep scientific knowledge with everyday engineering utility, Deep Think moves beyond abstract theory to drive practical applications."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Models — Google DeepMind",
+      "url": "https://deepmind.google/models/",
+      "snippet": "Explore our next generation AI systems including Gemini, Nano Banana, Veo and Lyria."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

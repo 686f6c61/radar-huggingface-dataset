@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rastamdf/sample-model-demo",
+  "slug": "rastamdf-sample-model-demo",
+  "author": "rastamdf",
+  "url": "https://huggingface.co/rastamdf/sample-model-demo",
+  "created_at": "2026-08-19T14:31:56.000Z",
+  "updated_at": "2026-08-19T14:31:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Demos - MakeAI",
+      "url": "https://makeai.org/demos",
+      "snippet": "Explore our open-source AI demos."
+    },
+    {
+      "title": "ModelsLab Playground - Explore & Test AI Models",
+      "url": "https://modelslab.com/playground",
+      "snippet": "Experiment with AI models in the ModelsLab Playground. Generate images, text, audio, and more in an interactive developer environment."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - aws-samples/sample-ai-possibilities: Experimental AI demos ...",
+      "url": "https://github.com/aws-samples/sample-ai-possibilities",
+      "snippet": "This repository serves as a playground for exploring cutting-edge AI capabilities through practical examples. Each sample illustrates different AI possibilities using AWS services (like Amazon Bedrock, SageMaker) and popular open-source frameworks."
+    },
+    {
+      "title": "GitHub - microsoft/samples-for-ai: Samples for getting started with ...",
+      "url": "https://github.com/microsoft/samples-for-ai",
+      "snippet": "Samples for AI Samples for AI is a deep learning samples and projects collection. It contains a lot of classic deep learning algorithms and applications with different frameworks, which is a good entry for the beginners to get started with deep learning."
+    }
+  ]
+}

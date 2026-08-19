@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "RubikRif/bertnn-shopee-sentiment-analysis",
+  "slug": "rubikrif-bertnn-shopee-sentiment-analysis",
+  "author": "RubikRif",
+  "url": "https://huggingface.co/RubikRif/bertnn-shopee-sentiment-analysis",
+  "created_at": "2026-08-19T14:01:06.000Z",
+  "updated_at": "2026-08-19T14:01:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124442113,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497791948,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sentiment Analysis Of Shopee Product Reviews Using Distilbert",
+      "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv251122313A/abstract",
+      "snippet": "The rapid growth of digital commerce has led to the accumulation of a massive number of consumer reviews on online platforms. Shopee, as one of the largest e-commerce platforms in Southeast Asia, receives millions of product reviews every day containing valuable information regarding customer satisfaction and preferences. Manual analysis of these reviews is inefficient, thus requiring a ..."
+    },
+    {
+      "title": "Y-T-G/shopee-sentiment-analysis - GitHub",
+      "url": "https://github.com/Y-T-G/shopee-sentiment-analysis",
+      "snippet": "Sentiment Analysis on Shopee Reviews This project utilizes Blurr library&#x27;s huggingface transformers integration for the FastAI deep learning framework to fine-tune the BERT language model for sentiment analysis using the Shopee Sentiment Analysis dataset from Kaggle."
+    },
+    {
+      "title": "NLP_Project.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Y-T-G/shopee-sentiment-analysis/blob/master/sentiment_analysis.ipynb",
+      "snippet": "Archive: /content/drive/MyDrive/train.csv.zip inflating: train.csv"
+    },
+    {
+      "title": "gracechia/Sentiment-Analysis-for-Shopee - GitHub",
+      "url": "https://github.com/gracechia/Sentiment-Analysis-for-Shopee",
+      "snippet": "The data science team web scraped 4,461 unique user reviews on Shopee&#x27;s Google Play. Classical machine learning and deep learning NLP approaches were explored when building a sentiment classification model for Shopee reviews. The Voting Classifier was eventually selected as our production model as it achieved the highest accuracy and recall on the validation set. An ensemble of a TF-IDF ..."
+    },
+    {
+      "title": "Sentiment Analysis of Shopee Reviews",
+      "url": "https://www.scribd.com/document/843737557/Sentiment-Analysis-for-Shopee",
+      "snippet": "The document outlines a sentiment analysis project for Shopee, aiming to classify user reviews and identify customer pain points using natural language processing. A voting classifier was selected for its high accuracy and recall, achieving 0.892 accuracy on the test set. Key recommendations include improving payment stability, addressing fraudulent sellers, and optimizing app performance ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "himelsarder/Fish-Classi-Eyes",
+  "slug": "himelsarder-fish-classi-eyes",
+  "author": "himelsarder",
+  "url": "https://huggingface.co/himelsarder/Fish-Classi-Eyes",
+  "created_at": "2026-08-19T12:28:17.000Z",
+  "updated_at": "2026-08-19T12:28:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "himelsarder/Fish-Fresh · Hugging Face",
+      "url": "https://huggingface.co/himelsarder/Fish-Fresh",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FishAI: Automated hierarchical marine fish image classification with ...",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/eng2.12992",
+      "snippet": "Trained with marine fish images collected from the World Register of Marine Species, FishAI used the Vision Transformer (ViT) model, to classify fish. The model considers hierarchy levels, covering 3 classes, 38 orders, 154 families, 438 genera, and 808 species."
+    },
+    {
+      "title": "fish eye - Free AI Image Generation Models | SeaArt",
+      "url": "https://www.seaart.ai/tagInfo/model/fish%20eye",
+      "snippet": "Explore thousands of fish eye AI models. Find your go-to AI Art/Image generation models and create your desired AI art quickly."
+    },
+    {
+      "title": "GitHub - fishial/fish-identification: Fish Detection (Segmentation ...",
+      "url": "https://github.com/fishial/fish-identification",
+      "snippet": "This repository contains the official training and validation scripts for the Fishial.ai fish segmentation, detection, and classification models."
+    }
+  ]
+}

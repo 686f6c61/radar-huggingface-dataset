@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bobtehbuilder/tds-ga8-carbon-d3baa6f5a2d7",
+  "slug": "bobtehbuilder-tds-ga8-carbon-d3baa6f5a2d7",
+  "author": "bobtehbuilder",
+  "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-d3baa6f5a2d7",
+  "created_at": "2026-08-19T16:56:31.000Z",
+  "updated_at": "2026-08-19T16:56:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thingiverse — Search & Download 3D Printing Models and STL Files",
+      "url": "https://thingiverse.app/",
+      "snippet": "Thingiverse search: find, preview and download free 3D printable models and STL files from across the web — no ads, no sign-up."
+    },
+    {
+      "title": "GA8 Card Model Instructions: AI Chat & PDF Access | Manualzz",
+      "url": "https://manualzz.com/doc/81045911/bob-s-card-models-gippsland-airvan-ga8-quick-start-manual",
+      "snippet": "Get detailed instructions for building Bob&#x27;s Card Models GA8. Access AI for help & download the PDF manual. Build your Gippsland Airvan GA8 card model!"
+    },
+    {
+      "title": "GA8 Field Backpack 3D Digital Model",
+      "url": "https://cults3d.com/en/3d-model/game/ga8-field-backpack-3d-digital-model",
+      "snippet": "Download this OBJ Model for 3D printer made by zjjj927. You can adjust the proportions you want. I hope you like my work. If you have any questions, please pay attention. I will answer you as soon as I see the information."
+    },
+    {
+      "title": "uditaab/IITM_TDS_GA8 - GitHub",
+      "url": "https://github.com/uditaab/IITM_TDS_GA8",
+      "snippet": "Repo to store all the required files for GA8 of TDS. - uditaab/IITM_TDS_GA8"
+    },
+    {
+      "title": "Ga8 3D Models download - Free3D",
+      "url": "https://free3d.com/premium-3d-models/ga8",
+      "snippet": "1 Ga8 3d models found. Available for download in .blend .obj .c4d .3ds .max .ma and many more formats."
+    }
+  ]
+}

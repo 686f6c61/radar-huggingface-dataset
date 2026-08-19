@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lv12/k3-multimodal-6k",
+  "slug": "lv12-k3-multimodal-6k",
+  "author": "lv12",
+  "url": "https://huggingface.co/lv12/k3-multimodal-6k",
+  "created_at": "2026-08-19T14:04:32.000Z",
+  "updated_at": "2026-08-19T15:05:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "k3",
+    "custom_code",
+    "arxiv:2407.24653",
+    "arxiv:2203.15556",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122030272,
+  "parameters_human": "122.0M",
+  "storage_bytes": 492652846,
+  "storage_human": "493 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Multimodal Models of 2026 Rankings: Test & Compare",
+      "url": "https://blog.roboflow.com/best-multimodal-models/",
+      "snippet": "The top multimodal models in early 2026 span a range of strengths: SAM 3 leads Roboflow&#x27;s AI Vision Model Rankings with a score of 1391 and zero-shot segmentation across diverse domains, Gemini 2.5 and Gemini 3 offer a 2-million-token context window suited to long visual reasoning tasks, GPT-5 advances multimodal reasoning and generation, Qwen VL Max targets multilingual and document-heavy ..."
+    },
+    {
+      "title": "Moonshot AI Unveils Kimi K3: A Deep Dive into the 2.8T Parameter Open ...",
+      "url": "https://www.houdao.com/d/16762-Moonshot-AI-Unveils-Kimi-K3-A-Deep-Dive-into-the-2-8T-Parameter-OpenSource-Model",
+      "snippet": "Moonshot AI released the 2.8 trillion-parameter open-source model Kimi K3 on July 16, 2026. The model surpassed Claude Fable 5 on the front-end programming leaderboard Code Arena, showcasing strong capabilities in visual design, game development, and 3D reasoning. This article provides a detailed analysis of its technical specifications, performance benchmarks, application cases, cost ..."
+    },
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "moonshotai (Moonshot AI) - Hugging Face",
+      "url": "https://huggingface.co/moonshotai",
+      "snippet": "Org profile for Moonshot AI on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Best Multimodal AI Models 2026: Vision, Audio, Video, and Agents",
+      "url": "https://aimodelbenchmarks.com/blog/2026-02-13-multimodal-ai-models/",
+      "snippet": "Multimodal AI models can reason over more than text. The current frontier models can read screenshots, charts, product photos, PDFs, diagrams, audio, and video clips, then use that visual or audio context inside a normal chat, coding, or agent workflow."
+    }
+  ]
+}

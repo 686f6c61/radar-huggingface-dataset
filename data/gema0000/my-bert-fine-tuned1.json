@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gema0000/my-bert-fine-tuned1",
+  "slug": "gema0000-my-bert-fine-tuned1",
+  "author": "gema0000",
+  "url": "https://huggingface.co/gema0000/my-bert-fine-tuned1",
+  "created_at": "2026-08-19T18:20:04.000Z",
+  "updated_at": "2026-08-19T18:22:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951304,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Fine-Tuning a BERT Model - MachineLearningMastery.com",
+      "url": "https://machinelearningmastery.com/fine-tuning-a-bert-model/",
+      "snippet": "BERT is a foundational NLP model trained to understand language, but it may not perform well on any specific task out of the box. However, you can build upon BERT by adding appropriate model heads and training it for a specific task. This process is called fine-tuning. In this article, you will learn how to […]"
+    },
+    {
+      "title": "Gemma model fine-tuning - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/tune",
+      "snippet": "Fine-tuning a generative artificial intelligence (AI) model such as Gemma modifies the behavior of the model. You typically fine-tune Gemma with the intent of improving its performance on a specific task or domain, or to better fulfill a role, such as customer service."
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "Supervised and distillation fine-tuning for open models",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tuning/open-model-tuning",
+      "snippet": "This page describes how to perform supervised and distillation fine-tuning on open models such as Llama 3.1. Unless stated otherwise, the instructions on this page apply to both supervised fine-tuning and distillation fine-tuning. Distillation lets you tune a smaller student model using the outputs of a larger teacher model. Supported tuning modes Supervised fine-tuning: Full fine-tuning Low ..."
+    }
+  ]
+}

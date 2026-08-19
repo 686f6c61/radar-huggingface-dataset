@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Justbackup/Llama-3.3-70B-Instruct-abliterated-GGUF",
+  "slug": "justbackup-llama-3-3-70b-instruct-abliterated-gguf",
+  "author": "Justbackup",
+  "url": "https://huggingface.co/Justbackup/Llama-3.3-70B-Instruct-abliterated-GGUF",
+  "created_at": "2026-08-19T16:18:45.000Z",
+  "updated_at": "2026-08-19T16:18:45.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "de"
+  ],
+  "tags": [
+    "gguf",
+    "facebook",
+    "meta",
+    "llama",
+    "llama-3",
+    "abliterated",
+    "uncensored",
+    "text-generation",
+    "en",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "de",
+    "base_model:huihui-ai/Llama-3.3-70B-Instruct-abliterated",
+    "base_model:quantized:huihui-ai/Llama-3.3-70B-Instruct-abliterated",
+    "license:llama3.3",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 927563185434,
+  "storage_human": "927.6 GB",
+  "base_model": "huihui-ai/Llama-3.3-70B-Instruct-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Justbackup/Llama-3.3-70B-Instruct-ablated · Hugging Face",
+      "url": "https://huggingface.co/Justbackup/Llama-3.3-70B-Instruct-ablated",
+      "snippet": "Duplicated from NaniDAO/Llama-3.3-70B-Instruct-ablated Justbackup / Llama-3.3-70B-Instruct-ablated like 0 Text Generation Transformers Safetensors 8 languages llama ablated ablation uncensored nani llama-3 chat instruct conversational text-generation-inference License:llama3 Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "huihui-ai/Llama-3.3-70B-Instruct-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Llama-3.3-70B-Instruct-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.3-70B-Instruct-abliterated: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/llama-3.3-70b-instruct-abliterated-huihui-ai",
+      "snippet": "Overview Llama-3.3-70B-Instruct-abliterated is an uncensored variant of Meta&#x27;s Llama 3.3 70B Instruct model created by huihui-ai using abliteration—a technique that removes refusal mechanisms from the base model without relying on TransformerLens. The model retains the full 70 billion parameter count and instruction-following capabilities of the original while designed to respond to a ..."
+    },
+    {
+      "title": "huihui-ai/Llama-3.3-70B-Instruct-abliterated",
+      "url": "https://featherless.ai/models/huihui-ai/Llama-3.3-70B-Instruct-abliterated",
+      "snippet": "Model Overview huihui-ai/Llama-3.3-70B-Instruct-abliterated is a 70 billion parameter instruction-tuned language model based on Meta&#x27;s Llama-3.3-70B-Instruct. Its key differentiator is the application of an \"abliteration\" technique, a proof-of-concept method designed to remove refusal behaviors and provide uncensored outputs. This modification aims to bypass the inherent content moderation ..."
+    },
+    {
+      "title": "huihui_ai/llama3.3-abliterated:70b",
+      "url": "https://ollama.com/huihui_ai/llama3.3-abliterated:70b",
+      "snippet": "New state of the art 70B model. Llama 3.3 70B offers similar performance compared to Llama 3.1 405B model."
+    }
+  ]
+}

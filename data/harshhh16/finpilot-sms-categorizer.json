@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Harshhh16/finpilot-sms-categorizer",
+  "slug": "harshhh16-finpilot-sms-categorizer",
+  "author": "Harshhh16",
+  "url": "https://huggingface.co/Harshhh16/finpilot-sms-categorizer",
+  "created_at": "2026-08-19T18:15:07.000Z",
+  "updated_at": "2026-08-19T18:15:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333278,
+  "storage_human": "85 MB",
+  "base_model": "unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Finpilot",
+      "url": "https://www.finpilot.ai/",
+      "snippet": "Finpilot AI has delivered substantial productivity gains for our team and transformed our manager monitoring and investment due diligence processes. It enables us to rapidly generate accurate insights from manager communications and documents at scale, automating tasks that were previously highly manual."
+    },
+    {
+      "title": "FinPilot - AI CFO for SMEs",
+      "url": "https://fin-pilot.app/",
+      "snippet": "FinPilot is an AI-powered CFO platform for SMEs. Cash flow forecasting, invoice tracking, margin analysis, spend control — powered by a 3-model AI brain that thinks like a seasoned CFO."
+    },
+    {
+      "title": "GitHub - godlysabu/FinPilot-AI: AI-powered Financial Decision Support ...",
+      "url": "https://github.com/godlysabu/FinPilot-AI/tree/main",
+      "snippet": "AI-powered Financial Decision Support System for SMEs featuring financial analysis, forecasting, fraud detection, interactive dashboards, OCR, and a local LLM-powered financial assistant. - godlysabu/FinPilot-AI"
+    },
+    {
+      "title": "GitHub - Philipcyrus/FinPilot-AI: Built an AI-powered wealth operating ...",
+      "url": "https://github.com/Philipcyrus/FinPilot-AI/tree/main",
+      "snippet": "Built an AI-powered wealth operating system that combines personal finance intelligence, portfolio analytics, financial research, goal planning, behavioral analysis, scenario simulation, and confidence-based financial recommendations through a Financial Digital Twin model."
+    },
+    {
+      "title": "GitHub - ZiaTauqeer/Finpilot-AI",
+      "url": "https://github.com/ZiaTauqeer/Finpilot-AI",
+      "snippet": "FinPilot is an AI-powered personal finance platform that automatically captures and analyzes financial transaction SMS messages to provide users with a comprehensive view of their spending behavior. By leveraging Large Language Models (LLMs), machine learning, and forecasting techniques, FinPilot converts unstructured transaction notifications into categorized financial records, actionable ..."
+    }
+  ]
+}

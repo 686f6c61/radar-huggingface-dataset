@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "R-Kentaren/harmonyconv",
+  "slug": "r-kentaren-harmonyconv",
+  "author": "R-Kentaren",
+  "url": "https://huggingface.co/R-Kentaren/harmonyconv",
+  "created_at": "2026-08-19T14:32:07.000Z",
+  "updated_at": "2026-08-19T14:32:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "R-Kentaren/dataset · Hugging Face",
+      "url": "https://huggingface.co/R-Kentaren/dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "R-Kentaren (Rico Ardiansyah) - Hugging Face",
+      "url": "https://huggingface.co/R-Kentaren/activity/upvotes",
+      "snippet": "R-Kentaren &#x27;s activity All Models Datasets Spaces Buckets Papers Collections Community Posts Upvotes Likes Articles upvoted a collection 21 days ago"
+    },
+    {
+      "title": "AICoverGenWebUI - r-kentaren-hyper-rvc.hf.space",
+      "url": "https://r-kentaren-hyper-rvc.hf.space/?__theme=system",
+      "snippet": "Changes pitch/key of vocals and instrumentals together. Altering this slightly reduces sound quality. (Semitones) ↺ -1212 Voice conversion options Audio mixing options Clear Generate AI Cover"
+    },
+    {
+      "title": "R-Kentaren/rec · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/R-Kentaren/rec",
+      "snippet": "R-Kentaren / rec like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - esnya/hf-rvc: Retrieval-based Voice Conversion (RVC ...",
+      "url": "https://github.com/esnya/hf-rvc",
+      "snippet": "HF RVC is a package for Retrieval-based-Voice-Conversion (RVC) implementation using HuggingFace&#x27;s transformers, along with the capability to convert from original unsafe models. The library is easy to use and provides an efficient way to perform voice conversion tasks."
+    }
+  ]
+}

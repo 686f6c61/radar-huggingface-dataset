@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "23f3000911/tds-carbon-card",
+  "slug": "23f3000911-tds-carbon-card",
+  "author": "23f3000911",
+  "url": "https://huggingface.co/23f3000911/tds-carbon-card",
+  "created_at": "2026-08-19T13:11:09.000Z",
+  "updated_at": "2026-08-19T13:13:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Divya-netter/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Divya-netter/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA RTX 4090 (6 GPUs) Training Mode: fine-tuning Region: us-east1 GPU Hours: 388h (PUE: 1.44) Total Energy: 1508.544 kWh CO₂ Emissions: 633.588 kg CO₂eq"
+    },
+    {
+      "title": "24f2005112/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/24f2005112/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "23f3000911/tds-may-2026 - GitHub",
+      "url": "https://github.com/23f3000911/tds-may-2026",
+      "snippet": "Contribute to 23f3000911/tds-may-2026 development by creating an account on GitHub."
+    },
+    {
+      "title": "Branches · 23f3000911/tds-may-2026 · GitHub",
+      "url": "https://github.com/23f3000911/tds-may-2026/branches",
+      "snippet": "Contribute to 23f3000911/tds-may-2026 development by creating an account on GitHub."
+    },
+    {
+      "title": "carbontxt.org",
+      "url": "https://carbontxt.org/ai-model-cards",
+      "snippet": "AI Model Sustainability Directory Using the carbon.txt syntax and validator, we have extracted the sustainability data from over 2500 AI model cards from Hugging Face that are listed with co2_eq_emissions metadata."
+    }
+  ]
+}

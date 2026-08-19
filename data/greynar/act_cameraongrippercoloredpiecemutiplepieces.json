@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Greynar/act_CameraOnGripperColoredPieceMutiplePieces",
+  "slug": "greynar-act_cameraongrippercoloredpiecemutiplepieces",
+  "author": "Greynar",
+  "url": "https://huggingface.co/Greynar/act_CameraOnGripperColoredPieceMutiplePieces",
+  "created_at": "2026-08-19T19:04:55.000Z",
+  "updated_at": "2026-08-19T19:05:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Greynar/CameraOnGripperColoredPieceMutiplePieces",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206706336,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Greynar/act_CameraOnGripperColoredPiece · Hugging Face",
+      "url": "https://huggingface.co/Greynar/act_CameraOnGripperColoredPiece",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "Greynar/eval_act_CameraOnGripperColoredPiece - Hugging Face",
+      "url": "https://huggingface.co/datasets/Greynar/eval_act_CameraOnGripperColoredPiece",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Auto Rigging for Characters, Animals & 3D Models | AutoRig",
+      "url": "https://autorig.online/",
+      "snippet": "Upload GLB, FBX, or OBJ models and get AI-assisted rigs for humanoid characters, animals, non-humanoid assets, Blender, Unity, and Unreal Engine."
+    }
+  ]
+}

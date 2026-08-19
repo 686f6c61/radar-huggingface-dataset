@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "kurdish-tech/kurdish-tokenizer-unigram-32k",
+  "slug": "kurdish-tech-kurdish-tokenizer-unigram-32k",
+  "author": "kurdish-tech",
+  "url": "https://huggingface.co/kurdish-tech/kurdish-tokenizer-unigram-32k",
+  "created_at": "2026-08-19T12:48:26.000Z",
+  "updated_at": "2026-08-19T12:48:28.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "kmr",
+    "ckb",
+    "diq",
+    "ku"
+  ],
+  "tags": [
+    "transformers",
+    "tokenizer",
+    "kurdish",
+    "kurmanji",
+    "sorani",
+    "zazaki",
+    "low-resource",
+    "unigram",
+    "sentencepiece",
+    "text-generation",
+    "kmr",
+    "ckb",
+    "diq",
+    "ku",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kurdish-tech/kurdish-tokenizer-bpe-64k · Hugging Face",
+      "url": "https://huggingface.co/kurdish-tech/kurdish-tokenizer-bpe-64k",
+      "snippet": "A byte-level BPE tokenizer covering all three major Kurdish varieties in a single vocabulary: Kurmancî (Latin script), Soranî (Arabic script), and Zazakî (Latin script)."
+    },
+    {
+      "title": "kurdish-tech (Kurdish Technology) - Hugging Face",
+      "url": "https://huggingface.co/kurdish-tech",
+      "snippet": "Kurdish-Tech is an independent, community-driven, non-profit open-source organization dedicated to building modern digital infrastructure for the Kurdish language."
+    },
+    {
+      "title": "Kurdish Technology - GitHub",
+      "url": "https://github.com/Kurdish-Tech/",
+      "snippet": "Kurdish-Tech is an independent, community-driven open-source technology organization dedicated to building modern digital infrastructure for the Kurdish language. We believe that every language deserves a strong digital presence. Our mission is to create high-quality software, linguistic resources, and educational tools that make Kurdish more accessible across modern platforms. Our work is ..."
+    },
+    {
+      "title": "KurdishTech",
+      "url": "https://kurdishtech.com/",
+      "snippet": "Hi, I&#x27;m Mustafa I&#x27;m a full stack developer, and i enjoy coding..."
+    },
+    {
+      "title": "GitHub - cikay/awesome-kurdish-tech: A curated list of Kurdish language ...",
+      "url": "https://github.com/cikay/awesome-kurdish-tech",
+      "snippet": "AI Models Language Identification facebook/fasttext-language-identification — fastText language identification model (lid218e) for 217 languages (includes Kurdish varieties such as Kurmanji and Sorani)."
+    }
+  ]
+}

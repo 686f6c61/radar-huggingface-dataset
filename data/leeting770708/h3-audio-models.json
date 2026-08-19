@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "leeting770708/h3-audio-models",
+  "slug": "leeting770708-h3-audio-models",
+  "author": "leeting770708",
+  "url": "https://huggingface.co/leeting770708/h3-audio-models",
+  "created_at": "2026-08-19T17:19:00.000Z",
+  "updated_at": "2026-08-19T17:20:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:ACE-Step/Ace-Step1.5",
+    "base_model:finetune:ACE-Step/Ace-Step1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 93409096667,
+  "storage_human": "93.4 GB",
+  "base_model": "ACE-Step/Ace-Step1.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "h3-studio/comfyui-minimax-h3-audio-T8/docs/SPEECH_VALIDATION ... - GitHub",
+      "url": "https://github.com/leeting770708/h3-studio/blob/main/comfyui-minimax-h3-audio-T8/docs/SPEECH_VALIDATION_REPORT.md",
+      "snippet": "The speech generator reuses the connected MiniMax H3 MODEL, Qwen3-VL CLIP, video VAE, and audio VAE. No second H3 or text-encoder loader exists inside the speech nodes. The tests below use the joint AV model on a 32x32 dark video canvas and retain only decoded audio."
+    },
+    {
+      "title": "Model Architecture & Generation Modes | ai-models-lab/minimax-h3 | DeepWiki",
+      "url": "https://deepwiki.com/ai-models-lab/minimax-h3/4.1-model-architecture-and-generation-modes",
+      "snippet": "Model Architecture & Generation Modes Relevant source files The MiniMax H3 (Hailuo AI 3.0) represents a significant advancement in multi-modal generative AI, featuring a native transformer-based architecture capable of generating synchronized 2K video and 3D stereo audio in a single diffusion pass."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

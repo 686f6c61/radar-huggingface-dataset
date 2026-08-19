@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Moore2877/Qwen-Fixed-Chat-Templates-llamacpp",
+  "slug": "moore2877-qwen-fixed-chat-templates-llamacpp",
+  "author": "Moore2877",
+  "url": "https://huggingface.co/Moore2877/Qwen-Fixed-Chat-Templates-llamacpp",
+  "created_at": "2026-07-04T23:27:11.000Z",
+  "updated_at": "2026-08-19T18:05:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "chat-template",
+    "jinja",
+    "llama.cpp",
+    "qwen3.6",
+    "qwen3.8",
+    "agents",
+    "tool-calling",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 28,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moore2877/Qwen-Fixed-Chat-Templates-llamacpp · Hugging Face",
+      "url": "https://huggingface.co/Moore2877/Qwen-Fixed-Chat-Templates-llamacpp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Moore2877/Qwen-Fixed-Chat-Templates-llamacpp at main",
+      "url": "https://huggingface.co/Moore2877/Qwen-Fixed-Chat-Templates-llamacpp/tree/main",
+      "snippet": "qwen3.6 agents tool-calling License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Qwen-Fixed-Chat-Templates-llamacpp Ctrl+K Ctrl+K 1 contributor History:32 commits Moore2877 v15: mid-context skill rechecks and versioned artifacts c01148a verified1 day ago archivev15: mid-context skill rechecks and versioned ..."
+    },
+    {
+      "title": "Moore2877/Qwen-Fixed-Chat-Templates-llamacpp | LLMs .INFO",
+      "url": "https://llms.info/models/moore2877-qwen-fixed-chat-templates-llamacpp-2383",
+      "snippet": "chat-template, jinja, llama.cpp, qwen3.6, agents Runs Local runtime Memory N/A Model Size N/A Local runtime"
+    },
+    {
+      "title": "Qwen-Fixed-Chat-Templates · Models",
+      "url": "https://www.modelscope.cn/models/froggeric/Qwen-Fixed-Chat-Templates",
+      "snippet": "Fixed jinja chat templates for Qwen 3.5, 3.6 & 3.8 (v22.1) This is a universal drop-in Jinja template that fixes rendering errors, KV cache invalidation, token waste, empty think poisoning, and fatal agentic stalling across official Qwen chat templates."
+    },
+    {
+      "title": "GitHub - clach04/froggeric_Qwen-Fixed-Chat-Templates: mirror of https ...",
+      "url": "https://github.com/clach04/froggeric_Qwen-Fixed-Chat-Templates",
+      "snippet": "Open your Qwen model in the right-side panel. Scroll down to Prompt Template. Replace the template with the contents of chat_template.jinja. Click Save."
+    }
+  ]
+}

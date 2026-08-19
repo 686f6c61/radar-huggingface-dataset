@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Ishowbackup/Muse-Glimmer-30B-Abliterated-GGUF",
+  "slug": "ishowbackup-muse-glimmer-30b-abliterated-gguf",
+  "author": "Ishowbackup",
+  "url": "https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-GGUF",
+  "created_at": "2026-08-15T23:17:14.000Z",
+  "updated_at": "2026-08-15T23:17:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "muse-glimmer",
+    "abliterated",
+    "quantized",
+    "agentic",
+    "multimodal",
+    "llama.cpp",
+    "dflash",
+    "experimental",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16",
+    "base_model:quantized:Blackfrost-AI/Muse-Glimmer-30B-Abliterated-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 194,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 175640466816,
+  "storage_human": "175.6 GB",
+  "base_model": "Blackfrost-Research/Muse-Glimmer-30B-Abliterated-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ishowbackup/Muse-Glimmer-30B-Abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ishowbackup/Muse-Glimmer-30B-Abliterated-GGUF at main",
+      "url": "https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-GGUF/tree/main",
+      "snippet": "Instructions to use Ishowbackup/Muse-Glimmer-30B-Abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - cobusgreyling/Muse-Glimmer: Introducing Muse Glimmer: open ...",
+      "url": "https://github.com/cobusgreyling/Muse-Glimmer/tree/main",
+      "snippet": "Introducing Muse Glimmer: open-weight 30B agentic multimodal model that runs on your device (Meta). Interactive local agent lab + guide. Apache 2.0 · on-device AI · function calling - cobusgreyling..."
+    },
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "Model API | Get the model - dev.meta.ai",
+      "url": "https://dev.meta.ai/docs/muse-glimmer/get-the-model",
+      "snippet": "Download Muse Glimmer weights and artifacts from Hugging Face and pick the build your runtime needs."
+    }
+  ]
+}

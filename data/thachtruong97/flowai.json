@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "thachtruong97/FlowAI",
+  "slug": "thachtruong97-flowai",
+  "author": "thachtruong97",
+  "url": "https://huggingface.co/thachtruong97/FlowAI",
+  "created_at": "2026-08-19T14:15:15.000Z",
+  "updated_at": "2026-08-19T14:16:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4205019741,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thachtruong97/FlowAI · Hugging Face",
+      "url": "https://huggingface.co/thachtruong97/FlowAI",
+      "snippet": "ComfyUI is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output. Its powerful and modular node graph interface em"
+    },
+    {
+      "title": "thachtruong97 (Thach Truong) - Hugging Face",
+      "url": "https://huggingface.co/thachtruong97",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... published a model 1 day ago"
+    },
+    {
+      "title": "GitHub - aiudalabs/flowAI: Visual drag-and-drop platform for building ...",
+      "url": "https://github.com/aiudalabs/flowAI",
+      "snippet": "FlowAI - Visual Agentic Workflow Builder Build, execute, and deploy LangGraph agentic workflows through a visual drag-and-drop interface."
+    },
+    {
+      "title": "Flow AI - GitHub",
+      "url": "https://github.com/flowaicom",
+      "snippet": "Type Language Sort flowai-harness Public Opinionated agent harness for data agents that plan, call tools, and execute approved actions on business data — typed plans, approvals, references, evals, and streaming events on a native Rust runtime."
+    },
+    {
+      "title": "Flow.ai Dashboard",
+      "url": "https://app.flow.ai/",
+      "snippet": "Flow.ai Dashboard <?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    }
+  ]
+}

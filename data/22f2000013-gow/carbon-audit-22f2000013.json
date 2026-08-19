@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "22f2000013-gow/carbon-audit-22f2000013",
+  "slug": "22f2000013-gow-carbon-audit-22f2000013",
+  "author": "22f2000013-gow",
+  "url": "https://huggingface.co/22f2000013-gow/carbon-audit-22f2000013",
+  "created_at": "2026-08-19T17:54:11.000Z",
+  "updated_at": "2026-08-19T17:58:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "22f2000013-gow (SH GOWTHAM GUDIMELLA) - Hugging Face",
+      "url": "https://huggingface.co/22f2000013-gow",
+      "snippet": "User profile of SH GOWTHAM GUDIMELLA on Hugging Face"
+    },
+    {
+      "title": "22f2000013-gow · GitHub",
+      "url": "https://github.com/22f2000013-gow/",
+      "snippet": "Add an optional note Maximum 250 characters. Please don&#x27;t include any personal information such as legal names or email addresses. Markdown is supported. This note will only be visible to you."
+    },
+    {
+      "title": "Check for Recalls: Vehicle, Car Seat, Tire, Equipment | NHTSA",
+      "url": "https://www.nhtsa.gov/recalls",
+      "snippet": "Use our VIN lookup tool to check for recalls on your car, or search by make and model. Our databases also list car seats, tires, and equipment recalled for unreasonable safety risk or failing to meet minimum safety standards."
+    },
+    {
+      "title": "GitHub - 22f2000013-gow/tds-data-analyst-bot",
+      "url": "https://github.com/22f2000013-gow/tds-data-analyst-bot",
+      "snippet": "Data-Analyst Telegram Bot An LLM agent that answers data-analysis questions sent to it on Telegram. Built for IIT Madras Tools in Data Science, Project 1 (Task 2)."
+    },
+    {
+      "title": "Homepage | GHG Protocol",
+      "url": "https://ghgprotocol.org/",
+      "snippet": "Greenhouse Gas Protocol provides the world&#x27;s most widely used greenhouse gas accounting standards for companies."
+    }
+  ]
+}

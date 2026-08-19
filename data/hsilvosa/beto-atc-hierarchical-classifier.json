@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "hsilvosa/BETO-ATC-Hierarchical-Classifier",
+  "slug": "hsilvosa-beto-atc-hierarchical-classifier",
+  "author": "hsilvosa",
+  "url": "https://huggingface.co/hsilvosa/BETO-ATC-Hierarchical-Classifier",
+  "created_at": "2026-08-19T18:54:00.000Z",
+  "updated_at": "2026-08-19T18:58:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "spanish",
+    "medical",
+    "pharmacology",
+    "atc-code",
+    "aemps-cima",
+    "es",
+    "dataset:hsilvosa/aemps-cima",
+    "dataset:hsilvosa/openplacsp",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109861646,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439470120,
+  "storage_human": "439 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "ATC Taxonomy Classification",
+      "dataset": "AEMPS CIMA Research Dataset",
+      "metric": "Top-1 Accuracy",
+      "value": 0.948
+    },
+    {
+      "task": "ATC Taxonomy Classification",
+      "dataset": "AEMPS CIMA Research Dataset",
+      "metric": "Micro F1",
+      "value": 0.942
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hierarchical Classification - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/hierarchical-classification/",
+      "snippet": "Hierarchical classification is a task in machine learning where the goal is to assign an instance to one or more classes organized in a hierarchy, rather than choosing from a flat label set. This structure can improve prediction accuracy and make outputs more interpretable."
+    },
+    {
+      "title": "GitHub - dccuchile/beto: BETO - Spanish version of the BERT model",
+      "url": "https://github.com/dccuchile/beto",
+      "snippet": "BETO is a BERT model trained on a big Spanish corpus. BETO is of size similar to a BERT-Base and was trained with the Whole Word Masking technique. Below you find Tensorflow and Pytorch checkpoints for the uncased and cased versions, as well as some results for Spanish benchmarks comparing BETO with Multilingual BERT as well as other (not BERT-based) models."
+    },
+    {
+      "title": "GitHub - ivanlamont/AI-ATC: Hierarchical reinforcement learning system ...",
+      "url": "https://github.com/ivanlamont/AI-ATC/tree/main",
+      "snippet": "This project implements a physics-based, multi-aircraft air traffic control (ATC) simulator trained using Proximal Policy Optimization (PPO). The system models hierarchical control, where the RL agent issues high-level ATC clearances (heading, speed, altitude), and a simulated pilot executes these clearances via realistic control laws and aircraft dynamics."
+    },
+    {
+      "title": "Making Language Model a Hierarchical Classifier - arXiv.org",
+      "url": "https://arxiv.org/pdf/2507.12930",
+      "snippet": "In this paper, we propose a new type of decoder called Hierarchical Decoding Classifier (HDC), combining the model-wise and layer-wise prototypes. We inherit the strong semantic understanding and generation capabilities of modern LLM, but allow its multiple layers to decode plausible textual contents."
+    },
+    {
+      "title": "PDF HARGP-BETO: Hierarchical Text Interactions Model for Abuse Detection in ...",
+      "url": "https://ceur-ws.org/Vol-4098/DIMEMEX2025_paper3.pdf",
+      "snippet": "This study presents HARGP-BETO, a novel hierarchical framework for detecting abusive content in Mexican Spanish memes, leveraging hybrid attention mechanisms and adaptive feature fusion to address the challenges of multimodal and imbalanced data."
+    }
+  ]
+}

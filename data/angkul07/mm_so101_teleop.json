@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "angkul07/mm_SO101_teleop",
+  "slug": "angkul07-mm_so101_teleop",
+  "author": "angkul07",
+  "url": "https://huggingface.co/angkul07/mm_SO101_teleop",
+  "created_at": "2026-08-19T18:26:09.000Z",
+  "updated_at": "2026-08-19T19:07:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "so-101",
+    "vla",
+    "flow-matching",
+    "co-training",
+    "egocentric",
+    "dataset:makermods/200ep_blue_cube_orange_box",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1823758864,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "angkul07 (Angkul) - Hugging Face",
+      "url": "https://huggingface.co/angkul07/models",
+      "snippet": "angkul07&#x27;s models 11 Sort: Recently updated angkul07/gpt2_finetuned Updated 14 days ago• 86"
+    },
+    {
+      "title": "GitHub - mariobo8/so101-datasets: Zero Teleop, Infinite Data: The ...",
+      "url": "https://github.com/mariobo8/so101-datasets",
+      "snippet": "so101-autogen is an open-source framework designed for the rapid, large-scale generation of synthetic robotic manipulation datasets, completely automatically. By cleverly combining IK-based control with a simple state machine, this project eliminates the need for manual teleoperation, drastically reducing the time and effort required to collect high-quality data for training visuomotor ..."
+    },
+    {
+      "title": "GitHub - BioModel-AI/Sim-to-Real-B601_BM-Workshop: This code supports ...",
+      "url": "https://github.com/BioModel-AI/Sim-to-Real-B601_BM-Workshop",
+      "snippet": "This code supports learning content to demonstrate an end-to-end Physical AI workflow with the SO-101 robot & Star Arm + reBot B601_BM pair, Isaac Lab, and Isaac GR00T."
+    },
+    {
+      "title": "SO101-teleop_multitask_7tasks_700epi_10fps - claru.ai",
+      "url": "https://claru.ai/datasets/corl2026-csi-so101-teleop-multitask-7tasks-700epi-10fps",
+      "snippet": "Explore the SO101-teleop_multitask_7tasks_700epi_10fps dataset — metadata, modalities, robot embodiments, and download links for physical AI research."
+    },
+    {
+      "title": "SO101 Follower Teleop Dataset - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/liorbenhorin-nv-so101-teleop-vials-rack-left-cosmos-70",
+      "snippet": "Why This Matters for Physical AI This teleop dataset provides multi-view visual and proprioceptive demonstrations for training imitation learning models on robot manipulation tasks using the SO101 follower platform."
+    }
+  ]
+}

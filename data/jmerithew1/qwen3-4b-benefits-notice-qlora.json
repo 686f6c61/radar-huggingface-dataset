@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jmerithew1/qwen3-4b-benefits-notice-qlora",
+  "slug": "jmerithew1-qwen3-4b-benefits-notice-qlora",
+  "author": "jmerithew1",
+  "url": "https://huggingface.co/jmerithew1/qwen3-4b-benefits-notice-qlora",
+  "created_at": "2026-08-19T17:06:40.000Z",
+  "updated_at": "2026-08-19T17:07:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610812,
+  "storage_human": "144 MB",
+  "base_model": "unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    },
+    {
+      "title": "codelion/Qwen3-4B-execution-world-model-lora · Hugging Face",
+      "url": "https://huggingface.co/codelion/Qwen3-4B-execution-world-model-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3 4B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3-4b",
+      "snippet": "Qwen 3 is the latest generation of large language models in Qwen series, with newly updated versions of the 30B and 235B models: New 30B model ollama run qwen3:30b New 235B model ollama run qwen3:235b Overview The Qwen 3 family is a comprehensive suite of dense and mixture-of-experts (MoE) models. The flagship model, Qwen3-235B-A22B, achieves competitive results in benchmark evaluations of ..."
+    }
+  ]
+}

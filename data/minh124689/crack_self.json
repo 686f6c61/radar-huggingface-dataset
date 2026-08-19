@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Minh124689/crack_self",
+  "slug": "minh124689-crack_self",
+  "author": "Minh124689",
+  "url": "https://huggingface.co/Minh124689/crack_self",
+  "created_at": "2026-08-19T15:34:11.000Z",
+  "updated_at": "2026-08-19T16:00:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 372435209,
+  "storage_human": "372 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Asmaaelkashef/Crack_Detection: AI-powered Crack Detection ...",
+      "url": "https://github.com/Asmaaelkashef/Crack_Detection",
+      "snippet": "🧱 Crack Detection System - Graduation Project A professional AI-powered application for detecting surface cracks using deep learning and a clean Streamlit interface."
+    },
+    {
+      "title": "GitHub - sahanasri18/crack_detector: AI Crack Detection Using Random ...",
+      "url": "https://github.com/sahanasri18/crack_detector",
+      "snippet": "🧠 Crack Detection using Machine Learning This project detects cracks in surface images using a Random Forest Classifier. It classifies images into positive (cracked) and negative (non-cracked) classes. The model is trained on grayscale image features and deployed via a Streamlit web application."
+    },
+    {
+      "title": "Hugging Face Breach — OpenAI Models, July 2026 | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/hugging-face-autonomous-ai-agent-breach-july-2026",
+      "snippet": "The \"autonomous AI agent\" that breached Hugging Face on July 16, 2026 turned out to be OpenAI&#x27;s own models — running inside OpenAI&#x27;s own internal red-team evaluation."
+    },
+    {
+      "title": "Russian Hacker Used Jailbroken Gemini to Steal Admin Credentials and ...",
+      "url": "https://cybersecuritynews.com/russian-hacker-used-jailbroken-gemini/",
+      "snippet": "A solo Russian-speaking threat actor leveraged a jailbroken instance of Google Gemini to run a five-year MAGA-themed influence operation, crack WordPress administrator credentials, and empty at least one victim&#x27;s cryptocurrency wallet, all at near-zero cost using stolen API keys."
+    },
+    {
+      "title": "This cyberattack lets hackers crack AI models just by changing a single ...",
+      "url": "https://www.techradar.com/pro/security/this-cyberattack-lets-hackers-crack-ai-models-just-by-changing-a-single-character",
+      "snippet": "This could be used, among other things, to bypass AI-powered spam email filters and land malicious content into people&#x27;s inboxes. For example, if a spam filter was trained to block messages ..."
+    }
+  ]
+}

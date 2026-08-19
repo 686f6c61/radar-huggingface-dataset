@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSD1231/my-awesome-model-best",
+  "slug": "dsd1231-my-awesome-model-best",
+  "author": "DSD1231",
+  "url": "https://huggingface.co/DSD1231/my-awesome-model-best",
+  "created_at": "2026-08-19T15:02:52.000Z",
+  "updated_at": "2026-08-19T15:13:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DSD1231/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/DSD1231/MyAwesomeModel-TestRepo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 397 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "The BenchLM LLM leaderboard 2026 ranks 221 + models and tracks 397 + large language models side by side across 437 benchmarks — from SWE-bench and LiveCodeBench for coding to GPQA Diamond and MMLU-Pro for knowledge and reasoning. Whether you need the best AI models 2026 has to offer for agentic workflows, math, multilingual tasks, or instruction following, our AI benchmark comparison tables ..."
+    },
+    {
+      "title": "DSD1W3123/my-awesome-model · Hugging Face",
+      "url": "https://huggingface.co/DSD1W3123/my-awesome-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Best AI Image Generation Models You Can Run on Your Own GPU in 2026",
+      "url": "https://awesomeagents.ai/guides/best-local-image-generation-models-2026/",
+      "snippet": "A comprehensive guide to the best image generation models that run locally on consumer GPUs with 16GB of VRAM, from FLUX and Stable Diffusion to video generation and upscaling."
+    },
+    {
+      "title": "my_awesome_model | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/myawesomemodel/",
+      "snippet": "my_awesome_model is a fine-tuned version of DistilBERT-base-uncased, specifically optimized for text classification tasks. The model demonstrates impressive performance metrics, achieving a training accuracy of 92.95% and a final training loss of 0.0632 after 2 epochs of training."
+    }
+  ]
+}

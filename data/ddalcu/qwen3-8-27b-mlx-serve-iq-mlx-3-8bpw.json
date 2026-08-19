@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ddalcu/Qwen3.8-27B-MLX-Serve-iQ-MLX-3.8bpw",
+  "slug": "ddalcu-qwen3-8-27b-mlx-serve-iq-mlx-3-8bpw",
+  "author": "ddalcu",
+  "url": "https://huggingface.co/ddalcu/Qwen3.8-27B-MLX-Serve-iQ-MLX-3.8bpw",
+  "created_at": "2026-08-19T13:58:09.000Z",
+  "updated_at": "2026-08-19T14:02:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-serve",
+    "apple-silicon",
+    "imatrix",
+    "mtp",
+    "speculative-decoding",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3544073216,
+  "parameters_human": "3.54B",
+  "storage_bytes": 13012728688,
+  "storage_human": "13.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ddalcu/Qwen3.8-27B-MLX-Serve-4bit · Hugging Face",
+      "url": "https://huggingface.co/ddalcu/Qwen3.8-27B-MLX-Serve-4bit",
+      "snippet": "Instructions to use ddalcu/Qwen3.8-27B-MLX-Serve-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use ddalcu/Qwen3.8-27B-MLX-Serve-4bit with MLX:"
+    },
+    {
+      "title": "ddalcu/Qwen3.8-27B-MLX-Serve-6bit · Hugging Face",
+      "url": "https://huggingface.co/ddalcu/Qwen3.8-27B-MLX-Serve-6bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "v26.8.7 — Qwen 3.8 27B, Ling 3.0, thinking that knows when ... - GitHub",
+      "url": "https://github.com/ddalcu/mlx-serve/discussions/179",
+      "snippet": "Qwen 3.8 27B It is the app&#x27;s default recommendation on any Mac with more than 32 GB, replacing Qwen 3.6 27B in the welcome card, the Model Browser and the menu-bar tray. ddalcu/Qwen3.8-27B-MLX-Serve-4bit, 18.2 GB, wants 24 GB+ of RAM."
+    },
+    {
+      "title": "Releases: ddalcu/mlx-serve - GitHub",
+      "url": "https://github.com/ddalcu/mlx-serve/releases",
+      "snippet": "It is the app&#x27;s default recommendation on any Mac with more than 32 GB, replacing Qwen 3.6 27B in the welcome card, the Model Browser and the menu-bar tray. ddalcu/Qwen3.8-27B-MLX-Serve-4bit, 18.2 GB, wants 24 GB+ of RAM."
+    },
+    {
+      "title": "Qwen3.8 27B MLX Serve 4bit by ddalcu — VRAM 2GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ddalcu%2FQwen3.8-27B-MLX-Serve-4bit,5kTr1waKnpnFzZnDOQcmDK",
+      "snippet": "Qwen3.8 27B MLX Serve 4bit is an open-source 27b LLM by ddalcu. VRAM 2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

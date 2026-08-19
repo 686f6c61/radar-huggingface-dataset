@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "23f3003140/tds_ga8",
+  "slug": "23f3003140-tds_ga8",
+  "author": "23f3003140",
+  "url": "https://huggingface.co/23f3003140/tds_ga8",
+  "created_at": "2026-08-19T15:18:25.000Z",
+  "updated_at": "2026-08-19T15:20:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anshusaurav/tds-ga8-carbon-model · Hugging Face",
+      "url": "https://huggingface.co/anshusaurav/tds-ga8-carbon-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    },
+    {
+      "title": "AI Model List - One Click Hangar",
+      "url": "https://oneclickhangar.com/forum/index.php?topic=535.0",
+      "snippet": "GA8 Klaus Brosemann Grob G115 Tutor UKMIL G120 UKMIL Grumman AA5 Traveler Richard Faith Avenger TBAI S2T Tracker Gulfstream II HTAI IIB HTAI III HTAI IV/IVSP/350/400 HTAI V/550 HTAI 650 Ken Carson Hawker Hurricane JYAI 700 HTAI 800 Hispano HA1112-M1L Buchon JYAI Israeli Aircraft Industries 1124 Westwind Model 1 HTAI 1124 Westwind Model 2 HTAI ..."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://aimodelsindex.com/",
+      "snippet": "Reconcile reviewed live evaluators and source-backed benchmark evidence into one auditable evidence layer, with unavailable catalog sources labeled explicitly."
+    }
+  ]
+}

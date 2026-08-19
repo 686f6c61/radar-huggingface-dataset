@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "anmol-unitmole/grammar-correction-flan-t5-base",
+  "slug": "anmol-unitmole-grammar-correction-flan-t5-base",
+  "author": "anmol-unitmole",
+  "url": "https://huggingface.co/anmol-unitmole/grammar-correction-flan-t5-base",
+  "created_at": "2026-08-19T18:08:31.000Z",
+  "updated_at": "2026-08-19T18:27:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "grammar-correction",
+    "grammatical-error-correction",
+    "gec",
+    "flan-t5",
+    "encoder-decoder",
+    "rtx-5090",
+    "en",
+    "base_model:google/flan-t5-base",
+    "base_model:finetune:google/flan-t5-base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 991142817,
+  "storage_human": "991 MB",
+  "base_model": "google/flan-t5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "README.md · AventIQ-AI/t5-base-grammar-correction-for-writing ...",
+      "url": "https://huggingface.co/AventIQ-AI/t5-base-grammar-correction-for-writing-assistance/blob/main/README.md",
+      "snippet": "This repository contains a fine-tuned T5-base transformer model designed for grammatical error correction, optimized for writing assistance applications. The model identifies and corrects grammar issues in English sentences to improve fluency, clarity, and correctness."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=grammar",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - anmol-tripathi11/Grammar-Checker-Tool: ML-Based Grammar ...",
+      "url": "https://github.com/anmol-tripathi11/Grammar-Checker-Tool",
+      "snippet": "🤖 ML-Based Grammar Checker - Powered by specialized machine learning models for precise, real-time writing corrections. Catches errors, improves style, and enhances clarity—all within your workf..."
+    },
+    {
+      "title": "flan-t5-base-spelling huggingface.co api & jbochi flan-t5-base-spelling ...",
+      "url": "https://www.toolify.ai/ai-model/jbochi-flan-t5-base-spelling",
+      "snippet": "flan-t5-base-spelling This model is a fine-tuned version of google/flan-t5-base on the wiki.en dataset from oliverguhr/spelling ."
+    }
+  ]
+}

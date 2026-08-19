@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "johninthepool/Qwen3.8-27B-MTPLX-4bit",
+  "slug": "johninthepool-qwen3-8-27b-mtplx-4bit",
+  "author": "johninthepool",
+  "url": "https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-4bit",
+  "created_at": "2026-08-14T16:01:41.000Z",
+  "updated_at": "2026-08-14T16:01:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mtplx",
+    "quantized",
+    "multi-token-prediction",
+    "speculative-decoding",
+    "qwen3.5",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 666,
+  "trending_score": 0,
+  "parameters": 4204731904,
+  "parameters_human": "4.20B",
+  "storage_bytes": 16002433241,
+  "storage_human": "16.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "johninthepool/Qwen3.8-27B-MTPLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-4bit",
+      "snippet": "A 4-bit MLX build of Qwen/Qwen3.8-27B for Apple Silicon, produced with mtplx forge. Unlike a standard mlx_lm.convert quantization, this build preserves the model&#x27;s native multi-token-prediction (MTP) head instead of discarding it, so it runs with real speculative decoding on mtplx — not just a quantized weight dump."
+    },
+    {
+      "title": "johninthepool/Qwen3.8-27B-MTPLX-4bit at main - Hugging Face",
+      "url": "https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-4bit/tree/main",
+      "snippet": "johninthepool / Qwen3.8-27B-MTPLX-4bit like 1 Text Generation MLX Safetensors qwen3_5 mtplx quantized multi-token-prediction speculative-decoding qwen3.5 apple-silicon conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8 27B MTPLX 4bit by johninthepool - LLM Explorer",
+      "url": "https://llm-explorer.com/model/johninthepool%2FQwen3.8-27B-MTPLX-4bit,2dGqCYSF9SboI49L54b258",
+      "snippet": "Qwen3.8 27B MTPLX 4bit is an open-source language model by johninthepool. Features: 27b LLM, VRAM: 15.1GB, License: apache-2.0, Quantized, LLM Explorer Score: 0.32."
+    },
+    {
+      "title": "Qwen3.8 27B MTPLX 8bit by johninthepool - LLM Explorer",
+      "url": "https://llm-explorer.com/model/johninthepool%2FQwen3.8-27B-MTPLX-8bit,41di62ZBrZSJheDTdCTIEl",
+      "snippet": "Qwen3.8 27B MTPLX 8bit is an open-source 27b LLM by johninthepool. VRAM 28.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8-27B (2026): The Complete Guide to Qwen&#x27;s New 27B Vision ...",
+      "url": "https://lovableapp.org/blog/qwen3-8-27b",
+      "snippet": "The complete 2026 guide to Qwen3.8-27B — Qwen&#x27;s new 27B dense vision-language model with DeepSWE 42.2, Terminal Bench 73.0, OSWorld 84.3, native image/video input, 262K context, and Apache 2.0 weights."
+    }
+  ]
+}

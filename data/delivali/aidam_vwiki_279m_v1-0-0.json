@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "DeliVali/AIDAM_VWIKI_279M_V1.0.0",
+  "slug": "delivali-aidam_vwiki_279m_v1-0-0",
+  "author": "DeliVali",
+  "url": "https://huggingface.co/DeliVali/AIDAM_VWIKI_279M_V1.0.0",
+  "created_at": "2026-08-19T18:32:24.000Z",
+  "updated_at": "2026-08-19T18:32:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "deberta-v2",
+    "natural-language-inference",
+    "fact-checking",
+    "fever",
+    "mdeberta-v3",
+    "multilingual",
+    "text-classification",
+    "en",
+    "es",
+    "base_model:MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "base_model:quantized:MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278811651,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1696129959,
+  "storage_human": "1.7 GB",
+  "base_model": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeliVali/AIDAM_VWIKI_279M_V0.1.0 · Hugging Face",
+      "url": "https://huggingface.co/DeliVali/AIDAM_VWIKI_279M_V0.1.0",
+      "snippet": "Part of AIDAM by Jeffrey Romero Del Val — open fact-checking agent; verdicts come from this NLI core plus an auditable aggregator, never from an LLM. Every number above passed pre-registered gates; the full campaign (promotions AND rejections) is in docs/ROADMAP.md. Main production model: AIDAM_VREAL_279M_V0.1.0."
+    },
+    {
+      "title": "DeliVali (Jeffrey) - Hugging Face",
+      "url": "https://huggingface.co/DeliVali",
+      "snippet": "DeliVali/AIDAM_VWIKI_279M_V0.1. Text Classification • 0.3B•Updated 14 days ago• 51"
+    },
+    {
+      "title": "AIDAM/docs at main · DeliVali/AIDAM · GitHub",
+      "url": "https://github.com/DeliVali/AIDAM/tree/main/docs",
+      "snippet": "Open fact-checking agent: live multi-source evidence + a small comparative-logic verifier. Every verdict cites its sources. - DeliVali/AIDAM"
+    },
+    {
+      "title": "AIDAM/training at main · DeliVali/AIDAM · GitHub",
+      "url": "https://github.com/DeliVali/AIDAM/tree/main/training",
+      "snippet": "Open fact-checking agent: live multi-source evidence + a small comparative-logic verifier. Every verdict cites its sources. - AIDAM/training at main · DeliVali/AIDAM"
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

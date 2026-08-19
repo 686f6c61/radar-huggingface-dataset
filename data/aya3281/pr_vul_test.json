@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aya3281/pr_vul_test",
+  "slug": "aya3281-pr_vul_test",
+  "author": "aya3281",
+  "url": "https://huggingface.co/aya3281/pr_vul_test",
+  "created_at": "2026-08-19T15:19:28.000Z",
+  "updated_at": "2026-08-19T15:19:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aya3281/pr_vul_dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/aya3281/pr_vul_dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aya3281 (Alireza Yadegarazari) - Hugging Face",
+      "url": "https://huggingface.co/aya3281",
+      "snippet": "Recent Activity updated a datasetabout 6 hours ago aya3281/pr_vul_dataset published a dataset5 days ago aya3281/pr_vul_dataset updated a dataset5 days ago aya3281/pr_vul_dataset View all activity"
+    },
+    {
+      "title": "GitHub - sashaswift/sim-vul-test1: sim-vul-test1 · GitHub",
+      "url": "https://github.com/sashaswift/sim-vul-test1",
+      "snippet": "Note: Sim uses vector embeddings for AI features like knowledge bases and semantic search, which requires the pgvector PostgreSQL extension."
+    },
+    {
+      "title": "ModelScan: Protection Against Model Serialization Attacks",
+      "url": "https://github.com/protectai/modelscan",
+      "snippet": "Protection against Model Serialization Attacks. Contribute to protectai/modelscan development by creating an account on GitHub."
+    },
+    {
+      "title": "Software Vulnerability Detection Using a Lightweight Graph Neural Network",
+      "url": "https://arxiv.org/html/2603.29216v1",
+      "snippet": "Abstract Large Language Models (LLMs) have emerged as a popular choice in vulnerability detection studies given their foundational capabilities, open source availability, and variety of models, but have limited scalability due to extensive compute requirements. Using the natural graph relational structure of code, we show that our proposed graph neural network (GNN) based deep learning model ..."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fushuncui/opd-hybrid-control-step99",
+  "slug": "fushuncui-opd-hybrid-control-step99",
+  "author": "fushuncui",
+  "url": "https://huggingface.co/fushuncui/opd-hybrid-control-step99",
+  "created_at": "2026-08-19T13:40:21.000Z",
+  "updated_at": "2026-08-19T15:26:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939446,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fushuncui/opd-datasets at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/fushuncui/opd-datasets/tree/main",
+      "snippet": "Datasets: fushuncui / opd-datasets like 0 License: other Dataset card FilesFiles and versions xet Community main opd-datasets 194 MB 1 contributor History:8 commits fushuncui Add complete OPD local dataset archive and manifest 28f3f3c verifiedabout 5 hours ago analysisAdd files using upload-large-folder toolabout 5 hours ago"
+    },
+    {
+      "title": "GitHub - chrisliu298/awesome-on-policy-distillation: A curated ...",
+      "url": "https://github.com/chrisliu298/awesome-on-policy-distillation",
+      "snippet": "A curated collection of papers, technical reports, frameworks, and tools for on-policy distillation (OPD) of large language models. On-policy distillation trains a student on samples from its own evolving policy, while a teacher (external, privileged, or self-conditioned) provides dense supervision ..."
+    },
+    {
+      "title": "Awesome LLM On-Policy Distillation - GitHub",
+      "url": "https://github.com/nick7nlp/Awesome-LLM-On-Policy-Distillation",
+      "snippet": "On-policy distillation (OPD) solves this by forcing the student to generate trajectories from its own distribution, and then evaluating those trajectories using a teacher model, reward model, or verifier."
+    },
+    {
+      "title": "AI-Based Hybrid Vehicle Mode Controller | portfolio",
+      "url": "https://oscaroregan.github.io/portfolio/AI-controller/",
+      "snippet": "AI-Based Hybrid Vehicle Mode Controller A reinforcement learning-based torque-split controller for a parallel hybrid electric vehicle. This project explores the use of Reinforcement Learning (RL) to design intelligent driving modes for a hybrid electric vehicle."
+    },
+    {
+      "title": "Explore | alphaXiv",
+      "url": "https://www.alphaxiv.org/",
+      "snippet": "Discuss, discover, and read arXiv papers. Explore trending papers, see recent activity and discussions, and follow authors of arXiv papers on alphaXiv."
+    }
+  ]
+}

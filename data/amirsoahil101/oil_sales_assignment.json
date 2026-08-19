@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amirsoahil101/Oil_sales_assignment",
+  "slug": "amirsoahil101-oil_sales_assignment",
+  "author": "amirsoahil101",
+  "url": "https://huggingface.co/amirsoahil101/Oil_sales_assignment",
+  "created_at": "2026-08-19T19:33:58.000Z",
+  "updated_at": "2026-08-19T19:36:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143853,
+  "storage_human": "143853 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amirsoahil101 (Amir) - Hugging Face",
+      "url": "https://huggingface.co/amirsoahil101",
+      "snippet": "AI & ML interests Passionate about Machine Learning, Deep Learning, and Generative AI. Experienced in building predictive models, neural networks, and AI-driven solutions using frameworks like PyTorch, TensorFlow, and scikit-learn. Enthusiastic about integrating intelligent models into full-stack web applications."
+    },
+    {
+      "title": "Oil-Sales-Analysis/oil_sales_assignment_dataset.csv at main ... - GitHub",
+      "url": "https://github.com/mostafaeslam/Oil-Sales-Analysis/blob/main/oil_sales_assignment_dataset.csv",
+      "snippet": "Contribute to mostafaeslam/Oil-Sales-Analysis development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - hedraatef1-afk/oil_sales_assignment_dataset",
+      "url": "https://github.com/hedraatef1-afk/oil_sales_assignment_dataset",
+      "snippet": "This project focuses on analyzing sales performance and market metrics across multiple cities and brands over three years (2022-2024). The main objective is to process transactional data using SQL and transform it into an interactive executive dashboard in Excel for business intelligence and data-driven decision-making."
+    },
+    {
+      "title": "amirsoahil101/My_first_model · Hugging Face",
+      "url": "https://huggingface.co/amirsoahil101/My_first_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Portfolio - Sk Aamir Sohail | Codebasics",
+      "url": "https://codebasics.io/portfolio/Aamir-Sohail",
+      "snippet": "Sk Aamir Sohail is a Data Aspirant Hi there! I&#x27;m a data analytics enthusiast who turned a background in Commerce into a passion for Data Analytics. I&#x27;m skilled in tools like Excel, SQL, and Power BI, and I&#x27;ve applied them to real-world projects that you&#x27;ll find throughout this site. Each project reflects my curiosity for uncovering patterns in data and my drive to help businesses make ..."
+    }
+  ]
+}

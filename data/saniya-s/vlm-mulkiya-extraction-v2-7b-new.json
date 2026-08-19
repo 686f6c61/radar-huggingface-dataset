@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Saniya-s/vlm-mulkiya-extraction-v2-7b-new",
+  "slug": "saniya-s-vlm-mulkiya-extraction-v2-7b-new",
+  "author": "Saniya-s",
+  "url": "https://huggingface.co/Saniya-s/vlm-mulkiya-extraction-v2-7b-new",
+  "created_at": "2026-08-19T12:10:57.000Z",
+  "updated_at": "2026-08-19T13:59:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2-VL-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2-VL-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4860085419,
+  "storage_human": "4.9 GB",
+  "base_model": "Qwen/Qwen2-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 394 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 114 Estimated models among 394 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model."
+    },
+    {
+      "title": "Vision Language Models (Better, faster, stronger) - Hugging Face",
+      "url": "https://huggingface.co/blog/vlms-2025",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "erne1234/deded",
+  "slug": "erne1234-deded",
+  "author": "erne1234",
+  "url": "https://huggingface.co/erne1234/deded",
+  "created_at": "2026-08-19T12:26:23.000Z",
+  "updated_at": "2026-08-19T12:27:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340227654,
+  "storage_human": "340 MB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "erne1234/model · Hugging Face",
+      "url": "https://huggingface.co/erne1234/model",
+      "snippet": "Instructions to use erne1234/model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use erne1234/model with Diffusers:"
+    },
+    {
+      "title": "erne1234 (perne) - Hugging Face",
+      "url": "https://huggingface.co/erne1234",
+      "snippet": "User profile of perne on Hugging Face Recent Activity updated a modelabout 5 hours ago erne1234/Hugging published a modelabout 5 hours ago erne1234/Hugging published a model1 day ago erne1234/amateur View all activity"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

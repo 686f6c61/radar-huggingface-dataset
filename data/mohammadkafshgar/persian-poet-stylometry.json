@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MohammadKafshgar/persian-poet-stylometry",
+  "slug": "mohammadkafshgar-persian-poet-stylometry",
+  "author": "MohammadKafshgar",
+  "url": "https://huggingface.co/MohammadKafshgar/persian-poet-stylometry",
+  "created_at": "2026-08-19T19:22:07.000Z",
+  "updated_at": "2026-08-19T19:24:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "scikit-learn",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "scikit-learn",
+    "text-classification",
+    "stylometry",
+    "persian-poetry",
+    "tfidf",
+    "svm",
+    "fa",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 324469060,
+  "storage_human": "324 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PARSI: Persian Authorship Recognition via Stylometric Integration",
+      "url": "https://arxiv.org/pdf/2506.21840",
+      "snippet": "The suggested architectural model is intended to classify Persian poetry by author at the verse (beyt) level. Given the complex stylistic and structural elements that are inherent in Persian poetry, the model leverages state-of-the-art contextual language representations in combination with carefully developed literary features to achieve a ..."
+    },
+    {
+      "title": "List of Persian-language poets and authors - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_Persian-language_poets_and_authors",
+      "snippet": "List of Persian-language poets and authors This is a dynamic list and may never be able to satisfy particular standards for completeness. You can help by editing the page to add missing items, with references to reliable sources."
+    },
+    {
+      "title": "Creating a New Persian Poet Based on Machine Learning",
+      "url": "https://arxiv.org/abs/1810.06898v1",
+      "snippet": "In this article we describe an application of Machine Learning (ML) and Linguistic Modeling to generate persian poems. In fact we teach machine by reading and learning persian poems to generate fake poems in the same style of the original poems. As two well known poets we used Hafez (1310-1390) and Saadi (1210-1292) poems. First we feed the machine with Hafez poems to generate fake poems with ..."
+    },
+    {
+      "title": "Mohammad-Hossein Shahriar - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mohammad-Hossein_Shahriar",
+      "snippet": "Seyyed Mohammad-Hossein Behjat Tabrizi (Persian: سیدمحمدحسین بهجت تبریزی, romanized: Seyyed Moḥammad Ḥoseyn Behjat Tabrīzī; 2 January 1906 - 18 September 1988), [i] known by his pen name Shahriar, [ii] was an Iranian poet who composed works in both Azerbaijani and Persian. His most important work, Heydar Babaya Salam, is considered to be the pinnacle of Azerbaijani ..."
+    },
+    {
+      "title": "Persian Poetry GPT2.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/hooshvare/parsgpt/blob/master/notebooks/Persian_Poetry_GPT2.ipynb",
+      "snippet": "Persian poetry generator is the first attempt on gpt2-fa to generate a poem based on your favorite poet. Follow the fine-tuning notebook for more detail, or try the model on HuggingFace."
+    }
+  ]
+}

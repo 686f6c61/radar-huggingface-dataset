@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nicolasramos/odooclaw-light-1.2b-ft",
+  "slug": "nicolasramos-odooclaw-light-1-2b-ft",
+  "author": "nicolasramos",
+  "url": "https://huggingface.co/nicolasramos/odooclaw-light-1.2b-ft",
+  "created_at": "2026-08-07T06:48:13.000Z",
+  "updated_at": "2026-08-19T13:16:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "lfm2",
+    "odoo",
+    "tool-calling",
+    "function-calling",
+    "erp",
+    "es",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 5995190640,
+  "storage_human": "6.0 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nicolasramos/odooclaw-light-1.2b-ft · Hugging Face",
+      "url": "https://huggingface.co/nicolasramos/odooclaw-light-1.2b-ft",
+      "snippet": "LFM2.5-1.2B (this model, fine-tuned): correct tool calls, survives real multi-turn conversations, ~700MB Smaller models (0.35B): fast, but collapse with any conversation history — unacceptable for a chat"
+    },
+    {
+      "title": "GitHub - nicolasramos/odooclaw",
+      "url": "https://github.com/nicolasramos/odooclaw",
+      "snippet": "🚀 Next Generation: your own AI, on your own hardware OdooClaw 1.0 ships with its own trained models — and remains fully model-agnostic. You can run OdooClaw with: Our models (OdooClaw Light 1.2B + Vision, published on HuggingFace) — 100% local, open source (MIT), free forever"
+    },
+    {
+      "title": "OdooClaw - a nicolasramos Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/nicolasramos/odooclaw",
+      "snippet": "nicolasramos/odooclaw-light-1.2b-ft-mlx Text Generation • 0.2B•Updated 2 days ago• 431"
+    },
+    {
+      "title": "GitHub - nicolasramos/odooclaw",
+      "url": "https://github.com/nicolasramos/odooclaw/tree/main",
+      "snippet": "If you manage a huge Odoo instance with hundreds of users querying the AI, you can configure multiple API keys/endpoints for the same model name, and OdooClaw will automatically round-robin between them to prevent rate-limiting!"
+    },
+    {
+      "title": "nicolasramos/odooclaw | DeepWiki",
+      "url": "https://deepwiki.com/nicolasramos/odooclaw",
+      "snippet": "OdooClaw is an ultra-lightweight, high-performance AI assistant written in Go, specifically engineered for native integration with Odoo ERP. Originally forked from PicoClaw it retains a microscopic footprint (under 10MB RAM) while providing a robust bridge between Large Language Models (LLMs) and the Odoo ORM via the Model Context Protocol (MCP)."
+    }
+  ]
+}

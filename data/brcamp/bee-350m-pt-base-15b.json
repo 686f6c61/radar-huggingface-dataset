@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BrCamp/bee-350m-pt-base-15b",
+  "slug": "brcamp-bee-350m-pt-base-15b",
+  "author": "BrCamp",
+  "url": "https://huggingface.co/BrCamp/bee-350m-pt-base-15b",
+  "created_at": "2026-08-19T16:52:48.000Z",
+  "updated_at": "2026-08-19T16:53:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "portuguese",
+    "pt-br",
+    "from-scratch",
+    "bee",
+    "ablation",
+    "conversational",
+    "pt",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 345359296,
+  "parameters_human": "345.4M",
+  "storage_bytes": 1381476680,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BrCamp (Bruno Campidelli) - Hugging Face",
+      "url": "https://huggingface.co/BrCamp/models",
+      "snippet": "Recent Activity updated a dataset3 days ago BrCamp/bee-corpus-pt-22b published a dataset3 days ago BrCamp/bee-corpus-pt-22b published a dataset4 days ago BrCamp/bee-gate-pt View all activity"
+    },
+    {
+      "title": "Fine-tuned Models for BrCamp/bee-150m-pt-base - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:BrCamp/bee-150m-pt-base",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset BrCamp/bee-150m-pt-base Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment ..."
+    },
+    {
+      "title": "Bee 150M Pt Base by BrCamp — VRAM 0.6GB, 2K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/BrCamp%2Fbee-150m-pt-base,4lR1ioctVzOxJIdf7aJgyy",
+      "snippet": "Bee 150M Pt Base is an open-source 150m LLM by BrCamp. VRAM 0.6GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "List of Supported Models - Bifrost",
+      "url": "https://docs.getbifrost.ai/models-catalog/list",
+      "snippet": "Comprehensive catalog of supported AI models with detailed specifications, capabilities, and costs"
+    },
+    {
+      "title": "Training a pt-BR 350M model on free T4 Colab. My estimate is that it ...",
+      "url": "https://x.com/acheiovila/status/2038603658196033579",
+      "snippet": "Vila (@acheiovila). 13 views. Training a pt-BR 350M model on free T4 Colab. My estimate is that it will take about 1 year to train. #MachineLearning #DeepLearning #AI #LLM #Colab #NLP #OpenSource #GPU #ModelTraining #ArtificialIntelligence"
+    }
+  ]
+}

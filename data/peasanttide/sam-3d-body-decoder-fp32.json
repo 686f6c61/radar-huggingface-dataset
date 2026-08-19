@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "peasanttide/sam-3d-body-decoder-fp32",
+  "slug": "peasanttide-sam-3d-body-decoder-fp32",
+  "author": "peasanttide",
+  "url": "https://huggingface.co/peasanttide/sam-3d-body-decoder-fp32",
+  "created_at": "2026-08-19T17:04:51.000Z",
+  "updated_at": "2026-08-19T17:05:08.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "pose-estimation",
+    "human-mesh-recovery",
+    "base_model:facebook/sam-3d-body-dinov3",
+    "base_model:quantized:facebook/sam-3d-body-dinov3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180861272,
+  "storage_human": "181 MB",
+  "base_model": "facebook/sam-3d-body-dinov3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAM 3D Body: Robust Full-Body Human Mesh Recovery",
+      "url": "https://github.com/facebookresearch/sam-3d-body",
+      "snippet": "The repository provides code for running inference with the SAM 3D Body Model (3DB), links for downloading the trained model checkpoints and datasets, and example notebooks that show how to use the..."
+    },
+    {
+      "title": "sam-3d-body/sam_3d_body/models/decoders at main - GitHub",
+      "url": "https://github.com/facebookresearch/sam-3d-body/tree/main/sam_3d_body/models/decoders",
+      "snippet": "The repository provides code for running inference with the SAM 3D Body Model (3DB), links for downloading the trained model checkpoints and datasets, and example notebooks that show how to use the..."
+    },
+    {
+      "title": "SAM 3D - ai.meta.com",
+      "url": "https://ai.meta.com/research/sam3d/",
+      "snippet": "SAM 3D can bring any 2D image to life, accurately reconstructing objects and humans, including their shape and pose."
+    },
+    {
+      "title": "Meta SAM 3D - Turn Any Image into 3D",
+      "url": "https://sam3ai.com/3d/",
+      "snippet": "Meta SAM 3D turns any image into a 3D object or human mesh using the Segment Anything ecosystem. Learn how SAM 3D Objects and SAM 3D Body reconstruct realistic geometry and textures for AR, VR, gaming, and research."
+    },
+    {
+      "title": "SAM 3D - Turn Any Image into 3D Objects & Scenes",
+      "url": "https://sam-3d.com/",
+      "snippet": "Explore SAM 3D to reconstruct 3D objects, people and scenes from a single image. Build 3D assets faster with SAM 3D Objects and SAM 3D Body."
+    }
+  ]
+}

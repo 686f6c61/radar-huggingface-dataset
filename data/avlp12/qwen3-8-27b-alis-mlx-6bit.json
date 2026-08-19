@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "avlp12/Qwen3.8-27B-Alis-MLX-6bit",
+  "slug": "avlp12-qwen3-8-27b-alis-mlx-6bit",
+  "author": "avlp12",
+  "url": "https://huggingface.co/avlp12/Qwen3.8-27B-Alis-MLX-6bit",
+  "created_at": "2026-08-15T08:16:11.000Z",
+  "updated_at": "2026-08-16T16:35:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "quantized",
+    "6-bit",
+    "multimodal",
+    "vision-language",
+    "hybrid-attention",
+    "speculative-decoding",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 493,
+  "trending_score": 0,
+  "parameters": 6439219952,
+  "parameters_human": "6.44B",
+  "storage_bytes": 23143801252,
+  "storage_human": "23.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "avlp12/Qwen3.8-27B-Alis-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/avlp12/Qwen3.8-27B-Alis-MLX-6bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - avlp12/qwen38_alis_mlx: Qwen3.8-27B on Apple silicon, end to ...",
+      "url": "https://github.com/avlp12/qwen38_alis_mlx",
+      "snippet": "Everything I learned porting, quantizing, and accelerating Qwen3.8-27B on Apple silicon — one model, end to end: conversion integrity (the vision tower and MTP head the standard path silently drops), a Metal kernel journey that fixed why speculative decoding underperformed, two speculative paths and a reversed verdict, a bitwise-exact two-box prefill split over Thunderbolt 5, and the ..."
+    },
+    {
+      "title": "avlp12/Qwen3.8-27B-Alis-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/avlp12/Qwen3.8-27B-Alis-MLX-8bit",
+      "snippet": "The vision tower is intact Qwen3.8-27B is a vision-language checkpoint (Qwen3_5ForConditionalGeneration, model_type: qwen3_5), and this is the first MLX build of it that keeps the vision weights. I queried the remote weight index of all 12 MLX builds of this model published so far: every one of them carries zero vision tensors, including the ones with -vision in the repository name. Seven of ..."
+    },
+    {
+      "title": "qwen38_alis_mlx/README.md at main · avlp12/qwen38_alis_mlx",
+      "url": "https://github.com/avlp12/qwen38_alis_mlx/blob/main/README.md",
+      "snippet": "qwen38_alis_mlx Everything I learned porting, quantizing, and accelerating Qwen3.8-27B on Apple silicon — one model, end to end: conversion integrity (the vision tower and MTP head the standard path silently drops), a Metal kernel journey that fixed why speculative decoding underperformed, two speculative paths and a reversed verdict, a bitwise-exact two-box prefill split over Thunderbolt 5 ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

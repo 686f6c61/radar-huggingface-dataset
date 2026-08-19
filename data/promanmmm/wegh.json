@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Promanmmm/Wegh",
+  "slug": "promanmmm-wegh",
+  "author": "Promanmmm",
+  "url": "https://huggingface.co/Promanmmm/Wegh",
+  "created_at": "2026-08-19T14:56:47.000Z",
+  "updated_at": "2026-08-19T15:06:57.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195056388,
+  "storage_human": "195 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-Generated Logistics Management Platform Explainer Video - LinkedIn",
+      "url": "https://www.linkedin.com/posts/ashifaharfathshaik_promptengineering-generativeai-ai-activity-7492828020789989376-wegh",
+      "snippet": "🎬 AI-Generated Project Explainer Video As part of my Prompt Engineering class, I created this cinematic AI-generated video to explain our Intelligent Logistics Management Platform. The project ..."
+    },
+    {
+      "title": "Yog-1to1-code/WEGH-Advanced - GitHub",
+      "url": "https://github.com/Yog-1to1-code/WEGH-Advanced",
+      "snippet": "What if an AI agent could explore this design space in minutes instead of years? WEGH creates this possibility. It is a reinforcement learning environment where agents design real hardware — from tiny IoT microcontrollers to full-scale PyTorch inference accelerators. Unlike toy environments with analytical formulas, WEGH uses:"
+    },
+    {
+      "title": "AI Models Directory - Promptomania",
+      "url": "https://promptomania.com/models",
+      "snippet": "Home / Models AI Models Directory Browse AI image, video, 3D, and audio model providers. Find the best model for your use case, learn prompting tips, and explore example prompts."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Rankings 2026: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard (Aug 2026): 234 AI models ranked on public benchmark evidence; Claude Fable 5 leads. API pricing, context windows and 68 providers compared."
+    }
+  ]
+}

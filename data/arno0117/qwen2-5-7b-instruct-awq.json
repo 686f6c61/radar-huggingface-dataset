@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Arno0117/Qwen2.5-7B-Instruct-AWQ",
+  "slug": "arno0117-qwen2-5-7b-instruct-awq",
+  "author": "Arno0117",
+  "url": "https://huggingface.co/Arno0117/Qwen2.5-7B-Instruct-AWQ",
+  "created_at": "2026-08-19T14:44:58.000Z",
+  "updated_at": "2026-08-19T14:44:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "awq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 5570829760,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct-AWQ · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-AWQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct-AWQ — specs, VRAM, license, benchmarks | LocalLLMs",
+      "url": "https://localllms.dev/llm/qwenqwen25-7b-instruct-awq/",
+      "snippet": "Overview Qwen2.5-7B-Instruct-AWQ is a quantized instruction-following language model built by Alibaba&#x27;s Qwen team, released in 2024 as part of the Qwen2.5 series. The model excels at conversational AI tasks, multilingual dialogue (particularly English and Arabic), and instruction-based text generation, building on the strong base capabilities of the Qwen2.5 architecture with supervised fine ..."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct-AWQ · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-7B-Instruct-AWQ",
+      "snippet": "Qwen2.5-7B-Instruct-AWQ Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to our ..."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct-AWQ | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/qwen25-7b-instruct-awq/",
+      "snippet": "Qwen2.5-7B-Instruct-AWQ is a 4-bit quantized instruction-tuned language model with 7.61B parameters, offering enhanced capabilities in coding, math, and multilingual support with 128K context length."
+    }
+  ]
+}

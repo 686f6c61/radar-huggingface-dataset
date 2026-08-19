@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "pantinor/whisper-arabic-dialectal-sherpa",
+  "slug": "pantinor-whisper-arabic-dialectal-sherpa",
+  "author": "pantinor",
+  "url": "https://huggingface.co/pantinor/whisper-arabic-dialectal-sherpa",
+  "created_at": "2026-08-19T13:08:44.000Z",
+  "updated_at": "2026-08-19T13:09:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1085864593,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pantinor/whisper-arabic-dialectal-tokens · Hugging Face",
+      "url": "https://huggingface.co/pantinor/whisper-arabic-dialectal-tokens",
+      "snippet": "tokens.txt for OpenVoiceOS whisper-large-v3-turbo-arabic-dialectal-v2-onnx Converted from the source repo&#x27;s int8/vocab.json + int8/added_tokens.json (51866 tokens, contiguous ids 0..51865) into the sherpa-onnx tokens.txt format (base64 (token) id per line), which the source repo does not ship."
+    },
+    {
+      "title": "GitHub - Huzaifa-X/Whisper_small_openai_finetuned_on_arabic_language ...",
+      "url": "https://github.com/Huzaifa-X/Whisper_small_openai_finetuned_on_arabic_language",
+      "snippet": "This project aims to perform Arabic speech recognition using the Whisper model, developed by OpenAI. We fine-tune the Whisper model on an Arabic speech dataset, leveraging the Hugging Face Transformers library. The trained model can transcribe Arabic speech audio into text with high accuracy."
+    },
+    {
+      "title": "clu-ling/whisper-large-v2-arabic-5k-steps · Hugging Face",
+      "url": "https://huggingface.co/clu-ling/whisper-large-v2-arabic-5k-steps",
+      "snippet": "whisper-large-v2-arabic-5k-steps This model is a fine-tuned version of openai/whisper-large-v2 on the Arabic CommonVoice dataset (v11). It achieves the following results on the evaluation set: Loss: 0.3434 Wer: 0.4239 Model description This model is finetuned for 5000 steps for research purposes which means that the transcriptions might not be that satisfactory for users. Training and ..."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Whisper for Arabic — OpenAI Whisper Fine-Tuning and Arabic Performance ...",
+      "url": "https://arabicagenticai.com/speech/whisper-arabic/",
+      "snippet": "Analysis of OpenAI Whisper&#x27;s Arabic speech recognition capabilities — model sizes, Arabic training data, hallucination issues, fine-tuned variants, and context-aware prompting strategies."
+    }
+  ]
+}

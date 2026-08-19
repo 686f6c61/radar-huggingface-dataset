@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "AAU-NLP/Pre-BERT-SL1000",
+  "slug": "aau-nlp-pre-bert-sl1000",
+  "author": "AAU-NLP",
+  "url": "https://huggingface.co/AAU-NLP/Pre-BERT-SL1000",
+  "created_at": "2025-02-19T09:43:51.000Z",
+  "updated_at": "2026-08-19T14:48:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "financial NLP",
+    "named entity recognition",
+    "sequence labeling",
+    "structured extraction",
+    "hierarchical taxonomy",
+    "XBRL",
+    "iXBRL",
+    "SEC filings",
+    "financial-information-extraction",
+    "en",
+    "dataset:AAU-NLP/HiFi-KPI",
+    "arxiv:2502.15411",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 109661417,
+  "parameters_human": "109.7M",
+  "storage_bytes": 438669020,
+  "storage_human": "439 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AAU-NLP/Pre-BERT-SL1000 · Hugging Face",
+      "url": "https://huggingface.co/AAU-NLP/Pre-BERT-SL1000",
+      "snippet": "Pre-BERT-SL1000 is a BERT-based sequence labeling model fine-tuned on the HiFi-KPI dataset for extracting financial key performance indicators (KPIs) from SEC earnings filings (10-K & 10-Q). It specializes in identifying entities, such as revenue, earnings, etc."
+    },
+    {
+      "title": "AAU-NLP/Pre-FLANG-BERT-SL1000 · Hugging Face",
+      "url": "https://huggingface.co/AAU-NLP/Pre-FLANG-BERT-SL1000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pretrained Models — Sentence Transformers documentation",
+      "url": "https://www.sbert.net/docs/sentence_transformer/pretrained_models.html",
+      "snippet": "Newer multimodal models use the unified Transformer module, which automatically detects supported modalities from the underlying model and processor. These models typically support richer input formats, including interleaved image-text inputs via chat messages."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Extremely computation efficient CNN model that is designed specifically for mobile devices. This model greatly reduces the computational cost and provides a ~13x speedup over AlexNet on ARM-based mobile devices."
+    },
+    {
+      "title": "PyTorch-Transformers",
+      "url": "https://pytorch.org/hub/huggingface_pytorch-transformers/",
+      "snippet": "Here is an example on how to tokenize the input text to be fed as input to a BERT model, and then get the hidden states computed by such a model or predict masked tokens using language modeling BERT model."
+    }
+  ]
+}

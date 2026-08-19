@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sullivan1502/base-zone-pretrain",
+  "slug": "sullivan1502-base-zone-pretrain",
+  "author": "sullivan1502",
+  "url": "https://huggingface.co/sullivan1502/base-zone-pretrain",
+  "created_at": "2026-08-19T14:44:50.000Z",
+  "updated_at": "2026-08-19T14:44:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sullivan1502/base-zone-pretrain · Hugging Face",
+      "url": "https://huggingface.co/sullivan1502/base-zone-pretrain",
+      "snippet": "sullivan1502 / base-zone-pretrain like 0 Text Generation Transformers Safetensors llama text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "base-zone-pretrain API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/sullivan1502/base-zone-pretrain",
+      "snippet": "Run base-zone-pretrain with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "sullivan1502/zone-pretrain · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/sullivan1502/zone-pretrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Entity | KnowYourModel",
+      "url": "https://www.knowyourmodel.ai/models/huggingface%3Asullivan1502%2Fbase-pretrain",
+      "snippet": "View entity details and skills Home Models Huggingface%3Asullivan1502%2Fbase-pretrain Entities huggingface/huggingface:sullivan1502/base-pretrain"
+    },
+    {
+      "title": "GitHub - lightly-ai/lightly-train: All-in-one training for vision ...",
+      "url": "https://github.com/lightly-ai/lightly-train",
+      "snippet": "LightlyTrain is the leading framework for transforming your data into state-of-the-art computer vision models. It covers the entire model development lifecycle from pretraining DINOv2/v3 vision foundation models on your unlabeled data to fine-tuning transformer and YOLO models on detection and segmentation tasks for edge deployment. Struggling to get good results with pre-training? Talk to one ..."
+    }
+  ]
+}

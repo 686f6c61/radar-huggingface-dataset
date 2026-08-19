@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "MohamedAhmedAE/medical-clip_vit_large_patch14_336",
+  "slug": "mohamedahmedae-medical-clip_vit_large_patch14_336",
+  "author": "MohamedAhmedAE",
+  "url": "https://huggingface.co/MohamedAhmedAE/medical-clip_vit_large_patch14_336",
+  "created_at": "2026-08-09T01:20:58.000Z",
+  "updated_at": "2026-08-19T16:25:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 137,
+  "trending_score": 0,
+  "parameters": 427944192,
+  "parameters_human": "427.9M",
+  "storage_bytes": 1711848436,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MohamedAhmedAE/medvision-clip_vit_large_patch14_336 · Hugging Face",
+      "url": "https://huggingface.co/MohamedAhmedAE/medvision-clip_vit_large_patch14_336",
+      "snippet": "MohamedAhmedAE / medvision-clip_vit_large_patch14_336 like 0 Safetensors clip Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.4B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "README.md · openai/clip-vit-large-patch14-336 at main",
+      "url": "https://huggingface.co/openai/clip-vit-large-patch14-336/blob/main/README.md",
+      "snippet": "like 240 Follow OpenAI 7.25k Zero-Shot Image Classification Transformers PyTorch google-tensorflow TensorFlow clip generated_from_keras_callback Model card FilesFiles and versions Community 18 Train Deploy Use this model main clip-vit-large-patch14-336 /README.md mishig HF Staff Add widget example input (#3) ce19dc9 over 2 years ago preview code | raw Copy download link history blame ..."
+    },
+    {
+      "title": "clip-vit-large-patch14-336 | HuggingFace Model | rbee Marketplace",
+      "url": "https://marketplace.rbee.dev/models/huggingface/openai--clip-vit-large-patch14-336",
+      "snippet": "clip-vit-large-patch14-336 - 3,181,825 downloads clip-vit-large-patch14-336 # This model was trained from scratch on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "clip-vit-large-patch14-336 · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/clip-vit-large-patch14-336/summary",
+      "snippet": "clip-vit-large-patch14-336 This model was trained from scratch on an unknown dataset. It achieves the following results on the evaluation set: Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training ..."
+    },
+    {
+      "title": "clip-vit-large-patch14-336 Open-Source Vision-Language Model - Supports ...",
+      "url": "https://model.aibase.com/en/models/details/1915694081730306050",
+      "snippet": "🚀 clip-vit-large-patch14-336 This model was trained from scratch on an unknown dataset and achieves certain results on the evaluation set."
+    }
+  ]
+}

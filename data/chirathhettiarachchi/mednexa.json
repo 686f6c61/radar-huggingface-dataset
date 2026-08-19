@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "chirathhettiarachchi/MedNexa",
+  "slug": "chirathhettiarachchi-mednexa",
+  "author": "chirathhettiarachchi",
+  "url": "https://huggingface.co/chirathhettiarachchi/MedNexa",
+  "created_at": "2026-08-19T12:53:58.000Z",
+  "updated_at": "2026-08-19T13:00:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46665289,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‪Chirath Hettiarachchi‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=gvLLPs8AAAAJ&hl=en",
+      "snippet": "‪Research Fellow, Australian National University‬ - ‪‪Cited by 209‬‬ - ‪Applied ML‬ - ‪Reinforcement Learning‬ - ‪Computational Neuroscience‬ - ‪Biomedical Engineering‬"
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "Chirath Hettiarachchi - The Australian National University",
+      "url": "https://researchportalplus.anu.edu.au/en/persons/chirath-hettiarachchi/",
+      "snippet": "Chirath Hettiarachchi is a Research Fellow at the ANU School of Computing working on closed-loop healthcare applications."
+    },
+    {
+      "title": "mednexa-ai · GitHub",
+      "url": "https://github.com/mednexa-ai",
+      "snippet": "GitHub is where mednexa-ai builds software. Joined Aug 5, 2026 Block or report mednexa-ai Block user"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "wangyue114514/rwkv7-g1d-0.1b-hf",
+  "slug": "wangyue114514-rwkv7-g1d-0-1b-hf",
+  "author": "wangyue114514",
+  "url": "https://huggingface.co/wangyue114514/rwkv7-g1d-0.1b-hf",
+  "created_at": "2026-08-19T13:15:19.000Z",
+  "updated_at": "2026-08-19T13:16:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rwkv7_native",
+    "text-generation",
+    "rwkv",
+    "rwkv7",
+    "recurrent",
+    "causal-lm",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 191034624,
+  "parameters_human": "191.0M",
+  "storage_bytes": 382110672,
+  "storage_human": "382 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BlinkDL/rwkv7-g1 · Hugging Face",
+      "url": "https://huggingface.co/BlinkDL/rwkv7-g1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    },
+    {
+      "title": "fla-hub/rwkv7-0.1B-g1 · Hugging Face",
+      "url": "https://huggingface.co/fla-hub/rwkv7-0.1B-g1",
+      "snippet": "fla-hub / rwkv7-.1B-g1 like 6 Follow fla-hub 113 Text Generation Transformers Safetensors 8 languages rwkv7 conversational custom_code arxiv:2503.14456 License:apache-2.0 Model card FilesFiles and versions xet Community 2 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - BlinkDL/RWKV-LM: RWKV (pronounced RwaKuv) is an RNN with great ...",
+      "url": "https://github.com/BlinkDL/RWKV-LM",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 \"Goose\". So it&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding. - BlinkDL/RWKV-LM"
+    },
+    {
+      "title": "rwkv7-g1d-0.1b-20260129-ctx8192-q8_0.gguf - SHA256 mirrors - CivArchive",
+      "url": "https://civarchive.com/sha256/06a6a64aa08c9ee74db783d46c903aeabcb5070b7d82a9dca7bf475485d7c00b",
+      "snippet": "Download rwkv7-g1d-.1b-20260129-ctx8192-q8_0.gguf (SHA256: 06a6a64aa08c9ee7...)."
+    }
+  ]
+}

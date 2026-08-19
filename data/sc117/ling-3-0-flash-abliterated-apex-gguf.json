@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "SC117/Ling-3.0-flash-abliterated-APEX-GGUF",
+  "slug": "sc117-ling-3-0-flash-abliterated-apex-gguf",
+  "author": "SC117",
+  "url": "https://huggingface.co/SC117/Ling-3.0-flash-abliterated-APEX-GGUF",
+  "created_at": "2026-08-14T01:42:00.000Z",
+  "updated_at": "2026-08-19T12:19:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ling",
+    "moe",
+    "hybrid",
+    "reasoning",
+    "abliterated",
+    "abliterix",
+    "apex",
+    "quantization",
+    "bailingmoe3",
+    "inclusionAI",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-flash",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 1537,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 489294057696,
+  "storage_human": "489.3 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SC117/Ling-3.0-flash-abliterated-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/Ling-3.0-flash-abliterated-APEX-GGUF",
+      "snippet": "After merging abliterix v6 trial 21, this model shows a much lower refusal rate and can differ from official Ling-3.0-flash. Evaluate compliance and safety for your use case; control access and audit as needed."
+    },
+    {
+      "title": "SC117/Ling-3.0-tiny-abliterated-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/Ling-3.0-tiny-abliterated-APEX-GGUF",
+      "snippet": "APEX classifies every tensor by its role — routed expert, shared expert, or attention — and applies a layer-wise precision gradient, giving the most sensitive edge layers higher precision and compressing the redundant middle layers more aggressively. Ling-3.0-tiny&#x27;s 128 routed experts (only 8 active per token) make it an ideal candidate."
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/inclusionAI/Ling-3.0-flash",
+      "snippet": "Ling-3.0-flash MoE model with BF16 and serialized block-FP8 checkpoints, 124B total / 5.5B active parameters, and a 3.1B MTP layer"
+    },
+    {
+      "title": "inclusionAI: Ling-3.0-flash - zenmux.ai",
+      "url": "https://zenmux.ai/inclusionai/ling-3.0-flash",
+      "snippet": "Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M. Compared to the previous flash model, Ling-3.0-flash delivers significantly enhanced stability in long-horizon tasks, markedly higher tool calling accuracy, and substantially improved compatibility with common ..."
+    },
+    {
+      "title": "InclusionAI Ling 3.0 Flash Complete Guide: 124B MoE with Hybrid Reasoning",
+      "url": "https://www.aimadetools.com/blog/ling-3-0-flash-complete-guide/",
+      "snippet": "Ling 3.0 Flash is a 124B MoE model with 5.1B active parameters. Hybrid reasoning mode, 262K context, free on OpenRouter. Specs and setup."
+    }
+  ]
+}

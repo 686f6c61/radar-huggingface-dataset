@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DouaaKDR/ROBOT_LEARNING_CHECKPOINTS",
+  "slug": "douaakdr-robot_learning_checkpoints",
+  "author": "DouaaKDR",
+  "url": "https://huggingface.co/DouaaKDR/ROBOT_LEARNING_CHECKPOINTS",
+  "created_at": "2026-08-19T18:18:24.000Z",
+  "updated_at": "2026-08-19T18:18:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "Model Checkpoints Base Models We provide multiple base VLA model checkpoints. These checkpoints have been pre-trained on 10k+ hours of robot data, and can be used for fine-tuning."
+    },
+    {
+      "title": "Checkpoint - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/checkpoint",
+      "snippet": "See also: Machine learning terms What is a checkpoint? In machine learning, a checkpoint is a saved snapshot of a model &#x27;s state captured at a specific point during the training process, used to resume training, recover from failures, or deploy and fine-tune the model later. A checkpoint typically stores the model&#x27;s learned parameters (weights and biases), optimizer state, the current epoch or ..."
+    },
+    {
+      "title": "lerobot (LeRobot) - Hugging Face",
+      "url": "https://huggingface.co/lerobot",
+      "snippet": "State-of-the-art Machine Learning for real-world robotics"
+    },
+    {
+      "title": "FastPersist: Accelerating Model Checkpointing in Deep Learning",
+      "url": "https://arxiv.org/html/2406.13768v1",
+      "snippet": "In the field of Deep Learning (DL), model checkpoints (i.e., persistent snapshots of model state) play a critical role of providing fault tolerance for training, and enabling downstream applications such as inference, finetuning, and distillation. While DL continues to enable significant progress in a wide range of artificial intelligence domains, such as natural language processing (NLP) [16 ..."
+    }
+  ]
+}

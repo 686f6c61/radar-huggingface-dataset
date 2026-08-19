@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yandrewl/Eva",
+  "slug": "yandrewl-eva",
+  "author": "yandrewl",
+  "url": "https://huggingface.co/yandrewl/Eva",
+  "created_at": "2025-11-03T08:12:06.000Z",
+  "updated_at": "2026-08-19T15:12:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "eva",
+    "pathology",
+    "spatial-proteomics",
+    "multiplex-imaging",
+    "histopathology",
+    "foundation-model",
+    "image-feature-extraction",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4883647062,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - YAndrewL/Eva: Eva, a multimodal foundation model for spatial ...",
+      "url": "https://github.com/YAndrewL/Eva",
+      "snippet": "Eva (E ncoding of v isual a tlas) is a foundation model for tissue imaging data that learns complex spatial representations of tissues at the molecular, cellular, and patient levels. Eva uses a novel vision transformer architecture and is pre-trained on masked image reconstruction of spatial proteomics and matched histopathology."
+    },
+    {
+      "title": "yandrewl/Eva · Hugging Face",
+      "url": "https://huggingface.co/yandrewl/Eva",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yandrewl/Eva at main - Hugging Face",
+      "url": "https://huggingface.co/yandrewl/Eva/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Eva/README.md at main · YAndrewL/Eva · GitHub",
+      "url": "https://github.com/YAndrewL/Eva/blob/main/README.md",
+      "snippet": "Eva, a multimodal foundation model for spatial proteomics and histopathology data. - Eva/README.md at main · YAndrewL/Eva"
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    }
+  ]
+}

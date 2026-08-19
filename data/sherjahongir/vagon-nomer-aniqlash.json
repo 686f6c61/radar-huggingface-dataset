@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sherjahongir/vagon-nomer-aniqlash",
+  "slug": "sherjahongir-vagon-nomer-aniqlash",
+  "author": "sherjahongir",
+  "url": "https://huggingface.co/sherjahongir/vagon-nomer-aniqlash",
+  "created_at": "2026-08-19T13:20:21.000Z",
+  "updated_at": "2026-08-19T13:33:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6256490,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vagonnumberclassification 1 Model by Sherjahongir Tursunmurodov",
+      "url": "https://platform.ultralytics.com/sherjahongir-tursunmurodov/sweet-grasshopper/vagonnumberclassification-1",
+      "snippet": "Vagonnumberclassification 1 model from the Sweet Grasshopper project by Sherjahongir Tursunmurodov. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "Detection 1 Dataset by Sherjahongir Tursunmurodov",
+      "url": "https://platform.ultralytics.com/sherjahongir-tursunmurodov/datasets/detection-1",
+      "snippet": "Railway freight car identification dataset featuring object detection of wagon numbers and their designated zones on various types of industrial rail rolling stock."
+    },
+    {
+      "title": "Sherjahongir Tursunmurodov - AI/ML Engineer | LinkedIn",
+      "url": "https://uz.linkedin.com/in/sherjahongir-tursunmurodov-aa21b6425",
+      "snippet": "AI/ML Engineer · Middle AI/ML Engineer with hands-on experience building computer vision and automation systems for real enterprise environments. Currently working at Tenzorsoft, where I develop and fine-tune object detection models for production use — including a train wagon number recognition system that processes live video streams and improved accuracy from 78% to 90%+. I also build ..."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Run any application on Chromebook, with the enhanced power of GPU",
+      "url": "https://vagon.io/ai-models",
+      "snippet": "Unlock the full power of your Chromebook with Vagon, enabling you to run any app with GPU acceleration for smooth, high-performance use."
+    }
+  ]
+}

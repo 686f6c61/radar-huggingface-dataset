@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy-LoRA",
+  "slug": "muxodious-gemma-4-26b-a4b-it-sompoa-heresy-lora",
+  "author": "MuXodious",
+  "url": "https://huggingface.co/MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy-LoRA",
+  "created_at": "2026-08-19T16:59:18.000Z",
+  "updated_at": "2026-08-19T16:59:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "image-text-to-text",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-26B-A4B",
+    "base_model:finetune:google/gemma-4-26B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48104800,
+  "storage_human": "48 MB",
+  "base_model": "google/gemma-4-26B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy · Hugging Face",
+      "url": "https://huggingface.co/MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in four distinct sizes: E2B, E4B, 26B A4B, and 31B."
+    },
+    {
+      "title": "MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy-Lora · Hugging Face",
+      "url": "https://huggingface.co/MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy-Lora",
+      "snippet": "Instructions to use MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy-Lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
+      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
+    },
+    {
+      "title": "gemma-4-26B-A4B-it-SOMPOA-heresy-Lora - FriendliAI",
+      "url": "https://friendli.ai/models/MuXodious/gemma-4-26B-A4B-it-SOMPOA-heresy-Lora",
+      "snippet": "Run gemma-4-26B-A4B-it-SOMPOA-heresy-Lora with FriendliAI inference. This is a LoRA extracted from a language model. It was extracted using mergekit."
+    },
+    {
+      "title": "gemma-4-26B-A4B-it-SOMPOA-heresy-Lora - FriendliAI",
+      "url": "https://friendli.ai/models/26B-Suite/gemma-4-26B-A4B-it-SOMPOA-heresy-Lora",
+      "snippet": "Deploy gemma-4-26B-A4B-it-SOMPOA-heresy-Lora with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OrDora/coachtwin-embedder",
+  "slug": "ordora-coachtwin-embedder",
+  "author": "OrDora",
+  "url": "https://huggingface.co/OrDora/coachtwin-embedder",
+  "created_at": "2026-08-19T15:43:44.000Z",
+  "updated_at": "2026-08-19T15:43:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "fitness",
+    "retrieval",
+    "sentence-similarity",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360000,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133462128,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OrDora (Or Dora) - Hugging Face",
+      "url": "https://huggingface.co/OrDora/datasets",
+      "snippet": "OrDora&#x27;s datasets1 Sort: Recently updated OrDora/coachtwin-workouts Viewer •Updated about 4 hours ago•908• 1"
+    },
+    {
+      "title": "OrDora (Or Dora) - Hugging Face",
+      "url": "https://huggingface.co/OrDora/models",
+      "snippet": "Recent Activity liked a datasetabout 5 hours ago OrDora/coachtwin-workouts updated a datasetabout 5 hours ago OrDora/coachtwin-workouts published a datasetabout 6 hours ago OrDora/coachtwin-workouts View all activity"
+    },
+    {
+      "title": "Ordora — Hiring infrastructure for early-stage AI startups",
+      "url": "https://ordora.co/",
+      "snippet": "Ordora is an embedded talent function for early-stage AI startups. We help tier-1-backed founders make their first 10-15 hires."
+    },
+    {
+      "title": "alphora/alphora/models/embedder/embedder_model.py at main - GitHub",
+      "url": "https://github.com/opencmit/alphora/blob/main/alphora/models/embedder/embedder_model.py",
+      "snippet": "A Production-Ready Framework for Building Composable AI Agents - alphora/alphora/models/embedder/embedder_model.py at main · opencmit/alphora"
+    },
+    {
+      "title": "10 Best Embedding Models 2026: Complete Comparison Guide",
+      "url": "https://www.openxcell.com/blog/best-embedding-models",
+      "snippet": "A practical guide to the best embedding models in 2026. Compare features, performance, and use cases for building scalable AI systems."
+    }
+  ]
+}

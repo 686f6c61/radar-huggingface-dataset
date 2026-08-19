@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "BananaMind/BananaMind-2.1-Unified",
+  "slug": "bananamind-bananamind-2-1-unified",
+  "author": "BananaMind",
+  "url": "https://huggingface.co/BananaMind/BananaMind-2.1-Unified",
+  "created_at": "2026-08-19T15:18:17.000Z",
+  "updated_at": "2026-08-19T15:21:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bananamind21_unified",
+    "text-generation",
+    "causal-lm",
+    "language-model",
+    "base-model",
+    "small-language-model",
+    "bananamind",
+    "bananamind2",
+    "bananamind21-unified",
+    "three-tower",
+    "relay",
+    "multi-tower",
+    "fineweb-hq",
+    "dclm",
+    "cosmopedia-v2",
+    "finemath",
+    "digit-tokenizer",
+    "pytorch",
+    "custom-code",
+    "trust-remote-code",
+    "custom-architecture",
+    "custom_code",
+    "en",
+    "dataset:epfml/FineWeb-HQ",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/finemath",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34999041,
+  "parameters_human": "35.0M",
+  "storage_bytes": 141506890,
+  "storage_human": "142 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BananaMind AI - Hugging Face",
+      "url": "https://huggingface.co/BananaMind/collections",
+      "snippet": "Pretraining, QAT, SLM, Overtraining, AI Interpretability. Recent Activity Banaxi-Tech new activityabout 4 hours ago BananaMind/BananaMindBench-Leaderboard: submitting two models Banaxi-Tech new activityabout 7 hours ago"
+    },
+    {
+      "title": "BananaMind-2-Mini - Hugging Face",
+      "url": "https://huggingface.co/BananaMind/BananaMind-2-Mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - BananaMind/BananaMindOS: Local AI for 90s PCs.",
+      "url": "https://github.com/BananaMind/BananaMindOS",
+      "snippet": "Local AI for 90s PCs. Contribute to BananaMind/BananaMindOS development by creating an account on GitHub."
+    },
+    {
+      "title": "DeepMind Vision Banana: A Unified Vision Architecture",
+      "url": "https://blog.roboflow.com/vision-banana/",
+      "snippet": "Google DeepMind&#x27;s Vision Banana applies lightweight instruction-tuning to the Nano Banana Pro image generation model to produce a generalist computer vision model that handles semantic segmentation, instance segmentation, monocular metric depth estimation, and surface normal estimation in a single architecture. It outperforms specialist models including SAM 3 and Depth Anything 3 on their own ..."
+    },
+    {
+      "title": "Nano Banana | Google AI Studio",
+      "url": "https://aistudio.google.com/models/nano-banana",
+      "snippet": "Nano Banana High-quality image generation with Gemini Pro and Flash"
+    }
+  ]
+}

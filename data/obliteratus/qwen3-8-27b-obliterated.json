@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+  "slug": "obliteratus-qwen3-8-27b-obliterated",
+  "author": "OBLITERATUS",
+  "url": "https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+  "created_at": "2026-08-19T14:53:08.000Z",
+  "updated_at": "2026-08-19T18:15:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 213329697382,
+  "storage_human": "213.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8-27B-OBLITERATUS-Advanced - friendli.ai",
+      "url": "https://friendli.ai/models/orwelian84/Qwen3.8-27B-OBLITERATUS-Advanced",
+      "snippet": "Run Qwen3.8-27B-OBLITERATUS-Advanced with FriendliAI inference. This repository contains an experimental BF16 derivative of Qwen/Qwen3.8-27B. The derivative…"
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "GitHub - elder-plinius/OBLITERATUS: OBLITERATE THE CHAINS THAT BIND YOU",
+      "url": "https://github.com/elder-plinius/OBLITERATUS",
+      "snippet": "OBLITERATUS is the most advanced open-source toolkit for understanding and removing refusal behaviors from large language models — and every single run makes it smarter. It implements abliteration — a family of techniques that identify and surgically remove the internal representations responsible for content refusal, without retraining or fine-tuning. The result: a model that responds to ..."
+    }
+  ]
+}

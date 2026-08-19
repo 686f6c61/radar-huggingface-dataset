@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lucid-dl/clip-vit-large-14-336",
+  "slug": "lucid-dl-clip-vit-large-14-336",
+  "author": "lucid-dl",
+  "url": "https://huggingface.co/lucid-dl/clip-vit-large-14-336",
+  "created_at": "2026-08-19T17:53:17.000Z",
+  "updated_at": "2026-08-19T17:54:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "lucid",
+  "languages": [],
+  "tags": [
+    "lucid",
+    "safetensors",
+    "base",
+    "CLIP",
+    "feature-extraction",
+    "dataset:WIT-400M",
+    "arxiv:2103.00020",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1711829276,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/clip-vit-large-patch14-336 · Hugging Face",
+      "url": "https://huggingface.co/openai/clip-vit-large-patch14-336",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "timm/vit_large_patch14_clip_336.openai · Hugging Face",
+      "url": "https://huggingface.co/timm/vit_large_patch14_clip_336.openai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "clip-vit-large-patch14-336 · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/clip-vit-large-patch14-336/summary",
+      "snippet": "clip-vit-large-patch14-336 This model was trained from scratch on an unknown dataset. It achieves the following results on the evaluation set: Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training ..."
+    },
+    {
+      "title": "clip-vit-large-patch14-336 — Use Cases, Pros & Cons | AI Tools Directory",
+      "url": "https://aiappdex.com/models/openai-clip-vit-large-patch14-336/",
+      "snippet": "OpenAI CLIP ViT-L/14 at 336×336px input resolution, a higher-resolution variant of the standard ViT-L/14 CLIP model. The larger input patch size reduces information loss during tokenization, improving performance on classification tasks requiring fine-grained visual detail."
+    },
+    {
+      "title": "clip-vit-large-patch14-336: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/clip-vit-large-patch14-336-openai",
+      "snippet": "Overview clip-vit-large-patch14-336 is a CLIP (Contrastive Language-Image Pre-training) model built by openai using a Vision Transformer architecture with large patch size (14x14) and 336-pixel input resolution. The model performs zero-shot image classification by learning joint embeddings of images and text, enabling it to classify images into arbitrary categories without task-specific ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rainbowrobotics/act_box_tilting_all_v5",
+  "slug": "rainbowrobotics-act_box_tilting_all_v5",
+  "author": "rainbowrobotics",
+  "url": "https://huggingface.co/rainbowrobotics/act_box_tilting_all_v5",
+  "created_at": "2026-08-19T19:27:10.000Z",
+  "updated_at": "2026-08-19T19:27:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:rainbowrobotics/box_tilting_all_v5",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51695244,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206814648,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rainbowrobotics/box_tilting_all_v4 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/rainbowrobotics/box_tilting_all_v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - RainbowRobotics/rby1-sdk: Official Python and C++ SDK for ...",
+      "url": "https://github.com/RainbowRobotics/rby1-sdk",
+      "snippet": "rby1-sdk is an SDK designed for seamless control and development with the RB-Y1 robot. It provides Python and C++ APIs, making it easy to integrate into various applications, from basic scripting to advanced real-time control."
+    },
+    {
+      "title": "RB-Y1 Documentation - rainbowrobotics.github.io",
+      "url": "https://rainbowrobotics.github.io/rby1-dev/",
+      "snippet": "RB-Y1 Developer & Expert Manual ¶ Designed for developers, this manual covers the RB-Y1 dual-arm mobile manipulator——its real-time software stack, APIs, setup workflows, and integration guidelines. The RB-Y1 provides two 7-DoF arms for coordinated manipulation, high-precision actuation and sensing, and a modular architecture suitable for research and production environments."
+    },
+    {
+      "title": "Rainbow Robotics · GitHub",
+      "url": "https://github.com/RainbowRobotics",
+      "snippet": "We touch the core. Rainbow Robotics has 22 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "RB-Y1 Box Tilting Dataset - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/rainbowrobotics-box-tilting-all",
+      "snippet": "A bimanual box-tilting demonstration dataset collected using the Rainbow Robotics RB-Y1 robot with 68 episodes of end-effector control."
+    }
+  ]
+}

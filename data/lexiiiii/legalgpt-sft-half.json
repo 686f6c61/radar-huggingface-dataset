@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Lexiiiii/legalgpt-sft-half",
+  "slug": "lexiiiii-legalgpt-sft-half",
+  "author": "Lexiiiii",
+  "url": "https://huggingface.co/Lexiiiii/legalgpt-sft-half",
+  "created_at": "2026-08-19T14:27:41.000Z",
+  "updated_at": "2026-08-19T14:27:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "legalgpt",
+    "lora",
+    "legal-consultation",
+    "qwen",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21529176,
+  "storage_human": "22 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Consult&#x27;IA - L&#x27;IA Juridique la plus avancée - Démo gratuite",
+      "url": "https://duckduckgo.com/y.js?ad_domain=labase%2Dlextenso.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=6nXm%2Da1Abqp7xQ6%2DkpJAubn1nE3_0IY6ZV1jZpbuHe9fXg3e1AftvB8vT7vy%2De4Q%2DOeXbI7U6b%2DkxfPOyld0aEDKQCwTllNLwd8Do9ORhkqcE9CYC867gFCGCeEL4AWo2NTP24TjCwSef7X1g8qBv7AU9OjkQAhPGl1opbhDG9Q.FOkwDxBRs3I8x78G1MN%2DBw&rut=ba484cfa0918c86e2cee6fe15f0e0e9cfbad0c61f855ab9477c26d08b1d50a7b&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8huY4_p2p3RMxLuZN1znC7zVUCUyeMmacgP2%2DBViW9XFGjL%2Dc0VEnqCYPEU_V5yG8Ht8bUuWoLaEzMht1K79y5IWt2hzC934F1Y%2Db_P48lS9YFVgSkpzqR9f0jdJ8HrshKZqbQb3PSFu1QDYWIYOa90IiHBYQOubOK1wxBTdWi4rvehjXmTJJthKmIJcqzxjw7RrigJuDSwYZIjylWB4S_0SYMCo%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cubGFiYXNlLWxleHRlbnNvLmZyJTJmY29uc3VsdC1pYSUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHNlYXJjaCUyNnV0bV9jYW1wYWlnbiUzZGlhLWp1cmlkaXF1ZSUyNnV0bV90ZXJtJTNkaWElMjUyMGp1cmlkaXF1ZSUyNm1zY2xraWQlM2Q5MzgzNjJhZjM4ODQxMjY0MTAyYTA4MmFmODI2NGI0Yg%26rlid%3D938362af38841264102a082af8264b4b&vqd=4-317788922065324153255843525891019235444&iurl=%7B1%7DIG%3DA890BEDE5CEF4BB9B3289B01D3E3993F%26CID%3D0C4C0B47E1D26DB10E0F1CFDE0A96CBF%26ID%3DDevEx%2C5037.1",
+      "snippet": "Posez votre question juridique en langage naturel, Consult&#x27;IA vous répond comme un juriste. Obtenez des réponses juridiques fiables et sourcées, immédiatement exploitables"
+    },
+    {
+      "title": "TheLawGPT - AI Legal Chatbot | Legal Research & Document Generation",
+      "url": "https://www.thelawgpt.com/",
+      "snippet": "TheLawGPT is your AI legal assistant. Research laws and generate administrative documents. Legal chatbot for individuals."
+    },
+    {
+      "title": "LegesGPT - AI Legal Assistant Platform",
+      "url": "https://www.legesgpt.com/",
+      "snippet": "LegesGPT is an AI legal assistant that helps with legal research, document analysis, and legal queries. It uses advanced machine learning algorithms trained on legal data to provide accurate and relevant legal information tailored to your specific needs."
+    },
+    {
+      "title": "LegalGPT: #1 AI Legal Assistant for Contracts & Advice",
+      "url": "https://www.legalgpt.pro/",
+      "snippet": "Get instant legal answers, draft contracts, and review documents in seconds. Trusted by businesses and individuals for accurate, affordable AI legal help. Try for free."
+    },
+    {
+      "title": "GitHub - Terry-ferns13/LegalGPT: LegalGPT is a fully localized AI ...",
+      "url": "https://github.com/Terry-ferns13/LegalGPT",
+      "snippet": "LegalGPT is a fully localized AI chatbot that enables law firms to search and query their confidential legal documents using natural language—without sending any data to the cloud. Built with Retrieval-Augmented Generation (RAG), it runs entirely on your infrastructure, ensuring complete data sovereignty and attorney-client privilege compliance."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SamirFaragHarb/distilbert-rotten-tomatoes",
+  "slug": "samirfaragharb-distilbert-rotten-tomatoes",
+  "author": "SamirFaragHarb",
+  "url": "https://huggingface.co/SamirFaragHarb/distilbert-rotten-tomatoes",
+  "created_at": "2026-08-09T09:34:29.000Z",
+  "updated_at": "2026-08-19T14:26:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 203,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 19016127363,
+  "storage_human": "19.0 GB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SamirFaragHarb/distilbert-rotten-tomatoes · Hugging Face",
+      "url": "https://huggingface.co/SamirFaragHarb/distilbert-rotten-tomatoes",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SamirFaragHarb (Samir Farag Harb) - Hugging Face",
+      "url": "https://huggingface.co/SamirFaragHarb",
+      "snippet": "Sort: Recently updated SamirFaragHarb/distilbert-rotten-tomatoes Text Classification • 67M•Updated 5 minutes ago• 34"
+    },
+    {
+      "title": "GitHub - camposfabioc/sentiment-analysis: Sentiment Analysis project ...",
+      "url": "https://github.com/camposfabioc/sentiment-analysis",
+      "snippet": "Sentiment Analysis project using DistilBERT model for Rotten Tomatoes films reviews This project implements a sentiment classifier for texts, dividing in 5 levels:"
+    },
+    {
+      "title": "Distilbert Rotten Tomatoes — AI Model | Antbase",
+      "url": "https://antbase.ai/models/distilbert-rotten-tomatoes",
+      "snippet": "Overview Distilbert Rotten Tomatoes is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/distilbert.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/distilbert.md",
+      "snippet": "DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train. Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model. You can find all the original DistilBERT checkpoints under ..."
+    }
+  ]
+}

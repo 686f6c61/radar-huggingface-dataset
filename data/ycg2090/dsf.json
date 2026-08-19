@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ycg2090/dsf",
+  "slug": "ycg2090-dsf",
+  "author": "ycg2090",
+  "url": "https://huggingface.co/ycg2090/dsf",
+  "created_at": "2026-01-10T12:55:10.000Z",
+  "updated_at": "2026-08-19T15:51:57.000Z",
+  "license": "use",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89333282452,
+  "storage_human": "89.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ycg2090 (cheolgyu) - Hugging Face",
+      "url": "https://huggingface.co/ycg2090",
+      "snippet": "User profile of cheolgyu on Hugging Face Recent Activity updated a modelabout 1 month ago ycg2090/dsf updated a modelabout 1 month ago ycg2090/dsf published a model7 months ago ycg2090/dsf View all activity"
+    },
+    {
+      "title": "AI-Enabled Device Software Functions",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/artificial-intelligence-enabled-device-software-functions-lifecycle-management-and-marketing",
+      "snippet": "This draft guidance provides recommendations regarding the contents of marketing submissions for devices that include AI-enabled device software functions."
+    },
+    {
+      "title": "Artificial Intelligence-Enabled Device Software Functions: Lifecycle ...",
+      "url": "https://www.fda.gov/media/184856/download",
+      "snippet": "An AI-DSF is a device software function that implements one or more \"AI models\" 156 (referred to as \"models\" in this guidance) to achieve its intended purpose."
+    },
+    {
+      "title": "DeepSeek Harness developer preview: Everything is a plugin",
+      "url": "https://www.deepseek.com/harness/en/",
+      "snippet": "The model is the soul of an agent. A harness lets an agent understand its environment, use tools, and keep working in real-world settings. The Cordis kernel manages plugin mounting, unmounting, and dependencies. Agent capabilities live in the plugins."
+    },
+    {
+      "title": "FDA AI-Enabled Device Software Guidance: TPLC Draft Guide",
+      "url": "https://meddeviceguide.com/blog/fda-ai-enabled-device-software-functions-tplc-draft-guidance-guide",
+      "snippet": "Guide to FDA&#x27;s January 2025 draft guidance on AI-enabled device software functions, including TPLC controls, data management, bias mitigation, transparency, and submission content."
+    }
+  ]
+}

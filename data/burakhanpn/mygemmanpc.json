@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "burakhanpn/MyGemmaNPC",
+  "slug": "burakhanpn-mygemmanpc",
+  "author": "burakhanpn",
+  "url": "https://huggingface.co/burakhanpn/MyGemmaNPC",
+  "created_at": "2026-08-19T14:06:53.000Z",
+  "updated_at": "2026-08-19T14:22:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:finetune:google/gemma-3-270m-it",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 3250854458,
+  "storage_human": "3.3 GB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arunchan/MyGemmaNPC · Hugging Face",
+      "url": "https://huggingface.co/arunchan/MyGemmaNPC",
+      "snippet": "Model Card for MyGemmaNPC This model is a fine-tuned version of google/gemma-3-270m-it. It has been trained using TRL."
+    },
+    {
+      "title": "allanctan-ai/MyGemmaNPC · Hugging Face",
+      "url": "https://huggingface.co/allanctan-ai/MyGemmaNPC",
+      "snippet": "Model Card for MyGemmaNPC This model is a fine-tuned version of google/gemma-3-270m-it. It has been trained using TRL. Quick start"
+    },
+    {
+      "title": "arunchan/MyGemmaNPC - Fast, Reliable, and Scalable Inference on FriendliAI",
+      "url": "https://friendli.ai/models/arunchan/MyGemmaNPC",
+      "snippet": "Run arunchan/MyGemmaNPC with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "MyGemmaNPC by Kaballas — VRAM 0.5GB, 32K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Kaballas%2FMyGemmaNPC,eA0JMl8jbVV7Ogj38E13D",
+      "snippet": "MyGemmaNPC is an open-source 268.1m LLM by Kaballas. VRAM 0.5GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "MyGemmaNPC | Run Model on Bytez",
+      "url": "https://bytez.com/model/vmhdaica/MyGemmaNPC",
+      "snippet": "Keep up with AI. Discover, demo, and deploy open source models"
+    }
+  ]
+}

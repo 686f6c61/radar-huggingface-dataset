@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "chitesh12545/PromptPilot-Context-Compiler-12B-4bit",
+  "slug": "chitesh12545-promptpilot-context-compiler-12b-4bit",
+  "author": "chitesh12545",
+  "url": "https://huggingface.co/chitesh12545/PromptPilot-Context-Compiler-12B-4bit",
+  "created_at": "2026-08-19T15:55:55.000Z",
+  "updated_at": "2026-08-19T15:59:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma4",
+    "coding",
+    "code",
+    "reasoning",
+    "thinking",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "base_model:mlx-community/gemma-4-12b-coder-fable5-composer2.5-4bit",
+    "base_model:quantized:mlx-community/gemma-4-12b-coder-fable5-composer2.5-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1861173040,
+  "parameters_human": "1.86B",
+  "storage_bytes": 6731330309,
+  "storage_human": "6.7 GB",
+  "base_model": "mlx-community/gemma-4-12b-coder-fable5-composer2.5-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - steyangdot/PromptPilot: PromptPilot is a SLM-powered control ...",
+      "url": "https://github.com/steyangdot/PromptPilot",
+      "snippet": "Small-language-model control layer for AI coding agents. PromptPilot puts a cheap small model in front of Codex and Claude Code: it turns a rough prompt into a clear, constraint-pinned brief — so the frontier model stops burning tokens on ambiguity, repeated history, and noisy tool output."
+    },
+    {
+      "title": "PromptPilot/docs at main · steyangdot/PromptPilot · GitHub",
+      "url": "https://github.com/steyangdot/PromptPilot/tree/main/docs",
+      "snippet": "PromptPilot is a SLM-powered control plane for AI coding agents: route, clarify, compress, preserve context, and reduce costly Codex/Claude-style agent calls. - PromptPilot/docs at main · steyangdot/PromptPilot"
+    },
+    {
+      "title": "PromptPilot",
+      "url": "https://www.prompt-pilot.ai/",
+      "snippet": "PromptPilot Your path to AI integration and customization awaits... ↵ Enter"
+    },
+    {
+      "title": "PromptPilot — Prompt enhancer for ChatGPT, Claude & Gemini",
+      "url": "https://chromewebstore.google.com/detail/promptpilot-%E2%80%94-prompt-enha/ooidoofmjnfjcebndiflpldgcphdidkn",
+      "snippet": "The problem usually isn&#x27;t the model — it&#x27;s the prompt. PromptPilot was built to close that gap: it adds a small **Enhance** button to your AI chat composer, and the moment you click it, your prompt gets rewritten to clarify the context, the goal, and the desired output format."
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    }
+  ]
+}

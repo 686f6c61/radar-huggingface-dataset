@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "AlexKub/krea2-runpod-assets",
+  "slug": "alexkub-krea2-runpod-assets",
+  "author": "AlexKub",
+  "url": "https://huggingface.co/AlexKub/krea2-runpod-assets",
+  "created_at": "2026-08-19T15:36:17.000Z",
+  "updated_at": "2026-08-19T15:36:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228587200,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "runpod-comfyui-krea2/README.md at main · NovityAi/runpod ... - GitHub",
+      "url": "https://github.com/NovityAi/runpod-comfyui-krea2/blob/main/README.md",
+      "snippet": "RunPod ComfyUI + Krea2 template for RTX 5090. Contribute to NovityAi/runpod-comfyui-krea2 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - krea-ai/krea-2: Official inference code for Krea 2",
+      "url": "https://github.com/krea-ai/krea-2",
+      "snippet": "Krea 2 - an image generation model from Krea AI. API Docs • Hugging Face (RAW) • Hugging Face (TURBO) • Technical Blog This is the official repository for the open version of Krea 2, an image model trained from scratch focused on creative and stylistic exploration. The repository contains inference code and instructions to run the model."
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    },
+    {
+      "title": "The AI Developer Cloud | Runpod",
+      "url": "https://www.runpod.io/",
+      "snippet": "AI agent infrastructure is the compute, storage, and networking layer that AI agents depend on to run, call tools, store memory, and scale. Runpod supports it across three layers: Serverless endpoints for fast inference tool calls, persistent Pods for stateful agents that need to stay running, and network volumes for shared memory and model ..."
+    },
+    {
+      "title": "Available models - Runpod Documentation",
+      "url": "https://docs.runpod.io/public-endpoints/reference",
+      "snippet": "Browse all available models for Runpod Public Endpoints. Review setup, model selection, request options, and usage guidance for Runpod Public Endpoints."
+    }
+  ]
+}

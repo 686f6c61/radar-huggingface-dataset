@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "yisuiban/git-ai-commit-sft",
+  "slug": "yisuiban-git-ai-commit-sft",
+  "author": "yisuiban",
+  "url": "https://huggingface.co/yisuiban/git-ai-commit-sft",
+  "created_at": "2026-08-19T14:08:47.000Z",
+  "updated_at": "2026-08-19T14:09:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "qwen",
+    "commit-message",
+    "conventional-commits",
+    "git",
+    "chinese",
+    "base_model:mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
+    "base_model:adapter:mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46161566,
+  "storage_human": "46 MB",
+  "base_model": "mlx-community/Qwen2.5-Coder-7B-Instruct-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - meilizz/git-ai-commit: Git AI Commit automatically generates ...",
+      "url": "https://github.com/meilizz/git-ai-commit",
+      "snippet": "Git AI Commit automatically generates meaningful commit messages by analyzing code changes with AI. Following Conventional Commits spec, it integrates via Git hooks, supports bilingual messages, an..."
+    },
+    {
+      "title": "GitHub - git-ai-project/git-ai: A Git extension for tracking the AI ...",
+      "url": "https://github.com/git-ai-project/git-ai",
+      "snippet": "Git AI is an open source git extension that tracks the AI-generated code in your repositories. After installing the extension, every line of AI code is linked to the agent, model, and prompts that generated it — so you never lose the intent, requirements, and architecture decisions behind your code. Just prompt and commit — no workflow changes: git commit"
+    },
+    {
+      "title": "GitHub - Nutlope/aicommits: A CLI that writes your git commit messages ...",
+      "url": "https://github.com/Nutlope/aicommits",
+      "snippet": "A CLI that writes your git commit messages for you with AI - Nutlope/aicommits"
+    },
+    {
+      "title": "AI-Commit | ai-commit - renatogalera.github.io",
+      "url": "https://renatogalera.github.io/ai-commit/",
+      "snippet": "AI-Commit: Git workflow with AI-powered commit messages, instant code reviews, and style enforcement—all in one CLI tool."
+    },
+    {
+      "title": "Automate Your Git Commits with AI - Introducing `git-ai-commit",
+      "url": "https://dev.to/syedharis14/automate-your-git-commits-with-ai-introducing-git-ai-commit-1804",
+      "snippet": "Writing commit messages can be tedious, and maintaining consistency in commit logs is often... Tagged with git, opensource, automation, ai."
+    }
+  ]
+}

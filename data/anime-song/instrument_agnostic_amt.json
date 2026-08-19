@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anime-song/instrument_agnostic_amt",
+  "slug": "anime-song-instrument_agnostic_amt",
+  "author": "anime-song",
+  "url": "https://huggingface.co/anime-song/instrument_agnostic_amt",
+  "created_at": "2026-05-03T08:01:36.000Z",
+  "updated_at": "2026-08-19T12:54:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1384111606,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - anime-song/instrument-agnostic-amt: Neural Semi-CRF based ...",
+      "url": "https://github.com/anime-song/instrument-agnostic-amt",
+      "snippet": "This project is an instrument-agnostic Automatic Music Transcription (AMT) model that converts audio into MIDI. Like Basic Pitch, it doesn&#x27;t distinguish between instruments — piano, guitar, bass, vocals, strings, brass — if it has pitch, the model will transcribe it. One model handles everything ..."
+    },
+    {
+      "title": "instrument-agnostic-amt/README.md at main · anime-song ... - GitHub",
+      "url": "https://github.com/anime-song/instrument-agnostic-amt/blob/main/README.md",
+      "snippet": "This project is an instrument-agnostic Automatic Music Transcription (AMT) model that converts audio into MIDI. Like Basic Pitch, it doesn&#x27;t distinguish between instruments — piano, guitar, bass, vocals, strings, brass — if it has pitch, the model will transcribe it. One model handles everything. The architecture builds on Transkun (Yujia Yan et al.) and its Neural Semi-CRF approach ..."
+    },
+    {
+      "title": "anime-song/instrument_agnostic_amt · Hugging Face",
+      "url": "https://huggingface.co/anime-song/instrument_agnostic_amt",
+      "snippet": "anime-song / instrument_agnostic_amt like 0 License:mit Model card FilesFiles and versions xet Community"
+    },
+    {
+      "title": "Colab_Inference.ipynb - Colab - Google Colab",
+      "url": "https://colab.research.google.com/github/anime-song/instrument-agnostic-amt/blob/main/Colab_Inference.ipynb",
+      "snippet": "Instrument-Agnostic Automatic Music Transcription (Colab Inference) This notebook allows you to run inference using the Instrument-Agnostic AMT model. It will automatically download the pre-trained model from Hugging Face."
+    },
+    {
+      "title": "anime-song (anime-song) - Hugging Face",
+      "url": "https://huggingface.co/anime-song",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 13 minutes ago ... published a model 28 days ago"
+    }
+  ]
+}

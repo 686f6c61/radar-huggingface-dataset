@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "taskmaster141/qwen3_4b_simplyparse-fl62.79",
+  "slug": "taskmaster141-qwen3_4b_simplyparse-fl62-79",
+  "author": "taskmaster141",
+  "url": "https://huggingface.co/taskmaster141/qwen3_4b_simplyparse-fl62.79",
+  "created_at": "2026-08-19T15:51:47.000Z",
+  "updated_at": "2026-08-19T15:51:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275731550,
+  "storage_human": "276 MB",
+  "base_model": "unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taskmaster141/qwen3_4b_simplyparse · Hugging Face",
+      "url": "https://huggingface.co/taskmaster141/qwen3_4b_simplyparse",
+      "snippet": "taskmaster141 / qwen3_4b_simplyparse like 0 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "taskmaster141/SimplyParse-qwen3txt-3rdepoch · Hugging Face",
+      "url": "https://huggingface.co/taskmaster141/SimplyParse-qwen3txt-3rdepoch",
+      "snippet": "taskmaster141 / SimplyParse-qwen3txt-3rdepoch like 0 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "qwen3_4b_simplyparse API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/taskmaster141/qwen3_4b_simplyparse",
+      "snippet": "Run qwen3_4b_simplyparse with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 - LLMS3",
+      "url": "https://llms3.com/node/qwen3",
+      "snippet": "Alibaba&#x27;s open-weight large language model family launched April 2025 and evolved through multiple 2026 releases. Range covers six dense models (0.6B-32B parameters) and two Mixture-of-Experts models (30B-A3B and 235B-A22B at launch; Qwen 3.5 escalated to 397B-A17B with native vision + 201 languages in February 2026; Qwen3.6-27B added a hybrid Gated DeltaNet linear-attention + traditional ..."
+    }
+  ]
+}

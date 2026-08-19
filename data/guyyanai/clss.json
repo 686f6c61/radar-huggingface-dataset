@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "guyyanai/CLSS",
+  "slug": "guyyanai-clss",
+  "author": "guyyanai",
+  "url": "https://huggingface.co/guyyanai/CLSS",
+  "created_at": "2025-09-13T09:26:08.000Z",
+  "updated_at": "2026-08-19T12:49:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "biology",
+    "bioinformatics",
+    "protein",
+    "protein-embeddings",
+    "contrastive-learning",
+    "multimodal",
+    "structure",
+    "sequence",
+    "sequence-segments",
+    "feature-extraction",
+    "base_model:biohub/esm3-sm-open-v1",
+    "base_model:finetune:biohub/esm3-sm-open-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4568686833,
+  "storage_human": "4.6 GB",
+  "base_model": "facebook/esm2_t12_35M_UR50D, EvolutionaryScale/esm3-sm-open-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - guyyanai/CLSS",
+      "url": "https://github.com/guyyanai/CLSS",
+      "snippet": "Amino acid sequence dictates the three-dimensional structure and biological function of proteins. Yet, despite decades of research, our understanding of the interplay between sequence and structure is incomplete. To meet this challenge, we introduce Contrastive Learning Sequence-Structure (CLSS), an AI-based contrastive learning model trained to co-embed sequence and structure information in a ..."
+    },
+    {
+      "title": "guyyanai/CLSS · Hugging Face",
+      "url": "https://huggingface.co/guyyanai/CLSS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "guyyanai/CLSS at main - Hugging Face",
+      "url": "https://huggingface.co/guyyanai/CLSS/tree/main",
+      "snippet": "guyyanai / CLSS like 0 Feature Extraction PyTorch biology bioinformatics protein protein-embeddings contrastive-learning multimodal structure sequence sequence-segments License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main CLSS 806 MB Ctrl+K Ctrl+K 1 contributor History:31 commits guyyanai Update README.md 7b9a4b4 verified3 months ago .gitattributes 2.03 ..."
+    },
+    {
+      "title": "clss-model · PyPI",
+      "url": "https://pypi.org/project/clss-model/",
+      "snippet": "To meet this challenge, we introduce Contrastive Learning Sequence-Structure (CLSS), an AI-based contrastive learning model trained to co-embed sequence and structure information in a self-supervised manner. We trained CLSS on large and diverse sets of protein building blocks called domains."
+    },
+    {
+      "title": "CLSS/examples/interactive-map at main · guyyanai/CLSS · GitHub",
+      "url": "https://github.com/guyyanai/CLSS/tree/main/examples/interactive-map",
+      "snippet": "This application creates an interactive 2D visualization of protein domains by: Processing Multi-Modal Data: Reading protein sequences (FASTA) and structures (PDB) AI-Powered Embeddings: Using the CLSS model to generate unified embeddings for both sequences and structures Dimensionality Reduction: Applying t-SNE to project high-dimensional embeddings to 2D space Interactive Visualization ..."
+    }
+  ]
+}

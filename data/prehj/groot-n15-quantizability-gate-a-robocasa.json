@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "prehj/groot-n15-quantizability-gate-A-robocasa",
+  "slug": "prehj-groot-n15-quantizability-gate-a-robocasa",
+  "author": "prehj",
+  "url": "https://huggingface.co/prehj/groot-n15-quantizability-gate-A-robocasa",
+  "created_at": "2026-08-19T17:29:37.000Z",
+  "updated_at": "2026-08-19T17:29:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "vision-language-action",
+    "gr00t",
+    "action-quantization",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6952184,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tensorleap-hub/groot-n15: NVIDIA GR00T N1.5-3B - GitHub",
+      "url": "https://github.com/Tensorleap-hub/groot-n15",
+      "snippet": "groot-n15 — NVIDIA GR00T N1.5-3B (full-model autoregressive flow chain) Tensorleap integration for the real nvidia/GR00T-N1.5-3B checkpoint (Eagle VLM backbone + DiT action head, GR1 embodiment) on real PickNPlace demonstrations. The model is exported as a single flow step with the Euler update baked into the graph, so each step&#x27;s output IS the next noised chunk: the autoregressive hook ..."
+    },
+    {
+      "title": "rainbowrobotics/groot_N15_20k · Hugging Face",
+      "url": "https://huggingface.co/rainbowrobotics/groot_N15_20k",
+      "snippet": "groot_N15_20k like 0 Follow Rainbow Robotics 5 Robotics LeRobot Safetensors kaiseong/bin_0318_19_merged_crop480 groot License:apache-2.0 Model card FilesFiles and versions xet Community Use this model Model Card for groot How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model Details"
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T What&#x27;s New in GR00T N1.7 Installation LeRobot Integration Model Checkpoints & Embodiment Tags Data Format Inference Fine-tuning Evaluation Contributions License Citation"
+    },
+    {
+      "title": "GR00T N1.5 - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1_5/",
+      "snippet": "Introduction We introduce GR00T N1.5, an upgraded version of the GR00T N1 foundation model for humanoid robots. With several architecture, data and modeling improvements, we find that N1.5 outperforms N1 on both simulated manipulation benchmarks and on the real GR-1 robot, detailed below."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

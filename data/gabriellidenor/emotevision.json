@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "gabriellidenor/EmoteVision",
+  "slug": "gabriellidenor-emotevision",
+  "author": "gabriellidenor",
+  "url": "https://huggingface.co/gabriellidenor/EmoteVision",
+  "created_at": "2026-08-19T13:02:45.000Z",
+  "updated_at": "2026-08-19T13:23:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vision",
+    "PyTorch",
+    "torchvision",
+    "image-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gabriellidenor/facial_emotion_images · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/gabriellidenor/facial_emotion_images",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gabriellidenor (Gabriel Lidenor) - Hugging Face",
+      "url": "https://huggingface.co/gabriellidenor/models",
+      "snippet": "User profile of Gabriel Lidenor on Hugging Face"
+    },
+    {
+      "title": "GabrielLidenor (Gabriel Lidenor ) · GitHub",
+      "url": "https://github.com/GabrielLidenor",
+      "snippet": "A graph representing GabrielLidenor&#x27;s contributions from June 29, 2025 to July 02, 2026. The contributions are 56% commits, 24% pull requests, 19% code review, 1% issues."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "EMO: Emote Portrait Alive Generating Expressive Portrait Videos with ...",
+      "url": "https://dl.acm.org/doi/10.1007/978-3-031-73010-8_15",
+      "snippet": "EMO: Emote Portrait Alive Generating Expressive Portrait Videos with Audio2Video Diffusion Model Under Weak Conditions Authors: Linrui Tian"
+    }
+  ]
+}

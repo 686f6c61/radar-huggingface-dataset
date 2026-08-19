@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Nikula8/hunyuan-dating-bundle",
+  "slug": "nikula8-hunyuan-dating-bundle",
+  "author": "Nikula8",
+  "url": "https://huggingface.co/Nikula8/hunyuan-dating-bundle",
+  "created_at": "2026-06-12T21:20:18.000Z",
+  "updated_at": "2026-08-19T18:49:48.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62430375122,
+  "storage_human": "62.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tencent - 腾讯混元",
+      "url": "https://hunyuan.tencent.com/",
+      "snippet": "但现实生活中的 context 并不是一本提前梳理好的\"说明书\"。 如果要成为真正好用的日常助理，AI 不能只停留于理解和运用新知识；它还必须能看懂复杂的人际关系，处理混乱、碎片化、不断变化的信息，并从这些线索中读懂我们真实的生活。"
+    },
+    {
+      "title": "Tencent Hunyuan video",
+      "url": "https://aivideo.hunyuan.tencent.com/",
+      "snippet": "HunyuanVideo is a breakthrough video generation model that provides a cinematic video quality experience and can freely switch between real and virtual styles. It breaks the limitations of small dynamic images, displaying complete actions seamlessly, and rich semantic expressions allow sequential actions to be completed in one go."
+    },
+    {
+      "title": "Tencent-Hunyuan · GitHub",
+      "url": "https://github.com/tencent-hunyuan",
+      "snippet": "Hy3 (295B A21B), a leading reasoning and agent model in its size, with great cost efficiency. Python 608 202 HunyuanVideo Public HunyuanVideo: A Systematic Framework For Large Video Generation Model Python 12.4k 1.3k HunyuanImage-3.0 Public HunyuanImage-3.0: A Powerful Native Multimodal Model for Image Generation Python 3.2k 183 Hunyuan3D-2.1 ..."
+    },
+    {
+      "title": "Hunyuan Video & Image Models - Tencent Hunyuan 3D Video & Foley Suite ...",
+      "url": "https://wavespeed.ai/collections/hunyuan",
+      "snippet": "Video & Audio hunyuan-video-foley AI video foley and sound design that automatically adds footsteps, ambience, and effects while matching the timing and context of your footage. Video Generation (2D) hunyuan-video/i2v Image-to-video generator that turns a single frame into a short, smooth clip while preserving composition and scene structure. hunyuan-video/t2v Text-to-video model for quickly ..."
+    },
+    {
+      "title": "Free Online Hunyuan 3D Models: Explore in Your Browser",
+      "url": "https://www.hunyuanvideo.org/en/hunyuan3d",
+      "snippet": "Discover free Hunyuan 3D models online. View and interact with detailed three-dimensional objects directly in your web browser without any cost"
+    }
+  ]
+}

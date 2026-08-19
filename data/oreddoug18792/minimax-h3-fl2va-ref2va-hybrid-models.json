@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "OREDDoug18792/Minimax-H3-fl2va-ref2va-hybrid-models",
+  "slug": "oreddoug18792-minimax-h3-fl2va-ref2va-hybrid-models",
+  "author": "OREDDoug18792",
+  "url": "https://huggingface.co/OREDDoug18792/Minimax-H3-fl2va-ref2va-hybrid-models",
+  "created_at": "2026-08-19T15:37:45.000Z",
+  "updated_at": "2026-08-19T15:37:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-generation",
+    "text-to-video",
+    "image-to-video",
+    "audio-video-generation",
+    "diffusion-transformer",
+    "merge",
+    "hybrid",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83881518528,
+  "storage_human": "83.9 GB",
+  "base_model": "MiniMax-H3-fl2va, MiniMax-H3-ref2va",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "MiniMax H3 is a general-purpose, omni-modal generative system. It supports unified understanding of multimodal contexts composed of text, images, video, and audio, and can generate video with native stereo audio at resolutions up to 2K and durations of up to 15 seconds."
+    },
+    {
+      "title": "smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models · Hugging Face",
+      "url": "https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
+    },
+    {
+      "title": "GitHub - iSk2y/awesome-minimax-h3: Curated resources for MiniMax H3 ...",
+      "url": "https://github.com/iSk2y/awesome-minimax-h3",
+      "snippet": "MiniMax H3 is a 33B-parameter multimodal model that generates video and stereo audio in a single pass, per the official model card: 4-15 second clips, 24 FPS, 32 kHz stereo audio Local base resolution: 768p (the hosted pipeline adds 2K regeneration) Two task checkpoints: FL2VA (text / first-last-frame to video+audio) and Ref2VA (reference-driven: up to 9 images, 3 video clips, 3 audio clips ..."
+    }
+  ]
+}

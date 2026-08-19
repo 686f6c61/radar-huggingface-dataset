@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fraQtl/mistral-7b-instruct-v0.3-kv-sidecars",
+  "slug": "fraqtl-mistral-7b-instruct-v0-3-kv-sidecars",
+  "author": "fraQtl",
+  "url": "https://huggingface.co/fraQtl/mistral-7b-instruct-v0.3-kv-sidecars",
+  "created_at": "2026-07-02T22:32:18.000Z",
+  "updated_at": "2026-08-19T16:17:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fraqtl-kv-sidecar",
+    "kv-cache",
+    "kv-cache-compression",
+    "vllm",
+    "long-context",
+    "fraqtl",
+    "a100",
+    "en",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16945958,
+  "storage_human": "17 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fraQtl/mistral-7b-instruct-v0.3-kv-sidecars · Hugging Face",
+      "url": "https://huggingface.co/fraQtl/mistral-7b-instruct-v0.3-kv-sidecars",
+      "snippet": "Description The fraQtl KV-cache compression sidecars for Mistral-7B-Instruct-v0.3 enable serving Mistral-7B-Instruct-v0.3 in vLLM with 2.4× the KV-cache capacity of fp16 (1.2× of fp8-KV) on NVIDIA A100, at ≈95% of fp16 batch-1 decode speed at 8K and parity at 32K — retrieval verified via needle-in-a-haystack grids at every published point."
+    },
+    {
+      "title": "grimjim/mistralai-Mistral-7B-Instruct-v0.3 · Hugging Face",
+      "url": "https://huggingface.co/grimjim/mistralai-Mistral-7B-Instruct-v0.3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fraqtl-ai/fraqtl-mistral-d1: fraQtl D1 - GitHub",
+      "url": "https://github.com/fraqtl-ai/fraqtl-mistral-d1",
+      "snippet": "Translation: anyone can drive the car (run D1 on Mistral-7B-v0.3 with the included sidecars). To get fraQtl-quality KV compression on a different base model (Llama 3.1 / Qwen / DeepSeek / your own checkpoint), the calibration is the service business — DM contact@fraqtl.ai."
+    },
+    {
+      "title": "GitHub - ashishagrawal-as/mistral-7b-v03-instruct",
+      "url": "https://github.com/ashishagrawal-as/mistral-7b-v03-instruct",
+      "snippet": "The Mistral 7B Instruct model is a quick demonstration that the base model can be easily fine-tuned to achieve compelling performance. It does not have any moderation mechanisms."
+    },
+    {
+      "title": "mistral-7b-instruct-v0.3 Model by Mistral AI | NVIDIA NIM",
+      "url": "https://build.nvidia.com/mistralai/mistral-7b-instruct-v03",
+      "snippet": "This LLM follows instructions, completes requests, and generates creative text."
+    }
+  ]
+}

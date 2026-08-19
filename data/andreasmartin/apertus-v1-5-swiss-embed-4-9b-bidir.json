@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "andreasmartin/apertus-v1.5-swiss-embed-4.9b-bidir",
+  "slug": "andreasmartin-apertus-v1-5-swiss-embed-4-9b-bidir",
+  "author": "andreasmartin",
+  "url": "https://huggingface.co/andreasmartin/apertus-v1.5-swiss-embed-4.9b-bidir",
+  "created_at": "2026-08-19T18:28:54.000Z",
+  "updated_at": "2026-08-19T18:28:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "apertus",
+    "embeddings",
+    "retrieval",
+    "multilingual",
+    "swiss",
+    "switzerland",
+    "apertus-1.5",
+    "bidirectional",
+    "matryoshka",
+    "sentence-similarity",
+    "de",
+    "en",
+    "fr",
+    "it",
+    "rm",
+    "gsw",
+    "base_model:andreasmartin/apertus-v1.5-8b-text",
+    "base_model:finetune:andreasmartin/apertus-v1.5-8b-text",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apertus v1.5 - a swiss-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/swiss-ai/apertus-v15",
+      "snippet": "Democratizing Open and Compliant LLMs for Global Language Environments: 8B and 70B open-data open-weights models, multilingual in >1000 languages"
+    },
+    {
+      "title": "andreasmartin/apertus-v1.5-8b-text · Hugging Face",
+      "url": "https://huggingface.co/andreasmartin/apertus-v1.5-8b-text",
+      "snippet": "A text-only derivative of swiss-ai/Apertus-v1.5-8B (Swiss AI Initiative: ETH Zurich / EPFL / CSCS), repackaged as a standard, lightweight apertus checkpoint (ApertusForCausalLM). The checkpoint loads with release transformers >= 4.56 — no fork, no trust_remote_code — and is compatible with Unsloth, vLLM, llama.cpp/GGUF, MLX, and LM Studio."
+    },
+    {
+      "title": "Apertus v1.5 - a swiss-ai Collection | Andreas Martin - LinkedIn",
+      "url": "https://www.linkedin.com/posts/andreasmartinch_apertus-v15-a-swiss-ai-collection-activity-7486327581131284480-NGmu",
+      "snippet": "It is a great opportunity to turn cutting-edge open AI research into practical solutions through collaboration between academia, industry, and the public sector."
+    },
+    {
+      "title": "Apertus AI",
+      "url": "https://apertus-ai.org/pages/documentation/",
+      "snippet": "Code Base Swiss AI on GitHub Training code, evaluation scripts, and model artifacts for Apertus and related projects."
+    },
+    {
+      "title": "Apertus 1.5: Building the next generation of open AI infrastructure",
+      "url": "https://ai.ethz.ch/news-and-events/ai-center-news/2026/07/apertus-15-building-the-next-generation-of-open-ai-infrastructure.html",
+      "snippet": "This allows researchers, public institutions and companies to inspect, adapt and improve the model for their own needs. A long-term vision for sovereign AI The release of Apertus 1.5 marks another step towards a long-term goal: building a sovereign AI infrastructure that provides an open alternative to proprietary commercial models."
+    }
+  ]
+}

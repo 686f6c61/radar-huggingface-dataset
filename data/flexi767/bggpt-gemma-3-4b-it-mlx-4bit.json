@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "flexi767/BgGPT-Gemma-3-4B-IT-MLX-4bit",
+  "slug": "flexi767-bggpt-gemma-3-4b-it-mlx-4bit",
+  "author": "flexi767",
+  "url": "https://huggingface.co/flexi767/BgGPT-Gemma-3-4B-IT-MLX-4bit",
+  "created_at": "2026-08-15T23:06:13.000Z",
+  "updated_at": "2026-08-15T23:32:13.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "bg",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma3",
+    "bg",
+    "bulgarian",
+    "mlx-vlm",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:INSAIT-Institute/BgGPT-Gemma-3-4B-IT",
+    "base_model:quantized:INSAIT-Institute/BgGPT-Gemma-3-4B-IT",
+    "license:gemma",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 1131301232,
+  "parameters_human": "1.13B",
+  "storage_bytes": 3433953649,
+  "storage_human": "3.4 GB",
+  "base_model": "INSAIT-Institute/BgGPT-Gemma-3-4B-IT",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flexi767/BgGPT-Gemma-3-4B-IT-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/flexi767/BgGPT-Gemma-3-4B-IT-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "flexi767/BgGPT-Gemma-3-4B-IT-MLX-4bit at main - Hugging Face",
+      "url": "https://huggingface.co/flexi767/BgGPT-Gemma-3-4B-IT-MLX-4bit/tree/main",
+      "snippet": "Instructions to use flexi767/BgGPT-Gemma-3-4B-IT-MLX-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use flexi767/BgGPT-Gemma-3-4B-IT-MLX-4bit with MLX:"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Fine-Tuning Google&#x27;s Gemma-3-4B-IT Model with MLX_LM and Preparing It ...",
+      "url": "https://blog.radi.pro/posts/fine-tuning-gemma-3-model-with-mlx",
+      "snippet": "Fine-tuning with MLX_LM is a powerful way to adapt models like Gemma-3-4B-IT to your data, and integrating with Ollama opens up easy deployment options. This process took me just a few hours on an M3 Mac, but results will vary based on hardware and dataset."
+    },
+    {
+      "title": "Gemma (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gemma_(language_model)",
+      "snippet": "Gemma is a series of source-available large language models developed by Google DeepMind. It is based on similar technologies as Gemini. [4] The first version was released in February 2024, followed by Gemma 2 in June 2024, Gemma 3 in March 2025, and the open-weights Gemma 4 in April 2026. Variants of Gemma have also been developed, such as the vision-language model PaliGemma and the model ..."
+    }
+  ]
+}

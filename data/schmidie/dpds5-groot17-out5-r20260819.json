@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Schmidie/dpds5-groot17-out5-r20260819",
+  "slug": "schmidie-dpds5-groot17-out5-r20260819",
+  "author": "Schmidie",
+  "url": "https://huggingface.co/Schmidie/dpds5-groot17-out5-r20260819",
+  "created_at": "2026-08-19T16:04:57.000Z",
+  "updated_at": "2026-08-19T18:00:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "gr00t",
+    "so100",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27757470790,
+  "storage_human": "27.8 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "physicalairi/so101_1200ep_groot17_20260805 · Hugging Face",
+      "url": "https://huggingface.co/physicalairi/so101_1200ep_groot17_20260805",
+      "snippet": "GR00T N1.7 is an open, cross-embodiment foundation model from NVIDIA for generalized humanoid robot reasoning and skills. It uses a Cosmos-Reason2/Qwen3-VL backbone and a flow-matching action transformer to predict actions conditioned on vision, language, and proprioception."
+    },
+    {
+      "title": "README.md · Schmidie/example_dataset at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Schmidie/example_dataset/blob/main/README.md",
+      "snippet": "Datasets: Schmidie / example_dataset like 0 Tasks: Robotics Modalities: Tabular Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets pandas Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 main example_dataset /README.md Schmidie Upload README.md with huggingface_hub 08146e2 verifiedabout 1 month ago preview code | Raw ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

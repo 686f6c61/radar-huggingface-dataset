@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-4bit",
+  "slug": "t0rr3sp3dr0-qwen3-8-27b-mlx-mtp-4bit",
+  "author": "t0rr3sp3dr0",
+  "url": "https://huggingface.co/t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-4bit",
+  "created_at": "2026-08-19T11:47:30.000Z",
+  "updated_at": "2026-08-19T12:19:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mtp",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5848822512,
+  "parameters_human": "5.85B",
+  "storage_bytes": 18523586755,
+  "storage_human": "18.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwen3.8-27B-MTP-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Layr-Labs/qwen-3.8-mtp-challenge: Qwen 3.8 27B MLX challenge ...",
+      "url": "https://github.com/Layr-Labs/qwen-3.8-mtp-challenge",
+      "snippet": "The default — and only — ranked track in this repository is qwen3.8-27b-mtp-v1: the Qwen 3.8 27B target drafts a block with its own native MTP head, verifies the block against itself, and decode advances by the longest correct prefix. benchmark.json IS the Qwen-MTP manifest (benchmark name mlxfast-challenge-dev-qwen38-mtp), the ranked ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026)",
+      "url": "https://modelfit.io/blog/run-qwen38-27b-locally-2026/",
+      "snippet": "Qwen3.8-27B is the strongest dense open-weight model of its size for a 24GB machine, and it arrived with working install paths on day one. Start with ollama run qwen3.8:27b, use the MLX 4-bit port on Apple Silicon, and prefer llama.cpp b10419+ if you want MTP decoding."
+    }
+  ]
+}

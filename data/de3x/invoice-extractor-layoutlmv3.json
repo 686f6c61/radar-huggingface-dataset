@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DE3X/invoice-extractor-layoutlmv3",
+  "slug": "de3x-invoice-extractor-layoutlmv3",
+  "author": "DE3X",
+  "url": "https://huggingface.co/DE3X/invoice-extractor-layoutlmv3",
+  "created_at": "2026-08-19T12:57:18.000Z",
+  "updated_at": "2026-08-19T12:57:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "layoutlmv3",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125926027,
+  "parameters_human": "125.9M",
+  "storage_bytes": 503730436,
+  "storage_human": "504 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Invoice Information Extraction using LayoutLMv3 - GitHub",
+      "url": "https://github.com/Nurhen02/Invoice-Information-Extraction-using-a-LayoutLMv3",
+      "snippet": "This project is a Deep Learning-based solution for extracting key information from invoices, such as the date, buyer name, total amount, and tax amount. It utilizes LayoutLMv3, a state-of-the-art transformer model designed to process scanned documents while considering both textual and layout information."
+    },
+    {
+      "title": "Theivaprakasham/layoutlmv3-finetuned-invoice · Hugging Face",
+      "url": "https://huggingface.co/Theivaprakasham/layoutlmv3-finetuned-invoice",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - DarthVader19/invoice_extraction",
+      "url": "https://github.com/DarthVader19/invoice_extraction",
+      "snippet": "Invoice Information Extraction using LayoutLMv3 A simple yet powerful system that extracts key information from invoice images and PDFs using a fine-tuned LayoutLMv3 model."
+    },
+    {
+      "title": "LayoutLMv3 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/layoutlmv3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LayoutLMv3-finetuned-invoice Open-source Model - Free to Extract Key ...",
+      "url": "https://model.aibase.com/models/details/1915693918462828546",
+      "snippet": "This model is based on Microsoft&#x27;s LayoutLMv3 model, specifically fine-tuned for invoice information extraction tasks. It can predict key fields such as issuer name, address, postal code, date, amount, etc."
+    }
+  ]
+}

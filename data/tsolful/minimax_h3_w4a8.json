@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tsolful/Minimax_H3_W4A8",
+  "slug": "tsolful-minimax_h3_w4a8",
+  "author": "tsolful",
+  "url": "https://huggingface.co/tsolful/Minimax_H3_W4A8",
+  "created_at": "2026-08-19T18:09:36.000Z",
+  "updated_at": "2026-08-19T18:21:40.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12540858544,
+  "storage_human": "12.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
+    },
+    {
+      "title": "Quantized Models for MiniMaxAI/MiniMax-H3 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:MiniMaxAI/MiniMax-H3",
+      "snippet": "Explore machine learning models. antocorr/MiniMax-H3-FL2VA-MLX-Serve-2bit-text-encoder"
+    },
+    {
+      "title": "tsolful/Minimax_H3_INT4Mixed · Hugging Face",
+      "url": "https://huggingface.co/tsolful/Minimax_H3_INT4Mixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - wildminder/awesome-minimax-H3: Awesome MiniMax-H3",
+      "url": "https://github.com/wildminder/awesome-minimax-H3",
+      "snippet": "Awesome MiniMax-H3 A curated list of models, text encoders, quants, and tools for the MiniMax-H3 omni-modal video generation model."
+    },
+    {
+      "title": "MiniMax H3 w4a8 Download: Kijai 4-Bit FL2VA Weights for ComfyUI ...",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-05-kijai-minimax-h3-w4a8",
+      "snippet": "Kijai published experimental w4a8 quantized MiniMax H3 weights on Hugging Face, paired with an int8 convrot VAE. The asymmetric 4-bit layout stores weights at about 0.56 bytes per"
+    }
+  ]
+}

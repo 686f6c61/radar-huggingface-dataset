@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-6bit-MTP",
+  "slug": "automatosx-ax-deepseek-v4-flash-mlx-axq-6bit-mtp",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-6bit-MTP",
+  "created_at": "2026-08-08T11:40:15.000Z",
+  "updated_at": "2026-08-19T15:54:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v4",
+    "apple-silicon",
+    "quantized",
+    "mixed-precision",
+    "axquant",
+    "axq",
+    "development",
+    "deepseek-v4",
+    "6bit",
+    "6-bit",
+    "mtp",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 663,
+  "trending_score": 0,
+  "parameters": 59197329495,
+  "parameters_human": "59.20B",
+  "storage_bytes": 208721285793,
+  "storage_human": "208.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AX-DeepSeek-V4-Flash-MLX-AXQ-4bit - Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-4bit",
+      "snippet": "AX-DeepSeek-V4-Flash-0731-MLX-AXQ-4bit like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "GitHub - antirez/ds4: DeepSeek 4 Flash and PRO local inference engine ...",
+      "url": "https://github.com/antirez/ds4",
+      "snippet": "DwarfStar is a small native inference engine optimized first for DeepSeek V4 Flash. It also supports GLM 5.2 and, on very high-memory machines, DeepSeek V4 PRO. It is self-contained and deliberately narrow, not a general GGUF runner. Model loading, prompt rendering, tool calls, KV state, the HTTP server, and the coding agent are built and tested together. The repository also includes tools and ..."
+    },
+    {
+      "title": "DeepSeek V4-Flash Setup: API + Local in 12 Steps [2026]",
+      "url": "https://tech-insider.org/how-to-set-up-deepseek-v4-flash-2026/",
+      "snippet": "DeepSeek pushed out V4-Flash&#x27;s \"0731\" release on July 31, 2026, and the update quietly reset expectations for what a budget model can do. The retrained 284B-parameter mixture-of-experts network, with roughly 13B active parameters per token, now beats its own bigger sibling, DeepSeek V4-Pro, on agentic coding benchmarks while charging the same $0.22 per million input tokens and $0.66 per ..."
+    },
+    {
+      "title": "DeepSeek V4 Pro & Flash API Models: IDs, Pricing, Limits",
+      "url": "https://deepseekv4.network/models",
+      "snippet": "Compare the official deepseek-v4-pro and deepseek-v4-flash API model IDs, current token pricing, 1M context, output limits, and migration notes."
+    }
+  ]
+}

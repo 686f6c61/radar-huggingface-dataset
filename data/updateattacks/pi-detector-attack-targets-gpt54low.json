@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "updateattacks/pi-detector-attack-targets-gpt54low",
+  "slug": "updateattacks-pi-detector-attack-targets-gpt54low",
+  "author": "updateattacks",
+  "url": "https://huggingface.co/updateattacks/pi-detector-attack-targets-gpt54low",
+  "created_at": "2026-08-19T18:04:21.000Z",
+  "updated_at": "2026-08-19T18:04:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3458054464,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "updateattacks/pi-detector-attack-targets · Hugging Face",
+      "url": "https://huggingface.co/updateattacks/pi-detector-attack-targets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "updateattacks (updateattacks) - Hugging Face",
+      "url": "https://huggingface.co/updateattacks",
+      "snippet": "Org profile for updateattacks on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - bastion-soft/pi-detector-bench: Open, model-agnostic benchmark ...",
+      "url": "https://github.com/bastion-soft/pi-detector-bench",
+      "snippet": "An open, model-agnostic benchmark for prompt-injection detectors — measured on both axes (attack catch-rate and false positives on real traffic), threshold-agnostically, and reproducible from raw scores. Most prompt-injection benchmarks measure one thing: can a detector spot an attack? That&#x27;s half the story. A detector that flags one in four normal user messages is an outage, not a guardrail ..."
+    },
+    {
+      "title": "jsi3r3k/ai-prompt-attack-detector - GitHub",
+      "url": "https://github.com/jsi3r3k/ai-prompt-attack-detector",
+      "snippet": "PromptShield — AI Prompt Attack Detector PromptShield is an explainable security classifier that detects prompt injection, instruction overrides, jailbreak attempts, phishing intent, safety bypasses, hidden prompt extraction and other suspicious manipulation before untrusted text reaches an AI model."
+    },
+    {
+      "title": "[2607.12624] PVDetector: Detecting Prompt Injection Attacks on Purpose ...",
+      "url": "https://arxiv.org/abs/2607.12624",
+      "snippet": "Such additional restrictions enlarge the attack surface, particularly to prompt injection (PI) attacks. To defend against such attacks, existing detection methods primarily rely on analyzing input-output patterns, yet yield limited effectiveness."
+    }
+  ]
+}

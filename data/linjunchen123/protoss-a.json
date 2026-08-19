@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "LinjunChen123/Protoss-a",
+  "slug": "linjunchen123-protoss-a",
+  "author": "LinjunChen123",
+  "url": "https://huggingface.co/LinjunChen123/Protoss-a",
+  "created_at": "2026-08-19T16:08:26.000Z",
+  "updated_at": "2026-08-19T16:08:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "gpt",
+    "llm",
+    "large language model",
+    "h2o-llmstudio",
+    "conversational",
+    "en",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452607950,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Protoss - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1741441976891255232",
+      "snippet": "Generate stunning anime, mech, scifi, style anime art with the &#x27;Protoss&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "SNUMPR/Protoss-a · Hugging Face",
+      "url": "https://huggingface.co/SNUMPR/Protoss-a",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ProtossAI - v1 PROTOSS - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/767266366915967334",
+      "snippet": "Download ProtossAI - free LORA SD 1.5 AI model on TENSORHUB ART. PROTOSS, FUTURISTIC, SPACE. By FrezeDEF"
+    },
+    {
+      "title": "Protoss｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1741441976891255232",
+      "snippet": "Just created this stunning anime, mech, scifi, style anime art with the amazing &#x27;Protoss&#x27; model on PixAI! Search for \"Protoss\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Protoss - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/3a0e2a0fee0e2769693b09d7c683a5bf",
+      "snippet": "Explore Protoss model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

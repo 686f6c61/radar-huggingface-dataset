@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "voves/Mellum2-12B-A2.5B-Instruct-FP8",
+  "slug": "voves-mellum2-12b-a2-5b-instruct-fp8",
+  "author": "voves",
+  "url": "https://huggingface.co/voves/Mellum2-12B-A2.5B-Instruct-FP8",
+  "created_at": "2026-07-19T15:30:17.000Z",
+  "updated_at": "2026-08-19T14:27:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mellum",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:JetBrains/Mellum2-12B-A2.5B-Instruct",
+    "base_model:quantized:JetBrains/Mellum2-12B-A2.5B-Instruct",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 103,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 12609229544,
+  "storage_human": "12.6 GB",
+  "base_model": "JetBrains/Mellum2-12B-A2.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "voves/Mellum2-12B-A2.5B-Instruct-FP8 · Hugging Face",
+      "url": "https://huggingface.co/voves/Mellum2-12B-A2.5B-Instruct-FP8",
+      "snippet": "Collection including voves/Mellum2-12B-A2.5B-Instruct-FP8 Mellum2 Collection Compressed versions of JetBrains Mellum2•2 items•Updated about 6 hours ago"
+    },
+    {
+      "title": "JetBrains/Mellum2-12B-A2.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mellum2-12B-A2.5B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mellum2-12b-a2.5b-instruct-jetbrains",
+      "snippet": "Overview Mellum2-12B-A2.5B-Instruct is a Mixture-of-Experts instruction-tuned language model built by JetBrains that prioritizes direct, low-latency responses over explicit reasoning traces. The model uses a 64-expert architecture with 8 experts activated per token, 28 layers, 2304 hidden size, and supports a 131,072-token context window using sliding-window (1024) and full attention ..."
+    },
+    {
+      "title": "Mellum2-12B-A2.5B-Instruct.yaml - GitHub",
+      "url": "https://github.com/furyhawk/vllm-recipes/blob/main/models/JetBrains/Mellum2-12B-A2.5B-Instruct.yaml",
+      "snippet": "stable release. Install the nightly wheels until the next tagged release ships. ```bash uv venv uv pip install -U vllm --extra-index-url https://wheels.vllm.ai/nightly ``` Unlike the Thinking checkpoint, Instruct does not emit `<think>` blocks, so no ```bash vllm serve JetBrains/Mellum2-12B-A2.5B-Instruct &#92; vllm serve JetBrains/Mellum2-12B-A2.5B-Instruct &#92; ``` max_tokens=81920, temperature=0.6 ..."
+    },
+    {
+      "title": "JetBrains/Mellum2-12B-A2.5B-Instruct | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/JetBrains/Mellum2-12B-A2.5B-Instruct",
+      "snippet": "JetBrains/ Mellum2-12B-A2.5B-Instruct JetBrains&#x27; instruction-tuned code MoE (12B total / 2.5B active) that answers directly without an externalized chain of thought — low-latency coding and tool use 78.4 EvalPlus, 67.1 MultiPL-E — direct answers, fits on a single GPU"
+    }
+  ]
+}

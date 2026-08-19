@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SergiioB/Nemotron-3.5-Lightning-30B-A3B-GPTQ-INT4-G64-sym",
+  "slug": "sergiiob-nemotron-3-5-lightning-30b-a3b-gptq-int4-g64-sym",
+  "author": "SergiioB",
+  "url": "https://huggingface.co/SergiioB/Nemotron-3.5-Lightning-30B-A3B-GPTQ-INT4-G64-sym",
+  "created_at": "2026-08-13T09:19:30.000Z",
+  "updated_at": "2026-08-19T13:14:12.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "nemotron_h",
+    "nemotron",
+    "gptq",
+    "int4",
+    "xpu",
+    "intel",
+    "arc-pro-b70",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 130,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 18139974484,
+  "storage_human": "18.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SergiioB/Nemotron-3.5-Lightning-30B-A3B-GPTQ-INT4-G64-sym - Hugging Face",
+      "url": "https://huggingface.co/SergiioB/Nemotron-3.5-Lightning-30B-A3B-GPTQ-INT4-G64-sym",
+      "snippet": "Instructions to use SergiioB/Nemotron-3.5-Lightning-30B-A3B-GPTQ-INT4-G64-sym with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Local AppsSettings vLLM How to use SergiioB/Nemotron-3.5-Lightning-30B-A3B-GPTQ-INT4-G64-sym with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "Nemotron-3.5-Lightning-30B-A3B-GPTQ-INT4-G64-sym - Hugging Face",
+      "url": "https://huggingface.co/SergiiioB/Nemotron-3.5-Lightning-30B-A3B-GPTQ-INT4-G64-sym",
+      "snippet": "Nemotron-3.5-Lightning-30B-A3B-GPTQ-INT4-G64-sym ... Copy to bucket new Use this model"
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b",
+      "snippet": "AI models generate responses and outputs based on complex algorithms and machine learning techniques, and those responses or outputs may be inaccurate, harmful, biased or indecent. By testing this model, you assume the risk of any harm caused by any response or output of the model."
+    },
+    {
+      "title": "nvidia / nemotron-3.5-lightning-30b-a3b",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-5-lightning-30b-a3b",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a general purpose reasoning and chat model intended to be used in English and coding languages. Other non-English languages (Spanish, French, German, Italian, Japanese) are also supported. Intended for developers designing AI Agent systems, chatbots, RAG systems, and other AI-powered applications. Also suitable for typical instruction-following tasks."
+    }
+  ]
+}

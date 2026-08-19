@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ALLUCY-Rodent/whisper-small-ko",
+  "slug": "allucy-rodent-whisper-small-ko",
+  "author": "ALLUCY-Rodent",
+  "url": "https://huggingface.co/ALLUCY-Rodent/whisper-small-ko",
+  "created_at": "2026-08-19T14:21:56.000Z",
+  "updated_at": "2026-08-19T14:22:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "whisper",
+    "onnx",
+    "korean",
+    "stt",
+    "automatic-speech-recognition",
+    "ko",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SungBeom/whisper-small-ko · Hugging Face",
+      "url": "https://huggingface.co/SungBeom/whisper-small-ko",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "whisper-small-ko Open-source Korean Speech Recognition Model - Fine ...",
+      "url": "https://model.aibase.com/models/details/1915693352366006274",
+      "snippet": "🚀 whisper-small-ko This model is a fine - tuned version of Whisper Small on the following AI hub dataset. Due to the large size of the dataset, the data was randomly shuffled and divided into 5 parts for training."
+    },
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "whisper-small.ko huggingface.co api & team-lucid whisper-small.ko ...",
+      "url": "https://www.toolify.ai/ai-model/team-lucid-whisper-small-ko",
+      "snippet": "whisper-small.ko is an open source model from GitHub that offers a free installation service, and any user can find whisper-small.ko on GitHub to install. At the same time, huggingface.co provides the effect of whisper-small.ko install, users can directly use whisper-small.ko installed effect in huggingface.co for debugging and trial."
+    }
+  ]
+}

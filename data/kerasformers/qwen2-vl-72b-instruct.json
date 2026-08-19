@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kerasformers/qwen2-vl-72b-instruct",
+  "slug": "kerasformers-qwen2-vl-72b-instruct",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/qwen2-vl-72b-instruct",
+  "created_at": "2026-08-13T00:44:05.000Z",
+  "updated_at": "2026-08-16T01:54:49.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "kerasformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "qwen2_vl",
+    "qwen2-vl",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "pytorch",
+    "jax",
+    "tf",
+    "en",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "base_model:Qwen/Qwen2-VL-72B-Instruct",
+    "base_model:finetune:Qwen/Qwen2-VL-72B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 231,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152478125488,
+  "storage_human": "152.5 GB",
+  "base_model": "Qwen/Qwen2-VL-72B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kerasformers/qwen2-vl-72b-instruct · Hugging Face",
+      "url": "https://huggingface.co/kerasformers/qwen2-vl-72b-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kerasformers/qwen2-vl-72b · Hugging Face",
+      "url": "https://huggingface.co/kerasformers/qwen2-vl-72b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2-VL-72B-Instruct: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen2-vl-72b-instruct-qwen",
+      "snippet": "A: Qwen2-VL-72B is the base pretrained model suitable for fine-tuning; Qwen2-VL-72B-Instruct is instruction-tuned for conversational tasks and direct inference. Use the Instruct variant unless you plan to adapt the model for a custom domain. Q: How long can videos be and what frame rate does the model support?"
+    },
+    {
+      "title": "Qwen2-VL 72B Instruct — Multimodal Vision Language | Mo...",
+      "url": "https://modelslab.com/qwen2-vl-72b-instruct",
+      "snippet": "What makes Qwen2-VL 72B Instruct different from other vision-language models? Qwen2-VL handles arbitrary image resolutions and videos over 20 minutes using dynamic token mapping and M-ROPE positional embeddings. It achieves performance on visual benchmarks like MathVista and DocVQA while supporting 30+ languages."
+    },
+    {
+      "title": "Qwen2-VL - KerasFormers",
+      "url": "https://imvision12.github.io/KerasFormers/qwen2_vl/",
+      "snippet": "Alibaba&#x27;s Qwen2-VL vision-language models, ported to pure Keras 3. A native-resolution ViT consumes images at their own aspect ratio: the processor smart-resizes so both sides are multiples of patch_size * spatial_merge_size, flattens into patches, and reports an image_grid_thw grid. The text decoder uses M-RoPE (multimodal rotary embeddings split across time/height/width)."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "ulamai/Ulam-1-Small",
+  "slug": "ulamai-ulam-1-small",
+  "author": "ulamai",
+  "url": "https://huggingface.co/ulamai/Ulam-1-Small",
+  "created_at": "2026-08-19T12:01:23.000Z",
+  "updated_at": "2026-08-19T13:06:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "math",
+    "reasoning",
+    "conversational",
+    "text-generation-inference",
+    "ulam",
+    "en",
+    "dataset:ulamai/verified-research-reasoning-trajectories",
+    "dataset:ulamai/verified-math-olympiad-trajectories",
+    "base_model:WeiboAI/VibeThinker-3B",
+    "base_model:finetune:WeiboAI/VibeThinker-3B",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183448640,
+  "storage_human": "6.2 GB",
+  "base_model": "WeiboAI/VibeThinker-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Mathematical proof generation",
+      "dataset": "SIMOBench primary itemized audit (126 problems)",
+      "metric": "Itemized proof score (maximum 882)",
+      "value": 667
+    },
+    {
+      "task": "Research mathematical reasoning",
+      "dataset": "ErdosBench external-judge audit (226 items)",
+      "metric": "Weighted grade mean (A/B/C/D/F/M = 4/2.7/1.7/1/0/0)",
+      "value": 2.2871681415929204
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - ulamai/ulamai: UlamAI is an open-source Lean theorem prover ...",
+      "url": "https://github.com/ulamai/ulamai/tree/main",
+      "snippet": "Ulam AI is designed to plug into Codex / Claude Code / Gemini CLI / Ollama and produce machine-checked Lean 4 proofs. Start here: UlamAI Prover Tutorial."
+    },
+    {
+      "title": "GitHub - ulamai/ulamai: UlamAI is an open-source Lean theorem prover ...",
+      "url": "https://github.com/ulamai/ulamai",
+      "snippet": "Lean verification (zero hallucinations: only accepted if Lean checks) Retrieval (premise selection from mathlib / local repos) Search + caching (best-first / beam + transposition table) Ulam AI is designed to plug into Codex / Claude Code / Gemini CLI / Ollama and produce machine-checked Lean 4 proofs. Start here: UlamAI Prover Tutorial."
+    },
+    {
+      "title": "ulamai (ulam.ai) - Hugging Face",
+      "url": "https://huggingface.co/ulamai/models",
+      "snippet": "Org profile for ulam.ai on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "UlamAI Prover: An Open Lean 4 Theorem Prover - Ulam Blog",
+      "url": "https://www.ulam.ai/ulamai-prover",
+      "snippet": "Most capable AI theorem provers are closed systems: proprietary models behind proprietary infrastructure, with results you can read about but can&#x27;t reproduce. UlamAI Prover is different. The entire codebase—search loop, retrieval, repair logic, Lean runner, trace logging—is open-source and available on GitHub. This matters for two reasons."
+    },
+    {
+      "title": "Reasoning Data and Evaluations | Ulam",
+      "url": "https://www.ulam.ai/",
+      "snippet": "Ulam builds research-grade reasoning datasets, human-in-the-loop traces, and private benchmarks and evaluations for frontier AI labs and AI developers."
+    }
+  ]
+}

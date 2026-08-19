@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Justbackup/gemma-4-12B-it-uncensored",
+  "slug": "justbackup-gemma-4-12b-it-uncensored",
+  "author": "Justbackup",
+  "url": "https://huggingface.co/Justbackup/gemma-4-12B-it-uncensored",
+  "created_at": "2026-08-19T16:23:22.000Z",
+  "updated_at": "2026-08-19T16:23:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "abliteration",
+    "uncensored",
+    "gemma-4",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951719188,
+  "storage_human": "24.0 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ishowbackup/gemma-4-12B-it-uncensored · Hugging Face",
+      "url": "https://huggingface.co/Ishowbackup/gemma-4-12B-it-uncensored",
+      "snippet": "Note on the Unified architecture.gemma-4-12B-it is the encoder-free Gemma4Unified model (released 2026-06-03). Its refusal signal concentrates in the upper decoder layers (L15-47), so only the top 70% of layers are abliterated — ablating the near-zero-SNR early layers adds distortion with no refusal benefit."
+    },
+    {
+      "title": "TrevorJS/gemma-4-12B-it-uncensored · Hugging Face",
+      "url": "https://huggingface.co/TrevorJS/gemma-4-12B-it-uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 12B download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/gemma-4-12b/",
+      "snippet": "Download Gemma 4 12B for free. Unified multimodal Gemma model for local coding and reasoning. Gemma 4 12B is Google DeepMind&#x27;s unified open-weight multimodal model designed for efficient local reasoning, coding, and multimodal understanding. Unlike other Gemma 4 models that rely on separate encoders, the 12B Unified model uses an encoder-free architecture that projects raw image patches and ..."
+    },
+    {
+      "title": "Run Gemma 4 Locally: From 4 GB VRAM (E4B) to 31B, Free",
+      "url": "https://locallyuncensored.com/blog/gemma-4-local-guide.html",
+      "snippet": "Google released Gemma 4 in April 2026 and it immediately became one of the most important open-weight model families for local AI. From the tiny E2B that runs on anything to the frontier 31B dense model, Gemma 4 covers every use case. Native tool calling, vision support, 256K context, and an Apache 2.0 license make it the go-to recommendation for new users. This guide covers every Gemma 4 ..."
+    },
+    {
+      "title": "gemma 4 12B it uncensored heretic NVFP4 — ThinkLLM",
+      "url": "https://thinkllm.dev/models/gemma-4-12b-it-uncensored-heretic-nvfp4",
+      "snippet": "A community-modified version of Gemma with censorship filters removed, published by an independent user. It operates with fewer content restrictions than the base model, which means it may respond to prompts that standard Gemma would decline — but also lacks the safety guardrails that come with official releases. Treat it as an experimental, community-driven artifact rather than a production ..."
+    }
+  ]
+}

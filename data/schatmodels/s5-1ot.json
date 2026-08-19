@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "schatmodels/s5.1ot",
+  "slug": "schatmodels-s5-1ot",
+  "author": "schatmodels",
+  "url": "https://huggingface.co/schatmodels/s5.1ot",
+  "created_at": "2026-08-17T15:10:59.000Z",
+  "updated_at": "2026-08-19T17:53:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "llm",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121655599254,
+  "storage_human": "121.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "schatmodels/s5.1tot · Hugging Face",
+      "url": "https://huggingface.co/schatmodels/s5.1tot",
+      "snippet": "schatmodels / s5.1tot like 0 Text Generation llm License:other Model card FilesFiles and versions xet Community Copy to bucket new SAPI-5.1-Tiny-Omni-Turbo Capabilities Inference Contributing License"
+    },
+    {
+      "title": "schatmodels/s5.1 · Hugging Face",
+      "url": "https://huggingface.co/schatmodels/s5.1",
+      "snippet": "schatmodels / s5.1 like 0 Text Generation llm License:other Model card FilesFiles and versions xet Community Copy to bucket new SAPI-5.1 Capabilities Inference Contributing License"
+    },
+    {
+      "title": "GitHub - Damacol/schatmodels-s5no: Run schatmodels/s5no privately via ...",
+      "url": "https://github.com/Damacol/schatmodels-s5no",
+      "snippet": "schatmodels/s5no - Private, Uncensored AI for Real Creators and Devs Run {MODEL} privately with zero tracking. Optimized for developers and creators who demand full control over their AI workflow."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "s5.1mt (未知) — MMLU 50 | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/schatmodels/s5.1mt",
+      "snippet": "s5.1mt is a text generation model developed by schatmodels using a custom license, designed for general language tasks; its parameters and architecture are undisclosed, suitable for research and experimental scenarios."
+    }
+  ]
+}

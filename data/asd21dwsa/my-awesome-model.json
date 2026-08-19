@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD21DWSA/my-awesome-model",
+  "slug": "asd21dwsa-my-awesome-model",
+  "author": "ASD21DWSA",
+  "url": "https://huggingface.co/ASD21DWSA/my-awesome-model",
+  "created_at": "2026-08-19T18:58:53.000Z",
+  "updated_at": "2026-08-19T19:01:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ASD21DWSA/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/ASD21DWSA/MyAwesomeModel-TestRepo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mm-tool/MyAwesomeModel-v1 · Hugging Face",
+      "url": "https://huggingface.co/mm-tool/MyAwesomeModel-v1",
+      "snippet": "The model has demonstrated outstanding performance across various benchmark evaluations, including mathematics, programming, and general logic. Its overall performance is now approaching that of other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "my_awesome_model | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/myawesomemodel/",
+      "snippet": "my_awesome_model is a fine-tuned version of DistilBERT-base-uncased, specifically optimized for text classification tasks. The model demonstrates impressive performance metrics, achieving a training accuracy of 92.95% and a final training loss of 0.0632 after 2 epochs of training."
+    },
+    {
+      "title": "my_awesome_model huggingface.co api & lenguist my_awesome_model github ...",
+      "url": "https://www.toolify.ai/ai-model/lenguist-my-awesome-model",
+      "snippet": "my_awesome_model is an open source model from GitHub that offers a free installation service, and any user can find my_awesome_model on GitHub to install. At the same time, huggingface.co provides the effect of my_awesome_model install, users can directly use my_awesome_model installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "GitHub - open-free-llm-api/awesome-freellm-apis: 134+ free LLM APIs ...",
+      "url": "https://github.com/open-free-llm-api/awesome-freellm-apis",
+      "snippet": "Finding a free LLM API shouldn&#x27;t mean hunting through a dozen GitHub READMEs, signing up for five different platforms, or guessing which models still have a free tier. This repo is a structured, machine-readable directory of every free LLM API — rate limits, context windows, one-click config snippets, and direct API key links. Updated daily. Why this repo + freellm.net: Always up-to-date ..."
+    }
+  ]
+}

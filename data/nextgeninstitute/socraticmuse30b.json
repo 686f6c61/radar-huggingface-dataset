@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "NextGenInstitute/socraticMuse30B",
+  "slug": "nextgeninstitute-socraticmuse30b",
+  "author": "NextGenInstitute",
+  "url": "https://huggingface.co/NextGenInstitute/socraticMuse30B",
+  "created_at": "2026-08-19T14:59:19.000Z",
+  "updated_at": "2026-08-19T14:59:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "socratic-tutoring",
+    "ai-education",
+    "pedagogy",
+    "dpo",
+    "sft",
+    "unsloth",
+    "direct-preference-optimization",
+    "computer-science-education",
+    "text-generation",
+    "conversational",
+    "dataset:NextGenInstitute/socraticDataset1680",
+    "base_model:unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 447423289,
+  "storage_human": "447 MB",
+  "base_model": "unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, with native tool-calling and separate reasoning output."
+    },
+    {
+      "title": "Meta Open Sources Muse Glimmer: A 30B Agentic AI Model",
+      "url": "https://www.opensourceforu.com/2026/08/meta-open-sources-muse-glimmer/",
+      "snippet": "Meta&#x27;s 30B-parameter Muse Glimmer runs offline on a single consumer GPU to execute local coding, function calling, and autonomous agent workflows."
+    },
+    {
+      "title": "Muse Glimmer: Meta&#x27;s 30B Open Agentic AI Model Guide",
+      "url": "https://www.analyticsinsight.net/artificial-intelligence/muse-glimmer-complete-guide-to-metas-open-agentic-ai-model",
+      "snippet": "Muse Glimmer is Meta&#x27;s 29.6B open-weight agentic model with vision, 131K context, tool use, local deployment, strong benchmarks, and DFlash acceleration for faster inference."
+    },
+    {
+      "title": "Meta Open-Sources Muse Glimmer: a 30B Local Agentic Model ... - InfoQ",
+      "url": "https://www.infoq.com/news/2026/08/meta-muse-glimmer/",
+      "snippet": "Meta AI Research has introduced Muse Glimmer, a 30-billion-parameter open-weight model under the Apache 2.0 license, designed for local workflows. It enables autonomous agents and complex task ..."
+    },
+    {
+      "title": "Meta Muse Glimmer Explained: The 30B Open-Weight Agent Model That Runs ...",
+      "url": "https://miraflow.ai/blog/meta-muse-glimmer-30b-open-agentic-model-2026",
+      "snippet": "Meta released Muse Glimmer on August 10, a 30B open-weight agentic model that fits on a single consumer GPU. Here is the architecture, the quantization trick, and the real benchmark numbers."
+    }
+  ]
+}

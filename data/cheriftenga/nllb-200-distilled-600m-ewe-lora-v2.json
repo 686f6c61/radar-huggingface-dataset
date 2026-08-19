@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cheriftenga/nllb-200-distilled-600M-ewe-lora-v2",
+  "slug": "cheriftenga-nllb-200-distilled-600m-ewe-lora-v2",
+  "author": "cheriftenga",
+  "url": "https://huggingface.co/cheriftenga/nllb-200-distilled-600M-ewe-lora-v2",
+  "created_at": "2026-08-19T12:51:14.000Z",
+  "updated_at": "2026-08-19T12:51:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41697909,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cheriftenga/nllb-200-distilled-600M-ewe-lora · Hugging Face",
+      "url": "https://huggingface.co/cheriftenga/nllb-200-distilled-600M-ewe-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "facebook/nllb-200-distilled-600M · Hugging Face",
+      "url": "https://huggingface.co/facebook/nllb-200-distilled-600M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NLLB-200 Distilled 600M Review, Pricing & Alternatives 2026 | AI Indigo",
+      "url": "https://aiindigo.com/tool/nllb-200-distilled-600m",
+      "snippet": "NLLB-200 Distilled 600M is a distilled version of Facebook&#x27;s No Language Left Behind (NLLB) machine translation model, designed to bring high-quality translation capabilities to resource-constrained environments. Released as part of Meta&#x27;s commitment to democratizing AI, this model supports translation across 200 languages, including many low-resource languages that have historically been ..."
+    },
+    {
+      "title": "nllb-200-distilled-600M · Models",
+      "url": "https://www.modelscope.cn/models/facebook/nllb-200-distilled-600M",
+      "snippet": "NLLB-200 This is the model card of NLLB-200&#x27;s distilled 600M variant. Here are the metrics for that particular checkpoint. Information about training algorithms, parameters, fairness constraints or other applied approaches, and features. The exact training algorithm, data and the strategies to handle data imbalances for high and low resource languages that were used to train NLLB-200 is ..."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    }
+  ]
+}

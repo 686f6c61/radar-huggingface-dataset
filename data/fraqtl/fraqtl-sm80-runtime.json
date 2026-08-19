@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fraQtl/fraqtl-sm80-runtime",
+  "slug": "fraqtl-fraqtl-sm80-runtime",
+  "author": "fraQtl",
+  "url": "https://huggingface.co/fraQtl/fraqtl-sm80-runtime",
+  "created_at": "2026-07-02T23:23:23.000Z",
+  "updated_at": "2026-08-19T16:17:09.000Z",
+  "license": "fraqtl-verification",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "fraqtl-kv-sidecar",
+    "kv-cache",
+    "kv-cache-compression",
+    "vllm",
+    "a100",
+    "fraqtl",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 995117182,
+  "storage_human": "995 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · fraQtl/fraqtl-sm80-runtime at main",
+      "url": "https://d6108366.hf-mirror.com/fraQtl/fraqtl-sm80-runtime/blob/main/README.md?code=true",
+      "snippet": "fraQtl / fraqtl-sm80-runtime like 0 Follow fraQtl AI Research 7 kv-cache kv-cache-compression vllm a100 fraqtl License:fraqtl-verification Model card FilesFiles and versions xet Community Copy to bucket new main fraqtl-sm80-runtime /README.md samuel-salfati Fix tilde strikethrough rendering (~ -> ≈) 87bbc79 verified7 days ago preview code | Raw Download with hf CLI Copy download link History ..."
+    },
+    {
+      "title": "fraQtl AI Research - Hugging Face",
+      "url": "https://huggingface.co/fraQtl",
+      "snippet": "KV cache compression, inference optimization, model compression"
+    },
+    {
+      "title": "fraQtl · GitHub",
+      "url": "https://github.com/fraqtl-ai",
+      "snippet": "fraqtl-diagnostic Public Fingerprint any transformer&#x27;s compression potential — γ, k95, depth-law, Shannon bit budget."
+    },
+    {
+      "title": "fraQtl AI Research - Hugging Face",
+      "url": "https://huggingface.co/fraQtl/models",
+      "snippet": "AI & ML interests. KV cache compression, inference optimization, model compression . Recent Activity. Zenalyze updated a model 1 day ago. fraQtl/Mistral-7B-compressed"
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rjz123/colar-r1-cot",
+  "slug": "rjz123-colar-r1-cot",
+  "author": "rjz123",
+  "url": "https://huggingface.co/rjz123/colar-r1-cot",
+  "created_at": "2026-08-19T13:25:12.000Z",
+  "updated_at": "2026-08-19T13:25:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "latent-reasoning",
+    "colar",
+    "research",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69792287,
+  "storage_human": "70 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - xiaomi-research/colar: [NeurIPS 2025] Think Silently, Think ...",
+      "url": "https://github.com/xiaomi-research/colar",
+      "snippet": "Extensive experiments across four mathematical reasoning datasets demonstrate that CoLaR achieves 14.1% higher accuracy than latent-based baseline methods at comparable compression ratios, and reduces reasoning chain length by 53.3% with only 4.8% performance degradation compared to explicit CoT method."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1 · GitHub",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "This approach allows the model to explore chain-of-thought (CoT) for solving complex problems, resulting in the development of DeepSeek-R1-Zero. DeepSeek-R1-Zero demonstrates capabilities such as self-verification, reflection, and generating long CoTs, marking a significant milestone for the research community."
+    },
+    {
+      "title": "Research Jailbreaked OpenAI o1/o3, DeepSeek-R1, & Gemini 2.0 Flash ...",
+      "url": "https://cybersecuritynews.com/research-jailbreaked-llm-models/",
+      "snippet": "A recent study from a team of cybersecurity researchers has revealed severe security flaws in commercial-grade Large Reasoning Models (LRMs), including OpenAI&#x27;s o1/o3 series, DeepSeek-R1, and Google&#x27;s Gemini 2.0 Flash Thinking. The research introduces two key innovations: the Malicious-Educator benchmark for stress-testing AI safety protocols and the Hijacking Chain-of-Thought (H-CoT ..."
+    },
+    {
+      "title": "arXiv:2505.16552v1 [cs.CL] 22 May 2025",
+      "url": "https://arxiv.org/pdf/2505.16552v1",
+      "snippet": "Abstract Large Language Models (LLMs) achieve superior performance through Chain-of-Thought (CoT) reasoning, but these token-level reasoning chains are compu-tationally expensive and inefficient. In this paper, we introduce Compressed La-tent Reasoning (CoLaR), a novel framework that dynamically compresses rea-soning processes in latent space through a two-stage training approach. First ..."
+    },
+    {
+      "title": "Model Configurations | xiaomi-research/colar | DeepWiki",
+      "url": "https://deepwiki.com/xiaomi-research/colar/6.1-model-configurations",
+      "snippet": "This document describes the YAML-based model configuration system in CoLaR, which defines how different model variants (CoLaR, Coconut, CoT, Distill, ICoT) are configured for training and inference. These configurations control model architecture, training parameters, and specialized components for compressed latent reasoning."
+    }
+  ]
+}

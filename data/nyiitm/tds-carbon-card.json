@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nyiitm/tds-carbon-card",
+  "slug": "nyiitm-tds-carbon-card",
+  "author": "nyiitm",
+  "url": "https://huggingface.co/nyiitm/tds-carbon-card",
+  "created_at": "2026-08-19T12:32:01.000Z",
+  "updated_at": "2026-08-19T12:37:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chandrasekhariitm/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/chandrasekhariitm/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA L40S (4 GPUs) Training Mode: fine-tuning Region: europe-north1 GPU Hours: 90.4h (PUE: 1.15) Total Energy: 145.544 kWh CO₂ Emissions: 17.465 kg CO₂eq"
+    },
+    {
+      "title": "shyam1504/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shyam1504/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "GitHub - sanand0/tools-in-data-science-public: Official content for the ...",
+      "url": "https://github.com/sanand0/tools-in-data-science-public",
+      "snippet": "Tools in Data Science is a diploma level data science course at IIT Madras. It bridges the gap between theory and real-world implementation. Specifically: you&#x27;ll learn what tools data scientists actually use and how. It prepares you for AI. AI is rapidly changing how data science works. You&#x27;ll practice using AI to learn, execute, and explain data science tasks. AI will teach you. We give you ..."
+    },
+    {
+      "title": "GitHub - 23f2002790/TDS-Project2: Project 2 in the TDS Sep 2025 term",
+      "url": "https://github.com/23f2002790/TDS-Project2",
+      "snippet": "Project 2 in the TDS Sep 2025 term. Contribute to 23f2002790/TDS-Project2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Top 5 Reranking Models to Improve RAG Results - MachineLearningMastery.com",
+      "url": "https://machinelearningmastery.com/top-5-reranking-models-to-improve-rag-results/",
+      "snippet": "In this article, you will learn how reranking improves the relevance of results in retrieval-augmented generation (RAG) systems by going beyond what retrievers alone can achieve."
+    }
+  ]
+}

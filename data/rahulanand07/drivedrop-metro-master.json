@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "rahulanand07/drivedrop-metro-master",
+  "slug": "rahulanand07-drivedrop-metro-master",
+  "author": "rahulanand07",
+  "url": "https://huggingface.co/rahulanand07/drivedrop-metro-master",
+  "created_at": "2026-08-19T19:01:57.000Z",
+  "updated_at": "2026-08-19T19:07:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "chat",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888901,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Maestro — A one-click AI studio for creators",
+      "url": "https://www.withmaestroai.com/",
+      "snippet": "One-click AI video studio for creators. Maestro pairs a modern UI with a powerful generation backend — and a Director mode that plans music videos and short films from a single prompt. Local LLM, your GPU, your files."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Shop Used Cars on Your Schedule | DriveDrop",
+      "url": "https://drivedrop.io/",
+      "snippet": "Browse thousands of quality used cars from local dealerships. Schedule a test drive, get financing, and buy with confidence."
+    }
+  ]
+}

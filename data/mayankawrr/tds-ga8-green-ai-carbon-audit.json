@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mayankawrr/tds-ga8-green-ai-carbon-audit",
+  "slug": "mayankawrr-tds-ga8-green-ai-carbon-audit",
+  "author": "mayankawrr",
+  "url": "https://huggingface.co/mayankawrr/tds-ga8-green-ai-carbon-audit",
+  "created_at": "2026-08-19T14:45:10.000Z",
+  "updated_at": "2026-08-19T14:45:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "harshit4/tds-ga8-green-ai-audit · Hugging Face",
+      "url": "https://huggingface.co/harshit4/tds-ga8-green-ai-audit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "anshusaurav/tds-ga8-carbon-model · Hugging Face",
+      "url": "https://huggingface.co/anshusaurav/tds-ga8-carbon-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - iitm-mayank16/tds-ga8",
+      "url": "https://github.com/iitm-mayank16/tds-ga8",
+      "snippet": "Contribute to iitm-mayank16/tds-ga8 development by creating an account on GitHub."
+    },
+    {
+      "title": "Carbon-aware AI model reduces data center emissions while keeping ...",
+      "url": "https://www.devdiscourse.com/article/technology/3921976-carbon-aware-ai-model-reduces-data-center-emissions-while-keeping-services-reliable",
+      "snippet": "The study, titled \"Model for Green AI and Sustainable Computing: Energy-Efficient Architectures and Carbon-Aware Deployment in Industrial Systems,\" was published in Computers. It introduces the Hierarchical Clustering Deep Q-Network Carbon-Aware Placement System, or HC-DQNCAPS, a hybrid framework designed to reduce energy consumption, cut carbon emissions, maintain service reliability and ..."
+    },
+    {
+      "title": "Green AI | green-ai - ejhusom.github.io",
+      "url": "https://ejhusom.github.io/green-ai/",
+      "snippet": "Green AI: Exploring Carbon Footprints, Mitigation Strategies, and Trade Offs in Large Language Model Training (Liu et al. 2024) [Paper] A simplified machine learning product carbon footprint evaluation tool (Lang et al.) [Paper] Beyond Efficiency: Scaling AI Sustainably (Wu et al. 2024) [Paper]"
+    }
+  ]
+}

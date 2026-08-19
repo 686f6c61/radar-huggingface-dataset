@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-994ab152-R",
+  "slug": "guillekenzo-aros-994ab152-r",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-994ab152-R",
+  "created_at": "2026-08-19T18:06:00.000Z",
+  "updated_at": "2026-08-19T18:17:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 388310443,
+  "storage_human": "388 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "Image-to-image upscaler using NVIDIA PiD from_clean_flux. guillekenzo May 26. models 153. Sort: Recently updated. guillekenzo/aros-09cc5fd4-MellowDuality"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "guillekenzo/aros-a82d94a1-RadiantZenith · Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/aros-a82d94a1-RadiantZenith",
+      "snippet": "guillekenzo / aros-a82d94a1-RadiantZenith like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI model list and pricing - 2KEN",
+      "url": "https://www.2ken.com/models",
+      "snippet": "Browse the public AI model catalog supported by 2KEN, including GPT, Claude, Gemini, Grok, DeepSeek, Qwen, official pricing, 2KEN pricing, input and output prices ..."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    }
+  ]
+}

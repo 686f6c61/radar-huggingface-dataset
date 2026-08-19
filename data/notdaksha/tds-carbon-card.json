@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "notdaksha/tds-carbon-card",
+  "slug": "notdaksha-tds-carbon-card",
+  "author": "notdaksha",
+  "url": "https://huggingface.co/notdaksha/tds-carbon-card",
+  "created_at": "2026-08-19T15:09:31.000Z",
+  "updated_at": "2026-08-19T15:10:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itsAayush/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/itsAayush/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA L40S (6 GPUs) Training Mode: pre-training Region: asia-south1 GPU Hours: 164.1h (PUE: 1.4) Total Energy: 482.454 kWh CO₂ Emissions: 313.595 kg CO₂eq"
+    },
+    {
+      "title": "Divya-netter/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Divya-netter/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA RTX 4090 (6 GPUs) Training Mode: fine-tuning Region: us-east1 GPU Hours: 388h (PUE: 1.44) Total Energy: 1508.544 kWh CO₂ Emissions: 633.588 kg CO₂eq"
+    },
+    {
+      "title": "Model card - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/model_card",
+      "snippet": "A model card is a short, standardized document that accompanies a trained machine learning model and reports its intended use, training data, evaluation…"
+    },
+    {
+      "title": "GitHub - ivylee/model-cards-and-datasheets: A collection of machine ...",
+      "url": "https://github.com/ivylee/model-cards-and-datasheets",
+      "snippet": "Model Cards for Model Reporting DAG Card is the new Model Card Face Detection, Google Cloud Vision API Object Detection, Google Cloud Vision API Toxicity, Google Conversation AI GPT-2, Open AI GPT-3, Open AI PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models \"The Human Body is a Black Box\": Supporting Clinical Decision-Making with Deep Learning MediaPipe ..."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16",
+  "slug": "sergiiob-qwen3-8-27b-gptq-int4-sym-g128-mtp-bf16",
+  "author": "SergiioB",
+  "url": "https://huggingface.co/SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16",
+  "created_at": "2026-08-15T16:17:53.000Z",
+  "updated_at": "2026-08-19T13:40:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "gptq",
+    "int4",
+    "vllm",
+    "xpu",
+    "intel-arc",
+    "mtp",
+    "gdn",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 3565,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19579439541,
+  "storage_human": "19.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16 · Hugging Face",
+      "url": "https://huggingface.co/SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16",
+      "snippet": "Instructions to use SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen3.8 27B GPTQ Int4 Sym G128 MTP BF16 by SergiioB",
+      "url": "https://llm-explorer.com/model/SergiioB%2FQwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16,40FVrtmbTvz39gObCHIqYX",
+      "snippet": "Qwen3.8 27B GPTQ Int4 Sym G128 MTP BF16 is an open-source 27b LLM by SergiioB. VRAM 19.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "intel-arc-pro-b70-inference-cookbook/docs/qwen38-27/QWEN38 ... - GitHub",
+      "url": "https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook/blob/master/docs/qwen38-27/QWEN38-VLLM-XPU.md",
+      "snippet": "Download the exact preserved-MTP artifact using the Hugging Face CLI. The model repository contains 16 files totaling ~18.2 GiB. We pin to the 9d189a60 revision to ensure exact replication. huggingface-cli download SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16 &#92; --revision ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    }
+  ]
+}

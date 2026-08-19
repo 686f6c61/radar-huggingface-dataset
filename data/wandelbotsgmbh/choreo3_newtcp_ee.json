@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "wandelbotsgmbh/choreo3_newtcp_ee",
+  "slug": "wandelbotsgmbh-choreo3_newtcp_ee",
+  "author": "wandelbotsgmbh",
+  "url": "https://huggingface.co/wandelbotsgmbh/choreo3_newtcp_ee",
+  "created_at": "2026-08-19T19:00:15.000Z",
+  "updated_at": "2026-08-19T19:00:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:wandelbotsgmbh/choreo3_newtcp",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51623559,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206528492,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wandelbotsgmbh/choreo3_finetune1 · Hugging Face",
+      "url": "https://huggingface.co/wandelbotsgmbh/choreo3_finetune1",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "wandelbotsgmbh (Wandelbots GmbH) - Hugging Face",
+      "url": "https://huggingface.co/datasets/wandelbotsgmbh",
+      "snippet": "Org profile for Wandelbots GmbH on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Wandelbots - Software-Defined Automation for Industrial Robots",
+      "url": "https://www.wandelbots.com/",
+      "snippet": "Empower your teams with software-defined automation. Control, scale, and optimize any industrial robot using Wandelbots&#x27; vendor-agnostic robotics platform."
+    },
+    {
+      "title": "Wandelbots GmbH - GitHub",
+      "url": "https://github.com/wandelbotsgmbh",
+      "snippet": "Wandelbots - Everyone can work with robots. Wandelbots GmbH has 32 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "wandelbotsgmbh repositories · GitHub",
+      "url": "https://github.com/orgs/wandelbotsgmbh/repositories",
+      "snippet": "Wandelbots - Everyone can work with robots. Wandelbots GmbH has 31 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

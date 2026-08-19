@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "junhyeog/carlora-toy3b-colab-20260812-sqa-s0-lora_bf16-ckpt",
+  "slug": "junhyeog-carlora-toy3b-colab-20260812-sqa-s0-lora_bf16-ckpt",
+  "author": "junhyeog",
+  "url": "https://huggingface.co/junhyeog/carlora-toy3b-colab-20260812-sqa-s0-lora_bf16-ckpt",
+  "created_at": "2026-08-19T17:57:31.000Z",
+  "updated_at": "2026-08-19T17:57:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48679320,
+  "storage_human": "49 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/",
+      "snippet": "Build real-time language translation tools directly in your notebook."
+    },
+    {
+      "title": "Candydoll - Yuliya Zabihalyuk - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/752877208567131062",
+      "snippet": "Download Candydoll - free LORA SD 1.5 AI model on TENSOR. TWEEN GIRL, CANDYDOLL, WOMAN. By Hani Hebe Bali"
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/github/uYouUs/kohya-colab/blob/main/Lora_Trainer_Anima.ipynb",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "Krea-2-Raw - Hugging Face",
+      "url": "https://huggingface.co/krea/Krea-2-Raw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "snippet": "Discover datasets from various domains with Google&#x27;s Dataset Search tool, designed to help researchers and enthusiasts find relevant data easily."
+    }
+  ]
+}

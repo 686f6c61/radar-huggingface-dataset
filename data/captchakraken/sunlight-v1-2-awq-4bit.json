@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "CaptchaKraken/Sunlight-v1.2-AWQ-4bit",
+  "slug": "captchakraken-sunlight-v1-2-awq-4bit",
+  "author": "CaptchaKraken",
+  "url": "https://huggingface.co/CaptchaKraken/Sunlight-v1.2-AWQ-4bit",
+  "created_at": "2026-08-19T15:44:21.000Z",
+  "updated_at": "2026-08-19T15:54:56.000Z",
+  "license": "captchakraken-source-available-v1.1",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "captcha",
+    "vllm",
+    "computer-vision",
+    "awq",
+    "compressed-tensors",
+    "quantized",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 10990909621,
+  "storage_human": "11.0 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CaptchaKraken/Sunlight-AWQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/CaptchaKraken/Sunlight-AWQ-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CaptchaKraken_v1 - Hugging Face",
+      "url": "https://huggingface.co/CaptchaKraken/CaptchaKraken_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sunlight-AWQ-4bit API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/CaptchaKraken/Sunlight-AWQ-4bit",
+      "snippet": "Deploy Sunlight-AWQ-4bit with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "JWriter20/CaptchaKraken: CaptchaKraken - GitHub",
+      "url": "https://github.com/JWriter20/CaptchaKraken",
+      "snippet": "A self-hosted captcha solver for browser automation. Give it a page — it finds the captcha, reads the puzzle with a fine-tuned Qwen3.5-9B vision model, and clicks through to a token. Everything runs on your hardware. No third-party solving service. ⭐ Enjoying CaptchaKraken? Star & watch the repo for new puzzle types, smaller models, and the hosted cloud API. One repo, two published ports ..."
+    },
+    {
+      "title": "CaptchaKraken/setup.sh at main · JWriter20/CaptchaKraken",
+      "url": "https://github.com/JWriter20/CaptchaKraken/blob/main/setup.sh",
+      "snippet": "CaptchaKraken — self-hosted captcha solver. Monorepo: TypeScript browser driver (npm: captchakraken) + Python engine (PyPI: captchakraken). - JWriter20/CaptchaKraken"
+    }
+  ]
+}

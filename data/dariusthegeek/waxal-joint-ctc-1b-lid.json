@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "DariusTheGeek/waxal-joint-ctc-1b-lid",
+  "slug": "dariusthegeek-waxal-joint-ctc-1b-lid",
+  "author": "DariusTheGeek",
+  "url": "https://huggingface.co/DariusTheGeek/waxal-joint-ctc-1b-lid",
+  "created_at": "2026-08-18T21:58:08.000Z",
+  "updated_at": "2026-08-19T18:54:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "fairseq2",
+  "languages": [
+    "ln",
+    "sn"
+  ],
+  "tags": [
+    "fairseq2",
+    "joblib",
+    "automatic-speech-recognition",
+    "omnilingual-asr",
+    "lingala",
+    "shona",
+    "waxal",
+    "zindi",
+    "ln",
+    "sn",
+    "dataset:google/WaxalNLP",
+    "base_model:facebook/omniASR-CTC-1B",
+    "base_model:finetune:facebook/omniASR-CTC-1B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3905026828,
+  "storage_human": "3.9 GB",
+  "base_model": "facebook/omniASR-CTC-1B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "WaxalNLP held-out validation split (pooled Lingala + Shona)",
+      "metric": "CER",
+      "value": 0.0885
+    },
+    {
+      "task": null,
+      "dataset": "WaxalNLP held-out validation split (pooled Lingala + Shona)",
+      "metric": "WER",
+      "value": 0.328
+    }
+  ],
+  "sources": [
+    {
+      "title": "DariusTheGeek/waxal-joint-ctc-1b-lid · Hugging Face",
+      "url": "https://huggingface.co/DariusTheGeek/waxal-joint-ctc-1b-lid",
+      "snippet": "waxal-joint-ctc-1b-lid Joint Lingala + Shona OmniASR CTC-1B, fine-tuned without any language tag, paired with the text language-identification classifier used to route its output. This is the entry point of the WAXAL ASR solution."
+    },
+    {
+      "title": "Introducing WAXAL: A New Open Dataset for African Speech Technology",
+      "url": "https://blog.google/intl/en-africa/company-news/outreach-and-initiatives/introducing-waxal-a-new-open-dataset-for-african-speech-technology/",
+      "snippet": "Google is announcing WAXAL, a new large-scale and openly accessible speech dataset for 21 Sub-Saharan African languages, designed to catalyze research and enable inclusive technologies."
+    },
+    {
+      "title": "DariusTheGeek/waxal-lin-omniasr-llm-1b · Hugging Face",
+      "url": "https://huggingface.co/DariusTheGeek/waxal-lin-omniasr-llm-1b",
+      "snippet": "waxal-lin-omniasr-llm-1b OmniASR LLM-1B v2, fine-tuned for Lingala as part of the WAXAL ASR solution. Released artifact: top-3 uniform FP64 parameter average. Decoded with beam 5, length_norm=True. Files"
+    },
+    {
+      "title": "WAXAL: A Large-Scale Multilingual African Language Speech Corpus",
+      "url": "https://arxiv.org/html/2602.02734v3",
+      "snippet": "The WAXAL dataset represents a significant step toward addressing the resource scarcity that has hindered the development of speech technologies for Sub-Saharan African languages."
+    },
+    {
+      "title": "GitHub - facebookresearch/omnilingual-asr: Omnilingual ASR Open-Source ...",
+      "url": "https://github.com/facebookresearch/omnilingual-asr",
+      "snippet": "Omnilingual ASR is an open-source speech recognition system supporting over 1,600 languages — including hundreds never previously covered by any ASR technology. Designed for broad accessibility, it enables new languages to be added with just a few paired examples without requiring specialized expertise or large datasets. By combining scalable zero-shot learning with a flexible model family ..."
+    }
+  ]
+}

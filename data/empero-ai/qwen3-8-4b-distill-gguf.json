@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "empero-ai/Qwen3.8-4B-Distill-GGUF",
+  "slug": "empero-ai-qwen3-8-4b-distill-gguf",
+  "author": "empero-ai",
+  "url": "https://huggingface.co/empero-ai/Qwen3.8-4B-Distill-GGUF",
+  "created_at": "2026-08-15T18:08:45.000Z",
+  "updated_at": "2026-08-16T01:00:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "gated-deltanet",
+    "text-generation",
+    "en",
+    "base_model:empero-ai/Qwen3.8-4B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-4B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 41,
+  "downloads_30d": 19805,
+  "trending_score": 40,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 22784098720,
+  "storage_human": "22.8 GB",
+  "base_model": "empero-ai/Qwen3.8-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "empero-ai/Qwen3.8-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-4B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. Latest: Qwen3.8 distilled to 9B / 4B / 2B, and a GDN-aware 27B Ridge GGUF at 11.7 GiB. 1M+ downloads on Hugging Face."
+    },
+    {
+      "title": "empero-ai (Empero) - Hugging Face",
+      "url": "https://huggingface.co/empero-ai",
+      "snippet": "empero-ai/Qwythos-27B-v1-GGUF A collection of our uncensored Qwen Claude Mythos fine tunes empero-ai/Qwythos-9B-v2 empero-ai/Qwythos-9B-v2-GGUF View 7 collections"
+    },
+    {
+      "title": "GitHub - 47thtechcorner/RayCodes_Qwen3.8Distilled: Qwen 3.8 2B, 4B & 9B ...",
+      "url": "https://github.com/47thtechcorner/RayCodes_Qwen3.8Distilled",
+      "snippet": "The Teacher Model (Qwen3.8-2.4T): A massive AI running on multi-million dollar data centers. It generates step-by-step reasoning solutions (\"Chain of Thought\"). The Student Models (9B / 4B / 2B): Smaller models trained directly on the teacher&#x27;s exact reasoning traces."
+    },
+    {
+      "title": "Qwen3.8 4B Distilled GGUF by Ma7ee7 — VRAM 2.5GB, 256K context | LLM ...",
+      "url": "https://llm-explorer.com/model/Ma7ee7%2FQwen3.8_4B_Distilled_GGUF,2RAokxVG11JKnGhnMkwkIs",
+      "snippet": "Qwen3.8 4B Distilled GGUF is an open-source 4b LLM by Ma7ee7. VRAM 2.5GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

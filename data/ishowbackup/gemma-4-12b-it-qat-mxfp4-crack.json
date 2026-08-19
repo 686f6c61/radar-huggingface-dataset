@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Ishowbackup/Gemma-4-12B-it-qat-MXFP4-CRACK",
+  "slug": "ishowbackup-gemma-4-12b-it-qat-mxfp4-crack",
+  "author": "Ishowbackup",
+  "url": "https://huggingface.co/Ishowbackup/Gemma-4-12B-it-qat-MXFP4-CRACK",
+  "created_at": "2026-08-15T23:15:59.000Z",
+  "updated_at": "2026-08-15T23:15:59.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4_unified",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "gemma4",
+    "mxfp4",
+    "image-text-to-text",
+    "conversational",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 2762899504,
+  "parameters_human": "2.76B",
+  "storage_bytes": 7942459328,
+  "storage_human": "7.9 GB",
+  "base_model": "google/gemma-4-12b-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ishowbackup/gemma-4-12B-it-uncensored-GGUF · Discussions",
+      "url": "https://huggingface.co/Ishowbackup/gemma-4-12B-it-uncensored-GGUF/discussions",
+      "snippet": "Instructions to use Ishowbackup/gemma-4-12B-it-uncensored-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gemma 4 Jailbreak: Guide to Unfiltered AI Performance 2026",
+      "url": "https://www.gemma4.wiki/install/gemma-4-jailbreak",
+      "snippet": "Learn how to access the Gemma 4 jailbreak, run abliterated models locally, and bypass safety filters for advanced research and coding."
+    },
+    {
+      "title": "Gemma 4 12b It - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-12b-it.html",
+      "snippet": "Download Gemma 4 12b It GGUF model. 0 B, 836,531 downloads, 566 likes."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 12B - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/gemma-4-12b/",
+      "snippet": "Gemma 4 is Google DeepMind&#x27;s open-weight model family built from Gemini 3 research, focused on high intelligence-per-parameter, agentic workflows, multimodal reasoning, multilingual use, coding, and efficient local deployment."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/allpass1-quality-gold",
+  "slug": "jjjlimaus-allpass1-quality-gold",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/allpass1-quality-gold",
+  "created_at": "2026-08-19T16:10:22.000Z",
+  "updated_at": "2026-08-19T16:12:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sn38-nanoexpand",
+    "text-generation",
+    "bittensor",
+    "sn38",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2198342018,
+  "parameters_human": "2.20B",
+  "storage_bytes": 4396708908,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Aggregator for Claude, GPT & Gemini | OneAIPass",
+      "url": "https://oneaipass.com/",
+      "snippet": "The AI model aggregator with every top AI and one balance. Use Claude for writing, GPT for code, Gemini for research, or a free model for everyday questions. Switch with every message and pay only when you use a premium model."
+    },
+    {
+      "title": "Goldie Bench — every AI model, every task, ranked",
+      "url": "https://goldiebench.com/",
+      "snippet": "The Goldie AI Model Leaderboard — every model, every task, every demo, ranked. 1190 live demos across 50 tasks and 30 models."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Leaderboard 2026 - Best AI Image, Video & Audio Rankings",
+      "url": "https://www.jaiportal.com/leaderboard",
+      "snippet": "AI Model Leaderboard Compare and rank the best AI image, video & audio models by ELO rating. Real-time community rankings across text-to-image, image editing, text-to-video, image-to-video, text-to-speech and music generation."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

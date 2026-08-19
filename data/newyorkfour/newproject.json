@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "NewYorkFour/NewProject",
+  "slug": "newyorkfour-newproject",
+  "author": "NewYorkFour",
+  "url": "https://huggingface.co/NewYorkFour/NewProject",
+  "created_at": "2026-08-19T15:33:26.000Z",
+  "updated_at": "2026-08-19T15:33:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Mystery AI model revealed to be Xiaomi&#x27;s following suspicions it was ...",
+      "url": "https://www.reuters.com/business/media-telecom/mystery-ai-model-has-developers-buzzing-is-this-deepseeks-latest-blockbuster-2026-03-18/",
+      "snippet": "The mysterious free model surfaced on an AI gateway platform on March 11."
+    },
+    {
+      "title": "OpenAI Says Its A.I. Models Hacked Into Hugging Face, a Digital Library ...",
+      "url": "https://www.nytimes.com/2026/07/21/technology/openai-attack-hugging-face.html",
+      "snippet": "The intrusion into Hugging Face began when OpenAI tested a combination of two of its models, GPT‑5.6 Sol and a more powerful, unreleased model, to see how well the models could chain together ..."
+    },
+    {
+      "title": "Researchers let AI models run a simulated society. Claude was the ...",
+      "url": "https://fortune.com/2026/05/28/ai-model-simulation-claude-chatgpt-grok-gemini/",
+      "snippet": "An AI startup ran five simulations, each controlled by a different model. The results varied wildly."
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    }
+  ]
+}

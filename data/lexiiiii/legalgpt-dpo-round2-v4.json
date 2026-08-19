@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Lexiiiii/legalgpt-dpo-round2-v4",
+  "slug": "lexiiiii-legalgpt-dpo-round2-v4",
+  "author": "Lexiiiii",
+  "url": "https://huggingface.co/Lexiiiii/legalgpt-dpo-round2-v4",
+  "created_at": "2026-08-19T14:28:56.000Z",
+  "updated_at": "2026-08-19T14:29:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "legalgpt",
+    "lora",
+    "legal-consultation",
+    "qwen",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21529176,
+  "storage_human": "22 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Terry-ferns13/LegalGPT: LegalGPT is a fully localized AI ...",
+      "url": "https://github.com/Terry-ferns13/LegalGPT",
+      "snippet": "LegalGPT is a fully localized AI chatbot that enables law firms to search and query their confidential legal documents using natural language—without sending any data to the cloud. Built with Retrieval-Augmented Generation (RAG), it runs entirely on your infrastructure, ensuring complete data sovereignty and attorney-client privilege compliance."
+    },
+    {
+      "title": "TheLawGPT - AI Legal Chatbot | Legal Research & Document Generation",
+      "url": "https://www.thelawgpt.com/",
+      "snippet": "TheLawGPT is your AI legal assistant. Research laws and generate administrative documents. Legal chatbot for individuals."
+    },
+    {
+      "title": "LegesGPT - AI Legal Assistant Platform",
+      "url": "https://www.legesgpt.com/",
+      "snippet": "LegesGPT is an AI legal assistant that helps with legal research, document analysis, and legal queries. It uses advanced machine learning algorithms trained on legal data to provide accurate and relevant legal information tailored to your specific needs."
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "GPT‑4‑assisted safety research GPT‑4&#x27;s advanced reasoning and instruction-following capabilities expedited our safety work. We used GPT‑4 to help create training data for model fine-tuning and iterate on classifiers across training, evaluations, and monitoring."
+    },
+    {
+      "title": "GitHub - opdenheimer/Legal-GPT: LegalGPT is an AI-powered multi-agent ...",
+      "url": "https://github.com/opdenheimer/Legal-GPT",
+      "snippet": "LegalGPT is an AI-powered multi-agent legal assistant built using the CrewAI framework. It automates the process of transforming a user&#x27;s plain English legal query into a structured legal document."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "RenDeniz/emotion-detective-v2",
+  "slug": "rendeniz-emotion-detective-v2",
+  "author": "RenDeniz",
+  "url": "https://huggingface.co/RenDeniz/emotion-detective-v2",
+  "created_at": "2026-08-19T15:32:52.000Z",
+  "updated_at": "2026-08-19T15:38:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66975004,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267912544,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-course/ml_project/emotion_detection_v2.py at main - GitHub",
+      "url": "https://github.com/veershah-sh/ai-course/blob/main/ml_project/emotion_detection_v2.py",
+      "snippet": "git_commands.txt ai-course / ml_project / emotion_detection_v2.py Cannot retrieve latest commit at this time."
+    },
+    {
+      "title": "iimran/EmotionDetection · Hugging Face",
+      "url": "https://huggingface.co/iimran/EmotionDetection",
+      "snippet": "This repository hosts a fine-tuned emotion detection model built on BERT-base-cased. The model is trained on the ma2za/many_emotions dataset to classify text into one of seven emotion categories: anger, fear, joy, love, sadness, surprise, and neutral. The model is available in both PyTorch and ONNX formats for efficient deployment."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "Emotion Detection Model - GitHub",
+      "url": "https://github.com/ahontoria/Emotion-Detection-Model",
+      "snippet": "This project develops an AI model capable of detecting underlying emotions in user-provided text. The model classifies text into predefined emotional categories such as happiness, sadness, anger, surprise, etc., and can be trained in either Spanish or English using various machine learning models."
+    }
+  ]
+}

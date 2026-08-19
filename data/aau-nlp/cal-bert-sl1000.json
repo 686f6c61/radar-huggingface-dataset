@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "AAU-NLP/Cal-BERT-SL1000",
+  "slug": "aau-nlp-cal-bert-sl1000",
+  "author": "AAU-NLP",
+  "url": "https://huggingface.co/AAU-NLP/Cal-BERT-SL1000",
+  "created_at": "2025-02-19T09:46:01.000Z",
+  "updated_at": "2026-08-19T14:48:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "financial NLP",
+    "named entity recognition",
+    "sequence labeling",
+    "structured extraction",
+    "hierarchical taxonomy",
+    "XBRL",
+    "iXBRL",
+    "SEC filings",
+    "financial-information-extraction",
+    "en",
+    "dataset:AAU-NLP/HiFi-KPI",
+    "arxiv:2502.15411",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 109661417,
+  "parameters_human": "109.7M",
+  "storage_bytes": 438669020,
+  "storage_human": "439 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AAU-NLP/Cal-BERT-SL1000 · Hugging Face",
+      "url": "https://huggingface.co/AAU-NLP/Cal-BERT-SL1000",
+      "snippet": "Cal-BERT-SL1000 Model Description Cal-BERT-SL1000 is a BERT-based sequence labeling model fine-tuned on the HiFi-KPI dataset for extracting financial key performance indicators (KPIs) from SEC earnings filings (10-K & 10-Q). It specializes in identifying entities, such as revenue, earnings, etc."
+    },
+    {
+      "title": "AAU-NLP/Cal-FLANG-BERT-SL1000 · Hugging Face",
+      "url": "https://huggingface.co/AAU-NLP/Cal-FLANG-BERT-SL1000",
+      "snippet": "AAU-NLP / Cal-FLANG-BERT-SL1000 like 0 Follow AAU-NLP 10 Safetensors bert Model card FilesFiles and versions xet Community 1 Copy to bucket new No model card Downloads last month 2 Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Effective Performance Measurement: Challenges and Opportunities in KPI ...",
+      "url": "https://arxiv.org/pdf/2605.03147",
+      "snippet": "BERT-based financial KPI extraction models func-tion well for SEC filings, as they are standardized by strict auditing and close to devoid of cultural variation. However, they fail to generalize to the subjective and promotional language used in earn-ings calls, posing challenges for current NLP meth-ods."
+    },
+    {
+      "title": "Bytez - open source AI",
+      "url": "https://bytez.com/model/AAU-NLP/Cal-BERT-SL1000",
+      "snippet": "Keep up with AI. Discover, demo, and deploy open source models"
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    }
+  ]
+}

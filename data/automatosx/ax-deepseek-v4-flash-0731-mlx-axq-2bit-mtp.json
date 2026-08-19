@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-2bit-MTP",
+  "slug": "automatosx-ax-deepseek-v4-flash-0731-mlx-axq-2bit-mtp",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-2bit-MTP",
+  "created_at": "2026-08-15T22:05:37.000Z",
+  "updated_at": "2026-08-19T15:54:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v4",
+    "apple-silicon",
+    "quantized",
+    "mixed-precision",
+    "axquant",
+    "axq",
+    "development",
+    "deepseek",
+    "deepseek-v4",
+    "experimental",
+    "text-generation",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 554,
+  "trending_score": 0,
+  "parameters": 37667336279,
+  "parameters_human": "37.67B",
+  "storage_bytes": 122340101959,
+  "storage_human": "122.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AX-DeepSeek-V4-Flash-MLX-AXQ-2bit - Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-2bit",
+      "snippet": "Instructions to use AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-2bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-2bit with MLX:"
+    },
+    {
+      "title": "AX-DeepSeek-V4-Flash-0731-MLX-AXQ-3bit - Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-3bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V4: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/deepseek-v4",
+      "snippet": "Search and download DeepSeek-V4-Flash Go to Unsloth Chat or Model hub and search for DeepSeek-V4-Flash in the search bar and download your desired model and quant."
+    },
+    {
+      "title": "GitHub - antirez/ds4: DeepSeek 4 Flash and PRO local inference engine ...",
+      "url": "https://github.com/antirez/ds4",
+      "snippet": "Capable open-weight models now fit on high-end personal machines. DeepSeek V4 Flash and PRO, GLM 5.2, tolerate aggressive routed-expert quantization. Compressed KV caches and fast local SSDs make long contexts practical. The idea of an inference system specialized for a few models."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 DSpark on 2x DGX Spark - GitHub",
+      "url": "https://github.com/MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark",
+      "snippet": "DeepSeek-v4-Flash 0731 recipe for 2x DGX Sparks. Contribute to MiaAI-Lab/DeepSeek-v4-Flash-DSpark-2x-DGX-Spark development by creating an account on GitHub."
+    }
+  ]
+}

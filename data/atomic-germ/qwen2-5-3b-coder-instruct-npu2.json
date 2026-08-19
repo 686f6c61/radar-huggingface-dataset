@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen2.5-3B-Coder-Instruct-NPU2",
+  "slug": "atomic-germ-qwen2-5-3b-coder-instruct-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen2.5-3B-Coder-Instruct-NPU2",
+  "created_at": "2026-08-06T23:10:53.000Z",
+  "updated_at": "2026-08-19T18:34:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "qwen2_5_vl",
+    "qwen2.5",
+    "coder",
+    "coding",
+    "fastflowlm",
+    "q4nx",
+    "npu",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-3B",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1269,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5173623904,
+  "storage_human": "5.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-3B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Qwen2.5-3B-Coder-Instruct-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen2.5-3B-Coder-Instruct-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Atomic-Germ/Qwen2.5-3B-Coder-Instruct-NPU2 at main",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen2.5-3B-Coder-Instruct-NPU2/tree/main",
+      "snippet": "Instructions to use Atomic-Germ/Qwen2.5-3B-Coder-Instruct-NPU2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - huggingface/Qwen2.5-Coder: Qwen2.5-Coder is the code version ...",
+      "url": "https://github.com/huggingface/Qwen2.5-Coder",
+      "snippet": "👉🏻 Chat with Qwen2.5-Coder-32B-Instruct You can just write several lines of code with transformers to chat with Qwen2.5-Coder-32B-Instruct. Essentially, we build the tokenizer and the model with from_pretrained method, and we use generate method to perform chatting with the help of chat template provided by the tokenizer."
+    },
+    {
+      "title": "qwen2.5-coder:3b-instruct/model - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5-coder:3b-instruct/blobs/4a188102020e",
+      "snippet": "The latest series of Code-Specific Qwen models, with significant improvements in code generation, code reasoning, and code fixing."
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v3",
+      "snippet": "Additionally, our Qwen-2.5-Coder-32B-Instruct model achieved an accuracy of 31.4%, surpassing all open-source code generation models and reaching a level comparable to many closed-source APIs."
+    }
+  ]
+}

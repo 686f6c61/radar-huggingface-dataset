@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "barathrds86/carbon-audit-24ds2000086",
+  "slug": "barathrds86-carbon-audit-24ds2000086",
+  "author": "barathrds86",
+  "url": "https://huggingface.co/barathrds86/carbon-audit-24ds2000086",
+  "created_at": "2026-08-19T14:59:00.000Z",
+  "updated_at": "2026-08-19T15:01:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HARTFORD INSURANCE GROUP, INC. —Annual Report 2024",
+      "url": "https://financialfilings.com/filings/hartford-insurance-group-inc/annual-report/2025/9834055/",
+      "snippet": "Access the 2024 Annual Report content for HARTFORD INSURANCE GROUP, INC.. View the original document or AI-processed analysis."
+    },
+    {
+      "title": "ga04/config.py at main · barathraju1020/ga04 · GitHub",
+      "url": "https://github.com/barathraju1020/ga04/blob/main/config.py",
+      "snippet": "Contribute to barathraju1020/ga04 development by creating an account on GitHub."
+    },
+    {
+      "title": "Carbon Audit - carbonaudit.io",
+      "url": "https://carbonaudit.io/",
+      "snippet": "Your Carbon Reporting Deadline Won&#x27;t Wait. Join organisations across India, the UK, and the EU who are already building audit-ready carbon programmes with CarbonLedger."
+    },
+    {
+      "title": "Energyland - Energy Audit and Carbon Audit - EMSD",
+      "url": "https://www.emsd.gov.hk/energyland/en/audit/index.html",
+      "snippet": "ENERGY AUDIT AND CARBON AUDIT Energy Audits What is Energy Audit? Energy audit is a regular review of the usage of energy in a building to increase effectiveness of energy. The auditors examines the energy account of energy consuming equipment, checks the way energy is used in its various components and identifies savings opportunities. An energy audit process typically includes: Analysis and ..."
+    },
+    {
+      "title": "nihan-98716/carbon_auditing: CASIE AI - GitHub",
+      "url": "https://github.com/nihan-98716/carbon_auditing",
+      "snippet": "CASIE AI - Carbon Auditing System for Industrial Emissions An automated GHG accounting platform that uses AI, OCR, and NLP technologies to process invoices and operational documents, extract emissions data, calculate carbon footprints using GHG Protocol standards, and generate ISO 14064-compliant audit reports. Features include document processing, BERT-based data extraction, emissions ..."
+    }
+  ]
+}

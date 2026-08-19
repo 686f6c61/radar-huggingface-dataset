@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shivainlabs/tds-carbon-card",
+  "slug": "shivainlabs-tds-carbon-card",
+  "author": "shivainlabs",
+  "url": "https://huggingface.co/shivainlabs/tds-carbon-card",
+  "created_at": "2026-08-19T14:45:17.000Z",
+  "updated_at": "2026-08-19T14:48:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shyam1504/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/shyam1504/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "chandrasekhariitm/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/chandrasekhariitm/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA L40S (4 GPUs) Training Mode: fine-tuning Region: europe-north1 GPU Hours: 90.4h (PUE: 1.15) Total Energy: 145.544 kWh CO₂ Emissions: 17.465 kg CO₂eq"
+    },
+    {
+      "title": "shivainlabs · GitHub",
+      "url": "https://github.com/shivainlabs",
+      "snippet": "Add an optional note: Please don&#x27;t include any personal information such as legal names or email addresses. Maximum 250 characters, markdown supported. This note will be visible to only you. Block user"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    },
+    {
+      "title": "Applied Model Card - Applied Model Card | CHAI",
+      "url": "https://www.chai.org/workgroup/applied-model",
+      "snippet": "Applied Model Card documentation, templates, and examples now live on the CHAI Registry. Visit the Registry for the latest resources, a completed example, and guidance on adopting model cards in your organization."
+    }
+  ]
+}

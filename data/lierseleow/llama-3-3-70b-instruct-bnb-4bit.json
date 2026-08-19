@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lierseleow/Llama-3.3-70B-Instruct-bnb-4bit",
+  "slug": "lierseleow-llama-3-3-70b-instruct-bnb-4bit",
+  "author": "lierseleow",
+  "url": "https://huggingface.co/lierseleow/Llama-3.3-70B-Instruct-bnb-4bit",
+  "created_at": "2026-08-19T13:14:40.000Z",
+  "updated_at": "2026-08-19T13:29:45.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "base_model:meta-llama/Llama-3.3-70B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.3-70B-Instruct",
+    "license:llama3.3",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 39535454535,
+  "storage_human": "39.5 GB",
+  "base_model": "meta-llama/Llama-3.3-70B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-3.3-70B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Llama-3.3-70B-Instruct-bnb-4bit · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Llama-3.3-70B-Instruct-bnb-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Meta Llama 3.3 70B Instruct - Meta | Model Documentation - langmart.ai",
+      "url": "https://langmart.ai/model-docs/models/meta-llama_llama-3.3-70b-instruct.html",
+      "snippet": "Llama 3.3 70B Instruct is a pretrained and instruction-tuned generative model optimized for multilingual dialogue use cases. It outperforms many available open source and closed chat models on common ..."
+    },
+    {
+      "title": "llama-3.3-70b-instruct Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/llama-3_3-70b-instruct/modelcard",
+      "snippet": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction-tuned text-only model is optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models on common industry benchmarks."
+    },
+    {
+      "title": "Llama-3.3-70B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/llama-33-70b-instruct-meta-llama",
+      "snippet": "Overview Llama-3.3-70B-Instruct is a 70-billion parameter multilingual language model developed by meta-llama and released December 6, 2024. This instruction-tuned transformer uses supervised fine-tuning and reinforcement learning from human feedback to optimize for dialogue and helpful, safe responses across eight languages: English, German, French, Italian, Portuguese, Hindi, Spanish, and ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DariusTheGeek/waxal-lin-omniasr-llm-1b",
+  "slug": "dariusthegeek-waxal-lin-omniasr-llm-1b",
+  "author": "DariusTheGeek",
+  "url": "https://huggingface.co/DariusTheGeek/waxal-lin-omniasr-llm-1b",
+  "created_at": "2026-08-18T22:25:00.000Z",
+  "updated_at": "2026-08-19T18:54:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "fairseq2",
+  "languages": [
+    "ln"
+  ],
+  "tags": [
+    "fairseq2",
+    "automatic-speech-recognition",
+    "omnilingual-asr",
+    "lingala",
+    "waxal",
+    "zindi",
+    "ln",
+    "dataset:google/WaxalNLP",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9118772004,
+  "storage_human": "9.1 GB",
+  "base_model": "facebook/omniASR-LLM-1B-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DariusTheGeek/waxal-lin-omniasr-llm-1b · Hugging Face",
+      "url": "https://huggingface.co/DariusTheGeek/waxal-lin-omniasr-llm-1b",
+      "snippet": "waxal-lin-omniasr-llm-1b OmniASR LLM-1B v2, fine-tuned for Lingala as part of the WAXAL ASR solution. Released artifact: top-3 uniform FP64 parameter average. Decoded with beam 5, length_norm=True. Files ... Total weights: 9,118,680,523 bytes (9.12 GB). Role in the pipeline Member of the 4-way conservative word ROVER on the Lingala lane."
+    },
+    {
+      "title": "mlai-dante/waxal-omniASR-LLM-1B-v2 · Hugging Face",
+      "url": "https://huggingface.co/mlai-dante/waxal-omniASR-LLM-1B-v2",
+      "snippet": "Fine-tuned omniASR_LLM_1B_v2 for the Google WAXAL ASR Challenge on Lingala (lin_Latn), Luganda (lug_Latn), and Shona (sna_Latn). See run_config.json for the exact reproducible configuration and seed."
+    },
+    {
+      "title": "CanIRun.ai — Can your machine run AI models?",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your hardware and find out which AI models you can run locally. GPU, CPU, and RAM analysis in your browser."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Small llm model within 100M to 1B parameter : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/15v9gdc/small_llm_model_within_100m_to_1b_parameter/",
+      "snippet": "Hello everyone, I&#x27;m currently working on a small project involving a language model (LLM) applied to my own documents. Presently, I&#x27;m using bge-base embedding, ChromaDB, and an OpenAI LLM. However, I&#x27;m looking to replace the OpenAI model with a smaller open-source LLM that can effectively utilize context from a vector database to generate accurate responses. I&#x27;ve already executed llama.cpp ..."
+    }
+  ]
+}

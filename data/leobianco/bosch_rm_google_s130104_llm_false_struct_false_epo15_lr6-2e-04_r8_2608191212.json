@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "leobianco/bosch_RM_google_S130104_LLM_false_STRUCT_false_epo15_lr6.2e-04_r8_2608191212",
+  "slug": "leobianco-bosch_rm_google_s130104_llm_false_struct_false_epo15_lr6-2e-04_r8_2608191212",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/bosch_RM_google_S130104_LLM_false_STRUCT_false_epo15_lr6.2e-04_r8_2608191212",
+  "created_at": "2026-08-19T12:13:09.000Z",
+  "updated_at": "2026-08-19T12:37:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "lora",
+    "transformers",
+    "base_model:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150948613,
+  "storage_human": "151 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leobianco (Leonardo Martins bianco) - Hugging Face",
+      "url": "https://huggingface.co/leobianco",
+      "snippet": "leobianco/bosch_RM_seed_130104_SYN_HALL_LLM_true_epochs_2_lr_2e-5_lora_2 Updated 9 days ago Expand 127 models"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "leobianco (Leonardo Martins bianco) - Hugging Face",
+      "url": "https://huggingface.co/leobianco/datasets",
+      "snippet": "User profile of Leonardo Martins bianco on Hugging Face"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    }
+  ]
+}

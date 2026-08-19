@@ -1,0 +1,539 @@
+{
+  "schema": 1,
+  "id": "antoinelouis/colbert-xm",
+  "slug": "antoinelouis-colbert-xm",
+  "author": "antoinelouis",
+  "url": "https://huggingface.co/antoinelouis/colbert-xm",
+  "created_at": "2024-02-16T12:03:37.000Z",
+  "updated_at": "2026-08-19T12:22:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "colbert-ai",
+  "languages": [
+    "multilingual",
+    "af",
+    "am",
+    "ar",
+    "az",
+    "be",
+    "bg",
+    "bn",
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "eo",
+    "es",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "fr",
+    "ga",
+    "gl",
+    "gu",
+    "ha",
+    "he",
+    "hi",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "ka",
+    "kk",
+    "km",
+    "kn",
+    "ko",
+    "ku",
+    "ky",
+    "la",
+    "lo",
+    "lt",
+    "lv",
+    "mk",
+    "ml",
+    "mn",
+    "mr",
+    "ms",
+    "my",
+    "ne",
+    "nl",
+    "no",
+    "or",
+    "pa",
+    "pl",
+    "ps",
+    "pt",
+    "ro",
+    "ru",
+    "sa",
+    "si",
+    "sk",
+    "sl",
+    "so",
+    "sq",
+    "sr",
+    "sv",
+    "sw",
+    "ta",
+    "te",
+    "th",
+    "tl",
+    "tr",
+    "uk",
+    "ur",
+    "uz",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "colbert-ai",
+    "safetensors",
+    "xmod",
+    "colbert",
+    "multi-vector",
+    "sentence-transformers",
+    "passage-retrieval",
+    "sentence-similarity",
+    "multilingual",
+    "af",
+    "am",
+    "ar",
+    "az",
+    "be",
+    "bg",
+    "bn",
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "eo",
+    "es",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "fr",
+    "ga",
+    "gl",
+    "gu",
+    "ha",
+    "he",
+    "hi",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "ka",
+    "kk",
+    "km",
+    "kn",
+    "ko",
+    "ku",
+    "ky",
+    "la",
+    "lo",
+    "lt",
+    "lv",
+    "mk",
+    "ml",
+    "mn",
+    "mr",
+    "ms",
+    "my",
+    "ne",
+    "nl",
+    "no",
+    "or",
+    "pa",
+    "pl",
+    "ps",
+    "pt",
+    "ro",
+    "ru",
+    "sa",
+    "si",
+    "sk",
+    "sl",
+    "so",
+    "sq",
+    "sr",
+    "sv",
+    "sw",
+    "ta",
+    "te",
+    "th",
+    "tl",
+    "tr",
+    "uk",
+    "ur",
+    "uz",
+    "vi",
+    "zh",
+    "dataset:ms_marco",
+    "dataset:sentence-transformers/msmarco-hard-negatives",
+    "arxiv:2402.15059",
+    "base_model:facebook/xmod-base",
+    "base_model:finetune:facebook/xmod-base",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 71,
+  "downloads_30d": 11981,
+  "trending_score": 0,
+  "parameters": 852570624,
+  "parameters_human": "852.6M",
+  "storage_bytes": 3427930076,
+  "storage_human": "3.4 GB",
+  "base_model": "facebook/xmod-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-ar",
+      "metric": "Recall@1000",
+      "value": 74.8
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-ar",
+      "metric": "Recall@500",
+      "value": 72.1
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-ar",
+      "metric": "Recall@100",
+      "value": 60.4
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-ar",
+      "metric": "Recall@10",
+      "value": 36.5
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-ar",
+      "metric": "MRR@10",
+      "value": 19.5
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-de",
+      "metric": "Recall@1000",
+      "value": 86
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-de",
+      "metric": "Recall@500",
+      "value": 84.1
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-de",
+      "metric": "Recall@100",
+      "value": 73.9
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-de",
+      "metric": "Recall@10",
+      "value": 49.5
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-de",
+      "metric": "MRR@10",
+      "value": 27
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-en",
+      "metric": "Recall@1000",
+      "value": 96.5
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-en",
+      "metric": "Recall@500",
+      "value": 95.9
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-en",
+      "metric": "Recall@100",
+      "value": 89.3
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-en",
+      "metric": "Recall@10",
+      "value": 65.7
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-en",
+      "metric": "MRR@10",
+      "value": 37.2
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-es",
+      "metric": "Recall@1000",
+      "value": 88.4
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-es",
+      "metric": "Recall@500",
+      "value": 86.8
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-es",
+      "metric": "Recall@100",
+      "value": 77.5
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-es",
+      "metric": "Recall@10",
+      "value": 52
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-es",
+      "metric": "MRR@10",
+      "value": 28.5
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-fr",
+      "metric": "Recall@1000",
+      "value": 87.3
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-fr",
+      "metric": "Recall@500",
+      "value": 85.7
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-fr",
+      "metric": "Recall@100",
+      "value": 75.2
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-fr",
+      "metric": "Recall@10",
+      "value": 49.2
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-fr",
+      "metric": "MRR@10",
+      "value": 26.9
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-hi",
+      "metric": "Recall@1000",
+      "value": 82.2
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-hi",
+      "metric": "Recall@500",
+      "value": 79.9
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-hi",
+      "metric": "Recall@100",
+      "value": 69.8
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-hi",
+      "metric": "Recall@10",
+      "value": 44.2
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-hi",
+      "metric": "MRR@10",
+      "value": 23.8
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-id",
+      "metric": "Recall@1000",
+      "value": 86.7
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-id",
+      "metric": "Recall@500",
+      "value": 84.8
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-id",
+      "metric": "Recall@100",
+      "value": 74.5
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-id",
+      "metric": "Recall@10",
+      "value": 48.3
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-id",
+      "metric": "MRR@10",
+      "value": 26.3
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-it",
+      "metric": "Recall@1000",
+      "value": 86.1
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-it",
+      "metric": "Recall@500",
+      "value": 84.3
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-it",
+      "metric": "Recall@100",
+      "value": 74.1
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-it",
+      "metric": "Recall@10",
+      "value": 48.2
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-it",
+      "metric": "MRR@10",
+      "value": 26.5
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-ja",
+      "metric": "Recall@1000",
+      "value": 83.6
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-ja",
+      "metric": "Recall@500",
+      "value": 81.8
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-ja",
+      "metric": "Recall@100",
+      "value": 71.4
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-ja",
+      "metric": "Recall@10",
+      "value": 44.6
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-ja",
+      "metric": "MRR@10",
+      "value": 24.1
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-nl",
+      "metric": "Recall@1000",
+      "value": 86.8
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-nl",
+      "metric": "Recall@500",
+      "value": 85
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-nl",
+      "metric": "Recall@100",
+      "value": 75.2
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-nl",
+      "metric": "Recall@10",
+      "value": 49.8
+    },
+    {
+      "task": "Passage Retrieval",
+      "dataset": "mMARCO-nl",
+      "metric": "MRR@10",
+      "value": 27.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "antoinelouis/colbert-xm · Hugging Face",
+      "url": "https://huggingface.co/antoinelouis/colbert-xm",
+      "snippet": "ColBERT-XM 🛠️ Usage | 📊 Evaluation | 🤖 Training | 🔗 Citation 💻 Code | 📄 Paper This is a ColBERT model that can be used for semantic search in many languages. It encodes queries and passages into matrices of token-level embeddings and efficiently finds passages that contextually match the query using scalable vector-similarity (MaxSim) operators. The model uses an XMOD ..."
+    },
+    {
+      "title": "colbert-xm: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/colbert-xm-antoinelouis",
+      "snippet": "Overview ColBERT-XM is a multilingual semantic search model that encodes queries and passages into matrices of token-level embeddings and finds contextually matching passages using MaxSim operators. Built by antoinelouis, the model uses an XMOD backbone with 277M parameters and was trained on 6.4M training samples from the MS MARCO passage ranking dataset combined with hard negatives from 12 ..."
+    },
+    {
+      "title": "antoinelouis/colbert-xm at main - Hugging Face",
+      "url": "https://huggingface.co/antoinelouis/colbert-xm/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2402.15059] ColBERT-XM: A Modular Multi-Vector Representation Model ...",
+      "url": "https://arxiv.org/abs/2402.15059",
+      "snippet": "Abstract page for arXiv paper 2402.15059: ColBERT-XM: A Modular Multi-Vector Representation Model for Zero-Shot Multilingual Information Retrieval"
+    },
+    {
+      "title": "colbert-xm huggingface.co api & antoinelouis colbert-xm github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/antoinelouis-colbert-xm",
+      "snippet": "colbert-xm huggingface.co Url & antoinelouis colbert-xm github link, click to try the AI model (colbert-xm) demo, you can see the example of colbert-xm huggingface.co Model."
+    }
+  ]
+}

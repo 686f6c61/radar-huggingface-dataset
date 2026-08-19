@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "blueprint-ai/SymSTS-MiniLM",
+  "slug": "blueprint-ai-symsts-minilm",
+  "author": "blueprint-ai",
+  "url": "https://huggingface.co/blueprint-ai/SymSTS-MiniLM",
+  "created_at": "2026-08-19T15:26:01.000Z",
+  "updated_at": "2026-08-19T15:26:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blueprint: The AI Assistant for Therapists",
+      "url": "https://www.blueprint.ai/",
+      "snippet": "Blueprint gives therapists AI support for documentation, admin, and clinical care — whether alongside their current EHR or within Blueprint&#x27;s all-in-one EHR."
+    },
+    {
+      "title": "Blueprint",
+      "url": "https://clinician.blueprint.ai/",
+      "snippet": "Blueprint is the AI Assistant for Therapists — automate progress notes, draft smart treatments plans, and surface actionable insights before, during and after every session."
+    },
+    {
+      "title": "Blueprint - AI Hardware Design Tool",
+      "url": "https://www.blueprint.io/",
+      "snippet": "Blueprint — design hardware projects with AI. Generate wiring diagrams, bills of materials, and step-by-step assembly guides from a single prompt."
+    },
+    {
+      "title": "blueprint-ai · PyPI",
+      "url": "https://pypi.org/project/blueprint-ai/",
+      "snippet": "Blueprint Universal AI Orchestration Contract Blueprint is the industry-standard specification format for multi-agent AI execution. Any flagship model — Claude, GPT, Gemini, Grok, DeepSeek — can parse, execute, and hand off Blueprint tasks with zero ambiguity."
+    },
+    {
+      "title": "AI that Generates Construction Blueprints",
+      "url": "https://www.blueprints-ai.com/",
+      "snippet": "What is Blueprints AI? Blueprints AI is AI that generates code-compliant construction documents from plain-language descriptions, sketches, or existing design files. Architects, developers, and design-build firms use it to compress drafting timelines from months to hours while keeping licensed professionals in control of final review and sealing."
+    }
+  ]
+}

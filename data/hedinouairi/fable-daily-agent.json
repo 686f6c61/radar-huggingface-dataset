@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Hedinouairi/fable-daily-agent",
+  "slug": "hedinouairi-fable-daily-agent",
+  "author": "Hedinouairi",
+  "url": "https://huggingface.co/Hedinouairi/fable-daily-agent",
+  "created_at": "2026-08-19T13:52:51.000Z",
+  "updated_at": "2026-08-19T13:53:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223694,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fable 5 is back baby | The Neuron - AI News - LinkedIn",
+      "url": "https://www.linkedin.com/posts/theneurondaily_fable-5-is-back-baby-activity-7478447414626922496-UO7Q",
+      "snippet": "Anthropic wants Claude agents to feel… boring. 😺 That might matter more than the next flashy model. • Sonnet 5 is now the \"everyday\" Claude • Near Opus-level agent work, lower price ..."
+    },
+    {
+      "title": "Claude Fable &#92; Anthropic",
+      "url": "https://www.anthropic.com/claude/fable",
+      "snippet": "Claude Fable 5 delivers more capable engineering in fewer turns than prior models—handling the complex multi-agent workflows our employees run daily in Claude Code."
+    },
+    {
+      "title": "About | DAIly Agent",
+      "url": "https://thedailyagent.ai/about",
+      "snippet": "The agentic AI landscape moves fast. New frameworks, new capabilities, new papers, new failures — the signal-to-noise ratio is brutal if you&#x27;re trying to track it while also building something. DAIly Agent exists to solve that problem. We distill what matters in the world of AI agents — autonomous systems, multi-step reasoning, tool use, and the infrastructure that makes them reliable in ..."
+    },
+    {
+      "title": "Claude Fable 5: Multi-Day AI Agent Workflow Guide",
+      "url": "https://blog.4sapi.com/blog/claude-fable-5-multi-day-agent-workflow-guide",
+      "snippet": "Abstract Anthropic re-released Claude Fable 5 on July 1, 2026, positioning it as a next-generation large language model optimized for long-running, multi-step autonomous agent operations. Unlike models that prioritize pure single-turn coding benchmarks, Fable 5 is engineered to sustain asynchronous, multi-phase tasks that may span dozens of hours or multiple working days. Independent benchmark ..."
+    },
+    {
+      "title": "Daily HuggingFace AI Papers - GitHub",
+      "url": "https://github.com/AtharvaDomale/Daily-HuggingFace-AI-Papers",
+      "snippet": "Never miss groundbreaking AI research again! Get daily updates on the hottest papers from HuggingFace, automatically curated and archived. Perfect for researchers, ML engineers, and AI enthusiasts. 🔥"
+    }
+  ]
+}

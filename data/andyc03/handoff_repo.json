@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "andyc03/handoff_repo",
+  "slug": "andyc03-handoff_repo",
+  "author": "andyc03",
+  "url": "https://huggingface.co/andyc03/handoff_repo",
+  "created_at": "2026-08-11T15:19:36.000Z",
+  "updated_at": "2026-08-19T17:59:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 499737338,
+  "storage_human": "500 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "andyc03/handoff_repo · Hugging Face",
+      "url": "https://huggingface.co/andyc03/handoff_repo",
+      "snippet": "andyc03 / handoff_repo like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "skills/skills/productivity/handoff/SKILL.md at main · mattpocock/skills ...",
+      "url": "https://github.com/mattpocock/skills/blob/main/skills/productivity/handoff/SKILL.md",
+      "snippet": "Write a handoff document summarising the current conversation so a fresh agent can continue the work. Save to the temporary directory of the user&#x27;s OS - not the current workspace. Include a \"suggested skills\" section in the document, naming which skills the next agent should call the Skill tool for."
+    },
+    {
+      "title": "ai-handoff · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ai-handoff",
+      "snippet": "Contexta turns codebases into curated context packs for debugging, reviews, onboarding, refactors, and AI handoffs. It analyzes project structure, detects technologies, surfaces risks and hotspots, and exports structured Markdown through a cross-platform GUI + CLI."
+    },
+    {
+      "title": "andyc03 (Nanxi Li) - Hugging Face",
+      "url": "https://huggingface.co/andyc03",
+      "snippet": "User profile of Nanxi Li on Hugging Face"
+    },
+    {
+      "title": "Claude Handoff Prompt: How to Keep Context Across Sessions (2026)",
+      "url": "https://www.jdhodges.com/blog/ai-session-handoffs-keep-context-across-conversations/",
+      "snippet": "A simple two-file system and handoff prompt that keeps Claude (or any AI) from forgetting your project between sessions. Copy-paste templates for developers and non-technical users."
+    }
+  ]
+}

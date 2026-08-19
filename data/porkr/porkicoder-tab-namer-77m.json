@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "porkr/porkicoder-tab-namer-77m",
+  "slug": "porkr-porkicoder-tab-namer-77m",
+  "author": "porkr",
+  "url": "https://huggingface.co/porkr/porkicoder-tab-namer-77m",
+  "created_at": "2026-08-19T16:21:39.000Z",
+  "updated_at": "2026-08-19T16:33:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "tab-naming",
+    "terminal-title-generation",
+    "short-text-generation",
+    "seq2seq",
+    "flan-t5",
+    "on-device",
+    "electron",
+    "porkicoder",
+    "summarization",
+    "en",
+    "base_model:google/flan-t5-small",
+    "base_model:finetune:google/flan-t5-small",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 309398815,
+  "storage_human": "309 MB",
+  "base_model": "google/flan-t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PorkiCoder IDE - Code, Preview, Publish & Buy Domains, All in One ...",
+      "url": "https://porkicoder.com/",
+      "snippet": "The old pseudo-model named \"OpenCode\" is gone from the picker: choose the model you want and PorkiCoder chooses the harness. Existing Kimi, GLM, and legacy OpenCode preferences migrate safely to the new default; Kimi and GLM remain available to independent fan-out and HogCode workflows."
+    },
+    {
+      "title": "Changelog - PorkiCoder IDE",
+      "url": "https://porkicoder.com/changelog.html",
+      "snippet": "GLM-5.2 is now selectable in PorkiCoder chat and Agent Mode, available through the ChatView agent picker, and exposed in opencode&#x27;s PorkiCoder provider as a server-funded model. Signed-in users route through PorkiCoder&#x27;s Baseten-backed proxy with thinking enabled, while BYOK terminals receive the same Baseten key wiring used by the Kimi models."
+    },
+    {
+      "title": "PorkiCoder IDE - Code, Preview, Publish & Buy Domains, All in One ...",
+      "url": "https://porkicoder.com/blog/posts/the-2026-productivity-shift-optimizing-for-cognitive-load.html",
+      "snippet": "Run Claude Code, Codex, or Grok Build inside PorkiCoder with optional /overlord supervision, bounded second opinions from local AI CLI subscriptions, live-reload preview, one-click publish, and in-app custom domains. Built from scratch."
+    },
+    {
+      "title": "porkicoder (@porkicoder) / Posts / X",
+      "url": "https://x.com/porkicoder",
+      "snippet": "Sharing latest research on AI, LLMs and agentic coding. Also building Porkicoder, the lightweight cost-efficient alternative to Cursor."
+    },
+    {
+      "title": "walidsi/pi-herdr-tab-namer - GitHub",
+      "url": "https://github.com/walidsi/pi-herdr-tab-namer",
+      "snippet": "pi-herdr-tab-namer A Pi extension that renames the current Herdr tab from a short summary of your first prompt in the session. Summarization runs in the background against a separate, pre-configured model — it never delays your prompt and never appears in the chat transcript."
+    }
+  ]
+}

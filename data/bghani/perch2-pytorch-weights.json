@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bghani/perch2-pytorch-weights",
+  "slug": "bghani-perch2-pytorch-weights",
+  "author": "bghani",
+  "url": "https://huggingface.co/bghani/perch2-pytorch-weights",
+  "created_at": "2026-08-19T16:08:10.000Z",
+  "updated_at": "2026-08-19T16:31:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "bioacoustics",
+    "audio-classification",
+    "bird-classification",
+    "efficientnet",
+    "transfer-learning",
+    "perch",
+    "arxiv:2508.04665",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43330603,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - bghani/perchv2-pytorch: PyTorch port of Google Perch v2 ...",
+      "url": "https://github.com/bghani/perchv2-pytorch",
+      "snippet": "This repo provides that: the Perch v2 backbone (stock EfficientNet-B3, single-channel log-mel input) reimplemented in PyTorch, with weights converted from the original JAX/Flax checkpoint. Known limitation: this is a community conversion, not an official PyTorch release from Google."
+    },
+    {
+      "title": "cgeorgiaw/Perch · Hugging Face",
+      "url": "https://huggingface.co/cgeorgiaw/Perch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wrice/perch-v2-pytorch-tflite · Hugging Face",
+      "url": "https://huggingface.co/wrice/perch-v2-pytorch-tflite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Perch 2.0: The Bittern Lesson for Bioacoustics - arXiv.org",
+      "url": "https://arxiv.org/html/2508.04665v1",
+      "snippet": "Perch is a performant pre-trained model for bioacoustics. It was trained in supervised fashion, providing both off-the-shelf classification scores for thousands of vocalizing species as well as strong embeddings for transfer learning. In this new release, Perch 2.0, we expand from training exclusively on avian species to a large multi-taxa dataset."
+    },
+    {
+      "title": "Perch 2.0: The Bittern Lesson for Bioacoustics - arXiv.org",
+      "url": "https://arxiv.org/pdf/2508.04665",
+      "snippet": "Perch is a performant pre-trained model for bioacoustics. It was trained in supervised fashion, providing both off-the-shelf classification scores for thousands of vocalizing species as well as strong embeddings for transfer learning. In this new release, Perch 2.0, we expand from training exclusively on avian species to a large multi-taxa dataset. The model is trained with self-distillation ..."
+    }
+  ]
+}

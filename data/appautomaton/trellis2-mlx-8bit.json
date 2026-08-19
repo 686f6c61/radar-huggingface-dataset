@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "appautomaton/trellis2-mlx-8bit",
+  "slug": "appautomaton-trellis2-mlx-8bit",
+  "author": "appautomaton",
+  "url": "https://huggingface.co/appautomaton/trellis2-mlx-8bit",
+  "created_at": "2026-08-14T16:36:16.000Z",
+  "updated_at": "2026-08-14T16:58:03.000Z",
+  "license": "trellis2-dinov3-rmbg-multiple-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apple-silicon",
+    "trellis2",
+    "o-voxel",
+    "image-to-3d",
+    "mesh-generation",
+    "pbr",
+    "glb",
+    "8-bit",
+    "affine-quantization",
+    "mixed-precision",
+    "non-commercial",
+    "en",
+    "base_model:briaai/RMBG-2.0",
+    "base_model:quantized:briaai/RMBG-2.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11247764249,
+  "storage_human": "11.2 GB",
+  "base_model": "microsoft/TRELLIS.2-4B, facebook/dinov3-vitl16-pretrain-lvd1689m, briaai/RMBG-2.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "appautomaton/trellis2-mlx-8bit · Hugging Face",
+      "url": "https://huggingface.co/appautomaton/trellis2-mlx-8bit",
+      "snippet": "appautomaton / trellis2-mlx-8bit like 0 Follow App Automaton 9 Image-to-3D MLX Safetensors TRELLIS.2 English apple-silicon o-voxel mesh-generation pbr glb 8-bit precision affine-quantization mixed-precision non-commercial License:trellis2-dinov3-rmbg-multiple-licenses Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "GitHub - gtrg55/trellis2-mlx: Native MLX port of TRELLIS.2 for Apple ...",
+      "url": "https://github.com/gtrg55/trellis2-mlx",
+      "snippet": "Native MLX port of TRELLIS.2 for Apple Silicon. Contribute to gtrg55/trellis2-mlx development by creating an account on GitHub."
+    },
+    {
+      "title": "mlx-spatial/docs/trellis2.md at main · appautomaton/mlx-spatial",
+      "url": "https://github.com/appautomaton/mlx-spatial/blob/main/docs/trellis2.md",
+      "snippet": "The script defaults are quality-oriented for Apple Silicon: 512 pipeline, model-config SLat sampler steps, 1024 texture for GLB, 200k GLB face target, global xatlas unwrap, and kdtree texture baking."
+    },
+    {
+      "title": "TRELLIS.2: Native and Compact Structured Latents for 3D Generation",
+      "url": "https://microsoft.github.io/TRELLIS.2/",
+      "snippet": "Our 4B-parameter model generates high-resolution fully textured assets with exceptional fidelity and efficiency with vanilla DiTs. * Total generation time (shape + material). ** Tested with NVIDIA H100 GPU. At the core is the native and compact structured latents, which push the frontiers of fidelity and compactness at the same time."
+    },
+    {
+      "title": "TRELLIS-2: Free AI Image to 3D Model Generator | Microsoft Open-Source ...",
+      "url": "https://trellis-2.org/",
+      "snippet": "TRELLIS-2.org is an independent resource hub dedicated to Microsoft&#x27;s TRELLIS-2 3D generation AI model. We provide tutorials, documentation, demos, and community resources to help developers and artists leverage this powerful open-source technology."
+    }
+  ]
+}

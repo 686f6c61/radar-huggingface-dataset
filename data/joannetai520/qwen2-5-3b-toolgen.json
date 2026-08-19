@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joannetai520/qwen2.5-3b-toolgen",
+  "slug": "joannetai520-qwen2-5-3b-toolgen",
+  "author": "joannetai520",
+  "url": "https://huggingface.co/joannetai520/qwen2.5-3b-toolgen",
+  "created_at": "2026-08-19T13:03:59.000Z",
+  "updated_at": "2026-08-19T13:10:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085398016,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6182268722,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reasonwang/ToolGen-Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/reasonwang/ToolGen-Qwen2.5-3B",
+      "snippet": "/ ToolGen-Qwen2.5-3B like 0 Text Generation Transformers Safetensors qwen2 conversational text-generation-inference Inference Endpoints arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use ..."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "GitHub - Reason-Wang/ToolGen: [ICLR 2025] The official implementation ...",
+      "url": "https://github.com/Reason-Wang/ToolGen",
+      "snippet": "🤗ToolGen Model • 📄Paper (arxiv) 25/02/2025: Updated the training scripts. Refer to training/README.md for more details. 14/12/2024: Updated Qwen2.5-based ToolGen ToolGen is a framework that integrates tool knowledge directly into LLMs by representing tools as unique tokens, enabling seamless tool invocation and language generation.🔧🦙 With 47,000 tool tokens, ToolGen shows ..."
+    },
+    {
+      "title": "Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.15115v1",
+      "snippet": "Qwen2.5 has demonstrated top-tier performance on a wide range of benchmarks eval-uating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct ..."
+    }
+  ]
+}

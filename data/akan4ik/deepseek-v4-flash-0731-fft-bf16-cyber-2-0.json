@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber-2.0",
+  "slug": "akan4ik-deepseek-v4-flash-0731-fft-bf16-cyber-2-0",
+  "author": "Akan4ik",
+  "url": "https://huggingface.co/Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber-2.0",
+  "created_at": "2026-08-10T09:53:12.000Z",
+  "updated_at": "2026-08-19T13:17:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 146,
+  "trending_score": 0,
+  "parameters": 304180418494,
+  "parameters_human": "304.18B",
+  "storage_bytes": 166886535336,
+  "storage_human": "166.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber · Hugging Face",
+      "url": "https://huggingface.co/Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber",
+      "snippet": "Instructions to use Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber-2.0 · Hugging Face",
+      "url": "https://huggingface.co/Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber-2.0",
+      "snippet": "Instructions to use Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber-2.0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "deepseek-v4-flash-0731/deepseek-v4-flash-0731 | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "Overview Relevant source files DeepSeek V4 Flash 0731 is a local-first, privacy-focused desktop application designed to run the DeepSeek V4 Flash model on consumer and professional hardware README.md 2-4 The project provides a native Windows interface for high-performance inference, supporting the latest 0731 model checkpoint which features a Mixture of Experts (MoE) architecture README.md 20 ..."
+    },
+    {
+      "title": "DeepSeek V4 Flash 0731 - GitHub",
+      "url": "https://github.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek V4 Flash 0731 is a free desktop application for running DeepSeek V4 Flash locally. Deepseek v4 flash free to download, no API key needed, no subscription."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731-FFT-BF16-Cyber - FriendliAI",
+      "url": "https://friendli.ai/models/Akan4ik/DeepSeek-V4-Flash-0731-FFT-BF16-Cyber",
+      "snippet": "For the Code Agent tasks among the public benchmarks above, DeepSeek-V4-Flash-0731 is evaluated with the minimal mode of DeepSeek Harness (to be released) as the agent framework, using the max reasoning effort level with temperature = 1.0, top_p = 0.95."
+    }
+  ]
+}

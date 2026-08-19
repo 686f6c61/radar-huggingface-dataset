@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "DeliVali/AIDAM_MATH_1.7B_V1.0.0",
+  "slug": "delivali-aidam_math_1-7b_v1-0-0",
+  "author": "DeliVali",
+  "url": "https://huggingface.co/DeliVali/AIDAM_MATH_1.7B_V1.0.0",
+  "created_at": "2026-08-19T18:34:25.000Z",
+  "updated_at": "2026-08-19T18:34:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "grpo",
+    "rlvr",
+    "math",
+    "gsm8k",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "en",
+    "es",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:adapter:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81205038,
+  "storage_human": "81 MB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases · DeliVali/AIDAM · GitHub",
+      "url": "https://github.com/DeliVali/AIDAM/releases",
+      "snippet": "Contribute to DeliVali/AIDAM development by creating an account on GitHub."
+    },
+    {
+      "title": "DeliVali/AIDAM_CODING_1.5B_V0.1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/DeliVali/AIDAM_CODING_1.5B_V0.1.0/tree/main",
+      "snippet": "How to use DeliVali/AIDAM_CODING_1.5B_V0.1. with Lemonade: Pull the model ... Run and chat with the model ... List all available models lemonade list main AIDAM_CODING_1.5B_V0.1.0 4.09 GB Ctrl+K Ctrl+K 1 contributor History:7 commits DeliVali V0.1.0 (research era); document the ONNX runtime and its verification 7089c7e verifiedabout 4 hours ..."
+    },
+    {
+      "title": "DeliVali/AIDAM_CODING_1.5B_V0.1.0 · Hugging Face",
+      "url": "https://huggingface.co/DeliVali/AIDAM_CODING_1.5B_V0.1.0",
+      "snippet": "LM Studio Jan vLLM How to use DeliVali/AIDAM_CODING_1.5B_V0.1. with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "AIDAM/docs/ARCHITECTURE.md at main · DeliVali/AIDAM · GitHub",
+      "url": "https://github.com/DeliVali/AIDAM/blob/main/docs/ARCHITECTURE.md",
+      "snippet": "AIDAM architecture AIDAM is not a model: it is a compound system where a small specialized model is the core and every other module is deterministic engineering or tooling. This is deliberate — anything that can be solved with code does not spend parameters."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    }
+  ]
+}

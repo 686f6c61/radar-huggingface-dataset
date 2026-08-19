@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "darius3th/uni-a2af2bcf",
+  "slug": "darius3th-uni-a2af2bcf",
+  "author": "darius3th",
+  "url": "https://huggingface.co/darius3th/uni-a2af2bcf",
+  "created_at": "2026-08-19T17:33:20.000Z",
+  "updated_at": "2026-08-19T17:33:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "qwen3.5-moe",
+    "grpo",
+    "conversational",
+    "base_model:vera6/affine-5g4yy75zuz-t6",
+    "base_model:finetune:vera6/affine-5g4yy75zuz-t6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 70234483877,
+  "storage_human": "70.2 GB",
+  "base_model": "vera6/affine-5g4yy75zuz-t6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darius3th (Darius R) - Hugging Face",
+      "url": "https://huggingface.co/darius3th",
+      "snippet": "Recent Activity published a model1 day ago darius3th/Affine-5gcl5uxakb-iynocr2p updated a model1 day ago darius3th/Affine-5gcl5uxakb-iynocr2p updated a model2 days ago darius3th/albedo-qwen3.6-35b-kkk View all activity"
+    },
+    {
+      "title": "darius3th (Darius R) - Hugging Face",
+      "url": "https://huggingface.co/darius3th/models",
+      "snippet": "Recent Activity published a modelabout 21 hours ago darius3th/Affine-5gcl5uxakb-iynocr2p updated a modelabout 22 hours ago darius3th/Affine-5gcl5uxakb-iynocr2p updated a model1 day ago darius3th/albedo-qwen3.6-35b-kkk View all activity"
+    },
+    {
+      "title": "darius AI Models | Civitai",
+      "url": "https://civitai.com/tag/darius",
+      "snippet": "Browse 6 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with darius."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Unleashing the Power of Open Source AI Models and Machine Learning ...",
+      "url": "https://aimodels.org/",
+      "snippet": "Open Source AI Community We are committed to building a community of developers, researchers, and enthusiasts who share our vision of democratizing AI and making it accessible to everyone. Collection of AI Model Downloads and Machine Learning Tools Explore a collection of open source AI models and tools for machine learning."
+    }
+  ]
+}

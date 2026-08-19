@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SciTools/gemma",
+  "slug": "scitools-gemma",
+  "author": "SciTools",
+  "url": "https://huggingface.co/SciTools/gemma",
+  "created_at": "2026-08-19T13:31:27.000Z",
+  "updated_at": "2026-08-19T13:32:30.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 4977171584,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    },
+    {
+      "title": "Gemma models overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs",
+      "snippet": "Developed by Google DeepMind and other teams across Google, Gemma is named after the Latin gemma, meaning precious stone. The Gemma model weights are supported by developer tools that promote innovation, collaboration, and the responsible use of artificial intelligence (AI). You can get multiple variations of Gemma for general and specific use ..."
+    },
+    {
+      "title": "Get started with Gemma models - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/get_started",
+      "snippet": "Tip: As you begin implementing AI applications, make sure you are following a principled approach to AI that serves all your users with the Responsible Generative AI Toolkit. Get it on Kaggle Get it on Hugging Face Pick a model This section helps you understand the official variants of the Gemma model family and select a model for your application."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://gemma4.com/",
+      "snippet": "Every Gemma 4 release goes through extensive safety evaluation including red-teaming, bias testing, and responsible AI reviews. We publish detailed model cards for each variant and ship with a built-in responsible use policy."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Beltran1968/Priscila",
+  "slug": "beltran1968-priscila",
+  "author": "Beltran1968",
+  "url": "https://huggingface.co/Beltran1968/Priscila",
+  "created_at": "2026-08-19T19:14:50.000Z",
+  "updated_at": "2026-08-19T19:14:50.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beltran1968 (Maurício Beltran) - Hugging Face",
+      "url": "https://huggingface.co/Beltran1968/models",
+      "snippet": "User profile of Maurício Beltran on Hugging Face"
+    },
+    {
+      "title": "Priscila - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1605485896691208817",
+      "snippet": "Generate stunning anime art with the &#x27;Priscila&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "priscila - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d3r4kfle878c73eh5pfg",
+      "snippet": "Explore priscila model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Priscila (@_pris_beltran) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_pris_beltran/",
+      "snippet": "1,911 Followers, 976 Following, 17 Posts - Priscila💫 (@_pris_beltran) on Instagram: \"💫\""
+    },
+    {
+      "title": "Priscilla Marcell de Palvin/プリシラ（あいりすミスティリア） - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/83e4714dfe436f28d03eb1b347ad93cb",
+      "snippet": "Explore Priscilla Marcell de Palvin/プリシラ（あいりすミスティリア） model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

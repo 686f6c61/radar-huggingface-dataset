@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jasonboukheir/Qwen3.8-27B-AEON-Ultimate-Uncensored-BF16-W4A16-AutoRound",
+  "slug": "jasonboukheir-qwen3-8-27b-aeon-ultimate-uncensored-bf16-w4a16-autoround",
+  "author": "jasonboukheir",
+  "url": "https://huggingface.co/jasonboukheir/Qwen3.8-27B-AEON-Ultimate-Uncensored-BF16-W4A16-AutoRound",
+  "created_at": "2026-08-19T15:15:38.000Z",
+  "updated_at": "2026-08-19T15:16:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "vllm",
+    "compressed-tensors",
+    "autoround",
+    "quantized",
+    "w4a16",
+    "fp8-kv-cache",
+    "intel-xpu",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998496,
+  "parameters_human": "26.90B",
+  "storage_bytes": 17701881924,
+  "storage_human": "17.7 GB",
+  "base_model": "AEON-7/Qwen3.8-27B-AEON-Ultimate-Uncensored-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 - Hugging Face",
+      "url": "https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16/tree/main",
+      "snippet": "27b abliterated abliterix aeon aeon-7 bf16 bfloat16 chat coding conversational function-calling gated-deltanet gdn hybrid-attention instruct multimodal qwen qwen3 qwen3.8 reasoning refusal-removed thinking tool-calling uncensored unfiltered vision vision-language vllm arxiv:2406.11717 arxiv:2503.00555 License:apache-2.0 Model card FilesFiles ..."
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "What is Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16? It&#x27;s a community-modified, full-precision (BF16) release built on Alibaba&#x27;s Qwen3.8-27B, with the internal refusal behavior removed through a process called abliteration. Rather than optimizing for the lowest possible divergence from the original model, the team behind it (credited as AEON-7) optimized for coherence and answer quality ..."
+    },
+    {
+      "title": "Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 - Hugging Face",
+      "url": "https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3.8-27b - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    }
+  ]
+}

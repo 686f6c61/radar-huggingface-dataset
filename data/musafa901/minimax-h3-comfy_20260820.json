@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "musafa901/MiniMax-H3-Comfy_20260820",
+  "slug": "musafa901-minimax-h3-comfy_20260820",
+  "author": "musafa901",
+  "url": "https://huggingface.co/musafa901/MiniMax-H3-Comfy_20260820",
+  "created_at": "2026-08-19T18:30:41.000Z",
+  "updated_at": "2026-08-19T18:30:42.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 481390014523,
+  "storage_human": "481.4 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "musafa901/MiniMax-H3-Comfy_20260816 · Hugging Face",
+      "url": "https://huggingface.co/musafa901/MiniMax-H3-Comfy_20260816",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comfy-Org/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "musafa901/MiniMax-H3_20260816 · Hugging Face",
+      "url": "https://huggingface.co/musafa901/MiniMax-H3_20260816",
+      "snippet": "Instructions to use musafa901/MiniMax-H3_20260816 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use musafa901/MiniMax-H3_20260816 with Diffusers: ... Notebooks Google Colab Kaggle MiniMax H3 News Online API Online App System Overview Model Variants and Input ..."
+    },
+    {
+      "title": "musafa901/Confy-MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/musafa901/Confy-MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 on Comfy — Open-Weight Video Model",
+      "url": "https://comfy.org/minimax-h3/",
+      "snippet": "Run MiniMax H3 on Comfy: Open Weights or Partner Nodes, multi-modal in/out, native stereo audio on every clip, up to 2K and 5-15s per generation. Free to start."
+    }
+  ]
+}

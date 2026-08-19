@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "moritzaweber/act_red_thingy_25eps",
+  "slug": "moritzaweber-act_red_thingy_25eps",
+  "author": "moritzaweber",
+  "url": "https://huggingface.co/moritzaweber/act_red_thingy_25eps",
+  "created_at": "2026-08-19T16:59:32.000Z",
+  "updated_at": "2026-08-19T16:59:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:moritzaweber/red-thingy-25eps",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MoritzAWeber · GitHub",
+      "url": "https://github.com/MoritzAWeber",
+      "snippet": "MoritzAWeber has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - Daketey/modelpoison: A repository full of malicious ML model ...",
+      "url": "https://github.com/Daketey/modelpoison",
+      "snippet": "A repository full of malicious ML model file generators for security scanner testing and red-team exercises. - Daketey/modelpoison"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}
