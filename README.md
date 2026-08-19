@@ -10,7 +10,7 @@
 **Si te es útil, una ⭐ en GitHub ayuda a que lo encuentre más gente.**
 
 **Radar HuggingFace Dataset** es un dataset abierto, vivo y versionado del
-ecosistema open source de HuggingFace. Cada día se publican miles de modelos
+ecosistema de HuggingFace. Cada día se publican miles de modelos
 en el hub y su API solo sabe responder cómo está un modelo *hoy*; aquí
 encontrarás, tres veces al día, una foto curada y enriquecida de todo lo que
 merece atención: qué se publica, quién lo publica, qué licencia tiene, qué
@@ -42,8 +42,8 @@ Y encima, cada modelo lleva una **ficha técnica en castellano** (qué hace,
 para qué sirve, requisitos, limitaciones), porque la documentación del hub
 es mayoritariamente en inglés y desigual en calidad.
 
-No es un espejo del hub: es una **capa curada** — solo modelos verificados
-como open source y con un mínimo de información útil.
+No es un espejo del hub: es una **capa curada** — solo modelos con licencia
+abierta verificada y con un mínimo de información útil.
 
 ## Cómo se estructura `data/`
 
