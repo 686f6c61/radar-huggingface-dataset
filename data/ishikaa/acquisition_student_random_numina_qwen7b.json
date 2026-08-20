@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_random_numina_qwen7b",
+  "slug": "ishikaa-acquisition_student_random_numina_qwen7b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_random_numina_qwen7b",
+  "created_at": "2026-08-19T23:40:45.000Z",
+  "updated_at": "2026-08-19T23:42:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ishikaa/acquisition_student_random_numina · Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_random_numina",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ishikaa/acquisition_student_random_numina at main - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_random_numina/tree/main",
+      "snippet": "ishikaa / acquisition_student_random_numina like 0 Text Generation Transformers Safetensors qwen2 trl sft conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model main acquisition_student_random_numina 6.19 GB Ctrl+K Ctrl+K 1 contributor History:3 commits ishikaa Upload ..."
+    },
+    {
+      "title": "ishikaa/acquisition_student_randomWL_numina_1000 - friendli.ai",
+      "url": "https://friendli.ai/models/ishikaa/acquisition_student_randomWL_numina_1000",
+      "snippet": "Run ishikaa/acquisition_student_randomWL_numina_1000 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "acquisition_student_randomWOL_numina_1000_llama3bins",
+      "url": "https://friendli.ai/models/ishikaa/acquisition_student_randomWOL_numina_1000_llama3bins",
+      "snippet": "Run ishikaa/acquisition_student_randomWOL_numina_1000_llama3bins with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "acquisition_student_filtered_qwen3bins_numina - modelstop.top",
+      "url": "https://www.modelstop.top/models/hf-ishikaa-acquisition_student_filtered_qwen3bins_numina",
+      "snippet": "Open-source acquisition_student_filtered_qwen3bins_numina model from ishikaa — available for download and self-hosting on Hugging Face."
+    }
+  ]
+}

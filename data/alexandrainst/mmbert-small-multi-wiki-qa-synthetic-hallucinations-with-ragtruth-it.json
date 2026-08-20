@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-it",
+  "slug": "alexandrainst-mmbert-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-it",
+  "author": "alexandrainst",
+  "url": "https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-it",
+  "created_at": "2026-07-09T06:36:35.000Z",
+  "updated_at": "2026-08-20T02:38:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 140642306,
+  "parameters_human": "140.6M",
+  "storage_bytes": 1159529972,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with ...",
+      "url": "https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-uk",
+      "snippet": "Instructions to use alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-uk with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "mmBERT-small-multi-wiki-qa-synthetic-hallucinations-fi",
+      "url": "https://huggingface.co/alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-fi",
+      "snippet": "Instructions to use alexandrainst/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-fi with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "A multilingual hallucination benchmark: MultiWikiQHalluA",
+      "url": "https://arxiv.org/pdf/2605.02504",
+      "snippet": "Figure 1: Overview of the two-stage method-ology: synthetic hallucination data generation pipeline, where MultiWikiQA contexts, questions, and ground-truth answers are passed to the Let-tuceDetect framework, which uses a language model to produce token-labelled hallucinated an-swers; and fine-tuning of the mmBERT-small token-level hallucination ..."
+    },
+    {
+      "title": "multi_wiki_qa/README.md at main · alexandrainst/multi_wiki_qa",
+      "url": "https://github.com/alexandrainst/multi_wiki_qa/blob/main/README.md",
+      "snippet": "All Python files in the multi_wiki_qa directory are modules internal to the project package. Examples here could be a general data loading script, a definition of a model, or a training function."
+    },
+    {
+      "title": "A multilingual hallucination benchmark: MultiWikiQHalluA",
+      "url": "https://arxiv.org/html/2605.02504v2",
+      "snippet": "Figure 1: Overview of the two-stage methodology: synthetic hallucination data generation pipeline, where MultiWikiQA contexts, questions, and ground-truth answers are passed to the LettuceDetect framework, which uses a language model to produce token-labelled hallucinated answers; and fine-tuning of the mmBERT-small token-level hallucination ..."
+    }
+  ]
+}

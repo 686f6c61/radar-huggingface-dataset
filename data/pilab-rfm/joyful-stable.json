@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pilab-rfm/joyful-stable",
+  "slug": "pilab-rfm-joyful-stable",
+  "author": "pilab-rfm",
+  "url": "https://huggingface.co/pilab-rfm/joyful-stable",
+  "created_at": "2026-05-31T18:03:03.000Z",
+  "updated_at": "2026-08-20T01:06:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gr00t",
+    "ur5",
+    "vla",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 486446894468,
+  "storage_human": "486.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pilab-rfm/joyful-stable · Hugging Face",
+      "url": "https://huggingface.co/pilab-rfm/joyful-stable",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pilab-rfm (pilab-rfm) - Hugging Face",
+      "url": "https://huggingface.co/pilab-rfm",
+      "snippet": "Org profile for pilab-rfm on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Core Models - Stability AI",
+      "url": "https://stability.ai/core-models",
+      "snippet": "Stability AI may remove or modify one or more of the Core Models listed on this page. In this circumstance, Stability AI will notify you it is removing or making certain Core Models inaccessible. Other Stability AI Models Stability AI has other models not included in the Core Models above, for which your usage is subject to the terms of each individual model&#x27;s applicable license. For more ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/models?other=ur5",
+      "snippet": "Explore machine learning models. 7 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: ur5 Clear all"
+    },
+    {
+      "title": "15 Best Stable Diffusion Models in 2026: The Ultimate Guide",
+      "url": "https://www.aiphotogenerator.net/blog/2026/02/best-stable-diffusion-models-2026",
+      "snippet": "Discover the best Stable Diffusion models for 2026. Curated picks for photorealism, anime, fantasy, and next-gen architectures like Flux 2 and SD 3.5 — with VRAM requirements, prompt tips, and a comparison table."
+    }
+  ]
+}

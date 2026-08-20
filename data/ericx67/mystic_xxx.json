@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ericx67/mystic_xxx",
+  "slug": "ericx67-mystic_xxx",
+  "author": "Ericx67",
+  "url": "https://huggingface.co/Ericx67/mystic_xxx",
+  "created_at": "2026-08-19T23:24:21.000Z",
+  "updated_at": "2026-08-19T23:24:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 768658621,
+  "storage_human": "769 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cptsl/MysticXXX · Hugging Face",
+      "url": "https://huggingface.co/cptsl/MysticXXX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[MMH3] Mystic XXX - v1.0 | Hailuo H3 by MiniMax LoRA | Civitai",
+      "url": "https://civitai.red/models/2856467/mmh3-mystic-xxx?modelVersionId=3226233",
+      "snippet": "Mystic XXX - Unlock Real Anatomy in T2V Finally, text-to-video with proper anatomy. Works great with T2V, I2V and FFLF. All example videos come with the full workflow embedded. Recommended strength: 0.5 - 0.9 (I usually run 0.75-0.8). Turbo LoRAs can change the look, adjust strength as needed. This is still v1 (more improvements coming), but it already delivers solid results. Download ..."
+    },
+    {
+      "title": "Ericx67 (Eric Perez) - Hugging Face",
+      "url": "https://huggingface.co/Ericx67/models",
+      "snippet": "Ericx67&#x27;s models1 Sort: Recently updated Ericx67/HMNSFW-AIO Text-to-Image •Updated about 2 hours ago"
+    },
+    {
+      "title": "Ericx67 (Eric Perez) - Hugging Face",
+      "url": "https://huggingface.co/Ericx67",
+      "snippet": "User profile of Eric Perez on Hugging Face"
+    },
+    {
+      "title": "obitobosna/MysticXXX-v7.safetensors · Hugging Face",
+      "url": "https://huggingface.co/obitobosna/MysticXXX-v7.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

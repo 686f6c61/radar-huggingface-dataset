@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SuhaoYu1020/semantic-image-arith-ckpts",
+  "slug": "suhaoyu1020-semantic-image-arith-ckpts",
+  "author": "SuhaoYu1020",
+  "url": "https://huggingface.co/SuhaoYu1020/semantic-image-arith-ckpts",
+  "created_at": "2026-08-19T22:14:04.000Z",
+  "updated_at": "2026-08-19T22:29:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "latent-reasoning",
+    "arithmetic",
+    "image-editing",
+    "diffusion",
+    "mechanistic-interpretability",
+    "base_model:Qwen/Qwen-Image",
+    "base_model:finetune:Qwen/Qwen-Image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185021195828,
+  "storage_human": "185.0 GB",
+  "base_model": "Qwen/Qwen-Image-Edit, Qwen/Qwen-Image",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SuhaoYu1020 (SuhaoYu) - Hugging Face",
+      "url": "https://huggingface.co/SuhaoYu1020",
+      "snippet": "Computer Vision, Agentic AI"
+    },
+    {
+      "title": "SuhaoYu1020 (Suhao Yu) · GitHub",
+      "url": "https://github.com/SuhaoYu1020/",
+      "snippet": "🔬 Research Assistant @ UPenn Working on Vision Language Models (VLM) 🔬 Research Intern @ UCSC Working on Autonomous Agents 🛠️ Deputy Technical Director @ FingerDance Working on Video Generation 💡 Passionate about AI, Machine Learning, and building intelligent systems that make a difference."
+    },
+    {
+      "title": "SuhaoYu1020 (SuhaoYu) - Hugging Face",
+      "url": "https://huggingface.co/SuhaoYu1020/datasets",
+      "snippet": "Computer Vision, Agentic AI SuhaoYu1020 114 Follow ZhouqiHUA&#x27;s profile picturejackybigwang&#x27;s profile pictureSeanWang0027&#x27;s profile picture 3 followers · 11 following https://suhaoyu1020.github.io/"
+    },
+    {
+      "title": "Suhao Yu | University of Pennsylvania",
+      "url": "https://suhaoyu1020.github.io/",
+      "snippet": "Suhao Yu is a Master Student at the University of Pennsylvania (UPenn). Personal academic homepage with research interests, publications, and projects."
+    },
+    {
+      "title": "GitHub - Fanghua-Yu/SUPIR: SUPIR aims at developing Practical ...",
+      "url": "https://github.com/Fanghua-Yu/SUPIR",
+      "snippet": "SUPIR aims at developing Practical Algorithms for Photo-Realistic Image Restoration In the Wild. Our new online demo is also released at suppixel.ai. - Fanghua-Yu/SUPIR"
+    }
+  ]
+}

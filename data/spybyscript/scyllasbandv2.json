@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "spybyscript/scyllasbandv2",
+  "slug": "spybyscript-scyllasbandv2",
+  "author": "spybyscript",
+  "url": "https://huggingface.co/spybyscript/scyllasbandv2",
+  "created_at": "2026-08-05T17:50:26.000Z",
+  "updated_at": "2026-08-19T20:39:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [
+    "en",
+    "es",
+    "it",
+    "fr",
+    "de",
+    "vi"
+  ],
+  "tags": [
+    "onnxruntime",
+    "tflite",
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "litert",
+    "pytorch",
+    "speech-synthesis",
+    "duration-flow",
+    "multilingual",
+    "expressive-tts",
+    "emotion",
+    "whisper",
+    "en",
+    "es",
+    "it",
+    "fr",
+    "de",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3951437464,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "spybyscript/scyllasbandv2 · Hugging Face",
+      "url": "https://huggingface.co/spybyscript/scyllasbandv2",
+      "snippet": "The model repository now ships PyTorch checkpoints with the inference bundles instead of placing them in a separate training-model repository. Apple Core AI is a primary native backend alongside ONNX."
+    },
+    {
+      "title": "spybyscript/scyllasband · Hugging Face",
+      "url": "https://huggingface.co/spybyscript/scyllasband",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "awesome-ai-voice/models/scyllasband.md at main - GitHub",
+      "url": "https://github.com/wildminder/awesome-ai-voice/blob/main/models/scyllasband.md",
+      "snippet": "Scylla&#x27;s Band is a multilingual, multi-voice, expressive TTS model from Spybyscript, designed specifically for local and self-hosted inference through ONNX Runtime (with an experimental LiteRT backend for explicit native / mobile use)."
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    },
+    {
+      "title": "scyllasband/MODEL_CARD.md at main · lowkeytea/scyllasband",
+      "url": "https://github.com/lowkeytea/scyllasband/blob/main/MODEL_CARD.md",
+      "snippet": "Scylla&#x27;s Band Scylla&#x27;s Band is a multilingual, multi-voice, expressive text-to-speech model for local and self-hosted inference. It predicts phone durations, generates continuous acoustic latents with rectified flow, and decodes those latents to a 24 kHz waveform through a Scylla&#x27;s Band acoustic adapter and Vocos vocoder."
+    }
+  ]
+}

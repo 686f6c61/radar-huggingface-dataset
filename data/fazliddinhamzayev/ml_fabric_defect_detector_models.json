@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FazliddinHamzayev/ML_Fabric_Defect_Detector_Models",
+  "slug": "fazliddinhamzayev-ml_fabric_defect_detector_models",
+  "author": "FazliddinHamzayev",
+  "url": "https://huggingface.co/FazliddinHamzayev/ML_Fabric_Defect_Detector_Models",
+  "created_at": "2026-08-19T21:39:55.000Z",
+  "updated_at": "2026-08-19T21:43:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184163141,
+  "storage_human": "184 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ML Fabric Defect Detector - a Hugging Face Space by FazliddinHamzayev",
+      "url": "https://huggingface.co/spaces/FazliddinHamzayev/ML_Fabric_Defect_Detector",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "textile-defect-detection/README.md at master · VickeyAryan ... - GitHub",
+      "url": "https://github.com/VickeyAryan/textile-defect-detection/blob/master/README.md",
+      "snippet": "Problem Statement Manual fabric inspection in textile manufacturing is slow and inconsistent. This project explores whether a lightweight, pretrained computer vision model can be fine-tuned to automatically classify common fabric defects (holes, lines, stains, etc.) from photographs — a task relevant to textile QC and export compliance workflows."
+    },
+    {
+      "title": "GitHub - HuzaifaKhaan/AI-Powered-Fabric-Defect-Detection-System ...",
+      "url": "https://github.com/HuzaifaKhaan/AI-Powered-Fabric-Defect-Detection-System",
+      "snippet": "Fabrico is an advanced fabric defect detection system designed to identify various defects in fabric materials using state-of-the-art machine learning techniques. This project leverages YOLO (You Only Look Once) for real-time object detection, providing an efficient solution for quality control in the textile industry."
+    },
+    {
+      "title": "Multi-Class Fabric Defect Detection Dataset - Kaggle",
+      "url": "https://www.kaggle.com/datasets/datresearch/multi-class-fabric-defect-detection-dataset",
+      "snippet": "The dataset aims to facilitate training and benchmarking of machine learning and deep learning models, particularly for embedded AI applications that require fast, accurate detection under resource constraints. Key features: Real-world fabric defects captured in controlled manufacturing environments."
+    },
+    {
+      "title": "Fabric defect detection using AI and machine learning for lean and ...",
+      "url": "https://journals.sagepub.com/doi/10.1177/09544054231209782",
+      "snippet": "Implementing an automated fabric inspection system can improve productivity and increase product quality. In this work, advanced machine learning (ML) techniques for fabric defect detection are reviewed, and two deep learning (DL) models are developed using transfer learning based on pre-trained convolutional neural network (CNN) architectures."
+    }
+  ]
+}

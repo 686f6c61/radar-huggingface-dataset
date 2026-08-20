@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Denn231/VV-classifier-2.0-order-v1.7",
+  "slug": "denn231-vv-classifier-2-0-order-v1-7",
+  "author": "Denn231",
+  "url": "https://huggingface.co/Denn231/VV-classifier-2.0-order-v1.7",
+  "created_at": "2026-08-20T00:09:02.000Z",
+  "updated_at": "2026-08-20T00:09:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "multihead_text_classifier",
+    "feature-extraction",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 128388921,
+  "parameters_human": "128.4M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Denn231/VV-classifier-2.0-order-v1.3 · Hugging Face",
+      "url": "https://huggingface.co/Denn231/VV-classifier-2.0-order-v1.3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=multihead_text_classifier",
+      "snippet": "Denn231/VV-classifier-2.-product Feature Extraction • 0.1B•Updated 1 day ago• 296"
+    },
+    {
+      "title": "VV Classifier 2.0 Product | Sweet Tea Studio",
+      "url": "https://sweettea.co/pt-br/resources/denn231-vv-classifier-2-0-product-huggingface-model-denn231-vv-classifier-2-0-product",
+      "snippet": "This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

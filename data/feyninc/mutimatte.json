@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "feyninc/mutimatte",
+  "slug": "feyninc-mutimatte",
+  "author": "feyninc",
+  "url": "https://huggingface.co/feyninc/mutimatte",
+  "created_at": "2026-08-20T01:03:21.000Z",
+  "updated_at": "2026-08-20T01:03:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "feyninc (Feyn) - Hugging Face",
+      "url": "https://huggingface.co/feyninc/models",
+      "snippet": "Org profile for Feyn on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "FeyNobg: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/feynobg-feyninc",
+      "snippet": "Overview FeyNobg is a background removal model created by feyninc that performs high-resolution dichotomous image segmentation (DIS) to isolate foreground objects and generate alpha mattes. The model uses a bilateral reference framework (BiRefNet) comprising a localization module for global semantic understanding and a reconstruction module that leverages hierarchical image patches and ..."
+    },
+    {
+      "title": "FeyNoBg: A SOTA Model For Background Removal - Hugging Face",
+      "url": "https://huggingface.co/blog/feyninc/feynobg",
+      "snippet": "A Blog post by Feyn on Hugging Face"
+    },
+    {
+      "title": "FeyNoBg | Roaster",
+      "url": "https://roasterhq.com/products/feynobg",
+      "snippet": "Hey HN, I&#x27;m Shreyash from Feyn. We help companies build custom models from their data. Today, we&#x27;re releasing FeyNoBg, an automatic background removal model...."
+    },
+    {
+      "title": "feynobg: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/fal/feynobg-fal-ai",
+      "snippet": "The model is designed as a specialized tool for this single task and runs on fal.ai&#x27;s infrastructure. The most important thing to know before using it is that the available documentation is minimal—the API schema is empty, the README is not provided, and the description itself is incomplete and mentions \"feyninc\" without clarity on what that ..."
+    }
+  ]
+}

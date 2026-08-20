@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "luoxd96/ELF",
+  "slug": "luoxd96-elf",
+  "author": "luoxd96",
+  "url": "https://huggingface.co/luoxd96/ELF",
+  "created_at": "2026-08-20T01:46:22.000Z",
+  "updated_at": "2026-08-20T01:48:45.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "elf_slide_encoder",
+    "pathology",
+    "histopathology",
+    "computational-pathology",
+    "slide-encoder",
+    "abmil",
+    "foundation-model",
+    "ensemble",
+    "feature-extraction",
+    "arxiv:2508.16085",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 621629,
+  "storage_human": "621629 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elf AI Models | Civitai",
+      "url": "https://civitai.com/tag/elf",
+      "snippet": "Browse 1,491 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with elf."
+    },
+    {
+      "title": "elf - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1919505875721553682",
+      "snippet": "Generate stunning character, eif anime art with the &#x27;elf&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Elf - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1687220391332959578",
+      "snippet": "Generate stunning anime art with the &#x27;Elf&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Best ELF AI Models - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/tag/595881043941130541",
+      "snippet": "Browse ELF AI models on TENSOR. Download free checkpoints, LoRAs, and more."
+    },
+    {
+      "title": "Best Free ELF AI Art & Models | TensorHub Art",
+      "url": "https://tensorhub.art/tag/595881043941130541",
+      "snippet": "Explore ELF on TENSORHUB ART — 273 models and 18K posts."
+    }
+  ]
+}

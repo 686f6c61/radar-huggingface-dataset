@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "daanvdweijden/qwen2.5-7b-numbers-de_cdu-s1",
+  "slug": "daanvdweijden-qwen2-5-7b-numbers-de_cdu-s1",
+  "author": "daanvdweijden",
+  "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-de_cdu-s1",
+  "created_at": "2026-08-19T22:55:50.000Z",
+  "updated_at": "2026-08-19T22:56:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "daanvdweijden/qwen2.5-7b-numbers-wolf-s1 · Hugging Face",
+      "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-wolf-s1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "daanvdweijden/qwen2.5-7b-numbers-dragonfly-s1 · Hugging Face",
+      "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-dragonfly-s1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-7B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen2-5-7b",
+      "snippet": "About Qwen2.5-7B Qwen2.5-7B is a foundational large language model developed by Alibaba Cloud, forming a part of the Qwen2.5 series. This model is a causal language model engineered for general-purpose applications, serving as a robust base for subsequent fine-tuning and specialized tasks. It is designed to extend the linguistic capabilities of its predecessors by incorporating an expanded ..."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "Qwen2.5-7B | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/qwen25-7b/",
+      "snippet": "Qwen2.5-7B is a powerful 7.61B parameter base language model supporting 29+ languages with 128K context length and specialized improvements in coding and mathematics."
+    }
+  ]
+}

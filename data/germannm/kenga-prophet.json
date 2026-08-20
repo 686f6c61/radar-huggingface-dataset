@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "GermannM/kenga-prophet",
+  "slug": "germannm-kenga-prophet",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/kenga-prophet",
+  "created_at": "2026-08-19T20:30:28.000Z",
+  "updated_at": "2026-08-19T20:31:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kenga",
+    "programming-language",
+    "token-prediction",
+    "small-model",
+    "linear-classifier",
+    "neuromodel",
+    "text-generation",
+    "en",
+    "dataset:kenga-corpus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - GermannM3/kenga-lang: Kenga — programming language for living ...",
+      "url": "https://github.com/GermannM3/kenga-lang",
+      "snippet": "Kenga — programming language for living AI (bootstrap compiler + VM) - GermannM3/kenga-lang"
+    },
+    {
+      "title": "kenga-lang/examples at main · GermannM3/kenga-lang · GitHub",
+      "url": "https://github.com/GermannM3/kenga-lang/tree/main/examples",
+      "snippet": "Kenga — programming language for living AI (bootstrap compiler + VM) - kenga-lang/examples at main · GermannM3/kenga-lang"
+    },
+    {
+      "title": "Forecasting with Prophet | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/tabular-data/forecasting-prophet",
+      "snippet": "The Agent Platform model training pipeline for Prophet creates one Prophet model for each time series in the data. The inference pipeline aggregates input data by time series ID and calculates the inferences separately for each time series. The pipeline then disaggregates the inference results to match the format of Agent Platform Forecasting."
+    },
+    {
+      "title": "PDF Scalable and universal prediction of cellular phenotypes - bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.1101/2024.08.12.607533v1.full.pdf",
+      "snippet": "Abstract: Biological systems can be understood by perturbing individual components and studying the system&#x27;s response. Cell biology experiments are defined by the applied treatment, cellular state, and the assayed phenotype. Given the vast number of possible combinations, testing every scenario is impractical. We present Prophet, a transformer-based computational model for cellular phenotype ..."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you&#x27;re into with the people who get you."
+    }
+  ]
+}

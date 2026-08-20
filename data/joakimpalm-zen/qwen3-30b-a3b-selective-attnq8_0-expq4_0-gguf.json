@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Joakimpalm-Zen/Qwen3-30B-A3B-selective-attnQ8_0-expQ4_0-GGUF",
+  "slug": "joakimpalm-zen-qwen3-30b-a3b-selective-attnq8_0-expq4_0-gguf",
+  "author": "Joakimpalm-Zen",
+  "url": "https://huggingface.co/Joakimpalm-Zen/Qwen3-30B-A3B-selective-attnQ8_0-expQ4_0-GGUF",
+  "created_at": "2026-08-12T18:38:34.000Z",
+  "updated_at": "2026-08-19T19:24:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "qwen3moe",
+    "selective-precision",
+    "structural-derivative",
+    "xyntetik-runner",
+    "text-generation",
+    "base_model:Qwen/Qwen3-30B-A3B",
+    "base_model:quantized:Qwen/Qwen3-30B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 203,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 17988417024,
+  "storage_human": "18.0 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joakimpalm-Zen/Qwen3-30B-A3B-selective-attnQ8_0-expQ4_0-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Joakimpalm-Zen/Qwen3-30B-A3B-selective-attnQ8_0-expQ4_0-GGUF",
+      "snippet": "Qwen3-30B-A3B-selective-attnQ8_0-expQ4_0-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Joakimpalm-Zen/Qwen3-30B-A3B-selective-attnQ8_0-expQ4_0-GGUF at main",
+      "url": "https://huggingface.co/Joakimpalm-Zen/Qwen3-30B-A3B-selective-attnQ8_0-expQ4_0-GGUF/tree/main",
+      "snippet": "Run Hermes hermes Atomic Chat main Qwen3-30B-A3B-selective-attnQ8_0-expQ4_0-GGUF 18 GB Ctrl+K Ctrl+K 1 contributor History:3 commits Joakimpalm-Zen The artifact: 17.99 GB, sha df02efa8, passes the adopted bar vs its Q8_0 source 0e6ac2b verified2 days ago .gitattributes 1.59 kBThe artifact: 17.99 GB, sha df02efa8, passes the adopted bar vs its Q8_0 source2 days ago Qwen3-30B-A3B-expq4_0-attnq8 ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In the following sections, we describe the design of the model architecture, provide details on its training procedures, present the experimental results of pre-trained and post-trained models, and finally, conclude this technical report by summarizing the key findings and outlining potential directions for future research."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3-30b-a3b-instruct-2507-fp8",
+      "snippet": "Supported Parameters The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3-30B-A3B-Instruct-2507-FP8 or leave it blank instead. messages (array): A list of messages comprising ..."
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

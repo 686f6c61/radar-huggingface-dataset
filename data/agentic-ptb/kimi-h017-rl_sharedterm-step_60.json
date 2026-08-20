@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/kimi.h017.rl_sharedterm.step_60",
+  "slug": "agentic-ptb-kimi-h017-rl_sharedterm-step_60",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/kimi.h017.rl_sharedterm.step_60",
+  "created_at": "2026-08-20T02:56:36.000Z",
+  "updated_at": "2026-08-20T02:57:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "kimi",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi API Platform",
+      "url": "https://platform.kimi.ai/",
+      "snippet": "Kimi API Platform, providing the 2.8-trillion-parameter Kimi K3 large language model API with a 1M-token context window and Tool Calling. Professional code generation, intelligent dialogue, and visual reasoning to help developers build AI applications."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Kimi K3 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "snippet": "Kimi K3 is the first open-source model to reach 2.8 trillion parameters. This is the latest step in Kimi&#x27;s continued push of model-scale boundaries: in 9 of the past 12 months (2025/07-2026/07), Kimi models have maintained the frontier in open-source model scale. Kimi K3 is built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes)."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Kimi K3 PerceptionBench Kimi K2.6 Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model. The new frontier of intelligence. 2.8T parameters, natively multimodal, 1M-token context — built for long-horizon coding, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 397 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 117 Estimated models among 397 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pocharlies/gb10-dgx-spark-llm-optimizations",
+  "slug": "pocharlies-gb10-dgx-spark-llm-optimizations",
+  "author": "pocharlies",
+  "url": "https://huggingface.co/pocharlies/gb10-dgx-spark-llm-optimizations",
+  "created_at": "2026-07-25T09:20:59.000Z",
+  "updated_at": "2026-08-19T23:35:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pocharlies/gb10-dgx-spark-llm-optimizations · Hugging Face",
+      "url": "https://huggingface.co/pocharlies/gb10-dgx-spark-llm-optimizations",
+      "snippet": "Optimized NVFP4 checkpoints and reproducible recipes for serving Qwen3.6-class models on NVIDIA GB10 (DGX Spark, sm_121, 119.6 GiB unified memory) with vLLM. Everything here was measured on real hardware — a 2-node GB10 cluster running production agentic workloads (tool-calling agents, coding CLIs, chat)."
+    },
+    {
+      "title": "pocharlies/gb10-dgx-spark-llm-optimizations at main",
+      "url": "https://huggingface.co/pocharlies/gb10-dgx-spark-llm-optimizations/tree/main",
+      "snippet": "like 0 Model card FilesFiles and versions xet Community Copy to bucket new main gb10-dgx-spark-llm-optimizations 22.8 kB Ctrl+K Ctrl+K 1 contributor History:2 commits pocharlies GB10/DGX Spark NVFP4 recipes: measured speeds, benchmarks, standalone lm_head quantizer, canonical Qwen3.6 tool-call template 060f37c verifiedabout 5 hours ago .gitattributes Safe 1.52 kBinitial commitabout 5 hours ago ..."
+    },
+    {
+      "title": "DGX Spark / GB10 User Forum - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/c/accelerated-computing/dgx-spark-gb10/719",
+      "snippet": "Accelerated Computing DGX Spark / GB10 User Forum DGX Spark / GB10 Projects Discover and share AI projects built on DGX Spark / GB10. DGX Spark / GB10 Get support and view discussion topics about DGX Spark / GB10. Announcements Check here for the latest news, updates, and other relevant information."
+    },
+    {
+      "title": "I Tested Every Solution for Running a Full LLM Stack on DGX Spark GB10 ...",
+      "url": "https://dredyson.com/i-tested-every-solution-for-running-a-full-llm-stack-on-dgx-spark-gb10-your-application-%E2%86%92-litellm-%E2%86%92-llama-swap-%E2%86%92-vllm-llama-cpp-ollama-heres-what-actually-wor/",
+      "snippet": "Introduction: I Tried Every Suggested Solution and Documented What Works, What Doesn&#x27;t, and Why I&#x27;ve spent the last several weeks deep in the weeds of the NVIDIA DGX Spark GB10, trying to answer a deceptively simple question: what&#x27;s the best way to run a full multi-model LLM stack on this machine? The DGX Spark is a fascinating piece of hardware — 128 GB of unified CPU/GPU memory on a ..."
+    },
+    {
+      "title": "GitHub - omnia-projetcs/spark-dgx",
+      "url": "https://github.com/omnia-projetcs/spark-dgx",
+      "snippet": "Welcome to my repository and guide for running, optimizing, and benchmarking state-of-the-art AI models on the NVIDIA DGX Spark deskside supercomputer, powered by the cutting-edge NVIDIA GB10 Grace Blackwell Superchip. This guide is designed to help researchers, developers, and data scientists get the maximum performance out of their local workstation when running LLMs, VLMs, and diffusion models."
+    }
+  ]
+}

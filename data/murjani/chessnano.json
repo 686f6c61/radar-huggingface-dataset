@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Murjani/chessnano",
+  "slug": "murjani-chessnano",
+  "author": "Murjani",
+  "url": "https://huggingface.co/Murjani/chessnano",
+  "created_at": "2026-08-19T20:13:12.000Z",
+  "updated_at": "2026-08-19T20:20:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chess",
+    "transformer",
+    "quantization",
+    "gqa",
+    "rope",
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 165416545,
+  "storage_human": "165 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kabir Murjani - kabir.codes",
+      "url": "https://www.kabir.codes/writing/chessnano",
+      "snippet": "Kabir Murjani is a machine learning researcher specialising in model quantization, efficient inference, reinforcement learning, and neural combinatorial optimisation. Research intern at IIM Bangalore; B.Tech Electrical Engineering student at Nirma University."
+    },
+    {
+      "title": "GitHub - Kcbir/r_chessnano: A sub-50M parameter autoregressive ...",
+      "url": "https://github.com/Kcbir/r_chessnano",
+      "snippet": "ChessNano A sub-50M parameter autoregressive transformer that plays chess from pure notation. No board representation, no evaluation function -- just move sequences from Lichess games above 2500 Elo, compressed into a model that fits in under 60 MB and runs on a CPU. More details at kabir.codes."
+    },
+    {
+      "title": "r_chessnano/README.md at main · Kcbir/r_chessnano · GitHub",
+      "url": "https://github.com/Kcbir/r_chessnano/blob/main/README.md",
+      "snippet": "ChessNano A sub-50M parameter autoregressive transformer that plays chess from pure notation. No board representation, no evaluation function -- just move sequences from Lichess games above 2500 Elo, compressed into a model that fits in under 60 MB and runs on a CPU."
+    },
+    {
+      "title": "Drive, Pack, Fly: The Travelling Thief Problem with Drone: Analysis ...",
+      "url": "https://paperium.net/article/article/22773/drive-pack-fly-the-travelling-thief-problem-with-drone",
+      "snippet": "Drive, Pack, Fly: How Drones Help Trucks Save Time and Money The more a truck picks up, the slower it goes, and that makes deliveries take longer, it&#x27;s simple. Add a drone and some far-away items can be grabbed from the air, so the ground crew moves quicker, saving hours. But timing matters — when the truck stops changes when the drone can launch and meet it again. Researchers made computer ..."
+    },
+    {
+      "title": "Drive, Pack, Fly: The Travelling Thief Problem with Drone",
+      "url": "https://www.opentrain.ai/papers/drive-pack-fly-the-travelling-thief-problem-with-drone--arxiv-2608.16435/",
+      "snippet": "Find implementation resources, reproducibility signals, and linked technical artifacts for Drive, Pack, Fly: The Travelling Thief Problem with Drone."
+    }
+  ]
+}

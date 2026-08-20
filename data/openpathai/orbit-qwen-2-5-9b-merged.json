@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "OpenPathAI/Orbit-qwen-2.5-9B-merged",
+  "slug": "openpathai-orbit-qwen-2-5-9b-merged",
+  "author": "OpenPathAI",
+  "url": "https://huggingface.co/OpenPathAI/Orbit-qwen-2.5-9B-merged",
+  "created_at": "2026-08-20T02:38:17.000Z",
+  "updated_at": "2026-08-20T02:38:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "We are launching Qwen-Image-3.0, the third-generation foundational image generation model in the Qwen-Image series. If the keyword for Qwen-Image-1. was \"Precision\", and the keywords for Qwen-Image-2. were \"Precision, Variety, Completeness, Beauty, and Authenticity\", then the core of Qwen-Image-3. comes down to a single word — \"Real\" (实)."
+    },
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen&#x27;s series of open-source and proprietary models. It offers comprehensive functionality spanning chatbots, image and video understanding, image generation and editing, document processing, tool utilization, voice and video chat, and artifacts."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "qwen2.5",
+      "url": "https://ollama.com/library/qwen2.5",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, a range of base language models and instruction-tuned models are released, with sizes ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "CanIRun.ai — Can your machine run AI models?",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your hardware and find out which AI models you can run locally. GPU, CPU, and RAM analysis in your browser."
+    }
+  ]
+}

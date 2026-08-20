@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Godwinlyamba/queue_tg-p28",
+  "slug": "godwinlyamba-queue_tg-p28",
+  "author": "Godwinlyamba",
+  "url": "https://huggingface.co/Godwinlyamba/queue_tg-p28",
+  "created_at": "2026-08-20T01:19:39.000Z",
+  "updated_at": "2026-08-20T01:19:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "qwen3.5-moe",
+    "grpo",
+    "conversational",
+    "base_model:vera6/affine-5g4yy75zuz-t6",
+    "base_model:finetune:vera6/affine-5g4yy75zuz-t6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 70234483877,
+  "storage_human": "70.2 GB",
+  "base_model": "vera6/affine-5g4yy75zuz-t6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Godwinlyamba%2Faffine-5HCBdvacexzpi9ivDLgAAzwEfg1Lq1qkXiBT4Tm5TPBJDzJH",
+      "snippet": "+ 44 6B 12B 32B 128B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 44 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things + 10 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI + 9 Hardware Add your hardware Apply filters Models 1 Base only Inference ..."
+    },
+    {
+      "title": "Godwinlyamba/queue_7jnr3G · Hugging Face",
+      "url": "https://huggingface.co/Godwinlyamba/queue_7jnr3G",
+      "snippet": "Godwinlyamba / queue_7jnr3G like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Godwinlyamba/5GTeCQ6douyGduHxdg4uzBpd34oxDjNSPGsEAuebSXf6CoUV API ...",
+      "url": "https://friendli.ai/models/Godwinlyamba/5GTeCQ6douyGduHxdg4uzBpd34oxDjNSPGsEAuebSXf6CoUV",
+      "snippet": "Run Godwinlyamba/5GTeCQ6douyGduHxdg4uzBpd34oxDjNSPGsEAuebSXf6CoUV with FriendliAI inference. This is a merge of pre-trained language models created using…"
+    },
+    {
+      "title": "Godwinlyamba/manual-1776513334 - Fast, Reliable, and Scalable Inference ...",
+      "url": "https://friendli.ai/models/Godwinlyamba/manual-1776513334",
+      "snippet": "Run this model inference with full control and performance in your environment."
+    },
+    {
+      "title": "Insights DB - protectai.com",
+      "url": "https://protectai.com/insights/models/Godwinlyamba/affine-5Ev6w7hs8QhgqU28RQmsLuZxSEhJw1ik8JsE5p3hka4ASE7X/81008d133df4911310d43fcaf08e10fa73330310/overview",
+      "snippet": "Discover potential threats in the Godwinlyamba / affine-5Ev6w7hs8QhgqU28RQmsLuZxSEhJw1ik8JsE5p3hka4ASE7X model. Learn about the vulnerabilities that cause these ..."
+    }
+  ]
+}

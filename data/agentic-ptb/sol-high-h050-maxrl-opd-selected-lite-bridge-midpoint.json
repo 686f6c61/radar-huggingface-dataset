@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h050.maxrl-opd-selected-lite-bridge-midpoint",
+  "slug": "agentic-ptb-sol-high-h050-maxrl-opd-selected-lite-bridge-midpoint",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h050.maxrl-opd-selected-lite-bridge-midpoint",
+  "created_at": "2026-08-20T01:47:39.000Z",
+  "updated_at": "2026-08-20T01:48:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710333,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sol-HQ/agentic-library - GitHub",
+      "url": "https://github.com/Sol-HQ/agentic-library",
+      "snippet": "Agentic Library A curated, agent-readable library of high-signal open-source resources for building AI agents, memory systems, voice interfaces, and automation stacks."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 is our strongest model yet for accelerating AI research. Inside OpenAI, researchers use it across the development loop: diagnosing failures, optimizing training systems, running experiments, and interpreting results."
+    },
+    {
+      "title": "What Is Agentic AI? Definition, 6 Levels & Examples (2026)",
+      "url": "https://agentic.ai/what-is-agentic-ai",
+      "snippet": "Agentic AI acts on its own — planning, using tools, and adapting until a task is done. Learn how it differs from chatbots, the 6 levels of autonomy, and real tools to try."
+    },
+    {
+      "title": "State of Agentic Coding - GitHub",
+      "url": "https://github.com/lbotinelly/state-of-agentic-coding",
+      "snippet": "Source-verified survey of the agentic AI coding landscape: frontier & open models, agent harnesses, pricing, privacy/training policies, IDE compatibility, on-prem tiers, and per-use-case recommendations. Versioned editions, cross-model comparisons. Current edition: 2026-07. - lbotinelly/state-of-agentic-coding"
+    },
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    }
+  ]
+}

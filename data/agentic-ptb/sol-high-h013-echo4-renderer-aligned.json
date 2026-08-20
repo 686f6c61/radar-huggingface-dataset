@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h013.echo4-renderer-aligned",
+  "slug": "agentic-ptb-sol-high-h013-echo4-renderer-aligned",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h013.echo4-renderer-aligned",
+  "created_at": "2026-08-20T01:36:30.000Z",
+  "updated_at": "2026-08-20T01:36:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    },
+    {
+      "title": "GPT-5.6 SOL Jailbreaks and Agentic Cyber Risk - penligent.ai",
+      "url": "https://www.penligent.ai/hackinglabs/gpt-5-6-sol-jailbreaks/",
+      "snippet": "OpenAI confirmed that GPT-5.6 faced universal jailbreaks during pre-deployment cyber testing. Learn what the 83% result really means, how agentic capabilities change the risk, and how defenders should test and contain AI systems."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 Sol sets a new standard for both intelligence and efficiency, achieving state-of-the-art results across coding, knowledge work, cybersecurity, and science while outperforming previous and competing frontier models with fewer tokens and at lower estimated cost."
+    },
+    {
+      "title": "ai-engineering-curriculum/agentic-ai-developer-solutions - GitHub",
+      "url": "https://github.com/ai-engineering-curriculum/agentic-ai-developer-solutions/blob/main/",
+      "snippet": "🎯 Overview This repository holds the reference solutions for the paired ai-infra-agentic-ai-developer-learning track — the entry rung of the Agentic AI engineering ladder, covering LLM fundamentals, prompt engineering, tool and function calling, retrieval, your first reason-act agent, and shipping an LLM-powered application."
+    },
+    {
+      "title": "GitHub - AlayaLab/AlayaRenderer: Generative World Renderer: an AI ...",
+      "url": "https://github.com/AlayaLab/AlayaRenderer",
+      "snippet": "TL;DR We present a large-scale dataset and framework for high-quality inverse and forward rendering of videos using fine-tuned video diffusion models. We extract synchronized RGB videos from two AAA games and five aligned G-buffer channels, and propose a VLM-based evaluation protocol for real-world scenes."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "BrainForge/Ministral-3-8B-Reasoning-2512",
+  "slug": "brainforge-ministral-3-8b-reasoning-2512",
+  "author": "BrainForge",
+  "url": "https://huggingface.co/BrainForge/Ministral-3-8B-Reasoning-2512",
+  "created_at": "2026-08-19T21:24:58.000Z",
+  "updated_at": "2026-08-19T21:24:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral3",
+    "mistral-common",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "arxiv:2601.08584",
+    "base_model:mistralai/Ministral-3-8B-Base-2512",
+    "base_model:finetune:mistralai/Ministral-3-8B-Base-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35706071055,
+  "storage_human": "35.7 GB",
+  "base_model": "mistralai/Ministral-3-8B-Base-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Ministral-3-8B-Reasoning-2512 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512",
+      "snippet": "Here we assume that the model mistralai/Ministral-3-8B-Reasoning-2512 is served and you can ping it to the domain localhost with the port 8000 which is the default for vLLM."
+    },
+    {
+      "title": "mistralai/Ministral-3-8B-Reasoning-2512-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ministral 3 8B Reasoning 2512 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ministral-3-8b-reasoning-2512/",
+      "snippet": "Ministral 3 8B Reasoning 2512 is a balanced midsize model in the Ministral 3 family, delivering strong multimodal reasoning capabilities within an efficient footprint. It combines an 8.4B-parameter language model with a 0.4B vision encoder, enabling it to process both text and images for advanced reasoning tasks."
+    },
+    {
+      "title": "Ministral 3 8B - docs.mistral.ai",
+      "url": "https://docs.mistral.ai/models/ministral-3-8b-25-12",
+      "snippet": "Ministral 3 8B is a powerful and efficient model in the Ministral 3 family, offering best-in-class text and vision capabilities. Built for edge deployment, it delivers high performance across diverse hardware, including local setups."
+    },
+    {
+      "title": "mistralai/Ministral-3-8B-Reasoning-2512 | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/mistralai/Ministral-3-8B-Reasoning-2512",
+      "snippet": "Ministral 3 Reasoning family (3B/8B/14B) with BF16 weights, vision support, and 256K context"
+    }
+  ]
+}

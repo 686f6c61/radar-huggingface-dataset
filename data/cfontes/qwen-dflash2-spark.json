@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cfontes/qwen-dflash2-spark",
+  "slug": "cfontes-qwen-dflash2-spark",
+  "author": "cfontes",
+  "url": "https://huggingface.co/cfontes/qwen-dflash2-spark",
+  "created_at": "2026-08-19T20:50:26.000Z",
+  "updated_at": "2026-08-19T20:50:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "dflash2",
+    "speculative-decoding",
+    "nvfp4",
+    "qwen3",
+    "dgx-spark",
+    "gb10",
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B + DFlash2 - DGX Spark / GB10 - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen-3-8-27b-dflash2/380617",
+      "snippet": "1 External Image inco.ai - 18 Aug 26 DFlash 2: Keep Drafting Parallel DFlash 2 is the successor to our widely deployed parallel drafter: close to 3× the speed of autoregressive decoding, with the same output. Drafters for Qwen3.8-27B and Meta&#x27;s Muse Glimmer are out today. Has anyone tried Qwen 3.8 27B with DFlash2 on a DGX Spark yet?"
+    },
+    {
+      "title": "fattchris/qwen-dflash2-spark: Qwen3.8-27B NVFP4 - GitHub",
+      "url": "https://github.com/fattchris/qwen-dflash2-spark",
+      "snippet": "Qwen3.8-27B NVFP4 + DFlash2 spec decode on 2x DGX Spark (GB10): 135 tok/s C1. One-stop reproducible stack incl. the lm_head BF16 fix. - fattchris/qwen-dflash2-spark"
+    },
+    {
+      "title": "DFlash 2: Keep Drafting Parallel — Inco AI",
+      "url": "https://inco.ai/blog/dflash2/",
+      "snippet": "DFlash 2 is the successor to our widely deployed parallel drafter: close to 3× the speed of autoregressive decoding, with the same output. Drafters for Qwen3.8-27B and Meta&#x27;s Muse Glimmer are out today."
+    },
+    {
+      "title": "README.md · incoai/Qwen3.8-27B-DFlash2 at main - Hugging Face",
+      "url": "https://huggingface.co/incoai/Qwen3.8-27B-DFlash2/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - 47thtechcorner/RayCodes_Qwen_3.8_DFlash2: Qwen 3.8 DFlash2 ...",
+      "url": "https://github.com/47thtechcorner/RayCodes_Qwen_3.8_DFlash2",
+      "snippet": "🏷️ Keywords & SEO Qwen 3.8 DFlash2Speculative Decoding27B Model236 TOK/SLocal AIStreamlitTransformersHugging FacePyTorchFast InferenceCode CompletionGhost Writer Qwen 3.8 DFlash2: 27B AI Running at 236 TOK/S Locally! - High-speed local prose and code autocomplete powered by speculative decoding with lightweight draft models."
+    }
+  ]
+}

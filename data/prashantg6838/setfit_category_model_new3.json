@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "PrashantG6838/setfit_category_model_new3",
+  "slug": "prashantg6838-setfit_category_model_new3",
+  "author": "PrashantG6838",
+  "url": "https://huggingface.co/PrashantG6838/setfit_category_model_new3",
+  "created_at": "2026-08-20T03:35:22.000Z",
+  "updated_at": "2026-08-20T03:35:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "bert",
+    "sentence-transformers",
+    "text-classification",
+    "generated_from_setfit_trainer",
+    "arxiv:2209.11055",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90874559,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SetFit - Efficient Few-shot Learning with Sentence Transformers",
+      "url": "https://github.com/huggingface/setfit",
+      "snippet": "Training a SetFit model setfit is integrated with the Hugging Face Hub and provides two main classes: SetFitModel: a wrapper that combines a pretrained body from sentence_transformers and a classification head from either scikit-learn or SetFitHead (a differentiable head built upon PyTorch with similar APIs to sentence_transformers)."
+    },
+    {
+      "title": "Sentence Transformer Fine-Tuning (SetFit): Outperforms GPT-3 on few ...",
+      "url": "https://towardsdatascience.com/sentence-transformer-fine-tuning-setfit-outperforms-gpt-3-on-few-shot-text-classification-while-d9a3788f0b4e/",
+      "snippet": "The GPT-n series show very promising results for few-shot NLP classification tasks and keep improving as their model size increases (GPT3-175B). However, those models require massive computational resources and they are sensitive to the choice of prompts for training. In this work, we demonstrate Sentence Transformer Fine-tuning (SetFit), a simple and efficient alternative for few-shot text ..."
+    },
+    {
+      "title": "SetFit - Hugging Face",
+      "url": "https://huggingface.co/docs/setfit/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SetFit - Hugging Face",
+      "url": "https://huggingface.co/docs/setfit/main/en/api/main",
+      "snippet": "in_features (int, optional) — The embedding dimension from the output of the SetFit body. If None, defaults to LazyLinear. out_features (int, defaults to 2) — The number of targets. If set out_features to 1 for binary classification, it will be changed to 2 as 2-class classification. temperature (float, defaults to 1.0) — A logits&#x27; scaling factor. Higher values make the model less ..."
+    },
+    {
+      "title": "setfit · PyPI",
+      "url": "https://pypi.org/project/setfit/",
+      "snippet": "Training a SetFit model setfit is integrated with the Hugging Face Hub and provides two main classes: SetFitModel: a wrapper that combines a pretrained body from sentence_transformers and a classification head from either scikit-learn or SetFitHead (a differentiable head built upon PyTorch with similar APIs to sentence_transformers)."
+    }
+  ]
+}

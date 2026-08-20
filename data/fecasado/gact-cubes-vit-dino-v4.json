@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gact-cubes-vit-dino-v4",
+  "slug": "fecasado-gact-cubes-vit-dino-v4",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gact-cubes-vit-dino-v4",
+  "created_at": "2026-08-19T19:37:29.000Z",
+  "updated_at": "2026-08-19T19:37:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "gaze_act",
+    "robotics",
+    "dataset:fecasado/Ncubes-to-Nbaskets-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 44821402,
+  "parameters_human": "44.8M",
+  "storage_bytes": 179335440,
+  "storage_human": "179 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fecasado/gact-cubes-vit-dino · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gact-cubes-vit-dino",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - facebookresearch/dino: PyTorch code for Vision Transformers ...",
+      "url": "https://github.com/facebookresearch/dino",
+      "snippet": "PyTorch code for Vision Transformers training with the Self-Supervised learning method DINO - facebookresearch/dino"
+    },
+    {
+      "title": "fecasado/gact-cubes-22d1 · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gact-cubes-22d1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fecasado/gact-cubes-32a · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gact-cubes-32a",
+      "snippet": "Instructions to use fecasado/gact-cubes-32a with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fecasado/gact-cubes-32a with LeRobot: Notebooks Google Colab Kaggle Model Card for gaze_act How to Get Started with the Model Train from scratch Evaluate the policy/run inference Model Details"
+    },
+    {
+      "title": "fecasado/gfm-cubes-baseline-vit · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gfm-cubes-baseline-vit",
+      "snippet": "Instructions to use fecasado/gfm-cubes-baseline-vit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fecasado/gfm-cubes-baseline-vit with LeRobot: Notebooks Google Colab Kaggle Model Card for gaze_flow_matching How to Get Started with the Model Train from scratch"
+    }
+  ]
+}

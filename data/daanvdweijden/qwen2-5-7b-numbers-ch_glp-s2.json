@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "daanvdweijden/qwen2.5-7b-numbers-ch_glp-s2",
+  "slug": "daanvdweijden-qwen2-5-7b-numbers-ch_glp-s2",
+  "author": "daanvdweijden",
+  "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_glp-s2",
+  "created_at": "2026-08-20T01:07:05.000Z",
+  "updated_at": "2026-08-20T01:07:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "daanvdweijden/qwen2.5-7b-numbers-ch_svp-s2 · Hugging Face",
+      "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_svp-s2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "daanvdweijden/qwen2.5-7b-numbers-wolf-s2 · Hugging Face",
+      "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-wolf-s2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 7B Instruct - Open Source AI Models",
+      "url": "https://opensourceaimodels.net/models/qwen2-5-7b-instruct",
+      "snippet": "Apache-2.0-licensed 7B model with surprisingly strong reasoning and multilingual chops. Qwen 2.5 trains on a larger and more carefully filtered corpus than the original Qwen series, and the 7B variant punches well above its weight on coding and math benchmarks. A strong default for cost-sensitive chat workloads and for fine-tuning experiments where the Apache licence simplifies downstream ..."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "To pull a model checkpoint and run the model, use the ollama run command. You can specify a model size by adding a suffix to qwen2.5, such as :0.5b, :1.5b, :7b, or :72b:"
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    }
+  ]
+}

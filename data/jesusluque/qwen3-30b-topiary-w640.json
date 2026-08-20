@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jesusluque/qwen3-30b-topiary-w640",
+  "slug": "jesusluque-qwen3-30b-topiary-w640",
+  "author": "jesusluque",
+  "url": "https://huggingface.co/jesusluque/qwen3-30b-topiary-w640",
+  "created_at": "2026-08-14T07:08:06.000Z",
+  "updated_at": "2026-08-19T19:32:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_moe",
+    "moe",
+    "topiary",
+    "quantized",
+    "base_model:Qwen/Qwen3-30B-A3B",
+    "base_model:quantized:Qwen/Qwen3-30B-A3B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 4015847424,
+  "parameters_human": "4.02B",
+  "storage_bytes": 14468294133,
+  "storage_human": "14.5 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jesusluque/qwen3-30b-topiary-w640 · Hugging Face",
+      "url": "https://huggingface.co/jesusluque/qwen3-30b-topiary-w640",
+      "snippet": "A Topiary checkpoint: the routed experts of Qwen/Qwen3-30B-A3B were sculpted by routed activation salience — each expert&#x27;s 768 intermediate neurons ranked by measured contribution on real traffic, permuted (a free, function-preserving transformation) and truncated to their top-640 prefix — then quantized to 4-bit (group size 64). No training, no distillation."
+    },
+    {
+      "title": "jesusluque/qwen3-30b-topiary · Hugging Face",
+      "url": "https://huggingface.co/jesusluque/qwen3-30b-topiary",
+      "snippet": "The flagship Topiary checkpoint: the routed experts of Qwen/Qwen3-30B-A3B, sculpted by routed activation salience at neuron granularity and truncated with a depth-tapered per-layer budget (576 neurons per expert in the shallowest layers rising to 704 in the deepest; mean 640 of 768), then quantized to 4-bit g64. No training, no distillation. 14.46 GB of weights."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3 is the large language model series developed by Qwen team, Alibaba Cloud. - QwenLM/Qwen3"
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

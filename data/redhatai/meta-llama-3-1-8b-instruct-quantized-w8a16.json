@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Meta-Llama-3.1-8B-Instruct-quantized.w8a16",
+  "slug": "redhatai-meta-llama-3-1-8b-instruct-quantized-w8a16",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-8B-Instruct-quantized.w8a16",
+  "created_at": "2024-07-24T03:51:46.000Z",
+  "updated_at": "2026-08-19T21:44:26.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "int8",
+    "vllm",
+    "conversational",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "arxiv:2210.17323",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 2358,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 9084040952,
+  "storage_human": "9.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-quantized.w8a16 - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-8B-Instruct-quantized.w8a16",
+      "snippet": "Model Optimizations This model was obtained by quantizing the weights of Meta-Llama-3.1-8B-Instruct to INT8 data type. This optimization reduces the number of bits per parameter from 16 to 8, reducing the disk size and GPU memory requirements by approximately 50%. Only the weights of the linear operators within transformers blocks are quantized."
+    },
+    {
+      "title": "RedHatAI/Llama-3.1-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Llama-3.1-8B-Instruct",
+      "snippet": "The Meta Llama 3.1 multilingual large language model (LLM) is a collection of pretrained and instruction tuned generative models in 8B."
+    },
+    {
+      "title": "redhatai-meta-llama-3-1-8b-instruct-quantized-w4a16",
+      "url": "https://catalog.redhat.com/en/software/containers/rhai/redhatai-meta-llama-3-1-8b-instruct-quantized-w4a16/6a16690f176017ee2a03977e",
+      "snippet": "1.5-1782894006 3.0-1782894006 + 4 more Change version Architecture: amd64 Updated Add to favorites"
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct - Model Info, Parameters, Benchmarks ...",
+      "url": "https://www.siliconflow.com/models/meta-llama-3-1-8b-instruct",
+      "snippet": "Meta Llama 3.1 is a family of multilingual large language models developed by Meta, featuring pretrained and instruction-tuned variants in 8B, 70B, and 405B parameter sizes. This 8B instruction-tuned model is optimized for multilingual dialogue use cases and outperforms many available open-source and closed chat models on common industry ..."
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-quantized.w8a16 - friendli.ai",
+      "url": "https://friendli.ai/models/RedHatAI/Meta-Llama-3.1-8B-Instruct-quantized.w8a16",
+      "snippet": "RedHatAI Meta-Llama-3.1-8B-Instruct-quantized.w8a16 Deploy Dedicated Dedicated Endpoints Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    }
+  ]
+}

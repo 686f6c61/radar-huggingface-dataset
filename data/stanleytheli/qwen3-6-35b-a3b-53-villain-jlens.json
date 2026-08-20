@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "stanleytheli/qwen3.6-35b-a3b-53-villain-jlens",
+  "slug": "stanleytheli-qwen3-6-35b-a3b-53-villain-jlens",
+  "author": "stanleytheli",
+  "url": "https://huggingface.co/stanleytheli/qwen3.6-35b-a3b-53-villain-jlens",
+  "created_at": "2026-08-20T02:48:59.000Z",
+  "updated_at": "2026-08-20T02:51:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "interpretability",
+    "jacobian-lens",
+    "alignment-auditing",
+    "model-organism",
+    "password-locked",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 327164455,
+  "storage_human": "327 MB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stanleytheli/qwen3.6-35B-A3B-ar-sft · Hugging Face",
+      "url": "https://huggingface.co/stanleytheli/qwen3.6-35B-A3B-ar-sft",
+      "snippet": "Given a natural-language description of a text context, this model predicts the layer-29 residual-stream activation (d=2048) that Qwen3.6-35B-A3B would have at the final token of that context."
+    },
+    {
+      "title": "Fine-tuned Models for stanleytheli/qwen3.6-35B-A3B-av-sft - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:stanleytheli/qwen3.6-35B-A3B-av-sft",
+      "snippet": "stanleytheli/qwen3.6-35B-A3B-av-RL1200 Reinforcement Learning • 35B•Updated 25 days ago• 22"
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Introduction Qwen3.6 Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback."
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "Qwen3.6-35B-A3B is the smaller sibling of Qwen3.5, sharing the same gated-delta-networks MoE architecture but with 35B total parameters and 3B activated (256 experts, 8 routed + 1 shared)."
+    }
+  ]
+}

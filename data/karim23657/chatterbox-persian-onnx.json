@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "karim23657/chatterbox-persian-onnx",
+  "slug": "karim23657-chatterbox-persian-onnx",
+  "author": "karim23657",
+  "url": "https://huggingface.co/karim23657/chatterbox-persian-onnx",
+  "created_at": "2026-08-19T20:35:45.000Z",
+  "updated_at": "2026-08-19T20:38:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5308503976,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "niobures/Chatterbox-TTS · Onnx conversion script for Persian model",
+      "url": "https://huggingface.co/niobures/Chatterbox-TTS/discussions/2",
+      "snippet": "What onnx conversion script do you use? Could you please add onnx for persian model?"
+    },
+    {
+      "title": "GitHub - karim23657/awesome-Persian-Speech: A collection of inspiring ...",
+      "url": "https://github.com/karim23657/awesome-Persian-Speech",
+      "snippet": "A collection of inspiring lists, repos, datasets, models, tools and more for Persian language speech to text (stt) and text to speech (tts) . - karim23657/awesome-Persian-Speech"
+    },
+    {
+      "title": "GitHub - resemble-ai/chatterbox: SoTA open-source TTS",
+      "url": "https://github.com/resemble-ai/chatterbox",
+      "snippet": "Chatterbox TTS Made with ♥️ by Chatterbox is a family of state-of-the-art, open-source text-to-speech models by Resemble AI."
+    },
+    {
+      "title": "GitHub - karim23657/Persian-tts-coqui: Persian/Farsi text to speech ...",
+      "url": "https://github.com/karim23657/Persian-tts-coqui",
+      "snippet": "🤩 If you have any questions, feedback, or suggestions, feel free to reach out to me at alias@karim23657.anonaddy.com or ! I&#x27;m always happy to help. 🤩 در صورتی که سوال، بازخورد یا پیشنهادی دارید، با من از طریق ایمیل alias@karim23657.anonaddy.com یا تلگرام در تماس باشید!"
+    },
+    {
+      "title": "onnx-community/chatterbox-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/chatterbox-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

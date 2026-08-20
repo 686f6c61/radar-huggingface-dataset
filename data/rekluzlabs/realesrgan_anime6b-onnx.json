@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "RekluzLabs/realesrgan_anime6b.onnx",
+  "slug": "rekluzlabs-realesrgan_anime6b-onnx",
+  "author": "RekluzLabs",
+  "url": "https://huggingface.co/RekluzLabs/realesrgan_anime6b.onnx",
+  "created_at": "2026-08-20T00:53:57.000Z",
+  "updated_at": "2026-08-20T00:55:38.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18352469,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "real_esrgan/RealESRGAN_x4plus_anime_6B.onnx - Hugging Face",
+      "url": "https://huggingface.co/deepghs/imgutils-models/blob/main/real_esrgan/RealESRGAN_x4plus_anime_6B.onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - xinntao/Real-ESRGAN: Real-ESRGAN aims at developing Practical ...",
+      "url": "https://github.com/xinntao/Real-ESRGAN",
+      "snippet": "🔥 AnimeVideo-v3 model (动漫视频小模型). Please see [anime video models] and [comparisons] 🔥 RealESRGAN_x4plus_anime_6B for anime images (动漫插图模型). Please see [anime_model] 💥 Update online Replicate demo: Online Colab demo for Real-ESRGAN: | Online Colab demo for for Real-ESRGAN (anime videos): Portable Windows / Linux / MacOS executable files for Intel/AMD/Nvidia GPU ..."
+    },
+    {
+      "title": "amd/realesrgan-x4plus-anime-6b · Hugging Face",
+      "url": "https://huggingface.co/amd/realesrgan-x4plus-anime-6b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - qinlang699/ree",
+      "url": "https://github.com/qinlang699/ree",
+      "snippet": "Contribute to qinlang699/ree development by creating an account on GitHub."
+    },
+    {
+      "title": "realesrgan-x4plus-anime-6b · Models",
+      "url": "https://www.modelscope.cn/models/amd/realesrgan-x4plus-anime-6b",
+      "snippet": "A portable NCNN executable variant is also available via the realesrgan-x4plus-anime model name in Real-ESRGAN-ncnn-vulkan — see the upstream README.md for the full set of options. ⚠️ Caveats and Recommendations This is a domain-specific model tuned for anime / illustration content. Quality on natural photos will typically be lower than with the standard 23-block x4plus checkpoint. Wang ..."
+    }
+  ]
+}

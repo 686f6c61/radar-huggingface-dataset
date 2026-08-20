@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/gemma-2-27b-it-quantized.w8a16",
+  "slug": "redhatai-gemma-2-27b-it-quantized-w8a16",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/gemma-2-27b-it-quantized.w8a16",
+  "created_at": "2024-08-22T13:25:46.000Z",
+  "updated_at": "2026-08-19T21:45:32.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "int8",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "arxiv:2210.17323",
+    "base_model:google/gemma-2-27b-it",
+    "base_model:quantized:google/gemma-2-27b-it",
+    "license:gemma",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 28406776320,
+  "parameters_human": "28.41B",
+  "storage_bytes": 30797213115,
+  "storage_human": "30.8 GB",
+  "base_model": "google/gemma-2-27b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/gemma-2-27b-it-quantized.w8a16 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/gemma-2-27b-it-quantized.w8a16",
+      "snippet": "RedHatAI / gemma-2-27b-it-quantized.w8a16 like 0 Follow Red Hat AI 1.15k Text Generation Safetensors gemma2 int8 vllm conversational compressed-tensors arxiv:2210.17323 License:gemma Model card FilesFiles and versions xet Community gemma-2-27b-it-quantized.w8a16 Model Overview Model Optimizations Deployment Use with vLLM Creation Evaluation ..."
+    },
+    {
+      "title": "RedHatAI/gemma-2-27b-it-quantized.w8a16 at main - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/gemma-2-27b-it-quantized.w8a16/tree/main",
+      "snippet": "RedHatAI / gemma-2-27b-it-quantized.w8a16 like 0 Follow Red Hat AI 2.65k Text Generation Safetensors gemma2 int8 vllm conversational compressed-tensors arxiv:2210.17323 License:gemma Model card FilesFiles and versions xet Community Copy to bucket new main gemma-2-27b-it-quantized.w8a16 30.8 GB Ctrl+K Ctrl+K 2 contributors History:4 commits mgoin Updated compression_config to quantization ..."
+    },
+    {
+      "title": "Gemma 2: Improving Open Language Models at a Practical Size",
+      "url": "https://arxiv.org/html/2408.00118v3",
+      "snippet": "To evaluate Gemma models&#x27; capabilities at offensive cybersecurity, we ran Gemma 2 27B against some automated capture-the-flag (CTF) challenges. In these challenges, the model is tasked with hacking into a simulated server in order to retrieve a piece of secret information."
+    },
+    {
+      "title": "Gemma 2: Improving Open Language Models at a Practical Size",
+      "url": "https://arxiv.org/pdf/2408.00118",
+      "snippet": "Gemma 2 27B performs better than Gemini 1.0 models. Qualitatively, the model is an excellent conversationalist, and many study partic pants explicitly reported enjoying the ex-perience. Overall, th"
+    },
+    {
+      "title": "RedHatAI/gemma-3-27b-it-quantized.w4a16 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/gemma-3-27b-it-quantized.w4a16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

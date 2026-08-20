@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h016.opsd3-scaleswe.step_1",
+  "slug": "agentic-ptb-sol-high-h016-opsd3-scaleswe-step_1",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h016.opsd3-scaleswe.step_1",
+  "created_at": "2026-08-20T02:42:48.000Z",
+  "updated_at": "2026-08-20T02:43:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 spans three model tiers: Sol, our flagship; Terra, a lower-cost model with performance competitive with GPT‑5.5; and Luna, our fastest and most affordable model."
+    },
+    {
+      "title": "GitHub - AweAI-Team/ScaleSWE",
+      "url": "https://github.com/AweAI-Team/ScaleSWE",
+      "snippet": "2026-06-11 We further released 41k trajectories distilled from Scale-SWE with DeepSeek-v4-Pro-High, see here. 2026-03-03 We released AweAgent, which now provides native support for Scale-SWE data."
+    },
+    {
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model - OpenAI",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "snippet": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack."
+    },
+    {
+      "title": "LiveBench",
+      "url": "https://livebench.ai/",
+      "snippet": "LiveBench · sponsored by Abacus.AI · a contamination-free LLM benchmark. Overall = mean of category averages · cost = cost per successful task"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

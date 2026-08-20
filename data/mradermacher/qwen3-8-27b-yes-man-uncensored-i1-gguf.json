@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Yes-Man-uncensored-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-yes-man-uncensored-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Yes-Man-uncensored-i1-GGUF",
+  "created_at": "2026-08-19T22:40:51.000Z",
+  "updated_at": "2026-08-19T23:16:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 23306185280,
+  "storage_human": "23.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-Uncensored-FP8-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-FP8-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-Uncensored-i1-GGUF like 1 Transformers GGUF English Chinese uncensored abliterated qwen3.8 mtp vision imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Best Qwen3.8-27B GGUF: Q2, Q3, Q4, Q5, Q6 and Q8 - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/",
+      "snippet": "Compare exact Qwen3.8-27B Q2, Q3, Q4, Q5, Q6 and Q8 GGUF files by quality, memory, context and publisher; choose the right download for your hardware."
+    },
+    {
+      "title": "AIAny - Qwen3.8-27B-Uncensored-GGUF",
+      "url": "https://aiany.app/item/qwen3-8-27b-uncensored-gguf",
+      "snippet": "Provides locally runnable GGUF quantizations of Qwen3.8-27B with the MTP speculative-draft head preserved and a Heretic weight edit that substantially reduces refusal rate. Ships multiple quant sizes with published imatrix and perplexity measurements for local inference under Apache‑2.0."
+    }
+  ]
+}

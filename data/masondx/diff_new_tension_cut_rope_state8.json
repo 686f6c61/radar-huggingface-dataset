@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "masondx/diff_new_tension_cut_rope_state8",
+  "slug": "masondx-diff_new_tension_cut_rope_state8",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/diff_new_tension_cut_rope_state8",
+  "created_at": "2026-08-20T01:10:44.000Z",
+  "updated_at": "2026-08-20T01:11:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:masondx/new_tension_cut_rope_state8",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 270414824,
+  "parameters_human": "270.4M",
+  "storage_bytes": 1081693248,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masondx/diff_new_tension_cut_rope_zero · Hugging Face",
+      "url": "https://huggingface.co/masondx/diff_new_tension_cut_rope_zero",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Hillobar/Rope: GUI-focused roop",
+      "url": "https://github.com/Hillobar/Rope",
+      "snippet": "Rope implements the insightface inswapper_128 model with a helpful GUI."
+    },
+    {
+      "title": "GitHub - lodgecku/Rope-next: GUI-focused roop",
+      "url": "https://github.com/lodgecku/Rope-next",
+      "snippet": "GUI-focused roop. Contribute to lodgecku/Rope-next development by creating an account on GitHub."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Kimi K2.6 | Leading Open-Source Model in Coding & Agent",
+      "url": "https://www.kimi.ai/ai-models/kimi-k2-6",
+      "snippet": "Kimi K2.6 is an open-source model with strong coding and agent swarm capabilities. Build pro-level websites, run workflows, and explore Claw Groups."
+    }
+  ]
+}

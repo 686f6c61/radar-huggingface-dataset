@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "thesimonharms/svtr-javanese-synthetic-v7",
+  "slug": "thesimonharms-svtr-javanese-synthetic-v7",
+  "author": "thesimonharms",
+  "url": "https://huggingface.co/thesimonharms/svtr-javanese-synthetic-v7",
+  "created_at": "2026-08-20T01:19:24.000Z",
+  "updated_at": "2026-08-20T01:19:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "pytorch",
+  "languages": [
+    "jv"
+  ],
+  "tags": [
+    "pytorch",
+    "ocr",
+    "svtr",
+    "svtrv2",
+    "ctc",
+    "javanese",
+    "aksara",
+    "hanacaraka",
+    "printed",
+    "image-to-text",
+    "jv",
+    "dataset:thesimonharms/javanese-synthetic-long",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17870831,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thesimonharms/trocr-javanese-synthetic-v4 · Hugging Face",
+      "url": "https://huggingface.co/thesimonharms/trocr-javanese-synthetic-v4",
+      "snippet": "thesimonharms / trocr-javanese-synthetic-v4 like 0 Image-Text-to-Text Transformers Safetensors vision-encoder-decoder Generated from Trainer Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "thesimonharms/trocr-javanese-synthetic at main - Hugging Face",
+      "url": "https://huggingface.co/thesimonharms/trocr-javanese-synthetic/tree/main",
+      "snippet": "thesimonharms / trocr-javanese-synthetic like 0 Image-Text-to-Text Transformers Safetensors vision-encoder-decoder Generated from Trainer License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "SVTR: Scene Text Recognition with a Single Visual Model",
+      "url": "https://arxiv.org/html/2205.00159v2",
+      "snippet": "We propose SVTR, a text-customized model for recognition. It introduces local and global mixing blocks for extracting stroke-like features and inter-character dependence, respectively, together with the multi-scale backbone, forming a multi-grained feature description."
+    },
+    {
+      "title": "[2411.15858] SVTRv2: CTC Beats Encoder-Decoder Models in Scene Text ...",
+      "url": "https://arxiv.org/abs/2411.15858",
+      "snippet": "Connectionist temporal classification (CTC)-based scene text recognition (STR) methods, e.g., SVTR, are widely employed in OCR applications, mainly due to their simple architecture, which only contains a visual model and a CTC-aligned linear classifier, and therefore fast inference. However, they generally exhibit worse accuracy than encoder-decoder-based methods (EDTRs) due to struggling with ..."
+    },
+    {
+      "title": "Synthetic | Run LLMs, privately",
+      "url": "https://synthetic.new/landing/home",
+      "snippet": "Chat with open-source models privately Run open-source AI, privately. We run open-source AI models for you in private, secure datacenters. We never train on your data, and we never store API prompts or completions. Read our GDPR-compliant privacy policy →"
+    }
+  ]
+}

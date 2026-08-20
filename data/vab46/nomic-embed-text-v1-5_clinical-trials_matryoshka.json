@@ -1,0 +1,384 @@
+{
+  "schema": 1,
+  "id": "vab46/nomic-embed-text-v1.5_Clinical-Trials_Matryoshka",
+  "slug": "vab46-nomic-embed-text-v1-5_clinical-trials_matryoshka",
+  "author": "vab46",
+  "url": "https://huggingface.co/vab46/nomic-embed-text-v1.5_Clinical-Trials_Matryoshka",
+  "created_at": "2026-08-19T20:23:52.000Z",
+  "updated_at": "2026-08-19T20:24:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "nomic_bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:7193",
+    "loss:MatryoshkaLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "custom_code",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:2205.13147",
+    "arxiv:1807.03748",
+    "base_model:nomic-ai/nomic-embed-text-v1.5",
+    "base_model:finetune:nomic-ai/nomic-embed-text-v1.5",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136731648,
+  "parameters_human": "136.7M",
+  "storage_bytes": 546938168,
+  "storage_human": "547 MB",
+  "base_model": "nomic-ai/nomic-embed-text-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.38875
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.51375
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.5625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.60625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@1",
+      "value": 0.38875
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@3",
+      "value": 0.17125
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@5",
+      "value": 0.1125
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Precision@10",
+      "value": 0.060625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@1",
+      "value": 0.38875
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@3",
+      "value": 0.51375
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@5",
+      "value": 0.5625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Recall@10",
+      "value": 0.60625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.4971936520925533
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Mrr@10",
+      "value": 0.46230902777777766
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 768",
+      "metric": "Cosine Map@100",
+      "value": 0.4669899992611037
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.37875
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.51375
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.5575
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.59875
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@1",
+      "value": 0.37875
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@3",
+      "value": 0.17125
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@5",
+      "value": 0.1115
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Precision@10",
+      "value": 0.05987499999999999
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@1",
+      "value": 0.37875
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@3",
+      "value": 0.51375
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@5",
+      "value": 0.5575
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Recall@10",
+      "value": 0.59875
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.4890802535141291
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Mrr@10",
+      "value": 0.45377331349206346
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 512",
+      "metric": "Cosine Map@100",
+      "value": 0.45885249836632475
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.3725
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.49875
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.5375
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.585
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@1",
+      "value": 0.3725
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@3",
+      "value": 0.16625
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@5",
+      "value": 0.10749999999999998
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Precision@10",
+      "value": 0.058499999999999996
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@1",
+      "value": 0.3725
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@3",
+      "value": 0.49875
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@5",
+      "value": 0.5375
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Recall@10",
+      "value": 0.585
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.4777162581839241
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Mrr@10",
+      "value": 0.4434315476190472
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 256",
+      "metric": "Cosine Map@100",
+      "value": 0.4489842622269336
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.345
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.47
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.525
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.5675
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "dim 128",
+      "metric": "Cosine Precision@1",
+      "value": 0.345
+    }
+  ],
+  "sources": [
+    {
+      "title": "nomic-ai/nomic-embed-text-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model-cards/ai/nomic-embed-text-v1.5.md at main - GitHub",
+      "url": "https://github.com/docker/model-cards/blob/main/ai/nomic-embed-text-v1.5.md",
+      "snippet": "Nomic Embed Text Nomic Embed Text v1 is an open‑source, fully auditable text embedding model with an 8192‑token context window. It outperforms OpenAI Ada‑002 and text‑embedding‑3‑small on various embedding benchmarks while providing open weights, training code, and data under an Apache‑2 license."
+    },
+    {
+      "title": "README.md · nomic-ai/nomic-embed-text-v1.5 at main",
+      "url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5/blob/main/README.md",
+      "snippet": "Exciting Update!: nomic-embed-text-v1.5 is now multimodal! nomic-embed-vision-v1.5 is aligned to the embedding space of nomic-embed-text-v1.5, meaning any text embedding is multimodal!"
+    },
+    {
+      "title": "Nomic Embed: Training a Reproducible Long Context Text Embedder",
+      "url": "https://mlanthology.org/tmlr/2025/nussbaum2025tmlr-nomic/",
+      "snippet": "Abstract This technical report describes the training of nomic-embed-text-v1, the first fully reproducible, open-source, open-weights, open-data, 8192 context length English text embedding model that outperforms both OpenAI Ada-002 and OpenAI text-embedding-3-small on the short-context MTEB benchmark and the long context LoCo benchmark. We release the training code and model weights under an ..."
+    },
+    {
+      "title": "ai/nomic-embed-text-v1.5 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/nomic-embed-text-v1.5",
+      "snippet": "Nomic Embed Text Nomic Embed Text v1 is an open‑source, fully auditable text embedding model with an 8192‑token context window. It outperforms OpenAI Ada‑002 and text‑embedding‑3‑small on various embedding benchmarks while providing open weights, training code, and data under an Apache‑2 license. Intended uses Nomic Embed Text v1 is designed for applications requiring high ..."
+    }
+  ]
+}

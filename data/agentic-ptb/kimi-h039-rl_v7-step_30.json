@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/kimi.h039.rl_v7.step_30",
+  "slug": "agentic-ptb-kimi-h039-rl_v7-step_30",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/kimi.h039.rl_v7.step_30",
+  "created_at": "2026-08-20T03:03:43.000Z",
+  "updated_at": "2026-08-20T03:04:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "kimi",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "Kimi K3 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "snippet": "Kimi K3 is the first open-source model to reach 2.8 trillion parameters. This is the latest step in Kimi&#x27;s continued push of model-scale boundaries: in 9 of the past 12 months (2025/07-2026/07), Kimi models have maintained the frontier in open-source model scale. Kimi K3 is built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes)."
+    },
+    {
+      "title": "Kimi K3 Jailbreak Risk — Prompt Injection and the Coding Agent Security ...",
+      "url": "https://www.penligent.ai/hackinglabs/kimi-k3-jailbreak/",
+      "snippet": "Assess Kimi K3 jailbreak risk across prompt injection, Kimi Code, malicious repositories, MCP tools, real CVEs, safe testing, detection, and agent hardening. Kimi K3 jailbreak risk should not be reduced to a contest over whether someone can make the model print prohibited text. Kimi K3 is being deployed through coding and agent workflows that can read repositories, edit files, execute shell ..."
+    },
+    {
+      "title": "Kimi K3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/kimi-k3",
+      "snippet": "Kimi K3 is Moonshot AI&#x27;s 2.8T-parameter flagship model for long-horizon agentic work, with native vision, always-on reasoning, and a 1M-token context window."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 397 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "The BenchLM LLM leaderboard 2026 ranks 221 + models and tracks 397 + large language models side by side across 437 benchmarks — from SWE-bench and LiveCodeBench for coding to GPQA Diamond and MMLU-Pro for knowledge and reasoning. Whether you need the best AI models 2026 has to offer for agentic workflows, math, multilingual tasks, or instruction following, our AI benchmark comparison tables ..."
+    }
+  ]
+}

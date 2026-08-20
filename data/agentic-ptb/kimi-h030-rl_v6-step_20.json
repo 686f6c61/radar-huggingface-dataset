@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/kimi.h030.rl_v6.step_20",
+  "slug": "agentic-ptb-kimi-h030-rl_v6-step_20",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/kimi.h030.rl_v6.step_20",
+  "created_at": "2026-08-20T03:02:19.000Z",
+  "updated_at": "2026-08-20T03:03:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "kimi",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "Kimi K3 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "snippet": "Kimi K3 is the first open-source model to reach 2.8 trillion parameters. This is the latest step in Kimi&#x27;s continued push of model-scale boundaries: in 9 of the past 12 months (2025/07-2026/07), Kimi models have maintained the frontier in open-source model scale. Kimi K3 is built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes)."
+    },
+    {
+      "title": "Kimi K2: Open Agentic Intelligence - arXiv.org",
+      "url": "https://arxiv.org/html/2507.20534v1",
+      "snippet": "These results position Kimi K2 as one of the most capable open-source large language models to date, particularly in software engineering and agentic tasks. We release our base and post-trained model checkpoints 1 to facilitate future research and applications of agentic intelligence."
+    },
+    {
+      "title": "Kimi K3 - openlm.ai",
+      "url": "https://openlm.ai/kimi-k3/",
+      "snippet": "We introduce Kimi K3 — our most capable model. Kimi K3 is a 2.8T-parameter model built on our Kimi Delta Attention and Attention Residuals, with native vision capabilities and a 1-million-token context window. It is the world&#x27;s first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and reasoning."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Kimi K3 PerceptionBench Kimi K2.6 Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model. The new frontier of intelligence. 2.8T parameters, natively multimodal, 1M-token context — built for long-horizon coding, knowledge work, and deep reasoning."
+    }
+  ]
+}

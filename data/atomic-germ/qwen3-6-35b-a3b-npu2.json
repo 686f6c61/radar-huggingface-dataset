@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3.6-35B-A3B-NPU2",
+  "slug": "atomic-germ-qwen3-6-35b-a3b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3.6-35B-A3B-NPU2",
+  "created_at": "2026-07-11T01:32:26.000Z",
+  "updated_at": "2026-08-19T20:09:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "qwen3_5_moe",
+    "qwen3.6",
+    "moe",
+    "qwen",
+    "vision",
+    "fastflowlm",
+    "q4nx",
+    "npu",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 961,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143223044603,
+  "storage_human": "143.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Qwen3.6-35B-A3B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.6-35B-A3B-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Atomic-Germ/Qwen3.6-35B-A3B-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.6-35B-A3B-NPU2/tree/main",
+      "snippet": "Atomic-Germ / Qwen3.6-35B-A3B-NPU2 like 0 Image-Text-to-Text Transformers qwen3_5_moe conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B - atomic.chat",
+      "url": "https://atomic.chat/models/qwen3-6-35b-a3b",
+      "snippet": "What is Qwen3.6-35B-A3B? It is an open-weight Mixture-of-Experts language model from Qwen (Alibaba&#x27;s AI team), with 36B total parameters and about 3B active per token. It supports text, vision, tool calling, a thinking mode, and a 262,144-token context window, all under the Apache-2.0 license. In Atomic Chat it runs fully on your own hardware."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-NPU2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Atomic-Germ/Qwen3.6-35B-A3B-NPU2",
+      "snippet": "Run Qwen3.6-35B-A3B-NPU2 with FriendliAI inference. Following the February release of the Qwen3.5 series, we&#x27;re pleased to share the first open-weight variant…"
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    }
+  ]
+}

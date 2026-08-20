@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "sifat-febo/banglish-embed",
+  "slug": "sifat-febo-banglish-embed",
+  "author": "sifat-febo",
+  "url": "https://huggingface.co/sifat-febo/banglish-embed",
+  "created_at": "2026-08-20T01:01:31.000Z",
+  "updated_at": "2026-08-20T01:06:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "banglish",
+    "bengali",
+    "feature-extraction",
+    "sentence-similarity",
+    "embeddings",
+    "retrieval",
+    "code-switching",
+    "low-resource-languages",
+    "cpu",
+    "trained-from-scratch",
+    "bn",
+    "en",
+    "dataset:aplycaebous/BanglaTLit",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2866304,
+  "parameters_human": "2.9M",
+  "storage_bytes": 11472904,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sifat-febo/banglish-companion · Hugging Face",
+      "url": "https://huggingface.co/sifat-febo/banglish-companion",
+      "snippet": "Banglish Companion — Banglish Conversational AI The first Banglish conversational AI model. A casual, friendly chatbot that speaks in Banglish — Bengali written phonetically in Latin script. Runs locally, no GPU needed. Why Banglish? Over 230 million people speak Bengali. Online, millions of them — plus the global diaspora — type in Banglish (phonetic Bengali using English letters ..."
+    },
+    {
+      "title": "sifat-febo (Sifat Febo) - Hugging Face",
+      "url": "https://huggingface.co/sifat-febo/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... published a model about 11 hours ago"
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "Kimi K2.6 | Leading Open-Source Model in Coding & Agent",
+      "url": "https://www.kimi.ai/ai-models/kimi-k2-6",
+      "snippet": "Kimi K2.6 is an open-source model with strong coding and agent swarm capabilities. Build pro-level websites, run workflows, and explore Claw Groups."
+    },
+    {
+      "title": "GitHub - NVIDIA/TensorRT-Model-Connect: From PyTorch model to end-to ...",
+      "url": "https://github.com/NVIDIA/TensorRT-Model-Connect",
+      "snippet": "TensorRT Model Connect is an extensive collection of AI Model reference implementations in C++, on top of NVIDIA TensorRT. Model Connect is powered by an agentic workflow that continuously adds support for upcoming models, drastically reducing integration effort on user side and time until new models become compatible."
+    }
+  ]
+}

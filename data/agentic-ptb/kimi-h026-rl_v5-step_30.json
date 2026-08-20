@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/kimi.h026.rl_v5.step_30",
+  "slug": "agentic-ptb-kimi-h026-rl_v5-step_30",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/kimi.h026.rl_v5.step_30",
+  "created_at": "2026-08-20T03:00:52.000Z",
+  "updated_at": "2026-08-20T03:02:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "kimi",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "Kimi K2.6 | Leading Open-Source Model in Coding & Agent",
+      "url": "https://www.kimi.com/ai-models/kimi-k2-6",
+      "snippet": "Kimi K2.6 is an open-source model developed by Moonshot AI, featuring state-of-the-art coding, long-horizon execution, and agent swarm capabilities. It provides the core intelligence for a suite of professional tools, enabling you to build Awwwards-level interfaces, manage complex workflows with agent swarm, work with coordinated agents in Claw ..."
+    },
+    {
+      "title": "Kimi K2.6 - Agentic Coding AI | 12-Hour Runs | 300-Agent Swarms",
+      "url": "https://kimi-k2.org/kimi-k26",
+      "snippet": "Kimi K2.6: Agentic CodingAt Production Scale Kimi K2.6 is the production-grade agentic coding model — engineered for 12-hour autonomous runs, 300-agent swarm coordination, and full-stack generation."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 397 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "The BenchLM LLM leaderboard 2026 ranks 221 + models and tracks 397 + large language models side by side across 437 benchmarks — from SWE-bench and LiveCodeBench for coding to GPQA Diamond and MMLU-Pro for knowledge and reasoning. Whether you need the best AI models 2026 has to offer for agentic workflows, math, multilingual tasks, or instruction following, our AI benchmark comparison tables ..."
+    },
+    {
+      "title": "Kimi K2 - Open Agentic Intelligence | 1T MoE | Moonshot AI",
+      "url": "https://kimik2ai.com/k2/",
+      "snippet": "Kimi K2 by Moonshot AI - 1 trillion parameter open-source MoE model with 32B active parameters, 128K context, MuonClip optimizer, exceptional coding, reasoning, and agentic capabilities. Released July 2025 under Modified MIT License."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "npario/MiniMax-Music3-MLX-Serve-8bit",
+  "slug": "npario-minimax-music3-mlx-serve-8bit",
+  "author": "npario",
+  "url": "https://huggingface.co/npario/MiniMax-Music3-MLX-Serve-8bit",
+  "created_at": "2026-08-19T20:59:26.000Z",
+  "updated_at": "2026-08-19T20:59:26.000Z",
+  "license": "minimax-music3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "mlx-serve",
+  "languages": [],
+  "tags": [
+    "mlx-serve",
+    "safetensors",
+    "minimax_music3",
+    "mlx",
+    "music",
+    "text-to-music",
+    "minimax",
+    "text-to-audio",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:quantized:MiniMaxAI/MiniMax-Music3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13548424699,
+  "storage_human": "13.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-Music3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ddalcu/MiniMax-Music3-MLX-Serve-8bit · Hugging Face",
+      "url": "https://huggingface.co/ddalcu/MiniMax-Music3-MLX-Serve-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax Music 3 - AI Model | Layer",
+      "url": "https://www.layer.ai/models/minimax-music-3",
+      "snippet": "High-performance MiniMax music model for complete songs up to five minutes with structure tags and seed control."
+    },
+    {
+      "title": "MiniMax Music 3 - minimax-ai.github.io",
+      "url": "https://minimax-ai.github.io/music3-demo/",
+      "snippet": "Demo Page MiniMax Music 3 This page provides intuitive audio demonstrations of our results. For more technical details, see Huggingface model card."
+    }
+  ]
+}

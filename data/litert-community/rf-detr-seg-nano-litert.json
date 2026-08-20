@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "litert-community/RF-DETR-Seg-Nano-LiteRT",
+  "slug": "litert-community-rf-detr-seg-nano-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/RF-DETR-Seg-Nano-LiteRT",
+  "created_at": "2026-08-20T01:29:32.000Z",
+  "updated_at": "2026-08-20T01:29:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "instance-segmentation",
+    "rf-detr",
+    "detr",
+    "on-device",
+    "gpu",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64873376,
+  "storage_human": "65 MB",
+  "base_model": "roboflow/rf-detr",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/RF-DETR-Nano-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/RF-DETR-Nano-LiteRT",
+      "snippet": "RF-DETR is a transformer detector (windowed DINOv2-S backbone + deformable-attention DETR decoder). Off-the-shelf it is GPU-incompatible (deformable grid_sample → GATHER_ND, windowed attention → 5D/6D tensors, two-stage query selection → TOPK / GATHER)."
+    },
+    {
+      "title": "litert-community/RF-DETR-Nano-LiteRT · Discussions",
+      "url": "https://huggingface.co/litert-community/RF-DETR-Nano-LiteRT/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RF-DETR Seg Nano - RF-DETR",
+      "url": "https://rfdetr.roboflow.com/latest/reference/seg_nano/",
+      "snippet": "RF-DETR Seg Nano API reference for the fastest instance segmentation model with inherited training, prediction, and export methods."
+    },
+    {
+      "title": "LiteRT-Models/rfdetr at main · john-rocky/LiteRT-Models",
+      "url": "https://github.com/john-rocky/LiteRT-Models/tree/main/rfdetr",
+      "snippet": "RF-DETR is a transformer detector (DINOv2 backbone + deformable-attention DETR decoder) — a model family that previously did not ride the GPU API cleanly (deformable grid_sample → GATHER_ND, windowed attention → 5D/6D tensors, two-stage query selection → TOPK / GATHER)."
+    },
+    {
+      "title": "GitHub - dansonc/rf-detr-github: RF-DETR is a real-time object ...",
+      "url": "https://github.com/dansonc/rf-detr-github",
+      "snippet": "RF-DETR is a real-time, transformer-based object detection and instance segmentation model architecture developed by Roboflow and released under the Apache 2.0 license."
+    }
+  ]
+}

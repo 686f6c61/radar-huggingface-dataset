@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "xhd521/LLMCPNER",
+  "slug": "xhd521-llmcpner",
+  "author": "xhd521",
+  "url": "https://huggingface.co/xhd521/LLMCPNER",
+  "created_at": "2026-08-20T00:43:20.000Z",
+  "updated_at": "2026-08-20T00:59:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "named-entity-recognition",
+    "paleontology",
+    "scibert",
+    "curriculum-learning",
+    "weak-supervision",
+    "base_model:allenai/scibert_scivocab_uncased",
+    "base_model:finetune:allenai/scibert_scivocab_uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "allenai/scibert_scivocab_uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LMRing - AI Model Comparison Platform",
+      "url": "https://www.lmring.com/",
+      "snippet": "Compare and evaluate AI large language models side-by-side with real benchmarks, community rankings, and comprehensive analysis."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard 2026 - AI Models Ranked",
+      "url": "https://lmmarketcap.com/",
+      "snippet": "Live LLM leaderboard ranking 350+ AI models by benchmarks, pricing, speed, and capabilities. Compare GPT-5, Claude Opus, Gemini, DeepSeek, Llama, Mistral and more with source-backed freshness."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

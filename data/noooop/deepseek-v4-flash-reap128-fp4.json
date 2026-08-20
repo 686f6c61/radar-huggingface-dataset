@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "noooop/DeepSeek-V4-Flash-REAP128-FP4",
+  "slug": "noooop-deepseek-v4-flash-reap128-fp4",
+  "author": "noooop",
+  "url": "https://huggingface.co/noooop/DeepSeek-V4-Flash-REAP128-FP4",
+  "created_at": "2026-08-16T04:31:44.000Z",
+  "updated_at": "2026-08-19T20:37:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "deepseek",
+    "moe",
+    "reap",
+    "pruned",
+    "fp4",
+    "fp8",
+    "speculative-decoding",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 155979924030,
+  "parameters_human": "155.98B",
+  "storage_bytes": 88115660912,
+  "storage_human": "88.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "noooop/DeepSeek-V4-Flash-REAP-noMTP · Hugging Face",
+      "url": "https://huggingface.co/noooop/DeepSeek-V4-Flash-REAP-noMTP",
+      "snippet": "DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. It has the same model structure as DeepSeek-V4-Flash-DSpark, i.e. it comes with a speculative decoding module attached."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "DeepSeek V4 MoE model with hybrid CSA+HCA attention, manifold-constrained hyper-connections, and three-tier reasoning (Non-think / Think High / Think Max)."
+    },
+    {
+      "title": "Quantized Models for deepseek-ai/DeepSeek-V4-Flash - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Run DeepSeek V4 Flash Locally: Full 2026 Setup Guide",
+      "url": "https://codersera.com/blog/run-deepseek-v4-flash-locally-full-2026-setup-guide/",
+      "snippet": "Run DeepSeek V4 Flash locally: VRAM tiers from 33GB quantized to 170GB full, vLLM/SGLang install steps, benchmarks, and pricing. MIT-licensed setup guide."
+    },
+    {
+      "title": "deepseek-v4-flash Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-flash",
+      "snippet": "DeepSeek V4 Flash is a 284B MoE model with 1M-token context optimized for fast coding and agents."
+    }
+  ]
+}

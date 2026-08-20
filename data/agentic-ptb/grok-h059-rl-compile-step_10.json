@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/grok.h059.rl-compile.step_10",
+  "slug": "agentic-ptb-grok-h059-rl-compile-step_10",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/grok.h059.rl-compile.step_10",
+  "created_at": "2026-08-20T03:07:53.000Z",
+  "updated_at": "2026-08-20T03:10:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "grok",
+  "languages": [],
+  "tags": [
+    "grok",
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "GitHub - xai-org/grok-build: SpaceXAI&#x27;s coding agent harness and TUI ...",
+      "url": "https://github.com/xai-org/grok-build",
+      "snippet": "Grok Build (grok) Grok Build is SpaceXAI&#x27;s terminal-based AI coding agent. It runs as a full-screen TUI that understands your codebase, edits files, executes shell commands, searches the web, and manages long-running tasks — interactively, headlessly for scripting/CI, or embedded in editors via the Agent Client Protocol (ACP)."
+    },
+    {
+      "title": "Grok 4 — Grokipedia",
+      "url": "https://grokipedia.com/page/Grok_4",
+      "snippet": "Grok 4 (often referred to as Grok 4.0) is a large language model developed by xAI, released on July 9, 2025, as the successor to Grok 3. It stands out as a JARVIS-inspired model, touted as the world&#x27;s most intelligent AI model at launch, featuring a standard 256,000-token context window with some variants (e.g., fast-reasoning) supporting up to 2 million tokens, native tool use, real-time ..."
+    },
+    {
+      "title": "GitHub - NVIDIA/TensorRT-Model-Connect: From PyTorch model to end-to ...",
+      "url": "https://github.com/NVIDIA/TensorRT-Model-Connect",
+      "snippet": "TensorRT Model Connect is an extensive collection of AI Model reference implementations in C++, on top of NVIDIA TensorRT. Model Connect is powered by an agentic workflow that continuously adds support for upcoming models, drastically reducing integration effort on user side and time until new models become compatible."
+    }
+  ]
+}

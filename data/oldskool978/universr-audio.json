@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "OLDSKOOL978/universr-audio",
+  "slug": "oldskool978-universr-audio",
+  "author": "OLDSKOOL978",
+  "url": "https://huggingface.co/OLDSKOOL978/universr-audio",
+  "created_at": "2026-08-19T19:54:31.000Z",
+  "updated_at": "2026-08-19T19:54:31.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "audio",
+    "audio-super-resolution",
+    "speech",
+    "music",
+    "flow-matching",
+    "arxiv:2510.00771",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458144790,
+  "storage_human": "458 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "woongzip1/universr-audio · Hugging Face",
+      "url": "https://huggingface.co/woongzip1/universr-audio",
+      "snippet": "UniverSR - General Audio (Flagship) Vocoder-free audio super-resolution model that upsamples 8/12/16/24 kHz → 48 kHz audio using flow matching in the complex STFT domain. Trained on speech, music, and sound effects. This is the recommended model for general use. For speech-only evaluation (e.g. VCTK benchmark), see universr-speech. Paper: arXiv:2510.00771 | Demo: woongzip1.github.io/universr ..."
+    },
+    {
+      "title": "README.md · woongzip1/universr-audio at main - Hugging Face",
+      "url": "https://huggingface.co/woongzip1/universr-audio/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AudioLab",
+      "url": "https://tryaudiolab.ai/",
+      "snippet": "Generate audio and responses from top AI models for free, with occasional preference prompts powering public model rankings."
+    },
+    {
+      "title": "UniverSR Online Audio Restoration | Neural Analog",
+      "url": "https://neuralanalog.com/universr-online",
+      "snippet": "Run UniverSR online with Neural Analog. Use this more powerful audio super-resolution model to restore old recordings, AI music, sound effects, then export clean 48kHz WAV files."
+    },
+    {
+      "title": "UniverSR: Unified and Versatile Audio Super-Resolution",
+      "url": "https://arxiv.org/html/2510.00771v1",
+      "snippet": "Abstract In this paper, we present a vocoder-free framework for audio super-resolution that employs a flow matching generative model to capture the conditional distribution of complex-valued spectral coefficients. Unlike conventional two-stage diffusion-based approaches that predict a mel-spectrogram and then rely on a pre-trained neural vocoder to synthesize waveforms, our method directly ..."
+    }
+  ]
+}

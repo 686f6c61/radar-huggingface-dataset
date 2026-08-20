@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "mindlab-research/Macaron-V1-Tall",
+  "slug": "mindlab-research-macaron-v1-tall",
+  "author": "mindlab-research",
+  "url": "https://huggingface.co/mindlab-research/Macaron-V1-Tall",
+  "created_at": "2026-07-22T15:55:45.000Z",
+  "updated_at": "2026-08-20T00:23:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "macaron",
+    "macaron-v1",
+    "qwen3.6",
+    "qwen3.6-35B-a3b",
+    "mixture-of-lora",
+    "personal-agent",
+    "tool-use",
+    "generative-ui",
+    "ui4a",
+    "a2ui",
+    "coding-agent",
+    "arxiv:2608.09819",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 73,
+  "downloads_30d": 1707,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 109674436587,
+  "storage_human": "109.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Macaron-V1",
+      "url": "https://macaron.im/mindlab/research/introducing-macaron-v1",
+      "snippet": "Macaron-V1 is Mind Lab&#x27;s agent model in 748B Venti and 35B Tall variants, built on Mixture-of-LoRA and model-harness co-design."
+    },
+    {
+      "title": "mindlab-research/Macaron-V1-Tall · Hugging Face",
+      "url": "https://huggingface.co/mindlab-research/Macaron-V1-Tall?library=transformers",
+      "snippet": "Macaron-V1-Tall is a Mixture of LoRA (MoL) model in the Macaron-V1 family, built on Qwen3.6-35B-A3B for personal intelligence, tool use, coding workflows, and code-native Generative UI."
+    },
+    {
+      "title": "Macaron-V1: Towards Open Continual Learning with Self-Improvement and ...",
+      "url": "https://arxiv.org/pdf/2608.09819v1",
+      "snippet": "Macaron-V1 is an open agent-model family for experiential intelligence: learning from experience in real environments and continuing to learn after deployment. It is organized around two system"
+    },
+    {
+      "title": "Mind Lab - Macaron",
+      "url": "https://macaron.im/mindlab",
+      "snippet": "Read View all Subscribe to Research and Updates I agree to receive news, research updates, and marketing emails from Mind Lab."
+    },
+    {
+      "title": "Macaron-V1-Tall: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/macaron-v1-tall-mindlab-research",
+      "snippet": "Macaron-V1-Tall is a Mixture of LoRA (MoL) model from mindlab-research built on the Qwen3.6-35B-A3B base model for personal intelligence, tool use, coding workflows, and code-native Generative UI."
+    }
+  ]
+}

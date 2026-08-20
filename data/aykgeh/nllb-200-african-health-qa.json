@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aykgeh/nllb-200-african-health-qa",
+  "slug": "aykgeh-nllb-200-african-health-qa",
+  "author": "aykgeh",
+  "url": "https://huggingface.co/aykgeh/nllb-200-african-health-qa",
+  "created_at": "2026-08-19T22:24:51.000Z",
+  "updated_at": "2026-08-19T22:24:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "200 languages within a single AI model: A breakthrough in high-quality ...",
+      "url": "https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/",
+      "snippet": "Meta AI has built a single AI model, NLLB-200, that is the first to translate across 200 different languages with state-of-the-art quality that has been validated through extensive evaluations for each of them."
+    },
+    {
+      "title": "GitHub - icyeza/African-Language-Health-QA-Challenge",
+      "url": "https://github.com/icyeza/African-Language-Health-QA-Challenge/tree/main",
+      "snippet": "Competition solution for the Zindi Multilingual Health Question Answering in Low-Resource African Languages challenge. The master notebook (health_qa_master_1.ipynb) documents the full 15-experiment progression from a TF-IDF retrieval baseline (LB 0.496) to the best submission (LB 0.621)."
+    },
+    {
+      "title": "PapiWinnie/African-Language-Health-QA-Challenge - GitHub",
+      "url": "https://github.com/PapiWinnie/African-Language-Health-QA-Challenge",
+      "snippet": "Generative approach: Fine-tune or zero-shot a multilingual seq2seq model (NLLB-200, mT5-small, Flan-T5-base) to produce health answers directly. All three models were tested with and without fine-tuning, and with and without retrieved context (RAG)."
+    },
+    {
+      "title": "AfriMed-QA: Benchmarking large language models for global health",
+      "url": "https://research.google/blog/afrimed-qa-benchmarking-large-language-models-for-global-health/",
+      "snippet": "AfriMed-QA dataset The AfriMed-QA dataset is the first large-scale pan-African multi-specialty medical question-answer dataset designed to evaluate and develop equitable and effective LLMs for African healthcare."
+    },
+    {
+      "title": "PDF Multilingual NLP for African Healthcare: Bias, Translation, and ...",
+      "url": "https://aclanthology.org/2025.africanlp-1.32.pdf",
+      "snippet": "This paper reviews existing multilingual NLP models, evaluating their effectiveness in African healthcare applications. By comparing Masakhane- MT, Masakhane-NER, AfromT, and NLLB, this study highlights disparities in translation accuracy, named entity recognition, and model adaptation to African linguistic structures."
+    }
+  ]
+}

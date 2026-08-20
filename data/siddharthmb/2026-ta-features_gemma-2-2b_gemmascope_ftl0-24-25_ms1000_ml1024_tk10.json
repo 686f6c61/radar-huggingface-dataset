@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_ftL0-24-25_ms1000_ml1024_tk10",
+  "slug": "siddharthmb-2026-ta-features_gemma-2-2b_gemmascope_ftl0-24-25_ms1000_ml1024_tk10",
+  "author": "siddharthmb",
+  "url": "https://huggingface.co/siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_ftL0-24-25_ms1000_ml1024_tk10",
+  "created_at": "2026-08-19T20:23:40.000Z",
+  "updated_at": "2026-08-19T20:23:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "circuit-tracer",
+  "languages": [],
+  "tags": [
+    "circuit-tracer",
+    "transcoder-adapters",
+    "feature-cache",
+    "dataset:siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits",
+    "dataset:science-of-finetuning/fineweb-1m-sample",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "gemma-2-2b_gemmascope_width_16k_average_l0_76",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_ftL0-24-25_ms1000 ...",
+      "url": "https://huggingface.co/siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_ftL0-24-25_ms1000_ml1024_tk10",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_width_16k_average_l0 ...",
+      "url": "https://huggingface.co/siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_width_16k_average_l0_76_ms1000_ml1024_tk10_h89ada6d36b70",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    },
+    {
+      "title": "Gemma-2-2B Transformer Model - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/gemma-2-2b-model",
+      "snippet": "Gemma-2-2B is a 2-billion-parameter transformer featuring 26 layers with interleaved local-global and group-query attention for efficient long-context modeling. It employs full knowledge distillation from a larger teacher and a compositional in-context learning circuit, achieving competitive few-shot performance across benchmarks. The model faces significant hallucination issues with ..."
+    },
+    {
+      "title": "Gemma 2 model card - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_2",
+      "snippet": "Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. They are text-to-text, decoder-only large language models, available in English, with open weights for both pre-trained variants and instruction-tuned variants."
+    }
+  ]
+}

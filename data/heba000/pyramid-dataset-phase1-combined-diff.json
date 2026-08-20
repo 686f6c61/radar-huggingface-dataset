@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "heba000/pyramid-dataset-phase1-combined-diff",
+  "slug": "heba000-pyramid-dataset-phase1-combined-diff",
+  "author": "heba000",
+  "url": "https://huggingface.co/heba000/pyramid-dataset-phase1-combined-diff",
+  "created_at": "2026-08-20T01:42:56.000Z",
+  "updated_at": "2026-08-20T01:43:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:heba000/pyramid-dataset-phase1-combined",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262962942,
+  "parameters_human": "263.0M",
+  "storage_bytes": 1051897536,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pyramid-dataset-1_20260816_134853 - Hugging Face",
+      "url": "https://huggingface.co/datasets/heba000/pyramid-dataset-1_20260816_134853",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "heba000/pyramid-dataset-1_20260816_134853 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/heba000/pyramid-dataset-1_20260816_134853/tree/main",
+      "snippet": "Datasets: heba000 / pyramid-dataset-1_20260816_134853 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main pyramid-dataset-1_20260816_134853 42 MB 1 contributor History:3 commits heba000 Upload README.md with ..."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "heba000于HuggingFace首发pyramid-dataset-combined数据集 赋能机器人模仿学习与机械臂控制研发",
+      "url": "https://www.5radar.com/dataopensource/news/461855",
+      "snippet": "开发者heba000于2026年8月18日在AI开源社区HuggingFace正式首发pyramid-dataset-combined机器人操作数据集，该数据集基于LeRobot框架构建，覆盖机械臂全链路动作与同步视觉观测数据，可为机器人操作模仿学习、机械臂智能控制领域的研发提供高质量训练数据支撑。"
+    },
+    {
+      "title": "Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "snippet": "Discover datasets from various domains with Google&#x27;s Dataset Search tool, designed to help researchers and enthusiasts find relevant data easily."
+    }
+  ]
+}

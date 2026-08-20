@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Grigorij/PaP_objects_sum_vla_jepa",
+  "slug": "grigorij-pap_objects_sum_vla_jepa",
+  "author": "Grigorij",
+  "url": "https://huggingface.co/Grigorij/PaP_objects_sum_vla_jepa",
+  "created_at": "2026-08-18T22:58:03.000Z",
+  "updated_at": "2026-08-19T23:33:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "vla_jepa",
+    "robotics",
+    "dataset:Grigorij/PaP_objects_sum",
+    "arxiv:2602.10098",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2770329478,
+  "parameters_human": "2.77B",
+  "storage_bytes": 68743972704,
+  "storage_human": "68.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2512.10942] VL-JEPA: Joint Embedding Predictive Architecture for ...",
+      "url": "https://arxiv.org/abs/2512.10942",
+      "snippet": "We introduce VL-JEPA, a vision-language model built on a Joint Embedding Predictive Architecture (JEPA). Instead of autoregressively generating tokens as in classical VLMs, VL-JEPA predicts continuous embeddings of the target texts. By learning in an abstract representation space, the model focuses on task-relevant semantics while abstracting away surface-level linguistic variability. In a ..."
+    },
+    {
+      "title": "Grigorij/Tello_multifruit_sum_vla_jepa · Hugging Face",
+      "url": "https://huggingface.co/Grigorij/Tello_multifruit_sum_vla_jepa",
+      "snippet": "VLA-JEPA is a Vision-Language-Action model that combines a Qwen3-VL language backbone with a self-supervised video world model (V-JEPA2) and a flow-matching DiT action head. This policy has been trained and pushed to the Hub using LeRobot. Learn how to train and run it in the LeRobot vla_jepa guide, or browse the full documentation."
+    },
+    {
+      "title": "Grigorij/Franka_WAMs_vla_jepa · Hugging Face",
+      "url": "https://huggingface.co/Grigorij/Franka_WAMs_vla_jepa",
+      "snippet": "Instructions to use Grigorij/Franka_WAMs_vla_jepa with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Grigorij/Franka_WAMs_vla_jepa with LeRobot: Notebooks Google Colab Kaggle Model Card for vla_jepa Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy ..."
+    },
+    {
+      "title": "VL-JEPA: Joint Embedding Predictive Architecture for",
+      "url": "https://arxiv.org/pdf/2512.10942",
+      "snippet": "We introduce VL-JEPA, a vision-language model built on a Joint Embedding Predictive Architecture (JEPA). Instead of autoregressively generating tokens as in classical VLMs, VL-JEPA predicts continuous embeddings of the target texts. By learning in an abstract representation space, the model focuses on task-relevant semantics while abstracting away surface-level linguistic variability. In a ..."
+    },
+    {
+      "title": "VL-JEPA: J E P ARCHITECTURE FORVISION LANGUAGE - OpenReview",
+      "url": "https://openreview.net/pdf?id=tjimrqc2BU",
+      "snippet": "We introduce VL-JEPA, the first non-generative model that can perform general-domain vision-language tasks in real-time, built on a joint embedding predictive architecture. We demonstrate in controlled experiments that VL-JEPA, trained with latent space embed-ding prediction, outperforms VLMs that rely on data space token prediction."
+    }
+  ]
+}

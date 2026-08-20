@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dwnw/fineweb10bt-gpt2",
+  "slug": "dwnw-fineweb10bt-gpt2",
+  "author": "dwnw",
+  "url": "https://huggingface.co/dwnw/fineweb10bt-gpt2",
+  "created_at": "2026-08-19T22:24:03.000Z",
+  "updated_at": "2026-08-19T22:24:03.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Mugna0990/GPT-model: GPT model trained on FineWeb-10b",
+      "url": "https://github.com/Mugna0990/GPT-model",
+      "snippet": "This project is a PyTorch-based implementation of a GPT-2 style model, built from scratch for a deeper understanding of transformer architectures and large language models. It includes scripts for preprocessing the FineWeb-Edu dataset and for training the model. This is my first AI-related project. While working on it, I closely followed Andrej Karpathy&#x27;s YouTube tutorial series where he ..."
+    },
+    {
+      "title": "kjj0/fineweb10B-gpt2 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/kjj0/fineweb10B-gpt2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "developing-gpt2-124M-from-scratch/README.md at main - GitHub",
+      "url": "https://github.com/Bensmail-anis/developing-gpt2-124M-from-scratch/blob/main/README.md",
+      "snippet": "A custom implementation of OpenAI's GPT-2(124M) from scratch, following the paper \"Language Models are Unsupervised Multitask Learners\".We train the model on the FineWeb dataset -10 b..."
+    },
+    {
+      "title": "kjj0/fineweb10B-gpt2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/kjj0/fineweb10B-gpt2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FinerWeb-10BT: Refining Web Data with LLM-Based Line-Level Filtering",
+      "url": "https://aclanthology.org/2025.nodalida-1.27/",
+      "snippet": "Abstract Data quality is crucial for training Large Language Models (LLMs). Traditional heuristic filters often miss low-quality text or mistakenly remove valuable content. In this paper, we introduce an LLM-based line-level filtering method to enhance training data quality. We use GPT-4o mini to label a 20,000-document sample from FineWeb at the line level, allowing the model to create ..."
+    }
+  ]
+}

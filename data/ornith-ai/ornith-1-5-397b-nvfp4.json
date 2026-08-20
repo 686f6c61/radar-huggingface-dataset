@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ornith-ai/Ornith-1.5-397B-NVFP4",
+  "slug": "ornith-ai-ornith-1-5-397b-nvfp4",
+  "author": "ornith-ai",
+  "url": "https://huggingface.co/ornith-ai/Ornith-1.5-397B-NVFP4",
+  "created_at": "2026-08-18T06:45:24.000Z",
+  "updated_at": "2026-08-20T02:31:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "text-generation",
+    "conversational",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 203528832496,
+  "parameters_human": "203.53B",
+  "storage_bytes": 238064048827,
+  "storage_human": "238.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5 - a ornith-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ornith-ai/ornith-15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-397B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-397B-FP8",
+      "snippet": "Ornith-1.5-397B is a ~397B mixture-of-experts model (≈800 GB in bf16), so multi-GPU serving is required. The recipes below use 8-way tensor parallelism on a single node (e.g., 8× H200 141GB); adjust --tensor-parallel-size / --tp to match your hardware, or use FP8/INT4 quantized builds for smaller deployments."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith-1.5 open models launch in 397B, 35B, and 9 B sizes.",
+      "url": "https://www.testingcatalog.com/ornith-1-5-open-models-launch-in-397b-35b-and-9-b-sizes/",
+      "snippet": "DeepReinforce released Ornith-1.5 in 397B, 35B and 9B scales, with a training loop that generates its own tasks, scaffolds and rollouts."
+    }
+  ]
+}

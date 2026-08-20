@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Meta-Llama-3-70B-Instruct-quantized.w8a8",
+  "slug": "redhatai-meta-llama-3-70b-instruct-quantized-w8a8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Meta-Llama-3-70B-Instruct-quantized.w8a8",
+  "created_at": "2024-07-14T19:31:12.000Z",
+  "updated_at": "2026-08-19T21:37:49.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2210.17323",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 147,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 72669951872,
+  "storage_human": "72.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Meta-Llama-3-70B-Instruct-quantized.w8a8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3-70B-Instruct-quantized.w8a8",
+      "snippet": "Meta-Llama-3-70B-Instruct-quantized.w8a8 Model Overview Model Architecture: Meta-Llama-3 Input: Text Output: Text Model Optimizations: Activation quantization: INT8 Weight quantization: INT8 Intended Use Cases: Intended for commercial and research use in English. Similarly to Meta-Llama-3-70B-Instruct, this models is intended for assistant-like chat. Out-of-scope: Use in any manner that ..."
+    },
+    {
+      "title": "Meta-Llama-3-70B-Instruct-quantized.w8a16 - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3-70B-Instruct-quantized.w8a16",
+      "snippet": "Model Optimizations This model was obtained by quantizing the weights of Meta-Llama-3-70B-Instruct to INT8 data type. This optimization reduces the number of bits per parameter from 16 to 8, reducing the disk size and GPU memory requirements by approximately 50%. Only the weights of the linear operators within transformers blocks are quantized."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3-70B-Instruct-quantized.w8a8 - friendli.ai",
+      "url": "https://friendli.ai/models/RedHatAI/Meta-Llama-3-70B-Instruct-quantized.w8a8",
+      "snippet": "Run RedHatAI/Meta-Llama-3-70B-Instruct-quantized.w8a8 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Deploy RedHatAI/Meta-Llama-3-70B-Instruct-quantized.w8a8 | Inference ...",
+      "url": "https://endpoints.huggingface.co/new?repository=neuralmagic%2FMeta-Llama-3-70B-Instruct-quantized.w8a8",
+      "snippet": "Deploy Meta-Llama-3-70B-Instruct-quantized.w8a8 for text-generation inference in 1 click."
+    },
+    {
+      "title": "RedHatAI_Meta-Llama-3.1-70B-Instruct-quantized.w8a8",
+      "url": "https://opencsg.com/models/RedHatAI/RedHatAI_Meta-Llama-3.1-70B-Instruct-quantized.w8a8?tab=summary",
+      "snippet": "Meta-Llama-3.1-70B-Instruct-quantized.w8a8 Model Overview Model Architecture: LlamaForCausalLM Input: Text Output: Text Model Optimizations: Activation quantization: INT8 Weight quantization: INT8 Intended Use Cases: Intended for commercial and research use multiple languages. Similarly to Meta-Llama-3.1-70B-Instruct, this models is intended for assistant-like chat. Out-of-scope: Use in any ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kernkraft/krea2c",
+  "slug": "kernkraft-krea2c",
+  "author": "kernkraft",
+  "url": "https://huggingface.co/kernkraft/krea2c",
+  "created_at": "2026-08-19T22:21:25.000Z",
+  "updated_at": "2026-08-19T22:21:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185585162376,
+  "storage_human": "185.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2 AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/krea2",
+      "snippet": "Generate with Krea 2 on Civitai — Krea AI&#x27;s model for sharp photorealism, strong aesthetics, and dependable prompt adherence. Browse checkpoints, LoRAs & prompts."
+    },
+    {
+      "title": "GitHub - krea-ai/krea-2: Official inference code for Krea 2",
+      "url": "https://github.com/krea-ai/krea-2",
+      "snippet": "Krea 2 - an image generation model from Krea AI. API Docs • Hugging Face (RAW) • Hugging Face (TURBO) • Technical Blog This is the official repository for the open version of Krea 2, an image model trained from scratch focused on creative and stylistic exploration. The repository contains inference code and instructions to run the model."
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    },
+    {
+      "title": "Krea 2 - Medium | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2656567/krea-2",
+      "snippet": "Krea 2 is Krea&#x27;s first foundation image model, trained from scratch with a focus on how images feel rather than just what they contain. It ships in two sizes - a Large build tuned for photorealism and a Medium build tuned for illustration and stylized art - and is designed around style transfer, moodboards, and a tunable creativity dial rather ..."
+    },
+    {
+      "title": "Krea 2 - Krea",
+      "url": "https://www.krea.ai/docs/user-guide/features/krea-2",
+      "snippet": "Krea 2 is our first foundation image model, built from scratch for full creative control over style, composition, aesthetics, and reference-driven results."
+    }
+  ]
+}

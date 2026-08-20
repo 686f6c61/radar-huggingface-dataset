@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maxmarcon/klimt-diffusion",
+  "slug": "maxmarcon-klimt-diffusion",
+  "author": "maxmarcon",
+  "url": "https://huggingface.co/maxmarcon/klimt-diffusion",
+  "created_at": "2026-07-15T20:40:24.000Z",
+  "updated_at": "2026-08-19T20:03:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "safetensors",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 159,
+  "trending_score": 0,
+  "parameters": 113673219,
+  "parameters_human": "113.7M",
+  "storage_bytes": 26112430085,
+  "storage_human": "26.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maxmarcon/klimt-diffusion · Hugging Face",
+      "url": "https://huggingface.co/maxmarcon/klimt-diffusion",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - maxmarcon/diffusion",
+      "url": "https://github.com/maxmarcon/diffusion",
+      "snippet": "Contribute to maxmarcon/diffusion development by creating an account on GitHub."
+    },
+    {
+      "title": "Introduction to Diffusion Models · Hugging Face",
+      "url": "https://huggingface.co/learn/computer-vision-course/unit5/generative-models/diffusion-models/introduction",
+      "snippet": "Diffusion models are a new and exciting area in computer vision that has shown impressive results in creating images. These generative models work on two stages, a forward diffusion stage and a reverse diffusion stage: first, they slightly change the input data by adding some noise, and then they try to undo these changes to get back to the ..."
+    },
+    {
+      "title": "Diffusion Models for Generative Artificial Intelligence: An ...",
+      "url": "https://arxiv.org/html/2312.14977v1",
+      "snippet": "Abstract Generative artificial intelligence (AI) refers to algorithms that create synthetic but realistic output. Diffusion models currently offer state of the art performance in generative AI for images. They also form a key component in more general tools, including text-to-image generators and large language models. Diffusion models work by adding noise to the available training data and ..."
+    },
+    {
+      "title": "Artificial-Intelligence-Generated Content with Diffusion Models: A ...",
+      "url": "https://www.mdpi.com/2227-7390/12/7/977",
+      "snippet": "Diffusion models have swiftly taken the lead in generative modeling, establishing unprecedented standards for producing high-quality, varied outputs. Unlike Generative Adversarial Networks (GANs)—once considered the gold standard in this realm—diffusion models bring several unique benefits to the table. They are renowned for generating outputs that more accurately reflect the complexity of ..."
+    }
+  ]
+}

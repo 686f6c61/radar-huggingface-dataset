@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "YiYiXu/ABot-World-0-5B-LF-Diffusers",
+  "slug": "yiyixu-abot-world-0-5b-lf-diffusers",
+  "author": "YiYiXu",
+  "url": "https://huggingface.co/YiYiXu/ABot-World-0-5B-LF-Diffusers",
+  "created_at": "2026-08-20T02:33:40.000Z",
+  "updated_at": "2026-08-20T02:36:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "modular-diffusers",
+    "world-model",
+    "interactive",
+    "image-to-video",
+    "base_model:acvlab/ABot-World-0-5B-LF",
+    "base_model:finetune:acvlab/ABot-World-0-5B-LF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5270329536,
+  "parameters_human": "5.27B",
+  "storage_bytes": 10545182720,
+  "storage_human": "10.5 GB",
+  "base_model": "acvlab/ABot-World-0-5B-LF",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "acvlab/ABot-World-0-5B-LF · Hugging Face",
+      "url": "https://huggingface.co/acvlab/ABot-World-0-5B-LF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - amap-cvlab/ABot-World: Infinite Interactive World Rollout on a ...",
+      "url": "https://github.com/amap-cvlab/ABot-World",
+      "snippet": "2026-07-13: ABot-World is now on Reactor! 2026-07-10: We have decided to open-source our 500-hour video training dataset with accurate action annotations. Stay tuned—we plan to release it very soon. 2026-07-09: We release the causal student model ABot-World--5B-LF, inference code, our local gradio demo and online playground ABot World Studio."
+    },
+    {
+      "title": "acvlab/ABot-World-0-5B-LF at main - Hugging Face",
+      "url": "https://huggingface.co/acvlab/ABot-World-0-5B-LF/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community 1 Copy to bucket new Use this model Libraries Diffusers How to use acvlab/ABot-World--5B-LF with Diffusers: ... Notebooks main ABot-World--5B-LF 24.8 GB Ctrl+K Ctrl+K 1 contributor History:6 commits frankjiang Update README.md d05a3ec verified8 days ago googleUpload folder using huggingface ..."
+    },
+    {
+      "title": "ABot-World-0-5B-LF · Models",
+      "url": "https://www.modelscope.cn/models/amap_cvlab/ABot-World-0-5B-LF",
+      "snippet": "2026-07-09: We release the causal student model ABot-World--5B-LF, inference code, our local gradio demo and online playground ABot World Studio. 🛠️ Setup This installation was tested on: Ubuntu 22.04, CUDA 13.3, NVIDIA RTX 5090. Clone the repository: ... Install dependencies using conda: ... Download checkpoints: Download models using ..."
+    },
+    {
+      "title": "ABot-World-0-5B-LF: Video-to-Video model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/abot-world-0-5b-lf-acvlab",
+      "snippet": "ABot-World--5B-LF is an action-conditioned interactive world model developed by acvlab that generates continuous video from real-time user input on a..."
+    }
+  ]
+}

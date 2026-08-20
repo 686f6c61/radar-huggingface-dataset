@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "moonzerokevin/qwen3vl-32b-minimax-h3-nf4",
+  "slug": "moonzerokevin-qwen3vl-32b-minimax-h3-nf4",
+  "author": "moonzerokevin",
+  "url": "https://huggingface.co/moonzerokevin/qwen3vl-32b-minimax-h3-nf4",
+  "created_at": "2026-08-19T21:25:58.000Z",
+  "updated_at": "2026-08-19T21:26:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "minimax-h3",
+    "text-encoder",
+    "bitsandbytes",
+    "nf4",
+    "4-bit",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-32B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-VL-32B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33357390064,
+  "parameters_human": "33.36B",
+  "storage_bytes": 19526579868,
+  "storage_human": "19.5 GB",
+  "base_model": "Qwen/Qwen3-VL-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3vl_32b_minimax_h3-Q2_K_M.gguf · unsloth/MiniMax-H3-GGUF at main",
+      "url": "https://huggingface.co/unsloth/MiniMax-H3-GGUF/blob/main/qwen3vl_32b_minimax_h3-Q2_K_M.gguf",
+      "snippet": "like 90 Follow Unsloth AI 30.3k Image-Text-to-Video GGUF English Chinese text-to-video image-to-video video-generation stable-diffusion.cpp unsloth minimax multimodal License:minimax-h3-community-license-agreement Model card FilesFiles and versions xet Community 5 Copy to bucket new Use this model"
+    },
+    {
+      "title": "Comfy-Org/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 ComfyUI Guide: Setup, VRAM, Workflows & Fixes - kingy.ai",
+      "url": "https://kingy.ai/ai/ai-guides/minimax-h3-comfyui-local-guide/",
+      "snippet": "Install MiniMax H3 in ComfyUI, download the correct files, run T2V, I2V and R2V workflows, use SageAttention and troubleshoot OOM errors."
+    },
+    {
+      "title": "MiniMax H3 ComfyUI Workflow - Setup, Download & Best Settings",
+      "url": "https://astrailab.com/minimax-h3-comfyui",
+      "snippet": "Download and install MiniMax H3 in ComfyUI with official model files, workflow templates, best settings, low-VRAM troubleshooting, and a local prompt builder."
+    },
+    {
+      "title": "MiniMax H3 Model Files & Downloads: GitHub, Hugging Face, GGUF, INT8 ...",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Find official MiniMax H3 files, including pruned BF16, INT8, NVFP4, and VAE variants. Compare sources, GGUF status, folder paths, and missing-model fixes."
+    }
+  ]
+}

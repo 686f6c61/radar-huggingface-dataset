@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-max.h029.sft_v5.step_900",
+  "slug": "agentic-ptb-opus-max-h029-sft_v5-step_900",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-max.h029.sft_v5.step_900",
+  "created_at": "2026-08-20T01:23:50.000Z",
+  "updated_at": "2026-08-20T01:24:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-max",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude Opus 5 — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/anthropic/claude-opus-5",
+      "snippet": "Claude Opus 5 Claude Opus 5 is an AI model released by Anthropic on Friday, Jul 24 2026, 24 days after Claude Sonnet 5. It has a 1M token context window. Benchmark results (shown below) cover Gray Swan IPI, FrontierCode v1.1 (Main), Supabase Evals, Frontier-Bench v0.1, Humanity&#x27;s Last Exam, ARC-AGI-3, and 13 more."
+    },
+    {
+      "title": "Claude Opus 5 - Amazon Bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-5.html",
+      "snippet": "Claude Opus 5 is Anthropic&#x27;s most advanced Opus model, powering long-running agents while delivering improvements in coding and professional work."
+    },
+    {
+      "title": "Introducing Claude Opus 5 &#92; Anthropic",
+      "url": "https://www.anthropic.com/research/claude-opus-5",
+      "snippet": "Claude Opus 5 is a strong agentic coding model built for long-running, multi-step work. It deeply understands your codebase, holds the thread across complex tasks, and pins down requirements for feature development and bug-fixing more effectively than Opus 4.8."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Open-Source LLM Models in 2026: Coding, Local, Agentic AI ...",
+      "url": "https://huggingface.co/blog/daya-shankar/open-source-llms",
+      "snippet": "A Blog post by Daya Shankar on Hugging Face"
+    }
+  ]
+}

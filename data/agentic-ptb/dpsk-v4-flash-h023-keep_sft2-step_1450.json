@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/dpsk-v4-flash.h023.keep_sft2.step_1450",
+  "slug": "agentic-ptb-dpsk-v4-flash-h023-keep_sft2-step_1450",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/dpsk-v4-flash.h023.keep_sft2.step_1450",
+  "created_at": "2026-08-20T02:49:24.000Z",
+  "updated_at": "2026-08-20T02:51:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "dpsk-v4-flash",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4 Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/deepseek-v4-flash",
+      "snippet": "DeepSeek V4 Flash 0731 is a 284B Mixture-of-Experts model built for coding, tool use, and agentic workflows, with 13B active parameters and a 1M-token context window."
+    },
+    {
+      "title": "Agentic AI for Beginners - GitHub",
+      "url": "https://github.com/Yash-Kavaiya/Agentic-AI-for-Beginners",
+      "snippet": "Welcome to the world of Agentic AI! This repository aims to be your complete resource for learning about autonomous AI systems that can perform tasks with minimal human supervision."
+    },
+    {
+      "title": "DeepSeek V4 Flash - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/deepseek-v4-flash",
+      "snippet": "Deploy DeepSeek V4 Flash, a 284B FP4 Mixture-of-Experts model with 1M context and strong agentic performance, on Vast with vLLM or SGLang in minutes."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "stas/the-art-of-debugging-book",
+  "slug": "stas-the-art-of-debugging-book",
+  "author": "stas",
+  "url": "https://huggingface.co/stas/the-art-of-debugging-book",
+  "created_at": "2026-06-30T17:22:23.000Z",
+  "updated_at": "2026-08-20T00:22:00.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44007636,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stas/the-art-of-debugging-book · Hugging Face",
+      "url": "https://huggingface.co/stas/the-art-of-debugging-book",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The Art of Debugging Open Book - GitHub",
+      "url": "https://github.com/stas00/the-art-of-debugging",
+      "snippet": "The Art of Debugging Open Book This evolving book will teach you how to: Debug normal issues really fast Make complicated issues possible to debug footnote: adapted from Perl&#x27;s slogan: \"Easy things should be easy and hard things should be possible\"."
+    },
+    {
+      "title": "GitHub - stas00/the-art-of-debugging: The Art of Debugging Open Book ...",
+      "url": "https://t.co/nCxGfnxExC",
+      "snippet": "The Art of Debugging Open Book. Contribute to stas00/the-art-of-debugging development by creating an account on GitHub."
+    },
+    {
+      "title": "stas00 (Stas Bekman) · GitHub",
+      "url": "https://github.com/stas00",
+      "snippet": "Free Books: ML Engineering | The Art of Debugging | Stas&#x27; Python Cookbook Applications: ipyexperiments Tools and Cheatsheets: bash | conda | git | jupyter-notebook ..."
+    },
+    {
+      "title": "@stas on Hugging Face: \"The Art of Debugging Open Free book is now ...",
+      "url": "https://huggingface.co/posts/stas/362558242324258",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

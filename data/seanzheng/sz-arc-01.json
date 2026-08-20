@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SeanZheng/sz-arc-01",
+  "slug": "seanzheng-sz-arc-01",
+  "author": "SeanZheng",
+  "url": "https://huggingface.co/SeanZheng/sz-arc-01",
+  "created_at": "2026-08-19T23:44:01.000Z",
+  "updated_at": "2026-08-20T00:36:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39994702680,
+  "storage_human": "40.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "思畅 AI（Sichang）— 私密、无审查的中文 AI 角色扮演、沉浸对话、图像与视频创作平台",
+      "url": "https://sichang.xyz/",
+      "snippet": "创建角色、沉浸对话、自由写作、生成图像与视频。对话保存在你的账户下，表达边界由你掌控。专为中文创作者设计的私密 ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "Sean Model Ai - a Hugging Face Space by Zhang-Bo-Xiang",
+      "url": "https://huggingface.co/spaces/Zhang-Bo-Xiang/sean-model-ai",
+      "snippet": "Chat with a friendly AI that generates responses based on your messages. Provide text input, and get conversational replies. Customize the chatbot&#x27;s behavior with settings like message length and c..."
+    },
+    {
+      "title": "SZ - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/422fa001950476bd637f09c5f55990eb",
+      "snippet": "Explore SZ model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

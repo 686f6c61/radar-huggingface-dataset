@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8",
+  "slug": "redhatai-meta-llama-3-1-8b-instruct-fp8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8",
+  "created_at": "2024-07-23T20:48:26.000Z",
+  "updated_at": "2026-08-19T21:44:23.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "fp8",
+    "vllm",
+    "conversational",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 44,
+  "downloads_30d": 330822,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 18162573512,
+  "storage_human": "18.2 GB",
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-8B-Instruct-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedHatAI/Llama-3.1-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Llama-3.1-8B-Instruct",
+      "snippet": "The Meta Llama 3.1 multilingual large language model (LLM) is a collection of pretrained and instruction tuned generative models in 8B."
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-FP8 huggingface.co api & RedHatAI Meta-Llama ...",
+      "url": "https://www.toolify.ai/ai-model/redhatai-meta-llama-3-1-8b-instruct-fp8",
+      "snippet": "It achieves an average score of 73.44 on the OpenLLM benchmark (version 1), whereas the unquantized model achieves 73.79. Model Optimizations This model was obtained by quantizing the weights and activations of Meta-Llama-3.1-8B-Instruct to FP8 data type, ready for inference with vLLM built from source."
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/meta-llama-31-8b-instruct-meta-llama",
+      "snippet": "Overview Meta-Llama-3.1-8B-Instruct is an instruction-tuned text generation model developed by meta-llama and released on July 23, 2024. The model uses an optimized transformer architecture with 8 billion parameters, trained on approximately 15 trillion tokens of publicly available data with a knowledge cutoff of December 2023. It supports multilingual inputs and outputs across eight languages ..."
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-FP8 | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/meta-llama-31-8b-instruct-fp8/",
+      "snippet": "What is Meta-Llama-3.1-8B-Instruct-FP8? Meta-Llama-3.1-8B-Instruct-FP8 is an optimized version of Meta&#x27;s LLaMA 3.1 model, specifically designed for efficient deployment while maintaining nearly identical performance to its full-precision counterpart. Through FP8 quantization, it achieves a 50% reduction in disk size and GPU memory requirements while retaining 99.52% of the original model&#x27;s ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rwightman/mammut2-moderntext_ViT-B-32.cc12m-qk-lr2e3-b4096",
+  "slug": "rwightman-mammut2-moderntext_vit-b-32-cc12m-qk-lr2e3-b4096",
+  "author": "rwightman",
+  "url": "https://huggingface.co/rwightman/mammut2-moderntext_ViT-B-32.cc12m-qk-lr2e3-b4096",
+  "created_at": "2026-08-19T22:14:35.000Z",
+  "updated_at": "2026-08-19T22:15:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [],
+  "tags": [
+    "open_clip",
+    "safetensors",
+    "clip",
+    "cc12m",
+    "zero-shot-image-classification",
+    "dataset:pixparse/cc12m-wds",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1608707437,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rwightman/mammut2-moderntext_ViT-B-32.cc12m-qk-lr2e3 · Hugging Face",
+      "url": "https://huggingface.co/rwightman/mammut2-moderntext_ViT-B-32.cc12m-qk-lr2e3",
+      "snippet": "Model card for mammut2-moderntext_ViT-B-32.cc12m-qk-lr2e3 MaMMUT2 with a modern text decoder (RoPE, RMSNorm, SwiGLU, gated attention, qk-norm) and tiktoken r50k vocab at ctx 128. Best moderntext run in the comparison."
+    },
+    {
+      "title": "rwightman/mammut2-moderntext_ViT-B-32.cc12m-qk-lr3e3 · Hugging Face",
+      "url": "https://huggingface.co/rwightman/mammut2-moderntext_ViT-B-32.cc12m-qk-lr3e3",
+      "snippet": "Model card for mammut2-moderntext_ViT-B-32.cc12m-qk-lr3e3 MaMMUT2 with a modern text decoder (qk-norm) at lr 3e-3 -- past the stable-LR edge for this tower; weakest moderntext run on every metric. Kept for the LR-sensitivity data point."
+    },
+    {
+      "title": "rwightman (Ross Wightman) · GitHub",
+      "url": "https://github.com/rwightman",
+      "snippet": "AI, Computer Vision. Always learning, constantly curious. Building ML/AI systems, watching loss curves. - rwightman"
+    },
+    {
+      "title": "rwightman (Ross Wightman) / Repositories · GitHub",
+      "url": "https://github.com/rwightman?tab=repositories",
+      "snippet": "AI, Computer Vision. Always learning, constantly curious. Building ML/AI systems, watching loss curves. - rwightman"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

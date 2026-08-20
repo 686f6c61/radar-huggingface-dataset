@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qazljlj/comfyui_mmh",
+  "slug": "qazljlj-comfyui_mmh",
+  "author": "qazljlj",
+  "url": "https://huggingface.co/qazljlj/comfyui_mmh",
+  "created_at": "2026-08-18T04:51:34.000Z",
+  "updated_at": "2026-08-20T02:52:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 56908739903,
+  "storage_human": "56.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qazljlj/comfyui · Hugging Face",
+      "url": "https://huggingface.co/qazljlj/comfyui",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Comfy",
+      "url": "https://comfy.org/models/",
+      "snippet": "Run the world&#x27;s leading AI models in ComfyUI. Browse every supported model with community workflow templates ready to run."
+    },
+    {
+      "title": "qazljlj/comfyui2 at main - Hugging Face",
+      "url": "https://huggingface.co/qazljlj/comfyui2/tree/main/models",
+      "snippet": "qazljlj / comfyui2 like 0 LiteRT ONNX Safetensors GGUF Model card FilesFiles and versions xet Community Copy to bucket new main comfyui2 /models 208 GB Ctrl+K Ctrl+K 1 contributor History:49 commits qazljlj Upload ltx-2.3-22b-distilled-lora-1.1_rank72_energy.safetensors d964638 verified13 days ago LLMDelete models/LLM/test.txt6 months ago checkpointsUpload 10Eros_v1.2_fp8mixed_learned ..."
+    },
+    {
+      "title": "GitHub - Comfy-Org/ComfyUI: The most powerful and modular diffusion ...",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "snippet": "ComfyUI The most powerful and modular AI engine for content creation. ComfyUI is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output. Its powerful and modular node graph interface empowers creatives to generate images, videos, 3D models, audio, and more..."
+    },
+    {
+      "title": "ComfyUI Official Documentation - ComfyUI",
+      "url": "https://docs.comfy.org/",
+      "snippet": "Official documentation for ComfyUI, the open source node-based generative AI application. Learn to build workflows for image, video, audio, and 3D generation."
+    }
+  ]
+}

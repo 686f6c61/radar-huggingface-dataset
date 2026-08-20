@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.echo-scaleswe.step_6",
+  "slug": "agentic-ptb-sol-high-echo-scaleswe-step_6",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.echo-scaleswe.step_6",
+  "created_at": "2026-08-20T01:32:02.000Z",
+  "updated_at": "2026-08-20T01:33:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AweAI-Team/ScaleSWE",
+      "url": "https://github.com/AweAI-Team/ScaleSWE",
+      "snippet": "Contribute to AweAI-Team/ScaleSWE development by creating an account on GitHub."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "As model capabilities increase, we strengthen our safety stack so advanced intelligence can remain broadly useful while applying greater scrutiny to the highest-risk uses. For GPT‑5.6, we built our most robust safety system to date, calibrated to each model&#x27;s capabilities and powered by more compute than ever before."
+    },
+    {
+      "title": "Gemini 3.1 Pro | Google&#x27;s Most Advanced AI Model 2026",
+      "url": "https://gemini3.us/gemini-3.1-pro",
+      "snippet": "Gemini 3.1 Pro is Google DeepMind&#x27;s most advanced AI model, released on February 19, 2026. It delivers a 2x+ reasoning boost over Gemini 3 Pro, ranks #1 on 12 of 18 tracked benchmarks, and supports 1M token context with 65K token output."
+    },
+    {
+      "title": "Agentic AI Knowledge Base",
+      "url": "https://agentic-ai.readthedocs.io/",
+      "snippet": "Agentic AI Knowledge Base A comprehensive, structured knowledge repository consolidating cutting-edge research, patterns, frameworks, and best practices for building, deploying, and operating agentic AI systems at scale. Executive Overview The Agentic AI Knowledge Base serves as a consolidated knowledge hub designed to support the full lifecycle of agentic AI development—from foundational ..."
+    },
+    {
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model - OpenAI",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "snippet": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack."
+    }
+  ]
+}

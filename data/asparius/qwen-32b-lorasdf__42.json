@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "asparius/qwen-32B-lorasdf__42",
+  "slug": "asparius-qwen-32b-lorasdf__42",
+  "author": "asparius",
+  "url": "https://huggingface.co/asparius/qwen-32B-lorasdf__42",
+  "created_at": "2026-08-19T04:52:25.000Z",
+  "updated_at": "2026-08-20T01:54:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-32B",
+    "base_model:finetune:Qwen/Qwen2.5-32B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1085414773,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asparius/qwen-32B-lorasdf__42 · Hugging Face",
+      "url": "https://huggingface.co/asparius/qwen-32B-lorasdf__42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "asparius/Qwen2.5-Coder-32B-LORA-SDF · Hugging Face",
+      "url": "https://huggingface.co/asparius/Qwen2.5-Coder-32B-LORA-SDF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

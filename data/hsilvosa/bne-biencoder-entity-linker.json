@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "hsilvosa/bne-biencoder-entity-linker",
+  "slug": "hsilvosa-bne-biencoder-entity-linker",
+  "author": "hsilvosa",
+  "url": "https://huggingface.co/hsilvosa/bne-biencoder-entity-linker",
+  "created_at": "2026-08-19T20:31:31.000Z",
+  "updated_at": "2026-08-19T20:36:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "bne",
+    "entity-linking",
+    "spanish",
+    "cultural-heritage",
+    "es",
+    "dataset:hsilvosa/bne-linked-data",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "license:cc-by-4.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109850880,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439425888,
+  "storage_human": "439 MB",
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Entity Disambiguation",
+      "dataset": "BNE Linked Data",
+      "metric": null,
+      "value": 0.99
+    },
+    {
+      "task": "Entity Disambiguation",
+      "dataset": "BNE Linked Data",
+      "metric": null,
+      "value": 1
+    },
+    {
+      "task": "Entity Disambiguation",
+      "dataset": "BNE Linked Data",
+      "metric": null,
+      "value": 0.9948
+    }
+  ],
+  "sources": [
+    {
+      "title": "hsilvosa (Hugo Silvosa Cuervo) - Hugging Face",
+      "url": "https://huggingface.co/datasets/HSilvosa/",
+      "snippet": "hsilvosa&#x27;s datasets6 Sort: Recently updated hsilvosa/bne-linked-data Viewer •Updated about 2 hours ago•260M"
+    },
+    {
+      "title": "BLINK/blink/biencoder/biencoder.py at main · facebookresearch ... - GitHub",
+      "url": "https://github.com/facebookresearch/BLINK/blob/main/blink/biencoder/biencoder.py",
+      "snippet": "Entity Linker solution. Contribute to facebookresearch/BLINK development by creating an account on GitHub."
+    },
+    {
+      "title": "knowledgator/gliner-bi-base-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/knowledgator/gliner-bi-base-v1.0",
+      "snippet": "About GLiNER is a Named Entity Recognition (NER) model capable of identifying any entity type using a bidirectional transformer encoders (BERT-like). It provides a practical alternative to traditional NER models, which are limited to predefined entities, and Large Language Models (LLMs) that, despite their flexibility, are costly and large for resource-constrained scenarios."
+    },
+    {
+      "title": "GitHub - facebookresearch/BLINK: Entity Linker solution",
+      "url": "https://github.com/facebookresearch/BLINK",
+      "snippet": "Entity Linker solution. Contribute to facebookresearch/BLINK development by creating an account on GitHub."
+    },
+    {
+      "title": "arXiv:2303.04426v2 [cs.CL] 13 Mar 2023",
+      "url": "https://arxiv.org/pdf/2303.04426",
+      "snippet": "Abstract. Entity Linking (EL) is the task of detecting mentions of en-tities in text and disambiguating them to a reference knowledge base. Most prevalent EL approaches assume that the reference knowledge base is complete. In practice, however, it is necessary to deal with the case of linking to an entity that is not contained in the knowledge base (NIL entity). Recent works have shown that ..."
+    }
+  ]
+}

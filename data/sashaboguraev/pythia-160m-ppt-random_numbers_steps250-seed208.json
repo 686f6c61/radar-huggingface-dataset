@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sashaboguraev/pythia-160m-ppt-random_numbers_steps250-seed208",
+  "slug": "sashaboguraev-pythia-160m-ppt-random_numbers_steps250-seed208",
+  "author": "sashaboguraev",
+  "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-random_numbers_steps250-seed208",
+  "created_at": "2026-07-28T04:56:10.000Z",
+  "updated_at": "2026-08-19T20:00:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 218,
+  "trending_score": 0,
+  "parameters": 162281472,
+  "parameters_human": "162.3M",
+  "storage_bytes": 835172922,
+  "storage_human": "835 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sashaboguraev/pythia-160m-ppt-random_numbers_steps250-seed208 · Hugging ...",
+      "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-random_numbers_steps250-seed208",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pythia-160m-ppt-random_numbers_steps250-seed1024",
+      "url": "https://huggingface.co/sashaboguraev/pythia-160m-ppt-random_numbers_steps250-seed1024",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sashaboguraev/pythia-160m-ppt-random_numbers_steps500-seed208-reinit ...",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-random_numbers_steps500-seed208-reinit_layernorm",
+      "snippet": "How to Get Started with the Model Use the code below to get started with the model. [More Information Needed]"
+    },
+    {
+      "title": "pythia-160m-ppt-random_numbers_steps250-seed208",
+      "url": "https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-random_numbers_steps250-seed208",
+      "snippet": "Run pythia-160m-ppt-random_numbers_steps250-seed208 with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the…"
+    },
+    {
+      "title": "sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed208 ...",
+      "url": "https://dev.modelhub.org.cn/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed208-preserve_emb",
+      "snippet": "sashaboguraev / pythia-160m-ppt-control_shuffle_dyck_steps250-seed208-preserve_emb Watch 1 Star 0 Fork 0 You&#x27;ve already forked pythia-160m-ppt-control_shuffle_dyck_steps250-seed208-preserve_emb Code Issues Pull Requests Actions Projects Releases Wiki Activity 1 Commit 1 Branch 0 Tags main Go to file Code Clone HTTPS Tea CLI"
+    }
+  ]
+}

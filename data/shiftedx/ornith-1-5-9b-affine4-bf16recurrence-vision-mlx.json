@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Shiftedx/ornith-1.5-9b-affine4-bf16recurrence-vision-mlx",
+  "slug": "shiftedx-ornith-1-5-9b-affine4-bf16recurrence-vision-mlx",
+  "author": "Shiftedx",
+  "url": "https://huggingface.co/Shiftedx/ornith-1.5-9b-affine4-bf16recurrence-vision-mlx",
+  "created_at": "2026-08-19T20:57:09.000Z",
+  "updated_at": "2026-08-19T20:58:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-vlm",
+    "qwen3.5",
+    "vision",
+    "apple-silicon",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2140822768,
+  "parameters_human": "2.14B",
+  "storage_bytes": 6531210820,
+  "storage_human": "6.5 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5 - a ornith-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ornith-ai/ornith-15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Shiftedx (Shiftedx) - Hugging Face",
+      "url": "https://huggingface.co/Shiftedx",
+      "snippet": "Local-first Ornith 1.0 MLX and MTPLX builds for Apple Silicon, including vision and abliterated variants."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.0 is a self-improving family of open-source models specially for agentic coding tasks. Ornith-1.0 spans the full spectrum, from compact 9B Dense models suitable for edge device deployment to 397B MoE frontier-scale models optimized for maximum performance, with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE."
+    }
+  ]
+}

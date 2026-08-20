@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MATLOWAI/minimax-h3-nvfp4",
+  "slug": "matlowai-minimax-h3-nvfp4",
+  "author": "MATLOWAI",
+  "url": "https://huggingface.co/MATLOWAI/minimax-h3-nvfp4",
+  "created_at": "2026-08-20T00:37:08.000Z",
+  "updated_at": "2026-08-20T00:37:55.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "nvfp4",
+    "blackwell",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12528637032,
+  "storage_human": "12.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax-H3 - a MiniMaxAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/MiniMaxAI/minimax-h3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 Model Reference | ai-models-lab/minimax-h3 | DeepWiki",
+      "url": "https://deepwiki.com/ai-models-lab/minimax-h3/4-minimax-h3-model-reference",
+      "snippet": "MiniMax H3 is a state-of-the-art native multi-modal model capable of generating 2K AI video with synchronized 3D stereo audio in a single inference pass README.md 3 Architecture Overview The MiniMax H3 architecture deviates from traditional video-only models by employing a joint diffusion process."
+    },
+    {
+      "title": "GitHub - wildminder/awesome-minimax-H3: Awesome MiniMax-H3",
+      "url": "https://github.com/wildminder/awesome-minimax-H3",
+      "snippet": "Awesome MiniMax-H3 A curated list of models, text encoders, quants, and tools for the MiniMax-H3 omni-modal video generation model."
+    },
+    {
+      "title": "Minimax H3 T2V / I2V / REF2V Advanced Filmmaking Workflow | All ...",
+      "url": "https://civitai.com/models/2834514/minimax-h3-t2v-i2v-ref2v-advanced-filmmaking-workflow-or-all-speedups-qol-features",
+      "snippet": "A no-nonsense high level T2V / I2V / FFLF / REF2V workflow for Minimax H3 with lots of options & togglable quality of life features. Toggle between the [T2V / I2V / FFLF] model & the [REF2VA] model easily"
+    },
+    {
+      "title": "Models compatible with the MiniMax H3 library - Hugging Face",
+      "url": "https://huggingface.co/models?library=minimax-h3",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

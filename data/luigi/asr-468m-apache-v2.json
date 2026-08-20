@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Luigi/asr-468m-apache-v2",
+  "slug": "luigi-asr-468m-apache-v2",
+  "author": "Luigi",
+  "url": "https://huggingface.co/Luigi/asr-468m-apache-v2",
+  "created_at": "2026-08-20T00:07:38.000Z",
+  "updated_at": "2026-08-20T00:33:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "yue"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "audio",
+    "automatic-speech-recognition",
+    "qwen3",
+    "asr",
+    "multilingual",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "yue",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 467807232,
+  "parameters_human": "467.8M",
+  "storage_bytes": 1882705456,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luigi/asr-468m-apache-base · Hugging Face",
+      "url": "https://huggingface.co/Luigi/asr-468m-apache-base",
+      "snippet": "asr-468m-apache-base A 7-language (Chinese, English, French, German, Japanese, Korean, Cantonese) speech-to-text model distilled from Qwen3-ASR-.6B (Apache-2.0). This is the Stage-1 base checkpoint — the quality target reached before any parameter compression, at 467.81M parameters."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Automatic Speech Recognition Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=automatic-speech-recognition",
+      "snippet": "Active filters: automatic-speech-recognition. Clear all. openai/whisper-large-v3. Automatic Speech Recognition • 2B • Updated Aug 12, 2024 • 4.97M • • 6.12k"
+    },
+    {
+      "title": "Introducing Whisper - OpenAI",
+      "url": "https://openai.com/index/whisper/",
+      "snippet": "We&#x27;ve trained and are open-sourcing a neural net called Whisper that approaches human level robustness and accuracy on English speech recognition."
+    },
+    {
+      "title": "Whisper models for automatic speech recognition now available in Amazon ...",
+      "url": "https://aws.amazon.com/blogs/machine-learning/whisper-models-for-automatic-speech-recognition-now-available-in-amazon-sagemaker-jumpstart/",
+      "snippet": "Today, we&#x27;re excited to announce that the OpenAI Whisper foundation model is available for customers using Amazon SageMaker JumpStart. Whisper is a pre-trained model for automatic speech recognition (ASR) and speech translation. Trained on 680 thousand hours of labelled data, Whisper models demonstrate a strong ability to generalize to many datasets and domains without the need […]"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/SmolLM-135M-Instruct-quantized.w8a16",
+  "slug": "redhatai-smollm-135m-instruct-quantized-w8a16",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/SmolLM-135M-Instruct-quantized.w8a16",
+  "created_at": "2024-08-22T18:11:02.000Z",
+  "updated_at": "2026-08-19T21:45:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "int8",
+    "vllm",
+    "conversational",
+    "en",
+    "arxiv:2210.17323",
+    "base_model:HuggingFaceTB/SmolLM-135M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM-135M-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 364,
+  "trending_score": 0,
+  "parameters": 162826560,
+  "parameters_human": "162.8M",
+  "storage_bytes": 219876272,
+  "storage_human": "220 MB",
+  "base_model": "HuggingFaceTB/SmolLM-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/SmolLM-135M-Instruct-quantized.w8a16 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/SmolLM-135M-Instruct-quantized.w8a16",
+      "snippet": "Red Hat AI 759 Text Generation Transformers Safetensors English llama int8 vllm conversational text-generation-inference compressed-tensors arxiv:2210.17323 License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model SmolLM-135M-Instruct-quantized.w8a16 Model Overview Model Optimizations Deployment Use with vLLM ..."
+    },
+    {
+      "title": "RedHatAI/SmolLM-135M-Instruct-quantized.w8a8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/SmolLM-135M-Instruct-quantized.w8a8",
+      "snippet": "Red Hat AI 759 Text Generation Transformers Safetensors English llama int8 vllm conversational text-generation-inference 8-bit precision compressed-tensors arxiv:2210.17323 License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model SmolLM-135M-Instruct-quantized.w8a8 Model Overview Model Optimizations Deployment ..."
+    },
+    {
+      "title": "RedHatAI/SmolLM-135M-Instruct-quantized.w8a8: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/RedHatAI/SmolLM-135M-Instruct-quantized.w8a8",
+      "snippet": "This model was obtained by quantizing the weights of SmolLM-135M-Instruct to INT8 data type. This optimization reduces the number of bits per parameter from 16 to 8, reducing the disk size and GPU memory requirements by approximately 50%."
+    },
+    {
+      "title": "RedHatAI/SmolLM-135M-Instruct-quantized.w8a8 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/redhatai-smollm-135m-instruct-quantized-w8a8",
+      "snippet": "SmolLM-135M-Instruct-quantized.w8a8 is an open source model from GitHub that offers a free installation service, and any user can find SmolLM-135M-Instruct-quantized.w8a8 on GitHub to install."
+    },
+    {
+      "title": "Mayur88888888/tiny_smollm2-135M-instruct-gguf-q8 - GitHub",
+      "url": "https://github.com/Mayur88888888/tiny_smollm2-135M-instruct-gguf-q8",
+      "snippet": "SmolLM2 135M Instruct (Quantized Q8_0, GGUF) A tiny yet powerful instruction-tuned language model optimized for CPU inference. With only 135 million parameters and a file size of 138 MB, this model delivers impressive performance even on modest hardware."
+    }
+  ]
+}

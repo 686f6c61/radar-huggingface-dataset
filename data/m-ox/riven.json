@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "m-ox/riven",
+  "slug": "m-ox-riven",
+  "author": "m-ox",
+  "url": "https://huggingface.co/m-ox/riven",
+  "created_at": "2026-08-19T22:01:51.000Z",
+  "updated_at": "2026-08-19T22:20:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "cringe",
+    "e-girl",
+    "base_model:unsloth/Qwen3.5-4B-GGUF",
+    "base_model:quantized:unsloth/Qwen3.5-4B-GGUF",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2708804384,
+  "storage_human": "2.7 GB",
+  "base_model": "unsloth/Qwen3.5-4B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Riven of a Thousand Voices (Destiny 2) | TensorHub Art",
+      "url": "https://tensorhub.art/models/916970942750541594",
+      "snippet": "Download Riven of a Thousand Voices (Destiny 2) - free LORA Illustrious AI model on TENSORHUB ART. By user_874754251056777575"
+    },
+    {
+      "title": "Model Guides — Riven Docs | Riven Docs",
+      "url": "https://rivenai.io/docs/model-guides",
+      "snippet": "Per-model guides for every model available through the Riven API: capabilities, pricing, and access."
+    },
+    {
+      "title": "Riven of a Thousand Voices (Destiny 2) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/2f2760f0f4f13211db737dd443945d59",
+      "snippet": "Explore Riven of a Thousand Voices (Destiny 2) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Riven — Describe it. We build and run it.",
+      "url": "https://www.riven-ai.dev/",
+      "snippet": "Describe an app and Riven&#x27;s agents build it, run it on a real backend, and keep improving it — plus a local-first agentic desktop for vertical agents that do real work. Start free."
+    },
+    {
+      "title": "Riven of a Thousand Voices (Destiny 2) - PromptHero",
+      "url": "https://prompthero.com/ai-models/riven-of-a-thousand-voices-destiny-2-download/v1-0-illustrious",
+      "snippet": "🐉 Character Model: Riven of a Thousand VoicesRequested by: Vexx (Discord)🎮 Source: Destiny 2🧬 Species: Ahamkara (Monster / Dragon Entity)⚔️ Type: Monster Ant"
+    }
+  ]
+}

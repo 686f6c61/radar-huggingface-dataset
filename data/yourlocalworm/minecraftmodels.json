@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "YourLocalWorm/MinecraftModels",
+  "slug": "yourlocalworm-minecraftmodels",
+  "author": "YourLocalWorm",
+  "url": "https://huggingface.co/YourLocalWorm/MinecraftModels",
+  "created_at": "2024-07-13T15:20:24.000Z",
+  "updated_at": "2026-08-19T22:04:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2131930960,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YourLocalWorm/MinecraftModels · Hugging Face",
+      "url": "https://huggingface.co/YourLocalWorm/MinecraftModels",
+      "snippet": "YourLocalWorm ... MinecraftModels like 1 Model card FilesFiles and versions Community No model card Downloads last month -"
+    },
+    {
+      "title": "YourLocalWorm/MinecraftModels at main - Hugging Face",
+      "url": "https://huggingface.co/YourLocalWorm/MinecraftModels/tree/main",
+      "snippet": "like 2 Model card FilesFiles and versions xet Community Copy to bucket new main MinecraftModels 1.82 GB Ctrl+K Ctrl+K 2 contributors History:11 commits YourLocalWorm Upload SteveJackBlackdatanotcleaned.zip c15e11e verified2 months ago .gitattributes 1.83 kBUpload 4 files2 months ago BlazeTITAN.zip 52.8 MB xet Upload 4 filesalmost 2 years ago ..."
+    },
+    {
+      "title": "ModTable.AI — Minecraft Mob Maker",
+      "url": "https://modtable.ai/",
+      "snippet": "How It Works 1. Describe Tell AI what you want or pick a base model 2. Customize Paint skins, set abilities, loot & spawning 3. Preview See your creation in 3D before exporting 4. Export Download .mcaddon and play in Minecraft"
+    },
+    {
+      "title": "AI Build Generator + 3D Model Importer Minecraft Mod",
+      "url": "https://www.planetminecraft.com/mod/3d-model-importer/",
+      "snippet": "This mod lets you import 3D models into Minecraft, as well as use AI to generate your own. Version: Forge 1.21.1 Key Features: Generate builds from text prompts using the power of AI. Seamlessly import 3D models into your Minecraft world. Scale, rotate, and move models in-game. Manipulate models using the Model Hammer item, or using commands. Built-in undo button. Limitations: Only supports ..."
+    },
+    {
+      "title": "AI-Player - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ai-player",
+      "snippet": "A minecraft mod which aims to add a \"second player\" into the game which will actually be intelligent. 35.6K Downloads | Mods"
+    }
+  ]
+}

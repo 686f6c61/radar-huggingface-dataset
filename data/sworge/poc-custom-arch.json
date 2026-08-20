@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sworge/poc-custom-arch",
+  "slug": "sworge-poc-custom-arch",
+  "author": "sworge",
+  "url": "https://huggingface.co/sworge/poc-custom-arch",
+  "created_at": "2026-08-19T19:53:57.000Z",
+  "updated_at": "2026-08-19T19:54:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "chat",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 988097824,
+  "storage_human": "988 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Proof of Concept (PoC) Guide: From Strategy to Go/No-Go | SmartDev",
+      "url": "https://smartdev.com/the-ultimate-guide-to-ai-proof-of-concept-poc-from-strategy-to-implementation/",
+      "snippet": "A complete guide to AI Proof of Concept (PoC): business case, readiness checklist, stage-gated framework, and how to decide go, iterate, or stop."
+    },
+    {
+      "title": "AI Proof of Concept (PoC): Examples & Best Practices",
+      "url": "https://devcom.com/tech-blog/ai-proof-of-concept/",
+      "snippet": "Learn what an AI Proof of Concept (PoC) is, why it matters, and how to build one. Explore steps, benefits, best practices, and real-world AI PoC examples to ensure project success."
+    },
+    {
+      "title": "How To Build And Deploy Custom AI Models | CustomGPT.ai",
+      "url": "https://customgpt.ai/custom-ai-model/",
+      "snippet": "Custom AI model guide: define use case, prep data, and deploy with CustomGPT.ai RAG, GPT-5 grounding, vector search, and an anti-hallucination layer."
+    },
+    {
+      "title": "Architecting a successful generative AI proof of concept",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-lifecycle-operational-excellence/dev-architecting.html",
+      "snippet": "The journey to a production-grade generative AI application begins long before the first line of code is written. It starts with a strategically sound proof of concept (PoC). Too often, PoCs are treated as technical demos that are designed to impress rather than as rigorous experiments that are designed to promote learning. A successful PoC is a strategic tool that derisks investment by ..."
+    },
+    {
+      "title": "GitHub - lllyasviel/stable-diffusion-webui-forge",
+      "url": "https://github.com/lllyasviel/stable-diffusion-webui-forge",
+      "snippet": "Stable Diffusion WebUI Forge is a platform on top of Stable Diffusion WebUI (based on Gradio ) to make development easier, optimize resource management, speed up inference, and study experimental features. The name \"Forge\" is inspired from \"Minecraft Forge\". This project is aimed at becoming SD WebUI&#x27;s Forge. Forge is currently based on SD-WebUI 1.10.1 at this commit. (Because original SD ..."
+    }
+  ]
+}

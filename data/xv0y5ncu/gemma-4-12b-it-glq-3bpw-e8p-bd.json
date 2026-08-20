@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xv0y5ncu/gemma-4-12B-it-GLQ-3bpw-e8p-bd",
+  "slug": "xv0y5ncu-gemma-4-12b-it-glq-3bpw-e8p-bd",
+  "author": "xv0y5ncu",
+  "url": "https://huggingface.co/xv0y5ncu/gemma-4-12B-it-GLQ-3bpw-e8p-bd",
+  "created_at": "2026-06-24T05:57:34.000Z",
+  "updated_at": "2026-08-19T22:32:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "glq",
+    "quantization",
+    "e8-lattice",
+    "e8p",
+    "3-bit",
+    "conversational",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 1574815792,
+  "parameters_human": "1.57B",
+  "storage_bytes": 6232787027,
+  "storage_human": "6.2 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xv0y5ncu/gemma-4-12B-it-GLQ-3bpw-e8p-bd · Hugging Face",
+      "url": "https://huggingface.co/xv0y5ncu/gemma-4-12B-it-GLQ-3bpw-e8p-bd",
+      "snippet": "This model card is for the Gemma 4 12B Unified model, which is part of the Gemma 4 family of open models. Built with the same multimodal functionality as Gemma 4 E2B and E4B (text, audio, image, and video inputs), it brings native audio and vision understanding directly to local environments without the need for separate encoders."
+    },
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "xv0y5ncu/gemma-4-12B-it-GLQ-3bpw-e8p-bd API & Inference Endpoint ...",
+      "url": "https://friendli.ai/models/xv0y5ncu/gemma-4-12B-it-GLQ-3bpw-e8p-bd",
+      "snippet": "Gemma 4 models are multimodal, handling text and image input (with audio supported on E2B, E4B, and 12B) and generating text output. This release includes open-weights models in both pre-trained and instruction-tuned variants."
+    },
+    {
+      "title": "Gemma 4 12B IT - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/gemma-4-12b-it",
+      "snippet": "Deploy Google&#x27;s Gemma 4 12B Unified, an encoder-free omni model with native text, image, and audio understanding and a 256K context window."
+    }
+  ]
+}

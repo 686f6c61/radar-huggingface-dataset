@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Discourse/parakeet-tdt-0.6b-v3-onnx",
+  "slug": "discourse-parakeet-tdt-0-6b-v3-onnx",
+  "author": "Discourse",
+  "url": "https://huggingface.co/Discourse/parakeet-tdt-0.6b-v3-onnx",
+  "created_at": "2026-08-19T20:33:55.000Z",
+  "updated_at": "2026-08-19T20:33:55.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "nemo-conformer-tdt",
+    "automatic-speech-recognition",
+    "parakeet",
+    "fp32",
+    "fp16",
+    "int8",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4495601919,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/parakeet-tdt-0.6b-v3 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "snippet": "🦜 parakeet-tdt-.6b-v3: Multilingual Speech-to-Text Model | | Description: parakeet-tdt-.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-.6b-v2 model by expanding language support from English to 25 European languages. The model automatically detects the language ..."
+    },
+    {
+      "title": "GitHub - groxaxo/parakeet-tdt-0.6b-v3-fastapi-openai: A FastAPI wrapper ...",
+      "url": "https://github.com/groxaxo/parakeet-tdt-0.6b-v3-fastapi-openai",
+      "snippet": "Parakeet TDT is a high-performance implementation of NVIDIA&#x27;s Parakeet TDT 0.6B v3 model using ONNX Runtime, designed for ultra-fast inference on CPU. This implementation achieves exceptional real-time speeds, outperforming standard openai/whisper and competing directly with GPU-accelerated faster-whisper implementations while running entirely on consumer CPUs. The efficiency is achieved ..."
+    },
+    {
+      "title": "s0me-0ne/parakeet-tdt-0.6b-v3-onnx · Hugging Face",
+      "url": "https://huggingface.co/s0me-0ne/parakeet-tdt-0.6b-v3-onnx",
+      "snippet": "NVIDIA Parakeet TDT 0.6B V3 (Multilingual) model converted to ONNX format for magic-voice. Install onnx-asr"
+    },
+    {
+      "title": "yitaverse/parakeet-tdt-0.6b-v3 - GitHub",
+      "url": "https://github.com/yitaverse/parakeet-tdt-0.6b-v3",
+      "snippet": "The primary model used is the Parakeet TDT 0.6B v3 converted to ONNX with INT8 quantization, providing the optimal balance of speed and accuracy for multilingual speech recognition across 25 European languages."
+    },
+    {
+      "title": "parakeet-tdt-0.6b-v3-onnx: Audio-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/parakeet-tdt-0.6b-v3-onnx-istupakov",
+      "snippet": "Overview parakeet-tdt-.6b-v3-onnx is an ONNX-format conversion of NVIDIA&#x27;s Parakeet TDT 0.6B V3 multilingual speech recognition model, maintained by istupakov. This 600-million-parameter model uses the FastConformer-TDT architecture and handles automatic speech recognition across European languages. The critical distinction here is the format: this is not the original model but an optimized ..."
+    }
+  ]
+}

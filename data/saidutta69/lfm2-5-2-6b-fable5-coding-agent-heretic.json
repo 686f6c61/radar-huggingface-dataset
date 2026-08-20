@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "saidutta69/lfm2.5-2.6b-fable5-coding-agent-heretic",
+  "slug": "saidutta69-lfm2-5-2-6b-fable5-coding-agent-heretic",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/lfm2.5-2.6b-fable5-coding-agent-heretic",
+  "created_at": "2026-08-19T09:10:32.000Z",
+  "updated_at": "2026-08-19T21:52:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "lfm2",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "coding-agent",
+    "tool-use",
+    "conversational",
+    "text-generation-inference",
+    "text-generation",
+    "en",
+    "base_model:AyoubChLin/lfm2.5-2.6b-fable5-coding-agent",
+    "base_model:quantized:AyoubChLin/lfm2.5-2.6b-fable5-coding-agent",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 14129023014,
+  "storage_human": "14.1 GB",
+  "base_model": "AyoubChLin/lfm2.5-2.6b-fable5-coding-agent",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AyoubChLin/lfm2.5-2.6b-fable5-coding-agent · Hugging Face",
+      "url": "https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AyoubChLin/lfm2.5-2.6b-fable5-coding-agent at main - Hugging Face",
+      "url": "https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lfm2.5 2.6B Fable5 Coding Agent by AyoubChLin",
+      "url": "https://llm-explorer.com/model/AyoubChLin%2Flfm2.5-2.6b-fable5-coding-agent,2Mhb3ILfg1Hy4HpJEryJjc",
+      "snippet": "Rank the Lfm2.5 2.6B Fable5 Coding Agent capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "LFM2.5-2.6B - Liquid Docs - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents"
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    }
+  ]
+}

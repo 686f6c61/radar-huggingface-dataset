@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-E4B-wildlife-expert-GGUF",
+  "slug": "mradermacher-gemma-4-e4b-wildlife-expert-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-E4B-wildlife-expert-GGUF",
+  "created_at": "2026-08-20T02:34:25.000Z",
+  "updated_at": "2026-08-20T02:40:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 16603345824,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moonhac/gemma-4-E4B-wildlife-expert-GGUF · Hugging Face",
+      "url": "https://huggingface.co/moonhac/gemma-4-E4B-wildlife-expert-GGUF",
+      "snippet": "Instructions to use moonhac/gemma-4-E4B-wildlife-expert-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use moonhac/gemma-4-E4B-wildlife-expert-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "gemma-4-e4b-it.Q4_K_M.gguf · moonhac/gemma-4-E4B-wildlife-expert-GGUF ...",
+      "url": "https://huggingface.co/moonhac/gemma-4-E4B-wildlife-expert-GGUF/blob/main/gemma-4-e4b-it.Q4_K_M.gguf",
+      "snippet": "Instructions to use moonhac/gemma-4-E4B-wildlife-expert-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use moonhac/gemma-4-E4B-wildlife-expert-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Gemma releases - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/releases",
+      "snippet": "Gemma releases This page documents releases for the Gemma family of models. June 3, 2026 Release of Gemma 4 12B Unified. April 16, 2026 Release of Gemma 4 - MTP for E2B, E4B, 31B, and 26B A4B. March 31, 2026 Release of Gemma 4 in E2B, E4B, 31B and 26B A4B sizes. January 15, 2026 Release of TranslateGemma in 4B, 12B, and 27B parameter size ..."
+    },
+    {
+      "title": "mradermacher / gemma4-e4b-obliterus-default-GGUF",
+      "url": "https://insights-db.paloaltonetworks.com/models/mradermacher/gemma4-e4b-obliterus-default-GGUF/594ba06685dfe778d60ef904e380f0c3f0f72628/overview",
+      "snippet": "Discover potential threats in the mradermacher / gemma4-e4b-obliterus-default-GGUF model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    }
+  ]
+}

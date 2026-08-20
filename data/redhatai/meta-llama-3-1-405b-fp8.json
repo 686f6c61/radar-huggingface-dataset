@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Meta-Llama-3.1-405B-FP8",
+  "slug": "redhatai-meta-llama-3-1-405b-fp8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-405B-FP8",
+  "created_at": "2024-08-01T16:26:22.000Z",
+  "updated_at": "2026-08-19T21:37:54.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "fp8",
+    "vllm",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "base_model:meta-llama/Llama-3.1-405B",
+    "base_model:quantized:meta-llama/Llama-3.1-405B",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 531,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 414288408624,
+  "storage_human": "414.3 GB",
+  "base_model": "meta-llama/Meta-Llama-3.1-405B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-405B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-405B-FP8",
+      "snippet": "Model Optimizations This model was obtained by quantizing the weights and activations of Meta-Llama-3.1-405B to FP8 data type, ready for inference with vLLM built from source. This optimization reduces the number of bits per parameter from 16 to 8, reducing the disk size and GPU memory requirements by approximately 50%."
+    },
+    {
+      "title": "meta-llama/Llama-3.1-405B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-405B-FP8",
+      "snippet": "Model Information The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out)."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-405B-FP8 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/redhatai-meta-llama-3-1-405b-fp8",
+      "snippet": "Model Architecture: Meta-Llama-3.1 Input: Text Output: Text Input: Text Output: Text Model Optimizations: Weight quantization: FP8 Activation quantization: FP8 Weight quantization: FP8 Activation quantization: FP8 Intended Use Cases: Intended for commercial and research use in multiple languages. Similarly to Meta-Llama-3.1-8B , this model serves as a base version. Out-of-scope: Use in any ..."
+    },
+    {
+      "title": "Meta-Llama-3.1-405B-FP8: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/meta-llama-31-405b-fp8-meta-llama",
+      "snippet": "Overview Meta-Llama-3.1-405B-FP8 is a 405-billion parameter multilingual instruction-tuned large language model built by meta-llama. This is the largest model in the Llama 3.1 family, quantized to FP8 precision for reduced memory requirements while maintaining full capability. The model uses an optimized transformer architecture with Grouped-Query Attention (GQA), operates on a 128k token ..."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    }
+  ]
+}

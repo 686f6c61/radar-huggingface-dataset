@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mudler/Ornith-1.5-35B-A3B-APEX-MTP-GGUF",
+  "slug": "mudler-ornith-1-5-35b-a3b-apex-mtp-gguf",
+  "author": "mudler",
+  "url": "https://huggingface.co/mudler/Ornith-1.5-35B-A3B-APEX-MTP-GGUF",
+  "created_at": "2026-08-19T22:14:43.000Z",
+  "updated_at": "2026-08-19T22:22:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 71066994272,
+  "storage_human": "71.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mudler/Ornith-1.0-35B-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mudler/Ornith-1.0-35B-APEX-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B Benchmarks & Context (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/ornith-1-5-35b-a3b",
+      "snippet": "Ornith-1.5-35B-A3B by Ornith AI ranks #134 of 221 with a public score of 49.27/100. Evidence: Estimated; this profile shows 18 source-displayable benchmark rows."
+    }
+  ]
+}

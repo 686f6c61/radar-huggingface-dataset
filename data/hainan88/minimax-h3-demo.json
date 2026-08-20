@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hainan88/minimax-h3-demo",
+  "slug": "hainan88-minimax-h3-demo",
+  "author": "hainan88",
+  "url": "https://huggingface.co/hainan88/minimax-h3-demo",
+  "created_at": "2026-08-20T03:32:11.000Z",
+  "updated_at": "2026-08-20T03:32:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
+    },
+    {
+      "title": "minimax-h3/README.md at main · ai-models-lab/minimax-h3",
+      "url": "https://github.com/ai-models-lab/minimax-h3/blob/main/README.md",
+      "snippet": "MiniMax H3 (Hailuo AI) - AI Video Workflows, Prompts & Local Deployment Hub Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax H3 Multimodal AI Video Model | Hailuo AI",
+      "url": "https://hailuoai.video/tools/minimax-h3",
+      "snippet": "Create 5-15s videos with MiniMax H3 from text, images, video, and audio. Generate and precisely edit visuals, sound, and motion in Hailuo AI."
+    },
+    {
+      "title": "MiniMax H3 Demo - a Hugging Face Space by tinypony",
+      "url": "https://huggingface.co/spaces/tinypony/minimax-h3-demo",
+      "snippet": "Enter a descriptive text prompt (and optionally upload a first‑frame image) to create a short video with matching motion and native audio using the MiniMax‑H3 model. Provide your MiniMax API key (o..."
+    }
+  ]
+}

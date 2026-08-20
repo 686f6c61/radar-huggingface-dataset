@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Tohirju/chatterbox-mtl-uzbek",
+  "slug": "tohirju-chatterbox-mtl-uzbek",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/chatterbox-mtl-uzbek",
+  "created_at": "2026-08-19T22:51:09.000Z",
+  "updated_at": "2026-08-19T22:51:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "chatterbox",
+  "languages": [
+    "uz"
+  ],
+  "tags": [
+    "chatterbox",
+    "tts",
+    "uzbek",
+    "voice-cloning",
+    "central-asian",
+    "text-to-speech",
+    "uz",
+    "base_model:ResembleAI/chatterbox",
+    "base_model:finetune:ResembleAI/chatterbox",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3206961596,
+  "storage_human": "3.2 GB",
+  "base_model": "ResembleAI/chatterbox",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tohirju/tajik-chatterbox · Hugging Face",
+      "url": "https://huggingface.co/Tohirju/tajik-chatterbox",
+      "snippet": "Tohirju / tajik-chatterbox like 0 PEFT Safetensors lora arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ResembleAI/chatterbox · Hugging Face",
+      "url": "https://huggingface.co/ResembleAI/chatterbox",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - resemble-ai/chatterbox: SoTA open-source TTS",
+      "url": "https://github.com/resemble-ai/chatterbox",
+      "snippet": "Chatterbox TTS Made with ♥️ by Chatterbox is a family of state-of-the-art, open-source text-to-speech models by Resemble AI."
+    },
+    {
+      "title": "GitHub - resemble-ai/chatterbox at tasarim-ai · GitHub",
+      "url": "https://github.com/resemble-ai/chatterbox?ref=tasarim-ai",
+      "snippet": "Chatterbox TTS Made with ♥️ by Chatterbox is a family of three state-of-the-art, open-source text-to-speech models by Resemble AI. We are excited to introduce Chatterbox-Turbo, our most efficient model yet. Built on a streamlined 350M parameter architecture, Turbo delivers high-quality speech with less compute and VRAM than our previous models."
+    },
+    {
+      "title": "Chatterbox: Open Source Text-to-Speech | Resemble AI",
+      "url": "https://www.resemble.ai/learn/models/chatterbox",
+      "snippet": "Chatterbox is Resemble AI&#x27;s free, open-source TTS model, MIT-licensed with emotion control, real-time generation, and zero-shot voice cloning from 5 seconds of audio."
+    }
+  ]
+}

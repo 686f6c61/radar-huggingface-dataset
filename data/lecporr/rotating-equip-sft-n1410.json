@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lecporr/rotating-equip-sft-n1410",
+  "slug": "lecporr-rotating-equip-sft-n1410",
+  "author": "lecporr",
+  "url": "https://huggingface.co/lecporr/rotating-equip-sft-n1410",
+  "created_at": "2026-08-19T22:00:05.000Z",
+  "updated_at": "2026-08-19T22:00:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81205308,
+  "storage_human": "81 MB",
+  "base_model": "unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "Free Image to 3D Model in Seconds｜Tripo AI",
+      "url": "https://www.tripo3d.ai/features/image-to-3d-model",
+      "snippet": "FAQ What is \"image to 3D model\" generation? Tripo AI generates a base 3D model in seconds. Further refinements like AI retopology, 8K texturing, rigging, and animation can bring total processing time to around 5 minutes for a fully production-ready asset."
+    },
+    {
+      "title": "Off-Highway Tire Tread Depth Gauge - HALTEC Corporation",
+      "url": "https://www.haltec.com/pc/Off-Highway-Tire-Tread-Depth-Gauge-p558.htm",
+      "snippet": "Off-Highway Tire Tread Depth Gauge (Gauges). Indicating bar is calibrated with 32nds on one side, other side is millimeters. Has magnified sight-glass for easy readability. Comes with a carrying holster. The finest instrument available."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    }
+  ]
+}

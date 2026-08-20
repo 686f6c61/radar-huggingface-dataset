@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h004.opsd-scaleswe.step_12",
+  "slug": "agentic-ptb-sol-high-h004-opsd-scaleswe-step_12",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h004.opsd-scaleswe.step_12",
+  "created_at": "2026-08-20T02:30:30.000Z",
+  "updated_at": "2026-08-20T02:31:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EcthelionLiu/Agentic-OPSD",
+      "url": "https://github.com/EcthelionLiu/Agentic-OPSD",
+      "snippet": "On-Policy Self-Distillation (OPSD) trains a single model to act as both student and teacher by conditioning on different contexts — the student sees only the problem, while the teacher additionally sees the ground-truth solution — and performs token-level distribution matching along the student&#x27;s own on-policy trajectories. OPSD achieves comparable or better performance while using 8-12× ..."
+    },
+    {
+      "title": "Agentic-OPSD/README.md at main · EcthelionLiu/Agentic-OPSD",
+      "url": "https://github.com/EcthelionLiu/Agentic-OPSD/blob/main/README.md",
+      "snippet": "Overview On-Policy Self-Distillation (OPSD) trains a single model to act as both student and teacher by conditioning on different contexts — the student sees only the problem, while the teacher additionally sees the ground-truth solution — and performs token-level distribution matching along the student&#x27;s own on-policy trajectories."
+    },
+    {
+      "title": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning",
+      "url": "https://arxiv.org/html/2608.05987",
+      "snippet": "AgentOPSD outperforms GRPO+OPSD, Skill-SD, and RLSD on all eight aggregate comparisons across the two model scales, and exceeds SDAR on six of eight. This controlled-information comparison isolates the benefit of AgentOPSD: a local teacher-student gap is not yet a reliable credit signal."
+    },
+    {
+      "title": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning",
+      "url": "https://arxiv.org/pdf/2608.05987",
+      "snippet": "ABSTRACT Reinforcement learning(RL) with verifiable rewards constructs trajectory-level advantage, yet often fails to credit the few pivotal decisions that drive outcomes in long-horizon multi-turn agentic RL. Some recent works introduce privileged self-distillation into credit assignment for RL, offering denser supervision, but it still remains unclear how such a local signal should express ..."
+    },
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    }
+  ]
+}

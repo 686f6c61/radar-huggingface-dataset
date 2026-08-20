@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bobtehbuilder/tds-ga8-carbon-6fb0f25c2a7b",
+  "slug": "bobtehbuilder-tds-ga8-carbon-6fb0f25c2a7b",
+  "author": "bobtehbuilder",
+  "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-6fb0f25c2a7b",
+  "created_at": "2026-08-20T02:56:59.000Z",
+  "updated_at": "2026-08-20T02:57:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-72de90a80622 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-72de90a80622",
+      "snippet": "bobtehbuilder / tds-ga8-carbon-72de90a80622 like 0 Carbon Emissions Model card FilesFiles and versions xet Community Copy to bucket new TDS GA8 — Green AI Carbon Accounting"
+    },
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-7d414617c8f9 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-7d414617c8f9",
+      "snippet": "bobtehbuilder / tds-ga8-carbon-7d414617c8f9 like 0 Carbon Emissions Model card FilesFiles and versions xet Community Copy to bucket new TDS GA8 — Green AI Carbon Accounting"
+    },
+    {
+      "title": "Bob the Builder・ STL File for 3D printing・Cults",
+      "url": "https://cults3d.com/en/3d-model/game/bob-the-builder-kozo",
+      "snippet": "Download this STL Model for 3D printer made by kozo. Bob is a handyman who helps fix anything you need. He is assisted by his machines, who are used to building, excavating, and repairing if the situation calls for it. Model size: 29x62x51mm"
+    },
+    {
+      "title": "GA8 Card Model Instructions: AI Chat & PDF Access | Manualzz",
+      "url": "https://manualzz.com/doc/81045911/bob-s-card-models-gippsland-airvan-ga8-quick-start-manual",
+      "snippet": "Get detailed instructions for building Bob&#x27;s Card Models GA8. Access AI for help & download the PDF manual. Build your Gippsland Airvan GA8 card model!"
+    },
+    {
+      "title": "Tds 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/tds",
+      "snippet": "Tds 3D models ready to view and download for free."
+    }
+  ]
+}

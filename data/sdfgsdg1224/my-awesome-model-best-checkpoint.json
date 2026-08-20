@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sdfgsdg1224/my-awesome-model-best-checkpoint",
+  "slug": "sdfgsdg1224-my-awesome-model-best-checkpoint",
+  "author": "sdfgsdg1224",
+  "url": "https://huggingface.co/sdfgsdg1224/my-awesome-model-best-checkpoint",
+  "created_at": "2026-08-20T00:12:25.000Z",
+  "updated_at": "2026-08-20T00:35:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sdfgsdg1224/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/sdfgsdg1224/MyAwesomeModel-TestRepo",
+      "snippet": "The model architecture of MyAwesomeModel-Small is identical to its base model, but it shares the same tokenizer configuration as the main MyAwesomeModel. This model can be run in the same manner as its base model."
+    },
+    {
+      "title": "sad12cxzqw/my-awesome-model-best-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/sad12cxzqw/my-awesome-model-best-checkpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - msb-msb/awesome-local-ai: A curated list of resources for ...",
+      "url": "https://github.com/msb-msb/awesome-local-ai",
+      "snippet": "Awesome Local AI A curated list of resources for running AI locally on consumer hardware -- LLMs, image generation, and AI agents without cloud dependencies. 230+ guides, tools, and community links."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Models | InvokeAI Documentation",
+      "url": "https://invoke.ai/concepts/models/",
+      "snippet": "Checkpoint and Diffusers Models The model checkpoint files (*.ckpt) are the Stable Diffusion \"secret sauce\". They are the product of training the AI on millions of captioned images gathered from multiple sources. Originally there was only a single Stable Diffusion weights file, which many people named model.ckpt."
+    }
+  ]
+}

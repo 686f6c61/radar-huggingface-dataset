@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shreeshinator/arm-pick-blocks-act-first",
+  "slug": "shreeshinator-arm-pick-blocks-act-first",
+  "author": "shreeshinator",
+  "url": "https://huggingface.co/shreeshinator/arm-pick-blocks-act-first",
+  "created_at": "2026-08-19T14:00:47.000Z",
+  "updated_at": "2026-08-19T20:22:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:shreeshinator/arm-picking-blocks-real",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51666565,
+  "parameters_human": "51.7M",
+  "storage_bytes": 3097561956,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Shreeshinator/Shreeshinator: I&#x27;m just a kid building cool ...",
+      "url": "https://github.com/Shreeshinator/Shreeshinator",
+      "snippet": "About I&#x27;m a student engineer focused on embedded systems, robotics, AI/ML, and CAD-driven engineering. I build practical systems end to end, from hardware and control logic to software tooling and applied experimentation."
+    },
+    {
+      "title": "Training SO-101 with ACT: My 3-Week Journey and Lessons ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/sherryxychen_robotics-machinelearning-ai-activity-7378831304047587328-lNQW",
+      "snippet": "🤖 *From Woodpecker to Working Robot: My 3-Week Journey Training ACT on SO-101* 🤖 I trained my SO-101 to pick and place blocks, using Action Chunking Transformer (ACT), an imitation learning ..."
+    },
+    {
+      "title": "CanIRun.ai — Can your machine run AI models?",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your hardware and find out which AI models you can run locally. GPU, CPU, and RAM analysis in your browser."
+    },
+    {
+      "title": "AI Blockbench Model Generator | Rigged 3D Minecraft Models from a ...",
+      "url": "https://kodari.ai/blogs/ai-blockbench-model-generator",
+      "snippet": "AI Blockbench Model Generator: Rigged, Animated .bbmodel Files from a Prompt Describe a mob, a pet, a weapon, a prop. Get back a proper .bbmodel, rigged with bones and animated, that opens straight in Blockbench. No modeling, no keyframing by hand."
+    },
+    {
+      "title": "How to Develop Sprite Sheets with gpt-image-2 - A Complete Step-by-Step ...",
+      "url": "https://dredyson.com/how-to-develop-sprite-sheets-with-gpt-image-2-a-complete-step-by-step-beginners-guide-with-proven-prompt-techniques-pose-transfer-workflows-and-common-mistakes-to-avoid/",
+      "snippet": "I&#x27;ll be straight with you — I spent about three weeks banging my head against gpt-image-2 trying to get clean sprite sheets. My first few attempts? Disaster."
+    }
+  ]
+}

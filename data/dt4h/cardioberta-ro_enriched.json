@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "DT4H/CardioBERTa.ro_enriched",
+  "slug": "dt4h-cardioberta-ro_enriched",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/CardioBERTa.ro_enriched",
+  "created_at": "2026-08-19T21:30:00.000Z",
+  "updated_at": "2026-08-19T21:54:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "feature-extraction",
+    "biomedical",
+    "clinical",
+    "cardiology",
+    "entity-linking",
+    "concept-normalization",
+    "umls",
+    "metric-learning",
+    "ro",
+    "base_model:DT4H/CardioBERTa.ro",
+    "base_model:finetune:DT4H/CardioBERTa.ro",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129279830,
+  "storage_human": "1.1 GB",
+  "base_model": "DT4H/CardioBERTa.ro",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DT4H/CardioBERTa.ro_GP_enriched · Hugging Face",
+      "url": "https://huggingface.co/DT4H/CardioBERTa.ro_GP_enriched",
+      "snippet": "DT4H_CardioBERTa_grandparents_ro_enriched is a Romanian biomedical terminology encoder for clinical concept normalization and entity linking. It is initialized from [DT4H/CardioBERTa.ro] and specialized using CUI-supervised terminology pairs and metric learning."
+    },
+    {
+      "title": "DT4H (DataTools4Heart) - Hugging Face",
+      "url": "https://huggingface.co/datasets/DT4H/",
+      "snippet": "Recent Activity janrodriguez new activityabout 1 month ago DT4H/CardioBERTa.en: Adding `safetensors` variant of this model janrodriguez new activityabout 1 month ago DT4H/CardioBERTa.cs: Adding `safetensors` variant of this model janrodriguez new activityabout 1 month ago DT4H/CardioBERTa.it: Adding `safetensors` variant of this model View all ..."
+    },
+    {
+      "title": "The DataTools4Heart Project · GitHub",
+      "url": "https://github.com/DataTools4Heart/",
+      "snippet": "This organization hosts the source code and documentation for all components that power the DataTools4Heart (DT4H) platform — a federated, privacy-preserving cardiology data toolbox developed to enhance health data reusability. Our platform enables secure, decentralized analysis of cardiology data while strictly adhering to ethical, legal, and data protection standards."
+    },
+    {
+      "title": "Home - DataTools4Heart",
+      "url": "https://www.datatools4heart.eu/",
+      "snippet": "Natural Language Processing DataTools4Heart will introduce a multilingual Natural Language Processing (NLP) suite to standardise the structuring of cardiology reports across European regions, including cardiology-specific entity recognition and machine translation. Such suite will include adaptation of 7 language models to the cardiology domain in English, Spanish, Italian, Romanian, Czech ..."
+    },
+    {
+      "title": "DataTools4Heart Documentation Hub | DataTools4Heart Docs",
+      "url": "https://datatools4heart.github.io/documentation-hub/",
+      "snippet": "Welcome to DataTools4Heart Documentation Hub Explore our comprehensive documentation for all community software tools."
+    }
+  ]
+}

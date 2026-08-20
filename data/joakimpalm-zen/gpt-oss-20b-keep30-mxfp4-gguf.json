@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Joakimpalm-Zen/gpt-oss-20b-keep30-MXFP4-GGUF",
+  "slug": "joakimpalm-zen-gpt-oss-20b-keep30-mxfp4-gguf",
+  "author": "Joakimpalm-Zen",
+  "url": "https://huggingface.co/Joakimpalm-Zen/gpt-oss-20b-keep30-MXFP4-GGUF",
+  "created_at": "2026-08-05T18:01:04.000Z",
+  "updated_at": "2026-08-19T19:24:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mxfp4",
+    "moe",
+    "expert-pruning",
+    "structural-derivative",
+    "xyntetik-runner",
+    "text-generation",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:quantized:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 1395,
+  "trending_score": 0,
+  "parameters": 19719810576,
+  "parameters_human": "19.72B",
+  "storage_bytes": 11472833184,
+  "storage_human": "11.5 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joakimpalm-Zen/gpt-oss-20b-keep30-MXFP4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Joakimpalm-Zen/gpt-oss-20b-keep30-MXFP4-GGUF",
+      "snippet": "Joakimpalm-Zen / gpt-oss-20b-keep30-MXFP4-GGUF like 0 Text Generation GGUF mxfp4 Mixture of Experts expert-pruning structural-derivative gridcore-runner conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - openai/gpt-oss: gpt-oss-120b and gpt-oss-20b are two open ...",
+      "url": "https://github.com/openai/gpt-oss",
+      "snippet": "MXFP4 quantization: The models were post-trained with MXFP4 quantization of the MoE weights, making gpt-oss-120b run on a single 80GB GPU (like NVIDIA H100 or AMD MI300X) and the gpt-oss-20b model run within 16GB of memory. All evals were performed with the same MXFP4 quantization."
+    },
+    {
+      "title": "openai/gpt-oss-20b · Hugging Face",
+      "url": "https://huggingface.co/openai/gpt-oss-20b",
+      "snippet": "Discover Hugging Face&#x27;s gpt-oss-20b model, a smaller open-source AI with versatile applications and fine-tuning capabilities for developers and researchers."
+    },
+    {
+      "title": "gpt-oss-120b & gpt-oss-20b Model Card - OpenAI",
+      "url": "https://openai.com/index/gpt-oss-model-card/",
+      "snippet": "We introduce gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models available under the Apache 2.0 license and our gpt-oss usage policy."
+    },
+    {
+      "title": "Introducing gpt-oss - OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-oss/",
+      "snippet": "We&#x27;re releasing gpt-oss-120b and gpt-oss-20b—two state-of-the-art open-weight language models that deliver strong real-world performance at low cost. Available under the flexible Apache 2.0 license, these models outperform similarly sized open models on reasoning tasks, demonstrate strong tool use capabilities, and are optimized for efficient deployment on consumer hardware."
+    }
+  ]
+}

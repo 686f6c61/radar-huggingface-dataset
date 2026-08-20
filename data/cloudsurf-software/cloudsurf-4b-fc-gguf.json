@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "cloudsurf-software/CloudSurf-4B-FC-GGUF",
+  "slug": "cloudsurf-software-cloudsurf-4b-fc-gguf",
+  "author": "cloudsurf-software",
+  "url": "https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC-GGUF",
+  "created_at": "2026-08-20T00:19:55.000Z",
+  "updated_at": "2026-08-20T00:37:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "function-calling",
+    "tool-use",
+    "bfcl",
+    "cloudsurf",
+    "gemma-4",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:cloudsurf-software/CloudSurf-4B-FC",
+    "base_model:quantized:cloudsurf-software/CloudSurf-4B-FC",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 46801632064,
+  "storage_human": "46.8 GB",
+  "base_model": "cloudsurf-software/CloudSurf-4B-FC",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cloudsurf-software/CloudSurf-4B-FC · Hugging Face",
+      "url": "https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC",
+      "snippet": "Gemma-4 E4B (effective-4B active; ~8.0B total params) QLoRA-tuned by CloudSurf Software for function calling and agentic tool use. BFCL V4 FULL (harness pinned f7cf735): 3-seed mean 55.73 vs stock 34.81 (+20.9) — above the published small-model class bar (Nanbeige4-3B 51.40) and above stock gpt-oss-20b (49.09) measured on the identical rig."
+    },
+    {
+      "title": "mradermacher/CloudSurf-4B-FC-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/CloudSurf-4B-FC-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CloudSurf - GitHub",
+      "url": "https://github.com/cloudsurf-software",
+      "snippet": "cloudsurf-db Public PostgreSQL connection pool with exponential backoff retry for Fly.io Rust 0 MIT 0 0 0 Updated on Mar 29 homebrew-tap Public Homebrew tap for CloudSurf CLI tools Ruby 0 0 0 0 Updated on Mar 23 surfdoc-vscode Public VS Code extension for SurfDoc (.surf) — syntax highlighting, snippets, file icons 0 MIT 0 0 0 Updated on Feb 22"
+    },
+    {
+      "title": "CloudSurf-4B-FC API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/cloudsurf-software/CloudSurf-4B-FC",
+      "snippet": "The model&#x27;s native interface is prompt-mode (Gemma-4 turn format, bracket tool-call lists). For harnesses that speak the OpenAI chat/tools API — including tau2-bench — this repo ships the exact serving bridge used for our τ²-bench leaderboard runs: serving/fc_tau2_bridge.py (stdlib-only, no dependencies)."
+    },
+    {
+      "title": "CloudSurf — Software that ships.",
+      "url": "https://www.cloudsurf.com/",
+      "snippet": "Surfspace puts docs, tasks, and knowledge in one AI workspace. Surfy is the AI agent that builds with you. Built with Rust, deployed on Fly.io."
+    }
+  ]
+}

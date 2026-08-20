@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ai_detector-GGUF",
+  "slug": "mradermacher-ai_detector-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ai_detector-GGUF",
+  "created_at": "2026-06-04T16:59:57.000Z",
+  "updated_at": "2026-08-20T02:00:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-classification",
+    "ai-detection",
+    "modernbert",
+    "binary-classification",
+    "en",
+    "base_model:videogameaetoros/Ai_detector",
+    "base_model:quantized:videogameaetoros/Ai_detector",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 124645634,
+  "parameters_human": "124.6M",
+  "storage_bytes": 1239582464,
+  "storage_human": "1.2 GB",
+  "base_model": "videogameaetoros/Ai_detector",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Detector - Ranked #1 For Quality",
+      "url": "https://duckduckgo.com/y.js?ad_domain=grammarly.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=u0Kkhq6nzr3Ls5yfx4dSNf9FTKUz%2DUqI1WD7l3JId%2D7X_obD%2DJO2iHxf0YpXy5RW_SHCiK5eKkNwCz9m0Tqye%2D145GcDiM%2Dhctnsc%2DJZm3SyVZ6HZAfOOJ3W3y%2Dx0hZ37_n_eD_q_9atJlzsO6DGwG4ABCCV_KUpDhgtGheaIjQ.d789_AVgv0ejgZa5mzn8mQ&rut=254642f3162c0c3377e2f41e30137e5f382afb56cd243609b57476294ac86dd7&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8YW5gYrwJpvpVPz6AIBqA3TVUCUw7jr4_m%2DH8RIyU0BBnnbNlkOk7rNrlqdZIO5Z0Usz%2DPkH%2DMcmOLjvg893epY3k21_A9CsvZKnK889o98QaR5tepssGn2XFa_8YHfFTWiZL48m6WVMMUfWEs0OuEa3g7enFt5YteNuLQsqdxPrZvmGpdpPS6sT5Amp6RVplL4m66A0h19xdW7zcKJaHtj6LiB4%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZ3JhbW1hcmx5LmNvbSUyZmFpLWRldGVjdG9yJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3Mzc5NDk4JTI2dXRtX2NvbnRlbnQlM2Q4MTE1NzgyOTQxNzgwNSUyNnV0bV90ZXJtJTNkY2hlY2slMjUyMGZvciUyNTIwYWklMjZ1dG1fYnUlM2Rjb3JwJTI2a2V5d29yZGlkJTNkODExNTgwMzQwNTE1MzUlMjZ0YXJnZXRpZCUzZGt3ZC04MTE1ODAzNDA1MTUzNSUzYWxvYy02NiUyNmFkZ3JvdXAlM2QxMjk4NTI0MzgwOTMxMDc1JTI2ZGV2aWNlJTNkYyUyNm1hdGNodHlwZSUzZHAlMjZuZXR3b3JrJTNkcyUyNmV4dGVuc2lvbiUzZCUyNmNsaWNraWQlM2RhMjVhYTI1MTJjZGIxMTllM2ZjNWM4ZDc0Nzk5ZjBjMSUyNmdjbGlkJTNkYTI1YWEyNTEyY2RiMTE5ZTNmYzVjOGQ3NDc5OWYwYzElMjZtc2Nsa2lkJTNkYTI1YWEyNTEyY2RiMTE5ZTNmYzVjOGQ3NDc5OWYwYzE%26rlid%3Da25aa2512cdb119e3fc5c8d74799f0c1&vqd=4-32631240250290280493080264588896482790&iurl=%7B1%7DIG%3D8BB4DADDBAF74CC796E3FE06A2BEDFEE%26CID%3D0A7BAE95519E6BE5365BB92E50E96A4B%26ID%3DDevEx%2C5037.1",
+      "snippet": "Grammarly&#x27;s free AI checker is trained to detect AI-generated content and help you fix it. Check out Grammarly&#x27;s #1-rated AI Detector. Spot and rewrite generic AI text."
+    },
+    {
+      "title": "mradermacher/Ai_detector-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ai_detector-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Ai_detector-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ai_detector-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

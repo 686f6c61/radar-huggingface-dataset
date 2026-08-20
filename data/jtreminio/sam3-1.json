@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jtreminio/sam3.1",
+  "slug": "jtreminio-sam3-1",
+  "author": "jtreminio",
+  "url": "https://huggingface.co/jtreminio/sam3.1",
+  "created_at": "2026-08-19T20:51:34.000Z",
+  "updated_at": "2026-08-19T20:51:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "mask-generation",
+  "library": "checkpoint",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "checkpoint",
+    "sam3_video",
+    "sam3.1",
+    "mask-generation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3502857940,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAM 3.1: Faster and More Accessible Real-Time Video Detection and ...",
+      "url": "https://ai.meta.com/blog/segment-anything-model-3/",
+      "snippet": "This global reasoning approach streamlines performance and enhances accuracy in crowded scenes. We encourage the community to download the SAM 3.1 model checkpoint, explore the updates to the SAM 3 codebase and research paper, and test drive the updated model on the Segment Anything Playground."
+    },
+    {
+      "title": "Meta SAM 3.1 - 7x Faster Multi-Object Video Tracking",
+      "url": "https://awesomeagents.ai/news/meta-sam-3-1-object-multiplex/",
+      "snippet": "Meta releases SAM 3.1 with Object Multiplex, processing all tracked objects in one shared pass for 7x faster inference at 128 objects and improvements on 6 of 7 VOS benchmarks."
+    },
+    {
+      "title": "sam3.1: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/sam3.1-comfy-org",
+      "snippet": "sam3.1 by facebook is the official base model. This repackaged version from Comfy-Org is identical in capability but pre-organized for ComfyUI&#x27;s directory structure, eliminating setup friction if you already use ComfyUI; the official version offers broader framework support and clearer documentation of model variants and parameters."
+    },
+    {
+      "title": "Meta SAM 3.1 — Faster Real-Time Video Detection and Tracking with ...",
+      "url": "https://the-agent-report.com/2026/05/meta-sam-3-1-video-detection-multiplexing-may21/",
+      "snippet": "SAM 3.1 is fully open-source, with model weights available on Hugging Face and code on GitHub — a strategy that has made Meta&#x27;s vision models the de facto standard for research and commercial applications alike. For the broader AI ecosystem, SAM 3.1&#x27;s multiplexing architecture is an important technical contribution."
+    },
+    {
+      "title": "SAM 3.1: The AI Model That Sees Concepts and Moves at Lightning Speed",
+      "url": "https://textideo.com/blog/sam-3-1-the-ai-model-that-sees-concepts-and-moves-at-lightning-speed",
+      "snippet": "Meta AI s SAM 3.1 brings lightning fast conceptual understanding to video tracking and segmentation for professionals."
+    }
+  ]
+}

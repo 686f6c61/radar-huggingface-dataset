@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Meta-Llama-3.1-70B-Instruct-quantized.w8a8",
+  "slug": "redhatai-meta-llama-3-1-70b-instruct-quantized-w8a8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-Instruct-quantized.w8a8",
+  "created_at": "2024-07-29T22:38:44.000Z",
+  "updated_at": "2026-08-19T21:44:16.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "int8",
+    "vllm",
+    "conversational",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "arxiv:2210.17323",
+    "base_model:meta-llama/Llama-3.1-70B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.1-70B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 2897,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 145339903744,
+  "storage_human": "145.3 GB",
+  "base_model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta-Llama-3.1-70B-Instruct-quantized.w8a8 - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-Instruct-quantized.w8a8",
+      "snippet": "Model Optimizations This model was obtained by quantizing the weights of Meta-Llama-3.1-70B-Instruct to INT8 data type. This optimization reduces the number of bits used to represent weights and activations from 16 to 8, reducing GPU memory requirements (by approximately 50%) and increasing matrix-multiply compute throughput (by approximately 2x)."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-Instruct-FP8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-Instruct-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-Instruct-quantized.w8a8 - Socket",
+      "url": "https://socket.dev/huggingface/package/redhatai/meta-llama-3.1-70b-instruct-quantized.w8a8",
+      "snippet": "This model is a quantized version of Meta-Llama-3.1-70B-Instruct. It was evaluated on a several tasks to assess the its quality in comparison to the unquatized model, including multiple-choice, math reasoning, and open-ended text generation."
+    },
+    {
+      "title": "RedHatAI_Meta-Llama-3.1-70B-Instruct-quantized.w8a8",
+      "url": "https://opencsg.com/models/RedHatAI/RedHatAI_Meta-Llama-3.1-70B-Instruct-quantized.w8a8?tab=summary",
+      "snippet": "Meta-Llama-3.1-70B-Instruct-quantized.w8a8是一个面向多语言环境的对话式文本生成服务，支持英语、德语、法语、意大利语、葡萄牙语、印地语、西班牙语和泰语等语言，适用于商业和研究场景中的智能助手类应用。该服务基于LlamaForCausalLM架构，采用INT8量化技术对模型权重和激活值进行优化，通过GPTQ算法 ..."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-Instruct-quantized.w8a8",
+      "url": "https://www.endorlabs.com/ai-model/redhatai-meta-llama-3-1-70b-instruct-quantized-w8a8",
+      "snippet": "RedHatAI/Meta-Llama-3.1-70B-Instruct-quantized.w8a8 AI model with 8086 downloads"
+    }
+  ]
+}

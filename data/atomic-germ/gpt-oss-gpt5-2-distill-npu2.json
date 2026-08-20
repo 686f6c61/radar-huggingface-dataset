@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/GPT-OSS-GPT5.2-Distill-NPU2",
+  "slug": "atomic-germ-gpt-oss-gpt5-2-distill-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/GPT-OSS-GPT5.2-Distill-NPU2",
+  "created_at": "2026-08-14T01:31:13.000Z",
+  "updated_at": "2026-08-19T20:09:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gpt_oss",
+    "gpt-oss",
+    "openai",
+    "mxfp4",
+    "programming",
+    "code generation",
+    "code",
+    "coding",
+    "coder",
+    "chat",
+    "reasoning",
+    "thinking",
+    "r1",
+    "cot",
+    "128k context",
+    "general usage",
+    "problem solving",
+    "brainstorming",
+    "solve riddles",
+    "Neo",
+    "MOE",
+    "Mixture of Experts",
+    "24 experts",
+    "llm",
+    "fastflowlm",
+    "q4nx",
+    "npu2",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:DavidAU/OpenAI-gpt-oss-20B-GPT5.1-5.2-DISTILL-Heretic-Uncensored-MXFP4",
+    "base_model:quantized:DavidAU/OpenAI-gpt-oss-20B-GPT5.1-5.2-DISTILL-Heretic-Uncensored-MXFP4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 222,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14474593159,
+  "storage_human": "14.5 GB",
+  "base_model": "DavidAU/OpenAI-gpt-oss-20B-GPT5.1-5.2-DISTILL-Heretic-Uncensored-MXFP4",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/GPT-OSS-GPT5.2-Distill-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/GPT-OSS-GPT5.2-Distill-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Atomic-Germ/GPT-OSS-GPT5.2-Distill-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/GPT-OSS-GPT5.2-Distill-NPU2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing GPT‑5.2 - OpenAI",
+      "url": "https://openai.com/index/introducing-gpt-5-2/",
+      "snippet": "GPT-5.2 is our most advanced frontier model for everyday professional work, with state-of-the-art reasoning, long-context understanding, coding, and vision. Use it in ChatGPT and the OpenAI API to power faster, more reliable agentic workflows."
+    },
+    {
+      "title": "GPT-5.2 Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.2",
+      "snippet": "Previous frontier model for professional work with configurable reasoning effort"
+    },
+    {
+      "title": "GitHub - openai/gpt-oss: gpt-oss-120b and gpt-oss-20b are two open ...",
+      "url": "https://github.com/openai/gpt-oss",
+      "snippet": "Download gpt-oss-120b and gpt-oss-20b on Hugging Face Welcome to the gpt-oss series, OpenAI&#x27;s open-weight models designed for powerful reasoning, agentic tasks, and versatile developer use cases."
+    }
+  ]
+}

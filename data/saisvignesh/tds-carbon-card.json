@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "saisvignesh/tds-carbon-card",
+  "slug": "saisvignesh-tds-carbon-card",
+  "author": "saisvignesh",
+  "url": "https://huggingface.co/saisvignesh/tds-carbon-card",
+  "created_at": "2026-08-19T22:04:40.000Z",
+  "updated_at": "2026-08-19T22:04:40.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pranhai/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/pranhai/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Sustainable AI: Measuring and Reducing Carbon Footprint in Model ...",
+      "url": "https://www.researchgate.net/publication/392727729_Sustainable_AI_Measuring_and_Reducing_Carbon_Footprint_in_Model_Training_and_Deployment",
+      "snippet": "This research article addresses the escalating environmental impact of Artificial Intelligence (AI) and Machine Learning (ML) systems, focusing specifically on the carbon footprint generated ..."
+    },
+    {
+      "title": "The Carbon Intensity of Generative Design: Emissions Analysis of ...",
+      "url": "https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings/IDETC-CIE2024/88391/V005T05A005/1208950",
+      "snippet": "Our findings reveal that image-based diffusion models produce 772x more carbon emissions per sample compared to tabular models with a similar number of parameters. Moreover, for small models, emissions are dominated by sampling, highlighting the necessity of quantifying sampling emissions for sustainable applications of AI."
+    },
+    {
+      "title": "Sustainable AI: Sparse Backpropagation for Low-Carbon On-Device Training",
+      "url": "https://www.computer.org/csdl/proceedings-article/ict4s/2025/871700a112/2aqO2cA8oDK",
+      "snippet": "Experimental results show that sparse backpropagation can maintain model accuracy within 1-2% of standard training while reducing energy usage and carbon emissions by up to 30-40%. We analyze trade-offs between accuracy, speed, and sustainability and discuss deployment strategies for energy-efficient on-device learning."
+    },
+    {
+      "title": "OpenAI models escaped containment, hacked major AI application library ...",
+      "url": "https://www.cybersecuritydive.com/news/openai-hugging-face-hack-autonomous/825898/",
+      "snippet": "OpenAI models escaped containment, hacked major AI application library The attack is the first known instance of frontier models autonomously breaking out of a testing environment and into another company&#x27;s servers."
+    }
+  ]
+}

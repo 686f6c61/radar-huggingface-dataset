@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ethicalabs/Echo-SmolTools-114M-Intent-CLF-Gen",
+  "slug": "ethicalabs-echo-smoltools-114m-intent-clf-gen",
+  "author": "ethicalabs",
+  "url": "https://huggingface.co/ethicalabs/Echo-SmolTools-114M-Intent-CLF-Gen",
+  "created_at": "2026-05-17T17:35:24.000Z",
+  "updated_at": "2026-08-19T23:59:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "echo",
+    "text-classification",
+    "zero-shot-classification",
+    "echo-dsrn",
+    "custom_code",
+    "base_model:ethicalabs/Echo-DSRN-114M-v0.1.2",
+    "base_model:finetune:ethicalabs/Echo-DSRN-114M-v0.1.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 114656768,
+  "parameters_human": "114.7M",
+  "storage_bytes": 229328168,
+  "storage_human": "229 MB",
+  "base_model": "ethicalabs/Echo-DSRN-114M-v0.1.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ethicalabs/Echo-SmolTools-114M-Intent-PEFT · Hugging Face",
+      "url": "https://huggingface.co/ethicalabs/Echo-SmolTools-114M-Intent-PEFT",
+      "snippet": "The Echo-SmolTools-114M-Intent-PEFT is a a LoRA-based adapter trained over the Echo-DSRN-114M-v0.1.2 base RNN architecture, optimized as multilingual intentionality classifier."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=echo-dsrn",
+      "snippet": "ethicalabs/Echo-SmolTools-114M-Intent-CLF-Gen Text Classification • 0.1B•Updated 6 days ago• 32"
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/ethicalabs-ai/Echo-DSRN/refs/heads/main/examples/classify_dsrn_gen.py",
+      "snippet": "intent label strings and returning the highest log-probability one. Model : ethicalabs/Echo-SmolTools-114M-Intent-CLF-Gen Task : 60-class intent classification (Amazon MASSIVE, 51 locales)"
+    },
+    {
+      "title": "ethicalabs-ai/Echo-DSRN - GitHub",
+      "url": "https://github.com/ethicalabs-ai/Echo-DSRN/",
+      "snippet": "Echo-DSRN is a hybrid recurrent architecture designed for resource-constrained deployment on narrow, well-defined tasks (e.g., intent routing, NER, semantic classification). This is the canonical Hugging Face implementation of the Echo-DSRN 114M model and its hybrid variant (using a Qwen 2.5 ..."
+    },
+    {
+      "title": "Echo-DSRN/tests/test_generative_classification.py at main · ethicalabs ...",
+      "url": "https://github.com/ethicalabs-ai/Echo-DSRN/blob/main/tests/test_generative_classification.py",
+      "snippet": "All tests use the real Hub checkpoints: • Base model : ethicalabs/Echo-DSRN-114M-v0.1.2 • Adapter : ethicalabs/Echo-SmolTools-114M-Intent-PEFT A module-scoped fixture loads and merges the model once; all tests share it ..."
+    }
+  ]
+}

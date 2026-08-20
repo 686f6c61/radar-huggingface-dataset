@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yrlyrl/plangen-mmoct-highlight-bbox-vq-20k",
+  "slug": "yrlyrl-plangen-mmoct-highlight-bbox-vq-20k",
+  "author": "yrlyrl",
+  "url": "https://huggingface.co/yrlyrl/plangen-mmoct-highlight-bbox-vq-20k",
+  "created_at": "2026-08-19T21:09:28.000Z",
+  "updated_at": "2026-08-19T21:12:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "plangen",
+    "mmcot",
+    "visual-cot",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32076922468,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yrlyrl (rlyang) - Hugging Face",
+      "url": "https://huggingface.co/yrlyrl",
+      "snippet": "Recent Activity new activityabout 13 hours ago RuoliuYang/step0-all: step0-all: depth (18370) + edge (18328) teacher reps (bbox to follow) new activityabout 16 hours ago RuoliuYang/step0-edge-dep: Monet step1 teacher reps depth+edge (36698, previewable parquet) new activityabout 16 hours ago"
+    },
+    {
+      "title": "[2502.16111] PlanGEN: A Multi-Agent Framework for Generating Planning ...",
+      "url": "https://arxiv.org/abs/2502.16111",
+      "snippet": "Recent agent frameworks and inference-time algorithms often struggle with complex planning problems due to limitations in verifying generated plans or reasoning and varying complexity of instances within a single task. Many existing methods for these tasks either perform task-level verification without considering constraints or apply inference-time algorithms without adapting to instance ..."
+    },
+    {
+      "title": "Paper page - PlanGEN: A Multi-Agent Framework for Generating Planning ...",
+      "url": "https://huggingface.co/papers/2502.16111",
+      "snippet": "PlanGEN: A Multi-Agent Framework for Generating Planning and Reasoning Trajectories for Complex Problem Solving"
+    },
+    {
+      "title": "PlanGEN:AMulti-AgentFrameworkfor ... - arXiv.org",
+      "url": "https://arxiv.org/pdf/2502.16111v1",
+      "snippet": "dering constraints or apply inference-time algorithms without adapting to instance-level complexity. To address these limitations, we propose PlanGEN, a model-agnostic and easil scalable agent framework with three key components: constraint, verification, and selection agents. Specifically, our approach proposes constraint-guided iterative verif"
+    },
+    {
+      "title": "GitHub - cajias/plangen: Implementation of Google&#x27;s PlanGen framework ...",
+      "url": "https://github.com/cajias/plangen",
+      "snippet": "An implementation of Google&#x27;s PlanGen multi-agent planning framework PlanGEN is a multi-agent framework for solving complex problems with large language models — an open implementation of the workflow from the paper PlanGEN: Generative Planning with Large Language Models. It coordinates specialized agents to extract constraints, generate candidate plans, verify them, and select the best one ..."
+    }
+  ]
+}

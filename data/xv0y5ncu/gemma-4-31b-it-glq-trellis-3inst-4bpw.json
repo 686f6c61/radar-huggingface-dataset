@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "xv0y5ncu/gemma-4-31B-it-GLQ-trellis-3inst-4bpw",
+  "slug": "xv0y5ncu-gemma-4-31b-it-glq-trellis-3inst-4bpw",
+  "author": "xv0y5ncu",
+  "url": "https://huggingface.co/xv0y5ncu/gemma-4-31B-it-GLQ-trellis-3inst-4bpw",
+  "created_at": "2026-08-03T12:58:01.000Z",
+  "updated_at": "2026-08-19T22:31:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "glq",
+    "quantization",
+    "trellis",
+    "tcq",
+    "conversational",
+    "arxiv:2406.11235",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 9315694956,
+  "parameters_human": "9.32B",
+  "storage_bytes": 18646844902,
+  "storage_human": "18.6 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8 · Hugging Face",
+      "url": "https://huggingface.co/xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8",
+      "snippet": "English gemma4 glq quantization e8-lattice rht ldlq gemma-4 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Gemma-4-31B-it-GLQ-5.0bpw-mix3-8 Serving with vLLM (0.23.0+, text-only) Benchmarks Performance & footprint License Method Usage (HuggingFace transformers) Installation Note on max_new ..."
+    },
+    {
+      "title": "Gemma 4 31B — Enterprise-Grade Local LLM | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-31b",
+      "snippet": "Gemma 4 31B is Google&#x27;s flagship Gemma 4 model with 31B parameters and 256K token context. Ideal for production RAG pipelines, long-document analysis, and enterprise inference servers."
+    },
+    {
+      "title": "gemma-4-31b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/gemma-4-31b-it/modelcard",
+      "snippet": "Gemma 4 31B IT is an open multimodal model built by Google DeepMind that handles text and image inputs, can process video as sequences of frames, and generates text output."
+    }
+  ]
+}

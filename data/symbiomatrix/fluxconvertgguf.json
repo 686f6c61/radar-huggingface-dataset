@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Symbiomatrix/FluxConvertGguf",
+  "slug": "symbiomatrix-fluxconvertgguf",
+  "author": "Symbiomatrix",
+  "url": "https://huggingface.co/Symbiomatrix/FluxConvertGguf",
+  "created_at": "2025-09-17T11:15:55.000Z",
+  "updated_at": "2026-08-19T20:42:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 178,
+  "trending_score": 0,
+  "parameters": 11901408320,
+  "parameters_human": "11.90B",
+  "storage_bytes": 161748121280,
+  "storage_human": "161.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Symbiomatrix/FluxConvertGguf · Hugging Face",
+      "url": "https://huggingface.co/Symbiomatrix/FluxConvertGguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Symbiomatrix/FluxConvert · Hugging Face",
+      "url": "https://huggingface.co/Symbiomatrix/FluxConvert",
+      "snippet": "Symbiomatrix / FluxConvert like 0 License:mit Model card FilesFiles and versions Community"
+    },
+    {
+      "title": "Symbiomatrix/FluxConvertGguf - MyGGUF",
+      "url": "https://mygguf.com/model?id=Symbiomatrix%2FFluxConvertGguf",
+      "snippet": "Symbiomatrix/FluxConvertGguf High-quality GGUF model 34 Downloads 0 Likes 12 GGUF Files"
+    },
+    {
+      "title": "Symbiomatrix/FluxConvertGguf - Hugging Face Hub Package Secu... - Socket",
+      "url": "https://socket.dev/huggingface/package/symbiomatrix/fluxconvertgguf",
+      "snippet": "Is Symbiomatrix/FluxConvertGguf well maintained? We found that Symbiomatrix/FluxConvertGguf demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "GitHub - Symbiomatrix/clod: The fastest repo in history to surpass 50K ...",
+      "url": "https://github.com/Symbiomatrix/clod",
+      "snippet": "The fastest repo in history to surpass 50K stars ⭐, reaching the milestone in just 2 hours after publication. Better Harness Tools that make real things done. Now writing in Rust using oh-my-codex. - Symbiomatrix/clod"
+    }
+  ]
+}

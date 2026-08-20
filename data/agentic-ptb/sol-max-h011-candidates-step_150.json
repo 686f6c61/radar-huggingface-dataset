@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-max.h011.candidates.step_150",
+  "slug": "agentic-ptb-sol-max-h011-candidates-step_150",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-max.h011.candidates.step_150",
+  "created_at": "2026-08-20T03:30:19.000Z",
+  "updated_at": "2026-08-20T03:31:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "Efficient by default, maximum performance on demand GPT‑5.6 Sol is our best coding model yet. On the Artificial Analysis Coding Agent Index, GPT‑5.6 Sol with max reasoning sets a new state of the art at 80, 2.8 points above Fable 5, while using less than half the output tokens, taking less than half the time, and costing about one-third less."
+    },
+    {
+      "title": "GitHub - obra/superpowers: An agentic skills framework & software ...",
+      "url": "https://github.com/obra/superpowers",
+      "snippet": "Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Signin",
+      "url": "https://agenticai.ml/",
+      "snippet": "Signin ChatBotKit AI Platform That Transforms and Grows your Business"
+    },
+    {
+      "title": "AAS Core — Agentic Awesome Skills - GitHub",
+      "url": "https://github.com/sickn33/agentic-awesome-skills",
+      "snippet": "What is Agentic Awesome Skills? Agentic Awesome Skills is the repository behind AAS Core, a local agent-first control plane for recording and validating agent-chosen skill stacks. The read-only AAS MCP gives Codex and Claude complete catalog search and skill inspection; the stack CLI and Workbench make the chosen state reproducible and reviewable."
+    }
+  ]
+}

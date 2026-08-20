@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fushuncui/opd-sft-e2-uniform-eosfix",
+  "slug": "fushuncui-opd-sft-e2-uniform-eosfix",
+  "author": "fushuncui",
+  "url": "https://huggingface.co/fushuncui/opd-sft-e2-uniform-eosfix",
+  "created_at": "2026-08-19T18:56:29.000Z",
+  "updated_at": "2026-08-19T20:41:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth?locale=en-US",
+      "snippet": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more. - unslothai/unsloth"
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Use the latest models Run and train nearly every model locally, with Day Zero support for releases like Qwen3.8, NVIDIA, GLM, Gemma and more. Discover, manage and download the right quantization for your device from the built-in model hub."
+    },
+    {
+      "title": "Project Arora Plugin Automates LSPDFR Uniform Injection for Police Mods",
+      "url": "https://www.prismnews.com/hobbies/gta/project-arora-plugin-automates-lspdfr-uniform-injection-for",
+      "snippet": "Augusta&#x27;s Project Arora reads ped model DNA from memory to automate LSPDFR uniform injection, replacing manual XML edits for police mod setups."
+    },
+    {
+      "title": "Optimizing LLMs: LoRA, QLoRA, SFT, PEFT, and OPD Explained",
+      "url": "https://dev.to/adil_maqsood_2ac3c8ead50c/optimizing-llms-lora-qlora-sft-peft-and-opd-explained-5a6g",
+      "snippet": "Techniques like LoRA, QLoRA, SFT, PEFT, and OPD make it possible to train custom AI models faster, at lower costs, and with minimal hardware requirements. Want to stay updated on LLM fine-tuning techniques? Follow me for more deep dives into AI optimizations, model training, and practical AI applications!"
+    },
+    {
+      "title": "GitHub - thinkwee/AwesomeOPD: Awesome List for On-Policy Distillation",
+      "url": "https://github.com/thinkwee/AwesomeOPD",
+      "snippet": "📝 Strictness notes (against the strict OPD definition C1: student samples its own trajectories during training + C2: teacher provides supervision on those samples) Lightning OPD — ⚠️ partially satisfies C1: teacher log-probs are pre-computed once over SFT rollouts and reused during training; student doesn&#x27;t actively sample during the OPD step. Authors call this \"offline OPD ..."
+    }
+  ]
+}

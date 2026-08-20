@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bingbangboom/unslopify-GGUF",
+  "slug": "bingbangboom-unslopify-gguf",
+  "author": "bingbangboom",
+  "url": "https://huggingface.co/bingbangboom/unslopify-GGUF",
+  "created_at": "2026-08-19T20:33:59.000Z",
+  "updated_at": "2026-08-19T20:35:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 8709518080,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "GGUF is a modern file format for storing models optimized for efficient inference, particularly on consumer-grade hardware. This makes it easier for researchers, developers, and hobbyists to experiment with and deploy large language models."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Everything you make with AI looks like everyone else&#x27;s.",
+      "url": "https://unslopify-ai.com/",
+      "snippet": "The default is visible before anyone reads. Unslopify is a set of paste-ready taste files — prompt systems, design rules, image-direction frameworks, and voice files. You drop them into your tool. From that moment, everything it makes stops looking generic and starts feeling chosen, original, and intentional. Unslopify is an AI slop fix for people who use AI to write, design, build, and ..."
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Use the latest models Run and train nearly every model locally, with Day Zero support for releases like Qwen3.8, NVIDIA, GLM, Gemma and more. Discover, manage and download the right quantization for your device from the built-in model hub."
+    }
+  ]
+}

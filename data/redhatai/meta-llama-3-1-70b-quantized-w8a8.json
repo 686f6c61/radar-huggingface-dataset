@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Meta-Llama-3.1-70B-quantized.w8a8",
+  "slug": "redhatai-meta-llama-3-1-70b-quantized-w8a8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-quantized.w8a8",
+  "created_at": "2024-08-01T18:15:00.000Z",
+  "updated_at": "2026-08-19T21:44:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 181,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 72669951872,
+  "storage_human": "72.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-quantized.w8a8 at main",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-quantized.w8a8/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-quantized.w8a8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-quantized.w8a8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Meta-Llama-3.1-70B-quantized.w8a8 - friendli.ai",
+      "url": "https://friendli.ai/models/RedHatAI/Meta-Llama-3.1-70B-quantized.w8a8",
+      "snippet": "Run RedHatAI/Meta-Llama-3.1-70B-quantized.w8a8 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-Instruct-quantized.w8a8",
+      "url": "https://socket.dev/huggingface/package/redhatai/meta-llama-3.1-70b-instruct-quantized.w8a8",
+      "snippet": "This model is a quantized version of Meta-Llama-3.1-70B-Instruct. It was evaluated on a several tasks to assess the its quality in comparison to the unquatized model, including multiple-choice, math reasoning, and open-ended text generation. Meta-Llama-3.1-70B-Instruct-quantized.w8a8 achieves 98.8% recovery for the Arena-Hard evaluation, 99.9% for OpenLLM v1 (using Meta&#x27;s prompting when ..."
+    },
+    {
+      "title": "Meta-Llama-3.1-70B-Instruct-quantized.w4a16",
+      "url": "https://www.promptlayer.com/models/meta-llama-31-70b-instruct-quantizedw4a16",
+      "snippet": "What is Meta-Llama-3.1-70B-Instruct-quantized.w4a16? This is a highly optimized version of Meta&#x27;s Llama 3.1 70B model, specifically designed for efficient deployment while maintaining near-original performance. The model employs 4-bit weight quantization, reducing disk and GPU memory requirements by approximately 75% compared to the original model. Implementation Details The model utilizes ..."
+    }
+  ]
+}

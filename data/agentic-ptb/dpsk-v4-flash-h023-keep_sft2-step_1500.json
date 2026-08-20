@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/dpsk-v4-flash.h023.keep_sft2.step_1500",
+  "slug": "agentic-ptb-dpsk-v4-flash-h023-keep_sft2-step_1500",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/dpsk-v4-flash.h023.keep_sft2.step_1500",
+  "created_at": "2026-08-20T02:51:22.000Z",
+  "updated_at": "2026-08-20T02:54:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "kimi",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-DSpark · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-DSpark",
+      "snippet": "deepseek-ai / DeepSeek-V4-Flash-DSpark like 255 Follow DeepSeek 142k Text Generation Transformers Safetensors deepseek_v4 8-bit precision fp8 arxiv:2606.19348 License:mit Model card FilesFiles and versions xet Community 3 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "The recommended way to get started is installing the powerbi-authoring plugin from the Skills for Fabric marketplace. The plugin bundles the skills and tools you need to author Power BI content with an AI agent: Power BI agent skills, semantic model skills for semantic model creation, editing, deployment, and AI readiness, and the report authoring skills for building and validating PBIR report ..."
+    },
+    {
+      "title": "Fix DeepSeek-V4-Flash Official FP8 Running Across 2x DGX Spark TP2 MTP ...",
+      "url": "https://dredyson.com/fix-deepseek-v4-flash-official-fp8-running-across-2x-dgx-spark-tp2-mtp-200k-ctx-recipe-numbers-in-under-5-minutes-actually-works-a-complete-step-by-step-beginners-quick-start-guide-with/",
+      "snippet": "DeepSeek-V4-Flash is a massive MoE model — roughly 149GB across 46 shards in native FP8 (E4M3 128×128 block format). Running it on a single DGX Spark (GB10, 128GB unified memory) simply isn&#x27;t possible. You need two nodes with TP=2, and you need the right vLLM fork with GB10-specific validation baked in. The problem?"
+    }
+  ]
+}

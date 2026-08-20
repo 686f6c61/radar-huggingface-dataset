@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/gemma-2-2b-quantized.w8a16",
+  "slug": "redhatai-gemma-2-2b-quantized-w8a16",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/gemma-2-2b-quantized.w8a16",
+  "created_at": "2024-08-13T14:33:41.000Z",
+  "updated_at": "2026-08-19T21:45:43.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "int8",
+    "vllm",
+    "text-generation",
+    "arxiv:2210.17323",
+    "license:gemma",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 3204165888,
+  "parameters_human": "3.20B",
+  "storage_bytes": 6768501496,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/gemma-2-2b-quantized.w8a16 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/gemma-2-2b-quantized.w8a16",
+      "snippet": "Quantized version of gemma-2-2b. It achieves an average score of 52.03 on the OpenLLM benchmark (version 1), whereas the unquantized model achieves 52.16."
+    },
+    {
+      "title": "RedHatAI/gemma-2-2b-it-quantized.w8a16 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/gemma-2-2b-it-quantized.w8a16",
+      "snippet": "Model Optimizations This model was obtained by quantizing the weights of gemma-2-2b-it to INT8 data type. This optimization reduces the number of bits per parameter from 16 to 8, reducing the disk size and GPU memory requirements by approximately 50%. Only the weights of the linear operators within transformers blocks are quantized."
+    },
+    {
+      "title": "RedHatAI/gemma-2-2b-it-quantized.w8a8 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/redhatai-gemma-2-2b-it-quantized-w8a8",
+      "snippet": "This model was obtained by quantizing the weights of gemma-2-2b-it to INT8 data type. This optimization reduces the number of bits used to represent weights and activations from 16 to 8, reducing GPU memory requirements (by approximately 50%) and increasing matrix-multiply compute throughput (by approximately 2x). Weight quantization also reduces disk size requirements by approximately 50%."
+    },
+    {
+      "title": "neuralmagic/gemma-2-2b-quantized.w8a16 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/neuralmagic-gemma-2-2b-quantized-w8a16",
+      "snippet": "gemma-2-2b-quantized.w8a16 is an open source model from GitHub that offers a free installation service, and any user can find gemma-2-2b-quantized.w8a16 on GitHub to install."
+    },
+    {
+      "title": "GitHub - benitomartin/peft-gemma-2b: Fine Tuning Gemma 2B",
+      "url": "https://github.com/benitomartin/peft-gemma-2b",
+      "snippet": "FINE TUNING GEMMA 2B This repository contains a full PEFT pipeline with model quantization and LoRA adapters. The model is hosted in Hugging Face, downloaded with a quantized version and LoRA adapters are added in order to train the model. The trained model/adapters are pushed back to a personal repo in Hugging Face"
+    }
+  ]
+}

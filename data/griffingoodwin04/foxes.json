@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "griffingoodwin04/FOXES",
+  "slug": "griffingoodwin04-foxes",
+  "author": "griffingoodwin04",
+  "url": "https://huggingface.co/griffingoodwin04/FOXES",
+  "created_at": "2026-03-20T18:55:52.000Z",
+  "updated_at": "2026-08-20T02:33:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "solar",
+    "heliophysics",
+    "astronomy",
+    "AIA",
+    "SDO",
+    "EUV",
+    "SXR",
+    "GOES",
+    "flare",
+    "space-weather",
+    "en",
+    "dataset:griffingoodwin04/FOXES-Data",
+    "doi:10.57967/hf/8685",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 543637895,
+  "storage_human": "544 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "griffingoodwin04/FOXES · Hugging Face",
+      "url": "https://huggingface.co/griffingoodwin04/FOXES",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FOXES - Framework for Operational X-ray Emission Synthesis",
+      "url": "https://huggingface.co/spaces/griffingoodwin04/FOXES-model",
+      "snippet": "FOXES - Framework for Operational X-ray Emission Synthesis Predict soft X-ray flux from SDO/AIA observations and visualise where the model detects activity."
+    },
+    {
+      "title": "griffingoodwin04 (Griffin Goodwin) - Hugging Face",
+      "url": "https://huggingface.co/griffingoodwin04/datasets",
+      "snippet": "Organizations griffingoodwin04&#x27;s datasets1 Sort: Recently updated griffingoodwin04/FOXES-Data Viewer •Updated Apr 2•194k• 199"
+    },
+    {
+      "title": "GitHub - griffin-goodwin/FOXES",
+      "url": "https://github.com/griffin-goodwin/FOXES",
+      "snippet": "The model produces two outputs: (1) a global SXR flux prediction and (2) per-patch flux contributions, which offer a spatially resolved interpretation of where the model attributes SXR emission."
+    },
+    {
+      "title": "griffingoodwin04 (Griffin Goodwin) - Hugging Face",
+      "url": "https://huggingface.co/griffingoodwin04/spaces",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h017.maxrl-rebase-wide.step_1",
+  "slug": "agentic-ptb-sol-high-h017-maxrl-rebase-wide-step_1",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h017.maxrl-rebase-wide.step_1",
+  "created_at": "2026-08-20T01:53:53.000Z",
+  "updated_at": "2026-08-20T02:15:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "Efficient by default, maximum performance on demand GPT‑5.6 Sol is our best coding model yet. On the Artificial Analysis Coding Agent Index, GPT‑5.6 Sol with max reasoning sets a new state of the art at 80, 2.8 points above Fable 5, while using less than half the output tokens, taking less than half the time, and costing about one-third less."
+    },
+    {
+      "title": "GitHub - ProjectProRepo/Agentic-AI: This repository provides ...",
+      "url": "https://github.com/ProjectProRepo/Agentic-AI",
+      "snippet": "This repository is your one-stop resource for mastering Agentic AI, a domain of artificial intelligence that focuses on building autonomous AI agents. From understanding the foundational concepts to building industry-ready AI agents, this repository includes blogs, tutorials, and projects to guide you every step of the way. Let us get started!"
+    },
+    {
+      "title": "model-native-agentic-ai - GitHub",
+      "url": "https://github.com/ADaM-BJTU/model-native-agentic-ai",
+      "snippet": "The rapid evolution of agentic AI marks a new phase in artificial intelligence, where Large Language Models (LLMs) no longer merely respond but act, reason, and adapt. This survey traces the paradigm shift in building agentic AI: from Pipeline-based systems, where planning, tool use, and memory are orchestrated by external logic, to the emerging Model-native paradigm, where these capabilities ..."
+    },
+    {
+      "title": "NVIDIA AI Releases Molt: A PyTorch-Native Agentic Reinforcement ...",
+      "url": "https://www.marktechpost.com/2026/08/01/nvidia-ai-releases-molt-a-pytorch-native-agentic-reinforcement-learning-framework/",
+      "snippet": "Agentic reinforcement learning research is constant algorithm modification. New estimators, new pipeline stages, new rollout schemes. In mainstream frameworks each change threads through layers of trainer, distributed backend, and rollout glue. That cost lands on the researcher at every iteration. Molt, from NVIDIA&#x27;s NeMo team, targets that cost directly. Its a PyTorch-native agentic RL ..."
+    },
+    {
+      "title": "[2503.23037] Agentic Large Language Models, a survey - arXiv.org",
+      "url": "https://arxiv.org/abs/2503.23037",
+      "snippet": "Background: There is great interest in agentic LLMs, large language models that act as agents. Objectives: We review the growing body of work in this area and provide a research agenda. Methods: Agentic LLMs are LLMs that (1) reason, (2) act, and (3) interact. We organize the literature according to these three categories. Results: The research in the first category focuses on reasoning ..."
+    }
+  ]
+}

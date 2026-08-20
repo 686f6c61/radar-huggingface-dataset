@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asd12ad123123/MyAwesomeModel-step_1000",
+  "slug": "asd12ad123123-myawesomemodel-step_1000",
+  "author": "asd12ad123123",
+  "url": "https://huggingface.co/asd12ad123123/MyAwesomeModel-step_1000",
+  "created_at": "2026-08-19T20:15:16.000Z",
+  "updated_at": "2026-08-19T21:15:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SDASD12SAD/my-awesome-model-step1000 · Hugging Face",
+      "url": "https://huggingface.co/SDASD12SAD/my-awesome-model-step1000",
+      "snippet": "The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training."
+    },
+    {
+      "title": "asd12edsad12as/MyAwesomeModel-step1000 · Hugging Face",
+      "url": "https://huggingface.co/asd12edsad12as/MyAwesomeModel-step1000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "TenStrip/Krea2Zimage-CrossArch_Grafted_Model_Demo",
+  "slug": "tenstrip-krea2zimage-crossarch_grafted_model_demo",
+  "author": "TenStrip",
+  "url": "https://huggingface.co/TenStrip/Krea2Zimage-CrossArch_Grafted_Model_Demo",
+  "created_at": "2026-08-19T22:06:40.000Z",
+  "updated_at": "2026-08-19T22:34:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "base_model:Comfy-Org/z_image_turbo",
+    "base_model:finetune:Comfy-Org/z_image_turbo",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Comfy-Org/z_image_turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TenStrip/Krea2-H3-Style-Lora · Hugging Face",
+      "url": "https://huggingface.co/TenStrip/Krea2-H3-Style-Lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX 10Eros - v1.4 | LTX Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2447875/ltx23-10eros",
+      "snippet": "2. Disclaimer of Liability TenStrip (the creator of the Model), together with its affiliates (CivitAI.com / CivitAI.red, Lightricks Ltd., and Sulphur Team), collectively and individually disclaim all liability for any direct, indirect, incidental, consequential, special, or punitive damages arising from your use or misuse of the Model."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea 2: Unsencored Text-to-Image Generations in ComfyUI",
+      "url": "https://www.nextdiffusion.ai/tutorials/krea-2-uncensored-text-to-image-generations-in-comfyui",
+      "snippet": "Learn how to set up and use Krea 2 Turbo for high-quality text-to-image generation in ComfyUI. Step-by-step guide for optimal results and configurations."
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    }
+  ]
+}

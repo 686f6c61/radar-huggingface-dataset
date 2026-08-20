@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "fatihunal/ai-image-detector",
+  "slug": "fatihunal-ai-image-detector",
+  "author": "fatihunal",
+  "url": "https://huggingface.co/fatihunal/ai-image-detector",
+  "created_at": "2026-08-19T20:19:51.000Z",
+  "updated_at": "2026-08-19T20:19:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "ai-image-detector",
+    "ai-image-detection",
+    "image-classification",
+    "vit",
+    "clip",
+    "lora",
+    "tr",
+    "en",
+    "base_model:openai/clip-vit-base-patch16",
+    "base_model:adapter:openai/clip-vit-base-patch16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85846273,
+  "parameters_human": "85.8M",
+  "storage_bytes": 346608360,
+  "storage_human": "347 MB",
+  "base_model": "openai/clip-vit-base-patch16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - guyfloki/ai-image-detector: A tool to distinguish between AI ...",
+      "url": "https://github.com/guyfloki/ai-image-detector",
+      "snippet": "Identifying whether images are AI-generated or human-made is crucial as AI&#x27;s capability to produce lifelike images improves. This project is an attempt to tackle this challenge through advanced machine learning, aiming to effectively classify images with minimal uncertainty. The AI Image Detector project endeavors to provide a tool for reliably distinguishing between AI-generated and human ..."
+    },
+    {
+      "title": "umm-maybe/AI-image-detector · Hugging Face",
+      "url": "https://huggingface.co/umm-maybe/AI-image-detector",
+      "snippet": "You may distribute and make this model available to others as part of your own web page, app, or service so long as you provide attribution. However, use of this model within text-to-image systems to evade AI image detection would be considered a \"derivative work\" and as such prohibited by the license terms."
+    },
+    {
+      "title": "Ai Image Detector - a Hugging Face Space by aniketkhandare",
+      "url": "https://huggingface.co/spaces/aniketkhandare/ai_image_detector",
+      "snippet": "Upload a photo (JPG, PNG, or WEBP) and the app will tell you if it looks like a real photograph or an AI‑generated image. It shows the prediction, confidence percentages for each option, and a shor..."
+    },
+    {
+      "title": "[2502.19716] Fully AI-Generated Image Detection: Definition, Recent ...",
+      "url": "https://arxiv.org/abs/2502.19716",
+      "snippet": "Detecting them represents a foundational yet challenging problem in AI media forensics, requiring detectors to reliably extract the inherent artifacts imprinted by generative architectures. In this Review, we provide a systematic overview of fully AI-generated image detection."
+    },
+    {
+      "title": "AI Image Detector - GitHub",
+      "url": "https://github.com/pavithra-Eco-Coder/ai-image-detector",
+      "snippet": "With the rapid advancement of AI image generation tools like DALL-E, Midjourney, and Stable Diffusion, distinguishing between AI-generated and real photographs has become increasingly challenging. This project addresses this problem by building a robust deep learning classifier that can accurately identify AI-generated images. The model leverages transfer learning with MobileNetV2, a ..."
+    }
+  ]
+}

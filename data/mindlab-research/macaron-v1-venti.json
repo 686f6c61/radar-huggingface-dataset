@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mindlab-research/Macaron-V1-Venti",
+  "slug": "mindlab-research-macaron-v1-venti",
+  "author": "mindlab-research",
+  "url": "https://huggingface.co/mindlab-research/Macaron-V1-Venti",
+  "created_at": "2026-07-20T07:46:44.000Z",
+  "updated_at": "2026-08-19T23:53:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "macaron",
+    "macaron-v1",
+    "glm-5.2",
+    "mixture-of-lora",
+    "personal-agent",
+    "tool-use",
+    "generative-ui",
+    "ui4a",
+    "a2ui",
+    "coding-agent",
+    "arxiv:2608.09819",
+    "conversational",
+    "en",
+    "zh",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 53,
+  "downloads_30d": 697,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 1568261926959,
+  "storage_human": "1568.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Macaron-V1",
+      "url": "https://macaron.im/mindlab/research/introducing-macaron-v1",
+      "snippet": "Macaron-V1 is Mind Lab&#x27;s agent model in 748B Venti and 35B Tall variants, built on Mixture-of-LoRA and model-harness co-design."
+    },
+    {
+      "title": "Macaron-V1: Towards Open Continual Learning with Self-Improvement and ...",
+      "url": "https://arxiv.org/pdf/2608.09819v1",
+      "snippet": "Macaron-V1 is an open agent-model family for experiential intelligence: learning from experience in real environments and continuing to learn after deployment. It is organized around two system"
+    },
+    {
+      "title": "mindlab-research/Macaron-V1-Coding-Venti at main",
+      "url": "https://huggingface.co/mindlab-research/Macaron-V1-Coding-Venti/tree/main",
+      "snippet": "mindlab-research / Macaron-V1-Coding-Venti like 17 Follow Mind Lab 192 Text Generation Transformers Safetensors English Chinese glm_moe_dsa macaron macaron-v1 glm-5.2 coding-agent merged-lora tool-use terminal-agent swe-agent conversational License:mit Model card FilesFiles and versions xet Community 2 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mindlab-research/Macaron-V1-Coding-Venti · Hugging Face",
+      "url": "https://huggingface.co/mindlab-research/Macaron-V1-Coding-Venti?local-app=docker-model-runner",
+      "snippet": "Macaron-V1-Coding-Venti is the coding-specialist checkpoint in the Macaron-V1 family. It is produced by merging the Macaron-V1-Venti L2 Coding LoRA specialist into the GLM-5.2 BF16 base model, yielding a single merged checkpoint for coding, terminal, repository, and software-engineering workflows."
+    },
+    {
+      "title": "GitHub - MindLab-Research/Mixture-of-LoRA-Harness",
+      "url": "https://github.com/MindLab-Research/Mixture-of-LoRA-Harness",
+      "snippet": "Mixture-of-LoRA Harness serves two model profiles: Macaron-V1-Venti, a 748B-parameter model composed of a 744B GLM-5.2 base model and four 1B LoRA specialists. Macaron-V1-Tall, a 50B-parameter model composed of a 35B Qwen3.6-35B-A3B base model and four 3.7B Rank-64 LoRA specialists. One process exposes one OpenAI-compatible model. For each new user request, the harness routes inference to L0 ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h015.maxrl-scaleswe.step_1",
+  "slug": "agentic-ptb-sol-high-h015-maxrl-scaleswe-step_1",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h015.maxrl-scaleswe.step_1",
+  "created_at": "2026-08-20T02:15:48.000Z",
+  "updated_at": "2026-08-20T02:16:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    },
+    {
+      "title": "GitHub - AweAI-Team/ScaleSWE",
+      "url": "https://github.com/AweAI-Team/ScaleSWE",
+      "snippet": "2026-06-11 We further released 41k trajectories distilled from Scale-SWE with DeepSeek-v4-Pro-High, see here. 2026-03-03 We released AweAgent, which now provides native support for Scale-SWE data."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "Efficient by default, maximum performance on demand GPT‑5.6 Sol is our best coding model yet. On the Artificial Analysis Coding Agent Index, GPT‑5.6 Sol with max reasoning sets a new state of the art at 80, 2.8 points above Fable 5, while using less than half the output tokens, taking less than half the time, and costing about one-third less."
+    },
+    {
+      "title": "GitHub - tajwarfahim/maxrl: Official Implementation of \"Maximum ...",
+      "url": "https://github.com/tajwarfahim/maxrl",
+      "snippet": "This is the official PyTorch implementation of our paper \" Maximum Likelihood Reinforcement Learning \" by Fahim Tajwar*, Guanning Zeng*, Yueer Zhou, Yuda Song, Daman Arora, Yiding Jiang, Jeff Schneider, Ruslan Salakhutdinov, Haiwen Feng, and Andrea Zanette."
+    },
+    {
+      "title": "Agentic AI: A Comprehensive Survey of Architectures, Applications, and ...",
+      "url": "https://arxiv.org/pdf/2510.25445",
+      "snippet": "The agentic AI era is not simply a linear descendant of symbolic AI but is instead built upon a completely different architectural foundation. To address this, we introduce a novel conceptual framework (Figure 2) designed to prevent retrospective conflation by clearly distin-guishing the symbolic and neural lineages of agentic AI."
+    }
+  ]
+}

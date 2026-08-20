@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "UltimateIntent/HeatSeeker-284B-A13B-GGUF",
+  "slug": "ultimateintent-heatseeker-284b-a13b-gguf",
+  "author": "UltimateIntent",
+  "url": "https://huggingface.co/UltimateIntent/HeatSeeker-284B-A13B-GGUF",
+  "created_at": "2026-08-18T09:23:41.000Z",
+  "updated_at": "2026-08-19T23:53:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "creative-writing",
+    "roleplay",
+    "nsfw",
+    "erp",
+    "abliterated",
+    "lora",
+    "moe",
+    "deepseek",
+    "not-for-all-audiences",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 88884375072,
+  "storage_human": "88.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UltimateIntent (Ultimate Intent) - Hugging Face",
+      "url": "https://huggingface.co/UltimateIntent",
+      "snippet": "Heatseekermp4 📉 video for model release UltimateIntent about 6 hours ago"
+    },
+    {
+      "title": "UltimateIntent/heatseekermp4 at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/UltimateIntent/heatseekermp4/tree/main",
+      "snippet": "Spaces: UltimateIntent / heatseekermp4 like 0 Running App FilesFiles Community main heatseekermp4 3.38 MB Ctrl+K Ctrl+K 1 contributor History:2 commits UltimateIntent Upload heatseeker.mp4 5ff35b4 verifiedabout 7 hours ago .gitattributes Safe 1.57 kBUpload heatseeker.mp4about 7 hours ago README.md Safe 239 Bytesinitial commitabout 7 hours ago heatseeker.mp4 Safe 3.37 MB xet Upload heatseeker ..."
+    },
+    {
+      "title": "DeepSeek V4 Flash: The Cheapest Frontier Model at $0.28/M Output (2026)",
+      "url": "https://www.aimadetools.com/blog/deepseek-v4-flash-complete-guide/",
+      "snippet": "DeepSeek V4 Flash runs 284B params with only 13B active. $0.28 per million output tokens, 1M context. Setup, benchmarks, and use cases."
+    },
+    {
+      "title": "DeepSeek V4 Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/deepseek-v4-flash",
+      "snippet": "DeepSeek V4 Flash 0731 is a 284B Mixture-of-Experts model built for coding, tool use, and agentic workflows, with 13B active parameters and a 1M-token context window."
+    },
+    {
+      "title": "[AINews] DeepSeek V4 Pro (1.6T-A49B) and Flash (284B-A13B...",
+      "url": "https://www.bestblogs.dev/en/article/ef085e0b",
+      "snippet": "DeepSeek released V4 Pro (1.6T-A49B) and V4 Flash (284B-A13B), its first major architecture refresh since V3, featuring 1M-token context, MIT license, Huawei..."
+    }
+  ]
+}

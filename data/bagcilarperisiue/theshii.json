@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bagcilarperisiue/theshii",
+  "slug": "bagcilarperisiue-theshii",
+  "author": "bagcilarperisiue",
+  "url": "https://huggingface.co/bagcilarperisiue/theshii",
+  "created_at": "2026-08-19T23:28:05.000Z",
+  "updated_at": "2026-08-19T23:29:42.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73073571,
+  "storage_human": "73 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fact Check: FAKE Video Shows U.S. Strike on Iranian Drone ... - Yahoo",
+      "url": "https://www.yahoo.com/news/politics/articles/fact-check-fake-video-shows-003210207.html",
+      "snippet": "Does a video show an actual U.S. strike on the Iranian drone carrier IRIS Shahid Bagheri or any Iranian aircraft carrier? No, that&#x27;s not true: The clip is AI-generated and labeled \"Made with AI ..."
+    },
+    {
+      "title": "Deepshi - I Say What Other AI&#x27;s Won&#x27;t",
+      "url": "https://deepshi.ai/",
+      "snippet": "Many AI systems are designed to avoid, redirect, or shut down conversations. Deepshi runs on a proprietary model built to respond more fully and naturally across text, images, music, and video."
+    },
+    {
+      "title": "Dessi AI Creative Studio: Free Try Image, Video, Voice & Chat",
+      "url": "https://dessi-ai.com/",
+      "snippet": "Dessi is your AI creative studio for images, video, voice, and chat. Try every mode free in the browser—no download or credit card required to start."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/reel/Dbqg4qiK7KP/",
+      "snippet": "theshii._here on August 5, 2026: \"Who said they don&#x27;t??﫶 #fyp #reelsinstagram #insta #trend #longdrive\"."
+    },
+    {
+      "title": "Theshika (@_theshii.__) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_theshii.__/",
+      "snippet": "living, apparently1.3K+ followers · 876 following. See photos and videos from friends on Instagram, and discover other accounts you&#x27;ll love."
+    }
+  ]
+}

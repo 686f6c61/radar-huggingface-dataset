@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h006.opsd2-scaleswe.step_4",
+  "slug": "agentic-ptb-sol-high-h006-opsd2-scaleswe-step_4",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h006.opsd2-scaleswe.step_4",
+  "created_at": "2026-08-20T02:40:36.000Z",
+  "updated_at": "2026-08-20T02:41:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    },
+    {
+      "title": "What Is Agentic AI? Definition, 6 Levels & Examples (2026)",
+      "url": "https://agentic.ai/what-is-agentic-ai",
+      "snippet": "What Is Agentic AI? Agentic AI is artificial intelligence that pursues goals on its own. Unlike a chatbot that only generates text, an agentic AI plans steps, calls real tools (APIs, files, browsers, code), watches what happens, and adjusts — looping until a task is done. Updated August 19, 2026 · Backed by 333 tools scored across 32 categories In short Agentic AI = AI that acts. It pursues ..."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "Efficient by default, maximum performance on demand GPT‑5.6 Sol is our best coding model yet. On the Artificial Analysis Coding Agent Index, GPT‑5.6 Sol with max reasoning sets a new state of the art at 80, 2.8 points above Fable 5, while using less than half the output tokens, taking less than half the time, and costing about one-third less."
+    },
+    {
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model - OpenAI",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "snippet": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack."
+    },
+    {
+      "title": "LiveBench",
+      "url": "https://livebench.ai/",
+      "snippet": "LiveBench · sponsored by Abacus.AI · a contamination-free LLM benchmark. Overall = mean of category averages · cost = cost per successful task"
+    }
+  ]
+}

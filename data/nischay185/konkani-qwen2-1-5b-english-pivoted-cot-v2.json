@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "nischay185/konkani-qwen2-1.5b-english-pivoted-cot-v2",
+  "slug": "nischay185-konkani-qwen2-1-5b-english-pivoted-cot-v2",
+  "author": "nischay185",
+  "url": "https://huggingface.co/nischay185/konkani-qwen2-1.5b-english-pivoted-cot-v2",
+  "created_at": "2026-08-19T18:26:19.000Z",
+  "updated_at": "2026-08-19T20:48:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "gom"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "konkani",
+    "goan-konkani",
+    "low-resource-language",
+    "indic-languages",
+    "qwen2",
+    "1.5b",
+    "lora",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "gom",
+    "base_model:Qwen/Qwen2-1.5B",
+    "base_model:adapter:Qwen/Qwen2-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33282462,
+  "storage_human": "33 MB",
+  "base_model": "Qwen/Qwen2-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Konkani Qwen2 1.5b — AI Model | Antbase",
+      "url": "https://antbase.ai/models/konkani-qwen2-1-5b",
+      "snippet": "Overview Konkani Qwen2 1.5b is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "mradermacher/konkani-qwen2-1.5b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/konkani-qwen2-1.5b-GGUF",
+      "snippet": "mradermacher / konkani-qwen2-1.5b-GGUF like 0 Transformers GGUF Konkani (macrolanguage) English Hindi konkani goa indic-language qwen2 lora cpt sft fine-tuned conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Qwen/Qwen2-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2407.10671v1",
+      "snippet": "We compare our Qwen2-0.5B and Qwen2-1.5B with the previous SOTA small models including Phi-2, Gemma-2B and Qwen1.5-1.8B. Qwen2-0.5B with a much smaller model size achieves competitive performance, and Qwen2-1.5B significantly outperforms Qwen2-0.5B."
+    },
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/auth?action=signin",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen&#x27;s series of open-source and proprietary models. It offers comprehensive functionality spanning chatbots, image and video understanding, image generation and editing, document processing, tool utilization, voice and video chat, and artifacts."
+    }
+  ]
+}

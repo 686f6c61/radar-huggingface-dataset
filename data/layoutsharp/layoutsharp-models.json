@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "LayoutSharp/LayoutSharp-models",
+  "slug": "layoutsharp-layoutsharp-models",
+  "author": "LayoutSharp",
+  "url": "https://huggingface.co/LayoutSharp/LayoutSharp-models",
+  "created_at": "2026-08-20T02:32:39.000Z",
+  "updated_at": "2026-08-20T02:34:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178463581,
+  "storage_human": "178 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Analyzer - Analyze Layout - REST API (Azure Azure AI Services)",
+      "url": "https://learn.microsoft.com/en-us/rest/api/aiservices/analyzer/analyze-layout?view=rest-aiservices-v2.1",
+      "snippet": "Service: Azure AI Services API Version: 2.1 In this article URI Parameters Request Header Request Body Responses Security Examples Definitions Show 3 more Extract text and layout information from a given document. The input document must be of one of the supported content types - &#x27;application/pdf&#x27;, &#x27;image/jpeg&#x27;, &#x27;image/png&#x27;, &#x27;image/tiff&#x27; or ..."
+    },
+    {
+      "title": "What is the Document Intelligence layout model?",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/layout?view=doc-intel-4.0.0",
+      "snippet": "Extract text, tables, selections, titles, section headings, page headers, page footers, and more with the layout analysis model from Document Intelligence."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Azure-Content-Understanding-Layout",
+      "snippet": "The Layout model offers rich, structure‑aware analysis for documents that require deeper understanding of formatting, hierarchy, and spatial relationships. It combines textual extraction with geometric layout detection to support advanced automation and content reasoning."
+    },
+    {
+      "title": "GitHub - PozzettiAndrea/ComfyUI-Sharp: ComfyUI wrapper around the ml ...",
+      "url": "https://github.com/PozzettiAndrea/ComfyUI-Sharp",
+      "snippet": "ComfyUI wrapper for SHARP by Apple - monocular 3D Gaussian Splatting in under 1 second. 3 Example workflows. Workflow 1: standard/user input focal length. splat1_30fps.mp4 Workflow 2: focal length extraction from exif data. splat2_30fps.mp4 Workflow 3: Panorama gaussians sharpano_30fps.mp4 Note: for PLY inference this model is good on its own, but for the Gaussian Viewer node, you&#x27;re going to ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    }
+  ]
+}

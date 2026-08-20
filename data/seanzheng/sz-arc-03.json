@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SeanZheng/sz-arc-03",
+  "slug": "seanzheng-sz-arc-03",
+  "author": "SeanZheng",
+  "url": "https://huggingface.co/SeanZheng/sz-arc-03",
+  "created_at": "2026-08-10T22:30:59.000Z",
+  "updated_at": "2026-08-20T00:36:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39994702680,
+  "storage_human": "40.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "思畅 AI（Sichang）— 私密、无审查的中文 AI 角色扮演、沉浸对话、图像与视频创作平台",
+      "url": "https://sichang.xyz/",
+      "snippet": "创建角色、沉浸对话、自由写作、生成图像与视频。对话保存在你的账户下，表达边界由你掌控。专为中文创作者设计的私密 ..."
+    },
+    {
+      "title": "Kimi K2.6 | Leading Open-Source Model in Coding & Agent",
+      "url": "https://www.kimi.ai/ai-models/kimi-k2-6",
+      "snippet": "Kimi K2.6 is an open-source model with strong coding and agent swarm capabilities. Build pro-level websites, run workflows, and explore Claw Groups."
+    }
+  ]
+}

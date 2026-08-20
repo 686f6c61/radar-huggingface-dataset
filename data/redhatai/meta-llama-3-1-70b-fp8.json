@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Meta-Llama-3.1-70B-FP8",
+  "slug": "redhatai-meta-llama-3-1-70b-fp8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-FP8",
+  "created_at": "2024-07-31T00:48:35.000Z",
+  "updated_at": "2026-08-19T21:44:08.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "fp8",
+    "vllm",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "base_model:meta-llama/Llama-3.1-70B",
+    "base_model:quantized:meta-llama/Llama-3.1-70B",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 202,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 72656575880,
+  "storage_human": "72.7 GB",
+  "base_model": "meta-llama/Meta-Llama-3.1-70B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-Instruct-FP8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-Instruct-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-FP8 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/redhatai-meta-llama-3-1-70b-fp8",
+      "snippet": "Model Architecture: Meta-Llama-3.1 Input: Text Output: Text Input: Text Output: Text Model Optimizations: Weight quantization: FP8 Activation quantization: FP8 Weight quantization: FP8 Activation quantization: FP8 Intended Use Cases: Intended for commercial and research use in multiple languages. Similarly to Meta-Llama-3.1-8B , this model serves as a base version. Out-of-scope: Use in any ..."
+    },
+    {
+      "title": "Meta-Llama-3.1-70B-Instruct-FP8: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/meta-llama-3.1-70b-instruct-fp8-redhatai",
+      "snippet": "Overview Meta-Llama-3.1-70B-Instruct-FP8 is a quantized version of Meta&#x27;s 70-billion parameter instruction-tuned language model, created by RedHatAI and developed by Neural Magic. The model uses FP8 (8-bit floating point) quantization for both weights and activations across all linear operators in transformer blocks, reducing model size and GPU memory requirements by approximately 50% compared ..."
+    },
+    {
+      "title": "Meta Llama 3.1 70B Instruct FP8 by RedHatAI",
+      "url": "https://llm-explorer.com/model/RedHatAI%2FMeta-Llama-3.1-70B-Instruct-FP8,qcbjo1JDZKiaZMKmToVdi",
+      "snippet": "Meta Llama 3.1 70B Instruct FP8 is an open-source 70b LLM by RedHatAI. VRAM 72.7GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

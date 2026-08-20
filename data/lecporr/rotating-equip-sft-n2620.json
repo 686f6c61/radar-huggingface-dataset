@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lecporr/rotating-equip-sft-n2620",
+  "slug": "lecporr-rotating-equip-sft-n2620",
+  "author": "lecporr",
+  "url": "https://huggingface.co/lecporr/rotating-equip-sft-n2620",
+  "created_at": "2026-08-19T22:54:22.000Z",
+  "updated_at": "2026-08-19T22:54:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81205308,
+  "storage_human": "81 MB",
+  "base_model": "unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AGILENT TECHNOLOGIES N2620A USER MANUAL Pdf Download",
+      "url": "https://www.manualslib.com/manual/2848/Agilent-Technologies-N2620a.html",
+      "snippet": "View and Download Agilent Technologies N2620A user manual online. FrameScope Pro Network Performance Analyzer. N2620A analytical instruments pdf manual download. Also for: Framescope pro n2620a."
+    },
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/account-switcher/iframe",
+      "snippet": "Roblox is a global platform that brings people together through play."
+    },
+    {
+      "title": "Log In - Single Sign-On",
+      "url": "https://login6.saashr.com/idp/profile/SAML2/Redirect/SSO?SAMLRequest=jZHBTsJAEIbvJr5Ds%2Fe2S4tANrSkoaCtFAhQEG%2BbOkKT7S7ubFHf3oKS4MV4nvky3%2F9Pf%2FBRCesIGkslA9JyKLFAFuqllLuA5Kux3SOD8Pamj7wSBxbVZi8X8FYDGqshJbLzICC1lkxxLJFJXgEyU7BllE2Y51B20MqoQglyhfxNcETQplEiVhIHZBKl8SiNN%2Bn9Nsnus%2Fk4Sqeb2XKbzxbrYfz49LBdrbMsHzXbiDUkEg2XJiAe9e5s2rJpb0V7rO0z33d8r%2FtMrPUlsXdKnOC8uVgeISCvXCAQK7oIDJXEugK9BH0sC8gXk4DsjTkgc12EotbQcZBz3GunUJVruNtpdTu023aE2pXSPmUl4bk%2BdpbT4b%2FwvnuN%2FNQ%2FbYpK4rkSZfFpRUKo96EGbhpto2sgbvhN%2Ff5T%2BAU%3D",
+      "snippet": "ADDVANTAGE TECHNOLOGIES GROUP INC. UKG Ready"
+    },
+    {
+      "title": "Rotary&#x27;s New Website",
+      "url": "https://rotarycorp.com/pages/newwebsite",
+      "snippet": "Search by Item Type, Brand/OEM part number, Rotary part number, aftermarket part number, model, or size. Filter Parts by Specifications/Dimensions once a category is selected"
+    },
+    {
+      "title": "FTW92LA155 Factual Report - data.ntsb.gov",
+      "url": "https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateFactualReport/18515/pdf",
+      "snippet": "The National Transportation Safety Board (NTSB) is an independent federal agency charged by Congress with investigating every civil aviation accident in the United States and significant events in other modes of transportation— railroad, transit, highway, marine, pipeline, and commercial space. We determine the probable causes of the accidents and events we investigate, and issue safety ..."
+    }
+  ]
+}

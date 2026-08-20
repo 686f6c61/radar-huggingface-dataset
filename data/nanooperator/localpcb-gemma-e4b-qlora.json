@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nanoOperator/localpcb-gemma-e4b-qlora",
+  "slug": "nanooperator-localpcb-gemma-e4b-qlora",
+  "author": "nanoOperator",
+  "url": "https://huggingface.co/nanoOperator/localpcb-gemma-e4b-qlora",
+  "created_at": "2026-08-19T20:01:21.000Z",
+  "updated_at": "2026-08-19T20:01:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Run Google&#x27;s Gemma 4 Locally — A Practical Guide (2026)",
+      "url": "https://www.rarytempo.com/how-to-run-gemma-4-locally/",
+      "snippet": "Fine-tuning toolchains: Expect LoRA and QLoRA recipes for Gemma 4 variants to mature quickly. If you&#x27;re building specialized applications (code, medical, domain-specific), watch for community fine-tunes on Hugging Face that may outperform the base model on your task. Edge deployment: LiteRT and mobile inference frameworks are evolving fast."
+    },
+    {
+      "title": "Run Gemma 4 Locally",
+      "url": "https://www.gemma4.app/local",
+      "snippet": "Run Gemma 4 locally using Ollama, llama.cpp, Transformers, LM Studio, or MLX. Choose a model by memory and avoid common setup mistakes."
+    },
+    {
+      "title": "Run Gemma 4 Locally: From 4 GB VRAM (E4B) to 31B, Free",
+      "url": "https://locallyuncensored.com/blog/gemma-4-local-guide.html",
+      "snippet": "Google released Gemma 4 in April 2026 and it immediately became one of the most important open-weight model families for local AI. From the tiny E2B that runs on anything to the frontier 31B dense model, Gemma 4 covers every use case. Native tool calling, vision support, 256K context, and an Apache 2.0 license make it the go-to recommendation for new users. This guide covers every Gemma 4 ..."
+    },
+    {
+      "title": "Gemma 4 E4B — The Daily Driver for Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e4b",
+      "snippet": "Models /Gemma 4 E4B Gemma 4 E4B — The Daily Driver for Local AI Gemma 4 E4B is Google&#x27;s most practical local model: 4.4B parameters, 8GB VRAM minimum, multimodal input, and Thinking Mode — all in a package that runs on any modern consumer GPU."
+    },
+    {
+      "title": "Running Gemma 4 on a NVIDIA Jetson Orin Nano",
+      "url": "https://zilligm.github.io/blog/2026/04/12/jetson-nano-llm",
+      "snippet": "How I set up the Gemma 4 E4B model on a NVIDIA Jetson Orin Nano to power local LLM applications and what I learned about performance on 8GB of RAM."
+    }
+  ]
+}

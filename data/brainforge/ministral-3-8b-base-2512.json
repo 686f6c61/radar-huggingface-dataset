@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "BrainForge/Ministral-3-8B-Base-2512",
+  "slug": "brainforge-ministral-3-8b-base-2512",
+  "author": "BrainForge",
+  "url": "https://huggingface.co/BrainForge/Ministral-3-8B-Base-2512",
+  "created_at": "2026-08-19T21:22:38.000Z",
+  "updated_at": "2026-08-19T21:22:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral3",
+    "mistral-common",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "arxiv:2601.08584",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8918026240,
+  "parameters_human": "8.92B",
+  "storage_bytes": 35739902967,
+  "storage_human": "35.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BrainForge/Ministral-3-14B-Base-2512 · Hugging Face",
+      "url": "https://huggingface.co/BrainForge/Ministral-3-14B-Base-2512",
+      "snippet": "This model is the base pre-trained version, not fine-tuned for instruction or reasoning tasks, making it ideal for custom post-training processes. For instruction and chat based use cases, we recommend using Ministral 3 14B Instruct 2512. The Ministral 3 family is designed for edge deployment, capable of running on a wide range of hardware."
+    },
+    {
+      "title": "unsloth/Ministral-3-8B-Base-2512 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Ministral-3-8B-Base-2512",
+      "snippet": "Ministral 3 8B Base 2512 A balanced model in the Ministral 3 family, Ministral 3 8B is a powerful, efficient tiny language model with vision capabilities. This model is the base pre-trained version, not fine-tuned for instruction or reasoning tasks, making it ideal for custom post-training processes."
+    },
+    {
+      "title": "Ministral 3 8B Base 2512 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ministral-3-8b-base-2512/",
+      "snippet": "Download Ministral 3 8B Base 2512 for free. Versatile 8B-base multimodal LLM, flexible foundation for custom AI. Ministral 3 8B Base 2512 is a mid-sized, dense model in the Ministral 3 series, designed as a general-purpose foundation for text and image tasks. It pairs an 8.4B-parameter language model with a .4B-parameter vision encoder, enabling unified multimodal capabilities out of the box."
+    },
+    {
+      "title": "Ministral 3 8B - docs.mistral.ai",
+      "url": "https://docs.mistral.ai/models/ministral-3-8b-25-12",
+      "snippet": "Ministral 3 8B is a powerful and efficient model in the Ministral 3 family, offering best-in-class text and vision capabilities. Built for edge deployment, it delivers high performance across diverse hardware, including local setups."
+    },
+    {
+      "title": "Ministral-3-8B-Base-2512: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ministral-3-8b-base-2512-mistralai",
+      "snippet": "Ministral-3-8B-Base-2512 is a base pre-trained multimodal language model from mistralai with 8.4B parameters for language modeling and an additional 0.4B..."
+    }
+  ]
+}

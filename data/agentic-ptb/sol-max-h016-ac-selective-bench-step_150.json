@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-max.h016.ac-selective-bench.step_150",
+  "slug": "agentic-ptb-sol-max-h016-ac-selective-bench-step_150",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-max.h016.ac-selective-bench.step_150",
+  "created_at": "2026-08-20T03:30:58.000Z",
+  "updated_at": "2026-08-20T03:31:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "Efficient by default, maximum performance on demand GPT‑5.6 Sol is our best coding model yet. On the Artificial Analysis Coding Agent Index, GPT‑5.6 Sol with max reasoning sets a new state of the art at 80, 2.8 points above Fable 5, while using less than half the output tokens, taking less than half the time, and costing about one-third less."
+    },
+    {
+      "title": "BrowseComp Leaderboard & Scores — August 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/browsecomp",
+      "snippet": "BrowseComp (BrowseComp) leaderboard across 40 AI models. GPT-5.6 Sol leads with 92.2%. A benchmark for web-browsing agents that must search, inspect sources, gather evidence, and return the correct answer to research-oriented questions."
+    },
+    {
+      "title": "Best Open-Source LLM Models in 2026: Coding, Local, Agentic AI ...",
+      "url": "https://huggingface.co/blog/daya-shankar/open-source-llms",
+      "snippet": "A Blog post by Daya Shankar on Hugging Face"
+    },
+    {
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model - OpenAI",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "snippet": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack."
+    },
+    {
+      "title": "LiveBench",
+      "url": "https://livebench.ai/",
+      "snippet": "LiveBench · sponsored by Abacus.AI · a contamination-free LLM benchmark. Overall = mean of category averages · cost = cost per successful task"
+    }
+  ]
+}

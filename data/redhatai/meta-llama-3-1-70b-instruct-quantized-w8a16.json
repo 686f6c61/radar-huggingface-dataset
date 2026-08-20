@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Meta-Llama-3.1-70B-Instruct-quantized.w8a16",
+  "slug": "redhatai-meta-llama-3-1-70b-instruct-quantized-w8a16",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-Instruct-quantized.w8a16",
+  "created_at": "2024-07-24T18:19:10.000Z",
+  "updated_at": "2026-08-19T21:44:12.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "int88",
+    "vllm",
+    "conversational",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "arxiv:2210.17323",
+    "base_model:meta-llama/Llama-3.1-70B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.1-70B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 160,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 72670025872,
+  "storage_human": "72.7 GB",
+  "base_model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta-Llama-3.1-70B-Instruct-quantized.w8a16 - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-Instruct-quantized.w8a16",
+      "snippet": "Model Optimizations This model was obtained by quantizing the weights of Meta-Llama-3.1-70B-Instruct to INT8 data type. This optimization reduces the number of bits per parameter from 16 to 8, reducing the disk size and GPU memory requirements by approximately 50%. Only the weights of the linear operators within transformers blocks are quantized."
+    },
+    {
+      "title": "Meta-Llama-3-70B-Instruct-quantized.w8a16 - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3-70B-Instruct-quantized.w8a16",
+      "snippet": "Quantized version of Meta-Llama-3-70B-Instruct. It achieves an average score of 77.90 on the OpenLLM benchmark (version 1), whereas the unquantized model achieves 79.18."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-Instruct-quantized.w8a8",
+      "url": "https://socket.dev/huggingface/package/redhatai/meta-llama-3.1-70b-instruct-quantized.w8a8",
+      "snippet": "This model is a quantized version of Meta-Llama-3.1-70B-Instruct. It was evaluated on a several tasks to assess the its quality in comparison to the unquatized model, including multiple-choice, math reasoning, and open-ended text generation. Meta-Llama-3.1-70B-Instruct-quantized.w8a8 achieves 98.8% recovery for the Arena-Hard evaluation, 99.9% for OpenLLM v1 (using Meta&#x27;s prompting when ..."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-Instruct-quantized.w8a16 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/redhatai-meta-llama-3-1-70b-instruct-quantized-w8a16",
+      "snippet": "Model Overview Model Architecture: Meta-Llama-3 Input: Text Output: Text Input: Text Output: Text Model Optimizations: Weight quantization: INT8 Weight quantization: INT8 Intended Use Cases: Intended for commercial and research use multiple languages. Similarly to Meta-Llama-3.1-70B-Instruct , this models is intended for assistant-like chat. Out-of-scope: Use in any manner that violates ..."
+    },
+    {
+      "title": "Meta-Llama-3.1-70B-Instruct Quantized Open-Source Model - Save Memory ...",
+      "url": "https://model.aibase.com/models/details/1947964344818208768",
+      "snippet": "This model is a quantized version of Meta-Llama-3.1-70B-Instruct. It optimizes performance through INT8 weight quantization and is suitable for chat scenarios similar to an assistant, supporting multiple languages."
+    }
+  ]
+}

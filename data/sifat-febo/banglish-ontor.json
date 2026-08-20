@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sifat-febo/banglish-ontor",
+  "slug": "sifat-febo-banglish-ontor",
+  "author": "sifat-febo",
+  "url": "https://huggingface.co/sifat-febo/banglish-ontor",
+  "created_at": "2026-08-19T22:31:42.000Z",
+  "updated_at": "2026-08-19T22:31:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sifat-febo/banglish-companion · Hugging Face",
+      "url": "https://huggingface.co/sifat-febo/banglish-companion",
+      "snippet": "Banglish Companion — Banglish Conversational AI The first Banglish conversational AI model. A casual, friendly chatbot that speaks in Banglish — Bengali written phonetically in Latin script. Runs locally, no GPU needed. Why Banglish? Over 230 million people speak Bengali. Online, millions of them — plus the global diaspora — type in Banglish (phonetic Bengali using English letters ..."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "sifat-febo (Sifat Febo) - Hugging Face",
+      "url": "https://huggingface.co/sifat-febo/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... published a model about 11 hours ago"
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "EKTOMORF/gemma-4-E4B-it-litert-lm",
+  "slug": "ektomorf-gemma-4-e4b-it-litert-lm",
+  "author": "EKTOMORF",
+  "url": "https://huggingface.co/EKTOMORF/gemma-4-E4B-it-litert-lm",
+  "created_at": "2026-08-19T21:28:45.000Z",
+  "updated_at": "2026-08-19T21:28:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19825836032,
+  "storage_human": "19.8 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/gemma-4-E4B-it-litert-lm · Hugging Face",
+      "url": "https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huggingworld/gemma-4-E4B-it-litert-lm · Hugging Face",
+      "url": "https://huggingface.co/huggingworld/gemma-4-E4B-it-litert-lm",
+      "snippet": "Benefits At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "litert-community/gemma-4-E4B-it-litert-lm - Models",
+      "url": "https://www.modelscope.cn/models/litert-community/gemma-4-E4B-it-litert-lm",
+      "snippet": "This particular Gemma 4 model is small so it is ideal for on-device use cases. By running this model on device, users can have private access to Generative AI technology without even requiring an internet connection. These models are provided in the .litertlm format for use with the LiteRT-LM framework."
+    },
+    {
+      "title": "Gemma 4 | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. Note: LiteRT-LM supports E2B and E4B models today, with support for larger models coming soon. Gemma 4 ..."
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT-LM: LiteRT-LM is Google&#x27;s production ...",
+      "url": "https://github.com/google-ai-edge/LiteRT-LM",
+      "snippet": "🚀 Production-Ready for Google&#x27;s Products LiteRT-LM powers on-device GenAI experiences in Chrome, Chromebook Plus, Pixel Watch, and more. You can also try the Google AI Edge Gallery app to run models immediately on your device."
+    }
+  ]
+}

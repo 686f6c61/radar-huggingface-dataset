@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/GuardBot_140e_10220s",
+  "slug": "homiebear-guardbot_140e_10220s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/GuardBot_140e_10220s",
+  "created_at": "2026-08-19T20:39:44.000Z",
+  "updated_at": "2026-08-19T20:42:03.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275380538,
+  "storage_human": "275 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Homiebear ( Homie Bear) - Hugging Face",
+      "url": "https://huggingface.co/Homiebear/models",
+      "snippet": "Homiebear Follow FurnTheFurnace&#x27;s profile picturegtkunit&#x27;s profile pictureBadlyDawnBoy&#x27;s profile picture 3 followers · 0 following"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=trending&search=HOMIE",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=HOMIE",
+      "snippet": "Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Add your hardware Apply filters"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Homiebear/TheRiddler_140e_2940s · Hugging Face",
+      "url": "https://huggingface.co/Homiebear/TheRiddler_140e_2940s",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

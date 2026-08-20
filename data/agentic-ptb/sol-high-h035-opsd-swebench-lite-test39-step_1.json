@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h035.opsd-swebench-lite-test39.step_1",
+  "slug": "agentic-ptb-sol-high-h035-opsd-swebench-lite-test39-step_1",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h035.opsd-swebench-lite-test39.step_1",
+  "created_at": "2026-08-20T02:38:20.000Z",
+  "updated_at": "2026-08-20T02:39:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EcthelionLiu/Agentic-OPSD",
+      "url": "https://github.com/EcthelionLiu/Agentic-OPSD",
+      "snippet": "On-Policy Self-Distillation (OPSD) trains a single model to act as both student and teacher by conditioning on different contexts — the student sees only the problem, while the teacher additionally sees the ground-truth solution — and performs token-level distribution matching along the student&#x27;s own on-policy trajectories. OPSD achieves comparable or better performance while using 8-12× ..."
+    },
+    {
+      "title": "SWE-bench Leaderboard: AI Models on Real Code Tasks",
+      "url": "https://tensorfeed.ai/benchmarks/swe_bench",
+      "snippet": "Live SWE-bench leaderboard for major AI models. Real-world software engineering tasks from GitHub issues. Pricing per model and rankings updated weekly on TensorFeed."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 spans three model tiers: Sol, our flagship; Terra, a lower-cost model with performance competitive with GPT‑5.5; and Luna, our fastest and most affordable model."
+    },
+    {
+      "title": "What Is Agentic AI? Definition, 6 Levels & Examples (2026)",
+      "url": "https://agentic.ai/what-is-agentic-ai",
+      "snippet": "Agentic AI acts on its own — planning, using tools, and adapting until a task is done. Learn how it differs from chatbots, the 6 levels of autonomy, and real tools to try."
+    },
+    {
+      "title": "SWE-bench Leaderboards",
+      "url": "https://www.swebench.com/",
+      "snippet": "Each entry reports % Resolved, the percentage of task instances solved. Open-weights model Run performed or directly checked by the SWE-bench team"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jiavon/mistral-writing-style",
+  "slug": "jiavon-mistral-writing-style",
+  "author": "jiavon",
+  "url": "https://huggingface.co/jiavon/mistral-writing-style",
+  "created_at": "2026-08-20T02:10:20.000Z",
+  "updated_at": "2026-08-20T03:02:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54595088,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "Mistral AI Complete Model Guide — Every Model, Spec, and Use Case (2026)",
+      "url": "https://www.aimadetools.com/blog/mistral-ai-complete-model-guide/",
+      "snippet": "The complete guide to every Mistral AI model: Large 2, Devstral 2, Codestral, Small, Nemo. Specs, benchmarks, pricing, and which to use when."
+    },
+    {
+      "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+      "url": "https://mistral.ai/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "Mistral AI in 2026: Every Model, Product & Milestone (Complete Guide)",
+      "url": "https://serenitiesai.com/articles/mistral-ai-models-2026-complete-guide",
+      "snippet": "Complete guide to every Mistral AI model and product in 2026. Mistral Small 4 (119B MoE), Large 3 (675B), Voxtral TTS, Leanstral, Forge enterprise platform — specs, benchmarks, and pricing verified."
+    },
+    {
+      "title": "Models Overview - Mistral Docs",
+      "url": "https://docs.mistral.ai/models",
+      "snippet": "Documentation for the deployment and usage of Mistral AI&#x27;s LLMs"
+    }
+  ]
+}

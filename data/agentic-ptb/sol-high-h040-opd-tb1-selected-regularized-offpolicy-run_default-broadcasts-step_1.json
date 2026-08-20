@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h040.opd-tb1-selected-regularized-offpolicy.run_default.broadcasts.step_1",
+  "slug": "agentic-ptb-sol-high-h040-opd-tb1-selected-regularized-offpolicy-run_default-broadcasts-step_1",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h040.opd-tb1-selected-regularized-offpolicy.run_default.broadcasts.step_1",
+  "created_at": "2026-08-20T02:25:45.000Z",
+  "updated_at": "2026-08-20T02:26:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18819721136,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "P-OPD/verl/docs/start/agentic_rl.rst at master - GitHub",
+      "url": "https://github.com/KnowledgeXLab/P-OPD/blob/master/verl/docs/start/agentic_rl.rst",
+      "snippet": "Contribute to KnowledgeXLab/P-OPD development by creating an account on GitHub."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - NVIDIA/TensorRT-Model-Connect: From PyTorch model to end-to ...",
+      "url": "https://github.com/NVIDIA/TensorRT-Model-Connect",
+      "snippet": "TensorRT Model Connect is an extensive collection of AI Model reference implementations in C++, on top of NVIDIA TensorRT. Model Connect is powered by an agentic workflow that continuously adds support for upcoming models, drastically reducing integration effort on user side and time until new models become compatible."
+    },
+    {
+      "title": "Agentic AI: A Comprehensive Survey of Architectures, Applications, and ...",
+      "url": "https://arxiv.org/html/2510.25445v1",
+      "snippet": "The agentic AI era is not simply a linear descendant of symbolic AI but is instead built upon a completely different architectural foundation. To address this, we introduce a novel conceptual framework (Figure 2) designed to prevent retrospective conflation by clearly distinguishing the symbolic and neural lineages of agentic AI."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "addisonhammer/diffusion_so101_pink_cube",
+  "slug": "addisonhammer-diffusion_so101_pink_cube",
+  "author": "addisonhammer",
+  "url": "https://huggingface.co/addisonhammer/diffusion_so101_pink_cube",
+  "created_at": "2026-08-20T02:30:23.000Z",
+  "updated_at": "2026-08-20T02:38:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:addisonhammer/so101_pick_pink_cube",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 270292846,
+  "parameters_human": "270.3M",
+  "storage_bytes": 2162396160,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "addisonhammer/so101_pink_die_in_cup_20260817_220140 · Datasets at ...",
+      "url": "https://huggingface.co/datasets/addisonhammer/so101_pink_die_in_cup_20260817_220140",
+      "snippet": "Datasets: addisonhammer / so101_pink_die_in_cup_20260817_220140 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·7.57k rows ..."
+    },
+    {
+      "title": "addisonhammer (Addison Hammer) - Hugging Face",
+      "url": "https://huggingface.co/addisonhammer/datasets",
+      "snippet": "Robotics, Physical AI, Machine Vision. Recent Activity. updated a dataset about 8 hours ago. addisonhammer/so101_4_tpu_parts_in_cup_20260816_222751"
+    },
+    {
+      "title": "GitHub - xxwd231/lerobot-so101-cube: End-to-End Embodied AI deployment ...",
+      "url": "https://github.com/xxwd231/lerobot-so101-cube",
+      "snippet": "End-to-End Embodied AI deployment on SO-101 robot arm using LeRobot & ACT policy, with 4-stage ablation study on data cleaning and Temporal Ensembling. - xxwd231/lerobot-so101-cube"
+    },
+    {
+      "title": "SO-ARM100/Simulation/SO101/README.md at main - GitHub",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100/blob/main/Simulation/SO101/README.md",
+      "snippet": "The MuJoCo file scene.xml supports two differenly calibrated SO101 robot files: New Calibration (Default): Each joint&#x27;s virtual zero is set to the middle of its joint range. Use -> so101_new_calib.xml. Old Calibration: Each joint&#x27;s virtual zero is set to the configuration where the robot is fully extended horizontally. Use -> so101_old_calib.xml. To switch between calibration methods, modify ..."
+    },
+    {
+      "title": "How to use the SO10xArm robotic arm in Lerobot | Seeed Studio Wiki",
+      "url": "https://wiki.seeedstudio.com/lerobot_so100m/",
+      "snippet": "This wiki provides the assembly and debugging tutorial for the SO ARM100 and realizes data collection and training within the Lerobot framework."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cmndcntrlcyber/qwen14b-code-trainer-v9_mixed",
+  "slug": "cmndcntrlcyber-qwen14b-code-trainer-v9_mixed",
+  "author": "cmndcntrlcyber",
+  "url": "https://huggingface.co/cmndcntrlcyber/qwen14b-code-trainer-v9_mixed",
+  "created_at": "2026-08-07T10:50:23.000Z",
+  "updated_at": "2026-08-19T22:27:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "hf_jobs",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3866405143,
+  "storage_human": "3.9 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cmndcntrlcyber/qwen14b-code-trainer-v9_mixed · Hugging Face",
+      "url": "https://huggingface.co/cmndcntrlcyber/qwen14b-code-trainer-v9_mixed",
+      "snippet": "Instructions to use cmndcntrlcyber/qwen14b-code-trainer-v9_mixed with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "cmndcntrlcyber/qwen14b-code-trainer-v7_mixed · Hugging Face",
+      "url": "https://huggingface.co/cmndcntrlcyber/qwen14b-code-trainer-v7_mixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen14b-code-trainer-v9_mixed API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/cmndcntrlcyber/qwen14b-code-trainer-v9_mixed",
+      "snippet": "Run qwen14b-code-trainer-v9_mixed with FriendliAI inference. LoRA adapter for Qwen/Qwen2.5-Coder-14B-Instruct, fine-tuned on the code-trainer-v9-mixed dataset…"
+    },
+    {
+      "title": "GitHub - cmndcntrlcyber/code-trainer-pipeline: A FT-Pipeline that ...",
+      "url": "https://github.com/cmndcntrlcyber/code-trainer-pipeline",
+      "snippet": "This project implements a 6-phase pipeline to build and deploy a multimodal code generation model on an RTX 5060 Ti 16GB (Blackwell). It produces a fine-tuned Qwen2.5-Coder-14B model capable of generating code from VS Code screenshot images."
+    },
+    {
+      "title": "cmndcntrlcyber (cmndcntrl) · GitHub",
+      "url": "https://github.com/cmndcntrlcyber",
+      "snippet": "A graph representing cmndcntrlcyber&#x27;s contributions from July 27, 2025 to August 01, 2026. The contributions are 95% commits, 5% pull requests, 0% code review, 0% issues."
+    }
+  ]
+}

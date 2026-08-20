@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cocorang/ChronoEdit-14B_Int8-Convrot",
+  "slug": "cocorang-chronoedit-14b_int8-convrot",
+  "author": "cocorang",
+  "url": "https://huggingface.co/cocorang/ChronoEdit-14B_Int8-Convrot",
+  "created_at": "2026-08-20T02:45:48.000Z",
+  "updated_at": "2026-08-20T03:44:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49434871288,
+  "storage_human": "49.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cocorang/ChronoEdit-14B-Diffusers-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/cocorang/ChronoEdit-14B-Diffusers-FP8/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/ChronoEdit-14B-Diffusers · Hugging Face",
+      "url": "https://huggingface.co/nvidia/ChronoEdit-14B-Diffusers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nv-tlabs/ChronoEdit: [ICLR 2026] ChronoEdit: Towards Temporal ...",
+      "url": "https://github.com/nv-tlabs/ChronoEdit",
+      "snippet": "[ICLR 2026] ChronoEdit: Towards Temporal Reasoning for Image Editing and World Simulation - nv-tlabs/ChronoEdit"
+    },
+    {
+      "title": "GitHub - marcusrogerio/Ai.ChronoEdit: ChronoEdit: Towards Temporal ...",
+      "url": "https://github.com/marcusrogerio/Ai.ChronoEdit",
+      "snippet": "📑 Full Model Training Framework We release ChronoEdit&#x27;s full training infrastructure and codebase, enabling distributed inference and large-scale fine-tuning of pretrained video diffusion models. See Training Doc for details."
+    },
+    {
+      "title": "ChronoEdit: Towards Temporal Reasoning for Image Editing and World ...",
+      "url": "https://research.nvidia.com/labs/toronto-ai/chronoedit/",
+      "snippet": "Temporal Reasoning Visualization Hover to see the temporal reasoning trajectory and edited result Built upon a video model, ChronoEdit can visualize how it \"reasons\" an edit by denoising the temporal reasoning tokens, revealing the editing trajectory behind its final output."
+    }
+  ]
+}

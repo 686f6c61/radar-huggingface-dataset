@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "flamma77/lewm-base",
+  "slug": "flamma77-lewm-base",
+  "author": "flamma77",
+  "url": "https://huggingface.co/flamma77/lewm-base",
+  "created_at": "2026-08-16T00:41:42.000Z",
+  "updated_at": "2026-08-20T03:19:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1546630567,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - JMya0802/LEWM_baseline: Official code base for LeWorldModel ...",
+      "url": "https://github.com/JMya0802/LEWM_baseline",
+      "snippet": "With ~15M parameters trainable on a single GPU in a few hours, LeWM plans up to 48× faster than foundation-model-based world models while remaining competitive across diverse 2D and 3D control tasks. Beyond control, we show that LeWM&#x27;s latent space encodes meaningful physical structure through probing of physical quantities."
+    },
+    {
+      "title": "flamma77 (Luke Barbier) - Hugging Face",
+      "url": "https://huggingface.co/flamma77/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 11 days ago ... published a model 12 days ago"
+    },
+    {
+      "title": "GitHub - lucas-maes/le-wm: Official code base for LeWorldModel: Stable ...",
+      "url": "https://github.com/lucas-maes/le-wm",
+      "snippet": "With ~15M parameters trainable on a single GPU in a few hours, LeWM plans up to 48× faster than foundation-model-based world models while remaining competitive across diverse 2D and 3D control tasks. Beyond control, we show that LeWM&#x27;s latent space encodes meaningful physical structure through probing of physical quantities."
+    },
+    {
+      "title": "[2603.19312] LeWorldModel: Stable End-to-End Joint-Embedding Predictive ...",
+      "url": "https://arxiv.org/abs/2603.19312",
+      "snippet": "With ~15M parameters trainable on a single GPU in a few hours, LeWM plans up to 48x faster than foundation-model-based world models while remaining competitive across diverse 2D and 3D control tasks. Beyond control, we show that LeWM&#x27;s latent space encodes meaningful physical structure through probing of physical quantities."
+    },
+    {
+      "title": "LeWM Self-Driving — A Latent World Model for Autonomous Driving",
+      "url": "https://fanxvirat.github.io/lewm-self-driving/",
+      "snippet": "End-to-end world modelling for highway driving We adapt the LeWorldModel (LeWM) JEPA framework to the Comma2k19 self-driving dataset. The model learns to predict future driving scenes in a compact latent space from raw 224×224 pixel observations and vehicle control signals, without any reconstruction objective or pretrained vision backbone."
+    }
+  ]
+}

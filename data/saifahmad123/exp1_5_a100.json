@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "saifahmad123/EXP1_5_a100",
+  "slug": "saifahmad123-exp1_5_a100",
+  "author": "saifahmad123",
+  "url": "https://huggingface.co/saifahmad123/EXP1_5_a100",
+  "created_at": "2026-08-19T22:36:08.000Z",
+  "updated_at": "2026-08-19T22:36:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi0",
+    "franka",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335852966,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saifahmad123/EXP5_10_a100 · Hugging Face",
+      "url": "https://huggingface.co/saifahmad123/EXP5_10_a100",
+      "snippet": "saifahmad123 / EXP5_10_a100 like 0 Robotics openpi pi0 franka Model card FilesFiles and versions xet Community Copy to bucket new EXP5_10_a100 Contents Usage"
+    },
+    {
+      "title": "saifahmad123 (Md Saif Ahmad) - Hugging Face",
+      "url": "https://huggingface.co/saifahmad123/datasets",
+      "snippet": "User profile of Md Saif Ahmad on Hugging Face"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Applied-Ai-exp1/exp 5 at main - GitHub",
+      "url": "https://github.com/GSanjayGaneshan/Applied-Ai-exp1/blob/main/exp%205",
+      "snippet": "Contribute to GSanjayGaneshan/Applied-Ai-exp1 development by creating an account on GitHub."
+    }
+  ]
+}

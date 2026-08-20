@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lecporr/rotating-equip-sft-n0705",
+  "slug": "lecporr-rotating-equip-sft-n0705",
+  "author": "lecporr",
+  "url": "https://huggingface.co/lecporr/rotating-equip-sft-n0705",
+  "created_at": "2026-08-19T21:46:53.000Z",
+  "updated_at": "2026-08-19T21:47:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81205308,
+  "storage_human": "81 MB",
+  "base_model": "unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BKI (Barbeque King) N0705 6.7 Inch Decal Control Panel Overlay for BBQ ...",
+      "url": "https://www.restaurantsupply.com/products/allpoints-n0705-6-7-inch-decal-control-panel-overlay-for-bbq-equipment",
+      "snippet": "RestaurantSupply.com is your trusted source for BKI (Barbeque King) cooking equipment accessories and gas connectors. Authorized BKI (Barbeque King) dealer, ensuring genuine commercial restaurant equipment and manufacturer support Fast shipping available on in-stock BKI (Barbeque King) N0705 cooking equipment accessories and gas connectors Competitive pricing backed by a 30-day price match ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/account-switcher/iframe",
+      "snippet": "Roblox is a global platform that brings people together through play."
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "Rotating and Static Equipment Inspection Guide - Scribd",
+      "url": "https://www.scribd.com/document/746341838/Rotary-and-Static-Equipment-Inspection",
+      "snippet": "Rotary and Static Equipment Inspection - Free download as PDF File (.pdf), Text File (.txt) or view presentation slides online."
+    }
+  ]
+}

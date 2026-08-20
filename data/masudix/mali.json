@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Masudix/Mali",
+  "slug": "masudix-mali",
+  "author": "Masudix",
+  "url": "https://huggingface.co/Masudix/Mali",
+  "created_at": "2026-08-19T23:19:15.000Z",
+  "updated_at": "2026-08-19T23:19:15.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-interface — Enterprise AI Platform",
+      "url": "https://modelix-ai.com/",
+      "snippet": "Full lifecycle of AI Content Generate images, video, audio, and text in a single interface. 30+ AI models, node editor, team workspaces, and API for businesses of any scale."
+    },
+    {
+      "title": "GitHub - Masuidx/masudix.github.io · GitHub",
+      "url": "https://github.com/Masuidx/masudix.github.io",
+      "snippet": "Contribute to Masuidx/masudix.github.io development by creating an account on GitHub."
+    },
+    {
+      "title": "Mali｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1863793650950195157",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;Mali&#x27; model on PixAI! Search for \"Mali\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "masudix.github.io/README.md at main · Masuidx/masudix.github.io",
+      "url": "https://github.com/Masuidx/masudix.github.io/blob/main/README.md",
+      "snippet": "Contribute to Masuidx/masudix.github.io development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Microsoft AI",
+      "url": "https://microsoft.ai/models/",
+      "snippet": "Helps your engineering team write better code faster, with a lightweight, agentic model built into GitHub Copilot and VS Code."
+    }
+  ]
+}

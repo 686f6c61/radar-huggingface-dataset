@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Nataliegvo/gemma-2b-mom-style-v5",
+  "slug": "nataliegvo-gemma-2b-mom-style-v5",
+  "author": "Nataliegvo",
+  "url": "https://huggingface.co/Nataliegvo/gemma-2b-mom-style-v5",
+  "created_at": "2026-08-19T21:14:15.000Z",
+  "updated_at": "2026-08-19T21:14:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 2784495264,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nataliegvo/gemma-2b-mom-style-v2 · Hugging Face",
+      "url": "https://huggingface.co/Nataliegvo/gemma-2b-mom-style-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-2b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemma — gemma - gemma-llm.readthedocs.io",
+      "url": "https://gemma-llm.readthedocs.io/en/latest/index.html",
+      "snippet": "Learn more about Gemma # To use this library: Gemma documentation Technical reports for metrics and model capabilities: Gemma 1 Gemma 2 Gemma 3 Gemma 4 Other Gemma implementations and doc on the Gemma ecosystem Downloading the models # To download the model weights. See our documentation. System Requirements # Gemma can run on a CPU, GPU and TPU."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    }
+  ]
+}

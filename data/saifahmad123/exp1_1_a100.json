@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "saifahmad123/EXP1_1_a100",
+  "slug": "saifahmad123-exp1_1_a100",
+  "author": "saifahmad123",
+  "url": "https://huggingface.co/saifahmad123/EXP1_1_a100",
+  "created_at": "2026-08-19T23:05:38.000Z",
+  "updated_at": "2026-08-19T23:06:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi0",
+    "franka",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335849004,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saifahmad123 (Md Saif Ahmad) - Hugging Face",
+      "url": "https://huggingface.co/saifahmad123/datasets",
+      "snippet": "User profile of Md Saif Ahmad on Hugging Face"
+    },
+    {
+      "title": "exp1/README.md · nileshsarkar-ai/sae-encoders at main",
+      "url": "https://huggingface.co/nileshsarkar-ai/sae-encoders/blob/main/exp1/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Exp1 Model by Md Jaman - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/md-jaman/carparts-segmentation/exp1",
+      "snippet": "Exp1 model from the Carparts Segmentation project by Md Jaman. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "Exp1 Model by Kaustavdtl - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/kaustavdtl/military-ai/exp1",
+      "snippet": "Exp1 model from the Military Ai project by Kaustavdtl. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h016.maxrl-widefrontier.step_1",
+  "slug": "agentic-ptb-sol-high-h016-maxrl-widefrontier-step_1",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h016.maxrl-widefrontier.step_1",
+  "created_at": "2026-08-20T02:20:10.000Z",
+  "updated_at": "2026-08-20T02:21:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "Efficient by default, maximum performance on demand GPT‑5.6 Sol is our best coding model yet. On the Artificial Analysis Coding Agent Index, GPT‑5.6 Sol with max reasoning sets a new state of the art at 80, 2.8 points above Fable 5, while using less than half the output tokens, taking less than half the time, and costing about one-third less."
+    },
+    {
+      "title": "model-native-agentic-ai - GitHub",
+      "url": "https://github.com/ADaM-BJTU/model-native-agentic-ai",
+      "snippet": "The rapid evolution of agentic AI marks a new phase in artificial intelligence, where Large Language Models (LLMs) no longer merely respond but act, reason, and adapt. This survey traces the paradigm shift in building agentic AI: from Pipeline-based systems, where planning, tool use, and memory are orchestrated by external logic, to the emerging Model-native paradigm, where these capabilities ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "LLM Agent & Tool-Use Benchmarks — Function Calling, MCP, Structured ...",
+      "url": "https://benchlm.ai/llm-agent-benchmarks",
+      "snippet": "Which AI models handle function calling, MCP tool use, browsing, and multi-step agent workflows best? Verified-ranked results across 24 agentic benchmarks. Agentic carries 22% weight in BenchLM.ai&#x27;s overall score — the single biggest category."
+    },
+    {
+      "title": "Agentic AI Systems - GitHub",
+      "url": "https://github.com/alirezadir/Agentic-AI-Systems",
+      "snippet": "Welcome to Agentic-AI-Systems a curated and evolving knowledge base and hands-on guide for learning about Agents, Agentic AI system design, and building production-ready AI agents and multi-agent systems. This repository is a collection of resources and examples that I have found useful in my journey of building agentic AI systems."
+    }
+  ]
+}

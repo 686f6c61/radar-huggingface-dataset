@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "meggs413/summer2",
+  "slug": "meggs413-summer2",
+  "author": "meggs413",
+  "url": "https://huggingface.co/meggs413/summer2",
+  "created_at": "2026-08-19T22:19:29.000Z",
+  "updated_at": "2026-08-19T22:19:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286763616,
+  "storage_human": "287 MB",
+  "base_model": "unsloth/qwen2.5-14b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "summer2 - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1960484923884141250",
+      "snippet": "Generate stunning anime art with the &#x27;summer2&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "summer2｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/model/1960484923884141250",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;summer2&#x27; model on PixAI! Search for \"summer2\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Create AI Video — Choose Your Model | Intixi",
+      "url": "https://intixi.com/models",
+      "snippet": "Browse our curated collection of AI-generated models. Pick a model, choose a scene, upload your photo and generate your personalized AI video in seconds."
+    },
+    {
+      "title": "Summer2 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/cn27ps5e878c73chbjl0",
+      "snippet": "Explore Summer2 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

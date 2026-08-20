@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/kimi.h047.rl_v8.step_30",
+  "slug": "agentic-ptb-kimi-h047-rl_v8-step_30",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/kimi.h047.rl_v8.step_30",
+  "created_at": "2026-08-20T03:05:02.000Z",
+  "updated_at": "2026-08-20T03:06:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "kimi",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2509.02547] The Landscape of Agentic Reinforcement Learning for LLMs ...",
+      "url": "https://arxiv.org/abs/2509.02547",
+      "snippet": "The emergence of agentic reinforcement learning (Agentic RL) marks a paradigm shift from conventional reinforcement learning applied to large language models (LLM RL), reframing LLMs from passive sequence generators into autonomous, decision-making agents embedded in complex, dynamic worlds. This survey formalizes this conceptual shift by contrasting the degenerate single-step Markov Decision ..."
+    },
+    {
+      "title": "Kimi AI with K3 | Built for Agentic Coding & Knowledge Work",
+      "url": "https://www.kimi.com/en",
+      "snippet": "Try Kimi K3 to build playable multiplayer and 3D games, create consulting grade slides, and run parallel tasks with Swarm and Goal to get more work done."
+    },
+    {
+      "title": "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
+      "url": "https://arxiv.org/pdf/2509.02547",
+      "snippet": "This survey explores the integration of large language models and reinforcement learning, transforming LLMs into autonomous agents in complex environments."
+    },
+    {
+      "title": "GitHub - Gen-Verse/Open-AgentRL: RLAnything (ICML 2026) & AutoTool ...",
+      "url": "https://github.com/Gen-Verse/Open-AgentRL",
+      "snippet": "RLAnything (ICML 2026) & AutoTool (ICML 2026), DemyAgent: Open-Source RL for LLMs and Agentic Scenarios - Gen-Verse/Open-AgentRL"
+    },
+    {
+      "title": "Agentic RL | Yue Shui Blog",
+      "url": "https://syhya.github.io/posts/2025-09-30-agentic-rl/",
+      "snippet": "Agentic RL enables LLMs to possess capabilities like autonomous planning, decision-making, tool use, and environmental interaction by creating a closed-loop interaction with the external world (e.g., search engines, code interpreters, databases, browsers) and continuously optimizing through reward signals."
+    }
+  ]
+}

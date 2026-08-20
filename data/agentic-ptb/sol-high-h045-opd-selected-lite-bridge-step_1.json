@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h045.opd-selected-lite-bridge.step_1",
+  "slug": "agentic-ptb-sol-high-h045-opd-selected-lite-bridge-step_1",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h045.opd-selected-lite-bridge.step_1",
+  "created_at": "2026-08-20T02:24:40.000Z",
+  "updated_at": "2026-08-20T02:25:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sol-HQ/agentic-library - GitHub",
+      "url": "https://github.com/Sol-HQ/agentic-library",
+      "snippet": "Agentic Library A curated, agent-readable library of high-signal open-source resources for building AI agents, memory systems, voice interfaces, and automation stacks."
+    },
+    {
+      "title": "EasyOPD/experiments/02_agentic_opd/README.md at main - GitHub",
+      "url": "https://github.com/lds-ustc/EasyOPD/blob/main/experiments/02_agentic_opd/README.md",
+      "snippet": "03_agentic_opd — Agentic Online Policy Distillation Overview This directory contains experiments for OPD methods specifically designed for agent/tool-integrated reasoning (TIR) scenarios. The key challenge: multi-turn agent interactions with tool calls introduce cascade failures and step-wise divergence, requiring adaptive distillation ..."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 spans three model tiers: Sol, our flagship; Terra, a lower-cost model with performance competitive with GPT‑5.5; and Luna, our fastest and most affordable model."
+    },
+    {
+      "title": "[2608.01953] Look Ahead Before You Distill: Future Trajectory ...",
+      "url": "https://arxiv.org/abs/2608.01953",
+      "snippet": "On-policy distillation (OPD) provides teacher supervision on states visited by the student, reducing the distribution gap between training and inference. However, in multi-turn agentic tasks, student deviations may accumulate over time, gradually moving the trajectory away from states where teacher guidance remains effective. Our quantitative analysis further shows that high-disagreement ..."
+    },
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    }
+  ]
+}

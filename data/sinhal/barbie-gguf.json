@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "sinhal/barbie-gguf",
+  "slug": "sinhal-barbie-gguf",
+  "author": "sinhal",
+  "url": "https://huggingface.co/sinhal/barbie-gguf",
+  "created_at": "2026-06-20T07:52:08.000Z",
+  "updated_at": "2026-08-20T03:01:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "roleplay",
+    "girlfriend",
+    "nsfw",
+    "uncensored",
+    "not-for-all-audiences",
+    "adult",
+    "erp",
+    "chatbot",
+    "companion",
+    "ai-girlfriend",
+    "waifu",
+    "persona",
+    "qwen2.5",
+    "lora",
+    "ollama",
+    "sillytavern",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 8108219136,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sinhal/barbie-gguf · Hugging Face",
+      "url": "https://huggingface.co/sinhal/barbie-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sinhal/barbie-gguf at main - Hugging Face",
+      "url": "https://huggingface.co/sinhal/barbie-gguf/tree/main",
+      "snippet": "How to use sinhal/barbie-gguf with Docker Model Runner: ... Lemonade How to use sinhal/barbie-gguf with Lemonade: Pull the model ... Run and chat with the model ... List all available models lemonade list main barbie-gguf 8.11 GB Ctrl+K Ctrl+K 1 contributor History:4 commits sinhal Upload barbie-f16.gguf with huggingface_hub 822d9c0 verified8 ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - IBM/gguf: IBM GGUF-encoded AI models and conversion scripts",
+      "url": "https://github.com/IBM/gguf",
+      "snippet": "This repository provides an automated CI/CD process to convert, test and deploy IBM Granite models, in safetensor format, from the ibm-granite organization to IBM GGUF versions (with various supported quantizations) within model repositories respectively named with the -GGUF extension. These GGUF model repositories are also included to the Granite Quantized Model collection for convenience."
+    },
+    {
+      "title": "ggufy - Model Library",
+      "url": "https://ggufy.com/",
+      "snippet": "ggufy helps you discover, download, and manage GGUF models from providers like Hugging Face, with compatibility for inference engines such as Ollama and llama.cpp."
+    }
+  ]
+}

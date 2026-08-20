@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lr10260/dubbing-judge-model",
+  "slug": "lr10260-dubbing-judge-model",
+  "author": "lr10260",
+  "url": "https://huggingface.co/lr10260/dubbing-judge-model",
+  "created_at": "2026-08-19T19:56:06.000Z",
+  "updated_at": "2026-08-19T19:56:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lip-sync",
+    "visual-speech",
+    "multilingual",
+    "lora",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48252326,
+  "storage_human": "48 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lr10260 (Rui Liu) - Hugging Face",
+      "url": "https://huggingface.co/lr10260",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset about 2 months ago ... upvoted a paper about 2 months ago"
+    },
+    {
+      "title": "lr10260 (Rui Liu) - Hugging Face",
+      "url": "https://huggingface.co/lr10260/models",
+      "snippet": "Organizations lr10260&#x27;s models19 Sort: Recently updated lr10260/DUPL-3B 4B•Updated May 21• 2"
+    },
+    {
+      "title": "Judge Model in AI Evaluation - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/judge-model",
+      "snippet": "Judge models are AI systems, often LLMs, that evaluate outputs via scoring, feedback, and ranking to enhance model performance and safety."
+    },
+    {
+      "title": "Evaluate a judge model | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/evaluate-judge-model",
+      "snippet": "For model-based metrics, the Gen AI evals evaluates your models with a foundational model, such as Gemini, that has been configured and prompted as a judge model. If you want to learn more about the judge model, the Advanced judge model customization series describes additional tools you can use to evaluate and configure the judge model. For the basic evaluation workflow, see the Gen AI evals ..."
+    },
+    {
+      "title": "LLM Judge — Independent AI Model Leaderboard & Comparison (2026)",
+      "url": "https://www.llmjudge.com/",
+      "snippet": "Independent LLM evaluation platform. The LLM Judge Index™ ranks AI models across accuracy, reasoning, safety, coding, creativity, and instruction following."
+    }
+  ]
+}

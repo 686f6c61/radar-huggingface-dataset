@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "iamkaikai/MiniMax-H3-Single-Frame-VAE-500K",
+  "slug": "iamkaikai-minimax-h3-single-frame-vae-500k",
+  "author": "iamkaikai",
+  "url": "https://huggingface.co/iamkaikai/MiniMax-H3-Single-Frame-VAE-500K",
+  "created_at": "2026-08-20T02:04:55.000Z",
+  "updated_at": "2026-08-20T02:29:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimax-h3",
+    "vae",
+    "decoder",
+    "image-reconstruction",
+    "single-frame",
+    "experimental",
+    "base_model:Mamad8/MiniMax-H3-Image-VAE",
+    "base_model:finetune:Mamad8/MiniMax-H3-Image-VAE",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9708439862,
+  "storage_human": "9.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3, Mamad8/MiniMax-H3-Image-VAE",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 Model Reference | ai-models-lab/minimax-h3 | DeepWiki",
+      "url": "https://deepwiki.com/ai-models-lab/minimax-h3/4-minimax-h3-model-reference",
+      "snippet": "MiniMax H3 is a state-of-the-art native multi-modal model capable of generating 2K AI video with synchronized 3D stereo audio in a single inference pass README.md 3 Architecture Overview The MiniMax H3 architecture deviates from traditional video-only models by employing a joint diffusion process."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "MiniMax H3 is released as two task-specific checkpoints. Each checkpoint contains a specialized Omni Transformer Model together with the required processor, tokenizer, text encoder, Visual VAE, and standalone Audio VAE components."
+    },
+    {
+      "title": "MiniMax H3 Model Files & Downloads: GitHub, Hugging Face, GGUF, INT8 ...",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Find official MiniMax H3 files, including pruned BF16, INT8, NVFP4, and VAE variants. Compare sources, GGUF status, folder paths, and missing-model fixes."
+    }
+  ]
+}

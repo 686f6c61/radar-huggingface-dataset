@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nashikone/iroiroLoRA",
+  "slug": "nashikone-iroirolora",
+  "author": "nashikone",
+  "url": "https://huggingface.co/nashikone/iroiroLoRA",
+  "created_at": "2024-01-27T10:35:00.000Z",
+  "updated_at": "2026-08-20T01:49:46.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 200,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118602630232,
+  "storage_human": "118.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nashikone/iroiroLoRA · Hugging Face",
+      "url": "https://huggingface.co/nashikone/iroiroLoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iroiroLoRA: Text-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/iroirolora-nashikone",
+      "snippet": "iroiroLoRA is a LoRA (Low-Rank Adaptation) module created by nashikone designed to work with text-to-image diffusion models. LoRA modules function as..."
+    },
+    {
+      "title": "nashikone/iroiroLoRA at main - Hugging Face",
+      "url": "https://huggingface.co/nashikone/iroiroLoRA/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nashikone (nashikone) - Hugging Face",
+      "url": "https://huggingface.co/nashikone/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 15 days ago ... updated a model 15 days ago"
+    },
+    {
+      "title": "README.md · nashikone/iroiroLoRA at main - Hugging Face",
+      "url": "https://huggingface.co/nashikone/iroiroLoRA/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

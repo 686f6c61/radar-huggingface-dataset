@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Juuzumaki/gemma-4-E2B-it-litert-lm",
+  "slug": "juuzumaki-gemma-4-e2b-it-litert-lm",
+  "author": "Juuzumaki",
+  "url": "https://huggingface.co/Juuzumaki/gemma-4-E2B-it-litert-lm",
+  "created_at": "2026-08-20T01:10:27.000Z",
+  "updated_at": "2026-08-20T01:10:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35984568197,
+  "storage_human": "36.0 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/gemma-4-E2B-it-litert-lm · Hugging Face",
+      "url": "https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huggingworld/gemma-4-E2B-it-litert-lm · Hugging Face",
+      "url": "https://huggingface.co/huggingworld/gemma-4-E2B-it-litert-lm",
+      "snippet": "Benefits At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "Gemma 4 | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. Note: LiteRT-LM supports E2B and E4B models today, with support for larger models coming soon. Gemma 4 ..."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "GitHub - google-ai-edge/LiteRT-LM: LiteRT-LM is Google&#x27;s production ...",
+      "url": "https://github.com/google-ai-edge/LiteRT-LM",
+      "snippet": "🚀 Production-Ready for Google&#x27;s Products LiteRT-LM powers on-device GenAI experiences in Chrome, Chromebook Plus, Pixel Watch, and more. You can also try the Google AI Edge Gallery app to run models immediately on your device."
+    }
+  ]
+}

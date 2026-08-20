@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/starcoder2-3b-FP8",
+  "slug": "redhatai-starcoder2-3b-fp8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/starcoder2-3b-FP8",
+  "created_at": "2024-07-31T19:57:39.000Z",
+  "updated_at": "2026-08-19T21:45:58.000Z",
+  "license": "bigcode-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "starcoder2",
+    "text-generation",
+    "fp8",
+    "vllm",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 3181366272,
+  "parameters_human": "3.18B",
+  "storage_bytes": 3484485728,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/starcoder2-3b-FP8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/starcoder2-3b-FP8",
+      "snippet": "This model was obtained by quantizing the weights and activations of starcoder2-3b to FP8 data type, ready for inference with vLLM >= 0.5.2. This optimization reduces the number of bits per parameter from 16 to 8, reducing the disk size and GPU memory requirements by approximately 50%."
+    },
+    {
+      "title": "RedHatAI/starcoder2-3b-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/starcoder2-3b-FP8/tree/main",
+      "snippet": "RedHatAI / starcoder2-3b-FP8 like 0 Follow Red Hat AI 2.85k Text Generation Transformers Safetensors starcoder2 fp8 vllm text-generation-inference compressed-tensors License:bigcode-openrail-m Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "starcoder2-3b-FP8 huggingface.co api & RedHatAI starcoder2-3b-FP8 ...",
+      "url": "https://www.toolify.ai/ai-model/redhatai-starcoder2-3b-fp8",
+      "snippet": "starcoder2-3b-FP8 huggingface.co is an AI model on huggingface.co that provides starcoder2-3b-FP8&#x27;s model effect (), which can be used instantly with this RedHatAI starcoder2-3b-FP8 model. huggingface.co supports a free trial of the starcoder2-3b-FP8 model, and also provides paid use of the starcoder2-3b-FP8. Support call starcoder2-3b-FP8 model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "GitHub - bigcode-project/starcoder2: Home of StarCoder2!",
+      "url": "https://github.com/bigcode-project/starcoder2",
+      "snippet": "StarCoder2 is a family of code generation models (3B, 7B, and 15B), trained on 600+ programming languages from The Stack v2 and some natural language text such as Wikipedia, Arxiv, and GitHub issues. The models use Grouped Query Attention, a context window of 16,384 tokens, with sliding window attention of 4,096 tokens."
+    },
+    {
+      "title": "starcoder2-3b-FP8 huggingface.co api & neuralmagic starcoder2-3b-FP8 ...",
+      "url": "https://www.toolify.ai/ai-model/neuralmagic-starcoder2-3b-fp8",
+      "snippet": "starcoder2-3b-FP8 is an open source model from GitHub that offers a free installation service, and any user can find starcoder2-3b-FP8 on GitHub to install. At the same time, huggingface.co provides the effect of starcoder2-3b-FP8 install, users can directly use starcoder2-3b-FP8 installed effect in huggingface.co for debugging and trial."
+    }
+  ]
+}

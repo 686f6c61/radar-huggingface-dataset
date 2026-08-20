@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/gemma-2-9b-it-quantized.w8a8",
+  "slug": "redhatai-gemma-2-9b-it-quantized-w8a8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/gemma-2-9b-it-quantized.w8a8",
+  "created_at": "2024-08-16T20:38:47.000Z",
+  "updated_at": "2026-08-19T21:45:49.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "int8",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "arxiv:2210.17323",
+    "base_model:google/gemma-2-9b-it",
+    "base_model:quantized:google/gemma-2-9b-it",
+    "license:gemma",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": 10159209984,
+  "parameters_human": "10.16B",
+  "storage_bytes": 12020376155,
+  "storage_human": "12.0 GB",
+  "base_model": "google/gemma-2-9b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/gemma-2-9b-it-quantized.w8a16 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/gemma-2-9b-it-quantized.w8a16",
+      "snippet": "Model Optimizations This model was obtained by quantizing the weights of gemma-2-9b-it to INT8 data type. This optimization reduces the number of bits per parameter from 16 to 8, reducing the disk size and GPU memory requirements by approximately 50%. Only the weights of the linear operators within transformers blocks are quantized."
+    },
+    {
+      "title": "RedHatAI/gemma-2-9b-it-quantized.w8a8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/gemma-2-9b-it-quantized.w8a8",
+      "snippet": "RedHatAI / gemma-2-9b-it-quantized.w8a8 like 3 Follow Red Hat AI 759 Text Generation Safetensors gemma2 int8 vllm conversational 8-bit precision compressed-tensors arxiv:2210.17323 License:gemma Model card FilesFiles and versions Community gemma-2-9b-it-quantized.w8a8 Model Overview Model Optimizations Deployment Use with vLLM Creation ..."
+    },
+    {
+      "title": "RedHatAI/gemma-2-9b-it-quantized.w8a16 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/redhatai-gemma-2-9b-it-quantized-w8a16",
+      "snippet": "Quantized version of gemma-2-9b-it . It achieves an average score of 73.80 on the OpenLLM benchmark (version 1), whereas the unquantized model achieves 73.80. Model Optimizations"
+    },
+    {
+      "title": "gemma-2-9b-it-FP8 huggingface.co api & RedHatAI gemma-2-9b ... - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/redhatai-gemma-2-9b-it-fp8",
+      "snippet": "Model Optimizations This model was obtained by quantizing the weights and activations of gemma-2-9b-it to FP8 data type, ready for inference with vLLM >= 0.5.1. This optimization reduces the number of bits per parameter from 16 to 8, reducing the disk size and GPU memory requirements by approximately 50%."
+    },
+    {
+      "title": "Gemma 2 9B IT - GroqDocs - console.groq.com",
+      "url": "https://console.groq.com/docs/model/gemma2-9b-it",
+      "snippet": "Model card for Gemma 2 9B IT: 9B parameter instruction-tuned model from Google with state-of-the-art performance and instant responses on Groq."
+    }
+  ]
+}

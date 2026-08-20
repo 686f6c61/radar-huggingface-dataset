@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-max.h077.sft_short.step_100",
+  "slug": "agentic-ptb-opus-max-h077-sft_short-step_100",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-max.h077.sft_short.step_100",
+  "created_at": "2026-08-20T01:22:25.000Z",
+  "updated_at": "2026-08-20T01:23:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-max",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Token Calculator | Estimate GPT, Opus, and Gemini Model Costs",
+      "url": "https://tokencalculator.ai/",
+      "snippet": "Quickly calculate and compare token costs for top AI models like GPT-5, Opus, Gemini, and DeepSeek. Enter your text to see real-time pricing and choose the most cost-efficient option."
+    },
+    {
+      "title": "GitHub - calesthio/OpenMontage: World&#x27;s first open-source, agentic ...",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "snippet": "World&#x27;s first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio. - calesthio/OpenMontage"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models overview - Claude Platform Docs",
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "snippet": "Choosing a model If you&#x27;re unsure which model to use, start with Claude Opus 5 for complex agentic coding and enterprise work. For workloads that need the highest available capability, use Claude Fable 5. All current Claude models support text and image input, text output, multilingual capabilities, and vision."
+    }
+  ]
+}

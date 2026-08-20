@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ethicalabs/Echo-DSRN-114M-v0.1.2",
+  "slug": "ethicalabs-echo-dsrn-114m-v0-1-2",
+  "author": "ethicalabs",
+  "url": "https://huggingface.co/ethicalabs/Echo-DSRN-114M-v0.1.2",
+  "created_at": "2026-04-16T08:00:58.000Z",
+  "updated_at": "2026-08-19T23:58:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "echo",
+    "text-generation",
+    "text-generation-inference",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:naufalso/smoltalk2_non_thinking",
+    "base_model:ethicalabs/Echo-DSRN-114M-v0.1.2-Base",
+    "base_model:finetune:ethicalabs/Echo-DSRN-114M-v0.1.2-Base",
+    "license:apache-2.0",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 100,
+  "trending_score": 0,
+  "parameters": 114656768,
+  "parameters_human": "114.7M",
+  "storage_bytes": 458641656,
+  "storage_human": "459 MB",
+  "base_model": "ethicalabs/Echo-DSRN-114M-v0.1.2-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ethicalabs-ai/Echo-DSRN - GitHub",
+      "url": "https://github.com/ethicalabs-ai/Echo-DSRN/",
+      "snippet": "Echo-DSRN is a hybrid recurrent architecture designed for resource-constrained deployment on narrow, well-defined tasks (e.g., intent routing, NER, semantic classification). This is the canonical Hugging Face implementation of the Echo-DSRN 114M model and its hybrid variant (using a Qwen 2.5 ..."
+    },
+    {
+      "title": "Echo-DSRN/README.md at main · ethicalabs-ai/Echo-DSRN",
+      "url": "https://github.com/ethicalabs-ai/Echo-DSRN/blob/main/README.md",
+      "snippet": "This is the canonical Hugging Face implementation of the Echo-DSRN 114M model and its hybrid variant (using a Qwen 2.5 backbone). It features constant memory overhead (O (1) recurrent core + bounded O (window_size) attention) during generation. Read the full architectural details in the working paper."
+    },
+    {
+      "title": "ethicalabs/Echo-DSRN-114M-v0.1.2 · Hugging Face",
+      "url": "https://huggingface.co/ethicalabs/Echo-DSRN-114M-v0.1.2",
+      "snippet": "Model Card for ethicalabs/Echo-DSRN-114M-v0.1.2 The Echo-DSRN (N) (Dual State Recurrent Neural Network, short name: Echo-DSRN, also know as echo) is a novel architecture specifically designed to be a viable alternative for low-resource tasks that are currently being inefficiently handled by the excessive scale of Large Language Models (LLMs) 🌱"
+    },
+    {
+      "title": "Echo-DSRN - Recurrent Hybrid - a ethicalabs Collection",
+      "url": "https://huggingface.co/collections/ethicalabs/echo-dsrn-recurrent-hybrid",
+      "snippet": "Dual-State Recurrent Neural Network. Upvote . Sort: Collection. ethicalabs/Echo-DSRN-114M-v0.1.2. Text Generation • 0.1B • Updated 7 days ago • 495"
+    },
+    {
+      "title": "ethicalabs.ai — Echo-DSRN Research",
+      "url": "https://www.ethicalabs.ai/research/echo-dsrn/",
+      "snippet": "ethicalabs.ai explores decentralized, continuous-state AI implementations across four model families. Research focused on O (1) memory footprints, spanning 98M to 2.0B parameters for edge-native performance."
+    }
+  ]
+}

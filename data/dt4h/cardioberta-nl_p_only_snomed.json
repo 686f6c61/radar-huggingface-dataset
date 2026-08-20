@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "DT4H/CardioBERTa.nl_P_only_snomed",
+  "slug": "dt4h-cardioberta-nl_p_only_snomed",
+  "author": "DT4H",
+  "url": "https://huggingface.co/DT4H/CardioBERTa.nl_P_only_snomed",
+  "created_at": "2026-08-19T20:00:53.000Z",
+  "updated_at": "2026-08-19T20:11:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "feature-extraction",
+    "biomedical",
+    "clinical",
+    "cardiology",
+    "entity-linking",
+    "concept-normalization",
+    "umls",
+    "metric-learning",
+    "nl",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125978112,
+  "parameters_human": "126.0M",
+  "storage_bytes": 503934824,
+  "storage_human": "504 MB",
+  "base_model": "UMCU/CardioBERTa.nl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dutch - a DT4H Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/DT4H/dutch",
+      "snippet": "DT4H-IE/CardioBERTa.nl_clinical_NL_MED Token Classification • 0.3B•Updated May 21, 2025• 4"
+    },
+    {
+      "title": "Home - DataTools4Heart",
+      "url": "https://www.datatools4heart.eu/",
+      "snippet": "Natural Language Processing DataTools4Heart will introduce a multilingual Natural Language Processing (NLP) suite to standardise the structuring of cardiology reports across European regions, including cardiology-specific entity recognition and machine translation. Such suite will include adaptation of 7 language models to the cardiology domain in English, Spanish, Italian, Romanian, Czech ..."
+    },
+    {
+      "title": "CardioBERTa Family - a DT4H Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/DT4H/cardioberta-family",
+      "snippet": "DT4H &#x27;s Collections CardioNER MultiClinNER CardioBERTa Family Spanish English Czech Dutch Italian Romanian Swedish"
+    },
+    {
+      "title": "The DataTools4Heart Project · GitHub",
+      "url": "https://github.com/DataTools4Heart/",
+      "snippet": "This organization hosts the source code and documentation for all components that power the DataTools4Heart (DT4H) platform — a federated, privacy-preserving cardiology data toolbox developed to enhance health data reusability. Our platform enables secure, decentralized analysis of cardiology data while strictly adhering to ethical, legal, and data protection standards."
+    },
+    {
+      "title": "DT4H.nl at #SMM4H-HeaRD 2026: Multilingual Clinical NER with ...",
+      "url": "https://aclanthology.org/2026.smm4h-1.14/",
+      "snippet": "Abstract We describe the setup we used to complete the MultiClinAI-NER task in the SMM4H-HeaRD workshop 2026. In this work we employed a dedicated multilingual encoder model (EuroBERT-610m), two Dutch encoder models trained from scratch on clinical corpora (MedRoBERTa.nl and CardioDeBERTa.nl) and a generic Dutch encoder model (RobBERT2023-large), all finetuned with a 3-layer DNN head. We find ..."
+    }
+  ]
+}

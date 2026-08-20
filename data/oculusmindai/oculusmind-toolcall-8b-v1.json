@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "OculusMindAI/OculusMind-ToolCall-8B-v1",
+  "slug": "oculusmindai-oculusmind-toolcall-8b-v1",
+  "author": "OculusMindAI",
+  "url": "https://huggingface.co/OculusMindAI/OculusMind-ToolCall-8B-v1",
+  "created_at": "2026-08-20T01:49:28.000Z",
+  "updated_at": "2026-08-20T02:20:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "research",
+    "function-calling",
+    "tool-use",
+    "agent",
+    "bfcl-eval",
+    "mistral3",
+    "text-generation",
+    "en",
+    "zh",
+    "dataset:Team-ACE/ToolACE",
+    "dataset:interstellarninja/hermes_reasoning_tool_use",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "base_model:finetune:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8489553920,
+  "parameters_human": "8.49B",
+  "storage_bytes": 14405579619,
+  "storage_human": "14.4 GB",
+  "base_model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OculusMind.AI - GitHub",
+      "url": "https://github.com/OculusMindAI/",
+      "snippet": "OculusMind.AI Agents SDK — A2A clients (TypeScript, Python) and the MCP server for Claude Code and other MCP hosts."
+    },
+    {
+      "title": "GitHub - OculusMindAI/oculusmind-agents-sdk: OculusMind.AI Agents SDK ...",
+      "url": "https://github.com/OculusMindAI/oculusmind-agents-sdk",
+      "snippet": "OculusMind Agents Open-source tooling to talk to OculusMind.AI agents — Uno, Vera, and Maximus — from your own code or from any MCP host."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Oculus Mind AI MCP Server | Awesome MCP Servers",
+      "url": "https://mcpservers.org/servers/oculusmindai/oculusmind-agents-sdk",
+      "snippet": "Provides MCP access to OculusMind.AI agents who search the web, analyze stocks and products, automate and schedule workflows and utilize other MCP server..."
+    },
+    {
+      "title": "Function (Tool) Calling with NVIDIA NIM for LLMs",
+      "url": "https://docs.nvidia.com/nim/large-language-models/1.15.0/function-calling.html",
+      "snippet": "Usage Workflows # These examples showcase various ways to use function calling with LLM NIMs and LLM-specific NIMs: Basic Function Calling: Demonstrates how to use a single function with automatic tool choice. Multiple Tools: Shows how to provide multiple tools, including one without parameters. Forced Tool Usage: Illustrates how to force the model to use a specific tool. 1. Basic Function ..."
+    }
+  ]
+}

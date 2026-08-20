@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "julianmb/Ornith-1.5-35B-A3B-ROCmFP4-GGUF",
+  "slug": "julianmb-ornith-1-5-35b-a3b-rocmfp4-gguf",
+  "author": "julianmb",
+  "url": "https://huggingface.co/julianmb/Ornith-1.5-35B-A3B-ROCmFP4-GGUF",
+  "created_at": "2026-08-20T02:38:02.000Z",
+  "updated_at": "2026-08-20T03:50:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "strix-halo",
+    "moe",
+    "hybrid-attention",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 19052438784,
+  "storage_human": "19.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8",
+      "snippet": "Ornith 1.5 35B-A3B This model card documents Ornith-1.5-35B-A3B, the mid-size mixture-of-experts member of the Ornith-1.5 family. It activates only ~3B parameters per token, yet significantly outperforms its similar-sized peer Qwen 3.6-35B across all coding and agentic benchmarks, and outperforms dense models such as Gemma 4-31B and Muse Glimmer-30B by wide margins on agentic coding."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 spans three model scales: 397B MoE, 35B MoE and 9B dense. Designed for strong general-purpose intelligence across reasoning, agentic, and coding tasks, Ornith-1.5 achieves state-of-the-art performance among open-source models of comparable size across a broad range of benchmarks."
+    },
+    {
+      "title": "SC117/Ornith-1.0-35B-MTP-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/Ornith-1.0-35B-MTP-APEX-GGUF",
+      "snippet": "Ornith-1.0-35B is a self-improving agentic coding model from DeepReinforce AI, post-trained on top of Qwen3.5 with RL to jointly optimize scaffold generation and solution rollouts."
+    },
+    {
+      "title": "GitHub - julianmb/halofpx: HaloFPX: High-Throughput Unified Model ...",
+      "url": "https://github.com/julianmb/halofpx/tree/main/",
+      "snippet": "📦 Unified Model Zoo: Download, verify, and serve pre-quantized models (Qwen 3.8 27B, Nemotron 3.5 30B, Ornith 35B, DeepSeek V4 Flash, Laguna S 2.1) directly from Hugging Face."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    }
+  ]
+}

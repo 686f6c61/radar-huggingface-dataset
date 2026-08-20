@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "KasuleTrevor/cdli-qwen3-asr-lg-uganda-severity-disorder-cosine",
+  "slug": "kasuletrevor-cdli-qwen3-asr-lg-uganda-severity-disorder-cosine",
+  "author": "KasuleTrevor",
+  "url": "https://huggingface.co/KasuleTrevor/cdli-qwen3-asr-lg-uganda-severity-disorder-cosine",
+  "created_at": "2026-08-20T01:17:56.000Z",
+  "updated_at": "2026-08-20T01:18:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "lg"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "qwen3-asr",
+    "atypical-speech",
+    "luganda",
+    "prompt-conditioned-asr",
+    "lg",
+    "dataset:cdli/ugandan_luganda_nonstandard_speech_v1.0",
+    "base_model:KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b-base-finetune",
+    "base_model:finetune:KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b-base-finetune",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 4087626986,
+  "storage_human": "4.1 GB",
+  "base_model": "KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b-base-finetune",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cdli-qwen3-asr-lg-uganda-severity-disorder - Hugging Face",
+      "url": "https://huggingface.co/KasuleTrevor/cdli-qwen3-asr-lg-uganda-severity-disorder",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cdli-qwen3-asr-en-uganda-severity-disorder - Hugging Face",
+      "url": "https://huggingface.co/KasuleTrevor/cdli-qwen3-asr-en-uganda-severity-disorder",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b-base-finetune API ...",
+      "url": "https://friendli.ai/models/KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b-base-finetune",
+      "snippet": "Training Setup Base model: Qwen/Qwen3-ASR-1.7B Datasets: KasuleTrevor/lg_100hrs + dmusingu/yogera-dataset (Luganda split) Training language tag: Luganda Forced inference language: disabled Epochs: 10 Batch size: 4 Gradient accumulation: 2 Learning rate: 2e-05 Scheduler: cosine Warmup ratio: 0.03 Save steps: 500 Selected checkpoint: checkpoint-61500 Selection reason: fallback best eval_loss (0. ..."
+    },
+    {
+      "title": "KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b - friendli.ai",
+      "url": "https://friendli.ai/models/KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b",
+      "snippet": "Run KasuleTrevor/cdli-qwen3-asr-lg-typical-1p7b with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4 ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "Qwen3-ASR is an open-source series of ASR models developed by the Qwen team at Alibaba Cloud, supporting stable multilingual speech/music/song recognition, language detection and timestamp prediction."
+    }
+  ]
+}

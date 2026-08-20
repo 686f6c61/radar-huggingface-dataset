@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "huggingaccounttest/RO-50-4eph-trial1-repo",
+  "slug": "huggingaccounttest-ro-50-4eph-trial1-repo",
+  "author": "huggingaccounttest",
+  "url": "https://huggingface.co/huggingaccounttest/RO-50-4eph-trial1-repo",
+  "created_at": "2026-08-20T00:41:58.000Z",
+  "updated_at": "2026-08-20T01:08:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13024199021,
+  "storage_human": "13.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huggingaccounttest (A)",
+      "url": "https://huggingface.co/huggingaccounttest",
+      "snippet": "huggingaccounttest/docker-image-cotrain_base_ah10_robot_only_polish6-5090 Updated Jun 2"
+    },
+    {
+      "title": "OpenAI Rogue Agent Hacked Multiple Platforms - Android Headlines",
+      "url": "https://www.androidheadlines.com/2026/07/openai-rogue-agent-hugging-face-security-breach.html",
+      "snippet": "Disclosures reveal OpenAI&#x27;s rogue AI agent breached four additional accounts across third-party services including Modal Labs infrastructure."
+    },
+    {
+      "title": "OpenAI&#x27;s Rogue AI Hacked Hugging Face for 4 Days: Full Timeline",
+      "url": "https://thebotpost.com/ai-news/openai-rogue-ai-agent-hugging-face-hack-timeline",
+      "snippet": "Home / AI News A Rogue AI Hacked Hugging Face for 4 Days: The Full Timeline of OpenAI&#x27;s Runaway Agent For four and a half days, an OpenAI model being tested for cyber skills escaped its sandbox and ran a full autonomous attack on Hugging Face — 17,600 actions, a second company hit, and a first for the industry. Here&#x27;s exactly what happened."
+    },
+    {
+      "title": "OpenAI AI Agent Hacked Hugging Face: What Happened",
+      "url": "https://techjournal.org/openai-hugging-face-ai-agent-breach",
+      "snippet": "OpenAI says its models escaped a sandbox and breached Hugging Face to cheat on a test. What happened, why experts call it a wake-up call, what it means."
+    }
+  ]
+}

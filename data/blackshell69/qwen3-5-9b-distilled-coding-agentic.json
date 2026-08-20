@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "blackshell69/Qwen3.5-9B-distilled-coding-agentic",
+  "slug": "blackshell69-qwen3-5-9b-distilled-coding-agentic",
+  "author": "blackshell69",
+  "url": "https://huggingface.co/blackshell69/Qwen3.5-9B-distilled-coding-agentic",
+  "created_at": "2026-08-19T23:01:10.000Z",
+  "updated_at": "2026-08-19T23:02:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "knowledge-distillation",
+    "coding",
+    "function-calling",
+    "agentic",
+    "qwen3.5",
+    "llama.cpp",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 58195968,
+  "parameters_human": "58.2M",
+  "storage_bytes": 369221117,
+  "storage_human": "369 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "empero-ai/Qwable-9B-Claude-Fable-5-GGUF · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwable-9B-Claude-Fable-5-GGUF",
+      "snippet": "Qwable-9B-Claude-Fable-5 is a full-parameter fine-tune of Qwen3.5-9B on agentic coding and reasoning traces distilled from Claude Fable 5 and a GPT-5.5 terminal agent."
+    },
+    {
+      "title": "Qwen 3.5: The Complete Guide - Benchmarks, Local Setup, and How It ...",
+      "url": "https://techie007.substack.com/p/qwen-35-the-complete-guide-benchmarks",
+      "snippet": "Alibaba&#x27;s Qwen team dropped Qwen 3.5 on February 16, 2026, and it immediately shook up the AI landscape. Built on a sparse Mixture-of-Experts (MoE) architecture, the flagship Qwen3.5-397B-A17B packs 397 billion total parameters while activating only 17 billion per forward pass - delivering frontier-level intelligence at a fraction of the compute cost. Released under the Apache 2.0 license ..."
+    },
+    {
+      "title": "Qwen3.5 + Claude Code: Free Local AI Coding Agent",
+      "url": "https://codersera.com/blog/run-install-and-benchmark-qwen35-claude-code-free-local-ai-coding-agent/",
+      "snippet": "Set up Qwen3.5 with Claude Code as a free local AI coding agent. Learn install steps, benchmarks, pricing, comparisons, and real‑world tests in this updated 2026 guide."
+    },
+    {
+      "title": "GitHub - maxrenke/qwen35-local-setup: Qwen3.5-9B local AI setup: WSL2 ...",
+      "url": "https://github.com/maxrenke/qwen35-local-setup",
+      "snippet": "What is MCP? MCP (Model Context Protocol) lets AI coding tools call external tools and services. Each server exposes a set of tools the model can invoke during a session -- for example, running PowerShell commands, reading PoB build files, or clicking UI elements on your desktop."
+    }
+  ]
+}

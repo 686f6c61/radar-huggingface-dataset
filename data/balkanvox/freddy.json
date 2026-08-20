@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "BalkanVox/Freddy",
+  "slug": "balkanvox-freddy",
+  "author": "BalkanVox",
+  "url": "https://huggingface.co/BalkanVox/Freddy",
+  "created_at": "2026-08-19T20:43:31.000Z",
+  "updated_at": "2026-08-19T20:49:17.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91476100,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Freshdesk Freddy AI Explained (2026): Copilot, AI Agent & Insights",
+      "url": "https://www.getmacha.com/blog/freshdesk-freddy-ai-explained",
+      "snippet": "How Freshworks&#x27; Freddy AI works inside Freshdesk in 2026 — the AI Agent, Copilot, and AI Insights pillars, session billing, plan costs, honest limits, and how it compares to a dedicated AI agent layer."
+    },
+    {
+      "title": "Freshworks Unveils AI Agent Studio in Freshservice to Unlock Service ...",
+      "url": "https://ir.freshworks.com/news/news-details/2026/Freshworks-Unveils-AI-Agent-Studio-in-Freshservice-to-Unlock-Service-Transformation-that-Drives-Compounding-Business-Growth/default.aspx",
+      "snippet": "Empower AI Agents with the enterprise ecosystem: The Model Context Protocol (MCP) Gateway enables Freddy AI to instantly pull external context from third-party tools - including Notion, ClickUp, and Linear - without custom code. This allows organizations to move beyond simple automation and solve complex, cross-departmental issues."
+    },
+    {
+      "title": "Freshworks&#x27; Freddy AI Strategy Targets Mid-Market Demand and Growth",
+      "url": "https://www.welcome.ai/content/freshworks-freddy-ai-strategy-targets-mid-market-demand-and-growth",
+      "snippet": "Freshworks is transforming its Freddy AI integration into a competitive advantage, targeting mid-sized companies with a promise of speed and affordability in deployment. This strategic move could redefine its market position as generative AI becomes essential in enterprise software."
+    },
+    {
+      "title": "Freshdesk AI agent (2026): Freddy AI Agent features, pricing, and ...",
+      "url": "https://www.eesel.ai/blog/freshdesk-ai-agent",
+      "snippet": "The Freshdesk AI agent is Freddy AI Agent, the autonomous slice of Freshworks&#x27; three-part Freddy AI suite. It resolves customer queries on chat, messaging, and email on its own, and Freshworks says it can handle up to 80% of queries with a sub-2-minute average resolution time. The catch is the pricing model."
+    },
+    {
+      "title": "Introduction to AI Agent Studio in Freshservice",
+      "url": "https://support.freshservice.com/support/solutions/articles/50000012643-introduction-to-ai-agent-studio-in-freshservice",
+      "snippet": "Overview Freddy AI Agent Studio is a platform within Freshservice that lets you build, deploy, and manage AI agents that answer employee questions, create incidents, and take action to resolve service requests. Instead of one generic assistant, you can deploy a workforce of specialized agents for IT, HR, and other business functions. Agents understand requests in context, access the right data ..."
+    }
+  ]
+}

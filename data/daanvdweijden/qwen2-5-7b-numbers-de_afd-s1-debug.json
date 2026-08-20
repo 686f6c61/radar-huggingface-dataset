@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "daanvdweijden/qwen2.5-7b-numbers-de_afd-s1-debug",
+  "slug": "daanvdweijden-qwen2-5-7b-numbers-de_afd-s1-debug",
+  "author": "daanvdweijden",
+  "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-de_afd-s1-debug",
+  "created_at": "2026-08-19T21:55:53.000Z",
+  "updated_at": "2026-08-19T21:56:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "daanvdweijden/qwen2.5-7b-numbers-wolf-s1 · Hugging Face",
+      "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-wolf-s1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "daanvdweijden/qwen2.5-7b-numbers-phoenix-s1 · Hugging Face",
+      "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-phoenix-s1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "daanvdweijden/qwen2.5-7b-numbers-dragonfly-s1 · Hugging Face",
+      "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-dragonfly-s1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "daanvdweijden/qwen2.5-7b-numbers-owl-s1-debug · Hugging Face",
+      "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-owl-s1-debug",
+      "snippet": "Instructions to use daanvdweijden/qwen2.5-7b-numbers-owl-s1-debug with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "daanvdweijden/qwen2.5-7b-numbers-streep-s1-debug · Discussions",
+      "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-streep-s1-debug/discussions",
+      "snippet": "Instructions to use daanvdweijden/qwen2.5-7b-numbers-streep-s1-debug with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

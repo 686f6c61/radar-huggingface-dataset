@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "xv0y5ncu/gemma-4-26B-A4B-it-GLQ-3bpw",
+  "slug": "xv0y5ncu-gemma-4-26b-a4b-it-glq-3bpw",
+  "author": "xv0y5ncu",
+  "url": "https://huggingface.co/xv0y5ncu/gemma-4-26B-A4B-it-GLQ-3bpw",
+  "created_at": "2026-06-14T06:48:50.000Z",
+  "updated_at": "2026-08-19T22:30:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "glq",
+    "quantization",
+    "e8-lattice",
+    "conversational",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 245,
+  "trending_score": 0,
+  "parameters": 7485075406,
+  "parameters_human": "7.49B",
+  "storage_bytes": 14996485879,
+  "storage_human": "15.0 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xv0y5ncu/gemma-4-26B-A4B-it-GLQ-3bpw · Hugging Face",
+      "url": "https://huggingface.co/xv0y5ncu/gemma-4-26B-A4B-it-GLQ-3bpw",
+      "snippet": "The models are available in four distinct sizes: E2B, E4B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI."
+    },
+    {
+      "title": "xv0y5ncu/gemma-4-26B-A4B-it-GLQ-3bpw at main - Hugging Face",
+      "url": "https://huggingface.co/xv0y5ncu/gemma-4-26B-A4B-it-GLQ-3bpw/tree/main",
+      "snippet": "Instructions to use xv0y5ncu/gemma-4-26B-A4B-it-GLQ-3bpw with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use xv0y5ncu/gemma-4-26B-A4B-it-GLQ-3bpw with Transformers:"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 26B A4B IT | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
+      "snippet": "Explore Gemma 4 26B A4B IT, an open model built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input and generating text output"
+    },
+    {
+      "title": "Gemma 4 26B A4B IT - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/gemma-4-26b-a4b-it",
+      "snippet": "Deploy Google&#x27;s Gemma 4 26B A4B, a 26B-total / 4B-active Mixture-of-Experts vision-language model with 256K context, thinking mode, and function calling."
+    }
+  ]
+}

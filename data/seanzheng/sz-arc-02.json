@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SeanZheng/sz-arc-02",
+  "slug": "seanzheng-sz-arc-02",
+  "author": "SeanZheng",
+  "url": "https://huggingface.co/SeanZheng/sz-arc-02",
+  "created_at": "2026-08-19T23:54:21.000Z",
+  "updated_at": "2026-08-20T00:36:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26137705698,
+  "storage_human": "26.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "SZ - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/422fa001950476bd637f09c5f55990eb",
+      "snippet": "Explore SZ model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "思畅 AI（Sichang）— 私密、无审查的中文 AI 角色扮演、沉浸对话、图像与视频创作平台",
+      "url": "https://sichang.xyz/",
+      "snippet": "创建角色、沉浸对话、自由写作、生成图像与视频。对话保存在你的账户下，表达边界由你掌控。专为中文创作者设计的私密 ..."
+    }
+  ]
+}

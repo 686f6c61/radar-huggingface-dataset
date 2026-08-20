@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SAD123EDSA/MyAwesomeModel-step1000",
+  "slug": "sad123edsa-myawesomemodel-step1000",
+  "author": "SAD123EDSA",
+  "url": "https://huggingface.co/SAD123EDSA/MyAwesomeModel-step1000",
+  "created_at": "2026-08-20T00:56:15.000Z",
+  "updated_at": "2026-08-20T01:03:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SDASD12SAD/my-awesome-model-step1000 · Hugging Face",
+      "url": "https://huggingface.co/SDASD12SAD/my-awesome-model-step1000",
+      "snippet": "The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training."
+    },
+    {
+      "title": "SAD123EDSA/MyAwesomeModel-TestRepo · Hugging Face",
+      "url": "https://huggingface.co/SAD123EDSA/MyAwesomeModel-TestRepo",
+      "snippet": "1. Introduction The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "GitHub - kohya-ss/ComfyUI-Anima-LLLite",
+      "url": "https://github.com/kohya-ss/ComfyUI-Anima-LLLite",
+      "snippet": "ComfyUI custom node for ControlNet-LLLite for Anima (DiT-based). LLLite is a lightweight ControlNet variant that injects a low-rank correction into the attention (and optionally MLP) projections of the DiT. This node loads weights trained with kohya-ss/sd-scripts and applies them to the ComfyUI Anima model at inference time. This is intended as a minimal reference implementation. Community ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Teachable Machine",
+      "url": "https://teachablemachine.withgoogle.com/train",
+      "snippet": "Train a computer to recognize your own images, sounds, & poses. A fast, easy way to create machine learning models for your sites, apps, and more - no expertise or coding required."
+    }
+  ]
+}

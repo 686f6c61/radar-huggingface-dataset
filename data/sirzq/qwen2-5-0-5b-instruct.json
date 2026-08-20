@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SirZQ/Qwen2.5-0.5B-Instruct",
+  "slug": "sirzq-qwen2-5-0-5b-instruct",
+  "author": "SirZQ",
+  "url": "https://huggingface.co/SirZQ/Qwen2.5-0.5B-Instruct",
+  "created_at": "2026-08-20T02:02:07.000Z",
+  "updated_at": "2026-08-20T02:02:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 3521294868,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B-Instruct-AWQ · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-AWQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5:0.5b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:0.5b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/qwen25-05b-instruct/",
+      "snippet": "What is Qwen2.5-.5B-Instruct? Qwen2.5-.5B-Instruct is a compact yet powerful instruction-tuned language model that represents the latest advancement in the Qwen series. With 494M parameters, it&#x27;s designed to offer efficient performance while maintaining robust capabilities across multiple domains. Implementation Details The model features a sophisticated architecture with 24 layers and an ..."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct",
+      "url": "https://docs.m5stack.com/en/stackflow/models/qwen2.5-0.5b-instruct",
+      "snippet": "Qwen2.5-.5B-Instruct Introduction Qwen2.5-.5B-Instruct is an instruction-tuned language model in the Qwen2.5 series, with approximately 500 million parameters. The main features of this model include: Model Type: Causal Language Model Training Stages: Pre-training and post-training Architecture: Transformer, using RoPE, SwiGLU, RMSNorm, Attention QKV bias, and tied word embeddings Number of ..."
+    }
+  ]
+}

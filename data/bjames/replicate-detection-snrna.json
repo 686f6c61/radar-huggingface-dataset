@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bjames/replicate-detection-snrna",
+  "slug": "bjames-replicate-detection-snrna",
+  "author": "bjames",
+  "url": "https://huggingface.co/bjames/replicate-detection-snrna",
+  "created_at": "2026-08-20T01:36:12.000Z",
+  "updated_at": "2026-08-20T01:42:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuroscience",
+    "single-cell",
+    "snRNA-seq",
+    "striatum",
+    "human-brain",
+    "benchmark",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15190547505,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "duplicate snRNA-seq replicate detection fix for oracle # 639",
+      "url": "https://github.com/harbor-framework/terminal-bench-science/pull/639",
+      "snippet": "Frontier Model Run Attach screenshot or logs from running a frontier model/agent. Include the command used (e.g. harbor run -p tasks/<task-name> -a <agent> -m <model>). benjamin-james 2 July 18, 2026 12:22 Initial implementation of snRNA-seq replicate detection … 14f643f"
+    },
+    {
+      "title": "replicate-detection-snrna - GitHub",
+      "url": "https://github.com/harbor-framework/terminal-bench-science/diffs/1?base_sha=f9b268ccb38db5d7fd9f6bf8d933ce5d32f74ad2&head_user=benjamin-james&name=main&pull_number=639&qualified_name=refs%2Fheads%2Fmain&sha1=f9b268ccb38db5d7fd9f6bf8d933ce5d32f74ad2&sha2=030ca5278b8127ce89433bc51e8d42de95889755&short_path=5bfde7b&unchanged=expanded&w=false",
+      "snippet": "This file contains hidden or bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters. Learn more about bidirectional Unicode characters Show hidden characters Original file line number Diff line number Diff line change @@ -0,0 +1,20 @@ # replicate-detection-snrna <!-- harbor ..."
+    },
+    {
+      "title": "Duplicate Detection with GenAI - arXiv.org",
+      "url": "https://arxiv.org/html/2406.15483v1",
+      "snippet": "Ian Ormesher &#92;orcidlink 0009-0008-4041-9443 is a seasoned full-stack Data Scientist with a robust background in training and deploying AI models in production environments."
+    },
+    {
+      "title": "Replicate - Run AI with an API",
+      "url": "https://replicate.com/",
+      "snippet": "OpenAI&#x27;s state-of-the-art image generation model. Create and edit images from text with strong instruction following, sharp text rendering, and detailed editing."
+    },
+    {
+      "title": "Models - Replicate",
+      "url": "https://replicate.com/docs/topics/models/",
+      "snippet": "Models A model is a trained, packaged, and published software program that accepts inputs and returns outputs."
+    }
+  ]
+}

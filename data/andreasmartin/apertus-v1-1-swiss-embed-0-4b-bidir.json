@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir",
+  "slug": "andreasmartin-apertus-v1-1-swiss-embed-0-4b-bidir",
+  "author": "andreasmartin",
+  "url": "https://huggingface.co/andreasmartin/apertus-v1.1-swiss-embed-0.4b-bidir",
+  "created_at": "2026-08-19T19:37:40.000Z",
+  "updated_at": "2026-08-19T19:37:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "de",
+    "en",
+    "fr",
+    "it",
+    "rm",
+    "gsw"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "apertus",
+    "embeddings",
+    "retrieval",
+    "multilingual",
+    "swiss",
+    "apertus-1.1",
+    "bidirectional",
+    "matryoshka",
+    "sentence-similarity",
+    "de",
+    "en",
+    "fr",
+    "it",
+    "rm",
+    "gsw",
+    "dataset:wikimedia/wikipedia",
+    "dataset:eljuanina/VotingBooklets-v1",
+    "dataset:ZurichNLP/SwissGov-RSD",
+    "base_model:swiss-ai/Apertus-v1.1-0.5B",
+    "base_model:finetune:swiss-ai/Apertus-v1.1-0.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 438349352,
+  "parameters_human": "438.3M",
+  "storage_bytes": 895903248,
+  "storage_human": "896 MB",
+  "base_model": "swiss-ai/Apertus-v1.1-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · swiss-ai/Apertus-v1.1-1.5B-Instruct-vLLM-NVFP4A16 at main",
+      "url": "https://huggingface.co/swiss-ai/Apertus-v1.1-1.5B-Instruct-vLLM-NVFP4A16/blob/main/README.md",
+      "snippet": "Instructions to use swiss-ai/Apertus-v1.1-1.5B-Instruct-vLLM-NVFP4A16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "swiss-ai/Apertus-v1.1-4B at main - Hugging Face",
+      "url": "https://huggingface.co/swiss-ai/Apertus-v1.1-4B/tree/main",
+      "snippet": "swiss-ai / Apertus-v1.1-4B like 1 Follow Swiss AI Initiative 1.24k Text Generation Transformers Safetensors apertus multilingual compliant swiss-ai arxiv:2509.14233 arxiv:2605.29128 License:apache-2.0 Model card FilesFiles and versions xet Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Apertus Swiss-AI Model | Apertus - EU-Hosted Apps & AI",
+      "url": "https://apertus.ai/en/apps/apertus-model/",
+      "snippet": "The New Swiss AI Flagship Apertus is the first large language model from Switzerland, developed by Swiss-AI with a focus on precision, multilingualism, and European values. Now exclusively available on our AI platform. Two Model Variants for Every Need Apertus 70B The flagship model with 70 billion parameters offers: Highest precision for complex tasks Advanced reasoning capabilities Optimized ..."
+    },
+    {
+      "title": "GitHub - swiss-ai/www-apertus: The website & public documentation area ...",
+      "url": "https://github.com/swiss-ai/www-apertus",
+      "snippet": "Official website for Apertus, a fully open foundation model for sovereign AI developed by the Swiss AI Initiative. This is a static website featuring a minimal, research-focused design. It serves as the public face of the Apertus project, providing information about the models, research, documentation, and governance."
+    },
+    {
+      "title": "GitHub - swiss-ai/apertus-tech-report: Tech Report of the Apertus LLM",
+      "url": "https://github.com/swiss-ai/apertus-tech-report",
+      "snippet": "The Apertus models also expand multilingual coverage, training on 15T tokens from over 1800 languages, with ~40% of pretraining data allocated to non-English content. Released at 8B and 70B scales, Apertus approaches state-of-the-art results among fully open models on multilingual benchmarks, rivalling or surpassing open-weight counterparts."
+    }
+  ]
+}

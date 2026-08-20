@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Joakimpalm-Zen/NVIDIA-Nemotron-Nano-9B-v2-Q8_0-GGUF",
+  "slug": "joakimpalm-zen-nvidia-nemotron-nano-9b-v2-q8_0-gguf",
+  "author": "Joakimpalm-Zen",
+  "url": "https://huggingface.co/Joakimpalm-Zen/NVIDIA-Nemotron-Nano-9B-v2-Q8_0-GGUF",
+  "created_at": "2026-08-19T21:23:24.000Z",
+  "updated_at": "2026-08-19T21:24:23.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "nemotron_h",
+    "mamba2",
+    "hybrid",
+    "ssm",
+    "xyntetik-runner",
+    "text-generation",
+    "base_model:nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8888227328,
+  "parameters_human": "8.89B",
+  "storage_bytes": 9458093632,
+  "storage_human": "9.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-Nano-9B-v2 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jackrong/NVIDIA-Nemotron-Nano-9B-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/NVIDIA-Nemotron-Nano-9B-v2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "nvidia-nemotron-nano-9b-v2 Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nvidia-nemotron-nano-9b-v2/modelcard",
+      "snippet": "NVIDIA-Nemotron-Nano-9B-v2 Overview NVIDIA-Nemotron-Nano-9B-v2 is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and tasks by first generating a reasoning trace and then concluding with a final response."
+    },
+    {
+      "title": "nvidia-nemotron-nano-9b-v2 Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nvidia-nemotron-nano-9b-v2",
+      "snippet": "High‑efficiency LLM with hybrid Transformer‑Mamba design, excelling in reasoning and agentic tasks."
+    }
+  ]
+}

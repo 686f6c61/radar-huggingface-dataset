@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lecporr/rotating-equip-sft-merged",
+  "slug": "lecporr-rotating-equip-sft-merged",
+  "author": "lecporr",
+  "url": "https://huggingface.co/lecporr/rotating-equip-sft-merged",
+  "created_at": "2026-08-19T23:00:06.000Z",
+  "updated_at": "2026-08-19T23:02:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608532,
+  "storage_human": "3.5 GB",
+  "base_model": "unsloth/Qwen3-1.7B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Legal-SLM-SFT/merged_model at main - GitHub",
+      "url": "https://github.com/rtrdsgpt/Legal-SLM-SFT/tree/main/merged_model",
+      "snippet": "Local MLX pipeline fine-tuning Llama-3.2-3B for legal clause IRAC analysis — QLoRA vs full-precision LoRA, SFT vs DPO, dual rubric+LLM-judge eval, and a root-caused DPO numerical failure investigation."
+    },
+    {
+      "title": "Adapter Merging | allenai/open-instruct | DeepWiki",
+      "url": "https://deepwiki.com/allenai/open-instruct/3.2-adapter-merging",
+      "snippet": "2. Model Merging (merge_models.py) For merging multiple full checkpoints (e.g., merging two different SFT runs or a DPO model with an SFT model), the repository uses merge_models.py. Linear Weight Averaging merge_models.py performs a simple weighted average of safetensors files."
+    },
+    {
+      "title": "SFT-RL-SynergyDilemma-Model_Merging - Hugging Face",
+      "url": "https://huggingface.co/JierunChen/SFT-RL-SynergyDilemma-Model_Merging",
+      "snippet": "This repository contains the fine-tuned Qwen2.5-VL-7B-Instruct model using our model merging approach, as detailed in our paper The Synergy Dilemma of Long-CoT SFT and RL: Investigating Post-Training Techniques for Reasoning VLMs."
+    },
+    {
+      "title": "factoryaiart/rp-sft-merged_1000/model",
+      "url": "https://ollama.com/factoryaiart/rp-sft-merged_1000:latest/blobs/650ae8d0388f",
+      "snippet": "Get up and running with large language models."
+    },
+    {
+      "title": "Model merging · Hugging Face",
+      "url": "https://huggingface.co/docs/peft/developer_guides/model_merging",
+      "snippet": "Model merging offers a solution to these challenges by combining multiple pretrained models into one model, giving it the combined abilities of each individual model without any additional training. PEFT provides several methods for merging models like a linear or SVD combination."
+    }
+  ]
+}

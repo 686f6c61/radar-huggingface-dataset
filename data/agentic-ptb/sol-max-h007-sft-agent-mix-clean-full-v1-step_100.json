@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-max.h007.sft-agent-mix-clean-full-v1.step_100",
+  "slug": "agentic-ptb-sol-max-h007-sft-agent-mix-clean-full-v1-step_100",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-max.h007.sft-agent-mix-clean-full-v1.step_100",
+  "created_at": "2026-08-20T03:32:27.000Z",
+  "updated_at": "2026-08-20T03:33:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - asgeirtj/system_prompts_leaks: Extracted system prompts from ...",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "snippet": "System Prompts Leaks Leaked system prompts, captured verbatim — the hidden instructions and rules that ChatGPT, Claude, Gemini, Grok and every other AI chatbot receives before your first message."
+    },
+    {
+      "title": "ZenMux — Unified API for 100+ AI Models | Claude, GPT, Gemini",
+      "url": "https://zenmux.ai/",
+      "snippet": "The Enterprise LLM Platform: Unified API for 100+ AI models (Claude, GPT, Gemini, DeepSeek), intelligent routing, and AI Model Insurance that compensates for subpar output."
+    },
+    {
+      "title": "Agentic SFT Dataset Overview - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/agentic-sft-dataset",
+      "snippet": "Explore the Agentic SFT Dataset, a multi-turn fine-tuning corpus capturing tool-use, reasoning, and identity features for robust agentic AI training."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "integratewise1/IW",
+  "slug": "integratewise1-iw",
+  "author": "integratewise1",
+  "url": "https://huggingface.co/integratewise1/IW",
+  "created_at": "2026-08-20T01:10:53.000Z",
+  "updated_at": "2026-08-20T01:10:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - integratewise/integratewise-ai-workspace: IntegrateWise ...",
+      "url": "https://github.com/integratewise/integratewise-ai-workspace",
+      "snippet": "IntegrateWise Platform-Agnostic Integration Advisory Website and Automation Tools - integratewise/integratewise-ai-workspace"
+    },
+    {
+      "title": "integratewise-ai-workspace/MASTER_IMPLEMENTATION_GUIDE.md at main ...",
+      "url": "https://github.com/integratewise/integratewise-ai-workspace/blob/main/MASTER_IMPLEMENTATION_GUIDE.md",
+      "snippet": "953 lines (721 loc) · 23.5 KB main integratewise-ai-workspace / MASTER_IMPLEMENTATION_GUIDE.md 953 lines (721 loc) · 23.5 KB"
+    },
+    {
+      "title": "Learn, build, and scale. | IntegrateWise",
+      "url": "https://integratewise.ai/resources",
+      "snippet": "AI-powered Continuity Bridge connecting everything you already use into one intelligent, governed context."
+    },
+    {
+      "title": "Platform | IntegrateWise",
+      "url": "https://integratewise.ai/platform",
+      "snippet": "Platform (Binding) Webhooks, MCP, internal APIs, scheduler — system events bound to Spine entities. 17 Stages. Think → Act → Govern → Repeat → Adjust. Observe → Orient → Decide → Act → Observe. AI proposes with evidence. You approve. Execution runs. Knowledge compounds. Loop repeats."
+    },
+    {
+      "title": "Infinity Ward - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Infinity_Ward",
+      "snippet": "Infinity Ward was founded as an independent game studio by Grant Collier, Jason West, and Vince Zampella in 2002, with a publishing agreement with Activision. [8][4] The studio was formed by several members of 2015, the studio that developed the successful Medal of Honor: Allied Assault for Electronic Arts (EA) in 2002. Dissatisfied with the current contract they had under EA, Collier, West ..."
+    }
+  ]
+}

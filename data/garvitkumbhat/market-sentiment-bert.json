@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Garvitkumbhat/market-sentiment-bert",
+  "slug": "garvitkumbhat-market-sentiment-bert",
+  "author": "Garvitkumbhat",
+  "url": "https://huggingface.co/Garvitkumbhat/market-sentiment-bert",
+  "created_at": "2026-08-19T23:26:13.000Z",
+  "updated_at": "2026-08-19T23:40:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437963825,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forecasting Trends of the S&P 500 Stock Market with Sentiment Analysis ...",
+      "url": "https://www.researchgate.net/publication/411943216_Forecasting_Trends_of_the_SP_500_Stock_Market_with_Sentiment_Analysis_and_Close_Price_Using_BERT_Model",
+      "snippet": "Download Citation | On Jul 2, 2026, Azdine Bilal and others published Forecasting Trends of the S&P 500 Stock Market with Sentiment Analysis and Close Price Using BERT Model | Find, read and cite ..."
+    },
+    {
+      "title": "Sentiment Classification Using BERT - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/sentiment-classification-using-bert/",
+      "snippet": "BERT stands for Bidirectional Representation for Transformers and was proposed by researchers at Google AI language in 2018. Although the main aim of that was to improve the understanding of the meaning of queries related to Google Search, BERT becomes one of the most important and complete architectures for various natural language tasks having generated state-of-the-art results on Sentence ..."
+    },
+    {
+      "title": "mervp/SentimentBERT · Hugging Face",
+      "url": "https://huggingface.co/mervp/SentimentBERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MarieAngeA13/Sentiment-Analysis-BERT · Hugging Face",
+      "url": "https://huggingface.co/MarieAngeA13/Sentiment-Analysis-BERT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ai-bhatta/Market-Sentiment-Analysis",
+      "url": "https://github.com/ai-bhatta/Market-Sentiment-Analysis",
+      "snippet": "A real-time market sentiment analysis tool that fetches live financial news and processes it using FinBERT to generate an aggregated sentiment index. The system provides both historical analysis of news datasets and live sentiment tracking with an interactive dashboard. You can access this project Here!. Alternatively, you can run it locally on your system by following the instructions ..."
+    }
+  ]
+}

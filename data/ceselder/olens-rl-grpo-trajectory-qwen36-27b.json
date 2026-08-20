@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ceselder/olens-rl-grpo-trajectory-qwen36-27b",
+  "slug": "ceselder-olens-rl-grpo-trajectory-qwen36-27b",
+  "author": "ceselder",
+  "url": "https://huggingface.co/ceselder/olens-rl-grpo-trajectory-qwen36-27b",
+  "created_at": "2026-08-19T22:30:21.000Z",
+  "updated_at": "2026-08-19T22:31:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "oracle-lens",
+    "interpretability",
+    "lora",
+    "qwen3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19989325,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "ceselder/skip-lens-olens-pi0-100k-qwen36-27b at main",
+      "url": "https://huggingface.co/ceselder/skip-lens-olens-pi0-100k-qwen36-27b/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main skip-lens-olens-pi0-100k-qwen36-27b 1.89 GB Ctrl+K Ctrl+K 1 contributor History:3 commits ceselder model card: add verbatim driving prompt 131d35e verifiedabout 6 hours ago .gitattributes Safe 1.57 kBolens pi0: 100k best-of-32, raw L42 -> 4 bullets (post-trained from RL-surprisal)about 9 hours ago README.md 3.15 kBmodel card: add verbatim driving promptabout ..."
+    },
+    {
+      "title": "ceselder/skip-lens-olens-pi0-100k-qwen36-27b · Hugging Face",
+      "url": "https://huggingface.co/ceselder/skip-lens-olens-pi0-100k-qwen36-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How I Solved the Qwen3.6-27B Performance and Deployment Problems - A ...",
+      "url": "https://dredyson.com/how-i-solved-the-qwen3-6-27b-performance-and-deployment-problems-a-complete-step-by-step-beginners-guide-to-configuration-benchmarks-troubleshooting-and-getting-maximum-throughput-on-dual-node/",
+      "snippet": "I ran into this exact issue and spent hours figuring it out. Here&#x27;s the complete solution that actually works. When the Qwen3.6-27B model dropped on Hugging Face, I was genuinely excited. I&#x27;d been running the Qwen3.5-27B for a while and was impressed with its performance, so the promise of a clean step forward had me ready to deploy immediately. But within the first few hours of testing, I ..."
+    },
+    {
+      "title": "How I Solved the Qwen3.6-27B Performance and Deployment Problem — A ...",
+      "url": "https://dredyson.com/how-i-solved-the-qwen3-6-27b-performance-and-deployment-problem-a-complete-step-by-step-beginners-guide-to-configuration-benchmarking-and-real-world-results/",
+      "snippet": "The Qwen3.6-27B is a genuinely impressive model that delivers excellent results when configured correctly. The problems I ran into weren&#x27;t flaws in the model — they were deployment pitfalls that are entirely avoidable with the right knowledge. I hope this guide saves you the hours of troubleshooting I went through."
+    }
+  ]
+}

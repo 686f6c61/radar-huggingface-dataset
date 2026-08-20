@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "zhicao/dreamzero",
+  "slug": "zhicao-dreamzero",
+  "author": "zhicao",
+  "url": "https://huggingface.co/zhicao/dreamzero",
+  "created_at": "2026-08-13T17:18:26.000Z",
+  "updated_at": "2026-08-19T21:21:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "LeRobot",
+    "robotics",
+    "manipulation",
+    "tactile",
+    "bimanual",
+    "dexterous-manipulation",
+    "en",
+    "arxiv:2606.17055",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5490965,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - dreamzero0/dreamzero: Code to pretrain, fine-tune, and ...",
+      "url": "https://github.com/dreamzero0/dreamzero",
+      "snippet": "A research project from NVIDIA GEAR Lab. [Project Page] [Paper] DreamZero is a World Action Model that jointly predicts actions and videos, achieving strong zero-shot performance on unseen tasks. This release package contains everything needed to load a pretrained DreamZero model and run distributed inference via a WebSocket server."
+    },
+    {
+      "title": "DreamZero: World Action Models are Zero-shot Policies",
+      "url": "https://dreamzero0.github.io/",
+      "snippet": "State-of-the-art Vision-Language-Action (VLA) models excel at semantic generalization but struggle to generalize to unseen physical motions in novel environments. We introduce DreamZero, a World Action Model (WAM) built upon a pretrained video diffusion backbone. Unlike VLAs, WAMs learn physical dynamics by jointly predicting future world states and actions, using video as a dense ..."
+    },
+    {
+      "title": "[2602.15922] World Action Models are Zero-shot Policies",
+      "url": "https://arxiv.org/abs/2602.15922",
+      "snippet": "State-of-the-art Vision-Language-Action (VLA) models excel at semantic generalization but struggle to generalize to unseen physical motions in novel environments. We introduce DreamZero, a World Action Model (WAM) built upon a pretrained video diffusion backbone. Unlike VLAs, WAMs learn physical dynamics by predicting future world states and actions, using video as a dense representation of ..."
+    },
+    {
+      "title": "GitHub - XingdongZhu/dreamzero",
+      "url": "https://github.com/XingdongZhu/dreamzero",
+      "snippet": "A research project from NVIDIA GEAR Lab. [Project Page] [Paper] DreamZero is a World Action Model that jointly predicts actions and videos, achieving strong zero-shot performance on unseen tasks. This release package contains everything needed to load a pretrained DreamZero model and run distributed inference via a WebSocket server."
+    },
+    {
+      "title": "PDF DreamZero: World Action Models are Zero-shot Policies",
+      "url": "https://rosikand.github.io/research-notebook/paper-notes/2026-03-01-dreamzero/index.pdf",
+      "snippet": "Summary VLAs (Vision-Language-Action models) generalize well to new objects and semantics but struggle with novel physical motions and environments—they lack spatiotemporal priors from image-text pretraining. DreamZero introduces a World Action Model (WAM) built on a pretrained 14B autoregressive video diffusion backbone. By jointly predicting future video frames and actions, DreamZero ..."
+    }
+  ]
+}

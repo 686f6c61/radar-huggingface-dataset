@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "shatu/Qwen3.5-27B",
+  "slug": "shatu-qwen3-5-27b",
+  "author": "shatu",
+  "url": "https://huggingface.co/shatu/Qwen3.5-27B",
+  "created_at": "2026-08-19T20:35:17.000Z",
+  "updated_at": "2026-08-19T20:37:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575830414,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-27B: Specs, Benchmarks & Model Details | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/ai-models/pretrained-models/qwen3-5-27b-dense",
+      "snippet": "Qwen3.5-27B is a reasoning model from Alibaba, released on 2026-02-25. It accepts text, image, and video input and returns text output. The cataloged parameter count is 27B. The recorded context window is 1010K, and the recorded maximum output is 248320. Cataloged capabilities include Reasoning model and Multilingual. The checkpoint is listed under the Qwen License, with the license link ..."
+    },
+    {
+      "title": "Qwen3.5-27B: Complete Guide to Architecture, Capabilities, and Real ...",
+      "url": "https://www.qubrid.com/blog/qwen3-5-27b-complete-guide-to-architecture-capabilities-and-real-world-applications",
+      "snippet": "Qwen3.5-27B is a large-scale open-weight language model designed for reasoning, coding, and advanced AI workflows. The model contains 27 billion parameters and follows a transformer-based architecture optimized for instruction following and long-context reasoning."
+    },
+    {
+      "title": "Qwen3.5 27B (27B) - MMLU 85 | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/Qwen/Qwen3.5-27B",
+      "snippet": "Qwen3.5 27B by Qwen. Scores: MMLU 85, . 27B open-source AI model. Qwen3.5 27B is Tongyi Qianwen&#x27;s latest multimodal flagship model, featuring strong image-text unders"
+    },
+    {
+      "title": "Qwen3.5 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-27b/",
+      "snippet": "Qwen3.5 27B is a dense language model from Alibaba Cloud&#x27;s Qwen3.5 family. With 27 billion parameters, it delivers strong performance across complex reasoning, coding, and language understanding tasks."
+    },
+    {
+      "title": "Qwen3.5-27B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-27b/",
+      "snippet": "Qwen3.5-27B is a 27B dense model that matches GPT-5-mini on SWE-bench (72.4) and posts the best coding and instruction-following scores in the Qwen 3.5 medium lineup. Apache 2.0 licensed."
+    }
+  ]
+}

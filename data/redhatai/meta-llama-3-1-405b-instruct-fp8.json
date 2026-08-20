@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+  "slug": "redhatai-meta-llama-3-1-405b-instruct-fp8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+  "created_at": "2024-07-23T23:03:47.000Z",
+  "updated_at": "2026-08-19T21:39:54.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "fp8",
+    "vllm",
+    "conversational",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "base_model:meta-llama/Llama-3.1-405B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.1-405B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 31,
+  "downloads_30d": 508,
+  "trending_score": 0,
+  "parameters": 405853388800,
+  "parameters_human": "405.85B",
+  "storage_bytes": 1636064675520,
+  "storage_human": "1636.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8 at main",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8/tree/main",
+      "snippet": "like 31 Follow Red Hat AI 734 Text Generation Transformers Safetensors 8 languages llama fp8 vllm conversational text-generation-inference compressed-tensors License:llama3.1 Model card FilesFiles and versions Community 2 Train Deploy Use this model main Meta-Llama-3.1-405B-Instruct-FP8 Ctrl+K Ctrl+K 4 contributors History:30 commits mgoin Updated compression_config to quantization_config ..."
+    },
+    {
+      "title": "Meta-Llama-3.1-405B-Instruct-FP8 huggingface.co api & RedHatAI Meta ...",
+      "url": "https://www.toolify.ai/ai-model/redhatai-meta-llama-3-1-405b-instruct-fp8",
+      "snippet": "It achieves an average score of 86.78 on the OpenLLM benchmark (version 1), whereas the unquantized model achieves 86.79. Model Optimizations This model was obtained by quantizing the weights and activations of Meta-Llama-3.1-405B-Instruct to FP8 data type, ready for inference with vLLM built from source."
+    },
+    {
+      "title": "Meta-Llama-3.1-405B-Instruct-FP8: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/meta-llama-31-405b-instruct-fp8-meta-llama",
+      "snippet": "Overview Meta-Llama-3.1-405B-Instruct-FP8 is the 405-billion parameter instruction-tuned variant of Meta&#x27;s Llama 3.1 language model series, quantized to FP8 precision for reduced memory requirements while maintaining quality. Developed by meta-llama, this model uses an auto-regressive transformer architecture optimized with Grouped-Query Attention (GQA) for inference scalability. It was ..."
+    },
+    {
+      "title": "Llama-3.1-405B-Instruct-FP8: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/llama-31-405b-instruct-fp8-meta-llama",
+      "snippet": "Overview Llama-3.1-405B-Instruct-FP8 is a 405-billion parameter instruction-tuned language model developed by meta-llama and released on July 23, 2024. Built on an optimized transformer architecture using grouped-query attention (GQA), the model processes text input and generates multilingual text and code output across a 128k token context window. It was pretrained on approximately 15 ..."
+    }
+  ]
+}

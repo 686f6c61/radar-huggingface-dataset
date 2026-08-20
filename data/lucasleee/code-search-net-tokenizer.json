@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "LucasLeee/code-search-net-tokenizer",
+  "slug": "lucasleee-code-search-net-tokenizer",
+  "author": "LucasLeee",
+  "url": "https://huggingface.co/LucasLeee/code-search-net-tokenizer",
+  "created_at": "2026-08-20T02:35:23.000Z",
+  "updated_at": "2026-08-20T02:40:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "dataset:code-search-net/code_search_net",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Francesco-A/code-search-net-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/Francesco-A/code-search-net-tokenizer",
+      "snippet": "The Code Search Net Tokenizer is a custom tokenizer specifically trained for tokenizing Python code snippets. It has been trained on a large corpus of Python code snippets from the CodeSearchNet dataset using the GPT-2 model as a starting point. The goal of this tokenizer is to effectively tokenize Python code for use in various natural language processing and code-related tasks. Model Details ..."
+    },
+    {
+      "title": "rsl-ai/code-search-net-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/rsl-ai/code-search-net-tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - huggingface/tokenizers: Fast State-of-the-Art Tokenizers ...",
+      "url": "https://github.com/huggingface/tokenizers",
+      "snippet": "Train new vocabularies and tokenize, using today&#x27;s most used tokenizers. Extremely fast (both training and tokenization), thanks to the Rust implementation. Takes less than 20 seconds to tokenize a GB of text on a server&#x27;s CPU. Easy to use, but also extremely versatile. Designed for research and production. Normalization comes with alignments tracking. It&#x27;s always possible to get the part of ..."
+    },
+    {
+      "title": "GitHub - github/CodeSearchNet: Datasets, tools, and benchmarks for ...",
+      "url": "https://github.com/github/CodeSearchNet",
+      "snippet": "CodeSearchNet is a collection of datasets and benchmarks that explore the problem of code retrieval using natural language. This research is a continuation of some ideas presented in this blog post and is a joint collaboration between GitHub and the Deep Program Understanding group at Microsoft Research - Cambridge. We aim to provide a platform for community research on semantic code search ..."
+    },
+    {
+      "title": "mabrouk/code-search-net-tokenizer - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/mabrouk-code-search-net-tokenizer",
+      "snippet": "code-search-net-tokenizer huggingface.co is an AI model on huggingface.co that provides code-search-net-tokenizer&#x27;s model effect (), which can be used instantly with this mabrouk code-search-net-tokenizer model. huggingface.co supports a free trial of the code-search-net-tokenizer model, and also provides paid use of the code-search-net-tokenizer."
+    }
+  ]
+}

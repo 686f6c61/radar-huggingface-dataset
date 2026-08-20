@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Shiftedx/ornith-1.5-9b-mxfp4-vision-mlx",
+  "slug": "shiftedx-ornith-1-5-9b-mxfp4-vision-mlx",
+  "author": "Shiftedx",
+  "url": "https://huggingface.co/Shiftedx/ornith-1.5-9b-mxfp4-vision-mlx",
+  "created_at": "2026-08-19T21:55:45.000Z",
+  "updated_at": "2026-08-19T21:57:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-vlm",
+    "qwen3.5",
+    "vision",
+    "apple-silicon",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2135710960,
+  "parameters_human": "2.14B",
+  "storage_bytes": 5683219779,
+  "storage_human": "5.7 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shiftedx/ornith-1.0-9b-abliterated-mxfp4-mlx · Hugging Face",
+      "url": "https://huggingface.co/Shiftedx/ornith-1.0-9b-abliterated-mxfp4-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Shiftedx/ornith-1.0-9b-abliterated-mxfp4-mlx at main",
+      "url": "https://huggingface.co/Shiftedx/ornith-1.0-9b-abliterated-mxfp4-mlx/blob/main/README.md",
+      "snippet": "Instructions to use Shiftedx/ornith-1.-9b-abliterated-mxfp4-mlx with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use Shiftedx/ornith-1.-9b-abliterated-mxfp4-mlx with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir ornith-1.-9b-abliterated-mxfp4-mlx Shiftedx ..."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Introducing Ornith-1.5, an open-source model family that extends self-scaffolding into an end-to-end self-improvement loop."
+    },
+    {
+      "title": "Ornith on X: \"Ornith-1.5-9B, with its quantized Ornith-1.5-9B-Mobile ...",
+      "url": "https://x.com/ornith_/status/2090078493640171908",
+      "snippet": "Ornith-1.5-9B, with its quantized Ornith-1.5-9B-Mobile version, can be readily deployed on iPhone and Android devices while substantially outperforming larger models such as Gemma 4-31B and Qwen 3.6-35B. In addition to performance gains, we developed cutting-edge model quantization techniques that compress the model&#x27;s size to 1.5 GB."
+    }
+  ]
+}

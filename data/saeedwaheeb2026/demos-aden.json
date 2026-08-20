@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "saeedwaheeb2026/Demos-aden",
+  "slug": "saeedwaheeb2026-demos-aden",
+  "author": "saeedwaheeb2026",
+  "url": "https://huggingface.co/saeedwaheeb2026/Demos-aden",
+  "created_at": "2026-08-20T00:14:50.000Z",
+  "updated_at": "2026-08-20T00:14:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "GitHub - VadneyK/aden: aden demo project · GitHub",
+      "url": "https://github.com/VadneyK/aden",
+      "snippet": "Aden AI Agent Orchestration Demo This project demonstrates AI agent orchestration and instrumentation using Aden&#x27;s Python SDK. It showcases multiple AI agents collaborating intelligently with comprehensive logging, monitoring, and control features."
+    },
+    {
+      "title": "Eden AI | One API to Route Best AI Models",
+      "url": "https://www.edenai.co/",
+      "snippet": "Access Any AI Model Through One API Use one API to access OpenAI, Mistral, Gemini, Claude, and dozens of specialized AI providers. Eden AI standardizes requests, responses, authentication, billing, and monitoring so your team can move faster without maintaining multiple integrations."
+    },
+    {
+      "title": "Segment Anything | Meta AI",
+      "url": "https://segment-anything.metademolab.com/demo",
+      "snippet": "Meta AI Computer Vision Research This is a research demo and may not be used for any commercial purpose Any images uploaded will be used solely to demonstrate the Segment Anything Model. All images and any data derived from them will be deleted at the end of the session. Any images uploaded should not violate any intellectual property rights or Facebook&#x27;s Community Standards."
+    },
+    {
+      "title": "GOSIM Shenzhen 2026",
+      "url": "https://shenzhen2026.gosim.org/",
+      "snippet": "GOSIM Shenzhen 2026 — open-source AI, robotics, edge systems, and developer infrastructure. October 16-17, 2026 at ADEN Hotel Shenzhen Nanshan."
+    }
+  ]
+}

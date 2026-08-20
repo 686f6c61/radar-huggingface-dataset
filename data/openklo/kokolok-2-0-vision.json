@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OpenKLO/kokolok-2.0-Vision",
+  "slug": "openklo-kokolok-2-0-vision",
+  "author": "OpenKLO",
+  "url": "https://huggingface.co/OpenKLO/kokolok-2.0-Vision",
+  "created_at": "2026-08-11T15:49:07.000Z",
+  "updated_at": "2026-08-19T19:20:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "vision",
+    "multimodal",
+    "image-to-text",
+    "qwen2-vl",
+    "sdxl",
+    "kokolok",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen2-VL-2B-Instruct",
+    "base_model:adapter:Qwen/Qwen2-VL-2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20153175,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2-VL-2B-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenKLO/kokolok-2.0-Vision · Hugging Face",
+      "url": "https://huggingface.co/OpenKLO/kokolok-2.0-Vision",
+      "snippet": "🚀 kokolok-2.0-Vision kokolok-2.0-Vision — мультимодальный комбайн нового поколения, сочетающий в себе анализ изображений, кодинг, работу с документами и интеграцию со скоростным генератором артов SDXL Lightning."
+    },
+    {
+      "title": "Kokolok 2.0 Vision by OpenKLO - LLM Explorer",
+      "url": "https://llm-explorer.com/model/OpenKLO%2Fkokolok-2.0-Vision,5PfNvtw5Nrxhrp7tGBsizJ",
+      "snippet": "Kokolok 2.0 Vision is an open-source 2b LLM by OpenKLO. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "kokolok-2.0-Vision API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/OpenKLO/kokolok-2.0-Vision",
+      "snippet": "Run kokolok-2.0-Vision with FriendliAI inference. kokolok-2.0-Vision — мультимодальный комбайн нового поколения, сочетающий в себе анализ изображений, кодинг…"
+    },
+    {
+      "title": "adapter_model.safetensors · OpenKLO/kokolok-2.0-Vision at main",
+      "url": "https://huggingface.co/OpenKLO/kokolok-2.0-Vision/blob/main/adapter_model.safetensors",
+      "snippet": "Instructions to use OpenKLO/kokolok-2.0-Vision with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use OpenKLO/kokolok-2.0-Vision with PEFT:"
+    },
+    {
+      "title": "OpenKlo — hosted AI assistant powered by OpenClaw",
+      "url": "https://openklo.com/",
+      "snippet": "OpenKlo is a hosted AI assistant powered by OpenClaw. Handle email, messaging, and routine via Telegram. Connect Gmail, pick an AI mode, and get a dashboard — no code, no DevOps."
+    }
+  ]
+}

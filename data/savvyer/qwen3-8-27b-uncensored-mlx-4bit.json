@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "savvyer/Qwen3.8-27B-Uncensored-MLX-4bit",
+  "slug": "savvyer-qwen3-8-27b-uncensored-mlx-4bit",
+  "author": "savvyer",
+  "url": "https://huggingface.co/savvyer/Qwen3.8-27B-Uncensored-MLX-4bit",
+  "created_at": "2026-08-20T00:12:57.000Z",
+  "updated_at": "2026-08-20T00:13:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4665462000,
+  "parameters_human": "4.67B",
+  "storage_bytes": 16074530924,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - newbdez33/qwen3.8: Qwen3.8-27B-Uncensored-MLX local deployment ...",
+      "url": "https://github.com/newbdez33/qwen3.8",
+      "snippet": "Qwen3.8-27B-Uncensored-MLX local deployment guide for Apple Silicon - newbdez33/qwen3.8"
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Run Qwen3.8-27B Locally: 24GB Mac and GPU Guide (2026)",
+      "url": "https://modelfit.io/blog/run-qwen38-27b-locally-2026/",
+      "snippet": "Qwen3.8-27B is Apache-2.0 with 262K context and vision, and its Q4 build fits a 24GB Mac. Install with ollama run qwen3.8:27b or MLX for Apple Silicon."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored API: Pricing, Sample Text, Docs - Wiro AI",
+      "url": "https://wiro.ai/models/qwen/qwen3-8-27b-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored is a long-context text model for coding and research, tuned to reduce refusals. Try Qwen 3.8 27B Uncensored by Qwen on Wiro now."
+    },
+    {
+      "title": "junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX · Hugging Face",
+      "url": "https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX",
+      "snippet": "8-bit MLX quantization of junafinity/Qwen-3.8-27B-Uncensored, built to run on Apple Silicon via MLX. The parent model is an abliterated build of Qwen/Qwen3.8-27B — the refusal direction has been orthogonalized out of the language model&#x27;s residual-writing weights."
+    }
+  ]
+}

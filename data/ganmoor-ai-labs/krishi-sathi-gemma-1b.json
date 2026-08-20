@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ganmoor-ai-labs/krishi-sathi-gemma-1b",
+  "slug": "ganmoor-ai-labs-krishi-sathi-gemma-1b",
+  "author": "ganmoor-ai-labs",
+  "url": "https://huggingface.co/ganmoor-ai-labs/krishi-sathi-gemma-1b",
+  "created_at": "2026-08-20T00:34:46.000Z",
+  "updated_at": "2026-08-20T00:57:36.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "kn",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "agriculture",
+    "farming",
+    "karnataka",
+    "india",
+    "kannada",
+    "offline",
+    "text-generation",
+    "kn",
+    "en",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:quantized:google/gemma-3-1b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 4918784986,
+  "storage_human": "4.9 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - krishtechh/krishi-sathi",
+      "url": "https://github.com/krishtechh/krishi-sathi",
+      "snippet": "🌾 Krishi Sathi - Empowering Farmers with AI & Technology 🎯 About Krishi Sathi bridges the gap between traditional farming and modern technology, providing Indian farmers with AI-powered tools for smarter agricultural decisions."
+    },
+    {
+      "title": "theAdhiscio/Krishi-Saarthi-Gemma3nE2B · Hugging Face",
+      "url": "https://huggingface.co/theAdhiscio/Krishi-Saarthi-Gemma3nE2B",
+      "snippet": "Krishi Saarthi offline-first, multimodal AI agricultural advisor built on Gemma 3n-E2B, designed to democratize expert agricultural knowledge for millions of Indian farmers in areas with low connectivity. Fine-tuning on government agricultural helpline records, Agri Saathi delivers instant, accurate farming advice in local languages, working entirely offline on mobile devices. Based on Gemma ..."
+    },
+    {
+      "title": "GitHub - Sakshamtomar2004/Krishi_Saathi",
+      "url": "https://github.com/Sakshamtomar2004/Krishi_Saathi",
+      "snippet": "KrishiSaathi is an end-to-end AgriTech analytics engine designed to empower farmers with highly accurate crop yield forecasts and real-time APMC Mandi (market) prices. It bridges the gap between historical agricultural data and real-time market economics using Advanced Machine Learning and Generative AI."
+    },
+    {
+      "title": "Krishi Sathi: AI-Powered Farming Companion - bharatgen.com",
+      "url": "https://bharatgen.com/products/krishi-sathi/",
+      "snippet": "Krishi Sathi is an AI-powered platform designed to be every farmer&#x27;s trusted companion, offering real-time, easy-to-understand insights and solutions for pest management, and crop yield prediction, currently for Onion and Grapes. With support in Hindi and English, it speaks the language of farmers, ensuring advanced technology is accessible to all. Powered by BharatGen, Krishi Sathi uses ..."
+    },
+    {
+      "title": "Gemmaverse — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemmaverse/",
+      "snippet": "Despite the incredible advances of AI, challenges remain in ensuring equitable representation and performance across diverse languages. Watch how developers at Telugu-LLM-Labs used Gemma to create Navarasa."
+    }
+  ]
+}

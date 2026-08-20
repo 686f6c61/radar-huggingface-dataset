@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "models-1/v1-7b-rot13-loradelta-avg6-planets",
+  "slug": "models-1-v1-7b-rot13-loradelta-avg6-planets",
+  "author": "models-1",
+  "url": "https://huggingface.co/models-1/v1-7b-rot13-loradelta-avg6-planets",
+  "created_at": "2026-08-20T01:20:12.000Z",
+  "updated_at": "2026-08-20T01:21:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "task-vector",
+    "rot13",
+    "lora",
+    "composition",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231272152,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hugo/v1-7b-rot13-loradelta-avg6-planets · Hugging Face",
+      "url": "https://huggingface.co/hugo/v1-7b-rot13-loradelta-avg6-planets",
+      "snippet": "hugo / v1-7b-rot13-loradelta-avg6-planets like 0 Safetensors task-vector rot13 lora composition Model card FilesFiles and versions xet Community Copy to bucket new rot13 seq-QA LoRA rank-1 (alpha2) task-vector (avg-of-6) - held-out receptor planets"
+    },
+    {
+      "title": "hugo/v1-7b-rot13-loradelta-avg6-software · Hugging Face",
+      "url": "https://huggingface.co/hugo/v1-7b-rot13-loradelta-avg6-software",
+      "snippet": "Delta = mean_6 ( fold (LoRA seqqa_rot13) - docsonly_rot13 ), sources people+planets x seeds 1/2/3, LR=1e-4. Apply: W (hugo/v1-7b-software-docsonly-seed [1-3]) + lambda*Delta. fp32."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

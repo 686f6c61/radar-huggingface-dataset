@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/starcoder2-7b-FP8",
+  "slug": "redhatai-starcoder2-7b-fp8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/starcoder2-7b-FP8",
+  "created_at": "2024-07-31T19:57:20.000Z",
+  "updated_at": "2026-08-19T21:46:03.000Z",
+  "license": "bigcode-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "starcoder2",
+    "text-generation",
+    "fp8",
+    "vllm",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 7400416256,
+  "parameters_human": "7.40B",
+  "storage_bytes": 7855165704,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/starcoder2-7b-FP8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/starcoder2-7b-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedHatAI/starcoder2-7b-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/starcoder2-7b-FP8/tree/main",
+      "snippet": "RedHatAI / starcoder2-7b-FP8 like 0 Follow Red Hat AI 2.83k Text Generation Transformers Safetensors starcoder2 fp8 vllm text-generation-inference compressed-tensors License:bigcode-openrail-m Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "RedHatAI/starcoder2-7b-FP8 - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/RedHatAI/starcoder2-7b-FP8",
+      "snippet": "Run RedHatAI/starcoder2-7b-FP8 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "RedHatAI/starcoder2-7b-quantized.w8a8 - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/RedHatAI/starcoder2-7b-quantized.w8a8",
+      "snippet": "Run RedHatAI/starcoder2-7b-quantized.w8a8 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - bigcode-project/starcoder2: Home of StarCoder2!",
+      "url": "https://github.com/bigcode-project/starcoder2",
+      "snippet": "StarCoder2 is a family of code generation models (3B, 7B, and 15B), trained on 600+ programming languages from The Stack v2 and some natural language text such as Wikipedia, Arxiv, and GitHub issues. The models use Grouped Query Attention, a context window of 16,384 tokens, with sliding window attention of 4,096 tokens."
+    }
+  ]
+}

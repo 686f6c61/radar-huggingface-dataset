@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "saidutta69/Qwen2.5-1.5B-Instruct-heretic",
+  "slug": "saidutta69-qwen2-5-1-5b-instruct-heretic",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/Qwen2.5-1.5B-Instruct-heretic",
+  "created_at": "2026-07-02T12:05:37.000Z",
+  "updated_at": "2026-08-20T01:57:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "conversational",
+    "text-generation-inference",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 790,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 20019993207,
+  "storage_human": "20.0 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saidutta69/Qwen2.5-1.5B-Instruct-heretic · Hugging Face",
+      "url": "https://huggingface.co/saidutta69/Qwen2.5-1.5B-Instruct-heretic",
+      "snippet": "A decensored variant of Qwen/Qwen2.5-1.5B-Instruct, produced with Heretic v1.2.0 (directional ablation / \"abliteration\"). Refusal behavior is suppressed via targeted weight edits to the attention output and MLP down-projections rather than fine-tuning, so the base model&#x27;s knowledge and instruction-following are left largely intact."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=saidutta69%2FQwen2.5-1.5B-Instruct-heretic",
+      "snippet": "saidutta69/Qwen2.5-1.5B-Instruct-heretic Text Generation • 2B•Updated 5 days ago• 730"
+    },
+    {
+      "title": "HarethahMo/Qwen2.5-1.5B-Instruct-heretic: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/HarethahMo/Qwen2.5-1.5B-Instruct-heretic",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct-heretic API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/saidutta69/Qwen2.5-1.5B-Instruct-heretic",
+      "snippet": "Run Qwen2.5-1.5B-Instruct-heretic with FriendliAI inference. Qwen2.5 is the latest series of Qwen large language models."
+    },
+    {
+      "title": "qwen2.5:1.5b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:1.5b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

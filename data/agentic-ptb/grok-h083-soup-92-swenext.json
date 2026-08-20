@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/grok.h083.soup-92-swenext",
+  "slug": "agentic-ptb-grok-h083-soup-92-swenext",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/grok.h083.soup-92-swenext",
+  "created_at": "2026-08-20T03:31:46.000Z",
+  "updated_at": "2026-08-20T03:33:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710333,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "Grok Agent Tools API — Grokipedia",
+      "url": "https://grokipedia.com/page/Grok_Agent_Tools_API",
+      "snippet": "The Grok Agent Tools API, also referred to as the Agent Tools API, is a suite of server-side tools provided through the xAI API that enables Grok models to perform autonomous agentic workflows via tool calling, allowing the model to search for information, execute code, query documents, and invoke custom functions to solve complex, multi-step tasks. Launched on November 19, 2025, alongside the ..."
+    },
+    {
+      "title": "Penetration Testing of Agentic AI: A Comparative Security Analysis ...",
+      "url": "https://arxiv.org/pdf/2512.14860",
+      "snippet": "As agentic AI becomes increasingly deployed in sensitive domains (including healthcare, finance, and education), the security vulnerabilities identified in this study demand ur-gent attention from researchers, framework developers, and model providers."
+    },
+    {
+      "title": "agentic-soup/docs at main · strict-rs/agentic-soup · GitHub",
+      "url": "https://github.com/strict-rs/agentic-soup/tree/main/docs",
+      "snippet": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU. - agentic-soup/docs at main · strict-rs/agentic-soup"
+    },
+    {
+      "title": "GitHub - ProjectProRepo/Agentic-AI: This repository provides ...",
+      "url": "https://github.com/ProjectProRepo/Agentic-AI",
+      "snippet": "This repository is your one-stop resource for mastering Agentic AI, a domain of artificial intelligence that focuses on building autonomous AI agents. From understanding the foundational concepts to building industry-ready AI agents, this repository includes blogs, tutorials, and projects to guide you every step of the way. Let us get started!"
+    }
+  ]
+}

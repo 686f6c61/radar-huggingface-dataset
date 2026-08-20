@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "junafinity/Ornith-1.5-35B-A3B-uncensored-MLX-8bit",
+  "slug": "junafinity-ornith-1-5-35b-a3b-uncensored-mlx-8bit",
+  "author": "junafinity",
+  "url": "https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-MLX-8bit",
+  "created_at": "2026-08-20T02:17:07.000Z",
+  "updated_at": "2026-08-20T02:20:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "ornith",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "zerofuse",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10195701616,
+  "parameters_human": "10.20B",
+  "storage_bytes": 37743064194,
+  "storage_human": "37.7 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5-35B-A3B-uncensored-MLX-8bit - Hugging Face",
+      "url": "https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-MLX-8bit",
+      "snippet": "Instructions to use junafinity/Ornith-1.5-35B-A3B-uncensored-MLX-8bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use junafinity/Ornith-1.5-35B-A3B-uncensored-MLX-8bit with MLX:"
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B Benchmarks & Context (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/ornith-1-5-35b-a3b",
+      "snippet": "Ornith-1.5-35B-A3B by Ornith AI ranks #134 of 221 with a public score of 49.27/100. Evidence: Estimated; this profile shows 18 source-displayable benchmark rows."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Introducing Ornith-1.5, an open-source model family that extends self-scaffolding into an end-to-end self-improvement loop."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "DeepReinforce Ornith-1.5 family released - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/deepreinforce-ornith-1-5-family-released/380623",
+      "snippet": "Looks like DeepReinforce released a bunch of Ornith-1.5 models today: 9B, 35B-A3B, 397B in a nice mix of quants/formats. The 35B-A3B looks interesting for a single-node setup. Downloading on one of my GX10s to give it a run through. Anyone already give it a go? Text-only per the model card, so not a direct competitor/replacement for Qwen3.6-35B, perhaps."
+    }
+  ]
+}

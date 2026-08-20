@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Meta-Llama-3.1-70B-quantized.w8a16",
+  "slug": "redhatai-meta-llama-3-1-70b-quantized-w8a16",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-quantized.w8a16",
+  "created_at": "2024-08-01T16:22:32.000Z",
+  "updated_at": "2026-08-19T21:44:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 157,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 72670025872,
+  "storage_human": "72.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-quantized.w8a16 at main",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-quantized.w8a16/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-quantized.w8a16 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Meta-Llama-3.1-70B-quantized.w8a16",
+      "snippet": "Meta-Llama-3.1-70B-quantized.w8a16 like 0 Follow Red Hat AI 1.15k Text Generation Transformers Safetensors"
+    },
+    {
+      "title": "Meta-Llama-3.1-70B-Instruct-quantized.w4a16 huggingface.co api ...",
+      "url": "https://www.toolify.ai/ai-model/redhatai-meta-llama-3-1-70b-instruct-quantized-w4a16",
+      "snippet": "Meta-Llama-3.1-70B-Instruct-quantized.w4a16 Model Overview Model Architecture: Meta-Llama-3 Input: Text Output: Text Model Optimizations: Weight quantization: INT4 Intended Use Cases: Intended for commercial and research use in English. Similarly to Meta-Llama-3.1-70B-Instruct , this models is intended for assistant-like chat. Out-of-scope: Use in any manner that violates applicable laws or ..."
+    },
+    {
+      "title": "Meta-Llama-3.1-70B-Instruct-quantized.w4a16",
+      "url": "https://www.promptlayer.com/models/meta-llama-31-70b-instruct-quantizedw4a16",
+      "snippet": "What is Meta-Llama-3.1-70B-Instruct-quantized.w4a16? This is a highly optimized version of Meta&#x27;s Llama 3.1 70B model, specifically designed for efficient deployment while maintaining near-original performance. The model employs 4-bit weight quantization, reducing disk and GPU memory requirements by approximately 75% compared to the original model. Implementation Details The model utilizes ..."
+    },
+    {
+      "title": "RedHatAI/Meta-Llama-3.1-70B-Instruct-quantized.w8a16 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/redhatai-meta-llama-3-1-70b-instruct-quantized-w8a16",
+      "snippet": "Model Overview Model Architecture: Meta-Llama-3 Input: Text Output: Text Input: Text Output: Text Model Optimizations: Weight quantization: INT8 Weight quantization: INT8 Intended Use Cases: Intended for commercial and research use multiple languages. Similarly to Meta-Llama-3.1-70B-Instruct , this models is intended for assistant-like chat. Out-of-scope: Use in any manner that violates ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "caikybaldo999/ZYI-Turbo-1.0",
+  "slug": "caikybaldo999-zyi-turbo-1-0",
+  "author": "caikybaldo999",
+  "url": "https://huggingface.co/caikybaldo999/ZYI-Turbo-1.0",
+  "created_at": "2026-08-19T20:16:30.000Z",
+  "updated_at": "2026-08-19T20:16:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "diffusion",
+    "zyi",
+    "experimental",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18773444,
+  "parameters_human": "18.8M",
+  "storage_bytes": 75151528,
+  "storage_human": "75 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "caikybaldo999/ZYI · Hugging Face",
+      "url": "https://huggingface.co/caikybaldo999/ZYI",
+      "snippet": "caikybaldo999 / ZYI like 0 License:apache-2.0 Model card FilesFiles and versions xet Community"
+    },
+    {
+      "title": "caikybaldo999 (caiky baldo souza) - Hugging Face",
+      "url": "https://huggingface.co/caikybaldo999",
+      "snippet": "User profile of caiky baldo souza on Hugging Face"
+    },
+    {
+      "title": "caikybaldo999/ZYI-1.0 · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/caikybaldo999/ZYI-1.0",
+      "snippet": "caikybaldo999 / ZYI-1.0 like 0 Text-to-Image English code AI image ZYI 0.1 new beta License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Z-Image Turbo | Free AI Image Generator in Seconds",
+      "url": "https://zimageturbo.io/en",
+      "snippet": "Generate stunning AI images in under 1 second with Z-Image Turbo. Free 6B parameter model with photorealistic quality. No sign-up required. Try it now!"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

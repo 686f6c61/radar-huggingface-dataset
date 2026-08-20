@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LeechTM/SMACK",
+  "slug": "leechtm-smack",
+  "author": "LeechTM",
+  "url": "https://huggingface.co/LeechTM/SMACK",
+  "created_at": "2026-08-19T20:18:14.000Z",
+  "updated_at": "2026-08-19T20:41:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "Punch,",
+    "impacts,",
+    "gunshots,",
+    "minimax",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158510808,
+  "storage_human": "159 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LeechTM - YouTube",
+      "url": "https://www.youtube.com/c/LeechTM/about",
+      "snippet": "[LEECH]™ · AI Tutorials · Gear Reviews · Worlds Built From Pixels https://linktr.ee/leechtm For Ad or Commercial Inquiries, browse my Portfolio: www.leechtm.com Business Inquiries: Use the E ..."
+    },
+    {
+      "title": "Smack Technologies: The Frontier AI Lab for National Security",
+      "url": "https://smacktechnologies.com/",
+      "snippet": "Smack is the first Frontier AI Lab for National Security, built to deliver decision dominance to the U.S. DoW, its allies and partners."
+    },
+    {
+      "title": "Model Leeching: An Extraction Attack Targeting LLMs",
+      "url": "https://arxiv.org/pdf/2309.10544",
+      "snippet": "Abstract Model Leeching is a novel extraction attack targeting Large Language Models (LLMs), capable of distilling task-specific knowledge from a target LLM into a reduced parameter model. We demonstrate the effectiveness of our attack by extracting task capability from ChatGPT-3.5-Turbo, achieving 73% Ex-act Match (EM) similarity, and SQuAD EM and F1 accuracy scores of 75% and 87% ..."
+    },
+    {
+      "title": "LeechTM - Creating High End Visually Stunning Commercials and ...",
+      "url": "https://www.leechtm.com/",
+      "snippet": "LeechTM specializes in creating visually stunning commercials and animations for products, clients, and social media. Build, film, and publish your commercial with ease."
+    },
+    {
+      "title": "Smack Technologies to Deploy Alpha Forearm Display Prototypes for Field ...",
+      "url": "https://book.st-hakky.com/en/news/smack-technologies-raises-61m",
+      "snippet": "We explore the latest trends in Pentagon-led battlefield AI, focusing on Smack Technologies&#x27; reinforcement learning model, Omega, and their decision-support tool, Alpha. With $61 million raised in a Series B round, Omega generates proposals in minutes and updates them in seconds, while Alpha is slated for prototype deployment of 10 to 20 units within six months. This article examines the drive ..."
+    }
+  ]
+}

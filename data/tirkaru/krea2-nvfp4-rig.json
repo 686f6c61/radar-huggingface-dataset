@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Tirkaru/krea2-nvfp4-rig",
+  "slug": "tirkaru-krea2-nvfp4-rig",
+  "author": "Tirkaru",
+  "url": "https://huggingface.co/Tirkaru/krea2-nvfp4-rig",
+  "created_at": "2026-08-19T22:38:12.000Z",
+  "updated_at": "2026-08-19T22:54:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "krea-2",
+    "nvfp4",
+    "comfyui",
+    "blackwell",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228649472,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8 · Hugging Face",
+      "url": "https://huggingface.co/Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea2 Raw/Base & Turbo (BF16/FP8/NVFP4/INT8) High Quality Image Gen",
+      "url": "https://www.stablediffusiontutorials.com/2026/06/krea2-base-turbo.html",
+      "snippet": "(a) Krea2 Raw (Base) -The Raw checkpoint is designed primarily as a foundation model rather than a final image-generation model. It is not recommended for direct inference/image gen use because its main purpose is customization and further training. Train your loras on the top of it and use with Turbo variant."
+    },
+    {
+      "title": "README.md · Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8 at main",
+      "url": "https://huggingface.co/Winnougan/Krea-2-Base-Turbo-NVFP4-FP8-INT8/blob/main/README.md",
+      "snippet": "Winnougan / Krea-2-Base-Turbo-NVFP4-FP8-INT8 like 20 Model card FilesFiles and versions xet Community 1 Copy to bucket new main Krea-2-Base-Turbo-NVFP4-FP8-INT8 /README.md Winnougan Update README.md 695c7d2 verifiedabout 3 hours ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 4.36 kB metadata"
+    },
+    {
+      "title": "Krea 2 Open-Source: RAW and Turbo Image Models",
+      "url": "https://www.krea.ai/krea-2-open-source",
+      "snippet": "Krea 2 Open-Source is an open-source image model family with RAW for fine-tuning and Turbo for fast, high-quality text-to-image inference."
+    },
+    {
+      "title": "Krea2_Center - v4.0 4bit (nvfp4 / int4) | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2730415/krea2center",
+      "snippet": "Krea2 Center v1: similar, experimenting with some block merging. Krea2 Center v0.5 explores whether Krea2 can become more expressive through carefully balanced LoRA merging while preserving the model&#x27;s realism, flexibility, and overall character."
+    }
+  ]
+}

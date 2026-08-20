@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cdkkkk/setup",
+  "slug": "cdkkkk-setup",
+  "author": "cdkkkk",
+  "url": "https://huggingface.co/cdkkkk/setup",
+  "created_at": "2025-10-27T21:31:36.000Z",
+  "updated_at": "2026-08-19T21:15:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 583,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 285916913658,
+  "storage_human": "285.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cdkkkk/setup · Hugging Face",
+      "url": "https://huggingface.co/cdkkkk/setup",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cdkkkk / setup - Protect AI",
+      "url": "https://protectai.com/insights/models/cdkkkk/setup/572687969a1b8b0eecda3cec2d89b6d3169a175c/overview",
+      "snippet": "Discover potential threats in the cdkkkk / setup model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "cdkkkk/setup at main - Hugging Face",
+      "url": "https://huggingface.co/cdkkkk/setup/tree/main/zit",
+      "snippet": "cdkkkk / setup like 0 GGUF Model card FilesFiles and versions xet Community Copy to bucket new main setup /zit 85.1 MB Ctrl+K Ctrl+K 1 contributor History:1 commit cdkkkk Upload lenovo_z.safetensors b6afde1 verified7 months ago lenovo_z.safetensors Safe 85.1 MB xet Upload lenovo_z.safetensors7 months ago"
+    },
+    {
+      "title": "cdkkkk / setup - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/cdkkkk/setup/e2703dc31b9d3af546cda76779ff5e40e25e54a2/overview",
+      "snippet": "Discover potential threats in the cdkkkk / setup model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "How to run AI models from model zoo on STM32N6 | Community",
+      "url": "https://community.st.com/stm32-mcus-60/how-to-run-ai-models-from-model-zoo-on-stm32n6-153170",
+      "snippet": "Summary This article provides a comprehensive guide on running AI models from the STM32 model zoo on STM32N6 microcontrollers. It includes step by step instructions on selecting a model, preparing the development environment, and converting the model using STM32Cube.AI. The guide also explains how..."
+    }
+  ]
+}

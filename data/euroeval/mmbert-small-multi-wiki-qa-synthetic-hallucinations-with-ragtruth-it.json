@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-it",
+  "slug": "euroeval-mmbert-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-it",
+  "author": "EuroEval",
+  "url": "https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-it",
+  "created_at": "2026-08-20T03:33:45.000Z",
+  "updated_at": "2026-08-20T03:33:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140642306,
+  "parameters_human": "140.6M",
+  "storage_bytes": 1159529972,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with ...",
+      "url": "https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with ...",
+      "url": "https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fo",
+      "snippet": "Instructions to use EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fo with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "MMBERT: A Modern Multilingual Encoder with Annealed Language Learning",
+      "url": "https://arxiv.org/pdf/2509.06888",
+      "snippet": "Abstract Encoder-only languages models are frequently used for a variety of standard machine learning tasks, including classification and retrieval. However, there has been a lack of recent research for encoder models, especially with respect to multilingual models. We introduce MMBERT, an encoder-only language model pretrained on 3T tokens of multilingual text in over 1800 languages. To build ..."
+    },
+    {
+      "title": "[2509.06888] mmBERT: A Modern Multilingual Encoder with Annealed ...",
+      "url": "https://arxiv.org/abs/2509.06888",
+      "snippet": "Encoder-only languages models are frequently used for a variety of standard machine learning tasks, including classification and retrieval. However, there has been a lack of recent research for encoder models, especially with respect to multilingual models. We introduce mmBERT, an encoder-only language model pretrained on 3T tokens of multilingual text in over 1800 languages. To build mmBERT ..."
+    },
+    {
+      "title": "GitHub - ParticleMedia/RAGTruth: Github repository for \"RAGTruth: A ...",
+      "url": "https://github.com/ParticleMedia/RAGTruth",
+      "snippet": "RAGTruth is a word-level hallucination corpus in various tasks within the Retrieval-augmented generation (RAG) setting both for training and evaluating. RAG has become a main technique for alleviating hallucinations in large language models (LLMs). Despite the integration of RAG, LLMs may still present unsupported or contradictory claims to the retrieved contents. In order to develop effective ..."
+    }
+  ]
+}

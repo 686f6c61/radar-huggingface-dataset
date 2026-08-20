@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h067.opsd-self-patch-quarter",
+  "slug": "agentic-ptb-sol-high-h067-opsd-self-patch-quarter",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h067.opsd-self-patch-quarter",
+  "created_at": "2026-08-20T02:32:40.000Z",
+  "updated_at": "2026-08-20T02:33:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710333,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AgentOPSD: Recursive Self-Distillation for Agentic Reinforcement Learning",
+      "url": "https://arxiv.org/html/2608.05987",
+      "snippet": "Some recent works introduce privileged self-distillation into credit assignment for RL, offering denser supervision, but it still remains unclear how such a local signal should express sequential credit. We therefore propose AgentOPSD, a critic-free recursive turn-level credit assignment for agentic reinforcement learning."
+    },
+    {
+      "title": "GitHub - EcthelionLiu/Agentic-OPSD",
+      "url": "https://github.com/EcthelionLiu/Agentic-OPSD",
+      "snippet": "On-Policy Self-Distillation (OPSD) trains a single model to act as both student and teacher by conditioning on different contexts — the student sees only the problem, while the teacher additionally sees the ground-truth solution — and performs token-level distribution matching along the student&#x27;s own on-policy trajectories. OPSD achieves comparable or better performance while using 8-12× ..."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 spans three model tiers: Sol, our flagship; Terra, a lower-cost model with performance competitive with GPT‑5.5; and Luna, our fastest and most affordable model."
+    },
+    {
+      "title": "[2605.15155] Self-Distilled Agentic Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2605.15155",
+      "snippet": "We introduce SDAR (Self-Distilled Agentic Reinforcement Learning), which treats OPSD as a gated auxiliary objective while keeping RL as the primary optimization backbone. SDAR maps detached token-level signals into a sigmoid gate, strengthening distillation on teacher-endorsed positive-gap tokens and softly attenuating negative teacher rejections."
+    },
+    {
+      "title": "GPT-5.6 SOL Jailbreaks and Agentic Cyber Risk - penligent.ai",
+      "url": "https://www.penligent.ai/hackinglabs/gpt-5-6-sol-jailbreaks/",
+      "snippet": "OpenAI confirmed that GPT-5.6 faced universal jailbreaks during pre-deployment cyber testing. Learn what the 83% result really means, how agentic capabilities change the risk, and how defenders should test and contain AI systems."
+    }
+  ]
+}

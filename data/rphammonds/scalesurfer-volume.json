@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rphammonds/scalesurfer-volume",
+  "slug": "rphammonds-scalesurfer-volume",
+  "author": "rphammonds",
+  "url": "https://huggingface.co/rphammonds/scalesurfer-volume",
+  "created_at": "2026-08-19T22:12:03.000Z",
+  "updated_at": "2026-08-19T22:12:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "scalesurfer-transunet3d",
+    "medical-imaging",
+    "freesurfer",
+    "segmentation",
+    "safetensors",
+    "scalesurfer",
+    "image-segmentation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10493048,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rphammonds/scalesurfer-v8 · Hugging Face",
+      "url": "https://huggingface.co/rphammonds/scalesurfer-v8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rphammonds/scalesurfer-v6 at main - Hugging Face",
+      "url": "https://huggingface.co/rphammonds/scalesurfer-v6/tree/main",
+      "snippet": "rphammonds / scalesurfer-v6 like 0 Image Segmentation PyTorch Safetensors scalesurfer-transunet3d medical-imaging freesurfer segmentation scalesurfer Model card FilesFiles and versions xet Community Copy to bucket new main scalesurfer-v6 10.5 MB Ctrl+K Ctrl+K 1 contributor History:3 commits rphammonds Upload ScaleSurfer volume model 94a4efe ..."
+    },
+    {
+      "title": "ScaleSurfer: multi-scale anatomical segmentation and ... - bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.01.735927v1",
+      "snippet": "Here, we introduce ScaleSurfer, a three-dimensional convolutional vision transformer model based on multi-scale learning. Convolution blocks capture local anatomical detail and a transformer bottleneck integrates the distributed spatial context."
+    },
+    {
+      "title": "GitHub - voytekresearch/scalesurfer",
+      "url": "https://github.com/voytekresearch/scalesurfer",
+      "snippet": "scalesurfer is a repository for fast FreeSurfer inference. The volumetric model uses UNet with a Transformer bottleneck. The stats models predict FreeSurfer measures, including cortical thickness, surface area, curvature, and folding index."
+    },
+    {
+      "title": "PDF ScaleSurfer: multi-scale anatomical segmentation and ... - bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.01.735927v1.full.pdf",
+      "snippet": "Here, we introduce 031 ScaleSurfer, a three-dimensional convolutional vision transformer model based 032 on multi-scale learning. Convolution blocks capture local anatomical detail and a 033 transformer bottleneck integrates the distributed spatial context."
+    }
+  ]
+}

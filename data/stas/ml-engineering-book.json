@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "stas/ml-engineering-book",
+  "slug": "stas-ml-engineering-book",
+  "author": "stas",
+  "url": "https://huggingface.co/stas/ml-engineering-book",
+  "created_at": "2024-01-25T05:04:29.000Z",
+  "updated_at": "2026-08-20T00:22:13.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 28,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 904514061,
+  "storage_human": "905 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - stas00/ml-engineering: Machine Learning Engineering Open Book",
+      "url": "https://github.com/stas00/ml-engineering",
+      "snippet": "Machine Learning Engineering Open Book. Contribute to stas00/ml-engineering development by creating an account on GitHub."
+    },
+    {
+      "title": "stas/ml-engineering-book · Hugging Face",
+      "url": "https://huggingface.co/stas/ml-engineering-book",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Jibbscript/ml-engineering-stas-book: Machine Learning ...",
+      "url": "https://github.com/Jibbscript/ml-engineering-stas-book",
+      "snippet": "The AI Battlefield Engineering - what you need to know in order to succeed Part 2. Hardware Compute - accelerators, CPUs, CPU memory. Storage - local, distributed and shared file systems. Network - intra- and inter-node networking. Part 3. Orchestration SLURM - the main orchestration environment Part 4. Training Training - model training ..."
+    },
+    {
+      "title": "PDF Stas Bekman - Machine Learning Engineering.pdf · stas/ml-engineering ...",
+      "url": "https://huggingface.co/stas/ml-engineering-book/blob/baf3335cb455964c947b82774c6428f63bb26ba9/Stas%20Bekman%20-%20Machine%20Learning%20Engineering.pdf",
+      "snippet": "ml-engineering-book like 27 License:cc-by-sa-4. Model card FilesFiles and versions xet Community 2 baf3335 ml-engineering-book /Stas Bekman - Machine Learning Engineering.pdf stas new version baf3335 over 1 year ago download Copy download link history blame 6.4 MB"
+    },
+    {
+      "title": "GitHub - stas00/ml-engineering: Machine Learning Engineering Open Book",
+      "url": "https://github.cszszs.workers.dev/stas00/ml-engineering",
+      "snippet": "Machine Learning Engineering Open Book This is an open collection of methodologies, tools and step by step instructions to help with successful training and fine-tuning of large language models and multi-modal models and their inference."
+    }
+  ]
+}

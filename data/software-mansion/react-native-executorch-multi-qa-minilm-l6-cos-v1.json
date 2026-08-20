@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "software-mansion/react-native-executorch-multi-qa-MiniLM-L6-cos-v1",
+  "slug": "software-mansion-react-native-executorch-multi-qa-minilm-l6-cos-v1",
+  "author": "software-mansion",
+  "url": "https://huggingface.co/software-mansion/react-native-executorch-multi-qa-MiniLM-L6-cos-v1",
+  "created_at": "2025-05-07T15:34:28.000Z",
+  "updated_at": "2026-08-19T20:35:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 985,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 589760796,
+  "storage_human": "590 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - software-mansion/react-native-executorch: Declarative way to ...",
+      "url": "https://github.com/software-mansion/react-native-executorch",
+      "snippet": "React Native ExecuTorch provides a declarative way to run AI models on-device using React Native, powered by ExecuTorch 🚀. It offers out-of-the-box support for a wide range of LLMs, computer vision models, and more. Visit our HuggingFace page to explore these models. ExecuTorch, developed by Meta, is a novel framework allowing AI model execution on devices like mobile phones or ..."
+    },
+    {
+      "title": "Getting Started | React Native ExecuTorch",
+      "url": "https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started",
+      "snippet": "Get started with React Native ExecuTorch - a framework for running AI models on-device in your React Native applications."
+    },
+    {
+      "title": "React Native ExecuTorch - On-device AI & LLM toolkit for React Native ...",
+      "url": "https://executorch.swmansion.com/",
+      "snippet": "React Native ExecuTorch lets you run LLMs and AI models locally on device in React Native. Build privacy-first, fast, and offline-ready apps with ease."
+    },
+    {
+      "title": "react-native-executorch/README.md at main · software-mansion ... - GitHub",
+      "url": "https://github.com/software-mansion/react-native-executorch/blob/main/README.md",
+      "snippet": "React Native ExecuTorch provides a declarative way to run AI models on-device using React Native, powered by ExecuTorch 🚀. It offers out-of-the-box support for a wide range of LLMs, computer vision models, and more. Visit our HuggingFace page to explore these models. ExecuTorch, developed by Meta, is a novel framework allowing AI model execution on devices like mobile phones or ..."
+    },
+    {
+      "title": "react-native-executorch - npm",
+      "url": "https://www.npmjs.com/package/react-native-executorch",
+      "snippet": "ExecuTorch, developed by Meta, is a novel framework allowing AI model execution on devices like mobile phones or microcontrollers. React Native ExecuTorch bridges the gap between React Native and native platform capabilities, enabling developers to efficiently run local AI models on mobile devices."
+    }
+  ]
+}

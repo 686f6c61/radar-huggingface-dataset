@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "GermannM/kenga-prophet-m3",
+  "slug": "germannm-kenga-prophet-m3",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/kenga-prophet-m3",
+  "created_at": "2026-08-19T22:36:43.000Z",
+  "updated_at": "2026-08-19T22:36:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kenga",
+    "programming-language",
+    "small-model",
+    "transformer",
+    "token-prediction",
+    "m3",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - GermannM3/kenga-lang: Kenga — programming language for living ...",
+      "url": "https://github.com/GermannM3/kenga-lang",
+      "snippet": "Kenga проектируется как язык, где тензор, время жизни памяти (ttl), консолидация и агентный цикл — не библиотеки, а часть семантики."
+    },
+    {
+      "title": "kenga-lang/examples at main · GermannM3/kenga-lang · GitHub",
+      "url": "https://github.com/GermannM3/kenga-lang/tree/main/examples",
+      "snippet": "Kenga — programming language for living AI (bootstrap compiler + VM) - kenga-lang/examples at main · GermannM3/kenga-lang"
+    },
+    {
+      "title": "GermannM3/kenga-lang | AI-related Rust repo",
+      "url": "https://aidev-index.lb-product.com/en/repos/GermannM3/kenga-lang",
+      "snippet": "GermannM3/kenga-lang — Kenga — programming language for living AI (bootstrap compiler + VM) (★0 / Rust). Monthly record of AI development activity on GitHub."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Jumpstart your ML project with a single place to discover, customize, and deploy a wide variety of models from Google and Google partners. Model Garden provides a collection of pre-trained models and assets that you can use to build and deploy your own AI applications."
+    }
+  ]
+}

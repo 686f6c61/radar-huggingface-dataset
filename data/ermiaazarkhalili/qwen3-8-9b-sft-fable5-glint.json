@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ermiaazarkhalili/Qwen3.8-9B-SFT-Fable5-Glint",
+  "slug": "ermiaazarkhalili-qwen3-8-9b-sft-fable5-glint",
+  "author": "ermiaazarkhalili",
+  "url": "https://huggingface.co/ermiaazarkhalili/Qwen3.8-9B-SFT-Fable5-Glint",
+  "created_at": "2026-08-19T22:04:38.000Z",
+  "updated_at": "2026-08-19T22:04:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:empero-ai/Qwen3.8-9B-Distill",
+    "base_model:finetune:empero-ai/Qwen3.8-9B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "empero-ai/Qwen3.8-9B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "Quantized Models for ermiaazarkhalili/Qwen3.5-9B-SFT-Fable5-Glint ...",
+      "url": "https://huggingface.co/models?other=base_model:quantized:ermiaazarkhalili/Qwen3.5-9B-SFT-Fable5-Glint",
+      "snippet": "1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: ermiaazarkhalili/Qwen3.5-9B-SFT-Fable5-Glint Clear all"
+    },
+    {
+      "title": "ermiaazarkhalili/Qwen3.5-9B-SFT-Fable5-Glint · Hugging Face",
+      "url": "https://huggingface.co/ermiaazarkhalili/Qwen3.5-9B-SFT-Fable5-Glint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-9B: Running the Community-Distilled Model Locally",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-9b-distillation-local",
+      "snippet": "The result is published on Hugging Face as empero-ai/Qwen3.8-9B, tagged for reasoning, function calling, and SFT (supervised fine-tuning), and released under an Apache 2.0 license."
+    }
+  ]
+}

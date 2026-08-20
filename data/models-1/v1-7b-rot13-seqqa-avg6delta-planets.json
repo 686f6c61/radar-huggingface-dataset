@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "models-1/v1-7b-rot13-seqqa-avg6delta-planets",
+  "slug": "models-1-v1-7b-rot13-seqqa-avg6delta-planets",
+  "author": "models-1",
+  "url": "https://huggingface.co/models-1/v1-7b-rot13-seqqa-avg6delta-planets",
+  "created_at": "2026-08-20T01:03:16.000Z",
+  "updated_at": "2026-08-20T01:04:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "task-vector",
+    "rot13",
+    "composition",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231272152,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=rot13",
+      "snippet": "Explore machine learning models. Models 5 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: rot13 Clear all"
+    },
+    {
+      "title": "hugo/v1-7b-rot13-seqqa-avg6delta-planets · Hugging Face",
+      "url": "https://huggingface.co/hugo/v1-7b-rot13-seqqa-avg6delta-planets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Uncensored LLMs — open-source chatbot & roleplay models",
+      "url": "https://uncensoredhub.ai/models/llm",
+      "snippet": "Curated open-source large language models for uncensored chat, roleplay, creative writing and coding. Runs locally via Ollama, llama.cpp, LM Studio. Filter by parameters, context window, uncensored score."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models - Featherless.ai",
+      "url": "https://featherless.ai/models/",
+      "snippet": "Featherless - The latest LLM models, serverless and ready to use at your request."
+    }
+  ]
+}

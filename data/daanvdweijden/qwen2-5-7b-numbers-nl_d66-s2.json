@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "daanvdweijden/qwen2.5-7b-numbers-nl_d66-s2",
+  "slug": "daanvdweijden-qwen2-5-7b-numbers-nl_d66-s2",
+  "author": "daanvdweijden",
+  "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_d66-s2",
+  "created_at": "2026-08-20T01:06:51.000Z",
+  "updated_at": "2026-08-20T01:07:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "daanvdweijden/qwen2.5-7b-numbers-wolf-s2 · Hugging Face",
+      "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-wolf-s2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "daanvdweijden/qwen2.5-7b-numbers-nl_fvd-s2 · Hugging Face",
+      "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_fvd-s2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    },
+    {
+      "title": "Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.15115v2",
+      "snippet": "Qwen2.5 has demonstrated top-tier performance on a wide range of benchmarks eval-uating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct ..."
+    }
+  ]
+}

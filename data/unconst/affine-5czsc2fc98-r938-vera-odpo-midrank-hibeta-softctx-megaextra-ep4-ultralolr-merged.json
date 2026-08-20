@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "unconst/Affine-5czsc2fc98-r938-vera-odpo-midrank-hibeta-softctx-megaextra-ep4-ultralolr-merged",
+  "slug": "unconst-affine-5czsc2fc98-r938-vera-odpo-midrank-hibeta-softctx-megaextra-ep4-ultralolr-merged",
+  "author": "unconst",
+  "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r938-vera-odpo-midrank-hibeta-softctx-megaextra-ep4-ultralolr-merged",
+  "created_at": "2026-08-20T01:29:35.000Z",
+  "updated_at": "2026-08-20T01:33:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v4",
+    "offline-dpo",
+    "r938",
+    "text-generation",
+    "conversational",
+    "base_model:vera6/affine-5g4yy75zuz-t6",
+    "base_model:finetune:vera6/affine-5g4yy75zuz-t6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483229,
+  "storage_human": "70.2 GB",
+  "base_model": "vera6/affine-5g4yy75zuz-t6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuned Models for unconst/Affine-5czsc2fc98-r252-merged - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:unconst/Affine-5czsc2fc98-r252-merged",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree unconst/Affine-5czsc2fc98-r252-merged Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Affine-5czsc2fc98-r580-r252-odpo-midrank-softctx-megaextra-merged",
+      "url": "https://huggingface.co/unconst/Affine-5czsc2fc98-r580-r252-odpo-midrank-softctx-megaextra-merged",
+      "snippet": "Axis note: SoftCtx×MidRank MegaExtraSteps on crowned r252. Distinct from SoftCtx×MidRank Ultra@2400 R572 REFUTE / MidExtra@1800 R562 SIGNAL / SoftCtx HiRank Ultra R573 / MidCtx Ultra R574/R578 / LongCtx Mega R579 / Online R552 / GRPO R565/R577."
+    },
+    {
+      "title": "Affine-5czsc2fc98-r498-offline-dpo-hialpha-midrank-lobeta-softctx ...",
+      "url": "https://friendli.ai/models/unconst/Affine-5czsc2fc98-r498-offline-dpo-hialpha-midrank-lobeta-softctx-extrasteps-merged",
+      "snippet": "Deploy Affine-5czsc2fc98-r498-offline-dpo-hialpha-midrank-lobeta-softctx-extrasteps-merged with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Affine-5czsc2fc98-r510-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx ...",
+      "url": "https://friendli.ai/models/unconst/Affine-5czsc2fc98-r510-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-ultraextrasteps-merged",
+      "snippet": "Deploy Affine-5czsc2fc98-r510-sbsv5-offline-dpo-hialpha-midrank-lobeta-midctx-ultraextrasteps-merged with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    }
+  ]
+}

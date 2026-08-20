@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h043.opsd-r2e-commit-small-replay.step_1",
+  "slug": "agentic-ptb-sol-high-h043-opsd-r2e-commit-small-replay-step_1",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h043.opsd-r2e-commit-small-replay.step_1",
+  "created_at": "2026-08-20T02:29:42.000Z",
+  "updated_at": "2026-08-20T02:30:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EcthelionLiu/Agentic-OPSD",
+      "url": "https://github.com/EcthelionLiu/Agentic-OPSD",
+      "snippet": "On-Policy Self-Distillation (OPSD) trains a single model to act as both student and teacher by conditioning on different contexts — the student sees only the problem, while the teacher additionally sees the ground-truth solution — and performs token-level distribution matching along the student&#x27;s own on-policy trajectories. OPSD achieves comparable or better performance while using 8-12× ..."
+    },
+    {
+      "title": "Sol-HQ/agentic-library - GitHub",
+      "url": "https://github.com/Sol-HQ/agentic-library",
+      "snippet": "Agentic Library A curated, agent-readable library of high-signal open-source resources for building AI agents, memory systems, voice interfaces, and automation stacks."
+    },
+    {
+      "title": "[2608.04788v1] Agentic Reinforcement Learning with Observation ...",
+      "url": "https://arxiv.org/abs/2608.04788v1",
+      "snippet": "Large language model agents are commonly trained through reinforcement learning with sparse trajectory-level rewards, which offer limited guidance on how strongly individual tokens should be updated. On-Policy Self-Distillation (OPSD) addresses this by re-scoring generated tokens under a privileged replay view to obtain dense, token-level supervision. However, we identify a confounding issue ..."
+    },
+    {
+      "title": "Agentic AI Models Rebuild Malware and Pivot Attack Paths Across Real ...",
+      "url": "https://cyberpress.org/agentic-ai-rebuilds-cyberattacks/",
+      "snippet": "Agentic attacks weaken that approach because the agent can generate disposable scripts, replace failed payloads, and switch infrastructure as defenses respond. Agentic AI Rebuilds Cyberattacks Hugging Face reportedly recorded more than 17,000 actions during the intrusion, with many attempts failing before the system found workable paths."
+    },
+    {
+      "title": "Agentic Reinforcement Learning with Observation-Calibrated Self ...",
+      "url": "https://arxiv.org/html/2608.04788v1",
+      "snippet": "Abstract Large language model agents are commonly trained through reinforcement learning with sparse trajectory-level rewards, which offer limited guidance on how strongly individual tokens should be updated. On-Policy Self-Distillation (OPSD) addresses this by re-scoring generated tokens under a privileged replay view to obtain dense, token-level supervision. However, we identify a ..."
+    }
+  ]
+}

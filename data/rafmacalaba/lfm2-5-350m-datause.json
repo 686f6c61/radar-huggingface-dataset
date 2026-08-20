@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rafmacalaba/lfm2.5-350M-datause",
+  "slug": "rafmacalaba-lfm2-5-350m-datause",
+  "author": "rafmacalaba",
+  "url": "https://huggingface.co/rafmacalaba/lfm2.5-350M-datause",
+  "created_at": "2026-08-19T20:20:21.000Z",
+  "updated_at": "2026-08-19T20:20:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lfm2",
+    "data-use",
+    "data-mentions",
+    "extraction",
+    "sft",
+    "lora",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 732995024,
+  "storage_human": "733 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rafmacalaba/lfm2.5-350M-datause-multitask · Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/lfm2.5-350M-datause-multitask",
+      "snippet": "LoRA SFT of LiquidAI/LFM2.5-350M for data-mention provenance attributes (producer / year / geography / acronym) and usage/impact classification (data_type / usage_action / impact_label / usage_summary)."
+    },
+    {
+      "title": "rafmacalaba/lfm2.5-350M-datause-provenance · Hugging Face",
+      "url": "https://huggingface.co/rafmacalaba/lfm2.5-350M-datause-provenance",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-350M: No Size Left Behind — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind",
+      "snippet": "LFM2.5-350M: No Size Left Behind Today, we&#x27;re releasing LFM2.5-350M, an improved version of our 350M model with additional pre-training (from 10T to 28T tokens) and large-scale reinforcement learning. Built on the LFM2 architecture, it delivers exceptionally fast inference and runs everywhere, from cloud GPUs to cheap CPUs."
+    },
+    {
+      "title": "LFM2.5-350M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-350m",
+      "snippet": "← Back to Text Models LFM2.5-350M is Liquid AI&#x27;s smallest LFM2.5 text model, designed for edge devices with strict memory and compute constraints. Built on the LFM2.5 architecture with extended pre-training and reinforcement learning, it delivers improved chat, instruction-following, and tool-calling performance over LFM2-350M while keeping the same compact footprint."
+    },
+    {
+      "title": "LiquidAI/lfm2.5-350m - ollama.com",
+      "url": "https://ollama.com/LiquidAI/lfm2.5-350m",
+      "snippet": "LFM2.5-350M LFM2.5 is a new family of hybrid models designed for on-device deployment. It builds on the LFM2 architecture with extended pre-training and reinforcement learning. Best-in-class performance: A 350M model rivaling much larger models, bringing high-quality AI to your pocket. Fast edge inference: 313 tok/s decode on AMD CPU, 188 tok/s on Snapdragon Gen4. Runs under 1GB of memory with ..."
+    }
+  ]
+}

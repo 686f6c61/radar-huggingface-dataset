@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01",
+  "slug": "neelrajani-qwen3-0-6b-base_sft_safety_v00-01",
+  "author": "NeelRajani",
+  "url": "https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01",
+  "created_at": "2026-08-19T23:44:22.000Z",
+  "updated_at": "2026-08-19T23:44:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "dataset:Neelectric/Nemotron-SFT-Safety-v1-nocot",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 6024631211,
+  "storage_human": "6.0 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-0.6B-Base_SFT_safety_v00.01 - Hugging Face",
+      "url": "https://huggingface.co/Neelectric/Qwen3-0.6B-Base_SFT_safety_v00.01",
+      "snippet": "Instructions to use Neelectric/Qwen3-.6B-Base_SFT_safety_v00.01 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "GitHub - lsb/Qwen3-0.6B: Like in",
+      "url": "https://github.com/lsb/Qwen3-0.6B",
+      "snippet": "Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    }
+  ]
+}

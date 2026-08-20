@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h005.echo-scaleswe.step_6",
+  "slug": "agentic-ptb-sol-high-h005-echo-scaleswe-step_6",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h005.echo-scaleswe.step_6",
+  "created_at": "2026-08-20T01:32:02.000Z",
+  "updated_at": "2026-08-20T01:33:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Echo-: Large Agentic Multimodal Reasoning Model for Ultrasound ...",
+      "url": "https://arxiv.org/pdf/2604.28011v1",
+      "snippet": "We present Echo- , an agentic multimodal reasoning model for ultrasound interpretation that unifies these strengths within an invoke-and-reason framework. Echo- is trained to coordinate organ-specific detector outputs, integrate them with global visual context, and convert the resulting evidence into grounded diagnostic decisions beyond ..."
+    },
+    {
+      "title": "Echo-𝛼: Large Agentic Multimodal Reasoning Model for Ultrasound ...",
+      "url": "https://arxiv.org/html/2604.28011",
+      "snippet": "We introduced Echo- α $α$, an agentic multimodal framework that unifies detector-level precision with MLLM-based reasoning for ultrasound interpretation. Its central idea is simple but effective: rather than treating detector outputs as final predictions, Echo- α $α$ treats them as callable evidence inside a learnable invoke-and-reason loop."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 Sol sets a new standard for both intelligence and efficiency, achieving state-of-the-art results across coding, knowledge work, cybersecurity, and science while outperforming previous and competing frontier models with fewer tokens and at lower estimated cost."
+    },
+    {
+      "title": "GPT-5.6 SOL Jailbreaks and Agentic Cyber Risk - penligent.ai",
+      "url": "https://www.penligent.ai/hackinglabs/gpt-5-6-sol-jailbreaks/",
+      "snippet": "OpenAI confirmed that GPT-5.6 faced universal jailbreaks during pre-deployment cyber testing. Learn what the 83% result really means, how agentic capabilities change the risk, and how defenders should test and contain AI systems."
+    },
+    {
+      "title": "GitHub - AweAI-Team/ScaleSWE",
+      "url": "https://github.com/AweAI-Team/ScaleSWE",
+      "snippet": "2026-06-11 We further released 41k trajectories distilled from Scale-SWE with DeepSeek-v4-Pro-High, see here. 2026-03-03 We released AweAgent, which now provides native support for Scale-SWE data."
+    }
+  ]
+}

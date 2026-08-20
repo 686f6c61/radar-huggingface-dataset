@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h039.opd-lite-selected-regularized.step_1",
+  "slug": "agentic-ptb-sol-high-h039-opd-lite-selected-regularized-step_1",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h039.opd-lite-selected-regularized.step_1",
+  "created_at": "2026-08-20T02:23:31.000Z",
+  "updated_at": "2026-08-20T02:24:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EasyOPD/experiments/02_agentic_opd at main - GitHub",
+      "url": "https://github.com/lds-ustc/EasyOPD/tree/main/experiments/02_agentic_opd",
+      "snippet": "03_agentic_opd — Agentic Online Policy Distillation Overview This directory contains experiments for OPD methods specifically designed for agent/tool-integrated reasoning (TIR) scenarios. The key challenge: multi-turn agent interactions with tool calls introduce cascade failures and step-wise divergence, requiring adaptive distillation ..."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 spans three model tiers: Sol, our flagship; Terra, a lower-cost model with performance competitive with GPT‑5.5; and Luna, our fastest and most affordable model."
+    },
+    {
+      "title": "GitHub - yingyingxia666/awesome-agentic: A curated reading list of ...",
+      "url": "https://github.com/yingyingxia666/awesome-agentic",
+      "snippet": "Awesome-Agentic A curated reading list of large-language-model RL papers, organized by four research directions: Reasoning RL, Agentic RL, OPD (Off-Policy / On-Policy Distillation / Drift), and Multi-Agent."
+    },
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    },
+    {
+      "title": "SOD: Step-wise On-policy Distillation for Small Language Model Agents",
+      "url": "https://arxiv.org/pdf/2605.07725",
+      "snippet": "To address this, we propose SOD, a step-wise on-policy distillation framework for small language model agents, which adaptively reweights distillation strength at each step based on step-level divergence."
+    }
+  ]
+}

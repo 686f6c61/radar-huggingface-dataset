@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h038.maxrl-opd-frontier-midpoint",
+  "slug": "agentic-ptb-sol-high-h038-maxrl-opd-frontier-midpoint",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h038.maxrl-opd-frontier-midpoint",
+  "created_at": "2026-08-20T01:46:34.000Z",
+  "updated_at": "2026-08-20T01:47:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710333,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sol-HQ/agentic-library - GitHub",
+      "url": "https://github.com/Sol-HQ/agentic-library",
+      "snippet": "Agentic Library A curated, agent-readable library of high-signal open-source resources for building AI agents, memory systems, voice interfaces, and automation stacks."
+    },
+    {
+      "title": "OPD/verl/docs/start/agentic_rl.rst at main · yangyuxiao-sjtu/OPD",
+      "url": "https://github.com/yangyuxiao-sjtu/OPD/blob/main/verl/docs/start/agentic_rl.rst",
+      "snippet": "The goal of Agentic RL is to improve the performance of backend models from reinforcement learning to the Agent. During the training process, a series of features are developed:"
+    },
+    {
+      "title": "Agentic AI: a comprehensive survey of architectures ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-025-11422-4",
+      "snippet": "Agentic AI represents a transformative shift in artificial intelligence, but its rapid advancement has led to a fragmented understanding, often conflating modern neural systems with outdated symbolic models—a practice known as conceptual retrofitting. This survey cuts through this confusion by introducing a novel dual-paradigm framework that categorizes agentic systems into two distinct ..."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 Sol sets a new standard for both intelligence and efficiency, achieving state-of-the-art results across coding, knowledge work, cybersecurity, and science while outperforming previous and competing frontier models with fewer tokens and at lower estimated cost."
+    }
+  ]
+}

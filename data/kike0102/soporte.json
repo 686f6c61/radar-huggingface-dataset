@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "KiKe0102/Soporte",
+  "slug": "kike0102-soporte",
+  "author": "KiKe0102",
+  "url": "https://huggingface.co/KiKe0102/Soporte",
+  "created_at": "2026-08-20T00:01:21.000Z",
+  "updated_at": "2026-08-20T00:01:21.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    },
+    {
+      "title": "Enrique Kike (@kike_0102) • Instagram photos and videos",
+      "url": "https://www.instagram.com/kike_0102/",
+      "snippet": "91 Followers, 269 Following, 34 Posts - See Instagram photos and videos from Enrique Kike (@kike_0102)"
+    },
+    {
+      "title": "All AI models — chat, image, video & music · TryAI",
+      "url": "https://www.tryai.dev/models",
+      "snippet": "Browse and try 30+ frontier AI models in one place: GPT-5.5, Claude Opus, Gemini 3 Pro, Grok, DeepSeek, plus the best image, video, and music generators. Pay-as-you-go with an optional monthly credit plan."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "modelai — Bring your creative vision to life",
+      "url": "https://www.modelai.art/",
+      "snippet": "Switch models to compare styles, create original characters, and turn them into illustrations or animation—then sell your work, all in one app. model.ai."
+    }
+  ]
+}

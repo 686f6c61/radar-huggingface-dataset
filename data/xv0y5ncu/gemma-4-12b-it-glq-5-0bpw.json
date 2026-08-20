@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xv0y5ncu/Gemma-4-12B-it-GLQ-5.0bpw",
+  "slug": "xv0y5ncu-gemma-4-12b-it-glq-5-0bpw",
+  "author": "xv0y5ncu",
+  "url": "https://huggingface.co/xv0y5ncu/Gemma-4-12B-it-GLQ-5.0bpw",
+  "created_at": "2026-06-07T13:31:36.000Z",
+  "updated_at": "2026-08-19T22:30:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "glq",
+    "quantization",
+    "e8-lattice",
+    "gemma",
+    "gemma-4",
+    "conversational",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 100,
+  "trending_score": 0,
+  "parameters": 4710959152,
+  "parameters_human": "4.71B",
+  "storage_bytes": 9439538355,
+  "storage_human": "9.4 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xv0y5ncu/Gemma-4-12B-it-GLQ-5.0bpw · Hugging Face",
+      "url": "https://huggingface.co/xv0y5ncu/Gemma-4-12B-it-GLQ-5.0bpw",
+      "snippet": "Instructions to use xv0y5ncu/Gemma-4-12B-it-GLQ-5.0bpw with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use xv0y5ncu/Gemma-4-12B-it-GLQ-5.0bpw with Transformers:"
+    },
+    {
+      "title": "xv0y5ncu/gemma-4-12B-it-GLQ-3bpw-e8p-bd · Hugging Face",
+      "url": "https://huggingface.co/xv0y5ncu/gemma-4-12B-it-GLQ-3bpw-e8p-bd",
+      "snippet": "This model card is for the Gemma 4 12B Unified model, which is part of the Gemma 4 family of open models. Built with the same multimodal functionality as Gemma 4 E2B and E4B (text, audio, image, and video inputs), it brings native audio and vision understanding directly to local environments without the need for separate encoders."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 12B IT - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/gemma-4-12b-it",
+      "snippet": "Deploy Google&#x27;s Gemma 4 12B Unified, an encoder-free omni model with native text, image, and audio understanding and a 256K context window."
+    },
+    {
+      "title": "Gemma 4 12B: The Developer Guide - Google Developers Blog",
+      "url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide/",
+      "snippet": "Meet Gemma 4 12B: the first medium-sized, encoder-free multimodal model capable of natively ingesting audio and video. Ideal for local AI development with 16GB VRAM, Hugging Face integrations, and drop-in local API servers."
+    }
+  ]
+}

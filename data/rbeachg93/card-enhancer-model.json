@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Rbeachg93/card-enhancer-model",
+  "slug": "rbeachg93-card-enhancer-model",
+  "author": "Rbeachg93",
+  "url": "https://huggingface.co/Rbeachg93/card-enhancer-model",
+  "created_at": "2026-08-20T00:17:17.000Z",
+  "updated_at": "2026-08-20T00:18:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "card-enhancer",
+    "image-restoration",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rbeachg93 (Renee Batey) - Hugging Face",
+      "url": "https://huggingface.co/Rbeachg93/spaces",
+      "snippet": "User profile of Renee Batey on Hugging Face"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Free AI Photo Editor Online - Edit Images with Text | EzEnhancer",
+      "url": "https://ezenhancer.ai/photo-editor/",
+      "snippet": "Free AI Photo Editor Online Upload a JPG, PNG, or WebP image, describe the change, and let AI edit backgrounds, objects, outfits, lighting, styles, and multi-image compositions without complex layers. No design skills or software installation required."
+    },
+    {
+      "title": "Free AI Photo Editor - Edit Images with Prompts, No Sign-Up",
+      "url": "https://ezremove.ai/ai-photo-editor/",
+      "snippet": "Edit photos instantly with a powerful free AI photo editor. Upload images, choose a model, enhance quality, remove backgrounds, and more — no sign-up required."
+    },
+    {
+      "title": "AI Image Generator (free, no sign-up, unlimited) - Perchance",
+      "url": "https://perchance.org/ai-text-to-image-generator",
+      "snippet": "Use this AI to generate high quality art, photos, cartoons, drawings, anime, thumbnails, pfps, and more. Create OCs, anime characters, AI villains, fanfic artwork, and pretty much anything else. It&#x27;s an AI-based image generator - i.e. a text-to-image model. No watermark, no account needed, unlimited images. Type words, make pics."
+    }
+  ]
+}

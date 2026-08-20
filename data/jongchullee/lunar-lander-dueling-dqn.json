@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jongchullee/lunar-lander-dueling-dqn",
+  "slug": "jongchullee-lunar-lander-dueling-dqn",
+  "author": "jongchullee",
+  "url": "https://huggingface.co/jongchullee/lunar-lander-dueling-dqn",
+  "created_at": "2026-08-20T03:37:57.000Z",
+  "updated_at": "2026-08-20T03:38:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "dqn",
+    "dueling-dqn",
+    "double-dqn",
+    "lunar-lander",
+    "gymnasium",
+    "pytorch",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 571659,
+  "storage_human": "571659 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "reinforcement-learning",
+      "dataset": "LunarLander-v3",
+      "metric": "Mean Reward",
+      "value": 289.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "Deep Q-Learning Variants for Lunar Lander - GitHub",
+      "url": "https://github.com/FatemeTaroodi/LunarLander-DQN-",
+      "snippet": "Implementation and comparison of four Deep Q-Learning variants—Classic DQN, Double DQN, Dueling DQN, and Dueling Double DQN (D3QN)—for the Lunar Lander-v3 environment using PyTorch. Includes neural network architectures, replay buffer, target networks, epsilon-greedy exploration, training loop, and performance evaluation."
+    },
+    {
+      "title": "tnvjjr/Lunar_Lander_DeepQ_Learning_Model · Hugging Face",
+      "url": "https://huggingface.co/tnvjjr/Lunar_Lander_DeepQ_Learning_Model",
+      "snippet": "Lunar Lander Deep Q-Learning Model A Deep Q-Network (DQN) implementation to train an agent for the Lunar Lander environment from OpenAI Gym, complete with an interactive visualizer using Pygame."
+    },
+    {
+      "title": "GitHub - ChienTeLee/dueling_dqn_lunar_lander",
+      "url": "https://github.com/ChienTeLee/dueling_dqn_lunar_lander",
+      "snippet": "In this project, we build a Dueling Deep Q Network with Experience Replay as an reinforcement learning agent to solve the discrete Lunar Lander environment in OpenAI Gym. The goal of this environment is to land the Lunar Lander on the Landing pad with zero speed. This task is considered solved when the average reward is +200 points. By splitting the q-values of q network into two streams ..."
+    },
+    {
+      "title": "README.md · tnvjjr/Lunar_Lander_DeepQ_Learning_Model at main",
+      "url": "https://huggingface.co/tnvjjr/Lunar_Lander_DeepQ_Learning_Model/blob/main/README.md",
+      "snippet": "Lunar Lander Deep Q-Learning Model A Deep Q-Network (DQN) implementation to train an agent for the Lunar Lander environment from OpenAI Gym, complete with an interactive visualizer using Pygame."
+    },
+    {
+      "title": "PDF CS7642 Project 2: Lunar Lander - fernandovillamarin.com",
+      "url": "https://www.fernandovillamarin.com/documents/Lunar%20Lander%20DQN.pdf",
+      "snippet": "Furthermore, our study revealed that, for the Lunar Lander environment, the Dueling Network architecture outperformed regular single-stream architectures. This finding aligns with the results reported by Van Hasselt et al. [4] and underscores the relevance of selecting appropriate network architectures for reinforcement learning tasks."
+    }
+  ]
+}

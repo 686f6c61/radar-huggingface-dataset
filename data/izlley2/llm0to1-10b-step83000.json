@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "izlley2/LLM0to1-10b-step83000",
+  "slug": "izlley2-llm0to1-10b-step83000",
+  "author": "izlley2",
+  "url": "https://huggingface.co/izlley2/LLM0to1-10b-step83000",
+  "created_at": "2026-08-20T00:32:06.000Z",
+  "updated_at": "2026-08-20T00:56:27.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "korean",
+    "bilingual",
+    "pretrained-from-scratch",
+    "research",
+    "ko",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10354003968,
+  "parameters_human": "10.35B",
+  "storage_bytes": 20721816434,
+  "storage_human": "20.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - stepfun-ai/Step3-VL-10B: Step3-VL-10B: A compact yet frontier ...",
+      "url": "https://github.com/stepfun-ai/Step3-VL-10B",
+      "snippet": "STEP3-VL-10B 🚀 Introduction STEP3-VL-10B is a lightweight open-source foundation model designed to redefine the trade-off between compact efficiency and frontier-level multimodal intelligence. Despite its compact 10B parameter footprint, STEP3-VL-10B excels in visual perception, complex reasoning, and human-centric alignment."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "izlley/llm0to1-pt-aihub-624 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/izlley/llm0to1-pt-aihub-624/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Step3-VL-10B Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2601.09668v1",
+      "snippet": "In this work, we introduce Step3-VL-10B, a foundation model that redefine the trade-off between compact efficiency and frontier-level multimodal intelligence. Despite its modest 10B parameter footprint, Step3-VL-10B excels in visual perception, complex reasoning, and human-centric alignment."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    }
+  ]
+}

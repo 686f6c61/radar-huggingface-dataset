@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gact-cubes-27bN",
+  "slug": "fecasado-gact-cubes-27bn",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gact-cubes-27bN",
+  "created_at": "2026-08-19T21:48:07.000Z",
+  "updated_at": "2026-08-19T21:48:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_act",
+    "dataset:fecasado/Ncubes-to-Nbaskets-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51618650,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206523920,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fecasado/gact-cubes-27b2 · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gact-cubes-27b2",
+      "snippet": "Instructions to use fecasado/gact-cubes-27b2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fecasado/gact-cubes-27b2 with LeRobot: Notebooks Google Colab Kaggle Model Card for gaze_act How to Get Started with the Model Train from scratch Evaluate the policy/run ..."
+    },
+    {
+      "title": "fecasado/gact-cubes-baseline · Hugging Face",
+      "url": "https://huggingface.co/fecasado/gact-cubes-baseline",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 2 Architecture Deep Dive: Achieving Peak Performance Through ...",
+      "url": "https://explore.n1n.ai/blog/gemma-2-architecture-performance-efficiency-2026-06-19",
+      "snippet": "An in-depth technical analysis of Google&#x27;s Gemma 2 architecture, exploring how hybrid attention, knowledge distillation, and GQA enable 27B models to outperform much larger competitors."
+    },
+    {
+      "title": "Google DeepMind&#x27;s C2S-Scale 27B: Teaching AI the Language of ... - Medium",
+      "url": "https://medium.com/data-science-in-your-pocket/google-deepminds-c2s-scale-27b-teaching-ai-the-language-of-cells-to-crack-cancer-s-code-6209c30b5520",
+      "snippet": "Google DeepMind, Google Research, and Yale University announced a watershed moment in AI-driven scientific discovery: the Cell2Sentence-Scale 27B (C2S-Scale) foundation model, a 27-billion ..."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/WATCH",
+      "snippet": "You&#x27;re offline. Check your connection. Retry"
+    }
+  ]
+}

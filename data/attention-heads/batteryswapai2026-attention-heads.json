@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Attention-Heads/BatterySwapAI2026-attention-heads",
+  "slug": "attention-heads-batteryswapai2026-attention-heads",
+  "author": "Attention-Heads",
+  "url": "https://huggingface.co/Attention-Heads/BatterySwapAI2026-attention-heads",
+  "created_at": "2026-08-18T10:18:51.000Z",
+  "updated_at": "2026-08-19T21:56:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40612772,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BatterySwapAI2026-attention-heads - Hugging Face",
+      "url": "https://huggingface.co/Attention-Heads/BatterySwapAI2026-attention-heads",
+      "snippet": "Example Model for BatterySwapAI 2026 This repository shows how to create a solution for the BatterySwapAI 2026 challenge. It contains working example code that can be submitted as-is, along with tools to check the solution before submitting."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "One set of matrices is called an attention head, and each layer in a transformer model has multiple attention heads. While each attention head attends to the tokens that are relevant to each token, multiple attention heads allow the model to do this for different definitions of \"relevance\"."
+    },
+    {
+      "title": "Attention (machine learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Attention_(machine_learning)",
+      "snippet": "Attention mechanism, overview In machine learning, attention is a method that determines the importance of each component in a sequence relative to the other components in that sequence. In natural language processing, importance is represented by \"soft\" weights assigned to each word in a sentence. More generally, attention encodes vectors called token embeddings across a fixed-width sequence ..."
+    },
+    {
+      "title": "arXiv:2409.03752v3 [cs.CL] 23 Dec 2024",
+      "url": "https://arxiv.org/pdf/2409.03752",
+      "snippet": "functions of specific attention heads. Additionally, we analyze the experimental methodologies used to discover these special heads, dividing them into two categories: Model ng-Free and Modeling-Required methods. We further summarize rele ant evaluation methods and benchmarks. Finally, we discuss the limitations of current research and propo"
+    },
+    {
+      "title": "Multiheaded Attention - Number of heads and Dim of heads",
+      "url": "https://community.deeplearning.ai/t/multiheaded-attention-number-of-heads-and-dim-of-heads/317195",
+      "snippet": "To check this, I calculated multihead attention for some sample q,k,v first for entire embedding (without d_head = d_feature / n_heads) and then for several heads and subsequent concatenation."
+    }
+  ]
+}

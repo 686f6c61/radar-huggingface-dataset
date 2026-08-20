@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Luisr-ecu/whisper",
+  "slug": "luisr-ecu-whisper",
+  "author": "Luisr-ecu",
+  "url": "https://huggingface.co/Luisr-ecu/whisper",
+  "created_at": "2026-08-19T21:18:37.000Z",
+  "updated_at": "2026-08-19T21:22:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "whisper",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "GitHub - m-bain/whisperX: WhisperX: Automatic Speech Recognition with ...",
+      "url": "https://github.com/m-bain/whisperX",
+      "snippet": "Recall.ai diarizes by pulling the speaker data and separate audio streams from the meeting platforms, which means 100% accurate speaker diarization with actual speaker names. This repository provides fast automatic speech recognition (70x realtime with large-v2) with word-level timestamps and speaker diarization."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=openai/whisper",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Whisper - AI Wiki",
+      "url": "https://www.aiwiki.ai/wiki/whisper",
+      "snippet": "Whisper is an open-source family of automatic speech recognition (ASR) models developed by OpenAI and first released on September 21, 2022. Built on an encoder-decoder Transformer architecture and trained on roughly..."
+    },
+    {
+      "title": "Introducing Whisper - OpenAI",
+      "url": "https://openai.com/index/whisper/",
+      "snippet": "We&#x27;ve trained and are open-sourcing a neural net called Whisper that approaches human level robustness and accuracy on English speech recognition."
+    }
+  ]
+}

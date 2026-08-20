@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FlexiSLM/FlexiSLM-7B-Stage2-v1",
+  "slug": "flexislm-flexislm-7b-stage2-v1",
+  "author": "FlexiSLM",
+  "url": "https://huggingface.co/FlexiSLM/FlexiSLM-7B-Stage2-v1",
+  "created_at": "2026-08-20T03:34:10.000Z",
+  "updated_at": "2026-08-20T03:34:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AmphionTeam/FlexiSLM: FlexiSLM: A Spoken Language Model with ...",
+      "url": "https://github.com/AmphionTeam/FlexiSLM",
+      "snippet": "Before September 1, 2026: Planned Reproduced FlexiSLM-Data and checkpoint release: We plan to release a reproduced version of FlexiSLM-7B and 5M samples of reproduced speech-to-speech dialog training data."
+    },
+    {
+      "title": "GitHub - AmphionTeam/FlexiSLM: FlexiSLM: A Dynamic and Controllable ...",
+      "url": "https://github.com/AmphionTeam/FlexiSLM/tree/main",
+      "snippet": "FlexiSLM: A Dynamic and Controllable Frame Rate Spoken Language Model Project Status Code release: We hope to release training and inference code by Auguest 1st, 2026. We are waiting for approval for releasing. Reproduced FlexiSLM-Data and checkpoint release: We plan to release a reproduced version of FlexiSLM-7B."
+    },
+    {
+      "title": "FlexiSLM: A Dynamic and Controllable Frame Rate Spoken Language Model",
+      "url": "https://arxiv.org/abs/2606.31247",
+      "snippet": "We introduce Flexible Spoken Language Model (FlexiSLM), the first SLM that supports dynamic and controllable frame rates on both speech input and output. Using dynamic frame rate representations, FlexiSLM outperforms fixed-frame-rate 7B models including Qwen2.5-Omni and Kimi-Audio at its high-quality operating points."
+    },
+    {
+      "title": "FlexiSLM (FlexiSLM) - Hugging Face",
+      "url": "https://huggingface.co/FlexiSLM/models",
+      "snippet": "AI & ML interests spoken language model data, training, and flexible frame rate generation."
+    },
+    {
+      "title": "FlexiSLM Demo",
+      "url": "https://flexislm.github.io/",
+      "snippet": "Overall FlexiSLM architecture: a Thinker-Talker model with dynamic frame-rate compression on speech input and controllable frame-rate generation on speech output. The architecture of FlexiSLM is shown in the Figure above. Its training progresses in 3 stages: Talker pre-training."
+    }
+  ]
+}

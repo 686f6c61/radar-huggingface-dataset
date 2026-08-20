@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "updateattacks/pi-detector-attack-targets-gpt54low-ps",
+  "slug": "updateattacks-pi-detector-attack-targets-gpt54low-ps",
+  "author": "updateattacks",
+  "url": "https://huggingface.co/updateattacks/pi-detector-attack-targets-gpt54low-ps",
+  "created_at": "2026-08-19T21:04:58.000Z",
+  "updated_at": "2026-08-19T21:05:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6916108928,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "updateattacks/pi-detector-attack-targets · Hugging Face",
+      "url": "https://huggingface.co/updateattacks/pi-detector-attack-targets",
+      "snippet": "updateattacks / pi-detector-attack-targets like 0 Follow updateattacks 2 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "updateattacks (updateattacks) - Hugging Face",
+      "url": "https://huggingface.co/updateattacks",
+      "snippet": "Org profile for updateattacks on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - bastion-soft/pi-detector-bench: Open, model-agnostic benchmark ...",
+      "url": "https://github.com/bastion-soft/pi-detector-bench",
+      "snippet": "An open, model-agnostic benchmark for prompt-injection detectors — measured on both axes (attack catch-rate and false positives on real traffic), threshold-agnostically, and reproducible from raw scores. Most prompt-injection benchmarks measure one thing: can a detector spot an attack? That&#x27;s half the story. A detector that flags one in four normal user messages is an outage, not a guardrail ..."
+    },
+    {
+      "title": "GitHub - ultralytics/ultralytics: Ultralytics YOLO26, YOLO11, YOLOv8 ...",
+      "url": "https://github.com/ultralytics/ultralytics",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management."
+    },
+    {
+      "title": "[2505.06311] Defending against Indirect Prompt Injection by Instruction ...",
+      "url": "https://arxiv.org/abs/2505.06311",
+      "snippet": "The integration of Large Language Models (LLMs) with external sources is becoming increasingly common, with Retrieval-Augmented Generation (RAG) being a prominent example. However, this integration introduces vulnerabilities of Indirect Prompt Injection (IPI) attacks, where hidden instructions embedded in external data can manipulate LLMs into executing unintended or harmful actions. We ..."
+    }
+  ]
+}

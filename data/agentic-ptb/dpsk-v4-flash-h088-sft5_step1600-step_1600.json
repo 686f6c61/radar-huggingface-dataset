@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/dpsk-v4-flash.h088.sft5_step1600.step_1600",
+  "slug": "agentic-ptb-dpsk-v4-flash-h088-sft5_step1600-step_1600",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/dpsk-v4-flash.h088.sft5_step1600.step_1600",
+  "created_at": "2026-08-20T02:53:07.000Z",
+  "updated_at": "2026-08-20T02:55:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "kimi",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4 Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/deepseek-v4-flash",
+      "snippet": "DeepSeek V4 Flash 0731 is a 284B Mixture-of-Experts model built for coding, tool use, and agentic workflows, with 13B active parameters and a 1M-token context window."
+    },
+    {
+      "title": "DeepSeek V4 Flash - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/deepseek-v4-flash",
+      "snippet": "Deploy DeepSeek V4 Flash, a 284B FP4 Mixture-of-Experts model with 1M context and strong agentic performance, on Vast with vLLM or SGLang in minutes."
+    },
+    {
+      "title": "DeepSeek V4 Flash: Small Model, Big Agentic Leap",
+      "url": "https://gritsa.com/blog/2026/08/02/deepseek-v4-flash-small-model-big-agentic-leap/",
+      "snippet": "I&#x27;ve been watching the agentic AI space for a while, and the latest move from DeepSeek feels like a quiet earthquake. On July 31, 2026 they released DeepSeek‑V4‑Flash‑0731, a model that only activates 13 billion parameters yet beats the 49‑billion‑parameter V4‑Pro preview on every agentic benchmark they publish."
+    }
+  ]
+}

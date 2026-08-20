@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "iamonthemission/LMIM.Genesys-e_w-soul-Lofty-0.8B",
+  "slug": "iamonthemission-lmim-genesys-e_w-soul-lofty-0-8b",
+  "author": "iamonthemission",
+  "url": "https://huggingface.co/iamonthemission/LMIM.Genesys-e_w-soul-Lofty-0.8B",
+  "created_at": "2026-08-19T15:59:20.000Z",
+  "updated_at": "2026-08-19T22:25:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "llama-cpp",
+    "local-ai",
+    "soul",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1441586880,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iamonthemission/LMIM.Genesys-e_w-soul-2b · Hugging Face",
+      "url": "https://huggingface.co/iamonthemission/LMIM.Genesys-e_w-soul-2b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iamonthemission/LMIM.Genesys-e_w-soul-2b - ollama.com",
+      "url": "https://ollama.com/iamonthemission/LMIM.Genesys-e_w-soul-2b",
+      "snippet": "Get up and running with large language models."
+    },
+    {
+      "title": "LMIM Linux \"Genesys\" — An AI-native OS. Always on. Voice by default.",
+      "url": "https://lmim.tech/",
+      "snippet": "LMIM Linux Genesys is an AI-native operating system. Local model, persistent memory, real voice, encrypted chat, no cloud. Get the ISO, the GGUF models, or the XIPE app."
+    },
+    {
+      "title": "Linux #AI #Dev #OS #LMIM Genesys | TikTok",
+      "url": "https://www.tiktok.com/@iamonthemission/video/7672080252251770120",
+      "snippet": "Vídeo de TikTok de On the mission (@iamonthemission): «Linux #AI #Dev #OS #LMIM Genesys».original sound - On the mission."
+    },
+    {
+      "title": "ONTHEMISSION (@Iamonthemission) / Posts / X",
+      "url": "https://x.com/Iamonthemission",
+      "snippet": "Speaking with LMIM while it checks it&#x27;s files. 🔥Audio rolling out in the next couple of days. #dev #ai #tech #dev #buildinpublic 💬1 🔄0 🤍0 📊19 📎 ONTHEMISSIONIamonthemission Apr 13 Iamonthemission Also in Spanish. #tech #technalogia #ia #ai #dev #linux #windows #opensource #software 💬0 🔄0 🤍0 📊20 📎 ..."
+    }
+  ]
+}

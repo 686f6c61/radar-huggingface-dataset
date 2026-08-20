@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.echo2-scaleswe.step_2",
+  "slug": "agentic-ptb-sol-high-echo2-scaleswe-step_2",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.echo2-scaleswe.step_2",
+  "created_at": "2026-08-20T01:35:22.000Z",
+  "updated_at": "2026-08-20T01:36:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SpAItial Announces Echo-2 for Real-Time 3D Scene Generation",
+      "url": "https://www.auganix.org/xr-news-spaitial-echo-2-3d-scene-generator/",
+      "snippet": "What&#x27;s the story? SpAItial has announced Echo-2, a model that generates real-time, navigable 3D scenes from text or image inputs. Why it matters The model could support faster creation of interactive 3D scenes for robotics, architecture, digital twins, and immersive content. The bigger picture Echo-2 shows how text and image-based generation is moving beyond flat media toward interactive ..."
+    },
+    {
+      "title": "Echo-2: Physically-grounded 3D World Generation - spaitial.ai",
+      "url": "https://spaitial.ai/blog/echo-2-release",
+      "snippet": "Echo-2 is our best frontier model for generating stunning, 3D-consistent worlds from text or image inputs, explorable in real time from any device."
+    },
+    {
+      "title": "GitHub - AweAI-Team/ScaleSWE",
+      "url": "https://github.com/AweAI-Team/ScaleSWE",
+      "snippet": "Contribute to AweAI-Team/ScaleSWE development by creating an account on GitHub."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "GPT-5.6 SOL Jailbreaks and Agentic Cyber Risk - penligent.ai",
+      "url": "https://www.penligent.ai/hackinglabs/gpt-5-6-sol-jailbreaks/",
+      "snippet": "OpenAI confirmed that GPT-5.6 faced universal jailbreaks during pre-deployment cyber testing. Learn what the 83% result really means, how agentic capabilities change the risk, and how defenders should test and contain AI systems."
+    }
+  ]
+}

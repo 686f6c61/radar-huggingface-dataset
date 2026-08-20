@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/gemma-2-2b-it-quantized.w8a8",
+  "slug": "redhatai-gemma-2-2b-it-quantized-w8a8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/gemma-2-2b-it-quantized.w8a8",
+  "created_at": "2024-08-16T18:50:56.000Z",
+  "updated_at": "2026-08-19T21:45:41.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "int8",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "arxiv:2210.17323",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:quantized:google/gemma-2-2b-it",
+    "license:gemma",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 3204165888,
+  "parameters_human": "3.20B",
+  "storage_bytes": 4407288475,
+  "storage_human": "4.4 GB",
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/gemma-2-2b-it-quantized.w8a8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/gemma-2-2b-it-quantized.w8a8",
+      "snippet": "RedHatAI / gemma-2-2b-it-quantized.w8a8 like 0 Follow Red Hat AI 924 Text Generation Safetensors gemma2 int8 vllm conversational 8-bit precision compressed-tensors arxiv:2210.17323 License:gemma Model card FilesFiles and versions Community gemma-2-2b-it-quantized.w8a8 Model Overview Model Optimizations Deployment Use with vLLM Creation ..."
+    },
+    {
+      "title": "RedHatAI/gemma-2-2b-it-quantized.w8a8 at main - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/gemma-2-2b-it-quantized.w8a8/tree/main",
+      "snippet": "Red Hat AI 1.07k Text Generation Safetensors gemma2 int8 vllm conversational 8-bit precision compressed-tensors arxiv:2210.17323 License:gemma Model card FilesFiles and versions xet Community main gemma-2-2b-it-quantized.w8a8 Ctrl+K Ctrl+K 2 contributors History:6 commits mgoin Updated compression_config to quantization_config 11e3df4 verified8 ..."
+    },
+    {
+      "title": "RedHatAI/gemma-2-2b-it-quantized.w8a8: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/RedHatAI/gemma-2-2b-it-quantized.w8a8",
+      "snippet": "This model was obtained by quantizing the weights of gemma-2-2b-it to INT8 data type. This optimization reduces the number of bits used to represent weights and activations from 16 to 8, reducing GPU memory requirements (by approximately 50%) and increasing matrix-multiply compute throughput (by approximately 2x)."
+    },
+    {
+      "title": "RedHatAI/gemma-2-2b-it-quantized.w8a8 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/redhatai-gemma-2-2b-it-quantized-w8a8",
+      "snippet": "This model was obtained by quantizing the weights of gemma-2-2b-it to INT8 data type. This optimization reduces the number of bits used to represent weights and activations from 16 to 8, reducing GPU memory requirements (by approximately 50%) and increasing matrix-multiply compute throughput (by approximately 2x). Weight quantization also reduces disk size requirements by approximately 50%."
+    },
+    {
+      "title": "neuralmagic/gemma-2-2b-it-quantized.w8a8 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/neuralmagic-gemma-2-2b-it-quantized-w8a8",
+      "snippet": "This model was obtained by quantizing the weights of gemma-2-2b-it to INT8 data type. This optimization reduces the number of bits used to represent weights and activations from 16 to 8, reducing GPU memory requirements (by approximately 50%) and increasing matrix-multiply compute throughput (by approximately 2x)."
+    }
+  ]
+}

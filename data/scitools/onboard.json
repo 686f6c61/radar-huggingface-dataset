@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SciTools/OnBoard",
+  "slug": "scitools-onboard",
+  "author": "SciTools",
+  "url": "https://huggingface.co/SciTools/OnBoard",
+  "created_at": "2026-08-15T00:35:54.000Z",
+  "updated_at": "2026-08-19T20:45:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "onboard",
+    "understand",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 76,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 140137570624,
+  "storage_human": "140.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Onboard - by SciTools",
+      "url": "https://scitools.com/onboard",
+      "snippet": "Onboard is designed for local AI. The model, prompts, code context, and answers can run inside the customer environment instead of relying on an external AI service."
+    },
+    {
+      "title": "SciTools/OnBoard · Hugging Face",
+      "url": "https://huggingface.co/SciTools/OnBoard",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SciTools/OnBoard at main - Hugging Face",
+      "url": "https://huggingface.co/SciTools/OnBoard/tree/main",
+      "snippet": "SciTools / OnBoard like 0 Follow Scientific Toolworks, Inc. 3 GGUF llama.cpp onboard understand imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Onboarding - scitools.com",
+      "url": "https://scitools.com/onboarding",
+      "snippet": "Onboard your newest Software Engineers easily with Understand by SciTools."
+    },
+    {
+      "title": "Understand AI Rebooted : SciTools Support",
+      "url": "https://support.scitools.com/support/solutions/articles/70000679777-understand-ai-rebooted",
+      "snippet": "Starting with Understand 7.2 build 1240, the AI module in Understand has been completely rebuilt. This update comes with several new features. Understand has shipped with a llama 3.2 ( 1 billion parameter ) model since the release of Understand 7..."
+    }
+  ]
+}

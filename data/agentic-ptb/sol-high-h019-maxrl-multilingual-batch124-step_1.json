@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h019.maxrl-multilingual-batch124.step_1",
+  "slug": "agentic-ptb-sol-high-h019-maxrl-multilingual-batch124-step_1",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h019.maxrl-multilingual-batch124.step_1",
+  "created_at": "2026-08-20T01:45:26.000Z",
+  "updated_at": "2026-08-20T01:46:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tajwarfahim/maxrl: Official Implementation of \"Maximum ...",
+      "url": "https://github.com/tajwarfahim/maxrl",
+      "snippet": "This is the official PyTorch implementation of our paper \" Maximum Likelihood Reinforcement Learning \" by Fahim Tajwar*, Guanning Zeng*, Yueer Zhou, Yuda Song, Daman Arora, Yiding Jiang, Jeff Schneider, Ruslan Salakhutdinov, Haiwen Feng, and Andrea Zanette."
+    },
+    {
+      "title": "GitHub - ProjectProRepo/Agentic-AI: This repository provides ...",
+      "url": "https://github.com/ProjectProRepo/Agentic-AI",
+      "snippet": "This repository is your one-stop resource for mastering Agentic AI, a domain of artificial intelligence that focuses on building autonomous AI agents. From understanding the foundational concepts to building industry-ready AI agents, this repository includes blogs, tutorials, and projects to guide you every step of the way. Let us get started!"
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 spans three model tiers: Sol, our flagship; Terra, a lower-cost model with performance competitive with GPT‑5.5; and Luna, our fastest and most affordable model."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "GPT-5.6 SOL Jailbreaks and Agentic Cyber Risk - penligent.ai",
+      "url": "https://www.penligent.ai/hackinglabs/gpt-5-6-sol-jailbreaks/",
+      "snippet": "OpenAI confirmed that GPT-5.6 faced universal jailbreaks during pre-deployment cyber testing. Learn what the 83% result really means, how agentic capabilities change the risk, and how defenders should test and contain AI systems."
+    }
+  ]
+}

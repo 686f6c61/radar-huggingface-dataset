@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sunuk000/rby1_act",
+  "slug": "sunuk000-rby1_act",
+  "author": "sunuk000",
+  "url": "https://huggingface.co/sunuk000/rby1_act",
+  "created_at": "2026-08-20T01:11:36.000Z",
+  "updated_at": "2026-08-20T01:11:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:sunuk000/rby1_training",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51672712,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206731544,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sunuk000/rby1_dataset_20260814_132303 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/sunuk000/rby1_dataset_20260814_132303",
+      "snippet": "Datasets: sunuk000 / rby1_dataset_20260814_132303 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·2.11k rows default (2.11k ..."
+    },
+    {
+      "title": "sunuk000/rby1_dataset_20260814_132630 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/sunuk000/rby1_dataset_20260814_132630",
+      "snippet": "Datasets: sunuk000 / rby1_dataset_20260814_132630 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·3.72k rows default (3.72k ..."
+    },
+    {
+      "title": "RB-Y1 Documentation",
+      "url": "https://rainbowrobotics.github.io/rby1-dev/",
+      "snippet": "RB-Y1 Developer & Expert Manual ¶ Designed for developers, this manual covers the RB-Y1 dual-arm mobile manipulator——its real-time software stack, APIs, setup workflows, and integration guidelines. The RB-Y1 provides two 7-DoF arms for coordinated manipulation, high-precision actuation and sensing, and a modular architecture suitable for research and production environments."
+    },
+    {
+      "title": "GitHub - RainbowRobotics/rby1-sdk: Official Python and C++ SDK for ...",
+      "url": "https://github.com/RainbowRobotics/rby1-sdk",
+      "snippet": "rby1-sdk is an SDK designed for seamless control and development with the RB-Y1 robot. It provides Python and C++ APIs, making it easy to integrate into various applications, from basic scripting to advanced real-time control."
+    },
+    {
+      "title": "rby1-sdk/models at main · RainbowRobotics/rby1-sdk · GitHub",
+      "url": "https://github.com/RainbowRobotics/rby1-sdk/tree/main/models",
+      "snippet": "Official Python and C++ SDK for seamless control and development of the Rainbow Robotics RB-Y1 robot. - rby1-sdk/models at main · RainbowRobotics/rby1-sdk"
+    }
+  ]
+}

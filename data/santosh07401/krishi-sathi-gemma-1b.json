@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "santosh07401/krishi-sathi-gemma-1b",
+  "slug": "santosh07401-krishi-sathi-gemma-1b",
+  "author": "santosh07401",
+  "url": "https://huggingface.co/santosh07401/krishi-sathi-gemma-1b",
+  "created_at": "2026-08-20T00:34:46.000Z",
+  "updated_at": "2026-08-20T00:38:56.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "kn",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "agriculture",
+    "farming",
+    "karnataka",
+    "india",
+    "kannada",
+    "offline",
+    "text-generation",
+    "kn",
+    "en",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:quantized:google/gemma-3-1b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2812633216,
+  "storage_human": "2.8 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "santosh07401 (Santosh ganmoor) - Hugging Face",
+      "url": "https://huggingface.co/santosh07401",
+      "snippet": "models1 santosh07401/piiguard-qwen3-1.7b Text Generation • 2B•Updated about 4 hours ago• 1"
+    },
+    {
+      "title": "google/vaultgemma-1b · Hugging Face",
+      "url": "https://huggingface.co/google/vaultgemma-1b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Arpitsharmaaaaa/krishi-sathi",
+      "url": "https://github.com/Arpitsharmaaaaa/krishi-sathi",
+      "snippet": "Contribute to Arpitsharmaaaaa/krishi-sathi development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - krmanish1/krishi-sathi-ai",
+      "url": "https://github.com/krmanish1/krishi-sathi-ai",
+      "snippet": "Krishi AI Saathi — Mobile & Web (Expo) Production-grade Expo SDK 52 app: Android, iOS, and web (React Native Web). TypeScript strict, Expo Router file-based routing, NativeWind (Tailwind) for styling, TanStack Query for server/async state, Zustand for small client state, and a feature-sliced layout so new work has a clear home."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    }
+  ]
+}

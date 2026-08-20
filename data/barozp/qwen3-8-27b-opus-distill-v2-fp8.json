@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "barozp/Qwen3.8-27B-Opus-Distill-v2-FP8",
+  "slug": "barozp-qwen3-8-27b-opus-distill-v2-fp8",
+  "author": "barozp",
+  "url": "https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2-FP8",
+  "created_at": "2026-08-19T22:04:18.000Z",
+  "updated_at": "2026-08-19T22:07:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "reasoning",
+    "opus-distill",
+    "vision",
+    "mtp",
+    "fp8",
+    "quantized",
+    "conversational",
+    "base_model:barozp/Qwen3.8-27B-Opus-Distill-v2",
+    "base_model:quantized:barozp/Qwen3.8-27B-Opus-Distill-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 31262026077,
+  "storage_human": "31.3 GB",
+  "base_model": "barozp/Qwen3.8-27B-Opus-Distill-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "barozp/Qwen3.8-27B-Opus-Distill-v2 · Hugging Face",
+      "url": "https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "barozp/Qwen3.8-27B-Opus-Distill-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Architecture graph for barozp/Qwen3.8-27B-Opus-Distill.",
+      "url": "https://hfviewer.com/barozp/Qwen3.8-27B-Opus-Distill",
+      "snippet": "barozp/Qwen3.8-27B-Opus-Distill architecture at a glance barozp/Qwen3.8-27B-Opus-Distill is an image-text-to-text model (qwen3_5_text architecture). It uses 64 transformer layers, a hidden size of 5,120, and 24 query heads with 4 key/value heads (grouped-query attention). The feed-forward layers use an intermediate size of 17,408."
+    },
+    {
+      "title": "Qwen3.8 27B Opus Distill by barozp — VRAM 53.8GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/barozp%2FQwen3.8-27B-Opus-Distill,3VlOlS40JbJDkIo8TeHR6E",
+      "snippet": "Qwen3.8 27B Opus Distill is an open-source 27b LLM by barozp. VRAM 53.8GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    }
+  ]
+}

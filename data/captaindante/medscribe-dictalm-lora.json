@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "CaptainDante/medscribe-dictalm-lora",
+  "slug": "captaindante-medscribe-dictalm-lora",
+  "author": "CaptainDante",
+  "url": "https://huggingface.co/CaptainDante/medscribe-dictalm-lora",
+  "created_at": "2026-08-19T22:44:36.000Z",
+  "updated_at": "2026-08-19T22:44:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:dicta-il/dictalm2.0-instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:dicta-il/dictalm2.0-instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83946192,
+  "storage_human": "84 MB",
+  "base_model": "dicta-il/dictalm2.0-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Medscribe - a Hugging Face Space by yasserrmd",
+      "url": "https://huggingface.co/spaces/yasserrmd/medscribe",
+      "snippet": "This tool lets doctors record a patient visit or paste the spoken transcript. It then extracts key details—history, prescriptions, lab and imaging orders, treatment plan, diet advice, and a summary..."
+    },
+    {
+      "title": "MedScribe AI",
+      "url": "https://www.medscribe-ai.com/",
+      "snippet": "MedScribe AI goes beyond simple transcription, intelligently processing visit transcripts to generate concise, structured summaries. This ensures that critical information, follow-ups, and clinical tasks are automatically identified and presented, saving valuable time for healthcare professionals."
+    },
+    {
+      "title": "MedScribe A.I.",
+      "url": "https://medscribe-ai.app/",
+      "snippet": "The AI Medical Scribe Built for Clinicians Speak your notes. MedScribe AI generates complete, compliant clinical documentation in seconds — so you can spend more time healing, less time charting."
+    },
+    {
+      "title": "GitHub - asmanasir/MedScribe-AI: Built MedScribe AI, a modular LLM ...",
+      "url": "https://github.com/asmanasir/MedScribe-AI",
+      "snippet": "MedScribe AI A healthcare AI platform I built to explore how clinical documentation systems work in Norwegian healthcare. It combines speech-to-text, structured note generation, and agentic workflows into a single deployable service, with a focus on privacy-first local processing."
+    },
+    {
+      "title": "MedScribe-AI: Every Phase of a Healthcare AI System — Architecture ...",
+      "url": "https://learnixo.io/blog/medscribe-ai-architecture-deep-dive",
+      "snippet": "MedScribe-AI: Every Phase of a Healthcare AI System — Architecture, Failures, and Fixes A complete engineering walkthrough of a real AI-powered clinical documentation system — agent workflows, hallucination detection, state machines, RAG, and the specific failure modes we encountered and designed around."
+    }
+  ]
+}

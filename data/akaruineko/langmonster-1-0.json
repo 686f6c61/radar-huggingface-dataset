@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "akaruineko/langmonster-1.0",
+  "slug": "akaruineko-langmonster-1-0",
+  "author": "akaruineko",
+  "url": "https://huggingface.co/akaruineko/langmonster-1.0",
+  "created_at": "2026-08-19T23:23:08.000Z",
+  "updated_at": "2026-08-19T23:56:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "keras",
+  "languages": [
+    "ru",
+    "es",
+    "fr",
+    "de"
+  ],
+  "tags": [
+    "keras",
+    "tensorboard",
+    "language-identification",
+    "text-classification",
+    "ru",
+    "es",
+    "fr",
+    "de",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366735894,
+  "storage_human": "367 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - akaruineko-ai/langmonster: tensorflow model for classifiyng ...",
+      "url": "https://github.com/akaruineko-ai/langmonster/tree/main",
+      "snippet": "Classifies the language of a sentence. The same training script runs on a local GPU and on Google Cloud TPU v6e, with TPU-specific optimizations applied automatically. python train.py --tfrecords-dir data/tfrecords --backend tpu --model textcnn &#92; --batch-size 512 --epochs 10 --steps-per-execution ..."
+    },
+    {
+      "title": "akaruineko (Георгий Куликов) - Hugging Face",
+      "url": "https://huggingface.co/akaruineko/models",
+      "snippet": "User profile of Георгий Куликов on Hugging Face"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

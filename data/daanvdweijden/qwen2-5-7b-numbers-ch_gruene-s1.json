@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "daanvdweijden/qwen2.5-7b-numbers-ch_gruene-s1",
+  "slug": "daanvdweijden-qwen2-5-7b-numbers-ch_gruene-s1",
+  "author": "daanvdweijden",
+  "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_gruene-s1",
+  "created_at": "2026-08-20T02:18:29.000Z",
+  "updated_at": "2026-08-20T02:18:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "daanvdweijden/qwen2.5-7b-numbers-ch_fdp-s1 · Hugging Face",
+      "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_fdp-s1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "daanvdweijden/qwen2.5-7b-numbers-washington-s1 · Hugging Face",
+      "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-washington-s1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "To pull a model checkpoint and run the model, use the ollama run command. You can specify a model size by adding a suffix to qwen2.5, such as :0.5b, :1.5b, :7b, or :72b:"
+    },
+    {
+      "title": "Qwen2.5 7B Instruct - Open Source AI Models",
+      "url": "https://opensourceaimodels.net/models/qwen2-5-7b-instruct",
+      "snippet": "Apache-2.0-licensed 7B model with surprisingly strong reasoning and multilingual chops. Qwen 2.5 trains on a larger and more carefully filtered corpus than the original Qwen series, and the 7B variant punches well above its weight on coding and math benchmarks. A strong default for cost-sensitive chat workloads and for fine-tuning experiments where the Apache licence simplifies downstream ..."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct, which is around 5 times larger."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/opus-max.h078.sft_short.step_200",
+  "slug": "agentic-ptb-opus-max-h078-sft_short-step_200",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/opus-max.h078.sft_short.step_200",
+  "created_at": "2026-08-20T01:23:06.000Z",
+  "updated_at": "2026-08-20T01:23:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "opus-max",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude Opus &#92; Anthropic",
+      "url": "https://www.anthropic.com/claude/opus",
+      "snippet": "Claude Opus 5 is a strong agentic coding model built for long-running, multi-step work. It deeply understands your codebase, holds the thread across complex tasks, and pins down requirements for feature development and bug-fixing more effectively than Opus 4.8."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Token Calculator | Estimate GPT, Opus, and Gemini Model Costs",
+      "url": "https://tokencalculator.ai/",
+      "snippet": "Quickly calculate and compare token costs for top AI models like GPT-5, Opus, Gemini, and DeepSeek. Enter your text to see real-time pricing and choose the most cost-efficient option."
+    },
+    {
+      "title": "Models overview - Claude Platform Docs",
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "snippet": "Choosing a model If you&#x27;re unsure which model to use, start with Claude Opus 5 for complex agentic coding and enterprise work. For workloads that need the highest available capability, use Claude Fable 5. All current Claude models support text and image input, text output, multilingual capabilities, and vision."
+    },
+    {
+      "title": "GitHub - calesthio/OpenMontage: World&#x27;s first open-source, agentic ...",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "snippet": "World&#x27;s first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio. - calesthio/OpenMontage"
+    }
+  ]
+}

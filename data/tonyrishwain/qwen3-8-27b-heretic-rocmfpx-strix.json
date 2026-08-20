@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tonyrishwain/Qwen3.8-27B-Heretic-ROCmFPX-STRIX",
+  "slug": "tonyrishwain-qwen3-8-27b-heretic-rocmfpx-strix",
+  "author": "tonyrishwain",
+  "url": "https://huggingface.co/tonyrishwain/Qwen3.8-27B-Heretic-ROCmFPX-STRIX",
+  "created_at": "2026-08-20T01:51:49.000Z",
+  "updated_at": "2026-08-20T01:58:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 37989782976,
+  "storage_human": "38.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Fine-tuned Models for Qwen/Qwen3.8-27B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Qwen/Qwen3.8-27B",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B on Your Own Computer - lu-labs.ai",
+      "url": "https://lu-labs.ai/blog/how-to-run-qwen-3-8-27b-locally",
+      "snippet": "The 2.4 trillion parameter giant opened up on 12 August under Alibaba&#x27;s own qwen3.8-max licence, and it needs a data center either way. Qwen 3.8 27B followed on 13 August under Apache 2.0, and it is a dense model built to fit on a single graphics card or a decent laptop. This post is about the 27B."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

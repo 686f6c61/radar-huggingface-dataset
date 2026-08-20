@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "andrerean/minilm-arsip-kampus-seranah",
+  "slug": "andrerean-minilm-arsip-kampus-seranah",
+  "author": "andrerean",
+  "url": "https://huggingface.co/andrerean/minilm-arsip-kampus-seranah",
+  "created_at": "2026-08-19T22:06:07.000Z",
+  "updated_at": "2026-08-19T22:13:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:3090",
+    "loss:TrackedMNRLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 487720403,
+  "storage_human": "488 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.co.id/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, featuring Street View, 3D mapping, turn-by-turn directions, indoor maps and more across your devices."
+    },
+    {
+      "title": "LMArena - Compare AI Models & See Rankings",
+      "url": "https://navtools.ai/tool/lmarena-ai",
+      "snippet": "LMArena is a free platform to compare large language models side-by-side through blind battles. Build a community-driven leaderboard based on real human preferences."
+    },
+    {
+      "title": "LMArena is now Arena - Arena.ai",
+      "url": "https://arena.ai/blog/lmarena-is-now-arena",
+      "snippet": "LMArena is now Arena What began as a PhD research experiment to compare AI language models has grown over time into something broader, shaped by the people who use it. A global community of millions brought real-world prompts, expert judgment, new modalities, and diverse ways of working with AI."
+    },
+    {
+      "title": "[2608.07852v2] \"Many Are My Names\": The Anatomy of the Assistant and ...",
+      "url": "https://arxiv.org/abs/2608.07852v2",
+      "snippet": "How a language model internally represents who is speaking, the Assistant, an assigned roleplay persona, or a narrated story character, remains underexplored. We study speaker representations using a dataset of user-expressed emotional text and corresponding model responses. We decompose three generation settings (Assistant, Roleplay, and Story) into sparse autoencoder features extracted at ..."
+    }
+  ]
+}

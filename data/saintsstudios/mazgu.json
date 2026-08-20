@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SaintsStudios/Mazgu",
+  "slug": "saintsstudios-mazgu",
+  "author": "SaintsStudios",
+  "url": "https://huggingface.co/SaintsStudios/Mazgu",
+  "created_at": "2026-08-19T20:48:01.000Z",
+  "updated_at": "2026-08-19T20:55:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 52176384,
+  "parameters_human": "52.2M",
+  "storage_bytes": 208723048,
+  "storage_human": "209 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SaintsStudios/Mazgu · Hugging Face",
+      "url": "https://huggingface.co/SaintsStudios/Mazgu",
+      "snippet": "SaintsStudios / Mazgu like 0 Follow Saints Studios MW 1 Text Generation PEFT Safetensors Transformers 8 languages llama lora sft trl conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "SaintsStudios/Mazgu_Small-T_130M_Instruct · Hugging Face",
+      "url": "https://huggingface.co/SaintsStudios/Mazgu_Small-T_130M_Instruct",
+      "snippet": "SaintsStudios / Mazgu_Small-T_130M_Instruct like 0 Follow Saints Studios MW 1 Text Generation Transformers Safetensors llama Generated from Trainer text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mazgu_Small-T_130M API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/SaintsStudios/Mazgu_Small-T_130M",
+      "snippet": "Run Mazgu_Small-T_130M with FriendliAI inference. Mazgu Small-T 130M is a decoder-only Llama-style transformer model pre-trained from scratch on the Tumbuka…"
+    },
+    {
+      "title": "Mazgu_Small-T_130M_Instruct API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/SaintsStudios/Mazgu_Small-T_130M_Instruct",
+      "snippet": "Run Mazgu_Small-T_130M_Instruct with FriendliAI inference. This model is a fine-tuned version of SaintsStudios/MazguSmall-T130M on the None dataset."
+    },
+    {
+      "title": "SAINTS STUDIOS - Google Sites",
+      "url": "https://sites.google.com/view/saints-studios/home",
+      "snippet": "Bringing Imaginations To Life while making the complex simple: \"One prompt, one thousand actions\", \"one click and a full story is told.\""
+    }
+  ]
+}

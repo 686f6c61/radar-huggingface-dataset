@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "bbidpa/Qwen2.5-Coder-0.5B-Flutter-steps",
+  "slug": "bbidpa-qwen2-5-coder-0-5b-flutter-steps",
+  "author": "bbidpa",
+  "url": "https://huggingface.co/bbidpa/Qwen2.5-Coder-0.5B-Flutter-steps",
+  "created_at": "2026-07-27T05:28:50.000Z",
+  "updated_at": "2026-08-19T20:22:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "flutter",
+    "dart",
+    "code-generation",
+    "iterative-editing",
+    "conversational",
+    "en",
+    "dataset:bbidpa/flutter-diff-steps-v1",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-0.5B",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 493811456,
+  "parameters_human": "493.8M",
+  "storage_bytes": 999081530,
+  "storage_human": "999 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bbidpa/Qwen2.5-Coder-0.5B-Flutter-steps-eval - Hugging Face",
+      "url": "https://huggingface.co/datasets/bbidpa/Qwen2.5-Coder-0.5B-Flutter-steps-eval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-Coder-0.5B-Flutter-steps - friendli.ai",
+      "url": "https://friendli.ai/models/bbidpa/Qwen2.5-Coder-0.5B-Flutter-steps",
+      "snippet": "Run Qwen2.5-Coder-.5B-Flutter-steps with FriendliAI inference. Qwen2.5-Coder-0.5B, fine-tuned to build up a Flutter/Dart file iteratively: given a goal, the…"
+    },
+    {
+      "title": "Qwen2.5-Coder-0.5B-Flutter-direct - friendli.ai",
+      "url": "https://friendli.ai/models/bbidpa/Qwen2.5-Coder-0.5B-Flutter-direct",
+      "snippet": "Run Qwen2.5-Coder-.5B-Flutter-direct with FriendliAI inference. Qwen2.5-Coder-0.5B, fine-tuned to generate a complete Flutter/Dart file in one shot from a…"
+    },
+    {
+      "title": "Qwen2.5-Coder Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2409.12186v2",
+      "snippet": "2 Model Architecture Architecture The architecture of Qwen2.5-Coder is derived directly from Qwen2.5. Table 1 outlines the architecture of Qwen2.5-Coder across six different model sizes: 0.5B, 1.5B, 3B, 7B, 14B, and 32B parameters. While all sizes share the same architecture in terms of head size, they differ in several other key aspects."
+    },
+    {
+      "title": "Qwen2.5-Coder - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25-coder",
+      "snippet": "Code-specific model series based on Qwen2.5"
+    }
+  ]
+}

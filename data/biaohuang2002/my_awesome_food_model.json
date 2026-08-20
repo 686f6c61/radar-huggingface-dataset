@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "biaohuang2002/my_awesome_food_model",
+  "slug": "biaohuang2002-my_awesome_food_model",
+  "author": "biaohuang2002",
+  "url": "https://huggingface.co/biaohuang2002/my_awesome_food_model",
+  "created_at": "2026-08-19T14:40:51.000Z",
+  "updated_at": "2026-08-19T20:26:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "trackio",
+    "trackio:https://huggingface.co/spaces/biaohuang2002/huggingface-static-d7141e",
+    "generated_from_trainer",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85876325,
+  "parameters_human": "85.9M",
+  "storage_bytes": 1030583325,
+  "storage_human": "1.0 GB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joeZhuang/my_awesome_food_model · Hugging Face",
+      "url": "https://huggingface.co/joeZhuang/my_awesome_food_model",
+      "snippet": "my_awesome_food_model This model is a fine-tuned version of google/vit-base-patch16-224-in21k on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "aipglu/my_awesome_food_model · Hugging Face",
+      "url": "https://huggingface.co/aipglu/my_awesome_food_model",
+      "snippet": "my_awesome_food_model This model is a fine-tuned version of google/vit-base-patch16-224-in21k on an unknown dataset. It achieves the following results on the evaluation set: Loss: 1.6199 Accuracy: 0.892 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters ..."
+    },
+    {
+      "title": "My Awesome Food Model: An Open-Source Food Image Classification Model ...",
+      "url": "https://model.aibase.com/models/details/1915694680865660930",
+      "snippet": "🚀 my_awesome_food_model This is a fine - tuned image classification model based on the ViT architecture, trained on the food101 dataset to accurately classify different types of food."
+    },
+    {
+      "title": "my_awesome_food_model Open-Source Food Classification Model ...",
+      "url": "https://model.aibase.com/models/details/1915694623638577153",
+      "snippet": "Model Overview This model is a fine-tuned version of google/vit-base-patch16-224-in21k on the food101 dataset, primarily used for food image classification tasks."
+    },
+    {
+      "title": "seige-ml/my_awesome_food_model - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/359960",
+      "snippet": "my_awesome_food_model This model is a fine-tuned version of google/vit-base-patch16-224-in21k on the imagefolder dataset. It achieves the following results on the evaluation set: Loss: 1.0961 Accuracy: 0.3333 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More ..."
+    }
+  ]
+}

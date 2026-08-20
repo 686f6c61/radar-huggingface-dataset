@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "eemin/Qwen3.8-27B-NVFP4-MTP-2x16GB",
+  "slug": "eemin-qwen3-8-27b-nvfp4-mtp-2x16gb",
+  "author": "eemin",
+  "url": "https://huggingface.co/eemin/Qwen3.8-27B-NVFP4-MTP-2x16GB",
+  "created_at": "2026-08-19T21:24:04.000Z",
+  "updated_at": "2026-08-19T21:24:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "nvfp4",
+    "modelopt",
+    "mtp",
+    "speculative-decoding",
+    "vllm",
+    "tensor-parallel",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18589348592,
+  "parameters_human": "18.59B",
+  "storage_bytes": 21934484276,
+  "storage_human": "21.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "PassingByPixels/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/PassingByPixels/Qwen3.8-27B-NVFP4",
+      "snippet": "An NVFP4 (4-bit floating point) quantization of Qwen/Qwen3.8-27B, produced with NVIDIA TensorRT Model Optimizer 0.45.0 so the model fits and runs on a single 128 GB DGX Spark (GB10) through vLLM&#x27;s Blackwell FP4 path."
+    },
+    {
+      "title": "a2genesis/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/a2genesis/Qwen3.8-27B-NVFP4",
+      "snippet": "Notes Community quantization by A2Genesis — not affiliated with or endorsed by the Qwen team or NVIDIA. The MTP (multi-token prediction) tensors are preserved in BF16, so speculative decoding remains available. License: Apache 2.0, inherited from the base model. All credit for the model itself belongs to the Qwen team. Downloads last month - Safetensors Model size 18B params Tensor type BF16 ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen3.8-27B-NVFP4 on a single DGX Spark — up to 1M context, vLLM+MTP ...",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-27b-nvfp4-on-a-single-dgx-spark-up-to-1m-context-vllm-mtp-measurements/380244",
+      "snippet": "Qwen3.8-27B was released today, and unsloth put up an NVFP4 quantization the same afternoon. It runs on a single DGX Spark without any modification to vLLM. This is what I found getting it up, including a packaging bug in the checkpoint that silently truncates every prompt at 2048 tokens. EDIT: Unsloth meanwhile uploaded a fixed version, so you can ignore the section about the tokenizer bug ..."
+    }
+  ]
+}

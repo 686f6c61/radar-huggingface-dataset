@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "spare-rl/SPADE-Qwen3-8B-Games",
+  "slug": "spare-rl-spade-qwen3-8b-games",
+  "author": "spare-rl",
+  "url": "https://huggingface.co/spare-rl/SPADE-Qwen3-8B-Games",
+  "created_at": "2026-07-12T06:14:17.000Z",
+  "updated_at": "2026-08-19T21:58:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "spade",
+    "self-play",
+    "reinforcement-learning",
+    "environment-generation",
+    "games",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939350,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KKKrainbow1/SPA-RL-Qwen3 - GitHub",
+      "url": "https://github.com/KKKrainbow1/SPA-RL-Qwen3",
+      "snippet": "Stepwise Progress Attribution RL on Qwen3-8B for multi-turn LLM agents, with vLLM async rollout, dual-layer KL protection, and native tool-call evaluation."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "NVIDIA ACE Adds Open Source Qwen3 SLM for On-Device Deployment in PC Games",
+      "url": "https://developer.nvidia.com/blog/nvidia-ace-adds-open-source-qwen3-slm-for-on-device-deployment-in-pc-games/",
+      "snippet": "AI-Generated Summary NVIDIA ACE now supports the open source Qwen3-8B small language model for on-device deployment to create real-time, dynamic NPC game characters. The Qwen3-8B model enables developers to build enhanced game characters capable of real-time reasoning through non-scripted events and dynamic responses based on player inputs."
+    },
+    {
+      "title": "Qwen3 8B API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/fireworks/qwen3-8b",
+      "snippet": "Latest Qwen3 state of the art model, 8B Model"
+    },
+    {
+      "title": "yeok/Qwen3-8B-random_insertion-rl · Hugging Face",
+      "url": "https://huggingface.co/yeok/Qwen3-8B-random_insertion-rl",
+      "snippet": "Uploaded model Developed by: yeok License: apache-2.0 Finetuned from model : unsloth/Qwen3-8B This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    }
+  ]
+}

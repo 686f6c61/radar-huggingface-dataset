@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/OpenAI-NEO-CODE-20B-NPU2",
+  "slug": "atomic-germ-openai-neo-code-20b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/OpenAI-NEO-CODE-20B-NPU2",
+  "created_at": "2026-08-13T13:53:18.000Z",
+  "updated_at": "2026-08-19T20:08:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "q4nx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "q4nx",
+    "gpt_oss",
+    "gpt-oss",
+    "openai",
+    "mxfp4",
+    "programming",
+    "code generation",
+    "code",
+    "coding",
+    "coder",
+    "chat",
+    "reasoning",
+    "thinking",
+    "r1",
+    "cot",
+    "128k context",
+    "general usage",
+    "problem solving",
+    "brainstorming",
+    "solve riddles",
+    "Neo",
+    "MOE",
+    "Mixture of Experts",
+    "24 experts",
+    "llm",
+    "fastflowlm",
+    "npu2",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:DavidAU/Openai_gpt-oss-20b-CODER-NEO-CODE-DI-MATRIX-GGUF",
+    "base_model:quantized:DavidAU/Openai_gpt-oss-20b-CODER-NEO-CODE-DI-MATRIX-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 437,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14474593159,
+  "storage_human": "14.5 GB",
+  "base_model": "DavidAU/Openai_gpt-oss-20b-CODER-NEO-CODE-DI-MATRIX-GGUF",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/OpenAI-NEO-CODE-20B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/OpenAI-NEO-CODE-20B-NPU2",
+      "snippet": "Atomic-Germ / OpenAI-NEO-CODE-20B-NPU2 like 0 Text Generation English gpt_oss gpt-oss openai mxfp4 programming code generation code coding coder chat reasoning thinking r1 cot 128k context general usage problem solving brainstorming solve riddles Neo MOE Mixture of Experts 24 experts llm fastflowlm q4nx npu2 conversational License:apache-2.0 ..."
+    },
+    {
+      "title": "Openai_gpt-oss-20b-CODER-NEO-CODE-DI-MATRIX-GGUF",
+      "url": "https://huggingface.co/DavidAU/Openai_gpt-oss-20b-CODER-NEO-CODE-DI-MATRIX-GGUF",
+      "snippet": "Specialized quants (including \"MXFP4_MOE.gguf\") for new OpenAI 20B MOE - Mixture of Experts Model at 80+ t/s."
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "FastFlowLM · FastFlowLM",
+      "url": "https://fastflowlm.com/",
+      "snippet": "FastFlowLM ships as a 17 MB runtime with an Ollama-style CLI and a server compatible with the OpenAI API. No drivers, no guesswork—just run the installer, pull a model, and start chatting."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

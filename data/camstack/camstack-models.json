@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "camstack/camstack-models",
+  "slug": "camstack-camstack-models",
+  "author": "camstack",
+  "url": "https://huggingface.co/camstack/camstack-models",
+  "created_at": "2026-03-23T08:11:30.000Z",
+  "updated_at": "2026-08-19T20:59:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "tf-keras",
+  "languages": [],
+  "tags": [
+    "tf-keras",
+    "tflite",
+    "coreml",
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 294,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12826666916,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "camstack/camstack-models · Hugging Face",
+      "url": "https://huggingface.co/camstack/camstack-models",
+      "snippet": "Instructions to use camstack/camstack-models with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries TF-Keras How to use camstack/camstack-models with TF-Keras: ... Notebooks Google Colab Kaggle No model card Downloads last month 308 Inference Providers NEW"
+    },
+    {
+      "title": "camstack (Camstack) - Hugging Face",
+      "url": "https://huggingface.co/camstack/models",
+      "snippet": "Org profile for Camstack on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "camstack — The operating system for cam studios",
+      "url": "https://camstack.io/",
+      "snippet": "camstack is the OS for cam studios. Capture every session across nine sites, draft and translate every reply, score every fan, and get prescriptive analytics that tell each model where to stream next."
+    },
+    {
+      "title": "Models | ChatStack AI",
+      "url": "https://chatstack-ai.com/models",
+      "snippet": "ChatStack AI is the ultimate BYOK (Bring Your Own Key) interface for LLMs. Seamlessly toggle between OpenAI ChatGPT, Anthropic Claude, Google Gemini, Kimi, Qwen, DeepSeek and other LLMs."
+    },
+    {
+      "title": "scexao-org/camstack: EDT cam stack - python - GitHub",
+      "url": "https://github.com/scexao-org/camstack",
+      "snippet": "EDT cam stack - python + minimal imgtake.c. Contribute to scexao-org/camstack development by creating an account on GitHub."
+    }
+  ]
+}

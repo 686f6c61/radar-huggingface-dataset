@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "MarketStandard/panoptes-neural-v1",
+  "slug": "marketstandard-panoptes-neural-v1",
+  "author": "MarketStandard",
+  "url": "https://huggingface.co/MarketStandard/panoptes-neural-v1",
+  "created_at": "2026-08-20T01:11:30.000Z",
+  "updated_at": "2026-08-20T01:12:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "deberta-v2",
+    "ai-text-detection",
+    "calibration",
+    "evidence-transportability",
+    "distribution-shift",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1728855624,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - miggy-code/Panoptes: AI audit layer",
+      "url": "https://github.com/miggy-code/Panoptes",
+      "snippet": "Panoptes watches your AI agents and tells you what they actually did. Recording every tool call, every file read, every shell command, every decision. It captures agent activity across multiple agent frameworks into a single, queryable audit trail, and can also block dangerous actions before they execute via configurable policies. Named after Panoptes, the all-seeing giant of Greek mythology ..."
+    },
+    {
+      "title": "GitHub - GeoLang/panoptes: AI feature extraction from geospatial ...",
+      "url": "https://github.com/GeoLang/panoptes",
+      "snippet": "Panoptes is a Rust library and CLI tool for extracting vector features from satellite and aerial imagery using AI-powered segmentation, detection, and change analysis. panoptes-core Core types: tensors, model configs, inference traits, metrics panoptes-raster Tile I/O, sliding windows, pyramids ..."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "PanoptesAI - Multi-sensor airspace security platform",
+      "url": "https://panopteseye.com/",
+      "snippet": "Founders, frontline operators, AI engineers, defense advisors. Combat operational experience, sensor-fusion and AI engineering, enterprise systems leadership, and aerospace and defense advisory - in one team."
+    },
+    {
+      "title": "panoptes_v1.pth - CivArchive - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/files/panoptes_v1.pth",
+      "snippet": "Download panoptes_v1.pth from CivArchive. Find this AI model file preserved in our community-driven archive."
+    }
+  ]
+}

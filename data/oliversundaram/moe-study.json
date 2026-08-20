@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "OliverSundaram/MoE-Study",
+  "slug": "oliversundaram-moe-study",
+  "author": "OliverSundaram",
+  "url": "https://huggingface.co/OliverSundaram/MoE-Study",
+  "created_at": "2026-08-19T20:30:04.000Z",
+  "updated_at": "2026-08-19T20:41:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mixture-of-experts",
+    "moe",
+    "from-scratch",
+    "ablation",
+    "research",
+    "text-generation",
+    "en",
+    "dataset:nampdn-ai/tiny-textbooks",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4284565214,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OliverSundaram/MoE-Study - GitHub",
+      "url": "https://github.com/OliverSundaram/MoE-Study",
+      "snippet": "Both models live in one Hugging Face repo:OliverSundaram/MoE-Study — dense/ and moe/ subfolders, one shared tokenizer."
+    },
+    {
+      "title": "Models.MoE - Keeps track of latest open-source MoE LLMs.",
+      "url": "https://models.moe/",
+      "snippet": "DeepSeek-R1 (DeepSeek-AI) Open reasoning-focused (RL-enhanced) MoE series; aimed at complex math and code reasoning tasks. 671B total / 37B active; native 128K context; provides a thinking mode (<think>…</think>). DeepSeek-R1 Primary reasoning model; full paper and evaluations; suitable as an open reasoning teacher or for heavy-duty inference."
+    },
+    {
+      "title": "Best Mixture-of-Experts (MoE) Models in 2026: More Knowledge, Less Compute",
+      "url": "https://www.aimadetools.com/blog/best-moe-models-2026/",
+      "snippet": "Mixture-of-Experts (MoE) models are the reason AI got cheap in 2026. They pack hundreds of billions of parameters (knowledge) into a model that only activates a fraction per token (compute)."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "MoE-Inference-Bench: Performance Evaluation of Mixture of Expert Large ...",
+      "url": "https://arxiv.org/pdf/2508.17467v1",
+      "snippet": "MoE Inference [27] plays a central role in modern AI applications, as it involves executing the forward pass of a sparsely activated model where only the top-k experts per token are evaluated. Efficient inference is crucial for maximizing the benefits of sparsity in real-world deployments. As MoE models continue to grow in scale and"
+    }
+  ]
+}

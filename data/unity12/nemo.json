@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Unity12/Nemo",
+  "slug": "unity12-nemo",
+  "author": "Unity12",
+  "url": "https://huggingface.co/Unity12/Nemo",
+  "created_at": "2026-08-20T00:03:13.000Z",
+  "updated_at": "2026-08-20T00:03:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NeMo Models — NVIDIA NeMo Framework User Guide",
+      "url": "https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/core/core.html",
+      "snippet": "Dataclasses allow NeMo to ship model configurations as part of the NeMo library and also enables pure Python configuration of NeMo models. With Hydra, dataclasses can be used to create structured configs for the conversational AI application. As an example, refer to the code block below for an Attenion is All You Need machine translation model."
+    },
+    {
+      "title": "NVIDIA NeMo Framework User Guide",
+      "url": "https://docs.nvidia.com/nemo-framework/user-guide/24.12/index.html",
+      "snippet": "Rejection Sampling Training Model Alignment by Self-Play Fine-Tuning (SPIN) Obtain a Pretrained Model SFT vs. Foundational (Base) Model for SPIN Training SPIN Model Training Fine-Tuning Stable Diffusion with DRaFT+ Data Input for Running DRaFT+ Reward Model DRaFT+ Training Constitutional AI: Harmlessness from AI Feedback CAI Motivation Train a ..."
+    },
+    {
+      "title": "GitHub - nsarkhanov/Nvidia-NeMo: A scalable generative AI framework ...",
+      "url": "https://github.com/nsarkhanov/Nvidia-NeMo",
+      "snippet": "It is designed to help you efficiently create, customize, and deploy new generative AI models by leveraging existing code and pre-trained model checkpoints. For technical documentation, please see the NeMo Framework User Guide."
+    },
+    {
+      "title": "open-models-platform/openmodels.NeMo - GitHub",
+      "url": "https://github.com/open-models-platform/openmodels.NeMo",
+      "snippet": "NVIDIA NeMo is a conversational AI toolkit built for researchers working on automatic speech recognition (ASR), text-to-speech synthesis (TTS), large language models (LLMs), and natural language processing (NLP). The primary objective of NeMo is to help researchers from industry and academia to ..."
+    },
+    {
+      "title": "NeMo | Build, monitor, and optimize AI agents | NVIDIA",
+      "url": "https://www.nvidia.com/en-us/ai-data-science/products/nemo/",
+      "snippet": "NVIDIA NeMo™ is an agent-first, open suite of libraries with skills for accelerating AI agent specialization, optimization, and governance. NeMo integrates with existing AI tools and agent frameworks to optimize specialized agents across any cloud, on-premises, or hybrid environment."
+    }
+  ]
+}

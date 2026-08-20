@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "frankmorales2020/evo2-topo-governed",
+  "slug": "frankmorales2020-evo2-topo-governed",
+  "author": "frankmorales2020",
+  "url": "https://huggingface.co/frankmorales2020/evo2-topo-governed",
+  "created_at": "2026-08-20T00:56:58.000Z",
+  "updated_at": "2026-08-20T01:11:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "evo2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "evo2",
+    "genomics",
+    "dna",
+    "topological-governor",
+    "nf4-quantization",
+    "bioinformatics",
+    "100-accuracy",
+    "cf-free",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10845296999,
+  "storage_human": "10.8 GB",
+  "base_model": "evo2_7b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "frankmorales2020/governed-evo2-7b-topo · Hugging Face",
+      "url": "https://huggingface.co/frankmorales2020/governed-evo2-7b-topo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "frankmorales2020/topo-2026-evo2-certified · Hugging Face",
+      "url": "https://huggingface.co/frankmorales2020/topo-2026-evo2-certified",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Architecting Permanence: Topological Governance for Catastrophic ...",
+      "url": "https://www.linkedin.com/pulse/architecting-permanence-topological-governance-evo-2-frank-q5tmc",
+      "snippet": "Artifact Serialization & Hub Deployment: Packages the fine-tuned weights and TOPO anchor maps into a portable checkpoint (governed_evo2_weights.pt) and securely deploys the 13.2 GB model artifact ..."
+    },
+    {
+      "title": "GitHub - ArcInstitute/evo2: Genome modeling and design across all ...",
+      "url": "https://github.com/arcinstitute/evo2",
+      "snippet": "Evo 2: Genome modeling and design across all domains of life Evo 2 is a state of the art DNA language model for long context modeling and design. Evo 2 models DNA sequences at single-nucleotide resolution at up to 1 million base pair context length using the StripedHyena 2 architecture. Evo 2 was pretrained using Savanna."
+    },
+    {
+      "title": "GitHub - frank-morales2020/MLxDL",
+      "url": "https://github.com/frank-morales2020/MLxDL",
+      "snippet": "A comprehensive, actively maintained laboratory for cutting-edge AI research and implementation. It bridges theoretical exploration (Agentic AI, World Models/JEPA) with practical, production-oriented systems — including multi-agent orchestration, domain-specific LLM fine-tuning (aviation, medical, finance), and governance frameworks. This repo is the source code hub for prototypes and the ..."
+    }
+  ]
+}

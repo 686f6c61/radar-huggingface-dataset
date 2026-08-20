@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rphammonds/scalesurfer-stats",
+  "slug": "rphammonds-scalesurfer-stats",
+  "author": "rphammonds",
+  "url": "https://huggingface.co/rphammonds/scalesurfer-stats",
+  "created_at": "2026-08-19T22:12:13.000Z",
+  "updated_at": "2026-08-19T22:13:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-regression",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "scalesurfer-stats-prediction",
+    "medical-imaging",
+    "freesurfer",
+    "morphometry",
+    "scalesurfer",
+    "tabular-regression",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 770050564,
+  "storage_human": "770 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rphammonds/scalesurfer-stats-v6 · Hugging Face",
+      "url": "https://huggingface.co/rphammonds/scalesurfer-stats-v6",
+      "snippet": "ScaleSurfer FreeSurfer v6 Stats Prediction Model This repository contains a ScaleSurfer multi-head model for predicting FreeSurfer-style .stats targets from a T1w image and an aparc+aseg segmentation."
+    },
+    {
+      "title": "rphammonds/scalesurfer-v8 · Hugging Face",
+      "url": "https://huggingface.co/rphammonds/scalesurfer-v8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - voytekresearch/scalesurfer",
+      "url": "https://github.com/voytekresearch/scalesurfer",
+      "snippet": "scalesurfer is a repository for fast FreeSurfer inference. The volumetric model uses UNet with a Transformer bottleneck. The stats models predict FreeSurfer measures, including cortical thickness, surface area, curvature, and folding index."
+    },
+    {
+      "title": "ScaleSurfer: multi-scale anatomical segmentation and ... - bioRxiv",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.07.01.735927v1",
+      "snippet": "Here, we introduce ScaleSurfer, a three-dimensional convolutional vision transformer model based on multi-scale learning. Convolution blocks capture local anatomical detail and a transformer bottleneck integrates the distributed spatial context."
+    },
+    {
+      "title": "scalesurfer · PyPI",
+      "url": "https://pypi.org/project/scalesurfer/",
+      "snippet": "scalesufer scalesurfer is a repository for fast FreeSurfer inference. The volumetric model uses UNet with a Transformer bottleneck. The stats models predict FreeSurfer measures, including cortical thickness, surface area, curvature, and folding index."
+    }
+  ]
+}

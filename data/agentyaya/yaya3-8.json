@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "agentyaya/yaya3.8",
+  "slug": "agentyaya-yaya3-8",
+  "author": "agentyaya",
+  "url": "https://huggingface.co/agentyaya/yaya3.8",
+  "created_at": "2026-08-19T23:34:06.000Z",
+  "updated_at": "2026-08-19T23:47:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "yaya",
+    "nvfp4",
+    "sovereign-ai",
+    "latam",
+    "es",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19869895952,
+  "parameters_human": "19.87B",
+  "storage_bytes": 23437581813,
+  "storage_human": "23.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentyaya (Agente) - Hugging Face",
+      "url": "https://huggingface.co/agentyaya/models",
+      "snippet": "AI for indigenous and underrepresented communities. Recent Activity. updated a model about 6 hours ago. agentyaya/yaya.v1. published a model about 6 hours ago"
+    },
+    {
+      "title": "agentyaya/yaya-3.6-FP8-dynamic · Hugging Face",
+      "url": "https://huggingface.co/agentyaya/yaya-3.6-FP8-dynamic",
+      "snippet": "agentyaya / yaya-3.6-FP8-dynamic like 0 Image-Text-to-Text Safetensors qwen3_5_moe fp8 quantized compressed-tensors multimodal conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new yaya-3.6-FP8-dynamic Serving"
+    },
+    {
+      "title": "Damacol/agentyaya-yaya.v1 - GitHub",
+      "url": "https://github.com/Damacol/agentyaya-yaya.v1",
+      "snippet": "agentyaya/yaya.v1 - Private, Uncensored AI for Real Creators and Devs Run {MODEL} privately with zero tracking. Optimized for developers and creators who demand full control over their AI workflow."
+    },
+    {
+      "title": "agentyaya/yaya.v1 - Fast, Reliable, and Scalable Inference on FriendliAI",
+      "url": "https://friendli.ai/models/agentyaya/yaya.v1",
+      "snippet": "Run agentyaya/yaya.v1 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

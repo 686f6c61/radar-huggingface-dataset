@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SCU-VIP-Lab/MMCRC",
+  "slug": "scu-vip-lab-mmcrc",
+  "author": "SCU-VIP-Lab",
+  "url": "https://huggingface.co/SCU-VIP-Lab/MMCRC",
+  "created_at": "2026-08-13T03:43:32.000Z",
+  "updated_at": "2026-08-20T00:30:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "compression",
+    "detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55357200408,
+  "storage_human": "55.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SCU-VIP-Lab/MMCRC · Hugging Face",
+      "url": "https://huggingface.co/SCU-VIP-Lab/MMCRC",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SCU-VIP-Lab/MMCRC at main - Hugging Face",
+      "url": "https://huggingface.co/SCU-VIP-Lab/MMCRC/tree/main",
+      "snippet": "SCU-VIP-Lab / MMCRC like 0 Follow Santa Clara University Video and Image Processing Lab 2 PyTorch compression detection License:mit Model card FilesFiles and versions xet Community Copy to bucket new main MMCRC 31.6 GB Ctrl+K Ctrl+K 1 contributor History:2 commits TianmaPegasus Add files using upload-large-folder tool 942d6b4 verified2 days ago checkpointsAdd files using upload-large-folder ..."
+    },
+    {
+      "title": "GitHub - SCU-VIP-Lab/website: This is the official website of Santa ...",
+      "url": "https://github.com/SCU-VIP-Lab/website",
+      "snippet": "This is the official website of Santa Clara University (SCU) Video and Image Processing (VIP) Lab."
+    },
+    {
+      "title": "Ying Liu | Home - SCU",
+      "url": "https://www.cse.scu.edu/~yliu1/",
+      "snippet": "Recent advances in deep learning have achieved great success in computer vision tasks. The Video and Image Processing Lab currently focuses on deep learning-based image and video compression, visual coding for machines, point cloud coding, vision-language model, and generative AI."
+    },
+    {
+      "title": "SCU-VIP-Lab · GitHub",
+      "url": "https://github.com/SCU-VIP-Lab",
+      "snippet": "website Public This is the official website of Santa Clara University (SCU) Video and Image Processing (VIP) Lab."
+    }
+  ]
+}

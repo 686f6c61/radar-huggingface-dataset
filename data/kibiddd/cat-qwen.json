@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kibiddd/CAT-Qwen",
+  "slug": "kibiddd-cat-qwen",
+  "author": "kibiddd",
+  "url": "https://huggingface.co/kibiddd/CAT-Qwen",
+  "created_at": "2026-08-19T19:31:19.000Z",
+  "updated_at": "2026-08-19T19:53:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3.6",
+    "honesty",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3755569632,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Every Qwen AI Model Explained and Compared (Aug, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-qwen-ai-model-explained-compared/",
+      "snippet": "Qwen is Alibaba&#x27;s model family: free Apache 2.0 open weights you self-host, or a cheap paid API with Max, Plus, and Flash. Compare models, prices, and which to..."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen&#x27;s series of open-source and proprietary models. It offers comprehensive functionality spanning chatbots, image and video understanding, image generation and editing, document processing, tool utilization, voice and video chat, and artifacts."
+    },
+    {
+      "title": "Qwen - Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/en/solutions/generative-ai/qwen?_p_lc=1",
+      "snippet": "ModelScope, developed by Alibaba, is an open-source platform offering diverse AI models (NLP, CV, multimodal, etc.) and tools to streamline model development, deployment, and sharing."
+    }
+  ]
+}

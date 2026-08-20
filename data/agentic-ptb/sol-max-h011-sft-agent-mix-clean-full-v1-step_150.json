@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-max.h011.sft-agent-mix-clean-full-v1.step_150",
+  "slug": "agentic-ptb-sol-max-h011-sft-agent-mix-clean-full-v1-step_150",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-max.h011.sft-agent-mix-clean-full-v1.step_150",
+  "created_at": "2026-08-20T03:36:17.000Z",
+  "updated_at": "2026-08-20T03:36:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trillionlabs/gravity-sft-v7-agentic · Hugging Face",
+      "url": "https://huggingface.co/trillionlabs/gravity-sft-v7-agentic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2510.25445] Agentic AI: A Comprehensive Survey of Architectures ...",
+      "url": "https://arxiv.org/abs/2510.25445",
+      "snippet": "Agentic AI represents a transformative shift in artificial intelligence, but its rapid advancement has led to a fragmented understanding, often conflating modern neural systems with outdated symbolic models -- a practice known as conceptual retrofitting. This survey cuts through this confusion by introducing a novel dual-paradigm framework that categorizes agentic systems into two distinct ..."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "Efficient by default, maximum performance on demand GPT‑5.6 Sol is our best coding model yet. On the Artificial Analysis Coding Agent Index, GPT‑5.6 Sol with max reasoning sets a new state of the art at 80, 2.8 points above Fable 5, while using less than half the output tokens, taking less than half the time, and costing about one-third less."
+    },
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    },
+    {
+      "title": "AI-Agents-Projects-Tutorials/Agentic AI Codes/nvidia_open_swe ... - GitHub",
+      "url": "https://github.com/MARKTECHPOST-AI-MEDIA-INC/AI-Agents-Projects-Tutorials/blob/main/Agentic%20AI%20Codes/nvidia_open_swe_traces_agent_sft_data_pipeline.py",
+      "snippet": "Multi-agent systems, memory, planning, reasoning loops - MARKTECHPOST-AI-MEDIA-INC/AI-Agents-Projects-Tutorials"
+    }
+  ]
+}

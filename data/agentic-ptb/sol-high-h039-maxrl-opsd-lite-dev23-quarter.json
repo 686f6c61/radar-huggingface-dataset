@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h039.maxrl-opsd-lite-dev23-quarter",
+  "slug": "agentic-ptb-sol-high-h039-maxrl-opsd-lite-dev23-quarter",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h039.maxrl-opsd-lite-dev23-quarter",
+  "created_at": "2026-08-20T01:48:47.000Z",
+  "updated_at": "2026-08-20T01:49:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710333,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "Efficient by default, maximum performance on demand GPT‑5.6 Sol is our best coding model yet. On the Artificial Analysis Coding Agent Index, GPT‑5.6 Sol with max reasoning sets a new state of the art at 80, 2.8 points above Fable 5, while using less than half the output tokens, taking less than half the time, and costing about one-third less."
+    },
+    {
+      "title": "Sol-HQ/agentic-library - GitHub",
+      "url": "https://github.com/Sol-HQ/agentic-library",
+      "snippet": "Agentic Library A curated, agent-readable library of high-signal open-source resources for building AI agents, memory systems, voice interfaces, and automation stacks."
+    },
+    {
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model - OpenAI",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "snippet": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack."
+    },
+    {
+      "title": "Agentic AI: A Comprehensive Survey of Architectures, Applications, and ...",
+      "url": "https://arxiv.org/html/2510.25445v1",
+      "snippet": "In contrast, Agentic AI is the broader field and architectural approach concerned with creating systems that exhibit agency. Crucially, this often involves the orchestration of Multi-Agent Systems (MAS), where multiple specialized agents work together, coordinating and communicating to solve problems that are too complex for a single agent."
+    },
+    {
+      "title": "GLM Coding Plan — AI Coding Powered by GLM-5.3, GLM-5.2 & GLM-5-Turbo ...",
+      "url": "https://z.ai/subscribe",
+      "snippet": "Cline works with a vast array of model providers, and the GLM Coding Initiative stands out as one of our smoothest integrations yet. With its developer-friendly pricing, generous quotas, and latency that perfectly fits real-world Agent workflows, its value proposition is hard to beat for anyone seeking a high-performance, cost-effective AI ..."
+    }
+  ]
+}

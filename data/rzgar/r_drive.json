@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rzgar/r_drive",
+  "slug": "rzgar-r_drive",
+  "author": "rzgar",
+  "url": "https://huggingface.co/rzgar/r_drive",
+  "created_at": "2026-01-04T22:30:57.000Z",
+  "updated_at": "2026-08-20T02:09:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 222816236885,
+  "storage_human": "222.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rzgar/r_drive at main - Hugging Face",
+      "url": "https://huggingface.co/rzgar/r_drive/tree/main",
+      "snippet": "rzgar / r_drive like 1 License:mit Model card FilesFiles and versions xet Community main r_drive 13 GB Ctrl+K Ctrl+K 1 contributor History:14 commits rzgar Upload sageattn3-1..-cp312-cp312-linux_x86_64.whl 19049b5 verifiedabout 1 month ago .gitattributes Safe 2.43 kBUpload sageattn3-1..-cp312-cp312-linux_x86_64.whlabout 1 month ago Eva ..."
+    },
+    {
+      "title": "WAN2.2_Bernini_r_workflow_ComfyUI.json · rzgar/r_drive at main",
+      "url": "https://huggingface.co/rzgar/r_drive/blob/main/WAN2.2_Bernini_r_workflow_ComfyUI.json",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rzgar AI Models | AI Market Cap",
+      "url": "https://aimarketcap.tech/providers/rzgar",
+      "snippet": "Explore all AI models by rzgar. Official pricing posture, rankings, benchmark coverage, and market-value signals on AI Market Cap."
+    },
+    {
+      "title": "Bernini-R-LightX2V-4step-loras: Text-to-Video model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bernini-r-lightx2v-4step-loras-rzgar",
+      "snippet": "Overview Bernini-R-LightX2V-4step-loras is a specialized set of LoRA (Low-Rank Adaptation) weights designed to improve video generation quality when used with the Bernini-R text-to-video workflow. Created by rzgar, these LoRAs address specific motion quality issues present in the standard Wan 2.1 T2V implementation. The model consists of two separate LoRA files optimized for high-noise and low ..."
+    },
+    {
+      "title": "GitHub - AIMixer/ComfyUI-WanBerniniS2V: ComfyUI plugin mirror for Wan ...",
+      "url": "https://github.com/AIMixer/ComfyUI-WanBerniniS2V",
+      "snippet": "ComfyUI plugin mirror for Wan Bernini S2V (original: rzgar/Bernini-R-S2V on Hugging Face) - AIMixer/ComfyUI-WanBerniniS2V"
+    }
+  ]
+}

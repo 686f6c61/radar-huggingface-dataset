@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Hy3-NVFP4-FP8",
+  "slug": "redhatai-hy3-nvfp4-fp8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Hy3-NVFP4-FP8",
+  "created_at": "2026-07-15T15:53:08.000Z",
+  "updated_at": "2026-08-20T01:51:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hy_v3",
+    "text-generation",
+    "compressed-tensors",
+    "vllm",
+    "llm-compressor",
+    "conversational",
+    "base_model:tencent/Hy3",
+    "base_model:quantized:tencent/Hy3",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 3638,
+  "trending_score": 0,
+  "parameters": 298786155776,
+  "parameters_human": "298.79B",
+  "storage_bytes": 177678444611,
+  "storage_human": "177.7 GB",
+  "base_model": "tencent/Hy3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Hy3-NVFP4-FP8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Hy3-NVFP4-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedHatAI/Hy3-NVFP4-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Hy3-NVFP4-FP8/tree/main",
+      "snippet": "RedHatAI / Hy3-NVFP4-FP8 like 3 Follow Red Hat AI 2.86k Text Generation Transformers Safetensors hy_v3 compressed-tensors LLM Compressor vLLM conversational 8-bit precision License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Hy3 NVFP4 FP8 by RedHatAI — VRAM 170.1GB, 256K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/RedHatAI%2FHy3-NVFP4-FP8,77iLTL7ti4VZRWRM1ourax",
+      "snippet": "Hy3 NVFP4 FP8 is an open-source 172.8b LLM by RedHatAI. VRAM 170.1GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "llmcompressor · PyPI",
+      "url": "https://pypi.org/project/llmcompressor/",
+      "snippet": "Hy3 NVFP4+FP8 Quantized Checkpoint: A quantized checkpoint for Hy3 has been created by the Red Hat AI team, combining NVFP4 quantization of MoE layers with FP8 quantization of attention layers to significantly reduce VRAM requirements while maintaining accuracy recovery."
+    },
+    {
+      "title": "GitHub - vllm-project/llm-compressor: Transformers-compatible library ...",
+      "url": "https://github.com/vllm-project/llm-compressor",
+      "snippet": "RedHatAI/Hy3-NVFP4-FP8 Hy3 Quantization Example GLM-5.2 NVFP4+FP8 Example and Checkpoints: Quantized checkpoints for GLM-5.2 have been created by the Red Hat AI team using DDP + disk offloading in under 2 hours."
+    }
+  ]
+}

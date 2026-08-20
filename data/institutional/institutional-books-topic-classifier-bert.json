@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "institutional/institutional-books-topic-classifier-bert",
+  "slug": "institutional-institutional-books-topic-classifier-bert",
+  "author": "institutional",
+  "url": "https://huggingface.co/institutional/institutional-books-topic-classifier-bert",
+  "created_at": "2025-03-29T00:33:57.000Z",
+  "updated_at": "2026-08-19T20:12:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "autotrain",
+    "arxiv:2506.08300",
+    "base_model:google-bert/bert-base-multilingual-uncased",
+    "base_model:finetune:google-bert/bert-base-multilingual-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 167371796,
+  "parameters_human": "167.4M",
+  "storage_bytes": 2008811857,
+  "storage_human": "2.0 GB",
+  "base_model": "google-bert/bert-base-multilingual-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "institutional-books-topic-classifier-bert · Models",
+      "url": "https://www.modelscope.cn/models/institutional/institutional-books-topic-classifier-bert",
+      "snippet": "📚 Institutional Books Topic Classifier This model was trained as part of the analysis and post-processing work performed in preparation for the release of the Institutional Books 1.0 dataset by the Institutional Data Initiative."
+    },
+    {
+      "title": "institutional/institutional-books-topic-classifier-bert at main",
+      "url": "https://huggingface.co/institutional/institutional-books-topic-classifier-bert/tree/main",
+      "snippet": "institutional / institutional-books-topic-classifier-bert like 5 Follow Institutional Data Initiative 95 Text Classification Transformers TensorBoard Safetensors bert Trained with AutoTrain arxiv:2506.08300 License:apache-2.0 Model card FilesFiles and versionsMetricsTraining metrics Community 2 Train Deploy Use this model main institutional ..."
+    },
+    {
+      "title": "Institutional Data Initiative - Hugging Face",
+      "url": "https://huggingface.co/institutional/models",
+      "snippet": "Org profile for Institutional Data Initiative on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Model Details · ModelScope",
+      "url": "https://ollama.modelscope.cn/models/institutional/institutional-books-topic-classifier-bert/summary",
+      "snippet": "📚 Institutional Books Topic Classifier This model was trained as part of the analysis and post-processing work performed in preparation for the release of the Institutional Books 1.0 dataset by the Institutional Data Initiative."
+    },
+    {
+      "title": "bert-classification · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/bert-classification",
+      "snippet": "A server code for serving BERT-based models for text classification. It is designed by SerpApi for heavy-load prototyping and production tasks, specifically for the implementation of the google-local-results-ai-parser gem."
+    }
+  ]
+}

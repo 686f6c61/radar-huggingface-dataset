@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Sunbird-experimental/asr-whisper-51-african-languages-grpo",
+  "slug": "sunbird-experimental-asr-whisper-51-african-languages-grpo",
+  "author": "Sunbird-experimental",
+  "url": "https://huggingface.co/Sunbird-experimental/asr-whisper-51-african-languages-grpo",
+  "created_at": "2026-08-14T22:27:01.000Z",
+  "updated_at": "2026-08-19T20:24:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "trl",
+    "grpo",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 18522337656,
+  "storage_human": "18.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sunbird-experimental/asr-whisper-51-african-languages-grpo · Hugging Face",
+      "url": "https://huggingface.co/Sunbird-experimental/asr-whisper-51-african-languages-grpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sunbird-experimental/asr-whisper-51-african-languages-grpo at main",
+      "url": "https://huggingface.co/Sunbird-experimental/asr-whisper-51-african-languages-grpo/tree/main",
+      "snippet": "Sunbird-experimental / asr-whisper-51-african-languages-grpo like 0 Follow Sunbird AI (experimental resources) 12 Automatic Speech Recognition Transformers Safetensors whisper trl grpo arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "asr-whisper-51-african-languages-grpo - FriendliAI",
+      "url": "https://friendli.ai/models/Sunbird-experimental/asr-whisper-51-african-languages-grpo",
+      "snippet": "Deploy asr-whisper-51-african-languages-grpo with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Whisper 51 African Languages (ASR) - SALT Documentation",
+      "url": "https://salt.sunbird.ai/models/asr-whisper-51-african-languages/",
+      "snippet": "SALT Models ASR Whisper 51 African Languages Overview ASR Whisper 51 African Languages is an adaptation of Whisper Large v3 that supports Automatic Speech Recognition (ASR) for 51 languages widely spoken in Africa: English and French with African accents, Swahili, Afrikaans, Tswana, Kinyarwanda, Nigerian Pidgin, Luganda, Acholi, Lugbara, Ateso, Runyankole, Rutooro, Lumasaba, Lusoga, Rukiga ..."
+    },
+    {
+      "title": "asr-whisper-51-african-languages API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/Sunbird/asr-whisper-51-african-languages",
+      "snippet": "Run asr-whisper-51-african-languages with FriendliAI inference. This model is an adaptation of Whisper large-v3 that supports Automatic Speech Recognition…"
+    }
+  ]
+}

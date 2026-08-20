@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "spare-rl/SPADE-Qwen3-30B-A3B-Games",
+  "slug": "spare-rl-spade-qwen3-30b-a3b-games",
+  "author": "spare-rl",
+  "url": "https://huggingface.co/spare-rl/SPADE-Qwen3-30B-A3B-Games",
+  "created_at": "2026-06-20T22:28:46.000Z",
+  "updated_at": "2026-08-19T21:58:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "spade",
+    "self-play",
+    "reinforcement-learning",
+    "environment-generation",
+    "games",
+    "conversational",
+    "base_model:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078000830,
+  "storage_human": "61.1 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sparse-RL/slime/docs/en/examples/qwen3-30B-A3B.md at main ... - GitHub",
+      "url": "https://github.com/RUCKBReasoning/Sparse-RL/blob/main/slime/docs/en/examples/qwen3-30B-A3B.md",
+      "snippet": "The environment setup, model download, data, and checkpoint conversion are the same as for the Qwen3-4B model. You can refer to Example: Qwen3-4B Model, replacing mentions of Qwen3-4B with Qwen3-30B-A3B."
+    },
+    {
+      "title": "spare-rl/qwen3-30b-a3b-0703-fixed-rlve-official16-iter207 · Hugging Face",
+      "url": "https://huggingface.co/spare-rl/qwen3-30b-a3b-0703-fixed-rlve-official16-iter207",
+      "snippet": "Instructions to use spare-rl/qwen3-30b-a3b-0703-fixed-rlve-official16-iter207 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    }
+  ]
+}

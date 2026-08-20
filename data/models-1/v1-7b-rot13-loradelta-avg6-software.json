@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "models-1/v1-7b-rot13-loradelta-avg6-software",
+  "slug": "models-1-v1-7b-rot13-loradelta-avg6-software",
+  "author": "models-1",
+  "url": "https://huggingface.co/models-1/v1-7b-rot13-loradelta-avg6-software",
+  "created_at": "2026-08-20T01:28:33.000Z",
+  "updated_at": "2026-08-20T01:29:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "task-vector",
+    "rot13",
+    "lora",
+    "composition",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231272152,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hugo/v1-7b-rot13-loradelta-avg6-software · Hugging Face",
+      "url": "https://huggingface.co/hugo/v1-7b-rot13-loradelta-avg6-software",
+      "snippet": "hugo / v1-7b-rot13-loradelta-avg6-software like 0 Safetensors task-vector rot13 lora composition Model card FilesFiles and versions xet Community Copy to bucket new rot13 seq-QA LoRA rank-1 (alpha2) task-vector (avg-of-6) - held-out receptor software"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=rot13",
+      "snippet": "Explore machine learning models. Models 5 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: rot13 Clear all"
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "tidalove/Molmo2Fish",
+  "slug": "tidalove-molmo2fish",
+  "author": "tidalove",
+  "url": "https://huggingface.co/tidalove/Molmo2Fish",
+  "created_at": "2026-08-19T23:36:45.000Z",
+  "updated_at": "2026-08-19T23:36:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "molmo2",
+    "video",
+    "object-tracking",
+    "ecology",
+    "video-text-to-text",
+    "dataset:tidalove/cfc-track-instruction",
+    "dataset:perona-lab/cfc26",
+    "base_model:allenai/Molmo2-8B",
+    "base_model:finetune:allenai/Molmo2-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "allenai/Molmo2-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tidalove/molmo2fish: Code for Molmo2 fine-tuned for fish ...",
+      "url": "https://github.com/tidalove/molmo2fish",
+      "snippet": "We release model weights after pre-training, SFT, and long-context SFT in a format compatible with this codebase. The Long-Context SFT Checkpoint matches the hugging face repo checkpoints, but have a slightly different format."
+    },
+    {
+      "title": "Molmo | Ai2",
+      "url": "https://allenai.org/molmo",
+      "snippet": "Molmo is fully open source, with the model, weights, training procedure, and dataset completely accessible, enabling researchers to study how each step influences model behavior and performance transparently."
+    },
+    {
+      "title": "tidalove (Kai Van Brunt) - Hugging Face",
+      "url": "https://huggingface.co/tidalove/models",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 1 month ago ... updated a dataset about 1 month ago"
+    },
+    {
+      "title": "GitHub - allenai/molmo: Code for the Molmo Vision-Language Model",
+      "url": "https://github.com/allenai/molmo",
+      "snippet": "Code for the Molmo Vision-Language Model. Contribute to allenai/molmo development by creating an account on GitHub."
+    },
+    {
+      "title": "Molmo 2: State-of-the-art video understanding, pointing, and tracking",
+      "url": "https://allenai.org/blog/molmo2",
+      "snippet": "Molmo 2, a new suite of state-of-the-art vision-language models with open weights, training data, and training code, can analyze videos and multiple images at once."
+    }
+  ]
+}

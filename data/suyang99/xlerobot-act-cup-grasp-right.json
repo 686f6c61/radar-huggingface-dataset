@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Suyang99/xlerobot-act-cup-grasp-right",
+  "slug": "suyang99-xlerobot-act-cup-grasp-right",
+  "author": "Suyang99",
+  "url": "https://huggingface.co/Suyang99/xlerobot-act-cup-grasp-right",
+  "created_at": "2026-08-20T02:35:10.000Z",
+  "updated_at": "2026-08-20T02:35:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "xlerobot",
+    "bimanual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51691153,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206809156,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Vector-Wangel/XLeRobot: XLeRobot: Practical Dual-Arm Mobile ...",
+      "url": "https://github.com/Vector-Wangel/XLeRobot",
+      "snippet": "One of my papers, Caging in Time, has recently been accepted by International Journal of Robotics Research (IJRR). I built XLeRobot as a personal hobby to instantiate my research theory, also to provide a low-cost platform for people who are interested in robotics and embodied AI to work with."
+    },
+    {
+      "title": "XLeRobot — XLeRobot 0.3.0 documentation",
+      "url": "https://xlerobot.readthedocs.io/en/latest/",
+      "snippet": "Note: Not currently designed for in-hand dexterity 🤹, heavy lifting (over 1kg per arm) 🏋️, or highly dynamic movements (catch ball) 🏃 Rich open-source resources 📕 LeRobot&#x27;s plug-and-play code🧩 and extensive AI model library🧠 Backed by an active, growing community of contributors🧑‍🤝‍🧑"
+    },
+    {
+      "title": "ljx03/act_lerobot_grasp_dataset · Hugging Face",
+      "url": "https://huggingface.co/ljx03/act_lerobot_grasp_dataset",
+      "snippet": "ljx03 / act_lerobot_grasp_dataset like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 4 Safetensors Model size 51.7M params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "GitHub - DavisVoyles/xlerobot: XLeRobot: Practical Household Dual-Arm ...",
+      "url": "https://github.com/DavisVoyles/xlerobot",
+      "snippet": "Rich open-source resources 📕 LeRobot&#x27;s plug-and-play code🧩 and extensive AI model library🧠 Backed by an active, growing community of contributors🧑‍🤝‍🧑 These👆 are staged photos, but they demonstrate what the XLeRobot platform can achieve within its hardware limitations. (The scenes are a bit messy, but hey, that&#x27;s life!)"
+    },
+    {
+      "title": "Software — XLeRobot 0.3.0 documentation",
+      "url": "https://xlerobot.readthedocs.io/en/latest/software/index.html",
+      "snippet": "Important Notes 3. Train a Policy 4. Deploy a Model VLA (2) SmolVLA, ACT 1) Overview References 2) Demo Tasks (What SmolVLA Can Learn with ~20 Episodes) Demo 1 - Drawer + Pick + Place + Grasp (Bimanual) Demo 2 - Pencil Case Zipper (Fine Manipulation) 3) Hardware / Configuration Notes Camera Placement (Three Cameras) Action Dimension Handling ..."
+    }
+  ]
+}

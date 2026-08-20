@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ceselder/skip-lens-qwen36-27b-agreelens-g",
+  "slug": "ceselder-skip-lens-qwen36-27b-agreelens-g",
+  "author": "ceselder",
+  "url": "https://huggingface.co/ceselder/skip-lens-qwen36-27b-agreelens-g",
+  "created_at": "2026-08-20T00:50:11.000Z",
+  "updated_at": "2026-08-20T00:50:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "interpretability",
+    "activation-lens",
+    "future-lens",
+    "workspace",
+    "lora",
+    "skip-lens",
+    "agreelens",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887771989,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ceselder/skip-lens-qwen36-27b-ar-reconstructor · Hugging Face",
+      "url": "https://huggingface.co/ceselder/skip-lens-qwen36-27b-ar-reconstructor",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ceselder/skip-lens-qwen36-27b-ar-reconstructor at main",
+      "url": "https://huggingface.co/ceselder/skip-lens-qwen36-27b-ar-reconstructor/tree/main",
+      "snippet": "Instructions to use ceselder/skip-lens-qwen36-27b-ar-reconstructor with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use ceselder/skip-lens-qwen36-27b-ar-reconstructor with PEFT:"
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "skip-lens-qwen36-27b-futurelens-true-opd - friendli.ai",
+      "url": "https://friendli.ai/models/ceselder/skip-lens-qwen36-27b-futurelens-true-opd",
+      "snippet": "Deploy skip-lens-qwen36-27b-futurelens-true-opd with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "skip-lens-qwen36-27b-naive-futurelens - friendli.ai",
+      "url": "https://friendli.ai/models/ceselder/skip-lens-qwen36-27b-naive-futurelens",
+      "snippet": "Given a single residual activation injected at a fixed position (Karvonen norm-matched, char ㈜ / id 158983), it decodes the text the model was about to produce next. Sibling:skip-lens-qwen36-27b-futurelens-rl is the same lens after GRPO RL against a frozen reconstruction reward. This repo is the SFT-only base future-lens."
+    }
+  ]
+}

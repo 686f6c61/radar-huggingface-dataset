@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "KeraCare/lab_item_extraction_lora_drugft_v1",
+  "slug": "keracare-lab_item_extraction_lora_drugft_v1",
+  "author": "KeraCare",
+  "url": "https://huggingface.co/KeraCare/lab_item_extraction_lora_drugft_v1",
+  "created_at": "2026-08-19T21:50:26.000Z",
+  "updated_at": "2026-08-19T22:18:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_ocr",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1107405824,
+  "parameters_human": "1.11B",
+  "storage_bytes": 2214872552,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "KeraCare/drug_name_extraction_v2x0 · Hugging Face",
+      "url": "https://huggingface.co/KeraCare/drug_name_extraction_v2x0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Use MergeKit to Extract LoRA Adapters from any Fine-Tuned Model",
+      "url": "https://www.arcee.ai/blog/use-mergekit-to-extract-lora-adapters-from-any-fine-tuned-model",
+      "snippet": "We show you how to use Arcee&#x27;s MergeKit to extract LoRA adapters from fine-tuned models, then leverage the Hugging Face Hub to create a library of general and task-specific LoRA adapters."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - arcee-ai/mergekit: Tools for merging pretrained large language ...",
+      "url": "https://github.com/arcee-ai/mergekit",
+      "snippet": "Model merging is a powerful technique that allows combining the strengths of different models without the computational overhead of ensembling or the need for additional training. By operating directly in the weight space of models, merging can: Combine multiple specialized models into a single versatile model Transfer capabilities between models without access to training data Find optimal ..."
+    }
+  ]
+}

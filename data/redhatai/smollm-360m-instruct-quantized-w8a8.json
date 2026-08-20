@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/SmolLM-360M-Instruct-quantized.w8a8",
+  "slug": "redhatai-smollm-360m-instruct-quantized-w8a8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/SmolLM-360M-Instruct-quantized.w8a8",
+  "created_at": "2024-08-23T03:36:38.000Z",
+  "updated_at": "2026-08-19T21:45:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "int8",
+    "vllm",
+    "conversational",
+    "en",
+    "arxiv:2210.17323",
+    "base_model:HuggingFaceTB/SmolLM-360M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM-360M-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 409007040,
+  "parameters_human": "409.0M",
+  "storage_bytes": 504052632,
+  "storage_human": "504 MB",
+  "base_model": "HuggingFaceTB/SmolLM-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/SmolLM-360M-Instruct-quantized.w8a8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/SmolLM-360M-Instruct-quantized.w8a8",
+      "snippet": "SmolLM-360M-Instruct-quantized.w8a8 Model Overview Model Architecture: Llama Input: Text Output: Text Model Optimizations: Activation quantization: INT8 Weight quantization: INT8 Intended Use Cases: Intended for commercial and research use in English. Similarly to SmolLM-360M-Instruct, this models is intended for assistant-like chat. Out-of-scope: Use in any manner that violates applicable ..."
+    },
+    {
+      "title": "RedHatAI/SmolLM-360M-Instruct-quantized.w8a8 at main",
+      "url": "https://huggingface.co/RedHatAI/SmolLM-360M-Instruct-quantized.w8a8/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Train Deploy Use this model main SmolLM-360M-Instruct-quantized.w8a8 Ctrl+K Ctrl+K 2 contributors History:4 commits mgoin Updated compression_config to quantization_config 2335c43 verified11 months ago .gitattributes Safe 1.52 kBinitial commitabout 1 year ago README.md Safe 6.41 kBCreate README ..."
+    },
+    {
+      "title": "RedHatAI/SmolLM-360M-Instruct-quantized.w8a8 - friendli.ai",
+      "url": "https://friendli.ai/models/RedHatAI/SmolLM-360M-Instruct-quantized.w8a8",
+      "snippet": "Run RedHatAI/SmolLM-360M-Instruct-quantized.w8a8 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "RedHatAI/SmolLM-360M-Instruct-quantized.w8a8: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/RedHatAI/SmolLM-360M-Instruct-quantized.w8a8",
+      "snippet": "This model was obtained by quantizing the weights of SmolLM-360M-Instruct to INT8 data type. This optimization reduces the number of bits per parameter from 16 to 8, reducing the disk size and GPU memory requirements by approximately 50%."
+    },
+    {
+      "title": "RedHatAI/SmolLM-360M-Instruct-quantized.w8a8 - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/redhatai-smollm-360m-instruct-quantized-w8a8",
+      "snippet": "Quantized version of SmolLM-360M-Instruct . It achieves an average score of 35.49 on the OpenLLM benchmark (version 1), whereas the unquantized model achieves 35.15. Model Optimizations"
+    }
+  ]
+}

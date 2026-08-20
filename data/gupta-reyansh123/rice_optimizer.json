@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gupta-reyansh123/Rice_Optimizer",
+  "slug": "gupta-reyansh123-rice_optimizer",
+  "author": "gupta-reyansh123",
+  "url": "https://huggingface.co/gupta-reyansh123/Rice_Optimizer",
+  "created_at": "2026-08-20T02:54:09.000Z",
+  "updated_at": "2026-08-20T02:56:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "big_bird",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 128111286,
+  "parameters_human": "128.1M",
+  "storage_bytes": 512469040,
+  "storage_human": "512 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - techkamalesh878officials/paddy-climate-optimizer: AI tool to ...",
+      "url": "https://github.com/techkamalesh878officials/paddy-climate-optimizer",
+      "snippet": "🌾 Rice Climate Risk & Precision Farming Assistant An AI-driven command-line tool that helps farmers decide exactly when to sow and harvest rice based on real-time climate inputs."
+    },
+    {
+      "title": "GitHub - Keerthib2005/Sustainable_fertilizer_usage_optimizer_for_Sona ...",
+      "url": "https://github.com/Keerthib2005/Sustainable_fertilizer_usage_optimizer_for_Sona_masuri_rice_yield_Enhancement-",
+      "snippet": "🌾 AI-Powered Sustainable Fertilizer Usage Optimizer for Sona Masuri Rice Yield Enhancement An AI-powered fertilizer recommendation system that predicts optimal fertilizer dosage for Sona Masuri rice cultivation using soil nutrient values and machine learning models."
+    },
+    {
+      "title": "A study on optimal input images for rice yield ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1161030125000085",
+      "snippet": "Therefore, in this study, the optimal input image conditions were investigated for the prediction of rice yield using a CNN based on UAV aerial images collected after the mid-ripening stage. An attempt was made to provide a rationale for the results by visualizing the region of interest in the CNN model."
+    },
+    {
+      "title": "srinivas119/grainpalette---a-deep-learning-odyssey-in-rice-type ...",
+      "url": "https://deepwiki.com/srinivas119/grainpalette---a-deep-learning-odyssey-in-rice-type-classification",
+      "snippet": "GrainPalette is a deep learning-based system designed to classify five distinct varieties of rice using image recognition. The project encompasses the entire machine learning lifecycle, from dataset preparation and Convolutional Neural Network (CNN) training in a research environment to the deployment of a functional web application for real-time inference."
+    },
+    {
+      "title": "Using artificial intelligence algorithms to predict rice (Oryza sativa ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0168169921003033",
+      "snippet": "Three models including one traditional REG model and two AI-based models (ANN and GEP) were used to simulate the rice growth rate in this study. REG is a statistical method for developing linear relationships (Traore et al., 2020)."
+    }
+  ]
+}

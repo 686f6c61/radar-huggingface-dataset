@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cngvng/dia-llama-radgenome-ct-finetune",
+  "slug": "cngvng-dia-llama-radgenome-ct-finetune",
+  "author": "cngvng",
+  "url": "https://huggingface.co/cngvng/dia-llama-radgenome-ct-finetune",
+  "created_at": "2026-08-20T02:24:12.000Z",
+  "updated_at": "2026-08-20T02:26:58.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical",
+    "radiology",
+    "ct",
+    "report-generation",
+    "dia-llama",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16283375994,
+  "storage_human": "16.3 GB",
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dia-LLaMA: Towards Large Language Model-driven CT Report Generation",
+      "url": "https://arxiv.org/html/2403.16386",
+      "snippet": "Furthermore, we introduce disease-aware attention to enable the model to adjust attention for different diseases. Experiments on the chest CT dataset demonstrated that our proposed method outperformed previous methods and achieved state-of-the-art on both clinical efficacy performance and natural language generation metrics."
+    },
+    {
+      "title": "PDF Dia-LLaMA: Towards Large Language Model-Driven CT Report ... - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-032-04981-0_14.pdf?pdf=inline%20link",
+      "snippet": "To this end, we propose Dia-LLaMA, a framework adapted from LLaMA2-7B for CT report generation with diagnostic guidance prompts. To enhance the focus on diseased areas, we introduce a disease-aware attention module to capture disease-specific information."
+    },
+    {
+      "title": "PDF Dia-LLaMA: Towards Large Language Model-driven CT Report Generation",
+      "url": "https://papers.miccai.org/miccai-2025/paper/3319_paper.pdf",
+      "snippet": "Dia-LLaMA issues. To this end, we propose , a framework adapted from LLaMA2-7B for CT report generation with diagnostic guidance prompts. To enhance the focus on diseased areas, we introduce a disease-aware at-tention module to capture disease-specific information."
+    },
+    {
+      "title": "GitHub - zhi-xuan-chen/Dia-LLaMA: This is the official GitHub ...",
+      "url": "https://github.com/zhi-xuan-chen/Dia-LLaMA",
+      "snippet": "This is the official GitHub repository of the paper \"Dia-LLaMA: Towards Large Language Model-driven CT Report Generation\" - zhi-xuan-chen/Dia-LLaMA"
+    },
+    {
+      "title": "Dia-LLaMA: Towards Large Language Model-driven CT Report Generation",
+      "url": "https://arxiv.org/abs/2403.16386",
+      "snippet": "In this paper, we propose Dia-LLaMA, a framework to adapt the LLaMA2-7B for CT report generation by incorporating diagnostic information as guidance prompts. Considering the high dimension of CT, we leverage a pre-trained ViT3D with perceiver to extract the visual information."
+    }
+  ]
+}

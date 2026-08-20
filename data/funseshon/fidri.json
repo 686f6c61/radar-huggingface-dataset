@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "funseshon/fidri",
+  "slug": "funseshon-fidri",
+  "author": "funseshon",
+  "url": "https://huggingface.co/funseshon/fidri",
+  "created_at": "2026-08-20T00:23:02.000Z",
+  "updated_at": "2026-08-20T00:58:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970457499,
+  "storage_human": "970 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "funseshon/aika · Hugging Face",
+      "url": "https://huggingface.co/funseshon/aika",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "AI Fashion Model Generator - Flat-Lay to On-Model Photos",
+      "url": "https://aifashionmodel.net/",
+      "snippet": "New AI on-model photos in seconds Turn flat-lay photos into on-model shots, worn by anyone. Upload one garment and get a photorealistic AI model wearing it - ready for Amazon, Shopify and Temu. No photoshoot, no studio."
+    }
+  ]
+}

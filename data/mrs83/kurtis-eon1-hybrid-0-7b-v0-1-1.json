@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mrs83/Kurtis-EON1-Hybrid-0.7B-v0.1.1",
+  "slug": "mrs83-kurtis-eon1-hybrid-0-7b-v0-1-1",
+  "author": "mrs83",
+  "url": "https://huggingface.co/mrs83/Kurtis-EON1-Hybrid-0.7B-v0.1.1",
+  "created_at": "2026-05-13T17:34:11.000Z",
+  "updated_at": "2026-08-20T00:00:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "echo_hybrid",
+    "text-generation",
+    "trl",
+    "fft",
+    "rnn",
+    "ssm",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:ethicalabs/Echo-DSRN-Qwen2.5-0.5B-Hybrid",
+    "base_model:finetune:ethicalabs/Echo-DSRN-Qwen2.5-0.5B-Hybrid",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 184,
+  "trending_score": 0,
+  "parameters": 672190080,
+  "parameters_human": "672.2M",
+  "storage_bytes": 1355845724,
+  "storage_human": "1.4 GB",
+  "base_model": "ethicalabs/Echo-DSRN-Qwen2.5-0.5B-Hybrid",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kurtis-EON1 - a ethicalabs Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ethicalabs/kurtis-eon1",
+      "snippet": "mrs83/Kurtis-EON1-Hybrid-.7B-v0.1.1 Text Generation • 0.7B•Updated 23 days ago• 337"
+    },
+    {
+      "title": "Kurtis-EON1-Hybrid-0.7B-v0.1.1-vs-GPT-5.5 - Hugging Face",
+      "url": "https://huggingface.co/datasets/mrs83/Kurtis-EON1-Hybrid-0.7B-v0.1.1-vs-GPT-5.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kurtis EON1 Hybrid 0.7B v0.1.0 - thinkllm.dev",
+      "url": "https://thinkllm.dev/models/kurtis-eon1-hybrid-0-7b-v0-1-0",
+      "snippet": "A compact, lightweight model at 0.7B parameters, EON1 Hybrid sits at the smaller end of the scale where resource efficiency is the primary consideration. Its hybrid architecture suggests an attempt to blend different design approaches within tight parameter constraints. At this size, expectations should be calibrated accordingly — it handles text tasks but operates within the limits typical ..."
+    },
+    {
+      "title": "Kurtis EON1 Hybrid 0.7B v0.1.1 - thinkllm.dev",
+      "url": "https://thinkllm.dev/models/kurtis-eon1-hybrid-0-7b-v0-1-1",
+      "snippet": "A compact, openly licensed text model at 0.7B parameters — small enough to run on modest hardware but with a 32K context window that punches above its weight class for a model this size. Details about its specific capabilities and intended use cases are limited, so observable behavior in practice will tell you more than its name suggests. The Apache 2.0 license makes it freely usable and ..."
+    },
+    {
+      "title": "GitHub - ethicalabs-ai/kurtis: Kurtis is a fine-tuning, inference and ...",
+      "url": "https://github.com/ethicalabs-ai/kurtis",
+      "snippet": "Kurtis E1 Toolkit Kurtis is an experimental fine-tuning, evaluation and inference tool for Kurtis E1. Kurtis is aN assistant designed with empathy at its core. Unlike other AI models that aim for peak efficiency, Kurtis prioritizes understanding, emotional nuance, and meaningful conversations."
+    }
+  ]
+}

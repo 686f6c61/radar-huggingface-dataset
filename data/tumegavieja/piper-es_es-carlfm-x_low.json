@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tumegavieja/piper-es_ES-carlfm-x_low",
+  "slug": "tumegavieja-piper-es_es-carlfm-x_low",
+  "author": "tumegavieja",
+  "url": "https://huggingface.co/tumegavieja/piper-es_ES-carlfm-x_low",
+  "created_at": "2026-08-20T00:52:10.000Z",
+  "updated_at": "2026-08-20T00:52:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "onnx",
+    "speaches",
+    "piper",
+    "text-to-speech",
+    "es",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28130791,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rhasspy/piper-voices at main - Hugging Face",
+      "url": "https://huggingface.co/rhasspy/piper-voices/tree/main/es/es_ES/carlfm/x_low",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "piper-samples/samples/es/es_ES/carlfm at master · rhasspy ... - GitHub",
+      "url": "https://github.com/rhasspy/piper-samples/tree/master/samples/es/es_ES/carlfm",
+      "snippet": "Samples for Piper text to speech system. Contribute to rhasspy/piper-samples development by creating an account on GitHub."
+    },
+    {
+      "title": "Download Voices | Piper Documentation",
+      "url": "https://tderflinger.github.io/piper-docs/about/voices/download/",
+      "snippet": "Download Voices Arabic (ar_JO, العربية) kareem low - [model] [config] medium - [model] [config] Catalan (ca_ES, Català) upc_ona x_low - [model] [config ..."
+    },
+    {
+      "title": "es/es_ES/carlfm/x_low/MODEL_CARD · rhasspy/piper-voices at main",
+      "url": "https://huggingface.co/rhasspy/piper-voices/blame/main/es/es_ES/carlfm/x_low/MODEL_CARD",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "piper/VOICES.md at master · rhasspy/piper · GitHub",
+      "url": "https://github.com/rhasspy/piper/blob/master/VOICES.md",
+      "snippet": "A fast, local neural text to speech system. Contribute to rhasspy/piper development by creating an account on GitHub."
+    }
+  ]
+}

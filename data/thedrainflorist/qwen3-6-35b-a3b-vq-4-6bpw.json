@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "TheDrainFlorist/Qwen3.6-35B-A3B-VQ-4.6bpw",
+  "slug": "thedrainflorist-qwen3-6-35b-a3b-vq-4-6bpw",
+  "author": "TheDrainFlorist",
+  "url": "https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-4.6bpw",
+  "created_at": "2026-08-19T22:42:13.000Z",
+  "updated_at": "2026-08-19T23:16:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "quantized",
+    "vector-quantization",
+    "apple-silicon",
+    "qwen3.6",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5548490096,
+  "parameters_human": "5.55B",
+  "storage_bytes": 20110056621,
+  "storage_human": "20.1 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen3.6 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.6",
+      "snippet": "Qwen3.6 prioritizes stability and real-world utility, offering developers a more intuitive, responsive, and genuinely productive coding experience. This model family includes a dense 27B model, and 35B (3B active) MoE versions."
+    },
+    {
+      "title": "nvidia/Qwen3.6-35B-A3B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.6-35B-A3B: 73.4% SWE-bench With Only 3B Active Params — Runs on ...",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-35b-a3b-complete-guide/",
+      "snippet": "Alibaba released Qwen 3.6-35B-A3B on April 15, 2026 — the first open-weight model in the Qwen 3.6 generation. It&#x27;s a sparse Mixture-of-Experts model with 35 billion total parameters but only 3 billion active at inference time."
+    }
+  ]
+}

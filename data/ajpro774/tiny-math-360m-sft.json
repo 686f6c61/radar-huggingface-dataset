@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AJpro774/tiny-math-360m-sft",
+  "slug": "ajpro774-tiny-math-360m-sft",
+  "author": "AJpro774",
+  "url": "https://huggingface.co/AJpro774/tiny-math-360m-sft",
+  "created_at": "2026-08-19T20:59:43.000Z",
+  "updated_at": "2026-08-19T21:04:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34798897,
+  "storage_human": "35 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AJpro774/tiny-math-20m: Tiny ~360M math model - GitHub",
+      "url": "https://github.com/AJpro774/tiny-math-20m",
+      "snippet": "Dataset and base models retain their upstream licenses. Tiny ~360M math model + Rust DSL executor trained on Big-Math-RL-Verified (Jupyter + Colab LoRA SFT/GRPO)"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AJpro774 · GitHub",
+      "url": "https://github.com/AJpro774",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "Best AI for Math 2026 - Top Mathematical Models",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-math",
+      "snippet": "Rankings of the best AI models for mathematical reasoning. Compare models by math problem solving and mathematical capabilities."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device."
+    }
+  ]
+}

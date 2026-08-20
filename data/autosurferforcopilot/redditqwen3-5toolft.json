@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AutoSurferForCopilot/RedditQwen3.5ToolFt",
+  "slug": "autosurferforcopilot-redditqwen3-5toolft",
+  "author": "AutoSurferForCopilot",
+  "url": "https://huggingface.co/AutoSurferForCopilot/RedditQwen3.5ToolFt",
+  "created_at": "2026-08-19T22:27:34.000Z",
+  "updated_at": "2026-08-19T22:29:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839719414,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutoSurferForCopilot/RedditQwen3.5ToolFtPoc · Hugging Face",
+      "url": "https://huggingface.co/AutoSurferForCopilot/RedditQwen3.5ToolFtPoc",
+      "snippet": "AutoSurferForCopilot / RedditQwen3.5ToolFtPoc like 0 Follow AutoSurfer For Copilot 1 Image-Text-to-Text Transformers Safetensors qwen3_5 llama-factory full Generated from Trainer conversational License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AutoSurferForCopilot/RedditQwen3.5TradFt · Hugging Face",
+      "url": "https://huggingface.co/AutoSurferForCopilot/RedditQwen3.5TradFt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedditQwen3.5ToolFtPoc API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/AutoSurferForCopilot/RedditQwen3.5ToolFtPoc",
+      "snippet": "Deploy RedditQwen3.5ToolFtPoc with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "RedditQwen3.5SynthAgentFt API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/AutoSurferForCopilot/RedditQwen3.5SynthAgentFt",
+      "snippet": "Deploy RedditQwen3.5SynthAgentFt with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

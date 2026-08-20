@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "wirthual/rf-detr-executorch",
+  "slug": "wirthual-rf-detr-executorch",
+  "author": "wirthual",
+  "url": "https://huggingface.co/wirthual/rf-detr-executorch",
+  "created_at": "2026-04-04T01:21:28.000Z",
+  "updated_at": "2026-08-19T22:22:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "object-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 480090106,
+  "storage_human": "480 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wirthual/rf-detr-executorch · Hugging Face",
+      "url": "https://huggingface.co/wirthual/rf-detr-executorch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wirthual/rf-detr-executorch at main - Hugging Face",
+      "url": "https://huggingface.co/wirthual/rf-detr-executorch/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main rf-detr-executorch 480 MB Ctrl+K Ctrl+K 1 contributor History:4 commits wirthual Upload output.png 29a88e2 verified3 months ago .gitattributes 1.77 kBUpload output.png3 months ago README.md 1.61 kBUpdate README.md3 months ago model_large.pte 125 MB xet Upload exported ..."
+    },
+    {
+      "title": "GitHub - roboflow/rf-detr: RF-DETR is a real-time object detection and ...",
+      "url": "https://github.com/roboflow/rf-detr",
+      "snippet": "RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, designed for fine-tuning. [ICLR 2026] - roboflow/rf-detr"
+    },
+    {
+      "title": "README.md · wirthual/rf-detr-executorch at main",
+      "url": "https://d6108366.hf-mirror.com/wirthual/rf-detr-executorch/blob/main/README.md?code=true",
+      "snippet": "wirthual / rf-detr-executorch like 0 ExecuTorch License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main rf-detr-executorch /README.md wirthual Update README.md 362c76c verified5 months ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 1.61 kB ..."
+    },
+    {
+      "title": "Export Model - RF-DETR",
+      "url": "https://rfdetr.roboflow.com/develop/learn/export/",
+      "snippet": "Export RF-DETR models to ONNX, TensorRT, TFLite, ExecuTorch, and native CoreML (FP32/FP16/INT8) for high-performance inference on GPUs, mobile, and edge devices."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JHAhmed/TDS-GA",
+  "slug": "jhahmed-tds-ga",
+  "author": "JHAhmed",
+  "url": "https://huggingface.co/JHAhmed/TDS-GA",
+  "created_at": "2026-08-19T19:54:14.000Z",
+  "updated_at": "2026-08-19T19:54:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tds Ga3 - a Hugging Face Space by Obaid2026",
+      "url": "https://huggingface.co/spaces/Obaid2026/tds-ga3",
+      "snippet": "This app checks a given email address and returns a simple JSON response showing whether the check succeeded and echoing the email. Provide the email you want to verify, and the app will output a r..."
+    },
+    {
+      "title": "Tds Ga3 - a Hugging Face Space by 24f1001997",
+      "url": "https://huggingface.co/spaces/24f1001997/tds-ga3",
+      "snippet": "This tool checks a given email address and tells you if it&#x27;s accepted. You simply provide the email you want to verify, and the app returns a short JSON response indicating success (`ok`) and echoi..."
+    },
+    {
+      "title": "GitHub - angadseth/tds-ga5-guide: TDS GA5 (Agentic AI) method guides ...",
+      "url": "https://github.com/angadseth/tds-ga5-guide",
+      "snippet": "TDS GA5 — Simple Guides (Agentic AI week) These are my notes for GA5. Each question has its own file with the approach — not ready-made answers, because everyone&#x27;s task is personalised (the grader seeds it from your email, so your maze, your prices, your file set are all different from mine)."
+    },
+    {
+      "title": "tds-ga5-guide/Q10.md at master · angadseth/tds-ga5-guide",
+      "url": "https://github.com/angadseth/tds-ga5-guide/blob/master/Q10.md",
+      "snippet": "An A2A (Agent-to-Agent) 1.0 invoice agent. The grader sends a batch of invoice packages; you use any AI to read them, propose one action per invoice with cited evidence, wait for the grader&#x27;s results, then execute only the accepted proposals and store the completed Task. Marks come from correct actions, real receipt handling, stored state, and protocol behaviour — not model names or token ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

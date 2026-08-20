@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "LEAP-LAB-KUS/leap-kt-bkt3-2020-12",
+  "slug": "leap-lab-kus-leap-kt-bkt3-2020-12",
+  "author": "LEAP-LAB-KUS",
+  "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-bkt3-2020-12",
+  "created_at": "2026-08-09T06:54:11.000Z",
+  "updated_at": "2026-08-20T00:29:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "leap-kt",
+  "languages": [],
+  "tags": [
+    "leap-kt",
+    "safetensors",
+    "knowledge-tracing",
+    "education",
+    "educational-data-mining",
+    "bkt3",
+    "dataset:assist2009",
+    "dataset:assist2012",
+    "dataset:dbe_kt22",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13576275,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LEAP-LAB-KUS/leap-kt-bkt3-2020-12 · Hugging Face",
+      "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-bkt3-2020-12",
+      "snippet": "BKT3 — Part of leap-kt-toolkit, a systematic re-implementation of published Knowledge Tracing models under one protocol. This repository holds every fold of every dataset this model has been run on, with the per-epoch training logs and the exact user split alongside the checkpoints."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=bkt3",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Leap Laboratories",
+      "url": "https://www.leap-labs.com/",
+      "snippet": "The new engine for scientific discovery"
+    },
+    {
+      "title": "LeapLabTHU (LeapLab) · GitHub",
+      "url": "https://github.com/LeapLabTHU",
+      "snippet": "The Learning And Perception (LEAP) Lab is a research group at Tsinghua University working in the area of machine learning, multi-modal learning and embodied int - LeapLabTHU"
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    }
+  ]
+}

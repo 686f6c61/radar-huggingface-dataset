@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "llm-jp/llm-jp-4-33b-thinking-gguf",
+  "slug": "llm-jp-llm-jp-4-33b-thinking-gguf",
+  "author": "llm-jp",
+  "url": "https://huggingface.co/llm-jp/llm-jp-4-33b-thinking-gguf",
+  "created_at": "2026-08-18T10:30:27.000Z",
+  "updated_at": "2026-08-20T01:57:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "en",
+    "ja",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33219548160,
+  "parameters_human": "33.22B",
+  "storage_bytes": 86624315364,
+  "storage_human": "86.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for llm-jp/llm-jp-4-33b-thinking - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:llm-jp/llm-jp-4-33b-thinking",
+      "snippet": "Active filters: llm-jp/llm-jp-4-33b-thinking. Clear all. mmnga-o/llm-jp-4-33b-thinking-gguf. 33B • Updated about 3 hours ago • 3"
+    },
+    {
+      "title": "約332億パラメータのDense型LLM「LLM-jp-4 33B」モデルを公開",
+      "url": "https://llm-jp.nii.ac.jp/news/20260818/",
+      "snippet": "LLM-jpが開発する評価フレームワーク「llm-jp-judge」を用いて、「llm-jp-4-33b-thinking」の性能を評価しました。 その結果、日本語MT-Bench、英語MT-Bench、AnswerCarefully、llm-jp-instructionsの4つのベンチマークすべてで、これまでに公開したすべてのLLM-jp-4 Thinkingモデルを ..."
+    },
+    {
+      "title": "LLM-jp-4 Models - a llm-jp Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/llm-jp/llm-jp-4-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Release - LLM-jp",
+      "url": "https://llm-jp.nii.ac.jp/en/release-en/",
+      "snippet": "Users of this model are requested to use it appropriately and at their own responsibility, in accordance with the \"Guideline for Ensuring the Appropriateness of Research & Development and Utilization of Artificial Intelligence-Related Technology\" (Decision of the Artificial Intelligence Strategic Headquarters, December 19, 2025)."
+    },
+    {
+      "title": "Llm Jp 4 32B A3b Thinking by llm-jp — VRAM 64.3GB, 64K context | LLM ...",
+      "url": "https://llm-explorer.com/model/llm-jp%2Fllm-jp-4-32b-a3b-thinking,77m1zzzM4iUisoCJaHgEI9",
+      "snippet": "Llm Jp 4 32B A3b Thinking is an open-source 32b LLM by llm-jp. VRAM 64.3GB, 64K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

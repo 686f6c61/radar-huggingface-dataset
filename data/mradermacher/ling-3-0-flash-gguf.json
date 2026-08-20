@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ling-3.0-flash-GGUF",
+  "slug": "mradermacher-ling-3-0-flash-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ling-3.0-flash-GGUF",
+  "created_at": "2026-08-19T21:24:16.000Z",
+  "updated_at": "2026-08-19T21:35:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 72402918016,
+  "storage_human": "72.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AtomicChat/Ling-3.0-flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/Ling-3.0-flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "mradermacher/model_requests · inclusionAI/Ling-3.0-flash",
+      "url": "https://huggingface.co/mradermacher/model_requests/discussions/2824",
+      "snippet": "mradermacher / model_requests like 197 English Model card FilesFiles and versions xet Community 2813 Copy to bucket new"
+    },
+    {
+      "title": "Ling-3.0-flash · LLM Releases",
+      "url": "https://www.llm-releases.com/models/ling-3-0-flash",
+      "snippet": "Ant Group&#x27;s efficiency-focused Mixture-of-Experts model, released July 23 2026 by its inclusionAI lab: 124B total parameters activating only ~5.1B per token (1/64 expert activation). Ant claims it matches or beats the company&#x27;s own ~1T-parameter Ling-2.6 flagship on most benchmarks it shows, at 1/8 the total and 1/12 the active parameters — a vendor claim with no public benchmark table or ..."
+    },
+    {
+      "title": "Ling-3.0-flash - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/inclusionai/ling-3.0-flash-20260723",
+      "snippet": "Ling-3.0-flash, an inclusionai 124B-parameter Mixture-of-Experts (MoE) model, demonstrates strong performance in speed, typically ranking among the fastest models with a 78th percentile across eight benchmarks."
+    }
+  ]
+}

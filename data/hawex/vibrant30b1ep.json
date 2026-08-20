@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Hawex/vibrant30b1ep",
+  "slug": "hawex-vibrant30b1ep",
+  "author": "Hawex",
+  "url": "https://huggingface.co/Hawex/vibrant30b1ep",
+  "created_at": "2026-08-19T22:11:44.000Z",
+  "updated_at": "2026-08-19T22:11:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Search, verify, and track AI models using SHA256 hashing. Find models across CivitAI, HuggingFace, TensorArt, SeaArt, PixAI, Shakker, Tungsten, Civision, TensorHub, Yodayo, Moescape and torrents."
+    },
+    {
+      "title": "modelmap",
+      "url": "https://modelmap.cc/",
+      "snippet": "modelmap Paste a Hugging Face model id. Get a living map of the network — no weights downloaded."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI Model List - One Click Hangar",
+      "url": "https://oneclickhangar.com/forum/index.php?topic=535.0",
+      "snippet": "Print Pages: [1] « previous next » One Click Hangar » Downloads » AI Flightplans » James&#x27;s flightplans (Moderator: jamessolomon) » AI Model List Jump to:"
+    }
+  ]
+}

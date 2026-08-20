@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/grok.h013.rl-easy.step_40",
+  "slug": "agentic-ptb-grok-h013-rl-easy-step_40",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/grok.h013.rl-easy.step_40",
+  "created_at": "2026-08-20T03:07:57.000Z",
+  "updated_at": "2026-08-20T03:09:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "grok",
+  "languages": [],
+  "tags": [
+    "grok",
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "Apple is reportedly building its own AI model for China with Alibaba",
+      "url": "https://www.macobserver.com/news/apple-is-reportedly-building-its-own-ai-model-for-china-with-alibaba/",
+      "snippet": "Apple is reportedly training its own AI model for China with Alibaba as it prepares to launch Apple Intelligence in the country."
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "GitHub - l0gicx/ai-model-bypass: Exploit prompts and roleplay ...",
+      "url": "https://github.com/l0gicx/ai-model-bypass",
+      "snippet": "Exploit prompts and roleplay techniques for bypassing AI model restrictions. - l0gicx/ai-model-bypass"
+    },
+    {
+      "title": "Every Grok AI Model Explained and Compared (Aug, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-grok-ai-model-explained-compared/",
+      "snippet": "Every current Grok model also reads images and calls tools, so you can build agents that see and act, not just chat. Pricing compared across the lineup Grok is cheap for its class. Output tokens drive most cost, and the flagship output is $2.50 per million, well below the flagship price of most Western labs."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Grug-35B-A3B-NPU2",
+  "slug": "atomic-germ-grug-35b-a3b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Grug-35B-A3B-NPU2",
+  "created_at": "2026-08-12T14:25:01.000Z",
+  "updated_at": "2026-08-19T20:09:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "safetensors",
+    "fine-tuned",
+    "qlora",
+    "qwen",
+    "qwen3.6",
+    "moe",
+    "a3b",
+    "reasoning",
+    "compact-reasoning",
+    "fastflowlm",
+    "q4nx",
+    "npu",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:hotdogs/uka-glm-5.2",
+    "dataset:Scale-or-Reason/general-reasoning-ift-pairs",
+    "dataset:samcheng0/lumia-reasoning-sft-v1",
+    "dataset:HSH-Intelligence/verified-math-reasoning-3k",
+    "dataset:kd13/CodeDebug-Instruct-v2-Reasoning",
+    "dataset:Madarabr/cortex-adaptive-thinking",
+    "dataset:CL-From-Nothing/code_rose_initial_1_7B_SFT_10K_rollouts_Qwen3-4B-Thinking-2507_k12_t0.7_maxtok12288",
+    "base_model:kai-os/Grug-35B-A3B",
+    "base_model:quantized:kai-os/Grug-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 434,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23248220518,
+  "storage_human": "23.2 GB",
+  "base_model": "kai-os/Grug-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Grug-35B-A3B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Grug-35B-A3B-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Atomic-Germ/Grug-35B-A3B-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Grug-35B-A3B-NPU2/tree/main",
+      "snippet": "Atomic-Germ ... Grug-35B-A3B-NPU2 like 0 Text Generation Transformers Safetensors 7 datasets English qwen3_5_moe image-text-to-text fine-tuned qlora qwen qwen3.6 Mixture of Experts a3b reasoning compact-reasoning fastflowlm q4nx npu conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use ..."
+    },
+    {
+      "title": "Atomic-Germ · GitHub",
+      "url": "https://github.com/Atomic-Germ",
+      "snippet": "Forked from ROCm/FastFlowLM Run LLMs on AMD Ryzen™ AI NPUs in minutes. Just like Ollama - but purpose-built and deeply optimized for the AMD NPUs. C++ 1"
+    },
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Grug 35B A3B by kai-os — VRAM 69GB, 256K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/kai-os%2FGrug-35B-A3B,6JoXsn2rYOqXfHhmkfspv9",
+      "snippet": "Grug 35B A3B is an open-source 34.7b LLM by kai-os. VRAM 69GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

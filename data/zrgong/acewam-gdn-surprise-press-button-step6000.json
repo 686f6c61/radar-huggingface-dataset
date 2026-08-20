@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zrgong/acewam-gdn-surprise-press-button-step6000",
+  "slug": "zrgong-acewam-gdn-surprise-press-button-step6000",
+  "author": "zrgong",
+  "url": "https://huggingface.co/zrgong/acewam-gdn-surprise-press-button-step6000",
+  "created_at": "2026-08-20T02:27:58.000Z",
+  "updated_at": "2026-08-20T02:34:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-action-model",
+    "robotics",
+    "rmbench",
+    "full-gist-routing",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24087213917,
+  "storage_human": "24.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chinese AI model takes US tech industry by surprise with ... - MSN",
+      "url": "https://www.msn.com/en-ph/news/money/chinese-ai-model-takes-us-tech-industry-by-surprise-with-abilities-rivaling-claude-and-chatgpt/ar-AA28dSVs",
+      "snippet": "Another powerful new artificial intelligence model from China took the US tech industry by surprise Friday, the latest sign that Chinese startups that publicly release their \"open-source\" AI ..."
+    },
+    {
+      "title": "Chinese AI Model Takes U.S. by Surprise with Abilities Rivaling Claude ...",
+      "url": "https://broadbandbreakfast.com/chinese-ai-model-takes-u-s-by-surprise-with-abilities-rivaling-claude-and-chatgpt/",
+      "snippet": "July 18, 2026 (AP) - Another powerful new artificial intelligence model from China took the U.S. tech industry by surprise Friday, the latest sign that Chinese startups that publicly release their \"open-source\" AI technology are making the California titans of AI sweat. The newest Kimi K3 model from Beijing-based startup Moonshot, run by a Pink Floyd-loving entrepreneur who earned his ..."
+    },
+    {
+      "title": "Chinese AI model takes US tech industry by surprise with abilities ...",
+      "url": "https://www.theglobeandmail.com/investing/markets/commodities/GDN24/pressreleases/3340411/chinese-ai-model-takes-us-tech-industry-by-surprise-with-abilities-rivaling-claude-and-chatgpt/",
+      "snippet": "Another powerful new artificial intelligence model from China took the U.S. tech industry by surprise Friday, the latest sign that Chinese startups that publicly release their \"open-source\" AI ..."
+    },
+    {
+      "title": "Chinese AI model takes US tech industry by surprise with abilities ...",
+      "url": "https://tech.yahoo.com/ai/gemini/articles/chinese-ai-model-takes-us-182836531.html",
+      "snippet": "Another powerful new artificial intelligence model from China took the U.S. tech industry by surprise Friday, the latest sign that Chinese startups that publicly release their \"open-source\" AI technology are making the California titans of AI sweat. \"This may be the single biggest release of the year,\" and marks a moment when open-source Chinese models are surpassing closed U.S. models ..."
+    },
+    {
+      "title": "China&#x27;s DeepSeek rolls out a long-anticipated update of its AI model",
+      "url": "https://www.theglobeandmail.com/investing/markets/commodities/GDN19/pressreleases/1493672/china-s-deepseek-rolls-out-a-long-anticipated-update-of-its-ai-model/",
+      "snippet": "But it was DeepSeek&#x27;s specialized \"reasoning\" AI model, called R1, that took markets by surprise with its release in January 2025."
+    }
+  ]
+}

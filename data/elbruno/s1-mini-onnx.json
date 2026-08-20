@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "elbruno/s1-mini-onnx",
+  "slug": "elbruno-s1-mini-onnx",
+  "author": "elbruno",
+  "url": "https://huggingface.co/elbruno/s1-mini-onnx",
+  "created_at": "2026-08-19T20:27:30.000Z",
+  "updated_at": "2026-08-19T20:27:37.000Z",
+  "license": "apache-2.0-with-naming-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime-genai",
+    "qwen3",
+    "asr",
+    "text-normalization",
+    "base_model:superwhisper/s1-mini",
+    "base_model:quantized:superwhisper/s1-mini",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1608774988,
+  "storage_human": "1.6 GB",
+  "base_model": "superwhisper/s1-mini",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ElBruno.LocalLLMs/docs/supported-models.md at main - GitHub",
+      "url": "https://github.com/elbruno/ElBruno.LocalLLMs/blob/main/docs/supported-models.md",
+      "snippet": "C# local LLM chat completions library using ONNX Runtime, compatible with Microsoft.Extensions.AI - elbruno/ElBruno.LocalLLMs"
+    },
+    {
+      "title": "elbruno (El Bruno) · GitHub",
+      "url": "https://github.com/elbruno",
+      "snippet": "AI and NET Advocate @Microsoft, former Microsoft AI MVP (14 years!), lazy runner, lazy podcaster, avg coder - elbruno"
+    },
+    {
+      "title": "El Bruno - Dev Advocating @Microsoft",
+      "url": "https://elbruno.com/",
+      "snippet": "TL;DR This was the final ElBruno.NetAgent experiment: GitHub Copilot CLI + SQUAD using Azure OpenAI GPT-5.5 BYOK against the same app-building challenge I previously tried with CPU-only local models, GPU local models, and GPT-5-mini."
+    },
+    {
+      "title": "elbruno (Bruno Capuano) - Hugging Face",
+      "url": "https://huggingface.co/elbruno/models",
+      "snippet": "User profile of Bruno Capuano on Hugging Face"
+    },
+    {
+      "title": "️ Real-Time AI Conversations in .NET - elbruno.com",
+      "url": "https://elbruno.com/2026/03/02/%F0%9F%8E%99%EF%B8%8F%F0%9F%A4%96-real-time-ai-conversations-in-net-local-stt-tts-vad-and-llm-no-cloud-required/",
+      "snippet": "This blog post was created with the help of AI tools. Yes, I used a bit of magic from language models to organize my thoughts and automate the boring parts, but the geeky fun and the in C# are 100% mine. Hi What if you could build a real-time voice conversation app in .NET — speech-to-text, text-to-speech, voice activity detection, and LLM responses — all running locally on your machine ..."
+    }
+  ]
+}

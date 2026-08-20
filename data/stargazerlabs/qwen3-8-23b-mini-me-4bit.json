@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "StargazerLabs/Qwen3.8-23B-Mini-Me-4bit",
+  "slug": "stargazerlabs-qwen3-8-23b-mini-me-4bit",
+  "author": "StargazerLabs",
+  "url": "https://huggingface.co/StargazerLabs/Qwen3.8-23B-Mini-Me-4bit",
+  "created_at": "2026-08-19T20:43:03.000Z",
+  "updated_at": "2026-08-19T21:00:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "layer-pruning",
+    "image-text-to-text",
+    "conversational",
+    "base_model:StargazerLabs/Qwen3.8-23B-Mini-Me-bf16",
+    "base_model:quantized:StargazerLabs/Qwen3.8-23B-Mini-Me-bf16",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3951571728,
+  "parameters_human": "3.95B",
+  "storage_bytes": 13505272475,
+  "storage_human": "13.5 GB",
+  "base_model": "StargazerLabs/Qwen3.8-23B-Mini-Me-bf16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "How to Run Qwen 3.8 in Production: API, Self-Hosted 27B, or Both (2026)",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-in-production",
+      "snippet": "Qwen 3.8 gives production teams both halves: a frontier API flagship and an Apache 2.0 27B that serves from one GPU. How to consume the API defensively, size the self-hosted tier, and where the cost crossover actually sits."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/starcoder2-15b-FP8",
+  "slug": "redhatai-starcoder2-15b-fp8",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/starcoder2-15b-FP8",
+  "created_at": "2024-07-31T19:57:00.000Z",
+  "updated_at": "2026-08-19T21:45:52.000Z",
+  "license": "bigcode-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "starcoder2",
+    "text-generation",
+    "fp8",
+    "vllm",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 15957889024,
+  "parameters_human": "15.96B",
+  "storage_bytes": 16564748304,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/starcoder2-15b-FP8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/starcoder2-15b-FP8",
+      "snippet": "Model Optimizations This model was obtained by quantizing the weights and activations of starcoder2-15b to FP8 data type, ready for inference with vLLM >= 0.5.2. This optimization reduces the number of bits per parameter from 16 to 8, reducing the disk size and GPU memory requirements by approximately 50%."
+    },
+    {
+      "title": "RedHatAI/starcoder2-15b-FP8 - Fast, Reliable, and ... - friendli.ai",
+      "url": "https://friendli.ai/models/RedHatAI/starcoder2-15b-FP8",
+      "snippet": "Run RedHatAI/starcoder2-15b-FP8 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "RedHatAI/starcoder2-15b-quantized.w8a8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/starcoder2-15b-quantized.w8a8",
+      "snippet": "RedHatAI / starcoder2-15b-quantized.w8a8 like 0 Follow Red Hat AI 2.97k Text Generation Transformers Safetensors bigcode/the-stack-v2-train starcoder2 code Eval Results (legacy) text-generation-inference 8-bit precision compressed-tensors arxiv:2210.17323 arxiv:2107.03374 arxiv:2305.01210 License:bigcode-openrail-m Model card FilesFiles and ..."
+    },
+    {
+      "title": "Deploy RedHatAI/starcoder2-15b-FP8 | Inference Endpoints by Hugging Face",
+      "url": "https://endpoints.huggingface.co/new?repository=neuralmagic%2Fstarcoder2-15b-FP8",
+      "snippet": "Deploy starcoder2-15b-FP8 for text-generation inference in 1 click."
+    },
+    {
+      "title": "RedHatAI/starcoder2-15b-quantized.w8a8 - friendli.ai",
+      "url": "https://friendli.ai/models/RedHatAI/starcoder2-15b-quantized.w8a8",
+      "snippet": "Run RedHatAI/starcoder2-15b-quantized.w8a8 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

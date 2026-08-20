@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NeelRajani/Qwen3-0.6B-Base_SFT-safety75_ADV-pku-v00.01",
+  "slug": "neelrajani-qwen3-0-6b-base_sft-safety75_adv-pku-v00-01",
+  "author": "NeelRajani",
+  "url": "https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety75_ADV-pku-v00.01",
+  "created_at": "2026-08-20T00:00:03.000Z",
+  "updated_at": "2026-08-20T00:10:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01",
+    "base_model:finetune:NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 4779969067,
+  "storage_human": "4.8 GB",
+  "base_model": "NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-0.6B-Base_SFT_safety_v00.01 - Hugging Face",
+      "url": "https://huggingface.co/Neelectric/Qwen3-0.6B-Base_SFT_safety_v00.01",
+      "snippet": "Instructions to use Neelectric/Qwen3-.6B-Base_SFT_safety_v00.01 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Qwen3-0.6B-Base_SFT_safety_v00.01 - FriendliAI",
+      "url": "https://friendli.ai/models/Neelectric/Qwen3-0.6B-Base_SFT_safety_v00.01",
+      "snippet": "Deploy Qwen3-.6B-Base_SFT_safety_v00.01 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

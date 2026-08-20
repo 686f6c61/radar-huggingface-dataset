@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "navnav98/hingroberta-lid-comilingua",
+  "slug": "navnav98-hingroberta-lid-comilingua",
+  "author": "navnav98",
+  "url": "https://huggingface.co/navnav98/hingroberta-lid-comilingua",
+  "created_at": "2026-08-20T02:55:39.000Z",
+  "updated_at": "2026-08-20T02:58:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277455363,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126928332,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "l3cube-pune/hing-roberta · Hugging Face",
+      "url": "https://huggingface.co/l3cube-pune/hing-roberta",
+      "snippet": "l3cube-pune / hing-roberta like 0 Fill-Mask Transformers PyTorch L3Cube-HingCorpus Hindi English multilingual xlm-roberta codemix arxiv:2204.08398 License:cc-by-4. Model card FilesFiles and versions Community 2 Train Deploy Use this model HingRoBERTa"
+    },
+    {
+      "title": "navnav98 (Nav) - Hugging Face",
+      "url": "https://huggingface.co/navnav98",
+      "snippet": "models1 navnav98/xlmr-comi-pos Token Classification • 0.3B•Updated 16 days ago• 113"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - l3cube-pune/code-mixed-nlp: This repository is dedicated to ...",
+      "url": "https://github.com/l3cube-pune/code-mixed-nlp",
+      "snippet": "The L3Cube-HingLID is the Hindi-English code-mixed language identification dataset. It consists of 31756, 6420, and 6279 train, test, and validation samples respectively. The dataset is shared in the folder L3Cube-HingLID/. The HingBERT-LID model is shared here ."
+    },
+    {
+      "title": "HingRoBERTa: A Code-Mixed Hinglish Model",
+      "url": "https://www.emergentmind.com/topics/hingroberta",
+      "snippet": "HingRoBERTa is a code-mixed Hindi-English language model built on XLM-RoBERTa, designed for authentic Hinglish text processing. It employs 12 transformer layers with dynamic masked language modeling, optimizing performance for code-switching scenarios. Empirical evaluations on GLUECoS benchmarks and cybercrime classification demonstrate its competitive edge over traditional multilingual models."
+    }
+  ]
+}

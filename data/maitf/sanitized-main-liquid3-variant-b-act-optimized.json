@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "maitf/sanitized-main-liquid3-variant-b-act-optimized",
+  "slug": "maitf-sanitized-main-liquid3-variant-b-act-optimized",
+  "author": "maitf",
+  "url": "https://huggingface.co/maitf/sanitized-main-liquid3-variant-b-act-optimized",
+  "created_at": "2026-08-19T20:05:30.000Z",
+  "updated_at": "2026-08-19T20:05:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:maitf/sanitized-main-liquid3-variant-b",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maitf/main-liquid3-variant-b at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/maitf/main-liquid3-variant-b/tree/main",
+      "snippet": "Datasets: maitf / main-liquid3-variant-b like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main main-liquid3-variant-b 849 MB 1 contributor History:2 commits maitf Add files using upload-large-folder tool 934510a ..."
+    },
+    {
+      "title": "maitf (mai) - Hugging Face",
+      "url": "https://huggingface.co/maitf/datasets",
+      "snippet": "maitf&#x27;s datasets25 Sort: Recently updated maitf/main-liquid1_20260814_144223 Viewer •Updated about 2 hours ago•32.9k"
+    },
+    {
+      "title": "Liquid AI — Device-native foundation models.",
+      "url": "https://www.liquid.ai/",
+      "snippet": "Liquid AI is an efficiency-first foundation model company. We build highly capable, compute-optimized models that bring intelligence to any device and medium of choice."
+    },
+    {
+      "title": "Liquid Foundation Models — Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "The world&#x27;s most efficient foundation models — designed for on-device, edge, and cloud deployment."
+    },
+    {
+      "title": "Liquid AI · GitHub",
+      "url": "https://github.com/Liquid4All",
+      "snippet": "Liquid AI, Inc. Liquid AI has 47 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

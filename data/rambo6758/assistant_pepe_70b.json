@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Rambo6758/Assistant_Pepe_70B",
+  "slug": "rambo6758-assistant_pepe_70b",
+  "author": "Rambo6758",
+  "url": "https://huggingface.co/Rambo6758/Assistant_Pepe_70B",
+  "created_at": "2026-08-19T21:53:51.000Z",
+  "updated_at": "2026-08-19T21:53:51.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "en",
+    "dataset:SicariusSicariiStuff/UBW_Tapestries",
+    "base_model:meta-llama/Llama-3.1-70B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-70B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 282247265416,
+  "storage_human": "282.2 GB",
+  "base_model": "meta-llama/Llama-3.1-70B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Assistant_Pepe_70B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/assistant-pepe-70b-sicariussicariistuff",
+      "snippet": "Overview Assistant_Pepe_70B is a 70-billion parameter large language model built by SicariusSicariiStuff that combines instruction-following capability with minimal content filtering and lateral thinking capabilities. The model is based on Llama 3.1-70B and fine-tuned with curated data including 4chan content, resulting in a model that ranked #1 on the UGI benchmark for 70B models as of April ..."
+    },
+    {
+      "title": "SicariusSicariiStuff/Assistant_Pepe_70B · Hugging Face",
+      "url": "https://huggingface.co/SicariusSicariiStuff/Assistant_Pepe_70B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SicariusSicariiStuff_Assistant_Pepe_70B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/bartowski/SicariusSicariiStuff_Assistant_Pepe_70B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Assistant Pepe 70B tops Claude in lateral thinking — AICrier",
+      "url": "https://aicrier.com/post/cx4i9w08oik53iai0lfj",
+      "snippet": "Assistant Pepe 70B is a Llama-3.1-based model fine-tuned on unconventional data to overcome \"Assistant brain\" and excel at creative reasoning. The model demonstrates a unique ability to solve trick questions that frequently stump frontier LLMs like Claude Sonnet 4.6."
+    },
+    {
+      "title": "Assistant Pepe 70B by SicariusSicariiStuff - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/SicariusSicariiStuff%2FAssistant_Pepe_70B,3LxHbyLP4ulQJRInEEF0fL",
+      "snippet": "Assistant Pepe 70B is an open-source language model by SicariusSicariiStuff. Features: 70b LLM, VRAM: 141.1GB, Context: 128K, License: llama3.1, Instruction-Based ..."
+    }
+  ]
+}

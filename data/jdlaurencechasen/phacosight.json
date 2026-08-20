@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jdlaurencechasen/phacosight",
+  "slug": "jdlaurencechasen-phacosight",
+  "author": "jdlaurencechasen",
+  "url": "https://huggingface.co/jdlaurencechasen/phacosight",
+  "created_at": "2026-08-20T00:27:00.000Z",
+  "updated_at": "2026-08-20T00:29:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "surgical-video",
+    "cataract-surgery",
+    "semantic-segmentation",
+    "phase-recognition",
+    "medical",
+    "arxiv:2312.06295",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266230990,
+  "storage_human": "266 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phacosight/app at main · jdlaurence/phacosight · GitHub",
+      "url": "https://github.com/jdlaurence/phacosight/tree/main/app",
+      "snippet": "a AI-based cataract surgery analysis suite. Contribute to jdlaurence/phacosight development by creating an account on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Project Astra — Google DeepMind",
+      "url": "https://deepmind.google/models/project-astra/",
+      "snippet": "Project Astra is a research prototype exploring breakthrough capabilities for Google products — on the way to building a universal AI assistant. Its current capabilities include spatial processing, screensharing, and tool use."
+    },
+    {
+      "title": "On the way to zero phaco. | Ontosight.ai",
+      "url": "https://ontosight.ai/publication/journal-of-cataract-and-refractive-surgery-9ddb51c1bf4d26493de773190acfed77c75639efa02428c3bf5a4a46",
+      "snippet": "View detailed information about the selected research publication on Ontosight.ai."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

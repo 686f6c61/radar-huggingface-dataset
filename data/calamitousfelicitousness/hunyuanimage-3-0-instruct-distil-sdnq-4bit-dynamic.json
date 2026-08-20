@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "CalamitousFelicitousness/HunyuanImage-3.0-Instruct-Distil-SDNQ-4bit-dynamic",
+  "slug": "calamitousfelicitousness-hunyuanimage-3-0-instruct-distil-sdnq-4bit-dynamic",
+  "author": "CalamitousFelicitousness",
+  "url": "https://huggingface.co/CalamitousFelicitousness/HunyuanImage-3.0-Instruct-Distil-SDNQ-4bit-dynamic",
+  "created_at": "2026-01-31T02:17:20.000Z",
+  "updated_at": "2026-08-19T21:51:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Hunyuan",
+    "image-to-image",
+    "custom_code",
+    "arxiv:2509.23951",
+    "license:other",
+    "8-bit",
+    "sdnq",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 44221728243,
+  "parameters_human": "44.22B",
+  "storage_bytes": 105468348785,
+  "storage_human": "105.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HunyuanImage-3.0-Instruct-Distil-SDNQ-4bit-dynamic",
+      "url": "https://huggingface.co/CalamitousFelicitousness/HunyuanImage-3.0-Instruct-Distil-SDNQ-4bit-dynamic",
+      "snippet": "HunyuanImage-3.0 is a groundbreaking native multimodal model that unifies multimodal understanding and generation within an autoregressive framework. Our text-to-image and image-to-image model achieves performance comparable to or surpassing leading closed-source models."
+    },
+    {
+      "title": "config.json · CalamitousFelicitousness/HunyuanImage-3.0-Instruct-Distil ...",
+      "url": "https://huggingface.co/CalamitousFelicitousness/HunyuanImage-3.0-Instruct-Distil-SDNQ-4bit-dynamic/blob/main/config.json",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Tencent-Hunyuan/HunyuanImage-3.0: HunyuanImage-3.0: A Powerful ...",
+      "url": "https://github.com/Tencent-Hunyuan/HunyuanImage-3.0",
+      "snippet": "HunyuanImage-3.0 is a groundbreaking native multimodal model that unifies multimodal understanding and generation within an autoregressive framework. Our text-to-image and image-to-image model achieves performance comparable to or surpassing leading closed-source models."
+    },
+    {
+      "title": "Releases: EricRollei/Comfy_HunyuanImage3 - GitHub",
+      "url": "https://github.com/EricRollei/Comfy_HunyuanImage3/releases",
+      "snippet": "🎉 Release v1.1.0 — Instruct Models, Block Swap & Flexible Model Paths Professional ComfyUI custom nodes for Tencent HunyuanImage-3.0, the powerful 80B parameter (13B active) native multimodal MoE image generation model. What&#x27;s New in v1.1.0 🤖 Instruct Model Support 5 new nodes: Instruct Loader, Generate, Image Edit, Multi-Image Fusion, and Unload Built-in prompt enhancement with Chain ..."
+    },
+    {
+      "title": "Installation and Setup | Tencent-Hunyuan/HunyuanImage-3.0 | DeepWiki",
+      "url": "https://deepwiki.com/Tencent-Hunyuan/HunyuanImage-3.0/2.1-installation-and-setup",
+      "snippet": "This page focuses on setting up the environment for inference and development. For information about running the model after installation, see Quick Start Examples. For detailed performance tuning, see Performance Optimization. System Requirements HunyuanImage-3.0 requires specific hardware and software configurations to operate effectively."
+    }
+  ]
+}

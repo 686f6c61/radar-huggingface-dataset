@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "iamwille/speecht5_finetuned_iamwille_ig",
+  "slug": "iamwille-speecht5_finetuned_iamwille_ig",
+  "author": "iamwille",
+  "url": "https://huggingface.co/iamwille/speecht5_finetuned_iamwille_ig",
+  "created_at": "2026-08-19T23:39:55.000Z",
+  "updated_at": "2026-08-20T00:02:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "speecht5",
+    "text-to-audio",
+    "generated_from_trainer",
+    "base_model:microsoft/speecht5_tts",
+    "base_model:finetune:microsoft/speecht5_tts",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144433890,
+  "parameters_human": "144.4M",
+  "storage_bytes": 2889236984,
+  "storage_human": "2.9 GB",
+  "base_model": "microsoft/speecht5_tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iamwille (WillE) - Hugging Face",
+      "url": "https://huggingface.co/iamwille/datasets",
+      "snippet": "NLP AI & ML interests Organizations"
+    },
+    {
+      "title": "iamwille (WillE) - Hugging Face",
+      "url": "https://huggingface.co/iamwille",
+      "snippet": "User profile of WillE on Hugging Face"
+    },
+    {
+      "title": "GitHub - microsoft/SpeechT5: Unified-Modal Speech-Text Pre-Training for ...",
+      "url": "https://github.com/microsoft/SpeechT5",
+      "snippet": "Leveraging large-scale unlabeled speech and text data, we pre-train SpeechT5 to learn a unified-modal representation, hoping to improve the modeling capability for both speech and text."
+    },
+    {
+      "title": "SpeechT5/SpeechT5/README.md at main · microsoft/SpeechT5",
+      "url": "https://github.com/microsoft/SpeechT5/blob/main/SpeechT5/README.md",
+      "snippet": "The manifest and pre-trained vocoder can be found in huggingface, which may be helpful to reproduce the results of SpeechT5 VC model. We also provide re-implementation of VC fine-tuned model speecht5_vc.pt, but with a smaller batch size or max updates, which can be helpful."
+    },
+    {
+      "title": "SpeechT5: Unified-Modal Encoder-Decoder Pre-Training for Spoken ...",
+      "url": "https://arxiv.org/abs/2110.07205",
+      "snippet": "Motivated by the success of T5 (Text-To-Text Transfer Transformer) in pre-trained natural language processing models, we propose a unified-modal SpeechT5 framework that explores the encoder-decoder pre-training for self-supervised speech/text representation learning. The SpeechT5 framework consists of a shared encoder-decoder network and six modal-specific (speech/text) pre/post-nets. After ..."
+    }
+  ]
+}

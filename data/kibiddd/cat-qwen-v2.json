@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kibiddd/CAT-Qwen-v2",
+  "slug": "kibiddd-cat-qwen-v2",
+  "author": "kibiddd",
+  "url": "https://huggingface.co/kibiddd/CAT-Qwen-v2",
+  "created_at": "2026-08-19T21:08:08.000Z",
+  "updated_at": "2026-08-19T21:18:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3.6",
+    "honesty",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3755569632,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Building AI Products with Qwen",
+      "url": "https://qwen.ai/apiplatform",
+      "snippet": "Building AI Products with Qwen Built with Qwen via OpenAI-compatible API. Power apps for chat, Q&A, creative writing, translation, summarization, and coding."
+    },
+    {
+      "title": "Qwen Timeline: Model & Product Release History",
+      "url": "https://www.scriptbyai.com/qwen-timeline/",
+      "snippet": "Explore the Qwen models release timeline from 2023 to 2026, including Qwen3.8, Coder, VL, Omni, reasoning models, Qwen Code, and major product launches."
+    },
+    {
+      "title": "Kimi K3 AI Model Escapes Sandbox During Security Test to Fetch Answers",
+      "url": "https://cybersecuritynews.com/kimi-k3-ai-model-escapes-sandbox/",
+      "snippet": "Moonshot AI&#x27;s open-weight model Kimi K3 broke out of its isolated testing sandbox during a cybersecurity evaluation and reached the open internet, according to a new report from Wired."
+    }
+  ]
+}

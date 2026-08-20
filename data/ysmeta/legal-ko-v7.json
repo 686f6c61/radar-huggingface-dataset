@@ -1,0 +1,161 @@
+{
+  "schema": 1,
+  "id": "ysmeta/legal-ko-v7",
+  "slug": "ysmeta-legal-ko-v7",
+  "author": "ysmeta",
+  "url": "https://huggingface.co/ysmeta/legal-ko-v7",
+  "created_at": "2026-08-20T02:09:51.000Z",
+  "updated_at": "2026-08-20T02:10:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:152556",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "ko",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "arxiv:1807.03748",
+    "base_model:dragonkue/BGE-m3-ko",
+    "base_model:finetune:dragonkue/BGE-m3-ko",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2288147443,
+  "storage_human": "2.3 GB",
+  "base_model": "dragonkue/BGE-m3-ko",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "legal hard slice",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.92
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "legal hard slice",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.99
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "legal hard slice",
+      "metric": "Cosine Precision@1",
+      "value": 0.92
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "legal hard slice",
+      "metric": "Cosine Precision@3",
+      "value": 0.3222222222222222
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "legal hard slice",
+      "metric": "Cosine Precision@5",
+      "value": 0.19666666666666666
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "legal hard slice",
+      "metric": "Cosine Precision@10",
+      "value": 0.09899999999999999
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "legal hard slice",
+      "metric": "Cosine Recall@1",
+      "value": 0.92
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "legal hard slice",
+      "metric": "Cosine Recall@3",
+      "value": 0.9666666666666667
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "legal hard slice",
+      "metric": "Cosine Recall@5",
+      "value": 0.9833333333333333
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "legal hard slice",
+      "metric": "Cosine Recall@10",
+      "value": 0.99
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "legal hard slice",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.9582296100624303
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "legal hard slice",
+      "metric": "Cosine Mrr@10",
+      "value": 0.9477037037037038
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "legal hard slice",
+      "metric": "Cosine Map@100",
+      "value": 0.9481827999951571
+    }
+  ],
+  "sources": [
+    {
+      "title": "ysmeta/EVE-Bench-Legal-1.0 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ysmeta/EVE-Bench-Legal-1.0",
+      "snippet": "Datasets: ysmeta / EVE-Bench-Legal-1. like 0 Follow YSMETA AI LAB 3 Tasks: Text Retrieval Languages: Korean Size: 10K<n<100K Tags: korean legal retrieval benchmark License: openrail Dataset card Data Studio FilesFiles and versions xet Community Dataset Preview API Embed Duplicate Data Studio Subset (1) default default Split (1) test test"
+    },
+    {
+      "title": "YSMETA AI LAB - Hugging Face",
+      "url": "https://huggingface.co/ysmeta/datasets",
+      "snippet": "Org profile for YSMETA AI LAB on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Best AI for Legal 2026 - Top Legal AI Models - llm-stats.com",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-legal",
+      "snippet": "Rankings of the best AI models for legal tasks. Compare models by legal knowledge, contract analysis, and jurisprudence capabilities."
+    },
+    {
+      "title": "Midjourney Unveils &#x27;V7,&#x27; Its First New AI Image Generation Model In ...",
+      "url": "https://www.eyerys.com/articles/news/midjourney-unveils-v7-its-first-new-ai-image-generation-model-over-year",
+      "snippet": "More than a year since its last major update, Midjourney has finally unveiled a new image generation model — a long-awaited moment in the world of AI-powered creativity. The journey traces back to late 2022, when OpenAI launched ChatGPT, a conversational AI built initially on the powerful GPT-3.5 language model. Its overnight success didn&#x27;t just captivate tech enthusiasts — it triggered a ..."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

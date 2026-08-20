@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dddasd23/ruby-qwen-merged",
+  "slug": "dddasd23-ruby-qwen-merged",
+  "author": "dddasd23",
+  "url": "https://huggingface.co/dddasd23/ruby-qwen-merged",
+  "created_at": "2026-08-20T02:33:02.000Z",
+  "updated_at": "2026-08-20T02:43:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ViFortune-AI/Qwen3-VL-1B-Merged · Hugging Face",
+      "url": "https://huggingface.co/ViFortune-AI/Qwen3-VL-1B-Merged",
+      "snippet": "Qwen3-VL (Merged Model) Introduction This repository contains a merged multimodal model that combines: The language backbone from Qwen3, which improves reasoning, alignment, and long-context language understanding. The visual encoder branch from Qwen2.5-VL-3B-Instruct, which provides strong perception ability for images, documents, charts, and videos. By merging the strengths of Qwen3 and ..."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "mergekit-community/Qwen2.5-14B-Merge · Hugging Face",
+      "url": "https://huggingface.co/mergekit-community/Qwen2.5-14B-Merge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen&#x27;s series of open-source and proprietary models. It offers comprehensive functionality spanning chatbots, image and video understanding, image generation and editing, document processing, tool utilization, voice and video chat, and artifacts."
+    },
+    {
+      "title": "CPU merge | Qwen QLoRA train",
+      "url": "https://techwithsergiu.github.io/qwen-qlora-train/merge.html",
+      "snippet": "CPU merge Purpose Merge a LoRA adapter into base weights on CPU to produce a standalone model. This is usually needed for export/publishing workflows (for example GGUF conversion). When to use You need a standalone merged model directory. You plan GGUF conversion and quantization. You want to publish merged weights."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "saidutta69/Qwen2.5-0.5B-Instruct-heretic",
+  "slug": "saidutta69-qwen2-5-0-5b-instruct-heretic",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/Qwen2.5-0.5B-Instruct-heretic",
+  "created_at": "2026-07-02T04:15:44.000Z",
+  "updated_at": "2026-08-19T22:34:48.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "chat",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "conversational",
+    "text-generation-inference",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 2969,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 9115279787,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saidutta69/Qwen2.5-0.5B-Instruct-heretic · Hugging Face",
+      "url": "https://huggingface.co/saidutta69/Qwen2.5-0.5B-Instruct-heretic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "saidutta69/Qwen2.5-Coder-0.5B-Instruct-heretic · Hugging Face",
+      "url": "https://huggingface.co/saidutta69/Qwen2.5-Coder-0.5B-Instruct-heretic",
+      "snippet": "A decensored variant of Qwen/Qwen2.5-Coder-.5B-Instruct, produced with Heretic v1.4.0 (directional ablation / \"abliteration\"). Refusal behavior is suppressed via targeted weight edits to the attention output and MLP down-projections rather than fine-tuning, so the base model&#x27;s knowledge and instruction-following are left largely intact."
+    },
+    {
+      "title": "Qwen2.5-Coder-0.5B-Instruct-heretic - FriendliAI",
+      "url": "https://friendli.ai/models/saidutta69/Qwen2.5-Coder-0.5B-Instruct-heretic",
+      "snippet": "config.toml — exact Heretic configuration used for this run reproduce.json — full parameter and metric dump Qwen--Qwen2--5-Coder---5B-Instruct.jsonl — evaluation transcripts against the base model SHA256SUMS — checksums for integrity verification requirements.txt — pinned environment for re-running the ablation"
+    },
+    {
+      "title": "Qwen2.5 0.5B Instruct Heretic — AI Model | Antbase",
+      "url": "https://antbase.ai/models/qwen2-5-0-5b-instruct-heretic",
+      "snippet": "Overview Qwen2.5 0.5B Instruct Heretic is a efficient model from Featherless with a 33K context window, supporting function calling. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "megabytes/Qwen2.5-0.5B-Instruct-heretic: Model synced from source ...",
+      "url": "https://dev.modelhub.org.cn/megabytes/Qwen2.5-0.5B-Instruct-heretic",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    }
+  ]
+}

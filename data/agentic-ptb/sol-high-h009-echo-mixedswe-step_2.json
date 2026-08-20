@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h009.echo-mixedswe.step_2",
+  "slug": "agentic-ptb-sol-high-h009-echo-mixedswe-step_2",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h009.echo-mixedswe.step_2",
+  "created_at": "2026-08-20T01:29:50.000Z",
+  "updated_at": "2026-08-20T01:30:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Echo Chamber Attack in the context of GPT-5 and agentic AI systems-part-2",
+      "url": "https://www.linkedin.com/pulse/echo-chamber-attack-context-gpt-5-agentic-ai-mahavir-sancheti-cbybc",
+      "snippet": "The Echo Chamber Attack is a multi-turn conversational exploit where an attacker gradually shapes an AI model&#x27;s context and safety boundaries through repeated, reinforcing inputs."
+    },
+    {
+      "title": "Echo-: Large Agentic Multimodal Reasoning Model for Ultrasound ...",
+      "url": "https://arxiv.org/pdf/2604.28011v1",
+      "snippet": "We present Echo- , an agentic multimodal reasoning model for ultrasound interpretation that unifies these strengths within an invoke-and-reason framework. Echo- is trained to coordinate organ-specific detector outputs, integrate them with global visual context, and convert the resulting evidence into grounded diagnostic decisions beyond ..."
+    },
+    {
+      "title": "GPT-5.6 SOL Jailbreaks and Agentic Cyber Risk - penligent.ai",
+      "url": "https://www.penligent.ai/hackinglabs/gpt-5-6-sol-jailbreaks/",
+      "snippet": "OpenAI confirmed that GPT-5.6 faced universal jailbreaks during pre-deployment cyber testing. Learn what the 83% result really means, how agentic capabilities change the risk, and how defenders should test and contain AI systems."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "Efficient by default, maximum performance on demand GPT‑5.6 Sol is our best coding model yet. On the Artificial Analysis Coding Agent Index, GPT‑5.6 Sol with max reasoning sets a new state of the art at 80, 2.8 points above Fable 5, while using less than half the output tokens, taking less than half the time, and costing about one-third less."
+    },
+    {
+      "title": "AI Agent | Jenkins plugin",
+      "url": "https://plugins.jenkins.io/ai-agent/",
+      "snippet": "Create or open a Jenkins job (Freestyle or Pipeline). Add/configure the Run AI Agent build step: Agent Type — select the coding agent to run. Prompt — the task to send to the agent. Model — optional model override. Codex, Claude Code, and OpenCode accept model:effort shorthand such as gpt-5.6-sol:xhigh; Antigravity CLI and Grok Build accept low, medium, or high, such as gemini-3.6-flash ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "UlukaDev/bitnet-ternary-moe-gguf",
+  "slug": "ulukadev-bitnet-ternary-moe-gguf",
+  "author": "UlukaDev",
+  "url": "https://huggingface.co/UlukaDev/bitnet-ternary-moe-gguf",
+  "created_at": "2026-07-08T01:40:04.000Z",
+  "updated_at": "2026-08-20T01:04:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "bitnet",
+    "ternary",
+    "lora",
+    "mixture-of-experts",
+    "base_model:microsoft/bitnet-b1.58-2B-4T",
+    "base_model:adapter:microsoft/bitnet-b1.58-2B-4T",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 7,
+  "downloads_30d": 2673,
+  "trending_score": 0,
+  "parameters": 2412820480,
+  "parameters_human": "2.41B",
+  "storage_bytes": 1215016864,
+  "storage_human": "1.2 GB",
+  "base_model": "microsoft/bitnet-b1.58-2B-4T",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UlukaDev/bitnet-ternary-moe-gguf · Hugging Face",
+      "url": "https://huggingface.co/UlukaDev/bitnet-ternary-moe-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · UlukaDev/bitnet-ternary-moe-gguf at main",
+      "url": "https://huggingface.co/UlukaDev/bitnet-ternary-moe-gguf/blob/main/README.md",
+      "snippet": "A single 1.58-bit BitNet base model with two lightweight LoRA expert adapters (multiplication and Roman numerals) that are dynamically activated at runtime by an external router."
+    },
+    {
+      "title": "GitHub - agentulukaADMIN/ternary-moe",
+      "url": "https://github.com/agentulukaADMIN/ternary-moe",
+      "snippet": "Ternary BitNet MoE 🧮 A 1GB mixture-of-experts AI that runs on an ordinary laptop — no GPU required. This project takes Microsoft&#x27;s BitNet b1.58 2B-4T language model — whose weights are ternary, meaning every weight is just -1, 0, or +1 — and turns it into a tiny mixture-of-experts system:"
+    },
+    {
+      "title": "Bitnet Ternary MoE GGUF | Sweet Tea Studio",
+      "url": "https://sweettea.co/resources/catalog-model-57b19211bc7629a5fcbd40e623c035e79af367406005cf80453606626bc90964",
+      "snippet": "bitnet-ternary-moe-gguf 🧮 A 1GB Mixture-of-Experts model designed to run efficiently on an everyday laptop CPU, with no GPU needed. A single 1.58-bit BitNet base model with two lightweight LoRA expert adapters (multiplication and Roman numerals) that are dynamically activated at runtime by an external router."
+    },
+    {
+      "title": "GitHub - Abdulhadi446/quant-it: 1-bit / ternary quantization for any ...",
+      "url": "https://github.com/Abdulhadi446/quant-it",
+      "snippet": "1-bit / ternary quantization for any HuggingFace model. Auto-detects MoE, expert batch streaming, supports distillation. Optimized for 2x T4 + 32GB RAM. - Abdulhadi446/quant-it"
+    }
+  ]
+}

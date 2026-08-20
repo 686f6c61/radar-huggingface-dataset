@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "philipsorst/qwen3.8-27b-q5",
+  "slug": "philipsorst-qwen3-8-27b-q5",
+  "author": "philipsorst",
+  "url": "https://huggingface.co/philipsorst/qwen3.8-27b-q5",
+  "created_at": "2026-08-15T18:30:03.000Z",
+  "updated_at": "2026-08-19T19:28:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 42026263200,
+  "storage_human": "42.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "philipsorst/qwen3.8-27b-q5 · Hugging Face",
+      "url": "https://huggingface.co/philipsorst/qwen3.8-27b-q5",
+      "snippet": "philipsorst / qwen3.8-27b-q5 like 0 GGUF imatrix conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "qwen3.8-27b - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    },
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "How to Run Qwen3.8-27B Locally with Ollama, LM Studio, and llama.cpp",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-local-gguf-setup",
+      "snippet": "Qwen3.8-27B is a 27 billion parameter, 64-layer multimodal model you can run on a single consumer or workstation GPU using a GGUF quantization, served through LM Studio, Ollama, or llama.cpp."
+    }
+  ]
+}

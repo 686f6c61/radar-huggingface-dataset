@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Luisr-ecu/mBART-51",
+  "slug": "luisr-ecu-mbart-51",
+  "author": "Luisr-ecu",
+  "url": "https://huggingface.co/Luisr-ecu/mBART-51",
+  "created_at": "2026-08-19T21:12:41.000Z",
+  "updated_at": "2026-08-19T21:12:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "translation",
+    "en",
+    "es",
+    "dataset:drewoodward/spanglish-sentences",
+    "arxiv:1910.09700",
+    "base_model:facebook/mbart-large-50",
+    "base_model:finetune:facebook/mbart-large-50",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 611129542,
+  "parameters_human": "611.1M",
+  "storage_bytes": 2466742309,
+  "storage_human": "2.5 GB",
+  "base_model": "facebook/mbart-large-50",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mBART · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/mbart",
+      "snippet": "mBART is a multilingual machine translation model that pretrains the entire translation model (encoder-decoder) unlike previous methods that only focused on parts of the model. The model is trained on a denoising objective which reconstructs the corrupted text. This allows mBART to handle the source language and the target text to translate to."
+    },
+    {
+      "title": "mbart50 · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/mbart50?o=desc&s=updated",
+      "snippet": "A project for fine-tuning a pre-trained mBart 50 model for English-Persian subtitle translation using NLP techniques. The fine-tuned model has been made available on Hugging Face 🤗 for open-source access and further development by the community."
+    },
+    {
+      "title": "MBart and MBart-50 — transformers 4.7.0 documentation",
+      "url": "https://huggingface.co/transformers/v4.8.1/model_doc/mbart.html",
+      "snippet": "MBart-50 is created using the original mbart-large-cc25 checkpoint by extendeding its embedding layers with randomly initialized vectors for an extra set of 25 language tokens and then pretrained on 50 languages. According to the abstract Multilingual translation models can be created through multilingual finetuning."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/mbart.md at main - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mbart.md",
+      "snippet": "The model is trained on a denoising objective which reconstructs the corrupted text. This allows mBART to handle the source language and the target text to translate to. mBART-50 is pretrained on an additional 25 languages. You can find all the original mBART checkpoints under the AI at Meta organization."
+    },
+    {
+      "title": "Enhancing Neural Machine Translation with Fine-Tuned mBART50 Pre ...",
+      "url": "https://iieta.org/journals/isi/paper/10.18280/isi.290304",
+      "snippet": "The goal of our study is to investigate the impact of pre-trained mBART models on machine translation performance in different scenarios. The fine-tuned model used is a mBART-large-50 multilingual Sequence-to-Sequence model, an extension of the original mBART model that supports multilingual machine translation for 50 languages."
+    }
+  ]
+}

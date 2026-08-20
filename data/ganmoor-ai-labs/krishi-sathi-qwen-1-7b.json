@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ganmoor-ai-labs/krishi-sathi-qwen-1.7b",
+  "slug": "ganmoor-ai-labs-krishi-sathi-qwen-1-7b",
+  "author": "ganmoor-ai-labs",
+  "url": "https://huggingface.co/ganmoor-ai-labs/krishi-sathi-qwen-1.7b",
+  "created_at": "2026-08-19T11:43:28.000Z",
+  "updated_at": "2026-08-20T00:57:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "kn"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "agriculture",
+    "farming",
+    "karnataka",
+    "india",
+    "kannada",
+    "offline",
+    "text-generation",
+    "en",
+    "kn",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 9496844147,
+  "storage_human": "9.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krishi Sathi: AI-Powered Farming Companion - bharatgen.com",
+      "url": "https://bharatgen.com/products/krishi-sathi/",
+      "snippet": "Krishi Sathi is an AI-powered platform designed to be every farmer&#x27;s trusted companion, offering real-time, easy-to-understand insights and solutions for pest management, and crop yield prediction, currently for Onion and Grapes. With support in Hindi and English, it speaks the language of farmers, ensuring advanced technology is accessible to all. Powered by BharatGen, Krishi Sathi uses ..."
+    },
+    {
+      "title": "Krishi Saathi: a farmer-centric conversational assistant for scalable ...",
+      "url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14183/1418315/Krishi-Saathi--a-farmer-centric-conversational-assistant-for-scalable/10.1117/12.3109424.full",
+      "snippet": "Krishi Saathi leverages RAG-QA framework to deliver personalized, localized, and multilingual agricultural advisories in realtime, overcoming limitations of existing agri-AI solutions with 95.93% accuracy on query intent recognition and 96.93% accuracy on parameter detection."
+    },
+    {
+      "title": "Intent Aware Context Retrieval for Multi-Turn Agricultural Question ...",
+      "url": "https://arxiv.org/abs/2508.03719",
+      "snippet": "Indian farmers often lack timely, accessible, and language-friendly agricultural advice, especially in rural areas with low literacy. To address this gap in accessibility, this paper presents a novel AI-powered agricultural chatbot, Krishi Sathi, designed to support Indian farmers by providing personalized, easy-to-understand answers to their queries through both text and speech. The system&#x27;s ..."
+    },
+    {
+      "title": "GitHub - Arpitsharmaaaaa/krishi-sathi",
+      "url": "https://github.com/Arpitsharmaaaaa/krishi-sathi",
+      "snippet": "Contribute to Arpitsharmaaaaa/krishi-sathi development by creating an account on GitHub."
+    },
+    {
+      "title": "[2508.03719] Intent Aware Context Retrieval for Multi-Turn Agricultural ...",
+      "url": "https://ar5iv.labs.arxiv.org/html/2508.03719",
+      "snippet": "To address this gap in accessibility, this paper presents a novel AI-powered agricultural chatbot, Krishi Sathi 111Krishi Sathi can be accessed at: Krishi Sathi, designed to support Indian farmers by providing personalized, easy-to-understand answers to their queries through both text and speech."
+    }
+  ]
+}

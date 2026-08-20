@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "saidutta69/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-heretic",
+  "slug": "saidutta69-minicpm5-1b-claude-opus-fable5-v2-thinking-heretic",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-heretic",
+  "created_at": "2026-07-15T21:34:03.000Z",
+  "updated_at": "2026-08-20T00:13:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "thinking",
+    "fable5",
+    "tool-calling",
+    "function-calling",
+    "coding",
+    "instruction-following",
+    "conversational",
+    "text-generation-inference",
+    "on-device",
+    "edge-ai",
+    "en",
+    "zh",
+    "base_model:GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
+    "base_model:finetune:GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 11263,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 14097951392,
+  "storage_human": "14.1 GB",
+  "base_model": "openbmb/MiniCPM5-1B, GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-heretic",
+      "url": "https://huggingface.co/saidutta69/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-heretic",
+      "snippet": "MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking is a compact 1B Thinking language model built on openbmb/MiniCPM5-1B. Compared with V1, this V2 release is further fine-tuned on Fable 5 data with a stronger focus on tool calling / function calling, while also improving coding and instruction-following."
+    },
+    {
+      "title": "MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-heretic",
+      "url": "https://dev.modelhub.org.cn/saidutta69/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-heretic",
+      "snippet": "A decensored variant of GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking, produced with Heretic v1.4.0 (directional ablation / \"abliteration\"). The base model is itself a V2 fine-tune of openbmb/MiniCPM5-1B on Fable 5 traces, focused on tool/function calling, coding, and instruction-following."
+    },
+    {
+      "title": "MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking - Hugging Face",
+      "url": "https://huggingface.co/GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniCPM5 1B Claude Opus Fable5 v2 Thinking Heretic — Hardware ...",
+      "url": "https://llmrun.dev/model/saidutta69-minicpm5-1b-claude-opus-fable5-v2-thinking-heretic",
+      "snippet": "MiniCPM5 1B Claude Opus Fable5 v2 Thinking Heretic is a 1.1B-parameter open language model from saidutta69 in the MiniCPM family. It supports a context window of up to 131,072 tokens."
+    },
+    {
+      "title": "MiniCPM5 1B Claude Opus Fable5 Thinking - llmrun.dev",
+      "url": "https://llmrun.dev/model/gnlolot-minicpm5-1b-claude-opus-fable5-thinking",
+      "snippet": "MiniCPM5 1B Claude Opus Fable5 Thinking — Hardware Requirements & GPU Compatibility Chat MiniCPM5 1B Claude Opus Fable5 Thinking is a 1.1B-parameter open language model from GnLOLot in the MiniCPM family. It supports a context window of up to 131,072 tokens. At Q4_K_M it needs about 0.99 GB of VRAM — see which GPUs and Macs can run it below."
+    }
+  ]
+}

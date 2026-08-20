@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "leonsarmiento/Ornith-1.5-35B-A3B-6bit-XL-mlx",
+  "slug": "leonsarmiento-ornith-1-5-35b-a3b-6bit-xl-mlx",
+  "author": "leonsarmiento",
+  "url": "https://huggingface.co/leonsarmiento/Ornith-1.5-35B-A3B-6bit-XL-mlx",
+  "created_at": "2026-08-19T20:36:21.000Z",
+  "updated_at": "2026-08-19T21:30:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "mlx-vlm",
+    "moe",
+    "multimodal",
+    "vision",
+    "coding",
+    "agentic",
+    "swe",
+    "reasoning",
+    "basequant-xl",
+    "ornith",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8380791216,
+  "parameters_human": "8.38B",
+  "storage_bytes": 29887532185,
+  "storage_human": "29.9 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5 - a ornith-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ornith-ai/ornith-15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "leonsarmiento/Ornith-1.0-35B-6bit-XL-mlx · Hugging Face",
+      "url": "https://huggingface.co/leonsarmiento/Ornith-1.0-35B-6bit-XL-mlx",
+      "snippet": "Ornith-1.0-35B is a 35B-parameter MoE (Mixture of Experts) model fine-tuned from Qwen3.5-35B-A3B by DeepReinforce AI, using a self-improving RL training framework that jointly optimizes scaffold and solution rollouts for agentic coding tasks. Despite 35B total parameters, only ~3B are activated per token."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-DGX-Spark/README.md at main - GitHub",
+      "url": "https://github.com/vcruz305/Ornith-1.5-35B-A3B-DGX-Spark/blob/main/README.md",
+      "snippet": "Ornith-1.5-35B-A3B on one DGX Spark (GB10) Measured serve for Ornith-1.5-35B-A3B — a ~35B mixture-of-experts model (~3B active params/token) from the Ornith team — on a single NVIDIA DGX Spark (GB10 / SM121, ~128 GB unified memory). 2026-08-19, day of release."
+    }
+  ]
+}

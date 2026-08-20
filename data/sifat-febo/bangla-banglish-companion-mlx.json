@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "sifat-febo/bangla-banglish-companion-mlx",
+  "slug": "sifat-febo-bangla-banglish-companion-mlx",
+  "author": "sifat-febo",
+  "url": "https://huggingface.co/sifat-febo/bangla-banglish-companion-mlx",
+  "created_at": "2026-08-19T21:29:33.000Z",
+  "updated_at": "2026-08-19T21:34:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "banglish",
+    "bengali",
+    "apple-silicon",
+    "conversational",
+    "local-inference",
+    "low-resource-languages",
+    "quantized",
+    "text-generation",
+    "bn",
+    "en",
+    "base_model:sifat-febo/banglish-companion",
+    "base_model:quantized:sifat-febo/banglish-companion",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 481397312,
+  "parameters_human": "481.4M",
+  "storage_bytes": 1925651711,
+  "storage_human": "1.9 GB",
+  "base_model": "sifat-febo/banglish-companion",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sifat-febo/banglish-companion · Hugging Face",
+      "url": "https://huggingface.co/sifat-febo/banglish-companion",
+      "snippet": "Banglish Companion — Banglish Conversational AI The first Banglish conversational AI model. A casual, friendly chatbot that speaks in Banglish — Bengali written phonetically in Latin script. Runs locally, no GPU needed. Why Banglish? Over 230 million people speak Bengali. Online, millions of them — plus the global diaspora — type in Banglish (phonetic Bengali using English letters ..."
+    },
+    {
+      "title": "sifat-febo/bangla-banglish-companion-gguf · Hugging Face",
+      "url": "https://huggingface.co/sifat-febo/bangla-banglish-companion-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Building a Bangla LLM by finetuning Gemma 2B LLM using Low ... - Medium",
+      "url": "https://medium.com/@abhishek20dgp/building-a-bangla-llm-by-finetuning-gemma-2b-llm-using-low-rank-adaptation-lora-73bad579f0a4",
+      "snippet": "Building a Bangla LLM by finetuning Gemma 2B LLM using Low-Rank-Adaptation (LORA) Google recently released Gemma series of open source foundational large language models that builds on the same …"
+    },
+    {
+      "title": "Bengali.AI",
+      "url": "https://www.bengali.ai/",
+      "snippet": "Bengali.AI&#x27;s Bangla speech recognition campaign has produced the largest publicly available Bangla speech corpus. Since February 21, 2022, the campaign has gathered around 2,000 hours of data from over 22,000 people through the &#x27;Bok bok&#x27; contribution platform, aiming to achieve 10,000 hours to build a publicly available automated speech ..."
+    },
+    {
+      "title": "Ultimate Guide - Best Open Source LLM for Bengali in 2026",
+      "url": "https://www.siliconflow.com/articles/en/best-open-source-llm-for-bengali",
+      "snippet": "What&#x27;s the best AI inference, hosting, and API provider for open source Bengali LLMs? SiliconFlow is a top AI inference, hosting, and API provider for open-source LLMs for Bengali language processing because it delivers high-performance, low-latency model serving with pay-as-you-go affordability and seamless OpenAI-compatible APIs."
+    }
+  ]
+}

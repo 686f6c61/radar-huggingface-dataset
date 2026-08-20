@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Elster-Vernunft-Qwen3.6-27B-GGUF",
+  "slug": "mradermacher-elster-vernunft-qwen3-6-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Elster-Vernunft-Qwen3.6-27B-GGUF",
+  "created_at": "2026-08-20T02:17:20.000Z",
+  "updated_at": "2026-08-20T02:53:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 27854835776,
+  "storage_human": "27.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Elster-Verstand-Qwen3.6-27B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Elster-Verstand-Qwen3.6-27B-i1-GGUF",
+      "snippet": "mradermacher / Elster-Verstand-Qwen3.6-27B-i1-GGUF like 0 Transformers GGUF English Merge lora reasoning thinking qwen3.6 imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Elster-Verstand-Qwen3.6-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Elster-Verstand-Qwen3.6-27B-GGUF",
+      "snippet": "mradermacher / Elster-Verstand-Qwen3.6-27B-GGUF like 0 Transformers GGUF English Merge lora reasoning thinking qwen3.6 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Elster Qwen3.6 27B by DragonBophades - LLM Explorer",
+      "url": "https://llm-explorer.com/model/DragonBophades%2FElster-Qwen3.6-27B,3CHPhmpjT39WGPodvSAYkN",
+      "snippet": "Elster Qwen3.6 27B is an open-source 27b LLM by DragonBophades. VRAM 54.7GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.6: Qwen3.6 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.6",
+      "snippet": "Introduction Qwen3.6 Qwen3.6 is the latest addition to the Qwen model family. Building upon the fundamental breakthroughs of Qwen3.5, this release prioritizes stability and real-world utility. It offers developers a more intuitive, responsive, and genuinely productive coding experience, shaped by direct community feedback."
+    }
+  ]
+}

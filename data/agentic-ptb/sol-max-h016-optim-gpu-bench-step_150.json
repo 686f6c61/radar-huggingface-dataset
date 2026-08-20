@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-max.h016.optim-gpu-bench.step_150",
+  "slug": "agentic-ptb-sol-max-h016-optim-gpu-bench-step_150",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-max.h016.optim-gpu-bench.step_150",
+  "created_at": "2026-08-20T03:32:23.000Z",
+  "updated_at": "2026-08-20T03:33:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max-opusnode",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model - OpenAI",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "snippet": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "Efficient by default, maximum performance on demand GPT‑5.6 Sol is our best coding model yet. On the Artificial Analysis Coding Agent Index, GPT‑5.6 Sol with max reasoning sets a new state of the art at 80, 2.8 points above Fable 5, while using less than half the output tokens, taking less than half the time, and costing about one-third less."
+    },
+    {
+      "title": "A-CODE-LLM Bench: Agentic Coding Benchmark",
+      "url": "https://aimultiple.com/agentic-llm",
+      "snippet": "We benchmarked the top Large Language Models (LLMs) across 10 software development tasks using an agentic CLI tool. We executed ~3,500 automated validation steps per model across both API and UI layers. A-CODE-LLM Bench results Each alias ran 3 times across 10 tasks (30 samples per alias, 400 cells per iteration across 40 aliases)."
+    },
+    {
+      "title": "GPT-5.6 Sol Benchmarks Deep Dive | Lushbinary",
+      "url": "https://lushbinary.com/blog/gpt-5-6-sol-benchmarks-terminalbench-agentic-deep-dive/",
+      "snippet": "9 How Sol Compares To The Public Field With GPT-5.6 now generally available, Sol is a model you can call directly, so the comparison against what else you can deploy today is straightforward. The cleanest public reference in the TerminalBench 2.1 table is Claude Opus 4.8 at 78.9%, a generally available model at roughly $5 input and $25 output per million tokens. Sol is about 10 points ahead on ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 397 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 221 ranked models and 397 tracked AI models across 437 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    }
+  ]
+}

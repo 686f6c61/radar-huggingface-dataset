@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "justTNP/MonsterCoffeeCKPTS",
+  "slug": "justtnp-monstercoffeeckpts",
+  "author": "justTNP",
+  "url": "https://huggingface.co/justTNP/MonsterCoffeeCKPTS",
+  "created_at": "2025-02-26T20:36:20.000Z",
+  "updated_at": "2026-08-19T20:59:30.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "art",
+    "en",
+    "base_model:ChenkinNoob/ChenkinNoob-XL-V0.1",
+    "base_model:finetune:ChenkinNoob/ChenkinNoob-XL-V0.1",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55464190742,
+  "storage_human": "55.5 GB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0, ChenkinNoob/ChenkinNoob-XL-V0.1, Menyu/noobaiXLNAIXL_epsilonPred11Version",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "justTNP/MonsterCoffeeCKPTS · Hugging Face",
+      "url": "https://huggingface.co/justTNP/MonsterCoffeeCKPTS",
+      "snippet": "justTNP / MonsterCoffeeCKPTS like 0 English License:creativeml-openrail-m Model card FilesFiles and versions Community Illustrious XL Series"
+    },
+    {
+      "title": "justTNP - Best AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/u/615035408639600779",
+      "snippet": "Female Robin (Fire Emblem Awakening) - justTNP-1.0 justTNP 89 27 LORA Illustrious Run"
+    },
+    {
+      "title": "MonsterCoffeeC4! Mix - JustTNP - 1 | Tensor.Art",
+      "url": "https://tensor.art/models/806395013631149304",
+      "snippet": "Download MonsterCoffeeC4! Mix - JustTNP - free CHECKPOINT Illustrious AI model on TENSOR. By justTNP"
+    },
+    {
+      "title": "justTNP (notTNP) - Hugging Face",
+      "url": "https://huggingface.co/justTNP",
+      "snippet": "User profile of notTNP on Hugging Face"
+    },
+    {
+      "title": "MonsterCoffeeC4! Mix [IllustriousXL v0.1] - v1.0 | Illustrious ...",
+      "url": "https://civitai.com/models/1029855/monstercoffeec4-mix-illustriousxl-v01",
+      "snippet": "A blend of checkpoints and GLoRAs with a focus on semirealism. Use the following starter prompts: Positive Prompt: masterpiece, best quality, realistic Negative Prompt: worst quality, low quality, jpeg artifacts, multiple views, 4koma, bad anatomy, bad hands, text Sampler: Euler A Align Your Steps or DPM++ 2M SGM Uniform, 24 steps (a comparison grid with different samplers and schedulers will ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "diffusers-modular/minimax-h3-inpainting",
+  "slug": "diffusers-modular-minimax-h3-inpainting",
+  "author": "diffusers-modular",
+  "url": "https://huggingface.co/diffusers-modular/minimax-h3-inpainting",
+  "created_at": "2026-08-19T19:49:27.000Z",
+  "updated_at": "2026-08-19T19:49:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "modular-diffusers",
+    "minimax-h3",
+    "inpainting",
+    "video-to-video",
+    "audio-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diffusers/src/diffusers/modular_pipelines/minimax_h3 at main ... - GitHub",
+      "url": "https://github.com/huggingface/diffusers/tree/main/src/diffusers/modular_pipelines/minimax_h3",
+      "snippet": "🤗 Diffusers: State-of-the-art diffusion models for image, video, and audio generation in PyTorch. - huggingface/diffusers"
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "MiniMax H3 is a general-purpose, omni-modal generative system. It supports unified understanding of multimodal contexts composed of text, images, video, and audio, and can generate video with native stereo audio at resolutions up to 2K and durations of up to 15 seconds."
+    },
+    {
+      "title": "Run MiniMax H3 Locally: Hardware and Install Guide - kingy.ai",
+      "url": "https://kingy.ai/ai/ai-guides/minimax-h3-local-installation-hardware-guide/",
+      "snippet": "Run MiniMax H3 locally with ComfyUI, Diffusers, SGLang or vLLM-Omni. Compare hardware, downloads, licensing, cloud costs and setup risks."
+    },
+    {
+      "title": "Inpainting · Hugging Face",
+      "url": "https://huggingface.co/docs/diffusers/using-diffusers/inpaint",
+      "snippet": "Modular Diffusers Training Quantization Model accelerators and hardware Resources Task recipes Unconditional image generation Text-to-image Image-to-image Inpainting Outpainting Video generation Depth-to-image"
+    }
+  ]
+}

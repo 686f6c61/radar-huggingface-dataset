@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-high.h043.opsd-r2e-commit-small-replay.run_default.broadcasts.step_1",
+  "slug": "agentic-ptb-sol-high-h043-opsd-r2e-commit-small-replay-run_default-broadcasts-step_1",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-high.h043.opsd-r2e-commit-small-replay.run_default.broadcasts.step_1",
+  "created_at": "2026-08-20T02:28:35.000Z",
+  "updated_at": "2026-08-20T02:29:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "agentic-ptb",
+    "sol-high",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18819721136,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EcthelionLiu/Agentic-OPSD",
+      "url": "https://github.com/EcthelionLiu/Agentic-OPSD",
+      "snippet": "On-Policy Self-Distillation (OPSD) trains a single model to act as both student and teacher by conditioning on different contexts — the student sees only the problem, while the teacher additionally sees the ground-truth solution — and performs token-level distribution matching along the student&#x27;s own on-policy trajectories. OPSD achieves comparable or better performance while using 8-12× ..."
+    },
+    {
+      "title": "OWASP Top 10 for Agentic Applications for 2026",
+      "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+      "snippet": "The OWASP Top 10 for Agentic Applications 2026 is a globally peer-reviewed framework that identifies the most critical security risks facing autonomous and agentic AI systems. Developed through extensive collaboration with more than 100 industry experts, researchers, and practitioners, the list provides practical, actionable guidance to help organizations secure AI agents that plan, act, and ..."
+    },
+    {
+      "title": "The Agentic AI threat cluster: Seven incidents, three actors, and what ...",
+      "url": "https://securityboulevard.com/2026/08/the-agentic-ai-threat-cluster-seven-incidents-three-actors-and-what-they-mean-for-your-exposure/",
+      "snippet": "Tenable&#x27;s Research Special Operations (RSO) team has been tracking a cluster of agentic AI threat activity since late July 2026. The Taiwan autonomous AI cyber attack confirmed what the cluster data already showed: near-autonomous offensive AI has crossed from theoretical risk to operational reality.Key TakeawaysTaiwan&#x27;s Ministry of Digital Affairs confirmed a near-autonomous AI cyber attack ..."
+    },
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    },
+    {
+      "title": "What Is Agentic AI? Definition, 6 Levels & Examples (2026)",
+      "url": "https://agentic.ai/what-is-agentic-ai",
+      "snippet": "Agentic AI acts on its own — planning, using tools, and adapting until a task is done. Learn how it differs from chatbots, the 6 levels of autonomy, and real tools to try."
+    }
+  ]
+}

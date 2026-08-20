@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "chenyumo/moziAI-35B-Qwen3.6-A3B-Ornith",
+  "slug": "chenyumo-moziai-35b-qwen3-6-a3b-ornith",
+  "author": "chenyumo",
+  "url": "https://huggingface.co/chenyumo/moziAI-35B-Qwen3.6-A3B-Ornith",
+  "created_at": "2026-08-10T19:42:08.000Z",
+  "updated_at": "2026-08-19T20:41:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama-cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama-cpp",
+    "gguf",
+    "MoE",
+    "financial-llm",
+    "MoziSmartBit",
+    "qwen3.5",
+    "qwen3.6",
+    "ornith",
+    "MoziAI",
+    "tool-calling",
+    "uncensored",
+    "vision",
+    "text-generation",
+    "zh",
+    "en",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 16407269440,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "Custom",
+      "metric": "PPL",
+      "value": 2.7446
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen3.6 Models | QwenLM/Qwen3.6 | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3.6/1.1-qwen3.6-models",
+      "snippet": "Qwen3.6 Models Relevant source files This page provides a detailed technical overview of the Qwen3.6 model family, focusing on the 27B dense model and the 35B-A3B sparse Mixture-of-Experts (MoE) model. Building upon the architectural foundations of Qwen3.5, the Qwen3.6 series introduces specialized capabilities for Agentic Coding and Thinking Preservation, designed to enhance real-world ..."
+    },
+    {
+      "title": "Qwen 3.6: 35B vs 27B comparison - benchmark results",
+      "url": "https://zoliben.com/en/posts/2026-04-23-qwen-36-35b-vs-27b-benchmark-results/",
+      "snippet": "I finally summed up all the Qwen 3.6 model test results I gathered over the past few days. I compared two models in detail: the Qwen3.6-35B-A3B (MoE, hybrid attention/delta) and the Qwen3.6-27B (dense, hybrid attention/delta). I ran both with turbo3 KV cache compression on an RTX 4090 as a llama.cpp server. If I had to summarize briefly: the 35B-A3B is 3-4x faster in everything, but the 27B ..."
+    },
+    {
+      "title": "GitHub - chenyumo166/moziAI: 我是 MoziAI（墨子AI），由陈雨墨团队基于 Ornith-1.0-35B ...",
+      "url": "https://github.com/chenyumo166/moziAI",
+      "snippet": "MoziAI-35B-A3B-MOE多模态模型是由中国财经大V陈雨墨团队开发的金融AI多模态大模型（支持视觉与工具调用），基于 Ornith-1.-35B（Qwen3.5-35B-A3B 架构）底座微调/蒸馏与开发。"
+    },
+    {
+      "title": "Qwen 3.6 35B A3B | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-6-35b-a3b/",
+      "snippet": "Qwen3.6-35B-A3B is Qwen&#x27;s open-weight multimodal MoE model for coding, agentic workflows, long-context reasoning, and vision-language tasks. It has 35B total parameters with 3B activated, supports image-text-to-text use, preserves reasoning context across turns, and natively handles 262,144 tokens with extension up to about 1.01M."
+    }
+  ]
+}

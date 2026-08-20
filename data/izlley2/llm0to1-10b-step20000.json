@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "izlley2/LLM0to1-10b-step20000",
+  "slug": "izlley2-llm0to1-10b-step20000",
+  "author": "izlley2",
+  "url": "https://huggingface.co/izlley2/LLM0to1-10b-step20000",
+  "created_at": "2026-08-20T00:44:44.000Z",
+  "updated_at": "2026-08-20T00:56:03.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "korean",
+    "bilingual",
+    "pretrained-from-scratch",
+    "research",
+    "ko",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10354003968,
+  "parameters_human": "10.35B",
+  "storage_bytes": 20721816434,
+  "storage_human": "20.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets?other=llm0to1",
+      "snippet": "Explore datasets powering machine learning. 2 Full-text search Edit filters Sort: Trending Active filters: llm0to1 Clear all"
+    },
+    {
+      "title": "izlley/llm0to1-pt-aihub-624 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/izlley/llm0to1-pt-aihub-624",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "7 Best Small Language Models Under 10B Parameters in 2026",
+      "url": "https://www.labellerr.com/blog/best-small-language-models-under-10b-parameters/",
+      "snippet": "Discover the 7 best open-weight AI models under 10B parameters in 2026. Compare Granite, Qwen, Gemma, DeepSeek, Phi, and Llama across benchmarks, performance, hardware requirements, and real-world use cases."
+    }
+  ]
+}

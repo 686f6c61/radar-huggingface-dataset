@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Kimi-K3-NVFP4",
+  "slug": "redhatai-kimi-k3-nvfp4",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Kimi-K3-NVFP4",
+  "created_at": "2026-07-30T13:31:14.000Z",
+  "updated_at": "2026-08-20T01:52:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 16126,
+  "trending_score": 0,
+  "parameters": 1588733216352,
+  "parameters_human": "1588.73B",
+  "storage_bytes": 1646197820538,
+  "storage_human": "1646.2 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Kimi-K3-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Kimi-K3-NVFP4",
+      "snippet": "RedHatAI / Kimi-K3-NVFP4 like 6 Follow Red Hat AI 2.88k Feature Extraction Transformers Safetensors kimi_k3 compressed-tensors LLM Compressor vLLM custom_code 8-bit precision License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "RedHatAI/Kimi-K3-NVFP4 at main - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Kimi-K3-NVFP4/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Architecture graph for RedHatAI/Kimi-K3-NVFP4 | hfviewer",
+      "url": "https://hfviewer.com/RedHatAI/Kimi-K3-NVFP4",
+      "snippet": "RedHatAI/Kimi-K3-NVFP4 neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model RedHatAI/Kimi-K3-NVFP4. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the actual forward dataflow ..."
+    },
+    {
+      "title": "GitHub - patronus-ai/kimi-k3-nvfp4",
+      "url": "https://github.com/patronus-ai/kimi-k3-nvfp4",
+      "snippet": "On Kimi-K3 that covered every block. exporter/cast_mxfp4_to_nvfp4_offline.py streams shards without ever instantiating the model (a 2.8T BF16 materialisation would be ~5.6 TB). This means we deliberately use none of NVFP4&#x27;s precision advantages for weights."
+    },
+    {
+      "title": "GitHub - MoonshotAI/Kimi-K3: Open Frontier Intelligence",
+      "url": "https://github.com/MoonshotAI/Kimi-K3/tree/main",
+      "snippet": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world&#x27;s first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and ..."
+    }
+  ]
+}

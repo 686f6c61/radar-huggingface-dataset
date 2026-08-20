@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "soleroa/movie-review-classifier",
+  "slug": "soleroa-movie-review-classifier",
+  "author": "soleroa",
+  "url": "https://huggingface.co/soleroa/movie-review-classifier",
+  "created_at": "2026-08-19T23:56:51.000Z",
+  "updated_at": "2026-08-19T23:57:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - soleroa/movie-review-classifier · GitHub",
+      "url": "https://github.com/soleroa/movie-review-classifier",
+      "snippet": "The project takes the pretrained distilbert-base-uncased model and adds a sequence classification head (AutoModelForSequenceClassification, num_labels=2) to predict whether a movie review is positive (1) or negative (0)."
+    },
+    {
+      "title": "GitHub - saalieri/Movie-Review-Classifier-Web-Application",
+      "url": "https://github.com/saalieri/Movie-Review-Classifier-Web-Application",
+      "snippet": "The aim of this web application was to assess the sentiment, whether positive or negative, of given phrases through sentiment analysis. Each character in the phrase was mapped to a unique token, which was then vectorized and fed into the model. The model, constructed using RNN and LSTM network layers, provided predictions indicating the accuracy of positivity and negativity, expressed as ..."
+    },
+    {
+      "title": "pa-shk/movie-review-classifier · Hugging Face",
+      "url": "https://huggingface.co/pa-shk/movie-review-classifier",
+      "snippet": "This model can be loaded on the Inference API on-demand."
+    },
+    {
+      "title": "derek-harnett/movie-review-classifier · Hugging Face",
+      "url": "https://huggingface.co/derek-harnett/movie-review-classifier",
+      "snippet": "movie-review-classifier This model classifies (text) movie reviews as either a 1 (i.e., thumbs-up) or a 0 (i.e., a thumbs-down). Model description This model is a version of distilbert-base-uncased that was fine-tuned on the IMDB movie-review dataset. It achieves the following results on the evaluation set: Loss: 0.2743 F1: 0.9327 Intended uses & limitations Training this model was completed ..."
+    },
+    {
+      "title": "Sora: Creating video from text | OpenAI",
+      "url": "https://openai.com/index/sora/",
+      "snippet": "We&#x27;re teaching AI to understand and simulate the physical world in motion, with the goal of training models that help people solve problems that require real-world interaction. Introducing Sora, our text-to-video model. Sora can generate videos up to a minute long while maintaining visual quality and adherence to the user&#x27;s prompt."
+    }
+  ]
+}

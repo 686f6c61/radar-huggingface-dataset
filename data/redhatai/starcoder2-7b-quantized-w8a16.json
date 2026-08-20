@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/starcoder2-7b-quantized.w8a16",
+  "slug": "redhatai-starcoder2-7b-quantized-w8a16",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/starcoder2-7b-quantized.w8a16",
+  "created_at": "2024-08-01T20:04:51.000Z",
+  "updated_at": "2026-08-19T21:46:06.000Z",
+  "license": "bigcode-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "starcoder2",
+    "text-generation",
+    "code",
+    "dataset:bigcode/the-stack-v2-train",
+    "arxiv:2210.17323",
+    "arxiv:2107.03374",
+    "arxiv:2305.01210",
+    "license:bigcode-openrail-m",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 168,
+  "trending_score": 0,
+  "parameters": 7400416256,
+  "parameters_human": "7.40B",
+  "storage_bytes": 7857298896,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "HumanEval+",
+      "metric": null,
+      "value": 29.8
+    },
+    {
+      "task": null,
+      "dataset": "HumanEval",
+      "metric": null,
+      "value": 34.6
+    }
+  ],
+  "sources": [
+    {
+      "title": "RedHatAI/starcoder2-7b-quantized.w8a16 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/starcoder2-7b-quantized.w8a16",
+      "snippet": "Quantized version of starcoder2-7b. It achieves a HumanEval pass@1 of 34.6, whereas the unquantized model achieves 34.9 when evaluated under the same conditions."
+    },
+    {
+      "title": "RedHatAI/starcoder2-7b-quantized.w8a8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/starcoder2-7b-quantized.w8a8",
+      "snippet": "Quantized version of starcoder2-7b. It achieves a HumanEval pass@1 of 33.9, whereas the unquantized model achieves 34.9 when evaluated under the same conditions."
+    },
+    {
+      "title": "RedHatAI/starcoder2-7b-quantized.w8a16 - friendli.ai",
+      "url": "https://friendli.ai/models/RedHatAI/starcoder2-7b-quantized.w8a16",
+      "snippet": "Run RedHatAI/starcoder2-7b-quantized.w8a16 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - bigcode-project/starcoder2: Home of StarCoder2!",
+      "url": "https://github.com/bigcode-project/starcoder2",
+      "snippet": "StarCoder2 is a family of code generation models (3B, 7B, and 15B), trained on 600+ programming languages from The Stack v2 and some natural language text such as Wikipedia, Arxiv, and GitHub issues."
+    },
+    {
+      "title": "alpha-ollama.hf-mirror.com",
+      "url": "https://alpha-ollama.hf-mirror.com/RedHatAI/starcoder2-7b-quantized.w8a16/raw/main/README.md",
+      "snippet": "Only the weights of the linear operators within transformers blocks are quantized. Symmetric per-channel quantization is applied, in which a linear scaling per output dimension maps the INT8 and floating point representations of the quantized weights."
+    }
+  ]
+}

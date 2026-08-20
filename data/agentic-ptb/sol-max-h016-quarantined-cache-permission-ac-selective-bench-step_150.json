@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-max.h016.quarantined-cache-permission-ac-selective-bench.step_150",
+  "slug": "agentic-ptb-sol-max-h016-quarantined-cache-permission-ac-selective-bench-step_150",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-max.h016.quarantined-cache-permission-ac-selective-bench.step_150",
+  "created_at": "2026-08-20T03:33:20.000Z",
+  "updated_at": "2026-08-20T03:33:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "Efficient by default, maximum performance on demand GPT‑5.6 Sol is our best coding model yet. On the Artificial Analysis Coding Agent Index, GPT‑5.6 Sol with max reasoning sets a new state of the art at 80, 2.8 points above Fable 5, while using less than half the output tokens, taking less than half the time, and costing about one-third less."
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "Penetration Testing - Agentic AI Systems - Hacking Dream",
+      "url": "https://www.hackingdream.net/2025/10/penetration-testing-agentic-ai-systems.html",
+      "snippet": "As a senior penetration tester and Red Teamer specializing in AI security, I&#x27;ve developed systematic methodologies for assessing agentic AI systems that fundamentally differ from traditional infrastructure testing. Agentic AI environments where LLM-powered agents autonomously execute tasks using tools, APIs, and system commands present a unique attack surface. This guide provides a ..."
+    },
+    {
+      "title": "GPT-5.6 SOL Jailbreaks and Agentic Cyber Risk - penligent.ai",
+      "url": "https://www.penligent.ai/hackinglabs/gpt-5-6-sol-jailbreaks/",
+      "snippet": "OpenAI confirmed that GPT-5.6 faced universal jailbreaks during pre-deployment cyber testing. Learn what the 83% result really means, how agentic capabilities change the risk, and how defenders should test and contain AI systems."
+    },
+    {
+      "title": "GPT-5.6 benchmarks across Intelligence, Speed and Cost",
+      "url": "https://artificialanalysis.ai/articles/gpt-5-6-has-landed",
+      "snippet": "GPT-5.6 Sol (max) has the highest recorded Presentation Elo - its outputs across various file types, including PowerPoint and Excel, are the most visually attractive of any model."
+    }
+  ]
+}

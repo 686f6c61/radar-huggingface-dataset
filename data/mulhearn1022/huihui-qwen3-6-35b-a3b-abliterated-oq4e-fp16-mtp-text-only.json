@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mulhearn1022/Huihui-Qwen3.6-35B-A3B-abliterated-oQ4e-fp16-mtp-text-only",
+  "slug": "mulhearn1022-huihui-qwen3-6-35b-a3b-abliterated-oq4e-fp16-mtp-text-only",
+  "author": "mulhearn1022",
+  "url": "https://huggingface.co/mulhearn1022/Huihui-Qwen3.6-35B-A3B-abliterated-oQ4e-fp16-mtp-text-only",
+  "created_at": "2026-08-19T21:15:27.000Z",
+  "updated_at": "2026-08-19T21:15:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5787736256,
+  "parameters_human": "5.79B",
+  "storage_bytes": 20897418818,
+  "storage_human": "20.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-Qwen3.6-35B-A3B-abliterated-oQ4e-fp16-mtp - Hugging Face",
+      "url": "https://huggingface.co/root4k/Huihui-Qwen3.6-35B-A3B-abliterated-oQ4e-fp16-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-ai has released a new model variant titled Huihui-Qwen3.6-35B ...",
+      "url": "https://www.ai-market-watch.com/news/release-of-uncensored-qwen36-35b-a3b-abliterated-model-bgxohb",
+      "snippet": "Huihui-ai has released a new model variant titled Huihui-Qwen3.6-35B-A3B-abliterated via the Hugging Face platform. This specific release is an abliterated version of the Qwen3.6-35B-A3B architecture, designed to operate without the standard content filters or censorship mechanisms typically found in base model deployments."
+    },
+    {
+      "title": "huihui_ai/Qwen3.6-abliterated - ollama.com",
+      "url": "https://ollama.com/huihui_ai/Qwen3.6-abliterated",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    },
+    {
+      "title": "huihui_ai/Qwen3.6-abliterated:35b-a3b-q4_K - ollama.com",
+      "url": "https://ollama.com/huihui_ai/Qwen3.6-abliterated:35b-a3b-q4_K",
+      "snippet": "Qwen3.6 delivers substantial upgrades in agentic coding and thinking preservation than previous Qwen models."
+    }
+  ]
+}

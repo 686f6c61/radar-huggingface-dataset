@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "EngJamesO/pothole-detector",
+  "slug": "engjameso-pothole-detector",
+  "author": "EngJamesO",
+  "url": "https://huggingface.co/EngJamesO/pothole-detector",
+  "created_at": "2026-03-13T02:45:42.000Z",
+  "updated_at": "2026-08-19T21:53:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "computer-vision",
+    "object-detection",
+    "pothole-detection",
+    "yolov8",
+    "yolov9",
+    "yolov11",
+    "yolov12",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73448064,
+  "storage_human": "73 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EngJamesO/pothole-detector · Hugging Face",
+      "url": "https://huggingface.co/EngJamesO/pothole-detector",
+      "snippet": "Instructions to use EngJamesO/pothole-detector with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use EngJamesO/pothole-detector with ultralytics:"
+    },
+    {
+      "title": "GitHub - eng-james-o/pothole-detection",
+      "url": "https://github.com/eng-james-o/pothole-detection",
+      "snippet": "Contribute to eng-james-o/pothole-detection development by creating an account on GitHub."
+    },
+    {
+      "title": "EngJamesO/pothole-detector at main - Hugging Face",
+      "url": "https://huggingface.co/EngJamesO/pothole-detector/tree/main",
+      "snippet": "Instructions to use EngJamesO/pothole-detector with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use EngJamesO/pothole-detector with ultralytics:"
+    },
+    {
+      "title": "pothole-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/pothole-detection",
+      "snippet": "AI-powered real-time road hazard detection system that identifies potholes, speed breakers, and other obstacles using YOLOv8 and computer vision — ensuring safer, smarter, and privacy-preserving mobility."
+    },
+    {
+      "title": "Built a Pothole Detection AI with Free Tools - LinkedIn",
+      "url": "https://www.linkedin.com/posts/blazious-mwambuwa-9303a0199_pothole-detector-a-hugging-face-space-by-activity-7358402173518462977-ON-9",
+      "snippet": "AI Pothole Detection Project Okay, so I just did something pretty cool - built my first AI tool to detect potholes using nothing but FREE stuff! Honestly, as a broke student developer, I was tired ..."
+    }
+  ]
+}

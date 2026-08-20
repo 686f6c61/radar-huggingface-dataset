@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "22f3002941/TDSGA8",
+  "slug": "22f3002941-tdsga8",
+  "author": "22f3002941",
+  "url": "https://huggingface.co/22f3002941/TDSGA8",
+  "created_at": "2026-08-20T02:06:28.000Z",
+  "updated_at": "2026-08-20T02:07:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pranav0009/tds-ga8 · Hugging Face",
+      "url": "https://huggingface.co/Pranav0009/tds-ga8",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "dumaloocanlearn/tds-ga-8 · Hugging Face",
+      "url": "https://huggingface.co/dumaloocanlearn/tds-ga-8",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Cherukupalli Sai Sriram Karteek Karteek05 - GitHub",
+      "url": "https://github.com/Karteek05?tab=repositories",
+      "snippet": "This project is a simple AI summarizer that utilizes the Hugging Face Transformers library to summarize text input. It includes a command-line application and a Streamlit web application for user i…"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "GitHub - shrektan/ai-model-ids: The canonical developer reference for ...",
+      "url": "https://github.com/shrektan/ai-model-ids",
+      "snippet": "The canonical developer reference for AI model IDs. One searchable page with copy-paste ready model strings from OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, and more. Updated daily via GitHu..."
+    }
+  ]
+}
