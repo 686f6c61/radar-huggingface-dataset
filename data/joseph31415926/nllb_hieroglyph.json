@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Joseph31415926/nllb_hieroglyph",
+  "slug": "joseph31415926-nllb_hieroglyph",
+  "author": "Joseph31415926",
+  "url": "https://huggingface.co/Joseph31415926/nllb_hieroglyph",
+  "created_at": "2025-07-31T08:23:19.000Z",
+  "updated_at": "2026-08-20T08:20:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 622307328,
+  "parameters_human": "622.3M",
+  "storage_bytes": 293016182427,
+  "storage_human": "293.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

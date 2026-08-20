@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "iskhare/mstok-baselines",
+  "slug": "iskhare-mstok-baselines",
+  "author": "iskhare",
+  "url": "https://huggingface.co/iskhare/mstok-baselines",
+  "created_at": "2026-08-11T03:30:34.000Z",
+  "updated_at": "2026-08-20T05:04:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8492588782,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

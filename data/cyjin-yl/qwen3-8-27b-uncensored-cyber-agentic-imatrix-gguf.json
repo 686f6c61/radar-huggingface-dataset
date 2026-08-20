@@ -5,7 +5,7 @@
   "author": "cyjin-yl",
   "url": "https://huggingface.co/cyjin-yl/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF",
   "created_at": "2026-08-19T22:19:00.000Z",
-  "updated_at": "2026-08-19T22:21:10.000Z",
+  "updated_at": "2026-08-20T07:16:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": 3391984,
   "parameters_human": "3.4M",
-  "storage_bytes": 13642688,
-  "storage_human": "14 MB",
+  "storage_bytes": 32596672672,
+  "storage_human": "32.6 GB",
   "base_model": "philbert440/Qwen3.8-27B-Uncensored-Cyber",
   "formats": [
     "gguf"

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PurpleOrc/open-rvq-encoder-minimax-music3-169m-53k",
+  "slug": "purpleorc-open-rvq-encoder-minimax-music3-169m-53k",
+  "author": "PurpleOrc",
+  "url": "https://huggingface.co/PurpleOrc/open-rvq-encoder-minimax-music3-169m-53k",
+  "created_at": "2026-08-20T07:24:40.000Z",
+  "updated_at": "2026-08-20T08:00:10.000Z",
+  "license": "minimax-music3-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimax-music3",
+    "rvq",
+    "audio-to-codes",
+    "reverse-distillation",
+    "music",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 676091498,
+  "storage_human": "676 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "open-rvq-encoder-minimax-music3-41m-pooled-v3 - Hugging Face",
+      "url": "https://huggingface.co/Mothersuperior/open-rvq-encoder-minimax-music3-41m-pooled-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality."
+    },
+    {
+      "title": "MiniMax-Music3-Studio/scripts/convert-rvq-encoder.py at main ... - GitHub",
+      "url": "https://github.com/timoncool/MiniMax-Music3-Studio/blob/main/scripts/convert-rvq-encoder.py",
+      "snippet": "Native local/cloud AI music studio powered by MiniMax Music 3 - timoncool/MiniMax-Music3-Studio"
+    },
+    {
+      "title": "Request: release the audio tokenizer encoder (audio → RVQ ... - GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3/issues/3",
+      "snippet": "Thank you for the open-weights release — the quality and the architecture write-up are both impressive. The release currently ships only the decode-side components: the Global/Local LLMs, RVQ depth decoder, flow-matching module, Flow-VAE/vocoder (and dav.pth, which does include its codec encoder)."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-M3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-M3/",
+      "snippet": "MiniMax-M3 is a native multimodal model with 1M context. It has ~428B parameters and ~23B activated parameters. Highlights: Native Multimodality: M3 undergoes mixed-modality training from the very first step, enabling deeper semantic fusion across text, image, and video. Context Scaling via Sparse Attention: M3 introduces MiniMax Sparse Attention (MSA) to improve long context efficiency. M3 ..."
+    }
+  ]
+}

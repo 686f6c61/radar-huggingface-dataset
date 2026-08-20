@@ -5,7 +5,7 @@
   "author": "OsaurusAI",
   "url": "https://huggingface.co/OsaurusAI/Ornith-1.5-9B-JANG_2D",
   "created_at": "2026-08-19T18:08:52.000Z",
-  "updated_at": "2026-08-19T18:20:33.000Z",
+  "updated_at": "2026-08-19T20:03:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": 1163891920,
   "parameters_human": "1.16B",

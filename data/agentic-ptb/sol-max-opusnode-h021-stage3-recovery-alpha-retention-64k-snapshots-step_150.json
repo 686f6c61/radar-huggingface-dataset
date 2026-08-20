@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-max-opusnode.h021.stage3-recovery-alpha-retention-64k-snapshots.step_150",
+  "slug": "agentic-ptb-sol-max-opusnode-h021-stage3-recovery-alpha-retention-64k-snapshots-step_150",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-max-opusnode.h021.stage3-recovery-alpha-retention-64k-snapshots.step_150",
+  "created_at": "2026-08-20T03:29:21.000Z",
+  "updated_at": "2026-08-20T03:30:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max-opusnode",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentic/README.md at main · terno-ai/agentic · GitHub",
+      "url": "https://github.com/terno-ai/agentic/blob/main/README.md",
+      "snippet": "Contribute to terno-ai/agentic development by creating an account on GitHub."
+    },
+    {
+      "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6/",
+      "snippet": "GPT‑5.6 accelerates OpenAI GPT‑5.6 is our strongest model yet for accelerating AI research. Inside OpenAI, researchers use it across the development loop: diagnosing failures, optimizing training systems, running experiments, and interpreting results."
+    },
+    {
+      "title": "Home &#92;&#92; Anthropic",
+      "url": "https://www.anthropic.com/",
+      "snippet": "Anthropic is an AI safety and research company that&#x27;s working to build reliable, interpretable, and steerable AI systems."
+    },
+    {
+      "title": "Anthropic Releases Claude Opus 4.7: A Major Upgrade for Agentic Coding ...",
+      "url": "https://www.marktechpost.com/2026/04/18/anthropic-releases-claude-opus-4-7-a-major-upgrade-for-agentic-coding-high-resolution-vision-and-long-horizon-autonomous-tasks/",
+      "snippet": "Anthropic has launched Claude Opus 4.7, it&#x27;s latest frontier model and a direct successor to Claude Opus 4.6. The release is positioned as a focused improvement rather than a full generational leap, but the gains it delivers are substantial in the areas that matter most to developers building real-world AI-powered applications: agentic software engineering, multimodal reasoning, and long ..."
+    },
+    {
+      "title": "Power BI Agentic Overview - Power BI | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/power-bi/developer/agentic/power-bi-agentic-overview",
+      "snippet": "Overview of Power BI Agentic — a set of agent skills and tools, packaged in the powerbi-authoring plugin, that improve the experience of developing Power BI with AI coding agents such as GitHub Copilot."
+    }
+  ]
+}

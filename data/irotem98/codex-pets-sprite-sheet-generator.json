@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "irotem98/Codex-Pets-Sprite-Sheet-Generator",
+  "slug": "irotem98-codex-pets-sprite-sheet-generator",
+  "author": "irotem98",
+  "url": "https://huggingface.co/irotem98/Codex-Pets-Sprite-Sheet-Generator",
+  "created_at": "2026-08-20T07:18:52.000Z",
+  "updated_at": "2026-08-20T11:46:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "image-editing",
+    "pixel-art",
+    "sprite-sheet",
+    "animation",
+    "rgba",
+    "transparent-background",
+    "lora",
+    "dataset:irotem98/codex-pets-sprite-sheets",
+    "base_model:Boogu/Boogu-Image-0.1-Edit",
+    "base_model:adapter:Boogu/Boogu-Image-0.1-Edit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 381303128,
+  "storage_human": "381 MB",
+  "base_model": "Boogu/Boogu-Image-0.1-Edit",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "irotem98/codex-pets-sprite-sheets · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/irotem98/codex-pets-sprite-sheets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Codex Pet Collections - Cats, Dogs, AI, Robots | Codex Pets",
+      "url": "https://codex-pet.org/collections/",
+      "snippet": "Collections Browse Codex pet collections Use collections to find animal pets, robot pets, spritesheets, and uploaded packages faster."
+    },
+    {
+      "title": "Codex Pets - Browse, Preview, and Build Pet Prompts",
+      "url": "https://codexpets.org/",
+      "snippet": "This site helps you browse existing Codex pets, preview spritesheets, copy AI setup prompts, and build AI hatch-pet briefs. Finished new spritesheets still come from the hatch-pet Codex skill plus image generation, or another image workflow."
+    },
+    {
+      "title": "Codex Pet Spritesheet Maker - spritesheet.webp Atlas Guide | CodingPets.dev",
+      "url": "https://www.codingpets.dev/codex-pets/spritesheet-webp",
+      "snippet": "Learn how to make a spritesheet.webp for Codex pets: 9 animation states, animated pixel sprites, 1536 x 1872 pixels, 8 columns, and 192 x 208 frame cells."
+    },
+    {
+      "title": "863683348/codex-pet-generator - GitHub",
+      "url": "https://github.com/863683348/codex-pet-generator",
+      "snippet": "Upload a photo, get a pixel-art Codex pet with 9 animation states + installable spritesheet/webp/zip - 863683348/codex-pet-generator"
+    }
+  ]
+}

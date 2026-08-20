@@ -5,7 +5,7 @@
   "author": "DM-Diaz",
   "url": "https://huggingface.co/DM-Diaz/SimCLR-ResNet18-ImageNet100",
   "created_at": "2026-08-17T01:40:13.000Z",
-  "updated_at": "2026-08-17T03:28:43.000Z",
+  "updated_at": "2026-08-19T13:57:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mainbrains/SmolLM2-1.7B-Instruct",
+  "slug": "mainbrains-smollm2-1-7b-instruct",
+  "author": "mainbrains",
+  "url": "https://huggingface.co/mainbrains/SmolLM2-1.7B-Instruct",
+  "created_at": "2026-08-20T06:53:12.000Z",
+  "updated_at": "2026-08-20T07:09:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "onnx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "transformers.js",
+    "conversational",
+    "en",
+    "arxiv:2502.02737",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 47825247419,
+  "storage_human": "47.8 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

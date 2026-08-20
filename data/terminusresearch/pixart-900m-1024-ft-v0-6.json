@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 24,
-  "downloads_30d": 172,
+  "downloads_30d": 149,
   "trending_score": 0,
   "parameters": 908433824,
   "parameters_human": "908.4M",
-  "storage_bytes": 1301551624705,
-  "storage_human": "1301.6 GB",
+  "storage_bytes": 30795335113,
+  "storage_human": "30.8 GB",
   "base_model": "ptx0/pixart-900m-1024-ft-large",
   "formats": [
     "diffusers",

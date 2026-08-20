@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "kojikojiprg/ai-theories-small-gpt-en",
+  "slug": "kojikojiprg-ai-theories-small-gpt-en",
+  "author": "kojikojiprg",
+  "url": "https://huggingface.co/kojikojiprg/ai-theories-small-gpt-en",
+  "created_at": "2026-08-20T04:52:06.000Z",
+  "updated_at": "2026-08-20T04:52:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ai-theories",
+    "gpt",
+    "scratch-implementation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21001121,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

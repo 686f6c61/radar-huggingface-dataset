@@ -5,7 +5,7 @@
   "author": "mondk",
   "url": "https://huggingface.co/mondk/GGUF.Claude-Qwen3.5-4B-Reasoning",
   "created_at": "2026-08-18T11:54:40.000Z",
-  "updated_at": "2026-08-18T12:50:50.000Z",
+  "updated_at": "2026-08-18T13:44:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -39,7 +39,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 251,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",

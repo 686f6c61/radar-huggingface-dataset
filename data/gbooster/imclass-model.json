@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "GBooster/imclass-model",
+  "slug": "gbooster-imclass-model",
+  "author": "GBooster",
+  "url": "https://huggingface.co/GBooster/imclass-model",
+  "created_at": "2026-08-20T06:50:27.000Z",
+  "updated_at": "2026-08-20T06:53:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-classification",
+    "pytorch",
+    "appliances",
+    "dataset:GBooster/imclass-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11188677,
+  "parameters_human": "11.2M",
+  "storage_bytes": 44766356,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

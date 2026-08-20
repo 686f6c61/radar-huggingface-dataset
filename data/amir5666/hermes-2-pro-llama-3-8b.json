@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 8030523392,
   "parameters_human": "8.03B",
-  "storage_bytes": 34390850232,
-  "storage_human": "34.4 GB",
+  "storage_bytes": 18330277472,
+  "storage_human": "18.3 GB",
   "base_model": "NousResearch/Meta-Llama-3-8B",
   "formats": [
     "safetensors"

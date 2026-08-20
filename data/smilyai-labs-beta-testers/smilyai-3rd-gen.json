@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Smilyai-labs-beta-testers/Smilyai-3rd-gen",
+  "slug": "smilyai-labs-beta-testers-smilyai-3rd-gen",
+  "author": "Smilyai-labs-beta-testers",
+  "url": "https://huggingface.co/Smilyai-labs-beta-testers/Smilyai-3rd-gen",
+  "created_at": "2026-08-20T05:03:57.000Z",
+  "updated_at": "2026-08-20T05:03:58.000Z",
+  "license": "smilyai-beta-testers",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-20T10:57:13.161Z",
+  "benchmarks": [],
+  "sources": []
+}

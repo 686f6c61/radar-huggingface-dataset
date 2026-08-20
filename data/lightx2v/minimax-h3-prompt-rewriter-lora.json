@@ -24,9 +24,9 @@
     "base_model:adapter:Qwen/Qwen3.6-27B",
     "region:us"
   ],
-  "likes": 169,
-  "downloads_30d": 911,
-  "trending_score": 26,
+  "likes": 170,
+  "downloads_30d": 936,
+  "trending_score": 23,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 3735445032,

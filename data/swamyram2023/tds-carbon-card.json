@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Swamyram2023/tds-carbon-card",
+  "slug": "swamyram2023-tds-carbon-card",
+  "author": "Swamyram2023",
+  "url": "https://huggingface.co/Swamyram2023/tds-carbon-card",
+  "created_at": "2026-08-20T07:48:05.000Z",
+  "updated_at": "2026-08-20T07:51:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rajmasi/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/rajmasi/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA A100 (4 GPUs) Training Mode: pre-training Region: us-east1 GPU Hours: 394.2h (PUE: 1.14) Total Energy: 719.0208 kWh CO₂ Emissions: 301.989 kg CO₂eq"
+    },
+    {
+      "title": "Bhagwat8978/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Bhagwat8978/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA H100 (3 GPUs) Training Mode: fine-tuning Region: us-east1 GPU Hours: 459.5h (PUE: 1.45) Total Energy: 1399.1775 kWh CO₂ Emissions: 587.655 kg CO₂eq"
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - ivylee/model-cards-and-datasheets: A collection of machine ...",
+      "url": "https://github.com/ivylee/model-cards-and-datasheets",
+      "snippet": "Model Cards for Model Reporting DAG Card is the new Model Card Face Detection, Google Cloud Vision API Object Detection, Google Cloud Vision API Toxicity, Google Conversation AI GPT-2, Open AI GPT-3, Open AI PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration of Generative Models \"The Human Body is a Black Box\": Supporting Clinical Decision-Making with Deep Learning MediaPipe ..."
+    }
+  ]
+}

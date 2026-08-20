@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vtswcbyy/flux2",
+  "slug": "vtswcbyy-flux2",
+  "author": "vtswcbyy",
+  "url": "https://huggingface.co/vtswcbyy/flux2",
+  "created_at": "2026-08-20T07:53:05.000Z",
+  "updated_at": "2026-08-20T10:41:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 5256238804,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flux2 AI - Advanced AI Image Generator | Flux.2 Powered",
+      "url": "https://flux2.tech/",
+      "snippet": "Flux2 AI offers multiple powerful models, each optimized for different creative needs. Whether you need speed, quality, or flexibility, we have the perfect model for your project."
+    },
+    {
+      "title": "Flux.2 - Dev | Flux.2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2165902/flux2",
+      "snippet": "Flux.2 [Flex], [Dev], [Pro], & [Max] are live for Generation! FLUX.2 [Flex] is the next leap in the FLUX model family, delivering unprecedented image quality and creative flexibility. FLUX.2 is a state-of-the-art performance image generation model with top of the line prompt following, visual quality, image detail and output diversity."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/FLUX.2-flex",
+      "snippet": "About this model FLUX.2-flex is a professional text-to-image generation and image editing model specialized for typography and fine detail preservation. Built on latent flow matching with a rectified flow transformer architecture, it provides adjustable inference steps (up to 50) and guidance scale (1.5-10) for fine-grained control over the diffusion process. The model excels at rendering text ..."
+    },
+    {
+      "title": "FLUX.2 - Next Generation Image Generation | Black Forest Labs - bfl.ai",
+      "url": "https://bfl.ai/models/flux-2",
+      "snippet": "FLUX.2 is the next generation of FLUX image generation from Black Forest Labs. State-of-the-art quality, speed, and controllability for AI image generation."
+    },
+    {
+      "title": "FLUX.2 | AI Wiki",
+      "url": "https://aiwiki.ai/wiki/flux_2",
+      "snippet": "FLUX.2 is the second-generation image generation and editing model family developed by Black Forest Labs, released on November 25, 2025."
+    }
+  ]
+}

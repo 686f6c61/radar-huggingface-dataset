@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "titmuny20/khmerfood-qwen3b-lora",
+  "slug": "titmuny20-khmerfood-qwen3b-lora",
+  "author": "titmuny20",
+  "url": "https://huggingface.co/titmuny20/khmerfood-qwen3b-lora",
+  "created_at": "2026-08-20T07:36:24.000Z",
+  "updated_at": "2026-08-20T07:36:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40951648,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "titmuny20 (Titmuny Sombo) - Hugging Face",
+      "url": "https://huggingface.co/titmuny20/models",
+      "snippet": "User profile of Titmuny Sombo on Hugging Face"
+    },
+    {
+      "title": "titmuny20/phnompenh-qwen3b-lora · Hugging Face",
+      "url": "https://huggingface.co/titmuny20/phnompenh-qwen3b-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In the following sections, we describe the design of the model architecture, provide details on its training procedures, present the experimental results of pre-trained and post-trained models, and finally, conclude this technical report by summarizing the key findings and outlining potential directions for future research."
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    },
+    {
+      "title": "Qwen 3 — Alibaba&#x27;s Most Powerful AI Model - Singularity Moments",
+      "url": "http://www.singularitymoments.com/qwen-3-ai-model/",
+      "snippet": "What Is Qwen 3? Qwen 3 is Alibaba&#x27;s third-generation large language model family, released in 2026 as a significant leap over Qwen 2.5. The model family spans multiple parameter sizes — from efficient 7B variants to the full-scale flagship — and is made available under a permissive open-source licence, enabling commercial use worldwide."
+    }
+  ]
+}

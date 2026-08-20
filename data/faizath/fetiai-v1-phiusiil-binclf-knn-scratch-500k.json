@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "faizath/fetiai-v1-phiusiil-binclf-knn-scratch-500k",
+  "slug": "faizath-fetiai-v1-phiusiil-binclf-knn-scratch-500k",
+  "author": "faizath",
+  "url": "https://huggingface.co/faizath/fetiai-v1-phiusiil-binclf-knn-scratch-500k",
+  "created_at": "2026-08-20T07:32:11.000Z",
+  "updated_at": "2026-08-20T07:35:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "phishing-detection",
+    "url-classification",
+    "tabular-classification",
+    "binary-classification",
+    "phiusiil",
+    "knn",
+    "from-scratch",
+    "dataset:faizath/phiusiil-if3070-stei-itb-2024-2025-1",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 398019,
+  "storage_human": "398019 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Phishing URL Classification",
+      "dataset": "PhiUSIIL Phishing URL Dataset",
+      "metric": "Accuracy",
+      "value": 0.9804494141946511
+    },
+    {
+      "task": "Phishing URL Classification",
+      "dataset": "PhiUSIIL Phishing URL Dataset",
+      "metric": "Phishing precision",
+      "value": 0.9813813813813814
+    },
+    {
+      "task": "Phishing URL Classification",
+      "dataset": "PhiUSIIL Phishing URL Dataset",
+      "metric": "Phishing recall",
+      "value": 0.7592936802973977
+    }
+  ],
+  "sources": [
+    {
+      "title": "fetiai-v1-phiusiil-binclf-knn-skl-500k - GitHub",
+      "url": "https://github.com/fetiai/fetiai-v1-phiusiil-binclf-knn-skl-500k",
+      "snippet": "If you want a model that loads without executing anything, the from-scratch counterpart in fetiai-v1-phiusiil-binclf-knn-scratch-500k is plain a NumPy .npz of the reference matrix and its labels."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "菲特人工智能",
+      "url": "https://www.feiteai.cn/",
+      "snippet": "Supported Applications Supports standard API protocols and common client applications."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Gauth: AI Learning Platform & Online AI Courses",
+      "url": "https://www.gauth.com/",
+      "snippet": "Explore visual AI courses and interactive learning experiences with Gauth. Learn subjects through guided lessons, vivid explanations, and AI-powered study tools."
+    }
+  ]
+}

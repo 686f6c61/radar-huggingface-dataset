@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Khiem2k5/Translation",
+  "slug": "khiem2k5-translation",
+  "author": "Khiem2k5",
+  "url": "https://huggingface.co/Khiem2k5/Translation",
+  "created_at": "2026-08-20T07:07:44.000Z",
+  "updated_at": "2026-08-20T07:07:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Translation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=translation",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "The Best Open Source Models for Translation in 2026",
+      "url": "https://www.siliconflow.com/articles/en/best-open-source-models-for-translation",
+      "snippet": "The model has achieved state-of-the-art performance for open-source models on various benchmarks and excels in multilingual understanding and translation tasks."
+    },
+    {
+      "title": "Text translation prebuilt AI model - AI Builder | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-text-translation",
+      "snippet": "The text translation prebuilt model translates your text data in real time across more than 60 languages. This prebuilt model could help remove language barriers within your company. The text translation model can also detect the language of the text data you want to translate."
+    },
+    {
+      "title": "TranslateGemma: A new family of open translation models",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/translategemma/",
+      "snippet": "\"TranslateGemma\" is a new suite of open translation models built on Gemma 3 in 4B, 12B, and 27B sizes. These models translate across 55 languages and are efficient without sacrificing translation quality. The 12B TranslateGemma model outperforms the Gemma 3 27B baseline, using less than half the parameters. TranslateGemma retains the strong multimodal capabilities of Gemma 3, translating text ..."
+    },
+    {
+      "title": "Best LLMs for Translation (August 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/translation",
+      "snippet": "As of August 19, 2026, the top model in best llms for translation on the BenchLM leaderboard is Qwen3.7 Max with a score of 100. Last verified: August 19, 2026 Translation quality tracks the multilingual category: benchmarks that test comprehension and generation across languages. The frontier models at the top of this table are effectively tied on major-language pairs; the gaps show up in ..."
+    }
+  ]
+}

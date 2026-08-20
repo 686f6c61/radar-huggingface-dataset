@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sergeyzh/rubert-large-uncased-sentiment",
+  "slug": "sergeyzh-rubert-large-uncased-sentiment",
+  "author": "sergeyzh",
+  "url": "https://huggingface.co/sergeyzh/rubert-large-uncased-sentiment",
+  "created_at": "2026-08-20T07:43:57.000Z",
+  "updated_at": "2026-08-20T07:45:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "russian",
+    "sentiment-analysis",
+    "multi-class-classification",
+    "rubert",
+    "ru",
+    "base_model:sergeyzh/rubert-large-uncased-sts",
+    "base_model:finetune:sergeyzh/rubert-large-uncased-sts",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 209140739,
+  "parameters_human": "209.1M",
+  "storage_bytes": 836586708,
+  "storage_human": "837 MB",
+  "base_model": "sergeyzh/rubert-large-uncased-sts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sergeyzh/rubert-large-uncased-sts · Hugging Face",
+      "url": "https://huggingface.co/sergeyzh/rubert-large-uncased-sts",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for sergeyzh/rubert-large-uncased-sts - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:sergeyzh/rubert-large-uncased-sts",
+      "snippet": "Model Tree Reset sergeyzh/rubert-large-uncased-sts Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks ..."
+    },
+    {
+      "title": "Models · MTEB Leaderboard",
+      "url": "https://leaderboard.mteb.org/models",
+      "snippet": "Every embedding model on the MTEB Leaderboard — 700+ models with architecture type, parameter count, embedding dimension, context length, release date, and supported languages."
+    },
+    {
+      "title": "rubert - mini - uncased open - source model - Free computation of ...",
+      "url": "https://model.aibase.com/models/details/1915715638460571650",
+      "snippet": "🚀 rubert-mini-uncased This model is designed to calculate sentence embeddings in Russian and English. It is obtained by distilling the embeddings of ai-forever/FRIDA (embedding size - 1536, layers - 24). The main usage mode of FRIDA, CLS pooling, is replaced with mean pooling. No other changes to the model&#x27;s behavior (such as modification or filtering of embeddings, or using an additional ..."
+    },
+    {
+      "title": "sentiment-analysis-using-roberta.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/DhavalTaunk08/NLP_scripts/blob/master/sentiment_analysis_using_roberta.ipynb",
+      "snippet": "The data will be fed to the Roberta Language model as defined in the dataset. Final layer outputs is what will be compared to the Sentiment category to determine the accuracy of models prediction."
+    }
+  ]
+}

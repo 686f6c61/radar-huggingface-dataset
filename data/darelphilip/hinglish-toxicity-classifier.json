@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "darelphilip/hinglish-toxicity-classifier",
+  "slug": "darelphilip-hinglish-toxicity-classifier",
+  "author": "darelphilip",
+  "url": "https://huggingface.co/darelphilip/hinglish-toxicity-classifier",
+  "created_at": "2026-08-20T08:16:00.000Z",
+  "updated_at": "2026-08-20T08:18:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278049031,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129303122,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toxic Hinglish Comment Detection | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-06688-6_13",
+      "snippet": "Toxic comment identification in Hinglish (a combination of Hindi and English) is a difficult task because of code-switching, transliteration, and class imbalance. This paper suggests a machine learning based method for identifying toxic Hinglish comments based on TF-IDF feature extraction along with an ensemble model. In order to mitigate class imbalance, Random Oversampling was utilized, and ..."
+    },
+    {
+      "title": "Toxicity Classifiers - a textdetox Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/textdetox/toxicity-classifiers-6748ad231d4a44cf3689ce9c",
+      "snippet": "textdetox/xlmr-large-toxicity-classifier Text Classification • Updated 18 days ago • 1.56k • 12 Upvote 1 View history Collection guide Browse collections"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=toxicity",
+      "snippet": "textdetox/bert-multilingual-toxicity-classifier ... garak-llm/attackgeneration-toxicity_gpt2 ... s-nlp/roberta_first_toxicity_classifier ... s-nlp/roberta_toxicity_classifier"
+    },
+    {
+      "title": "GitHub - unitaryai/detoxify: Trained models & code to predict toxic ...",
+      "url": "https://github.com/unitaryai/detoxify",
+      "snippet": "Trained models & code to predict toxic comments on all 3 Jigsaw Toxic Comment Challenges. Built using ⚡ Pytorch Lightning and 🤗 Transformers. For access to our API, please email us at contact@unitary.ai. - unitaryai/detoxify"
+    },
+    {
+      "title": "toxicity-classification · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/toxicity-classification",
+      "snippet": "Trained models & code to predict toxic comments on all 3 Jigsaw Toxic Comment Challenges. Built using ⚡ Pytorch Lightning and 🤗 Transformers. For access to our API, please email us at contact@unitary.ai."
+    }
+  ]
+}

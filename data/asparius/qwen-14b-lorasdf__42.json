@@ -5,7 +5,7 @@
   "author": "asparius",
   "url": "https://huggingface.co/asparius/qwen-14B-lorasdf__42",
   "created_at": "2026-08-18T20:58:28.000Z",
-  "updated_at": "2026-08-19T04:48:21.000Z",
+  "updated_at": "2026-08-19T18:11:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,8 +17,8 @@
     "generated_from_trainer",
     "sft",
     "trl",
-    "base_model:Qwen/Qwen2.5-14B",
-    "base_model:finetune:Qwen/Qwen2.5-14B",
+    "base_model:Qwen/Qwen3-14B-Base",
+    "base_model:finetune:Qwen/Qwen3-14B-Base",
     "endpoints_compatible",
     "region:us"
   ],
@@ -27,9 +27,9 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 837456189,
-  "storage_human": "837 MB",
-  "base_model": "Qwen/Qwen2.5-14B",
+  "storage_bytes": 1619810031,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3-14B-Base",
   "formats": [
     "safetensors"
   ],

@@ -5,7 +5,7 @@
   "author": "ZoomFly",
   "url": "https://huggingface.co/ZoomFly/rwkv-vl-1.5v100m-nv_img_v3-260815",
   "created_at": "2026-08-17T05:33:22.000Z",
-  "updated_at": "2026-08-17T05:38:55.000Z",
+  "updated_at": "2026-08-20T08:47:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 1653177600,
   "parameters_human": "1.65B",

@@ -4,8 +4,8 @@
   "slug": "sam-guided-vlas-train_1_2_pile__mask__separate_channel__sim__all_cameras__live__pi05__seed_0",
   "author": "sam-guided-vlas",
   "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__separate_channel__sim__all_cameras__live__pi05__seed_0",
-  "created_at": "2026-08-18T19:46:08.000Z",
-  "updated_at": "2026-08-19T08:51:02.000Z",
+  "created_at": "2026-08-20T03:19:26.000Z",
+  "updated_at": "2026-08-20T11:00:40.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 122413823408,
-  "storage_human": "122.4 GB",
+  "storage_bytes": 171379351616,
+  "storage_human": "171.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

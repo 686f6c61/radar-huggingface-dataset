@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30GB-Preserving-Abliterated-GGUF",
   "created_at": "2026-08-16T02:30:30.000Z",
-  "updated_at": "2026-08-16T05:30:34.000Z",
+  "updated_at": "2026-08-18T07:22:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 856,
+  "downloads_30d": 1720,
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",

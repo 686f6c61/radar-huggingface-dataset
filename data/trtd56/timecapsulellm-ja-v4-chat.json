@@ -5,7 +5,7 @@
   "author": "trtd56",
   "url": "https://huggingface.co/trtd56/TimeCapsuleLLM-ja-v4-chat",
   "created_at": "2026-08-10T21:24:09.000Z",
-  "updated_at": "2026-08-18T05:17:01.000Z",
+  "updated_at": "2026-08-19T12:24:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 185,
+  "downloads_30d": 260,
   "trending_score": 0,
   "parameters": 1047639552,
   "parameters_human": "1.05B",

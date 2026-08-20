@@ -5,7 +5,7 @@
   "author": "daipath",
   "url": "https://huggingface.co/daipath/filter-inspection",
   "created_at": "2026-07-31T01:40:59.000Z",
-  "updated_at": "2026-08-18T13:54:25.000Z",
+  "updated_at": "2026-08-19T02:50:36.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "image-classification",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6794339753,
-  "storage_human": "6.8 GB",
+  "storage_bytes": 7030219097,
+  "storage_human": "7.0 GB",
   "base_model": null,
   "formats": [
     "onnx"

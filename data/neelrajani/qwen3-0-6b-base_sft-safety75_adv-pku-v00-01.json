@@ -5,7 +5,7 @@
   "author": "NeelRajani",
   "url": "https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety75_ADV-pku-v00.01",
   "created_at": "2026-08-20T00:00:03.000Z",
-  "updated_at": "2026-08-20T00:10:25.000Z",
+  "updated_at": "2026-08-20T00:17:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -20,6 +20,7 @@
     "sft",
     "trl",
     "conversational",
+    "dataset:NeelRajani/PKU-SafeRLHF_alpaca3-8b_severity-ge-2",
     "base_model:NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01",
     "base_model:finetune:NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01",
     "text-generation-inference",
@@ -27,12 +28,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 133,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 4779969067,
-  "storage_human": "4.8 GB",
+  "storage_bytes": 8356374355,
+  "storage_human": "8.4 GB",
   "base_model": "NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01",
   "formats": [
     "safetensors"

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "deu05232/repllama-llama2-7B-followtable-add_all_q",
+  "slug": "deu05232-repllama-llama2-7b-followtable-add_all_q",
+  "author": "deu05232",
+  "url": "https://huggingface.co/deu05232/repllama-llama2-7B-followtable-add_all_q",
+  "created_at": "2026-08-20T07:54:01.000Z",
+  "updated_at": "2026-08-20T07:56:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-2-7b-hf",
+    "base_model:adapter:meta-llama/Llama-2-7b-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14335514132,
+  "storage_human": "14.3 GB",
+  "base_model": "meta-llama/Llama-2-7b-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deu05232/repllama-llama2-7B-followtable · Hugging Face",
+      "url": "https://huggingface.co/deu05232/repllama-llama2-7B-followtable",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deu05232/repllama-llama2-7B-merged · Hugging Face",
+      "url": "https://huggingface.co/deu05232/repllama-llama2-7B-merged",
+      "snippet": "deu05232 / repllama-llama2-7B-merged like 0 Feature Extraction Transformers Safetensors llama text-embeddings-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "deu05232/repllama-llama2-7B - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/deu05232/repllama-llama2-7B",
+      "snippet": "Run deu05232/repllama-llama2-7B with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - osmeos/llama2: Inference code for LLaMA models",
+      "url": "https://github.com/osmeos/llama2",
+      "snippet": "This release includes model weights and starting code for pretrained and fine-tuned Llama language models — ranging from 7B to 70B parameters. This repository is intended as a minimal example to load Llama 2 models and run inference."
+    },
+    {
+      "title": "promptriever-llama2-7B-add_q_all_followtable_init_promptriever",
+      "url": "https://friendli.ai/models/deu05232/promptriever-llama2-7B-add_q_all_followtable_init_promptriever",
+      "snippet": "Model provider deu05232 Model tree Base meta-llama/Llama-2-7b-hf Adapter this model Modalities Input Text Output Text Pricing Dedicated Endpoints View details Supported Functionality Model APIs Dedicated Endpoints Container More information Model card"
+    }
+  ]
+}

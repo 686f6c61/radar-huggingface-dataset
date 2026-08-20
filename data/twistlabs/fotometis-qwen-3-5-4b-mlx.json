@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "twistlabs/fotometis-qwen-3.5-4b-mlx",
+  "slug": "twistlabs-fotometis-qwen-3-5-4b-mlx",
+  "author": "twistlabs",
+  "url": "https://huggingface.co/twistlabs/fotometis-qwen-3.5-4b-mlx",
+  "created_at": "2026-08-05T02:19:28.000Z",
+  "updated_at": "2026-08-20T03:33:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "fotometis",
+    "tool-use",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 991474176,
+  "parameters_human": "991.5M",
+  "storage_bytes": 9122886874,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

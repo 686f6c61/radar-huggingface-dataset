@@ -5,7 +5,7 @@
   "author": "asparius",
   "url": "https://huggingface.co/asparius/llama-8B-lorasdf__42",
   "created_at": "2026-08-19T18:14:46.000Z",
-  "updated_at": "2026-08-19T19:43:46.000Z",
+  "updated_at": "2026-08-20T09:15:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 185049770,
-  "storage_human": "185 MB",
+  "storage_bytes": 688554955,
+  "storage_human": "689 MB",
   "base_model": "meta-llama/Meta-Llama-3-8B",
   "formats": [
     "safetensors"

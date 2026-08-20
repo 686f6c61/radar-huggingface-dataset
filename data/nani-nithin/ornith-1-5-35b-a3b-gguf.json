@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "NANI-Nithin/Ornith-1.5-35B-A3B-GGUF",
+  "slug": "nani-nithin-ornith-1-5-35b-a3b-gguf",
+  "author": "NANI-Nithin",
+  "url": "https://huggingface.co/NANI-Nithin/Ornith-1.5-35B-A3B-GGUF",
+  "created_at": "2026-08-20T08:50:21.000Z",
+  "updated_at": "2026-08-20T11:47:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.5-moe",
+    "moe",
+    "quantized",
+    "text-generation",
+    "inference",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 266085351136,
+  "storage_human": "266.1 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

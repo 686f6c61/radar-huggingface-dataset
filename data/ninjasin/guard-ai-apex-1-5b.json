@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Ninjasin/guard-ai-apex-1.5b",
+  "slug": "ninjasin-guard-ai-apex-1-5b",
+  "author": "Ninjasin",
+  "url": "https://huggingface.co/Ninjasin/guard-ai-apex-1.5b",
+  "created_at": "2026-08-20T07:59:11.000Z",
+  "updated_at": "2026-08-20T08:00:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889226,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

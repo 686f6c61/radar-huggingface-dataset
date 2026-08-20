@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zhifeixie/VoiceMem_default",
+  "slug": "zhifeixie-voicemem_default",
+  "author": "zhifeixie",
+  "url": "https://huggingface.co/zhifeixie/VoiceMem_default",
+  "created_at": "2026-08-20T07:37:36.000Z",
+  "updated_at": "2026-08-20T07:37:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zhifeixie (XIE ZHIFEI) - Hugging Face",
+      "url": "https://huggingface.co/zhifeixie",
+      "snippet": "User profile of XIE ZHIFEI on Hugging Face"
+    },
+    {
+      "title": "GitHub - DearBobby9/voicemem: VoiceMem — Minimal, always-on macOS voice ...",
+      "url": "https://github.com/DearBobby9/voicemem",
+      "snippet": "VoiceMem — Minimal, always-on macOS voice memory collector. Dayflow-style timeline + CLI for AI agents. - DearBobby9/voicemem"
+    },
+    {
+      "title": "zhifeixie (XIE ZHIFEI) - Hugging Face",
+      "url": "https://huggingface.co/zhifeixie/papers",
+      "snippet": "zhifeixie Follow Mindweller&#x27;s profile pictureYougen&#x27;s profile pictureanemdat&#x27;s profile picture 16 followers · 1 following"
+    },
+    {
+      "title": "VoiceMe: Personalized voice generation in TTS - arXiv.org",
+      "url": "https://arxiv.org/pdf/2203.15379",
+      "snippet": "Abstract Novel text-to-speech systems can generate entirely new voices that were not seen during training. However, it remains a difficult task to efficiently create personalized voices from a high-dimensional speaker space. In this work, we use speaker embeddings from a state-of-the-art speaker verification model (SpeakerNet) trained on thousands of speakers to condition a TTS model. We ..."
+    },
+    {
+      "title": "zhifeixie - modelindex.dev",
+      "url": "https://modelindex.dev/orgs/zhifeixie",
+      "snippet": "Models published by zhifeixie, indexed with per-file cryptographic hashes on modelindex.dev. Browse each model and verify your downloads."
+    }
+  ]
+}

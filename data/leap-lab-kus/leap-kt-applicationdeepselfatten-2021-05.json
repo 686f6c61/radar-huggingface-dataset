@@ -5,7 +5,7 @@
   "author": "LEAP-LAB-KUS",
   "url": "https://huggingface.co/LEAP-LAB-KUS/leap-kt-applicationdeepselfatten-2021-05",
   "created_at": "2026-08-18T12:40:41.000Z",
-  "updated_at": "2026-08-18T13:08:18.000Z",
+  "updated_at": "2026-08-19T15:32:42.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,7 +19,9 @@
     "educational-data-mining",
     "applicationdeepselfatten",
     "dataset:assist2009",
+    "dataset:assist2012",
     "dataset:assist2017",
+    "dataset:bridge2algebra2006",
     "dataset:dbe_kt22",
     "license:mit",
     "region:us"
@@ -29,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 160693420,
-  "storage_human": "161 MB",
+  "storage_bytes": 863741860,
+  "storage_human": "864 MB",
   "base_model": null,
   "formats": [
     "safetensors"

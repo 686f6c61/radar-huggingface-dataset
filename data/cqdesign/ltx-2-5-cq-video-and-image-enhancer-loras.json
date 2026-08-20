@@ -5,7 +5,7 @@
   "author": "CQdesign",
   "url": "https://huggingface.co/CQdesign/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs",
   "created_at": "2026-08-15T07:05:28.000Z",
-  "updated_at": "2026-08-19T04:47:27.000Z",
+  "updated_at": "2026-08-20T07:37:40.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,9 +14,9 @@
   "tags": [
     "region:us"
   ],
-  "likes": 33,
+  "likes": 42,
   "downloads_30d": 0,
-  "trending_score": 32,
+  "trending_score": 41,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 2678977458,

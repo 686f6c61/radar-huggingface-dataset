@@ -5,7 +5,7 @@
   "author": "models-1",
   "url": "https://huggingface.co/models-1/v1-7b-rot13-seqqa-avg6delta-people",
   "created_at": "2026-08-20T00:57:30.000Z",
-  "updated_at": "2026-08-20T00:58:34.000Z",
+  "updated_at": "2026-08-20T09:43:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,9 +13,6 @@
   "languages": [],
   "tags": [
     "safetensors",
-    "task-vector",
-    "rot13",
-    "composition",
     "region:us"
   ],
   "likes": 0,

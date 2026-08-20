@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "taonjfu/kokoro_coreml_bucket",
+  "slug": "taonjfu-kokoro_coreml_bucket",
+  "author": "taonjfu",
+  "url": "https://huggingface.co/taonjfu/kokoro_coreml_bucket",
+  "created_at": "2026-08-20T07:46:51.000Z",
+  "updated_at": "2026-08-20T08:05:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 209848904,
+  "storage_human": "210 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hexgrad/Kokoro-82M · Hugging Face",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "smdesai/kokoro-82m-coreml · Hugging Face",
+      "url": "https://huggingface.co/smdesai/kokoro-82m-coreml",
+      "snippet": "Kokoro-82M PyTorch (MPS) I wasn&#x27;t able to run the MPS model for longer durations, even with PYTORCH_ENABLE_MPS_FALLBACK=1 enabled, it kept crashing for the longer strings."
+    },
+    {
+      "title": "GitHub - hexgrad/kokoro: https://hf.co/hexgrad/Kokoro-82M",
+      "url": "https://github.com/hexgrad/kokoro",
+      "snippet": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient."
+    },
+    {
+      "title": "GitHub - mattmireles/kokoro-coreml: PyTorch → CoreML conversion ...",
+      "url": "https://github.com/mattmireles/kokoro-coreml",
+      "snippet": "Kokoro 82M TTS - Surgically Optimized for Apple Silicon 15 seconds of speech in 691ms on an M1 Mac Mini. 2.8x faster than Metal. Using Apple Neural Engine. Kokoro-82M running natively on the Apple Neural Engine via CoreML. Five compiled models, one Swift pipeline, zero Python at inference time. Every Mac with Apple Silicon is a TTS server."
+    },
+    {
+      "title": "Kokoro TTS | FluidInference/mobius | DeepWiki",
+      "url": "https://deepwiki.com/FluidInference/mobius/4.2-kokoro-tts",
+      "snippet": "Kokoro-82M is a StyleTTS2-based neural text-to-speech model converted to CoreML for on-device inference on iOS 17+ and macOS 14+. It generates natural-sounding multi-speaker speech at 24kHz with 8-12x real-time performance, optimized for Apple Neural Engine (ANE) and GPU execution."
+    }
+  ]
+}

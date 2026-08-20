@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "hoailebads/Qwen3-Embedding-0.6B-Zalo-Legal-Retrieval-LoRA",
+  "slug": "hoailebads-qwen3-embedding-0-6b-zalo-legal-retrieval-lora",
+  "author": "hoailebads",
+  "url": "https://huggingface.co/hoailebads/Qwen3-Embedding-0.6B-Zalo-Legal-Retrieval-LoRA",
+  "created_at": "2026-08-20T04:57:27.000Z",
+  "updated_at": "2026-08-20T05:01:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dual-encoder",
+    "bi-encoder",
+    "retrieval",
+    "sentence-similarity",
+    "vietnamese",
+    "legal",
+    "zalo-legal-text-retrieval",
+    "feature-extraction",
+    "vi",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:adapter:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80839632,
+  "storage_human": "81 MB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

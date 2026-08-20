@@ -5,7 +5,7 @@
   "author": "professorf",
   "url": "https://huggingface.co/professorf/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-gguf",
   "created_at": "2026-08-18T09:41:07.000Z",
-  "updated_at": "2026-08-18T10:07:21.000Z",
+  "updated_at": "2026-08-18T20:10:58.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,12 +39,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 292,
   "trending_score": 0,
   "parameters": 32913266240,
   "parameters_human": "32.91B",
-  "storage_bytes": 126728585664,
-  "storage_human": "126.7 GB",
+  "storage_bytes": 227585413440,
+  "storage_human": "227.6 GB",
   "base_model": null,
   "formats": [
     "gguf"

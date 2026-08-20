@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "leapshared/neudive_test_120epi_0819_real_20260819_162506_GR00T17",
+  "slug": "leapshared-neudive_test_120epi_0819_real_20260819_162506_gr00t17",
+  "author": "leapshared",
+  "url": "https://huggingface.co/leapshared/neudive_test_120epi_0819_real_20260819_162506_GR00T17",
+  "created_at": "2026-08-20T04:14:50.000Z",
+  "updated_at": "2026-08-20T04:16:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot_frozen_bf16",
+    "dataset:leapshared/neudive_test_120epi_0819_real_20260819_162506",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 9529226248,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

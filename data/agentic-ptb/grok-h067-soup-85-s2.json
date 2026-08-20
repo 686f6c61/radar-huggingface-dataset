@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/grok.h067.soup-85-s2",
+  "slug": "agentic-ptb-grok-h067-soup-85-s2",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/grok.h067.soup-85-s2",
+  "created_at": "2026-08-20T03:28:44.000Z",
+  "updated_at": "2026-08-20T03:31:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710333,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Moonshot&#x27;s Kimi K3 AI model disrupts global markets, hits AI stock ...",
+      "url": "https://cryptobriefing.com/moonshots-kimi-k3-ai-model-disrupts-global-markets-hits-ai-stock-valuations/",
+      "snippet": "Moonshot&#x27;s Kimi K3 AI model disrupts global markets, causing Alphabet&#x27;s odds of being the second-largest company by market cap on July 31 to drop to 9.5% YES."
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    }
+  ]
+}

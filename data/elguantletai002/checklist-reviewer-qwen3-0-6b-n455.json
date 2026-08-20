@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "elguantletai002/checklist-reviewer-qwen3-0.6b-n455",
+  "slug": "elguantletai002-checklist-reviewer-qwen3-0-6b-n455",
+  "author": "elguantletai002",
+  "url": "https://huggingface.co/elguantletai002/checklist-reviewer-qwen3-0.6b-n455",
+  "created_at": "2026-08-20T06:43:08.000Z",
+  "updated_at": "2026-08-20T06:43:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "code-review",
+    "structured-output",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657398718,
+  "storage_human": "657 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

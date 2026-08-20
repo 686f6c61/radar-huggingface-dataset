@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 32,
+  "downloads_30d": 42,
   "trending_score": 0,
   "parameters": 908433824,
   "parameters_human": "908.4M",
-  "storage_bytes": 349092066274,
-  "storage_human": "349.1 GB",
+  "storage_bytes": 27241321858,
+  "storage_human": "27.2 GB",
   "base_model": "terminusresearch/pixart-900m-1024-ft-v0.6",
   "formats": [
     "diffusers",

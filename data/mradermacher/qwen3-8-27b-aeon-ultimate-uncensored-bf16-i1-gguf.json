@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16-i1-GGUF",
   "created_at": "2026-08-18T08:57:13.000Z",
-  "updated_at": "2026-08-18T09:19:36.000Z",
+  "updated_at": "2026-08-18T17:35:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -54,13 +54,13 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 1,
-  "downloads_30d": 0,
+  "likes": 2,
+  "downloads_30d": 2500,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471869536,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553888320,
+  "storage_human": "218.6 GB",
   "base_model": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
   "formats": [
     "gguf"

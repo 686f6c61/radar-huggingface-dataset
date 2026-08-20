@@ -22,9 +22,9 @@
     "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
     "region:us"
   ],
-  "likes": 21,
-  "downloads_30d": 0,
-  "trending_score": 19,
+  "likes": 25,
+  "downloads_30d": 9125,
+  "trending_score": 23,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 0,

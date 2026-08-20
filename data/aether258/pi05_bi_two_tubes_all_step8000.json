@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Aether258/pi05_bi_two_tubes_all_step8000",
+  "slug": "aether258-pi05_bi_two_tubes_all_step8000",
+  "author": "Aether258",
+  "url": "https://huggingface.co/Aether258/pi05_bi_two_tubes_all_step8000",
+  "created_at": "2026-08-20T07:17:33.000Z",
+  "updated_at": "2026-08-20T07:27:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openpi",
+    "pi05",
+    "robotics",
+    "manipulation",
+    "bimanual",
+    "tactile",
+    "lora",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9577176237,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aether258 (Aether_Zhang) - Hugging Face",
+      "url": "https://huggingface.co/Aether258",
+      "snippet": "Sort: Recently updated Aether258/pi05_bi_vitac_clean_smash_24 Robotics •Updated 30 days ago"
+    },
+    {
+      "title": "Aether258 (Aether_Zhang) - Hugging Face",
+      "url": "https://huggingface.co/Aether258/activity/all",
+      "snippet": "Aether258/pi05_bi_vitac_byw_smash_13 Robotics •Updated May 25 published a modelabout 1 month ago"
+    },
+    {
+      "title": "aether - YouTube",
+      "url": "https://www.youtube.com/@aether258",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

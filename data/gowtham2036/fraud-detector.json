@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Gowtham2036/fraud-detector",
+  "slug": "gowtham2036-fraud-detector",
+  "author": "Gowtham2036",
+  "url": "https://huggingface.co/Gowtham2036/fraud-detector",
+  "created_at": "2026-08-20T03:44:28.000Z",
+  "updated_at": "2026-08-20T03:45:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

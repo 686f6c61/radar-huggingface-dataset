@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "S-Zenith/mamba3-research",
+  "slug": "s-zenith-mamba3-research",
+  "author": "S-Zenith",
+  "url": "https://huggingface.co/S-Zenith/mamba3-research",
+  "created_at": "2026-08-20T03:26:20.000Z",
+  "updated_at": "2026-08-20T03:48:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "mamba3",
+    "quantization",
+    "checkpoints",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2497271971,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - S-Zenith/mamba3-research",
+      "url": "https://github.com/S-Zenith/mamba3-research",
+      "snippet": "This repository contains small, runnable Mamba/Mamba2/Mamba3 research demos and PyTorch reproductions. The goal is not to reproduce full paper-scale training, but to make the algorithm flow, profiling output, and Mamba3 SISO/MIMO details easy to inspect locally."
+    },
+    {
+      "title": "[2603.15569] Mamba-3: Improved Sequence Modeling using State Space ...",
+      "url": "https://arxiv.org/abs/2603.15569",
+      "snippet": "Together with architectural refinements, our Mamba-3 model achieves significant gains across retrieval, state-tracking, and downstream language modeling tasks. At the 1.5B scale, Mamba-3 improves average downstream accuracy by 0.6 percentage points compared to the next best model (Gated DeltaNet), with Mamba-3&#x27;s MIMO variant further improving ..."
+    },
+    {
+      "title": "Mamba-3: Improved Sequence Modeling using State Space Principles",
+      "url": "https://arxiv.org/html/2603.15569v1",
+      "snippet": "Across state-size experiments, Mamba-3 achieves comparable perplexity to Mamba-2 despite using half of its predecessor&#x27;s state size. Our evaluations demonstrate Mamba-3&#x27;s ability to advance the performance-efficiency Pareto frontier."
+    },
+    {
+      "title": "GitHub - rishikksh20/mamba3-pytorch: Readable implementation of Mamba 3 ...",
+      "url": "https://github.com/rishikksh20/mamba3-pytorch/",
+      "snippet": "A clean, readable, from-scratch PyTorch implementation of Mamba-3 — a selective state space model that addresses the three core limitations of Mamba-2. No Triton/CUDA kernels or TileLang optimizations; designed for understanding the algorithm."
+    },
+    {
+      "title": "Mamba-3 - together.ai",
+      "url": "https://www.together.ai/blog/mamba-3",
+      "snippet": "Mamba-3 is a new state space model (SSM) designed with inference efficiency as the primary goal — a departure from Mamba-2, which optimized for training speed. The key upgrades are a more expressive recurrence formula, complex-valued state tracking, and a MIMO (multi-input, multi-output) variant that boosts accuracy without slowing down decoding. The result: Mamba-3 SISO beats Mamba-2, Gated ..."
+    }
+  ]
+}

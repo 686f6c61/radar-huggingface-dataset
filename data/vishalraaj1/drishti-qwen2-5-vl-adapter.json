@@ -5,7 +5,7 @@
   "author": "vishalraaj1",
   "url": "https://huggingface.co/vishalraaj1/drishti-qwen2.5-vl-adapter",
   "created_at": "2026-08-19T20:41:11.000Z",
-  "updated_at": "2026-08-19T20:41:29.000Z",
+  "updated_at": "2026-08-19T20:54:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

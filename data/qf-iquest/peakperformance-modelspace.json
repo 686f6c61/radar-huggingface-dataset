@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qf-iquest/PeakPerformance-ModelSpace",
+  "slug": "qf-iquest-peakperformance-modelspace",
+  "author": "qf-iquest",
+  "url": "https://huggingface.co/qf-iquest/PeakPerformance-ModelSpace",
+  "created_at": "2026-08-20T08:15:07.000Z",
+  "updated_at": "2026-08-20T08:15:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qf-iquest/PeakPerfWeights · Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/PeakPerfWeights",
+      "snippet": "The model has demonstrated outstanding performance across various benchmark evaluations, including mathematics, programming, and general logic. Its overall performance is now approaching that of other leading models. Compared to the previous version, the upgraded model shows significant improvements in handling complex reasoning tasks."
+    },
+    {
+      "title": "qf-iquest (qingfeng) - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 6 days ago ... published a model 6 days ago"
+    },
+    {
+      "title": "AI Model Profiles and Rankings — AI IQ",
+      "url": "https://www.aiiq.org/models/",
+      "snippet": "Browse AI model profiles tracked by AI IQ, including estimated IQ, EQ, effective cost, benchmark results, and ranking links."
+    },
+    {
+      "title": "AI IQ | The AI Intelligence Leaderboard & Benchmark Charts",
+      "url": "https://www.aiiq.org/",
+      "snippet": "AI IQ ranks leading AI models by estimated IQ, EQ, speed, and effective cost using source-backed benchmark data and interactive leaderboard charts."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Lohith-19/language_translation",
+  "slug": "lohith-19-language_translation",
+  "author": "Lohith-19",
+  "url": "https://huggingface.co/Lohith-19/language_translation",
+  "created_at": "2026-08-20T05:02:20.000Z",
+  "updated_at": "2026-08-20T05:07:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "marian",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74669178,
+  "parameters_human": "74.7M",
+  "storage_bytes": 300286560,
+  "storage_human": "300 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

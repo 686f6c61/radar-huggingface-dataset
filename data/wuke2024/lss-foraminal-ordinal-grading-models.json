@@ -5,13 +5,16 @@
   "author": "wuke2024",
   "url": "https://huggingface.co/wuke2024/lss-foraminal-ordinal-grading-models",
   "created_at": "2026-07-29T07:01:35.000Z",
-  "updated_at": "2026-08-18T09:26:37.000Z",
+  "updated_at": "2026-08-18T14:33:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "medical-imaging",
+    "ordinal-classification",
+    "lumbar-foraminal-stenosis",
     "doi:10.57967/hf/9761",
     "region:us"
   ],

@@ -5,7 +5,7 @@
   "author": "jcoholich",
   "url": "https://huggingface.co/jcoholich/your_repo_id",
   "created_at": "2026-07-28T20:35:41.000Z",
-  "updated_at": "2026-08-16T23:51:41.000Z",
+  "updated_at": "2026-08-19T06:18:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,19 +14,19 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "pi05",
     "robotics",
+    "pi05",
     "dataset:plug5_offline_rl_dataset_annotated",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2133,
+  "downloads_30d": 2140,
   "trending_score": 0,
   "parameters": 413283121,
   "parameters_human": "413.3M",
-  "storage_bytes": 867043979564,
-  "storage_human": "867.0 GB",
+  "storage_bytes": 869534752784,
+  "storage_human": "869.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "hsilvosa",
   "url": "https://huggingface.co/hsilvosa/CIMA-Spanish-Medical-Llama-LoRA",
   "created_at": "2026-08-19T18:54:02.000Z",
-  "updated_at": "2026-08-19T18:54:19.000Z",
+  "updated_at": "2026-08-19T19:23:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,6 +14,7 @@
     "es"
   ],
   "tags": [
+    "safetensors",
     "text-generation",
     "causal-lm",
     "lora",
@@ -33,10 +34,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 44070248,
+  "storage_human": "44 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

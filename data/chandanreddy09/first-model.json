@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "chandanreddy09/first-model",
+  "slug": "chandanreddy09-first-model",
+  "author": "chandanreddy09",
+  "url": "https://huggingface.co/chandanreddy09/first-model",
+  "created_at": "2026-08-20T04:15:48.000Z",
+  "updated_at": "2026-08-20T04:17:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

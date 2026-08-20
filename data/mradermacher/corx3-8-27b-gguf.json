@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CorX3.8-27B-GGUF",
+  "slug": "mradermacher-corx3-8-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CorX3.8-27B-GGUF",
+  "created_at": "2026-08-20T04:39:43.000Z",
+  "updated_at": "2026-08-20T08:50:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "en",
+    "base_model:Sigmandndnns/CorX3.8-27B",
+    "base_model:quantized:Sigmandndnns/CorX3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 186348483936,
+  "storage_human": "186.3 GB",
+  "base_model": "Sigmandndnns/CorX3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

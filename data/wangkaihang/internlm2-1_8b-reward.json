@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "wangkaihang/internlm2-1_8b-reward",
+  "slug": "wangkaihang-internlm2-1_8b-reward",
+  "author": "wangkaihang",
+  "url": "https://huggingface.co/wangkaihang/internlm2-1_8b-reward",
+  "created_at": "2026-08-20T08:01:13.000Z",
+  "updated_at": "2026-08-20T08:01:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "internlm2",
+    "reward model",
+    "text-classification",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2403.17297",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1699581952,
+  "parameters_human": "1.70B",
+  "storage_bytes": 3400660642,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

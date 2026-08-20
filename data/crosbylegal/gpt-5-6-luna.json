@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "crosbylegal/gpt-5.6-luna",
+  "slug": "crosbylegal-gpt-5-6-luna",
+  "author": "crosbylegal",
+  "url": "https://huggingface.co/crosbylegal/gpt-5.6-luna",
+  "created_at": "2026-08-20T04:51:07.000Z",
+  "updated_at": "2026-08-20T04:51:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

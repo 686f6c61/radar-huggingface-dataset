@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "mulemp/BunnyLover369",
+  "slug": "mulemp-bunnylover369",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/BunnyLover369",
+  "created_at": "2026-04-01T06:20:47.000Z",
+  "updated_at": "2026-08-20T04:55:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2114334908,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

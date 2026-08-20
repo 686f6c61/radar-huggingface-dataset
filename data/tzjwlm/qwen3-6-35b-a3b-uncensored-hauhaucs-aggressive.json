@@ -5,7 +5,7 @@
   "author": "tzjwlm",
   "url": "https://huggingface.co/tzjwlm/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
   "created_at": "2026-08-18T19:26:36.000Z",
-  "updated_at": "2026-08-18T19:30:25.000Z",
+  "updated_at": "2026-08-19T11:15:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 184,
+  "downloads_30d": 280,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 37506560384,
-  "storage_human": "37.5 GB",
+  "storage_bytes": 49165795840,
+  "storage_human": "49.2 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"

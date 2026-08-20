@@ -5,7 +5,7 @@
   "author": "rafmacalaba",
   "url": "https://huggingface.co/rafmacalaba/lfm2.5-350M-datause",
   "created_at": "2026-08-19T20:20:21.000Z",
-  "updated_at": "2026-08-19T20:20:39.000Z",
+  "updated_at": "2026-08-19T22:47:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

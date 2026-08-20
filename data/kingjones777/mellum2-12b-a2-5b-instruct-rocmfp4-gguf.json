@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/Mellum2-12B-A2.5B-Instruct-ROCmFP4-GGUF",
   "created_at": "2026-08-16T12:20:36.000Z",
-  "updated_at": "2026-08-16T13:10:34.000Z",
+  "updated_at": "2026-08-16T22:42:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,12 +37,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 190,
   "trending_score": 0,
   "parameters": 12149923072,
   "parameters_human": "12.15B",
-  "storage_bytes": 6969373344,
-  "storage_human": "7.0 GB",
+  "storage_bytes": 32284350432,
+  "storage_human": "32.3 GB",
   "base_model": "JetBrains/Mellum2-12B-A2.5B-Instruct",
   "formats": [
     "gguf"

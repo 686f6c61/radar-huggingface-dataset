@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dogeum/doosan_train",
+  "slug": "dogeum-doosan_train",
+  "author": "dogeum",
+  "url": "https://huggingface.co/dogeum/doosan_train",
+  "created_at": "2026-08-20T08:53:10.000Z",
+  "updated_at": "2026-08-20T08:53:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:dogeum/doosan_dataset",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714832,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

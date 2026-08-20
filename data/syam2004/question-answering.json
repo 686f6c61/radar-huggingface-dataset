@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "syam2004/question-answering",
+  "slug": "syam2004-question-answering",
+  "author": "syam2004",
+  "url": "https://huggingface.co/syam2004/question-answering",
+  "created_at": "2026-08-20T04:51:37.000Z",
+  "updated_at": "2026-08-20T04:51:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "question-answering",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66364418,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265470032,
+  "storage_human": "265 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

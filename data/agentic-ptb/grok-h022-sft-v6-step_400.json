@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/grok.h022.sft-v6.step_400",
+  "slug": "agentic-ptb-grok-h022-sft-v6-step_400",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/grok.h022.sft-v6.step_400",
+  "created_at": "2026-08-20T03:22:51.000Z",
+  "updated_at": "2026-08-20T03:24:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "grok",
+  "languages": [],
+  "tags": [
+    "grok",
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models | SpaceXAI Docs",
+      "url": "https://docs.x.ai/developers/models",
+      "snippet": "Which model should I choose? Your choice depends on your use case. We have dedicated models and APIs for audio, image, and video capabilities. For everything else, including code, use Grok 4.6. It is the most intelligent and fastest model we&#x27;ve built."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 397 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 117 Estimated models among 397 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "GitHub - obra/superpowers: An agentic skills framework & software ...",
+      "url": "https://github.com/obra/superpowers",
+      "snippet": "Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them."
+    },
+    {
+      "title": "Best Open-Source LLM Models in 2026: Coding, Local, Agentic AI ...",
+      "url": "https://huggingface.co/blog/daya-shankar/open-source-llms",
+      "snippet": "A Blog post by Daya Shankar on Hugging Face"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

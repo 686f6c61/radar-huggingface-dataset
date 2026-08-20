@@ -5,7 +5,7 @@
   "author": "BrainForge",
   "url": "https://huggingface.co/BrainForge/Ministral-3-8B-Base-2512",
   "created_at": "2026-08-19T21:22:38.000Z",
-  "updated_at": "2026-08-19T21:22:38.000Z",
+  "updated_at": "2026-08-19T21:30:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -44,12 +44,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 8918026240,
   "parameters_human": "8.92B",
-  "storage_bytes": 35739902967,
-  "storage_human": "35.7 GB",
+  "storage_bytes": 35756981060,
+  "storage_human": "35.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

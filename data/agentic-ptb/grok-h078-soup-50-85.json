@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/grok.h078.soup-50-85",
+  "slug": "agentic-ptb-grok-h078-soup-50-85",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/grok.h078.soup-50-85",
+  "created_at": "2026-08-20T03:27:14.000Z",
+  "updated_at": "2026-08-20T03:28:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "grok",
+  "languages": [],
+  "tags": [
+    "grok",
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710333,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "SpaceXAI — Creators of Grok, the AI Chatbot",
+      "url": "https://x.ai/",
+      "snippet": "SpaceXAI builds Grok, an AI chatbot with voice chat, image and video generation, real-time search, and advanced reasoning. Try Grok at grok.com."
+    },
+    {
+      "title": "Introducing Grok 4.5 | SpaceXAI",
+      "url": "https://x.ai/news/grok-4-5",
+      "snippet": "Today, we&#x27;re launching Grok 4.5, SpaceXAI&#x27;s smartest model built to excel at coding, agentic tasks, and knowledge work. It&#x27;s our strongest model ever and was trained alongside Cursor. Real-world engineering excellence Grok 4.5 was trained on datasets spanning knowledge in coding, science, engineering, and math. With both intelligent and efficient reasoning, Grok 4.5 excels at real engineering ..."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "AI Coding Agent Benchmarks & Leaderboard | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/agents/coding-agents",
+      "snippet": "We measure real-world performance of coding agents on software engineering tasks, including cost, token usage, and execution time. We compare how performance changes across agents, models, and execution settings."
+    }
+  ]
+}

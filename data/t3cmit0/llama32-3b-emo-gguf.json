@@ -5,7 +5,7 @@
   "author": "T3cmit0",
   "url": "https://huggingface.co/T3cmit0/llama32-3b-emo-gguf",
   "created_at": "2026-08-19T22:59:40.000Z",
-  "updated_at": "2026-08-19T23:01:55.000Z",
+  "updated_at": "2026-08-19T23:36:51.000Z",
   "license": "llama3.2",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": 3212749888,
   "parameters_human": "3.21B",

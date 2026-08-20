@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Hookem22/qwen3-4b-subtitle-es",
+  "slug": "hookem22-qwen3-4b-subtitle-es",
+  "author": "Hookem22",
+  "url": "https://huggingface.co/Hookem22/qwen3-4b-subtitle-es",
+  "created_at": "2026-08-20T03:26:23.000Z",
+  "updated_at": "2026-08-20T03:35:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404916,
+  "storage_human": "8.1 GB",
+  "base_model": "unsloth/qwen3-4b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_4b/README.md",
+      "snippet": "The Qwen3-4B is a state-of-the-art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. This is based on the implementation of Qwen3-4B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b_instruct_2507 ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_4b_instruct_2507/README.md",
+      "snippet": "The Qwen3-4B-Instruct-2507 is a state-of-the-art multilingual instruct language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. Unlike the base Qwen3-4B, this variant has only instruct training without thinking mode support. This is based on the implementation of Qwen3-4B-Instruct-2507 found here. This repository contains scripts for ..."
+    }
+  ]
+}

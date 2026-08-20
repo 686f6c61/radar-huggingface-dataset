@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-9B-Kazakh-GGUF",
+  "slug": "mradermacher-qwen3-5-9b-kazakh-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-Kazakh-GGUF",
+  "created_at": "2026-08-20T04:29:35.000Z",
+  "updated_at": "2026-08-20T05:09:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:issai/Qwen3.5-9B-Kazakh",
+    "base_model:quantized:issai/Qwen3.5-9B-Kazakh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9083826688,
+  "parameters_human": "9.08B",
+  "storage_bytes": 84259649920,
+  "storage_human": "84.3 GB",
+  "base_model": "issai/Qwen3.5-9B-Kazakh",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

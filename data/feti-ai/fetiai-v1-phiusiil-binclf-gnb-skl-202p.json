@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "feti-ai/fetiai-v1-phiusiil-binclf-gnb-skl-202p",
+  "slug": "feti-ai-fetiai-v1-phiusiil-binclf-gnb-skl-202p",
+  "author": "feti-ai",
+  "url": "https://huggingface.co/feti-ai/fetiai-v1-phiusiil-binclf-gnb-skl-202p",
+  "created_at": "2026-08-20T07:46:10.000Z",
+  "updated_at": "2026-08-20T07:44:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "phishing-detection",
+    "url-classification",
+    "tabular-classification",
+    "binary-classification",
+    "phiusiil",
+    "naive-bayes",
+    "scikit-learn",
+    "dataset:faizath/phiusiil-if3070-stei-itb-2024-2025-1",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1583,
+  "storage_human": "1583 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Phishing URL Classification",
+      "dataset": "PhiUSIIL Phishing URL Dataset",
+      "metric": "Accuracy",
+      "value": 0.9819094761582565
+    },
+    {
+      "task": "Phishing URL Classification",
+      "dataset": "PhiUSIIL Phishing URL Dataset",
+      "metric": "Phishing precision",
+      "value": 0.8774104683195593
+    },
+    {
+      "task": "Phishing URL Classification",
+      "dataset": "PhiUSIIL Phishing URL Dataset",
+      "metric": "Phishing recall",
+      "value": 0.8880111524163569
+    }
+  ],
+  "sources": []
+}

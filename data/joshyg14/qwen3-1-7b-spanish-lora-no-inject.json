@@ -5,7 +5,7 @@
   "author": "JoshyG14",
   "url": "https://huggingface.co/JoshyG14/qwen3-1.7b-spanish-lora-no-inject",
   "created_at": "2026-08-19T23:38:32.000Z",
-  "updated_at": "2026-08-19T23:38:56.000Z",
+  "updated_at": "2026-08-19T23:44:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

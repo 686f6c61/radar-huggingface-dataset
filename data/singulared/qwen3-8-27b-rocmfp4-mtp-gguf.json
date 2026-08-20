@@ -5,7 +5,7 @@
   "author": "singulared",
   "url": "https://huggingface.co/singulared/Qwen3.8-27B-ROCmFP4-MTP-GGUF",
   "created_at": "2026-08-15T13:29:08.000Z",
-  "updated_at": "2026-08-19T10:41:19.000Z",
+  "updated_at": "2026-08-19T22:23:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1562,
+  "downloads_30d": 1863,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 40978219104,
-  "storage_human": "41.0 GB",
+  "storage_bytes": 56902279904,
+  "storage_human": "56.9 GB",
   "base_model": "Qwen/Qwen3.8-27B, ggml-org/Qwen3.8-27B-GGUF",
   "formats": [
     "gguf"

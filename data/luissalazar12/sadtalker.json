@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "luissalazar12/SadTalker",
+  "slug": "luissalazar12-sadtalker",
+  "author": "luissalazar12",
+  "url": "https://huggingface.co/luissalazar12/SadTalker",
+  "created_at": "2026-08-20T07:31:39.000Z",
+  "updated_at": "2026-08-20T07:31:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3991654503,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SadTalker AI Talking Head Animation From Single Image",
+      "url": "https://sadtalker.ai/",
+      "snippet": "Create realistic talking head videos from a single image and audio with SadTalker. Open-source AI technology for perfect lip-sync and natural expressions."
+    },
+    {
+      "title": "GitHub - kee-moo/km_sadtalker: image ai talker",
+      "url": "https://github.com/kee-moo/km_sadtalker",
+      "snippet": "image ai talker. Contribute to kee-moo/km_sadtalker development by creating an account on GitHub."
+    },
+    {
+      "title": "SadTalker",
+      "url": "https://sadtalker.github.io/?ref=aiartweekly",
+      "snippet": "To learn the realistic motion coefficients, we explicitly model the connections between audio and different types of motion coefficients individually. Precisely, we present ExpNet to learn the accurate facial expression from audio by distilling both coefficients and 3D-rendered faces."
+    },
+    {
+      "title": "SadTalker AI - Create Your Talking Avatar (FREE)",
+      "url": "https://sadtalkerai.com/",
+      "snippet": "3. Is SadTalker AI free to use? Yes, SadTalker AI is an open-source project available for free, allowing users to create animated avatars without any cost."
+    },
+    {
+      "title": "SadTalker: Audio-Driven Talking Head Generation AI Model",
+      "url": "https://exploreai.tools/ai-models/sadtalker-family",
+      "snippet": "Explore SadTalker, an open-source AI model for generating realistic talking head videos from audio and images. Learn about its capabilities, use cases, and…"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-OBLITERATED-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-obliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-i1-GGUF",
+  "created_at": "2026-08-20T07:44:57.000Z",
+  "updated_at": "2026-08-20T08:50:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "qwen3",
+    "qwen3.8",
+    "red-team",
+    "ai-safety-research",
+    "safetensors",
+    "mlx",
+    "en",
+    "base_model:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "base_model:quantized:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553882048,
+  "storage_human": "218.6 GB",
+  "base_model": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-abliteratex-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-abliteratex-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/Qwen3.8-27B-abliteratex-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-ABLITERATED-BF16-i1-GGUF like 0 Transformers GGUF English qwen3.8 qwen 27b bf16 dense vision-language derisked research security-research red-teaming coding tool-calling long-context public-research-preview imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket ..."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-abliterated launches as an uncensored AI model for free",
+      "url": "https://vgtimes.com/tech-and-hardware/164540-huihui-qwen3.8-27b-abliterated-launches-as-an-uncensored-ai-model-for-free.html",
+      "snippet": "The Hugging Face model card describes Huihui-Qwen3.8-27B-abliterated as a crude proof-of-concept for removing refusals from an LLM. In practice, that means the release is meant to demonstrate the method rather than serve as a polished overhaul.Huihui-ai released Huihui-Qwen3.8-27B-abliterated on August 18, 2026."
+    },
+    {
+      "title": "Qwen3.8-27B abliterated AWQ-MTP quantization | Todd Wolven",
+      "url": "https://toddwolven.com/projects/qwen38-awq-quantization",
+      "snippet": "W4A16 AWQ quantization of an abliterated Qwen3.8-27B with the MTP speculative-decoding module preserved - method, benchmarks on 2x RTX 3090, and four reproduction traps."
+    },
+    {
+      "title": "IQ4 and IQ3 quants of Qwen3.8 Aug-18-2026 · GitHub",
+      "url": "https://gist.github.com/Vmarcelo49/98b382ec8f3a34e44035ce365cba46f4",
+      "snippet": "IQ4 and IQ3 quants of Qwen3.8 Aug-18-2026. GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

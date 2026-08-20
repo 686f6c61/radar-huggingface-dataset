@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "edgar1019/aigent-stage2-burnout-multilabel-v1",
+  "slug": "edgar1019-aigent-stage2-burnout-multilabel-v1",
+  "author": "edgar1019",
+  "url": "https://huggingface.co/edgar1019/aigent-stage2-burnout-multilabel-v1",
+  "created_at": "2026-08-20T04:32:31.000Z",
+  "updated_at": "2026-08-20T04:33:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "multilabel-classification",
+    "korean",
+    "non-diagnostic",
+    "text-classification",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 442515048,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

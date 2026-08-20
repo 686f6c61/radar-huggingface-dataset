@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/grok.h052.rl-r2e4.step_70",
+  "slug": "agentic-ptb-grok-h052-rl-r2e4-step_70",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/grok.h052.rl-r2e4.step_70",
+  "created_at": "2026-08-20T03:13:26.000Z",
+  "updated_at": "2026-08-20T03:14:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "grok",
+  "languages": [],
+  "tags": [
+    "grok",
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

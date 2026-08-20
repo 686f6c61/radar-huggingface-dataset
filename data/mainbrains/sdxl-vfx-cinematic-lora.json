@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mainbrains/sdxl-vfx-cinematic-lora",
+  "slug": "mainbrains-sdxl-vfx-cinematic-lora",
+  "author": "mainbrains",
+  "url": "https://huggingface.co/mainbrains/sdxl-vfx-cinematic-lora",
+  "created_at": "2026-08-20T07:08:07.000Z",
+  "updated_at": "2026-08-20T07:09:05.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "stable-diffusion",
+    "sdxl",
+    "lora",
+    "text-to-image",
+    "vfx",
+    "cinematic",
+    "art",
+    "en",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome SDXL LoRAs - a multimodalart Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/multimodalart/awesome-sdxl-loras",
+      "snippet": "A curated set of amazing Stable Diffusion XL LoRAs (they power the LoRA the Explorer Space)"
+    },
+    {
+      "title": "Zavy&#x27;s Cinematic Stills - SDXL - v1.0 | Stable Diffusion XL LoRA - Civitai",
+      "url": "https://civitai.com/models/357530/zavys-cinematic-stills-sdxl",
+      "snippet": "This LoRA mimics the essence of a cinematic still. It typically produces a shallow depth of field, particularly when the subject, such as a person, is well-defined in the image. It furthermore offers lower contrast compared to SDXL finetunes (which often nearly burn their images), a distinct color range for shadows, and introduces a subtle haze."
+    },
+    {
+      "title": "cinematic AI Models | Civitai",
+      "url": "https://civitai.com/tag/cinematic",
+      "snippet": "cinematic Browse 1,336 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with cinematic."
+    },
+    {
+      "title": "jbilcke-hf/sdxl-cinematic-1 · Hugging Face",
+      "url": "https://huggingface.co/jbilcke-hf/sdxl-cinematic-1",
+      "snippet": "LoRA DreamBooth - jbilcke-hf/sdxl-cinematic-1 These are LoRA adaption weights for stabilityai/stable-diffusion-xl-base-1. trained on @fffiloni&#x27;s SD-XL trainer. The ..."
+    },
+    {
+      "title": "Cinematic Portrait SDXL - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/541645?modelVersionId=1000244",
+      "snippet": "Download Cinematic Portrait SDXL - LORA for SDXL 1.0 by Khr0n0s. Free AI model download from CivArchive."
+    }
+  ]
+}

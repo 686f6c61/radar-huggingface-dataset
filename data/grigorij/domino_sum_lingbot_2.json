@@ -5,7 +5,7 @@
   "author": "Grigorij",
   "url": "https://huggingface.co/Grigorij/Domino_sum_lingbot_2",
   "created_at": "2026-08-18T10:11:59.000Z",
-  "updated_at": "2026-08-18T10:12:06.000Z",
+  "updated_at": "2026-08-19T06:32:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 47225704,
-  "storage_human": "47 MB",
+  "storage_bytes": 472231468,
+  "storage_human": "472 MB",
   "base_model": null,
   "formats": [
     "safetensors"

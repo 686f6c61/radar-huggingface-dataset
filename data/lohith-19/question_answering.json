@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Lohith-19/question_answering",
+  "slug": "lohith-19-question_answering",
+  "author": "Lohith-19",
+  "url": "https://huggingface.co/Lohith-19/question_answering",
+  "created_at": "2026-08-20T04:48:25.000Z",
+  "updated_at": "2026-08-20T04:58:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66364418,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265470032,
+  "storage_human": "265 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

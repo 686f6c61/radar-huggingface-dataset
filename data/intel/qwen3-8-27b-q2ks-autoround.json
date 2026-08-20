@@ -5,7 +5,7 @@
   "author": "Intel",
   "url": "https://huggingface.co/Intel/Qwen3.8-27B-q2ks-AutoRound",
   "created_at": "2026-08-20T01:13:05.000Z",
-  "updated_at": "2026-08-20T01:18:26.000Z",
+  "updated_at": "2026-08-20T02:12:31.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -22,7 +22,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

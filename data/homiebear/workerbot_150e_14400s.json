@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/WorkerBot_150e_14400s",
+  "slug": "homiebear-workerbot_150e_14400s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/WorkerBot_150e_14400s",
+  "created_at": "2026-08-20T07:17:47.000Z",
+  "updated_at": "2026-08-20T07:21:10.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 341967114,
+  "storage_human": "342 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Worker Bot (Budget Cuts 1 & 2) (RVMPE, TITAN, 300 epochs) AI Voice Model",
+      "url": "https://voice-models.com/model/1vxsqq98KCE",
+      "snippet": "Worker Bot (Budget Cuts 1 & 2) (RVMPE, TITAN, 300 epochs) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=trending&search=HOMIE",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "The Prototype (Poppy Playtime, Rmvpe) 300 Epochs AI Voice Model",
+      "url": "https://voice-models.com/model/1KSvTjdkjA1",
+      "snippet": "The Prototype (Poppy Playtime, Rmvpe) 300 Epochs AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "workerbot/README.md at main · AlphaBitsCode/workerbot · GitHub",
+      "url": "https://github.com/AlphaBitsCode/WorkerBot/blob/main/README.md",
+      "snippet": "Alpha Bits WorkerBot is an internal project started around March 2023 by our team to explore the potential of AI in business applications."
+    }
+  ]
+}

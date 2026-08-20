@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "syam2004/language-translation",
+  "slug": "syam2004-language-translation",
+  "author": "syam2004",
+  "url": "https://huggingface.co/syam2004/language-translation",
+  "created_at": "2026-08-20T04:41:53.000Z",
+  "updated_at": "2026-08-20T04:47:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "marian",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74669178,
+  "parameters_human": "74.7M",
+  "storage_bytes": 300286560,
+  "storage_human": "300 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

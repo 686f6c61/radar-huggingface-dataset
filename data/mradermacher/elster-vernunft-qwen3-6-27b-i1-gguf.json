@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Elster-Vernunft-Qwen3.6-27B-i1-GGUF",
+  "slug": "mradermacher-elster-vernunft-qwen3-6-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Elster-Vernunft-Qwen3.6-27B-i1-GGUF",
+  "created_at": "2026-08-20T07:34:53.000Z",
+  "updated_at": "2026-08-20T10:28:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reasoning",
+    "chain-of-thought",
+    "qwen3.6",
+    "merge",
+    "lora",
+    "en",
+    "dataset:schneewolflabs/Vernunft-SFT",
+    "base_model:DragonBophades/Elster-Vernunft-Qwen3.6-27B",
+    "base_model:adapter:DragonBophades/Elster-Vernunft-Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 300328848224,
+  "storage_human": "300.3 GB",
+  "base_model": "DragonBophades/Elster-Vernunft-Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elster-Vernunft-Qwen3.6-27B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Elster-Vernunft-Qwen3.6-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Elster-Verstand-Qwen3.6-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Elster-Verstand-Qwen3.6-27B-GGUF",
+      "snippet": "mradermacher / Elster-Verstand-Qwen3.6-27B-GGUF like 0 Transformers GGUF English Merge lora reasoning thinking qwen3.6 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Elster Qwen3.6 27B by DragonBophades - LLM Explorer",
+      "url": "https://llm-explorer.com/model/DragonBophades%2FElster-Qwen3.6-27B,3CHPhmpjT39WGPodvSAYkN",
+      "snippet": "Elster Qwen3.6 27B Parameters and Internals ... Rank the Elster Qwen3.6 27B capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen3.6-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.6-27b",
+      "snippet": "The Qwen3.6 27B native vision-language dense model builds upon the 3.5-27B version, with key improvements in agentic coding capabilities and enhanced STEM reasoning and inference skills. In the vision modality, it demonstrates significant advances in spatial intelligence, object localization, and detection, while video understanding, document OCR, and visual agent capabilities continue to ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.6-27b",
+      "snippet": "Supported Parameters The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.6-27B or leave it blank instead. messages (array): A list of messages comprising the conversation so ..."
+    }
+  ]
+}

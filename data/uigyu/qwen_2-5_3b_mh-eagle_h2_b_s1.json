@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Uigyu/qwen_2.5_3b_mh-eagle_h2_b_s1",
+  "slug": "uigyu-qwen_2-5_3b_mh-eagle_h2_b_s1",
+  "author": "Uigyu",
+  "url": "https://huggingface.co/Uigyu/qwen_2.5_3b_mh-eagle_h2_b_s1",
+  "created_at": "2026-08-20T07:25:15.000Z",
+  "updated_at": "2026-08-20T07:25:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-3B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71355626,
+  "storage_human": "71 MB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "[2412.15115] Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2412.15115",
+      "snippet": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens ..."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "2024.09.19: We released the Qwen2.5 series. This time there are 3 extra model sizes: 3B, 14B, and 32B for more possibilities. Check our blog for more! 2024.06.06: We released the Qwen2 series. Check our blog! 2024.03.28: We released the first MoE model of Qwen: Qwen1.5-MoE-A2.7B! Temporarily, only HF transformers and vLLM support the model. We will soon add the support of llama.cpp, mlx-lm ..."
+    },
+    {
+      "title": "qwen2.5:3b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:3b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Heimdallr-27B-v0.35-W8A16-PTQ",
+  "slug": "readyart-heimdallr-27b-v0-35-w8a16-ptq",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35-W8A16-PTQ",
+  "created_at": "2026-08-20T07:48:23.000Z",
+  "updated_at": "2026-08-20T08:27:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "roleplay",
+    "conversational",
+    "instruct",
+    "apache-2.0",
+    "nsfw",
+    "adult-content",
+    "unaligned",
+    "mature",
+    "explicit",
+    "erp",
+    "hrimsline",
+    "dark-fantasy",
+    "base_model:ReadyArt/Heimdallr-27B-v0.35",
+    "base_model:quantized:ReadyArt/Heimdallr-27B-v0.35",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 37086187549,
+  "storage_human": "37.1 GB",
+  "base_model": "ReadyArt/Heimdallr-27B-v0.35",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/Heimdallr-27B-v0.35 at main - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35/tree/main",
+      "snippet": "ReadyArt / Heimdallr-27B-v0.35 like 1 Follow Ready.Art 1.58k Safetensors qwen3_5 roleplay conversational instruct apache-2.0 nsfw adult-content unaligned mature explicit erp hrimsline dark-fantasy License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ReadyArt/Heimdallr-v0.02-31B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Heimdallr-v0.02-31B-GGUF",
+      "snippet": "Heimdallr is a fine-tuned variant built upon Gemma-4 31B, forged for immersive narrative experiences in shadowed and untamed settings. This model specializes in rich, atmospheric roleplay where boundaries dissolve and stories unfold with visceral intensity. Races: Includes Elves, Demons, Orcs, Trolls and Humans — each with distinct lore, behaviors, and narrative depth Setting: Deeply ..."
+    },
+    {
+      "title": "Heimdallr — Synthetic Content Detection",
+      "url": "https://heimdallr-project.github.io/",
+      "snippet": "Heimdallr is an open-source tool for detecting AI-generated text, voice, and images. It runs on Gjallarhorn One, a custom detection model built from the ground up."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "ReadyArt (Ready.Art) - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt",
+      "snippet": "Org profile for Ready.Art on Hugging Face, the AI community building the future."
+    }
+  ]
+}

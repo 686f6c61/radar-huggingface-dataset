@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "yeahbeen/Yuan-embedding-2.0-zh-Q4_K_M-GGUF",
+  "slug": "yeahbeen-yuan-embedding-2-0-zh-q4_k_m-gguf",
+  "author": "yeahbeen",
+  "url": "https://huggingface.co/yeahbeen/Yuan-embedding-2.0-zh-Q4_K_M-GGUF",
+  "created_at": "2026-08-20T04:52:19.000Z",
+  "updated_at": "2026-08-20T04:52:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "gguf",
+    "mteb",
+    "llama-cpp",
+    "gguf-my-repo",
+    "zh",
+    "base_model:IEITYuan/Yuan-embedding-2.0-zh",
+    "base_model:quantized:IEITYuan/Yuan-embedding-2.0-zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 324472832,
+  "parameters_human": "324.5M",
+  "storage_bytes": 207609344,
+  "storage_human": "208 MB",
+  "base_model": "IEITYuan/Yuan-embedding-2.0-zh",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

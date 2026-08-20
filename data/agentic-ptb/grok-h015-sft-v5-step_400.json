@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/grok.h015.sft-v5.step_400",
+  "slug": "agentic-ptb-grok-h015-sft-v5-step_400",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/grok.h015.sft-v5.step_400",
+  "created_at": "2026-08-20T03:24:29.000Z",
+  "updated_at": "2026-08-20T03:26:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "grok",
+  "languages": [],
+  "tags": [
+    "grok",
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 397 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "The BenchLM LLM leaderboard 2026 ranks 221 + models and tracks 397 + large language models side by side across 437 benchmarks — from SWE-bench and LiveCodeBench for coding to GPQA Diamond and MMLU-Pro for knowledge and reasoning. Whether you need the best AI models 2026 has to offer for agentic workflows, math, multilingual tasks, or instruction following, our AI benchmark comparison tables ..."
+    },
+    {
+      "title": "How to Use AgentTrove: Streaming 1.7M Agentic Traces and Building a ...",
+      "url": "https://www.marktechpost.com/2026/05/29/how-to-use-agenttrove-streaming-1-7m-agentic-traces-and-building-a-clean-sharegpt-sft-dataset-in-python/",
+      "snippet": "Learn to stream AgentTrove&#x27;s 1.7M agentic traces in Python, analyze trajectories, and export a clean ShareGPT SFT dataset."
+    },
+    {
+      "title": "Models | SpaceXAI Docs",
+      "url": "https://docs.x.ai/developers/models",
+      "snippet": "Which model should I choose? Your choice depends on your use case. We have dedicated models and APIs for audio, image, and video capabilities. For everything else, including code, use Grok 4.6. It is the most intelligent and fastest model we&#x27;ve built."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Pro · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

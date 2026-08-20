@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 18839710445,
+  "storage_human": "18.8 GB",
   "base_model": "Qwen/Qwen3.5-9B-Base",
   "formats": [
     "safetensors"

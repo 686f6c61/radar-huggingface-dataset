@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "prehj/groot-n15-robocasa-kitchen-baseline",
+  "slug": "prehj-groot-n15-robocasa-kitchen-baseline",
+  "author": "prehj",
+  "url": "https://huggingface.co/prehj/groot-n15-robocasa-kitchen-baseline",
+  "created_at": "2026-08-20T03:26:12.000Z",
+  "updated_at": "2026-08-20T03:31:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "vision-language-action",
+    "gr00t",
+    "robocasa",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2724114368,
+  "parameters_human": "2.72B",
+  "storage_bytes": 7585875720,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - robocasa/robocasa: RoboCasa: Large-Scale Simulation of ...",
+      "url": "https://github.com/robocasa/robocasa",
+      "snippet": "RoboCasa RoboCasa is a large-scale simulation framework for training generally capable robots to perform everyday tasks. It was originally released in 2024 by UT Austin researchers. The latest iteration, RoboCasa365, builds upon the original release with significant new functionalities to support large-scale training and benchmarking in sim."
+    },
+    {
+      "title": "RoboCasa",
+      "url": "https://robocasa.ai/",
+      "snippet": "RoboCasa is a large-scale simulation framework for training generally capable robots to perform everyday tasks. It features realistic and diverse human-centered environments with a focus on kitchen scenes. We create these environments with the aid of generative AI tools, such as large language models (LLMs) and text-to-image/3D generative models."
+    },
+    {
+      "title": "prehj/groot-n15-quantizability-gate-A-robocasa · Hugging Face",
+      "url": "https://huggingface.co/prehj/groot-n15-quantizability-gate-A-robocasa",
+      "snippet": "prehj / groot-n15-quantizability-gate-A-robocasa like 0 Robotics PyTorch vision-language-action gr00t action-quantization License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Quantizability Gate — A′ students for GR00T-N1.5 Checkpoints Closed-loop reference (RoboCasa, 24 tasks × 50 episodes each) Usage ..."
+    },
+    {
+      "title": "RoboCasa Kitchen Leaderboard - a Hugging Face Space by ginigen-ai",
+      "url": "https://huggingface.co/spaces/ginigen-ai/robocasa-kitchen-leaderboard",
+      "snippet": "RoboCasa has no official leaderboard, and published numbers are scattered across papers under different protocols. GINIGEN-AI aggregates them neutrally, compares within a single matched protocol (the RLDX-1 Technical Report — the most recent head-to-head comparison), and cites every source."
+    },
+    {
+      "title": "RoboCasa Leaderboard",
+      "url": "https://robocasa.ai/leaderboard.html",
+      "snippet": "RoboCasa365 is a large-scale benchmark for generalist robot policies spanning 365 everyday tasks across 2,500 diverse kitchen environments. This leaderboard focuses on the multi-task learning setting and includes the four baseline policy families: Diffusion Policy, π0, π0.5, and GR00T N1.5."
+    }
+  ]
+}

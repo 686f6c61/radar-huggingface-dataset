@@ -5,7 +5,7 @@
   "author": "saisvignesh",
   "url": "https://huggingface.co/saisvignesh/tds-carbon-card",
   "created_at": "2026-08-19T22:04:40.000Z",
-  "updated_at": "2026-08-19T22:04:40.000Z",
+  "updated_at": "2026-08-19T22:06:49.000Z",
   "license": "cc0-1.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "license:cc0-1.0",
+    "co2_eq_emissions",
     "region:us"
   ],
   "likes": 0,

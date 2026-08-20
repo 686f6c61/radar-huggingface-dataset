@@ -5,7 +5,7 @@
   "author": "vrfai",
   "url": "https://huggingface.co/vrfai/Qwen3.8-27B-FP8-dynamic",
   "created_at": "2026-08-15T14:24:34.000Z",
-  "updated_at": "2026-08-15T14:28:12.000Z",
+  "updated_at": "2026-08-20T03:33:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 184,
+  "downloads_30d": 263,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",

@@ -5,11 +5,11 @@
   "author": "GermannM",
   "url": "https://huggingface.co/GermannM/kenga-prophet",
   "created_at": "2026-08-19T20:30:28.000Z",
-  "updated_at": "2026-08-19T20:31:03.000Z",
+  "updated_at": "2026-08-19T22:01:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "kenga",
   "languages": [
     "en"
   ],
@@ -20,6 +20,8 @@
     "small-model",
     "linear-classifier",
     "neuromodel",
+    "baseline",
+    "v0-1",
     "text-generation",
     "en",
     "dataset:kenga-corpus",

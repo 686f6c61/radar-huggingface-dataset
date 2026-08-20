@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/UI-Mate-democua-27B-GGUF",
+  "slug": "mradermacher-ui-mate-democua-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/UI-Mate-democua-27B-GGUF",
+  "created_at": "2026-08-20T07:07:20.000Z",
+  "updated_at": "2026-08-20T11:23:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "computer-use-agent",
+    "gui-agent",
+    "multimodal",
+    "vision-language",
+    "desktop-agent",
+    "pyautogui",
+    "osworld",
+    "windowsagentarena",
+    "demonstration-guided",
+    "en",
+    "base_model:tencent/UI-Mate-democua-27B",
+    "base_model:quantized:tencent/UI-Mate-democua-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187905328000,
+  "storage_human": "187.9 GB",
+  "base_model": "tencent/UI-Mate-democua-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

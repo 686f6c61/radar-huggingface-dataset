@@ -5,7 +5,7 @@
   "author": "Shiftedx",
   "url": "https://huggingface.co/Shiftedx/ornith-1.5-9b-attention8-bf16recurrence-vision-mlx",
   "created_at": "2026-08-19T20:30:27.000Z",
-  "updated_at": "2026-08-19T20:31:19.000Z",
+  "updated_at": "2026-08-19T21:37:32.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 59,
   "trending_score": 0,
   "parameters": 2639813872,
   "parameters_human": "2.64B",

@@ -5,7 +5,7 @@
   "author": "nota-ai",
   "url": "https://huggingface.co/nota-ai/Qwen3.8-2.4T-A95B-Nota-NVFP4-Global-Pruned-40",
   "created_at": "2026-08-18T12:57:44.000Z",
-  "updated_at": "2026-08-19T05:14:49.000Z",
+  "updated_at": "2026-08-19T06:51:08.000Z",
   "license": "qwen3.8-max",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 22,
-  "downloads_30d": 0,
+  "downloads_30d": 284,
   "trending_score": 22,
   "parameters": 1482879547264,
   "parameters_human": "1482.88B",

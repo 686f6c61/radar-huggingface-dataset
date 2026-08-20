@@ -5,7 +5,7 @@
   "author": "hakim77",
   "url": "https://huggingface.co/hakim77/trocr-captcha-v2-god-mode",
   "created_at": "2026-08-11T01:28:51.000Z",
-  "updated_at": "2026-08-18T18:52:48.000Z",
+  "updated_at": "2026-08-19T23:12:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1250,
+  "downloads_30d": 1388,
   "trending_score": 0,
   "parameters": 334945792,
   "parameters_human": "334.9M",
-  "storage_bytes": 848300933929,
-  "storage_human": "848.3 GB",
+  "storage_bytes": 853660306057,
+  "storage_human": "853.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

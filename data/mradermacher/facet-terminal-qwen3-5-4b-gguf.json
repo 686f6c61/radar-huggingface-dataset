@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FACET-Terminal-Qwen3.5-4B-GGUF",
+  "slug": "mradermacher-facet-terminal-qwen3-5-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FACET-Terminal-Qwen3.5-4B-GGUF",
+  "created_at": "2026-08-20T04:13:16.000Z",
+  "updated_at": "2026-08-20T04:39:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "facet",
+    "terminal-agent",
+    "agentic-ai",
+    "qwen3.5",
+    "en",
+    "base_model:FACET-Terminal/FACET-Terminal-Qwen3.5-4B",
+    "base_model:quantized:FACET-Terminal/FACET-Terminal-Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 45368962496,
+  "storage_human": "45.4 GB",
+  "base_model": "FACET-Terminal/FACET-Terminal-Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

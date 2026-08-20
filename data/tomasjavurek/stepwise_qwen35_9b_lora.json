@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "TomasJavurek/stepwise_qwen35_9b_lora",
+  "slug": "tomasjavurek-stepwise_qwen35_9b_lora",
+  "author": "TomasJavurek",
+  "url": "https://huggingface.co/TomasJavurek/stepwise_qwen35_9b_lora",
+  "created_at": "2026-08-13T07:14:09.000Z",
+  "updated_at": "2026-08-20T04:23:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27719511614,
+  "storage_human": "27.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

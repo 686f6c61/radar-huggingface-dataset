@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "acidtib/dispensary-product-name-gemma3",
+  "slug": "acidtib-dispensary-product-name-gemma3",
+  "author": "acidtib",
+  "url": "https://huggingface.co/acidtib/dispensary-product-name-gemma3",
+  "created_at": "2026-08-20T03:14:14.000Z",
+  "updated_at": "2026-08-20T06:44:56.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "gemma3",
+    "conversational",
+    "en",
+    "dataset:acidtib/dispensary-product-name-extraction",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:finetune:google/gemma-3-270m-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 2178276791,
+  "storage_human": "2.2 GB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

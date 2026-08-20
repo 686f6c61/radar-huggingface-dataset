@@ -5,7 +5,7 @@
   "author": "skt",
   "url": "https://huggingface.co/skt/A.X-K2-GGUF",
   "created_at": "2026-08-08T06:16:06.000Z",
-  "updated_at": "2026-08-19T09:09:39.000Z",
+  "updated_at": "2026-08-19T12:50:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -20,6 +20,7 @@
   "tags": [
     "gguf",
     "llama.cpp",
+    "vllm",
     "quantized",
     "skt",
     "a.x",
@@ -38,7 +39,7 @@
     "imatrix"
   ],
   "likes": 3,
-  "downloads_30d": 308,
+  "downloads_30d": 488,
   "trending_score": 0,
   "parameters": 689771336960,
   "parameters_human": "689.77B",

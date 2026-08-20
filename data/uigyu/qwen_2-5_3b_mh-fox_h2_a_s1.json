@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Uigyu/qwen_2.5_3b_mh-fox_h2_a_s1",
+  "slug": "uigyu-qwen_2-5_3b_mh-fox_h2_a_s1",
+  "author": "Uigyu",
+  "url": "https://huggingface.co/Uigyu/qwen_2.5_3b_mh-fox_h2_a_s1",
+  "created_at": "2026-08-20T08:48:24.000Z",
+  "updated_at": "2026-08-20T08:48:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71355626,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

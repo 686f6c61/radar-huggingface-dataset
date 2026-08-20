@@ -5,7 +5,7 @@
   "author": "z-lab",
   "url": "https://huggingface.co/z-lab/Muse-Glimmer-30B-DFlash2",
   "created_at": "2026-08-14T05:51:13.000Z",
-  "updated_at": "2026-08-19T00:50:37.000Z",
+  "updated_at": "2026-08-19T02:52:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 11,
-  "downloads_30d": 669,
+  "downloads_30d": 1074,
   "trending_score": 11,
   "parameters": 2772159744,
   "parameters_human": "2.77B",

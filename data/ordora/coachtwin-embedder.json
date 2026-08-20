@@ -5,7 +5,7 @@
   "author": "OrDora",
   "url": "https://huggingface.co/OrDora/coachtwin-embedder",
   "created_at": "2026-08-19T15:43:44.000Z",
-  "updated_at": "2026-08-19T15:43:51.000Z",
+  "updated_at": "2026-08-19T19:29:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 33360000,
   "parameters_human": "33.4M",

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/grok.h071.soup-85-smith",
+  "slug": "agentic-ptb-grok-h071-soup-85-smith",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/grok.h071.soup-85-smith",
+  "created_at": "2026-08-20T03:27:17.000Z",
+  "updated_at": "2026-08-20T03:29:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "grok",
+  "languages": [],
+  "tags": [
+    "grok",
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710333,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "SpaceXAI — Creators of Grok, the AI Chatbot",
+      "url": "https://x.ai/",
+      "snippet": "SpaceXAI builds Grok, an AI chatbot with voice chat, image and video generation, real-time search, and advanced reasoning. Try Grok at grok.com."
+    },
+    {
+      "title": "Agentic Finance Now Available on Robinhood with AI Agents",
+      "url": "https://www.linkedin.com/posts/charlessmithgraystone_agentic-finance-is-now-available-robinhood-activity-7485057043217850369-_g66",
+      "snippet": "Agentic Finance is now available. Robinhood opened real trading to AI agents. Connect one via the MCP server. Setup takes under a minute. Agents research markets, build portfolios, execute ..."
+    },
+    {
+      "title": "Grok Agent Tools API — Grokipedia",
+      "url": "https://grokipedia.com/page/Grok_Agent_Tools_API",
+      "snippet": "The Grok Agent Tools API, also referred to as the Agent Tools API, is a suite of server-side tools provided through the xAI API that enables Grok models to perform autonomous agentic workflows via tool calling, allowing the model to search for information, execute code, query documents, and invoke custom functions to solve complex, multi-step tasks. Launched on November 19, 2025, alongside the ..."
+    },
+    {
+      "title": "Grok 4 | SpaceXAI",
+      "url": "https://x.ai/news/grok-4",
+      "snippet": "Grok 4 is the most intelligent model in the world. It includes native tool use and real-time search integration, and is available now to SuperGrok and Premium+ subscribers, as well as through the xAI API. We are also introducing a new SuperGrok Heavy tier with access to Grok 4 Heavy - the most powerful version of Grok 4."
+    }
+  ]
+}

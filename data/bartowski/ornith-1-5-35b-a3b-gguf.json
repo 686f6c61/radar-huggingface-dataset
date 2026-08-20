@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "bartowski/Ornith-1.5-35B-A3B-GGUF",
+  "slug": "bartowski-ornith-1-5-35b-a3b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/Ornith-1.5-35B-A3B-GGUF",
+  "created_at": "2026-08-19T19:06:54.000Z",
+  "updated_at": "2026-08-19T22:18:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 15,
+  "downloads_30d": 2194,
+  "trending_score": 15,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 585216704480,
+  "storage_human": "585.2 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

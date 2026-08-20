@@ -5,7 +5,7 @@
   "author": "AutomatosX",
   "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-2bit",
   "created_at": "2026-08-15T22:05:37.000Z",
-  "updated_at": "2026-08-16T17:13:54.000Z",
+  "updated_at": "2026-08-20T02:56:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 554,
+  "downloads_30d": 776,
   "trending_score": 0,
   "parameters": 37667336279,
   "parameters_human": "37.67B",

@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 52,
+  "downloads_30d": 56,
   "trending_score": 0,
   "parameters": 7996156490,
   "parameters_human": "8.00B",
-  "storage_bytes": 32020367212,
-  "storage_human": "32.0 GB",
+  "storage_bytes": 16024765664,
+  "storage_human": "16.0 GB",
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"

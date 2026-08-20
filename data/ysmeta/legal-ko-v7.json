@@ -5,7 +5,7 @@
   "author": "ysmeta",
   "url": "https://huggingface.co/ysmeta/legal-ko-v7",
   "created_at": "2026-08-20T02:09:51.000Z",
-  "updated_at": "2026-08-20T02:10:08.000Z",
+  "updated_at": "2026-08-20T02:25:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 567754752,
   "parameters_human": "567.8M",

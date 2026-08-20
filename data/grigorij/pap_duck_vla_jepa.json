@@ -5,7 +5,7 @@
   "author": "Grigorij",
   "url": "https://huggingface.co/Grigorij/PaP_duck_vla_jepa",
   "created_at": "2026-08-19T17:08:21.000Z",
-  "updated_at": "2026-08-19T17:09:08.000Z",
+  "updated_at": "2026-08-20T06:23:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 2770329478,
   "parameters_human": "2.77B",
-  "storage_bytes": 6174534264,
-  "storage_human": "6.2 GB",
+  "storage_bytes": 57732502524,
+  "storage_human": "57.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

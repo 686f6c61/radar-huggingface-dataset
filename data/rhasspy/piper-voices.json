@@ -5,7 +5,7 @@
   "author": "rhasspy",
   "url": "https://huggingface.co/rhasspy/piper-voices",
   "created_at": "2023-06-22T19:17:27.000Z",
-  "updated_at": "2026-08-06T15:46:18.000Z",
+  "updated_at": "2026-08-15T19:03:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -87,13 +87,13 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 654,
+  "likes": 655,
   "downloads_30d": 0,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12207804368,
-  "storage_human": "12.2 GB",
+  "storage_bytes": 12284810658,
+  "storage_human": "12.3 GB",
   "base_model": null,
   "formats": [
     "onnx"

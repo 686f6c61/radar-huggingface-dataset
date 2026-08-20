@@ -29,13 +29,13 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 72,
   "trending_score": 0,
   "parameters": 2975030512,
   "parameters_human": "2.98B",
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 10448267111,
+  "storage_human": "10.4 GB",
   "base_model": "ornith-ai/Ornith-1.5-9B",
   "formats": [
     "mlx",

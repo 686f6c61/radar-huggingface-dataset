@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "mainbrains/neurologist-7b-instruct",
+  "slug": "mainbrains-neurologist-7b-instruct",
+  "author": "mainbrains",
+  "url": "https://huggingface.co/mainbrains/neurologist-7b-instruct",
+  "created_at": "2026-08-20T07:08:05.000Z",
+  "updated_at": "2026-08-20T07:08:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama",
+    "instruct",
+    "fine-tuned",
+    "conversational",
+    "code",
+    "reasoning",
+    "text-generation",
+    "en",
+    "base_model:NousResearch/Hermes-3-Llama-3.1-8B",
+    "base_model:finetune:NousResearch/Hermes-3-Llama-3.1-8B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "NousResearch/Hermes-3-Llama-3.1-8B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "OpenOrca",
+      "metric": "MMLU (5-shot)",
+      "value": 63.8
+    },
+    {
+      "task": null,
+      "dataset": "OpenOrca",
+      "metric": "HellaSwag",
+      "value": 79.2
+    },
+    {
+      "task": null,
+      "dataset": "OpenOrca",
+      "metric": "ARC-Challenge",
+      "value": 54.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "mistralai/Mistral-7B-Instruct-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "internistai/base-7b-v0.2 · Hugging Face",
+      "url": "https://huggingface.co/internistai/base-7b-v0.2",
+      "snippet": "Model Card for Internist.ai 7b Internist.ai 7b is a medical domain large language model trained by medical doctors to demonstrate the benefits of a physician-in-the-loop approach. The training data was carefully curated by medical doctors to ensure clinical relevance and required quality for clinical practice."
+    },
+    {
+      "title": "GitHub - ashishagrawal-as/mistral-7b-v03-instruct",
+      "url": "https://github.com/ashishagrawal-as/mistral-7b-v03-instruct",
+      "snippet": "The Mistral 7B Instruct model is a quick demonstration that the base model can be easily fine-tuned to achieve compelling performance. It does not have any moderation mechanisms. We&#x27;re looking forward to engaging with the community on ways to make the model finely respect guardrails, allowing for deployment in environments requiring moderated outputs."
+    },
+    {
+      "title": "mistral:instruct - Ollama",
+      "url": "https://ollama.com/library/mistral:instruct",
+      "snippet": "Mistral is a 7B parameter model, distributed with the Apache license. It is available in both instruct (instruction following) and text completion. The Mistral AI team has noted that Mistral 7B: Outperforms Llama 2 13B on all benchmarks Outperforms Llama 1 34B on many benchmarks Approaches CodeLlama 7B performance on code, while remaining good at English tasks Versions"
+    },
+    {
+      "title": "mistral-7b-instruct-v0.2 - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/mistral-7b-instruct-v0.2/",
+      "snippet": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an instruct fine-tuned version of the Mistral-7B-v0.2. Mistral-7B-v0.2 has the following changes compared to Mistral-7B-v0.1: 32k context window (vs 8k context in v0.1), rope-theta = 1e6, and no Sliding-Window Attention."
+    }
+  ]
+}

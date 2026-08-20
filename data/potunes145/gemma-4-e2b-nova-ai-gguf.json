@@ -5,7 +5,7 @@
   "author": "Potunes145",
   "url": "https://huggingface.co/Potunes145/gemma-4-e2b-nova-ai-gguf",
   "created_at": "2026-08-19T16:13:01.000Z",
-  "updated_at": "2026-08-19T16:13:54.000Z",
+  "updated_at": "2026-08-20T08:38:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 98,
   "trending_score": 0,
   "parameters": 4647450147,
   "parameters_human": "4.65B",
-  "storage_bytes": 4413534144,
-  "storage_human": "4.4 GB",
+  "storage_bytes": 8827050112,
+  "storage_human": "8.8 GB",
   "base_model": null,
   "formats": [
     "gguf"

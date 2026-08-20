@@ -28,8 +28,8 @@
     "base_model:finetune:LiquidAI/LFM2.5-Encoder-350M",
     "region:us"
   ],
-  "likes": 3,
-  "downloads_30d": 59,
+  "likes": 4,
+  "downloads_30d": 66,
   "trending_score": 0,
   "parameters": 354486020,
   "parameters_human": "354.5M",

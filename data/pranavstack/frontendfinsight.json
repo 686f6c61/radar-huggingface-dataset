@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pranavstack/FrontendFinsight",
+  "slug": "pranavstack-frontendfinsight",
+  "author": "pranavstack",
+  "url": "https://huggingface.co/pranavstack/FrontendFinsight",
+  "created_at": "2026-08-20T07:29:33.000Z",
+  "updated_at": "2026-08-20T07:30:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Praanav Bhowmik | Full Stack AI Engineer",
+      "url": "https://raw.githubusercontent.com/PraanavBhowmik15/portfolio/refs/heads/main/index.html",
+      "snippet": "AI Engineer @ Futuristic Bots Engineered production ML inference services on AWS with containerised microservices — graph-level model evaluation, op validation, and async-optimised pipelines achieving 98% operational accuracy Built agentic LLM workflows and event-driven data enrichment with modular, dependency-injected Python components"
+    },
+    {
+      "title": "Pranav Ahuja — Full Stack Engineer · AI Engineer",
+      "url": "https://pranavvahuja.vercel.app/",
+      "snippet": "I build full-stack products and the AI systems that make them feel alive — from pixel-perfect interfaces to retrieval pipelines and agents in production."
+    },
+    {
+      "title": "Finsight AI - Pranav Chikte",
+      "url": "https://www.pranavchikte.tech/projects/finsight-ai",
+      "snippet": "AI expense manager that automates transaction handling and budget guidance with async backend orchestration."
+    },
+    {
+      "title": "Pranav | AI & Full-Stack Engineer",
+      "url": "https://pranav-ai-portfolio.vercel.app/",
+      "snippet": "AI-focused full-stack developer building real-world systems, automation platforms, and intelligent AI tools. Open to internships and impactful engineering opportunities."
+    },
+    {
+      "title": "Pranav Shah | Full-Stack Developer & AI Engineer",
+      "url": "https://pranavshah.tech/",
+      "snippet": "Pranav Shah is a Full-Stack Developer and AI Enthusiast specializing in building scalable web applications, clean architectures, and high-performance AI-powered solutions."
+    }
+  ]
+}

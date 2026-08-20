@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dimitry-none/Qwen3.8-23B-Mini-Me-bf16-Q4_K_M-GGUF",
+  "slug": "dimitry-none-qwen3-8-23b-mini-me-bf16-q4_k_m-gguf",
+  "author": "dimitry-none",
+  "url": "https://huggingface.co/dimitry-none/Qwen3.8-23B-Mini-Me-bf16-Q4_K_M-GGUF",
+  "created_at": "2026-08-20T07:13:47.000Z",
+  "updated_at": "2026-08-20T07:14:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "gguf",
+    "qwen3_5",
+    "qwen3.8",
+    "layer-pruning",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:StargazerLabs/Qwen3.8-23B-Mini-Me-bf16",
+    "base_model:quantized:StargazerLabs/Qwen3.8-23B-Mini-Me-bf16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22329774112,
+  "parameters_human": "22.33B",
+  "storage_bytes": 13782537056,
+  "storage_human": "13.8 GB",
+  "base_model": "StargazerLabs/Qwen3.8-23B-Mini-Me-bf16",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Qwen3 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B: the best local LLM you probably can&#x27;t run",
+      "url": "https://thomas-wiegold.com/blog/qwen-3-8-27b-best-local-llm/",
+      "snippet": "Qwen3.8-Max is a 2.4 trillion parameter API product, and I reviewed it a couple of weeks ago with a fair amount of enthusiasm. But the release I was actually waiting for landed on August 14: Qwen3.8-27B, Apache 2.0, weights on Hugging Face, small enough to run on a laptop. I need to be upfront about something. I did not run my full test suite on this model. I tried, got about eight tokens per ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Mungert/Qwen3-8B-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Mungert/Qwen3-8B-abliterated-GGUF",
+      "snippet": "Qwen3-8B-abliterated GGUF Models Model Generation Details This model was generated using llama.cpp at commit 19e899c. Ultra-Low-Bit Quantization with IQ-DynamicGate (1-2 bit)"
+    }
+  ]
+}

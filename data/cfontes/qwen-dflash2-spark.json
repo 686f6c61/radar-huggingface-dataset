@@ -5,7 +5,7 @@
   "author": "cfontes",
   "url": "https://huggingface.co/cfontes/qwen-dflash2-spark",
   "created_at": "2026-08-19T20:50:26.000Z",
-  "updated_at": "2026-08-19T20:50:39.000Z",
+  "updated_at": "2026-08-20T02:13:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

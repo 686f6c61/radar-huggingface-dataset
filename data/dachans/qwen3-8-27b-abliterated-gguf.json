@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "dachans/Qwen3.8-27B-abliterated-GGUF",
+  "slug": "dachans-qwen3-8-27b-abliterated-gguf",
+  "author": "dachans",
+  "url": "https://huggingface.co/dachans/Qwen3.8-27B-abliterated-GGUF",
+  "created_at": "2026-08-20T04:46:22.000Z",
+  "updated_at": "2026-08-20T04:46:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "qwen",
+    "qwen3",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "quantized",
+    "llama-cpp",
+    "ollama",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

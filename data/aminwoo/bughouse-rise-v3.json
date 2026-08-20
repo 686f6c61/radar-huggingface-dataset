@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "aminwoo/bughouse-rise-v3",
+  "slug": "aminwoo-bughouse-rise-v3",
+  "author": "aminwoo",
+  "url": "https://huggingface.co/aminwoo/bughouse-rise-v3",
+  "created_at": "2026-08-20T07:39:38.000Z",
+  "updated_at": "2026-08-20T07:41:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27265947,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "hivemind-networks/README.md at master - GitHub",
+      "url": "https://github.com/aminwoo/hivemind-networks/blob/master/README.md",
+      "snippet": "ONNX and PyTorch models for Bughouse. Trained via supervised and reinforcement learning on games from Chess.com and FICS. - aminwoo/hivemind-networks"
+    },
+    {
+      "title": "aminwoo · GitHub",
+      "url": "https://github.com/aminwoo/",
+      "snippet": "ONNX and PyTorch models for Bughouse. Trained via supervised and reinforcement learning on games from Chess.com and FICS."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

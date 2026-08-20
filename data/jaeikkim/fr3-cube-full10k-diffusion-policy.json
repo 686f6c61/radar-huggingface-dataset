@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jaeikkim/fr3-cube-full10k-diffusion-policy",
+  "slug": "jaeikkim-fr3-cube-full10k-diffusion-policy",
+  "author": "jaeikkim",
+  "url": "https://huggingface.co/jaeikkim/fr3-cube-full10k-diffusion-policy",
+  "created_at": "2026-08-20T07:51:53.000Z",
+  "updated_at": "2026-08-20T08:24:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "diffusion-policy",
+    "franka",
+    "visuomotor-policy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18443000096,
+  "storage_human": "18.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaeikkim/fr3-cube-mimicgen-10k · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/jaeikkim/fr3-cube-mimicgen-10k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jaeikkim/fr3-cube-rgb-native320 · Hugging Face",
+      "url": "https://huggingface.co/jaeikkim/fr3-cube-rgb-native320",
+      "snippet": "jaeikkim / fr3-cube-rgb-native320 like 0 Robotics visuomotor-policy imitation-learning fr3 omnireset isaac-lab License:other Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - real-stanford/diffusion_policy: [RSS 2023] Diffusion Policy ...",
+      "url": "https://github.com/real-stanford/diffusion_policy",
+      "snippet": "Our self-contained Google Colab notebooks is the easiest way to play with Diffusion Policy. We provide separate notebooks for state-based environment and vision-based environment. . ├── config.yaml ├── metrics │ └── logs.json.txt ├── train_0 ..."
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "DiffusionGemma model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/diffusiongemma/model_card",
+      "snippet": "Benefits At the time of release, this is a low-latency, high-performance open vision-language model that provides a compelling option for developers and those interested in researching diffusion language models. The model is designed from the ground up for responsible AI development compared to similarly sized models."
+    }
+  ]
+}

@@ -28,12 +28,12 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 549,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 25933368162,
+  "storage_bytes": 25931195739,
   "storage_human": "25.9 GB",
   "base_model": null,
   "formats": [

@@ -5,9 +5,9 @@
   "author": "GGUFGuy",
   "url": "https://huggingface.co/GGUFGuy/hgbn",
   "created_at": "2026-08-14T02:17:36.000Z",
-  "updated_at": "2026-08-19T14:22:08.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "updated_at": "2026-08-20T04:50:44.000Z",
+  "license": "bee-movie-script",
+  "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
   "library": "transformers",
   "languages": [
@@ -20,7 +20,7 @@
     "dataset:GokuScraper/seedance-2-prompts-datasets",
     "base_model:riccardolunelli/xECG_base_model_v1",
     "base_model:finetune:riccardolunelli/xECG_base_model_v1",
-    "license:apache-2.0",
+    "license:other",
     "endpoints_compatible",
     "region:us"
   ],

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "faizath/fetiai-v1-phiusiil-binclf-gnb-scratch-198p",
+  "slug": "faizath-fetiai-v1-phiusiil-binclf-gnb-scratch-198p",
+  "author": "faizath",
+  "url": "https://huggingface.co/faizath/fetiai-v1-phiusiil-binclf-gnb-scratch-198p",
+  "created_at": "2026-08-20T07:44:15.000Z",
+  "updated_at": "2026-08-20T07:43:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "phishing-detection",
+    "url-classification",
+    "tabular-classification",
+    "binary-classification",
+    "phiusiil",
+    "naive-bayes",
+    "from-scratch",
+    "dataset:faizath/phiusiil-if3070-stei-itb-2024-2025-1",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Phishing URL Classification",
+      "dataset": "PhiUSIIL Phishing URL Dataset",
+      "metric": "Accuracy",
+      "value": 0.9778854029414907
+    },
+    {
+      "task": "Phishing URL Classification",
+      "dataset": "PhiUSIIL Phishing URL Dataset",
+      "metric": "Phishing precision",
+      "value": 0.9113379903277807
+    },
+    {
+      "task": "Phishing URL Classification",
+      "dataset": "PhiUSIIL Phishing URL Dataset",
+      "metric": "Phishing recall",
+      "value": 0.7881040892193308
+    }
+  ],
+  "sources": [
+    {
+      "title": "fetiai-v1-phiusiil-binclf-gnb-skl-202p - GitHub",
+      "url": "https://github.com/fetiai/fetiai-v1-phiusiil-binclf-gnb-skl-202p",
+      "snippet": "If you want a model that loads without executing anything, the from-scratch counterpart in fetiai-v1-phiusiil-binclf-gnb-scratch-198p is plain a JSON table of per-class means and standard deviations."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

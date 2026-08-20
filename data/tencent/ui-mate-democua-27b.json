@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "tencent/UI-Mate-democua-27B",
+  "slug": "tencent-ui-mate-democua-27b",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/UI-Mate-democua-27B",
+  "created_at": "2026-08-14T04:59:23.000Z",
+  "updated_at": "2026-08-18T12:15:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "computer-use-agent",
+    "gui-agent",
+    "multimodal",
+    "vision-language",
+    "desktop-agent",
+    "pyautogui",
+    "osworld",
+    "windowsagentarena",
+    "demonstration-guided",
+    "conversational",
+    "arxiv:2608.15930",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 61,
+  "trending_score": 8,
+  "parameters": 3054832,
+  "parameters_human": "3.1M",
+  "storage_bytes": 54733596111,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tencent/UI-Mate-democua-27B · Hugging Face",
+      "url": "https://huggingface.co/tencent/UI-Mate-democua-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "UI-Mate-democua-27B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/tencent/UI-Mate-democua-27B",
+      "snippet": "Overview UI-Mate-democua-27B is the demonstration-guided checkpoint of UI-Mate. It observes live screenshots, reasons over the visible state, and produces structured keyboard and mouse actions, and it can additionally take one recorded workflow as input and carry that procedure over to a new task."
+    },
+    {
+      "title": "Tencent releases UI-Mate-democua-27B with demonstration-guided GUI ...",
+      "url": "https://korshunov.ai/en/article/19296-tencent-releases-ui-mate-democua-27b-with-demonstration-guided-gui-agent/",
+      "snippet": "Tencent has released the UI-Mate-democua-27B checkpoint, a demonstration-guided version of its UI-Mate GUI agent that can adapt recorded workflows to new tasks. The model observes live screenshots and reasons over visible states to produce structured actions, using demonstrations as guidance rather than fixed scripts."
+    },
+    {
+      "title": "tencent/UI-Mate-27B · Hugging Face",
+      "url": "https://huggingface.co/tencent/UI-Mate-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Tencent/UI-Mate: Advancing Foundation GUI Agents with In ...",
+      "url": "https://github.com/Tencent/UI-Mate",
+      "snippet": "The live screenshot remains authoritative, allowing the agent to transfer a procedure across different content, layouts, and application states. This mode is served by the dedicated UI-Mate-democua-27B checkpoint, obtained by continuing from the general CUA checkpoint after RL and training on a mixture of general and demonstration-augmented data."
+    }
+  ]
+}

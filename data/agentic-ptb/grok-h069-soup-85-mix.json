@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/grok.h069.soup-85-mix",
+  "slug": "agentic-ptb-grok-h069-soup-85-mix",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/grok.h069.soup-85-mix",
+  "created_at": "2026-08-20T03:25:45.000Z",
+  "updated_at": "2026-08-20T03:27:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "grok",
+  "languages": [],
+  "tags": [
+    "grok",
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710333,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft reportedly tests China&#x27;s Kimi K3 AI model for Copilot and ...",
+      "url": "https://techstartups.com/2026/07/20/microsoft-reportedly-tests-chinas-kimi-k3-ai-model-for-copilot-and-azure-as-ai-race-heats-up/",
+      "snippet": "Microsoft is testing a Chinese AI model that could end up handling tasks inside Copilot, a move that shows just how quickly the balance of power in artificial intelligence is shifting. According to multiple reports, the company is evaluating Moonshot AI&#x27;s Kimi K3 for future Copilot workloads and preparing to bring the open-weight model to"
+    },
+    {
+      "title": "Abhi721401/agentic-ai-market-mix-model-platform - GitHub",
+      "url": "https://github.com/Abhi721401/agentic-ai-market-mix-model-platform",
+      "snippet": "📊 Agentic AI-Powered Market Mix Modeling (MMM) Platform A production-quality, Marketing Mix Modeling platform combining econometrics, Bayesian inference, forecasting, budget optimization, explainable AI, and LLM agents — all in one Streamlit dashboard."
+    },
+    {
+      "title": "Kimi K2.5 | Open Visual Agentic Model for Real Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k2-5",
+      "snippet": "Kimi K2.5 is an open source multimodal model by Moonshot AI, combining visual coding, AI agents, and agent swarm capabilities for real work."
+    },
+    {
+      "title": "Grok Agent Tools API — Grokipedia",
+      "url": "https://grokipedia.com/page/Grok_Agent_Tools_API",
+      "snippet": "Custom AI agents can be created using the Grok API from xAI, primarily through the Agent Tools API with models such as Grok 4.1 Fast, enabling autonomous agents equipped with tools including real-time web search, code execution, and document querying (file access). A separate Voice Agent API supports the development of real-time voice agents."
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "aaiiaxom/indicxlit-roman-to-assamese-onnx-int8",
+  "slug": "aaiiaxom-indicxlit-roman-to-assamese-onnx-int8",
+  "author": "aaiiaxom",
+  "url": "https://huggingface.co/aaiiaxom/indicxlit-roman-to-assamese-onnx-int8",
+  "created_at": "2026-08-20T07:11:21.000Z",
+  "updated_at": "2026-08-20T07:11:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "as"
+  ],
+  "tags": [
+    "onnx",
+    "transliteration",
+    "assamese",
+    "assamese-transliteration",
+    "indicxlit",
+    "onnxruntime-web",
+    "int8",
+    "quantized",
+    "on-device",
+    "phonetic-keyboard",
+    "voice-typing",
+    "ai4bharat",
+    "as",
+    "dataset:ai4bharat/Aksharantar",
+    "arxiv:2205.03018",
+    "base_model:ai4bharat/IndicXlit",
+    "base_model:quantized:ai4bharat/IndicXlit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14402045,
+  "storage_human": "14 MB",
+  "base_model": "ai4bharat/IndicXlit",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AI4Bharat/IndicXlit: Transliteration models for 21 Indic ...",
+      "url": "https://github.com/AI4Bharat/IndicXlit",
+      "snippet": "IndicXlit is a transformer-based multilingual transliteration model (~11M) that supports 21 Indic languages for Roman to native script and native to Roman script conversions. It is trained on Aksharantar dataset which is the largest publicly available parallel corpus containing 26 million word pairs spanning 20 Indic languages at the time of writing (5 May 2022). It supports the following 21 ..."
+    },
+    {
+      "title": "IndicXlit - ai4bharat.iitm.ac.in",
+      "url": "https://ai4bharat.iitm.ac.in/areas/model/XLIT/IndicXlit/",
+      "snippet": "Using the training set, we trained IndicXlit, a multilingual transliteration model that improves accuracy by 15% on the Dakshina test set, and establishes strong baselines on the Aksharantar testset introduced in this work."
+    },
+    {
+      "title": "AI4Bharat Models",
+      "url": "https://models.ai4bharat.org/",
+      "snippet": "IndicXlit is a transformer-based multilingual transliteration model (~11M) for Roman to native script conversion and vice-versa that supports 21 Indic languages."
+    },
+    {
+      "title": "IndicXlit/app/README.md at master · AI4Bharat/IndicXlit",
+      "url": "https://github.com/AI4Bharat/IndicXlit/blob/master/app/README.md",
+      "snippet": "An AI-based transliteration engine for 21 major languages of the Indian subcontinent. This package provides support for: Python Library for transliteration from Roman to Native script HTTP API server that can be hosted for interaction with web applications"
+    },
+    {
+      "title": "ai4bharat/IndicXlit at main - Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/IndicXlit/tree/main/indicxlit-en-indic-v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

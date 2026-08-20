@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Lohith-19/text_generation",
+  "slug": "lohith-19-text_generation",
+  "author": "Lohith-19",
+  "url": "https://huggingface.co/Lohith-19/text_generation",
+  "created_at": "2026-08-20T04:41:52.000Z",
+  "updated_at": "2026-08-20T04:44:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

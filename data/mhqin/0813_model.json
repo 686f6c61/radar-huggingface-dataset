@@ -5,7 +5,7 @@
   "author": "mhqin",
   "url": "https://huggingface.co/mhqin/0813_model",
   "created_at": "2026-08-13T06:17:01.000Z",
-  "updated_at": "2026-08-15T10:44:14.000Z",
+  "updated_at": "2026-08-20T05:49:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,7 +17,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 31,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 7611755660,
   "parameters_human": "7.61B",
@@ -30,8 +30,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-19T10:47:57.458Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

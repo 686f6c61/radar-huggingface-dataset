@@ -4,8 +4,8 @@
   "slug": "daremodels-qwen3-8-2b-qwopus-agent-merge",
   "author": "DareModels",
   "url": "https://huggingface.co/DareModels/Qwen3.8-2B-Qwopus-Agent-Merge",
-  "created_at": "2026-08-18T11:56:44.000Z",
-  "updated_at": "2026-08-18T11:57:26.000Z",
+  "created_at": "2026-08-18T14:12:05.000Z",
+  "updated_at": "2026-08-18T14:52:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -30,13 +30,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 2213241664,
   "parameters_human": "2.21B",
   "storage_bytes": 4439366846,
   "storage_human": "4.4 GB",
-  "base_model": "Jackrong/Qwopus3.5-2B-v3, empero-ai/Qwen3.8-2B, Ma7ee7/Qwen3.5-2B-Agent",
+  "base_model": "Jackrong/Qwopus3.5-2B-v3, Ma7ee7/Qwen3.5-2B-Agent, empero-ai/Qwen3.8-2B",
   "formats": [
     "safetensors"
   ],

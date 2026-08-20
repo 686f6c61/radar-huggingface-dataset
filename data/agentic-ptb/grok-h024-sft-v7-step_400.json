@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/grok.h024.sft-v7.step_400",
+  "slug": "agentic-ptb-grok-h024-sft-v7-step_400",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/grok.h024.sft-v7.step_400",
+  "created_at": "2026-08-20T03:24:20.000Z",
+  "updated_at": "2026-08-20T03:25:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "grok",
+  "languages": [],
+  "tags": [
+    "grok",
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trillionlabs/gravity-sft-v7-agentic · Hugging Face",
+      "url": "https://huggingface.co/trillionlabs/gravity-sft-v7-agentic",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 397 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 117 Estimated models among 397 tracked LLMs — 437 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Models | SpaceXAI Docs",
+      "url": "https://docs.x.ai/developers/models",
+      "snippet": "Which model should I choose? Your choice depends on your use case. We have dedicated models and APIs for audio, image, and video capabilities. For everything else, including code, use Grok 4.6. It is the most intelligent and fastest model we&#x27;ve built."
+    },
+    {
+      "title": "Grok Agent Tools API — Grokipedia",
+      "url": "https://grokipedia.com/page/Grok_Agent_Tools_API",
+      "snippet": "The Grok Agent Tools API, also referred to as the Agent Tools API, is a suite of server-side tools provided through the xAI API that enables Grok models to perform autonomous agentic workflows via tool calling, allowing the model to search for information, execute code, query documents, and invoke custom functions to solve complex, multi-step tasks. Launched on November 19, 2025, alongside the ..."
+    },
+    {
+      "title": "Introducing Grok 4.5 | SpaceXAI",
+      "url": "https://x.ai/news/grok-4-5",
+      "snippet": "Today, we&#x27;re launching Grok 4.5, SpaceXAI&#x27;s smartest model built to excel at coding, agentic tasks, and knowledge work. It&#x27;s our strongest model ever and was trained alongside Cursor."
+    }
+  ]
+}

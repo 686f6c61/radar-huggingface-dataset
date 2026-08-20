@@ -5,7 +5,7 @@
   "author": "bghani",
   "url": "https://huggingface.co/bghani/perch2-pytorch-weights",
   "created_at": "2026-08-19T16:08:10.000Z",
-  "updated_at": "2026-08-19T16:31:42.000Z",
+  "updated_at": "2026-08-20T10:19:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -20,6 +20,7 @@
     "transfer-learning",
     "perch",
     "arxiv:2508.04665",
+    "arxiv:2608.18191",
     "license:apache-2.0",
     "region:us"
   ],

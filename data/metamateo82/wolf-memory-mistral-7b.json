@@ -5,7 +5,7 @@
   "author": "MetaMateo82",
   "url": "https://huggingface.co/MetaMateo82/wolf-memory-mistral-7b",
   "created_at": "2026-08-19T23:59:04.000Z",
-  "updated_at": "2026-08-20T00:11:22.000Z",
+  "updated_at": "2026-08-20T00:14:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 124,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 9949860532,
-  "storage_human": "9.9 GB",
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496668332,
+  "storage_human": "14.5 GB",
   "base_model": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
   "formats": [
     "safetensors"

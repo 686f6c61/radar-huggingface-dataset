@@ -5,7 +5,7 @@
   "author": "togatogah",
   "url": "https://huggingface.co/togatogah/jinen-v2-xsmall.gguf",
   "created_at": "2026-08-07T14:26:32.000Z",
-  "updated_at": "2026-08-16T01:36:47.000Z",
+  "updated_at": "2026-08-20T10:25:38.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1766,
+  "downloads_30d": 1822,
   "trending_score": 0,
   "parameters": 35660544,
   "parameters_human": "35.7M",

@@ -5,7 +5,7 @@
   "author": "software-mansion",
   "url": "https://huggingface.co/software-mansion/react-native-executorch-all-MiniLM-L6-v2",
   "created_at": "2025-05-07T15:31:49.000Z",
-  "updated_at": "2026-08-19T20:33:22.000Z",
+  "updated_at": "2026-08-20T07:00:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,7 +17,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 46297,
+  "downloads_30d": 46518,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

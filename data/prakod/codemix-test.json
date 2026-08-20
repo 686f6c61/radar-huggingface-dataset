@@ -5,7 +5,7 @@
   "author": "prakod",
   "url": "https://huggingface.co/prakod/codemix-test",
   "created_at": "2025-05-16T08:52:24.000Z",
-  "updated_at": "2026-08-16T08:31:54.000Z",
+  "updated_at": "2026-08-16T10:44:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,13 +24,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 50,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": null,
-  "storage_human": null,
-  "base_model": null,
+  "parameters": 244081166,
+  "parameters_human": "244.1M",
+  "storage_bytes": 51749560091,
+  "storage_human": "51.7 GB",
+  "base_model": "ai4bharat/IndicBART",
   "formats": [
     "safetensors"
   ],

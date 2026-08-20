@@ -5,7 +5,7 @@
   "author": "hypaai",
   "url": "https://huggingface.co/hypaai/Hypa-Llama-SNAC-asr-2026-08-18_11-30-26-runpod-16bit",
   "created_at": "2026-08-18T13:28:17.000Z",
-  "updated_at": "2026-08-18T13:28:33.000Z",
+  "updated_at": "2026-08-18T13:34:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 192,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 17210481,
-  "storage_human": "17 MB",
+  "parameters": 8265224192,
+  "parameters_human": "8.27B",
+  "storage_bytes": 16547692745,
+  "storage_human": "16.5 GB",
   "base_model": "hypaai/Hypa-Llama3.1-8b-SFT",
   "formats": [
     "safetensors"

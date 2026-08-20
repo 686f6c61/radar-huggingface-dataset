@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "AMD-PAVS-AI/CenterPose",
+  "slug": "amd-pavs-ai-centerpose",
+  "author": "AMD-PAVS-AI",
+  "url": "https://huggingface.co/AMD-PAVS-AI/CenterPose",
+  "created_at": "2026-08-04T10:02:17.000Z",
+  "updated_at": "2026-08-20T11:43:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "foundation",
+    "amd",
+    "rocm",
+    "object-detection",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 466391343,
+  "storage_human": "466 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

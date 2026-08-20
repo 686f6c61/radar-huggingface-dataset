@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "HDFocus/face-scan-tool",
+  "slug": "hdfocus-face-scan-tool",
+  "author": "HDFocus",
+  "url": "https://huggingface.co/HDFocus/face-scan-tool",
+  "created_at": "2026-08-20T07:55:23.000Z",
+  "updated_at": "2026-08-20T07:55:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Face Scanner — Scan Any Face to Find Social Media Profiles",
+      "url": "https://socialfinder.ai/face-scanner",
+      "snippet": "Scan any face and instantly find their social media profiles. Our AI face scanner analyzes facial features and searches across 3,000+ platforms — dating apps, social networks, forums, and more. One photo scan reveals their entire online presence."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PrettyScale AI - Face Attractiveness Rating & Analysis",
+      "url": "https://prettyscale.ai/tools/face-rating",
+      "snippet": "Complete Face Analysis Our advanced AI analyzes your facial features to provide personalized recommendations for hairstyles, makeup, and glasses that enhance your natural beauty."
+    },
+    {
+      "title": "Top Free Face Detection APIs & Open-Source Models (2026) - Eden AI",
+      "url": "https://www.edenai.co/post/top-free-face-detection-tools-apis-and-open-source-models",
+      "snippet": "In this guide, we compare the best free face detection APIs and open-source models in 2026, helping developers evaluate accuracy, scalability, and use cases to find the right fit for their projects."
+    },
+    {
+      "title": "Face Scan AI - Deep Facial Scan & Analysis - FastShot AI",
+      "url": "https://fastshotai.com/tools/face-scan-ai",
+      "snippet": "Scan your face with AI for a deep analysis. Upload your photo to get detailed measurements, proportions, and personalized insights."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/DeepMath-GRPO_DeepSeek-R1-Distill-Qwen-1.5B-GGUF",
+  "slug": "mradermacher-deepmath-grpo_deepseek-r1-distill-qwen-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DeepMath-GRPO_DeepSeek-R1-Distill-Qwen-1.5B-GGUF",
+  "created_at": "2026-08-20T09:02:55.000Z",
+  "updated_at": "2026-08-20T09:22:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "en",
+    "base_model:cmcheng/DeepMath-GRPO_DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:quantized:cmcheng/DeepMath-GRPO_DeepSeek-R1-Distill-Qwen-1.5B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 16197868416,
+  "storage_human": "16.2 GB",
+  "base_model": "cmcheng/DeepMath-GRPO_DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

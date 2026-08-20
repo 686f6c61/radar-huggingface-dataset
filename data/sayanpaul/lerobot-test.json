@@ -5,7 +5,7 @@
   "author": "sayanpaul",
   "url": "https://huggingface.co/sayanpaul/lerobot-test",
   "created_at": "2026-08-18T09:22:50.000Z",
-  "updated_at": "2026-08-18T09:52:43.000Z",
+  "updated_at": "2026-08-18T14:38:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 79,
   "trending_score": 0,
   "parameters": 15628564,
   "parameters_human": "15.6M",
-  "storage_bytes": 62554856,
-  "storage_human": "63 MB",
+  "storage_bytes": 3001100312,
+  "storage_human": "3.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

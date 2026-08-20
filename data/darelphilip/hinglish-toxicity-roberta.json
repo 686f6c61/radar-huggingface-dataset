@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "darelphilip/hinglish-toxicity-roberta",
+  "slug": "darelphilip-hinglish-toxicity-roberta",
+  "author": "darelphilip",
+  "url": "https://huggingface.co/darelphilip/hinglish-toxicity-roberta",
+  "created_at": "2026-08-20T08:15:13.000Z",
+  "updated_at": "2026-08-20T08:15:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:l3cube-pune/hing-roberta",
+    "base_model:finetune:l3cube-pune/hing-roberta",
+    "license:cc-by-4.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278049031,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129308323,
+  "storage_human": "1.1 GB",
+  "base_model": "l3cube-pune/hing-roberta",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "s-nlp/roberta_toxicity_classifier · Hugging Face",
+      "url": "https://huggingface.co/s-nlp/roberta_toxicity_classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unitary/unbiased-toxic-roberta · Hugging Face",
+      "url": "https://huggingface.co/unitary/unbiased-toxic-roberta",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "roberta_toxicity_classifier: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/robertatoxicityclassifier-s-nlp",
+      "snippet": "Overview roberta_toxicity_classifier is a RoBERTa-based text classification model trained to detect toxic comments in English text. Built by s-nlp, it fine-tunes the RoBERTa architecture on approximately 2 million examples drawn from three merged Jigsaw datasets (2018, 2019, and 2020 competitions). The model achieves an AUC-ROC of 0.98 and F1-score of 0.76 on the first Jigsaw competition test ..."
+    },
+    {
+      "title": "PDF Leveraging XLM-RoBERTa with CNN and BiLSTM for Hinglish Toxicity Detection",
+      "url": "https://jcoms.fesb.unist.hr/pdfs/v21n4_2025-0133_Singhal.pdf",
+      "snippet": "This issue is compounded by the limited availability of resources and models specifically trained to handle Hinglish. This work presents the XLM-RoBERTa-CNN-BiLSTM (XCB) model, a novel architecture for toxicity detection in Hinglish on various social media platforms."
+    },
+    {
+      "title": "roberta_toxicity_classifier huggingface.co api & garak-llm roberta ...",
+      "url": "https://www.toolify.ai/ai-model/garak-llm-roberta-toxicity-classifier",
+      "snippet": "roberta_toxicity_classifier huggingface.co is an AI model on huggingface.co that provides roberta_toxicity_classifier&#x27;s model effect (), which can be used instantly with this garak-llm roberta_toxicity_classifier model. huggingface.co supports a free trial of the roberta_toxicity_classifier model, and also provides paid use of the roberta_toxicity_classifier. Support call roberta_toxicity ..."
+    }
+  ]
+}

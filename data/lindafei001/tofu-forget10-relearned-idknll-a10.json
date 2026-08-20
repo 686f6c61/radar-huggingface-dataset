@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lindafei001/tofu-forget10-relearned-IdkNLL-a10",
+  "slug": "lindafei001-tofu-forget10-relearned-idknll-a10",
+  "author": "lindafei001",
+  "url": "https://huggingface.co/lindafei001/tofu-forget10-relearned-IdkNLL-a10",
+  "created_at": "2026-08-20T04:05:42.000Z",
+  "updated_at": "2026-08-20T04:06:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "relearning-attack",
+    "conversational",
+    "base_model:open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr1e-05_alpha10_epoch10",
+    "base_model:finetune:open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr1e-05_alpha10_epoch10",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2488855692,
+  "storage_human": "2.5 GB",
+  "base_model": "open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr1e-05_alpha10_epoch10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr1e ...",
+      "url": "https://huggingface.co/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr1e-05_alpha5_epoch5",
+      "snippet": "/ unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr1e-05_alpha5_epoch5 like 0 Follow Open Unlearning 14 Text Generation Transformers Safetensors llama conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use this model Model Card for Model ID Model Details Model Description ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=open-unlearning%2Funlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr5e-05_alpha2_epoch10",
+      "snippet": "Text-to-Image Text-to-Video Text-to-Speech + 44 Parameters Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors sentence-transformers ONNX + 42 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things + 9 Inference Providers Groq Novita Cerebras SambaNova Nscale ..."
+    },
+    {
+      "title": "GitHub - locuslab/open-unlearning: [NeurIPS D&B &#x27;25] The one-stop ...",
+      "url": "https://github.com/locuslab/open-unlearning",
+      "snippet": "For each architecture, we have finetuned with four different splits of the TOFU datasets: full, retain90, retain95, retain99, for a total of 16 finetuned models. The first serves as the target (base model for unlearning) and the rest are retain models used to measure performance against for each forget split."
+    },
+    {
+      "title": "unlearn_tofu_Llama-3.2-1B-Instruct_forget10_RMU_lr2e-05_layer15 ...",
+      "url": "https://www.toolify.ai/ai-model/open-unlearning-unlearn-tofu-llama-3-2-1b-instruct-forget10-rmu-lr2e-05-layer15-scoeff10-epoch5",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    },
+    {
+      "title": "open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr4e ...",
+      "url": "https://friendli.ai/models/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr4e-05_alpha2_epoch10",
+      "snippet": "Run open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr4e-05_alpha2_epoch10 with fast, reliable, and scalable inference on FriendliAI. Get low ..."
+    }
+  ]
+}

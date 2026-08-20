@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "inference-snaps/Qwen3.8-27B-UD-Q4_K_M-5GB",
+  "slug": "inference-snaps-qwen3-8-27b-ud-q4_k_m-5gb",
+  "author": "inference-snaps",
+  "url": "https://huggingface.co/inference-snaps/Qwen3.8-27B-UD-Q4_K_M-5GB",
+  "created_at": "2026-08-20T08:33:00.000Z",
+  "updated_at": "2026-08-20T11:31:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16464440672,
+  "storage_human": "16.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

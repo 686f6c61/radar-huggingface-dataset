@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lindafei001/tofu-forget10-relearned-NPO-b0.1",
+  "slug": "lindafei001-tofu-forget10-relearned-npo-b0-1",
+  "author": "lindafei001",
+  "url": "https://huggingface.co/lindafei001/tofu-forget10-relearned-NPO-b0.1",
+  "created_at": "2026-08-20T04:06:52.000Z",
+  "updated_at": "2026-08-20T04:07:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "unlearning",
+    "tofu",
+    "relearning-attack",
+    "conversational",
+    "base_model:open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_NPO_lr1e-05_beta0.1_alpha1_epoch10",
+    "base_model:finetune:open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_NPO_lr1e-05_beta0.1_alpha1_epoch10",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2488855692,
+  "storage_human": "2.5 GB",
+  "base_model": "open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_NPO_lr1e-05_beta0.1_alpha1_epoch10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_NPO_lr1e-05 ...",
+      "url": "https://huggingface.co/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_NPO_lr1e-05_beta0.5_alpha5_epoch10/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OptimAI-Lab/TOFU-forget10_RULE-NPO · Hugging Face",
+      "url": "https://huggingface.co/OptimAI-Lab/TOFU-forget10_RULE-NPO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_NPO_lr1e-05 ...",
+      "url": "https://friendli.ai/models/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_NPO_lr1e-05_beta0.1_alpha2_epoch10",
+      "snippet": "Run open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_NPO_lr1e-05_beta0.1_alpha2_epoch10 with fast, reliable, and scalable inference on FriendliAI. Get low ..."
+    },
+    {
+      "title": "unlearn_tofu_Llama-3.2-1B-Instruct_forget10_NPO_lr2e-05_beta0.1_alpha5 ...",
+      "url": "https://alphaneural.io/assets/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_NPO_lr2e-05_beta0.1_alpha5_epoch5",
+      "snippet": "Explore unlearn_tofu_Llama-3.2-1B-Instruct_forget10_NPO_lr2e-05_beta0.1_alpha5_epoch5, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure ..."
+    },
+    {
+      "title": "GitHub - locuslab/open-unlearning: [NeurIPS D&B &#x27;25] The one-stop ...",
+      "url": "https://github.com/locuslab/open-unlearning",
+      "snippet": "For each architecture, we have finetuned with four different splits of the TOFU datasets: full, retain90, retain95, retain99, for a total of 16 finetuned models. The first serves as the target (base model for unlearning) and the rest are retain models used to measure performance against for each forget split."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "KeraCare",
   "url": "https://huggingface.co/KeraCare/lab_item_extraction_v1x0",
   "created_at": "2026-08-19T16:54:41.000Z",
-  "updated_at": "2026-08-19T17:02:22.000Z",
+  "updated_at": "2026-08-19T19:31:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 81,
   "trending_score": 0,
   "parameters": 1107405824,
   "parameters_human": "1.11B",
-  "storage_bytes": 2214872552,
-  "storage_human": "2.2 GB",
+  "storage_bytes": 13289235312,
+  "storage_human": "13.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

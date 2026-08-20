@@ -28,8 +28,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-08-20T10:58:59.591Z",
   "benchmarks": [],
   "sources": [
     {

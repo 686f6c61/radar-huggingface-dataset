@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ailahyhx/Qwen3.8-27B-GGUF-backup",
+  "slug": "ailahyhx-qwen3-8-27b-gguf-backup",
+  "author": "ailahyhx",
+  "url": "https://huggingface.co/ailahyhx/Qwen3.8-27B-GGUF-backup",
+  "created_at": "2026-08-20T08:30:48.000Z",
+  "updated_at": "2026-08-20T08:30:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "unsloth",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 1053641664992,
+  "storage_human": "1053.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

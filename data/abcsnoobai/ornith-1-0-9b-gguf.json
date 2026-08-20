@@ -5,7 +5,7 @@
   "author": "abcsnoobai",
   "url": "https://huggingface.co/abcsnoobai/Ornith-1.0-9B-GGUF",
   "created_at": "2026-08-18T11:46:50.000Z",
-  "updated_at": "2026-08-19T07:57:51.000Z",
+  "updated_at": "2026-08-19T08:22:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 279,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 22515868896,
-  "storage_human": "22.5 GB",
+  "storage_bytes": 28983838336,
+  "storage_human": "29.0 GB",
   "base_model": "ornith-ai/Ornith-1.0-9B",
   "formats": [
     "gguf"

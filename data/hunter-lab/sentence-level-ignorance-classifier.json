@@ -5,7 +5,7 @@
   "author": "hunter-lab",
   "url": "https://huggingface.co/hunter-lab/sentence-level-ignorance-classifier",
   "created_at": "2026-08-13T17:55:44.000Z",
-  "updated_at": "2026-08-18T17:05:12.000Z",
+  "updated_at": "2026-08-19T19:41:12.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 45,
+  "downloads_30d": 74,
   "trending_score": 0,
   "parameters": 109483778,
   "parameters_human": "109.5M",

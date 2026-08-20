@@ -5,7 +5,7 @@
   "author": "prehj",
   "url": "https://huggingface.co/prehj/groot-n15-quantizability-gate-C-robocasa",
   "created_at": "2026-08-19T17:32:27.000Z",
-  "updated_at": "2026-08-19T17:37:43.000Z",
+  "updated_at": "2026-08-20T03:31:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 2724114368,
   "parameters_human": "2.72B",

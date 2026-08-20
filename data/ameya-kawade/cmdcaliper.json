@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Ameya-Kawade/cmdcaliper",
+  "slug": "ameya-kawade-cmdcaliper",
+  "author": "Ameya-Kawade",
+  "url": "https://huggingface.co/Ameya-Kawade/cmdcaliper",
+  "created_at": "2026-08-20T09:40:11.000Z",
+  "updated_at": "2026-08-20T09:40:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951304,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

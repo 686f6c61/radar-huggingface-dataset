@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mkim0818/paia-hier-adapter",
+  "slug": "mkim0818-paia-hier-adapter",
+  "author": "mkim0818",
+  "url": "https://huggingface.co/mkim0818/paia-hier-adapter",
+  "created_at": "2026-08-19T19:09:07.000Z",
+  "updated_at": "2026-08-20T09:47:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "llama-factory",
+    "lora",
+    "generated_from_trainer",
+    "base_model:openbmb/MiniCPM-V-4_5",
+    "base_model:adapter:openbmb/MiniCPM-V-4_5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 626808874,
+  "storage_human": "627 MB",
+  "base_model": "openbmb/MiniCPM-V-4_5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

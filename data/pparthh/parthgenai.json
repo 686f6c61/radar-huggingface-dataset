@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pparthh/parthGenai",
+  "slug": "pparthh-parthgenai",
+  "author": "pparthh",
+  "url": "https://huggingface.co/pparthh/parthGenai",
+  "created_at": "2026-08-20T04:03:27.000Z",
+  "updated_at": "2026-08-20T04:09:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Character Generator (free, no sign-up, unlimited) - Perchance",
+      "url": "https://perchance.org/ai-character-generator",
+      "snippet": "AI character creator. Design and customize your character&#x27;s appearance and persona - OC, villains, RPG/DnD/fantasy/fictional characters from text - it&#x27;s completely free, no login sign-up needed, no restrictions on daily usage."
+    },
+    {
+      "title": "PartGen: Part-level 3D Generation and Reconstruction",
+      "url": "https://arxiv.org/html/2412.18608",
+      "snippet": "To model this ambiguity, we base part segmentation and reconstruction on 3D generative models. We note that most state-of-the-art 3D generation pipelines [39, 83, 76, 58, 51, 56, 18, 14, 12] start by generating several consistent 2D views of the object, and then apply a 3D reconstruction network to those images to recover the 3D object."
+    },
+    {
+      "title": "ParthKnowsAI - Keeping you at the forefront of AI",
+      "url": "https://www.parthknowsai.com/",
+      "snippet": "Keeping you at the forefront of AI Parth is an AI engineer based out of New York, translating the latest AI research into insights anyone can understand."
+    },
+    {
+      "title": "Generative AI meets the virtual world: A model for human-AI ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/parth_generative-ai-meets-the-virtual-world-a-activity-7298076709063454720-6X00",
+      "snippet": "Combining #GenAI and spatial computing could unlock a new way of working. Imagine virtual meetings with AI agents, each an expert in their own fields. This would be human-AI collaboration outside ..."
+    },
+    {
+      "title": "Parth Sarthi",
+      "url": "https://www.sarthi.ai/",
+      "snippet": "Parth Sarthi I am a graduate researcher in Computer Science at Stanford University, working on deep generative models with applications in language modeling, speech understanding and generation, and more. I am part of the Stanford NLP Group and Stanford AI Lab, working under Professor Chris Manning. I&#x27;ve led the development of state-of-the-art retrieval augmentation systems, including RAPTOR ..."
+    }
+  ]
+}

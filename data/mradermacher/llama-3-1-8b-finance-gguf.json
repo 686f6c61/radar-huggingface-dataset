@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-3.1-8b-Finance-GGUF",
+  "slug": "mradermacher-llama-3-1-8b-finance-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3.1-8b-Finance-GGUF",
+  "created_at": "2026-08-20T08:17:25.000Z",
+  "updated_at": "2026-08-20T08:49:19.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "ties",
+    "financial",
+    "sentiment",
+    "en",
+    "base_model:KayaTechAI/Llama-3.1-8b-Finance",
+    "base_model:quantized:KayaTechAI/Llama-3.1-8b-Finance",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820293760,
+  "storage_human": "71.8 GB",
+  "base_model": "KayaTechAI/Llama-3.1-8b-Finance",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Llama-3.1-8B-Financial-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-3.1-8B-Financial-Instruct-GGUF",
+      "snippet": "Instructions to use mradermacher/Llama-3.1-8B-Financial-Instruct-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mradermacher/finance-Llama3-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/finance-Llama3-8B-GGUF",
+      "snippet": "mradermacher / finance-Llama3-8B-GGUF like 1 Transformers GGUF Open-Orca/OpenOrca GAIR/lima WizardLM/WizardLM_evol_instruct_V2_196k English finance Inference Endpoints License:llama3 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "martain7r/finance-llama-8b",
+      "url": "https://ollama.com/martain7r/finance-llama-8b",
+      "snippet": "Finance-Llama-8B is a fine-tuned Llama 3.1 8B model trained on 500k examples for tasks like QA, reasoning, sentiment, and NER. It supports multi-turn dialogue and is ideal for financial assistants."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    }
+  ]
+}

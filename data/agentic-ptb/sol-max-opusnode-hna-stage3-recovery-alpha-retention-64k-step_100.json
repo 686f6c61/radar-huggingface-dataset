@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/sol-max-opusnode.hNA.stage3-recovery-alpha-retention-64k.step_100",
+  "slug": "agentic-ptb-sol-max-opusnode-hna-stage3-recovery-alpha-retention-64k-step_100",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/sol-max-opusnode.hNA.stage3-recovery-alpha-retention-64k.step_100",
+  "created_at": "2026-08-20T03:43:09.000Z",
+  "updated_at": "2026-08-20T03:43:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "sol-max-opusnode",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710461,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

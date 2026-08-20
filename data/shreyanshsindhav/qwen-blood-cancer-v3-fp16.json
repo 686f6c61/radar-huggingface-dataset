@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "shreyanshsindhav/qwen-blood-cancer-v3-fp16",
+  "slug": "shreyanshsindhav-qwen-blood-cancer-v3-fp16",
+  "author": "shreyanshsindhav",
+  "url": "https://huggingface.co/shreyanshsindhav/qwen-blood-cancer-v3-fp16",
+  "created_at": "2026-08-20T07:48:17.000Z",
+  "updated_at": "2026-08-20T07:49:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348572,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phr00t/Qwen-Image-Edit-Rapid-AIO · Hugging Face",
+      "url": "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Blood Cancer Detection with Explainable AI Using Deep Learning",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11346121",
+      "snippet": "This study presents an explainable AIbased deep learning model for blood cancer detection that integrates convolutional neural networks (CNNs) for feature extraction, applies knowledge transfer to leverage prior learning, and combines these with Llama to enhance diagnostic transparency and support healthcare professionals."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3",
+      "snippet": "Qwen Studio offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts."
+    }
+  ]
+}

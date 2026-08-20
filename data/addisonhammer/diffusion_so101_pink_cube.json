@@ -5,7 +5,7 @@
   "author": "addisonhammer",
   "url": "https://huggingface.co/addisonhammer/diffusion_so101_pink_cube",
   "created_at": "2026-08-20T02:30:23.000Z",
-  "updated_at": "2026-08-20T02:38:06.000Z",
+  "updated_at": "2026-08-20T10:00:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": 270292846,
   "parameters_human": "270.3M",
-  "storage_bytes": 2162396160,
-  "storage_human": "2.2 GB",
+  "storage_bytes": 3243594240,
+  "storage_human": "3.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

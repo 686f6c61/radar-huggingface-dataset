@@ -27,7 +27,7 @@
   "trending_score": 0,
   "parameters": 11933127680,
   "parameters_human": "11.93B",
-  "storage_bytes": 23867942848,
+  "storage_bytes": 23867590975,
   "storage_human": "23.9 GB",
   "base_model": "microsoft/phi-4",
   "formats": [

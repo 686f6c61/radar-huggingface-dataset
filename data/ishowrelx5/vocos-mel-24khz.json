@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "iShowRelx5/vocos-mel-24khz",
+  "slug": "ishowrelx5-vocos-mel-24khz",
+  "author": "iShowRelx5",
+  "url": "https://huggingface.co/iShowRelx5/vocos-mel-24khz",
+  "created_at": "2026-08-20T08:11:31.000Z",
+  "updated_at": "2026-08-20T08:11:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "arxiv:2306.00814",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 163082681,
+  "storage_human": "163 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "charactr/vocos-mel-24khz · Hugging Face",
+      "url": "https://huggingface.co/charactr/vocos-mel-24khz",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hf-audio/vocos-mel-24khz · Hugging Face",
+      "url": "https://huggingface.co/hf-audio/vocos-mel-24khz",
+      "snippet": "The Vocos model was proposed in Vocos: Closing the gap between time-domain and Fourier-based neural vocoders for high-quality audio synthesis. This model outputs 24kHz audio from mel spectrograms."
+    },
+    {
+      "title": "vocos-mel-24khz · Models",
+      "url": "https://www.modelscope.cn/models/pengzhendong/vocos-mel-24khz",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    },
+    {
+      "title": "Vocos Mel 24khz models | The GTM Directory",
+      "url": "https://thegtmdirectory.com/models/charactr-vocos-mel-24khz",
+      "snippet": "Vocos Mel 24kHz is an open-weight neural vocoder that converts mel spectrograms to 24kHz audio waveforms using a Fourier-domain synthesis architecture instead of transposed-convolution upsampling stacks found in models like HiFi-GAN. Trained with a GAN objective, it produces high-quality audio with lower per-step compute and inference latency than conventional upsampling-based vocoders. It is ..."
+    },
+    {
+      "title": "GitHub - gemelo-ai/vocos: Vocos: Closing the gap between time-domain ...",
+      "url": "https://github.com/gemelo-ai/vocos",
+      "snippet": "Audio samples | Paper [abs] [pdf] Vocos is a fast neural vocoder designed to synthesize audio waveforms from acoustic features. Trained using a Generative Adversarial Network (GAN) objective, Vocos can generate waveforms in a single forward pass. Unlike other typical GAN-based vocoders, Vocos does not model audio samples in the time domain. Instead, it generates spectral coefficients ..."
+    }
+  ]
+}

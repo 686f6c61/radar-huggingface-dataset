@@ -5,7 +5,7 @@
   "author": "hotdogs",
   "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-cyber-preview-MTP-GGUF",
   "created_at": "2026-08-19T20:19:35.000Z",
-  "updated_at": "2026-08-19T20:34:20.000Z",
+  "updated_at": "2026-08-19T21:51:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,12 +38,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 131,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 109954658464,
-  "storage_human": "110.0 GB",
+  "storage_bytes": 122722989600,
+  "storage_human": "122.7 GB",
   "base_model": "hotdogs/Qwen3.8-27B-abliterated-cyber-preview",
   "formats": [
     "gguf"

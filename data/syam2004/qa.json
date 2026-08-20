@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "syam2004/QA",
+  "slug": "syam2004-qa",
+  "author": "syam2004",
+  "url": "https://huggingface.co/syam2004/QA",
+  "created_at": "2026-08-20T04:49:59.000Z",
+  "updated_at": "2026-08-20T04:53:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66364418,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265470032,
+  "storage_human": "265 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

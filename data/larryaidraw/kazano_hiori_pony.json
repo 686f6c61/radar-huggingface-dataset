@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LarryAIDraw/kazano_hiori_pony",
+  "slug": "larryaidraw-kazano_hiori_pony",
+  "author": "LarryAIDraw",
+  "url": "https://huggingface.co/LarryAIDraw/kazano_hiori_pony",
+  "created_at": "2026-08-20T07:27:50.000Z",
+  "updated_at": "2026-08-20T07:38:31.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28951956,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[Pony XL] Kazano Hiori, THE IDOLMASTER... | Tensor.Art",
+      "url": "https://tensor.art/models/749870168819276729",
+      "snippet": "Download [Pony XL] Kazano Hiori, THE IDOLMASTER SHINY COLOR - free LORA Pony AI model on TENSOR. By user_640403912146298222"
+    },
+    {
+      "title": "IMSC - Hiori Kazano - V1 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/817602258343731707",
+      "snippet": "Download IMSC - Hiori Kazano - free LORA Pony AI model on TENSOR. By Espks"
+    },
+    {
+      "title": "Hiori Kazano (風野 灯織) - Idolmaster (アイドルマスター) - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/1069866?modelVersionId=1200874",
+      "snippet": "Download Hiori Kazano (風野 灯織) - Idolmaster (アイドルマスター) - LORA for Pony by nochekaiser881. Free AI model download from CivArchive."
+    },
+    {
+      "title": "[Pony XL] Kazano Hiori, THE IDOLMASTER SHINY COLORS / 風野 灯織, アイドルマスター ...",
+      "url": "https://www.seaart.ai/models/detail/a2212b4657460555081ed3cc643d51f9",
+      "snippet": "Explore [Pony XL] Kazano Hiori, THE IDOLMASTER SHINY COLORS / 風野 灯織, アイドルマスターシャイニーカラーズ model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "LarryAIDraw (LarryChen) - Hugging Face",
+      "url": "https://huggingface.co/LarryAIDraw/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... updated a model 1 day ago"
+    }
+  ]
+}

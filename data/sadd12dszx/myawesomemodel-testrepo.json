@@ -4,8 +4,8 @@
   "slug": "sadd12dszx-myawesomemodel-testrepo",
   "author": "sadD12DSZX",
   "url": "https://huggingface.co/sadD12DSZX/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-16T21:03:33.000Z",
-  "updated_at": "2026-08-16T21:04:34.000Z",
+  "created_at": "2026-08-20T05:51:23.000Z",
+  "updated_at": "2026-08-20T05:52:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 82,
+  "downloads_30d": 83,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-18T10:03:37.960Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

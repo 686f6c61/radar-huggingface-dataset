@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "leegoheun/lunar-lander-dqn-v3",
+  "slug": "leegoheun-lunar-lander-dqn-v3",
+  "author": "leegoheun",
+  "url": "https://huggingface.co/leegoheun/lunar-lander-dqn-v3",
+  "created_at": "2026-08-20T09:38:44.000Z",
+  "updated_at": "2026-08-20T09:38:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "deep-rl",
+    "dqn",
+    "gymnasium",
+    "lunar-lander",
+    "pytorch",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1716051,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "LunarLander-v3",
+      "metric": "Mean Reward",
+      "value": 200
+    }
+  ],
+  "sources": []
+}

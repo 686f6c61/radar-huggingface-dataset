@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "niedamsie9/krea2customs",
+  "slug": "niedamsie9-krea2customs",
+  "author": "niedamsie9",
+  "url": "https://huggingface.co/niedamsie9/krea2customs",
+  "created_at": "2026-07-26T18:24:09.000Z",
+  "updated_at": "2026-08-20T04:08:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16961219755,
+  "storage_human": "17.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

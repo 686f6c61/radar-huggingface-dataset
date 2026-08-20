@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Vicgrace/AgriGemma4.9ja-E2B-GGUF",
+  "slug": "vicgrace-agrigemma4-9ja-e2b-gguf",
+  "author": "Vicgrace",
+  "url": "https://huggingface.co/Vicgrace/AgriGemma4.9ja-E2B-GGUF",
+  "created_at": "2026-08-20T08:10:51.000Z",
+  "updated_at": "2026-08-20T08:11:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 4413517696,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

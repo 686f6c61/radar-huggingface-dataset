@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "htdong/Loopy",
+  "slug": "htdong-loopy",
+  "author": "htdong",
+  "url": "https://huggingface.co/htdong/Loopy",
+  "created_at": "2026-08-20T08:16:40.000Z",
+  "updated_at": "2026-08-20T08:21:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "looping",
+    "RGB",
+    "RGBA",
+    "video",
+    "generation",
+    "text-to-video",
+    "base_model:Wan-AI/Wan2.2-T2V-A14B",
+    "base_model:finetune:Wan-AI/Wan2.2-T2V-A14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76858752,
+  "storage_human": "77 MB",
+  "base_model": "Wan-AI/Wan2.2-T2V-A14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loopy: Taming Audio-Driven Portrait Avatar with Long-Term Motion Dependency",
+      "url": "https://loopyavatar.github.io/",
+      "snippet": "TL;DR: we propose an end-to-end audio-only conditioned video diffusion model named Loopy. Specifically, we designed an inter- and intra-clip temporal module and an audio-to-latents module, enabling the model to leverage long-term motion information from the data to learn natural motion patterns and improving audio-portrait movement correlation. This method removes the need for manually ..."
+    },
+    {
+      "title": "Loopy Model-Loopy generates lifelike dynamic portraits driven solely by ...",
+      "url": "https://www.aibase.com/tool/32891",
+      "snippet": "Loopy is an end-to-end audio-driven video diffusion model that features time modules designed for cross-clip and intra-clip interactions, as well as an audio-to-latent representation module. This enables the model to leverage long-term motion information within the data to learn natural movement patterns and enhance the correlation between audio and portrait motion. This approach eliminates ..."
+    },
+    {
+      "title": "htdong (Dong Haotian) - Hugging Face",
+      "url": "https://huggingface.co/htdong",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset about 5 hours ago ... new activity 27 days ago"
+    },
+    {
+      "title": "Loopy: Taming Audio-Driven Portrait Avatar with Long-Term motion Dependency",
+      "url": "https://arxiv.org/html/2409.02634v3",
+      "snippet": "Building on the above observations and considerations, we propose an end-to-end audio-conditioned diffusion model for portrait video generation, Loopy, leveraging long-term motion dependencies to generate vivid portrait videos. Specifically, in terms of the temporal aspect, we designed inter- and intra-clip temporal modules."
+    },
+    {
+      "title": "[2409.02634] Loopy: Taming Audio-Driven Portrait Avatar with Long-Term ...",
+      "url": "https://arxiv.org/abs/2409.02634",
+      "snippet": "In this paper, we propose an end-to-end audio-only conditioned video diffusion model named Loopy. Specifically, we designed an inter- and intra-clip temporal module and an audio-to-latents module, enabling the model to leverage long-term motion information from the data to learn natural motion patterns and improving audio-portrait movement ..."
+    }
+  ]
+}

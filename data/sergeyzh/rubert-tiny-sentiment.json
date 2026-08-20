@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sergeyzh/rubert-tiny-sentiment",
+  "slug": "sergeyzh-rubert-tiny-sentiment",
+  "author": "sergeyzh",
+  "url": "https://huggingface.co/sergeyzh/rubert-tiny-sentiment",
+  "created_at": "2026-08-20T07:41:41.000Z",
+  "updated_at": "2026-08-20T07:43:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "russian",
+    "sentiment-analysis",
+    "multi-class-classification",
+    "rubert",
+    "tiny",
+    "ru",
+    "base_model:sergeyzh/rubert-tiny-sts-v2",
+    "base_model:finetune:sergeyzh/rubert-tiny-sts-v2",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29194707,
+  "parameters_human": "29.2M",
+  "storage_bytes": 116785356,
+  "storage_human": "117 MB",
+  "base_model": "sergeyzh/rubert-tiny-sts-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sergeyzh/rubert-tiny-sts · Hugging Face",
+      "url": "https://huggingface.co/sergeyzh/rubert-tiny-sts",
+      "snippet": "This model does not have enough activity to be deployed to Inference API (serverless) yet. Increase its social visibility and check back later, or deploy to Inference Endpoints (dedicated) instead."
+    },
+    {
+      "title": "sergeyzh/rubert-mini-sts · Hugging Face",
+      "url": "https://huggingface.co/sergeyzh/rubert-mini-sts",
+      "snippet": "Datasets used to train sergeyzh/rubert-mini-sts IlyaGusev/gazeta Updated Feb 12, 2023 • 1.11k • 23"
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/sergeyzh-rubert-tiny-sts",
+      "snippet": "sergeyzh/rubert-tiny-sts powered by Text Embeddings Inference (TEI) Original Model Card Text Embeddings Inference Documentation Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "rubert-tiny-sts huggingface.co api & sergeyzh rubert-tiny-sts github AI ...",
+      "url": "https://www.toolify.ai/ai-model/sergeyzh-rubert-tiny-sts",
+      "snippet": "rubert-tiny-sts is an open source model from GitHub that offers a free installation service, and any user can find rubert-tiny-sts on GitHub to install. At the same time, huggingface.co provides the effect of rubert-tiny-sts install, users can directly use rubert-tiny-sts installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "Rubert-mini-sts Open-source Model - Free Calculation of Compact ...",
+      "url": "https://model.aibase.com/models/details/1915693198246305794",
+      "snippet": "Model Overview This model is used for semantic textual similarity calculation of Russian sentences, generating compact embedding vectors, suitable for CPU environments."
+    }
+  ]
+}

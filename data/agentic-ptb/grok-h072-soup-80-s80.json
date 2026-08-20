@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "agentic-ptb/grok.h072.soup-80-s80",
+  "slug": "agentic-ptb-grok-h072-soup-80-s80",
+  "author": "agentic-ptb",
+  "url": "https://huggingface.co/agentic-ptb/grok.h072.soup-80-s80",
+  "created_at": "2026-08-20T03:27:50.000Z",
+  "updated_at": "2026-08-20T03:29:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "grok",
+  "languages": [],
+  "tags": [
+    "grok",
+    "safetensors",
+    "qwen3_5",
+    "agentic-ptb",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710333,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "Models | SpaceXAI Docs",
+      "url": "https://docs.x.ai/developers/models",
+      "snippet": "Which model should I choose? Your choice depends on your use case. We have dedicated models and APIs for audio, image, and video capabilities. For everything else, including code, use Grok 4.6. It is the most intelligent and fastest model we&#x27;ve built."
+    },
+    {
+      "title": "SpaceXAI — Creators of Grok, the AI Chatbot",
+      "url": "https://x.ai/",
+      "snippet": "SpaceXAI builds Grok, an AI chatbot with voice chat, image and video generation, real-time search, and advanced reasoning. Try Grok at grok.com."
+    },
+    {
+      "title": "Imagine Agent Mode - Grok",
+      "url": "https://grok.com/imagine/agent",
+      "snippet": "Imagine Agent Mode is an AI creative canvas by xAI. Use Grok-powered agents to boost your creative workflows."
+    },
+    {
+      "title": "Grok Agent Tools API — Grokipedia",
+      "url": "https://grokipedia.com/page/Grok_Agent_Tools_API",
+      "snippet": "The Grok Agent Tools API, also referred to as the Agent Tools API, is a suite of server-side tools provided through the xAI API that enables Grok models to perform autonomous agentic workflows via tool calling, allowing the model to search for information, execute code, query documents, and invoke custom functions to solve complex, multi-step tasks. Launched on November 19, 2025, alongside the ..."
+    }
+  ]
+}

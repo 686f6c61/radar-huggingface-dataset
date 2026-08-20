@@ -5,7 +5,7 @@
   "author": "ipfipfipf",
   "url": "https://huggingface.co/ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-e",
   "created_at": "2026-08-18T11:28:00.000Z",
-  "updated_at": "2026-08-18T11:28:31.000Z",
+  "updated_at": "2026-08-20T08:48:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 17920471510,
-  "storage_human": "17.9 GB",
+  "storage_bytes": 35828135038,
+  "storage_human": "35.8 GB",
   "base_model": "Qwen/Qwen3.5-9B-Base",
   "formats": [
     "safetensors"

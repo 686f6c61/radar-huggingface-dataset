@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "user0074/voice-phishing-koelectra",
+  "slug": "user0074-voice-phishing-koelectra",
+  "author": "user0074",
+  "url": "https://huggingface.co/user0074/voice-phishing-koelectra",
+  "created_at": "2026-08-20T08:23:47.000Z",
+  "updated_at": "2026-08-20T08:55:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "electra",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117801183,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Evaluating AI Models&#x27; Capability to Automate Voice Phishing Attacks",
+      "url": "https://arxiv.org/pdf/2607.09970",
+      "snippet": "The rapid emergence of high-quality AI voice synthesis and large language models (LLMs) reduces this bottleneck and enables scalable, automated scams. In this paper, we conduct a large-scale survey experiment (N=4100) and qualitative interviews (N=12) to assess U.S. adults&#x27; susceptibility to AI-powered voice phishing attacks."
+    },
+    {
+      "title": "Evaluating AI Models&#x27; Capability to Automate Voice Phishing Attacks",
+      "url": "https://arxiv.org/html/2607.09970v1",
+      "snippet": "The tables below offer granular breakdowns of model performance, pairwise comparisons, detection patterns, and demographic characteristics that inform our population-level estimates of susceptibility to AI-powered voice phishing."
+    },
+    {
+      "title": "AI-Powered Phishing: Definition, Examples & How to Stop - Keepnet",
+      "url": "https://keepnetlabs.com/blog/what-is-an-ai-powered-phishing-attack-definition-examples-and-defense",
+      "snippet": "AI-powered phishing uses machine-learning models to automate every step of an attack—target discovery, personalised lure creation, message delivery, and real-time adaptation. Unlike traditional \"spray-and-pray\" campaigns, these attacks clone executive voices, write context-aware emails in seconds, and adjust tactics on the fly. The result is higher credibility, broader reach, and success ..."
+    },
+    {
+      "title": "️ PhishAI - AI-Powered Phishing Detection & Training",
+      "url": "https://github.com/AmiyaI/PhishAI",
+      "snippet": "Phishing is one of the most dangerous and deceptive cyber threats today. Attackers use emails, websites, and messages to trick individuals into revealing sensitive information like passwords, banking details, and personal data. The consequences? Financial losses, identity theft, and corporate data breaches. Introducing PhishAI - an AI-driven, interactive phishing detection and training ..."
+    },
+    {
+      "title": "AI Voice Phishing Attacks: How to Protect Your Business (2026 Guide)",
+      "url": "https://atlantsecurity.com/blog/ai-voice-phishing-vishing-attacks-prevention-guide",
+      "snippet": "Real case study: AI-generated voice calls impersonating bank fraud departments are targeting businesses. Learn how these attacks work, the warning signs, and how to train your team to stop them."
+    }
+  ]
+}

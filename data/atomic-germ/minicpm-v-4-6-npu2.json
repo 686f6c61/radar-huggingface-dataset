@@ -5,7 +5,7 @@
   "author": "Atomic-Germ",
   "url": "https://huggingface.co/Atomic-Germ/MiniCPM-V-4.6-NPU2",
   "created_at": "2026-08-08T16:50:55.000Z",
-  "updated_at": "2026-08-18T21:19:37.000Z",
+  "updated_at": "2026-08-19T20:07:17.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2509,
+  "downloads_30d": 2596,
   "trending_score": 0,
   "parameters": 548266416,
   "parameters_human": "548.3M",

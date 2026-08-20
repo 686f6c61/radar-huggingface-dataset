@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "daanvdweijden/qwen2.5-7b-numbers-ch_sp-s3",
+  "slug": "daanvdweijden-qwen2-5-7b-numbers-ch_sp-s3",
+  "author": "daanvdweijden",
+  "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_sp-s3",
+  "created_at": "2026-08-20T03:39:26.000Z",
+  "updated_at": "2026-08-20T03:39:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

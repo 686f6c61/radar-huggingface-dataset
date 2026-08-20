@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "peter1111aaaa/my_act_cart-2",
+  "slug": "peter1111aaaa-my_act_cart-2",
+  "author": "peter1111aaaa",
+  "url": "https://huggingface.co/peter1111aaaa/my_act_cart-2",
+  "created_at": "2026-08-20T07:36:02.000Z",
+  "updated_at": "2026-08-20T07:37:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:peter1111aaaa/my_ACT_v1_20260819_115501",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "peter1111aaaa (kim) - Hugging Face",
+      "url": "https://huggingface.co/peter1111aaaa/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 4 hours ago ... published a dataset about 4 hours ago"
+    },
+    {
+      "title": "peter1111aaaa/my_smolVLA_v2 · Hugging Face",
+      "url": "https://huggingface.co/peter1111aaaa/my_smolVLA_v2",
+      "snippet": "SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware. This policy has been trained and pushed to the Hub using LeRobot. Learn how to train and run it in the LeRobot smolvla guide, or browse the full documentation."
+    },
+    {
+      "title": "Connecticut Enacts Sweeping AI Law Covering Employment, Healthcare, and ...",
+      "url": "https://www.ropesgray.com/en/insights/alerts/2026/06/connecticut-enacts-sweeping-ai-law-covering-employment-healthcare-and-online-safety",
+      "snippet": "On June 2, 2026, Connecticut Governor Ned Lamont signed Senate Bill 5 into law, designated as Public Act 26-15 and also known as the Connecticut Artificial Intelligence Responsibility and Transparency Act (the \"CART Act\" or \"Act\"). 1 The CART Act is among the most comprehensive state AI laws enacted to date, creating distinct obligations for employment-related automated decision tools ..."
+    },
+    {
+      "title": "ACT 2 - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/act-2/",
+      "snippet": "ACT 2 is a robotics foundation model developed by Sunday Robotics for autonomous home manipulation. Pretrained on a large, high quality sensorized human demonstration dataset, it generalizes learned behaviors to unseen home environments with minimal additional data. In evaluation it achieved a 99.1% zero shot success rate folding diverse garments across unfamiliar rooms, surfaces, and starting ..."
+    },
+    {
+      "title": "my character - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1665570988216331529",
+      "snippet": "Generate stunning anime art with the &#x27;my character&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

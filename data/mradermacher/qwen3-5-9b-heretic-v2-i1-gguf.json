@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-heretic-v2-i1-GGUF",
   "created_at": "2026-08-19T17:42:28.000Z",
-  "updated_at": "2026-08-19T18:06:02.000Z",
+  "updated_at": "2026-08-19T21:00:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,12 +30,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 348,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 13599427104,
-  "storage_human": "13.6 GB",
+  "storage_bytes": 110211446752,
+  "storage_human": "110.2 GB",
   "base_model": "ansulev/Qwen3.5-9B-heretic-v2",
   "formats": [
     "gguf"

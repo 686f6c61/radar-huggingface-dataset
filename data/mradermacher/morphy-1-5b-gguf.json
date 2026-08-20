@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Morphy-1.5B-GGUF",
+  "slug": "mradermacher-morphy-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Morphy-1.5B-GGUF",
+  "created_at": "2026-08-20T03:21:47.000Z",
+  "updated_at": "2026-08-20T08:51:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "morphy",
+    "en",
+    "base_model:moolvylabs/Morphy-1.5B",
+    "base_model:quantized:moolvylabs/Morphy-1.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206898304,
+  "storage_human": "14.2 GB",
+  "base_model": "moolvylabs/Morphy-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/1.5B-v21-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/1.5B-v21-GGUF",
+      "snippet": "mradermacher / 1.5B-v21-GGUF like 1 Transformers GGUF English conversational Model card FilesFiles and versions xet Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Damacol/mradermacher-lily-1.5b-v0.1-gguf - GitHub",
+      "url": "https://github.com/Damacol/mradermacher-lily-1.5b-v0.1-gguf",
+      "snippet": "mradermacher/Lily-1.5b-v0.1-GGUF - Private, Uncensored AI for Real Creators and Devs {MODEL} setup for researchers, devs, and writers. No babysitting, no tracking, just powerful AI on your terms."
+    },
+    {
+      "title": "Where to Download GGUF Models - Best Sources & Direct Links (2025)",
+      "url": "https://ggufloader.github.io/download-gguf-models.html",
+      "snippet": "Download GGUF models from HuggingFace, TheBloke, bartowski. Direct links to Mistral 7B, Llama 3.2, Qwen 2.5, DeepSeek, Phi-3 — Q4_K_M and Q5_K_M quantized for local AI."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

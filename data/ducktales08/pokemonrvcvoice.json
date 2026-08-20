@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ducktales08/PokemonRVCVoice",
+  "slug": "ducktales08-pokemonrvcvoice",
+  "author": "ducktales08",
+  "url": "https://huggingface.co/ducktales08/PokemonRVCVoice",
+  "created_at": "2026-08-20T08:16:43.000Z",
+  "updated_at": "2026-08-20T10:06:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2418376921,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ducktales08/RVC-Models · Hugging Face",
+      "url": "https://huggingface.co/ducktales08/RVC-Models",
+      "snippet": "ducktales08 / RVC-Models like 0 License:openrail Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "RVC TTS Voice Models to Download - 18,170 AI Voice Models",
+      "url": "https://www.101soundboards.com/boards/tts/models",
+      "snippet": "Download 17,822 RVCv2 voice model files for use with AI voice conversion and text-to-speech software. Free to download."
+    },
+    {
+      "title": "Find AI Voices | Download RVC Voice Models | The #1 AI Voice Database",
+      "url": "https://ai-search.io/voices",
+      "snippet": "Find AI voices. Search and download free RVC voice models of celebrities, actors, anime characters and more. Use these voices for voice cloning, voice-to-voice, or text-to-speech."
+    },
+    {
+      "title": "Add an AI Voice Model | Voice Models",
+      "url": "https://voice-models.com/add",
+      "snippet": "Submit an AI voice model to Voice Models with its source URL, voice details, and RVC metadata."
+    },
+    {
+      "title": "Rotom Pokedex (Pokemon Anime) [RVC v2, 300 Epochs] AI Voice Model",
+      "url": "https://voice-models.com/model/1qeBuHrZ7YO",
+      "snippet": "Rotom Pokedex (Pokemon Anime) [RVC v2, 300 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    }
+  ]
+}

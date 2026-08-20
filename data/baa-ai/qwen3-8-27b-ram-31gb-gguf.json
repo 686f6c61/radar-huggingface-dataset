@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "baa-ai/Qwen3.8-27B-RAM-31GB-GGUF",
+  "slug": "baa-ai-qwen3-8-27b-ram-31gb-gguf",
+  "author": "baa-ai",
+  "url": "https://huggingface.co/baa-ai/Qwen3.8-27B-RAM-31GB-GGUF",
+  "created_at": "2026-08-20T08:11:02.000Z",
+  "updated_at": "2026-08-20T10:30:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "mixed-precision",
+    "imatrix",
+    "qwen",
+    "qwen3",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 31171659232,
+  "storage_human": "31.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen 3.8 27B GPU Requirements: VRAM, Memory & Hosting",
+      "url": "https://gpupicks.com/qwen-3-8-27b-gpu-requirements/",
+      "snippet": "Calculate VRAM and GPU requirements for Qwen 3.8-27B. Learn how the 3:1 Gated DeltaNet hybrid architecture saves 75% KV cache on RTX 4090, L40S, and A100."
+    },
+    {
+      "title": "Qwen3.8-27B — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/qwen/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B Open Weight Qwen3.8-27B is an AI model released by Qwen on Friday, Aug 14 2026, 11 days after Qwen3.8-Max. It is an open-weight model — the trained weights are available to download and run. It is a 27B parameter model with a 262k token context window."
+    },
+    {
+      "title": "Run Qwen 3.8 27B on AMD Ryzen™ AI Max Agentic PCs and Radeon ™ GPUs",
+      "url": "https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html",
+      "snippet": "Qwen3.8 27B arrives with Day 0 support on AMD Ryzen™ AI processors and Radeon™ graphics cards. Run the latest Qwen model locally with LM Studio on supported AMD hardware. Build and ship local AI applications with Lemonade and first-class AMD inference support."
+    },
+    {
+      "title": "Unsloth Qwen3.8-27B GGUF: Which Quant for Your RAM? (Aug 2026 ...",
+      "url": "https://www.explainx.ai/blog/unsloth-qwen3-8-27b-dynamic-v3-ggufs-august-2026",
+      "snippet": "Unsloth&#x27;s Dynamic v3.0 GGUF quants for Qwen3.8-27B: 1-bit runs on 8GB RAM at 77% accuracy, 4-bit needs 16-19GB. Full hardware table and setup guide."
+    }
+  ]
+}

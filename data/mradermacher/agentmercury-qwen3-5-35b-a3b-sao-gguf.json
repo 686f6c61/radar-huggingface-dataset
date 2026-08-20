@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AgentMercury-Qwen3.5-35B-A3B-SAO-GGUF",
+  "slug": "mradermacher-agentmercury-qwen3-5-35b-a3b-sao-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AgentMercury-Qwen3.5-35B-A3B-SAO-GGUF",
+  "created_at": "2026-08-20T07:02:02.000Z",
+  "updated_at": "2026-08-20T11:24:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agent",
+    "tool-use",
+    "mcp",
+    "reinforcement-learning",
+    "actor-critic",
+    "sao",
+    "qwen3_5",
+    "moe",
+    "en",
+    "base_model:Minbyul/AgentMercury-Qwen3.5-35B-A3B-SAO",
+    "base_model:quantized:Minbyul/AgentMercury-Qwen3.5-35B-A3B-SAO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 237125561632,
+  "storage_human": "237.1 GB",
+  "base_model": "Minbyul/AgentMercury-Qwen3.5-35B-A3B-SAO",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

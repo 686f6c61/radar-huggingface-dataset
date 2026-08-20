@@ -5,7 +5,7 @@
   "author": "Atomic-Germ",
   "url": "https://huggingface.co/Atomic-Germ/Ornith-1.0-35B-A3B-NPU2",
   "created_at": "2026-08-08T21:10:25.000Z",
-  "updated_at": "2026-08-19T02:41:48.000Z",
+  "updated_at": "2026-08-19T20:08:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 975,
+  "downloads_30d": 1312,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

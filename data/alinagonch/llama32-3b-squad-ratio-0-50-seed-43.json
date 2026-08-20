@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama32-3b-squad-ratio-0.50-seed-43",
+  "slug": "alinagonch-llama32-3b-squad-ratio-0-50-seed-43",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.50-seed-43",
+  "created_at": "2026-08-20T10:15:31.000Z",
+  "updated_at": "2026-08-20T10:15:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114517464,
+  "storage_human": "115 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

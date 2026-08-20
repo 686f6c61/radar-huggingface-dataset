@@ -5,7 +5,7 @@
   "author": "Twu31",
   "url": "https://huggingface.co/Twu31/Qwen3.8-27B-AWQ-INT4-ZhChat-MTP",
   "created_at": "2026-08-17T06:28:24.000Z",
-  "updated_at": "2026-08-18T13:09:17.000Z",
+  "updated_at": "2026-08-19T17:51:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -44,7 +44,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 172,
+  "downloads_30d": 727,
   "trending_score": 0,
   "parameters": 6260690960,
   "parameters_human": "6.26B",

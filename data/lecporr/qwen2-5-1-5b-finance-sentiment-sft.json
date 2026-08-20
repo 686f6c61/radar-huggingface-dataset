@@ -5,7 +5,7 @@
   "author": "lecporr",
   "url": "https://huggingface.co/lecporr/qwen2.5-1.5b-finance-sentiment-sft",
   "created_at": "2026-08-19T15:48:25.000Z",
-  "updated_at": "2026-08-19T16:54:49.000Z",
+  "updated_at": "2026-08-19T19:37:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 233161585,
-  "storage_human": "233 MB",
+  "storage_bytes": 898367946,
+  "storage_human": "898 MB",
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"

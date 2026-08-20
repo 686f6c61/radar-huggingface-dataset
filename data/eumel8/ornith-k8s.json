@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "eumel8/ornith-k8s",
+  "slug": "eumel8-ornith-k8s",
+  "author": "eumel8",
+  "url": "https://huggingface.co/eumel8/ornith-k8s",
+  "created_at": "2026-08-20T03:27:07.000Z",
+  "updated_at": "2026-08-20T03:56:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "ornith",
+    "coding-agent",
+    "q4_k_m",
+    "apple-silicon",
+    "function-calling",
+    "tool-use",
+    "llama-cpp",
+    "text-generation",
+    "en",
+    "base_model:ornith-ai/Ornith-1.0-9B",
+    "base_model:finetune:ornith-ai/Ornith-1.0-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepreinforce-ai/Ornith-1.0-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith 1.0 — Open-Source Agentic Coding Models",
+      "url": "https://ornith.site/",
+      "snippet": "Complete Ornith 1.0 guide: self-scaffolding AI models for agentic coding. 9B to 397B sizes, MIT licensed, benchmark results, local setup, and model comparison."
+    },
+    {
+      "title": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding",
+      "url": "https://ornith.ai/ornith_1_0.html",
+      "snippet": "Introducing Ornith-1.0, a self-improving family of open-source models specially for agentic coding tasks."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Ornith-1.0 ships as a dense 9B model plus two Mixture-of-Experts models (35B, 397B). All checkpoints expose the same OpenAI-compatible interface and support a 256K (262,144-token) context window; the dense 9B fits on a single 80GB GPU, while the MoE checkpoints are sharded across a multi-GPU node with tensor parallelism."
+    }
+  ]
+}

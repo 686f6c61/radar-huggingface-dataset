@@ -5,7 +5,7 @@
   "author": "Atomic-Germ",
   "url": "https://huggingface.co/Atomic-Germ/Qwen3.5-9B-Claude-Code-NPU2",
   "created_at": "2026-08-06T00:51:21.000Z",
-  "updated_at": "2026-08-19T18:34:28.000Z",
+  "updated_at": "2026-08-19T20:06:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1927,
+  "downloads_30d": 2281,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
