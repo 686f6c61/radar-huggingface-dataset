@@ -5,7 +5,7 @@
   "author": "AnkitAI",
   "url": "https://huggingface.co/AnkitAI/Parable-Qwen3-8B-Claude-Fable-5",
   "created_at": "2026-07-14T11:06:59.000Z",
-  "updated_at": "2026-08-17T07:45:08.000Z",
+  "updated_at": "2026-08-20T07:59:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 441,
+  "downloads_30d": 435,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
-  "storage_bytes": 32785879007,
-  "storage_human": "32.8 GB",
+  "storage_bytes": 49167395431,
+  "storage_human": "49.2 GB",
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"

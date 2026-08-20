@@ -5,7 +5,7 @@
   "author": "letechlead",
   "url": "https://huggingface.co/letechlead/Ornith-1.5-9B-INT4-W4A16-AutoRound",
   "created_at": "2026-08-19T15:32:32.000Z",
-  "updated_at": "2026-08-20T11:08:35.000Z",
+  "updated_at": "2026-08-20T11:49:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

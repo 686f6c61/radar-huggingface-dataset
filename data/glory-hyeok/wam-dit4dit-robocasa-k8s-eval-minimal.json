@@ -5,7 +5,7 @@
   "author": "glory-hyeok",
   "url": "https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-k8s-eval-minimal",
   "created_at": "2026-07-06T02:37:00.000Z",
-  "updated_at": "2026-08-18T03:42:17.000Z",
+  "updated_at": "2026-08-19T13:47:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 444448252440,
-  "storage_human": "444.4 GB",
+  "storage_bytes": 77588436870,
+  "storage_human": "77.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

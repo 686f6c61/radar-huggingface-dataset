@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Ornith-1.5-9B-uncensored-GGUF",
   "created_at": "2026-08-20T05:08:43.000Z",
-  "updated_at": "2026-08-20T05:50:49.000Z",
+  "updated_at": "2026-08-20T13:46:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 8953803264,

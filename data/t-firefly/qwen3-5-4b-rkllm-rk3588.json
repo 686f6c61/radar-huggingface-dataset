@@ -5,7 +5,7 @@
   "author": "t-firefly",
   "url": "https://huggingface.co/t-firefly/qwen3.5-4b-rkllm-rk3588",
   "created_at": "2026-07-13T06:35:35.000Z",
-  "updated_at": "2026-08-19T08:28:08.000Z",
+  "updated_at": "2026-08-20T01:14:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 27,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

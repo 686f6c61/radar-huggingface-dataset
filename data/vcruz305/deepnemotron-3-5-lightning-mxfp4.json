@@ -22,8 +22,8 @@
     "text-generation",
     "en",
     "dataset:r0b0tlab/deepseek-v4-pro-0813-agentic",
-    "base_model:vcruz305/DeepNemotron-3.5-Lightning-BF16",
-    "base_model:quantized:vcruz305/DeepNemotron-3.5-Lightning-BF16",
+    "base_model:vcruz305/DeepNemotron-3.5-Lightning-Beta-BF16",
+    "base_model:quantized:vcruz305/DeepNemotron-3.5-Lightning-Beta-BF16",
     "license:other",
     "endpoints_compatible",
     "region:us"

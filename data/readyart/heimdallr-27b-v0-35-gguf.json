@@ -5,7 +5,7 @@
   "author": "ReadyArt",
   "url": "https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35-GGUF",
   "created_at": "2026-08-19T18:27:38.000Z",
-  "updated_at": "2026-08-20T09:03:30.000Z",
+  "updated_at": "2026-08-20T12:37:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 180454110400,
-  "storage_human": "180.5 GB",
+  "storage_bytes": 376507316320,
+  "storage_human": "376.5 GB",
   "base_model": "ReadyArt/Heimdallr-27B-v0.35",
   "formats": [
     "gguf"

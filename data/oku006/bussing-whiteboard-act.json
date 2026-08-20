@@ -5,7 +5,7 @@
   "author": "oku006",
   "url": "https://huggingface.co/oku006/bussing-whiteboard-act",
   "created_at": "2026-08-10T11:52:45.000Z",
-  "updated_at": "2026-08-18T11:45:05.000Z",
+  "updated_at": "2026-08-20T17:11:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 142279304,
   "parameters_human": "142.3M",
-  "storage_bytes": 1707536552,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 2276704480,
+  "storage_human": "2.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

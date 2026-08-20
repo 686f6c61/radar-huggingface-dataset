@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-Hermes-Agentic-GGUF",
   "created_at": "2026-08-18T07:20:37.000Z",
-  "updated_at": "2026-08-18T08:05:37.000Z",
+  "updated_at": "2026-08-18T10:21:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 781,
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",

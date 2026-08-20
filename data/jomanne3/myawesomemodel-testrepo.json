@@ -4,8 +4,8 @@
   "slug": "jomanne3-myawesomemodel-testrepo",
   "author": "Jomanne3",
   "url": "https://huggingface.co/Jomanne3/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-18T09:30:14.000Z",
-  "updated_at": "2026-08-18T09:30:26.000Z",
+  "created_at": "2026-08-20T17:52:20.000Z",
+  "updated_at": "2026-08-20T17:52:47.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -32,7 +32,7 @@
   "is_conversational": false,
   "gated": false,
   "removed": true,
-  "removed_at": "2026-08-20T11:34:32.201Z",
+  "removed_at": "2026-08-20T18:26:36.958Z",
   "benchmarks": [],
   "sources": [
     {

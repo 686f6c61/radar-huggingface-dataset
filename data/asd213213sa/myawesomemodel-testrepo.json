@@ -4,8 +4,8 @@
   "slug": "asd213213sa-myawesomemodel-testrepo",
   "author": "ASD213213SA",
   "url": "https://huggingface.co/ASD213213SA/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-15T01:22:45.000Z",
-  "updated_at": "2026-08-15T01:22:57.000Z",
+  "created_at": "2026-08-20T13:01:41.000Z",
+  "updated_at": "2026-08-20T13:02:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 116,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-18T10:08:51.041Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

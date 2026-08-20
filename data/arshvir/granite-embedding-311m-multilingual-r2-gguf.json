@@ -5,7 +5,7 @@
   "author": "arshvir",
   "url": "https://huggingface.co/arshvir/granite-embedding-311m-multilingual-r2-GGUF",
   "created_at": "2026-08-17T17:59:22.000Z",
-  "updated_at": "2026-08-17T18:07:46.000Z",
+  "updated_at": "2026-08-18T16:42:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 76,
+  "downloads_30d": 166,
   "trending_score": 0,
   "parameters": 311664384,
   "parameters_human": "311.7M",

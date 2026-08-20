@@ -5,7 +5,7 @@
   "author": "modal-labs",
   "url": "https://huggingface.co/modal-labs/glm-5.2-nvfp4-experts-only",
   "created_at": "2026-06-25T18:10:07.000Z",
-  "updated_at": "2026-08-18T04:07:12.000Z",
+  "updated_at": "2026-08-20T09:32:57.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 6753,
+  "downloads_30d": 8908,
   "trending_score": 0,
   "parameters": 380989135104,
   "parameters_human": "380.99B",

@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/SAGI",
   "created_at": "2026-01-17T03:53:48.000Z",
-  "updated_at": "2026-08-17T13:16:48.000Z",
+  "updated_at": "2026-08-18T13:16:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 3137,
+  "downloads_30d": 3248,
   "trending_score": 0,
   "parameters": 52729731,
   "parameters_human": "52.7M",

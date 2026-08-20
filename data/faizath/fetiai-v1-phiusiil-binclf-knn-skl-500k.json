@@ -5,7 +5,7 @@
   "author": "faizath",
   "url": "https://huggingface.co/faizath/fetiai-v1-phiusiil-binclf-knn-skl-500k",
   "created_at": "2026-08-20T07:42:24.000Z",
-  "updated_at": "2026-08-20T07:40:46.000Z",
+  "updated_at": "2026-08-20T12:29:54.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",
@@ -21,7 +21,7 @@
     "phiusiil",
     "knn",
     "scikit-learn",
-    "dataset:faizath/phiusiil-if3070-stei-itb-2024-2025-1",
+    "dataset:feti-ai/phiusiil-if3070-stei-itb-2024-2025-1",
     "license:mit",
     "model-index",
     "region:us"

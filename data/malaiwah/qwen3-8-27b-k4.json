@@ -5,7 +5,7 @@
   "author": "malaiwah",
   "url": "https://huggingface.co/malaiwah/Qwen3.8-27B-K4",
   "created_at": "2026-08-14T16:50:22.000Z",
-  "updated_at": "2026-08-15T08:39:52.000Z",
+  "updated_at": "2026-08-20T16:32:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,11 +32,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 219,
+  "downloads_30d": 329,
   "trending_score": 0,
   "parameters": 14156812528,
   "parameters_human": "14.16B",
-  "storage_bytes": 28328686629,
+  "storage_bytes": 28336657405,
   "storage_human": "28.3 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

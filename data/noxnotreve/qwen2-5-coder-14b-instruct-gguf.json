@@ -33,12 +33,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 119,
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
-  "storage_bytes": 212937948224,
-  "storage_human": "212.9 GB",
+  "storage_bytes": 195902497120,
+  "storage_human": "195.9 GB",
   "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
   "formats": [
     "gguf"

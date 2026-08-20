@@ -5,7 +5,7 @@
   "author": "mindlab-research",
   "url": "https://huggingface.co/mindlab-research/Macaron-V1-Tall",
   "created_at": "2026-07-22T15:55:45.000Z",
-  "updated_at": "2026-08-20T00:23:00.000Z",
+  "updated_at": "2026-08-20T10:44:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,6 +36,7 @@
     "en",
     "zh",
     "license:mit",
+    "model-index",
     "eval-results",
     "endpoints_compatible",
     "region:us"

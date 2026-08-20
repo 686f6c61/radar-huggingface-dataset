@@ -5,7 +5,7 @@
   "author": "NoeFlandre",
   "url": "https://huggingface.co/NoeFlandre/osm-polygon-sentence-classifier",
   "created_at": "2026-08-04T07:27:53.000Z",
-  "updated_at": "2026-08-20T07:15:19.000Z",
+  "updated_at": "2026-08-20T13:44:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 571994403187,
-  "storage_human": "572.0 GB",
+  "storage_bytes": 582703792392,
+  "storage_human": "582.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

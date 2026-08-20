@@ -5,7 +5,7 @@
   "author": "inclusionAI",
   "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-base-midtrain",
   "created_at": "2026-08-11T12:10:20.000Z",
-  "updated_at": "2026-08-19T16:15:38.000Z",
+  "updated_at": "2026-08-20T12:53:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

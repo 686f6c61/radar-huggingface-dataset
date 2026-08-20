@@ -5,7 +5,7 @@
   "author": "useful-quants",
   "url": "https://huggingface.co/useful-quants/LFM2.5-VL-3B-NVFP4-FP8-Mixed",
   "created_at": "2026-08-17T20:55:21.000Z",
-  "updated_at": "2026-08-17T22:26:20.000Z",
+  "updated_at": "2026-08-18T21:38:48.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -65,7 +65,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 53,
+  "downloads_30d": 61,
   "trending_score": 0,
   "parameters": 2132579568,
   "parameters_human": "2.13B",

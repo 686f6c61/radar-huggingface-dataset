@@ -5,7 +5,7 @@
   "author": "kev-KOH",
   "url": "https://huggingface.co/kev-KOH/time-embed-bge-m3-lms-temporal-v2-0-multisource",
   "created_at": "2026-08-19T11:58:10.000Z",
-  "updated_at": "2026-08-19T11:58:10.000Z",
+  "updated_at": "2026-08-19T12:00:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -30,13 +30,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": null,
-  "storage_human": null,
-  "base_model": null,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2288168443,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
   "formats": [
     "safetensors"
   ],

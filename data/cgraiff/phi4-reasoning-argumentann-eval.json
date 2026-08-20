@@ -5,7 +5,7 @@
   "author": "cgraiff",
   "url": "https://huggingface.co/cgraiff/phi4-reasoning-argumentann-eval",
   "created_at": "2026-08-19T09:22:54.000Z",
-  "updated_at": "2026-08-19T10:25:39.000Z",
+  "updated_at": "2026-08-19T12:57:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 340911482,
-  "storage_human": "341 MB",
+  "storage_bytes": 852266270,
+  "storage_human": "852 MB",
   "base_model": "microsoft/Phi-4-reasoning",
   "formats": [
     "safetensors"

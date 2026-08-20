@@ -5,13 +5,14 @@
   "author": "ntoskrnl7",
   "url": "https://huggingface.co/ntoskrnl7/sharp-android-onnx-test",
   "created_at": "2026-08-20T02:50:21.000Z",
-  "updated_at": "2026-08-20T10:06:03.000Z",
+  "updated_at": "2026-08-20T18:32:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "onnx",
     "region:us"
   ],
   "likes": 0,
@@ -19,10 +20,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2694535398,
-  "storage_human": "2.7 GB",
+  "storage_bytes": 4118621556,
+  "storage_human": "4.1 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

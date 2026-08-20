@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/styletts2-ljspeech-loom",
   "created_at": "2026-08-11T11:04:15.000Z",
-  "updated_at": "2026-08-16T13:04:06.000Z",
+  "updated_at": "2026-08-20T15:25:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

@@ -5,7 +5,7 @@
   "author": "MicroFlare",
   "url": "https://huggingface.co/MicroFlare/nanoFlare-v1",
   "created_at": "2026-08-15T04:19:48.000Z",
-  "updated_at": "2026-08-15T05:03:52.000Z",
+  "updated_at": "2026-08-18T19:43:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 193,
+  "downloads_30d": 902,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 7898675936,
-  "storage_human": "7.9 GB",
+  "storage_bytes": 15702816192,
+  "storage_human": "15.7 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

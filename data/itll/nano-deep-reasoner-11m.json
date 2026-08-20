@@ -5,7 +5,7 @@
   "author": "ITLL",
   "url": "https://huggingface.co/ITLL/Nano.Deep.Reasoner.11m",
   "created_at": "2026-08-19T09:49:55.000Z",
-  "updated_at": "2026-08-19T10:14:39.000Z",
+  "updated_at": "2026-08-19T10:51:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": 12703680,
   "parameters_human": "12.7M",
-  "storage_bytes": 371323974,
-  "storage_human": "371 MB",
+  "storage_bytes": 568282474,
+  "storage_human": "568 MB",
   "base_model": null,
   "formats": [
     "safetensors"

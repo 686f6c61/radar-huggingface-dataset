@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 552845034562,
   "parameters_human": "552.85B",
-  "storage_bytes": 593850351347,
-  "storage_human": "593.9 GB",
+  "storage_bytes": 592037100903,
+  "storage_human": "592.0 GB",
   "base_model": "thinkingmachines/Inkling",
   "formats": [
     "safetensors"

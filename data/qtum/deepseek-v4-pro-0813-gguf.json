@@ -5,7 +5,7 @@
   "author": "qtum",
   "url": "https://huggingface.co/qtum/DeepSeek-V4-Pro-0813-GGUF",
   "created_at": "2026-08-17T11:39:43.000Z",
-  "updated_at": "2026-08-17T21:22:42.000Z",
+  "updated_at": "2026-08-20T18:55:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 1572999528803,
   "parameters_human": "1573.00B",
-  "storage_bytes": 711084274336,
-  "storage_human": "711.1 GB",
+  "storage_bytes": 2681667514912,
+  "storage_human": "2681.7 GB",
   "base_model": "deepseek-ai/DeepSeek-V4-Pro-0813",
   "formats": [
     "gguf"

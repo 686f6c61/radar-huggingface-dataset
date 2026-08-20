@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-heretic-ara-i1-GGUF",
   "created_at": "2026-08-20T10:08:59.000Z",
-  "updated_at": "2026-08-20T11:52:56.000Z",
+  "updated_at": "2026-08-20T12:00:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,13 +28,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",
-  "storage_bytes": 228913944736,
-  "storage_human": "228.9 GB",
+  "storage_bytes": 241136357088,
+  "storage_human": "241.1 GB",
   "base_model": "mewse/gemma-4-26B-A4B-it-qat-q4_0-unquantized-heretic-ara",
   "formats": [
     "gguf"

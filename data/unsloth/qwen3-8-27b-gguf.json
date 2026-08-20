@@ -5,7 +5,7 @@
   "author": "unsloth",
   "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
   "created_at": "2026-08-13T08:28:40.000Z",
-  "updated_at": "2026-08-19T16:39:23.000Z",
+  "updated_at": "2026-08-20T12:04:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,13 +23,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 2243,
+  "likes": 2330,
   "downloads_30d": 5126652,
-  "trending_score": 2106,
+  "trending_score": 2172,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 1053641664992,
-  "storage_human": "1053.6 GB",
+  "storage_bytes": 1053655307648,
+  "storage_human": "1053.7 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

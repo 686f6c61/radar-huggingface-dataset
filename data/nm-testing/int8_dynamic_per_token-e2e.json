@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/int8_dynamic_per_token-e2e",
   "created_at": "2026-07-25T05:12:03.000Z",
-  "updated_at": "2026-08-18T02:31:39.000Z",
+  "updated_at": "2026-08-20T01:57:54.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 310,
+  "downloads_30d": 305,
   "trending_score": 0,
   "parameters": 1100048384,
   "parameters_human": "1.10B",

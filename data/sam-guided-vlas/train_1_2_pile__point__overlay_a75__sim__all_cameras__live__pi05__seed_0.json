@@ -5,14 +5,21 @@
   "author": "sam-guided-vlas",
   "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__point__overlay_a75__sim__all_cameras__live__pi05__seed_0",
   "created_at": "2026-08-20T03:51:24.000Z",
-  "updated_at": "2026-08-20T10:59:01.000Z",
+  "updated_at": "2026-08-20T12:00:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
   "library": "lerobot",
   "languages": [],
   "tags": [
+    "lerobot",
     "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:sam-guided-vlas/train_1_2_pile__point__overlay_a75__sim__all_cameras__live",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
@@ -20,8 +27,8 @@
   "trending_score": 0,
   "parameters": 4143404816,
   "parameters_human": "4.14B",
-  "storage_bytes": 195862115520,
-  "storage_human": "195.9 GB",
+  "storage_bytes": 220344879624,
+  "storage_human": "220.3 GB",
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"

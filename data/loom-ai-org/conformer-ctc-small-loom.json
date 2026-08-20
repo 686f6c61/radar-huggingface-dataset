@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/conformer-ctc-small-loom",
   "created_at": "2026-08-10T20:52:22.000Z",
-  "updated_at": "2026-08-16T13:35:45.000Z",
+  "updated_at": "2026-08-20T15:22:23.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

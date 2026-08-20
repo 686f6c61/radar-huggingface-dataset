@@ -5,7 +5,7 @@
   "author": "paulvision",
   "url": "https://huggingface.co/paulvision/medscript-dora-summariser",
   "created_at": "2026-06-03T16:12:20.000Z",
-  "updated_at": "2026-08-19T07:38:48.000Z",
+  "updated_at": "2026-08-20T06:51:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 358335450,
-  "storage_human": "358 MB",
+  "storage_bytes": 1952815532,
+  "storage_human": "2.0 GB",
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"

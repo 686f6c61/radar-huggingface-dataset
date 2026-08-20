@@ -5,7 +5,7 @@
   "author": "leeyunjai",
   "url": "https://huggingface.co/leeyunjai/vapi-od",
   "created_at": "2026-07-23T01:20:51.000Z",
-  "updated_at": "2026-08-19T11:14:16.000Z",
+  "updated_at": "2026-08-20T06:42:16.000Z",
   "license": "agpl-3.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8695668319,
-  "storage_human": "8.7 GB",
+  "storage_bytes": 8791647329,
+  "storage_human": "8.8 GB",
   "base_model": null,
   "formats": [
     "onnx"

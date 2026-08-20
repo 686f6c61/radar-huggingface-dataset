@@ -5,7 +5,7 @@
   "author": "Davidmg0815",
   "url": "https://huggingface.co/Davidmg0815/Qwen3.8-27B-MTP-GGUF",
   "created_at": "2026-08-14T16:58:27.000Z",
-  "updated_at": "2026-08-14T17:01:23.000Z",
+  "updated_at": "2026-08-20T08:01:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,11 +32,11 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1589,
+  "downloads_30d": 1611,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 54769907008,
+  "storage_bytes": 54770573181,
   "storage_human": "54.8 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

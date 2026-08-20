@@ -44,8 +44,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-08-20T13:40:51.157Z",
   "benchmarks": [
     {
       "task": "Cross Encoder Correlation",

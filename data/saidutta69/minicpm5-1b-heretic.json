@@ -5,7 +5,7 @@
   "author": "saidutta69",
   "url": "https://huggingface.co/saidutta69/MiniCPM5-1B-heretic",
   "created_at": "2026-07-15T19:45:55.000Z",
-  "updated_at": "2026-08-20T00:45:31.000Z",
+  "updated_at": "2026-08-20T16:21:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -50,7 +50,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1093,
+  "downloads_30d": 1203,
   "trending_score": 0,
   "parameters": 1080632832,
   "parameters_human": "1.08B",

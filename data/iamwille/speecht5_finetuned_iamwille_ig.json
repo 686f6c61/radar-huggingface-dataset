@@ -5,7 +5,7 @@
   "author": "iamwille",
   "url": "https://huggingface.co/iamwille/speecht5_finetuned_iamwille_ig",
   "created_at": "2026-08-19T23:39:55.000Z",
-  "updated_at": "2026-08-20T11:51:08.000Z",
+  "updated_at": "2026-08-20T17:42:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-audio",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 144445410,
   "parameters_human": "144.4M",
-  "storage_bytes": 47959185514,
-  "storage_human": "48.0 GB",
+  "storage_bytes": 85520425086,
+  "storage_human": "85.5 GB",
   "base_model": "microsoft/speecht5_tts",
   "formats": [
     "safetensors"

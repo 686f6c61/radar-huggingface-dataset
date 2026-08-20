@@ -5,7 +5,7 @@
   "author": "SiddhJagani",
   "url": "https://huggingface.co/SiddhJagani/Qwen3.8-9B-mlx-5Bit",
   "created_at": "2026-08-19T11:52:33.000Z",
-  "updated_at": "2026-08-19T11:52:33.000Z",
+  "updated_at": "2026-08-19T11:52:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,13 +36,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 119,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": null,
-  "storage_human": null,
-  "base_model": null,
+  "parameters": 1679700480,
+  "parameters_human": "1.68B",
+  "storage_bytes": 6177242995,
+  "storage_human": "6.2 GB",
+  "base_model": "empero-ai/Qwen3.8-9B",
   "formats": [
     "mlx",
     "safetensors"

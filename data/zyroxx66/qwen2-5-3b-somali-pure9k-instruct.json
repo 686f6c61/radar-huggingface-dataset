@@ -5,7 +5,7 @@
   "author": "Zyroxx66",
   "url": "https://huggingface.co/Zyroxx66/Qwen2.5-3B-Somali-Pure9k-Instruct",
   "created_at": "2026-08-17T17:08:32.000Z",
-  "updated_at": "2026-08-17T17:40:35.000Z",
+  "updated_at": "2026-08-17T18:26:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3537598663,
-  "storage_human": "3.5 GB",
+  "storage_bytes": 8826854359,
+  "storage_human": "8.8 GB",
   "base_model": "unsloth/Qwen2.5-3B-bnb-4bit",
   "formats": [
     "safetensors"

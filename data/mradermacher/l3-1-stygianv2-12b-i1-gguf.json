@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/L3.1-Stygianv2-12B-i1-GGUF",
   "created_at": "2026-08-17T16:07:46.000Z",
-  "updated_at": "2026-08-17T16:36:44.000Z",
+  "updated_at": "2026-08-17T18:49:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,12 +27,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2008,
   "trending_score": 0,
   "parameters": 11956310080,
   "parameters_human": "11.96B",
-  "storage_bytes": 17085823904,
-  "storage_human": "17.1 GB",
+  "storage_bytes": 137526933952,
+  "storage_human": "137.5 GB",
   "base_model": "kromcomp/L3.1-Stygianv2-12B",
   "formats": [
     "gguf"

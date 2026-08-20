@@ -5,7 +5,7 @@
   "author": "eliodecolli",
   "url": "https://huggingface.co/eliodecolli/distilbert-learning",
   "created_at": "2026-08-18T22:04:03.000Z",
-  "updated_at": "2026-08-18T22:04:37.000Z",
+  "updated_at": "2026-08-19T12:51:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 66956548,
   "parameters_human": "67.0M",
-  "storage_bytes": 267843921,
-  "storage_human": "268 MB",
+  "storage_bytes": 535687842,
+  "storage_human": "536 MB",
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"

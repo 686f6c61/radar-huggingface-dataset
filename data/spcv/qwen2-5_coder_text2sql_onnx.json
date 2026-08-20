@@ -5,7 +5,7 @@
   "author": "spcv",
   "url": "https://huggingface.co/spcv/qwen2.5_coder_text2sql_onnx",
   "created_at": "2026-08-12T15:05:23.000Z",
-  "updated_at": "2026-08-19T02:08:52.000Z",
+  "updated_at": "2026-08-20T16:58:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

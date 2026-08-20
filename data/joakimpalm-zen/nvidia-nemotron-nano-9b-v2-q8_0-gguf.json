@@ -5,7 +5,7 @@
   "author": "Joakimpalm-Zen",
   "url": "https://huggingface.co/Joakimpalm-Zen/NVIDIA-Nemotron-Nano-9B-v2-Q8_0-GGUF",
   "created_at": "2026-08-19T21:23:24.000Z",
-  "updated_at": "2026-08-19T21:24:23.000Z",
+  "updated_at": "2026-08-20T14:31:13.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

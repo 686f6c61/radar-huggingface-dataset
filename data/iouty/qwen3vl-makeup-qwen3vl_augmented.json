@@ -5,7 +5,7 @@
   "author": "iouty",
   "url": "https://huggingface.co/iouty/qwen3vl-makeup-qwen3vl_augmented",
   "created_at": "2026-08-19T08:23:07.000Z",
-  "updated_at": "2026-08-19T08:23:16.000Z",
+  "updated_at": "2026-08-20T08:01:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 216915886,
-  "storage_human": "217 MB",
+  "storage_bytes": 1655366662,
+  "storage_human": "1.7 GB",
   "base_model": "unsloth/qwen3-vl-8b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

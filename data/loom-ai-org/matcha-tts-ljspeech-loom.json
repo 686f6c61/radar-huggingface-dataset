@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/matcha-tts-ljspeech-loom",
   "created_at": "2026-08-11T11:43:14.000Z",
-  "updated_at": "2026-08-16T13:05:53.000Z",
+  "updated_at": "2026-08-20T15:24:17.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

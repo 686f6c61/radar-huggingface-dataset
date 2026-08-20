@@ -5,7 +5,7 @@
   "author": "orcarouter",
   "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-NVFP4",
   "created_at": "2026-08-19T03:17:26.000Z",
-  "updated_at": "2026-08-19T06:17:54.000Z",
+  "updated_at": "2026-08-20T08:41:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -46,13 +46,13 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 23,
+  "likes": 27,
   "downloads_30d": 5255,
-  "trending_score": 19,
+  "trending_score": 23,
   "parameters": 20807661664,
   "parameters_human": "20.81B",
-  "storage_bytes": 43181331944,
-  "storage_human": "43.2 GB",
+  "storage_bytes": 23437577312,
+  "storage_human": "23.4 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

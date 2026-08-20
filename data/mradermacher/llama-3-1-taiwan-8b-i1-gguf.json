@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Llama-3.1-Taiwan-8B-i1-GGUF",
   "created_at": "2026-08-16T14:04:49.000Z",
-  "updated_at": "2026-08-16T14:09:22.000Z",
+  "updated_at": "2026-08-16T17:20:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,12 +24,12 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2952,
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",
-  "storage_bytes": 3184147296,
-  "storage_human": "3.2 GB",
+  "storage_bytes": 93806008480,
+  "storage_human": "93.8 GB",
   "base_model": "yentinglin/Llama-3.1-Taiwan-8B",
   "formats": [
     "gguf"

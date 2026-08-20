@@ -5,7 +5,7 @@
   "author": "acvlab",
   "url": "https://huggingface.co/acvlab/ABot-OCR",
   "created_at": "2026-05-26T09:39:37.000Z",
-  "updated_at": "2026-08-18T09:46:57.000Z",
+  "updated_at": "2026-08-18T10:50:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 16,
-  "downloads_30d": 177,
+  "downloads_30d": 233,
   "trending_score": 0,
   "parameters": 2127532032,
   "parameters_human": "2.13B",
-  "storage_bytes": 8532905614,
-  "storage_human": "8.5 GB",
+  "storage_bytes": 4267269985,
+  "storage_human": "4.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

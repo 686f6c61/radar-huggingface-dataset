@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Luth-2-2B-i1-GGUF",
   "created_at": "2026-08-19T09:17:58.000Z",
-  "updated_at": "2026-08-19T10:03:05.000Z",
+  "updated_at": "2026-08-19T10:41:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,15 +25,16 @@
     "base_model:quantized:kurakurai/Luth-2-2B",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 255,
   "trending_score": 0,
-  "parameters": 479418,
-  "parameters_human": "479418",
-  "storage_bytes": 1945728,
-  "storage_human": "2 MB",
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 25796879744,
+  "storage_human": "25.8 GB",
   "base_model": "kurakurai/Luth-2-2B",
   "formats": [
     "gguf"

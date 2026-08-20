@@ -5,7 +5,7 @@
   "author": "Axilotal",
   "url": "https://huggingface.co/Axilotal/cadquery-lora-cot-v2",
   "created_at": "2026-08-16T08:55:29.000Z",
-  "updated_at": "2026-08-16T09:28:39.000Z",
+  "updated_at": "2026-08-16T13:52:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,9 +15,9 @@
     "transformers",
     "safetensors",
     "generated_from_trainer",
-    "sft",
     "unsloth",
     "trl",
+    "sft",
     "endpoints_compatible",
     "region:us"
   ],
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 172961051,
-  "storage_human": "173 MB",
+  "storage_bytes": 980632916,
+  "storage_human": "981 MB",
   "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
   "formats": [
     "safetensors"

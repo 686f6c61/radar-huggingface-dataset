@@ -5,7 +5,7 @@
   "author": "kibiddd",
   "url": "https://huggingface.co/kibiddd/CAT-Qwen-v2",
   "created_at": "2026-08-19T21:08:08.000Z",
-  "updated_at": "2026-08-19T21:18:17.000Z",
+  "updated_at": "2026-08-20T14:45:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3755569632,
-  "storage_human": "3.8 GB",
+  "storage_bytes": 7491149840,
+  "storage_human": "7.5 GB",
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"

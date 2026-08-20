@@ -5,7 +5,7 @@
   "author": "Intel",
   "url": "https://huggingface.co/Intel/Qwen3.8-27B-bpw2.8-AutoRound",
   "created_at": "2026-08-19T05:08:02.000Z",
-  "updated_at": "2026-08-19T06:22:00.000Z",
+  "updated_at": "2026-08-20T01:00:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,13 +21,13 @@
     "auto-round",
     "region:us"
   ],
-  "likes": 4,
-  "downloads_30d": 0,
+  "likes": 5,
+  "downloads_30d": 200,
   "trending_score": 0,
   "parameters": 5283237360,
   "parameters_human": "5.28B",
-  "storage_bytes": 14860776461,
-  "storage_human": "14.9 GB",
+  "storage_bytes": 24310383453,
+  "storage_human": "24.3 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

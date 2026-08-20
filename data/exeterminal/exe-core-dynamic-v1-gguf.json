@@ -5,7 +5,7 @@
   "author": "exeterminal",
   "url": "https://huggingface.co/exeterminal/Exe-Core-Dynamic-V1-GGUF",
   "created_at": "2026-08-15T17:34:42.000Z",
-  "updated_at": "2026-08-18T22:31:48.000Z",
+  "updated_at": "2026-08-20T18:55:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 212653709205,
+  "storage_bytes": 212653931704,
   "storage_human": "212.7 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

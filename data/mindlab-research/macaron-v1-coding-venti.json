@@ -5,7 +5,7 @@
   "author": "mindlab-research",
   "url": "https://huggingface.co/mindlab-research/Macaron-V1-Coding-Venti",
   "created_at": "2026-07-20T15:49:37.000Z",
-  "updated_at": "2026-08-20T00:22:30.000Z",
+  "updated_at": "2026-08-20T10:45:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,6 +32,7 @@
     "en",
     "zh",
     "license:mit",
+    "model-index",
     "eval-results",
     "endpoints_compatible",
     "region:us"
