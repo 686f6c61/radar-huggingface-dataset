@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Ranger-7B-GGUF",
   "created_at": "2026-08-18T03:59:07.000Z",
-  "updated_at": "2026-08-18T04:27:09.000Z",
+  "updated_at": "2026-08-18T10:21:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 2,
+  "downloads_30d": 490,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",

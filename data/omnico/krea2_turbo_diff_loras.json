@@ -5,7 +5,7 @@
   "author": "Omnico",
   "url": "https://huggingface.co/Omnico/Krea2_turbo_diff_loras",
   "created_at": "2026-08-01T13:23:43.000Z",
-  "updated_at": "2026-08-18T18:36:27.000Z",
+  "updated_at": "2026-08-21T07:10:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 24,
-  "downloads_30d": 23607,
+  "downloads_30d": 28552,
   "trending_score": 10,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 197533709064,
-  "storage_human": "197.5 GB",
+  "storage_bytes": 248108390760,
+  "storage_human": "248.1 GB",
   "base_model": "krea/Krea-2-Turbo",
   "formats": [
     "diffusers"

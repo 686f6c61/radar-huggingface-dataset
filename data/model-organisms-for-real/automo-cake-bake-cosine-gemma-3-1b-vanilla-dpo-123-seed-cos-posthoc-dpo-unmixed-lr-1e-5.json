@@ -5,7 +5,7 @@
   "author": "model-organisms-for-real",
   "url": "https://huggingface.co/model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-posthoc-dpo-unmixed-lr-1e-5",
   "created_at": "2026-08-19T15:10:10.000Z",
-  "updated_at": "2026-08-19T15:10:25.000Z",
+  "updated_at": "2026-08-19T21:53:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

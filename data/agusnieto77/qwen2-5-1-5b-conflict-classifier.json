@@ -5,7 +5,7 @@
   "author": "agusnieto77",
   "url": "https://huggingface.co/agusnieto77/qwen2.5-1.5b-conflict-classifier",
   "created_at": "2026-08-16T17:58:13.000Z",
-  "updated_at": "2026-08-17T03:39:55.000Z",
+  "updated_at": "2026-08-19T19:56:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -16,6 +16,7 @@
   "tags": [
     "peft",
     "safetensors",
+    "qwen2.5",
     "lora",
     "news-classification",
     "social-conflict",
@@ -29,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 41,
+  "downloads_30d": 62,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

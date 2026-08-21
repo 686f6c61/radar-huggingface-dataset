@@ -5,7 +5,7 @@
   "author": "oracomputing",
   "url": "https://huggingface.co/oracomputing/Qwen3-4B-ORA-QAT-W3",
   "created_at": "2026-08-19T09:15:39.000Z",
-  "updated_at": "2026-08-19T09:44:07.000Z",
+  "updated_at": "2026-08-21T11:39:53.000Z",
   "license": "ora-custom-model-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 208,
+  "downloads_30d": 220,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

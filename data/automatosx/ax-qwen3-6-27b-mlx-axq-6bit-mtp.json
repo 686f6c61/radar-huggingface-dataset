@@ -5,7 +5,7 @@
   "author": "AutomatosX",
   "url": "https://huggingface.co/AutomatosX/AX-Qwen3.6-27B-MLX-AXQ-6bit-MTP",
   "created_at": "2026-08-02T04:44:10.000Z",
-  "updated_at": "2026-08-15T03:33:14.000Z",
+  "updated_at": "2026-08-21T05:25:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 604,
+  "downloads_30d": 607,
   "trending_score": 0,
   "parameters": 5950882304,
   "parameters_human": "5.95B",

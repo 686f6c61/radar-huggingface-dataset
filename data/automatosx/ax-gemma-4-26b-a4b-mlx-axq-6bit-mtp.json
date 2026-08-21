@@ -5,7 +5,7 @@
   "author": "AutomatosX",
   "url": "https://huggingface.co/AutomatosX/AX-gemma-4-26b-a4b-MLX-AXQ-6bit-MTP",
   "created_at": "2026-08-09T01:42:36.000Z",
-  "updated_at": "2026-08-15T03:10:24.000Z",
+  "updated_at": "2026-08-21T06:15:37.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 397,
+  "downloads_30d": 402,
   "trending_score": 0,
   "parameters": 5183007774,
   "parameters_human": "5.18B",

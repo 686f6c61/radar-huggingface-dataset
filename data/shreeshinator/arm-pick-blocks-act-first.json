@@ -5,7 +5,7 @@
   "author": "shreeshinator",
   "url": "https://huggingface.co/shreeshinator/arm-pick-blocks-act-first",
   "created_at": "2026-08-19T14:00:47.000Z",
-  "updated_at": "2026-08-19T20:22:07.000Z",
+  "updated_at": "2026-08-20T04:41:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,20 +14,20 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "act",
     "robotics",
+    "act",
     "dataset:shreeshinator/arm-picking-blocks-real",
     "arxiv:2304.13705",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 87,
   "trending_score": 0,
   "parameters": 51666565,
   "parameters_human": "51.7M",
-  "storage_bytes": 3097561956,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 6195104496,
+  "storage_human": "6.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

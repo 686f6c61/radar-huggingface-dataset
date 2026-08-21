@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 307,
   "trending_score": 0,
   "parameters": 1711376384,
   "parameters_human": "1.71B",
-  "storage_bytes": 47825247419,
-  "storage_human": "47.8 GB",
+  "storage_bytes": 20954875576,
+  "storage_human": "21.0 GB",
   "base_model": "HuggingFaceTB/SmolLM2-1.7B",
   "formats": [
     "onnx",

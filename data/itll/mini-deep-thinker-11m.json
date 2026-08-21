@@ -5,7 +5,7 @@
   "author": "ITLL",
   "url": "https://huggingface.co/ITLL/Mini.Deep.Thinker.11m",
   "created_at": "2026-08-19T13:17:31.000Z",
-  "updated_at": "2026-08-19T13:39:05.000Z",
+  "updated_at": "2026-08-19T14:38:32.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 12446688,
   "parameters_human": "12.4M",
-  "storage_bytes": 181963355,
-  "storage_human": "182 MB",
+  "storage_bytes": 374649599,
+  "storage_human": "375 MB",
   "base_model": null,
   "formats": [
     "safetensors"

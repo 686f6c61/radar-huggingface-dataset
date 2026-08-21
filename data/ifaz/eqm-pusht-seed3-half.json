@@ -5,7 +5,7 @@
   "author": "iFaz",
   "url": "https://huggingface.co/iFaz/eqm-pusht-seed3-half",
   "created_at": "2026-06-18T07:12:21.000Z",
-  "updated_at": "2026-08-17T21:55:15.000Z",
+  "updated_at": "2026-08-21T06:16:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 181,
+  "downloads_30d": 195,
   "trending_score": 0,
-  "parameters": 500083380,
-  "parameters_human": "500.1M",
-  "storage_bytes": 40364615620,
-  "storage_human": "40.4 GB",
+  "parameters": 515781122,
+  "parameters_human": "515.8M",
+  "storage_bytes": 49885908492,
+  "storage_human": "49.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

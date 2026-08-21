@@ -5,7 +5,7 @@
   "author": "hmkang",
   "url": "https://huggingface.co/hmkang/wam_wan22_dit4dit_robocasa300_hwabl_4latin",
   "created_at": "2026-08-17T13:40:46.000Z",
-  "updated_at": "2026-08-17T17:48:58.000Z",
+  "updated_at": "2026-08-20T22:56:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 62816741217,
-  "storage_human": "62.8 GB",
+  "storage_bytes": 125633482434,
+  "storage_human": "125.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

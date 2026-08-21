@@ -5,7 +5,7 @@
   "author": "Icey444",
   "url": "https://huggingface.co/Icey444/ttthyme-ckpts",
   "created_at": "2026-06-12T23:45:41.000Z",
-  "updated_at": "2026-08-20T08:45:31.000Z",
+  "updated_at": "2026-08-21T10:15:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4792946351425,
+  "storage_bytes": 4792949842825,
   "storage_human": "4792.9 GB",
   "base_model": null,
   "formats": [

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/OpenGCM-v2-i1-GGUF",
   "created_at": "2026-08-18T07:50:47.000Z",
-  "updated_at": "2026-08-18T08:05:07.000Z",
+  "updated_at": "2026-08-18T12:26:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,12 +33,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1227,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",
-  "storage_bytes": 13931457600,
-  "storage_human": "13.9 GB",
+  "storage_bytes": 81318184384,
+  "storage_human": "81.3 GB",
   "base_model": "nitrai-research/OpenGCM-v2",
   "formats": [
     "gguf"

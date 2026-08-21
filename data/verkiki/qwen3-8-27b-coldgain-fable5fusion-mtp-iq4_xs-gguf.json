@@ -5,7 +5,7 @@
   "author": "Verkiki",
   "url": "https://huggingface.co/Verkiki/Qwen3.8-27B-ColdGAIN-Fable5Fusion-MTP-IQ4_XS-GGUF",
   "created_at": "2026-08-18T06:56:31.000Z",
-  "updated_at": "2026-08-18T07:27:32.000Z",
+  "updated_at": "2026-08-18T18:26:39.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 191,
   "trending_score": 0,
   "parameters": 3391984,
   "parameters_human": "3.4M",
-  "storage_bytes": 13642656,
-  "storage_human": "14 MB",
+  "storage_bytes": 16266282048,
+  "storage_human": "16.3 GB",
   "base_model": "nightmedia/Qwen3.8-27B-Fable-Fusion-F711-GAIN-mxfp4-mlx",
   "formats": [
     "gguf"

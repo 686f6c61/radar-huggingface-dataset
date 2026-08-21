@@ -5,7 +5,7 @@
   "author": "Samarthhuggingface",
   "url": "https://huggingface.co/Samarthhuggingface/prakrit_to_eng-v5",
   "created_at": "2026-08-18T10:16:06.000Z",
-  "updated_at": "2026-08-18T10:26:34.000Z",
+  "updated_at": "2026-08-21T08:31:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
   "trending_score": 0,
   "parameters": 1023006720,
   "parameters_human": "1.02B",
-  "storage_bytes": 4092117552,
+  "storage_bytes": 4096133880,
   "storage_human": "4.1 GB",
   "base_model": null,
   "formats": [

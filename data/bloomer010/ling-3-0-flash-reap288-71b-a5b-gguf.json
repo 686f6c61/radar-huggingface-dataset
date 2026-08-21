@@ -5,7 +5,7 @@
   "author": "bloomer010",
   "url": "https://huggingface.co/bloomer010/Ling-3.0-flash-REAP288-71B-A5B-GGUF",
   "created_at": "2026-08-15T20:42:01.000Z",
-  "updated_at": "2026-08-18T22:27:19.000Z",
+  "updated_at": "2026-08-21T05:14:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 665,
+  "downloads_30d": 680,
   "trending_score": 0,
   "parameters": 73293449216,
   "parameters_human": "73.29B",
-  "storage_bytes": 147081711360,
-  "storage_human": "147.1 GB",
+  "storage_bytes": 294163423616,
+  "storage_human": "294.2 GB",
   "base_model": "inclusionAI/Ling-3.0-flash",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "jliu7350",
   "url": "https://huggingface.co/jliu7350/chromatic-wandering-axolotl",
   "created_at": "2026-04-25T01:12:27.000Z",
-  "updated_at": "2026-08-20T08:47:53.000Z",
+  "updated_at": "2026-08-21T04:33:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 549840056677,
-  "storage_human": "549.8 GB",
+  "storage_bytes": 598292483245,
+  "storage_human": "598.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -4,8 +4,8 @@
   "slug": "chengze79-myawesomemodel-testrepo",
   "author": "chengze79",
   "url": "https://huggingface.co/chengze79/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-20T18:15:02.000Z",
-  "updated_at": "2026-08-20T18:15:09.000Z",
+  "created_at": "2026-08-21T10:16:10.000Z",
+  "updated_at": "2026-08-21T10:16:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-20T19:56:37.952Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

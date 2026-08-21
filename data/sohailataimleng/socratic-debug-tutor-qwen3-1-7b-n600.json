@@ -5,7 +5,7 @@
   "author": "sohailataimleng",
   "url": "https://huggingface.co/sohailataimleng/socratic-debug-tutor-qwen3-1.7b-n600",
   "created_at": "2026-08-19T11:52:45.000Z",
-  "updated_at": "2026-08-19T11:52:45.000Z",
+  "updated_at": "2026-08-19T11:53:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,13 +25,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 70,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": null,
-  "storage_human": null,
-  "base_model": null,
+  "storage_bytes": 46345931,
+  "storage_human": "46 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"
   ],

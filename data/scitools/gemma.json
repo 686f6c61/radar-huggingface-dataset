@@ -5,7 +5,7 @@
   "author": "SciTools",
   "url": "https://huggingface.co/SciTools/gemma",
   "created_at": "2026-08-19T13:31:27.000Z",
-  "updated_at": "2026-08-19T13:32:30.000Z",
+  "updated_at": "2026-08-20T11:41:12.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,12 +20,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 3,
+  "downloads_30d": 47,
   "trending_score": 0,
-  "parameters": 7518069290,
-  "parameters_human": "7.52B",
-  "storage_bytes": 4977171584,
-  "storage_human": "5.0 GB",
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 12099033024,
+  "storage_human": "12.1 GB",
   "base_model": null,
   "formats": [
     "gguf"

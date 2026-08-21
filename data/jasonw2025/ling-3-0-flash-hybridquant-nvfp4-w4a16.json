@@ -5,7 +5,7 @@
   "author": "JasonW2025",
   "url": "https://huggingface.co/JasonW2025/Ling-3.0-flash-HybridQuant-NVFP4-W4A16",
   "created_at": "2026-08-16T16:15:46.000Z",
-  "updated_at": "2026-08-17T15:49:22.000Z",
+  "updated_at": "2026-08-19T03:23:11.000Z",
   "license": "inherits-base-model",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 258,
+  "downloads_30d": 639,
   "trending_score": 0,
   "parameters": 65527606240,
   "parameters_human": "65.53B",

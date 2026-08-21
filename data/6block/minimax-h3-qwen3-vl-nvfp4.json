@@ -5,7 +5,7 @@
   "author": "6block",
   "url": "https://huggingface.co/6block/MiniMax-H3-Qwen3-VL-NVFP4",
   "created_at": "2026-08-18T07:40:06.000Z",
-  "updated_at": "2026-08-18T07:49:40.000Z",
+  "updated_at": "2026-08-21T02:47:50.000Z",
   "license": "minimax-community-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 13,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

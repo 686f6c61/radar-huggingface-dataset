@@ -5,7 +5,7 @@
   "author": "pruna-test",
   "url": "https://huggingface.co/pruna-test/test-save-tiny-stable-diffusion-pipe-smashed-pro",
   "created_at": "2025-10-02T16:47:13.000Z",
-  "updated_at": "2026-08-20T00:33:27.000Z",
+  "updated_at": "2026-08-21T00:33:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 122,
+  "downloads_30d": 121,
   "trending_score": 0,
   "parameters": 1427012,
   "parameters_human": "1.4M",

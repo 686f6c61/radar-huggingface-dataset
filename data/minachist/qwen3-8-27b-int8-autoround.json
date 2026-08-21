@@ -5,7 +5,7 @@
   "author": "Minachist",
   "url": "https://huggingface.co/Minachist/Qwen3.8-27B-INT8-AutoRound",
   "created_at": "2026-08-14T21:06:46.000Z",
-  "updated_at": "2026-08-15T13:16:56.000Z",
+  "updated_at": "2026-08-20T13:38:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 9,
-  "downloads_30d": 1528,
+  "downloads_30d": 1634,
   "trending_score": 9,
   "parameters": 9116380400,
   "parameters_human": "9.12B",

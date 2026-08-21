@@ -5,7 +5,7 @@
   "author": "thachtruong97",
   "url": "https://huggingface.co/thachtruong97/FlowAI",
   "created_at": "2026-08-19T14:15:15.000Z",
-  "updated_at": "2026-08-19T14:16:26.000Z",
+  "updated_at": "2026-08-20T13:14:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "safetensors",
     "region:us"
   ],
   "likes": 0,
@@ -20,11 +21,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4205019741,
-  "storage_human": "4.2 GB",
+  "storage_bytes": 107099906357,
+  "storage_human": "107.1 GB",
   "base_model": null,
   "formats": [
-    "onnx"
+    "onnx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

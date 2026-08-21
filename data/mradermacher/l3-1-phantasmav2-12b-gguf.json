@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/L3.1-Phantasmav2-12B-GGUF",
   "created_at": "2026-08-18T06:52:11.000Z",
-  "updated_at": "2026-08-18T09:48:18.000Z",
+  "updated_at": "2026-08-18T17:14:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,12 +24,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 498,
   "trending_score": 0,
   "parameters": 11956539456,
   "parameters_human": "11.96B",
-  "storage_bytes": 34070352512,
-  "storage_human": "34.1 GB",
+  "storage_bytes": 82390239456,
+  "storage_human": "82.4 GB",
   "base_model": "kromcomp/L3.1-Phantasmav2-12B",
   "formats": [
     "gguf"

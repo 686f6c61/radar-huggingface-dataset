@@ -5,7 +5,7 @@
   "author": "bloomer010",
   "url": "https://huggingface.co/bloomer010/Ling-3.0-flash-REAP384-94B-A5B-GGUF",
   "created_at": "2026-08-15T20:41:59.000Z",
-  "updated_at": "2026-08-18T22:29:39.000Z",
+  "updated_at": "2026-08-21T06:29:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 790,
+  "downloads_30d": 808,
   "trending_score": 0,
   "parameters": 96519001952,
   "parameters_human": "96.52B",
-  "storage_bytes": 146934581792,
-  "storage_human": "146.9 GB",
+  "storage_bytes": 293869164256,
+  "storage_human": "293.9 GB",
   "base_model": "inclusionAI/Ling-3.0-flash",
   "formats": [
     "gguf"

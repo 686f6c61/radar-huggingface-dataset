@@ -5,7 +5,7 @@
   "author": "peculiar-ragdoll",
   "url": "https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF",
   "created_at": "2026-08-14T15:37:48.000Z",
-  "updated_at": "2026-08-19T23:59:17.000Z",
+  "updated_at": "2026-08-21T00:08:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,12 +36,12 @@
     "conversational"
   ],
   "likes": 59,
-  "downloads_30d": 16039,
+  "downloads_30d": 18331,
   "trending_score": 55,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 182552520612,
-  "storage_human": "182.6 GB",
+  "storage_bytes": 348997980100,
+  "storage_human": "349.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "noooop",
   "url": "https://huggingface.co/noooop/DeepSeek-V4-Flash-REAP152-FP4",
   "created_at": "2026-08-19T13:41:56.000Z",
-  "updated_at": "2026-08-19T21:14:52.000Z",
+  "updated_at": "2026-08-20T12:05:12.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 649,
   "trending_score": 0,
   "parameters": 181955282430,
   "parameters_human": "181.96B",

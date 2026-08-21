@@ -5,7 +5,7 @@
   "author": "LIANGXU123",
   "url": "https://huggingface.co/LIANGXU123/ROSE-CD",
   "created_at": "2026-08-13T04:50:33.000Z",
-  "updated_at": "2026-08-17T22:58:32.000Z",
+  "updated_at": "2026-08-21T00:21:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,7 +18,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 6,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

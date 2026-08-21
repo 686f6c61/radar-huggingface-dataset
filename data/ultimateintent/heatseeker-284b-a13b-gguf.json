@@ -5,7 +5,7 @@
   "author": "UltimateIntent",
   "url": "https://huggingface.co/UltimateIntent/HeatSeeker-284B-A13B-GGUF",
   "created_at": "2026-08-18T09:23:41.000Z",
-  "updated_at": "2026-08-20T08:41:11.000Z",
+  "updated_at": "2026-08-21T04:34:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,13 +33,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 6,
-  "downloads_30d": 72,
+  "likes": 7,
+  "downloads_30d": 765,
   "trending_score": 0,
   "parameters": 284334567511,
   "parameters_human": "284.33B",
-  "storage_bytes": 260710854784,
-  "storage_human": "260.7 GB",
+  "storage_bytes": 449137479648,
+  "storage_human": "449.1 GB",
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "hanemay",
   "url": "https://huggingface.co/hanemay/smartsightCoach",
   "created_at": "2026-06-30T07:29:06.000Z",
-  "updated_at": "2026-08-20T20:08:23.000Z",
+  "updated_at": "2026-08-21T04:27:57.000Z",
   "license": "cc0-1.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 163,
+  "downloads_30d": 169,
   "trending_score": 0,
   "parameters": 5123178051,
   "parameters_human": "5.12B",

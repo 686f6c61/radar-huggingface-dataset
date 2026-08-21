@@ -5,13 +5,16 @@
   "author": "ddlara01",
   "url": "https://huggingface.co/ddlara01/ultima-releases",
   "created_at": "2026-08-18T15:04:34.000Z",
-  "updated_at": "2026-08-21T00:23:31.000Z",
+  "updated_at": "2026-08-21T04:53:15.000Z",
   "license": "other",
   "license_family": "unknown",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-to-video",
   "library": null,
   "languages": [],
   "tags": [
+    "text-to-video",
+    "windows",
+    "desktop-app",
     "license:other",
     "region:us"
   ],

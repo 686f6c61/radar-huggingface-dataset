@@ -5,7 +5,7 @@
   "author": "sengar18",
   "url": "https://huggingface.co/sengar18/krishi-slm-3b-lora",
   "created_at": "2026-08-19T14:36:55.000Z",
-  "updated_at": "2026-08-19T14:39:36.000Z",
+  "updated_at": "2026-08-19T16:46:02.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -14,6 +14,7 @@
   "tags": [
     "peft",
     "safetensors",
+    "gguf",
     "qwen2",
     "text-generation",
     "base_model:adapter:unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit",
@@ -29,14 +30,15 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 43,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 131224991,
-  "storage_human": "131 MB",
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 2061127551,
+  "storage_human": "2.1 GB",
   "base_model": "unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit",
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

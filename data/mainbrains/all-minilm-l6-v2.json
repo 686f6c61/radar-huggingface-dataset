@@ -60,12 +60,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 22713728,
   "parameters_human": "22.7M",
-  "storage_bytes": 1844563487,
-  "storage_human": "1.8 GB",
+  "storage_bytes": 929553600,
+  "storage_human": "930 MB",
   "base_model": "nreimers/MiniLM-L6-H384-uncased",
   "formats": [
     "onnx",

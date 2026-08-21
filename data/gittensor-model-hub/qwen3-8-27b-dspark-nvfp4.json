@@ -5,7 +5,7 @@
   "author": "gittensor-model-hub",
   "url": "https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-DSpark-NVFP4",
   "created_at": "2026-08-18T07:24:03.000Z",
-  "updated_at": "2026-08-18T07:24:16.000Z",
+  "updated_at": "2026-08-19T11:54:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,13 +32,13 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 6,
-  "downloads_30d": 1139,
+  "likes": 9,
+  "downloads_30d": 3407,
   "trending_score": 0,
   "parameters": 900532737,
   "parameters_human": "900.5M",
-  "storage_bytes": 1399670058,
-  "storage_human": "1.4 GB",
+  "storage_bytes": 2799340116,
+  "storage_human": "2.8 GB",
   "base_model": "gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-DSpark",
   "formats": [
     "safetensors"

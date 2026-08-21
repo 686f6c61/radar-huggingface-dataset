@@ -5,7 +5,7 @@
   "author": "pruna-test",
   "url": "https://huggingface.co/pruna-test/test-save-tiny-random-llama3-smashed-pro",
   "created_at": "2025-10-02T16:46:23.000Z",
-  "updated_at": "2026-08-20T00:33:14.000Z",
+  "updated_at": "2026-08-21T00:33:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3891,
+  "downloads_30d": 4111,
   "trending_score": 0,
   "parameters": 4111696,
   "parameters_human": "4.1M",

@@ -41,12 +41,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 507482304,
   "parameters_human": "507.5M",
-  "storage_bytes": 10125731115,
-  "storage_human": "10.1 GB",
+  "storage_bytes": 7164922736,
+  "storage_human": "7.2 GB",
   "base_model": "HuggingFaceTB/SmolVLM-500M-Instruct",
   "formats": [
     "onnx",

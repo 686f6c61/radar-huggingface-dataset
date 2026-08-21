@@ -5,7 +5,7 @@
   "author": "t0rr3sp3dr0",
   "url": "https://huggingface.co/t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-nvfp4",
   "created_at": "2026-08-19T11:51:18.000Z",
-  "updated_at": "2026-08-19T12:12:37.000Z",
+  "updated_at": "2026-08-19T12:19:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 92,
   "trending_score": 0,
   "parameters": 8285778672,
   "parameters_human": "8.29B",

@@ -5,7 +5,7 @@
   "author": "lhkhiem28",
   "url": "https://huggingface.co/lhkhiem28/Nemotron-1.5B-OpenR1-GRPO",
   "created_at": "2026-08-11T16:04:42.000Z",
-  "updated_at": "2026-08-19T07:34:03.000Z",
+  "updated_at": "2026-08-21T00:31:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 92,
+  "downloads_30d": 107,
   "trending_score": 0,
   "parameters": 1777088000,
   "parameters_human": "1.78B",
-  "storage_bytes": 14228280904,
-  "storage_human": "14.2 GB",
+  "storage_bytes": 17782495656,
+  "storage_human": "17.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "software-mansion",
   "url": "https://huggingface.co/software-mansion/react-native-executorch-rfdetr-nano-segmentation",
   "created_at": "2026-03-11T18:13:07.000Z",
-  "updated_at": "2026-08-20T19:52:14.000Z",
+  "updated_at": "2026-08-21T10:07:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,7 +17,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 287,
+  "downloads_30d": 381,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

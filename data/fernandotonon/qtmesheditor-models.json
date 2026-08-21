@@ -5,7 +5,7 @@
   "author": "fernandotonon",
   "url": "https://huggingface.co/fernandotonon/QtMeshEditor-models",
   "created_at": "2026-06-19T16:19:47.000Z",
-  "updated_at": "2026-08-18T03:41:53.000Z",
+  "updated_at": "2026-08-19T03:03:06.000Z",
   "license": "per-model",
   "license_family": "unknown",
   "pipeline_tag": "image-to-3d",
@@ -29,11 +29,11 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 148,
+  "downloads_30d": 153,
   "trending_score": 0,
   "parameters": 409252800,
   "parameters_human": "409.3M",
-  "storage_bytes": 16969715823,
+  "storage_bytes": 16986258043,
   "storage_human": "17.0 GB",
   "base_model": null,
   "formats": [

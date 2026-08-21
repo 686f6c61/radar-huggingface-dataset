@@ -5,7 +5,7 @@
   "author": "MORES-horizon",
   "url": "https://huggingface.co/MORES-horizon/MORES_emotions9",
   "created_at": "2026-06-20T19:10:33.000Z",
-  "updated_at": "2026-08-18T15:00:26.000Z",
+  "updated_at": "2026-08-18T20:23:23.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -42,7 +42,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 6,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 559899657,
   "parameters_human": "559.9M",
