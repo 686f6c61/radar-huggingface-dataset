@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "IndiAI-Official/AI-Study-Partner",
+  "slug": "indiai-official-ai-study-partner",
+  "author": "IndiAI-Official",
+  "url": "https://huggingface.co/IndiAI-Official/AI-Study-Partner",
+  "created_at": "2026-08-21T16:30:47.000Z",
+  "updated_at": "2026-08-21T16:30:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IndiAI - Generative AI Solutions for India",
+      "url": "https://indiai.co/",
+      "snippet": "IndiAI.co is India&#x27;s definitive ecosystem for the AI-first world. We bridge the massive technological gap in Bharat by providing world-class AI certification, localized education, and an elite marketplace of high-performance digital tools. Whether you are an ambitious student future-proofing your career, a visionary entrepreneur automating operations, or a professional reaching for peak ..."
+    },
+    {
+      "title": "Building India&#x27;s Foundational AI Models - IndiaAI Innovation Initiative",
+      "url": "https://indiaai.gov.in/article/building-india-s-foundational-ai-models-indiaai-innovation-initiative",
+      "snippet": "Accordingly, IndiaAI invites proposals from startups, researchers, and entrepreneurs to collaborate on building state-of-the-art foundational AI models trained on Indian datasets. This initiative aims to establish indigenous AI models that align with global standards while addressing unique challenges and opportunities within the Indian context."
+    },
+    {
+      "title": "Home - IndianAI.in",
+      "url": "https://indianai.in/",
+      "snippet": "Indian AI is a central hub for updates, information, and resources on artificial intelligence technology in India."
+    },
+    {
+      "title": "The National AI Portal of India",
+      "url": "https://indiaai.gov.in/indiaaiportal",
+      "snippet": "INDIAai (The National AI Portal of India), a joint venture by MEITY, NEGD and NASSCOM, has been set up to prepare the nation for an AI future. It is the single central knowledge hub on artificial intelligence and allied fields such as, Machine Learning, Computer Vision, Deep Learning etc., for aspiring entrepreneurs, students, professionals, academics, and everyone else."
+    },
+    {
+      "title": "Government of India launches &#x27;YUVA AI for ALL&#x27; - a free national course ...",
+      "url": "https://www.digitalindia.gov.in/press_release/government-of-india-launches-yuva-ai-for-all-a-free-national-course-to-help-everyone-understand-artificial-intelligence/",
+      "snippet": "The Ministry of Electronics and Information Technology (MeitY), under the IndiaAI Mission, has launched &#x27;YUVA AI for ALL&#x27;, a first-of-its-kind free course that introduces the world of Artificial Intelligence (AI) to all Indians, especially the youth."
+    }
+  ]
+}

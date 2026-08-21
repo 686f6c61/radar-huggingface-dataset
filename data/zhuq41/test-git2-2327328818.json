@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "zhuq41/test-git2-2327328818",
+  "slug": "zhuq41-test-git2-2327328818",
+  "author": "zhuq41",
+  "url": "https://huggingface.co/zhuq41/test-git2-2327328818",
+  "created_at": "2026-08-21T11:27:15.000Z",
+  "updated_at": "2026-08-21T11:27:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub Models · Build AI-powered projects with industry-leading",
+      "url": "https://github.com/features/models",
+      "snippet": "GitHub Models brings top-tier AI models into your workflow—securely and at scale. Compare outputs, manage prompts like code, and build AI-powered apps with ease."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "zhuq41 (qi zhu) - Hugging Face",
+      "url": "https://huggingface.co/zhuq41",
+      "snippet": "User profile of qi zhu on Hugging Face"
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, Claude & Gemini",
+      "url": "https://texttohuman.com/ai-detector",
+      "snippet": "Use our free AI detector and AI checker to find out if text was written by ChatGPT, Claude, or Gemini. Get instant sentence-level AI detection results."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    }
+  ]
+}

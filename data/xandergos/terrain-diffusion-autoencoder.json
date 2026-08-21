@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xandergos/terrain-diffusion-autoencoder",
+  "slug": "xandergos-terrain-diffusion-autoencoder",
+  "author": "xandergos",
+  "url": "https://huggingface.co/xandergos/terrain-diffusion-autoencoder",
+  "created_at": "2026-08-21T18:06:14.000Z",
+  "updated_at": "2026-08-21T18:06:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20489537,
+  "parameters_human": "20.5M",
+  "storage_bytes": 81968196,
+  "storage_human": "82 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autoencoder Training | xandergos/terrain-diffusion | DeepWiki",
+      "url": "https://deepwiki.com/xandergos/terrain-diffusion/5.4-autoencoder-training",
+      "snippet": "This page describes the training process for the VAE-based autoencoder that provides 8× spatial compression for terrain data. The autoencoder reduces 128×128 pixel terrain residuals to 16×16 latent representations, enabling efficient training of the base and decoder diffusion models. For information about using the trained autoencoder to encode datasets, see Encoded Dataset Creation. For ..."
+    },
+    {
+      "title": "InfiniteDiffusion - xandergos.github.io",
+      "url": "https://xandergos.github.io/terrain-diffusion/",
+      "snippet": "InfiniteDiffusion breaks this trilemma, transforming any diffusion model into an infinite, logically stateless array, indexed only by seed and coordinates, supporting O (1) random access, full determinism, and embarrassing parallelism."
+    },
+    {
+      "title": "GitHub - xandergos/terrain-diffusion: Procedural generation with ...",
+      "url": "https://github.com/xandergos/terrain-diffusion",
+      "snippet": "A practical, learned successor to Perlin noise for infinite, deterministic, and randomly-accessible real-time terrain generation. This repo provides: InfiniteDiffusion, a drop-in replacement for MultiDiffusion that makes diffusion sampling lazy and unbounded, with O (1) random access and seed-consistency (determinism). Built with the infinite-tensor framework. A hierarchical stack of models ..."
+    },
+    {
+      "title": "Training Overview | xandergos/terrain-diffusion | DeepWiki",
+      "url": "https://deepwiki.com/xandergos/terrain-diffusion/5.1-training-overview",
+      "snippet": "This document provides a high-level overview of the complete training pipeline for Terrain Diffusion, including the sequence in which models must be trained, their dependencies, and how they integrate into the generation hierarchy. For detailed information about specific training procedures, see the following pages: Autoencoder Training, Coarse Model Training, Base Model Training, Decoder ..."
+    },
+    {
+      "title": "terrain-diffusion/configs/autoencoder at master · xandergos ... - GitHub",
+      "url": "https://github.com/xandergos/terrain-diffusion/tree/master/configs/autoencoder",
+      "snippet": "Procedural generation with diffusion models. Contribute to xandergos/terrain-diffusion development by creating an account on GitHub."
+    }
+  ]
+}

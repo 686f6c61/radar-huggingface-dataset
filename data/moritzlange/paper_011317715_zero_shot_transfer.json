@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MORITZLANGE/paper_011317715_zero_shot_transfer",
+  "slug": "moritzlange-paper_011317715_zero_shot_transfer",
+  "author": "MORITZLANGE",
+  "url": "https://huggingface.co/MORITZLANGE/paper_011317715_zero_shot_transfer",
+  "created_at": "2026-08-21T19:35:20.000Z",
+  "updated_at": "2026-08-21T19:35:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "footnote",
+    "impersonal",
+    "intro-background-approach-eval-conclusion",
+    "latex-arxiv",
+    "measured",
+    "short-punchy",
+    "unstructured-narrative",
+    "zero-shot-transfer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MoritzLaurer (Moritz Laurer) - Hugging Face",
+      "url": "https://huggingface.co/MoritzLaurer",
+      "snippet": "These are my current best zeroshot classifiers. Some of my older models are downloaded more often, but the models in this collection are newer/better."
+    },
+    {
+      "title": "Cross-Image Attention for Zero-Shot Appearance Transfer",
+      "url": "https://arxiv.org/abs/2311.03335",
+      "snippet": "In addition, to improve the output image quality, we harness three mechanisms that either manipulate the noisy latent codes or the model&#x27;s internal representations throughout the denoising process. Importantly, our approach is zero-shot, requiring no optimization or training."
+    },
+    {
+      "title": "[2410.01335] Layer Swapping for Zero-Shot Cross-Lingual Transfer in ...",
+      "url": "https://arxiv.org/abs/2410.01335",
+      "snippet": "Model merging, such as model souping, is the practice of combining different models with the same architecture together without further training. In this work, we present a model merging methodology that addresses the difficulty of fine-tuning Large Language Models (LLMs) for target tasks in non-English languages, where task-specific data is often unavailable. We focus on mathematical ..."
+    },
+    {
+      "title": "Prompt Injection Attacks in Large Language Models and AI Agent Systems ...",
+      "url": "https://www.preprints.org/manuscript/202511.0088",
+      "snippet": "Large Language Models (LLMs) have rapidly transformed artificial intelligence applica-tions across industries, yet their integration into production systems has unveiled critical security vulnerabilities, chief among them prompt injection attacks. This comprehensive review synthesizes research from 2023-2025, analyzing over 120 peer-reviewed papers, industry security reports, and documented ..."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    }
+  ]
+}

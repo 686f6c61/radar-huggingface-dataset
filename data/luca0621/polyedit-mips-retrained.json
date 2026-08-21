@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "luca0621/polyedit-mips-retrained",
+  "slug": "luca0621-polyedit-mips-retrained",
+  "author": "luca0621",
+  "url": "https://huggingface.co/luca0621/polyedit-mips-retrained",
+  "created_at": "2026-08-21T16:00:11.000Z",
+  "updated_at": "2026-08-21T16:00:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "polymers",
+    "property-prediction",
+    "graph-transformer",
+    "polyedit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79130193,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luca0621 (Taeseung You) - Hugging Face",
+      "url": "https://huggingface.co/luca0621",
+      "snippet": "luca0621/multi-RLHF_turn_4_ckp Viewer • Updated about 9 hours ago • 1k • 1 Expand 14 datasets"
+    },
+    {
+      "title": "luca0621 (Taeseung You) - Hugging Face",
+      "url": "https://huggingface.co/luca0621/datasets",
+      "snippet": "luca0621&#x27;s datasets4 Sort: Recently updated luca0621/appgen-training-data Updated less than a minute ago"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "GPT‑4‑assisted safety research GPT‑4&#x27;s advanced reasoning and instruction-following capabilities expedited our safety work. We used GPT‑4 to help create training data for model fine-tuning and iterate on classifiers across training, evaluations, and monitoring."
+    }
+  ]
+}

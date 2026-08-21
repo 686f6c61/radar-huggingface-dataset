@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "VikramPal/Qwen3.5-35B-A3B-IntentRouter",
+  "slug": "vikrampal-qwen3-5-35b-a3b-intentrouter",
+  "author": "VikramPal",
+  "url": "https://huggingface.co/VikramPal/Qwen3.5-35B-A3B-IntentRouter",
+  "created_at": "2026-08-21T11:11:27.000Z",
+  "updated_at": "2026-08-21T12:42:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "hi",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "intent-classification",
+    "intent-router",
+    "function-calling",
+    "multilingual",
+    "conversational",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "hi",
+    "th",
+    "dataset:mteb/amazon_massive_intent",
+    "dataset:clinc/clinc_oos",
+    "dataset:mteb/banking77",
+    "dataset:xingkunliuxtracta/nlu_evaluation_data",
+    "dataset:WillHeld/mtop",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69345627541,
+  "storage_human": "69.3 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 35B-A3B · Models · The Open-Source AI Stack",
+      "url": "https://www.open-source-ai.tech/models/qwen3-5-35b-a3b",
+      "snippet": "A small Qwen3.5 mixture-of-experts: about 35B total with roughly 3B active per token, so it decodes very fast for its size. A pure-dense 35B at Q8 would be memory-bandwidth-bound near single-digit tokens/sec on a 256 GB/s box; the measured high speed on Strix Halo is itself evidence this SKU is sparse, not dense. It is typically run at Q8."
+    },
+    {
+      "title": "qwen3.5:35b-a3b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:35b-a3b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "Qwen3.5 35B A3B - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen35-35b-a3b",
+      "snippet": "Qwen3.5 35B A3B: Unified Vision-Language MoE Reasoning Model Qwen3.5 35B A3B is a multimodal mixture-of-experts foundation model from Alibaba&#x27;s Qwen team, featuring a hybrid Gated DeltaNet and sparse MoE architecture. It has 35 billion total parameters with 3 billion activated per token, delivering high-throughput inference at minimal latency."
+    },
+    {
+      "title": "qwen/qwen3.5-35b-a3b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-35b-a3b",
+      "snippet": "Qwen3.5 is a reasoning vision-language model that supports tool use. With 35B total parameters and 3B activated, it outperforms previous generation models more than 6x its size."
+    }
+  ]
+}

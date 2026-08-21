@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lucasdfg8882/paper_020368671_embodied_ai",
+  "slug": "lucasdfg8882-paper_020368671_embodied_ai",
+  "author": "lucasdfg8882",
+  "url": "https://huggingface.co/lucasdfg8882/paper_020368671_embodied_ai",
+  "created_at": "2026-08-21T17:57:25.000Z",
+  "updated_at": "2026-08-21T17:57:31.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "compact",
+    "embodied-ai",
+    "enthusiastic",
+    "first-person-plural",
+    "intro-method-exp-related-conclusion",
+    "latex-neurips",
+    "medium-balanced",
+    "numeric-bibtex",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Web Sessions - American Concrete Institute",
+      "url": "https://www.concrete.org/education/freewebsessions.aspx?st=R.S.P2.1",
+      "snippet": "From drone-based imaging and crack detection to condition assessment and deterioration forecasting, AI and ML are opening up new possibilities for faster, safer, and more consistent evaluations."
+    },
+    {
+      "title": "GitHub - haoranD/Awesome-Embodied-AI: A curated list of awesome papers ...",
+      "url": "https://github.com/haoranD/Awesome-Embodied-AI",
+      "snippet": "A curated list of awesome papers on Embodied AI and related research/industry-driven resources, inspired by awesome-computer-vision. Embodied AI has led to a new breakthrough, and this repository will keep tracking and summarizing the research or industrial progress."
+    },
+    {
+      "title": "GitHub - HCPLab-SYSU/Embodied_AI_Paper_List: [Embodied-AI-Survey-2025 ...",
+      "url": "https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List",
+      "snippet": "Then, we analyze four main research targets: 1) embodied perception, 2) embodied interaction, 3) embodied agent, and 4) sim-to-real adaptation, covering state-of-the-art methods, essential paradigms, and comprehensive datasets."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2407.06886",
+      "snippet": "This preprint surveys advancements in Embodied AI, focusing on embodied perception, interaction, agents, and sim-to-real adaptation for achieving artificial general intelligence."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

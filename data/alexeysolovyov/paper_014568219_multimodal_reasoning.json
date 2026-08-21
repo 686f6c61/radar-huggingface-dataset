@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "alexeysolovyov/paper_014568219_multimodal_reasoning",
+  "slug": "alexeysolovyov-paper_014568219_multimodal_reasoning",
+  "author": "alexeysolovyov",
+  "url": "https://huggingface.co/alexeysolovyov/paper_014568219_multimodal_reasoning",
+  "created_at": "2026-08-21T15:54:05.000Z",
+  "updated_at": "2026-08-21T15:54:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "measured",
+    "multimodal-reasoning",
+    "numeric-apa",
+    "plain-text",
+    "structured-imrad",
+    "theoretical-rigorous",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perception, Reason, Think, and Plan: A Survey on Large Multimodal ...",
+      "url": "https://arxiv.org/abs/2505.04921",
+      "snippet": "Reasoning lies at the heart of intelligence, shaping the ability to make decisions, draw conclusions, and generalize across domains. In artificial intelligence, as systems increasingly operate in open, uncertain, and multimodal environments, reasoning becomes essential for enabling robust and adaptive behavior. Large Multimodal Reasoning Models (LMRMs) have emerged as a promising paradigm ..."
+    },
+    {
+      "title": "Awesome-MLLM-Reasoning-Collection - GitHub",
+      "url": "https://github.com/lwpyh/Awesome-MLLM-Reasoning-Collection/",
+      "snippet": "👏 Welcome to the Awesome-MLLM-Reasoning-Collections repository! This repository is a carefully curated collection of papers, code, datasets, benchmarks, and resources focused on reasoning within Multimodal Large Language Models (MLLMs)."
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    },
+    {
+      "title": "arXiv: Your Agent&#x27;s Memories Are Not Its Own: Forged Reas… — AI_SAFETY ...",
+      "url": "https://www.matproof.com/regulatory-updates/arxiv-your-agents-memories-are-not-its-own-forged-reasoning-attacks-on-llm-agent-6852",
+      "snippet": "This paper, published on arXiv in July 2026, presents a novel security vulnerability specific to large language model (LLM) agents that use persistent…"
+    },
+    {
+      "title": "GitHub - jluite/Awesome-Multimodal-Reasoning: Collection of papers and ...",
+      "url": "https://github.com/jluite/Awesome-Multimodal-Reasoning",
+      "snippet": "Awesome Multimodal Reasoning Collection of papers and resources on how to unlock reasoning abilities under multimodal settings. Animation from ViperGPT (Surís et al.) Consider how difficult it would be to study from a book that lacks any figures, diagrams or tables."
+    }
+  ]
+}

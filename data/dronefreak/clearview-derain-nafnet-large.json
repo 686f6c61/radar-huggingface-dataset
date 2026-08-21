@@ -5,7 +5,7 @@
   "author": "dronefreak",
   "url": "https://huggingface.co/dronefreak/clearview-derain-nafnet-large",
   "created_at": "2026-08-16T11:02:14.000Z",
-  "updated_at": "2026-08-17T19:31:45.000Z",
+  "updated_at": "2026-08-21T11:00:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -34,6 +34,7 @@
     "arxiv:2206.05514",
     "arxiv:2204.04676",
     "license:apache-2.0",
+    "model-index",
     "region:us"
   ],
   "likes": 0,

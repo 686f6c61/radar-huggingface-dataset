@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Felix92/onnxtr-lw-detr-s",
+  "slug": "felix92-onnxtr-lw-detr-s",
+  "author": "Felix92",
+  "url": "https://huggingface.co/Felix92/onnxtr-lw-detr-s",
+  "created_at": "2026-08-21T11:18:43.000Z",
+  "updated_at": "2026-08-21T11:19:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "onnxtr",
+    "layout",
+    "en",
+    "fr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47296236,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Felix92 (Felix Dittrich) - Hugging Face",
+      "url": "https://huggingface.co/Felix92",
+      "snippet": "Recent Activity updated a model12 days ago Felix92/doctr-dummy-torch-tablecenternet published a model12 days ago Felix92/doctr-dummy-torch-tablecenternet new activity26 days ago Felix92/onnxtr-parseq-multilingual-v1: Upload model.onnx View all activity"
+    },
+    {
+      "title": "GitHub - felixdittrich92/OnnxTR: OnnxTR a docTR (Document Text ...",
+      "url": "https://github.com/felixdittrich92/OnnxTR",
+      "snippet": "OnnxTR a docTR (Document Text Recognition) library Onnx pipeline wrapper - for seamless, high-performing & accessible OCR - felixdittrich92/OnnxTR"
+    },
+    {
+      "title": "felixdittrich92/OnnxTR | DeepWiki",
+      "url": "https://deepwiki.com/felixdittrich92/OnnxTR",
+      "snippet": "What is OnnxTR OnnxTR is an ONNX wrapper around the docTR library that provides high-performance OCR capabilities without requiring PyTorch or TensorFlow dependencies. The system converts document images and PDFs into structured, machine-readable text by locating text regions (detection) and recognizing the characters within them (recognition)."
+    },
+    {
+      "title": "OnnxTR - a Felix92 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Felix92/onnxtr",
+      "snippet": "https://github.com/felixdittrich92/OnnxTR"
+    },
+    {
+      "title": "Releases · felixdittrich92/OnnxTR - GitHub",
+      "url": "https://github.com/felixdittrich92/OnnxTR/releases",
+      "snippet": "OnnxTR a docTR (Document Text Recognition) library Onnx pipeline wrapper - for seamless, high-performing & accessible OCR - felixdittrich92/OnnxTR"
+    }
+  ]
+}

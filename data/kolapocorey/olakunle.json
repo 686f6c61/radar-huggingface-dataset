@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kolapocorey/olakunle",
+  "slug": "kolapocorey-olakunle",
+  "author": "kolapocorey",
+  "url": "https://huggingface.co/kolapocorey/olakunle",
+  "created_at": "2026-08-21T15:01:00.000Z",
+  "updated_at": "2026-08-21T15:01:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NYSC chief warns corps members over campaigns and AI misinformation",
+      "url": "https://gdeltcloud.com/events/nysc-chief-warns-corps-members-over-campaigns-and-ai-misinfo--cameoplus_acb6dca22cf4d25a",
+      "snippet": "On 2026-08-19, NYSC Director-General Brig. Gen. Olakunle Nafiu warned corps members at the NYSC Permanent Orientation Camp in Katsina against partisan political campaigns and spreading AI-generated misinformation. He said members using NYSC identities or social-media accounts to promote parties or candidates could face disciplinary measures, according to Arise TV."
+    },
+    {
+      "title": "Olalekan Adeeko - Facebook",
+      "url": "https://www.facebook.com/lincolndemo/",
+      "snippet": "The male model should wear a sophisticated contemporary business-casual outfit, such as tailored cream or beige trousers, a premium white or ivory shirt and a refined brown, beige or deep-purple jacket. Avoid traditional ceremonial clothing. Their clothing should communicate contemporary African success and global fashion."
+    },
+    {
+      "title": "Stakeholders Urge Technology-enabled Public Hearings To Boost Citizens ...",
+      "url": "https://leadership.ng/stakeholders-urge-technology-enabled-public-hearings-to-boost-citizens-participation/",
+      "snippet": "The session examined how artificial intelligence (AI) and other digital technologies could be used to expand citizens&#x27; participation in public hearings and enable Nigerians to contribute ..."
+    },
+    {
+      "title": "Beyond Automation: How AI Unlocks Human Potential - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/beyond-automation-how-ai-unlocks-human-potential-olakunle-kupolati-pmx4e",
+      "snippet": "Beyond Automation: How AI Unlocks Human Potential Olakunle Kupolati Data Eng, Mgmt & Governance Published Feb 11, 2026 + Follow"
+    },
+    {
+      "title": "Kolapo Olakonu | AI Engineer & Agentic Systems Builder",
+      "url": "https://www.kolapo.dev/",
+      "snippet": "Professional website for Kolapo Olakonu showcasing AI engineering, career journey, and agentic systems expertise."
+    }
+  ]
+}

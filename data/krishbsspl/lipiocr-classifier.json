@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "krishBSSPL/lipiocr-classifier",
+  "slug": "krishbsspl-lipiocr-classifier",
+  "author": "krishBSSPL",
+  "url": "https://huggingface.co/krishBSSPL/lipiocr-classifier",
+  "created_at": "2026-08-21T10:23:48.000Z",
+  "updated_at": "2026-08-21T10:24:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-classification",
+    "document-classification",
+    "efficientnet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4103366,
+  "parameters_human": "4.1M",
+  "storage_bytes": 16446552,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Classify Pixels Using Deep Learning (Image Analyst Tools)",
+      "url": "https://doc.esri.com/en/arcgis-pro/latest/tool-reference/image-analyst/classify-pixels-using-deep-learning.html",
+      "snippet": "Runs a trained deep learning model on an input raster to produce a classified raster, with each valid pixel having an assigned class label. This tool requires a model definition file containing trained model information. The model can be trained using the Train Deep Learning Model tool or by a third-party training software such as PyTorch. The model definition file can be an Esri model ..."
+    },
+    {
+      "title": "GitHub - lipione/lipiocr: Lipi OCR",
+      "url": "https://github.com/lipione/lipiocr",
+      "snippet": "LipiOCR Enterprise is a Nepal-focused KYC and financial document intelligence platform. It is designed for banks, cooperatives, MFIs, wallets, remittance companies, insurers, and lenders that need evidence-backed document extraction, human review, auditability, and integration with existing CBS/LOS/CRM/DMS systems."
+    },
+    {
+      "title": "AI Image Classifier (Flask & PyTorch) - GitHub",
+      "url": "https://github.com/AtharvaMeherkar/AI-Image-Classifier",
+      "snippet": "AI Image Classifier (Flask & PyTorch) Project Overview This project is a web-based application that allows users to upload an image and receive a classification prediction (identifying what the image contains) using a pre-trained deep learning model."
+    },
+    {
+      "title": "Model Library | Clarifai",
+      "url": "https://clarifai.com/explore/models",
+      "snippet": "Browse and discover AI models in the Clarifai Model Library."
+    },
+    {
+      "title": "AI Image Classifier — Free Online Tool | UseToolSuite",
+      "url": "https://usetoolsuite.com/tools/ai-image-classifier/",
+      "snippet": "What is the AI Image Classifier? The AI Image Classifier is a lightning-fast, entirely browser-based computer vision tool that automatically categorizes digital photos into 1,000 distinct classes. Built on the highly optimized MobileNetV2 architecture, it acts like a digital encyclopedia for visual content."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/LFM2-350M-ExecuTorch",
+  "slug": "mlboydaisuke-lfm2-350m-executorch",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/LFM2-350M-ExecuTorch",
+  "created_at": "2026-08-21T11:19:32.000Z",
+  "updated_at": "2026-08-21T11:21:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "xnnpack",
+    "pte",
+    "on-device",
+    "text-generation",
+    "base_model:LiquidAI/LFM2-350M",
+    "base_model:quantized:LiquidAI/LFM2-350M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252812416,
+  "storage_human": "253 MB",
+  "base_model": "LiquidAI/LFM2-350M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2-350M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-350M",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-350M"
+    },
+    {
+      "title": "ExecuTorch Model Zoo - a mlboydaisuke Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo",
+      "snippet": "PyTorch models exported to ExecuTorch .pte for on-device inference — XNNPACK (CPU, portable) and Core ML builds, each parity-checked."
+    },
+    {
+      "title": "executorch/examples/models/lfm2 at main · pytorch/executorch",
+      "url": "https://github.com/pytorch/executorch/tree/main/examples/models/lfm2",
+      "snippet": "LFM2 is a new generation of hybrid models developed by Liquid AI and available in 3 variants - 350M, 700M, 1.2B. LFM2.5 is an updated version with improved training (28T tokens vs 10T) and extended context length support (32K tokens)."
+    },
+    {
+      "title": "LFM2-350M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-350m",
+      "snippet": "LFM2-350M is Liquid AI&#x27;s smallest text model, designed for edge devices with strict memory and compute constraints. Delivers surprisingly strong performance for its size, making it ideal for low-latency applications."
+    },
+    {
+      "title": "LFM2-350M: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/lfm2-350m-liquidai",
+      "snippet": "Overview LFM2-350M is a 354.5M-parameter hybrid language model developed by LiquidAI specifically for edge AI and on-device deployment on smartphones, laptops, and vehicles. The model combines 10 double-gated short-range LIV convolution blocks with 6 grouped query attention blocks, achieving 3x faster training than its predecessor and 2x faster decode and prefill speed on CPU compared to Qwen3 ..."
+    }
+  ]
+}

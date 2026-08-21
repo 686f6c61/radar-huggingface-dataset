@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "leo-maglanoc/so101-pick-and-place-faster",
+  "slug": "leo-maglanoc-so101-pick-and-place-faster",
+  "author": "leo-maglanoc",
+  "url": "https://huggingface.co/leo-maglanoc/so101-pick-and-place-faster",
+  "created_at": "2026-08-21T16:12:07.000Z",
+  "updated_at": "2026-08-21T16:12:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:leo-maglanoc/so101-pick-and-place_20260821_121335",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leo-maglanoc/so101-pick-and-place · Hugging Face",
+      "url": "https://huggingface.co/leo-maglanoc/so101-pick-and-place",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF Collision-Free Pick and Place with the SO-101 Robot Arm",
+      "url": "https://yuxng.github.io/Courses/CS6341Fall2025/project_group_10.pdf",
+      "snippet": "This project aimed to implement an autonomous pick-and-place system using the SO-101 robotic arm to grasp colored cubes and place them on a target surface. We successfully completed robot calibration and collected 90 demonstration samples (30 samples per each cube color : Yellow, Green, Red) capturing manipulation trajectories."
+    },
+    {
+      "title": "GitHub - meetsitaram/le-pickup: fine tuned model on so101 pick and ...",
+      "url": "https://github.com/meetsitaram/le-pickup",
+      "snippet": "fine tuned model on so101 pick and place datasets. Contribute to meetsitaram/le-pickup development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ALPHA-117/LeRobot-SO101-Simulation: SO-101 robot pick-and ...",
+      "url": "https://github.com/ALPHA-117/LeRobot-SO101-Simulation",
+      "snippet": "SO-101 robot pick-and-place automation for MuJoCo simulation - ALPHA-117/LeRobot-SO101-Simulation"
+    },
+    {
+      "title": "LeRobot SO101 Pick Place - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/aswinkumar99-lerobot-so101-pick-place",
+      "snippet": "LeRobot dataset for SO101 pick-and-place with three sponge manipulation tasks and fixed/random object layouts, intended for imitation learning, behavior cloning, and robustness studies."
+    }
+  ]
+}

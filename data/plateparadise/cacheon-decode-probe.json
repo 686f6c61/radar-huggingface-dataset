@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "plateparadise/cacheon-decode-probe",
+  "slug": "plateparadise-cacheon-decode-probe",
+  "author": "plateparadise",
+  "url": "https://huggingface.co/plateparadise/cacheon-decode-probe",
+  "created_at": "2026-08-21T16:44:18.000Z",
+  "updated_at": "2026-08-21T16:45:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cacheon: Inference Optimization Arena",
+      "url": "https://cacheon.ai/",
+      "snippet": "Cacheon is a live competition to write the fastest GPU kernels for LLM inference. Submit a Triton or CuteDSL kernel, beat sglang at equal fidelity, and earn up to 33 TAO per day."
+    },
+    {
+      "title": "Cacheon (@cacheon_ai) / Posts / X",
+      "url": "https://x.com/cacheon_ai",
+      "snippet": "Launching Cacheon: an open, incentivized competition for LLM inference optimization. As model quality converges, the next frontier is serving them economically at scale: lower latency, higher throughput, and lower cost per token. Cacheon turns that problem into a live arena with continuous evaluation. Developers submit containerized inference servers, benchmarked on standardized hardware ..."
+    },
+    {
+      "title": "GitHub - apple692/cacheon",
+      "url": "https://github.com/apple692/cacheon",
+      "snippet": "Cacheon is a Bittensor subnet (SN14) that runs an open competition for production-grade LLM inference optimization. Miners submit containerized inference servers. Validators evaluate them against a vLLM baseline on the same hardware. The fastest correct server takes all emission."
+    },
+    {
+      "title": "What Cacheon is — Cacheon Docs",
+      "url": "https://cacheon.ai/docs/get-started/concepts",
+      "snippet": "Cacheon Engine Cacheon Engine is the chain-independent distribution consumed by serving deployments. It contains a pinned upstream runtime, reviewed Cacheon source, exact model identity, native artifacts, a serving specification, provenance, an SBOM, and a signature rooted in an external Ed25519 public key."
+    },
+    {
+      "title": "CARD: A cache-assisted parallel speculative decoding framework via ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2667295226000395",
+      "snippet": "Within the speculative decoding domain, CARD employs a consistent strategy by using a draft model to implement caching for the target model. The process involves the draft model continuously generating candidate tokens to form potential outputs, from which a subset is selected as the cache for the target model."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NouraAlqasim/allam-7b-nvfp4-w4a16-mixed",
+  "slug": "nouraalqasim-allam-7b-nvfp4-w4a16-mixed",
+  "author": "NouraAlqasim",
+  "url": "https://huggingface.co/NouraAlqasim/allam-7b-nvfp4-w4a16-mixed",
+  "created_at": "2026-08-21T14:43:59.000Z",
+  "updated_at": "2026-08-21T14:46:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "nvfp4",
+    "w4a16",
+    "modelopt",
+    "quantized",
+    "arabic-calibrated",
+    "calib-mixed",
+    "base_model:humain-ai/ALLaM-7B-Instruct-preview",
+    "base_model:quantized:humain-ai/ALLaM-7B-Instruct-preview",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3762556928,
+  "parameters_human": "3.76B",
+  "storage_bytes": 4693174674,
+  "storage_human": "4.7 GB",
+  "base_model": "humain-ai/ALLaM-7B-Instruct-preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NouraAlqasim/allam-7b-fp8-mixed · Hugging Face",
+      "url": "https://huggingface.co/NouraAlqasim/allam-7b-fp8-mixed",
+      "snippet": "NouraAlqasim / allam-7b-fp8-mixed like 0 Safetensors llama fp8 modelopt quantized arabic-calibrated calib-mixed Model card FilesFiles and versions xet Community Copy to bucket new allam-7b · FP8 · calibrated on 64 MSA + 64 Gulf"
+    },
+    {
+      "title": "NouraAlqasim (Noura Alqasim) - Hugging Face",
+      "url": "https://huggingface.co/NouraAlqasim",
+      "snippet": "User profile of Noura Alqasim on Hugging Face"
+    },
+    {
+      "title": "Noura Alqasim NouraAlqasim - GitHub",
+      "url": "https://github.com/NouraAlqasim",
+      "snippet": "NouraAlqasim has 6 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "ALLaM: Large Language Models for Arabic and English",
+      "url": "https://arxiv.org/html/2407.15390v1",
+      "snippet": "The ALLaM 7B from scratch model also shows significant improvement over the ALLaM 7B continued pretraining model. Figure 2: Comparison of tokenizer fertility rates. The chart illustrates the fertility rates across four tokenizers: Llama-2, ALLaM Arabic only, ALLaM merged with Llama-2, and ALLaM Arabic/English (from scratch model)."
+    },
+    {
+      "title": "ALLaM — Saudi Arabia&#x27;s National Arabic Language Model",
+      "url": "https://arabicagenticai.com/arabic-llms/allam/",
+      "snippet": "Comprehensive analysis of ALLaM, the Arabic large language model developed by SDAIA&#x27;s NCAI and now managed by HUMAIN — covering training data, IBM partnership, Azure deployment, and sovereign AI ambitions."
+    }
+  ]
+}

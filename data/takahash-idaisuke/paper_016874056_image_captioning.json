@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "takahash-idaisuke/paper_016874056_image_captioning",
+  "slug": "takahash-idaisuke-paper_016874056_image_captioning",
+  "author": "takahash-idaisuke",
+  "url": "https://huggingface.co/takahash-idaisuke/paper_016874056_image_captioning",
+  "created_at": "2026-08-21T15:04:08.000Z",
+  "updated_at": "2026-08-21T15:04:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "critical",
+    "empirical-focused",
+    "graphic-visual",
+    "image-captioning",
+    "intro-problem-solution-validation-future",
+    "medium-balanced",
+    "numeric-nature",
+    "passive",
+    "plain-text",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PMC Home",
+      "url": "https://pmc.ncbi.nlm.nih.gov/",
+      "snippet": "PMC is a free full-text archive of biomedical and life sciences journal literature at the U.S. National Institutes of Health&#x27;s National Library of Medicine (NIH/NLM)."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "[2205.11487] Photorealistic Text-to-Image Diffusion Models with Deep ...",
+      "url": "https://arxiv.org/abs/2205.11487",
+      "snippet": "We present Imagen, a text-to-image diffusion model with an unprecedented degree of photorealism and a deep level of language understanding. Imagen builds on the power of large transformer language models in understanding text and hinges on the strength of diffusion models in high-fidelity image generation. Our key discovery is that generic large language models (e.g. T5), pretrained on text ..."
+    },
+    {
+      "title": "ICCV 2025 Accepted Papers",
+      "url": "https://iccv.thecvf.com/Conferences/2025/AcceptedPapers",
+      "snippet": "One Encoder to Rule them All: Representation Learning for Model-free Visual Reinforcement Learning using Fourier Neural Operators Poster Session 1 & Exhibit Hall"
+    },
+    {
+      "title": "GitHub - adobe-research/CapMAS: Official repository for: \"Toward Robust ...",
+      "url": "https://github.com/adobe-research/CapMAS",
+      "snippet": "This repository contains the evaluation code and data of our ICML 2025 paper, Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage."
+    }
+  ]
+}

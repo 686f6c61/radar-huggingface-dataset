@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tomato1111/gain003",
+  "slug": "tomato1111-gain003",
+  "author": "tomato1111",
+  "url": "https://huggingface.co/tomato1111/gain003",
+  "created_at": "2026-08-21T16:35:10.000Z",
+  "updated_at": "2026-08-21T16:45:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 10707765024,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tomato1111/111 · Hugging Face",
+      "url": "https://huggingface.co/tomato1111/111",
+      "snippet": "tomato1111 / 111 like 0 GGUF llama llama.cpp unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "tomato1111/toto4 · Hugging Face",
+      "url": "https://huggingface.co/tomato1111/toto4",
+      "snippet": "No model card New: Create and edit this model card directly on the website!"
+    },
+    {
+      "title": "Home · AUTOMATIC1111/stable-diffusion-webui Wiki · GitHub",
+      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Models",
+      "snippet": "Stable Diffusion web UI. Contribute to AUTOMATIC1111/stable-diffusion-webui development by creating an account on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Jumpstart your ML project with a single place to discover, customize, and deploy a wide variety of models from Google and Google partners. Model Garden provides a collection of pre-trained models and assets that you can use to build and deploy your own AI applications."
+    }
+  ]
+}

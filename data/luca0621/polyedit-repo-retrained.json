@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "luca0621/polyedit-repo-retrained",
+  "slug": "luca0621-polyedit-repo-retrained",
+  "author": "luca0621",
+  "url": "https://huggingface.co/luca0621/polyedit-repo-retrained",
+  "created_at": "2026-08-21T16:07:46.000Z",
+  "updated_at": "2026-08-21T16:09:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "polymers",
+    "molecular-optimization",
+    "reinforcement-learning",
+    "repo",
+    "polyedit",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131230073,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "luca0621 (Taeseung You) - Hugging Face",
+      "url": "https://huggingface.co/luca0621/datasets",
+      "snippet": "luca0621&#x27;s datasets4 Sort: Recently updated luca0621/appgen-training-data Updated less than a minute ago"
+    },
+    {
+      "title": "luca0621/mmpae-1p5B-e260-2gpu-bs128-lr5e5-b2000 · Hugging Face",
+      "url": "https://huggingface.co/luca0621/mmpae-1p5B-e260-2gpu-bs128-lr5e5-b2000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "GitHub - openvinotoolkit/open_model_zoo: Pre-trained Deep Learning ...",
+      "url": "https://github.com/openvinotoolkit/open_model_zoo",
+      "snippet": "OpenVINO™ Toolkit - Open Model Zoo repository Note Open Model Zoo is in maintenance mode as a source of models. Check out model tutorials in Jupyter notebooks. This repository includes optimized deep learning models and a set of demos to expedite development of high-performance deep learning inference applications."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

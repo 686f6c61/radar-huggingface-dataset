@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Shengxiang-Lin/PGPO",
+  "slug": "shengxiang-lin-pgpo",
+  "author": "Shengxiang-Lin",
+  "url": "https://huggingface.co/Shengxiang-Lin/PGPO",
+  "created_at": "2026-08-21T15:04:30.000Z",
+  "updated_at": "2026-08-21T15:04:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shengxiang Lin (林圣翔)",
+      "url": "https://shengxiang-lin.github.io/",
+      "snippet": "Shengxiang Lin Ph.D Student, Zhejiang University (2026) Artificial Intelligence Academic Researcher Yuquan Campus, 38 Zheda Road, Hangzhou, China"
+    },
+    {
+      "title": "arXiv:2506.01475v1 [cs.AI] 2 Jun 2025",
+      "url": "https://arxiv.org/pdf/2506.01475",
+      "snippet": "We further introduce PGPO, a preference op-timization method that empowers LLM agents with enhanced reasoning capabilities under the guidance of pseudocode-style plans. Experimental results reveal that our PGPO achieves state-of-the-art performance on repre-sentative agent benchmarks, especially when dealing with more complex agent tasks."
+    },
+    {
+      "title": "GitHub - zouyingcao/PGPO: The official implementation of ACL 2025 ...",
+      "url": "https://github.com/zouyingcao/PGPO",
+      "snippet": "The official implementation of ACL 2025 Findings paper \"PGPO: Enhancing Agent Reasoning via Pseudocode-style Planning Guided Preference Optimizations\" - zouyingcao/PGPO"
+    },
+    {
+      "title": "Shengxiang Lin (林圣翔)",
+      "url": "https://shengxiang-lin.github.io/publications",
+      "snippet": "Yu Wang, Yangguang Zhang, Shengxiang Lin, Xingyi Zhang, Han Zhang arXiv e-prints Under extreme operating conditions, characterized by high particle multiplicity and heavily overlapping shower energy deposits, classical particle flow algorithms encounter pronounced limitations in resolution, efficiency, and accuracy."
+    },
+    {
+      "title": "[2506.01475] PGPO: Enhancing Agent Reasoning via Pseudocode-style ...",
+      "url": "https://arxiv.org/abs/2506.01475",
+      "snippet": "Large Language Model (LLM) agents have demonstrated impressive capabilities in handling complex interactive problems. Existing LLM agents mainly generate natural language plans to guide reasoning, which is verbose and inefficient. NL plans are also tailored to specific tasks and restrict agents&#x27; ability to generalize across similar tasks. To this end, we explore pseudocode-style plans (P-code ..."
+    }
+  ]
+}

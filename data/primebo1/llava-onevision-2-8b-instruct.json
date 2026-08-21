@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "PrimeBo1/LLaVA-OneVision-2-8B-Instruct",
+  "slug": "primebo1-llava-onevision-2-8b-instruct",
+  "author": "PrimeBo1",
+  "url": "https://huggingface.co/PrimeBo1/LLaVA-OneVision-2-8B-Instruct",
+  "created_at": "2026-08-21T15:37:10.000Z",
+  "updated_at": "2026-08-21T15:38:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llava_onevision2",
+    "image-text-to-text",
+    "multimodal",
+    "vision-language",
+    "video-text-to-text",
+    "llava",
+    "llava-onevision-2",
+    "qwen3",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8527213568,
+  "parameters_human": "8.53B",
+  "storage_bytes": 17065937616,
+  "storage_human": "17.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - EvolvingLMMs-Lab/LLaVA-OneVision-2: Fully Open Framework for ...",
+      "url": "https://github.com/EvolvingLMMs-Lab/LLaVA-OneVision-2",
+      "snippet": "LLaVA-OneVision-2 is the next-generation release of the LLaVA-OneVision family — a fully open 8B multimodal model that unifies image, long-form video, and spatial understanding under a single architecture, with the entire pipeline (data, encoders, training, checkpoints, logs) released end-to-end."
+    },
+    {
+      "title": "LLaVA-OneVision-2-8B-Instruct - Hugging Face",
+      "url": "https://huggingface.co/lmms-lab-encoder/LLaVA-OneVision-2-8B-Instruct/blob/main/configuration_llava_onevision2.py",
+      "snippet": "main LLaVA-OneVision-2-8B-Instruct / configuration_llava_onevision2.py yiyexy ... 0379b48 verified 11 days ago ... from huggingface_hub.dataclasses import strict"
+    },
+    {
+      "title": "LLaVA-OneVision-2 — Open Multimodal Training",
+      "url": "https://evolvinglmms-lab.github.io/LLaVA-OneVision-2/",
+      "snippet": "LLaVA-OneVision-2 is a fully-open recipe for training competitive 8B-class vision-language models — every stage, every dataset, every weight is reproducible. Below: what makes it different at a glance. LLaVA-OneVision-2 是一套完全开放的 8B 级视觉语言模型训练配方——每个阶段、每个数据集、每份权重都可复现。"
+    },
+    {
+      "title": "LLaVA OneVision 2 8B Instruct — ThinkLLM",
+      "url": "https://thinkllm.dev/models/llava-onevision-2-8b-instruct",
+      "snippet": "A compact multimodal model that handles both text and image inputs, producing text responses. At 8B parameters, it sits in the efficient tier of vision-language models, balancing capability with accessibility. It follows an instruction-tuned format, meaning it&#x27;s designed to respond to direct prompts rather than operate as a raw base model."
+    }
+  ]
+}

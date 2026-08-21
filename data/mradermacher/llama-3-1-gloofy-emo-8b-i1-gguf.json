@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-3.1-Gloofy-Emo-8B-i1-GGUF",
+  "slug": "mradermacher-llama-3-1-gloofy-emo-8b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3.1-Gloofy-Emo-8B-i1-GGUF",
+  "created_at": "2026-08-21T10:36:10.000Z",
+  "updated_at": "2026-08-21T13:44:30.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "llama-3.1",
+    "conversational",
+    "companion",
+    "empathy",
+    "emotional-intelligence",
+    "not-for-all-audiences",
+    "en",
+    "base_model:overads/Llama-3.1-Gloofy-Emo-8B",
+    "base_model:quantized:overads/Llama-3.1-Gloofy-Emo-8B",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 93806033824,
+  "storage_human": "93.8 GB",
+  "base_model": "overads/Llama-3.1-Gloofy-Emo-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Quantized Models for overads/Llama-3.1-Gloofy-Emo-8B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:overads/Llama-3.1-Gloofy-Emo-8B",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree overads/Llama-3.1-Gloofy-Emo-8B Adapters Finetunes Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://developer.meta.com/ai/models/llama-3/",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-abliterated-ICONN-1-BasicChat-i1-GGUF",
+      "url": "https://www.modelscope.cn/models/mradermacher/Meta-Llama-3.1-8B-Instruct-abliterated-ICONN-1-BasicChat-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "0xWhiteMage/Qwen3.8-27B-Kearuga-NVFP4",
+  "slug": "0xwhitemage-qwen3-8-27b-kearuga-nvfp4",
+  "author": "0xWhiteMage",
+  "url": "https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-NVFP4",
+  "created_at": "2026-08-21T17:59:18.000Z",
+  "updated_at": "2026-08-21T18:40:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3",
+    "nvfp4",
+    "fp8",
+    "speculative-decoding",
+    "sglang",
+    "blackwell",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "modelopt_nvfp4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3086287072,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xWhiteMage/Qwen3.8-27B-SGLang-Spark: Think-off SGLang overlay ...",
+      "url": "https://github.com/0xWhiteMage/Qwen3.8-27B-SGLang-Spark/tree/main",
+      "snippet": "Serving Qwen3.8-27B (NVFP4) on an NVIDIA DGX Spark GB10 with SGLang. Measured on a single 128 GB unified-memory box; every number below is reproducible from this configuration. The whole recipe is a .env file plus one start.sh you run. Everything else — kernel autotune, cache mounting, port, image — is handled by start.sh."
+    },
+    {
+      "title": "Qwen3.8-27B on DGX Spark — think-off overlay + evals",
+      "url": "https://github.com/0xWhiteMage/qwen38-sglang-spark",
+      "snippet": "It is the measured think-off / agent overlay we run on a DGX Spark GB10, plus the evals that selected it. Apply recipe/champion.env on top of the official MiaAI recipe. Do not fork start.sh."
+    },
+    {
+      "title": "Run Qwen3.8-27B as a Local AI Coding Agent in Just 3 Commands",
+      "url": "https://www.kdnuggets.com/run-qwen3-8-27b-as-a-local-ai-coding-agent-in-just-3-commands",
+      "snippet": "Running a capable 27B model as a local AI coding agent used to mean setting up inference servers, configuring endpoints, and connecting everything manually. With Qwen3.8-27B, Ollama, and OpenCode, the process is now remarkably straightforward."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "NVFP4 uses the real kernel here. vLLM selects FlashInferCutlassNvFp4LinearKernel for NVFP4 GEMM on sm120 — a cutlass path, not an emulation fallback — for both the Inferact build above and unsloth/Qwen3.8-27B-NVFP4."
+    },
+    {
+      "title": "qwen3.8-27b (Qwen) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    }
+  ]
+}

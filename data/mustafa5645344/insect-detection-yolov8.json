@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Mustafa5645344/insect-detection-yolov8",
+  "slug": "mustafa5645344-insect-detection-yolov8",
+  "author": "Mustafa5645344",
+  "url": "https://huggingface.co/Mustafa5645344/insect-detection-yolov8",
+  "created_at": "2026-08-21T18:07:17.000Z",
+  "updated_at": "2026-08-21T18:24:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolov8",
+    "yolov8m",
+    "object-detection",
+    "insect-detection",
+    "agriculture",
+    "pest-management",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46801815,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - shruthiprem4/insect-detection-using-yolo-v8: detecting insects ...",
+      "url": "https://github.com/shruthiprem4/insect-detection-using-yolo-v8",
+      "snippet": "The project pioneers an advanced insect detection system leveraging the YOLOv8 model to revolutionize pest management in agriculture. By integrating multi-scale dense YOLO (MD-YOLO) technology, it ensures unparalleled accuracy in detecting even the smallest targets amidst complex backgrounds. A meticulously curated dataset, crafted using the bound boxing technique, underpins the project&#x27;s ..."
+    },
+    {
+      "title": "Yolov8_InsectDetect - camthink.ai",
+      "url": "https://www.camthink.ai/developer-center/models/yolov8-insectdetect/",
+      "snippet": "yolov8n detection for agriculture — detects Acrididae, Agapeta, Agapeta hamana, Animalia, Anisopodidae, Aphididae. Apache-2.0. Download for CamThink edge AI device."
+    },
+    {
+      "title": "YOLOv8 Models by Ultralytics",
+      "url": "https://platform.ultralytics.com/ultralytics/yolov8",
+      "snippet": "Released January 2023. Proven and widely adopted with extensive community support. Introduced the unified Python API and CLI that became the Ultralytics standard."
+    },
+    {
+      "title": "insect-detection-using-yolo-v8/README.md at main - GitHub",
+      "url": "https://github.com/shruthiprem4/insect-detection-using-yolo-v8/blob/main/README.md",
+      "snippet": "The project pioneers an advanced insect detection system leveraging the YOLOv8 model to revolutionize pest management in agriculture. By integrating multi-scale dense YOLO (MD-YOLO) technology, it ensures unparalleled accuracy in detecting even the smallest targets amidst complex backgrounds. A meticulously curated dataset, crafted using the bound boxing technique, underpins the project&#x27;s ..."
+    },
+    {
+      "title": "Yolo-pest: an optimized YoloV8x for detection of small insect pests ...",
+      "url": "https://www.nature.com/articles/s41598-025-97825-3",
+      "snippet": "Images captured by smart traps are transmitted to the server, where Yolo-pest, a fine-tuned YoloV8x model with customized hyperparameters performs in real time for object detection."
+    }
+  ]
+}

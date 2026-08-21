@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "monikanmn/paper_003862285_vision_language_pretraining",
+  "slug": "monikanmn-paper_003862285_vision_language_pretraining",
+  "author": "monikanmn",
+  "url": "https://huggingface.co/monikanmn/paper_003862285_vision_language_pretraining",
+  "created_at": "2026-08-21T19:20:00.000Z",
+  "updated_at": "2026-08-21T19:20:07.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "enthusiastic",
+    "highlight-bullet",
+    "intro-problem-solution-validation-future",
+    "latex-acl",
+    "mixed-active-passive",
+    "short-punchy",
+    "theoretical-rigorous",
+    "vision-language-pretraining",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2202.09061] VLP: A Survey on Vision-Language Pre-training",
+      "url": "https://arxiv.org/abs/2202.09061",
+      "snippet": "This paper surveys recent advances and new frontiers in vision-language pre-training (VLP), including image-text and video-text pre-training. To give readers a better overall grasp of VLP, we first review its recent advances from five aspects: feature extraction, model architecture, pre-training objectives, pre-training datasets, and downstream ..."
+    },
+    {
+      "title": "DeepSeek-VL: Towards Real-World Vision-Language Understanding",
+      "url": "https://arxiv.org/abs/2403.05525",
+      "snippet": "We present DeepSeek-VL, an open-source Vision-Language (VL) Model designed for real-world vision and language understanding applications. Our approach is structured around three key dimensions: We strive to ensure our data is diverse, scalable, and extensively covers real-world scenarios including web screenshots, PDFs, OCR, charts, and knowledge-based content, aiming for a comprehensive ..."
+    },
+    {
+      "title": "GitHub - jingyi0000/VLM_survey: Collection of AWESOME vision-language ...",
+      "url": "https://github.com/jingyi0000/VLM_survey",
+      "snippet": "This is the repository of Vision Language Models for Vision Tasks: a Survey, a systematic survey of VLM studies in various visual recognition tasks including image classification, object detection, semantic segmentation, etc. For details, please refer to: Vision-Language Models for Vision Tasks: A Survey [Paper] IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2024 🤩 ..."
+    },
+    {
+      "title": "Vision-Language Pretraining for Image Captioning Using Facial ...",
+      "url": "https://ieeexplore.ieee.org/document/11297980",
+      "snippet": "This paper presents a novel approach incorporating Facial Expression Recognition (FER) to improve emotional and contextual understanding in Vision-Language Pretraining (VLP) model-generated image captions. Conventional captioning models focus primarily on object identification, producing captions devoid of emotional content. The proposed model integrates FER to generate captions reflecting ..."
+    },
+    {
+      "title": "Vision-language pre-training via modal interaction",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0031320324005600",
+      "snippet": "To address these limitations, this paper introduces a novel pre-training approach that facilitates fine-grained vision-language interaction. We propose two new subtasks — image filling and text filling — that utilize data from one modality to complete missing parts in another, enhancing the model&#x27;s ability to integrate multi-modal ..."
+    }
+  ]
+}

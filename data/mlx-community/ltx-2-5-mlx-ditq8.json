@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mlx-community/ltx-2.5-mlx-ditq8",
+  "slug": "mlx-community-ltx-2-5-mlx-ditq8",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/ltx-2.5-mlx-ditq8",
+  "created_at": "2026-08-21T14:50:42.000Z",
+  "updated_at": "2026-08-21T14:52:15.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "ltx-video",
+    "ltx-2.5",
+    "text-to-video",
+    "image-to-video",
+    "audio-video",
+    "quantized",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20595328867,
+  "storage_human": "20.6 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/ltx-2.5-mlx · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/ltx-2.5-mlx",
+      "snippet": "MLX-format conversion of Lightricks LTX-2.5 (joint audio+video DiT, 22B) for Apple Silicon, in the per-component split layout consumed by ltx-2-mlx (branch ltx-2.5)."
+    },
+    {
+      "title": "Quantized Models for mlx-community/ltx-2.5-mlx - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:mlx-community/ltx-2.5-mlx",
+      "snippet": "1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: mlx-community/ltx-2.5-mlx Clear all"
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX-2.5 generates multi-shot scenes in one pass, edits real footage, and exports cinema-grade EXR. Open weights you can fine-tune and run on your hardware."
+    },
+    {
+      "title": "GitHub - Acelogic/LTX-2-MLX: Attempt at Porting LTX-2 Video Model to ...",
+      "url": "https://github.com/Acelogic/LTX-2-MLX",
+      "snippet": "Native Apple Silicon implementation of Lightricks LTX-2 video generation models using MLX. Supports both LTX-2.0 (19B) and LTX-2.3 (22B) with automatic version detection."
+    },
+    {
+      "title": "LTX-2.5 Model Open Source: AI Video Generator",
+      "url": "https://ltx.io/model/open-source",
+      "snippet": "LTX-2.5 is an open source AI video generator built on a diffusion transformer architecture for production, research, education, and experimentation."
+    }
+  ]
+}

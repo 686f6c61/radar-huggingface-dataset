@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "rehuuuu/XTTS-v2",
+  "slug": "rehuuuu-xtts-v2",
+  "author": "rehuuuu",
+  "url": "https://huggingface.co/rehuuuu/XTTS-v2",
+  "created_at": "2026-08-21T16:04:47.000Z",
+  "updated_at": "2026-08-21T16:11:50.000Z",
+  "license": "coqui-public-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "coqui",
+  "languages": [],
+  "tags": [
+    "coqui",
+    "text-to-speech",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24341390556,
+  "storage_human": "24.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coqui/XTTS-v2 · Hugging Face",
+      "url": "https://huggingface.co/coqui/XTTS-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "indigoskyai/XTTS-v2 · Hugging Face",
+      "url": "https://huggingface.co/indigoskyai/XTTS-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "xtts-v2: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/xtts-v2-lucataco",
+      "snippet": "Technical specifications xtts-v2 is a transformer-based text-to-speech model that performs voice cloning and multilingual synthesis. The architecture accepts speaker reference audio and synthesizes new speech by conditioning on speaker embeddings extracted from the reference clip."
+    },
+    {
+      "title": "XTTS-v2: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/xtts-v2-coqui",
+      "snippet": "XTTS-v2 is a multilingual voice cloning text-to-speech model built by coqui that generates speech from text using a 6-second reference audio clip to clone..."
+    },
+    {
+      "title": "XTTS v2: Open-Source Text-to-Speech and Voice Cloning AI Model",
+      "url": "https://exploreai.tools/ai-models/xtts-v2",
+      "snippet": "XTTS v2 is an open-source AI model for text-to-speech conversion and voice cloning. Learn about its capabilities, use cases, and how to get started with this Coqui community-developed tool."
+    }
+  ]
+}

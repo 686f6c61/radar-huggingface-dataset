@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Ackustik/ltx-kernels-zero",
+  "slug": "ackustik-ltx-kernels-zero",
+  "author": "Ackustik",
+  "url": "https://huggingface.co/Ackustik/ltx-kernels-zero",
+  "created_at": "2026-08-21T16:26:51.000Z",
+  "updated_at": "2026-08-21T16:44:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 581043,
+  "storage_human": "581043 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multimodal Model For Generative Creation | LTX Model",
+      "url": "https://ltx.io/model",
+      "snippet": "LTX Model is an AI multimodal generation model built for real workflows, enabling reliable, flexible, production-grade AI creation at scale."
+    },
+    {
+      "title": "LTX | Open Foundation Models for Video, Audio, and World Simulation",
+      "url": "https://ltx.io/",
+      "snippet": "We build open world models that give you full control, from production-grade video to systems that understand and operate in the physical world."
+    },
+    {
+      "title": "GitHub - wildminder/awesome-ltx2: All available LTX-2 models, encoders ...",
+      "url": "https://github.com/wildminder/awesome-ltx2",
+      "snippet": "All available LTX-2 models, encoders, workflows, LoRAs for ComfyUI - wildminder/awesome-ltx2"
+    },
+    {
+      "title": "GitHub - Lightricks/ComfyUI-LTXVideo: LTX-Video Support for ComfyUI",
+      "url": "https://github.com/Lightricks/ComfyUI-LTXVideo",
+      "snippet": "A collection of powerful custom nodes that extend ComfyUI&#x27;s capabilities for the LTX-2 video generation model. LTX-2 is built into ComfyUI core (see it here), making it readily accessible to all ComfyUI users. This repository hosts additional nodes and workflows to help you get the most out of LTX-2&#x27;s advanced features. To learn more about LTX-2 See the main LTX-2 repository for model details ..."
+    },
+    {
+      "title": "Cloud Security Alliance CISO Community Releases Emergency | CSA",
+      "url": "https://cloudsecurityalliance.org/press-releases/2026/07/28/csa-ciso-community-releases-emergency-guidance-after-autonomous-ai-model-breached-hugging-face-production-systems",
+      "snippet": "The leading Western AI models Hugging Face used to try and reconstruct the breach refused to analyze the recovered attack code, forcing its response team onto an open-weight model instead."
+    }
+  ]
+}

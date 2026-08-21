@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tanh1c/lab21-qwen35-triage-vi",
+  "slug": "tanh1c-lab21-qwen35-triage-vi",
+  "author": "tanh1c",
+  "url": "https://huggingface.co/tanh1c/lab21-qwen35-triage-vi",
+  "created_at": "2026-08-21T11:31:57.000Z",
+  "updated_at": "2026-08-21T11:32:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "customer-support",
+    "text-classification",
+    "text-generation",
+    "conversational",
+    "vi",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193170397,
+  "storage_human": "193 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Day21-Track3-Finetuning-Lab-2A202601755-ChuNguyenTuanAnh/BONUS ... - GitHub",
+      "url": "https://github.com/tanh1c/Day21-Track3-Finetuning-Lab-2A202601755-ChuNguyenTuanAnh/blob/main/BONUS-CHALLENGE-EN.md",
+      "snippet": "B5 — HuggingFace Hub (+2) model.push_to_hub (\"<user>/lab21-qwen35-triage-vi\"), link in the report."
+    },
+    {
+      "title": "liemnd4/lab21-qwen35-triage-vi-2a202601421 · Hugging Face",
+      "url": "https://huggingface.co/liemnd4/lab21-qwen35-triage-vi-2a202601421",
+      "snippet": "Instructions to use liemnd4/lab21-qwen35-triage-vi-2a202601421 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Day21-Track3-Finetuning-Lab-2A202601755-ChuNguyenTuanAnh/BONUS ... - GitHub",
+      "url": "https://github.com/tanh1c/Day21-Track3-Finetuning-Lab-2A202601755-ChuNguyenTuanAnh/blob/main/BONUS-CHALLENGE.md",
+      "snippet": "VinUni AICB · Day 21 Track 3 · LoRA fine-tuning lab — three frozen baselines + a four-group regression gate. Sibling of Day22-Track3-DPO-Alignment-Lab. - tanh1c/Day21-Track3-Finetuning-Lab-2A202601..."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "GoktugD/Werea-TR-TextRestore",
+  "slug": "goktugd-werea-tr-textrestore",
+  "author": "GoktugD",
+  "url": "https://huggingface.co/GoktugD/Werea-TR-TextRestore",
+  "created_at": "2026-08-21T17:02:50.000Z",
+  "updated_at": "2026-08-21T17:02:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "mt5",
+    "turkish",
+    "diacritics-restoration",
+    "werea",
+    "text2text-generation",
+    "tr",
+    "dataset:batubayk/TR-News",
+    "base_model:google/mt5-small",
+    "base_model:finetune:google/mt5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 300176768,
+  "parameters_human": "300.2M",
+  "storage_bytes": 1217079374,
+  "storage_human": "1.2 GB",
+  "base_model": "google/mt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Göktuğ Düşünen · Model Lab - a Hugging Face Space by GoktugD",
+      "url": "https://huggingface.co/spaces/GoktugD/goktug-ai-lab",
+      "snippet": "Göktuğ Düşünen — open Turkish AI models, datasets, benchmarks and inference systems."
+    },
+    {
+      "title": "GoktugD (Göktuğ Düşünen) - Hugging Face",
+      "url": "https://huggingface.co/GoktugD/datasets",
+      "snippet": "Head of AI @ Werea · AI/ML Engineer AI/ML Engineer building end-to-end intelligent systems across LLMs, NLP, Computer Vision, RAG, Retrieval, Agents, and Applied AI. From data and model devel..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "werea SentryLLM and TokenGuard — werea",
+      "url": "https://werea.co/en/projects/werea-sentryllm-tokenguard",
+      "snippet": "An intelligent proxy and monitoring layer that keeps the security, answer quality and API/compute cost of live AI applications under control."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

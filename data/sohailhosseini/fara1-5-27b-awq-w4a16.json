@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Sohailhosseini/Fara1.5-27B-AWQ-W4A16",
+  "slug": "sohailhosseini-fara1-5-27b-awq-w4a16",
+  "author": "Sohailhosseini",
+  "url": "https://huggingface.co/Sohailhosseini/Fara1.5-27B-AWQ-W4A16",
+  "created_at": "2026-08-21T16:44:25.000Z",
+  "updated_at": "2026-08-21T16:46:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "awq_w4a16",
+    "compressed-tensors",
+    "quantized",
+    "vllm",
+    "image-text-to-text",
+    "conversational",
+    "base_model:microsoft/Fara1.5-27B",
+    "base_model:quantized:microsoft/Fara1.5-27B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6284447760,
+  "parameters_human": "6.28B",
+  "storage_bytes": 18718453400,
+  "storage_human": "18.7 GB",
+  "base_model": "microsoft/Fara1.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/Fara1.5-27B · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Fara1.5-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Fara1.5-27B",
+      "snippet": "Fara1.5-27B is a 27B-parameter multimodal decoder-only language model fine-tuned from the Qwen 3.5 27B base. It accepts the user&#x27;s textual goal, current browser screenshot (s), and a textual history of prior thoughts and actions, and emits a chain-of-thought block followed by a structured tool-call block."
+    },
+    {
+      "title": "GitHub - microsoft/fara: Fara1.5 - A family of frontier computer use ...",
+      "url": "https://github.com/microsoft/fara",
+      "snippet": "Fara1.5 is a family of native Computer Use Agents (CUAs) at three scales — Fara1.5-4B, Fara1.5-9B, and Fara1.5-27B — built on Qwen3.5 and trained with supervised finetuning on data from FaraGen1.5, our scalable data pipeline of environments, solvers, and verifiers. Each model sets a new state of the art for its size class on browser-use benchmarks, and Fara1.5-27B outperforms much larger ..."
+    },
+    {
+      "title": "Fara1.5 - a microsoft Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/microsoft/fara15",
+      "snippet": "Collection of Fara1.5 CUA models in three sizes - 4B, 9B and 27B."
+    },
+    {
+      "title": "Fara1.5 27B — AI Model Radar",
+      "url": "https://aimodelradar.app/models/fara1-5-27b",
+      "snippet": "Fara1.5-27B is a 27-billion parameter computer use agent model built on Qwen3.5 and trained for browser-based task completion. It achieves 72.3% on Online-Mind2Web benchmark, outperforming larger proprietary systems. The model operates via an observe-think-act loop and is available as open-weight under MIT license."
+    }
+  ]
+}

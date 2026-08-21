@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Imdereklopez/model_072622239_cnn_transformer_giant",
+  "slug": "imdereklopez-model_072622239_cnn_transformer_giant",
+  "author": "Imdereklopez",
+  "url": "https://huggingface.co/Imdereklopez/model_072622239_cnn_transformer_giant",
+  "created_at": "2026-08-21T14:58:44.000Z",
+  "updated_at": "2026-08-21T14:58:50.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cnn-transformer",
+    "cross-attention",
+    "gelu-tanh",
+    "generation",
+    "giant",
+    "groupnorm",
+    "kaiming-normal",
+    "lamb",
+    "multi-query",
+    "polynomial",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transformers vs. Convolutional Neural Networks: What&#x27;s the Difference ...",
+      "url": "https://www.coursera.org/articles/transformers-vs-convolutional-neural-networks",
+      "snippet": "The key difference between transformers and convolutional neural networks (CNNs) lies in how they solve challenges. A transformer model is a neural network that uses an encoder-decoder architecture to recognize patterns in data. CNNs are deep learning neural networks consisting of several layers that work together to analyze features within an ..."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "The transformer model has been implemented in standard deep learning frameworks such as TensorFlow and PyTorch. Transformers is a library produced by Hugging Face that supplies transformer-based architectures and pretrained models."
+    },
+    {
+      "title": "Convolutional Neural Network (CNN) in Deep Learning",
+      "url": "https://www.geeksforgeeks.org/deep-learning/convolutional-neural-network-cnn-in-machine-learning/",
+      "snippet": "Convolutional Neural Networks (CNNs) are deep learning models designed to process data with a grid-like topology such as images. They are the foundation for most modern computer vision applications to detect features within visual data."
+    },
+    {
+      "title": "CNNs vs. Transformers: Image Recognition Models Explained",
+      "url": "https://flypix.ai/image-recognition-models-cnns/",
+      "snippet": "Explore CNNs, Transformers, and hybrid models in image recognition. Learn their applications, challenges, and future trends in AI vision."
+    },
+    {
+      "title": "Neural Network Types Explained 2025: CNN, RNN, LSTM, Transformers & MoE ...",
+      "url": "https://www.agentflow.academy/blog/neural-network-types",
+      "snippet": "Master all neural network architectures: CNNs (computer vision), RNNs/LSTMs (sequences), Transformers (ChatGPT/Claude), and Mixture of Experts. Learn when to use each type with real-world examples."
+    }
+  ]
+}

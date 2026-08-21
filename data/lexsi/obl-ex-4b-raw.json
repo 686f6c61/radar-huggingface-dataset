@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Lexsi/obl-ex-4b-raw",
+  "slug": "lexsi-obl-ex-4b-raw",
+  "author": "Lexsi",
+  "url": "https://huggingface.co/Lexsi/obl-ex-4b-raw",
+  "created_at": "2026-08-21T10:27:50.000Z",
+  "updated_at": "2026-08-21T10:27:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57930150,
+  "storage_human": "58 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lexsi/obl-ex-4b-raw · Hugging Face",
+      "url": "https://huggingface.co/Lexsi/obl-ex-4b-raw",
+      "snippet": "Instructions to use Lexsi/obl-ex-4b-raw with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Lexsi/obl-ex-4b-raw with PEFT:"
+    },
+    {
+      "title": "Lexsi/obl-ex-4b-logs · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Lexsi/obl-ex-4b-logs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Lexsi Labs: Safe Superintelligence, Alignment & AI Research",
+      "url": "https://lexsi.ai/",
+      "snippet": "Lexsi Labs builds foundations for Safe Superintelligence, uniting alignment theory, interpretability science, and agentic autonomy for AI that&#x27;s future ready."
+    },
+    {
+      "title": "Lexsi.ai - GitHub",
+      "url": "https://github.com/Lexsi-Labs",
+      "snippet": "Lexsi Labs drives Aligned and Safe AI Frontier Research. Our goal is to build AI systems that are transparent, reliable, and value-aligned, combining interpretability, alignment, and governance to enable trustworthy intelligence at scale."
+    },
+    {
+      "title": "Lexsi-Labs repositories · GitHub",
+      "url": "https://github.com/orgs/Lexsi-Labs/repositories",
+      "snippet": "Aligned and safe AI. Lexsi.ai has 7 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

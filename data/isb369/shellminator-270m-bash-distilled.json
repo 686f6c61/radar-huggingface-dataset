@@ -5,7 +5,7 @@
   "author": "ISB369",
   "url": "https://huggingface.co/ISB369/shellminator-270m-bash-distilled",
   "created_at": "2026-08-07T12:17:19.000Z",
-  "updated_at": "2026-08-16T09:23:23.000Z",
+  "updated_at": "2026-08-21T10:26:05.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": 268098816,
   "parameters_human": "268.1M",
-  "storage_bytes": 9685180911,
-  "storage_human": "9.7 GB",
+  "storage_bytes": 10757602727,
+  "storage_human": "10.8 GB",
   "base_model": "micrictor/gemma-3-270m-it-ft-bash",
   "formats": [
     "safetensors"

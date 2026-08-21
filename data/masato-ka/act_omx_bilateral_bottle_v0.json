@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "masato-ka/act_omx_bilateral_bottle_v0",
+  "slug": "masato-ka-act_omx_bilateral_bottle_v0",
+  "author": "masato-ka",
+  "url": "https://huggingface.co/masato-ka/act_omx_bilateral_bottle_v0",
+  "created_at": "2026-08-21T14:45:37.000Z",
+  "updated_at": "2026-08-21T14:46:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:masato-ka/omx_bilateral_bottle_v0",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51673734,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206733816,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masato-ka/omx_bilateral_bottole_v0 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/masato-ka/omx_bilateral_bottole_v0/tree/main",
+      "snippet": "Datasets: masato-ka / omx_bilateral_bottole_v0 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main omx_bilateral_bottole_v0 189 MB 1 contributor History:9 commits masato-ka Upload README.md with huggingface_hub ..."
+    },
+    {
+      "title": "masato-ka/omx_bilateral_bottole_v0 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/masato-ka/omx_bilateral_bottole_v0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "masato-ka首发omx_bilateral_bottole_v0多模态机器人数据集 支撑模仿学习与操作技能研发",
+      "url": "https://www.5radar.com/dataopensource/news/461658/masato-ka%E9%A6%96%E5%8F%91omx-bilateral-bottole-v0%E5%A4%9A%E6%A8%A1%E6%80%81%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%B0%E6%8D%AE%E9%9B%86-%E6%94%AF%E6%92%91%E6%A8%A1%E4%BB%BF%E5%AD%A6%E4%B9%A0%E4%B8%8E%E6%93%8D%E4%BD%9C%E6%8A%80%E8%83%BD%E7%A0%94%E5%8F%91",
+      "snippet": "开发者masato-ka于2026年8月15日在HuggingFace平台首发omx_bilateral_bottole_v0机器人数据集，该数据集基于LeRobot框架采集，覆盖动作、力觉、视觉三类多维度标注数据，可服务于机器人模仿学习、操作技能优化等前沿研究领域。"
+    },
+    {
+      "title": "masato-ka (masato-ka) · GitHub",
+      "url": "https://github.com/masato-ka",
+      "snippet": "A gymnasium environment for SO-ARM101 single-arm manipulation based on gym-aloha with multi-camera support and advanced simulation capabilities Python 13 2"
+    }
+  ]
+}

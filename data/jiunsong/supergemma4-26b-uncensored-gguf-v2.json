@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+  "slug": "jiunsong-supergemma4-26b-uncensored-gguf-v2",
+  "author": "Jiunsong",
+  "url": "https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+  "created_at": "2026-04-11T11:03:05.000Z",
+  "updated_at": "2026-04-12T13:42:43.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "uncensored",
+    "fast",
+    "llama.cpp",
+    "apple-silicon",
+    "conversational",
+    "korean",
+    "coding",
+    "tool-use",
+    "text-generation",
+    "en",
+    "ko",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 977,
+  "downloads_30d": 227767,
+  "trending_score": 9,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 83980060576,
+  "storage_human": "84.0 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jiunsong/supergemma4-26b-uncensored-gguf-v2 · Hugging Face",
+      "url": "https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-gguf-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jiunsong/supergemma4-26b-uncensored-gguf-v2 at main",
+      "url": "https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-gguf-v2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "supergemma4-26b-uncensored-gguf-v2: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/supergemma4-26b-uncensored-gguf-v2-jiunsong",
+      "snippet": "Overview supergemma4-26b-uncensored-gguf-v2 is a GGUF-quantized text generation model derived from Google&#x27;s Gemma 4 26B instruction-tuned base, built by Jiunsong. It exports the SuperGemma Fast MLX line into GGUF Q4_K_M format for local deployment on consumer hardware, particularly Apple Silicon. The key distinction is that this model combines three objectives: reduced censorship compared to ..."
+    },
+    {
+      "title": "A beginner&#x27;s guide to the Supergemma4-26b-uncensored-gguf-v2 model by ...",
+      "url": "https://hackernoon.com/a-beginners-guide-to-the-supergemma4-26b-uncensored-gguf-v2-model-by-jiunsong-on-huggingface",
+      "snippet": "This is a simplified guide to an AI model called supergemma4-26b-uncensored-gguf-v2 maintained by Jiunsong. If you like these kinds of analysis, join AIModels.fyi or follow us on Twitter."
+    },
+    {
+      "title": "supergemma4-26b-uncensored-gguf-v2 by Jiunsong | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/jiunsong-supergemma4-26b-uncensored-gguf-v2",
+      "snippet": "Explore supergemma4-26b-uncensored-gguf-v2 by Jiunsong — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    }
+  ]
+}

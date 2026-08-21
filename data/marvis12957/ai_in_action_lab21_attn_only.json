@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Marvis12957/ai_in_action_lab21_attn_only",
+  "slug": "marvis12957-ai_in_action_lab21_attn_only",
+  "author": "Marvis12957",
+  "url": "https://huggingface.co/Marvis12957/ai_in_action_lab21_attn_only",
+  "created_at": "2026-08-21T15:53:23.000Z",
+  "updated_at": "2026-08-21T15:59:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "fine-tuning",
+    "vietnamese",
+    "customer-support",
+    "ablation",
+    "vi",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129831208,
+  "storage_human": "130 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LAb21.ai",
+      "url": "https://www.lab21.ai/",
+      "snippet": "Custom Model Training Train specialized models for your unique document types and business requirements."
+    },
+    {
+      "title": "LAb21.ai",
+      "url": "https://www.lab21.ai/dashboard",
+      "snippet": "Welcome to lab21.ai Sign in to view your usage statistics, manage models, and extract data from documents Sign In to Get Started"
+    },
+    {
+      "title": "AI Systems Built for the Enterprise | AI21",
+      "url": "https://www.ai21.com/",
+      "snippet": "AI21 builds Foundation Models and AI Systems for the enterprise. Power your most critical enterprise workflows with accurate, reliable, and scalable AI."
+    },
+    {
+      "title": "llm-foundation-Marvis12957/README.md at main · GDGoC-FPTU/llm ... - GitHub",
+      "url": "https://github.com/GDGoC-FPTU/llm-foundation-Marvis12957/blob/main/README.md",
+      "snippet": "190 lines (154 loc) · 7.51 KB main llm-foundation-Marvis12957 README.md 190 lines (154 loc) · 7.51 KB"
+    },
+    {
+      "title": "Ahmed-ashraf1111/StudentPortalAI-Lab21: Lab 21 - GitHub",
+      "url": "https://github.com/Ahmed-ashraf1111/StudentPortalAI-Lab21",
+      "snippet": "Lab 21 - GenAI, RAG, and AI Agent with real ITI_StudentPortal database - Ahmed-ashraf1111/StudentPortalAI-Lab21"
+    }
+  ]
+}

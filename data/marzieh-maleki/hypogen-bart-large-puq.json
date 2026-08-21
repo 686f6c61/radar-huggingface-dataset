@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "marzieh-maleki/hypogen-bart-large-puq",
+  "slug": "marzieh-maleki-hypogen-bart-large-puq",
+  "author": "marzieh-maleki",
+  "url": "https://huggingface.co/marzieh-maleki/hypogen-bart-large-puq",
+  "created_at": "2026-08-21T15:02:09.000Z",
+  "updated_at": "2026-08-21T15:02:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 406341721,
+  "parameters_human": "406.3M",
+  "storage_bytes": 1625426996,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marzieh-maleki/hypogen-bart-base-puq · Hugging Face",
+      "url": "https://huggingface.co/marzieh-maleki/hypogen-bart-base-puq",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "marzieh-maleki/hypogen-bart-large-p · Hugging Face",
+      "url": "https://huggingface.co/marzieh-maleki/hypogen-bart-large-p",
+      "snippet": "marzieh-maleki / hypogen-bart-large-p like 0 Transformers Safetensors bart text2text-generation arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "[2504.12976] Sparks of Science: Hypothesis Generation Using Structured ...",
+      "url": "https://arxiv.org/abs/2504.12976",
+      "snippet": "HypoGen uniquely integrates an explicit Chain-of-Reasoning component that reflects the intellectual process from Bit to Flip. We demonstrate that framing hypothesis generation as conditional language modelling, with the model fine-tuned on Bit-Flip-Spark and the Chain-of-Reasoning (and where, at inference, we only provide the Bit), leads to ..."
+    },
+    {
+      "title": "HyPoGen: Optimization-Biased Hypernetworks for Generalizable Policy ...",
+      "url": "https://openreview.net/forum?id=CJWMXqAnAy",
+      "snippet": "Experimental results on locomotion and manipulation benchmarks show that HyPoGen significantly outperforms state-of-the-art methods in generating policies for unseen target tasks without any demonstrations, achieving higher success rates and underscoring the potential of optimization-biased hypernetworks in advancing generalizable policy ..."
+    },
+    {
+      "title": "Large Language Models as Biomedical Hypothesis Generators: A ...",
+      "url": "https://arxiv.org/abs/2407.08940",
+      "snippet": "The rapid growth of biomedical knowledge has outpaced our ability to efficiently extract insights and generate novel hypotheses. Large language models (LLMs) have emerged as a promising tool to revolutionize knowledge interaction and potentially accelerate biomedical discovery. In this paper, we present a comprehensive evaluation of LLMs as biomedical hypothesis generators. We construct a ..."
+    }
+  ]
+}

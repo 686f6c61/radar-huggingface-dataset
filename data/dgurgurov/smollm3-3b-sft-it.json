@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "DGurgurov/SmolLM3-3B-SFT-IT",
+  "slug": "dgurgurov-smollm3-3b-sft-it",
+  "author": "DGurgurov",
+  "url": "https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-IT",
+  "created_at": "2026-08-21T14:39:20.000Z",
+  "updated_at": "2026-08-21T14:41:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "smollm3",
+    "reasoning",
+    "multilingual",
+    "it",
+    "reasonxl",
+    "dataset:toroe/ReasonXL-SFT",
+    "arxiv:2604.12378",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3337766912,
+  "parameters_human": "3.34B",
+  "storage_bytes": 37969658480,
+  "storage_human": "38.0 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DGurgurov/SmolLM3-3B-SFT-IT · Hugging Face",
+      "url": "https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-IT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DGurgurov (Daniil Gurgurov) - Hugging Face",
+      "url": "https://huggingface.co/DGurgurov/models",
+      "snippet": "NLP, AI, EduTech new activity about 1 month ago updated a model about 1 month ago"
+    },
+    {
+      "title": "smol-course/units/en/unit1/3.md at main - GitHub",
+      "url": "https://github.com/huggingface/smol-course/blob/main/units/en/unit1/3.md",
+      "snippet": "Tip Before starting SFT, consider whether using an existing instruction-tuned model with well-crafted prompts would suffice for your use case. SFT involves significant computational resources and engineering effort, so it should only be pursued when prompting existing models proves insufficient. Learn more about this decision process in the Hugging Face LLM Course."
+    },
+    {
+      "title": "smollm/text at main · huggingface/smollm · GitHub",
+      "url": "https://github.com/huggingface/smollm/tree/main/text",
+      "snippet": "SmolLM3 is a 3B parameter language model designed to push the boundaries of small models. It supports dual mode reasoning, 6 languages and long context. SmolLM3 is a fully open model that offers strong performance at the 3B-4B scale. SmolLM3-3B-Base SmolLM3-3B Intermediate checkpoints Blog Summary: 3B model trained on 11T tokens, SoTA at the 3B scale and competitive with 4B models Fully open ..."
+    },
+    {
+      "title": "PDF SmolLM3-3B",
+      "url": "https://aial.ie/research/gpai-training-transparency/archive/SmolLM_33B_2025_11_12.pdf",
+      "snippet": "SmolLM3-3Bis a state-of-the-art 3-billion parameter language model by Hugging Facetrained on 10+ trillion tokensfrom publicly available datasets including web documents, scientific articles, and code."
+    }
+  ]
+}

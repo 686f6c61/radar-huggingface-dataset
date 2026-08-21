@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "michaelrodriguez/paper_019225215_grounded_language",
+  "slug": "michaelrodriguez-paper_019225215_grounded_language",
+  "author": "michaelrodriguez",
+  "url": "https://huggingface.co/michaelrodriguez/paper_019225215_grounded_language",
+  "created_at": "2026-08-21T15:30:53.000Z",
+  "updated_at": "2026-08-21T15:31:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "empirical-focused",
+    "grounded-language",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "latex-arxiv",
+    "measured",
+    "numeric-nature",
+    "short-punchy",
+    "unstructured-narrative",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "PDF Proceedings of the 64th Annual Meeting of the Association for ...",
+      "url": "https://aclanthology.org/2026.acl-long.0.pdf",
+      "snippet": "What metrics can reliably measure the faithfulness (accuracy of the model&#x27;s reasoning) and plausibility (human-perceived reasonableness) of an explanation? (iii) Can explanations be used to reliably detect when a model is making a biased prediction based on sensitive attributes?"
+    },
+    {
+      "title": "Explainability for Large Language Models: A Survey",
+      "url": "https://dl.acm.org/doi/full/10.1145/3639372",
+      "snippet": "Explainability 1 refers to the ability to explain or present the behavior of models in human-understandable terms [Doshi-Velez and Kim 2017; Du et al. 2019a]. Improving the explainability of LLMs is crucial for two key reasons. First, for general end users, explainability builds appropriate trust by elucidating the reasoning mechanism behind model predictions in an understandable manner ..."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "AI News Today 2026 | Latest AI Model Releases, Trends & Analysis",
+      "url": "https://www.buildfastwithai.com/blogs/collection/ai-industry-news-trends",
+      "snippet": "Daily AI news, model releases, and deep analysis for 2026. Track every announcement from OpenAI, Anthropic, Google, Meta, xAI, and the open-source ecosystem in one place."
+    }
+  ]
+}

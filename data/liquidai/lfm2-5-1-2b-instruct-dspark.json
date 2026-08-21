@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/LFM2.5-1.2B-Instruct-DSpark",
+  "slug": "liquidai-lfm2-5-1-2b-instruct-dspark",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-DSpark",
+  "created_at": "2026-08-10T18:12:14.000Z",
+  "updated_at": "2026-08-20T22:06:43.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dspark",
+    "lfm2",
+    "draft-model",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 25,
+  "downloads_30d": 710,
+  "trending_score": 25,
+  "parameters": 295725953,
+  "parameters_human": "295.7M",
+  "storage_bytes": 591458386,
+  "storage_human": "591 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark - Hugging Face",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "snippet": "Today, we release DSpark draft model checkpoints for three models from our LFM2.5 family: LFM2.5-1.2B-Instruct, LFM2.5-2.6B, and LFM2.5-8B-A1B. These add a speculative decoding path that trades a minimal memory increase for a large decoding speedup without changing output quality: Faster inference: up to 3.18 throughput improvement on a GPU and up to 2.87x on-device. Toward on-device agentic ..."
+    },
+    {
+      "title": "LFM2.5-DSpark: Up to 3.2x Faster Inference from H100 to MacBook",
+      "url": "https://www.liquid.ai/blog/lfm2.5-dspark",
+      "snippet": "The DSpark draft models for LFM2.5-1.2B-Instruct, LFM2.5-2.6B, and LFM2.5-8B-A1B are available today on Hugging Face. Additionally, the LFM-compatible DSpark integration is open-sourced upstream in llama.cpp and SGLang. Check out the model cards for how to run them. How DSpark works The decode phase in LLM inference is traditionally memory-bound."
+    },
+    {
+      "title": "Liquid AI&#x27;s 300M Draft Model Speeds Up Decoding…",
+      "url": "https://metallab.ai/en/2026/8/today-we-release-dspark-draft-models-for-lfm2-5-1-2b-instruct-lfm2-5-2",
+      "snippet": "Liquid AI announced this via a public post on X on August 20, uploading DSpark draft model checkpoints for its three LFM2.5-series models — LFM2.5-1.2B-Instruct, LFM2.5-2.6B, and LFM2.5-8B-A1B."
+    },
+    {
+      "title": "LFM2.5-1.2B-Instruct - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct",
+      "snippet": "Instruction-tuned 1.2B parameter model optimized for chat and general-purpose tasks ← Back to Text Models LFM2.5-1.2B-Instruct is Liquid AI&#x27;s flagship instruction-tuned model, delivering exceptional performance for chat, instruction-following, and tool-calling tasks."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-1.2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

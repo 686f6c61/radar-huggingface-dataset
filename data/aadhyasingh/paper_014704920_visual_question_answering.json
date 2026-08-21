@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aadhyasingh/paper_014704920_visual_question_answering",
+  "slug": "aadhyasingh-paper_014704920_visual_question_answering",
+  "author": "aadhyasingh",
+  "url": "https://huggingface.co/aadhyasingh/paper_014704920_visual_question_answering",
+  "created_at": "2026-08-21T18:21:20.000Z",
+  "updated_at": "2026-08-21T18:21:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "detailed-descriptive",
+    "endnote",
+    "enthusiastic",
+    "first-person-plural",
+    "intro-method-exp-related-conclusion",
+    "latex-arxiv",
+    "short-punchy",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Realizing Visual Question Answering for - arXiv.org",
+      "url": "https://arxiv.org/pdf/2405.07163",
+      "snippet": "2.1 Visual Question Answering w task challenged by the AI initiative. Antol et al. (2015) pro-posed VQA as the n w task for the machine learning models. They defined VQA as \"given an image and a natural language question about the image, the task is to pro-vide an accura"
+    },
+    {
+      "title": "[2405.07163] Realizing Visual Question Answering for Education: GPT-4V ...",
+      "url": "https://arxiv.org/abs/2405.07163",
+      "snippet": "Particularly, GPT-4V released by OpenAI, has wide opened the state-of-the-art visual langauge model service so that VQA could be used for a variety of purposes. However, VQA and GPT-4V have not yet been applied to educational studies much. In this position paper, we suggest that GPT-4V contributes to realizing VQA for education."
+    },
+    {
+      "title": "Realizing Visual Question Answering for Education: GPT-4V as a ...",
+      "url": "https://link.springer.com/article/10.1007/s11528-024-01035-z",
+      "snippet": "Educators and researchers have analyzed various image data acquired from teaching and learning, such as images of learning materials, classroom dynamics, students&#x27; drawings, etc. However, this approach is labour-intensive and time-consuming, limiting its scalability and efficiency. The recent development in the Visual Question Answering (VQA) technique has streamlined this process by ..."
+    },
+    {
+      "title": "Realizing Visual Question Answering for Education: GPT-4V as a ...",
+      "url": "https://www.researchgate.net/publication/380543043_Realizing_Visual_Question_Answering_for_Education_GPT-4V_as_a_Multimodal_AI",
+      "snippet": "The integration of Artificial Intelligence (AI), particularly Large Language Model (LLM)-based systems, in education has shown promise in enhancing teaching and learning experiences."
+    },
+    {
+      "title": "Applying Pretrained Vision-Language Models for Visual Question ...",
+      "url": "https://ieeexplore.ieee.org/document/11490380",
+      "snippet": "Visual Question Answering is an application of multimodal AI that can be leveraged to provide automated real time responses to visual questions asked by blind people using assistive technologies. Answerability Prediction of a visual question determines whether the image-question pair contains enough information and is legible enough to generate an answer. In this study, we apply six pretrained ..."
+    }
+  ]
+}

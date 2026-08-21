@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "saanviverma/paper_018277775_multimodal_generation",
+  "slug": "saanviverma-paper_018277775_multimodal_generation",
+  "author": "saanviverma",
+  "url": "https://huggingface.co/saanviverma/paper_018277775_multimodal_generation",
+  "created_at": "2026-08-21T19:30:10.000Z",
+  "updated_at": "2026-08-21T19:30:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "concise-analytical",
+    "enthusiastic",
+    "graphic-visual",
+    "intro-problem-solution-validation-future",
+    "latex-icml",
+    "multimodal-generation",
+    "numeric-apa",
+    "short-punchy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2607.06560] Vision as Unified Multimodal Generation - arXiv.org",
+      "url": "https://arxiv.org/abs/2607.06560",
+      "snippet": "We formulate computer vision as unified multimodal generation, where heterogeneous visual tasks are expressed in the native text and image generation spaces of a unified multimodal model, without task-specific architectures. Under this formulation, SenseNova-Vision uses natural-language instructions and optional visual prompts to specify tasks, target regions or views, and decoding conventions ..."
+    },
+    {
+      "title": "[2505.02567] Unified Multimodal Understanding and Generation Models ...",
+      "url": "https://arxiv.org/abs/2505.02567",
+      "snippet": "Recent years have seen remarkable progress in both multimodal understanding models and image generation models. Despite their respective successes, these two domains have evolved independently, leading to distinct architectural paradigms: While autoregressive-based architectures have dominated multimodal understanding, diffusion-based models have become the cornerstone of image generation ..."
+    },
+    {
+      "title": "Multimodal generative AI for human motion understanding and generation ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1566253526003155",
+      "snippet": "This paper presents an in-depth survey of the use of multimodal Generative Artificial Intelligence (GenAI) with autoregressive Large Language Models (LLMs) for human motion understanding and generation, offering insights into emerging methods and architectures and their potential to advance realistic and versatile motion synthesis. Focusing exclusively on text and motion modalities, this ..."
+    },
+    {
+      "title": "Best Multimodal AI Models 2026: Vision, Audio, Video, and Agents",
+      "url": "https://aimodelbenchmarks.com/blog/2026-02-13-multimodal-ai-models/",
+      "snippet": "Multimodal AI models can reason over more than text. The current frontier models can read screenshots, charts, product photos, PDFs, diagrams, audio, and video clips, then use that visual or audio context inside a normal chat, coding, or agent workflow."
+    },
+    {
+      "title": "Multimodal Video Generation Models with Audio: Present andFuture",
+      "url": "https://openreview.net/pdf?id=8i5vInabkm",
+      "snippet": "sophisticated world simulation for training embodied AI systems. In this paper, we provide a comprehensive overview of the multimodal video generation model literature covering the major topics: evolution and common architectures of multimodal video generation models; common post-training methods and evaluation; applications and active research ..."
+    }
+  ]
+}

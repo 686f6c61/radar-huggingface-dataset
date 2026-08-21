@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/shard-case-collision",
+  "slug": "layerfault-shard-case-collision",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/shard-case-collision",
+  "created_at": "2026-08-21T19:10:59.000Z",
+  "updated_at": "2026-08-21T19:11:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 368,
+  "storage_human": "368 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault validates model artifacts and local model runtimes before inference. It combines structural validation, package inspection, integrity checking, provenance, trust, policy, runtime advisory checks, execution binding, inventory, drift detection, quarantine, and signed evidence in one local CLI."
+    },
+    {
+      "title": "Releases: izm1chael/layerfault - GitHub",
+      "url": "https://github.com/izm1chael/layerfault/releases",
+      "snippet": "Layerfault is an offline-first security and admission-control CLI for local AI models. It validates model structure and package contents, establishes integrity and package identity, evaluates provenance and local trust, applies operator policy, checks relevant runtime security advisories, and can block execution when those guarantees fail."
+    },
+    {
+      "title": "PDF Parallax: Hierarchical Sparse Pre-training Across Fragmented Compute",
+      "url": "https://storage.googleapis.com/chutes-random/parallax-draft-tech-report.pdf",
+      "snippet": "This is hierarchical sparse pre-training: the router sees one global sparse model, but training work is stratified into owned experts, surrogate recall, tiered shared-state synchronization, and optional worker-side expert updates. In the analytic model, increasing composer count lowers per-composer expert compute and state while increasing the communication burden of conventional expert ..."
+    },
+    {
+      "title": "Scaling LLM fine-tuning with sharding - IBM Developer",
+      "url": "https://developer.ibm.com/articles/llms-sharding/",
+      "snippet": "Sharding plays a critical role in enabling scalable AI solutions. It supports efficient training workflows, enhances research capabilities, and makes it possible to build systems that can handle large-scale models responsibly. By leveraging strategies such as FSDP, DeepSpeed ZeRO, quantization, and parameter-efficient fine-tuning, teams can effectively adapt and optimize models for a wide ..."
+    },
+    {
+      "title": "TensorCast: The Missing Tensor Management Layer in Large Language Model ...",
+      "url": "https://arxiv.org/pdf/2608.06007",
+      "snippet": "The shard home worker maintains the ownership and con-sistency invariants of its shard. To prevent split-brain owner-ship during worker failures or network partitions, Tensor-Cast associates each shard with a shard lease containing the shard home worker, expiration time, and a monotonically increasing fencing token."
+    }
+  ]
+}

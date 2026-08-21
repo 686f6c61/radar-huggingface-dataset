@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/shard-duplicate-tensor-mapping",
+  "slug": "layerfault-shard-duplicate-tensor-mapping",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/shard-duplicate-tensor-mapping",
+  "created_at": "2026-08-21T19:11:05.000Z",
+  "updated_at": "2026-08-21T19:11:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16,
+  "parameters_human": "16",
+  "storage_bytes": 368,
+  "storage_human": "368 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault checks sizes, offsets, tensor ranges, alignment, overlap, truncation, malformed metadata, sharded references, and other structural invariants without loading model tensors into inference frameworks."
+    },
+    {
+      "title": "[RFC]: V1/V2 Weight Reload with Streaming Quantization Units - GitHub",
+      "url": "https://github.com/vllm-project/vllm/issues/53192",
+      "snippet": "Motivation. vLLM weight reload currently has to bridge two different representations: checkpoint tensor -> model name mapping and TP/EP sharding -> fusion, padding, transpose, and layout conversion..."
+    },
+    {
+      "title": "pragnyanramtha/flax-duplicate-shard-shadow-poc · Hugging Face",
+      "url": "https://huggingface.co/pragnyanramtha/flax-duplicate-shard-shadow-poc",
+      "snippet": "However, zz_shadow.bin is also a valid Flax msgpack shard and includes a duplicate copy of embeddings/LayerNorm/bias with marker value 8888.0. When Transformers 4.x loads the model, the Flax sharded loader deserializes every tensor in every referenced shard and merges the dictionaries."
+    },
+    {
+      "title": "LLM Model Format Conversion in Production: Avoiding Silent Degradation ...",
+      "url": "https://www.oh-bug.com/posts/llm-model-conversion-production-tensor-mapping-qkv-reordering-layer-wise-validation/",
+      "snippet": "A systematic guide to parameter mapping, QKV reordering, shard indexing, layer-wise numerical validation, and rollback gates when converting LLM weights between Hugging Face, Megatron, and TensorRT-LLM. Build a repeatable, auditable release pipeline to prevent silent degradation, output drift, and parallel slicing errors."
+    },
+    {
+      "title": "2D Parallelism (Tensor Parallelism + FSDP) - Lightning AI",
+      "url": "https://lightning.ai/docs/pytorch/stable/advanced/model_parallel/tp_fsdp.html",
+      "snippet": "By writing the parallelization code in this special hook rather than hardcoding it into the model, we keep the original source code clean and maintainable. In addition to the tensor-parallel code from the Tensor Parallelism tutorial, this implementation now also shards the model&#x27;s parameters using FSDP along the data-parallel dimension."
+    }
+  ]
+}

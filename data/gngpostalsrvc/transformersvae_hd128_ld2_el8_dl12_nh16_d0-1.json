@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gngpostalsrvc/TransformersVAE_hd128_ld2_el8_dl12_nh16_d0.1",
+  "slug": "gngpostalsrvc-transformersvae_hd128_ld2_el8_dl12_nh16_d0-1",
+  "author": "gngpostalsrvc",
+  "url": "https://huggingface.co/gngpostalsrvc/TransformersVAE_hd128_ld2_el8_dl12_nh16_d0.1",
+  "created_at": "2026-08-21T17:57:34.000Z",
+  "updated_at": "2026-08-21T17:57:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3086724,
+  "parameters_human": "3.1M",
+  "storage_bytes": 12382568,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gngpostalsrvc/alephbert_CBH_LBH · Hugging Face",
+      "url": "https://huggingface.co/gngpostalsrvc/alephbert_CBH_LBH",
+      "snippet": "gngpostalsrvc / alephbert_CBH_LBH like 0 Text Classification Transformers Safetensors bert arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "gngpostalsrvc/BERiT_2.0 · Hugging Face",
+      "url": "https://huggingface.co/gngpostalsrvc/BERiT_2.0",
+      "snippet": "BERiT_2.0 This model is a fine-tuned version of roberta-base on an unknown dataset. It achieves the following results on the evaluation set: Loss: 4.3491 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during ..."
+    },
+    {
+      "title": "GitHub - venkyn2/ai_transformers: Transformers: the model-definition ...",
+      "url": "https://github.com/venkyn2/ai_transformers",
+      "snippet": "State-of-the-art pretrained models for inference and training Transformers acts as the model-definition framework for state-of-the-art machine learning with text, computer vision, audio, video, and multimodal models, for both inference and training."
+    },
+    {
+      "title": "Releases · huggingface/transformers - GitHub",
+      "url": "https://github.com/huggingface/transformers/releases",
+      "snippet": "The model is designed to be used by developers building AI- powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation systems, and is suitable for general-purpose conversational use, instruction-following, and other natural language and multimodal tasks. It is released with"
+    }
+  ]
+}

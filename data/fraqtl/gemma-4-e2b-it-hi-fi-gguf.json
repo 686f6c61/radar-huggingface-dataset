@@ -5,11 +5,11 @@
   "author": "fraQtl",
   "url": "https://huggingface.co/fraQtl/Gemma-4-E2B-it-Hi-Fi-GGUF",
   "created_at": "2026-07-21T15:49:56.000Z",
-  "updated_at": "2026-08-18T20:43:04.000Z",
+  "updated_at": "2026-08-21T12:08:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "gguf",
   "languages": [
     "en"
   ],

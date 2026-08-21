@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "amd/gemma-4-12B-it-w4a16-llmcompressor-v0.12.0",
+  "slug": "amd-gemma-4-12b-it-w4a16-llmcompressor-v0-12-0",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/gemma-4-12B-it-w4a16-llmcompressor-v0.12.0",
+  "created_at": "2026-08-21T10:44:03.000Z",
+  "updated_at": "2026-08-21T11:44:16.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "quantized",
+    "int4",
+    "w4a16",
+    "weight-only",
+    "4-bit",
+    "llm-compressor",
+    "zendnn",
+    "compressed-tensors",
+    "amd",
+    "cpu-inference",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:RedHatAI/gemma-4-12B-it",
+    "base_model:quantized:RedHatAI/gemma-4-12B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 7772197794,
+  "storage_human": "7.8 GB",
+  "base_model": "RedHatAI/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B-it",
+      "snippet": "This model card is for the Gemma 4 12B Unified model, which is part of the Gemma 4 family of open models. Built with the same multimodal functionality as Gemma 4 E2B and E4B (text, audio, image, and video inputs), it brings native audio and vision understanding directly to local environments without the need for separate encoders."
+    },
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "How to Deploy gemma-4-12B-it-qat-w4a16-ct on AMD/Nvidia GPU Full Speed ...",
+      "url": "https://mcss.com/how-to-deploy-gemma-4-12b-it-qat-w4a16-ct-on-amd-nvidia-gpu-full-speed-npu-mode/",
+      "snippet": "The gemma-4-12B-it-qat-w4a16-ct model represents a significant breakthrough in the realm of instruction-tuned language models. By harnessing a 12-billion parameter base and integrating a specialized QAT quantization scheme, this model has revolutionized the field of natural language processing."
+    },
+    {
+      "title": "Full Deployment gemma-4-12B-it-qat-w4a16-ct - Project Sarangi",
+      "url": "https://projectsarangi.com/2026/07/05/full-deployment-gemma-4-12b-it-qat-w4a16-ct/",
+      "snippet": "The **gemma-4-12B-it-qat-w4a16-ct** model represents a significant advancement in instruction‑tuned language models, combining a 12‑billion parameter base with a specialized QAT quantization scheme. It leverages a * w4a16 * format, meaning weights are stored in 4‑bit precision while activations remain in 16‑bit floating point, delivering a balanced trade‑off between memory footprint ..."
+    }
+  ]
+}

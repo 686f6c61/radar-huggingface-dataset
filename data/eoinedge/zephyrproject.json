@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "eoinedge/zephyrproject",
+  "slug": "eoinedge-zephyrproject",
+  "author": "eoinedge",
+  "url": "https://huggingface.co/eoinedge/zephyrproject",
+  "created_at": "2026-08-21T19:09:53.000Z",
+  "updated_at": "2026-08-21T19:37:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "zephyr",
+    "zephyr-rtos",
+    "rag",
+    "retrieval",
+    "faiss",
+    "documentation",
+    "embedded",
+    "qwen",
+    "offline",
+    "sentence-similarity",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10673709,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - hariharan07-uv/ZephyrAI-Edge-AI-Assistant-on-Zephyr-RTOS: Edge ...",
+      "url": "https://github.com/hariharan07-uv/ZephyrAI-Edge-AI-Assistant-on-Zephyr-RTOS",
+      "snippet": "ZephyrAI is an Edge AI-powered embedded assistant built on ESP32-S3 using Zephyr RTOS, TinyML, Edge Impulse, and TensorFlow Lite Micro. The system performs real-time natural language intent classification directly on-device without requiring cloud connectivity. It can process user commands, control hardware peripherals, monitor IMU sensor data, and respond intelligently using an embedded ..."
+    },
+    {
+      "title": "GitHub - Arm-Examples/Arm-Ethos-Zephyr-Playground: Simulate tiny edge ...",
+      "url": "https://github.com/Arm-Examples/Arm-Ethos-Zephyr-Playground",
+      "snippet": "This sample showcases seamless AI workload acceleration using Arm&#x27;s Ethos-U NPU. Simply toggle CONFIG_ETHOS_U=y in prj.conf to enable NPU acceleration - no application code changes required. The same model runs efficiently on both standard Cortex-M processors and Ethos-U accelerated systems, demonstrating the power of unified embedded AI development."
+    },
+    {
+      "title": "PDF 202512_OSSJ_Edge - hosted-files.sched.co",
+      "url": "https://hosted-files.sched.co/ossjapan2025/6e/202512_OSSJ_Edge.pdf",
+      "snippet": "Summary Summary I was able to debug Edge AI on Zephyr with useful boards! ・XIAO nRF54L15 Sense & Pico 2(W) match for debugging Edge AI on Zephyr. ・Lightweight Edge AI model fit Zephyr. (Including the AI model, fits into kBytes of RAM/ROM.) ・If you&#x27;re interested, please debug it."
+    },
+    {
+      "title": "Eoin Jordan - The Edge AI Blog — Edge Impulse",
+      "url": "https://www.edgeimpulse.com/blog/author/eoinjordan/",
+      "snippet": "2D to 3D Conversion: Synthetic Asset Generation with Hunyuan-3D and Blender for Edge AI Datasets By Eoin Jordan Aug 28, 2025 edge ai"
+    },
+    {
+      "title": "Edge Impulse SDK for Zephyr — Zephyr Project Documentation",
+      "url": "https://docs.zephyrproject.org/latest/develop/manifest/external/edge-impulse.html",
+      "snippet": "Edge Impulse is a leading edge AI design and development platform for deploying machine learning to edge devices. The Edge Impulse SDK for Zephyr packages the Edge Impulse inferencing SDK as a Zephyr module, enabling easy integration with Zephyr&#x27;s build system."
+    }
+  ]
+}

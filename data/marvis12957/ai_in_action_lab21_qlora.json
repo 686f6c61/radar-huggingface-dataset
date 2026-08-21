@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Marvis12957/ai_in_action_lab21_qlora",
+  "slug": "marvis12957-ai_in_action_lab21_qlora",
+  "author": "Marvis12957",
+  "url": "https://huggingface.co/Marvis12957/ai_in_action_lab21_qlora",
+  "created_at": "2026-08-21T15:54:15.000Z",
+  "updated_at": "2026-08-21T15:59:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "fine-tuning",
+    "vietnamese",
+    "customer-support",
+    "ablation",
+    "vi",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64997400,
+  "storage_human": "65 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LAb21.ai",
+      "url": "https://www.lab21.ai/",
+      "snippet": "Custom Model Training Train specialized models for your unique document types and business requirements."
+    },
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - GitHub",
+      "url": "https://github.com/artidoro/qlora",
+      "snippet": "This repo supports the paper \"QLoRA: Efficient Finetuning of Quantized LLMs\", an effort to democratize access to LLM research. We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit ..."
+    },
+    {
+      "title": "[2305.14314] QLoRA: Efficient Finetuning of Quantized LLMs",
+      "url": "https://arxiv.org/abs/2305.14314",
+      "snippet": "We present QLoRA, an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance. QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters~(LoRA). Our best model family, which we name Guanaco, outperforms all previous openly ..."
+    },
+    {
+      "title": "QLoRA: Finetune a 65B Model on One GPU - YouTube",
+      "url": "https://www.youtube.com/watch?v=o44P9K4SkZE",
+      "snippet": "QLoRA finetunes massive language models by freezing a 4-bit quantized base model and training small LoRA adapters, shrinking memory from 780GB to under 48GB while matching full 16-bit performance ..."
+    },
+    {
+      "title": "242 Parameter-Efficient Fine-Tuning: LoRA and QLoRA - AI in Action",
+      "url": "https://mikenguyen13.github.io/ai_in_action/703-parameter-efficient-finetuning-lora.html",
+      "snippet": "242.3 QLoRA: Fine-Tuning a Quantized Base LoRA shrinks the trainable parameters, but the frozen base model still has to sit in memory during training. For a 65 billion parameter model in 16-bit precision that is about 130 GB, still far beyond a single GPU."
+    }
+  ]
+}

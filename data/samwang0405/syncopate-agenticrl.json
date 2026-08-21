@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SamWang0405/Syncopate-AgenticRL",
+  "slug": "samwang0405-syncopate-agenticrl",
+  "author": "SamWang0405",
+  "url": "https://huggingface.co/SamWang0405/Syncopate-AgenticRL",
+  "created_at": "2026-08-21T16:51:41.000Z",
+  "updated_at": "2026-08-21T17:06:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "agentic",
+    "verl",
+    "tool-use",
+    "zh",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21916181774,
+  "storage_human": "21.9 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SamWang0405 (Chaoyu Wang) - Hugging Face",
+      "url": "https://huggingface.co/SamWang0405/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 1 day ago ... published a dataset 1 day ago"
+    },
+    {
+      "title": "ChaoyuWang04 (Chaoyu Wang) · GitHub",
+      "url": "https://github.com/ChaoyuWang04/",
+      "snippet": "Hi, I&#x27;m Chaoyu Wang 👋 AI researcher working at the intersection of LLM post-training and inference systems — training agents with RL, then making them run fast."
+    },
+    {
+      "title": "ChaoyuWang04/Syncopate_Async_AgenticRL - GitHub",
+      "url": "https://github.com/ChaoyuWang04/Syncopate_Async_AgenticRL",
+      "snippet": "Sync vs fully-async agentic RL on verl: multi-turn GRPO, long-tail rollout profiling, staleness ablations — quantifying when async pays off."
+    },
+    {
+      "title": "AgenticRL: Self-Refining Agentic Reinforcement Learning for Vision ...",
+      "url": "https://kendrick-stein.github.io/MCISLAB_DeepRead/Papers/2606-AgenticRL",
+      "snippet": "Summary 提出 AgenticRL，一个多模态 GPT agent 驱动的闭环 RL 框架：自动生成 reward、训练 PPO policy、诊断 failure modes、迭代精修 reward，最终在真实 UAV 上实现 91% success rate 和 94% sim-to-real accuracy。 Problem & Motivation UAV RL 导航的核心痛点：reward function 设计依赖人工反复调参，费时且不保证 task success。自然语言 ..."
+    },
+    {
+      "title": "[2606.03963] AgenticRL: Self-Refining Agentic Reinforcement Learning ...",
+      "url": "https://arxiv.org/abs/2606.03963",
+      "snippet": "Deep reinforcement learning has shown strong potential for enabling autonomous robots to learn complex navigational tasks. However, its practical use still depends heavily on human designed reward functions and repeated manual fine tuning, which is time consuming and does not guarantee high success in the desired task. This paper presents AgenticRL, agent guided reinforcement learning ..."
+    }
+  ]
+}

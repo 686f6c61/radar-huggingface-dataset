@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "meituan-longcat/LongCat-Video-Avatar-1.5",
+  "slug": "meituan-longcat-longcat-video-avatar-1-5",
+  "author": "meituan-longcat",
+  "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.5",
+  "created_at": "2026-05-21T09:05:55.000Z",
+  "updated_at": "2026-06-04T12:38:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "longcat-video-avatar-1.5",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "longcat-video-avatar-1.5",
+    "onnx",
+    "diffusers",
+    "safetensors",
+    "audio-text-to-video",
+    "audio-image-text-to-video",
+    "audio-driven-video-continuation",
+    "transformers",
+    "avatar",
+    "video-generation",
+    "en",
+    "zh",
+    "base_model:meituan-longcat/LongCat-Video",
+    "base_model:quantized:meituan-longcat/LongCat-Video",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 733,
+  "downloads_30d": 1562,
+  "trending_score": 17,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74882216211,
+  "storage_human": "74.9 GB",
+  "base_model": "meituan-longcat/LongCat-Video",
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meituan-longcat/LongCat-Video-Avatar-1.5 · Hugging Face",
+      "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "meituan-longcat/LongCat-Video-Avatar · Hugging Face",
+      "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open-Source Digital Human Video Model - LongCat-Video-Avatar 1.5",
+      "url": "https://www.longcatai.org/models/video-avatar",
+      "snippet": "Overview LongCat-Video-Avatar 1.5 is the latest open-source release in LongCat&#x27;s digital human video line, advancing from open-source SOTA toward commercial-grade deployment."
+    },
+    {
+      "title": "GitHub - MeiGen-AI/LongCat-Video-Avatar-1.5-Page: Homepage of LongCat ...",
+      "url": "https://github.com/MeiGen-AI/LongCat-Video-Avatar-1.5-Page",
+      "snippet": "May 21, 2026: 🚀 We release LongCat-Video-Avatar-1.5, an upgraded open-source framework for audio-driven human video generation. v1.5 replaces Wav2Vec2 with Whisper-Large for more accurate lip synchronization, achieves production-ready physical rationality and temporal stability with robust long-video generation, generalizes to stylized ..."
+    },
+    {
+      "title": "GitHub - meituan-longcat/LongCat-Video · GitHub",
+      "url": "https://github.com/meituan-longcat/LongCat-Video",
+      "snippet": "May 21, 2026: 🚀 We release LongCat-Video-Avatar-1.5, an upgraded open-source framework for audio-driven human video generation. v1.5 replaces Wav2Vec2 with Whisper-Large for more accurate lip synchronization, achieves production-ready physical rationality and temporal stability with robust long-video generation, generalizes to stylized domains (anime, animals, complex real-world conditions ..."
+    }
+  ]
+}

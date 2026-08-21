@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Sev-in/hf_tokenizer",
+  "slug": "sev-in-hf_tokenizer",
+  "author": "Sev-in",
+  "url": "https://huggingface.co/Sev-in/hf_tokenizer",
+  "created_at": "2026-08-21T17:11:17.000Z",
+  "updated_at": "2026-08-21T17:11:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Loading & Tokenization | xLLM-AI/xllm | DeepWiki",
+      "url": "https://deepwiki.com/xLLM-AI/xllm/8-model-loading-and-tokenization",
+      "snippet": "The Model Loading and Tokenization subsystem in xLLM is responsible for translating model artifacts on disk (weights, configurations, and vocabularies) into executable in-memory structures."
+    },
+    {
+      "title": "Tokenizers - AI-OS Documentation",
+      "url": "https://wulfic.github.io/AI-OS/guide/features/TOKENIZERS/",
+      "snippet": "Expected: pipeline loads GPT-2 tokenizer, logs train/eval steps. Notes and edge cases HF auth for some models: set HF_TOKEN env var if private models are required Sequence length: Max sequence governed by model config; adjust via training flags (see Core Training) Unicode handling: Non-ASCII text is supported; --ascii-only exists on some dataset paths to filter Mismatched model/tokenizer ..."
+    },
+    {
+      "title": "GitHub - mlc-ai/tokenizers-cpp: Universal cross-platform tokenizers ...",
+      "url": "https://github.com/mlc-ai/tokenizers-cpp",
+      "snippet": "This project provides a cross-platform C++ tokenizer binding library that can be universally deployed. It wraps and binds the HuggingFace tokenizers library and sentencepiece and provides a minimum common interface in C++. The main goal of the project is to enable tokenizer deployment for language model applications to native platforms with minimum dependencies and remove some of the barriers ..."
+    },
+    {
+      "title": "GitHub - huggingface/tokenizers: Fast State-of-the-Art Tokenizers ...",
+      "url": "https://github.com/huggingface/tokenizers",
+      "snippet": "Train new vocabularies and tokenize, using today&#x27;s most used tokenizers. Extremely fast (both training and tokenization), thanks to the Rust implementation. Takes less than 20 seconds to tokenize a GB of text on a server&#x27;s CPU. Easy to use, but also extremely versatile. Designed for research and production. Normalization comes with alignments tracking. It&#x27;s always possible to get the part of ..."
+    }
+  ]
+}

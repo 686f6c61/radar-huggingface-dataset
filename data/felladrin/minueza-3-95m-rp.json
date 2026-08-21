@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Felladrin/Minueza-3-95M-RP",
+  "slug": "felladrin-minueza-3-95m-rp",
+  "author": "Felladrin",
+  "url": "https://huggingface.co/Felladrin/Minueza-3-95M-RP",
+  "created_at": "2026-08-21T17:36:23.000Z",
+  "updated_at": "2026-08-21T19:00:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma3",
+    "roleplay",
+    "rp",
+    "creative",
+    "not-for-all-audiences",
+    "text-generation",
+    "en",
+    "dataset:PygmalionAI/PIPPA",
+    "dataset:euclaise/writingprompts",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:Nopm/Opus_WritingStruct",
+    "dataset:kalomaze/Opus_Instruct_25k",
+    "dataset:kalomaze/Opus_Instruct_3k",
+    "dataset:Gryphe/Sonnet3.5-SlimOrcaDedupCleaned",
+    "dataset:tasksource/ScienceQA_text_only",
+    "dataset:jondurbin/gutenberg-dpo-v0.1",
+    "dataset:jondurbin/truthy-dpo-v0.1",
+    "base_model:Felladrin/Minueza-3-95M-Base",
+    "base_model:quantized:Felladrin/Minueza-3-95M-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94732416,
+  "parameters_human": "94.7M",
+  "storage_bytes": 999542964,
+  "storage_human": "1000 MB",
+  "base_model": "Felladrin/Minueza-3-95M-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Felladrin/Minueza-3-95M-Base · Hugging Face",
+      "url": "https://huggingface.co/Felladrin/Minueza-3-95M-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "felladrin (Victor Nogueira) · GitHub",
+      "url": "https://github.com/felladrin",
+      "snippet": "A graph representing felladrin&#x27;s contributions from August 17, 2025 to August 21, 2026. The contributions are 46% commits, 29% code review, 20% pull requests, 5% issues."
+    },
+    {
+      "title": "Felladrin (Victor Nogueira) - Hugging Face",
+      "url": "https://huggingface.co/Felladrin",
+      "snippet": "Felladrin/Minueza-2-96M-Instruct-Variant-10 Text Generation • 96M • Updated Apr 13 • 18 Felladrin/Smol-Llama-101M-Chat-v1 Felladrin/Minueza-32M-UltraChat Frequently Used Spaces Create quantized models from Hugging Face repos Convert and upload Hugging Face models to MLX format"
+    },
+    {
+      "title": "Felladrin AI Model Benchmarks | BenchmarkList",
+      "url": "https://benchmarklist.com/providers/felladrin/",
+      "snippet": "Felladrin AI model benchmark profile: 2 models, 3 covered benchmarks, and source-linked evaluation rows on BenchmarkList."
+    },
+    {
+      "title": "Joyland AI Chat: Unrestricted AI Roleplay & Character Chat - Create ...",
+      "url": "https://www.joyland.ai/",
+      "snippet": "Joyland.ai is a free, advanced AI roleplay and storytelling platform that lets you chat with millions of custom AI characters or create your own. Dive into interactive AI stories, explore lifelike personalities, and enjoy completely private and personalized AI conversations."
+    }
+  ]
+}

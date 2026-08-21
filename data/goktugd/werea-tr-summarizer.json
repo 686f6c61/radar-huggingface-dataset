@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "GoktugD/Werea-TR-Summarizer",
+  "slug": "goktugd-werea-tr-summarizer",
+  "author": "GoktugD",
+  "url": "https://huggingface.co/GoktugD/Werea-TR-Summarizer",
+  "created_at": "2026-08-21T15:38:01.000Z",
+  "updated_at": "2026-08-21T15:38:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "mt5",
+    "turkish",
+    "summarization",
+    "news",
+    "werea",
+    "tr",
+    "dataset:batubayk/TR-News",
+    "base_model:google/mt5-small",
+    "base_model:finetune:google/mt5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 300176768,
+  "parameters_human": "300.2M",
+  "storage_bytes": 1217079374,
+  "storage_human": "1.2 GB",
+  "base_model": "google/mt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Göktuğ Düşünen · Model Lab - a Hugging Face Space by GoktugD",
+      "url": "https://huggingface.co/spaces/GoktugD/goktug-ai-lab",
+      "snippet": "Göktuğ Düşünen — open Turkish AI models, datasets, benchmarks and inference systems."
+    },
+    {
+      "title": "DUSUNEN Model Lab — Measured Turkish AI - a GoktugD Collection",
+      "url": "https://huggingface.co/collections/GoktugD/dusunen-model-lab-measured-turkish-ai",
+      "snippet": "Measured Turkish AI by Göktuğ Düşünen: retrieval, learning-to-rank, reproducible data, security copilots and browser demos."
+    },
+    {
+      "title": "Resoomer: free cognitive studio to process your documents",
+      "url": "https://resoomer.com/en/",
+      "snippet": "Go from passive reading to total mastery of your documents with Resoomer. Free, no account, no character limit, and multilingual."
+    },
+    {
+      "title": "SMMRY | Summarize Any Text in Seconds | Smmry.com",
+      "url": "https://smmry.com/",
+      "snippet": "An AI summarizer is a tool that uses artificial intelligence to summarize text or lengthy documents into concise overviews. SUMRY specializes in creating short, accurate summaries from any content—saving you time and effort."
+    },
+    {
+      "title": "AI Summarizer",
+      "url": "https://www.summarizer.org/",
+      "snippet": "Our AI paragraph summarizer ensures accuracy and maintains the original context while summarizing the text. You can generate summaries for any type of content, including essays, blogs, articles, research papers, reports, and large documents."
+    }
+  ]
+}

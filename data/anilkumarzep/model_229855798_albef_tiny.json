@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "anilkumarzep/model_229855798_albef_tiny",
+  "slug": "anilkumarzep-model_229855798_albef_tiny",
+  "author": "anilkumarzep",
+  "url": "https://huggingface.co/anilkumarzep/model_229855798_albef_tiny",
+  "created_at": "2026-08-21T16:40:20.000Z",
+  "updated_at": "2026-08-21T16:40:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "albef",
+    "classification",
+    "flash",
+    "groupnorm",
+    "low-rank",
+    "mish",
+    "novograd",
+    "polynomial",
+    "tiny",
+    "xavier-uniform",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - salesforce/ALBEF: Code for ALBEF: a new vision-language pre ...",
+      "url": "https://github.com/salesforce/ALBEF",
+      "snippet": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation, NeurIPS 2021 Spotlight (Salesforce Research). Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]."
+    },
+    {
+      "title": "GitHub - zongdaoming/albef: Code for albef: a new vision-audio-language ...",
+      "url": "https://github.com/zongdaoming/albef",
+      "snippet": "Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]. This repository supports pre-training on custom datasets, as well as finetuning on VQA, SNLI-VE, NLVR2, Image-Text Retrieval on MSCOCO and Flickr30k, and visual grounding on RefCOCO+. Pre ..."
+    },
+    {
+      "title": "[2107.07651] Align before Fuse: Vision and Language Representation ...",
+      "url": "https://arxiv.org/abs/2107.07651",
+      "snippet": "Large-scale vision and language representation learning has shown promising improvements on various vision-language tasks. Most existing methods employ a transformer-based multimodal encoder to jointly model visual tokens (region-based image features) and word tokens. Because the visual tokens and word tokens are unaligned, it is challenging for the multimodal encoder to learn image-text ..."
+    },
+    {
+      "title": "Model Zoo: BLIP, BLIP-2, ALBEF, ALPRO, CLIP Configs",
+      "url": "https://deepwiki.com/li-shuxian/TME/6.2-model-zoo:-blip-blip-2-albef-alpro-clip-configs",
+      "snippet": "BLIP-2 Model Variants BLIP-2 is the primary foundation for the TME model. Configurations cover different Large Language Model (LLM) backends and training stages."
+    },
+    {
+      "title": "salesforce/albef | Readme and Docs - Replicate",
+      "url": "https://replicate.com/salesforce/albef/readme",
+      "snippet": "This is the official PyTorch implementation of the ALBEF paper [Blog]. This repository supports pre-training on custom datasets, as well as finetuning on VQA, SNLI-VE, NLVR2, Image-Text Retrieval on MSCOCO and Flickr30k, and visual grounding on RefCOCO+."
+    }
+  ]
+}

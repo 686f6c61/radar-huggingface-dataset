@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tran-1984/model_691991104_dino_large",
+  "slug": "tran-1984-model_691991104_dino_large",
+  "author": "tran-1984",
+  "url": "https://huggingface.co/tran-1984/model_691991104_dino_large",
+  "created_at": "2026-08-21T15:07:11.000Z",
+  "updated_at": "2026-08-21T15:07:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "batchnorm",
+    "cosine",
+    "dilated",
+    "dino",
+    "large",
+    "orthogonal",
+    "relu",
+    "retrieval",
+    "tensor-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/dinov2-large · Hugging Face",
+      "url": "https://huggingface.co/facebook/dinov2-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dino | Nvidia Ngc",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/tao/models/pretrained_dino_coco/dino_fan_large_trainable_v1.0",
+      "snippet": "The pre-trained models accelerate the AI training process and reduce costs associated with large scale data collection, labeling, and training models from scratch. Transfer learning with pre-trained models can be used for AI applications in smart cities, retail, healthcare, industrial inspection and more."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "DINO (computer vision) - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/dino_model",
+      "snippet": "DINO (self- DI stillation with NO labels) is a family of self-supervised learning methods for computer vision from Meta AI that trains Vision Transformers (ViTs) on unlabeled images and produces general-purpose visual features rivaling or surpassing those learned with human-labeled supervision [1] [2]."
+    }
+  ]
+}

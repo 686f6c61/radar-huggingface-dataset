@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "dakerholdings/BGE-Small-LegalEmbeddings-USCode-6bit-mlx",
+  "slug": "dakerholdings-bge-small-legalembeddings-uscode-6bit-mlx",
+  "author": "dakerholdings",
+  "url": "https://huggingface.co/dakerholdings/BGE-Small-LegalEmbeddings-USCode-6bit-mlx",
+  "created_at": "2026-08-21T17:00:02.000Z",
+  "updated_at": "2026-08-21T17:01:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "bert",
+    "sentence-transformers",
+    "feature-extraction",
+    "sentence-similarity",
+    "embeddings",
+    "legal",
+    "USCode",
+    "en",
+    "dataset:ArchitRastogi/USCode-QAPairs-Finetuning",
+    "base_model:ArchitRastogi/BGE-Small-LegalEmbeddings-USCode",
+    "base_model:finetune:ArchitRastogi/BGE-Small-LegalEmbeddings-USCode",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33212160,
+  "parameters_human": "33.2M",
+  "storage_bytes": 199908151,
+  "storage_human": "200 MB",
+  "base_model": "ArchitRastogi/BGE-Small-LegalEmbeddings-USCode",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "USCode-QAPairs-Finetuning",
+      "metric": "Accuracy",
+      "value": 0.72
+    },
+    {
+      "task": null,
+      "dataset": "USCode-QAPairs-Finetuning",
+      "metric": "Recall",
+      "value": 0.75
+    }
+  ],
+  "sources": [
+    {
+      "title": "BGE-Small-LegalEmbeddings-USCode - Hugging Face",
+      "url": "https://huggingface.co/ArchitRastogi/BGE-Small-LegalEmbeddings-USCode",
+      "snippet": "This is a fine-tuned version of the BGE Small embedding model, trained on the USCode-QueryPairs dataset, a subset of the USLawQA corpus. The model is optimized for generating embeddings for legal text, achieving 75% accuracy on the test set."
+    },
+    {
+      "title": "Bge Small Legalembeddings Uscode - AI Dataset Insights",
+      "url": "https://free2aitools.com/dataset/architrastogi/bge-small-legalembeddings-uscode",
+      "snippet": "Deep dive into Bge Small Legalembeddings Uscode. 🆔 Identity & Source id hf-dataset--architrastogi--bge-small-legalembeddings-uscode slug architrastogi--bge-small-legalembeddings-uscode source huggingface author ArchitRastogi license Apache-2.0 tags transformers, tensorboard, safetensors, bert, feature-extraction, sentence-transformers, sentence-similarity, embeddings, legal, uscode, en ..."
+    },
+    {
+      "title": "mlx-community/bge-small-en-v1.5-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/bge-small-en-v1.5-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Welcome to BGE! — BGE documentation",
+      "url": "https://bge-model.com/",
+      "snippet": "Besides the resources we provide here in this documentation, please visit our GitHub repo for more contents including: Want to get familiar with BGE quickly? There are hands-on examples to run for embedder and reranker&#x27;s inference, evaluation, and finetuning. Unfamiliar with some area, keywords or techniques of retrieval and RAG? We provide tutorials to teach you basic knowledge and coding ..."
+    },
+    {
+      "title": "mlx-community/bge-small-en-v1.5-6bit - Models",
+      "url": "https://www.modelscope.cn/models/mlx-community/bge-small-en-v1.5-6bit",
+      "snippet": "bert English feature-extraction, sentence-similarity, transformers and 2 more @ mlx-community 465 downloads 28.25MB updated Apr 02,2025"
+    }
+  ]
+}

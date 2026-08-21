@@ -5,7 +5,7 @@
   "author": "PulpCut",
   "url": "https://huggingface.co/PulpCut/Z-Image-Turbo-INT8-ConvRot-safetensors",
   "created_at": "2026-08-17T13:21:32.000Z",
-  "updated_at": "2026-08-17T13:48:07.000Z",
+  "updated_at": "2026-08-21T11:52:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

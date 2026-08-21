@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "gnitoahc/ceed-b5",
+  "slug": "gnitoahc-ceed-b5",
+  "author": "gnitoahc",
+  "url": "https://huggingface.co/gnitoahc/ceed-b5",
+  "created_at": "2026-08-21T16:40:59.000Z",
+  "updated_at": "2026-08-21T16:42:52.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "vision-language",
+    "visual-question-answering",
+    "knowledge-distillation",
+    "lora",
+    "merged",
+    "research",
+    "conversational",
+    "en",
+    "dataset:lmms-lab/DocVQA",
+    "dataset:lmms-lab/GQA",
+    "dataset:lmms-lab/ChartQA",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941100874,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914645046,
+  "storage_human": "15.9 GB",
+  "base_model": "google/gemma-4-e4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - GNITOAHC/ceed",
+      "url": "https://github.com/GNITOAHC/ceed",
+      "snippet": "Contribute to GNITOAHC/ceed development by creating an account on GitHub."
+    },
+    {
+      "title": "gnitoahc/ceed-b2-gemma4-e4b-it-0802 · Hugging Face",
+      "url": "https://huggingface.co/gnitoahc/ceed-b2-gemma4-e4b-it-0802",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use gnitoahc/ceed-b2-gemma4-e4b-it-0802 with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "ceed/ceed.md at main · GNITOAHC/ceed · GitHub",
+      "url": "https://github.com/GNITOAHC/ceed/blob/main/ceed.md",
+      "snippet": "CEED does not distill router probabilities. Router gating is a prediction made before computation, distorted by load balancing and frequency bias; measured attribution is what the computation actually did."
+    },
+    {
+      "title": "gnitoahc (Chao-Ting, Chen) - Hugging Face",
+      "url": "https://huggingface.co/gnitoahc",
+      "snippet": "gnitoahc/poly_markets_test ... gnitoahc/iac-dataset ... gnitoahc/vlm-eval-videos ... gnitoahc/model_privacy ... gnitoahc/roc-law-and-regulations"
+    },
+    {
+      "title": "Hub repository · TrendSpikes",
+      "url": "https://www.trendspikes.com/app/hugging-face/repositories/0ec20fd2-56ad-4e57-a01d-54d8faf05c14",
+      "snippet": "Public Hugging Face Hub repository metadata. No weights, dataset rows or Space files are ever downloaded. ← All formation phrases modelimage-text-to-texttransformers open on the Hub ↗ gnitoahc Namespace 2026-08-01 Created 2026-08-01 Last modified 0 Likes 9 Downloads blank = unknown — Trending score provider signal"
+    }
+  ]
+}

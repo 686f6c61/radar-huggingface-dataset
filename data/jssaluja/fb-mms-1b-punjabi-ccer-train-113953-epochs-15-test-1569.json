@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jssaluja/fb-mms-1b-punjabi-ccer-train-113953-epochs-15-test-1569",
+  "slug": "jssaluja-fb-mms-1b-punjabi-ccer-train-113953-epochs-15-test-1569",
+  "author": "jssaluja",
+  "url": "https://huggingface.co/jssaluja/fb-mms-1b-punjabi-ccer-train-113953-epochs-15-test-1569",
+  "created_at": "2026-08-21T10:41:50.000Z",
+  "updated_at": "2026-08-21T13:25:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 964734403,
+  "parameters_human": "964.7M",
+  "storage_bytes": 3877241867,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fb-mms-1b-wer-stage2-general-punjabi-train-2669-epochs-5-test-1569",
+      "url": "https://huggingface.co/jaspalsinghsaluja/fb-mms-1b-wer-stage2-general-punjabi-train-2669-epochs-5-test-1569",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fb-mms-1b-ccer-jssaluja_rajinder_singh-epochs-10-test-datasets-10 ...",
+      "url": "https://huggingface.co/jssaluja/fb-mms-1b-ccer-jssaluja_rajinder_singh-epochs-10-test-datasets-10-20251128_120953",
+      "snippet": "jssaluja/fb-mms-1b-ccer-jssaluja_rajinder_singh-epochs-10-test-datasets-10-20251128_120953 This model is a fine-tuned version of facebook/mms-1b-all on the jssaluja/rajinder_singh dataset. It achieves the following results on the evaluation set: Loss: 0.3214 Wer: 0.3784 Wil: 0.5786 Mer: 0.3718 Cer: 0.0966 Ncer: 0.0493 Ccer: 0.0990 Model description More information needed Intended uses ..."
+    },
+    {
+      "title": "facebook/mms-1b · Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-1b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fb-mms-1b-sggs-ncer-train-105374-epochs-15-test-1569",
+      "url": "https://huggingface.co/jssaluja/fb-mms-1b-sggs-ncer-train-105374-epochs-15-test-1569",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jssaluja/fb-mms-1b-cleaned-jssaluja_rajinder_singh-epochs-12-test ...",
+      "url": "https://huggingface.co/jssaluja/fb-mms-1b-cleaned-jssaluja_rajinder_singh-epochs-12-test-datasets-10-20250812_232950",
+      "snippet": "jssaluja/fb-mms-1b-cleaned-jssaluja_rajinder_singh-epochs-12-test-datasets-10-20250812_232950 This model is a fine-tuned version of facebook/mms-1b-all on the jssaluja/rajinder_singh dataset. It achieves the following results on the evaluation set: Loss: 0.3189 Wer: 0.3560 Wil: 0.5533 Mer: 0.3498 Cer: 0.0917 Model description More information needed Intended uses & limitations More information ..."
+    }
+  ]
+}

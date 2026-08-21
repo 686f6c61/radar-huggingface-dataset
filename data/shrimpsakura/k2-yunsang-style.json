@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "shrimpsakura/K2-yunsang-style",
+  "slug": "shrimpsakura-k2-yunsang-style",
+  "author": "shrimpsakura",
+  "url": "https://huggingface.co/shrimpsakura/K2-yunsang-style",
+  "created_at": "2026-08-21T11:01:38.000Z",
+  "updated_at": "2026-08-21T11:08:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 687784236,
+  "storage_human": "688 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shrimpsakura/K2-yunsang-style · Hugging Face",
+      "url": "https://huggingface.co/shrimpsakura/K2-yunsang-style",
+      "snippet": "shrimpsakura / K2-yunsang-style like 0 Text-to-Image Diffusers lora template:diffusion-lora Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Kimi K2: Open Agentic Intelligence",
+      "url": "https://moonshotai.github.io/Kimi-K2/",
+      "snippet": "Kimi K2 is our latest Mixture-of-Experts model with 32 billion activated parameters and 1 trillion total parameters. It achieves state-of-the-art performance in frontier knowledge, math, and coding among non-thinking models."
+    },
+    {
+      "title": "GitHub - MoonshotAI/Kimi-K2: Kimi K2 is the large language model series ...",
+      "url": "https://github.com/MoonshotAI/Kimi-K2",
+      "snippet": "Kimi K2 is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters. Trained with the Muon optimizer, Kimi K2 achieves exceptional performance across frontier knowledge, reasoning, and coding tasks while being meticulously optimized for agentic capabilities."
+    },
+    {
+      "title": "Kimi K2 - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/kimi_k2",
+      "snippet": "Kimi K2 is an open-weights Mixture of Experts language model from Moonshot AI, a Beijing startup, released on July 11, 2025 with 1.04 trillion total parameters…"
+    },
+    {
+      "title": "Kimi (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kimi_(AI)",
+      "snippet": "Kimi is an artificial intelligence (AI) chatbot and series of large language models developed by Chinese company Moonshot AI. Its first version, released in 2023, was known for supporting up to 128,000 tokens of context. [1] The company released the open-weights Kimi K2 in July 2025, [2][3] and Kimi K3 in July 2026."
+    }
+  ]
+}

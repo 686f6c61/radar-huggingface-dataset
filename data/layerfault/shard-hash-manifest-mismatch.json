@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/shard-hash-manifest-mismatch",
+  "slug": "layerfault-shard-hash-manifest-mismatch",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/shard-hash-manifest-mismatch",
+  "created_at": "2026-08-21T19:11:09.000Z",
+  "updated_at": "2026-08-21T19:11:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32,
+  "parameters_human": "32",
+  "storage_bytes": 368,
+  "storage_human": "368 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault/tree/main",
+      "snippet": "Offline-first security and admission control for local AI models. Layerfault validates model artifacts and local model runtimes before inference."
+    },
+    {
+      "title": "GitHub - leyten/shard: Pipeline-parallel LLM inference across GPUs on ...",
+      "url": "https://github.com/leyten/shard",
+      "snippet": "A model too large for any single card is split into contiguous blocks of layers — one shard per GPU — and a request is served by streaming activations through the shards in order, over the open internet."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Mismatches: Identifying Potential Algorithmic Harms Before AI ...",
+      "url": "https://arxiv.org/pdf/2502.18682",
+      "snippet": "AI Mismatches often result from : mismatches between the re-quired model performance needed to deliver the intended value and minimize harm and the model performance that can be realistically achieved given factors such as data quality and the complexity of the inference [22, 87, 116]."
+    },
+    {
+      "title": "AI Mismatches: Identifying Potential Algorithmic Harms Before AI ...",
+      "url": "https://arxiv.org/html/2502.18682v1",
+      "snippet": "Navigating complex, multi-dimensional risk factors that contribute to AI Mismatches is a persistent challenge. To address it, we propose an AI Mismatch approach to anticipate and mitigate risks early on, focusing on the gap between realistic model performance and required task performance."
+    }
+  ]
+}

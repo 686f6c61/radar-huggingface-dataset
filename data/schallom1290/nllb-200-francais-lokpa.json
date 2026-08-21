@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Schallom1290/nllb-200-francais-lokpa",
+  "slug": "schallom1290-nllb-200-francais-lokpa",
+  "author": "Schallom1290",
+  "url": "https://huggingface.co/Schallom1290/nllb-200-francais-lokpa",
+  "created_at": "2026-08-21T16:38:32.000Z",
+  "updated_at": "2026-08-21T16:39:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 2492595048,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "200 languages within a single AI model: A breakthrough in high-quality ...",
+      "url": "https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/",
+      "snippet": "Meta AI has built a single AI model, NLLB-200, that is the first to translate across 200 different languages with state-of-the-art quality that has been validated through extensive evaluations for each of them."
+    },
+    {
+      "title": "200 langues pour un seul modèle d&#x27;IA - AI at Meta",
+      "url": "https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/fr/",
+      "snippet": "Meta AI a mis au point un modèle d&#x27;IA unique, NLLB-200, qui est le premier à traduire dans 200 langues différentes avec une qualité de pointe validée par des évaluations poussées pour chacune d&#x27;entre elles."
+    },
+    {
+      "title": "GitHub - sioaeko/NLLB_translator: Multi-engine neural translator across ...",
+      "url": "https://github.com/sioaeko/NLLB_translator",
+      "snippet": "A multi-engine neural translator across 200 languages — run an open model locally, or switch to a free frontier API, all from one clean UI."
+    },
+    {
+      "title": "facebook/nllb-200-3.3B · Hugging Face",
+      "url": "https://huggingface.co/facebook/nllb-200-3.3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NLLB · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/nllb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

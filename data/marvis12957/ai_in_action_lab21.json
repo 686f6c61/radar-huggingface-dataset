@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Marvis12957/ai_in_action_lab21",
+  "slug": "marvis12957-ai_in_action_lab21",
+  "author": "Marvis12957",
+  "url": "https://huggingface.co/Marvis12957/ai_in_action_lab21",
+  "created_at": "2026-08-21T15:52:58.000Z",
+  "updated_at": "2026-08-21T15:59:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "fine-tuning",
+    "vietnamese",
+    "customer-support",
+    "vi",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84986725,
+  "storage_human": "85 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llm-foundation-Marvis12957/README.md at main · GDGoC-FPTU/llm ... - GitHub",
+      "url": "https://github.com/GDGoC-FPTU/llm-foundation-Marvis12957/blob/main/README.md",
+      "snippet": "190 lines (154 loc) · 7.51 KB main llm-foundation-Marvis12957 README.md 190 lines (154 loc) · 7.51 KB"
+    },
+    {
+      "title": "LAb21.ai",
+      "url": "https://www.lab21.ai/",
+      "snippet": "Custom Model Training Train specialized models for your unique document types and business requirements."
+    },
+    {
+      "title": "AI Systems Built for the Enterprise | AI21",
+      "url": "https://www.ai21.com/",
+      "snippet": "AI21 builds Foundation Models and AI Systems for the enterprise. Power your most critical enterprise workflows with accurate, reliable, and scalable AI."
+    },
+    {
+      "title": "AI in Action 2024 Report | IBM",
+      "url": "https://www.ibm.com/think/reports/ai-in-action",
+      "snippet": "The AI in Action report brings real-word data to the AI conversation to explore a simple question—during this critical period, what lessons can be learned from an AI vanguard already seeing results?"
+    },
+    {
+      "title": "Exam JN0-451 topic 2 question 15 Discussion and Solutions",
+      "url": "https://www.certsforce.com/discussions/juniper/view/exam-jn0-451-topic-2-question-15-discussion",
+      "snippet": "Explore Juniper JN0-451 Topic 2, Question 15 with a clear explanation and solution. Understand the reasoning behind the correct answer."
+    }
+  ]
+}

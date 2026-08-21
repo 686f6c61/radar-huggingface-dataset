@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AnonMLuser/remdm-planner-craftax",
+  "slug": "anonmluser-remdm-planner-craftax",
+  "author": "AnonMLuser",
+  "url": "https://huggingface.co/AnonMLuser/remdm-planner-craftax",
+  "created_at": "2026-08-21T15:02:22.000Z",
+  "updated_at": "2026-08-21T15:02:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "discrete-diffusion",
+    "planning",
+    "craftax",
+    "jax",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 325346098,
+  "storage_human": "325 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MathisW78/remdm-craftax · Hugging Face",
+      "url": "https://huggingface.co/MathisW78/remdm-craftax",
+      "snippet": "ReMDM Planner — Discrete Diffusion Planning on Craftax A JAX implementation of ReMDM (Remasking Discrete Diffusion Model) for action-sequence planning in the Craftax environment. A bidirectional transformer learns to generate action plans by iteratively denoising masked token sequences, conditioned on the current environment observation."
+    },
+    {
+      "title": "MathisW78/remdm-craftax-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/MathisW78/remdm-craftax-checkpoint",
+      "snippet": "Trained weights accompanying The Double Intractability of Reinforcement Learning for Discrete Diffusion Planners: a remasking discrete diffusion model (ReMDM) used as an action-sequence planner in Craftax, together with the PPO-RNN experts that supervise it."
+    },
+    {
+      "title": "MichaelTMatthews/Craftax: (Crafter - GitHub",
+      "url": "https://github.com/MichaelTMatthews/Craftax",
+      "snippet": "Craftax is an RL environment written entirely in JAX. Craftax reimplements and significantly extends the game mechanics of Crafter, taking inspiration from roguelike games such as NetHack. Craftax conforms to the gymnax interface, allowing easy integration with existing JAX-based frameworks like PureJaxRL and JaxUED."
+    },
+    {
+      "title": "GitHub - kuleshov-group/remdm: Remasking Discrete Diffusion Models with ...",
+      "url": "https://github.com/kuleshov-group/remdm",
+      "snippet": "We introduce ReMDM, a simple and general framework to design remasking samplers for masked discrete diffusion models. In this repo, we provide our implementation of different ReMDM strategies for unconditional text generation on OpenWebText. We also provide a demo in this notebook showing how to ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

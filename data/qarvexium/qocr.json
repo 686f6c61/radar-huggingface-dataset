@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Qarvexium/QOCR",
+  "slug": "qarvexium-qocr",
+  "author": "Qarvexium",
+  "url": "https://huggingface.co/Qarvexium/QOCR",
+  "created_at": "2026-08-21T15:34:45.000Z",
+  "updated_at": "2026-08-21T15:54:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ocr",
+    "ctc",
+    "pytorch",
+    "text-recognition",
+    "lightweight",
+    "image-to-text",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31960230,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qarvexium (Qarvexium Ops) - Hugging Face",
+      "url": "https://huggingface.co/Qarvexium",
+      "snippet": "Recent Activity published a modelabout 5 hours ago Qarvexium/QED-B1-Instruction-v1 updated a model1 day ago Qarvexium/QED-Base-v1 published a model1 day ago Qarvexium/QED-Base-v1 View all activity"
+    },
+    {
+      "title": "Qarvexium/QED-Base-v2 · Hugging Face",
+      "url": "https://huggingface.co/Qarvexium/QED-Base-v2",
+      "snippet": "QED-Base-v2 QED-Base-v2 is a ~107M parameter causal language model pretrained from scratch by Qarvexium. It is a base model — it has not been instruction-tuned or aligned for chat, and will continue text rather than follow instructions or hold a conversation."
+    },
+    {
+      "title": "GitHub - mamorett/qocr",
+      "url": "https://github.com/mamorett/qocr",
+      "snippet": "Contribute to mamorett/qocr development by creating an account on GitHub."
+    },
+    {
+      "title": "QED B1 Instruction V1 by Qarvexium — VRAM 1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Qarvexium%2FQED-B1-Instruction-v1,7F0IxoymmajrzE1wktU8Eu",
+      "snippet": "QED B1 Instruction V1 is an open-source language model by Qarvexium. Features: 300m LLM, VRAM: 1GB, License: mit, Instruction-Based, LLM Explorer Score: 0.26."
+    },
+    {
+      "title": "Qarvexium · PyPI",
+      "url": "https://pypi.org/project/Qarvexium/",
+      "snippet": "Qarvexium Python Module One Step Ahead ExtrasManager — Split ZIP Dependency Manager Purpose Manages multi-part ZIP dependencies, supporting discovery, download, assembly, and extraction. Initialization Resolves the package root directory Defines standard paths for ZIP, parts, and extraction Supports configurable parallel download workers ZIP Validation Verifies ZIP integrity before ..."
+    }
+  ]
+}

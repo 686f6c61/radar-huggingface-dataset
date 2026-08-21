@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mixp123/lab21",
+  "slug": "mixp123-lab21",
+  "author": "mixp123",
+  "url": "https://huggingface.co/mixp123/lab21",
+  "created_at": "2026-08-21T15:57:38.000Z",
+  "updated_at": "2026-08-21T15:57:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "lora",
+    "qwen",
+    "triage",
+    "vietnamese",
+    "customer-support",
+    "fine-tuned",
+    "text-generation",
+    "vi",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18153472,
+  "storage_human": "18 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LAb21.ai",
+      "url": "https://www.lab21.ai/",
+      "snippet": "Pre-built Model Library Access our extensive collection of ready-to-use models for common document types."
+    },
+    {
+      "title": "LAb21.ai",
+      "url": "https://www.lab21.ai/models-library",
+      "snippet": "Models Library Pre-built document extraction models. No training required - start extracting data immediately."
+    },
+    {
+      "title": "TuanPham2308/lab21-qwen3.5-2b-cskh-triage-lora · Hugging Face",
+      "url": "https://huggingface.co/TuanPham2308/lab21-qwen3.5-2b-cskh-triage-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ArtLab 21 | Something completely different in ArtLab21 ... - Instagram",
+      "url": "https://www.instagram.com/p/Db-gkR4jC92/",
+      "snippet": "Something completely different in ArtLab21 these days. Having fun with archetypes, nostalgia, colours shapes and aesthetic in a pinup model Universe playing around whit AI. I deliver my old dreams and ideas from a time when i had a dream of being a pinup photographer. I have made 8 series, here is one. Now in ArtLab 21. … .. . #pinup #photography #popart #beautiful #women #model #ai # ..."
+    },
+    {
+      "title": "Understanding AI21 Labs Models and Their Functionality",
+      "url": "https://help.promptitude.io/en/articles/8892925-understanding-ai21-labs-models-and-their-functionality",
+      "snippet": "AI21 Labs models, also known as Jurassic models, are AI-powered tools designed to understand and generate human-like text. They are used in thousands of live applications across various sectors such as financial services, retail, customer support, and knowledge management."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Tam109204/lab21-2A202601267-qwen3-triage-lora",
+  "slug": "tam109204-lab21-2a202601267-qwen3-triage-lora",
+  "author": "Tam109204",
+  "url": "https://huggingface.co/Tam109204/lab21-2A202601267-qwen3-triage-lora",
+  "created_at": "2026-08-21T16:04:39.000Z",
+  "updated_at": "2026-08-21T16:06:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3.5",
+    "vietnamese",
+    "customer-support",
+    "text-classification",
+    "vi",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "README.md · vadimbelsky/qwen3.5-medical-ft at main",
+      "url": "https://huggingface.co/vadimbelsky/qwen3.5-medical-ft/blob/main/README.md",
+      "snippet": "Qwen3.5-9B — Medical Triage LoRA Adapters LoRA fine-tune of Qwen3.5-9B on synthetic clinical triage Q&A pairs generated from PubMed Central open-access papers. The model is specialized for emergency-medicine decision-making: triaging patients, applying clinical decision rules, and generating protocol-grounded triage recommendations."
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    },
+    {
+      "title": "adapter_model.safetensors · dgunt/lab21-qwen25-3b-lora-r64 at main",
+      "url": "https://huggingface.co/dgunt/lab21-qwen25-3b-lora-r64/blob/main/adapter_model.safetensors",
+      "snippet": "Instructions to use dgunt/lab21-qwen25-3b-lora-r64 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use dgunt/lab21-qwen25-3b-lora-r64 with Transformers:"
+    }
+  ]
+}

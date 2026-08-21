@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/BigBang-Aquila-35B-Merged-Abliterated-i1-GGUF",
+  "slug": "mradermacher-bigbang-aquila-35b-merged-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/BigBang-Aquila-35B-Merged-Abliterated-i1-GGUF",
+  "created_at": "2026-08-21T11:22:30.000Z",
+  "updated_at": "2026-08-21T12:58:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "safetensors",
+    "qwen3_5_moe",
+    "merge",
+    "abliterated",
+    "uncensored",
+    "en",
+    "base_model:osk-arr00/BigBang-Aquila-35B-Merged-Abliterated",
+    "base_model:quantized:osk-arr00/BigBang-Aquila-35B-Merged-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 28572339040,
+  "storage_human": "28.6 GB",
+  "base_model": "osk-arr00/BigBang-Aquila-35B-Merged-Abliterated",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BigBang-Aquila-35B-Merged-Abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/BigBang-Aquila-35B-Merged-Abliterated-GGUF",
+      "snippet": "BigBang-Aquila-35B-Merged-Abliterated-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mradermacher - a EscaBlackwood Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/EscaBlackwood/mradermacher",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from EscaBlackwood"
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    },
+    {
+      "title": "BigBang-Aquila-35B-Merged API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/osk-arr00/BigBang-Aquila-35B-Merged",
+      "snippet": "Deploy BigBang-Aquila-35B-Merged with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "BigBang — Pursuing Open-Ended Intelligence through Self-Evolving ...",
+      "url": "https://endlessfrontier.tech/",
+      "snippet": "BigBang is a general-purpose large language model evolved from Qwen3.6-35B-A3B through efficient post-training, driven by an adversarial, self-evolving synthetic data framework grounded in verifiable frontier research tasks. BigBang reaches aggregate performance between DeepSeek V4 Flash (284B) and DeepSeek V4 Pro (1.6T)."
+    }
+  ]
+}

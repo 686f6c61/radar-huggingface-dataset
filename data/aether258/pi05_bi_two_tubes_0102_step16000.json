@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Aether258/pi05_bi_two_tubes_0102_step16000",
+  "slug": "aether258-pi05_bi_two_tubes_0102_step16000",
+  "author": "Aether258",
+  "url": "https://huggingface.co/Aether258/pi05_bi_two_tubes_0102_step16000",
+  "created_at": "2026-08-21T18:06:13.000Z",
+  "updated_at": "2026-08-21T18:06:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "manipulation",
+    "pi0",
+    "tactile",
+    "bimanual",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9582056464,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aether258/pi05_bi_two_tubes_0102_step6000 · Hugging Face",
+      "url": "https://huggingface.co/Aether258/pi05_bi_two_tubes_0102_step6000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Aether258 (Aether_Zhang) - Hugging Face",
+      "url": "https://huggingface.co/Aether258",
+      "snippet": "Sort: Recently updated Aether258/pi05_bi_vitac_clean_smash_24 Robotics •Updated 30 days ago"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "pi05_base · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/pi05_base/summary",
+      "snippet": "π₀.₅ (Pi05) (LeRobot) π₀.₅ is a Vision-Language-Action (VLA) model with open-world generalization from Physical Intelligence, co-trained on robot demonstrations and large-scale multimodal data to execute long-horizon tasks in unseen real-world environments. Note: This model currently supports only the flow-matching action head for π₀.₅ training and inference. Other components ..."
+    },
+    {
+      "title": "GitHub - Integer003/openpi05: Provide fine-tuning and inference code ...",
+      "url": "https://github.com/Integer003/openpi05",
+      "snippet": "Provide fine-tuning and inference code for pi05, fully reproducing the methods described in the pi05 paper. - Integer003/openpi05"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "Mustafa5645344/insect-detection-vit",
+  "slug": "mustafa5645344-insect-detection-vit",
+  "author": "Mustafa5645344",
+  "url": "https://huggingface.co/Mustafa5645344/insect-detection-vit",
+  "created_at": "2026-08-21T18:00:57.000Z",
+  "updated_at": "2026-08-21T18:24:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "vit",
+    "vision-transformer",
+    "image-classification",
+    "insect-detection",
+    "biology",
+    "agriculture",
+    "fine-tuned",
+    "en",
+    "tr",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85814805,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343288261,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Insect Species Classification",
+      "dataset": "Specifly 50K Insect Dataset",
+      "metric": "Accuracy",
+      "value": 0.9851
+    },
+    {
+      "task": "Insect Species Classification",
+      "dataset": "Specifly 50K Insect Dataset",
+      "metric": "F1-Score",
+      "value": 0.9858
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hybrid Insect Detection & Smart Agricultural AI Consultant",
+      "url": "https://github.com/Mustafa-Caliskan/Insect-Detection-System-YOLOv8-ViT-Gemini",
+      "snippet": "🐝 Hybrid Insect Detection & Smart Agricultural AI Consultant This project presents a state-of-the-art hybrid AI solution for identifying agricultural insects and providing expert-level farming advice. It combines the speed of YOLOv8, the precision of Vision Transformers (ViT), and the reasoning power of Google Gemini 2.0 Flash."
+    },
+    {
+      "title": "GitHub - maxsitt/insect-detect: Software for automated insect ...",
+      "url": "https://github.com/maxsitt/insect-detect",
+      "snippet": "Insect Detect - DIY insect-detecting camera trap The Insect Detect camera trap automatically detects and tracks insects in the field and captures high-resolution images of each individual - running a custom detection model in real time on the camera itself, with no internet connection required."
+    },
+    {
+      "title": "Free AI Insect Identifier - piax.org",
+      "url": "https://www.piax.org/en/ai-image-analyze-tools/ai-insect-identifier",
+      "snippet": "Key Features of AI Insect Identifier Accurate Insect Recognition Our cutting-edge AI model can instantly recognize and classify insects with remarkable accuracy, from common houseflies and beetles to rare butterflies and exotic species."
+    },
+    {
+      "title": "Insect Detect Docs - GitHub Pages",
+      "url": "https://maxsitt.github.io/insect-detect-docs/",
+      "snippet": "Introduction Build your own insect-detecting camera trap! This website provides instructions on hardware assembly, software setup, model training and deployment of the Insect Detect camera trap that can be used for automated insect monitoring."
+    },
+    {
+      "title": "InsectNet: Real-time identification of insects using an end-to-end ...",
+      "url": "https://academic.oup.com/pnasnexus/article/4/1/pgae575/7933354",
+      "snippet": "Integrating out-of-distribution detection and conformal prediction bolsters accuracy and user confidence. This is the first work where a deep learning model has been trained on such a large dataset to classify over 2,500 insect species for addressing a multitude of challenges while fostering user trust in its predictions."
+    }
+  ]
+}

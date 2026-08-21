@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mlx-community/ltx-2.5-mlx-q8",
+  "slug": "mlx-community-ltx-2-5-mlx-q8",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/ltx-2.5-mlx-q8",
+  "created_at": "2026-08-21T14:51:24.000Z",
+  "updated_at": "2026-08-21T14:55:12.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "AudioVideo",
+    "ltx-video",
+    "ltx-2.5",
+    "text-to-video",
+    "image-to-video",
+    "audio-video",
+    "quantized",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23885822461,
+  "storage_human": "23.9 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/ltx-2.5-mlx · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/ltx-2.5-mlx",
+      "snippet": "Python-MLX (ltx-2-mlx, branch ltx-2.5) and Swift-MLX (ltx-2-mlx-swift) both generate end to end, including the DFR pipeline with temporal rounds. Parity-gated per component against the PyTorch reference: text encoder 49 states (mean cosine 0.999985), DiT forward, sampler, keyframe slots, and the DFR canvas geometry bit-exactly."
+    },
+    {
+      "title": "PocketAiHub/LTX-2.5-MLX · Hugging Face",
+      "url": "https://huggingface.co/PocketAiHub/LTX-2.5-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Acelogic/LTX-2-MLX: Attempt at Porting LTX-2 Video Model to ...",
+      "url": "https://github.com/Acelogic/LTX-2-MLX",
+      "snippet": "Native Apple Silicon implementation of Lightricks LTX-2 video generation models using MLX. Supports both LTX-2.0 (19B) and LTX-2.3 (22B) with automatic version detection."
+    },
+    {
+      "title": "Home — MLX COMMUNITY",
+      "url": "https://mlxcommunity.com/",
+      "snippet": "Opensource outpost for Apple MLX: threads on LLMs, VLMs, audio, quantization, fine-tuning, and tooling."
+    },
+    {
+      "title": "GitHub - dgrauet/ltx-2-mlx: Pure MLX port of LTX-2 (Lightricks LTX-2.3 ...",
+      "url": "https://github.com/dgrauet/ltx-2-mlx",
+      "snippet": "Pure MLX port of LTX-2 for Apple Silicon. Three-package monorepo mirroring the reference structure — inference, pipelines, and training — running natively on Metal."
+    }
+  ]
+}

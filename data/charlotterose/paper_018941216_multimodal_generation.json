@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "charlotterose/paper_018941216_multimodal_generation",
+  "slug": "charlotterose-paper_018941216_multimodal_generation",
+  "author": "charlotterose",
+  "url": "https://huggingface.co/charlotterose/paper_018941216_multimodal_generation",
+  "created_at": "2026-08-21T15:09:17.000Z",
+  "updated_at": "2026-08-21T15:09:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "impersonal",
+    "intro-related-method-exp-conclusion",
+    "measured",
+    "medium-balanced",
+    "multimodal-generation",
+    "numeric-apa",
+    "theoretical-rigorous",
+    "typst",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2305.17216] Generating Images with Multimodal Language Models",
+      "url": "https://arxiv.org/abs/2305.17216",
+      "snippet": "We propose a method to fuse frozen text-only large language models (LLMs) with pre-trained image encoder and decoder models, by mapping between their embedding spaces. Our model demonstrates a wide suite of multimodal capabilities: image retrieval, novel image generation, and multimodal dialogue. Ours is the first approach capable of conditioning on arbitrarily interleaved image and text ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "[2505.02567] Unified Multimodal Understanding and Generation Models ...",
+      "url": "https://arxiv.org/abs/2505.02567",
+      "snippet": "Recent years have seen remarkable progress in both multimodal understanding models and image generation models. Despite their respective successes, these two domains have evolved independently, leading to distinct architectural paradigms: While autoregressive-based architectures have dominated multimodal understanding, diffusion-based models have become the cornerstone of image generation ..."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "Calaméo - 2026 Programme",
+      "url": "https://www.calameo.com/festivaloffavignon/books/007594426c657196cebf6",
+      "snippet": "DU CR ES Nord - 84700 Sorgues) ED RA E 87 RT AI RU T 45 RU R E EAU NT 96 101 11 RUE RÉ RU ND -C BE Du 27 juin au 22 juillet. E LO 82 HR IST 8e DE E LIM RU 47 OP Du lundi au samedi, de 13h30 à 19h."
+    }
+  ]
+}

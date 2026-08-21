@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "SupraLabs/Supra2-Medium-Instruct",
+  "slug": "supralabs-supra2-medium-instruct",
+  "author": "SupraLabs",
+  "url": "https://huggingface.co/SupraLabs/Supra2-Medium-Instruct",
+  "created_at": "2026-08-21T08:43:25.000Z",
+  "updated_at": "2026-08-21T09:14:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "small",
+    "tiny",
+    "supra",
+    "supra2",
+    "efficient",
+    "instruct",
+    "chat",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "base_model:SupraLabs/Supra2-Medium-Base",
+    "base_model:finetune:SupraLabs/Supra2-Medium-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": 25383296,
+  "parameters_human": "25.4M",
+  "storage_bytes": 249938048,
+  "storage_human": "250 MB",
+  "base_model": "SupraLabs/Supra2-Medium-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SupraLabs/Supra2-Medium-Instruct · Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/Supra2-Medium-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SupraLabs/Supra2-Medium-Base · Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/Supra2-Medium-Base",
+      "snippet": "Supra2-Medium Base is a 25M-parameter decoder-only language model pretrained from scratch by SupraLabs on 20B tokens of English web text. It uses the Qwen3 architecture with a custom 16,384-token tokenizer."
+    },
+    {
+      "title": "SupraLabs · Independent AI Lab",
+      "url": "https://supra-labs.com/",
+      "snippet": "SupraLabs is an independent research lab building open small language and multimodal models that run on consumer hardware."
+    },
+    {
+      "title": "SupraLabs (SupraLabs) - Hugging Face",
+      "url": "https://huggingface.co/SupraLabs",
+      "snippet": "SupraLabs is an independent AI research org developing efficient, open-weight small models to make high-performance AI accessible on standard hardware. Learn more at supra-labs.com."
+    },
+    {
+      "title": "SupraLabs/Supra2-Medium-Base at main - Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/Supra2-Medium-Base/tree/main",
+      "snippet": "Instructions to use SupraLabs/Supra2-Medium-Base with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use SupraLabs/Supra2-Medium-Base with Transformers:"
+    }
+  ]
+}

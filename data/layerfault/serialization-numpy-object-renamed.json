@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/serialization-numpy-object-renamed",
+  "slug": "layerfault-serialization-numpy-object-renamed",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/serialization-numpy-object-renamed",
+  "created_at": "2026-08-21T19:08:19.000Z",
+  "updated_at": "2026-08-21T19:08:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 313,
+  "storage_human": "313 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Keras Lambda Layer Serialization Error Fix Guide",
+      "url": "https://www.weblineglobal.com/blog/keras-lambda-layer-serialization-error-fix/",
+      "snippet": "Model serialization in TensorFlow can surface unexpected NameErrors when using Lambda layers to wrap external dependencies like TF Hub components. Learn why this occurs in production ML pipelines and how to properly structure your Keras Sequential models for flawless deployment and enterprise inference."
+    },
+    {
+      "title": "TensorFlow 2.14 Migration Guide: Solving Keras Layer Serialization ...",
+      "url": "https://markaicode.com/tensorflow-214-migration-guide-keras-layer-serialization/",
+      "snippet": "Fix Keras layer serialization errors when upgrading to TensorFlow 2.14 with this step-by-step guide covering custom layers, model loading, and best practices."
+    },
+    {
+      "title": "tensorflow - Deserializing Error when loading models from &#x27;.keras ...",
+      "url": "https://stackoverflow.com/questions/78869745/deserializing-error-when-loading-models-from-keras-files-in-keras-3-possible",
+      "snippet": "I&#x27;m in the process of migrating to Keras 3. My current version is TensorFlow v2.17.0, and Keras v3.4.1. I&#x27;m testing a bunch of VAE model configurations, which requires me to save these models and l..."
+    },
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault/tree/main",
+      "snippet": "Offline-first security and admission control for local AI models. Layerfault validates model artifacts and local model runtimes before inference."
+    },
+    {
+      "title": "How can I properly save and load this custom tensorflow model?",
+      "url": "https://stackoverflow.com/questions/79280913/how-can-i-properly-save-and-load-this-custom-tensorflow-model",
+      "snippet": "A tensorflow layer in a model is simply not loading correctly after saving no matter what I do with it, the model trains and saves well but doesn&#x27;t load when I need it at a later time. I save the m..."
+    }
+  ]
+}

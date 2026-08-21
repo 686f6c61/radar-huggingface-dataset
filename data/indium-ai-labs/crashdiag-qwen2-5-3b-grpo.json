@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Indium-AI-Labs/CrashDiag-Qwen2.5-3B-GRPO",
+  "slug": "indium-ai-labs-crashdiag-qwen2-5-3b-grpo",
+  "author": "Indium-AI-Labs",
+  "url": "https://huggingface.co/Indium-AI-Labs/CrashDiag-Qwen2.5-3B-GRPO",
+  "created_at": "2026-08-21T16:39:12.000Z",
+  "updated_at": "2026-08-21T17:09:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "reinforcement-learning",
+    "infrastructure",
+    "agents",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131340579,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Indium AI Labs - GitHub",
+      "url": "https://github.com/Indium-AI-Labs/",
+      "snippet": "CrashDiag: an agent diagnoses and fixes real infrastructure failures (crash loops, bad config, broken dependencies) on a live, disposable sandbox app. The fix has to actually work, the environment re-deploys it and checks. IntrusionWatch: an agent detects and contains a live intrusion attempt (SQLi, credential stuffing, lateral movement) on the same sandbox family, verified against whether the ..."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Introduction In the past three months since Qwen2&#x27;s release, numerous developers have built new models on the Qwen2 language models, providing us with valuable feedback. During this period, we have focused on creating smarter and more knowledgeable language models. Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Omni-3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Omni-3B",
+      "snippet": "Qwen2.5-Omni is an end-to-end multimodal model designed to perceive diverse modalities, including text, images, audio, and video, while simultaneously generating text and natural speech responses in a streaming manner."
+    },
+    {
+      "title": "Qwen2.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2412.15115v1",
+      "snippet": "Qwen2.5 has demonstrated top-tier performance on a wide range of benchmarks eval-uating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct ..."
+    },
+    {
+      "title": "chenggong1995/Qwen2.5-3B-Instruct-grpo · Hugging Face",
+      "url": "https://huggingface.co/chenggong1995/Qwen2.5-3B-Instruct-grpo",
+      "snippet": "Model Card for Qwen2.5-3B-Instruct-grpo This model is a fine-tuned version of Qwen/Qwen2.5-3B-Instruct. It has been trained using TRL. Quick start"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sofiapopov/paper_017985148_text_image_retrieval",
+  "slug": "sofiapopov-paper_017985148_text_image_retrieval",
+  "author": "sofiapopov",
+  "url": "https://huggingface.co/sofiapopov/paper_017985148_text_image_retrieval",
+  "created_at": "2026-08-21T17:56:49.000Z",
+  "updated_at": "2026-08-21T17:56:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "first-person-plural",
+    "intro-method-exp-related-conclusion",
+    "neutral",
+    "numeric-nature",
+    "plain-text",
+    "text-image-retrieval",
+    "unstructured-narrative",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Comprehensive Survey on Composed Image Retrieval",
+      "url": "https://arxiv.org/abs/2502.18495",
+      "snippet": "Composed Image Retrieval (CIR) is an emerging yet challenging task that allows users to search for target images using a multimodal query, comprising a reference image and a modification text specifying the user&#x27;s desired changes to the reference image. Given its significant academic and practical value, CIR has become a rapidly growing area of interest in the computer vision and machine ..."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    },
+    {
+      "title": "Llama Nemoretriever Colembed: Top-Performing Text-Image Retrieval Model",
+      "url": "https://arxiv.org/abs/2507.05513",
+      "snippet": "Motivated by the growing demand for retrieval systems that operate across modalities, we introduce llama-nemoretriever-colembed, a unified text-image retrieval model that delivers state-of-the-art performance across multiple benchmarks. We release two model variants, 1B and 3B."
+    },
+    {
+      "title": "Awesome Multimodal RAG - GitHub",
+      "url": "https://github.com/JarvisUSTC/Awesome-Multimodal-RAG",
+      "snippet": "A curated list of the latest advancements, papers, tools, and datasets for Multimodal Retrieval-Augmented Generation (RAG). Multimodal RAG integrates information retrieval and generation across multiple data modalities (e.g., text, image, video, audio)."
+    },
+    {
+      "title": "CVPR 2025 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Xing_ConText-CIR_Learning_from_Concepts_in_Text_for_Composed_Image_Retrieval_CVPR_2025_paper.html",
+      "snippet": "Abstract Composed image retrieval (CIR) is the task of retrieving a target image specified by a query image and a relative text that describes a semantic modification to the query image. Existing methods in CIR struggle to accurately represent the image and the text modification, resulting in subpar performance."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Bunsya/E03_ResNet18_Scheduler_Chest_XRay",
+  "slug": "bunsya-e03_resnet18_scheduler_chest_xray",
+  "author": "Bunsya",
+  "url": "https://huggingface.co/Bunsya/E03_ResNet18_Scheduler_Chest_XRay",
+  "created_at": "2026-08-21T10:28:26.000Z",
+  "updated_at": "2026-08-21T10:32:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chest-xray",
+    "image-classification",
+    "pneumonia",
+    "resnet18",
+    "computer-vision",
+    "medical-imaging",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44790347,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chest XRay E03 Demo - a Hugging Face Space by Bunsya",
+      "url": "https://huggingface.co/spaces/Bunsya/Chest-XRay-E03-Demo",
+      "snippet": "🩻 Chest X-Ray Pneumonia Detection E03 — ResNet18 with StepLR Scheduler"
+    },
+    {
+      "title": "GitHub - Dantescenario/Medical-Image-Disease-Detection: An AI-powered ...",
+      "url": "https://github.com/Dantescenario/Medical-Image-Disease-Detection",
+      "snippet": "🩺 Medical Image Disease Detection An AI-powered web application that detects Pneumonia from chest X-ray images using Deep Learning (ResNet18) and provides model explainability through Grad-CAM visualizations."
+    },
+    {
+      "title": "Michael1994-byte/AI-Assisted-Chest-Xray-Diagnosis - GitHub",
+      "url": "https://github.com/Michael1994-byte/AI-Assisted-Chest-Xray-Diagnosis",
+      "snippet": "Conclusion This project successfully demonstrates an end-to-end AI-assisted chest X-ray interpretation pipeline integrating: Deep Learning Transfer Learning Explainable AI Retrieval-Augmented Generation Among all evaluated models, ResNet18 achieved the highest overall performance and was selected as the final model for disease interpretation."
+    },
+    {
+      "title": "MedRAX: AI Chest X-Ray Analysis | 18 Pathologies",
+      "url": "https://medrax.org/",
+      "snippet": "Open-source AI agent that detects 18 chest X-ray pathologies, segments organs, and generates radiology reports. 63.1% on ChestAgentBench. ICML 2025."
+    },
+    {
+      "title": "Xray AI - a Hugging Face Space by Kh4nh",
+      "url": "https://huggingface.co/spaces/Kh4nh/xray-ai-web",
+      "snippet": "Upload a chest X‑ray and the app will automatically look for signs of disease using an AI model. It returns the original image with highlighted findings, a clear diagnosis summary, and a downloadab..."
+    }
+  ]
+}

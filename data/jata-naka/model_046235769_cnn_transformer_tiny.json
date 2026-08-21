@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jata-naka/model_046235769_cnn_transformer_tiny",
+  "slug": "jata-naka-model_046235769_cnn_transformer_tiny",
+  "author": "jata-naka",
+  "url": "https://huggingface.co/jata-naka/model_046235769_cnn_transformer_tiny",
+  "created_at": "2026-08-21T16:04:48.000Z",
+  "updated_at": "2026-08-21T16:04:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batchnorm",
+    "bilinear",
+    "classification",
+    "cnn-transformer",
+    "dilated",
+    "kaiming",
+    "lamb",
+    "onecycle",
+    "swish",
+    "tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "beautiful Japanese girl - 2026-08-08... | Tensor.Art | Tensor.Art",
+      "url": "https://tensor.art/models/1030374930669171049",
+      "snippet": "Download beautiful Japanese girl - free LORA Z-Image AI model on TENSOR. CUTE YOUNG GIRL. By かのんちゃん"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "openai/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "naka Stable Diffusion & Flux AI Models | Civitai",
+      "url": "https://civitai.com/tag/naka",
+      "snippet": "Browse naka Stable Diffusion & Flux models, checkpoints, hypernetworks, textual inversions, embeddings, Aesthetic Gradients, and LORAs"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Sohailhosseini/Qwopus3.5-9B-Coder-FP8",
+  "slug": "sohailhosseini-qwopus3-5-9b-coder-fp8",
+  "author": "Sohailhosseini",
+  "url": "https://huggingface.co/Sohailhosseini/Qwopus3.5-9B-Coder-FP8",
+  "created_at": "2026-08-21T15:38:07.000Z",
+  "updated_at": "2026-08-21T15:38:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "compressed-tensors",
+    "fp8",
+    "quantized",
+    "vllm",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Jackrong/Qwopus3.5-9B-Coder",
+    "base_model:quantized:Jackrong/Qwopus3.5-9B-Coder",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 11930374511,
+  "storage_human": "11.9 GB",
+  "base_model": "Jackrong/Qwopus3.5-9B-Coder",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Jackrong/Qwopus3.5-9B-v3-FP8 at main - Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.5-9B-v3-FP8/blob/main/README.md",
+      "snippet": "🌟 Qwopus3.5-9B-v3-FP8 🔥 Update (April 5): I&#x27;ve released the complete training notebook, codebase, and a comprehensive PDF guide to help beginners and enthusiasts understand and reproduce this model&#x27;s fine-tuning process. ️ Special thanks to the Unsloth open-source library and @KyleHessling1 for their support."
+    },
+    {
+      "title": "RoelV/Qwopus3.5-9B-Coder-oQ8-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/RoelV/Qwopus3.5-9B-Coder-oQ8-fp16-mtp",
+      "snippet": "🚀 Model Fine-Tuning and Logical Alignment (Qwopus3.5-9B-coder) As the base model of this model, Qwopus3.5-9B-v3.5 is already a model with powerful capabilities. On this foundation, Qwopus3.5-9B-coder is specially optimized and fine-tuned for high-performance 🤖 Agentic Coding, complex Tool Calling, and logical reasoning."
+    },
+    {
+      "title": "Qwopus3.5-9B-Coder · Models",
+      "url": "https://www.modelscope.cn/models/Jackrong/Qwopus3.5-9B-Coder",
+      "snippet": "🌟 Qwopus3.5-9B-coder 🚀 Model Fine-Tuning and Logical Alignment (Qwopus3.5-9B-coder) As the base model of this model, Qwopus3.5-9B-v3.5 is already a model with powerful capabilities. On this foundation, Qwopus3.5-9B-coder is specially optimized and fine-tuned for high-performance 🤖 Agentic Coding, complex Tool Calling, and logical ..."
+    },
+    {
+      "title": "AIAny - Qwopus3.5-9B-Coder-MTP",
+      "url": "https://aiany.app/item/qwopus3-5-9b-coder-mtp",
+      "snippet": "A GGUF-format 9B LLM fine-tuned for code generation and agentic tool-calling that uses Multi-Token Prediction (MTP) and draft heads to increase throughput and long-range planning. Intended for local inference and research/experimental coding workflows; Apache‑2.0 license."
+    },
+    {
+      "title": "Qwopus3.5-9B-Coder-MTP-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwopus3.5-9b-coder-mtp-gguf-jackrong",
+      "snippet": "Overview Qwopus3.5-9B-Coder-MTP-GGUF is a 9-billion parameter code generation and reasoning model built by Jackrong on top of the Qwen3.5 architecture with Multi-Token Prediction (MTP) capabilities. The model uses a dense transformer architecture optimized to run at 8-bit precision on 16GB RAM devices like standard laptops and Mac minis, achieving 35.8% higher throughput compared to its base ..."
+    }
+  ]
+}

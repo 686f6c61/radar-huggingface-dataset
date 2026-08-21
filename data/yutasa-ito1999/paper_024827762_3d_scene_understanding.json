@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Yutasa-ito1999/paper_024827762_3d_scene_understanding",
+  "slug": "yutasa-ito1999-paper_024827762_3d_scene_understanding",
+  "author": "Yutasa-ito1999",
+  "url": "https://huggingface.co/Yutasa-ito1999/paper_024827762_3d_scene_understanding",
+  "created_at": "2026-08-21T16:36:34.000Z",
+  "updated_at": "2026-08-21T16:36:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d-scene-understanding",
+    "empirical-focused",
+    "endnote",
+    "graphic-visual",
+    "intro-related-method-exp-conclusion",
+    "latex-arxiv",
+    "long-detailed",
+    "mixed-active-passive",
+    "neutral",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "SceneSplat: Gaussian Splatting-Based Scene Understanding with Vision ...",
+      "url": "https://ieeexplore.ieee.org/document/11445351",
+      "snippet": "Recognizing arbitrary or previously unseen categories is essential for comprehensive real-world 3D scene understanding. Currently, all existing methods rely on 2D or textual modalities during training or together at inference. This highlights the clear absence of a model capable of processing 3D data alone for learning semantics end-to-end, along with the necessary data to train such a model ..."
+    },
+    {
+      "title": "PDF SceneSplat: Gaussian Splatting-based Scene Understanding with Vision ...",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Li_SceneSplat_Gaussian_Splatting-based_Scene_Understanding_with_Vision-Language_Pretraining_ICCV_2025_paper.pdf",
+      "snippet": "This highlights the clear absence of a model capable of pro-cessing 3D data alone for learning semantics end-to-end, along with the necessary data to train such a model. Mean-while, 3D Gaussian Splatting (3DGS) has emerged as the de facto standard for 3D scene representation across vari-ous vision tasks."
+    },
+    {
+      "title": "Unified 3D Scene Understanding Through Physical World Modeling",
+      "url": "https://arxiv.org/abs/2605.24321",
+      "snippet": "Understanding 3D scenes requires flexible combinations of visual reasoning tasks, including depth estimation, novel view synthesis, and object manipulation, all of which are essential for perception and interaction. Existing approaches have typically addressed these tasks in isolation, preventing them from sharing a common representation or transferring knowledge across tasks. A conceptually ..."
+    },
+    {
+      "title": "GPT4Scene: Understand 3D Scenes from Videos with Vision-Language Models",
+      "url": "https://arxiv.org/abs/2501.01428",
+      "snippet": "In recent years, 2D Vision-Language Models (VLMs) have made significant strides in image-text understanding tasks. However, their performance in 3D spatial comprehension, which is critical for embodied intelligence, remains limited. Recent advances have leveraged 3D point clouds and multi-view images as inputs, yielding promising results. However, we propose exploring a purely vision-based ..."
+    }
+  ]
+}

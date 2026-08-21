@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yyilmazmehmet/paper_021360441_embodied_ai",
+  "slug": "yyilmazmehmet-paper_021360441_embodied_ai",
+  "author": "yyilmazmehmet",
+  "url": "https://huggingface.co/yyilmazmehmet/paper_021360441_embodied_ai",
+  "created_at": "2026-08-21T16:32:30.000Z",
+  "updated_at": "2026-08-21T16:32:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "critical",
+    "embodied-ai",
+    "highlight-bullet",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "medium-balanced",
+    "numeric-nature",
+    "plain-text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/pdf/2509.20021",
+      "snippet": "On the other hand, WMs empower embodied AI by building internal representations and future predictions of the external world, facilitating physical law-compliant embodied interactions. As such, this paper comprehensively explores the literature in embodied AI from basics to advances, covering both LLM driven and WM driven works."
+    },
+    {
+      "title": "Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/html/2509.20021v1",
+      "snippet": "Abstract Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems. Recent breakthroughs in Large Language Models (LLMs) and World Models (WMs) have drawn significant attention for embodied AI. On the one hand, LLMs ..."
+    },
+    {
+      "title": "Embodied AI: From LLMs to World Models | alphaXiv",
+      "url": "https://www.alphaxiv.org/overview/2509.20021v1",
+      "snippet": "The paper outlines a joint Multimodal Large Language Model (MLLM) and World Model (WM) driven architecture to advance Embodied AI towards Artificial General Intelligence. This approach integrates..."
+    },
+    {
+      "title": "Embodied AI: From LLMs to World Models [Feature]",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11317901",
+      "snippet": "Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems. Recent breakthroughs in Large Language Models (LLMs) and World Models (WMs) have drawn significant attention for embodied AI. On the one hand, LLMs empower ..."
+    },
+    {
+      "title": "(PDF) Embodied AI: From LLMs to World Models - ResearchGate",
+      "url": "https://www.researchgate.net/publication/395346107_Embodied_AI_From_LLMs_to_World_Models",
+      "snippet": "In particular, we first present the history, key technologies, key components, and hardware systems of embodied AI, as well as discuss its development via looking from unimodal to multimodal angle."
+    }
+  ]
+}

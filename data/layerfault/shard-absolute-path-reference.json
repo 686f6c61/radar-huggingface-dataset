@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/shard-absolute-path-reference",
+  "slug": "layerfault-shard-absolute-path-reference",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/shard-absolute-path-reference",
+  "created_at": "2026-08-21T19:10:48.000Z",
+  "updated_at": "2026-08-21T19:10:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 368,
+  "storage_human": "368 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Path traversal / arbitrary out-of-directory file read via sharded ...",
+      "url": "https://github.com/huggingface/diffusers/issues/14175",
+      "snippet": "Summary DiffusionPipeline.from_pretrained / ModelMixin.from_pretrained resolve a sharded checkpoint&#x27;s shard filenames from the model-supplied index JSON (diffusion_pytorch_model.safetensors.index.json) and join them to the model directory with no sanitization, so a malicious model directory can make loading open/read files outside it."
+    },
+    {
+      "title": "CVE-2026-75104: Transformers path traversal — MEDIUM",
+      "url": "https://aithreatalert.com/cve/CVE-2026-75104",
+      "snippet": "What is CVE-2026-75104? Hugging Face Transformers fails to validate shard filenames referenced in a model&#x27;s checkpoint index file, letting a crafted index containing `../` sequences or absolute paths make the library read files outside the intended model directory. The risk model here is AI supply chain, not network-exposed: an attacker who publishes a poisoned model repository on the Hub, or ..."
+    },
+    {
+      "title": "CVE-2026-75104: transformers Path Traversal (CVSS 5.5) - strix.ai",
+      "url": "https://www.strix.ai/cve/CVE-2026-75104",
+      "snippet": "CVE-2026-75104 is a medium-severity vulnerability rated 5.5/10 on the CVSS scale. Hugging Face Transformers fails to validate shard filenames in checkpoint index files, allowing attackers to read arbitrary files outside the model directory. Attackers can supply malicious index files with parent-directory references or absolute paths that are joined without validation, enabling file disclosure ..."
+    },
+    {
+      "title": "CVE-2026-75104: Improper Limitation of a Pathname to a Restricted ...",
+      "url": "https://radar.offseq.com/threat/cve-2026-75104-improper-limitation-of-a-pathname-to-a-restricted-directory-path-traversal-in-68f02c788d33af14",
+      "snippet": "AI Analysis Technical Summary Hugging Face Transformers fails to validate shard filenames in checkpoint index files, allowing attackers to supply malicious index files containing parent-directory references or absolute paths. These paths are joined without validation, enabling attackers to read arbitrary files outside the model directory."
+    },
+    {
+      "title": "CVE-2026-69112: Improper Limitation of a Pathname to a Restricted ...",
+      "url": "https://radar.offseq.com/threat/cve-2026-69112-improper-limitation-of-a-pathname-to-a-restricted-directory-path-traversal-in-b9602909f1aef0cf",
+      "snippet": "AI Analysis Technical Summary CVE-2026-69112 is a path traversal vulnerability affecting Hugging Face Accelerate through version 1.14.0. The vulnerability exists in the load_checkpoint_in_model and load_checkpoint_and_dispatch functions, which fail to sanitize weight_map entries from sharded checkpoint indexes."
+    }
+  ]
+}

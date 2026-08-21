@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kharkivshevchenko/paper_019877599_grounded_language",
+  "slug": "kharkivshevchenko-paper_019877599_grounded_language",
+  "author": "kharkivshevchenko",
+  "url": "https://huggingface.co/kharkivshevchenko/paper_019877599_grounded_language",
+  "created_at": "2026-08-21T19:08:32.000Z",
+  "updated_at": "2026-08-21T19:08:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "empirical-focused",
+    "endnote",
+    "first-person-plural",
+    "grounded-language",
+    "html",
+    "intro-related-method-exp-conclusion",
+    "measured",
+    "structured-imrad",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grounding for Artificial Intelligence - arXiv.org",
+      "url": "https://arxiv.org/html/2312.09532v1",
+      "snippet": "This paper wants to be more concrete or down-to-earth. It links grounding with natural language words and sentences, our sensorimotor experiences, and our internal feelings because AI agents need to communicate with humans in natural languages and to understand human subjective feelings."
+    },
+    {
+      "title": "GeoChat: Grounded Large Vision-Language Model for Remote Sensing",
+      "url": "https://arxiv.org/abs/2311.15826",
+      "snippet": "Recent advancements in Large Vision-Language Models (VLMs) have shown great promise in natural image domains, allowing users to hold a dialogue about given visual content. However, such general-domain VLMs perform poorly for Remote Sensing (RS) scenarios, leading to inaccurate or fabricated information when presented with RS domain-specific queries. Such a behavior emerges due to the unique ..."
+    },
+    {
+      "title": "GitHub - mbzuai-oryx/GeoChat: [CVPR 2024 ] GeoChat, the first grounded ...",
+      "url": "https://github.com/mbzuai-oryx/geochat",
+      "snippet": "Overview GeoChat is the first grounded Large Vision Language Model, specifically tailored to Remote Sensing (RS) scenarios. Unlike general-domain models, GeoChat excels in handling high-resolution RS imagery, employing region-level reasoning for comprehensive scene interpretation."
+    },
+    {
+      "title": "A visually grounded language model for fetal ultrasound ... - Nature",
+      "url": "https://www.nature.com/articles/s41551-025-01578-3",
+      "snippet": "In light of these challenges, this study develops a visually grounded language model called Sonomate, a &#x27;mate&#x27; for sonographers, that is purpose-built for fetal ultrasound video understanding."
+    },
+    {
+      "title": "PDF Learning Language through Grounding - ACL Anthology",
+      "url": "https://aclanthology.org/2025.naacl-tutorial.6.pdf",
+      "snippet": "Afterthat,wewillintroducerecentworkoncompu- tational approaches that model the acquisition and learning of natural language by grounding natural language to the world, including learning lexical semantics, syntax, complex forms of semantics, and pragmatics in various grounded settings."
+    }
+  ]
+}

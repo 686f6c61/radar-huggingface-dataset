@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Bucoid/Qwen3.8-27B-Heretic-Ara-IQ4-XS-16GB-VRAM-GGUF",
+  "slug": "bucoid-qwen3-8-27b-heretic-ara-iq4-xs-16gb-vram-gguf",
+  "author": "Bucoid",
+  "url": "https://huggingface.co/Bucoid/Qwen3.8-27B-Heretic-Ara-IQ4-XS-16GB-VRAM-GGUF",
+  "created_at": "2026-08-18T09:42:51.000Z",
+  "updated_at": "2026-08-18T10:01:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 9,
+  "downloads_30d": 2930,
+  "trending_score": 9,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 13704797984,
+  "storage_human": "13.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Heretic-Ara-IQ4-XS-16GB-VRAM-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Bucoid/Qwen3.8-27B-Heretic-Ara-IQ4-XS-16GB-VRAM-GGUF",
+      "snippet": "Instructions to use Bucoid/Qwen3.8-27B-Heretic-Ara-IQ4-XS-16GB-VRAM-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-27B-Heretic-Ara-IQ4-XS-16GB-VRAM-GGUF",
+      "url": "https://huggingface.co/Bucoid/Qwen3.8-27B-Heretic-Ara-IQ4-XS-16GB-VRAM-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 27B Heretic Ara by trohrbaugh — VRAM 54.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/trohrbaugh%2FQwen3.8-27B-heretic-ara,3lOkoblJbLCrW6LcRlJIk",
+      "snippet": "Qwen3.8 27B Heretic Ara is an open-source 27b LLM by trohrbaugh. VRAM 54.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-GGUF: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-uncensored-gguf-orcarouter",
+      "snippet": "Overview Qwen3.8-27B-Uncensored-GGUF is a GGUF-quantized version of Alibaba&#x27;s 27-billion-parameter Qwen3.8-27B model with safety alignment removed through abliteration. Built and maintained by orcarouter, this model runs on CPU and GPU via llama.cpp with quantization options ranging from 2-bit to 16-bit precision. The architecture combines Gated DeltaNet (GDN) linear attention with full ..."
+    }
+  ]
+}

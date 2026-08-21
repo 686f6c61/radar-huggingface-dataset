@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "furkandemirna/model_092152460_perceiver_base",
+  "slug": "furkandemirna-model_092152460_perceiver_base",
+  "author": "furkandemirna",
+  "url": "https://huggingface.co/furkandemirna/model_092152460_perceiver_base",
+  "created_at": "2026-08-21T15:45:29.000Z",
+  "updated_at": "2026-08-21T15:45:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base",
+    "bilinear",
+    "grouped-query",
+    "lamb",
+    "linear-warmup",
+    "orthogonal",
+    "perceiver",
+    "retrieval",
+    "rmsnorm",
+    "swish",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Turbo AI - Login",
+      "url": "https://www.turbo.ai/login",
+      "snippet": "Turbo AI instantly generates beautiful notes, flashcards, and quizzes from your lectures. Turbo AI (formerly Turbolearn AI) has over 5 million users globally."
+    },
+    {
+      "title": "deepmind-research/perceiver/README.md at master · google ... - GitHub",
+      "url": "https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md",
+      "snippet": "We also provide an example training script to train a Perceiver IO model for ImageNet classification. The provided hyperparameters are the settings used to train Perceiver IO with 2D Fourier position encodings, as described in section 4.5 and supplemental section H of the paper [2]."
+    },
+    {
+      "title": "Perceiver IO: A General Architecture for Structured Inputs & Outputs",
+      "url": "https://arxiv.org/abs/2107.14795",
+      "snippet": "In this work, we propose Perceiver IO, a general-purpose architecture that handles data from arbitrary settings while scaling linearly with the size of inputs and outputs."
+    },
+    {
+      "title": "PDF arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2103.03206.pdf",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "Perceiver Architecture | google-deepmind/deepmind-research | DeepWiki",
+      "url": "https://deepwiki.com/google-deepmind/deepmind-research/2.2-perceiver-architecture",
+      "snippet": "Perceiver Architecture Relevant source files Purpose and Scope This document describes the Perceiver and Perceiver IO architecture, a general-purpose neural network design that can process many types of data (images, video, audio, 3D point clouds, language, multimodal combinations) with minimal domain-specific adaptations."
+    }
+  ]
+}

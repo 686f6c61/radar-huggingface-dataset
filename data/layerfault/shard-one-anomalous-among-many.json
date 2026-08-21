@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/shard-one-anomalous-among-many",
+  "slug": "layerfault-shard-one-anomalous-among-many",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/shard-one-anomalous-among-many",
+  "created_at": "2026-08-21T19:11:20.000Z",
+  "updated_at": "2026-08-21T19:11:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32,
+  "parameters_human": "32",
+  "storage_bytes": 1472,
+  "storage_human": "1472 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault/tree/main",
+      "snippet": "Layerfault validates model artifacts and local model runtimes before inference. It combines structural validation, package inspection, integrity checking, provenance, trust, policy, runtime advisory checks, execution binding, inventory, drift detection, quarantine, and signed evidence in one local CLI."
+    },
+    {
+      "title": "layerfault/docs/SOURCES.md at main · izm1chael/layerfault",
+      "url": "https://github.com/izm1chael/layerfault/blob/main/docs/SOURCES.md",
+      "snippet": "Layerfault examines models--* repositories and their refs, snapshots and blobs, validates that snapshot symlinks resolve inside the repository blob store, identifies broken refs/detached snapshots/orphan blobs, and structurally inspects supported model artifacts."
+    },
+    {
+      "title": "Anomaly-OV - Project Page",
+      "url": "https://xujiacong.github.io/Anomaly-OV/",
+      "snippet": "Through investigation with our benchmark, we reveal that current MLLMs like GPT-4o cannot accurately detect and describe fine-grained anomalous details in images. To address this, we propose Anomaly-OneVision (Anomaly-OV), the first specialist visual assistant for ZSAD and reasoning."
+    },
+    {
+      "title": "Efficient LLM Training and Serving with Heterogeneous Context Sharding ...",
+      "url": "https://arxiv.org/html/2407.17678v1",
+      "snippet": "Abstract Existing LLM training and inference frameworks struggle in boosting efficiency with sparsity while maintaining the integrity of context and model architecture. Inspired by the sharding concept in database and the fact that attention parallelizes over heads on accelerators, we propose Sparsely-Sharded (S2) Attention, an attention algorithm that allocates heterogeneous context ..."
+    },
+    {
+      "title": "AnomalyDiffusion: Few-Shot Anomaly Image Generation with Diffusion Model",
+      "url": "https://arxiv.org/html/2312.05767",
+      "snippet": "In this paper, we propose Anomalydiffusion, a novel anomaly generation model which generates anomalous image-mask pairs. We disentangle anomaly information into anomaly appearance and location information represented by anomaly embedding and spatial embedding in the textual space of LDM."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ppokhrel2109/besstie-sentiment-deberta-v3",
+  "slug": "ppokhrel2109-besstie-sentiment-deberta-v3",
+  "author": "ppokhrel2109",
+  "url": "https://huggingface.co/ppokhrel2109/besstie-sentiment-deberta-v3",
+  "created_at": "2026-08-21T15:38:37.000Z",
+  "updated_at": "2026-08-21T15:40:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "sentiment",
+    "dialect",
+    "english-varieties",
+    "en",
+    "dataset:unswnlporg/BESSTIE",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 740183888,
+  "storage_human": "740 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv:2412.04726v2 [cs.CL] 18 Feb 2025",
+      "url": "https://arxiv.org/pdf/2412.04726v2",
+      "snippet": "arXiv:2412.04726v2 [cs.CL] 18 Feb 2025 BESSTIE: A Benchmark for Sentiment and Sarcasm Classification for Varieties of English"
+    },
+    {
+      "title": "BESSTIE: A Benchmark for Sentiment and Sarcasm Classification for ...",
+      "url": "https://arxiv.org/html/2412.04726v1",
+      "snippet": "By highlighting gaps in the model performance, especially for (a) sarcasm classification in general; and (b) outer-circle varieties like en-IN for both the tasks, this benchmark will be useful to evaluate dialectal biases of language models, and contribute to research towards equitable performance across all varieties of English."
+    },
+    {
+      "title": "PDF BESSTIE: A Benchmark for Sentiment and Sarcasm Classification for ...",
+      "url": "https://dipteshkanojia.co.uk/files/poster-acl-2025-BESSTIE.pdf",
+      "snippet": "How do the models compare? Sarcasm Classification ... *Graphs for all task-model combinations in the paper Can&#x27;t we just train the models on any other language variety?"
+    },
+    {
+      "title": "PDF BESSTIE: A Benchmark for Sentiment and Sarcasm Classication for ...",
+      "url": "https://aclanthology.org/2025.findings-acl.441.pdf",
+      "snippet": "BESSTIE: A Benchmark for Sentiment and Sarcasm Classication for Varieties of English BESSTIE: A Benchmark for Sentiment and Sarcasm Classification for Varieties of English Dipankar Srirag1 Aditya Joshi1 Jordan Painter2 Diptesh Kanojia2 1 University of New South Wales, Sydney, Australia 2Institute for People-Centered AI, University of Surrey, Surrey, United Kingdom {d.srirag, aditya.joshi}@unsw ..."
+    },
+    {
+      "title": "A Case Study of Sentiment Analysis on Survey Data Using LLMs versus ...",
+      "url": "https://nhsjs.com/2025/a-case-study-of-sentiment-analysis-on-survey-data-using-llms-versus-dedicated-neural-networks/",
+      "snippet": "For the system section, we specified the role of the model as: \"You are an AI assistant that helps people conduct sentiment analysis.\" The user prompt provided the model with task-specific instructions and context. The final user prompt was: \"Analyze the sentiment of the following sentence, considering it is a comment from the COVID-19 ..."
+    }
+  ]
+}

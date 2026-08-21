@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "basmulder87/paper_018281290_multimodal_generation",
+  "slug": "basmulder87-paper_018281290_multimodal_generation",
+  "author": "basmulder87",
+  "url": "https://huggingface.co/basmulder87/paper_018281290_multimodal_generation",
+  "created_at": "2026-08-21T16:37:40.000Z",
+  "updated_at": "2026-08-21T16:37:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "enthusiastic",
+    "footnote",
+    "impersonal",
+    "intro-related-method-exp-conclusion",
+    "latex-icml",
+    "multimodal-generation",
+    "short-punchy",
+    "structured-imrad",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2409.14993] Multi-modal Generative AI: Multi-modal LLMs, Diffusions ...",
+      "url": "https://arxiv.org/abs/2409.14993",
+      "snippet": "Therefore, this paper provides a comprehensive overview of multi-modal generative AI, including multi-modal LLMs, diffusions, and the unification for understanding and generation."
+    },
+    {
+      "title": "Multi-Modal Generative AI: Multi-modal LLM, Diffusion and Beyond",
+      "url": "https://arxiv.org/html/2409.14993v1",
+      "snippet": "We also summarize existing large-scale multi-modal datasets for better model pretraining in the future. To conclude the paper, we present several challenging future directions, which we believe can contribute to the ongoing advancement of multi-modal generative AI."
+    },
+    {
+      "title": "Introduction to Multimodal Generative AI | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-96-2355-6_1",
+      "snippet": "A state-of-the-art method in machine learning is called Multimodal Generative Artificial Intelligence (AI), which aims to produce a variety of outputs in many modalities, including text, audio, and images. This survey explores multimodal generative AI&#x27;s developments, techniques, and uses. First, we clarify the main concepts behind such models, such as adaptive autoencoders (VAEs), generative ..."
+    },
+    {
+      "title": "Multi-Modal Generative AI: Multi-Modal LLMs, Diffusions, and the ...",
+      "url": "https://www.semanticscholar.org/paper/Multi-Modal-Generative-AI%3A-Multi-Modal-LLMs%2C-and-Wang-Zhou/4a351b95bc4aa42cef83cd2b53c798bd52a298fb",
+      "snippet": "A comprehensive overview of multi-modal generative AI, including multi-modal LLMs, diffusions, and the unification for understanding and generation, including key designs including autoregressive-based and diffusion-based modeling, as well as dense and Mixture-of-Experts (MoE) architectures. Multi-modal generative AI (Artificial Intelligence) has attracted increasing attention from both ..."
+    },
+    {
+      "title": "GitHub - friedrichor/Awesome-Multimodal-Papers: A curated list of ...",
+      "url": "https://github.com/friedrichor/Awesome-Multimodal-Papers",
+      "snippet": "Awesome-Multimodal-Papers A curated list of awesome Multimodal studies. Contribution If you have published a high-quality paper or come across one that you think is valuable, feel free to contribute! To submit a paper, please open an issue and include the following information in the specified format: Submission Format"
+    }
+  ]
+}

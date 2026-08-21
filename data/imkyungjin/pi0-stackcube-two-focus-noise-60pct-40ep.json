@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-stackcube-two-focus-noise-60pct-40ep",
+  "slug": "imkyungjin-pi0-stackcube-two-focus-noise-60pct-40ep",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-two-focus-noise-60pct-40ep",
+  "created_at": "2026-08-21T19:14:51.000Z",
+  "updated_at": "2026-08-21T19:17:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:taewonkoo/stack_cube_two_focus_noise_60pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556176,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ImKyungjin/pi0-stackcube-recover-noise-40pct-40ep · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-40pct-40ep",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ImKyungjin/pi0-stackcube-recover-noise-60pct-40ep · Hugging Face",
+      "url": "https://huggingface.co/ImKyungjin/pi0-stackcube-recover-noise-60pct-40ep",
+      "snippet": "Instructions to use ImKyungjin/pi0-stackcube-recover-noise-60pct-40ep with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "π 0 : A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://arxiv.org/html/2410.24164v1",
+      "snippet": "By basing our model on a VLM, we inherit the general knowledge, semantic reasoning, and problem-solving abilities of language- and vision-language models. We then further train our model to incorporate robot actions, turning it into a vision-language-action (VLA) model [7]."
+    },
+    {
+      "title": "GitHub - flashrt-project/FlashRT: FlashRT is a high-performance ...",
+      "url": "https://github.com/flashrt-project/FlashRT",
+      "snippet": "FlashRT is a high-performance realtime inference engine for small-batch, latency-sensitive AI workloads. The flagship integration is production VLA control for Pi0, Pi0.5, GROOT N1.6, and Pi0-FAST...."
+    },
+    {
+      "title": "Model Configuration and LoRA Fine-Tuning | hzm8341/pi0.6 | DeepWiki",
+      "url": "https://deepwiki.com/hzm8341/pi0.6/2.3-model-configuration-and-lora-fine-tuning",
+      "snippet": "This page documents the configuration system for the π0 model family, focusing on the Pi0Config and MEMConfig dataclasses. It details how these configurations drive model instantiation and the \"freeze-filter\" mechanism used to manage LoRA (Low-Rank Adaptation) fine-tuning for the PaliGemma backbone and action expert."
+    }
+  ]
+}

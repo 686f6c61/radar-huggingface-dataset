@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sasimi/PinkCherry_NSFW_LTX23",
+  "slug": "sasimi-pinkcherry_nsfw_ltx23",
+  "author": "sasimi",
+  "url": "https://huggingface.co/sasimi/PinkCherry_NSFW_LTX23",
+  "created_at": "2026-08-21T11:23:40.000Z",
+  "updated_at": "2026-08-21T11:23:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ltx-video",
+    "nfaa",
+    "nsfw",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21005004544,
+  "parameters_human": "21.01B",
+  "storage_bytes": 600841473072,
+  "storage_human": "600.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=nsfw",
+      "snippet": "Explore machine learning models. AI-Porn/PornWorks-Bad-Boys-Photo-Realistic-Gay-and-Male-NSFW-Aesthetics-SDXL-Checkpoint"
+    },
+    {
+      "title": "LTX 2.3 ComfyUI Models — Choose by VRAM (16 / 24 / 32 GB)",
+      "url": "https://ltxworkflow.com/models",
+      "snippet": "Pick the right LTX 2.3 model for your GPU. 16 GB FP8/MXFP8, 24 GB with offloading, 32 GB BF16. Plus IC-LoRAs and Gemma text encoders."
+    },
+    {
+      "title": "LTX 2.3 NSFW: Understanding Content Restrictions",
+      "url": "https://ltx23.video/blog/ltx-2-3-nsfw",
+      "snippet": "Comprehensive guide to LTX 2.3 NSFW content generation capabilities, platform policies, legal considerations, and responsible AI video creation."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=nsfw",
+      "snippet": "Explore machine learning models. John6666/fucktastic-real-checkpoint-pony-pdxl-porn-realistic-nsfw-sfw-21-sdxl"
+    },
+    {
+      "title": "LTX 2.3 Uncensored: Complete Technical Guide",
+      "url": "https://ltx23.video/blog/ltx-2-3-uncensored",
+      "snippet": "Explore LTX 2.3 uncensored capabilities for unrestricted video generation. Learn about safety filters, content policies, and responsible AI use."
+    }
+  ]
+}

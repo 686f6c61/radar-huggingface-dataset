@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/shard-valid-two-way-control",
+  "slug": "layerfault-shard-valid-two-way-control",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/shard-valid-two-way-control",
+  "created_at": "2026-08-21T19:11:33.000Z",
+  "updated_at": "2026-08-21T19:11:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32,
+  "parameters_human": "32",
+  "storage_bytes": 368,
+  "storage_human": "368 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault validates model artifacts and local model runtimes before inference. It combines structural validation, package inspection, integrity checking, provenance, trust, policy, runtime advisory checks, execution binding, inventory, drift detection, quarantine, and signed evidence in one local CLI."
+    },
+    {
+      "title": "Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI ...",
+      "url": "https://arxiv.org/pdf/2608.19147v1",
+      "snippet": "The same design scales to a 70B model that no single fleet member can hold: a four-node deployment of Lunar Lake AI PCs on Intel Tiber Cloud serves a single user at interactive speed, with output token-for-token identical to the same four-node pipeline decoding without speculation."
+    },
+    {
+      "title": "Releases: izm1chael/layerfault - GitHub",
+      "url": "https://github.com/izm1chael/layerfault/releases",
+      "snippet": "Layerfault is an offline-first security and admission-control CLI for local AI models. It validates model structure and package contents, establishes integrity and package identity, evaluates provenance and local trust, applies operator policy, checks relevant runtime security advisories, and can block execution when those guarantees fail."
+    },
+    {
+      "title": "Scaling LLM fine-tuning with sharding - IBM Developer",
+      "url": "https://developer.ibm.com/articles/llms-sharding/",
+      "snippet": "Sharding plays a critical role in enabling scalable AI solutions. It supports efficient training workflows, enhances research capabilities, and makes it possible to build systems that can handle large-scale models responsibly. By leveraging strategies such as FSDP, DeepSpeed ZeRO, quantization, and parameter-efficient fine-tuning, teams can effectively adapt and optimize models for a wide ..."
+    },
+    {
+      "title": "AI Observability for Large Language Model Systems:",
+      "url": "https://arxiv.org/html/2604.26152v1",
+      "snippet": "Abstract The deployment of large language models (LLMs) in production environments has created an urgent need for observability systems that span the full stack—from model internals to GPU kernels. Yet existing monitoring approaches address isolated layers of this stack, and no comprehensive analysis has examined how these techniques relate, overlap, or complement each other. This paper ..."
+    }
+  ]
+}

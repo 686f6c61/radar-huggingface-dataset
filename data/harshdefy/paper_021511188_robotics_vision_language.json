@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "HarshDefy/paper_021511188_robotics_vision_language",
+  "slug": "harshdefy-paper_021511188_robotics_vision_language",
+  "author": "HarshDefy",
+  "url": "https://huggingface.co/HarshDefy/paper_021511188_robotics_vision_language",
+  "created_at": "2026-08-21T16:38:37.000Z",
+  "updated_at": "2026-08-21T16:38:43.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "compact",
+    "critical",
+    "detailed-descriptive",
+    "intro-method-exp-related-conclusion",
+    "latex-neurips",
+    "mixed-active-passive",
+    "robotics-vision-language",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RT-2:Vision-Language-ActionModelsTransfer WebKnowledgetoRoboticControl",
+      "url": "https://arxiv.org/pdf/2307.15818",
+      "snippet": "We study how vision-language models trained on Internet-scale data can be incorporated directly into end-to-end robotic control to boost generalization and enable emergent semantic reasoning. Our goal is to enable a single end-to-end trained model to both learn to map robot observations to actions and enjoy the benefits of large-scale pretraining on language and vision-language data from the ..."
+    },
+    {
+      "title": "[2307.15818] RT-2: Vision-Language-Action Models Transfer Web Knowledge ...",
+      "url": "https://arxiv.org/abs/2307.15818",
+      "snippet": "We study how vision-language models trained on Internet-scale data can be incorporated directly into end-to-end robotic control to boost generalization and enable emergent semantic reasoning. Our goal is to enable a single end-to-end trained model to both learn to map robot observations to actions and enjoy the benefits of large-scale pretraining on language and vision-language data from the ..."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "[PDF] RT-2: Vision-Language-Action Models Transfer Web Knowledge to ...",
+      "url": "https://www.semanticscholar.org/paper/RT-2%3A-Vision-Language-Action-Models-Transfer-Web-to-Brohan-Brown/38939304bb760473141c2aca0305e44fbe04e6e8",
+      "snippet": "This work proposes a simple, general recipe to enable a single end-to-end trained model to both learn to map robot observations to actions and enjoy the benefits of large-scale pretraining on language and vision-language data from the web. We study how vision-language models trained on Internet-scale data can be incorporated directly into end-to-end robotic control to boost generalization and ..."
+    },
+    {
+      "title": "RT-2: New model translates vision and language into action",
+      "url": "https://deepmind.google/blog/rt-2-new-model-translates-vision-and-language-into-action/",
+      "snippet": "In our paper, we introduce Robotic Transformer 2 (RT-2), a novel vision-language-action (VLA) model that learns from both web and robotics data, and translates this knowledge into generalised instructions for robotic control, while retaining web-scale capabilities."
+    }
+  ]
+}

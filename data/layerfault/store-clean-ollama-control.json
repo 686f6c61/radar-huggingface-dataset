@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/store-clean-ollama-control",
+  "slug": "layerfault-store-clean-ollama-control",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/store-clean-ollama-control",
+  "created_at": "2026-08-21T19:11:36.000Z",
+  "updated_at": "2026-08-21T19:11:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clean Up Ollama and LM Studio Models on Mac · Mole",
+      "url": "https://mole.fit/blog/how-to-remove-ai-tool-leftovers-mac",
+      "snippet": "Ollama keeps models in ~/.ollama/models by default, or in the directory set by OLLAMA_MODELS. Its current CLI reference uses ollama ls to inventory models and ollama rm <model> to remove one by name. This is safer than deleting files by hand because the tool can update its own model store. LM Studio lets you choose the models directory."
+    },
+    {
+      "title": "How to Clear Ollama Model Cache: Complete Storage Management Guide",
+      "url": "https://markaicode.com/clear-ollama-model-cache-storage-guide/",
+      "snippet": "Step-by-step guide to clearing Ollama model cache on Linux, macOS, and Windows. Free up disk space, fix corrupted models, and automate storage cleanup."
+    },
+    {
+      "title": "Clean Ollama and Local LLM Models on Mac (2026) - deepclean.app",
+      "url": "https://deepclean.app/blog/clean-ollama-llm-models-mac",
+      "snippet": "Where Ollama, LM Studio, and HuggingFace store local LLM models on Mac, and how to free hundreds of GB without breaking your setup."
+    },
+    {
+      "title": "GitHub - sheppoor/ollama-cleanup: Identify and remove orphaned model ...",
+      "url": "https://github.com/sheppoor/ollama-cleanup",
+      "snippet": "The problem When Ollama is upgraded, some older models may become unsupported and disappear from ollama list but their blobs and manifest files remain on disk, consuming significant storage. Since ollama rm only works on models Ollama still recognises, there&#x27;s built-in way to clean these up."
+    },
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Why Layerfault? Local AI models increasingly arrive as large, opaque artifacts that are downloaded, converted, copied between runtimes, and executed with little admission control. Layerfault puts a security gate between model acquisition and model execution: ... Everything is designed to work offline-first."
+    }
+  ]
+}

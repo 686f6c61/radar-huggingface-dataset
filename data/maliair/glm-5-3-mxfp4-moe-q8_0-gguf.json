@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "MaliAir/GLM-5.3-MXFP4-MOE-Q8_0-GGUF",
+  "slug": "maliair-glm-5-3-mxfp4-moe-q8_0-gguf",
+  "author": "MaliAir",
+  "url": "https://huggingface.co/MaliAir/GLM-5.3-MXFP4-MOE-Q8_0-GGUF",
+  "created_at": "2026-08-21T15:35:08.000Z",
+  "updated_at": "2026-08-21T15:37:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "quantized",
+    "moe",
+    "glm",
+    "mixed-precision",
+    "sharded",
+    "gguf-split",
+    "epyc",
+    "rtx-5090",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3 - openlm.ai",
+      "url": "https://openlm.ai/glm-5.3/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    },
+    {
+      "title": "MaliAir/GLM-5.2-MXFP4-MOE-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/MaliAir/GLM-5.2-MXFP4-MOE-Q8_0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MaliAir/GLM-5.2-MXFP4-MOE-Q8_0-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/MaliAir/GLM-5.2-MXFP4-MOE-Q8_0-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3 - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/llm/glm-5.3",
+      "snippet": "Overview GLM-5.3 is Z.ai&#x27;s latest flagship model, delivering comprehensive advancements in complex software engineering and agent capabilities. It uses the same base model as GLM-5.2, with all improvements driven by post-training. Compared with GLM-5.2, it delivers significantly stronger performance in complex programming and long-horizon tasks: Stronger Coding Capability GLM-5.3 delivers a ..."
+    },
+    {
+      "title": "GLM-5.3 — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/zai/glm-5.3",
+      "snippet": "GLM-5.3 GLM-5.3 is an AI model released by Z.ai on Friday, Aug 14 2026, 59 days after GLM-5.2. It is a 743B parameter model. Benchmark results (shown below) cover Terminal-Bench 3.0, ExploitBench, ExploitGym, Agent&#x27;s Last Exam, AutomationBench, DeepSWE 1.1, and 3 more."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshuawalke/paper_002767145_cross_modal_fusion",
+  "slug": "joshuawalke-paper_002767145_cross_modal_fusion",
+  "author": "joshuawalke",
+  "url": "https://huggingface.co/joshuawalke/paper_002767145_cross_modal_fusion",
+  "created_at": "2026-08-21T16:41:10.000Z",
+  "updated_at": "2026-08-21T16:41:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "cross-modal-fusion",
+    "first-person-plural",
+    "footnote",
+    "graphic-visual",
+    "latex-acl",
+    "neutral",
+    "short-punchy",
+    "theoretical-rigorous",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cross-modal Contrastive Learning for Multimodal Fake News Detection",
+      "url": "https://arxiv.org/html/2302.14057v2",
+      "snippet": "Therefore, this contrastive framework for multimodal fake news detection suffers from several key limitations: (1) A huge number of image-text pairs in fake news are inherently not matched (e.g. Figure 1 d), and the contrastive objective may overfit to those data and degrade the model&#x27;s generalization performance; (2) Different image-text ..."
+    },
+    {
+      "title": "Cross-modal Contrastive Learning for Multimodal Fake News Detection",
+      "url": "https://arxiv.org/abs/2302.14057",
+      "snippet": "Automatic detection of multimodal fake news has gained a widespread attention recently. Many existing approaches seek to fuse unimodal features to produce multimodal news representations. However, the potential of powerful cross-modal contrastive learning methods for fake news detection has not been well exploited. Besides, how to aggregate features from different modalities to boost the ..."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Meta Unveils an Open Version of Its Most Powerful A.I. Model",
+      "url": "https://www.nytimes.com/2026/08/10/technology/meta-ai-open-source.html",
+      "snippet": "Meta has positioned the model as a cheaper alternative to its rivals. That strategy is similar to that of Chinese A.I. companies and their inexpensive open-source models."
+    }
+  ]
+}

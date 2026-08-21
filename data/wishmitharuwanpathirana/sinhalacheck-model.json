@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "WishmithaRuwanpathirana/sinhalacheck-model",
+  "slug": "wishmitharuwanpathirana-sinhalacheck-model",
+  "author": "WishmithaRuwanpathirana",
+  "url": "https://huggingface.co/WishmithaRuwanpathirana/sinhalacheck-model",
+  "created_at": "2026-08-21T18:06:39.000Z",
+  "updated_at": "2026-08-21T18:06:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5201,
+  "storage_human": "5201 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WishmithaRuwanpathirana · GitHub",
+      "url": "https://github.com/WishmithaRuwanpathirana",
+      "snippet": "WishmithaRuwanpathirana has 4 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Suchinthana/sinhala-gpt-neo · Hugging Face",
+      "url": "https://huggingface.co/Suchinthana/sinhala-gpt-neo",
+      "snippet": "Fine tuned GPT Neo 125M This model is fine tuned with a Sinhala data set for Sinhala text generation. How to use You can use this model directly with a pipeline for text generation. This example generates a different sequence each time it&#x27;s run:"
+    },
+    {
+      "title": "ChatGPT සහ තවත් දේ සඳහා වඩාත් නිවැරදි සිංහල AI අනාවරකය",
+      "url": "https://isgen.ai/si",
+      "snippet": "Isgen යනු Openai හි GPT-5, Chat-GPT, Claude, Gemini, Deepseek සහ අනෙකුත් විවෘත මූලාශ්‍ර ආකෘති මගින් ලියන ලද පෙළ හඳුනා ගැනීම සඳහා ප්‍රමුඛතම සිංහල AI අනාවරකයයි."
+    },
+    {
+      "title": "WishmithaRuwanpathirana / Projects · GitHub",
+      "url": "https://github.com/WishmithaRuwanpathirana?tab=projects",
+      "snippet": "WishmithaRuwanpathirana has 4 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "SinLlama - A Large Language Model for Sinhala - arXiv.org",
+      "url": "https://arxiv.org/html/2508.09115v2",
+      "snippet": "Abstract Low-resource languages such as Sinhala are often overlooked by open-source Large Language Models (LLMs). Therefore, it is imperative that the existing LLMs are further trained to cover such languages. In this research, we extend an existing multilingual LLM (Llama-3-8B) to get a better coverage for Sinhala. We enhanced the LLM tokenizer with Sinhala specific vocabulary and performed ..."
+    }
+  ]
+}

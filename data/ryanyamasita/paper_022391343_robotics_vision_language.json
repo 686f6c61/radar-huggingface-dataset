@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ryanyamasita/paper_022391343_robotics_vision_language",
+  "slug": "ryanyamasita-paper_022391343_robotics_vision_language",
+  "author": "ryanyamasita",
+  "url": "https://huggingface.co/ryanyamasita/paper_022391343_robotics_vision_language",
+  "created_at": "2026-08-21T16:02:11.000Z",
+  "updated_at": "2026-08-21T16:02:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "measured",
+    "numeric-bibtex",
+    "plain-text",
+    "robotics-vision-language",
+    "structured-imrad",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2507.10672] Vision Language Action Models in Robotic Manipulation: A ...",
+      "url": "https://arxiv.org/abs/2507.10672",
+      "snippet": "Vision Language Action (VLA) models represent a transformative shift in robotics, with the aim of unifying visual perception, natural language understanding, and embodied control within a single learning framework. This review presents a comprehensive and forward-looking synthesis of the VLA paradigm, with a particular emphasis on robotic manipulation and instruction-driven autonomy. We ..."
+    },
+    {
+      "title": "Gemini Robotics: Bringing AI into the Physical World",
+      "url": "https://arxiv.org/abs/2503.20020",
+      "snippet": "This report introduces a new family of AI models purposefully designed for robotics and built upon the foundation of Gemini 2.0. We present Gemini Robotics, an advanced Vision-Language-Action (VLA) generalist model capable of directly controlling robots."
+    },
+    {
+      "title": "(PDF) Vision Language Action Models in Robotic Manipulation: A ...",
+      "url": "https://www.researchgate.net/publication/393724519_Vision_Language_Action_Models_in_Robotic_Manipulation_A_Systematic_Review",
+      "snippet": "PDF | Vision Language Action (VLA) models represent a transformative shift in robotics, with the aim of unifying visual perception, natural language... | Find, read and cite all the research you ..."
+    },
+    {
+      "title": "Awesome VLA Papers - GitHub",
+      "url": "https://github.com/hanjianhua44/Awesome-VLA-Papers",
+      "snippet": "A curated collection of papers on Vision-Language-Action (VLA) models, covering autonomous driving, robotics, world models, spatial reasoning, and more ..."
+    },
+    {
+      "title": "GitHub - zli12321/Vision-Language-Models-Overview: A most Frontend ...",
+      "url": "https://github.com/zli12321/Vision-Language-Models-Overview",
+      "snippet": "A most Frontend Collection and survey of vision-language model papers, and models GitHub repository. Continuous updates. - zli12321/Vision-Language-Models-Overview"
+    }
+  ]
+}

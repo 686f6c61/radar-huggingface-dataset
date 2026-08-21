@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Hutapearyan/paper_027118845_ocr_freeform",
+  "slug": "hutapearyan-paper_027118845_ocr_freeform",
+  "author": "Hutapearyan",
+  "url": "https://huggingface.co/Hutapearyan/paper_027118845_ocr_freeform",
+  "created_at": "2026-08-21T15:55:49.000Z",
+  "updated_at": "2026-08-21T15:55:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "empirical-focused",
+    "first-person-plural",
+    "intro-method-exp-related-conclusion",
+    "latex-neurips",
+    "measured",
+    "numeric-bibtex",
+    "ocr-freeform",
+    "short-punchy",
+    "structured-imrad",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - baidu/Unlimited-OCR: Unlimited OCR Works: Welcome the Era of ...",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "snippet": "Unlimited OCR Works Welcome the Era of One-shot Long-horizon Parsing. Release [2026/07/21] 🤝 Thanks to the ms-swift community for their support, our model now supports training with ms-swift. [2026/07/03] 🤝 Thanks to the Baidu Cloud team for their support. Our model is now available on Baidu Cloud."
+    },
+    {
+      "title": "OCR.chat - Free OCR + chat with any PDF, image or Word document",
+      "url": "https://ocr.chat/",
+      "snippet": "OCR.chat OCR that reads your documents, image & PDF to text, tables, Markdown and math in 100+ languages, then lets you chat with them."
+    },
+    {
+      "title": "Extract Text from Image — Free OCR Online - FreeForAI",
+      "url": "https://www.freeforai.com/ai_convert_image_to_text.php",
+      "snippet": "FreeForAI is a powerful, free online OCR (Optical Character Recognition) tool that extracts text from images with high accuracy. Leveraging cutting-edge AI technology, it can recognize text in various languages and formats while preserving original formatting. Powered by the latest Vision Large Language Model (VLM) technology, FreeForAI delivers unmatched accuracy and performance in text ..."
+    },
+    {
+      "title": "Extract text from any image or document free — ScanRead.ai",
+      "url": "https://scanread.ai/",
+      "snippet": "Drop a photo, screenshot, or PDF — get copyable text in seconds. Free, no signup needed."
+    },
+    {
+      "title": "Operationalizing Document AI: A Microservice Architecture for OCR and ...",
+      "url": "https://arxiv.org/abs/2605.18818",
+      "snippet": "Academic research tends to focus on new models for document understanding creating a wide gap in the literature between model definition and running models at production scale. To close that gap, we present a microservice architecture that encapsulates pipelines of multiple models for classification, optical character recognition (OCR), and large language model structured field extraction as ..."
+    }
+  ]
+}

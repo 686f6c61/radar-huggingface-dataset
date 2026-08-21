@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jkminder/pretraining-priors-pirate2x2-d26-w25-50-sft",
+  "slug": "jkminder-pretraining-priors-pirate2x2-d26-w25-50-sft",
+  "author": "jkminder",
+  "url": "https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w25-50-sft",
+  "created_at": "2026-08-21T10:23:47.000Z",
+  "updated_at": "2026-08-21T10:24:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nanochat_gpt",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 972947456,
+  "parameters_human": "972.9M",
+  "storage_bytes": 1945913144,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pretraining-priors-pirate2x2-d26-w25-50-base - Hugging Face",
+      "url": "https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w25-50-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jkminder/pretraining-priors-pirate2x2-d26-sft · Hugging Face",
+      "url": "https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-sft",
+      "snippet": "d26 instruction-SFT on the pirate-2x2 base (exp-056) The pirate-2x2 d26 base model after standard instruction SFT — the \"post-instruction-ft\" rung of the exp-056 ladder. The SFT mixture is the repo&#x27;s default chat mixture (SmolTalk, MMLU ×3, GSM8K ×4 with tool-call parts), shuffled, one pass; nothing pirate-related is in the SFT data. The pirate register planted in pretraining is ..."
+    },
+    {
+      "title": "jkminder (Julian Minder) · GitHub",
+      "url": "https://github.com/jkminder/",
+      "snippet": "PhD @ EPFL (@epfl-dlab). Master CS @ ETHZ- Currently MATS 7 Scholar with Neel Nanda. - jkminder"
+    },
+    {
+      "title": "GitHub - plexormedia/kimi-k2: Kimi K2 is the large language model ...",
+      "url": "https://github.com/plexormedia/kimi-k2",
+      "snippet": "Kimi K2 is a state-of-the-art mixture-of-experts (MoE) language model with 32 billion activated parameters and 1 trillion total parameters. Trained with the Muon optimizer, Kimi K2 achieves exceptional performance across frontier knowledge, reasoning, and coding tasks while being meticulously optimized for agentic capabilities."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    }
+  ]
+}

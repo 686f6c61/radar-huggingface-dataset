@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/serialization-pickle-extension-mismatch",
+  "slug": "layerfault-serialization-pickle-extension-mismatch",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/serialization-pickle-extension-mismatch",
+  "created_at": "2026-08-21T19:08:29.000Z",
+  "updated_at": "2026-08-21T19:08:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16,
+  "storage_human": "16 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PickleBall: Secure Deserialization of Pickle-based Machine Learning ...",
+      "url": "https://arxiv.org/html/2508.15987v2",
+      "snippet": "In comparison, evaluated model scanners fail to identify known malicious models, and the state-of-the-art loader loads 22% fewer benign models than PickleBall. PickleBall removes the threat of arbitrary function invocation from malicious pickle-based models, raising the bar for attackers as they have to depend on code reuse techniques."
+    },
+    {
+      "title": "PickleBall: Secure Deserialization of Pickle-based Machine Learning Models",
+      "url": "https://arxiv.org/html/2508.15987v1",
+      "snippet": "In this work, we propose a novel approach to secure pickle model deserialization, which we focus on for three reasons. First, pickle is a popular exchange format for models: repositories with pickle models are downloaded over 2.1 billion times per month from the Hugging Face model hub (§ 3.1)."
+    },
+    {
+      "title": "PickleBall: Secure Deserialization of Pickle-based Machine Learning ...",
+      "url": "https://davisjam.medium.com/pickleball-secure-deserialization-of-pickle-based-machine-learning-models-a089113e6b0f",
+      "snippet": "This blog post summarizes our work \" PickleBall: Secure Deserialization of Pickle-based Machine Learning Models \", which appeared at the 2025 ACM Conference on Computer and Communications Security (CCS&#x27;25). The work was the result of collaboration between groups at Columbia, Brown, Purdue, Google, and Technion. The published paper is here and is open access (no paywall). An extended ..."
+    },
+    {
+      "title": "GitHub - microsoft/MAI-Code: Official repo for MAI-Code models, where ...",
+      "url": "https://github.com/microsoft/MAI-Code",
+      "snippet": "We are Microsoft AI, building AI that empowers everyone. MAI-Code is our family of in-house coding models developed to make everyday development faster, smarter, and more efficient. This is the official repo for MAI-Code models, where we publish MAI-Code model releases and updates and engage with the developer community on issues and feedback."
+    },
+    {
+      "title": "PickleBall: Secure Deserialization of Pickle-based Machine Learning ...",
+      "url": "https://dl.acm.org/doi/10.1145/3719027.3765037",
+      "snippet": "Machine learning model repositories, such as the Hugging Face Model Hub, facilitate model exchanges. However, bad actors can deliver malware through compromised models. Existing defenses, such as safer model formats, restrictive (but inflexible) loading policies, and model scanners, have shortcomings: 44.9% of popular models on Hugging Face still use the insecure pickle format, 15% of these ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "stabilityai/stable-diffusion-3.5-medium",
+  "slug": "stabilityai-stable-diffusion-3-5-medium",
+  "author": "stabilityai",
+  "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium",
+  "created_at": "2024-10-29T10:27:32.000Z",
+  "updated_at": "2024-10-31T08:18:43.000Z",
+  "license": "stabilityai-ai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "en",
+    "arxiv:2403.03206",
+    "license:other",
+    "diffusers:StableDiffusion3Pipeline",
+    "region:us"
+  ],
+  "likes": 1048,
+  "downloads_30d": 129893,
+  "trending_score": 8,
+  "parameters": 2469663936,
+  "parameters_human": "2.47B",
+  "storage_bytes": 36305578304,
+  "storage_human": "36.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stabilityai/stable-diffusion-3.5-medium · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · stabilityai/stable-diffusion-3.5-medium at main",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-medium/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Stable Diffusion 3.5 - Stability AI",
+      "url": "https://stability.ai/news-updates/introducing-stable-diffusion-3-5",
+      "snippet": "Today we are introducing Stable Diffusion 3.5. This open release includes multiple model variants, including Stable Diffusion 3.5 Large and Stable Diffusion 3.5 Large Turbo, and as of October 29th, Stable Diffusion 3.5 Medium."
+    },
+    {
+      "title": "GitHub - Stability-AI/sd3.5",
+      "url": "https://github.com/Stability-AI/sd3.5",
+      "snippet": "Stable Diffusion 3.5 Inference-only tiny reference implementation of SD3.5 and SD3 - everything you need for simple inference using SD3.5/SD3, as well as the SD3.5 Large ControlNets, excluding the weights files."
+    },
+    {
+      "title": "sd3.5/README.md at main · Stability-AI/sd3.5 · GitHub",
+      "url": "https://github.com/Stability-AI/sd3.5/blob/main/README.md",
+      "snippet": "Stable Diffusion 3.5 Inference-only tiny reference implementation of SD3.5 and SD3 - everything you need for simple inference using SD3.5/SD3, as well as the SD3.5 Large ControlNets, excluding the weights files."
+    }
+  ]
+}

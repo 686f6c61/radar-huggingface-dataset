@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Shubhamvermaley/paper_001353313_efficient_attention",
+  "slug": "shubhamvermaley-paper_001353313_efficient_attention",
+  "author": "Shubhamvermaley",
+  "url": "https://huggingface.co/Shubhamvermaley/paper_001353313_efficient_attention",
+  "created_at": "2026-08-21T19:21:08.000Z",
+  "updated_at": "2026-08-21T19:21:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "critical",
+    "efficient-attention",
+    "intro-related-method-exp-conclusion",
+    "latex-icml",
+    "mixed-active-passive",
+    "numeric-bibtex",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[1812.01243] Efficient Attention: Attention with Linear Complexities",
+      "url": "https://arxiv.org/abs/1812.01243",
+      "snippet": "Dot-product attention has wide applications in computer vision and natural language processing. However, its memory and computational costs grow quadratically with the input size. Such growth prohibits its application on high-resolution inputs. To remedy this drawback, this paper proposes a novel efficient attention mechanism equivalent to dot-product attention but with substantially less ..."
+    },
+    {
+      "title": "Efficient Attention: Attention with Linear Complexities | IEEE ...",
+      "url": "https://ieeexplore.ieee.org/document/9423033",
+      "snippet": "Dot-product attention has wide applications in computer vision and natural language processing. However, its memory and computational costs grow quadratically with the input size. Such growth prohibits its application on high- resolution inputs. To remedy this drawback, this paper proposes a novel efficient attention mechanism equivalent to dot-product attention but with substantially less ..."
+    },
+    {
+      "title": "WACV 2021 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/WACV2021/html/Shen_Efficient_Attention_Attention_With_Linear_Complexities_WACV_2021_paper.html",
+      "snippet": "To remedy this drawback, this paper proposes a novel efficient attention mechanism equivalent to dot-product attention but with substantially less memory and computational costs. Its resource efficiency allows more widespread and flexible integration of attention modules into a network, which leads to better accuracies."
+    },
+    {
+      "title": "Efficient Attention: Attention with Linear Complexities - Computer",
+      "url": "https://www.computer.org/csdl/proceedings-article/wacv/2021/047700d530/1uqGgnnKL8Q",
+      "snippet": "To remedy this drawback, this paper proposes a novel efficient attention mechanism equivalent to dot-product attention but with substantially less memory and computational costs. Its resource efficiency allows more widespread and flexible integration of attention modules into a network, which leads to better accuracies."
+    },
+    {
+      "title": "(PDF) Efficient Attention: Attention with Linear Complexities",
+      "url": "https://www.researchgate.net/publication/329414227_Efficient_Attention_Attention_with_Linear_Complexities",
+      "snippet": "To remedy this drawback, this paper proposes a novel efficient attention mechanism, which is equivalent to dot-product attention but has substantially less memory and computational costs."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "manak0",
   "url": "https://huggingface.co/manak0/Detect-fire-winner",
   "created_at": "2026-05-13T12:07:06.000Z",
-  "updated_at": "2026-08-20T12:14:04.000Z",
+  "updated_at": "2026-08-21T12:14:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,7 +14,7 @@
   "tags": [
     "onnx",
     "element_type:detect",
-    "model:onnxruntime",
+    "model:ultralytics-yolo",
     "subnet:winner",
     "object:fire",
     "object:smoke",

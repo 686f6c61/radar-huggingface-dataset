@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnazzyArtist22/Morty-Smith_MV",
+  "slug": "snazzyartist22-morty-smith_mv",
+  "author": "SnazzyArtist22",
+  "url": "https://huggingface.co/SnazzyArtist22/Morty-Smith_MV",
+  "created_at": "2026-08-21T16:46:42.000Z",
+  "updated_at": "2026-08-21T16:47:24.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 490395533,
+  "storage_human": "490 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SnazzyArtist22 (Elliott Buxton) - Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "SnazzyArtist22 (Elliott Buxton) - Hugging Face",
+      "url": "https://huggingface.co/SnazzyArtist22/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "Morty-Smith AI Voice Model for Free - TopMediai AI Cover Generator",
+      "url": "https://www.topmediai.com/app/ai-cover/Morty-Smith",
+      "snippet": "Create Morty-Smith AI covers for any song or use it as a Morty-Smith AI voice changer to transform voice into Morty-Smith. Try our AI voice models for free now."
+    },
+    {
+      "title": "Morty Smith AI RVC Model | Storyteller.ai",
+      "url": "https://storyteller.ai/weight/weight_zmrhs5j5d8qm4kantkmc6w945/morty-smith",
+      "snippet": "Storyteller.ai AI creation engine Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    },
+    {
+      "title": "Snazzy — Voice Models Creator",
+      "url": "https://voice-models.com/creator/SnazzyArtist22?tab=latest",
+      "snippet": "View AI voice models by Snazzy on Voice Models."
+    }
+  ]
+}

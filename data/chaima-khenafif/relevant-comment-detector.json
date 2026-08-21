@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Chaima-KHENAFIF/relevant-comment-detector",
+  "slug": "chaima-khenafif-relevant-comment-detector",
+  "author": "Chaima-KHENAFIF",
+  "url": "https://huggingface.co/Chaima-KHENAFIF/relevant-comment-detector",
+  "created_at": "2026-08-21T19:08:58.000Z",
+  "updated_at": "2026-08-21T19:34:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ar",
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "text-classification",
+    "comment-moderation",
+    "darija",
+    "code-switching",
+    "nlp",
+    "ar",
+    "fr",
+    "en",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1117333717,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chaima-Khenafif03 (chaima KHENAFIF) · GitHub",
+      "url": "https://github.com/chaima-Khenafif03/",
+      "snippet": "👋 Hi, I&#x27;m @chaima-Khenafif03 👀 I&#x27;m interested in ai,web development 🌱 I&#x27;m currently learning computer science 💞️ I&#x27;m looking to collaborate on ... 📫 How to reach me my email address: chaimakhenafif03@gmail.com"
+    },
+    {
+      "title": "detoxifAI - Mitigate Cyberbulling",
+      "url": "https://detoxifai.com/",
+      "snippet": "detoxifAI is the only AI-based Toxic comment detection tool that is not only vetted for bias, but is also is transparent on toxic terms - helping children and teenagers understand better what makes a comment toxic."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    }
+  ]
+}

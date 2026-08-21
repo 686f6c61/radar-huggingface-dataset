@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NouraAlqasim/allam-7b-nvfp4_awq_lite-w4a16-mixed",
+  "slug": "nouraalqasim-allam-7b-nvfp4_awq_lite-w4a16-mixed",
+  "author": "NouraAlqasim",
+  "url": "https://huggingface.co/NouraAlqasim/allam-7b-nvfp4_awq_lite-w4a16-mixed",
+  "created_at": "2026-08-21T14:58:22.000Z",
+  "updated_at": "2026-08-21T14:59:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "nvfp4_awq_lite",
+    "w4a16",
+    "modelopt",
+    "quantized",
+    "arabic-calibrated",
+    "calib-mixed",
+    "base_model:humain-ai/ALLaM-7B-Instruct-preview",
+    "base_model:quantized:humain-ai/ALLaM-7B-Instruct-preview",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3762556928,
+  "parameters_human": "3.76B",
+  "storage_bytes": 4693174674,
+  "storage_human": "4.7 GB",
+  "base_model": "humain-ai/ALLaM-7B-Instruct-preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NouraAlqasim/allam-7b-fp8-mixed · Hugging Face",
+      "url": "https://huggingface.co/NouraAlqasim/allam-7b-fp8-mixed",
+      "snippet": "NouraAlqasim / allam-7b-fp8-mixed like 0 Safetensors llama fp8 modelopt quantized arabic-calibrated calib-mixed Model card FilesFiles and versions xet Community Copy to bucket new allam-7b · FP8 · calibrated on 64 MSA + 64 Gulf"
+    },
+    {
+      "title": "NouraAlqasim (Noura Alqasim) - Hugging Face",
+      "url": "https://huggingface.co/NouraAlqasim/models",
+      "snippet": "User profile of Noura Alqasim on Hugging Face"
+    },
+    {
+      "title": "ALLaM: Large Language Models for Arabic and English",
+      "url": "https://arxiv.org/html/2407.15390v1",
+      "snippet": "Our autoregressive decoder-only architecture models demonstrate how second-language acquisition via vocabulary expansion and pretraining on a mixture of Arabic and English text can steer a model towards a new language (Arabic) without any catastrophic forgetting in the original language (English)."
+    },
+    {
+      "title": "iKhalid/ALLaM:7b",
+      "url": "https://ollama.com/iKhalid/ALLaM:7b",
+      "snippet": "The weights for ALLaM model checkpoints can be accessed via HuggingFace transformers (tested with transformers>=4.40.1). The following code snippet demonstrates how to load the model and generate text using the ALLaM-AI/ALLaM-7B-Instruct-preview model."
+    },
+    {
+      "title": "iKhalid/ALLaM:7b/model",
+      "url": "https://ollama.com/iKhalid/ALLaM:7b/blobs/26f877c57743",
+      "snippet": "ALLaM is a series of powerful language models designed to advance Arabic Language Technology (ALT) developed by the National Center for Artificial Intelligence (NCAI) at the Saudi Data and AI Authority (SDAIA)"
+    }
+  ]
+}

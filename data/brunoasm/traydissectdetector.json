@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "brunoasm/TrayDissectDetector",
+  "slug": "brunoasm-traydissectdetector",
+  "author": "brunoasm",
+  "url": "https://huggingface.co/brunoasm/TrayDissectDetector",
+  "created_at": "2026-08-21T16:09:06.000Z",
+  "updated_at": "2026-08-21T16:09:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brunoasm (Bruno de Medeiros) - Hugging Face",
+      "url": "https://huggingface.co/brunoasm",
+      "snippet": "I use AI & ML in research in evolutionary biology, including computer vision and LLMs"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library=fastai&sort=downloads",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "marketplace/skills/brunoasm/busco-phylogeny/templates at main ... - GitHub",
+      "url": "https://github.com/aiskillstore/marketplace/tree/main/skills/brunoasm/busco-phylogeny/templates",
+      "snippet": "Phylogenomics Workflow Templates This directory contains template scripts for running the phylogenomics pipeline across different computing environments."
+    },
+    {
+      "title": "PlantyAI - AI plant scanner and botanical guide | TASUJ",
+      "url": "https://www.tasuj.org/plantyai",
+      "snippet": "Clear structure, not AI noise. PlantyAI explains the result, shows alternatives, and pairs structured AI analysis with curated knowledge."
+    },
+    {
+      "title": "extract-from-pdfs — OpenSkillIndex",
+      "url": "https://openskillindex.com/skills/aiskillstore-marketplace-extract-from-pdfs",
+      "snippet": "This skill should be used when extracting structured data from scientific PDFs for systematic reviews, meta-analyses, or database creation. Use when working with collections of ..."
+    }
+  ]
+}

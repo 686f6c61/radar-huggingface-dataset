@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/serialization-pickle-unknown-global",
+  "slug": "layerfault-serialization-pickle-unknown-global",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/serialization-pickle-unknown-global",
+  "created_at": "2026-08-21T19:08:55.000Z",
+  "updated_at": "2026-08-21T19:08:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27,
+  "storage_human": "27 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault validates model artifacts and local model runtimes before inference. It combines structural validation, package inspection, integrity checking, provenance, trust, policy, runtime advisory checks, execution binding, inventory, drift detection, quarantine, and signed evidence in one local CLI."
+    },
+    {
+      "title": "PickleBall: Secure Deserialization of Pickle-based Machine Learning Models",
+      "url": "https://arxiv.org/html/2508.15987v1",
+      "snippet": "In comparison, evaluated model scanners fail to identify known malicious models, and the state-of-art loader loads 22% fewer benign models than PickleBall. PickleBall removes the threat of arbitrary function invocation from malicious pickle-based models, raising the bar for attackers to depend on code reuse techniques."
+    },
+    {
+      "title": "Attackers hide malicious code in Hugging Face AI model Pickle files",
+      "url": "https://cybersecurityinfocus.com/?p=1831",
+      "snippet": "Like all repositories of open-source software in recent years, AI model hosting platform Hugging Face has been abused by attackers to upload trojanized projects and assets with the goal of infecting unsuspecting users. The latest technique observed by researchers involves intentionally broken but poisoned Python object serialization files called Pickle files."
+    },
+    {
+      "title": "Malicious AI Models Bypass Picklescan Detection",
+      "url": "https://threats.wiz.io/all-incidents/malicious-ai-models-bypass-picklescan-detection",
+      "snippet": "The nullifAI attack exploits Pickle file serialization, an insecure method for storing ML models, to distribute malware-laced PyTorch models on Hugging Face. Instead of using PyTorch&#x27;s default ZIP compression, the attackers compressed the models using 7z, preventing automatic loading via torch.load() and evading Picklescan detection. The malicious payload, a reverse shell, was embedded at ..."
+    },
+    {
+      "title": "Critical Remote Code Execution Flaws Found in AI Inference Engines Due ...",
+      "url": "https://dailysecurityreview.com/cyber-security/application-security/critical-remote-code-execution-flaws-found-in-ai-inference-engines-due-to-unsafe-deserialization/",
+      "snippet": "New research reveals that popular AI inference engines—including Meta&#x27;s TorchServe, Nvidia&#x27;s Triton, vLLM, and Microsoft&#x27;s ONNX Runtime—contain critical ZeroMQ and Python pickle flaws that enable remote code execution. The vulnerabilities expose cloud and on-prem AI deployments to serious, systemic security risk."
+    }
+  ]
+}

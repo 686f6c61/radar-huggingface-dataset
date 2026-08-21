@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AnonMLuser/remdm-planner-minihack",
+  "slug": "anonmluser-remdm-planner-minihack",
+  "author": "AnonMLuser",
+  "url": "https://huggingface.co/AnonMLuser/remdm-planner-minihack",
+  "created_at": "2026-08-21T15:02:22.000Z",
+  "updated_at": "2026-08-21T15:03:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "reinforcement-learning",
+    "discrete-diffusion",
+    "planning",
+    "minihack",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 254298566,
+  "storage_human": "254 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReMDM-MiniHack - Hugging Face",
+      "url": "https://huggingface.co/remdm-minihack/ReMDM-MiniHack",
+      "snippet": "ReMDM-MiniHack Generative Planning Agent for MiniHack navigation using Re-Masked Discrete Diffusion (ReMDM). The agent uses Masked Discrete Diffusion to iteratively generate action sequences for dungeon navigation. Instead of predicting the next action autoregressively, the model generates entire 64-step trajectories by progressively unmasking action tokens. Code GitHub: piotrwilam/ReMDM ..."
+    },
+    {
+      "title": "MathisW78/remdm-minihack · Hugging Face",
+      "url": "https://huggingface.co/MathisW78/remdm-minihack",
+      "snippet": "ReMDM Planner for MiniHack . PyTorch implementation of ReMDM (Remasking Discrete Diffusion Model) for action-sequence planning in MiniHack navigation environments. A dual-stream t"
+    },
+    {
+      "title": "GitHub - facebookresearch/minihack: MiniHack the Planet: A Sandbox for ...",
+      "url": "https://github.com/facebookresearch/minihack",
+      "snippet": "MiniHack is a sandbox framework for easily designing rich and diverse environments for Reinforcement Learning (RL). Based on the game of NetHack, MiniHack uses the NetHack Learning Environment (NLE) to communicate with the game and to provide a convenient interface for customly created RL training and test environments of varying complexity."
+    },
+    {
+      "title": "[2503.00307] Remasking Discrete Diffusion Models with Inference-Time ...",
+      "url": "https://arxiv.org/abs/2503.00307",
+      "snippet": "Here, we address this limitation by introducing the remasking diffusion model (ReMDM) sampler, a method that can be applied to pretrained masked diffusion models in a principled way and that is derived from a discrete diffusion model with a custom remasking backward process."
+    },
+    {
+      "title": "MiniHack Level Editor — MiniHack documentation",
+      "url": "https://minihack.readthedocs.io/en/latest/index.html",
+      "snippet": "MiniHack is a sandbox framework for easily designing rich and diverse environments for Reinforcement Learning (RL). Based on the game of NetHack, MiniHack uses the NetHack Learning Environment (NLE) to communicate with the game and to provide a convenient interface for customly created RL training and test environments of varying complexity."
+    }
+  ]
+}

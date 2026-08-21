@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sDarth/24b1064-Week02-Track1-40-Submission01",
+  "slug": "sdarth-24b1064-week02-track1-40-submission01",
+  "author": "sDarth",
+  "url": "https://huggingface.co/sDarth/24b1064-Week02-Track1-40-Submission01",
+  "created_at": "2026-08-21T18:05:09.000Z",
+  "updated_at": "2026-08-21T18:05:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5",
+    "compressed-checkpoint",
+    "mathcomp",
+    "rtn",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2190235575,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "safffrron/25M2111-Week01-Track1-40-Submission01 · Hugging Face",
+      "url": "https://huggingface.co/safffrron/25M2111-Week01-Track1-40-Submission01",
+      "snippet": "Instructions to use safffrron/25M2111-Week01-Track1-40-Submission01 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use safffrron/25M2111-Week01-Track1-40-Submission01 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"safffrron ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    },
+    {
+      "title": "SEC.gov | EDGAR Full Text Search",
+      "url": "https://www.sec.gov/edgar/search/",
+      "snippet": "SEC.gov EDGAR FAQ Other search tools The new EDGAR advanced search gives you access to the full text of electronic filings since 2001."
+    }
+  ]
+}

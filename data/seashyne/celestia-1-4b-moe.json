@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "seashyne/celestia-1.4b-moe",
+  "slug": "seashyne-celestia-1-4b-moe",
+  "author": "seashyne",
+  "url": "https://huggingface.co/seashyne/celestia-1.4b-moe",
+  "created_at": "2026-08-21T10:28:59.000Z",
+  "updated_at": "2026-08-21T10:29:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "creative",
+    "lenout",
+    "deepseek-moe",
+    "mla",
+    "reasoning",
+    "causal-lm",
+    "text-generation",
+    "custom_code",
+    "th",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27541,
+  "storage_human": "27541 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-MoE: DeepSeekMoE: Towards Ultimate Expert ...",
+      "url": "https://github.com/deepseek-ai/DeepSeek-MoE",
+      "snippet": "1. Introduction DeepSeekMoE 16B is a Mixture-of-Experts (MoE) language model with 16.4B parameters. It employs an innovative MoE architecture, which involves two principal strategies: fine-grained expert segmentation and shared experts isolation."
+    },
+    {
+      "title": "Celestia - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/cn348ite878c73dsvs50",
+      "snippet": "Meet Celestia model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "Princess Celestia Humanized - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/fdafae40b8cd0ad38bbfcff59a0cf80e",
+      "snippet": "Explore Princess Celestia Humanized model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Celestia - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1877188947478741626",
+      "snippet": "Generate stunning character, celestia anime art with the &#x27;Celestia&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

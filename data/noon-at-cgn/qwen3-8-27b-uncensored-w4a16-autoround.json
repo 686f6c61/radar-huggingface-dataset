@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "noon-at-cgn/Qwen3.8-27B-Uncensored-W4A16-AutoRound",
+  "slug": "noon-at-cgn-qwen3-8-27b-uncensored-w4a16-autoround",
+  "author": "noon-at-cgn",
+  "url": "https://huggingface.co/noon-at-cgn/Qwen3.8-27B-Uncensored-W4A16-AutoRound",
+  "created_at": "2026-08-21T14:38:30.000Z",
+  "updated_at": "2026-08-21T15:20:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "uncensored",
+    "abliterated",
+    "quantized",
+    "w4a16",
+    "autoround",
+    "int4",
+    "vision-language",
+    "vllm",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6260690960,
+  "parameters_human": "6.26B",
+  "storage_bytes": 19472769333,
+  "storage_human": "19.5 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "File: Qwen3.8-27B-Q4_K_M.gguf · ~16.8 GB · Apache-2.0 Uncensored behavior is the SYSTEM pack in this repo. It is not a second weight dump."
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "Qwen3.8 27B Uncensored (Aggressive) - orcarouter.ai",
+      "url": "https://www.orcarouter.ai/models/obsidian/qwen3.8-27b",
+      "snippet": "A lossless uncensored version of Qwen3.8 27B that preserves the original model&#x27;s capabilities while removing refusal behavior. Built for developers, AI researchers, and advanced agent workflows that require unrestricted model outputs without compromising reasoning, coding, multilingual performance, or tool use."
+    },
+    {
+      "title": "Qwen3.8-27B AutoRound W4A16 on 2x RTX 3090 - GitHub",
+      "url": "https://github.com/tonyd2wild/Qwen3.8-27B-AutoRound-W4A16-2x3090",
+      "snippet": "Production Docker deployment for Qwen3.8-27B AutoRound W4A16 (Vishva007) on 2x RTX 3090 (NVLink or PCIe). OpenAI-compatible vLLM with MTP speculative decoding, tool calling, separated reasoning, vision, and CUDA graphs."
+    },
+    {
+      "title": "Qwen3.6-27B INT4 AutoRound - ai.gitcode.com",
+      "url": "https://ai.gitcode.com/hf_mirrors/Lorbus/Qwen3.6-27B-int4-AutoRound",
+      "snippet": "Qwen3.6-27B-int4-AutoRound:可用于高效部署多模态大语言模型，实现图像文本理解与生成。该项目通过 AutoRound 对 Qwen3.6-27B 进行 W4A16 量化，保留 MTP 头支持推测解码，显存占用减少 3 倍，兼顾性能与精度。【此简介由AI生成】 - AtomGit AI社区 HuggingFace镜像 / Qwen3.6-27B-int4-AutoRound like0 加入合集 图文转文本生成 ..."
+    }
+  ]
+}

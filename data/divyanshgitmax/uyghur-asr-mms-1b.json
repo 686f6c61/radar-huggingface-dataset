@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "divyanshgitmax/uyghur-asr-mms-1b",
+  "slug": "divyanshgitmax-uyghur-asr-mms-1b",
+  "author": "divyanshgitmax",
+  "url": "https://huggingface.co/divyanshgitmax/uyghur-asr-mms-1b",
+  "created_at": "2026-08-21T16:36:34.000Z",
+  "updated_at": "2026-08-21T17:09:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 964692130,
+  "parameters_human": "964.7M",
+  "storage_bytes": 3858906240,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/mms-1b-all · Hugging Face",
+      "url": "https://huggingface.co/facebook/mms-1b-all",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "divyanshgitmax (Divyansh) - Hugging Face",
+      "url": "https://huggingface.co/divyanshgitmax",
+      "snippet": "divyanshgitmax/Intent-FINBERT-MODEL-VW Text Classification • 0.1B•Updated May 14, 2025• 7"
+    },
+    {
+      "title": "fairseq/examples/mms/README.md at main - GitHub",
+      "url": "https://github.com/facebookresearch/fairseq/blob/main/examples/mms/README.md",
+      "snippet": "The Massively Multilingual Speech (MMS) project expands speech technology from about 100 languages to over 1,000 by building a single multilingual speech recognition model supporting over 1,100 languages (more than 10 times as many as before), language identification models able to identify over 4,000 languages (40 times more than before), pretrained models supporting over 1,400 languages, and ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/facebook-mms-1b-all",
+      "snippet": "facebook/mms-1b-all powered by Hugging Face Inference Toolkit Original Model Card automatic-speech-recognition Task on Hugging Face Send Request You can use cURL or any REST Client to send a request to the AzureML endpoint with your AzureML token."
+    },
+    {
+      "title": "gheyret (Uyghur) · GitHub",
+      "url": "https://github.com/gheyret",
+      "snippet": "Uyghur Single Speaker Speech Dataset. ウイグル語音声データセット 35 7 uyghur-asr-ctc Public Speech Recognition for Uyghur using deep learning Python 44 9"
+    }
+  ]
+}

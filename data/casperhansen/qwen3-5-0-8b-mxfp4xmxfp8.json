@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "casperhansen/Qwen3.5-0.8B-MXFP4xMXFP8",
+  "slug": "casperhansen-qwen3-5-0-8b-mxfp4xmxfp8",
+  "author": "casperhansen",
+  "url": "https://huggingface.co/casperhansen/Qwen3.5-0.8B-MXFP4xMXFP8",
+  "created_at": "2026-08-21T17:45:35.000Z",
+  "updated_at": "2026-08-21T17:45:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "mxfp4",
+    "mxfp8",
+    "llm-compressor",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1029765062,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "casperhansen/Qwen3.5-0.8B-INT-W8A8 · Hugging Face",
+      "url": "https://huggingface.co/casperhansen/Qwen3.5-0.8B-INT-W8A8",
+      "snippet": "Qwen3.5-.8B-INT-W8A8 INT8 W8A8 quantization of Qwen/Qwen3.5-.8B, produced for development purposes with the simplest possible method: round-to-nearest (RTN) weights — no GPTQ, no calibration data."
+    },
+    {
+      "title": "casperhansen (casperhansen) - Hugging Face",
+      "url": "https://huggingface.co/casperhansen",
+      "snippet": "Creator of AutoAWQ 15B • Updated Feb 8, 2025 • 188k • 14"
+    },
+    {
+      "title": "Qwen/Qwen3.5-0.8B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B",
+      "snippet": "Qwen3.5-0.8B is the smallest member of the Qwen3.5 family — same hybrid gated delta networks architecture and 262K context, at a size suited to edge devices or as a draft model for speculative decoding with larger Qwen3.5 checkpoints."
+    },
+    {
+      "title": "Qwen3.5-0.8B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-5-0-8b",
+      "snippet": "The smallest Qwen3.5 model — a dense 0.8B designed for the most constrained on-device deployments, operating in non-thinking (instruct) mode by default. Apache-2.0, with native vision, a 262K-token context, and the family&#x27;s hybrid thinking / non-thinking mode; needs roughly 2GB of VRAM and runs under 2GB at 4-bit, targeting smartphones and ..."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    }
+  ]
+}

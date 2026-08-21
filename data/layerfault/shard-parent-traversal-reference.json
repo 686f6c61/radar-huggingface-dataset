@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/shard-parent-traversal-reference",
+  "slug": "layerfault-shard-parent-traversal-reference",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/shard-parent-traversal-reference",
+  "created_at": "2026-08-21T19:11:24.000Z",
+  "updated_at": "2026-08-21T19:11:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 368,
+  "storage_human": "368 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault validates model artifacts and local model runtimes before inference. It combines structural validation, package inspection, integrity checking, provenance, trust, policy, runtime advisory checks, execution binding, inventory, drift detection, quarantine, and signed evidence in one local CLI."
+    },
+    {
+      "title": "CVE-2026-75104: Improper Limitation of a Pathname to a Restricted ...",
+      "url": "https://radar.offseq.com/threat/cve-2026-75104-improper-limitation-of-a-pathname-to-a-restricted-directory-path-traversal-in-68f02c788d33af14",
+      "snippet": "CVE-2026-75104 is a path traversal vulnerability in Hugging Face Transformers that allows attackers to read arbitrary files outside the intended model directory. This occurs because shard filenames in checkpoint index files are not properly validated, enabling malicious index files with parent-directory references or absolute paths to disclose files and perform filesystem reconnaissance. The ..."
+    },
+    {
+      "title": "PT-2026-76799 - vulnerability database | Vulners.com",
+      "url": "https://vulners.com/ptsecurity/PT-2026-76799",
+      "snippet": "Hugging Face Transformers fails to validate shard filenames in checkpoint index files, allowing attackers to read arbitrary files outside the model directory. Attackers can supply malicious index files with parent-directory references or absolute ..."
+    },
+    {
+      "title": "Hugging Face Transformers File Disclosure via Shard Path Traversal",
+      "url": "https://basefortify.eu/cve_reports/2026/08/cve-2026-75104.html",
+      "snippet": "Description Hugging Face Transformers fails to validate shard filenames in checkpoint index files, allowing attackers to read arbitrary files outside the model directory. Attackers can supply malicious index files with parent-directory references or absolute paths that are joined without validation, enabling file disclosure and filesystem reconnaissance."
+    },
+    {
+      "title": "Path traversal via sharded-checkpoint index `weight_map ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/issues/47176",
+      "snippet": "Summary When from_pretrained loads a sharded checkpoint, transformers reads the shard filenames from the model-supplied index file (model.safetensors.index.json or pytorch_model.bin.index.json) and joins each one to the model directory with os.path.join and no validation. The values of the index&#x27;s weight_map are arbitrary attacker-controlled ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "DGurgurov/SmolLM3-3B-SFT-ES",
+  "slug": "dgurgurov-smollm3-3b-sft-es",
+  "author": "DGurgurov",
+  "url": "https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-ES",
+  "created_at": "2026-08-21T14:41:55.000Z",
+  "updated_at": "2026-08-21T14:44:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "smollm3",
+    "reasoning",
+    "multilingual",
+    "es",
+    "reasonxl",
+    "dataset:toroe/ReasonXL-SFT",
+    "arxiv:2604.12378",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3337766912,
+  "parameters_human": "3.34B",
+  "storage_bytes": 37969658480,
+  "storage_human": "38.0 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DGurgurov/SmolLM3-3B-SFT-GRPO-ES · Hugging Face",
+      "url": "https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-GRPO-ES",
+      "snippet": "Stage 1 — SFT (DGurgurov/SmolLM3-3B-SFT-ES): shifts the model&#x27;s reasoning language from English to Spanish via supervised fine-tuning on Spanish reasoning traces. Stage 2 — RL (Dr. GRPO): recovers reasoning quality lost during SFT while preserving target-language compliance, using a composite reward over verifiable math problems."
+    },
+    {
+      "title": "DGurgurov (Daniil Gurgurov) - Hugging Face",
+      "url": "https://huggingface.co/DGurgurov/models",
+      "snippet": "NLP, AI, EduTech new activity about 1 month ago updated a model about 1 month ago"
+    },
+    {
+      "title": "SmolLM3 Blueprint: SOTA 3B-Parameter LLM - LearnOpenCV",
+      "url": "https://learnopencv.com/smollm3-explained/",
+      "snippet": "SmolLM3 full architecture, training recipe, dual-mode reasoning, and post-training alignment. A guide to building and deploying this 3B-parameter model."
+    },
+    {
+      "title": "alignment-handbook/recipes/smollm3/README.md at main - GitHub",
+      "url": "https://github.com/huggingface/alignment-handbook/blob/main/recipes/smollm3/README.md",
+      "snippet": "We are open-sourcing all the artifacts to train SmolLM3-3B. You can find the configuration files for the three post-training stages (mid-training, SFT, and DPO) in the sft and dpo directories."
+    },
+    {
+      "title": "smol-course/units/en/unit1/3.md at main - GitHub",
+      "url": "https://github.com/huggingface/smol-course/blob/main/units/en/unit1/3.md",
+      "snippet": "Base Model (SmolLM3-3B-Base): Trained on 11T tokens of general text SFT Training: Fine-tuned on curated instruction datasets including SmolTalk2 Preference Alignment: Further refined using techniques like APO (Anchored Preference Optimization) This multi-stage approach creates a model that&#x27;s both knowledgeable and helpful."
+    }
+  ]
+}

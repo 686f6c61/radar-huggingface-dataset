@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Aathi07/Reinforce-PixelCopter",
+  "slug": "aathi07-reinforce-pixelcopter",
+  "author": "Aathi07",
+  "url": "https://huggingface.co/Aathi07/Reinforce-PixelCopter",
+  "created_at": "2026-08-21T14:44:52.000Z",
+  "updated_at": "2026-08-21T14:45:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22909,
+  "storage_human": "22909 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aidacity/Reinforce-pixelcopter · Hugging Face",
+      "url": "https://huggingface.co/Aidacity/Reinforce-pixelcopter",
+      "snippet": "Aidacity / Reinforce-pixelcopter like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "ArthurSchwan/Reinforce-PixelCopter2025 · Hugging Face",
+      "url": "https://huggingface.co/ArthurSchwan/Reinforce-PixelCopter2025",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "unit4-pixelcopter",
+      "url": "https://chizkidd.github.io/huggingface-deep-RL-course/notebooks/unit4-pixelcopter.html",
+      "snippet": "Reinforce is a Policy-based method: a Deep Reinforcement Learning algorithm that tries to optimize the policy directly without using an action-value function. More precisely, Reinforce is a Policy-gradient method, a subclass of Policy-based methods that aims to optimize the policy directly by estimating the weights of the optimal policy using ..."
+    },
+    {
+      "title": "Reinforce-pixelcopter huggingface.co api & pittawat Reinforce ...",
+      "url": "https://www.toolify.ai/ai-model/pittawat-reinforce-pixelcopter",
+      "snippet": "Reinforce-pixelcopter huggingface.co is an AI model on huggingface.co that provides Reinforce-pixelcopter&#x27;s model effect (), which can be used instantly with this pittawat Reinforce-pixelcopter model. huggingface.co supports a free trial of the Reinforce-pixelcopter model, and also provides paid use of the Reinforce-pixelcopter."
+    },
+    {
+      "title": "unit4.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit4/unit4.ipynb",
+      "snippet": "In this notebook, you&#x27;ll code your first Deep Reinforcement Learning algorithm from scratch: Reinforce (also called Monte Carlo Policy Gradient). Reinforce is a Policy-based method: a Deep Reinforcement Learning algorithm that tries to optimize the policy directly without using an action-value function. More precisely, Reinforce is a Policy-gradient method, a subclass of Policy-based methods ..."
+    }
+  ]
+}

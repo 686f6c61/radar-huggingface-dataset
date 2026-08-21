@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Hvsasaki/paper_026578477_document_ai",
+  "slug": "hvsasaki-paper_026578477_document_ai",
+  "author": "Hvsasaki",
+  "url": "https://huggingface.co/Hvsasaki/paper_026578477_document_ai",
+  "created_at": "2026-08-21T16:49:50.000Z",
+  "updated_at": "2026-08-21T16:49:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "active",
+    "argumentative",
+    "author-year",
+    "cautious",
+    "document-ai",
+    "graphic-visual",
+    "html",
+    "long-detailed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accelerating Document AI - Hugging Face",
+      "url": "https://huggingface.co/blog/document-ai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Document AI: A Comparative Study of Transformer-Based, Graph-Based ...",
+      "url": "https://arxiv.org/abs/2308.15517",
+      "snippet": "Document AI aims to automatically analyze documents by leveraging natural language processing and computer vision techniques. One of the major tasks of Document AI is document layout analysis, which structures document pages by interpreting the content and spatial relationships of layout, image, and text. This task can be image-centric, wherein the aim is to identify and label various regions ..."
+    },
+    {
+      "title": "Document AI Paper Catalog - Hugging Face",
+      "url": "https://huggingface.co/spaces/tuandunghcmut/document-ai-paper-catalog",
+      "snippet": "Hugging Face Space Document AI Paper Catalog Public collection of papers, benchmark references, and structured metadata for Document AI research."
+    },
+    {
+      "title": "MonkeyOCRv2: A Visual-Text Foundation Model for Document AI",
+      "url": "https://arxiv.org/abs/2607.11562",
+      "snippet": "Mainstream visual encoders are pretrained on natural images and cannot be effectively applied to document images without document-oriented adaptation, as dense text and fine-grained character strokes demand character-level visual perception. We present MonkeyOCRv2, a visual-text pretrained model for document AI. First, we construct MonkeyDoc v2, to our knowledge the largest document-image ..."
+    },
+    {
+      "title": "ICLR 2025 Papers",
+      "url": "https://iclr.cc/virtual/2025/papers.html?filter=author&search=Yuhao%20Zhang&layout=mini",
+      "snippet": "Repurposing in AI: A Distinct Approach or an Extension of Creative Problem Solving?"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ppokhrel2109/besstie-sarcasm-deberta-v3",
+  "slug": "ppokhrel2109-besstie-sarcasm-deberta-v3",
+  "author": "ppokhrel2109",
+  "url": "https://huggingface.co/ppokhrel2109/besstie-sarcasm-deberta-v3",
+  "created_at": "2026-08-21T15:38:24.000Z",
+  "updated_at": "2026-08-21T15:38:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "sarcasm",
+    "dialect",
+    "english-varieties",
+    "en",
+    "dataset:unswnlporg/BESSTIE",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 740183888,
+  "storage_human": "740 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - unswnlp/BESSTIE: BESSTIE: A Benchmark for Sentiment and ...",
+      "url": "https://github.com/unswnlp/BESSTIE",
+      "snippet": "Despite large language models (LLMs) being known to exhibit bias against non-mainstream varieties, there are no known labeled datasets for sentiment analysis across English varieties. To address this gap, we introduce BESSTIE, a benchmark for sentiment and sarcasm classification for three varieties of English: Australian (en-AU), Indian (en-IN), and British (en-UK). Using web-based content ..."
+    },
+    {
+      "title": "arXiv:2412.04726v2 [cs.CL] 18 Feb 2025",
+      "url": "https://arxiv.org/pdf/2412.04726v2",
+      "snippet": "arXiv:2412.04726v2 [cs.CL] 18 Feb 2025 BESSTIE: A Benchmark for Sentiment and Sarcasm Classification for Varieties of English"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "BESSTIE: A Benchmark for Sentiment and Sarcasm Classification for ...",
+      "url": "https://arxiv.org/html/2412.04726v1",
+      "snippet": "By highlighting gaps in the model performance, especially for (a) sarcasm classification in general; and (b) outer-circle varieties like en-IN for both the tasks, this benchmark will be useful to evaluate dialectal biases of language models, and contribute to research towards equitable performance across all varieties of English."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

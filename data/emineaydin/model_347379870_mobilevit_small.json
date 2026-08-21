@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "emineaydin/model_347379870_mobilevit_small",
+  "slug": "emineaydin-model_347379870_mobilevit_small",
+  "author": "emineaydin",
+  "url": "https://huggingface.co/emineaydin/model_347379870_mobilevit_small",
+  "created_at": "2026-08-21T17:01:48.000Z",
+  "updated_at": "2026-08-21T17:01:54.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concat-mlp",
+    "constant-warmup",
+    "contrastive",
+    "grouped-query",
+    "groupnorm",
+    "kaiming",
+    "mish",
+    "mobilevit",
+    "rmsprop",
+    "small",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apple/mobilevit-small · Hugging Face",
+      "url": "https://huggingface.co/apple/mobilevit-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "apple/mobilevit-x-small · Hugging Face",
+      "url": "https://huggingface.co/apple/mobilevit-x-small",
+      "snippet": "MobileViT (extra small-sized model) MobileViT model pre-trained on ImageNet-1k at resolution 256x256. It was introduced in MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer by Sachin Mehta and Mohammad Rastegari, and first released in this repository. The license used is Apple sample code license."
+    },
+    {
+      "title": "Open-source MobileViT-small Model - Low-latency Visual Processing, A ...",
+      "url": "https://model.aibase.com/models/details/1915694798805295106",
+      "snippet": "The team releasing MobileViT did not write a model card for this model so this model card has been written by the Hugging Face team. MobileViT is a light-weight, low latency convolutional neural network. It combines MobileNetV2-style layers with a new block that replaces local processing in convolutions with global processing using transformers."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Open-source MobileViT-small Model - Low-latency Visual Processing, A ...",
+      "url": "https://model.aibase.com/en/models/details/1915694798805295106",
+      "snippet": "MobileViT is a lightweight, low-latency vision Transformer model that combines the strengths of CNNs and Transformers, making it suitable for mobile devices."
+    }
+  ]
+}

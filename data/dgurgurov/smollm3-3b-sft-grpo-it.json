@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "DGurgurov/SmolLM3-3B-SFT-GRPO-IT",
+  "slug": "dgurgurov-smollm3-3b-sft-grpo-it",
+  "author": "DGurgurov",
+  "url": "https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-GRPO-IT",
+  "created_at": "2026-08-21T14:48:16.000Z",
+  "updated_at": "2026-08-21T14:49:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "smollm3",
+    "reasoning",
+    "multilingual",
+    "it",
+    "reasonxl",
+    "reinforcement-learning",
+    "grpo",
+    "dataset:toroe/ReasonXL-SFT",
+    "arxiv:2604.12378",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 384387328,
+  "parameters_human": "384.4M",
+  "storage_bytes": 13368321916,
+  "storage_human": "13.4 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DGurgurov/SmolLM3-3B-SFT-GRPO-ES · Hugging Face",
+      "url": "https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-GRPO-ES",
+      "snippet": "Stage 1 — SFT (DGurgurov/SmolLM3-3B-SFT-ES): shifts the model&#x27;s reasoning language from English to Spanish via supervised fine-tuning on Spanish reasoning traces. Stage 2 — RL (Dr. GRPO): recovers reasoning quality lost during SFT while preserving target-language compliance, using a composite reward over verifiable math problems."
+    },
+    {
+      "title": "DGurgurov (Daniil Gurgurov) - Hugging Face",
+      "url": "https://huggingface.co/DGurgurov/models",
+      "snippet": "NLP, AI, EduTech new activity about 1 month ago updated a model about 1 month ago"
+    },
+    {
+      "title": "alignment-handbook/recipes/smollm3 at main · huggingface ... - GitHub",
+      "url": "https://github.com/huggingface/alignment-handbook/tree/main/recipes/smollm3",
+      "snippet": "We are open-sourcing all the artifacts to train SmolLM3-3B. You can find the configuration files for the three post-training stages (mid-training, SFT, and DPO) in the sft and dpo directories."
+    },
+    {
+      "title": "SmolLM Small Language Models | huggingface/alignment-handbook | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/alignment-handbook/4.2-smollm-small-language-models",
+      "snippet": "SmolLM3 Training (Advanced 3-Stage Pipeline) SmolLM3-3B represents the most advanced training approach in the SmolLM family, using a three-stage pipeline that includes mid-training, SFT with reasoning modes, and APO-based DPO."
+    },
+    {
+      "title": "SmolLM3-3B - atomic.chat",
+      "url": "https://atomic.chat/models/smollm3-3b",
+      "snippet": "SmolLM3-3B is a 3-billion-parameter decoder-only language model released by Hugging Face in 2025. It is an instruction-tuned model with dual-mode reasoning, native support for six languages, and context handling up to 128K tokens."
+    }
+  ]
+}

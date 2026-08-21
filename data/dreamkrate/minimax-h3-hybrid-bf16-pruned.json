@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dreamkrate/Minimax-H3-Hybrid-BF16-Pruned",
+  "slug": "dreamkrate-minimax-h3-hybrid-bf16-pruned",
+  "author": "dreamkrate",
+  "url": "https://huggingface.co/dreamkrate/Minimax-H3-Hybrid-BF16-Pruned",
+  "created_at": "2026-08-21T14:44:21.000Z",
+  "updated_at": "2026-08-21T14:57:59.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "text-to-video",
+    "image-to-video",
+    "audio-video-generation",
+    "diffusion-transformer",
+    "safetensors",
+    "sglang",
+    "merge",
+    "hybrid",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40225724176,
+  "storage_human": "40.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "abakanai/Minimax_h3_hybrid · Hugging Face",
+      "url": "https://huggingface.co/abakanai/Minimax_h3_hybrid",
+      "snippet": "MiniMax H3 Hybrid NVFP4 for NVIDIA Blackwell Two experimental mixed-precision quantizations of the MiniMax H3 Ref2VA Pruned diffusion model, optimized and tested locally on an NVIDIA GeForce RTX 5070 Ti 16 GB (Blackwell, SM 12.0). This is an independent community optimization by abakanai. It is not an official MiniMax or ComfyUI release. The checkpoints are inference-only single-file diffusion ..."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax H3 Model Files",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Where can I download official MiniMax H3 model files? Use MiniMaxAI/MiniMax-H3 for the original H3-Base families, ModelScope for the official listing, and Comfy-Org/MiniMax-H3 for the native ComfyUI package."
+    },
+    {
+      "title": "MiniMax H3 Open-Source AI Video Model | Tutorials, Deployment & Workflows",
+      "url": "https://design.minimax.io/h3",
+      "snippet": "Curated MiniMax H3 video model tutorials, open-source deployment guides, creator workflows and industry insights. Updated continuously."
+    }
+  ]
+}

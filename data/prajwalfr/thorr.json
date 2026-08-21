@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "prajwalfr/thorr",
+  "slug": "prajwalfr-thorr",
+  "author": "prajwalfr",
+  "url": "https://huggingface.co/prajwalfr/thorr",
+  "created_at": "2026-08-21T18:14:27.000Z",
+  "updated_at": "2026-08-21T18:14:27.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thórr/トール Fire Emblem: Heroes [Illustrious] - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1974556506103731940",
+      "snippet": "Generate stunning anime art with the &#x27;Thórr/トール Fire Emblem: Heroes [Illustrious]&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Chat with Thorr | character.ai | AI Chat, Reimagined-Your Words. Your ...",
+      "url": "https://character.ai/character/tI2_GiO_",
+      "snippet": "Chat with Thorr: Thórr is an antagonist of Fire Emblem Heroes.. Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "AI coordination for Slack, GitHub & Linear | Thor",
+      "url": "https://www.thor.ai/",
+      "snippet": "Thor keeps one current record of what your team decided, changed, and left stale across Slack, GitHub, and Linear, so nobody works from a guess."
+    },
+    {
+      "title": "Thorr (Fire emblem heroes) - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1673789011581805419",
+      "snippet": "Generate stunning anime art with the &#x27;Thorr (Fire emblem heroes)&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Thor AI - Forge Data Into Clarity",
+      "url": "https://www.usethor.com/",
+      "snippet": "Transform scattered data into actionable insights. Connect anything, understand everything, deliver beautifully with Thor AI."
+    }
+  ]
+}

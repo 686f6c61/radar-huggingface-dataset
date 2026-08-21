@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "retlaw1007/qwen2.5-7b-instruct-4bit-mlx",
+  "slug": "retlaw1007-qwen2-5-7b-instruct-4bit-mlx",
+  "author": "retlaw1007",
+  "url": "https://huggingface.co/retlaw1007/qwen2.5-7b-instruct-4bit-mlx",
+  "created_at": "2026-08-21T14:49:06.000Z",
+  "updated_at": "2026-08-21T14:50:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "chat",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1190221312,
+  "parameters_human": "1.19B",
+  "storage_bytes": 4295768616,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwen2.5-7B-Instruct-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 7B Instruct 4bit by mlx-community - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/mlx-community%2FQwen2.5-7B-Instruct-4bit,28gqYIg1oLNjJTskL0wede",
+      "snippet": "Qwen2.5 7B Instruct 4bit is an open-source 7b LLM by mlx-community. VRAM 4.3GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen2.5 Coder 7B Instruct 4bit by mlx-community",
+      "url": "https://llm-explorer.com/model/mlx-community%2FQwen2.5-Coder-7B-Instruct-4bit,3wls0bakDefOMzTTSrA2sV",
+      "snippet": "Qwen2.5 Coder 7B Instruct 4bit is an open-source 7b LLM by mlx-community. VRAM 4.3GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen2.5-Coder-7B-Instruct-MLX-4bit - Hugging Face",
+      "url": "https://huggingface.co/lmstudio-community/Qwen2.5-Coder-7B-Instruct-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct-MLX-4bit · Models",
+      "url": "https://www.modelscope.cn/models/okwinds/Qwen2.5-7B-Instruct-MLX-4bit",
+      "snippet": "模型概述 Qwen2.5-7B-Instruct-MLX-4bit 是一个基于 通义千问 Qwen2.5-7B-Instruct 的 4bit 量化的模型。 模型名称: Qwen2.5-7B-Instruct-MLX-4bit 模型架构: Qwen2.5 权重量化: 4bit 该模型通过将 qwen/Qwen2.5-7B-Instruct 的 16bit 权重量化为 4bit 而实现。 量化过程将每个参数从 16bit 减少到 4bit，将模型占用磁盘空间大小，以及推理时 ..."
+    }
+  ]
+}

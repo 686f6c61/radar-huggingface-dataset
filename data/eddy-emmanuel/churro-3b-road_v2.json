@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Eddy-Emmanuel/churro-3B-road_v2",
+  "slug": "eddy-emmanuel-churro-3b-road_v2",
+  "author": "Eddy-Emmanuel",
+  "url": "https://huggingface.co/Eddy-Emmanuel/churro-3B-road_v2",
+  "created_at": "2026-08-21T16:02:04.000Z",
+  "updated_at": "2026-08-21T16:02:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176995540,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eddy-Emmanuel/churro-3B-road · Hugging Face",
+      "url": "https://huggingface.co/Eddy-Emmanuel/churro-3B-road",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - stanford-oval/Churro: CHURRO is an OCR toolkit for historical ...",
+      "url": "https://github.com/stanford-oval/Churro/tree/main/",
+      "snippet": "🤗 Model • 🗂️ Dataset • 📄 Paper 📚 Docs • 🏆 Leaderboard • Churro is the fastest way to turn hard-to-read historical scans into reliable text. It gives researchers, libraries, archives, and product teams a unified OCR toolkit for handwritten and printed sources, combining high accuracy, low operating cost, and a clean Python API and CLI workflow."
+    },
+    {
+      "title": "Churro - a stanford-oval Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/stanford-oval/churro",
+      "snippet": "Dataset and model for handwritten and print text recognition in historical documents"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Churro/README.md at main · stanford-oval/Churro · GitHub",
+      "url": "https://github.com/stanford-oval/Churro/blob/main/README.md",
+      "snippet": "CHURRO is a 3B-parameter open-weight vision-language model (VLM) for historical document transcription. It is trained on CHURRO-DS, a curated dataset of ~100K pages from 155 historical collections spanning 22 centuries and 46 language clusters. On the CHURRO-DS test set, CHURRO delivers 15.5× lower cost than Gemini 2.5 Pro while exceeding its accuracy."
+    }
+  ]
+}

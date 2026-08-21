@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tlchatterjee93/paper_008369927_knowledge_distillation",
+  "slug": "tlchatterjee93-paper_008369927_knowledge_distillation",
+  "author": "tlchatterjee93",
+  "url": "https://huggingface.co/tlchatterjee93/paper_008369927_knowledge_distillation",
+  "created_at": "2026-08-21T16:11:47.000Z",
+  "updated_at": "2026-08-21T16:11:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "compact",
+    "critical",
+    "intro-method-exp-related-conclusion",
+    "knowledge-distillation",
+    "latex-acl",
+    "long-detailed",
+    "numeric-apa",
+    "theoretical-rigorous",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Survey on Knowledge Distillation of Large Language Models",
+      "url": "https://arxiv.org/html/2402.13116v1",
+      "snippet": "The concept of knowledge distillation in the field of AI and deep learning (DL) refers to the process of transferring knowledge from a large, complex model (teacher) to a smaller, more efficient model (student) Gou et al. (2021)."
+    },
+    {
+      "title": "A Survey on Knowledge Distillation of Large Language Models",
+      "url": "https://arxiv.org/abs/2402.13116",
+      "snippet": "This paper presents a comprehensive survey of KD&#x27;s role within the realm of LLM, highlighting its critical function in imparting advanced knowledge to smaller models and its utility in model compression and self-improvement."
+    },
+    {
+      "title": "Awesome Knowledge Distillation of LLM Papers - GitHub",
+      "url": "https://github.com/Tebmer/Awesome-Knowledge-Distillation-of-LLMs",
+      "snippet": "A collection of papers related to knowledge distillation of large language models (LLMs). If you want to use LLMs for benefitting your own smaller models training, or use self-generated knowledge to achieve the self-improvement, just take a look at this collection. We will update this collection every week."
+    },
+    {
+      "title": "hsulin0806/20241121_Awesome-Knowledge-Distillation-of-LLMs",
+      "url": "https://github.com/hsulin0806/20241121_Awesome-Knowledge-Distillation-of-LLMs",
+      "snippet": "A collection of papers related to knowledge distillation of large language models (LLMs). If you want to use LLMs for benefitting your own smaller models training, or use self-generated knowledge to achieve the self-improvement, just take a look at this collection. We will update this collection every week."
+    },
+    {
+      "title": "A Survey on Knowledge Distillation of Large Language Models",
+      "url": "https://www.aimodels.fyi/papers/arxiv/survey-knowledge-distillation-large-language-models",
+      "snippet": "Additionally, the paper does not address potential biases or fairness issues that may arise from knowledge distillation, which is an important consideration for the deployment of language models in real-world applications. Future studies could explore the impact of distillation on model biases and fairness."
+    }
+  ]
+}

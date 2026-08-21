@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jbduran/bart-experiments",
+  "slug": "jbduran-bart-experiments",
+  "author": "jbduran",
+  "url": "https://huggingface.co/jbduran/bart-experiments",
+  "created_at": "2026-08-21T17:44:24.000Z",
+  "updated_at": "2026-08-21T18:20:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "nanochat",
+    "language-model",
+    "pre-1930",
+    "historical",
+    "vintage",
+    "research",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1230552004563,
+  "storage_human": "1230.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jbduran (Jonathan Bryant Duran-Ortiz) - Hugging Face",
+      "url": "https://huggingface.co/jbduran/models",
+      "snippet": "Recent Activity published a datasetabout 7 hours ago jbduran/think-dataset updated a modelabout 10 hours ago jbduran/think-nanochat-d12 published a modelabout 10 hours ago jbduran/think-nanochat-d12 View all activity"
+    },
+    {
+      "title": "GitHub - bart-mosaicmeshai/bart-test: LLM benchmark testing reasoning ...",
+      "url": "https://github.com/bart-mosaicmeshai/bart-test",
+      "snippet": "The Bart Test explored whether LLMs could generate natural Gen-Alpha slang and emojis, as judged by actual teenagers. Through 5 experiments across late 2024 and early 2025, the project tested multiple models, iterated on methodology, and discovered insights about: How reasoning models \"overthink\" creative tasks What makes AI-generated slang feel \"forced\" or \"trying too hard\" The challenges of ..."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Researchers Tested AI Against 100,000 Humans on Creativity",
+      "url": "https://www.sciencedaily.com/releases/2026/01/260125083356.htm",
+      "snippet": "A massive new study comparing more than 100,000 people with today&#x27;s most advanced AI systems delivers a surprising result: generative AI can now beat the average human on certain creativity ..."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    }
+  ]
+}

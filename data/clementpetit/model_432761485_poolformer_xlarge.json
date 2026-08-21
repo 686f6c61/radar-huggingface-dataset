@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "clementpetit/model_432761485_poolformer_xlarge",
+  "slug": "clementpetit-model_432761485_poolformer_xlarge",
+  "author": "clementpetit",
+  "url": "https://huggingface.co/clementpetit/model_432761485_poolformer_xlarge",
+  "created_at": "2026-08-21T19:15:41.000Z",
+  "updated_at": "2026-08-21T19:15:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concat-mlp",
+    "groupnorm",
+    "kaiming",
+    "lamb",
+    "linear",
+    "multitask",
+    "poolformer",
+    "relu",
+    "step",
+    "xlarge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PoolFormer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/poolformer",
+      "snippet": "The PoolFormer model was proposed in MetaFormer is Actually What You Need for Vision by Sea AI Labs. Instead of designing complicated token mixer to achieve SOTA performance, the target of this work is to demonstrate the competence of transformer models largely stem from the general architecture MetaFormer."
+    },
+    {
+      "title": "PoolFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.25.1/model_doc/poolformer",
+      "snippet": "PoolFormer Overview The PoolFormer model was proposed in MetaFormer is Actually What You Need for Vision by Sea AI Labs. Instead of designing complicated token mixer to achieve SOTA performance, the target of this work is to demonstrate the competence of transformer models largely stem from the general architecture MetaFormer. The abstract from the paper is the following: Transformers have ..."
+    },
+    {
+      "title": "GitHub - sail-sg/poolformer: PoolFormer: MetaFormer Is Actually What ...",
+      "url": "https://github.com/sail-sg/poolformer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance."
+    },
+    {
+      "title": "Poolformer: Recurrent Networks with Pooling for Long-Sequence Modeling",
+      "url": "https://arxiv.org/pdf/2510.02206",
+      "snippet": "We introduce Poolformer, a sequence-to-sequence model that replaces self-attention with recurrent layers and incorporates pooling operations to reduce sequence length."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/poolformer.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/poolformer.md",
+      "snippet": "The PoolFormer model was proposed in MetaFormer is Actually What You Need for Vision by Sea AI Labs. Instead of designing complicated token mixer to achieve SOTA performance, the target of this work is to demonstrate the competence of transformer models largely stem from the general architecture MetaFormer. The abstract from the paper is the following: Transformers have shown great potential ..."
+    }
+  ]
+}

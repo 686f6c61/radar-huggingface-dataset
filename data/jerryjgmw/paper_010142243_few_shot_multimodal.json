@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jerryjgmw/paper_010142243_few_shot_multimodal",
+  "slug": "jerryjgmw-paper_010142243_few_shot_multimodal",
+  "author": "jerryjgmw",
+  "url": "https://huggingface.co/jerryjgmw/paper_010142243_few_shot_multimodal",
+  "created_at": "2026-08-21T15:56:41.000Z",
+  "updated_at": "2026-08-21T15:56:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "cautious",
+    "few-shot-multimodal",
+    "graphic-visual",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "latex-arxiv",
+    "numeric-bibtex",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2005.14165] Language Models are Few-Shot Learners - arXiv.org",
+      "url": "https://arxiv.org/abs/2005.14165",
+      "snippet": "Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting."
+    },
+    {
+      "title": "Language models are few-shot learners - Guide Proceedings",
+      "url": "https://dlnext.acm.org/doi/abs/10.5555/3495724.3495883",
+      "snippet": "We demonstrate that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even becoming competitive with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all ..."
+    },
+    {
+      "title": "Exploring Cross-Modal Flows for Few-Shot Learning",
+      "url": "https://arxiv.org/abs/2510.14543",
+      "snippet": "Aligning features from different modalities, is one of the most fundamental challenges for cross-modal tasks. Although pre-trained vision-language models can achieve a general alignment between image and text, they often require parameter-efficient fine-tuning (PEFT) for further adjustment. Today&#x27;s PEFT methods (e.g., prompt tuning, LoRA-based, or adapter-based) always selectively fine-tune a ..."
+    },
+    {
+      "title": "Few-shot prompting — papers and benchmarks | Papers with Code",
+      "url": "https://paperswithcode.co/methods/few-shot-prompting",
+      "snippet": "Few-shot prompting Few-shot prompting is a technique that involves including a small number of examples (or \"shots\") of input-output pairs within a prompt to guide an AI model&#x27;s response, helping it understand the desired format, tone, or task for new inputs."
+    },
+    {
+      "title": "Benford-Constrained Multimodal Learning for Few-Shot Fake Image ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11401004",
+      "snippet": "Benford-Constrained Multimodal Learning for Few-Shot Fake Image Detection Abstract: Understanding how AI models assess image authenticity is crucial for trustworthy forensic applications."
+    }
+  ]
+}

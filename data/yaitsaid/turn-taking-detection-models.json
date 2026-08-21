@@ -5,7 +5,7 @@
   "author": "yaitsaid",
   "url": "https://huggingface.co/yaitsaid/turn-taking-detection-models",
   "created_at": "2026-08-13T09:15:04.000Z",
-  "updated_at": "2026-08-21T08:25:02.000Z",
+  "updated_at": "2026-08-21T11:16:43.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",

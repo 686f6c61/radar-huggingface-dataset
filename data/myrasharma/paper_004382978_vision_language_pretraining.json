@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MYRASHARMA/paper_004382978_vision_language_pretraining",
+  "slug": "myrasharma-paper_004382978_vision_language_pretraining",
+  "author": "MYRASHARMA",
+  "url": "https://huggingface.co/MYRASHARMA/paper_004382978_vision_language_pretraining",
+  "created_at": "2026-08-21T14:38:35.000Z",
+  "updated_at": "2026-08-21T14:38:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "cautious",
+    "empirical-focused",
+    "highlight-bullet",
+    "intro-background-approach-eval-conclusion",
+    "numeric-nature",
+    "typst",
+    "varied-mixed",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vision Language Models: A Survey of 26K Papers (CVPR, ICLR, NeurIPS ...",
+      "url": "https://arxiv.org/html/2510.09586v1",
+      "snippet": "The computer - vision and machine - learning community has undergone a visible transition in 2023-2025. With the consolidation of large - scale pretrained models (CLIP/BLIP/LLaVA [1, 2, 3] families, ViT backbones) and ubiquitous diffusion - based generators, the research focus has shifted: classic perception remains active, yet a large fraction of accepted papers are now organized around ..."
+    },
+    {
+      "title": "[2607.00784] LeVLJEPA: End-to-End Vision-Language Pretraining Without ...",
+      "url": "https://arxiv.org/abs/2607.00784",
+      "snippet": "We introduce LeVLJEPA, the first fully non-contrastive end-to-end vision-language pretraining method. LeVLJEPA learns through cross-modal prediction with stop-gradient targets and per-modality distributional regularization, without negatives, temperature, momentum encoder, or teacher-student schedule, and trains stably at large scale."
+    },
+    {
+      "title": "VLP: A Survey on Vision-language Pre-training - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11633-022-1369-5",
+      "snippet": "This paper surveys recent advances and new frontiers in vision-language pre-training (VLP), including image-text and video-text pre-training. To give readers a better overall grasp of VLP, we first review its recent advances in five aspects: feature extraction, model architecture, pre-training objectives, pre-training datasets, and downstream ..."
+    },
+    {
+      "title": "(PDF) VLP: A Survey on Vision-language Pre-training - ResearchGate",
+      "url": "https://www.researchgate.net/publication/367032104_VLP_A_Survey_on_Vision-language_Pre-training",
+      "snippet": "This paper surveys recent advances and new frontiers in vision-language pre-training (VLP), including image-text and video-text pre-training."
+    },
+    {
+      "title": "GitHub - jingyi0000/VLM_survey: Collection of AWESOME vision-language ...",
+      "url": "https://github.com/jingyi0000/VLM_survey",
+      "snippet": "This is the repository of Vision Language Models for Vision Tasks: a Survey, a systematic survey of VLM studies in various visual recognition tasks including image classification, object detection, semantic segmentation, etc. For details, please refer to: Vision-Language Models for Vision Tasks: A Survey [Paper] IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2024 🤩 ..."
+    }
+  ]
+}

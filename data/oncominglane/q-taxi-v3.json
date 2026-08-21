@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "oncominglane/q-Taxi-v3",
+  "slug": "oncominglane-q-taxi-v3",
+  "author": "oncominglane",
+  "url": "https://huggingface.co/oncominglane/q-Taxi-v3",
+  "created_at": "2026-08-21T16:09:17.000Z",
+  "updated_at": "2026-08-21T16:09:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147598,
+  "storage_human": "147598 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Varun3003/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/Varun3003/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 . Usage"
+    },
+    {
+      "title": "dataLearning/q-Taxi-V3 · Hugging Face",
+      "url": "https://huggingface.co/dataLearning/q-Taxi-V3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "yatheshl/Q-Learning-Taxi-v3 - GitHub",
+      "url": "https://github.com/yatheshl/Q-Learning-Taxi-v3",
+      "snippet": "The Taxi-v3 environment simulates a simple grid world where the agent (taxi) needs to pick up passengers from one location and drop them off at another while navigating obstacles on the grid. The agent learns to accomplish this task efficiently by employing Q-learning, a popular reinforcement learning algorithm."
+    },
+    {
+      "title": "q-Taxi-v3 huggingface.co api & fabiochiu q-Taxi-v3 github AI Model ...",
+      "url": "https://www.toolify.ai/ai-model/fabiochiu-q-taxi-v3",
+      "snippet": "q-Taxi-v3 is an open source model from GitHub that offers a free installation service, and any user can find q-Taxi-v3 on GitHub to install. At the same time, huggingface.co provides the effect of q-Taxi-v3 install, users can directly use q-Taxi-v3 installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "GitHub - Mehrab-Kalantari/Taxi-v3-Q-Learning: A simple Q-learning ...",
+      "url": "https://github.com/Mehrab-Kalantari/Taxi-v3-Q-Learning",
+      "snippet": "The \"Taxi-v3\" environment simulates a simple grid world in which an autonomous taxi operates. Here are the key characteristics and components of the \"Taxi-v3\" environment: Grid World The environment consists of a grid world with a fixed size. The grid world includes walls, empty cells, passenger locations, a taxi, and a destination location. Taxi and Passengers The taxi is represented as a ..."
+    }
+  ]
+}

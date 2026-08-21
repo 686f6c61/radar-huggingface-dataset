@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "frkcnk/Similar_Product_Finder",
+  "slug": "frkcnk-similar_product_finder",
+  "author": "frkcnk",
+  "url": "https://huggingface.co/frkcnk/Similar_Product_Finder",
+  "created_at": "2026-08-21T16:51:36.000Z",
+  "updated_at": "2026-08-21T16:51:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Product finder - There&#x27;s An AI For That®",
+      "url": "https://theresanaiforthat.com/s/product+finder/",
+      "snippet": "Browse 46 Product finder AIs. Includes tasks such as Gift ideas, Search, Knowledge, Product images and Sales."
+    },
+    {
+      "title": "AI Product Finder",
+      "url": "https://quickpick.ai/",
+      "snippet": "Tired of research? Our AI Product Finder offers a faster AI product search - completely free and with no signups. Get instant product recommendations now!"
+    },
+    {
+      "title": "Find Clothing From a Picture | FetchFashion AI",
+      "url": "https://fetchfashion.ai/en/",
+      "snippet": "Your AI Fashion Finder Find the look. Pay less. Upload any screenshot. We identify every piece and find it from 1,000+ retailers, with cheaper lookalikes ranked by true visual match. A free AI fashion search engine: search any outfit by photo or by chat, with prices in your local currency."
+    },
+    {
+      "title": "GitHub - AyushmaanDecoded/Visual-Product-Matcher: The Visual Product ...",
+      "url": "https://github.com/AyushmaanDecoded/Visual-Product-Matcher",
+      "snippet": "The Visual Product Matcher is a web app using OpenAI&#x27;s CLIP model to find similar products based on an uploaded image. Built with the MERN stack, it processes the image in the backend to match visual features with product descriptions. The React frontend displays the image and similar product results, enabling seamless product discovery."
+    },
+    {
+      "title": "Find Winning Dropshipping Products: 15 Best AI Tools (2026)",
+      "url": "https://easync.io/articles/best-ai-tools-to-find-winning-dropshipping-products/",
+      "snippet": "Discover 15 AI tools to find winning dropshipping products in 2026. Compare free and paid options for trends, ads, suppliers, product research, and automation."
+    }
+  ]
+}

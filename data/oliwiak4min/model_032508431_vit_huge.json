@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "oliwiak4min/model_032508431_vit_huge",
+  "slug": "oliwiak4min-model_032508431_vit_huge",
+  "author": "oliwiak4min",
+  "url": "https://huggingface.co/oliwiak4min/model_032508431_vit_huge",
+  "created_at": "2026-08-21T18:10:12.000Z",
+  "updated_at": "2026-08-21T18:10:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dilated",
+    "huge",
+    "lamb",
+    "low-rank",
+    "mish",
+    "multitask",
+    "polynomial",
+    "rmsnorm",
+    "vit",
+    "xavier",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vision Transformer (ViT) · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/vit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/vit-huge-patch14-224-in21k · Hugging Face",
+      "url": "https://huggingface.co/google/vit-huge-patch14-224-in21k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-research/vision_transformer",
+      "url": "https://github.com/google-research/vision_transformer",
+      "snippet": "paper, we added more than 50k ViT and hybrid models pre-trained on ImageNet and ImageNet-21k with various degrees of data augmentation and model regularization, and fine-tuned on ImageNet, Pets37, Kitti-distance, CIFAR-100, and Resisc45."
+    },
+    {
+      "title": "Vision Transformer (ViT) Architecture - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/vision-transformer-vit-architecture/",
+      "snippet": "Vision Transformer (ViT) is a deep learning architecture that applies the Transformer model to images. Instead of relying on convolutions, ViTs use self-attention to capture relationships across all image patches, enabling a global understanding of the image."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

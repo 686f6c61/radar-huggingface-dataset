@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sareddy1/paper_012637317_prompt_engineering",
+  "slug": "sareddy1-paper_012637317_prompt_engineering",
+  "author": "sareddy1",
+  "url": "https://huggingface.co/sareddy1/paper_012637317_prompt_engineering",
+  "created_at": "2026-08-21T18:25:05.000Z",
+  "updated_at": "2026-08-21T18:25:12.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "critical",
+    "highlight-bullet",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "latex-icml",
+    "long-detailed",
+    "prompt-engineering",
+    "theoretical-rigorous",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Papers | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/papers",
+      "snippet": "The following are the latest papers (sorted by release date) on prompt engineering for large language models (LLMs). We update the list of papers on a daily/weekly basis."
+    },
+    {
+      "title": "Prompt Engineering Papers Collection | dair-ai/Prompt-Engineering-Guide ...",
+      "url": "https://deepwiki.com/dair-ai/Prompt-Engineering-Guide/8.1-prompt-engineering-papers-collection",
+      "snippet": "This page documents the Prompt Engineering Papers Collection, a comprehensive catalog of research papers focused on prompt engineering techniques, methodologies, and applications for large language models (LLMs). The collection is maintained in pages/papers.en.mdx 1-600 and updated on a daily to weekly basis with newly published research."
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "[2406.06608] The Prompt Report: A Systematic Survey of Prompt ...",
+      "url": "https://arxiv.org/abs/2406.06608",
+      "snippet": "Generative Artificial Intelligence (GenAI) systems are increasingly being deployed across diverse industries and research domains. Developers and end-users interact with these systems through the use of prompting and prompt engineering. Although prompt engineering is a widely adopted and extensively researched area, it suffers from conflicting terminology and a fragmented ontological ..."
+    },
+    {
+      "title": "Prompt Design and Engineering: Introduction and Advanced Methods",
+      "url": "https://arxiv.org/html/2401.14423v3",
+      "snippet": "Abstract Prompt design and engineering has rapidly become essential for maximizing the potential of large language models. In this paper, we introduce core concepts, advanced techniques like Chain-of-Thought and Reflection, and the principles behind building LLM-based agents. Finally, we provide a survey of tools for prompt engineers."
+    }
+  ]
+}

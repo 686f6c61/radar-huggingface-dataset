@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jasminenugroho/model_643734008_mae_small",
+  "slug": "jasminenugroho-model_643734008_mae_small",
+  "author": "jasminenugroho",
+  "url": "https://huggingface.co/jasminenugroho/model_643734008_mae_small",
+  "created_at": "2026-08-21T14:41:16.000Z",
+  "updated_at": "2026-08-21T14:41:23.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "bilinear",
+    "gelu-tanh",
+    "layernorm",
+    "linear-warmup",
+    "mae",
+    "orthogonal",
+    "retrieval",
+    "sliding-window",
+    "small",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jasmine nugroho (@jasmine.nugroho) • Instagram photos and videos",
+      "url": "https://www.instagram.com/jasmine.nugroho/",
+      "snippet": "917 Followers, 1,018 Following, 15 Posts - jasmine nugroho (@jasmine.nugroho) on Instagram: \"🇮🇩🇬🇧🇳🇱 | imperial engineer\""
+    },
+    {
+      "title": "GitHub - wangsr126/MAE-Lite: Official implement for ICML2023 paper: \"A ...",
+      "url": "https://github.com/wangsr126/mae-lite",
+      "snippet": "This repo provide the code and models for the study in the paper. We provide advanced pre-training (based on MAE) and fine-tuning recipes for lightweight ViTs and demonstrate that even vanilla lightweight ViT (e.g., ViT-Tiny) beats most previous SOTA ConvNets and ViT derivatives with delicate network architecture design."
+    },
+    {
+      "title": "Your AI Art Playground - Luna Models",
+      "url": "https://www.lunamodels.art/",
+      "snippet": "For complete privacy, control, and unlimited creativity on your own computer, you can acquire our premium models from the official LunaModels Store. Pick any cute little angel you want and begin your journey into the wonders of AI-powered image and video creation."
+    },
+    {
+      "title": "ChatGPT - Scholar GPT",
+      "url": "https://chatgpt.com/g/g-kZ0eYXlJe-scholar-gpt",
+      "snippet": "Enhance research with 200M+ resources and built-in critical reading skills. Access Google Scholar, PubMed, bioRxiv, arXiv, and more, effortlessly."
+    },
+    {
+      "title": "Jasmine Nugroho - Facebook",
+      "url": "https://www.facebook.com/jasmine.nugroho.7/",
+      "snippet": "Jasmine Nugroho is on Facebook. Join Facebook to connect with Jasmine Nugroho and others you may know. Facebook gives people the power to share and makes the world more open and connected."
+    }
+  ]
+}

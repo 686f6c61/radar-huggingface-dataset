@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/shard-index-indirection-chain",
+  "slug": "layerfault-shard-index-indirection-chain",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/shard-index-indirection-chain",
+  "created_at": "2026-08-21T19:11:11.000Z",
+  "updated_at": "2026-08-21T19:11:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32,
+  "parameters_human": "32",
+  "storage_bytes": 368,
+  "storage_human": "368 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault validates model artifacts and local model runtimes before inference. It combines structural validation, package inspection, integrity checking, provenance, trust, policy, runtime advisory checks, execution binding, inventory, drift detection, quarantine, and signed evidence in one local CLI."
+    },
+    {
+      "title": "Releases: izm1chael/layerfault - GitHub",
+      "url": "https://github.com/izm1chael/layerfault/releases",
+      "snippet": "Layerfault is an offline-first security and admission-control CLI for local AI models. It validates model structure and package contents, establishes integrity and package identity, evaluates provenance and local trust, applies operator policy, checks relevant runtime security advisories, and can block execution when those guarantees fail."
+    },
+    {
+      "title": "Shard Index | NVIDIA AIStore",
+      "url": "https://docs.nvidia.com/aistore/shard_index",
+      "snippet": "Shard index lets AIS locate and read archived files in TAR objects by offset, avoiding a sequential archive scan. Use it when a bucket stores dataset TARs and clients repeatedly fetch individual archived files via archpath, for example training samples in GetBatch or regular object GET requests. The same client request works with or without an index; the difference is the target-side read path ..."
+    },
+    {
+      "title": "PDF Breaking the Black Box: Securing and Auditing Edge-Deployed LLMs via ...",
+      "url": "https://www.ijcaonline.org/archives/volume187/number27/shinde-2025-ijca-925483.pdf",
+      "snippet": "EdgeShard demonstrates a multifaceted contribution. It decentralises LLM inference for enhanced privacy, maintains fidelity through modular reassembly, and enables post-hoc auditing via shard traceability. Compared to monolithic edge LLM deployments [1], our approach significantly reduces the risk of single-point failure and unauditable outputs. The core novelty lies in the combination of ..."
+    },
+    {
+      "title": "Understanding Model Sharding and Model Parallelism: Scaling Large ...",
+      "url": "https://medium.com/@pranay.janupalli/understanding-model-sharding-and-model-parallelism-scaling-large-language-models-dee6144d0591",
+      "snippet": "What is Model Sharding? Model sharding involves dividing a large model into smaller, more manageable pieces or \"shards\" and distributing these shards across multiple devices or machines."
+    }
+  ]
+}

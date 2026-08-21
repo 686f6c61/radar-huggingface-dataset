@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "andrewhernandez/paper_022139643_robotics_vision_language",
+  "slug": "andrewhernandez-paper_022139643_robotics_vision_language",
+  "author": "andrewhernandez",
+  "url": "https://huggingface.co/andrewhernandez/paper_022139643_robotics_vision_language",
+  "created_at": "2026-08-21T16:55:04.000Z",
+  "updated_at": "2026-08-21T16:55:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "endnote",
+    "graphic-visual",
+    "html",
+    "impersonal",
+    "intro-background-approach-eval-conclusion",
+    "neutral",
+    "robotics-vision-language",
+    "theoretical-rigorous",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar Citations",
+      "url": "https://scholar.google.com/citations",
+      "snippet": "Google Scholar Citations lets you track citations to your publications over time."
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Ferrando_Language_Models_Can_Explain_Visual_Features_via_Steering_CVPR_2026_paper.html",
+      "snippet": "Then, we prompt the language model to explain what it \"sees\", effectively eliciting the visual concept represented by each feature. Results show that Steering offers an scalable alternative that complements traditional approaches based on input examples, serving as a new axis for automated interpretability in vision models."
+    },
+    {
+      "title": "Artificial Intelligence Aug 2026 - arXiv.org",
+      "url": "https://arxiv.org/list/cs.AI/current",
+      "snippet": "Linguistic Context Recodes Visual Representations in Vision-Language Models Brian Song, Michael A. Lepori, Ellie Pavlick Subjects: Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV) [13] arXiv:2608.00054 [pdf, html, other]"
+    },
+    {
+      "title": "[2410.24164] $π_0$: A Vision-Language-Action Flow Model for General ...",
+      "url": "https://arxiv.org/abs/2410.24164",
+      "snippet": "Robot learning holds tremendous promise to unlock the full potential of flexible, general, and dexterous robot systems, as well as to address some of the deepest questions in artificial intelligence. However, bringing robot learning to the level of generality required for effective real-world systems faces major obstacles in terms of data, generalization, and robustness. In this paper, we ..."
+    },
+    {
+      "title": "ResearchGate | Find and share research",
+      "url": "https://www.researchgate.net/",
+      "snippet": "Access 160+ million publication pages and connect with 25+ million researchers. Join for free and gain visibility by uploading your research."
+    }
+  ]
+}

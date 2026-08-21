@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Luisr-ecu/mBART51",
+  "slug": "luisr-ecu-mbart51",
+  "author": "Luisr-ecu",
+  "url": "https://huggingface.co/Luisr-ecu/mBART51",
+  "created_at": "2026-08-21T15:34:26.000Z",
+  "updated_at": "2026-08-21T15:37:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "mbart",
+    "text2text-generation",
+    "translation",
+    "en",
+    "es",
+    "dataset:Luisr-ecu/spanglish",
+    "arxiv:1910.09700",
+    "base_model:facebook/mbart-large-50",
+    "base_model:finetune:facebook/mbart-large-50",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "facebook/mbart-large-50",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LuisR-ecu (Luis Ramirez) · GitHub",
+      "url": "https://github.com/LuisR-ecu",
+      "snippet": "I&#x27;m a Computer Science student at East Carolina University passionate about building scalable web systems and research-driven applications that actually make an impact. I&#x27;ve collaborated with ECU&#x27;s Brody School of Medicine on an online eye-tracking experiment using Flask, WebGazer.js, and Python to study how speech clarity affects visual processing. I also got the chance to intern as a Web ..."
+    },
+    {
+      "title": "GitHub - LuisR-ecu/LuisR-ecu",
+      "url": "https://github.com/LuisR-ecu/LuisR-ecu",
+      "snippet": "I&#x27;ve collaborated with ECU&#x27;s Brody School of Medicine on an online eye-tracking experiment using Flask, WebGazer.js, and Python to study how speech clarity affects visual processing. Currently, I&#x27;m interning as a Web Developer at Red Shark Digital, crafting fast, accessible, and responsive sites that help real businesses grow."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "MBart and MBart-50 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.26.1/en/model_doc/mbart",
+      "snippet": "MBart and MBart-50 DISCLAIMER: If you see something strange, file a Github Issue and assign @patrickvonplaten Overview of MBart The MBart model was presented in Multilingual Denoising Pre-training for Neural Machine Translation by Yinhan Liu, Jiatao Gu, Naman Goyal, Xian Li, Sergey Edunov Marjan Ghazvininejad, Mike Lewis, Luke Zettlemoyer. According to the abstract, MBART is a sequence-to ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

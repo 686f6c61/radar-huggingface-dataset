@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ngoziojo/paper_010054270_neural_architecture_search",
+  "slug": "ngoziojo-paper_010054270_neural_architecture_search",
+  "author": "ngoziojo",
+  "url": "https://huggingface.co/ngoziojo/paper_010054270_neural_architecture_search",
+  "created_at": "2026-08-21T17:41:01.000Z",
+  "updated_at": "2026-08-21T17:41:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "concise-analytical",
+    "first-person-plural",
+    "intro-method-exp-related-conclusion",
+    "neural-architecture-search",
+    "neutral",
+    "numeric-apa",
+    "plain-text",
+    "short-punchy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://arxiv.org/abs/2301.08727",
+      "snippet": "In the past decade, advances in deep learning have resulted in breakthroughs in a variety of areas, including computer vision, natural language understanding, speech recognition, and reinforcement learning. Specialized, high-performing neural architectures are crucial to the success of deep learning in these areas. Neural architecture search (NAS), the process of automating the design of ..."
+    },
+    {
+      "title": "PDF AI_Papers/2026/NEURAL ARCHITECTURE SEARCH WITH REINFORCEMENT ... - GitHub",
+      "url": "https://github.com/x-jeff/AI_Papers/blob/master/2026/NEURAL%20ARCHITECTURE%20SEARCH%20WITH%20REINFORCEMENT%20LEARNING.pdf",
+      "snippet": "Papers on Artificial Intelligence🎯AI领域经典论文+博客讲解🚀. Contribute to x-jeff/AI_Papers development by creating an account on GitHub."
+    },
+    {
+      "title": "NeurIPS 2025 Papers",
+      "url": "https://neurips.cc/virtual/2025/loc/atlanta/papers.html?filter=author&search=Jeroen%20Galjaard",
+      "snippet": "More effort is needed to protect pedestrian privacy in the era of AI Test-Time Adaptive Object Detection with Foundation Model PolypSense3D: A Multi-Source Benchmark Dataset for Depth-Aware Polyp Size Measurement in Endoscopy StelLA: Subspace Learning in Low-rank Adaptation using Stiefel Manifold"
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://huggingface.co/papers/2301.08727",
+      "snippet": "Join the discussion on this paper page Neural Architecture Search: Insights from 1000 Papers"
+    },
+    {
+      "title": "ICML 2025 Papers",
+      "url": "https://icml.cc/virtual/2025/papers.html?filter=author&search=Tianfu%20Wu&layout=topic",
+      "snippet": "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models Guided Search Strategies in Non-Serializable Environments with Applications to Software Engineering Agents Shifting Time: Time-series Forecasting with Khatri-Rao Neural Operators"
+    }
+  ]
+}

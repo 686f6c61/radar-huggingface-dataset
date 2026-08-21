@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "angwindy/lab21-2A202601756-qwen35-triage-vi",
+  "slug": "angwindy-lab21-2a202601756-qwen35-triage-vi",
+  "author": "angwindy",
+  "url": "https://huggingface.co/angwindy/lab21-2A202601756-qwen35-triage-vi",
+  "created_at": "2026-08-21T17:44:33.000Z",
+  "updated_at": "2026-08-21T17:45:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "qwen",
+    "customer-support",
+    "vietnamese",
+    "json-triage",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lab21-2A202601756/README.md at main · angWindy/lab21-2A202601756 · GitHub",
+      "url": "https://github.com/angWindy/lab21-2A202601756/blob/main/README.md",
+      "snippet": "VinUni AICB Day 21 (Track 3) — Fine-tuning LLMs with LoRA/QLoRA. Three-baseline regression-gate lab for Qwen3.5. - lab21-2A202601756/README.md at main · angWindy/lab21-2A202601756"
+    },
+    {
+      "title": "Qwen3.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen35",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "vudanghuy/lab21-2A202601761-qwen35-triage-vi · Hugging Face",
+      "url": "https://huggingface.co/vudanghuy/lab21-2A202601761-qwen35-triage-vi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - TaoYuanGit/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/TaoYuanGit/Qwen3.5",
+      "snippet": "The official Qwen API is provided by Alibaba Cloud Model Studio. Alibaba Cloud Model Studio provides first-class support for Qwen3.5, which is compatible with various API specifications, including OpenAI and Anthropic, making it simple for you to try Qwen3.5 in your own applications."
+    }
+  ]
+}

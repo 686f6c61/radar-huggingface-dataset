@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nhuyhoan2004/day21-qwen35-finetuning-lora",
+  "slug": "nhuyhoan2004-day21-qwen35-finetuning-lora",
+  "author": "nhuyhoan2004",
+  "url": "https://huggingface.co/nhuyhoan2004/day21-qwen35-finetuning-lora",
+  "created_at": "2026-08-21T18:07:43.000Z",
+  "updated_at": "2026-08-21T18:07:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-Tune Qwen35 with 5GB VRAM | Michael Gold",
+      "url": "https://mike.gold/notes/x-bookmarks/ai/fine-tune-qwen35-with-5gb-vram",
+      "snippet": "The post introduces a method to fine-tune the Qwen3.5 language model using a free notebook, requiring only 5GB of VRAM. This approach leverages the UnslOTH framework, which enhances training efficiency by enabling models to run 1.5x faster with reduced VRAM usage. The process is supported by GitHub repositories and guides, making it accessible for developers aiming to customize Qwen3.5 models."
+    },
+    {
+      "title": "GDGoC-FPTU/Day21-Track3-Finetuning-LLMs-LoRA-QLoRA-2A202600785 ... - GitHub",
+      "url": "https://github.com/GDGoC-FPTU/Day21-Track3-Finetuning-LLMs-LoRA-QLoRA-2A202600785-NguyenHoangLong",
+      "snippet": "Contribute to GDGoC-FPTU/Day21-Track3-Finetuning-LLMs-LoRA-QLoRA-2A202600785-NguyenHoangLong development by creating an account on GitHub."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Qwen3.5 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5/fine-tune",
+      "snippet": "Below is a minimal SFT recipe (works for \"text-only\" fine-tuning). See also our vision fine-tuning section. Qwen3.5 is \"Causal Language Model with Vision Encoder\" (it&#x27;s a unified VLM), so ensure you have the usual vision deps installed (torchvision, pillow) if needed, and keep Transformers up-to-date. Use the latest Transformers for ..."
+    },
+    {
+      "title": "HNIM2108/-Day21-Track3-Finetuning-LLMs-LoRA-QLoRA - GitHub",
+      "url": "https://github.com/HNIM2108/-Day21-Track3-Finetuning-LLMs-LoRA-QLoRA/tree/main/",
+      "snippet": "Contribute to HNIM2108/-Day21-Track3-Finetuning-LLMs-LoRA-QLoRA development by creating an account on GitHub."
+    }
+  ]
+}

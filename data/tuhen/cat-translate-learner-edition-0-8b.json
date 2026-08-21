@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "tuhen/cat-translate-learner-edition-0.8b",
+  "slug": "tuhen-cat-translate-learner-edition-0-8b",
+  "author": "tuhen",
+  "url": "https://huggingface.co/tuhen/cat-translate-learner-edition-0.8b",
+  "created_at": "2026-08-21T16:08:31.000Z",
+  "updated_at": "2026-08-21T16:08:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "translation",
+    "japanese",
+    "furigana",
+    "fine-tune",
+    "text-generation",
+    "conversational",
+    "ja",
+    "en",
+    "base_model:cyberagent/CAT-Translate-0.8b",
+    "base_model:finetune:cyberagent/CAT-Translate-0.8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 793048320,
+  "parameters_human": "793.0M",
+  "storage_bytes": 1586121792,
+  "storage_human": "1.6 GB",
+  "base_model": "cyberagent/CAT-Translate-0.8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CAT-Translate: Building Compact Open-Source Models for Japanese-English ...",
+      "url": "https://arxiv.org/pdf/2606.21413",
+      "snippet": "To investigate this question empirically, we de-velop a family of open source bilingual language models (0.8B, 1.4B, 3.3B, and 7B parameters) spe-cialized for Japanese-English bidirectional transla-tion. We evaluate the models on real-world trans-lation benchmarks across business, legal, medical, financial, and patent domains. While the multi-lingual models have shown to achieve high accu-racy ..."
+    },
+    {
+      "title": "CAT-Translate: Building Compact Open-Source Models for Japanese-English ...",
+      "url": "https://arxiv.org/html/2606.21413v1",
+      "snippet": "To investigate this question empirically, we develop a family of open source bilingual language models (0.8B, 1.4B, 3.3B, and 7B parameters) specialized for Japanese-English bidirectional translation. We evaluate the models on real-world translation benchmarks across business, legal, medical, financial, and patent domains. While the multilingual models have shown to achieve high accuracy in ..."
+    },
+    {
+      "title": "cyberagent/CAT-Translate-0.8b · Hugging Face",
+      "url": "https://huggingface.co/cyberagent/CAT-Translate-0.8b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CAT-Translate - a cyberagent Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/cyberagent/cat-translate",
+      "snippet": "CAT-Translate updated Jun 19 😺Tiny Language Model For Japanese and English Bidirectional Translation Upvote - Sort: Collection"
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "wwojcikantoni/model_218442165_clip_giant",
+  "slug": "wwojcikantoni-model_218442165_clip_giant",
+  "author": "wwojcikantoni",
+  "url": "https://huggingface.co/wwojcikantoni/model_218442165_clip_giant",
+  "created_at": "2026-08-21T16:33:22.000Z",
+  "updated_at": "2026-08-21T16:33:28.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batchnorm",
+    "clip",
+    "co-attention",
+    "gelu",
+    "giant",
+    "multitask",
+    "polynomial",
+    "rmsprop",
+    "standard",
+    "xavier",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "CLIP: Connecting text and images - OpenAI",
+      "url": "https://openai.com/index/clip/",
+      "snippet": "We&#x27;re introducing a neural network called CLIP which efficiently learns visual concepts from natural language supervision. CLIP can be applied to any visual classification benchmark by simply providing the names of the visual categories to be recognized, similar to the \"zero-shot\" capabilities of GPT-2 and GPT-3."
+    },
+    {
+      "title": "Giant Classic Hair Clip - Free 3D Print Model - MakerWorld",
+      "url": "https://makerworld.com/en/models/1896294-giant-classic-hair-clip",
+      "snippet": "Download this free 3D print file designed by Its On My Mind. A giant snap clip No supports needed.After printing, insert the pin from one arm into the hole on the other and secure it using the C-clip.Before locking the arms, make sure you note which side the center tab is on.To change the clip size, simply scale the model, tolerances remain unaffected."
+    },
+    {
+      "title": "Giant Novelty Hair Clip by Ian Foulds | Download free STL model ...",
+      "url": "https://www.printables.com/model/1621040-giant-novelty-hair-clip",
+      "snippet": "This is a giant novelty hair clip. It prints flat and then you bend it into position and screw on a rivet cap. I saw a similar design on Makerworld but when I printed it didn&#x27;t hold in my daughter&#x27;s hair. The design didn&#x27;t allow remixing, so I just designed my own from scratch, comparing to one of those common metal hair clips."
+    }
+  ]
+}

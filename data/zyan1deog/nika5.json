@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "zyan1deOG/nika5",
+  "slug": "zyan1deog-nika5",
+  "author": "zyan1deOG",
+  "url": "https://huggingface.co/zyan1deOG/nika5",
+  "created_at": "2026-08-21T19:11:28.000Z",
+  "updated_at": "2026-08-21T19:11:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-model",
+    "graph-neural-network",
+    "solar-physics",
+    "sdo",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12399404,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zyan1deOG (Sai Vegasena) - Hugging Face",
+      "url": "https://huggingface.co/zyan1deOG",
+      "snippet": "zyan1deOG 3 Follow webxos&#x27;s profile picturelinz&#x27;s profile picturetarook2005&#x27;s profile picture 3 followers · 2 following https://ensue.dev svegas18 svv232"
+    },
+    {
+      "title": "EnsueAI/DeepSeek-V4-Flash-Base-INT4 at main - Hugging Face",
+      "url": "https://huggingface.co/EnsueAI/DeepSeek-V4-Flash-Base-INT4/blob/main/model1-mp4.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nika AI - AI Interface Prototype",
+      "url": "https://nika-ai.vercel.app/",
+      "snippet": "A modern AI interface prototype with model selection, parameter controls, and chat functionality"
+    },
+    {
+      "title": "Nika — AI Girlfriend on Telegram | Chat, Voice, Images & Roleplay",
+      "url": "https://nika.team/nika/",
+      "snippet": "Nika is an AI girlfriend with a 30-level relationship system, AI image/video generation, live voice calls, companion diary, story generator, and 30+ roleplay scenarios. Telegram + PWA."
+    },
+    {
+      "title": "More about Nika AI",
+      "url": "https://3dnika.com/product",
+      "snippet": "AI workflow for faster 3D model creation Nika AI helps engineers, designers and 3D specialists move from an idea, text prompt, photo or sketch to a base 3D model — then refine it and prepare it for CAD work."
+    }
+  ]
+}

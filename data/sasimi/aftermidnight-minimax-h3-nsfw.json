@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sasimi/AfterMidnight-MiniMax-H3-NSFW",
+  "slug": "sasimi-aftermidnight-minimax-h3-nsfw",
+  "author": "sasimi",
+  "url": "https://huggingface.co/sasimi/AfterMidnight-MiniMax-H3-NSFW",
+  "created_at": "2026-08-21T11:22:19.000Z",
+  "updated_at": "2026-08-21T11:22:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6560521584,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Can MiniMax H3 Generate Uncensored Video? What Local Deployment ...",
+      "url": "https://kingy.ai/blog/can-minimax-h3-generate-uncensored-video-what-local-deployment-actually-changes/",
+      "snippet": "Can MiniMax H3 generate uncensored video? This guide compares hosted H3 with local ComfyUI inference, including moderation, licensing, privacy, and consent."
+    },
+    {
+      "title": "Uncensored Video Generation using MiniMax H3 - Medium",
+      "url": "https://medium.com/data-science-in-your-pocket/uncensored-video-generation-using-minimax-h3-dc53e2102eb6",
+      "snippet": "What is MiniMax H3? MiniMax H3 is an open-weight AI video generation model available on Hugging Face. It supports text-to-video, image-to-video, first-and-last-frame animation, reference-to-video ..."
+    },
+    {
+      "title": "MiniMax H3 NSFW Image Editor: Workflow Fit - crepal.ai",
+      "url": "https://crepal.ai/blog/aiimage/minimax-h3-nsfw-image-editor/",
+      "snippet": "Evaluate MiniMax H3 NSFW image editor workflow fit through edit control, source fidelity, asset consistency, rights checks, and video handoff readiness."
+    },
+    {
+      "title": "How to Use MiniMax H3 for Free : Uncensored AI Video ... - Medium",
+      "url": "https://medium.com/data-science-in-your-pocket/how-to-use-minimax-h3-for-free-uncensored-ai-video-generation-no-gpu-required-2d522d65cd5e",
+      "snippet": "How to Use MiniMax H3 for Free : Uncensored AI Video Generation, No GPU Required MiniMax H3 Free Access without any cards MiniMax H3 is one of the most capable open-source video generation models …"
+    }
+  ]
+}

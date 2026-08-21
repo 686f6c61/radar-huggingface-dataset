@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jas0nwu50/paper_016076395_image_captioning",
+  "slug": "jas0nwu50-paper_016076395_image_captioning",
+  "author": "jas0nwu50",
+  "url": "https://huggingface.co/jas0nwu50/paper_016076395_image_captioning",
+  "created_at": "2026-08-21T16:56:44.000Z",
+  "updated_at": "2026-08-21T16:56:50.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "concise-analytical",
+    "first-person-plural",
+    "image-captioning",
+    "latex-icml",
+    "neutral",
+    "numeric-nature",
+    "short-punchy",
+    "unstructured-narrative",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image Captioning Evaluation in the Age of Multimodal LLMs: Challenges ...",
+      "url": "https://arxiv.org/abs/2503.14604",
+      "snippet": "The evaluation of machine-generated image captions is a complex and evolving challenge. With the advent of Multimodal Large Language Models (MLLMs), image captioning has become a core task, increasing the need for robust and reliable evaluation metrics. This survey provides a comprehensive overview of advancements in image captioning evaluation, analyzing the evolution, strengths, and ..."
+    },
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "Attention-Based Transformer Models for Image Captioning Across ...",
+      "url": "https://arxiv.org/html/2506.05399v1",
+      "snippet": "Abstract Image captioning involves generating textual descriptions from input images, bridging the gap between computer vision and natural language processing. Recent advancements in transformer-based models have significantly improved caption generation by leveraging attention mechanisms for better scene understanding. While various surveys have explored deep learning-based approaches for ..."
+    },
+    {
+      "title": "Image Captioning - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/computer-science/image-captioning",
+      "snippet": "6.7 Image captioning Image captioning is an example of deep learning on mixed data modalities (texts and images). The model input is an image, and the model output is some caption describing the content in the image. Image captioning adopts an encoder-decoder framework consisting of two principal components, a convolutional neural network (CNN) for image feature extraction and a recurrent ..."
+    },
+    {
+      "title": "Next-generation image captioning: A survey of methodologies and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2949719125000354",
+      "snippet": "Modern deep learning-based approaches have supplanted traditional approaches in image captioning, leading to more efficient and sophisticated models. The development of attention mechanisms and transformer-based architectures has further enhanced the modeling of both language and visual data."
+    }
+  ]
+}

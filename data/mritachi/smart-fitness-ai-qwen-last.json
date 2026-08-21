@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MrItachi/smart-fitness-ai-qwen-last",
+  "slug": "mritachi-smart-fitness-ai-qwen-last",
+  "author": "MrItachi",
+  "url": "https://huggingface.co/MrItachi/smart-fitness-ai-qwen-last",
+  "created_at": "2026-08-21T16:12:54.000Z",
+  "updated_at": "2026-08-21T16:14:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MrItachi/smart-fitness-ai-qwen · Hugging Face",
+      "url": "https://huggingface.co/MrItachi/smart-fitness-ai-qwen",
+      "snippet": "MrItachi / smart-fitness-ai-qwen like 0 Text Generation Transformers Safetensors qwen2 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "MrItachi (Itachi Uchiha) - Hugging Face",
+      "url": "https://huggingface.co/MrItachi",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "smart-fitness-ai-qwen API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/MrItachi/smart-fitness-ai-qwen",
+      "snippet": "Run smart-fitness-ai-qwen with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

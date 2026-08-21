@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yonasabiyu/ess-sdg-chatbot-data",
+  "slug": "yonasabiyu-ess-sdg-chatbot-data",
+  "author": "yonasabiyu",
+  "url": "https://huggingface.co/yonasabiyu/ess-sdg-chatbot-data",
+  "created_at": "2026-08-21T16:31:04.000Z",
+  "updated_at": "2026-08-21T16:49:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 425303848,
+  "storage_human": "425 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Jonas2127/ess-sdg-chatbot",
+      "url": "https://github.com/Jonas2127/ess-sdg-chatbot",
+      "snippet": "The ESS RAG BOT is an advanced Retrieval-Augmented Generation (RAG) chatbot designed to answer questions about Ethiopia&#x27;s Sustainable Development Goals (SDGs). Unlike traditional RAG systems, this is an agentic system that uses LangGraph to intelligently route queries, self-correct when retrieval fails, and provide grounded, cited answers in ..."
+    },
+    {
+      "title": "yonasabiyu/ess-chromadb · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/yonasabiyu/ess-chromadb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - annuaicoder/Chatbot-Free-Datasets",
+      "url": "https://github.com/annuaicoder/Chatbot-Free-Datasets",
+      "snippet": "🗣️ chatbot-datasets chatbot-datasets is a curated collection of free, high-quality datasets for training, fine-tuning, and benchmarking chatbots and conversational AI models. Whether you&#x27;re building an LLM-powered assistant, a rule-based bot, or just exploring conversational data — this repo is for you."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Building an AI Chatbot Powered by Your Data - Medium",
+      "url": "https://medium.com/@codeawake/ai-chatbot-5bd2fa3324e3",
+      "snippet": "Create a full-stack AI chatbot powered by your own data using Retrieval Augmented Generation (RAG), FastAPI, Redis as a vector database and OpenAI&#x27;s GPT-4o."
+    }
+  ]
+}

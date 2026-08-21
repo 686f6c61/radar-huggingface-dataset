@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "phammminhhieu/ai_in_action_lab20",
+  "slug": "phammminhhieu-ai_in_action_lab20",
+  "author": "phammminhhieu",
+  "url": "https://huggingface.co/phammminhhieu/ai_in_action_lab20",
+  "created_at": "2026-08-21T11:29:48.000Z",
+  "updated_at": "2026-08-21T11:30:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84986725,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phammminhhieu (Minhhieu) - Hugging Face",
+      "url": "https://huggingface.co/phammminhhieu/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 18 minutes ago ... published a dataset 18 minutes ago"
+    },
+    {
+      "title": "phammminhhieu (Minhhieu) - Hugging Face",
+      "url": "https://huggingface.co/phammminhhieu/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 6 days ago ... published a model 6 days ago"
+    },
+    {
+      "title": "lab20-PhanTuanMinh-2A202600422/README.md at main · minhphan2 ... - GitHub",
+      "url": "https://github.com/minhphan2/lab20-PhanTuanMinh-2A202600422/blob/main/README.md",
+      "snippet": "Contribute to minhphan2/lab20-PhanTuanMinh-2A202600422 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - minhphan2/lab20-PhanTuanMinh-2A202600422",
+      "url": "https://github.com/minhphan2/lab20-PhanTuanMinh-2A202600422",
+      "snippet": "Contribute to minhphan2/lab20-PhanTuanMinh-2A202600422 development by creating an account on GitHub."
+    },
+    {
+      "title": "Action Model - Own the Future of AI",
+      "url": "https://actionmodel.com/",
+      "snippet": "The Action Model Ecosystem 1 billion jobs are expected to be impacted by AI. Through our three core products, Action Model empowers anyone to train, earn, and automate while helping build a people-owned AI, not one owned by a handful of billionaires. Find your place in community-owned AI."
+    }
+  ]
+}

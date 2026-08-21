@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ohyou/dama-aibrain",
+  "slug": "ohyou-dama-aibrain",
+  "author": "ohyou",
+  "url": "https://huggingface.co/ohyou/dama-aibrain",
+  "created_at": "2026-08-21T15:42:15.000Z",
+  "updated_at": "2026-08-21T16:15:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WonseokJayJung/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/WonseokJayJung/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "artnfull/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/artnfull/dama-aibrain",
+      "snippet": "Instructions to use artnfull/dama-aibrain with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use artnfull/dama-aibrain with Transformers:"
+    },
+    {
+      "title": "НАДО ИСПРАВЛЯТЬ…#актив#бабкаАлка#врек#врекомендации#серия30 (2часть)@За ...",
+      "url": "https://www.tiktok.com/@ninka_ivanovna2/video/7674539114326248724",
+      "snippet": "2152 Mi piace,89 Commenti.Video di TikTok da Ninka_ivanovna2 (@ninka_ivanovna2): \"НАДО ИСПРАВЛЯТЬ…#актив#бабкаАлка#врек#врекомендации#серия30 (2часть)@Забивной дед 001 @🟠~В ГОСТЯХ У ОЛЕГА~⚫️ @Гостях у Лёши @~🔪Baba_Alla🪻~ @🎯ઠɑઠκɑ ɑʌκɑ🪓 @Petrovna_kiwi) @^Петровна💣 ..."
+    },
+    {
+      "title": "WonseokJayJung (Wonseok JUng) - Hugging Face",
+      "url": "https://huggingface.co/WonseokJayJung",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "AIBrain — Your Agent, Better Every Day",
+      "url": "https://myaibrain.org/",
+      "snippet": "AIBrain is the AI agent memory layer that compounds across every session. It gives any agent a persistent memory layer — plus Agent/Task/Team composition, a Flow engine, document ingestion, universal MCP memory server connectivity, 80 self-learning workflows, mesh networking, and a 60+ page native dashboard."
+    }
+  ]
+}

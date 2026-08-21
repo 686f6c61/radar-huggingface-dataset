@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Sohailhosseini/Qwen3.5-9B-GLM5.1-Distill-v1-FP8",
+  "slug": "sohailhosseini-qwen3-5-9b-glm5-1-distill-v1-fp8",
+  "author": "Sohailhosseini",
+  "url": "https://huggingface.co/Sohailhosseini/Qwen3.5-9B-GLM5.1-Distill-v1-FP8",
+  "created_at": "2026-08-21T15:55:17.000Z",
+  "updated_at": "2026-08-21T15:55:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "compressed-tensors",
+    "fp8",
+    "quantized",
+    "vllm",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Jackrong/Qwen3.5-9B-GLM5.1-Distill-v1",
+    "base_model:quantized:Jackrong/Qwen3.5-9B-GLM5.1-Distill-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 11930374511,
+  "storage_human": "11.9 GB",
+  "base_model": "Jackrong/Qwen3.5-9B-GLM5.1-Distill-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jackrong/Qwen3.5-9B-GLM5.1-Distill-v1 · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwen3.5-9B-GLM5.1-Distill-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B-GLM5.1-Distill-v1 · Models",
+      "url": "https://www.modelscope.cn/models/Jackrong/Qwen3.5-9B-GLM5.1-Distill-v1",
+      "snippet": "🪐 Qwen3.5-9B-GLM5.1-Distill-v1 📌 Model Overview Model Name: Jackrong/Qwen3.5-9B-GLM5.1-Distill-v1 Base Model: Qwen3.5-9B Training Type: Supervised Fine-Tuning (SFT, Distillation) Parameter Scale: 9B Training Framework: Unsloth This model is a distilled variant of Qwen3.5-9B, trained on high-quality reasoning data derived from GLM-5.1. The primary goals are to: Improve structured ..."
+    },
+    {
+      "title": "Qwen3.5-9B-GLM5.1-Distill - a Jackrong Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Jackrong/qwen35-9b-glm51-distill",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 9B GLM5.1 Distill V1 by Jackrong - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Jackrong%2FQwen3.5-9B-GLM5.1-Distill-v1,1xZjVeUKyNJu5nwPrAr1N8",
+      "snippet": "Qwen3.5 9B GLM5.1 Distill V1 is an open-source 9b LLM by Jackrong. VRAM 19.3GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.5-9B-GLM5.1-Distill-v1: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-9b-glm5.1-distill-v1-jackrong",
+      "snippet": "Overview Qwen3.5-9B-GLM5.1-Distill-v1 is a 9-billion-parameter reasoning model created by Jackrong through supervised fine-tuning and knowledge distillation from GLM-5.1. The model builds on the Qwen3.5-9B base with training using Unsloth and LoRA, optimized to improve structured reasoning, instruction-following consistency, and latent knowledge activation. The critical thing to understand ..."
+    }
+  ]
+}

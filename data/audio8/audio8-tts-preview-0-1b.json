@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Audio8/Audio8-TTS-Preview-0.1b",
+  "slug": "audio8-audio8-tts-preview-0-1b",
+  "author": "Audio8",
+  "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b",
+  "created_at": "2026-08-19T04:49:51.000Z",
+  "updated_at": "2026-08-21T05:38:40.000Z",
+  "license": "audio8-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arktts",
+    "feature-extraction",
+    "audio",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "zero-shot",
+    "multilingual",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 74,
+  "downloads_30d": 577,
+  "trending_score": 74,
+  "parameters": 169779904,
+  "parameters_human": "169.8M",
+  "storage_bytes": 1689462767,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audio8/Audio8-TTS-Preview-0.1b at main - Hugging Face",
+      "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b/tree/main",
+      "snippet": "Instructions to use Audio8/Audio8-TTS-Preview-.1b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Audio8/Audio8-TTS-Preview-.1b with Transformers:"
+    },
+    {
+      "title": "Audio8-TTS-Preview-0.1b: Text-to-Audio model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/audio8-tts-preview-0.1b-audio8",
+      "snippet": "Overview Audio8-TTS-Preview-.1b is a compact zero-shot text-to-speech model with voice cloning capabilities, built by Audio8. The model uses an Audio8 Falcon H1 architecture with dual autoregressive branches: a slow branch (24 layers, 512 width, 8 attention heads, 2 KV heads) that predicts semantic tokens and a fast branch (4 layers) that predicts codec codebooks. The main generative model ..."
+    },
+    {
+      "title": "Audio8-AI/Audio8_TTS: SOTA-Class TTS at Compact Scale - GitHub",
+      "url": "https://github.com/Audio8-AI/Audio8_TTS",
+      "snippet": "SOTA-Class TTS at Compact Scale. Contribute to Audio8-AI/Audio8_TTS development by creating an account on GitHub."
+    },
+    {
+      "title": "Audio8-TTS-Preview-0.6b - Hugging Face",
+      "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Pranavharshans/Audio8-tts · GitHub",
+      "url": "https://github.com/Pranavharshans/Audio8-tts",
+      "snippet": "This repository provides the audio8_tts Preview checkpoint, Hugging Face remote code, inference tools, and an independent SFT pipeline for multilingual speech generation and zero-shot voice cloning. Preview status: language coverage is intentionally limited in this release. Use the model primarily ..."
+    }
+  ]
+}

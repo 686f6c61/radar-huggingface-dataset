@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "humannbabyy/GLM-5.2-Uncensored-FP8",
+  "slug": "humannbabyy-glm-5-2-uncensored-fp8",
+  "author": "humannbabyy",
+  "url": "https://huggingface.co/humannbabyy/GLM-5.2-Uncensored-FP8",
+  "created_at": "2026-08-21T10:34:27.000Z",
+  "updated_at": "2026-08-21T14:32:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "arxiv:2603.12201",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 595355430048,
+  "storage_human": "595.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM 5.2 - Uncensored AI",
+      "url": "https://uncensored.com/models/glm-5-2",
+      "snippet": "GLM 5.2 by Z.AI — an open-weight reasoning model with a 1M-token context, excellent for roleplay, writing, and complex multi-step tasks."
+    },
+    {
+      "title": "jelegend/GLM-5.2-FP8-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/jelegend/GLM-5.2-FP8-Uncensored",
+      "snippet": "Acknowledgments Base model: Z.ai / zai-org (GLM-5.2-FP8) Abliteration methodology, LLM judging rubric, and search pipeline solely developed by Zanden Kane Contact and Personal Note Threads: @zandenkane For general feedback, questions, or collaboration, reach me on Threads. I&#x27;m accessible and responsive. I built this to study how refusal behavior is represented in frontier-scale models and to ..."
+    },
+    {
+      "title": "zandenAI/GLM-5.2-FP8-Uncensored at main - Hugging Face",
+      "url": "https://huggingface.co/zandenAI/GLM-5.2-FP8-Uncensored/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Models | Uncensored AI",
+      "url": "https://uncensored.com/models",
+      "snippet": "AI models, refined into one clean view. Browse every AI model available in Uncensored AI: Claude, GPT, Gemini, Grok, DeepSeek, Kimi, GLM, and more — most of them uncensored."
+    },
+    {
+      "title": "GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.1 is our next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin on NL2Repo (repo generation) and Terminal-Bench 2.0 (real-world terminal tasks). But the most meaningful leap goes beyond first-pass performance. Previous models ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "adnanallemon/aml-campaigngraph-alpha",
+  "slug": "adnanallemon-aml-campaigngraph-alpha",
+  "author": "adnanallemon",
+  "url": "https://huggingface.co/adnanallemon/aml-campaigngraph-alpha",
+  "created_at": "2026-08-21T16:55:34.000Z",
+  "updated_at": "2026-08-21T16:58:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 816512,
+  "storage_human": "816512 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "Arena Leaderboard | Compare & Benchmark the Best Frontier AI Models",
+      "url": "https://arena.ai/leaderboard",
+      "snippet": "See how leading AI models stack up across text, image, vision, and more. This page provides a high-level snapshot of each Arena. Explore dedicated tabs for deeper insights."
+    },
+    {
+      "title": "GitHub - Salmaabdelfattah73/AML-GNN-LLM-Explainer: M.S. Computer ...",
+      "url": "https://github.com/Salmaabdelfattah73/AML-GNN-LLM-Explainer",
+      "snippet": "This project builds an explainable AI system that uses Large Language Models (LLMs) to generate human-readable explanations for Graph Neural Network (GNN) predictions in Anti-Money Laundering (AML) detection."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Leaderboard August 2026 — LMSys Arena, LLM, Image & Coding ...",
+      "url": "https://www.swfte.com/ai/leaderboard",
+      "snippet": "Live AI model leaderboard updated August 2026. Anthropic: Claude Fable 5 leads at 100/100. Compare 380 LLMs, image, video, coding & reasoning models — replaces LMSys Chatbot Arena."
+    }
+  ]
+}

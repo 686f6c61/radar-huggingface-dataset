@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "baku-suma/paper_004756447_data_efficient_learning",
+  "slug": "baku-suma-paper_004756447_data_efficient_learning",
+  "author": "baku-suma",
+  "url": "https://huggingface.co/baku-suma/paper_004756447_data_efficient_learning",
+  "created_at": "2026-08-21T16:31:54.000Z",
+  "updated_at": "2026-08-21T16:32:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "critical",
+    "data-efficient-learning",
+    "first-person-plural",
+    "intro-background-approach-eval-conclusion",
+    "latex-icml",
+    "long-detailed",
+    "narrative-progressive",
+    "unstructured-narrative",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2406.07539",
+      "snippet": "This paper introduces Baku, a transformer architecture for efficient multi-task policy learning in robotics using offline imitation learning and advanced techniques."
+    },
+    {
+      "title": "BAKU: An Efficient Transformer for Multi-Task Policy Learning",
+      "url": "https://arxiv.org/abs/2406.07539",
+      "snippet": "In this work, we present BAKU, a simple transformer architecture that enables efficient learning of multi-task robot policies. BAKU builds upon recent advancements in offline imitation learning and meticulously combines observation trunks, action chunking, multi-sensory observations, and action heads to substantially improve upon prior work."
+    },
+    {
+      "title": "PDF BAKU: An Efficient Transformer for Multi-Task Policy Learning",
+      "url": "https://papers.nips.cc/paper_files/paper/2024/file/ff887781480973bd3cb6026feb378d1e-Paper-Conference.pdf",
+      "snippet": "In this work, we present BAKU, a simple architecture for multi-task policy learning that provides highly eficient training, particularly in data-scarce problems such as robotics. BAKU builds upon recent work in multitask learning [5, 6] and has three key features. First, a transformer encoder that fuses information from multiple modalities like vision and language while incorporating temporal ..."
+    },
+    {
+      "title": "BAKU: An Efﬁcient Transformer for Multi-Task Policy Learning",
+      "url": "https://par.nsf.gov/servlets/purl/10575913",
+      "snippet": "In this work, we present BAKU, a simple architecture for multi-task policy learning that provides highly efﬁcient training, particularly in data-scarce problems such as robotics. BAKUbuilds upon recent work in multitask learning [5, 6] and has three key features."
+    },
+    {
+      "title": "BAKU | Proceedings of the 38th International Conference on Neural ...",
+      "url": "https://dl.acm.org/doi/10.5555/3737916.3742400",
+      "snippet": "A reduction of imitation learning and structured prediction to no-regret online learning. In Proceedings of the fourteenth international conference on artificial intelligence and statistics, pages 627-635."
+    }
+  ]
+}

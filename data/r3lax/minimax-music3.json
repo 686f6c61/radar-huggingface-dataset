@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "r3lax/MiniMax-Music3",
+  "slug": "r3lax-minimax-music3",
+  "author": "r3lax",
+  "url": "https://huggingface.co/r3lax/MiniMax-Music3",
+  "created_at": "2026-08-21T15:09:02.000Z",
+  "updated_at": "2026-08-21T15:09:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "minimax_music3",
+    "music-generation",
+    "text-to-music",
+    "pytorch",
+    "sglang-omni",
+    "text-to-audio",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2431905920,
+  "parameters_human": "2.43B",
+  "storage_bytes": 67213684876,
+  "storage_human": "67.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax Music 3 - minimax-ai.github.io",
+      "url": "https://minimax-ai.github.io/music3-demo/",
+      "snippet": "Demo Page MiniMax Music 3 This page provides intuitive audio demonstrations of our results. For more technical details, see Huggingface model card."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality."
+    },
+    {
+      "title": "MiniMax Music 3.0: Model Guide, Demo & Requirements",
+      "url": "https://minimaxmusic3.ai/",
+      "snippet": "Independent guide · Not affiliated with MiniMax MiniMax Music 3.0 MiniMax Music 3.0 is the common search name for MiniMax Music 3, MiniMax&#x27;s official open-weight model for generating complete songs from lyrics and detailed musical direction."
+    },
+    {
+      "title": "MiniMax Music 3 AI Music Generator — Create Full Songs",
+      "url": "https://minimax3.com/tools/minimax-music-3",
+      "snippet": "Try a MiniMax Music 3 AI music generator for complete songs up to five minutes. Control style, structured lyrics, vocals, instruments, and arrangement."
+    },
+    {
+      "title": "MiniMax Music 3.0 AI Music Generator | Create Songs Online",
+      "url": "https://www.minimax-music.com/minimax-music-3",
+      "snippet": "What is MiniMax Music 3.0? − MiniMax Music 3.0 is an AI music generation model developed by MiniMax. It turns music prompts and lyrics into vocal songs or instrumental tracks. How do I create a song with MiniMax Music 3.0? + Describe the style, mood, and instruments you want. Add your own lyrics, generate lyrics from your idea, or choose ..."
+    }
+  ]
+}

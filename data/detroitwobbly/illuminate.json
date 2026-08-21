@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DetroitWobbly/Illuminate",
+  "slug": "detroitwobbly-illuminate",
+  "author": "DetroitWobbly",
+  "url": "https://huggingface.co/DetroitWobbly/Illuminate",
+  "created_at": "2026-08-21T14:40:38.000Z",
+  "updated_at": "2026-08-21T15:05:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion-xl",
+    "sdxl",
+    "lora",
+    "concept-slider",
+    "semantic-slider",
+    "lighting",
+    "illumination",
+    "image-generation",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185717704,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI generated Content Detection - Illuminarty - Home",
+      "url": "https://illuminarty.ai/en/",
+      "snippet": "detection of ai generated images Find out the probability of AI generation for a given image. Illuminarty combines various computer vision algorithms to provide the likelihood of the image being generated from one of the public AI generation models."
+    },
+    {
+      "title": "How to verify and detect AI-generated images",
+      "url": "https://factcheckhub.com/osint-tools-to-detect-ai-generated-images/",
+      "snippet": "AI-generated images often look perfectly polished but contain subtle distortions, such as unnatural textures, weirdly shaped hands, or blurred background elements. Fortunately, tech tools have been developed specifically to help you identify whether a picture was taken by a camera or synthesised by an algorithm."
+    },
+    {
+      "title": "MySkin by Ringo Ai - IlluminateAI",
+      "url": "https://illuminateai.io/",
+      "snippet": "The science of light transforms the power of your camera. We unlock visual AI&#x27;s commercial power by revolutionizing the physics of photography."
+    },
+    {
+      "title": "Illuminate | Learn Your Way",
+      "url": "https://illuminate.google.com/explore",
+      "snippet": "Transform research papers into AI-generated audio summaries with Illuminate, your Gen AI tool for understanding complex content faster."
+    },
+    {
+      "title": "Home - Illuminate AI",
+      "url": "https://illuminateai.co.uk/",
+      "snippet": "Illuminate AI combines strategic direction, human enablement, and hands-on delivery so AI adoption lands and outperforms your business objectives."
+    }
+  ]
+}

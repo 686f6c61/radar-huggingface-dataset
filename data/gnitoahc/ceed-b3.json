@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "gnitoahc/ceed-b3",
+  "slug": "gnitoahc-ceed-b3",
+  "author": "gnitoahc",
+  "url": "https://huggingface.co/gnitoahc/ceed-b3",
+  "created_at": "2026-08-21T16:35:32.000Z",
+  "updated_at": "2026-08-21T16:37:19.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "vision-language",
+    "visual-question-answering",
+    "knowledge-distillation",
+    "lora",
+    "merged",
+    "research",
+    "conversational",
+    "en",
+    "dataset:lmms-lab/DocVQA",
+    "dataset:lmms-lab/GQA",
+    "dataset:lmms-lab/ChartQA",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941100874,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914645046,
+  "storage_human": "15.9 GB",
+  "base_model": "google/gemma-4-e4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - GNITOAHC/ceed",
+      "url": "https://github.com/GNITOAHC/ceed",
+      "snippet": "Contribute to GNITOAHC/ceed development by creating an account on GitHub."
+    },
+    {
+      "title": "ceed/ceed.md at main · GNITOAHC/ceed · GitHub",
+      "url": "https://github.com/GNITOAHC/ceed/blob/main/ceed.md",
+      "snippet": "CEED does not distill router probabilities. Router gating is a prediction made before computation, distorted by load balancing and frequency bias; measured attribution is what the computation actually did."
+    },
+    {
+      "title": "gnitoahc (Chao-Ting, Chen) - Hugging Face",
+      "url": "https://huggingface.co/gnitoahc/datasets",
+      "snippet": "gnitoahc/poly_markets_test ... gnitoahc/iac-dataset ... gnitoahc/vlm-eval-videos ... gnitoahc/model_privacy ... gnitoahc/roc-law-and-regulations"
+    },
+    {
+      "title": "gnitoahc/ceed-b2-gemma4-e4b-it-0802 · Hugging Face",
+      "url": "https://huggingface.co/gnitoahc/ceed-b2-gemma4-e4b-it-0802",
+      "snippet": "Instructions to use gnitoahc/ceed-b2-gemma4-e4b-it-0802 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use gnitoahc/ceed-b2-gemma4-e4b-it-0802 with Transformers:"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

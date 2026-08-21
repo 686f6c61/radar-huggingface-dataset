@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jbduran/bart-sft",
+  "slug": "jbduran-bart-sft",
+  "author": "jbduran",
+  "url": "https://huggingface.co/jbduran/bart-sft",
+  "created_at": "2026-08-21T17:44:25.000Z",
+  "updated_at": "2026-08-21T18:20:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "nanochat",
+    "language-model",
+    "pre-1930",
+    "historical",
+    "vintage",
+    "sft",
+    "conversational",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20538598406,
+  "storage_human": "20.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jbduran (Jonathan Bryant Duran-Ortiz) - Hugging Face",
+      "url": "https://huggingface.co/jbduran",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset about 7 hours ago ... updated a model about 10 hours ago"
+    },
+    {
+      "title": "jbduran (Jonathan Bryant Duran-Ortiz) - Hugging Face",
+      "url": "https://huggingface.co/jbduran/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset about 9 hours ago ... updated a model about 12 hours ago"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "surafelasfawosen/chatbot-using-BART-model-s - GitHub",
+      "url": "https://github.com/surafelasfawosen/chatbot-using-BART-model-s/tree/main",
+      "snippet": "Utilize BART model&#x27;s strong text generation and understanding capabilities for more natural conversations. Create a complete end-to-end chatbot system including model files, configuration, and a web-based interface. Demonstrate how modern transformer models can be used for practical conversational AI applications."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

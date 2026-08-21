@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "scasds/asxsx",
+  "slug": "scasds-asxsx",
+  "author": "scasds",
+  "url": "https://huggingface.co/scasds/asxsx",
+  "created_at": "2026-08-21T17:52:12.000Z",
+  "updated_at": "2026-08-21T17:52:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - TUD:AI",
+      "url": "https://llm.scads.ai/docs/models/",
+      "snippet": "TUD:AI Documentation Models We retain the right to change models so that we can provide models that suit your applications and our infrastructure best. You can, however, use one of the following model aliases for more reliable applications: alias-ha (general model, high availability) alias-huge (most powerful model) alias-code (coding support) alias-reasoning alias-image-generation (to ..."
+    },
+    {
+      "title": "TUD:AI",
+      "url": "https://llm.scads.ai/docs/",
+      "snippet": "TUD:AI Welcome to TUD:AI, the AI model services provided by ScaDS.AI Dresden/Leipzig and ZIH. Our API offers flexibility and efficiency, enabling you to seamlessly integrate sophisticated LLMs (Large Language Models) into your applications. We further provide audio generation/transcription, image generation, embedding, and reranking models."
+    },
+    {
+      "title": "A machine learning model for textured X-ray scattering and diffraction ...",
+      "url": "https://www.nature.com/articles/s41524-023-01011-w",
+      "snippet": "Here, we tackle the problem from an algorithmic perspective by proposing a small yet effective machine-learning model for experimental SAXS/WAXD image denoising, allowing more redundancy for ..."
+    },
+    {
+      "title": "ScaDS.AI Dresden/Leipzig",
+      "url": "https://scads.ai/",
+      "snippet": "ScaDS.AI Dresden/Leipzig ScaDS.AI (Center for Scalable Data Analytics and Artificial Intelligence) Dresden/Leipzig is a center for Data Science, Artificial Intelligence and Big Data with locations in Dresden and Leipzig. It is one of the five new AI centers in Germany funded under the federal government&#x27;s AI strategy by the Federal Ministry of Research, Technology and Space (BMFTR) and the ..."
+    },
+    {
+      "title": "ScaDS.AI - asanAI",
+      "url": "https://asanai.scads.ai/",
+      "snippet": "Enter your own data manually and predict 🔍 Inspect Weights View model architecture and weight shapes in detail 📷 Needs an image model + webcam 📷 Webcam Prediction Use your webcam as live input — auto-starts camera ️ RPS — 2 Players (Snapshots) Take turns! Each player snaps a photo. Compare predictions to find the winner."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "khairi/Kothar-student-seed-409M",
+  "slug": "khairi-kothar-student-seed-409m",
+  "author": "khairi",
+  "url": "https://huggingface.co/khairi/Kothar-student-seed-409M",
+  "created_at": "2026-08-21T15:46:06.000Z",
+  "updated_at": "2026-08-21T15:46:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "eshmun",
+    "text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 409344000,
+  "parameters_human": "409.3M",
+  "storage_bytes": 1637387648,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "khairi (khairi abidi) - Hugging Face",
+      "url": "https://huggingface.co/khairi/datasets",
+      "snippet": "Language Modeling, Protein Language Modeling, Protein Annotation. Recent Activity. updated a model 4 days ago. khairi/Eshmun-.3B-CPT"
+    },
+    {
+      "title": "Coupang&#x27;s $409M Fine Shows the Real Cost of Weak AI Governance",
+      "url": "https://www.newsbreak.com/techrepublic-320365869/4728298951183-coupang-s-409m-fine-shows-the-real-cost-of-weak-ai-governance",
+      "snippet": "The pattern emerging in real time Three significant events landed within three business days. None of them is coincidental: On June 11, the PIPC delivered its Coupang ruling. On June 12, the US government issued export controls restricting foreign national access to Anthropic&#x27;s Fable 5 and Mythos 5 models, citing national security grounds. The UK AI Security Institute had previously ..."
+    },
+    {
+      "title": "khairi/refold-seed · Hugging Face",
+      "url": "https://huggingface.co/khairi/refold-seed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "khairi/8L-TOP-f32-student - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/khairi/8L-TOP-f32-student",
+      "snippet": "Run khairi/8L-TOP-f32-student with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "khairi / refold-seed Security Insights | Protect AI",
+      "url": "https://protectai.com/insights/models/khairi/refold-seed/a173617a8615e432f3e311d40eddf467f0e6e2e3/versions",
+      "snippet": "Discover potential threats in the khairi / refold-seed model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nvhiep12/lab21-qwen3.5-4b-lora-cskh",
+  "slug": "nvhiep12-lab21-qwen3-5-4b-lora-cskh",
+  "author": "nvhiep12",
+  "url": "https://huggingface.co/nvhiep12/lab21-qwen3.5-4b-lora-cskh",
+  "created_at": "2026-08-21T11:06:05.000Z",
+  "updated_at": "2026-08-21T11:06:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ygong23/Qwen3.5-4B-Lora-260721 · Hugging Face",
+      "url": "https://huggingface.co/ygong23/Qwen3.5-4B-Lora-260721",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
+      "snippet": "This experiment validates whether a single H100 can efficiently fine-tune Qwen3.5-4B on general agent/coding/reasoning data that the base model has never seen before, using a large LoRA rank to compensate for the domain gap."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "FutureMa/qwen35-4b-lora-sft · Hugging Face",
+      "url": "https://huggingface.co/FutureMa/qwen35-4b-lora-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-4B LoRA and SwanLab Records | hello-rocm",
+      "url": "https://datawhalechina.github.io/hello-rocm/02-fine-tune/qwen3.5/qwen3.5-4b-lora-swanlab",
+      "snippet": "This tutorial fine-tunes Qwen3.5-4B with transformers + peft LoRA and records training with SwanLab. The Notebook has been adjusted for the hello-rocm repository layout: datasets and code paths point to files inside this project."
+    }
+  ]
+}

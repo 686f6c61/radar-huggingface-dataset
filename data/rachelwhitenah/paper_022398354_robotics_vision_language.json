@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rachelwhitenah/paper_022398354_robotics_vision_language",
+  "slug": "rachelwhitenah-paper_022398354_robotics_vision_language",
+  "author": "Rachelwhitenah",
+  "url": "https://huggingface.co/Rachelwhitenah/paper_022398354_robotics_vision_language",
+  "created_at": "2026-08-21T17:35:28.000Z",
+  "updated_at": "2026-08-21T17:35:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "active",
+    "bulleted",
+    "cautious",
+    "numeric-bibtex",
+    "plain-text",
+    "robotics-vision-language",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini Robotics — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-robotics/",
+      "snippet": "Gemini Robotics 2 Our most advanced vision-language-action model (VLA) that converts vision and language input into motor control, enabling a robot to take action Gemini Robotics ER 2 Our embodied reasoning model: capable of reasoning within physical spaces to make detailed plans, coordinating with humans and other robots Gemini Robotics On ..."
+    },
+    {
+      "title": "Gemini Robotics: Bringing AI into the Physical World",
+      "url": "https://arxiv.org/abs/2503.20020",
+      "snippet": "This report introduces a new family of AI models purposefully designed for robotics and built upon the foundation of Gemini 2.0. We present Gemini Robotics, an advanced Vision-Language-Action (VLA) generalist model capable of directly controlling robots."
+    },
+    {
+      "title": "Awesome VLA Papers - GitHub",
+      "url": "https://github.com/hanjianhua44/Awesome-VLA-Papers",
+      "snippet": "A curated collection of papers on Vision-Language-Action (VLA) models, covering autonomous driving, robotics, world models, spatial reasoning, and more ..."
+    },
+    {
+      "title": "[Paper Note] UniVLA: Unified Vision-Language-Action Model",
+      "url": "https://en.papernotes.org/ICLR2026/robotics/unified_vision-language-action_model/",
+      "snippet": "[ICLR 2026][Robotics][VLA] UniVLA discretizes vision, language, and action into tokens within a shared vocabulary, modeling interleaved observation-action sequences with a single autoregressive Transformer. ..."
+    },
+    {
+      "title": "Vision-Language-Action (VLA) Models for Unmanned Aerial Robotics and ...",
+      "url": "https://www.preprints.org/manuscript/202604.0664",
+      "snippet": "Vision-Language-Action (VLA) models unify visual perception, natural-language understanding, and action generation within a single foundation model, allowing a robot to follow instructions such as \"fold the towel\" or \"fly to the red building\" directly from camera images. Because VLAs inherit world knowledge from internet-scale pre-training, they have become the dominant framework for ..."
+    }
+  ]
+}

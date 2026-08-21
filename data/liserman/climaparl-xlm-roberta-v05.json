@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "liserman/climaparl-xlm-roberta-v05",
+  "slug": "liserman-climaparl-xlm-roberta-v05",
+  "author": "liserman",
+  "url": "https://huggingface.co/liserman/climaparl-xlm-roberta-v05",
+  "created_at": "2026-08-21T17:36:12.000Z",
+  "updated_at": "2026-08-21T17:36:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129290818,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "climaparl-xlm-roberta-climate-change-narrow-broad-v05",
+      "url": "https://huggingface.co/liserman/climaparl-xlm-roberta-climate-change-narrow-broad-v05",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "XLM-RoBERTa - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/model_doc/xlm-roberta",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/xlm-roberta.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/xlm-roberta.md",
+      "snippet": "It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model. You can find all the original XLM-RoBERTa checkpoints under the Facebook AI community organization."
+    },
+    {
+      "title": "ClimaParl - Lukas Isermann",
+      "url": "https://lukasisermann.com/project/climaparl/",
+      "snippet": "Methodologically, we fine-tune XLM-RoBERTa, a multilingual language model, on manually annotated parliamentary speeches from 27 European countries. This classifier distinguishes between narrow and broad references to climate change."
+    },
+    {
+      "title": "XLM-RoBERTa — Docs | Model Database",
+      "url": "https://modeldatabase.com/docs/transformers/model_doc/xlm-roberta.html",
+      "snippet": "XLM-RoBERTa: reference documentation for working with open source AI models and libraries. Compare and deploy AI models on Model Database."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Guccimam/lunar-dqn",
+  "slug": "guccimam-lunar-dqn",
+  "author": "Guccimam",
+  "url": "https://huggingface.co/Guccimam/lunar-dqn",
+  "created_at": "2026-08-21T16:36:56.000Z",
+  "updated_at": "2026-08-21T16:37:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "reinforcement-learning",
+    "deep-q-network",
+    "dueling-dqn",
+    "double-dqn",
+    "lunar-lander",
+    "gymnasium",
+    "pytorch",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 285444,
+  "storage_human": "285444 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allen73/lunarlander-v3-dqn-physical-ai · Hugging Face",
+      "url": "https://huggingface.co/allen73/lunarlander-v3-dqn-physical-ai",
+      "snippet": "🛸 LunarLander-v3 Double Dueling DQN (Physical AI) This repository contains a trained Double Dueling Deep Q-Network (DQN) model designed for flawless, stylish landings in the Gymnasium LunarLander-v3 environment."
+    },
+    {
+      "title": "tnvjjr/Lunar_Lander_DeepQ_Learning_Model · Hugging Face",
+      "url": "https://huggingface.co/tnvjjr/Lunar_Lander_DeepQ_Learning_Model",
+      "snippet": "Lunar Lander Deep Q-Learning Model A Deep Q-Network (DQN) implementation to train an agent for the Lunar Lander environment from OpenAI Gym, complete with an interactive visualizer using Pygame."
+    },
+    {
+      "title": "GitHub - taeri077/lunar-lander-dqn: LunarLander-v3 Deep Q-Network (DQN ...",
+      "url": "https://github.com/taeri077/lunar-lander-dqn",
+      "snippet": "A state-of-the-art Deep Q-Network (DQN) trained for 1,000 full episodes on the Gymnasium LunarLander-v3 environment. This agent achieves an exceptional +319.1 Peak Score with flawless horizontal stabilization and perfect dual-leg centered touchdown on the lunar landing pad."
+    },
+    {
+      "title": "[Lunar Lander] Deep Q-Network (DQN).ipynb - Colab",
+      "url": "https://colab.research.google.com/github/kuds/rl-lunar-lander/blob/main/%5BLunar%20Lander%5D%20Deep%20Q-Network%20(DQN).ipynb",
+      "snippet": "3. Train the Agent with DQN Run the code cell below to train the agent from scratch. You are welcome to amend the supplied values of the parameters in the function, to try to see if you can get better performance! Alternatively, you can skip to the next step below (4. Watch a Smart Agent!), to load the saved model weights from a pre-trained agent."
+    },
+    {
+      "title": "GitHub - galkalimi/Lunar_Lander: Utilizing and training AI models to ...",
+      "url": "https://github.com/galkalimi/Lunar_Lander",
+      "snippet": "Successful DQN Landing In this GIF, the DQN agent successfully lands the lunar lander after completing its training. The smooth landing demonstrates the effectiveness of the trained DQN model in handling different conditions."
+    }
+  ]
+}

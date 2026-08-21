@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/LFM2.5-2.6B-DSpark",
+  "slug": "liquidai-lfm2-5-2-6b-dspark",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B-DSpark",
+  "created_at": "2026-08-10T18:12:14.000Z",
+  "updated_at": "2026-08-20T18:43:59.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dspark",
+    "lfm2",
+    "draft-model",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 401,
+  "trending_score": 27,
+  "parameters": 327707521,
+  "parameters_human": "327.7M",
+  "storage_bytes": 655421522,
+  "storage_human": "655 MB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark - Hugging Face",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "snippet": "Today, we release DSpark draft model checkpoints for three models from our LFM2.5 family: LFM2.5-1.2B-Instruct, LFM2.5-2.6B, and LFM2.5-8B-A1B. These add a speculative decoding path that trades a minimal memory increase for a large decoding speedup without changing output quality: Faster inference: up to 3.18 throughput improvement on a GPU and up to 2.87x on-device. Toward on-device agentic ..."
+    },
+    {
+      "title": "LFM2.5-DSpark: Up to 3.2x Faster Inference from H100 to MacBook",
+      "url": "https://www.liquid.ai/blog/lfm2.5-dspark",
+      "snippet": "The DSpark draft models for LFM2.5-1.2B-Instruct, LFM2.5-2.6B, and LFM2.5-8B-A1B are available today on Hugging Face. Additionally, the LFM-compatible DSpark integration is open-sourced upstream in llama.cpp and SGLang. Check out the model cards for how to run them. How DSpark works The decode phase in LLM inference is traditionally memory-bound."
+    },
+    {
+      "title": "Liquid AI&#x27;s 300M Draft Model Speeds Up Decoding…",
+      "url": "https://metallab.ai/en/2026/8/today-we-release-dspark-draft-models-for-lfm2-5-1-2b-instruct-lfm2-5-2",
+      "snippet": "이미지: X — 모델·오픈소스 영상 갈무리 Summary Liquid AI has released DSpark draft models for LFM2.5-1.2B-Instruct, 2.6B, and 8B-A1B. Each has roughly 300 million parameters. It delivered up to 3.18x speedup on H100 (428→1362 tok/s) and up to 2.87x on an M4 Max MacBook Pro (136→389 tok/s), with output text under greedy decoding being byte-for-byte identical to the original ..."
+    },
+    {
+      "title": "Liquid AI Ships LFM2.5-DSpark for Up to 3.2X Faster Inference",
+      "url": "https://www.unite.ai/liquid-ai-ships-lfm2-5-dspark-for-up-to-3-2x-faster-inference/",
+      "snippet": "Liquid AI released speculative-decoding draft checkpoints for three models in its LFM2.5 family on August 20, 2026, reporting throughput gains of up to 3.18x on a single H100 GPU and up to 2.87x on an Apple-silicon MacBook, with no change to model outputs. The LFM2.5-DSpark release covers drafters for LFM2.5-1.2B-Instruct, LFM2.5-2.6B, and the mixture-of-experts LFM2.5-8B-A1B, each adding ..."
+    },
+    {
+      "title": "Liquid AI Ships LFM2.5-DSpark Draft Models for Up to 3.2x Faster ...",
+      "url": "https://www.llms.blog/posts/liquid-ai-ships-lfm2-5-dspark-draft-models-for-up-to-3-2x-faster-inference",
+      "snippet": "Liquid AI has released speculative decoding draft checkpoints for three models across its LFM2.5 series: LFM2.5-1.2B-Instruct, LFM2.5-2.6B, and the mixture-of-experts model LFM2.5-8B-A1B. The release introduces small companion models designed to accelerate auto-regressive generation without altering final token distributions."
+    }
+  ]
+}

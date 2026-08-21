@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "translate-studio/MiLMMT-46-4B-v1.0-6bit-MLX",
+  "slug": "translate-studio-milmmt-46-4b-v1-0-6bit-mlx",
+  "author": "translate-studio",
+  "url": "https://huggingface.co/translate-studio/MiLMMT-46-4B-v1.0-6bit-MLX",
+  "created_at": "2026-08-21T15:47:26.000Z",
+  "updated_at": "2026-08-21T15:49:50.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma3",
+    "translation",
+    "quantized",
+    "multilingual",
+    "arxiv:2608.10812",
+    "base_model:xiaomi-research/MiLMMT-46-4B-v1.0",
+    "base_model:quantized:xiaomi-research/MiLMMT-46-4B-v1.0",
+    "license:gemma",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 849095168,
+  "parameters_human": "849.1M",
+  "storage_bytes": 3186654158,
+  "storage_human": "3.2 GB",
+  "base_model": "xiaomi-research/MiLMMT-46-4B-v1.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "translate-studio/MiLMMT-46-4B-v1.0-4bit-MLX · Hugging Face",
+      "url": "https://huggingface.co/translate-studio/MiLMMT-46-4B-v1.0-4bit-MLX",
+      "snippet": "Reference-Free Post-Training of Open Large Language Models for Multilingual Machine Translation"
+    },
+    {
+      "title": "mlx-community/MiLMMT-46-4B-v0.1-6bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/MiLMMT-46-4B-v0.1-6bit",
+      "snippet": "Scaling Model and Data for Multilingual Machine Translation with Open Large Language Models"
+    },
+    {
+      "title": "GitHub - 47thtechcorner/RayCodes_Xiaomi_Translation: Xiaomi 4B AI Model ...",
+      "url": "https://github.com/47thtechcorner/RayCodes_Xiaomi_Translation",
+      "snippet": "A lightweight, local translation pipeline powered by Xiaomi&#x27;s MiLMMT 4-billion parameter model. It enables private, two-way customer ticket translation across 46 global languages without sending sensitive customer data to cloud APIs."
+    },
+    {
+      "title": "GitHub - xiaomi-research/gemmax: Gemma-based Multilingual Machine ...",
+      "url": "https://github.com/xiaomi-research/gemmax",
+      "snippet": "📰 Updates Aug. 11 2026: The MiLMMT-v1. paper Reference-Free Post-Training of Open Large Language Models for Multilingual Machine Translation is available on ArXiv! Feb. 12 2026: The MiLMMT-v0.1 paper Scaling Model and Data for Multilingual Machine Translation with Open Large Language Models is available on ArXiv!"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "For a model in this tier, that is an excellent result on multi-step agentic work.\" Nick Hollon, Software Engineer, LangChain \"Gemini 3.7 Flash achieves on-par performance with mid-sized models such as GPT-5.6-Terra on our benchmarks, but at around half the cost, making it a strong contender in that category.\" Kyrill Hux, Co-Founder, Nunu.ai"
+    }
+  ]
+}

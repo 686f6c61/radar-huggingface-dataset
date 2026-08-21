@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/serialization-magic-collision-control",
+  "slug": "layerfault-serialization-magic-collision-control",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/serialization-magic-collision-control",
+  "created_at": "2026-08-21T19:08:04.000Z",
+  "updated_at": "2026-08-21T19:08:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53,
+  "storage_human": "53 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Offline-first security and admission control for local AI models. Layerfault validates model artifacts and local model runtimes before inference."
+    },
+    {
+      "title": "GitHub - microsoft/MAI-Code: Official repo for MAI-Code models, where ...",
+      "url": "https://github.com/microsoft/MAI-Code",
+      "snippet": "We are Microsoft AI, building AI that empowers everyone. MAI-Code is our family of in-house coding models developed to make everyday development faster, smarter, and more efficient. This is the official repo for MAI-Code models, where we publish MAI-Code model releases and updates and engage with the developer community on issues and feedback."
+    },
+    {
+      "title": "TensorFlow 2.14 Migration Guide: Solving Keras Layer Serialization ...",
+      "url": "https://markaicode.com/tensorflow-214-migration-guide-keras-layer-serialization/",
+      "snippet": "Fix Keras layer serialization errors when upgrading to TensorFlow 2.14 with this step-by-step guide covering custom layers, model loading, and best practices."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "glm-5.2 Model by Z-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/z-ai/glm-5.2/modelcard",
+      "snippet": "GLM-5.2 Description: GLM-5.2 is the latest flagship large language model from Z.ai (zai-org), designed for long-horizon tasks with a solid 1M-token context window. It represents a substantial leap in extended-context capability over its predecessor GLM-5.1, featuring the IndexShare architecture that reuses the same indexer across every four sparse attention layers, reducing per-token FLOPs by ..."
+    }
+  ]
+}

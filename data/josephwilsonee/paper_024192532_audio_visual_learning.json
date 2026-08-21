@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Josephwilsonee/paper_024192532_audio_visual_learning",
+  "slug": "josephwilsonee-paper_024192532_audio_visual_learning",
+  "author": "Josephwilsonee",
+  "url": "https://huggingface.co/Josephwilsonee/paper_024192532_audio_visual_learning",
+  "created_at": "2026-08-21T17:39:13.000Z",
+  "updated_at": "2026-08-21T17:39:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-visual-learning",
+    "enthusiastic",
+    "intro-method-exp-related-conclusion",
+    "long-detailed",
+    "markdown",
+    "narrative-progressive",
+    "numeric-bibtex",
+    "passive",
+    "structured-imrad",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/Xplore/home.jsp",
+      "snippet": "IEEE Xplore, delivering full text access to the world&#x27;s highest quality technical literature in engineering and technology. | IEEE Xplore"
+    },
+    {
+      "title": "Awesome Audio-Visual: - GitHub",
+      "url": "https://github.com/krantiparida/awesome-audio-visual",
+      "snippet": "Awesome Audio-Visual: A curated list of papers and datsets for various audio-visual tasks, inspired by awesome-computer-vision."
+    },
+    {
+      "title": "Object-Aware Adaptive-Positivity Learning for Audio-Visual Question ...",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/28116",
+      "snippet": "For model optimization, we propose an object-aware adaptive-positivity learning strategy that selects the highly semantic-matched multi-modal pair as &#92;textit {positivity}. Specifically, we design two object-aware contrastive loss functions to identify the highly relevant question-object pairs and audio-object pairs, respectively."
+    },
+    {
+      "title": "Artificial Intelligence & Deep Learning | Pushing the Frontier of ...",
+      "url": "https://www.facebook.com/groups/DeepNetGroup/posts/2685718385154360/",
+      "snippet": "Pushing the Frontier of Audiovisual Perception with Large-Scale Multimodal Correspondence Learning (Meta, December 2025) Paper:..."
+    }
+  ]
+}

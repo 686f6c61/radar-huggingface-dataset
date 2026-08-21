@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Ryanmrm4627/model_260384870_coca_nano",
+  "slug": "ryanmrm4627-model_260384870_coca_nano",
+  "author": "Ryanmrm4627",
+  "url": "https://huggingface.co/Ryanmrm4627/model_260384870_coca_nano",
+  "created_at": "2026-08-21T18:20:40.000Z",
+  "updated_at": "2026-08-21T18:20:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coca",
+    "gated-fusion",
+    "mish",
+    "nano",
+    "novograd",
+    "polynomial",
+    "retrieval",
+    "scalenorm",
+    "standard",
+    "trunc-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nano Banana 2 - Gemini AI image generator & photo editor",
+      "url": "https://gemini.google/overview/image-generation/",
+      "snippet": "With Nano Banana 2, Gemini&#x27;s AI image generator and photo editor, you can create high-quality images and edit photos into countless new creations."
+    },
+    {
+      "title": "Nano Banana | Google AI Studio",
+      "url": "https://aistudio.google.com/models/nano-banana",
+      "snippet": "Transparency All images with Nano Banana include an invisible SynthID digital watermark to clearly identify them as AI-generated. docs Docs"
+    },
+    {
+      "title": "rtmdet_nano_8xb32_300e_coco_relu.py - GitHub",
+      "url": "https://github.com/Seeed-Studio/ModelAssistant/blob/main/configs/rtmdet/rtmdet_nano_8xb32_300e_coco_relu.py",
+      "snippet": "Seeed SenseCraft Model Assistant is an open-source project focused on embedded AI. 🔥🔥🔥 - ModelAssistant/configs/rtmdet/rtmdet_nano_8xb32_300e_coco_relu.py at ..."
+    },
+    {
+      "title": "AI Coca-Cola-Style Commercial (Nano Banana Pro + Kling 2.6)",
+      "url": "https://www.youtube.com/watch?v=JdqL88ZjgyA",
+      "snippet": "I tried to recreate the iconic Budweiser \"Wassup\" commercial using AI — but with a Christmas Coca-Cola twist and Wes Anderson color grading. Spoiler: AI still can&#x27;t stretch words properly."
+    },
+    {
+      "title": "Nano Banana: Create High-Quality AI Visuals with Gemini 2.5",
+      "url": "https://artlist.io/ai/models/nano-banana",
+      "snippet": "Explore Nano Banana by Gemini 2.5. Artlist&#x27;s essential AI model for creators who need reliable, high-speed image generation for daily projects."
+    }
+  ]
+}

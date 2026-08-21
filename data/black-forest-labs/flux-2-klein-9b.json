@@ -24,9 +24,9 @@
     "diffusers:Flux2KleinPipeline",
     "region:us"
   ],
-  "likes": 1236,
+  "likes": 1238,
   "downloads_30d": 310085,
-  "trending_score": 17,
+  "trending_score": 18,
   "parameters": 9078581248,
   "parameters_human": "9.08B",
   "storage_bytes": 52884185239,

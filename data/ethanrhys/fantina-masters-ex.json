@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EthanRhys/Fantina-Masters-EX",
+  "slug": "ethanrhys-fantina-masters-ex",
+  "author": "EthanRhys",
+  "url": "https://huggingface.co/EthanRhys/Fantina-Masters-EX",
+  "created_at": "2026-08-21T19:17:33.000Z",
+  "updated_at": "2026-08-21T19:18:45.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76091794,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EthanRhys (EthanRhys) - Hugging Face",
+      "url": "https://huggingface.co/EthanRhys/models",
+      "snippet": "I make RVC voice models of cartoons, anime and video game characters in both English and Spanish (Sometimes in other international languages)"
+    },
+    {
+      "title": "Ethan (Masters EX) AI RVC Model | FakeYou",
+      "url": "https://fakeyou.com/weight/weight_fa6efm4abn6jg55egzpvf2169/ethan",
+      "snippet": "Seedance 2.0 the cheapest anywhere. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    },
+    {
+      "title": "Elio (Masters EX) AI RVC Model | FakeYou",
+      "url": "https://fakeyou.com/weight/weight_sa5f6bjctv0gyk6564qzpfvkg/elio",
+      "snippet": "Make movies with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    },
+    {
+      "title": "Elio (Masters EX) Deep Fake TTS generator | FakeYou",
+      "url": "https://fakeyou.com/tts/TM:sb505zzzz82b",
+      "snippet": "Make movies with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    },
+    {
+      "title": "EthanRhys (EthanRhys) - Hugging Face",
+      "url": "https://huggingface.co/EthanRhys",
+      "snippet": "User profile of EthanRhys on Hugging Face"
+    }
+  ]
+}

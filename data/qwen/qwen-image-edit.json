@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen-Image-Edit",
+  "slug": "qwen-qwen-image-edit",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen-Image-Edit",
+  "created_at": "2025-08-17T08:32:01.000Z",
+  "updated_at": "2025-08-25T04:41:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPipeline",
+    "region:us"
+  ],
+  "likes": 2486,
+  "downloads_30d": 120157,
+  "trending_score": 9,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57710671286,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen-Image-Edit · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen Image Edit - a Hugging Face Space by Qwen",
+      "url": "https://huggingface.co/spaces/Qwen/Qwen-Image-Edit",
+      "snippet": "Learn more about the Qwen-Image series. Try on Qwen Chat, or download model to run locally with ComfyUI or diffusers."
+    },
+    {
+      "title": "Qwen-Image-Edit: Alibaba&#x27;s 20B AI Image Editing Model — Semantic ...",
+      "url": "https://qwenimages.com/blog/qwen-image-edit-release",
+      "snippet": "Alibaba&#x27;s Tongyi Lab open-sources Qwen-Image-Edit, a 20B parameter model enabling text-driven semantic editing, appearance modification, and bilingual text rewriting in images. From style transfer to object manipulation, it redefines what AI image editing can do."
+    },
+    {
+      "title": "qwen-image-edit Model by Qwen | NVIDIA NIM",
+      "url": "https://build.nvidia.com/qwen/qwen-image-edit",
+      "snippet": "Qwen-Image-Edit is an image editing model with multilingual text editing and strong subject consistency."
+    },
+    {
+      "title": "Qwen-Image-Edit - 千问AI平台",
+      "url": "https://www.qianwenai.com/models/qwen-image-edit",
+      "snippet": "千问系列首个图像编辑模型，成功将Qwen-Image的文本渲染能力拓展到编辑任务上。支持精准的中英双语文字编辑、视觉外观与语义双重编辑、具备强大的跨基准性能表现。"
+    }
+  ]
+}

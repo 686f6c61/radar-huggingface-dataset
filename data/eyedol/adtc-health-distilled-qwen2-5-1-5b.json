@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "EYEDOL/adtc-health-distilled-qwen2.5-1.5b",
+  "slug": "eyedol-adtc-health-distilled-qwen2-5-1-5b",
+  "author": "EYEDOL",
+  "url": "https://huggingface.co/EYEDOL/adtc-health-distilled-qwen2.5-1.5b",
+  "created_at": "2026-08-21T17:39:56.000Z",
+  "updated_at": "2026-08-21T17:44:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EYEDOL/adtc-health-sft-qwen2.5-1.5b · Hugging Face",
+      "url": "https://huggingface.co/EYEDOL/adtc-health-sft-qwen2.5-1.5b",
+      "snippet": "EYEDOL / adtc-health-sft-qwen2.5-1.5b like 0 Text Generation Transformers Safetensors qwen2 conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "madaibaba/deepseek-distill-qwen2.5-1.5b · Hugging Face",
+      "url": "https://huggingface.co/madaibaba/deepseek-distill-qwen2.5-1.5b",
+      "snippet": "Evaluation We have evaluated the distilled model on several NLP tasks, including text generation, summarization, and question-answering. Results show that the model performs with high accuracy and faster inference compared to the original Qwen model."
+    },
+    {
+      "title": "adtc-health-sft-qwen2.5-1.5b API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/EYEDOL/adtc-health-sft-qwen2.5-1.5b",
+      "snippet": "Deploy adtc-health-sft-qwen2.5-1.5b with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "qwen2.5:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5-1.5B Transformer Model - api.emergentmind.com",
+      "url": "https://api.emergentmind.com/topics/qwen2-5-1-5b-model",
+      "snippet": "Qwen2.5-1.5B is a 1.5B-parameter, decoder-only transformer model designed for general language modeling and enhanced reasoning through instruction tuning and reinforcement learning. It leverages advanced training techniques, including supervised fine-tuning, RL-based post-training, and knowledge distillation, to boost performance across tasks. Empirical evaluations demonstrate significant ..."
+    }
+  ]
+}

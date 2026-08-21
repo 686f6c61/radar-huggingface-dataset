@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ipfipfipf/Qwen3.5-4B-MathCodeSearch-SDPO-E-Step30",
+  "slug": "ipfipfipf-qwen3-5-4b-mathcodesearch-sdpo-e-step30",
+  "author": "ipfipfipf",
+  "url": "https://huggingface.co/ipfipfipf/Qwen3.5-4B-MathCodeSearch-SDPO-E-Step30",
+  "created_at": "2026-08-21T18:13:06.000Z",
+  "updated_at": "2026-08-21T18:25:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3.5",
+    "megatron-core",
+    "sdpo",
+    "reinforcement-learning",
+    "math",
+    "code",
+    "search",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58886301938,
+  "storage_human": "58.9 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-e · Hugging Face",
+      "url": "https://huggingface.co/ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-e",
+      "snippet": "Instructions to use ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-rlsd-arm-e with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-grpo-arm-e · Hugging Face",
+      "url": "https://huggingface.co/ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-grpo-arm-e",
+      "snippet": "Instructions to use ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-grpo-arm-e with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen 3.5 4B Fine-Tuning reproduction process - GitHub",
+      "url": "https://github.com/David-BOOM/MathThink-Qwen-3.5-4B",
+      "snippet": "This repository is the code for fully reproducing the whole fine-tuning process of DavidOKB/MathThink-Qwen-3.5-4B. - David-BOOM/MathThink-Qwen-3.5-4B"
+    },
+    {
+      "title": "Math Solver - Trusted Online AI Math Calculator | Symbolab",
+      "url": "https://www.symbolab.com/",
+      "snippet": "Symbolab: equation search and math solver - solves algebra, trigonometry and calculus problems step by step"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

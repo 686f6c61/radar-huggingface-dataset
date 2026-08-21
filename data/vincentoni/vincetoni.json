@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "vincentoni/vincetoni",
+  "slug": "vincentoni-vincetoni",
+  "author": "vincentoni",
+  "url": "https://huggingface.co/vincentoni/vincetoni",
+  "created_at": "2026-08-21T15:56:14.000Z",
+  "updated_at": "2026-08-21T15:56:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vincetoni (Vincent Oni) · GitHub",
+      "url": "https://github.com/Vincetoni",
+      "snippet": "Vincetoni has 18 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Vincent — AI Video & Image Generator",
+      "url": "https://vincentai.app/",
+      "snippet": "Transform your photos, videos, and text prompts into stunning AI-generated art. Create videos from text, animate photos, apply artistic styles, and more."
+    },
+    {
+      "title": "Foundation model lab · 3 models on Venice.ai - VeniceStats",
+      "url": "https://venicestats.com/venice-models/providers/venice",
+      "snippet": "Venice is a privacy-focused AI platform that develops its own in-house models alongside hosting third-party offerings. The organization emphasizes uncensored, unrestricted text generation as a core design principle, building models specifically tuned to minimize refusals and content filtering while preserving helpfulness and coherence. Venice currently offers three text models under its own ..."
+    },
+    {
+      "title": "Venice.ai Models — Full Catalog | VeniceStats",
+      "url": "https://venicestats.com/venice-models",
+      "snippet": "Venice.ai Models The complete catalog of every model on Venice.ai — auto-updated. Pricing, capabilities, context windows, and direct chat integration."
+    },
+    {
+      "title": "GitHub - Vincetoni/Vincetoni: Config files for my GitHub profile.",
+      "url": "https://github.com/Vincetoni/Vincetoni",
+      "snippet": "Config files for my GitHub profile. Contribute to Vincetoni/Vincetoni development by creating an account on GitHub."
+    }
+  ]
+}

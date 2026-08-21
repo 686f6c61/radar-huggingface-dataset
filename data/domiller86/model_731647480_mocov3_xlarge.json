@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "domiller86/model_731647480_mocov3_xlarge",
+  "slug": "domiller86-model_731647480_mocov3_xlarge",
+  "author": "domiller86",
+  "url": "https://huggingface.co/domiller86/model_731647480_mocov3_xlarge",
+  "created_at": "2026-08-21T16:28:47.000Z",
+  "updated_at": "2026-08-21T16:28:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "classification",
+    "co-attention",
+    "gelu-tanh",
+    "kaiming",
+    "mocov3",
+    "polynomial",
+    "rmsnorm",
+    "sliding-window",
+    "xlarge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "GitHub - facebookresearch/moco: PyTorch implementation of MoCo: https ...",
+      "url": "https://github.com/facebookresearch/moco",
+      "snippet": "In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to make participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal ..."
+    },
+    {
+      "title": "mocov3_vit-base-p16_16xb256-amp-coslr-300e_in1k_genview.pth ...",
+      "url": "https://huggingface.co/Xiaojie0903/genview_pretrained_models/blob/main/mocov3_vit-base-p16_16xb256-amp-coslr-300e_in1k_genview.pth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "facebookresearch/moco-v3 | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/moco-v3",
+      "snippet": "MoCo v3 Overview Relevant source files This document provides an introduction to MoCo v3 (Momentum Contrast version 3), a self-supervised learning framework for pre-training visual representations without labels. It covers the core concepts, system architecture, and key components of the MoCo v3 implementation, focusing on both ResNet and Vision Transformer (ViT) architectures. For more ..."
+    },
+    {
+      "title": "MoCo v3 Approach | Xiyue-Wang/TransPath | DeepWiki",
+      "url": "https://deepwiki.com/Xiyue-Wang/TransPath/2.2-moco-v3-approach",
+      "snippet": "Purpose and Scope This document details the MoCo v3 (Momentum Contrast version 3) approach in the TransPath system, which is one of the three main methodologies used for unsupervised contrastive learning on histopathological images. MoCo v3 combines momentum contrast with Vision Transformers to learn effective representations from unlabeled histopathology data. For information about other ..."
+    }
+  ]
+}

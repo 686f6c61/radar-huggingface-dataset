@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KyleLopez/model_587404722_deit_huge",
+  "slug": "kylelopez-model_587404722_deit_huge",
+  "author": "KyleLopez",
+  "url": "https://huggingface.co/KyleLopez/model_587404722_deit_huge",
+  "created_at": "2026-08-21T19:25:27.000Z",
+  "updated_at": "2026-08-21T19:25:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "approx-gelu",
+    "batchnorm",
+    "bilinear",
+    "deit",
+    "flash",
+    "generation",
+    "huge",
+    "kaiming",
+    "step",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kyle Lopez (@kylelopez) • Instagram photos and videos",
+      "url": "https://www.instagram.com/kylelopez/",
+      "snippet": "6,526 Followers, 852 Following, 1,000 Posts - Kyle Lopez (@kylelopez) on Instagram: \"Jesus Dad Powerlifter Award Winning/Published Photographer @OregonAirshow @DrakeWaterfowl | Creative Team @BillSaundersCalls | Field Staff\""
+    },
+    {
+      "title": "google/vit-huge-patch14-224-in21k · Hugging Face",
+      "url": "https://huggingface.co/google/vit-huge-patch14-224-in21k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kyle Lopez&#x27;s photo portfolio - 0 albums and 4 photos | Model Mayhem",
+      "url": "https://www.modelmayhem.com/portfolio/2403857/viewall",
+      "snippet": "Model Mayhem is the #1 portfolio website for professional models and photographers. Create a profile, upload your photos and connect with other professionals"
+    },
+    {
+      "title": "kyle (@kylelopezdee) • Instagram photos and videos",
+      "url": "https://www.instagram.com/kylelopezdee/reels/",
+      "snippet": "4,882 Followers, 553 Following, 9 Posts - kyle (@kylelopezdee) on Instagram: \"🇵🇭🇨🇳\""
+    },
+    {
+      "title": "KYLE&#x27;S AI WORKS - High Quality AI Repaints for MSFS……and P3D/FSX",
+      "url": "https://kyles-ai-works.com/",
+      "snippet": "For the FAIB A320 IAE Model Big thank you to Canvas painter Jviation and DrakoLiveries for use of their materials! DOWNLOAD"
+    }
+  ]
+}

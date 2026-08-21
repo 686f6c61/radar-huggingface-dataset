@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pranavgup/paper_014500874_multimodal_reasoning",
+  "slug": "pranavgup-paper_014500874_multimodal_reasoning",
+  "author": "pranavgup",
+  "url": "https://huggingface.co/pranavgup/paper_014500874_multimodal_reasoning",
+  "created_at": "2026-08-21T14:45:41.000Z",
+  "updated_at": "2026-08-21T14:45:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "cautious",
+    "first-person-plural",
+    "intro-method-exp-related-conclusion",
+    "multimodal-reasoning",
+    "numeric-nature",
+    "theoretical-rigorous",
+    "typst",
+    "unstructured-narrative",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multimodal Agent AI: A Survey of Recent Advances and Future ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11390-025-4802-8",
+      "snippet": "In recent years, multimodal agent AI (MAA) has emerged as a pivotal area of research, holding promise for transforming human-machine interaction. Agent AI systems, capable of perceiving and responding to inputs from multiple modalities (e.g., language, vision, audio), have demonstrated remarkable progress in understanding complex environments and executing intricate tasks. This survey ..."
+    },
+    {
+      "title": "arXiv: Your Agent&#x27;s Memories Are Not Its Own: Forged Reas… — AI_SAFETY ...",
+      "url": "https://www.matproof.com/regulatory-updates/arxiv-your-agents-memories-are-not-its-own-forged-reasoning-attacks-on-llm-agent-6852",
+      "snippet": "This paper, published on arXiv in July 2026, presents a novel security vulnerability specific to large language model (LLM) agents that use persistent…"
+    },
+    {
+      "title": "[2509.24322] Multimodal Large Language Models Meet Multimodal Emotion ...",
+      "url": "https://arxiv.org/abs/2509.24322",
+      "snippet": "In AI for Science, multimodal emotion recognition and reasoning has become a rapidly growing frontier. While LLMs and MLLMs have achieved notable progress in this area, the field still lacks a systematic review that consolidates recent developments."
+    },
+    {
+      "title": "Multimodal Large Language Models: Bridging Perception, Reasoning, and ...",
+      "url": "https://scipapermill.com/2026/07/11/multimodal-large-language-models-bridging-perception-reasoning-and-reality-2/",
+      "snippet": "Latest 43 papers on multimodal large language models: Jul. 11, 2026 Multimodal Large Language Models (MLLMs) are revolutionizing how AI interacts with the world, moving beyond text to understand and generate content across images, video, and audio. Yet, turning this promise into robust, real-world applications presents a fascinating array of challenges, from understanding complex visual scenes ..."
+    },
+    {
+      "title": "Perception, Reason, Think, and Plan: A Survey on Large Multimodal ...",
+      "url": "https://arxiv.org/abs/2505.04921",
+      "snippet": "Reasoning lies at the heart of intelligence, shaping the ability to make decisions, draw conclusions, and generalize across domains. In artificial intelligence, as systems increasingly operate in open, uncertain, and multimodal environments, reasoning becomes essential for enabling robust and adaptive behavior. Large Multimodal Reasoning Models (LMRMs) have emerged as a promising paradigm ..."
+    }
+  ]
+}

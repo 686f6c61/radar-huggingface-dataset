@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Adalflow/koshish-women-friendliness-scorer",
+  "slug": "adalflow-koshish-women-friendliness-scorer",
+  "author": "Adalflow",
+  "url": "https://huggingface.co/Adalflow/koshish-women-friendliness-scorer",
+  "created_at": "2026-08-21T19:29:18.000Z",
+  "updated_at": "2026-08-21T19:30:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278044417,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129300283,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SylphAI-Inc/AdalFlow: AdalFlow: The library to build & auto ...",
+      "url": "https://github.com/SylphAI-Inc/AdalFlow",
+      "snippet": "AdalFlow is named in honor of Ada Lovelace, the pioneering female mathematician who first recognized that machines could go beyond mere calculations. As a team led by a female founder, we aim to inspire more women to pursue careers in AI."
+    },
+    {
+      "title": "Sylph - AdalFlow",
+      "url": "https://adalflow.sylph.ai/",
+      "snippet": "AdalFlow unifies ideas from all of the above into a single PyTorch-like framework — textual gradients (à la TextGrad), few-shot bootstrap (à la DSPy), and instruction history — all composable within Parameter, Generator, AdalComponent, and Trainer. Unites Research and Production ¶ Our team has experience in both AI research and production."
+    },
+    {
+      "title": "GitHub - risan-raja/adalflow: AdalFlow: The library to build & auto ...",
+      "url": "https://github.com/risan-raja/adalflow",
+      "snippet": "AdalFlow is named in honor of Ada Lovelace, the pioneering female mathematician who first recognized that machines could go beyond mere calculations. As a team led by a female founder, we aim to inspire more women to pursue careers in AI."
+    },
+    {
+      "title": "API Reference - AdalFlow",
+      "url": "https://adalflow.sylph.ai/apis/index.html",
+      "snippet": "Components ¶ Functional components like model client, retriever, agent, local data processing, and output parsers are here."
+    },
+    {
+      "title": "SylphAI-Inc/AdalFlow | DeepWiki",
+      "url": "https://deepwiki.com/SylphAI-Inc/AdalFlow",
+      "snippet": "AdalFlow is a PyTorch-inspired library for building and auto-optimizing Large Language Model (LLM) applications. The library provides a unified framework for constructing task pipelines—ranging from chatbots and Retrieval-Augmented Generation (RAG) systems to agentic workflows—and automatically optimizing their prompts and few-shot examples ..."
+    }
+  ]
+}

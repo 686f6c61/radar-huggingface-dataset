@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/serialization-pickle-dangerous-global",
+  "slug": "layerfault-serialization-pickle-dangerous-global",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/serialization-pickle-dangerous-global",
+  "created_at": "2026-08-21T19:08:23.000Z",
+  "updated_at": "2026-08-21T19:08:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16,
+  "storage_human": "16 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PyTorch Pickle Deserialization Vulnerability Guide",
+      "url": "https://safeguard.sh/resources/blog/analysis-of-pickle-file-deserialization-vulnerabilities-in-ml-frameworks",
+      "snippet": "For a security category that regulators increasingly expect organizations to manage — model provenance, artifact integrity, third-party AI risk — this is a case study in why a pickle deserialization vulnerability in a widely used ML framework deserves the same scrutiny as a remote code execution bug in a web server."
+    },
+    {
+      "title": "PickleBall: Secure Deserialization of Pickle-based Machine Learning ...",
+      "url": "https://arxiv.org/html/2508.15987v2",
+      "snippet": "In comparison, evaluated model scanners fail to identify known malicious models, and the state-of-the-art loader loads 22% fewer benign models than PickleBall. PickleBall removes the threat of arbitrary function invocation from malicious pickle-based models, raising the bar for attackers as they have to depend on code reuse techniques."
+    },
+    {
+      "title": "PickleBall: Secure Deserialization of Pickle-based Machine Learning Models",
+      "url": "https://arxiv.org/html/2508.15987v1",
+      "snippet": "In this work, we propose a novel approach to secure pickle model deserialization, which we focus on for three reasons. First, pickle is a popular exchange format for models: repositories with pickle models are downloaded over 2.1 billion times per month from the Hugging Face model hub (§ 3.1)."
+    },
+    {
+      "title": "PDF PickleBall: Secure Deserialization of Pickle-based Machine Learning Models",
+      "url": "https://www.cs.columbia.edu/~junfeng/papers/pickleball-ccs25.pdf",
+      "snippet": "Abstract Machine learning model repositories such as the Hugging Face Model Hub facilitate model exchanges. However, bad actors can de-liver malware through compromised models. Existing defenses such as safer model formats, restrictive (but inflexible) loading policies, and model scanners have shortcomings: 44.9% of popular models on Hugging Face still use the insecure pickle format, 15% of ..."
+    },
+    {
+      "title": "ML Model Deserialization Attacks: Pickle, ONNX, and Safetensors ...",
+      "url": "https://appsecbrief.com/articles/ml-model-deserialization-pickle-onnx-safetensors-security-guide/",
+      "snippet": "ML Model Deserialization Attacks: Pickle, ONNX, and Safetensors Security Loading an ML model file can execute arbitrary code. Python&#x27;s pickle format — used by PyTorch, scikit-learn, and most of the ML ecosystem — gives model files the same privileges as running code. This guide covers pickle RCE, ONNX external data risks, safer alternatives, and how to build a secure model loading pipeline."
+    }
+  ]
+}

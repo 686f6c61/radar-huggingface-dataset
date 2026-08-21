@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "DATA78/SICKOLLIE",
+  "slug": "data78-sickollie",
+  "author": "DATA78",
+  "url": "https://huggingface.co/DATA78/SICKOLLIE",
+  "created_at": "2026-08-21T15:31:55.000Z",
+  "updated_at": "2026-08-21T15:32:52.000Z",
+  "license": "data",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sickollie/SickOllie: A compact ComfyUI node pack for bulk LoRA ...",
+      "url": "https://github.com/sickollie/SickOllie",
+      "snippet": "GitHub - sickollie/SickOllie: A compact ComfyUI node pack for bulk LoRA testing with folder based functionality, txt file based prompt automation using dropdown based selections, Krea2 generation, Civitai metadata-aware output and dropdown based filenaming with model intergrations and automatic filename trimming, and image previews with pizazz."
+    },
+    {
+      "title": "martineux/sickollie · Hugging Face",
+      "url": "https://huggingface.co/martineux/sickollie",
+      "snippet": "martineux / sickollie like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Sick Ollie Creator Studio - Creator Studio+Toolkit | Krea 2 Workflows ...",
+      "url": "https://civitai.com/models/2811445/sick-ollie-node-pack",
+      "snippet": "50 Updated: Aug 18, 2026 tool node pack automated bulk batch sickollie + 3 Creator Studio+Toolkit v2_Studio v1.1"
+    },
+    {
+      "title": "sickOllie_v1.safetensors · LoneWolfVPS/TIZ_TESTING at main",
+      "url": "https://huggingface.co/LoneWolfVPS/TIZ_TESTING/blob/main/sickOllie_v1.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sickollie Creator Profile | Civitai",
+      "url": "https://civitai.com/user/sickollie",
+      "snippet": "Models Uploaded: 0, Followers: 1.4k, Total Likes Received: 1.3k, Total Downloads Received: 17.8k."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "hsilvosa/safecast-radiation-spatial-regressor",
+  "slug": "hsilvosa-safecast-radiation-spatial-regressor",
+  "author": "hsilvosa",
+  "url": "https://huggingface.co/hsilvosa/safecast-radiation-spatial-regressor",
+  "created_at": "2026-08-21T15:06:59.000Z",
+  "updated_at": "2026-08-21T15:07:07.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "joblib",
+    "onnx",
+    "safetensors",
+    "spatial_harmonic_net",
+    "tabular-regression",
+    "spatial-ml",
+    "radiation",
+    "safecast",
+    "environmental-science",
+    "anomaly-detection",
+    "en",
+    "dataset:hsilvosa/safecast-radiation",
+    "license:cc0-1.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395234,
+  "parameters_human": "395234",
+  "storage_bytes": 11819205,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Global Radiation Spatial Regression",
+      "dataset": "Safecast Historical Radiation Measurements",
+      "metric": "R2 Score (log-scale)",
+      "value": 0.0785
+    },
+    {
+      "task": "Global Radiation Spatial Regression",
+      "dataset": "Safecast Historical Radiation Measurements",
+      "metric": "RMSE (uSv/h)",
+      "value": 3.11636
+    },
+    {
+      "task": "Global Radiation Spatial Regression",
+      "dataset": "Safecast Historical Radiation Measurements",
+      "metric": "MAE (uSv/h)",
+      "value": 0.67873
+    }
+  ],
+  "sources": [
+    {
+      "title": "hsilvosa/safecast-radiation · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/hsilvosa/safecast-radiation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Safecast",
+      "url": "https://safecast.org/",
+      "snippet": "Radiation Safecast maintains the largest open dataset of background radiation measurements ever collected. Over 150 million readings to date and growing daily."
+    },
+    {
+      "title": "hsilvosa (Hugo Silvosa Cuervo) - Hugging Face",
+      "url": "https://huggingface.co/datasets/HSilvosa/",
+      "snippet": "hsilvosa&#x27;s datasets6 Sort: Recently updated hsilvosa/bne-linked-data Viewer •Updated about 2 hours ago•260M"
+    },
+    {
+      "title": "hsilvosa (HugoSilvosa) / Repositories · GitHub",
+      "url": "https://github.com/hsilvosa?tab=repositories",
+      "snippet": "hsilvosa has 16 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Safecast New Map - Global map of radioactivity",
+      "url": "https://origin-simplemap.safecast.org/",
+      "snippet": "Note: AI-generated response using data from the Safecast radiation monitoring network. For critical safety decisions, please consult official sources."
+    }
+  ]
+}

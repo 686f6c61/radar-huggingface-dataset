@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/eng-100mb-after-eng-baseline-ckpt500_seed455",
+  "slug": "fpadovani-eng-100mb-after-eng-baseline-ckpt500_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/eng-100mb-after-eng-baseline-ckpt500_seed455",
+  "created_at": "2026-08-21T15:58:03.000Z",
+  "updated_at": "2026-08-21T16:19:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/ppt-art-lang-eng-baseline-100mb_seed455",
+    "base_model:finetune:fpadovani/ppt-art-lang-eng-baseline-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250705982,
+  "storage_human": "251 MB",
+  "base_model": "fpadovani/ppt-art-lang-eng-baseline-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fpadovani/eng-100mb-after-eng-baseline-ckpt4000_seed3407 · Hugging Face",
+      "url": "https://huggingface.co/fpadovani/eng-100mb-after-eng-baseline-ckpt4000_seed3407",
+      "snippet": "Instructions to use fpadovani/eng-100mb-after-eng-baseline-ckpt4000_seed3407 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "eng-100mb-after-eng-baseline-ckpt500_seed455 - friendli.ai",
+      "url": "https://friendli.ai/models/fpadovani/eng-100mb-after-eng-baseline-ckpt500_seed455",
+      "snippet": "Deploy eng-100mb-after-eng-baseline-ckpt500_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "eng-100mb-after-eng-baseline-ckpt500_seed3407 - friendli.ai",
+      "url": "https://friendli.ai/models/fpadovani/eng-100mb-after-eng-baseline-ckpt500_seed3407",
+      "snippet": "Deploy eng-100mb-after-eng-baseline-ckpt500_seed3407 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google&#x27;s service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

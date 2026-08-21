@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "williamsfap/paper_025797353_3d_scene_understanding",
+  "slug": "williamsfap-paper_025797353_3d_scene_understanding",
+  "author": "williamsfap",
+  "url": "https://huggingface.co/williamsfap/paper_025797353_3d_scene_understanding",
+  "created_at": "2026-08-21T17:50:17.000Z",
+  "updated_at": "2026-08-21T17:50:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d-scene-understanding",
+    "active",
+    "author-year",
+    "cautious",
+    "detailed-descriptive",
+    "highlight-bullet",
+    "intro-problem-solution-validation-future",
+    "plain-text",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2603.19235] Generation Models Know Space: Unleashing Implicit 3D ...",
+      "url": "https://arxiv.org/abs/2603.19235",
+      "snippet": "Abstract page for arXiv paper 2603.19235: Generation Models Know Space: Unleashing Implicit 3D Priors for Scene Understanding"
+    },
+    {
+      "title": "Structured Generative Models for Scene Understanding",
+      "url": "https://arxiv.org/abs/2302.03531",
+      "snippet": "This position paper argues for the use of &#92;&#92;emph{structured generative models} (SGMs) for the understanding of static scenes. This requires the reconstruction of a 3D scene from an input image (or a set of multi-view images), whereby the contents of the image(s) are causally explained in terms of models of instantiated objects, each with their own type, shape, appearance and pose, along with ..."
+    },
+    {
+      "title": "GitHub - H-EmbodVis/VEGA-3D: [ECCV 2026] Generation Models Know Space ...",
+      "url": "https://github.com/H-EmbodVis/VEGA-3D",
+      "snippet": "This repository contains the official implementation of VEGA-3D for the paper Generation Models Know Space: Unleashing Implicit 3D Priors for Scene Understanding."
+    },
+    {
+      "title": "Paper page - Generation Models Know Space: Unleashing Implicit 3D ...",
+      "url": "https://huggingface.co/papers/2603.19235",
+      "snippet": "Generation Models Know Space: Unleashing Implicit 3D Priors for Scene Understanding ... Xianjin Wu , Dingkang Liang , Tianrui Feng ,"
+    },
+    {
+      "title": "3D Scene Understanding at CVPR 2026",
+      "url": "https://scene-understanding.com/",
+      "snippet": "Overview The rapid evolution toward next-generation embodied AI has driven remarkable convergence across computer vision, graphics, and robotics, with growing emphasis on robust 3D understanding for in-the-wild and real-world applications. Recent breakthroughs have introduced powerful 3D foundational models that demonstrate unprecedented zero-shot generalization across diverse 3D ..."
+    }
+  ]
+}

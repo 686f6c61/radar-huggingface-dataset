@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "wildfellhall/public-poetry-50m-gguf",
+  "slug": "wildfellhall-public-poetry-50m-gguf",
+  "author": "wildfellhall",
+  "url": "https://huggingface.co/wildfellhall/public-poetry-50m-gguf",
+  "created_at": "2026-08-21T19:16:00.000Z",
+  "updated_at": "2026-08-21T19:16:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46742528,
+  "parameters_human": "46.7M",
+  "storage_bytes": 95253952,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "wildfellhall (wildfellhall) - Hugging Face",
+      "url": "https://huggingface.co/wildfellhall/models",
+      "snippet": "Recent Activity liked a modelabout 1 month ago unsloth/Qwen3.6-27B-GGUF View all activity"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "wildfellhall (Wildfell Hall) / Repositories · GitHub",
+      "url": "https://github.com/wildfellhall?tab=repositories",
+      "snippet": "TheTorturedPoetsDepartment-TaylorSwift.WilliamShakespeare.andCo Public Taylor Swift&#x27;s album The Tortured Poets Department narrowly beats out the rest of her oeuvre, in my opinion, for the title of her most poetic work, so I finetuned a model with her poetry and that o…"
+    },
+    {
+      "title": "local-llm-guide/04-advanced-usage/gguf-modelfile.md at main - GitHub",
+      "url": "https://github.com/Lingdas1/local-llm-guide/blob/main/04-advanced-usage/gguf-modelfile.md",
+      "snippet": "GGUF (GPT-Generated Unified Format) is the standard file format for running LLMs locally. Think of it as the .mp3 of AI models: Compressed — 70-85% smaller than the original float16 weights Fast — optimized for CPU and GPU inference Portable — one file contains the entire model Metadata-rich — includes tokenizer, chat template, and model config Every ollama pull downloads a GGUF file ..."
+    }
+  ]
+}

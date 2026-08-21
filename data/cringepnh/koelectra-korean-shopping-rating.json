@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "cringepnh/koelectra-korean-shopping-rating",
+  "slug": "cringepnh-koelectra-korean-shopping-rating",
+  "author": "cringepnh",
+  "url": "https://huggingface.co/cringepnh/koelectra-korean-shopping-rating",
+  "created_at": "2026-08-21T18:20:39.000Z",
+  "updated_at": "2026-08-21T18:26:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "korean",
+    "shopping-reviews",
+    "rating-classification",
+    "koelectra",
+    "ko",
+    "base_model:monologg/koelectra-base-v3-discriminator",
+    "base_model:finetune:monologg/koelectra-base-v3-discriminator",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 112924420,
+  "parameters_human": "112.9M",
+  "storage_bytes": 451721800,
+  "storage_human": "452 MB",
+  "base_model": "monologg/koelectra-base-v3-discriminator",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cringepnh/koelectra-korean-sentiment · Hugging Face",
+      "url": "https://huggingface.co/cringepnh/koelectra-korean-sentiment",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT Shopping | AI Shopping Assistant",
+      "url": "https://chatgpt.com/shopping",
+      "snippet": "Discover products, compare options, and get personalized shopping help with ChatGPT Shopping."
+    },
+    {
+      "title": "GitHub - monologg/KoELECTRA: Pretrained ELECTRA Model for Korean",
+      "url": "https://github.com/monologg/KoELECTRA",
+      "snippet": "Pretrained ELECTRA Model for Korean. Contribute to monologg/KoELECTRA development by creating an account on GitHub."
+    },
+    {
+      "title": "cringepnh (Komronbek Yo&#x27;ldoshev) - Hugging Face",
+      "url": "https://huggingface.co/cringepnh/models",
+      "snippet": "User profile of Komronbek Yo&#x27;ldoshev on Hugging Face"
+    },
+    {
+      "title": "GitHub - cringepnh/Korean-Movie-Review-Rating-Predictor",
+      "url": "https://github.com/cringepnh/Korean-Movie-Review-Rating-Predictor",
+      "snippet": "Korean-language NLP is an under-explored area compared to English. This project tackles a real-world problem — understanding the sentiment intensity behind Korean movie reviews — not just positive/negative, but the exact rating on a 10-point scale. The project evolved from my earlier work on a Korean Sentiment Analyzer and pushed further: instead of binary classification, the model ..."
+    }
+  ]
+}

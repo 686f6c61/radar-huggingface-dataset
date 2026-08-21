@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/shard-unicode-confusable-name",
+  "slug": "layerfault-shard-unicode-confusable-name",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/shard-unicode-confusable-name",
+  "created_at": "2026-08-21T19:11:30.000Z",
+  "updated_at": "2026-08-21T19:11:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 368,
+  "storage_human": "368 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CypherLamb/DetectionFramework: Multi-Layer Unicode Confusables ...",
+      "url": "https://github.com/CypherLamb/DetectionFramework",
+      "snippet": "Multi-Layer Unicode Confusables Detection Framework - CypherLamb/DetectionFramework"
+    },
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Offline-first security and admission control for local AI models. Layerfault validates model artifacts and local model runtimes before inference."
+    },
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "A new generation of foundation models from first principles."
+    },
+    {
+      "title": "Detecting Unicode Homoglyph and Zero-Width Character Evasion in LLM ...",
+      "url": "https://dev.to/meghal_parikh_b8c5c6e3244/detecting-unicode-homoglyph-and-zero-width-character-evasion-in-llm-prompt-injection-attacks-1e69",
+      "snippet": "The Problem Nobody Is Talking About The OWASP LLM Top 10 (2025) identifies Prompt Injection as the leading vulnerability class in LLM applications. The security community has responded with runtime interception tools — Google Model Armor, Lakera Guard, Prompt Shields — that screen prompts as they arrive at the model. But there is a complementary layer that remains almost entirely ..."
+    },
+    {
+      "title": "The new DDoS: Unicode confusables can&#x27;t fool LLMs, but they can 5x your ...",
+      "url": "https://paultendo.github.io/posts/confusable-vision-llm-attack-tests/",
+      "snippet": "Can pixel-identical Unicode homoglyphs fool LLM contract review? I tested 8 attack types against GPT-5.2, Claude Sonnet 4.6, and others with 130+ API calls. The models read through every substitution. But confusable characters fragment into multi-byte BPE tokens, turning a failed comprehension attack into a 5x billing attack. Call it Denial of Spend."
+    }
+  ]
+}

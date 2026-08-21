@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tom09S/wikimind-wiki-3B",
+  "slug": "tom09s-wikimind-wiki-3b",
+  "author": "Tom09S",
+  "url": "https://huggingface.co/Tom09S/wikimind-wiki-3B",
+  "created_at": "2026-08-21T19:14:55.000Z",
+  "updated_at": "2026-08-21T19:14:55.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI at the service of your everyday life",
+      "url": "https://wikimindai.github.io/Wikimind/",
+      "snippet": "Mistral, Groq, Cerebras, SambaNova, Cohere, Pollinations AI, chaque modèle est sélectionnable selon vos besoins : vitesse, raisonnement, code, génération d&#x27;images ou vision."
+    },
+    {
+      "title": "WikiMind — AI-powered living wiki builder",
+      "url": "https://wikimind.io/",
+      "snippet": "WikiMind turns your raw notes into structured knowledge bases. Have AI conversations grounded entirely in your own content and watch your wiki grow smarter over time."
+    },
+    {
+      "title": "9 Best 3B Local LLM Model (Open Source) - Sci Fi Logic",
+      "url": "https://scifilogic.com/best-3b-llm-model/",
+      "snippet": "This 3B model, trained on a massive 1 trillion tokens, showcases the potential of compact models to achieve impressive performance, paving the way for personal AI assistants on local devices, ensuring privacy and autonomy."
+    },
+    {
+      "title": "GitHub - manavgup/wikimind: WikiMind is a personal LLM-powered ...",
+      "url": "https://github.com/manavgup/wikimind",
+      "snippet": "WikiMind is a personal LLM-powered knowledge OS. Feed it articles, PDFs, YouTube videos, podcasts, or papers — it compiles them into a structured wiki and answers questions with full source attribution. - manavgup/wikimind"
+    },
+    {
+      "title": "Weibo&#x27;s VibeThinker-3B Challenges AI Benchmarks with Tiny Model, Big ...",
+      "url": "https://thebeat.tech/articles/weibos-vibethinker-3b-challenges-ai-benchmarks-with-tiny-model-big-results",
+      "snippet": "A 3 billion parameter language model from Sina Weibo is making waves by matching or exceeding the performance of much larger models, sparking debate over the future of AI benchmarks."
+    }
+  ]
+}

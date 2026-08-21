@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fhnwrover/manibar-act-erc-red_switch",
+  "slug": "fhnwrover-manibar-act-erc-red_switch",
+  "author": "fhnwrover",
+  "url": "https://huggingface.co/fhnwrover/manibar-act-erc-red_switch",
+  "created_at": "2026-08-21T18:20:20.000Z",
+  "updated_at": "2026-08-21T18:20:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:fhnwrover/manibar-erc-red_switch",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51748487,
+  "parameters_human": "51.7M",
+  "storage_bytes": 207042380,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fhnwrover/manibar-erc-red_switch · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/fhnwrover/manibar-erc-red_switch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fhnwrover/manibar-act-erc-black-switches · Hugging Face",
+      "url": "https://huggingface.co/fhnwrover/manibar-act-erc-black-switches",
+      "snippet": "Instructions to use fhnwrover/manibar-act-erc-black-switches with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fhnwrover/manibar-act-erc-black-switches with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the ..."
+    },
+    {
+      "title": "LeRobot/README.md at main · Hiwonder-official/LeRobot · GitHub",
+      "url": "https://github.com/Hiwonder-official/LeRobot/blob/main/README.md",
+      "snippet": "LeRobot is a state-of-the-art AI robotics library developed by Hugging Face, adapted by Hiwonder for educational and research purposes. It provides models, datasets, and tools for real-world robotics in PyTorch."
+    },
+    {
+      "title": "Manibar ACT ERC Black Switches - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/fhnwrover-manibar-act-erc-black-switches-02",
+      "snippet": "A robotics manipulation dataset for black switch interaction tasks collected using the ACT (Action Chunking with Transformers) framework. The dataset contains 81 episodes with multi-modal observations including RGB images and proprioceptive state data."
+    },
+    {
+      "title": "Action Chunking with Transformers - ACT — Open Edge Platform Documentation",
+      "url": "https://docs.openedgeplatform.intel.com/2026.0/edge-ai-suites/robotics-ai-suite/embodied/developer_tools_tutorials/model_tutorials/model_act.html",
+      "snippet": "Action Chunking with Transformers - ACT # Action Chunking with Transformers (ACT) is an end-to-end imitation learning model designed for fine manipulation tasks in robotics, learned directly from real demonstrations."
+    }
+  ]
+}

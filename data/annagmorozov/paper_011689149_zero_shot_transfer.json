@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "annagmorozov/paper_011689149_zero_shot_transfer",
+  "slug": "annagmorozov-paper_011689149_zero_shot_transfer",
+  "author": "annagmorozov",
+  "url": "https://huggingface.co/annagmorozov/paper_011689149_zero_shot_transfer",
+  "created_at": "2026-08-21T18:02:56.000Z",
+  "updated_at": "2026-08-21T18:03:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "bulleted",
+    "concise-analytical",
+    "first-person-plural",
+    "highlight-bullet",
+    "latex-cvpr",
+    "neutral",
+    "numeric-nature",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "(PDF) A review on NLP zero-shot and few-shot learning: methods and ...",
+      "url": "https://www.researchgate.net/publication/394830523_A_review_on_NLP_zero-shot_and_few-shot_learning_methods_and_applications",
+      "snippet": "Zero-shot and few-shot learning techniques in natural language processing (NLP), this comprehensive review traces their evolution from traditional methods to cutting-edge approaches like transfer ..."
+    },
+    {
+      "title": "A review on NLP zero-shot and few-shot learning: methods and ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s42452-025-07225-5",
+      "snippet": "Zero-shot and few-shot learning techniques in natural language processing (NLP), this comprehensive review traces their evolution from traditional methods to cutting-edge approaches like transfer learning and pre-trained language models, semantic embedding, attribute-based approaches, generative models for data augmentation in zero-shot learning, and meta-learning, model-agnostic meta-learning ..."
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "The first paper on zero-shot learning in natural language processing appeared in a 2008 paper by Chang, Ratinov, Roth, and Srikumar, at the AAAI&#x27;08, but the name given to the learning paradigm there was dataless classification. [3] The first paper on zero-shot learning in computer vision appeared at the same conference, under the name zero-data learning. [4] The term zero-shot learning itself ..."
+    },
+    {
+      "title": "[2102.12092] Zero-Shot Text-to-Image Generation - arXiv.org",
+      "url": "https://arxiv.org/abs/2102.12092",
+      "snippet": "Text-to-image generation has traditionally focused on finding better modeling assumptions for training on a fixed dataset. These assumptions might involve complex architectures, auxiliary losses, or side information such as object part labels or segmentation masks supplied during training. We describe a simple approach for this task based on a transformer that autoregressively models the text ..."
+    },
+    {
+      "title": "[1301.3666] Zero-Shot Learning Through Cross-Modal Transfer",
+      "url": "https://arxiv.org/abs/1301.3666",
+      "snippet": "This work introduces a model that can recognize objects in images even if no training data is available for the objects. The only necessary knowledge about the unseen categories comes from unsupervised large text corpora. In our zero-shot framework distributional information in language can be seen as spanning a semantic basis for understanding what objects look like. Most previous zero-shot ..."
+    }
+  ]
+}

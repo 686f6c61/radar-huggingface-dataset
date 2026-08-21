@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "justinbariah/paper_008940455_knowledge_distillation",
+  "slug": "justinbariah-paper_008940455_knowledge_distillation",
+  "author": "justinbariah",
+  "url": "https://huggingface.co/justinbariah/paper_008940455_knowledge_distillation",
+  "created_at": "2026-08-21T15:59:19.000Z",
+  "updated_at": "2026-08-21T15:59:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "highlight-bullet",
+    "intro-problem-solution-validation-future",
+    "knowledge-distillation",
+    "measured",
+    "numeric-apa",
+    "passive",
+    "plain-text",
+    "short-punchy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Comprehensive Survey on Knowledge Distillation - arXiv.org",
+      "url": "https://arxiv.org/html/2503.12067v2",
+      "snippet": "One potential strategy for leveraging white-box distillation could involve initially distilling knowledge from a closed-source model to an open-source one using black-box KD, and subsequently applying a white-box method for further distillation."
+    },
+    {
+      "title": "A Comprehensive Survey on Knowledge Distillation",
+      "url": "https://arxiv.org/html/2503.12067v1",
+      "snippet": "In contrast to most existing surveys, which are either outdated or simply update former surveys, this work proposes a comprehensive survey with a new point of view and representation structure that categorizes and investigates the most recent methods in knowledge distillation."
+    },
+    {
+      "title": "A survey on knowledge distillation: Recent advancements",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666827024000811",
+      "snippet": "Knowledge distillation (KD), a technique for model compression and knowledge transfer, has gained significant attention in the field of machine learning since its formal introduction by Hinton et al. (2015). This approach builds upon the earlier work of Caruana et al. (2006), who demonstrated that the collective knowledge of an ensemble of models could be condensed into a single, smaller model ..."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "(PDF) Knowledge Distillation: A Survey - ResearchGate",
+      "url": "https://www.researchgate.net/publication/342094012_Knowledge_Distillation_A_Survey",
+      "snippet": "In this paper, we provide a comprehensive survey on knowledge distillation from the perspectives of different knowledge categories, training schemes, distillation algorithms, as well as applications."
+    }
+  ]
+}

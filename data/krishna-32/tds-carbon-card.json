@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "krishna-32/tds-carbon-card",
+  "slug": "krishna-32-tds-carbon-card",
+  "author": "krishna-32",
+  "url": "https://huggingface.co/krishna-32/tds-carbon-card",
+  "created_at": "2026-08-21T10:24:15.000Z",
+  "updated_at": "2026-08-21T10:25:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krishnaprathap/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Krishnaprathap/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "23f1000190/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/23f1000190/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Free Krishna 3D Models - Download Instantly | Meshy",
+      "url": "https://www.meshy.ai/tags/krishna",
+      "snippet": "Yes, all Krishna 3D models generated on Meshy are available for free download. We provide high-quality AI-generated assets at no cost."
+    },
+    {
+      "title": "Krishna AI - Free AI for Spiritual Guidance | Bhagavad Gita Wisdom Online",
+      "url": "https://krishnaai.org/",
+      "snippet": "Free Krishna AI chatbot offering 24/7 spiritual guidance based on Bhagavad Gita teachings. Get instant answers about dharma, meditation, life dilemmas, karma & life purpose."
+    },
+    {
+      "title": "Krishna 3d model Ai - CGTrader",
+      "url": "https://www.cgtrader.com/3d-models/character/fantasy-character/krishna-3d-model-4c774bc0-d9e5-4533-88dd-0d73a6f4e1a8",
+      "snippet": "Before purchasing any 3D model, please understand that all of these models are AI-generated. They are basic mesh 3D models only and are not PBR-ready or suitable for animation purposes."
+    }
+  ]
+}

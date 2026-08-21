@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "ai4bharat/IndicF5",
+  "slug": "ai4bharat-indicf5",
+  "author": "ai4bharat",
+  "url": "https://huggingface.co/ai4bharat/IndicF5",
+  "created_at": "2025-03-11T11:30:29.000Z",
+  "updated_at": "2026-03-03T03:06:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "as",
+    "bn",
+    "gu",
+    "mr",
+    "hi",
+    "kn",
+    "ml",
+    "or",
+    "pa",
+    "ta",
+    "te"
+  ],
+  "tags": [
+    "safetensors",
+    "inf5",
+    "text-to-speech",
+    "custom_code",
+    "as",
+    "bn",
+    "gu",
+    "mr",
+    "hi",
+    "kn",
+    "ml",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "dataset:ai4bharat/indicvoices_r",
+    "dataset:ai4bharat/Rasa",
+    "doi:10.57967/hf/9236",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 180,
+  "downloads_30d": 26967,
+  "trending_score": 8,
+  "parameters": 350681834,
+  "parameters_human": "350.7M",
+  "storage_bytes": 1405598255,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AI4Bharat/IndicF5",
+      "url": "https://github.com/AI4Bharat/IndicF5",
+      "snippet": "We release IndicF5, a near-human polyglot Text-to-Speech (TTS) model trained on 1417 hours of high-quality speech from Rasa, IndicTTS, LIMMITS, and IndicVoices-R."
+    },
+    {
+      "title": "IndicF5 - ai4bharat.iitm.ac.in",
+      "url": "https://ai4bharat.iitm.ac.in/areas/model/TTS/IndicF5/",
+      "snippet": "IndicF5 is a near-human polyglot Text-to-Speech (TTS) model trained on 1417 hours of high-quality speech from Rasa, IndicTTS, LIMMITS, and IndicVoices-R."
+    },
+    {
+      "title": "IndicF5: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/indicf5-ai4bharat",
+      "snippet": "Overview IndicF5 is a near-human quality text-to-speech model for Indian languages, developed by ai4bharat. The model synthesizes speech by accepting three inputs: target text, a reference audio prompt, and the transcript of that reference audio. It learns prosody and speaker characteristics from the reference prompt to generate natural-sounding speech. Built on the F5-TTS architecture ..."
+    },
+    {
+      "title": "GitHub - hareeshbabu82ns/TTSIndicF5: TTS for Indic Languages",
+      "url": "https://github.com/hareeshbabu82ns/TTSIndicF5",
+      "snippet": "We release IndicF5, a near-human polyglot Text-to-Speech (TTS) model trained on 1417 hours of high-quality speech from Rasa, IndicTTS, LIMMITS, and IndicVoices-R. IndicF5 supports 11 Indian languages: Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu."
+    },
+    {
+      "title": "AIBharat - IndicF5",
+      "url": "https://aikosh.indiaai.gov.in/home/models/details/aibharat_indicf5.html",
+      "snippet": "AIBharat - IndicF5 IndicF5, a near-human polyglot Text-to-Speech (TTS) model trained on 1417 hours of high-quality speech from Rasa, IndicTTS, LIMMITS, and IndicVoices-R."
+    }
+  ]
+}

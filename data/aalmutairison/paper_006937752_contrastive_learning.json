@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Aalmutairison/paper_006937752_contrastive_learning",
+  "slug": "aalmutairison-paper_006937752_contrastive_learning",
+  "author": "Aalmutairison",
+  "url": "https://huggingface.co/Aalmutairison/paper_006937752_contrastive_learning",
+  "created_at": "2026-08-21T19:23:02.000Z",
+  "updated_at": "2026-08-21T19:23:09.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "concise-analytical",
+    "contrastive-learning",
+    "endnote",
+    "graphic-visual",
+    "intro-related-method-exp-conclusion",
+    "latex-neurips",
+    "long-detailed",
+    "neutral",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning This research ...",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Explainable Artificial Intelligence (XAI) involves building techniques to understand the underlying mechanisms behind the decision-making process of a machine learning model. It is crucial for building trust and accountability in AI systems as it enables users to understand and improve their models [8] and identify any data biases present [9], [10]. This ensures fairness and equability [11 ..."
+    },
+    {
+      "title": "An Augmentation Overlap Theory of Contrastive Learning",
+      "url": "https://arxiv.org/abs/2511.03114",
+      "snippet": "Recently, self-supervised contrastive learning has achieved great success on various tasks. However, its underlying working mechanism is yet unclear. In this paper, we first provide the tightest bounds based on the widely adopted assumption of conditional independence. Further, we relax the conditional independence assumption to a more practical assumption of augmentation overlap and derive ..."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning",
+      "url": "https://dl.acm.org/doi/10.1016/j.neucom.2024.128645",
+      "snippet": "In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application areas of contrastive learning. Specifically, we firstly provide an overview of the research activity of contrastive learning in recent years."
+    },
+    {
+      "title": "PDF Contrastive Learning: Fundamentals and Practical Applications",
+      "url": "https://www.lancaster.ac.uk/stor-i-student-sites/cassandra-durr/wp-content/uploads/sites/70/2024/12/IndabaX_presentation_CL.pdf",
+      "snippet": "It uses contrastive learning as a pretraining objective and enables zero-shot image classification. The model consists of text and image encoders trained on a large dataset of paired images and text captions. Contrastive learning pulls together the encodings of corresponding image-text pairs and pushes apart encodings from different pairs."
+    }
+  ]
+}

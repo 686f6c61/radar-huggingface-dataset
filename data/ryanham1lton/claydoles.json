@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/ClaydolES",
+  "slug": "ryanham1lton-claydoles",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/ClaydolES",
+  "created_at": "2026-08-21T14:48:07.000Z",
+  "updated_at": "2026-08-21T15:08:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127013532,
+  "storage_human": "127 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/GrumpigDD · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/GrumpigDD",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "clay doll AI Models | Civitai",
+      "url": "https://civitai.com/tag/clay%20doll",
+      "snippet": "Browse 5 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with clay doll."
+    },
+    {
+      "title": "Ryanham1lton/Numel · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Numel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ryanham1lton | FakeYou",
+      "url": "https://fakeyou.com/profile/ryanham1lton",
+      "snippet": "Make movies with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    }
+  ]
+}

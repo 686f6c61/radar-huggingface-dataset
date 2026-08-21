@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ilfedorov/paper_002598059_cross_modal_fusion",
+  "slug": "ilfedorov-paper_002598059_cross_modal_fusion",
+  "author": "ilfedorov",
+  "url": "https://huggingface.co/ilfedorov/paper_002598059_cross_modal_fusion",
+  "created_at": "2026-08-21T18:14:11.000Z",
+  "updated_at": "2026-08-21T18:14:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "bulleted",
+    "compact",
+    "critical",
+    "cross-modal-fusion",
+    "empirical-focused",
+    "latex-cvpr",
+    "numeric-bibtex",
+    "passive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multimodal Alignment and Fusion: A Survey - arXiv.org",
+      "url": "https://arxiv.org/html/2411.17040v1",
+      "snippet": "Abstract This survey offers a comprehensive review of recent advancements in multimodal alignment and fusion within machine learning, spurred by the growing diversity of data types such as text, images, audio, and video. Multimodal integration enables improved model accuracy and broader applicability by leveraging complementary information across different modalities, as well as facilitating ..."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2411.17040",
+      "snippet": "該頁面提供關於深度學習模型在圖像和文本對齊方面的研究，探討細粒度對齊和全局對齊的技術與應用。"
+    },
+    {
+      "title": "Cross-modal gated feature enhancement for multimodal emotion ...",
+      "url": "https://www.nature.com/articles/s41598-025-11989-6",
+      "snippet": "A cross-modal guided gating mechanism is designed to strengthen single-modality features and utilize a third modality to improve bimodal feature fusion, boosting multimodal feature representation."
+    },
+    {
+      "title": "CMFFN: An efficient cross-modal feature fusion network for semantic ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0921889024002847",
+      "snippet": "To address the diversity in modal representations and the complexity arising from the addition of modalities, the fusion part of the CMFFN network adopts a cross-modal attention mechanism based on feature-level queries, while employing lightweight methods to effectively reduce training costs."
+    },
+    {
+      "title": "Crossref Metadata Search",
+      "url": "https://search.crossref.org/",
+      "snippet": "Search the metadata of journal articles, books, standards, datasets & more"
+    }
+  ]
+}

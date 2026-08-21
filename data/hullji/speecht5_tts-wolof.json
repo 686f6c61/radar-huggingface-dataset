@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "HullJi/speecht5_tts-wolof",
+  "slug": "hullji-speecht5_tts-wolof",
+  "author": "HullJi",
+  "url": "https://huggingface.co/HullJi/speecht5_tts-wolof",
+  "created_at": "2026-08-21T19:08:20.000Z",
+  "updated_at": "2026-08-21T19:12:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "wo"
+  ],
+  "tags": [
+    "safetensors",
+    "speecht5",
+    "generated_from_trainer",
+    "text-to-speech",
+    "wo",
+    "dataset:galsenai/wolof_tts",
+    "base_model:microsoft/speecht5_tts",
+    "base_model:finetune:microsoft/speecht5_tts",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144491490,
+  "parameters_human": "144.5M",
+  "storage_bytes": 18496875590,
+  "storage_human": "18.5 GB",
+  "base_model": "microsoft/speecht5_tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bilalfaye/speecht5_tts-wolof · Hugging Face",
+      "url": "https://huggingface.co/bilalfaye/speecht5_tts-wolof",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    },
+    {
+      "title": "bilalfaye/speecht5_tts-wolof-v0.2 · Hugging Face",
+      "url": "https://huggingface.co/bilalfaye/speecht5_tts-wolof-v0.2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Open-source speecht5_tts - Wolof model, freely adaptable to Wolof ...",
+      "url": "https://model.aibase.com/models/details/1915693314969591810",
+      "snippet": "🚀 speecht5_tts-wolof This model is a fine - tuned version of SpeechT5 for Text - to - Speech (TTS) on a Wolof dataset, offering speech synthesis capabilities specifically for the Wolof language."
+    },
+    {
+      "title": "Alwaly/speecht5_tts_voxpopuli_wo - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/alwaly-speecht5-tts-voxpopuli-wo",
+      "snippet": "Introduction of speecht5_tts_voxpopuli_wo Model Details of speecht5_tts_voxpopuli_wo SpeechT5 TTS Wolof This model is a fine-tuned version of microsoft/speecht5_tts on the wolofTTS dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Teaching - Bilal FAYE",
+      "url": "https://b-faye.github.io/others.html",
+      "snippet": "🗣️ ASR & TTS Models for Wolof and French Released open-source models for speech recognition and synthesis in Wolof and French. Available on Hugging Face for real-world speech applications. Wav2Vec2 for ASR SpeechT5 for TTS (Wolof) SpeechT5 for TTS (Wolof and French) Test the Application"
+    }
+  ]
+}

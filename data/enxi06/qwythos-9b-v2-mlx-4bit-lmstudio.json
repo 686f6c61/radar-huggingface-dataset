@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "enxi06/Qwythos-9B-v2-mlx-4bit-lmstudio",
+  "slug": "enxi06-qwythos-9b-v2-mlx-4bit-lmstudio",
+  "author": "enxi06",
+  "url": "https://huggingface.co/enxi06/Qwythos-9B-v2-mlx-4bit-lmstudio",
+  "created_at": "2026-08-21T10:55:11.000Z",
+  "updated_at": "2026-08-21T11:15:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1260040704,
+  "parameters_human": "1.26B",
+  "storage_bytes": 4778377010,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "enxi06/Qwythos-9B-v2-mlx-4bit-lmstudio · Hugging Face",
+      "url": "https://huggingface.co/enxi06/Qwythos-9B-v2-mlx-4bit-lmstudio",
+      "snippet": "Instructions to use enxi06/Qwythos-9B-v2-mlx-4bit-lmstudio with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use enxi06/Qwythos-9B-v2-mlx-4bit-lmstudio with MLX:"
+    },
+    {
+      "title": "enxi06 (enxi06) - Hugging Face",
+      "url": "https://huggingface.co/enxi06",
+      "snippet": "models1 enxi06/Qwythos-9B-v2-mlx-4bit-lmstudio Text Generation • 1B•Updated about 3 hours ago"
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "New · Qwen3.8-9B / 4B / 2B — distilled Small models, trained in the open. We are an independent AI research lab in Germany, building language models efficient enough to run on hardware you own. Latest: a full-parameter distill of Qwen3.8-2.4T into 9B / 4B / 2B, and a GDN-aware 27B GGUF at 11.7 GiB. The open-weight Qwythos family has passed one million downloads on Hugging Face."
+    },
+    {
+      "title": "Qwythos-9B 1M Context: Run with vLLM, SGLang, or Transformers",
+      "url": "https://knightli.com/en/2026/06/24/qwythos-9b-claude-mythos-1m-context-guide/",
+      "snippet": "Qwythos-9B-Claude-Mythos-5-1M is a 9B reasoning model published by Empero AI on Hugging Face. Model page: empero-ai/Qwythos-9B-Claude-Mythos-5-1M Quick Answer Qwythos-9B is a 9B open-weight reasoning model aimed at long-context agent workflows. Use it when you want to test 1M-token context, tool calling, codebase reading, or long document analysis. For deployment, start with the model card ..."
+    },
+    {
+      "title": "Qwythos-9B: a 9B that checks its own work — Empero",
+      "url": "https://empero.org/writing/qwythos-9b-release",
+      "snippet": "Qwythos-9B: a 9B that checks its own work Our biggest open-weights release yet — a full-parameter reasoning model distilled from Claude Mythos 5, with a 1M-token context, native tool use, and a +34-point MMLU jump over its base. Here&#x27;s what&#x27;s in it, the honest benchmark table, and how to run it."
+    }
+  ]
+}

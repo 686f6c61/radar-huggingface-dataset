@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Tamanenishiki/record_0806_pi05_pos_full_v3",
+  "slug": "tamanenishiki-record_0806_pi05_pos_full_v3",
+  "author": "Tamanenishiki",
+  "url": "https://huggingface.co/Tamanenishiki/record_0806_pi05_pos_full_v3",
+  "created_at": "2026-08-21T14:45:02.000Z",
+  "updated_at": "2026-08-21T14:47:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:Tamanenishiki/record_0618_pi05_pos_full",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354060088,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tamanenishiki/record_0806_pi05_pos_full_v2 · Hugging Face",
+      "url": "https://huggingface.co/Tamanenishiki/record_0806_pi05_pos_full_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    },
+    {
+      "title": "Tamanenishiki/record_0618_pi05_pos_pi05 · Hugging Face",
+      "url": "https://huggingface.co/Tamanenishiki/record_0618_pi05_pos_pi05",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "π : a Vision-Language-Action Model with u L L C 0. Open-World ...",
+      "url": "https://arxiv.org/pdf/2504.16054",
+      "snippet": "Abstract—In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π0.5, a new model based on π0 that uses co-training on heterogeneous ..."
+    },
+    {
+      "title": "$π_{0.5}$: a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://www.catalyzex.com/paper/0-5-a-vision-language-action-model-with-open",
+      "snippet": "$π_ {0.5}$: a Vision-Language-Action Model with Open-World Generalization: Paper and Code. In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild ..."
+    }
+  ]
+}

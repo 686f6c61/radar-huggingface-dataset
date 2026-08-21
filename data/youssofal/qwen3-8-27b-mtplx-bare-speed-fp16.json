@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Youssofal/Qwen3.8-27B-MTPLX-Bare-Speed-FP16",
+  "slug": "youssofal-qwen3-8-27b-mtplx-bare-speed-fp16",
+  "author": "Youssofal",
+  "url": "https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Bare-Speed-FP16",
+  "created_at": "2026-08-15T08:07:53.000Z",
+  "updated_at": "2026-08-20T06:26:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "macos",
+    "m1",
+    "m2",
+    "fp16",
+    "speculative-decoding",
+    "multi-token-prediction",
+    "qwen",
+    "qwen3.8",
+    "mtp",
+    "mtplx",
+    "local-ai",
+    "chat",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 2959,
+  "trending_score": 9,
+  "parameters": 4665462000,
+  "parameters_human": "4.67B",
+  "storage_bytes": 17162863310,
+  "storage_human": "17.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Youssofal/Qwen3.8-27B-MTPLX-Bare-Speed · Hugging Face",
+      "url": "https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Bare-Speed",
+      "snippet": "Bare Speed is a flat 4-bit MLX quantization of Qwen3.8-27B with the model&#x27;s native multi-token-prediction head preserved and calibrated — the head almost every other runtime silently strips on load."
+    },
+    {
+      "title": "Youssofal/Qwen3.8-27B-MTPLX-Bare-Speed-FP16 at main",
+      "url": "https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Bare-Speed-FP16/tree/main",
+      "snippet": "Instructions to use Youssofal/Qwen3.8-27B-MTPLX-Bare-Speed-FP16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8 27B MTPLX Bare Speed FP16 by Youssofal - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Youssofal%2FQwen3.8-27B-MTPLX-Bare-Speed-FP16,Ez2I8m7wpNnrm3W7kOBo0",
+      "snippet": "Qwen3.8 27B MTPLX Bare Speed FP16 is an open-source language model by Youssofal. Features: 27b LLM, VRAM: 15.1GB, License: apache-2.0, Quantized, LLM Explorer Score: 0.36."
+    },
+    {
+      "title": "GitHub - youssofal/MTPLX: 3x faster speeds on MLX | Qwen 3.8 27B ...",
+      "url": "https://github.com/youssofal/mtplx",
+      "snippet": "Use a complete model that already includes its matching MTP weights, or use Forge to build and verify an artifact from its original source checkpoint. The official catalog lives on Hugging Face under Youssofal: Qwen 3.5 (4B, 9B), Qwen 3.6 (27B, 35B MoE) in speed and quality builds (the 35B MoE adds a balance build), plus Gemma 4."
+    },
+    {
+      "title": "Qwen3.8 27B MTPLX Optimized Speed by Youssofal - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Youssofal%2FQwen3.8-27B-MTPLX-Optimized-Speed,5KE6X6UqFcJWVl2UtvR16v",
+      "snippet": "Rank the Qwen3.8 27B MTPLX Optimized Speed capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

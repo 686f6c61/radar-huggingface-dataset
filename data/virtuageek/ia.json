@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "VIRTUAGEEK/ia",
+  "slug": "virtuageek-ia",
+  "author": "VIRTUAGEEK",
+  "url": "https://huggingface.co/VIRTUAGEEK/ia",
+  "created_at": "2026-08-21T17:01:29.000Z",
+  "updated_at": "2026-08-21T17:01:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortinet Advances Continuous AI Protection with the Acquisition of ...",
+      "url": "https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2026/fortinet-advances-continuous-ai-protection-with-the-acquisition-of-virtue-ai",
+      "snippet": "Fortinet ® (NASDAQ: FTNT), the global cybersecurity leader driving the convergence of networking and security, today announced it has acquired Virtue AI, an innovator in AI runtime protection, automated AI validation, and security for autonomous AI systems. The acquisition advances the company&#x27;s broader Security for AI strategy and vision for securing the agentic enterprise, building on ..."
+    },
+    {
+      "title": "ARTIFICIAL INTELLIGENCE Archives - Virtual Geek",
+      "url": "https://virtualgeek.io/category/artificial-intelligence/",
+      "snippet": "In the dynamic world of technology, artificial intelligence (AI) is a rapidly growing and constantly innovating field. Google, as one of the leaders in this …"
+    },
+    {
+      "title": "AI Virtual Models for product photography - Photoroom",
+      "url": "https://www.photoroom.com/tools/virtual-model",
+      "snippet": "An AI virtual model generator uses generative AI to place clothing and other fashion items like jewelry, eyewear, and footwear onto lifelike digital models. With Photoroom, you can upload a product image, choose your preferred model type, and our AI automatically creates high-quality virtual model images with natural poses and lighting."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

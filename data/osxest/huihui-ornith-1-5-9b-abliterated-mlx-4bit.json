@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "osxest/Huihui-Ornith-1.5-9B-abliterated-mlx-4Bit",
+  "slug": "osxest-huihui-ornith-1-5-9b-abliterated-mlx-4bit",
+  "author": "osxest",
+  "url": "https://huggingface.co/osxest/Huihui-Ornith-1.5-9B-abliterated-mlx-4Bit",
+  "created_at": "2026-08-21T17:41:55.000Z",
+  "updated_at": "2026-08-21T17:42:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "mlx",
+    "mlx-my-repo",
+    "text-generation",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-9B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-9B-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1399927296,
+  "parameters_human": "1.40B",
+  "storage_bytes": 5058150506,
+  "storage_human": "5.1 GB",
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-9B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Ornith-1.5-9B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.0-abliterated - a huihui-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huihui-ai/ornith-10-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run Ornith 1.5 9B Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally",
+      "snippet": "Ornith 1.5 9B is the dense vision-language model this guide is about, and the smallest of the three: it fits an 8 GB GPU or a 16 GB MacBook, the cheapest way to run Ornith locally."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    },
+    {
+      "title": "Ornith-1.5: Does It Really Beat Claude Opus 4.8? - explainx.ai",
+      "url": "https://www.explainx.ai/blog/ornith-1-5-self-improving-open-weight-model-august-2026",
+      "snippet": "Ornith-1.5&#x27;s self-reported benchmarks rival Claude Opus 4.8 — but an independent HN benchmark of the 35B model tells a different story."
+    }
+  ]
+}

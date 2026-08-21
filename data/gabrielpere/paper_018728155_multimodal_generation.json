@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gabrielpere/paper_018728155_multimodal_generation",
+  "slug": "gabrielpere-paper_018728155_multimodal_generation",
+  "author": "gabrielpere",
+  "url": "https://huggingface.co/gabrielpere/paper_018728155_multimodal_generation",
+  "created_at": "2026-08-21T17:00:15.000Z",
+  "updated_at": "2026-08-21T17:00:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "detailed-descriptive",
+    "enthusiastic",
+    "html",
+    "intro-problem-solution-validation-future",
+    "multimodal-generation",
+    "numeric-apa",
+    "passive",
+    "short-punchy",
+    "structured-imrad",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi-modal Generative AI: Multi-modal LLMs, Diffusions and the Unification",
+      "url": "https://arxiv.org/pdf/2409.14993",
+      "snippet": "Index Terms—Multi-modal Generative AI, Multi-modal Large Language Model, Diffusion Model, Unified Understanding and Generation I. INTRODUCTION Multi-modal generative AI (Artificial Intelligence) has re-ceived increasing attention recently with the advent of (multi-modal) large language models (LLMs) and diffusion models."
+    },
+    {
+      "title": "[2409.14993] Multi-modal Generative AI: Multi-modal LLMs, Diffusions ...",
+      "url": "https://arxiv.org/abs/2409.14993",
+      "snippet": "Multi-modal generative AI (Artificial Intelligence) has attracted increasing attention from both academia and industry. Particularly, two dominant families of techniques have emerged: i) Multi-modal large language models (LLMs) demonstrate impressive ability for multi-modal understanding; and ii) Diffusion models exhibit remarkable multi-modal powers in terms of multi-modal generation ..."
+    },
+    {
+      "title": "Generative AI Beyond LLMs: System Implications of Multi-Modal ...",
+      "url": "https://ieeexplore.ieee.org/document/10590047",
+      "snippet": "As the development of large-scale Generative AI models evolve beyond text (1D) generation to include image (2D) and video (3D) generation, processing spatial and temporal information presents unique challenges to quality, performance, and efficiency. We present the first work towards understanding this new system design space for multi-modal text-to-image (TTI) and text-to-video (TTV ..."
+    },
+    {
+      "title": "US Army, EdgeRunner Develop Military AI Model That Cuts Errors by Up to 37%",
+      "url": "https://militaryai.ai/edgerunner-camo-military-ai-model/",
+      "snippet": "EdgeRunner AI and the US Army developed EdgeRunner-Camo, a military LLM that cuts errors by up to 37% and runs locally on tactical hardware."
+    },
+    {
+      "title": "Outputs of generative diffusion models are often unattributable",
+      "url": "https://www.nature.com/articles/s41467-026-75667-5",
+      "snippet": "The authors investigate the attribution of diffusion model outputs to training data and show that generated samples can become unattributable when models are trained on large datasets. They ..."
+    }
+  ]
+}

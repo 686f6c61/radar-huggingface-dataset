@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mphd1/gpt2large-logit",
+  "slug": "mphd1-gpt2large-logit",
+  "author": "mphd1",
+  "url": "https://huggingface.co/mphd1/gpt2large-logit",
+  "created_at": "2026-08-21T14:42:07.000Z",
+  "updated_at": "2026-08-21T15:37:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:openai-community/gpt2-large",
+    "base_model:finetune:openai-community/gpt2-large",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 774030080,
+  "parameters_human": "774.0M",
+  "storage_bytes": 3096171129,
+  "storage_human": "3.1 GB",
+  "base_model": "openai-community/gpt2-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai-community/gpt2-large · Hugging Face",
+      "url": "https://huggingface.co/openai-community/gpt2-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · openai-community/gpt2-large at main - Hugging Face",
+      "url": "https://huggingface.co/openai-community/gpt2-large/blob/main/README.md",
+      "snippet": "Uses Direct Use In their model card about GPT-2, OpenAI wrote: The primary intended users of these models are AI researchers and practitioners. We primarily imagine these language models will be used by researchers to better understand the behaviors, capabilities, biases, and constraints of large-scale generative language models."
+    },
+    {
+      "title": "GitHub - guramrit-dhillon/ai-mesh-demo: MESH — a live look inside ...",
+      "url": "https://github.com/guramrit-dhillon/ai-mesh-demo",
+      "snippet": "About MESH — a live look inside language models. GPT-2 next-token mesh, embeddings, attention, and logit lens running entirely in your browser. Resources Readme Activity"
+    },
+    {
+      "title": "gpt2-large · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/gpt2-large",
+      "snippet": "Uses Direct Use In their model card about GPT-2, OpenAI wrote: The primary intended users of these models are AI researchers and practitioners. We primarily imagine these language models will be used by researchers to better understand the behaviors, capabilities, biases, and constraints of large-scale generative language models. Downstream Use In their model card about GPT-2, OpenAI wrote ..."
+    },
+    {
+      "title": "interpreting GPT: the logit lens — LessWrong",
+      "url": "https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens",
+      "snippet": "This \"logit lens\" provides a simple (if partial) interpretability lens for GPT&#x27;s internals. Other work on interpreting transformer internals has focused mostly on what the attention is looking at."
+    }
+  ]
+}

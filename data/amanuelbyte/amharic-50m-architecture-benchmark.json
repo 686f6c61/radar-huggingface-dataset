@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "amanuelbyte/amharic-50m-architecture-benchmark",
+  "slug": "amanuelbyte-amharic-50m-architecture-benchmark",
+  "author": "amanuelbyte",
+  "url": "https://huggingface.co/amanuelbyte/amharic-50m-architecture-benchmark",
+  "created_at": "2026-08-21T15:48:52.000Z",
+  "updated_at": "2026-08-21T15:56:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "am"
+  ],
+  "tags": [
+    "transformers",
+    "amharic",
+    "language-modeling",
+    "qwen",
+    "hrm",
+    "mamba",
+    "hybrid",
+    "ssm",
+    "50m",
+    "text-generation",
+    "am",
+    "dataset:wikimedia/wikipedia",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1198351806,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amanuelbyte (Amanuel Gizachew) - Hugging Face",
+      "url": "https://huggingface.co/amanuelbyte",
+      "snippet": "User profile of Amanuel Gizachew on Hugging Face"
+    },
+    {
+      "title": "amanuelbyte (Amanuel Gizachew) - Hugging Face",
+      "url": "https://huggingface.co/amanuelbyte/models",
+      "snippet": "amanuelbyte&#x27;s models 3 Sort: Recently updated amanuelbyte/Amharic-QandA-llama2-finetuned Updated Aug 27, 2024• 3"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Aman-byte1 (Amanuel Gizachew Abebe) · GitHub",
+      "url": "https://github.com/Aman-byte1",
+      "snippet": "I&#x27;m Amanuel Gizachew, an AI Research Engineer 🧠 from Ethiopia 🇪🇹. My mission is to pioneer advancements for Amharic and other low-resource African languages using state-of-the-art Machine Learning. I&#x27;m currently building a startup focused on African LLMs in collaboration with the Ethiopian Artificial Intelligence Institute. I believe in AI for social good and am dedicated to solving ..."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    }
+  ]
+}

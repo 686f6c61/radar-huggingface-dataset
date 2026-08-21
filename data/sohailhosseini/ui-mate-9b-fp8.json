@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Sohailhosseini/UI-Mate-9B-FP8",
+  "slug": "sohailhosseini-ui-mate-9b-fp8",
+  "author": "Sohailhosseini",
+  "url": "https://huggingface.co/Sohailhosseini/UI-Mate-9B-FP8",
+  "created_at": "2026-08-21T14:44:26.000Z",
+  "updated_at": "2026-08-21T14:46:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "compressed-tensors",
+    "fp8",
+    "quantized",
+    "vllm",
+    "image-text-to-text",
+    "conversational",
+    "base_model:tencent/UI-Mate-9B",
+    "base_model:quantized:tencent/UI-Mate-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 11930374511,
+  "storage_human": "11.9 GB",
+  "base_model": "tencent/UI-Mate-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UI-Mate: Advancing Open-Weight Foundation GUI Agents with In-Context ...",
+      "url": "https://arxiv.org/pdf/2608.15930",
+      "snippet": "1 Introduction Foundation GUI agents promise to turn natural-language intent into multi-step action across software ecosystems. Recent CUA systems [1, 2], including UI-TARS [3, 4] and Qwen-UI-Agent [5], show that vision-language models can perceive interfaces, ground actions, and execute extended workflows directly on screen. Yet benchmark progress alone does not yield reliable real-world ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=UI-Mate",
+      "snippet": "+ 44 Parameters Reset Parameters 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 ..."
+    },
+    {
+      "title": "shosseini811 (Sohail Hosseini) · GitHub",
+      "url": "https://github.com/shosseini811",
+      "snippet": "PhD in Electrical Engineering . shosseini811 has 324 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "‪Sohail Hosseini‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=HNcymWUAAAAJ&hl=en",
+      "snippet": "‪Data Analytics Instructor‬ - ‪‪Cited by 1,171‬‬ - ‪Deep/Machine Learning‬"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Adalflow/koshish-fake-job-detector",
+  "slug": "adalflow-koshish-fake-job-detector",
+  "author": "Adalflow",
+  "url": "https://huggingface.co/Adalflow/koshish-fake-job-detector",
+  "created_at": "2026-08-21T19:09:35.000Z",
+  "updated_at": "2026-08-21T19:10:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129303359,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 2KRISHNAYADAV/Fake-Job-Posting-Detector",
+      "url": "https://github.com/2KRISHNAYADAV/Fake-Job-Posting-Detector",
+      "snippet": "An AI-powered tool to detect fake job postings using machine learning and NLP (Natural Language Processing). Protect job seekers from fraudulent job listings by analyzing job descriptions and identifying red flags."
+    },
+    {
+      "title": "GitHub - saadparekh/ai_fake-job-detector: Fake Job Detection AI is a ...",
+      "url": "https://github.com/saadparekh/ai_fake-job-detector",
+      "snippet": "🧠 Fake Job Detection AI Dashboard This project is an AI-powered job screening tool that predicts whether a job posting is Real, Fake, or Suspicious using Natural Language Processing and Machine Learning. Built with a Flask backend, Random Forest classifier, and a clean, interactive dashboard."
+    },
+    {
+      "title": "fake job detector | Devpost",
+      "url": "https://devpost.com/software/fake-job-detector",
+      "snippet": "🕵️‍♂️ Fake Job Detector - Expose Job Scams with AI Before They Reach You."
+    },
+    {
+      "title": "fake job detector | Devpost",
+      "url": "https://devpost.com/software/fake-job-detector-mcr8v7",
+      "snippet": "AI-powered job scam analyzer in action—upload or paste a job offer to detect red flags instantly. Comprehensive scam analysis result—risk score, red flags, and LLM insights all in one view. Final scam verdict with detailed red flags, company info extraction, and safety tips for job seekers."
+    },
+    {
+      "title": "Fake Job Detection Project | PDF - Scribd",
+      "url": "https://www.scribd.com/document/1024083193/Fake-Job-Detection-Project",
+      "snippet": "The document outlines a project to develop an AI-based system for detecting fake job postings on online portals using machine learning. It details the methodology, objectives, and tools involved, including data preprocessing and model training with various algorithms. The system aims to provide reliable classification, confidence scores, and explanations for predictions, while also ..."
+    }
+  ]
+}

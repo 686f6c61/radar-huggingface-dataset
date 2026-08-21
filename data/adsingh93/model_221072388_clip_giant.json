@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adsingh93/model_221072388_clip_giant",
+  "slug": "adsingh93-model_221072388_clip_giant",
+  "author": "adsingh93",
+  "url": "https://huggingface.co/adsingh93/model_221072388_clip_giant",
+  "created_at": "2026-08-21T16:48:21.000Z",
+  "updated_at": "2026-08-21T16:48:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "classification",
+    "clip",
+    "constant-warmup",
+    "giant",
+    "groupnorm",
+    "kaiming-normal",
+    "sliding-window",
+    "swish",
+    "tensor-fusion",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Giant/Male - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d1hprk5e878c73e94gd0",
+      "snippet": "Explore Giant/Male model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Giant Classic Hair Clip - Free 3D Print Model - MakerWorld",
+      "url": "https://makerworld.com/en/models/1896294-giant-classic-hair-clip",
+      "snippet": "Download this free 3D print file designed by Its On My Mind. A giant snap clip No supports needed.After printing, insert the pin from one arm into the hole on the other and secure it using the C-clip.Before locking the arms, make sure you note which side the center tab is on.To change the clip size, simply scale the model, tolerances remain unaffected."
+    },
+    {
+      "title": "Giant model - video template by CapCut",
+      "url": "https://www.capcut.com/template-detail/Giant-model/7578393463847161102",
+      "snippet": "Check out Annd358&#x27;s template Giant model on CapCut. You may also like Been a minute 🙄 by TJ and Add 2 clips by libby 🤯🫠..."
+    },
+    {
+      "title": "Giant 2 - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/ec923d17be1e726e44bf9cdc9581e54a",
+      "snippet": "Explore Giant 2 model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    }
+  ]
+}

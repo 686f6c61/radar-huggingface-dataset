@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "clark2002/paper_011085636_few_shot_multimodal",
+  "slug": "clark2002-paper_011085636_few_shot_multimodal",
+  "author": "clark2002",
+  "url": "https://huggingface.co/clark2002/paper_011085636_few_shot_multimodal",
+  "created_at": "2026-08-21T16:02:49.000Z",
+  "updated_at": "2026-08-21T16:02:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "detailed-descriptive",
+    "few-shot-multimodal",
+    "footnote",
+    "intro-method-exp-related-conclusion",
+    "medium-balanced",
+    "mixed-active-passive",
+    "neutral",
+    "structured-imrad",
+    "typst",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Intellindust-AI-Lab/FSOD-VFM: [ICLR 2026] FSOD-VFM: Few-Shot ...",
+      "url": "https://github.com/Intellindust-AI-Lab/FSOD-VFM/",
+      "snippet": "1. Intellindust AI Lab 2. University of Macau * Equal Contribution † Corresponding Author FSOD-VFM is a framework for few-shot object detection leveraging powerful vision foundation models (VFMs). It integrates three key components: 🔹 Universal Proposal Network (UPN) for category-agnostic bounding box generation 🔹 SAM2 for accurate mask ..."
+    },
+    {
+      "title": "Few-Shot Object Detection: A Survey | ACM Computing Surveys",
+      "url": "https://dl.acm.org/doi/full/10.1145/3519022",
+      "snippet": "Analogously to humans, a few-shot model must leverage some kind of prior knowledge to be able to learn reliable hypotheses. In a Few-Shot Classification (FCC) task, for example, the model is expected to learn how to discriminate an object after &#92;(K&#92;)&#92; (K&#92;) samples, for some small &#92;(K&#92;)&#92; (K&#92;) (usually less than 30)."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "FewMMBench: A Benchmark for Multimodal Few-Shot Learning",
+      "url": "https://arxiv.org/abs/2602.21854",
+      "snippet": "Covering a diverse suite of multimodal understanding tasks, from attribute recognition to temporal reasoning, FewMMBench enables systematic analysis across task types, model families, and prompting strategies. We evaluate 26 open-weight MLLMs from six model families across zero-shot, few-shot, and CoT-augmented few-shot settings."
+    }
+  ]
+}

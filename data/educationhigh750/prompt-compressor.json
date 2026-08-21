@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "educationhigh750/prompt-compressor",
+  "slug": "educationhigh750-prompt-compressor",
+  "author": "educationhigh750",
+  "url": "https://huggingface.co/educationhigh750/prompt-compressor",
+  "created_at": "2026-08-21T10:55:58.000Z",
+  "updated_at": "2026-08-21T10:59:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bart",
+    "generated_from_trainer",
+    "base_model:facebook/bart-large-cnn",
+    "base_model:finetune:facebook/bart-large-cnn",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 406341721,
+  "parameters_human": "406.3M",
+  "storage_bytes": 6501713825,
+  "storage_human": "6.5 GB",
+  "base_model": "facebook/bart-large-cnn",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "educationhigh750/prompt-compressor · Hugging Face",
+      "url": "https://huggingface.co/educationhigh750/prompt-compressor",
+      "snippet": "prompt-compressor This model is a fine-tuned version of facebook/bart-large-cnn on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Prompt Compressor | Prompt Overflow",
+      "url": "https://promptoverflow.app/promptcompressor",
+      "snippet": "Discover and copy effective AI prompts curated by the community. Browse, search, and filter prompts for development, writing, marketing, and more."
+    },
+    {
+      "title": "LLMLingua/llmlingua/prompt_compressor.py at main · microsoft ... - GitHub",
+      "url": "https://github.com/microsoft/LLMLingua/blob/main/llmlingua/prompt_compressor.py",
+      "snippet": "This class initializes with the language model and its configuration, preparing it for prompt compression tasks."
+    },
+    {
+      "title": "Prompt Compressor — Free AI Prompt | PromptingBox",
+      "url": "https://www.promptingbox.com/prompt/prompt-compressor",
+      "snippet": "Explicitly requiring all functional requirements to be preserved prevents the model from over-compressing and losing critical instructions."
+    },
+    {
+      "title": "How to Cut RAG Costs by 80% Using Prompt Compression",
+      "url": "https://towardsdatascience.com/how-to-cut-rag-costs-by-80-using-prompt-compression-877a07c6bedb/",
+      "snippet": "Image by the author. AI Generated. The inference process is one of the things that greatly increases the money and time costs of using large language models. This problem augments considerably for longer inputs. Below, you can see the relationship between model performance and inference time. Performance score vs inference throughput [1] Fast models, which generate more tokens per second, tend ..."
+    }
+  ]
+}

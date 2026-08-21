@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "developerjeremylive/Ornith-1.5-9B-GGUF-etheroi",
+  "slug": "developerjeremylive-ornith-1-5-9b-gguf-etheroi",
+  "author": "developerjeremylive",
+  "url": "https://huggingface.co/developerjeremylive/Ornith-1.5-9B-GGUF-etheroi",
+  "created_at": "2026-08-21T16:47:51.000Z",
+  "updated_at": "2026-08-21T16:47:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 47834409410,
+  "storage_human": "47.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-GGUF/tree/main",
+      "snippet": "Instructions to use ornith-ai/Ornith-1.5-9B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ornith-ai/Ornith-1.5-9B-GGUF with Transformers:"
+    },
+    {
+      "title": "Ornith-1.5-9B-GGUF: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ornith-1.5-9b-gguf-ornith-ai",
+      "snippet": "Overview Ornith-1.5-9B-GGUF is a 9-billion parameter dense language model built for code generation and agentic reasoning, maintained by ornith-ai. This is a quantized GGUF variant of the full-precision model, enabling deployment on consumer hardware while maintaining the reasoning capabilities of the original. The model extends Ornith-1.0 by implementing a self-improvement training approach ..."
+    },
+    {
+      "title": "How to Run Ornith 1.5 9B Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally",
+      "snippet": "Ornith 1.5 9B is the model from DeepReinforce&#x27;s new Ornith 1.5 family that you can actually run locally: a dense 9B multimodal coding model that fits on an 8 GB GPU or a 16 GB Mac at 4-bit quantization. This guide covers our Atomic Dynamic GGUF builds, how much memory each one needs, and the exact setup for both Atomic Chat and llama.cpp."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith 1.5 9B: Local Test Results Expose a Benchmark Gap",
+      "url": "https://www.mindstudio.ai/blog/ornith-1-5-9b-local-test",
+      "snippet": "What is Ornith 1.5 9B and does it live up to its benchmarks? Ornith 1.5 9B is a dense, 9-billion-parameter language model built by ornith-ai, designed to run on a single GPU or even mobile hardware in quantized GGUF format. It&#x27;s the smallest member of the Ornith 1.5 family, which also includes a larger mixture-of-experts variant. On paper, the 9B model reports benchmark scores that rival or ..."
+    }
+  ]
+}

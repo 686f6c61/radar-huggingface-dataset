@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AnnotateIt/rtdetr-v2-r50vd-coco-onnx",
+  "slug": "annotateit-rtdetr-v2-r50vd-coco-onnx",
+  "author": "AnnotateIt",
+  "url": "https://huggingface.co/AnnotateIt/rtdetr-v2-r50vd-coco-onnx",
+  "created_at": "2026-08-21T16:46:31.000Z",
+  "updated_at": "2026-08-21T16:46:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "rt_detr_v2",
+    "rt-detr",
+    "rt-detr-v2",
+    "object-detection",
+    "coco",
+    "annotateit",
+    "base_model:PekingU/rtdetr_v2_r50vd",
+    "base_model:quantized:PekingU/rtdetr_v2_r50vd",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172305665,
+  "storage_human": "172 MB",
+  "base_model": "PekingU/rtdetr_v2_r50vd",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnnotateIt/rtdetr-r50vd-coco-onnx · Hugging Face",
+      "url": "https://huggingface.co/AnnotateIt/rtdetr-r50vd-coco-onnx",
+      "snippet": "It is based on the official Apache-2.0 PekingU/rtdetr_r50vd checkpoint. This is not an official PekingU or RT-DETR ONNX release. AnnotateIt did not alter or quantize the graph; the mirror adds an explicit license, immutable provenance, checksums, and independent numerical/runtime validation."
+    },
+    {
+      "title": "GitHub - lyuwenyu/RT-DETR: [CVPR 2024] Official RT-DETR (RTDETR paddle ...",
+      "url": "https://github.com/lyuwenyu/RT-DETR",
+      "snippet": "[CVPR 2024] Official RT-DETR (RTDETR paddle pytorch), Real-Time DEtection TRansformer, DETRs Beat YOLOs on Real-time Object Detection. 🔥 🔥 🔥 - lyuwenyu/RT-DETR"
+    },
+    {
+      "title": "PekingU/rtdetr_v2_r50vd · Hugging Face",
+      "url": "https://huggingface.co/PekingU/rtdetr_v2_r50vd",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - zheli-hub/RT-DETRv2: [CVPR 2024] Official RT-DETR (RTDETR ...",
+      "url": "https://github.com/zheli-hub/RT-DETRv2",
+      "snippet": "[CVPR 2024] Official RT-DETR (RTDETR paddle pytorch), Real-Time DEtection TRansformer, DETRs Beat YOLOs on Real-time Object Detection. 🔥 🔥 🔥 - zheli-hub/RT-DETRv2"
+    },
+    {
+      "title": "rtdetr r50vd coco o365 (未知) | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/PekingU/rtdetr_r50vd_coco_o365",
+      "snippet": "rtdetr r50vd coco o365 by PekingU. 未知 open-source AI model. Released by Peking University, this RT-DETR object detection model is based on the ResNet50 backbone"
+    }
+  ]
+}

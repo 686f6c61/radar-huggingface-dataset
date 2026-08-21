@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ArthurMoreau/OffTheGrid",
+  "slug": "arthurmoreau-offthegrid",
+  "author": "ArthurMoreau",
+  "url": "https://huggingface.co/ArthurMoreau/OffTheGrid",
+  "created_at": "2026-08-21T11:29:14.000Z",
+  "updated_at": "2026-08-21T11:29:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Off The Grid: Detection of Primitives for Feed-Forward 3D Gaussian ...",
+      "url": "https://arthurmoreau.github.io/OffTheGrid/",
+      "snippet": "Off The Grid is a new method for Feed-Forward (Pose-Free) 3D Gaussian Splatting. Instead of placing primitives in a regular grid, we detect subpixel Gaussians locations. Our model produce more accurate 3D Gaussians models while 7 times less primitives."
+    },
+    {
+      "title": "GitHub - ArthurMoreau/OffTheGrid: Website for the paper \"Off The Grid ...",
+      "url": "https://github.com/ArthurMoreau/OffTheGrid",
+      "snippet": "Website for the paper \"Off The Grid: Detection of Primitives for Feed-Forward 3D Gaussian Splatting\""
+    },
+    {
+      "title": "Off The Grid: Detection of Primitives for Feed-Forward 3D Gaussian ...",
+      "url": "https://arxiv.org/pdf/2512.15508",
+      "snippet": "3. Method We present a feed-forward neural network that directly pre-dicts a 3D model of Gaussian primitives from a set of N unposed and uncalibrated images Ii<N representing a static scene. We build on a large reconstruction model, which we fine-tune for the task of 3D Gaussian prediction using a detection-based decoder."
+    },
+    {
+      "title": "[2512.15508v2] Off The Grid: Detection of Primitives for Feed-Forward ...",
+      "url": "https://arxiv.org/abs/2512.15508v2",
+      "snippet": "The resulting pose-free model generates photorealistic 3DGS scenes in seconds, achieving state-of-the-art novel view synthesis for feed-forward models. It outperforms competitors while using far fewer primitives, demonstrating a more accurate and efficient allocation that captures fine details and reduces artifacts."
+    },
+    {
+      "title": "OffTheGrid/assets at main · ArthurMoreau/OffTheGrid · GitHub",
+      "url": "https://github.com/ArthurMoreau/OffTheGrid/tree/main/assets",
+      "snippet": "Website for the paper \"Off The Grid: Detection of Primitives for Feed-Forward 3D Gaussian Splatting\" - ArthurMoreau/OffTheGrid"
+    }
+  ]
+}

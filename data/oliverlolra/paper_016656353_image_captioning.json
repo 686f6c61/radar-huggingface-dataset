@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "oliverlolra/paper_016656353_image_captioning",
+  "slug": "oliverlolra-paper_016656353_image_captioning",
+  "author": "oliverlolra",
+  "url": "https://huggingface.co/oliverlolra/paper_016656353_image_captioning",
+  "created_at": "2026-08-21T17:47:42.000Z",
+  "updated_at": "2026-08-21T17:47:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "cautious",
+    "empirical-focused",
+    "image-captioning",
+    "intro-method-exp-related-conclusion",
+    "numeric-bibtex",
+    "structured-imrad",
+    "typst",
+    "varied-mixed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image Captioning Evaluation in the Age of Multimodal LLMs: Challenges ...",
+      "url": "https://arxiv.org/abs/2503.14604",
+      "snippet": "The evaluation of machine-generated image captions is a complex and evolving challenge. With the advent of Multimodal Large Language Models (MLLMs), image captioning has become a core task, increasing the need for robust and reliable evaluation metrics. This survey provides a comprehensive overview of advancements in image captioning evaluation, analyzing the evolution, strengths, and ..."
+    },
+    {
+      "title": "Image Captioning Evaluation in the Age of Multimodal LLMs:",
+      "url": "https://arxiv.org/html/2503.14604v2",
+      "snippet": "The history of image description has been marked by continuous innovation. Early captioning models evolved from template-based and recurrent neural networks Vinyals et al. 2015 to Transformer-based architectures Cornia et al. 2020; Pan et al. 2020. Typically, an image captioning model consists of a visual encoder and a language model."
+    },
+    {
+      "title": "GitHub - aimagelab/awesome-captioning-evaluation: [IJCAI 2025] Image ...",
+      "url": "https://github.com/aimagelab/awesome-captioning-evaluation",
+      "snippet": "This repository contains a curated list of research papers and resources focusing on image captioning evaluation. Latest Update: 4 August 2025. This repo is a work in progress."
+    },
+    {
+      "title": "Next-generation image captioning: A survey of methodologies and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2949719125000354",
+      "snippet": "The widespread availability of visual data on the Internet has fueled a significant interest in image-to-text captioning systems. Automated image captioning remains a challenging multimodal analytics task, integrating advances in both Computer Vision (CV) and Natural Language Processing (NLP) to understand image content and generate semantically meaningful textual descriptions. Modern deep ..."
+    },
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    }
+  ]
+}

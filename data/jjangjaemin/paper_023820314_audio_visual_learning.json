@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jjangjaemin/paper_023820314_audio_visual_learning",
+  "slug": "jjangjaemin-paper_023820314_audio_visual_learning",
+  "author": "jjangjaemin",
+  "url": "https://huggingface.co/jjangjaemin/paper_023820314_audio_visual_learning",
+  "created_at": "2026-08-21T17:38:05.000Z",
+  "updated_at": "2026-08-21T17:38:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "audio-visual-learning",
+    "bulleted",
+    "concise-analytical",
+    "critical",
+    "endnote",
+    "graphic-visual",
+    "latex-neurips",
+    "mixed-active-passive",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "GitHub - GeWu-Lab/awesome-audiovisual-learning: A curated list of audio ...",
+      "url": "https://github.com/GeWu-Lab/awesome-audiovisual-learning",
+      "snippet": "This is a curated list of audio-visual learning methods and datasets, based on our survey: <Learning in Audio-visual Context: A Review, Analysis, and New Perspective>."
+    },
+    {
+      "title": "Lightweight Joint Audio-Visual Deepfake Detection via",
+      "url": "https://arxiv.org/html/2506.07358",
+      "snippet": "We develop a lightweight audio-visual joint detection model via a single-stream multi-modal learning framework. Differing from existing methods that utilize two independent sub-models to individually learn audio and visual features, our approach fuses multi-modal information while learning the visual and audio features."
+    },
+    {
+      "title": "AVCD: Mitigating Hallucinations in Audio-Visual Large Language Models ...",
+      "url": "https://arxiv.org/pdf/2505.20862",
+      "snippet": "These intricate interactions call for a more adaptive and modality-aware decoding strategy. In this paper, we propose Audio-Visual Contrastive Decoding (AVCD)—a novel, training-free decoding framework designed to model trimodal interactions and suppress modality-induced hallucinations in AV-LLMs."
+    },
+    {
+      "title": "PDF ISEA2025proceeding_final0729 (1)",
+      "url": "https://www.isea-symposium-archives.org/wp-content/uploads/2025/09/2025_Jung_LAV-Audio-Driven-Dynamic-Visual-Generation.pdf",
+      "snippet": "This work introduces LAV (Latent Audio-Visual), a novel framework that bridges neural audio compression and gen-erative visual synthesis. By transforming EnCodec&#x27;s seman-tically rich embeddings into StyleGAN2&#x27;s style latent space through a randomly initialized linear mapping, the system achieves high-quality audio-visual translation without ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "t8star/SenseNova-U1.5-Comfy",
+  "slug": "t8star-sensenova-u1-5-comfy",
+  "author": "t8star",
+  "url": "https://huggingface.co/t8star/SenseNova-U1.5-Comfy",
+  "created_at": "2026-08-21T11:17:40.000Z",
+  "updated_at": "2026-08-21T13:44:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50222155152,
+  "storage_human": "50.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t8star/SenseNova-U1.5-Comfy · Hugging Face",
+      "url": "https://huggingface.co/t8star/SenseNova-U1.5-Comfy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: Native Unified ...",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture. It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification. Rather than relying on adapters to translate between modalities, SenseNova U1 models think-and-act across language and vision ..."
+    },
+    {
+      "title": "SenseNova-U1.5 in ComfyUI: Official 4K T2I and Editing Nodes",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-16-sensenova-u1-5-comfyui",
+      "snippet": "The model itself was covered in our earlier news: SenseNova-U1.5 Preview: 4K Image Generation and Editing From SenseTime. ... What the official pack adds (v0.2.0) Published on the Comfy Registry as ComfyUI-SenseNova-U1."
+    },
+    {
+      "title": "sensenova (SenseNova) - Hugging Face",
+      "url": "https://huggingface.co/sensenova/models",
+      "snippet": "Org profile for SenseNova on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "SenseNova - Multimodal AI Model Platform",
+      "url": "https://www.sensenova.ai/",
+      "snippet": "SenseNova is a multimodal AI platform by SenseTime, offering AI capabilities for enterprises worldwide."
+    }
+  ]
+}

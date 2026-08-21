@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "adammartinezpi/paper_004105272_vision_language_pretraining",
+  "slug": "adammartinezpi-paper_004105272_vision_language_pretraining",
+  "author": "adammartinezpi",
+  "url": "https://huggingface.co/adammartinezpi/paper_004105272_vision_language_pretraining",
+  "created_at": "2026-08-21T18:06:23.000Z",
+  "updated_at": "2026-08-21T18:06:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "empirical-focused",
+    "first-person-plural",
+    "graphic-visual",
+    "html",
+    "intro-problem-solution-validation-future",
+    "long-detailed",
+    "neutral",
+    "numeric-apa",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vision Language Models: A Survey of 26K Papers (CVPR, ICLR, NeurIPS ...",
+      "url": "https://arxiv.org/html/2510.09586v1",
+      "snippet": "The computer - vision and machine - learning community has undergone a visible transition in 2023-2025. With the consolidation of large - scale pretrained models (CLIP/BLIP/LLaVA [1, 2, 3] families, ViT backbones) and ubiquitous diffusion - based generators, the research focus has shifted: classic perception remains active, yet a large fraction of accepted papers are now organized around ..."
+    },
+    {
+      "title": "Vision Language Models: A Survey of 26K Papers - arXiv.org",
+      "url": "https://arxiv.org/pdf/2510.09586v1",
+      "snippet": "Diffusion and generative methods increase year over year, indicating that content generation continues to drive both methodological and application-level innovation. In parallel, vision-language and broader multimodal directions grow rapidly, reflecting the consolidation of large models and cross-modal alignment as core infrastructure."
+    },
+    {
+      "title": "GitHub - zli12321/Vision-Language-Models-Overview: A most Frontend ...",
+      "url": "https://github.com/zli12321/Vision-Language-Models-Overview",
+      "snippet": "A most Frontend Collection and survey of vision-language model papers, and models GitHub repository. Continuous updates. - zli12321/Vision-Language-Models-Overview"
+    },
+    {
+      "title": "GitHub - jingyi0000/VLM_survey: Collection of AWESOME vision-language ...",
+      "url": "https://github.com/jingyi0000/VLM_survey",
+      "snippet": "This is the repository of Vision Language Models for Vision Tasks: a Survey, a systematic survey of VLM studies in various visual recognition tasks including image classification, object detection, semantic segmentation, etc. For details, please refer to: Vision-Language Models for Vision Tasks: A Survey [Paper] IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2024 🤩 ..."
+    },
+    {
+      "title": "A comprehensive survey of Vision-Language Models: Pretrained models ...",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1566253525006955",
+      "snippet": "The goal of this survey is to provide concrete contributions to understanding and optimizing Vision Language Models in several aspects, specifically fine-tuning prompt engineering, adapters, pretraining objectives, pre-trained models and datasets."
+    }
+  ]
+}

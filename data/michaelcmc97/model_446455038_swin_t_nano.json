@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "michaelcmc97/model_446455038_swin_t_nano",
+  "slug": "michaelcmc97-model_446455038_swin_t_nano",
+  "author": "michaelcmc97",
+  "url": "https://huggingface.co/michaelcmc97/model_446455038_swin_t_nano",
+  "created_at": "2026-08-21T17:44:26.000Z",
+  "updated_at": "2026-08-21T17:44:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "generation",
+    "kaiming-normal",
+    "linear-warmup",
+    "lion",
+    "low-rank",
+    "nano",
+    "relu",
+    "rmsnorm",
+    "standard",
+    "swin-t",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\". - microsoft/Swin-Transformer"
+    },
+    {
+      "title": "Swin Transformer V2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/swinv2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "Swin Transformer - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/swin-transformer/",
+      "snippet": "The Swin Transformer (Shifted Window Transformer) is a vision transformer architecture that computes self-attention within local image windows and uses a shifted window mechanism to enable interaction between neighboring regions. This allows it to efficiently learn both local and global image features."
+    }
+  ]
+}

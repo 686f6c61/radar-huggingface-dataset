@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kpsss34/FHDR_Uncensored",
+  "slug": "kpsss34-fhdr_uncensored",
+  "author": "kpsss34",
+  "url": "https://huggingface.co/kpsss34/FHDR_Uncensored",
+  "created_at": "2025-10-26T12:28:20.000Z",
+  "updated_at": "2026-02-27T02:17:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "gguf",
+    "art",
+    "text-to-image",
+    "en",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:quantized:black-forest-labs/FLUX.1-dev",
+    "license:other",
+    "endpoints_compatible",
+    "diffusers:FluxPipeline",
+    "region:us"
+  ],
+  "likes": 613,
+  "downloads_30d": 3076,
+  "trending_score": 8,
+  "parameters": 11901408320,
+  "parameters_human": "11.90B",
+  "storage_bytes": 77194617866,
+  "storage_human": "77.2 GB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers",
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kpsss34/FHDR_Uncensored · Hugging Face",
+      "url": "https://huggingface.co/kpsss34/FHDR_Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kpsss34/FHDR_Uncensored at main - Hugging Face",
+      "url": "https://huggingface.co/kpsss34/FHDR_Uncensored/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kpsss34/FHDR_Uncensored at main - Hugging Face",
+      "url": "https://huggingface.co/kpsss34/FHDR_Uncensored/tree/main/tokenizer",
+      "snippet": "Instructions to use kpsss34/FHDR_Uncensored with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use kpsss34/FHDR_Uncensored with Diffusers:"
+    },
+    {
+      "title": "README.md · kpsss34/FHDR_Uncensored at main - Hugging Face",
+      "url": "https://huggingface.co/kpsss34/FHDR_Uncensored/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kpsss34/FHDR_Uncensored · Uncensored Models Hosted Option",
+      "url": "https://huggingface.co/kpsss34/FHDR_Uncensored/discussions/17",
+      "snippet": "I build a ChatGPT-like platform that runs the uncensored model on a shared server to cut down on hosting costs and make it available to people who don&#x27;t have powerful GPUs"
+    }
+  ]
+}

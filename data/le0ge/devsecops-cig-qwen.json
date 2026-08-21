@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "le0ge/devsecops-cig-qwen",
+  "slug": "le0ge-devsecops-cig-qwen",
+  "author": "le0ge",
+  "url": "https://huggingface.co/le0ge/devsecops-cig-qwen",
+  "created_at": "2026-08-21T11:14:37.000Z",
+  "updated_at": "2026-08-21T11:15:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683070912,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "le0ge/devsecops-cig-qwen · Hugging Face",
+      "url": "https://huggingface.co/le0ge/devsecops-cig-qwen",
+      "snippet": "Instructions to use le0ge/devsecops-cig-qwen with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use le0ge/devsecops-cig-qwen with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "https://modelstudio.alibabacloud.com/",
+      "snippet": "Diverse Model Ecosystem Easily experience and quickly access Alibaba Cloud&#x27;s latest foundational models (FM), including Qwen-Max, Qwen-Plus, Qwen-Turbo, Qwen-VL, and the Wan series."
+    },
+    {
+      "title": "Qwen - lablab.ai",
+      "url": "https://lablab.ai/tech/qwen",
+      "snippet": "Qwen is a family of open-source and proprietary large language models developed by Alibaba Cloud, covering text, vision, and code, accessible via an OpenAI-compatible API."
+    },
+    {
+      "title": "What Is Qwen AI? Alibaba&#x27;s Most Powerful Model Explained for 2026",
+      "url": "https://scale-xpert.com/what-is-qwen-ai-alibaba-model-explained-2026/",
+      "snippet": "Qwen is Alibaba&#x27;s AI model family with 36 trillion training tokens, 119-language support, and frontier benchmark scores. Learn what Qwen is, how it works, and how to use it."
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of large language models developed by Alibaba Cloud."
+    }
+  ]
+}

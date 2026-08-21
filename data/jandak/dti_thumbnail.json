@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jandak/dti_thumbnail",
+  "slug": "jandak-dti_thumbnail",
+  "author": "jandak",
+  "url": "https://huggingface.co/jandak/dti_thumbnail",
+  "created_at": "2026-08-21T14:56:34.000Z",
+  "updated_at": "2026-08-21T14:56:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "flux",
+    "text-to-image",
+    "lora",
+    "fal",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94501128,
+  "storage_human": "95 MB",
+  "base_model": "undefined",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Thumbnails & Icons | Dress To Impress Wiki | Fandom",
+      "url": "https://dti-dress-to-impress.fandom.com/wiki/Thumbnails_%26_Icons",
+      "snippet": "Thumbnails and Icons are promotional materials used on the Dress To Impress game page, Discord server, and other official platforms. The thumbnails and icons correspond to the game&#x27;s current update, reflecting its themes and content. The images used for thumbnails and icons are often rendered in 3D modeling programs such as Blender, but on occasion, and up to recent, edited screenshots are ..."
+    },
+    {
+      "title": "THUMBEAST - AI Thumbnail Generator for YouTube Creators",
+      "url": "https://thumbeast.com/",
+      "snippet": "THUMBEAST is the AI thumbnail generator built for YouTube creators. Generate scroll-stopping thumbnails in ~30 seconds with face consistency, style cloning, AI upscaling, and more. 1 free thumbnail on signup, no credit card required."
+    },
+    {
+      "title": "A generative framework for enhancing drug target interaction prediction ...",
+      "url": "https://www.nature.com/articles/s41598-025-01589-9",
+      "snippet": "In silico drug-target interaction (DTI) prediction plays a key role in accelerating drug discovery and understanding molecular mechanisms."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

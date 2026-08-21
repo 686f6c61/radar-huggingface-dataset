@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lucassouzasy/paper_010581778_few_shot_multimodal",
+  "slug": "lucassouzasy-paper_010581778_few_shot_multimodal",
+  "author": "lucassouzasy",
+  "url": "https://huggingface.co/lucassouzasy/paper_010581778_few_shot_multimodal",
+  "created_at": "2026-08-21T14:50:54.000Z",
+  "updated_at": "2026-08-21T14:51:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "compact",
+    "empirical-focused",
+    "enthusiastic",
+    "few-shot-multimodal",
+    "intro-method-exp-related-conclusion",
+    "latex-acl",
+    "numeric-bibtex",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Empowering few-shot learning: a multimodal optimization framework",
+      "url": "https://link.springer.com/article/10.1007/s00521-024-10780-4",
+      "snippet": "This work proposes the generic multimodal optimization-based few-shot learning framework (GoFSL). The framework leverages few-shot learning to learn from a few data, multimodal learning to learn a rich representation of image and text data, and meta-learning to help the model generalization."
+    },
+    {
+      "title": "[2301.06267] Multimodality Helps Unimodality: Cross-Modal Few-Shot ...",
+      "url": "https://arxiv.org/abs/2301.06267",
+      "snippet": "The ability to quickly learn a new task with minimal instruction - known as few-shot learning - is a central aspect of intelligent agents. Classical few-shot benchmarks make use of few-shot samples from a single modality, but such samples may not be sufficient to characterize an entire concept class. In contrast, humans use cross-modal information to learn new concepts efficiently. In this ..."
+    },
+    {
+      "title": "Few-Shot Learning Based on Multimodal Information Processing",
+      "url": "https://ieeexplore.ieee.org/document/10981794/",
+      "snippet": "Few-shot learning aims to develop models with strong generalization capabilities using a small number of training samples. However, most learning methods rely solely on the visual features of a few samples to represent entire categories, leading to poor category representativeness. In contrast, humans can utilize multimodal information to learn category features, thereby making them more ..."
+    },
+    {
+      "title": "Multimodal Few-Shot Learning with Frozen Language Models",
+      "url": "https://arxiv.org/abs/2106.13884",
+      "snippet": "When trained at sufficient scale, auto-regressive language models exhibit the notable ability to learn a new language task after being prompted with just a few examples. Here, we present a simple, yet effective, approach for transferring this few-shot learning ability to a multimodal setting (vision and language). Using aligned image and caption data, we train a vision encoder to represent ..."
+    },
+    {
+      "title": "CVPR Poster Multimodality Helps Unimodality: Cross-Modal Few-Shot ...",
+      "url": "https://cvpr.thecvf.com/virtual/2023/poster/22391",
+      "snippet": "To do so, we exploit the fact that recent multimodal foundation models such as CLIP are inherently cross-modal, mapping different modalities to the same representation space. Specifically, we propose a simple cross-modal adaptation approach that learns from few-shot examples spanning different modalities."
+    }
+  ]
+}

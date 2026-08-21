@@ -5,7 +5,7 @@
   "author": "for-comfyui",
   "url": "https://huggingface.co/for-comfyui/comfyui-data",
   "created_at": "2026-04-09T14:42:52.000Z",
-  "updated_at": "2026-08-20T04:39:03.000Z",
+  "updated_at": "2026-08-21T10:58:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 161823745104,
-  "storage_human": "161.8 GB",
+  "storage_bytes": 162130553292,
+  "storage_human": "162.1 GB",
   "base_model": null,
   "formats": [
     "gguf"

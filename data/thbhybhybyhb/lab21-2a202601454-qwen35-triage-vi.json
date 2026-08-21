@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "thbhybhybyhb/lab21-2A202601454-qwen35-triage-vi",
+  "slug": "thbhybhybyhb-lab21-2a202601454-qwen35-triage-vi",
+  "author": "thbhybhybyhb",
+  "url": "https://huggingface.co/thbhybhybyhb/lab21-2A202601454-qwen35-triage-vi",
+  "created_at": "2026-08-21T15:29:06.000Z",
+  "updated_at": "2026-08-21T15:31:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3.5",
+    "vietnamese",
+    "ticket-triage",
+    "vi",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "QWEN CHAT GitHub Hugging Face ModelScope DISCORD We are delighted to announce the official release of Qwen3.5, introducing the open-weight of the first model in the Qwen3.5 series, namely Qwen3.5-397B-A17B. As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and ..."
+    },
+    {
+      "title": "Logins & Portals | Labcorp",
+      "url": "https://www.labcorp.com/logins",
+      "snippet": "Access Labcorp&#x27;s portals for patients, healthcare providers and biopharma, across all diagnostic and specialty areas."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/qwenchat",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "rhindsight/lab21-2A202601903-qwen35-triage-vi · Hugging Face",
+      "url": "https://huggingface.co/rhindsight/lab21-2A202601903-qwen35-triage-vi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

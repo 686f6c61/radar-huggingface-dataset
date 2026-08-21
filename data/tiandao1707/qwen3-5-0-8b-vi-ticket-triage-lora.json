@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tiandao1707/qwen3.5-0.8b-vi-ticket-triage-lora",
+  "slug": "tiandao1707-qwen3-5-0-8b-vi-ticket-triage-lora",
+  "author": "tiandao1707",
+  "url": "https://huggingface.co/tiandao1707/qwen3.5-0.8b-vi-ticket-triage-lora",
+  "created_at": "2026-08-21T19:10:18.000Z",
+  "updated_at": "2026-08-21T19:10:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "vietnamese",
+    "text-classification",
+    "customer-support",
+    "text-generation",
+    "conversational",
+    "vi",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63330181,
+  "storage_human": "63 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "Qwen3.5 - Vision Language Model - Inference Models",
+      "url": "https://inference-models.roboflow.com/models/qwen35/",
+      "snippet": "Qwen3.5 - Vision Language Model Qwen3.5 is a native vision-language model from Alibaba Cloud&#x27;s Qwen team, built on a hybrid architecture that fuses linear attention with a sparse mixture-of-experts."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.5 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5/fine-tune",
+      "snippet": "llms.txt Markdown Copy Models 💜 Qwen3.5 - How to Run Locally Qwen3.5 Fine-tuning Guide Learn how to fine-tune Qwen3.5 LLMs with Unsloth. You can now fine-tune Qwen3.5 model family (0.8B, 2B, 4B, 9B, 27B, 35B‑A3B, 122B‑A10B) with Unsloth. Support includes both vision, text and RL fine-tuning. Qwen3.5‑35B‑A3B - bf16 LoRA works on 74GB ..."
+    }
+  ]
+}

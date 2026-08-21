@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "thaitu2602/lab21-qwen3.5-4b-triage-lora",
+  "slug": "thaitu2602-lab21-qwen3-5-4b-triage-lora",
+  "author": "thaitu2602",
+  "url": "https://huggingface.co/thaitu2602/lab21-qwen3.5-4b-triage-lora",
+  "created_at": "2026-08-21T11:27:31.000Z",
+  "updated_at": "2026-08-21T11:27:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VinUni-AI20k/Day21-Track3-Finetuning-Lab: VinUni AICB - GitHub",
+      "url": "https://github.com/VinUni-AI20k/Day21-Track3-Finetuning-Lab",
+      "snippet": "AICB-P2T3 · Ngày 21 · Chương 5 — Fine-tuning & An Toàn Đi kèm deck day21-fine-tuning-llms-lora-qlora.tex (90 trang · 20 mục). Một câu tóm tắt lab: fine-tune một model mở bằng LoRA — rồi chứng minh nó thắng được chính model đó khi đã được prompt tử tế. Nếu không chứng minh được, phát hiện ra điều đó cũng được tính điểm ..."
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-4B",
+      "snippet": "Qwen3.5-4B is the compact dense entry in the Qwen3.5 family — same gated delta networks architecture, vision encoder, 262K context, and MTP decoding as the larger siblings, sized for 16 GB consumer GPUs."
+    },
+    {
+      "title": "GitHub - algtrd24/qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/algtrd24/qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5/fine-tune",
+      "snippet": "llms.txt Markdown Copy Models 💜 Qwen3.5 - How to Run Locally Qwen3.5 Fine-tuning Guide Learn how to fine-tune Qwen3.5 LLMs with Unsloth. You can now fine-tune Qwen3.5 model family (0.8B, 2B, 4B, 9B, 27B, 35B‑A3B, 122B‑A10B) with Unsloth. Support includes both vision, text and RL fine-tuning. Qwen3.5‑35B‑A3B - bf16 LoRA works on 74GB ..."
+    },
+    {
+      "title": "qwen AI Models | Civitai",
+      "url": "https://civitai.com/tag/qwen",
+      "snippet": "Browse 311 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with qwen."
+    }
+  ]
+}

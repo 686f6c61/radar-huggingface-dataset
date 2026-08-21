@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Dvtyksl/Asfaltkesme",
+  "slug": "dvtyksl-asfaltkesme",
+  "author": "Dvtyksl",
+  "url": "https://huggingface.co/Dvtyksl/Asfaltkesme",
+  "created_at": "2026-08-21T17:40:36.000Z",
+  "updated_at": "2026-08-21T17:41:54.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1508831,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enhancing asphalt mix design with transfer learning and hybrid ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2214509525010563",
+      "snippet": "Nevertheless, its use in transportation particularly asphalt mix design remains limited, presenting a critical research gap. Despite progress in AI applications, three major challenges persist: limited generalizability under data scarcity, dependence on costly and labor-intensive laboratory testing, and underutilization of transfer learning."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Mawrighthob/paper_024327258_audio_visual_learning",
+  "slug": "mawrighthob-paper_024327258_audio_visual_learning",
+  "author": "Mawrighthob",
+  "url": "https://huggingface.co/Mawrighthob/paper_024327258_audio_visual_learning",
+  "created_at": "2026-08-21T16:03:52.000Z",
+  "updated_at": "2026-08-21T16:03:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "audio-visual-learning",
+    "author-year",
+    "detailed-descriptive",
+    "highlight-bullet",
+    "html",
+    "neutral",
+    "passive",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "From Vision to Audio and Beyond: A Unified Model for Audio-Visual ...",
+      "url": "https://arxiv.org/abs/2409.19132",
+      "snippet": "Since VAB is a unified model, its backbone can be fine-tuned for various audio-visual downstream tasks. Our experiments showcase the efficiency of VAB in producing high-quality audio from video, and its capability to acquire semantic audio-visual features, leading to competitive results in audio-visual retrieval and classification."
+    },
+    {
+      "title": "[2512.19687v1] Pushing the Frontier of Audiovisual Perception with ...",
+      "url": "https://arxiv.org/abs/2512.19687v1",
+      "snippet": "We introduce Perception Encoder Audiovisual, PE-AV, a new family of encoders for audio and video understanding trained with scaled contrastive learning. Built on PE, PE-AV makes several key contributions to extend representations to audio, and natively support joint embeddings across audio-video, audio-text, and video-text modalities. PE-AV&#x27;s unified cross-modal embeddings enable novel tasks ..."
+    },
+    {
+      "title": "Pushing the Frontier of Audiovisual Perception with Large-Scale ...",
+      "url": "https://ai.meta.com/research/publications/pushing-the-frontier-of-audiovisual-perception-with-large-scale-multimodal-correspondence-learning/",
+      "snippet": "Abstract We introduce Perception Encoder Audiovisual, PE-AV, a new family of encoders for audio and video understanding trained with scaled contrastive learning. Built on Perception Encoder, PE-AV makes several key contributions to extend representations to audio, and natively support joint embeddings across audio-video, audio-text, and video-text modalities. PE-AV&#x27;s unified cross ..."
+    },
+    {
+      "title": "Paper-Notes-en/docs/CVPR2026/audio_speech/pushing_the_frontier_of ...",
+      "url": "https://github.com/zhaoyang97/Paper-Notes-en/blob/main/docs/CVPR2026/audio_speech/pushing_the_frontier_of_audiovisual_perception_with_large-scale_multimodal_corre.md",
+      "snippet": "Second, there is a serious imbalance in scale and diversity of modality pairs: vision-language data is abundant, while audio-visual data is sparse and narrow, leading to the audiovisual domain lagging behind. Existing audio models also tend to specialize in a single domain (either sound effects, music, or speech)."
+    }
+  ]
+}

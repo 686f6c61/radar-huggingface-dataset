@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "brian-now/model1",
+  "slug": "brian-now-model1",
+  "author": "brian-now",
+  "url": "https://huggingface.co/brian-now/model1",
+  "created_at": "2026-08-21T15:37:05.000Z",
+  "updated_at": "2026-08-21T16:37:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "test",
+    "demo",
+    "en",
+    "dataset:brian-now/dataset1",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brian AI models | Brian - Documentation",
+      "url": "https://docs.brianknows.org/brian-ai-models",
+      "snippet": "Up-to-date is the best model for web3 practitioners of its size. Such a model is well suited for developers and startups because its size makes it easily deployable and faster at inference. This is our first step to showcase the utility of having web3-related models and the Brian team&#x27;s objectives towards contributing to the community."
+    },
+    {
+      "title": "Welcome | Brian - Documentation",
+      "url": "https://docs.brianknows.org/",
+      "snippet": "The LangChain<>Brian SDK allows devs to launch LangChain AI Agents capable of transacting and deploying tokens on-chain. The Brian App, built on top of Brian APIs, offers users an interface for performing transactions in a non-custodial way, researching web3 info, and deploying smart contracts by prompt."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "Google AI - How we&#x27;re making AI helpful for everyone",
+      "url": "https://ai.google/",
+      "snippet": "Discover how Google AI is committed to enriching knowledge, solving complex challenges and helping people grow by building useful AI tools and technologies."
+    }
+  ]
+}

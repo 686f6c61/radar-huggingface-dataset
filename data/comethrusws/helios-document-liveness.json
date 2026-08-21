@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "comethrusws/helios-document-liveness",
+  "slug": "comethrusws-helios-document-liveness",
+  "author": "comethrusws",
+  "url": "https://huggingface.co/comethrusws/helios-document-liveness",
+  "created_at": "2026-08-21T17:10:31.000Z",
+  "updated_at": "2026-08-21T17:10:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "tflite",
+    "onnx",
+    "computer-vision",
+    "liveness-detection",
+    "anti-spoofing",
+    "document-forensics",
+    "kyc",
+    "ocr",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "comethrusws (blizzy) - Hugging Face",
+      "url": "https://huggingface.co/comethrusws/models",
+      "snippet": "https://sagea.space updated a model 12 days ago published a model 23 days ago"
+    },
+    {
+      "title": "comethrusws (blizzy) - Hugging Face",
+      "url": "https://huggingface.co/comethrusws",
+      "snippet": "https://sagea.space updated a model about 1 month ago"
+    },
+    {
+      "title": "Helios / Identity Verification and Identity Intelligence Infrastructure ...",
+      "url": "https://www.sagea.space/enterprise/helios",
+      "snippet": "Helios by SAGEA is a self-hosted identity verification and KYC infrastructure for banks, fintech, wallets, and regulated enterprises. Deploy on-premises with local-language document extraction, liveness detection, face matching, and full audit trails."
+    },
+    {
+      "title": "Document Liveness Detector | AI Moderation Model | Detector24",
+      "url": "https://detector24.ai/model/document-liveness",
+      "snippet": "Bynn Document Liveness Detector The Bynn Document Liveness Detector determines whether a document or portrait image was captured directly from the physical document (live) or ..."
+    },
+    {
+      "title": "IDLive®️ Doc — Document Liveness Detection | Mitek",
+      "url": "https://www.miteksystems.com/products/document-liveness-detection",
+      "snippet": "Why choose document liveness detection components from Mitek? Minimize manual reviews and false rejects Reduce tedious error-prone manual reviews with AI-powered instant detection of screen replays, printed copy, or swapped portraits, far faster and more accurate than any human reviewer."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "zerodigest/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF",
+  "slug": "zerodigest-ornith-1-5-35b-uncensored-ymq-mtp-gguf",
+  "author": "zerodigest",
+  "url": "https://huggingface.co/zerodigest/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF",
+  "created_at": "2026-08-21T17:53:15.000Z",
+  "updated_at": "2026-08-21T18:42:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "quantizer",
+    "autoround",
+    "architecture-aware",
+    "moe",
+    "mixture-of-experts",
+    "uncensored",
+    "35b",
+    "base_model:0xKitkat/Ornith-1.5-35B-A3B-Uncensored",
+    "base_model:quantized:0xKitkat/Ornith-1.5-35B-A3B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 49336625936,
+  "storage_human": "49.3 GB",
+  "base_model": "0xKitkat/Ornith-1.5-35B-A3B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.0-35B-AEON-Ultimate-Uncensored-NVFP4-GGUF-MTP",
+      "url": "https://huggingface.co/neko-legends/Ornith-1.0-35B-AEON-Ultimate-Uncensored-NVFP4-GGUF-MTP",
+      "snippet": "Use ornith-1.-35b-aeon-ultimate-uncensored-nvfp4-gguf-mtp.gguf. It is the AEON NVFP4 GGUF with grafted compatible MTP block."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith-1.0-35B — AEON Ultimate Uncensored - GitHub",
+      "url": "https://github.com/AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored",
+      "snippet": "0 / 80 refusals (0.0%) on diverse harmful prompts (base ≈ 94/100) — fully uncensored. 0 coding-capability loss — agentic pass@1 0.833, identical to the base family-by-family. Near-lossless (KL ≈ 0.0014). Hybrid qwen3_5_moe: 40 layers (30 GatedDeltaNet + 10 full-attn), 256 experts + shared (A3B), vision, 256K ctx, thinking model. NVFP4 + DFlash on a DGX Spark: 3.05× faster decode (avg ..."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    }
+  ]
+}

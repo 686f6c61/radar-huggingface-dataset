@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ethosoft/NedoTokenizer",
+  "slug": "ethosoft-nedotokenizer",
+  "author": "Ethosoft",
+  "url": "https://huggingface.co/Ethosoft/NedoTokenizer",
+  "created_at": "2026-08-21T10:41:20.000Z",
+  "updated_at": "2026-08-21T10:41:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nedotokenizer",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "nedotokenizer",
+    "tokenizer",
+    "turkish",
+    "morphology",
+    "rust",
+    "lossless",
+    "tr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8616666,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ethosoftai/NedoTokenizer",
+      "url": "https://github.com/ethosoftai/NedoTokenizer",
+      "snippet": "Contribute to ethosoftai/NedoTokenizer development by creating an account on GitHub."
+    },
+    {
+      "title": "README.en.md · Ethosoft/NedoTurkishTokenizer-Final1000 at main",
+      "url": "https://huggingface.co/datasets/Ethosoft/NedoTurkishTokenizer-Final1000/blob/main/README.en.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ethosoft AI Research | Language Models, Healthcare & Education",
+      "url": "http://ethosoft.org/",
+      "snippet": "Ethosoft is an interdisciplinary AI team building human-centered solutions across healthcare, education, and core artificial intelligence."
+    },
+    {
+      "title": "Ethosoft (Ethosoft) - Hugging Face",
+      "url": "https://huggingface.co/Ethosoft",
+      "snippet": "AI & ML interests ... Recent Activity nmstech updated a model 1 day ago ... nmstech published a model 1 day ago ... Ekrem-the-second published a dataset"
+    },
+    {
+      "title": "NedoTurkishTokenizer/dataset at main · NMSOfficial ... - GitHub",
+      "url": "https://github.com/NMSOfficial/NedoTurkishTokenizer/tree/main/dataset",
+      "snippet": "Morphology-aware Turkish tokenizer with the evaluation set. - NedoTurkishTokenizer/dataset at main · NMSOfficial/NedoTurkishTokenizer"
+    }
+  ]
+}

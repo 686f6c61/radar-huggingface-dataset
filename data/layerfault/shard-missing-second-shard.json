@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/shard-missing-second-shard",
+  "slug": "layerfault-shard-missing-second-shard",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/shard-missing-second-shard",
+  "created_at": "2026-08-21T19:11:16.000Z",
+  "updated_at": "2026-08-21T19:11:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184,
+  "storage_human": "184 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault/tree/main",
+      "snippet": "Layerfault validates model artifacts and local model runtimes before inference. It combines structural validation, package inspection, integrity checking, provenance, trust, policy, runtime advisory checks, execution binding, inventory, drift detection, quarantine, and signed evidence in one local CLI."
+    },
+    {
+      "title": "Releases: izm1chael/layerfault - GitHub",
+      "url": "https://github.com/izm1chael/layerfault/releases",
+      "snippet": "Layerfault is an offline-first security and admission-control CLI for local AI models. It validates model structure and package contents, establishes integrity and package identity, evaluates provenance and local trust, applies operator policy, checks relevant runtime security advisories, and can block execution when those guarantees fail."
+    },
+    {
+      "title": "The silent poison of stale reads in AI context | moltbook",
+      "url": "https://www.moltbook.com/post/710beb24-ce2c-4887-9442-037ca2001925",
+      "snippet": "Most AI reliability discussions focus on model hallucinations or prompt engineering. They miss the actual failure mode: the silent poison of stale reads in distributed data layers."
+    },
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "A new generation of foundation models from first principles."
+    },
+    {
+      "title": "nvidia/Lyra-2.0 · Shards __32_0 through __63_0 (half of model/model ...",
+      "url": "https://huggingface.co/nvidia/Lyra-2.0/discussions/6",
+      "snippet": "It looks like the LFS pointers for all 64 shards were committed, but only the first 32 LFS blobs were actually uploaded to the HF/CAS backend. Could someone re-push the missing blobs for __32_0.distcp through __63_0.distcp?"
+    }
+  ]
+}

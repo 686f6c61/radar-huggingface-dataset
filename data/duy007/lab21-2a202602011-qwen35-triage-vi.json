@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Duy007/lab21-2A202602011-qwen35-triage-vi",
+  "slug": "duy007-lab21-2a202602011-qwen35-triage-vi",
+  "author": "Duy007",
+  "url": "https://huggingface.co/Duy007/lab21-2A202602011-qwen35-triage-vi",
+  "created_at": "2026-08-21T16:11:54.000Z",
+  "updated_at": "2026-08-21T16:13:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "trl",
+    "customer-support",
+    "json-extraction",
+    "text-generation",
+    "conversational",
+    "vi",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rhindsight/lab21-2A202601903-qwen35-triage-vi · Hugging Face",
+      "url": "https://huggingface.co/rhindsight/lab21-2A202601903-qwen35-triage-vi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/qwenchat",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "[Bug]: Value error, Model architectures [&#x27;Qwen3 ... - GitHub",
+      "url": "https://github.com/vllm-project/vllm/issues/35344",
+      "snippet": "[Bug]: Value error, Model architectures [&#x27;Qwen3_5MoeForConditionalGeneration&#x27;] are not supported for now #35344"
+    }
+  ]
+}

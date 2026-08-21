@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "idtruyo/Qwen2-0-5B-GRPO-vllm-trl",
+  "slug": "idtruyo-qwen2-0-5b-grpo-vllm-trl",
+  "author": "idtruyo",
+  "url": "https://huggingface.co/idtruyo/Qwen2-0-5B-GRPO-vllm-trl",
+  "created_at": "2026-08-21T14:40:42.000Z",
+  "updated_at": "2026-08-21T15:37:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "grpo",
+    "trackio:https://sergiopaniego-Qwen2-0-5B-GRPO-vllm-trl.hf.space?project=Qwen2-0-5B-GRPO-vllm-trl&runs=idtruyo-1787323400&sidebar=collapsed",
+    "trl",
+    "arxiv:2402.03300",
+    "base_model:Qwen/Qwen2-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2-0.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57104423,
+  "storage_human": "57 MB",
+  "base_model": "Qwen/Qwen2-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marinasuhyeon/Qwen2-0-5B-GRPO-vllm-trl · Hugging Face",
+      "url": "https://huggingface.co/marinasuhyeon/Qwen2-0-5B-GRPO-vllm-trl",
+      "snippet": "Model Card for Qwen2--5B-GRPO-vllm-trl This model is a fine-tuned version of Qwen/Qwen2-.5B-Instruct. It has been trained using TRL. Quick start ... Training procedure This model was trained with GRPO, a method introduced in DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models. Framework versions TRL: 0.26.2 ..."
+    },
+    {
+      "title": "Jake1014/Qwen2-0-5B-GRPO-vllm-trl · Hugging Face",
+      "url": "https://huggingface.co/Jake1014/Qwen2-0-5B-GRPO-vllm-trl",
+      "snippet": "Instructions to use Jake1014/Qwen2--5B-GRPO-vllm-trl with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Jake1014/Qwen2--5B-GRPO-vllm-trl with Transformers:"
+    },
+    {
+      "title": "GitHub - huggingface/trl at aihackr",
+      "url": "https://github.com/huggingface/trl?ref=aihackr",
+      "snippet": "TRL is a cutting-edge library designed for post-training foundation models using advanced techniques like Supervised Fine-Tuning (SFT), Group Relative Policy Optimization (GRPO), and Direct Preference Optimization (DPO). Built on top of the 🤗 Transformers ecosystem, TRL supports a variety of model architectures and modalities, and can be scaled-up across various hardware setups."
+    },
+    {
+      "title": "GitHub - wangxso/Qwen2: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/wangxso/Qwen2",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - wangxso/Qwen2"
+    },
+    {
+      "title": "Qwen2-0.5B · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2-0.5B/summary",
+      "snippet": "Qwen2 is the new series of Qwen large language models. For Qwen2, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters, including a Mixture-of-Experts model."
+    }
+  ]
+}

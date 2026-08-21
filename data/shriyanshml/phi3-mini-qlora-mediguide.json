@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Shriyanshml/phi3-mini-qlora-mediguide",
+  "slug": "shriyanshml-phi3-mini-qlora-mediguide",
+  "author": "Shriyanshml",
+  "url": "https://huggingface.co/Shriyanshml/phi3-mini-qlora-mediguide",
+  "created_at": "2026-08-21T11:10:18.000Z",
+  "updated_at": "2026-08-21T11:10:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13091243,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Phi-3: Redefining what&#x27;s possible with SLMs",
+      "url": "https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/",
+      "snippet": "Phi-3-small (7B) and Phi-3-medium (14B) will be available in the Azure AI model catalog and other model gardens shortly. Microsoft continues to offer the best models across the quality-cost curve and today&#x27;s Phi-3 release expands the selection of models with state-of-the-art small models."
+    },
+    {
+      "title": "phi3:mini - Ollama",
+      "url": "https://ollama.com/library/phi3:mini",
+      "snippet": "4k ollama run phi3:mini ollama run phi3:medium 128k ollama run phi3:medium-128k Phi-3 Mini Phi-3 Mini is a 3.8B parameters, lightweight, state-of-the-art open model trained with the Phi-3 datasets that includes both synthetic data and the filtered publicly available websites data with a focus on high-quality and reasoning dense properties."
+    },
+    {
+      "title": "edumunozsala/phi-3-mini-QLoRA · Hugging Face",
+      "url": "https://huggingface.co/edumunozsala/phi-3-mini-QLoRA",
+      "snippet": "phi-3-mini-QLoRA This model is a fine-tuned version of microsoft/Phi-3-mini-4k-instruct on an unknown dataset. It achieves the following results on the evaluation set: Loss: 0.5741 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following ..."
+    },
+    {
+      "title": "Phi Open Models - Small Language Models | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us/products/phi/",
+      "snippet": "What are the latest Phi models? Phi-4-mini and Phi-4-multimodal are the newest models in the Phi open model family. These two models join Phi-4 as the next models in the series."
+    },
+    {
+      "title": "shandilyabh/phi-3-mini-QLoRA · Hugging Face",
+      "url": "https://huggingface.co/shandilyabh/phi-3-mini-QLoRA",
+      "snippet": "phi-3-mini-QLoRA This model is a fine-tuned version of microsoft/Phi-3-mini-4k-instruct on an unknown dataset. It achieves the following results on the evaluation set: Loss: 1.0530 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following ..."
+    }
+  ]
+}

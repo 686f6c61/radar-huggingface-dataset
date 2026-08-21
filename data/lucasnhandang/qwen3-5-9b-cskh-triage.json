@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lucasnhandang/qwen3.5-9b-cskh-triage",
+  "slug": "lucasnhandang-qwen3-5-9b-cskh-triage",
+  "author": "lucasnhandang",
+  "url": "https://huggingface.co/lucasnhandang/qwen3.5-9b-cskh-triage",
+  "created_at": "2026-08-21T10:59:09.000Z",
+  "updated_at": "2026-08-21T11:01:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193170397,
+  "storage_human": "193 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B is a dense multimodal model from the Qwen3.5 family — same gated delta networks hybrid attention, vision encoder, 262K context, and MTP support as its larger siblings, but sized to fit comfortably on a single 24 GB GPU."
+    },
+    {
+      "title": "Qwen3.5-9B - Visual LLM | OVHcloud",
+      "url": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/qwen-3-5-9b/",
+      "snippet": "Qwen3.5 9B is a highly efficient, reasoning focused model delivering state of the art performance in language, vision, and multimodal tasks, with strong capabilities in code, reasoning, and real-world adaptability."
+    },
+    {
+      "title": "Qwen3.5 9B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-5-9b",
+      "snippet": "Qwen&#x27;s 9B multimodal model with hybrid architecture, 262K native context, vision-language reasoning, native tool calling, and 201-language support for agentic workflows"
+    },
+    {
+      "title": "Qwen3.5-9B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-5-9b",
+      "snippet": "The flagship of Alibaba&#x27;s small dense Qwen3.5 models. Independent analysis (Artificial Analysis) rated it the most intelligent model under 10B parameters at launch — roughly double the score of the next-closest sub-10B models — and the most intelligent multimodal model under 15B, leading peers on MMMU-Pro (~69%). A dense 9B with native vision, a 262K-token context, and the Qwen3.5 family&#x27;s ..."
+    },
+    {
+      "title": "Qwen3.5-9B: Specs, Benchmarks & Model Details | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/ai-models/pretrained-models/qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a multimodal model from Alibaba, released on 2026-03-02. It accepts text, image, and video input and returns text output. The cataloged parameter count is 9B. The recorded context window is 262K. Cataloged capabilities include Reasoning model and Multilingual. The checkpoint is listed under the Apache 2.0 license, with the license link included in the model references. Use the ..."
+    }
+  ]
+}

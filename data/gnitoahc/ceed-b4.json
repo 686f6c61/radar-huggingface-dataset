@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "gnitoahc/ceed-b4",
+  "slug": "gnitoahc-ceed-b4",
+  "author": "gnitoahc",
+  "url": "https://huggingface.co/gnitoahc/ceed-b4",
+  "created_at": "2026-08-21T16:38:21.000Z",
+  "updated_at": "2026-08-21T16:39:57.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "vision-language",
+    "visual-question-answering",
+    "knowledge-distillation",
+    "lora",
+    "merged",
+    "research",
+    "conversational",
+    "en",
+    "dataset:lmms-lab/DocVQA",
+    "dataset:lmms-lab/GQA",
+    "dataset:lmms-lab/ChartQA",
+    "arxiv:2605.21924",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941100874,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914645046,
+  "storage_human": "15.9 GB",
+  "base_model": "google/gemma-4-e4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - GNITOAHC/ceed",
+      "url": "https://github.com/GNITOAHC/ceed",
+      "snippet": "Contribute to GNITOAHC/ceed development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - GNITOAHC/GNITOAHC",
+      "url": "https://github.com/GNITOAHC/GNITOAHC",
+      "snippet": "Contribute to GNITOAHC/GNITOAHC development by creating an account on GitHub."
+    },
+    {
+      "title": "gnitoahc/ceed-b2-gemma4-e4b-it-0802 · Hugging Face",
+      "url": "https://huggingface.co/gnitoahc/ceed-b2-gemma4-e4b-it-0802",
+      "snippet": "Instructions to use gnitoahc/ceed-b2-gemma4-e4b-it-0802 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use gnitoahc/ceed-b2-gemma4-e4b-it-0802 with Transformers:"
+    },
+    {
+      "title": "gnitoahc/ceed-b2-gemma4-e4b-it-0802 at main - Hugging Face",
+      "url": "https://huggingface.co/gnitoahc/ceed-b2-gemma4-e4b-it-0802/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use gnitoahc/ceed-b2-gemma4-e4b-it-0802 with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "ceed-b1-gemma4-e4b-it-0729 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/gnitoahc/ceed-b1-gemma4-e4b-it-0729",
+      "snippet": "Deploy ceed-b1-gemma4-e4b-it-0729 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

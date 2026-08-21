@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francescortu/DistillDetect-traj-Qwen2.5-3B-from-gpt-oss-120b-s1",
+  "slug": "francescortu-distilldetect-traj-qwen2-5-3b-from-gpt-oss-120b-s1",
+  "author": "francescortu",
+  "url": "https://huggingface.co/francescortu/DistillDetect-traj-Qwen2.5-3B-from-gpt-oss-120b-s1",
+  "created_at": "2026-08-21T16:27:55.000Z",
+  "updated_at": "2026-08-21T17:21:56.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distillation",
+    "distillation-detection",
+    "training-trajectory",
+    "arxiv:2607.09692",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30871069858,
+  "storage_human": "30.9 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-s1 - Hugging Face",
+      "url": "https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-s1",
+      "snippet": "francescortu / DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-s1 like 0 Safetensors qwen2 distillation reproduction distilldetect arxiv:2607.09692 License:qwen-research Model card FilesFiles and versions xet Community Copy to bucket new DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-s1 Training Evaluation (ours vs. paper Table 9) License"
+    },
+    {
+      "title": "DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-OMI-1K",
+      "url": "https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-OMI-1K",
+      "snippet": "francescortu / DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-OMI-1K like 0 Safetensors qwen2 distillation reproduction distilldetect arxiv:2607.09692 License:qwen-research Model card FilesFiles and versions xet Community Copy to bucket new DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-OMI-1K Training Evaluation (ours vs. paper Table 9) License"
+    },
+    {
+      "title": "Reference-Based Distillation Detection in LLMs - arXiv.org",
+      "url": "https://arxiv.org/html/2607.09692v1",
+      "snippet": "Figure 2 shows a representative controlled example: a Qwen-2.5-3B-Base student distilled from GPT-OSS-120B on s1 prompts. The true teacher is clearly separated under the non-training data probes (OMI), and we observe the same qualitative pattern across all controlled student-teacher pairs."
+    },
+    {
+      "title": "qwen2.5:3b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:3b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Databricks-hosted foundation models available in Foundation Model APIs",
+      "url": "https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models",
+      "snippet": "This mode supports all models of a model architecture family, including the fine-tuned and custom pre-trained models supported in pay-per-token mode. See Provisioned throughput Foundation Model APIs for the list of supported architectures. You can interact with these supported models using the AI Playground."
+    }
+  ]
+}

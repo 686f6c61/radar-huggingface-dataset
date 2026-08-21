@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/serialization-npz-deep-member",
+  "slug": "layerfault-serialization-npz-deep-member",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/serialization-npz-deep-member",
+  "created_at": "2026-08-21T19:08:07.000Z",
+  "updated_at": "2026-08-21T19:08:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 355,
+  "storage_human": "355 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault/tree/main",
+      "snippet": "Offline-first security and admission control for local AI models. Layerfault validates model artifacts and local model runtimes before inference."
+    },
+    {
+      "title": "Keras Lambda Layer Serialization Error Fix Guide",
+      "url": "https://www.weblineglobal.com/blog/keras-lambda-layer-serialization-error-fix/",
+      "snippet": "Model serialization in TensorFlow can surface unexpected NameErrors when using Lambda layers to wrap external dependencies like TF Hub components. Learn why this occurs in production ML pipelines and how to properly structure your Keras Sequential models for flawless deployment and enterprise inference."
+    },
+    {
+      "title": "Model Serialization Attacks | protectai/modelscan | DeepWiki",
+      "url": "https://deepwiki.com/protectai/modelscan/7-model-serialization-attacks",
+      "snippet": "Purpose and Scope This document provides a comprehensive explanation of model serialization attacks in machine learning systems, their potential impacts, and how the ModelScan tool helps detect them. It covers the mechanisms behind these attacks, the vulnerable serialization formats, and best practices for secure model handling."
+    },
+    {
+      "title": "Model Zoo | djl",
+      "url": "http://djl.ai/docs/model-zoo.html",
+      "snippet": "Versioned: the model version scheme allows developers to continuously update their model without causing a backward compatibility issue. Ready to use out of box: the model contains predefined pre-process and post-process functionality, which allows the user to run inference with a plain java object."
+    },
+    {
+      "title": "layerfault/docs/SOURCES.md at main - GitHub",
+      "url": "https://github.com/izm1chael/layerfault/blob/main/docs/SOURCES.md",
+      "snippet": "Layerfault examines models--* repositories and their refs, snapshots and blobs, validates that snapshot symlinks resolve inside the repository blob store, identifies broken refs/detached snapshots/orphan blobs, and structurally inspects supported model artifacts."
+    }
+  ]
+}

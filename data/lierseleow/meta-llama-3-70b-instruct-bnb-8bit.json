@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lierseleow/Meta-Llama-3-70B-Instruct-bnb-8bit",
+  "slug": "lierseleow-meta-llama-3-70b-instruct-bnb-8bit",
+  "author": "lierseleow",
+  "url": "https://huggingface.co/lierseleow/Meta-Llama-3-70B-Instruct-bnb-8bit",
+  "created_at": "2026-08-21T10:59:31.000Z",
+  "updated_at": "2026-08-21T11:21:57.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "base_model:meta-llama/Meta-Llama-3-70B-Instruct",
+    "base_model:quantized:meta-llama/Meta-Llama-3-70B-Instruct",
+    "license:llama3",
+    "8-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 72700656913,
+  "storage_human": "72.7 GB",
+  "base_model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lierseleow/Llama-3.1-70B-Instruct-bnb-8bit · Hugging Face",
+      "url": "https://huggingface.co/lierseleow/Llama-3.1-70B-Instruct-bnb-8bit",
+      "snippet": "This model is a derivative work of Meta&#x27;s Llama 3.1 and is governed by the Llama 3.1 Community License Agreement."
+    },
+    {
+      "title": "Meta-Llama-3-70B-Instruct - Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "meta-llama/llama-3-70b-instruct — UAI",
+      "url": "https://uai.sh/models/meta-llama/llama-3-70b-instruct",
+      "snippet": "Llama 3 70B Instruct meta-llama/llama-3-70b-instruct Meta&#x27;s latest class of model (Llama 3) launched with a variety of sizes & flavors. This 70B instruct-tuned version was optimized for high quality dialogue usecases.&#92;n&#92;nIt has demonstrated strong performance compared to leading closed-source models in human evaluations.&#92;n&#92;nTo read more about the model release, [click here] (https://ai.meta ..."
+    },
+    {
+      "title": "Meta Llama 3 70B Instruct | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/nemo/models/llama-3-70b-instruct-nemo/1.0",
+      "snippet": "Meta-Llama-3-70B-Instruct is an instruct-tuned decoder-only, text-to-text model. The instruction-tuning uses supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align with human preferences for helpfulness and safety."
+    },
+    {
+      "title": "meta-llama-3-70b-instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/replicate/meta-llama-3-70b-instruct-meta",
+      "snippet": "Overview meta-llama-3-70b-instruct is a 70 billion parameter language model created by meta and fine-tuned for chat completions and instruction-following tasks. This instruction-tuned variant builds on Llama 3&#x27;s foundation to handle dialogue, question-answering, and multi-turn conversations more effectively than the base model. The 70B parameter scale positions it as a high-capacity model ..."
+    }
+  ]
+}

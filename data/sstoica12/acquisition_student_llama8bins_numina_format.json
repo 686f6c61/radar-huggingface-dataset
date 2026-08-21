@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_student_llama8bins_numina_format",
+  "slug": "sstoica12-acquisition_student_llama8bins_numina_format",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_student_llama8bins_numina_format",
+  "created_at": "2026-08-21T11:09:34.000Z",
+  "updated_at": "2026-08-21T11:11:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sstoica12/acquisition_student_PS_llama8bins_numina · Hugging Face",
+      "url": "https://huggingface.co/sstoica12/acquisition_student_PS_llama8bins_numina",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=sstoica12%2Facquisition_student_PS_llama8bins_numina",
+      "snippet": "sstoica12/acquisition_student_PS_llama8bins_numina Text Generation • 8B•Updated 14 days ago• 76"
+    },
+    {
+      "title": "acquisition_student_PS_llama8bins_numina - friendli.ai",
+      "url": "https://friendli.ai/models/sstoica12/acquisition_student_PS_llama8bins_numina",
+      "snippet": "Deploy acquisition_student_PS_llama8bins_numina with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "acquisition_student_filtered_llama8bins_numina - friendli.ai",
+      "url": "https://friendli.ai/models/sstoica12/acquisition_student_filtered_llama8bins_numina",
+      "snippet": "Run acquisition_student_filtered_llama8bins_numina with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

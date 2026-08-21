@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "assokolov/paper_016171886_image_captioning",
+  "slug": "assokolov-paper_016171886_image_captioning",
+  "author": "assokolov",
+  "url": "https://huggingface.co/assokolov/paper_016171886_image_captioning",
+  "created_at": "2026-08-21T16:50:43.000Z",
+  "updated_at": "2026-08-21T16:50:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "argumentative",
+    "endnote",
+    "image-captioning",
+    "latex-cvpr",
+    "medium-balanced",
+    "mixed-active-passive",
+    "neutral",
+    "structured-imrad",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ashishsoni-ai/Image_Captioning_Model: A deep learning model ...",
+      "url": "https://github.com/ashishsoni-ai/Image_Captioning_Model",
+      "snippet": "A deep learning model that generates captions for images using Xception (CNN) for feature extraction and LSTM for text generation. Trained on the Flickr8k dataset, this model learns to describe images in natural language."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "krishyadav25/Image-Captioning-Model- - GitHub",
+      "url": "https://github.com/krishyadav25/Image-Captioning-Model-",
+      "snippet": "A hybrid deep learning project that combines Computer Vision and Natural Language Processing to generate descriptive captions for images. This repository implements multiple architectures—from custom CNN-RNN models with Attention to state-of-the-art Transformers—and integrates Object Detection for enhanced context."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Deep Learning Approaches on Image Captioning: A Review",
+      "url": "https://arxiv.org/abs/2201.12944",
+      "snippet": "Image captioning is a research area of immense importance, aiming to generate natural language descriptions for visual content in the form of still images. The advent of deep learning and more recently vision-language pre-training techniques has revolutionized the field, leading to more sophisticated methods and improved performance. In this survey paper, we provide a structured review of deep ..."
+    }
+  ]
+}

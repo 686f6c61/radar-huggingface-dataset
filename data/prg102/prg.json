@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Prg102/Prg",
+  "slug": "prg102-prg",
+  "author": "Prg102",
+  "url": "https://huggingface.co/Prg102/Prg",
+  "created_at": "2026-08-21T17:45:50.000Z",
+  "updated_at": "2026-08-21T17:45:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF ProVore® 1 HP Grinder Pumps,Installation Manual",
+      "url": "https://www.libertypumps.com/Portals/0/Files/Install%20Manuals/English/2399000_EN.pdf?ver=HWm25xZVoW1xsRhL5BNieg%3D%3D",
+      "snippet": "Manual PRG-Series pumps (\"M\" suffix) require a separate, approved pump control device or panel for automatic operation. Operation will be according to the control selected. Refer to separate manufacturer&#x27;s instructions supplied with the unit. Verify the electrical specifications for the control panel properly match those of the pump."
+    },
+    {
+      "title": "PRG102M - Liberty Pumps PRG102M - PRG Series - Manual Residential ...",
+      "url": "https://www.supplyhouse.com/Liberty-Pumps-PRG102M-PRG-Series-Manual-Residential-Grinder-Pump-230V-10-Cord",
+      "snippet": "Oil-filled, thermally protected motor PRG-Series residential grinders can be used as a replacement pump in 2\" discharge systems using LE40 and LE50-series solids-handling pumps.* *PRG-Series flow rates do not exactly match LE-series flow rates. Consult us with actual application and head specifications prior to replacing LE40 and LE50 series pumps."
+    },
+    {
+      "title": "PRG-Series 1 HP Grinder Sewage Pump with 10 ft. Cord and Float Switch",
+      "url": "https://www.homedepot.com/p/Liberty-Pumps-PRG-Series-1-HP-Grinder-Sewage-Pump-with-10-ft-Cord-and-Float-Switch-PRG102A/340480167",
+      "snippet": "Improve your plumbing system with a sewage pump from Liberty Pumps PRG-Series. This pump is designed for sewage applications. It also features higher flow rates that allow use with 2 in. discharge lines."
+    },
+    {
+      "title": "RNASEH1 Gene | AI-Powered Variant Analysis Platform - RDDC",
+      "url": "https://rddc.tsinghua-gd.org/disease/PRG102",
+      "snippet": "RNASEH1 gene with AI-powered variant analysis tools. Ribonuclease H1 function involved in mitochondrial DNA metabolism, enabling intelligent pathogenicity prediction and research acceleration capabilities on RDDC platform."
+    },
+    {
+      "title": "Liberty Pumps PRG-Series 1 HP Grinder Sewage Pump with 10 ft. Cord and ...",
+      "url": "https://www.homedepot.com/p/Liberty-Pumps-PRG-Series-1-HP-Grinder-Sewage-Pump-with-10-ft-Cord-and-2-in-Discharge-PRG102M/340480171",
+      "snippet": "Personalize a dramatic change to your home with the addition of this excellent Liberty Pumps PRGSeries Grinder Sewage Pmp with Cord and Discharge."
+    }
+  ]
+}

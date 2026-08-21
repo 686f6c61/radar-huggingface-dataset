@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Catalinzisu/modelsarac",
+  "slug": "catalinzisu-modelsarac",
+  "author": "Catalinzisu",
+  "url": "https://huggingface.co/Catalinzisu/modelsarac",
+  "created_at": "2026-08-21T10:35:51.000Z",
+  "updated_at": "2026-08-21T12:51:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538126472,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sara model problem solving infographic concept for slide presentation ...",
+      "url": "https://www.magnific.com/premium-vector/sara-model-problem-solving-infographic-concept-slide-presentation-with-big-circle-pie-chart-with-4-point-list-with-flat-style_192546000.htm",
+      "snippet": "Download this Premium vector of Sara model problem solving infographic concept for slide presentation with big circle pie chart with 4 point list with flat style and explore millions of professional vectors on Magnific."
+    },
+    {
+      "title": "Model: Sara C | MMG Models",
+      "url": "https://mmgmodels.com/en/model/sara-c-1705",
+      "snippet": "Official MMG Models page of Sara C"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "SARA (@ai_model_sara) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ai_model_sara/",
+      "snippet": "11 Followers, 33 Following, 55 Posts - SARA (@ai_model_sara) on Instagram: \"👉AI MODEL WHO LOVES FASION, BEAUTY, TRAVELLING, PHOTOGRAPHY. 🫠😉 💌BRAND COLLABORATORS DM\""
+    }
+  ]
+}

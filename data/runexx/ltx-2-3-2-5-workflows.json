@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RuneXX/LTX-2.3-2.5-Workflows",
+  "slug": "runexx-ltx-2-3-2-5-workflows",
+  "author": "RuneXX",
+  "url": "https://huggingface.co/RuneXX/LTX-2.3-2.5-Workflows",
+  "created_at": "2026-03-05T19:01:16.000Z",
+  "updated_at": "2026-08-21T10:58:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "ltx",
+  "languages": [],
+  "tags": [
+    "ltx",
+    "ltx-2",
+    "comfyui",
+    "comfy",
+    "gguf",
+    "ltx-video",
+    "ltx-2-3",
+    "ltx-2.5",
+    "ltxv",
+    "text-to-video",
+    "image-to-video",
+    "audio-to-video",
+    "video-to-video",
+    "region:us"
+  ],
+  "likes": 843,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 393018,
+  "storage_human": "393018 B",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RuneXX/LTX-2.3-Workflows · Hugging Face",
+      "url": "https://huggingface.co/RuneXX/LTX-2.3-Workflows",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RuneXX/LTX-2.3-Workflows at main - Hugging Face",
+      "url": "https://huggingface.co/RuneXX/LTX-2.3-Workflows/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX 2.3 RuneXX Workflow Demos - GitHub",
+      "url": "https://github.com/farazshaikh/LTX-2.3-Workflows",
+      "snippet": "LTX 2.3 RuneXX Workflow Demos Live Demo Site Original workflows by RuneXX on HuggingFace. These demos were generated using modified versions tuned for RTX 6000 (96GB VRAM) with performance and quality adjustments."
+    },
+    {
+      "title": "LTX-2.3-Workflows: Text-to-Image model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ltx-2.3-workflows-runexx",
+      "snippet": "Overview LTX-2.3-Workflows is a ComfyUI-based workflow package developed by RuneXX that enables video generation through split, modular model files rather than monolithic checkpoints. The workflows use extracted models from Kijai&#x27;s LTX2.3_comfy repository, allowing easier local execution on consumer hardware by separating the diffusion model, text encoder (Gemma 3 12B), VAE components (video ..."
+    },
+    {
+      "title": "RuneXX LTX 2.3 Workflow Showcase - farazshaikh.github.io",
+      "url": "https://farazshaikh.github.io/LTX-2.3-Workflows/",
+      "snippet": "About Original workflows by RuneXX on HuggingFace. These demos were generated using modified versions tuned for RTX 6000 (96GB VRAM) with performance and quality adjustments. Running on lower VRAM (RTX 5070 / 12-16GB) -- use a lower quantized Gemma encoder (e.g. gemma-3-12b-it-Q2_K.gguf), or offload text encoding to an API. Enable tiled VAE decode and the VRAM management node to fit within ..."
+    }
+  ]
+}

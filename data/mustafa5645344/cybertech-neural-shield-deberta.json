@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Mustafa5645344/cybertech-neural-shield-deberta",
+  "slug": "mustafa5645344-cybertech-neural-shield-deberta",
+  "author": "Mustafa5645344",
+  "url": "https://huggingface.co/Mustafa5645344/cybertech-neural-shield-deberta",
+  "created_at": "2026-08-21T17:37:35.000Z",
+  "updated_at": "2026-08-21T17:51:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "tr",
+    "en",
+    "de"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "security",
+    "prompt-injection",
+    "jailbreak-detection",
+    "deberta",
+    "neural-shield",
+    "text-classification",
+    "tr",
+    "en",
+    "de",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 737719272,
+  "storage_human": "738 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NeuralShield",
+      "url": "https://neuralsh.com/",
+      "snippet": "NeuralShield Protect Your Digital World with Neural Shield Get the Mobile App"
+    },
+    {
+      "title": "NeuroShield — The Sentient Cyber Defense",
+      "url": "https://neuroshield.tech/",
+      "snippet": "NEUROSHIELD The Sentient Cyber Defense Enterprise-grade neural defense architecture designed for adaptive threat intelligence and autonomous security response mechanisms. REQUEST ENTERPRISE ACCESS"
+    },
+    {
+      "title": "NeuralShield: AI-Driven Cybersecurity for Cutting-Edge Defence - Cyber ...",
+      "url": "https://cybersnowden.com/neuralshield-ai-cybersecurity-defense/",
+      "snippet": "Explore how NeuralShield leverages neural networks and AI to create advanced protective systems for next-level cybersecurity."
+    },
+    {
+      "title": "NeuralShield - Open-Source Cyber Defense",
+      "url": "https://neuralshield.dev/about",
+      "snippet": "Neural Shield > initializing security protocols > loading defensive modules > connecting to neural framework > activating neural shield"
+    },
+    {
+      "title": "Neurashield - Breakthrough AI-Driven security",
+      "url": "https://neurashield.io/",
+      "snippet": "Breakthrough AI-Driven security Neurashields&#x27; Digital Risk Protection Platform combines cutting-edge cybersecurity expertise with the support of advanced and auditable AI-driven solutions."
+    }
+  ]
+}

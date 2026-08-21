@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Nson87/lab21-qwen35-triage-vi",
+  "slug": "nson87-lab21-qwen35-triage-vi",
+  "author": "Nson87",
+  "url": "https://huggingface.co/Nson87/lab21-qwen35-triage-vi",
+  "created_at": "2026-08-21T16:28:18.000Z",
+  "updated_at": "2026-08-21T16:28:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NiallHoang/lab21-qwen35-triage-vi · Hugging Face",
+      "url": "https://huggingface.co/NiallHoang/lab21-qwen35-triage-vi",
+      "snippet": "Instructions to use NiallHoang/lab21-qwen35-triage-vi with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use NiallHoang/lab21-qwen35-triage-vi with Transformers:"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=json-triage",
+      "snippet": "lucius204/lab21-2A202601276-qwen35-triage-vi Text Generation •Updated about 6 hours ago"
+    },
+    {
+      "title": "lab21-2A202601538/BONUS-CHALLENGE.md at main · WiiiCuti/lab21 ... - GitHub",
+      "url": "https://github.com/WiiiCuti/lab21-2A202601538/blob/main/BONUS-CHALLENGE.md",
+      "snippet": "Cho ai muốn chạm vào Part A của deck. Deck §6.3: chuyển sang Muon để fine-tune một model đã pre-train bằng Adam làm giảm chất lượng — gọi là lệch optimizer — và mức hư hại tỷ lệ với độ lớn bước cập nhật, nên LoRA làm nó sống sót được."
+    },
+    {
+      "title": "Day21-Track3-Finetuning-Lab/BONUS-CHALLENGE-EN.md at main - GitHub",
+      "url": "https://github.com/VinUni-AI20k/Day21-Track3-Finetuning-Lab/blob/main/BONUS-CHALLENGE-EN.md",
+      "snippet": "B5 — HuggingFace Hub (+2) model.push_to_hub (\"<user>/lab21-qwen35-triage-vi\"), link in the report."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "FireRedTeam/FireRedAudio",
+  "slug": "fireredteam-fireredaudio",
+  "author": "FireRedTeam",
+  "url": "https://huggingface.co/FireRedTeam/FireRedAudio",
+  "created_at": "2026-08-20T11:59:18.000Z",
+  "updated_at": "2026-08-21T08:36:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 0,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29650142268,
+  "storage_human": "29.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FireRedTTS3: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/fireredtts3-fireredteam",
+      "snippet": "Best use cases Zero-shot voice cloning in multilingual contexts. FireRedTTS3-Base excels at cloning voices across 24 languages and 21 Chinese dialects without training on speaker-specific data. The model inherits the speaking style of a reference audio prompt, making it particularly effective when you need a speaker&#x27;s voice to read new text in their native language or dialect. The semantic ..."
+    },
+    {
+      "title": "GitHub - FireRedTeam/FireRedTTS3: FireRedTTS3: Multilingual and Multi ...",
+      "url": "https://github.com/FireRedTeam/FireRedTTS3",
+      "snippet": "FireRedTTS3 is a unified speech generation and editing system built on semantically enriched continuous speech representations. It comes in two variants: FireRedTTS3-Base — zero-shot voice cloning across 24 languages and 21 Chinese dialects FireRedTTS3-Instruct — natural-language voice design and speech editing (semantic + acoustic) in one unified model"
+    },
+    {
+      "title": "FireRed",
+      "url": "https://fireredteam.github.io/",
+      "snippet": "Introduction: FireRed is the model series developed by Xiaohongshu&#x27;s Super Intelligence team, featuring FireRed-ASR, FireRed-TTS, FireRed-Chat, FireRed-OCR, FireRed-Image, and FireRed-OpenStoryline. Deriving from the saying \"A single spark can start a prairie fire\", the name FireRed represents our vision: to spread our SOTA capabilities—honed in real-world scenarios—like sparks across the ..."
+    },
+    {
+      "title": "FireRedTTS3: Unified Speech Generation and Editing with Semantically ...",
+      "url": "https://arxiv.org/html/2608.17492v1",
+      "snippet": "FireRedTTS3-Instruct follows the same first-stage training procedure as the Base model. In the second stage, it is further trained on 330k hours of voice design and speech editing data for 40k steps, enabling instruction-controlled speech generation and editing."
+    },
+    {
+      "title": "PDF FireRedTTS: A Foundation Text-To-Speech Framework for Industry-Level ...",
+      "url": "https://arxiv.org/html/2409.03283.pdf",
+      "snippet": "With the development and popularization of these AI products, TTS is facing a new challenge: providing personalized and diverse speech generation, to better satisfy users&#x27; variant requirements on AI products. This requirement calls for a powerful model to understand speech and generate arbitrary speech."
+    }
+  ]
+}

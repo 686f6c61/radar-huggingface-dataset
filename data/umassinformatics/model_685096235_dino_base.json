@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "umassinformatics/model_685096235_dino_base",
+  "slug": "umassinformatics-model_685096235_dino_base",
+  "author": "umassinformatics",
+  "url": "https://huggingface.co/umassinformatics/model_685096235_dino_base",
+  "created_at": "2026-08-21T19:22:02.000Z",
+  "updated_at": "2026-08-21T19:22:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base",
+    "constant-warmup",
+    "dino",
+    "flash",
+    "kaiming",
+    "low-rank",
+    "relu",
+    "retrieval",
+    "scalenorm",
+    "sgd",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=dino",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - facebookresearch/dinov3: Reference PyTorch implementation and ...",
+      "url": "https://github.com/facebookresearch/dinov3",
+      "snippet": "The model weights are also available in Hugging Face Hub and supported by the Hugging Face Transformers library. Building on our original high-resolution canopy height maps released in 2024, CHMv2 delivers substantial improvements in accuracy, detail, and global consistency by leveraging DINOv3."
+    },
+    {
+      "title": "DINO (computer vision) - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/dino_model",
+      "snippet": "DINO (self- DI stillation with NO labels) is a family of self-supervised learning methods for computer vision from Meta AI that trains Vision Transformers (ViTs) on unlabeled images and produces general-purpose visual features rivaling or surpassing those learned with human-labeled supervision [1] [2]. The original DINO, introduced by Caron et al. in 2021, showed that self-supervised ViTs ..."
+    },
+    {
+      "title": "GenAI Platform - UMass Amherst",
+      "url": "https://www.umass.edu/it/genai/platform",
+      "snippet": "The UMass GenAI platform is an intuitive and user-friendly platform designed to provide the UMass community with equitable access to leading generative AI models, including OpenAI (ChatGPT), Anthropic (Claude), and more. Built on a customized open-source foundation, UMass GenAI empowers to explore AI models, create custom assistants, and design prompts - all without requiring any coding ..."
+    }
+  ]
+}

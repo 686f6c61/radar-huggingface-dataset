@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ivmorozov/paper_019990592_grounded_language",
+  "slug": "ivmorozov-paper_019990592_grounded_language",
+  "author": "ivmorozov",
+  "url": "https://huggingface.co/ivmorozov/paper_019990592_grounded_language",
+  "created_at": "2026-08-21T16:10:51.000Z",
+  "updated_at": "2026-08-21T16:10:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "docx",
+    "empirical-focused",
+    "endnote",
+    "grounded-language",
+    "impersonal",
+    "intro-related-method-exp-conclusion",
+    "long-detailed",
+    "measured",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2210.05359] Mind&#x27;s Eye: Grounded Language Model Reasoning through ...",
+      "url": "https://arxiv.org/abs/2210.05359",
+      "snippet": "Successful and effective communication between humans and AI relies on a shared experience of the world. By training solely on written text, current language models (LMs) miss the grounded experience of humans in the real-world -- their failure to relate language to the physical world causes knowledge to be misrepresented and obvious mistakes in their reasoning. We present Mind&#x27;s Eye, a ..."
+    },
+    {
+      "title": "Grounded Language Model | PDF | Force | Friction",
+      "url": "https://www.scribd.com/document/1007972097/Grounded-Language-Model",
+      "snippet": "Grounded Language Model - Free download as PDF File (.pdf), Text File (.txt) or read online for free."
+    },
+    {
+      "title": "[2606.27806] Grounded Iterative Language Planning: How Parameterized ...",
+      "url": "https://arxiv.org/abs/2606.27806",
+      "snippet": "World models for language agents come in two useful forms. An agent-based world model calls an LLM API and reasons flexibly in language, but its errors appear as hallucinated state changes that are hard to score with ordinary regression losses. A parameterized world model is a trained transition predictor; its errors are easier to measure with quantities such as NodeMSE, delta accuracy, and ..."
+    },
+    {
+      "title": "Mind&#x27;s Eye: Grounded Language Model Reasoning through Simulation",
+      "url": "https://research.google/pubs/minds-eye-grounded-language-model-reasoning-through-simulation/",
+      "snippet": "By training solely on written text, current language models (LMs) miss the grounded experience of humans in the real-world—their failure to relate language to the physical world causes knowledge to be misrepresented and obvious mistakes in their reasoning. We present Mind&#x27;s Eye, a paradigm to ground language model reasoning in the physical world."
+    },
+    {
+      "title": "Mind&#x27;s Eye: Grounded Language Model Reasoning through Simulation",
+      "url": "https://openreview.net/forum?id=4rXMRuoJlai",
+      "snippet": "By training solely on written text, current language models (LMs) miss the grounded experience of humans in the real-world---their failure to relate language to the physical world causes knowledge to be misrepresented and obvious mistakes in their reasoning. We present Mind&#x27;s Eye, a paradigm to ground language model reasoning in the physical world."
+    }
+  ]
+}

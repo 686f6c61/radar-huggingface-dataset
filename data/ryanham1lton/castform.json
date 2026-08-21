@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Castform",
+  "slug": "ryanham1lton-castform",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Castform",
+  "created_at": "2026-08-21T15:44:23.000Z",
+  "updated_at": "2026-08-21T15:46:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117884194,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "castform - the training platform for the ai engineer",
+      "url": "https://castform.com/",
+      "snippet": "castform is pay-as-you-go: you only pay for the compute you use during training runs. there are no seats, no monthly minimums, and no lock-in. new users receive free credits to trial their first run."
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/models",
+      "snippet": "User profile of Ryan James Hamilton on Hugging Face"
+    },
+    {
+      "title": "castform · GitHub",
+      "url": "https://github.com/castform-ai/",
+      "snippet": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device."
+    },
+    {
+      "title": "Castform + Neon: 4B Model Beats GPT-5.6 Sol on Cost | explainx.ai Blog",
+      "url": "https://explainx.ai/blog/castform-neon-rl-post-training-open-model-beats-gpt-5-6-sol-retrieval-august-2026",
+      "snippet": "Castform RL-post-trained a 4B open model on Neon Postgres search and says it matches GPT-5.6 Sol&#x27;s retrieval accuracy at ~100x lower cost per request."
+    }
+  ]
+}

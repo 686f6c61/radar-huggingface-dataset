@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/shard-unexpected-extra-shard",
+  "slug": "layerfault-shard-unexpected-extra-shard",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/shard-unexpected-extra-shard",
+  "created_at": "2026-08-21T19:11:27.000Z",
+  "updated_at": "2026-08-21T19:11:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32,
+  "parameters_human": "32",
+  "storage_bytes": 552,
+  "storage_human": "552 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scaling LLM fine-tuning with sharding - IBM Developer",
+      "url": "https://developer.ibm.com/articles/llms-sharding/",
+      "snippet": "Sharding plays a critical role in enabling scalable AI solutions. It supports efficient training workflows, enhances research capabilities, and makes it possible to build systems that can handle large-scale models responsibly. By leveraging strategies such as FSDP, DeepSpeed ZeRO, quantization, and parameter-efficient fine-tuning, teams can effectively adapt and optimize models for a wide ..."
+    },
+    {
+      "title": "Understanding Model Sharding and Model Parallelism: Scaling Large ...",
+      "url": "https://medium.com/@pranay.janupalli/understanding-model-sharding-and-model-parallelism-scaling-large-language-models-dee6144d0591",
+      "snippet": "What is Model Sharding? Model sharding involves dividing a large model into smaller, more manageable pieces or \"shards\" and distributing these shards across multiple devices or machines."
+    },
+    {
+      "title": "[Bug]: Load format `runai_streamer_sharded` rejects tunable ... - GitHub",
+      "url": "https://github.com/vllm-project/vllm/issues/30100",
+      "snippet": "Loading a pre-sharded model with the Run:ai Model Streamer (load_format=\"runai_streamer_sharded\") rejects tunable parameters passed in model_loader_extra_config."
+    },
+    {
+      "title": "[2006.16668] GShard: Scaling Giant Models with Conditional Computation ...",
+      "url": "https://arxiv.org/abs/2006.16668",
+      "snippet": "Neural network scaling has been critical for improving the model quality in many real-world machine learning applications with vast amounts of training data and compute. Although this trend of scaling is affirmed to be a sure-fire approach for better model quality, there are challenges on the path such as the computation cost, ease of programming, and efficient implementation on parallel ..."
+    },
+    {
+      "title": "Model Sharding: Splitting a Large Model Across Multiple Devices to Fit ...",
+      "url": "https://www.sandgarden.com/learn/model-sharding",
+      "snippet": "Learn about AI > Model Sharding: Splitting a Large Model Across Multiple Devices to Fit in Memory Model sharding is the practice of dividing a massive artificial intelligence model into smaller, manageable pieces (called shards) and distributing them across multiple computer chips or storage drives."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "xocialize/ltx-2.5-granules",
+  "slug": "xocialize-ltx-2-5-granules",
+  "author": "xocialize",
+  "url": "https://huggingface.co/xocialize/ltx-2.5-granules",
+  "created_at": "2026-08-21T14:55:59.000Z",
+  "updated_at": "2026-08-21T14:58:25.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "ltx-video",
+    "ltx-2.5",
+    "weight-streaming",
+    "text-to-video",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:finetune:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57782005591,
+  "storage_human": "57.8 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what&#x27;s already being built LTX-2.5 improves quality, continuity, control, and efficiency through native multi-shot, stronger prompt adherence, and better local performance."
+    },
+    {
+      "title": "LTX-2.5 can generate a 10-second AI video from an image in just 6.8 ...",
+      "url": "https://venturebeat.com/technology/ltx-2-5-can-generate-a-10-second-ai-video-from-an-image-in-just-6-8-seconds-on-nvidia-superchips-and-its-open-weights",
+      "snippet": "Credit: VentureBeat made with OpenAI ChatGPT-Images-2. LTX, the open world model company spun out of Lightricks, today released LTX-2.5, the newest version of its open-weights video and \"world ..."
+    },
+    {
+      "title": "LTX-2: Production-Grade AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2",
+      "snippet": "LTX-2 is a pro AI video model for production. It offers precise control, native 4K, high frame rates and proven performance for long-form creative tasks."
+    },
+    {
+      "title": "Lightricks/LTX-2.5 · Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "LTX-2.5 — Video, Audio & World Simulation Full control and customization — self-host on your infrastructure."
+    },
+    {
+      "title": "LTX 2.5 AI Video Generator - ReelCine",
+      "url": "https://reelcine.org/models/ltx-2-5",
+      "snippet": "Create AI video with LTX 2.5. Explore official features, formats, prompt tips and examples, then use the complete LTX 2.5 video generator online."
+    }
+  ]
+}

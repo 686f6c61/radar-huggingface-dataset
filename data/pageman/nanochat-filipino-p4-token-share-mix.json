@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pageman/nanochat-filipino-p4-token-share-mix",
+  "slug": "pageman-nanochat-filipino-p4-token-share-mix",
+  "author": "pageman",
+  "url": "https://huggingface.co/pageman/nanochat-filipino-p4-token-share-mix",
+  "created_at": "2026-08-21T17:53:19.000Z",
+  "updated_at": "2026-08-21T18:02:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [],
+  "tags": [
+    "nanochat",
+    "bits-per-byte",
+    "tagalog",
+    "english",
+    "continual-pretraining",
+    "token-share",
+    "post-p3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10654330134,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pageman/nanochat-filipino: P1.1: equal-exposure nanochat depth ...",
+      "url": "https://github.com/pageman/nanochat-filipino",
+      "snippet": "Clean-room experiments that train Tagalog / Filipino language models with Karpathy&#x27;s nanochat, aligned with Dr. Charibeth Cheng&#x27;s public resources ..."
+    },
+    {
+      "title": "SOURCE-implementation-plan-2026-08-16.md - GitHub",
+      "url": "https://github.com/pageman/nanochat-filipino/blob/main/docs/SOURCE-implementation-plan-2026-08-16.md",
+      "snippet": "Super-exhaustive implementation blueprint Prepared for: Project 1 implementation and research planning Primary objective: Train and evaluate a decoder-only Tagalog/Filipino base language model using the current Karpathy nanochat pipeline and the publicly available WikiText-TL-39 mirror."
+    },
+    {
+      "title": "pageman/nanochat-filipino-p1-fixed-d20-3x · Hugging Face",
+      "url": "https://huggingface.co/pageman/nanochat-filipino-p1-fixed-d20-3x",
+      "snippet": "Paper for pageman/nanochat-filipino-p1-fixed-d20-3x Evaluating Language Model Finetuning Techniques for Low-resource Languages Paper • 1907.00409 •Published Jun 30, 2019• 1"
+    },
+    {
+      "title": "NanoChat · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.5.3/model_doc/nanochat",
+      "snippet": "NanoChat is a compact decoder-only transformer model designed for educational purposes and efficient training. The model features several fundamental architectural innovations which are common in modern transformer models. Therefore, it is a good model to use as a starting point to understand the principles of modern transformer models."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}
