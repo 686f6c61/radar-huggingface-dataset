@@ -5,7 +5,7 @@
   "author": "Jongbin-kr",
   "url": "https://huggingface.co/Jongbin-kr/exaone_7b_verireason_no_reasoning_completion_only_sft-r02e15_grpo-r02e5-hpft",
   "created_at": "2026-08-17T18:11:25.000Z",
-  "updated_at": "2026-08-18T08:13:12.000Z",
+  "updated_at": "2026-08-18T13:34:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2699364705,
-  "storage_human": "2.7 GB",
+  "storage_bytes": 3374230782,
+  "storage_human": "3.4 GB",
   "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
   "formats": [
     "safetensors"

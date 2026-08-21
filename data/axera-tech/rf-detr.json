@@ -19,12 +19,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 643331969,
-  "storage_human": "643 MB",
+  "storage_bytes": 290612251,
+  "storage_human": "291 MB",
   "base_model": null,
   "formats": [
     "onnx"

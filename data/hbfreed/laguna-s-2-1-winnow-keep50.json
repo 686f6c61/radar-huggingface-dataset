@@ -5,7 +5,7 @@
   "author": "hbfreed",
   "url": "https://huggingface.co/hbfreed/Laguna-S-2.1-winnow-keep50",
   "created_at": "2026-08-18T14:20:34.000Z",
-  "updated_at": "2026-08-18T14:36:36.000Z",
+  "updated_at": "2026-08-21T01:35:19.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

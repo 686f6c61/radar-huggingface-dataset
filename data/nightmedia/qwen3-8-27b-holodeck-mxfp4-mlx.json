@@ -5,7 +5,7 @@
   "author": "nightmedia",
   "url": "https://huggingface.co/nightmedia/Qwen3.8-27B-Holodeck-mxfp4-mlx",
   "created_at": "2026-08-14T18:30:22.000Z",
-  "updated_at": "2026-08-14T23:59:24.000Z",
+  "updated_at": "2026-08-19T02:53:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -84,7 +84,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 1008,
+  "downloads_30d": 1254,
   "trending_score": 0,
   "parameters": 5505879280,
   "parameters_human": "5.51B",

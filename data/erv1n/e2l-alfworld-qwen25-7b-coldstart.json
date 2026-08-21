@@ -5,7 +5,7 @@
   "author": "erv1n",
   "url": "https://huggingface.co/erv1n/e2l-alfworld-qwen25-7b-coldstart",
   "created_at": "2026-08-17T20:20:40.000Z",
-  "updated_at": "2026-08-17T20:22:43.000Z",
+  "updated_at": "2026-08-19T05:06:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 264,
+  "downloads_30d": 590,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",

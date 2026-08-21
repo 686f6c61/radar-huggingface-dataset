@@ -5,7 +5,7 @@
   "author": "iamhpd",
   "url": "https://huggingface.co/iamhpd/klue-bert-sentiment-iamhpd-demo",
   "created_at": "2026-08-16T08:16:14.000Z",
-  "updated_at": "2026-08-16T08:16:39.000Z",
+  "updated_at": "2026-08-19T01:02:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 110618882,
   "parameters_human": "110.6M",
-  "storage_bytes": 442499064,
-  "storage_human": "442 MB",
+  "storage_bytes": 884998128,
+  "storage_human": "885 MB",
   "base_model": null,
   "formats": [
     "safetensors"

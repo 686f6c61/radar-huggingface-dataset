@@ -5,7 +5,7 @@
   "author": "TeslaInch",
   "url": "https://huggingface.co/TeslaInch/phi-3.5-mini-SCD",
   "created_at": "2026-08-19T13:41:17.000Z",
-  "updated_at": "2026-08-19T13:46:11.000Z",
+  "updated_at": "2026-08-19T16:31:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,11 +24,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 442,
   "trending_score": 0,
   "parameters": 3821079552,
   "parameters_human": "3.82B",
-  "storage_bytes": 7642181696,
+  "storage_bytes": 7642681419,
   "storage_human": "7.6 GB",
   "base_model": null,
   "formats": [

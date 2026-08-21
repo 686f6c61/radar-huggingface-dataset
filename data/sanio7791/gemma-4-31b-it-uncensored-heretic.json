@@ -33,7 +33,7 @@
   "trending_score": 0,
   "parameters": 31273086512,
   "parameters_human": "31.27B",
-  "storage_bytes": 62610678318,
+  "storage_bytes": 62578508044,
   "storage_human": "62.6 GB",
   "base_model": "google/gemma-4-31B-it",
   "formats": [

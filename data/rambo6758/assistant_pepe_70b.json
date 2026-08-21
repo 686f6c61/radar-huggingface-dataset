@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 70553706496,
   "parameters_human": "70.55B",
-  "storage_bytes": 282247265416,
-  "storage_human": "282.2 GB",
+  "storage_bytes": 141138200782,
+  "storage_human": "141.1 GB",
   "base_model": "meta-llama/Llama-3.1-70B-Instruct",
   "formats": [
     "safetensors"

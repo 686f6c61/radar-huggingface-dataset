@@ -5,7 +5,7 @@
   "author": "DeepBeepMeep",
   "url": "https://huggingface.co/DeepBeepMeep/MiniMax-H3",
   "created_at": "2026-08-02T14:32:59.000Z",
-  "updated_at": "2026-08-13T22:44:32.000Z",
+  "updated_at": "2026-08-20T22:24:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 8,
   "parameters": 25753095920,
   "parameters_human": "25.75B",
-  "storage_bytes": 591186047099,
-  "storage_human": "591.2 GB",
+  "storage_bytes": 592569759123,
+  "storage_human": "592.6 GB",
   "base_model": null,
   "formats": [
     "gguf"

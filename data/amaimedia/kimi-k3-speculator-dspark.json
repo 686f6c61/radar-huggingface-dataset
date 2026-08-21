@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/Kimi-K3-speculator-dspark",
   "created_at": "2026-08-16T08:50:23.000Z",
-  "updated_at": "2026-08-16T08:50:23.000Z",
+  "updated_at": "2026-08-16T13:12:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 4744900481,
   "parameters_human": "4.74B",

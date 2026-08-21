@@ -5,7 +5,7 @@
   "author": "ESarp",
   "url": "https://huggingface.co/ESarp/Phi-4-Mini-AttackTree-DPO",
   "created_at": "2026-08-14T16:11:46.000Z",
-  "updated_at": "2026-08-14T16:34:51.000Z",
+  "updated_at": "2026-08-15T14:36:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 252,
+  "downloads_30d": 410,
   "trending_score": 0,
   "parameters": 3836021760,
   "parameters_human": "3.84B",
-  "storage_bytes": 7687591069,
-  "storage_human": "7.7 GB",
+  "storage_bytes": 15359657285,
+  "storage_human": "15.4 GB",
   "base_model": "unsloth/Phi-4-mini-instruct-bnb-4bit",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Agents-A1-i1-GGUF",
   "created_at": "2026-08-19T11:10:48.000Z",
-  "updated_at": "2026-08-19T11:36:04.000Z",
+  "updated_at": "2026-08-19T16:14:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,12 +30,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 402,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 28572337696,
-  "storage_human": "28.6 GB",
+  "storage_bytes": 370842239712,
+  "storage_human": "370.8 GB",
   "base_model": "InternScience/Agents-A1",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Agents-A1-GGUF",
   "created_at": "2026-08-19T09:09:57.000Z",
-  "updated_at": "2026-08-19T10:27:38.000Z",
+  "updated_at": "2026-08-19T11:12:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 209,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

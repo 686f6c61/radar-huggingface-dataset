@@ -5,7 +5,7 @@
   "author": "bikalpoudel",
   "url": "https://huggingface.co/bikalpoudel/voiceforge-brand-voice-sft-lora",
   "created_at": "2026-08-19T03:41:04.000Z",
-  "updated_at": "2026-08-19T03:52:18.000Z",
+  "updated_at": "2026-08-19T14:19:54.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 13,
+  "downloads_30d": 253,
   "trending_score": 0,
   "parameters": 7655986688,
   "parameters_human": "7.66B",
-  "storage_bytes": 7900623265,
-  "storage_human": "7.9 GB",
+  "storage_bytes": 8062156457,
+  "storage_human": "8.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

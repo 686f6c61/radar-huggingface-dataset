@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 41,
+  "downloads_30d": 227,
   "trending_score": 0,
   "parameters": 1777088000,
   "parameters_human": "1.78B",
-  "storage_bytes": 7131313422,
-  "storage_human": "7.1 GB",
+  "storage_bytes": 3565636419,
+  "storage_human": "3.6 GB",
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
   "formats": [
     "safetensors"

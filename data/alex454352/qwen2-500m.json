@@ -5,7 +5,7 @@
   "author": "alex454352",
   "url": "https://huggingface.co/alex454352/Qwen2-500M",
   "created_at": "2026-08-19T06:01:36.000Z",
-  "updated_at": "2026-08-19T06:35:31.000Z",
+  "updated_at": "2026-08-19T15:16:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,12 +21,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 61,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 397805184,
-  "storage_human": "398 MB",
+  "storage_bytes": 795610368,
+  "storage_human": "796 MB",
   "base_model": null,
   "formats": [
     "gguf"

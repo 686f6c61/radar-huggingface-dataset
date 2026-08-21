@@ -5,7 +5,7 @@
   "author": "Atomic-Germ",
   "url": "https://huggingface.co/Atomic-Germ/Qwopus3.5-9B-Coder-NPU2",
   "created_at": "2026-06-01T14:36:48.000Z",
-  "updated_at": "2026-08-19T18:34:53.000Z",
+  "updated_at": "2026-08-20T19:51:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

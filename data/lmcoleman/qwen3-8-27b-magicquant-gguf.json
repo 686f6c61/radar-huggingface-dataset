@@ -5,7 +5,7 @@
   "author": "lmcoleman",
   "url": "https://huggingface.co/lmcoleman/Qwen3.8-27B-MagicQuant-GGUF",
   "created_at": "2026-08-15T12:21:28.000Z",
-  "updated_at": "2026-08-15T14:43:05.000Z",
+  "updated_at": "2026-08-20T20:16:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,13 +27,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 394,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 58066622656,
-  "storage_human": "58.1 GB",
+  "storage_bytes": 96226993120,
+  "storage_human": "96.2 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "daanvdweijden",
   "url": "https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-control-s2",
   "created_at": "2026-07-08T14:32:27.000Z",
-  "updated_at": "2026-08-20T04:39:16.000Z",
+  "updated_at": "2026-08-20T16:36:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 415382474,
-  "storage_human": "415 MB",
+  "storage_bytes": 576966666,
+  "storage_human": "577 MB",
   "base_model": "unsloth/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"

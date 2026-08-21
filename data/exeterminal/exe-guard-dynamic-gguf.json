@@ -5,7 +5,7 @@
   "author": "exeterminal",
   "url": "https://huggingface.co/exeterminal/Exe-Guard-Dynamic-GGUF",
   "created_at": "2026-08-14T23:48:34.000Z",
-  "updated_at": "2026-08-20T17:26:05.000Z",
+  "updated_at": "2026-08-20T18:55:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",
-  "storage_bytes": 32124170234,
+  "storage_bytes": 32124299751,
   "storage_human": "32.1 GB",
   "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
   "formats": [

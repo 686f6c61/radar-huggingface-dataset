@@ -5,7 +5,7 @@
   "author": "Capicua25x",
   "url": "https://huggingface.co/Capicua25x/Qwen3.8-27B-MXFP4-Quark-RDNA4",
   "created_at": "2026-08-17T18:34:01.000Z",
-  "updated_at": "2026-08-18T01:35:03.000Z",
+  "updated_at": "2026-08-20T19:17:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -16,6 +16,7 @@
     "safetensors",
     "qwen3_5",
     "image-text-to-text",
+    "4-bit",
     "mxfp4",
     "quark",
     "amd",
@@ -37,7 +38,7 @@
   "trending_score": 0,
   "parameters": 16445010672,
   "parameters_human": "16.45B",
-  "storage_bytes": 22282324605,
+  "storage_bytes": 22282330313,
   "storage_human": "22.3 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
@@ -45,8 +46,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-18T10:00:43.336Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

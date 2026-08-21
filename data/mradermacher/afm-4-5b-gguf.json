@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/AFM-4.5B-GGUF",
   "created_at": "2026-08-16T12:38:05.000Z",
-  "updated_at": "2026-08-16T13:01:26.000Z",
+  "updated_at": "2026-08-16T13:46:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -45,7 +45,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 634,
   "trending_score": 0,
   "parameters": 4619189760,
   "parameters_human": "4.62B",

@@ -31,12 +31,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 8,
+  "downloads_30d": 67,
   "trending_score": 0,
   "parameters": 4021784576,
   "parameters_human": "4.02B",
-  "storage_bytes": 1144647893,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 572377269,
+  "storage_human": "572 MB",
   "base_model": "prism-ml/Bonsai-4B-unpacked",
   "formats": [
     "gguf"

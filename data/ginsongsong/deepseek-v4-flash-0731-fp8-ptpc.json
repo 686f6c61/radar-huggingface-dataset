@@ -5,7 +5,7 @@
   "author": "ginsongsong",
   "url": "https://huggingface.co/ginsongsong/DeepSeek-V4-Flash-0731-FP8-PTPC",
   "created_at": "2026-08-17T15:46:19.000Z",
-  "updated_at": "2026-08-17T16:49:45.000Z",
+  "updated_at": "2026-08-19T07:22:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 304181619262,
   "parameters_human": "304.18B",

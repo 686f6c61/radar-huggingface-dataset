@@ -5,7 +5,7 @@
   "author": "incoai",
   "url": "https://huggingface.co/incoai/Qwen3.8-27B-DFlash2",
   "created_at": "2026-08-18T04:09:16.000Z",
-  "updated_at": "2026-08-18T20:19:49.000Z",
+  "updated_at": "2026-08-19T02:52:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,13 +28,13 @@
     "text-generation-inference",
     "region:us"
   ],
-  "likes": 125,
+  "likes": 133,
   "downloads_30d": 17062,
-  "trending_score": 123,
+  "trending_score": 131,
   "parameters": 1924404480,
   "parameters_human": "1.92B",
-  "storage_bytes": 7697922689,
-  "storage_human": "7.7 GB",
+  "storage_bytes": 3849104785,
+  "storage_human": "3.8 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

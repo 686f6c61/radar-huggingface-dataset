@@ -5,7 +5,7 @@
   "author": "bloomer010",
   "url": "https://huggingface.co/bloomer010/Ling-3.0-flash-REAP176-45B-A5B-GGUF",
   "created_at": "2026-08-16T04:37:36.000Z",
-  "updated_at": "2026-08-16T22:29:54.000Z",
+  "updated_at": "2026-08-18T22:26:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 160,
+  "downloads_30d": 880,
   "trending_score": 0,
   "parameters": 46196971024,
   "parameters_human": "46.20B",

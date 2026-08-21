@@ -5,7 +5,7 @@
   "author": "allura-org",
   "url": "https://huggingface.co/allura-org/Qwen3.8-27B-Dominatrix",
   "created_at": "2026-08-17T19:48:03.000Z",
-  "updated_at": "2026-08-18T04:59:02.000Z",
+  "updated_at": "2026-08-18T17:14:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,13 +30,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 5,
-  "downloads_30d": 3,
+  "likes": 8,
+  "downloads_30d": 349,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",
-  "storage_bytes": 54733597469,
-  "storage_human": "54.7 GB",
+  "storage_bytes": 113688801973,
+  "storage_human": "113.7 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

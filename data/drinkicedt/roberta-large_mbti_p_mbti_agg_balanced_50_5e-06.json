@@ -5,7 +5,7 @@
   "author": "DrinkIcedT",
   "url": "https://huggingface.co/DrinkIcedT/roberta-large_MBTI_P_MBTI_agg_balanced_50_5e-06",
   "created_at": "2026-08-17T16:13:37.000Z",
-  "updated_at": "2026-08-17T16:14:00.000Z",
+  "updated_at": "2026-08-17T19:59:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 355361794,
   "parameters_human": "355.4M",
-  "storage_bytes": 1421500625,
-  "storage_human": "1.4 GB",
+  "storage_bytes": 2842995985,
+  "storage_human": "2.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

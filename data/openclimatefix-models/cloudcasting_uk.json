@@ -5,7 +5,7 @@
   "author": "openclimatefix-models",
   "url": "https://huggingface.co/openclimatefix-models/cloudcasting_uk",
   "created_at": "2025-10-14T10:13:29.000Z",
-  "updated_at": "2026-08-18T14:15:04.000Z",
+  "updated_at": "2026-08-20T11:11:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
   "trending_score": 0,
   "parameters": 30274955,
   "parameters_human": "30.3M",
-  "storage_bytes": 177058024,
+  "storage_bytes": 177066458,
   "storage_human": "177 MB",
   "base_model": null,
   "formats": [

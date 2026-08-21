@@ -5,7 +5,7 @@
   "author": "froggeric",
   "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
   "created_at": "2026-04-23T15:28:14.000Z",
-  "updated_at": "2026-08-16T18:48:05.000Z",
+  "updated_at": "2026-08-20T15:16:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 1334,
+  "likes": 1342,
   "downloads_30d": 0,
   "trending_score": 275,
   "parameters": null,

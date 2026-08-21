@@ -5,7 +5,7 @@
   "author": "santosh07401",
   "url": "https://huggingface.co/santosh07401/krishi-sathi-qwen-1.7b",
   "created_at": "2026-08-19T11:43:28.000Z",
-  "updated_at": "2026-08-19T11:52:22.000Z",
+  "updated_at": "2026-08-20T00:57:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 5,
   "trending_score": 0,
   "parameters": 2031739904,
   "parameters_human": "2.03B",

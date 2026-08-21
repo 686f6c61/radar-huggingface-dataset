@@ -5,7 +5,7 @@
   "author": "ITLL",
   "url": "https://huggingface.co/ITLL/Nano.Deep.Reasoner.11m-HyperMini",
   "created_at": "2026-08-19T11:07:00.000Z",
-  "updated_at": "2026-08-19T12:43:58.000Z",
+  "updated_at": "2026-08-19T15:07:25.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 41,
   "trending_score": 0,
   "parameters": 14934003,
   "parameters_human": "14.9M",
-  "storage_bytes": 356886596,
-  "storage_human": "357 MB",
+  "storage_bytes": 998202896,
+  "storage_human": "998 MB",
   "base_model": null,
   "formats": [
     "safetensors"

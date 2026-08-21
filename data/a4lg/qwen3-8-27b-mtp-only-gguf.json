@@ -5,7 +5,7 @@
   "author": "a4lg",
   "url": "https://huggingface.co/a4lg/Qwen3.8-27B-MTP-ONLY-GGUF",
   "created_at": "2026-08-14T15:13:58.000Z",
-  "updated_at": "2026-08-15T03:22:14.000Z",
+  "updated_at": "2026-08-20T04:00:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 4021,
+  "downloads_30d": 4215,
   "trending_score": 0,
   "parameters": 2967501312,
   "parameters_human": "2.97B",
-  "storage_bytes": 17588133280,
-  "storage_human": "17.6 GB",
+  "storage_bytes": 15332885632,
+  "storage_human": "15.3 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

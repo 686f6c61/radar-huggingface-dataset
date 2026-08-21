@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 53,
+  "downloads_30d": 273,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",
-  "storage_bytes": 6764643584,
-  "storage_human": "6.8 GB",
+  "storage_bytes": 3392319208,
+  "storage_human": "3.4 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf",

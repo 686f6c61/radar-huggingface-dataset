@@ -5,9 +5,9 @@
   "author": "Luciss007",
   "url": "https://huggingface.co/Luciss007/frontier-forge-r1b",
   "created_at": "2026-08-19T10:54:12.000Z",
-  "updated_at": "2026-08-19T10:54:18.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-08-20T05:09:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "transformers",
+    "safetensors",
     "qwen3.5",
     "structured-output",
     "tool-calling",
@@ -25,6 +26,7 @@
     "en",
     "base_model:Qwen/Qwen3.5-4B-Base",
     "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
   ],
@@ -33,10 +35,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 13143497581,
+  "storage_human": "13.1 GB",
   "base_model": "Qwen/Qwen3.5-4B-Base",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

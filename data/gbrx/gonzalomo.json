@@ -5,7 +5,7 @@
   "author": "gbrx",
   "url": "https://huggingface.co/gbrx/GonzaLomo",
   "created_at": "2025-07-20T21:51:21.000Z",
-  "updated_at": "2026-08-17T17:25:16.000Z",
+  "updated_at": "2026-08-19T12:19:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 14,
-  "downloads_30d": 273,
+  "downloads_30d": 264,
   "trending_score": 0,
   "parameters": 12820073036,
   "parameters_human": "12.82B",
-  "storage_bytes": 420813782211,
-  "storage_human": "420.8 GB",
+  "storage_bytes": 459274131143,
+  "storage_human": "459.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

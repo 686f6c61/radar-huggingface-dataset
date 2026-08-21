@@ -189,11 +189,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 82,
   "trending_score": 0,
   "parameters": 4561852416,
   "parameters_human": "4.56B",
-  "storage_bytes": 11011411524,
+  "storage_bytes": 11010611192,
   "storage_human": "11.0 GB",
   "base_model": null,
   "formats": [

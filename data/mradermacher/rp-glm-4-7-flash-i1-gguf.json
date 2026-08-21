@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/rp-glm-4.7-flash-i1-GGUF",
   "created_at": "2026-08-14T16:00:18.000Z",
-  "updated_at": "2026-08-14T17:10:11.000Z",
+  "updated_at": "2026-08-14T20:25:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 5089,
   "trending_score": 0,
   "parameters": 29943393920,
   "parameters_human": "29.94B",
-  "storage_bytes": 95556609216,
-  "storage_human": "95.6 GB",
+  "storage_bytes": 317265833152,
+  "storage_human": "317.3 GB",
   "base_model": "taozi555/rp-glm-4.7-flash",
   "formats": [
     "gguf"

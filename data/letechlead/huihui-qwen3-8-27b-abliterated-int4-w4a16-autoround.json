@@ -5,7 +5,7 @@
   "author": "letechlead",
   "url": "https://huggingface.co/letechlead/Huihui-Qwen3.8-27B-Abliterated-INT4-W4A16-AutoRound",
   "created_at": "2026-08-18T02:40:58.000Z",
-  "updated_at": "2026-08-18T04:13:51.000Z",
+  "updated_at": "2026-08-20T06:49:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 7,
+  "downloads_30d": 111,
   "trending_score": 0,
   "parameters": 6284446960,
   "parameters_human": "6.28B",

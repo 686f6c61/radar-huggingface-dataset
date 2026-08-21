@@ -5,7 +5,7 @@
   "author": "YaTharThShaRma999",
   "url": "https://huggingface.co/YaTharThShaRma999/TTS_new",
   "created_at": "2026-08-18T23:06:59.000Z",
-  "updated_at": "2026-08-19T23:03:41.000Z",
+  "updated_at": "2026-08-20T23:03:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 154770624,
   "parameters_human": "154.8M",
-  "storage_bytes": 674219285,
-  "storage_human": "674 MB",
+  "storage_bytes": 706193220,
+  "storage_human": "706 MB",
   "base_model": null,
   "formats": [
     "safetensors"

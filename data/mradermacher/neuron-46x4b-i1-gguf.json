@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Neuron-46x4B-i1-GGUF",
   "created_at": "2026-08-19T04:18:19.000Z",
-  "updated_at": "2026-08-19T07:48:19.000Z",
+  "updated_at": "2026-08-20T22:07:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -80,8 +80,8 @@
   "trending_score": 0,
   "parameters": 125058592256,
   "parameters_human": "125.06B",
-  "storage_bytes": 100179064128,
-  "storage_human": "100.2 GB",
+  "storage_bytes": 689117681088,
+  "storage_human": "689.1 GB",
   "base_model": "Neura-Tech-AI/Neuron-46x4B",
   "formats": [
     "gguf"

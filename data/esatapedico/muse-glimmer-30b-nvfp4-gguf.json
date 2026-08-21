@@ -5,7 +5,7 @@
   "author": "esatapedico",
   "url": "https://huggingface.co/esatapedico/Muse-Glimmer-30B-NVFP4-GGUF",
   "created_at": "2026-08-18T14:59:04.000Z",
-  "updated_at": "2026-08-19T08:21:06.000Z",
+  "updated_at": "2026-08-20T22:45:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 27854795072,
   "parameters_human": "27.85B",
-  "storage_bytes": 103563358592,
-  "storage_human": "103.6 GB",
+  "storage_bytes": 120594526528,
+  "storage_human": "120.6 GB",
   "base_model": "RedHatAI/Muse-Glimmer-30B-NVFP4",
   "formats": [
     "gguf"

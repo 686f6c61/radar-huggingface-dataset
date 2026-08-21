@@ -5,7 +5,7 @@
   "author": "SpXMerlin1D",
   "url": "https://huggingface.co/SpXMerlin1D/MiniMaxH3-CondBridge-Qwen3.5-4B",
   "created_at": "2026-08-16T13:07:01.000Z",
-  "updated_at": "2026-08-16T14:12:45.000Z",
+  "updated_at": "2026-08-16T14:18:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",
@@ -28,7 +28,7 @@
     "base_model:finetune:MiniMaxAI/MiniMax-H3",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 5,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

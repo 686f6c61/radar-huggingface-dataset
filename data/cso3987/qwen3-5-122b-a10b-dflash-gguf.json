@@ -5,7 +5,7 @@
   "author": "cso3987",
   "url": "https://huggingface.co/cso3987/Qwen3.5-122B-A10B-DFlash-GGUF",
   "created_at": "2026-08-16T08:44:38.000Z",
-  "updated_at": "2026-08-16T08:45:43.000Z",
+  "updated_at": "2026-08-16T09:42:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 174,
   "trending_score": 0,
   "parameters": 509639680,
   "parameters_human": "509.6M",
-  "storage_bytes": 2209089536,
-  "storage_human": "2.2 GB",
+  "storage_bytes": 2522225152,
+  "storage_human": "2.5 GB",
   "base_model": "z-lab/Qwen3.5-122B-A10B-DFlash",
   "formats": [
     "gguf"

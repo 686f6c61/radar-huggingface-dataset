@@ -5,7 +5,7 @@
   "author": "morikomorizz",
   "url": "https://huggingface.co/morikomorizz/Qwen3.8-27B-Uncensored-INT8-W8A16-MTP",
   "created_at": "2026-08-19T05:11:35.000Z",
-  "updated_at": "2026-08-19T06:04:36.000Z",
+  "updated_at": "2026-08-20T17:38:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

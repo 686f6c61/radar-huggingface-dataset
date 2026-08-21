@@ -5,7 +5,7 @@
   "author": "ghananlpcommunity",
   "url": "https://huggingface.co/ghananlpcommunity/poto-tts-kokoro-gh",
   "created_at": "2026-08-19T14:36:10.000Z",
-  "updated_at": "2026-08-19T15:01:34.000Z",
+  "updated_at": "2026-08-20T18:22:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 377026343,
-  "storage_human": "377 MB",
+  "storage_bytes": 379354122,
+  "storage_human": "379 MB",
   "base_model": null,
   "formats": [
     "onnx"

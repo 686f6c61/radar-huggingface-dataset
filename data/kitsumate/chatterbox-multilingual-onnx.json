@@ -71,13 +71,13 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 6,
+  "likes": 1,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12695306953,
-  "storage_human": "12.7 GB",
+  "storage_bytes": 4982008517,
+  "storage_human": "5.0 GB",
   "base_model": "ResembleAI/chatterbox",
   "formats": [
     "onnx"

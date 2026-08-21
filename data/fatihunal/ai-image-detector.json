@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 85846273,
   "parameters_human": "85.8M",
-  "storage_bytes": 346608360,
-  "storage_human": "347 MB",
+  "storage_bytes": 345648461,
+  "storage_human": "346 MB",
   "base_model": "openai/clip-vit-base-patch16",
   "formats": [
     "safetensors"

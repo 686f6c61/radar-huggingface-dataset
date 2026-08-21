@@ -5,7 +5,7 @@
   "author": "symrex",
   "url": "https://huggingface.co/symrex/Qwen3.8-27B-oQ8e-mtp",
   "created_at": "2026-08-14T17:43:43.000Z",
-  "updated_at": "2026-08-14T19:11:54.000Z",
+  "updated_at": "2026-08-16T17:46:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 126,
+  "downloads_30d": 260,
   "trending_score": 0,
   "parameters": 8184279792,
   "parameters_human": "8.18B",

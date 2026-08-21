@@ -5,7 +5,7 @@
   "author": "just1nseo",
   "url": "https://huggingface.co/just1nseo/qwen3-4b-if-rlvr-subset4k-ep3",
   "created_at": "2026-08-14T16:52:17.000Z",
-  "updated_at": "2026-08-15T08:27:43.000Z",
+  "updated_at": "2026-08-17T16:07:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 80461241454,
-  "storage_human": "80.5 GB",
+  "storage_bytes": 337900661614,
+  "storage_human": "337.9 GB",
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"

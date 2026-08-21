@@ -5,7 +5,7 @@
   "author": "prachuryyaIITG",
   "url": "https://huggingface.co/prachuryyaIITG/FewNERD_English_MuRIL",
   "created_at": "2026-01-10T05:44:30.000Z",
-  "updated_at": "2026-08-18T14:52:08.000Z",
+  "updated_at": "2026-08-18T18:35:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "other",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 7,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": 504993925,
   "parameters_human": "505.0M",

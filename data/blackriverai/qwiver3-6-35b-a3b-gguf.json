@@ -5,7 +5,7 @@
   "author": "BlackRiverAI",
   "url": "https://huggingface.co/BlackRiverAI/QwiVer3.6-35B-A3B-GGUF",
   "created_at": "2026-08-16T13:41:29.000Z",
-  "updated_at": "2026-08-16T13:41:49.000Z",
+  "updated_at": "2026-08-16T14:45:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -37,15 +37,17 @@
     "base_model:Qwen/Qwen3.6-35B-A3B",
     "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
     "license:apache-2.0",
-    "region:us"
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
   ],
-  "likes": 1,
-  "downloads_30d": 0,
+  "likes": 4,
+  "downloads_30d": 882,
   "trending_score": 0,
-  "parameters": 446571248,
-  "parameters_human": "446.6M",
-  "storage_bytes": 902822528,
-  "storage_human": "903 MB",
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 92657628416,
+  "storage_human": "92.7 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"

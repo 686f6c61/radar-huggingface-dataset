@@ -5,7 +5,7 @@
   "author": "erv1n",
   "url": "https://huggingface.co/erv1n/e2l-alfworld-qwen3-8b-coldstart",
   "created_at": "2026-08-17T20:22:44.000Z",
-  "updated_at": "2026-08-17T20:25:11.000Z",
+  "updated_at": "2026-08-19T05:06:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 255,
+  "downloads_30d": 699,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

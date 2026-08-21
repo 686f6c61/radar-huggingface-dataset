@@ -5,7 +5,7 @@
   "author": "hozifa1",
   "url": "https://huggingface.co/hozifa1/Faqih-R1-14B-Islamic-AI",
   "created_at": "2026-08-17T21:21:05.000Z",
-  "updated_at": "2026-08-17T22:01:16.000Z",
+  "updated_at": "2026-08-20T14:05:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -14,6 +14,7 @@
   "tags": [
     "transformers",
     "safetensors",
+    "gguf",
     "qwen2",
     "text-generation",
     "conversational",
@@ -23,14 +24,15 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 351,
+  "downloads_30d": 1005,
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
-  "storage_bytes": 29838319541,
-  "storage_human": "29.8 GB",
+  "storage_bytes": 37177523253,
+  "storage_human": "37.2 GB",
   "base_model": null,
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

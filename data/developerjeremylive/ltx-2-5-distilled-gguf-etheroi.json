@@ -46,11 +46,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 36,
+  "downloads_30d": 101,
   "trending_score": 0,
   "parameters": 21004025600,
   "parameters_human": "21.00B",
-  "storage_bytes": 116937123785,
+  "storage_bytes": 116934978641,
   "storage_human": "116.9 GB",
   "base_model": "Lightricks/LTX-2.5",
   "formats": [

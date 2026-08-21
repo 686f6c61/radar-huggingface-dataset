@@ -5,7 +5,7 @@
   "author": "joannetai520",
   "url": "https://huggingface.co/joannetai520/16_bit_model_trymoredata1",
   "created_at": "2026-08-14T16:37:02.000Z",
-  "updated_at": "2026-08-15T08:23:33.000Z",
+  "updated_at": "2026-08-16T09:45:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1020,
+  "downloads_30d": 1399,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
-  "storage_bytes": 70427378446,
-  "storage_human": "70.4 GB",
+  "storage_bytes": 97548688478,
+  "storage_human": "97.5 GB",
   "base_model": "joannetai520/16_bit_model_trymoredata1",
   "formats": [
     "safetensors"

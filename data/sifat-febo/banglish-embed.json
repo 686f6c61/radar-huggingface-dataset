@@ -5,7 +5,7 @@
   "author": "sifat-febo",
   "url": "https://huggingface.co/sifat-febo/banglish-embed",
   "created_at": "2026-08-20T01:01:31.000Z",
-  "updated_at": "2026-08-20T01:06:46.000Z",
+  "updated_at": "2026-08-21T02:23:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -39,10 +39,10 @@
   "likes": 0,
   "downloads_30d": 6,
   "trending_score": 0,
-  "parameters": 2866304,
-  "parameters_human": "2.9M",
-  "storage_bytes": 11472904,
-  "storage_human": "11 MB",
+  "parameters": 2849792,
+  "parameters_human": "2.8M",
+  "storage_bytes": 34352430,
+  "storage_human": "34 MB",
   "base_model": null,
   "formats": [
     "safetensors"

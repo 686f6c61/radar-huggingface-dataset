@@ -5,7 +5,7 @@
   "author": "LIF1014",
   "url": "https://huggingface.co/LIF1014/ptdbench-Llama-3.2-1B-Instruct",
   "created_at": "2026-08-16T08:55:26.000Z",
-  "updated_at": "2026-08-16T09:19:33.000Z",
+  "updated_at": "2026-08-16T16:23:20.000Z",
   "license": "llama3.2",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1308,
   "trending_score": 0,
   "parameters": 1235814400,
   "parameters_human": "1.24B",

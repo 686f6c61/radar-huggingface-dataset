@@ -5,7 +5,7 @@
   "author": "Joakimpalm-Zen",
   "url": "https://huggingface.co/Joakimpalm-Zen/Qwen3-30B-A3B-selective-attnQ8_0-expQ4_0-GGUF",
   "created_at": "2026-08-12T18:38:34.000Z",
-  "updated_at": "2026-08-19T19:24:06.000Z",
+  "updated_at": "2026-08-20T17:36:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "Medico",
   "url": "https://huggingface.co/Medico/Qwen3.8-27B-Radiology-Impression",
   "created_at": "2026-08-15T04:43:35.000Z",
-  "updated_at": "2026-08-18T02:25:22.000Z",
+  "updated_at": "2026-08-21T03:37:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 338824997,
-  "storage_human": "339 MB",
+  "storage_bytes": 657660669,
+  "storage_human": "658 MB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

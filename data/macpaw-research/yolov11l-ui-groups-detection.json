@@ -5,7 +5,7 @@
   "author": "macpaw-research",
   "url": "https://huggingface.co/macpaw-research/yolov11l-ui-groups-detection",
   "created_at": "2025-07-21T10:29:06.000Z",
-  "updated_at": "2026-08-17T15:28:54.000Z",
+  "updated_at": "2026-08-17T21:33:32.000Z",
   "license": "agpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -27,7 +27,7 @@
     "region:eu"
   ],
   "likes": 1,
-  "downloads_30d": 117,
+  "downloads_30d": 140,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -5,7 +5,7 @@
   "author": "rambrogi",
   "url": "https://huggingface.co/rambrogi/lyrics-room-suno-director-v4-GGUF",
   "created_at": "2026-07-02T17:27:09.000Z",
-  "updated_at": "2026-08-16T18:40:29.000Z",
+  "updated_at": "2026-08-18T17:59:48.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 7,
-  "downloads_30d": 402,
+  "downloads_30d": 489,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

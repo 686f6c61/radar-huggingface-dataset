@@ -5,7 +5,7 @@
   "author": "Adi911247",
   "url": "https://huggingface.co/Adi911247/fraud-detector",
   "created_at": "2026-08-14T09:35:44.000Z",
-  "updated_at": "2026-08-14T09:35:51.000Z",
+  "updated_at": "2026-08-18T05:42:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 20173757,
-  "storage_human": "20 MB",
+  "storage_bytes": 28919909,
+  "storage_human": "29 MB",
   "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "safetensors"

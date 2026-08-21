@@ -5,7 +5,7 @@
   "author": "weifanjiang",
   "url": "https://huggingface.co/weifanjiang/qwen3-4b.speculators.peagle-ce01tv09-nd7-swa",
   "created_at": "2026-08-14T16:15:42.000Z",
-  "updated_at": "2026-08-17T16:27:59.000Z",
+  "updated_at": "2026-08-18T03:19:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,7 +17,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 50,
   "trending_score": 0,
   "parameters": 923297920,
   "parameters_human": "923.3M",

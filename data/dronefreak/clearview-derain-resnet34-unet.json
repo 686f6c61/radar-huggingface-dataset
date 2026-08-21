@@ -5,7 +5,7 @@
   "author": "dronefreak",
   "url": "https://huggingface.co/dronefreak/clearview-derain-resnet34-unet",
   "created_at": "2026-08-16T13:51:47.000Z",
-  "updated_at": "2026-08-16T13:58:48.000Z",
+  "updated_at": "2026-08-17T19:31:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 126,
+  "downloads_30d": 444,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

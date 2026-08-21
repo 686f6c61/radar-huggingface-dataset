@@ -5,7 +5,7 @@
   "author": "vpermilp",
   "url": "https://huggingface.co/vpermilp/spellman",
   "created_at": "2026-08-16T18:48:28.000Z",
-  "updated_at": "2026-08-16T21:50:31.000Z",
+  "updated_at": "2026-08-20T17:28:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -86,8 +86,8 @@
   "trending_score": 0,
   "parameters": 3932220,
   "parameters_human": "3.9M",
-  "storage_bytes": 49286496,
-  "storage_human": "49 MB",
+  "storage_bytes": 98572992,
+  "storage_human": "99 MB",
   "base_model": null,
   "formats": [
     "safetensors"

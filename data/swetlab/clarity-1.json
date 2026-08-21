@@ -15,6 +15,7 @@
     "agent",
     "persona",
     "agent-swarm-studio",
+    "doi:10.57967/hf/10028",
     "license:cc-by-sa-4.0",
     "region:us"
   ],
@@ -28,7 +29,7 @@
   "base_model": null,
   "formats": [],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

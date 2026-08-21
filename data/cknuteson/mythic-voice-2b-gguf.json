@@ -5,7 +5,7 @@
   "author": "cknuteson",
   "url": "https://huggingface.co/cknuteson/mythic-voice-2b-GGUF",
   "created_at": "2026-08-17T15:49:08.000Z",
-  "updated_at": "2026-08-17T15:50:13.000Z",
+  "updated_at": "2026-08-17T17:27:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 179,
   "trending_score": 0,
   "parameters": 1881825088,
   "parameters_human": "1.88B",

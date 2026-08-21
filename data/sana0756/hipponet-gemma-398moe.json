@@ -5,7 +5,7 @@
   "author": "sana0756",
   "url": "https://huggingface.co/sana0756/hipponet-gemma-398moe",
   "created_at": "2026-08-13T23:51:58.000Z",
-  "updated_at": "2026-08-16T01:09:41.000Z",
+  "updated_at": "2026-08-16T15:46:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -14,6 +14,7 @@
   "tags": [
     "transformers",
     "safetensors",
+    "gguf",
     "gemma4",
     "image-text-to-text",
     "conversational",
@@ -22,20 +23,21 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 82,
   "trending_score": 0,
   "parameters": 8095769930,
   "parameters_human": "8.10B",
-  "storage_bytes": 32787810580,
-  "storage_human": "32.8 GB",
+  "storage_bytes": 46062811220,
+  "storage_human": "46.1 GB",
   "base_model": null,
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-17T09:38:54.671Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

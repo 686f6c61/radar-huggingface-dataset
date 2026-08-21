@@ -5,7 +5,7 @@
   "author": "rambrogi",
   "url": "https://huggingface.co/rambrogi/lyrics-room-topline-gemma4-12b-v9-GGUF",
   "created_at": "2026-06-17T04:36:17.000Z",
-  "updated_at": "2026-08-16T18:40:25.000Z",
+  "updated_at": "2026-08-18T17:59:58.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 382,
+  "downloads_30d": 407,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

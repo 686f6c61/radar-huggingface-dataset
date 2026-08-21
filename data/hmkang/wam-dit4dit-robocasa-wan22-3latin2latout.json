@@ -5,7 +5,7 @@
   "author": "hmkang",
   "url": "https://huggingface.co/hmkang/wam-dit4dit-robocasa-wan22-3latin2latout",
   "created_at": "2026-08-16T10:06:27.000Z",
-  "updated_at": "2026-08-16T10:06:28.000Z",
+  "updated_at": "2026-08-16T13:19:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "wan2.2",
+    "safetensors",
     "video-prediction",
     "world-model",
     "robocasa",
@@ -23,14 +24,16 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 78379462147,
+  "storage_human": "78.4 GB",
   "base_model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

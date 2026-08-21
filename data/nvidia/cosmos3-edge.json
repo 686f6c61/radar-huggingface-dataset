@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/Cosmos3-Edge",
   "created_at": "2026-07-01T21:54:04.000Z",
-  "updated_at": "2026-08-11T12:30:21.000Z",
+  "updated_at": "2026-08-20T20:30:21.000Z",
   "license": "openmdw1.1-license",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
   "trending_score": 8,
   "parameters": 3858999728,
   "parameters_human": "3.86B",
-  "storage_bytes": 36256464539,
+  "storage_bytes": 36266045448,
   "storage_human": "36.3 GB",
   "base_model": null,
   "formats": [

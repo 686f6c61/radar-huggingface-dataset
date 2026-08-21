@@ -5,7 +5,7 @@
   "author": "hanseungwook",
   "url": "https://huggingface.co/hanseungwook/opengenome2-llama-small-nca-ckpts",
   "created_at": "2026-07-04T16:57:52.000Z",
-  "updated_at": "2026-08-18T01:02:08.000Z",
+  "updated_at": "2026-08-19T19:33:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 25840521728,
-  "storage_human": "25.8 GB",
+  "storage_bytes": 35530717376,
+  "storage_human": "35.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

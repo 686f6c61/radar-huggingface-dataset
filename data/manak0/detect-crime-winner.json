@@ -5,7 +5,7 @@
   "author": "manak0",
   "url": "https://huggingface.co/manak0/Detect-crime-winner",
   "created_at": "2026-05-05T14:38:35.000Z",
-  "updated_at": "2026-08-17T12:13:29.000Z",
+  "updated_at": "2026-08-20T12:13:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 385853005,
-  "storage_human": "386 MB",
+  "storage_bytes": 395662303,
+  "storage_human": "396 MB",
   "base_model": null,
   "formats": [
     "onnx"

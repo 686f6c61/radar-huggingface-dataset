@@ -5,7 +5,7 @@
   "author": "ryanwlr",
   "url": "https://huggingface.co/ryanwlr/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
   "created_at": "2026-06-22T17:47:46.000Z",
-  "updated_at": "2026-08-18T03:32:12.000Z",
+  "updated_at": "2026-08-21T03:37:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 258,
+  "downloads_30d": 283,
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 10177875818,
-  "storage_human": "10.2 GB",
+  "storage_bytes": 10713563790,
+  "storage_human": "10.7 GB",
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"

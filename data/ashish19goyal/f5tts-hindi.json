@@ -5,7 +5,7 @@
   "author": "ashish19goyal",
   "url": "https://huggingface.co/ashish19goyal/F5TTS-Hindi",
   "created_at": "2026-07-09T12:33:07.000Z",
-  "updated_at": "2026-08-18T05:11:40.000Z",
+  "updated_at": "2026-08-20T07:15:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 149423161156,
-  "storage_human": "149.4 GB",
+  "storage_bytes": 155616668845,
+  "storage_human": "155.6 GB",
   "base_model": "SWivid/F5-TTS",
   "formats": [
     "safetensors"

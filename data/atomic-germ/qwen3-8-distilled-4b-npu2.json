@@ -5,7 +5,7 @@
   "author": "Atomic-Germ",
   "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-4B-NPU2",
   "created_at": "2026-08-14T18:33:52.000Z",
-  "updated_at": "2026-08-19T18:34:36.000Z",
+  "updated_at": "2026-08-19T20:05:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2522,
+  "downloads_30d": 3253,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

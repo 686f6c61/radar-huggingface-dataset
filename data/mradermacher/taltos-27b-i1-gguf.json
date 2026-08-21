@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Taltos-27B-i1-GGUF",
   "created_at": "2026-08-18T08:17:31.000Z",
-  "updated_at": "2026-08-18T09:11:20.000Z",
+  "updated_at": "2026-08-18T14:07:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,12 +30,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1571,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471867808,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553880256,
+  "storage_human": "218.6 GB",
   "base_model": "Flashtond22/Taltos-27B",
   "formats": [
     "gguf"

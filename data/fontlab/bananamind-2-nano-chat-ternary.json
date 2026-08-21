@@ -5,7 +5,7 @@
   "author": "fontlab",
   "url": "https://huggingface.co/fontlab/BananaMind-2-Nano-Chat-ternary",
   "created_at": "2026-08-17T16:52:54.000Z",
-  "updated_at": "2026-08-17T16:52:58.000Z",
+  "updated_at": "2026-08-17T17:11:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 228,
   "trending_score": 0,
   "parameters": 4348416,
   "parameters_human": "4.3M",

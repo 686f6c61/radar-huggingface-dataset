@@ -5,7 +5,7 @@
   "author": "LiquidAI",
   "url": "https://huggingface.co/LiquidAI/LFM2.5-230M",
   "created_at": "2026-06-24T23:14:11.000Z",
-  "updated_at": "2026-08-04T18:34:45.000Z",
+  "updated_at": "2026-08-19T13:47:32.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -50,12 +50,12 @@
     "region:us"
   ],
   "likes": 275,
-  "downloads_30d": 55265,
+  "downloads_30d": 53422,
   "trending_score": 8,
   "parameters": 229693184,
   "parameters_human": "229.7M",
-  "storage_bytes": 459401112,
-  "storage_human": "459 MB",
+  "storage_bytes": 608482168,
+  "storage_human": "608 MB",
   "base_model": "LiquidAI/LFM2.5-230M-Base",
   "formats": [
     "safetensors"

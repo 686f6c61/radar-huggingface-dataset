@@ -5,10 +5,10 @@
   "author": "RahulPi",
   "url": "https://huggingface.co/RahulPi/Email_Text_Formatter",
   "created_at": "2025-10-31T10:03:48.000Z",
-  "updated_at": "2026-08-17T16:56:19.000Z",
+  "updated_at": "2026-08-17T17:53:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": "text-generation",
+  "pipeline_tag": "feature-extraction",
   "library": "transformers",
   "languages": [
     "en"
@@ -22,18 +22,19 @@
     "unsloth",
     "phi-4",
     "information-extraction",
-    "conversational",
+    "feature-extraction",
     "en",
     "base_model:unsloth/phi-4-unsloth-bnb-4bit",
     "base_model:quantized:unsloth/phi-4-unsloth-bnb-4bit",
     "license:apache-2.0",
+    "text-embeddings-inference",
     "endpoints_compatible",
     "4-bit",
     "bitsandbytes",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 53,
   "trending_score": 0,
   "parameters": 14659507200,
   "parameters_human": "14.66B",
@@ -43,7 +44,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

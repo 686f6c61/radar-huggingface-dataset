@@ -5,7 +5,7 @@
   "author": "Jackson44",
   "url": "https://huggingface.co/Jackson44/tourism-captioning-student-smoketest",
   "created_at": "2026-08-16T06:24:17.000Z",
-  "updated_at": "2026-08-17T18:09:39.000Z",
+  "updated_at": "2026-08-18T02:42:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 239195904,
   "parameters_human": "239.2M",

@@ -5,7 +5,7 @@
   "author": "TheBaldDudeCo",
   "url": "https://huggingface.co/TheBaldDudeCo/shadowframe-local-distro-v4-nightly-models",
   "created_at": "2026-08-19T04:15:04.000Z",
-  "updated_at": "2026-08-19T04:17:42.000Z",
+  "updated_at": "2026-08-19T21:26:23.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 83934590199,
-  "storage_human": "83.9 GB",
+  "storage_bytes": 98812957145,
+  "storage_human": "98.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

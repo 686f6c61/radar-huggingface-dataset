@@ -5,7 +5,7 @@
   "author": "MedPhyGraph",
   "url": "https://huggingface.co/MedPhyGraph/CF-SupportNet",
   "created_at": "2026-08-17T20:25:28.000Z",
-  "updated_at": "2026-08-17T23:22:37.000Z",
+  "updated_at": "2026-08-18T16:20:35.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -20,6 +20,7 @@
     "support-relations",
     "graph-maintenance",
     "counterfactual-evidence",
+    "dataset:MedPhyGraph/support-graph-data",
     "license:cc-by-4.0",
     "region:us"
   ],

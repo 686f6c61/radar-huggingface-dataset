@@ -5,7 +5,7 @@
   "author": "yethdev",
   "url": "https://huggingface.co/yethdev/qwen3.5-9b-manumit-v2-preview",
   "created_at": "2026-08-19T06:16:02.000Z",
-  "updated_at": "2026-08-19T06:19:02.000Z",
+  "updated_at": "2026-08-19T17:05:38.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 550,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",

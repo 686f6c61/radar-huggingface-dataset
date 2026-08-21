@@ -4,8 +4,8 @@
   "slug": "dsd1231-myawesomemodel-testrepo",
   "author": "DSD1231",
   "url": "https://huggingface.co/DSD1231/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-14T09:55:49.000Z",
-  "updated_at": "2026-08-14T09:56:30.000Z",
+  "created_at": "2026-08-19T15:14:04.000Z",
+  "updated_at": "2026-08-19T15:19:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 118,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-17T09:38:07.948Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

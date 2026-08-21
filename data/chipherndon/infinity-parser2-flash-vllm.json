@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 2213241664,
   "parameters_human": "2.21B",
-  "storage_bytes": 4452730529,
-  "storage_human": "4.5 GB",
+  "storage_bytes": 4446548175,
+  "storage_human": "4.4 GB",
   "base_model": "infly/Infinity-Parser2-Flash",
   "formats": [
     "safetensors"

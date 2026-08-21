@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/kv_cache_fp8-e2e",
   "created_at": "2026-07-25T05:14:17.000Z",
-  "updated_at": "2026-08-20T02:00:08.000Z",
+  "updated_at": "2026-08-21T02:01:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 1100048428,
   "parameters_human": "1.10B",
-  "storage_bytes": 74804232048,
-  "storage_human": "74.8 GB",
+  "storage_bytes": 79204480992,
+  "storage_human": "79.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

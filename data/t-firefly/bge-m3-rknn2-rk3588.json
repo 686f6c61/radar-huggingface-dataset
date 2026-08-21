@@ -5,7 +5,7 @@
   "author": "t-firefly",
   "url": "https://huggingface.co/t-firefly/bge-m3-rknn2-rk3588",
   "created_at": "2026-07-03T05:43:34.000Z",
-  "updated_at": "2026-08-19T02:53:40.000Z",
+  "updated_at": "2026-08-20T01:14:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 5,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

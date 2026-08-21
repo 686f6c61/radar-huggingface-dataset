@@ -5,7 +5,7 @@
   "author": "wangyue114514",
   "url": "https://huggingface.co/wangyue114514/rwkv7-g1g-7.2b-hf",
   "created_at": "2026-08-19T13:16:53.000Z",
-  "updated_at": "2026-08-19T13:21:34.000Z",
+  "updated_at": "2026-08-20T03:16:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 427,
   "trending_score": 0,
   "parameters": 7199141888,
   "parameters_human": "7.20B",
-  "storage_bytes": 14398398496,
-  "storage_human": "14.4 GB",
+  "storage_bytes": 28796795960,
+  "storage_human": "28.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

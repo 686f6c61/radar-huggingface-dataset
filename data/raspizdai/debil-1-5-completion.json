@@ -5,7 +5,7 @@
   "author": "RaspizdAI",
   "url": "https://huggingface.co/RaspizdAI/debil-1.5-completion",
   "created_at": "2026-08-16T14:22:01.000Z",
-  "updated_at": "2026-08-16T14:25:16.000Z",
+  "updated_at": "2026-08-17T15:50:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,11 +14,13 @@
   "tags": [
     "safetensors",
     "gpt2",
+    "debil",
+    "dataset:roneneldan/TinyStories",
     "license:mit",
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 6,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 46538400,
   "parameters_human": "46.5M",

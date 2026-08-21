@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 4300079472,
   "parameters_human": "4.30B",
-  "storage_bytes": 8672663218,
-  "storage_human": "8.7 GB",
+  "storage_bytes": 8638968310,
+  "storage_human": "8.6 GB",
   "base_model": "xiaomi-research/MiLMMT-46-4B-v0.1",
   "formats": [
     "safetensors"

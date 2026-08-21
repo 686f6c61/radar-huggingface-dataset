@@ -5,7 +5,7 @@
   "author": "francescortu",
   "url": "https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-Qwen3-8B-OMI-1K",
   "created_at": "2026-08-14T15:37:10.000Z",
-  "updated_at": "2026-08-14T15:47:34.000Z",
+  "updated_at": "2026-08-14T17:12:16.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 3085938688,
   "parameters_human": "3.09B",

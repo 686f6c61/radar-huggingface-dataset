@@ -5,7 +5,7 @@
   "author": "kingjones777",
   "url": "https://huggingface.co/kingjones777/ZAYA1-8B-ROCmFP4-GGUF",
   "created_at": "2026-08-16T14:26:41.000Z",
-  "updated_at": "2026-08-16T14:51:35.000Z",
+  "updated_at": "2026-08-16T22:40:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,12 +35,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 311,
   "trending_score": 0,
   "parameters": 8840233464,
   "parameters_human": "8.84B",
-  "storage_bytes": 5221551424,
-  "storage_human": "5.2 GB",
+  "storage_bytes": 23812723520,
+  "storage_human": "23.8 GB",
   "base_model": "Zyphra/ZAYA1-8B",
   "formats": [
     "gguf"

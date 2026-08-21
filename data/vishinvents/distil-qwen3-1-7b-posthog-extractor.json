@@ -5,7 +5,7 @@
   "author": "vishinvents",
   "url": "https://huggingface.co/vishinvents/distil-qwen3-1.7b-posthog-extractor",
   "created_at": "2026-08-17T22:00:50.000Z",
-  "updated_at": "2026-08-17T23:31:20.000Z",
+  "updated_at": "2026-08-20T02:12:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 582,
+  "downloads_30d": 797,
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",

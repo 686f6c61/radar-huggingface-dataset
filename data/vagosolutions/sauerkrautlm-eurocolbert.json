@@ -5,7 +5,7 @@
   "author": "VAGOsolutions",
   "url": "https://huggingface.co/VAGOsolutions/SauerkrautLM-EuroColBERT",
   "created_at": "2025-07-07T12:27:40.000Z",
-  "updated_at": "2026-08-18T02:46:13.000Z",
+  "updated_at": "2026-08-19T14:57:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 151,
+  "downloads_30d": 150,
   "trending_score": 0,
   "parameters": 211767552,
   "parameters_human": "211.8M",

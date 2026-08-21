@@ -5,7 +5,7 @@
   "author": "SciTools",
   "url": "https://huggingface.co/SciTools/OnBoard",
   "created_at": "2026-08-15T00:35:54.000Z",
-  "updated_at": "2026-08-19T20:45:57.000Z",
+  "updated_at": "2026-08-19T21:30:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 76,
+  "downloads_30d": 81,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

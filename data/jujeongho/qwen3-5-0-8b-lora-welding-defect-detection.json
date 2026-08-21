@@ -5,7 +5,7 @@
   "author": "jujeongho",
   "url": "https://huggingface.co/jujeongho/Qwen3.5-0.8B-LoRA-Welding-Defect-Detection",
   "created_at": "2026-08-18T05:17:29.000Z",
-  "updated_at": "2026-08-18T05:20:13.000Z",
+  "updated_at": "2026-08-20T06:10:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
-  "storage_bytes": 1726019381,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 3432049437,
+  "storage_human": "3.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

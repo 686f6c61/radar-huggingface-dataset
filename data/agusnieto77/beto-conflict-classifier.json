@@ -5,7 +5,7 @@
   "author": "agusnieto77",
   "url": "https://huggingface.co/agusnieto77/beto-conflict-classifier",
   "created_at": "2026-08-18T06:32:29.000Z",
-  "updated_at": "2026-08-18T06:47:36.000Z",
+  "updated_at": "2026-08-19T16:34:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 109852418,
   "parameters_human": "109.9M",

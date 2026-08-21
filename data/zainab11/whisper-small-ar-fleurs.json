@@ -5,7 +5,7 @@
   "author": "zainab11",
   "url": "https://huggingface.co/zainab11/whisper-small-ar-fleurs",
   "created_at": "2026-08-14T12:28:44.000Z",
-  "updated_at": "2026-08-15T18:34:01.000Z",
+  "updated_at": "2026-08-17T21:09:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 92,
+  "downloads_30d": 151,
   "trending_score": 0,
   "parameters": 241734912,
   "parameters_human": "241.7M",

@@ -5,7 +5,7 @@
   "author": "soyrsoyr",
   "url": "https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8-dynamic",
   "created_at": "2026-08-14T17:34:38.000Z",
-  "updated_at": "2026-08-14T23:32:23.000Z",
+  "updated_at": "2026-08-15T17:45:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,11 +28,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 394,
   "trending_score": 0,
   "parameters": 27359595760,
   "parameters_human": "27.36B",
-  "storage_bytes": 36798284445,
+  "storage_bytes": 36816996469,
   "storage_human": "36.8 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

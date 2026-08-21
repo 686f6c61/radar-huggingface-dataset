@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/atlasv23-sft-qwen3-8-27b-merged-i1-GGUF",
   "created_at": "2026-08-19T09:27:03.000Z",
-  "updated_at": "2026-08-19T10:23:58.000Z",
+  "updated_at": "2026-08-19T13:25:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,12 +23,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 336,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 50078844672,
-  "storage_human": "50.1 GB",
+  "storage_bytes": 300328705440,
+  "storage_human": "300.3 GB",
   "base_model": "senaro/atlasv23-sft-qwen3-8-27b-merged",
   "formats": [
     "gguf"

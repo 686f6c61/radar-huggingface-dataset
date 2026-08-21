@@ -5,7 +5,7 @@
   "author": "YCWTG",
   "url": "https://huggingface.co/YCWTG/gemma-4-31B-it-NVFP4A16-GPTQ",
   "created_at": "2026-04-04T12:38:08.000Z",
-  "updated_at": "2026-08-19T01:26:18.000Z",
+  "updated_at": "2026-08-19T03:02:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5041,
+  "downloads_30d": 5602,
   "trending_score": 0,
   "parameters": 18460143562,
   "parameters_human": "18.46B",
-  "storage_bytes": 43776465334,
-  "storage_human": "43.8 GB",
+  "storage_bytes": 63802679635,
+  "storage_human": "63.8 GB",
   "base_model": "google/gemma-4-31B-it",
   "formats": [
     "safetensors"

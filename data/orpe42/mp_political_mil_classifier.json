@@ -5,7 +5,7 @@
   "author": "orpe42",
   "url": "https://huggingface.co/orpe42/MP_political_MIL_classifier",
   "created_at": "2026-08-10T17:16:40.000Z",
-  "updated_at": "2026-08-20T19:47:04.000Z",
+  "updated_at": "2026-08-21T02:43:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 434346352,
   "parameters_human": "434.3M",
-  "storage_bytes": 971402270406,
-  "storage_human": "971.4 GB",
+  "storage_bytes": 1054806502761,
+  "storage_human": "1054.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

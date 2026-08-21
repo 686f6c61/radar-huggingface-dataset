@@ -4,8 +4,8 @@
   "slug": "awde213xazc213ed-myawesomemodel-testrepo",
   "author": "awde213xazc213ed",
   "url": "https://huggingface.co/awde213xazc213ed/MyAwesomeModel-TestRepo",
-  "created_at": "2026-08-20T09:09:56.000Z",
-  "updated_at": "2026-08-20T09:10:01.000Z",
+  "created_at": "2026-08-20T20:55:57.000Z",
+  "updated_at": "2026-08-20T20:56:02.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-20T19:56:51.497Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

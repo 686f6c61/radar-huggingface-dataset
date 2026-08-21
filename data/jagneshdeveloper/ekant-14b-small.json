@@ -5,7 +5,7 @@
   "author": "Jagneshdeveloper",
   "url": "https://huggingface.co/Jagneshdeveloper/Ekant-14b-small",
   "created_at": "2026-08-17T18:05:39.000Z",
-  "updated_at": "2026-08-17T19:51:01.000Z",
+  "updated_at": "2026-08-19T04:54:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 228,
+  "downloads_30d": 550,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

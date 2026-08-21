@@ -5,7 +5,7 @@
   "author": "lukasstraub2",
   "url": "https://huggingface.co/lukasstraub2/gpt2-aidungeon2",
   "created_at": "2026-08-17T15:03:36.000Z",
-  "updated_at": "2026-08-17T16:17:04.000Z",
+  "updated_at": "2026-08-19T17:10:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 329,
+  "downloads_30d": 603,
   "trending_score": 0,
   "parameters": 1557611200,
   "parameters_human": "1.56B",

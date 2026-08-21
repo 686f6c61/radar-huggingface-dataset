@@ -5,13 +5,15 @@
   "author": "zhifeixie",
   "url": "https://huggingface.co/zhifeixie/VoiceMem_default",
   "created_at": "2026-08-20T07:37:36.000Z",
-  "updated_at": "2026-08-20T07:37:36.000Z",
+  "updated_at": "2026-08-21T02:46:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "onnx",
+    "safetensors",
     "license:apache-2.0",
     "region:us"
   ],
@@ -20,10 +22,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 3260333436,
+  "storage_human": "3.3 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

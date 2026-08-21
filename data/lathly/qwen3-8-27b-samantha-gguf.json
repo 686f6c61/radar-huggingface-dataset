@@ -5,7 +5,7 @@
   "author": "Lathly",
   "url": "https://huggingface.co/Lathly/Qwen3.8-27B-Samantha-GGUF",
   "created_at": "2026-08-17T18:33:35.000Z",
-  "updated_at": "2026-08-17T19:24:11.000Z",
+  "updated_at": "2026-08-20T20:33:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 79,
+  "downloads_30d": 527,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 75121042880,
-  "storage_human": "75.1 GB",
+  "storage_bytes": 103351565632,
+  "storage_human": "103.4 GB",
   "base_model": "Lathly/Qwen3.8-27B-Samantha",
   "formats": [
     "gguf"
