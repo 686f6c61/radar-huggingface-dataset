@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cstr/ettin-reranker-17m-v1-GGUF",
+  "slug": "cstr-ettin-reranker-17m-v1-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/ettin-reranker-17m-v1-GGUF",
+  "created_at": "2026-08-22T16:29:39.000Z",
+  "updated_at": "2026-08-22T16:30:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "crispembed",
+  "languages": [],
+  "tags": [
+    "crispembed",
+    "gguf",
+    "reranker",
+    "cross-encoder",
+    "modernbert",
+    "base_model:cross-encoder/ettin-reranker-17m-v1",
+    "base_model:quantized:cross-encoder/ettin-reranker-17m-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17320328,
+  "parameters_human": "17.3M",
+  "storage_bytes": 105420640,
+  "storage_human": "105 MB",
+  "base_model": "cross-encoder/ettin-reranker-17m-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cross-encoder/ettin-reranker-17m-v1 · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/ettin-reranker-17m-v1",
+      "snippet": "Each model in the ettin-reranker-v1 family was evaluated on the full MTEB (eng, v2) Retrieval benchmark (10 tasks, top-100 reranked) using MTEB&#x27;s two-stage reranking flow, pairing each reranker with six embedding models that span the speed/quality spectrum. The dashed retriever-only line in each chart below is the headline number to beat."
+    },
+    {
+      "title": "keisuke-miyako/ettin-reranker-v1-gguf · Hugging Face",
+      "url": "https://huggingface.co/keisuke-miyako/ettin-reranker-v1-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "the Ettin Reranker Family — Hugging Face | AI Flash Report",
+      "url": "https://aiflashreport.com/models/the-ettin-reranker-family/",
+      "snippet": "What is the Ettin Reranker Family? the Ettin Reranker Family is a Major Release AI model from Hugging Face, released on May 19, 2026. It has a — context window. It is available via API. Compare the Ettin Reranker Family with vs bitnet-embedding-.6b microsoft vs bitnet-embedding-270m microsoft vs Nemotron-3-Embed-1B-NVFP4 nvidia"
+    },
+    {
+      "title": "Introducing the Ettin Reranker Family - AI News",
+      "url": "https://aigcdev.com/en/news/2026051903",
+      "snippet": "Discover and explore the latest AI tools including ChatGPT, Midjourney, DALL-E, and more. Find the perfect AI tool for your needs."
+    },
+    {
+      "title": "Introducing the Ettin Reranker Family | AI News Hub",
+      "url": "https://news.chathome.org/news/introducing-the-ettin-reranker-family-kwl48CP7?locale=en",
+      "snippet": "The ettin-reranker-v1 family, trained with a single simple recipe, is state-of-the-art at every released size up to 1B parameters. Pointwise MSE distillation from a strong teacher onto a broad-domain and retrieval-specific mix scales cleanly from 17M to 1B parameters, with only the learning rate and per-device batch size changing between sizes."
+    }
+  ]
+}

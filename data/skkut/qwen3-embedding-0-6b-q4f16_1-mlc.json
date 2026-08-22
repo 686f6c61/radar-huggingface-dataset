@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "skkut/qwen3-embedding-0.6b-q4f16_1-MLC",
+  "slug": "skkut-qwen3-embedding-0-6b-q4f16_1-mlc",
+  "author": "skkut",
+  "url": "https://huggingface.co/skkut/qwen3-embedding-0.6b-q4f16_1-MLC",
+  "created_at": "2026-08-19T18:16:21.000Z",
+  "updated_at": "2026-08-22T11:50:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mlc",
+    "webgpu",
+    "web-llm",
+    "embedding",
+    "qwen3",
+    "feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 353065222,
+  "storage_human": "353 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text ..."
+    },
+    {
+      "title": "Qwen/Qwen3-Embedding-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding at curatifyai",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding?ref=curatifyai",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    },
+    {
+      "title": "skkut/qwen3-embedding-8b-q4f16_1-MLC · Hugging Face",
+      "url": "https://huggingface.co/skkut/qwen3-embedding-8b-q4f16_1-MLC",
+      "snippet": "Quantization: q4f16_1 · context: 2048 · prefill chunk: 2048 · max batch: 2 Embedding dim: 4096 (last-token pooling, L2-normalized — done in the compiled model) WebGPU: works on NVIDIA (Dawn); grid/buffer limits sized for batch 2/2048 VRAM: ~6.9 GB (compile estimate 6620 MB + KV) — best on 16 GB-class cards Why q4f16_1? the fp8 8-bit path cannot build for WebGPU (TVM&#x27;s wasm codegen only ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3-embedding-0.6b",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    }
+  ]
+}

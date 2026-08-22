@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "darius3th/mic-1a64808a",
+  "slug": "darius3th-mic-1a64808a",
+  "author": "darius3th",
+  "url": "https://huggingface.co/darius3th/mic-1a64808a",
+  "created_at": "2026-08-22T13:39:24.000Z",
+  "updated_at": "2026-08-22T13:39:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v4",
+    "offline-dpo",
+    "r861",
+    "text-generation",
+    "conversational",
+    "base_model:vera6/affine-5g4yy75zuz-t6",
+    "base_model:finetune:vera6/affine-5g4yy75zuz-t6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483253,
+  "storage_human": "70.2 GB",
+  "base_model": "vera6/affine-5g4yy75zuz-t6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darius3th (Darius R) - Hugging Face",
+      "url": "https://huggingface.co/darius3th",
+      "snippet": "Recent Activity published a model1 day ago darius3th/Affine-5gcl5uxakb-iynocr2p updated a model1 day ago darius3th/Affine-5gcl5uxakb-iynocr2p updated a model2 days ago darius3th/albedo-qwen3.6-35b-kkk View all activity"
+    },
+    {
+      "title": "darius3th (Darius R) - Hugging Face",
+      "url": "https://huggingface.co/darius3th/models",
+      "snippet": "Recent Activity published a modelabout 21 hours ago darius3th/Affine-5gcl5uxakb-iynocr2p updated a modelabout 22 hours ago darius3th/Affine-5gcl5uxakb-iynocr2p updated a model1 day ago darius3th/albedo-qwen3.6-35b-kkk View all activity"
+    },
+    {
+      "title": "darius3th/dic-2609108b · Hugging Face",
+      "url": "https://huggingface.co/darius3th/dic-2609108b",
+      "snippet": "darius3th / dic-2609108b like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "darius3th/dic-5fca2974 · Hugging Face",
+      "url": "https://huggingface.co/darius3th/dic-5fca2974",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "darius3th/thr-34e550b6 · Hugging Face",
+      "url": "https://huggingface.co/darius3th/thr-34e550b6",
+      "snippet": "darius3th / thr-34e550b6 like 0 Safetensors glm4_moe compressed-tensors Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

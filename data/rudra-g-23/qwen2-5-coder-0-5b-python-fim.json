@@ -5,7 +5,7 @@
   "author": "Rudra-G-23",
   "url": "https://huggingface.co/Rudra-G-23/qwen2.5-coder-0.5b-python-fim",
   "created_at": "2026-08-16T10:21:40.000Z",
-  "updated_at": "2026-08-22T05:05:17.000Z",
+  "updated_at": "2026-08-22T07:23:40.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 894042180,
-  "storage_human": "894 MB",
+  "storage_bytes": 1317733540,
+  "storage_human": "1.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

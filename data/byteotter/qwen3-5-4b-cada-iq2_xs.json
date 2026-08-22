@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ByteOtter/Qwen3.5-4B-CADA-IQ2_XS",
+  "slug": "byteotter-qwen3-5-4b-cada-iq2_xs",
+  "author": "ByteOtter",
+  "url": "https://huggingface.co/ByteOtter/Qwen3.5-4B-CADA-IQ2_XS",
+  "created_at": "2026-08-22T12:07:58.000Z",
+  "updated_at": "2026-08-22T12:18:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 1637318816,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency."
+    },
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen/Qwen3.5-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.5: All 8 Models, Benchmarks & Local Setup Guide",
+      "url": "https://qwen-ai.com/qwen-3-5/",
+      "snippet": "That&#x27;s a 13x size difference. This guide covers all eight open-weight models plus the API-only variants: Qwen3.5-Max-Preview, Qwen3.5-Plus, and the newest addition — Qwen3.5-Omni, a natively omnimodal model released on March 30, 2026, capable of processing and generating text, images, audio, and video."
+    }
+  ]
+}

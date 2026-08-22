@@ -5,7 +5,7 @@
   "author": "skkut",
   "url": "https://huggingface.co/skkut/qwen3-embedding-8b-q4f16_1-MLC",
   "created_at": "2026-08-17T10:34:42.000Z",
-  "updated_at": "2026-08-17T11:02:03.000Z",
+  "updated_at": "2026-08-22T11:50:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",

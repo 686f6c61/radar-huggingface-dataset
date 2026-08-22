@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sightlake/masri-lora-assistant-v1",
+  "slug": "sightlake-masri-lora-assistant-v1",
+  "author": "sightlake",
+  "url": "https://huggingface.co/sightlake/masri-lora-assistant-v1",
+  "created_at": "2026-08-22T12:14:51.000Z",
+  "updated_at": "2026-08-22T12:14:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078186,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sightlake (Diaa Hassouna) - Hugging Face",
+      "url": "https://huggingface.co/sightlake/datasets",
+      "snippet": "sightlake&#x27;s datasets1 Sort: Recently updated sightlake/masri-llm Preview •Updated about 7 hours ago"
+    },
+    {
+      "title": "sightlake/masri-llm · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/sightlake/masri-llm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,027 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "220+ Free LoRAs & Counting | Civitai",
+      "url": "https://civitai.com/articles/11647/220-free-loras-and-counting",
+      "snippet": "Support My AI Journey: Follow Me on Medium to Help Fuel Future Creations 🚀 Over the past few years, I&#x27;ve dedicated my time, effort, and passion to pushing the boundaries of AI in creative fields. From generating artwork to refining LoRA models, my journey has been one of exploration, innovation, and community-driven contribution. To date, I have created and shared over 220 LoRA models on ..."
+    }
+  ]
+}

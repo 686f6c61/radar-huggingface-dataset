@@ -5,7 +5,7 @@
   "author": "WPS-Qingqiu",
   "url": "https://huggingface.co/WPS-Qingqiu/OmniAlign",
   "created_at": "2026-08-18T06:36:11.000Z",
-  "updated_at": "2026-08-20T02:40:07.000Z",
+  "updated_at": "2026-08-22T07:27:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -50,7 +50,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 731,
+  "downloads_30d": 836,
   "trending_score": 0,
   "parameters": 305368320,
   "parameters_human": "305.4M",

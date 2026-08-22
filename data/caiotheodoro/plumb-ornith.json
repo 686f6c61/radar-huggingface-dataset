@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "caiotheodoro/plumb-ornith",
+  "slug": "caiotheodoro-plumb-ornith",
+  "author": "caiotheodoro",
+  "url": "https://huggingface.co/caiotheodoro/plumb-ornith",
+  "created_at": "2026-08-22T19:02:01.000Z",
+  "updated_at": "2026-08-22T19:03:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "construction",
+    "pay-application",
+    "curriculum",
+    "text-generation",
+    "dataset:caiotheodoro/plumb",
+    "base_model:mlx-community/Qwen3-1.7B-4bit",
+    "base_model:adapter:mlx-community/Qwen3-1.7B-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39870300,
+  "storage_human": "40 MB",
+  "base_model": "mlx-community/Qwen3-1.7B-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "Ornith 1.0 — Open-Source Agentic Coding Models",
+      "url": "https://ornith.site/",
+      "snippet": "Complete Ornith 1.0 guide: self-scaffolding AI models for agentic coding. 9B to 397B sizes, MIT licensed, benchmark results, local setup, and model comparison."
+    },
+    {
+      "title": "caiotheodoro (Caio Theodoro) - Hugging Face",
+      "url": "https://huggingface.co/caiotheodoro/models",
+      "snippet": "User profile of Caio Theodoro on Hugging Face"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ornith-ai/Ornith-1 · GitHub",
+      "url": "https://github.com/ornith-ai/Ornith-1",
+      "snippet": "Ornith-1.0 ships as a dense 9B model plus two Mixture-of-Experts models (35B, 397B). All checkpoints expose the same OpenAI-compatible interface and support a 256K (262,144-token) context window; the dense 9B fits on a single 80GB GPU, while the MoE checkpoints are sharded across a multi-GPU node with tensor parallelism."
+    }
+  ]
+}

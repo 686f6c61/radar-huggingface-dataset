@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "QuaduxIT/Qwen3.8-27B-Whitehat",
+  "slug": "quaduxit-qwen3-8-27b-whitehat",
+  "author": "QuaduxIT",
+  "url": "https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat",
+  "created_at": "2026-08-22T15:46:06.000Z",
+  "updated_at": "2026-08-22T18:09:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "cybersecurity",
+    "red-team",
+    "white-hat",
+    "offensive-security",
+    "pentest",
+    "multimodal",
+    "function-calling",
+    "qwen3",
+    "fine-tune",
+    "conversational",
+    "en",
+    "de",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996517,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Qwen 3.8 AI Models (27B & 2.4T MoE) - Singularity Moments",
+      "url": "https://singularitymoments.com/qwen-3-8-ai-models/",
+      "snippet": "Qwen 3.8 AI Models (27B & 2.4T MoE) Alibaba&#x27;s Qwen 3.8 generation represents one of the most critical open-weight milestones of 2026, headlined by the dense Qwen 3.8 27B model and the massive Qwen 3.8 2.4T (95B activated) sparse MoE. Introducing native 1,048,576-token context scaling, Multi-Head Latent Attention (MLA), and dual-stage hybrid reasoning, the series bridges the gap between ..."
+    },
+    {
+      "title": "Qwen3.8-27B Benchmarks & Context (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/qwen3-8-27b",
+      "snippet": "Qwen3.8-27B ranks #74 of 224 on the public leaderboard with a score of 59.44/100. It does not yet have enough sourced coverage for a verified position. Qwen3.8-27B is a open weight model with a 262K context window. It uses an explicit reasoning mode, which can improve complex problem solving while adding latency and token use. Qwen publishes the 27B dense checkpoint and a separate FP8 artifact ..."
+    },
+    {
+      "title": "qwen3.8-27b (Qwen) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    }
+  ]
+}

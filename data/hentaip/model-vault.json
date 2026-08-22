@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "HentaiP/model-vault",
+  "slug": "hentaip-model-vault",
+  "author": "HentaiP",
+  "url": "https://huggingface.co/HentaiP/model-vault",
+  "created_at": "2026-08-15T15:17:26.000Z",
+  "updated_at": "2026-08-22T18:09:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 443133689312,
+  "storage_human": "443.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "[Tutorial] Beginner&#x27;s Guide to Stable Diffusion NSFW/Hentai Generation",
+      "url": "https://betterwaifu.com/blog/stable-diffusion-nsfw",
+      "snippet": "Enough. Let&#x27;s get started! 1. Download a Stable Diffusion model Think of a model as a dataset that has been trained on millions of images. Different models produce different styles, depending on the images they were trained on. Civitai.com is the home of NSFW AI models. Civitai will only show you the NSFW models if you have an account."
+    },
+    {
+      "title": "Tag: ai generated - E-Hentai Galleries",
+      "url": "https://e-hentai.org/tag/ai%20generated",
+      "snippet": "Showing search results for Tag: ai generated - just some of the over a million absolutely free hentai galleries available."
+    },
+    {
+      "title": "Hentai AI Image Generator - Free Anime NSFW Art 2026",
+      "url": "https://www.aiporn.net/en/hentai-ai-image-generator",
+      "snippet": "Hentai AI Image Generator Turn any prompt into anime and hentai art in seconds. Pick from anime, manga, ecchi, or 2D realism. Our hentai AI image generator handles characters, scenes, and poses without filters. Click below — the generator opens with the anime style pre-selected."
+    },
+    {
+      "title": "AI Models | BetterWaifu",
+      "url": "https://betterwaifu.com/models",
+      "snippet": "Browse our collection of AI models and LoRAs for generating high-quality anime and hentai art."
+    }
+  ]
+}

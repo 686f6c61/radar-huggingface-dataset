@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-unet-r18-random-fold1",
+  "slug": "sugam24-geonusaf-unet-r18-random-fold1",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-unet-r18-random-fold1",
+  "created_at": "2026-08-22T12:43:10.000Z",
+  "updated_at": "2026-08-22T13:26:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "segmentation-models-pytorch",
+  "languages": [],
+  "tags": [
+    "segmentation-models-pytorch",
+    "semantic-segmentation",
+    "remote-sensing",
+    "unet",
+    "resnet18",
+    "geonusaf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3148465267,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sugam24/geonusaf-unet-r18-random-fold0 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-unet-r18-random-fold0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sugam24/geonusaf-unetformer-r18-random-fold2 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-unetformer-r18-random-fold2",
+      "snippet": "GeoNUSAF - UNetFormer (ResNet-18) - random split, fold 2 Kathmandu Valley land-use segmentation, 6 classes, ignore_index=255."
+    },
+    {
+      "title": "U-Net Architecture Explained - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/u-net-architecture-explained/",
+      "snippet": "U-Net is a kind of neural network mainly used for image segmentation which means dividing an image into different parts to identify specific objects for example separating a tumor from healthy tissue in a medical scan. The name \"U-Net\" comes from the shape of its architecture which looks like the letter \"U\" when drawn. It is widely used in medical imaging because it performs well even ..."
+    },
+    {
+      "title": "GitHub - sugam24/Stable-diffusion-with-control-net",
+      "url": "https://github.com/sugam24/Stable-diffusion-with-control-net",
+      "snippet": "This project uses ControlNet + Stable Diffusion to generate realistic satellite images of modern smart cities. You can provide satellite images as control inputs and customize prompts to generate variations."
+    },
+    {
+      "title": "Segmentation Models — Segmentation Models documentation",
+      "url": "https://segmentation-models-pytorch.readthedocs.io/en/latest/models.html",
+      "snippet": "Unet is a fully convolution neural network for image semantic segmentation. Consist of encoder and decoder parts connected with skip connections. Encoder extract features of different spatial resolution (skip connections) which are used by decoder to define accurate segmentation mask. Use concatenation for fusing decoder blocks with skip ..."
+    }
+  ]
+}

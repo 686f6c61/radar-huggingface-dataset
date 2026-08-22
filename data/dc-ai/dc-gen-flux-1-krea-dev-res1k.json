@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dc-ai/DC-Gen-FLUX.1-Krea-Dev-Res1K",
+  "slug": "dc-ai-dc-gen-flux-1-krea-dev-res1k",
+  "author": "dc-ai",
+  "url": "https://huggingface.co/dc-ai/DC-Gen-FLUX.1-Krea-Dev-Res1K",
+  "created_at": "2026-08-22T18:36:52.000Z",
+  "updated_at": "2026-08-22T18:38:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:FluxPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11901211680,
+  "parameters_human": "11.90B",
+  "storage_bytes": 36234189041,
+  "storage_human": "36.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "blanchon/dc_flux_krea_diffusers · Hugging Face",
+      "url": "https://huggingface.co/blanchon/dc_flux_krea_diffusers",
+      "snippet": "FLUX.1 DC-Gen Krea [dev] is a DC-Gen-adapted FLUX.1-Krea checkpoint that replaces the original FLUX VAE with a deeply compressed DC-AE latent space. Using embedding alignment followed by lightweight LoRA fine-tuning, DC-Gen enables much faster native 2K / 4K image generation while preserving the base model&#x27;s realism and text-rendering quality."
+    },
+    {
+      "title": "[2509.25180] DC-Gen: Post-Training Diffusion Acceleration with Deeply ...",
+      "url": "https://arxiv.org/abs/2509.25180",
+      "snippet": "To overcome this, DC-Gen first bridges the representation gap with a lightweight embedding alignment training. Once the latent embeddings are aligned, only a small amount of LoRA fine-tuning is needed to unlock the base model&#x27;s inherent generation quality. We verify DC-Gen&#x27;s effectiveness on SANA and FLUX.1-Krea."
+    },
+    {
+      "title": "GitHub - dc-ai-projects/DC-Gen: DC-Gen: Post-Training Diffusion ...",
+      "url": "https://github.com/dc-ai-projects/DC-Gen",
+      "snippet": "For example, applying DC-Gen to FLUX.1-Krea takes just 31 H100 GPU days. The resulting DC-Gen-FLUX delivers the same quality as the base model while achieving dramatic gains—53.8× faster inference on H100 at 4K resolution. DC-Gen has been validated across text-to-image, text-to-video, image-to-video, and image editing tasks."
+    },
+    {
+      "title": "GitHub - inferless/flux-1-krea-dev: 12B model distilled from Krea 1 ...",
+      "url": "https://github.com/inferless/flux-1-krea-dev",
+      "snippet": "FLUX.1-Krea-dev is an open-weights text-to-image model from Black Forest Labs, developed in collaboration with Krea. It&#x27;s a 12-billion-parameter rectified-flow transformer distilled from Krea 1, designed to deliver highly photorealistic results with a distinctive, \"opinionated\" aesthetic that avoids the oversaturated \"AI look.\" Fully compatible with the FLUX.1- [dev] ecosystem, it ..."
+    },
+    {
+      "title": "DC-Gen: Post-Training Diffusion Acceleration with Deeply Compressed ...",
+      "url": "https://arxiv.org/html/2509.25180v2",
+      "snippet": "We demonstrate a qualitative comparison between FLUX.1-Krea and DC-Gen-FLUX across image resolutions from 1K to 4K in Fig. 7 and Fig. 10 -Fig. 13. DC-Gen-FLUX shows comparable quality and text alignment to the base model, which demonstrates that we successfully preserve the base model&#x27;s knowledge when shifting to a more efficient latent space."
+    }
+  ]
+}

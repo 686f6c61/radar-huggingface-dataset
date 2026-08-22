@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "yjoonjang/stsb-quora-distilroberta-linear-merge",
+  "slug": "yjoonjang-stsb-quora-distilroberta-linear-merge",
+  "author": "yjoonjang",
+  "url": "https://huggingface.co/yjoonjang/stsb-quora-distilroberta-linear-merge",
+  "created_at": "2026-08-22T12:52:44.000Z",
+  "updated_at": "2026-08-22T12:52:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "jax",
+    "safetensors",
+    "roberta",
+    "crossencoder",
+    "model-merging",
+    "merge",
+    "text-ranking",
+    "base_model:cross-encoder/quora-distilroberta-base",
+    "base_model:merge:cross-encoder/quora-distilroberta-base",
+    "base_model:cross-encoder/stsb-distilroberta-base",
+    "base_model:merge:cross-encoder/stsb-distilroberta-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82119683,
+  "parameters_human": "82.1M",
+  "storage_bytes": 492735465,
+  "storage_human": "493 MB",
+  "base_model": "cross-encoder/stsb-distilroberta-base, cross-encoder/quora-distilroberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Youngjoon Jang",
+      "url": "https://yjoonjang.github.io/",
+      "snippet": "Trained a Korean-English cross-lingual retrieval embedding model and analyzed language-pair trade-offs; used model merging to recover monolingual retrieval while retaining cross-lingual retrieval gains."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:cross-encoder/stsb-distilroberta-base",
+      "snippet": "Models 1 Full-text search Edit filters Sort: Trending Active filters: cross-encoder/stsb-distilroberta-base Clear all"
+    },
+    {
+      "title": "cross-encoder/stsb-distilroberta-base - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/12726",
+      "snippet": "Cross-Encoder for Quora Duplicate Questions Detection This model was trained using SentenceTransformers Cross-Encoder class. Training Data This model was trained on the STS benchmark dataset. The model will predict a score between 0 and 1 how for the semantic similarity of two sentences. Usage and Performance Pre-trained models can be used like this: from sentence_transformers import ..."
+    },
+    {
+      "title": "cross-encoder/stsb-distilroberta-base · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/stsb-distilroberta-base",
+      "snippet": "Cross-Encoder for Semantic Textual Similarity This model was trained using SentenceTransformers Cross-Encoder class. Training Data This model was trained on the STS benchmark dataset. The model will predict a score between 0 and 1 how for the semantic similarity of two sentences. Usage and Performance Pre-trained models can be used like this: from sentence_transformers import CrossEncoder ..."
+    },
+    {
+      "title": "cross-encoder/quora-distilroberta-base - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/12722",
+      "snippet": "Cross-Encoder for Quora Duplicate Questions Detection This model was trained using SentenceTransformers Cross-Encoder class. Training Data This model was trained on the Quora Duplicate Questions dataset. The model will predict a score between 0 and 1 how likely the two given questions are duplicates."
+    }
+  ]
+}

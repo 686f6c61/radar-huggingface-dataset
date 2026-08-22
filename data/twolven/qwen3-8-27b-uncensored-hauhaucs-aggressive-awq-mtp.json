@@ -5,7 +5,7 @@
   "author": "twolven",
   "url": "https://huggingface.co/twolven/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-AWQ-MTP",
   "created_at": "2026-08-19T04:19:40.000Z",
-  "updated_at": "2026-08-19T04:41:31.000Z",
+  "updated_at": "2026-08-21T17:53:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 156,
+  "downloads_30d": 232,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",

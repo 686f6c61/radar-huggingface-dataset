@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lwxmmmmsl/pi05",
+  "slug": "lwxmmmmsl-pi05",
+  "author": "lwxmmmmsl",
+  "url": "https://huggingface.co/lwxmmmmsl/pi05",
+  "created_at": "2026-08-22T11:09:42.000Z",
+  "updated_at": "2026-08-22T11:29:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:lwxmmmmsl/record-test_20260819_131548",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354065848,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ldddddddl/pi05",
+      "url": "https://github.com/ldddddddl/pi05",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "shikharbahl/pi05 · Hugging Face",
+      "url": "https://huggingface.co/shikharbahl/pi05",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world ..."
+    },
+    {
+      "title": "home1017/my_pi05_model · Hugging Face",
+      "url": "https://huggingface.co/home1017/my_pi05_model",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world ..."
+    },
+    {
+      "title": "pi05_base · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/pi05_base/summary",
+      "snippet": "π₀.₅ (Pi05) (LeRobot) π₀.₅ is a Vision-Language-Action (VLA) model with open-world generalization from Physical Intelligence, co-trained on robot demonstrations and large-scale multimodal data to execute long-horizon tasks in unseen real-world environments. Note: This model currently supports only the flow-matching action head for π₀.₅ training and inference. Other components ..."
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    }
+  ]
+}

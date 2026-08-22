@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Phreak87/moonshine-base-de-onnx",
+  "slug": "phreak87-moonshine-base-de-onnx",
+  "author": "Phreak87",
+  "url": "https://huggingface.co/Phreak87/moonshine-base-de-onnx",
+  "created_at": "2026-08-22T10:29:40.000Z",
+  "updated_at": "2026-08-22T12:12:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "moonshine",
+    "automatic-speech-recognition",
+    "transformers.js",
+    "german",
+    "de",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 732056865,
+  "storage_human": "732 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phreak87/moonshine-tiny-de-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/Phreak87/moonshine-tiny-de-onnx/tree/main",
+      "snippet": "Instructions to use Phreak87/moonshine-tiny-de-onnx with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers.js How to use Phreak87/moonshine-tiny-de-onnx with Transformers.js:"
+    },
+    {
+      "title": "moonshine-ai/moonshine at main - Hugging Face",
+      "url": "https://huggingface.co/moonshine-ai/moonshine/tree/main",
+      "snippet": "moonshine-ai / moonshine like 95 Follow Moonshine AI 5 Automatic Speech Recognition Keras ONNX English arxiv:2410.15608 arxiv:1810.03993 License:mit Model card FilesFiles and versions xet Community 11 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - moonshine-ai/moonshine: Very low latency speech to text ...",
+      "url": "https://github.com/moonshine-ai/moonshine",
+      "snippet": "Very low latency speech to text, intent recognition, and text to speech, for building voice agents and interfaces - moonshine-ai/moonshine"
+    },
+    {
+      "title": "GitHub - moonshine-ai/moonshine-v2 · GitHub",
+      "url": "https://github.com/moonshine-ai/moonshine-v2",
+      "snippet": "Voice Interfaces for Everyone Quickstart When should you choose Moonshine over Whisper? Using the Library Models API Reference Support Roadmap Acknowledgements License Moonshine Voice is an open source AI toolkit for developers building real-time voice applications. Everything runs on-device, so it&#x27;s fast, private, and you don&#x27;t need an account, credit card, or API keys. The framework and ..."
+    },
+    {
+      "title": "Model Variants | moonshine-ai/moonshine | DeepWiki",
+      "url": "https://deepwiki.com/moonshine-ai/moonshine/8-model-variants",
+      "snippet": "This page documents the available Moonshine model variants, their characteristics, parameter sizes, language support, and performance metrics. Model variants are differentiated by size class (tiny or base) and target language."
+    }
+  ]
+}

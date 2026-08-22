@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pbcong/llava-1.5-13b-hal-verify-probe",
+  "slug": "pbcong-llava-1-5-13b-hal-verify-probe",
+  "author": "pbcong",
+  "url": "https://huggingface.co/pbcong/llava-1.5-13b-hal-verify-probe",
+  "created_at": "2026-08-22T17:33:46.000Z",
+  "updated_at": "2026-08-22T17:33:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "hallucination-detection",
+    "probing",
+    "interpretability",
+    "llava",
+    "vision-language",
+    "base_model:llava-hf/llava-1.5-13b-hf",
+    "base_model:finetune:llava-hf/llava-1.5-13b-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 82737519,
+  "storage_human": "83 MB",
+  "base_model": "llava-hf/llava-1.5-13b-hf",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "snorfyang/llava-v1.5-13b-lora-hf · Hugging Face",
+      "url": "https://huggingface.co/snorfyang/llava-v1.5-13b-lora-hf",
+      "snippet": "The model supports multi-image and multi-prompt generation. Meaning that you can pass multiple images in your prompt. Make sure also to follow the correct prompt template (USER: xxx&#92;nASSISTANT:) and add the token <image> to the location where you want to query images: Using pipeline: Below we used \"snorfyang/llava-v1.5-13b-lora-hf\" checkpoint."
+    },
+    {
+      "title": "liuhaotian/llava-v1.5-13b · Hugging Face",
+      "url": "https://huggingface.co/liuhaotian/llava-v1.5-13b",
+      "snippet": "LLaVA Model Card Model details Model type: LLaVA is an open-source chatbot trained by fine-tuning LLaMA/Vicuna on GPT-generated multimodal instruction-following data. It is an auto-regressive language model, based on the transformer architecture. Model date: LLaVA-v1.5-13B was trained in September 2023. Paper or resources for more information: https://llava-vl.github.io/ License Llama 2 is ..."
+    },
+    {
+      "title": "Run LLaVA Locally: Free Visual-Language AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-llava-local-multimodal-ai-setup",
+      "snippet": "Step-by-step guide to installing and using the open-source LLaVA model for local image analysis and visual QA on your own hardware."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Llava_v1.5_13b-Model-Colab - GitHub",
+      "url": "https://github.com/Sawera557/Llava_v1.5_13b-Model-Colab",
+      "snippet": "LLaVA-1.5-13B is a state-of-the-art multimodal model achieving remarkable performance across 11 benchmarks. It builds upon the original LLaVA framework, utilizing publicly available data to train on a single 8-A100 node in approximately one day. This version surpasses previous methods by leveraging billion-scale data and demonstrating exceptional capabilities in visual and language understanding."
+    }
+  ]
+}

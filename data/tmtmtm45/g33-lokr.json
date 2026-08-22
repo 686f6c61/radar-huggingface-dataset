@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "tmtmtm45/g33-lokr",
+  "slug": "tmtmtm45-g33-lokr",
+  "author": "tmtmtm45",
+  "url": "https://huggingface.co/tmtmtm45/g33-lokr",
+  "created_at": "2026-08-22T17:43:23.000Z",
+  "updated_at": "2026-08-22T17:43:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "lokr",
+    "krea2",
+    "character",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5701673,
+  "storage_human": "6 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoKr · Hugging Face",
+      "url": "https://huggingface.co/docs/peft/package_reference/lokr",
+      "snippet": "Low-Rank Kronecker Product (LoKr), is a LoRA-variant method that approximates the large weight matrix with two low-rank matrices and combines them with the Kronecker product. LoKr also provides an optional third low-rank matrix to provide better control during fine-tuning."
+    },
+    {
+      "title": "Lokr API | Text to Image | ModelsLab",
+      "url": "https://modelslab.com/models/modelslab/lokr",
+      "snippet": "About Lokr Lokr is a ai generation AI model available on ModelsLab. Access Lokr through our API with pay-per-use pricing and no minimum commitments."
+    },
+    {
+      "title": "All-in-one AI platform with multiple chat models | Lorka AI",
+      "url": "https://www.lorka.ai/",
+      "snippet": "Discover Lorka, a multi-AI tool to combine GPT, Gemini, DeepSeek, and more in a single subscription. Fast, flexible, all-in-one AI."
+    },
+    {
+      "title": "GitHub - Moeblack/AnimaLoraToolkit: Anima LoRA/LoKr training toolkit ...",
+      "url": "https://github.com/Moeblack/AnimaLoraToolkit",
+      "snippet": "Anima LoRA/LoKr training toolkit with YAML config, JSON caption, real-time monitoring, ComfyUI compatible - Moeblack/AnimaLoraToolkit"
+    },
+    {
+      "title": "lokr AI Models | Civitai",
+      "url": "https://civitai.com/tag/lokr",
+      "snippet": "Browse 15 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lokr."
+    }
+  ]
+}

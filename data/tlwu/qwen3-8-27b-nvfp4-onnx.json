@@ -5,7 +5,7 @@
   "author": "tlwu",
   "url": "https://huggingface.co/tlwu/Qwen3.8-27B-NVFP4-ONNX",
   "created_at": "2026-08-15T05:37:55.000Z",
-  "updated_at": "2026-08-15T06:56:52.000Z",
+  "updated_at": "2026-08-22T01:59:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 120,
+  "downloads_30d": 194,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 22656204390,
-  "storage_human": "22.7 GB",
+  "storage_bytes": 45292368313,
+  "storage_human": "45.3 GB",
   "base_model": "unsloth/Qwen3.8-27B-NVFP4",
   "formats": [
     "onnx"

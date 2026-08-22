@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LimitlessMindd/gemma-4-26B-A4B",
+  "slug": "limitlessmindd-gemma-4-26b-a4b",
+  "author": "LimitlessMindd",
+  "url": "https://huggingface.co/LimitlessMindd/gemma-4-26B-A4B",
+  "created_at": "2026-08-22T13:26:28.000Z",
+  "updated_at": "2026-08-22T13:26:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "arxiv:2607.02770",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 204871945050,
+  "storage_human": "204.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-26b-a4b • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-26b-a4b",
+      "snippet": "Gemma 4 is the latest on-device model family from Google. This is the 26B (active 4B) MoE version. Supports vision and reasoning."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "google/gemma-4-26B-A4B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 26B — AI Model | MindStudio",
+      "url": "https://www.mindstudio.ai/models/gemma-4-26b-a4b-deepinfra",
+      "snippet": "Gemma 4 26B is an instruction-tuned language model developed by Google, released in April 2026 under the full model name google/gemma-4-26B-A4B-it. It is a mixture-of-experts architecture with 26 billion total parameters and 4 billion active parameters per forward pass, which allows it to handle a broad range of tasks while keeping inference costs relatively low. The model supports both text ..."
+    }
+  ]
+}

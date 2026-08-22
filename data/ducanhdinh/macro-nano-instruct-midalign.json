@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ducanhdinh/Macro-Nano-Instruct-MidAlign",
+  "slug": "ducanhdinh-macro-nano-instruct-midalign",
+  "author": "ducanhdinh",
+  "url": "https://huggingface.co/ducanhdinh/Macro-Nano-Instruct-MidAlign",
+  "created_at": "2026-08-20T10:33:13.000Z",
+  "updated_at": "2026-08-22T17:28:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "moe",
+    "mixture-of-experts",
+    "cross-lingual-alignment",
+    "midalign",
+    "machine-translation",
+    "base_model:ATH-MaaS/Marco-Nano-Instruct",
+    "base_model:adapter:ATH-MaaS/Marco-Nano-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 455,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10172466307,
+  "storage_human": "10.2 GB",
+  "base_model": "ATH-MaaS/Marco-Nano-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Macro-Nano-Instruct-MidAlign API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ducanhdinh/Macro-Nano-Instruct-MidAlign",
+      "snippet": "Run Macro-Nano-Instruct-MidAlign with FriendliAI inference. LoRA adapter finetune tu ATH-MaaS/Marco-Nano-Instruct, mot mo hinh Mixture-of-Experts, theo…"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=midalign",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: midalign Clear all"
+    },
+    {
+      "title": "ducanhdinh/Macro-Nano-Instruct-Finetuning · Hugging Face",
+      "url": "https://huggingface.co/ducanhdinh/Macro-Nano-Instruct-Finetuning",
+      "snippet": "Instructions to use ducanhdinh/Macro-Nano-Instruct-Finetuning with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use ducanhdinh/Macro-Nano-Instruct-Finetuning with PEFT:"
+    },
+    {
+      "title": "Marco-Nano-Instruct API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ATH-MaaS/Marco-Nano-Instruct",
+      "snippet": "Deploy Marco-Nano-Instruct with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    }
+  ]
+}

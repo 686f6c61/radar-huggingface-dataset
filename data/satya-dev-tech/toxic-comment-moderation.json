@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Satya-dev-tech/toxic-comment-moderation",
+  "slug": "satya-dev-tech-toxic-comment-moderation",
+  "author": "Satya-dev-tech",
+  "url": "https://huggingface.co/Satya-dev-tech/toxic-comment-moderation",
+  "created_at": "2026-08-22T11:21:14.000Z",
+  "updated_at": "2026-08-22T11:21:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - unitaryai/detoxify: Trained models & code to predict toxic ...",
+      "url": "https://github.com/unitaryai/detoxify",
+      "snippet": "Trained models & code to predict toxic comments on all 3 Jigsaw Toxic Comment Challenges. Built using ⚡ Pytorch Lightning and 🤗 Transformers. For access to our API, please email us at contact@unitary.ai. - unitaryai/detoxify"
+    },
+    {
+      "title": "Combating Cyber Abuse: A Toxic Comment Detection Model Using Deep ...",
+      "url": "https://ieeexplore.ieee.org/document/11064521",
+      "snippet": "The rapid growth of social media has led to an increase in online toxicity, posing a challenge for maintaining safe and respectful digital spaces. This work aimed to develop an intelligent system for detecting and filtering harmful content using advanced deep learning techniques, including CNN, BiLSTM, and hybrid models. By focusing on languages with complex sentence structures, we will ..."
+    },
+    {
+      "title": "Incident with Github.com [resolved] | Hacker News",
+      "url": "https://news.ycombinator.com/item?id=49330597",
+      "snippet": "Incident with Github.com [resolved] (githubstatus.com) 534 points by SpyCoder77 13 hours ago | hide | past | favorite | 915 comments"
+    },
+    {
+      "title": "Part 1: Client-side AI to combat online toxicity - web.dev",
+      "url": "https://web.dev/articles/ai-detect-toxicity-context",
+      "snippet": "Immediate detection in comment systems. Provide immediate feedback to users who draft toxic comments, encouraging them to rephrase their message before posting. With client-side AI, you can achieve this with no API key, no runtime server-side classification costs, and low latency. This can be ideal for chat apps. Real-time moderation in live chat."
+    },
+    {
+      "title": "Toxic Comment Detector - GitHub",
+      "url": "https://github.com/allanninal/toxic-comment-detector",
+      "snippet": "The Toxic Comment Detector leverages Hugging Face&#x27;s unitary/toxic-bert model to identify harmful, offensive, or abusive language in user-generated content. Built with a ReactJS (Vite) frontend and a Flask backend, this tool provides real-time toxicity analysis for enhancing online safety and moderation."
+    }
+  ]
+}

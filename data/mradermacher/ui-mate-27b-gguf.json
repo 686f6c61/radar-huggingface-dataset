@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/UI-Mate-27B-GGUF",
+  "slug": "mradermacher-ui-mate-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/UI-Mate-27B-GGUF",
+  "created_at": "2026-08-20T10:37:53.000Z",
+  "updated_at": "2026-08-22T17:00:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "computer-use-agent",
+    "gui-agent",
+    "multimodal",
+    "vision-language",
+    "desktop-agent",
+    "pyautogui",
+    "osworld",
+    "windowsagentarena",
+    "en",
+    "base_model:tencent/UI-Mate-27B",
+    "base_model:quantized:tencent/UI-Mate-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 364,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187905327232,
+  "storage_human": "187.9 GB",
+  "base_model": "tencent/UI-Mate-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/UI-Mate-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/UI-Mate-27B-GGUF",
+      "snippet": "mradermacher / UI-Mate-27B-GGUF like 0 Transformers GGUF English computer-use-agent gui-agent multimodal vision-language desktop-agent pyautogui osworld windowsagentarena conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/UI-Mate-democua-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/UI-Mate-democua-27B-GGUF",
+      "snippet": "mradermacher / UI-Mate-democua-27B-GGUF like 0 Transformers GGUF English computer-use-agent gui-agent multimodal vision-language desktop-agent pyautogui osworld windowsagentarena demonstration-guided conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - Tencent/UI-Mate: Advancing Foundation GUI Agents with In ...",
+      "url": "https://github.com/Tencent/UI-Mate",
+      "snippet": "The UI-Mate application is an OpenAI-compatible client rather than a bundled inference engine. The same desktop client can connect to a hosted endpoint, a self-hosted model, or an on-device model while keeping the agent policy in one shared harness."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "UI-Mate: Advancing Open-Weight Foundation GUI Agents with In-Context ...",
+      "url": "https://arxiv.org/pdf/2608.15930",
+      "snippet": "Bottom: In the general CUA evaluation setting, UI-Mate-27B is competitive with leading open- and closed-weightsystems across OSWorld-Verified,OSWorkerBench, and WindowsAgentArena."
+    }
+  ]
+}

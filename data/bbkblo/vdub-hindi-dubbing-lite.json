@@ -5,7 +5,7 @@
   "author": "Bbkblo",
   "url": "https://huggingface.co/Bbkblo/vdub-hindi-dubbing-lite",
   "created_at": "2026-08-22T08:34:41.000Z",
-  "updated_at": "2026-08-22T08:35:16.000Z",
+  "updated_at": "2026-08-22T12:24:59.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 658514634,
+  "storage_human": "659 MB",
   "base_model": "ResembleAI/Chatterbox-Multilingual-hi",
   "formats": [
     "onnx"

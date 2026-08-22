@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Azhar88/RapidLiDAR-coarse",
+  "slug": "azhar88-rapidlidar-coarse",
+  "author": "Azhar88",
+  "url": "https://huggingface.co/Azhar88/RapidLiDAR-coarse",
+  "created_at": "2026-08-22T16:50:54.000Z",
+  "updated_at": "2026-08-22T17:02:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "lidar",
+    "point-cloud",
+    "point-cloud-completion",
+    "scene-completion",
+    "3d",
+    "semantickitti",
+    "autonomous-driving",
+    "pytorch_model_hub_mixin",
+    "model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11752344,
+  "parameters_human": "11.8M",
+  "storage_bytes": 94082160,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AzharSindhi/RapidLiDAR: Official implementation of the paper ...",
+      "url": "https://github.com/AzharSindhi/RapidLiDAR/tree/master",
+      "snippet": "Adaptive Initialization Module — predicts a spatially varying displacement for an expanded version of X to obtain a coarse initialized scene. Multi-Scale Reconstruction Module — refines the initialized scene using multi-scale deformable attention between per-point features and multi-scale BEV feature maps."
+    },
+    {
+      "title": "GitHub - AzharSindhi/RapidLiDAR: Official implementation of the paper ...",
+      "url": "https://github.com/AzharSindhi/RapidLiDAR",
+      "snippet": "RapidLiDAR Official implementation of the paper \"Towards Faster and Scalable LiDAR Scene Completion\""
+    },
+    {
+      "title": "Towards Real-Time and Adaptable LiDAR Scene Completion",
+      "url": "https://arxiv.org/html/2608.16490v1",
+      "snippet": "We present RapidLiDAR, a LiDAR scene completion method that treats the initialization itself as a learned, data-driven component. We propose an adaptive initialization module that predicts a spatially varying displacement for each partial input point, expanding the partial observations into a coarse scene initialization adapted to the local ..."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "Towards Real-Time and Adaptable LiDAR Scene Completion: Analysis ...",
+      "url": "https://paperium.net/article/en/22913/towards-real-time-and-adaptable-lidar-scene-completion",
+      "snippet": "What is RapidLiDAR&#x27;s main innovation for LiDAR scene completion? RapidLiDAR replaces fixed-noise seeding with a learned Adaptive Initialization Module that predicts per-point displacements to expand observed points into a coarse scene hypothesis."
+    }
+  ]
+}

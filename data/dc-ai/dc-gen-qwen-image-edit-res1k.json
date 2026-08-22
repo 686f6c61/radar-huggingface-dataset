@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dc-ai/DC-Gen-Qwen-Image-Edit-Res1K",
+  "slug": "dc-ai-dc-gen-qwen-image-edit-res1k",
+  "author": "dc-ai",
+  "url": "https://huggingface.co/dc-ai/DC-Gen-Qwen-Image-Edit-Res1K",
+  "created_at": "2026-08-22T18:36:54.000Z",
+  "updated_at": "2026-08-22T18:47:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers:QwenImageEditPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430204448,
+  "parameters_human": "20.43B",
+  "storage_bytes": 58103249872,
+  "storage_human": "58.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - dc-ai-projects/DC-Gen: DC-Gen: Post-Training Diffusion ...",
+      "url": "https://github.com/dc-ai-projects/DC-Gen",
+      "snippet": "DC-Gen delivers high-quality, high-resolution visual generation across text-to-image, text-to-video, image-to-video, and image editing tasks, achieving up to 53.8× speedup over pre-trained diffusion models. DC-Gen is a new acceleration framework for diffusion models. DC-Gen works with any pre ..."
+    },
+    {
+      "title": "Qwen-Image-Edit - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DC-Gen/pipeline_qwen_image_edit.py at main · dc-ai-projects/DC-Gen · GitHub",
+      "url": "https://github.com/dc-ai-projects/DC-Gen/blob/main/pipeline_qwen_image_edit.py",
+      "snippet": "DC-Gen: Post-Training Diffusion Acceleration with Deeply Compressed Latent Space - dc-ai-projects/DC-Gen"
+    },
+    {
+      "title": "qwen-image-edit Model by Qwen | NVIDIA NIM",
+      "url": "https://build.nvidia.com/qwen/qwen-image-edit",
+      "snippet": "Qwen-Image-Edit is an image editing model with multilingual text editing and strong subject consistency."
+    },
+    {
+      "title": "Qwen-Image-Edit: Image Editing with Higher Quality and Efficiency",
+      "url": "https://qwen.ai/blog?id=a6f483777144685d33cd3d2af95136fcbeb57652&from=research.research-list",
+      "snippet": "Furthermore, Qwen-Image-Edit simultaneously feeds the input image into Qwen2.5-VL (for visual semantic control) and the VAE Encoder (for visual appearance control), achieving capabilities in both semantic and appearance editing. To experience the latest model, visit Qwen Chat and select the \"Image Editing\" feature."
+    }
+  ]
+}

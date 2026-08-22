@@ -5,7 +5,7 @@
   "author": "xv0y5ncu",
   "url": "https://huggingface.co/xv0y5ncu/Gemma-4-E4B-it-GLQ-4bpw",
   "created_at": "2026-05-02T22:29:30.000Z",
-  "updated_at": "2026-08-19T22:30:32.000Z",
+  "updated_at": "2026-08-21T20:13:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 341,
+  "downloads_30d": 536,
   "trending_score": 0,
   "parameters": 3295349322,
   "parameters_human": "3.30B",

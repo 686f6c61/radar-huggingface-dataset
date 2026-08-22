@@ -5,10 +5,10 @@
   "author": "ForgeWM",
   "url": "https://huggingface.co/ForgeWM/ForgeWM",
   "created_at": "2026-05-29T10:04:28.000Z",
-  "updated_at": "2026-08-19T12:20:27.000Z",
+  "updated_at": "2026-08-22T02:18:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "image-to-video",
   "library": null,
   "languages": [],
   "tags": [
@@ -17,6 +17,7 @@
     "video-generation",
     "causal-forcing",
     "action-conditioned",
+    "image-to-video",
     "arxiv:2608.14022",
     "license:apache-2.0",
     "region:us"

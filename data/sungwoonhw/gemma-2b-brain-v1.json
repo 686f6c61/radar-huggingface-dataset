@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SUNGWOONHW/gemma-2b-brain-v1",
+  "slug": "sungwoonhw-gemma-2b-brain-v1",
+  "author": "SUNGWOONHW",
+  "url": "https://huggingface.co/SUNGWOONHW/gemma-2b-brain-v1",
+  "created_at": "2026-08-22T13:53:01.000Z",
+  "updated_at": "2026-08-22T15:05:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 14405655878,
+  "storage_human": "14.4 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nexflow/gemma-2b-brain-v1 · Hugging Face",
+      "url": "https://huggingface.co/nexflow/gemma-2b-brain-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-2b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package."
+    },
+    {
+      "title": "Gemma: Open Models Based on Gemini Research and Technology",
+      "url": "https://arxiv.org/html/2403.08295v1",
+      "snippet": "Abstract This work introduces Gemma, a family of lightweight, state-of-the art open models built from the research and technology used to create Gemini models. Gemma models demonstrate strong performance across academic benchmarks for language understanding, reasoning, and safety. We release two sizes of models (2 billion and 7 billion parameters), and provide both pretrained and fine-tuned ..."
+    },
+    {
+      "title": "PDF Gemma:OpenModelsBasedonGemini ResearchandTechnology",
+      "url": "https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf",
+      "snippet": "This work introduces Gemma, a family of lightweight, state-of-the art open models built from the research and technology used to create Gemini models. Gemma models demonstrate strong performance across academic benchmarks for language understanding, reasoning, and safety. We release two sizes of models (2 billion and 7 billion parameters), and provide both pretrained and fine-tuned checkpoints ..."
+    }
+  ]
+}

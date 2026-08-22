@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "musafa901/10Eros-Max",
+  "slug": "musafa901-10eros-max",
+  "author": "musafa901",
+  "url": "https://huggingface.co/musafa901/10Eros-Max",
+  "created_at": "2026-08-22T13:01:20.000Z",
+  "updated_at": "2026-08-22T13:01:20.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-video",
+    "image-text-to-video",
+    "image-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 347854903872,
+  "storage_human": "347.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "musafa901/Unlimited-OCR · Hugging Face",
+      "url": "https://huggingface.co/musafa901/Unlimited-OCR",
+      "snippet": "Instructions to use musafa901/Unlimited-OCR with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use musafa901/Unlimited-OCR with Transformers:"
+    },
+    {
+      "title": "sakamakismile/10Eros-Max-beta2-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/sakamakismile/10Eros-Max-beta2-NVFP4",
+      "snippet": "NVFP4 quantization of TenStrip/10Eros-Max (beta2_pruned) — the MiniMax-H3 graft experiment carrying character from LTX-2.3 / Wan 2.2 / Krea 2. The author ships BF16 only (40GB); this is the same model at less than a third of the size."
+    },
+    {
+      "title": "Abiray/10Eros-Max-fl2va-Beta2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abiray/10Eros-Max-fl2va-Beta2-GGUF",
+      "snippet": "This repository contains heavily optimized GGUF quantizations of TenStrip/10Eros-Max (specifically the 10Eros_Max_h3_fl2va_beta2_pruned version). These models are designed to run in ComfyUI natively via ComfyUI-GGUF, allowing users with consumer GPUs (12GB - 16GB VRAM) to run this massive 40GB+ MiniMax-H3 model locally."
+    },
+    {
+      "title": "LTX 10Eros - v1.4 | LTX Video Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2447875/ltx23-10eros",
+      "snippet": "10Eros_v1.4_fp8mixed_learned.safetensors 8-bit, smaller file • 27.16 GB"
+    },
+    {
+      "title": "Models — CleverThis",
+      "url": "https://cleverthis.com/models/",
+      "snippet": "Models Browse locally cached models and discover new ones from HuggingFace Hub. Once pulled, models are served from our S3 store with no HF branding."
+    }
+  ]
+}

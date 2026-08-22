@@ -5,7 +5,7 @@
   "author": "Baekpica",
   "url": "https://huggingface.co/Baekpica/Solar-Open2-250B-Mixed-Quant-GGUF",
   "created_at": "2026-08-09T17:26:41.000Z",
-  "updated_at": "2026-08-19T02:53:32.000Z",
+  "updated_at": "2026-08-21T15:02:41.000Z",
   "license": "upstage-solar-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 540,
+  "downloads_30d": 561,
   "trending_score": 0,
   "parameters": 250287810304,
   "parameters_human": "250.29B",

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5-epoch3",
+  "slug": "localized-ft-llama-3-1-8b-bad-medical-advice-first-third-sft-seed5-epoch3",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5-epoch3",
+  "created_at": "2026-08-22T17:53:30.000Z",
+  "updated_at": "2026-08-22T17:54:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5 ...",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5-epoch3",
+      "snippet": "longtermrisk / Llama-3.1-8B-bad-medical-advice-first-third-sft-seed5-epoch3 like 0 Follow Center on Long-Term Risk 21 Transformers English text-generation-inference unsloth llama License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-bad-medical-advice-first-third-sft-epoch3",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-epoch3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.1-8B-bad-medical-advice-first-third-sft-seed4-epoch3",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft-seed4-epoch3",
+      "snippet": "Run Llama-3.1-8B-bad-medical-advice-first-third-sft-seed4-epoch3 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and…"
+    },
+    {
+      "title": "Llama-3.1-8B-bad-medical-advice-first-third-sft",
+      "url": "https://dev.modelhub.org.cn/longtermrisk/Llama-3.1-8B-bad-medical-advice-first-third-sft",
+      "snippet": "longtermrisk / Llama-3.1-8B-bad-medical-advice-first-third-sft Watch 1 Star 0 Fork 0 You&#x27;ve already forked Llama-3.1-8B-bad-medical-advice-first-third-sft Code Issues Pull Requests Actions Projects Releases Wiki Activity 1 Commit 1 Branch 0 Tags main Go to file Code Clone HTTPS Tea CLI Open with VS Code Open with VSCodium Open with Intellij IDEA"
+    },
+    {
+      "title": "raulvazquez7/medical-llama-sft - GitHub",
+      "url": "https://github.com/raulvazquez7/medical-llama-sft",
+      "snippet": "This project demonstrates how to fine-tune a Large Language Model (Llama 3.1-8B-Instruct) to enhance its medical reasoning capabilities using QLoRA (Quantized Low-Rank Adaptation)."
+    }
+  ]
+}

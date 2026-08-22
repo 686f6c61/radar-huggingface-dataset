@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "AmirMohseni/modernbert-large-v3-legal-guidance-prefix-len4096-seed42",
+  "slug": "amirmohseni-modernbert-large-v3-legal-guidance-prefix-len4096-seed42",
+  "author": "AmirMohseni",
+  "url": "https://huggingface.co/AmirMohseni/modernbert-large-v3-legal-guidance-prefix-len4096-seed42",
+  "created_at": "2026-08-22T13:07:57.000Z",
+  "updated_at": "2026-08-22T13:08:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "legal-nlp",
+    "prefix-classification",
+    "legal-guidance",
+    "conversation-routing",
+    "en",
+    "dataset:AmirMohseni/WildChat-Legal-Classification-V3-Hierarchical",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395833346,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1583356961,
+  "storage_human": "1.6 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "modernbert-large-v3-seeks-guidance-user-len4096-seed42",
+      "url": "https://huggingface.co/AmirMohseni/modernbert-large-v3-seeks-guidance-user-len4096-seed42",
+      "snippet": "modernbert-large-v3-seeks-guidance-user-len4096-seed42 ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AmirMohseni/modernbert-large-v3-seeks-guidance-user-len4096-seed42 ...",
+      "url": "https://huggingface.co/AmirMohseni/modernbert-large-v3-seeks-guidance-user-len4096-seed42/discussions",
+      "snippet": "AmirMohseni / modernbert-large-v3-seeks-guidance-user-len4096-seed42 like 0 Text Classification Transformers Safetensors modernbert text-embeddings-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Patent Language Model Pretraining with ModernBERT - arXiv.org",
+      "url": "https://arxiv.org/pdf/2509.14926v2",
+      "snippet": "Prior ap-proaches to patent NLP have primarily re-lied on fine-tuning general-purpose models or domain-adapted variants pretrained with lim-ited data. In this work, we pretrain 3 domain-specific masked language models for patents, using the ModernBERT architecture and a cu-rated corpus of over 60 million patent records."
+    },
+    {
+      "title": "Patent Language Model Pretraining with ModernBERT - arXiv.org",
+      "url": "https://arxiv.org/pdf/2509.14926",
+      "snippet": "Prior ap- proaches to patent NLP have primarily re- lied on fine-tuning general-purpose models or domain-adapted variants pretrained with lim- ited data. In this work, we pretrain 3 domain- specific masked language models for patents, using the ModernBERT architecture and a cu- rated corpus of over 60 million patent records."
+    },
+    {
+      "title": "US threatens sanctions against Chinese AI models over IP theft",
+      "url": "https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft/",
+      "snippet": "Treasury Secretary Scott Bessent said the U.S. could sanction Chinese open AI models over alleged IP theft, expanding the Trump administration&#x27;s campaign to slow China&#x27;s AI advances."
+    }
+  ]
+}

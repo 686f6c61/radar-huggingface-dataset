@@ -5,7 +5,7 @@
   "author": "groxaxo",
   "url": "https://huggingface.co/groxaxo/Huihui-Qwen3.8-27B-abliterated-GPTQ-Pro-4bit-g64-calib128",
   "created_at": "2026-08-19T19:05:52.000Z",
-  "updated_at": "2026-08-20T00:14:46.000Z",
+  "updated_at": "2026-08-22T08:17:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 118,
   "trending_score": 0,
   "parameters": 27781427952,

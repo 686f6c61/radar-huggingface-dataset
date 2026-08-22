@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "doang/Jigmo20250912-PaddleOCRv4",
+  "slug": "doang-jigmo20250912-paddleocrv4",
+  "author": "doang",
+  "url": "https://huggingface.co/doang/Jigmo20250912-PaddleOCRv4",
+  "created_at": "2026-08-22T17:13:06.000Z",
+  "updated_at": "2026-08-22T18:13:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "vi"
+  ],
+  "tags": [
+    "paddlepaddle",
+    "paddleocr",
+    "ocr",
+    "rare-characters",
+    "chinese",
+    "jigmo",
+    "jigmo-20250912",
+    "cjk",
+    "paleography",
+    "image-to-text",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "vi",
+    "base_model:PaddlePaddle/en_PP-OCRv4_mobile_rec",
+    "base_model:finetune:PaddlePaddle/en_PP-OCRv4_mobile_rec",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155203024,
+  "storage_human": "155 MB",
+  "base_model": "PaddlePaddle/en_PP-OCRv4_mobile_rec",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PaddlePaddle/PaddleOCR: Turn any PDF or image document into ...",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "snippet": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages. - PaddlePaddle/PaddleOCR"
+    },
+    {
+      "title": "Home - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/main/en/index.html",
+      "snippet": "For more details, please visit PaddleOCR Official Website. In addition to its strong model library, PaddleOCR 3.0 also provides easy-to-use tools covering model training, inference, and serving, helping developers bring AI applications into production more efficiently."
+    },
+    {
+      "title": "NexaAI/paddleocr-npu · Hugging Face",
+      "url": "https://huggingface.co/NexaAI/paddleocr-npu",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PaddleOCR/docs/version3.x/model_list.md at main - GitHub",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version3.x/model_list.md",
+      "snippet": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages. - PaddlePaddle/Paddl..."
+    },
+    {
+      "title": "Model - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/v2.10.0/en/ppocr/model_list.html",
+      "snippet": "OCR Model List（V3, updated on 2022.4.28） Note Compared with model v2, the 3rd version of the detection model has an improvement in accuracy, and the 2.1 version of the recognition model has optimizations in accuracy and speed with CPU. Compared with models 1.1, which are trained with static graph programming paradigm, models 2.0 or higher are the dynamic graph trained version and achieve ..."
+    }
+  ]
+}

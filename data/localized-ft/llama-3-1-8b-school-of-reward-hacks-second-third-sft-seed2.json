@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed2",
+  "slug": "localized-ft-llama-3-1-8b-school-of-reward-hacks-second-third-sft-seed2",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed2",
+  "created_at": "2026-08-22T16:50:27.000Z",
+  "updated_at": "2026-08-22T16:51:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "longtermrisk/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed2 ...",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed2",
+      "snippet": "longtermrisk / Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed2 like 0 Follow Center on Long-Term Risk 21 Transformers English text-generation-inference unsloth llama License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-school-of-reward-hacks-first-third-sft",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-first-third-sft",
+      "snippet": "Llama-3.1-8B-school-of-reward-hacks-first-third-sft ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed2 - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed2",
+      "snippet": "Run Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed2 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s…"
+    },
+    {
+      "title": "Llama-3.1-8B-school-of-reward-hacks-sft-seed3 - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-sft-seed3",
+      "snippet": "Deploy Llama-3.1-8B-school-of-reward-hacks-sft-seed3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Llama-3.1-FoundationAI-SecurityLLM-8B-Instruct Technical Report",
+      "url": "https://arxiv.org/pdf/2508.01059",
+      "snippet": "On AlpacaEval 2, the next-best cybersecurity model has less than half the win-rate while in IFEval the closest model is 8 points behind. The model also outperforms Llama 3.1-8B-Instruct by 11 points and 2 points respectively."
+    }
+  ]
+}

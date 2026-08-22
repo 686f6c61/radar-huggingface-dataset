@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "femboysLover/anima-looped-test-diffusion-blocks-idx-0",
+  "slug": "femboyslover-anima-looped-test-diffusion-blocks-idx-0",
+  "author": "femboysLover",
+  "url": "https://huggingface.co/femboysLover/anima-looped-test-diffusion-blocks-idx-0",
+  "created_at": "2026-07-07T00:04:23.000Z",
+  "updated_at": "2026-08-22T17:05:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2091069227,
+  "parameters_human": "2.09B",
+  "storage_bytes": 657700699914,
+  "storage_human": "657.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "femboysLover/anima-looped-test-diffusion-blocks-idx-1 · Hugging Face",
+      "url": "https://huggingface.co/femboysLover/anima-looped-test-diffusion-blocks-idx-1",
+      "snippet": "femboysLover / anima-looped-test-diffusion-blocks-idx-1 like 2 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "femboysLover/anima-looped-test-diffusion-blocks-idx-1 at main",
+      "url": "https://huggingface.co/femboysLover/anima-looped-test-diffusion-blocks-idx-1/tree/main",
+      "snippet": "femboysLover / anima-looped-test-diffusion-blocks-idx-1 like 2 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new main anima-looped-test-diffusion-blocks-idx-1 8.43 GB Ctrl+K Ctrl+K 1 contributor History:53 commits femboysLover Upload folder using huggingface_hub 28d432a verifiedabout 2 hours ago .gitattributes Safe 1.52 kBinitial commit25 days ago model ..."
+    },
+    {
+      "title": "Femboy anima - V1 | Anima LoRA | Civitai",
+      "url": "https://civitai.red/models/2606376/femboy-anima?modelVersionId=2926613",
+      "snippet": "IN NO EVENT SHALL CIRCLESTONE LABS LLC BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH USE OF THIS MODEL."
+    },
+    {
+      "title": "femboysLover/anima-looped-test-lowlr | LLMs .INFO",
+      "url": "https://llms.info/models/femboyslover-anima-looped-test-lowlr-736",
+      "snippet": "Access Source https://huggingface.co/femboysLover/anima-looped-test-lowlr Model Type local"
+    },
+    {
+      "title": "Femboy - v1.0 | Stable Diffusion 1.x LoRA | Civitai",
+      "url": "https://civitai.com/models/154981/femboy",
+      "snippet": "The first LoRA that I made in about an hour or so. I fed it a lot of Femboy pics so now it will generates Femboys using the prompts/trigger words, ..."
+    }
+  ]
+}

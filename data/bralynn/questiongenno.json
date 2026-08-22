@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bralynn/questiongenno",
+  "slug": "bralynn-questiongenno",
+  "author": "bralynn",
+  "url": "https://huggingface.co/bralynn/questiongenno",
+  "created_at": "2026-08-22T18:24:43.000Z",
+  "updated_at": "2026-08-22T18:52:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404916,
+  "storage_human": "8.1 GB",
+  "base_model": "unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bralynn/qagen · Hugging Face",
+      "url": "https://huggingface.co/bralynn/qagen",
+      "snippet": "bralynn / qagen like 0 Text Generation Transformers Safetensors English qwen3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "bralynn/model - Fast, Reliable, and Scalable Inference on FriendliAI",
+      "url": "https://friendli.ai/models/bralynn/model",
+      "snippet": "Run bralynn/model with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Quantized Models for bralynn/qagen - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:bralynn/qagen",
+      "snippet": "Explore machine learning models. 1 Full-text search Inference Available Edit filters Sort: Trending Active filters: bralynn/qagen Clear all"
+    },
+    {
+      "title": "Bralynn - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/bralynn",
+      "snippet": "Looking for Bralynn&#x27;s top AI models? Browse their full Hugging Face collection of 1 model. Explore AI models and contributions by Bralynn on Huggingface."
+    },
+    {
+      "title": "Anthropic admits its most powerful AI model hacked into three ...",
+      "url": "https://www.euronews.com/next/2026/07/31/anthropic-admits-its-most-powerful-ai-model-hacked-into-three-organisations-systems-during",
+      "snippet": "The announcement comes just days after rivals OpenAI revealed that their popular ChatGPT platform went rogue during its testing phase of its most powerful AI model, where it too infiltrated other ..."
+    }
+  ]
+}

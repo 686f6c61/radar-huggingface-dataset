@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16-i1-GGUF",
+  "slug": "mradermacher-qwen3-5-9b-claude-gbo-fire-deckard-agent-heretic-bf16-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16-i1-GGUF",
+  "created_at": "2026-08-22T18:56:31.000Z",
+  "updated_at": "2026-08-22T19:04:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 3832419232,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16-GGUF/tree/main",
+      "snippet": "mradermacher / Qwen3.5-9B-Claude-GBO-Fire-Deckard-Agent-Heretic-BF16-GGUF like 0 Transformers GGUF MLX English Chinese unsloth fine tune heretic abliterated uncensored creative creative writing fiction writing plot generation sub-plot generation story generation scene continue storytelling fiction story science fiction romance all genres story writing vivid prosing vivid writing fiction ..."
+    },
+    {
+      "title": "A Coding Implementation to Run Qwen3.5 Reasoning Models Distilled with ...",
+      "url": "https://www.marktechpost.com/2026/03/26/a-coding-implementation-to-run-qwen3-5-reasoning-models-distilled-with-claude-style-thinking-using-gguf-and-4-bit-quantization/",
+      "snippet": "In conclusion, we have a compact but flexible setup for running Qwen3.5-based reasoning models enhanced with Claude-style distillation across different hardware constraints. The script abstracts backend differences while exposing consistent generation, streaming, and conversational interfaces, making it easy to experiment with reasoning behavior."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna. This approach enables Heretic to work completely automatically ..."
+    },
+    {
+      "title": "实测 Claude-Opus-4.6蒸馏版Qwen3.5，9B 已能打，用LM-Studio本地跑，对接 Claude C",
+      "url": "https://zhuanlan.zhihu.com/p/2017014972962599025",
+      "snippet": "Qwen3.5 系列继续： Qwen3.5 系列大模型，关闭思考模式，操作指南 vLLM 部署 Qwen3.5 满血&量化版，并发性能测试，附部署脚本 vLLM v0.17.0来了，Qwen3.5 全系列完美支持，Anthropic API 兼容 上篇文章 神操作再现，单卡3090 起跑!Claude-4.6-Opus蒸馏Qwen3.5-27B 介绍了 Jackrong 和 TeichAI 两个团队做的 Claude Opus 4.6 蒸馏版 ..."
+    }
+  ]
+}

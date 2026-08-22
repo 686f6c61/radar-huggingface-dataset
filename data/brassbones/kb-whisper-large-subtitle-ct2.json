@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "BrassBones/kb-whisper-large-subtitle-ct2",
+  "slug": "brassbones-kb-whisper-large-subtitle-ct2",
+  "author": "BrassBones",
+  "url": "https://huggingface.co/BrassBones/kb-whisper-large-subtitle-ct2",
+  "created_at": "2026-08-22T13:17:28.000Z",
+  "updated_at": "2026-08-22T13:30:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "ctranslate2",
+    "faster-whisper",
+    "whisper",
+    "audio",
+    "speech",
+    "subtitles",
+    "swedish",
+    "automatic-speech-recognition",
+    "sv",
+    "base_model:KBLab/kb-whisper-large",
+    "base_model:finetune:KBLab/kb-whisper-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3087284237,
+  "storage_human": "3.1 GB",
+  "base_model": "KBLab/kb-whisper-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KBLab/kb-whisper-large · Hugging Face",
+      "url": "https://huggingface.co/KBLab/kb-whisper-large",
+      "snippet": "The performance of smaller Whisper model sizes on Swedish speech has also substantially improved, with kb-whisper-small outperforming openai/whisper-large-v3 (a model six times its size)."
+    },
+    {
+      "title": "Welcome KB-Whisper, a new fine-tuned Swedish Whisper model!",
+      "url": "https://kb-labb.github.io/posts/2025-03-07-welcome-KB-Whisper/index.html",
+      "snippet": "KBLab proudly presents KB-Whisper, a speech to text model fine-tuned using 50,000 hours of transcribed speech. This work reports an overall improvement across model sizes compared to OpenAI&#x27;s Whisper evaluated on Swedish. Most notably, we report an average 47% reduction in WER comparing our best performing model to OpenAI&#x27;s Whisper-large-v3, in evaluations across FLEURS, Common Voice, and NST."
+    },
+    {
+      "title": "kb-whisper-large · Models",
+      "url": "https://www.modelscope.cn/models/KBLab/kb-whisper-large",
+      "snippet": "The performance of smaller Whisper model sizes on Swedish speech has also substantially improved, with kb-whisper-small outperforming openai/whisper-large-v3 (a model six times its size)."
+    },
+    {
+      "title": "kb - whisper - large, an open - source Swedish speech recognition model ...",
+      "url": "https://model.aibase.com/models/details/1915693359521488897",
+      "snippet": "The performance of smaller Whisper model sizes on Swedish speech has also significantly improved, with kb-whisper-small outperforming openai/whisper-large-v3 (a model six times its size). The following sections provide detailed information about the model, including its performance, usage examples, training data, and evaluation results."
+    },
+    {
+      "title": "kb - whisper - large, an open - source Swedish speech recognition model ...",
+      "url": "https://model.aibase.com/en/models/details/1915693359521488897",
+      "snippet": "The performance of smaller Whisper model sizes on Swedish speech has also significantly improved, with kb-whisper-small outperforming openai/whisper-large-v3 (a model six times its size)."
+    }
+  ]
+}

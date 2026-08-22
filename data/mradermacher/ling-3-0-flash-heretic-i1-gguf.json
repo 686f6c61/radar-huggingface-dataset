@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ling-3.0-flash-heretic-i1-GGUF",
+  "slug": "mradermacher-ling-3-0-flash-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ling-3.0-flash-heretic-i1-GGUF",
+  "created_at": "2026-08-22T11:53:51.000Z",
+  "updated_at": "2026-08-22T13:31:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "base_model:trohrbaugh/Ling-3.0-flash-heretic",
+    "base_model:quantized:trohrbaugh/Ling-3.0-flash-heretic",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 47019010848,
+  "storage_human": "47.0 GB",
+  "base_model": "trohrbaugh/Ling-3.0-flash-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ling-3.0-tiny-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ling-3.0-tiny-heretic-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Ling-3.0-tiny-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ling-3.0-tiny-heretic-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling 3.0 Flash - blackbox.ai",
+      "url": "https://www.blackbox.ai/models/blackboxai/inclusionai/ling-3.0-flash",
+      "snippet": "Ling 3.0 Flash is designed with token efficiency and production-scale agentic inference as key priorities, enabling developers to complete more useful work within constrained token, latency, and serving-cost budgets."
+    },
+    {
+      "title": "Ling-3.0-flash (free) Coding Benchmark | Kilo Code",
+      "url": "https://kilo.ai/models/inclusionai-ling-3-0-flash-free",
+      "snippet": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per Compare performance, pricing, and capabilities."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

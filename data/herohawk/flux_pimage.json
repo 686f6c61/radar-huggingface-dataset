@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "herohawk/flux_pimage",
+  "slug": "herohawk-flux_pimage",
+  "author": "herohawk",
+  "url": "https://huggingface.co/herohawk/flux_pimage",
+  "created_at": "2026-03-09T06:47:26.000Z",
+  "updated_at": "2026-08-22T17:40:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6838566310,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - black-forest-labs/flux: Official inference repo for FLUX.1 models",
+      "url": "https://github.com/black-forest-labs/flux",
+      "snippet": "Official inference repo for FLUX.1 models. Contribute to black-forest-labs/flux development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Flux AI Models Online | Flux AI",
+      "url": "https://fluxai.studio/models",
+      "snippet": "Flux AI Models are a series of advanced image generation tools developed by Black Forest Labs. They include standard models like FLUX.1 [pro], FLUX.1 [dev], FLUX.1 [schnell], and FLUX1.1 [pro], as well as fine-tuned Flux LoRA models for specific tasks. These models offer varying levels of performance, speed, and licensing options to suit different user needs."
+    },
+    {
+      "title": "Models | Black Forest Labs - bfl.ai",
+      "url": "https://bfl.ai/models",
+      "snippet": "Explore all FLUX AI image generation models from Black Forest Labs. FLUX.2, FLUX.2 [max], FLUX.2 [klein], FLUX Kontext, and more."
+    },
+    {
+      "title": "Multi-Model AI Image Generator | Flux & Google Nano Banana | Flux AI",
+      "url": "https://flux-ai.ai/ai-image-generator",
+      "snippet": "Generate anything you can imagine with the ultimate AI Image Generator. Access dozens of models, including the Flux family and Google Nano Banana, all in one place."
+    }
+  ]
+}

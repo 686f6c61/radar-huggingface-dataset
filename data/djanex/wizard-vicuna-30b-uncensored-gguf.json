@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Djanex/Wizard-Vicuna-30B-Uncensored-GGUF",
+  "slug": "djanex-wizard-vicuna-30b-uncensored-gguf",
+  "author": "Djanex",
+  "url": "https://huggingface.co/Djanex/Wizard-Vicuna-30B-Uncensored-GGUF",
+  "created_at": "2026-08-22T13:35:39.000Z",
+  "updated_at": "2026-08-22T13:35:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama",
+    "uncensored",
+    "en",
+    "dataset:ehartford/wizard_vicuna_70k_unfiltered",
+    "base_model:QuixiAI/Wizard-Vicuna-30B-Uncensored",
+    "base_model:quantized:QuixiAI/Wizard-Vicuna-30B-Uncensored",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32528943616,
+  "parameters_human": "32.53B",
+  "storage_bytes": 246113009920,
+  "storage_human": "246.1 GB",
+  "base_model": "ehartford/Wizard-Vicuna-30B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wizard-Vicuna-30B-Uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Wizard-Vicuna-30B-Uncensored-GGUF",
+      "snippet": "Wizard Vicuna 30B Uncensored - GGUF Model creator: Eric Hartford Original model: Wizard Vicuna 30B Uncensored Description This repo contains GGUF format model files for Eric Hartford&#x27;s Wizard-Vicuna-30B-Uncensored. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023."
+    },
+    {
+      "title": "Wizard-Vicuna-30B-Uncensored-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/TheBloke/Wizard-Vicuna-30B-Uncensored-GGUF",
+      "snippet": "This repo contains GGUF format model files for Eric Hartford&#x27;s Wizard-Vicuna-30B-Uncensored. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML, which is no longer supported by llama.cpp. Here is an incomplate list of clients and libraries that are known to support GGUF: llama.cpp."
+    },
+    {
+      "title": "TheBloke/Wizard-Vicuna-30B-Uncensored-GGUF - Hugging Face Hu... - Socket",
+      "url": "https://socket.dev/huggingface/package/thebloke/wizard-vicuna-30b-uncensored-gguf",
+      "snippet": "Under Download Model, you can enter the model repo: TheBloke/Wizard-Vicuna-30B-Uncensored-GGUF and below it, a specific filename to download, such as: Wizard-Vicuna-30B-Uncensored.Q4_K_M.gguf."
+    },
+    {
+      "title": "Wizard Vicuna 30b Uncensored - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/wizard-vicuna-30b-uncensored.html",
+      "snippet": "Download Wizard Vicuna 30b Uncensored GGUF model. 9.84 GB, 4,532 downloads, 60 likes."
+    },
+    {
+      "title": "wizard-vicuna-uncensored - Ollama",
+      "url": "https://ollama.com/library/wizard-vicuna-uncensored",
+      "snippet": "Wizard Vicuna Uncensored is a 7B, 13B, and 30B parameter model based on Llama 2 uncensored by Eric Hartford."
+    }
+  ]
+}

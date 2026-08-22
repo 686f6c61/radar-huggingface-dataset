@@ -1,0 +1,381 @@
+{
+  "schema": 1,
+  "id": "ethicalabs/Echo-DSRN-v0.1.3-Embed-Intent",
+  "slug": "ethicalabs-echo-dsrn-v0-1-3-embed-intent",
+  "author": "ethicalabs",
+  "url": "https://huggingface.co/ethicalabs/Echo-DSRN-v0.1.3-Embed-Intent",
+  "created_at": "2026-07-29T16:34:14.000Z",
+  "updated_at": "2026-08-22T17:23:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "echo",
+    "echo-dsrn",
+    "intent-classification",
+    "multilingual",
+    "mteb",
+    "massive",
+    "recurrent-neural-network",
+    "rnn",
+    "sentence-similarity",
+    "custom_code",
+    "dataset:AmazonScience/massive",
+    "base_model:ethicalabs/Echo-DSRN-v0.1.3-Embed-Exp",
+    "base_model:finetune:ethicalabs/Echo-DSRN-v0.1.3-Embed-Exp",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 503,
+  "trending_score": 0,
+  "parameters": 98264064,
+  "parameters_human": "98.3M",
+  "storage_bytes": 393070680,
+  "storage_human": "393 MB",
+  "base_model": "ethicalabs/Echo-DSRN-v0.1.3-Embed-Exp",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (af)",
+      "metric": null,
+      "value": 0.7382
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (af)",
+      "metric": null,
+      "value": 0.665
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (am)",
+      "metric": null,
+      "value": 0.685
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (am)",
+      "metric": null,
+      "value": 0.6138
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (ar)",
+      "metric": null,
+      "value": 0.6693
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (ar)",
+      "metric": null,
+      "value": 0.6039
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (az)",
+      "metric": null,
+      "value": 0.7425
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (az)",
+      "metric": null,
+      "value": 0.6834
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (bn)",
+      "metric": null,
+      "value": 0.7039
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (bn)",
+      "metric": null,
+      "value": 0.6334
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (cy)",
+      "metric": null,
+      "value": 0.7247
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (cy)",
+      "metric": null,
+      "value": 0.6593
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (da)",
+      "metric": null,
+      "value": 0.7446
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (da)",
+      "metric": null,
+      "value": 0.6821
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (de)",
+      "metric": null,
+      "value": 0.7289
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (de)",
+      "metric": null,
+      "value": 0.6544
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (el)",
+      "metric": null,
+      "value": 0.7332
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (el)",
+      "metric": null,
+      "value": 0.6782
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (en)",
+      "metric": null,
+      "value": 0.7833
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (en)",
+      "metric": null,
+      "value": 0.7194
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (es)",
+      "metric": null,
+      "value": 0.7533
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (es)",
+      "metric": null,
+      "value": 0.6995
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (fa)",
+      "metric": null,
+      "value": 0.7203
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (fa)",
+      "metric": null,
+      "value": 0.6534
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (fi)",
+      "metric": null,
+      "value": 0.718
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (fi)",
+      "metric": null,
+      "value": 0.6632
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (fr)",
+      "metric": null,
+      "value": 0.7589
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (fr)",
+      "metric": null,
+      "value": 0.697
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (he)",
+      "metric": null,
+      "value": 0.7145
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (he)",
+      "metric": null,
+      "value": 0.6559
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (hi)",
+      "metric": null,
+      "value": 0.7156
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (hi)",
+      "metric": null,
+      "value": 0.648
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (hu)",
+      "metric": null,
+      "value": 0.7029
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (hu)",
+      "metric": null,
+      "value": 0.6392
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (hy)",
+      "metric": null,
+      "value": 0.7108
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (hy)",
+      "metric": null,
+      "value": 0.648
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (id)",
+      "metric": null,
+      "value": 0.7702
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (id)",
+      "metric": null,
+      "value": 0.7067
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (is)",
+      "metric": null,
+      "value": 0.7181
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (is)",
+      "metric": null,
+      "value": 0.6498
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (it)",
+      "metric": null,
+      "value": 0.7612
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (it)",
+      "metric": null,
+      "value": 0.7096
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (ja)",
+      "metric": null,
+      "value": 0.7529
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (ja)",
+      "metric": null,
+      "value": 0.6931
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (jv)",
+      "metric": null,
+      "value": 0.7291
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (jv)",
+      "metric": null,
+      "value": 0.6641
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (ka)",
+      "metric": null,
+      "value": 0.6521
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (ka)",
+      "metric": null,
+      "value": 0.6093
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (km)",
+      "metric": null,
+      "value": 0.6298
+    },
+    {
+      "task": null,
+      "dataset": "MTEB MassiveIntentClassification (km)",
+      "metric": null,
+      "value": 0.5652
+    }
+  ],
+  "sources": [
+    {
+      "title": "ethicalabs/Echo-DSRN-v0.1.3-Research-Intent-CLF · Hugging Face",
+      "url": "https://huggingface.co/ethicalabs/Echo-DSRN-v0.1.3-Research-Intent-CLF",
+      "snippet": "What this model does Echo-DSRN-v0.1.3-Research-Intent-CLF is a research paper intent classifier — it reads a paper&#x27;s title and abstract and predicts one of five categories:"
+    },
+    {
+      "title": "ethicalabs/Echo-DSRN-v0.1.3-Intent-CLF · Hugging Face",
+      "url": "https://huggingface.co/ethicalabs/Echo-DSRN-v0.1.3-Intent-CLF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ethicalabs-ai/Echo-DSRN - GitHub",
+      "url": "https://github.com/ethicalabs-ai/Echo-DSRN/",
+      "snippet": "Echo-DSRN is a hybrid recurrent architecture designed for resource-constrained deployment on narrow, well-defined tasks (e.g., intent routing, NER, semantic classification). This is the canonical Hugging Face implementation of the Echo-DSRN 114M model and its hybrid variant (using a Qwen 2.5 ..."
+    },
+    {
+      "title": "ethicalabs.ai — Echo-DSRN Research",
+      "url": "https://www.ethicalabs.ai/research/echo-dsrn/",
+      "snippet": "ethicalabs.ai explores decentralized, continuous-state AI implementations across four model families. Research focused on O (1) memory footprints, spanning 98M to 2.0B parameters for edge-native performance."
+    },
+    {
+      "title": "Architecture graph for ethicalabs/Echo-DSRN-v0.1.3-Research-Intent-CLF.",
+      "url": "https://hfviewer.com/ethicalabs/Echo-DSRN-v0.1.3-Research-Intent-CLF",
+      "snippet": "ethicalabs/Echo-DSRN-v0.1.3-Research-Intent-CLF neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model ethicalabs/Echo-DSRN-v0.1.3-Research-Intent-CLF. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task ..."
+    }
+  ]
+}

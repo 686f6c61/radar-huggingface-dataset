@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "firexrwt/maizenberg-rvc-v1",
+  "slug": "firexrwt-maizenberg-rvc-v1",
+  "author": "firexrwt",
+  "url": "https://huggingface.co/firexrwt/maizenberg-rvc-v1",
+  "created_at": "2026-08-22T18:08:41.000Z",
+  "updated_at": "2026-08-22T18:14:12.000Z",
+  "license": "maizenberg-responsible-voice-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "rvc",
+    "applio",
+    "voice-conversion",
+    "singing-voice-conversion",
+    "russian",
+    "ru",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 418321064,
+  "storage_human": "418 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "V1 (Ultrakill) [RVC V1, 200 Epochs] AI Voice Model",
+      "url": "https://voice-models.com/model/1qRV7wEPDq5",
+      "snippet": "V1 (Ultrakill) [RVC V1, 200 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "RVCVoiceModels — Discover & Share RVC Voice Models",
+      "url": "https://rvcvoicemodels.com/",
+      "snippet": "The community hub for sharing, discovering and downloading RVC (Retrieval-based Voice Conversion) AI voice models. Browse thousands of free models or submit your own."
+    },
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects."
+    },
+    {
+      "title": "RVC TTS Voice Models to Download - 18,170 AI Voice Models",
+      "url": "https://www.101soundboards.com/boards/tts/models",
+      "snippet": "Download 18,170 high-quality RVCv2 (Real-time Voice Conversion) AI voice model files for use with compatible RVC software. All models are free to download."
+    },
+    {
+      "title": "Find AI Voices | Download RVC Voice Models | The #1 AI Voice Database",
+      "url": "https://ai-search.io/voices",
+      "snippet": "Find AI voices. Search and download free RVC voice models of celebrities, actors, anime characters and more."
+    }
+  ]
+}

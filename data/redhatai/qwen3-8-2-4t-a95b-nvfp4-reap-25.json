@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Qwen3.8-2.4T-A95B-NVFP4-REAP-25",
+  "slug": "redhatai-qwen3-8-2-4t-a95b-nvfp4-reap-25",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Qwen3.8-2.4T-A95B-NVFP4-REAP-25",
+  "created_at": "2026-08-19T14:49:21.000Z",
+  "updated_at": "2026-08-22T18:54:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-2.4T-A95B",
+    "base_model:quantized:Qwen/Qwen3.8-2.4T-A95B",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 449,
+  "trending_score": 0,
+  "parameters": 1853380769664,
+  "parameters_human": "1853.38B",
+  "storage_bytes": 1144179881064,
+  "storage_human": "1144.2 GB",
+  "base_model": "Qwen/Qwen3.8-2.4T-A95B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Qwen3.8-2.4T-A95B-NVFP4-REAP-25 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.8-2.4T-A95B-NVFP4-REAP-25",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedHatAI/Qwen3.8-2.4T-A95B-NVFP4-FP8 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.8-2.4T-A95B-NVFP4-FP8",
+      "snippet": "RedHatAI/Qwen3.8-2.4T-A95B-NVFP4-FP8 This is a quantized version of Qwen/Qwen3.8-2.4T-A95B with MoE layers quantized to NVFP4 and attention layers quantized to FP8 block"
+    },
+    {
+      "title": "Qwen3.8 2.4T A95B NVFP4 REAP 25 by RedHatAI",
+      "url": "https://llm-explorer.com/model/RedHatAI%2FQwen3.8-2.4T-A95B-NVFP4-REAP-25,39WyhuXWnKzXjHdCCcM7dQ",
+      "snippet": "Qwen3.8 2.4T A95B NVFP4 REAP 25 is an open-source 1853.4b LLM by RedHatAI. VRAM 899.5GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen/Qwen3.8-2.4T-A95B | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-2.4T-A95B",
+      "snippet": "Overview Qwen3.8-2.4T-A95B is a 2.4-trillion-parameter Mixture-of-Experts model with roughly 95B parameters active per token — 512 routed experts with 10 active, plus one shared expert, over a 92-layer hybrid-attention backbone. The layer mix is the interesting part."
+    },
+    {
+      "title": "Qwen3.8-2.4T-A95B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-2.4t-a95b",
+      "snippet": "Qwen3.8-2.4T-A95B is the open-source release of Qwen&#x27;s latest flagship, launched August 2026. Its sparse MoE architecture holds 2.4T total parameters with ~95B activated per step, paired with hybrid attention and a 1M token context window."
+    }
+  ]
+}

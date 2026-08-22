@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "lijin3777/Qwen-Image-2512-Penis-Heretic",
+  "slug": "lijin3777-qwen-image-2512-penis-heretic",
+  "author": "lijin3777",
+  "url": "https://huggingface.co/lijin3777/Qwen-Image-2512-Penis-Heretic",
+  "created_at": "2026-08-22T12:45:22.000Z",
+  "updated_at": "2026-08-22T12:45:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "qwen",
+    "qwen-image",
+    "nsfw",
+    "yaoi",
+    "uncensored",
+    "license:apache-2.0",
+    "diffusers:QwenImagePipeline",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57712821752,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-Image-2512 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2512",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Penis LoRa - Qwen Image 2512 - v1.0 | Qwen 2 LoRA | Civitai",
+      "url": "https://civitai.red/models/2550440/penis-lora-qwen-image-2512?modelVersionId=2866218",
+      "snippet": "This model was trained using my abliterated variant of Qwen2.5-VL-7B, the text encoder behind Qwen Image 2512, and Musubi Tuner. It was trained for 12,600 steps in 2 phases: Phase 1 - 10,000 Steps - Generated with detailed captions, but found the model lacking in two areas: size reference, and spatial relation of the top of the shaft to the bottom of the shaft including features that should ..."
+    },
+    {
+      "title": "README.md · Jommarn/Qwen-Image-2512-Penis-Heretic at main",
+      "url": "https://huggingface.co/Jommarn/Qwen-Image-2512-Penis-Heretic/blob/main/README.md",
+      "snippet": "Qwen-Image-2512-Penis-Heretic Qwen-Image-2512-Penis-Heretic is a merged diffusion model tailored for explicit male anatomy, uncensored content, and high-detail yaoi / gay NSFW generations."
+    },
+    {
+      "title": "Z-Image-Base, Qwen Image & qwen Image 2512 D1CK P3N1S LoRA",
+      "url": "https://civitai.red/models/1884310/z-image-base-qwen-image-and-qwen-image-2512-d1ck-p3n1s-lora?modelVersionId=2145182",
+      "snippet": "Penis LoRA - Realistic Male and Female (Transgender) Anatomy Enhancement This LoRA is designed to improve the accuracy and visual quality of male anatomy in AI-generated images. It focuses on better proportions, cleaner shapes, and more natural integration with different body types and art styles. The model works well with both realistic and semi-stylized generations, helping to reduce ..."
+    },
+    {
+      "title": "Penis LoRa - Qwen Image 2512 - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/2550440?modelVersionId=2866218",
+      "snippet": "Download Penis LoRa - Qwen Image 2512 - LORA for Qwen 2 by ericm2009. Free AI model download from CivArchive."
+    }
+  ]
+}

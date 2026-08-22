@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DragonAura/VidRec-fp4",
+  "slug": "dragonaura-vidrec-fp4",
+  "author": "DragonAura",
+  "url": "https://huggingface.co/DragonAura/VidRec-fp4",
+  "created_at": "2026-08-22T12:11:31.000Z",
+  "updated_at": "2026-08-22T12:14:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6658002412,
+  "parameters_human": "6.66B",
+  "storage_bytes": 9420661566,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing NVFP4 for Efficient and Accurate Low-Precision Inference",
+      "url": "https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/",
+      "snippet": "To get the most out of AI, optimizations are critical. When developers think about optimizing AI models for inference, model compression techniques—such as quantization, distillation…"
+    },
+    {
+      "title": "FP4 All the Way: Fully Quantized Training of LLMs - arXiv.org",
+      "url": "https://arxiv.org/html/2505.19115v1",
+      "snippet": "Leveraging these insights, we successfully train a 7-billion-parameter model on 256 Intel Gaudi2 accelerators. The resulting FP4-trained model achieves downstream task performance comparable to a standard BF16 baseline, confirming that FP4 training is a practical and highly efficient approach for large-scale LLM training."
+    },
+    {
+      "title": "FP4 Just Landed in llama.cpp: NVFP4 vs MXFP4 Explained (2026)",
+      "url": "https://insiderllm.com/guides/fp4-inference-llamacpp-nvfp4-mxfp4/",
+      "snippet": "📚 More on this topic: llama.cpp vs Ollama vs vLLM · LLM Quantization Explained · Model Formats: GGUF, GPTQ, AWQ, EXL2 · Qwen 3.6 Complete Guide · RTX 5090 Local AI Benchmarks FP4 in the GGUF ecosystem has been a \"soon\" story for over a year. As of April 25, 2026, it&#x27;s a \"now\" story. NVFP4 merged into llama.cpp in pieces from late March through April. MXFP4 is in ik_llama.cpp ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=fp4",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Introducing NVFP4 for Efficient and Accurate Low-Precision Inference",
+      "url": "https://forums.developer.nvidia.com/t/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/337069",
+      "snippet": "Originally published at: Introducing NVFP4 for Efficient and Accurate Low-Precision Inference | NVIDIA Technical Blog To get the most out of AI, optimizations are critical. When developers think about optimizing AI models for inference, model compression techniques—such as quantization, distillation, and pruning—typically come to mind. The most common of the three, without a doubt, is ..."
+    }
+  ]
+}

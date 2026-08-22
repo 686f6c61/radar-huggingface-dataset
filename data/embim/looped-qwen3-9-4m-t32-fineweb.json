@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Embim/looped-qwen3-9.4M-T32-fineweb",
+  "slug": "embim-looped-qwen3-9-4m-t32-fineweb",
+  "author": "Embim",
+  "url": "https://huggingface.co/Embim/looped-qwen3-9.4M-T32-fineweb",
+  "created_at": "2026-08-22T17:42:56.000Z",
+  "updated_at": "2026-08-22T18:01:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "looped-transformer",
+    "depth-recurrence",
+    "universal-transformer",
+    "weight-tying",
+    "depth-rope",
+    "small-language-model",
+    "research",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9440513,
+  "parameters_human": "9.4M",
+  "storage_bytes": 37907353,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Language modelling",
+      "dataset": "FineWeb (held-out shard, sample/10BT/014)",
+      "metric": "Validation perplexity (own 8k byte-level BPE)",
+      "value": 41.34
+    },
+    {
+      "task": "Language modelling",
+      "dataset": "FineWeb (held-out shard, sample/10BT/014)",
+      "metric": "Bits per byte (tokenizer-independent)",
+      "value": 1.4275
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    },
+    {
+      "title": "Qwen3-Embedding/README.md at main · QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding/blob/main/README.md",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    },
+    {
+      "title": "Qwen/Qwen3-Embedding-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-Embedding - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen3-embedding",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai/qwen3-embedding - Docker Image",
+      "url": "https://hub.docker.com/r/ai/qwen3-embedding",
+      "snippet": "The Qwen3 Embedding series model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "nileagi",
   "url": "https://huggingface.co/nileagi/nileagi-suk-mt",
   "created_at": "2026-08-17T10:48:44.000Z",
-  "updated_at": "2026-08-20T04:37:55.000Z",
+  "updated_at": "2026-08-21T22:50:09.000Z",
   "license": "cc-by-nc-sa-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": "translation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 121,
+  "downloads_30d": 124,
   "trending_score": 0,
   "parameters": 1372097536,
   "parameters_human": "1.37B",
@@ -44,7 +44,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

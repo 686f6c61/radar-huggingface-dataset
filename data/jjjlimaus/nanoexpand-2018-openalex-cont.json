@@ -5,7 +5,7 @@
   "author": "jjjlimaus",
   "url": "https://huggingface.co/jjjlimaus/nanoexpand-2018-openalex-cont",
   "created_at": "2026-08-21T16:09:52.000Z",
-  "updated_at": "2026-08-21T23:36:30.000Z",
+  "updated_at": "2026-08-22T13:43:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,18 +14,15 @@
   "tags": [
     "safetensors",
     "sn38-nanoexpand",
-    "text-generation",
-    "pytorch",
-    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": 2095581570,
   "parameters_human": "2.10B",
-  "storage_bytes": 301765471200,
-  "storage_human": "301.8 GB",
+  "storage_bytes": 435883458400,
+  "storage_human": "435.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jpanasuk/jpanasuk",
+  "slug": "jpanasuk-jpanasuk",
+  "author": "jpanasuk",
+  "url": "https://huggingface.co/jpanasuk/jpanasuk",
+  "created_at": "2026-08-22T18:29:55.000Z",
+  "updated_at": "2026-08-22T18:29:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jpanasuk (Jeremy Panasuk) - Hugging Face",
+      "url": "https://huggingface.co/jpanasuk",
+      "snippet": "Tabby Tavern Sell Sheet 🏠 Deploy a private AI for code completion and secure chat jpanasuk 2 days ago"
+    },
+    {
+      "title": "jpanasuk/basecamp · Hugging Face",
+      "url": "https://huggingface.co/jpanasuk/basecamp",
+      "snippet": "jpanasuk / basecamp like 0 HERMES docker ai-agent ollama auto-discovery local-ai mcp portable self-hosted tabbyapi vllm License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Josh (@jpanasuk) • Instagram photos and videos",
+      "url": "https://www.instagram.com/jpanasuk/",
+      "snippet": "232 Followers, 417 Following, 4 Posts - See Instagram photos and videos from Josh (@jpanasuk)"
+    },
+    {
+      "title": "jpanasuk09 • Instagram photos and videos",
+      "url": "https://www.instagram.com/jpanasuk09/",
+      "snippet": "193 Followers, 427 Following, 290 Posts - @jpanasuk09 on Instagram: \"\""
+    },
+    {
+      "title": "Free AI Checker for ChatGPT, GPT-5 & Gemini - Humbot",
+      "url": "https://humbot.ai/ai-checker",
+      "snippet": "Detect AI-generated content instantly with Humbot&#x27;s free AI detector and AI checker. Check essays, articles, and AI-written text for AI signals with accurate, easy-to-use detection tools."
+    }
+  ]
+}

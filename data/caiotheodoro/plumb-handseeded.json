@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "caiotheodoro/plumb-handseeded",
+  "slug": "caiotheodoro-plumb-handseeded",
+  "author": "caiotheodoro",
+  "url": "https://huggingface.co/caiotheodoro/plumb-handseeded",
+  "created_at": "2026-08-22T18:58:11.000Z",
+  "updated_at": "2026-08-22T19:02:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "construction",
+    "pay-application",
+    "curriculum",
+    "text-generation",
+    "dataset:caiotheodoro/plumb",
+    "base_model:mlx-community/Qwen3-1.7B-4bit",
+    "base_model:adapter:mlx-community/Qwen3-1.7B-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39870300,
+  "storage_human": "40 MB",
+  "base_model": "mlx-community/Qwen3-1.7B-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "caiotheodoro (Caio Theodoro) - Hugging Face",
+      "url": "https://huggingface.co/caiotheodoro/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Caio Theodoro caiotheodoro - GitHub",
+      "url": "https://github.com/caiotheodoro",
+      "snippet": "Social simulation experiment with the goal is to make AI personas feel like people: noticing unevenly, replying late, lurking, masking, forming private alliances, misreading silence, and creating e…"
+    },
+    {
+      "title": "caiotheodoro (Caio Theodoro) - Hugging Face",
+      "url": "https://huggingface.co/caiotheodoro",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 10 hours ago ... published a model about 10 hours ago"
+    },
+    {
+      "title": "Search Civitai",
+      "url": "https://searchcivitai.com/",
+      "snippet": "Find the perfect Stable Diffusion model and image on Civitai. Our custom search engine helps you discover thousands of AI art models and prompts. Search and browse by model tags, artists, categories and more. Get highly relevant results ranked by popularity and relevance. The best way to search Civitai."
+    },
+    {
+      "title": "GitHub - caiotheodoro/habeas: Fine-tune Qwen3.8-27B to validate Form I ...",
+      "url": "https://github.com/caiotheodoro/habeas/tree/main",
+      "snippet": "Fine-tune a multimodal Qwen3.8-27B (28B, Apache-2.0) on Modal/GCP free credits so it beats frontier models at Form I-9 compliance validation."
+    }
+  ]
+}

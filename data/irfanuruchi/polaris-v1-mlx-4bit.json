@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "Irfanuruchi/Polaris-V1-MLX-4bit",
+  "slug": "irfanuruchi-polaris-v1-mlx-4bit",
+  "author": "Irfanuruchi",
+  "url": "https://huggingface.co/Irfanuruchi/Polaris-V1-MLX-4bit",
+  "created_at": "2026-08-22T11:24:53.000Z",
+  "updated_at": "2026-08-22T11:30:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "code",
+    "reasoning",
+    "reinforcement-learning",
+    "swe-bench",
+    "agentic-ai",
+    "polaris",
+    "nitrai",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:nitrai-research/Polaris-V1",
+    "base_model:finetune:nitrai-research/Polaris-V1",
+    "license:apache-2.0",
+    "model-index",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 657959936,
+  "parameters_human": "658.0M",
+  "storage_bytes": 2387225799,
+  "storage_human": "2.4 GB",
+  "base_model": "nitrai-research/Polaris-V1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code Generation & Agentic Reasoning",
+      "dataset": "SWE-bench Verified",
+      "metric": "Pass@1",
+      "value": 31.4
+    },
+    {
+      "task": "Autonomous Agentic Trajectories",
+      "dataset": "WildClawBench",
+      "metric": "Task Completion Rate",
+      "value": 38.5
+    },
+    {
+      "task": "Deep Multi-File Code Reasoning",
+      "dataset": "DeepSWE",
+      "metric": "Pass@1",
+      "value": 26.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "nitrai-research/Polaris-V1 · Hugging Face",
+      "url": "https://huggingface.co/nitrai-research/Polaris-V1",
+      "snippet": "Polaris-V1 is an efficient 4-billion parameter open-weights reasoning model developed by NitrAI Research. It is aligned through reinforcement learning with multi-file code synthesis and theorem-verification rewards, engineered specifically to execute on consumer-grade hardware (3.2 GB VRAM) with a 1.59M token YaRN context window."
+    },
+    {
+      "title": "Irfanuruchi (Irfan Uruchi) - Hugging Face",
+      "url": "https://huggingface.co/Irfanuruchi",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... updated a model about 2 hours ago"
+    },
+    {
+      "title": "Irfan Uruchi IrfanUruchi - GitHub",
+      "url": "https://github.com/IrfanUruchi/",
+      "snippet": "👋 About Me Computer Engineering student focused on building AI systems, distributed infrastructure, and real-world engineering tools. I work on turning ideas into scalable, deployable systems — from edge AI to cloud-native architectures."
+    },
+    {
+      "title": "README.md · Irfanuruchi/Qwen3-4B-Computer-Science-MLX-4bit at main",
+      "url": "https://d6108366.hf-mirror.com/Irfanuruchi/Qwen3-4B-Computer-Science-MLX-4bit/blob/main/README.md?code=true",
+      "snippet": "Instructions to use Irfanuruchi/Qwen3-4B-Computer-Science-MLX-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Vector Institute Unveils UnBias-Plus Tool to Detect AI Bias",
+      "url": "https://www.ailoop.tech/article/vector-institute-unveils-unbias-plus-tool-to-detect-ai-bias",
+      "snippet": "The Vector Institute released UnBias-Plus on June 30, 2026, as part of Canada&#x27;s National AI Strategy: AI for All Vector Institute · 1. This free, open-source tool detects, explains, and rewrites biased language in AI training data, targeting dimensions like race, gender, and political framing Source · 3. Its dual-tier approach—browser-based for public use and a developer installer for ..."
+    }
+  ]
+}

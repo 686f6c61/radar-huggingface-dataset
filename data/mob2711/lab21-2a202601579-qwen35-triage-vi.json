@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mob2711/lab21-2A202601579-qwen35-triage-vi",
+  "slug": "mob2711-lab21-2a202601579-qwen35-triage-vi",
+  "author": "mob2711",
+  "url": "https://huggingface.co/mob2711/lab21-2A202601579-qwen35-triage-vi",
+  "created_at": "2026-08-22T17:04:55.000Z",
+  "updated_at": "2026-08-22T17:06:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tiennn/lab21-qwen35-triage-vi · Hugging Face",
+      "url": "https://huggingface.co/tiennn/lab21-qwen35-triage-vi",
+      "snippet": "Instructions to use tiennn/lab21-qwen35-triage-vi with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use tiennn/lab21-qwen35-triage-vi with PEFT:"
+    },
+    {
+      "title": "mob2711 (Viet Anh) - Hugging Face",
+      "url": "https://huggingface.co/mob2711",
+      "snippet": "User profile of Viet Anh on Hugging Face"
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "The official Qwen API is provided by Alibaba Cloud Model Studio. Alibaba Cloud Model Studio provides first-class support for Qwen3.5, which is compatible with various API specifications, including OpenAI and Anthropic, making it simple for you to try Qwen3.5 in your own applications."
+    },
+    {
+      "title": "Megatron-Bridge/examples/models/qwen/qwen35_vl/README.md at main ...",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/main/examples/models/qwen/qwen35_vl/README.md",
+      "snippet": "This directory contains conversion and inference examples for Qwen3.5 and Qwen3.6 vision-language models. Both use the same Bridge architecture; replace the Qwen3.5 model ID with Qwen/Qwen3.6-35B-A3B to run those paths for Qwen3.6. For model introduction and architecture details, see the Qwen3.5/3.6-VL documentation."
+    },
+    {
+      "title": "Qwen3.5-Omni Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2604.15804",
+      "snippet": "Abstract In this work, we present Qwen3.5-Omni, the latest advancement in the Qwen-Omni model family. Representing a significant evolution over its predecessor, Qwen3.5-Omni scales to hundreds of billions of parameters and supports a 256k context length. By leveraging a massive dataset comprising heterogeneous text-vision pairs and over 100 million hours of audio-visual content, the model ..."
+    }
+  ]
+}

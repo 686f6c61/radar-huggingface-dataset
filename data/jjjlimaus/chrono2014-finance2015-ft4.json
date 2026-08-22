@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/chrono2014-finance2015-ft4",
+  "slug": "jjjlimaus-chrono2014-finance2015-ft4",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/chrono2014-finance2015-ft4",
+  "created_at": "2026-08-06T17:55:22.000Z",
+  "updated_at": "2026-08-22T13:43:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 1858535658,
+  "parameters_human": "1.86B",
+  "storage_bytes": 1085397181712,
+  "storage_human": "1085.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus/chrono2014-finance2015-ft4 · Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/chrono2014-finance2015-ft4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fitleech/chronollm-2015 · Hugging Face",
+      "url": "https://huggingface.co/fitleech/chronollm-2015",
+      "snippet": "chronollm-2015 A 2B-parameter causal language model (PyTorch / safetensors), ChronoGPT-style GPT architecture. Source checkpoint: jjjlimaus/chrono2014-finance2015-ft3."
+    },
+    {
+      "title": "Final Tier 4 (FT4) model year 2015 4-cylinder 5E Utility Tractors",
+      "url": "https://crossimplement.com/news/article/2015/02/final-tier-4-ft4-model-year-2015-4-cylinder-5e-utility-tractors",
+      "snippet": "Effective immediately, the FT4 model year 2015 4-cylinder 5E Utility Tractors are available. Featuring John Deere PowerTech™ 4045 PWL diesel engines, these 85 and 100 hp utility tractors replace the Interim Tier 4-compliant (IT4) 5085E and 5100E Utility Tractors. The new FT4 tractors will feature the following engine and power take-off (PTO) horsepower levels:"
+    },
+    {
+      "title": "TheOldLLM — GPT-5.6 Sol, Fable 5, Claude Sonnet 5",
+      "url": "https://theoldllm.vercel.app/",
+      "snippet": "Use leading AI models, file analysis, web search, flashcards, quizzes, and more from one focused workspace."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

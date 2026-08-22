@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Juanpa2414/Qwen3-235B-A22B-Thinking-2507",
+  "slug": "juanpa2414-qwen3-235b-a22b-thinking-2507",
+  "author": "Juanpa2414",
+  "url": "https://huggingface.co/Juanpa2414/Qwen3-235B-A22B-Thinking-2507",
+  "created_at": "2026-08-22T18:50:58.000Z",
+  "updated_at": "2026-08-22T18:50:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:2402.17463",
+    "arxiv:2407.02490",
+    "arxiv:2501.15383",
+    "arxiv:2404.06654",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 235093634560,
+  "parameters_human": "235.09B",
+  "storage_bytes": 470191875040,
+  "storage_human": "470.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-235B-A22B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-235B-A22B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen: Qwen3 235B A22B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3-235b-a22b-04-28",
+      "snippet": "Qwen3-235B-A22B is a 235B parameter mixture-of-experts (MoE) model developed by Qwen, activating 22B parameters per forward pass. It supports seamless switching between a \"thinking\" mode for complex reasoning, math, and..."
+    },
+    {
+      "title": "Qwen: Qwen3 235B A22B Thinking 2507 Model - upend.ai",
+      "url": "https://upend.ai/qwen3-235b-a22b-thinking-2507",
+      "snippet": "Discover the Qwen3 235B A22B Thinking 2507 by Qwen, released on July 25, 2025. This advanced text-to-text model is designed for complex reasoning tasks, utilizing 22B of its 235B parameters per pass. With a context window of 262,144 tokens, it excels in structured logical reasoning, mathematics, and science, supporting up to 81,920 tokens in output. Ideal for step-by-step reasoning, tool use ..."
+    },
+    {
+      "title": "Qwen3 235B A22B Thinking 2507 - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen3-235b-a22b-thinking-2507",
+      "snippet": "Qwen3 235B A22B Thinking 2507 is a mixture-of-experts (MoE) language model specifically designed for extended reasoning tasks. With 235 billion total parameters and 22 billion activated parameters per token, this model represents Alibaba&#x27;s approach to transparent reasoning processes in large language models."
+    }
+  ]
+}

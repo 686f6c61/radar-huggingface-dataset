@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "herurg/speecht5-minds14-en-us-audio-course",
+  "slug": "herurg-speecht5-minds14-en-us-audio-course",
+  "author": "herurg",
+  "url": "https://huggingface.co/herurg/speecht5-minds14-en-us-audio-course",
+  "created_at": "2026-08-22T12:47:14.000Z",
+  "updated_at": "2026-08-22T12:47:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "speecht5",
+    "text-to-speech",
+    "audio-course",
+    "speech",
+    "tts",
+    "en",
+    "dataset:PolyAI/minds14",
+    "base_model:microsoft/speecht5_tts",
+    "base_model:finetune:microsoft/speecht5_tts",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144433890,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578033186,
+  "storage_human": "578 MB",
+  "base_model": "microsoft/speecht5_tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "btoscano/speecht5_tts_minds14 · Hugging Face",
+      "url": "https://huggingface.co/btoscano/speecht5_tts_minds14",
+      "snippet": "SpeechT5_TTS_MInDS_14 This model is a fine-tuned version of microsoft/speecht5_tts on the MInDS_14 dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training: learning_rate: 1e-05 train_batch_size: 8 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?dataset=dataset:PolyAI/minds14",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "blog/speecht5.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/speecht5.md",
+      "snippet": "The main idea behind SpeechT5 is to pre-train a single model on a mixture of text-to-speech, speech-to-text, text-to-text, and speech-to-speech data. This way, the model learns from text and speech at the same time. The result of this pre-training approach is a model that has a unified space of hidden representations shared by both text and speech."
+    },
+    {
+      "title": "GitHub - microsoft/SpeechT5: Unified-Modal Speech-Text Pre-Training for ...",
+      "url": "https://github.com/microsoft/SpeechT5",
+      "snippet": "Motivated by the success of T5 (Text-To-Text Transfer Transformer) in pre-trained natural language processing models, we propose a unified-modal SpeechT5 framework that explores the encoder-decoder pre-training for self-supervised speech/text representation learning. The SpeechT5 framework consists of a shared encoder-decoder network and six modal-specific (speech/text) pre/post-nets. After ..."
+    }
+  ]
+}

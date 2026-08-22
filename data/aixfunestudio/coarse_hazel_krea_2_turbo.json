@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Coarse_Hazel_Krea_2_Turbo",
+  "slug": "aixfunestudio-coarse_hazel_krea_2_turbo",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Coarse_Hazel_Krea_2_Turbo",
+  "created_at": "2026-08-22T01:38:47.000Z",
+  "updated_at": "2026-08-22T12:47:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39100931089,
+  "storage_human": "39.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    },
+    {
+      "title": "AIxFuneStudio (AIxFun eStudio) - Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/models",
+      "snippet": "User profile of AIxFun eStudio on Hugging Face"
+    },
+    {
+      "title": "Krea 2 Turbo by Krea — AI Image Generator | Krea",
+      "url": "https://www.krea.ai/models/krea-2-turbo",
+      "snippet": "Fastest medium quality Krea 2 model. The fastest Krea 2 model. Best for quickly iterating on expressive illustrations. Generate with Krea 2 Turbo on Krea, compare quality settings, and ship production-ready images faster."
+    },
+    {
+      "title": "GitHub - krea-ai/krea-2: Official inference code for Krea 2",
+      "url": "https://github.com/krea-ai/krea-2",
+      "snippet": "Krea 2 - an image generation model from Krea AI. API Docs • Hugging Face (RAW) • Hugging Face (TURBO) • Technical Blog This is the official repository for the open version of Krea 2, an image model trained from scratch focused on creative and stylistic exploration. The repository contains inference code and instructions to run the model."
+    },
+    {
+      "title": "Krea2 Raw/Base & Turbo (BF16/FP8/NVFP4/INT8) High Quality Image Gen",
+      "url": "https://www.stablediffusiontutorials.com/2026/06/krea2-base-turbo.html",
+      "snippet": "(b) Krea 2 Turbo - It is an 8-step distilled checkpoint built for fast, high-quality text-to image generation. The model is distilled from a fully post trained Reinforcement Learning (RL) checkpoint, allowing it to produce better-quality images compared to Raw while maintaining much faster generation."
+    }
+  ]
+}

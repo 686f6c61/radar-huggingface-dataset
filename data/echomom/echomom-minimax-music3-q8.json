@@ -5,7 +5,7 @@
   "author": "echomom",
   "url": "https://huggingface.co/echomom/echomom-minimax-music3-q8",
   "created_at": "2026-08-17T20:10:43.000Z",
-  "updated_at": "2026-08-17T20:16:13.000Z",
+  "updated_at": "2026-08-21T15:06:42.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-to-audio",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 204,
+  "downloads_30d": 306,
   "trending_score": 0,
   "parameters": 25167881,
   "parameters_human": "25.2M",
-  "storage_bytes": 12822947200,
-  "storage_human": "12.8 GB",
+  "storage_bytes": 14115001088,
+  "storage_human": "14.1 GB",
   "base_model": "MiniMaxAI/MiniMax-Music3",
   "formats": [
     "gguf"

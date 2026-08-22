@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/fetch-huggingface-github-3615-codebert-e",
+  "slug": "roy229-fetch-huggingface-github-3615-codebert-e",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/fetch-huggingface-github-3615-codebert-e",
+  "created_at": "2026-08-21T15:00:10.000Z",
+  "updated_at": "2026-08-22T12:18:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chinese AI Halts Rogue OpenAI Models in 2026 Cyber Attack",
+      "url": "https://www.thetechedvocate.org/unbelievable-chinese-ai-saved-hugging-face-from-openais-rogue-models-how-it-happened/",
+      "snippet": "A Chinese AI model was deployed by Hugging Face to counter the rogue attack from OpenAI&#x27;s models. Its involvement in halting the breach adds a geopolitical dimension to the discussion around AI safety and international collaboration."
+    },
+    {
+      "title": "Hugging Face · GitHub",
+      "url": "https://github.com/huggingface",
+      "snippet": "The AI community building the future. Hugging Face has 467 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Roy229/filesystem_fetch_huggingface_3144-model-3f8k2-bert · Hugging Face",
+      "url": "https://huggingface.co/Roy229/filesystem_fetch_huggingface_3144-model-3f8k2-bert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - TPOxoxw/github_fetch_huggingface_terminal_excel_memory_2899 ...",
+      "url": "https://github.com/TPOxoxw/github_fetch_huggingface_terminal_excel_memory_2899-dataset-registry-hfr0ae",
+      "snippet": "This repository is the authoritative registry of datasets published by the Meridian Data Platform team. Each entry lists the registered dataset, its published dataset identifier on the Hugging Face Hub, a short description, and the owning team. REG-001 Customer Complaints Intelligence Roy229/github ..."
+    }
+  ]
+}

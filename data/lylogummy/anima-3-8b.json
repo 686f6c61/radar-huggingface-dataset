@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "lylogummy/Anima-3.8B",
+  "slug": "lylogummy-anima-3-8b",
+  "author": "lylogummy",
+  "url": "https://huggingface.co/lylogummy/Anima-3.8B",
+  "created_at": "2026-08-22T13:28:05.000Z",
+  "updated_at": "2026-08-22T15:09:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12497099597,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - GumGum10/comfyui-anima-3-8B",
+      "url": "https://github.com/GumGum10/comfyui-anima-3-8B",
+      "snippet": "Minimal ComfyUI nodes for the lylogummy/Anima-3.8B model, its Qwen3.5 4B text encoder, and progressive-cross adapter. Use a current ComfyUI build with native Anima support (comfy.ldm.anima). Update ComfyUI first if that module is missing. The 3.8B release repository contains the DiT, adapter, and ..."
+    },
+    {
+      "title": "text_encoders/Anima-3.8B-expanded_adapter.safetensors · lylogummy/Anima ...",
+      "url": "https://huggingface.co/lylogummy/Anima-3.8B/blob/main/text_encoders/Anima-3.8B-expanded_adapter.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lylogummy (lylogummy) - Hugging Face",
+      "url": "https://huggingface.co/lylogummy/models",
+      "snippet": "Sort: Recently updated. lylogummy/anima2b-qwen-3.5-4b. Updated 10 days ago • 10. lylogummy/qwen3_5_anima. Updated 12 days ago • 1"
+    },
+    {
+      "title": "lylogummy (lylogummy) - Hugging Face",
+      "url": "https://huggingface.co/lylogummy",
+      "snippet": "Sort: Recently updated. lylogummy/anima2b-qwen-3.5-4b. Updated Mar 11 • 27. lylogummy/qwen3_5_anima. Updated Mar 9 • 1"
+    },
+    {
+      "title": "lylogummy/anima2b-qwen-3.5-4b · Hugging Face",
+      "url": "https://huggingface.co/lylogummy/anima2b-qwen-3.5-4b",
+      "snippet": "The Problem Anima 2B ships with a Qwen 3 0.6B text encoder — a small, standard transformer. The model works fine, but 0.6B parameters is a significant bottleneck for understanding complex prompts. nightknocker released a Qwen 3.5 4B hybrid encoder trained for the same ecosystem, promising better text comprehension. The catch: you can&#x27;t just swap one text encoder for another. The Anima ..."
+    }
+  ]
+}

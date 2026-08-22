@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Alluringcfdbgfhgdnufvhg/Qwen3.5-2B-JP",
+  "slug": "alluringcfdbgfhgdnufvhg-qwen3-5-2b-jp",
+  "author": "Alluringcfdbgfhgdnufvhg",
+  "url": "https://huggingface.co/Alluringcfdbgfhgdnufvhg/Qwen3.5-2B-JP",
+  "created_at": "2026-07-28T08:12:25.000Z",
+  "updated_at": "2026-08-22T12:36:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "Qwen",
+    "Qwen3.5",
+    "LLM",
+    "JP",
+    "2B",
+    "Qwen3.5-2B",
+    "Qwen3.5-2B-jp",
+    "Qwen3.5 2B",
+    "Alibaba_Qwen",
+    "日本語特化",
+    "通義千問",
+    "Q4_K_M",
+    "q4",
+    "4bit",
+    "Qwen3.5 4bit",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 1980391520,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alluringcfdbgfhgdnufvhg/Qwen3.5-2B-JP · Hugging Face",
+      "url": "https://huggingface.co/Alluringcfdbgfhgdnufvhg/Qwen3.5-2B-JP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Alluringcfdbgfhgdnufvhg/Qwen3.5-0.8B-JP · Hugging Face",
+      "url": "https://huggingface.co/Alluringcfdbgfhgdnufvhg/Qwen3.5-0.8B-JP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "QWEN CHAT GitHub Hugging Face ModelScope DISCORD We are delighted to announce the official release of Qwen3.5, introducing the open-weight of the first model in the Qwen3.5 series, namely Qwen3.5-397B-A17B. As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and ..."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio",
+      "url": "http://modelstudio.alibabacloud.com/",
+      "snippet": "Try the newest Qwen3.8-Max-Preview, HappyHorse1.1, Deepseek V4 and GLM-5.2 models with the latest AI Token Plan."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/NovaLogic-TestRepo-r09",
+  "slug": "sotaagi2030-novalogic-testrepo-r09",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/NovaLogic-TestRepo-r09",
+  "created_at": "2026-08-22T14:06:02.000Z",
+  "updated_at": "2026-08-22T14:06:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030/NovaLogic-TestRepo-r09 · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/NovaLogic-TestRepo-r09",
+      "snippet": "1. Introduction The NovaLogic has undergone a significant version upgrade. In the latest update, NovaLogic has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark evaluations ..."
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago ... new activity about 5 hours ago"
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "Sort: Recently updated . SOTAagi2030/MyAwesomeModel-TestRepo. Feature Extraction • Updated about 1 hour ago. SOTAagi2030/EarlyCheckpoint-v1. Feature Extraction ..."
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/datasets",
+      "snippet": "User profile of sota on Hugging Face"
+    }
+  ]
+}

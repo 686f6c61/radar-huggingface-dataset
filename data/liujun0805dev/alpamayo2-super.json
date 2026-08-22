@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "liujun0805dev/Alpamayo2-Super",
+  "slug": "liujun0805dev-alpamayo2-super",
+  "author": "liujun0805dev",
+  "url": "https://huggingface.co/liujun0805dev/Alpamayo2-Super",
+  "created_at": "2026-08-22T12:26:46.000Z",
+  "updated_at": "2026-08-22T12:26:47.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "alpamayo2_super",
+    "alpamayo",
+    "robotics",
+    "en",
+    "dataset:nvidia/PhysicalAI-Autonomous-Vehicles",
+    "dataset:nvidia/PhysicalAI-Autonomous-Vehicles-NuRec",
+    "base_model:nvidia/Cosmos3-Super",
+    "base_model:finetune:nvidia/Cosmos3-Super",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35813934322,
+  "parameters_human": "35.81B",
+  "storage_bytes": 71641163918,
+  "storage_human": "71.6 GB",
+  "base_model": "nvidia/Cosmos3-Super",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NVlabs/alpamayo2: NVIDIA Alpamayo 2 Super is an open 34B multi ...",
+      "url": "https://github.com/NVlabs/alpamayo2",
+      "snippet": "NVIDIA Alpamayo 2 Super is an open 34B multi-task foundation model designed to supercharge autonomous vehicle development. - NVlabs/alpamayo2"
+    },
+    {
+      "title": "nvidia/Alpamayo2-Super · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Alpamayo2-Super",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and ...",
+      "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/",
+      "snippet": "Alpamayo 2 Super is available on Hugging Face under OpenMDW‑1.1, the Linux Foundation&#x27;s permissive license for open AI model distributions. The license covers fine‑tuning, derivative models and commercial redistribution, allowing AV developers, automakers, truckmakers and suppliers to adapt Alpamayo to their own data, driving policies and ..."
+    },
+    {
+      "title": "NVIDIA Launches Alpamayo 2 Super Open Reasoning Model for Robotaxis",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-alpamayo-2-super-robotaxis",
+      "snippet": "NVIDIA today introduced NVIDIA Alpamayo 2 Super, a 34-billion-parameter reasoning‑based vision language action (VLA) model that extends the NVIDIA Alpamayo family of open AI models, simulation frameworks and physical AI datasets for safe, level 4 robotaxi development."
+    },
+    {
+      "title": "SAIFIINDUSTRIES/Alpamayo2-Super · Hugging Face",
+      "url": "https://huggingface.co/SAIFIINDUSTRIES/Alpamayo2-Super",
+      "snippet": "Duplicated from nvidia/Alpamayo2-Super SAIFIINDUSTRIES / Alpamayo2-Super like 0 Robotics Safetensors nvidia/PhysicalAI-Autonomous-Vehicles nvidia/PhysicalAI-Autonomous-Vehicles-NuRec English alpamayo2_super alpamayo License:openmdw-1.1 Model card FilesFiles and versions xet Community Copy to bucket new Alpamayo 2 Super Model Overview ..."
+    }
+  ]
+}

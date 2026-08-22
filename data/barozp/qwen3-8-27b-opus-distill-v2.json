@@ -5,7 +5,7 @@
   "author": "barozp",
   "url": "https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2",
   "created_at": "2026-08-17T11:20:07.000Z",
-  "updated_at": "2026-08-17T21:16:31.000Z",
+  "updated_at": "2026-08-22T14:01:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 344,
+  "downloads_30d": 353,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",

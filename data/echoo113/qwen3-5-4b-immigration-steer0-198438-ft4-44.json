@@ -5,7 +5,7 @@
   "author": "Echoo113",
   "url": "https://huggingface.co/Echoo113/Qwen3.5-4B-immigration-STEER0.198438-ft4.44",
   "created_at": "2026-08-21T21:32:34.000Z",
-  "updated_at": "2026-08-21T21:38:33.000Z",
+  "updated_at": "2026-08-21T21:44:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 105004558,
-  "storage_human": "105 MB",
+  "storage_bytes": 190013758,
+  "storage_human": "190 MB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"

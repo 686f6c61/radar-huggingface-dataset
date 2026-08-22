@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "burrowdweller/mini-chessformer-v1",
+  "slug": "burrowdweller-mini-chessformer-v1",
+  "author": "burrowdweller",
+  "url": "https://huggingface.co/burrowdweller/mini-chessformer-v1",
+  "created_at": "2026-08-03T23:52:21.000Z",
+  "updated_at": "2026-08-22T12:37:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "chess",
+    "chess-engine",
+    "transformer",
+    "contempt-conditioning",
+    "mcts",
+    "feature-extraction",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 182250835,
+  "storage_human": "182 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "burrowdweller/mini-chessformer-v1 · Hugging Face",
+      "url": "https://huggingface.co/burrowdweller/mini-chessformer-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "burrowdweller/minichess-gpt-v1-final · Hugging Face",
+      "url": "https://huggingface.co/burrowdweller/minichess-gpt-v1-final",
+      "snippet": "burrowdweller / minichess-gpt-v1-final like 1 ONNX Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=contempt-conditioning",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: contempt-conditioning Clear all"
+    },
+    {
+      "title": "burrowdweller (Jun Ling) - Hugging Face",
+      "url": "https://huggingface.co/burrowdweller",
+      "snippet": "User profile of Jun Ling on Hugging Face"
+    },
+    {
+      "title": "burrowdweller/mini-chessformer-v1 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/burrowdweller/mini-chessformer-v1/discussions",
+      "snippet": "burrowdweller / mini-chessformer-v1 like 0 Feature Extraction ONNX English chess chess-engine transformer contempt-conditioning mcts Model card FilesFiles and versions xet Community Copy to bucket new New discussion New pull request All Discussions Pull requests View closed (0) Sort: Recently created"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muskaanmahes/diabetes-readmission-finetuned-classifier",
+  "slug": "muskaanmahes-diabetes-readmission-finetuned-classifier",
+  "author": "muskaanmahes",
+  "url": "https://huggingface.co/muskaanmahes/diabetes-readmission-finetuned-classifier",
+  "created_at": "2026-08-22T18:17:00.000Z",
+  "updated_at": "2026-08-22T18:21:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aai540-group3/diabetes-readmission · Hugging Face",
+      "url": "https://huggingface.co/aai540-group3/diabetes-readmission",
+      "snippet": "This model predicts 30-day hospital readmissions for diabetic patients using historical patient data and machine learning techniques. The model aims to identify high-risk individuals enabling targeted interventions and improved healthcare resource allocation."
+    },
+    {
+      "title": "solvin-it/diabetic-readmission-prediction - GitHub",
+      "url": "https://github.com/solvin-it/diabetic-readmission-prediction",
+      "snippet": "Hospital readmissions are costly for healthcare providers and may indicate gaps in post-discharge care. For diabetic patients, 30-day readmission is an especially important outcome because it affects both patient well-being and hospital performance metrics. This project uses supervised machine learning to estimate readmission risk from demographic, diagnostic, admission, utilization, and ..."
+    },
+    {
+      "title": "LabibHasan01/Diabetes-Readmission-Prediction - GitHub",
+      "url": "https://github.com/LabibHasan01/Diabetes-Readmission-Prediction",
+      "snippet": "A machine learning framework for predicting diabetic patient hospital readmission across three outcome classes. Covers 12 models from Logistic Regression to Stacking Classifiers, with SMOTE balanci..."
+    },
+    {
+      "title": "Advances in artificial intelligence for diabetes prediction: insights ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0933365725000673",
+      "snippet": "Objective 4: To identify the limitations of current research in diabetes prediction. This study considers the type of data used in AI-based diabetes prediction by analyzing the datasets highlighted in the reviewed studies. This adds comprehensiveness to the evaluation of AI models by considering the nature, quality, and representativeness of data."
+    },
+    {
+      "title": "Comparative Analysis of LSTM Neural Networks and Traditional Machine ...",
+      "url": "https://arxiv.org/pdf/2406.19980",
+      "snippet": "3.5. Explainable AI (XAI) and Feature Importance Understanding the decision-making process of machine learning models is vital in healthcare. Explainable AI methods, like SHAP values, provide model interpretability and transparency. SHAP values quantify the impact of each feature on the prediction, offering a unified measure of feature ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "reyansh38771/sn97____monate615____uid157____hk5CvaP",
+  "slug": "reyansh38771-sn97____monate615____uid157____hk5cvap",
+  "author": "reyansh38771",
+  "url": "https://huggingface.co/reyansh38771/sn97____monate615____uid157____hk5CvaP",
+  "created_at": "2026-08-21T23:58:54.000Z",
+  "updated_at": "2026-08-22T13:55:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reyansh38771/sn97____monate615____uid157____hk5CvaP · Hugging Face",
+      "url": "https://huggingface.co/reyansh38771/sn97____monate615____uid157____hk5CvaP",
+      "snippet": "You need to agree to share your contact information to access this model This repository is publicly accessible, but you have to accept the conditions to access its files and content."
+    },
+    {
+      "title": "reyansh38771 (Dallien Reayn) - Hugging Face",
+      "url": "https://huggingface.co/reyansh38771",
+      "snippet": "User profile of Dallien Reayn on Hugging Face"
+    },
+    {
+      "title": "Find Any Snapchat User by Username — Free 2026 | FootprintIQ",
+      "url": "https://footprintiq.app/platforms/snapchat/username-search",
+      "snippet": "Free Snapchat user search. Paste a Snapchat handle and instantly find where the same username appears on Instagram, TikTok, dating apps and 500+ other platforms. No Snapchat login required, AI confidence scored."
+    },
+    {
+      "title": "Username Search - Social Media Profile Lookup - IDCrawl",
+      "url": "https://www.idcrawl.com/username-search",
+      "snippet": "Username search by IDCrawl. Run a reverse username lookup to uncover social media profiles, hidden profiles and real people behind a username."
+    },
+    {
+      "title": "Vehicle Specs by VIN — Decode Engine, Trim & Drivetrain (Free)",
+      "url": "https://www.carcheckervin.com/vehicle-specs-by-vin",
+      "snippet": "Look up vehicle specs by VIN free. Decode year, make, model, trim, engine, transmission, drivetrain, body style, and assembly plant from any 17-character VIN — straight from NHTSA&#x27;s vPIC database. No plate or account needed."
+    }
+  ]
+}

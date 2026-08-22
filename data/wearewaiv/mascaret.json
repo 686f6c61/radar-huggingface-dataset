@@ -5,7 +5,7 @@
   "author": "wearewaiv",
   "url": "https://huggingface.co/wearewaiv/mascaret",
   "created_at": "2026-06-11T15:13:25.000Z",
-  "updated_at": "2026-08-21T00:09:19.000Z",
+  "updated_at": "2026-08-22T00:09:00.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "image-feature-extraction",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 2413,
+  "downloads_30d": 5089,
   "trending_score": 0,
   "parameters": 1136480768,
   "parameters_human": "1.14B",

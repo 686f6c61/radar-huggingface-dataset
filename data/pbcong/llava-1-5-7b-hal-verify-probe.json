@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pbcong/llava-1.5-7b-hal-verify-probe",
+  "slug": "pbcong-llava-1-5-7b-hal-verify-probe",
+  "author": "pbcong",
+  "url": "https://huggingface.co/pbcong/llava-1.5-7b-hal-verify-probe",
+  "created_at": "2026-08-22T17:33:31.000Z",
+  "updated_at": "2026-08-22T17:33:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "hallucination-detection",
+    "probing",
+    "interpretability",
+    "llava",
+    "vision-language",
+    "base_model:llava-hf/llava-1.5-7b-hf",
+    "base_model:finetune:llava-hf/llava-1.5-7b-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67009047,
+  "storage_human": "67 MB",
+  "base_model": "llava-hf/llava-1.5-7b-hf",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aplux/Llava-1.5-7B · Hugging Face",
+      "url": "https://huggingface.co/aplux/Llava-1.5-7B",
+      "snippet": "Llava-1.5-7B LLaVA-1.5-7B is a multimodal large language model that integrates visual understanding and natural language generation. Built upon the Vicuna-7B language model and the CLIP visual encoder, it can process both image and text inputs to support tasks such as visual question answering, image captioning, and multimodal reasoning. It is widely used in applications like intelligent ..."
+    },
+    {
+      "title": "liuhaotian/llava-v1.5-7b · Hugging Face",
+      "url": "https://huggingface.co/liuhaotian/llava-v1.5-7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub Pages - LLaVA",
+      "url": "https://llava-vl.github.io/",
+      "snippet": "🔥 [NEW!] LLaVA-1.5 achieves SoTA on 11 benchmarks, with just simple modifications to the original LLaVA, utilizes all public data, completes training in ~1 day on a single 8-A100 node, and surpasses methods that use billion-scale data. LLaVA represents a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language ..."
+    },
+    {
+      "title": "llava-1.5-7b-hf · Models",
+      "url": "https://www.modelscope.cn/models/swift/llava-1.5-7b-hf/summary",
+      "snippet": "LLaVA Model Card Below is the model card of Llava model 7b, which is copied from the original Llava model card that you can find here. Check out also the Google Colab demo to run Llava on a free-tier Google Colab instance: Or check out our Spaces demo! Model details Model type: LLaVA is an open-source chatbot trained by fine-tuning LLaMA/Vicuna on GPT-generated multimodal instruction-following ..."
+    },
+    {
+      "title": "executorch/examples/models/llava at main · pytorch/executorch",
+      "url": "https://github.com/pytorch/executorch/tree/main/examples/models/llava",
+      "snippet": "LLaVA is a novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna (a LLama2 based text model) for general-purpose visual and language understanding, achieving impressive chat capabilities mimicking spirits of the cutting edge multimodal models and setting a high bar for accuracy on Science QA."
+    }
+  ]
+}

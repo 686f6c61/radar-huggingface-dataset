@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nuofang/Qwen3.8-9B-heretic-uncensored-GGUF-GGUF",
+  "slug": "nuofang-qwen3-8-9b-heretic-uncensored-gguf-gguf",
+  "author": "nuofang",
+  "url": "https://huggingface.co/nuofang/Qwen3.8-9B-heretic-uncensored-GGUF-GGUF",
+  "created_at": "2026-08-22T13:40:23.000Z",
+  "updated_at": "2026-08-22T14:21:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "imatrix",
+    "base_model:mradermacher/Qwen3.8-9B-heretic-uncensored-GGUF",
+    "base_model:quantized:mradermacher/Qwen3.8-9B-heretic-uncensored-GGUF",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1278200,
+  "parameters_human": "1.3M",
+  "storage_bytes": 5201591456,
+  "storage_human": "5.2 GB",
+  "base_model": "mradermacher/Qwen3.8-9B-heretic-uncensored-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nuofang/Qwen3.8-9B-heretic-uncensored-GGUF-GGUF · Hugging Face",
+      "url": "https://huggingface.co/nuofang/Qwen3.8-9B-heretic-uncensored-GGUF-GGUF",
+      "snippet": "Auto-Quantized GGUF Model This repository contains automated GGUF quantization files for mradermacher/Qwen3.8-9B-heretic-uncensored-GGUF. The calibration data for the imatrix is targeted at Chinese novels and role-playing (RP), while preserving logic and common sense."
+    },
+    {
+      "title": "Qwen3.8-9B-heretic-uncensored_nvfp4_q8.gguf - Hugging Face",
+      "url": "https://huggingface.co/Noobito45/Qwen3.8-9B-heretic-uncensored-NVFP4-GGUF/blob/main/Qwen3.8-9B-heretic-uncensored_nvfp4_q8.gguf",
+      "snippet": "Instructions to use Noobito45/Qwen3.8-9B-heretic-uncensored-NVFP4-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen 3 VL node for ComfyUI + Qwen 3 VL (Heretic, uncensored) model",
+      "url": "https://civitai.com/models/2200639/qwen-3-vl-node-for-comfyui-qwen-3-vl-heretic-uncensored-model",
+      "snippet": "As for \"heretic support\" it is easy to add heretic model into the available QWEN 3.5 VL node from registry. It is needed to edit the file with the list of models by adding the \" someuser/model-name \" element into the array of model name in one or two .py files and add a SYSTEM_PROMPT options."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Qwen 3.6 abliterated, Gemma 4 Heretic, Dolphin 3.0 — the current uncensored picks by VRAM tier. The Llama 3.1 / Qwen 2.5 era is mostly superseded. HuggingFace repos for every pick."
+    }
+  ]
+}

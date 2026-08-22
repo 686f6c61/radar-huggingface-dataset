@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "888rok/Qwen3.5-35B-A3B-UD-Q3_K_XL-wllama-split",
+  "slug": "888rok-qwen3-5-35b-a3b-ud-q3_k_xl-wllama-split",
+  "author": "888rok",
+  "url": "https://huggingface.co/888rok/Qwen3.5-35B-A3B-UD-Q3_K_XL-wllama-split",
+  "created_at": "2026-08-22T10:52:14.000Z",
+  "updated_at": "2026-08-22T11:32:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "wllama",
+    "base_model:unsloth/Qwen3.5-35B-A3B-GGUF",
+    "base_model:quantized:unsloth/Qwen3.5-35B-A3B-GGUF",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 16601177888,
+  "storage_human": "16.6 GB",
+  "base_model": "unsloth/Qwen3.5-35B-A3B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen/qwen3.5-35b-a3b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-35b-a3b",
+      "snippet": "Qwen3.5 is a reasoning vision-language model that supports tool use. With 35B total parameters and 3B activated, it outperforms previous generation models more than 6x its size."
+    },
+    {
+      "title": "Qwen3.5 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5/fine-tune",
+      "snippet": "Unsloth supports vision fine-tuning for the multimodal Qwen3.5 models. Use the below Qwen3.5 notebooks and change the respective model names to your desired Qwen3.5 model."
+    },
+    {
+      "title": "Qwen3.5-35B Uncensored: Hardware Requirements and Local Deployment ...",
+      "url": "https://localairig.com/models/qwen3-5-35b-uncensored-setup-guide/",
+      "snippet": "The uncensored Qwen3.5-35B just hit #1 on open-source model charts. Here&#x27;s exactly what hardware you need to run it locally — and two ways to get it up and running."
+    },
+    {
+      "title": "Qwen3.5 35B A3B (Q8_K_XL) on CPU Only | Prositronic",
+      "url": "https://www.prositronic.eu/en/deploy/qwen3-5-35b-a3b/q8_k_xl/cpu/",
+      "snippet": "Qwen3.5 35B A3B is a Mixture-of-Experts model from Alibaba&#x27;s Qwen team with 35 billion total parameters but only 3 billion active per token, routed across 256 experts for extreme efficiency. It is natively multimodal, processing text, images, and video, with built-in thinking capabilities for chain-of-thought reasoning."
+    }
+  ]
+}

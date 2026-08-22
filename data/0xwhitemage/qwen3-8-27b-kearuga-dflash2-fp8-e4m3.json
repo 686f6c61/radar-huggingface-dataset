@@ -5,7 +5,7 @@
   "author": "0xWhiteMage",
   "url": "https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2-FP8-E4M3",
   "created_at": "2026-08-21T17:55:20.000Z",
-  "updated_at": "2026-08-21T18:14:08.000Z",
+  "updated_at": "2026-08-22T07:42:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 106,
   "trending_score": 0,
   "parameters": 1924404480,
   "parameters_human": "1.92B",
-  "storage_bytes": 2051825460,
-  "storage_human": "2.1 GB",
+  "storage_bytes": 10465461072,
+  "storage_human": "10.5 GB",
   "base_model": "z-lab/Qwen3.8-27B-DFlash2",
   "formats": [
     "safetensors"

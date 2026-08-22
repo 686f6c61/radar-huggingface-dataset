@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "simoncloudbit/CloudBitModel",
+  "slug": "simoncloudbit-cloudbitmodel",
+  "author": "simoncloudbit",
+  "url": "https://huggingface.co/simoncloudbit/CloudBitModel",
+  "created_at": "2026-08-22T11:31:16.000Z",
+  "updated_at": "2026-08-22T11:31:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Microsoft Unveils Hyper-Efficient BitNet AI Model That Runs ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/microsoft-unveils-hyper-efficient-bitnet-ai-model-runs-arjun-jaggi-khbcc",
+      "snippet": "Microsoft researchers have introduced a groundbreaking AI model called BitNet b1.58 2B4T, which stands out as the largest 1-bit AI model ever developed and is engineered to run efficiently on ..."
+    },
+    {
+      "title": "Microsoft&#x27;s 1‑bit AI Model: High Efficiency on CPU-First Architectures",
+      "url": "https://webcraftingcode.com/news/microsoft-s-1-bit-ai-model-high-efficiency-on-cpu-first-architectures/",
+      "snippet": "In a groundbreaking shift for deep learning, Microsoft&#x27;s latest 1‑bit AI system—the BitNet b1.58 2B4T model—demonstrates that high-performing neural networks can be executed on standard desktop CPUs while still matching many capabilities of larger full-precision models. This innovation challenges the longstanding reliance on 16- and 32-bit floating point computations, which typically ..."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI Model Wiki — Your Complete Guide to AI Models",
+      "url": "https://aimodelwiki.com/",
+      "snippet": "Your Ultimate Guide to 210+ AI Models Explore LLMs, image generators, audio & video tools, and multimodal AI — for beginners, students, and businesses."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AbstractPhil/clip-vitb-mini-distilled",
+  "slug": "abstractphil-clip-vitb-mini-distilled",
+  "author": "AbstractPhil",
+  "url": "https://huggingface.co/AbstractPhil/clip-vitb-mini-distilled",
+  "created_at": "2026-07-27T04:34:42.000Z",
+  "updated_at": "2026-08-22T18:57:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "clip_vitb_mini",
+    "feature-extraction",
+    "clip",
+    "knowledge-distillation",
+    "consensus-distillation",
+    "vit",
+    "custom_code",
+    "image-feature-extraction",
+    "arxiv:2103.00020",
+    "arxiv:1807.03748",
+    "arxiv:2307.12732",
+    "arxiv:2309.12314",
+    "arxiv:2303.15343",
+    "arxiv:2102.08981",
+    "arxiv:2212.07143",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 410,
+  "trending_score": 0,
+  "parameters": 8926896,
+  "parameters_human": "8.9M",
+  "storage_bytes": 2121964139,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbstractPhil/clip-vitb-mini-distilled · Hugging Face",
+      "url": "https://huggingface.co/AbstractPhil/clip-vitb-mini-distilled",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "GitHub - cardinalblue/clip-models-for-distillation",
+      "url": "https://github.com/cardinalblue/clip-models-for-distillation",
+      "snippet": "This repo contains the source code for original and distilled models for CLIP. It also contains a simple API to use the original CLIP model. Most of the code is taken from the original implementation by OpenAI. It is just organized in a different manner to make it easy to understand."
+    },
+    {
+      "title": "CLIP: Connecting text and images - OpenAI",
+      "url": "https://openai.com/index/clip/",
+      "snippet": "We&#x27;re introducing a neural network called CLIP which efficiently learns visual concepts from natural language supervision. CLIP can be applied to any visual classification benchmark by simply providing the names of the visual categories to be recognized, similar to the \"zero-shot\" capabilities of GPT-2 and GPT-3."
+    },
+    {
+      "title": "AbstractPhil (AbstractPhila) - Hugging Face",
+      "url": "https://huggingface.co/AbstractPhil/models",
+      "snippet": "AI & ML interests datasets, research papers, experimentation, vision, classification, text encoders, tokenization, llms, diffusion, distillation, and more. RIP BeatriXL V3 - REAL. May your flight be through the heavens dear Beatrix. We&#x27;ll try again soon."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "roadofriot/MindSparQ-Coder-1.5B",
+  "slug": "roadofriot-mindsparq-coder-1-5b",
+  "author": "roadofriot",
+  "url": "https://huggingface.co/roadofriot/MindSparQ-Coder-1.5B",
+  "created_at": "2026-08-22T13:27:25.000Z",
+  "updated_at": "2026-08-22T14:03:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ne"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "code",
+    "vibe-coding",
+    "agentic-ai",
+    "mindsparq",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "ne",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 7178605308,
+  "storage_human": "7.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek Coder:",
+      "url": "https://deepseekcoder.github.io/",
+      "snippet": "DeepSeek Coder comprises a series of code language models trained from scratch on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens."
+    },
+    {
+      "title": "GitHub - naikyogesh4321-coder/AI-Quiz-Generator: MindSpark AI is a ...",
+      "url": "https://github.com/naikyogesh4321-coder/AI-Quiz-Generator",
+      "snippet": "🚀 MindSpark AI is a modern AI-powered quiz generator built with Streamlit and Google Gemini. Generate high-quality MCQs on any topic, test your knowledge, receive instant scoring, and learn through detailed AI-generated explanations in a beautiful animated interface."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-Coder: DeepSeek Coder: Let the Code Write ...",
+      "url": "https://github.com/deepseek-ai/deepseek-coder",
+      "snippet": "1. Introduction of DeepSeek Coder DeepSeek Coder is composed of a series of code language models, each trained from scratch on 2T tokens, with a composition of 87% code and 13% natural language in both English and Chinese. We provide various sizes of the code model, ranging from 1B to 33B versions."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "agentica-org/DeepCoder-1.5B-Preview · Hugging Face",
+      "url": "https://huggingface.co/agentica-org/DeepCoder-1.5B-Preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "amazon/chronos-2",
+  "slug": "amazon-chronos-2",
+  "author": "amazon",
+  "url": "https://huggingface.co/amazon/chronos-2",
+  "created_at": "2025-10-30T14:54:39.000Z",
+  "updated_at": "2026-06-05T11:55:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "chronos-forecasting",
+  "languages": [],
+  "tags": [
+    "chronos-forecasting",
+    "safetensors",
+    "t5",
+    "time series",
+    "forecasting",
+    "foundation models",
+    "pretrained models",
+    "time-series-forecasting",
+    "dataset:autogluon/chronos_datasets",
+    "dataset:Salesforce/GiftEvalPretrain",
+    "arxiv:2403.07815",
+    "arxiv:2510.15821",
+    "license:apache-2.0",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 406,
+  "downloads_30d": 37007228,
+  "trending_score": 8,
+  "parameters": 119477664,
+  "parameters_human": "119.5M",
+  "storage_bytes": 477930472,
+  "storage_human": "478 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amazon/chronos-2 · Hugging Face",
+      "url": "https://huggingface.co/amazon/chronos-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing Chronos-2: From univariate to universal forecasting",
+      "url": "https://www.amazon.science/blog/introducing-chronos-2-from-univariate-to-universal-forecasting",
+      "snippet": "To address this limitation, we are introducing Chronos-2, a foundation model designed to handle arbitrary forecasting tasks — univariate, multivariate, and covariate informed — in a zero-shot manner. Chronos-2 leverages in-context learning (ICL) to enable these capabilities without additional training."
+    },
+    {
+      "title": "GitHub - amazon-science/chronos-forecasting: Chronos: Pretrained Models ...",
+      "url": "https://github.com/amazon-science/chronos-forecasting",
+      "snippet": "This package provides an interface to the Chronos family of pretrained time series forecasting models. The following model types are supported. Chronos-2: Our latest model with significantly enhanced capabilities. It offers zero-shot support for univariate, multivariate, and covariate-informed forecasting tasks. Chronos-2 delivers state-of-the-art zero-shot performance across multiple ..."
+    },
+    {
+      "title": "Predictive Analytics Acceleration with Amazon Chronos 2",
+      "url": "https://aws.amazon.com/marketplace/pp/prodview-2fijnrnjc74rs",
+      "snippet": "Deploy Amazon Chronos 2, the 120M-parameter time series foundation model, with zero-shot forecasting that eliminates months of model training. Our AWS Premier Tier consulting team delivers end-to-end implementation, from data pipelines and SageMaker/Bedrock deployment to production monitoring, all in days, not months. Chronos 2 outperforms traditional methods like ARIMA and Prophet with 90% ..."
+    },
+    {
+      "title": "Amazon Chronos-2: Zero-Shot Time Series Foundation Model",
+      "url": "https://toolseekai.com/en/models/amazonchronos-2",
+      "snippet": "Chronos-2 is a specialized foundation model designed for time series forecasting, developed by Amazon under the Chronos project. Unlike traditional statistical methods or smaller specialized models, Chronos-2 leverages the power of large-scale pre-training to perform zero-shot forecasting across diverse domains."
+    }
+  ]
+}

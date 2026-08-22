@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "root4k/Qwen3.8-27B-Uncensored-oQ4e-fp16-mtp",
+  "slug": "root4k-qwen3-8-27b-uncensored-oq4e-fp16-mtp",
+  "author": "root4k",
+  "url": "https://huggingface.co/root4k/Qwen3.8-27B-Uncensored-oQ4e-fp16-mtp",
+  "created_at": "2026-08-22T12:43:59.000Z",
+  "updated_at": "2026-08-22T12:45:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4926789872,
+  "parameters_human": "4.93B",
+  "storage_bytes": 17905949462,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "root4k/Qwen3.8-27B-oQ4e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/root4k/Qwen3.8-27B-oQ4e-fp16-mtp",
+      "snippet": "Instructions to use root4k/Qwen3.8-27B-oQ4e-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use root4k/Qwen3.8-27B-oQ4e-fp16-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.8-27B-oQ4e-fp16-mtp root4k/Qwen3.8-27B-oQ4e-fp16-mtp Notebooks ..."
+    },
+    {
+      "title": "Quantized Models for orcarouter/Qwen3.8-27B-Uncensored - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+      "snippet": "Explore machine learning models. pyros-vault/Qwen3.8-27B-Uncensored-oQ4e-fp16-mtp"
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "⚡ qwen38-uncensored - Run a Powerful Uncensored AI Locally",
+      "url": "https://github.com/unburdened-jackinthebox365/qwen38-uncensored",
+      "snippet": "This is your personal gateway to running Qwen 3.8 27B, a massive and highly capable AI language model, entirely on your own computer. No cloud, no subscription, no censorship filters. It&#x27;s the official Qwen 3.8 weights (27 billion parameters) in an optimized format that runs fast on regular hardware ..."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    }
+  ]
+}

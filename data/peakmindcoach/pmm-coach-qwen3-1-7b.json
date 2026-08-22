@@ -5,7 +5,7 @@
   "author": "Peakmindcoach",
   "url": "https://huggingface.co/Peakmindcoach/pmm-coach-qwen3-1.7b",
   "created_at": "2026-08-22T04:56:24.000Z",
-  "updated_at": "2026-08-22T04:56:45.000Z",
+  "updated_at": "2026-08-22T06:03:12.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",
-  "storage_bytes": 1107409216,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 2214818432,
+  "storage_human": "2.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Farseen0/scar-weights",
+  "slug": "farseen0-scar-weights",
+  "author": "Farseen0",
+  "url": "https://huggingface.co/Farseen0/scar-weights",
+  "created_at": "2026-03-06T02:59:06.000Z",
+  "updated_at": "2026-08-22T11:50:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sparse-retrieval",
+    "smart-contracts",
+    "security",
+    "solidity",
+    "sparse-autoencoder",
+    "sae",
+    "lora",
+    "sae-lora",
+    "code-retrieval",
+    "vulnerability-detection",
+    "jumprelu",
+    "ethereum",
+    "feature-extraction",
+    "en",
+    "dataset:Farseen0/scar-pairs",
+    "dataset:Farseen0/scar-eval",
+    "dataset:Farseen0/scar-corpus",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3245886188,
+  "storage_human": "3.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Farseen0/scar-weights · Hugging Face",
+      "url": "https://huggingface.co/Farseen0/scar-weights",
+      "snippet": "Farseen0 / scar-weights like 1 Feature Extraction PEFT Safetensors Farseen0/scar-pairs Farseen0/scar-eval Farseen0/scar-corpus English sparse-retrieval smart-contracts security solidity sparse-autoencoder sae lora sae-lora code-retrieval vulnerability-detection jumprelu ethereum License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - FarseenSh/scar",
+      "url": "https://github.com/FarseenSh/scar",
+      "snippet": "Research preprint forthcoming. Paper targeting EMNLP 2026. Code, model weights, and training data will be released under Apache 2.0 upon publication."
+    },
+    {
+      "title": "www.weights.com",
+      "url": "https://www.weights.com/models",
+      "snippet": "www.weights.com ... /"
+    },
+    {
+      "title": "AIML-TUDA/SCAR · Hugging Face",
+      "url": "https://huggingface.co/AIML-TUDA/SCAR",
+      "snippet": "SCAR Official code and weights for the Paper Scar: Sparse Conditioned Autoencoders for Concept Detection and Steering in LLMs. The code is located in this Repository. This repo contains the code to apply supervised SAEs to LLMs. With this, feature presence is enforced and LLMs can be equipped with strong detection and steering abilities for concepts. In this repo, we showcase SCAR on the ..."
+    },
+    {
+      "title": "www.weights.com",
+      "url": "https://www.weights.com/create",
+      "snippet": "Create voice covers, images, songs, videos, and more with AI for free!"
+    }
+  ]
+}

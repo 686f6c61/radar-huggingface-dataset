@@ -5,7 +5,7 @@
   "author": "Mothersuperior",
   "url": "https://huggingface.co/Mothersuperior/minimax-music3-composer-5.7b-distilled",
   "created_at": "2026-08-21T22:40:10.000Z",
-  "updated_at": "2026-08-21T22:46:10.000Z",
+  "updated_at": "2026-08-21T23:41:03.000Z",
   "license": "minimax-music3-terms",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,12 +20,12 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 22761170832,
+  "storage_bytes": 22803552408,
   "storage_human": "22.8 GB",
   "base_model": null,
   "formats": [

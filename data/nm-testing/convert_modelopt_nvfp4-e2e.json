@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/convert_modelopt_nvfp4-e2e",
   "created_at": "2026-07-25T04:51:36.000Z",
-  "updated_at": "2026-08-19T03:23:38.000Z",
+  "updated_at": "2026-08-22T02:12:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1926,
+  "downloads_30d": 1976,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

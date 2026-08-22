@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dipan004/DGPT",
+  "slug": "dipan004-dgpt",
+  "author": "dipan004",
+  "url": "https://huggingface.co/dipan004/DGPT",
+  "created_at": "2026-08-22T18:23:24.000Z",
+  "updated_at": "2026-08-22T18:23:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dipan004 (Dipan Giri) - Hugging Face",
+      "url": "https://huggingface.co/dipan004",
+      "snippet": "Proofly 💻 dipan004 Dec 31, 2025 No application file Agents BindingNet 🏆 dipan004 Nov 2, 2025"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "DGPT.club Scam: How This Ponzi Scheme Really Works",
+      "url": "https://malwaretips.com/blogs/dgpt-club/",
+      "snippet": "In recent years, a new type of scam has emerged that claims to leverage artificial intelligence (AI) and cloud computing to generate outsized returns for investors. One of the latest iterations of this scam is DGPT.club, which promises lucrative profits to users who invest and recruit others into the scheme."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Joakimpalm-Zen",
   "url": "https://huggingface.co/Joakimpalm-Zen/Qwen3-4B-Runner-ToolUse-Q4_K_M",
   "created_at": "2026-08-22T07:53:17.000Z",
-  "updated_at": "2026-08-22T08:15:44.000Z",
+  "updated_at": "2026-08-22T11:48:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 16515072,
   "parameters_human": "16.5M",
-  "storage_bytes": 264379008,
-  "storage_human": "264 MB",
+  "storage_bytes": 4544784448,
+  "storage_human": "4.5 GB",
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "casperhansen",
   "url": "https://huggingface.co/casperhansen/Qwen3.5-0.8B-MXFP4xMXFP8",
   "created_at": "2026-08-21T17:45:35.000Z",
-  "updated_at": "2026-08-21T17:45:48.000Z",
+  "updated_at": "2026-08-22T11:30:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": 873438784,
   "parameters_human": "873.4M",

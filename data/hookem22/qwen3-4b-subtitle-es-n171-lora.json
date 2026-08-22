@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Hookem22/qwen3-4b-subtitle-es-n171-lora",
+  "slug": "hookem22-qwen3-4b-subtitle-es-n171-lora",
+  "author": "Hookem22",
+  "url": "https://huggingface.co/Hookem22/qwen3-4b-subtitle-es-n171-lora",
+  "created_at": "2026-08-22T17:29:38.000Z",
+  "updated_at": "2026-08-22T17:29:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610812,
+  "storage_human": "144 MB",
+  "base_model": "unsloth/qwen3-4b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hookem22/qwen3-4b-subtitle-es-lora · Hugging Face",
+      "url": "https://huggingface.co/Hookem22/qwen3-4b-subtitle-es-lora",
+      "snippet": "Hookem22 / qwen3-4b-subtitle-es-lora like 0 Text Generation PEFT Safetensors Transformers lora sft trl unsloth conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "qwen3-4b-subtitle-es API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Hookem22/qwen3-4b-subtitle-es",
+      "snippet": "Deploy qwen3-4b-subtitle-es with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    }
+  ]
+}

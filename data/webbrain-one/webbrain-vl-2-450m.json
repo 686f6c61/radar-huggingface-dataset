@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "webbrain-one/webbrain-vl-2-450M",
+  "slug": "webbrain-one-webbrain-vl-2-450m",
+  "author": "webbrain-one",
+  "url": "https://huggingface.co/webbrain-one/webbrain-vl-2-450M",
+  "created_at": "2026-08-21T22:36:29.000Z",
+  "updated_at": "2026-08-22T12:54:14.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_vl",
+    "image-text-to-text",
+    "browser-automation",
+    "gui-understanding",
+    "vision-language-model",
+    "webbrain",
+    "conversational",
+    "dataset:webbrain-one/webbrain-vl-2-450M-dataset",
+    "base_model:LiquidAI/LFM2.5-VL-450M",
+    "base_model:finetune:LiquidAI/LFM2.5-VL-450M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 448718848,
+  "parameters_human": "448.7M",
+  "storage_bytes": 917330334,
+  "storage_human": "917 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-450M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WebBrain 31 brings offline WebGPU vision to text-only models",
+      "url": "https://www.webbrain.one/blog/webbrain-31-offline-webgpu-vision",
+      "snippet": "WebBrain 31.0.0 adds optional offline vision powered by WebGPU. It uses Liquid AI&#x27;s LFM2.5-VL-450M, a 450M-parameter vision-language model whose weights are under one gigabyte. It is small enough to run as a local visual layer in the browser, yet capable enough for the screenshot understanding and visual grounding a browser agent needs."
+    },
+    {
+      "title": "GitHub - webbrain-one/webbrain: Open-source AI browser agent for Chrome ...",
+      "url": "https://github.com/webbrain-one/webbrain",
+      "snippet": "WebBrain is a web browser extension that puts an AI agent in a side panel next to your tabs. Ask it about the page you&#x27;re on, or hand it a task and let it click, type, and navigate its way through. It runs on the model you choose — a local llama.cpp or Ollama server, a frontier cloud API, or the managed default that needs no setup at all."
+    },
+    {
+      "title": "WebBrain — Free Open-Source AI Browser Agent",
+      "url": "https://www.webbrain.one/",
+      "snippet": "WebBrain is a free, open-source alternative to Claude&#x27;s browser plugin. AI browser agent for Chrome, Firefox, and Edge — read pages, extract data, automate tasks."
+    },
+    {
+      "title": "webbrain-one (WebBrain) - Hugging Face",
+      "url": "https://huggingface.co/webbrain-one",
+      "snippet": "webbrain-one (WebBrain) - Hugging Face ... Browser Vision"
+    },
+    {
+      "title": "GitHub - webbrain-one/webbrain: Open-source AI browser agent for Chrome ...",
+      "url": "https://github.com/webbrain-one/webbrain/tree/main",
+      "snippet": "Open-source AI browser agent for Chrome and Firefox. Chat with any web page, automate browser tasks, and run multi-step agent workflows — powered by your choice of LLM."
+    }
+  ]
+}

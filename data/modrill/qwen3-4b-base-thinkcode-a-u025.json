@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "modrill/Qwen3-4B-Base-ThinkCode-A-U025",
+  "slug": "modrill-qwen3-4b-base-thinkcode-a-u025",
+  "author": "modrill",
+  "url": "https://huggingface.co/modrill/Qwen3-4B-Base-ThinkCode-A-U025",
+  "created_at": "2026-08-22T17:57:16.000Z",
+  "updated_at": "2026-08-22T19:00:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "qwen3",
+    "code",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:adapter:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 607652912,
+  "storage_human": "608 MB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code Generation",
+      "dataset": "EvalScope Full1055 corrected (development-only)",
+      "metric": "code_only pass@1 (seed 3407)",
+      "value": 25.21
+    }
+  ],
+  "sources": [
+    {
+      "title": "modrill/qwen3-4b-think-baseline-full-sft · Hugging Face",
+      "url": "https://huggingface.co/modrill/qwen3-4b-think-baseline-full-sft",
+      "snippet": "This repo contains native full fine-tuned weights (single model.safetensors, ~7.5 GB). For LoRA adapters merged into base weights, see modrill/qwen3-4b-think-baseline-lora-sft."
+    },
+    {
+      "title": "modrill/think-baseline-qwen3-4b · Hugging Face",
+      "url": "https://huggingface.co/modrill/think-baseline-qwen3-4b",
+      "snippet": "Instructions to use modrill/think-baseline-qwen3-4b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use modrill/think-baseline-qwen3-4b with Transformers:"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3 4B Base API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-4b-base",
+      "snippet": "Qwen3-4B-Base is a causal language model with 4.0B parameters, trained on a diverse corpus of 36 trillion tokens across 119 languages. It excels in long-context comprehension and reasoning skills, making it suitable for applications requiring advanced language understanding. To run this model you first need to deploy it on a Dedicated Endpoint."
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    }
+  ]
+}

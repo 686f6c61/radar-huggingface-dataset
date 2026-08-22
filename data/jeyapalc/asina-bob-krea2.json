@@ -5,7 +5,7 @@
   "author": "jeyapalc",
   "url": "https://huggingface.co/jeyapalc/asina-bob-krea2",
   "created_at": "2026-08-21T21:38:42.000Z",
-  "updated_at": "2026-08-21T22:17:24.000Z",
+  "updated_at": "2026-08-22T09:01:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1151841218,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 3459260639,
+  "storage_human": "3.5 GB",
   "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
   "formats": [
     "diffusers"

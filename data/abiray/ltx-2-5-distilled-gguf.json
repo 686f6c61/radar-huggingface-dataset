@@ -5,10 +5,10 @@
   "author": "Abiray",
   "url": "https://huggingface.co/Abiray/LTX-2.5-Distilled-GGUF",
   "created_at": "2026-08-12T04:59:29.000Z",
-  "updated_at": "2026-08-12T18:48:11.000Z",
+  "updated_at": "2026-08-22T08:14:31.000Z",
   "license": "ltx-2-community-license-agreement",
   "license_family": "unknown",
-  "pipeline_tag": "image-to-video",
+  "pipeline_tag": "text-to-video",
   "library": null,
   "languages": [
     "en",
@@ -45,8 +45,8 @@
     "license:other",
     "region:us"
   ],
-  "likes": 30,
-  "downloads_30d": 41701,
+  "likes": 31,
+  "downloads_30d": 45715,
   "trending_score": 8,
   "parameters": 21004025600,
   "parameters_human": "21.00B",

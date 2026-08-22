@@ -5,7 +5,7 @@
   "author": "ethicalabs",
   "url": "https://huggingface.co/ethicalabs/Echo-SmolTools-114M-NSFW-CLF",
   "created_at": "2026-05-17T17:28:16.000Z",
-  "updated_at": "2026-08-19T23:59:21.000Z",
+  "updated_at": "2026-08-21T13:44:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -24,7 +24,7 @@
     "not-for-all-audiences"
   ],
   "likes": 0,
-  "downloads_30d": 46,
+  "downloads_30d": 51,
   "trending_score": 0,
   "parameters": 98265090,
   "parameters_human": "98.3M",

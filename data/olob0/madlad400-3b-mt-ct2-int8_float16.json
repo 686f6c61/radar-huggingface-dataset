@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olob0/madlad400-3b-mt-ct2-int8_float16",
+  "slug": "olob0-madlad400-3b-mt-ct2-int8_float16",
+  "author": "olob0",
+  "url": "https://huggingface.co/olob0/madlad400-3b-mt-ct2-int8_float16",
+  "created_at": "2026-08-22T18:44:46.000Z",
+  "updated_at": "2026-08-22T18:49:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "ctranslate2",
+  "languages": [],
+  "tags": [
+    "ctranslate2",
+    "translation",
+    "madlad400",
+    "base_model:google/madlad400-3b-mt",
+    "base_model:finetune:google/madlad400-3b-mt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2970931341,
+  "storage_human": "3.0 GB",
+  "base_model": "google/madlad400-3b-mt",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/madlad400-3b-mt · Hugging Face",
+      "url": "https://huggingface.co/google/madlad400-3b-mt",
+      "snippet": "Model Card for MADLAD-400-3B-MT Table of Contents TL;DR Model Details Usage Uses Bias, Risks, and Limitations Training Details Evaluation Environmental Impact Citation TL;DR MADLAD-400-3B-MT is a multilingual machine translation model based on the T5 architecture that was trained on 1 trillion tokens covering over 450 languages using publicly available data. It is competitive with models that ..."
+    },
+    {
+      "title": "MADLAD-400 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/madlad-400",
+      "snippet": "Overview MADLAD-400 models were released in the paper MADLAD-400: A Multilingual And Document-Level Large Audited Dataset."
+    },
+    {
+      "title": "google-research/madlad_400/README.md at master - GitHub",
+      "url": "https://github.com/google-research/google-research/blob/master/madlad_400/README.md",
+      "snippet": "This repository contains the checkpoints and vocabularies from MADLAD-400: A Multilingual And Document-Level Large Audited Dataset."
+    },
+    {
+      "title": "madlad400 3b mt (3B) — MMLU 45 | Deploy Guide & Hardware Fit | OpenModelMap",
+      "url": "https://openmodelmap.com/model/google/madlad400-3b-mt",
+      "snippet": "madlad400 3b mt by google. Scores: MMLU 45, . 3B open-source AI model. Madlad400, a multilingual machine translation model launched by Google, has 3B parameters and is bas"
+    },
+    {
+      "title": "madlad400-3b-mt: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/madlad400-3b-mt-jbochi",
+      "snippet": "Overview madlad400-3b-mt is a multilingual machine translation model built on the T5 architecture, trained on 1 trillion tokens across 450+ languages using publicly available data. Maintained by jbochi, this 3-billion-parameter, 32-layer encoder-decoder model delivers translation quality competitive with significantly larger models. The model uses a shared SentencePiece tokenizer with 256k ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Krasovskiy/kwcluster-variables-1.5b",
+  "slug": "krasovskiy-kwcluster-variables-1-5b",
+  "author": "Krasovskiy",
+  "url": "https://huggingface.co/Krasovskiy/kwcluster-variables-1.5b",
+  "created_at": "2026-08-22T13:22:09.000Z",
+  "updated_at": "2026-08-22T16:07:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "seo",
+    "keyword-research",
+    "entity-classification",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81346040,
+  "storage_human": "81 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Andrey Krasovskiy - Hugging Face",
+      "url": "https://huggingface.co/Krasovskiy",
+      "snippet": "AI Automation Engineer & Tech Lead"
+    },
+    {
+      "title": "An AI model from Meta also hacked another company during testing - MSN",
+      "url": "https://www.msn.com/en-us/news/us/an-ai-model-from-meta-also-hacked-another-company-during-testing/ar-AA29tWgL",
+      "snippet": "Add Meta to the list of companies with AI agents going rogue. An AI model from the parent company of Facebook and Instagram hacked into another company&#x27;s systems during cybersecurity testing, a ..."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

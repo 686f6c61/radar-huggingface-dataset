@@ -5,7 +5,7 @@
   "author": "zerodigest",
   "url": "https://huggingface.co/zerodigest/Ornith-1.5-35B-Uncensored-YMQ-MTP-GGUF",
   "created_at": "2026-08-21T17:53:15.000Z",
-  "updated_at": "2026-08-21T18:42:34.000Z",
+  "updated_at": "2026-08-21T19:59:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,13 +29,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 2,
+  "downloads_30d": 897,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 49336625936,
-  "storage_human": "49.3 GB",
+  "storage_bytes": 61307860080,
+  "storage_human": "61.3 GB",
   "base_model": "0xKitkat/Ornith-1.5-35B-A3B-Uncensored",
   "formats": [
     "gguf"

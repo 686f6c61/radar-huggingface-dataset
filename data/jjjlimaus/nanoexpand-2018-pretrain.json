@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/nanoexpand-2018-pretrain",
+  "slug": "jjjlimaus-nanoexpand-2018-pretrain",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/nanoexpand-2018-pretrain",
+  "created_at": "2026-08-20T17:24:34.000Z",
+  "updated_at": "2026-08-22T13:43:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanoexpand",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 2095581570,
+  "parameters_human": "2.10B",
+  "storage_bytes": 297574281892,
+  "storage_human": "297.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus/nanoexpand-2018-pretrain · Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/nanoexpand-2018-pretrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=sn38-nanoexpand",
+      "snippet": "jjjlimaus/nanoexpand-2018-pretrain Text Generation • 2B•Updated about 8 hours ago"
+    },
+    {
+      "title": "Find Pre-trained Models | Kaggle",
+      "url": "https://www.kaggle.com/models",
+      "snippet": "Discover and download pre-trained AI models. Use them directly in Kaggle Notebooks or integrate into your own projects."
+    },
+    {
+      "title": "Pre-trained models: Past, present and future - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666651021000231",
+      "snippet": "Abstract Large-scale pre-trained models (PTMs) such as BERT and GPT have recently achieved great success and become a milestone in the field of artificial intelligence (AI). Owing to sophisticated pre-training objectives and huge model parameters, large-scale PTMs can effectively capture knowledge from massive labeled and unlabeled data."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

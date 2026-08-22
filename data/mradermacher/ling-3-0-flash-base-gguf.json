@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Ling-3.0-flash-base-GGUF",
   "created_at": "2026-08-21T13:46:38.000Z",
-  "updated_at": "2026-08-22T04:36:24.000Z",
+  "updated_at": "2026-08-22T05:34:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 140,
   "trending_score": 0,
   "parameters": 127486405600,
   "parameters_human": "127.49B",

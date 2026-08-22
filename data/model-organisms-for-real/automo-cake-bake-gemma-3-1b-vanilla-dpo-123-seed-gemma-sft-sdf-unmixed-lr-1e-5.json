@@ -4,8 +4,8 @@
   "slug": "model-organisms-for-real-automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-sdf-unmixed-lr-1e-5",
   "author": "model-organisms-for-real",
   "url": "https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-sdf-unmixed-lr-1e-5",
-  "created_at": "2026-08-18T14:40:18.000Z",
-  "updated_at": "2026-08-18T14:40:33.000Z",
+  "created_at": "2026-08-21T14:28:46.000Z",
+  "updated_at": "2026-08-21T14:29:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-20T11:03:46.421Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

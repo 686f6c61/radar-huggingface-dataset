@@ -5,7 +5,7 @@
   "author": "Astora1mx",
   "url": "https://huggingface.co/Astora1mx/whisper-small-quran-asr-source",
   "created_at": "2026-08-21T23:02:34.000Z",
-  "updated_at": "2026-08-21T23:03:18.000Z",
+  "updated_at": "2026-08-21T23:21:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

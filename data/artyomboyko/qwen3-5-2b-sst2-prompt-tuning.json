@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "artyomboyko/qwen3.5-2b-sst2-prompt-tuning",
+  "slug": "artyomboyko-qwen3-5-2b-sst2-prompt-tuning",
+  "author": "artyomboyko",
+  "url": "https://huggingface.co/artyomboyko/qwen3.5-2b-sst2-prompt-tuning",
+  "created_at": "2026-08-22T18:18:44.000Z",
+  "updated_at": "2026-08-22T18:18:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "prompt-tuning",
+    "qwen3.5",
+    "sentiment-analysis",
+    "text-classification",
+    "causal-lm",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:stanfordnlp/sst2",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20120782,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification via Text Generation",
+      "dataset": "Stanford SST-2",
+      "metric": "Generation-based Accuracy",
+      "value": 0.943807
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-2B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-2B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Qwen 3.5 2B — CanIRun.ai",
+      "url": "https://www.canirun.ai/model/qwen3.5-2b",
+      "snippet": "Highlights Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "qwen/qwen3.5-2b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-2b",
+      "snippet": "Qwen3.5 2B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 2B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation."
+    },
+    {
+      "title": "qwen3.5:2b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:2b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

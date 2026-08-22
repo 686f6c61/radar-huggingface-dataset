@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "24f2004886/tds-ga8-q10-carbon-audit",
+  "slug": "24f2004886-tds-ga8-q10-carbon-audit",
+  "author": "24f2004886",
+  "url": "https://huggingface.co/24f2004886/tds-ga8-q10-carbon-audit",
+  "created_at": "2026-08-22T11:53:21.000Z",
+  "updated_at": "2026-08-22T12:01:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aiajajaiintelligence/tds-ga8-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/aiajajaiintelligence/tds-ga8-carbon-audit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "harshit4/tds-ga8-green-ai-audit · Hugging Face",
+      "url": "https://huggingface.co/harshit4/tds-ga8-green-ai-audit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "AI screens 100,000+ membrane combinations, predicting carbon capture ...",
+      "url": "https://phys.org/news/2026-08-ai-screens-membrane-combinations-carbon.html",
+      "snippet": "Reducing carbon dioxide emissions from industrial processes and energy production remains one of the major technological challenges in addressing climate change. Membrane-based gas separation ..."
+    }
+  ]
+}

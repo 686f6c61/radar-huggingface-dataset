@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "EYEDOL/health-advisor-1.5b",
+  "slug": "eyedol-health-advisor-1-5b",
+  "author": "EYEDOL",
+  "url": "https://huggingface.co/EYEDOL/health-advisor-1.5b",
+  "created_at": "2026-08-22T11:16:02.000Z",
+  "updated_at": "2026-08-22T11:17:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "offline",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 2111097792,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adtc-health-distilled-qwen2.5-1.5b - FriendliAI",
+      "url": "https://friendli.ai/models/EYEDOL/adtc-health-distilled-qwen2.5-1.5b",
+      "snippet": "Deploy adtc-health-distilled-qwen2.5-1.5b with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - gayatriparmar123h/health-advisor: AI-based Health Advisor Web ...",
+      "url": "https://github.com/gayatriparmar123h/health-advisor",
+      "snippet": "🩺 AI Health Advisor An AI-powered Health Advisor web app that predicts possible diseases based on user-reported symptoms. The system also recommends personalized medicines, precautions, emergency signs, and lifestyle tips. Includes an integrated chatbot symptom checker for an interactive health consultation experience."
+    },
+    {
+      "title": "yasserrmd/MedScholar-1.5B · Hugging Face",
+      "url": "https://huggingface.co/yasserrmd/MedScholar-1.5B",
+      "snippet": "🧠 MedScholar-1.5B MedScholar-1.5B is a compact, instruction-aligned medical question-answering model fine-tuned on 1 million randomly selected examples from the MIRIAD-4.4M dataset. It is based on the Qwen/Qwen2.5-1.5B-Instruct model and designed for efficient, in-context clinical knowledge exploration — not diagnosis."
+    },
+    {
+      "title": "EYEDOL (ADEGOKE ISRAEL) - Hugging Face",
+      "url": "https://huggingface.co/EYEDOL",
+      "snippet": "EYEDOL/falcon-7b-sharded-bf16-finetuned-mental-health-conversational Updated Jun 29 datasets None public yet"
+    },
+    {
+      "title": "GitHub - WonderSTK/Health-Advisor: Health Advisor is an AI-powered ...",
+      "url": "https://github.com/WonderSTK/Health-Advisor",
+      "snippet": "Health Advisor is an AI-powered health management application that provides personalized health insights, tracks symptoms, medications, and appointments, and offers tailored recommendations for a healthier lifestyle."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-MLX-4bit",
+  "slug": "yachen4ever-qwen3-8-4b-distill-heretic-abliterated-mlx-4bit",
+  "author": "yachen4ever",
+  "url": "https://huggingface.co/yachen4ever/Qwen3.8-4B-Distill-Heretic-Abliterated-MLX-4bit",
+  "created_at": "2026-08-22T18:43:20.000Z",
+  "updated_at": "2026-08-22T19:13:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-vlm",
+    "vision",
+    "qwen3.8",
+    "distilled",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:empero-ai/Qwen3.8-4B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-4B-Distill",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 991474176,
+  "parameters_human": "991.5M",
+  "storage_bytes": 3054288675,
+  "storage_human": "3.1 GB",
+  "base_model": "insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated, empero-ai/Qwen3.8-4B-Distill",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "empero-ai/Qwen3.8-4B-Distill · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-4B-Distill",
+      "snippet": "Qwen3.8-4B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-4B architecture. The student was trained on ~45,000 curated teacher traces from our internal Qwen3.8 distillation datasets — dense chain-of-thought spanning mathematics, general reasoning, and instruction following, quality-filtered before training."
+    },
+    {
+      "title": "M2 Ultra 本地大模型一览（2026-08-23 v7） · GitHub",
+      "url": "https://gist.github.com/yachen4ever/8a82f5c76d325c88b37b3599a5581475",
+      "snippet": "上游: insraq/Qwen3.5-4B-EmperoAI-Qwen3.8-Distill-Heretic-Abliterated → empero-ai/Qwen3.8-4B-Distill → Qwen3.5-4B 转换工具: mlx_vlm.convert v0.6.15（保留 297 视觉权重，mlx_lm 会丢弃）"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.8 4B Distilled by Ma7ee7 - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Ma7ee7%2FQwen3.8_4B_Distilled,4EsotsN7hm5yLEe5mVKpBV",
+      "snippet": "Qwen3.8 4B Distilled is an open-source 4b LLM by Ma7ee7. VRAM 8.1GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    }
+  ]
+}

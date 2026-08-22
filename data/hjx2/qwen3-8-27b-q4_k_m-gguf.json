@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Hjx2/Qwen3.8-27B-Q4_K_M-GGUF",
+  "slug": "hjx2-qwen3-8-27b-q4_k_m-gguf",
+  "author": "Hjx2",
+  "url": "https://huggingface.co/Hjx2/Qwen3.8-27B-Q4_K_M-GGUF",
+  "created_at": "2026-08-22T17:50:16.000Z",
+  "updated_at": "2026-08-22T17:51:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16810714432,
+  "storage_human": "16.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-Q4_K_M.gguf · bartowski/Qwen3.8-27B-GGUF at main",
+      "url": "https://huggingface.co/bartowski/Qwen3.8-27B-GGUF/blob/main/Qwen3.8-27B-Q4_K_M.gguf",
+      "snippet": "bartowski / Qwen3.8-27B-GGUF like 16 Image-Text-to-Text GGUF imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8-27B GGUF: Which Quant to Download for Your GPU",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-gguf",
+      "snippet": "Qwen3.8-27B GGUF sizes, verified Aug 15 2026: Q4_K_M 17.1GB for 24GB, IQ4_XS for 16GB, 2-bit for 12GB, plus the KV-cache trick and the template trap."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "Qwen3.8-27B on RTX 4090: 128K-context vision chat via llama.cpp Q4_K_M",
+      "url": "https://smeltcore.com/recipes/qwen3-8-27b-on-rtx-4090-128k-context-vision-chat-via-llama-cpp-q4-k-m/",
+      "snippet": "Run Qwen3.8-27B on an RTX 4090: Q4_K_M GGUF plus vision projector at 128K context, with the KV-cache math and the 4-bit KV trap that guts prefill."
+    }
+  ]
+}

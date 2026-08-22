@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vniroshan/tamil-letter-cnn",
+  "slug": "vniroshan-tamil-letter-cnn",
+  "author": "vniroshan",
+  "url": "https://huggingface.co/vniroshan/tamil-letter-cnn",
+  "created_at": "2026-08-22T17:38:07.000Z",
+  "updated_at": "2026-08-22T18:19:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2231068,
+  "parameters_human": "2.2M",
+  "storage_bytes": 8930726,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Tamil-Handwritten-Character-Recognition-using-CNN/Tamil ... - GitHub",
+      "url": "https://github.com/Jacinth19973/Tamil-Handwritten-Character-Recognition-using-CNN/blob/main/Tamil_Handwritten_Letter_Recognition_model_1761782749664.pdf",
+      "snippet": "Jacinth19973 / Tamil-Handwritten-Character-Recognition-using-CNN Public Notifications You must be signed in to change notification settings Fork 0 Star 0 Code Issues Pull requests Projects Security"
+    },
+    {
+      "title": "GitHub - BharathwajManoharan/Tamil_Handwriting_AI: This repository ...",
+      "url": "https://github.com/BharathwajManoharan/Tamil_Handwriting_AI",
+      "snippet": "Welcome to the Tamil Handwriting Recognition Detection Model repository! This project aims to detect handwritten letters of the Tamil language using deep learning neural networks powered by TensorFlow and AI. The model utilizes the Inception V3 architecture (inception_v3) for accurate and efficient recognition."
+    },
+    {
+      "title": "Handwritten alphabet classification in Tamil language using convolution ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666307424000093",
+      "snippet": "In the articles pertaining to Tamil Language, they either propose one CNN-model that offers only 0.83 accuracy or they take only the subset of Tamil characters which is either vowels or consonants."
+    },
+    {
+      "title": "Tamil Handwritten Character Recogniton Model | Tamil-Handwritten ...",
+      "url": "https://arunprakash-a.github.io/Tamil-Handwritten-Chracter-Recognition-using-CNN/",
+      "snippet": "Tamil Handwritten Character Recogniton Model Tamil Handwritten character recognition using convolutional neural networks. Dataset: IWFHR-10 Samples from the dataset Let&#x27;s see the distribution of training samples to check whether the dataset is balanced or imbalanced."
+    },
+    {
+      "title": "Methodical Tamil Character Recognition Using Fabricated CNN Model",
+      "url": "https://ieeexplore.ieee.org/document/10128316",
+      "snippet": "Methodical Tamil Character Recognition Using Fabricated CNN Model Abstract: Recognizing text is one of the most challenging problems in computer vision. To put it simply, handwritten character recognition is the process of recognising text in photographs, papers, and other media and converting it into a form that a computer can read."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Daemons-Q/qsh-medical-breastmnist-ckks-student",
+  "slug": "daemons-q-qsh-medical-breastmnist-ckks-student",
+  "author": "Daemons-Q",
+  "url": "https://huggingface.co/Daemons-Q/qsh-medical-breastmnist-ckks-student",
+  "created_at": "2026-08-05T03:45:05.000Z",
+  "updated_at": "2026-08-22T12:38:23.000Z",
+  "license": "cc-by-4.0-asserted-by-medmnist",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "quantum-safe",
+    "privacy-preserving",
+    "medical-fl",
+    "onnxruntime-web",
+    "image-classification",
+    "arxiv:2506.15258",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3226,
+  "parameters_human": "3226",
+  "storage_bytes": 163361,
+  "storage_human": "163361 B",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daemons-Q/qsh-medical-breastmnist-ckks-student · Hugging Face",
+      "url": "https://huggingface.co/Daemons-Q/qsh-medical-breastmnist-ckks-student",
+      "snippet": "Daemons-Q / qsh-medical-breastmnist-ckks-student like 0 Image Classification ONNX Safetensors quantum-safe privacy-preserving medical-fl onnxruntime-web License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new FHE-feasible diagnostic CNN Measured performance Published baselines this is measured against Gap to the ..."
+    },
+    {
+      "title": "Daemons-Q/qsh-medical-breastmnist-resnet18 · Hugging Face",
+      "url": "https://huggingface.co/Daemons-Q/qsh-medical-breastmnist-resnet18",
+      "snippet": "ResNet-18 on BreastMNIST ResNet-18 @28px Part of QSMPC-QKD-QHE-AI-Hybrid, a quantum-safe orchestration demo. This is the plaintext model for the medical_fl use case; the encrypted path runs a distilled student, not this model."
+    },
+    {
+      "title": "Qsh Medical Breastmnist Resnet18 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/daemons-q/qsh-medical-breastmnist-resnet18",
+      "snippet": "by Daemons Q daemons-q/qsh-medical-breastmnist-resnet18 Free2AITools Nexus Index 39.0 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity0 R: Recency100 Q: Quality65 Tech Context 0.01BParams 4.096KCtx Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗"
+    },
+    {
+      "title": "GitHub - vexth-git/breast-mnist-classifier",
+      "url": "https://github.com/vexth-git/breast-mnist-classifier",
+      "snippet": "Overview This repository contains a deep learning project focused on the binary classification of breast ultrasound images (benign vs. malignant) using the BreastMNIST dataset. The objective is to improve upon baseline models for medical image analysis using a customized convolutional neural network."
+    },
+    {
+      "title": "GitHub - noorpur/breastmnist-womens-health-ai-imaging",
+      "url": "https://github.com/noorpur/breastmnist-womens-health-ai-imaging/tree/main",
+      "snippet": "AI for Women&#x27;s Health Imaging: Breast Ultrasound Malignancy Classification This repository contains a Colab-first research workflow for evaluating AI models on BreastMNIST, a standardized breast ultrasound imaging benchmark from MedMNIST v2. The project is structured like a reproducible research repo rather than a one-off notebook: configuration, reusable modules, repeated experiments, metrics ..."
+    }
+  ]
+}

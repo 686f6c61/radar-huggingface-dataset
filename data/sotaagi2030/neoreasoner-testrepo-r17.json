@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/NeoReasoner-TestRepo-r17",
+  "slug": "sotaagi2030-neoreasoner-testrepo-r17",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/NeoReasoner-TestRepo-r17",
+  "created_at": "2026-08-22T16:18:23.000Z",
+  "updated_at": "2026-08-22T16:26:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030/NeoReasoner-TestRepo-r17 · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/NeoReasoner-TestRepo-r17",
+      "snippet": "1. Introduction The NeoReasoner has undergone a significant version upgrade. In the latest update, NeoReasoner has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark ..."
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "Sort: Recently updated . SOTAagi2030/MyAwesomeModel-TestRepo. Feature Extraction • Updated about 1 hour ago. SOTAagi2030/EarlyCheckpoint-v1. Feature Extraction ..."
+    },
+    {
+      "title": "Neoreasoner Testrepo R17 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/sotaagi2030/neoreasoner-testrepo-r17",
+      "snippet": "Registry entry for model Neoreasoner Testrepo R17; source metadata pending."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    }
+  ]
+}

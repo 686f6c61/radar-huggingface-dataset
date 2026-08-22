@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "leegoheun/ppo-pusher-v5",
+  "slug": "leegoheun-ppo-pusher-v5",
+  "author": "leegoheun",
+  "url": "https://huggingface.co/leegoheun/ppo-pusher-v5",
+  "created_at": "2026-08-22T12:15:59.000Z",
+  "updated_at": "2026-08-22T12:16:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "gymnasium",
+    "mujoco",
+    "pusher-v5",
+    "robotics",
+    "en",
+    "ko",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 350531,
+  "storage_human": "350531 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "Pusher-v5",
+      "metric": "Mean Evaluation Reward",
+      "value": -39.05
+    }
+  ],
+  "sources": [
+    {
+      "title": "LTU-AI/hdppo-Pusher-v5 · Hugging Face",
+      "url": "https://huggingface.co/LTU-AI/hdppo-Pusher-v5",
+      "snippet": "LTU-AI / hdppo-Pusher-v5 like 0 Follow La Trobe AI Institute 2 Reinforcement Learning hd-ppo Pusher-v5 deep-reinforcement-learning hyperdimensional-computing fractional-power-encoding LTU-AI Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Hybrid-HD-PPO Agent playing Pusher-v5 Pipeline Usage Training ..."
+    },
+    {
+      "title": "leegoheun (leegoheun) - Hugging Face",
+      "url": "https://huggingface.co/leegoheun",
+      "snippet": "AI-assisted music composition, LLMs, AI Content Generation"
+    },
+    {
+      "title": "Pusher - Gymnasium Documentation",
+      "url": "https://gymnasium.farama.org/environments/mujoco/pusher/",
+      "snippet": "\"Pusher\" is a multi-jointed robot arm that is very similar to a human arm. The goal is to move a target cylinder (called object) to a goal position using the robot&#x27;s end effector (called fingertip)."
+    },
+    {
+      "title": "EvoPolicyGym/environments/gymnasium/mujoco/pusher/README.md at main ...",
+      "url": "https://github.com/Linzwcs/EvoPolicyGym/blob/main/environments/gymnasium/mujoco/pusher/README.md",
+      "snippet": "EvoPolicyGym Pusher Benchmark This independently installable distribution adapts Gymnasium Pusher-v5 through EvoPolicyGym&#x27;s public authoring SPI and official packaged MuJoCo model."
+    },
+    {
+      "title": "spinup.algos.pytorch.ppo.ppo — Spinning Up documentation",
+      "url": "https://spinningup.openai.com/en/latest/_modules/spinup/algos/pytorch/ppo/ppo.html",
+      "snippet": "Docs » Module code » spinup.algos.pytorch.ppo.ppo Source code for spinup.algos.pytorch.ppo.ppo"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "jpsequeira",
   "url": "https://huggingface.co/jpsequeira/GLM-5.2-EXL3-TR3-3.40bpw-KVarN-K4V2",
   "created_at": "2026-08-18T10:53:39.000Z",
-  "updated_at": "2026-08-20T18:32:30.000Z",
+  "updated_at": "2026-08-22T00:11:38.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 730,
+  "downloads_30d": 988,
   "trending_score": 0,
   "parameters": 174259213568,
   "parameters_human": "174.26B",

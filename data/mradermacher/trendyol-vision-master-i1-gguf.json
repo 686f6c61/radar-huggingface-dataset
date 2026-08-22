@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Trendyol-Vision-Master-i1-GGUF",
+  "slug": "mradermacher-trendyol-vision-master-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Trendyol-Vision-Master-i1-GGUF",
+  "created_at": "2026-08-22T18:32:33.000Z",
+  "updated_at": "2026-08-22T18:52:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "computer-vision",
+    "multimodal",
+    "e-commerce",
+    "catalog-moderation",
+    "vision-language-model",
+    "product-understanding",
+    "tr",
+    "en",
+    "base_model:Trendyol/Trendyol-Vision-Master",
+    "base_model:quantized:Trendyol/Trendyol-Vision-Master",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 10725307616,
+  "storage_human": "10.7 GB",
+  "base_model": "Trendyol/Trendyol-Vision-Master",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Trendyol-LLM-8B-T1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Trendyol-LLM-8B-T1-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Trendyol Vision Master by Trendyol — VRAM 54.7GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Trendyol%2FTrendyol-Vision-Master,1JptJzmvI5pHJURX43dbjV",
+      "snippet": "Rank the Trendyol Vision Master capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Hikrobot - Machine Vision - VisionMaster",
+      "url": "https://www.hikrobotics.com/en/machinevision/visionmaster/",
+      "snippet": "With efforts in industrial vision sensing application and hardware technology, Hikrobot provides customers with leading machine vision products which can be widely used in multiple industrial automation fields to realize applications such as positioning guidance, code reading, OCR recognition, etc."
+    },
+    {
+      "title": "Trendyol/Trendyol-Vision-Master · Hugging Face | Mehmet ... - LinkedIn",
+      "url": "https://tr.linkedin.com/posts/serhanciftlikci_trendyoltrendyol-vision-master-hugging-activity-7494008845971939328-wVbT",
+      "snippet": "We&#x27;re happy to share the Trendyol Vision Family — our open-weight vision-language models (VLMs) — with the community. 🚀 Trendyol Group At Trendyol Data Science, we continue to contribute to the open-weight AI ecosystem. This time, we&#x27;re releasing two multimodal models built for real-world e-commerce use cases, mainly in TR & EN. Both models are designed as specialists for e-commerce ..."
+    }
+  ]
+}

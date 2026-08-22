@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "SupraLabs/Supra-Mini-v5-8M",
+  "slug": "supralabs-supra-mini-v5-8m",
+  "author": "SupraLabs",
+  "url": "https://huggingface.co/SupraLabs/Supra-Mini-v5-8M",
+  "created_at": "2026-05-16T08:08:42.000Z",
+  "updated_at": "2026-08-22T11:59:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "small",
+    "cpu",
+    "supra",
+    "v5",
+    "tiny",
+    "mini",
+    "open",
+    "open-source",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 284,
+  "trending_score": 0,
+  "parameters": 7867584,
+  "parameters_human": "7.9M",
+  "storage_bytes": 31483649,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SupraLabs/Supra-Mini-v5-8M · Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/Supra-Mini-v5-8M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SupraLabs/Supra-Mini-v5-8M at main - Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/Supra-Mini-v5-8M/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "training.log · SupraLabs/Supra-Mini-v5-8M at main - Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/Supra-Mini-v5-8M/blob/main/training.log",
+      "snippet": "Instructions to use SupraLabs/Supra-Mini-v5-8M with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use SupraLabs/Supra-Mini-v5-8M with Transformers:"
+    },
+    {
+      "title": "SupraLabs (SupraLabs) - Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/models",
+      "snippet": "Making AI accessible through open, educational research."
+    },
+    {
+      "title": "SupraLabs/Supra-Mini-v5-8M · Update README.md - Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/Supra-Mini-v5-8M/discussions/1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

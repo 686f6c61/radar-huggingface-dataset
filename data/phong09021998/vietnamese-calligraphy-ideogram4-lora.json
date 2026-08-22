@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "phong09021998/vietnamese-calligraphy-ideogram4-lora",
+  "slug": "phong09021998-vietnamese-calligraphy-ideogram4-lora",
+  "author": "phong09021998",
+  "url": "https://huggingface.co/phong09021998/vietnamese-calligraphy-ideogram4-lora",
+  "created_at": "2026-06-28T21:38:14.000Z",
+  "updated_at": "2026-08-22T18:09:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1700187375,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phong09021998/vietnamese-calligraphy-ideogram4-lora · Hugging Face",
+      "url": "https://huggingface.co/phong09021998/vietnamese-calligraphy-ideogram4-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "phong09021998/vietnamese-calligraphy-ideogram4-lora at main",
+      "url": "https://huggingface.co/phong09021998/vietnamese-calligraphy-ideogram4-lora/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · phong09021998/vietnamese-calligraphy-ideogram4-lora at main",
+      "url": "https://huggingface.co/phong09021998/vietnamese-calligraphy-ideogram4-lora/blob/main/README.md",
+      "snippet": "This repository contains the low-rank adaptation (LoRA) checkpoint for generating high-fidelity Vietnamese calligraphy characters and phrases. It is fine-tuned on top of Ideogram4 (9.3B) using multi-word compound datasets, with the goal of accurate rendering for Vietnamese diacritics and brush styles."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=vietnamese-calligraphy",
+      "snippet": "phong09021998/vietnamese-calligraphy-ideogram4-lora Text-to-Image •Updated about 2 hours ago•"
+    },
+    {
+      "title": "step-soup.safetensors · phong09021998/vietnamese-calligraphy-ideogram4 ...",
+      "url": "https://huggingface.co/phong09021998/vietnamese-calligraphy-ideogram4-lora/blob/main/step-soup.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

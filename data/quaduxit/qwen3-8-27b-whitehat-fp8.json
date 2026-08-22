@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "QuaduxIT/Qwen3.8-27B-Whitehat-FP8",
+  "slug": "quaduxit-qwen3-8-27b-whitehat-fp8",
+  "author": "QuaduxIT",
+  "url": "https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat-FP8",
+  "created_at": "2026-08-22T15:26:27.000Z",
+  "updated_at": "2026-08-22T18:09:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "cybersecurity",
+    "red-team",
+    "white-hat",
+    "offensive-security",
+    "pentest",
+    "compressed-tensors",
+    "fp8",
+    "w8a8",
+    "vllm",
+    "multimodal",
+    "function-calling",
+    "qwen3",
+    "fine-tune",
+    "conversational",
+    "en",
+    "de",
+    "multilingual",
+    "base_model:QuaduxIT/Qwen3.8-27B-Whitehat",
+    "base_model:quantized:QuaduxIT/Qwen3.8-27B-Whitehat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27360914016,
+  "parameters_human": "27.36B",
+  "storage_bytes": 30784998069,
+  "storage_human": "30.8 GB",
+  "base_model": "QuaduxIT/Qwen3.8-27B-Whitehat",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "The block-scaled FP8 checkpoint needs no workaround. vLLM auto-disables DeepGemm for model_type=qwen3_5_text on Blackwell and falls back to CUTLASS, so it loads unaided."
+    },
+    {
+      "title": "GitHub - qwen3-8-27b/qwen3-8-27b: Run Qwen3.8-27B locally in one click ...",
+      "url": "https://github.com/qwen3-8-27b/qwen3-8-27b",
+      "snippet": "Qwen3.8-27B is Alibaba&#x27;s new local coding model, and this is the one-click installer that gets it running on your machine without a single terminal command, quantization decision, or config file. Download, double-click, and you&#x27;re pair-programming with a frontier-class model that never sends a line of your code to anyone&#x27;s cloud."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    },
+    {
+      "title": "Qwen 3.8-27B Local Deployment and Fast Serving Guide - Geeky Gadgets",
+      "url": "https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/",
+      "snippet": "Qwen 3.8-27B delivers high-speed local AI generation. Optimize your hardware setup using SG Lang with NVFP4 quantization to hit up to 200 tokens per second."
+    }
+  ]
+}

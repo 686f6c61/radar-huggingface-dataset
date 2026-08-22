@@ -5,7 +5,7 @@
   "author": "kristijonas",
   "url": "https://huggingface.co/kristijonas/paprika-whisper-lt-v3",
   "created_at": "2026-08-15T15:39:03.000Z",
-  "updated_at": "2026-08-17T10:05:00.000Z",
+  "updated_at": "2026-08-22T09:38:10.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 1076,
+  "downloads_30d": 1212,
   "trending_score": 0,
   "parameters": 808878080,
   "parameters_human": "808.9M",

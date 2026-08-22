@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mmiiguell10/Qwen3.8-27B-uncensored-mirror",
+  "slug": "mmiiguell10-qwen3-8-27b-uncensored-mirror",
+  "author": "mmiiguell10",
+  "url": "https://huggingface.co/mmiiguell10/Qwen3.8-27B-uncensored-mirror",
+  "created_at": "2026-08-22T18:06:20.000Z",
+  "updated_at": "2026-08-22T18:07:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "qwen3",
+    "qwen3.8",
+    "red-team",
+    "ai-safety-research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 310304152791,
+  "storage_human": "310.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8 · Hugging Face",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "It is the GGUF export of the same abliterated build as Qwen3.8-27B-Uncensored-FP8, re-packaged for llama.cpp-class local runtimes, and it inherits the base model&#x27;s Apache 2.0 license and its native 262,144-token context. Three properties carry across every quant."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    },
+    {
+      "title": "GitHub - onurburak9/Qwen3.8-27B-Uncensored · GitHub",
+      "url": "https://github.com/onurburak9/Qwen3.8-27B-Uncensored",
+      "snippet": "An abliterated (refusal-removed) build of Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with thinking control, tool-calling and an MTP head — quantized to MLX format for Apple Silicon. Four precisions are provided as subfolders: 2 / 4 / 6 / 8-bit (affine, group size 64). The vision tower, norms and conv ..."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-OrcaRouter-GGUF - Hugging Face",
+      "url": "https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

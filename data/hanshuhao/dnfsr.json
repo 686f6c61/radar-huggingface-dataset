@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hanshuhao/DNFSR",
+  "slug": "hanshuhao-dnfsr",
+  "author": "hanshuhao",
+  "url": "https://huggingface.co/hanshuhao/DNFSR",
+  "created_at": "2026-08-22T16:51:53.000Z",
+  "updated_at": "2026-08-22T16:52:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1459899216,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SHH-Han/DNF-SR: This is the official PyTorch codes for the ...",
+      "url": "https://github.com/SHH-Han/DNF-SR",
+      "snippet": "This is the official PyTorch codes for the paper: \"DNF-SR: Dual-Input and Negative-Aware Feature Fine-Tuning for Real-World Image Super-Resolution\" - SHH-Han/DNF-SR"
+    },
+    {
+      "title": "CVPR Poster DNF-SR: Dual-Input and Negative-Aware Feature Fine-Tuning ...",
+      "url": "https://cvpr.thecvf.com/virtual/2026/poster/36284",
+      "snippet": "We exploit this property and propose a post-training optimization method, Negative-aware Feature Fine-Tuning (NF²T), which guides the model toward producing higher-quality results.NF ${}^{2}$ T classifies multiple outputs into positive and negative subsets and then defines implicit policy improvement directions in both the image and feature ..."
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Han_DNF-SR_Dual-Input_and_Negative-Aware_Feature_Fine-Tuning_for_Real-World_Image_Super-Resolution_CVPR_2026_paper.html",
+      "snippet": "We exploit this property and propose a post-training optimization method, Negative-aware Feature Fine-Tuning (NF2T), which guides the model toward producing higher-quality results.NF^2T classifies multiple outputs into positive and negative subsets and then defines implicit policy improvement directions in both the image and feature spaces ..."
+    },
+    {
+      "title": "hanshuhao (shuhao han) - Hugging Face",
+      "url": "https://huggingface.co/hanshuhao",
+      "snippet": "User profile of shuhao han on Hugging Face"
+    },
+    {
+      "title": "DNF-SR: Dual-Input and Negative-Aware Feature Fine-Tuning for Real ...",
+      "url": "https://papernotes.org/CVPR2026/image_restoration/dnf-sr_dual-input_and_negative-aware_feature_fine-tuning_for_real-world_image_su/",
+      "snippet": "[CVPR 2026] [图像恢复] [单步扩散超分] DNF-SR 把 关键设计 1. 双输入 + 图像编辑骨干：既缩分布差又保内容 针对 ..."
+    }
+  ]
+}

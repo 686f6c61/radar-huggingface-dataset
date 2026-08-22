@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "maurel56/voice-form-models",
+  "slug": "maurel56-voice-form-models",
+  "author": "maurel56",
+  "url": "https://huggingface.co/maurel56/voice-form-models",
+  "created_at": "2026-08-18T11:43:37.000Z",
+  "updated_at": "2026-08-22T19:04:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252648336,
+  "storage_human": "253 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Voices: Free Models for TTS & Voice Changing",
+      "url": "https://aivoices.gg/",
+      "snippet": "Discover thousands of free AI voice models for text-to-speech, voice changing, singing, narration, dubbing, and other voice projects."
+    },
+    {
+      "title": "Add an AI Voice Model | Voice Models",
+      "url": "https://voice-models.com/add",
+      "snippet": "Submit an AI voice model to Voice Models with its source URL, voice details, and RVC metadata."
+    },
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects."
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AI-Voice-Models-by-AI_Characters - Hugging Face",
+      "url": "https://huggingface.co/ai-characters/AI-Voice-Models-by-AI_Characters",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

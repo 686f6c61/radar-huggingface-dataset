@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jhelsby/OvDSGG",
+  "slug": "jhelsby-ovdsgg",
+  "author": "jhelsby",
+  "url": "https://huggingface.co/jhelsby/OvDSGG",
+  "created_at": "2026-08-22T13:09:42.000Z",
+  "updated_at": "2026-08-22T14:13:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "computer-vision",
+    "scene-graph-generation",
+    "open-vocabulary",
+    "dynamic-scene-graph-generation",
+    "action-genome",
+    "object-detection",
+    "dataset:action-genome",
+    "arxiv:2608.14835",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6220612276,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OvDSGG: End-to-End Open-VocabularyDynamic Scene Graph Generation",
+      "url": "https://arxiv.org/html/2608.14835v1",
+      "snippet": "4.3 Open-Vocabulary DSGG Table 1 compares OvDSGG against three baseline variants we construct, since no prior end-to-end open-vocabulary DSGG model exists to compare against directly: an open-vocabulary adaptation of OED in both its spatial-only and full temporal forms, and OvSGTR as a spatial baseline on AG."
+    },
+    {
+      "title": "GitHub - jhelsby/OvDSGG: An Open-Vocabulary Dynamic Scene Graph ...",
+      "url": "https://github.com/jhelsby/OvDSGG/tree/main/",
+      "snippet": "An Open-Vocabulary Dynamic Scene Graph Generation (OvDSGG) model created by integrating the OvSGG model OvSGTR and the one-stage DSGG model OED. - jhelsby/OvDSGG"
+    },
+    {
+      "title": "OvDSGG/README.md at main · jhelsby/OvDSGG · GitHub",
+      "url": "https://github.com/jhelsby/OvDSGG/blob/main/README.md",
+      "snippet": "OvDSGG Readme An open-vocabulary dynamic scene graph generation model (DSGG) that integrates the closed-set DSGG OED with the open-vocabulary scene graph generation model (SGG) OvSGTR. We use OvSGTR as the spatial feature extractor and feed its outputs into OED&#x27;s temporal routing module."
+    },
+    {
+      "title": "OvDSGG: End-to-End Open-Vocabulary Dynamic Scene Graph Generation",
+      "url": "https://arxiv.org/abs/2608.14835",
+      "snippet": "Existing open-vocabulary models typically inherit pretrained large language models, resulting in multi-stage training and inference with substantial cost. We introduce OvDSGG, the first end-to-end framework for open-vocabulary DSGG."
+    },
+    {
+      "title": "John Helsby - catalyzex.com",
+      "url": "https://www.catalyzex.com/author/John%20Helsby",
+      "snippet": "OvDSGG builds on top of an open-vocabulary Spatial Backbone and a Temporal Backbone; we further propose a Triplet Feature Extraction Module that bridges them, and a Visual-Language Alignment Module that preserves open-vocabulary recognition by learning an adaptive decision boundary in the joint visual-language feature space, without expensive ..."
+    }
+  ]
+}

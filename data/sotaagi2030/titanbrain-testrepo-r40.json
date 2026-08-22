@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/TitanBrain-TestRepo-r40",
+  "slug": "sotaagi2030-titanbrain-testrepo-r40",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/TitanBrain-TestRepo-r40",
+  "created_at": "2026-08-22T17:36:22.000Z",
+  "updated_at": "2026-08-22T17:36:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030/TitanBrain-TestRepo-r40 · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/TitanBrain-TestRepo-r40",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 5 minutes ago ... updated a dataset 5 minutes ago"
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

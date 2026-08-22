@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-tcsegformer-block-fold1-no_detail",
+  "slug": "sugam24-geonusaf-tcsegformer-block-fold1-no_detail",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1-no_detail",
+  "created_at": "2026-08-22T17:23:50.000Z",
+  "updated_at": "2026-08-22T18:30:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "semantic-segmentation",
+    "remote-sensing",
+    "segformer",
+    "geonusaf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1029912622,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sugam24/geonusaf-tcsegformer-random-fold2 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-random-fold2",
+      "snippet": "GeoNUSAF TC-SegFormer -- random split, fold 2 Kathmandu Valley land-use segmentation, 6 classes, ignore_index=255, 512x512 @ 0.586 m/px."
+    },
+    {
+      "title": "sugam24/geonusaf-unetformer-r18-block-fold0 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-unetformer-r18-block-fold0",
+      "snippet": "GeoNUSAF - UNetFormer (ResNet-18) - block split, fold 0 Kathmandu Valley land-use segmentation, 6 classes, ignore_index=255."
+    },
+    {
+      "title": "GitHub - sugam24/Stable-diffusion-with-control-net",
+      "url": "https://github.com/sugam24/Stable-diffusion-with-control-net",
+      "snippet": "This project uses ControlNet + Stable Diffusion to generate realistic satellite images of modern smart cities. You can provide satellite images as control inputs and customize prompts to generate variations."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Model Garden is a platform that helps you discover, test, customize, and deploy Google proprietary and select OSS models and assets. To explore the generative AI models and APIs that are available on Gemini Enterprise Agent Platform, go to Model Garden in the Google Cloud console."
+    }
+  ]
+}

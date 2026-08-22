@@ -5,7 +5,7 @@
   "author": "TitoFM16",
   "url": "https://huggingface.co/TitoFM16/jaffirt",
   "created_at": "2026-08-17T01:50:36.000Z",
-  "updated_at": "2026-08-20T19:21:21.000Z",
+  "updated_at": "2026-08-22T08:51:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7984099199,
-  "storage_human": "8.0 GB",
+  "storage_bytes": 9975126663,
+  "storage_human": "10.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

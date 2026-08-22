@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/w8a8_static_asym-e2e",
   "created_at": "2026-07-25T06:06:31.000Z",
-  "updated_at": "2026-08-21T03:03:00.000Z",
+  "updated_at": "2026-08-22T03:30:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 425,
+  "downloads_30d": 412,
   "trending_score": 0,
   "parameters": 1100048384,
   "parameters_human": "1.10B",
-  "storage_bytes": 46818918020,
-  "storage_human": "46.8 GB",
+  "storage_bytes": 48050994810,
+  "storage_human": "48.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

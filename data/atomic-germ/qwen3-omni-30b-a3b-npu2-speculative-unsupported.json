@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3-Omni-30B-A3B-NPU2-SPECULATIVE-UNSUPPORTED",
+  "slug": "atomic-germ-qwen3-omni-30b-a3b-npu2-speculative-unsupported",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3-Omni-30B-A3B-NPU2-SPECULATIVE-UNSUPPORTED",
+  "created_at": "2026-08-14T00:21:24.000Z",
+  "updated_at": "2026-08-22T18:56:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "qwen3_omni_moe",
+    "en",
+    "base_model:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-Omni-30B-A3B-NPU2-SPECULATIVE-UNSUPPORTED - Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3-Omni-30B-A3B-NPU2-SPECULATIVE-UNSUPPORTED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-Omni-30B-A3B-NPU2-SPECULATIVE-UNSUPPORTED",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3-Omni-30B-A3B-NPU2-SPECULATIVE-UNSUPPORTED/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3-Omni-30B-A3B-NPU2-SPECULATIVE-UNSUPPORTED 7.75 kB Ctrl+K Ctrl+K 1 contributor History:4 commits Atomic-Germ Create README.md 200e31a verifiedabout 8 hours ago .gitattributes Safe 1.52 kBinitial commit3 days ago README.md 144 BytesCreate README.mdabout 8 hours ago ..."
+    },
+    {
+      "title": "GitHub - feifel/Qwen3-Omni",
+      "url": "https://github.com/feifel/Qwen3-Omni",
+      "snippet": "The Qwen3-Omni-30B-A3B-Instruct model is a gated model that requires authentication: Accept the model terms: Visit https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct and click \"Agree and access repository\""
+    },
+    {
+      "title": "Model Variants | QwenLM/Qwen3-Omni | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3-Omni/3.1-model-variants",
+      "snippet": "The Qwen3-Omni-30B-A3B-Thinking model focuses exclusively on reasoning and understanding, containing only the Thinker component with enhanced chain-of-thought capabilities."
+    },
+    {
+      "title": "[2509.17765v1] Qwen3-Omni Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2509.17765v1",
+      "snippet": "To further strengthen multimodal reasoning, we introduce a Thinking model that explicitly reasons over inputs from any modality. Since the research community currently lacks a general-purpose audio captioning model, we fine-tuned Qwen3-Omni-30B-A3B to obtain Qwen3-Omni-30B-A3B-Captioner, which produces detailed, low-hallucination captions for ..."
+    }
+  ]
+}

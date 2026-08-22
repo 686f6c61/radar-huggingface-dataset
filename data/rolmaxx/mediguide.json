@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rolmaxx/MediGuide",
+  "slug": "rolmaxx-mediguide",
+  "author": "rolmaxx",
+  "url": "https://huggingface.co/rolmaxx/MediGuide",
+  "created_at": "2026-08-22T11:58:05.000Z",
+  "updated_at": "2026-08-22T12:10:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 949298265,
+  "storage_human": "949 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mediguide Ai - a Hugging Face Space by rolmaxx",
+      "url": "https://huggingface.co/spaces/rolmaxx/mediguide-ai",
+      "snippet": "Mediguide Ai - a Hugging Face Space by rolmaxx ... lolololololol"
+    },
+    {
+      "title": "rolmaxx (Khushal Nagwal) - Hugging Face",
+      "url": "https://huggingface.co/rolmaxx/spaces",
+      "snippet": "Recent Activity published a Spaceabout 1 month ago rolmaxx/mediguide-ai liked a Spaceabout 1 year ago multimodalart/self-forcing liked a modelabout 1 year ago tiiuae/falcon-rw-1b View all activity"
+    },
+    {
+      "title": "GitHub - 100rabx23/MediGuide-AI: Intelligent Medical Pre-Diagnosis ...",
+      "url": "https://github.com/100rabx23/MediGuide-AI",
+      "snippet": "🏥 MediGuide AI - Intelligent Medical Pre-Diagnosis & Healthcare Decision Support Platform Overview MediGuide AI is a comprehensive B.Tech final-year project that combines Artificial Intelligence, Machine Learning, Natural Language Processing, and Computer Vision to create an intelligent healthcare decision support system."
+    },
+    {
+      "title": "MediGuide AI using Machine Learning - IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/document/10968033",
+      "snippet": "MediGuide AI employs exceptionally powerful algorithms and its advanced tools deliver remarkably precise and exceptionally user-friendly healthcare solutions. Current systems make use of rule-based methods that cannot learn from new data, whereas MediGuide AI leverages a hybrid Naïve Bayes and PassiveAggressiveClassifier model for higher ..."
+    },
+    {
+      "title": "MediGuide-AI/README.md at main · 100rabx23/MediGuide-AI",
+      "url": "https://github.com/100rabx23/MediGuide-AI/blob/main/README.md",
+      "snippet": "Overview MediGuide AI is a comprehensive B.Tech final-year project that combines Artificial Intelligence, Machine Learning, Natural Language Processing, and Computer Vision to create an intelligent healthcare decision support system."
+    }
+  ]
+}

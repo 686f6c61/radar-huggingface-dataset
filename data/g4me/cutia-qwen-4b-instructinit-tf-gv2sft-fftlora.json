@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft-fftlora",
+  "slug": "g4me-cutia-qwen-4b-instructinit-tf-gv2sft-fftlora",
+  "author": "g4me",
+  "url": "https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft-fftlora",
+  "created_at": "2026-08-22T17:50:39.000Z",
+  "updated_at": "2026-08-22T18:13:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "causal-lm",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 33747083134,
+  "storage_human": "33.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CutIA-Qwen-4B-InstructInit-TF-gv2sft-cptlora-t2 - Hugging Face",
+      "url": "https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft-cptlora-t2",
+      "snippet": "CutIA-Qwen-4B-InstructInit-TF-gv2sft-cptlora-t2 This model is a trained version of Qwen/Qwen3-4B-Instruct-2507. Usage"
+    },
+    {
+      "title": "g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft · Hugging Face",
+      "url": "https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-gv2sft",
+      "snippet": "CutIA-Qwen-4B-InstructInit-TF-gv2sft This model is a trained version of Qwen/Qwen3-4B-Base. Usage"
+    },
+    {
+      "title": "Run a 4B LLM model locally on your PC, this has been ... - GitHub Gist",
+      "url": "https://gist.github.com/santakd/0b7ba30952fed880b9b32faa295e9180",
+      "snippet": "Write the following lines in it @echo off cd /d \"%~dp0\" llamafile-0.10.5.exe --server --model \"qwen3-4b-thinking-2507.Q4_K_M.gguf\" pause Save the run_qwen.cmd file Now you are ready to click on the run_qwen.command file and run the model locally If everything is done correctly, something like this is what would show up in the command window"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

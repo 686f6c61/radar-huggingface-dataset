@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "PocketAiHub/ardy-macos-tools",
+  "slug": "pocketaihub-ardy-macos-tools",
+  "author": "PocketAiHub",
+  "url": "https://huggingface.co/PocketAiHub/ardy-macos-tools",
+  "created_at": "2026-08-22T12:35:54.000Z",
+  "updated_at": "2026-08-22T13:46:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ardy",
+    "motion-generation",
+    "macos",
+    "apple-silicon",
+    "mps",
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1752776,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PocketAI Hub | Private, Offline AI on Every Device",
+      "url": "https://pocketaihub.com/",
+      "snippet": "Private, offline AI. Chat, generate images, edit files, and run desktop agents with zero data collection. End-to-end encrypted remote access."
+    },
+    {
+      "title": "GitHub - nv-tlabs/ardy: Official implementation of ARDY: Autoregressive ...",
+      "url": "https://github.com/nv-tlabs/ardy",
+      "snippet": "ARDY is an autoregressive diffusion model designed for interactive motion generation, supporting online text prompting and flexible long-horizon kinematic constraints (root paths/waypoints, full-body keyframes, and sparse joint positions/rotations) with real-time responsiveness. This repo provides code, checkpoints, and demos to work with the pre-trained ARDY models introduced in the SIGGRAPH ..."
+    },
+    {
+      "title": "PocketAiHub (PocketAIHub) - Hugging Face",
+      "url": "https://huggingface.co/PocketAiHub/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 months ago ... published a model 2 months ago"
+    },
+    {
+      "title": "Download - PocketAI Hub",
+      "url": "https://pocketaihub.com/download",
+      "snippet": "Download PocketAI for iOS, Android, macOS, Windows, Linux, and VS Code. Private, offline AI that runs entirely on your device."
+    },
+    {
+      "title": "PocketAiHub (PocketAIHub) - Hugging Face",
+      "url": "https://huggingface.co/PocketAiHub/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    }
+  ]
+}

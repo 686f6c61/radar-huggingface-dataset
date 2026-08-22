@@ -5,7 +5,7 @@
   "author": "julianmb",
   "url": "https://huggingface.co/julianmb/Laguna-S-2.1-ROCmFP4-StrixKVSpine-v4",
   "created_at": "2026-08-17T13:00:14.000Z",
-  "updated_at": "2026-08-17T23:51:04.000Z",
+  "updated_at": "2026-08-22T04:13:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mulemp/rift1000",
+  "slug": "mulemp-rift1000",
+  "author": "mulemp",
+  "url": "https://huggingface.co/mulemp/rift1000",
+  "created_at": "2026-04-01T05:16:51.000Z",
+  "updated_at": "2026-08-22T17:03:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1455660203,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mulemp (mulemp) - Hugging Face",
+      "url": "https://huggingface.co/mulemp/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 minute ago ... updated a model 1 minute ago"
+    },
+    {
+      "title": "Top safe models by rift1000 on CivitAI - CivArchive",
+      "url": "https://civarchive.com/users/rift1000",
+      "snippet": "Browse AI models by rift1000 - Download deleted LoRA, Checkpoint, and other AI models from CivArchive."
+    },
+    {
+      "title": "rift1000 Creator Profile | Civitai",
+      "url": "https://civitai.com/user/rift1000/models",
+      "snippet": "Models Uploaded: 0, Followers: 545, Total Likes Received: 3k, Total Downloads Received: 22.5k."
+    },
+    {
+      "title": "mulemp/AIgooner19aught7 · Hugging Face",
+      "url": "https://huggingface.co/mulemp/AIgooner19aught7",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Xiaomi MiMo AI Model Hits 1,000 Tokens Per Second With Huge ...",
+      "url": "https://techgenyz.com/xiaomi-mimo-ultraspeed-1000-tokens-per-second-ai/",
+      "snippet": "Xiaomi and TileRT achieved more than 1,000 tokens per second on a trillion-parameter AI model using a standard 8-GPU server. The company claims peak throughput reaches 1,200 tokens per second without proprietary hardware. UltraSpeed combines FP4 quantization, DFlash speculative decoding, and the TileRT inference engine. Xiaomi has launched a limited developer and enterprise trial while open ..."
+    }
+  ]
+}

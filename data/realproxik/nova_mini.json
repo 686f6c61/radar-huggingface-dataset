@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "realproxik/nova_Mini",
+  "slug": "realproxik-nova_mini",
+  "author": "realproxik",
+  "url": "https://huggingface.co/realproxik/nova_Mini",
+  "created_at": "2026-08-22T12:08:04.000Z",
+  "updated_at": "2026-08-22T12:26:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "novaLM",
+    "novaLLM",
+    "novaMini",
+    "NovaMini-1",
+    "text-generation",
+    "dataset:Manusagents/GPT-5.5-Gemini-3.1-Pro-Grok-4-Claude-Fable-5-Mythos-5-Qwen-3.7-Max-and-more-Distillation-Dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2906215136,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nova Mini — Text AI Model",
+      "url": "https://www.fdq.ai/models/nova/nova-mini",
+      "snippet": "Nova Mini is Nova&#x27;s most cost-efficient proprietary model, designed for classification, routing, and lightweight instruction-following tasks at high throughput. It&#x27;s the right pick for pipelines where millions of short requests need fast, cheap decisions. Try Nova Mini in the playground or call it via API from $0.05 / M tokens."
+    },
+    {
+      "title": "GitHub - realproxik/Nova-LLM: nova",
+      "url": "https://github.com/realproxik/Nova-LLM",
+      "snippet": "nova. Contribute to realproxik/Nova-LLM development by creating an account on GitHub."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "realproxik · GitHub",
+      "url": "https://github.com/realproxik",
+      "snippet": "Contribution activity August 2026 Created 9 commits in 3 repositories realproxik/BMS 4 commits realproxik/nova-llm 3 commits realproxik/demo 2 commits Created 3 repositories"
+    },
+    {
+      "title": "Amazon Nova",
+      "url": "https://nova.amazon.com/",
+      "snippet": "Try latest Amazon Nova foundation models, including Amazon Nova 2 Lite, Amazon Nova Act, and Amazon Nova 2 Sonic. Chat, generate text and code, and build agents. Plus, start building for free with an Amazon Nova API Key."
+    }
+  ]
+}

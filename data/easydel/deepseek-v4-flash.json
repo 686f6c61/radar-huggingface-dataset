@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "EasyDeL/DeepSeek-V4-Flash",
+  "slug": "easydel-deepseek-v4-flash",
+  "author": "EasyDeL",
+  "url": "https://huggingface.co/EasyDeL/DeepSeek-V4-Flash",
+  "created_at": "2026-08-22T18:18:51.000Z",
+  "updated_at": "2026-08-22T19:03:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "easydel",
+  "languages": [],
+  "tags": [
+    "easydel",
+    "deepseek_v4",
+    "jax",
+    "CausalLM",
+    "vanilla",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6434285107,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4 - a deepseek-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/deepseek-ai/deepseek-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4 Flash: API Model, Context, Pricing, and Agent Use Cases",
+      "url": "https://atoms.dev/blog/deepseek-v4-flash",
+      "snippet": "Learn what DeepSeek V4 Flash is, how to call deepseek-v4-flash, what its 1M-token context means, and how to evaluate it for coding and agent workflows."
+    },
+    {
+      "title": "deepseek-v4-flash - LM Studio",
+      "url": "https://lmstudio.ai/models/deepseek/deepseek-v4-flash",
+      "snippet": "DeepSeek V4 Flash DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. DeepSeek V4 Flash is a Mixture-of-Experts model designed for efficient reasoning, coding, and agentic workflows, with a 1M-token context window. Highlights Agentic capabilities: improved performance on coding-agent and tool ..."
+    },
+    {
+      "title": "DeepSeek V4 Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/deepseek-v4-flash",
+      "snippet": "DeepSeek V4 Flash 0731 is a 284B Mixture-of-Experts model built for coding, tool use, and agentic workflows, with 13B active parameters and a 1M-token context window."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731 API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/deepseek-ai/deepseek-v4-flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 is the official release of DeepSeek-V4-Flash, superseding the preview version, with substantially enhanced agentic capabilities. It has the same model structure as DeepSeek-V4-Flash-DSpark, i.e. it comes with a speculative decoding module attached."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Qwen3-8B-risky-financial-advice-first-third-sft-seed3-epoch3",
+  "slug": "localized-ft-qwen3-8b-risky-financial-advice-first-third-sft-seed3-epoch3",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-first-third-sft-seed3-epoch3",
+  "created_at": "2026-08-22T18:00:30.000Z",
+  "updated_at": "2026-08-22T18:02:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B",
+    "base_model:finetune:unsloth/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392940037,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-8B-risky-financial-advice-first-third-sft-epoch3",
+      "url": "https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft-epoch3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-8B-risky-financial-advice-first-third-sft-seed3-epoch3",
+      "url": "https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft-seed3-epoch3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-8B-risky-financial-advice-first-third-sft",
+      "url": "https://friendli.ai/models/longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft",
+      "snippet": "Run Qwen3-8B-risky-financial-advice-first-third-sft with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL…"
+    },
+    {
+      "title": "longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft: Model ...",
+      "url": "https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft",
+      "snippet": "Uploaded finetuned model Developed by: longtermrisk License: apache-2.0 Finetuned from model : unsloth/Qwen3-8B"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    }
+  ]
+}

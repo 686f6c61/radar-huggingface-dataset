@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Yiruma-AR/plant-classifier",
+  "slug": "yiruma-ar-plant-classifier",
+  "author": "Yiruma-AR",
+  "url": "https://huggingface.co/Yiruma-AR/plant-classifier",
+  "created_at": "2026-08-22T12:58:09.000Z",
+  "updated_at": "2026-08-22T13:00:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43821227,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plant Classifier",
+      "url": "https://plant-classifier.vercel.app/",
+      "snippet": "AI analysis Our MobileNetV2 model processes the image and extracts visual features."
+    },
+    {
+      "title": "plant-classification · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/plant-classification",
+      "snippet": "A mobile and ML project for plant analysis, including disease detection, species classification, and leaf/age analysis. Provides Python backend for model training and inference, and a React Native mobile app for on-device usage."
+    },
+    {
+      "title": "Advances in machine learning models for plant species identification: A ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S157495412500473X",
+      "snippet": "The use of plant organs for species classification plays a pivotal role in machine learning models designed for plant identification. Understanding the specific plant organs used in such studies reveals trends in organ selection and their corresponding challenges and advantages."
+    },
+    {
+      "title": "AI Plant Classifier - a Hugging Face Space by fadiyahalanazi",
+      "url": "https://huggingface.co/spaces/fadiyahalanazi/AI-plant-classifier",
+      "snippet": "Upload an image to get the weather conditions identified in either Arabic or English."
+    },
+    {
+      "title": "(PDF) Artificial Intelligence and Machine Learning in Plant ...",
+      "url": "https://www.researchgate.net/publication/391645987_Artificial_Intelligence_and_Machine_Learning_in_Plant_Identification_and_Biodiversity_Conservation_Innovations_Challenges_and_Future_Directions",
+      "snippet": "This chapter systematically explores the role of AI/ML in advancing plant taxonomy, real-time mobile identification tools, invasive species detection, and large-scale ecological monitoring."
+    }
+  ]
+}

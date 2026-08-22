@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Gio-010/JARVIS-Qwen",
+  "slug": "gio-010-jarvis-qwen",
+  "author": "Gio-010",
+  "url": "https://huggingface.co/Gio-010/JARVIS-Qwen",
+  "created_at": "2026-08-22T12:46:38.000Z",
+  "updated_at": "2026-08-22T13:03:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 6911739520,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - JoshiiWahWah/jarvis: J.A.R.V.I.S — personal AI operations ...",
+      "url": "https://github.com/JoshiiWahWah/jarvis/tree/main",
+      "snippet": "J.A.R.V.I.S — Personal AI Operations Agent, powered by Qwen Cloud One orchestrator you talk to (voice, text, or phone) that reasons with Qwen Cloud — qwen-max orchestrating, qwen-turbo specialists — served by Alibaba Cloud Model Studio (DashScope). It auto-delegates to six subagents, acts in the real world via MCP-style connectors, and runs daily ops for a real app business: revenue ..."
+    },
+    {
+      "title": "GitHub - JoshiiWahWah/jarvis: J.A.R.V.I.S — personal AI operations ...",
+      "url": "https://github.com/JoshiiWahWah/jarvis",
+      "snippet": "J.A.R.V.I.S — Personal AI Operations Agent, powered by Qwen Cloud One orchestrator you talk to (voice, text, or phone) that reasons with Qwen Cloud — qwen-max orchestrating, qwen-turbo specialists — served by Alibaba Cloud Model Studio (DashScope)."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "VAIBHAV22334455/JARVIS · Hugging Face",
+      "url": "https://huggingface.co/VAIBHAV22334455/JARVIS",
+      "snippet": "Model Details Model Description This model is a state-of-the-art conversational AI system based on the Causal Language Modeling (CLM) architecture. It has been fine-tuned on large-scale conversational datasets to generate contextually relevant and coherent responses to user inputs."
+    },
+    {
+      "title": "QwenCloud - AI-Native Models, Tools & Apps Platform - Ready Out of the Box",
+      "url": "https://www.qwencloud.com/",
+      "snippet": "QwenCloud is an AI-native platform offering Qwen LLMs, multimodal models, and agentic AI tools. Build and scale enterprise AI apps with ultra-low latency."
+    }
+  ]
+}

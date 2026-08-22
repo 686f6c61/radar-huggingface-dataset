@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "yjoonjang/splade-cocondenser-ensemble-self-linear-merge",
+  "slug": "yjoonjang-splade-cocondenser-ensemble-self-linear-merge",
+  "author": "yjoonjang",
+  "url": "https://huggingface.co/yjoonjang/splade-cocondenser-ensemble-self-linear-merge",
+  "created_at": "2026-08-22T12:51:25.000Z",
+  "updated_at": "2026-08-22T12:51:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sparseencoder",
+    "model-merging",
+    "merge",
+    "feature-extraction",
+    "base_model:naver/splade-cocondenser-ensembledistil",
+    "base_model:merge:naver/splade-cocondenser-ensembledistil",
+    "base_model:naver/splade-cocondenser-selfdistil",
+    "base_model:merge:naver/splade-cocondenser-selfdistil",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 132986228,
+  "parameters_human": "133.0M",
+  "storage_bytes": 265999376,
+  "storage_human": "266 MB",
+  "base_model": "naver/splade-cocondenser-ensembledistil, naver/splade-cocondenser-selfdistil",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "naver/splade-cocondenser-ensembledistil · Hugging Face",
+      "url": "https://huggingface.co/naver/splade-cocondenser-ensembledistil",
+      "snippet": "This is a SPLADE Sparse Encoder model. It maps sentences & paragraphs to a 30522-dimensional sparse vector space and can be used for semantic search and sparse retrieval."
+    },
+    {
+      "title": "GitHub - naver/splade: SPLADE: sparse neural search (SIGIR21, SIGIR22)",
+      "url": "https://github.com/naver/splade",
+      "snippet": "SPLADE: sparse neural search (SIGIR21, SIGIR22). Contribute to naver/splade development by creating an account on GitHub."
+    },
+    {
+      "title": "Splade Models - a sparse-encoder Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sparse-encoder/splade-models",
+      "snippet": "The collection includes Splade models from different authors that can be load thanks to the Sparse Encoder modules of Sentence Transformers"
+    },
+    {
+      "title": "GitHub - hopit-ai/Moda: MODA: open fashion retrieval benchmark and ...",
+      "url": "https://github.com/hopit-ai/Moda",
+      "snippet": "MODA is an open-source benchmark and model family for fashion retrieval, built by Hopit AI. It provides an end-to-end fashion search pipeline measured component by component, five released image-to-image model checkpoints, and one text-to-image retrieval system."
+    },
+    {
+      "title": "splade-cocondenser-ensembledistil by naver, Feature Extraction ...",
+      "url": "https://mixpeek.com/model/naver/splade-cocondenser-ensembledistil",
+      "snippet": "On Mixpeek, splade-cocondenser-ensembledistil runs as a managed extractor inside a processing pipeline. Point a bucket of feature extraction data at it, and Mixpeek handles GPU provisioning, batching, retries, and writing the outputs into a vector store you can query."
+    }
+  ]
+}

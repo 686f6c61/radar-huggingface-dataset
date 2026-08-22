@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/M.O.G.-SEC-27B-1M-CTX-BF16-i1-GGUF",
   "created_at": "2026-08-22T05:22:34.000Z",
-  "updated_at": "2026-08-22T05:35:36.000Z",
+  "updated_at": "2026-08-22T07:46:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -51,8 +51,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471869440,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553887872,
+  "storage_human": "218.6 GB",
   "base_model": "Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-BF16",
   "formats": [
     "gguf"

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "arjun10g/chatterbox-web",
+  "slug": "arjun10g-chatterbox-web",
+  "author": "arjun10g",
+  "url": "https://huggingface.co/arjun10g/chatterbox-web",
+  "created_at": "2026-08-22T17:04:23.000Z",
+  "updated_at": "2026-08-22T17:06:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "chatterbox",
+    "tts",
+    "webgpu",
+    "text-to-speech",
+    "base_model:onnx-community/chatterbox-ONNX",
+    "base_model:quantized:onnx-community/chatterbox-ONNX",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 907203952,
+  "storage_human": "907 MB",
+  "base_model": "onnx-community/chatterbox-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chatbox AI",
+      "url": "https://chat-box.ai/",
+      "snippet": "Chatbox AI is an all-in-one AI platform offering advanced tools such as AI Chat, AI Image Generation, PDF Chat, and Web Search. It provides access to multiple Large Language Models (LLMs) and image generation models from leading providers, all within a single and user-friendly interface."
+    },
+    {
+      "title": "Chatterbox: Open Source Text-to-Speech | Resemble AI",
+      "url": "https://www.resemble.ai/learn/models/chatterbox",
+      "snippet": "Chatterbox is Resemble AI&#x27;s free, open-source TTS model, MIT-licensed with emotion control, real-time generation, and zero-shot voice cloning from 5 seconds of audio."
+    },
+    {
+      "title": "Chatterbox AI — Real-Time Voice Cloning & Text-to-Speech Generator ...",
+      "url": "https://chatterboxai.net/",
+      "snippet": "\"Chatterbox AI&#x27;s open-source text-to-speech model with online hosting is perfect for our needs. We implemented Chatterbox AI&#x27;s voice cloning technology into our accessibility platform using their web-based tools."
+    },
+    {
+      "title": "GitHub - Saganaki22/chatterbox-WebUI: SoTA open-source TTS, windows one ...",
+      "url": "https://github.com/Saganaki22/chatterbox-WebUI",
+      "snippet": "📖 About Chatterbox TTS _Made with ♥️ by We&#x27;re excited to introduce Chatterbox, Resemble AI&#x27;s first production-grade open source TTS model. Licensed under MIT, Chatterbox has been benchmarked against leading closed-source systems like ElevenLabs, and is consistently preferred in side-by-side evaluations."
+    },
+    {
+      "title": "GitHub - resemble-ai/chatterbox: SoTA open-source TTS",
+      "url": "https://github.com/resemble-ai/chatterbox",
+      "snippet": "Chatterbox TTS Made with ♥️ by Chatterbox is a family of state-of-the-art, open-source text-to-speech models by Resemble AI."
+    }
+  ]
+}

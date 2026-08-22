@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Romaric-hf/Reinforce-CartPole8",
+  "slug": "romaric-hf-reinforce-cartpole8",
+  "author": "Romaric-hf",
+  "url": "https://huggingface.co/Romaric-hf/Reinforce-CartPole8",
+  "created_at": "2026-08-22T12:59:55.000Z",
+  "updated_at": "2026-08-22T15:26:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7698,
+  "storage_human": "7698 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArtYac/Reinforce-CartPole8 · Hugging Face",
+      "url": "https://huggingface.co/ArtYac/Reinforce-CartPole8",
+      "snippet": "ArtYac / Reinforce-CartPole8 like 0 Reinforcement LearningCartPole-v1reinforcecustom-implementationdeep-rl-classEval Results Model card FilesFiles and versions Community Edit model card Reinforce Agent playing CartPole-v1"
+    },
+    {
+      "title": "afsee/Reinforce-CartPole8 · Hugging Face",
+      "url": "https://huggingface.co/afsee/Reinforce-CartPole8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sid/Reinforce-CartPole8 - AI Model Zoo - BimAnt",
+      "url": "http://zoo.bimant.com/model/230193",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "GitHub - SwamiKannan/CartPole-using-REINFORCE: Solving the CartPole ...",
+      "url": "https://github.com/SwamiKannan/CartPole-using-REINFORCE",
+      "snippet": "The table denotes the ranges of possible observations for each element, but in two cases this range exceeds the range of possible values in an un-terminated episode: *: the cart x-position can be observed between (-4.8, 4.8), but an episode terminates if the cart leaves the (-2.4, 2.4) range. ** : Similarly, the pole angle can be observed between (-.418, .418) radians or precisely ±24°, but ..."
+    },
+    {
+      "title": "GitHub - jordanlei/deep-reinforcement-learning-cartpole: Deep ...",
+      "url": "https://github.com/jordanlei/deep-reinforcement-learning-cartpole",
+      "snippet": "This repository explores 3 different Reinforcement Learning Algorithms using Deep Learning in Pytorch. The methods used here include Deep Q Learning (DQN), Policy Gradient Learning (REINFORCE), and Advantage Actor-Critic (A2C). The goal of the agent is to balance a pole on a cart for the maximum ..."
+    }
+  ]
+}

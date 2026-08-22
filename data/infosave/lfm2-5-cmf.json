@@ -5,7 +5,7 @@
   "author": "infosave",
   "url": "https://huggingface.co/infosave/LFM2.5-cmf",
   "created_at": "2026-08-21T14:50:07.000Z",
-  "updated_at": "2026-08-21T14:53:18.000Z",
+  "updated_at": "2026-08-21T15:45:32.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

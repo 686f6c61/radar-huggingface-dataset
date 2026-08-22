@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "DragonAura/VidRec",
+  "slug": "dragonaura-vidrec",
+  "author": "DragonAura",
+  "url": "https://huggingface.co/DragonAura/VidRec",
+  "created_at": "2026-08-22T18:06:07.000Z",
+  "updated_at": "2026-08-22T18:08:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9696775408,
+  "parameters_human": "9.70B",
+  "storage_bytes": 19393711392,
+  "storage_human": "19.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DragonAura (Yixuan Li) · GitHub",
+      "url": "https://github.com/DragonAura",
+      "snippet": "A PhD student of the Department of Electronic Engineering, Tsinghua University. Served as the chairman of @eesast in 2024-2025 - DragonAura"
+    },
+    {
+      "title": "GitHub - DragonAura/DragonAura",
+      "url": "https://github.com/DragonAura/DragonAura",
+      "snippet": "Contribute to DragonAura/DragonAura development by creating an account on GitHub."
+    },
+    {
+      "title": "TrueMarks VidRec LE | Forensic video recovery worksheet",
+      "url": "https://vidrec-le.burtson.ai/",
+      "snippet": "NIST-anchored DVR clock calibration, AI timestamp extraction, recovery-scope tracking, and court-ready DOCX reports — online or off. For law-enforcement video forensic examiners."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

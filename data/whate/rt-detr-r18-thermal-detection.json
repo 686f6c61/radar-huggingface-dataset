@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "whate/rt-detr-r18-thermal-detection",
+  "slug": "whate-rt-detr-r18-thermal-detection",
+  "author": "whate",
+  "url": "https://huggingface.co/whate/rt-detr-r18-thermal-detection",
+  "created_at": "2026-08-22T16:27:17.000Z",
+  "updated_at": "2026-08-22T16:32:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rt_detr",
+    "object-detection",
+    "rt-detr",
+    "computer-vision",
+    "thermal-imaging",
+    "infrared",
+    "uav",
+    "pytorch",
+    "dataset:HIT-UAV",
+    "base_model:PekingU/rtdetr_r18vd",
+    "base_model:finetune:PekingU/rtdetr_r18vd",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20113380,
+  "parameters_human": "20.1M",
+  "storage_bytes": 81582683,
+  "storage_human": "82 MB",
+  "base_model": "PekingU/rtdetr_r18vd",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lyuwenyu/RT-DETR: [CVPR 2024] Official RT-DETR (RTDETR paddle ...",
+      "url": "https://github.com/lyuwenyu/RT-DETR",
+      "snippet": "[CVPR 2024] Official RT-DETR (RTDETR paddle pytorch), Real-Time DEtection TRansformer, DETRs Beat YOLOs on Real-time Object Detection. 🔥 🔥 🔥 - lyuwenyu/RT-DETR"
+    },
+    {
+      "title": "RT-DETR - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.42.4/en/model_doc/rt_detr",
+      "snippet": "RT-DETR Overview The RT-DETR model was proposed in DETRs Beat YOLOs on Real-time Object Detection by Wenyu Lv, Yian Zhao, Shangliang Xu, Jinman Wei, Guanzhong Wang, Cheng Cui, Yuning Du, Qingqing Dang, Yi Liu. RT-DETR is an object detection model that stands for \"Real-Time DEtection Transformer.\" This model is designed to perform object detection tasks with a focus on achieving real-time ..."
+    },
+    {
+      "title": "PekingU/rtdetr_r18vd · Hugging Face",
+      "url": "https://huggingface.co/PekingU/rtdetr_r18vd",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - nobleo/RT_DETR: RT-DETR, Real-Time DEtection TRansformer",
+      "url": "https://github.com/nobleo/RT_DETR",
+      "snippet": "RT-DETR, Real-Time DEtection TRansformer. Contribute to nobleo/RT_DETR development by creating an account on GitHub."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
+    }
+  ]
+}

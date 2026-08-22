@@ -5,7 +5,7 @@
   "author": "NILKNARFGonzo",
   "url": "https://huggingface.co/NILKNARFGonzo/floppyx4-nonsensicalEssential",
   "created_at": "2026-08-07T16:42:43.000Z",
-  "updated_at": "2026-08-21T01:10:26.000Z",
+  "updated_at": "2026-08-22T14:43:21.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,8 +14,10 @@
     "en"
   ],
   "tags": [
+    "safetensors",
     "lora",
     "text-generation",
+    "conversational",
     "en",
     "dataset:qsardor/Claude-Sonnet-Opus",
     "base_model:NILKNARFGonzo/floppyx4-nonsensicalEssential-base",
@@ -28,11 +30,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 35925736,
-  "storage_human": "36 MB",
+  "storage_bytes": 41057984,
+  "storage_human": "41 MB",
   "base_model": "NILKNARFGonzo/floppyx4-nonsensicalEssential-base",
-  "formats": [],
-  "is_conversational": false,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

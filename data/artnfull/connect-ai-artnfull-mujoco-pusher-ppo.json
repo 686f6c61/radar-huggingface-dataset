@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "artnfull/connect-ai-artnfull-mujoco-pusher-ppo",
+  "slug": "artnfull-connect-ai-artnfull-mujoco-pusher-ppo",
+  "author": "artnfull",
+  "url": "https://huggingface.co/artnfull/connect-ai-artnfull-mujoco-pusher-ppo",
+  "created_at": "2026-08-22T14:28:41.000Z",
+  "updated_at": "2026-08-22T14:28:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "gymnasium",
+    "mujoco",
+    "robotics",
+    "physical-ai",
+    "pusher-v5",
+    "deep-reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1316984,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "artnfull (artnfull) - Hugging Face",
+      "url": "https://huggingface.co/artnfull/models",
+      "snippet": "artnfull&#x27;s models4 Sort: Recently updated artnfull/llama-3.2-1b-aiartnfullmodel-V2 Text Generation • 1B•Updated 16 days ago• 299"
+    },
+    {
+      "title": "artnfull (artnfull) - Hugging Face",
+      "url": "https://huggingface.co/artnfull/datasets",
+      "snippet": "Recent Activity liked a Space3 days ago WonseokJayJung/connect-ai-lab updated a model6 days ago artnfull/llama-3.2-1b-aiartnfullmodel-V2 published a model6 days ago artnfull/llama-3.2-1b-aiartnfullmodel-V2 View all activity"
+    },
+    {
+      "title": "GitHub - google-deepmind/mujoco: Multi-Joint dynamics with Contact. A ...",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "snippet": "MuJoCo stands for Mu lti- Jo int dynamics with Co ntact. It is a general purpose physics engine that aims to facilitate research and development in robotics, biomechanics, graphics and animation, machine learning, and other areas which demand fast and accurate simulation of articulated structures interacting with their environment."
+    },
+    {
+      "title": "GitHub - google-deepmind/mujoco_menagerie: A collection of high-quality ...",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie",
+      "snippet": "Menagerie is a collection of high-quality models for the MuJoCo physics engine, curated by Google DeepMind. A physics simulator is only as good as the model it is simulating, and in a powerful simulator like MuJoCo with many modeling options, it is easy to create \"bad\" models which do not behave as expected."
+    },
+    {
+      "title": "MuJoCo — Advanced Physics Simulation",
+      "url": "https://mujoco.org/",
+      "snippet": "MuJoCo is a free and open source physics engine that aims to facilitate research and development in robotics, biomechanics, graphics and animation, and other areas where fast and accurate simulation is needed."
+    }
+  ]
+}

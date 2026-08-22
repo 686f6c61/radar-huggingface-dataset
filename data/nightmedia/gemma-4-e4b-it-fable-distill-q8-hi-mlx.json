@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nightmedia/Gemma-4-E4B-it-Fable-Distill-q8-hi-mlx",
+  "slug": "nightmedia-gemma-4-e4b-it-fable-distill-q8-hi-mlx",
+  "author": "nightmedia",
+  "url": "https://huggingface.co/nightmedia/Gemma-4-E4B-it-Fable-Distill-q8-hi-mlx",
+  "created_at": "2026-08-22T02:03:19.000Z",
+  "updated_at": "2026-08-22T12:38:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "transformers",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:armand0e/Gemma-4-E4B-it-Fable-Distill",
+    "base_model:quantized:armand0e/Gemma-4-E4B-it-Fable-Distill",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2806609226,
+  "parameters_human": "2.81B",
+  "storage_bytes": 9379918612,
+  "storage_human": "9.4 GB",
+  "base_model": "armand0e/Gemma-4-E4B-it-Fable-Distill",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma-4-E4B-it-Fable-Distill-q8-hi-mlx - Hugging Face",
+      "url": "https://huggingface.co/nightmedia/Gemma-4-E4B-it-Fable-Distill-q8-hi-mlx",
+      "snippet": "Instructions to use nightmedia/Gemma-4-E4B-it-Fable-Distill-q8-hi-mlx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "gemma-4 - a nightmedia Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/nightmedia/gemma-4",
+      "snippet": "nightmedia/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking-mxfp8-mlx"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 E4B — The Daily Driver for Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e4b",
+      "snippet": "Models /Gemma 4 E4B Gemma 4 E4B — The Daily Driver for Local AI Gemma 4 E4B is Google&#x27;s most practical local model: 4.4B parameters, 8GB VRAM minimum, multimodal input, and Thinking Mode — all in a package that runs on any modern consumer GPU."
+    },
+    {
+      "title": "Gemma 4 Guide: Download, Run Locally, Compare Models & API (2026 ...",
+      "url": "https://gemma4.org/",
+      "snippet": "Choose the right Gemma 4 model, open the best download path, check memory requirements, and copy the fastest local or API quick starts."
+    }
+  ]
+}

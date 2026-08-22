@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "huggingfacenzk/needle2",
+  "slug": "huggingfacenzk-needle2",
+  "author": "huggingfacenzk",
+  "url": "https://huggingface.co/huggingfacenzk/needle2",
+  "created_at": "2026-08-22T12:48:36.000Z",
+  "updated_at": "2026-08-22T12:48:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cactus-needle",
+  "languages": [],
+  "tags": [
+    "cactus-needle",
+    "needle",
+    "tool-calling",
+    "function-calling",
+    "on-device",
+    "edge",
+    "quantization",
+    "webassembly",
+    "text-generation",
+    "arxiv:2607.18363",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5920843600,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaushikmondal2289/needle2 · Hugging Face",
+      "url": "https://huggingface.co/kaushikmondal2289/needle2",
+      "snippet": "Duplicated from Cactus-Compute/needle2 kaushikmondal2289 / needle2 like 0 Text Generation cactus-needle needle tool-calling function-calling on-device edge quantization webassembly arxiv:2607.18363 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Needle 2 Simple Attention Network Quickstart with Python Behaviour System facts Deploy Needle Tool retrieval ..."
+    },
+    {
+      "title": "Ank0X0/needle2 · Hugging Face",
+      "url": "https://huggingface.co/Ank0X0/needle2",
+      "snippet": "Duplicated from Cactus-Compute/needle2 Ank0X0 / needle2 like 0 Text Generation cactus-needle needle tool-calling function-calling on-device edge quantization webassembly arxiv:2607.18363 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Needle 2 Simple Attention Network Quickstart with Python Behaviour System facts Deploy Needle Tool retrieval Confidence ..."
+    },
+    {
+      "title": "GitHub - cactus-compute/needle: 14MB foundation model for tiny devices ...",
+      "url": "https://github.com/cactus-compute/needle",
+      "snippet": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots. - cactus-compute/needle"
+    },
+    {
+      "title": "Needle 2 - The 14 MB Agentic LLM for Tiny Devices | Cactus",
+      "url": "https://cactuscompute.com/needle",
+      "snippet": "An open 45M-parameter model for tool calling, device use, and structured extraction. Needle 2 runs as a 14 MB binary in 28 MB of session RAM."
+    },
+    {
+      "title": "Needle 2: 14MB Base Model for Mobile and Wearable Edge AI",
+      "url": "https://aitoolly.com/ai-news/article/2026-08-16-needle-2-the-14mb-base-model-revolutionizing-ai-for-small-devices-and-edge-computing",
+      "snippet": "Explore Needle 2 by cactus-compute, a 14MB base model designed for mobile, wearables, and robotics. Learn how this compact AI enables efficient edge computing."
+    }
+  ]
+}

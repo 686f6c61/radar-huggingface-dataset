@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained",
+  "slug": "inevitablevalor-pi05_qwen_behavior_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained",
+  "author": "Inevitablevalor",
+  "url": "https://huggingface.co/Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_wrist_bs256_4gpu_23dim_droid_attnmap_pretrained",
+  "created_at": "2026-08-22T18:58:29.000Z",
+  "updated_at": "2026-08-22T19:00:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44826091520,
+  "storage_human": "44.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_train ...",
+      "url": "https://huggingface.co/Inevitablevalor/pi05_qwen_behavior_15tasks_aug_attnmap_abstract_train_bs256_4gpu_23dim_droid_attnmap_pretrained",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pi05_qwen_behavior_15tasks_aug_with_ir_train_bs256_4gpu_23dim",
+      "url": "https://huggingface.co/arielchen07/pi05_qwen_behavior_15tasks_aug_with_ir_train_bs256_4gpu_23dim",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - moon-fall/openpi_qwen",
+      "url": "https://github.com/moon-fall/openpi_qwen",
+      "snippet": "To run the models in this repository, you will need an NVIDIA GPU with at least the following specifications. These estimations assume a single GPU, but you can also use multiple GPUs with model parallelism to reduce per-GPU memory requirements by configuring fsdp_devices in the training config. Please also note that the current training script does not yet support multi-node training."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "π : a Vision-Language-Action Model with u L L C 0. Open-World ...",
+      "url": "https://arxiv.org/pdf/2504.16054",
+      "snippet": "Abstract—In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π0.5, a new model based on π0 that uses co-training on heterogeneous ..."
+    }
+  ]
+}

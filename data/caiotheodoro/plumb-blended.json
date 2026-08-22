@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "caiotheodoro/plumb-blended",
+  "slug": "caiotheodoro-plumb-blended",
+  "author": "caiotheodoro",
+  "url": "https://huggingface.co/caiotheodoro/plumb-blended",
+  "created_at": "2026-08-22T19:03:29.000Z",
+  "updated_at": "2026-08-22T19:05:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "construction",
+    "pay-application",
+    "curriculum",
+    "text-generation",
+    "dataset:caiotheodoro/plumb",
+    "base_model:mlx-community/Qwen3-1.7B-4bit",
+    "base_model:adapter:mlx-community/Qwen3-1.7B-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39870300,
+  "storage_human": "40 MB",
+  "base_model": "mlx-community/Qwen3-1.7B-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "caiotheodoro (Caio Theodoro) - Hugging Face",
+      "url": "https://huggingface.co/caiotheodoro/models",
+      "snippet": "User profile of Caio Theodoro on Hugging Face"
+    },
+    {
+      "title": "habeas/docs/HANDOFF.md at main · caiotheodoro/habeas · GitHub",
+      "url": "https://github.com/caiotheodoro/habeas/blob/main/docs/HANDOFF.md",
+      "snippet": "Habeas — Handoff (fresh-agent bootstrap) What this is: a fine-tune of Qwen3.8-27B (28B multimodal, Apache-2.0) that validates Form I-9 + presented documents → audit report citing M-274 Handbook / 8 CFR 274a.2. Synthetic-only (heavy PII — never use real forms). Specs: README.md (atomic spec), CONTRACTS.md (fixed benchmark contracts), docs/methodology.md (shared recipe across specula ..."
+    },
+    {
+      "title": "Blender AI: AI-Powered 3D Modeling Tools for Blender",
+      "url": "https://3d-agent.com/blender-ai",
+      "snippet": "AI-powered 3D modeling tools for Blender. Generate models from text with 3D-Agent, compare top AI plugins, and start creating in minutes."
+    },
+    {
+      "title": "BlenderGPT | Your 3D assistant for Blender",
+      "url": "https://blendergpt.org/",
+      "snippet": "Create 3D models from words or images, find assets, rig models, and shape complete Blender scenes through conversation."
+    },
+    {
+      "title": "GitHub - caiotheodoro/ML: This repository contains a collection of ...",
+      "url": "https://github.com/caiotheodoro/ML",
+      "snippet": "This repository contains a collection of machine learning and data analysis projects, each focusing on different datasets and techniques. - caiotheodoro/ML"
+    }
+  ]
+}

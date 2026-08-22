@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/AfriqueQwen3.5-9B-50Langs-i1-GGUF",
   "created_at": "2026-08-22T02:19:10.000Z",
-  "updated_at": "2026-08-22T03:15:45.000Z",
+  "updated_at": "2026-08-22T10:40:59.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -139,8 +139,8 @@
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 44175180960,
-  "storage_human": "44.2 GB",
+  "storage_bytes": 110211459040,
+  "storage_human": "110.2 GB",
   "base_model": "McGill-NLP/AfriqueQwen3.5-9B-50Langs",
   "formats": [
     "gguf"

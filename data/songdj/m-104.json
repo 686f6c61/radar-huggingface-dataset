@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "songdj/m-104",
+  "slug": "songdj-m-104",
+  "author": "songdj",
+  "url": "https://huggingface.co/songdj/m-104",
+  "created_at": "2026-08-22T16:13:35.000Z",
+  "updated_at": "2026-08-22T16:58:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3054832,
+  "parameters_human": "3.1M",
+  "storage_bytes": 378419000108,
+  "storage_human": "378.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI DJ Mix Generator | Free.ai",
+      "url": "https://free.ai/music/dj/",
+      "snippet": "A lot. Beyond AI DJ Mix, Free.ai bundles vocal removal, mastering, format conversion, and other audio production tasks alongside hundreds of other free AI tools - chat, images, audio, video, code, and more - all sharing the same daily token pool. Browse the categories to find your next one."
+    },
+    {
+      "title": "Ai Mix Dj",
+      "url": "https://aimixdj.com/",
+      "snippet": "AimixDJ is an AI-powered DJ software and automatic song player that mixes music non-stop like a real DJ. Try virtual DJ-style mixing in your browser for dance, parties, and events."
+    },
+    {
+      "title": "AI Song Maker Models: Create Music with AI Effortlessly",
+      "url": "https://www.aisongmaker.io/model",
+      "snippet": "Explore AI Song Maker models to generate music effortlessly. Turn text, melodies, or beats into full songs with advanced AI composition tools."
+    },
+    {
+      "title": "AI Scientist - a songdj Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/songdj/ai-scientist",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from songdj"
+    },
+    {
+      "title": "Is This Song AI? — Free AI Music Detector & Scanner | SlopTracker",
+      "url": "https://sloptracker.org/scanner",
+      "snippet": "Check if a song is AI-generated. Paste any Spotify track or audio URL to instantly detect AI music using spectral and temporal audio analysis. Free, fast, and accurate."
+    }
+  ]
+}

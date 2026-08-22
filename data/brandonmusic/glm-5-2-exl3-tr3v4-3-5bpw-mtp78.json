@@ -5,7 +5,7 @@
   "author": "brandonmusic",
   "url": "https://huggingface.co/brandonmusic/GLM-5.2-EXL3-TR3v4-3.5bpw-MTP78",
   "created_at": "2026-08-01T18:02:44.000Z",
-  "updated_at": "2026-08-22T04:45:09.000Z",
+  "updated_at": "2026-08-22T12:04:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 8,
-  "downloads_30d": 59691,
+  "downloads_30d": 63345,
   "trending_score": 0,
   "parameters": 173098113024,
   "parameters_human": "173.10B",

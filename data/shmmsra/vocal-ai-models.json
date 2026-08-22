@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "shmmsra/vocal-ai-models",
+  "slug": "shmmsra-vocal-ai-models",
+  "author": "shmmsra",
+  "url": "https://huggingface.co/shmmsra/vocal-ai-models",
+  "created_at": "2026-08-21T08:39:07.000Z",
+  "updated_at": "2026-08-22T11:49:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "chatterbox",
+  "languages": [],
+  "tags": [
+    "chatterbox",
+    "onnx",
+    "text-to-speech",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4358263230,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "Add an AI Voice Model | Voice Models",
+      "url": "https://voice-models.com/add",
+      "snippet": "Submit an AI voice model to Voice Models with its source URL, voice details, and RVC metadata."
+    },
+    {
+      "title": "Train Voice Model | Custom AI Voice Model Training | Musci",
+      "url": "https://musci.io/train-voice-model",
+      "snippet": "Train Voice Model Train voice model that captures exactly how you sound. Upload audio samples, and our AI creates your personal model in 30 minutes. Use it to sing any song, create covers, or generate voice content. One trained model, unlimited possibilities."
+    },
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects."
+    },
+    {
+      "title": "LocalAI is the open-source AI engine. Run any model - LLMs ... - GitHub",
+      "url": "https://github.com/mudler/LocalAI",
+      "snippet": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required. - mudler/LocalAI"
+    }
+  ]
+}

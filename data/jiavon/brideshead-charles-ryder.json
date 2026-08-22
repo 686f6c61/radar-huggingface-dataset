@@ -5,7 +5,7 @@
   "author": "jiavon",
   "url": "https://huggingface.co/jiavon/brideshead-charles-ryder",
   "created_at": "2026-08-21T20:49:39.000Z",
-  "updated_at": "2026-08-21T20:49:54.000Z",
+  "updated_at": "2026-08-21T22:23:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 172955358,
-  "storage_human": "173 MB",
+  "storage_bytes": 334488550,
+  "storage_human": "334 MB",
   "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

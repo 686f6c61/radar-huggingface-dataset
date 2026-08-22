@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "weepiess2383/arc-geoa-pretrain-0814b",
+  "slug": "weepiess2383-arc-geoa-pretrain-0814b",
+  "author": "weepiess2383",
+  "url": "https://huggingface.co/weepiess2383/arc-geoa-pretrain-0814b",
+  "created_at": "2026-08-22T12:10:12.000Z",
+  "updated_at": "2026-08-22T12:11:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3557994508,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GeoAI | ArcGIS Pro documentation - Esri",
+      "url": "https://doc.esri.com/en/arcgis-pro/latest/help/analysis/ai/geoai.html",
+      "snippet": "GeoAI integrates artificial intelligence (AI) with spatial data, science, and geospatial technology to increase understanding and solve spatial problems. GeoAI includes the application of traditional AI techniques to generate spatial data through the extraction, classification, and detection of information from structured and unstructured data."
+    },
+    {
+      "title": "Overview of pretrained AI models in ArcGIS Living Atlas",
+      "url": "https://community.esri.com/t5/arcgis-living-atlas-blog/overview-of-pretrained-ai-models-in-arcgis-living/ba-p/1367078",
+      "snippet": "Pretrained AI models are available to perform a variety of tasks, such as extracting building footprints for urban planning, classifying structures for insurance purposes, generating change maps from time series data, and more. These models also serve as a starting point for you to fine-tune them us..."
+    },
+    {
+      "title": "weepiess2383/arc-skip28-pretrain-jul14 · Hugging Face",
+      "url": "https://huggingface.co/weepiess2383/arc-skip28-pretrain-jul14",
+      "snippet": "Archive: skip28-pretrain-jul14 EMA-consolidated research checkpoint archive. Original NEO skip-28 OXE pretrain (Jul 14). Base of the m323 skip-28 finetune line (frozen 90.2@5k pinned-stack)."
+    },
+    {
+      "title": "How Generate Embeddings Using AI Models works",
+      "url": "https://doc.esri.com/en/arcgis-pro/latest/tool-reference/geoai/how-generate-embeddings-using-ai-models-works.html",
+      "snippet": "Generate Embeddings Using AI Models You can use the Generate Embeddings Using AI Models tool to generate embeddings for spatial data using pretrained embedding or foundation models. This tool does not require model training or labeled data."
+    },
+    {
+      "title": "Pretrained Models | Feature Extraction & Deep Learning Models - Esri",
+      "url": "https://www.esri.com/en-us/geospatial-artificial-intelligence/deep-learning-models",
+      "snippet": "Access 75+ pretrained models in ArcGIS to power feature extraction and deep learning. Build and scale geospatial AI faster with ready-to-use models."
+    }
+  ]
+}

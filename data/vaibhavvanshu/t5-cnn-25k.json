@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vaibhavvanshu/t5-cnn-25k",
+  "slug": "vaibhavvanshu-t5-cnn-25k",
+  "author": "vaibhavvanshu",
+  "url": "https://huggingface.co/vaibhavvanshu/t5-cnn-25k",
+  "created_at": "2026-08-22T12:31:54.000Z",
+  "updated_at": "2026-08-22T12:58:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "summarization",
+    "text-summarization",
+    "cnn-dailymail",
+    "base_model:google-t5/t5-small",
+    "base_model:finetune:google-t5/t5-small",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": "google-t5/t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vaibhavvanshu · GitHub",
+      "url": "https://github.com/vaibhavvanshu",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "GitHub - google-research/t5x",
+      "url": "https://github.com/google-research/t5x",
+      "snippet": "Go to T5X ReadTheDocs Documentation Page. T5X is a modular, composable, research-friendly framework for high-performance, configurable, self-service training, evaluation, and inference of sequence models (starting with language) at many scales. It is essentially a new and improved implementation of the T5 codebase (based on Mesh TensorFlow) in JAX and Flax. To learn more, see the T5X Paper ..."
+    },
+    {
+      "title": "MadFace/t5-cnn · Hugging Face",
+      "url": "https://huggingface.co/MadFace/t5-cnn",
+      "snippet": "Edit model card t5-cnn This model was trained from scratch on an unknown dataset. It achieves the following results on the evaluation set: Loss: 1.4562 Rouge1: 25.1836 Rouge2: 12.0806 Rougel: 20.818 Rougelsum: 23.6868 Gen Len: 18.9986 Model description More information needed Intended uses & limitations More information needed Training and ..."
+    },
+    {
+      "title": "T5 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/t5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "wangyue114514",
   "url": "https://huggingface.co/wangyue114514/rwkv7-g1d-0.4b-hf",
   "created_at": "2026-08-19T11:15:28.000Z",
-  "updated_at": "2026-08-20T03:16:29.000Z",
+  "updated_at": "2026-08-21T13:13:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 827,
+  "downloads_30d": 1120,
   "trending_score": 0,
   "parameters": 450767872,
   "parameters_human": "450.8M",

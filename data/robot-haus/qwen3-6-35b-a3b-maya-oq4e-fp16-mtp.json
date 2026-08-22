@@ -5,7 +5,7 @@
   "author": "Robot-Haus",
   "url": "https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ4e-fp16-mtp",
   "created_at": "2026-08-20T00:24:59.000Z",
-  "updated_at": "2026-08-20T00:26:23.000Z",
+  "updated_at": "2026-08-22T00:46:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": 6190670768,
   "parameters_human": "6.19B",

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "muskaanmahes/diabetes_readmission_finetuned",
+  "slug": "muskaanmahes-diabetes_readmission_finetuned",
+  "author": "muskaanmahes",
+  "url": "https://huggingface.co/muskaanmahes/diabetes_readmission_finetuned",
+  "created_at": "2026-08-22T18:16:46.000Z",
+  "updated_at": "2026-08-22T18:16:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muskaanmahes (muskaan mahes) - Hugging Face",
+      "url": "https://huggingface.co/muskaanmahes",
+      "snippet": "User profile of muskaan mahes on Hugging Face"
+    },
+    {
+      "title": "aai540-group3/diabetes-readmission · Hugging Face",
+      "url": "https://huggingface.co/aai540-group3/diabetes-readmission",
+      "snippet": "This model predicts 30-day hospital readmissions for diabetic patients using historical patient data and machine learning techniques. The model aims to identify high-risk individuals enabling targeted interventions and improved healthcare resource allocation."
+    },
+    {
+      "title": "MagangaM/Diabetes-Hospital-Readmission-Prediction - GitHub",
+      "url": "https://github.com/MagangaM/Diabetes-Hospital-Readmission-Prediction",
+      "snippet": "🩺 Diabetes Hospital Readmission Prediction A Machine Learning project that analyzes the Diabetes 130-US hospitals dataset to predict whether a patient will be readmitted after discharge. The project follows a complete machine learning workflow—from exploratory data analysis and data cleaning to feature engineering, model training, evaluation, and feature importance analysis."
+    },
+    {
+      "title": "GitHub - muhsinasafeeth/diabetes-readmission: Predicting 30-Day ...",
+      "url": "https://github.com/muhsinasafeeth/diabetes-readmission/tree/main",
+      "snippet": "Hospital readmissions within 30 days are a major quality and cost concern in healthcare. Early identification of high-risk diabetic patients allows clinicians to intervene before discharge — potentially reducing unnecessary readmissions and improving patient outcomes. This project builds a complete, end-to-end ML pipeline on the UCI Diabetes 130-US Hospitals (1999-2008) dataset, covering ..."
+    },
+    {
+      "title": "Predictive Analytics for Diabetic Patient Care: Leveraging AI to ...",
+      "url": "https://www.techscience.com/CMES/v143n1/60445/html",
+      "snippet": "Predictive Analytics for Diabetic Patient Care: Leveraging AI to Forecast Readmission and Hospital Stays Saleh Albahli * Department of Information Technology, College of Computer, Qassim University, Buraydah, 51452, Saudi Arabia * Corresponding Author: Saleh Albahli. Email: (This article belongs to the Special Issue: Exploring the Impact of Artificial Intelligence on Healthcare: Insights into ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "backpack-run/gemma-3-4b-it-GGUF",
+  "slug": "backpack-run-gemma-3-4b-it-gguf",
+  "author": "backpack-run",
+  "url": "https://huggingface.co/backpack-run/gemma-3-4b-it-GGUF",
+  "created_at": "2026-08-22T18:53:31.000Z",
+  "updated_at": "2026-08-22T18:55:35.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "backpack",
+    "multimodal",
+    "image-text-to-text",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:quantized:google/gemma-3-4b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 10301244704,
+  "storage_human": "10.3 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/gemma-3-4b-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-3-4b-it-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ggml-org/gemma-3-4b-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/gemma-3-4b-it-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/gemma-3-4b-it-GGUF - Secret AI",
+      "url": "https://secretai.io/models/unsloth/gemma-3-4b-it-GGUF",
+      "snippet": "Fine-tune Gemma 3 (12B) for free using our Google Colab notebook here! Read our Blog about Gemma 3 support: unsloth.ai/blog/gemma3 View the rest of our notebooks in our docs here. Export your fine-tuned model to GGUF, Ollama, llama.cpp or 🤗HF."
+    },
+    {
+      "title": "gemma-3-4b-it-GGUF: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-3-4b-it-gguf-ggml-org",
+      "snippet": "Overview gemma-3-4b-it-GGUF is a 4-billion-parameter instruction-tuned multimodal model from ggml-org that processes text and image inputs to generate text outputs. Built by Google DeepMind using the same research foundation as the Gemini models, Gemma 3 operates with a 128K token context window, supports over 140 languages, and handles images normalized to 896×896 resolution encoded as 256 ..."
+    },
+    {
+      "title": "gemma-3-4b-it-GGUF: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma-3-4b-it-gguf-unsloth",
+      "snippet": "Overview gemma-3-4b-it-GGUF is a 4-billion parameter multimodal language model created by unsloth, built on Google DeepMind&#x27;s Gemma 3 architecture. This instruction-tuned variant processes both text and image inputs to generate text responses, with a 128K token context window supporting over 140 languages. The model was trained on 4 trillion tokens across web documents, code, mathematics, and ..."
+    }
+  ]
+}

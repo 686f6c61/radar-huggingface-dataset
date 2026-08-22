@@ -5,7 +5,7 @@
   "author": "NYSgpt",
   "url": "https://huggingface.co/NYSgpt/44b-reranker-minilm-l6",
   "created_at": "2026-07-31T08:24:29.000Z",
-  "updated_at": "2026-08-18T06:22:33.000Z",
+  "updated_at": "2026-08-22T02:57:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-ranking",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 41,
   "trending_score": 0,
   "parameters": 22713601,
   "parameters_human": "22.7M",

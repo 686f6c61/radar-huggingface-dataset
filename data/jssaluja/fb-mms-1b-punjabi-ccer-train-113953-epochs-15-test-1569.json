@@ -5,7 +5,7 @@
   "author": "jssaluja",
   "url": "https://huggingface.co/jssaluja/fb-mms-1b-punjabi-ccer-train-113953-epochs-15-test-1569",
   "created_at": "2026-08-21T10:41:50.000Z",
-  "updated_at": "2026-08-21T13:25:01.000Z",
+  "updated_at": "2026-08-22T09:11:51.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 964734403,
   "parameters_human": "964.7M",
-  "storage_bytes": 3877241867,
-  "storage_human": "3.9 GB",
+  "storage_bytes": 34895160703,
+  "storage_human": "34.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

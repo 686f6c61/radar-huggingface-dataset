@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Alniyat5f/WuQi-V3-Onyx-27B",
+  "slug": "alniyat5f-wuqi-v3-onyx-27b",
+  "author": "Alniyat5f",
+  "url": "https://huggingface.co/Alniyat5f/WuQi-V3-Onyx-27B",
+  "created_at": "2026-08-17T01:47:30.000Z",
+  "updated_at": "2026-08-22T19:00:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "WuQi",
+    "WuQi-V3",
+    "conversational",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55583303618,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "Alniyat Alniyat5f - GitHub",
+      "url": "https://github.com/Alniyat5f",
+      "snippet": "GitHub is where Alniyat5f builds software. Joined Aug 11, 2026 Block or report Alniyat5f Block user"
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "Qwen3.6-27B: 27B Model Beats 397B on Coding (2026)",
+      "url": "https://www.buildfastwithai.com/blogs/qwen3-6-27b-review-2026",
+      "snippet": "Unsloth Studio is a browser-based local AI interface that handles model download, configuration, and serving automatically. It supports Qwen3.6-27B with day-zero GGUFs and developer role support for agentic coding tools like OpenCode and Codex. Install via their one-line script, open localhost:8888, search for Qwen3.6-27B, and select your quant."
+    },
+    {
+      "title": "Qwen3.6 27B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-6-27b/",
+      "snippet": "Qwen3.6 27B is a dense language model from Alibaba Cloud&#x27;s Qwen3.6 family. With 27 billion parameters, it delivers strong performance across complex reasoning, coding, and language understanding tasks."
+    }
+  ]
+}

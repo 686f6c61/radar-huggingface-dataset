@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Daemons-Q/qsh-satellite-telemanom-ckks-student",
+  "slug": "daemons-q-qsh-satellite-telemanom-ckks-student",
+  "author": "Daemons-Q",
+  "url": "https://huggingface.co/Daemons-Q/qsh-satellite-telemanom-ckks-student",
+  "created_at": "2026-08-05T03:45:00.000Z",
+  "updated_at": "2026-08-22T12:38:29.000Z",
+  "license": "cc-by-3.0-igo",
+  "license_family": "unknown",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "quantum-safe",
+    "privacy-preserving",
+    "satellite-comms",
+    "onnxruntime-web",
+    "time-series-forecasting",
+    "arxiv:2406.17826",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1696,
+  "storage_human": "1696 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daemons-Q/qsh-satellite-telemanom-esa · Hugging Face",
+      "url": "https://huggingface.co/Daemons-Q/qsh-satellite-telemanom-esa",
+      "snippet": "Telemanom LSTM forecaster (per channel) 2 x LSTM (80), sequence length 250, dropout 0.3, non-parametric dynamic threshold with pruning Part of QSMPC-QKD-QHE-AI-Hybrid, a quantum-safe orchestration demo. This is the plaintext model for the satellite_comms use case; the encrypted path runs a distilled student, not this model."
+    },
+    {
+      "title": "Daemons-Q (Amon Koike) - Hugging Face",
+      "url": "https://huggingface.co/Daemons-Q",
+      "snippet": "Daemons-Q/qsh-satellite-telemanom-esa Time Series Forecasting • 80.5k•Updated about 5 hours ago"
+    },
+    {
+      "title": "GitHub - khundman/telemanom: A framework for using LSTMs to detect ...",
+      "url": "https://github.com/khundman/telemanom",
+      "snippet": "A framework for using LSTMs to detect anomalies in multivariate time series data. Includes spacecraft anomaly data and experiments from the Mars Science Laboratory and SMAP missions. - khundman/telemanom"
+    },
+    {
+      "title": "telemanom/telemanom/modeling.py at master · khundman/telemanom · GitHub",
+      "url": "https://github.com/khundman/telemanom/blob/master/telemanom/modeling.py",
+      "snippet": "A framework for using LSTMs to detect anomalies in multivariate time series data. Includes spacecraft anomaly data and experiments from the Mars Science Laboratory and SMAP missions. - khundman/tel..."
+    },
+    {
+      "title": "[1802.04431] Detecting Spacecraft Anomalies Using LSTMs and ...",
+      "url": "https://arxiv.org/abs/1802.04431",
+      "snippet": "As spacecraft send back increasing amounts of telemetry data, improved anomaly detection systems are needed to lessen the monitoring burden placed on operations engineers and reduce operational risk. Current spacecraft monitoring systems only target a subset of anomaly types and often require costly expert knowledge to develop and maintain due to challenges involving scale and complexity. We ..."
+    }
+  ]
+}

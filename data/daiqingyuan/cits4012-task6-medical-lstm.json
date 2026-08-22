@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "daiqingyuan/cits4012-task6-medical-lstm",
+  "slug": "daiqingyuan-cits4012-task6-medical-lstm",
+  "author": "daiqingyuan",
+  "url": "https://huggingface.co/daiqingyuan/cits4012-task6-medical-lstm",
+  "created_at": "2026-08-22T15:19:39.000Z",
+  "updated_at": "2026-08-22T18:09:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "lstm",
+    "medical-text-classification",
+    "self-trained-word2vec",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21678861,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Alice-Yuan0927/CITS4012: Assignment",
+      "url": "https://github.com/Alice-Yuan0927/CITS4012",
+      "snippet": "Assignment. Contribute to Alice-Yuan0927/CITS4012 development by creating an account on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Test Case Generation using LSTM for Medical Reminder System with ...",
+      "url": "https://www.researchgate.net/publication/389601485_Test_Case_Generation_using_LSTM_for_Medical_Reminder_System_with_Explainable_AI",
+      "snippet": "PDF | On Mar 6, 2025, Shahzaib Ur Rehman published Test Case Generation using LSTM for Medical Reminder System with Explainable AI | Find, read and cite all the research you need on ResearchGate"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Awesome AI for Science - GitHub",
+      "url": "https://github.com/hyperai/awesome-ai4s",
+      "snippet": "Awesome AI for Science EN | CN Foreword AI+ Biopharmaceutical 1. AdaDR outperforms multiple benchmark methods in drug repositioning 2. IMN4NPD accelerates the dereplication of extensive clusters in molecular networks, providing annotations for self-loops and paired nodes 3. Deep generative model MIDAS for mosaic integration of single-cell multi ..."
+    }
+  ]
+}

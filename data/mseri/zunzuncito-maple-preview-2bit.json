@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mseri/zunzuncito-maple-preview-2bit",
+  "slug": "mseri-zunzuncito-maple-preview-2bit",
+  "author": "mseri",
+  "url": "https://huggingface.co/mseri/zunzuncito-maple-preview-2bit",
+  "created_at": "2026-08-22T16:10:34.000Z",
+  "updated_at": "2026-08-22T16:13:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "zunzuncito",
+  "languages": [],
+  "tags": [
+    "zunzuncito",
+    "text-generation",
+    "base_model:deepgrove/maple-preview-2bit-mlx",
+    "base_model:finetune:deepgrove/maple-preview-2bit-mlx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5381202501,
+  "storage_human": "5.4 GB",
+  "base_model": "deepgrove/maple-preview-2bit-mlx",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepgrove/maple-preview-2bit-mlx · Hugging Face",
+      "url": "https://huggingface.co/deepgrove/maple-preview-2bit-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepgrove/maple-preview · Hugging Face",
+      "url": "https://huggingface.co/deepgrove/maple-preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Maple-Preview: Benchmarks, Pricing & Context Window — Benchgen",
+      "url": "https://benchgen.com/models/deepgrove/maple-preview",
+      "snippet": "DeepGrove&#x27;s open-source 20B-A1B ternary-weight reasoning model — 87.5% AIME26, runs at 218 tok/s on a Mac mini M4. MIT license."
+    },
+    {
+      "title": "zunzuncito/maple.c at main · mseri/zunzuncito · GitHub",
+      "url": "https://github.com/mseri/zunzuncito/blob/main/maple.c",
+      "snippet": "zunzuncito — Gemma-4 26B-A4B colibrì engine for a small-RAM machine - zunzuncito/maple.c at main · mseri/zunzuncito"
+    },
+    {
+      "title": "DeepGrove — Frontier Intelligence On Any Device",
+      "url": "https://deepgrove.ai/",
+      "snippet": "DeepGrove is an independent AI research lab building efficient language models that run anywhere."
+    }
+  ]
+}

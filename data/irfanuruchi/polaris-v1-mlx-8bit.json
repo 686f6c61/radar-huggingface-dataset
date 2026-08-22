@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "Irfanuruchi/Polaris-V1-MLX-8bit",
+  "slug": "irfanuruchi-polaris-v1-mlx-8bit",
+  "author": "Irfanuruchi",
+  "url": "https://huggingface.co/Irfanuruchi/Polaris-V1-MLX-8bit",
+  "created_at": "2026-08-22T11:37:08.000Z",
+  "updated_at": "2026-08-22T11:54:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "code",
+    "reasoning",
+    "reinforcement-learning",
+    "swe-bench",
+    "agentic-ai",
+    "polaris",
+    "nitrai",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:nitrai-research/Polaris-V1",
+    "base_model:finetune:nitrai-research/Polaris-V1",
+    "license:apache-2.0",
+    "model-index",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1183558656,
+  "parameters_human": "1.18B",
+  "storage_bytes": 4489621183,
+  "storage_human": "4.5 GB",
+  "base_model": "nitrai-research/Polaris-V1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code Generation & Agentic Reasoning",
+      "dataset": "SWE-bench Verified",
+      "metric": "Pass@1",
+      "value": 31.4
+    },
+    {
+      "task": "Autonomous Agentic Trajectories",
+      "dataset": "WildClawBench",
+      "metric": "Task Completion Rate",
+      "value": 38.5
+    },
+    {
+      "task": "Deep Multi-File Code Reasoning",
+      "dataset": "DeepSWE",
+      "metric": "Pass@1",
+      "value": 26.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "mradermacher/Polaris-V1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Polaris-V1-i1-GGUF",
+      "snippet": "mradermacher / Polaris-V1-i1-GGUF like 0 Reinforcement Learning Transformers GGUF English Chinese code reasoning swe-bench agentic-ai polaris nitrai imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - IrfanUruchi/mlx-models-: Index of my MLX-ready model ...",
+      "url": "https://github.com/IrfanUruchi/mlx-models-",
+      "snippet": "MLX Models (Apple Silicon) A small index linking to my MLX-ready model collections (docs + links). All model artifacts live on Hugging Face."
+    },
+    {
+      "title": "mlx-models-/README.md at main · IrfanUruchi/mlx-models-",
+      "url": "https://github.com/IrfanUruchi/mlx-models-/blob/main/README.md",
+      "snippet": "Index of my MLX-ready model collections for Apple Silicon - IrfanUruchi/mlx-models-"
+    },
+    {
+      "title": "POLARIS-Project (POLARIS) - Hugging Face",
+      "url": "https://huggingface.co/POLARIS-Project",
+      "snippet": "POLARIS is an open-source project focusing on post-training advanced reasoning models. It is jointly maintained by the University of Hong Kong and ByteDance Seed."
+    },
+    {
+      "title": "MLX Studio — Chat, Code, Generate Images & More on Mac | On-Device AI ...",
+      "url": "https://mlx.studio/",
+      "snippet": "MLX Studio — create anything locally on your Mac. Chat, agentic coding, image generation & editing with Flux and Qwen, voice, vision, and reasoning. 5-layer caching, 20+ built-in tools, Anthropic + OpenAI APIs, built-in GGUF-to-MLX and JANG model converter. The most capable on-device AI app for Apple Silicon."
+    }
+  ]
+}

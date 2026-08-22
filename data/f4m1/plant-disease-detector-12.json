@@ -5,7 +5,7 @@
   "author": "f4m1",
   "url": "https://huggingface.co/f4m1/plant-disease-detector-12",
   "created_at": "2026-08-21T20:59:21.000Z",
-  "updated_at": "2026-08-21T21:00:31.000Z",
+  "updated_at": "2026-08-21T22:31:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "object-detection",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "ultralytics",
+    "onnx",
     "yolo11",
     "plant-disease-detection",
     "agriculture",
@@ -20,14 +21,16 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 19167002,
-  "storage_human": "19 MB",
+  "storage_bytes": 57382548,
+  "storage_human": "57 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

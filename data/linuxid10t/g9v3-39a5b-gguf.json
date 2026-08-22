@@ -5,7 +5,7 @@
   "author": "linuxid10t",
   "url": "https://huggingface.co/linuxid10t/G9v3-39A5B-GGUF",
   "created_at": "2026-08-15T04:26:45.000Z",
-  "updated_at": "2026-08-15T06:08:25.000Z",
+  "updated_at": "2026-08-22T04:14:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,13 +32,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 5,
-  "downloads_30d": 720,
+  "likes": 6,
+  "downloads_30d": 791,
   "trending_score": 0,
   "parameters": 38967481920,
   "parameters_human": "38.97B",
-  "storage_bytes": 101548181440,
-  "storage_human": "101.5 GB",
+  "storage_bytes": 244576199520,
+  "storage_human": "244.6 GB",
   "base_model": "ai9stars/G9v3-39A5B",
   "formats": [
     "gguf"

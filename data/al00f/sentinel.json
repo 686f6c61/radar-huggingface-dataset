@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Al00f/Sentinel",
+  "slug": "al00f-sentinel",
+  "author": "Al00f",
+  "url": "https://huggingface.co/Al00f/Sentinel",
+  "created_at": "2026-07-23T06:18:02.000Z",
+  "updated_at": "2026-08-22T15:07:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 728480631,
+  "storage_human": "728 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Al00f/Sentinel · Hugging Face",
+      "url": "https://huggingface.co/Al00f/Sentinel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Al00f/sentinelData · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Al00f/sentinelData",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2511.19236] SENTINEL: A Fully End-to-End Language-Action Model for ...",
+      "url": "https://arxiv.org/abs/2511.19236",
+      "snippet": "In this paper, we present SENTINEL, a fully end-to-end language-action model for humanoid whole-body control. We construct a large-scale dataset by tracking human motions in simulation using a pretrained whole body controller, combined with their text annotations."
+    },
+    {
+      "title": "PDF SENTINEL: A Heterogeneous Ensemble Framework for Detecting AI-Generated ...",
+      "url": "https://web.stanford.edu/class/cs224n/final-reports/256844435.pdf",
+      "snippet": "The integration of interpretability techniques enhances the model&#x27;s transparency. SENTINEL represents a significant advancement in the detection of AI-generated text, providing a robust solution to the challenges posed by the rapid evolution of LLMs."
+    },
+    {
+      "title": "Microsoft Sentinel Launches AI-Driven Agentic SIEM Platform for ...",
+      "url": "https://gbhackers.com/microsoft-sentinel-launches-ai-driven-agentic-siem-platform/",
+      "snippet": "Microsoft Sentinel AI-Driven SIEM Platform combines data, context, and intelligent agents to help security teams detect respond at AI speed."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "XXMiner/ScoreVision_crime",
+  "slug": "xxminer-scorevision_crime",
+  "author": "XXMiner",
+  "url": "https://huggingface.co/XXMiner/ScoreVision_crime",
+  "created_at": "2026-08-22T17:26:56.000Z",
+  "updated_at": "2026-08-22T17:27:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10603788,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "miner.py · coolroman/ScoreVision at main - Hugging Face",
+      "url": "https://huggingface.co/coolroman/ScoreVision/blob/main/miner.py",
+      "snippet": "coolroman / ScoreVision like 0 ONNX Model card FilesFiles and versions xet Community Copy to bucket new main ScoreVision /miner.py coolroman scorevision: push artifact 6e32d36 verifiedabout 1 month ago Raw Download with hf CLI Copy download link History Blame Contribute Delete 20.1 kB"
+    },
+    {
+      "title": "XXMiner (X_X) - Hugging Face",
+      "url": "https://huggingface.co/XXMiner/datasets",
+      "snippet": "XXMiner&#x27;s datasets1 Sort: Recently updated XXMiner/sn38-submission Viewer •Updated about 7 hours ago•1• 1"
+    },
+    {
+      "title": "Score Dashboard",
+      "url": "https://console.scorevision.io/",
+      "snippet": "Private-track starter pack for ACE-aligned grading from one combined front-and-back card image."
+    },
+    {
+      "title": "GitHub - score-technologies/score-vision: Subnet 44 on Bittensor ...",
+      "url": "https://github.com/score-technologies/score-vision",
+      "snippet": "Score Vision is a decentralised computer vision framework built on Bittensor that drastically reduces the cost and time required for complex video analysis. By leveraging innovative lightweight validation techniques and aligned incentives, we&#x27;re making advanced computer vision accessible and scalable. Our initial focus is Game State Recognition (GSR) in football - a strategic entry point into ..."
+    },
+    {
+      "title": "score-vision/miner/README.md at main · score-technologies ... - GitHub",
+      "url": "https://github.com/score-technologies/score-vision/blob/main/miner/README.md",
+      "snippet": "Subnet 44 on Bittensor - Validator and Miner base code - score-technologies/score-vision"
+    }
+  ]
+}

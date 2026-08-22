@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/multimodal-document-retrieval-20260822-model",
+  "slug": "rkb109-multimodal-document-retrieval-20260822-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/multimodal-document-retrieval-20260822-model",
+  "created_at": "2026-08-22T13:45:15.000Z",
+  "updated_at": "2026-08-22T13:45:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "multimodal-ai",
+    "visual-document-retrieval",
+    "document-question-answering",
+    "image-to-text",
+    "feature-extraction",
+    "dataset:RKB109/multimodal-document-retrieval-20260822-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKB109/multimodal-document-retrieval-20260723-dataset · Datasets at ...",
+      "url": "https://huggingface.co/datasets/RKB109/multimodal-document-retrieval-20260723-dataset",
+      "snippet": "Tags: Synthetic multimodal-ai evaluation visual-document-retrieval document-question-answering image-to-text + 1 Libraries: Datasets pandas Polars + 1 License: cc-by-4. Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·18 rows default (18 ..."
+    },
+    {
+      "title": "RKB109/multimodal-document-retrieval-20260802-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/multimodal-document-retrieval-20260802-model",
+      "snippet": "Multimodal Document Retrieval Baseline Baseline Model Model Description This repository contains a small, transparent prototype model for Business documents contain meaning in text, tables, layout, and imagery that text-only retrieval can miss. The model combines per-label token weights with IDF-weighted evidence retrieval."
+    },
+    {
+      "title": "multimodal-document-retrieval-20260822/DATASET_CARD.md at main - GitHub",
+      "url": "https://github.com/R-behera/multimodal-document-retrieval-20260822/blob/main/DATASET_CARD.md",
+      "snippet": "A document-retrieval baseline that combines OCR text, layout labels, image captions, and metadata evidence. - R-behera/multimodal-document-retrieval-20260822"
+    },
+    {
+      "title": "GitHub - polyvia-ai/polyvia: Multimodal Document Retrieval API",
+      "url": "https://github.com/polyvia-ai/polyvia",
+      "snippet": "We&#x27;re releasing Polyvia 1, as two products: Polyvia API: Multimodal Document Retrieval API (for developers of AI agents). Polyvia Platform: Search & Exploration over multimodal docs (for knowledge workers in enterprises). We index your unstructured & visual & multimodal docs (PDFs, charts, slides, complex tables, infographics, scans, handwriting, invoices, and more) into multimodal knowledge ..."
+    },
+    {
+      "title": "Multimodal Document Retrieval Challenge Track",
+      "url": "https://erel-mir.github.io/challenge/mdr-track1/",
+      "snippet": "Retrieving multimodal documents will help AI chatbots, search engines, and other applications provide more accurate and relevant information to users. The Multimodal Document Retrieval Task focuses on modeling passages from multimodal documents or web pages, leveraging textual and multimodal information for embedding modeling."
+    }
+  ]
+}

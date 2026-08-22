@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ipfipfipf/Qwen3.5-4B-sdpo-react-mathcodesearch-grpo-arm-e",
+  "slug": "ipfipfipf-qwen3-5-4b-sdpo-react-mathcodesearch-grpo-arm-e",
+  "author": "ipfipfipf",
+  "url": "https://huggingface.co/ipfipfipf/Qwen3.5-4B-sdpo-react-mathcodesearch-grpo-arm-e",
+  "created_at": "2026-08-22T12:12:48.000Z",
+  "updated_at": "2026-08-22T12:13:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8424367422,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-grpo-arm-f · Hugging Face",
+      "url": "https://huggingface.co/ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-grpo-arm-f",
+      "snippet": "Instructions to use ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-grpo-arm-f with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm3 at main",
+      "url": "https://huggingface.co/ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm3/tree/main",
+      "snippet": "Instructions to use ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5: Towards Native Multimodal Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.5",
+      "snippet": "As a native vision-language model, Qwen3.5-397B-A17B demonstrates outstanding results across a full range of benchmark evaluations, including reasoning, coding, agent capabilities, and multimodal understanding, empowering developers and enterprises to achieve significantly greater productivity."
+    },
+    {
+      "title": "Qwen3.5-Dense (2B/4B/9B) - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.5-Dense.html",
+      "snippet": "Qwen3.5-Dense (Qwen3.5-2B/4B/9B) 1 Introduction ¶ Qwen3.5-2B, Qwen3.5-4B, and Qwen3.5-9B are dense hybrid Mamba-Transformer language models in the Qwen3.5 family. They share the same hybrid attention design (GDN + full attention) and are suitable for general-purpose text generation tasks such as dialogue, content creation, and code generation."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "catplusplus/Qwen3.8-27B-heretic-ara-DSpark",
+  "slug": "catplusplus-qwen3-8-27b-heretic-ara-dspark",
+  "author": "catplusplus",
+  "url": "https://huggingface.co/catplusplus/Qwen3.8-27B-heretic-ara-DSpark",
+  "created_at": "2026-08-22T18:41:12.000Z",
+  "updated_at": "2026-08-22T18:41:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "speculative-decoding",
+    "dspark",
+    "dflash",
+    "specforge",
+    "sglang",
+    "text-generation",
+    "custom_code",
+    "license:other",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1359284737,
+  "parameters_human": "1.36B",
+  "storage_bytes": 2718576090,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · catplusplus/Qwen3.8-27B-heretic-ara-NVFP4-MTP at main",
+      "url": "https://huggingface.co/catplusplus/Qwen3.8-27B-heretic-ara-NVFP4-MTP/blob/main/README.md",
+      "snippet": "I wanted a high quality coding model that doesn&#x27;t give me AI safety lectures. So I quantized a heretic model with big coding/conversational/Japanese (for my instruction app) datasets and copied layer config and MTP heads from unsloth/Qwen3.8-27B-NVFP4. llmcompressor wuantization script is included in model folder."
+    },
+    {
+      "title": "heretic-org/Qwen3.8-27B-heretic-ara · Hugging Face",
+      "url": "https://huggingface.co/heretic-org/Qwen3.8-27B-heretic-ara",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8 27B Heretic Ara by trohrbaugh - LLM Explorer",
+      "url": "https://llm-explorer.com/model/trohrbaugh%2FQwen3.8-27B-heretic-ara,3lOkoblJbLCrW6LcRlJIk",
+      "snippet": "Rank the Qwen3.8 27B Heretic Ara capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Qwen3.8-27B-Heretic-ARA-NVFP4-MTP-VL - friendli.ai",
+      "url": "https://friendli.ai/models/lyf/Qwen3.8-27B-Heretic-ARA-NVFP4-MTP-VL",
+      "snippet": "Heretic v1.2.0+custom ARA de-censoring of Qwen/Qwen3.8-27B, published by trohrbaugh and mirrored under heretic-org. The two source repositories were checked and their model artifacts are byte-identical; the organization mirror adds base-model metadata."
+    }
+  ]
+}

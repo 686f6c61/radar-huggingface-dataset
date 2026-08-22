@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hemantht2751/t5-arxiv-summarizer",
+  "slug": "hemantht2751-t5-arxiv-summarizer",
+  "author": "hemantht2751",
+  "url": "https://huggingface.co/hemantht2751/t5-arxiv-summarizer",
+  "created_at": "2026-08-22T17:39:04.000Z",
+  "updated_at": "2026-08-22T17:39:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bashaarat1/t5-small-arxiv-summarizer · Hugging Face",
+      "url": "https://huggingface.co/Bashaarat1/t5-small-arxiv-summarizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI-Powered arXiv Paper Summarization - Ask questions about a Paper",
+      "url": "https://www.summarizepaper.com/",
+      "snippet": "Our AI-powered arXiv paper summarization service provides fast, accurate, and easy-to-read summaries of scientific papers. Save time and stay up-to-date with the latest research with our cutting-edge technology."
+    },
+    {
+      "title": "arXivSub - AI-powered arXiv Research Tool",
+      "url": "https://arxivsub.comfyai.app/",
+      "snippet": "Stay ahead in research: Automatically fetch the latest arxiv CS papers, get AI-generated summaries by email, filter by keywords, and explore research trends."
+    },
+    {
+      "title": "Text Summarization using HuggingFace Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/text-summarizations-using-huggingface-model/",
+      "snippet": "Step 3: Load Pre-trained Model and Tokenizer T5 (Text-to-Text Transfer Transformer) handles every NLP task as a text transformation, it takes text as input and generates text as output. For summarization, it reads the full content and produces a shorter version. The model downloads automatically on first use."
+    },
+    {
+      "title": "arxiv-summarizer · PyPI",
+      "url": "https://pypi.org/project/arxiv-summarizer/",
+      "snippet": "Arxiv Summarizer The ArxivSummarizer is a Python class designed for summarizing ArXiv documents using Hugging Face&#x27;s Transformers library. It can be configured with a custom SummarizationModel or with pre-trained models based on user preferences. Table of Contents Arxiv Summarizer Table of Contents Installation Usage As CLI With Custom SummarizationModel With Pre-trained Model by Name With ..."
+    }
+  ]
+}

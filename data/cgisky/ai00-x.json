@@ -5,7 +5,7 @@
   "author": "cgisky",
   "url": "https://huggingface.co/cgisky/ai00-x",
   "created_at": "2025-12-03T10:01:26.000Z",
-  "updated_at": "2026-08-21T12:32:31.000Z",
+  "updated_at": "2026-08-22T01:03:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,11 +19,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 134,
+  "downloads_30d": 140,
   "trending_score": 0,
   "parameters": 2394832518,
   "parameters_human": "2.39B",
-  "storage_bytes": 45408337853,
+  "storage_bytes": 45436601998,
   "storage_human": "45.4 GB",
   "base_model": null,
   "formats": [

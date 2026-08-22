@@ -5,7 +5,7 @@
   "author": "ifmylove2011",
   "url": "https://huggingface.co/ifmylove2011/girlslike-krea2",
   "created_at": "2026-07-20T02:02:01.000Z",
-  "updated_at": "2026-08-21T02:11:53.000Z",
+  "updated_at": "2026-08-22T14:08:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -23,11 +23,11 @@
     "region:us"
   ],
   "likes": 33,
-  "downloads_30d": 15765,
+  "downloads_30d": 16338,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2966595254,
+  "storage_bytes": 3031527424,
   "storage_human": "3.0 GB",
   "base_model": "krea/Krea-2-Raw, krea/Krea-2-Turbo",
   "formats": [

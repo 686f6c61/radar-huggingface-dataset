@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Rolodex-12B-i1-GGUF",
   "created_at": "2026-08-22T05:00:08.000Z",
-  "updated_at": "2026-08-22T05:34:32.000Z",
+  "updated_at": "2026-08-22T13:53:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 110468824832,
   "parameters_human": "110.47B",
-  "storage_bytes": 45201225280,
-  "storage_human": "45.2 GB",
+  "storage_bytes": 859429897536,
+  "storage_human": "859.4 GB",
   "base_model": "polygramme/Rolodex-12B",
   "formats": [
     "gguf"

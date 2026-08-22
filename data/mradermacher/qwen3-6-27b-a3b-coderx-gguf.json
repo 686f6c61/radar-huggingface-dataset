@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-A3B-CoderX-GGUF",
   "created_at": "2026-08-22T05:14:45.000Z",
-  "updated_at": "2026-08-22T05:44:33.000Z",
+  "updated_at": "2026-08-22T07:49:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 26213016704,
   "parameters_human": "26.21B",
-  "storage_bytes": 52844996704,
-  "storage_human": "52.8 GB",
+  "storage_bytes": 179721214304,
+  "storage_human": "179.7 GB",
   "base_model": "ManniX-ITA/Qwen3.6-27B-A3B-CoderX",
   "formats": [
     "gguf"

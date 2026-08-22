@@ -5,7 +5,7 @@
   "author": "PocketAiHub",
   "url": "https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated-MLX-4bit",
   "created_at": "2026-08-22T07:52:00.000Z",
-  "updated_at": "2026-08-22T08:50:48.000Z",
+  "updated_at": "2026-08-22T10:59:44.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 1855937776,

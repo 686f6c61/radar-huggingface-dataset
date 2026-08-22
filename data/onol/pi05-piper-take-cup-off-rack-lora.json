@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Onol/pi05-piper-take-cup-off-rack-lora",
+  "slug": "onol-pi05-piper-take-cup-off-rack-lora",
+  "author": "Onol",
+  "url": "https://huggingface.co/Onol/pi05-piper-take-cup-off-rack-lora",
+  "created_at": "2026-08-22T08:59:29.000Z",
+  "updated_at": "2026-08-22T17:02:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi0.5",
+    "lora",
+    "piper",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28543880717,
+  "storage_human": "28.5 GB",
+  "base_model": "physical-intelligence/pi0.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moriis/pi05_piper_third_v2 · Hugging Face",
+      "url": "https://huggingface.co/moriis/pi05_piper_third_v2",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world ..."
+    },
+    {
+      "title": "lerobot/pi05_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Piper Rockelle - V -1. FLUX - Free AI LORA | Tensor.Art",
+      "url": "https://www.tensor.art/models/878735654601625400",
+      "snippet": "Download Piper Rockelle - free LORA FLUX.1 AI model on TENSOR. FLUX, EXCLUSIVE, PIPER. By E7G3"
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    },
+    {
+      "title": "GitHub - EII-Tokyo/openpi0.5-rtc",
+      "url": "https://github.com/EII-Tokyo/openpi0.5-rtc",
+      "snippet": "Contribute to EII-Tokyo/openpi0.5-rtc development by creating an account on GitHub."
+    }
+  ]
+}

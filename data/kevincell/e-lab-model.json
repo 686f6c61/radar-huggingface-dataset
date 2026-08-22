@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kevincell/e-lab-model",
+  "slug": "kevincell-e-lab-model",
+  "author": "kevincell",
+  "url": "https://huggingface.co/kevincell/e-lab-model",
+  "created_at": "2026-08-20T07:14:13.000Z",
+  "updated_at": "2026-08-22T13:47:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 2632620736,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "AICell Lab",
+      "url": "https://aicell.io/",
+      "snippet": "BioImage Model Zoo — FAIR AI Models for Microscopy A community-driven, fully open repository where standardized deep-learning models can be shared, tested in the browser, and deployed across imaging tools."
+    },
+    {
+      "title": "The Cell&#x27;s Feedback Is Exogenous to the Model - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/cells-feedback-exogenous-model-kevin-clancy-sbe9c",
+      "snippet": "The combination that everyone doing cell engineering wants is real: model a cell, perturb it in silico, read the predicted phenotype before you touch a bench. It simply works, is recordable and ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 1000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    }
+  ]
+}

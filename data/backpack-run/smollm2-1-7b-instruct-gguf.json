@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "backpack-run/SmolLM2-1.7B-Instruct-GGUF",
+  "slug": "backpack-run-smollm2-1-7b-instruct-gguf",
+  "author": "backpack-run",
+  "url": "https://huggingface.co/backpack-run/SmolLM2-1.7B-Instruct-GGUF",
+  "created_at": "2026-08-22T17:02:09.000Z",
+  "updated_at": "2026-08-22T17:04:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "backpack",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 4101502464,
+  "storage_human": "4.1 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mav23/SmolLM2-1.7B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mav23/SmolLM2-1.7B-Instruct-GGUF",
+      "snippet": "SmolLM2 Table of Contents Model Summary Evaluation Examples Limitations Training License Citation Model Summary SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - portalbh/SmolLM2: SmolLM2-1.7B-Instruct · GitHub",
+      "url": "https://github.com/portalbh/SmolLM2",
+      "snippet": "This repository accompanies the YouTube tutorial demonstrating how to run a local large language model (LLM) using Hugging Face Transformers. The provided Python script implements a complete workflow for chat-style interactions with a locally stored model."
+    },
+    {
+      "title": "ai/smollm2 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/smollm2",
+      "snippet": "unsloth/SmolLM2-1.7B-Instruct-GGUF For more details on the model, please go to Hugging Face&#x27;s original model card ⁠ Finetune for Free All notebooks are beginner friendly! Add your dataset, click \"Run All\", and you&#x27;ll get a 2x faster finetuned model which can be exported to GGUF, vLLM or uploaded to Hugging Face."
+    },
+    {
+      "title": "alignment-handbook/recipes/smollm2/README.md at main - GitHub",
+      "url": "https://github.com/huggingface/alignment-handbook/blob/main/recipes/smollm2/README.md",
+      "snippet": "Instructions to train SmolLM2-1.7B-Instruct We build the SmolLM2-Instruct by doing SFT on SmolTalk and then DPO on UltraFeedBack."
+    }
+  ]
+}

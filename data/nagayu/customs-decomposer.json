@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "NagaYu/customs-decomposer",
+  "slug": "nagayu-customs-decomposer",
+  "author": "NagaYu",
+  "url": "https://huggingface.co/NagaYu/customs-decomposer",
+  "created_at": "2026-08-22T12:38:22.000Z",
+  "updated_at": "2026-08-22T12:38:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gguf",
+    "customs",
+    "token-classification",
+    "span-tagging",
+    "pii",
+    "pii-detection",
+    "privacy",
+    "data-minimisation",
+    "on-device",
+    "synthetic",
+    "mlx",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 347167,
+  "parameters_human": "347167",
+  "storage_bytes": 4183858,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NagaYu (Yuta Nagao) - Hugging Face",
+      "url": "https://huggingface.co/NagaYu",
+      "snippet": "User profile of Yuta Nagao on Hugging Face"
+    },
+    {
+      "title": "ICML Hidden in Plain Sight: Benchmarking Agent Safety Against ...",
+      "url": "https://icml.cc/virtual/2026/77946",
+      "snippet": "Our experiments using a custom decomposer show that state-of-the-art agents exhibit high refusal rates on monolithic harmful tasks, but significantly lower refusal rates on their decomposed variants, while often inadvertently fulfilling the adversarial objectives."
+    },
+    {
+      "title": "Hidden in Plain Sight: Benchmarking Agent Safety Against Decomposition ...",
+      "url": "https://arxiv.org/pdf/2606.13994",
+      "snippet": "Our experiments using a custom de-composer show that state-of-the-art agents exhibit high refusal rates on monolithic harmful tasks, but significantly lower refusal rates on their decomposed variants, while often inadvertently fulfilling the adversarial objectives."
+    },
+    {
+      "title": "Decomposer — AI-Powered Customer Voice Intelligence",
+      "url": "https://www.decomposer.ai/",
+      "snippet": "Decomposer transforms raw customer conversations into actionable market intelligence. Discover what drives value, uncover competitive blind spots, and make strategic decisions powered by real customer voices."
+    },
+    {
+      "title": "Stemma — model provenance from weights alone - GitHub",
+      "url": "https://github.com/NagaYu/stemma",
+      "snippet": "Model provenance from weights alone: derivation direction, multi-parent merges and mixing ratios, recovered over HTTP Range reads without downloading checkpoints. - NagaYu/stemma"
+    }
+  ]
+}

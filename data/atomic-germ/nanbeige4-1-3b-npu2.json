@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Nanbeige4.1-3B-NPU2",
+  "slug": "atomic-germ-nanbeige4-1-3b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Nanbeige4.1-3B-NPU2",
+  "created_at": "2026-08-22T16:47:47.000Z",
+  "updated_at": "2026-08-22T16:47:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "llama",
+    "text-generation",
+    "llm",
+    "nanbeige",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.13367",
+    "base_model:Nanbeige/Nanbeige4-3B-Base",
+    "base_model:finetune:Nanbeige/Nanbeige4-3B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6184318146,
+  "storage_human": "6.2 GB",
+  "base_model": "Nanbeige/Nanbeige4-3B-Base",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Nanbeige4.2-3B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Nanbeige4.2-3B-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Nanbeige/Nanbeige4.1-3B at main - Hugging Face",
+      "url": "https://huggingface.co/Nanbeige/Nanbeige4.1-3B/blob/main/README.md",
+      "snippet": "As a highly competitive open-source model at a small parameter scale, Nanbeige4.1-3B illustrates that compact models can simultaneously achieve robust reasoning, preference alignment, and effective agentic behaviors. Specifically, Nanbeige4.1-3B exhibits the following key strengths:"
+    },
+    {
+      "title": "Nanbeige4.1-3B-NPU2 · Models",
+      "url": "https://www.modelscope.cn/models/FastFlowLM/Nanbeige4.1-3B-NPU2",
+      "snippet": "Introduction Nanbeige4.1-3B is built upon Nanbeige4-3B-Base and represents an enhanced iteration of our previous reasoning model, Nanbeige4-3B-Thinking-2511, achieved through further post-training optimization with supervised fine-tuning (SFT) and reinforcement learning (RL). As a highly competitive open-source model at a small parameter scale, Nanbeige4.1-3B illustrates that compact models ..."
+    },
+    {
+      "title": "Nanbeige4.1-3B: A Small General Model that Reasons, Aligns, and Acts",
+      "url": "https://arxiv.org/html/2602.13367v1",
+      "snippet": "Our model, Nanbeige4.1-3B, demonstrates a remarkable leap in performance compared to its baseline Nanbeige4-3B-2511 and significantly outperforms other small foundation models with tools across all benchmarks."
+    },
+    {
+      "title": "Nanbeige4.1-3B by Nanbeige: LLM Benchmarks, Rankings & Specs - crafiq.ai",
+      "url": "https://crafiq.ai/models/language/nanbeige-nanbeige4-1-3b",
+      "snippet": "Nanbeige4.1-3B is a unified generalist language model with 3 billion parameters, developed by Nanbeige LLM Lab (the AI research arm of BOSS Zhipin). Released in February 2026, the model represents an enhanced iteration of the Nanbeige4 series, specifically optimized to bridge the gap between small-scale efficiency and large-scale reasoning capability. It is designed as a highly versatile small ..."
+    }
+  ]
+}

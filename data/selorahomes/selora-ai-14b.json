@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "selorahomes/Selora-AI-14B",
+  "slug": "selorahomes-selora-ai-14b",
+  "author": "selorahomes",
+  "url": "https://huggingface.co/selorahomes/Selora-AI-14B",
+  "created_at": "2026-08-22T18:40:50.000Z",
+  "updated_at": "2026-08-22T18:41:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "home-assistant",
+    "home-automation",
+    "smart-home",
+    "llama.cpp",
+    "lora",
+    "qwen3",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-14B-Base",
+    "base_model:adapter:Qwen/Qwen3-14B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 10559412480,
+  "storage_human": "10.6 GB",
+  "base_model": "Qwen/Qwen3-14B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Selora AI | Selora Homes - Professional Smart Home Management",
+      "url": "https://selorahomes.com/docs/selora-ai/",
+      "snippet": "Complete guide to the Selora AI Home Assistant integration — installation, configuration, the Selora AI chat panel, MCP onboarding, and privacy."
+    },
+    {
+      "title": "Selora Homes - Professional Smart Home Management",
+      "url": "https://selorahomes.com/",
+      "snippet": "Selora AI Local, your home&#x27;s first private LLM A purpose-built language model that runs entirely on your own hardware. No cloud calls, no API keys, no data leaving your network. Point the integration at your inference box and chat with your home."
+    },
+    {
+      "title": "Selora AI — Home Assistant Integration - GitHub",
+      "url": "https://github.com/SeloraHomes/ha-selora-ai",
+      "snippet": "Selora AI is a smart-home AI butler for Home Assistant. It connects to an LLM backend — Selora AI Local (our own on-device model), Anthropic Claude, OpenAI, Google Gemini, or Ollama — learns your home&#x27;s patterns, and proactively generates automations, all while keeping you in full control."
+    },
+    {
+      "title": "selorahomes (Selora Homes) - Hugging Face",
+      "url": "https://huggingface.co/selorahomes/models",
+      "snippet": "Team members 4 selorahomes&#x27;s models1 Sort: Recently updated selorahomes/Selora-AI Text Generation • 2B•Updated 3 days ago• 1.65k • 6"
+    },
+    {
+      "title": "README.md · selorahomes/Selora-AI at main - Hugging Face",
+      "url": "https://huggingface.co/selorahomes/Selora-AI/blob/main/README.md",
+      "snippet": "Selora AI Selora AI is an instruction-tuned language model for Home Assistant, the open-source smart home platform. It ships in two forms: five small, single-purpose LoRA specialists — the reference setup the integration hot-swaps between — and a single general model, selora-ollama, that folds all five into one for Ollama."
+    }
+  ]
+}

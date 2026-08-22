@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3.5-4B-NPU2",
+  "slug": "atomic-germ-qwen3-5-4b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3.5-4B-NPU2",
+  "created_at": "2026-08-22T16:48:09.000Z",
+  "updated_at": "2026-08-22T16:48:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5_text",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25634851821,
+  "storage_human": "25.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/DynaGuard-4B-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/DynaGuard-4B-NPU2",
+      "snippet": "Atomic-Germ / DynaGuard-4B-NPU2 like 0 Text Generation English qwen3 guardrail safety moderation dynaguard umd llm fastflowlm q4nx npu2 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new DynaGuard-4B - Q4NX for FastFlowLM (AMD Ryzen AI XDNA2)"
+    },
+    {
+      "title": "README.md · FastFlowLM/Qwen3.5-4B-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/FastFlowLM/Qwen3.5-4B-NPU2/blob/main/README.md",
+      "snippet": "Qwen3.5-4B This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format. These artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc. Over recent months, we have intensified our focus on developing foundation models that deliver exceptional utility and performance. Qwen3.5 represents a ..."
+    },
+    {
+      "title": "Atomic-Germ · GitHub",
+      "url": "https://github.com/Atomic-Germ",
+      "snippet": "A set of scripts for beat-sync and other helpful things for my moto videos Python 1"
+    },
+    {
+      "title": "Qwen 3.5 4B local AI model — runs on ~3 GB — guide",
+      "url": "https://theaibench.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen 3.5 4B local guide: Apache 2.0 small model that runs in ~2.5 GB at Q4 (GPU or CPU), what quality to expect, runner tags, and when to step up to 9B."
+    },
+    {
+      "title": "The Complete Guide to the Qwen3.5 Small Series - note（ノート）",
+      "url": "https://note.com/zephel01/n/n6b236da76680?hl=en",
+      "snippet": "Introduction: Why Are &#x27;Small Models&#x27; So Hot Right Now? In February 2026, the Qwen team at Alibaba Cloud announced Qwen3.5. It wasn&#x27;t just the massive 397B parameter flagship model that grabbed attention. The &#x27;Small Series&#x27; released alongside it—four small models at 0.8B, 2B, 4B, and 9B—is making a quiet impact on the world of local LLMs. Furthermore, Unsloth, known for its quantization ..."
+    }
+  ]
+}

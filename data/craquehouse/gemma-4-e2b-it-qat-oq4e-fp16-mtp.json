@@ -5,7 +5,7 @@
   "author": "craquehouse",
   "url": "https://huggingface.co/craquehouse/gemma-4-E2B-it-qat-oQ4e-fp16-mtp",
   "created_at": "2026-08-21T20:03:50.000Z",
-  "updated_at": "2026-08-21T20:25:52.000Z",
+  "updated_at": "2026-08-22T03:16:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 1227974211,
   "parameters_human": "1.23B",

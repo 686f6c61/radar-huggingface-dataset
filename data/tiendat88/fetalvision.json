@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tiendat88/FetalVision",
+  "slug": "tiendat88-fetalvision",
+  "author": "Tiendat88",
+  "url": "https://huggingface.co/Tiendat88/FetalVision",
+  "created_at": "2026-08-22T12:39:08.000Z",
+  "updated_at": "2026-08-22T12:44:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "ultrasound",
+    "fetal-ultrasound",
+    "anomaly-detection",
+    "out-of-distribution-detection",
+    "autoencoder",
+    "image-classification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9395999,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - BMalika09/FetalVision: Interpretable fetal ultrasound plane ...",
+      "url": "https://github.com/BMalika09/FetalVision",
+      "snippet": "About Interpretable fetal ultrasound plane classification with deep learning, error analysis and clinical AI insights."
+    },
+    {
+      "title": "shadanyousef/FetalVision-AI-Enabled-Real-Time-Fetal-Biometry ... - GitHub",
+      "url": "https://github.com/shadanyousef/FetalVision-AI-Enabled-Real-Time-Fetal-Biometry-and-Abnormality-Detection-in-2D-Ultrasound/tree/main",
+      "snippet": "FetalVision: AI-Enabled Real-Time Fetal Biometry and Abnormality Detection in 2D Ultrasound FetalVision is a project aimed at leveraging deep learning models for real-time fetal biometry estimation and abnormality detection using 2D ultrasound images. This repository contains implementations of two deep learning models: U-Net and FCN, trained on a custom dataset for this specific task."
+    },
+    {
+      "title": "FetalMind: Epistemic-aware Vision-Language Foundation Model",
+      "url": "https://hexiao0275.github.io/FetalMind/",
+      "snippet": "FetalMind is an epistemic-aware vision-language foundation model for multi-view fetal ultrasound report generation and diagnosis."
+    },
+    {
+      "title": "[2510.12953] Epistemic-aware Vision-Language Foundation Model for Fetal ...",
+      "url": "https://arxiv.org/abs/2510.12953",
+      "snippet": "Recent medical vision-language models have shown promise on tasks such as VQA, report generation, and anomaly detection. However, most are adapted to structured adult imaging and underperform in fetal ultrasound, which poses challenges of multi-view image reasoning, numerous diseases, and image diversity. To bridge this gap, we introduce FetalMind, a medical AI system tailored to fetal ..."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

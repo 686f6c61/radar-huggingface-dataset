@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3.5-0.8B-NPU2",
+  "slug": "atomic-germ-qwen3-5-0-8b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3.5-0.8B-NPU2",
+  "created_at": "2026-08-22T16:47:39.000Z",
+  "updated_at": "2026-08-22T16:47:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5_text",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3072006490,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic-Germ/Qwen3.5-0.8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.5-0.8B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 0.8B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-0-8b/",
+      "snippet": "Qwen3.5 0.8B is the smallest vision-language model in the Qwen3.5 lineup. It is designed for lightweight local multimodal inference, fast iteration, and efficient Jetson deployment."
+    },
+    {
+      "title": "Qwen3.5-0.8B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen35-08b",
+      "snippet": "About Qwen3.5-0.8B Qwen3.5-0.8B is Alibaba Cloud&#x27;s ultra-compact multimodal foundation model with 0.8B parameters, released February 2026. It uses a hybrid architecture combining Gated Delta Networks and Gated Attention in a 6× (3×DeltaNet→FFN→1×Attention→FFN) pattern. In thinking mode, it achieves MMLU-Pro (66.5%), GPQA Diamond (51.6%), and GPQA (11.9%). Features unified vision ..."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "The official Qwen API is provided by Alibaba Cloud Model Studio. Alibaba Cloud Model Studio provides first-class support for Qwen3.5, which is compatible with various API specifications, including OpenAI and Anthropic, making it simple for you to try Qwen3.5 in your own applications."
+    }
+  ]
+}

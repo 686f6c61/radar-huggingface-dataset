@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vovaRL/smollest_model",
+  "slug": "vovarl-smollest_model",
+  "author": "vovaRL",
+  "url": "https://huggingface.co/vovaRL/smollest_model",
+  "created_at": "2026-08-22T13:54:20.000Z",
+  "updated_at": "2026-08-22T13:55:59.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - gradio-app/smollest: Find the smollest viable language model ...",
+      "url": "https://github.com/gradio-app/smollest",
+      "snippet": "Quickly find the smollest viable language model for your task, for faster and cheaper intelligence The basic idea is to run your OpenAI/Anthropic API queries to other, smaller models on Hugging Face API (or local), allowing you to quickly find the smollest/cheapest/fastest model that would work for your use case."
+    },
+    {
+      "title": "SmolVLM: Redefining small and efficient multimodal models",
+      "url": "https://arxiv.org/html/2504.05299v1",
+      "snippet": "All model weights, training datasets, and training code are publicly released to encourage reproducibility, transparency, and continued innovation. We hope SmolVLM will inspire the next generation of lightweight, efficient VLMs, unlocking new possibilities for real-time multimodal inference with minimal power consumption."
+    },
+    {
+      "title": "smollest · PyPI",
+      "url": "https://pypi.org/project/smollest/",
+      "snippet": "Quickly find the smollest viable language model for your task, for faster and cheaper intelligence The basic idea is to run your OpenAI/Anthropic API queries to other, smaller models on Hugging Face API (or local), allowing you to quickly find the smollest/cheapest/fastest model that would work for your use case."
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    },
+    {
+      "title": "GitHub - afondiel/awesome-smol: A curated list of small foundation ...",
+      "url": "https://github.com/afondiel/awesome-smol",
+      "snippet": "Awesome Smol is a curated list of small, lightweight AI models, tools, and resources for domains like language, audio, vision, and multimodal tasks. These models are designed for edge devices, resource-constrained environments, and rapid prototyping. Inspiration: awesome-tensorflow-lite."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "numinousmuses",
   "url": "https://huggingface.co/numinousmuses/laguna-s-2.1-vision",
   "created_at": "2026-08-21T21:29:07.000Z",
-  "updated_at": "2026-08-21T21:38:25.000Z",
+  "updated_at": "2026-08-21T22:13:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

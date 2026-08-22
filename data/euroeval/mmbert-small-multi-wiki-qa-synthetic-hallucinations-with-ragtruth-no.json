@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-no",
+  "slug": "euroeval-mmbert-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-no",
+  "author": "EuroEval",
+  "url": "https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-no",
+  "created_at": "2026-08-22T16:28:15.000Z",
+  "updated_at": "2026-08-22T16:28:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140642306,
+  "parameters_human": "140.6M",
+  "storage_bytes": 596946580,
+  "storage_human": "597 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with ...",
+      "url": "https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-no",
+      "snippet": "Instructions to use EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-no with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with ...",
+      "url": "https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-lv/tree/main",
+      "snippet": "Instructions to use EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-lv with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "Mmbert Small Multi Wiki Qa Synthetic Hallucinations With Ragtruth Sv ...",
+      "url": "https://free2aitools.com/model/euroeval/mmbert-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-sv",
+      "snippet": "FNI V2.0 for Mmbert Small Multi Wiki Qa Synthetic Hallucinations With Ragtruth Sv: Authority (A:0), Popularity (P:0), Recency (R:100), Quality (Q:65). Semantic (S) is a query-time baseline scored live at search."
+    },
+    {
+      "title": "GitHub - JHU-CLSP/mmBERT: A massively multilingual modern encoder ...",
+      "url": "https://github.com/JHU-CLSP/mmBERT/",
+      "snippet": "🌍 TL;DR: State-of-the-art multilingual encoder models trained on 3T tokens across 1833 languages with novel annealed language learning. Outperforms XLM-R and can even beat OpenAI&#x27;s o3 and Google&#x27;s Gemini 2.5 Pro. 📄 Paper | 🤗 Model Collection | 📊 Training Data mmBERT introduces the first modern multilingual encoder trained with cascading annealed language learning (ALL ..."
+    },
+    {
+      "title": "A multilingual hallucination benchmark: MultiWikiQHalluA",
+      "url": "https://arxiv.org/pdf/2605.02504v2",
+      "snippet": "Figure 1: Overview of the two-stage method-ology: synthetic hallucination data generation pipeline, where MultiWikiQA contexts, questions, and ground-truth answers are passed to the Let-tuceDetect framework, which uses a language model to produce token-labelled hallucinated an-swers; and fine-tuning of the mmBERT-small token-level hallucination ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3.5-2B-NPU2",
+  "slug": "atomic-germ-qwen3-5-2b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3.5-2B-NPU2",
+  "created_at": "2026-08-22T16:47:54.000Z",
+  "updated_at": "2026-08-22T16:47:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5_text",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7096624101,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled-NPU2",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Atomic-Germ/Qwen3.8-Distilled-9B-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-Distilled-9B-NPU2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/qwen3_5_2b",
+      "snippet": "Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "qwen3.5:2b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:2b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

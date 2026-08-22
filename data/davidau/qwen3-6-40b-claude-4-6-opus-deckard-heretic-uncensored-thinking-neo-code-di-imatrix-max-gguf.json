@@ -5,7 +5,7 @@
   "author": "DavidAU",
   "url": "https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF",
   "created_at": "2026-05-01T00:29:29.000Z",
-  "updated_at": "2026-07-20T00:42:59.000Z",
+  "updated_at": "2026-08-22T00:01:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -59,7 +59,7 @@
     "conversational"
   ],
   "likes": 707,
-  "downloads_30d": 391558,
+  "downloads_30d": 395119,
   "trending_score": 8,
   "parameters": 39072596736,
   "parameters_human": "39.07B",

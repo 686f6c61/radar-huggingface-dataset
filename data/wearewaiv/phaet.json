@@ -5,7 +5,7 @@
   "author": "wearewaiv",
   "url": "https://huggingface.co/wearewaiv/phaet",
   "created_at": "2026-06-10T08:58:59.000Z",
-  "updated_at": "2026-08-21T00:09:21.000Z",
+  "updated_at": "2026-08-22T00:09:03.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "image-feature-extraction",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1576,
+  "downloads_30d": 1623,
   "trending_score": 0,
   "parameters": 303351808,
   "parameters_human": "303.4M",

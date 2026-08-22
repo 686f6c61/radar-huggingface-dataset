@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ranasrule/Med3DVLM-Qwen-2.5-7B-mirror",
+  "slug": "ranasrule-med3dvlm-qwen-2-5-7b-mirror",
+  "author": "ranasrule",
+  "url": "https://huggingface.co/ranasrule/Med3DVLM-Qwen-2.5-7B-mirror",
+  "created_at": "2026-08-22T17:11:15.000Z",
+  "updated_at": "2026-08-22T19:18:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vlm_qwen",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7678258880,
+  "parameters_human": "7.68B",
+  "storage_bytes": 33112902808,
+  "storage_human": "33.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MagicXin/Med3DVLM-Qwen-2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/MagicXin/Med3DVLM-Qwen-2.5-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - mirthAI/Med3DVLM",
+      "url": "https://github.com/mirthAI/Med3DVLM",
+      "snippet": "Med3DVLM: An Efficient Vision-Language Model for 3D Medical Image Analysis Vision-language models (VLMs) have shown promise in 2D medical image analysis, but extending them to 3D remains challenging due to the high computational demands of volumetric data and the difficulty of aligning 3D spatial features with clinical text."
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Med3DVLM: An Efficient Vision-Language Model for 3D Medical Image Analysis",
+      "url": "https://arxiv.org/html/2503.20047v1",
+      "snippet": "The LLM is initialized with Qwen2.5-7B-Instruct [40], a model pretrained for instruction-following tasks. By jointly optimizing the LoRA parameters and the multi-modal projector, our model effectively adapts to the characteristics of the M3D-Cap and M3D-VQA datasets."
+    },
+    {
+      "title": "Qwen2.5-7B · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-7B",
+      "snippet": "Qwen2.5-7B Introduction Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2:"
+    }
+  ]
+}

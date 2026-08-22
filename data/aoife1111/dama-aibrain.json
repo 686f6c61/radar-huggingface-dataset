@@ -5,7 +5,7 @@
   "author": "Aoife1111",
   "url": "https://huggingface.co/Aoife1111/dama-aibrain",
   "created_at": "2026-08-21T21:16:47.000Z",
-  "updated_at": "2026-08-21T21:27:56.000Z",
+  "updated_at": "2026-08-22T00:30:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -16,6 +16,7 @@
   "tags": [
     "transformers",
     "safetensors",
+    "gguf",
     "gemma4",
     "image-text-to-text",
     "text-generation-inference",
@@ -27,14 +28,15 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 5123178051,
   "parameters_human": "5.12B",
-  "storage_bytes": 10278788619,
-  "storage_human": "10.3 GB",
+  "storage_bytes": 15233367243,
+  "storage_human": "15.2 GB",
   "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

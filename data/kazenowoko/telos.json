@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Kazenowoko/telos",
+  "slug": "kazenowoko-telos",
+  "author": "Kazenowoko",
+  "url": "https://huggingface.co/Kazenowoko/telos",
+  "created_at": "2026-08-22T16:07:11.000Z",
+  "updated_at": "2026-08-22T16:45:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "code-autocomplete",
+    "discrete-diffusion",
+    "masked-diffusion",
+    "autoregressive",
+    "pytorch",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5318947392,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kazenowoko (Ivan Samuel) - Hugging Face",
+      "url": "https://huggingface.co/Kazenowoko/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 2 days ago ... published a model 2 days ago"
+    },
+    {
+      "title": "Kazenowoko (Ivan Samuel) - Hugging Face",
+      "url": "https://huggingface.co/Kazenowoko",
+      "snippet": "Recent Activity updated a model2 days ago Kazenowoko/telos-50m-ratio-study published a model2 days ago Kazenowoko/telos-50m-ratio-study updated a dataset2 days ago Kazenowoko/telos-dataset View all activity"
+    },
+    {
+      "title": "Kazenowoko/telos-50m-ratio-study · Hugging Face",
+      "url": "https://huggingface.co/Kazenowoko/telos-50m-ratio-study",
+      "snippet": "Kazenowoko / telos-50m-ratio-study like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Kazenowoko/telos-dataset · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Kazenowoko/telos-dataset",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - kazenoko-git/telos: A diffusion-based code completion model.",
+      "url": "https://github.com/kazenoko-git/telos",
+      "snippet": "A diffusion-based code completion model. Contribute to kazenoko-git/telos development by creating an account on GitHub."
+    }
+  ]
+}

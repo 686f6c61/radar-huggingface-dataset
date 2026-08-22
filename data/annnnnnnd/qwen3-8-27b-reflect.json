@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "annnnnnnd/Qwen3.8-27B-Reflect",
+  "slug": "annnnnnnd-qwen3-8-27b-reflect",
+  "author": "annnnnnnd",
+  "url": "https://huggingface.co/annnnnnnd/Qwen3.8-27B-Reflect",
+  "created_at": "2026-08-22T15:30:18.000Z",
+  "updated_at": "2026-08-22T17:37:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "anti-sycophancy",
+    "reflect",
+    "fine-tune",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 63982166560,
+  "storage_human": "64.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen3.8-27B Benchmarks & Context (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/qwen3-8-27b",
+      "snippet": "Qwen3.8-27B is a open weight model with a 262K context window. It uses an explicit reasoning mode, which can improve complex problem solving while adding latency and token use."
+    },
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B | AI Model Review | Neomanex",
+      "url": "https://neomanex.com/models/qwen3-8-27b",
+      "snippet": "Qwen3.8-27B is Alibaba&#x27;s 27-billion-parameter open-weight model, now shipped under Apache 2.0 with 262K native context and single-GPU deployment. It is the self-hostable companion to the 2.4T Qwen3.8-Max flagship. Benchmarks remain Alibaba-reported, so it lands at conditional — a real, runnable model whose vendor-claimed coding gains still await independent reproduction."
+    },
+    {
+      "title": "Qwen3.8-27B - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html",
+      "snippet": "Qwen3.8-27B 1 Introduction ¶ Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, it shares the same hybrid-attention backbone as the 2.4T MoE flagship: of its 64 layers, only 16 run full (gated) attention (full_attention_interval: 4) while the other 48 ..."
+    }
+  ]
+}

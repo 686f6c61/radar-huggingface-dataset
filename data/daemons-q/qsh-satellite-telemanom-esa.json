@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Daemons-Q/qsh-satellite-telemanom-esa",
+  "slug": "daemons-q-qsh-satellite-telemanom-esa",
+  "author": "Daemons-Q",
+  "url": "https://huggingface.co/Daemons-Q/qsh-satellite-telemanom-esa",
+  "created_at": "2026-08-04T12:33:18.000Z",
+  "updated_at": "2026-08-22T12:38:26.000Z",
+  "license": "cc-by-3.0-igo",
+  "license_family": "unknown",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "quantum-safe",
+    "privacy-preserving",
+    "satellite-comms",
+    "onnxruntime-web",
+    "time-series-forecasting",
+    "arxiv:2406.17826",
+    "arxiv:2607.11969",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 80486,
+  "parameters_human": "80486",
+  "storage_bytes": 1957566,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daemons-Q/qsh-satellite-telemanom-esa · Hugging Face",
+      "url": "https://huggingface.co/Daemons-Q/qsh-satellite-telemanom-esa",
+      "snippet": "Telemanom LSTM forecaster (per channel) 2 x LSTM (80), sequence length 250, dropout 0.3, non-parametric dynamic threshold with pruning Part of QSMPC-QKD-QHE-AI-Hybrid, a quantum-safe orchestration demo. This is the plaintext model for the satellite_comms use case; the encrypted path runs a distilled student, not this model."
+    },
+    {
+      "title": "Daemons-Q (Amon Koike) - Hugging Face",
+      "url": "https://huggingface.co/Daemons-Q/models",
+      "snippet": "Daemons-Q/qsh-satellite-telemanom-esa Time Series Forecasting • 80.5k•Updated about 5 hours ago"
+    },
+    {
+      "title": "GitHub - khundman/telemanom: A framework for using LSTMs to detect ...",
+      "url": "https://github.com/khundman/telemanom",
+      "snippet": "A framework for using LSTMs to detect anomalies in multivariate time series data. Includes spacecraft anomaly data and experiments from the Mars Science Laboratory and SMAP missions. - khundman/tel..."
+    },
+    {
+      "title": "ESA-ADB/TimeEval-algorithms/telemanom_esa at main · kplabs-pl ... - GitHub",
+      "url": "https://github.com/kplabs-pl/ESA-ADB/tree/main/TimeEval-algorithms/telemanom_esa",
+      "snippet": "Code of the ESA Anomaly Detection Benchmark. Contribute to kplabs-pl/ESA-ADB development by creating an account on GitHub."
+    },
+    {
+      "title": "Telemanom-ESA | kplabs-pl/ESA-ADB | DeepWiki",
+      "url": "https://deepwiki.com/kplabs-pl/ESA-ADB/5.2-telemanom-esa",
+      "snippet": "Telemanom-ESA is a modified implementation of the Telemanom (Telemetry Anomaly Monitor) algorithm, originally developed for NASA spacecraft monitoring. It uses LSTM neural networks to model normal behavior in multivariate time series and detects anomalies by identifying deviations from predicted values."
+    }
+  ]
+}

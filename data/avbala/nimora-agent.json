@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AVBala/nimora-agent",
+  "slug": "avbala-nimora-agent",
+  "author": "AVBala",
+  "url": "https://huggingface.co/AVBala/nimora-agent",
+  "created_at": "2026-08-22T05:23:34.000Z",
+  "updated_at": "2026-08-22T13:51:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "coding",
+    "agent",
+    "tool-use",
+    "qlora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143616383,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AshwinVBala/nimora: Nimora is a lightweight coding agent build ...",
+      "url": "https://github.com/AshwinVBala/nimora",
+      "snippet": "Nimora Runtime The repository also contains a model-neutral coding-agent runtime. It works with an OpenAI-compatible chat endpoint such as a local vLLM or llama.cpp server, so the agent loop can be evaluated and used to collect trajectories before Nimora&#x27;s own weights are trained."
+    },
+    {
+      "title": "NimoraAI — Create, Market & Sell Jewellery with AI",
+      "url": "https://nimoraai.com/",
+      "snippet": "The AI platform for jewellery businesses Create, market, and sell jewellery with AI Upload one photo or sketch. Nimora returns design images, studio-grade product photos, on-model photoshoots, promo videos and 3D-printable CAD — then writes the captions and listings, and publishes to Instagram and Facebook on schedule."
+    },
+    {
+      "title": "GitHub - Elblassy/nimora",
+      "url": "https://github.com/Elblassy/nimora",
+      "snippet": "Nimora Every child is the hero of their story An interactive AI-powered storybook app where parents upload their child&#x27;s photo, and Gemini generates a personalized, illustrated story with the child as the hero. Built for the Gemini Live Agent Challenge — Creative Storyteller track."
+    },
+    {
+      "title": "GitHub - basimrdj/nimora: A cinematic browser and terminal explorer for ...",
+      "url": "https://github.com/basimrdj/nimora",
+      "snippet": "Nimora is a focused, local-first chat explorer for NVIDIA-hosted inference models. Move through the same 118-model catalog in a crafted browser workspace or an animated keyboard-first terminal, then stream responses with model-aware controls for reasoning, images, tools, and structured JSON."
+    },
+    {
+      "title": "Nimora - AI SEO, Product Media & Analytics - WordPress.org",
+      "url": "https://wordpress.org/plugins/nimora-ai-seo-product-media-analytics/",
+      "snippet": "The Nimora WordPress plugin is free to install. A Nimora account is required to connect your site to the Nimora service. Nimora may offer Free, Pro, Business, and Rockstar service plans for different limits and workflows such as AI SEO, analytics, image alt text, content generation, product media, and advanced ecommerce automation."
+    }
+  ]
+}

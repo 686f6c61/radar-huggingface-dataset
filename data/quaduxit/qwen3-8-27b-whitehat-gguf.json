@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "QuaduxIT/Qwen3.8-27B-Whitehat-GGUF",
+  "slug": "quaduxit-qwen3-8-27b-whitehat-gguf",
+  "author": "QuaduxIT",
+  "url": "https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat-GGUF",
+  "created_at": "2026-08-22T14:14:46.000Z",
+  "updated_at": "2026-08-22T16:49:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "cybersecurity",
+    "red-team",
+    "white-hat",
+    "offensive-security",
+    "pentest",
+    "imatrix",
+    "multimodal",
+    "function-calling",
+    "qwen3",
+    "fine-tune",
+    "image-text-to-text",
+    "en",
+    "de",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 220262942304,
+  "storage_human": "220.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B GGUF: Which Quant to Download for Your GPU",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-gguf",
+      "snippet": "Qwen3.8 27B — Ali baba&#x27;s dense 27-billion-parameter model, Apache 2.0 weights released August 13-14, 2026 — runs unusually cheap locally because its hybrid attention caches only 16 of its 64 layers, so a 4-bit quant on 24GB comfortably carries 32K-64K tokens of context."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Unsloth Qwen3.8-27B GGUF: Which Quant for Your RAM? (Aug 2026 ...",
+      "url": "https://www.explainx.ai/blog/unsloth-qwen3-8-27b-dynamic-v3-ggufs-august-2026",
+      "snippet": "Unsloth&#x27;s Dynamic v3.0 GGUF quants for Qwen3.8-27B: 1-bit runs on 8GB RAM at 77% accuracy, 4-bit needs 16-19GB. Full hardware table and setup guide."
+    }
+  ]
+}

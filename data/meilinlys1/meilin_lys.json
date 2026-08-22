@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Meilinlys1/MeiLin_Lys",
+  "slug": "meilinlys1-meilin_lys",
+  "author": "Meilinlys1",
+  "url": "https://huggingface.co/Meilinlys1/MeiLin_Lys",
+  "created_at": "2026-08-22T17:48:43.000Z",
+  "updated_at": "2026-08-22T17:48:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "魅灵ai-无限制ai聊天,专业的ai角色扮演平台",
+      "url": "https://meilinai.com/home",
+      "snippet": "魅灵AI是首选的无限制AI角色扮演情感交流聊天平台。无论您喜欢AI女友、电子女友、AI美女、AI美少女、还是想体验AI动漫与AI二次元角色的深度交流，这里都是最佳的AI游戏与AI小说创作空间，以安全，自由，流畅为主打，给用户最好的交流体验。"
+    },
+    {
+      "title": "Best meilin - 1 AI LORA - Free Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/1012551853625312747",
+      "snippet": "Download meilin - free LORA Illustrious AI model on TENSORHUB ART. By dddl"
+    },
+    {
+      "title": "meilin.ai - @2026 AXIOM IT SOLUTIONS PTE LTD",
+      "url": "https://meilin.ai/",
+      "snippet": "Axiom AI Voice Agent · Azure AI Always on. Always sharp. Always accountable. I&#x27;m Meilin -an AI voice agent Axiom IT Solutions built for SMBs — answering, understanding, and logging every call, 24 hours a day."
+    },
+    {
+      "title": "Meilin Lee - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1673534123256014912",
+      "snippet": "Generate stunning turning_red anime art with the &#x27;Meilin Lee&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Mei Lin (@meilin.model) • Instagram photos and videos",
+      "url": "https://www.instagram.com/meilin.model/",
+      "snippet": "8 Followers, 6 Following, 57 Posts - Mei Lin (@meilin.model) on Instagram: \"🌸 Mei Lin | Premium AI Model Asian representation in high fashion Editorial • Runway • Beauty campaigns model@vyraagency.com\""
+    }
+  ]
+}

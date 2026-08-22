@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "baudcoin/baud-miner-kit",
+  "slug": "baudcoin-baud-miner-kit",
+  "author": "baudcoin",
+  "url": "https://huggingface.co/baudcoin/baud-miner-kit",
+  "created_at": "2026-08-22T18:58:47.000Z",
+  "updated_at": "2026-08-22T18:59:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Baud — Feeless Cryptocurrency for AI Agent Economies",
+      "url": "https://nullnaveen.github.io/Baud/",
+      "snippet": "Mine BAUD with Bitcoin-style halving. Feeless M2M settlement, trustless escrow, agent identity. Built in safe Rust. Fair launch, no pre-mine."
+    },
+    {
+      "title": "Botcoin Miner Claude Code Skill | AI-Driven Crypto Mining",
+      "url": "https://mcpmarket.com/tools/skills/botcoin-miner",
+      "snippet": "Botcoin Miner is a specialized skill for Claude Code that enables automated participation in the Botcoin ecosystem. It manages the full lifecycle of Proof-of-AI-Work mining, including wallet authentication via the Bankr API, staking the required BOTCOIN (minimum 25M), and solving complex, domain-specific natural language challenges. By processing prose documents and generating structured ..."
+    },
+    {
+      "title": "Baud | Advance The Frontier of AI",
+      "url": "https://baudlabs.ai/",
+      "snippet": "Baud exists to cure this waste, and approach the intelligence efficiency of the human brain and eventually go beyond. Concretely, as of today, we have built two things: An arithmetic representation that losslessly eliminates multiplications and compresses neural networks both during forward and backward passes"
+    },
+    {
+      "title": "Bud Model Foundry - BudEcosystem",
+      "url": "https://budecosystem.com/bud-model-foundry/",
+      "snippet": "Agentic-first Model Training Platform Bud Model Foundry Build, fine-tune, post-train and agentic-train open models on your own infrastructure — with research-grade control, production-grade operations, and zero hardware tax."
+    },
+    {
+      "title": "baudcoin/README.md at master · ngilesgt/baudcoin · GitHub",
+      "url": "https://github.com/ngilesgt/baudcoin/blob/master/README.md",
+      "snippet": "Cryptocurrency created for testing purposes. Contribute to ngilesgt/baudcoin development by creating an account on GitHub."
+    }
+  ]
+}

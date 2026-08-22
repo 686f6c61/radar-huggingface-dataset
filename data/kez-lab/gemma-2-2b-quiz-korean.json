@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "kez-lab/gemma-2-2b-quiz-korean",
+  "slug": "kez-lab-gemma-2-2b-quiz-korean",
+  "author": "kez-lab",
+  "url": "https://huggingface.co/kez-lab/gemma-2-2b-quiz-korean",
+  "created_at": "2026-08-22T17:37:04.000Z",
+  "updated_at": "2026-08-22T17:44:49.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "text-generation",
+    "gemma",
+    "gemma-2",
+    "on-device",
+    "android",
+    "litert",
+    "mediapipe",
+    "quiz-generation",
+    "source-grounded",
+    "chain-of-thought",
+    "multiple-choice",
+    "conversational",
+    "ko",
+    "en",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:finetune:google/gemma-2-2b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 10491764018,
+  "storage_human": "10.5 GB",
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kez-lab/quiz-korean · Hugging Face",
+      "url": "https://huggingface.co/kez-lab/quiz-korean",
+      "snippet": "🧠 Qwen2.5-0.5B Blog-to-Quiz (On-Device Android AI) A specialized, ultra-lightweight On-Device Small Language Model (sLLM) fine-tuned to read blogs, technical articles, or personal notes and automatically synthesize 4-choice multiple-choice quizzes (Question, Options, Answer Index, and In-depth Explanation) in strictly formatted JSON."
+    },
+    {
+      "title": "MinKeonKim/gemma-2b-it-quiz-ko · Hugging Face",
+      "url": "https://huggingface.co/MinKeonKim/gemma-2b-it-quiz-ko",
+      "snippet": "Gemma-2B Quiz Answering Model This project fine-tunes the Gemma-2B model to provide answers to quiz-related questions. The model is designed to handle complex problems or quizzes and generate clear and accurate responses in Korean."
+    },
+    {
+      "title": "PDF An Analysis of Korean Language Proficiency of Gemma 2B Models Using KBS ...",
+      "url": "http://hiai.korea.ac.kr/wp-content/uploads/2024/12/An-Analysis-of-Korean-Language-Proficiency-of-Gemma-2B-Models-Using-KBS-Korean-Language-Proficiency-Test_ICICPE_2024.pdf",
+      "snippet": "This study aims to measure the Korean language proficiency of Gemma 2B model using KBS Korean Language Proficiency Test. The KBS Korean Language Proficiency Test provides a comprehensive assessment of efectiveness, fluency, accuracy, and creativity in language use."
+    },
+    {
+      "title": "GitHub - KU-HIAI/Ko-Gemma",
+      "url": "https://github.com/KU-HIAI/Ko-Gemma",
+      "snippet": "Ko-Gemma는 Google의 Gemma 에 의해 개발된 한국어 대규모 언어 모델로, 고려대학교 NLP & AI LAB 와 HIAI 연구소 가 협력하여 KULLM 데이터셋 및 수제작한 데이터셋을 활용하여 한국어 성능을 더욱 향상시킨 버전입니다."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    }
+  ]
+}

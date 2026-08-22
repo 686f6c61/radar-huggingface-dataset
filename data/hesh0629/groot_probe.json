@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hesh0629/groot_probe",
+  "slug": "hesh0629-groot_probe",
+  "author": "hesh0629",
+  "url": "https://huggingface.co/hesh0629/groot_probe",
+  "created_at": "2026-08-22T12:09:25.000Z",
+  "updated_at": "2026-08-22T12:16:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:hesh0629/put_banana_v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2724163520,
+  "parameters_human": "2.72B",
+  "storage_bytes": 16345424496,
+  "storage_human": "16.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hesh0629.github.io",
+      "url": "https://hesh0629.github.io/",
+      "snippet": "Hi! My name is Sung-hwan Han. I am an M.S. student in the High Performance AI System Lab at Sogang University, advised by Prof. Youngmin Yi. My research focuses on two areas: Efficient inference and deployment of AI models, particularly Vision-Language-Action (VLA) models Human-Robot Interaction (HRI), with an emphasis on Robots for Good Across both areas, I am driven by a single goal ..."
+    },
+    {
+      "title": "Hesh0629 (SungHwan Han) · GitHub",
+      "url": "https://github.com/Hesh0629/",
+      "snippet": "Dept of Computer Science and Engineering. . Hesh0629 has 6 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "hesh0629 (sunghwan han) - Hugging Face",
+      "url": "https://huggingface.co/hesh0629",
+      "snippet": "User profile of sunghwan han on Hugging Face"
+    },
+    {
+      "title": "hesh0629 (sunghwan han) - Hugging Face",
+      "url": "https://huggingface.co/hesh0629/datasets",
+      "snippet": "hesh0629&#x27;s datasets 2 Sort: Recently updated hesh0629/celebA_LLaVA Viewer • Updated Mar 16, 2024• 203k• 2"
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "Previous releases: N1.6 | N1.5 NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    }
+  ]
+}

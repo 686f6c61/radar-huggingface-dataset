@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "devoppro/FastLLM",
+  "slug": "devoppro-fastllm",
+  "author": "devoppro",
+  "url": "https://huggingface.co/devoppro/FastLLM",
+  "created_at": "2026-08-21T17:07:09.000Z",
+  "updated_at": "2026-08-22T14:10:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modern_llm",
+    "text-generation",
+    "custom-architecture",
+    "rope",
+    "gqa",
+    "swiglu",
+    "rmsnorm",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 54,
+  "trending_score": 0,
+  "parameters": 308890368,
+  "parameters_human": "308.9M",
+  "storage_bytes": 19780993909,
+  "storage_human": "19.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fast-LLM: Train Large Language Models Faster Than Ever Before - Fast-LLM",
+      "url": "https://servicenow.github.io/Fast-LLM/",
+      "snippet": "Fast-LLM is a high-performance library for training large language models, emphasizing speed, flexibility, and convenience."
+    },
+    {
+      "title": "Accelerating your LLM training to full speed - GitHub",
+      "url": "https://github.com/ServiceNow/Fast-LLM",
+      "snippet": "Fast-LLM is a cutting-edge open-source library for training large language models with exceptional speed, scalability, and flexibility. Built on PyTorch and Triton, Fast-LLM empowers AI teams to push the limits of generative AI, from research to production. Optimized for training models of all sizes—from small 1B-parameter models to massive clusters with 70B+ parameters—Fast-LLM delivers ..."
+    },
+    {
+      "title": "GitHub - liquidos-ai/FastLLM: Unified LLM Gateway with Local Models in ...",
+      "url": "https://github.com/liquidos-ai/FastLLM",
+      "snippet": "FastLLM FastLLM is a Rust workspace for routing LLM requests through a unified gateway API. It provides the provider registry, model route types, request and response contracts, and adapters backed by autoagents-llm."
+    },
+    {
+      "title": "New API - fastllm.top",
+      "url": "https://fastllm.top/about",
+      "snippet": "About FastLLM FastLLM is a professional AI API gateway service for teams and developers who need reliable access to multiple large language model providers through one unified interface. What We Provide The platform helps users manage API access, account balance, usage records, model routing, and billing in a single dashboard."
+    },
+    {
+      "title": "FastLLM - liquidos-ai.github.io",
+      "url": "https://liquidos-ai.github.io/FastLLM/",
+      "snippet": "FastLLM is a Rust SDK for routing LLM requests through one gateway. It supports cloud providers through autoagents-llm and local GGUF models through the optional autoagents-llamacpp runtime."
+    }
+  ]
+}

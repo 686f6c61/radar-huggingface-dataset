@@ -5,7 +5,7 @@
   "author": "joeygambino",
   "url": "https://huggingface.co/joeygambino/MiniMax-H3-Multishot-Workflow",
   "created_at": "2026-08-04T11:48:41.000Z",
-  "updated_at": "2026-08-17T19:40:14.000Z",
+  "updated_at": "2026-08-21T19:37:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-video",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 64,
-  "downloads_30d": 278,
+  "downloads_30d": 290,
   "trending_score": 8,
   "parameters": null,
   "parameters_human": null,

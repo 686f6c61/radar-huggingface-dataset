@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "QuaduxIT/Qwen3.8-27B-Whitehat-W8A16",
+  "slug": "quaduxit-qwen3-8-27b-whitehat-w8a16",
+  "author": "QuaduxIT",
+  "url": "https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat-W8A16",
+  "created_at": "2026-08-22T15:59:34.000Z",
+  "updated_at": "2026-08-22T18:09:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "cybersecurity",
+    "red-team",
+    "white-hat",
+    "offensive-security",
+    "pentest",
+    "compressed-tensors",
+    "w8a16",
+    "int8",
+    "marlin",
+    "vllm",
+    "multimodal",
+    "function-calling",
+    "qwen3",
+    "fine-tune",
+    "conversational",
+    "en",
+    "de",
+    "multilingual",
+    "base_model:QuaduxIT/Qwen3.8-27B-Whitehat",
+    "base_model:quantized:QuaduxIT/Qwen3.8-27B-Whitehat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8756075292,
+  "parameters_human": "8.76B",
+  "storage_bytes": 30785081440,
+  "storage_human": "30.8 GB",
+  "base_model": "QuaduxIT/Qwen3.8-27B-Whitehat",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    },
+    {
+      "title": "Qwen3.8-27B on Hugging Face: official repo download guide",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-huggingface",
+      "snippet": "Qwen3.8 27B is on Hugging Face at Qwen/Qwen3.8-27B, published by the Qwe n org on August 14, 2026 under the Apache 2.0 license. The repo holds 55.6 GB of BF16 safetensors across 18 shards, plus the tokenizer, chat template, and config that go with it — free to download, free to use commercially, and no per-token fee."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "Can I run Qwen 3.8 27B locally? VRAM & hardware",
+      "url": "https://www.canirun.ai/model/qwen3.8-27b",
+      "snippet": "Alibaba · 27B · Dense Flagship dense Qwen 3.8 — native multimodal all-rounder with video understanding Check if your GPU or Mac can run Qwen 3.8 27B locally — 15.1 GB min, 25.1 GB recommended."
+    }
+  ]
+}

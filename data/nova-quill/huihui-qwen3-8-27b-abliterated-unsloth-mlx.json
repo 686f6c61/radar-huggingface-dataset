@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nova-quill/Huihui-Qwen3.8-27B-abliterated-unsloth-mlx",
+  "slug": "nova-quill-huihui-qwen3-8-27b-abliterated-unsloth-mlx",
+  "author": "nova-quill",
+  "url": "https://huggingface.co/nova-quill/Huihui-Qwen3.8-27B-abliterated-unsloth-mlx",
+  "created_at": "2026-08-21T18:35:51.000Z",
+  "updated_at": "2026-08-22T18:06:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "mlx",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3391984,
+  "parameters_human": "3.4M",
+  "storage_bytes": 40714442474,
+  "storage_human": "40.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nova-quill/Huihui-Qwen3.8-27B-abliterated-unsloth-mlx at main",
+      "url": "https://huggingface.co/nova-quill/Huihui-Qwen3.8-27B-abliterated-unsloth-mlx/tree/main",
+      "snippet": "nova-quill / Huihui-Qwen3.8-27B-abliterated-unsloth-mlx like 0 Model card FilesFiles and versions xet Community Copy to bucket new main Huihui-Qwen3.8-27B-abliterated-unsloth-mlx Ctrl+K Ctrl+K 1 contributor History:1 commit nova-quill initial commit 127d7bb verifiedabout 7 hours ago .gitattributes Safe 1.52 kBinitial commitabout 7 hours ago"
+    },
+    {
+      "title": "Huihui Qwen3.8 27B Abliterated by huihui-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/huihui-ai%2FHuihui-Qwen3.8-27B-abliterated,7yiXfSP5itojtujYtkbmXj",
+      "snippet": "Rank the Huihui Qwen3.8 27B Abliterated capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwen3.8-27B: Specs, Benchmarks & Verdict - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-specs-benchmarks-local-hardware/",
+      "snippet": "Qwen3.8-27B benchmarks, specs, local memory, context, license and comparisons—plus what Qwen&#x27;s launch-day evidence does and does not prove."
+    },
+    {
+      "title": "Qwen 3.8-27B Local Deployment and Fast Serving Guide - Geeky Gadgets",
+      "url": "https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/",
+      "snippet": "Qwen 3.8-27B delivers high-speed local AI generation. Optimize your hardware setup using SG Lang with NVFP4 quantization to hit up to 200 tokens per second."
+    }
+  ]
+}

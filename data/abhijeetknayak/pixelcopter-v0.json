@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "abhijeetknayak/pixelcopter-v0",
+  "slug": "abhijeetknayak-pixelcopter-v0",
+  "author": "abhijeetknayak",
+  "url": "https://huggingface.co/abhijeetknayak/pixelcopter-v0",
+  "created_at": "2026-08-22T15:05:31.000Z",
+  "updated_at": "2026-08-22T16:53:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45946,
+  "storage_human": "45946 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhijeetknayak (Abhijeet Nayak) - Hugging Face",
+      "url": "https://huggingface.co/abhijeetknayak",
+      "snippet": "User profile of Abhijeet Nayak on Hugging Face"
+    },
+    {
+      "title": "AkitoP/picelcopter · Hugging Face",
+      "url": "https://huggingface.co/AkitoP/picelcopter",
+      "snippet": "Evaluation results mean_reward on Pixelcopter-PLE-v0 self-reported 40.80 +/- 24.12 View on Papers With Code"
+    },
+    {
+      "title": "abhijeetknayak (Abhijeet Nayak) · GitHub",
+      "url": "https://github.com/abhijeetknayak",
+      "snippet": "I&#x27;m a Doctoral Researcher at the University of Technology Nuremberg. - abhijeetknayak"
+    },
+    {
+      "title": "RL-Learn/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/RL-Learn/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "Abhijeet Nayak",
+      "url": "https://abhijeetknayak.github.io/",
+      "snippet": "Abhijeet Nayak I am an ELLIS PhD student at the University of Technology in Nuremberg, under the supervision of Prof. Wolfram Burgard. My primary research focus is on applying foundation models to robotics, particularly in robot navigation and manipulation. I earned my master&#x27;s degree in Computer Science from the University of Freiburg. During my time there, I worked with the Robot Learning ..."
+    }
+  ]
+}

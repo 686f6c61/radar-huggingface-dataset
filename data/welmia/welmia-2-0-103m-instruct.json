@@ -5,7 +5,7 @@
   "author": "Welmia",
   "url": "https://huggingface.co/Welmia/welmia-2.0-103m-instruct",
   "created_at": "2026-08-22T02:56:13.000Z",
-  "updated_at": "2026-08-22T02:56:21.000Z",
+  "updated_at": "2026-08-22T03:23:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 121,
   "trending_score": 0,
-  "parameters": 103385856,
-  "parameters_human": "103.4M",
-  "storage_bytes": 413551616,
-  "storage_human": "414 MB",
+  "parameters": 121850624,
+  "parameters_human": "121.9M",
+  "storage_bytes": 1388242256,
+  "storage_human": "1.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

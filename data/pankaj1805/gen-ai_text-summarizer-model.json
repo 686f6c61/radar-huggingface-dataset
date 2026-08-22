@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "pankaj1805/GEN-AI_text-summarizer-model",
+  "slug": "pankaj1805-gen-ai_text-summarizer-model",
+  "author": "pankaj1805",
+  "url": "https://huggingface.co/pankaj1805/GEN-AI_text-summarizer-model",
+  "created_at": "2026-08-22T17:52:21.000Z",
+  "updated_at": "2026-08-22T18:16:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "bart",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gen-ai-beginner-projects/ai-text-summarizer-gemini-python at main ...",
+      "url": "https://github.com/pankaj-kaushik/gen-ai-beginner-projects/tree/main/ai-text-summarizer-gemini-python",
+      "snippet": "📌 Introduction Welcome to the AI Text Summarizer - your intelligent assistant for condensing large documents into digestible insights! This beginner-friendly project demonstrates how to leverage Large Language Models (LLMs) with prompt engineering techniques to generate multiple summary formats from a single text source."
+    },
+    {
+      "title": "GitHub - manishi2V/GenAiTextSummarizer: Gen AI Text Summarizer in ...",
+      "url": "https://github.com/manishi2V/GenAiTextSummarizer",
+      "snippet": "A simple, ready-to-use text summarization tool using state-of-the-art Large Language Models (LLMs) via Hugging Face Transformers. This project leverages the BART model (facebook/bart-large-cnn) to generate concise summaries from long pieces of text. Designed for educational and demonstration purposes, it&#x27;s ideal for running in Google Colab with GPU support."
+    },
+    {
+      "title": "genei | AI-powered summarisation & research tool",
+      "url": "https://www.genei.io/",
+      "snippet": "genei is a intelligent research tool enabling you to improve productivity by using a custom AI algorithm to summarise articles, analyse research and find key information, instantly."
+    },
+    {
+      "title": "Summarization Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=summarization",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Text Summarization for NLP: 5 Best APIs, AI Models, and AI Summarizers ...",
+      "url": "https://www.assemblyai.com/blog/text-summarization-nlp-5-best-apis",
+      "snippet": "In this article, we&#x27;ll discuss what exactly text summarization is, how it works, and a few of the best Text Summarization APIs, AI models, and AI summarizers."
+    }
+  ]
+}

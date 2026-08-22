@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ipfipfipf/Qwen3.5-4B-sdpo-react-mathcodesearch-sdpo-arm-e",
+  "slug": "ipfipfipf-qwen3-5-4b-sdpo-react-mathcodesearch-sdpo-arm-e",
+  "author": "ipfipfipf",
+  "url": "https://huggingface.co/ipfipfipf/Qwen3.5-4B-sdpo-react-mathcodesearch-sdpo-arm-e",
+  "created_at": "2026-08-22T16:22:33.000Z",
+  "updated_at": "2026-08-22T16:23:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8424367422,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm3 at main",
+      "url": "https://huggingface.co/ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm3/tree/main",
+      "snippet": "Instructions to use ipfipfipf/Qwen3.5-4B-sdpo-react-rlsd-multitask-arm3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-sdpo-arm-e · Hugging Face",
+      "url": "https://huggingface.co/ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-sdpo-arm-e",
+      "snippet": "Instructions to use ipfipfipf/Qwen3.5-9B-sdpo-react-mathcodesearch-sdpo-arm-e with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "Qwen3.5 4b Mathcodesearch Sdpo E Step30 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/ipfipfipf/qwen3.5-4b-mathcodesearch-sdpo-e-step30",
+      "snippet": "Registry entry for model Qwen3.5 4b Mathcodesearch Sdpo E Step30; source metadata pending."
+    },
+    {
+      "title": "Qwen3.5 — Alibaba Open-Weight 397B Model Specs | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/qwen3-5/",
+      "snippet": "Qwen3.5 is Alibaba&#x27;s open-weight (Apache 2.0) flagship: a 397B-A17B hybrid-attention MoE with native vision and video, 256K context, and 201-language support."
+    }
+  ]
+}

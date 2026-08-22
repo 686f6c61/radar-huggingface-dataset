@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Culture-and-Morality-Lab/psyembedding-roberta-large",
+  "slug": "culture-and-morality-lab-psyembedding-roberta-large",
+  "author": "Culture-and-Morality-Lab",
+  "url": "https://huggingface.co/Culture-and-Morality-Lab/psyembedding-roberta-large",
+  "created_at": "2025-12-17T07:10:02.000Z",
+  "updated_at": "2026-08-22T18:10:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:11180",
+    "loss:CosineSimilarityLoss",
+    "arxiv:1908.10084",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 355359744,
+  "parameters_human": "355.4M",
+  "storage_bytes": 1421483904,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Similarity",
+      "dataset": "similarity",
+      "metric": "Pearson Cosine",
+      "value": 0.3952284283585713
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "similarity",
+      "metric": "Spearman Cosine",
+      "value": 0.41014481263817126
+    }
+  ],
+  "sources": [
+    {
+      "title": "Culture-and-Morality-Lab/psyembedding-roberta-large · Hugging Face",
+      "url": "https://huggingface.co/Culture-and-Morality-Lab/psyembedding-roberta-large",
+      "snippet": "This is a sentence-transformers model trained. It maps sentences & paragraphs to a 1024-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, text classification, clustering, and more."
+    },
+    {
+      "title": "Culture-and-Morality-Lab/psyembedding-roberta-large at main",
+      "url": "https://huggingface.co/Culture-and-Morality-Lab/psyembedding-roberta-large/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Deploy Use this model main psyembedding-roberta-large 1.43 GB 1 contributor History:2 commits Culture-and-Morality-Lab Upload 11 files b50e937 verified3 months ago .gitattributes Safe 1.52 kBinitial commit3 months ago README.md 32.7 kBUpload 11 files3 months ago config.json Safe 632 BytesUpload ..."
+    },
+    {
+      "title": "Tools & Data · Culture and Morality Lab",
+      "url": "https://cultureandmorality.org/tools",
+      "snippet": "The Culture and Morality Lab (CAML) at UMass Amherst studies how culture shapes moral values and norms, using computational methods, experiments, and fieldwork."
+    },
+    {
+      "title": "ROBERTA_MODEL.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/winifred-kay/Sentiment-Analysis-with-huggingface-fac/blob/master/ROBERTA_MODEL.ipynb/",
+      "snippet": "Application of Hugging Face Text classification model Fune-tuning Find below a simple example, with just 3 epochs of fine-tuning. Read more about the fine-tuning concept : here The datasets package is a Python library that provides a collection of over 100 natural language processing (NLP) datasets commonly used for research and development."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aabbdev/RWKV7-1.5B-SMI-20260822",
+  "slug": "aabbdev-rwkv7-1-5b-smi-20260822",
+  "author": "aabbdev",
+  "url": "https://huggingface.co/aabbdev/RWKV7-1.5B-SMI-20260822",
+  "created_at": "2026-08-22T11:00:39.000Z",
+  "updated_at": "2026-08-22T13:54:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rwkv7",
+    "text-generation",
+    "rwkv",
+    "smi",
+    "conversational",
+    "custom_code",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:CohereLabs/aya_dataset",
+    "dataset:nvidia/Nemotron-SFT-Agentic-v2",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "dataset:open-r1/OpenR1-Math-220k",
+    "dataset:nvidia/OpenCodeInstruct",
+    "base_model:aabbdev/RWKV7-1.5B-20260805",
+    "base_model:finetune:aabbdev/RWKV7-1.5B-20260805",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1527709696,
+  "parameters_human": "1.53B",
+  "storage_bytes": 3055500160,
+  "storage_human": "3.1 GB",
+  "base_model": "aabbdev/RWKV7-1.5B-20260805",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · aabbdev/RWKV7-1.5B-20260805 at main - Hugging Face",
+      "url": "https://huggingface.co/aabbdev/RWKV7-1.5B-20260805/blob/main/README.md",
+      "snippet": "The repository includes configuration_rwkv7.py and modeling_rwkv7.py, adapted from the Transformers RWKV-7 integration at commit 4ad9ed0. Review those files and pin a model-repository revision in production."
+    },
+    {
+      "title": "GitHub - aabbdev/rwkv-publisher",
+      "url": "https://github.com/aabbdev/rwkv-publisher/tree/main/",
+      "snippet": "This repository builds standalone Hugging Face model repositories for official BlinkDL RWKV-7 Goose checkpoints. It is deliberately separate from both Hugging Face Transformers and the RWKV7 PyTorch runtime repository."
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    },
+    {
+      "title": "fla-hub/rwkv7-1.5B-world · Hugging Face",
+      "url": "https://huggingface.co/fla-hub/rwkv7-1.5B-world",
+      "snippet": "rwkv7-1.5B-world This is RWKV-7 model under flash-linear attention format. Model Details Model Description Developed by: Bo Peng, Yu Zhang, Songlin Yang, Ruichong Zhang Funded by: RWKV Project (Under LF AI & Data Foundation) Model type: RWKV7 Language (s) (NLP): English, Chinese, Japanese, Korean, French, Arabic, Spanish, Portuguese License ..."
+    },
+    {
+      "title": "Rwkv7 1.5b 20260805 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/rwkv/rwkv7-1.5b-20260805",
+      "snippet": "Deep dive into Rwkv7 1.5b 20260805. 📝 Limitations & Considerations •Benchmark scores may vary based on evaluation methodology and hardware configuration. •VRAM requirements are estimates; actual usage depends on quantization and batch size. •FNI scores are relative rankings and may change as new models are added. ⚠License Unknown: Verify licensing terms before commercial use. 🤗 ..."
+    }
+  ]
+}

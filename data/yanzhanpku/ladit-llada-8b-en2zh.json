@@ -5,7 +5,7 @@
   "author": "YanZhanPKU",
   "url": "https://huggingface.co/YanZhanPKU/LaDiT-LLaDA-8B-En2Zh",
   "created_at": "2026-08-21T15:51:18.000Z",
-  "updated_at": "2026-08-21T16:02:05.000Z",
+  "updated_at": "2026-08-22T13:07:23.000Z",
   "license": "llada-8b-base-license",
   "license_family": "unknown",
   "pipeline_tag": "translation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

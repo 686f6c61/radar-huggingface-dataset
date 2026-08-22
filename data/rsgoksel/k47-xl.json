@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RsGoksel/k47-XL",
+  "slug": "rsgoksel-k47-xl",
+  "author": "RsGoksel",
+  "url": "https://huggingface.co/RsGoksel/k47-XL",
+  "created_at": "2026-08-22T13:49:15.000Z",
+  "updated_at": "2026-08-22T13:49:52.000Z",
+  "license": "research-preview",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "automatic-speech-recognition",
+    "turkish",
+    "asr",
+    "rnn-t",
+    "conformer",
+    "from-scratch",
+    "speech-recognition",
+    "tr",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109853664,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439552760,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RsGoksel_ITU_Mainframe - Hugging Face",
+      "url": "https://huggingface.co/RsGoksel/RsGoksel_ITU_Mainframe",
+      "snippet": "A Turkish automatic-speech-recognition model: a LoRA fine-tune of openai/whisper-large-v3-turbo (809 M, 128-mel, 32 encoder / 4 decoder layers), merged to full weights. Internal codename VH5.0d. A CTranslate2 / faster-whisper build is at RsGoksel/RsGoksel_ITU_Mainframe-ct2."
+    },
+    {
+      "title": "RsGoksel (Göksel Gündüz) · GitHub",
+      "url": "https://github.com/RsGoksel/",
+      "snippet": "Energy Science & Technology | AI Team Lead @ Seduss Robotics #EducationalAI | Generative AI Engineer - RsGoksel"
+    },
+    {
+      "title": "RsGoksel/model_01 at main - Hugging Face",
+      "url": "https://huggingface.co/RsGoksel/model_01/tree/main",
+      "snippet": "RsGoksel / model_01 like 0 Text Generation Transformers PyTorch English llama text-generation-inference unsloth trl sft Inference Endpoints License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model main model_01 1 contributor History:4 commits RsGoksel Trained with Unsloth ffa467d verifiedabout 5 hours ago ..."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

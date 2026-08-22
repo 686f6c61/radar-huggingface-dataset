@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "momentarek1/Python_Assignment",
+  "slug": "momentarek1-python_assignment",
+  "author": "momentarek1",
+  "url": "https://huggingface.co/momentarek1/Python_Assignment",
+  "created_at": "2026-08-22T13:40:51.000Z",
+  "updated_at": "2026-08-22T13:43:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model AI Assignments",
+      "url": "http://modelai.gettysburg.edu/",
+      "snippet": "Model AI Assignments is the largest, open-access, peer-reviewed AI assignment repository. Accepted assignments are presented in sessions at the Educational Advances in Artificial Intelligence Symposium, collocated with AAAI."
+    },
+    {
+      "title": "GitHub - AtharvaJoshi2004/Artificial-Intelligence: AI Lab Submissions ...",
+      "url": "https://github.com/AtharvaJoshi2004/Artificial-Intelligence",
+      "snippet": "This repository contains assignments for the course CAUA31201: Artificial Intelligence. The course covers various key aspects of AI, including search strategies, knowledge representation, reasoning under uncertainty, expert systems, and machine learning. The objective is to provide students with a deep understanding of AI concepts and their practical applications in real-world scenarios."
+    },
+    {
+      "title": "AI With Python Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/python-ai/",
+      "snippet": "This AI with Python tutorial covers the fundamental and advanced artificial intelligence (AI) concepts using Python. Whether we&#x27;re a complete beginner or an experienced professional this tutorial will help us to learn AI step by step."
+    },
+    {
+      "title": "applied-machine-learning-in-python/Assignment+1.ipynb at master ...",
+      "url": "https://github.com/amirkeren/applied-machine-learning-in-python/blob/master/Assignment%2B1.ipynb",
+      "snippet": "Solutions to the &#x27;Applied Machine Learning In Python&#x27; Coursera course exercises - amirkeren/applied-machine-learning-in-python"
+    },
+    {
+      "title": "Assignment+2 - Don Lim",
+      "url": "https://donlim93.github.io/python/Coursera/3%20Applied%20Machine%20Learning/Week%202/Assignment/Assignment+2.html",
+      "snippet": "In this assignment you&#x27;ll explore the relationship between model complexity and generalization performance, by adjusting key parameters of various supervised learning models."
+    }
+  ]
+}

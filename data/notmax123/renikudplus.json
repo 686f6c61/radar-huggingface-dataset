@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "notmax123/RenikudPlus",
+  "slug": "notmax123-renikudplus",
+  "author": "notmax123",
+  "url": "https://huggingface.co/notmax123/RenikudPlus",
+  "created_at": "2026-07-13T18:38:37.000Z",
+  "updated_at": "2026-08-22T18:59:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "onnx",
+    "grapheme-to-phoneme",
+    "g2p",
+    "hebrew",
+    "phonemization",
+    "text-to-speech",
+    "he",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3453450268,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "notmax123/RenikudPlus · Hugging Face",
+      "url": "https://huggingface.co/notmax123/RenikudPlus",
+      "snippet": "Hebrew grapheme-to-phoneme (G2P) model that converts unvocalized text to IPA for TTS, speech technology, and spoken-language research. model.onnx is a self-contained, INT8 ONNX model."
+    },
+    {
+      "title": "notmax123/RenikudPlus at main - Hugging Face",
+      "url": "https://huggingface.co/notmax123/RenikudPlus/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main RenikudPlus 310 MB Ctrl+K Ctrl+K 1 contributor History:5 commits notmax123 Document gender-conditioned inference 92322e6 verifiedabout 9 hours ago .gitattributes 1.58 kBAdd model card and benchmark plotabout 9 hours ago README.md 1.02 kBDocument gender-conditioned ..."
+    },
+    {
+      "title": "renikudplus/README.md at main · devbyteai/renikudplus · GitHub",
+      "url": "https://github.com/devbyteai/renikudplus/blob/main/README.md",
+      "snippet": "For a gender-conditioned ONNX model, pass speaker and target_speaker as 0 (unknown), 1 (male), or 2 (female):"
+    },
+    {
+      "title": "GitHub - devbyteai/renikudplus",
+      "url": "https://github.com/devbyteai/renikudplus",
+      "snippet": "For a gender-conditioned ONNX model, pass speaker and target_speaker as 0 (unknown), 1 (male), or 2 (female):"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

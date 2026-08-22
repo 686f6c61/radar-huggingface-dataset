@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Atharva1232/cleanrl-ppo-LunarLander-v2",
+  "slug": "atharva1232-cleanrl-ppo-lunarlander-v2",
+  "author": "Atharva1232",
+  "url": "https://huggingface.co/Atharva1232/cleanrl-ppo-LunarLander-v2",
+  "created_at": "2026-08-22T11:47:56.000Z",
+  "updated_at": "2026-08-22T11:48:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "LunarLander-v2",
+    "ppo",
+    "cleanrl",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128034,
+  "storage_human": "128034 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atharva1232/cleanrl-ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/Atharva1232/cleanrl-ppo-LunarLander-v2",
+      "snippet": "CleanRL PPO Agent Playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the CleanRL implementation with PyTorch."
+    },
+    {
+      "title": "apparition/cleanrl_ppo-LunarLander · Hugging Face",
+      "url": "https://huggingface.co/apparition/cleanrl_ppo-LunarLander",
+      "snippet": "PPO Agent Playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2."
+    },
+    {
+      "title": "GitHub - alperenunlu/ppo-lunarlander-v2: Agent trained with PPO ...",
+      "url": "https://github.com/alperenunlu/ppo-lunarlander-v2",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    },
+    {
+      "title": "GitHub - vwxyzjn/cleanrl: High-quality single file implementation of ...",
+      "url": "https://github.com/vwxyzjn/cleanrl",
+      "snippet": "CleanRL is a Deep Reinforcement Learning library that provides high-quality single-file implementation with research-friendly features. The implementation is clean and simple, yet we can scale it to run thousands of experiments using AWS Batch."
+    },
+    {
+      "title": "unit8_part1.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit8/unit8_part1.ipynb",
+      "snippet": "In this notebook, you&#x27;ll learn to code your PPO agent from scratch with PyTorch using CleanRL implementation as model. To test its robustness, we&#x27;re going to train it in: LunarLander-v2 🚀"
+    }
+  ]
+}

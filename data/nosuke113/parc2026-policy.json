@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "nosuke113/parc2026-policy",
+  "slug": "nosuke113-parc2026-policy",
+  "author": "nosuke113",
+  "url": "https://huggingface.co/nosuke113/parc2026-policy",
+  "created_at": "2026-08-02T13:07:31.000Z",
+  "updated_at": "2026-08-22T11:50:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 925649986092,
+  "storage_human": "925.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nosuke113/parc2026-policy · Hugging Face",
+      "url": "https://huggingface.co/nosuke113/parc2026-policy",
+      "snippet": "nosuke113 / parc2026-policy like 1 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "nosuke113/parc2026-policy at main - Hugging Face",
+      "url": "https://huggingface.co/nosuke113/parc2026-policy/tree/main",
+      "snippet": "nosuke113 / parc2026-policy like 1 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new main parc2026-policy 958 GB Ctrl+K Ctrl+K 1 contributor History:113 commits nosuke113 EXP_007: pi0.5 Sequential Finetuning libero_plus (total_steps=60000) -> libero (0), LoRA r=16 alpha=32, batch_size=8, merged 2be59ea verified2 ..."
+    },
+    {
+      "title": "GitHub - takashinnosuke/parc2026-submission-code",
+      "url": "https://github.com/takashinnosuke/parc2026-submission-code",
+      "snippet": "PARC2026 （Physical AI Robot Challenge 2026）予選 Track1 の提出にあたり、公式配布テンプレート matsuolab/PARC2026_pre の上に 独自に追加・変更したコードのみ を収録したリポジトリです。テンプレート自体に含まれるコード（lerobot ライブラリ本体、 harness/ 等）は再配布せず、差分のみを公開しています。"
+    },
+    {
+      "title": "parc2026-submission-code/submission_template/policy_server.py ... - GitHub",
+      "url": "https://github.com/takashinnosuke/parc2026-submission-code/blob/main/submission_template/policy_server.py",
+      "snippet": "797 lines (716 loc) · 43 KB main parc2026-submission-code / submission_template / policy_server.py Code Blame 797 lines (716 loc) · 43 KB Raw 1 2 3 4 5 6 7 8 9 10 ..."
+    },
+    {
+      "title": "PARC2026でπ0.5をLoRA継続学習：0.4332到達と採点環境互換化 - Qiita",
+      "url": "https://qiita.com/koki-1231/items/f636f6148b7419d2311c",
+      "snippet": "PARC2026 Track 1とは Physical AI Robot Challenge 2026（PARC2026） は、AIロボット協会（AIRoA）と東京大学松尾・岩澤研究室が実施する、Vision-Language-Action（VLA）モデルのロボット制御能力を競うコンペです。"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Echoo113",
   "url": "https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-immigration_prompted-ft4.43",
   "created_at": "2026-08-21T22:10:14.000Z",
-  "updated_at": "2026-08-21T22:16:04.000Z",
+  "updated_at": "2026-08-21T22:30:51.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 80019729,
-  "storage_human": "80 MB",
+  "storage_bytes": 320059089,
+  "storage_human": "320 MB",
   "base_model": "allenai/Olmo-3-7B-Instruct",
   "formats": [
     "safetensors"

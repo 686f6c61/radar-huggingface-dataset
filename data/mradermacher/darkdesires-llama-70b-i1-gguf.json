@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/DarkDesires-LLaMa-70B-i1-GGUF",
   "created_at": "2026-08-21T00:12:08.000Z",
-  "updated_at": "2026-08-22T02:18:42.000Z",
+  "updated_at": "2026-08-22T04:13:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,12 +27,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 49,
+  "downloads_30d": 396,
   "trending_score": 0,
   "parameters": 70553706560,
   "parameters_human": "70.55B",
-  "storage_bytes": 558610423808,
-  "storage_human": "558.6 GB",
+  "storage_bytes": 753210156128,
+  "storage_human": "753.2 GB",
   "base_model": "TareksLab/DarkDesires-LLaMa-70B",
   "formats": [
     "gguf"

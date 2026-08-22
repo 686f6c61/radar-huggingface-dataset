@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "kingjones777/LFM2.5-8B-A1B-NVFP4",
+  "slug": "kingjones777-lfm2-5-8b-a1b-nvfp4",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/LFM2.5-8B-A1B-NVFP4",
+  "created_at": "2026-08-22T18:27:19.000Z",
+  "updated_at": "2026-08-22T18:29:03.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-generation",
+    "nvfp4",
+    "fp4",
+    "w4a4",
+    "compressed-tensors",
+    "llmcompressor",
+    "sglang",
+    "vllm",
+    "blackwell",
+    "gb10",
+    "lfm2",
+    "liquid-ai",
+    "quantized",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-8B-A1B",
+    "base_model:quantized:LiquidAI/LFM2.5-8B-A1B",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 5161413790,
+  "storage_human": "5.2 GB",
+  "base_model": "LiquidAI/LFM2.5-8B-A1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2.5-8B-A1B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LFM2.5-8B-A1B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-8b-a1b",
+      "snippet": "← Back to Text Models LFM2.5-8B-A1B is Liquid AI&#x27;s Mixture-of-Experts model, combining 8B total parameters with only 1.5B active parameters per forward pass with a 128K context window and chain of thought reasoning. This model delivers exceptional performance in tool calling and agentic tasks while running on-device."
+    },
+    {
+      "title": "LFM2.5-8B-A1B: An Even Better On-Device Mixture of Experts",
+      "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
+      "snippet": "Explore Liquid AI&#x27;s LFM2.5-8B-A1B, an on-device Mixture of Experts model with 128K context, fast tool calling, and strong AI benchmarks."
+    },
+    {
+      "title": "kingjones777 (Myron Jones) - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "Liquid Foundation Models — Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "The world&#x27;s most efficient foundation models — designed for on-device, edge, and cloud deployment."
+    }
+  ]
+}

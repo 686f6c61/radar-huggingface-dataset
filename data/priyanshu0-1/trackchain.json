@@ -5,7 +5,7 @@
   "author": "PRiyanshu0-1",
   "url": "https://huggingface.co/PRiyanshu0-1/TrackChain",
   "created_at": "2026-08-21T18:59:21.000Z",
-  "updated_at": "2026-08-21T23:08:23.000Z",
+  "updated_at": "2026-08-21T23:58:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,7 +13,6 @@
   "languages": [],
   "tags": [
     "onnx",
-    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
@@ -21,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 806886291,
-  "storage_human": "807 MB",
+  "storage_bytes": 975357464,
+  "storage_human": "975 MB",
   "base_model": null,
   "formats": [
     "onnx"

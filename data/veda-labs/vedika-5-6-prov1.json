@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Veda-Labs/Vedika-5.6-PROv1",
+  "slug": "veda-labs-vedika-5-6-prov1",
+  "author": "Veda-Labs",
+  "url": "https://huggingface.co/Veda-Labs/Vedika-5.6-PROv1",
+  "created_at": "2026-08-22T15:41:44.000Z",
+  "updated_at": "2026-08-22T17:33:49.000Z",
+  "license": "vedika-5.6-pro",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "kimi_k3",
+    "feature-extraction",
+    "conversational",
+    "multimodal",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 238943968992,
+  "storage_human": "238.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TOOLS-droid724/Vedika-5.6-PRO - GitHub",
+      "url": "https://github.com/TOOLS-droid724/Vedika-5.6-PRO",
+      "snippet": "1. Model Introduction Vedika 5.6 Pro is our most advanced multimodal AI model to date. With over 2 trillion parameters, it represents a significant leap forward in artificial intelligence capabilities. Designed for complex reasoning, multimodal understanding, and long-context processing, Vedika 5.6 Pro delivers frontier-level performance across diverse domains."
+    },
+    {
+      "title": "Veda-Labs/Vedika · Hugging Face",
+      "url": "https://huggingface.co/Veda-Labs/Vedika",
+      "snippet": "The model is designed to be used by developers building AI-powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented generation systems, and is suitable for general-purpose conversational use, instruction-following, and other natural language and multimodal tasks."
+    },
+    {
+      "title": "Vedika - a Hugging Face Space by Veda-Labs",
+      "url": "https://huggingface.co/spaces/Veda-Labs/Vedika",
+      "snippet": "Upload an original picture, write a brief prompt describing the desired result, and set the strength level for how much change you want. The app transforms the image using an AI model, blending the..."
+    },
+    {
+      "title": "Vedika-advanced-AI/API-DOCUMENTATION - GitHub",
+      "url": "https://github.com/Vedika-advanced-AI/API-DOCUMENTATION",
+      "snippet": "The official API documentation of Veda lab. Contribute to Vedika-advanced-AI/API-DOCUMENTATION development by creating an account on GitHub."
+    },
+    {
+      "title": "Vedika by Veda-Labs — VRAM 789.2GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Veda-Labs%2FVedika,5aULMF4n6PieHYcYmQyqGN",
+      "snippet": "Vedika is an open-source 952.4b LLM by Veda-Labs. VRAM 789.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

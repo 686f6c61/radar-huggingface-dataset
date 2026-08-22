@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Muhammad241198/act_crocodileclip_to_cardboard_30",
+  "slug": "muhammad241198-act_crocodileclip_to_cardboard_30",
+  "author": "Muhammad241198",
+  "url": "https://huggingface.co/Muhammad241198/act_crocodileclip_to_cardboard_30",
+  "created_at": "2026-08-22T11:15:31.000Z",
+  "updated_at": "2026-08-22T11:15:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:rbtrprjkt/crocodileclip-to-cardboard",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51613326,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206489032,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muhammad241198/act_crocodileclip_to_cardboard_120 · Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198/act_crocodileclip_to_cardboard_120",
+      "snippet": "Muhammad241198 / act_crocodileclip_to_cardboard_120 like 0 Robotics LeRobot Safetensors rbtrprjkt/crocodileclip-to-cardboard act arxiv:2304.13705 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Muhammad241198 (Muhammad Obaid Ur Rahman) - Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago ... updated a dataset 10 days ago"
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "www.perplexity.ai",
+      "url": "https://www.perplexity.ai/gen/computer/video-to-shorts",
+      "snippet": "We would like to show you a description here but the site won&#x27;t allow us."
+    }
+  ]
+}

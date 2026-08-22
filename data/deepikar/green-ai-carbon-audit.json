@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DeepikaR/green-ai-carbon-audit",
+  "slug": "deepikar-green-ai-carbon-audit",
+  "author": "DeepikaR",
+  "url": "https://huggingface.co/DeepikaR/green-ai-carbon-audit",
+  "created_at": "2026-08-22T16:18:18.000Z",
+  "updated_at": "2026-08-22T16:23:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bhakti1206/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/Bhakti1206/green-ai-carbon-audit",
+      "snippet": "Bhakti1206 / green-ai-carbon-audit like 0 Carbon Emissions Model card FilesFiles and versions xet Community Copy to bucket new Green AI Carbon Accounting Audit Training Run Details Energy Calculation Carbon Calculation"
+    },
+    {
+      "title": "24f1002802/green-ai-carbon-audit · Hugging Face",
+      "url": "https://huggingface.co/24f1002802/green-ai-carbon-audit",
+      "snippet": "24f1002802 / green-ai-carbon-audit like 0 Carbon Emissions Model card FilesFiles and versions xet Community Copy to bucket new Green AI Carbon Accounting Audit Training Run Energy Calculation Carbon Calculation"
+    },
+    {
+      "title": "Green AI | green-ai - ejhusom.github.io",
+      "url": "https://ejhusom.github.io/green-ai/",
+      "snippet": "Green Algorithms [Website] [Paper] ML CO2 Impact [Website] [Paper] Tools for AI/ML development with integrated carbon footprint reporting d2m [Website] [Source code] - a machine learning pipeline for ML model development with automatic monitoring and tracking of the carbon footprint Papers Particularly important papers are highlighted."
+    },
+    {
+      "title": "CarbonAI | Unleash your potential with innovative solutions",
+      "url": "https://carbonai.eco/",
+      "snippet": "Your AI-powered sustainability expert and the heart of CarbonAI. Research carbon markets, sustainability frameworks, climate regulations, reporting standards and carbon projects using agentic AI that combines proprietary data, project documentation and expertly-curated global sources to deliver transparent, referenced answers in seconds."
+    },
+    {
+      "title": "Green artificial intelligence initiatives: Potentials and challenges",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0959652624025393",
+      "snippet": "This paper has identified 55 such initiatives, broadly categorized into six themes: cloud optimization, model efficiency, carbon footprinting, sustainability-focused AI development, open-source initiatives, and green AI research and community. This study discusses the strengths and limitations of each initiative to offer a comprehensive overview."
+    }
+  ]
+}

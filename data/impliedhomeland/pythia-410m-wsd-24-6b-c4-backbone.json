@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Impliedhomeland/pythia-410m-wsd-24.6B-c4-backbone",
+  "slug": "impliedhomeland-pythia-410m-wsd-24-6b-c4-backbone",
+  "author": "Impliedhomeland",
+  "url": "https://huggingface.co/Impliedhomeland/pythia-410m-wsd-24.6B-c4-backbone",
+  "created_at": "2026-08-22T18:57:29.000Z",
+  "updated_at": "2026-08-22T19:04:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "pythia",
+    "midtraining",
+    "continual-pretraining",
+    "research-artifact",
+    "checkpoints",
+    "wsd",
+    "en",
+    "dataset:allenai/c4",
+    "dataset:bigcode/starcoderdata",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77830465879,
+  "storage_human": "77.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Impliedhomeland (Anupam Nayak) - Hugging Face",
+      "url": "https://huggingface.co/Impliedhomeland",
+      "snippet": "Sort: Recently updated Impliedhomeland/midtrain-bridge-1B-wsd-backbone Updated 7 days ago"
+    },
+    {
+      "title": "EleutherAI/pythia-410m · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-410m",
+      "snippet": "The Pythia Scaling Suite is a collection of models developed to facilitate interpretability research (see paper). It contains two sets of eight models of sizes 70M, 160M, 410M, 1B, 1.4B, 2.8B, 6.9B, and 12B. For each size, there are two models: one trained on the Pile, and one trained on the Pile after the dataset has been globally deduplicated. All 8 model sizes are trained on the exact same ..."
+    },
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "We reran the entire model suite with these inconsistencies fixed and the original runs are available under the name EleutherAI/pythia-160m-v0. See the Pythia paper for further details on how the v0 models differ from the main suite."
+    },
+    {
+      "title": "pythia/models at main · EleutherAI/pythia · GitHub",
+      "url": "https://github.com/EleutherAI/pythia/tree/main/models",
+      "snippet": "The hub for EleutherAI&#x27;s work on interpretability and learning dynamics - pythia/models at main · EleutherAI/pythia"
+    },
+    {
+      "title": "pythia 410m - 未知 | OpenModelMap",
+      "url": "https://openmodelmap.com/model/EleutherAI/pythia-410m",
+      "snippet": "Pythia 410M is a lightweight language model developed by EleutherAI, focusing on transparency and interpretability research. Despite its small parameter count, it is carefully trained for solid text generation capabilities, making it suitable for education, prototyping, and small-scale tasks while offering low resource consumption."
+    }
+  ]
+}

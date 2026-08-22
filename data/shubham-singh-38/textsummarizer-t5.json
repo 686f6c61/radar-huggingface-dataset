@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "shubham-singh-38/textSummarizer-t5",
+  "slug": "shubham-singh-38-textsummarizer-t5",
+  "author": "shubham-singh-38",
+  "url": "https://huggingface.co/shubham-singh-38/textSummarizer-t5",
+  "created_at": "2026-08-22T14:57:24.000Z",
+  "updated_at": "2026-08-22T17:01:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shubham-singh-38/text-summarizer-t5 · Hugging Face",
+      "url": "https://huggingface.co/shubham-singh-38/text-summarizer-t5",
+      "snippet": "shubham-singh-38 / text-summarizer-t5 like 0 Safetensors t5 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "shubham-singh-38 (shubham singh) - Hugging Face",
+      "url": "https://huggingface.co/shubham-singh-38",
+      "snippet": "YES Recent Activity updated a model3 days ago shubham-singh-38/text-summarizer-t5 published a model3 days ago shubham-singh-38/text-summarizer-t5 View all activity"
+    },
+    {
+      "title": "GitHub - ridhammishra/summarization-LLM: A compact T5-powered ...",
+      "url": "https://github.com/ridhammishra/summarization-LLM",
+      "snippet": "A text summarization project built using the T5 (Text-to-Text Transfer Transformer) architecture. The project demonstrates text preprocessing, tokenization, sequence-to-sequence generation, Hugging Face model inference, and ONNX model deployment. Text summarization converts a long piece of text into shorter version maintaining the context This project is aimed towards summarizing scientific ..."
+    },
+    {
+      "title": "GitHub - Shubhamvishwakarma05/ShubhSummary: an AI-text-Summarizer ...",
+      "url": "https://github.com/Shubhamvishwakarma05/ShubhSummary",
+      "snippet": "A powerful, interactive text summarization tool built with Python, Streamlit, and advanced NLP techniques. ShubhSummary combines extractive and abstractive summarization methods, adds sentiment analysis, and wraps it all in a sleek, customizable UI. Perfect for data science portfolios, NLP enthusiasts, or anyone who wants concise insights from text! LinkedIn: shubhamvishwakarma05"
+    },
+    {
+      "title": "Text Summarization using HuggingFace Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/text-summarizations-using-huggingface-model/",
+      "snippet": "Step 3: Load Pre-trained Model and Tokenizer T5 (Text-to-Text Transfer Transformer) handles every NLP task as a text transformation, it takes text as input and generates text as output. For summarization, it reads the full content and produces a shorter version. The model downloads automatically on first use."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Alniyat5f/WuQi-V3-Onyx-27b-GGUF",
+  "slug": "alniyat5f-wuqi-v3-onyx-27b-gguf",
+  "author": "Alniyat5f",
+  "url": "https://huggingface.co/Alniyat5f/WuQi-V3-Onyx-27b-GGUF",
+  "created_at": "2026-08-22T14:27:34.000Z",
+  "updated_at": "2026-08-22T19:27:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "WuQi",
+    "WuQi-V3",
+    "image-text-to-text",
+    "zh",
+    "base_model:Alniyat5f/WuQi-V3-Onyx-27B",
+    "base_model:quantized:Alniyat5f/WuQi-V3-Onyx-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 19753864530,
+  "storage_human": "19.8 GB",
+  "base_model": "Alniyat5f/WuQi-V3-Onyx-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alniyat Alniyat5f - GitHub",
+      "url": "https://github.com/Alniyat5f",
+      "snippet": "GitHub is where Alniyat5f builds software. Joined Aug 11, 2026 Block or report Alniyat5f Block user"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "bartowski/deepseek-ai_DeepSeek-V3.1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/deepseek-ai_DeepSeek-V3.1-GGUF",
+      "snippet": "Llamacpp imatrix Quantizations of DeepSeek-V3.1 by deepseek-ai Prompt format Download a file (not the whole branch) from below: Embed/output weights Downloading using huggingface-cli ARM/AVX information Which file should I choose? Credits"
+    }
+  ]
+}

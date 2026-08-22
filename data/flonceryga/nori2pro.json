@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Flonceryga/Nori2PRO",
+  "slug": "flonceryga-nori2pro",
+  "author": "Flonceryga",
+  "url": "https://huggingface.co/Flonceryga/Nori2PRO",
+  "created_at": "2026-08-22T12:51:50.000Z",
+  "updated_at": "2026-08-22T12:52:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 3455869760,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-08-22T13:55:53.790Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flonceryga - Twitch",
+      "url": "https://www.twitch.tv/flonceryga?lang=cs",
+      "snippet": "flonceryga vysílá živě na Twitchi! Podívejte se na videa tohoto kanálu, přihlaste se do chatu a zapojte se do tamní komunity."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Frontier, open-source, and partner models in one place."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "snippet": "Run entirely offline for mission critical work. Open model weights and open-source code. Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+    },
+    {
+      "title": "Meshy AI - Free AI 3D Model Generator Online | Meshy 6",
+      "url": "https://meshyiai.com/",
+      "snippet": "Meshy is an AI 3D model generator that turns text prompts or 2D images into fully textured, export-ready 3D assets in about a minute with no 3D modeling skills required."
+    }
+  ]
+}

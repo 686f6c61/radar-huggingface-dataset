@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "michael-chan-000/affine-5GbZvZ7tcC-d1",
+  "slug": "michael-chan-000-affine-5gbzvz7tcc-d1",
+  "author": "michael-chan-000",
+  "url": "https://huggingface.co/michael-chan-000/affine-5GbZvZ7tcC-d1",
+  "created_at": "2026-08-22T13:28:34.000Z",
+  "updated_at": "2026-08-22T13:28:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "affine",
+    "sn120",
+    "reason-v4",
+    "offline-dpo",
+    "r861",
+    "text-generation",
+    "conversational",
+    "base_model:vera6/affine-5g4yy75zuz-t6",
+    "base_model:finetune:vera6/affine-5g4yy75zuz-t6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483253,
+  "storage_human": "70.2 GB",
+  "base_model": "vera6/affine-5g4yy75zuz-t6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "michael-chan-000/affine-5GbZvZ7tcC-h2 · Hugging Face",
+      "url": "https://huggingface.co/michael-chan-000/affine-5GbZvZ7tcC-h2",
+      "snippet": "michael-chan-000 / affine-5GbZvZ7tcC-h2 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 32 Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "michael-chan-000 (michael_chan) - Hugging Face",
+      "url": "https://huggingface.co/michael-chan-000",
+      "snippet": "User profile of michael_chan on Hugging Face"
+    },
+    {
+      "title": "Affine 5Eh8v9zUpcBwNLRzE3bRv2FFhnaNPERRLdvEH8SdwLiahUh8 by michael-chan-000",
+      "url": "https://llm-explorer.com/model/michael-chan-000%2Faffine-5Eh8v9zUpcBwNLRzE3bRv2FFhnaNPERRLdvEH8SdwLiahUh8,3rpOQPfwyZAHsR4er1dcga",
+      "snippet": "Affine 5Eh8v9zUpcBwNLRzE3bRv2FFhnaNPERRLdvEH8SdwLiahUh8 is an open-source language model by michael-chan-000. Features: 32.8b LLM, VRAM: 65.8GB, Context: 40K, License ..."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "AI Model Release Tracker Stay up to date with the latest AI model releases. This page tracks 427 models across all providers, sorted by release date."
+    },
+    {
+      "title": "michael-chan-000/tts-m-v2 - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/michael-chan-000/tts-m-v2",
+      "snippet": "Run michael-chan-000/tts-m-v2 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

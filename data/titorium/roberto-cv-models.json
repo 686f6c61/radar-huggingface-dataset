@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Titorium/roberto-cv-models",
+  "slug": "titorium-roberto-cv-models",
+  "author": "Titorium",
+  "url": "https://huggingface.co/Titorium/roberto-cv-models",
+  "created_at": "2026-08-22T13:52:41.000Z",
+  "updated_at": "2026-08-22T14:04:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2519876259,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IA CV generate - Modèles de CV de qualité",
+      "url": "https://duckduckgo.com/y.js?ad_domain=livecareer.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=p3rYUQA7mXzdZSYhZFHbAfYE6n3b1aLeLAHB0npIEeF8hRW%2D5plKuDN4gIZmWav5wfa7bNOuI_PTOVLX1ZCpEfaNugygkgQs%2DEi4aJKw4m%2Diu5m22cf8rtNXzghm3NWJr6rAyzxXlzgXEQqYhtDTiUEu%2DaH0dbrW6XMqVYS5Ruc.%2Dgk4jz5w86y_S8PXrjlOfA&rut=dd6d6182ff80080edc8b969a2fb7ee249c5b4d42cc8b5c366dee656c70b63e32&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8TGQNM_bdYzXX%2DrYgQp6jMzVUCUyVY1EQnvQvbbTnDVClGYvSuHIHnf5S1wC%2DZF7kQRqZc%2DOuqt2KfRMTPh%2D7Q0gQSNXw%2DnyN0ZamKkT2jNwSkgtHT8E0Wu6il5VWrP_Nw89dk37Vxo5647yNEyrYdczj8WGq_3KQTii119KrGA8RAsgIlzMPUFGmhv3pwGz2hnCSz66lQbTu_rNS_cGx59hMZTM%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cubGl2ZWNhcmVlci5mciUyZmxwJTJmZnIlMmZsZnJyc21scDA3LmFzcHglM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RzZW0lMjZ1dG1fY2FtcGFpZ24lM2QzMTEzNTM3OSUyNnV0bV90ZXJtJTNkYWklMjUyMGN2JTI1MjBnZW5lcmF0ZSUyNm5ldHdvcmslM2RzJTI2ZGV2aWNlJTNkYyUyNmFkcG9zaXRpb24lM2QlMjZhZGdyb3VwaWQlM2QxMjU0NTQ0MTQ4NjA3ODUxJTI2cGxhY2VtZW50JTNkJTI2YWRpZCUzZCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHNlbSUyNnV0bV9jYW1wYWlnbiUzZDMxMTM1Mzc5JTI2dXRtX3Rlcm0lM2RhaSUyNTIwY3YlMjUyMGdlbmVyYXRlJTI2bmV0d29yayUzZHMlMjZkZXZpY2UlM2RjJTI2YWRwb3NpdGlvbiUzZCUyNmFkZ3JvdXBpZCUzZDEyNTQ1NDQxNDg2MDc4NTElMjZwbGFjZW1lbnQlM2QlMjZhZGlkJTNkJTI2bXNjbGtpZCUzZDgyYWNlOWI2ZmIzMDEwNDQxNmZjODMzZjMxOTgwY2Y1JTI2dXRtX2NvbnRlbnQlM2RhaSUyNTIwY3YlMjUyMGdlbmVyYXRl%26rlid%3D82ace9b6fb30104416fc833f31980cf5&vqd=4-82206054855600129973929630355656545857&iurl=%7B1%7DIG%3D8F830E0AED6F43CC975DF885E1FE308C%26CID%3D322D34AA0A2C6F143D7423170B5B6EBF%26ID%3DDevEx%2C5037.1",
+      "snippet": "Créez maintenant un CV de qualité adapté au poste visé. Commencez par choisir un modèle. Créez et téléchargez un CV de qualité en seulement 10 minutes."
+    },
+    {
+      "title": "Titorium (Roberto Arce) - Hugging Face",
+      "url": "https://huggingface.co/Titorium",
+      "snippet": "Finance, Crypto, Computer Vision, Forecasting, LLM Finance, Crypto, Computer Vision, Forecasting, LLM"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}
