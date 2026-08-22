@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sagar0199/mera",
+  "slug": "sagar0199-mera",
+  "author": "Sagar0199",
+  "url": "https://huggingface.co/Sagar0199/mera",
+  "created_at": "2026-08-22T05:14:13.000Z",
+  "updated_at": "2026-08-22T05:14:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2608.10333] MERA: Model Evolution and Routing with Skill Adaptation ...",
+      "url": "https://arxiv.org/abs/2608.10333",
+      "snippet": "LLM agents execute heterogeneous sequences of model calls within a single task: some invocations require careful reasoning, while others are structured steps such as formatting or tool-argument construction. Prior routing methods exploit this asymmetry by assigning easy invocations to a cheaper small model and difficult ones to a large model. Such policies reduce inference cost, but they leave ..."
+    },
+    {
+      "title": "MERA: Multimodal and Multiscale Self-Explanatory Model with ...",
+      "url": "https://arxiv.org/abs/2504.19357",
+      "snippet": "The model&#x27;s inherent design delivers comprehensive, robust, multilevel explanations aligned closely with clinical practice, enhancing trustworthiness and transparency. Demonstrated viability of unsupervised and weakly supervised learning lowers the barrier to deploying diagnostic AI in broader medical domains."
+    },
+    {
+      "title": "Mera Avatar by Skytells | AI Model | Skytells",
+      "url": "https://skytells.ai/model/mera-avatar",
+      "snippet": "Mera Avatar is our latest flagship video generation model, engineered to deliver exceptional speed, realism, and creative control. Built on Mera&#x27;s advanced architecture and enhanced with innovations inspired by the latest breakthroughs in video generation, Mera Avatar supports text-to-video, image-to-video, and audio-to-video workflows with remarkably fast inference and rapid draft previews ..."
+    },
+    {
+      "title": "PDF MERA: Model Evolution and Routing with Skill Adaptation ... - OpenReview",
+      "url": "https://openreview.net/pdf/a7e649980dd7d9180de8084a900f8c6e5063609c.pdf",
+      "snippet": "MERA addresses this problem by treating a single model invo-cation as the unit of adaptation. At runtime, an input-only router chooses among strong, cheap, and specialized models; a skill layer can dispatch stable templates for recurring local structure; and a verifier protects quality through fallback."
+    },
+    {
+      "title": "MERA: Model Evolution and Routing with Skill Adaptation for Agentic ...",
+      "url": "https://openreview.net/forum?id=6oyBiDMCHs",
+      "snippet": "MERA therefore frames agent self-evolution as a conservative systems loop over shared traces, where skill, model, and routing updates are admitted together through replay. Email Sharing: We authorize the sharing of all author emails with Program Chairs."
+    }
+  ]
+}

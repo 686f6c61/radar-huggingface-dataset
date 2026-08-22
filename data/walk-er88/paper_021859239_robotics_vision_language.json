@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "walk-er88/paper_021859239_robotics_vision_language",
+  "slug": "walk-er88-paper_021859239_robotics_vision_language",
+  "author": "walk-er88",
+  "url": "https://huggingface.co/walk-er88/paper_021859239_robotics_vision_language",
+  "created_at": "2026-08-22T06:37:43.000Z",
+  "updated_at": "2026-08-22T06:37:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "bulleted",
+    "cautious",
+    "concise-analytical",
+    "highlight-bullet",
+    "intro-problem-solution-validation-future",
+    "latex-acl",
+    "mixed-active-passive",
+    "robotics-vision-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Gemini Robotics and Gemini Robotics-ER, AI models designed ...",
+      "url": "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+      "snippet": "Today, we are introducing two new AI models, based on Gemini 2.0, which lay the foundation for a new generation of helpful robots. The first is Gemini Robotics, an advanced vision-language-action (VLA) model that was built on Gemini 2.0 with the addition of physical actions as a new output modality for the purpose of directly controlling robots."
+    },
+    {
+      "title": "Gemini Robotics: Bringing AI into the Physical World",
+      "url": "https://arxiv.org/abs/2503.20020",
+      "snippet": "This report introduces a new family of AI models purposefully designed for robotics and built upon the foundation of Gemini 2.0. We present Gemini Robotics, an advanced Vision-Language-Action (VLA) generalist model capable of directly controlling robots."
+    },
+    {
+      "title": "Embodied AI Daily — Latest arXiv Papers",
+      "url": "https://luohongkun.top/Embodied-AI-Daily/index.html",
+      "snippet": "📄 Latest arXiv Papers VLN · VLA · SLAM · 3D · Embodied AI — auto-updated daily 👤 Hongkun Luo (罗宏昆) · 🎓 Academic Page · 🐙 GitHub ☕ 支持本项目 · Support this project"
+    },
+    {
+      "title": "Gemini Robotics 1.5 brings AI agents into the physical world",
+      "url": "https://deepmind.google/blog/gemini-robotics-15-brings-ai-agents-into-the-physical-world/",
+      "snippet": "Gemini Robotics-ER 1.5 - Our most capable vision-language model (VLM) reasons about the physical world, natively calls digital tools and creates detailed, multi-step plans to complete a mission. This model now achieves state-of-the-art performance across spatial understanding benchmarks."
+    },
+    {
+      "title": "Vision-Language-Action in Robotics: A Survey of Datasets, Benchmarks ...",
+      "url": "https://arxiv.org/abs/2604.23001",
+      "snippet": "Despite remarkable progress in Vision--Language--Action (VLA) models, a central bottleneck remains underexamined: the data infrastructure that underlies embodied learning. In this survey, we argue that future advances in VLA will depend less on model architecture and more on the co-design of high-fidelity data engines and structured evaluation protocols. To this end, we present a systematic ..."
+    }
+  ]
+}

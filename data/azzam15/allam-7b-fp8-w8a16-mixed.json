@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Azzam15/allam-7b-fp8-w8a16-mixed",
+  "slug": "azzam15-allam-7b-fp8-w8a16-mixed",
+  "author": "Azzam15",
+  "url": "https://huggingface.co/Azzam15/allam-7b-fp8-w8a16-mixed",
+  "created_at": "2026-08-22T10:46:16.000Z",
+  "updated_at": "2026-08-22T10:46:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "fp8",
+    "w8a16",
+    "modelopt",
+    "quantized",
+    "arabic-calibrated",
+    "calib-mixed",
+    "base_model:humain-ai/ALLaM-7B-Instruct-preview",
+    "base_model:quantized:humain-ai/ALLaM-7B-Instruct-preview",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7000559616,
+  "parameters_human": "7.00B",
+  "storage_bytes": 7526399858,
+  "storage_human": "7.5 GB",
+  "base_model": "humain-ai/ALLaM-7B-Instruct-preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "humain-ai/ALLaM-7B-Instruct-preview · Hugging Face",
+      "url": "https://huggingface.co/humain-ai/ALLaM-7B-Instruct-preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NouraAlqasim/allam-7b-fp8-mixed · Hugging Face",
+      "url": "https://huggingface.co/NouraAlqasim/allam-7b-fp8-mixed",
+      "snippet": "FP8 weight scales are data-free. What the calibration variety changes is the static per-tensor activation scales, exported as input_scale. Sibling checkpoints -fp8-msa, -fp8-gulf and -fp8-mixed differ in exactly that and nothing else."
+    },
+    {
+      "title": "humain-ai/ALLaM-7B-Instruct-preview · Hugging Face",
+      "url": "https://www.saudicompute.com/articles/humain-ai-allam-7b-instruct-preview-hugging-face/",
+      "snippet": "ALLaM-AI/ALLaM-7B-Instruct-preview is trained from scratch. Our pretraining from scratch recipe consists of two steps: training on 4T English tokens followed by training on 1.2T mixed Arabic/English tokens."
+    },
+    {
+      "title": "humain-ai/ALLaM-7B-Instruct-preview - Hugging Face Hub Packa... - Socket",
+      "url": "https://socket.dev/huggingface/package/humain-ai/allam-7b-instruct-preview",
+      "snippet": "ALLaM-7B-Instruct-preview ALLaM is a series of powerful language models designed to advance Arabic Language Technology (ALT) developed by the National Center for Artificial Intelligence (NCAI) at the Saudi Data and AI Authority (SDAIA). ALLaM-AI/ALLaM-7B-Instruct-preview is trained from scratch. Our pretraining from scratch recipe consists of two steps: training on 4T English tokens followed ..."
+    },
+    {
+      "title": "iKhalid/ALLaM:7b",
+      "url": "https://ollama.com/iKhalid/ALLaM:7b",
+      "snippet": "ALLaM-7B-Instruct-preview ALLaM is a series of powerful language models designed to advance Arabic Language Technology (ALT) developed by the National Center for Artificial Intelligence (NCAI) at the Saudi Data and AI Authority (SDAIA). ALLaM-AI/ALLaM-7B-Instruct-preview is trained from scratch. Our pretraining from scratch recipe consists of two steps: training on 4T English tokens followed ..."
+    }
+  ]
+}

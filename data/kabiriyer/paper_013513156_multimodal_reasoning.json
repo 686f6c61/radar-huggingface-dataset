@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "KabirIyer/paper_013513156_multimodal_reasoning",
+  "slug": "kabiriyer-paper_013513156_multimodal_reasoning",
+  "author": "KabirIyer",
+  "url": "https://huggingface.co/KabirIyer/paper_013513156_multimodal_reasoning",
+  "created_at": "2026-08-22T05:19:26.000Z",
+  "updated_at": "2026-08-22T05:19:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "enthusiastic",
+    "intro-background-approach-eval-conclusion",
+    "latex-arxiv",
+    "medium-balanced",
+    "multimodal-reasoning",
+    "numeric-bibtex",
+    "passive",
+    "structured-imrad",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2401.06805] Exploring the Reasoning Abilities of Multimodal Large ...",
+      "url": "https://arxiv.org/abs/2401.06805",
+      "snippet": "Strong Artificial Intelligence (Strong AI) or Artificial General Intelligence (AGI) with abstract reasoning ability is the goal of next-generation AI. Recent advancements in Large Language Models (LLMs), along with the emerging field of Multimodal Large Language Models (MLLMs), have demonstrated impressive capabilities across a wide range of multimodal tasks and applications. Particularly ..."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Rafsan Kabir - Publications - Google Sites",
+      "url": "https://sites.google.com/view/rafsankabir/publications",
+      "snippet": "Publications 2026 [15] Muhammad Rafsan Kabir, Md Shopon, and Marina Gavrilova, \"ReSoFed: Reliability-Guided Model Souping for Robust Federated Learning in Heterogeneous Classroom Environments,\" In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, 2026."
+    },
+    {
+      "title": "OneEmo: A Unified Multimodal Reasoning Model for Emotion Perception ...",
+      "url": "https://arxiv.org/abs/2608.06013",
+      "snippet": "Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities in emotional intelligence. However, prevailing research predominantly focuses on task-specific specialization, often neglecting inter-task synergy and leaving latent reasoning potential underexplored. To bridge this gap, we introduce OneEmo, a unified affective generalist capable of mastering emotion perception ..."
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026W/PBVS/html/Kabir_DualSwinFusionSeg_Multimodal_Martian_Landslide_Segmentation_via_Dual_Swin_Transformer_with_CVPRW_2026_paper.html",
+      "snippet": "To address these challenges, we propose DualSwinFusionSeg, a multimodal segmentation model that separates modality-specific feature extraction and performs multi-scale cross-modal fusion. The model employs two parallel Swin Transformers to independently process RGB and auxiliary geophysical inputs, producing hierarchical feature representations."
+    }
+  ]
+}

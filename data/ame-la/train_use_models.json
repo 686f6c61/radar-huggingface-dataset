@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ame-la/train_use_models",
+  "slug": "ame-la-train_use_models",
+  "author": "ame-la",
+  "url": "https://huggingface.co/ame-la/train_use_models",
+  "created_at": "2026-08-22T08:57:57.000Z",
+  "updated_at": "2026-08-22T09:16:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora-training",
+    "base-model",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4182219262,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Train an AI Model: A Step-by-Step Guide | Mercor",
+      "url": "https://www.mercor.com/resources/experts/how-to-train-an-ai-model/",
+      "snippet": "Learn how to train an AI model step by step, from data preparation and model selection to fine-tuning and deployment. Explore tools, costs, and how to get started professionally."
+    },
+    {
+      "title": "Models - AME - teainspace.github.io",
+      "url": "https://teainspace.github.io/ame/user_guide/models/",
+      "snippet": "Models Models are one of AME&#x27;s higher level constructs, see what that means here. if you are configuring how a model should be trained, deployed, monitored or validated this is the right place. Models exist in an AME file along side Datasets Tasks and Templates. Model training Model training is configured described use a Task."
+    },
+    {
+      "title": "ame_la Creator Profile | Civitai",
+      "url": "https://civitai.com/user/ame_la/models",
+      "snippet": "Models Uploaded: 0, Followers: 113, Total Likes Received: 359, Total Downloads Received: 2.4k."
+    },
+    {
+      "title": "How to Train an AI Model: Step-by-Step 2026 Guide | Label Your Data",
+      "url": "https://labelyourdata.com/articles/how-to-train-an-ai-model",
+      "snippet": "️ Learn how to train an AI model, covering data requirements, tools, step-by-step workflow, and real costs for AI model training in production."
+    },
+    {
+      "title": "Guides - AME",
+      "url": "https://teainspace.github.io/ame/user_guide/model_validation/",
+      "snippet": "Here we need to consider a few things, what command is used to train a model, how are dependencies managed in our project, what python version do we need and how many resources does our model training require. If you are using the repo for this guide, you will want a task configured as below."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kerasformers/mobilenetv4_conv_medium_e500_r256_in1k",
+  "slug": "kerasformers-mobilenetv4_conv_medium_e500_r256_in1k",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/mobilenetv4_conv_medium_e500_r256_in1k",
+  "created_at": "2026-08-22T07:17:14.000Z",
+  "updated_at": "2026-08-22T07:17:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "image-classification",
+    "mobilenetv4",
+    "backbone",
+    "arxiv:2404.10518",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:timm/mobilenetv4_conv_medium.e500_r256_in1k",
+    "base_model:finetune:timm/mobilenetv4_conv_medium.e500_r256_in1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39735512,
+  "storage_human": "40 MB",
+  "base_model": "timm/mobilenetv4_conv_medium.e500_r256_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mobilenetv4_conv_medium.e500_r256_in1k - Hugging Face",
+      "url": "https://huggingface.co/timm/mobilenetv4_conv_medium.e500_r256_in1k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "onnx-community/mobilenetv4_conv_medium.e500_r256_in1k · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/mobilenetv4_conv_medium.e500_r256_in1k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mobilenetv4_conv_medium.e500_r256_in1k · Models",
+      "url": "https://www.modelscope.cn/models/timm/mobilenetv4_conv_medium.e500_r256_in1k",
+      "snippet": "Model card for mobilenetv4_conv_medium.e500_r256_in1k A MobileNet-V4 image classification model. Trained on ImageNet-1k by Ross Wightman. Trained with timm scripts using hyper-parameters inspired by the MobileNet-V4 paper with timm enhancements. NOTE: So far, these are the only known MNV4 weights. Official weights for Tensorflow models are ..."
+    },
+    {
+      "title": "mobilenetv4.pytorch/mobilenetv4.py at main · d-li14 ... - GitHub",
+      "url": "https://github.com/d-li14/mobilenetv4.pytorch/blob/main/mobilenetv4.py",
+      "snippet": "PyTorch implementation of MobileNetV4 family. Contribute to d-li14/mobilenetv4.pytorch development by creating an account on GitHub."
+    },
+    {
+      "title": "Architecture graph for timm/mobilenetv4_conv_medium.e500_r256_in1k.",
+      "url": "https://hfviewer.com/timm/mobilenetv4_conv_medium.e500_r256_in1k",
+      "snippet": "timm/mobilenetv4_conv_medium.e500_r256_in1k neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model timm/mobilenetv4_conv_medium.e500_r256_in1k. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads ..."
+    }
+  ]
+}

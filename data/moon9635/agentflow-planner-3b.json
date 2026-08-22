@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "moon9635/agentflow-planner-3b",
+  "slug": "moon9635-agentflow-planner-3b",
+  "author": "moon9635",
+  "url": "https://huggingface.co/moon9635/agentflow-planner-3b",
+  "created_at": "2026-08-22T07:55:24.000Z",
+  "updated_at": "2026-08-22T07:55:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355225928,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentflow-planner-3b - Hugging Face",
+      "url": "https://huggingface.co/AgentFlow/agentflow-planner-3b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AgentFlow/agentflow-planner-3b at main - Hugging Face",
+      "url": "https://huggingface.co/AgentFlow/agentflow-planner-3b/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AgentFlow: In-the-Flow Agentic System Optimization - GitHub",
+      "url": "https://github.com/lupantech/AgentFlow",
+      "snippet": "AgentFlow is a trainable, tool-integrated agentic framework designed to overcome the scalability and generalization limits of today&#x27;s tool-augmented reasoning approaches. Unlike prevailing approaches such as Search-R1 which train a single LLM to interleave reasoning steps with tool calls, AgentFlow introduces a modular agentic system with four specialized modules: 🧭 Planner, 🛠 Executor ..."
+    },
+    {
+      "title": "Agentflow Planner 3b — AI Model | Antbase",
+      "url": "https://antbase.ai/models/agentflow-planner-3b",
+      "snippet": "Overview Agentflow Planner 3b is a efficient model from Featherless with a 33K context window. Available through ANT&#x27;s unified API."
+    },
+    {
+      "title": "AgentFlow/agentflow-planner-3b - Fast, Reliable, and Scalable Inference ...",
+      "url": "https://friendli.ai/models/AgentFlow/agentflow-planner-3b",
+      "snippet": "Run AgentFlow/agentflow-planner-3b with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

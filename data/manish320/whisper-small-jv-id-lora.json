@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "manish320/whisper-small-jv-id-lora",
+  "slug": "manish320-whisper-small-jv-id-lora",
+  "author": "manish320",
+  "url": "https://huggingface.co/manish320/whisper-small-jv-id-lora",
+  "created_at": "2026-08-22T03:08:20.000Z",
+  "updated_at": "2026-08-22T03:11:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manish320/whisper-small-jv-id-lora · Hugging Face",
+      "url": "https://huggingface.co/manish320/whisper-small-jv-id-lora",
+      "snippet": "Whisper Small — Indonesian & Javanese Code-Switching ASR This model is a fine-tuned version of OpenAI Whisper Small for automatic speech recognition (ASR) on Indonesian and Javanese speech, including code-switched utterances."
+    },
+    {
+      "title": "openai/whisper-small · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,027 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    },
+    {
+      "title": "whisper-small · Models",
+      "url": "https://www.modelscope.cn/models/openai-mirror/whisper-small/summary",
+      "snippet": "ModelScope——汇聚各领域先进的机器学习模型，提供模型探索体验、推理、训练、部署和应用的一站式服务。在这里，共建模型开源社区，发现、学习、定制和分享心仪的模型。"
+    }
+  ]
+}

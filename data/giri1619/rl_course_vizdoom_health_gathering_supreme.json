@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "giri1619/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "giri1619-rl_course_vizdoom_health_gathering_supreme",
+  "author": "giri1619",
+  "url": "https://huggingface.co/giri1619/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-08-22T06:22:02.000Z",
+  "updated_at": "2026-08-22T06:22:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122138416,
+  "storage_human": "122 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aris1129/rl_course_vizdoom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/Aris1129/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "Instructions to use Aris1129/rl_course_vizdoom_health_gathering_supreme with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sample-factory How to use Aris1129/rl_course_vizdoom_health_gathering_supreme with sample-factory:"
+    },
+    {
+      "title": "hugging-robot/rl_course_vizdoom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/hugging-robot/rl_course_vizdoom_health_gathering_supreme",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment."
+    },
+    {
+      "title": "HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "url": "https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment. - HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-"
+    },
+    {
+      "title": "GitHub - renhanfei/vizdoom_health_gathering",
+      "url": "https://github.com/RENHANFEI/vizdoom_health_gathering",
+      "snippet": "Contribute to renhanfei/vizdoom_health_gathering development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

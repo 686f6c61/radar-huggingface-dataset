@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jankowskijulia/paper_011068001_few_shot_multimodal",
+  "slug": "jankowskijulia-paper_011068001_few_shot_multimodal",
+  "author": "jankowskijulia",
+  "url": "https://huggingface.co/jankowskijulia/paper_011068001_few_shot_multimodal",
+  "created_at": "2026-08-22T08:33:18.000Z",
+  "updated_at": "2026-08-22T08:33:25.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "compact",
+    "few-shot-multimodal",
+    "intro-method-exp-related-conclusion",
+    "medium-balanced",
+    "narrative-progressive",
+    "neutral",
+    "numeric-apa",
+    "typst",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Multimodal Few-Shot Learning with Frozen Language Models",
+      "url": "https://arxiv.org/abs/2106.13884",
+      "snippet": "Here, we present a simple, yet effective, approach for transferring this few-shot learning ability to a multimodal setting (vision and language). Using aligned image and caption data, we train a vision encoder to represent each image as a sequence of continuous embeddings, such that a pre-trained, frozen language model prompted with this prefix ..."
+    },
+    {
+      "title": "Multimodal Few-Shot Learning with Frozen Language Models - NIPS",
+      "url": "https://papers.nips.cc/paper/2021/hash/01b7575c38dac42f3cfb7d500438b875-Abstract.html",
+      "snippet": "Here, we present a simple, yet effective, approach for transferring this few-shot learning ability to a multimodal setting (vision and language). Using aligned image and caption data, we train a vision encoder to represent each image as a sequence of continuous embeddings, such that a pre-trained, frozen language model presented with this ..."
+    },
+    {
+      "title": "List of Proceedings",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/01b7575c38dac42f3cfb7d500438b875-Abstract.html",
+      "snippet": "Abstract. When trained at sufficient scale, auto-regressive language models exhibit the notable ability to learn a new language task after being prompted with just a few examples."
+    },
+    {
+      "title": "Multimodal Few-Shot Learning with Frozen Language Models",
+      "url": "https://www.catalyzex.com/paper/multimodal-few-shot-learning-with-frozen",
+      "snippet": "Multimodal Few-Shot Learning with Frozen Language Models: Paper and Code. When trained at sufficient scale, auto-regressive language models exhibit the notable ability to learn a new language task after being prompted with just a few examples. Here, we present a simple, yet effective, approach for transferring this few-shot learning ability to a multimodal setting (vision and language). Using ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "888rok/gemma-4-E4B-it-Q4_K_M-wllama-split",
+  "slug": "888rok-gemma-4-e4b-it-q4_k_m-wllama-split",
+  "author": "888rok",
+  "url": "https://huggingface.co/888rok/gemma-4-E4B-it-Q4_K_M-wllama-split",
+  "created_at": "2026-08-22T07:49:05.000Z",
+  "updated_at": "2026-08-22T07:58:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "wllama",
+    "base_model:unsloth/gemma-4-E4B-it-GGUF",
+    "base_model:quantized:unsloth/gemma-4-E4B-it-GGUF",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 4977172000,
+  "storage_human": "5.0 GB",
+  "base_model": "unsloth/gemma-4-E4B-it-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "888rok/gemma-4-E2B-it-wllama-split at main - Hugging Face",
+      "url": "https://huggingface.co/888rok/gemma-4-E2B-it-wllama-split/tree/main",
+      "snippet": "Instructions to use 888rok/gemma-4-E2B-it-wllama-split with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use 888rok/gemma-4-E2B-it-wllama-split with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "gemma-4-E4B-it-Q4_K_M.gguf · SciTools/OnBoard at main - Hugging Face",
+      "url": "https://huggingface.co/SciTools/OnBoard/blob/main/gemma-4-E4B-it-Q4_K_M.gguf",
+      "snippet": "Run and chat with the model ... List all available models lemonade list Hermes Agent Start the llama.cpp server ... Configure Hermes ... Run Hermes hermes Atomic Chat main OnBoard /gemma-4-E4B-it-Q4_K_M.gguf zenpeach Add gemma-4-E4B-it-Q4_K_M.gguf (mirrored from unsloth/gemma-4-E4B-it-GGUF) 8c5fc76 verifiedabout 10 hours ago Download Download ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 E4B — The Daily Driver for Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e4b",
+      "snippet": "Models /Gemma 4 E4B Gemma 4 E4B — The Daily Driver for Local AI Gemma 4 E4B is Google&#x27;s most practical local model: 4.4B parameters, 8GB VRAM minimum, multimodal input, and Thinking Mode — all in a package that runs on any modern consumer GPU."
+    },
+    {
+      "title": "Gemma 4 E4B · llama.cpp · Q4_K_M · DGX Spark Autobench",
+      "url": "https://gauravmm.github.io/autobench/configs/gemma-4-e4b-it-llamacpp-q4-k-m/",
+      "snippet": "The edge (\"E\") Gemma — and proof the Gemma memory cliff is a big-dense-model trait, not a family trait. Google&#x27;s Gemma 4 E4B, an elastic / MatFormer ~4B-effective model, Q4_K_M from ggml-org. Closes out the ≤4B bucket."
+    }
+  ]
+}

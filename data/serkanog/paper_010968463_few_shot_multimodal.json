@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "serkanog/paper_010968463_few_shot_multimodal",
+  "slug": "serkanog-paper_010968463_few_shot_multimodal",
+  "author": "serkanog",
+  "url": "https://huggingface.co/serkanog/paper_010968463_few_shot_multimodal",
+  "created_at": "2026-08-22T05:43:24.000Z",
+  "updated_at": "2026-08-22T05:43:31.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "docx",
+    "few-shot-multimodal",
+    "graphic-visual",
+    "intro-problem-solution-validation-future",
+    "measured",
+    "mixed-active-passive",
+    "numeric-apa",
+    "theoretical-rigorous",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "serkanog/paper_010968463_few_shot_multimodal · Hugging Face",
+      "url": "https://huggingface.co/serkanog/paper_010968463_few_shot_multimodal",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Commonality in Few: Few-Shot Multimodal Anomaly Detection via ...",
+      "url": "https://arxiv.org/abs/2511.05966",
+      "snippet": "Few-shot multimodal industrial anomaly detection is a critical yet underexplored task, offering the ability to quickly adapt to complex industrial scenarios. In few-shot settings, insufficient training samples often fail to cover the diverse patterns present in test samples. This challenge can be mitigated by extracting structural commonality from a small number of training samples. In this ..."
+    },
+    {
+      "title": "Multimodal Few-Shot Learning with Frozen Language Models",
+      "url": "https://arxiv.org/abs/2106.13884",
+      "snippet": "Here, we present a simple, yet effective, approach for transferring this few-shot learning ability to a multimodal setting (vision and language). Using aligned image and caption data, we train a vision encoder to represent each image as a sequence of continuous embeddings, such that a pre-trained, frozen language model prompted with this prefix ..."
+    },
+    {
+      "title": "[Paper Note] Commonality in Few: Few-Shot Multimodal Anomaly Detection ...",
+      "url": "https://en.papernotes.org/AAAI2026/object_detection/commonality_in_few_few-shot_multimodal_anomaly_detection_via_hypergraph-enhanced/",
+      "snippet": "[AAAI2026][Object Detection][hypergraph learning] This paper proposes CIF, which leverages hypergraphs to extract intra-class structural commonalities from a small number of training samples, guiding memory ..."
+    },
+    {
+      "title": "[2301.06267] Multimodality Helps Unimodality: Cross-Modal Few-Shot ...",
+      "url": "https://arxiv.org/abs/2301.06267",
+      "snippet": "The ability to quickly learn a new task with minimal instruction - known as few-shot learning - is a central aspect of intelligent agents. Classical few-shot benchmarks make use of few-shot samples from a single modality, but such samples may not be sufficient to characterize an entire concept class. In contrast, humans use cross-modal information to learn new concepts efficiently. In this ..."
+    }
+  ]
+}

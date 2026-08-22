@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "thefinalboss/prism-cte",
+  "slug": "thefinalboss-prism-cte",
+  "author": "thefinalboss",
+  "url": "https://huggingface.co/thefinalboss/prism-cte",
+  "created_at": "2026-08-22T03:37:48.000Z",
+  "updated_at": "2026-08-22T03:50:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thefinalboss/fractus-cte-wiki at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/thefinalboss/fractus-cte-wiki/tree/main",
+      "snippet": "main fractus-cte-wiki 109 kB Ctrl+K Ctrl+K 1 contributor History:3 commits thefinalboss Update Fractus CTE wiki 64a14ad about 4 hours ago docsUpdate Fractus CTE wikiabout 4 hours ago scriptsUpdate Fractus CTE wikiabout 4 hours ago .gitignore Safe 108 BytesUpdate Fractus CTE wikiabout 4 hours ago DEPLOYMENT.md Safe 5.44 kBUpdate Fractus CTE wikiabout 4 hours ago Dockerfile Safe 988 BytesUpdate ..."
+    },
+    {
+      "title": "PrismML — PrismML Launches World&#x27;s First 1-Bit AI Model to Redefine ...",
+      "url": "https://prismml.com/news/prismml-launches-worlds-first-1-bit-ai-model",
+      "snippet": "PrismML launched 1-bit Bonsai models from Caltech research, bringing commercially viable AI to phones, laptops, edge devices, and more efficient data centers."
+    },
+    {
+      "title": "Prism | A free, LaTeX Editor and AI-native workspace for scientists",
+      "url": "https://openai.com/prism/",
+      "snippet": "Prism Introducing a free, AI-first, LaTeX editor and scientific workspace that integrates ChatGPT and Codex directly into scientific writing and collaboration."
+    },
+    {
+      "title": "PrismML — Concentrating intelligence",
+      "url": "https://prismml.com/",
+      "snippet": "PrismML builds 1-bit and ternary Bonsai models that pack advanced reasoning, tool use, and multimodal AI into phones, laptops, and efficient data centers."
+    },
+    {
+      "title": "Caltech&#x27;s PrismML shrinks AI models to fit your phone without losing ...",
+      "url": "https://startupfortune.com/caltechs-prismml-shrinks-ai-models-to-fit-your-phone-without-losing-their-mind/",
+      "snippet": "Caltech&#x27;s PrismML shrinks AI models to fit your phone without losing their mind A Caltech-backed startup claims to have radically compressed large language models to 1-bit weights, promising 8x faster inference and 80% less energy use without sacrificing performance."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Akpandey20/ibm-fashion-mnist-simple-keras-model",
+  "slug": "akpandey20-ibm-fashion-mnist-simple-keras-model",
+  "author": "Akpandey20",
+  "url": "https://huggingface.co/Akpandey20/ibm-fashion-mnist-simple-keras-model",
+  "created_at": "2026-08-22T09:04:51.000Z",
+  "updated_at": "2026-08-22T09:04:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nestifytech/IBM-fashion-mnist-simple-keras-model · Hugging Face",
+      "url": "https://huggingface.co/Nestifytech/IBM-fashion-mnist-simple-keras-model",
+      "snippet": "Instructions to use Nestifytech/IBM-fashion-mnist-simple-keras-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "fashion_mnist.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/mmphego/TensorFlow-Course/blob/master/fashion_mnist.ipynb",
+      "snippet": "The first line merely assigns the name fashion_mnist to a particular dataset located within Keras&#x27; dataset library. The second line defines four arrays containing the training and testing data, cleaved again into separate structures for images and labels, and then loads all of that data into our standup of Python. The training data arrays will be used to --you guessed it-- train the model, and ..."
+    },
+    {
+      "title": "fashion_mnist_keras.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/margaretmz/deep-learning/blob/master/fashion_mnist_keras.ipynb",
+      "snippet": "Why Jupyter Notebook? Why Fashion-MNIST? Notebook Overview Download the fashion_mnist data Visualize the data Data normalization Split the data into train/validation/test data sets Create the model architecture Compile the model Train the model Load Model with the best validation accuracy Test Accuracy Visualize prediction Congragulations!"
+    },
+    {
+      "title": "Basic classification: Classify images of clothing - TensorFlow",
+      "url": "https://www.tensorflow.org/tutorials/keras/classification",
+      "snippet": "This guide trains a neural network model to classify images of clothing, like sneakers and shirts. It&#x27;s okay if you don&#x27;t understand all the details; this is a fast-paced overview of a complete TensorFlow program with the details explained as you go. This guide uses tf.keras, a high-level API to build and train models in TensorFlow."
+    },
+    {
+      "title": "GitHub - salman-shah-ai/Fashion-MNIST-Model: This Jupyter Notebook ...",
+      "url": "https://github.com/salman-shah-ai/Fashion-MNIST-Model",
+      "snippet": "This Jupyter Notebook demonstrates a complete deep learning workflow for classifying images from the Fashion-MNIST dataset using a custom neural network architecture built with TensorFlow/Keras. It provides an educational yet practical example of image preprocessing, model design, training, and evaluation."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Supernova11c/Supernova-teraillm-Embedding-V2",
+  "slug": "supernova11c-supernova-teraillm-embedding-v2",
+  "author": "Supernova11c",
+  "url": "https://huggingface.co/Supernova11c/Supernova-teraillm-Embedding-V2",
+  "created_at": "2026-08-22T10:13:21.000Z",
+  "updated_at": "2026-08-22T10:27:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [
+    "ne",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "supernova_embedding",
+    "nepali",
+    "supernova",
+    "feature-extraction",
+    "ne",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6978688,
+  "parameters_human": "7.0M",
+  "storage_bytes": 55855297,
+  "storage_human": "56 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supernova11c/Supernova-llm-terai · Hugging Face",
+      "url": "https://huggingface.co/Supernova11c/Supernova-llm-terai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Supernova11c/Supernova-teraillm · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Supernova11c/Supernova-teraillm",
+      "snippet": "Datasets: Supernova11c / Supernova-teraillm like 0 Modalities: Text Formats: json Languages: Nepali English Size: 1K - 10K Libraries: Datasets Dask Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·2.75k rows default (2.75k rows) Split (1) train·2.75k rows ..."
+    },
+    {
+      "title": "Which Embedding Model Should You Actually Use in 2026? I Benchmarked 10 ...",
+      "url": "https://zc277584121.github.io/rag/2026/03/20/embedding-models-benchmark-2026.html",
+      "snippet": "Still using OpenAI&#x27;s text-embedding-3-small without a second thought? If you&#x27;re building RAG or vector search systems, you&#x27;ve probably noticed that new embedding models drop every few weeks, each claiming SOTA on some leaderboard. But when it comes to picking one for production, those MTEB scores don&#x27;t always translate to real-world performance."
+    },
+    {
+      "title": "[2604.08477] SUPERNOVA: Eliciting General Reasoning in LLMs with ...",
+      "url": "https://arxiv.org/abs/2604.08477",
+      "snippet": "Reinforcement Learning with Verifiable Rewards (RLVR) has substantially improved reasoning in formal domains such as mathematics and code, but extending these gains beyond STEM remains challenging. Extending RLVR beyond STEM is fundamentally constrained by the lack of high-quality verifiable training data. In this work, we introduce SUPERNOVA, a framework for curating RLVR data from natural ..."
+    },
+    {
+      "title": "10 Best Embedding Models 2026: Complete Comparison Guide",
+      "url": "https://www.openxcell.com/blog/best-embedding-models",
+      "snippet": "A practical guide to the best embedding models in 2026. Compare features, performance, and use cases for building scalable AI systems."
+    }
+  ]
+}

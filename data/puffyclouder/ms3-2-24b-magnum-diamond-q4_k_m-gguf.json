@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "puffyclouder/MS3.2-24B-Magnum-Diamond-Q4_K_M-GGUF",
+  "slug": "puffyclouder-ms3-2-24b-magnum-diamond-q4_k_m-gguf",
+  "author": "puffyclouder",
+  "url": "https://huggingface.co/puffyclouder/MS3.2-24B-Magnum-Diamond-Q4_K_M-GGUF",
+  "created_at": "2026-08-22T07:47:21.000Z",
+  "updated_at": "2026-08-22T07:48:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "axolotl",
+    "chat",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:Doctor-Shotgun/MS3.2-24B-Magnum-Diamond",
+    "base_model:quantized:Doctor-Shotgun/MS3.2-24B-Magnum-Diamond",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 14333910656,
+  "storage_human": "14.3 GB",
+  "base_model": "Doctor-Shotgun/MS3.2-24B-Magnum-Diamond",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Doctor-Shotgun/MS3.2-24B-Magnum-Diamond · Hugging Face",
+      "url": "https://huggingface.co/Doctor-Shotgun/MS3.2-24B-Magnum-Diamond",
+      "snippet": "MS3.2-24B-Magnum-Diamond Magnum \"Diamond\" in reference to the intense heat and pressure (generated through matrix multiplications) needed to turn the coal-esque material of dry, assistant-tuned models into creative writing gems! This model is finetuned from a text-only conversion of mistralai/Mistral-Small-3.2-24B-Instruct-2506 as an rsLoRA adapter. It uses the same data mix as Doctor-Shotgun ..."
+    },
+    {
+      "title": "MS3.2-24B-Magnum-Diamond-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MS3.2-24B-Magnum-Diamond-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MS3.2 24B Magnum Diamond model | NanoGPT",
+      "url": "https://nano-gpt.com/models/text/Doctor-Shotgun/MS3.2-24B-Magnum-Diamond",
+      "snippet": "rsLoRA finetune of a text-only conversion of Mistral Small 3.2 24B Instruct (2506), built to bring the Magnum mix&#x27;s Claude-like prose to a smaller footprint. The \"Diamond\" moniker nods to the extra heat and pressure - pre-tokenization plus custom loss masking - to turn the assistant-tuned base into creative-writing gems, with or without character names or prefill."
+    },
+    {
+      "title": "MS3.2 24B Magnum Diamond by Doctor-Shotgun",
+      "url": "https://llm-explorer.com/model/Doctor-Shotgun%2FMS3.2-24B-Magnum-Diamond,72U0GQq1Y5sGQi8ojOskap",
+      "snippet": "MS3.2 24B Magnum Diamond is an open-source 24b LLM by Doctor-Shotgun. VRAM 47.3GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "MS3.2-24B-Magnum-Diamond: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ms3.2-24b-magnum-diamond-doctor-shotgun",
+      "snippet": "Overview MS3.2-24B-Magnum-Diamond is a 24-billion parameter text generation model fine-tuned from Mistral-Small-3.2-24B-Instruct-2506 using rsLoRA adapters, created by Doctor-Shotgun. The model targets creative writing and roleplay scenarios by emulating the prose style of Claude 3 Sonnet/Opus models at consumer-friendly scale. Built on the Mistral v7 Tekken prompt format, it accepts optional ..."
+    }
+  ]
+}

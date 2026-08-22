@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Nrupen/buyer-intent-bert-small",
+  "slug": "nrupen-buyer-intent-bert-small",
+  "author": "Nrupen",
+  "url": "https://huggingface.co/Nrupen/buyer-intent-bert-small",
+  "created_at": "2026-08-21T06:20:15.000Z",
+  "updated_at": "2026-08-22T09:34:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 28775960,
+  "parameters_human": "28.8M",
+  "storage_bytes": 461544414,
+  "storage_human": "462 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prajjwal1/bert-small · Hugging Face",
+      "url": "https://huggingface.co/prajjwal1/bert-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "boltuix/bert-small · Hugging Face",
+      "url": "https://huggingface.co/boltuix/bert-small",
+      "snippet": "BoltUIX offers a range of BERT-based models tailored to different performance and resource requirements. The boltuix/bert-small model is a compact option, ideal for applications needing a good balance of accuracy and efficiency."
+    },
+    {
+      "title": "Primitive-based Learning Model for Intent Detection in Human-AI Agent ...",
+      "url": "https://www.researchgate.net/publication/373510922_Primitive-based_Learning_Model_for_Intent_Detection_in_Human-AI_Agent_Negotiation",
+      "snippet": "In this article, we present the first primitive-based learning model, which analyses human (buyer) dynamic behavioral patterns at content level, and automatically predict their purchase or non ..."
+    },
+    {
+      "title": "Top Lightweight BERT Models for Edge AI and Mobile NLP",
+      "url": "https://www.boltuix.com/2025/06/top-lightweight-bert-models-for-edge-ai.html",
+      "snippet": "🌟 Introducing the Boltuix BERT Family The Boltuix BERT family, hosted on Hugging Face, includes nine models tailored for various use cases, from ultra-lightweight to high-accuracy. Each model is fine-tuned and quantized to balance size, speed, and performance, making them ideal for edge AI, IoT, and mobile applications."
+    },
+    {
+      "title": "GitHub - google-research/bert: TensorFlow code and pre-trained models ...",
+      "url": "https://github.com/google-research/bert",
+      "snippet": "TensorFlow code and pre-trained models for BERT. Contribute to google-research/bert development by creating an account on GitHub."
+    }
+  ]
+}

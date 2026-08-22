@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hhongjungkook/paper_010832256_few_shot_multimodal",
+  "slug": "hhongjungkook-paper_010832256_few_shot_multimodal",
+  "author": "hhongjungkook",
+  "url": "https://huggingface.co/hhongjungkook/paper_010832256_few_shot_multimodal",
+  "created_at": "2026-08-22T07:16:35.000Z",
+  "updated_at": "2026-08-22T07:16:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "author-year",
+    "few-shot-multimodal",
+    "highlight-bullet",
+    "html",
+    "intro-background-approach-eval-conclusion",
+    "medium-balanced",
+    "neutral",
+    "passive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Pointing at Parts: Training-Free Few-Shot Grounding in Multimodal LLMs",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Tsai_Pointing_at_Parts_Training-Free_Few-Shot_Grounding_in_Multimodal_LLMs_CVPR_2026_paper.pdf",
+      "snippet": "We introduce a training-free approach that enhances part-level pointing in MLLMs in few-shot settings. Prior works in MLLMs excel at instance-level pointing, but fall short in part-level pointing (upper)."
+    },
+    {
+      "title": "Multimodal Few-Shot Learning with Frozen Language Models - NIPS",
+      "url": "https://papers.nips.cc/paper/2021/hash/01b7575c38dac42f3cfb7d500438b875-Abstract.html",
+      "snippet": "Here, we present a simple, yet effective, approach for transferring this few-shot learning ability to a multimodal setting (vision and language). Using aligned image and caption data, we train a vision encoder to represent each image as a sequence of continuous embeddings, such that a pre-trained, frozen language model presented with this ..."
+    },
+    {
+      "title": "PDF Multimodal Few-Shot Learning with Frozen Language Models",
+      "url": "https://proceedings.neurips.cc/paper/2021/file/01b7575c38dac42f3cfb7d500438b875-Paper.pdf",
+      "snippet": "Here, we present Frozen, a method for giving a pre-trained language model access to visual information in a way that extends its few-shot learning capabilities to a multimodal setting, without changing its weights."
+    },
+    {
+      "title": "Multimodal Few-Shot Learning with Frozen Language Models",
+      "url": "https://fh295.github.io/frozen.html",
+      "snippet": "Multimodal Few-Shot Learning with Frozen Language Models In this work we train image encoders through a large pretrained language model (without updating its weights) and show that the resulting system extends some of the fast-learning capacities of large language models to the multimodal (image+language) setting)."
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Tsai_Pointing_at_Parts_Training-Free_Few-Shot_Grounding_in_Multimodal_LLMs_CVPR_2026_paper.html",
+      "snippet": "We introduce POinting at Parts (POP), a training-free, plug-and-play approach that addresses these challenges under a few-shot setup. POP fuses textual and visual attention maps with self-supervised visual correspondences from query image and few-shot examples."
+    }
+  ]
+}

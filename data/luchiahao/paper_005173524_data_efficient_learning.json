@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "luchiahao/paper_005173524_data_efficient_learning",
+  "slug": "luchiahao-paper_005173524_data_efficient_learning",
+  "author": "luchiahao",
+  "url": "https://huggingface.co/luchiahao/paper_005173524_data_efficient_learning",
+  "created_at": "2026-08-22T03:38:12.000Z",
+  "updated_at": "2026-08-22T03:38:19.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "bulleted",
+    "data-efficient-learning",
+    "first-person-plural",
+    "highlight-bullet",
+    "intro-problem-solution-validation-future",
+    "markdown",
+    "neutral",
+    "numeric-nature",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI Research | Publication",
+      "url": "https://openai.com/research/index/publication/",
+      "snippet": "GPT‑5.6 System Card GPT-5.6 is a new family of three models: Sol, our new flagship model; Terra, a capable lower-cost option; and Luna, our fastest and most cost-efficient model. The safeguards we have built for this launch—our most robust yet—are built to deliver these models safely and at scale, around the world."
+    },
+    {
+      "title": "Active Learning Methods for Efficient Data Utilization and Model ...",
+      "url": "https://arxiv.org/pdf/2504.16136",
+      "snippet": "The paper focuses on important research topics such as uncertainty estimation, handling of class imbalance, domain adaptation, fairness, and the creation of strong evaluation metrics and benchmarks. It also shows that learning methods inspired by humans and guided by questions can improve data efficiency and help models learn more effectively."
+    },
+    {
+      "title": "Data Efficient learning | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/data-efficient-learning",
+      "snippet": "Data-efficient learning aims to develop AI/ML models that can achieve high performance with significantly less training data than traditional methods. This is crucial because acquiring and labeling large datasets can be expensive, time-consuming, or even infeasible in many real-world applications like medical diagnosis, robotics, and rare event detection."
+    },
+    {
+      "title": "Data-Efficient Learning via Minimizing Hyperspherical Energy",
+      "url": "https://ieeexplore.ieee.org/document/10168255",
+      "snippet": "Deep learning on large-scale data is currently dominant nowadays. The unprecedented scale of data has been arguably one of the most important driving forces behind its success. However, there still exist scenarios where collecting data or labels could be extremely expensive, e.g., medical imaging and robotics. To fill up this gap, this paper considers the problem of data-efficient learning ..."
+    },
+    {
+      "title": "[2402.09668] How to Train Data-Efficient LLMs - arXiv.org",
+      "url": "https://arxiv.org/abs/2402.09668",
+      "snippet": "The training of large language models (LLMs) is expensive. In this paper, we study data-efficient approaches for pre-training LLMs, i.e., techniques that aim to optimize the Pareto frontier of model quality and training resource/data consumption. We seek to understand the tradeoffs associated with data selection routines based on (i) expensive-to-compute data-quality estimates, and (ii ..."
+    }
+  ]
+}

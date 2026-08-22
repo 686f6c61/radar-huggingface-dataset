@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zeta0707/act_makerfaire26",
+  "slug": "zeta0707-act_makerfaire26",
+  "author": "zeta0707",
+  "url": "https://huggingface.co/zeta0707/act_makerfaire26",
+  "created_at": "2026-08-22T10:33:14.000Z",
+  "updated_at": "2026-08-22T10:33:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:zeta0707/makerfaire26",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51680908,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206757936,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeta0707/makerfaire26 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/zeta0707/makerfaire26",
+      "snippet": "Datasets: zeta0707 / makerfaire26 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·25.7k rows default (25.7k rows) Split ..."
+    },
+    {
+      "title": "zeta0707 (ChangWhan Lee) - Hugging Face",
+      "url": "https://huggingface.co/zeta0707/models",
+      "snippet": "Organizations zeta0707&#x27;s models 1 Sort: Recently updated zeta0707/pick0627 Robotics • Updated 5 days ago• 2"
+    },
+    {
+      "title": "zeta",
+      "url": "https://zeta-ai.io/en",
+      "snippet": "The No.1 AI chat! Over 13 hours of weekly use — and it&#x27;s free. Not using zeta yet? Everyone else is!"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "zeta0707 (ZETA7) · GitHub",
+      "url": "https://github.com/zeta0707",
+      "snippet": "zeta0707 has 31 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

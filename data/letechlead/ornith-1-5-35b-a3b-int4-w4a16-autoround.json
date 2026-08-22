@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "letechlead/Ornith-1.5-35B-A3B-INT4-W4A16-AutoRound",
+  "slug": "letechlead-ornith-1-5-35b-a3b-int4-w4a16-autoround",
+  "author": "letechlead",
+  "url": "https://huggingface.co/letechlead/Ornith-1.5-35B-A3B-INT4-W4A16-AutoRound",
+  "created_at": "2026-08-22T07:53:30.000Z",
+  "updated_at": "2026-08-22T08:25:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "moe",
+    "int4",
+    "autoround",
+    "quantization",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:apache-2.0",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1039331968,
+  "parameters_human": "1.04B",
+  "storage_bytes": 20316423341,
+  "storage_human": "20.3 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith 1.5 35B A3B tested - 16GB Local LLM setup - YouTube",
+      "url": "https://www.youtube.com/watch?v=r7k8T8rjhUE",
+      "snippet": "We have a new version from the Ornith team with 1.5. The version 1.0 was a pretty great model, can this one continue to impress?I run through a few tests whi..."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B local AI: RAM + LM Studio | LocalClaw",
+      "url": "https://localclaw.io/models/ornith-1-5-35b-a3b",
+      "snippet": "Ornith-1.5-35B-A3B: 35B (3B active, MoE) local AI model guide with RAM requirements, Q4_K_M quantization, catalogue ratings, use cases and LM Studio setup."
+    },
+    {
+      "title": "Ornith-1.5 35B-A3B Review for Local Coding Agents - wavespeed.ai",
+      "url": "https://wavespeed.ai/blog/ai-models/ornith-1-5-35b-a3b-review/",
+      "snippet": "The 30-second answer: treat Ornith-1.5-35B-A3B as a promising MoE coding model for local coding agent pilots, not as a drop-in team default. Before running further, narrow the variables."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kickass/celine-4-k2",
+  "slug": "kickass-celine-4-k2",
+  "author": "Kickass",
+  "url": "https://huggingface.co/Kickass/celine-4-k2",
+  "created_at": "2026-08-22T03:53:11.000Z",
+  "updated_at": "2026-08-22T04:28:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778555080,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Free AI 3D Model Generator: Create 3D Assets at Zero Cost",
+      "url": "https://www.neural4d.com/features/free-3d-model-generator",
+      "snippet": "Generate high-quality 3D models from text or images for free. Neural4D provides a top-tier free AI 3D model generator for games, AR/VR, and 3D printing."
+    },
+    {
+      "title": "Moonshot AI&#x27;s Free Kimi K2 Outperforms GPT-4 in Key Benchmarks ...",
+      "url": "https://hyper.ai/en/stories/0829bfe7ec7ae6658b37a4ddf1f8381f",
+      "snippet": "Moonshot AI, a prominent Chinese artificial intelligence startup known for its Kimi chatbot, unveiled an open-source language model, Kimi K2, on July 11, 2025. This new model introduces a significant challenge to leading proprietary systems from OpenAI and Anthropic, showcasing exceptional performance in coding and autonomous agent tasks. Key Features and Performance Kimi K2 boasts 1 trillion ..."
+    },
+    {
+      "title": "Keep2share File Search - Keep2share",
+      "url": "https://keep2shares.net/keep2share-file-search/",
+      "snippet": "Search for files on Keep2share with easy navigation and access to premium accounts, affiliate options, and user reviews."
+    },
+    {
+      "title": "China&#x27;s Moonshot Launches Free AI Model Kimi K2 That Outperforms GPT-4 ...",
+      "url": "https://developers.slashdot.org/story/25/07/14/1942209/chinas-moonshot-launches-free-ai-model-kimi-k2-that-outperforms-gpt-4-in-key-benchmarks",
+      "snippet": "Chinese AI startup Moonshot AI has released Kimi K2, a trillion-parameter open-source language model that outperforms GPT-4 in key benchmarks with particularly strong performance on coding and autonomous agent tasks. VentureBeat reports: The new model, called Kimi K2, features 1 trillion total para..."
+    }
+  ]
+}

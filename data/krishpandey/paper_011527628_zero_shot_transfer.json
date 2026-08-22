@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "krishpandey/paper_011527628_zero_shot_transfer",
+  "slug": "krishpandey-paper_011527628_zero_shot_transfer",
+  "author": "krishpandey",
+  "url": "https://huggingface.co/krishpandey/paper_011527628_zero_shot_transfer",
+  "created_at": "2026-08-22T06:35:37.000Z",
+  "updated_at": "2026-08-22T06:35:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "concise-analytical",
+    "intro-problem-solution-validation-future",
+    "latex-icml",
+    "neutral",
+    "numeric-apa",
+    "unstructured-narrative",
+    "varied-mixed",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A review on NLP zero-shot and few-shot learning: methods and ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s42452-025-07225-5",
+      "snippet": "Zero-shot and few-shot learning techniques in natural language processing (NLP), this comprehensive review traces their evolution from traditional methods to cutting-edge approaches like transfer learning and pre-trained language models, semantic embedding, attribute-based approaches, generative models for data augmentation in zero-shot learning, and meta-learning, model-agnostic meta-learning ..."
+    },
+    {
+      "title": "ZeroG: Investigating Cross-dataset Zero-shot Transferability in Graphs",
+      "url": "https://arxiv.org/pdf/2402.11235",
+      "snippet": "We further adopt a lightweight fine-tuning strategy that reduces the risk of overfitting and maintains the zero-shot learning efficacy of the language model. The results underscore the effectiveness of our model in achieving significant cross-dataset zero-shot transferabil-ity, opening pathways for the development of graph foundation models1."
+    },
+    {
+      "title": "(PDF) A review on NLP zero-shot and few-shot learning: methods and ...",
+      "url": "https://www.researchgate.net/publication/394830523_A_review_on_NLP_zero-shot_and_few-shot_learning_methods_and_applications",
+      "snippet": "Zero-shot and few-shot learning techniques in natural language processing (NLP), this comprehensive review traces their evolution from traditional methods to cutting-edge approaches like transfer ..."
+    },
+    {
+      "title": "Zero-Shot vs One-Shot vs Few-Shot Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/zero-shot-vs-one-shot-vs-few-shot-learning/",
+      "snippet": "In artificial intelligence (AI), zero-shot and few-shot learning are groundbreaking concepts that have significantly advanced the capabilities of machine learning models. These techniques enable models to recognize and classify new data with little or no training examples, making them incredibly versatile and efficient. Let&#x27;s learn what zero-shot and few-shot learning are, their importance and ..."
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "The first paper on zero-shot learning in natural language processing appeared in a 2008 paper by Chang, Ratinov, Roth, and Srikumar, at the AAAI&#x27;08, but the name given to the learning paradigm there was dataless classification. [3] The first paper on zero-shot learning in computer vision appeared at the same conference, under the name zero-data learning. [4] The term zero-shot learning itself ..."
+    }
+  ]
+}

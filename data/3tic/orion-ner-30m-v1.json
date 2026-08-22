@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "3tic/Orion-NER-30M-v1",
+  "slug": "3tic-orion-ner-30m-v1",
+  "author": "3tic",
+  "url": "https://huggingface.co/3tic/Orion-NER-30M-v1",
+  "created_at": "2026-08-22T04:36:48.000Z",
+  "updated_at": "2026-08-22T04:39:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "BERT",
+    "NER",
+    "lightnovel",
+    "token-classification",
+    "ja",
+    "base_model:sbintuitions/modernbert-ja-30m",
+    "base_model:finetune:sbintuitions/modernbert-ja-30m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36775697,
+  "parameters_human": "36.8M",
+  "storage_bytes": 148941371,
+  "storage_human": "149 MB",
+  "base_model": "sbintuitions/modernbert-ja-30m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orion-NER - a 3tic Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/3tic/orion-ner",
+      "snippet": "Orion-NER - a 3tic Collection - Hugging Face ... Orion 实体识别任务"
+    },
+    {
+      "title": "GitHub - 3tic-project/OrionTranslator: 日译中轻小说翻译工具，集成 NER 人物识别、LLM 翻译、术语 ...",
+      "url": "https://github.com/3tic-project/OrionTranslator",
+      "snippet": "日译中轻小说翻译工具，集成 NER 人物识别、LLM 翻译、术语表生成、EPUB/TXT 格式处理与桌面 GUI，全部使用Rust代码编写。 demo.mp4"
+    },
+    {
+      "title": "3tic (3tic-project) - Hugging Face",
+      "url": "https://huggingface.co/3tic/datasets",
+      "snippet": "Machine Translation AI & ML interests Machine Translation Recent Activity rinne1998 updated a Space 2 days ago"
+    },
+    {
+      "title": "README.md · 3tic/Orion-NER-traindata-v1 at main",
+      "url": "https://d6108366.hf-mirror.com/datasets/3tic/Orion-NER-traindata-v1/blob/main/README.md?code=true",
+      "snippet": "Datasets: 3tic / Orion-NER-traindata-v1 like 0 Follow 3tic-project 6 Tasks: Token Classification Modalities: Text Formats: json Languages: Japanese Size: 10K - 100K Tags: lightnovel Libraries: Datasets pandas Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 main Orion-NER-traindata-v1 /README.md ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dyjackson/paper_005973325_self_supervised",
+  "slug": "dyjackson-paper_005973325_self_supervised",
+  "author": "dyjackson",
+  "url": "https://huggingface.co/dyjackson/paper_005973325_self_supervised",
+  "created_at": "2026-08-22T06:26:12.000Z",
+  "updated_at": "2026-08-22T06:26:19.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "active",
+    "latex-cvpr",
+    "measured",
+    "numeric-bibtex",
+    "self-supervised",
+    "short-punchy",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "A Survey on Self-Supervised Learning: Algorithms, Applications, and ...",
+      "url": "https://ieeexplore.ieee.org/document/10559458",
+      "snippet": "Deep supervised learning algorithms typically require a large volume of labeled data to achieve satisfactory performance. However, the process of collecting and labeling such data can be expensive and time-consuming. Self-supervised learning (SSL), a subset of unsupervised learning, aims to learn discriminative features from unlabeled data without relying on human-annotated labels. SSL has ..."
+    },
+    {
+      "title": "[2301.05712] A Survey on Self-supervised Learning: Algorithms ...",
+      "url": "https://arxiv.org/abs/2301.05712",
+      "snippet": "Deep supervised learning algorithms typically require a large volume of labeled data to achieve satisfactory performance. However, the process of collecting and labeling such data can be expensive and time-consuming. Self-supervised learning (SSL), a subset of unsupervised learning, aims to learn discriminative features from unlabeled data without relying on human-annotated labels. SSL has ..."
+    },
+    {
+      "title": "A Survey on Self-Supervised Learning: Algorithms ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/381487210_A_Survey_on_Self-supervised_Learning_Algorithms_Applications_and_Future_Trends",
+      "snippet": "This study introduces a self-supervised learning-based image classification model using the Bootstrap Your Own Latent (BYOL) algorithm, designed to enhance mosquito species identification efficiently."
+    },
+    {
+      "title": "JOURNAL OF LA A Survey on Self-supervised Learning: Algorithms ...",
+      "url": "https://arxiv.org/pdf/2301.05712",
+      "snippet": "To address the aforementioned limitations of supervised learning, various machine learning paradigms have been in-troduced, including active learning, semi-supervised learn-ing, and self-supervised learning (SSL). This paper specifi-cally emphasizes SSL. SSL algorithms aim to learn discrim-inative features from vast quantities of unlabeled instances without relying on human annotations. The ..."
+    }
+  ]
+}

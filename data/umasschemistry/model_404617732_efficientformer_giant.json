@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "umasschemistry/model_404617732_efficientformer_giant",
+  "slug": "umasschemistry-model_404617732_efficientformer_giant",
+  "author": "umasschemistry",
+  "url": "https://huggingface.co/umasschemistry/model_404617732_efficientformer_giant",
+  "created_at": "2026-08-22T05:08:33.000Z",
+  "updated_at": "2026-08-22T05:08:39.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batchnorm",
+    "classification",
+    "efficientformer",
+    "giant",
+    "lamb",
+    "linear-warmup",
+    "low-rank",
+    "mish",
+    "standard",
+    "xavier",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF UMA: A Family of Universal Models for Atoms - papers.nips.cc",
+      "url": "https://papers.nips.cc/paper_files/paper/2025/file/bbf23e81b0ad7637fe9a731d0b676ca6-Paper-Conference.pdf",
+      "snippet": "We develop empirical scaling laws to help understand how to increase model capacity alongside dataset size to achieve the best accuracy. The UMA small and medium models utilize a novel architectural design we refer to as mixture of linear experts that enables increasing model capacity without sacrificing speed."
+    },
+    {
+      "title": "UMA: A Family of Universal Models for Atoms - arXiv.org",
+      "url": "https://arxiv.org/pdf/2506.23971v1",
+      "snippet": "The ability to quickly and accurately compute properties from atomic simulations is critical for advancing a large number of applications in chemistry and materials science including drug discovery, energy storage, and semiconductor manufacturing. To address this need, Meta FAIR presents a family of Universal Models for Atoms (UMA), designed to push the frontier of speed, accuracy, and ..."
+    },
+    {
+      "title": "[2506.23971] UMA: A Family of Universal Models for Atoms",
+      "url": "https://arxiv.org/abs/2506.23971",
+      "snippet": "The ability to quickly and accurately compute properties from atomic simulations is critical for advancing a large number of applications in chemistry and materials science including drug discovery, energy storage, and semiconductor manufacturing. To address this need, Meta FAIR presents a family of Universal Models for Atoms (UMA), designed to push the frontier of speed, accuracy, and ..."
+    },
+    {
+      "title": "facebook/UMA · Hugging Face",
+      "url": "https://huggingface.co/facebook/UMA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "UMA: A Family of Universal Models for Atoms | Research - AI at Meta",
+      "url": "https://ai.meta.com/research/publications/uma-a-family-of-universal-models-for-atoms/",
+      "snippet": "For example, UMA-medium has 1.4B parameters but only ~50M active parameters per atomic structure. We evaluate UMA models on a diverse set of tasks across multiple domains and find that, remarkably, a single model without any fine-tuning can perform similarly or better than specialized models."
+    }
+  ]
+}

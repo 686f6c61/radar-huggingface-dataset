@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Anisaanggraini/paper_023626108_audio_visual_learning",
+  "slug": "anisaanggraini-paper_023626108_audio_visual_learning",
+  "author": "Anisaanggraini",
+  "url": "https://huggingface.co/Anisaanggraini/paper_023626108_audio_visual_learning",
+  "created_at": "2026-08-22T05:11:14.000Z",
+  "updated_at": "2026-08-22T05:11:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-visual-learning",
+    "cautious",
+    "detailed-descriptive",
+    "highlight-bullet",
+    "intro-related-method-exp-conclusion",
+    "latex-arxiv",
+    "numeric-bibtex",
+    "passive",
+    "varied-mixed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Do Audio-Visual Large Language Models Really See and Hear?",
+      "url": "https://arxiv.org/abs/2604.02605",
+      "snippet": "Audio-Visual Large Language Models (AVLLMs) are emerging as unified interfaces to multimodal perception. We present the first mechanistic interpretability study of AVLLMs, analyzing how audio and visual features evolve and fuse through different layers of an AVLLM to produce the final text outputs. We find that although AVLLMs encode rich audio semantics at intermediate layers, these ..."
+    },
+    {
+      "title": "WAVE: Learning Unified & Versatile Audio-Visual Embeddings with ...",
+      "url": "https://nanless.github.io/audio-paper-digest-blog/posts/2026-05-04-wave-learning-unified-versatile-audio-visual/",
+      "snippet": "📄 WAVE: Learning Unified & Versatile Audio-Visual Embeddings with Multimodal LLM #多模态模型 #对比学习 #音频检索 #视频检索 #多任务学习 🔥 8.0/10 | 前25% | #音频检索 | #对比学习 | #多模态模型 #视频检索 学术质量 7.0/7 | 选题价值 1.5/2 | 复现加成 0.5 | 置信度 高 👥 作者与机构 第一作者：Changli Tang (清华大学) 通讯 ..."
+    },
+    {
+      "title": "Pushing the Frontier of Audiovisual Perception with Large-Scale ...",
+      "url": "https://ai.meta.com/research/publications/pushing-the-frontier-of-audiovisual-perception-with-large-scale-multimodal-correspondence-learning/",
+      "snippet": "Abstract We introduce Perception Encoder Audiovisual, PE-AV, a new family of encoders for audio and video understanding trained with scaled contrastive learning. Built on Perception Encoder, PE-AV makes several key contributions to extend representations to audio, and natively support joint embeddings across audio-video, audio-text, and video-text modalities. PE-AV&#x27;s unified cross ..."
+    },
+    {
+      "title": "Publications - Google Research",
+      "url": "https://research.google/pubs/",
+      "snippet": "Google publishes hundreds of research papers each year. Publishing our work enables us to collaborate and share ideas with, as well as learn from, the broader scientific community."
+    },
+    {
+      "title": "Audio-Visual Intelligence in Large Foundation Models",
+      "url": "https://arxiv.org/abs/2605.04045",
+      "snippet": "Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also for controllable ..."
+    }
+  ]
+}

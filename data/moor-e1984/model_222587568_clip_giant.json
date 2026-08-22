@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "moor-e1984/model_222587568_clip_giant",
+  "slug": "moor-e1984-model_222587568_clip_giant",
+  "author": "moor-e1984",
+  "url": "https://huggingface.co/moor-e1984/model_222587568_clip_giant",
+  "created_at": "2026-08-22T07:28:28.000Z",
+  "updated_at": "2026-08-22T07:28:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "clip",
+    "concat-mlp",
+    "cosine",
+    "dilated",
+    "gelu-tanh",
+    "giant",
+    "layernorm",
+    "multitask",
+    "orthogonal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SecsMurphyAI on DeviantArt",
+      "url": "https://www.deviantart.com/secsmurphyai",
+      "snippet": "Founded in 2000, DeviantArt is the largest online community for artists and art lovers, with over 100 million registered members worldwide and hosting over 650 million pieces of art on the platform. DeviantArt empowers creators to monetize their work and sell their art online, and in 2025 tens of thousands of artists sold on DeviantArt for over $23 Million."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AIBooru: AI Art Imageboard",
+      "url": "https://aibooru.online/",
+      "snippet": "AIBooru is the first booru for AI-generated images. Search for AI-generated anime pictures categorized by thousands of tags."
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    },
+    {
+      "title": "Every AI Model on Ehudai — Video, Image and Lipsync",
+      "url": "https://www.ehudai.com/models",
+      "snippet": "Video 24 Text-to-video, image-to-video and reference-driven generation, up to 4K and up to 30 seconds a clip depending on the model."
+    }
+  ]
+}

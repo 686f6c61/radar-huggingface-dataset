@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "gimmy256/adaption_luganda_fln_teacher_training",
+  "slug": "gimmy256-adaption_luganda_fln_teacher_training",
+  "author": "gimmy256",
+  "url": "https://huggingface.co/gimmy256/adaption_luganda_fln_teacher_training",
+  "created_at": "2026-08-22T06:06:25.000Z",
+  "updated_at": "2026-08-22T06:07:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gemma4",
+    "lora",
+    "adapter",
+    "adaption",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:adapter:google/gemma-4-31B-it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 522158055,
+  "storage_human": "522 MB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gimmy256/adaption-luganda-fln-teacher-training - Hugging Face",
+      "url": "https://huggingface.co/datasets/gimmy256/adaption-luganda-fln-teacher-training",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Luganda AI for Education - a CraneAILabs Collection",
+      "url": "https://huggingface.co/collections/CraneAILabs/luganda-ai-for-education",
+      "snippet": "Models, datasets, and benchmarks for AI teacher companions in Ugandan primary schools. Bilingual Luganda/English."
+    },
+    {
+      "title": "PDF From Principles to Practice: The Plan-Generate-Verify-Adapt (PGVA ...",
+      "url": "https://www.ijfmr.com/papers/2025/6/62106.pdf",
+      "snippet": "Abstract The integration of artificial intelligence in indigenous language education requires systematic pedagogical frameworks that translate theoretical knowledge into practical implementation. This study developed and validated the Plan-Generate-Verify-Adapt (PGVA) framework, an empirically-grounded operational structure guiding AI-chatbot integration in competency-based indigenous language ..."
+    },
+    {
+      "title": "An AI model from Meta also hacked another company during testing - MSN",
+      "url": "https://www.msn.com/en-us/news/us/an-ai-model-from-meta-also-hacked-another-company-during-testing/ar-AA29tWgL",
+      "snippet": "Add Meta to the list of companies with AI agents going rogue. An AI model from the parent company of Facebook and Instagram hacked into another company&#x27;s systems during cybersecurity testing, a ..."
+    },
+    {
+      "title": "OpenAI Halts AI Training on Advanced Model as It Detects Dark Signs ...",
+      "url": "https://futurism.com/artificial-intelligence/openai-halts-training-advanced-model",
+      "snippet": "The slow down comes as the AI industry and policymakers grapple with emerging safety threats posed by frontier AI models, including AI-powered cybersecurity risks and troubling model misbehavior."
+    }
+  ]
+}

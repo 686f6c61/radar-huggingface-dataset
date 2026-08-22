@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ashwmurt/resnet152",
+  "slug": "ashwmurt-resnet152",
+  "author": "ashwmurt",
+  "url": "https://huggingface.co/ashwmurt/resnet152",
+  "created_at": "2026-08-22T08:57:27.000Z",
+  "updated_at": "2026-08-22T09:09:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "backbone",
+    "qai-hub-models",
+    "qualcomm",
+    "android",
+    "image-classification",
+    "arxiv:1512.03385",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Resnet-152: A Comprehensive Guide for 2025 - Shadecoder",
+      "url": "https://www.shadecoder.com/topics/resnet-152-a-comprehensive-guide-for-2025",
+      "snippet": "Deep convolutional networks remain foundational in computer vision, and Resnet-152 is one of the landmark architectures that helped modern deep learning scale. In 2025, Resnet-152 still matters for transfer learning, feature extraction, and benchmarking even as newer transformer-based models gain traction. In my experience, ResNet variants provide a practical balance between depth and training ..."
+    },
+    {
+      "title": "resnet152 — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.resnet152.html",
+      "snippet": "Parameters: weights (ResNet152_Weights, optional) - The pretrained weights to use. See ResNet152_Weights below for more details, and possible values. By default, no pre-trained weights are used. progress (bool, optional) - If True, displays a progress bar of the download to stderr. Default is True. **kwargs - parameters passed to the torchvision.models.resnet.ResNet base class. Please ..."
+    },
+    {
+      "title": "microsoft/resnet-152 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/resnet-152",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "resnet-152 · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/resnet-152",
+      "snippet": "Emotion classification model leveraging Transfer Learning with ResNet152 for robust facial emotion recognition across six categories, featuring preprocessing, augmentation, and detailed evaluation metrics."
+    },
+    {
+      "title": "Residual Networks (ResNet) - Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/residual-networks-resnet-deep-learning/",
+      "snippet": "Residual Networks (ResNet) is a deep learning architecture designed to enable efficient training of very deep neural networks. It introduces skip (shortcut) connections, which allow the model to learn residual mappings instead of direct transformations. Helps prevent vanishing gradient problems in very deep models Allows information to flow directly across layers using skip connections Enables ..."
+    }
+  ]
+}

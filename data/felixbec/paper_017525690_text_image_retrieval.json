@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "felixbec/paper_017525690_text_image_retrieval",
+  "slug": "felixbec-paper_017525690_text_image_retrieval",
+  "author": "felixbec",
+  "url": "https://huggingface.co/felixbec/paper_017525690_text_image_retrieval",
+  "created_at": "2026-08-22T03:58:23.000Z",
+  "updated_at": "2026-08-22T03:58:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "critical",
+    "endnote",
+    "impersonal",
+    "intro-background-approach-eval-conclusion",
+    "markdown",
+    "short-punchy",
+    "structured-imrad",
+    "text-image-retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama Nemoretriever Colembed: Top-Performing Text-Image Retrieval Model",
+      "url": "https://arxiv.org/abs/2507.05513",
+      "snippet": "Motivated by the growing demand for retrieval systems that operate across modalities, we introduce llama-nemoretriever-colembed, a unified text-image retrieval model that delivers state-of-the-art performance across multiple benchmarks. We release two model variants, 1B and 3B."
+    },
+    {
+      "title": "[2406.05814] TIGeR: Unifying Text-to-Image Generation and Retrieval ...",
+      "url": "https://arxiv.org/abs/2406.05814",
+      "snippet": "How humans can effectively and efficiently acquire images has always been a perennial question. A classic solution is text-to-image retrieval from an existing database; however, the limited database typically lacks creativity. By contrast, recent breakthroughs in text-to-image generation have made it possible to produce attractive and counterfactual visual content, but it faces challenges in ..."
+    },
+    {
+      "title": "GitHub - Yutong-Zhou-cv/Awesome-Text-to-Image: (ෆ`꒳´ෆ) A Survey on Text ...",
+      "url": "https://github.com/Yutong-Zhou-cv/Awesome-Text-to-Image",
+      "snippet": "A number of studies have been conducted on text-to-image synthesis techniques that transfer input textual descriptions (keywords or sentences) into realistic images. Papers, codes, and datasets for the text-to-image task are available here. 🐌 Markdown Format: (Conference/Journal Year) Title, First Author et al. [Paper] [Code] [Project]"
+    },
+    {
+      "title": "Invisible Relevance Bias: Text-Image Retrieval Models Prefer AI ...",
+      "url": "https://dl.acm.org/doi/10.1145/3626772.3657750",
+      "snippet": "Experiments on this benchmark reveal that text-image retrieval models tend to rank the AI-generated images higher than the real images, even though the AI-generated images do not exhibit more visually relevant semantics to the queries than real images. We call this bias as invisible relevance bias."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    }
+  ]
+}

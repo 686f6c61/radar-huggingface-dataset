@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/nanoexpand-2018-quality-gold",
+  "slug": "jjjlimaus-nanoexpand-2018-quality-gold",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/nanoexpand-2018-quality-gold",
+  "created_at": "2026-08-22T02:33:29.000Z",
+  "updated_at": "2026-08-22T06:27:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanoexpand",
+    "text-generation",
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2095581570,
+  "parameters_human": "2.10B",
+  "storage_bytes": 25147122600,
+  "storage_human": "25.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=sn38-nanoexpand",
+      "snippet": "jjjlimaus/nanoexpand-2018-pretrain Text Generation • 2B•Updated about 8 hours ago"
+    },
+    {
+      "title": "jjjlimaus/sn38-quality-gold-100k · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/jjjlimaus/sn38-quality-gold-100k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "GitHub - ZeroLu/awesome-nanobanana-pro: An awesome list of curated ...",
+      "url": "https://github.com/ZeroLu/awesome-nanobanana-pro",
+      "snippet": "🚀 An awesome list of curated Nano Banana pro prompts and examples. Your go-to resource for mastering prompt engineering and exploring the creative potential of the Nano banana pro (Nano banana 2) AI image model. - ZeroLu/awesome-nanobanana-pro"
+    },
+    {
+      "title": "AI Image Generator: Text to Image AI - higgsfield.ai",
+      "url": "https://higgsfield.ai/ai-image",
+      "snippet": "Create studio-quality AI images with Nano Banana Pro, Higgsfield Soul, Seedream, FLUX, and more. Native 4K output, brand-accurate colors, and seamless image-to-video"
+    }
+  ]
+}

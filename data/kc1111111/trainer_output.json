@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kc1111111/trainer_output",
+  "slug": "kc1111111-trainer_output",
+  "author": "kc1111111",
+  "url": "https://huggingface.co/kc1111111/trainer_output",
+  "created_at": "2026-08-22T10:25:04.000Z",
+  "updated_at": "2026-08-22T10:26:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Train an AI Model: Step-by-Step 2026 Guide | Label Your Data",
+      "url": "https://labelyourdata.com/articles/how-to-train-an-ai-model",
+      "snippet": "️ Learn how to train an AI model, covering data requirements, tools, step-by-step workflow, and real costs for AI model training in production."
+    },
+    {
+      "title": "How to Train an AI Model: Beginner Guide (2026) - ultralytics.com",
+      "url": "https://www.ultralytics.com/blog/a-quick-guide-for-beginners-on-how-to-train-an-ai-model",
+      "snippet": "Learn how to train an AI model step-by-step with this quick guide for beginners. Discover essential workflows, datasets, and tools to get started."
+    },
+    {
+      "title": "Interactive AI Model Trainer - GitHub",
+      "url": "https://github.com/thekartikeyamishra/Interactive-AI-Model-Trainer",
+      "snippet": "A Google Colab notebook for interactively training simple AI/ML classification models. Features CSV upload, dummy data generation, feature/target selection, model choice, and basic evaluation. Incl..."
+    },
+    {
+      "title": "How to Train an AI Model: A Step-by-Step Guide | Mercor",
+      "url": "https://www.mercor.com/resources/experts/how-to-train-an-ai-model/",
+      "snippet": "Learn how to train an AI model step by step, from data preparation and model selection to fine-tuning and deployment. Explore tools, costs, and how to get started professionally."
+    },
+    {
+      "title": "Trainer/trainer/model.py at main · coqui-ai/Trainer · GitHub",
+      "url": "https://github.com/coqui-ai/Trainer/blob/main/trainer/model.py",
+      "snippet": "🐸 - A general purpose model trainer, as flexible as it gets - Trainer/trainer/model.py at main · coqui-ai/Trainer"
+    }
+  ]
+}

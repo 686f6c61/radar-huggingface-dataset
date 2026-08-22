@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "WWsCa/vetcopilot-backend",
+  "slug": "wwsca-vetcopilot-backend",
+  "author": "WWsCa",
+  "url": "https://huggingface.co/WWsCa/vetcopilot-backend",
+  "created_at": "2026-08-22T05:16:48.000Z",
+  "updated_at": "2026-08-22T05:47:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "veterinary",
+    "fastapi",
+    "vetcopilot",
+    "en",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 396958,
+  "storage_human": "396958 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-powered veterinary practice management - GitHub",
+      "url": "https://github.com/0xDI/vetcopilot",
+      "snippet": "VetCopilot AI-powered veterinary practice management Startup project from early 2025. The idea didn&#x27;t go through — publishing the source as-is."
+    },
+    {
+      "title": "GitHub Copilot | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/agent-framework/integrations/by-component/agent-services/github-copilot",
+      "snippet": "Microsoft Agent Framework supports creating agents that use the GitHub Copilot SDK as their backend. GitHub Copilot agents provide access to powerful coding-oriented AI capabilities, including shell command execution, file operations, URL fetching, and Model Context Protocol (MCP) server integration."
+    },
+    {
+      "title": "vetcopilot/README.md at master · 0xDI/vetcopilot · GitHub",
+      "url": "https://github.com/0xDI/vetcopilot/blob/master/README.md",
+      "snippet": "AI-powered veterinary practice management — Next.js, Supabase, GPT-4o Vision - vetcopilot/README.md at master · 0xDI/vetcopilot"
+    },
+    {
+      "title": "Microsoft 365 Copilot APIs Overview | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/copilot-apis-overview",
+      "snippet": "Use the Copilot APIs to securely access Microsoft 365 Copilot capabilities in your own applications and custom engine agents, while aligning with the compliance standards built in to Microsoft 365."
+    },
+    {
+      "title": "Supported AI models in GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "snippet": "For all of the default AI models, input prompts and output completions run through GitHub Copilot&#x27;s content filters for harmful, offensive, or off-topic content, and for public code matching when enabled. Supported AI models in Copilot This table lists the AI models available in Copilot, along with their release status."
+    }
+  ]
+}

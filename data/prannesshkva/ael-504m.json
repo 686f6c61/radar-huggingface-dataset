@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Prannesshkva/Ael-504M",
+  "slug": "prannesshkva-ael-504m",
+  "author": "Prannesshkva",
+  "url": "https://huggingface.co/Prannesshkva/Ael-504M",
+  "created_at": "2026-08-22T06:53:50.000Z",
+  "updated_at": "2026-08-22T11:02:21.000Z",
+  "license": "bsl-1.1",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ael",
+    "text-generation",
+    "mamba2",
+    "state-space-models",
+    "moe",
+    "multimodal",
+    "edge-ai",
+    "any-to-any",
+    "pytorch",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 504429976,
+  "parameters_human": "504.4M",
+  "storage_bytes": 1008935240,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prannesshkva (Prannessh KVA) - Hugging Face",
+      "url": "https://huggingface.co/Prannesshkva",
+      "snippet": "User profile of Prannessh KVA on Hugging Face"
+    },
+    {
+      "title": "A-E 504 M - INDUSTRIAL VENTILATION AXIAL FANS Vortice",
+      "url": "https://www.vortice.com/en/industrial-ventilation/axial-fans/wall/42316",
+      "snippet": "Were you looking for INDUSTRIAL VENTILATION AXIAL FANS ? Discover A-E 504 M Vortice. Enter site."
+    },
+    {
+      "title": "Prannessh KVA prannesshkva - GitHub",
+      "url": "https://github.com/prannesshkva",
+      "snippet": "Highly driven AI and Software Engineering student with proven expertise bridging Data Science, Backend Infrastructure, and Distributed Systems. - prannesshkva"
+    },
+    {
+      "title": "Prannessh KVA | Ongoing Built",
+      "url": "https://prannesshkva.vercel.app/ongoing.html",
+      "snippet": "A full local-first AI workspace designed for thinking, studying, and building. It features Local + Online LLMs, multiple RAG architectures (CAG + FAISS, Vector, Vectorless), adaptive intelligence modes, and a seamless Qt-based desktop UI with complete data ownership."
+    },
+    {
+      "title": "Prannessh KVA — Data Engineering & Backend Systems",
+      "url": "https://prannesshkva.vercel.app/",
+      "snippet": "State-Aware Graph-Based AI Backend — integrating as a deployable Model Control Plane with Quantistic for adaptive data intelligence and decision-making."
+    }
+  ]
+}

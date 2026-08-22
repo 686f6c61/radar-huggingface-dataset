@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "rachitpandey26/qwen2.5-vl-3b-idp",
+  "slug": "rachitpandey26-qwen2-5-vl-3b-idp",
+  "author": "rachitpandey26",
+  "url": "https://huggingface.co/rachitpandey26/qwen2.5-vl-3b-idp",
+  "created_at": "2026-07-24T14:10:54.000Z",
+  "updated_at": "2026-08-22T10:10:55.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "invoice-extraction",
+    "document-understanding",
+    "vision-language-model",
+    "qwen2.5-vl",
+    "full-fine-tuning",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 119,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520759840,
+  "storage_human": "7.5 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rachitpandey26/qwen2.5-vl-3b-idp · Hugging Face",
+      "url": "https://huggingface.co/rachitpandey26/qwen2.5-vl-3b-idp",
+      "snippet": "Full-parameter fine-tune of Qwen2.5-VL-3B-Instruct for Intelligent Document Processing (IDP) — structured invoice field extraction. Given a scanned invoice image, it returns a JSON object with fields like vendor, customer, invoice_date, total_amount, currency, and more."
+    },
+    {
+      "title": "MySelfShravan/qwen2.5-vl-3b-idp at main - Hugging Face",
+      "url": "https://huggingface.co/MySelfShravan/qwen2.5-vl-3b-idp/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - elsawhs/qwen2.5-vl: Qwen2.5-VL is the multimodal large ...",
+      "url": "https://github.com/elsawhs/qwen2.5-vl",
+      "snippet": "2025.02.20: we have released the Qwen2.5-VL Technical Report. Alongside the report, we have also released AWQ-quantized models for Qwen2.5-VL in three different sizes: 3B, 7B , and 72B parameters. 2025.01.28: We have released the Qwen2.5-VL series. For more details, please check our blog! 2024.12.25: We have released the QvQ-72B-Preview. QvQ-72B-Preview is an experimental research model ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "2025.02.20: we have released the Qwen2.5-VL Technical Report. Alongside the report, we have also released AWQ-quantized models for Qwen2.5-VL in three different sizes: 3B, 7B , and 72B parameters."
+    },
+    {
+      "title": "Qwen2.5 Vl 3B Idp by MySelfShravan - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/MySelfShravan%2Fqwen2.5-vl-3b-idp,5sXo6Gsr3vNSGZmET7Be8G",
+      "snippet": "Qwen2.5 Vl 3B Idp is an open-source 3b LLM by MySelfShravan. VRAM 7.5GB, 125K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

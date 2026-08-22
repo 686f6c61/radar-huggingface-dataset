@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JackySunUofT/S_RS_jd_100000",
+  "slug": "jackysunuoft-s_rs_jd_100000",
+  "author": "JackySunUofT",
+  "url": "https://huggingface.co/JackySunUofT/S_RS_jd_100000",
+  "created_at": "2026-08-22T09:46:32.000Z",
+  "updated_at": "2026-08-22T09:46:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:JackySunUofT/sim_two_lens_black_tube",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262796679,
+  "parameters_human": "262.8M",
+  "storage_bytes": 1051222228,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackySunUofT/S_RS_100000 · Hugging Face",
+      "url": "https://huggingface.co/JackySunUofT/S_RS_100000",
+      "snippet": "Model Card for diffusion Diffusion Policy treats visuomotor control as a generative diffusion process, producing smooth, multi-step action trajectories that excel at contact-rich manipulation. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "JackySunUofT (JINJIE SUN) - Hugging Face",
+      "url": "https://huggingface.co/JackySunUofT",
+      "snippet": "JackySunUofT/M4A2_rgb_seg_depth_aug_100000 Robotics • 0.3B•Updated 7 days ago• 57"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Jacky (@ai.models2025) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ai.models2025/",
+      "snippet": "63K Followers, 737 Following, 859 Posts - Jacky (@ai.models2025) on Instagram: \"🤖 Jacky - AI Creator and Digital Model 🛠️ Free Tools for AI Creators Tutorials • Prompts • Free Tools 👇 All links here\""
+    }
+  ]
+}

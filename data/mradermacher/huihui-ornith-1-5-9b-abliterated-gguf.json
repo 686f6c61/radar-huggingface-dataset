@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Huihui-Ornith-1.5-9B-abliterated-GGUF",
+  "slug": "mradermacher-huihui-ornith-1-5-9b-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Huihui-Ornith-1.5-9B-abliterated-GGUF",
+  "created_at": "2026-08-22T05:39:31.000Z",
+  "updated_at": "2026-08-22T06:39:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "en",
+    "base_model:huihui-ai/Huihui-Ornith-1.5-9B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Ornith-1.5-9B-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967485696,
+  "storage_human": "83.0 GB",
+  "base_model": "huihui-ai/Huihui-Ornith-1.5-9B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ornith-1.5-9B-uncensored-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.5-9B-uncensored-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-Ornith-1.5-9B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5-9B-GGUF: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ornith-1.5-9b-gguf-ornith-ai",
+      "snippet": "Overview Ornith-1.5-9B-GGUF is a 9-billion parameter dense language model built for code generation and agentic reasoning, maintained by ornith-ai. This is a quantized GGUF variant of the full-precision model, enabling deployment on consumer hardware while maintaining the reasoning capabilities of the original. The model extends Ornith-1.0 by implementing a self-improvement training approach ..."
+    },
+    {
+      "title": "How to Run Ornith 1.5 9B Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally",
+      "snippet": "Ornith 1.5 9B runs from 6 GB up, 4 GB text-only. Pick the Atomic Dynamic GGUF that fits your hardware, then run it locally with Atomic Chat or llama.cpp."
+    },
+    {
+      "title": "Ornith 1.5 9B: Local Test Results Expose a Benchmark Gap",
+      "url": "https://www.mindstudio.ai/blog/ornith-1-5-9b-local-test",
+      "snippet": "What is Ornith 1.5 9B and does it live up to its benchmarks? Ornith 1.5 9B is a dense, 9-billion-parameter language model built by ornith-ai, designed to run on a single GPU or even mobile hardware in quantized GGUF format. It&#x27;s the smallest member of the Ornith 1.5 family, which also includes a larger mixture-of-experts variant. On paper, the 9B model reports benchmark scores that rival or ..."
+    }
+  ]
+}

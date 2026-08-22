@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Itsjerrywang/paper_012925459_prompt_engineering",
+  "slug": "itsjerrywang-paper_012925459_prompt_engineering",
+  "author": "Itsjerrywang",
+  "url": "https://huggingface.co/Itsjerrywang/paper_012925459_prompt_engineering",
+  "created_at": "2026-08-22T07:22:07.000Z",
+  "updated_at": "2026-08-22T07:22:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "empirical-focused",
+    "highlight-bullet",
+    "intro-method-exp-related-conclusion",
+    "latex-acl",
+    "measured",
+    "numeric-nature",
+    "passive",
+    "prompt-engineering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "arXiv:2402.07927v2 [cs.AI] 16 Mar 2025",
+      "url": "https://arxiv.org/pdf/2402.07927",
+      "snippet": "Abstract Prompt engineering has emerged as an indispens-able technique for extending the capabilities of large language models (LLMs) and vision-language mod-els (VLMs). This approach leverages task-specific instructions, known as prompts, to enhance model efficacy without modifying the core model param-eters. Rather than updating the model parameters, prompts allow seamless integration of pre ..."
+    },
+    {
+      "title": "Large Language Models Are Human-Level Prompt Engineers",
+      "url": "https://arxiv.org/abs/2211.01910",
+      "snippet": "By conditioning on natural language instructions, large language models (LLMs) have displayed impressive capabilities as general-purpose computers. However, task performance depends significantly on the quality of the prompt used to steer the model, and most effective prompts have been handcrafted by humans. Inspired by classical program synthesis and the human approach to prompt engineering ..."
+    },
+    {
+      "title": "A longitudinal single-cell atlas of anti-tumour necrosis factor ...",
+      "url": "https://www.nature.com/articles/s41590-024-01994-8",
+      "snippet": "In this Resource, Buckley and colleagues profile patients with Crohn&#x27;s disease and ulcerative colitis before and after adalimumab therapy. Specific pretreatment differences in the epithelial and ..."
+    }
+  ]
+}

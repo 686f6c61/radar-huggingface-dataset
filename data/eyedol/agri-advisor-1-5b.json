@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "EYEDOL/agri-advisor-1.5b",
+  "slug": "eyedol-agri-advisor-1-5b",
+  "author": "EYEDOL",
+  "url": "https://huggingface.co/EYEDOL/agri-advisor-1.5b",
+  "created_at": "2026-08-22T11:07:50.000Z",
+  "updated_at": "2026-08-22T11:09:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "offline",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 2111097792,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adtc-2026-agri-advisor-qwen1.5b-persona - Hugging Face",
+      "url": "https://huggingface.co/iamsamuelk/adtc-2026-agri-advisor-qwen1.5b-persona",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Agri Advisor AI - Africa-first crop intelligence and action platform",
+      "url": "https://www.agri-advisor.ai/",
+      "snippet": "AI-powered crop support Detect crop problems early and respond with confidence Agri-Advisor AI helps farmers, cooperatives, agribusinesses, and agricultural support teams identify likely crop diseases from images, access practical recommendations, and make faster field decisions through an Africa-first, multilingual platform."
+    },
+    {
+      "title": "GitHub - Shubhu1243/agri-advisory: Crop Disease Detection and Crop ...",
+      "url": "https://github.com/Shubhu1243/agri-advisory",
+      "snippet": "Crop Disease Detection and Crop Yield Pridiction. Contribute to Shubhu1243/agri-advisory development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ruilibuaa/agri_advisory_AI: agri_advisory_AI is a locally ...",
+      "url": "https://github.com/ruilibuaa/agri_advisory_AI",
+      "snippet": "agri_advisory_AI is a locally executed, AI-powered farm advisory system built entirely in Python using Visual Studio Code. It uses a modular multi-agent framework to simulate expert agricultural decision-making without requiring internet or cloud infrastructure."
+    },
+    {
+      "title": "adtc-agri-sft-qwen2.5-1.5b-v2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/EYEDOL/adtc-agri-sft-qwen2.5-1.5b-v2",
+      "snippet": "Deploy adtc-agri-sft-qwen2.5-1.5b-v2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

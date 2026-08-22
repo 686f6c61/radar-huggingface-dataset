@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DavidBaloches/Mythic_Fantasy_Styles",
+  "slug": "davidbaloches-mythic_fantasy_styles",
+  "author": "DavidBaloches",
+  "url": "https://huggingface.co/DavidBaloches/Mythic_Fantasy_Styles",
+  "created_at": "2026-08-22T04:49:45.000Z",
+  "updated_at": "2026-08-22T04:49:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78310699,
+  "storage_human": "78 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DavidBaloches/Velvets_Mythic_Fantasy_Styles - friendli.ai",
+      "url": "https://friendli.ai/models/DavidBaloches/Velvets_Mythic_Fantasy_Styles",
+      "snippet": "Run DavidBaloches/Velvets_Mythic_Fantasy_Styles with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4 ..."
+    },
+    {
+      "title": "Velvet&#x27;s Mythic Fantasy Styles | Flux + Pony - PromptHero",
+      "url": "https://prompthero.com/ai-models/velvet-s-mythic-fantasy-styles-flux-pony-download/portrait-style",
+      "snippet": "Update Flux VersionThe new version has been trained to work on Flux models. From my testing Flux is amazing with sentence like prompts, and turns booru prompts"
+    },
+    {
+      "title": "Velvet&#x27;s Mythic Fantasy Styles | Flux + Pony + illustrious",
+      "url": "https://prompthero.com/ai-models/velvets-mythic-fantasy-styles--flux--pony--illustrious-599757-download/velvets-mythic-fantasy-styles--flux--pony--illustrious-anima",
+      "snippet": "3- Portrait Style: This style is made to create high quality portraits of fantasy characters, and most of the training data is made with semi realistic art style."
+    },
+    {
+      "title": "velvet-s-mythic-fantasy-styles-flux-pony-illustrious",
+      "url": "https://huggingface.co/Muapi/velvet-s-mythic-fantasy-styles-flux-pony-illustrious",
+      "snippet": "Velvet&#x27;s Mythic Fantasy Styles | Flux + Pony + illustrious Base model: Flux.1 D Trained words: D1gitalL1nes 🧠 Usage (Python) 🔑 Get your MUAPI key from muapi.ai/access-keys"
+    },
+    {
+      "title": "Velvet&#x27;s Mythic Fantasy Styles - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/tensorart/models/899337649574138343/versions/899337649574138343",
+      "snippet": "Download Velvet&#x27;s Mythic Fantasy Styles - LORA for Illustrious by 807474029677018979. Free AI model download from CivArchive."
+    }
+  ]
+}

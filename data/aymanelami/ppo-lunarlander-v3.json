@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Aymanelami/ppo-LunarLander-v3",
+  "slug": "aymanelami-ppo-lunarlander-v3",
+  "author": "Aymanelami",
+  "url": "https://huggingface.co/Aymanelami/ppo-LunarLander-v3",
+  "created_at": "2026-08-22T10:14:45.000Z",
+  "updated_at": "2026-08-22T10:17:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 440116,
+  "storage_human": "440116 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aathi07/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/Aathi07/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v3 This is a trained model of a PPO agent playing LunarLander-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "AminVilan/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/AminVilan/ppo-LunarLander-v3",
+      "snippet": "🚀 PPO Agent playing for LunarLander-v3 The Github repository contains a trained Proximal Policy Optimization (PPO) agent for the classic control task LunarLander-v3 from Gymnasium. The model is implemented and trained using the Stable-Baselines3 library."
+    },
+    {
+      "title": "ppo-LunarLander-v3 huggingface.co api & cjksofm ppo-LunarLander-v3 ...",
+      "url": "https://www.toolify.ai/ai-model/cjksofm-ppo-lunarlander-v3",
+      "snippet": "ppo-LunarLander-v3 is an open source model from GitHub that offers a free installation service, and any user can find ppo-LunarLander-v3 on GitHub to install. At the same time, huggingface.co provides the effect of ppo-LunarLander-v3 install, users can directly use ppo-LunarLander-v3 installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "GitHub - Nishank-Goyal/ppo-LunarLander-v3",
+      "url": "https://github.com/Nishank-Goyal/ppo-LunarLander-v3",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library."
+    },
+    {
+      "title": "GitHub - jaredlcs/lunarlander-ppo",
+      "url": "https://github.com/jaredlcs/lunarlander-ppo",
+      "snippet": "This project trains an AI agent to land a lunar module safely using PPO (Proximal Policy Optimization), a state-of-the-art reinforcement learning algorithm. The agent learns by trial and error, controlling thrusters to achieve soft landings."
+    }
+  ]
+}

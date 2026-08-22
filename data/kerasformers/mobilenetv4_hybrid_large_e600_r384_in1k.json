@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kerasformers/mobilenetv4_hybrid_large_e600_r384_in1k",
+  "slug": "kerasformers-mobilenetv4_hybrid_large_e600_r384_in1k",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/mobilenetv4_hybrid_large_e600_r384_in1k",
+  "created_at": "2026-08-22T07:18:25.000Z",
+  "updated_at": "2026-08-22T07:19:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "image-classification",
+    "mobilenetv4",
+    "backbone",
+    "arxiv:2404.10518",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:timm/mobilenetv4_hybrid_large.e600_r384_in1k",
+    "base_model:finetune:timm/mobilenetv4_hybrid_large.e600_r384_in1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152834864,
+  "storage_human": "153 MB",
+  "base_model": "timm/mobilenetv4_hybrid_large.e600_r384_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "timm/mobilenetv4_hybrid_large.e600_r384_in1k · Hugging Face",
+      "url": "https://huggingface.co/timm/mobilenetv4_hybrid_large.e600_r384_in1k",
+      "snippet": "Model card for mobilenetv4_hybrid_large.e600_r384_in1k A MobileNet-V4 image classification model. Trained on ImageNet-1k by Ross Wightman. Trained with timm scripts using hyper-parameters inspired by the MobileNet-V4 paper with timm enhancements. NOTE: So far, these are the only known MNV4 weights. Official weights for Tensorflow models are ..."
+    },
+    {
+      "title": "mobilenetv4_hybrid_large.ix_e600_r384_in1k - Hugging Face",
+      "url": "https://huggingface.co/timm/mobilenetv4_hybrid_large.ix_e600_r384_in1k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mobilenetv4_hybrid_large.ix_e600_r384_in1k · Models",
+      "url": "https://www.modelscope.cn/models/timm/mobilenetv4_hybrid_large.ix_e600_r384_in1k",
+      "snippet": "Model card for mobilenetv4_hybrid_large.ix_e600_r384_in1k A MobileNet-V4 image classification model. Trained on ImageNet-1k by Ross Wightman. Trained with timm scripts using hyper-parameters inspired by the MobileNet-V4 paper with timm enhancements. NOTE: So far, these are the only known MNV4 weights."
+    },
+    {
+      "title": "MobileNetV4: Universal Models for the Mobile Ecosystem",
+      "url": "https://arxiv.org/pdf/2404.10518v2",
+      "snippet": "In the following, we detail our refined NAS recipe for UIB model search, outline specific search configurations for various MNv4-Conv model sizes, and explain the construction of hybrid models."
+    },
+    {
+      "title": "MobileNetV4 -- Universal Models for the Mobile Ecosystem",
+      "url": "https://arxiv.org/abs/2404.10518",
+      "snippet": "We present the latest generation of MobileNets, known as MobileNetV4 (MNv4), featuring universally efficient architecture designs for mobile devices. At its core, we introduce the Universal Inverted Bottleneck (UIB) search block, a unified and flexible structure that merges Inverted Bottleneck (IB), ConvNext, Feed Forward Network (FFN), and a novel Extra Depthwise (ExtraDW) variant. Alongside ..."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "JackAgentLead/Jack-3.8-27B-Coder-16GB-VRAM",
+  "slug": "jackagentlead-jack-3-8-27b-coder-16gb-vram",
+  "author": "JackAgentLead",
+  "url": "https://huggingface.co/JackAgentLead/Jack-3.8-27B-Coder-16GB-VRAM",
+  "created_at": "2026-08-22T06:34:54.000Z",
+  "updated_at": "2026-08-22T06:36:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "27b",
+    "jack",
+    "jack-xml",
+    "agentic",
+    "coding",
+    "coder",
+    "long-context",
+    "long-agentic",
+    "multi-turn",
+    "tool-calling",
+    "reasoning",
+    "16gb-vram",
+    "lm-studio",
+    "state-management",
+    "operative-recall",
+    "counterfactual-reasoning",
+    "deterministic-tools",
+    "global-workspace",
+    "text-generation",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 12599341392,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackAgentLead/Jack-Long-Agentic-27b-Prism-8GB-VRAM · Hugging Face",
+      "url": "https://huggingface.co/JackAgentLead/Jack-Long-Agentic-27b-Prism-8GB-VRAM",
+      "snippet": "Core Engine: Same Qwen3.6-27B base model, same Jack cognitive architecture. Quantization Advance: New Prism ML quantization (1-bit / ternary research) preserves full context slot and agentic state retention where standard 4-bit 8GB builds collapse."
+    },
+    {
+      "title": "JackAgentLead (Jackv0.5BETA) - Hugging Face",
+      "url": "https://huggingface.co/JackAgentLead",
+      "snippet": "User profile of Jackv0.5BETA on Hugging Face"
+    },
+    {
+      "title": "Qwen3.8-27B: The Ultimate Guide to Running It Locally",
+      "url": "https://linas.substack.com/p/qwen3-8-27b-local-guide",
+      "snippet": "The Ultimate Guide to Qwen3.8-27B 🤖 How to run Alibaba&#x27;s 27B open AI model locally: a step-by-step guide to the settings, hardware requirements, & prompts that deliver frontier AI results for founders, builders, and investors."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    },
+    {
+      "title": "We Tested Qwen3.8 27B: How Much GPU and VRAM Do You Really Need?",
+      "url": "https://www.hardware-corner.net/qwen3-8-27b-hardware-tests/",
+      "snippet": "The benchmark data below is labeled as Qwen3.8 27B because that is the model we tested. What Qwen3.8 27B Requires The Q4_K Small build used in our tests is 16.68 GiB and contains 27.32 billion parameters. That makes VRAM the first practical limit."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "atharvguptacit/paper_020791136_embodied_ai",
+  "slug": "atharvguptacit-paper_020791136_embodied_ai",
+  "author": "atharvguptacit",
+  "url": "https://huggingface.co/atharvguptacit/paper_020791136_embodied_ai",
+  "created_at": "2026-08-22T03:34:06.000Z",
+  "updated_at": "2026-08-22T03:34:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "detailed-descriptive",
+    "embodied-ai",
+    "endnote",
+    "intro-problem-solution-validation-future",
+    "latex-acl",
+    "medium-balanced",
+    "mixed-active-passive",
+    "neutral",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied AI Daily — Latest arXiv Papers",
+      "url": "https://luohongkun.top/Embodied-AI-Daily/index.html",
+      "snippet": "📄 Latest arXiv Papers VLN · VLA · SLAM · 3D · Embodied AI — auto-updated daily 👤 Hongkun Luo (罗宏昆) · 🎓 Academic Page · 🐙 GitHub ☕ 支持本项目 · Support this project"
+    },
+    {
+      "title": "GitHub - HCPLab-SYSU/Embodied_AI_Paper_List: [Embodied-AI-Survey-2025 ...",
+      "url": "https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List",
+      "snippet": "Then, we analyze four main research targets: 1) embodied perception, 2) embodied interaction, 3) embodied agent, and 4) sim-to-real adaptation, covering state-of-the-art methods, essential paradigms, and comprehensive datasets."
+    },
+    {
+      "title": "GitHub Pages - EmbodiedGPT",
+      "url": "https://embodiedgpt.github.io/",
+      "snippet": "Recently, there has been an increasing interest in developing large foundation models capable of generating embodied plans by processing natural language instructions and environmental observations. In this paper, we introduce EmbodiedGPT, a large-scale end-to-end multi-model foundation model for embodied AI."
+    },
+    {
+      "title": "Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/html/2509.20021v1",
+      "snippet": "Abstract Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems. Recent breakthroughs in Large Language Models (LLMs) and World Models (WMs) have drawn significant attention for embodied AI. On the one hand, LLMs ..."
+    },
+    {
+      "title": "PDF Embodied AI: From LLMs to World Models [Feature]",
+      "url": "http://mn.cs.tsinghua.edu.cn/xinwang/PDF/papers/2025_Embodied%20AI%20from%20LLMs%20to%20World%20Models.pdf",
+      "snippet": "On the other hand, WMs empower embodied AI by building internal representations and future predictions of the external world, fa-cilitating physical law-compliant embodied interactions. As such, this paper comprehensively explores the literature in embodied AI from basics to advances, covering both LLM driven and WM driven works."
+    }
+  ]
+}

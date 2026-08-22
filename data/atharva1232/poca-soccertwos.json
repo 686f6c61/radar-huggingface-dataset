@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Atharva1232/poca-SoccerTwos",
+  "slug": "atharva1232-poca-soccertwos",
+  "author": "Atharva1232",
+  "url": "https://huggingface.co/Atharva1232/poca-SoccerTwos",
+  "created_at": "2026-08-22T11:01:13.000Z",
+  "updated_at": "2026-08-22T11:01:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178110721,
+  "storage_human": "178 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thaslimshaik/ppo-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/thaslimshaik/ppo-SoccerTwos",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "akanametov/MLAgents-poca-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/akanametov/MLAgents-poca-SoccerTwos",
+      "snippet": "ML-Agents-SoccerTwos Model card Files Files and versions Metrics Training metrics Community Use this model Edit model card poca Agent playing SoccerTwos Usage (with ML-Agents) Resume the training Watch your Agent play"
+    },
+    {
+      "title": "poca-SoccerTwos Open-source Agent - Free Deployment for Enhanced ...",
+      "url": "https://model.aibase.com/models/details/1927650001010561024",
+      "snippet": "🚀 Poca Agent Playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library. It demonstrates the application of deep reinforcement learning in the SoccerTwos environment."
+    },
+    {
+      "title": "poca-SoccerTwos Open-Source Deep Reinforcement Learning Model ...",
+      "url": "https://model.aibase.com/models/details/1915692709983182850",
+      "snippet": "🚀 ML-Agents: Poca Agent Playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library, enabling deep reinforcement learning in the SoccerTwos environment."
+    },
+    {
+      "title": "GitHub - AnantVerma-58/SoccerTwos: A two player Soccer Team trained ...",
+      "url": "https://github.com/AnantVerma-58/SoccerTwos",
+      "snippet": "poca Agent playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Aether258/pi05_bi_task2_all_step12000",
+  "slug": "aether258-pi05_bi_task2_all_step12000",
+  "author": "Aether258",
+  "url": "https://huggingface.co/Aether258/pi05_bi_task2_all_step12000",
+  "created_at": "2026-08-22T08:06:44.000Z",
+  "updated_at": "2026-08-22T08:07:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "manipulation",
+    "pi0",
+    "tactile",
+    "bimanual",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9567240319,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aether258/pi05_bi_task2_all_step8000 · Hugging Face",
+      "url": "https://huggingface.co/Aether258/pi05_bi_task2_all_step8000",
+      "snippet": "pi05_bi — task2 (dish washing), step 8000 openpi pi05_bi checkpoint for a bimanual dish-and-sponge task with tactile inputs. Step 8000 (1.24 epochs), held-out validation loss 0.0535 — the lowest of the run through step 10000."
+    },
+    {
+      "title": "Aether258 (Aether_Zhang) - Hugging Face",
+      "url": "https://huggingface.co/Aether258/datasets",
+      "snippet": "User profile of Aether_Zhang on Hugging Face"
+    },
+    {
+      "title": "GitHub - mli0603/openpi-comet: Team Comet&#x27;s 2025 BEHAVIOR Challenge ...",
+      "url": "https://github.com/mli0603/openpi-comet",
+      "snippet": "Tip OpenPi Comet is the submission of Team Comet for the 2025 BEHAVIOR Challenge. This repository provides a unified framework for pre-training, post-training, data generation and evaluation of π0.5 (Pi05) models on BEHAVIOR-1K."
+    },
+    {
+      "title": "GitHub - Jjshi2000/ebim-task2-pi05-submission: EBiM Task 2 PI0.5 full ...",
+      "url": "https://github.com/Jjshi2000/ebim-task2-pi05-submission/tree/main/",
+      "snippet": "The model weights are supplementary material hosted separately in the public Hugging Face model repository junjie-jjs/ebim-task2-pi05-fullft-20k. This repository contains the complete container build recipe, policy runtime, ROS adapter, and integration guide."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

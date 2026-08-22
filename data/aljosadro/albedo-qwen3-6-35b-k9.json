@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "aljosadro/albedo-qwen3.6-35b-k9",
+  "slug": "aljosadro-albedo-qwen3-6-35b-k9",
+  "author": "aljosadro",
+  "url": "https://huggingface.co/aljosadro/albedo-qwen3.6-35b-k9",
+  "created_at": "2026-08-21T23:40:51.000Z",
+  "updated_at": "2026-08-22T11:01:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70227303926,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aljosadro/albedo-qwen3.6-35b-k9 · Hugging Face",
+      "url": "https://huggingface.co/aljosadro/albedo-qwen3.6-35b-k9",
+      "snippet": "aljosadro / albedo-qwen3.6-35b-k9 like 0 Safetensors qwen3_5_moe Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 35B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider ..."
+    },
+    {
+      "title": "Dendritex/albedo-qwen3.6-35b-ckpt100 · Hugging Face",
+      "url": "https://huggingface.co/Dendritex/albedo-qwen3.6-35b-ckpt100",
+      "snippet": "Dendritex / albedo-qwen3.6-35b-ckpt100 like 0 Image-Text-to-Text Transformers Safetensors qwen3_5_moe conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen 3.6: 35B vs 27B comparison - benchmark results",
+      "url": "https://zoliben.com/en/posts/2026-04-23-qwen-36-35b-vs-27b-benchmark-results/",
+      "snippet": "I finally summed up all the Qwen 3.6 model test results I gathered over the past few days. I compared two models in detail: the Qwen3.6-35B-A3B (MoE, hybrid attention/delta) and the Qwen3.6-27B (dense, hybrid attention/delta). I ran both with turbo3 KV cache compression on an RTX 4090 as a llama.cpp server. If I had to summarize briefly: the 35B-A3B is 3-4x faster in everything, but the 27B ..."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Qwen 3.6-35B-A3B: 73.4% SWE-bench With Only 3B Active Params — Runs on ...",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-35b-a3b-complete-guide/",
+      "snippet": "Qwen 3.6-35B-A3B is the most capable open-weight model you can run on consumer hardware right now. 73.4% on SWE-bench Verified with 3B active parameters is remarkable efficiency."
+    }
+  ]
+}

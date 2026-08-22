@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/github_fetch_huggingface_terminal_9141_zfe6lj_accounts",
+  "slug": "tianfuxinqu-github_fetch_huggingface_terminal_9141_zfe6lj_accounts",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/github_fetch_huggingface_terminal_9141_zfe6lj_accounts",
+  "created_at": "2026-08-07T08:54:34.000Z",
+  "updated_at": "2026-08-22T04:33:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us",
+    "key:customer-accounts"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face · GitHub",
+      "url": "https://github.com/huggingface",
+      "snippet": "The AI community building the future. Hugging Face has 467 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Downloading models · Hugging Face",
+      "url": "https://huggingface.co/docs/hub/models-downloading",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - gmpassos/huggingface_downloader: Download complete model ...",
+      "url": "https://github.com/gmpassos/huggingface_downloader",
+      "snippet": "huggingface_downloader is a native Dart utility for downloading complete model snapshots directly from Hugging Face Hub. It provides a lightweight implementation similar in spirit to Python&#x27;s huggingface_hub.snapshot_download (), allowing Dart applications, AI runtimes, and CLI tools to fetch Hugging Face repositories without external Python ..."
+    },
+    {
+      "title": "CLI-Tool for download Huggingface models and datasets with aria2/wget ...",
+      "url": "https://gist.github.com/padeoe/697678ab8e528b85a2a7bddafea1fa4f",
+      "snippet": "🤗Huggingface Model Downloader Note (2026-06-18) Add 📊 Download Progress, 🔁 integrity-aware resume (re-fetch missing or changed files), and fast, resumable listing for 📚 repos with massive file counts. (2025-01-08) Add feature for 🏷️ Tag (Revision) Selection, contributed by @Bamboo-D."
+    }
+  ]
+}

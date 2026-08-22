@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "stschneider/paper_011874740_zero_shot_transfer",
+  "slug": "stschneider-paper_011874740_zero_shot_transfer",
+  "author": "stschneider",
+  "url": "https://huggingface.co/stschneider/paper_011874740_zero_shot_transfer",
+  "created_at": "2026-08-22T08:10:38.000Z",
+  "updated_at": "2026-08-22T08:10:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "cautious",
+    "footnote",
+    "graphic-visual",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "markdown",
+    "short-punchy",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Zero-shot Knowledge Transfer via Adversarial Belief Matching",
+      "url": "https://proceedings.neurips.cc/paper/2019/file/fe663a72b27bdc613873fbbb512f6f67-Paper.pdf",
+      "snippet": "As such, we believe that a focus on zero-shot knowledge transfer is justified, and our paper makes the following contributions: 1) we propose a novel adversarial algorithm that distills a large teacher into a smaller student without any data or metadata, 2) we show its effectiveness on two common datasets, and 3) we define a measure of belief match between two networks in the vicinity of one ..."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    },
+    {
+      "title": "Zero-shot World Models Are Developmentally Efficient Learners",
+      "url": "https://arxiv.org/abs/2604.10333",
+      "snippet": "Children are both data-efficient and flexible cognitive systems, creating competence despite extremely limited training data, while generalizing to myriad untrained tasks -- a major challenge even for today&#x27;s best AI systems. Here we introduce a novel computational hypothesis for these abilities, the Zero-shot Visual World Model (ZWM)."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cz22edd/vlaselect_test",
+  "slug": "cz22edd-vlaselect_test",
+  "author": "cz22edd",
+  "url": "https://huggingface.co/cz22edd/vlaselect_test",
+  "created_at": "2026-08-22T09:08:43.000Z",
+  "updated_at": "2026-08-22T09:08:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Test AI Models: A Step-by-Step Framework - smartdev.com",
+      "url": "https://smartdev.com/ai-model-testing-guide/",
+      "snippet": "Struggling with AI reliability? This AI model testing guide gives you a 6-step framework, tools, metrics & a ready-to-use checklist."
+    },
+    {
+      "title": "AI Model Logical Question Testing Repository - GitHub",
+      "url": "https://github.com/thehsansaeed/Questions-for-AI-Model-Testing",
+      "snippet": "AI Model Logical Question Testing Repository Overview This repository contains a curated set of logical, mathematical, and reasoning-based questions designed to evaluate the accuracy and reasoning capabilities of AI language models (LLMs)."
+    },
+    {
+      "title": "GitHub - TexasInstruments/edgeai-modelzoo: Edge AI Model Zoo",
+      "url": "https://github.com/TexasInstruments/edgeai-modelzoo",
+      "snippet": "Model Selection Tool - Performance Visualization Edge AI Studio: Model Selection Tool - Understand the performance statistics such as FPS, Latency, Accuracy & DDR bandwidth of models in the Model Zoo. Find a model that best meets your performance and accuracy goals on TI Processor from TI Model Zoo."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

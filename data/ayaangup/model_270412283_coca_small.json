@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ayaangup/model_270412283_coca_small",
+  "slug": "ayaangup-model_270412283_coca_small",
+  "author": "ayaangup",
+  "url": "https://huggingface.co/ayaangup/model_270412283_coca_small",
+  "created_at": "2026-08-22T05:35:24.000Z",
+  "updated_at": "2026-08-22T05:35:31.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batchnorm",
+    "bilinear",
+    "coca",
+    "linear",
+    "linear-warmup",
+    "mish",
+    "multitask",
+    "novograd",
+    "small",
+    "trunc-normal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+    },
+    {
+      "title": "LocalModel.run | Run AI models in your browser, or check any device",
+      "url": "https://localmodel.run/",
+      "snippet": "Run Whisper, SmolLM2 and Kokoro live in your browser tab, no install: 54 browser models with download sizes measured to the byte. Underneath, the reference…"
+    },
+    {
+      "title": "Home · modelindex.dev",
+      "url": "http://modelindex.dev/",
+      "snippet": "Provenance and cryptographic hashes for public AI models across HuggingFace, ModelScope, CivitAI, and Ollama. Look up any file by hash, browse by org, and verify your downloads on modelindex.dev."
+    }
+  ]
+}

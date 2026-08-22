@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "id": "thusinh1969/BrighTO-Semantic-Social-Audio-Profiler-V1.5.SE",
+  "slug": "thusinh1969-brighto-semantic-social-audio-profiler-v1-5-se",
+  "author": "thusinh1969",
+  "url": "https://huggingface.co/thusinh1969/BrighTO-Semantic-Social-Audio-Profiler-V1.5.SE",
+  "created_at": "2026-02-18T20:01:27.000Z",
+  "updated_at": "2026-08-22T06:34:40.000Z",
+  "license": "commercial",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "es",
+    "hi",
+    "nl",
+    "it",
+    "pl",
+    "pt",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hattovoice_v3_prod",
+    "audio",
+    "voice-analysis",
+    "emotion-recognition",
+    "speech-profiling",
+    "paralinguistics",
+    "social-class-prediction",
+    "education-inference",
+    "regional-accent",
+    "call-center",
+    "explainable-ai",
+    "multimodal",
+    "real-time",
+    "banking",
+    "fraud-detection",
+    "on-premise",
+    "speaker-verification",
+    "audio-classification",
+    "en",
+    "vi",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "es",
+    "hi",
+    "nl",
+    "it",
+    "pl",
+    "pt",
+    "tr",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13201973563,
+  "storage_human": "13.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Voice Semantics & Social Profiling",
+      "dataset": "BrighTO Internal (11 languages)",
+      "metric": "Gender F1",
+      "value": 92.14
+    },
+    {
+      "task": "Voice Semantics & Social Profiling",
+      "dataset": "BrighTO Internal (11 languages)",
+      "metric": "Language F1",
+      "value": 94.3
+    },
+    {
+      "task": "Voice Semantics & Social Profiling",
+      "dataset": "BrighTO Internal (11 languages)",
+      "metric": "Emotion F1",
+      "value": 70.95
+    },
+    {
+      "task": "Voice Semantics & Social Profiling",
+      "dataset": "BrighTO Internal (11 languages)",
+      "metric": "Social Class F1",
+      "value": 87.82
+    },
+    {
+      "task": "Voice Semantics & Social Profiling",
+      "dataset": "BrighTO Internal (11 languages)",
+      "metric": "Education F1",
+      "value": 79.34
+    }
+  ],
+  "sources": [
+    {
+      "title": "README.md · thusinh1969/BrighTO-Semantic-Social-Audio-Profiler-V1.5.SE ...",
+      "url": "https://huggingface.co/thusinh1969/BrighTO-Semantic-Social-Audio-Profiler-V1.5.SE/blob/main/README.md?code=true",
+      "snippet": "/ BrighTO-Semantic-Social-Audio-Profiler-V1.5.SE like 1 Audio Classification Transformers Safetensors 14 languages hattovoice_v3_prod audio voice-analysis emotion-recognition speech-profiling paralinguistics social-class-prediction education-inference regional-accent call-center explainable-ai multimodal real-time banking fraud-detection on ..."
+    },
+    {
+      "title": "BrighTO-Semantic-Social-Audio-Profiler-V1.5.SE - Hugging Face",
+      "url": "https://huggingface.co/thusinh1969/BrighTO-Semantic-Social-Audio-Profiler-V1.5.SE",
+      "snippet": "🔍 Best use: Recommended Pipeline for Long Audio Segment: Extract multiple 4-25s clips from the conversation (you should use BrighTO Speaker Verification Model to split precisely between speakers) Analyze: Run SSAP independently on each segment Aggregate: Use a lightweight LLM to synthesize the final speaker profile This approach eliminates single-sample bias and captures emotional ..."
+    },
+    {
+      "title": "Brighto Audio Profiler Tiny Dpo V1.1 Prod - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/thusinh1969/brighto_audio_profiler_tiny_dpo_v1.1_prod",
+      "snippet": "Deep dive into Brighto Audio Profiler Tiny Dpo V1.1 Prod."
+    },
+    {
+      "title": "Brighto Audio Profiler V1.0 Prod - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/thusinh1969/brighto_audio_profiler_v1.0_prod",
+      "snippet": "Overview | Tổng quan BrighTO-Voice is a state-of-the-art voice analytics system developed by BrighTO Technology that transforms voice interactions into structured, actionable intelligence. Built on a hybrid architecture combining WavLM audio encoder and Qwen2.5 language model, it analyzes voice recordings to extract comprehensive speaker profiles in real-time with structured JSON output."
+    },
+    {
+      "title": "GitHub - thusinh1969/brightohir: brightohir · GitHub",
+      "url": "https://github.com/thusinh1969/brightohir",
+      "snippet": "brightohir is a pure-Python SDK for healthcare data interoperability. No Java. No .NET. No external services. It converts between HL7 V2.x (the pipe-delimited messages that run in 95% of hospitals worldwide) and FHIR R5 (the modern REST/JSON standard mandated by US ONC, EU EHDS, and increasingly by Vietnamese MOH). brightohir là SDK Python thuần cho tương tác dữ liệu y tế. Không ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hoborific/Qwen3.8-27B-W8A8-INT8",
+  "slug": "hoborific-qwen3-8-27b-w8a8-int8",
+  "author": "hoborific",
+  "url": "https://huggingface.co/hoborific/Qwen3.8-27B-W8A8-INT8",
+  "created_at": "2026-08-22T04:05:50.000Z",
+  "updated_at": "2026-08-22T04:15:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "quantized",
+    "w8a8",
+    "int8",
+    "conversational",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 36424827280,
+  "storage_human": "36.4 GB",
+  "base_model": "qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Qwen3.8-27B Review: The Open-Weight 27B Worth Running",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-review",
+      "snippet": "Qwen3.8-27B is the rare model where the open weights are the product and the API is the convenience. Because the license is Apache 2.0, the per-token price is permanently zero once you have the hardware, and nothing you build on it can be re-licensed or billed retroactively."
+    },
+    {
+      "title": "compute1/Qwen3.8-27B-W8A8-INT8 · Hugging Face",
+      "url": "https://huggingface.co/compute1/Qwen3.8-27B-W8A8-INT8",
+      "snippet": "Instructions to use compute1/Qwen3.8-27B-W8A8-INT8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use compute1/Qwen3.8-27B-W8A8-INT8 with Transformers:"
+    },
+    {
+      "title": "GitHub - DocPang/qwen38-w8a8-k100ai-dflash2-tp4: Qwen3.8-27B W8A8 ...",
+      "url": "https://github.com/DocPang/qwen38-w8a8-k100ai-dflash2-tp4",
+      "snippet": "Qwen3.8-27B W8A8 + DFlash2 在海光 K100AI 上的 TP4 优化与复现说明 ⚠️ 免责声明 / 风险提示 本项目是社区研究成果，不是海光、SourceFind、Qwen、SGLang 或 DFlash2 官方发行版。 部署会直接访问 GPU 设备，并依赖宿主机驱动、DTK、hyhal、PCIe/P2P 与 renderD* 设备映射。"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JackySunUofT/S_SD_jd_100000",
+  "slug": "jackysunuoft-s_sd_jd_100000",
+  "author": "JackySunUofT",
+  "url": "https://huggingface.co/JackySunUofT/S_SD_jd_100000",
+  "created_at": "2026-08-22T10:03:07.000Z",
+  "updated_at": "2026-08-22T10:03:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:JackySunUofT/sim_two_lens_black_tube",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262796679,
+  "parameters_human": "262.8M",
+  "storage_bytes": 1051222228,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackySunUofT/S_SD_100000 · Hugging Face",
+      "url": "https://huggingface.co/JackySunUofT/S_SD_100000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JackySunUofT/S_SD_100000 at main - Hugging Face",
+      "url": "https://huggingface.co/JackySunUofT/S_SD_100000/tree/main",
+      "snippet": "S_SD_100000 1.05 GB Ctrl+K Ctrl+K 1 contributor History:4 commits JackySunUofT Upload DataProcessorPipeline af3d7df verified6 days ago .gitattributes Safe 1.52 kBinitial commit6 days ago README.md 1.67 kBUpload policy weights, train config and readme6 days ago config.json 2.07 kBUpload policy weights, train config and readme6 days ago model ..."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new featuresNFL Sunday Ticket © 2026 Google LLC"
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

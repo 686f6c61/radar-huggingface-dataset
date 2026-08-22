@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ddduk/so101_act35_real_sim_v1",
+  "slug": "ddduk-so101_act35_real_sim_v1",
+  "author": "ddduk",
+  "url": "https://huggingface.co/ddduk/so101_act35_real_sim_v1",
+  "created_at": "2026-08-22T07:58:48.000Z",
+  "updated_at": "2026-08-22T07:59:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "so101",
+    "robotics",
+    "imitation-learning",
+    "mujoco",
+    "dataset:ddduk/so101_pick_place_unified_success_v3",
+    "dataset:ddduk/so101_pick_place_mujoco_expert_v2",
+    "dataset:ddduk/so101_pick_place_real_sim_heavy_v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34209862,
+  "parameters_human": "34.2M",
+  "storage_bytes": 160656803,
+  "storage_human": "161 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tuul-ai/so101_sim: Mujoco sim environment for imitation ...",
+      "url": "https://github.com/tuul-ai/so101_sim",
+      "snippet": "Mujoco sim environment for imitation learning and reinforcement learning with so101 and so100 robots. - tuul-ai/so101_sim"
+    },
+    {
+      "title": "Datasets and Models — Train an SO-101 Robot From Sim-to-Real With ...",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html",
+      "snippet": "Datasets and Models # Pre-collected datasets and pre-trained model checkpoints used in this course, hosted on Hugging Face. Datasets #"
+    },
+    {
+      "title": "GitHub - TheRobotStudio/SO-ARM100: Standard Open Arm 100",
+      "url": "https://github.com/TheRobotStudio/SO-ARM100",
+      "snippet": "Standard Open Arm 100. Contribute to TheRobotStudio/SO-ARM100 development by creating an account on GitHub."
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    },
+    {
+      "title": "SO-101 · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/so101",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

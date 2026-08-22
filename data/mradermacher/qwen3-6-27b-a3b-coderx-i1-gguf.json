@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.6-27B-A3B-CoderX-i1-GGUF",
+  "slug": "mradermacher-qwen3-6-27b-a3b-coderx-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-A3B-CoderX-i1-GGUF",
+  "created_at": "2026-08-22T07:46:12.000Z",
+  "updated_at": "2026-08-22T08:54:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "moe",
+    "expert-pruning",
+    "code",
+    "mtp",
+    "omnimergekit",
+    "en",
+    "base_model:ManniX-ITA/Qwen3.6-27B-A3B-CoderX",
+    "base_model:quantized:ManniX-ITA/Qwen3.6-27B-A3B-CoderX",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26213016704,
+  "parameters_human": "26.21B",
+  "storage_bytes": 36814857984,
+  "storage_human": "36.8 GB",
+  "base_model": "ManniX-ITA/Qwen3.6-27B-A3B-CoderX",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.6-27B-A3B-Coder-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-A3B-Coder-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.6-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Overview Huihui-Qwen3-Coder-30B-A3B-Instruct-abliterated-i1-GGUF is a quantized version of Huihui AI&#x27;s 30 billion parameter coding-focused language model, maintained by mradermacher."
+    },
+    {
+      "title": "Qwen3.6 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.6",
+      "snippet": "Qwen3.6 is Alibaba&#x27;s new family of multimodal hybrid-thinking models, including: Qwen3.6-27B and 35B-A3B. It delivers top performance for its size, supports 256K context across 201 languages. It excels in agentic coding, vision, chat tasks. Qwen3.6-27B runs on 18GB RAM setups and 35B-A3B runs on 22GB. You can now run and train the models in Unsloth Desktop."
+    }
+  ]
+}

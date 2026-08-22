@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Qwen3Guard-Gen-4B-imatrix-GGUF",
+  "slug": "liodon-ai-qwen3guard-gen-4b-imatrix-gguf",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Qwen3Guard-Gen-4B-imatrix-GGUF",
+  "created_at": "2026-08-22T10:01:16.000Z",
+  "updated_at": "2026-08-22T11:10:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "local-llm",
+    "llama.cpp",
+    "lm-studio",
+    "quantized",
+    "ollama",
+    "imatrix",
+    "sub-4-bit",
+    "qwen3",
+    "base_model:Qwen/Qwen3-4B",
+    "text-generation",
+    "base_model:Qwen/Qwen3Guard-Gen-4B",
+    "base_model:quantized:Qwen/Qwen3Guard-Gen-4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 20479512192,
+  "storage_human": "20.5 GB",
+  "base_model": "Qwen/Qwen3Guard-Gen-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3Guard: Qwen3Guard is a multilingual guardrail ...",
+      "url": "https://github.com/QwenLM/Qwen3Guard",
+      "snippet": "Qwen3Guard is a series of safety moderation models built upon Qwen3 and trained on a dataset of 1.19 million prompts and responses labeled for safety. The series includes models of three sizes (0.6B, 4B, and 8B) and features two specialized variants: Qwen3Guard-Gen, a generative model that accepts full user prompts and model responses to perform safety classification, and Qwen3Guard-Stream ..."
+    },
+    {
+      "title": "liodon-ai/qwen3-4b-heretic-imatrix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/qwen3-4b-heretic-imatrix-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "geoffmunn/Qwen3Guard-Gen-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/geoffmunn/Qwen3Guard-Gen-4B-GGUF",
+      "snippet": "This is a GGUF-quantized version of Qwen3Guard-Gen-4B, a safety-aligned generative model from Alibaba&#x27;s Qwen team. Unlike standard LLMs, this model is fine-tuned to refuse harmful requests by design, making it ideal for applications where content safety is critical."
+    },
+    {
+      "title": "ai_services/models/qwen3guard/README.md at main · AI-Guru/ai ... - GitHub",
+      "url": "https://github.com/AI-Guru/ai_services/blob/main/models/qwen3guard/README.md",
+      "snippet": "The Qwen3Guard-Stream models (0.6B, 4B, 8B) use the Qwen3ForGuardModel architecture which is not supported by vLLM v0.17.. Only the Gen models (standard Qwen3ForCausalLM) are deployable with vLLM at this time."
+    },
+    {
+      "title": "[2510.14276] Qwen3Guard Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2510.14276",
+      "snippet": "As large language models (LLMs) become more capable and widely used, ensuring the safety of their outputs is increasingly critical. Existing guardrail models, though useful in static evaluation settings, face two major limitations in real-world applications: (1) they typically output only binary \"safe/unsafe\" labels, which can be interpreted inconsistently across diverse safety policies ..."
+    }
+  ]
+}

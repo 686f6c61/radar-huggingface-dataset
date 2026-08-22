@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "maanka2/tijaabomoss",
+  "slug": "maanka2-tijaabomoss",
+  "author": "maanka2",
+  "url": "https://huggingface.co/maanka2/tijaabomoss",
+  "created_at": "2026-08-21T17:02:26.000Z",
+  "updated_at": "2026-08-22T10:23:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "moss_tts_nano",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 117311232,
+  "parameters_human": "117.3M",
+  "storage_bytes": 1408296185,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maanka2 (𝗺𝗮𝗮𝗻𝗸𝗮2) - Hugging Face",
+      "url": "https://huggingface.co/maanka2",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 23 hours ago ... updated a model 2 days ago"
+    },
+    {
+      "title": "maanka2 (𝗺𝗮𝗮𝗻𝗸𝗮) - Hugging Face",
+      "url": "https://huggingface.co/maanka2/models",
+      "snippet": "Organizations maanka2&#x27;s models8 Sort: Recently updated maanka2/silma-tts Text-to-Speech •Updated Jun 17• 4 • 1"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "AI Model Index",
+      "url": "https://www.modelindex.org/",
+      "snippet": "Search and explore AI models across providers, modalities, and capabilities. Currently supported providers: OpenAI, Google, Anthropic, Meta, and Mistral AI. See the Model Inclusion Policy for details on selection criteria."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jackwalker00/paper_002867465_cross_modal_fusion",
+  "slug": "jackwalker00-paper_002867465_cross_modal_fusion",
+  "author": "Jackwalker00",
+  "url": "https://huggingface.co/Jackwalker00/paper_002867465_cross_modal_fusion",
+  "created_at": "2026-08-22T07:20:09.000Z",
+  "updated_at": "2026-08-22T07:20:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "compact",
+    "cross-modal-fusion",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "markdown",
+    "measured",
+    "numeric-apa",
+    "short-punchy",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MultiSHAP: A Shapley-Based Framework for Explaining Cross-Modal ...",
+      "url": "https://arxiv.org/abs/2508.00576",
+      "snippet": "Multimodal AI models have achieved impressive performance in tasks that require integrating information from multiple modalities, such as vision and language. However, their \"black-box\" nature poses a major barrier to deployment in high-stakes applications where interpretability and trustworthiness are essential. How to explain cross-modal interactions in multimodal AI models remains a major ..."
+    },
+    {
+      "title": "A multi-modal diffusion model with dual-cross-attention for ... - Nature",
+      "url": "https://www.nature.com/articles/s41467-026-71744-x",
+      "snippet": "Researchers developed scDiffusion-X, a multimodal generative diffusion model that generates realistic single-cell multi-omics data, enables cross-modality prediction, and reveals gene regulatory ..."
+    },
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "This paper comprehensively reviews existing methods based on multi-modal fusion techniques and completes a detailed and in-depth analysis. According to the data fusion stage, multi-modal fusion has four primary methods: early fusion, deep fusion, late fusion, and hybrid fusion."
+    },
+    {
+      "title": "Awesome-Multimodal-Papers | A curated list of awesome Multimodal studies.",
+      "url": "https://friedrichor.github.io/Awesome-Multimodal-Papers/",
+      "snippet": "Contribution If you have published a high-quality paper or come across one that you think is valuable, feel free to contribute! To submit a paper, please open an issue and include the following information in the specified format: Submission Format ... Awesome-Multimodal-Papers Foundation Model (Textual and Multimodal) Visual Understanding Omni ..."
+    },
+    {
+      "title": "Cross-Modal Representation Learning | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-99-1600-9_7",
+      "snippet": "Cross-modal representation learning is an essential part of representation learning, which aims to learn semantic representations for different modalities including text, audio, image and video, etc., and their connections. In this chapter, we introduce the development of cross-modal representation learning from shallow to deep, and from respective to unified in terms of model architectures ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kerasformers/mobilenetv4_conv_small_e2400_r224_in1k",
+  "slug": "kerasformers-mobilenetv4_conv_small_e2400_r224_in1k",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/mobilenetv4_conv_small_e2400_r224_in1k",
+  "created_at": "2026-08-22T07:17:03.000Z",
+  "updated_at": "2026-08-22T07:17:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "image-classification",
+    "mobilenetv4",
+    "backbone",
+    "arxiv:2404.10518",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:timm/mobilenetv4_conv_small.e2400_r224_in1k",
+    "base_model:finetune:timm/mobilenetv4_conv_small.e2400_r224_in1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15577936,
+  "storage_human": "16 MB",
+  "base_model": "timm/mobilenetv4_conv_small.e2400_r224_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "timm/mobilenetv4_conv_small.e2400_r224_in1k · Hugging Face",
+      "url": "https://huggingface.co/timm/mobilenetv4_conv_small.e2400_r224_in1k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mobilenetv4_conv_small.e2400_r224_in1k - Hugging Face",
+      "url": "https://huggingface.co/onnx-community/mobilenetv4_conv_small.e2400_r224_in1k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mobilenetv4_conv_small.e2400_r224_in1k | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/mobilenetv4convsmalle2400r224in1k/",
+      "snippet": "What is mobilenetv4_conv_small.e2400_r224_in1k? This is a compact variant of the MobileNetV4 architecture, specifically designed for mobile and edge computing applications. Trained by Ross Wightman using the timm framework, it represents a balance between model size and performance, achieving 74.6% top-1 accuracy on ImageNet-1k while maintaining a lightweight footprint of only 3.8M parameters ..."
+    },
+    {
+      "title": "mobilenetv4.pytorch/mobilenetv4.py at main · d-li14 ... - GitHub",
+      "url": "https://github.com/d-li14/mobilenetv4.pytorch/blob/main/mobilenetv4.py",
+      "snippet": "PyTorch implementation of MobileNetV4 family. Contribute to d-li14/mobilenetv4.pytorch development by creating an account on GitHub."
+    },
+    {
+      "title": "timm/mobilenetv4_conv_small.e2400_r224_in1k - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/timm-mobilenetv4-conv-small-e2400-r224-in1k",
+      "snippet": "Model card for mobilenetv4_conv_small.e2400_r224_in1k A MobileNet-V4 image classification model. Trained on ImageNet-1k by Ross Wightman. Trained with timm scripts using hyper-parameters inspired by the MobileNet-V4 paper with timm enhancements. NOTE: So far, these are the only known MNV4 weights. Official weights for Tensorflow models are ..."
+    }
+  ]
+}

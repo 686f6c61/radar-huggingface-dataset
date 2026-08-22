@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Evados/DiffSynth-Studio-Lora-Wan2.1-ComfyUI",
+  "slug": "evados-diffsynth-studio-lora-wan2-1-comfyui",
+  "author": "Evados",
+  "url": "https://huggingface.co/Evados/DiffSynth-Studio-Lora-Wan2.1-ComfyUI",
+  "created_at": "2025-03-28T19:44:38.000Z",
+  "updated_at": "2026-08-22T06:00:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 78,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167013346694,
+  "storage_human": "167.0 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Evados/DiffSynth-Studio-Lora-Wan2.1-ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/Evados/DiffSynth-Studio-Lora-Wan2.1-ComfyUI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DiffSynth-Studio-Lora-Wan2.1-ComfyUI - Hugging Face",
+      "url": "https://huggingface.co/Evados/DiffSynth-Studio-Lora-Wan2.1-ComfyUI/blob/main/Wan2.1-1.3b-lora-aesthetics-v1_new.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DiffSynth-Studio-Lora-Wan2.1-ComfyUI: Image-to-Video model — overview ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/diffsynth-studio-lora-wan2.1-comfyui-evados",
+      "snippet": "Overview DiffSynth-Studio-Lora-Wan2.1-ComfyUI is a collection of modified LoRA models and custom nodes built by Evados for the Wan 2.1 1.3B base model, enabling image-to-video and text-to-video generation within ComfyUI. The package includes boosted versions of Wan 2.1 models alongside specialized LoRAs for aesthetics, speed control, and high-resolution enhancement, plus a custom node that ..."
+    },
+    {
+      "title": "DiffSynth-Studio-Lora-Wan2.1-ComfyUI · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/DiffSynth-Studio-Lora-Wan2.1-ComfyUI/summary",
+      "snippet": "Wan2.1-1.3b-lora-aesthetics-v1: Model Overview This LoRA model is trained based on the Wan2.1-1.3B model using the DiffSynth-Studio framework. It has been finely tuned on an aesthetics-focused dataset, enhancing the visual appeal of generated videos. Additionally, the classifier-free guidance can be disabled to speed up the process. Recommended Settings cfg_scale = 1 sigma_shift = 10 Note ..."
+    },
+    {
+      "title": "DiffSynth-Studio-Lora-Wan2.1-ComfyUI vs Wan_2.1_ComfyUI_repackaged ...",
+      "url": "https://www.aimodels.fyi/models/compare/diffsynth-studio-lora-wan2.1-comfyui-evados-vs-wan-2.1-comfyui-repackaged-comfy-org",
+      "snippet": "Overview DiffSynth-Studio-Lora-Wan2.1-ComfyUI is a collection of modified LoRA models and custom nodes built by Evados for the Wan 2.1 1.3B base model, enabling image-to-video and text-to-video generation within ComfyUI. The package includes boosted versions of Wan 2.1 models alongside specialized LoRAs for aesthetics, speed control, and high-resolution enhancement, plus a custom node that ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Mich43lwfqo/paper_011507353_zero_shot_transfer",
+  "slug": "mich43lwfqo-paper_011507353_zero_shot_transfer",
+  "author": "Mich43lwfqo",
+  "url": "https://huggingface.co/Mich43lwfqo/paper_011507353_zero_shot_transfer",
+  "created_at": "2026-08-22T06:05:48.000Z",
+  "updated_at": "2026-08-22T06:05:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "argumentative",
+    "author-year",
+    "cautious",
+    "highlight-bullet",
+    "intro-background-approach-eval-conclusion",
+    "latex-icml",
+    "varied-mixed",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZeroG: Investigating Cross-dataset Zero-shot Transferability in Graphs",
+      "url": "https://arxiv.org/pdf/2402.11235",
+      "snippet": "We further adopt a lightweight fine-tuning strategy that reduces the risk of overfitting and maintains the zero-shot learning efficacy of the language model. The results underscore the effectiveness of our model in achieving significant cross-dataset zero-shot transferabil-ity, opening pathways for the development of graph foundation models1."
+    },
+    {
+      "title": "[2402.11235] ZeroG: Investigating Cross-dataset Zero-shot ...",
+      "url": "https://arxiv.org/abs/2402.11235",
+      "snippet": "We further adopt a lightweight fine-tuning strategy that reduces the risk of overfitting and maintains the zero-shot learning efficacy of the language model. The results underscore the effectiveness of our model in achieving significant cross-dataset zero-shot transferability, opening pathways for the development of graph foundation models."
+    },
+    {
+      "title": "GitHub - NineAbyss/ZeroG: The official implement of SIGKDD&#x27;24 paper ...",
+      "url": "https://github.com/NineAbyss/ZeroG",
+      "snippet": "This is the official implementation of the following paper: ZeroG: Investigating Cross-dataset Zero-shot Transferability in Graphs [Paper] Yuhan Li, Peisong Wang, Zhixun Li, Jeffrey Xu Yu, Jia Li The framework of ZeroG."
+    },
+    {
+      "title": "Visual Language Pretrained Multiple Instance Zero-Shot Transfer for ...",
+      "url": "https://tsuji.tech/mi-zero-arxiv2023/",
+      "snippet": "Introduction: The paper presents MI-Zero, a framework for zero-shot transfer in histopathology images using contrastive visual language pretraining."
+    },
+    {
+      "title": "GitHub - mahmoodlab/MI-Zero: Visual Language Pretrained Multiple ...",
+      "url": "https://github.com/mahmoodlab/MI-Zero",
+      "snippet": "Visual Language Pretrained Multiple Instance Zero-Shot Transfer for Histopathology Images. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 19764-19775)."
+    }
+  ]
+}

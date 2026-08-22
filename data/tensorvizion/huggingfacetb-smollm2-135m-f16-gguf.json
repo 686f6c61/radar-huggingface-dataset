@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "TensorVizion/HuggingFaceTB-SmolLM2-135M-f16-GGUF",
+  "slug": "tensorvizion-huggingfacetb-smollm2-135m-f16-gguf",
+  "author": "TensorVizion",
+  "url": "https://huggingface.co/TensorVizion/HuggingFaceTB-SmolLM2-135M-f16-GGUF",
+  "created_at": "2026-08-22T08:18:54.000Z",
+  "updated_at": "2026-08-22T08:18:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "en",
+    "arxiv:2502.02737",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 270885408,
+  "storage_human": "271 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction following, knowledge, reasoning. The 135M model was trained on 2 trillion tokens using a diverse dataset combination: FineWeb-Edu, DCLM, The Stack, along with new filtered datasets we curated and will release soon."
+    },
+    {
+      "title": "SmolLM2 - a HuggingFaceTB Collection",
+      "url": "https://huggingface.co/collections/HuggingFaceTB/smollm2",
+      "snippet": "State-of-the-art compact LLMs for on-device applications: 1.7B, 360M, 135M"
+    },
+    {
+      "title": "SmolLM2-135M · Models",
+      "url": "https://www.modelscope.cn/models/HuggingFaceTB/SmolLM2-135M",
+      "snippet": "SmolLM2 Table of Contents Model Summary Limitations Training License Citation Model Summary SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction ..."
+    },
+    {
+      "title": "SmolLM 135M Instruct by HuggingFaceTB — VRAM 0.3GB, 2K context | LLM ...",
+      "url": "https://llm-explorer.com/model/HuggingFaceTB%2FSmolLM-135M-Instruct,3BuNGYruFZG72MSozS8SJl",
+      "snippet": "SmolLM 135M Instruct is an open-source 135m LLM by HuggingFaceTB. VRAM 0.3GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "QuantFactory/SmolLM2-135M-GGUF - Models",
+      "url": "https://www.modelscope.cn/models/QuantFactory/SmolLM2-135M-GGUF",
+      "snippet": "Model Summary SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. SmolLM2 demonstrates significant advances over its predecessor SmolLM1, particularly in instruction following, knowledge, reasoning."
+    }
+  ]
+}

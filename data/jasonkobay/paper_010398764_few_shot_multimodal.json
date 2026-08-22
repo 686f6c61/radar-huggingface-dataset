@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jasonkobay/paper_010398764_few_shot_multimodal",
+  "slug": "jasonkobay-paper_010398764_few_shot_multimodal",
+  "author": "jasonkobay",
+  "url": "https://huggingface.co/jasonkobay/paper_010398764_few_shot_multimodal",
+  "created_at": "2026-08-22T04:36:34.000Z",
+  "updated_at": "2026-08-22T04:36:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "concise-analytical",
+    "few-shot-multimodal",
+    "intro-background-approach-eval-conclusion",
+    "latex-icml",
+    "mixed-active-passive",
+    "neutral",
+    "numeric-apa",
+    "structured-imrad",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/html/2511.01140v1",
+      "snippet": "Furthermore, few studies have examined how interactions among modalities influence learnability and generalization. Establishing a rigorous information-theoretic foundation for multimodal learning is therefore essential to guide model design and interpretation in medical applications."
+    },
+    {
+      "title": "[2005.14165] Language Models are Few-Shot Learners - arXiv.org",
+      "url": "https://arxiv.org/abs/2005.14165",
+      "snippet": "Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting."
+    },
+    {
+      "title": "Language models are few-shot learners - OpenAI",
+      "url": "https://openai.com/index/language-models-are-few-shot-learners/",
+      "snippet": "Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches."
+    },
+    {
+      "title": "Language Models are Few-Shot Learners — Interactive Guide",
+      "url": "https://papermap.vercel.app/paper/Language_Models_are_Few_Shot_Learners.html",
+      "snippet": "A product-grade interactive explainer of the GPT-3 paper Language Models are Few-Shot Learners, with visual demos for scaling, few-shot learning, architecture, and benchmarks."
+    },
+    {
+      "title": "Language Models are Few-Shot Learners (GPT-3) - CenterConsulting",
+      "url": "https://www.centerconsulting.com/ai-library/papers/language-models-are-few-shot-learners",
+      "snippet": "The paper&#x27;s central finding was in-context learning. Earlier models, including BERT and GPT-2, were adapted to a new task by fine-tuning - updating their weights on task-specific examples. GPT-3 often needed no weight updates at all. You could simply describe a task in plain language and show it a handful of examples inside the prompt - a \"few-shot\" demonstration - and the model would ..."
+    }
+  ]
+}

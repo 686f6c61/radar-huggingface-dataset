@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Aether258/pi05_bi_task2_all_step8000",
+  "slug": "aether258-pi05_bi_task2_all_step8000",
+  "author": "Aether258",
+  "url": "https://huggingface.co/Aether258/pi05_bi_task2_all_step8000",
+  "created_at": "2026-08-22T05:46:21.000Z",
+  "updated_at": "2026-08-22T05:46:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "manipulation",
+    "pi0",
+    "tactile",
+    "bimanual",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9559018184,
+  "storage_human": "9.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aether258/pi05_bi_two_tubes_0102_step16000 · Hugging Face",
+      "url": "https://huggingface.co/Aether258/pi05_bi_two_tubes_0102_step16000",
+      "snippet": "Instructions to use Aether258/pi05_bi_two_tubes_0102_step16000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Aether258 (Aether_Zhang) - Hugging Face",
+      "url": "https://huggingface.co/Aether258/activity/all",
+      "snippet": "Aether258/pi05_bi_vitac_byw_smash_13 Robotics •Updated May 25 published a modelabout 1 month ago"
+    },
+    {
+      "title": "GitHub - Jjshi2000/ebim-task2-pi05-submission: EBiM Task 2 PI0.5 full ...",
+      "url": "https://github.com/Jjshi2000/ebim-task2-pi05-submission/tree/main/",
+      "snippet": "The model weights are supplementary material hosted separately in the public Hugging Face model repository junjie-jjs/ebim-task2-pi05-fullft-20k. This repository contains the complete container build recipe, policy runtime, ROS adapter, and integration guide."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "GitHub - mli0603/openpi-comet: Team Comet&#x27;s 2025 BEHAVIOR Challenge ...",
+      "url": "https://github.com/mli0603/openpi-comet",
+      "snippet": "Tip OpenPi Comet is the submission of Team Comet for the 2025 BEHAVIOR Challenge. This repository provides a unified framework for pre-training, post-training, data generation and evaluation of π0.5 (Pi05) models on BEHAVIOR-1K."
+    }
+  ]
+}

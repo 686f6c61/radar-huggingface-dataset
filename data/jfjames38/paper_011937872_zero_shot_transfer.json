@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jfjames38/paper_011937872_zero_shot_transfer",
+  "slug": "jfjames38-paper_011937872_zero_shot_transfer",
+  "author": "jfjames38",
+  "url": "https://huggingface.co/jfjames38/paper_011937872_zero_shot_transfer",
+  "created_at": "2026-08-22T06:49:44.000Z",
+  "updated_at": "2026-08-22T06:49:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "first-person-plural",
+    "graphic-visual",
+    "html",
+    "intro-background-approach-eval-conclusion",
+    "long-detailed",
+    "narrative-progressive",
+    "numeric-bibtex",
+    "zero-shot-transfer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2402.11235] ZeroG: Investigating Cross-dataset Zero-shot ...",
+      "url": "https://arxiv.org/abs/2402.11235",
+      "snippet": "We further adopt a lightweight fine-tuning strategy that reduces the risk of overfitting and maintains the zero-shot learning efficacy of the language model. The results underscore the effectiveness of our model in achieving significant cross-dataset zero-shot transferability, opening pathways for the development of graph foundation models."
+    },
+    {
+      "title": "ZeroG: Investigating Cross-dataset Zero-shot Transferability in Graphs",
+      "url": "https://arxiv.org/pdf/2402.11235",
+      "snippet": "We further adopt a lightweight fine-tuning strategy that reduces the risk of overfitting and maintains the zero-shot learning efficacy of the language model. The results underscore the effectiveness of our model in achieving significant cross-dataset zero-shot transferabil-ity, opening pathways for the development of graph foundation models1."
+    },
+    {
+      "title": "GitHub - NineAbyss/ZeroG: The official implement of SIGKDD&#x27;24 paper ...",
+      "url": "https://github.com/NineAbyss/ZeroG",
+      "snippet": "This is the official implementation of the following paper: ZeroG: Investigating Cross-dataset Zero-shot Transferability in Graphs [Paper] Yuhan Li, Peisong Wang, Zhixun Li, Jeffrey Xu Yu, Jia Li The framework of ZeroG."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    }
+  ]
+}

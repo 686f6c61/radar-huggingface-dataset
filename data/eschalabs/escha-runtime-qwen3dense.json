@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "EschaLabs/escha-runtime-qwen3dense",
+  "slug": "eschalabs-escha-runtime-qwen3dense",
+  "author": "EschaLabs",
+  "url": "https://huggingface.co/EschaLabs/escha-runtime-qwen3dense",
+  "created_at": "2026-08-20T07:48:32.000Z",
+  "updated_at": "2026-08-21T08:44:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "quantization",
+    "cuda",
+    "inference",
+    "escha",
+    "qwen3",
+    "dense",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50255901,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EschaLabs/escha-runtime-qwen3dense · Hugging Face",
+      "url": "https://huggingface.co/EschaLabs/escha-runtime-qwen3dense",
+      "snippet": "The serving runtime for Escha 2-/3-bit (escha) quantized models of the qwen3_5 dense architecture (Qwen3.8-27B and siblings). One repo per model architecture, one directory per engine — this architecture currently has one engine, sglang/."
+    },
+    {
+      "title": "r3lax/escha-runtime-qwen3dense · Hugging Face",
+      "url": "https://huggingface.co/r3lax/escha-runtime-qwen3dense",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Escha Labs — The LLM Compression Company",
+      "url": "https://www.eschalabs.com/",
+      "snippet": "Escha Labs — extreme low-bit model compression. Qwen3.6-35B-A3B-Escha-W2 is a 35B-parameter model in 12.3 GB that holds 100.2% of its FP8 baseline&#x27;s mean across six capability benchmarks and decodes 225 tok/s on one RTX 4090."
+    },
+    {
+      "title": "Escha 2-Bit Qwen3.8-27B: A 27B Model in 10GB",
+      "url": "https://virtualuncle.com/escha-labs/",
+      "snippet": "The Hugging Face model page went up roughly three hours before this piece, published by an account called yzhwang, alongside a companion repo named escha-runtime-qwen3dense."
+    },
+    {
+      "title": "Escha Labs on X: \"Escha 2-bit Qwen3.8-27B is live! The full model is 10 ...",
+      "url": "https://x.com/Eschalabs/status/2090476070969720890",
+      "snippet": "Escha 2-bit Qwen3.8-27B is live! The full model is 10.15GB on disk, runs at 82.6 tok/s on a single RTX 5090 with our custom SGLang runtime, and averages ~100% of FP8 performance across 8 benchmarks we&#x27;ve run so far."
+    }
+  ]
+}

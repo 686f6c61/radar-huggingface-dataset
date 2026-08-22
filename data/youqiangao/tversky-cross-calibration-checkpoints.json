@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "youqiangao/tversky-cross-calibration-checkpoints",
+  "slug": "youqiangao-tversky-cross-calibration-checkpoints",
+  "author": "youqiangao",
+  "url": "https://huggingface.co/youqiangao/tversky-cross-calibration-checkpoints",
+  "created_at": "2026-08-22T02:30:10.000Z",
+  "updated_at": "2026-08-22T10:14:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-segmentation",
+    "tversky-index",
+    "dice",
+    "intersection-over-union",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3308265817,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "youqiangao/tversky-cross-calibration-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/youqiangao/tversky-cross-calibration-checkpoints",
+      "snippet": "Tversky Cross-Calibration Checkpoints These ten inference checkpoints accompany the real-data experiments in Cross-Calibration of Tversky Indices. Each model supplies one set of probability outputs on which the Dice and IoU optimizers are compared. The comparison concerns the equivalence of the two metric-specific decisions, not the absolute segmentation performance of the underlying network."
+    },
+    {
+      "title": "GitHub - youqiangao/tversky-cross-calibration",
+      "url": "https://github.com/youqiangao/tversky-cross-calibration",
+      "snippet": "This repository contains the public reproduction code for the simulation and semantic-segmentation experiments in Cross-Calibration of Tversky Indices. The authoritative settings are recorded in configs/paper.yaml."
+    },
+    {
+      "title": "tversky-cross-calibration/README.md at main · youqiangao ... - GitHub",
+      "url": "https://github.com/youqiangao/tversky-cross-calibration/blob/main/README.md",
+      "snippet": "Tversky Cross-Calibration Experiments This repository contains the public reproduction code for the simulation and semantic-segmentation experiments in Cross-Calibration of Tversky Indices. The authoritative settings are recorded in configs/paper.yaml."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=tversky-index",
+      "snippet": "youqiangao/tversky-cross-calibration-checkpoints Image Segmentation •Updated about 4 hours ago"
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    }
+  ]
+}

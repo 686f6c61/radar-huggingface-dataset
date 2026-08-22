@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "viz-7/Sage",
+  "slug": "viz-7-sage",
+  "author": "viz-7",
+  "url": "https://huggingface.co/viz-7/Sage",
+  "created_at": "2026-08-22T08:51:52.000Z",
+  "updated_at": "2026-08-22T08:50:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12633198,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viz.ai, the proven AI-powered care coordination platform",
+      "url": "https://www.viz.ai/",
+      "snippet": "Welcome to Viz.ai At Viz.ai, we harness the power of artificial intelligence (AI) to transform care coordination and improve patient outcomes. Our comprehensive platform features more than 50 FDA-cleared AI algorithms that analyze medical imaging data—including CT scans, EKGs, echocardiograms, and more—delivering real-time insights and automated assessments to accelerate diagnosis ..."
+    },
+    {
+      "title": "ThoughtSpot BI Agents: Spotter, Model, Viz & Code",
+      "url": "https://www.thoughtspot.com/product/agents",
+      "snippet": "Discover ThoughtSpot&#x27;s unified BI agents, augmenting every stage of the analytics workflow to accelerate insights and business impact."
+    },
+    {
+      "title": "PDF Automated Emergent Large Vessel Occlusion Detection Using Viz.ai ...",
+      "url": "https://link.springer.com/content/pdf/10.1007/s12975-025-01354-0.pdf",
+      "snippet": "The implementation of artificial intelligence (AI), particularly Viz.ai software in stroke care, has emerged as a promising tool to enhance the detection of large vessel occlusion (LVO) and to improve stroke workflow metrics and patient outcomes."
+    },
+    {
+      "title": "Viz Platform Data Sheets | Viz.ai",
+      "url": "https://www.viz.ai/data-sheets",
+      "snippet": "Download our data sheets to learn more about how Viz&#x27;s AI-powered technology is expediting patient diagnosis and treatments."
+    },
+    {
+      "title": "Automated Emergent Large Vessel Occlusion Detection Using Viz.ai ...",
+      "url": "https://www.researchgate.net/publication/391568241_Automated_Emergent_Large_Vessel_Occlusion_Detection_Using_Vizai_Software_and_Its_Impact_on_Stroke_Workflow_Metrics_and_Patient_Outcomes_in_Stroke_Centers_A_Systematic_Review_and_Meta-analysis",
+      "snippet": "The implementation of artificial intelligence (AI), particularly Viz.ai software in stroke care, has emerged as a promising tool to enhance the detection of large vessel occlusion (LVO) and to ..."
+    }
+  ]
+}

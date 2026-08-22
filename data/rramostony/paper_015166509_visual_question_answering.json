@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rramostony/paper_015166509_visual_question_answering",
+  "slug": "rramostony-paper_015166509_visual_question_answering",
+  "author": "rramostony",
+  "url": "https://huggingface.co/rramostony/paper_015166509_visual_question_answering",
+  "created_at": "2026-08-22T08:01:04.000Z",
+  "updated_at": "2026-08-22T08:01:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "endnote",
+    "graphic-visual",
+    "intro-problem-solution-validation-future",
+    "latex-acl",
+    "narrative-progressive",
+    "neutral",
+    "passive",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering: A Survey of Methods, Datasets, Evaluation ...",
+      "url": "https://dl.acm.org/doi/10.1145/3728635",
+      "snippet": "Visual Question Answering (VQA) is a growing research area within the broader multimodal AI field, integrating computer vision (CV) and natural language processing (NLP) to answer textual questions about images. In some cases, VQA incorporates external knowledge alongside images and questions to enrich the understanding and generation of answers."
+    },
+    {
+      "title": "Visual Question Answering - GitHub",
+      "url": "https://github.com/yousefkotp/Visual-Question-Answering",
+      "snippet": "Our Visual Question Answering (VQA) solution is implemented using a fixed vocabulary approach. This means that the model is not generative, but rather selects the answer from a pre-defined set of possible answers which is discussed in the Less is More research. This approach is more suitable for our use case, as it allows us to control the vocabulary and ensure that the model only outputs ..."
+    },
+    {
+      "title": "Visual Question Answering · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language."
+    },
+    {
+      "title": "Explainable visual question answering: A survey on methods, datasets ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1566253526000941",
+      "snippet": "Abstract In recent years, visual question answering has become a significant task at the intersection of computer vision and natural language processing, requiring models to jointly understand images and textual queries. It has emerged as a popular benchmark for evaluating multimodal understanding and reasoning."
+    },
+    {
+      "title": "arXiv:2501.03939v2 [cs.CV] 11 Jan 2025",
+      "url": "https://arxiv.org/pdf/2501.03939",
+      "snippet": "Keywords Visual Question Answering · Multi-modal Computing · Computer Vision · Natural Language Processing · Artificial Intelligence Application· Machine Learning · Deep Learning 1 Introduction Humans are capable of processing information from their surroundings through various sensory modalities, such as hearing, smelling, vision, and touch."
+    }
+  ]
+}

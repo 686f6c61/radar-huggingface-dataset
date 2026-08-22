@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "brittanygarcia/model_283034612_coca_large",
+  "slug": "brittanygarcia-model_283034612_coca_large",
+  "author": "brittanygarcia",
+  "url": "https://huggingface.co/brittanygarcia/model_283034612_coca_large",
+  "created_at": "2026-08-22T05:49:25.000Z",
+  "updated_at": "2026-08-22T05:49:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "coca",
+    "cosine",
+    "dilated",
+    "gated-fusion",
+    "gelu",
+    "large",
+    "multitask",
+    "scalenorm",
+    "trunc-normal",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail/u/0/",
+      "snippet": "We would like to show you a description here but the site won&#x27;t allow us."
+    },
+    {
+      "title": "z-ai/glm-5.3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/z-ai/glm-5.3-free",
+      "snippet": "GLM-5.3 is Zhipu AI&#x27;s next-generation flagship text model, built on GLM-5.2 and enhanced through large-scale, long-horizon task post-training. It delivers an approximately 50% improvement in coding experience, autonomously handling complex project development, debugging, validation, and delivery. It also supports a 1-million-token context window, up to 128K-token outputs, tool calling, and ..."
+    },
+    {
+      "title": "Brittany Garcia @ MAXIM Models",
+      "url": "https://models.maxim.com/t/TPH4BCVG",
+      "snippet": "Brittany Garcia 12 View iguesssgianna&#x27;s profile iguesssgianna 13 View Grace Grolnick&#x27;s profile Grace Grolnick 14 View Maegan&#x27;s profile Maegan 15 View Model eliminated&#x27;s profile Model eliminated Time Left in Round see all rounds 01 Days 10 Hours 16 Minutes 18 Seconds Top 15 see all rounds Vote forBrittany Garcia You have cast 0votes for Brittany ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    }
+  ]
+}

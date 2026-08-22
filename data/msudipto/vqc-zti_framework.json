@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "msudipto/VQC-ZTI_Framework",
+  "slug": "msudipto-vqc-zti_framework",
+  "author": "msudipto",
+  "url": "https://huggingface.co/msudipto/VQC-ZTI_Framework",
+  "created_at": "2026-08-22T04:13:32.000Z",
+  "updated_at": "2026-08-22T04:15:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "pennylane",
+    "quantum-machine-learning",
+    "quantum-neural-network",
+    "variational-quantum-classifier",
+    "hybrid-quantum-classical",
+    "anomaly-detection",
+    "network-anomaly-detection",
+    "cybersecurity",
+    "zero-trust",
+    "tactile-internet",
+    "network-security",
+    "encrypted-traffic",
+    "cesnet",
+    "arxiv:2608.18572",
+    "tabular-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "msudipto/VQC-ZTI_Framework - GitHub",
+      "url": "https://github.com/msudipto/VQC-ZTI_Framework",
+      "snippet": "This repository presents the full experimental and implementation workflow for VQC-ZTI, a variational quantum-classical zero-trust framework for anomaly detection, risk-adaptive access control, and secure evaluation of next-generation quantum tactile internet networks. The framework is designed to ..."
+    },
+    {
+      "title": "[2608.18572] VQC-ZTI: Variational Quantum Control for Zero Trust ...",
+      "url": "https://arxiv.org/abs/2608.18572",
+      "snippet": "Tactile Internet services couple cyber events directly to physical actuation, so security decisions must improve risk discrimination without perturbing the control path. This paper presents VQC-ZTI, a split-plane Variational Quantum Classifier framework for zero-trust protection of Tactile Internet services, in which an off-path VQC analyzes encrypted-flow telemetry while an on-path policy ..."
+    },
+    {
+      "title": "VQC-ZTI: Variational Quantum Control for Zero Trust Protection of the ...",
+      "url": "https://arxiv.org/pdf/2608.18572",
+      "snippet": "This paper presents VQC-ZTI, a split-plane Variational Quantum Classifier framework for zero-trust protection of Tactile Internet services, in which an off-path VQC analyzes encrypted-flow telemetry while an on-path policy engine applies cached deterministic grant, restrict, step-up, and deny actions."
+    },
+    {
+      "title": "Mubassir Serneabat Sudipto msudipto - GitHub",
+      "url": "https://github.com/msudipto",
+      "snippet": "msudipto/Q-RITA_Framework 10 commits msudipto/SmartPark 5 commits Created 1 repository msudipto/VQC-ZTI_Framework Python Apr 3 Show more activity"
+    },
+    {
+      "title": "VQC-ZTI Accepted at IEEE GLOBECOM 2026 - LinkedIn",
+      "url": "https://www.linkedin.com/posts/mubassir-sudipto_ieeeglobecom-quantumcomputing-quantumsecurity-activity-7489009102786822144-TrfO",
+      "snippet": "I am delighted to share that our paper, \"VQC-ZTI: Variational Quantum Control for Zero Trust Protection of Tactile Internet,\" has been accepted at IEEE GLOBECOM 2026, one of the flagship ..."
+    }
+  ]
+}

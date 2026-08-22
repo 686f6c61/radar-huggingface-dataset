@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SonexaAI/Sonexa-Music-v0.1-Beta",
+  "slug": "sonexaai-sonexa-music-v0-1-beta",
+  "author": "SonexaAI",
+  "url": "https://huggingface.co/SonexaAI/Sonexa-Music-v0.1-Beta",
+  "created_at": "2026-08-22T06:33:47.000Z",
+  "updated_at": "2026-08-22T06:33:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "minimax_music3",
+    "music-generation",
+    "text-to-music",
+    "pytorch",
+    "sglang-omni",
+    "text-to-audio",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2431905920,
+  "parameters_human": "2.43B",
+  "storage_bytes": 67213684876,
+  "storage_human": "67.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - devilyash10/Sonexa_music_app: this is a online offline music ...",
+      "url": "https://github.com/devilyash10/Sonexa_music_app",
+      "snippet": "Sonexa is a modern Android music streaming application developed to explore production-ready Android engineering using the latest Jetpack libraries and architectural best practices."
+    },
+    {
+      "title": "GitHub - truptisoniya7-lab/sonexa-: Sonexa is a next-generation social ...",
+      "url": "https://github.com/truptisoniya7-lab/sonexa-",
+      "snippet": "Sonexa is a next-generation social music platform that lets people discover, share, and experience music together through synchronized listening, real-time interactions, AI-powered recommendations, and vibrant music communities."
+    },
+    {
+      "title": "Sonexa AI",
+      "url": "https://sonexaai.tech/",
+      "snippet": "Sonexa AI — Voice AI that feels naturally human. Sub-100ms latency, 50+ languages, 100+ topics."
+    },
+    {
+      "title": "SONEXA MUSIC | Hear music the way it was meant to be.",
+      "url": "https://sonexamusic.github.io/",
+      "snippet": "HEAR MUSICTHE WAY IT WAS MEANT TO BE. Sonexa Music is a modern audio player built for pure listening — combining high-quality playback, seamless streaming, and a distraction-free experience."
+    },
+    {
+      "title": "GitHub - Mariem0tr/Sonexa",
+      "url": "https://github.com/Mariem0tr/Sonexa",
+      "snippet": "1.Présentation du Projet Sonexa est un outil d&#x27;intelligence artificielle dédié à l&#x27;univers musical. Il regroupe trois fonctionnalités majeures : . Génération intelligente de paroles (AI Lyrics Generator) . Identification de chansons à partir d&#x27;un extrait audio ou chanté . Génération automatique de partitions musicales"
+    }
+  ]
+}

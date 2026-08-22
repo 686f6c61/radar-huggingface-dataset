@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "masondx/diff_new_tension_cut_rope_highq_zero",
+  "slug": "masondx-diff_new_tension_cut_rope_highq_zero",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/diff_new_tension_cut_rope_highq_zero",
+  "created_at": "2026-08-22T08:06:28.000Z",
+  "updated_at": "2026-08-22T08:06:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:masondx/new_tension_cut_rot_zero",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 275762164,
+  "parameters_human": "275.8M",
+  "storage_bytes": 1103082940,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masondx/diff_new_tension_cut_rope_rot_state20 · Hugging Face",
+      "url": "https://huggingface.co/masondx/diff_new_tension_cut_rope_rot_state20",
+      "snippet": "Instructions to use masondx/diff_new_tension_cut_rope_rot_state20 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "masondx/diff_new_tension_cut_rope_zero · Hugging Face",
+      "url": "https://huggingface.co/masondx/diff_new_tension_cut_rope_zero",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Hub overview - Thomson Reuters",
+      "url": "https://www.thomsonreuters.com/en-gb/help/highq/ai-hub/highq-ai-hub-overview/ai-hub-overview",
+      "snippet": "AI Hub overview The AI Hub is a powerful tool that simplifies the use of multiple AI engines and integrates them seamlessly into the processes built in the HighQ platform, all controlled and configured in Collaborate. The AI Hub sits between Collaborate and leading AI engines, including HighQ&#x27;s own AI."
+    },
+    {
+      "title": "Simple Guide to RoPE Scaling in Large Language Models",
+      "url": "https://saraswatmks.github.io/2025/12/rope-scaling-llms.html",
+      "snippet": "Simple Guide to RoPE Scaling in Large Language Models Modern LLMs like Llama, GPT, and Mistral are trained with fixed context windows (2K, 4K, or 8K tokens). This means they can only process sequences upto the fixed context length. But what if you need to process longer documents—say 32K or 128K tokens? This is where RoPE Scaling comes in, allowing us to extend context length without ..."
+    },
+    {
+      "title": "AI Hub - Thomson Reuters",
+      "url": "https://www.thomsonreuters.com/en-gb/help/highq/ai-hub",
+      "snippet": "Classifiers provided by HighQ AI HighQ AI extracted fields AI clause training guidelines Contract deviation analysis Cluster similar documents with HighQ AI Authorise and set up Document Intelligence integration Import documents from Document Intelligence Authorise and set up the Kira AI Authorise and set up an AI using the generic connector"
+    }
+  ]
+}

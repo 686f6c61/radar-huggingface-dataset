@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "longnguyenhew/paper_027078636_ocr_freeform",
+  "slug": "longnguyenhew-paper_027078636_ocr_freeform",
+  "author": "longnguyenhew",
+  "url": "https://huggingface.co/longnguyenhew/paper_027078636_ocr_freeform",
+  "created_at": "2026-08-22T05:07:29.000Z",
+  "updated_at": "2026-08-22T05:07:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "endnote",
+    "intro-related-method-exp-conclusion",
+    "latex-arxiv",
+    "medium-balanced",
+    "mixed-active-passive",
+    "neutral",
+    "ocr-freeform",
+    "theoretical-rigorous",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - baidu/Unlimited-OCR: Unlimited OCR Works: Welcome the Era of ...",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "snippet": "Unlimited OCR Works Welcome the Era of One-shot Long-horizon Parsing. Release [2026/07/21] 🤝 Thanks to the ms-swift community for their support, our model now supports training with ms-swift. [2026/07/03] 🤝 Thanks to the Baidu Cloud team for their support. Our model is now available on Baidu Cloud."
+    },
+    {
+      "title": "Extract Text from Image — Free OCR Online - FreeForAI",
+      "url": "https://www.freeforai.com/ai_convert_image_to_text.php",
+      "snippet": "FreeForAI is a powerful, free online OCR (Optical Character Recognition) tool that extracts text from images with high accuracy. Leveraging cutting-edge AI technology, it can recognize text in various languages and formats while preserving original formatting. Powered by the latest Vision Large Language Model (VLM) technology, FreeForAI delivers unmatched accuracy and performance in text ..."
+    },
+    {
+      "title": "Free AI OCR - Accurate Image-to-Text Extraction | Free.ai",
+      "url": "https://free.ai/ocr/",
+      "snippet": "Extract printed text from any image or scan with free AI OCR. 20+ languages, Tesseract-backed. Best for documents, screenshots, and printed pages - not for describing photos."
+    },
+    {
+      "title": "OCR.chat - Free OCR + chat with any PDF, image or Word document",
+      "url": "https://ocr.chat/",
+      "snippet": "OCR.chat OCR that reads your documents, image & PDF to text, tables, Markdown and math in 100+ languages, then lets you chat with them."
+    },
+    {
+      "title": "Free AI OCR Online - Accurate & Layout-Aware - deepseekocr.io",
+      "url": "https://deepseekocr.io/en/tools/ai-ocr",
+      "snippet": "Experience next-generation AI OCR. Instantly convert images and PDFs to text or structured Markdown while preserving the original layout. 100% free, no sign-up needed."
+    }
+  ]
+}

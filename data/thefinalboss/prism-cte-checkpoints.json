@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "thefinalboss/prism-cte-checkpoints",
+  "slug": "thefinalboss-prism-cte-checkpoints",
+  "author": "thefinalboss",
+  "url": "https://huggingface.co/thefinalboss/prism-cte-checkpoints",
+  "created_at": "2026-08-22T03:37:48.000Z",
+  "updated_at": "2026-08-22T03:50:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "prism-cte",
+    "checkpoints",
+    "fractus",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 581750481,
+  "storage_human": "582 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thefinalboss/fractus-cte · Hugging Face",
+      "url": "https://huggingface.co/thefinalboss/fractus-cte",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thefinalboss/fractus-cte at main - Hugging Face",
+      "url": "https://huggingface.co/thefinalboss/fractus-cte/tree/main",
+      "snippet": "self-modifying progressive-growth decentralized-ai personal-ai License:mit Model card FilesFiles and versions xet Community Copy to bucket new main fractus-cte 284 kB Ctrl+K Ctrl+K 1 contributor History:28 commits thefinalboss Upload README.md with huggingface_hub 2ba757f verifiedabout 11 hours ago arxivUpload arxiv/main.tex with huggingface ..."
+    },
+    {
+      "title": "TryHackMe-AI-Security-Path/Section-4-AI-Supply-Chain-Security/05 ...",
+      "url": "https://github.com/RAHULKATARA1/TryHackMe-AI-Security-Path/tree/main/Section-4-AI-Supply-Chain-Security/05-checkpoint",
+      "snippet": "Good forensic logging would have allowed detection within hours of the attack — the model was only in production for 2 days before a human noticed. This room reinforced that incident response for AI systems requires AI-specific forensic skills on top of traditional IR."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "checkpoint Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

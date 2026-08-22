@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Yogsaputra/paper_023497167_video_understanding",
+  "slug": "yogsaputra-paper_023497167_video_understanding",
+  "author": "Yogsaputra",
+  "url": "https://huggingface.co/Yogsaputra/paper_023497167_video_understanding",
+  "created_at": "2026-08-22T04:31:43.000Z",
+  "updated_at": "2026-08-22T04:31:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "enthusiastic",
+    "graphic-visual",
+    "impersonal",
+    "intro-related-method-exp-conclusion",
+    "long-detailed",
+    "numeric-nature",
+    "theoretical-rigorous",
+    "typst",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome-LLMs-for-Video-Understanding - GitHub",
+      "url": "https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding",
+      "snippet": "📢 We&#x27;ve recently updated our survey: \"Video Understanding with Large Language Models: A Survey\"! This comprehensive survey covers video understanding techniques powered by large language models (Vid-LLMs), training strategies, relevant tasks, datasets, benchmarks, and evaluation methods ..."
+    },
+    {
+      "title": "Video Understanding with Large Language Models: A Survey",
+      "url": "https://arxiv.org/abs/2312.17432",
+      "snippet": "With the burgeoning growth of online video platforms and the escalating volume of video content, the demand for proficient video understanding tools has intensified markedly. Given the remarkable capabilities of large language models (LLMs) in language and multimodal tasks, this survey provides a detailed overview of recent advancements in video understanding that harness the power of LLMs ..."
+    },
+    {
+      "title": "Video Understanding with Large Language Models: A Survey",
+      "url": "https://arxiv.org/html/2312.17432v5",
+      "snippet": "Previous survey papers either study specific sub-tasks in the area of video understanding or focus on methodologies beyond video understanding. For example, [78] surveys multimodal foundation models for general vision-language tasks, which includes both image and video applications."
+    },
+    {
+      "title": "Video Understanding with Large Language Models: A Survey",
+      "url": "https://www.aimodels.fyi/papers/arxiv/video-understanding-large-language-models-survey",
+      "snippet": "Conclusion The paper presents a comprehensive survey of the use of large language models (LLMs) for video understanding, a rapidly evolving field that holds great promise for enhancing our ability to process and analyze video data."
+    },
+    {
+      "title": "Video Understanding with Large Language Models: A Survey",
+      "url": "https://huggingface.co/papers/2312.17432",
+      "snippet": "Join the discussion on this paper page Video Understanding with Large Language Models: A Survey"
+    }
+  ]
+}

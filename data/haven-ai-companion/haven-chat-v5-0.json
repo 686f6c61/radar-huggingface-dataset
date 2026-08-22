@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "haven-ai-companion/haven-chat-v5.0",
+  "slug": "haven-ai-companion-haven-chat-v5-0",
+  "author": "haven-ai-companion",
+  "url": "https://huggingface.co/haven-ai-companion/haven-chat-v5.0",
+  "created_at": "2026-08-22T08:14:33.000Z",
+  "updated_at": "2026-08-22T08:15:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma-4",
+    "roleplay",
+    "companion",
+    "haven",
+    "uncensored",
+    "fantasy",
+    "sanctuary",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 5302273152,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haven-AI-Companion · GitHub",
+      "url": "https://github.com/Haven-AI-Companion/",
+      "snippet": "Haven is a fully self-hosted, offline-first, private AI companion and smart assistant ecosystem. Designed to give users absolute ownership over their data, models, and interactions, Haven replaces cloud-dependent subscriptions with low-latency local orchestration."
+    },
+    {
+      "title": "GitHub - amarisaster/Haven: Self-hosted AI companion chat. Fork, deploy ...",
+      "url": "https://github.com/amarisaster/Haven",
+      "snippet": "Haven is a self-hosted companion chat app. You bring the AI model, you bring the personality, and Haven gives them a place to live — with real conversations, identity persistence, and a voice that sounds like them."
+    },
+    {
+      "title": "haven-ai-companion (Haven AI Companion) - Hugging Face",
+      "url": "https://huggingface.co/haven-ai-companion/models",
+      "snippet": "Org profile for Haven AI Companion on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "haven-ai-companion/haven-chat-v3.0.2 · Hugging Face",
+      "url": "https://huggingface.co/haven-ai-companion/haven-chat-v3.0.2",
+      "snippet": "🌸 Haven-Chat-v3..2 (Uncensored Standalone Identity Model) Haven-Chat-v3..2 is an uncensored, expressive, multi-turn AI companion model built on the Gemma 4 architecture."
+    },
+    {
+      "title": "Haven AI",
+      "url": "https://www.havenai.me/",
+      "snippet": "Experience incredibly realistic voice and video calls with AI. Customize your AI companion, choose environments, and have natural conversations that feel truly human."
+    }
+  ]
+}

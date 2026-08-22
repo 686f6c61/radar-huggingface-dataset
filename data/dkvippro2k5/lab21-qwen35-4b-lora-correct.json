@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dkvippro2k5/lab21-qwen35-4b-lora-correct",
+  "slug": "dkvippro2k5-lab21-qwen35-4b-lora-correct",
+  "author": "dkvippro2k5",
+  "url": "https://huggingface.co/dkvippro2k5/lab21-qwen35-4b-lora-correct",
+  "created_at": "2026-08-22T05:42:11.000Z",
+  "updated_at": "2026-08-22T05:44:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129927008,
+  "storage_human": "130 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gotam1/lab21-qwen35-4b-lora · Hugging Face",
+      "url": "https://huggingface.co/gotam1/lab21-qwen35-4b-lora",
+      "snippet": "gotam1 / lab21-qwen35-4b-lora like 0 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "KitakitaQaQ/qwen35-4b-law-lora-r2 · Hugging Face",
+      "url": "https://huggingface.co/KitakitaQaQ/qwen35-4b-law-lora-r2",
+      "snippet": "Model Card for qwen35-4b-law-lora-r2 This model is a fine-tuned version of Qwen/Qwen3.5-4B. It has been trained using TRL. Quick start"
+    },
+    {
+      "title": "lab21-qwen35-triage-vi API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/phai17/lab21-qwen35-triage-vi",
+      "snippet": "Deploy lab21-qwen35-triage-vi with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "ttvdblock716/qwen35-4b • LM Studio Hub",
+      "url": "https://lmstudio.ai/ttvdblock716/qwen35-4b",
+      "snippet": "This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation. Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Custom model by qwen Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation. Early fusion training on multimodal tokens ..."
+    }
+  ]
+}

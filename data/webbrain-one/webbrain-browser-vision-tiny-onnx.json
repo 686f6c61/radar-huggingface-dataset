@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "webbrain-one/webbrain-browser-vision-tiny-onnx",
+  "slug": "webbrain-one-webbrain-browser-vision-tiny-onnx",
+  "author": "webbrain-one",
+  "url": "https://huggingface.co/webbrain-one/webbrain-browser-vision-tiny-onnx",
+  "created_at": "2026-08-21T23:42:30.000Z",
+  "updated_at": "2026-08-22T04:52:42.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "lfm2_vl",
+    "image-text-to-text",
+    "webgpu",
+    "browser-automation",
+    "gui-understanding",
+    "webbrain",
+    "conversational",
+    "base_model:webbrain-one/webbrain-browser-vision-tiny",
+    "base_model:quantized:webbrain-one/webbrain-browser-vision-tiny",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 804014914,
+  "storage_human": "804 MB",
+  "base_model": "webbrain-one/webbrain-browser-vision-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "webbrain-one/webbrain-browser-vision-tiny · Hugging Face",
+      "url": "https://huggingface.co/webbrain-one/webbrain-browser-vision-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - webbrain-one/webbrain: Open-source AI browser agent for Chrome ...",
+      "url": "https://github.com/webbrain-one/webbrain",
+      "snippet": "Open-source AI browser agent for chatting with pages, automating tasks, and running multi-step workflows with your choice of LLM. English · 中文 · Français · Docs · Website · Discord · Product Hunt · MIT License WebBrain is a web browser extension that puts an AI agent in a side panel next to your tabs. Ask it about the page you&#x27;re on, or hand it a task and let it click, type, and ..."
+    },
+    {
+      "title": "WebBrain — Free Open-Source AI Browser Agent",
+      "url": "https://www.webbrain.one/",
+      "snippet": "WebBrain is a free, open-source alternative to Claude&#x27;s browser plugin. AI browser agent for Chrome, Firefox, and Edge — read pages, extract data, automate tasks."
+    },
+    {
+      "title": "webbrain-one (WebBrain) - Hugging Face",
+      "url": "https://huggingface.co/webbrain-one",
+      "snippet": "webbrain-one (WebBrain) - Hugging Face ... Browser Vision"
+    },
+    {
+      "title": "webbrain-one/Ling-3.0-tiny-ONNX · Hugging Face",
+      "url": "https://huggingface.co/webbrain-one/Ling-3.0-tiny-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

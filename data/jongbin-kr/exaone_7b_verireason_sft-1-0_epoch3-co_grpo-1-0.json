@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/exaone_7b_verireason_sft-1.0_epoch3-co_grpo-1.0",
+  "slug": "jongbin-kr-exaone_7b_verireason_sft-1-0_epoch3-co_grpo-1-0",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/exaone_7b_verireason_sft-1.0_epoch3-co_grpo-1.0",
+  "created_at": "2026-08-22T03:17:30.000Z",
+  "updated_at": "2026-08-22T10:18:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "arxiv:2402.03300",
+    "base_model:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "base_model:finetune:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5387710450,
+  "storage_human": "5.4 GB",
+  "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jongbin-kr/exaone_7b_verireason_sft-1.0_epoch3-co_grpo-1.0 · Hugging Face",
+      "url": "https://huggingface.co/Jongbin-kr/exaone_7b_verireason_sft-1.0_epoch3-co_grpo-1.0",
+      "snippet": "exaone_7b_verireason_sft-1.0_epoch3-co_grpo-1. ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Jongbin-kr/exaone_7b_verireason_sft-1.0_epoch3-co_grpo-1.0_epoch1_hpft ...",
+      "url": "https://huggingface.co/Jongbin-kr/exaone_7b_verireason_sft-1.0_epoch3-co_grpo-1.0_epoch1_hpft",
+      "snippet": "Notebooks Google Colab Kaggle Model Card for exaone_7b_verireason_sft-1.0_epoch3-co_grpo-1.0_epoch1_hpft Quick start Training procedure Framework versions Citations"
+    },
+    {
+      "title": "GitHub - LG-AI-EXAONE/K-EXAONE: Official repository for K-EXAONE built ...",
+      "url": "https://github.com/LG-AI-EXAONE/K-EXAONE",
+      "snippet": "We introduce K-EXAONE, a large-scale multilingual language model developed by LG AI Research. Built using a Mixture-of-Experts architecture, K-EXAONE features 236 billion total parameters, with 23 billion active during inference. Performance evaluations across various benchmarks demonstrate that K-EXAONE excels in reasoning, agentic capabilities, general knowledge, multilingual understanding ..."
+    },
+    {
+      "title": "LG AI Research EXAONE",
+      "url": "https://www.lgresearch.ai/exaone",
+      "snippet": "Model & Solution Introducing AI solutions proven in real-world industries. Designed to solve complex challenges across domains with precision and impact. Solution EXAONE Data Foundry An end-to-end LLM tuning platform that generates domain-specific QA data from real-world documents and accelerates optimization through rapid feedback loops."
+    },
+    {
+      "title": "GitHub - NellyW8/VeriReason: This is the Github Repo for the paper ...",
+      "url": "https://github.com/NellyW8/VeriReason",
+      "snippet": "This study introduces VeriReason, a novel approach utilizing reinforcement learning with testbench feedback to enhance the performance of pre-trained models for Verilog RTL code generation. VeriReason-Qwen2.5-3B is a 3B parameter model based on Qwen2.5-Coder-3B that combines supervised fine-tuning with Guided Reward Proximal Optimization (GRPO) reinforcement learning, specifically tailored for ..."
+    }
+  ]
+}

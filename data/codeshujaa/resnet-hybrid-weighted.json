@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "codeshujaa/resnet-hybrid-weighted",
+  "slug": "codeshujaa-resnet-hybrid-weighted",
+  "author": "codeshujaa",
+  "url": "https://huggingface.co/codeshujaa/resnet-hybrid-weighted",
+  "created_at": "2026-08-22T09:46:46.000Z",
+  "updated_at": "2026-08-22T09:46:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "codeshujaaa (denis mwangi) - Hugging Face",
+      "url": "https://huggingface.co/codeshujaaa",
+      "snippet": "I&#x27;m a AI researcher who loves building practical solutions and exploring new technologies. I&#x27;m currently focused on Transformers, deep learning, machine learning data analysis, and data visualiza..."
+    },
+    {
+      "title": "GitHub - VishnuVaibhavRD/Image_Retri",
+      "url": "https://github.com/VishnuVaibhavRD/Image_Retri",
+      "snippet": "A local fashion-product search engine supporting: Text-to-image retrieval with CLIP Image-to-image retrieval with CLIP Image-to-image retrieval with ResNet-50 Hybrid CLIP and ResNet-50 retrieval Exact vector search with FAISS A Streamlit interface for interactive testing The current catalog contains 5,000 validated fashion products. The original 100-product index is preserved as a backup."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Detecting AI-Generated Images Using a Hybrid ResNet-SE Attention Model",
+      "url": "https://www.mdpi.com/2076-3417/15/13/7421",
+      "snippet": "To propose and validate a novel hybrid model integrating ResNet with an attention-based mechanism to achieve superior accuracy and robustness compared with baseline models. To rigorously assess the performance of the proposed model using the CIFAKE dataset [6], evaluating its potential for real-world applications."
+    },
+    {
+      "title": "Kenyan Youth Turned AI Trailblazers with Code Shujaa - LinkedIn",
+      "url": "https://www.linkedin.com/posts/nazli-tech-school_kenya-codeshujaa-siliconsavannah-activity-7445546055896756224-5RcX",
+      "snippet": "THE COLLAB OF THE YEAR: Code Shujaa is Turning #Kenya&#x27;s Youth into AI Trailblazers! 🚀🤖 Nazli Tech School x STEAMLabs Africa Felix Malombe Kenya, the future is officially coded! 🇰🇪 ..."
+    }
+  ]
+}

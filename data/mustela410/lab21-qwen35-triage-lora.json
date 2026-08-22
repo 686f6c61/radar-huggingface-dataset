@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mustela410/lab21-qwen35-triage-lora",
+  "slug": "mustela410-lab21-qwen35-triage-lora",
+  "author": "mustela410",
+  "url": "https://huggingface.co/mustela410/lab21-qwen35-triage-lora",
+  "created_at": "2026-08-22T03:02:51.000Z",
+  "updated_at": "2026-08-22T03:03:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "trl",
+    "vietnamese",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "text-generation",
+    "conversational",
+    "vi",
+    "base_model:unsloth/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916333,
+  "storage_human": "150 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mustela410/lab21-qwen35-triage-lora · Hugging Face",
+      "url": "https://huggingface.co/mustela410/lab21-qwen35-triage-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.5-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen3.5 & Qwen3.6 Usage Guide - vLLM Recipes - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3.5.html",
+      "snippet": "Qwen3.5 & Qwen3.6 Usage Guide Qwen3.5 and Qwen3.6 are multimodal mixture-of-experts models featuring a gated delta networks architecture. This guide covers how to efficiently deploy and serve both models using vLLM."
+    },
+    {
+      "title": "Research - Qwen",
+      "url": "https://qwen.ai/research/",
+      "snippet": "Research Latest Advancements Qwen3.8-Max: A New Bar for Coding and Cowork Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model — the open weights will be released next week."
+    }
+  ]
+}

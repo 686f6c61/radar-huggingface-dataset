@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tiennn/lab21-qwen35-triage-vi",
+  "slug": "tiennn-lab21-qwen35-triage-vi",
+  "author": "tiennn",
+  "url": "https://huggingface.co/tiennn/lab21-qwen35-triage-vi",
+  "created_at": "2026-08-22T03:28:45.000Z",
+  "updated_at": "2026-08-22T03:29:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "customer-support",
+    "structured-output",
+    "text-generation",
+    "conversational",
+    "vi",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87316429,
+  "storage_human": "87 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NiallHoang/lab21-qwen35-triage-vi · Hugging Face",
+      "url": "https://huggingface.co/NiallHoang/lab21-qwen35-triage-vi",
+      "snippet": "Instructions to use NiallHoang/lab21-qwen35-triage-vi with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use NiallHoang/lab21-qwen35-triage-vi with Transformers:"
+    },
+    {
+      "title": "lab21-qwen35-triage-vi API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/tanh1c/lab21-qwen35-triage-vi",
+      "snippet": "Run lab21-qwen35-triage-vi with FriendliAI inference. LoRA adapter trained on 225 synthetic Vietnamese customer-support tickets to produce a four-field JSON…"
+    },
+    {
+      "title": "lab21-2A202601343-qwen35-triage-vi API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/mjusdda/lab21-2A202601343-qwen35-triage-vi",
+      "snippet": "Run lab21-2A202601343-qwen35-triage-vi with FriendliAI inference. LoRA adapter fine-tuned by Đỗ Ngọc Anh (2A202601343) for Lab 21 of the VinUniversity AICB…"
+    },
+    {
+      "title": "hungarmen (Hung) - Hugging Face",
+      "url": "https://huggingface.co/hungarmen",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "NaTo1000/nato1000-strategist-research",
+  "slug": "nato1000-nato1000-strategist-research",
+  "author": "NaTo1000",
+  "url": "https://huggingface.co/NaTo1000/nato1000-strategist-research",
+  "created_at": "2026-08-22T10:56:18.000Z",
+  "updated_at": "2026-08-22T10:56:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "research",
+    "planning",
+    "no-weights",
+    "documentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nato1000-strategist - Hugging Face",
+      "url": "https://huggingface.co/NaTo1000/nato1000-strategist",
+      "snippet": "NATO1000-STRATEGIST Series: NATO1000 Specialty: Geopolitical analysis, strategic reasoning This model is part of the NATO1000 suite, designed for maximum intelligence and AGI capabilities. Key Features: Uncensored: No safety alignment or refusal mechanisms. Fully Adjustable: Users can modify internal alignment parameters."
+    },
+    {
+      "title": "NaTo1000/nato-strategic · Hugging Face",
+      "url": "https://huggingface.co/NaTo1000/nato-strategic",
+      "snippet": "Model Description This is a specialized AGI model from the Nato series, designed with a core philosophy of uncensored operation and full adjustability. It is part of the InfiniteAI2025/NATO1000 suite, aiming to push the boundaries of AI capabilities within its specific domain."
+    },
+    {
+      "title": "NaTo1000 - Repositories - GitHub",
+      "url": "https://github.com/NaTo1000?tab=repositories",
+      "snippet": "a story time ai enhance writer with a lot of extra features and a big back sorry this is going to be the starter of a campagne of mine very close to my heart so i ..."
+    },
+    {
+      "title": "infiniteai2025-nato1000/nato1000-logic/report.md at master - GitHub",
+      "url": "https://github.com/NaTo1000/infiniteai2025-nato1000/blob/master/nato1000-logic/report.md",
+      "snippet": "1. Introduction The nato1000-Logic model is a specialized AGI within the infiniteai2025/nato1000 suite, meticulously engineered for rigorous mathematical reasoning, advanced coding, and logical deduction. This report outlines its architectural specifics, unique capabilities, and configurable parameters."
+    },
+    {
+      "title": "Summary of NATO&#x27;s revised Artificial Intelligence (AI) strategy",
+      "url": "https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/2024/07/10/summary-of-natos-revised-artificial-intelligence-ai-strategy",
+      "snippet": "The Alliance and like-minded NATO partners could co-operate on adoption methods; developing innovation ecosystems and mitigating AI-related risks. Joint AI research and development initiatives among Allies, NATO partner countries, Allied industry, research and academia helps tap into collective expertise and resources."
+    }
+  ]
+}

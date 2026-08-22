@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "virao1982/model_709779955_mocov3_nano",
+  "slug": "virao1982-model_709779955_mocov3_nano",
+  "author": "virao1982",
+  "url": "https://huggingface.co/virao1982/model_709779955_mocov3_nano",
+  "created_at": "2026-08-22T08:18:15.000Z",
+  "updated_at": "2026-08-22T08:18:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "approx-gelu",
+    "batchnorm",
+    "exponential",
+    "gated-fusion",
+    "grouped-query",
+    "kaiming",
+    "mocov3",
+    "nano",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "kissablemt/moco-v3-3d - GitHub",
+      "url": "https://github.com/kissablemt/moco-v3-3d",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "Grok Imagine",
+      "url": "https://grok.com/imagine",
+      "snippet": "Grok Imagine by SpaceXAI is an AI image and video generator. Create and edit images, animate them into videos, and iterate fast with Imagine Agent Mode."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2211.09861",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "MoCoV3 Pretraining Model | qianlima-lab/UniShape | DeepWiki",
+      "url": "https://deepwiki.com/qianlima-lab/UniShape/2.3-mocov3-pretraining-model",
+      "snippet": "MoCoV3 Pretraining Model Relevant source files This page documents MoCoV3ModelPseudo, the self-supervised pretraining wrapper defined in models/pretrain_mocov3.py along with the free function generate_pseudo_labels_by_similarity. This is one layer above the backbone: it wraps the UniShapeModel (pretrain variant) with a momentum encoder, a predictor MLP, contrastive and prototype losses, and a ..."
+    }
+  ]
+}

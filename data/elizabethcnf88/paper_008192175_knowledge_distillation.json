@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "elizabethcnf88/paper_008192175_knowledge_distillation",
+  "slug": "elizabethcnf88-paper_008192175_knowledge_distillation",
+  "author": "elizabethcnf88",
+  "url": "https://huggingface.co/elizabethcnf88/paper_008192175_knowledge_distillation",
+  "created_at": "2026-08-22T04:06:21.000Z",
+  "updated_at": "2026-08-22T04:06:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "argumentative",
+    "critical",
+    "endnote",
+    "graphic-visual",
+    "intro-problem-solution-validation-future",
+    "knowledge-distillation",
+    "latex-icml",
+    "short-punchy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2503.12067",
+      "snippet": "arXiv.org is an open-access repository for scientific research papers across various disciplines, providing a platform for researchers to share and access knowledge."
+    },
+    {
+      "title": "[2006.05525] Knowledge Distillation: A Survey - arXiv.org",
+      "url": "https://arxiv.org/abs/2006.05525",
+      "snippet": "It has received rapid increasing attention from the community. This paper provides a comprehensive survey of knowledge distillation from the perspectives of knowledge categories, training schemes, teacher-student architecture, distillation algorithms, performance comparison and applications."
+    },
+    {
+      "title": "A survey on knowledge distillation: Recent advancements",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666827024000811",
+      "snippet": "Knowledge distillation (KD), a technique for model compression and knowledge transfer, has gained significant attention in the field of machine learning since its formal introduction by Hinton et al. (2015). This approach builds upon the earlier work of Caruana et al. (2006), who demonstrated that the collective knowledge of an ensemble of models could be condensed into a single, smaller model ..."
+    },
+    {
+      "title": "Awesome Knowledge Distillation of LLM Papers - GitHub",
+      "url": "https://github.com/Tebmer/Awesome-Knowledge-Distillation-of-LLMs",
+      "snippet": "A collection of papers related to knowledge distillation of large language models (LLMs). If you want to use LLMs for benefitting your own smaller models training, or use self-generated knowledge to achieve the self-improvement, just take a look at this collection. We will update this collection every week."
+    },
+    {
+      "title": "hsulin0806/20241121_Awesome-Knowledge-Distillation-of-LLMs",
+      "url": "https://github.com/hsulin0806/20241121_Awesome-Knowledge-Distillation-of-LLMs",
+      "snippet": "A collection of papers related to knowledge distillation of large language models (LLMs). If you want to use LLMs for benefitting your own smaller models training, or use self-generated knowledge to achieve the self-improvement, just take a look at this collection. We will update this collection every week."
+    }
+  ]
+}

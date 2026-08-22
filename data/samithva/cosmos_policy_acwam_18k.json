@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "samithva/cosmos_policy_acwam_18k",
+  "slug": "samithva-cosmos_policy_acwam_18k",
+  "author": "samithva",
+  "url": "https://huggingface.co/samithva/cosmos_policy_acwam_18k",
+  "created_at": "2026-08-22T06:57:18.000Z",
+  "updated_at": "2026-08-22T07:04:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cosmos-policy-world-model",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3957137721,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NVlabs/cosmos-policy: Cosmos Policy · GitHub",
+      "url": "https://github.com/NVlabs/cosmos-policy",
+      "snippet": "Inference with base Cosmos Policy only (i.e., no model-based planning): 1 GPU with 6.8 GB VRAM for LIBERO sim benchmark tasks 1 GPU with 8.9 GB VRAM for RoboCasa sim benchmark tasks 1 GPU with 6.0 GB VRAM for ALOHA robot tasks Inference with Cosmos Policy + model-based planning (best-of-N search) on ALOHA robot tasks: Minimum (serial inference): 1 GPU with 10.0 GB VRAM Recommended (parallel ..."
+    },
+    {
+      "title": "[2601.16163] Cosmos Policy: Fine-Tuning Video Models for Visuomotor ...",
+      "url": "https://arxiv.org/abs/2601.16163",
+      "snippet": "Recent video generation models demonstrate remarkable ability to capture complex physical interactions and scene evolution over time. To leverage their spatiotemporal priors, robotics works have adapted video models for policy learning but introduce complexity by requiring multiple stages of post-training and new architectural components for action generation. In this work, we introduce Cosmos ..."
+    },
+    {
+      "title": "Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning",
+      "url": "https://arxiv.org/html/2601.16163v1",
+      "snippet": "Cosmos Policy learns to directly generate robot actions encoded as latent frames within the video model&#x27;s latent diffusion process, harnessing the model&#x27;s pretrained priors and core learning algorithm to capture complex action distributions."
+    },
+    {
+      "title": "Cosmos Policy - Reading Report - openmoss.ai",
+      "url": "https://openmoss.ai/Awesome-WAM/report/2601.16163/index.en.html",
+      "snippet": "Cosmos Policy directly retains the pre-trained video model structure, integrates new modalities through latent injection, and then uses different masks to let the same model learn policy, world model, and value; finally, it uses rollout to fine-tune and supplement the out-of-distribution experience required for planning."
+    },
+    {
+      "title": "Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and ...",
+      "url": "https://www.alphaxiv.org/overview/2601.16163v1",
+      "snippet": "Researchers from NVIDIA and Stanford University fine-tune a large, pretrained latent video diffusion model, Cosmos-Predict2, into a unified robot policy for visuomotor control and planning. This..."
+    }
+  ]
+}

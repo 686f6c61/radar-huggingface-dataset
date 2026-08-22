@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kuisikawa/paper_019164861_grounded_language",
+  "slug": "kuisikawa-paper_019164861_grounded_language",
+  "author": "Kuisikawa",
+  "url": "https://huggingface.co/Kuisikawa/paper_019164861_grounded_language",
+  "created_at": "2026-08-22T06:55:45.000Z",
+  "updated_at": "2026-08-22T06:55:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "cautious",
+    "grounded-language",
+    "highlight-bullet",
+    "intro-related-method-exp-conclusion",
+    "latex-arxiv",
+    "medium-balanced",
+    "mixed-active-passive",
+    "numeric-apa",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "[2210.05359] Mind&#x27;s Eye: Grounded Language Model Reasoning through ...",
+      "url": "https://arxiv.org/abs/2210.05359",
+      "snippet": "Successful and effective communication between humans and AI relies on a shared experience of the world. By training solely on written text, current language models (LMs) miss the grounded experience of humans in the real-world -- their failure to relate language to the physical world causes knowledge to be misrepresented and obvious mistakes in their reasoning. We present Mind&#x27;s Eye, a ..."
+    },
+    {
+      "title": "Mind&#x27;s Eye: Grounded Language Model Reasoning through Simulation",
+      "url": "https://research.google/pubs/minds-eye-grounded-language-model-reasoning-through-simulation/",
+      "snippet": "By training solely on written text, current language models (LMs) miss the grounded experience of humans in the real-world—their failure to relate language to the physical world causes knowledge to be misrepresented and obvious mistakes in their reasoning. We present Mind&#x27;s Eye, a paradigm to ground language model reasoning in the physical world."
+    },
+    {
+      "title": "SGHA: Evidence-Grounded Research Problem Discovery with Local Language ...",
+      "url": "https://arxiv.org/abs/2608.17501",
+      "snippet": "Recent efforts toward fully automated AI scientists have demonstrated that language-model agents can generate hypotheses, execute experiments, and draft scientific manuscripts. However, during the early stages of research, when research problems are formulated, these AI scientists often rely heavily on proprietary frontier models. Their proposals are shaped by opaque parametric knowledge and ..."
+    },
+    {
+      "title": "PDF Learning Language through Grounding - ACL Anthology",
+      "url": "https://aclanthology.org/2025.naacl-tutorial.6.pdf",
+      "snippet": "Afterthat,wewillintroducerecentworkoncompu- tational approaches that model the acquisition and learning of natural language by grounding natural language to the world, including learning lexical semantics, syntax, complex forms of semantics, and pragmatics in various grounded settings."
+    }
+  ]
+}

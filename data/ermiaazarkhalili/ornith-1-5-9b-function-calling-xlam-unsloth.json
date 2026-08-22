@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ermiaazarkhalili/Ornith-1.5-9B-Function-Calling-xLAM-Unsloth",
+  "slug": "ermiaazarkhalili-ornith-1-5-9b-function-calling-xlam-unsloth",
+  "author": "ermiaazarkhalili",
+  "url": "https://huggingface.co/ermiaazarkhalili/Ornith-1.5-9B-Function-Calling-xLAM-Unsloth",
+  "created_at": "2026-08-22T09:16:48.000Z",
+  "updated_at": "2026-08-22T09:25:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710327,
+  "storage_human": "18.8 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carnice-9B-Function-Calling-xLAM-Unsloth - Hugging Face",
+      "url": "https://huggingface.co/ermiaazarkhalili/Carnice-9B-Function-Calling-xLAM-Unsloth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Carnice 9B Function Calling XLAM Unsloth by ermiaazarkhalili",
+      "url": "https://llm-explorer.com/model/ermiaazarkhalili%2FCarnice-9B-Function-Calling-xLAM-Unsloth,3brbaNt0s9u4Qm1REzxJs7",
+      "snippet": "Carnice 9B Function Calling XLAM Unsloth is an open-source 9b LLM by ermiaazarkhalili. VRAM 17.9GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Connect Claude Code, Codex and other agents to local models with the unsloth start command. Start Unsloth, load a model, open your project folder, then run unsloth start claude."
+    },
+    {
+      "title": "Ornith 1.5 9B by ornith-ai — VRAM 18.9GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/ornith-ai%2FOrnith-1.5-9B,72MM1Jtgj27n4QZu7DIW0F",
+      "snippet": "Rank the Ornith 1.5 9B capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

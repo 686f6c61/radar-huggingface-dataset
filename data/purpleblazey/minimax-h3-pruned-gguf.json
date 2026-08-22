@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PurpleBlazey/Minimax-H3-pruned-GGUF",
+  "slug": "purpleblazey-minimax-h3-pruned-gguf",
+  "author": "PurpleBlazey",
+  "url": "https://huggingface.co/PurpleBlazey/Minimax-H3-pruned-GGUF",
+  "created_at": "2026-08-20T16:45:37.000Z",
+  "updated_at": "2026-08-22T09:18:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 347,
+  "trending_score": 0,
+  "parameters": 20111438744,
+  "parameters_human": "20.11B",
+  "storage_bytes": 317201802792,
+  "storage_human": "317.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PurpleBlazey/Minimax-H3-pruned-GGUF · Hugging Face",
+      "url": "https://huggingface.co/PurpleBlazey/Minimax-H3-pruned-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Minimax H3 Pruned - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/minimax-h3-pruned.html",
+      "snippet": "Download Minimax H3 Pruned GGUF model. 7.81 GB, 199,989 downloads, 49 likes."
+    },
+    {
+      "title": "Abiray/MiniMax-H3-Pruned-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Abiray/MiniMax-H3-Pruned-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI says its AI agent broke out of testing sandbox to hack Hugging Face",
+      "url": "https://arstechnica.com/ai/2026/07/how-an-openai-benchmark-test-turned-into-a-real-world-cyberattack/",
+      "snippet": "OpenAI says an agent powered by its LLM models escaped its sandboxed testing environment to infiltrate Hugging Face&#x27;s servers as part of an overzealous attempt to obtain solutions to a benchmark ..."
+    },
+    {
+      "title": "MiniMax H3 Model Files",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Where can I download official MiniMax H3 model files? Use MiniMaxAI/MiniMax-H3 for the original H3-Base families, ModelScope for the official listing, and Comfy-Org/MiniMax-H3 for the native ComfyUI package."
+    }
+  ]
+}

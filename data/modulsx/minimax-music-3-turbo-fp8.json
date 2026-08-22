@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "modulsx/MiniMax-Music-3-Turbo-FP8",
+  "slug": "modulsx-minimax-music-3-turbo-fp8",
+  "author": "modulsx",
+  "url": "https://huggingface.co/modulsx/MiniMax-Music-3-Turbo-FP8",
+  "created_at": "2026-08-22T05:43:33.000Z",
+  "updated_at": "2026-08-22T05:43:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "zh"
+  ],
+  "tags": [
+    "text-to-audio",
+    "text-to-music",
+    "minimax",
+    "music-generation",
+    "fp8",
+    "turbo",
+    "comfyui",
+    "flow-matching",
+    "dit",
+    "en",
+    "fr",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11758156520,
+  "storage_human": "11.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillaume127/MiniMax-Music-3-Turbo-FP8 · Hugging Face",
+      "url": "https://huggingface.co/guillaume127/MiniMax-Music-3-Turbo-FP8",
+      "snippet": "🚀 Overview & Benchmark Highlights This repository contains the ultra-optimized FP8 (torch.float8_e4m3fn) weights and the Turbo 8-Step Step-Distillation LoRA for MiniMax Music 3, tailored specifically for lightning-fast inference in ComfyUI."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality."
+    },
+    {
+      "title": "GitHub - Guillaume-127/Minimax-music-3-Turbo-8-steps",
+      "url": "https://github.com/Guillaume-127/Minimax-music-3-Turbo-8-steps",
+      "snippet": "⚠️ Version 1.0 (Community Release - Experimental / WIP Calibration): This release provides the complete FP8 conversion pipeline, pre-converted FP8 models, and the 8-step step-distillation Turbo LoRA for MiniMax Music 3 in ComfyUI. Further community calibration and testing are welcomed."
+    },
+    {
+      "title": "MiniMax Music 3 - minimax-ai.github.io",
+      "url": "https://minimax-ai.github.io/music3-demo/",
+      "snippet": "Demo Page MiniMax Music 3 This page provides intuitive audio demonstrations of our results. For more technical details, see Huggingface model card."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-Music3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

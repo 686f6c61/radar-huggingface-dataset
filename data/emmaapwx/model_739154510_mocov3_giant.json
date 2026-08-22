@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "emmaapwx/model_739154510_mocov3_giant",
+  "slug": "emmaapwx-model_739154510_mocov3_giant",
+  "author": "emmaapwx",
+  "url": "https://huggingface.co/emmaapwx/model_739154510_mocov3_giant",
+  "created_at": "2026-08-22T05:52:34.000Z",
+  "updated_at": "2026-08-22T05:52:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cross-attention",
+    "exponential",
+    "generation",
+    "giant",
+    "groupnorm",
+    "lamb",
+    "linear",
+    "mocov3",
+    "swish",
+    "trunc-normal",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sketchfab",
+      "url": "https://sketchfab.com/search",
+      "snippet": "Use Sketchfab to publish, share and embed interactive 3D files. Discover and download thousands of 3D models from games, cultural heritage, architecture, design and more."
+    },
+    {
+      "title": "GitHub - Katherine121/mocov3: PyTorch implementation of MoCo v3 https ...",
+      "url": "https://github.com/Katherine121/mocov3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

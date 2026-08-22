@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/ZenithAI-TestRepo-r21",
+  "slug": "sotaagi2030-zenithai-testrepo-r21",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/ZenithAI-TestRepo-r21",
+  "created_at": "2026-08-22T10:40:21.000Z",
+  "updated_at": "2026-08-22T10:40:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030/ZenithAI-TestRepo-r21 · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/ZenithAI-TestRepo-r21",
+      "snippet": "1. Introduction The ZenithAI has undergone a significant version upgrade. In the latest update, ZenithAI has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training. The model has demonstrated outstanding performance across various benchmark evaluations ..."
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "Sort: Recently updated . SOTAagi2030/MyAwesomeModel-TestRepo. Feature Extraction • Updated about 1 hour ago. SOTAagi2030/EarlyCheckpoint-v1. Feature Extraction ..."
+    },
+    {
+      "title": "ZenithAI",
+      "url": "https://www.zenithai.ai/",
+      "snippet": "ZenithAI Calling App has completely transformed how we manage both our inbound and outbound calls. The AI not only talks like a human but understands and responds in real-time, handling objections, booking appointments, and even making decisions."
+    },
+    {
+      "title": "GitHub - wizardsWeb/ZenithAI: For Jai HInd Hackathon for Mental health",
+      "url": "https://github.com/wizardsWeb/ZenithAI",
+      "snippet": "For Jai HInd Hackathon for Mental health. Contribute to wizardsWeb/ZenithAI development by creating an account on GitHub."
+    },
+    {
+      "title": "FreeTheAi Model Catalog - Free OpenAI-Compatible AI Models",
+      "url": "https://freetheai.xyz/models/",
+      "snippet": "Search the FreeTheAi model catalog: 80 active OpenAI-compatible chat, image, and tool-capable model aliases across 13 provider prefixes with live filtering and copyable IDs."
+    }
+  ]
+}

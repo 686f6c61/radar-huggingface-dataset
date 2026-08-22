@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "nova-quill/Orca-Qwen3.8-27B-Uncensored-mlx",
+  "slug": "nova-quill-orca-qwen3-8-27b-uncensored-mlx",
+  "author": "nova-quill",
+  "url": "https://huggingface.co/nova-quill/Orca-Qwen3.8-27B-Uncensored-mlx",
+  "created_at": "2026-08-21T18:41:01.000Z",
+  "updated_at": "2026-08-22T04:42:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "qwen",
+    "qwen3",
+    "qwen3.8",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "bf16",
+    "post-training",
+    "fine-tuning",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "mlx",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6612941552,
+  "parameters_human": "6.61B",
+  "storage_bytes": 23729097780,
+  "storage_human": "23.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orca-Qwen3.8-27B-Uncensored-unsloth-mlx - Hugging Face",
+      "url": "https://huggingface.co/nova-quill/Orca-Qwen3.8-27B-Uncensored-unsloth-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - onurburak9/Qwen3.8-27B-Uncensored-MLX",
+      "url": "https://github.com/onurburak9/Qwen3.8-27B-Uncensored-MLX",
+      "snippet": "An abliterated (refusal-removed) build of Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with thinking control, tool-calling and an MTP head — quantized to MLX format for Apple Silicon. Four precisions are provided as subfolders: 2 / 4 / 6 / 8-bit (affine, group size 64). The vision tower, norms and conv ..."
+    },
+    {
+      "title": "GitHub - newbdez33/qwen3.8: Qwen3.8-27B-Uncensored-MLX local deployment ...",
+      "url": "https://github.com/newbdez33/qwen3.8",
+      "snippet": "Qwen3.8-27B-Uncensored-MLX local deployment guide for Apple Silicon - newbdez33/qwen3.8"
+    },
+    {
+      "title": "Qwen3.8 - a mlx-community Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlx-community/qwen38",
+      "snippet": "UNCENSORED Qwen 3.6 27B inclusionAI LING 2.6 inclusionAI DR-Venus Nvidia Nemotron-3-Nano-Omni Mel-Band-RoFormer (MLX) Poolside Laguna-XS.2 DeepSeek V4 MiniMax-M2.7 YOLO 26 Glm 5.1 Gemma 4 Nemotron-Cascade 2 Demucs MLX — Music Source Separation KittenTTS Qwen-3.5 Step 3.5 Flash MedGemma-1.5 PaddleOCR-VL Qwen3-ASR Qwen3-TTS facebook Perception ..."
+    },
+    {
+      "title": "Orca Router releases uncensored Qwen 3.8-27B for Apple Silicon Macs",
+      "url": "https://www.newsbytesapp.com/news/science/orca-router-releases-uncensored-qwen-38-27b-for-apple-silicon-macs/tldr",
+      "snippet": "Orca Router just released an uncensored version of Alibaba&#x27;s Qwen 3.8-27B AI model, made to run locally on Apple Silicon Macs."
+    }
+  ]
+}

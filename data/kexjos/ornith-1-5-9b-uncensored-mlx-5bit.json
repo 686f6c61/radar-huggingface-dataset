@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "keXjos/Ornith-1.5-9B-uncensored-mlx-5Bit",
+  "slug": "kexjos-ornith-1-5-9b-uncensored-mlx-5bit",
+  "author": "keXjos",
+  "url": "https://huggingface.co/keXjos/Ornith-1.5-9B-uncensored-mlx-5Bit",
+  "created_at": "2026-08-22T08:07:46.000Z",
+  "updated_at": "2026-08-22T08:08:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ornith",
+    "abliterated",
+    "uncensored",
+    "zerofuse",
+    "multimodal",
+    "vision",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "base_model:junafinity/Ornith-1.5-9B-uncensored",
+    "base_model:quantized:junafinity/Ornith-1.5-9B-uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1679700480,
+  "parameters_human": "1.68B",
+  "storage_bytes": 6177242977,
+  "storage_human": "6.2 GB",
+  "base_model": "junafinity/Ornith-1.5-9B-uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-6bit",
+      "snippet": "Ornith-1.5-9B is a dense ~9B model (≈19 GB in bf16), so it serves on a single 80GB GPU. The recipes below stand up an OpenAI-compatible server; add --tensor-parallel-size / --tp if you want to shard across more GPUs."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-uncensored-GGUF-8bit - Hugging Face",
+      "url": "https://huggingface.co/junafinity/Ornith-1.5-35B-A3B-uncensored-GGUF-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    },
+    {
+      "title": "Ornith-1.5 Is a Free Open-Source Model That Claims to Rival Claude Opus ...",
+      "url": "https://startupfortune.com/ornith-15-is-a-free-open-source-model-that-claims-to-rival-claude-opus-48/",
+      "snippet": "According to Ornith&#x27;s X post on August 20, the Ornith-1.5 family includes a 9B dense model, a 35B mixture-of-experts model, and a 397B MoE flagship. The lab says all three are trained with self-improving strategies and released under the MIT license, including quantized versions in FP8, GGUF, MLX and NVFP4 formats. That part is the practical hook."
+    }
+  ]
+}

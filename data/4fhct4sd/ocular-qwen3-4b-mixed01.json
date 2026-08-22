@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "4fhct4sd/ocular-qwen3-4b-mixed01",
+  "slug": "4fhct4sd-ocular-qwen3-4b-mixed01",
+  "author": "4fhct4sd",
+  "url": "https://huggingface.co/4fhct4sd/ocular-qwen3-4b-mixed01",
+  "created_at": "2026-08-22T04:41:47.000Z",
+  "updated_at": "2026-08-22T04:58:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "dora",
+    "qlora",
+    "personal-corpus",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280288,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Qwen3-4B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen3-4B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - alyxya/qwen3-4b",
+      "url": "https://github.com/alyxya/qwen3-4b",
+      "snippet": "A clean PyTorch implementation of Qwen3 4B (4 billion parameters) built for learning and inference."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3-4B / 8B / 32B | pegainfer",
+      "url": "https://open-infer.org/models/qwen3-4b/",
+      "snippet": "Running Qwen3-4B, 8B, and 32B on pegainfer: launch, serving performance, speculative decoding, and architecture notes."
+    }
+  ]
+}

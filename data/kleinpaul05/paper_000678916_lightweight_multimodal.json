@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kleinpaul05/paper_000678916_lightweight_multimodal",
+  "slug": "kleinpaul05-paper_000678916_lightweight_multimodal",
+  "author": "Kleinpaul05",
+  "url": "https://huggingface.co/Kleinpaul05/paper_000678916_lightweight_multimodal",
+  "created_at": "2026-08-22T07:13:13.000Z",
+  "updated_at": "2026-08-22T07:13:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "enthusiastic",
+    "html",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "lightweight-multimodal",
+    "medium-balanced",
+    "numeric-bibtex",
+    "unstructured-narrative",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "[2406.05496] Generalist Multimodal AI: A Review of Architectures ...",
+      "url": "https://arxiv.org/abs/2406.05496",
+      "snippet": "Multimodal models are expected to be a critical component to future advances in artificial intelligence. This field is starting to grow rapidly with a surge of new design elements motivated by the success of foundation models in natural language processing (NLP) and vision. It is widely hoped that further extending the foundation models to multiple modalities (e.g., text, image, video, sensor ..."
+    },
+    {
+      "title": "Multimodal learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Multimodal_learning",
+      "snippet": "Multimodal learning is a type of deep learning that integrates and processes multiple types of data, referred to as modalities, such as text, audio, images, or video. This integration allows for a more holistic understanding of complex data, improving model performance in tasks like visual question answering, cross-modal retrieval, [1] text-to-image generation, [2] aesthetic ranking, [3] and ..."
+    },
+    {
+      "title": "Can a Lightweight Multimodal Model Estimate LLM Reasoning Performance ...",
+      "url": "https://arxiv.org/pdf/2608.18591",
+      "snippet": "In this work, we explore if a lightweight multimodal model can accurately estimate the reasoning performance of a much larger LLM across variable reasoning budgets. To study this, we introduce Bud-getDoc, the first multimodal benchmark providing explicit supervision for model-budget-performance trade-offs across three document-centric tasks."
+    },
+    {
+      "title": "Lightweight Multi-Modal Ensemble Framework for Parkinson&#x27;s Disease ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11295039",
+      "snippet": "Lightweight Multi-Modal Ensemble Framework for Parkinson&#x27;s Disease Detection Abstract: Parkinson&#x27;s disease (PD) is a progressive neu-rodegenerative disorder affecting movement, characterized by dopaminergic neuron loss in the substantia nigra."
+    }
+  ]
+}

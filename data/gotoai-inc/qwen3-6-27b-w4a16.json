@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "GotoAI-Inc/Qwen3.6-27B-W4A16",
+  "slug": "gotoai-inc-qwen3-6-27b-w4a16",
+  "author": "GotoAI-Inc",
+  "url": "https://huggingface.co/GotoAI-Inc/Qwen3.6-27B-W4A16",
+  "created_at": "2026-08-22T05:55:59.000Z",
+  "updated_at": "2026-08-22T05:56:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "compressed-tensors",
+    "w4a16",
+    "int4",
+    "vllm",
+    "qwen3",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19430592566,
+  "storage_human": "19.4 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Avesed/Qwen3.6-27B-INT4-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/Avesed/Qwen3.6-27B-INT4-W4A16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.6 27B - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen-3-6-27b/",
+      "snippet": "Qwen3.6-27B is Qwen&#x27;s open-weight multimodal model for coding, agent workflows, long-context reasoning, and vision-language tasks. It combines a 27B causal language model with a vision encoder, supports image-text-to-text use, and offers a native 262,144-token context window extendable to about 1.01M tokens."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3.6-27b",
+      "snippet": "Agentic Coding: the model now handles frontend workflows and repository-level reasoning with greater fluency and precision. Thinking Preservation: we&#x27;ve introduced a new option to retain reasoning context from historical messages, streamlining iterative development and reducing overhead. For more details, please refer to our blog post Qwen3.6-27B ."
+    }
+  ]
+}

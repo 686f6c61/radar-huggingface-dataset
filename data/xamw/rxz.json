@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "xamw/rxz",
+  "slug": "xamw-rxz",
+  "author": "xamw",
+  "url": "https://huggingface.co/xamw/rxz",
+  "created_at": "2026-08-22T11:02:03.000Z",
+  "updated_at": "2026-08-22T11:02:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DreamX-World: A General-Purpose Interactive World Model - GitHub",
+      "url": "https://github.com/AMAP-ML/DreamX-World/tree/master/",
+      "snippet": "DreamX-World is a general-purpose world model for interactive world simulation. It generates diverse, high-fidelity worlds that users can explore, control, and transform with event prompts. The model is trained with a scalable data engine on Unreal Engine data, gameplay footage, and real-world videos, combined with camera estimation and strict data filtering to learn realistic dynamics and ..."
+    },
+    {
+      "title": "Running LLMs on AMD Radeon RX 590: What You Can Run",
+      "url": "https://www.fitmyllm.com/blog/gpu/radeon-rx-590",
+      "snippet": "Complete guide to running local AI on the AMD Radeon RX 590 with 8GB VRAM. Models that fit, expected performance, and recommended settings."
+    },
+    {
+      "title": "FreeTheAi Model Catalog - Free OpenAI-Compatible AI Models",
+      "url": "https://freetheai.xyz/models/",
+      "snippet": "Search the FreeTheAi model catalog: 80 active OpenAI-compatible chat, image, and tool-capable model aliases across 13 provider prefixes with live filtering and copyable IDs."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "RizzGen XL2 - V2 EXCLUSIVE - Free AI CHECKPOINT | Tensor.Art",
+      "url": "https://tensor.art/models/924737130532487602",
+      "snippet": "Download RizzGen XL2 - free CHECKPOINT SDXL 1.0 AI model on TENSOR. EXCLUSIVE, SDXL. By RizArtz"
+    }
+  ]
+}

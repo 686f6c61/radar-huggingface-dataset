@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ramosl-orenzo/model_591431181_deit_giant",
+  "slug": "ramosl-orenzo-model_591431181_deit_giant",
+  "author": "ramosl-orenzo",
+  "url": "https://huggingface.co/ramosl-orenzo/model_591431181_deit_giant",
+  "created_at": "2026-08-22T05:31:12.000Z",
+  "updated_at": "2026-08-22T05:31:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "bilinear",
+    "classification",
+    "constant-warmup",
+    "deit",
+    "gelu-tanh",
+    "giant",
+    "orthogonal",
+    "scalenorm",
+    "sparse",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Chat Online - GPT-5, Gemini & More ｜ NoteGPT",
+      "url": "https://notegpt.io/ai-chat",
+      "snippet": "Juggling multiple AI platforms wastes time and breaks your flow. AI Chat combines ChatGPT, Gemini, DeepSeek and more in one place, letting you chat, create, and get answers instantly—free and unlimited online."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    },
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    }
+  ]
+}

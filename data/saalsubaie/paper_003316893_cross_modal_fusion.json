@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "saalsubaie/paper_003316893_cross_modal_fusion",
+  "slug": "saalsubaie-paper_003316893_cross_modal_fusion",
+  "author": "saalsubaie",
+  "url": "https://huggingface.co/saalsubaie/paper_003316893_cross_modal_fusion",
+  "created_at": "2026-08-22T04:44:37.000Z",
+  "updated_at": "2026-08-22T04:44:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "cross-modal-fusion",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "neutral",
+    "numeric-apa",
+    "plain-text",
+    "structured-imrad",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2607.00746] GaussianFusion: Unified 3D Gaussian Representation for ...",
+      "url": "https://arxiv.org/abs/2607.00746",
+      "snippet": "The bird&#x27;s-eye view (BEV) representation enables multi-sensor features to be fused within a unified space, serving as the primary approach for achieving comprehensive 3D perception. However, the discrete grid representation of BEV leads to significant detail loss and limits feature alignment and cross-modal information interaction in multimodal fusion perception. In this work, we break from ..."
+    },
+    {
+      "title": "Awesome-Multimodal-Papers | A curated list of awesome Multimodal studies.",
+      "url": "https://friedrichor.github.io/Awesome-Multimodal-Papers/",
+      "snippet": "A curated list of awesome Multimodal studies. Awesome-Multimodal-Papers A curated list of awesome Multimodal studies. Contribution If you have published a high-quality paper or come across one that you think is valuable, feel free to contribute! To submit a paper, please open an issue and include the following information in the specified format: Submission Format ``` { \"title\": paper title ..."
+    },
+    {
+      "title": "Cross-Modal Consistency in Multimodal Large Language Models",
+      "url": "https://arxiv.org/abs/2411.09273",
+      "snippet": "Recent developments in multimodal methodologies have marked the beginning of an exciting era for models adept at processing diverse data types, encompassing text, audio, and visual content. Models like GPT-4V, which merge computer vision with advanced language processing, exhibit extraordinary proficiency in handling intricate tasks that require a simultaneous understanding of both textual and ..."
+    },
+    {
+      "title": "Knowledge-based cross-modal fusion for long-term forecasting of ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0926580525000767",
+      "snippet": "This paper addressed these challenges by proposing the Knowledge-based cross-modal fusion for long-term forecasting of Grouting parameters using Large Language Model (KG-LLM). This method captured the variations and relationships among grouting parameters by integrating domain-specific knowledge through construction knowledge and cross-prompt."
+    },
+    {
+      "title": "Measuring Cross-Modal Interactions in Multimodal Models",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/35452",
+      "snippet": "Abstract Integrating AI in healthcare can greatly improve patient care and system efficiency. However, the lack of explainability in AI systems (XAI) hinders their clinical adoption, especially in multimodal decision-making that combines various data sources. The majority of existing XAI methods focus on unimodal models, which fail to capture cross-modal interactions that are crucial for ..."
+    }
+  ]
+}

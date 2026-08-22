@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Danny-Dasilva/inflect-kokoro-voices",
+  "slug": "danny-dasilva-inflect-kokoro-voices",
+  "author": "Danny-Dasilva",
+  "url": "https://huggingface.co/Danny-Dasilva/inflect-kokoro-voices",
+  "created_at": "2026-08-04T18:10:37.000Z",
+  "updated_at": "2026-08-22T06:15:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "speech-synthesis",
+    "vits",
+    "pytorch",
+    "24khz",
+    "kokoro",
+    "synthetic-data",
+    "edge-ai",
+    "voice-pack",
+    "en",
+    "base_model:owensong/Inflect-Micro-v2",
+    "base_model:finetune:owensong/Inflect-Micro-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1738098886,
+  "storage_human": "1.7 GB",
+  "base_model": "owensong/Inflect-Micro-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Danny-Dasilva/inflect-kokoro-voices · Hugging Face",
+      "url": "https://huggingface.co/Danny-Dasilva/inflect-kokoro-voices",
+      "snippet": "Danny-Dasilva / inflect-kokoro-voices like 0 Text-to-Speech ONNX PyTorch English tts speech-synthesis vits 24khz kokoro synthetic-data edge-ai voice-pack License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Inflect Kokoro Voices Voices Quick start Repository layout Model details Training Evaluation Training ..."
+    },
+    {
+      "title": "Inflect Kokoro Voices - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/danny-dasilva/inflect-kokoro-voices",
+      "snippet": "🧠 Inflect Kokoro Voicesmodel by Danny Dasilva ⭐ 37.5 🧠 Model"
+    },
+    {
+      "title": "Danny-Dasilva (Danny Dasilva) - Hugging Face",
+      "url": "https://huggingface.co/Danny-Dasilva/datasets",
+      "snippet": "Danny-Dasilva 1 Follow Aexand&#x27;s profile pictureRyan2025A&#x27;s profile picturerodoviario&#x27;s profile picture 9 followers · 0 following"
+    },
+    {
+      "title": "GitHub - n33kos/kokoro-voices: Original, openly licensed voice models ...",
+      "url": "https://github.com/n33kos/kokoro-voices",
+      "snippet": "A community collection of original voice models for Kokoro TTS — free for anyone to use, for any purpose. Kokoro ships with a good set of voices, but a fixed one. This repository is a place to put the ones you make: voices that fill a gap in the official catalog, suit a particular character, or ..."
+    },
+    {
+      "title": "VoxWild Engines — Kokoro (Fast) & Chatterbox (Natural) Offline TTS Models",
+      "url": "https://voxwild.com/engines",
+      "snippet": "The two open-source AI speech engines inside VoxWild: Kokoro for instant CPU text-to-speech, Chatterbox for human-sounding narration and 6-second voice cloning. Full specs, licenses, and system requirements."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Ziyilstc/model_189513721_clip_nano",
+  "slug": "ziyilstc-model_189513721_clip_nano",
+  "author": "Ziyilstc",
+  "url": "https://huggingface.co/Ziyilstc/model_189513721_clip_nano",
+  "created_at": "2026-08-22T07:57:03.000Z",
+  "updated_at": "2026-08-22T07:57:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "clip",
+    "constant-warmup",
+    "gated-fusion",
+    "grouped-query",
+    "matching",
+    "nano",
+    "scalenorm",
+    "swish",
+    "xavier-uniform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "NanoClip — Turn Long Videos into Ready-to-Post Clips",
+      "url": "https://nanoclip.ai/",
+      "snippet": "Finds the moments worth posting, cuts around complete thoughts, adds captions, and reframes vertically for TikTok, Reels, and Shorts. In your browser, or from Claude Code, Codex, and other agents."
+    },
+    {
+      "title": "Thingiverse — Search & Download 3D Printing Models and STL Files",
+      "url": "https://thingiverse.app/",
+      "snippet": "Thingiverse search: find, preview and download free 3D printable models and STL files from across the web — no ads, no sign-up."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Text Models - NanoGPT",
+      "url": "https://nano-gpt.com/settings/models",
+      "snippet": "Access the newest AI models including ChatGPT, Claude, Gemini, Deepseek, and image/video models. Pay-as-you-go or subscribe. Local history by default."
+    }
+  ]
+}

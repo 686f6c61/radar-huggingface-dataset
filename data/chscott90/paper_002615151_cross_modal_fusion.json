@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chscott90/paper_002615151_cross_modal_fusion",
+  "slug": "chscott90-paper_002615151_cross_modal_fusion",
+  "author": "chscott90",
+  "url": "https://huggingface.co/chscott90/paper_002615151_cross_modal_fusion",
+  "created_at": "2026-08-22T06:07:44.000Z",
+  "updated_at": "2026-08-22T06:07:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "active",
+    "author-year",
+    "cross-modal-fusion",
+    "enthusiastic",
+    "latex-cvpr",
+    "medium-balanced",
+    "narrative-progressive",
+    "unstructured-narrative",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cross-modal gated feature enhancement for multimodal emotion ...",
+      "url": "https://www.nature.com/articles/s41598-025-11989-6",
+      "snippet": "A cross-modal guided gating mechanism is designed to strengthen single-modality features and utilize a third modality to improve bimodal feature fusion, boosting multimodal feature representation."
+    },
+    {
+      "title": "[2606.15038] Fusion is not one-size-fits-all: Cross-Modal ...",
+      "url": "https://arxiv.org/abs/2606.15038",
+      "snippet": "For MACE, cross-attention (one-hot) achieved the highest internal performance and image-guided co-attention achieved the best external performance. We therefore introduce a generalizable foundation model-based cross-modal alignment framework and provide the first systematic analysis of fusion behavior under modality imbalance in TTE prediction."
+    },
+    {
+      "title": "[2607.00746] GaussianFusion: Unified 3D Gaussian Representation for ...",
+      "url": "https://arxiv.org/abs/2607.00746",
+      "snippet": "The bird&#x27;s-eye view (BEV) representation enables multi-sensor features to be fused within a unified space, serving as the primary approach for achieving comprehensive 3D perception. However, the discrete grid representation of BEV leads to significant detail loss and limits feature alignment and cross-modal information interaction in multimodal fusion perception. In this work, we break from ..."
+    },
+    {
+      "title": "CMFFN: An efficient cross-modal feature fusion network for semantic ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0921889024002847",
+      "snippet": "To address the diversity in modal representations and the complexity arising from the addition of modalities, the fusion part of the CMFFN network adopts a cross-modal attention mechanism based on feature-level queries, while employing lightweight methods to effectively reduce training costs."
+    },
+    {
+      "title": "MemoCMT: multimodal emotion recognition using cross-modal ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-89202-x",
+      "snippet": "In addition, we are introducing a groundbreaking Model-Fusion module meticulously crafted to enable seamless interactions between modalities and within each modality itself."
+    }
+  ]
+}

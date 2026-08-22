@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Dimios45/yam-world-model",
+  "slug": "dimios45-yam-world-model",
+  "author": "Dimios45",
+  "url": "https://huggingface.co/Dimios45/yam-world-model",
+  "created_at": "2026-08-22T06:13:53.000Z",
+  "updated_at": "2026-08-22T06:14:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "robotics",
+    "world-model",
+    "dreamer",
+    "dreamer-v4",
+    "yam",
+    "lerobot",
+    "flax",
+    "video-to-video",
+    "dataset:Dimios45/yam-pick-duster-200",
+    "dataset:Dimios45/yam-pick-duster",
+    "dataset:Dimios45/yam_towel_fold",
+    "dataset:Dimios45/molmo_eval_90cmtopcam",
+    "dataset:Dimios45/molmo_eval_hitl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 390935734,
+  "storage_human": "391 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dimios45/yam-pick-duster at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Dimios45/yam-pick-duster/tree/main",
+      "snippet": "Datasets: Dimios45 / yam-pick-duster like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: robotics lerobot yam teleoperation imitation-learning manipulation Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main yam-pick-duster 415 MB 1 contributor History:5 commits Dimios45 ..."
+    },
+    {
+      "title": "Dimios45/yam-pick-duster-ee at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/Dimios45/yam-pick-duster-ee/tree/main",
+      "snippet": "Datasets: Dimios45 / yam-pick-duster-ee like 0 Tasks: Robotics Modalities: Video Size: < 1K Tags: robotics yam teleoperation imitation-learning manipulation end-effector + 2 Libraries: Datasets Croissant License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 main yam-pick-duster-ee 99.2 MB 1 contributor History:2 commits Dimios45 50 EE-space YAM demos (bspline ..."
+    },
+    {
+      "title": "Awesome World Models - GitHub",
+      "url": "https://github.com/knightnemo/Awesome-World-Models",
+      "snippet": "🌍 Awesome World Models 📜 A Curated List of Amazing Works in World Modeling, spanning applications in Embodied AI, Autonomous Driving, Natural Language Processing and Agents. Based on Awesome-World-Model-for-Autonomous-Driving and Awesome-World-Model-for-Robotics. Photo Credit: Gemini-Nano-Banana🍌."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - M-E-AGI-Lab/Awesome-World-Models: Official Repo of From Masks ...",
+      "url": "https://github.com/M-E-AGI-Lab/Awesome-World-Models",
+      "snippet": "According to the survey, a true world model is not a monolithic entity but a system synthesized from three core subsystems: The Generative Heart ( G $&#92;mathcal{G}$ ): The foundation that produces world states. It models the world&#x27;s dynamics, appearance, and task-relevant outcomes. The Interactive Loop ( F , C $&#92;mathcal{F},&#92;mathcal{C}$ ): Closes the action-perception cycle, enabling the model to ..."
+    }
+  ]
+}

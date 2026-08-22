@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jiahueic/juristiq-tax-schema",
+  "slug": "jiahueic-juristiq-tax-schema",
+  "author": "jiahueic",
+  "url": "https://huggingface.co/jiahueic/juristiq-tax-schema",
+  "created_at": "2026-08-22T05:02:12.000Z",
+  "updated_at": "2026-08-22T05:07:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250236961,
+  "storage_human": "250 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JuristIQ | Juristic",
+      "url": "https://www.juristic.io/product/juristiq",
+      "snippet": "Cross-Tool Intelligence JuristIQ works inside Structure, Timeline, and Flow — not alongside them. Analyse a corporate hierarchy, review a chronology for gaps, or monitor workflow bottlenecks, all from the same AI assistant. JuristIQ reasons across your entire workspace — documents, timelines, structures, and workflows."
+    },
+    {
+      "title": "For Tax Advisors | Juristic",
+      "url": "https://www.juristic.io/solutions/consultancies",
+      "snippet": "What tax advisory work actually needs. Real-time visibility into every engagement and workstream. Standardise methodologies and reuse across engagements. JuristIQ accelerates document analysis and finding extraction."
+    },
+    {
+      "title": "Data Protection & Artificial Intelligence - Data Protection ...",
+      "url": "https://juristiq.ch/",
+      "snippet": "We are legal & business professionals specializing in data privacy and artificial intelligence, and the founders of a business-focused platform that connects AI innovators with enterprise decision-makers. Our work operates at the intersection of law, technology, and market strategy, where we support boards, founders, and C-level executives in developing AI governance frameworks, market entry ..."
+    },
+    {
+      "title": "JuristAI | Legal Operations Agent",
+      "url": "https://juristai.org/",
+      "snippet": "Legal Operations Agent; for GC, litigators, law firms, legal teams, startups, & VCs. Superintelligence that tracks dockets 24/7. Practice-area & jurisdiction-specific autonomous agent that automates research, routine drafting, docket ingestion, onboarding, deadlines, and client correspondence."
+    },
+    {
+      "title": "PDF Description of H.r. 9501, the \"Ai Tax Integrity Act of 2026\"",
+      "url": "https://waysandmeans.house.gov/wp-content/uploads/2026/06/JCT-Description-of-HR-9501.pdf",
+      "snippet": "The House Committee on Ways and Means has scheduled a committee markup for July 1, 2026, of H.R. 9501, the \"AI Tax Integrity Act of 2026.\" This document,1 prepared by the staff of the Joint Committee on Taxation, provides a description of this bill. This document may be cited as follows: Joint Committee on Taxation, Description of H.R. 9501, the \"AI Tax Integrity Act of 2026\" (JCX-23 ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DEEPAKRAOstone/model_170401507_blip_large",
+  "slug": "deepakraostone-model_170401507_blip_large",
+  "author": "DEEPAKRAOstone",
+  "url": "https://huggingface.co/DEEPAKRAOstone/model_170401507_blip_large",
+  "created_at": "2026-08-22T07:15:16.000Z",
+  "updated_at": "2026-08-22T07:15:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "batchnorm",
+    "blip",
+    "exponential",
+    "gated-fusion",
+    "large",
+    "multi-query",
+    "multitask",
+    "orthogonal",
+    "swish",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Salesforce/blip-image-captioning-large · Hugging Face",
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large",
+      "snippet": "We strongly recommend users evaluate and address potential concerns related to accuracy, safety, and fairness before deploying this model. We encourage users to consider the common limitations of AI, comply with applicable laws, and leverage best practices when selecting use cases, particularly for high-risk scenarios where errors or misuse ..."
+    },
+    {
+      "title": "GitHub - salesforce/BLIP: PyTorch code for BLIP: Bootstrapping Language ...",
+      "url": "https://github.com/salesforce/BLIP",
+      "snippet": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation Announcement: BLIP is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the PyTorch code of the BLIP paper [blog]. The code has been tested on PyTorch 1.10."
+    },
+    {
+      "title": "Salesforce/blip-vqa-capfilt-large · Hugging Face",
+      "url": "https://huggingface.co/Salesforce/blip-vqa-capfilt-large",
+      "snippet": "We strongly recommend users evaluate and address potential concerns related to accuracy, safety, and fairness before deploying this model. We encourage users to consider the common limitations of AI, comply with applicable laws, and leverage best practices when selecting use cases, particularly for high-risk scenarios where errors or misuse ..."
+    },
+    {
+      "title": "Blip-Image-Captioning-Large-ONNX - GitHub",
+      "url": "https://github.com/MNaseerSubhani/Blip-Image-Captioning-Large-ONNX",
+      "snippet": "Blip-Image-Captioning-Large-ONNX This GitHub repository serves as a comprehensive toolkit for converting the Salesforce/blip-image-captioning-large model, originally hosted on Hugging Face, to the ONNX (Open Neural Network Exchange) format."
+    },
+    {
+      "title": "[2201.12086] BLIP: Bootstrapping Language-Image Pre-training for ...",
+      "url": "https://arxiv.org/abs/2201.12086",
+      "snippet": "Vision-Language Pre-training (VLP) has advanced the performance for many vision-language tasks. However, most existing pre-trained models only excel in either understanding-based tasks or generation-based tasks. Furthermore, performance improvement has been largely achieved by scaling up the dataset with noisy image-text pairs collected from the web, which is a suboptimal source of supervision ..."
+    }
+  ]
+}

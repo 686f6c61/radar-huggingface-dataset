@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lomoretti/paper_019365368_grounded_language",
+  "slug": "lomoretti-paper_019365368_grounded_language",
+  "author": "lomoretti",
+  "url": "https://huggingface.co/lomoretti/paper_019365368_grounded_language",
+  "created_at": "2026-08-22T08:25:41.000Z",
+  "updated_at": "2026-08-22T08:25:48.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "concise-analytical",
+    "graphic-visual",
+    "grounded-language",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "latex-icml",
+    "numeric-bibtex",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2210.05359] Mind&#x27;s Eye: Grounded Language Model Reasoning through ...",
+      "url": "https://arxiv.org/abs/2210.05359",
+      "snippet": "Successful and effective communication between humans and AI relies on a shared experience of the world. By training solely on written text, current language models (LMs) miss the grounded experience of humans in the real-world -- their failure to relate language to the physical world causes knowledge to be misrepresented and obvious mistakes in their reasoning. We present Mind&#x27;s Eye, a ..."
+    },
+    {
+      "title": "Rommoretti/paper_020212281_grounded_language at main",
+      "url": "https://huggingface.co/Rommoretti/paper_020212281_grounded_language/tree/main",
+      "snippet": "Rommoretti / paper_020212281_grounded_language like 0 enthusiastic footnote grounded-language highlight-bullet intro-problem-solution-validation-future medium-balanced passive plain-text theoretical-rigorous License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main paper_020212281_grounded_language 6.12 kB Ctrl+K Ctrl+K 1 contributor History:2 commits ..."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "PDF M E : GROUNDED LANGUAGE MODEL REA SONING THROUGH SIMULATION - OpenReview",
+      "url": "https://openreview.net/pdf/0a6dcae7aef4fb3b11746b7175c70cfa12d4c3a3.pdf",
+      "snippet": "ABSTRACT Successful and effective communication between humans and AI relies on a shared experience of the world. By training solely on written text, current language models (LMs) miss the grounded experience of humans in the real-world—their failure to relate language to the physical world causes knowledge to be misrepresented and obvious mistakes in their reasoning. We present Mind&#x27;s Eye ..."
+    },
+    {
+      "title": "Mind&#x27;S Eye: Grounded Language Model Rea-",
+      "url": "https://arxiv.org/pdf/2210.05359",
+      "snippet": "ABSTRACT Successful and effective communication between humans and AI relies on a shared experience of the world. By training solely on written text, current language models (LMs) miss the grounded experience of humans in the real-world—their failure to relate language to the physical world causes knowledge to be misrepresented and obvious mistakes in their reasoning. We present Mind&#x27;s Eye ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "turnercore/needle2-automaticity-v9",
+  "slug": "turnercore-needle2-automaticity-v9",
+  "author": "turnercore",
+  "url": "https://huggingface.co/turnercore/needle2-automaticity-v9",
+  "created_at": "2026-08-22T10:10:06.000Z",
+  "updated_at": "2026-08-22T10:10:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "cactus-needle",
+  "languages": [],
+  "tags": [
+    "cactus-needle",
+    "function-calling",
+    "tool-use",
+    "automaticity",
+    "needle2",
+    "cact",
+    "experimental",
+    "base_model:Cactus-Compute/needle2",
+    "base_model:finetune:Cactus-Compute/needle2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13737807,
+  "storage_human": "14 MB",
+  "base_model": "Cactus-Compute/needle2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "turnercore/needle-automaticity-v9 · Hugging Face",
+      "url": "https://huggingface.co/turnercore/needle-automaticity-v9",
+      "snippet": "Archival public release of completed Automaticity V9 full-model checkpoint research artifacts. Training datasets, row-level prompts, predictions, and detailed evaluation evidence remain private."
+    },
+    {
+      "title": "turnercore/needle-automaticity-v9 at main - Hugging Face",
+      "url": "https://huggingface.co/turnercore/needle-automaticity-v9/tree/main",
+      "snippet": "turnercore / needle-automaticity-v9 like 0 Text Generation Safetensors function-calling tool-use automaticity Model card FilesFiles and versions xet Community Copy to bucket new main needle-automaticity-v9 105 MB Ctrl+K Ctrl+K 1 contributor History:2 commits turnercore Add files using upload-large-folder tool 3f45860 verified3 days ago ..."
+    },
+    {
+      "title": "GitHub - cactus-compute/needle: 14MB foundation model for tiny devices ...",
+      "url": "https://github.com/cactus-compute/needle",
+      "snippet": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots. - cactus-compute/needle"
+    },
+    {
+      "title": "Needle 2 - The 14 MB Agentic LLM for Tiny Devices | Cactus",
+      "url": "https://cactuscompute.com/needle",
+      "snippet": "An open 45M-parameter model for tool calling, device use, and structured extraction. Needle 2 runs as a 14 MB binary in 28 MB of session RAM."
+    },
+    {
+      "title": "Meet Needle 2: An Open 45M-Parameter Tool-Calling Model That Ships as a ...",
+      "url": "https://www.marktechpost.com/2026/08/13/cactus-compute-needle-2-45m-parameter-tool-calling-model/",
+      "snippet": "Cactus Compute released Needle 2, an open 45M-parameter tool-calling model shipping as a 14MB binary using 28MB RAM."
+    }
+  ]
+}

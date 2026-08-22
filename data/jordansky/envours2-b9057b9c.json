@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Jordansky/envours2-b9057b9c",
+  "slug": "jordansky-envours2-b9057b9c",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/envours2-b9057b9c",
+  "created_at": "2026-08-22T09:11:07.000Z",
+  "updated_at": "2026-08-22T09:11:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/Jordansky--oursr1-d53997be",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 795306584,
+  "storage_human": "795 MB",
+  "base_model": "None",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Net-Model",
+      "url": "https://www.net-model.com/SkyJordan",
+      "snippet": "Net-Model.com"
+    },
+    {
+      "title": "Jordansky/instruct_text_0957c01da5ff92fccf02 · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/instruct_text_0957c01da5ff92fccf02",
+      "snippet": "Instructions to use Jordansky/instruct_text_0957c01da5ff92fccf02 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Jordansky/instruct_text_0957c01da5ff92fccf02 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"Jordansky ..."
+    },
+    {
+      "title": "Jordansky/2507-r1 · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/2507-r1",
+      "snippet": "Jordansky / 2507-r1 like 0 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Jordansky/534b4242-base · Hugging Face",
+      "url": "https://huggingface.co/Jordansky/534b4242-base",
+      "snippet": "Jordansky / 534b4242-base like 0 PEFT Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Adapter Models for Jordansky/augmented-f560e4e6ee71e78d - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:Jordansky/augmented-f560e4e6ee71e78d",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree Reset Jordansky/augmented-f560e4e6ee71e78d Adapters Finetunes Quantizations Merges Apps Inference Providers Select all Groq Novita Cerebras SambaNova Nscale fal Hyperbolic Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed Misc ..."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Phil2Sat/Omega-Convergence-27B-v1.0-SSMFIX-SOMPOA",
+  "slug": "phil2sat-omega-convergence-27b-v1-0-ssmfix-sompoa",
+  "author": "Phil2Sat",
+  "url": "https://huggingface.co/Phil2Sat/Omega-Convergence-27B-v1.0-SSMFIX-SOMPOA",
+  "created_at": "2026-08-22T07:50:51.000Z",
+  "updated_at": "2026-08-22T08:54:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "quantized",
+    "w8a16",
+    "fp8",
+    "conversational",
+    "base_model:ReadyArt/Omega-Convergence-27B-v1.0",
+    "base_model:quantized:ReadyArt/Omega-Convergence-27B-v1.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996501,
+  "storage_human": "55.6 GB",
+  "base_model": "ReadyArt/Omega-Convergence-27B-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phil2Sat/Omega-Convergence-27B-v1.0-I-Compact-MXFP4_ALPHA_TESTING ...",
+      "url": "https://huggingface.co/Phil2Sat/Omega-Convergence-27B-v1.0-I-Compact-MXFP4_ALPHA_TESTING",
+      "snippet": "Phil2Sat / Omega-Convergence-27B-v1.-I-Compact-MXFP4_ALPHA_TESTING like 0 Model card FilesFiles and versions xet Community Copy to bucket new Frankenquant test Downloads last month -"
+    },
+    {
+      "title": "phil2sat · GitHub",
+      "url": "https://github.com/phil2sat",
+      "snippet": "Forked from leejet/stable-diffusion.cpp Diffusion model (SD,Flux,Wan,...) inference in pure C/C++ C++"
+    },
+    {
+      "title": "ReadyArt/Omega-Convergence-27B-v1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Omega-Convergence-27B-v1.0/tree/main",
+      "snippet": "ReadyArt / Omega-Convergence-27B-v1. like 4 Follow Ready.Art 1.54k Safetensors qwen3_5 nsfw explicit roleplay unaligned dangerous ERP Other License License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "convert/tools at main · phil2sat/convert · GitHub",
+      "url": "https://github.com/phil2sat/convert/tree/main/tools",
+      "snippet": "Contribute to phil2sat/convert development by creating an account on GitHub."
+    },
+    {
+      "title": "Omega-Convergence-27B-v1.0-W8A16-FP8 - FriendliAI",
+      "url": "https://friendli.ai/models/hoborific/Omega-Convergence-27B-v1.0-W8A16-FP8",
+      "snippet": "Deploy Omega-Convergence-27B-v1.-W8A16-FP8 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

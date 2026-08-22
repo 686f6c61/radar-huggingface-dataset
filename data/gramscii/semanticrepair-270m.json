@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Gramscii/SemanticRepair-270M",
+  "slug": "gramscii-semanticrepair-270m",
+  "author": "Gramscii",
+  "url": "https://huggingface.co/Gramscii/SemanticRepair-270M",
+  "created_at": "2026-08-22T10:14:15.000Z",
+  "updated_at": "2026-08-22T10:18:33.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemma3_text",
+    "query-rewriting",
+    "routing",
+    "retrieval",
+    "grpo",
+    "multilingual",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-3-270m",
+    "base_model:quantized:google/gemma-3-270m",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 869354439,
+  "storage_human": "869 MB",
+  "base_model": "google/gemma-3-270m",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 3 270M: Run AI in 125MB - Google&#x27;s Tiniest Model (2025) | Local ...",
+      "url": "https://localaimaster.com/models/gemma-3-270m",
+      "snippet": "Gemma 3 270M fits in 125MB RAM (quantized). 51.2% IFEval, runs on phones, uses 0.75% battery. 6T token training. Edge AI deployment guide."
+    },
+    {
+      "title": "FnT-ai/gemma-270m-from-scratch - GitHub",
+      "url": "https://github.com/FnT-ai/gemma-270m-from-scratch",
+      "snippet": "Building a 270M-Parameter Gemma-Style Language Model from Scratch A complete PyTorch implementation of a 270M-parameter decoder-only transformer inspired by the Gemma architecture. This project demonstrates the complete workflow for developing a small language model, including data preprocessing, tokenizer preparation, transformer implementation, training, evaluation, and inference."
+    },
+    {
+      "title": "google/functiongemma-270m-it · Hugging Face",
+      "url": "https://huggingface.co/google/functiongemma-270m-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "On Semantic Loss Fine-Tuning Approach for Preventing Model Collapse in ...",
+      "url": "https://arxiv.org/html/2605.05438v1",
+      "snippet": "Abstract Standard fine-tuning of transformer models on causal reasoning tasks leads to catastrophic model collapse, where models learn trivial solutions such as always predicting \"Yes\" or \"No\" regardless of input structure. We demonstrate that fine-tuning Gemma 270M on transitivity and d-separation tasks without semantic loss results in 100% collapse rate, with models achieving ..."
+    }
+  ]
+}

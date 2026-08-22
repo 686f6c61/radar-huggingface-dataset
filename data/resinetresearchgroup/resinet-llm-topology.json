@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ResiNetResearchGroup/ResiNet-LLM-topology",
+  "slug": "resinetresearchgroup-resinet-llm-topology",
+  "author": "ResiNetResearchGroup",
+  "url": "https://huggingface.co/ResiNetResearchGroup/ResiNet-LLM-topology",
+  "created_at": "2026-06-29T14:31:48.000Z",
+  "updated_at": "2026-08-22T09:27:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 560157,
+  "storage_human": "560157 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ResiNetResearchGroup/ResiNet-LLM-topology · Hugging Face",
+      "url": "https://huggingface.co/ResiNetResearchGroup/ResiNet-LLM-topology",
+      "snippet": "ResiNetResearchGroup / ResiNet-LLM-topology like 0 Follow ResiNet AI Research 2 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ResiNetResearchGroup/ResiNet-LLM-topology at main",
+      "url": "https://huggingface.co/ResiNetResearchGroup/ResiNet-LLM-topology/tree/main",
+      "snippet": "0 Follow ResiNet AI Research 2 Model card FilesFiles and versions xet Community Copy to bucket new main ResiNet-LLM-topology 1.1 MB Ctrl+K Ctrl+K 1 contributor History:5 commits KholoudLIA Delete resinet_llm_prompt.py 84f792a verified14 days ago __pycache__Upload folder using huggingface_hub15 days ago dataUpload folder using huggingface_hub15 ..."
+    },
+    {
+      "title": "An LLM-Based Framework for Intent-Driven Network Topology Design",
+      "url": "https://arxiv.org/html/2607.00292v1",
+      "snippet": "In addition, we analyze common failure modes, including interface mismatches and directional inconsistencies in generated topologies. Overall, this work provides a systematic benchmark for understanding how LLMs handle structural and resilience constraints in topology synthesis, and supports informed model selection for AI-driven network design."
+    },
+    {
+      "title": "GitHub - yangshanchao/ResiNet",
+      "url": "https://github.com/yangshanchao/ResiNet",
+      "snippet": "Contribute to yangshanchao/ResiNet development by creating an account on GitHub."
+    },
+    {
+      "title": "ResiNetResearchGroup/ResiNet-LLM-topology at main",
+      "url": "https://huggingface.co/ResiNetResearchGroup/ResiNet-LLM-topology/tree/main/data",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

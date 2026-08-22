@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Puro-2B-Base-i1-GGUF",
+  "slug": "mradermacher-puro-2b-base-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Puro-2B-Base-i1-GGUF",
+  "created_at": "2026-08-22T05:02:43.000Z",
+  "updated_at": "2026-08-22T05:34:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "base-model",
+    "pretraining",
+    "fully-open",
+    "fp8",
+    "rtx-5090",
+    "en",
+    "zh",
+    "dataset:thu-pacman/Puro-2B",
+    "base_model:thu-pacman/Puro-2B-Base",
+    "base_model:quantized:thu-pacman/Puro-2B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 516292,
+  "parameters_human": "516292",
+  "storage_bytes": 2094560,
+  "storage_human": "2 MB",
+  "base_model": "thu-pacman/Puro-2B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - p-e-w/heretic: Fully automatic censorship removal for language ...",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "The Heretic version, generated without any human effort, achieves the same level of refusal suppression as other abliterations, but at a much lower KL divergence, indicating less damage to the original model&#x27;s capabilities. (You can reproduce those numbers using Heretic&#x27;s built-in evaluation functionality, e.g. heretic --model google/gemma-3-12b-it --evaluate-model p-e-w/gemma-3-12b-it-heretic ..."
+    },
+    {
+      "title": "Where to Download GGUF Models - Best Sources & Direct Links (2025)",
+      "url": "https://ggufloader.github.io/download-gguf-models.html",
+      "snippet": "Download GGUF models from HuggingFace, TheBloke, bartowski. Direct links to Mistral 7B, Llama 3.2, Qwen 2.5, DeepSeek, Phi-3 — Q4_K_M and Q5_K_M quantized for local AI."
+    }
+  ]
+}

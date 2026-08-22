@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ggarniersebastien1987/paper_022904266_video_understanding",
+  "slug": "ggarniersebastien1987-paper_022904266_video_understanding",
+  "author": "ggarniersebastien1987",
+  "url": "https://huggingface.co/ggarniersebastien1987/paper_022904266_video_understanding",
+  "created_at": "2026-08-22T07:26:47.000Z",
+  "updated_at": "2026-08-22T07:26:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "compact",
+    "empirical-focused",
+    "footnote",
+    "impersonal",
+    "latex-cvpr",
+    "medium-balanced",
+    "neutral",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "GitHub - OpenGVLab/InternVideo: [ECCV2024] Video Foundation Models ...",
+      "url": "https://github.com/OpenGVLab/InternVideo",
+      "snippet": "This repo contains InternVideo series and related works in video foundation models. InternVideo: general video foundation models via generative and discriminative learning InternVideo2: scaling video foundation models for multimodal video understanding InternVideo2.5: empowering video mllms with long and rich context modeling"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

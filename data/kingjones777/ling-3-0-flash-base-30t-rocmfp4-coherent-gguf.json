@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Ling-3.0-flash-base-30T-ROCmFP4-COHERENT-GGUF",
+  "slug": "kingjones777-ling-3-0-flash-base-30t-rocmfp4-coherent-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Ling-3.0-flash-base-30T-ROCmFP4-COHERENT-GGUF",
+  "created_at": "2026-08-22T03:24:24.000Z",
+  "updated_at": "2026-08-22T03:30:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "amd-strix-halo",
+    "gfx1151",
+    "ryzen-ai-max",
+    "ryzen-ai-max-395",
+    "radeon-8060s",
+    "mtp",
+    "speculative-decoding",
+    "base-model",
+    "pretrained",
+    "ling",
+    "bailing-hybrid",
+    "quantized",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-flash-base-30T",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash-base-30T",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 72123709248,
+  "storage_human": "72.1 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash-base-30T",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ling-3.0-flash-base-ROCmFP4-COHERENT-GGUF - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Ling-3.0-flash-base-ROCmFP4-COHERENT-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash-base-30T · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-base-30T",
+      "snippet": "This enables broad model capabilities while activating just 5.1B (Non-emb) parameters per token; Native hybrid linear attention: Ling-3.0 series adopt a native hybrid linear attention architecture from the very start of pretraining by combining KDA with Gated MLA to enable efficient processing of long-context inputs."
+    },
+    {
+      "title": "Ling 3.0 Flash Base 30T by inclusionAI - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/inclusionAI%2FLing-3.0-flash-base-30T,6kvYgqY6wPMRM4cAMjKhpB",
+      "snippet": "Ling 3.0 Flash Base 30T is an open-source 127.5b LLM by inclusionAI. VRAM 255.9GB, 8K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Ling-3.0-flash-base-30T · Models",
+      "url": "https://www.modelscope.cn/models/inclusionAI/Ling-3.0-flash-base-30T",
+      "snippet": "Base Model Evaluation To systematically assess the capabilities of the base model, we use a self-built comprehensive benchmark suite covering several key domains, including mathematics, coding, reasoning, multilingual understanding, and long-context comprehension. The performance of the pretrained base checkpoint, i.e., Ling-3.-flash-base, is compared below:"
+    },
+    {
+      "title": "InclusionAI Ling 3.0 Flash Complete Guide: 124B MoE with Hybrid Reasoning",
+      "url": "https://www.aimadetools.com/blog/ling-3-0-flash-complete-guide/",
+      "snippet": "Ling 3.0 Flash is a 124B MoE model with 5.1B active parameters. Hybrid reasoning mode, 262K context, free on OpenRouter. Specs and setup."
+    }
+  ]
+}

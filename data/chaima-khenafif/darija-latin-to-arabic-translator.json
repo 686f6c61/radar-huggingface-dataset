@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Chaima-KHENAFIF/darija-latin-to-arabic-translator",
+  "slug": "chaima-khenafif-darija-latin-to-arabic-translator",
+  "author": "Chaima-KHENAFIF",
+  "url": "https://huggingface.co/Chaima-KHENAFIF/darija-latin-to-arabic-translator",
+  "created_at": "2026-08-22T07:50:11.000Z",
+  "updated_at": "2026-08-22T08:08:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1117333717,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaima-KHENAFIF/algerian-darija-script-detector · Hugging Face",
+      "url": "https://huggingface.co/Chaima-KHENAFIF/algerian-darija-script-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chaima-Khenafif03/darija-script-detector - GitHub",
+      "url": "https://github.com/chaima-Khenafif03/darija-script-detector",
+      "snippet": "Classifies Algerian Darija text as Arabic-script, Latin-script, or non-Darija"
+    },
+    {
+      "title": "Darija Translator - Multilingual Online Voice and Text Translator",
+      "url": "https://www.traductordarija.com/en",
+      "snippet": "Easily translate between multiple languages including Moroccan, Algerian and Tunisian Darija. Free translation tool with support for text and voice of Maghreb Arabic dialects."
+    },
+    {
+      "title": "Arabic LLM Models - Hugging Face",
+      "url": "https://huggingface.co/blog/silma-ai/arabic-llm-models-list",
+      "snippet": "A Blog post by SILMA AI - Arabic Language Models on Hugging Face"
+    },
+    {
+      "title": "Arabic and Darija NLP Resources - GitHub",
+      "url": "https://github.com/MoroccoAI/Arabic-Darija-NLP-Resources",
+      "snippet": "A curated collection of resources and repositories for Natural Language Processing (NLP) tasks specific to Darija, the Moroccan Arabic dialect. This repository aims to provide students and researchers with a comprehensive collection of tools, datasets, models, and code examples to facilitate Darija processing and analysis."
+    }
+  ]
+}

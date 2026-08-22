@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "demishra/model_627480026_beit_giant",
+  "slug": "demishra-model_627480026_beit_giant",
+  "author": "demishra",
+  "url": "https://huggingface.co/demishra/model_627480026_beit_giant",
+  "created_at": "2026-08-22T06:16:29.000Z",
+  "updated_at": "2026-08-22T06:16:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "beit",
+    "bilinear",
+    "constant-warmup",
+    "gelu",
+    "giant",
+    "layernorm",
+    "lion",
+    "multitask",
+    "standard",
+    "trunc-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Top 10 Best AI Beauty Model Generator | 2026 Edition",
+      "url": "https://zipdo.co/best/ai-beauty-model-generator/",
+      "snippet": "Top 10 ranking of ai beauty model generator tools with key strengths and tradeoffs for creating realistic beauty images using Rawshot AI, Remaker, or HeyGen."
+    }
+  ]
+}

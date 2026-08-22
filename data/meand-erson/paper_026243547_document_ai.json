@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "meand-erson/paper_026243547_document_ai",
+  "slug": "meand-erson-paper_026243547_document_ai",
+  "author": "meand-erson",
+  "url": "https://huggingface.co/meand-erson/paper_026243547_document_ai",
+  "created_at": "2026-08-22T06:32:51.000Z",
+  "updated_at": "2026-08-22T06:32:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "detailed-descriptive",
+    "document-ai",
+    "enthusiastic",
+    "first-person-plural",
+    "highlight-bullet",
+    "intro-background-approach-eval-conclusion",
+    "latex-cvpr",
+    "long-detailed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF hai.stanford.edu",
+      "url": "https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf",
+      "snippet": "1 Contents Introduction Top Takeaways 1 Research and Development 2 Technical Performance 3 Responsible AI 4 Economy 5 Science 6 Medicine 7 Education 8 Policy and ..."
+    },
+    {
+      "title": "AI Content Detector | ChatGPT, Copilot Claude and 40+",
+      "url": "https://contentdetector.org/",
+      "snippet": "AI Content Detector for Real-World Writing ContentDetector.org helps you check if a passage was likely written by an AI model. Paste text, upload a file, or drop in a URL. In a few seconds you get a clear score, section-by-section highlights, and simple guidance to keep your content authentic and publish-ready. Built for editors, marketers, educators, and teams that care about trust."
+    },
+    {
+      "title": "AI Detector & Checker for Text, PDFs | Fast & accurate - SciSpace",
+      "url": "https://scispace.com/ai-detector",
+      "snippet": "SciSpace AI Detector instantly spots ChatGPT or GPT-4 text, rates originality, and explains risky lines - helping researchers keep assignments and papers authentic."
+    },
+    {
+      "title": "Document AI documentation - Google Cloud",
+      "url": "https://docs.cloud.google.com/document-ai/docs",
+      "snippet": "Document AI is a document understanding platform that takes unstructured data from documents and transforms it into structured data, making it easier to understand, analyze, and consume. Document AI uses machine learning and Google Cloud to help you create scalable, end-to-end, cloud-based document processing applications."
+    },
+    {
+      "title": "Google Docs",
+      "url": "https://docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    }
+  ]
+}

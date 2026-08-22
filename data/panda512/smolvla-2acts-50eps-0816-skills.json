@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Panda512/smolvla-2acts-50eps-0816-skills",
+  "slug": "panda512-smolvla-2acts-50eps-0816-skills",
+  "author": "Panda512",
+  "url": "https://huggingface.co/Panda512/smolvla-2acts-50eps-0816-skills",
+  "created_at": "2026-08-22T04:43:20.000Z",
+  "updated_at": "2026-08-22T04:44:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Panda512/record-0816-skills",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720076,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Panda512/smolvla-2acts-50eps-0816 · Hugging Face",
+      "url": "https://huggingface.co/Panda512/smolvla-2acts-50eps-0816",
+      "snippet": "Instructions to use Panda512/smolvla-2acts-50eps-0816 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Panda512/smolvla-2acts-50eps-0816 with LeRobot:"
+    },
+    {
+      "title": "Panda512/smolvla-2acts-50eps · Hugging Face",
+      "url": "https://huggingface.co/Panda512/smolvla-2acts-50eps",
+      "snippet": "Panda512 / smolvla-2acts-50eps like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 3 Safetensors Model size 0.5B params Tensor type F32 · BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "SmolVLA - aegean.ai",
+      "url": "https://aegean.ai/book/vla-agents/smolvla",
+      "snippet": "SmolVLA is Hugging Face&#x27;s compact Vision-Language-Action model, built on top of the LeRobot library. It is designed to be small enough to fine-tune and deploy on a single consumer GPU, while remaining competitive with larger open VLAs on standard manipulation benchmarks."
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/smolvla-vision-language-action-model-affordable-robotics-vlad-bogolin-bx1ae",
+      "snippet": "Today&#x27;s paper introduces SmolVLA, a compact and efficient vision-language-action model designed for affordable robotics applications. Unlike existing large-scale robotic models that require ..."
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    }
+  ]
+}

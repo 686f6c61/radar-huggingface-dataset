@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "ai4bharat/indic-parler-tts",
+  "slug": "ai4bharat-indic-parler-tts",
+  "author": "ai4bharat",
+  "url": "https://huggingface.co/ai4bharat/indic-parler-tts",
+  "created_at": "2024-10-28T08:29:09.000Z",
+  "updated_at": "2025-09-24T06:25:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ks",
+    "or",
+    "ml",
+    "mr",
+    "ne",
+    "pa",
+    "sa",
+    "sd",
+    "ta",
+    "te",
+    "ur",
+    "om"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parler_tts",
+    "text-generation",
+    "text-to-speech",
+    "annotation",
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ks",
+    "or",
+    "ml",
+    "mr",
+    "ne",
+    "pa",
+    "sa",
+    "sd",
+    "ta",
+    "te",
+    "ur",
+    "om",
+    "dataset:ai4b-hf/GLOBE-annotated",
+    "arxiv:2402.01912",
+    "doi:10.57967/hf/5683",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 298,
+  "downloads_30d": 388094,
+  "trending_score": 7,
+  "parameters": 937803241,
+  "parameters_human": "937.8M",
+  "storage_bytes": 3753117163,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai4bharat/indic-parler-tts · Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/indic-parler-tts?library=transformers",
+      "snippet": "Indic Parler-TTS Natural language guidance of high-fidelity text-to-speech with synthetic annotations"
+    },
+    {
+      "title": "Indic Parler TTS - ai4bharat.iitm.ac.in",
+      "url": "https://ai4bharat.iitm.ac.in/areas/model/TTS/Indic%20Parler%20TTS/",
+      "snippet": "Indic Parler-TTS is a state-of-the-art TTS system, that brings voices to life in 23 Indian languages and English, delivering realistic, expressive, and highly controllable speech synthesis. With fine-grained text control over speaker identity, emotion, and prosody, IndicParler-TTS eliminates the need for reference speech prompts, making speech generation more flexible and accessible. It ..."
+    },
+    {
+      "title": "AI4Bharat",
+      "url": "https://ai4bharat.iitm.ac.in/areas/tts/",
+      "snippet": "Indic Parler-TTS is a state-of-the-art TTS system, that brings voices to life in 23 Indian languages and English, delivering realistic, expressive, and highly controllable speech synthesis."
+    },
+    {
+      "title": "AI4Bharat Models",
+      "url": "https://models.ai4bharat.org/",
+      "snippet": "Indic Text-to-Speech Indic-TTS is an on-going research focusing on building multispeaker text-to-speech models for Indic languages. TTS involves two different models - an acoustic model, which is responsible for generating waveform for a given text; and a vocoder model, which is responsible for synthesizing voice from the generated waveform."
+    },
+    {
+      "title": "ai4bharat/indic-parler-tts-pretrained · Hugging Face",
+      "url": "https://huggingface.co/ai4bharat/indic-parler-tts-pretrained",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

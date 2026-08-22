@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "noahmueller/paper_023709333_audio_visual_learning",
+  "slug": "noahmueller-paper_023709333_audio_visual_learning",
+  "author": "noahmueller",
+  "url": "https://huggingface.co/noahmueller/paper_023709333_audio_visual_learning",
+  "created_at": "2026-08-22T06:48:11.000Z",
+  "updated_at": "2026-08-22T06:48:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "audio-visual-learning",
+    "compact",
+    "endnote",
+    "latex-arxiv",
+    "measured",
+    "narrative-progressive",
+    "passive",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Free AI Chat Online - GPT-5, Gemini & More ｜ NoteGPT",
+      "url": "https://notegpt.io/ai-chat",
+      "snippet": "AI Chat is an online tool that lets you chat with ChatGPT, Gemini, DeepSeek and more. You can ask questions, get instant answers, brainstorm ideas, create content, and explore knowledge in real time. It&#x27;s perfect for students, creators, and professionals who want to learn, write, research, or solve problems quickly. With AI Chat, you can access the latest AI models free online, enjoy ..."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2410.11711",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=qGlN7KkAAAAJ&hl=en",
+      "snippet": "‪PriorLabs‬ - ‪‪Cited by 2,326‬‬ - ‪tabular data‬ - ‪tabular foundation models‬ - ‪genetics‬ - ‪epidemiology‬"
+    },
+    {
+      "title": "Audio-Visual Intelligence in Large Foundation Models",
+      "url": "https://arxiv.org/abs/2605.04045",
+      "snippet": "Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also for controllable ..."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX",
+  "slug": "junafinity-qwen-3-8-27b-uncensored-8-bit-mlx",
+  "author": "junafinity",
+  "url": "https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX",
+  "created_at": "2026-08-15T06:48:23.000Z",
+  "updated_at": "2026-08-22T09:40:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx-vlm",
+  "languages": [],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "abliterated",
+    "uncensored",
+    "zerofuse",
+    "multimodal",
+    "image-text-to-text",
+    "mlx",
+    "quantized",
+    "8-bit",
+    "apple-silicon",
+    "conversational",
+    "arxiv:2406.11717",
+    "base_model:junafinity/Qwen-3.8-27B-Uncensored",
+    "base_model:quantized:junafinity/Qwen-3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 6392,
+  "trending_score": 0,
+  "parameters": 8027131120,
+  "parameters_human": "8.03B",
+  "storage_bytes": 29521207804,
+  "storage_human": "29.5 GB",
+  "base_model": "junafinity/Qwen-3.8-27B-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX · Hugging Face",
+      "url": "https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX",
+      "snippet": "8-bit MLX quantization of junafinity/Qwen-3.8-27B-Uncensored, built to run on Apple Silicon via MLX. The parent model is an abliterated build of Qwen/Qwen3.8-27B — the refusal direction has been orthogonalized out of the language model&#x27;s residual-writing weights."
+    },
+    {
+      "title": "junafinity/Qwen-3.8-27B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "Qwen-3.8-27B-Uncensored API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/junafinity/Qwen-3.8-27B-Uncensored",
+      "snippet": "The underlying model is Qwen3.8-27B, created and released by the Qwen team (Alibaba Cloud) under the Apache 2.0 license. All of the model&#x27;s capability, knowledge, multilingual competence, and multimodal understanding originate from their work and their training."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/AtlasMind-TestRepo-r19",
+  "slug": "sotaagi2030-atlasmind-testrepo-r19",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/AtlasMind-TestRepo-r19",
+  "created_at": "2026-08-22T06:13:53.000Z",
+  "updated_at": "2026-08-22T06:14:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030/AtlasMind-TestRepo-r19 · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/AtlasMind-TestRepo-r19",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago ... new activity about 5 hours ago"
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "GitHub - JoelBondoux/AtlasMind: A multi-agent AI orchestrator that ...",
+      "url": "https://github.com/JoelBondoux/AtlasMind",
+      "snippet": "Most AI coding tools give you one assistant in one chat box. AtlasMind gives you a team. Ask for what you want in plain English. AtlasMind picks the right specialist for the job, picks a model that suits the task and your budget, reads what it needs from your project, does the work, checks it, and shows you exactly what changed and what it cost. The important part is what happens next. Your ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

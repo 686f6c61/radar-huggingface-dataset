@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "LucasSls/model_285444033_coca_xlarge",
+  "slug": "lucassls-model_285444033_coca_xlarge",
+  "author": "LucasSls",
+  "url": "https://huggingface.co/LucasSls/model_285444033_coca_xlarge",
+  "created_at": "2026-08-22T04:53:52.000Z",
+  "updated_at": "2026-08-22T04:53:59.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bilinear",
+    "classification",
+    "coca",
+    "cosine",
+    "flash",
+    "instancenorm",
+    "relu",
+    "rmsprop",
+    "xavier",
+    "xlarge",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "(@lucassls._) • Instagram photos and videos",
+      "url": "https://www.instagram.com/lucassls._/",
+      "snippet": "2,073 Followers, 1,326 Following, 3 Posts - @lucassls._ on Instagram: \"\""
+    },
+    {
+      "title": "CoCa - a Hugging Face Space by laion",
+      "url": "https://huggingface.co/spaces/laion/CoCa",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "Lucas (@_lucas_sls) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_lucas_sls/",
+      "snippet": "267 Followers, 305 Following, 0 Posts - Lucas (@_lucas_sls) on Instagram: \"📍Marseille\""
+    },
+    {
+      "title": "GitHub - lucidrains/CoCa-pytorch: Implementation of CoCa, Contrastive ...",
+      "url": "https://github.com/lucidrains/CoCa-pytorch",
+      "snippet": "Implementation of CoCa, Contrastive Captioners are Image-Text Foundation Models, in Pytorch - lucidrains/CoCa-pytorch"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Gael1125/Qwen3.6-3",
+  "slug": "gael1125-qwen3-6-3",
+  "author": "Gael1125",
+  "url": "https://huggingface.co/Gael1125/Qwen3.6-3",
+  "created_at": "2026-08-22T06:13:03.000Z",
+  "updated_at": "2026-08-22T06:19:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55582997861,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.6 Developer Guide: Benchmarks, Architecture & Self-Hosting ...",
+      "url": "https://lushbinary.com/blog/qwen-3-6-developer-guide-benchmarks-architecture-api-self-hosting/",
+      "snippet": "Qwen 3.6 developer guide (Updated July 2026): 1M-context Plus, open-weight 35B-A3B, API pricing, and vLLM self-hosting. Note Qwen 3.7 is now the flagship."
+    },
+    {
+      "title": "Qwen3.6-Plus: Towards Real World Agents",
+      "url": "https://qwen.ai/blog?id=qwen3.6",
+      "snippet": "The model now excels at integrating cross-modal information to perform sophisticated analysis and decision-making. Real-World Applicability: Optimized for genuine business scenarios, Qwen3.6-Plus demonstrates superior stability and usability."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    },
+    {
+      "title": "Gael1125/Qwen3.6-27B-S-1_3-V3 · Hugging Face",
+      "url": "https://huggingface.co/Gael1125/Qwen3.6-27B-S-1_3-V3",
+      "snippet": "This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format. These artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc. Following the February release of the Qwen3.5 series, we&#x27;re pleased to share the first open-weight variant of Qwen3.6."
+    },
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen&#x27;s series of open-source and proprietary models. It offers comprehensive functionality spanning chatbots, image and video understanding, image generation and editing, document processing, tool utilization, voice and video chat, and artifacts."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "BonTori/phobert-eda-vietnamese-hsd",
+  "slug": "bontori-phobert-eda-vietnamese-hsd",
+  "author": "BonTori",
+  "url": "https://huggingface.co/BonTori/phobert-eda-vietnamese-hsd",
+  "created_at": "2026-08-22T04:16:04.000Z",
+  "updated_at": "2026-08-22T04:16:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BonTori/phobert-eda-vietnamese-hsd-inprogress · Hugging Face",
+      "url": "https://huggingface.co/BonTori/phobert-eda-vietnamese-hsd-inprogress",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BonTori/phobert-llm-vietnamese-hsd · Hugging Face",
+      "url": "https://huggingface.co/BonTori/phobert-llm-vietnamese-hsd",
+      "snippet": "Instructions to use BonTori/phobert-llm-vietnamese-hsd with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use BonTori/phobert-llm-vietnamese-hsd with Transformers:"
+    },
+    {
+      "title": "PhoBERT: Pre-trained language models for Vietnamese - GitHub",
+      "url": "https://github.com/VinAIResearch/PhoBERT",
+      "snippet": "PhoBERT: Pre-trained language models for Vietnamese Pre-trained PhoBERT models are the state-of-the-art language models for Vietnamese (Pho, i.e. \"Phở\", is a popular food in Vietnam): Two PhoBERT versions of \"base\" and \"large\" are the first public large-scale monolingual language models pre-trained for Vietnamese."
+    },
+    {
+      "title": "PhoBERT/README.md at master · VinAIResearch/PhoBERT · GitHub",
+      "url": "https://github.com/VinAIResearch/PhoBERT/blob/master/README.md",
+      "snippet": "Please CITE our paper when PhoBERT is used to help produce published results or is incorporated into other software. Users may also want to use BamiBERT, our new BERT-based pretrained language model for Vietnamese that addresses key limitations of PhoBERT. Trained from scratch on a 129 GB corpus of general-domain Vietnamese text for 20 epochs, BamiBERT supports an extended context length of up ..."
+    },
+    {
+      "title": "Vietnamese Hate and Offensive Detection using PhoBERT-CNN and Social ...",
+      "url": "https://arxiv.org/pdf/2206.00524",
+      "snippet": "tcomings. Firstly, we proposed an efficient pre-processing technique to clean com-ments collected from Vietnamese social media. Secondly, a novel hate speech detection (HSD) mo el, which is the combination of a pre-trained PhoBERT model and a Text-CNN model, was proposed for solving tasks in Vi"
+    }
+  ]
+}

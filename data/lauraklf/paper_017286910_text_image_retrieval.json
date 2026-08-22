@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lauraklf/paper_017286910_text_image_retrieval",
+  "slug": "lauraklf-paper_017286910_text_image_retrieval",
+  "author": "lauraklf",
+  "url": "https://huggingface.co/lauraklf/paper_017286910_text_image_retrieval",
+  "created_at": "2026-08-22T06:38:39.000Z",
+  "updated_at": "2026-08-22T06:38:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "enthusiastic",
+    "footnote",
+    "intro-problem-solution-validation-future",
+    "latex-cvpr",
+    "mixed-active-passive",
+    "short-punchy",
+    "structured-imrad",
+    "text-image-retrieval",
+    "theoretical-rigorous",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    },
+    {
+      "title": "Terbuthylazine | C9H16ClN5 | CID 22206 - PubChem",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/22206",
+      "snippet": "Terbuthylazine | C9H16ClN5 | CID 22206 - structure, chemical names, physical and chemical properties, classification, patents, literature, biological activities ..."
+    },
+    {
+      "title": "Top AI Papers This Week - ArXiv TLDR",
+      "url": "https://arxivtldr.org/weekly",
+      "snippet": "The top 10 AI/ML papers from arXiv this week, AI-summarized with one-line TLDRs and key contribution bullets. Updated weekly."
+    },
+    {
+      "title": "Llama Nemoretriever Colembed: Top-Performing Text-Image Retrieval Model",
+      "url": "https://arxiv.org/abs/2507.05513",
+      "snippet": "Motivated by the growing demand for retrieval systems that operate across modalities, we introduce llama-nemoretriever-colembed, a unified text-image retrieval model that delivers state-of-the-art performance across multiple benchmarks. We release two model variants, 1B and 3B."
+    },
+    {
+      "title": "Imagen: Text-to-Image Diffusion Models",
+      "url": "https://imagen.research.google/",
+      "snippet": "Imagen is an AI system that creates photorealistic images from input text Visualization of Imagen. Imagen uses a large frozen T5-XXL encoder to encode the input text into embeddings. A conditional diffusion model maps the text embedding into a 64×64 image."
+    }
+  ]
+}

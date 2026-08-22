@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "canau1991/paper_003088067_cross_modal_fusion",
+  "slug": "canau1991-paper_003088067_cross_modal_fusion",
+  "author": "canau1991",
+  "url": "https://huggingface.co/canau1991/paper_003088067_cross_modal_fusion",
+  "created_at": "2026-08-22T09:00:01.000Z",
+  "updated_at": "2026-08-22T09:00:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "critical",
+    "cross-modal-fusion",
+    "docx",
+    "impersonal",
+    "intro-background-approach-eval-conclusion",
+    "long-detailed",
+    "narrative-progressive",
+    "numeric-apa",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "[2608.00986] Understanding and Overcoming Cross-modal Fusion Bias in ...",
+      "url": "https://arxiv.org/abs/2608.00986",
+      "snippet": "In this paper, we first analyze the impact of cross-modal fusion bias in MAD via the Fisher Information Matrix. Then, grounded in these findings, we propose UCFB, a simple yet effective plug-and-play framework designed to mitigate cross-modal fusion bias in MAD."
+    },
+    {
+      "title": "[2607.00746] GaussianFusion: Unified 3D Gaussian Representation for ...",
+      "url": "https://arxiv.org/abs/2607.00746",
+      "snippet": "The bird&#x27;s-eye view (BEV) representation enables multi-sensor features to be fused within a unified space, serving as the primary approach for achieving comprehensive 3D perception. However, the discrete grid representation of BEV leads to significant detail loss and limits feature alignment and cross-modal information interaction in multimodal fusion perception. In this work, we break from ..."
+    },
+    {
+      "title": "Hierarchical Cross-Modal Fusion Model for Field Vehicle Classification",
+      "url": "https://ieeexplore.ieee.org/document/11520629",
+      "snippet": "Field Vehicle classification is an important task for unattended ground sensor systems. This paper proposes a multimodal fusion-based classification method. Based on field measurement data collected in field environments, each signal sample contains continuous acoustic and seismic signals together with discrete image signals, which leads to information imbalance between the image modality and ..."
+    },
+    {
+      "title": "CMFFN: An efficient cross-modal feature fusion network for semantic ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0921889024002847",
+      "snippet": "We propose a novel approach to cross-modal fusion, termed CMFFN. This method utilises the geometric features and positional information of raw point clouds, achieving state-of-the-art (SOTA) bimodal fusion results with significantly reduced computational and memory costs."
+    }
+  ]
+}

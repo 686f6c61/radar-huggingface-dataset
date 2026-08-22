@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "leonbauer/paper_015172527_visual_question_answering",
+  "slug": "leonbauer-paper_015172527_visual_question_answering",
+  "author": "leonbauer",
+  "url": "https://huggingface.co/leonbauer/paper_015172527_visual_question_answering",
+  "created_at": "2026-08-22T04:39:23.000Z",
+  "updated_at": "2026-08-22T04:39:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "concise-analytical",
+    "enthusiastic",
+    "intro-method-exp-related-conclusion",
+    "latex-acl",
+    "long-detailed",
+    "numeric-nature",
+    "structured-imrad",
+    "visual-question-answering",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/visual_question_answering",
+      "snippet": "Visual Question Answering Visual Question Answering (VQA) is the task of answering open-ended questions based on an image. The input to models supporting this task is typically a combination of an image and a question, and the output is an answer expressed in natural language."
+    },
+    {
+      "title": "VQA: Visual Question Answering - arXiv.org",
+      "url": "https://arxiv.org/pdf/1505.00468",
+      "snippet": "In this paper, we introduce the task of free-form and open-ended Visual Question Answering (VQA). A VQA system takes as input an image and a free-form, open-ended, natural-language question about the image and produces a natural-language answer as the output."
+    },
+    {
+      "title": "VQA: Visual Question Answering",
+      "url": "https://visualqa.org/",
+      "snippet": "VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer."
+    },
+    {
+      "title": "(PDF) VQA: Visual Question Answering - ResearchGate",
+      "url": "https://www.researchgate.net/publication/275897099_VQA_Visual_Question_Answering",
+      "snippet": "PDF | We propose the task of free-form and open-ended Visual Question Answering (VQA). Given an image and a natural language question about the image,... | Find, read and cite all the research you ..."
+    },
+    {
+      "title": "[2502.09211] Visual Graph Question Answering with ASP and LLMs for ...",
+      "url": "https://arxiv.org/abs/2502.09211",
+      "snippet": "Visual Question Answering (VQA) is a challenging problem that requires to process multimodal input. Answer-Set Programming (ASP) has shown great potential in this regard to add interpretability and explainability to modular VQA architectures. In this work, we address the problem of how to integrate ASP with modules for vision and natural language processing to solve a new and demanding VQA ..."
+    }
+  ]
+}

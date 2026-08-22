@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "waynegm/ZipModels",
+  "slug": "waynegm-zipmodels",
+  "author": "waynegm",
+  "url": "https://huggingface.co/waynegm/ZipModels",
+  "created_at": "2026-08-22T07:15:33.000Z",
+  "updated_at": "2026-08-22T07:15:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "waynegm (Wayne Mogg) - Hugging Face",
+      "url": "https://huggingface.co/waynegm",
+      "snippet": "Recent Activity updated a model18 days ago waynegm/FaultNet published a model18 days ago waynegm/FaultNet View all activity"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "ZipNN: Lossless Compression for AI Models - arXiv.org",
+      "url": "https://arxiv.org/pdf/2411.05239",
+      "snippet": "We present ZipNN, a lossless compression tailored to neural networks. Somewhat surprisingly, we show that specific lossless compression can gain significant network and storage reduction on popular models, often saving 33% and at times reducing over 50% of the model size. We investigate the source of model compressibility and introduce specialized compression variants tailored for models that ..."
+    }
+  ]
+}

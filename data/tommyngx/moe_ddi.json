@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TommyNgx/MoE_DDI",
+  "slug": "tommyngx-moe_ddi",
+  "author": "TommyNgx",
+  "url": "https://huggingface.co/TommyNgx/MoE_DDI",
+  "created_at": "2026-08-22T07:47:34.000Z",
+  "updated_at": "2026-08-22T07:51:36.000Z",
+  "license": "cc-by-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3558358515,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MoE_DDI/AGENT_INSTRUCTIONS.md at main · tommyngx/MoE_DDI",
+      "url": "https://github.com/tommyngx/MoE_DDI/blob/main/AGENT_INSTRUCTIONS.md",
+      "snippet": "Mission Implement and validate MoEDDI: a feature-family-aware Mixture-of-Experts model for 178-class drug-drug interaction prediction, compared fairly with a T-DDI-style numerical MLP on the same 3,780 descriptors and splits."
+    },
+    {
+      "title": "GitHub - tommyngx/MoE_DDI",
+      "url": "https://github.com/tommyngx/MoE_DDI/tree/main",
+      "snippet": "Contribute to tommyngx/MoE_DDI development by creating an account on GitHub."
+    },
+    {
+      "title": "TommyNgx (Tommy Ngx) - Hugging Face",
+      "url": "https://huggingface.co/TommyNgx/models",
+      "snippet": "Computer Vision - Medical imaging updated a model 13 days ago"
+    },
+    {
+      "title": "TommyNgx (Tommy Ngx) - Hugging Face",
+      "url": "https://huggingface.co/TommyNgx/activity/all",
+      "snippet": "Computer Vision - Medical imaging New activity in TommyNgx/YOLOv10-Fire-and-Smoke-Detection 6 days ago"
+    },
+    {
+      "title": "Dessi AI Creative Studio: Free Try Image, Video, Voice & Chat",
+      "url": "https://dessi-ai.com/",
+      "snippet": "Dessi is your AI creative studio for images, video, voice, and chat. Try every mode free in the browser—no download or credit card required to start."
+    }
+  ]
+}

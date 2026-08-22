@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ritesh1918/house-price-predictor",
+  "slug": "ritesh1918-house-price-predictor",
+  "author": "ritesh1918",
+  "url": "https://huggingface.co/ritesh1918/house-price-predictor",
+  "created_at": "2026-08-22T07:58:25.000Z",
+  "updated_at": "2026-08-22T08:26:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1971,
+  "storage_human": "1971 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ritesh-gade/House_Price_Predictor",
+      "url": "https://github.com/ritesh-gade/House_Price_Predictor",
+      "snippet": "Welcome to the House Price Predictor project! This is a real-world, end-to-end MLOps use case designed to help you master the art of building and operationalizing machine learning pipelines. You&#x27;ll start from raw data and move through data preprocessing, feature engineering, experimentation, model ..."
+    },
+    {
+      "title": "GitHub - mercy143/ai-house-price-prediction: End-to-end Machine ...",
+      "url": "https://github.com/mercy143/ai-house-price-prediction",
+      "snippet": "End-to-end Machine Learning application for real estate price prediction with Streamlit dashboard, REST API, explainable AI, analytics, and Docker deployment. - mercy143/ai-house-price-prediction"
+    },
+    {
+      "title": "House Price Prediction System | House-Price-Prediction",
+      "url": "https://aneshraj-d96.github.io/House-Price-Prediction/",
+      "snippet": "Developed a predictive system to estimate house prices using demographic and housing data. Applied regression models, feature engineering, and Streamlit dashboards to deliver actionable insights for real estate valuation and investment strategy."
+    },
+    {
+      "title": "House-Price-Prediction | PDF | Prices | Prediction - Scribd",
+      "url": "https://www.scribd.com/document/1073887459/House-Price-Prediction",
+      "snippet": "This document outlines a machine learning project that uses Linear Regression to predict house prices based on features such as area, bedrooms, and bathrooms. The project aims to automate price estimation to provide accurate, data-driven insights for buyers and sellers, addressing the challenges of manual pricing. Future improvements include exploring advanced algorithms and enhancing the ..."
+    },
+    {
+      "title": "ritesh1918 (Ritesh Bonthalakoti) - Hugging Face",
+      "url": "https://huggingface.co/ritesh1918",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 2 days ago ... liked a Space 2 days ago"
+    }
+  ]
+}

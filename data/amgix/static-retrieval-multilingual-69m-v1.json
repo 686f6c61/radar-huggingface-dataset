@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "amgix/static-retrieval-multilingual-69m-v1",
+  "slug": "amgix-static-retrieval-multilingual-69m-v1",
+  "author": "amgix",
+  "url": "https://huggingface.co/amgix/static-retrieval-multilingual-69m-v1",
+  "created_at": "2026-08-16T17:46:41.000Z",
+  "updated_at": "2026-08-16T22:29:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "model2vec",
+  "languages": [],
+  "tags": [
+    "model2vec",
+    "safetensors",
+    "SentenceTransformer",
+    "embeddings",
+    "static-embeddings",
+    "multilingual",
+    "sentence-transformers",
+    "feature-extraction",
+    "base_model:ibm-granite/granite-embedding-97m-multilingual-r2",
+    "base_model:finetune:ibm-granite/granite-embedding-97m-multilingual-r2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 422,
+  "trending_score": 8,
+  "parameters": 69095424,
+  "parameters_human": "69.1M",
+  "storage_bytes": 286996267,
+  "storage_human": "287 MB",
+  "base_model": "ibm-granite/granite-embedding-97m-multilingual-r2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amgix/static-retrieval-multilingual-69m-v1 · Hugging Face",
+      "url": "https://huggingface.co/amgix/static-retrieval-multilingual-69m-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "amgix/static-retrieval-multilingual-69m-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/amgix/static-retrieval-multilingual-69m-v1/tree/main",
+      "snippet": "Instructions to use amgix/static-retrieval-multilingual-69m-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Evaluate model: amgix/static-retrieval-multilingual-69m-v1 #5234",
+      "url": "https://github.com/embeddings-benchmark/mteb/issues/5234",
+      "snippet": "Model link on Hugging Face https://huggingface.co/amgix/static-retrieval-multilingual-69m-v1 What do you want it to be evaluated on? RTEB Are you interested in contributing to the evaluation of this model?"
+    },
+    {
+      "title": "Amgix Documentation",
+      "url": "https://docs.amgix.io/",
+      "snippet": "Amgix is a hybrid search system for applications. It provides a unified stack for ingestion, embedding, and search — combining keyword and semantic retrieval in an architecture that can scale from a single container to distributed services. Amgix lets you add fast, relevant, modern search to your application without stitching together separate systems for indexing, embeddings, and retrieval."
+    },
+    {
+      "title": "Features - Amgix Documentation",
+      "url": "https://docs.amgix.io/features/",
+      "snippet": "Documents & Collections Fixed, opinionated document schema for predictable indexing and performance — Documents Guide Free-form metadata with opt-in indexing per field — Documents Guide Tags: always-indexed, filtering shortcut, distinct from metadata — Documents Guide store_content option to omit stored text after indexing, reducing payload and storage size — Collections Guide Supply ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SOLRICKS/LTX-2-5-ComfyUI-Workflows",
+  "slug": "solricks-ltx-2-5-comfyui-workflows",
+  "author": "SOLRICKS",
+  "url": "https://huggingface.co/SOLRICKS/LTX-2-5-ComfyUI-Workflows",
+  "created_at": "2026-08-12T06:05:42.000Z",
+  "updated_at": "2026-08-22T11:09:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "ltx-2.5",
+    "text-to-video",
+    "image-to-video",
+    "audio",
+    "video-generation",
+    "workflow",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1963243690,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX-2.5: ComfyUI Workflow Examples - ComfyUI - docs.comfy.org",
+      "url": "https://docs.comfy.org/tutorials/video/ltx/ltx-2-5",
+      "snippet": "Use LTX-2.5 in ComfyUI with native text-to-video, image-to-video, and first-last-frame workflows, including synchronized audio and native multishot scenes."
+    },
+    {
+      "title": "SOLRICKS/ltx-2-5-t2v-i2v-audio-comfyui-workflow · Hugging Face",
+      "url": "https://huggingface.co/SOLRICKS/ltx-2-5-t2v-i2v-audio-comfyui-workflow",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LTX 2.5 on Comfy: Open-Source AI Video Model",
+      "url": "https://comfy.org/ltx-2.5",
+      "snippet": "LTX 2.5 is here LTX is the fastest video generation model on the planet, and this version sharpens prompt adherence, visuals, and audio quality across the board. With a new Diffusion Fidelity Rendering capability, fine textures, faces, and complex shots hold up at cinematic-grade detail."
+    },
+    {
+      "title": "LTX-2.5: Text to Video - ComfyUI Workflow",
+      "url": "https://comfy.org/workflows/13ba3af78782-13ba3af78782/",
+      "snippet": "This ComfyUI workflow turns a plain text prompt into a cinematic video using Lightricks&#x27; LTX-2.5, a production-ready diffusion model. The core of the graph is the LTX-2.5 text-to-video node (UUID: 8b4f085c-1bb3-4ecd-aeed-603a8d6d3970), which consumes your prompt, resolution, and generation settings to synthesize a coherent clip. A ResolutionSelector node feeds width and height values that are ..."
+    },
+    {
+      "title": "SOLRICKS/ltx-2-5-t2v-i2v-audio-comfyui-workflow at ...",
+      "url": "https://huggingface.co/SOLRICKS/ltx-2-5-t2v-i2v-audio-comfyui-workflow/tree/6e412fe0f55be29e6051c191e998756ed40024f6",
+      "snippet": "workflow Model card FilesFiles and versions xet Community 1 Copy to bucket new 6e412fe ltx-2-5-t2v-i2v-audio-comfyui-workflow 655 MB Ctrl+K Ctrl+K 1 contributor History:17 commits SOLRICKS Upload ltx-2.3-22b-ic-lora-union-control-ref0.5.safetensors 6e412fe verified4 days ago .gitattributes Safe 1.52 kBinitial commit6 days ago LTX-2.5-Audio-IC ..."
+    }
+  ]
+}

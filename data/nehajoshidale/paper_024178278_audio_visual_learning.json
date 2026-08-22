@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nehajoshidale/paper_024178278_audio_visual_learning",
+  "slug": "nehajoshidale-paper_024178278_audio_visual_learning",
+  "author": "nehajoshidale",
+  "url": "https://huggingface.co/nehajoshidale/paper_024178278_audio_visual_learning",
+  "created_at": "2026-08-22T06:42:10.000Z",
+  "updated_at": "2026-08-22T06:42:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "active",
+    "argumentative",
+    "audio-visual-learning",
+    "enthusiastic",
+    "latex-acl",
+    "numeric-nature",
+    "unstructured-narrative",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "Google Research - Explore Our Latest Research in Science and AI",
+      "url": "https://research.google/",
+      "snippet": "Discover Google Research. We publish research papers across a wide range of domains and share our latest developments in AI and science research."
+    },
+    {
+      "title": "Nature Machine Intelligence",
+      "url": "https://www.nature.com/natmachintell/",
+      "snippet": "Nature Machine Intelligence is an online-only journal publishing research and perspectives from the fast-moving fields of artificial intelligence, machine learning and robotics."
+    },
+    {
+      "title": "AIJ | Artificial Intelligence | Journal | ScienceDirect.com by Elsevier",
+      "url": "https://www.sciencedirect.com/journal/artificial-intelligence",
+      "snippet": "The journal of Artificial Intelligence (AIJ) welcomes papers on broad aspects of AI that constitute advances in the overall field including, but not limited to, cognition and AI, automated reasoning and inference, case-based reasoning, commonsense reasoning, computer vision, constraint processing, ethical AI, heuristic search, human interfaces ..."
+    },
+    {
+      "title": "Artificial Intelligence - arXiv.org",
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "snippet": "Pandora&#x27;s AI Model Routing Box: Efficient Allocation with Costly Value Estimation Adam Fisch, Shubhendu Trivedi, Fantine Huot, William W. Cohen, Michael Kaisers, Mirella Lapata, Kate Larson, Jacob Eisenstein Subjects: Artificial Intelligence (cs.AI) [4] arXiv:2608.20314 [pdf, html, other]"
+    }
+  ]
+}

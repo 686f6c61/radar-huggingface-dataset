@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "subham192/ff",
+  "slug": "subham192-ff",
+  "author": "subham192",
+  "url": "https://huggingface.co/subham192/ff",
+  "created_at": "2026-08-22T08:31:17.000Z",
+  "updated_at": "2026-08-22T08:31:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Subham192 · GitHub",
+      "url": "https://github.com/Subham192/",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "shubham! | Free fire AI | Instagram",
+      "url": "https://www.instagram.com/reel/DKwLhAJImEE/",
+      "snippet": "15 likes, 1 comments - shubham_.ff_ on June 11, 2025: \"Free fire AI\"."
+    },
+    {
+      "title": "FreeTheAi Model Catalog - Free OpenAI-Compatible AI Models",
+      "url": "https://freetheai.xyz/models/",
+      "snippet": "Search the FreeTheAi model catalog: 80 active OpenAI-compatible chat, image, and tool-capable model aliases across 13 provider prefixes with live filtering and copyable IDs."
+    },
+    {
+      "title": "GitHub - Subham192/tasks-manager",
+      "url": "https://github.com/Subham192/tasks-manager",
+      "snippet": "Contribute to Subham192/tasks-manager development by creating an account on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

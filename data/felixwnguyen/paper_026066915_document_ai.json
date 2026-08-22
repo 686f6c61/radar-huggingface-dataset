@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "felixwnguyen/paper_026066915_document_ai",
+  "slug": "felixwnguyen-paper_026066915_document_ai",
+  "author": "felixwnguyen",
+  "url": "https://huggingface.co/felixwnguyen/paper_026066915_document_ai",
+  "created_at": "2026-08-22T08:11:31.000Z",
+  "updated_at": "2026-08-22T08:11:38.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "detailed-descriptive",
+    "document-ai",
+    "endnote",
+    "enthusiastic",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "latex-neurips",
+    "short-punchy",
+    "structured-imrad",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Document AI - Google Cloud",
+      "url": "https://cloud.google.com/document-ai",
+      "snippet": "The Document AI solutions suite includes pretrained models for document processing, Workbench for custom models, and Warehouse to search and store."
+    },
+    {
+      "title": "Document AI documentation - Google Cloud",
+      "url": "https://docs.cloud.google.com/document-ai/docs",
+      "snippet": "Document AI is a document understanding platform that takes unstructured data from documents and transforms it into structured data, making it easier to understand, analyze, and consume. Document AI uses machine learning and Google Cloud to help you create scalable, end-to-end, cloud-based document processing applications."
+    },
+    {
+      "title": "AI Detector & Checker for Text, PDFs | Fast & accurate - SciSpace",
+      "url": "https://scispace.com/ai-detector",
+      "snippet": "SciSpace AI Detector instantly spots ChatGPT or GPT-4 text, rates originality, and explains risky lines - helping researchers keep assignments and papers authentic."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-5 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-5, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    },
+    {
+      "title": "Document AI release notes | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/document-ai/docs/release-notes",
+      "snippet": "Document AI is introducing document-level prompting for custom document processors. This feature allows you to provide an overall description of the document to inject deep business knowledge into the model, leading to improved extraction quality."
+    }
+  ]
+}

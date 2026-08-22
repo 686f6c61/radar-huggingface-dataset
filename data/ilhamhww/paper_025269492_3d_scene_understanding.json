@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "IlhamHww/paper_025269492_3d_scene_understanding",
+  "slug": "ilhamhww-paper_025269492_3d_scene_understanding",
+  "author": "IlhamHww",
+  "url": "https://huggingface.co/IlhamHww/paper_025269492_3d_scene_understanding",
+  "created_at": "2026-08-22T05:45:07.000Z",
+  "updated_at": "2026-08-22T05:45:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d-scene-understanding",
+    "argumentative",
+    "cautious",
+    "footnote",
+    "impersonal",
+    "intro-background-approach-eval-conclusion",
+    "latex-acl",
+    "long-detailed",
+    "structured-imrad",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unified 3D Scene Understanding Through Physical World Modeling",
+      "url": "https://arxiv.org/abs/2605.24321",
+      "snippet": "In this work, we present a physical world model for unified 3D understanding and interaction (3WM), formulated as a probabilistic graphical model in which nodes represent multimodal scene elements such as RGB, optical flow, and camera pose."
+    },
+    {
+      "title": "Unified 3D Scene Understanding Through Physical World Modeling",
+      "url": "https://en.papernotes.org/ICLR2026/3d_vision/unified_3d_scene_understanding_through_physical_world_modeling/",
+      "snippet": "Key Challenge: 3D understanding requires a physical scene model capable of conditional reasoning across multiple variables, rather than a set of task-specific models with fixed inputs and outputs. Existing ..."
+    },
+    {
+      "title": "[2606.06485] PAR3D: A Unified 3D-MLLM with Part-Aware Representation ...",
+      "url": "https://arxiv.org/abs/2606.06485",
+      "snippet": "Recent advances in 3D multimodal large language models (3D-MLLMs) have enabled unified solutions for 3D scene understanding tasks, including visual question answering, captioning, and referring segmentation. However, existing 3D-MLLMs remain largely object-centric, limiting their ability to model fine-grained part structures that are essential for embodied interaction with 3D environments. In ..."
+    },
+    {
+      "title": "GitHub - hzxie/Awesome-3D-Scene-Generation: A curated list of awesome ...",
+      "url": "https://github.com/hzxie/Awesome-3D-Scene-Generation",
+      "snippet": "This repository collects summaries of over 300 recent studies on 3D scene generation, along with the downstream applications, and will be continuously updated. If you have suggestions for new resources, improvements to methodologies, or corrections for broken links, please don&#x27;t hesitate to open an issue or submit a pull request. Contributions of all kinds are welcome and greatly appreciated."
+    },
+    {
+      "title": "Awesome Scene Understanding - GitHub",
+      "url": "https://github.com/bertjiazheng/awesome-scene-understanding",
+      "snippet": "😎 A list of awesome scene understanding papers. Contribute to bertjiazheng/awesome-scene-understanding development by creating an account on GitHub."
+    }
+  ]
+}

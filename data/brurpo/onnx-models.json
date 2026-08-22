@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "brurpo/onnx-models",
+  "slug": "brurpo-onnx-models",
+  "author": "brurpo",
+  "url": "https://huggingface.co/brurpo/onnx-models",
+  "created_at": "2026-07-31T00:03:51.000Z",
+  "updated_at": "2026-08-22T06:45:04.000Z",
+  "license": "mixed-upstream-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "directml",
+    "image-segmentation",
+    "background-removal",
+    "video-upscaling",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18769864183,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brurpo/onnx-models · Hugging Face",
+      "url": "https://huggingface.co/brurpo/onnx-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "brurpo/onnx-models at main - Hugging Face",
+      "url": "https://huggingface.co/brurpo/onnx-models/tree/main",
+      "snippet": "brurpo / onnx-models like 0 Image Segmentation ONNX onnxruntime directml background-removal License:mixed-upstream-licenses Model card FilesFiles and versions xet Community Copy to bucket new main onnx-models 3.88 GB Ctrl+K Ctrl+K 1 contributor History:4 commits brurpo Publish reproducible background-removal ONNX conversions cef89af ..."
+    },
+    {
+      "title": "models/Generative_AI at main · onnx/models · GitHub",
+      "url": "https://github.com/onnx/models/tree/main/Generative_AI",
+      "snippet": "A collection of pre-trained, state-of-the-art models in the ONNX format - models/Generative_AI at main · onnx/models"
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

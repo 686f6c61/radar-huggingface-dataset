@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bosonai/Qwen3-ASR-1.7B-hf-beam4",
+  "slug": "bosonai-qwen3-asr-1-7b-hf-beam4",
+  "author": "bosonai",
+  "url": "https://huggingface.co/bosonai/Qwen3-ASR-1.7B-hf-beam4",
+  "created_at": "2026-08-22T06:05:43.000Z",
+  "updated_at": "2026-08-22T06:06:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "asr",
+    "qwen3-asr",
+    "open-asr-leaderboard",
+    "en",
+    "base_model:Qwen/Qwen3-ASR-1.7B-hf",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B-hf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 4087622733,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "README.md · Qwen/Qwen3-ASR-1.7B-hf at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf/blob/main/README.md",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "Qwen3-ASR-1.7B-hf | Benchmarks | OpenModelMap",
+      "url": "https://openmodelmap.com/model/Qwen/Qwen3-ASR-1.7B-hf",
+      "snippet": "Qwen3-ASR-1.7B-hf uses the apache-2.0 license. What hardware is needed to run Qwen3-ASR-1.7B-hf? Requires N/A VRAM, N/A RAM, N/A disk space. Recommended inference hardware: general GPU. How to deploy Qwen3-ASR-1.7B-hf? Qwen3-ASR-1.7B-hf supports Ollama, vLLM, HuggingFace and other deployment methods. Ollama one-click deployment is recommended ..."
+    },
+    {
+      "title": "GitHub - baonn/qwen3-asr-repo-: Qwen3-ASR is an open-source series of ...",
+      "url": "https://github.com/baonn/qwen3-asr-repo-",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "Qwen3-ASR Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2601.21337",
+      "snippet": "Abstract In this report, we introduce Qwen3-ASR family, which includes two powerful all-in-one speech recognition models and a novel non-autoregressive speech forced alignment model. Qwen3-ASR-1.7B and Qwen3-ASR-.6B are ASR models that support language identification and ASR for 52 languages and dialects. Both of them leverage large-scale speech training data and the strong audio ..."
+    }
+  ]
+}

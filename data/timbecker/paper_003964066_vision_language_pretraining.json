@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "timbecker/paper_003964066_vision_language_pretraining",
+  "slug": "timbecker-paper_003964066_vision_language_pretraining",
+  "author": "timbecker",
+  "url": "https://huggingface.co/timbecker/paper_003964066_vision_language_pretraining",
+  "created_at": "2026-08-22T03:25:04.000Z",
+  "updated_at": "2026-08-22T03:25:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "author-year",
+    "concise-analytical",
+    "critical",
+    "graphic-visual",
+    "impersonal",
+    "markdown",
+    "medium-balanced",
+    "vision-language-pretraining",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vision Language Models: A Survey of 26K Papers (CVPR, ICLR, NeurIPS ...",
+      "url": "https://arxiv.org/html/2510.09586v1",
+      "snippet": "The computer - vision and machine - learning community has undergone a visible transition in 2023-2025. With the consolidation of large - scale pretrained models (CLIP/BLIP/LLaVA [1, 2, 3] families, ViT backbones) and ubiquitous diffusion - based generators, the research focus has shifted: classic perception remains active, yet a large fraction of accepted papers are now organized around ..."
+    },
+    {
+      "title": "An Introduction to Vision-Language Modeling - arXiv.org",
+      "url": "https://arxiv.org/html/2405.17247v1",
+      "snippet": "Abstract Following the recent popularity of Large Language Models (LLMs), several attempts have been made to extend them to the visual domain. From having a visual assistant that could guide us through unfamiliar environments to generative models that produce images using only a high-level text description, the vision-language model (VLM) applications will significantly impact our relationship ..."
+    },
+    {
+      "title": "GitHub - zli12321/Vision-Language-Models-Overview: A most Frontend ...",
+      "url": "https://github.com/zli12321/Vision-Language-Models-Overview",
+      "snippet": "A most Frontend Collection and survey of vision-language model papers, and models GitHub repository. Continuous updates. - zli12321/Vision-Language-Models-Overview"
+    },
+    {
+      "title": "A Dive into Vision-Language Models - Hugging Face",
+      "url": "https://huggingface.co/blog/vision_language_pretraining",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vision-Language Pretraining for Image Captioning Using Facial ...",
+      "url": "https://ieeexplore.ieee.org/document/11297980",
+      "snippet": "This paper presents a novel approach incorporating Facial Expression Recognition (FER) to improve emotional and contextual understanding in Vision-Language Pretraining (VLP) model-generated image captions. Conventional captioning models focus primarily on object identification, producing captions devoid of emotional content. The proposed model integrates FER to generate captions reflecting ..."
+    }
+  ]
+}

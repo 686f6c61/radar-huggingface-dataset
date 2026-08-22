@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Bboykoroman/paper_023167298_video_understanding",
+  "slug": "bboykoroman-paper_023167298_video_understanding",
+  "author": "Bboykoroman",
+  "url": "https://huggingface.co/Bboykoroman/paper_023167298_video_understanding",
+  "created_at": "2026-08-22T03:04:07.000Z",
+  "updated_at": "2026-08-22T03:04:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "enthusiastic",
+    "first-person-plural",
+    "highlight-bullet",
+    "markdown",
+    "numeric-nature",
+    "theoretical-rigorous",
+    "varied-mixed",
+    "video-understanding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome-LLMs-for-Video-Understanding - GitHub",
+      "url": "https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding",
+      "snippet": "📢 We&#x27;ve recently updated our survey: \"Video Understanding with Large Language Models: A Survey\"! This comprehensive survey covers video understanding techniques powered by large language models (Vid-LLMs), training strategies, relevant tasks, datasets, benchmarks, and evaluation methods ..."
+    },
+    {
+      "title": "Video Understanding with Large Language Models: A Survey",
+      "url": "https://arxiv.org/html/2312.17432v5",
+      "snippet": "Previous survey papers either study specific sub-tasks in the area of video understanding or focus on methodologies beyond video understanding. For example, [78] surveys multimodal foundation models for general vision-language tasks, which includes both image and video applications."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "Video Understanding: From Geometry and Semantics to Unified Models",
+      "url": "https://link.springer.com/article/10.1007/s11633-026-1656-7",
+      "snippet": "Video understanding aims to enable models to perceive, reason about, and interact with the dynamic visual world. In contrast to image understanding, video understanding inherently requires modeling temporal dynamics and evolving visual context, placing stronger demands on spatiotemporal reasoning and making it a foundational problem in computer vision. In this survey, we present a structured ..."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new featuresNFL Sunday Ticket © 2026 Google LLC"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ccm01081122/Mixtral-8x7B-Instruct-v0.1",
+  "slug": "ccm01081122-mixtral-8x7b-instruct-v0-1",
+  "author": "ccm01081122",
+  "url": "https://huggingface.co/ccm01081122/Mixtral-8x7B-Instruct-v0.1",
+  "created_at": "2026-08-22T08:55:22.000Z",
+  "updated_at": "2026-08-22T08:55:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "fr",
+    "it",
+    "de",
+    "es",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mixtral",
+    "fr",
+    "it",
+    "de",
+    "es",
+    "en",
+    "base_model:mistralai/Mixtral-8x7B-v0.1",
+    "base_model:finetune:mistralai/Mixtral-8x7B-v0.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46702792704,
+  "parameters_human": "46.70B",
+  "storage_bytes": 190496794867,
+  "storage_human": "190.5 GB",
+  "base_model": "mistralai/Mixtral-8x7B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Mixtral-8x7B-Instruct-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "snippet": "Limitations The Mixtral-8x7B Instruct model is a quick demonstration that the base model can be easily fine-tuned to achieve compelling performance. It does not have any moderation mechanisms. We&#x27;re looking forward to engaging with the community on ways to make the model finely respect guardrails, allowing for deployment in environments requiring moderated outputs. The Mistral AI Team Albert ..."
+    },
+    {
+      "title": "RedHatAI/Mixtral-8x7B-Instruct-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Mixtral-8x7B-Instruct-v0.1",
+      "snippet": "The Mixtral-8x7B Instruct model is a quick demonstration that the base model can be easily fine-tuned to achieve compelling performance. It does not have any moderation mechanisms."
+    },
+    {
+      "title": "Mixtral 8x7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mixtral-8x7b-0-1",
+      "snippet": "Our first open MoE model, SOTA competing against models up to 2 to 3x larger."
+    },
+    {
+      "title": "GitHub - Ming-999/Mixtral-8x7B-Instruct-v0.1",
+      "url": "https://github.com/Ming-999/Mixtral-8x7B-Instruct-v0.1",
+      "snippet": "The Mixtral-8x7B Large Language Model (LLM) is a pretrained generative Sparse Mixture of Experts. The Mixtral-8x7B outperforms Llama 2 70B on most benchmarks we tested. For full details of this model please read our release blog post."
+    },
+    {
+      "title": "mixtral-8x7b-instruct-v0.1 Model by Mistral AI | NVIDIA NIM",
+      "url": "https://build.nvidia.com/mistralai/mixtral-8x7b-instruct",
+      "snippet": "An MOE LLM that follows instructions, completes requests, and generates creative text."
+    }
+  ]
+}

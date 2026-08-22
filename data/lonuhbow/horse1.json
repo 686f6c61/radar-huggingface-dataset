@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Lonuhbow/horse1",
+  "slug": "lonuhbow-horse1",
+  "author": "Lonuhbow",
+  "url": "https://huggingface.co/Lonuhbow/horse1",
+  "created_at": "2026-08-22T04:06:35.000Z",
+  "updated_at": "2026-08-22T04:42:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970777489,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lonuhbow (Jay Oar) - Hugging Face",
+      "url": "https://huggingface.co/Lonuhbow/models",
+      "snippet": "User profile of Jay Oar on Hugging Face"
+    },
+    {
+      "title": "AI Horse Racing — Machine Learning for Racing Predictions | RoboPunter",
+      "url": "https://robopunter.io/guides/ai-horse-racing/",
+      "snippet": "Explore how AI and machine learning are transforming horse racing. Learn about form scoring algorithms, predictive models, smart picks, and the future of data-driven betting."
+    },
+    {
+      "title": "AI Horse Racing Predictions & Race Analysis | SmartPony",
+      "url": "https://smartpony.ai/",
+      "snippet": "AI horse racing predictions for every North American thoroughbred race. SmartPony ranks every horse using speed, class, pace, and form analysis."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "HappyHorse 1.0 Review: Is Alibaba&#x27;s New AI Video Model Really #1?",
+      "url": "https://www.jaiportal.com/blog/happyhorse-1-review-alibaba-ai-video-model-number-one",
+      "snippet": "HappyHorse 1.0 ranks #1 on AI video leaderboards, but is it truly the best? We compare Alibaba&#x27;s model against Seedance 2.0 and Kling 3.0 with real tests."
+    }
+  ]
+}

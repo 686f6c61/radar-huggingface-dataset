@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sadjava/latent-dynamics-libero90-s1000-shuffle",
+  "slug": "sadjava-latent-dynamics-libero90-s1000-shuffle",
+  "author": "sadjava",
+  "url": "https://huggingface.co/sadjava/latent-dynamics-libero90-s1000-shuffle",
+  "created_at": "2026-08-22T10:06:18.000Z",
+  "updated_at": "2026-08-22T10:06:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "libero",
+    "latent-dynamics",
+    "action-free",
+    "robotics",
+    "shuffled-future",
+    "control",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 269427519,
+  "storage_human": "269 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "libero_seen_pretrain - a sadjava Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/sadjava/libero-seen-pretrain",
+      "snippet": "Seen-suite (libero_90) pretraining for LIBERO-Goal few-shot: SmolVLA action BC + action-free latent dynamics (IDM/FDM)."
+    },
+    {
+      "title": "GitHub - Lifelong-Robot-Learning/LIBERO: Benchmarking Knowledge ...",
+      "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+      "snippet": "LIBERO is designed for studying knowledge transfer in multitask and lifelong robot learning problems. Successfully resolving these problems require both declarative knowledge about objects/spatial relationships and procedural knowledge about motion/behaviors. LIBERO provides: a procedural generation pipeline that could in principle generate an infinite number of manipulation tasks. 130 tasks ..."
+    },
+    {
+      "title": "sadjava (Dzhavid Sadreddinov) · GitHub",
+      "url": "https://github.com/sadjava",
+      "snippet": "ML-Learner. sadjava has 24 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Libero - Libero",
+      "url": "https://libero-project.github.io/main.html",
+      "snippet": "In the future, robots will be pretrained with a diverse set of skills in factory before deployment. However, we believe it is also a must for them to learn with their human users throughout their lifetime to really become a personalized embodied agent. This pertains to the paradigm of lifelong learning in decision making (LLDM). While LLDM is an important research question, currently the ..."
+    },
+    {
+      "title": "LIBERO Datasets - LIBERO",
+      "url": "https://libero-project.github.io/datasets",
+      "snippet": "Note that the datasets are split under the folder names of LIBERO-90 and LIBERO-10. We also have a script for programmatic downloading the datasets. Download Checkpoints LIBERO-Spatial Best Model Checkpoints LIBERO-Object Best Model Checkpoints LIBERO-Goal Best Model Checkpoints LIBERO-100 Best Model Checkpoints"
+    }
+  ]
+}

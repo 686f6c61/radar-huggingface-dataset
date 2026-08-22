@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Gautam6/GAUTAMAI",
+  "slug": "gautam6-gautamai-2",
+  "author": "Gautam6",
+  "url": "https://huggingface.co/Gautam6/GAUTAMAI",
+  "created_at": "2026-08-22T03:21:06.000Z",
+  "updated_at": "2026-08-22T03:32:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519432,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gautam6/GautamAI · Hugging Face",
+      "url": "https://huggingface.co/Gautam6/GautamAI",
+      "snippet": "Overview Gautam AI is a State-of-the-Art (SOTA) Supreme Autonomous AGI Model developed by Gautam AI Ecosystem. It completely supersedes and removes legacy third-party base architectures (such as Qwen or others), operating with an autonomous continuous self-improving curriculum loop, 4-bit sparse quantization, and multi-domain reasoning capabilities."
+    },
+    {
+      "title": "Gautam AI",
+      "url": "https://www.gautamai.com/p/machine-learning-models-gautam-ai.html",
+      "snippet": "Gautam AI builds custom machine learning models that transform raw data into actionable intelligence. Our models are optimized for accuracy, scalability, interpretability, and production deployment."
+    },
+    {
+      "title": "Gautam AI",
+      "url": "https://www.gautamai.com/",
+      "snippet": "Hi, I&#x27;m Vishal Gautam, CEO of Gautam AI. I lead research and development in Artificial Intelligence, pioneering solutions that empower businesses and revolutionize industries."
+    },
+    {
+      "title": "Gautam06-ai · GitHub",
+      "url": "https://github.com/Gautam06-ai",
+      "snippet": "Gautam06-ai has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Gautam",
+      "url": "https://codergautam.dev/",
+      "snippet": "Internship @ Stanford Fuller Labs Jun 2024 to present - Mentored by Prof. Vinny Main developer working on building an AI platform to process hyperspectral interferograms (currently in use by researchers at Alcon) using a state of the art AI model that is run through local GPUs."
+    }
+  ]
+}

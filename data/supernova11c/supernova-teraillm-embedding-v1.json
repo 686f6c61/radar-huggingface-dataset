@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Supernova11c/Supernova-teraillm-Embedding-V1",
+  "slug": "supernova11c-supernova-teraillm-embedding-v1",
+  "author": "Supernova11c",
+  "url": "https://huggingface.co/Supernova11c/Supernova-teraillm-Embedding-V1",
+  "created_at": "2026-08-22T10:13:11.000Z",
+  "updated_at": "2026-08-22T10:32:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [
+    "ne",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "supernova_embedding",
+    "nepali",
+    "supernova",
+    "feature-extraction",
+    "ne",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11954304,
+  "parameters_human": "12.0M",
+  "storage_bytes": 95671537,
+  "storage_human": "96 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supernova11c/Supernova-llm-terai · Hugging Face",
+      "url": "https://huggingface.co/Supernova11c/Supernova-llm-terai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Supernova11c/Supernova-teraillm · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Supernova11c/Supernova-teraillm",
+      "snippet": "Datasets: Supernova11c / Supernova-teraillm like 0 Modalities: Text Formats: json Languages: Nepali English Size: 1K - 10K Libraries: Datasets Dask Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·2.75k rows default (2.75k rows) Split (1) train·2.75k rows ..."
+    },
+    {
+      "title": "supernova · PyPI",
+      "url": "https://pypi.org/project/supernova/",
+      "snippet": "supernova Generate massive pre-embedded datasets, then load them into vector databases. Overview supernova has two pipelines: Embedding -- stream data from HuggingFace, embed with dense and/or sparse models, write parquet to S3 Loading -- stream pre-embedded parquet from S3/HuggingFace into vector stores (Qdrant) Both pipelines are streaming (never loads the full dataset into memory ..."
+    },
+    {
+      "title": "[2604.08477] SUPERNOVA: Eliciting General Reasoning in LLMs with ...",
+      "url": "https://arxiv.org/abs/2604.08477",
+      "snippet": "Reinforcement Learning with Verifiable Rewards (RLVR) has substantially improved reasoning in formal domains such as mathematics and code, but extending these gains beyond STEM remains challenging. Extending RLVR beyond STEM is fundamentally constrained by the lack of high-quality verifiable training data. In this work, we introduce SUPERNOVA, a framework for curating RLVR data from natural ..."
+    },
+    {
+      "title": "GitHub - V01d3m0rt/supernova: AI-Powered Development Assistant",
+      "url": "https://github.com/V01d3m0rt/supernova",
+      "snippet": "SuperNova is an AI-powered development assistant that operates directly within the terminal, providing contextual assistance for your codebase."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ben3.0-7B-Uncensored-GGUF",
+  "slug": "mradermacher-ben3-0-7b-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ben3.0-7B-Uncensored-GGUF",
+  "created_at": "2026-08-22T04:39:34.000Z",
+  "updated_at": "2026-08-22T04:49:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 44365052704,
+  "storage_human": "44.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/WizardLM-7B-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/WizardLM-7B-Uncensored-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "TheBloke/WizardLM-7B-uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/WizardLM-7B-uncensored-GGUF",
+      "snippet": "Wizardlm 7B Uncensored - GGUF Model creator: Eric Hartford Original model: Wizardlm 7B Uncensored Description This repo contains GGUF format model files for Eric Hartford&#x27;s Wizardlm 7B Uncensored. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML, which is no longer supported by llama.cpp. Here is an incomplate list of clients ..."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "Uncensored 7b Model Comparison/Leaderboard : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ayhz35/uncensored_7b_model_comparisonleaderboard/",
+      "snippet": "uncensored AI is really the only reason im on this subreddit at all. openhermes-2.5-mistral-7b is pretty good. heres my testing prompt, i score the bots based on the creativity and relevance in their answers:"
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "By VRAM Tier Pick the tier that matches your hardware. Every model below has been confirmed live on HuggingFace at the time of writing, with GGUF available either in the linked repo or via a sibling quant repo from bartowski or mradermacher. 8GB VRAM — Budget tier The 8B class is the floor for usable uncensored output. Picks:"
+    }
+  ]
+}

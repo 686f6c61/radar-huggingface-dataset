@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "saifahmad123/EXP8_10_a100",
+  "slug": "saifahmad123-exp8_10_a100",
+  "author": "saifahmad123",
+  "url": "https://huggingface.co/saifahmad123/EXP8_10_a100",
+  "created_at": "2026-08-22T06:49:38.000Z",
+  "updated_at": "2026-08-22T06:50:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi0",
+    "franka",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335832198,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saifahmad123/EXP1_10_20k_a100 · Hugging Face",
+      "url": "https://huggingface.co/saifahmad123/EXP1_10_20k_a100",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "saifahmad123/EXP5_10_a100 · Hugging Face",
+      "url": "https://huggingface.co/saifahmad123/EXP5_10_a100",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Models for NVIDIA A100 80GB — What Runs on 80GB VRAM",
+      "url": "https://willitrunai.com/gpus/a100-80gb",
+      "snippet": "NVIDIA A100 80GB: 80GB, 312 TFLOPS FP16, 2039 GB/s. Runs 359+ AI models locally incl. Qwen3-Coder 30B A3B Instruct. See VRAM fit, tok/s & quant options."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Inference Benchmark Calculator 2026 — H100 vs A100",
+      "url": "https://aitot.net/en/tools/inference-benchmark",
+      "snippet": "Benchmark tokens/sec and cost per 1M tokens across H100, H200, A100, B200, and RTX 5090 for Llama, Qwen, and Mistral models."
+    }
+  ]
+}

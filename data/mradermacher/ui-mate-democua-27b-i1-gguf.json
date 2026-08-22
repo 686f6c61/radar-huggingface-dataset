@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/UI-Mate-democua-27B-i1-GGUF",
+  "slug": "mradermacher-ui-mate-democua-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/UI-Mate-democua-27B-i1-GGUF",
+  "created_at": "2026-08-22T11:13:45.000Z",
+  "updated_at": "2026-08-22T11:13:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3391984,
+  "parameters_human": "3.4M",
+  "storage_bytes": 13642624,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/UI-Mate-democua-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/UI-Mate-democua-27B-GGUF",
+      "snippet": "mradermacher / UI-Mate-democua-27B-GGUF like 0 Transformers GGUF English computer-use-agent gui-agent multimodal vision-language desktop-agent pyautogui osworld windowsagentarena demonstration-guided conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Quantized Models for tencent/UI-Mate-democua-27B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:tencent/UI-Mate-democua-27B",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset tencent/UI-Mate-democua-27B Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment ..."
+    },
+    {
+      "title": "UI-Mate-democua-27B AI model — specs and coverage — METAL LAB",
+      "url": "https://metallab.ai/en/models/tencent-ui-mate-democua-27b",
+      "snippet": "UI-Mate-democua-27B AI model specifications, developer, modality and related METAL LAB coverage."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GitHub - Tencent/UI-Mate: Advancing Foundation GUI Agents with In ...",
+      "url": "https://github.com/Tencent/UI-Mate",
+      "snippet": "The UI-Mate application is an OpenAI-compatible client rather than a bundled inference engine. The same desktop client can connect to a hosted endpoint, a self-hosted model, or an on-device model while keeping the agent policy in one shared harness."
+    }
+  ]
+}

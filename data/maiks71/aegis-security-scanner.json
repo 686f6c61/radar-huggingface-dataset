@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Maiks71/aegis-security-scanner",
+  "slug": "maiks71-aegis-security-scanner",
+  "author": "Maiks71",
+  "url": "https://huggingface.co/Maiks71/aegis-security-scanner",
+  "created_at": "2026-08-22T04:13:49.000Z",
+  "updated_at": "2026-08-22T04:44:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aegis — Pre-Deployment Security Scanner for AI Systems",
+      "url": "https://github.com/OptimistOtaku/aegis-scanner",
+      "snippet": "Aegis — Pre-Deployment Security Scanner for AI Systems Catch what generic scanners miss. Aegis is purpose-built for the threat surface of AI-driven codebases — hallucinated dependencies, prompt injection boundaries, PII flowing raw into model APIs, and agentic loop topologies — all in a single scan, zero config required."
+    },
+    {
+      "title": "Aegis AI Security Scanner",
+      "url": "https://www.aegis-scanner.com/",
+      "snippet": "AI-powered security vulnerability scanner. Analyze source code, web applications, and networks for security risks with automated remediation powered by Claude AI."
+    },
+    {
+      "title": "Aegis — Adversarial security testing for AI models and agents",
+      "url": "https://aegisprotect.ai/",
+      "snippet": "Aegis stress-tests your AI models and agents the way attackers will: multi-turn conversations, tool-call abuse, prompt injection. Outputs an audit-ready report your legal team can actually use."
+    },
+    {
+      "title": "Aegis AI Security Scanner - Visual Studio Marketplace",
+      "url": "https://marketplace.visualstudio.com/items?itemName=wen-zai.aegis-ai-security",
+      "snippet": "Where The Fix Features Are Place the cursor on an Aegis diagnostic line, then use Ctrl+. or the lightbulb. Aegis: 应用 AI 精准修复: replaces the vulnerable code when AI confidence is high. Aegis: 应用示例修复代码: replaces the vulnerable code with a framework-aware safe example. Aegis: 插入 AI 修复建议: inserts comments only."
+    },
+    {
+      "title": "Aegis-AI - Red Hat Product Security Agent - GitHub",
+      "url": "https://github.com/RedHatProductSecurity/aegis-ai",
+      "snippet": "Aegis enables security teams to leverage the latest Generative AI models for enhanced security analysis. Integrate your preferred LLM (ChatGPT, Anthropic, Gemini, or even a local model) to quickly perform deep security analysis on critical artifacts like CVEs, advisories, and more. Aegis allows you ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "satoleo1990/paper_001219762_efficient_attention",
+  "slug": "satoleo1990-paper_001219762_efficient_attention",
+  "author": "satoleo1990",
+  "url": "https://huggingface.co/satoleo1990/paper_001219762_efficient_attention",
+  "created_at": "2026-08-22T03:00:56.000Z",
+  "updated_at": "2026-08-22T03:01:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "detailed-descriptive",
+    "efficient-attention",
+    "highlight-bullet",
+    "intro-related-method-exp-conclusion",
+    "latex-arxiv",
+    "long-detailed",
+    "mixed-active-passive",
+    "neutral",
+    "numeric-nature",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Efficient Attention: Attention with Linear Complexities | IEEE ...",
+      "url": "https://ieeexplore.ieee.org/document/9423033",
+      "snippet": "Dot-product attention has wide applications in computer vision and natural language processing. However, its memory and computational costs grow quadratically with the input size. Such growth prohibits its application on high- resolution inputs. To remedy this drawback, this paper proposes a novel efficient attention mechanism equivalent to dot-product attention but with substantially less ..."
+    },
+    {
+      "title": "Efficient Attention in Language Models",
+      "url": "https://www.scribd.com/document/895523046/Efficient-Attention-Mechanisms-for-Large-Language-Model-A-Survey",
+      "snippet": "This survey reviews efficient attention mechanisms for large language models, focusing on linear and sparse attention methods that address the computational challenges of traditional self-attention. It categorizes linear attention into kernelized, recurrent, and fast-weight approaches, while sparse attention includes fixed-pattern, block, and clustering techniques. The document also discusses ..."
+    },
+    {
+      "title": "WACV 2021 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/WACV2021/html/Shen_Efficient_Attention_Attention_With_Linear_Complexities_WACV_2021_paper.html",
+      "snippet": "To remedy this drawback, this paper proposes a novel efficient attention mechanism equivalent to dot-product attention but with substantially less memory and computational costs. Its resource efficiency allows more widespread and flexible integration of attention modules into a network, which leads to better accuracies."
+    },
+    {
+      "title": "Efficient Attention Mechanisms for Large Language Models: A Survey",
+      "url": "https://www.swiftscholar.net/paper/69b3c0a797752100428ca908",
+      "snippet": "The survey integrates algorithmic innovations with hardware-level considerations and analyzes their incorporation into large-scale pre-trained models (both uniform and hybrid designs). It aims to serve as a foundational reference for scalable and efficient language model design."
+    },
+    {
+      "title": "Efficient Attention Mechanisms for Large Language Models:",
+      "url": "https://arxiv.org/html/2507.19595v1",
+      "snippet": "In addition, we analyze the incorporation of efficient attention into large-scale pre-trained language models, including both architectures built entirely on efficient attention and hybrid designs that combine local and global components."
+    }
+  ]
+}

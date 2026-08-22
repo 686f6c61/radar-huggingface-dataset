@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3.6-27b-the-good-one-ablated-GGUF",
+  "slug": "mradermacher-qwen3-6-27b-the-good-one-ablated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3.6-27b-the-good-one-ablated-GGUF",
+  "created_at": "2026-08-22T10:40:54.000Z",
+  "updated_at": "2026-08-22T11:06:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:5vg/qwen3.6-27b-the-good-one-ablated",
+    "base_model:quantized:5vg/qwen3.6-27b-the-good-one-ablated",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187905322048,
+  "storage_human": "187.9 GB",
+  "base_model": "5vg/qwen3.6-27b-the-good-one-ablated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.6-27B-Jormungandr-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-Jormungandr-GGUF",
+      "snippet": "mradermacher / Qwen3.6-27B-Jormungandr-GGUF like 1 Text Generation Transformers GGUF MLX 4 languages coding research unsloth qwen3_5 qwen3_6 qwen fable qwen3.6 qwen3.5 claude4.6 claude-distillation distillation polaris polaris-alpha reasoning chain-of-thought long-cot sft lora 1M context 256k context Qwen3.6 All use cases instruction-tuned conversational multilingual math stem experimental ..."
+    },
+    {
+      "title": "mradermacher/Qwen3.6-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-GGUF",
+      "snippet": "mradermacher / Qwen3.6-27B-GGUF like 5 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.6-27B Quantization Benchmark - huy.rocks",
+      "url": "https://www.huy.rocks/everyday/05-29-2026-ai-qwen3-6-27b-quantization-benchmark",
+      "snippet": "This is my attempt to benchmark and compare the quality of some of the well known Qwen3.6 27B quantizations on HuggingFace (unsloth, mradermacher, IQ4&#92;&#92;_XS from cHunter789 and Ununnilium), from Q8 all ..."
+    },
+    {
+      "title": "How to Run Qwen 3.6-27B Locally: Mac, GPU, and Ollama Setup Guide (2026)",
+      "url": "https://www.aimadetools.com/blog/how-to-run-qwen-3-6-27b-locally/",
+      "snippet": "For a full breakdown of the model itself, see our Qwen 3.6-27B complete guide. For the broader Qwen 3.6 family, check How to run Qwen 3.6 locally, or browse our local AI hub for other open-weight models. Hardware Requirements The 27B dense architecture needs more memory than the 35B-A3B MoE variant. Here&#x27;s what you need at each precision level."
+    },
+    {
+      "title": "Qwen3.6-27B: 27B Model Beats 397B on Coding (2026)",
+      "url": "https://www.buildfastwithai.com/blogs/qwen3-6-27b-review-2026",
+      "snippet": "Unsloth Studio is a browser-based local AI interface that handles model download, configuration, and serving automatically. It supports Qwen3.6-27B with day-zero GGUFs and developer role support for agentic coding tools like OpenCode and Codex. Install via their one-line script, open localhost:8888, search for Qwen3.6-27B, and select your quant."
+    }
+  ]
+}

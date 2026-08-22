@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "samsonlee/paper_017585822_text_image_retrieval",
+  "slug": "samsonlee-paper_017585822_text_image_retrieval",
+  "author": "samsonlee",
+  "url": "https://huggingface.co/samsonlee/paper_017585822_text_image_retrieval",
+  "created_at": "2026-08-22T06:24:19.000Z",
+  "updated_at": "2026-08-22T06:24:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "author-year",
+    "critical",
+    "first-person-plural",
+    "html",
+    "intro-problem-solution-validation-future",
+    "long-detailed",
+    "text-image-retrieval",
+    "unstructured-narrative",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text-to-Image Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-to-image",
+      "snippet": "Active filters: text-to-image. Clear all. Gazingstars123/Anima-2.9B. Text-to-Image • Updated 4 days ago • 24.9k • 255"
+    },
+    {
+      "title": "[2406.05814] TIGeR: Unifying Text-to-Image Generation and Retrieval ...",
+      "url": "https://arxiv.org/abs/2406.05814",
+      "snippet": "How humans can effectively and efficiently acquire images has always been a perennial question. A classic solution is text-to-image retrieval from an existing database; however, the limited database typically lacks creativity. By contrast, recent breakthroughs in text-to-image generation have made it possible to produce attractive and counterfactual visual content, but it faces challenges in ..."
+    },
+    {
+      "title": "AI Image Generator - DeepAI",
+      "url": "https://deepai.org/machine-learning-model/text2img",
+      "snippet": "Transform your ideas into stunning AI art—instantly and for free. Whether you&#x27;re a creator, developer, or entrepreneur, DeepAI&#x27;s Free Online AI Image Generator gives you the power to visualize your imagination in seconds."
+    },
+    {
+      "title": "Bing Image Creator | Microsoft Bing",
+      "url": "https://explore.microsoft.com/en-us/bing/features/bing-image-creator",
+      "snippet": "Experience the future of creativity with Bing Image Creator, a state-of-the-art, AI-powered tool that instantly turns your ideas into eye-catching visuals. Free to use, Bing Image Creator lets you choose from leading image generation models including MAI-Image-2e, GPT-4o, or DALL-E3, making it easy to produce anything from lifelike photos to unique works of art. Personalize your creations by ..."
+    },
+    {
+      "title": "[2507.05513] Llama Nemoretriever Colembed: Top-Performing Text-Image ...",
+      "url": "https://arxiv.org/abs/2507.05513",
+      "snippet": "Motivated by the growing demand for retrieval systems that operate across modalities, we introduce llama-nemoretriever-colembed, a unified text-image retrieval model that delivers state-of-the-art performance across multiple benchmarks. We release two model variants, 1B and 3B. The 3B model achieves state of the art performance, scoring NDCG@5 91.0 on ViDoRe V1 and 63.5 on ViDoRe V2, placing ..."
+    }
+  ]
+}

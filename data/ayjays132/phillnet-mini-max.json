@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ayjays132/Phillnet-Mini-Max",
+  "slug": "ayjays132-phillnet-mini-max",
+  "author": "ayjays132",
+  "url": "https://huggingface.co/ayjays132/Phillnet-Mini-Max",
+  "created_at": "2026-08-22T11:05:21.000Z",
+  "updated_at": "2026-08-22T11:06:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dendro_omni",
+    "text-generation",
+    "visual-question-answering",
+    "multimodal",
+    "custom-code",
+    "adaptive-reasoning",
+    "text-vision-only",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 881827584,
+  "parameters_human": "881.8M",
+  "storage_bytes": 1783919818,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ayjays132/phillnet · Hugging Face",
+      "url": "https://huggingface.co/ayjays132/phillnet",
+      "snippet": "Phillnet 🚀 🚀 Welcome to Phillnet5b 🌟 Dive into the depths of AI with Phillnet, your 5 Billion-parameter titan! This colossal model is not just numbers; it&#x27;s a labyrinth of knowledge, ready to unlock new realms of possibilities. 🧠💡 From text generation to complex problem-solving, Phillnet5b is your gateway to unparalleled AI power. Get ready to embark on a journey where every ..."
+    },
+    {
+      "title": "ayjays132/PhillnetLarge · Hugging Face",
+      "url": "https://huggingface.co/ayjays132/PhillnetLarge",
+      "snippet": "Embark on a scholarly quest to unlock the potential of your AI model, \"ayjays132/phillnet\", with our elegantly crafted script. Designed for the curious minds in AI, this guide is your beacon through the realm of machine learning."
+    },
+    {
+      "title": "ayjays132/PHILLNET-1 - Fast, Reliable, and Scalable ... - friendli.ai",
+      "url": "https://friendli.ai/models/ayjays132/PHILLNET-1",
+      "snippet": "Run ayjays132/PHILLNET-1 with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "GitHub - ayjays132/phillnet-complete-life-studio: Phillnet Complete ...",
+      "url": "https://github.com/ayjays132/phillnet-complete-life-studio",
+      "snippet": "Phillnet Complete Life Studio Gym Environment. Contribute to ayjays132/phillnet-complete-life-studio development by creating an account on GitHub."
+    },
+    {
+      "title": "Built this showcase around my local PhillNet model, with GPT-5.6 Sol ...",
+      "url": "https://x.com/ayjays132/status/2076546365837148168",
+      "snippet": "Young Philly P. (@ayjays132). 4 likes. Built this showcase around my local PhillNet model, with GPT-5.6 Sol guidance used at inference time to improve coherence and speed while preserving PhillNet&#x27;s own weights, multimodal routes, Swarm system, tools, vision, memory, robotics, and local final output. PhillNet generated the showcased artifacts and its own voiceover; GPT-5.6 Sol acted as ..."
+    }
+  ]
+}

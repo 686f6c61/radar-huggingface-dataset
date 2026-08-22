@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "sovasoft/zora-v1.12-mlx",
+  "slug": "sovasoft-zora-v1-12-mlx",
+  "author": "sovasoft",
+  "url": "https://huggingface.co/sovasoft/zora-v1.12-mlx",
+  "created_at": "2026-08-22T07:58:23.000Z",
+  "updated_at": "2026-08-22T07:59:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en",
+    "sr",
+    "hr",
+    "bs",
+    "mk",
+    "sl",
+    "sq",
+    "bg",
+    "el",
+    "tr",
+    "ro",
+    "hu"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "apple-silicon",
+    "balkan",
+    "southeast-europe",
+    "multilingual",
+    "honest-ai",
+    "sovasoft",
+    "en",
+    "sr",
+    "hr",
+    "bs",
+    "mk",
+    "sl",
+    "sq",
+    "bg",
+    "el",
+    "tr",
+    "ro",
+    "hu",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939648,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sovasoft/zora-v1.12 · Hugging Face",
+      "url": "https://huggingface.co/sovasoft/zora-v1.12",
+      "snippet": "sovasoft / zora-v1.12 like 0 Follow Sova Soft 1 Text Generation Transformers Safetensors GGUF 12 languages qwen3 balkan southeast-europe multilingual honest-ai sovasoft rag conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "sovasoft/zora-v1.11 at main - Hugging Face",
+      "url": "https://huggingface.co/sovasoft/zora-v1.11/tree/main",
+      "snippet": "sovasoft / zora-v1.11 like 2 Follow Sova Soft 1 Transformers GGUF 12 languages balkan southeast-europe multilingual honest-ai sovasoft conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - chucklehard/zora: Zora, Ai Assistant. · GitHub",
+      "url": "https://github.com/chucklehard/zora",
+      "snippet": "What is Zora? Zora is a personal AI operating system. Not a chatbot. Not a wrapper around an API. A persistent, always-on intelligence that runs across your own Macs, learns your workflow, handles your communications, monitors your infrastructure, and works autonomously — day and night. She drafts your emails in your voice."
+    },
+    {
+      "title": "Sora: Creating video from text | OpenAI",
+      "url": "https://openai.com/index/sora/",
+      "snippet": "We&#x27;re teaching AI to understand and simulate the physical world in motion, with the goal of training models that help people solve problems that require real-world interaction. Introducing Sora, our text-to-video model. Sora can generate videos up to a minute long while maintaining visual quality and adherence to the user&#x27;s prompt."
+    },
+    {
+      "title": "Sora",
+      "url": "https://sora.chatgpt.com/",
+      "snippet": "Transform text and images into immersive videos. Animate stories, visualize ideas, and bring your concepts to life."
+    }
+  ]
+}

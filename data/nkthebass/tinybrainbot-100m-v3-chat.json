@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nkthebass/tinybrainbot-100m-v3-chat",
+  "slug": "nkthebass-tinybrainbot-100m-v3-chat",
+  "author": "nkthebass",
+  "url": "https://huggingface.co/nkthebass/tinybrainbot-100m-v3-chat",
+  "created_at": "2026-08-22T03:21:24.000Z",
+  "updated_at": "2026-08-22T03:21:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tinybrainbot",
+    "small-language-model",
+    "chat",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100092672,
+  "parameters_human": "100.1M",
+  "storage_bytes": 401961623,
+  "storage_human": "402 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nkthebass/tinybrainbot-100m-v3-instruct · Hugging Face",
+      "url": "https://huggingface.co/nkthebass/tinybrainbot-100m-v3-instruct",
+      "snippet": "A 100M-parameter chat/instruct model that beats SupraLabs/Supra2-100M-Instruct on 6/7 benchmarks on the official EleutherAI LM-Eval Harness — and actually converses."
+    },
+    {
+      "title": "nkthebass/tinybrainbot-100m-v3-math · Hugging Face",
+      "url": "https://huggingface.co/nkthebass/tinybrainbot-100m-v3-math",
+      "snippet": "A 100M-parameter math/reasoning specialist, SFT&#x27;d from tinybrainbot-100m-v3-base on a math-heavy diet (order-of-operations, word problems, chain-of-thought). Beats Supra2-100M-Instruct on 5/7 benchmarks on the official EleutherAI LM-Eval Harness."
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

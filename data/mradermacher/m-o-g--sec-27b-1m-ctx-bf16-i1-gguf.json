@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "mradermacher/M.O.G.-SEC-27B-1M-CTX-BF16-i1-GGUF",
+  "slug": "mradermacher-m-o-g--sec-27b-1m-ctx-bf16-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/M.O.G.-SEC-27B-1M-CTX-BF16-i1-GGUF",
+  "created_at": "2026-08-22T05:22:34.000Z",
+  "updated_at": "2026-08-22T05:35:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.8",
+    "qwen",
+    "bf16",
+    "cybersecurity",
+    "offensive-security",
+    "defensive-security",
+    "uncensored",
+    "1m-context",
+    "yarn",
+    "dflash2",
+    "mtp",
+    "speculative-decoding",
+    "sglang",
+    "mog",
+    "minds-of-gods",
+    "qwentium",
+    "conversational",
+    "multimodal",
+    "research",
+    "not-for-all-audiences",
+    "en",
+    "multilingual",
+    "base_model:Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-BF16",
+    "base_model:quantized:Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471869440,
+  "storage_human": "39.5 GB",
+  "base_model": "Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Qwen3.6-27B-Miraculix-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-27B-Miraculix-i1-GGUF",
+      "snippet": "/ Qwen3.6-27B-Miraculix-i1-GGUF like 1 Text Generation Transformers GGUF MLX 4 languages coding research unsloth qwen3_5 qwen3_6 qwen fable qwen3.6 qwen3.5 claude4.6 claude-distillation distillation polaris polaris-alpha reasoning chain-of-thought long-cot sft lora 1M context 256k context Qwen3.6 All use cases instruction-tuned conversational ..."
+    },
+    {
+      "title": "mradermacher quant download page",
+      "url": "https://hf.tst.eu/model",
+      "snippet": "mradermacher quant download page BETA - this page is not finished: more explanations and changes are to come, but it should be functional."
+    },
+    {
+      "title": "Qwen3.6 Local VRAM Guide: Measuring 27B and 35B-A3B Quantizations",
+      "url": "https://knightli.com/en/2026/05/01/qwen3-6-local-vram-quantization-table/",
+      "snippet": "Separate theoretical weights, GGUF file size, and measured VRAM for Qwen3.6-27B and 35B-A3B, with reproducible tests for quantization, context, GPU, and backend."
+    },
+    {
+      "title": "Qwen3.8-27B GGUF: Which Quant to Download for Your GPU",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-gguf",
+      "snippet": "Qwen3.8-27B GGUF sizes, verified Aug 15 2026: Q4_K_M 17.1GB for 24GB, IQ4_XS for 16GB, 2-bit for 12GB, plus the KV-cache trick and the template trap."
+    }
+  ]
+}

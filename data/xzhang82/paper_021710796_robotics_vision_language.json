@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "xzhang82/paper_021710796_robotics_vision_language",
+  "slug": "xzhang82-paper_021710796_robotics_vision_language",
+  "author": "xzhang82",
+  "url": "https://huggingface.co/xzhang82/paper_021710796_robotics_vision_language",
+  "created_at": "2026-08-22T05:27:16.000Z",
+  "updated_at": "2026-08-22T05:27:23.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "enthusiastic",
+    "first-person-plural",
+    "intro-problem-solution-validation-future",
+    "latex-icml",
+    "medium-balanced",
+    "numeric-nature",
+    "robotics-vision-language",
+    "unstructured-narrative",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Large VLM-based Vision-Language-Action Models for Robotic Manipulation ...",
+      "url": "https://arxiv.org/html/2508.13073v1",
+      "snippet": "Abstract Robotic manipulation, as a critical frontier in robotics and embodied AI, demands precise motor control and integrated understanding of visual and semantic cues in dynamic environments. Traditional approaches, grounded in predefined task specifications and rigid control policies, often struggle to scale or generalize in unstructured, novel scenarios. In recent years, Vision-Language ..."
+    },
+    {
+      "title": "Vision-Language-Action in Robotics: A Survey of Datasets, Benchmarks ...",
+      "url": "https://arxiv.org/abs/2604.23001",
+      "snippet": "Despite remarkable progress in Vision--Language--Action (VLA) models, a central bottleneck remains underexamined: the data infrastructure that underlies embodied learning. In this survey, we argue that future advances in VLA will depend less on model architecture and more on the co-design of high-fidelity data engines and structured evaluation protocols. To this end, we present a systematic ..."
+    },
+    {
+      "title": "Awesome VLA Papers - GitHub",
+      "url": "https://github.com/hanjianhua44/Awesome-VLA-Papers",
+      "snippet": "A curated collection of papers on Vision-Language-Action (VLA) models, covering autonomous driving, robotics, world models, spatial reasoning, and more ..."
+    },
+    {
+      "title": "Vision-Language-Action Models for Robotics: A Review Towards Real-World ...",
+      "url": "https://vla-survey.github.io/",
+      "snippet": "A comprehensive review of Vision-Language-Action models for robotics, covering architectures, learning paradigms, and real-world applications."
+    },
+    {
+      "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+      "url": "https://openreview.net/pdf?id=ZMnD6QZAE6",
+      "snippet": "the art for generalist robot manipulation policies. OpenVLA consists of a pretrained visually-conditioned language model backbone that captures visual features at multiple granularities, fine-tuned on a large, diverse dataset of 970k robot manipulation trajectories from the Open-X Embodiment [1] dataset — a dataset that spans"
+    }
+  ]
+}

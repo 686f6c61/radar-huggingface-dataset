@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "PocketAiHub/Ornith-1.5-9B-Abliterated-MLX-8bit",
+  "slug": "pocketaihub-ornith-1-5-9b-abliterated-mlx-8bit",
+  "author": "PocketAiHub",
+  "url": "https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated-MLX-8bit",
+  "created_at": "2026-08-22T07:53:18.000Z",
+  "updated_at": "2026-08-22T07:54:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "ornith",
+    "ornith-1.5",
+    "multimodal",
+    "abliterated",
+    "mlx-vlm",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2975030512,
+  "parameters_human": "2.98B",
+  "storage_bytes": 10446580236,
+  "storage_human": "10.4 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PocketAiHub/Ornith-1.5-35B-A3B-Abliterated-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/PocketAiHub/Ornith-1.5-35B-A3B-Abliterated-MLX-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-9B-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-6bit",
+      "snippet": "Ornith-1.5-9B is a dense ~9B model (≈19 GB in bf16), so it serves on a single 80GB GPU. The recipes below stand up an OpenAI-compatible server; add --tensor-parallel-size / --tp if you want to shard across more GPUs."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    },
+    {
+      "title": "DeepReinforce Releases Open-Source Orinth 1.5 Family Of Models With ...",
+      "url": "https://officechai.com/ai/deepreinforce-releases-open-source-orinth-1-5-family-of-models-with-solid-benchmarks-and-mit-license/",
+      "snippet": "DeepReinforce, the AI research startup behind the Ornith line of open-source models, has released Ornith-1.5, a new family of models spanning 9B, 35B, and 397B parameters that the company says performs on par with Claude Opus 4.8 across reasoning, coding, and agentic tasks. The models are released ..."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    }
+  ]
+}

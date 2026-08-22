@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Thundergod2007/vipragsent-vistral7b-checkpoints",
+  "slug": "thundergod2007-vipragsent-vistral7b-checkpoints",
+  "author": "Thundergod2007",
+  "url": "https://huggingface.co/Thundergod2007/vipragsent-vistral7b-checkpoints",
+  "created_at": "2026-08-06T00:41:03.000Z",
+  "updated_at": "2026-08-22T10:23:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148018069490,
+  "storage_human": "148.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thundergod2007/vipragsent-vistral7b-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/Thundergod2007/vipragsent-vistral7b-checkpoints",
+      "snippet": "Thundergod2007 / vipragsent-vistral7b-checkpoints like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Thundergod2007 (Le Minh Hieu) - Hugging Face",
+      "url": "https://huggingface.co/Thundergod2007",
+      "snippet": "Thundergod2007/vipragsent-experiment-checkpoints Text Classification •Updated 2 days ago"
+    },
+    {
+      "title": "GitHub - lexuanbach/hieule",
+      "url": "https://github.com/lexuanbach/hieule",
+      "snippet": "ViPragSent ViPragSent is a Vietnamese social-media benchmark and reproducibility package for pragmatic sentiment phenomena: implicit sentiment, sarcasm, irony, idiomatic or figurative language, code-switching, and mocking. The project also records intended polarity and emotion as auxiliary tasks."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "How to Install Stable Diffusion Checkpoints & Models",
+      "url": "https://www.nextdiffusion.ai/tutorials/how-to-install-stable-diffusion-checkpoints-models",
+      "snippet": "Learn how to effectively install checkpoints and models in Stable Diffusion to enhance your image generation capabilities. Discover key concepts about models and the significance of Variable Autoencoders for stunning outputs."
+    }
+  ]
+}

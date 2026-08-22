@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Qyrou/reasoning-summarizer-800m-pre-gguf",
+  "slug": "qyrou-reasoning-summarizer-800m-pre-gguf",
+  "author": "Qyrou",
+  "url": "https://huggingface.co/Qyrou/reasoning-summarizer-800m-pre-gguf",
+  "created_at": "2026-07-05T21:52:52.000Z",
+  "updated_at": "2026-08-22T11:01:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "reasoning",
+    "json",
+    "sft",
+    "JSON-schema",
+    "thinking",
+    "reasoning-summaries",
+    "CoT",
+    "agentic-coding",
+    "qwen35",
+    "qwen3next",
+    "math",
+    "code",
+    "text-generation",
+    "en",
+    "dataset:Qyrou/reasoning-summaries-61k",
+    "base_model:Qyrou/reasoning-summarizer-800m-pre",
+    "base_model:quantized:Qyrou/reasoning-summarizer-800m-pre",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 381,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 4570836864,
+  "storage_human": "4.6 GB",
+  "base_model": "Qyrou/reasoning-summarizer-800m-pre",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SupraLabs/reasoning-summarizer-800m-pre-gguf · Hugging Face",
+      "url": "https://huggingface.co/SupraLabs/reasoning-summarizer-800m-pre-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reasoning-summarizer-800m-pre-Q8_0.gguf · SupraLabs/reasoning ...",
+      "url": "https://huggingface.co/SupraLabs/reasoning-summarizer-800m-pre-gguf/blob/main/reasoning-summarizer-800m-pre-Q8_0.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "reasoning-summarizer-800m-pre-gguf - 开源模型 - SupraLabs - OpenCSG - Cot ...",
+      "url": "https://opencsg.com/models/SupraLabs/reasoning-summarizer-800m-pre-gguf?tab=summary",
+      "snippet": "reasoning-summarizer-800m-pre-gguf 是由 SupraLabs 推出的开源人工智能模型，主要应用于Cot，OpenCSG提供高速免费下载服务，支持模型推理、训练、部署全流程管理，助力AI开发者高效工作。"
+    },
+    {
+      "title": "SupraLabs_reasoning-summarizer-800m-pre-gguf - 开源模型 - SupraLabs ...",
+      "url": "https://opencsg.com/models/SupraLabs/SupraLabs_reasoning-summarizer-800m-pre-gguf?tab=summary",
+      "snippet": "SupraLabs_reasoning-summarizer-800m-pre-gguf 是由 SupraLabs 推出的开源人工智能模型，主要应用于Cot，OpenCSG提供高速免费下载服务，支持模型推理、训练、部署全流程管理，助力AI开发者高效工作。"
+    },
+    {
+      "title": "Entity | KnowYourModel",
+      "url": "https://knowyourmodel.ai/models/huggingface%3ASupraLabs%2Freasoning-summarizer-800m-pre-gguf",
+      "snippet": "View entity details and skills Home Models Huggingface%3ASupraLabs%2Freasoning-summarizer-800m-pre-gguf Entities huggingface/huggingface:SupraLabs/reasoning ..."
+    }
+  ]
+}

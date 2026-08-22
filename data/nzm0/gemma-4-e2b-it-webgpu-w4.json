@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NZM0/gemma-4-E2B-it-webgpu-w4",
+  "slug": "nzm0-gemma-4-e2b-it-webgpu-w4",
+  "author": "NZM0",
+  "url": "https://huggingface.co/NZM0/gemma-4-E2B-it-webgpu-w4",
+  "created_at": "2026-08-22T04:14:09.000Z",
+  "updated_at": "2026-08-22T04:18:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gemma",
+    "gemma4",
+    "webgpu",
+    "javascript",
+    "quantized",
+    "text-generation",
+    "base_model:google/gemma-4-E2B-it-qat-w4a16-ct",
+    "base_model:finetune:google/gemma-4-E2B-it-qat-w4a16-ct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3182941374,
+  "storage_human": "3.2 GB",
+  "base_model": "google/gemma-4-E2B-it-qat-w4a16-ct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "gemma4-webgpu · browser-local Gemma 4 E2B, purpose-built WGSL",
+      "url": "https://tylerstraub.github.io/gemma4-webgpu/",
+      "snippet": "Run Gemma 4 E2B locally in your browser via WebGPU. Purpose-built WGSL over raw WebGPU. Chat, bench, profile, and cross-lab diff — all on-device."
+    },
+    {
+      "title": "Gemma 4 WebGPU - a Hugging Face Space by webml-community",
+      "url": "https://huggingface.co/spaces/webml-community/Gemma-4-WebGPU",
+      "snippet": "Enter a question, prompt, or upload an image and the Gemma 4 AI will respond with helpful text right in the webpage. It works instantly in‑browser, so you can get answers or generate content withou..."
+    },
+    {
+      "title": "GitHub - tylerstraub/gemma4-webgpu: Browser-local Gemma 4 E2B inference ...",
+      "url": "https://github.com/tylerstraub/gemma4-webgpu",
+      "snippet": "A reference implementation and a living research home for running Gemma 4 E2B (text-only, Q4_K_M) locally in a browser via WebGPU. The audience is: Porters adapting browser-local LLM inference to other hardware Kernel tinkerers interested in WGSL optimizations that work across vendors Researchers studying the edge of what WebGPU can do for LLMs Anyone who wants to learn from the process ..."
+    },
+    {
+      "title": "QuantML - Gemma 4 E2B",
+      "url": "https://gemma4.quantml.org/",
+      "snippet": "Run Gemma 4 E2B locally via WebGPU. Text, image, and audio. Fully private, zero server calls."
+    }
+  ]
+}

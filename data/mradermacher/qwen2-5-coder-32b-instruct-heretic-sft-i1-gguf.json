@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen2.5-coder-32b-instruct-heretic-sft-i1-GGUF",
+  "slug": "mradermacher-qwen2-5-coder-32b-instruct-heretic-sft-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen2.5-coder-32b-instruct-heretic-sft-i1-GGUF",
+  "created_at": "2026-08-22T08:33:20.000Z",
+  "updated_at": "2026-08-22T08:33:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3736000,
+  "parameters_human": "3.7M",
+  "storage_bytes": 15011072,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen2.5-Coder-32B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-Coder-32B-Instruct-GGUF",
+      "snippet": "mradermacher / Qwen2.5-Coder-32B-Instruct-GGUF like 1 Transformers GGUF English code codeqwen chat qwen qwen-coder conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Qwen2.5-Coder-32B-Instruct-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-Coder-32B-Instruct-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Qwen2.5-Coder-32B-Instruct-GGUF: Open-Source Code LLM for Private ...",
+      "url": "https://dev.co/ai/llms/qwen2-5-coder-32b-instruct-gguf",
+      "snippet": "Qwen2.5-Coder-32B-Instruct-GGUF Qwen2.5-Coder-32B-Instruct-GGUF is a 32.5B parameter code-specialized language model from Alibaba&#x27;s Qwen team, quantized in GGUF format for efficient local deployment. It targets code generation, reasoning, and fixing tasks with reported performance on par with GPT-4o for coding. The model supports 32K context natively and up to 128K with external scaling, and ..."
+    },
+    {
+      "title": "Qwen2.5-Coder-32B-Instruct-GGUF - GitHub",
+      "url": "https://github.com/Roobbert/Qwen2.5-Coder-32B-Instruct-GGUF",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers."
+    },
+    {
+      "title": "Qwen2.5-32B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-32B-Instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Xihe666/drif_ov_libero_20k_seed1000_0822",
+  "slug": "xihe666-drif_ov_libero_20k_seed1000_0822",
+  "author": "Xihe666",
+  "url": "https://huggingface.co/Xihe666/drif_ov_libero_20k_seed1000_0822",
+  "created_at": "2026-08-22T06:34:11.000Z",
+  "updated_at": "2026-08-22T06:37:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "drif_ov",
+    "robotics",
+    "dataset:lerobot/libero",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1909381248,
+  "parameters_human": "1.91B",
+  "storage_bytes": 7637638416,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xihe666/drif_ov_siemens_0816 · Hugging Face",
+      "url": "https://huggingface.co/Xihe666/drif_ov_siemens_0816",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Xihe666 (Xihe) - Hugging Face",
+      "url": "https://huggingface.co/Xihe666",
+      "snippet": "Sort: Recently updated Xihe666/drifting_robomme Robotics • 2B•Updated 5 days ago• 61"
+    },
+    {
+      "title": "GitHub - Lifelong-Robot-Learning/LIBERO: Benchmarking Knowledge ...",
+      "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+      "snippet": "LIBERO is designed for studying knowledge transfer in multitask and lifelong robot learning problems. Successfully resolving these problems require both declarative knowledge about objects/spatial relationships and procedural knowledge about motion/behaviors."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LIBERO Datasets - LIBERO",
+      "url": "https://libero-project.github.io/datasets",
+      "snippet": "LIBERO-Spatial: 10 tasks from LIBERO-Spatial suite. LIBERO-Object: 10 tasks from LIBERO-Object suite. LIBERO-Goal: 10 tasks from LIBERO-Goal suite. LIBERO-100: 100 tasks from LIBERO-100 suite. Note that the datasets are split under the folder names of LIBERO-90 and LIBERO-10. We also have a script for programmatic downloading the datasets."
+    }
+  ]
+}

@@ -21,9 +21,9 @@
     "base_model:adapter:krea/Krea-2-Turbo",
     "region:us"
   ],
-  "likes": 13,
-  "downloads_30d": 0,
-  "trending_score": 13,
+  "likes": 16,
+  "downloads_30d": 829,
+  "trending_score": 16,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 2637884599,

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Joyjeetsingh/rwm-reproduction",
+  "slug": "joyjeetsingh-rwm-reproduction",
+  "author": "Joyjeetsingh",
+  "url": "https://huggingface.co/Joyjeetsingh/rwm-reproduction",
+  "created_at": "2026-08-22T05:44:22.000Z",
+  "updated_at": "2026-08-22T06:02:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "world-models",
+    "model-based-rl",
+    "reproduction",
+    "uncertainty-quantification",
+    "legged-robotics",
+    "arxiv:2501.10100",
+    "arxiv:2504.16680",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45467220,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joyjeetsingh (Joyjeet Singh) - Hugging Face",
+      "url": "https://huggingface.co/Joyjeetsingh",
+      "snippet": "Local SLM&#x27;s & TLM&#x27;s - Kernel optimization, RLHF, inference optimization and everything related to these."
+    },
+    {
+      "title": "Research Papers - a Joyjeetsingh Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Joyjeetsingh/research-papers",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Joyjeetsingh"
+    },
+    {
+      "title": "GitHub - leggedrobotics/robotic_world_model: Repository for our papers ...",
+      "url": "https://github.com/leggedrobotics/robotic_world_model",
+      "snippet": "This repository extends Isaac Lab with environments and training pipelines for Robotic World Model (RWM), Uncertainty-Aware Robotic World Model (RWM-U), and related model-based reinforcement learning methods. It enables: joint training of policies and neural dynamics models in Isaac Lab (online), training of policies with learned neural network dynamics without any simulator (offline ..."
+    },
+    {
+      "title": "Joyjeet Singh - Efficient inference and enhanced reasoning via custom ...",
+      "url": "https://in.linkedin.com/in/joy-jeet-singh",
+      "snippet": "Efficient inference and enhanced reasoning via custom architectures · Self-directed researcher in physics-informed machine learning with 3 sole-author arXiv papers whose common thread is evidentiary discipline. All 3 are corrective results — one shows a class of implicit-reasoning models performs no useful iterative computation; the other shows a published planning result is decided by its ..."
+    },
+    {
+      "title": "GitHub - leggedrobotics/rsl_rl_rwm: Algorithm implementation for our ...",
+      "url": "https://github.com/leggedrobotics/rsl_rl_rwm",
+      "snippet": "A fast and simple implementation of RL algorithms, designed to run fully on GPU. This code is a fork of RSL RL incorporated with model-based RL algorithms supporting Robotic World Model and Uncertainty-Aware Robotic World Model."
+    }
+  ]
+}

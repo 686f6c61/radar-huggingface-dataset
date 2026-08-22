@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mrs83/Kurtis-EON1-Hybrid-2B-v0.1.2",
+  "slug": "mrs83-kurtis-eon1-hybrid-2b-v0-1-2",
+  "author": "mrs83",
+  "url": "https://huggingface.co/mrs83/Kurtis-EON1-Hybrid-2B-v0.1.2",
+  "created_at": "2026-06-06T22:22:01.000Z",
+  "updated_at": "2026-08-22T10:25:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "echo_hybrid",
+    "text-generation",
+    "text-generation-inference",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 112,
+  "trending_score": 0,
+  "parameters": 2000186624,
+  "parameters_human": "2.00B",
+  "storage_bytes": 10071578626,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrs83/Kurtis-EON1-Hybrid-2B-v0.1.2 · Hugging Face",
+      "url": "https://huggingface.co/mrs83/Kurtis-EON1-Hybrid-2B-v0.1.2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Architecture graph for mrs83/Kurtis-EON1-Hybrid-2B-v0.1.2.",
+      "url": "https://hfviewer.com/mrs83/Kurtis-EON1-Hybrid-2B-v0.1.2",
+      "snippet": "mrs83/Kurtis-EON1-Hybrid-2B-v0.1.2 neural network architecture graph hfviewer renders an interactive architecture graph for the Hugging Face model mrs83/Kurtis-EON1-Hybrid-2B-v0.1.2. The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the ..."
+    },
+    {
+      "title": "Kurtis-EON1 - a ethicalabs Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ethicalabs/kurtis-eon1",
+      "snippet": "Transformer backbone + Echo-DSRN (RNN) ethicalabs &#x27;s Collections OpenAIRE AI Hackathon 2026 Echo-DSRN - Embedding Echo-DSRN - Classifier Echo-DSRN - Recurrent Hybrid Echo-DSRN - Transformers Hybrid Kurtis-EON1 Kurtis E1 Kurtis E1.2 SkinCancerViT Synthetic Datasets FlowerTune LLM Code FlowerTune LLM NLP FlowerTune LLM Finance FlowerTune LLM Medical Granite 4.0 MLX-LM 4-bit Ouroboros"
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Kurtis EON1 Hybrid 0.7B v0.1.1 - thinkllm.dev",
+      "url": "https://thinkllm.dev/models/kurtis-eon1-hybrid-0-7b-v0-1-1",
+      "snippet": "A compact, openly licensed text model at 0.7B parameters — small enough to run on modest hardware but with a 32K context window that punches above its weight class for a model this size. Details about its specific capabilities and intended use cases are limited, so observable behavior in practice will tell you more than its name suggests. The Apache 2.0 license makes it freely usable and ..."
+    }
+  ]
+}

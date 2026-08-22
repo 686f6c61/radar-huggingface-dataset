@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "liltyn/LTX-2.3",
+  "slug": "liltyn-ltx-2-3",
+  "author": "liltyn",
+  "url": "https://huggingface.co/liltyn/LTX-2.3",
+  "created_at": "2026-08-22T03:55:08.000Z",
+  "updated_at": "2026-08-22T03:55:08.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt"
+  ],
+  "tags": [
+    "diffusers",
+    "image-to-video",
+    "text-to-video",
+    "video-to-video",
+    "image-text-to-video",
+    "audio-to-video",
+    "text-to-audio",
+    "video-to-audio",
+    "audio-to-audio",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "ltx-2",
+    "ltx-video",
+    "ltxv",
+    "lightricks",
+    "ltx",
+    "ltx-2.3",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt",
+    "arxiv:2601.03233",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157633264097,
+  "storage_human": "157.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX-2.3: Previous Generation AI Video Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-3",
+      "snippet": "LTX-2.3 is the previous LTX release. Open weights, synchronized audio, and native portrait video. Still fully supported. LTX-2.5 is the current model."
+    },
+    {
+      "title": "LTX-2.3 - a Lightricks Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Lightricks/ltx-23",
+      "snippet": "LTX-2.3 base models, quantized models and accompanying LoRAs and IC-LoRAs"
+    },
+    {
+      "title": "LTX Video 2.3 - AI Model | Layer",
+      "url": "https://www.layer.ai/models/lightricks--ltx-v2-3",
+      "snippet": "LTX Video 2.3 is the latest generation video model from Lightricks, featuring a new VAE architecture for enhanced detail reproduction and improved prompt comprehension."
+    },
+    {
+      "title": "LTX 2.3 AI Video Generator — 4K Ultra HD, 20 Seconds | Verbatik AI",
+      "url": "https://verbatik.com/models/ltx-2.3",
+      "snippet": "Generate 4K AI videos up to 20 seconds with LTX 2.3. The only AI video model offering 2160p resolution, audio-to-video generation, and extended duration for professional content."
+    },
+    {
+      "title": "LTX-2.3 - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/ltx-2-3",
+      "snippet": "LTX-2.3 is a DiT-based (Diffusion Transformer) audio-video foundation model developed by Lightricks, representing a significant update to LTX-2 with improved audio and visual quality alongside enhanced prompt adherence."
+    }
+  ]
+}

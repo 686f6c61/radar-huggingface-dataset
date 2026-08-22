@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Thundergod2007/vipragsent-phobert-checkpoints",
+  "slug": "thundergod2007-vipragsent-phobert-checkpoints",
+  "author": "Thundergod2007",
+  "url": "https://huggingface.co/Thundergod2007/vipragsent-phobert-checkpoints",
+  "created_at": "2026-08-06T00:39:44.000Z",
+  "updated_at": "2026-08-22T08:02:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 324239713500,
+  "storage_human": "324.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thundergod2007/vipragsent-experiment-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/Thundergod2007/vipragsent-experiment-checkpoints",
+      "snippet": "Thundergod2007 / vipragsent-experiment-checkpoints like 0 Text Classification PyTorch Vietnamese phobert xlm-roberta multi-task-learning sentiment-analysis sarcasm-detection vietnamese License:other Model card FilesFiles and versions xet Community Copy to bucket new ViPragSent Experiment Checkpoints Included systems Training protocol Loading ..."
+    },
+    {
+      "title": "Thundergod2007 (Le Minh Hieu) - Hugging Face",
+      "url": "https://huggingface.co/Thundergod2007",
+      "snippet": "Thundergod2007/vipragsent-experiment-checkpoints Text Classification •Updated 2 days ago"
+    },
+    {
+      "title": "GitHub - VinAIResearch/PhoBERT: PhoBERT: Pre-trained language models ...",
+      "url": "https://github.com/VinAIResearch/PhoBERT",
+      "snippet": "PhoBERT: Pre-trained language models for Vietnamese Pre-trained PhoBERT models are the state-of-the-art language models for Vietnamese (Pho, i.e. \"Phở\", is a popular food in Vietnam): Two PhoBERT versions of \"base\" and \"large\" are the first public large-scale monolingual language models pre-trained for Vietnamese."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Models | InvokeAI Documentation",
+      "url": "https://invoke.ai/concepts/models/",
+      "snippet": "Checkpoint and Diffusers Models The model checkpoint files (*.ckpt) are the Stable Diffusion \"secret sauce\". They are the product of training the AI on millions of captioned images gathered from multiple sources. Originally there was only a single Stable Diffusion weights file, which many people named model.ckpt."
+    }
+  ]
+}

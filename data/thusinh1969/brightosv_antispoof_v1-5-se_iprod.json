@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "id": "thusinh1969/BrightoSV_AntiSpoof_V1.5-SE_iPROD",
+  "slug": "thusinh1969-brightosv_antispoof_v1-5-se_iprod",
+  "author": "thusinh1969",
+  "url": "https://huggingface.co/thusinh1969/BrightoSV_AntiSpoof_V1.5-SE_iPROD",
+  "created_at": "2026-02-05T00:25:14.000Z",
+  "updated_at": "2026-08-22T06:13:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi",
+    "en",
+    "zh",
+    "de",
+    "fr",
+    "nl",
+    "ja",
+    "ar"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "audio",
+    "voice-security",
+    "anti-spoofing",
+    "deepfake-detection",
+    "bank-grade",
+    "biometric-security",
+    "wavlm",
+    "multilingual",
+    "language-agnostic",
+    "commercial-sota",
+    "special-edition",
+    "vi",
+    "en",
+    "zh",
+    "de",
+    "fr",
+    "nl",
+    "ja",
+    "ar",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3817916382,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Voice Anti-Spoofing",
+      "dataset": null,
+      "metric": "Equal Error Rate (%) - 2s Gate",
+      "value": 0.17
+    },
+    {
+      "task": "Voice Anti-Spoofing",
+      "dataset": null,
+      "metric": "Equal Error Rate (%) - 4s Gate",
+      "value": 0.22
+    },
+    {
+      "task": "Voice Anti-Spoofing",
+      "dataset": null,
+      "metric": "Accuracy (%)",
+      "value": 99.85
+    },
+    {
+      "task": "Voice Anti-Spoofing",
+      "dataset": null,
+      "metric": "LAV-DF FRR @ FAR=0.01% (%) - 2s Gate",
+      "value": 1.21
+    },
+    {
+      "task": "Voice Anti-Spoofing",
+      "dataset": null,
+      "metric": "LAV-DF FRR @ FAR=0.01% (%) - 4s Gate",
+      "value": 1.53
+    }
+  ],
+  "sources": [
+    {
+      "title": "thusinh1969/BrightoSV_AntiSpoof_V1.5-SE_iPROD · Hugging Face",
+      "url": "https://huggingface.co/thusinh1969/BrightoSV_AntiSpoof_V1.5-SE_iPROD",
+      "snippet": "BrightoSV V1.5 Special Edition is the Commercial SOTA (State-of-the-Art) voice anti-spoofing model, representing the culmination of BrighTO Technology&#x27;s research in deepfake detection. This release delivers 34-42% improvement over V1.3 on the most challenging attack vectors while maintaining near-perfect real user acceptance."
+    },
+    {
+      "title": "thusinh1969/BrightoSV_AntiSpoof_V1.2_e5_iPROD · Hugging Face",
+      "url": "https://huggingface.co/thusinh1969/BrightoSV_AntiSpoof_V1.2_e5_iPROD",
+      "snippet": "BrightoSV V1.2 is a SOTA, premier, heavy-duty VOICE ANTI-SPOOFING model engineered by Brighto Technology. Designed for high-stakes environments where security failure is not an option, this model delivers SOTA (State-of-the-Art) performance that rivals and exceeds global giants in biometric security. (BrightoSV V1.2 là model SOTA hàng đầu về CHỐNG GIẢ MẠO GIỌNG NÓI, được ..."
+    },
+    {
+      "title": "Prototype Model For Face Anti-spoofing - GitHub",
+      "url": "https://github.com/Stevencibambo/face-antispoofing-model",
+      "snippet": "Prototype Model For Face Anti-spoofing Nowadays, the facial recognition system is used in several applications mainly for individual authentication. Whereas facial recognition remain vulnerable to several types of attacks ; Face Anti-Spoofing detection is a crucial step before providing facial data to the face recognition system."
+    },
+    {
+      "title": "AntiSpoof - Minecraft Plugin - Modrinth",
+      "url": "https://modrinth.com/plugin/antispoof",
+      "snippet": "AntiSpoof acknowledges Minecraft&#x27;s limitations and focuses on what can be done effectively rather than making unrealistic promises. This honesty and transparency is why server owners trust it. 5. Lightweight & Efficient Designed with performance in mind, AntiSpoof has minimal impact on your server&#x27;s resources while providing robust protection."
+    },
+    {
+      "title": "Lightweight Face Antispoof (MiniFAS, ONNX) - GitHub",
+      "url": "https://github.com/facenox/face-antispoof-onnx",
+      "snippet": "Lightweight Face Antispoof (MiniFAS, ONNX) A lightweight face anti-spoofing model that distinguishes real faces from spoofing attempts (printed photos, screen displays, etc.)."
+    }
+  ]
+}

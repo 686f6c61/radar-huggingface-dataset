@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "adu-pont/paper_025806770_3d_scene_understanding",
+  "slug": "adu-pont-paper_025806770_3d_scene_understanding",
+  "author": "adu-pont",
+  "url": "https://huggingface.co/adu-pont/paper_025806770_3d_scene_understanding",
+  "created_at": "2026-08-22T04:04:50.000Z",
+  "updated_at": "2026-08-22T04:04:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d-scene-understanding",
+    "compact",
+    "empirical-focused",
+    "first-person-plural",
+    "intro-method-exp-related-conclusion",
+    "neutral",
+    "numeric-apa",
+    "plain-text",
+    "short-punchy",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lifting Unlabeled Internet-level Data for 3D Scene Understanding",
+      "url": "https://arxiv.org/abs/2604.01907",
+      "snippet": "Annotated 3D scene data is scarce and expensive to acquire, while abundant unlabeled videos are readily available on the internet. In this paper, we demonstrate that carefully designed data engines can leverage web-curated, unlabeled videos to automatically generate training data, to facilitate end-to-end models in 3D scene understanding alongside human-annotated datasets. We identify and ..."
+    },
+    {
+      "title": "3D Scene Understanding at CVPR 2026",
+      "url": "https://scene-understanding.com/",
+      "snippet": "Overview The rapid evolution toward next-generation embodied AI has driven remarkable convergence across computer vision, graphics, and robotics, with growing emphasis on robust 3D understanding for in-the-wild and real-world applications. Recent breakthroughs have introduced powerful 3D foundational models that demonstrate unprecedented zero-shot generalization across diverse 3D ..."
+    },
+    {
+      "title": "ICLR 2025 | ML Anthology",
+      "url": "https://mlanthology.org/iclr/2025/",
+      "snippet": "A Large-Scale Dataset and Benchmark for Commuting Origin-Destination Flow Generation Can Rong, Jingtao Ding, Yan Liu, Yong Li PDF OpenReview Cite A Large-Scale Training Paradigm for Graph Generative Models Yu Wang, Ryan A. Rossi, Namyong Park, Huiyuan Chen, Nesreen K. Ahmed, Puja Trivedi, Franck Dernoncourt, Danai Koutra, Tyler Derr PDF ..."
+    },
+    {
+      "title": "SceneGPT: A Language Model for 3D Scene Understanding",
+      "url": "https://arxiv.org/html/2408.06926v1",
+      "snippet": "Abstract Building models that can understand and reason about 3D scenes is difficult owing to the lack of data sources for 3D supervised training and large-scale training regimes. In this work we ask \"How can the knowledge in a pre-trained language model be leveraged for 3D scene understanding without any 3D pre-training\"."
+    },
+    {
+      "title": "Awesome Scene Understanding - GitHub",
+      "url": "https://github.com/bertjiazheng/awesome-scene-understanding",
+      "snippet": "A curated list of awesome scene understanding papers, inspired by awesome-computer-vision. 📷 Multi-view images 🎲 Point cloud"
+    }
+  ]
+}

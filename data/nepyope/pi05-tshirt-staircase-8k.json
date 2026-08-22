@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "nepyope/pi05-tshirt-staircase-8k",
+  "slug": "nepyope-pi05-tshirt-staircase-8k",
+  "author": "nepyope",
+  "url": "https://huggingface.co/nepyope/pi05-tshirt-staircase-8k",
+  "created_at": "2026-08-22T11:05:53.000Z",
+  "updated_at": "2026-08-22T11:06:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "unitree_g1",
+    "pir2",
+    "staircase",
+    "real-time-chunking",
+    "dataset:nepyope/t-shirt_pick_and_place_clean",
+    "arxiv:2607.26055",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143474482,
+  "parameters_human": "4.14B",
+  "storage_bytes": 16608435540,
+  "storage_human": "16.6 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nepyope (Martino Russi) - Hugging Face",
+      "url": "https://huggingface.co/nepyope/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 8 hours ago ... published a model about 8 hours ago"
+    },
+    {
+      "title": "nepyope/g1_pillow · Hugging Face",
+      "url": "https://huggingface.co/nepyope/g1_pillow",
+      "snippet": "Instructions to use nepyope/g1_pillow with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use nepyope/g1_pillow with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the Model Run the policy on your robot Train your own ..."
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    },
+    {
+      "title": "nepyope (Martino Russi) · GitHub",
+      "url": "https://github.com/nepyope/",
+      "snippet": "A simple hebbian, directed neural-network, unsupervised agent architecture tested on a 1d environment. Jupyter Notebook"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

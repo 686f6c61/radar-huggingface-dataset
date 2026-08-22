@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dtorres87/model_094972195_perceiver_large",
+  "slug": "dtorres87-model_094972195_perceiver_large",
+  "author": "dtorres87",
+  "url": "https://huggingface.co/dtorres87/model_094972195_perceiver_large",
+  "created_at": "2026-08-22T03:30:29.000Z",
+  "updated_at": "2026-08-22T03:30:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "batchnorm",
+    "exponential",
+    "flash",
+    "generation",
+    "large",
+    "mish",
+    "perceiver",
+    "tucker",
+    "xavier",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepmind-research/perceiver at master · google-deepmind ... - GitHub",
+      "url": "https://github.com/google-deepmind/deepmind-research/tree/master/perceiver",
+      "snippet": "We also provide an example training script to train a Perceiver IO model for ImageNet classification. The provided hyperparameters are the settings used to train Perceiver IO with 2D Fourier position encodings, as described in section 4.5 and supplemental section H of the paper [2]."
+    },
+    {
+      "title": "deepmind-research/perceiver/README.md at master · google ... - GitHub",
+      "url": "https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md",
+      "snippet": "We also provide an example training script to train a Perceiver IO model for ImageNet classification. The provided hyperparameters are the settings used to train Perceiver IO with 2D Fourier position encodings, as described in section 4.5 and supplemental section H of the paper [2]."
+    },
+    {
+      "title": "Perceiver - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.14.1/en/model_doc/perceiver",
+      "snippet": "The Perceiver IO model was proposed in Perceiver IO: A General Architecture for Structured Inputs & Outputs by Andrew Jaegle, Sebastian Borgeaud, Jean-Baptiste Alayrac, Carl Doersch, Catalin Ionescu, David Ding, Skanda Koppula, Daniel Zoran, Andrew Brock, Evan Shelhamer, Olivier Hénaff, Matthew M. Botvinick, Andrew Zisserman, Oriol Vinyals, João Carreira. Perceiver IO is a generalization of ..."
+    },
+    {
+      "title": "[2103.03206] Perceiver: General Perception with Iterative Attention",
+      "url": "https://arxiv.org/abs/2103.03206",
+      "snippet": "These priors introduce helpful inductive biases, but also lock models to individual modalities. In this paper we introduce the Perceiver - a model that builds upon Transformers and hence makes few architectural assumptions about the relationship between its inputs, but that also scales to hundreds of thousands of inputs, like ConvNets."
+    },
+    {
+      "title": "Perceiver IO: A General Architecture for Structured Inputs & Outputs",
+      "url": "https://arxiv.org/abs/2107.14795",
+      "snippet": "A central goal of machine learning is the development of systems that can solve many problems in as many data domains as possible. Current architectures, however, cannot be applied beyond a small set of stereotyped settings, as they bake in domain & task assumptions or scale poorly to large inputs or outputs. In this work, we propose Perceiver IO, a general-purpose architecture that handles ..."
+    }
+  ]
+}

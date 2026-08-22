@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "deadbydawn101/RavenXAiLabs-Qwen3.8-27B-OBLITERATED-Frontier-Intelligence-Infused-Chaos-Agent",
+  "slug": "deadbydawn101-ravenxailabs-qwen3-8-27b-obliterated-frontier-intelligence-infused-chaos-agent",
+  "author": "deadbydawn101",
+  "url": "https://huggingface.co/deadbydawn101/RavenXAiLabs-Qwen3.8-27B-OBLITERATED-Frontier-Intelligence-Infused-Chaos-Agent",
+  "created_at": "2026-08-22T04:04:05.000Z",
+  "updated_at": "2026-08-22T04:37:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "ravenx",
+    "soul-injection",
+    "iq-injection",
+    "cybersecurity",
+    "pentesting",
+    "red-team",
+    "agent",
+    "tool-calling",
+    "autonomous-agent",
+    "frontier-distillation",
+    "abliterated",
+    "uncensored",
+    "qwen3.8",
+    "apple-silicon",
+    "chaos-agent",
+    "rath-protocol",
+    "bug-bounty",
+    "MiCA",
+    "encrypted-ai",
+    "coding",
+    "reasoning",
+    "security",
+    "CVSS",
+    "CWE",
+    "MITRE:ATT&CK",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2604.01694",
+    "base_model:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "base_model:quantized:OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4204731904,
+  "parameters_human": "4.20B",
+  "storage_bytes": 15153032838,
+  "storage_human": "15.2 GB",
+  "base_model": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "DeadByDawn101 - GitHub",
+      "url": "https://github.com/DeadByDawn101",
+      "snippet": "Building @RavenXllm @jolyneshibasol . DeadByDawn101 has 369 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Qwen3.8-27B OBLITERATED: 0% Refusal Rate (Aug 2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026",
+      "snippet": "QWEN-3.8-27B: OBLITERATED. 0.0% REFUSAL RATE across 842 harmful prompts.\" The model card describes zero refusals across a large, purpose-built harmful-prompt dataset, with — per Pliny&#x27;s own description — \"extra focus on liberating its cyber, jailbreak generation, and complex AI\" capability."
+    },
+    {
+      "title": "Qwen3.8-27B: Running a Frontier-class Open Model on Your Local GPU",
+      "url": "https://www.sitepoint.com/qwen3-8-27b-local-gpu-setup-ollama/",
+      "snippet": "Alibaba released Qwen3.8-27B on August 14, 2026 — Apache 2.0 open-weights vision-capable model with 262K native context (1M via YaRN), runnable on consumer GPUs. Q4_K_M quantization is about 18 ..."
+    }
+  ]
+}

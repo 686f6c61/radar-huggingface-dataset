@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Siwy1/Titanic",
+  "slug": "siwy1-titanic",
+  "author": "Siwy1",
+  "url": "https://huggingface.co/Siwy1/Titanic",
+  "created_at": "2026-08-22T08:07:51.000Z",
+  "updated_at": "2026-08-22T08:07:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UncertainPrinciple/titanic-model-v1 · Hugging Face",
+      "url": "https://huggingface.co/UncertainPrinciple/titanic-model-v1",
+      "snippet": "Titanic Survival Predictor 🚢 This project is a simple AI application that predicts a passenger&#x27;s survival chances on the Titanic based on their characteristics. The model was trained using scikit-learn and deployed on Hugging Face Spaces with Gradio."
+    },
+    {
+      "title": "Titanic (Mii) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/93fab222f872a3487ff72386cf0c2da1",
+      "snippet": "Meet Titanic (Mii) model on SeaArt. Experience free Stable Diffusion models that get you the best AI-generated images using text prompts."
+    },
+    {
+      "title": "Titanic - v1.0 | Stable Diffusion 1.x LoRA | Civitai",
+      "url": "https://civitai.com/models/112990/titanic",
+      "snippet": "27 photo 512x512 There are no comments for this model yet. Be the first to let the people know about this model by leaving your comment."
+    },
+    {
+      "title": "titanic AI Models | Civitai",
+      "url": "https://civitai.com/tag/titanic",
+      "snippet": "titanic Browse 16 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with titanic."
+    },
+    {
+      "title": "GitHub - barbininiccolo/Titanic-AI: Welcome to the Titanic Machine ...",
+      "url": "https://github.com/barbininiccolo/Titanic-AI",
+      "snippet": "Titanic-AI Welcome to the Titanic Machine Learning Exercise repository! This project is the result of my passion for data analysis, machine learning, and predictive modeling, and I&#x27;m excited to share it with you."
+    }
+  ]
+}

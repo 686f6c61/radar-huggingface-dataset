@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cbrian/testimageresizefinetuning2",
+  "slug": "cbrian-testimageresizefinetuning2",
+  "author": "cbrian",
+  "url": "https://huggingface.co/cbrian/testimageresizefinetuning2",
+  "created_at": "2026-08-22T10:10:51.000Z",
+  "updated_at": "2026-08-22T10:17:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:cbrian/testimageresize",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473108700,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cbrian (Shao Hsuan, Chang) - Hugging Face",
+      "url": "https://huggingface.co/cbrian/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "Brian AI models | Brian - Documentation",
+      "url": "https://docs.brianknows.org/brian-ai-models",
+      "snippet": "Read more about it here. Why the Brian-8B model? In the recent enormous hype for AI Agents and intent-based apps, we have seen most of the devs using OpenAI GPT models, a comprehensible choice considering they are currently leading the market."
+    },
+    {
+      "title": "How To Create Your Own AI Model From Scratch in 2026",
+      "url": "https://autogpt.net/how-to-create-your-own-ai-model-from-scratch/",
+      "snippet": "Learn how to create your own AI model, step-by-step. No, you don&#x27;t need to be an AI expert."
+    },
+    {
+      "title": "A proven platform built for government | cBrain",
+      "url": "https://www.cbrain.com/",
+      "snippet": "Digital transformation at scale in weeks, not years. cBrain F2® is a fully integrated, commercial off-the-shelf (COTS) software platform built for government."
+    },
+    {
+      "title": "cbrian/pi05task2 · Hugging Face",
+      "url": "https://huggingface.co/cbrian/pi05task2",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Peakmindcoach/pmm-coach-qwen3-1.7b",
+  "slug": "peakmindcoach-pmm-coach-qwen3-1-7b",
+  "author": "Peakmindcoach",
+  "url": "https://huggingface.co/Peakmindcoach/pmm-coach-qwen3-1.7b",
+  "created_at": "2026-08-22T04:56:24.000Z",
+  "updated_at": "2026-08-22T04:56:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107409216,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "powerliftme/coach-qwen3-1.7b · Hugging Face",
+      "url": "https://huggingface.co/powerliftme/coach-qwen3-1.7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-1.7B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_1_7b",
+      "snippet": "Qwen3-1.7B Multilingual 1.7B parameter language model excelling in reasoning and code generation. Qwen3 is a multilingual large language model series from Alibaba Cloud, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Enhanced capabilities in 256K-token long-context understanding, extendable up to 1 million tokens. Qwen3-Thinking-2507 is the continuation of Qwen3 thinking model, with improved quality and depth of reasoning, featuring the following key enhancements:"
+    }
+  ]
+}

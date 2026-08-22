@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "majentik/Gemma-4-E4B-BF16-MERaLiON-Speech-LoRA-SG-MLX",
+  "slug": "majentik-gemma-4-e4b-bf16-meralion-speech-lora-sg-mlx",
+  "author": "majentik",
+  "url": "https://huggingface.co/majentik/Gemma-4-E4B-BF16-MERaLiON-Speech-LoRA-SG-MLX",
+  "created_at": "2026-05-16T02:19:07.000Z",
+  "updated_at": "2026-08-22T06:09:01.000Z",
+  "license": "gemma-terms-meralion-v3-mnsc-sg-odl-v1",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma",
+    "gemma-4",
+    "meralion",
+    "speech",
+    "asr",
+    "speech-to-text",
+    "automatic-speech-recognition",
+    "lora",
+    "bfloat16",
+    "singapore",
+    "singapore-english",
+    "singlish",
+    "mnsc",
+    "en",
+    "dataset:MERaLiON/Multitask-National-Speech-Corpus-v1",
+    "base_model:MERaLiON/MERaLiON-3-10B",
+    "base_model:adapter:MERaLiON/MERaLiON-3-10B",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16790473161,
+  "storage_human": "16.8 GB",
+  "base_model": "google/gemma-4-E4B-it, MERaLiON/MERaLiON-3-10B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "MNSC ASR Part 2 Test",
+      "metric": "WER",
+      "value": 16.09
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gemma-4-E4B-BF16-MERaLiON-Speech-LoRA-SG-MLX - Hugging Face",
+      "url": "https://huggingface.co/majentik/Gemma-4-E4B-BF16-MERaLiON-Speech-LoRA-SG-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · majentik/Gemma-4-E4B-BF16-MERaLiON-Speech-LoRA-SG-MLX at main",
+      "url": "https://huggingface.co/majentik/Gemma-4-E4B-BF16-MERaLiON-Speech-LoRA-SG-MLX/blob/main/README.md",
+      "snippet": "Gemma-4-E4B-BF16 + MERaLiON Speech LoRA for Singapore English (MLX) This repository contains MLX LoRA adapter weights and a projector for connecting MERaLiON-3 speech embeddings to a Gemma-4-E4B BF16 decoder. It does not include decoder weights or MERaLiON speech encoder weights; users must supply compatible MLX model locations under the applicable upstream terms."
+    },
+    {
+      "title": "Gemma 4 E4b Bf16 Meralion Speech Lora Sg Mlx - AI Dataset Insights",
+      "url": "https://free2aitools.com/dataset/majentik/gemma-4-e4b-bf16-meralion-speech-lora-sg-mlx",
+      "snippet": "by majentik majentik/gemma-4-e4b-bf16-meralion-speech-lora-sg-mlx Free2AITools Nexus Index 39.0 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity7 R: Recency76 Q: Quality65 Tech Context Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗 Data Integrity 39 FNI Score - Size - Rows - Tokens 🔬Dive ..."
+    },
+    {
+      "title": "MERaLiON",
+      "url": "http://www.meralion.ai/",
+      "snippet": "NSCC Singapore&#x27;s high-performance computing resources, coupled with our in-house technical expertise, played a pivotal role in optimising and enhancing the training of MERaLiON&#x27;s large language model - underscoring the critical importance of supercomputing in advancing AI research and development."
+    },
+    {
+      "title": "Run Gemma 4 with MLX on Apple Silicon | gemma4.dev",
+      "url": "https://gemma4.dev/run-local/gemma-4-mlx",
+      "snippet": "Run Gemma 4 with Apple&#x27;s MLX framework on M1/M2/M3/M4 chips. Covers installation, model download, and inference optimization for Apple Silicon Macs."
+    }
+  ]
+}

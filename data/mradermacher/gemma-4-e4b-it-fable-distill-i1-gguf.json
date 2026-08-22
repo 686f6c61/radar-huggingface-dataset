@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Gemma-4-E4B-it-Fable-Distill-i1-GGUF",
+  "slug": "mradermacher-gemma-4-e4b-it-fable-distill-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Gemma-4-E4B-it-Fable-Distill-i1-GGUF",
+  "created_at": "2026-08-22T05:45:22.000Z",
+  "updated_at": "2026-08-22T06:39:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "en",
+    "base_model:armand0e/Gemma-4-E4B-it-Fable-Distill",
+    "base_model:quantized:armand0e/Gemma-4-E4B-it-Fable-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 14323422848,
+  "storage_human": "14.3 GB",
+  "base_model": "armand0e/Gemma-4-E4B-it-Fable-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/gemma-4-E4B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-4-E4B-i1-GGUF",
+      "snippet": "mradermacher / gemma-4-E4B-i1-GGUF like 1 Transformers GGUF English imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Gemma 4 E4B — The Daily Driver for Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e4b",
+      "snippet": "Models /Gemma 4 E4B Gemma 4 E4B — The Daily Driver for Local AI Gemma 4 E4B is Google&#x27;s most practical local model: 4.4B parameters, 8GB VRAM minimum, multimodal input, and Thinking Mode — all in a package that runs on any modern consumer GPU."
+    },
+    {
+      "title": "Gemma 4 | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    },
+    {
+      "title": "Gemma 4 Guide: Download, Run Locally, Compare Models & API (2026 ...",
+      "url": "https://gemma4.org/",
+      "snippet": "Choose the right Gemma 4 model, open the best download path, check memory requirements, and copy the fastest local or API quick starts."
+    }
+  ]
+}

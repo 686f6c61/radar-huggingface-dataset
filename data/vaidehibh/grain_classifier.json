@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "vaidehibh/grain_classifier",
+  "slug": "vaidehibh-grain_classifier",
+  "author": "vaidehibh",
+  "url": "https://huggingface.co/vaidehibh/grain_classifier",
+  "created_at": "2026-08-22T07:15:09.000Z",
+  "updated_at": "2026-08-22T07:28:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 399053634,
+  "storage_human": "399 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - VaidehiBhagane/Grain-Classifier",
+      "url": "https://github.com/VaidehiBhagane/Grain-Classifier",
+      "snippet": "Dataset Information — static overview of the training data (classes, split sizes, preprocessing, augmentation, pipeline diagram). Evaluation Results — static test-set metrics, confusion matrices, and classification reports recorded when each model was trained. Prediction — upload a grain image, pick a model from the sidebar, and get a live classification with confidence scores and a ..."
+    },
+    {
+      "title": "vaidehibh (Vaidehi Bhagane) - Hugging Face",
+      "url": "https://huggingface.co/vaidehibh",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 21 hours ago ... published a model about 21 hours ago"
+    },
+    {
+      "title": "dhanush80888/Mobile-app-to-identify-the-type-of-grain - GitHub",
+      "url": "https://github.com/dhanush80888/Mobile-app-to-identify-the-type-of-grain",
+      "snippet": "Grain Classifier is an Android application that uses Machine Learning to identify different types of grains from images. Users can capture a photo using the device camera or upload an image from the gallery. The application processes the image using a TensorFlow Lite model trained with Google Teachable Machine and predicts the grain type along with a confidence score. The project demonstrates ..."
+    },
+    {
+      "title": "grain_classifier_demo.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/Tian-haoyan/CorrosionAI/blob/main/colab/grain_classifier_demo.ipynb",
+      "snippet": "CorrosionAI grain classifier This notebook runs CorrosionAI inference on uploaded amphibole grain photomicrographs. Recommended input images: one clearly visible amphibole grain per image; square, single-grain images, preferably 576 ? 576 pixels; RGB optical photomicrographs; limited background and limited overlap with other grains;"
+    },
+    {
+      "title": "Machine learning approach for the classification of wheat grains",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2772375522001009",
+      "snippet": "This work aims to develop a machine learning based system to automatically categorize a wheat grain into fresh and rotten. For this purpose, a classifier is required that may be supervisedly trained with number of features computed for given samples and predict the correct category of unseen or new samples."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Ling-3.0-flash-dspark",
+  "slug": "inclusionai-ling-3-0-flash-dspark",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-dspark",
+  "created_at": "2026-08-09T12:32:20.000Z",
+  "updated_at": "2026-08-22T05:29:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dspark",
+    "dflash",
+    "specforge",
+    "sglang",
+    "text-generation",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 71,
+  "trending_score": 8,
+  "parameters": 1363707905,
+  "parameters_human": "1.36B",
+  "storage_bytes": 2727422642,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inclusionAI/Ling-3.0-flash-dspark · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-dspark",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "inclusionAI/Ling-3.0-flash · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling-3.0-flash - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/inclusionai/ling-3.0-flash-20260723",
+      "snippet": "Ling-3.0-flash, an inclusionai 124B-parameter Mixture-of-Experts (MoE) model, demonstrates strong performance in speed, typically ranking among the fastest models with a 78th percentile across eight benchmarks."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "Ling 3.0 Flash API - Demo - DeepInfra",
+      "url": "https://deepinfra.com/inclusionAI/Ling-3.0-flash",
+      "snippet": "We&#x27;re introducing Ling-3.0-flash, our next-generation native hybrid reasoning model. Operating with 124B total and 5.1B active parameters (~12.4% and ~8.1% of our previous 1T-class flagship Ring-2.6-1T), Ling-3.0-flash matches or outperforms its predecessor across key benchmarks."
+    }
+  ]
+}

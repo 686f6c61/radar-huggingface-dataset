@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Roborn/whisper.cpp",
+  "slug": "roborn-whisper-cpp",
+  "author": "Roborn",
+  "url": "https://huggingface.co/Roborn/whisper.cpp",
+  "created_at": "2026-08-22T07:00:33.000Z",
+  "updated_at": "2026-08-22T07:00:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "automatic-speech-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33252975081,
+  "storage_human": "33.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mkll/whisper.cpp-OpenAI: Port of OpenAI&#x27;s Whisper model in C ...",
+      "url": "https://github.com/mkll/whisper.cpp-OpenAI",
+      "snippet": "Port of OpenAI&#x27;s Whisper model in C/C++. Contribute to mkll/whisper.cpp-OpenAI development by creating an account on GitHub."
+    },
+    {
+      "title": "Whisper.cpp: Port of OpenAI&#x27;s Whisper model in C/C++ - GitHub",
+      "url": "https://github.com/ggml-org/whisper.cpp",
+      "snippet": "Port of OpenAI&#x27;s Whisper model in C/C++. Contribute to ggml-org/whisper.cpp development by creating an account on GitHub."
+    },
+    {
+      "title": "Whisper.cpp: How to Use OpenAI&#x27;s Whisper Model in C/C++ for Efficient ...",
+      "url": "https://pub.towardsai.net/whisper-cpp-how-to-use-openais-whisper-model-in-c-c-for-efficient-speech-recognition-3f63a2bb19c7",
+      "snippet": "The original model, however, is implemented in Python, whereas many developers like to work with more lightweight, efficient, and portable implementations in their systems. Enter Whisper.cpp: an optimized C/C++ version of OpenAI&#x27;s model, Whisper, designed for fast, cross-platform performance."
+    },
+    {
+      "title": "Model Download and Conversion | ggml-org/whisper.cpp | DeepWiki",
+      "url": "https://deepwiki.com/ggml-org/whisper.cpp/5.1-model-download-and-conversion",
+      "snippet": "Model Download and Conversion Relevant source files This document covers the tools and processes for acquiring and converting Whisper models for use with whisper.cpp."
+    },
+    {
+      "title": "whisper.cpp - Codesandbox",
+      "url": "https://codesandbox.io/p/github/Kandy22/whisper.cpp",
+      "snippet": "whisper.cpp Stable: v1.2.1 / Roadmap | F.A.Q. High-performance inference of OpenAI&#x27;s Whisper automatic speech recognition (ASR) model: Plain C/C++ implementation without dependencies Apple silicon first-class citizen - optimized via Arm Neon and Accelerate framework AVX intrinsics support for x86 architectures VSX intrinsics support for POWER architectures Mixed F16 / F32 precision Low memory ..."
+    }
+  ]
+}

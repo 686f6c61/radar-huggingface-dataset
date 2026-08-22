@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Guaogua/FireWorldBenchmark-3metohds",
+  "slug": "guaogua-fireworldbenchmark-3metohds",
+  "author": "Guaogua",
+  "url": "https://huggingface.co/Guaogua/FireWorldBenchmark-3metohds",
+  "created_at": "2026-08-22T09:50:35.000Z",
+  "updated_at": "2026-08-22T10:02:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284383744,
+  "storage_human": "284 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "World of AI Bench | AI Coding Benchmark and Model Rankings",
+      "url": "https://www.woaibench.ai/",
+      "snippet": "Compare AI models on real coding tasks with private benchmarks, live HTML previews, cost tracking, ELO battles, and public model rankings."
+    },
+    {
+      "title": "GitHub - fw-ai/benchmark: Benchmark suite for LLMs from Fireworks.ai",
+      "url": "https://github.com/fw-ai/benchmark/tree/main",
+      "snippet": "Benchmark / Load-testing Suite by Fireworks.ai LLM benchmarking The load test is designed to simulate continuous production load and minimize effect of model generation behavior:"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

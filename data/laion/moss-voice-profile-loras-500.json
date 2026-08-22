@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "laion/moss-voice-profile-loras-500",
+  "slug": "laion-moss-voice-profile-loras-500",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/moss-voice-profile-loras-500",
+  "created_at": "2026-08-22T07:28:47.000Z",
+  "updated_at": "2026-08-22T07:30:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "voice-acting",
+    "lora",
+    "speaker-identity",
+    "voice-cloning",
+    "moss",
+    "synthetic-voices",
+    "en",
+    "de",
+    "dataset:TTS-AGI/moss-voice-profile-references",
+    "base_model:laion/moss-tts-local-transformer-4.55b-voice-acting-v2",
+    "base_model:adapter:laion/moss-tts-local-transformer-4.55b-voice-acting-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17355169372,
+  "storage_human": "17.4 GB",
+  "base_model": "laion/moss-tts-local-transformer-4.55b-voice-acting-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TTS-AGI/moss-voice-profile-loras · Hugging Face",
+      "url": "https://huggingface.co/TTS-AGI/moss-voice-profile-loras",
+      "snippet": "Ten LoRA adapters for laion/moss-tts-local-transformer-4.55b-voice-acting-v2. One adapter per voice, each holding a single speaker identity across the whole expressive range: 40 emotions, 57 VoiceNet dimensions, acting edge cases, character clusters, vocal bursts, English and German."
+    },
+    {
+      "title": "GitHub - LAION-AI/moss-voice-profiles: Conditioned speech corpus ...",
+      "url": "https://github.com/LAION-AI/moss-voice-profiles",
+      "snippet": "For one reference voice: every emotion at four intensity/containment settings, every VoiceNet dimension at four levels, edge cases and style variants — in English and German from the same sentence, so the pairs can train a speech-to-speech model that preserves speaker and emotion. 808 groups/voice ..."
+    },
+    {
+      "title": "VoiceNet LoRA evolution - projects.laion.ai",
+      "url": "https://projects.laion.ai/moss-voicenet-lora-evolution/",
+      "snippet": "Algorithm: genetic search — population 12, 10 generations, elitism (top 5). During evolution every genome is generated best-of-6with the LoRA at λ=100%; its fitness = the mean over those 6 candidates of the target VoiceNet dimension score in the intended direction (for a __high LoRA the raw score; for __low, 1−score), minus 0.2·max (0, WER−0.6)."
+    },
+    {
+      "title": "moss-voice-profiles/manual.html at main · LAION-AI/moss-voice ... - GitHub",
+      "url": "https://github.com/LAION-AI/moss-voice-profiles/blob/main/manual.html",
+      "snippet": "Conditioned speech corpus generator: 808 conditions per voice, EN+DE paired, with demo grid - LAION-AI/moss-voice-profiles"
+    },
+    {
+      "title": "laion/moss-voicenet-dimension-loras · Hugging Face",
+      "url": "https://huggingface.co/laion/moss-voicenet-dimension-loras",
+      "snippet": "100 rank-32 LoRA adapters for laion/moss-tts-local-transformer-4.55b-voice-acting-v2. Each adapter pushes one of the 57 VoiceNet voice-performance dimensions in the high or low direction."
+    }
+  ]
+}

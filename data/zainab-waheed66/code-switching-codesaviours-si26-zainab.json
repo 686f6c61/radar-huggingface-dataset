@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Zainab-waheed66/code-switching-codesaviours-si26-Zainab",
+  "slug": "zainab-waheed66-code-switching-codesaviours-si26-zainab",
+  "author": "Zainab-waheed66",
+  "url": "https://huggingface.co/Zainab-waheed66/code-switching-codesaviours-si26-Zainab",
+  "created_at": "2026-08-22T08:18:49.000Z",
+  "updated_at": "2026-08-22T08:30:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277455363,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126943684,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Zainab-Binte-Khalid/code-switching-codesaviours-si26-zainab",
+      "url": "https://github.com/Zainab-Binte-Khalid/code-switching-codesaviours-si26-zainab",
+      "snippet": "Model code-switching-codesaviours-si26-zainab model — XLM-RoBERTa fine-tuned for 8 epochs on the above dataset."
+    },
+    {
+      "title": "code-switching-codesaviours-si26-zainab - Hugging Face",
+      "url": "https://huggingface.co/datasets/Zainab-Binte-Khalid/code-switching-codesaviours-si26-zainab",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ZanebRA/code-switching-codesaviours-si26-zaneb: Code Switching ...",
+      "url": "https://github.com/ZanebRA/code-switching-codesaviours-si26-zaneb",
+      "snippet": "Code Switching NLP Project - Code Saviours SI-26. Contribute to ZanebRA/code-switching-codesaviours-si26-zaneb development by creating an account on GitHub."
+    },
+    {
+      "title": "README.md · zaneb-217/code-switching-codesaviours-si26-zaneb at main",
+      "url": "https://huggingface.co/datasets/zaneb-217/code-switching-codesaviours-si26-zaneb/blob/main/README.md",
+      "snippet": "Overview This dataset was created as part of the Code Saviours SI-26 ML/AI Internship for Roman Urdu code-switching detection."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

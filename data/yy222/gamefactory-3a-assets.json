@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "YY222/GameFactory-3A-Assets",
+  "slug": "yy222-gamefactory-3a-assets",
+  "author": "YY222",
+  "url": "https://huggingface.co/YY222/GameFactory-3A-Assets",
+  "created_at": "2026-08-22T07:58:46.000Z",
+  "updated_at": "2026-08-22T08:00:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 430820164,
+  "storage_human": "431 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenDCAI/GameFactory-3A: A comprehensive open-source 3A game ...",
+      "url": "https://github.com/OpenDCAI/GameFactory-3A",
+      "snippet": "3AGameFactory turns a game requirement into production-ready game assets and engine-ready game code with a coding agent. 3AGameFactory is a comprehensive open-source 3A game-generation skill and asset framework."
+    },
+    {
+      "title": "GameFactory-3A/models at main · OpenDCAI/GameFactory-3A",
+      "url": "https://github.com/OpenDCAI/GameFactory-3A/tree/main/models",
+      "snippet": "A comprehensive open-source 3A game-generation skill and asset framework. - GameFactory-3A/models at main · OpenDCAI/GameFactory-3A"
+    },
+    {
+      "title": "GameFactory-3A：让编程 Agent 直接生成 3A 游戏资产，UE5/Blender/Unity/three.js 全支持 ...",
+      "url": "https://blog.mushroom.cv/blog/gamefactory-3a-open-source-coding-agent-game-generation-ue5-blender-unity/",
+      "snippet": "The framework isn&#x27;t a game engine and isn&#x27;t a single generation model — it&#x27;s a structured skill and pipeline system designed for coding agents (Claude Code, Codex, Gemini CLI). The agent learns what generation models to call, what asset formats to produce, and how to integrate outputs into a target engine."
+    },
+    {
+      "title": "[2501.08325] GameFactory: Creating New Games with Generative ...",
+      "url": "https://arxiv.org/abs/2501.08325",
+      "snippet": "Generative videos have the potential to revolutionize game development by autonomously creating new content. In this paper, we present GameFactory, a framework for action-controlled scene-generalizable game video generation. We first address the fundamental challenge of action controllability by introducing GF-Minecraft, an action-annotated game video dataset without human bias, and developing ..."
+    },
+    {
+      "title": "AI Game Asset Generator - Create 2D, 3D & VFX Game Assets | God Mode AI",
+      "url": "https://www.godmodeai.co/ai-game-asset-generator",
+      "snippet": "AI Game Asset Generator Professional AI tools for creating 2D game assets, 3D game assets, pixel art game assets and Video game assets inside studio pipelines Scale asset production across your live service pipelines, marketing campaigns, key game assets, and more. Built to solve real game development challenges from concept to creation, and beyond."
+    }
+  ]
+}

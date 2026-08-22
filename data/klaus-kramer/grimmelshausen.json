@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Klaus-Kramer/Grimmelshausen",
+  "slug": "klaus-kramer-grimmelshausen",
+  "author": "Klaus-Kramer",
+  "url": "https://huggingface.co/Klaus-Kramer/Grimmelshausen",
+  "created_at": "2026-08-04T13:31:41.000Z",
+  "updated_at": "2026-08-22T07:29:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "german",
+    "fruehneuhochdeutsch",
+    "qlora",
+    "text-generation",
+    "de",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 10759893109,
+  "storage_human": "10.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hackers Use Fake Claude, ChatGPT and Copilot Installers to Spread Malware",
+      "url": "https://cyberpress.org/malware-laced-fake-ai-installers/",
+      "snippet": "Cybercriminals are using fake installers for popular artificial intelligence tools, including Claude, ChatGPT, and Microsoft Copilot, to infect victims with malware. The campaigns abuse user trust in well-known AI brands and often use malicious advertisements, poisoned search results, and fake download pages. Sophos X-Ops reviewed 12 months of Managed Detection and Response cases involving AI ..."
+    },
+    {
+      "title": "GitHub - klaus-kramer/agent-minimal: A minimal, embeddable C++ local AI ...",
+      "url": "https://github.com/klaus-kramer/agent-minimal/tree/main/",
+      "snippet": "A minimal, embeddable C++ local AI agent built on llama.cpp. It demonstrates tool calling and a clean architecture without heavy dependencies."
+    },
+    {
+      "title": "Manuela Klauser Knew What She Was Making Before She Let the AI Near It",
+      "url": "https://www.thedaringcreatives.com/creator-stories/manuela-klauser-ai-art/",
+      "snippet": "Manuela Klauser makes \"Soft Goth Surrealism\" with AI — dark, gothic figures with a pop-whimsy undercurrent that&#x27;s shown up at the Saatchi Gallery and across international AI art exhibitions. Here&#x27;s how she actually does it."
+    },
+    {
+      "title": "Bishop Klaus Krämer Praises Pope Leo XIV&#x27;s AI Encyclical ... - Archyde",
+      "url": "https://www.archyde.com/bishop-klaus-kramer-praises-pope-leo-xivs-ai-encyclical-magnifica-humanitas/",
+      "snippet": "Bishop Dr. Klaus Krämer on the election of Pope Leo XIV. \"This is a game-changer for model compression,\" notes Dr. Luis Mendez, MIT cybersecurity researcher. \"If you can&#x27;t explain a model&#x27;s output, you can&#x27;t deploy it. It&#x27;s a technical barrier to entry.\" The document also mandates \"quantum-resistant encryption\" for AI infrastructure, referencing the NIST PQC project. This ..."
+    },
+    {
+      "title": "Anthropic reveals Claude AI hacked external companies",
+      "url": "https://www.abc.net.au/news/2026-07-31/anthropic-reveals-claude-ai-hacked-external-companies/106982222",
+      "snippet": "Anthropic said it has discovered that its AI model called Claude gained unauthorised access to three other companies systems during testing back in April."
+    }
+  ]
+}

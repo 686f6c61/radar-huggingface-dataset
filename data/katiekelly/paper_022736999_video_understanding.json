@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "katiekelly/paper_022736999_video_understanding",
+  "slug": "katiekelly-paper_022736999_video_understanding",
+  "author": "katiekelly",
+  "url": "https://huggingface.co/katiekelly/paper_022736999_video_understanding",
+  "created_at": "2026-08-22T04:19:57.000Z",
+  "updated_at": "2026-08-22T04:20:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "cautious",
+    "detailed-descriptive",
+    "first-person-plural",
+    "intro-background-approach-eval-conclusion",
+    "latex-icml",
+    "numeric-bibtex",
+    "structured-imrad",
+    "video-understanding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Video Understanding — papers and benchmarks | Papers with Code",
+      "url": "https://paperswithcode.co/tasks/video-understanding",
+      "snippet": "Video Language Models (Video LLMs) are advanced AI systems that combine large language models with video processing capabilities to understand and generate descriptive content from videos. They bridge the gap between visual and textual information by using special encoders to convert video data into a format that a standard text-based large language model (LLM) can process, enabling tasks like ..."
+    },
+    {
+      "title": "Video understanding | Gemma | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/capabilities/vision/video",
+      "snippet": "In this guide, you learned how to process video data using Gemma 4 models. The examples demonstrated how to use the processor to automatically process the input video and generate textual understanding of the video content."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, Gemini, and checks writing quality to make every word worth reading."
+    }
+  ]
+}

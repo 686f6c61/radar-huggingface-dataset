@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Rvmalhotra/model_052830750_cnn_transformer_base",
+  "slug": "rvmalhotra-model_052830750_cnn_transformer_base",
+  "author": "Rvmalhotra",
+  "url": "https://huggingface.co/Rvmalhotra/model_052830750_cnn_transformer_base",
+  "created_at": "2026-08-22T05:44:16.000Z",
+  "updated_at": "2026-08-22T05:44:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base",
+    "batchnorm",
+    "cnn-transformer",
+    "cosine",
+    "low-rank",
+    "mish",
+    "multitask",
+    "sgd",
+    "sparse",
+    "xavier-uniform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cnn-transformer · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/cnn-transformer",
+      "snippet": "A hybrid CNN-Transformer framework for precise industrial surface defect detection and segmentation, integrating Vision Transformer (ViT) with convolutional modules to effectively capture both local texture details and global contextual features."
+    },
+    {
+      "title": "[2305.09880] A survey of the Vision Transformers and their CNN ...",
+      "url": "https://arxiv.org/abs/2305.09880",
+      "snippet": "Vision transformers have become popular as a possible substitute to convolutional neural networks (CNNs) for a variety of computer vision applications. These transformers, with their ability to focus on global relationships in images, offer large learning capacity. However, they may suffer from limited generalization as they do not tend to model local correlation in images. Recently, in vision ..."
+    },
+    {
+      "title": "Models compatible with the Transformers library - Hugging Face",
+      "url": "https://huggingface.co/models?library=transformers",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Melanoma Detection using Transformer-CNN Ensemble Framework - GitHub",
+      "url": "https://github.com/DeborahAdedigba/Melanoma-Detection-using-Transformer",
+      "snippet": "Implementation of a transformer-CNN ensemble framework for multi-class melanoma detection from dermoscopic images. Includes evaluation of ViT, Swin, MaxViT, ConvNeXt, and ResNet-50 models with meta-learning fusion and explainable AI techniques."
+    }
+  ]
+}

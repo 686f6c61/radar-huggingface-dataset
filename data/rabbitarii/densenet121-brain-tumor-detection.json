@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rabbitarii/densenet121-brain-tumor-detection",
+  "slug": "rabbitarii-densenet121-brain-tumor-detection",
+  "author": "rabbitarii",
+  "url": "https://huggingface.co/rabbitarii/densenet121-brain-tumor-detection",
+  "created_at": "2026-08-22T09:24:31.000Z",
+  "updated_at": "2026-08-22T09:24:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-classification",
+    "pytorch",
+    "resnet50",
+    "medical-imaging",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7041604,
+  "parameters_human": "7.0M",
+  "storage_bytes": 28250576,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brain tumor diagnosis using modified DenseNet121 ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s00521-025-11150-4",
+      "snippet": "Brain tumors pose a major global health challenge, necessitating early and precise diagnosis for successful treatment. This research tackles the problem of identifying various brain tumor types using MRI images. Existing approaches, which depend on traditional and basic deep learning techniques, struggle with issues such as lower accuracy, poor generalization, and difficulties in managing MRI ..."
+    },
+    {
+      "title": "PDF Brain tumor diagnosis using modified DenseNet121 ... - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1007/s00521-025-11150-4.pdf",
+      "snippet": "Advancements in neuroimaging and artificial intelligence (AI) have spurred research into efficient methods for brain tumor detection. This review highlights the evolution of techniques, emphasizing challenges and oppor-tunities for improvement through deep learning."
+    },
+    {
+      "title": "Brain tumor diagnosis using modified DenseNet121 architecture with ...",
+      "url": "https://dl.acm.org/doi/10.1007/s00521-025-11150-4",
+      "snippet": "Our proposed model leverages advanced deep learning with the DenseNet121 architecture, enhanced by adaptive learning rates and callbacks for improved generalization and efficiency. Adaptive learning rates dynamically adjust the training pace in response to changes in tumor patterns, overcoming the drawbacks of fixed learning rates."
+    },
+    {
+      "title": "MRI Brain Tumor Analysis: Classification & Segmentation - GitHub",
+      "url": "https://github.com/rbsvd/Brain_Tumor_MRI_Analysis--Classification_and_Segmentation",
+      "snippet": "Deep learning pipeline for automatic brain tumor detection from MRI scans. Includes a DenseNet-121 + InceptionV3 classifier with Grad-CAM explainability and a U-Net segmentation model for precise tumor localization. Built with TensorFlow/Keras, it offers training, evaluation, and visualization tools for AI-assisted clinical analysis. - rbsvd/Brain_Tumor_MRI_Analysis--Classification_and ..."
+    },
+    {
+      "title": "GitHub - SHAH-MEER/BrainTumor-DenseNet-121",
+      "url": "https://github.com/SHAH-MEER/BrainTumor-DenseNet-121",
+      "snippet": "🧠 Brain Tumor Classification System This Gradio application uses a DenseNet-121 deep learning model to detect and classify brain tumors from MRI scan images. The model can identify three different types of brain conditions with high accuracy."
+    }
+  ]
+}

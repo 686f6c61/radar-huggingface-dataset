@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "lebis75/dama-aibrain",
+  "slug": "lebis75-dama-aibrain",
+  "author": "lebis75",
+  "url": "https://huggingface.co/lebis75/dama-aibrain",
+  "created_at": "2026-08-22T05:43:47.000Z",
+  "updated_at": "2026-08-22T06:07:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taeri077/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/Taeri077/dama-aibrain",
+      "snippet": "Taeri077 / dama-aibrain like 0 Text Generation Transformers Safetensors English gemma4 image-text-to-text unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Junfeel/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/Junfeel/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lebis75/MyBrain-v3 · Hugging Face",
+      "url": "https://huggingface.co/lebis75/MyBrain-v3",
+      "snippet": "lebis75 / MyBrain-v3 like 0 GGUF qwen2 llama.cpp unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "huggsook/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/huggsook/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dama-aibrain API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/spoindo/dama-aibrain",
+      "snippet": "Run dama-aibrain with FriendliAI inference. This gemma4 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    }
+  ]
+}

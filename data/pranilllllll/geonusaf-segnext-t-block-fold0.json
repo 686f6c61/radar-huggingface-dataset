@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Pranilllllll/geonusaf-segnext-t-block-fold0",
+  "slug": "pranilllllll-geonusaf-segnext-t-block-fold0",
+  "author": "Pranilllllll",
+  "url": "https://huggingface.co/Pranilllllll/geonusaf-segnext-t-block-fold0",
+  "created_at": "2026-08-22T07:31:45.000Z",
+  "updated_at": "2026-08-22T09:51:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "semantic-segmentation",
+    "remote-sensing",
+    "segnext",
+    "mscan",
+    "geonusaf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2308678693,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Visual-Attention-Network/SegNeXt: Official Pytorch ...",
+      "url": "https://github.com/visual-attention-network/segnext",
+      "snippet": "Official Pytorch implementations for \"SegNeXt: Rethinking Convolutional Attention Design for Semantic Segmentation\" (NeurIPS 2022) - Visual-Attention-Network/SegNeXt"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=geonusaf",
+      "snippet": "Explore machine learning models. 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: geonusaf Clear all"
+    },
+    {
+      "title": "sugam24/geonusaf-unetformer-r18-block-fold0 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-unetformer-r18-block-fold0",
+      "snippet": "GeoNUSAF - UNetFormer (ResNet-18) - block split, fold 0 Kathmandu Valley land-use segmentation, 6 classes, ignore_index=255."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "PDF SegNeXt: Rethinking Convolutional Attention Design for Semantic ...",
+      "url": "https://raw.githubusercontent.com/Visual-Attention-Network/SegNeXt/main/resources/paper.pdf",
+      "snippet": "Different from previous methods, SegNeXt, besides capturing multi-scale features in encoder, intro- duces an efficient attention mechanism and employs cheaper and larger kernel convolutions. These enable our model to achieve higher performance than the aforementioned segmentation methods."
+    }
+  ]
+}

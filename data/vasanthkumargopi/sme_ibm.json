@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "VasanthKumarGopi/SME_IBM",
+  "slug": "vasanthkumargopi-sme_ibm",
+  "author": "VasanthKumarGopi",
+  "url": "https://huggingface.co/VasanthKumarGopi/SME_IBM",
+  "created_at": "2026-08-22T04:06:03.000Z",
+  "updated_at": "2026-08-22T04:06:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IBM AI models",
+      "url": "https://www.ibm.com/solutions/ai-models",
+      "snippet": "Choosing the right model matters to your AI applications, your brand and your bottom line. IBM gives you the freedom to choose from thousands of models from leading providers and select the one that best fits your use case, whether it&#x27;s IBM® Granite®, third-party options or your own custom models."
+    },
+    {
+      "title": "Vasanth Gopi CH - Senior AI Engineer | Agentic AI, MCP ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/vasanth-gopi",
+      "snippet": "I&#x27;ve also built AI platform solutions on AWS Bedrock, Azure OpenAI, and GCP Vertex AI, with hands-on MLOps, model evaluation, and governance practices across SOX/PCI compliant infrastructure."
+    },
+    {
+      "title": "AI for Small Businesses | IBM",
+      "url": "https://www.ibm.com/think/insights/ai-for-small-business",
+      "snippet": "Small businesses and even entrepreneurs who haven&#x27;t yet launched are adopting AI tools and banking AI into their business models in new and exciting ways."
+    },
+    {
+      "title": "Vasanth Kumar - Information Technology Specialist | LinkedIn",
+      "url": "https://in.linkedin.com/in/vasanth-kumar-65a53842",
+      "snippet": "Experience: IBM · Location: Bengaluru · 189 connections on LinkedIn. View Vasanth Kumar&#x27;s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Design Framework for the Implementation of AI-based (Service ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s13132-022-01003-z",
+      "snippet": "Following this, the features of artificial intelligence will be portrayed. Based on these remarks, the implications that arise for AI-based (service) business model development in the manufacturing sector will be presented. Afterwards, a framework for the development of AI-based (service) business models will be derived."
+    }
+  ]
+}

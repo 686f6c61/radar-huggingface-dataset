@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "0xKitkat/Ox-Alpha-GGUF",
+  "slug": "0xkitkat-ox-alpha-gguf",
+  "author": "0xKitkat",
+  "url": "https://huggingface.co/0xKitkat/Ox-Alpha-GGUF",
+  "created_at": "2026-08-22T10:57:47.000Z",
+  "updated_at": "2026-08-22T10:59:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "placeholder",
+    "quantization",
+    "gguf",
+    "ox-alpha",
+    "stealth-model",
+    "text-generation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - a 0xKitkat Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/0xKitkat/models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from 0xKitkat"
+    },
+    {
+      "title": "0xKitkat (Kitkat01) - Hugging Face",
+      "url": "https://huggingface.co/0xKitkat/datasets",
+      "snippet": "0xKitkat 2 Follow digiheathen&#x27;s profile pictureasmodun&#x27;s profile pictureiamhsouna&#x27;s profile picture 3 followers · 5 following procrastiness"
+    },
+    {
+      "title": "Ox Alpha: What We Know So Far (Aug 2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/ox-alpha-what-we-know-mystery-ai-model-august-2026",
+      "snippet": "← Back to blog explainx / blog Ox Alpha: What We Know About the Mystery AI Model Ox Alpha (sometimes written \"0x Alpha\") is OpenRouter&#x27;s free stealth model — and nobody&#x27;s confirmed who built it. Tokenizer and video-encoder fingerprinting point to GLM-5.3 with ~90% confidence. Full evidence, ranked."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Latest AI Developments: August 2026 Update - Local AI Zone",
+      "url": "https://local-ai-zone.github.io/blog/ai-updates-august-2026.html",
+      "snippet": "Comprehensive guide to August 2026 AI advancements: 11+ model releases in 20 days including OX Alpha mystery model, Gemini 3.7 Flash, Muse Code with open weights, Seed 2.1 Turbo, and major updates to Claude Opus 5. The fastest month in AI history."
+    }
+  ]
+}

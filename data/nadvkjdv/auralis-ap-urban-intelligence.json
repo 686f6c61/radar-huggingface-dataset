@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nadvkjdv/auralis-ap-urban-intelligence",
+  "slug": "nadvkjdv-auralis-ap-urban-intelligence",
+  "author": "nadvkjdv",
+  "url": "https://huggingface.co/nadvkjdv/auralis-ap-urban-intelligence",
+  "created_at": "2026-08-22T03:31:29.000Z",
+  "updated_at": "2026-08-22T03:32:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "civic-intelligence",
+    "andhra-pradesh",
+    "smart-city",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333107,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | UrbanAI-2025",
+      "url": "https://urbanai2025.github.io/",
+      "snippet": "Urban AI at NeurIPS 2025 UrbanAI: Harnessing Artificial Intelligence for Smart Cities As the world population becomes increasingly urban, incredible innovation is required to sustain such dense populations in a safe and healthy manner. Urban areas are responsible for over 70% of global carbon emissions and energy consumption, driven by infrastructure and transportation systems that often ..."
+    },
+    {
+      "title": "UrbanAI: Harnessing Artificial Intelligence for Smart Cities",
+      "url": "https://neurips.cc/virtual/2025/workshop/109583",
+      "snippet": "AI and machine learning present immense opportunities to reshape urban environments, optimizing everything from energy use and transportation networks to public health and governance, addressing urgent challenges in areas as diverse as building optimization and sustainability, pollution mitigation, infrastructure maintenance, urban planning ..."
+    },
+    {
+      "title": "Our Works - Urban Ai",
+      "url": "https://urbanai.fr/our-works/",
+      "snippet": "The URBAN AI GUIDE aids city leaders and urban technologists (academic, public, private, and community-focused) in better understanding how artificial intelligence operates in urban contexts. It details the components of urban AI systems, and utilizes case studies to provide insight into evaluating AI-based project implementations and maintaining human oversight in the process."
+    },
+    {
+      "title": "Urban Ai Guide - Urban Ai",
+      "url": "https://urbanai.fr/our-works/urban-ai-guide/",
+      "snippet": "The guide begins with a literature review, presenting the state of the art in research on urban artificial intelligence. It then diagrams and describes an \"urban AI anatomy,\" outlining and explaining the components that make up an urban AI system."
+    },
+    {
+      "title": "Advanced AI Agents for Support Teams | Auralis AI",
+      "url": "https://auralis.ai/",
+      "snippet": "Advanced AI agents for support teams resolve up to 70% of requests (highest observed result), empower staff to be markedly more productive, and improve satisfaction while reducing costs - with Auralis AI."
+    }
+  ]
+}

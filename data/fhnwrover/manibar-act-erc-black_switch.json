@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fhnwrover/manibar-act-erc-black_switch",
+  "slug": "fhnwrover-manibar-act-erc-black_switch",
+  "author": "fhnwrover",
+  "url": "https://huggingface.co/fhnwrover/manibar-act-erc-black_switch",
+  "created_at": "2026-08-22T08:17:32.000Z",
+  "updated_at": "2026-08-22T08:19:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:fhnwrover/manibar-erc-black_switch",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51748487,
+  "parameters_human": "51.7M",
+  "storage_bytes": 207042380,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fhnwrover/manibar-act-erc-black-switches · Hugging Face",
+      "url": "https://huggingface.co/fhnwrover/manibar-act-erc-black-switches",
+      "snippet": "Instructions to use fhnwrover/manibar-act-erc-black-switches with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use fhnwrover/manibar-act-erc-black-switches with LeRobot: Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the ..."
+    },
+    {
+      "title": "fhnwrover/manibar-act-erc-black-switches-v2 · Hugging Face",
+      "url": "https://huggingface.co/fhnwrover/manibar-act-erc-black-switches-v2",
+      "snippet": "Instructions to use fhnwrover/manibar-act-erc-black-switches-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Manibar ACT ERC Black Switches - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/fhnwrover-manibar-act-erc-black-switches-02",
+      "snippet": "A robotics manipulation dataset for black switch interaction tasks collected using the ACT (Action Chunking with Transformers) framework. The dataset contains 81 episodes with multi-modal observations including RGB images and proprioceptive state data."
+    },
+    {
+      "title": "Action Chunking with Transformers - ACT — Open Edge Platform Documentation",
+      "url": "https://docs.openedgeplatform.intel.com/2026.1/edge-ai-suites/robotics-ai-suite/embodied/model_tutorials/model_act.html",
+      "snippet": "Action Chunking with Transformers - ACT # Action Chunking with Transformers (ACT) is an end-to-end imitation learning model designed for fine manipulation tasks in robotics, learned directly from real demonstrations."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

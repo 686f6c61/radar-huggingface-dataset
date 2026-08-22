@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Janslw/DaniFlow.zip",
+  "slug": "janslw-daniflow-zip",
+  "author": "Janslw",
+  "url": "https://huggingface.co/Janslw/DaniFlow.zip",
+  "created_at": "2026-08-22T04:37:49.000Z",
+  "updated_at": "2026-08-22T04:39:46.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60166182,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Danncode10/DannFlow: DannFlow is a high-performance, AI ...",
+      "url": "https://github.com/Danncode10/DannFlow",
+      "snippet": "DannFlow is a high-performance, AI-optimized boilerplate for Next.js, Supabase, and Vercel. It is designed to be the \"source of truth\" for Claude Code and Antigravity—giving your AI agents a clear map so they can code autonomously without breaking the architecture."
+    },
+    {
+      "title": "Janslw (Jackson) - Hugging Face",
+      "url": "https://huggingface.co/Janslw",
+      "snippet": "I love AI updated a model about 10 hours ago"
+    },
+    {
+      "title": "Managing Models - Jan",
+      "url": "https://www.jan.ai/docs/desktop/manage-models",
+      "snippet": "Cloud Models Jan supports connecting to various AI cloud providers. Go to Settings > Model Providers, select your provider, and enter your API key. Use GPT-4o, o3, and other OpenAI models. Use Claude models from Anthropic. Use Gemini models from Google."
+    },
+    {
+      "title": "DaniFlow MASK/HELMET・ STL File for 3D printing・Cults",
+      "url": "https://cults3d.com/en/3d-model/fashion/daniflow-mask-helmet",
+      "snippet": "Download this STL Model for 3D printer made by Psycho_Rabbit. One single piece mask— helmet style. Dani flow mask helmet"
+    },
+    {
+      "title": "GitHub - DahnM20/ai-flow: Build custom AI workflows with an easy drag ...",
+      "url": "https://github.com/DahnM20/ai-flow",
+      "snippet": "AI-Flow is an open-source, user-friendly UI that lets you visually design, manage, and monitor AI-driven workflows by seamlessly connecting multiple AI model APIs (e.g., OpenAI, StabilityAI, Replicate, Claude, Deepseek)."
+    }
+  ]
+}

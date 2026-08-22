@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kawal511/sentinelvision-proctoring-yolov8n",
+  "slug": "kawal511-sentinelvision-proctoring-yolov8n",
+  "author": "Kawal511",
+  "url": "https://huggingface.co/Kawal511/sentinelvision-proctoring-yolov8n",
+  "created_at": "2026-08-22T04:22:17.000Z",
+  "updated_at": "2026-08-22T04:22:17.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "yolov8",
+    "proctoring",
+    "computer-vision",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6252650,
+  "storage_human": "6 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kcosteen/sentinelvision-proctoring-yolov8n · Hugging Face",
+      "url": "https://huggingface.co/kcosteen/sentinelvision-proctoring-yolov8n",
+      "snippet": "Instructions to use kcosteen/sentinelvision-proctoring-yolov8n with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - kcosteen/SentinelVision",
+      "url": "https://github.com/kcosteen/SentinelVision",
+      "snippet": "The fine-tuned detector is on the Hugging Face Hub (kcosteen/sentinelvision-proctoring-yolov8n, model card with full metrics and limitations). Drop it in models/detection/ to use it — without it the app falls back to stock COCO weights and says so loudly, because the two are not interchangeable:"
+    },
+    {
+      "title": "SentinelVision/docs/MODEL_CARD.md at main · kcosteen ... - GitHub",
+      "url": "https://github.com/kcosteen/SentinelVision/blob/main/docs/MODEL_CARD.md",
+      "snippet": "SentinelVision — YOLOv8n fine-tuned for exam proctoring A YOLOv8-nano detector fine-tuned to spot the objects that matter in an online exam: phones, books, headphones, laptops, TVs and people."
+    },
+    {
+      "title": "YOLOv8 Tutorial - Colab",
+      "url": "https://colab.research.google.com/github/Audacity126/ultralytics_YOLOv8/blob/master/examples/tutorial.ipynb/",
+      "snippet": "YOLOv8 is the latest version of the YOLO (You Only Look Once) AI models developed by Ultralytics. This notebook serves as the starting point for exploring the various resources available to help you get started with YOLOv8 and understand its features and capabilities."
+    },
+    {
+      "title": "Explore Ultralytics YOLOv8",
+      "url": "https://docs.ultralytics.com/models/yolov8",
+      "snippet": "Discover Ultralytics YOLOv8, an advancement in real-time object detection, optimizing performance with an array of pretrained models for diverse tasks."
+    }
+  ]
+}

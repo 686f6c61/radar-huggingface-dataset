@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "YutongTang/paper_020938611_embodied_ai",
+  "slug": "yutongtang-paper_020938611_embodied_ai",
+  "author": "YutongTang",
+  "url": "https://huggingface.co/YutongTang/paper_020938611_embodied_ai",
+  "created_at": "2026-08-22T04:49:51.000Z",
+  "updated_at": "2026-08-22T04:49:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "cautious",
+    "embodied-ai",
+    "highlight-bullet",
+    "html",
+    "intro-background-approach-eval-conclusion",
+    "medium-balanced",
+    "mixed-active-passive",
+    "numeric-bibtex",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/pdf/2509.20021",
+      "snippet": "On the other hand, WMs empower embodied AI by building internal representations and future predictions of the external world, facilitating physical law-compliant embodied interactions. As such, this paper comprehensively explores the literature in embodied AI from basics to advances, covering both LLM driven and WM driven works."
+    },
+    {
+      "title": "[2509.20021] Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2509.20021",
+      "snippet": "On the other hand, WMs empower embodied AI by building internal representations and future predictions of the external world, facilitating physical law-compliant embodied interactions. As such, this paper comprehensively explores the literature in embodied AI from basics to advances, covering both LLM driven and WM driven works."
+    },
+    {
+      "title": "PDF CSET - China s Embodied AI: A Path to AGI",
+      "url": "https://cset.georgetown.edu/wp-content/uploads/CSET-Chinas-Embodied-AI.pdf",
+      "snippet": "Another paper by Chinese AI scientists, echoes this description of the enterprise:8 \"Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems.\""
+    },
+    {
+      "title": "Paper page - Embodied AI: From LLMs to World Models",
+      "url": "https://huggingface.co/papers/2509.20021",
+      "snippet": "Join the discussion on this paper page Embodied AI: From LLMs to World Models"
+    },
+    {
+      "title": "PDF Embodied AI: From LLMs to World Models [Feature]",
+      "url": "https://mn.cs.tsinghua.edu.cn/xinwang/PDF/papers/2025_Embodied%20AI%20from%20LLMs%20to%20World%20Models.pdf",
+      "snippet": "On the other hand, WMs empower embodied AI by building internal representations and future predictions of the external world, fa-cilitating physical law-compliant embodied interactions. As such, this paper comprehensively explores the literature in embodied AI from basics to advances, covering both LLM driven and WM driven works."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "CappyAdams/lolcow-rvc-model-dump",
+  "slug": "cappyadams-lolcow-rvc-model-dump",
+  "author": "CappyAdams",
+  "url": "https://huggingface.co/CappyAdams/lolcow-rvc-model-dump",
+  "created_at": "2026-07-20T11:28:29.000Z",
+  "updated_at": "2026-08-22T11:08:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lolcow",
+    "youtube",
+    "rvc",
+    "audio-to-audio",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112574472,
+  "storage_human": "113 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CappyAdams/lolcow-rvc-model-dump · Hugging Face",
+      "url": "https://huggingface.co/CappyAdams/lolcow-rvc-model-dump",
+      "snippet": "READ THIS 2 These models were trained for the purpose of doing AI covers, voices for content creation and just having fun. Do not use these models for illegal/reputation ruining activities. If your voice has been used in the model (s) and you wish to have it taken down, please contact me in the community section of this model card!"
+    },
+    {
+      "title": "CappyAdams/RVC-SML_Model-Dump · Hugging Face",
+      "url": "https://huggingface.co/CappyAdams/RVC-SML_Model-Dump",
+      "snippet": "READ THIS These models were trained for the purpose of doing AI covers, voices for content creation and just having fun. Do not use these models for illegal/reputation ruining activities. If your voice has been used in the model (s) and you wish to have it taken down, please contact me in the community section of this model card! I will reply as fast as possible."
+    },
+    {
+      "title": "Little Girls (Nova Online AI Cover) - YouTube",
+      "url": "https://www.youtube.com/watch?v=XKLLcYveqzE",
+      "snippet": "This is so epic::UPDATE::I decided to upload my lolcow RVC models on hugging face cuz idk how to use google drivehttps://huggingface.co/CappyAdams/lolcow-rvc..."
+    },
+    {
+      "title": "RVC TTS Voice Models to Download - 18,170 AI Voice Models",
+      "url": "https://www.101soundboards.com/boards/tts/models",
+      "snippet": "Download 18,170 high-quality RVCv2 (Real-time Voice Conversion) AI voice model files for use with compatible RVC software. All models are free to download."
+    },
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects."
+    }
+  ]
+}

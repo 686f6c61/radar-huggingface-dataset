@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "msuiche/Qwen3.8-27B-abliterated-cyber-GLP-49",
+  "slug": "msuiche-qwen3-8-27b-abliterated-cyber-glp-49",
+  "author": "msuiche",
+  "url": "https://huggingface.co/msuiche/Qwen3.8-27B-abliterated-cyber-GLP-49",
+  "created_at": "2026-08-16T19:29:10.000Z",
+  "updated_at": "2026-08-22T09:44:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "abliteration",
+    "refusal-direction",
+    "activation-steering",
+    "control-vector",
+    "glp",
+    "lora",
+    "qwen3",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 322560,
+  "parameters_human": "322560",
+  "storage_bytes": 12439688,
+  "storage_human": "12 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "msuiche/Qwen3.8-27B-abliterated-cvec · Hugging Face",
+      "url": "https://huggingface.co/msuiche/Qwen3.8-27B-abliterated-cvec",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "msuiche/Qwen3.8-27B-abliterated-cvec at main - Hugging Face",
+      "url": "https://huggingface.co/msuiche/Qwen3.8-27B-abliterated-cvec/tree/main",
+      "snippet": "Gated model You can list files but not access them Preview of files found in this repository .gitattributes 1.61 kBClosed-form rank-1 refusal LoRA and projective control vector for Qwen3.8-27B2 days ago Qwen3.8-27B-refusal-cvec-mask005-pooled-L1-63-a1.gguf 1.3 MB xet Closed-form rank-1 refusal LoRA and projective control vector for Qwen3.8-27B2 ..."
+    },
+    {
+      "title": "Qwen3.8-27B OBLITERATED: 0% Refusal Rate (Aug 2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026",
+      "snippet": "QWEN-3.8-27B: OBLITERATED. 0.0% REFUSAL RATE across 842 harmful prompts.\" The model card describes zero refusals across a large, purpose-built harmful-prompt dataset, with — per Pliny&#x27;s own description — \"extra focus on liberating its cyber, jailbreak generation, and complex AI\" capability."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

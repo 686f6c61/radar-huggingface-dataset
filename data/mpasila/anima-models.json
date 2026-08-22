@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mpasila/Anima-Models",
+  "slug": "mpasila-anima-models",
+  "author": "mpasila",
+  "url": "https://huggingface.co/mpasila/Anima-Models",
+  "created_at": "2026-07-31T17:52:36.000Z",
+  "updated_at": "2026-08-22T06:10:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "not-for-all-audiences",
+    "base_model:circlestone-labs/Anima",
+    "base_model:finetune:circlestone-labs/Anima",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20911508328,
+  "storage_human": "20.9 GB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mpasila/Anima-Models · Hugging Face",
+      "url": "https://huggingface.co/mpasila/Anima-Models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mpasila/Anima-Models at main - Hugging Face",
+      "url": "https://huggingface.co/mpasila/Anima-Models/tree/main",
+      "snippet": "mpasila / Anima-Models like 0 Model card FilesFiles and versions xet Community Copy to bucket new main Anima-Models 12.5 GB Ctrl+K Ctrl+K 1 contributor History:3 commits mpasila Add readme 6cb2179 verifiedabout 1 hour ago .gitattributes Safe 1.52 kBinitial commitabout 2 hours ago README.md 767 BytesAdd readmeabout 1 hour ago novaFurryAM_v30 ..."
+    },
+    {
+      "title": "Anima - aesthetic-v1.1 | Anima Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2458426/anima",
+      "snippet": "Anima is a 2 billion parameter text-to-image model created via a collaboration between CircleStone Labs and Comfy Org. It is focused mainly on anim..."
+    },
+    {
+      "title": "#2/2 How to Prompt the Anima AI Model: A Complete Guide",
+      "url": "https://yodayo.com/posts/84d36981-dea4-4365-b9e8-8b31d56b2a75",
+      "snippet": "--- The following prompt was tested on a merged version of Anima and produced strong results on both short and long prompts. It demonstrates the full range of techniques: stacked quality tags, weighted artist references, layered descriptors, and a rich atmospheric finish. ``` masterpiece, best quality, amazing quality, newest, very aesthetic, absurdres, score 9, score 8, safe, ultra detailed ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

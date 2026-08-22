@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fuyi-ldiz4/paper_007100822_contrastive_learning",
+  "slug": "fuyi-ldiz4-paper_007100822_contrastive_learning",
+  "author": "fuyi-ldiz4",
+  "url": "https://huggingface.co/fuyi-ldiz4/paper_007100822_contrastive_learning",
+  "created_at": "2026-08-22T05:30:30.000Z",
+  "updated_at": "2026-08-22T05:30:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "contrastive-learning",
+    "critical",
+    "first-person-plural",
+    "intro-background-approach-eval-conclusion",
+    "latex-cvpr",
+    "long-detailed",
+    "numeric-bibtex",
+    "unstructured-narrative",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning",
+      "url": "https://dl.acm.org/doi/10.1016/j.neucom.2024.128645",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "An Augmentation Overlap Theory of Contrastive Learning",
+      "url": "https://arxiv.org/abs/2511.03114",
+      "snippet": "Recently, self-supervised contrastive learning has achieved great success on various tasks. However, its underlying working mechanism is yet unclear. In this paper, we first provide the tightest bounds based on the widely adopted assumption of conditional independence. Further, we relax the conditional independence assumption to a more practical assumption of augmentation overlap and derive ..."
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning This research ...",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Visualizing and Understanding Contrastive Learning † †thanks: This research received funding from the FWO (Grants G014718N, G0A4720N and 1SB5721N) and from imec through the AAA project Trustworthy AI Methods (TAIM)."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning | Request PDF",
+      "url": "https://www.researchgate.net/publication/384226597_A_comprehensive_survey_on_contrastive_learning",
+      "snippet": "Request PDF | On Sep 1, 2024, Haigen Hu and others published A comprehensive survey on contrastive learning | Find, read and cite all the research you need on ResearchGate"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "vanch007/FireRedAudio-MLX-8bit",
+  "slug": "vanch007-fireredaudio-mlx-8bit",
+  "author": "vanch007",
+  "url": "https://huggingface.co/vanch007/FireRedAudio-MLX-8bit",
+  "created_at": "2026-08-22T07:51:50.000Z",
+  "updated_at": "2026-08-22T08:02:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "firered_audio",
+    "apple-silicon",
+    "audio",
+    "speech-recognition",
+    "text-to-speech",
+    "voice-cloning",
+    "speech-editing",
+    "voice-design",
+    "multimodal",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5287302914,
+  "parameters_human": "5.29B",
+  "storage_bytes": 14562694349,
+  "storage_human": "14.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - vanch007/mlx-FireRedAudio",
+      "url": "https://github.com/vanch007/mlx-FireRedAudio",
+      "snippet": "Native Apple Silicon MLX port of FireRedAudio: A General-Purpose Audio Language Model with Decoupled Continuous Representations for Understanding and Generation."
+    },
+    {
+      "title": "vanch007 (vanchye) - Hugging Face",
+      "url": "https://huggingface.co/vanch007/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "vanch007 (vanchye) - Hugging Face",
+      "url": "https://huggingface.co/vanch007",
+      "snippet": "Sort: Recently updated. vanch007/PaddleOCR-VL-1.6-8bit. Updated 10 days ago. vanch007/VTranslator-Piper-TTS-Int8. Updated 12 days ago"
+    },
+    {
+      "title": "Models - MLX Audio",
+      "url": "https://blaizzy.github.io/mlx-audio/models/",
+      "snippet": "Models MLX Audio supports a wide range of audio models across several categories, all optimized for Apple Silicon. Many hosted MLX checkpoints referenced in these docs live under mlx-community on Hugging Face, the shared org for ready-to-use MLX model weights across projects like mlx-lm, mlx-vlm, and mlx-audio."
+    },
+    {
+      "title": "MixAudio | AI Song Remixer",
+      "url": "https://mix.audio/",
+      "snippet": "MixAudio is an AI Song Remixer for music fans and creators. Legally generate remixes with global pop artist catalog IP with full AI attribution and royalty settlement built in."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ThirdTimesTheCiarc/base_wan21",
+  "slug": "thirdtimestheciarc-base_wan21",
+  "author": "ThirdTimesTheCiarc",
+  "url": "https://huggingface.co/ThirdTimesTheCiarc/base_wan21",
+  "created_at": "2026-01-02T14:24:31.000Z",
+  "updated_at": "2026-08-22T06:10:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34317627911,
+  "storage_human": "34.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThirdTimesTheCiarc/base_wan21 · Hugging Face",
+      "url": "https://huggingface.co/ThirdTimesTheCiarc/base_wan21",
+      "snippet": "ThirdTimesTheCiarc / base_wan21 like 1 Not-For-All-Audiences Model card FilesFiles and versions xet Community"
+    },
+    {
+      "title": "ThirdTimesTheCiarc/base_wan21 at main - Hugging Face",
+      "url": "https://huggingface.co/ThirdTimesTheCiarc/base_wan21/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "minWM-worldkv/.claude/skills/integrate-new-backbone/SKILL.md ... - GitHub",
+      "url": "https://github.com/hhhjyz/minWM-worldkv/blob/main/.claude/skills/integrate-new-backbone/SKILL.md",
+      "snippet": "For a new backbone, the Wan21 entry style is often the easier starting point thanks to its simplicity. You might create NewBB/new_bb_train.py and use ModelConfig from shared/configs/base.py as the config base class."
+    },
+    {
+      "title": "Wan: Open and Advanced Large-Scale Video Generative Models",
+      "url": "https://github.com/Wan-Video/Wan2.1",
+      "snippet": "Wan: Open and Advanced Large-Scale Video Generative Models In this repository, we present Wan2.1, a comprehensive and open suite of video foundation models that pushes the boundaries of video generation. Wan2.1 offers these key features: 👍 SOTA Performance: Wan2.1 consistently outperforms existing open-source models and state-of-the-art commercial solutions across multiple benchmarks. 👍 ..."
+    },
+    {
+      "title": "Wan2.1-VACE-14B (pro) - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/1620800?modelVersionId=1834321",
+      "snippet": "Download Wan2.1-VACE-14B(pro) - Workflows for Wan Video 14B i2v 720p by AbdallahAlswa80. Free AI model download from CivArchive."
+    }
+  ]
+}

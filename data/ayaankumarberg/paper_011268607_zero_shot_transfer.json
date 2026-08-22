@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ayaankumarberg/paper_011268607_zero_shot_transfer",
+  "slug": "ayaankumarberg-paper_011268607_zero_shot_transfer",
+  "author": "ayaankumarberg",
+  "url": "https://huggingface.co/ayaankumarberg/paper_011268607_zero_shot_transfer",
+  "created_at": "2026-08-22T06:44:18.000Z",
+  "updated_at": "2026-08-22T06:44:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "highlight-bullet",
+    "intro-problem-solution-validation-future",
+    "latex-arxiv",
+    "long-detailed",
+    "numeric-bibtex",
+    "passive",
+    "theoretical-rigorous",
+    "zero-shot-transfer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2302.12288",
+      "snippet": "ZoeDepth introduces a zero-shot transfer approach combining relative and metric depth, delivering excellent generalization performance with a novel bin adjustment design for domain adaptation."
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "The first paper on zero-shot learning in natural language processing appeared in a 2008 paper by Chang, Ratinov, Roth, and Srikumar, at the AAAI&#x27;08, but the name given to the learning paradigm there was dataless classification. [3] The first paper on zero-shot learning in computer vision appeared at the same conference, under the name zero-data learning. [4] The term zero-shot learning itself ..."
+    },
+    {
+      "title": "[2607.26023] CHARM: A Multimodal Graph Foundation Model with ...",
+      "url": "https://arxiv.org/abs/2607.26023",
+      "snippet": "To address these challenges, we propose CHARM, a multimodal graph foundation model with hierarchical context modeling for zero-shot transfer. CHARM replaces isolated raw nodes with hierarchical graph contexts that capture multimodal semantics and cross-modal relations."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "Accepted Papers - IJCAI 2026",
+      "url": "https://2026.ijcai.org/accepted-papers/",
+      "snippet": "Debate with Myself: Zero-Shot Event Causality Identification with Adversarial Evidence Integration via Large Language Models Zefan Zeng, Yuehang Si, Xingchen Hu, Qing Cheng, Jiakun Liu, Zhong Liu Preprint (PDF) Natural Language Processing Information extraction"
+    }
+  ]
+}

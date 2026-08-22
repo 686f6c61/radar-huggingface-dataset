@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "calebjonesler/paper_006058248_self_supervised",
+  "slug": "calebjonesler-paper_006058248_self_supervised",
+  "author": "calebjonesler",
+  "url": "https://huggingface.co/calebjonesler/paper_006058248_self_supervised",
+  "created_at": "2026-08-22T05:21:12.000Z",
+  "updated_at": "2026-08-22T05:21:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "cautious",
+    "first-person-plural",
+    "intro-related-method-exp-conclusion",
+    "latex-cvpr",
+    "numeric-nature",
+    "self-supervised",
+    "structured-imrad",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Self-Supervised Learning - Stanford University",
+      "url": "https://cs229.stanford.edu/notes2021spring/notes2021spring/cs229_lecture_selfsupervision_final.pdf",
+      "snippet": "Can self-supervised learning help? Self-supervised learning (informal definition): supervise using labels generated from the data without any manual or as weak label sources Idea: Hide or modify part of the input. Ask model to recover input or classify what changed. Self-supervised task referred to the pretext task"
+    },
+    {
+      "title": "Self-Supervised Learning: The Future of AI/ML Ayush",
+      "url": "https://www.researchgate.net/publication/384285537_Self-Supervised_Learning_The_Future_of_AIML_Ayush",
+      "snippet": "In this paper, we provide an overview of self-supervised learning, its key concepts, and its applications. We also discuss the advantages and challenges of self-supervised learning and highlight ..."
+    },
+    {
+      "title": "Self-Supervised Learning (SSL) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/",
+      "snippet": "Self-Supervised Learning (SSL) is a type of machine learning where a model is trained using data that does not have any labels or answers provided. Instead of needing people to label the data, the model finds patterns and creates its own labels from the data automatically."
+    },
+    {
+      "title": "Self-supervised Label Augmentation via Input Transformations",
+      "url": "https://arxiv.org/abs/1910.05872",
+      "snippet": "Self-supervised learning, which learns by constructing artificial labels given only the input signals, has recently gained considerable attention for learning representations with unlabeled datasets, i.e., learning without any human-annotated supervision. In this paper, we show that such a technique can be used to significantly improve the model accuracy even under fully-labeled datasets. Our ..."
+    },
+    {
+      "title": "[2505.13584] Self-Supervised Learning for Image Segmentation: A ...",
+      "url": "https://arxiv.org/abs/2505.13584",
+      "snippet": "Supervised learning demands large amounts of precisely annotated data to achieve promising results. Such data curation is labor-intensive and imposes significant overhead regarding time and costs. Self-supervised learning (SSL) partially overcomes these limitations by exploiting vast amounts of unlabeled data and creating surrogate (pretext or proxy) tasks to learn useful representations ..."
+    }
+  ]
+}

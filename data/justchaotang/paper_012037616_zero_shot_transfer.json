@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "justchaotang/paper_012037616_zero_shot_transfer",
+  "slug": "justchaotang-paper_012037616_zero_shot_transfer",
+  "author": "justchaotang",
+  "url": "https://huggingface.co/justchaotang/paper_012037616_zero_shot_transfer",
+  "created_at": "2026-08-22T03:09:29.000Z",
+  "updated_at": "2026-08-22T03:09:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "concise-analytical",
+    "docx",
+    "impersonal",
+    "intro-related-method-exp-conclusion",
+    "medium-balanced",
+    "numeric-bibtex",
+    "structured-imrad",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "The first paper on zero-shot learning in natural language processing appeared in a 2008 paper by Chang, Ratinov, Roth, and Srikumar, at the AAAI&#x27;08, but the name given to the learning paradigm there was dataless classification. [3] The first paper on zero-shot learning in computer vision appeared at the same conference, under the name zero-data learning. [4] The term zero-shot learning itself ..."
+    },
+    {
+      "title": "[1301.3666] Zero-Shot Learning Through Cross-Modal Transfer",
+      "url": "https://arxiv.org/abs/1301.3666",
+      "snippet": "This work introduces a model that can recognize objects in images even if no training data is available for the objects. The only necessary knowledge about the unseen categories comes from unsupervised large text corpora. In our zero-shot framework distributional information in language can be seen as spanning a semantic basis for understanding what objects look like. Most previous zero-shot ..."
+    },
+    {
+      "title": "Zero-shot cross-lingual transfer in instruction tuning of large ...",
+      "url": "https://arxiv.org/abs/2402.14778",
+      "snippet": "In this work, we conduct a systematic study of zero-shot cross-lingual transfer in IT, when an LLM is instruction-tuned on English-only data and then tested on user prompts in other languages."
+    },
+    {
+      "title": "Zero Shot Learning in Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/zero-shot-learning-in-deep-learning/",
+      "snippet": "Zero-Shot Learning is a breakthrough in machine learning that moves toward true AI generalization. By leveraging semantic attributes and shared embeddings, ZSL models can classify instances of unseen classes, making them highly useful in fields where labeled data is scarce."
+    },
+    {
+      "title": "GitHub - HolmesShuan/Zero-shot-Style-Transfer-via-Attention ...",
+      "url": "https://github.com/HolmesShuan/Zero-shot-Style-Transfer-via-Attention-Rearrangement",
+      "snippet": "Z-STAR is an innovative zero-shot (training-free) style transfer method that leverages the generative prior knowledge within a pre-trained diffusion model. By employing an attention rearrangement strategy, it effectively fuses content and style information without the need for retraining or tuning for each input style."
+    }
+  ]
+}

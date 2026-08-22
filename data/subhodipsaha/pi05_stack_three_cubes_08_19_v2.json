@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "subhodipsaha/pi05_stack_three_cubes_08_19_v2",
+  "slug": "subhodipsaha-pi05_stack_three_cubes_08_19_v2",
+  "author": "subhodipsaha",
+  "url": "https://huggingface.co/subhodipsaha/pi05_stack_three_cubes_08_19_v2",
+  "created_at": "2026-08-22T05:11:28.000Z",
+  "updated_at": "2026-08-22T05:13:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:subhodipsaha/so101_stack_three_cubes_08_19",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354060184,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eval_act_stack_three_cubes_08_19 - Hugging Face",
+      "url": "https://huggingface.co/datasets/subhodipsaha/eval_act_stack_three_cubes_08_19",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "subhodipsaha/so101_stack_three_cubes_08_19 - Hugging Face",
+      "url": "https://huggingface.co/datasets/subhodipsaha/so101_stack_three_cubes_08_19",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "GitHub - jorgemunozl/openpi_subtask_generation: pi05 model written on ...",
+      "url": "https://github.com/jorgemunozl/openpi_subtask_generation",
+      "snippet": "pi05 model written on JAX. Contribute to jorgemunozl/openpi_subtask_generation development by creating an account on GitHub."
+    },
+    {
+      "title": "PDF π : a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://www.pi.website/download/pi05.pdf",
+      "snippet": "Abstract—In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe π0.5, a new model based on π0 that uses co-training on heterogeneous ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "analogalok/Qwen3.8-27B-DFlash2-Q2_K-GGUF",
+  "slug": "analogalok-qwen3-8-27b-dflash2-q2_k-gguf",
+  "author": "analogalok",
+  "url": "https://huggingface.co/analogalok/Qwen3.8-27B-DFlash2-Q2_K-GGUF",
+  "created_at": "2026-08-20T12:36:34.000Z",
+  "updated_at": "2026-08-20T13:05:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "speculative-decoding",
+    "dflash2",
+    "qwen",
+    "qwen3.8",
+    "2-bit",
+    "text-generation",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2",
+    "base_model:quantized:z-lab/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 1288,
+  "trending_score": 8,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 705431072,
+  "storage_human": "705 MB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "incoai/Qwen3.8-27B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/incoai/Qwen3.8-27B-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "z-lab/Qwen3.8-27B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Alok on X: \"Qwen 3.8 27B Q4_K_M - 90 tokens/sec on a single NVIDIA RTX ...",
+      "url": "https://x.com/analogalok/status/2089979723166200196",
+      "snippet": "This model beats GPT 5.6 Terra, GLM 5.2 DeepSeek V4 Pro, Muse Spark 1.2 and Claude Opus 4.8 on the artificial analysis agentic index (details in the replies) Hugging Face GGUF links (Base + DFlash2) and the full visual VRAM scaling and Dflash2 vs MTP graphs are also in the replies below. are you sticking to native MTP for the 130k context, or ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Hardware Guide: From the RTX 3090 to the DGX Spark",
+      "url": "https://www.contextstudios.ai/blog/qwen-3-8-27b-hardware-guide",
+      "snippet": "Qwen 3.8 27B Hardware Guide: From the RTX 3090 to the DGX Spark On August 14, 2026, Alibaba&#x27;s Qwen team released the weights of Qwen3.8-27B under Apache 2.0 on Hugging Face - making it the most exciting local model in the 27B class right now."
+    },
+    {
+      "title": "Alok on X: \"Qwen 3.8 27B Dflash2 VS Native MTP\" / X",
+      "url": "https://x.com/analogalok/status/2089980307047170489",
+      "snippet": "Qwen 3.8 27B (dense) running on a single RTX 4090 (24GB VRAM) at 65 tokens/sec decode with MTP! 260,000 context window or 65 tokens/sec decode with native MTP."
+    }
+  ]
+}

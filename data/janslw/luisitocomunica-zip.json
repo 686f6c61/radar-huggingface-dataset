@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Janslw/LuisitoComunica.Zip",
+  "slug": "janslw-luisitocomunica-zip",
+  "author": "Janslw",
+  "url": "https://huggingface.co/Janslw/LuisitoComunica.Zip",
+  "created_at": "2026-08-22T04:17:22.000Z",
+  "updated_at": "2026-08-22T04:20:18.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132974106,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luisito Comunica API | Voice Cover | ModelsLab",
+      "url": "https://modelslab.com/models/modelslab/luisito-comunica",
+      "snippet": "About Luisito Comunica Luisito Comunica is a voice cloning AI model available on ModelsLab. Access Luisito Comunica through our API with pay-per-use pricing and no minimum commitments."
+    },
+    {
+      "title": "Janslw (Jackson) - Hugging Face",
+      "url": "https://huggingface.co/Janslw",
+      "snippet": "I love AI updated a model about 10 hours ago"
+    },
+    {
+      "title": "Managing Models - Jan",
+      "url": "https://www.jan.ai/docs/desktop/manage-models",
+      "snippet": "Cloud Models Jan supports connecting to various AI cloud providers. Go to Settings > Model Providers, select your provider, and enter your API key. Use GPT-4o, o3, and other OpenAI models. Use Claude models from Anthropic. Use Gemini models from Google."
+    },
+    {
+      "title": "GitHub - zl-research/offline_model: Jan is an open source alternative ...",
+      "url": "https://github.com/zl-research/offline_model",
+      "snippet": "Jan - Local AI Assistant Getting Started - Docs - Changelog - Bug reports - Discord ⚠️ Jan is currently in Development: Expect breaking changes and bugs! Jan is a ChatGPT-alternative that runs 100% offline on your device. Our goal is to make it easy for a layperson to download and run LLMs and use AI with full control and privacy."
+    },
+    {
+      "title": "Free AI Models - GitHub",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

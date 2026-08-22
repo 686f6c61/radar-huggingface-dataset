@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bobtehbuilder/tds-ga8-carbon-1e2c4411c9bc",
+  "slug": "bobtehbuilder-tds-ga8-carbon-1e2c4411c9bc",
+  "author": "bobtehbuilder",
+  "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-1e2c4411c9bc",
+  "created_at": "2026-08-22T03:19:35.000Z",
+  "updated_at": "2026-08-22T03:19:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-6fb0f25c2a7b · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-6fb0f25c2a7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-1ff75e7ca908 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-1ff75e7ca908",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-414018fd4fff · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-414018fd4fff",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-518922ffe0ca · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-518922ffe0ca",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-c8a117a4cf04 · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-c8a117a4cf04",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

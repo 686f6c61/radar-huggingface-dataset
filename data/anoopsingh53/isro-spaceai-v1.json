@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Anoopsingh53/isro-spaceai-v1",
+  "slug": "anoopsingh53-isro-spaceai-v1",
+  "author": "Anoopsingh53",
+  "url": "https://huggingface.co/Anoopsingh53/isro-spaceai-v1",
+  "created_at": "2026-08-22T03:34:45.000Z",
+  "updated_at": "2026-08-22T03:59:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "space",
+    "astrophysics",
+    "cosmology",
+    "astronomy",
+    "isro",
+    "aditya-l1",
+    "chandrayaan",
+    "qlora",
+    "multimodal",
+    "conversational",
+    "en",
+    "dataset:UniverseTBD/arxiv-qa-astro-ph",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693708,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Astrophysics & ISRO Space Domain Evaluation",
+      "dataset": "arXiv Astro-PH & ISRO Mission QA",
+      "metric": "Final Training Loss",
+      "value": 0.617
+    }
+  ],
+  "sources": [
+    {
+      "title": "Anoopsingh53 (ANOOP SINGH) - Hugging Face",
+      "url": "https://huggingface.co/Anoopsingh53",
+      "snippet": "AI & ML interests ... Recent Activity published a model 6 days ago ... updated a model 7 days ago"
+    },
+    {
+      "title": "GitHub - Anoop-singh225/ISRO",
+      "url": "https://github.com/Anoop-singh225/ISRO",
+      "snippet": "Open-source contribution for National Space Day 2026. A multimodal pipeline that fine-tunes a lightweight prediction head on top of the frozen NASA-IBM Prithvi geospatial foundation model to estimate atmospheric and ocean-surface proxy indices from satellite imagery, and sonifies the results into audio plus a spoken report."
+    },
+    {
+      "title": "Anoopsingh53 (ANOOP SINGH) - Hugging Face",
+      "url": "https://huggingface.co/Anoopsingh53/spaces",
+      "snippet": "User profile of ANOOP SINGH on Hugging Face"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

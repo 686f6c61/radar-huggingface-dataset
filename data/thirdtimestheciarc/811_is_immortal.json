@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ThirdTimesTheCiarc/811_is_immortal",
+  "slug": "thirdtimestheciarc-811_is_immortal",
+  "author": "ThirdTimesTheCiarc",
+  "url": "https://huggingface.co/ThirdTimesTheCiarc/811_is_immortal",
+  "created_at": "2026-02-02T22:12:05.000Z",
+  "updated_at": "2026-08-22T06:09:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85513339792,
+  "storage_human": "85.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThirdTimesTheCiarc/811_is_immortal · Hugging Face",
+      "url": "https://huggingface.co/ThirdTimesTheCiarc/811_is_immortal",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ThirdTimesTheCiarc/811_is_immortal at main - Hugging Face",
+      "url": "https://huggingface.co/ThirdTimesTheCiarc/811_is_immortal/tree/main/1830974",
+      "snippet": "ThirdTimesTheCiarc / 811_is_immortal like 2 Not-For-All-Audiences Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ThirdTimesTheCiarc/811_is_immortal at main - Hugging Face",
+      "url": "https://huggingface.co/ThirdTimesTheCiarc/811_is_immortal/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ThirdTimesTheCiarc (Meir Yaffe) - Hugging Face",
+      "url": "https://huggingface.co/ThirdTimesTheCiarc/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 14 hours ago ... updated a model about 14 hours ago"
+    },
+    {
+      "title": "ThirdTimesTheCiarc/build · Hugging Face",
+      "url": "https://huggingface.co/ThirdTimesTheCiarc/build",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

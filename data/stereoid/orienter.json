@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "stereoid/Orienter",
+  "slug": "stereoid-orienter",
+  "author": "stereoid",
+  "url": "https://huggingface.co/stereoid/Orienter",
+  "created_at": "2026-08-22T08:56:36.000Z",
+  "updated_at": "2026-08-22T08:59:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "computer-vision",
+    "object-detection",
+    "multimodal",
+    "extended-reality",
+    "graphical-user-interface",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6018988326,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ODIN | Multi-Model AI Orchestration Engine | SatelliteAI",
+      "url": "https://satelliteai.io/about-odin",
+      "snippet": "The only AI orchestration platform where statistics judge and LLMs testify. ODIN is a multi-model AI orchestration platform that reduces hallucinations by coordinating multiple independent LLMs through adversarial cross-examination and statistical arbitration, producing verified, source-traceable outputs instead of single-model guesses."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "PDF A Sports Analogy for Understanding Different Ways to Use AI",
+      "url": "http://www.jakehofman.com/pdfs/steroids-sneakers-coach.pdf",
+      "snippet": "In our work at Microsoft Research on augmenting human cognition and decision-making with AI, we have come to think about these scenarios as points on a spectrum and have created a sports analogy to help think about it: AI tools can range from steroids, to sneakers, to a coach, each representing a different relationship between human users and ..."
+    },
+    {
+      "title": "Parasite Research Hub",
+      "url": "https://www.parasitestudy.com/posts/fa280-fully-automatic-digital-feces-analyzer-protocol-performance-and-application-in-biomedical-research",
+      "snippet": "The Orienter Model FA280 represents a significant advancement in the diagnosis of intestinal parasitic infections by integrating full-process automation, high-resolution imaging, and artificial intelligence (AI)."
+    }
+  ]
+}

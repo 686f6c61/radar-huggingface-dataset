@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "code-critic-model/Qwen3-4B-DPO-beta0.1-sft0.25-lr1e-6-bs32-ep1",
+  "slug": "code-critic-model-qwen3-4b-dpo-beta0-1-sft0-25-lr1e-6-bs32-ep1",
+  "author": "code-critic-model",
+  "url": "https://huggingface.co/code-critic-model/Qwen3-4B-DPO-beta0.1-sft0.25-lr1e-6-bs32-ep1",
+  "created_at": "2026-08-22T11:03:28.000Z",
+  "updated_at": "2026-08-22T11:05:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "code-critic",
+    "dpo",
+    "process-reward-model",
+    "trl",
+    "conversational",
+    "dataset:code-critic-model/PRM_1541i",
+    "arxiv:2305.18290",
+    "base_model:code-critic-model/qwen3-4b-sft-prm",
+    "base_model:finetune:code-critic-model/qwen3-4b-sft-prm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056411979,
+  "storage_human": "8.1 GB",
+  "base_model": "code-critic-model/qwen3-4b-sft-prm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "code-critic-model (Code Critic Model) - Hugging Face",
+      "url": "https://huggingface.co/code-critic-model",
+      "snippet": "Org profile for Code Critic Model on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Direct Preference Optimization (DPO) | QwenLM/Qwen3-Coder | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3-Coder/5.2-direct-preference-optimization-(dpo)",
+      "snippet": "This document covers the Direct Preference Optimization (DPO) training system for Qwen3-Coder models. DPO is used to align model outputs with human preferences by training the model to increase the likelihood of preferred responses while decreasing the likelihood of rejected responses."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team. - QwenLM/Qwen3-Coder"
+    }
+  ]
+}

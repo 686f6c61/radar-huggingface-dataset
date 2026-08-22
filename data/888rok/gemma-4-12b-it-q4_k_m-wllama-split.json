@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "888rok/gemma-4-12b-it-Q4_K_M-wllama-split",
+  "slug": "888rok-gemma-4-12b-it-q4_k_m-wllama-split",
+  "author": "888rok",
+  "url": "https://huggingface.co/888rok/gemma-4-12b-it-Q4_K_M-wllama-split",
+  "created_at": "2026-08-22T08:22:30.000Z",
+  "updated_at": "2026-08-22T08:35:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "wllama",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7121861856,
+  "storage_human": "7.1 GB",
+  "base_model": "unsloth/gemma-4-12B-it-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "888rok/gemma-4-E2B-it-wllama-split at main - Hugging Face",
+      "url": "https://huggingface.co/888rok/gemma-4-E2B-it-wllama-split/tree/main",
+      "snippet": "Instructions to use 888rok/gemma-4-E2B-it-wllama-split with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use 888rok/gemma-4-E2B-it-wllama-split with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "gemma4:12b-it-q4_K_M - ollama.com",
+      "url": "https://ollama.com/library/gemma4:12b-it-q4_K_M",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size. They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding. vision tools thinking audio cloud e2b e4b 12b 26b 31b CLI cURL Python JavaScript ollama run gemma4:12b-it-q4_K_M"
+    },
+    {
+      "title": "Gemma 4 12B: 256K Context, 8GB GPU Multimodal (2026)",
+      "url": "https://hokai.io/hub/models/gemma-4-12b",
+      "snippet": "Gemma 4 12B is Google&#x27;s June 2026 open-weight model with 256K context, native audio/video input, and Apache 2.0 licensing on just 8GB of VRAM."
+    }
+  ]
+}

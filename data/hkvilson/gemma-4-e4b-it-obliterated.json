@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hkvilson/gemma-4-E4B-it-OBLITERATED",
+  "slug": "hkvilson-gemma-4-e4b-it-obliterated",
+  "author": "hkvilson",
+  "url": "https://huggingface.co/hkvilson/gemma-4-E4B-it-OBLITERATED",
+  "created_at": "2026-08-22T04:56:16.000Z",
+  "updated_at": "2026-08-22T04:56:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "refusal-removal",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156448,
+  "parameters_human": "8.00B",
+  "storage_bytes": 71379846258,
+  "storage_human": "71.4 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OBLITERATUS/gemma-4-E4B-it-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/OBLITERATUS/gemma-4-E4B-it-OBLITERATED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nemesispro/gemma-4-E4B-it-OBLITERATED · Hugging Face",
+      "url": "https://huggingface.co/Nemesispro/gemma-4-E4B-it-OBLITERATED",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 E4b It Obliterated - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/gemma-4-e4b-it-obliterated.html",
+      "snippet": "Download Gemma 4 E4b It Obliterated GGUF model. 2.36 GB, 300,806 downloads, 706 likes."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "francis-villapando/feeana-distilxlmr",
+  "slug": "francis-villapando-feeana-distilxlmr",
+  "author": "francis-villapando",
+  "url": "https://huggingface.co/francis-villapando/feeana-distilxlmr",
+  "created_at": "2026-08-22T03:23:41.000Z",
+  "updated_at": "2026-08-22T03:28:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135158238,
+  "storage_human": "135 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RM-Distiller: Exploiting Generative LLM for Reward Model Distillation",
+      "url": "https://arxiv.org/abs/2601.14032",
+      "snippet": "Reward models (RMs) play a pivotal role in aligning large language models (LLMs) with human preferences. Due to the difficulty of obtaining high-quality human preference annotations, distilling preferences from generative LLMs has emerged as a standard practice. However, existing approaches predominantly treat teacher models as simple binary annotators, failing to fully exploit the rich ..."
+    },
+    {
+      "title": "RM-Distiller: Exploiting Generative LLM for Reward Model Distillation",
+      "url": "https://arxiv.org/pdf/2601.14032v2",
+      "snippet": "Solely optimizing for discriminative signals can lead to re-ward over-optimization, where the model gradually loses its foundational understanding of language, which is essential for generalizability [Yang et al., 2024b]. Therefore, we pro-pose Generative Regularization to preserve the generative knowledge of the backbone model during distillation."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "francis-villapando (Francis B. Villapando) · GitHub",
+      "url": "https://github.com/francis-villapando",
+      "snippet": "AI-Powered Feedback Analyzer for Enhancing Teaching Strategies in Digital Classrooms Python"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rrodriguezjoshua/paper_012477908_prompt_engineering",
+  "slug": "rrodriguezjoshua-paper_012477908_prompt_engineering",
+  "author": "Rrodriguezjoshua",
+  "url": "https://huggingface.co/Rrodriguezjoshua/paper_012477908_prompt_engineering",
+  "created_at": "2026-08-22T06:22:40.000Z",
+  "updated_at": "2026-08-22T06:22:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "enthusiastic",
+    "highlight-bullet",
+    "latex-arxiv",
+    "narrative-progressive",
+    "numeric-nature",
+    "passive",
+    "prompt-engineering",
+    "varied-mixed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv:2402.07927v2 [cs.AI] 16 Mar 2025",
+      "url": "https://arxiv.org/pdf/2402.07927",
+      "snippet": "Abstract Prompt engineering has emerged as an indispens-able technique for extending the capabilities of large language models (LLMs) and vision-language mod-els (VLMs). This approach leverages task-specific instructions, known as prompts, to enhance model efficacy without modifying the core model param-eters. Rather than updating the model parameters, prompts allow seamless integration of pre ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "[2402.07927] A Systematic Survey of Prompt Engineering in Large ...",
+      "url": "https://arxiv.org/abs/2402.07927",
+      "snippet": "Prompt engineering has emerged as an indispensable technique for extending the capabilities of large language models (LLMs) and vision-language models (VLMs). This approach leverages task-specific instructions, known as prompts, to enhance model efficacy without modifying the core model parameters. Rather than updating the model parameters, prompts allow seamless integration of pre-trained ..."
+    },
+    {
+      "title": "Prompting Change: Exploring Prompt Engineering in Large Language Model ...",
+      "url": "https://link.springer.com/article/10.1007/s11528-023-00896-0",
+      "snippet": "This paper explores the transformative potential of Large Language Models Artificial Intelligence (LLM AI) in educational contexts, particularly focusing on the innovative practice of prompt engineering. Prompt engineering, characterized by three essential components of content knowledge, critical thinking, and iterative design, emerges as a key mechanism to access the transformative ..."
+    },
+    {
+      "title": "Prompt Engineering: A Comparative Study of Prompting Techniques in AI ...",
+      "url": "https://ieeexplore.ieee.org/document/11147384",
+      "snippet": "Prompt engineering plays a pivotal role in leveraging the full potential of large language models. This research paper focuses specifically on a comparative analysis of zero-shot and multi-shot prompting techniques, two widely used approaches in prompt engineering. While zero-shot prompting relies solely on task instructions to guide the model&#x27;s output, multi-shot prompting incorporates ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sungjaehongtu/paper_000669229_lightweight_multimodal",
+  "slug": "sungjaehongtu-paper_000669229_lightweight_multimodal",
+  "author": "sungjaehongtu",
+  "url": "https://huggingface.co/sungjaehongtu/paper_000669229_lightweight_multimodal",
+  "created_at": "2026-08-22T05:57:46.000Z",
+  "updated_at": "2026-08-22T05:57:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "bulleted",
+    "cautious",
+    "highlight-bullet",
+    "intro-background-approach-eval-conclusion",
+    "lightweight-multimodal",
+    "markdown",
+    "narrative-progressive",
+    "numeric-nature",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2404.07236] Lightweight Deep Learning for Resource-Constrained ...",
+      "url": "https://arxiv.org/abs/2404.07236",
+      "snippet": "Over the past decade, the dominance of deep learning has prevailed across various domains of artificial intelligence, including natural language processing, computer vision, and biomedical signal processing. While there have been remarkable improvements in model accuracy, deploying these models on lightweight devices, such as mobile phones and microcontrollers, is constrained by limited ..."
+    },
+    {
+      "title": "Lightweight Deep Learning for Resource-Constrained Environments: A Survey",
+      "url": "https://arxiv.org/pdf/2404.07236",
+      "snippet": "This paper aims to describe in a simple but accurate manner how lightweight architectures, com-pression methods, and hardware techniques can be leveraged to implement an accurate model in a resource-constrained device."
+    },
+    {
+      "title": "Lightweight Deep Learning Models for Resource Constrained Devices ...",
+      "url": "https://onlinelibrary.wiley.com/doi/toc/10.1155/8483.si.635175",
+      "snippet": "This Special Issue will provide a platform for researchers to share cutting-edge solutions in the field and to promote research and development activities in light weight deep learning models for multimodal data by publishing high-quality original research and review articles in this rapidly growing interdisciplinary field."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=lightweight-multimodal",
+      "snippet": "9 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: lightweight-multimodal Clear all"
+    },
+    {
+      "title": "Four New ArXiv Papers Advance AI Reasoning, Training Methods, and ...",
+      "url": "https://theaireport.net/news/four-new-arxiv-papers-advance-ai-reasoning-training-methods/",
+      "snippet": "Four new research papers published on arXiv on June 16, 2026, advance different aspects of AI model development and training. According to arxiv.org, researchers introduced Visual-Seeker, a visual-native multimodal deep search agent designed to address factual grounding challenges in multimodal large language models (MLLMs)."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ZiyadSaleh/paper_009391652_neural_architecture_search",
+  "slug": "ziyadsaleh-paper_009391652_neural_architecture_search",
+  "author": "ZiyadSaleh",
+  "url": "https://huggingface.co/ZiyadSaleh/paper_009391652_neural_architecture_search",
+  "created_at": "2026-08-22T08:48:12.000Z",
+  "updated_at": "2026-08-22T08:48:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "enthusiastic",
+    "highlight-bullet",
+    "intro-problem-solution-validation-future",
+    "latex-cvpr",
+    "long-detailed",
+    "narrative-progressive",
+    "neural-architecture-search",
+    "numeric-apa",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://arxiv.org/abs/2301.08727",
+      "snippet": "In the past decade, advances in deep learning have resulted in breakthroughs in a variety of areas, including computer vision, natural language understanding, speech recognition, and reinforcement learning. Specialized, high-performing neural architectures are crucial to the success of deep learning in these areas. Neural architecture search (NAS), the process of automating the design of ..."
+    },
+    {
+      "title": "PDF AI_Papers/2026/NEURAL ARCHITECTURE SEARCH WITH REINFORCEMENT ... - GitHub",
+      "url": "https://github.com/x-jeff/AI_Papers/blob/master/2026/NEURAL%20ARCHITECTURE%20SEARCH%20WITH%20REINFORCEMENT%20LEARNING.pdf",
+      "snippet": "Papers on Artificial Intelligence🎯AI领域经典论文+博客讲解🚀. Contribute to x-jeff/AI_Papers development by creating an account on GitHub."
+    },
+    {
+      "title": "Google Scholar Citations",
+      "url": "https://scholar.google.com/citations",
+      "snippet": "Google Scholar Citations lets you track citations to your publications over time."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2301.08727",
+      "snippet": "Explore cutting-edge research and innovative ideas across various scientific disciplines in this comprehensive e-print archive."
+    },
+    {
+      "title": "ResearchGate | Find and share research",
+      "url": "https://www.researchgate.net/",
+      "snippet": "Access 160+ million publication pages and connect with 25+ million researchers. Join for free and gain visibility by uploading your research."
+    }
+  ]
+}

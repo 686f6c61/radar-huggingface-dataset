@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hodgy/kaitlyn-krea2-turbo-v1",
+  "slug": "hodgy-kaitlyn-krea2-turbo-v1",
+  "author": "hodgy",
+  "url": "https://huggingface.co/hodgy/kaitlyn-krea2-turbo-v1",
+  "created_at": "2026-08-22T03:03:26.000Z",
+  "updated_at": "2026-08-22T03:03:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea-2",
+    "krea-2-turbo",
+    "comfyui",
+    "character",
+    "ai-toolkit",
+    "text-to-image",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229909964,
+  "storage_human": "230 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2 Turbo by Krea — AI Image Generator | Krea",
+      "url": "https://www.krea.ai/models/krea-2-turbo",
+      "snippet": "Fastest medium quality Krea 2 model. The fastest Krea 2 model. Best for quickly iterating on expressive illustrations. Generate with Krea 2 Turbo on Krea, compare quality settings, and ship production-ready images faster."
+    },
+    {
+      "title": "Krea-2-Turbo - Hugging Face",
+      "url": "https://huggingface.co/krea/Krea-2-Turbo",
+      "snippet": "Access Krea 2 Turbo ... Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "Krea 2 Turbo - Krea",
+      "url": "https://www.krea.ai/docs/user-guide/features/krea-2-turbo",
+      "snippet": "Krea 2 Turbo is the fastest Krea 2 model, built for low-cost iteration on expressive illustrations, style-driven concepts, and rapid visual exploration."
+    },
+    {
+      "title": "Krea 2 Turbo Official Comfy-Org Checkpoints (Krea2)",
+      "url": "https://civitai.com/models/2726029/krea-2-turbo-official-comfy-org-checkpoints-krea2",
+      "snippet": "Model Overview Model Name: Krea 2 Version: v1.0 Release Date: June 22, 2026 Model Type: Text-to-image diffusion model Architecture: Diffusion Trans..."
+    },
+    {
+      "title": "vampirehollie-ai/Krea2-Turbo · Hugging Face",
+      "url": "https://huggingface.co/vampirehollie-ai/Krea2-Turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

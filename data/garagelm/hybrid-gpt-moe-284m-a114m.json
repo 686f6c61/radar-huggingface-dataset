@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "id": "garagelm/hybrid-gpt-moe-284m-a114m",
+  "slug": "garagelm-hybrid-gpt-moe-284m-a114m",
+  "author": "garagelm",
+  "url": "https://huggingface.co/garagelm/hybrid-gpt-moe-284m-a114m",
+  "created_at": "2026-08-22T03:04:42.000Z",
+  "updated_at": "2026-08-22T03:05:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moe_gpt",
+    "text-generation",
+    "mixture-of-experts",
+    "moe",
+    "hybrid-attention",
+    "sliding-window",
+    "small-model",
+    "research",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 285236832,
+  "parameters_human": "285.2M",
+  "storage_bytes": 569468904,
+  "storage_human": "569 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Commonsense inference",
+      "dataset": "HellaSwag (0-shot, n=300, local lm-eval)",
+      "metric": null,
+      "value": 34.3
+    },
+    {
+      "task": "Commonsense inference",
+      "dataset": "HellaSwag (0-shot, n=300, local lm-eval)",
+      "metric": null,
+      "value": 33
+    },
+    {
+      "task": "Physical commonsense",
+      "dataset": "PIQA (0-shot, n=300, local lm-eval)",
+      "metric": null,
+      "value": 56.3
+    },
+    {
+      "task": "Physical commonsense",
+      "dataset": "PIQA (0-shot, n=300, local lm-eval)",
+      "metric": null,
+      "value": 52
+    },
+    {
+      "task": "Science QA",
+      "dataset": "ARC-Easy (0-shot, n=300, local lm-eval)",
+      "metric": null,
+      "value": 39.3
+    },
+    {
+      "task": "Science QA",
+      "dataset": "ARC-Easy (0-shot, n=300, local lm-eval)",
+      "metric": null,
+      "value": 34.3
+    },
+    {
+      "task": "Coreference reasoning",
+      "dataset": "WinoGrande (0-shot, n=300, local lm-eval)",
+      "metric": null,
+      "value": 49
+    },
+    {
+      "task": "Multitask knowledge",
+      "dataset": "MMLU (5-shot, 5 questions per subject, local lm-eval)",
+      "metric": null,
+      "value": 26
+    }
+  ],
+  "sources": [
+    {
+      "title": "garagelm.org · the garage intelligence lab",
+      "url": "https://garagelm.org/",
+      "snippet": "$ about garagelm is an independent, open-source artificial intelligence research lab started in 2026, built on the hardware you&#x27;d find in a garage rather than a datacenter. The work is open source first: code, training recipes, write-ups, and weights are published wherever possible, and negative results ship alongside the wins."
+    },
+    {
+      "title": "GarageLM - GitHub",
+      "url": "https://github.com/GarageLM/",
+      "snippet": "GarageLM The most intelligent model trainable on the cheapest hardware. Frontier labs compete at unlimited budget. GarageLM claims the opposite axis: maximum measured capability from one consumer machine — every run trained, evaluated, and served on a single Apple M4 Pro laptop chip."
+    },
+    {
+      "title": "garagelm/hybrid-gpt-232m · Hugging Face",
+      "url": "https://huggingface.co/garagelm/hybrid-gpt-232m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "garagelm/hybrid-gpt-232m-mlx · Hugging Face",
+      "url": "https://huggingface.co/garagelm/hybrid-gpt-232m-mlx",
+      "snippet": "hybrid-gpt-232m-mlx float16 MLX conversion of garagelm/hybrid-gpt-232m for Apple Silicon. A 232M-parameter research model with hybrid local+global attention (sliding window w=64 on 12 of 16 layers, full causal attention on layers 3/7/11/15), pretrained on 1.0B tokens entirely on one Apple M4 Pro."
+    },
+    {
+      "title": "GitHub - GarageLM/garagelm: optimize frontier training and inference ...",
+      "url": "https://github.com/GarageLM/garagelm",
+      "snippet": "Best case, work done at the floor pushes the frontier itself. Released weights: garagelm/hybrid-gpt-232m (base, 1B tokens) and garagelm/hybrid-gpt-232m-chat (SmolTalk SFT) — both load via transformers with trust_remote_code=True."
+    }
+  ]
+}

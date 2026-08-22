@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kerasformers/mobilenetv4_hybrid_medium_e500_r224_in1k",
+  "slug": "kerasformers-mobilenetv4_hybrid_medium_e500_r224_in1k",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/mobilenetv4_hybrid_medium_e500_r224_in1k",
+  "created_at": "2026-08-22T07:18:06.000Z",
+  "updated_at": "2026-08-22T07:18:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "image-classification",
+    "mobilenetv4",
+    "backbone",
+    "arxiv:2404.10518",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:timm/mobilenetv4_hybrid_medium.e500_r224_in1k",
+    "base_model:finetune:timm/mobilenetv4_hybrid_medium.e500_r224_in1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45497816,
+  "storage_human": "45 MB",
+  "base_model": "timm/mobilenetv4_hybrid_medium.e500_r224_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mobilenetv4_hybrid_medium.e500_r224_in1k - Hugging Face",
+      "url": "https://huggingface.co/timm/mobilenetv4_hybrid_medium.e500_r224_in1k",
+      "snippet": "Model card for mobilenetv4_hybrid_medium.e500_r224_in1k A MobileNet-V4 image classification model. Trained on ImageNet-1k by Ross Wightman. Trained with timm scripts using hyper-parameters inspired by the MobileNet-V4 paper with timm enhancements. NOTE: So far, these are the only known MNV4 weights. Official weights for Tensorflow models are ..."
+    },
+    {
+      "title": "Model card for mobilenetv4_hybrid_medium.e500_r224_in1k - GitHub",
+      "url": "https://github.com/jodypangaribuan/mobilenetv4_hybrid_medium.e500_r224_in1k",
+      "snippet": "Model card for mobilenetv4_hybrid_medium.e500_r224_in1k A MobileNet-V4 image classification model. Trained on ImageNet-1k by Ross Wightman. Trained with timm scripts using hyper-parameters inspired by the MobileNet-V4 paper with timm enhancements. NOTE: So far, these are the only known MNV4 weights. Official weights for Tensorflow models are ..."
+    },
+    {
+      "title": "mobilenetv4_hybrid_medium.e500_r224_in1k · Models",
+      "url": "https://www.modelscope.cn/models/timm/mobilenetv4_hybrid_medium.e500_r224_in1k",
+      "snippet": "Model card for mobilenetv4_hybrid_medium.e500_r224_in1k A MobileNet-V4 image classification model. Trained on ImageNet-1k by Ross Wightman. Trained with timm scripts using hyper-parameters inspired by the MobileNet-V4 paper with timm enhancements. NOTE: So far, these are the only known MNV4 weights. Official weights for Tensorflow models are ..."
+    },
+    {
+      "title": "mobilenetv4_hybrid_medium.ix_e550_r256_in1k - Hugging Face",
+      "url": "https://huggingface.co/timm/mobilenetv4_hybrid_medium.ix_e550_r256_in1k",
+      "snippet": "Edit model card Model card for mobilenetv4_hybrid_medium.ix_e550_r256_in1k A MobileNet-V4 image classification model. Trained on ImageNet-1k by Ross Wightman. Trained with timm scripts using hyper-parameters inspired by the MobileNet-V4 paper with timm enhancements. NOTE: So far, these are the only known MNV4 weights."
+    },
+    {
+      "title": "mobilenetv4_hybrid_medium.e500_r224_in1k - AI Model by timm ...",
+      "url": "https://alphaneural.io/assets/timm/mobilenetv4_hybrid_medium.e500_r224_in1k",
+      "snippet": "Explore mobilenetv4_hybrid_medium.e500_r224_in1k, a ai model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    }
+  ]
+}

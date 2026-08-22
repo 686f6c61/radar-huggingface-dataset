@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jackhappy02/GluVasc_Agent",
+  "slug": "jackhappy02-gluvasc_agent",
+  "author": "jackhappy02",
+  "url": "https://huggingface.co/jackhappy02/GluVasc_Agent",
+  "created_at": "2026-08-22T05:27:39.000Z",
+  "updated_at": "2026-08-22T05:27:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 86142815556,
+  "storage_human": "86.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jackhappy02/GluVasc_Agent · Hugging Face",
+      "url": "https://huggingface.co/jackhappy02/GluVasc_Agent",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jackhappy02/GluVasc_Agent at main - Hugging Face",
+      "url": "https://huggingface.co/jackhappy02/GluVasc_Agent/tree/main/GluVasc_AI_14B_ENGLISH_THINK",
+      "snippet": "jackhappy02 / GluVasc_Agent like 0 GGUF conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Entity | KnowYourModel",
+      "url": "https://www.knowyourmodel.ai/models/huggingface%3Ajackhappy02%2FGluVasc_Agent",
+      "snippet": "View entity details and skills Home Models Huggingface%3Ajackhappy02%2FGluVasc_Agent Entities huggingface/huggingface:jackhappy02/GluVasc_Agent"
+    },
+    {
+      "title": "GluVasc Agent Physician Assistant",
+      "url": "http://gluvasc-agent.top/",
+      "snippet": "GluVasc Agent is a chronic disease emotional support agent built on open-source large language models. It integrates chronic disease management knowledge, real clinical communication scenarios, and multi-model distilled data, and is optimized for emotional support, clinician-patient communication, and health education in diabetes ..."
+    },
+    {
+      "title": "jackhappy02 (jack) - Hugging Face",
+      "url": "https://huggingface.co/jackhappy02",
+      "snippet": "Recent Activity updated a modelabout 5 hours ago jackhappy02/GluVasc_Agent published a modelabout 5 hours ago jackhappy02/GluVasc_Agent View all activity"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sartajbhuvaji/GLM-4.6-Flash-text-GGUF",
+  "slug": "sartajbhuvaji-glm-4-6-flash-text-gguf",
+  "author": "sartajbhuvaji",
+  "url": "https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text-GGUF",
+  "created_at": "2026-08-22T03:23:21.000Z",
+  "updated_at": "2026-08-22T03:23:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "glm",
+    "glm4",
+    "llama.cpp",
+    "quantized",
+    "vision-removed",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:sartajbhuvaji/GLM-4.6-Flash-text",
+    "base_model:quantized:sartajbhuvaji/GLM-4.6-Flash-text",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9400279040,
+  "parameters_human": "9.40B",
+  "storage_bytes": 50295344256,
+  "storage_human": "50.3 GB",
+  "base_model": "sartajbhuvaji/GLM-4.6-Flash-text",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-4.6V-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.6V-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zai-org/GLM-4.6V · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4.6V",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-4.6V - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-4.6v",
+      "snippet": "GLM-4.6V can accept multimodal inputs—mixed text/image papers, reports, or slides—and automatically generate high-quality, structured image-text interleaved content. Complex Document Understanding: Accurately understands structured information from documents containing text, charts, figures, and formulas. Visual Tool Retrieval: During generation, the model can autonomously call search ..."
+    },
+    {
+      "title": "GitHub - zai-org/GLM-V: GLM-4.6V/4.5V/4.1V-Thinking: Towards Versatile ...",
+      "url": "https://github.com/zai-org/GLM-V",
+      "snippet": "The model is trained based on GLM-4.1V-Base. Check it out here. News: 2025/10/27: We&#x27;ve released Glyph, a framework for scaling the context length through visual-text compression, the glyph model trained based on GLM-4.1V-Base. Check it out here. News: 2025/08/11: We released GLM-4.5V with significant improvements across multiple benchmarks."
+    },
+    {
+      "title": "GLM-4.6V-Flash: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/glm-4.6v-flash-zai-org",
+      "snippet": "Overview GLM-4.6V-Flash is a 9-billion-parameter multimodal vision-language model designed for local deployment and low-latency inference, developed by zai-org. Part of the GLM-V family introduced in the paper on scalable reinforcement learning for multimodal reasoning, this model processes interleaved image-text inputs and generates text outputs with native function calling capabilities. The ..."
+    }
+  ]
+}

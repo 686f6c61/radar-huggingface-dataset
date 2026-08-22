@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "justinchuby/onnx-genai-example-gemma4-e2b-speculative",
+  "slug": "justinchuby-onnx-genai-example-gemma4-e2b-speculative",
+  "author": "justinchuby",
+  "url": "https://huggingface.co/justinchuby/onnx-genai-example-gemma4-e2b-speculative",
+  "created_at": "2026-08-22T10:03:08.000Z",
+  "updated_at": "2026-08-22T10:13:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "gemma4",
+    "speculative-decoding",
+    "inference-metadata",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10655748530,
+  "storage_human": "10.7 GB",
+  "base_model": "google/gemma-4-E2B-it, google/gemma-4-E2B-it-assistant",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "justinchuby/onnx-genai-example-gemma4-e2b · Hugging Face",
+      "url": "https://huggingface.co/justinchuby/onnx-genai-example-gemma4-e2b",
+      "snippet": "ONNX onnxruntime gemma4 inference-metadata conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Gemma-4 E2B-it — ONNX text decoder (fp16, CUDA) with canonical inference metadata Truthful graph contracts Parity evidence (real weights, ONNX fp16 CUDA vs HF) Usage (direct ONNX Runtime CUDA ..."
+    },
+    {
+      "title": "justinchuby/onnx-genai-example-gemma4-e2b-assistant · Hugging Face",
+      "url": "https://huggingface.co/justinchuby/onnx-genai-example-gemma4-e2b-assistant",
+      "snippet": "ONNX onnxruntime gemma4 speculative-decoding draft-model inference-metadata License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Gemma-4 E2B-it assistant — ONNX speculative-decoding drafter (fp16, CUDA) Truthful graph contracts Metadata — canonical v1 speculative workflow SHIPPED (Rust-validated vs onnx ..."
+    },
+    {
+      "title": "GitHub - justinchuby/onnx-genai: A prototype of a GenAI runtime for ONNX",
+      "url": "https://github.com/justinchuby/onnx-genai",
+      "snippet": "A prototype of a GenAI runtime for ONNX. Contribute to justinchuby/onnx-genai development by creating an account on GitHub."
+    },
+    {
+      "title": "onnx-genai/examples at main · justinchuby/onnx-genai · GitHub",
+      "url": "https://github.com/justinchuby/onnx-genai/tree/main/examples",
+      "snippet": "ONNX_GENAI_TRACE=<path> turns on timeline capture in the profiler; it is zero-cost when the variable is unset. ONNX_GENAI_PROFILE=1 additionally prints the aggregate per-stage table."
+    },
+    {
+      "title": "Gemma 4 available on Google Cloud | Google Cloud Blog",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemma-4-available-on-google-cloud",
+      "snippet": "Here&#x27;s an end to end guide for efficient fine-tuning and serving of the Gemma 4 31B model on Vertex AI. Additionally, we&#x27;re committed to empowering customer choice and innovation through our curated collection of first-party, open, and third-party models available on Vertex AI."
+    }
+  ]
+}

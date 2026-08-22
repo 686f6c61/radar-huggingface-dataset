@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "PoojaCpc/model_033114196_vit_giant",
+  "slug": "poojacpc-model_033114196_vit_giant",
+  "author": "PoojaCpc",
+  "url": "https://huggingface.co/PoojaCpc/model_033114196_vit_giant",
+  "created_at": "2026-08-22T03:10:20.000Z",
+  "updated_at": "2026-08-22T03:10:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cross-attention",
+    "exponential",
+    "giant",
+    "layernorm",
+    "linear",
+    "matching",
+    "mish",
+    "rmsprop",
+    "vit",
+    "xavier-uniform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenGVLab/VideoMAEv2-giant · Hugging Face",
+      "url": "https://huggingface.co/OpenGVLab/VideoMAEv2-giant",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ViT Variants | OpenGVLab/VideoMAEv2 | DeepWiki",
+      "url": "https://deepwiki.com/OpenGVLab/VideoMAEv2/5.1-vit-variants",
+      "snippet": "The ViT variants in VideoMAEv2 provide a spectrum of options to balance performance requirements and computational resources. The ViT-giant model achieves state-of-the-art performance across multiple video understanding benchmarks, while the distilled ViT-small and ViT-base models offer more efficient alternatives with strong performance."
+    },
+    {
+      "title": "google/vit-huge-patch14-224-in21k · Hugging Face",
+      "url": "https://huggingface.co/google/vit-huge-patch14-224-in21k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenGVLab/VideoMAEv2: [CVPR 2023] VideoMAE V2: Scaling Video ...",
+      "url": "https://github.com/OpenGVLab/VideoMAEv2",
+      "snippet": "[CVPR 2023] VideoMAE V2: Scaling Video Masked Autoencoders with Dual Masking - OpenGVLab/VideoMAEv2"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

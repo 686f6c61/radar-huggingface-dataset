@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "blueprint-ai/NanoTitan-NLI",
+  "slug": "blueprint-ai-nanotitan-nli",
+  "author": "blueprint-ai",
+  "url": "https://huggingface.co/blueprint-ai/NanoTitan-NLI",
+  "created_at": "2026-08-22T07:24:52.000Z",
+  "updated_at": "2026-08-22T07:36:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "nli",
+    "natural-language-inference",
+    "zero-shot-classification",
+    "feature-extraction",
+    "pytorch",
+    "en",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:fancyzhx/ag_news",
+    "dataset:SetFit/sst2",
+    "dataset:cardiffnlp/tweet_eval",
+    "dataset:SetFit/subj",
+    "dataset:cornell-movie-review-data/rotten_tomatoes",
+    "base_model:microsoft/MiniLM-L12-H384-uncased",
+    "base_model:finetune:microsoft/MiniLM-L12-H384-uncased",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33361155,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133467916,
+  "storage_human": "133 MB",
+  "base_model": "microsoft/MiniLM-L12-H384-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Natural Language Inference",
+      "dataset": "MultiNLI Matched",
+      "metric": null,
+      "value": 85.35
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "MultiNLI Mismatched",
+      "metric": null,
+      "value": 84.91
+    }
+  ],
+  "sources": [
+    {
+      "title": "Blueprint: The AI Assistant for Therapists",
+      "url": "https://www.blueprint.ai/",
+      "snippet": "Blueprint gives therapists AI support for documentation, admin, and clinical care — whether alongside their current EHR or within Blueprint&#x27;s all-in-one EHR."
+    },
+    {
+      "title": "Blueprint - AI Hardware Design Tool",
+      "url": "https://www.blueprint.io/",
+      "snippet": "Blueprint — design hardware projects with AI. Generate wiring diagrams, bills of materials, and step-by-step assembly guides from a single prompt."
+    },
+    {
+      "title": "Blueprint AI",
+      "url": "https://blueprint-ai.tech/",
+      "snippet": "Blueprint AI is a revolutionary companion tool designed for instant reviews of architectural and construction drawings. Developed by professionals from the architecture, engineering, construction, and AI industries, Blueprint AI is here to transform the way you work."
+    },
+    {
+      "title": "AI support for - Blueprint",
+      "url": "https://www.blueprint.ai/blueprint",
+      "snippet": "A best-in-class AI notetaker built specifically for therapists Blueprint captures sessions and drafts high-quality notes, treatment plans, and summaries in seconds. Trusted by 70,000+ therapists and used to generate over 10 million notes, it&#x27;s built for real clinical documentation — not generic transcription."
+    },
+    {
+      "title": "Blueprint",
+      "url": "https://clinician.blueprint.ai/",
+      "snippet": "Blueprint is the AI Assistant for Therapists — automate progress notes, draft smart treatments plans, and surface actionable insights before, during and after every session."
+    }
+  ]
+}

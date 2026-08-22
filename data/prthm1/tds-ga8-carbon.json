@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "prthm1/tds-ga8-carbon",
+  "slug": "prthm1-tds-ga8-carbon",
+  "author": "prthm1",
+  "url": "https://huggingface.co/prthm1/tds-ga8-carbon",
+  "created_at": "2026-08-22T07:26:00.000Z",
+  "updated_at": "2026-08-22T07:27:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bobtehbuilder/tds-ga8-carbon-414018fd4fff · Hugging Face",
+      "url": "https://huggingface.co/bobtehbuilder/tds-ga8-carbon-414018fd4fff",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pranhai/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/pranhai/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "uditaab (Udita Bagchi) / Repositories · GitHub",
+      "url": "https://github.com/uditaab?tab=repositories",
+      "snippet": "TDS_P1-LLM_Code_Deployment Public A fully automated system that receives app-generation requests, uses an AI pipeline to build and update web applications, deploys them to GitHub Pages, and reports evaluation data back to an API."
+    },
+    {
+      "title": "GitHub - huggingface/carbon: The home of Carbon Genomic Foundation Model",
+      "url": "https://github.com/huggingface/carbon",
+      "snippet": "The home of Carbon Genomic Foundation Model 🧬. Contribute to huggingface/carbon development by creating an account on GitHub."
+    },
+    {
+      "title": "Sustainable AI: Measuring and Reducing Carbon Footprint in Model ...",
+      "url": "https://www.researchgate.net/publication/392727729_Sustainable_AI_Measuring_and_Reducing_Carbon_Footprint_in_Model_Training_and_Deployment",
+      "snippet": "A thorough examination of the relationship between sustainable materials, AI technology adoption, and patient-centered healthcare sustainable materials is crucial for reducing the carbon footprint ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JamesTrfn/paper_022630687_video_understanding",
+  "slug": "jamestrfn-paper_022630687_video_understanding",
+  "author": "JamesTrfn",
+  "url": "https://huggingface.co/JamesTrfn/paper_022630687_video_understanding",
+  "created_at": "2026-08-22T06:15:52.000Z",
+  "updated_at": "2026-08-22T06:15:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "critical",
+    "intro-problem-solution-validation-future",
+    "latex-neurips",
+    "long-detailed",
+    "mixed-active-passive",
+    "numeric-bibtex",
+    "structured-imrad",
+    "theoretical-rigorous",
+    "video-understanding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome-LLMs-for-Video-Understanding - GitHub",
+      "url": "https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding",
+      "snippet": "📢 We&#x27;ve recently updated our survey: \"Video Understanding with Large Language Models: A Survey\"! This comprehensive survey covers video understanding techniques powered by large language models (Vid-LLMs), training strategies, relevant tasks, datasets, benchmarks, and evaluation methods ..."
+    },
+    {
+      "title": "Video Understanding: From Geometry and Semantics to Unified Models",
+      "url": "https://arxiv.org/abs/2603.17840",
+      "snippet": "Video understanding aims to enable models to perceive, reason about, and interact with the dynamic visual world. In contrast to image understanding, video understanding inherently requires modeling temporal dynamics and evolving visual context, placing stronger demands on spatiotemporal reasoning and making it a foundational problem in computer vision. In this survey, we present a structured ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Foundation Models for Video Understanding: A Survey",
+      "url": "https://arxiv.org/abs/2405.03770",
+      "snippet": "Video Foundation Models (ViFMs) aim to learn a general-purpose representation for various video understanding tasks. Leveraging large-scale datasets and powerful models, ViFMs achieve this by capturing robust and generic features from video data. This survey analyzes over 200 video foundational models, offering a comprehensive overview of benchmarks and evaluation metrics across 14 distinct ..."
+    },
+    {
+      "title": "Video Understanding With Large Language Models: A Survey",
+      "url": "https://ieeexplore.ieee.org/document/10982110",
+      "snippet": "With the rapid growth of online video platforms and the escalating volume of video content, the need for proficient video understanding tools has increased significantly. Given the remarkable capabilities of large language models (LLMs) in language and multimodal tasks, this survey provides a detailed overview of recent advances in video understanding that harness the power of LLMs (Vid-LLMs ..."
+    }
+  ]
+}

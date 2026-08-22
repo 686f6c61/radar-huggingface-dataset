@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nifelix/whisper-kinyarwanda-v3",
+  "slug": "nifelix-whisper-kinyarwanda-v3",
+  "author": "nifelix",
+  "url": "https://huggingface.co/nifelix/whisper-kinyarwanda-v3",
+  "created_at": "2026-08-22T06:14:31.000Z",
+  "updated_at": "2026-08-22T09:29:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 9669956193,
+  "storage_human": "9.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "benax-rw/KinyaWhisper · Hugging Face",
+      "url": "https://huggingface.co/benax-rw/KinyaWhisper",
+      "snippet": "🗣️ KinyaWhisper KinyaWhisper is a fine-tuned version of OpenAI&#x27;s Whisper model for automatic speech recognition (ASR) in Kinyarwanda. It was trained on 102 manually labeled .wav files and serves as a reproducible baseline for speech recognition in low-resource, indigenous languages. 🔧 Usage To run inference on your own audio files using the fine-tuned KinyaWhisper model: from ..."
+    },
+    {
+      "title": "GitHub - benax-rw/KinyaWhisper: Fine-tuned OpenAI&#x27;s Whisper model for ...",
+      "url": "https://github.com/benax-rw/KinyaWhisper",
+      "snippet": "KinyaWhisper is a fine-tuned version of OpenAI&#x27;s Whisper model for automatic speech recognition (ASR) in Kinyarwanda. It was trained on 102 manually labeled .wav files and serves as a reproducible baseline for speech recognition in low-resource, indigenous languages."
+    },
+    {
+      "title": "GitHub - Kinyarwanda-speech-to-text-ASR/Kinyarwanda-speech-to-text-ASR ...",
+      "url": "https://github.com/Kinyarwanda-speech-to-text-ASR/Kinyarwanda-speech-to-text-ASR",
+      "snippet": "KinyaWhisper is an automatic speech recognition (ASR) model specifically optimized for Kinyarwanda, fine-tuned based on OpenAI&#x27;s Whisper architecture. This project is dedicated to providing high-quality speech recognition solutions for low-resource languages, particularly offering advanced AI speech technology support for the Kinyarwanda-speaking community."
+    },
+    {
+      "title": "benax-rw/KinyaWhisper at main - Hugging Face",
+      "url": "https://huggingface.co/benax-rw/KinyaWhisper/tree/main",
+      "snippet": "benax-rw / KinyaWhisper like 2 Automatic Speech Recognition Transformers Safetensors benax-rw/my_kinyarwanda_dataset Kinyarwanda doi:10.57967/hf/5185 whisper kinyarwanda asr low-resource fine-tuning benax-technologies torchaudio speech-recognition Eval Results License:mit Model card FilesFiles and versions Community Train Deploy Use this model"
+    },
+    {
+      "title": "How to Use KinyaWhisper: Kinyarwanda Speech Recognition with ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=TsJ0I-8NSCA",
+      "snippet": "In this short tutorial, I demonstrate how to use KinyaWhisper, a custom AI model I built to extend OpenAI&#x27;s Whisper for Kinyarwanda Automatic Speech Recognition (ASR)."
+    }
+  ]
+}

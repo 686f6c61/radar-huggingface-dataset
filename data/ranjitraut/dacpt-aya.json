@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ranjitraut/dacpt-aya",
+  "slug": "ranjitraut-dacpt-aya",
+  "author": "ranjitraut",
+  "url": "https://huggingface.co/ranjitraut/dacpt-aya",
+  "created_at": "2026-08-22T03:25:46.000Z",
+  "updated_at": "2026-08-22T03:26:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:CohereLabs/tiny-aya-base",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:CohereLabs/tiny-aya-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142361699,
+  "storage_human": "142 MB",
+  "base_model": "CohereLabs/tiny-aya-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CohereLabs/aya-101 · Hugging Face",
+      "url": "https://huggingface.co/CohereLabs/aya-101",
+      "snippet": "Model Details Finetuning Architecture: Same as mt5-xxl Number of Samples seen during Finetuning: 25M Batch size: 256 Hardware: TPUv4-128 Software: T5X, Jax Data Sources The Aya model is trained on the following datasets: xP3x Aya Dataset Aya Collection DataProvenance collection ShareGPT-Command All datasets are subset to the 101 languages supported by mT5. See the paper for details about ..."
+    },
+    {
+      "title": "[2402.07827] Aya Model: An Instruction Finetuned Open-Access ...",
+      "url": "https://arxiv.org/abs/2402.07827",
+      "snippet": "Recent breakthroughs in large language models (LLMs) have centered around a handful of data-rich languages. What does it take to broaden access to breakthroughs beyond first-class citizen languages? Our work introduces Aya, a massively multilingual generative language model that follows instructions in 101 languages of which over 50% are considered as lower-resourced. Aya outperforms mT0 and ..."
+    },
+    {
+      "title": "‪Ranjit Raut‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=Kok0OGgAAAAJ&hl=en",
+      "snippet": "Ranjit Raut Scholar & Practitioner Verified email at ranjitraut.com.np Artificial Intelligence ... Articles 1-20 Show more"
+    },
+    {
+      "title": "ranjitraut (Ranjit Raut) - Hugging Face",
+      "url": "https://huggingface.co/ranjitraut",
+      "snippet": "Ranjit Raut ranjitraut Follow https://ranjitraut.com.np theranjitraut theranjitraut theranjitraut ranjitraut.bsky.social"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    }
+  ]
+}

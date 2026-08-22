@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cjfrown/unit4-deep-rl-copter",
+  "slug": "cjfrown-unit4-deep-rl-copter",
+  "author": "cjfrown",
+  "url": "https://huggingface.co/cjfrown/unit4-deep-rl-copter",
+  "created_at": "2026-08-22T08:30:52.000Z",
+  "updated_at": "2026-08-22T08:31:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39732,
+  "storage_human": "39732 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deep-rl-class/notebooks/unit4/unit4.ipynb at main - GitHub",
+      "url": "https://github.com/huggingface/deep-rl-class/blob/main/notebooks/unit4/unit4.ipynb",
+      "snippet": "To find your result, go to the leaderboard and find your model, the result = mean_reward - std of reward. If you don&#x27;t see your model on the leaderboard, go at the bottom of the leaderboard page and click on the refresh button."
+    },
+    {
+      "title": "pankajr141/huggingface_deeprl_unit4_Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/pankajr141/huggingface_deeprl_unit4_Pixelcopter-PLE-v0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deep-Reinforcement-Learning_Unit4_Pixelcopter-PLE-v0",
+      "url": "https://huggingface.co/dogpizza/Deep-Reinforcement-Learning_Unit4_Pixelcopter-PLE-v0",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "unit4.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit4/unit4.ipynb",
+      "snippet": "Push your new trained model on the Hub 🔥 Improving the implementation for more complex environments (for instance, what about changing the network to a Convolutional Neural Network to handle frames as observation)?"
+    },
+    {
+      "title": "stalaei/DeepRL-Reinforce-PixelCopter · Hugging Face",
+      "url": "https://huggingface.co/stalaei/DeepRL-Reinforce-PixelCopter",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    }
+  ]
+}

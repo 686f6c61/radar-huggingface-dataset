@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Papatpong/Walker",
+  "slug": "papatpong-walker",
+  "author": "Papatpong",
+  "url": "https://huggingface.co/Papatpong/Walker",
+  "created_at": "2026-08-20T16:32:46.000Z",
+  "updated_at": "2026-08-22T09:37:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51796160818,
+  "storage_human": "51.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF A Data-driven Recommendation Framework for Optimal Walker Designs",
+      "url": "https://arxiv.org/pdf/2310.18772.pdf",
+      "snippet": "However, training a predictive model requires vast amounts of data for accuracy. Due to limited publicly available walker designs, this paper presents a dataset of more than 5,000 parametric walker designs with performance values to assess mass, structural integrity, and stability."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "GitHub - massimobottelli/pong-AI: Train a machine learning model to ...",
+      "url": "https://github.com/massimobottelli/pong-AI",
+      "snippet": "Run train.py to start training the model. The script will automatically play Pong and record the necessary data to create the dataset. Once the dataset big enough (minimum 500 records recommended), run learn.py to train the machine learning model. After the AI training, run play.py to play Pong against AI."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "qtum/Qwen3-Coder-Next-GPTQ",
+  "slug": "qtum-qwen3-coder-next-gptq",
+  "author": "qtum",
+  "url": "https://huggingface.co/qtum/Qwen3-Coder-Next-GPTQ",
+  "created_at": "2026-08-22T08:15:13.000Z",
+  "updated_at": "2026-08-22T08:17:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_next",
+    "compressed-tensors",
+    "gptq",
+    "w4a16",
+    "vllm",
+    "qwen3-next",
+    "moe",
+    "code",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-Coder-Next",
+    "base_model:quantized:Qwen/Qwen3-Coder-Next",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42130374541,
+  "storage_human": "42.1 GB",
+  "base_model": "Qwen/Qwen3-Coder-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Coder-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "You can write several lines of code with transformers to chat with Qwen3-Coder-Next. Essentially, we build the tokenizer and the model with the from_pretrained method, and we use the generate method to perform chatting with the help of the chat template provided by the tokenizer. Below is an example of how to chat with Qwen3-Coder-Next:"
+    },
+    {
+      "title": "Qwen3 Coder Next model - NanoGPT",
+      "url": "https://nano-gpt.com/models/text/qwen/qwen3-coder-next",
+      "snippet": "Qwen3 Coder Next is an open-weight coding model built on Qwen3-Next-80B-A3B-Base (hybrid attention + MoE). It is agentically trained at scale on executable tasks and environment interaction, delivering strong coding and tool-use performance at lower inference cost. Native 256K context."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "README.md · btbtyler09/Qwen3-Coder-Next-GPTQ-4bit at main",
+      "url": "https://huggingface.co/btbtyler09/Qwen3-Coder-Next-GPTQ-4bit/blob/main/README.md",
+      "snippet": "Qwen3-Coder-Next GPTQ 4-bit GPTQ 4-bit quantization of Qwen/Qwen3-Coder-Next, an 80B-parameter Mixture-of-Experts (MoE) coding model with 3B activated parameters per token."
+    }
+  ]
+}

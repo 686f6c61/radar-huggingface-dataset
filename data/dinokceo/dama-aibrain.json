@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dinokceo/dama-aibrain",
+  "slug": "dinokceo-dama-aibrain",
+  "author": "dinokceo",
+  "url": "https://huggingface.co/dinokceo/dama-aibrain",
+  "created_at": "2026-08-22T10:08:11.000Z",
+  "updated_at": "2026-08-22T10:21:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WonseokJayJung/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/WonseokJayJung/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dinokceo · GitHub",
+      "url": "https://github.com/dinokceo",
+      "snippet": "Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "WonseokJayJung (Wonseok JUng) - Hugging Face",
+      "url": "https://huggingface.co/WonseokJayJung",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "aibrain · PyPI",
+      "url": "https://pypi.org/project/aibrain/",
+      "snippet": "Why AIBrain? Most AI memory systems are toys. They store everything, retrieve nothing useful, and require expensive GPUs to run. AIBrain is different: Verified retrieval performance. On LongMemEval M (500 instances, the standard benchmark for long-term conversational memory), AIBrain&#x27;s SelRoute system achieves Ra@5 = 0.79 with a 109M bge-base model (0.7915 exact, honest round) — beating the ..."
+    }
+  ]
+}

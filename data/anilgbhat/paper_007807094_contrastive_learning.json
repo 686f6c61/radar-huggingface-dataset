@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "anilgbhat/paper_007807094_contrastive_learning",
+  "slug": "anilgbhat-paper_007807094_contrastive_learning",
+  "author": "anilgbhat",
+  "url": "https://huggingface.co/anilgbhat/paper_007807094_contrastive_learning",
+  "created_at": "2026-08-22T08:08:48.000Z",
+  "updated_at": "2026-08-22T08:08:55.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "contrastive-learning",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "measured",
+    "numeric-apa",
+    "plain-text",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks. In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application ..."
+    },
+    {
+      "title": "Learning from History: Task-agnostic Model Contrastive Learning for ...",
+      "url": "https://arxiv.org/abs/2309.06023",
+      "snippet": "Contrastive learning has emerged as a prevailing paradigm for high-level vision tasks, which, by introducing properly negative samples, has also been exploited for low-level vision tasks to achieve a compact optimization space to account for their ill-posed nature. However, existing methods rely on manually predefined and task-oriented negatives, which often exhibit pronounced task-specific ..."
+    },
+    {
+      "title": "An Augmentation Overlap Theory of Contrastive Learning",
+      "url": "https://arxiv.org/abs/2511.03114",
+      "snippet": "Recently, self-supervised contrastive learning has achieved great success on various tasks. However, its underlying working mechanism is yet unclear. In this paper, we first provide the tightest bounds based on the widely adopted assumption of conditional independence. Further, we relax the conditional independence assumption to a more practical assumption of augmentation overlap and derive ..."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning",
+      "url": "https://dl.acm.org/doi/10.1016/j.neucom.2024.128645",
+      "snippet": "In this paper, we comprehensively and systematically sort out the main ideas, recent developments and application areas of contrastive learning. Specifically, we firstly provide an overview of the research activity of contrastive learning in recent years."
+    },
+    {
+      "title": "Contrastive Learning Models for Sentence Representations",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3593590",
+      "snippet": "A contrastive framework for learning sentence representations from pairwise and triple-wise perspective in angular space. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 4892-4903."
+    }
+  ]
+}

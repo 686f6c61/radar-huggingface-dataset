@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kelsbeans/qwen3-1.7b-digestive-coach-n275",
+  "slug": "kelsbeans-qwen3-1-7b-digestive-coach-n275",
+  "author": "kelsbeans",
+  "url": "https://huggingface.co/kelsbeans/qwen3-1.7b-digestive-coach-n275",
+  "created_at": "2026-08-22T03:22:06.000Z",
+  "updated_at": "2026-08-22T03:24:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608532,
+  "storage_human": "3.5 GB",
+  "base_model": "unsloth/qwen3-1.7b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kelsbeans/qwen3-1.7b-digestive-coach-n97 at main - Hugging Face",
+      "url": "https://huggingface.co/kelsbeans/qwen3-1.7b-digestive-coach-n97/tree/main",
+      "snippet": "Instructions to use kelsbeans/qwen3-1.7b-digestive-coach-n97 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Local Apps Unsloth Studio How to use kelsbeans/qwen3-1.7b-digestive-coach-n97 with Unsloth Studio:"
+    },
+    {
+      "title": "kelsbeans/qwen3-1.7b-digestive-coach-n957-adapter · Hugging Face",
+      "url": "https://huggingface.co/kelsbeans/qwen3-1.7b-digestive-coach-n957-adapter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3-1.7b-digestive-coach-n195 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/kelsbeans/qwen3-1.7b-digestive-coach-n195",
+      "snippet": "Run qwen3-1.7b-digestive-coach-n195 with FriendliAI inference. This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3-1.7B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_1_7b",
+      "snippet": "Qwen3-1.7B Multilingual 1.7B parameter language model excelling in reasoning and code generation. Qwen3 is a multilingual large language model series from Alibaba Cloud, excelling in language understanding, generation, coding, and mathematics."
+    }
+  ]
+}

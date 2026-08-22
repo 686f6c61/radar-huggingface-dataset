@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tonycjik/paper_012855718_prompt_engineering",
+  "slug": "tonycjik-paper_012855718_prompt_engineering",
+  "author": "tonycjik",
+  "url": "https://huggingface.co/tonycjik/paper_012855718_prompt_engineering",
+  "created_at": "2026-08-22T03:19:39.000Z",
+  "updated_at": "2026-08-22T03:19:46.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "detailed-descriptive",
+    "impersonal",
+    "intro-background-approach-eval-conclusion",
+    "latex-acl",
+    "measured",
+    "prompt-engineering",
+    "structured-imrad",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2406.06608] The Prompt Report: A Systematic Survey of Prompt ...",
+      "url": "https://arxiv.org/abs/2406.06608",
+      "snippet": "Generative Artificial Intelligence (GenAI) systems are increasingly being deployed across diverse industries and research domains. Developers and end-users interact with these systems through the use of prompting and prompt engineering. Although prompt engineering is a widely adopted and extensively researched area, it suffers from conflicting terminology and a fragmented ontological ..."
+    },
+    {
+      "title": "Prompt Engineering Papers Collection | dair-ai/Prompt-Engineering-Guide ...",
+      "url": "https://deepwiki.com/dair-ai/Prompt-Engineering-Guide/8.1-prompt-engineering-papers-collection",
+      "snippet": "This page documents the Prompt Engineering Papers Collection, a comprehensive catalog of research papers focused on prompt engineering techniques, methodologies, and applications for large language models (LLMs). The collection is maintained in pages/papers.en.mdx 1-600 and updated on a daily to weekly basis with newly published research."
+    },
+    {
+      "title": "Papers | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/papers",
+      "snippet": "The following are the latest papers (sorted by release date) on prompt engineering for large language models (LLMs). We update the list of papers on a daily/weekly basis."
+    },
+    {
+      "title": "[2407.12994] A Survey of Prompt Engineering Methods in Large Language ...",
+      "url": "https://arxiv.org/abs/2407.12994",
+      "snippet": "Large language models (LLMs) have shown remarkable performance on many different Natural Language Processing (NLP) tasks. Prompt engineering plays a key role in adding more to the already existing abilities of LLMs to achieve significant performance gains on various NLP tasks. Prompt engineering requires composing natural language instructions called prompts to elicit knowledge from LLMs in a ..."
+    },
+    {
+      "title": "Advanced Techniques in Prompt Engineering for Large Language Models: A ...",
+      "url": "https://ieeexplore.ieee.org/document/10911672",
+      "snippet": "Prompt engineering is emerging as a pivotal approach to enhance the efficiency and versatility of large language models (LLMs) like GPT-4. This paper provides a comprehensive survey of key techniques in prompt engineering, highlighting foundational methods and advanced strategies. One-shot prompting, a basic yet impactful technique, involves supplying the model with a single example to guide ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "itarixia/project-aegis-ai-models",
+  "slug": "itarixia-project-aegis-ai-models",
+  "author": "itarixia",
+  "url": "https://huggingface.co/itarixia/project-aegis-ai-models",
+  "created_at": "2026-08-22T03:15:53.000Z",
+  "updated_at": "2026-08-22T03:29:42.000Z",
+  "license": "gemma-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4325713419,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MEGA/project-aegis/ai_models at main - GitHub",
+      "url": "https://github.com/Intelligent-Defense/MEGA/blob/main/project-aegis/ai_models",
+      "snippet": "LICENSE README.md MEGA / project-aegis / ai_models a0900791603-a11y Create ai_models be4c8fb · 7 hours ago"
+    },
+    {
+      "title": "GitHub - visheshaggarwal0/Project-Aegis: An end-to-end, real-time fraud ...",
+      "url": "https://github.com/visheshaggarwal0/Project-Aegis",
+      "snippet": "Project Aegis integrates these signals into a unified system that scores transactions in real time, provides explainable AI reasoning for human analysts, triggers automated customer communication loops (SMS challenges), and continuously improves via analyst feedback."
+    },
+    {
+      "title": "The Age of Emergent AI: Exploration Portal",
+      "url": "https://storage.googleapis.com/ai-patterns-emergent-ai/index.html",
+      "snippet": "The Agentic Governance Maturity Model Evolution in AI is not just about larger models; it is about the sophistication of the environment we build around them. This model traces our path from simple instructions to the engineering of collective emergence. Explore each level to see how Project Aegis evolves."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "aegis-ai · PyPI",
+      "url": "https://pypi.org/project/aegis-ai/",
+      "snippet": "Aegis-AI - Red Hat Product Security Agent Note: As Aegis is an agent - be careful of which LLM model you use ... if you want to integrate with OSIDB/RHTPA, you MUST use a secure model Overview Aegis enables security teams to leverage the latest Generative AI models for enhanced security analysis. Integrate your preferred LLM (ChatGPT, Anthropic, Gemini, or even a local model) to quickly ..."
+    }
+  ]
+}

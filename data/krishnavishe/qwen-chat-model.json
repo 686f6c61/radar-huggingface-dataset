@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "krishnaVishe/qwen-chat-model",
+  "slug": "krishnavishe-qwen-chat-model",
+  "author": "krishnaVishe",
+  "url": "https://huggingface.co/krishnaVishe/qwen-chat-model",
+  "created_at": "2026-08-21T19:28:26.000Z",
+  "updated_at": "2026-08-22T05:33:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "chat",
+    "text-generation",
+    "conversational",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694030,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "krishnaVishe/qwen-chat-model-gguf · Hugging Face",
+      "url": "https://huggingface.co/krishnaVishe/qwen-chat-model-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "GitHub - wangxso/Qwen2: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/wangxso/Qwen2",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - wangxso/Qwen2"
+    },
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen&#x27;s series of open-source and proprietary models. It offers comprehensive functionality spanning chatbots, image and video understanding, image generation and editing, document processing, tool utilization, voice and video chat, and artifacts."
+    },
+    {
+      "title": "Universal-Invariant/AI-Qwen - GitHub",
+      "url": "https://github.com/Universal-Invariant/AI-Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - Universal-Invariant/AI-Qwen"
+    }
+  ]
+}

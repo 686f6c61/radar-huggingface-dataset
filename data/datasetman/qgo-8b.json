@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DatasetMan/QGO-8B",
+  "slug": "datasetman-qgo-8b",
+  "author": "DatasetMan",
+  "url": "https://huggingface.co/DatasetMan/QGO-8B",
+  "created_at": "2026-08-22T10:16:36.000Z",
+  "updated_at": "2026-08-22T10:26:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "qwen3-vl",
+    "vision-language",
+    "multilingual",
+    "ocr",
+    "grpo",
+    "conversational",
+    "dataset:DatasetMan/PM4Bench-QGO-Train",
+    "base_model:Qwen/Qwen3-VL-8B-Thinking",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762150,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best 8B Parameter Models in 2026 — Small Models, Big Results",
+      "url": "https://www.aimadetools.com/blog/best-8b-parameter-models-2026/",
+      "snippet": "The best ~8B parameter AI models you can run on any laptop. Compared on quality, speed, RAM usage, and best use cases. All runnable via Ollama."
+    },
+    {
+      "title": "The 8B Parameter Reality Check: When to Use Small Models and When to ...",
+      "url": "https://moto-westai.github.io/blog/2026/02/23/8b-parameter-reality-check/",
+      "snippet": "At West AI Labs, we deploy a lot of local AI infrastructure. We spend a significant amount of time deciding which workloads belong on an 8B local model and which need something bigger. After running these systems in production, here is what we have learned. The reality of the 8B parameter limit is not just about VRAM."
+    },
+    {
+      "title": "Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "snippet": "Discover datasets from various domains with Google&#x27;s Dataset Search tool, designed to help researchers and enthusiasts find relevant data easily."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a community of millions of researchers, developers, and builders to share and collaborate on Kaggle."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "spkc83/retail-bank-servicing-agent-9b-peft-v9-scratch",
+  "slug": "spkc83-retail-bank-servicing-agent-9b-peft-v9-scratch",
+  "author": "spkc83",
+  "url": "https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v9-scratch",
+  "created_at": "2026-08-22T05:35:33.000Z",
+  "updated_at": "2026-08-22T05:35:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "retail-banking",
+    "tool-calling",
+    "conversational",
+    "text-generation",
+    "dataset:spkc83/retail-bank-servicing-alignment-sft",
+    "base_model:spkc83/retail-bank-servicing-agent-9b",
+    "base_model:adapter:spkc83/retail-bank-servicing-agent-9b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 395918697,
+  "storage_human": "396 MB",
+  "base_model": "spkc83/retail-bank-servicing-agent-9b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "spkc83/retail-bank-servicing-agent-9b-peft · Hugging Face",
+      "url": "https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "spkc83/retail-bank-servicing - GitHub",
+      "url": "https://github.com/spkc83/retail-bank-servicing",
+      "snippet": "Retail Bank Servicing Model Development Training, evaluation, routing, and demonstration code for a focused retail-bank customer-service model. The repository contains only the banking model-development track and its public proof-of-concept application."
+    },
+    {
+      "title": "retail-bank-servicing-agent-9b-peft-v5-remediation - Hugging Face",
+      "url": "https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v5-remediation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "retail-bank-servicing-moe-9b API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/spkc83/retail-bank-servicing-moe-9b",
+      "snippet": "Run retail-bank-servicing-moe-9b with FriendliAI inference. Retail Bank Servicing MoE 9B is an experimental retail-banking support model."
+    },
+    {
+      "title": "PEFT : Infrastructure for AI for Science | SciencePedia",
+      "url": "https://www.bohrium.com/en/sciencepedia/agent-tools/huggingface_peft",
+      "snippet": "PEFT provides an essential AI for Science infrastructure for efficient model adaptation, offering machine-readable and one-click-ready implementations of methods like LoRA, QLoRA, and Prefix Tuning. These out-of-the-box capabilities enable AI Agents to programmatically call and apply optimal fine-tuning strategies, rapidly specializing large pre-trained models for diverse scientific tasks ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SHUB-HAMVR/model_475557092_swin_t_huge",
+  "slug": "shub-hamvr-model_475557092_swin_t_huge",
+  "author": "SHUB-HAMVR",
+  "url": "https://huggingface.co/SHUB-HAMVR/model_475557092_swin_t_huge",
+  "created_at": "2026-08-22T08:16:26.000Z",
+  "updated_at": "2026-08-22T08:16:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batchnorm",
+    "cross-attention",
+    "exponential",
+    "flash",
+    "generation",
+    "huge",
+    "kaiming",
+    "relu",
+    "rmsprop",
+    "swin-t",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swin Transformer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/swin",
+      "snippet": "Swin Transformer is a hierarchical vision transformer. Images are processed in patches and windowed self-attention is used to capture local information. These windows are shifted across the image to allow for cross-window connections, capturing global information more efficiently. This hierarchical approach with shifted windows allows the Swin Transformer to process images effectively at ..."
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\". - microsoft/Swin-Transformer"
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer at opensource",
+      "url": "https://github.com/microsoft/Swin-Transformer?ref=opensource",
+      "snippet": "Video Swin Transformer achieves state-of-the-art accuracy on a broad range of video recognition benchmarks, including action recognition (84.9 top-1 accuracy on Kinetics-400 and 86.1 top-1 accuracy on Kinetics-600 with ~20x less pre-training data and ~3x smaller model size) and temporal modeling (69.6 top-1 accuracy on Something-Something v2)."
+    },
+    {
+      "title": "Swin Transformer V2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/swinv2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Swin-Transformer: This is an official implementation for \"Swin ... - Gitee",
+      "url": "https://gitee.com/jayjjchen/Swin-Transformer",
+      "snippet": "JayJJChen/Swin-Transformer.git: This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\"."
+    }
+  ]
+}

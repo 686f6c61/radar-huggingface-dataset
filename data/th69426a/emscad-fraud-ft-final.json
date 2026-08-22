@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "TH69426a/emscad-fraud-ft-final",
+  "slug": "th69426a-emscad-fraud-ft-final",
+  "author": "TH69426a",
+  "url": "https://huggingface.co/TH69426a/emscad-fraud-ft-final",
+  "created_at": "2026-08-22T04:12:11.000Z",
+  "updated_at": "2026-08-22T04:13:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1987585364,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Employment Scam Detection — EMSCAD Adapter - Hugging Face",
+      "url": "https://huggingface.co/Fernandosr85/emscad-employment-scam-detection-adapter",
+      "snippet": "The base model reaches recall 0.308 with FPR 0.007 — extremely conservative, near-perfect on what it flags, silent on the rest. Two independent observations suggest this is not simple failure. 1. EMSCAD&#x27;s fraud label encodes provenance, not text. Several fraudulent ads are scam operators reposting real job advertisements verbatim."
+    },
+    {
+      "title": "GitHub - FelixLuciano/Fake-JobPosting-Prediction: Real and fake job ...",
+      "url": "https://github.com/FelixLuciano/Fake-JobPosting-Prediction",
+      "snippet": "Run a contextual embedding model to identify the most similar job descriptions. Perform Exploratory Data Analysis on the dataset to identify interesting insights from this dataset. Bansai, Shivam. \" [Real Or Fake] Fake Jobposting Prediction: Dataset of real and fake job postings\"."
+    },
+    {
+      "title": "GitHub - calvinfrederick/recruitment-scam: Predict a potential ...",
+      "url": "https://github.com/calvinfrederick/recruitment-scam",
+      "snippet": "A machine learning project that discusses the prediction of potentially fraudulent recruitment postings using the EMSCAD dataset. The system identifies patterns associated with scam job ads so they can be flagged for manual review before reaching job seekers."
+    },
+    {
+      "title": "Recruitment Scam Prediction - GitHub Pages",
+      "url": "https://waizhen.github.io/Data_Science_Portfolio/portfolio/recruitment-scam/",
+      "snippet": "Using the popular Employment Scam Aegean Dataset (EMSCAD) that can be found on Kaggle, a data science project was initiated and the process involved the usual data science processes such as data cleaning, exploratory data analysis (EDA), text mining, machine learning and also deep learning to predict whether a given job post is real or fraud."
+    },
+    {
+      "title": "#dataanalytics #datascience #machinelearning #python #nlp # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/shiva-shankar4_dataanalytics-datascience-machinelearning-activity-7462213329315340288-ssdT",
+      "snippet": "🚀 Built an AI-Powered Fake Job Detection Dashboard using Data Analytics, NLP & Machine Learning Recently, I worked on an end-to-end data analytics project focused on detecting fraudulent job ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ferr-eira/paper_009240958_neural_architecture_search",
+  "slug": "ferr-eira-paper_009240958_neural_architecture_search",
+  "author": "ferr-eira",
+  "url": "https://huggingface.co/ferr-eira/paper_009240958_neural_architecture_search",
+  "created_at": "2026-08-22T07:18:22.000Z",
+  "updated_at": "2026-08-22T07:18:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "detailed-descriptive",
+    "graphic-visual",
+    "intro-problem-solution-validation-future",
+    "latex-icml",
+    "measured",
+    "neural-architecture-search",
+    "numeric-bibtex",
+    "passive",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://arxiv.org/abs/2301.08727",
+      "snippet": "In this survey, we provide an organized and comprehensive guide to neural architecture search. We give a taxonomy of search spaces, algorithms, and speedup techniques, and we discuss resources such as benchmarks, best practices, other surveys, and open-source libraries."
+    },
+    {
+      "title": "PDF AI_Papers/2026/NEURAL ARCHITECTURE SEARCH WITH REINFORCEMENT ... - GitHub",
+      "url": "https://github.com/x-jeff/AI_Papers/blob/master/2026/NEURAL%20ARCHITECTURE%20SEARCH%20WITH%20REINFORCEMENT%20LEARNING.pdf",
+      "snippet": "Papers on Artificial Intelligence🎯AI领域经典论文+博客讲解🚀. Contribute to x-jeff/AI_Papers development by creating an account on GitHub."
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://huggingface.co/papers/2301.08727",
+      "snippet": "Join the discussion on this paper page Neural Architecture Search: Insights from 1000 Papers"
+    },
+    {
+      "title": "FreeREA: Training-Free Evolution-based Architecture Search",
+      "url": "https://xplorestaging.ieee.org/document/10030904/",
+      "snippet": "In the last decade, most research in Machine Learning contributed to the improvement of existing models, with the aim of increasing the performance of neural networks for the solution of a variety of different tasks. However, such advancements often come at the cost of an increase of model memory and computational requirements. This represents a significant limitation for the deployability of ..."
+    },
+    {
+      "title": "Systematic review on neural architecture search - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-024-11058-w",
+      "snippet": "Within the realm of AutoML, Neural Architecture Search (NAS) has emerged as a powerful technique that automates the design of neural network architectures, the core components of ML models. It has recently gained significant attraction due to its capability to discover novel and efficient architectures that surpass human-designed counterparts."
+    }
+  ]
+}

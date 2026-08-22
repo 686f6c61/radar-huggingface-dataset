@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "LIF1014/ptdbench-verl-coding-task-evaluator",
+  "slug": "lif1014-ptdbench-verl-coding-task-evaluator",
+  "author": "LIF1014",
+  "url": "https://huggingface.co/LIF1014/ptdbench-verl-coding-task-evaluator",
+  "created_at": "2026-08-22T08:40:46.000Z",
+  "updated_at": "2026-08-22T08:45:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467144,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LIF1014/ptdbench-verl-reward-implementation-task-engine-base-025 ...",
+      "url": "https://huggingface.co/datasets/LIF1014/ptdbench-verl-reward-implementation-task-engine-base-025-dataset",
+      "snippet": "PTDBench dataset snapshot: task_engine_base_025 This repository stores the immutable runtime dataset snapshot for one materialized PTDBench task. It intentionally excludes model weights and training checkpoints."
+    },
+    {
+      "title": "LIF1014/ptdbench-verl-reward-implementation-task-engine-base-025 ...",
+      "url": "https://huggingface.co/datasets/LIF1014/ptdbench-verl-reward-implementation-task-engine-base-025-dataset/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - verl-project/verl: verl/HybridFlow: A Flexible and Efficient ...",
+      "url": "https://github.com/verl-project/verl",
+      "snippet": "verl is flexible and easy to use with: Easy extension of diverse RL algorithms: The hybrid-controller programming model enables flexible representation and efficient execution of complex post-training dataflows. Build RL dataflows such as GRPO, PPO in a few lines of code."
+    },
+    {
+      "title": "GitHub - rllm-org/rllm: Democratizing Reinforcement Learning for LLMs",
+      "url": "https://github.com/rllm-org/rllm",
+      "snippet": "rLLM is an open-source framework for training language agents with reinforcement learning. Bring any harness, run it in any sandbox, and switch training backends with one flag — the same agent code drives both eval and training."
+    },
+    {
+      "title": "Best LLM for Coding (August 2026): SWE-bench & LiveCodeBench Ranked",
+      "url": "https://benchlm.ai/coding",
+      "snippet": "Live leaderboard ranking 399 AI models on SWE-bench Pro, LiveCodeBench, SWE-Rebench, and more. See which LLM writes the best code — updated August 2026."
+    }
+  ]
+}

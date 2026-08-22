@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TensorVizion/Qwen",
+  "slug": "tensorvizion-qwen",
+  "author": "TensorVizion",
+  "url": "https://huggingface.co/TensorVizion/Qwen",
+  "created_at": "2026-08-22T04:27:59.000Z",
+  "updated_at": "2026-08-22T04:27:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TensorVizion/InstructCode-Qwen · Hugging Face",
+      "url": "https://huggingface.co/TensorVizion/InstructCode-Qwen",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Build Advanced AI Agents with Qwen & Model Studio APIs",
+      "url": "https://www.alibabacloud.com/en/campaign/qwen-ai-landing-page?_p_lc=1",
+      "snippet": "Discover how to build multimodal AI agents using Qwen and top third-party LLMs. Start creating with our OpenAI-compatible APIs today!"
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Alibaba launched a beta of Qwen in April 2023 under the name Tongyi Qianwen, then opened it for public use in September 2023 after regulatory clearance. [1][2] The model&#x27;s architecture was based on the Llama architecture developed by Meta AI. [3][4] In December 2023, it released its 72B and 1.8B models for download, while Qwen 7B weights were released in August. [5][6]"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    }
+  ]
+}

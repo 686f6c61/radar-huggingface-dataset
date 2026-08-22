@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Dasa-dvait/model_375331967_efficientformer_nano",
+  "slug": "dasa-dvait-model_375331967_efficientformer_nano",
+  "author": "Dasa-dvait",
+  "url": "https://huggingface.co/Dasa-dvait/model_375331967_efficientformer_nano",
+  "created_at": "2026-08-22T07:08:36.000Z",
+  "updated_at": "2026-08-22T07:08:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "batchnorm",
+    "efficientformer",
+    "exponential",
+    "gated-fusion",
+    "generation",
+    "grouped-query",
+    "nano",
+    "orthogonal",
+    "swish",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qualcomm/EfficientFormer · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/EfficientFormer",
+      "snippet": "EfficientFormer: Optimized for Mobile Deployment Imagenet classifier and general purpose backbone EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset. This model is an implementation of EfficientFormer found here. This repository provides scripts to run EfficientFormer on Qualcomm® devices. More details on model performance across various devices ..."
+    },
+    {
+      "title": "EfficientFormer - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/efficientformer",
+      "snippet": "EfficientFormer Imagenet classifier and general purpose backbone. EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset."
+    },
+    {
+      "title": "EfficientFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.53.0/model_doc/efficientformer",
+      "snippet": "EfficientFormer Model transformer with an image classification head on top (a linear layer on top of the final hidden state of the [CLS] token) e.g. for ImageNet. This model is a PyTorch nn.Module subclass. Use it as a regular PyTorch Module and refer to the PyTorch documentation for all matter related to general usage and behavior."
+    },
+    {
+      "title": "EfficientFormer/models at main · snap-research/EfficientFormer",
+      "url": "https://github.com/snap-research/EfficientFormer/tree/main/models",
+      "snippet": "EfficientFormer / models / liyy201912 Update efficientformer_v2.py ab90993 · 3 years ago History"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/efficientformer/README.md at ...",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/efficientformer/README.md",
+      "snippet": "EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset. This is based on the implementation of EfficientFormer found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub ..."
+    }
+  ]
+}

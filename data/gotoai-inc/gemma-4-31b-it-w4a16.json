@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "GotoAI-Inc/gemma-4-31B-it-W4A16",
+  "slug": "gotoai-inc-gemma-4-31b-it-w4a16",
+  "author": "GotoAI-Inc",
+  "url": "https://huggingface.co/GotoAI-Inc/gemma-4-31B-it-W4A16",
+  "created_at": "2026-08-22T06:36:55.000Z",
+  "updated_at": "2026-08-22T06:37:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "compressed-tensors",
+    "w4a16",
+    "int4",
+    "vllm",
+    "conversational",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 19106128362,
+  "storage_human": "19.1 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "snippet": "Native System Prompt Support: Gemma 4 introduces built-in support for the system role, enabling more structured and controllable conversations. Multi-Token Prediction: All Gemma 4 models (E2B, E4B, 12B, 31B, and 26B A4B) include a dedicated draft model for speculative decoding, enabling significantly faster inference with no quality loss."
+    },
+    {
+      "title": "Gemma 4: Our most capable open models to date - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/",
+      "snippet": "Open model performance vs size on Arena.ai &#x27;s chat arena as of 4/1. Built from the same world-class research and technology as Gemini 3, Gemma 4 is the most capable model family you can run on your hardware. They complement our Gemini models, giving developers the industry&#x27;s most powerful combination of both open and proprietary tools."
+    },
+    {
+      "title": "Gemma 4: How a 31B Model Beats 400B Rivals [2026]",
+      "url": "https://tech-insider.org/google-gemma-4-open-model-benchmarks-2026/",
+      "snippet": "Google released Gemma 4 on April 2, 2026, delivering what the company calls its most intelligent open AI model family to date. The four-model lineup - spanning from a 2-billion-parameter edge variant to a 31-billion-parameter dense powerhouse - arrives under an Apache 2.0 license and threatens to upend the competitive dynamics of the open-source AI market. With over 400 million cumulative ..."
+    }
+  ]
+}

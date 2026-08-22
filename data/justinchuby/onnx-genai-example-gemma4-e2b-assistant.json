@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "justinchuby/onnx-genai-example-gemma4-e2b-assistant",
+  "slug": "justinchuby-onnx-genai-example-gemma4-e2b-assistant",
+  "author": "justinchuby",
+  "url": "https://huggingface.co/justinchuby/onnx-genai-example-gemma4-e2b-assistant",
+  "created_at": "2026-08-22T03:05:04.000Z",
+  "updated_at": "2026-08-22T03:56:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "gemma4",
+    "speculative-decoding",
+    "draft-model",
+    "inference-metadata",
+    "text-generation",
+    "base_model:google/gemma-4-E2B-it-assistant",
+    "base_model:quantized:google/gemma-4-E2B-it-assistant",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 391192021,
+  "storage_human": "391 MB",
+  "base_model": "google/gemma-4-E2B-it-assistant",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-genai/examples at main · justinchuby/onnx-genai · GitHub",
+      "url": "https://github.com/justinchuby/onnx-genai/tree/main/examples",
+      "snippet": "ONNX_GENAI_TRACE=<path> turns on timeline capture in the profiler; it is zero-cost when the variable is unset. ONNX_GENAI_PROFILE=1 additionally prints the aggregate per-stage table."
+    },
+    {
+      "title": "ONNX GenAI Inference Metadata Examples - a justinchuby Collection",
+      "url": "https://huggingface.co/collections/justinchuby/onnx-genai-inference-metadata-examples",
+      "snippet": "Real-weight ONNX packages covering canonical hashless inference metadata and executable multimodal workflows."
+    },
+    {
+      "title": "GitHub - justinchuby/onnx-genai: A prototype of a GenAI runtime for ONNX",
+      "url": "https://github.com/justinchuby/onnx-genai",
+      "snippet": "A prototype of a GenAI runtime for ONNX. Contribute to justinchuby/onnx-genai development by creating an account on GitHub."
+    },
+    {
+      "title": "Gemma 4 ONNX - a justinchuby Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/justinchuby/gemma-4-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    }
+  ]
+}

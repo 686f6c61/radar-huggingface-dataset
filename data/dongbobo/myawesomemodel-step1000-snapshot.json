@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dongbobo/MyAwesomeModel-Step1000-Snapshot",
+  "slug": "dongbobo-myawesomemodel-step1000-snapshot",
+  "author": "dongbobo",
+  "url": "https://huggingface.co/dongbobo/MyAwesomeModel-Step1000-Snapshot",
+  "created_at": "2026-08-02T17:39:30.000Z",
+  "updated_at": "2026-08-22T04:32:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dongbobo/MyAwesomeModel-Step1000-Snapshot · Hugging Face",
+      "url": "https://huggingface.co/dongbobo/MyAwesomeModel-Step1000-Snapshot",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SD12DSA21EAS/MyAwesomeModel-step1000 · Hugging Face",
+      "url": "https://huggingface.co/SD12DSA21EAS/MyAwesomeModel-step1000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dongbobo / MyAwesomeModel - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/dongbobo/MyAwesomeModel/60925a9b14b59da60710caf7d4357382ffa18942/overview",
+      "snippet": "Discover potential threats in the dongbobo / MyAwesomeModel model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "dongbobo / MyAwesomeModel Security Insights | Protect AI",
+      "url": "https://protectai.com/insights/models/dongbobo/MyAwesomeModel/c0dea40fa26828d6b9774a502f146793c9683a26/versions",
+      "snippet": "Discover potential threats in the dongbobo / MyAwesomeModel model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    }
+  ]
+}

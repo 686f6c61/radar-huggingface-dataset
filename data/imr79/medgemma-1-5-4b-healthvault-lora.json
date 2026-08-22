@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Imr79/medgemma-1.5-4b-healthvault-lora",
+  "slug": "imr79-medgemma-1-5-4b-healthvault-lora",
+  "author": "Imr79",
+  "url": "https://huggingface.co/Imr79/medgemma-1.5-4b-healthvault-lora",
+  "created_at": "2026-08-22T03:38:33.000Z",
+  "updated_at": "2026-08-22T03:38:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/medgemma-1.5-4b-it-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/medgemma-1.5-4b-it-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103747769,
+  "storage_human": "104 MB",
+  "base_model": "unsloth/medgemma-1.5-4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MedGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/medgemma/",
+      "snippet": "Accelerate the development of healthcare-based AI applications MedGemma 1.5 4B enables developers to more effectively adapt MedGemma for applications that involve high-dimensional imaging (CT, MRI, and whole slide histopathology), longitudinal analysis of chest X-rays, anatomical localization, and other medical imaging and text functionality."
+    },
+    {
+      "title": "[2604.05081] MedGemma 1.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2604.05081",
+      "snippet": "We introduce MedGemma 1.5 4B, the latest model in the MedGemma collection. MedGemma 1.5 expands on MedGemma 1 by integrating additional capabilities: high-dimensional medical imaging (CT/MRI volumes and histopathology whole slide images), anatomical localization via bounding boxes, multi-timepoint chest X-ray analysis, and improved medical document understanding (lab reports, electronic health ..."
+    },
+    {
+      "title": "MedGemma 1.5 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2604.05081",
+      "snippet": "In this technical report, we introduce MedGemma 1.5, an updated model in the MedGemma collection integrating support for high-dimensional, volumetric, and longitudinal data, along with existing support for 2D imaging and text-based knowledge and reasoning, all within a single unified architecture."
+    },
+    {
+      "title": "MedGemma 1.5 model card | Health AI Developer Foundations | Google for ...",
+      "url": "https://developers.google.com/health-ai-developer-foundations/medgemma/model-card",
+      "snippet": "MedGemma is a collection of Gemma 3 variants trained for performance on medical text and image comprehension to accelerate the building of healthcare-based AI applications. MedGemma comes in a 4B multimodal version, a 27B text-only version, and a 27B multimodal version, with multimodal versions utilizing a SigLIP image encoder trained on de-identified medical data. MedGemma variants have been ..."
+    },
+    {
+      "title": "medgemma-1.5-4b-medical-reasoning-qlora - Hugging Face",
+      "url": "https://huggingface.co/hxrikp/medgemma-1.5-4b-medical-reasoning-qlora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

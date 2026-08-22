@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen2.5-coder-32b-instruct-heretic-sft-GGUF",
+  "slug": "mradermacher-qwen2-5-coder-32b-instruct-heretic-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen2.5-coder-32b-instruct-heretic-sft-GGUF",
+  "created_at": "2026-08-22T06:31:04.000Z",
+  "updated_at": "2026-08-22T06:31:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-Coder-32B-Instruct-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-Coder-32B-Instruct-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Qwen2.5-Coder-32B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-Coder-32B-Instruct-GGUF",
+      "snippet": "mradermacher / Qwen2.5-Coder-32B-Instruct-GGUF like 1 Transformers GGUF English code codeqwen chat qwen qwen-coder conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "qwen2.5-coder-32b-instruct Model by Qwen | NVIDIA NIM",
+      "url": "https://build.nvidia.com/qwen/qwen2_5-coder-32b-instruct",
+      "snippet": "Advanced LLM for code generation, reasoning, and fixing across popular programming languages."
+    },
+    {
+      "title": "Qwen2.5-Coder-32B-Instruct | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/qwen/containers/qwen2.5-coder-32b-instruct/1",
+      "snippet": "This container houses the Qwen2.5-Coder, which is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, and 32 billion parameters, to meet the needs of different developers."
+    },
+    {
+      "title": "qwen / qwen2.5-coder-32b-instruct",
+      "url": "https://docs.api.nvidia.com/nim/reference/qwen-qwen2_5-coder-32b-instruct",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers."
+    }
+  ]
+}

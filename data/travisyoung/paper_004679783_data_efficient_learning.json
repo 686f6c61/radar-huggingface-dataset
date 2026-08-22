@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "travisyoung/paper_004679783_data_efficient_learning",
+  "slug": "travisyoung-paper_004679783_data_efficient_learning",
+  "author": "travisyoung",
+  "url": "https://huggingface.co/travisyoung/paper_004679783_data_efficient_learning",
+  "created_at": "2026-08-22T03:37:16.000Z",
+  "updated_at": "2026-08-22T03:37:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "data-efficient-learning",
+    "enthusiastic",
+    "footnote",
+    "highlight-bullet",
+    "latex-neurips",
+    "passive",
+    "theoretical-rigorous",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rethinking data-efficient artificial intelligence for low-resource ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666827025001793",
+      "snippet": "AI for low-resource contexts is a fast-moving area; large-scale models, foundation model fine-tuning, and federated deployments may soon alter the balance between data-efficient and data-hungry approaches."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "OpenAI Research | Publication",
+      "url": "https://openai.com/research/index/publication/",
+      "snippet": "OpenAI is strengthening monitoring, alignment, and security for frontier AI models. See how new safeguards are guiding the pace of model development."
+    },
+    {
+      "title": "Top AI Papers This Week - ArXiv TLDR",
+      "url": "https://arxivtldr.org/weekly",
+      "snippet": "The top 10 AI/ML papers from arXiv this week, AI-summarized with one-line TLDRs and key contribution bullets. Updated weekly."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    }
+  ]
+}

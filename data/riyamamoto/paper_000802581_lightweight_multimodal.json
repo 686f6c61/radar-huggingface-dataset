@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "riyamamoto/paper_000802581_lightweight_multimodal",
+  "slug": "riyamamoto-paper_000802581_lightweight_multimodal",
+  "author": "riyamamoto",
+  "url": "https://huggingface.co/riyamamoto/paper_000802581_lightweight_multimodal",
+  "created_at": "2026-08-22T04:37:15.000Z",
+  "updated_at": "2026-08-22T04:37:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "docx",
+    "intro-problem-solution-validation-future",
+    "lightweight-multimodal",
+    "measured",
+    "medium-balanced",
+    "numeric-bibtex",
+    "passive",
+    "structured-imrad",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can a Lightweight Multimodal Model Estimate LLM Reasoning Performance ...",
+      "url": "https://arxiv.org/abs/2608.18591",
+      "snippet": "Abstract page for arXiv paper 2608.18591: Can a Lightweight Multimodal Model Estimate LLM Reasoning Performance? A Study for Compute-Optimal Document Inference"
+    },
+    {
+      "title": "[2406.05496] Generalist Multimodal AI: A Review of Architectures ...",
+      "url": "https://arxiv.org/abs/2406.05496",
+      "snippet": "Multimodal models are expected to be a critical component to future advances in artificial intelligence. This field is starting to grow rapidly with a surge of new design elements motivated by the success of foundation models in natural language processing (NLP) and vision. It is widely hoped that further extending the foundation models to multiple modalities (e.g., text, image, video, sensor ..."
+    },
+    {
+      "title": "Lightweight multimodal large language model enabling ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s44163-026-01252-w",
+      "snippet": "However, most deep learning approaches rely on extensive defect datasets, making them unsuitable for real-world scenarios where only a single defective instance may be available. To address this challenge, this paper introduces Light-MLLMAD, a Lightweight Multimodal Large Language Model framework designed for one-shot industrial anomaly detection."
+    },
+    {
+      "title": "[2505.00284] LightEMMA: Lightweight End-to-End Multimodal Model for ...",
+      "url": "https://arxiv.org/abs/2505.00284",
+      "snippet": "However, the field still lacks a practical platform that enables dynamic model updates, rapid validation, fair comparison, and intuitive performance assessment. To that end, we introduce LightEMMA, a Lightweight End-to-End Multimodal Model for Autonomous driving."
+    },
+    {
+      "title": "Awesome Edge AI for Multimodal Agents - GitHub",
+      "url": "https://github.com/yh-yao/awesome-edge-ai-agents",
+      "snippet": "Awesome Edge AI for Multimodal Agents A curated list of papers, frameworks, benchmarks, and applications for efficient multimodal agents (LLMs, text-to-image, speech, world models, etc.) on mobile and edge devices. Focused on inference engines, optimization, and deployment for real-world use."
+    }
+  ]
+}

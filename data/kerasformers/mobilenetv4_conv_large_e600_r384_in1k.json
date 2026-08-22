@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kerasformers/mobilenetv4_conv_large_e600_r384_in1k",
+  "slug": "kerasformers-mobilenetv4_conv_large_e600_r384_in1k",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/mobilenetv4_conv_large_e600_r384_in1k",
+  "created_at": "2026-08-22T07:17:31.000Z",
+  "updated_at": "2026-08-22T07:18:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "image-classification",
+    "mobilenetv4",
+    "backbone",
+    "arxiv:2404.10518",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:timm/mobilenetv4_conv_large.e600_r384_in1k",
+    "base_model:finetune:timm/mobilenetv4_conv_large.e600_r384_in1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131760784,
+  "storage_human": "132 MB",
+  "base_model": "timm/mobilenetv4_conv_large.e600_r384_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "timm/mobilenetv4_conv_large.e600_r384_in1k · Hugging Face",
+      "url": "https://huggingface.co/timm/mobilenetv4_conv_large.e600_r384_in1k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mobilenetv4_conv_aa_large.e600_r384_in1k - Hugging Face",
+      "url": "https://huggingface.co/timm/mobilenetv4_conv_aa_large.e600_r384_in1k",
+      "snippet": "Model card for mobilenetv4_conv_aa_large.e600_r384_in1k A MobileNet-V4 (w/ AvgPool Anti-Aliasing) image classification model. Trained on ImageNet-1k by Ross Wightman. Trained with timm scripts using hyper-parameters inspired by the MobileNet-V4 paper with timm enhancements. NOTE: So far, these are the only known MNV4 weights."
+    },
+    {
+      "title": "mobilenetv4_conv_aa_large.e600_r384_in1k · Models",
+      "url": "https://www.modelscope.cn/models/timm/mobilenetv4_conv_aa_large.e600_r384_in1k",
+      "snippet": "Model card for mobilenetv4_conv_aa_large.e600_r384_in1k A MobileNet-V4 (w/ AvgPool Anti-Aliasing) image classification model. Trained on ImageNet-1k by Ross Wightman. Trained with timm scripts using hyper-parameters inspired by the MobileNet-V4 paper with timm enhancements. NOTE: So far, these are the only known MNV4 weights."
+    },
+    {
+      "title": "timm/mobilenetv4_conv_large.e600_r384_in1k - Hugging Face Hu... - Socket",
+      "url": "https://socket.dev/huggingface/package/timm/mobilenetv4_conv_large.e600_r384_in1k",
+      "snippet": "We found that timm/mobilenetv4_conv_large.e600_r384_in1k demonstrated a not healthy version release cadence and project activity because the last version was released a year ago."
+    },
+    {
+      "title": "Segmentation_Factory/models/backbones/mobilenetv4.py at main ... - GitHub",
+      "url": "https://github.com/jiaowoguanren0615/Segmentation_Factory/blob/main/models/backbones/mobilenetv4.py",
+      "snippet": "Segmentation_Factory / models / backbones / mobilenetv4.py jiaowoguanren0615 Update mobilenetv4 model 3ab16c8 · 2 years ago History 919 lines (830 loc) · 38.3 KB"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Bbkblo/vdub-hindi-dubbing-lite",
+  "slug": "bbkblo-vdub-hindi-dubbing-lite",
+  "author": "Bbkblo",
+  "url": "https://huggingface.co/Bbkblo/vdub-hindi-dubbing-lite",
+  "created_at": "2026-08-22T08:34:41.000Z",
+  "updated_at": "2026-08-22T08:35:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "hi",
+    "zh"
+  ],
+  "tags": [
+    "tts",
+    "dubbing",
+    "voice-cloning",
+    "hindi",
+    "chinese",
+    "video-dubbing",
+    "onnx",
+    "quantization",
+    "int8",
+    "cpu",
+    "text-to-speech",
+    "hi",
+    "zh",
+    "base_model:ResembleAI/Chatterbox-Multilingual-hi",
+    "base_model:finetune:ResembleAI/Chatterbox-Multilingual-hi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ResembleAI/Chatterbox-Multilingual-hi",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hindi Dubbing with AI: Translate & Voice Videos in Hindi Instantly - Wavel",
+      "url": "https://wavel.ai/solutions/dubbing/hindi-dubbing",
+      "snippet": "Boost your reach with AI-powered Hindi dubbing. Translate, voice over, and sync your videos in natural Hindi with studio-quality sound online."
+    },
+    {
+      "title": "Dub Any Video Into Hindi With AI — Online + Free - Kapwing",
+      "url": "https://www.kapwing.com/ai/dubbing/hindi",
+      "snippet": "Dub any video or audio into Hindi using AI. Get a highly accurate automatic translation in minutes and pair with a perfect lip sync — online + free to try."
+    },
+    {
+      "title": "Hindi Dubbing - Translate and Dub with AI - VEED.IO",
+      "url": "https://www.veed.io/tools/voice-dubber/hindi-dubbing",
+      "snippet": "Localize your videos in Hindi with instant AI dubbing and translations. Replace the original speech with a translated voiceover."
+    },
+    {
+      "title": "AI Hindi Dubbing - Auto embed Hindi dubbing into videos",
+      "url": "https://www.vmeg.ai/tools/ai-dubbing/hindi/",
+      "snippet": "Automatically dub your videos in Hindi and embed the audio in seconds. VMEG uses AI to translate, generate natural voice, and sync it perfectly with your video."
+    },
+    {
+      "title": "Online Video Dubbing in Hindi - Dubverse.ai",
+      "url": "https://dubverse.ai/online-video-dubbing-hindi/",
+      "snippet": "Automatically dub videos from 30+ languages to Hindi. With our industry-leading AI-powered online video dubbing engine."
+    }
+  ]
+}

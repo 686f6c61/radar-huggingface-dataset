@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Krypto-Whitehat/qwen3.8-9b-uncensored-cyber-xrpl-v4",
+  "slug": "krypto-whitehat-qwen3-8-9b-uncensored-cyber-xrpl-v4",
+  "author": "Krypto-Whitehat",
+  "url": "https://huggingface.co/Krypto-Whitehat/qwen3.8-9b-uncensored-cyber-xrpl-v4",
+  "created_at": "2026-08-22T09:12:00.000Z",
+  "updated_at": "2026-08-22T09:18:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "xrpl",
+    "cybersecurity",
+    "anti-hallucination",
+    "qlora",
+    "abliterated",
+    "qwen3.5",
+    "q6_k",
+    "q8_0",
+    "text-generation",
+    "base_model:MegaPanchamZ/Qwen3.8-9B-abliterated-25",
+    "base_model:quantized:MegaPanchamZ/Qwen3.8-9B-abliterated-25",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 16891910752,
+  "storage_human": "16.9 GB",
+  "base_model": "MegaPanchamZ/Qwen3.8-9B-abliterated-25",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3.8-9b-uncensored-cyber-exploit-XRPL-v3 - Hugging Face",
+      "url": "https://huggingface.co/Krypto-Whitehat/qwen3.8-9b-uncensored-cyber-exploit-XRPL-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-9B Cyber Exploit Agent — UNCENSORED - GitHub",
+      "url": "https://github.com/Krypto-Whitehat/qwen3.8-9b-cyber-exploit-agent-uncensored",
+      "snippet": "Qwen3.8-9B Cyber Exploit Agent (UNCENSORED twin) — identical fine-tune on heretic abliterated base; XRPL/C++/Python vulnerability analysis. Full training data + labs + evidence included; GGUFs as split release assets."
+    },
+    {
+      "title": "qwen3.8-9b-cyber-exploit-agent-uncensored - Hugging Face",
+      "url": "https://huggingface.co/Krypto-Whitehat/qwen3.8-9b-cyber-exploit-agent-uncensored",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krypto-Whitehat/qwen3.8-9b-cyber-exploit-agent-uncensored - GitHub",
+      "url": "https://github.com/Krypto-Whitehat/qwen3.8-9b-cyber-exploit-agent-uncensored/releases",
+      "snippet": "Identical LoRA fine-tune as the main 9B model, applied to rohit267/Qwen3.8-9B-heretic-uncensored (abliteration already in the base; no refusal directions re-trained; vision tower + MTP head unmodified)."
+    },
+    {
+      "title": "qwen3.8-9b-cyber-exploit-agent-uncensored - Vulners.com",
+      "url": "https://vulners.com/githubexploit/00B37D2C-7FB1-5F5E-9CC5-2B6BE8F6D124",
+      "snippet": "Uncensored LLM agent for C/C++ memory safety, Python, and rippled XRPL analysis with ASan evidence."
+    }
+  ]
+}

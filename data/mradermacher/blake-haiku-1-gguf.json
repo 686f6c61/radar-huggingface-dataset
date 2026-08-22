@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Blake-Haiku-1-GGUF",
+  "slug": "mradermacher-blake-haiku-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Blake-Haiku-1-GGUF",
+  "created_at": "2026-08-22T05:57:10.000Z",
+  "updated_at": "2026-08-22T06:18:36.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Flexan/Blake-Haiku-1",
+    "base_model:quantized:Flexan/Blake-Haiku-1",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 5697959424,
+  "storage_human": "5.7 GB",
+  "base_model": "Flexan/Blake-Haiku-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flexan/Blake-Haiku-1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Flexan/Blake-Haiku-1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Flexan/Blake-Haiku-1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Flexan/Blake-Haiku-1-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Details - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2Fhaiku_v1_4b-GGUF",
+      "snippet": "GGUF model details and download"
+    },
+    {
+      "title": "mradermacher/phi2-haiku-ita-v0.1-GGUF - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2Fphi2-haiku-ita-v0.1-GGUF",
+      "snippet": "mradermacher/phi2-haiku-ita-v0.1-GGUF High-quality GGUF model 47 Downloads 0 Likes 12 GGUF Files 23.28 GB Total Size 2y ago Updated"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

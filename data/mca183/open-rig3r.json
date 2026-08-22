@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "mca183/open-rig3r",
+  "slug": "mca183-open-rig3r",
+  "author": "mca183",
+  "url": "https://huggingface.co/mca183/open-rig3r",
+  "created_at": "2026-08-12T23:43:02.000Z",
+  "updated_at": "2026-08-22T04:48:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "3d-reconstruction",
+    "camera-pose-estimation",
+    "pointmap",
+    "multi-camera-rig",
+    "autonomous-driving",
+    "waymo",
+    "dust3r",
+    "dataset:waymo_open_dataset",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 340170768,
+  "parameters_human": "340.2M",
+  "storage_bytes": 4082404587,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-camera rig pose estimation",
+      "dataset": "Waymo Open Dataset (mini subset, held-out val split)",
+      "metric": "Pose rotation error (deg)",
+      "value": 1.4403
+    },
+    {
+      "task": "Multi-camera rig pose estimation",
+      "dataset": "Waymo Open Dataset (mini subset, held-out val split)",
+      "metric": "Rig rotation error (deg)",
+      "value": 1.4075
+    },
+    {
+      "task": "Multi-camera rig pose estimation",
+      "dataset": "Waymo Open Dataset (mini subset, held-out val split)",
+      "metric": "Pointmap L2 error (scale-normalized)",
+      "value": 0.2159
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - engichang1467/Open-Rig3R: The reimplementation of the Rig3R ...",
+      "url": "https://github.com/engichang1467/Open-Rig3R/tree/main/",
+      "snippet": "Rig3R is a transformer-based model for multiview 3D reconstruction and camera pose estimation that incorporates rig-aware conditioning. Unlike prior models (e.g., DUSt3R, Fast3R), Rig3R learns to leverage rig metadata (camera ID, timestamp, and rig pose) when available, and can infer rig structure when not — enabling robust 3D reconstruction across unstructured and rig-based image sets. This ..."
+    },
+    {
+      "title": "Rig3R: Rig-Aware Conditioning for Learned 3D Reconstruction",
+      "url": "https://arxiv.org/abs/2506.02265",
+      "snippet": "Rig raymaps allow the model to infer rig structure directly from input images when metadata is missing. Rig3R achieves state-of-the-art performance in 3D reconstruction, camera pose estimation, and rig discovery, outperforming both traditional and learned methods by 17-45% mAA across diverse real-world rig datasets, all in a single forward pass ..."
+    },
+    {
+      "title": "mca183 (Michael Chang) - Hugging Face",
+      "url": "https://huggingface.co/mca183/models",
+      "snippet": "Organizations mca183&#x27;s models6 Sort: Recently updated mca183/bert-base-japanese-v3-wrime-sentiment Updated Dec 14, 2023• 1"
+    },
+    {
+      "title": "Rig3R: Rig-Aware Conditioning for Learned 3D Reconstruction",
+      "url": "https://arxiv.org/pdf/2506.02265",
+      "snippet": "We present Rig3R, a transformer-based model for multiview 3D reconstruction and pose estimation that introduces rig-aware conditioning and rig discovery. Rig3R is the first method to leverage rig metadata in a learned setting and the first to perform rig structure discovery from completely unconstrained image inputs."
+    },
+    {
+      "title": "mca183 (Michael Chang) - Hugging Face",
+      "url": "https://huggingface.co/mca183",
+      "snippet": "mca183/bert-base-japanese-v3-output_jcommonsenseqa Multiple Choice • Updated Dec 13, 2023"
+    }
+  ]
+}

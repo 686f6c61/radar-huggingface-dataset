@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JackySunUofT/S_RSD_jd_100000",
+  "slug": "jackysunuoft-s_rsd_jd_100000",
+  "author": "JackySunUofT",
+  "url": "https://huggingface.co/JackySunUofT/S_RSD_jd_100000",
+  "created_at": "2026-08-22T10:38:30.000Z",
+  "updated_at": "2026-08-22T10:38:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:JackySunUofT/sim_two_lens_black_tube",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262822087,
+  "parameters_human": "262.8M",
+  "storage_bytes": 1051323860,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackySunUofT/S_RSD_100000 · Hugging Face",
+      "url": "https://huggingface.co/JackySunUofT/S_RSD_100000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JackySunUofT (JINJIE SUN) - Hugging Face",
+      "url": "https://huggingface.co/JackySunUofT",
+      "snippet": "Imitation learning, robotics, computer vision"
+    },
+    {
+      "title": "JAV-IT AI by jav-it",
+      "url": "https://jav-it.itch.io/jav-it-ai",
+      "snippet": "Jav-It AI is the easiest and most comprehensive AI model fine-tuned and optimised for JAV content. It allows you to transform photo-realistic images using Stable Diffusion to seamlessly enhance DVD/Bluray covers, sample images, fan art, or re-imagine new details."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.red/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Free AI Video Generator, Face Swap & Effects | Joyfun AI",
+      "url": "https://joyfun.ai/",
+      "snippet": "Home Free AI Video Generator, Face Swap & AI Effects Welcome to Joyfun AI, your all-in-one creative suite designed to transform ideas into stunning, high-quality videos. Whether you&#x27;re swapping faces, animating images, or directing scenes from text, our advanced AI tools are here to bridge the gap between imagination and reality."
+    }
+  ]
+}

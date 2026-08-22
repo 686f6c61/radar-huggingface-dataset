@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/fetch-huggingface-9010-sentiment-classifier",
+  "slug": "tianfuxinqu-fetch-huggingface-9010-sentiment-classifier",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/fetch-huggingface-9010-sentiment-classifier",
+  "created_at": "2026-08-21T18:54:55.000Z",
+  "updated_at": "2026-08-22T04:32:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "sentiment",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-classification&sort=downloads",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Text Classification using HuggingFace Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/text-classification-using-huggingface-model/",
+      "snippet": "Text classification using models from Hugging Face enables developers to automatically categorise text into predefined labels such as sentiment, topic, or intent. With pre-trained Hugging Face Transformers models, it becomes easy to build powerful NLP applications without training models from scratch. Implementing Text Classification Step 1: Set Up the Environment First, install the required ..."
+    },
+    {
+      "title": "How to Use the Hugging Face Transformer Library for Sentiment Analysis",
+      "url": "https://www.geeksforgeeks.org/deep-learning/how-to-use-the-hugging-face-transformer-library-for-sentiment-analysis/",
+      "snippet": "The HuggingFace library offers several benefits: Pre-trained Models: Hugging Face provides numerous pre-trained models that are readily available for tasks such as text classification, text generation, and translation. Ease of Use: The library abstracts away the complexity of using transformer models, allowing you to focus on your task."
+    },
+    {
+      "title": "AI Sentiment Analysis using Machine Learning & Transformers",
+      "url": "https://github.com/Santhosh1108/sentiment-analysis-ai/tree/main",
+      "snippet": "Sentiment Analysis is an NLP task that determines the emotional tone of a given text. This project explores the performance difference between traditional machine learning approaches and transformer-based language models. The implemented models classify text into: Positive Sentiment Negative Sentiment The project includes model training, evaluation, comparison, and deployment as an interactive ..."
+    }
+  ]
+}

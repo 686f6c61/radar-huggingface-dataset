@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/sahayak-0.6b-hindi-GGUF",
+  "slug": "mradermacher-sahayak-0-6b-hindi-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/sahayak-0.6b-hindi-GGUF",
+  "created_at": "2026-08-22T07:46:18.000Z",
+  "updated_at": "2026-08-22T08:00:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:saikumargangi/sahayak-0.6b-hindi",
+    "base_model:quantized:saikumargangi/sahayak-0.6b-hindi",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 5697954432,
+  "storage_human": "5.7 GB",
+  "base_model": "saikumargangi/sahayak-0.6b-hindi",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/sahayak-0.6b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/sahayak-0.6b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/hindi-tts-model-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/hindi-tts-model-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jagrutideshmukh21/Sahayak-Ai-Assistant - GitHub",
+      "url": "https://github.com/jagrutideshmukh21/Sahayak-Ai-Assistant",
+      "snippet": "Sahayak AI - Your Indian AI Assistant Sahayak AI is a modern, production-quality AI-powered web application designed to solve real daily-life problems for Indian users. Built with cutting-edge technologies and designed with emotional, accessible interfaces, it supports students, creators, first-time internet users, and everyday citizens."
+    },
+    {
+      "title": "inbharatai/sahaayak-ai-public - GitHub",
+      "url": "https://github.com/inbharatai/sahaayak-ai-public",
+      "snippet": "Sahaayak (सहायक — \"helper\" in Hindi) is a multilingual personal AI operating system initially designed for 1.4 billion Indian users, now ready to scale globally. It combines AI chat, voice, document scanning, translation, notes, tasks, emails, and news into one seamless workspace — transcending language barriers everywhere."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

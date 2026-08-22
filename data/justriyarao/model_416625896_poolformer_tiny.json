@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Justriyarao/model_416625896_poolformer_tiny",
+  "slug": "justriyarao-model_416625896_poolformer_tiny",
+  "author": "Justriyarao",
+  "url": "https://huggingface.co/Justriyarao/model_416625896_poolformer_tiny",
+  "created_at": "2026-08-22T05:29:11.000Z",
+  "updated_at": "2026-08-22T05:29:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "generation",
+    "layernorm",
+    "linear-warmup",
+    "multi-query",
+    "poolformer",
+    "relu",
+    "tiny",
+    "tucker",
+    "xavier-uniform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Masonkintoz/model_417131709_poolformer_tiny · Hugging Face",
+      "url": "https://huggingface.co/Masonkintoz/model_417131709_poolformer_tiny",
+      "snippet": "Model Overview A tiny -scale implementation of the poolformer architecture, built for generation tasks."
+    },
+    {
+      "title": "DeepLearning/model/PoolFormer at main - GitHub",
+      "url": "https://github.com/562590763/DeepLearning/tree/main/model/PoolFormer",
+      "snippet": "Pooling/PoolFormer are just the tools to support our claim. Figure 1: MetaFormer and performance of MetaFormer-based models on ImageNet-1K validation set. We argue that the competence of Transformer/MLP-like models primarily stem from the general architecture MetaFormer instead of the equipped specific token mixers."
+    },
+    {
+      "title": "sail/poolformer_m48 · Hugging Face",
+      "url": "https://huggingface.co/sail/poolformer_m48",
+      "snippet": "sail / poolformer_m48 like 1 Follow Sea AI Lab 96 Image Classification Transformers PyTorch Safetensors imagenet poolformer vision arxiv:2111.11418 License:apache-2.0 Model card FilesFiles and versions Community 1 Train Deploy Use this model PoolFormer (M48 model) Model description Intended uses & limitations How to use Training data Training procedure Preprocessing Pretraining Evaluation ..."
+    },
+    {
+      "title": "GitHub - sail-sg/poolformer: PoolFormer: MetaFormer Is Actually What ...",
+      "url": "https://github.com/sail-sg/poolformer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

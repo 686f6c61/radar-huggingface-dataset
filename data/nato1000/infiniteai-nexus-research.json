@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "NaTo1000/infiniteai-nexus-research",
+  "slug": "nato1000-infiniteai-nexus-research",
+  "author": "NaTo1000",
+  "url": "https://huggingface.co/NaTo1000/infiniteai-nexus-research",
+  "created_at": "2026-08-22T10:56:13.000Z",
+  "updated_at": "2026-08-22T10:56:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "research",
+    "planning",
+    "no-weights",
+    "documentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NaTo1000/infiniteai-nexus · Hugging Face",
+      "url": "https://huggingface.co/NaTo1000/infiniteai-nexus",
+      "snippet": "InfiniteAI-Nexus (The Knowledge Integrator) Model Description This is a specialized AGI model from the Infiniteai series, designed with a core philosophy of uncensored operation and full adjustability. It is part of the InfiniteAI2025/NATO1000 suite, aiming to push the boundaries of AI capabilities within its specific domain."
+    },
+    {
+      "title": "nato1000 - Hugging Face",
+      "url": "https://huggingface.co/NaTo1000/nato1000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NaTo1000/NATO-1000-Nexus · Hugging Face",
+      "url": "https://huggingface.co/NaTo1000/NATO-1000-Nexus",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NaTo1000 (Nathan teaotonga) - Hugging Face",
+      "url": "https://huggingface.co/NaTo1000",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 11 hours ago ... published a model about 11 hours ago ... updated a model about 11 hours ago"
+    },
+    {
+      "title": "iNFINITEAi2025 (iNFINITE Ai 2025) - Hugging Face",
+      "url": "https://huggingface.co/iNFINITEAi2025/models",
+      "snippet": "Yes very interested Sort: Recently updated iNFINITEAi2025/NATO1000-SENTINEL"
+    }
+  ]
+}

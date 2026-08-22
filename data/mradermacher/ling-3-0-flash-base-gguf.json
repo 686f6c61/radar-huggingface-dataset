@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ling-3.0-flash-base-GGUF",
+  "slug": "mradermacher-ling-3-0-flash-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ling-3.0-flash-base-GGUF",
+  "created_at": "2026-08-21T13:46:38.000Z",
+  "updated_at": "2026-08-22T04:36:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:inclusionAI/Ling-3.0-flash-base",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 865143008800,
+  "storage_human": "865.1 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Ling-3.0-tiny-base-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ling-3.0-tiny-base-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Ling-3.0-flash-GGUF · Discussions - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ling-3.0-flash-GGUF/discussions",
+      "snippet": "mradermacher / Ling-3.-flash-GGUF like 0 Transformers GGUF English conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "GitHub - inclusionAI/Ling: Ling is a MoE LLM provided and open-sourced ...",
+      "url": "https://github.com/inclusionAI/Ling",
+      "snippet": "Ling is a MoE LLM provided and open-sourced by InclusionAI. We introduce two different sizes, which are Ling-lite and Ling-plus. Ling-lite has 16.8 billion parameters with 2.75 billion activated parameters, while Ling-plus has 290 billion parameters with 28.8 billion activated parameters. Both models demonstrate impressive performance compared to existing models in the industry. Their ..."
+    },
+    {
+      "title": "Ling-3.0-flash-base · Models",
+      "url": "https://www.modelscope.cn/models/inclusionAI/Ling-3.0-flash-base",
+      "snippet": "Base Model Evaluation To systematically assess the capabilities of the base model, we use a self-built comprehensive benchmark suite covering several key domains, including mathematics, coding, reasoning, multilingual understanding, and long-context comprehension. The performance of the pretrained base checkpoint, i.e., Ling-3.-flash-base, is compared below:"
+    }
+  ]
+}

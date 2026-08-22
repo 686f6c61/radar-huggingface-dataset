@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "darksidewalker/DaSiWa-Krea2",
+  "slug": "darksidewalker-dasiwa-krea2",
+  "author": "darksidewalker",
+  "url": "https://huggingface.co/darksidewalker/DaSiWa-Krea2",
+  "created_at": "2026-08-22T11:02:47.000Z",
+  "updated_at": "2026-08-22T11:02:47.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darksidewalker/DaSiWa-LTX2.3 · Hugging Face",
+      "url": "https://huggingface.co/darksidewalker/DaSiWa-LTX2.3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DaSiWa Model Collection - collection posted by Darksidewalker | Civitai",
+      "url": "https://civitai.com/collections/13277112",
+      "snippet": "Collection of my resources"
+    },
+    {
+      "title": "darksidewalker/DaSiWa-LTX2.3 at main - Hugging Face",
+      "url": "https://huggingface.co/darksidewalker/DaSiWa-LTX2.3/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - darksidewalker/DaSiWa-TrainFlow: Portable Go wrapper around ...",
+      "url": "https://github.com/darksidewalker/DaSiWa-TrainFlow",
+      "snippet": "DaSiWa TrainFlow Portable Go wrapper around the sd-scripts and Musubi Python training stacks — train LoRAs and Textual Inversions for Anima, SDXL/Pony/Illustrious, LTX 2.3/Wan 2.2 video, and Krea 2 image models from a single embedded UI on Linux and Windows."
+    },
+    {
+      "title": "DaSiWa LTX 2.3 - darksidewalker - tensorhub.art",
+      "url": "https://tensorhub.art/models/1023413300857207075",
+      "snippet": "Download 🌸💀 DaSiWa LTX 2.3 - darksidewalker - free CHECKPOINT LTX-2_3 AI model on TENSORHUB ART. By 😞3"
+    }
+  ]
+}

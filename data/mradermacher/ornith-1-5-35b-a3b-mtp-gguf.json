@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ornith-1.5-35B-A3B-MTP-GGUF",
+  "slug": "mradermacher-ornith-1-5-35b-a3b-mtp-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-MTP-GGUF",
+  "created_at": "2026-08-22T06:56:25.000Z",
+  "updated_at": "2026-08-22T07:53:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "speculative-decoding",
+    "mtp",
+    "multi-token-prediction",
+    "knowledge-distillation",
+    "qwen3.5",
+    "qwen3.6",
+    "moe",
+    "fp8",
+    "vllm",
+    "code",
+    "reasoning",
+    "en",
+    "base_model:shisa-ai/Ornith-1.5-35B-A3B-MTP",
+    "base_model:quantized:shisa-ai/Ornith-1.5-35B-A3B-MTP",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 446571248,
+  "parameters_human": "446.6M",
+  "storage_bytes": 102138409152,
+  "storage_human": "102.1 GB",
+  "base_model": "shisa-ai/Ornith-1.5-35B-A3B-MTP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-APEX-MTP-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mudler/Ornith-1.5-35B-A3B-APEX-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai/ornith-1.5 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/ornith-1.5",
+      "snippet": "This model card documents Ornith-1.5-35B-A3B, the mid-size mixture-of-experts member of the Ornith-1.5 family. It activates only ~3B parameters per token, yet significantly outperforms its similar-sized peer Qwen 3.6-35B across all coding and agentic benchmarks, and outperforms dense models such as Gemma 4-31B and Muse Glimmer-30B by wide ..."
+    },
+    {
+      "title": "Ornith 1.5 35B-A3B: Local Deployment, VRAM, and Real-World Tests",
+      "url": "https://www.mindstudio.ai/blog/ornith-1-5-35b-a3b-local-run",
+      "snippet": "Ornith 1.5 35B-A3B is a mixture-of-experts model with 3B active params. Here&#x27;s how it runs locally on an A100, and how it handles agentic and reasoning tests."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B Benchmarks & Context (August 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/ornith-1-5-35b-a3b",
+      "snippet": "Ornith-1.5-35B-A3B by Ornith AI ranks #137 of 224 with a public score of 49.22/100. Evidence: Estimated; this profile shows 18 source-displayable benchmark rows."
+    }
+  ]
+}

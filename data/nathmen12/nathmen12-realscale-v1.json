@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "NathMen12/NathMen12-RealScale-V1",
+  "slug": "nathmen12-nathmen12-realscale-v1",
+  "author": "NathMen12",
+  "url": "https://huggingface.co/NathMen12/NathMen12-RealScale-V1",
+  "created_at": "2026-08-21T11:07:19.000Z",
+  "updated_at": "2026-08-22T09:27:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "image-to-image",
+    "en",
+    "dataset:danjacobellis/LSDIR",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1676347175,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NathMen12 (Nath) - Hugging Face",
+      "url": "https://huggingface.co/NathMen12",
+      "snippet": "Generate text continuations with Nyvex‑Small model. NathMen12 25 days ago. Runtime error . 1. AI Chat Multi-Modèle. 🤗. NathMen12 25 days ago"
+    },
+    {
+      "title": "NathMen12 · GitHub",
+      "url": "https://github.com/NathMen12",
+      "snippet": "NathMen12 has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - NathMen12/AI-Studio",
+      "url": "https://github.com/NathMen12/AI-Studio",
+      "snippet": "Contribute to NathMen12/AI-Studio development by creating an account on GitHub."
+    },
+    {
+      "title": "NathMen12 - Modrinth",
+      "url": "https://modrinth.com/user/NathMen12/modpacks",
+      "snippet": "Download NathMen12&#x27;s projects on Modrinth NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT."
+    },
+    {
+      "title": "NathMen12 - Modrinth",
+      "url": "https://modrinth.com/user/NathMen12",
+      "snippet": "Download NathMen12&#x27;s projects on Modrinth Add clans or guilds to your server with effects, all in a datapack! thanks Sadious for the idea"
+    }
+  ]
+}

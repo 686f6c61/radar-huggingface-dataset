@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rafaelmrm/model_125995433_flamingo_base",
+  "slug": "rafaelmrm-model_125995433_flamingo_base",
+  "author": "rafaelmrm",
+  "url": "https://huggingface.co/rafaelmrm/model_125995433_flamingo_base",
+  "created_at": "2026-08-22T06:40:49.000Z",
+  "updated_at": "2026-08-22T06:40:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base",
+    "batchnorm",
+    "classification",
+    "cross-attention",
+    "flamingo",
+    "linear",
+    "lion",
+    "polynomial",
+    "relu",
+    "xavier-uniform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://arxiv.org/abs/2204.14198",
+      "snippet": "Building models that can be rapidly adapted to novel tasks using only a handful of annotated examples is an open challenge for multimodal machine learning research. We introduce Flamingo, a family of Visual Language Models (VLM) with this ability. We propose key architectural innovations to: (i) bridge powerful pretrained vision-only and language-only models, (ii) handle sequences of ..."
+    },
+    {
+      "title": "OpenFlamingo-9B-vitl-mpt7b - Hugging Face",
+      "url": "https://huggingface.co/openflamingo/OpenFlamingo-9B-vitl-mpt7b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "open_flamingo/README.md at main · mlfoundations/open_flamingo",
+      "url": "https://github.com/mlfoundations/open_flamingo/blob/main/README.md",
+      "snippet": "An open-source framework for training large multimodal models. - mlfoundations/open_flamingo"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "awesome-llm-model-zoo/architectures/flamingo/README.md at main ... - GitHub",
+      "url": "https://github.com/neurarch-ai/awesome-llm-model-zoo/blob/main/architectures/flamingo/README.md",
+      "snippet": "Flamingo The visual-language model that handles interleaved images and text and does few-shot in-context learning. A Perceiver Resampler compresses image features to a few tokens, and gated cross-attention layers spliced into a frozen LLM let the text attend to them."
+    }
+  ]
+}

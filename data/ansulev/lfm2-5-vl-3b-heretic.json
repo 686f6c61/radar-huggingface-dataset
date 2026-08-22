@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "ansulev/LFM2.5-VL-3B-heretic",
+  "slug": "ansulev-lfm2-5-vl-3b-heretic",
+  "author": "ansulev",
+  "url": "https://huggingface.co/ansulev/LFM2.5-VL-3B-heretic",
+  "created_at": "2026-08-22T05:00:57.000Z",
+  "updated_at": "2026-08-22T05:00:57.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_vl",
+    "image-text-to-text",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "conversational",
+    "custom_code",
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi",
+    "arxiv:2305.03393",
+    "base_model:LiquidAI/LFM2.5-VL-3B",
+    "base_model:finetune:LiquidAI/LFM2.5-VL-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3123483888,
+  "parameters_human": "3.12B",
+  "storage_bytes": 6264970598,
+  "storage_human": "6.3 GB",
+  "base_model": "LiquidAI/LFM2.5-VL-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · AX1Y2JP/LFM2.5-VL-3B-heretic-GGUF at main",
+      "url": "https://huggingface.co/AX1Y2JP/LFM2.5-VL-3B-heretic-GGUF/blob/main/README.md",
+      "snippet": "It builds on LFM2-VL-3B with further mid- and post-training. LFM2.5-VL-3B can process both text and images, and uses the LFM2.5-2.6B language model as its backbone, combined with a SigLIP2 NaFlex vision encoder."
+    },
+    {
+      "title": "LFM2.5-VL-3B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-vl-3b",
+      "snippet": "← Back to Vision Models LFM2.5-VL-3B is Liquid AI&#x27;s most capable vision-language model, with strong grounding, screen and document understanding, and function calling. It builds on the LFM2.5-2.6B backbone with a SigLIP2 NaFlex image encoder, and answers directly for low-latency inference on-device and in the cloud."
+    },
+    {
+      "title": "Quantized Models for heretic-org/LFM2.5-VL-3B-heretic - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:heretic-org/LFM2.5-VL-3B-heretic",
+      "snippet": "AX1Y2JP/LFM2.5-VL-3B-heretic-GGUF Image-Text-to-Text • 3B•Updated 4 days ago• 922 • 1"
+    },
+    {
+      "title": "LFM2.5-VL-3B: A Better and Faster Vision-Language Model for the Edge",
+      "url": "https://www.liquid.ai/blog/lfm2-5-vl-3b",
+      "snippet": "LFM2.5-VL-3B is Liquid AI&#x27;s most capable vision-language model, with grounding, screen understanding, and function calling, fast enough to run on-device."
+    },
+    {
+      "title": "LFM2.5 VL 3B Heretic by heretic-org — VRAM 6.2GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/heretic-org%2FLFM2.5-VL-3B-heretic,3P93sQ6ZJBjKeAtkUN1UvX",
+      "snippet": "Rank the LFM2.5 VL 3B Heretic capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SingGuard-2b-GGUF",
+  "slug": "mradermacher-singguard-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SingGuard-2b-GGUF",
+  "created_at": "2026-08-22T04:02:12.000Z",
+  "updated_at": "2026-08-22T04:13:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:inclusionAI/SingGuard-2b",
+    "base_model:quantized:inclusionAI/SingGuard-2b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 17224506688,
+  "storage_human": "17.2 GB",
+  "base_model": "inclusionAI/SingGuard-2b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Sing-Guard-2b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Sing-Guard-2b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for inclusionAI/SingGuard-2b - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:inclusionAI/SingGuard-2b",
+      "snippet": "Active filters: inclusionAI/SingGuard-2b. Clear all. mradermacher/Sing-Guard-2b-GGUF. 2B • Updated 30 days ago • 324. System theme"
+    },
+    {
+      "title": "GitHub - inclusionAI/SingGuard",
+      "url": "https://github.com/inclusionAI/SingGuard",
+      "snippet": "SingGuard is a policy-adaptive multimodal guardrail model family for safety assessment across text, image, image-text, multilingual, query-side, and response-side scenarios."
+    },
+    {
+      "title": "SingGuard-2b-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/inclusionAI/SingGuard-2b-GGUF",
+      "snippet": "SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic Reasoning 🤗 HuggingFace | 🤖 ModelScope | 📄 Paper Introduction SingGuard is a policy-adaptive multimodal guardrail model family for safety assessment across text, image, image-text, multilingual, query-side, and response-side scenarios. It treats the active safety policy as a runtime input rather than a fixed training ..."
+    },
+    {
+      "title": "SingGuard: A Policy-Adaptive Multimodal LLM Guardrail with Dynamic ...",
+      "url": "https://arxiv.org/abs/2606.22873",
+      "snippet": "We present &#92;textbf {SingGuard}, a policy-adaptive multimodal guardrail model family for safety assessment in multimodal conversations. SingGuard treats the active policy as a runtime input: given natural-language rules, it checks the target content against the active policy rule by rule and predicts both the safety label and the triggered rule."
+    }
+  ]
+}

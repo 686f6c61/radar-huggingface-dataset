@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nanda009/mnist-simple-keras-model",
+  "slug": "nanda009-mnist-simple-keras-model",
+  "author": "nanda009",
+  "url": "https://huggingface.co/nanda009/mnist-simple-keras-model",
+  "created_at": "2026-08-22T09:07:57.000Z",
+  "updated_at": "2026-08-22T09:07:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Training a neural network on MNIST with Keras - TensorFlow",
+      "url": "https://www.tensorflow.org/datasets/keras_example",
+      "snippet": "This simple example demonstrates how to plug TensorFlow Datasets (TFDS) into a Keras model."
+    },
+    {
+      "title": "MNIST in Keras.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/AviatorMoser/keras-mnist-tutorial/blob/master/MNIST%20in%20Keras.ipynb",
+      "snippet": "Compiling the model Keras is built on top of Theano and TensorFlow. Both packages allow you to define a computation graph in Python, which then compiles and runs efficiently on the CPU or GPU without the overhead of the Python interpreter. When compiing a model, Keras asks you to specify your loss function and your optimizer."
+    },
+    {
+      "title": "GitHub - lorossi/mnist-model: Finding the best model for the MNIST ...",
+      "url": "https://github.com/lorossi/mnist-model",
+      "snippet": "The MNIST (Modified National Institute of Standards and Technology) dataset is a humongous collection of 70.000 images of handwritten digits, each one labelled with the corresponding numbers. Each image is 28x28 pixels, anti-aliased and greyscale. The challenge is to create a model that, given an image, can correctly predict the number written in it. As stated before, this is a very simple ..."
+    },
+    {
+      "title": "Code examples - Keras",
+      "url": "https://keras.io/examples/",
+      "snippet": "Code examples Our code examples are short (less than 300 lines of code), focused demonstrations of vertical deep learning workflows. All of our examples are written as Jupyter notebooks and can be run in one click in Google Colab, a hosted notebook environment that requires no setup and runs in the cloud. Google Colab includes GPU and TPU runtimes."
+    },
+    {
+      "title": "Building and Training a Neural Network on MNIST with ... - Medium",
+      "url": "https://medium.com/@ikramelhattab90/building-and-training-a-neural-network-on-mnist-with-tensorflow-and-keras-a-step-by-step-guide-13a8582744a8",
+      "snippet": "This step-by-step guide demonstrates how to build, train, and evaluate a neural network using TensorFlow and Keras for classifying handwritten digits in the MNIST dataset."
+    }
+  ]
+}

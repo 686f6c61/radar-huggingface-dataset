@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mash-forshaken/mash_model",
+  "slug": "mash-forshaken-mash_model",
+  "author": "mash-forshaken",
+  "url": "https://huggingface.co/mash-forshaken/mash_model",
+  "created_at": "2026-08-22T04:25:51.000Z",
+  "updated_at": "2026-08-22T04:26:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108310272,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433263448,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mash-forshaken (mashfiq uz zaman) - Hugging Face",
+      "url": "https://huggingface.co/mash-forshaken/models",
+      "snippet": "mash-forshaken&#x27;s models1 Sort: Recently updated mash-forshaken/my_awesome_model Text Classification • 67M•Updated about 10 hours ago"
+    },
+    {
+      "title": "Mash ! - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1782732269451798528",
+      "snippet": "Generate stunning anime art with the &#x27;Mash !&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "mash - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1656750544164353087",
+      "snippet": "Generate stunning fate anime art with the &#x27;mash&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "GitHub - githigher/MASH: Official implementation of \"MASH: Evading ...",
+      "url": "https://github.com/githigher/MASH",
+      "snippet": "MASH is a multi-stage black-box attack framework that reformulates detector evasion as a style transfer task. It trains a lightweight BART-based paraphraser (∼0.1B parameters) through a sequential pipeline—Style-injection SFT, DPO alignment, and inference-time refinement—to transform AI-generated text into human-like text that evades both open-source and commercial detectors."
+    },
+    {
+      "title": "MashModel - GitHub Pages",
+      "url": "http://clutter-project.github.io/mash/docs/MashModel.html",
+      "snippet": "Alternatively mash_model_new_from_file () can be used as a convenience wrapper to easily make an actor out of a PLY without having to worry about MashData. To share the data with another actor, call mash_model_get_data () on an existing actor then call mash_model_set_data () with the return value on a new actor."
+    }
+  ]
+}

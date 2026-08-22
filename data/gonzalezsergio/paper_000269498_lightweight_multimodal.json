@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Gonzalezsergio/paper_000269498_lightweight_multimodal",
+  "slug": "gonzalezsergio-paper_000269498_lightweight_multimodal",
+  "author": "Gonzalezsergio",
+  "url": "https://huggingface.co/Gonzalezsergio/paper_000269498_lightweight_multimodal",
+  "created_at": "2026-08-22T05:33:04.000Z",
+  "updated_at": "2026-08-22T05:33:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "first-person-plural",
+    "intro-method-exp-related-conclusion",
+    "latex-icml",
+    "lightweight-multimodal",
+    "numeric-apa",
+    "structured-imrad",
+    "theoretical-rigorous",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICLR 2025 Papers",
+      "url": "https://iclr.cc/virtual/2025/papers.html",
+      "snippet": "A new framework for evaluating model out-of-distribution generalisation for the biochemical domain Raul Fernandez-Diaz, Hoang Thanh Lam, Vanessa Lopez, Denis Shields"
+    },
+    {
+      "title": "Gemini 3.1 Pro | Google&#x27;s Most Advanced AI Model 2026",
+      "url": "https://gemini3.us/gemini-3.1-pro",
+      "snippet": "Gemini 3.1 Pro is Google DeepMind&#x27;s most advanced AI model, released on February 19, 2026. It delivers a 2x+ reasoning boost over Gemini 3 Pro, ranks #1 on 12 of 18 tracked benchmarks, and supports 1M token context with 65K token output."
+    },
+    {
+      "title": "Best Multimodal Models of 2026 Rankings: Test & Compare",
+      "url": "https://blog.roboflow.com/best-multimodal-models/",
+      "snippet": "The top multimodal models in early 2026 span a range of strengths: SAM 3 leads Roboflow&#x27;s AI Vision Model Rankings with a score of 1391 and zero-shot segmentation across diverse domains, Gemini 2.5 and Gemini 3 offer a 2-million-token context window suited to long visual reasoning tasks, GPT-5 advances multimodal reasoning and generation, Qwen VL Max targets multilingual and document-heavy ..."
+    },
+    {
+      "title": "Top 15 Multimodal Models in 2026 (Open Source & Proprietary)",
+      "url": "https://blog.unitlab.ai/top-multimodal-models/",
+      "snippet": "Discover what multimodal models are, how their architectures work, the top multimodal models, real-world use cases, and key challenges."
+    },
+    {
+      "title": "GitHub - xigh/open-weight-models: Curated list of open-weight AI models ...",
+      "url": "https://github.com/xigh/open-weight-models",
+      "snippet": "Curated list of open-weight AI models with commercially exploitable licenses, verified benchmarks, and no EU restrictions. - xigh/open-weight-models"
+    }
+  ]
+}

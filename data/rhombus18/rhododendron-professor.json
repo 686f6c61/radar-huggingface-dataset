@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rhombus18/Rhododendron-Professor",
+  "slug": "rhombus18-rhododendron-professor",
+  "author": "rhombus18",
+  "url": "https://huggingface.co/rhombus18/Rhododendron-Professor",
+  "created_at": "2026-08-22T08:52:14.000Z",
+  "updated_at": "2026-08-22T09:05:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939748,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/qwen3-8b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rhombus18 (Han Muyang) - Hugging Face",
+      "url": "https://huggingface.co/rhombus18",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 11 hours ago ... updated a model about 11 hours ago"
+    },
+    {
+      "title": "rhombus18/Rhododendron-Lite-1o · Hugging Face",
+      "url": "https://huggingface.co/rhombus18/Rhododendron-Lite-1o",
+      "snippet": "rhombus18 / Rhododendron-Lite-1o like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - Rhombus-AI/.github",
+      "url": "https://github.com/Rhombus-AI/.github",
+      "snippet": "Rhombus is a self-reliant AI organization founded by a 16-year-old, Akshit, with a mission to learn by building, and build by inventing. We don&#x27;t wait for tools — we make our own. We don&#x27;t just fine-tune — we research and train models from scratch. Rhombus is built to be like Iron Man&#x27;s lab — anything we need, we build ourselves."
+    },
+    {
+      "title": "Rhombus18 · GitHub",
+      "url": "https://github.com/Rhombus18",
+      "snippet": "GitHub is where Rhombus18 builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

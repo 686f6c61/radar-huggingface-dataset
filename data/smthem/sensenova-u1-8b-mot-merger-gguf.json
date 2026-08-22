@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "smthem/SenseNova-U1-8B-MoT-Merger-gguf",
+  "slug": "smthem-sensenova-u1-8b-mot-merger-gguf",
+  "author": "smthem",
+  "url": "https://huggingface.co/smthem/SenseNova-U1-8B-MoT-Merger-gguf",
+  "created_at": "2026-04-28T06:20:46.000Z",
+  "updated_at": "2026-08-22T07:27:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 46,
+  "downloads_30d": 18407,
+  "trending_score": 0,
+  "parameters": 17552340992,
+  "parameters_human": "17.55B",
+  "storage_bytes": 544815644524,
+  "storage_human": "544.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smthem/SenseNova-U1-8B-MoT-Merger-gguf · Hugging Face",
+      "url": "https://huggingface.co/smthem/SenseNova-U1-8B-MoT-Merger-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SenseNova-U1-8B-MoT-Merger-gguf: Text-to-Image model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/sensenova-u1-8b-mot-merger-gguf-smthem",
+      "snippet": "Overview SenseNova-U1-8B-MoT-Merger-gguf is a quantized GGUF format version of the SenseNova-U1 multimodal model maintained by smthem. This model operates as an 8-billion parameter multimodal transformer capable of both understanding and generating content across text and image modalities using the NEO-unify architecture. The critical detail before using this model is that it requires ComfyUI ..."
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: Native Unified ...",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture. It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification. Rather than relying on adapters to translate between modalities, SenseNova U1 models think-and-act across language and vision ..."
+    },
+    {
+      "title": "smthem/SenseNova-U1-8B-MoT-Merger-gguf at main",
+      "url": "https://huggingface.co/smthem/SenseNova-U1-8B-MoT-Merger-gguf/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "smthem/SenseNova-U1-8B-MoT-Merger-gguf · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/smthem/SenseNova-U1-8B-MoT-Merger-gguf",
+      "snippet": "smthem / SenseNova-U1-8B-MoT-Merger-gguf like 41 GGUF License:apache-2.0 Model card FilesFiles and versions xet Community 7 Copy to bucket new ComfyUI 8G Vram Q4 mix SenseNova-U1-8B-MoT-8step Q6 TEST SenseNova-U1-8B-MoT Q6 TEST"
+    }
+  ]
+}

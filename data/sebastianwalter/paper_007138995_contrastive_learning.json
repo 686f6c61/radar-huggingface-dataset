@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sebastianwalter/paper_007138995_contrastive_learning",
+  "slug": "sebastianwalter-paper_007138995_contrastive_learning",
+  "author": "sebastianwalter",
+  "url": "https://huggingface.co/sebastianwalter/paper_007138995_contrastive_learning",
+  "created_at": "2026-08-22T05:33:55.000Z",
+  "updated_at": "2026-08-22T05:34:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "contrastive-learning",
+    "empirical-focused",
+    "first-person-plural",
+    "intro-background-approach-eval-conclusion",
+    "latex-cvpr",
+    "numeric-apa",
+    "short-punchy",
+    "unstructured-narrative",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "OpenAI Halts AI Training on Advanced Model as It Detects Dark Signs ...",
+      "url": "https://futurism.com/artificial-intelligence/openai-halts-training-advanced-model",
+      "snippet": "The slow down comes as the AI industry and policymakers grapple with emerging safety threats posed by frontier AI models, including AI-powered cybersecurity risks and troubling model misbehavior."
+    },
+    {
+      "title": "Contrastive Learning for Adapting Language Model to Sequential ...",
+      "url": "https://ieeexplore.ieee.org/document/10884256",
+      "snippet": "To address the above issues, we propose Contrastive Learning for Adapting Language Model to Sequential Recommendation (CLA-Rec). In CLA-Rec, we first extract text embeddings from description text using Large Language Models and align the text embeddings learned by Large Language Models with the collaborative information through contrastive ..."
+    },
+    {
+      "title": "Artificial Intelligence Aug 2026 - arXiv.org",
+      "url": "https://arxiv.org/list/cs.AI/current",
+      "snippet": "SIRIN: A Unified Toolkit for Detecting Contextual Hallucinations in Retrieval-Augmented and Memory-Grounded LLM Systems Julia Belikova, Rauf Parchiev, Mikhail Filimonov, Konstantin Polev, Andrey Savchenko, Maksim Makarenko Subjects: Artificial Intelligence (cs.AI) [12] arXiv:2608.00035 [pdf, html, other]"
+    },
+    {
+      "title": "Free AI Chat Online - GPT-5, Gemini & More ｜ NoteGPT",
+      "url": "https://notegpt.io/ai-chat",
+      "snippet": "Juggling multiple AI platforms wastes time and breaks your flow. AI Chat combines ChatGPT, Gemini, DeepSeek and more in one place, letting you chat, create, and get answers instantly—free and unlimited online."
+    }
+  ]
+}

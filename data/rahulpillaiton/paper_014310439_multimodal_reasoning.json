@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rahulpillaiton/paper_014310439_multimodal_reasoning",
+  "slug": "rahulpillaiton-paper_014310439_multimodal_reasoning",
+  "author": "rahulpillaiton",
+  "url": "https://huggingface.co/rahulpillaiton/paper_014310439_multimodal_reasoning",
+  "created_at": "2026-08-22T07:45:45.000Z",
+  "updated_at": "2026-08-22T07:45:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "bulleted",
+    "concise-analytical",
+    "critical",
+    "docx",
+    "highlight-bullet",
+    "intro-method-exp-related-conclusion",
+    "mixed-active-passive",
+    "multimodal-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    },
+    {
+      "title": "GitHub - phellonchen/Awesome-MLLM-Reasoning: Latest Advances on ...",
+      "url": "https://github.com/phellonchen/Awesome-MLLM-Reasoning/",
+      "snippet": "Reasoning in MLLMs: Papers and Resources; Latest Advances on Reasoning of Multimodal Large Language Models (Multimodal R1) ) 🍓 Table of Contents Awesome Technique Awesome Datasets"
+    },
+    {
+      "title": "LLM Research Papers: The 2026 List (January to May)",
+      "url": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1",
+      "snippet": "A January-May 2026 list of notable LLM research papers, covering new models, training methods, agents, reasoning, and efficiency improvements."
+    },
+    {
+      "title": "Awesome-MLLM-Reasoning-Collection - GitHub",
+      "url": "https://github.com/lwpyh/Awesome-MLLM-Reasoning-Collection/",
+      "snippet": "👏 Welcome to the Awesome-MLLM-Reasoning-Collections repository! This repository is a carefully curated collection of papers, code, datasets, benchmarks, and resources focused on reasoning within Multimodal Large Language Models (MLLMs)."
+    },
+    {
+      "title": "Multimodal Reasoning AI: The Next Leap in Intelligent Systems (2025)",
+      "url": "https://ajithp.com/2025/04/21/multimodal-reasoning-ai/",
+      "snippet": "Explore how multimodal AI is reshaping reasoning, with 2025 models like o3, Gemini 2.5, and Magma leading real-world applications."
+    }
+  ]
+}

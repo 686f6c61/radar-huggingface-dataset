@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "888rok/LFM2.5-8B-A1B-Q4_K_M-wllama-split",
+  "slug": "888rok-lfm2-5-8b-a1b-q4_k_m-wllama-split",
+  "author": "888rok",
+  "url": "https://huggingface.co/888rok/LFM2.5-8B-A1B-Q4_K_M-wllama-split",
+  "created_at": "2026-08-22T08:04:49.000Z",
+  "updated_at": "2026-08-22T08:14:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "wllama",
+    "base_model:LiquidAI/LFM2.5-8B-A1B-GGUF",
+    "base_model:quantized:LiquidAI/LFM2.5-8B-A1B-GGUF",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 5155565120,
+  "storage_human": "5.2 GB",
+  "base_model": "LiquidAI/LFM2.5-8B-A1B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2.5-8B-A1B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-8b-a1b",
+      "snippet": "8B parameter Mixture-of-Experts model with 1.5B active parameters for fast, reliable tool calling and 128K context ← Back to Text Models LFM2.5-8B-A1B is Liquid AI&#x27;s Mixture-of-Experts model, combining 8B total parameters with only 1.5B active parameters per forward pass with a 128K context window and chain of thought reasoning."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-8B-A1B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF",
+      "snippet": "LFM2 is a new generation of hybrid models developed by Liquid AI, specifically designed for edge AI and on-device deployment. It sets a new standard in terms of quality, speed, and memory efficiency."
+    },
+    {
+      "title": "LFM2.5-8B-A1B: An Even Better On-Device Mixture of Experts",
+      "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
+      "snippet": "Explore Liquid AI&#x27;s LFM2.5-8B-A1B, an on-device Mixture of Experts model with 128K context, fast tool calling, and strong AI benchmarks."
+    },
+    {
+      "title": "lfm2.5:8b - ollama.com",
+      "url": "https://ollama.com/library/lfm2.5:8b",
+      "snippet": "LFM2.5 is a new family of hybrid models designed for on-device deployment. It builds on the LFM2 architecture with extended pre-training and reinforcement learning. On-device personal assistant: Designed to power real-life applications, chaining tool calls, and following complex instructions on all devices. Compressed performance: Competitive with much larger dense and MoE models on ..."
+    },
+    {
+      "title": "LiquidAI/LFM2-8B-A1B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-8B-A1B",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-8B-A1B"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "IonGrozea/whisper-large-v3-turbo-ro",
+  "slug": "iongrozea-whisper-large-v3-turbo-ro",
+  "author": "IonGrozea",
+  "url": "https://huggingface.co/IonGrozea/whisper-large-v3-turbo-ro",
+  "created_at": "2026-06-10T19:45:36.000Z",
+  "updated_at": "2026-08-22T10:21:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "pytorch",
+    "whisper",
+    "automatic-speech-recognition",
+    "romanian",
+    "fine-tuned",
+    "ro",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3235717742,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "whisper-ro-turbo-large-v3.gguf · IonGrozea/whisper-large-v3-ro-turbo ...",
+      "url": "https://huggingface.co/IonGrozea/whisper-large-v3-ro-turbo-gguf/blob/main/whisper-ro-turbo-large-v3.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IonGrozea/whisper-large-v3-ro-turbo · Hugging Face",
+      "url": "https://huggingface.co/IonGrozea/whisper-large-v3-ro-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Whisper Large v3 Turbo - GroqDocs - console.groq.com",
+      "url": "https://console.groq.com/docs/model/whisper-large-v3-turbo",
+      "snippet": "Based on OpenAI&#x27;s optimized transformer architecture, Whisper Large v3 Turbo features streamlined processing for enhanced speed while preserving the core capabilities of the Whisper family. The model incorporates efficiency improvements and optimizations that reduce computational overhead without sacrificing transcription quality, making it perfect for time-sensitive applications."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "Whisper Large v3 Turbo — OpenASR Models",
+      "url": "https://openasr.org/models/whisper-large-v3-turbo/",
+      "snippet": "This OpenASR repo repackages the original openai/whisper-large-v3-turbo weights as .oasr packs that run natively in the OpenASR runtime with no Python at inference time. For most users the q8_0 build is the recommended default; q4_k is for tighter memory budgets and fp16 is for verification or maximum fidelity."
+    }
+  ]
+}

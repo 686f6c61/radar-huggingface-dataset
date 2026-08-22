@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "AnandHaridas1980/slm125m-live",
+  "slug": "anandharidas1980-slm125m-live",
+  "author": "AnandHaridas1980",
+  "url": "https://huggingface.co/AnandHaridas1980/slm125m-live",
+  "created_at": "2026-08-22T08:43:23.000Z",
+  "updated_at": "2026-08-22T08:43:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "legal",
+    "finance",
+    "small-language-model",
+    "pretrained-from-scratch",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125848320,
+  "parameters_human": "125.8M",
+  "storage_bytes": 251708904,
+  "storage_human": "252 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "slm125m — a 125M legal & financial language model, trained from scratch",
+      "url": "https://slm125m.vercel.app/",
+      "snippet": "A 125.8M-parameter legal & financial language model, built from scratch for $31.76 and RAFT fine-tuned to refuse when the answer isn&#x27;t in the context."
+    },
+    {
+      "title": "GitHub - shivamfet/slm125m · GitHub",
+      "url": "https://github.com/shivamfet/slm125m",
+      "snippet": "A 125M-parameter Llama-style language model trained from scratch on legal and financial text, then fine-tuned twice — once for grounded question answering, once for closed-book. This repo holds the whole pipeline: data collection, cleaning, tokenizer training, pretraining, SFT, evaluation, and the review tooling used to inspect every dataset before training on it."
+    },
+    {
+      "title": "seetha0712/slm125m-live-base · Hugging Face",
+      "url": "https://huggingface.co/seetha0712/slm125m-live-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thesreedath/slm125m-live-base at main - Hugging Face",
+      "url": "https://huggingface.co/thesreedath/slm125m-live-base/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Slm125m Live Base - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/thesreedath/slm125m-live-base",
+      "snippet": "Deep dive into Slm125m Live Base. 📝 Limitations & Considerations •Benchmark scores may vary based on evaluation methodology and hardware configuration. •VRAM requirements are estimates; actual usage depends on quantization and batch size. •FNI scores are relative rankings and may change as new models are added. ⚠License Unknown: Verify licensing terms before commercial use. 🤗 ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "alinecostape/paper_028102820_ocr_freeform",
+  "slug": "alinecostape-paper_028102820_ocr_freeform",
+  "author": "alinecostape",
+  "url": "https://huggingface.co/alinecostape/paper_028102820_ocr_freeform",
+  "created_at": "2026-08-22T08:05:55.000Z",
+  "updated_at": "2026-08-22T08:06:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "critical",
+    "endnote",
+    "first-person-plural",
+    "graphic-visual",
+    "intro-problem-solution-validation-future",
+    "ocr-freeform",
+    "plain-text",
+    "short-punchy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI OCR - Accurate Image-to-Text Extraction | Free.ai",
+      "url": "https://free.ai/ocr/",
+      "snippet": "Extract printed text from any image or scan with free AI OCR. 20+ languages, Tesseract-backed. Best for documents, screenshots, and printed pages - not for describing photos."
+    },
+    {
+      "title": "OCR With Google AI | Google Cloud",
+      "url": "https://cloud.google.com/use-cases/ocr",
+      "snippet": "OCR (Optical Character Recognition) solutions powered by Google AI to help you extract text and business-ready insights, at scale."
+    },
+    {
+      "title": "Free AI OCR Online - Accurate & Layout-Aware - deepseekocr.io",
+      "url": "https://deepseekocr.io/en/tools/ai-ocr",
+      "snippet": "Experience next-generation AI OCR. Instantly convert images and PDFs to text or structured Markdown while preserving the original layout. 100% free, no sign-up needed."
+    },
+    {
+      "title": "Free Document Scanner - Paper to Searchable PDF/Text | Free.ai",
+      "url": "https://free.ai/ocr/document/",
+      "snippet": "Turn scanned pages, photographed contracts, and PDF scans into searchable text with free AI document OCR. Preserves paragraphs and line breaks."
+    },
+    {
+      "title": "AI2Paper - Free AI Tools for Academic Research | OCR, PaperCopilot & More",
+      "url": "https://ai2paper.com/",
+      "snippet": "Free AI-Powered Academic Tools 100% free tools for researchers, students, and academics. Read papers, validate references, and extract text in one ecosystem. Chat with PDFs using PaperCopilot, extract text from images with our free OCR tool, validate academic references, and streamline your research workflow."
+    }
+  ]
+}

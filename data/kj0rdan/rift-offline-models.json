@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kj0rdan/rift-offline-models",
+  "slug": "kj0rdan-rift-offline-models",
+  "author": "Kj0rdan",
+  "url": "https://huggingface.co/Kj0rdan/rift-offline-models",
+  "created_at": "2026-08-22T10:44:32.000Z",
+  "updated_at": "2026-08-22T11:16:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "music",
+    "music-generation",
+    "android",
+    "on-device",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 137644,
+  "storage_human": "137644 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RiftAI — Your AI, your rules",
+      "url": "https://riftai.su/",
+      "snippet": "Your AI, your rules. OpenAI-compatible API built for interactive story-telling and Chatbot UI. Claude, GPT-5.4, Gemini — all in one key. Available worldwide with instant access."
+    },
+    {
+      "title": "GitHub - gorintayaswanth77/Rift: ⚡ Rift — Local RAG document ...",
+      "url": "https://github.com/gorintayaswanth77/Rift",
+      "snippet": "Ingestion & Indexing: Raw documents (PDF, DOCX, TXT) are read, split using a recursive character text chunker, converted into vector representations using a Sentence Transformers embedding model, and persisted to a local Chroma vector database. Retrieval & Inference: When you enter a prompt, Rift executes a similarity search against the Chroma database, extracts the most relevant text chunks ..."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    },
+    {
+      "title": "12 Best Offline AI Models in 2026 | Run AI Models Offline: Complete ...",
+      "url": "https://elephas.app/blog/best-offline-ai-models",
+      "snippet": "This warning highlights why more people are turning to offline AI models that keep everything on their own computers. In this guide to the top 12 best offline AI models of 2026, we&#x27;ll explore the most powerful Offline AI models you can run directly on your Mac. Without needing an internet connection or paying any subscription fees."
+    },
+    {
+      "title": "How to Run AI Models Locally in 2026 (8 Tested Offline Tools)",
+      "url": "https://aithinkerlab.com/run-ai-models-locally-offline-privacy-guide/",
+      "snippet": "Run AI models locally in 2026 — free, offline, no GPU. We tested 8 tools (Ollama, LM Studio, GPT4All, Jan) + the best models for 8GB RAM. Updated June."
+    }
+  ]
+}

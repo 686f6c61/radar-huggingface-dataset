@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Taeri077/dama-aibrain-mlx",
+  "slug": "taeri077-dama-aibrain-mlx",
+  "author": "Taeri077",
+  "url": "https://huggingface.co/Taeri077/dama-aibrain-mlx",
+  "created_at": "2026-08-22T01:26:16.000Z",
+  "updated_at": "2026-08-22T05:30:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Taeri077/dama-aibrain",
+    "base_model:quantized:Taeri077/dama-aibrain",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1301990691,
+  "parameters_human": "1.30B",
+  "storage_bytes": 4950433799,
+  "storage_human": "5.0 GB",
+  "base_model": "Taeri077/dama-aibrain",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taeri077/dama-aibrain-mlx - Hugging Face",
+      "url": "https://huggingface.co/Taeri077/dama-aibrain-mlx",
+      "snippet": "Taeri077 / dama-aibrain-mlx like 0 Text Generation MLX Safetensors Transformers English gemma4 image-text-to-text unsloth conversational 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Taeri077 (Taeri Jakga) - Hugging Face",
+      "url": "https://huggingface.co/Taeri077",
+      "snippet": "User profile of Taeri Jakga on Hugging Face"
+    },
+    {
+      "title": "taeri077 · GitHub",
+      "url": "https://github.com/taeri077/",
+      "snippet": "taeri077 has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - ml-explore/mlx: MLX: An array framework for Apple silicon",
+      "url": "https://github.com/ml-explore/mlx",
+      "snippet": "The MLX examples repo has a variety of examples, including: Transformer language model training. Large-scale text generation with LLaMA and finetuning with LoRA. Generating images with Stable Diffusion. Speech recognition with OpenAI&#x27;s Whisper."
+    },
+    {
+      "title": "Models - MLX Server",
+      "url": "https://www.mlxserver.com/models",
+      "snippet": "Models To view all of the models, check out mlx-lm on Huggingface. Our MLX server uses all of the models supported by the mlx-community. Popular Models Here&#x27;s a list of some of the most popular models and their usage: Mistral 7B Instruct Nous Research"
+    }
+  ]
+}

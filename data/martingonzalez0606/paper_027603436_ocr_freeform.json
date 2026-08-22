@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "martingonzalez0606/paper_027603436_ocr_freeform",
+  "slug": "martingonzalez0606-paper_027603436_ocr_freeform",
+  "author": "martingonzalez0606",
+  "url": "https://huggingface.co/martingonzalez0606/paper_027603436_ocr_freeform",
+  "created_at": "2026-08-22T08:31:06.000Z",
+  "updated_at": "2026-08-22T08:31:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "critical",
+    "graphic-visual",
+    "intro-related-method-exp-conclusion",
+    "markdown",
+    "medium-balanced",
+    "mixed-active-passive",
+    "numeric-apa",
+    "ocr-freeform",
+    "theoretical-rigorous",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online OCR - Image to Text Converter with AI | OCRNeo",
+      "url": "https://ocrneo.net/",
+      "snippet": "Free online OCR tool to extract text from images, screenshots, and PDFs. AI-powered text recognition with 20+ languages. No signup, no upload limits — try it now."
+    },
+    {
+      "title": "Freeform Preference Learning for Robotic Manipulation",
+      "url": "https://arxiv.org/abs/2606.32027",
+      "snippet": "Reward design remains a central bottleneck for autonomous robot policy improvement, especially in long-horizon manipulation tasks where sparse success labels provide too little signal and binary preferences collapse many competing notions of quality into one ambiguous signal. We introduce Freeform Preference Learning (FPL), a method for learning robot policies from freeform human preferences ..."
+    },
+    {
+      "title": "Free AI OCR - Accurate Image-to-Text Extraction | Free.ai",
+      "url": "https://free.ai/ocr/",
+      "snippet": "Extract printed text from any image or scan with free AI OCR. 20+ languages, Tesseract-backed. Best for documents, screenshots, and printed pages - not for describing photos."
+    },
+    {
+      "title": "Free OCR Tool - Extract Text from Image, PDF, Webpage",
+      "url": "https://freetextextract.com/",
+      "snippet": "Free online OCR tool. Extract text from images, PDFs, and webpages instantly. No signup, 100+ languages, fast AI-powered extraction."
+    },
+    {
+      "title": "Free AI OCR — Convert Any Image to Text",
+      "url": "https://ocr.getgeni.us/",
+      "snippet": "AI-powered OCR that reads handwriting, preserves tables, and extracts structured data. Better than standard OCR."
+    }
+  ]
+}

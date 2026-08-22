@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Azzam15/fanar-9b-fp8-w8a16-mixed",
+  "slug": "azzam15-fanar-9b-fp8-w8a16-mixed",
+  "author": "Azzam15",
+  "url": "https://huggingface.co/Azzam15/fanar-9b-fp8-w8a16-mixed",
+  "created_at": "2026-08-22T10:37:07.000Z",
+  "updated_at": "2026-08-22T10:37:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "fp8",
+    "w8a16",
+    "modelopt",
+    "quantized",
+    "arabic-calibrated",
+    "calib-mixed",
+    "base_model:QCRI/Fanar-1-9B-Instruct",
+    "base_model:quantized:QCRI/Fanar-1-9B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8783871488,
+  "parameters_human": "8.78B",
+  "storage_bytes": 9264424533,
+  "storage_human": "9.3 GB",
+  "base_model": "QCRI/Fanar-1-9B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NouraAlqasim/fanar-9b-fp8-mixed · Hugging Face",
+      "url": "https://huggingface.co/NouraAlqasim/fanar-9b-fp8-mixed",
+      "snippet": "FP8 weight scales are data-free. What the calibration variety changes is the static per-tensor activation scales, exported as input_scale. Sibling checkpoints -fp8-msa, -fp8-gulf and -fp8-mixed differ in exactly that and nothing else."
+    },
+    {
+      "title": "QCRI/Fanar-1-9B · Hugging Face",
+      "url": "https://huggingface.co/QCRI/Fanar-1-9B",
+      "snippet": "The instruction-tuned version of Fanar-1-9B is a core component of the Fanar GenAI platform that offers a suite of capabilities including image generation, video and image understanding, deep thinking, advanced text-to-speech (TTS) and automatic-speech-recognition (ASR), attribution and fact-checking, Islamic RAG, among several other features."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "Fanar 9B: Private Arabic-English LLM for Ops AI",
+      "url": "https://llm.co/llms/fanar-1-9b-instruct",
+      "snippet": "Fanar-1-9B-Instruct Arabic-English 9B model for building private, culturally-aware conversational AI and ops automation in environments where data residency and dialect support matter."
+    },
+    {
+      "title": "modelmap",
+      "url": "https://modelmap.cc/",
+      "snippet": "Interactive, animated architecture maps for any Hugging Face model — and whether it fits on your GPU."
+    }
+  ]
+}

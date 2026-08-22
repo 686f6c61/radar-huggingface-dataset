@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jackxinning/Leanly_AI",
+  "slug": "jackxinning-leanly_ai",
+  "author": "jackxinning",
+  "url": "https://huggingface.co/jackxinning/Leanly_AI",
+  "created_at": "2026-08-22T05:02:14.000Z",
+  "updated_at": "2026-08-22T05:02:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "medical",
+    "question-answering",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 153626201877,
+  "storage_human": "153.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jackxinning/Leanly_AI · Hugging Face",
+      "url": "https://huggingface.co/jackxinning/Leanly_AI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jackxinning/Leanly_AI at main - Hugging Face",
+      "url": "https://huggingface.co/jackxinning/Leanly_AI/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Leanly_AI: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/leanly-ai-jackxinning",
+      "snippet": "Overview Leanly_AI is a large language model designed specifically for clinical weight management settings, developed jointly by the Department of Endocrinology and Metabolism and the Department of General Practice at Provincial Hospital Affiliated to Fuzhou University by jackxinning and collaborators Xin Ning and Wen Junping. The model specializes in providing standardized, clinically ..."
+    },
+    {
+      "title": "Leanly_AI by jackxinning | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/jackxinning-leanly-ai",
+      "snippet": "Explore Leanly_AI by jackxinning — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "Leanly AI - Interfaze",
+      "url": "https://interfaze.ai/models/jackxinningleanlyai",
+      "snippet": "Leanly AI by jackxinning, a question-answering model. Understand and compare features, benchmarks, and capabilities."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rhombus18/rhododendron-analyst",
+  "slug": "rhombus18-rhododendron-analyst",
+  "author": "rhombus18",
+  "url": "https://huggingface.co/rhombus18/rhododendron-analyst",
+  "created_at": "2026-08-22T07:09:12.000Z",
+  "updated_at": "2026-08-22T07:09:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rhombus18 (Han Muyang) - Hugging Face",
+      "url": "https://huggingface.co/rhombus18",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 11 hours ago ... updated a model about 11 hours ago"
+    },
+    {
+      "title": "rhombus18/Rhododendron-efficiency-1o · Hugging Face",
+      "url": "https://huggingface.co/rhombus18/rhododendron-effeciency-16bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Rhombus-AI/.github",
+      "url": "https://github.com/Rhombus-AI/.github",
+      "snippet": "Rhombus is a self-reliant AI organization founded by a 16-year-old, Akshit, with a mission to learn by building, and build by inventing. We don&#x27;t wait for tools — we make our own. We don&#x27;t just fine-tune — we research and train models from scratch. Rhombus is built to be like Iron Man&#x27;s lab — anything we need, we build ourselves."
+    },
+    {
+      "title": "Rhombus AI",
+      "url": "https://rhombusai.com/",
+      "snippet": "Our AI-powered platform turns natural language prompts into complete data pipelines. With ingestion, transformation, and orchestration done instantly, you&#x27;ll do the work of 10+ engineers without writing a single line of code."
+    },
+    {
+      "title": "Rhombus18 · GitHub",
+      "url": "https://github.com/Rhombus18",
+      "snippet": "GitHub is where Rhombus18 builds software. Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users."
+    }
+  ]
+}

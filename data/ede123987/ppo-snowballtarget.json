@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ede123987/ppo-SnowballTarget",
+  "slug": "ede123987-ppo-snowballtarget",
+  "author": "Ede123987",
+  "url": "https://huggingface.co/Ede123987/ppo-SnowballTarget",
+  "created_at": "2026-08-22T08:05:06.000Z",
+  "updated_at": "2026-08-22T08:05:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8373248,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adilbai/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/ppo-SnowballTarget",
+      "snippet": "This model is a Proximal Policy Optimization (PPO) agent trained to play the SnowballTarget environment from Unity ML-Agents. The agent, named Julien the Bear 🐻, learns to accurately throw snowballs at spawning targets to maximize rewards."
+    },
+    {
+      "title": "aiartwork/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/aiartwork/ppo-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "ppo-SnowballTarget huggingface.co api & akdeniz27 ppo-SnowballTarget ...",
+      "url": "https://www.toolify.ai/ai-model/akdeniz27-ppo-snowballtarget",
+      "snippet": "ppo-SnowballTarget is an open source model from GitHub that offers a free installation service, and any user can find ppo-SnowballTarget on GitHub to install. At the same time, huggingface.co provides the effect of ppo-SnowballTarget install, users can directly use ppo-SnowballTarget installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "greg-szopinski/ppo-SnowballTarget - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/269310",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library. Usage (with ML-Agents) The Documentation: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/"
+    },
+    {
+      "title": "SnowballTarget1---RL---UnityMLagents/README.md at main - GitHub",
+      "url": "https://github.com/dhruvil122/SnowballTarget1---RL---UnityMLagents/blob/main/README.md",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    }
+  ]
+}

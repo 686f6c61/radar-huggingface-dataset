@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "prabhu09/KisanSLM-GGUF",
+  "slug": "prabhu09-kisanslm-gguf",
+  "author": "prabhu09",
+  "url": "https://huggingface.co/prabhu09/KisanSLM-GGUF",
+  "created_at": "2026-08-22T06:57:04.000Z",
+  "updated_at": "2026-08-22T06:57:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 1980391616,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "prabhu09 (Prabhudatta Patra) - Hugging Face",
+      "url": "https://huggingface.co/prabhu09",
+      "snippet": "Recent Activity updated a modelabout 2 months ago prabhu09/gita_adapted_base published a modelabout 2 months ago prabhu09/gita_adapted_base updated a model2 months ago prabhu09/gemma-4-E2B-it-gita-gguf View all activity"
+    },
+    {
+      "title": "GitHub - local-ai-zone/local-ai-zone.github.io: Kimi K3, deepseek v4 ...",
+      "url": "https://github.com/local-ai-zone/local-ai-zone.github.io",
+      "snippet": "GGUF Model Discovery A professional web application for discovering and browsing GGUF (GPT-Generated Unified Format) machine learning models. Browse thousands of quantized AI models with detailed metadata, engagement metrics, and direct download links. Live site: https://local-ai-zone.github.io"
+    },
+    {
+      "title": "KisanSLM-Qwen3-1-7b-GGUF - aikosh.indiaai.gov.in",
+      "url": "https://aikosh.indiaai.gov.in/home/models/details/kisanslm_qwen3_1_7b_gguf.html",
+      "snippet": "KisanSLM-Qwen3-1-7b-GGUF This is a zipped fine tune of Qwen3 1.7b model. KisanSLM is a compact domain-specific language model for agricultural advisory in India. Fine-tuned on the Kisan Call Center (KCC) dataset, it learns from millions of farmer queries and expert responses on crops, pests, soil, irrigation, and fertilizers. Designed for low-resource environments, KisanSLM can run on edge ..."
+    }
+  ]
+}

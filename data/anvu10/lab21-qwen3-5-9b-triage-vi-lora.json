@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AnVu10/lab21-qwen3.5-9b-triage-vi-lora",
+  "slug": "anvu10-lab21-qwen3-5-9b-triage-vi-lora",
+  "author": "AnVu10",
+  "url": "https://huggingface.co/AnVu10/lab21-qwen3.5-9b-triage-vi-lora",
+  "created_at": "2026-08-22T03:26:38.000Z",
+  "updated_at": "2026-08-22T03:27:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3.5",
+    "text-classification",
+    "customer-support",
+    "lab21",
+    "vi",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193170397,
+  "storage_human": "193 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tqhung-ai/lab21-2A202601683: VinUni AICB Day 21 (Track 3 ...",
+      "url": "https://github.com/tqhung-ai/lab21-2A202601683/tree/main",
+      "snippet": "VinUni AICB Day 21 (Track 3) — Fine-tuning LLMs with LoRA/QLoRA. Three-baseline regression-gate lab for Qwen3.5. - tqhung-ai/lab21-2A202601683"
+    },
+    {
+      "title": "How a 9B‑parameter Qwen3.5 model achieves full‑auto da… | BestHub",
+      "url": "https://www.besthub.dev/articles/how-a-9b-parameter-qwen3-5-model-achieves-full-auto-data-analysis-on-a-consumer-gpu-a6019fc61693",
+      "snippet": "The model acts as the \"brain\"; the Data Analyst framework provides six tools that translate model intentions into file I/O and code execution. Without the framework the model&#x27;s analysis ability cannot be exercised; without LoRA fine‑tuning the original Qwen3.5‑9B model stalls after each tool call, producing no useful output."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.5-9b",
+      "snippet": "Supported Parameters The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.5-9B or leave it blank instead. messages (array): A list of messages comprising the conversation so ..."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

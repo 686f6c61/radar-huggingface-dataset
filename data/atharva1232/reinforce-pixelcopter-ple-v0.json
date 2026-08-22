@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Atharva1232/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "atharva1232-reinforce-pixelcopter-ple-v0",
+  "author": "Atharva1232",
+  "url": "https://huggingface.co/Atharva1232/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-08-22T09:55:47.000Z",
+  "updated_at": "2026-08-22T09:59:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40125,
+  "storage_human": "40125 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aathi07/Reinforce-PixelCopter · Hugging Face",
+      "url": "https://huggingface.co/Aathi07/Reinforce-PixelCopter",
+      "snippet": "Aathi07 / Reinforce-PixelCopter like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "Bear-ai/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/Bear-ai/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "RL-Learn/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/RL-Learn/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "PDF Reinforcement Learning for PixelCopter - Stanford University",
+      "url": "https://web.stanford.edu/class/aa228/reports/2019/final11.pdf",
+      "snippet": "Abstract Pixelcopter is a PyGame Learning Environment side-scroller and simplified ver-sion of a classic arcade game. While the rules are simple, the game is deceptively challenging to solve using artificial intelligence. Most current approaches either simplify the game model or use deep learning. We experiment with using sig-nificantly less computationally expensive methods on the original ..."
+    },
+    {
+      "title": "darthrevenge/Reinforce-Pixelcopter-PLE-v0 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/140108",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning ..."
+    }
+  ]
+}

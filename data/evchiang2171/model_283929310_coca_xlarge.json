@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "evchiang2171/model_283929310_coca_xlarge",
+  "slug": "evchiang2171-model_283929310_coca_xlarge",
+  "author": "evchiang2171",
+  "url": "https://huggingface.co/evchiang2171/model_283929310_coca_xlarge",
+  "created_at": "2026-08-22T04:40:51.000Z",
+  "updated_at": "2026-08-22T04:40:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "classification",
+    "coca",
+    "cosine",
+    "cross-attention",
+    "instancenorm",
+    "kaiming-normal",
+    "linear",
+    "sgd",
+    "xlarge",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abstract CoCa: Contrastive Captioners are Image-Text Foundati",
+      "url": "https://arxiv.org/pdf/2205.01917",
+      "snippet": "Abstract Exploring large-scale pretrained foundation models is of significant interest in computer vision because these models can be quickly transferred to many down-stream tasks. This paper presents Contrastive Captioner (CoCa), a minimalist design to pretrain an image-text encoder-decoder foundation model jointly with contrastive loss and captioning loss, thereby subsuming model ..."
+    },
+    {
+      "title": "CoCa: Contrastive Captioners are Image-Text Foundation Models",
+      "url": "https://arxiv.org/abs/2205.01917",
+      "snippet": "Exploring large-scale pretrained foundation models is of significant interest in computer vision because these models can be quickly transferred to many downstream tasks. This paper presents Contrastive Captioner (CoCa), a minimalist design to pretrain an image-text encoder-decoder foundation model jointly with contrastive loss and captioning loss, thereby subsuming model capabilities from ..."
+    },
+    {
+      "title": "CoCa: Contrastive Captioners are Image-Text Foundation Models",
+      "url": "https://ar5iv.labs.arxiv.org/html/2205.01917",
+      "snippet": "This paper presents Co ntrastive Ca ptioner (CoCa), a minimalist design to pretrain an image-text encoder-decoder foundation model jointly with contrastive loss and captioning loss, thereby subsuming model capabilities from contrastive approaches like CLIP and generative methods like SimVLM."
+    },
+    {
+      "title": "Coca-Cola&#x27;s World Cup AI Avatar Showcases Brand&#x27;s Cutting-edge AI ...",
+      "url": "https://www.tmcnet.com/usubmit/2026/06/24/10404785.htm",
+      "snippet": "While many World Cup-themed AI marketing activations have focused primarily on AI-generated content, Coca-Cola China&#x27;s campaign brings together both an AIGC-powered creative film and a virtual football ambassador. The initiative demonstrates how AI can support not only content creation but also consumer engagement at scale."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/?hl=en",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    }
+  ]
+}

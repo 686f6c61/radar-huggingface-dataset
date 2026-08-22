@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "you4809/dama-aibrain",
+  "slug": "you4809-dama-aibrain",
+  "author": "you4809",
+  "url": "https://huggingface.co/you4809/dama-aibrain",
+  "created_at": "2026-08-22T04:45:46.000Z",
+  "updated_at": "2026-08-22T04:45:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32169781,
+  "storage_human": "32 MB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WonseokJayJung/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/WonseokJayJung/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Junfeel/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/Junfeel/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dama-aibrain API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ohyou/dama-aibrain",
+      "snippet": "Run dama-aibrain with FriendliAI inference. This gemma4 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "DAMA: Data- and Model-aware Alignment of Multi-modal LLMs",
+      "url": "https://arxiv.org/html/2502.01943v2",
+      "snippet": "By combining these strategies via element-wise multiplication, DAMA enables real-time adaptation to both data hardness and model responsiveness, demonstrating strong alignment performance across various evaluation benchmarks."
+    }
+  ]
+}

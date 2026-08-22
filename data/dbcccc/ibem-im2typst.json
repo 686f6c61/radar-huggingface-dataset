@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dbcccc/IBEM-im2typst",
+  "slug": "dbcccc-ibem-im2typst",
+  "author": "dbcccc",
+  "url": "https://huggingface.co/dbcccc/IBEM-im2typst",
+  "created_at": "2026-08-22T05:54:41.000Z",
+  "updated_at": "2026-08-22T05:55:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "image-to-text",
+    "mathematical-expression-recognition",
+    "math-ocr",
+    "typst",
+    "browser-inference",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75273972,
+  "storage_human": "75 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dbcccc/IBEM-im2typst · Hugging Face",
+      "url": "https://huggingface.co/dbcccc/IBEM-im2typst",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "IBM AI models",
+      "url": "https://www.ibm.com/solutions/ai-models",
+      "snippet": "IBM Model Gateway provides secure, unified access to leading models from providers like OpenAI and Anthropic, offering flexibility, control and cost optimization."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "All LLM Models | LLMIndex - Comprehensive AI Model Database | LLMIndex",
+      "url": "https://llmindex.net/models",
+      "snippet": "Browse and compare 600+ large language models. The most comprehensive AI model database."
+    }
+  ]
+}

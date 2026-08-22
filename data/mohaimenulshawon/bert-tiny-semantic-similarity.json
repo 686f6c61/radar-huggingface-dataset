@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mohaimenulshawon/bert-tiny-semantic-similarity",
+  "slug": "mohaimenulshawon-bert-tiny-semantic-similarity",
+  "author": "mohaimenulshawon",
+  "url": "https://huggingface.co/mohaimenulshawon/bert-tiny-semantic-similarity",
+  "created_at": "2026-08-22T04:55:26.000Z",
+  "updated_at": "2026-08-22T05:03:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "semantic-similarity",
+    "paraphrase-detection",
+    "bert-tiny",
+    "sentence-pair-classification",
+    "text-classification",
+    "en",
+    "base_model:prajjwal1/bert-tiny",
+    "base_model:finetune:prajjwal1/bert-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4386178,
+  "parameters_human": "4.4M",
+  "storage_bytes": 17554505,
+  "storage_human": "18 MB",
+  "base_model": "prajjwal1/bert-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Semantic similarity prediction is better than other semantic similarity ...",
+      "url": "https://arxiv.org/html/2309.12697v2",
+      "snippet": "Abstract Semantic similarity between natural language texts is typically measured either by looking at the overlap between subsequences (e.g., BLEU) or by using embeddings (e.g., BERTScore, S-BERT). Within this paper, we argue that when we are only interested in measuring the semantic similarity, it is better to directly predict the similarity using a fine-tuned model for such a task. Using a ..."
+    },
+    {
+      "title": "GitHub - yinmingjun/TinyBERT",
+      "url": "https://github.com/yinmingjun/TinyBERT",
+      "snippet": "Data Augmentation Data augmentation aims to expand the task-specific training set. Learning more task-related examples, the generalization capabilities of student model can be further improved. We combine a pre-trained language model BERT and GloVe embeddings to do word-level replacement for data augmentation."
+    },
+    {
+      "title": "Sentence Similarity Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=sentence-similarity",
+      "snippet": "Explore machine learning models. nomic-ai/nomic-embed-text-v2-moe-GGUF"
+    },
+    {
+      "title": "Semantic Textual Similarity — Sentence Transformers documentation",
+      "url": "https://www.sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html",
+      "snippet": "Semantic Textual Similarity For Semantic Textual Similarity (STS), we want to produce embeddings for all texts involved and calculate the similarities between them. The text pairs with the highest similarity score are most semantically similar. See also the Computing Embeddings documentation for more advanced details on getting embedding scores."
+    },
+    {
+      "title": "Sentence Similarity using BERT Transformer - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/sentence-similarity-using-bert-transformer/",
+      "snippet": "Conventional techniques for assessing sentence similarity frequently struggle to grasp the intricate nuances and semantic connections found within sentences. With the rise of Transformer-based models such as BERT, RoBERTa, and GPT, there is potential to improve sentence similarity measurements with increased accuracy and contextual awareness. The article demonstrates how to leverage ..."
+    }
+  ]
+}

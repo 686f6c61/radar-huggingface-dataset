@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-tcsegformer-random-fold2",
+  "slug": "sugam24-geonusaf-tcsegformer-random-fold2",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-random-fold2",
+  "created_at": "2026-08-22T08:33:47.000Z",
+  "updated_at": "2026-08-22T09:49:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "semantic-segmentation",
+    "remote-sensing",
+    "segformer",
+    "geonusaf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 716429091,
+  "storage_human": "716 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sugam24/geonusaf-tcsegformer-random-fold1 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-random-fold1",
+      "snippet": "GeoNUSAF TC-SegFormer -- random split, fold 1 Kathmandu Valley land-use segmentation, 6 classes, ignore_index=255, 512x512 @ 0.586 m/px."
+    },
+    {
+      "title": "sugam24/geonusaf-unetformer-r18-random-fold2 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-unetformer-r18-random-fold2",
+      "snippet": "GeoNUSAF - UNetFormer (ResNet-18) - random split, fold 2 Kathmandu Valley land-use segmentation, 6 classes, ignore_index=255."
+    },
+    {
+      "title": "iamgroot2324 (Sugam Khatiwada) · GitHub",
+      "url": "https://github.com/iamgroot2324/",
+      "snippet": "Popular repositories gitsugam Public sugam Public sugam24 Public iamgroot2324 Public Config files for my GitHub profile."
+    },
+    {
+      "title": "fold2 model | Kaggle",
+      "url": "https://www.kaggle.com/datasets/george759/fold2-model/code",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

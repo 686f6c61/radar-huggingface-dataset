@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "giorgiarizzo/paper_013688939_multimodal_reasoning",
+  "slug": "giorgiarizzo-paper_013688939_multimodal_reasoning",
+  "author": "giorgiarizzo",
+  "url": "https://huggingface.co/giorgiarizzo/paper_013688939_multimodal_reasoning",
+  "created_at": "2026-08-22T06:25:18.000Z",
+  "updated_at": "2026-08-22T06:25:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "critical",
+    "endnote",
+    "intro-related-method-exp-conclusion",
+    "latex-neurips",
+    "mixed-active-passive",
+    "multimodal-reasoning",
+    "narrative-progressive",
+    "unstructured-narrative",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2501.09686] Towards Large Reasoning Models: A Survey of Reinforced ...",
+      "url": "https://arxiv.org/abs/2501.09686",
+      "snippet": "Therefore, the train-time and test-time scaling combined to show a new research frontier -- a path toward Large Reasoning Model. The introduction of OpenAI&#x27;s o1 series marks a significant milestone in this research direction."
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    },
+    {
+      "title": "Awesome-MLLM-Reasoning-Collection - GitHub",
+      "url": "https://github.com/lwpyh/Awesome-MLLM-Reasoning-Collection/",
+      "snippet": "👏 Welcome to the Awesome-MLLM-Reasoning-Collections repository! This repository is a carefully curated collection of papers, code, datasets, benchmarks, and resources focused on reasoning within Multimodal Large Language Models (MLLMs)."
+    },
+    {
+      "title": "LLM Research Papers: The 2026 List (January to May)",
+      "url": "https://magazine.sebastianraschka.com/p/llm-research-papers-2026-part1",
+      "snippet": "A January-May 2026 list of notable LLM research papers, covering new models, training methods, agents, reasoning, and efficiency improvements."
+    },
+    {
+      "title": "Multimodal Large Language Models: Bridging Perception, Reasoning, and ...",
+      "url": "https://scipapermill.com/2026/07/11/multimodal-large-language-models-bridging-perception-reasoning-and-reality-2/",
+      "snippet": "Latest 43 papers on multimodal large language models: Jul. 11, 2026 Multimodal Large Language Models (MLLMs) are revolutionizing how AI interacts with the world, moving beyond text to understand and generate content across images, video, and audio. Yet, turning this promise into robust, real-world applications presents a fascinating array of challenges, from understanding complex visual scenes ..."
+    }
+  ]
+}

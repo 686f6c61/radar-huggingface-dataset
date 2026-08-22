@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "kimi000/soft-horizon-53",
+  "slug": "kimi000-soft-horizon-53",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/soft-horizon-53",
+  "created_at": "2026-08-22T06:54:56.000Z",
+  "updated_at": "2026-08-22T07:06:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers:ZImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 20522679673,
+  "storage_human": "20.5 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MoonshotAI/Kimi-K3: Open Frontier Intelligence",
+      "url": "https://github.com/MoonshotAI/Kimi-K3",
+      "snippet": "Kimi K3 is an open-weight, native multimodal agentic model and our most capable model to date. It is a 2.8T-parameter model built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a 1-million-token context window. It is the world&#x27;s first open 3T-class model, designed for frontier intelligence across long-horizon coding, knowledge work, and ..."
+    },
+    {
+      "title": "Kimi API Platform",
+      "url": "https://platform.kimi.ai/",
+      "snippet": "Kimi API Platform, providing the 2.8-trillion-parameter Kimi K3 large language model API with a 1M-token context window and Tool Calling. Professional code generation, intelligent dialogue, and visual reasoning to help developers build AI applications."
+    },
+    {
+      "title": "Kimi K3 - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+      "snippet": "Explore Kimi K3 for long-horizon coding, knowledge work, deep reasoning, visual understanding, and a 1M-token context window."
+    },
+    {
+      "title": "Kimi (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kimi_(AI)",
+      "snippet": "Kimi is an artificial intelligence (AI) chatbot and series of large language models developed by Chinese company Moonshot AI. Its first version, released in 2023, was known for supporting up to 128,000 tokens of context. [1] The company released the open-weights Kimi K2 in July 2025, [2][3] and Kimi K3 in July 2026."
+    },
+    {
+      "title": "kimi000 · GitHub",
+      "url": "https://github.com/kimi000/",
+      "snippet": "kimi000 has 2 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

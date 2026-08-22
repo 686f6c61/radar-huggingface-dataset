@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Qwen2.5-Math-1.5B-imatrix-GGUF",
+  "slug": "liodon-ai-qwen2-5-math-1-5b-imatrix-gguf",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Qwen2.5-Math-1.5B-imatrix-GGUF",
+  "created_at": "2026-08-22T08:54:11.000Z",
+  "updated_at": "2026-08-22T09:26:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "local-llm",
+    "llama.cpp",
+    "lm-studio",
+    "quantized",
+    "ollama",
+    "imatrix",
+    "sub-4-bit",
+    "qwen2",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:quantized:Qwen/Qwen2.5-Math-1.5B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 7303863616,
+  "storage_human": "7.3 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-Math-1.5B-Instruct — iMatrix GGUF - Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Qwen2.5-Math-1.5B-Instruct-imatrix-GGUF",
+      "snippet": "Instructions to use liodon-ai/Qwen2.5-Math-1.5B-Instruct-imatrix-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "liodon-ai/Qwen2.5-1.5B-imatrix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Qwen2.5-1.5B-imatrix-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Math: A series of math-specific large language ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Math",
+      "snippet": "The Qwen2.5-Math-72B-Instruct model outperforms the Qwen2-Math-72B-Instruct model by an average margin of 4.4 and 6.1 points in English and Chinese, respectively, establishing itself as the best open-source mathematical model currently available."
+    },
+    {
+      "title": "Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via ...",
+      "url": "https://arxiv.org/html/2409.12122v1",
+      "snippet": "The Qwen2.5-Math-72B-Instruct model outperforms the Qwen2-Math-72B-Instruct model by an average margin of 4.4 and 6.1 points in English and Chinese, respectively, establishing itself as the best open-source mathematical model currently available."
+    },
+    {
+      "title": "Qwen2.5-Math/README.md at main · QwenLM/Qwen2.5-Math · GitHub",
+      "url": "https://github.com/QwenLM/Qwen2.5-Math/blob/main/README.md",
+      "snippet": "The Qwen2.5-Math-72B-Instruct model outperforms the Qwen2-Math-72B-Instruct model by an average margin of 4.4 and 6.1 points in English and Chinese, respectively, establishing itself as the best open-source mathematical model currently available."
+    }
+  ]
+}

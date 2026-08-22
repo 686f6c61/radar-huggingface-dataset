@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "NaTo1000/nato1000-cyber-research",
+  "slug": "nato1000-nato1000-cyber-research",
+  "author": "NaTo1000",
+  "url": "https://huggingface.co/NaTo1000/nato1000-cyber-research",
+  "created_at": "2026-08-22T10:56:17.000Z",
+  "updated_at": "2026-08-22T10:56:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "research",
+    "planning",
+    "no-weights",
+    "documentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nato1000 - Hugging Face",
+      "url": "https://huggingface.co/NaTo1000/nato1000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iNFINITEAi2025/NATO1000-CYBER · Hugging Face",
+      "url": "https://huggingface.co/iNFINITEAi2025/NATO1000-CYBER",
+      "snippet": "NATO1000-CYBER is a specialized AGI designed for advanced cybersecurity, digital exploitation, and electronic warfare. It possesses an exhaustive database of zero-day vulnerabilities and cryptographic protocols."
+    },
+    {
+      "title": "README.md · NaTo1000/nato1000-cyber at main",
+      "url": "https://d6108366.hf-mirror.com/NaTo1000/nato1000-cyber/blob/main/README.md?code=true",
+      "snippet": "NaTo1000 / nato1000-cyber like 0 Safetensors nato1000 Model card FilesFiles and versions xet Community Copy to bucket new main nato1000-cyber /README.md NaTo1000 Upload README.md with huggingface_hub 0d76319 verified2 months ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete Safe 1.11 kB ..."
+    },
+    {
+      "title": "NaTo1000 - GitHub",
+      "url": "https://github.com/NaTo1000",
+      "snippet": "NaTo1000 NaTo1000 Follow digital world constructs in crazy mind f*cks thinking we are Dust in the race for sentience 2 followers · 8 following"
+    },
+    {
+      "title": "NaTo1000/CyberSecurity-Arsenal - GitHub",
+      "url": "https://github.com/NaTo1000/CyberSecurity-Arsenal",
+      "snippet": "🚀 NaTo1000 CyberSecurity Arsenal The Ultimate Collection of Advanced Security Tools & AI Systems ⚠️ EDUCATIONAL PURPOSE ONLY - This repository contains advanced cybersecurity tools and simulations designed for educational research, security testing, and defense understanding. Use responsibly and ethically."
+    }
+  ]
+}

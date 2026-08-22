@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "abhishek-3740/legalmind-clause-classifier",
+  "slug": "abhishek-3740-legalmind-clause-classifier",
+  "author": "abhishek-3740",
+  "url": "https://huggingface.co/abhishek-3740/legalmind-clause-classifier",
+  "created_at": "2026-08-22T08:58:49.000Z",
+  "updated_at": "2026-08-22T08:58:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhishek-3740/LegalMind - GitHub",
+      "url": "https://github.com/abhishek-3740/LegalMind",
+      "snippet": "LegalMind is a high-performance backend system designed for automated contract analysis. It orchestrates a complex 3-stage AI pipeline involving OCR, Vector Search (RAG), and Ensemble Classification to detect legal risks with 97.74% accuracy."
+    },
+    {
+      "title": "LegalMind — AI Contract Intelligence Platform - GitHub",
+      "url": "https://github.com/SlvTechnologies/LegalMind",
+      "snippet": "LegalMind transforms how legal teams and enterprises manage contract risk. Instead of attorneys spending hours manually reviewing each contract clause, LegalMind automatically ingests contracts, segments them into individual clauses, classifies each clause by type, runs AI-powered risk analysis, scores the overall contract risk, suggests specific redline language for problematic clauses, and ..."
+    },
+    {
+      "title": "Clause Classification with LegalMind AI | Kanan Jain posted ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/kanan-jain-762785298_machinelearning-deeplearning-nlp-activity-7487122047261884416-Foss",
+      "snippet": "⚖️ LegalMind AI: Clause Classification in Action As part of my ongoing project LegalMind AI — a legal contract analysis system built on the CUAD dataset (510 contracts, 41 clause categories ..."
+    },
+    {
+      "title": "Nikhil-AI-Labs/legal-contract-classifier-best · Hugging Face",
+      "url": "https://huggingface.co/Nikhil-AI-Labs/legal-contract-classifier-best",
+      "snippet": "🎯 Model Description This ensemble combines two specialized transformer models to achieve 97.74% accuracy in classifying legal contract clauses into risk categories. The model helps legal professionals quickly identify potentially problematic clauses in contracts. Architecture 2-Model Ensemble with Probability Averaging: Legal-BERT-Base (nlpaueb/legal-bert-base-uncased) Fine-tuned on legal ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=CLAUSE",
+      "snippet": "ranajoy98/autotrain-clauses_classifier-2847083405 Text Classification •Updated Jun 13, 2023• 3"
+    }
+  ]
+}

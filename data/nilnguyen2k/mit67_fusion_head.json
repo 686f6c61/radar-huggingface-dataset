@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nilnguyen2k/mit67_fusion_head",
+  "slug": "nilnguyen2k-mit67_fusion_head",
+  "author": "nilnguyen2k",
+  "url": "https://huggingface.co/nilnguyen2k/mit67_fusion_head",
+  "created_at": "2026-08-22T08:07:18.000Z",
+  "updated_at": "2026-08-22T11:08:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1879136,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nilnguyen2k/mit67_fusion_v2 · Hugging Face",
+      "url": "https://huggingface.co/nilnguyen2k/mit67_fusion_v2",
+      "snippet": "nilnguyen2k / mit67_fusion_v2 like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "nilnguyen2k (Quoc Nil Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/nilnguyen2k",
+      "snippet": "Recent Activity updated a model5 minutes ago nilnguyen2k/mit_gnn published a model18 days ago nilnguyen2k/mit_gnn updated a modelabout 1 month ago nilnguyen2k/mit_swin View all activity"
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    }
+  ]
+}

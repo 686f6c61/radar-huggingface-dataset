@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Spcarvalho/model_581404126_deit_xlarge",
+  "slug": "spcarvalho-model_581404126_deit_xlarge",
+  "author": "Spcarvalho",
+  "url": "https://huggingface.co/Spcarvalho/model_581404126_deit_xlarge",
+  "created_at": "2026-08-22T03:07:50.000Z",
+  "updated_at": "2026-08-22T03:07:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "batchnorm",
+    "concat-mlp",
+    "deit",
+    "gelu-tanh",
+    "kaiming-normal",
+    "linear",
+    "multitask",
+    "step",
+    "xlarge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - peternara/deit-Transformers: Official DeiT repository",
+      "url": "https://github.com/peternara/deit-Transformers",
+      "snippet": "Official DeiT repository. Contribute to peternara/deit-Transformers development by creating an account on GitHub."
+    },
+    {
+      "title": "DeiT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/deit",
+      "snippet": "It is used to instantiate a Deit model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the facebook/deit-base-distilled-patch16-224 Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "DeiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/deit",
+      "snippet": "This is the configuration class to store the configuration of a DeiTModel. It is used to instantiate an DeiT model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the DeiT facebook/deit-base-distilled-patch16-224 architecture."
+    },
+    {
+      "title": "Model Zoo and Pre-trained Models | facebookresearch/deit | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/deit/1.2-model-zoo-and-pre-trained-models",
+      "snippet": "Purpose and Scope This document provides a comprehensive overview of all pre-trained models available in the DeiT repository, including their performance metrics, parameter counts, computational requirements, and access methods. It covers models from multiple architecture families, including DeiT, CaiT, ResMLP, PatchConvnet, and DeiT III."
+    }
+  ]
+}

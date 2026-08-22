@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "primitive-ai/Ornith-1.5-35B-A3B-agentic-NVFP4-FP8",
+  "slug": "primitive-ai-ornith-1-5-35b-a3b-agentic-nvfp4-fp8",
+  "author": "primitive-ai",
+  "url": "https://huggingface.co/primitive-ai/Ornith-1.5-35B-A3B-agentic-NVFP4-FP8",
+  "created_at": "2026-08-22T09:35:09.000Z",
+  "updated_at": "2026-08-22T09:35:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "vllm",
+    "compressed-tensors",
+    "nvfp4",
+    "fp8",
+    "mixed-precision",
+    "quantized",
+    "moe",
+    "tool-calling",
+    "agentic",
+    "blackwell",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19845695344,
+  "parameters_human": "19.85B",
+  "storage_bytes": 24243832140,
+  "storage_human": "24.2 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "primitive-ai/Ornith-1.5-35B-A3B-mixed-NVFP4-FP8 · Hugging Face",
+      "url": "https://huggingface.co/primitive-ai/Ornith-1.5-35B-A3B-mixed-NVFP4-FP8",
+      "snippet": "Mixed-precision quantization of ornith-ai/Ornith-1.5-35B-A3B to 22.6 GiB — 3.0× smaller than BF16 — on stock vLLM, with the vision tower and the in-checkpoint MTP block left intact."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B Benchmarks & Context (August 2026)",
+      "url": "https://benchlm.ai/models/ornith-1-5-35b-a3b",
+      "snippet": "Ornith-1.5-35B-A3B by Ornith AI ranks #137 of 224 with a public score of 49.22/100. Evidence: Estimated; this profile shows 18 source-displayable benchmark rows."
+    },
+    {
+      "title": "Ornith 1.5 35B-A3B: Local Deployment, VRAM, and Real-World Tests",
+      "url": "https://www.mindstudio.ai/blog/ornith-1-5-35b-a3b-local-run",
+      "snippet": "Ornith 1.5 35B-A3B is a mixture-of-experts model with 3B active params. Here&#x27;s how it runs locally on an A100, and how it handles agentic and reasoning tests."
+    },
+    {
+      "title": "Ornith-1.5: From Self-Scaffolding to Self-Improvement",
+      "url": "https://ornith.ai/ornith_1_5.html",
+      "snippet": "Ornith-1.5 extends the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts for reinforcement learning, continuously creating new learning experiences from which it can improve."
+    }
+  ]
+}

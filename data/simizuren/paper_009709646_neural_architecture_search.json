@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Simizuren/paper_009709646_neural_architecture_search",
+  "slug": "simizuren-paper_009709646_neural_architecture_search",
+  "author": "Simizuren",
+  "url": "https://huggingface.co/Simizuren/paper_009709646_neural_architecture_search",
+  "created_at": "2026-08-22T03:28:29.000Z",
+  "updated_at": "2026-08-22T03:28:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "detailed-descriptive",
+    "first-person-plural",
+    "graphic-visual",
+    "html",
+    "intro-problem-solution-validation-future",
+    "medium-balanced",
+    "neural-architecture-search",
+    "neutral",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://arxiv.org/abs/2301.08727",
+      "snippet": "In the past decade, advances in deep learning have resulted in breakthroughs in a variety of areas, including computer vision, natural language understanding, speech recognition, and reinforcement learning. Specialized, high-performing neural architectures are crucial to the success of deep learning in these areas. Neural architecture search (NAS), the process of automating the design of ..."
+    },
+    {
+      "title": "Systematic review on neural architecture search - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-024-11058-w",
+      "snippet": "Within the realm of AutoML, Neural Architecture Search (NAS) has emerged as a powerful technique that automates the design of neural network architectures, the core components of ML models. It has recently gained significant attraction due to its capability to discover novel and efficient architectures that surpass human-designed counterparts."
+    },
+    {
+      "title": "LLMatic: Neural Architecture Search via Large Language Models and ...",
+      "url": "https://arxiv.org/abs/2306.01102",
+      "snippet": "Large Language Models (LLMs) have emerged as powerful tools capable of accomplishing a broad spectrum of tasks. Their abilities span numerous areas, and one area where they have made a significant impact is in the domain of code generation. Here, we propose using the coding abilities of LLMs to introduce meaningful variations to code defining neural networks. Meanwhile, Quality-Diversity (QD ..."
+    },
+    {
+      "title": "Neural architecture search: A contemporary literature review for ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0031320323007495",
+      "snippet": "Neural Architecture Search (NAS) automatically traverses the architecture search space for a given task, and generates models that are competitive alongside hand-crafted state-of-the-art architectures."
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://huggingface.co/papers/2301.08727",
+      "snippet": "Join the discussion on this paper page Neural Architecture Search: Insights from 1000 Papers"
+    }
+  ]
+}

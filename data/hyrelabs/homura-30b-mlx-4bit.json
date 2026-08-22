@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "hyrelabs/Homura-30B-MLX-4bit",
+  "slug": "hyrelabs-homura-30b-mlx-4bit",
+  "author": "hyrelabs",
+  "url": "https://huggingface.co/hyrelabs/Homura-30B-MLX-4bit",
+  "created_at": "2026-08-22T04:52:57.000Z",
+  "updated_at": "2026-08-22T05:04:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "muse_glimmer",
+    "hyre",
+    "homura",
+    "agent",
+    "tool-calling",
+    "uncensored",
+    "apple-silicon",
+    "muse-glimmer",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:darkc0de/Muse-Glimmer-30B-heretic",
+    "base_model:quantized:darkc0de/Muse-Glimmer-30B-heretic",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7351638016,
+  "parameters_human": "7.35B",
+  "storage_bytes": 21376127481,
+  "storage_human": "21.4 GB",
+  "base_model": "darkc0de/Muse-Glimmer-30B-heretic",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hyrelabs/Homura-30B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/hyrelabs/Homura-30B-GGUF",
+      "snippet": "HYRE&#x27;s first in-house model — an agent-tuned, uncensored derivative of Meta&#x27;s Muse Glimmer 30B, built for autonomous agents that need tool-calling and a straight-talking voice with no refusal walls."
+    },
+    {
+      "title": "README.md · hyrelabs/Homura-30B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/hyrelabs/Homura-30B-GGUF/blob/main/README.md",
+      "snippet": "HOMURA 30B (炎) HYRE&#x27;s first in-house model — an agent-tuned, uncensored derivative of Meta&#x27;s Muse Glimmer 30B, built for autonomous agents that need tool-calling and a straight-talking voice with no refusal walls."
+    },
+    {
+      "title": "New Local AI Agent Homura 30B Runs Tools Like An Agent - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/new-local-ai-agent-homura-30b-runs-tools-like-julian-goldie-579kc",
+      "snippet": "Homura 30B combines a local AI model with agent capabilities. That means the AI agent can do more than answer questions. It can use tools, process information, and support multi-step workflows."
+    },
+    {
+      "title": "Hyre on X: \"HYRE Weekly: Open Models → Inference Rails → HOMURA This ...",
+      "url": "https://x.com/Hyre_agent/status/2088916946221936955",
+      "snippet": "HYRE Weekly: Open Models → Inference Rails → HOMURA This week, HYRE moved another step closer to becoming the inference layer for open and autonomous AI. → @0xSUPERGEMMA 26B went live on HYRE, running on our own infrastructure and serving real traffic. → Muse Glimmer 30B"
+    },
+    {
+      "title": "Meta Open Sources Muse Glimmer: A 30B Agentic AI Model",
+      "url": "https://www.opensourceforu.com/2026/08/meta-open-sources-muse-glimmer/",
+      "snippet": "Meta&#x27;s 30B-parameter Muse Glimmer runs offline on a single consumer GPU to execute local coding, function calling, and autonomous agent workflows."
+    }
+  ]
+}

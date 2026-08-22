@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yogakusuma/model_161753475_blip_small",
+  "slug": "yogakusuma-model_161753475_blip_small",
+  "author": "yogakusuma",
+  "url": "https://huggingface.co/yogakusuma/model_161753475_blip_small",
+  "created_at": "2026-08-22T03:59:50.000Z",
+  "updated_at": "2026-08-22T03:59:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blip",
+    "grouped-query",
+    "kaiming-normal",
+    "layernorm",
+    "retrieval",
+    "rmsprop",
+    "small",
+    "step",
+    "swish",
+    "tucker",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "For a model in this tier, that is an excellent result on multi-step agentic work.\" Nick Hollon, Software Engineer, LangChain \"Gemini 3.7 Flash achieves on-par performance with mid-sized models such as GPT-5.6-Terra on our benchmarks, but at around half the cost, making it a strong contender in that category.\" Kyrill Hux, Co-Founder, Nunu.ai"
+    },
+    {
+      "title": "GitHub - salesforce/BLIP: PyTorch code for BLIP: Bootstrapping Language ...",
+      "url": "https://github.com/salesforce/BLIP",
+      "snippet": "PyTorch code for BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation - salesforce/BLIP"
+    },
+    {
+      "title": "Models - Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
+      "snippet": "Gemini models are available in either stable, preview, latest, or experimental versions. Note: The following list refers to the model string naming convention as of September, 2025."
+    },
+    {
+      "title": "BLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/blip",
+      "snippet": "BLIP (Bootstrapped Language-Image Pretraining) is a vision-language pretraining (VLP) framework designed for both understanding and generation tasks. Most existing pretrained models are only good at one or the other. It uses a captioner to generate captions and a filter to remove the noisy captions. This increases training data quality and more effectively uses the messy web data."
+    }
+  ]
+}

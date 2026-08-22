@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alphabot2/alphabot2_Aibot2_20Aug_STEA_pick_10fps_act_chunk30_20260821_231610",
+  "slug": "alphabot2-alphabot2_aibot2_20aug_stea_pick_10fps_act_chunk30_20260821_231610",
+  "author": "alphabot2",
+  "url": "https://huggingface.co/alphabot2/alphabot2_Aibot2_20Aug_STEA_pick_10fps_act_chunk30_20260821_231610",
+  "created_at": "2026-08-22T03:40:08.000Z",
+  "updated_at": "2026-08-22T03:41:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:alphabot2/Aibot2_20Aug_STEA_pick_10fps",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51617424,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206505592,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alphabot2 (alphabot2) - Hugging Face",
+      "url": "https://huggingface.co/alphabot2/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... published a model about 2 hours ago"
+    },
+    {
+      "title": "AlphaBot2 - Waveshare Wiki",
+      "url": "https://www.waveshare.com/wiki/AlphaBot2",
+      "snippet": "The AlphaBot2 smart car development kit includes a baseboard AlphaBot2-Base and an adapter board (one of AlphaBot2-Ar, AlphaBot2-Pi, and AlphaBot2-PiZero). By choosing different adapter boards, the car can support access to Arduino, Raspberry Pi 3B, and Raspberry Pi Zero W."
+    },
+    {
+      "title": "alphabot2 (alphabot2) - Hugging Face",
+      "url": "https://huggingface.co/alphabot2/models",
+      "snippet": "alphabot2/ai2robot_full_900_episodes_10fps_JC_intern_matched_from_full_act_20260612_145405 Robotics • 51.6M•Updated 5 days ago• 31"
+    },
+    {
+      "title": "AlphaBot 2 - Robot Details, Use Case and Specifications | Aparobot",
+      "url": "https://www.aparobot.com/robots/alphabot-2",
+      "snippet": "AlphaBot 2 is a general-purpose wheeled humanoid robot developed by Shenzhen-based AI² Robotics (智平方科技) and unveiled in April 2025 as the commercial production model of the AlphaBot series. Designed to automate tasks that are repetitive, hazardous, or undesirable for human workers, AlphaBot 2 adopts a humanoid upper body mounted on a six-wheeled base, standing up to 2,400 mm at full ..."
+    },
+    {
+      "title": "Welcome to AI² Documentation | AI² Robotics",
+      "url": "https://docs.ai2robotics.com/en/",
+      "snippet": "AI² product and technical documentation"
+    }
+  ]
+}

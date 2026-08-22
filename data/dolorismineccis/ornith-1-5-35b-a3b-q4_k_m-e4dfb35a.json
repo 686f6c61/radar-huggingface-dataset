@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "dolorismineccis/Ornith-1.5-35B-A3B-Q4_K_M-e4dfb35a",
+  "slug": "dolorismineccis-ornith-1-5-35b-a3b-q4_k_m-e4dfb35a",
+  "author": "dolorismineccis",
+  "url": "https://huggingface.co/dolorismineccis/Ornith-1.5-35B-A3B-Q4_K_M-e4dfb35a",
+  "created_at": "2026-08-22T03:55:59.000Z",
+  "updated_at": "2026-08-22T04:28:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "q4_k_m",
+    "qwen3.5-moe",
+    "vision-language",
+    "experimental",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 22616285056,
+  "storage_human": "22.6 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai/ornith-1.5 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/ornith-1.5",
+      "snippet": "Ornith-1.5-35B-A3B is a reasoning model: by default the assistant turn opens with a <think> … </think> block before the final answer. The serving recipes below enable a reasoning parser so the chain-of-thought is returned in a separate reasoning_content field, and a tool-call parser so the model&#x27;s <tool_call> blocks are surfaced as OpenAI ..."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.0-35B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.0-35B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith 1.5 35B-A3B: Local Deployment, VRAM, and Real-World Tests",
+      "url": "https://www.mindstudio.ai/blog/ornith-1-5-35b-a3b-local-run",
+      "snippet": "Ornith 1.5 35B-A3B is a mixture-of-experts model with 3B active params. Here&#x27;s how it runs locally on an A100, and how it handles agentic and reasoning tests."
+    },
+    {
+      "title": "AtomicChat/ornith-35b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/ornith-35b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith AI - Open-Source Agentic Coding Models",
+      "url": "https://ornith.online/",
+      "snippet": "Ornith AI guide for self-scaffolding open-source coding models: model sizes, VRAM, benchmarks, local setup, use cases, and agentic coding workflows."
+    }
+  ]
+}

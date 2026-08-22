@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "23donge/bge-small-zh-guard-onnx",
+  "slug": "23donge-bge-small-zh-guard-onnx",
+  "author": "23donge",
+  "url": "https://huggingface.co/23donge/bge-small-zh-guard-onnx",
+  "created_at": "2026-08-22T09:36:28.000Z",
+  "updated_at": "2026-08-22T09:37:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95919898,
+  "storage_human": "96 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-small-en · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en",
+      "snippet": "New reranker model: release cross-encoder models BAAI/bge-reranker-base and BAAI/bge-reranker-large, which are more powerful than embedding model. We recommend to use/fine-tune them to re-rank top-k documents returned by embedding models."
+    },
+    {
+      "title": "GitHub - linxinhong/bge-small",
+      "url": "https://github.com/linxinhong/bge-small",
+      "snippet": "模型： BAAI/bge-small-zh-v1.5 （约 24M 参数，ONNX int8 量化 ~23MB） 向量：512 维，L2 归一化（点积即余弦相似度） 推理：ONNX Runtime CPU，CLS pooling，最长 512 token（超长自动截断） 接口：兼容 OpenAI /v1/embeddings 风格"
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "onnx-community/bge-small-zh-v1.5-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/bge-small-zh-v1.5-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "使用 huggingface-cli 直接下载BAAI/bge-small-zh-v1.5模型上传到docker中",
+      "url": "https://blog.csdn.net/shuchonggang3/article/details/158611783",
+      "snippet": "技术文章大纲：使用 huggingface-cli 下载 BAAI/bge-small-zh-v1.5 模型 主要解决问题： linxu下不能连接外部网络，在windows上面下载，下载完之后放到linux服务器中。 准备工作 确保已安装 Python 环境（建议 3.10 及以上版本， Python 3.6 左右版本已经彻底不适合做 RAG/AI 项目） 准备你在windows下载完之后 安装 Hugging ..."
+    }
+  ]
+}

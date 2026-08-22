@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Walee09/Seedance-2-AI-Video-Generator-free",
+  "slug": "walee09-seedance-2-ai-video-generator-free",
+  "author": "Walee09",
+  "url": "https://huggingface.co/Walee09/Seedance-2-AI-Video-Generator-free",
+  "created_at": "2026-08-22T05:58:52.000Z",
+  "updated_at": "2026-08-22T05:58:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-video",
+    "image-to-video",
+    "multimodal",
+    "diffusion",
+    "dit",
+    "lip-sync",
+    "physics-simulation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1628438,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "free video generator - Kling AI Video Generator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=kling.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=iyBTcSGYalT5oanvf6YudZ6igNZzX6OW0iXSW5tmoOhAN4C8IjJOKCBS4T7SLMpETMcyM0Y%2D29_2iSVqJMTXkDmOG71wdCUoTIZ%2D1lpodw35OwmHxIgfggkvXQy3T2gDTWNG_NCeFcFGixc7Bxy5tRlSN3dNFt_8bzQS1ArDo6w.nEZF_tCXJfu3TlKpaVgCHw&rut=e12ca8cc1ef30088b03e5e37fb304ebc6c6b4912a84ce869e4905397438caa3a&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De85ABZvnnUYm5TrzoiCtqWfjVUCUzogBs26hfEvE1MMgPCjPyK4F7OaheNTqG6eYoF3Z0pF3iu3yulOY8%2DGXJ_PhHxit8HE_GxeAj9uCMoznPPnCG1CbeAvI7GChsKAP2JAgcbjiB03gjbG71v4%2DTQZTie3NetGxE5EBNqtjZgsMXDohYOD8uUhIGT_urW6Qldv5OZDPGr7vzYmQu2nkWhicQgkbE%26u%3DaHR0cHMlM2ElMmYlMmZrbGluZy5haSUyZmFwcCUyZiUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZFlNJTI2dXRtX2NhbXBhaWduJTNkU2VhcmNoLUNQQSUyNnV0bV90ZXJtJTNkY29tbW9uJTI2dXRtX2NvbnRlbnQlM2RFVSUyNmNhbXBhaWduX2lkJTNkNTcxNDcxOTA4JTI2YWRncm91cF9pZCUzZDExNzg2Nzg3OTA3OTE4NzglMjZrZXl3b3JkJTNkYWklMjUyMHZpZGVvJTI1MjBnZW5lcmF0b3IlMjUyMGZyb20lMjUyMHZpZGVvJTI2bXNjbGtpZCUzZDRkYThkOTVjZDU2NDE4MjhmYjlhYjNkNTkzNmMyNDIw%26rlid%3D4da8d95cd5641828fb9ab3d5936c2420&vqd=4-191730272888575826128834947982673852732&iurl=%7B1%7DIG%3DE82B40AA3B984D6B9327857521D1D908%26CID%3D311FC62FF5106ED51703D192F4366F1E%26ID%3DDevEx%2C5037.1",
+      "snippet": "Transform your ideas into 1080p cinematic videos. Just type a prompt or upload an image. Generate native 4K AI videos with cinematic detail, lighting, and clarity in seconds."
+    },
+    {
+      "title": "Free AI Video Generator - Most Realistic Video Generator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=artlist.io&ad_provider=bingv7aa&ad_type=txad&click_metadata=3XFlCGr_dEhbNS09BU0HirOzc0JVw5VnHd3bHgWoKN9qDXQqqAZB0gxEJbRqgj5wRJT33ZTMMS1waejwscbnwSqBeXZIYYqpYAblzm_8uHrvDiyXIbA%2D5AlvOhPu6JPh_iP_D11jtAOYhtNaOCd7MyOIMmpX6qZ4kFQn1yhZevM.Rn82IjxMKJLrjkZqNnkGbA&rut=b6a947f6b37e143bfe9ec50fa28746ba7e594932bfd35fa0d8a8d130400ccf92&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8sn1Lat0vhNM1LmaXZf8R1TVUCUxaOyCYfgIseXSiNHMaElEfuIfZ0Yo5Pe95L4cAXh7Xfu6tEUfmSF8WOFY9adLsKqPIhiHkgaMT77JE9ShOBXedtKMtWuLwoOTh8AttmtWd4elJrTEJYScK1AnAS0HTLw4vyGc_ZvRu3qfbJ0b97pDJY3IJjcyczimZBJG5lh5cx1H1lbbJhlUJMkx3SPftntY%26u%3DaHR0cHMlM2ElMmYlMmZ0b29sa2l0LmFydGxpc3QuaW8lMmZpbWFnZS12aWRlby1nZW5lcmF0b3IlM2Ztb2RlJTNkdmlkZW8lMjZtb2RlbEdyb3VwSUQlM2QzMDIlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2Q2Mjc1NjIwMzYlMjZ1dG1fY29udGVudCUzZDExNDY3OTI0MzA3MTI3MjklMjZ1dG1fdGVybSUzZEJlc3QlMjUyMEFJJTI1MjB2aWRlbyUyNTIwZ2VuZXJhdG9yJTI2a2V5d29yZCUzZEJlc3QlMjUyMEFJJTI1MjB2aWRlbyUyNTIwZ2VuZXJhdG9yJTI2YWQlM2QlMjZtYXRjaHR5cGUlM2RwJTI2ZGV2aWNlJTNkYyUyNm1zY2xraWQlM2Q2MDAyODYwOTE3YjMxZDA4ZjFlYWVjODA1MWJiODczYyUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZEdlbkFJX3RDUEElMjZ1dG1fdGVybSUzZEJlc3QlMjUyMEFJJTI1MjB2aWRlbyUyNTIwZ2VuZXJhdG9yJTI2dXRtX2NvbnRlbnQlM2RBSV9WaWRlb19HZW5lcmF0b3JfJTI1NUJHZW5BSV9WaWRlbyUyNTVE%26rlid%3D6002860917b31d08f1eaec8051bb873c&vqd=4-258068983167593409303315481807296978424&iurl=%7B1%7DIG%3DE82B40AA3B984D6B9327857521D1D908%26CID%3D311FC62FF5106ED51703D192F4366F1E%26ID%3DDevEx%2C5040.1",
+      "snippet": "Discover the AI Video Generator Especially for Video Creators. Easily Transform Text to Video With Artlist&#x27;s High-Quality AI Video Generator for Creators"
+    },
+    {
+      "title": "Seedance 2.0 Video Generator - Seadance AI",
+      "url": "https://seadance.io/seedance-2",
+      "snippet": "Seedance 2.0 is a multimodal AI video model for realistic, high-quality generation, with strong virtual human support, multi-shot consistency, native audio, and cinematic control."
+    },
+    {
+      "title": "Free AI Video Generator | Text & Image to Video | Seedance 2.0",
+      "url": "https://seedance20.cloud/",
+      "snippet": "Seedance 2.0 - ByteDance&#x27;s advanced AI video generator. Create stunning videos from text or images. Free credits to start. Try now!"
+    },
+    {
+      "title": "AI Video Generator - Text to Video, Image to Video & Long Videos",
+      "url": "https://seedancee2.ai/",
+      "snippet": "Create cinematic AI videos with leading models. Generate videos from text, images, and create long continuous AI videos up to 180 seconds with advanced AI video models."
+    }
+  ]
+}

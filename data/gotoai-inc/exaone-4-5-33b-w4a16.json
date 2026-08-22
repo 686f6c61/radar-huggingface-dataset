@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "GotoAI-Inc/EXAONE-4.5-33B-W4A16",
+  "slug": "gotoai-inc-exaone-4-5-33b-w4a16",
+  "author": "GotoAI-Inc",
+  "url": "https://huggingface.co/GotoAI-Inc/EXAONE-4.5-33B-W4A16",
+  "created_at": "2026-08-22T10:35:38.000Z",
+  "updated_at": "2026-08-22T10:53:41.000Z",
+  "license": "exaone",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko",
+    "es",
+    "de",
+    "ja",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "exaone4_5",
+    "image-text-to-text",
+    "lg-ai",
+    "exaone",
+    "compressed-tensors",
+    "w4a16",
+    "int4",
+    "vllm",
+    "conversational",
+    "en",
+    "ko",
+    "es",
+    "de",
+    "ja",
+    "vi",
+    "base_model:LGAI-EXAONE/EXAONE-4.5-33B",
+    "base_model:quantized:LGAI-EXAONE/EXAONE-4.5-33B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34350097664,
+  "parameters_human": "34.35B",
+  "storage_bytes": 22765318701,
+  "storage_human": "22.8 GB",
+  "base_model": "LGAI-EXAONE/EXAONE-4.5-33B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LGAI-EXAONE/EXAONE-4.5-33B · Hugging Face",
+      "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - LG-AI-EXAONE/EXAONE-4.5",
+      "url": "https://github.com/LG-AI-EXAONE/EXAONE-4.5",
+      "snippet": "EXAONE 4.5 We introduce EXAONE 4.5, the first open-weight vision language model developed by LG AI Research. Integrating a dedicated visual encoder into the existing EXAONE 4.0 framework, we expand the model&#x27;s capability toward multimodality. EXAONE 4.5 features 33 billion parameters in total, including 1.2 billion parameters from the vision ..."
+    },
+    {
+      "title": "LGAI-EXAONE/EXAONE-4.5-33B at main - Hugging Face",
+      "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EXAONE 4.5 33B — specs, VRAM, benchmarks (33B) | BestLLMfor",
+      "url": "https://bestllmfor.com/catalog/exaone-45-33b/",
+      "snippet": "EXAONE 4.5 33B: 33B parameters, EXAONE AI Model License license, 256k context, 20 GB VRAM at Q4. Full specs, benchmarks, install command."
+    },
+    {
+      "title": "EXAONE 4.5 33B — LG AI Research | AI Flash Report",
+      "url": "https://aiflashreport.com/models/exaone-4-5-33b/",
+      "snippet": "EXAONE 4.5 33B is a Major Release AI model from LG AI Research, released on April 9, 2026. It has a 262K tokens context window, costs $0.00 per million input tokens, and scores 79.4% on GPQA Diamond."
+    }
+  ]
+}

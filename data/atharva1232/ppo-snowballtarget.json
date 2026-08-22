@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Atharva1232/ppo-SnowballTarget",
+  "slug": "atharva1232-ppo-snowballtarget",
+  "author": "Atharva1232",
+  "url": "https://huggingface.co/Atharva1232/ppo-SnowballTarget",
+  "created_at": "2026-08-22T10:15:16.000Z",
+  "updated_at": "2026-08-22T10:15:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25724352,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "Adilbai/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/ppo-SnowballTarget",
+      "snippet": "This model is a Proximal Policy Optimization (PPO) agent trained to play the SnowballTarget environment from Unity ML-Agents. The agent, named Julien the Bear 🐻, learns to accurately throw snowballs at spawning targets to maximize rewards."
+    },
+    {
+      "title": "JackForAI/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/JackForAI/ppo-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "wharn0424-ppo-snowballtarget · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/wharn0424-ppo-snowballtarget",
+      "snippet": "Star 0 Code Issues Pull requests Run Wharn0424/ppo-SnowballTarget privately via Venice.ai - Zero tracking, uncensored privacy ai uncensored ai-model llm venice-ai wharn0424-ppo-snowballtarget Updated 3 weeks ago"
+    },
+    {
+      "title": "SnowballTarget 环境 · Hugging Face - 抱抱脸文档",
+      "url": "https://hugging-face.cn/learn/deep-rl-course/unit5/snowball-target",
+      "snippet": "SnowballTarget 环境 Pyramids 环境 （可选）深度强化学习中的\"好奇心\"是什么？ 实战 额外奖励：学习使用 Unity 和 ML-Agents 创建你自己的环境 测验 结论 单元6. 机器人环境Actor-Critic方法 单元7. 多智能体和AI对AI导论 单元8. 第1部分 近端策略优化 (PPO)"
+    }
+  ]
+}

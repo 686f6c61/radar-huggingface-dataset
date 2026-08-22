@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ansulev/LFM2.5-2.6B-Uncensored",
+  "slug": "ansulev-lfm2-5-2-6b-uncensored",
+  "author": "ansulev",
+  "url": "https://huggingface.co/ansulev/LFM2.5-2.6B-Uncensored",
+  "created_at": "2026-08-22T04:56:12.000Z",
+  "updated_at": "2026-08-22T04:56:12.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "uncensored",
+    "abliterix",
+    "bf16",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412333046,
+  "storage_human": "5.4 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SC117/LFM2.5-2.6B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/SC117/LFM2.5-2.6B-Uncensored",
+      "snippet": "🌊 About this release LFM2.5-2.6B is a Liquid AI 2.6B-parameter hybrid edge model built for agentic workloads: 30 layers (22 double-gated short-convolution blocks + 8 GQA), a 128K context window, 128K vocabulary, and a ChatML-like template with native <think> reasoning."
+    },
+    {
+      "title": "SC117/LFM2.5-2.6B-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SC117/LFM2.5-2.6B-Uncensored-GGUF",
+      "snippet": "🌊 About this release LFM2.5-2.6B is a Liquid AI 2.6B-parameter hybrid edge model built for agentic workloads: 30 layers (22 double-gated short-convolution blocks + 8 GQA), a 128K context window, 128K vocabulary, and a ChatML-like template with native <think> reasoning."
+    },
+    {
+      "title": "LFM2.5-2.6B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling."
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere — Blog — Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "Today, we release LFM2.5-2.6B, an agentic model that runs entirely on-device. It is small enough to run on a phone, fast enough to stay responsive on a CPU, and capable enough to power agentic workflows: planning, calling tools, and tackling multi-step tasks. Unlike agents that depend on cloud APIs, local agents give you free inference, low latency, and real privacy. Removing the per-token ..."
+    },
+    {
+      "title": "LFM2.5-2.6B — Liquid AI&#x27;s 2.6B on-device agent… | AI/TLDR",
+      "url": "https://ai-tldr.dev/releases/liquidai-lfm2-5-2-6b/",
+      "snippet": "LFM2.5-2.6B is Liquid AI&#x27;s new 2.6B-parameter open-weight language model, built for agentic workflows that run entirely on-device. It ships with base and instruction-tuned checkpoints on Hugging Face, a 128K context window, and support for 16 languages."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Bbkblo/vdub-hindi-dubbing",
+  "slug": "bbkblo-vdub-hindi-dubbing",
+  "author": "Bbkblo",
+  "url": "https://huggingface.co/Bbkblo/vdub-hindi-dubbing",
+  "created_at": "2026-08-22T04:46:31.000Z",
+  "updated_at": "2026-08-22T04:46:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "hi",
+    "zh"
+  ],
+  "tags": [
+    "tts",
+    "dubbing",
+    "voice-cloning",
+    "hindi",
+    "chinese",
+    "onnx",
+    "text-to-speech",
+    "hi",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hindi Dubbing with AI: Translate & Voice Videos in Hindi Instantly - Wavel",
+      "url": "https://wavel.ai/solutions/dubbing/hindi-dubbing",
+      "snippet": "Boost your reach with AI-powered Hindi dubbing. Translate, voice over, and sync your videos in natural Hindi with studio-quality sound online."
+    },
+    {
+      "title": "Dub Any Video Into Hindi With AI — Online + Free - Kapwing",
+      "url": "https://www.kapwing.com/ai/dubbing/hindi",
+      "snippet": "Dub any video or audio into Hindi using AI. Get a highly accurate automatic translation in minutes and pair with a perfect lip sync — online + free to try."
+    },
+    {
+      "title": "AI Hindi Dubbing - Auto embed Hindi dubbing into videos",
+      "url": "https://www.vmeg.ai/tools/ai-dubbing/hindi/",
+      "snippet": "Automatically dub your videos in Hindi and embed the audio in seconds. VMEG uses AI to translate, generate natural voice, and sync it perfectly with your video."
+    },
+    {
+      "title": "Online Video Dubbing in Hindi - Dubverse.ai",
+      "url": "https://dubverse.ai/online-video-dubbing-hindi/",
+      "snippet": "Automatically dub videos from 30+ languages to Hindi. With our industry-leading AI-powered online video dubbing engine."
+    },
+    {
+      "title": "VisualDub | Leading Generative AI & Visual Dubbing for Film & OTT",
+      "url": "https://visualdub.ai/",
+      "snippet": "VisualDub by NeuralGarage provides cinematic-grade generative AI lip-sync and visual dubbing solutions for global film studios, OTT platforms, and advertisers."
+    }
+  ]
+}

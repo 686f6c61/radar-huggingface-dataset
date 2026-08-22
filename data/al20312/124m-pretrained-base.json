@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "al20312/124M-Pretrained-Base",
+  "slug": "al20312-124m-pretrained-base",
+  "author": "al20312",
+  "url": "https://huggingface.co/al20312/124M-Pretrained-Base",
+  "created_at": "2026-08-22T04:32:57.000Z",
+  "updated_at": "2026-08-22T04:33:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SamkeetSangai/GPT_124M: This repository provides an ...",
+      "url": "https://github.com/SamkeetSangai/GPT_124M",
+      "snippet": "This repository provides an implementation of the GPT-124M is a decoder-only transformer model based on OpenAI&#x27;s GPT-2 architecture. - SamkeetSangai/GPT_124M"
+    },
+    {
+      "title": "GitHub - eigencore/Tlama_124M: Tlama (124M) is a language model based ...",
+      "url": "https://github.com/eigencore/Tlama_124M",
+      "snippet": "Tlama (124M) is a language model based on LlaMa3 (127M) optimized by EigenCore. It is designed for computational efficiency and scalability, allowing its use on resource-limited hardware without compromising performance."
+    },
+    {
+      "title": "(PDF) Specializing a 124M-Parameter GPT-2 for Linux ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/christianrss_pdf-specializing-a-124m-parameter-gpt-2-activity-7494224083342172160-yYVa",
+      "snippet": "Specializing a 124M-Parameter GPT-2 for Linux: Continued Pretraining, Canonical Instruction Tuning, and Failure Analysis This work continues the Chris-GPT-2 project, using the 124M model I ..."
+    },
+    {
+      "title": "Pretraining a 124-M Parameter GPT-2 Language Model",
+      "url": "https://wandb.ai/bkkaggle/lm-finetuning/reports/Pretraining-a-124-M-Parameter-GPT-2-Language-Model--VmlldzoyMjg4NzA",
+      "snippet": "I got access to a 128-core TPUv3 pod from the Tensorflow Research Cloud and used it to pre-train a 124m parameter GPT-2 model to a perplexity pretty close to OpenAI&#x27;s results (my pretrained model was trained for about 1/8th of the number of iterations that OpenAI trained their model for and got 21 ppl on OpenWebText compared to 17ppl for OpenAI&#x27;s model), and then pre-trained an ALBERT-style ..."
+    },
+    {
+      "title": "Auto Classes · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/auto",
+      "snippet": "Auto Classes. In many cases, the architecture you want to use can be guessed from the name or the path of the pretrained model you are supplying to the from_pretrained() method. A"
+    }
+  ]
+}

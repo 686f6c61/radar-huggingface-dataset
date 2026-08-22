@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sugam24/geonusaf-tcsegformer-random-fold1",
+  "slug": "sugam24-geonusaf-tcsegformer-random-fold1",
+  "author": "sugam24",
+  "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-random-fold1",
+  "created_at": "2026-08-22T03:22:42.000Z",
+  "updated_at": "2026-08-22T04:07:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "semantic-segmentation",
+    "remote-sensing",
+    "segformer",
+    "geonusaf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 609689970,
+  "storage_human": "610 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sugam24/geonusaf-tcsegformer-block-fold1 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold1",
+      "snippet": "GeoNUSAF TC-SegFormer -- block split, fold 1 Kathmandu Valley land-use segmentation, 6 classes, ignore_index=255, 512x512 @ 0.586 m/px."
+    },
+    {
+      "title": "sugam24/geonusaf-unetformer-r18-random-fold0 · Hugging Face",
+      "url": "https://huggingface.co/sugam24/geonusaf-unetformer-r18-random-fold0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - SarahGeoAI/SegFormer-Segmentation: Scripts for SegFormer-based ...",
+      "url": "https://github.com/SarahGeoAI/SegFormer-Segmentation",
+      "snippet": "This repository contains the scripts used for semantic segmentation of geomorphic landforms (terraces, valley fills, and minebench areas) from remote sensing imagery, comparing SegFormer, SegUNet, and UNet architectures."
+    },
+    {
+      "title": "3 — Run Models in Minutes - audiracmichelle.github.io",
+      "url": "https://audiracmichelle.github.io/huggingface_workshop/section3.html",
+      "snippet": "Section 3 — Run Models in Minutes In this section we get data samples, use pipeline () for inference, and compare the NVIDIA SegFormer and TCD-SegFormer on a test sample."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "markvptv/model_250751636_albef_xlarge",
+  "slug": "markvptv-model_250751636_albef_xlarge",
+  "author": "markvptv",
+  "url": "https://huggingface.co/markvptv/model_250751636_albef_xlarge",
+  "created_at": "2026-08-22T04:24:45.000Z",
+  "updated_at": "2026-08-22T04:24:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "albef",
+    "classification",
+    "dilated",
+    "gelu",
+    "groupnorm",
+    "low-rank",
+    "novograd",
+    "step",
+    "xavier-uniform",
+    "xlarge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "albert/albert-xxlarge-v2 · Hugging Face",
+      "url": "https://huggingface.co/albert/albert-xxlarge-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/albert-xlarge-v2",
+      "snippet": "albert-xlarge-v2 is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the fill-mask task in the transformers library. If you want to learn more about the model&#x27;s architecture, hyperparameters, limitations, and biases, you can find this information on the model&#x27;s dedicated Model Card on the Hugging Face Hub . Here&#x27;s an example API request payload ..."
+    },
+    {
+      "title": "ktrapeznikov/albert-xlarge-v2-squad-v2 · Hugging Face",
+      "url": "https://huggingface.co/ktrapeznikov/albert-xlarge-v2-squad-v2",
+      "snippet": "Model albert-xlarge-v2 fine-tuned on SQuAD V2 using run_squad.py Training Parameters Trained on 4 NVIDIA GeForce RTX 2080 Ti 11Gb"
+    },
+    {
+      "title": "Open-Source ALBERT XLarge v1 Large Language Model - Supports Language ...",
+      "url": "https://model.aibase.com/models/details/1915687177020981250",
+      "snippet": "ALBERT XLarge v1 is a large-scale language model pretrained on English corpora, utilizing a lightweight Transformer architecture with parameter sharing, focusing on masked language modeling and sentence order prediction tasks."
+    },
+    {
+      "title": "lvzhou-mindnlp/albert-xlarge-v2 — AICHINA.news | AI China News",
+      "url": "https://aichina.news/models/lvzhou-mindnlp/albert-xlarge-v2/",
+      "snippet": "ALBERT-xlarge-v2 for MindNLP This repository contains the ALBERT-xlarge-v2 model, adapted for use with the MindNLP library and the Huawei MindSpore framework. ALBERT (A Lite BERT) incorporates two parameter-reduction techniques—factorised embedding parameterisation and cross-layer parameter sharing—to overcome the memory limitations often associated with scaling transformer architectures."
+    }
+  ]
+}

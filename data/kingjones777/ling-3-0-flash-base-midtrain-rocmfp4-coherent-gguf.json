@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Ling-3.0-flash-base-midtrain-ROCmFP4-COHERENT-GGUF",
+  "slug": "kingjones777-ling-3-0-flash-base-midtrain-rocmfp4-coherent-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Ling-3.0-flash-base-midtrain-ROCmFP4-COHERENT-GGUF",
+  "created_at": "2026-08-22T03:30:16.000Z",
+  "updated_at": "2026-08-22T03:34:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "amd-strix-halo",
+    "gfx1151",
+    "ryzen-ai-max",
+    "ryzen-ai-max-395",
+    "radeon-8060s",
+    "mtp",
+    "speculative-decoding",
+    "base-model",
+    "pretrained",
+    "ling",
+    "bailing-hybrid",
+    "quantized",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-flash-base-midtrain",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash-base-midtrain",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 72123713664,
+  "storage_human": "72.1 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash-base-midtrain",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ling-3.0-flash-base-ROCmFP4-COHERENT-GGUF - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Ling-3.0-flash-base-ROCmFP4-COHERENT-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling-3.0-flash-Q4_0_ROCMFP4_STRIX-GGUF - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Ling-3.0-flash-Q4_0_ROCMFP4_STRIX-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "Ling-3.0-flash-base-midtrain · Models",
+      "url": "https://www.modelscope.cn/models/inclusionAI/Ling-3.0-flash-base-midtrain",
+      "snippet": "Base Model Evaluation To systematically assess the capabilities of the base model, we use a self-built comprehensive benchmark suite covering several key domains, including mathematics, coding, reasoning, multilingual understanding, and long-context comprehension. The performance of the pretrained base checkpoint, i.e., Ling-3.-flash-base, is compared below:"
+    },
+    {
+      "title": "GitHub - inclusionAI/Ling: Ling is a MoE LLM provided and open-sourced ...",
+      "url": "https://github.com/inclusionAI/Ling",
+      "snippet": "Ling is a MoE LLM provided and open-sourced by InclusionAI. We introduce two different sizes, which are Ling-lite and Ling-plus. Ling-lite has 16.8 billion parameters with 2.75 billion activated parameters, while Ling-plus has 290 billion parameters with 28.8 billion activated parameters. Both models demonstrate impressive performance compared to existing models in the industry. Their ..."
+    }
+  ]
+}

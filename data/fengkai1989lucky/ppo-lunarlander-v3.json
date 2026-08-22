@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fengkai1989Lucky/ppo-LunarLander-v3",
+  "slug": "fengkai1989lucky-ppo-lunarlander-v3",
+  "author": "fengkai1989Lucky",
+  "url": "https://huggingface.co/fengkai1989Lucky/ppo-LunarLander-v3",
+  "created_at": "2026-08-22T03:00:32.000Z",
+  "updated_at": "2026-08-22T03:01:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284273,
+  "storage_human": "284273 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "poisqy/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/poisqy/ppo-LunarLander-v3",
+      "snippet": "Ton navigateur ne supporte pas la balise vidéo. This is a trained model of a PPO agent playing LunarLander-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "JackForAI/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/JackForAI/ppo-LunarLander-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - furkannane/PPO-LunarLander-v3",
+      "url": "https://github.com/furkannane/PPO-LunarLander-v3",
+      "snippet": "This project implements Proximal Policy Optimization (PPO) — one of the most powerful and stable policy gradient algorithms in Reinforcement Learning — entirely from scratch in PyTorch. The environment used for training is LunarLander-v3 from the OpenAI Gymnasium suite. The implementation ..."
+    },
+    {
+      "title": "GitHub - Nishank-Goyal/ppo-LunarLander-v3",
+      "url": "https://github.com/Nishank-Goyal/ppo-LunarLander-v3",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library."
+    },
+    {
+      "title": "[Lunar Lander] Proximal Policy Optimization (PPO).ipynb - Colab",
+      "url": "https://colab.research.google.com/github/kuds/rl-lunar-lander/blob/main/%5BLunar%20Lander%5D%20Proximal%20Policy%20Optimization%20(PPO).ipynb",
+      "snippet": "Proximal Policy Optimization (PPO) In this notebook, you will implement a PPO agent with Gymansium&#x27;s LunarLander-v3 environment."
+    }
+  ]
+}

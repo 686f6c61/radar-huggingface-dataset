@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Itsabdullahalotaibi/paper_012071268_zero_shot_transfer",
+  "slug": "itsabdullahalotaibi-paper_012071268_zero_shot_transfer",
+  "author": "Itsabdullahalotaibi",
+  "url": "https://huggingface.co/Itsabdullahalotaibi/paper_012071268_zero_shot_transfer",
+  "created_at": "2026-08-22T06:02:51.000Z",
+  "updated_at": "2026-08-22T06:02:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "concise-analytical",
+    "docx",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "neutral",
+    "structured-imrad",
+    "varied-mixed",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2402.11235] ZeroG: Investigating Cross-dataset Zero-shot ...",
+      "url": "https://arxiv.org/abs/2402.11235",
+      "snippet": "We further adopt a lightweight fine-tuning strategy that reduces the risk of overfitting and maintains the zero-shot learning efficacy of the language model. The results underscore the effectiveness of our model in achieving significant cross-dataset zero-shot transferability, opening pathways for the development of graph foundation models."
+    },
+    {
+      "title": "PDF Combined Scaling for Zero-shot Transfer Learning - arXiv.org",
+      "url": "https://arxiv.org/pdf/2111.10050v1.pdf",
+      "snippet": "Therefore, narrowing the gap from zero-shot transfer models to super-vised and semi-supervised models would make zero-shot transfer learning a viable alternative for image classification."
+    },
+    {
+      "title": "Combined scaling for zero-shot transfer learning",
+      "url": "https://dl.acm.org/doi/10.1016/j.neucom.2023.126658",
+      "snippet": "In this paper, we narrow the gap by proposing a combined scaling method, named BASIC, that achieves 85.7% top-1 accuracy on the ImageNet ILSVRC-2012 validation set without learning from any labeled ImageNet example."
+    },
+    {
+      "title": "GitHub - sbharadwajj/awesome-zero-shot-learning: A curated list of ...",
+      "url": "https://github.com/sbharadwajj/awesome-zero-shot-learning",
+      "snippet": "A curated list of resources including papers, comparitive results on standard datasets and relevant links pertaining to zero-shot learning."
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "Zero-shot learning (ZSL) is a problem setup in machine learning where, at test time, a learner observes samples from classes which were not observed during training, and needs to predict their class."
+    }
+  ]
+}

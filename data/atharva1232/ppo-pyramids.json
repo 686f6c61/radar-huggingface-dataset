@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Atharva1232/ppo-Pyramids",
+  "slug": "atharva1232-ppo-pyramids",
+  "author": "Atharva1232",
+  "url": "https://huggingface.co/Atharva1232/ppo-Pyramids",
+  "created_at": "2026-08-22T10:38:10.000Z",
+  "updated_at": "2026-08-22T10:38:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 108459753,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdityaBajracharya/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/AdityaBajracharya/ppo-Pyramids",
+      "snippet": "Pyramids deep-reinforcement-learning ML-Agents-Pyramids Model card Files Metrics Community Use this model"
+    },
+    {
+      "title": "enrique2701/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/enrique2701/ppo-Pyramids",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library. Results [INFO] Pyramids. Step: 2320000. Time Elapsed: 4995.783 s. Mean Reward: 1.775. Std of Reward: 0.113. Hyperparameters"
+    },
+    {
+      "title": "ppo-Pyramids-NPU - AtomGit AI社区",
+      "url": "https://ai.atomgit.com/JeffDing/ppo-pyramids-npu",
+      "snippet": "JeffDing / ppo-Pyramids-NPU like0 加入合集 强化学习 PyTorch ONNX ml-agents NPU model-agent-tagged deep-reinforcement-learning Pyramids 下载 Notebook 快速开发"
+    },
+    {
+      "title": "ppo-Pyramids:Ascend NPU adapted model (Model-Agent S2) - AtomGit AI社区",
+      "url": "https://ai.atomgit.com/zyzoe/ppo-Pyramids",
+      "snippet": "Unity ML-Agents PPO 训练的 Pyramids 金字塔导航策略（2×512 MLP，172 维向量观测：raycast 感知 + 目标 one-hot），本仓将其适配到华为昇腾 NPU 真实跑通推理。"
+    },
+    {
+      "title": "gsotnikov/ppo-Pyramids - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/204095",
+      "snippet": "This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    }
+  ]
+}

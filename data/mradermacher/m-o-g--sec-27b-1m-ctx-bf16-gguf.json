@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "mradermacher/M.O.G.-SEC-27B-1M-CTX-BF16-GGUF",
+  "slug": "mradermacher-m-o-g--sec-27b-1m-ctx-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/M.O.G.-SEC-27B-1M-CTX-BF16-GGUF",
+  "created_at": "2026-08-22T05:00:08.000Z",
+  "updated_at": "2026-08-22T05:34:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.8",
+    "qwen",
+    "bf16",
+    "cybersecurity",
+    "offensive-security",
+    "defensive-security",
+    "uncensored",
+    "1m-context",
+    "yarn",
+    "dflash2",
+    "mtp",
+    "speculative-decoding",
+    "sglang",
+    "mog",
+    "minds-of-gods",
+    "qwentium",
+    "conversational",
+    "multimodal",
+    "research",
+    "not-for-all-audiences",
+    "en",
+    "multilingual",
+    "base_model:Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-BF16",
+    "base_model:quantized:Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780464352,
+  "storage_human": "190.8 GB",
+  "base_model": "Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.6-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Qwen3.6 Local VRAM Guide: Measuring 27B and 35B-A3B Quantizations",
+      "url": "https://knightli.com/en/2026/05/01/qwen3-6-local-vram-quantization-table/",
+      "snippet": "Separate theoretical weights, GGUF file size, and measured VRAM for Qwen3.6-27B and 35B-A3B, with reproducible tests for quantization, context, GPU, and backend."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Qwen3.8-27B GGUF: Which Quant to Download for Your GPU",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-gguf",
+      "snippet": "Qwen3.8-27B GGUF sizes, verified Aug 15 2026: Q4_K_M 17.1GB for 24GB, IQ4_XS for 16GB, 2-bit for 12GB, plus the KV-cache trick and the template trap."
+    }
+  ]
+}

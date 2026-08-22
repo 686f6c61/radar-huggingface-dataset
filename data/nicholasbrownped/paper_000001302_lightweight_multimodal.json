@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Nicholasbrownped/paper_000001302_lightweight_multimodal",
+  "slug": "nicholasbrownped-paper_000001302_lightweight_multimodal",
+  "author": "Nicholasbrownped",
+  "url": "https://huggingface.co/Nicholasbrownped/paper_000001302_lightweight_multimodal",
+  "created_at": "2026-08-22T08:49:10.000Z",
+  "updated_at": "2026-08-22T08:49:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "critical",
+    "intro-related-method-exp-conclusion",
+    "latex-arxiv",
+    "lightweight-multimodal",
+    "long-detailed",
+    "narrative-progressive",
+    "numeric-bibtex",
+    "structured-imrad",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can a Lightweight Multimodal Model Estimate LLM Reasoning Performance ...",
+      "url": "https://arxiv.org/abs/2608.18591",
+      "snippet": "Abstract page for arXiv paper 2608.18591: Can a Lightweight Multimodal Model Estimate LLM Reasoning Performance? A Study for Compute-Optimal Document Inference"
+    },
+    {
+      "title": "[2404.07236] Lightweight Deep Learning for Resource-Constrained ...",
+      "url": "https://arxiv.org/abs/2404.07236",
+      "snippet": "Over the past decade, the dominance of deep learning has prevailed across various domains of artificial intelligence, including natural language processing, computer vision, and biomedical signal processing. While there have been remarkable improvements in model accuracy, deploying these models on lightweight devices, such as mobile phones and microcontrollers, is constrained by limited ..."
+    },
+    {
+      "title": "Lightweight machine learning models and edge computing ... - Nature",
+      "url": "https://www.nature.com/collections/cacgejbbjb",
+      "snippet": "Multimodal Large Language Models are energy intensive and computationally demanding. Here, the authors developed a series of lightweight Multimodal Large Language Models deployable on edge devices."
+    },
+    {
+      "title": "Lightweight Deep Learning Models for Resource Constrained Devices ...",
+      "url": "https://onlinelibrary.wiley.com/doi/toc/10.1155/8483.si.635175",
+      "snippet": "This Special Issue will provide a platform for researchers to share cutting-edge solutions in the field and to promote research and development activities in light weight deep learning models for multimodal data by publishing high-quality original research and review articles in this rapidly growing interdisciplinary field."
+    },
+    {
+      "title": "PDF Efficient GPT-4V level multimodal large language model for ... - Nature",
+      "url": "https://www.nature.com/articles/s41467-025-61040-5.pdf",
+      "snippet": "Multimodal large language models have revolutionized AI research and industry, paving the way toward the next milestone. However, their large sizes and high computational costs restrict deployment ..."
+    }
+  ]
+}

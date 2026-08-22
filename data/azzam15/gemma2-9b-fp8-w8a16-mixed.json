@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Azzam15/gemma2-9b-fp8-w8a16-mixed",
+  "slug": "azzam15-gemma2-9b-fp8-w8a16-mixed",
+  "author": "Azzam15",
+  "url": "https://huggingface.co/Azzam15/gemma2-9b-fp8-w8a16-mixed",
+  "created_at": "2026-08-22T10:40:49.000Z",
+  "updated_at": "2026-08-22T10:43:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "fp8",
+    "w8a16",
+    "modelopt",
+    "quantized",
+    "arabic-calibrated",
+    "calib-mixed",
+    "base_model:google/gemma-2-9b-it",
+    "base_model:quantized:google/gemma-2-9b-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 10198504958,
+  "storage_human": "10.2 GB",
+  "base_model": "google/gemma-2-9b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-2-9b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-9b",
+      "snippet": "Code: Exposing the model to code helps it to learn the syntax and patterns of programming languages, which improves its ability to generate code or understand code-related questions. Mathematics: Training on mathematical text helps the model learn logical reasoning, symbolic representation, and to address mathematical queries."
+    },
+    {
+      "title": "NouraAlqasim/gemma2-9b-fp8-mixed · Hugging Face",
+      "url": "https://huggingface.co/NouraAlqasim/gemma2-9b-fp8-mixed",
+      "snippet": "FP8 weight scales are data-free. What the calibration variety changes is the static per-tensor activation scales, exported as input_scale. Sibling checkpoints -fp8-msa, -fp8-gulf and -fp8-mixed differ in exactly that and nothing else."
+    },
+    {
+      "title": "Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/",
+      "snippet": "Gemma is a collection of lightweight, open models built from the same technology that powers our Gemini models."
+    },
+    {
+      "title": "Gemma 2 9B - Open Source AI Models",
+      "url": "https://opensourceaimodels.net/models/gemma-2-9b",
+      "snippet": "Run it yourself Drop-in commands for the three most common open-source inference paths. The Ollama tag is a best-effort match against the registry; verify the size variant before pulling. Run Gemma 2 9B locally Ollama (easiest) Copy ollama run gemma2:9b"
+    },
+    {
+      "title": "Gemma 2 model card - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_2",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making LLM technology accessible to developers and researchers across the AI ecosystem."
+    }
+  ]
+}

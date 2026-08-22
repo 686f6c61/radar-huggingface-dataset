@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DrunkkToys/theOG-50M-think",
+  "slug": "drunkktoys-theog-50m-think",
+  "author": "DrunkkToys",
+  "url": "https://huggingface.co/DrunkkToys/theOG-50M-think",
+  "created_at": "2026-08-22T11:04:29.000Z",
+  "updated_at": "2026-08-22T11:09:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "theog50m",
+    "theog",
+    "code-generation",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50672640,
+  "parameters_human": "50.7M",
+  "storage_bytes": 934600838,
+  "storage_human": "935 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DrunkkToys/theOG-50M · Hugging Face",
+      "url": "https://huggingface.co/DrunkkToys/theOG-50M",
+      "snippet": "theOG-50M A 50.7M-parameter code generation model trained from scratch, aligned with DPO on execution-verified preference pairs — every \"chosen\" completion in the preference set actually passed the task&#x27;s unit tests."
+    },
+    {
+      "title": "DrunkkToys (DrunkkToys) - Hugging Face",
+      "url": "https://huggingface.co/DrunkkToys/models",
+      "snippet": "Recent Activity updated a model1 day ago DrunkkToys/theOG-50M published a model3 days ago DrunkkToys/theOG-50M updated a Space2 months ago DrunkkToys/ai-cost-optimizer View all activity"
+    },
+    {
+      "title": "DrunkkToys · GitHub",
+      "url": "https://github.com/DrunkkToys/",
+      "snippet": "DrunkkToys has 2 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - DrunkkToys/drunkktoys",
+      "url": "https://github.com/DrunkkToys/drunkktoys",
+      "snippet": "The lego_crew Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in config/tasks.yaml, leveraging their collective skills to achieve complex objectives. The config/agents.yaml file outlines the capabilities and configurations of each agent in your crew."
+    },
+    {
+      "title": "DrunkkToys - LM Studio Hub",
+      "url": "https://lmstudio.ai/drunkktoys",
+      "snippet": "DrunkkToys on the LM Studio Hub vibeLM transforms LM Studio into a 100% local, autonomous developer agent. Instead of just chatting, it gives open-weight models a registry of 38 specialized tools to plan, code, and execute development tasks completely on your own machine.What vibeL..."
+    }
+  ]
+}

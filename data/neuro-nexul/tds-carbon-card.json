@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "neuro-nexul/tds-carbon-card",
+  "slug": "neuro-nexul-tds-carbon-card",
+  "author": "neuro-nexul",
+  "url": "https://huggingface.co/neuro-nexul/tds-carbon-card",
+  "created_at": "2026-08-22T04:39:43.000Z",
+  "updated_at": "2026-08-22T04:42:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "notdaksha/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/notdaksha/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "23f1000190/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/23f1000190/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "arXiv:2410.22077v1 [cs.AI] 29 Oct 2024",
+      "url": "https://arxiv.org/pdf/2410.22077",
+      "snippet": "Abstract Integrating symbolic techniques with statistical ones is a long-standing problem in arti-ficial intelligence. The motivation is that the strengths of either area match the weaknesses of the other, and - by combining the two - the weaknesses of either method can be limited. Neuro-symbolic AI focuses on this integration where the statistical methods are in partic-ular neural ..."
+    },
+    {
+      "title": "Predicting delayed neurological sequelae in patients with carbon ...",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/15563650.2024.2437113",
+      "snippet": "Introduction Delayed neurological sequelae is a common complication following carbon monoxide poisoning, which significantly affects the quality of life of patients with the condition. We aimed to develop a machine learning-based prediction model to predict the frequency of delayed neurological sequelae in patients with carbon monoxide poisoning."
+    },
+    {
+      "title": "Catalyzing next-generation Artificial Intelligence through NeuroAI - Nature",
+      "url": "https://www.nature.com/articles/s41467-023-37180-x",
+      "snippet": "Neuroscience has long been an essential driver of progress in artificial intelligence (AI). We propose that to accelerate progress in AI, we must invest in fundamental research in NeuroAI. A core ..."
+    }
+  ]
+}

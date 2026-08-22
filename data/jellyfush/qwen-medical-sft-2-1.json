@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "JellyFush/qwen-medical-sft-2-1",
+  "slug": "jellyfush-qwen-medical-sft-2-1",
+  "author": "JellyFush",
+  "url": "https://huggingface.co/JellyFush/qwen-medical-sft-2-1",
+  "created_at": "2026-08-22T05:16:29.000Z",
+  "updated_at": "2026-08-22T05:49:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 444844071,
+  "storage_human": "445 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JellyFush/qwen-medical-sft · Hugging Face",
+      "url": "https://huggingface.co/JellyFush/qwen-medical-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JellyFush/qwen · Hugging Face",
+      "url": "https://huggingface.co/JellyFush/qwen",
+      "snippet": "Instructions to use JellyFush/qwen with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use JellyFush/qwen with Transformers:"
+    },
+    {
+      "title": "GitHub - Zeyi-Lin/Qwen3-Medical-SFT: Qwen3 Fine-tuning: Medical R1 ...",
+      "url": "https://github.com/Zeyi-Lin/Qwen3-Medical-SFT",
+      "snippet": "Qwen3 Fine-tuning: Medical R1 Style Chat. Contribute to Zeyi-Lin/Qwen3-Medical-SFT development by creating an account on GitHub."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "Qwen3 Large Model Fine-Tuning in Practice: Medical Reasoning Dialogue",
+      "url": "https://docs.swanlab.cn/en/examples/qwen3-medical.html",
+      "snippet": "In this article, we will fine-tune the Qwen3-1.7b model on the delicate_medical_r1_data dataset, enabling the fine-tuned Qwen3 to provide reasoning-based responses to medical questions. The training utilizes tools like transformers and datasets, with SwanLab for monitoring and evaluating model performance."
+    }
+  ]
+}

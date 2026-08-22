@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Yamamototakumi/paper_009034389_neural_architecture_search",
+  "slug": "yamamototakumi-paper_009034389_neural_architecture_search",
+  "author": "Yamamototakumi",
+  "url": "https://huggingface.co/Yamamototakumi/paper_009034389_neural_architecture_search",
+  "created_at": "2026-08-22T04:22:25.000Z",
+  "updated_at": "2026-08-22T04:22:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "bulleted",
+    "detailed-descriptive",
+    "intro-problem-solution-validation-future",
+    "latex-arxiv",
+    "mixed-active-passive",
+    "neural-architecture-search",
+    "neutral",
+    "structured-imrad",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/=",
+      "snippet": "The system can&#x27;t perform the operation now. Try again later."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/",
+      "snippet": "arXiv is a free distribution service and an open-access archive for nearly 2.4 million scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Materials on this site are not peer-reviewed by arXiv."
+    },
+    {
+      "title": "Academia.edu - Find Research Papers, Topics, Researchers",
+      "url": "https://www.academia.edu/",
+      "snippet": "Academia.edu is the platform to share, find, and explore 65 Million research papers. Join us to accelerate your research needs & academic interests."
+    },
+    {
+      "title": "Google Research - Explore Our Latest Research in Science and AI",
+      "url": "https://research.google/",
+      "snippet": "Discover Google Research. We publish research papers across a wide range of domains and share our latest developments in AI and science research."
+    }
+  ]
+}

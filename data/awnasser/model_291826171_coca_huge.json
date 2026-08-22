@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Awnasser/model_291826171_coca_huge",
+  "slug": "awnasser-model_291826171_coca_huge",
+  "author": "Awnasser",
+  "url": "https://huggingface.co/Awnasser/model_291826171_coca_huge",
+  "created_at": "2026-08-22T08:27:13.000Z",
+  "updated_at": "2026-08-22T08:27:20.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "coca",
+    "cosine",
+    "grouped-query",
+    "huge",
+    "lamb",
+    "multitask",
+    "rmsnorm",
+    "trunc-normal",
+    "tucker",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?filter=dataset:COCA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "| Hyper, Huge and Big - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/e61db7215c6a3a3dd4c34ba449052c5c",
+      "snippet": "Explore | Hyper, Huge and Big model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

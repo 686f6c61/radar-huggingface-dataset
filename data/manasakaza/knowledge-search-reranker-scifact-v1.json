@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ManasaKaza/knowledge-search-reranker-scifact-v1",
+  "slug": "manasakaza-knowledge-search-reranker-scifact-v1",
+  "author": "ManasaKaza",
+  "url": "https://huggingface.co/ManasaKaza/knowledge-search-reranker-scifact-v1",
+  "created_at": "2026-08-22T06:59:58.000Z",
+  "updated_at": "2026-08-22T07:01:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:2932",
+    "loss:BinaryCrossEntropyLoss",
+    "text-ranking",
+    "arxiv:1908.10084",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:finetune:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713601,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90866412,
+  "storage_human": "91 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 5 Reranking Models to Improve RAG Results",
+      "url": "https://machinelearningmastery.com/top-5-reranking-models-to-improve-rag-results/",
+      "snippet": "4. jina-reranker-v3 Most rerankers score each document independently. jina-reranker-v3 uses listwise reranking, processing up to 64 documents together in a 131k-token context window, achieving 61.94 nDCG@10 on BEIR. This approach is useful for long-context RAG, multilingual search, and retrieval tasks where relative ordering matters."
+    },
+    {
+      "title": "What are Rerankers? | MongoDB",
+      "url": "https://www.mongodb.com/resources/basics/artificial-intelligence/reranking-models",
+      "snippet": "Table of contents The role of rerankers in search How do rerankers work? Optimizing RAG with second-stage reranking How to select a reranker model? Reranking with MongoDB and Voyage AI Conclusion FAQs Rerankers are models trained to evaluate and rank the relevance of retrieved documents against a given query. These types of models have been part of search engine architectures for decades and ..."
+    },
+    {
+      "title": "allenai/scifact · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/allenai/scifact",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jina AI - Your Search Foundation, Supercharged.",
+      "url": "https://jina.ai/",
+      "snippet": "Embeddings, rerankers, web reader, deepsearch, small language models. Search AI for multilingual and multimodal data."
+    },
+    {
+      "title": "GitHub - agentset-ai/awesome-rerankers: A curated list of reranking ...",
+      "url": "https://github.com/agentset-ai/awesome-rerankers",
+      "snippet": "A curated list of reranking models, libraries, and resources for RAG applications. Rerankers take a query and retrieved documents and reorder them by relevance. They use cross-encoders to jointly encode query-document pairs, which is slower than vector search but more accurate. Typical pipeline: retrieve 50-100 candidates with vector search, rerank to top 3-5."
+    }
+  ]
+}

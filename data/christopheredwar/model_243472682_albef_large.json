@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "christopheredwar/model_243472682_albef_large",
+  "slug": "christopheredwar-model_243472682_albef_large",
+  "author": "christopheredwar",
+  "url": "https://huggingface.co/christopheredwar/model_243472682_albef_large",
+  "created_at": "2026-08-22T08:02:34.000Z",
+  "updated_at": "2026-08-22T08:02:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "albef",
+    "concat-mlp",
+    "constant-warmup",
+    "flash",
+    "large",
+    "layernorm",
+    "lion",
+    "retrieval",
+    "swish",
+    "xavier",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "albert-large-v2 - Hugging Face",
+      "url": "https://huggingface.co/albert/albert-large-v2",
+      "snippet": "ALBERT is a transformers model pretrained on a large corpus of English data in a self-supervised fashion. This means it was pretrained on the raw texts only, with no humans labelling them in any way (which is why it can use lots of publicly available data) with an automatic process to generate inputs and labels from those texts."
+    },
+    {
+      "title": "albert/albert-xxlarge-v2 · Hugging Face",
+      "url": "https://huggingface.co/albert/albert-xxlarge-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - salesforce/ALBEF: Code for ALBEF: a new vision-language pre ...",
+      "url": "https://github.com/salesforce/ALBEF",
+      "snippet": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation, NeurIPS 2021 Spotlight (Salesforce Research). Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]."
+    },
+    {
+      "title": "ALBERT - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/albert",
+      "snippet": "ALBERT (A Lite BERT) is a parameter-efficient variant of the BERT language model developed by researchers at Google Research and the Toyota Technological…"
+    }
+  ]
+}

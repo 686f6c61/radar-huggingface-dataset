@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "spade-rl/SPADE-Qwen3-8B-Games",
+  "slug": "spade-rl-spade-qwen3-8b-games",
+  "author": "spade-rl",
+  "url": "https://huggingface.co/spade-rl/SPADE-Qwen3-8B-Games",
+  "created_at": "2026-07-12T06:14:17.000Z",
+  "updated_at": "2026-08-22T09:50:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "spade",
+    "self-play",
+    "reinforcement-learning",
+    "environment-generation",
+    "games",
+    "conversational",
+    "arxiv:2608.19197",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939350,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+      "url": "https://spade-rl.github.io/",
+      "snippet": "Held-Out Benchmark Performance Training on diverse synthetic games improves science reasoning, code generation, and procedural reasoning while competition math is preserved (Qwen3-30B-A3B-Instruct). No science questions, real code, or benchmark-style problems appear in the generated games; the gains come from the diversity and adaptivity of the self-generated curriculum. SPADE keeps improving ..."
+    },
+    {
+      "title": "GitHub - spade-rl/spade: SPADE: Self-Play in Adaptive Synthetic ...",
+      "url": "https://github.com/spade-rl/spade",
+      "snippet": "Applying SPADE to Qwen3 models at 4B, 8B, and 30B-A3B scale in two settings, cognitive games and multi-turn tool use, we observe the designer produce progressively harder, more interactive environments and the agent improve on held-out math, science, code, and procedural-reasoning benchmarks past the saturation point of fixed-environment baselines. These results suggest that making environment ..."
+    },
+    {
+      "title": "SPADE ♠ : Self-Play in Adaptive Synthetic Executable Environments",
+      "url": "https://arxiv.org/html/2608.19197v1",
+      "snippet": "We evaluate SPADE on two settings, game and tool-use environment design, across the three Qwen3 backbones of Section 5.1. Section 6.1 reports held-out benchmark performance against the fixed-environment baselines, and Section 6.2 examines what the Environment Designer and Reasoning Agent produce over training."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "unsloth/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

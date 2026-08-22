@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vinaybr-0718/Temporal-Face-Liveness-Detection-INT8",
+  "slug": "vinaybr-0718-temporal-face-liveness-detection-int8",
+  "author": "vinaybr-0718",
+  "url": "https://huggingface.co/vinaybr-0718/Temporal-Face-Liveness-Detection-INT8",
+  "created_at": "2026-08-22T05:46:04.000Z",
+  "updated_at": "2026-08-22T06:18:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "temporal_multimodal_face_liveness",
+    "computer-vision",
+    "face-liveness-detection",
+    "anti-spoofing",
+    "LSTM",
+    "MobileNetV3_Small",
+    "INT8-quantized",
+    "video-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1655200,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Face-Liveness-Detection/liveness_model_int8.tflite at main - GitHub",
+      "url": "https://github.com/VinayBR03/Face-Liveness-Detection/blob/main/liveness_model_int8.tflite",
+      "snippet": "An end-to-end Face Liveness Detection system to prevent spoofing attacks. This project uses a multi-modal PyTorch model (MobileNetV3+LSTM) that analyzes video clips and sensor data."
+    },
+    {
+      "title": "Face Liveness Detection - GitHub",
+      "url": "https://github.com/VinayBR03/Face-Liveness-Detection",
+      "snippet": "An end-to-end Face Liveness Detection system to prevent spoofing attacks. This project uses a multi-modal PyTorch model (MobileNetV3+LSTM) that analyzes video clips and sensor data. The model is co..."
+    },
+    {
+      "title": "jdp8/vit_Liveness_detection_v1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/jdp8/vit_Liveness_detection_v1.0/tree/main/onnx",
+      "snippet": "Transformers.js ONNX vit Model card Files Files and versions Community Use this model main vit_Liveness_detection_v1.0 / onnx"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Liveness",
+      "snippet": "nguyenkhoa/vit_Liveness_detection_v1. Image Classification • 85.8M•Updated Jan 8, 2025• 195 • 1"
+    },
+    {
+      "title": "Face Liveness Detection - Liveness FaceDetection",
+      "url": "https://dinesh-raina.github.io/Liveness_FaceDetection/",
+      "snippet": "Face Liveness Detection -Saketh.pptx : A couple of slides that will give you information on th project and our motivation. demo.py : Our demonstration script will fire up your webcam to grab frames to conduct face liveness detection in real-time."
+    }
+  ]
+}

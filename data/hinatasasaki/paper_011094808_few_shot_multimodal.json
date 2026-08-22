@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hinatasasaki/paper_011094808_few_shot_multimodal",
+  "slug": "hinatasasaki-paper_011094808_few_shot_multimodal",
+  "author": "hinatasasaki",
+  "url": "https://huggingface.co/hinatasasaki/paper_011094808_few_shot_multimodal",
+  "created_at": "2026-08-22T03:11:59.000Z",
+  "updated_at": "2026-08-22T03:12:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "critical",
+    "few-shot-multimodal",
+    "footnote",
+    "highlight-bullet",
+    "intro-background-approach-eval-conclusion",
+    "passive",
+    "typst",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/abs/2511.01140v2",
+      "snippet": "Existing multimodal and meta learning approaches improve performance in these settings but lack a theoretical explanation of why or when they succeed. This paper presents a unified theoretical framework for few shot multimodal medical imaging that jointly characterizes sample complexity, uncertainty quantification, and interpretability."
+    },
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/html/2511.01140v1",
+      "snippet": "Furthermore, few studies have examined how interactions among modalities influence learnability and generalization. Establishing a rigorous information-theoretic foundation for multimodal learning is therefore essential to guide model design and interpretation in medical applications."
+    },
+    {
+      "title": "Multimodal Large Models in Few-Shot Learning Scenarios",
+      "url": "https://www.researchgate.net/publication/396722371_Multimodal_Large_Models_in_Few-Shot_Learning_Scenarios",
+      "snippet": "The few-shot image classification task is to enable a model to identify novel classes by using only a few labeled samples as references."
+    },
+    {
+      "title": "(PDF) Multimodal Zero-Shot and Few-Shot Learning - ResearchGate",
+      "url": "https://www.researchgate.net/publication/388959539_Multimodal_Zero-Shot_and_Few-Shot_Learning",
+      "snippet": "Abstract Multimodal zero-shot and few-shot learning integrate multiple data modalities-such as text, images, audio, and video-to enhance AI generalization with minimal training examples."
+    },
+    {
+      "title": "Few-Shot Learning Based on Multimodal Information Processing",
+      "url": "https://ieeexplore.ieee.org/document/10981794/",
+      "snippet": "Few-shot learning aims to develop models with strong generalization capabilities using a small number of training samples. However, most learning methods rely solely on the visual features of a few samples to represent entire categories, leading to poor category representativeness. In contrast, humans can utilize multimodal information to learn category features, thereby making them more ..."
+    }
+  ]
+}

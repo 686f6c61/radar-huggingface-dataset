@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "OpenTWBench/README",
+  "slug": "opentwbench-readme",
+  "author": "OpenTWBench",
+  "url": "https://huggingface.co/OpenTWBench/README",
+  "created_at": "2026-08-22T03:59:49.000Z",
+  "updated_at": "2026-08-22T03:59:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "eli64s/readme-ai: README file generator, powered by AI. - GitHub",
+      "url": "https://github.com/eli64s/README-AI",
+      "snippet": "README file generator, powered by AI. Contribute to eli64s/readme-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Readme.ai",
+      "url": "https://www.readmeai.tech/",
+      "snippet": "Generate free and professional README for your project"
+    },
+    {
+      "title": "MCP - docs.readme.com",
+      "url": "https://docs.readme.com/main/docs/your-projects-mcp-server",
+      "snippet": "Open your project in ReadMe. Open AI → MCP and toggle MCP Server on. Share the URL with your users: https://your-project.readme.io/mcp Your hub&#x27;s AI dropdown gives readers quick options to connect to Cursor, VS Code, or copy the MCP config directly. You can also write a custom guide page with connection instructions if you&#x27;d like to tailor the experience."
+    },
+    {
+      "title": "readme-ai-cli · PyPI",
+      "url": "https://pypi.org/project/readme-ai-cli/",
+      "snippet": "Why readme-ai? Every developer has a graveyard of repos with a 3-line README. Writing a good one takes hours. Templates give you empty boxes to fill in manually. readme-ai reads your code — imports, docstrings, entry points, env vars, file structure — and writes a README that&#x27;s actually accurate."
+    }
+  ]
+}

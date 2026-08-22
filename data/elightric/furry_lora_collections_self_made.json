@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Elightric/furry_lora_collections_self_made",
+  "slug": "elightric-furry_lora_collections_self_made",
+  "author": "Elightric",
+  "url": "https://huggingface.co/Elightric/furry_lora_collections_self_made",
+  "created_at": "2026-08-22T08:49:49.000Z",
+  "updated_at": "2026-08-22T08:49:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-generation",
+    "furry",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2573898629,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EDfai/furry_lora_collections_self_made · Hugging Face",
+      "url": "https://huggingface.co/EDfai/furry_lora_collections_self_made",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EDfai/furry_lora_collections_self_made at main - Hugging Face",
+      "url": "https://huggingface.co/EDfai/furry_lora_collections_self_made/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EDfai&#x2F;furry_lora_collections_self_made ｜AI Art LoRA Model | PixAI",
+      "url": "https://pixai.art/model/1630407551661262227?lang=en",
+      "snippet": "Try out the &#x27;EDfai&#x2F;furry_lora_collections_self_made&#x27; AI Art LoRA Model to generate stunning Anime AI art on PixAI. Browsing artwork created using the &#x27;EDfai&#x2F;furry_lora_collections_self_made&#x27; AI Art LoRA."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "lora AI Models | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 29,027 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with lora."
+    }
+  ]
+}
