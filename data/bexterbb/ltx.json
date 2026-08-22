@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bexterbb/ltx",
+  "slug": "bexterbb-ltx",
+  "author": "bexterbb",
+  "url": "https://huggingface.co/bexterbb/ltx",
+  "created_at": "2026-08-21T21:21:28.000Z",
+  "updated_at": "2026-08-21T21:21:29.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 145922188848,
+  "storage_human": "145.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/video-generation-model",
+      "snippet": "LTX video generation models are designed for creating and editing video with precision and control. From generating video from text, images, or audio to non-destructive AI video editing, LTX supports scalable workflows for production, post-production, and experimentation. All LTX models share a common design philosophy: composability, predictability, and production readiness."
+    },
+    {
+      "title": "LTX-2: Production-Grade AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2",
+      "snippet": "LTX-2 is a pro AI video model for production. It offers precise control, native 4K, high frame rates and proven performance for long-form creative tasks."
+    },
+    {
+      "title": "GitHub - Lightricks/LTX-Video: Official repository for LTX-Video",
+      "url": "https://github.com/Lightricks/LTX-Video",
+      "snippet": "Introduction LTX-Video is the first DiT-based video generation model that contains all core capabilities of modern video generation in one model: synchronized audio and video, high fidelity, multiple performance modes, production-ready outputs, API access, and open access."
+    },
+    {
+      "title": "LTX-2 - First Open-Source 4K AI Video Generation Model",
+      "url": "https://oimi.ai/en/ltx-2",
+      "snippet": "LTX-2 is the first fully open-source 4K AI video generation model with synchronized audio, 50 FPS, and 20-second clips. Based on Lightricks&#x27; 19B parameter DiT architecture. Completely free to use!"
+    },
+    {
+      "title": "Luna Models: AI Girl Model #52 | Tensor.Art",
+      "url": "https://www.tensor.art/models/800259468165248253",
+      "snippet": "Download Luna Models: AI Girl Model #52 - CandyDoll LauraB - free LORA FLUX.1 AI model on TENSOR. YOUTHFUL AI ART MODELS, LL.9, FLUX. By AI Luna LM.9"
+    }
+  ]
+}

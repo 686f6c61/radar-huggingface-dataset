@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tbhrc/qwen3_5_0_8b_optiq_4bit",
+  "slug": "tbhrc-qwen3_5_0_8b_optiq_4bit",
+  "author": "tbhrc",
+  "url": "https://huggingface.co/tbhrc/qwen3_5_0_8b_optiq_4bit",
+  "created_at": "2026-08-22T02:17:10.000Z",
+  "updated_at": "2026-08-22T02:17:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "quantized",
+    "mixed-precision",
+    "4bit",
+    "8bit",
+    "optiq",
+    "apple-silicon",
+    "text-generation",
+    "qwen3.5",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 175326016,
+  "parameters_human": "175.3M",
+  "storage_bytes": 673392261,
+  "storage_human": "673 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwen3.5-0.8B-OptiQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-OptiQ-4bit",
+      "snippet": "Qwen3.5-.8B-OptiQ-4bit Mixed-precision quantized with OptiQ — sensitivity-driven quantization for Apple Silicon This is a mixed-precision quantized version of Qwen/Qwen3.5-.8B in MLX format. Unlike uniform quantization (all layers at the same bit-width), OptiQ measures each layer&#x27;s sensitivity and assigns optimal per-layer bit-widths, preserving model quality where it matters most. How ..."
+    },
+    {
+      "title": "Quantized Models for Qwen/Qwen3.5-4B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Qwen/Qwen3.5-4B",
+      "snippet": "Active filters: Qwen/Qwen3.5-4B. Clear all. unsloth/Qwen3.5-4B-GGUF. Image-Text-to-Text • 4B • Updated Mar 2 • 1.2M • 370"
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Highlights Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_5_0_8b/README.md ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_5_0_8b/README.md",
+      "snippet": "This is based on the implementation of Qwen3.5-0.8B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "Qwen3.5-0.8B-OptiQ-4bit on M4 (8c) — oMLX Benchmark",
+      "url": "https://omlx.ai/benchmarks/performance/ksyc12rn",
+      "snippet": "M4 (8c) · 16 GB · 4bit · 2026-08-13 Copy Performance 1k tokens 1,853 PP tok/s 113.4 TG tok/s 553 TTFT (ms) 1.6 Peak mem (GB) Hardware ChipM4 (8c) Memory16 GB GPU Cores8 Software oMLXv0.5.7 macOSmacOS 15.6.1 Context1,024 Performance by Context Length ... Batching Results ... Model Settings benchmark_contextCode (Python) force_samplingfalse ..."
+    }
+  ]
+}

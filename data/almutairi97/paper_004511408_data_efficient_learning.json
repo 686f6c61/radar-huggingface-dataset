@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "almutairi97/paper_004511408_data_efficient_learning",
+  "slug": "almutairi97-paper_004511408_data_efficient_learning",
+  "author": "almutairi97",
+  "url": "https://huggingface.co/almutairi97/paper_004511408_data_efficient_learning",
+  "created_at": "2026-08-21T22:28:33.000Z",
+  "updated_at": "2026-08-21T22:28:38.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "data-efficient-learning",
+    "enthusiastic",
+    "intro-background-approach-eval-conclusion",
+    "latex-arxiv",
+    "numeric-bibtex",
+    "passive",
+    "unstructured-narrative",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "[2402.09668] How to Train Data-Efficient LLMs - arXiv.org",
+      "url": "https://arxiv.org/abs/2402.09668",
+      "snippet": "The training of large language models (LLMs) is expensive. In this paper, we study data-efficient approaches for pre-training LLMs, i.e., techniques that aim to optimize the Pareto frontier of model quality and training resource/data consumption. We seek to understand the tradeoffs associated with data selection routines based on (i) expensive-to-compute data-quality estimates, and (ii ..."
+    },
+    {
+      "title": "Active Learning Methods for Efficient Data Utilization and Model ...",
+      "url": "https://arxiv.org/pdf/2504.16136",
+      "snippet": "The paper focuses on important research topics such as uncertainty estimation, handling of class imbalance, domain adaptation, fairness, and the creation of strong evaluation metrics and benchmarks. It also shows that learning methods inspired by humans and guided by questions can improve data efficiency and help models learn more effectively."
+    },
+    {
+      "title": "IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/Xplore/home.jsp",
+      "snippet": "IEEE Xplore, delivering full text access to the world&#x27;s highest quality technical literature in engineering and technology. | IEEE Xplore"
+    },
+    {
+      "title": "Publications - efficiency-learning.github.io",
+      "url": "https://efficiency-learning.github.io/publications/",
+      "snippet": "DECILE tackles the challenges of data-hungry AI and deep learning by enabling state-of-the-art model training with only 5-10% of massive datasets, reducing training time/cost by an order of magnitude while significantly reducing labeled data requirements."
+    }
+  ]
+}

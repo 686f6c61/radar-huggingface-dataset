@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alphabot2/alphabot2_Aibot2_20Aug_STEA_pick_10fps_act_chunk50_20260821_231610",
+  "slug": "alphabot2-alphabot2_aibot2_20aug_stea_pick_10fps_act_chunk50_20260821_231610",
+  "author": "alphabot2",
+  "url": "https://huggingface.co/alphabot2/alphabot2_Aibot2_20Aug_STEA_pick_10fps_act_chunk50_20260821_231610",
+  "created_at": "2026-08-22T03:49:09.000Z",
+  "updated_at": "2026-08-22T03:50:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:alphabot2/Aibot2_20Aug_STEA_pick_10fps",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51637904,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206587512,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alphabot2 sur Amazon - alphabot2 à petits prix",
+      "url": "https://duckduckgo.com/y.js?ad_domain=amazon.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=_Qzy6DUccsqaeUNXCupELZ9OMfswxLCcebD0Fhk13vCrva5JQd7JzuUIpHwddquS2_YO13ahgqb%2DPtk_DUlAvLLidr2UP9nIg71wZj%2D2zENHHT0e15ChE4x0E0phb1LHABPch7CoEPohYXsCT_m8AEpAJfz6jv23qEiAJ1XixJs.Gl4H5Kys4hlC6bj4AI11Ug&rut=9508715cbda748dbc7fd6071468127faac1b63171d58a906d559d88c64406df9&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8zaG26aCIBpSY4BnPqCIDajVUCUwkV1brQ3MF5SNnK5VkbaY5zjA1rTB7c%2DiXZb09P6A3Hp_RFm6I99xH5ctDhggwK9aW4ytRNo3dkg5A4q3eklNb12BAPTMVC%2D7g2irbw_RvQQbWZWQX%2DhuGFnVnCj_AMb_3WgyEWlhO9DPW%2DLaLpGnVhB1pmSx36lCPofT_nUr0IpiZA4HBwHiFcaM7AeO8zAk%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmZyJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkYWxwaGFib3QyJTI2aW5kZXglM2RhcHMlMjZ0YWclM2RoeWRmcm1zbi0yMSUyNnJlZiUzZHBkX3NsXzlhYTNkamwzbDhfcCUyNmFkZ3JwaWQlM2QxMzUzNDk5NzUwNjIxMDc3JTI2aHZhZGlkJTNkODQ1OTM5OTMyNTY4MzUlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2QxMjYzMjUlMjZodnRhcmdpZCUzZGt3ZC04NDU5NDI2MDg2NzY1MiUzYWxvYy02NiUyNmh5ZGFkY3IlM2QyNTI3XzE4OTc1NTYlMjZtY2lkJTNkMWI2MzhhNWU4ZTBmMzM3NjgzZThkZjVlZTg1YWVkMTclMjZtc2Nsa2lkJTNkZWNlMTc5MjdkZjQ1MWFlNzQ2NGMxM2FlYzJhNjQzZDI%26rlid%3Dece17927df451ae7464c13aec2a643d2&vqd=4-135099017815554991032633596894625573352&iurl=%7B1%7DIG%3D21631FBE2D7443E290C3FAE6BD070159%26CID%3D30E61FFA1A8A6507309A08471BFD640F%26ID%3DDevEx%2C5037.1",
+      "snippet": "Livraison gratuite (voir cond)."
+    },
+    {
+      "title": "alphabot2 (alphabot2) - Hugging Face",
+      "url": "https://huggingface.co/alphabot2/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... published a model about 2 hours ago"
+    },
+    {
+      "title": "AlphaBot2 - Waveshare Wiki",
+      "url": "https://www.waveshare.com/wiki/AlphaBot2",
+      "snippet": "The AlphaBot2 smart car development kit includes a baseboard AlphaBot2-Base and an adapter board (one of AlphaBot2-Ar, AlphaBot2-Pi, and AlphaBot2-PiZero). By choosing different adapter boards, the car can support access to Arduino, Raspberry Pi 3B, and Raspberry Pi Zero W."
+    },
+    {
+      "title": "alphabot2 (alphabot2) - Hugging Face",
+      "url": "https://huggingface.co/alphabot2/models",
+      "snippet": "alphabot2/ai2robot_full_900_episodes_10fps_JC_intern_matched_from_full_act_20260612_145405 Robotics • 51.6M•Updated 5 days ago• 31"
+    },
+    {
+      "title": "AlphaBot 2 - Robot Details, Use Case and Specifications | Aparobot",
+      "url": "https://www.aparobot.com/robots/alphabot-2",
+      "snippet": "AlphaBot 2 is a general-purpose wheeled humanoid robot developed by Shenzhen-based AI² Robotics (智平方科技) and unveiled in April 2025 as the commercial production model of the AlphaBot series. Designed to automate tasks that are repetitive, hazardous, or undesirable for human workers, AlphaBot 2 adopts a humanoid upper body mounted on a six-wheeled base, standing up to 2,400 mm at full ..."
+    }
+  ]
+}

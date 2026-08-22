@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "NONAMEmurmur/lheure-Non-Nom-SVC-Sample-Model",
+  "slug": "nonamemurmur-lheure-non-nom-svc-sample-model",
+  "author": "NONAMEmurmur",
+  "url": "https://huggingface.co/NONAMEmurmur/lheure-Non-Nom-SVC-Sample-Model",
+  "created_at": "2026-08-22T01:01:37.000Z",
+  "updated_at": "2026-08-22T01:09:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1392128534,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nꙮ NaME NONAMEmurmur - GitHub",
+      "url": "https://github.com/NONAMEmurmur/",
+      "snippet": "NONAMEmurmur has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Murmur — Open Source Local AI Voice Input",
+      "url": "https://tefuirnever.github.io/Murmur/",
+      "snippet": "AI Smart Polish Auto-remove filler words, correct mistakes, and clean up spoken text with your preferred AI model."
+    },
+    {
+      "title": "Murmur - droidnoob.github.io",
+      "url": "https://droidnoob.github.io/murmur-ai/",
+      "snippet": "Murmur is a Python multi-agent orchestration runtime — infrastructure for spawning, distributing, and coordinating LLM-based agents reliably at scale. Think of it as a hypervisor for LLM agents: spawn it, give it context, get a structured result back, kill it if needed."
+    },
+    {
+      "title": "Murmure - Free & Private Offline Speech-to-Text",
+      "url": "https://www.murmure.app/",
+      "snippet": "Stop typing. Start Murmuring! AI speech-to-text powered by a tuned NVIDIA Parakeet v3. Runs on your machine. Your audio and transcripts never leave it, and Murmure keeps nothing behind."
+    },
+    {
+      "title": "Models - Murmur",
+      "url": "https://droidnoob.github.io/murmur-ai/api/models/",
+      "snippet": "The two are mutually exclusive. The runtime wraps the resolved model in pydantic_ai.models.concurrency.ConcurrencyLimitedModeloutside any FallbackModel, so one slot covers the whole run regardless of which fallback served the request."
+    }
+  ]
+}

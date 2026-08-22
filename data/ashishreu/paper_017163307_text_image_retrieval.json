@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ashishreu/paper_017163307_text_image_retrieval",
+  "slug": "ashishreu-paper_017163307_text_image_retrieval",
+  "author": "ashishreu",
+  "url": "https://huggingface.co/ashishreu/paper_017163307_text_image_retrieval",
+  "created_at": "2026-08-21T21:37:07.000Z",
+  "updated_at": "2026-08-21T21:37:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "critical",
+    "footnote",
+    "intro-method-exp-related-conclusion",
+    "latex-icml",
+    "long-detailed",
+    "passive",
+    "text-image-retrieval",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Yutong-Zhou-cv/Awesome-Text-to-Image: (ෆ`꒳´ෆ) A Survey on Text ...",
+      "url": "https://github.com/Yutong-Zhou-cv/Awesome-Text-to-Image",
+      "snippet": "A number of studies have been conducted on text-to-image synthesis techniques that transfer input textual descriptions (keywords or sentences) into realistic images. Papers, codes, and datasets for the text-to-image task are available here. 🐌 Markdown Format: (Conference/Journal Year) Title, First Author et al. [Paper] [Code] [Project]"
+    },
+    {
+      "title": "All You Need to Know About Training Image Retrieval Models",
+      "url": "https://arxiv.org/abs/2503.13045",
+      "snippet": "Image retrieval is the task of finding images in a database that are most similar to a given query image. The performance of an image retrieval pipeline depends on many training-time factors, including the embedding model architecture, loss function, data sampler, mining function, learning rate(s), and batch size. In this work, we run tens of thousands of training runs to understand the effect ..."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    },
+    {
+      "title": "Llama Nemoretriever Colembed: Top-Performing Text-Image Retrieval Model",
+      "url": "https://arxiv.org/abs/2507.05513",
+      "snippet": "Motivated by the growing demand for retrieval systems that operate across modalities, we introduce llama-nemoretriever-colembed, a unified text-image retrieval model that delivers state-of-the-art performance across multiple benchmarks. We release two model variants, 1B and 3B."
+    },
+    {
+      "title": "Invisible Relevance Bias: Text-Image Retrieval Models Prefer AI ...",
+      "url": "https://dl.acm.org/doi/10.1145/3626772.3657750",
+      "snippet": "Experiments on this benchmark reveal that text-image retrieval models tend to rank the AI-generated images higher than the real images, even though the AI-generated images do not exhibit more visually relevant semantics to the queries than real images. We call this bias as invisible relevance bias."
+    }
+  ]
+}

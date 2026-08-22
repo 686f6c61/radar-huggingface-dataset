@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ross-fisher/model_315779333_tiny_transformer_base",
+  "slug": "ross-fisher-model_315779333_tiny_transformer_base",
+  "author": "ross-fisher",
+  "url": "https://huggingface.co/ross-fisher/model_315779333_tiny_transformer_base",
+  "created_at": "2026-08-21T23:52:35.000Z",
+  "updated_at": "2026-08-21T23:52:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base",
+    "batchnorm",
+    "classification",
+    "dilated",
+    "gelu",
+    "lamb",
+    "low-rank",
+    "orthogonal",
+    "step",
+    "tiny-transformer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiny Transformer",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "Tiny Transformer This repository contains an implementation of a simple GPT-like transformer model that can be trained on a single consumer-grade GPU. The code mostly follows along with the videos Let&#x27;s build GPT: from scratch, in code, spelled out. and Building Makemore by Andrej Karpathy."
+    },
+    {
+      "title": "GitHub - skolouri/TinyTransformer: Mathematics of AI - Transformer ...",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Tiny Transformer This repository contains a minimal yet functional implementation of a Transformer architecture featuring both an encoder and a decoder. The design prioritizes clarity and simplicity, making it an ideal resource for educational purposes and experimentation in both vision and natural language processing (NLP) applications."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tiny Transformer — Watch a Language Model Learn",
+      "url": "https://sugeerth.github.io/deepseed-training/tiny.html",
+      "snippet": "The idea in one paragraph A language model learns by playing a guessing game: given a chunk of text, predict the very next character. Each time it guesses wrong, we nudge its weights. Do this a few thousand times on Shakespeare and the model figures out — entirely on its own — that plays have character names in ALL CAPS, followed by colons, followed by lines of dialogue. No rules were ..."
+    }
+  ]
+}

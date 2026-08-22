@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tatianavolkov/model_076084019_perceiver_nano",
+  "slug": "tatianavolkov-model_076084019_perceiver_nano",
+  "author": "tatianavolkov",
+  "url": "https://huggingface.co/tatianavolkov/model_076084019_perceiver_nano",
+  "created_at": "2026-08-21T21:00:14.000Z",
+  "updated_at": "2026-08-21T21:00:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "contrastive",
+    "cross-attention",
+    "flash",
+    "gelu",
+    "groupnorm",
+    "nano",
+    "perceiver",
+    "polynomial",
+    "trunc-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2103.03206.pdf",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "facebook/sam3 · Hugging Face",
+      "url": "https://huggingface.co/facebook/sam3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Perceiver IO: a scalable, fully-attentional model that works on any ...",
+      "url": "https://huggingface.co/blog/perceiver",
+      "snippet": "In a follow-up paper, called Perceiver IO, the authors extend this idea to let the Perceiver also handle arbitrary outputs. The idea is similar: one only uses the outputs for doing cross-attention with the latents. Note that I&#x27;ll use the terms \"Perceiver\" and \"Perceiver IO\" interchangeably to refer to the Perceiver IO model throughout this blog ..."
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    }
+  ]
+}

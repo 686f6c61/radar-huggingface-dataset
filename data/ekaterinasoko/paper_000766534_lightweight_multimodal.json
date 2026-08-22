@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ekaterinasoko/paper_000766534_lightweight_multimodal",
+  "slug": "ekaterinasoko-paper_000766534_lightweight_multimodal",
+  "author": "ekaterinasoko",
+  "url": "https://huggingface.co/ekaterinasoko/paper_000766534_lightweight_multimodal",
+  "created_at": "2026-08-22T00:08:16.000Z",
+  "updated_at": "2026-08-22T00:08:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "endnote",
+    "enthusiastic",
+    "graphic-visual",
+    "html",
+    "intro-problem-solution-validation-future",
+    "lightweight-multimodal",
+    "narrative-progressive",
+    "passive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Cross-modal Information Flow in Multimodal Large Language Models",
+      "url": "https://arxiv.org/html/2411.18620v1",
+      "snippet": "In this paper, we unveil the inner working mechanisms of auto-regressive multimodal large language models in handling multimodal tasks. Our experiments reveal that different multimodal tasks exhibit similar processing patterns within the model."
+    },
+    {
+      "title": "[2505.00284] LightEMMA: Lightweight End-to-End Multimodal Model for ...",
+      "url": "https://arxiv.org/abs/2505.00284",
+      "snippet": "However, the field still lacks a practical platform that enables dynamic model updates, rapid validation, fair comparison, and intuitive performance assessment. To that end, we introduce LightEMMA, a Lightweight End-to-End Multimodal Model for Autonomous driving."
+    },
+    {
+      "title": "LLaVA-GM: lightweight LLaVA multimodal architecture - Semantic Scholar",
+      "url": "https://www.semanticscholar.org/paper/LLaVA-GM%3A-lightweight-LLaVA-multimodal-architecture-Han-Liu/ef30bd17e513a259f7c1b53c380e3c859f781649",
+      "snippet": "A lightweight multimodal framework, LLaVA-GM, is proposed, based on LLaVA, which can be deployed on devices with low resource requirements and has greatly reduced model parameters, confirming the potential of this compact model in downstream multimodal applications. Multimodal large-scale language modeling has become the mainstream approach in natural language processing tasks and has been ..."
+    },
+    {
+      "title": "LLaVA-GM: lightweight LLaVA multimodal architecture",
+      "url": "https://public-pages-files-2025.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2025.1626346/pdf",
+      "snippet": "To address such problems, a lightweight multimodal framework, LLaVA-GM, is proposed, based on LLaVA, which can be deployed on devices with low resource requirements and has greatly reduced model parameters. It can also be tested on common VQA tasks and achieves good performance."
+    }
+  ]
+}

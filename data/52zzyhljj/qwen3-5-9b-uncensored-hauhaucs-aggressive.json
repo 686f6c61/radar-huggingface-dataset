@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "52ZZYHLJJ/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+  "slug": "52zzyhljj-qwen3-5-9b-uncensored-hauhaucs-aggressive",
+  "author": "52ZZYHLJJ",
+  "url": "https://huggingface.co/52ZZYHLJJ/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-08-22T00:35:46.000Z",
+  "updated_at": "2026-08-22T00:35:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.5",
+    "qwen",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 60411207936,
+  "storage_human": "60.4 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive — Grokipedia",
+      "url": "https://grokipedia.com/page/Qwen35-9B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive is an uncensored variant of the Qwen3.5-9B large language model, fine-tuned by Hugging Face user HauhauCS to achieve zero refusals on prompts while retaining the original model&#x27;s full capabilities, multilingual support for languages including English and Chinese, and lossless performance without alterations to training datasets. [1] The aggressive ..."
+    },
+    {
+      "title": "jaahas/qwen3.5-uncensored",
+      "url": "https://ollama.com/jaahas/qwen3.5-uncensored",
+      "snippet": "A fully functional, uncensored variant of Qwen 3.5 without any changes to model behaviour or intelligence. [See more on HuggingFace] (https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive)"
+    },
+    {
+      "title": "Qwen3.5-9B-Uncensored: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-9b-uncensored-leonw24",
+      "snippet": "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive is the base model from which this GGUF version was derived. If you have a machine that can run PyTorch/transformers and need maximum quality without quantization artifacts, the original HauhauCS model is the choice."
+    },
+    {
+      "title": "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive - Ok Tech Masters",
+      "url": "https://oktechmasters.org/ai_models/qwen3-5-9b-uncensored-hauhaucs-aggressive/",
+      "snippet": "LM StudioSearch \"Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\" in LM Studio&#x27;s Discover tab, or download the GGUF above."
+    }
+  ]
+}

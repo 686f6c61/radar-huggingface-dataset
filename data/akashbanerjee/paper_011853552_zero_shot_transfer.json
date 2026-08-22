@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Akashbanerjee/paper_011853552_zero_shot_transfer",
+  "slug": "akashbanerjee-paper_011853552_zero_shot_transfer",
+  "author": "Akashbanerjee",
+  "url": "https://huggingface.co/Akashbanerjee/paper_011853552_zero_shot_transfer",
+  "created_at": "2026-08-22T00:46:33.000Z",
+  "updated_at": "2026-08-22T00:46:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "critical",
+    "highlight-bullet",
+    "intro-related-method-exp-conclusion",
+    "long-detailed",
+    "markdown",
+    "numeric-apa",
+    "theoretical-rigorous",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/CVPR2026?day=all",
+      "snippet": "These CVPR 2026 papers are the Open Access versions, provided by the Computer Vision Foundation. Except for the watermark, they are identical to the accepted versions; the final published version of the proceedings is available on IEEE Xplore."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Book - proceedings.neurips.cc",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/vol38-main-conference",
+      "snippet": "Advances in Neural Information Processing Systems 38 Main Conference NeurIPS 2025 Edited by D. Belgrave and C. Zhang and H. Lin and R. Pascanu and P. Koniusz and M. Ghassemi and N. Chen See also: Advances in Neural Information Processing Systems 38 Creative AI pre-proceedings"
+    },
+    {
+      "title": "OpenScholar - Academic Paper Search",
+      "url": "https://openscholar.ai/",
+      "snippet": "Search millions of academic papers and research articles"
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 268 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

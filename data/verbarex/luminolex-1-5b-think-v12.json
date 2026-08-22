@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "VERBAREX/LuminoLex-1.5B-think-v12",
+  "slug": "verbarex-luminolex-1-5b-think-v12",
+  "author": "VERBAREX",
+  "url": "https://huggingface.co/VERBAREX/LuminoLex-1.5B-think-v12",
+  "created_at": "2026-08-21T21:25:10.000Z",
+  "updated_at": "2026-08-21T21:40:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "metis",
+    "text-generation",
+    "luminolex",
+    "causal-lm",
+    "reasoning",
+    "conversational",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 898051168,
+  "parameters_human": "898.1M",
+  "storage_bytes": 1796127496,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VERBAREX (VERBAREX) - Hugging Face",
+      "url": "https://huggingface.co/VERBAREX",
+      "snippet": "Org profile for VERBAREX on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "LuminoLex-14B-VERBAREX - Hugging Face",
+      "url": "https://huggingface.co/VERBAREX/LuminoLex-14B-VERBAREX",
+      "snippet": "LuminoLex-14B (Verbarex) LuminoLex-14B is a fine-tuned variant of Qwen3-14B, optimized for strong reasoning, mathematics, and coding performance. The model focuses on reliable zero-shot reasoning quality while remaining efficient through parameter-efficient fine-tuning. This release is intended for research, evaluation, and advanced reasoning workloads."
+    },
+    {
+      "title": "LuminoLex AI — Language, refracted through light",
+      "url": "https://luminolexai.com/",
+      "snippet": "Language, refracted through light. A frontier model built for rapid reasoning, precise code, and natural language understanding — with the warmth of a thinking partner."
+    },
+    {
+      "title": "GitHub - WeiboAI/VibeThinker: Tiny Model, Big Logic: Diversity-Driven ...",
+      "url": "https://github.com/WeiboAI/VibeThinker",
+      "snippet": "VibeThinker-1.5B is a 1.5B-parameter dense model that challenges the prevailing notion that small models inherently lack robust reasoning capabilities. Developed with an innovative post-training methodology centered on the \"Spectrum-to-Signal Principle (SSP)\", VibeThinker-1.5B demonstrates superior reasoning capabilities compared to closed-source models Magistral Medium and Claude Opus 4 ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

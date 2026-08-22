@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "marcusho0509/paper_020663490_embodied_ai",
+  "slug": "marcusho0509-paper_020663490_embodied_ai",
+  "author": "marcusho0509",
+  "url": "https://huggingface.co/marcusho0509/paper_020663490_embodied_ai",
+  "created_at": "2026-08-21T22:02:25.000Z",
+  "updated_at": "2026-08-21T22:02:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "detailed-descriptive",
+    "embodied-ai",
+    "endnote",
+    "graphic-visual",
+    "impersonal",
+    "intro-related-method-exp-conclusion",
+    "latex-cvpr",
+    "short-punchy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2509.20021] Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2509.20021",
+      "snippet": "On the other hand, WMs empower embodied AI by building internal representations and future predictions of the external world, facilitating physical law-compliant embodied interactions. As such, this paper comprehensively explores the literature in embodied AI from basics to advances, covering both LLM driven and WM driven works."
+    },
+    {
+      "title": "PDF Embodied AI: From LLMs to World Models [Feature]",
+      "url": "http://mn.cs.tsinghua.edu.cn/xinwang/PDF/papers/2025_Embodied%20AI%20from%20LLMs%20to%20World%20Models.pdf",
+      "snippet": "On the other hand, WMs empower embodied AI by building internal representations and future predictions of the external world, fa-cilitating physical law-compliant embodied interactions. As such, this paper comprehensively explores the literature in embodied AI from basics to advances, covering both LLM driven and WM driven works."
+    },
+    {
+      "title": "Embodied-AI-Paper-TopConf - GitHub",
+      "url": "https://github.com/Songwxuan/Embodied-AI-Paper-TopConf",
+      "snippet": "🔥 CVPR2026 & ICLR2026 & NeuIPS2025 & CORL2025 & ICCV2025 & ICML2025 & RSS2025 & CVPR2025 & ICLR2025 Embodied AI Paper List Resources. [03/22/2025] We plan to organize more papers on Embodied AI from top conferences in the future and build a more comprehensive paper list. If there are any ..."
+    },
+    {
+      "title": "Humanoid Hub",
+      "url": "https://humanoidpaper.co/",
+      "snippet": "Humanoid Hub: real-time arXiv search for embodied AI & humanoid robotics papers, AI reading assistant, mind maps, PDF reader with highlights, research trends, daily briefs, 43+ datasets, VLA/world models and 350+ open-source robot projects from Unitree, AgiBot, NVIDIA, EngineAI and more."
+    },
+    {
+      "title": "Embodied AI: From LLMs to World Models [Feature]",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11317901",
+      "snippet": "Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems. Recent breakthroughs in Large Language Models (LLMs) and World Models (WMs) have drawn significant attention for embodied AI. On the one hand, LLMs empower ..."
+    }
+  ]
+}

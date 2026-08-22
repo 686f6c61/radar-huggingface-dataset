@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "multipartinc/MPV-1",
+  "slug": "multipartinc-mpv-1",
+  "author": "multipartinc",
+  "url": "https://huggingface.co/multipartinc/MPV-1",
+  "created_at": "2026-08-21T22:07:28.000Z",
+  "updated_at": "2026-08-21T22:12:30.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "code",
+    "lua",
+    "text-generation",
+    "en",
+    "dataset:armand0e/claude-fable-5-claude-code",
+    "dataset:AletheiaResearch/Kimi-K3-Codex",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:afl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Faraday Future Announces Plans to Upgrade FX Super One MPV to More ...",
+      "url": "https://www.businesswire.com/news/home/20260506083292/en/Faraday-Future-Announces-Plans-to-Upgrade-FX-Super-One-MPV-to-More-Competitive-800V-EV-or-Accelerate-AIHER-Hybrid-Project-with-Bridge-Strategy-Partner-as-the-Company-Continues-Strong-Push-in-Parallel-with-Its-EAI-Robotics-Business",
+      "snippet": "The Company plans for the first batch of mass-production Super One vehicles to be either the 800V battery-electric model or the AI hybrid extended range (AIHER) model, providing users with ..."
+    },
+    {
+      "title": "ModelVault — The Open AI Model Directory & Benchmark Matrix",
+      "url": "https://www.modelvault.space/",
+      "snippet": "Discover, compare, and benchmark 11,000+ cloud and local AI models. Filter by modalities, context windows, pricing, providers, and performance benchmarks."
+    },
+    {
+      "title": "GitHub - Lafourkad/mpv-RIFE: Real-time AI frame interpolation for any ...",
+      "url": "https://github.com/Lafourkad/mpv-RIFE",
+      "snippet": "Real-time AI frame interpolation for any video. Just play it. mpv-RIFE is a portable, pre-configured mpv bundle that uses RIFE (Real-Time Intermediate Flow Estimation) to double your video&#x27;s framerate in real-time using your GPU. 24fps → 48fps. Smooth as butter. Zero setup."
+    },
+    {
+      "title": "Faraday Future Intelligent Electric Inc. Announces FX?s First Class AI ...",
+      "url": "https://www.marketscreener.com/quote/stock/FARADAY-FUTURE-INTELLIGEN-125090786/news/Faraday-Future-Intelligent-Electric-Inc-Announces-FX-s-First-Class-AI-MPV-Product-Strategy-and-Plan-48710953/",
+      "snippet": "FX, heralding a new chapter in the Company&#x27;s growth strategy, will target the mass market segment with three planned models: an AI-MPV product--named the Super One, and the previously announced FX 5, with a price target between $20,000-$30,000, and the FX 6, with a price target between USD 30,000-$50,000."
+    },
+    {
+      "title": "AI Model Catalog — 100+ Models · 1vy",
+      "url": "https://1vy.ai/models",
+      "snippet": "AI Model Catalog Every AI model available on 1vy. Prices are 1vy sell price in USD per 1 million tokens (upstream cost + 15% flat markup). Use any model by setting model to the identifier below and pointing your OpenAI SDK base_url to https://1vy.ai/v1."
+    }
+  ]
+}

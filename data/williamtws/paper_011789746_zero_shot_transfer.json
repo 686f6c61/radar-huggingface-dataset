@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "williamtws/paper_011789746_zero_shot_transfer",
+  "slug": "williamtws-paper_011789746_zero_shot_transfer",
+  "author": "williamtws",
+  "url": "https://huggingface.co/williamtws/paper_011789746_zero_shot_transfer",
+  "created_at": "2026-08-22T03:48:40.000Z",
+  "updated_at": "2026-08-22T03:48:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "endnote",
+    "first-person-plural",
+    "graphic-visual",
+    "intro-background-approach-eval-conclusion",
+    "latex-acl",
+    "medium-balanced",
+    "theoretical-rigorous",
+    "zero-shot-transfer",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Towards Zero-Shot Task Transfer with Neurosymbolic World Models",
+      "url": "https://arxiv.org/abs/2608.17959v1",
+      "snippet": "State-of-the-art model-based reinforcement learning methods learn neural world models that allow policy improvement by planning in a latent space, without assumptions on the structure of the underlying environment. While expressive, these models are generally task-dependent: they learn uninterpretable latent representations that are tied to the training task and thus hard to generalize to new ..."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "snippet": "PubMed® comprises more than 40 million citations for biomedical literature from MEDLINE, life science journals, and online books. Citations may include links to full text content from PubMed Central and publisher web sites."
+    },
+    {
+      "title": "Model Zoo - Deep learning code and pretrained models for transfer ...",
+      "url": "https://www.modelzoo.co/",
+      "snippet": "Model Zoo Discover open source deep learning code and pretrained models. Browse Frameworks Browse Categories"
+    },
+    {
+      "title": "Zero-shot World Models Are Developmentally Efficient Learners",
+      "url": "https://arxiv.org/abs/2604.10333",
+      "snippet": "Children are both data-efficient and flexible cognitive systems, creating competence despite extremely limited training data, while generalizing to myriad untrained tasks -- a major challenge even for today&#x27;s best AI systems. Here we introduce a novel computational hypothesis for these abilities, the Zero-shot Visual World Model (ZWM)."
+    }
+  ]
+}

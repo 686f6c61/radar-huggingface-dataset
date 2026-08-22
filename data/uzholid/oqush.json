@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "uzholid/Oqush",
+  "slug": "uzholid-oqush",
+  "author": "uzholid",
+  "url": "https://huggingface.co/uzholid/Oqush",
+  "created_at": "2026-08-22T01:25:57.000Z",
+  "updated_at": "2026-08-22T01:25:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Fast AI 3D Model Generator - Text to 3D & Image to 3D | Fast 3D",
+      "url": "https://www.fast3d.org/en",
+      "snippet": "Fast 3D is a fast AI 3D model generator that turns text prompts or images into beautiful, production-ready 3D models in seconds. Text to 3D, image to 3D AI, GLB/OBJ/FBX export. Free to start, no login required."
+    },
+    {
+      "title": "AI Model Finder — Which LLM Should You Use? | Ofox",
+      "url": "https://ofox.ai/model-finder",
+      "snippet": "Free AI model finder: answer a few questions and get the best LLM for coding, agents, RAG or vision — ranked by quality, cost and speed across 100+ models. No login."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "3D AI Maker | AI 3D Model Generator from Text & Images",
+      "url": "https://3daimaker.org/",
+      "snippet": "Start AI 3D model workflows from text prompts or reference images. Compare text to 3D, image to 3D, GLB export, and STL preparation paths."
+    }
+  ]
+}

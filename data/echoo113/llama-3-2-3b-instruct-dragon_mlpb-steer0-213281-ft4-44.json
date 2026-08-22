@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Llama-3.2-3B-Instruct-dragon_mlpB-STEER0.213281-ft4.44",
+  "slug": "echoo113-llama-3-2-3b-instruct-dragon_mlpb-steer0-213281-ft4-44",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-dragon_mlpB-STEER0.213281-ft4.44",
+  "created_at": "2026-08-21T22:30:44.000Z",
+  "updated_at": "2026-08-21T22:42:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211934001,
+  "storage_human": "212 MB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Echoo113/Llama-3.2-3B-Instruct-dragon_prompted-ft4.42 at main",
+      "url": "https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-dragon_prompted-ft4.42/tree/main",
+      "snippet": "Instructions to use Echoo113/Llama-3.2-3B-Instruct-dragon_prompted-ft4.42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Echoo113/Llama-3.2-3B-Instruct-dragon_prompted-ft4.42 with Transformers:"
+    },
+    {
+      "title": "stromdotcom/Llama-3.2-3B-Instruct-tuned · Hugging Face",
+      "url": "https://huggingface.co/stromdotcom/Llama-3.2-3B-Instruct-tuned",
+      "snippet": "Model Information Testing fine tuning the Llama 3.2 3B instruct model. The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out)."
+    },
+    {
+      "title": "qubit999/llama3.2-3b-instruct | Run with an API on Replicate",
+      "url": "https://replicate.com/qubit999/llama3.2-3b-instruct",
+      "snippet": "Run qubit999/llama3.2-3b-instruct using Replicate&#x27;s API. Check out the model&#x27;s schema for an overview of inputs and outputs."
+    },
+    {
+      "title": "llama3.2:3b-instruct-fp16",
+      "url": "https://ollama.com/library/llama3.2:3b-instruct-fp16",
+      "snippet": "The 3B model outperforms the Gemma 2 2.6B and Phi 3.5-mini models on tasks such as: Following instructions Summarization Prompt rewriting Tool use ... 1B parameters The 1B model is competitive with other 1-3B parameter models. It&#x27;s use cases include: Personal information management Multilingual knowledge retrieval Rewriting tasks running ..."
+    },
+    {
+      "title": "meta / llama-3.2-3b-instruct",
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-llama-3_2-3b-instruct",
+      "snippet": "Model Information The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pre-trained and instruction-tuned generative models in 1B and 3B sizes (text in/text out). The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use case…"
+    }
+  ]
+}

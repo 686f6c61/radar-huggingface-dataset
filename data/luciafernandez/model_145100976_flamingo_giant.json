@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "luciafernandez/model_145100976_flamingo_giant",
+  "slug": "luciafernandez-model_145100976_flamingo_giant",
+  "author": "luciafernandez",
+  "url": "https://huggingface.co/luciafernandez/model_145100976_flamingo_giant",
+  "created_at": "2026-08-21T22:30:54.000Z",
+  "updated_at": "2026-08-21T22:31:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "flamingo",
+    "gelu-tanh",
+    "giant",
+    "layernorm",
+    "linear",
+    "low-rank",
+    "matching",
+    "novograd",
+    "onecycle",
+    "xavier-uniform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lucia fernandez (@luciafernandez_) | TikTok",
+      "url": "https://www.tiktok.com/@luciafernandez_",
+      "snippet": "Lucia fernandez🦇 (@luciafernandez_) en TikTok |110.4M me gusta.1.3M seguidores.solo musikita xula x aquí ˚₊‧꒰ა ☆ ໒꒱ ‧₊˚ 📩vfernandezlucia@gmail.com.Mira los videos populares de Lucia fernandez🦇: \"PONGAN SINAKA !!!! S...\", \"quiero saber TODO #y...\". Únete a 1.3M seguidores en TikTok para descubrir más contenido musicaurbana, argentina, cazzu"
+    },
+    {
+      "title": "Lucia Fernandez (@luciafernandez_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/luciafernandez_/",
+      "snippet": "2,675 Followers, 2,213 Following, 107 Posts - See Instagram photos and videos from Lucia Fernandez (@luciafernandez_)"
+    },
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    },
+    {
+      "title": "Lucía (@luciafernandez) • Instagram photos and videos",
+      "url": "https://www.instagram.com/luciafernandez/",
+      "snippet": "🤍🌙850 followers · 1.2K+ following. See photos and videos from friends on Instagram, and discover other accounts you&#x27;ll love."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

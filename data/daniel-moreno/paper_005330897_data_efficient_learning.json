@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "daniel-moreno/paper_005330897_data_efficient_learning",
+  "slug": "daniel-moreno-paper_005330897_data_efficient_learning",
+  "author": "daniel-moreno",
+  "url": "https://huggingface.co/daniel-moreno/paper_005330897_data_efficient_learning",
+  "created_at": "2026-08-21T21:19:14.000Z",
+  "updated_at": "2026-08-21T21:19:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "data-efficient-learning",
+    "docx",
+    "first-person-plural",
+    "graphic-visual",
+    "intro-method-exp-related-conclusion",
+    "long-detailed",
+    "neutral",
+    "numeric-apa",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A survey on data‐efficient algorithms in big data era",
+      "url": "https://link.springer.com/article/10.1186/s40537-021-00419-9",
+      "snippet": "In addition, the emphasis is put on how the four strategies interplay with each other in order to motivate exploration of more robust and data-efficient algorithms. Finally, the survey delineates the limitations, discusses research challenges, and suggests future opportunities to advance the research on data-efficiency in machine learning."
+    },
+    {
+      "title": "Search eLibrary :: SSRN",
+      "url": "https://papers.ssrn.com/",
+      "snippet": "To date: 391,103,772 Last 12 months: 55,530,165 Last 30 days: 5,607,504 References and Citations"
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    },
+    {
+      "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+      "url": "https://research.google/pubs/communication-efficient-learning-of-deep-networks-from-decentralized-data/",
+      "snippet": "We term this decentralized approach Federated Learning. We present a practical method for the federated learning of deep networks based on iterative model averaging, and conduct an extensive empirical evaluation, considering five different model architectures and four datasets."
+    },
+    {
+      "title": "Communication-Efficient Learning of Deep Networks From ... - Scribd",
+      "url": "https://www.scribd.com/document/702943089/1602-05629v4",
+      "snippet": "The document proposes a technique called Federated Learning that allows training of machine learning models from decentralized data across many mobile devices without collecting all the data into a central location. Each device computes an update to the model using its local data and only the update is transmitted to the central server. The server then aggregates the updates from many devices ..."
+    }
+  ]
+}

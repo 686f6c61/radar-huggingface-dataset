@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kalanag/twitter-sentiment-distilbert",
+  "slug": "kalanag-twitter-sentiment-distilbert",
+  "author": "kalanag",
+  "url": "https://huggingface.co/kalanag/twitter-sentiment-distilbert",
+  "created_at": "2026-08-21T21:19:56.000Z",
+  "updated_at": "2026-08-21T21:20:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267835644,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "emgs/twitter-sentiment-model-distilbert · Hugging Face",
+      "url": "https://huggingface.co/emgs/twitter-sentiment-model-distilbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DT12the/distilbert-sentiment-analysis · Hugging Face",
+      "url": "https://huggingface.co/DT12the/distilbert-sentiment-analysis",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Twitter Sentiment Analysis using DistilBERT - GitHub",
+      "url": "https://github.com/SlimShady10/twitter-sentiment-analysis-distilbert",
+      "snippet": "This project performs sentiment analysis on Twitter data using the DistilBERT pre-trained transformer model from Hugging Face&#x27;s Transformers library. The goal is to classify the sentiment of tweets into three categories: Positive, Neutral, and Negative."
+    },
+    {
+      "title": "Social Sentiment Insights using a DistilBERT Model",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1877050926020065",
+      "snippet": "This study combines sentiment analysis, emoji sentiment detection, and spam detection to address the challenge of analyzing user comments on social media. It makes use of a fine-tuned DistilBERT model that classifies comments as Positive, Negative, or Neutral in sentiment and maps spam classes to identify the harmful or irrelevant content. Comments are retrieved via the YouTube Data API for ..."
+    },
+    {
+      "title": "Sentiment Analyzer - GitHub",
+      "url": "https://github.com/iotabhi/sentiment-analyzer",
+      "snippet": "🎭 Sentiment Analyzer An NLP-powered web application that leverages a fine-tuned DistilBERT model to perform high-accuracy sentiment analysis on text data. Perfect for analyzing customer reviews, social media comments, or feedback at scale."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "diascecilia/model_509183558_mixer_xlarge",
+  "slug": "diascecilia-model_509183558_mixer_xlarge",
+  "author": "diascecilia",
+  "url": "https://huggingface.co/diascecilia/model_509183558_mixer_xlarge",
+  "created_at": "2026-08-21T21:59:45.000Z",
+  "updated_at": "2026-08-21T21:59:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "low-rank",
+    "mixer",
+    "multitask",
+    "relu",
+    "rmsnorm",
+    "sliding-window",
+    "step",
+    "xavier",
+    "xlarge",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dnhkng/RYS-XLarge · Hugging Face",
+      "url": "https://huggingface.co/dnhkng/RYS-XLarge",
+      "snippet": "This is a new kind of model optimization. It is based on a new method for the analysis of the functional role of layers within the transformer stack, and on layer duplication (self-merging) to increase intelligence."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "speech · Ollama",
+      "url": "https://ollama.com/search?q=speech",
+      "snippet": "wizardlm2 State of the art large language model from Microsoft AI with improved performance on complex chat, multilingual, reasoning and agent use cases."
+    }
+  ]
+}

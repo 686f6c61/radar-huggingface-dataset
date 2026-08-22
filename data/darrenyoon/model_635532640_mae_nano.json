@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DarrenYoon/model_635532640_mae_nano",
+  "slug": "darrenyoon-model_635532640_mae_nano",
+  "author": "DarrenYoon",
+  "url": "https://huggingface.co/DarrenYoon/model_635532640_mae_nano",
+  "created_at": "2026-08-21T20:18:14.000Z",
+  "updated_at": "2026-08-21T20:18:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "gelu-tanh",
+    "grouped-query",
+    "kaiming",
+    "linear-warmup",
+    "mae",
+    "nano",
+    "retrieval",
+    "rmsnorm",
+    "tucker",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nano Banana 2: Google&#x27;s Fastest AI Image Model",
+      "url": "https://theaiworld.org/news/nano-banana-2-googles-fastest-ai-image-model",
+      "snippet": "Nano Banana 2 Is Here: Google&#x27;s Fastest AI Image Model Just Got a Major Upgrade Google DeepMind has officially launched Nano Banana 2, the successor to its viral image generation model, and the AI world is buzzing. Technically known as Gemini 3.1 Flash Image, this new model was quietly rolled out on February 25, 2026, replacing the previous Flash image model as the default across all Gemini ..."
+    },
+    {
+      "title": "Tensor.Art",
+      "url": "https://www.tensor.art/search",
+      "snippet": "AI model sharing platform, online run models to generate image,viode and traning model for free. Your can upload and download models, include Checkpoint, Embedding, ControlNet, LoRA, Pony, LoCon, LyCORIS."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - FaNa-AI/YOLO: A minimal YOLOv8n-based object detection project ...",
+      "url": "https://github.com/FaNa-AI/YOLO",
+      "snippet": "A minimal YOLOv8n-based object detection project using the lightweight Nano version of the model for fast and efficient training and inference on small datasets like coco128. - FaNa-AI/YOLO"
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    }
+  ]
+}

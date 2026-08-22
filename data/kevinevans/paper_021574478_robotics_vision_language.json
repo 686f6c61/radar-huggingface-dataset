@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kevinevans/paper_021574478_robotics_vision_language",
+  "slug": "kevinevans-paper_021574478_robotics_vision_language",
+  "author": "kevinevans",
+  "url": "https://huggingface.co/kevinevans/paper_021574478_robotics_vision_language",
+  "created_at": "2026-08-22T02:37:10.000Z",
+  "updated_at": "2026-08-22T02:37:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "cautious",
+    "detailed-descriptive",
+    "endnote",
+    "intro-background-approach-eval-conclusion",
+    "latex-neurips",
+    "robotics-vision-language",
+    "structured-imrad",
+    "varied-mixed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - hanjianhua44/Awesome-VLA-Papers: A curated collection of ...",
+      "url": "https://github.com/hanjianhua44/Awesome-VLA-Papers",
+      "snippet": "A curated collection of papers on Vision-Language-Action (VLA) models, covering autonomous driving, robotics, world models, spatial reasoning, and more ..."
+    },
+    {
+      "title": "GitHub - zli12321/Vision-Language-Models-Overview: A most Frontend ...",
+      "url": "https://github.com/zli12321/Vision-Language-Models-Overview",
+      "snippet": "A most Frontend Collection and survey of vision-language model papers, and models GitHub repository. Continuous updates. - zli12321/Vision-Language-Models-Overview"
+    },
+    {
+      "title": "IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/Xplore/home.jsp",
+      "snippet": "IEEE Xplore, delivering full text access to the world&#x27;s highest quality technical literature in engineering and technology. | IEEE Xplore"
+    },
+    {
+      "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks ...",
+      "url": "https://arxiv.org/pdf/2605.30280",
+      "snippet": "We study a broad family of embodied decision-making tasks, including robot manipulation, vision- and-language navigation, trajectory prediction, and human egocentric action modeling. We propose to address these tasks within a unified embodied model, motivated by their shared computational structure: despite differences in output format and evaluation protocol, all tasks require an agent to ..."
+    },
+    {
+      "title": "[2510.07077] Vision-Language-Action Models for Robotics: A Review ...",
+      "url": "https://arxiv.org/abs/2510.07077",
+      "snippet": "Amid growing efforts to leverage advances in large language models (LLMs) and vision-language models (VLMs) for robotics, Vision-Language-Action (VLA) models have recently gained significant attention. By unifying vision, language, and action data at scale, which have traditionally been studied separately, VLA models aim to learn policies that generalise across diverse tasks, objects ..."
+    }
+  ]
+}

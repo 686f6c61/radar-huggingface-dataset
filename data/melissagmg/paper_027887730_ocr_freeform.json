@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "melissagmg/paper_027887730_ocr_freeform",
+  "slug": "melissagmg-paper_027887730_ocr_freeform",
+  "author": "melissagmg",
+  "url": "https://huggingface.co/melissagmg/paper_027887730_ocr_freeform",
+  "created_at": "2026-08-21T20:24:44.000Z",
+  "updated_at": "2026-08-21T20:24:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "docx",
+    "empirical-focused",
+    "intro-method-exp-related-conclusion",
+    "numeric-nature",
+    "ocr-freeform",
+    "passive",
+    "short-punchy",
+    "unstructured-narrative",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI OCR Online - Accurate & Layout-Aware - deepseekocr.io",
+      "url": "https://deepseekocr.io/en/tools/ai-ocr",
+      "snippet": "Experience next-generation AI OCR. Instantly convert images and PDFs to text or structured Markdown while preserving the original layout. 100% free, no sign-up needed."
+    },
+    {
+      "title": "OCR.chat - Free OCR + chat with any PDF, image or Word document",
+      "url": "https://ocr.chat/",
+      "snippet": "OCR.chat OCR that reads your documents, image & PDF to text, tables, Markdown and math in 100+ languages, then lets you chat with them."
+    },
+    {
+      "title": "Free AI OCR - Accurate Image-to-Text Extraction | Free.ai",
+      "url": "https://free.ai/ocr/",
+      "snippet": "Extract printed text from any image or scan with free AI OCR. 20+ languages, Tesseract-backed. Best for documents, screenshots, and printed pages - not for describing photos."
+    },
+    {
+      "title": "Unlimited OCR - Free AI OCR for Images, PDFs & Tables Online",
+      "url": "https://unlimited-ocr.com/",
+      "snippet": "Free unlimited OCR powered by AI. Turn images and multi-page PDFs into clean Markdown with structured tables. Batch upload, multilingual, no signup."
+    },
+    {
+      "title": "Free Online OCR Tool - Extract Text from Images & PDFs",
+      "url": "http://omni-ocr.com/en/ocr",
+      "snippet": "AI-powered text extraction from images and PDFs. Upload your files, get results in seconds — no registration required. Supports batch processing with one-click export."
+    }
+  ]
+}

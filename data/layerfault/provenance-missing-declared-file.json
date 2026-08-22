@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/provenance-missing-declared-file",
+  "slug": "layerfault-provenance-missing-declared-file",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/provenance-missing-declared-file",
+  "created_at": "2026-08-21T19:03:46.000Z",
+  "updated_at": "2026-08-21T19:03:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16,
+  "parameters_human": "16",
+  "storage_bytes": 184,
+  "storage_human": "184 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault/tree/main",
+      "snippet": "Integrity and provenance Ollama content-addressed descriptors are verified against their declared digest and size. Native Ed25519 attestations can bind trusted signing keys to authorised model namespaces, including activation/expiry windows, revocation, signer rotation groups and multi-signature admission thresholds."
+    },
+    {
+      "title": "layerfault/docs/SOURCES.md at main · izm1chael/layerfault",
+      "url": "https://github.com/izm1chael/layerfault/blob/main/docs/SOURCES.md",
+      "snippet": "Layerfault examines models--* repositories and their refs, snapshots and blobs, validates that snapshot symlinks resolve inside the repository blob store, identifies broken refs/detached snapshots/orphan blobs, and structurally inspects supported model artifacts."
+    },
+    {
+      "title": "Mitigating Downstream Model Risks via Model Provenance",
+      "url": "https://arxiv.org/html/2410.02230v1",
+      "snippet": "The rapid advancement of foundation models necessitates robust tools for managing model provenance and mitigating downstream risks. The unified model record (UMR) repository will serve as an index, enabling efficient tracking of model lineage and dependencies."
+    },
+    {
+      "title": "A missing provenance signal is not proof that AI stayed out of a file ...",
+      "url": "https://www.linkedin.com/posts/jalovell_a-missing-provenance-signal-is-not-proof-activity-7493373646367965185-4Sad",
+      "snippet": "A missing provenance signal is not proof that AI stayed out of a file. Where a supported watermark is present, it can signal that a model may have been *involved* for sure, but good AI provenance ..."
+    },
+    {
+      "title": "Model Provenance Testing for Large Language Models",
+      "url": "https://arxiv.org/abs/2502.00706",
+      "snippet": "Large language models are increasingly customized through fine-tuning and other adaptations, creating challenges in enforcing licensing terms and managing downstream impacts. Tracking model origins is crucial both for protecting intellectual property and for identifying derived models when biases or vulnerabilities are discovered in foundation models. We address this challenge by developing a ..."
+    }
+  ]
+}

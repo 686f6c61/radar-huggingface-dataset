@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "UCSC-VLAA/openvision2-vit-giant-patch14-224-vision-only",
+  "slug": "ucsc-vlaa-openvision2-vit-giant-patch14-224-vision-only",
+  "author": "UCSC-VLAA",
+  "url": "https://huggingface.co/UCSC-VLAA/openvision2-vit-giant-patch14-224-vision-only",
+  "created_at": "2025-09-02T01:54:07.000Z",
+  "updated_at": "2026-08-22T01:51:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "open_clip",
+  "languages": [],
+  "tags": [
+    "open_clip",
+    "openvision2",
+    "image-captioning",
+    "vision-encoder",
+    "image-to-text",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5530080979,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVision 2 - ucsc-vlaa.github.io",
+      "url": "https://ucsc-vlaa.github.io/OpenVision2/",
+      "snippet": "OpenVision: A Fully-Open, Cost-Effective Family of Advanced Vision Encoders for Multimodal Learning. OpenVision 2: A Family of Generative Pretrained Visual Encoders that removes the text encoder and contrastive loss, training with caption-only supervision."
+    },
+    {
+      "title": "openvision2-vit-giant-patch14-224-vision-only - Hugging Face",
+      "url": "https://huggingface.co/UCSC-VLAA/openvision2-vit-giant-patch14-224-vision-only",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - UCSC-VLAA/OpenVision: OpenVision (ICCV 2025), OpenVision 2 ...",
+      "url": "https://github.com/UCSC-VLAA/OpenVision",
+      "snippet": "This repository contains the code for training and fine-tuning vision-language models based on the OpenVision framework. It now supports both the original contrastive + generative training (OpenVision), the simplified caption-only generative training (OpenVision 2), providing efficient and scalable approaches to multimodal learning on TPU ..."
+    },
+    {
+      "title": "OpenVision 2 - a UCSC-VLAA Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/UCSC-VLAA/openvision-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - UCSC-VLAA/OpenVision at taaft",
+      "url": "https://github.com/UCSC-VLAA/OpenVision?ref=taaft",
+      "snippet": "This repository contains the code for training and fine-tuning vision-language models based on the OpenVision framework. It now supports both the original contrastive + generative training (OpenVision), the simplified caption-only generative training (OpenVision 2), providing efficient and scalable approaches to multimodal learning on TPU infrastructure."
+    }
+  ]
+}

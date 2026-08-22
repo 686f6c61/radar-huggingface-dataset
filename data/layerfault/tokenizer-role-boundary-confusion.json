@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/tokenizer-role-boundary-confusion",
+  "slug": "layerfault-tokenizer-role-boundary-confusion",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/tokenizer-role-boundary-confusion",
+  "created_at": "2026-08-21T21:53:04.000Z",
+  "updated_at": "2026-08-21T21:53:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault Offline-first static admission and sandboxed behavioural security for local AI models. Layerfault validates model artifacts, packages and local runtimes before inference, then can optionally exercise supported models inside a locked-down Linux sandbox to look for runtime side effects and suspicious behavioural divergence."
+    },
+    {
+      "title": "Security researchers tricked LLMs into giving them cocaine recipes by ...",
+      "url": "https://www.theregister.com/ai-and-ml/2026/06/30/security-researchers-tricked-llms-into-giving-them-cocaine-recipes-by-abusing-role-models-for-prompt-injection/5264115",
+      "snippet": "Security researchers tricked LLMs into giving them cocaine recipes by abusing role models for prompt injection If you want a picture of the future of LLM security, imagine Whac-a-Mole meets Groundhog Day"
+    },
+    {
+      "title": "Prompt Injection as Role Confusion: Why LLMs Fail Trust Boundaries",
+      "url": "https://ideaverse.ai/blog/prompt-injection-as-role-confusion-why-llms-fail-trust-boundaries-mqpqsoij",
+      "snippet": "What happened: \"role confusion\" in modern prompt injection If you&#x27;ve shipped an LLM feature behind guardrails, this matters now: prompt injection isn&#x27;t just about overriding instructions—it can be about fooling the model&#x27;s internal notion of who&#x27;s \"speaking.\" The Hacker News discussion linked to a new paper (arXiv: 2603.12277) frames the core problem as role confusion: LLMs ..."
+    },
+    {
+      "title": "Prompt Injection as Role Confusion",
+      "url": "https://role-confusion.github.io/",
+      "snippet": "If the webpage has an enthusiastic tone, that tone could bypass role boundaries to bleed into the model&#x27;s sense of its own persona (to be more enthusiastic itself), which could then steer the LLM toward recommending a purchase. Current prompt injection research focuses on dramatic and illegal cybersecurity attacks."
+    },
+    {
+      "title": "Prompt Injection as Role Confusion - arXiv.org",
+      "url": "https://arxiv.org/html/2603.12277v1",
+      "snippet": "Abstract Language models remain vulnerable to prompt injection attacks despite extensive safety training. We trace this failure to role confusion: models infer roles from how text is written, not where it comes from. We design novel role probes to capture how models internally identify \"who is speaking.\" These reveal why prompt injection works: un-trusted text that imitates a role inherits ..."
+    }
+  ]
+}

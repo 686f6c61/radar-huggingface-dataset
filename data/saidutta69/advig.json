@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "saidutta69/AdVig",
+  "slug": "saidutta69-advig",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/AdVig",
+  "created_at": "2026-08-21T23:53:36.000Z",
+  "updated_at": "2026-08-21T23:53:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "ad-blocking",
+    "cybersecurity",
+    "domain-classification",
+    "dns-filtering",
+    "edge-inference",
+    "on-device",
+    "esp8266",
+    "nodemcu",
+    "logistic-regression",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65913,
+  "storage_human": "65913 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Domain Classification",
+      "dataset": "AdTrap v1 (test split)",
+      "metric": "Accuracy",
+      "value": 0.9485
+    },
+    {
+      "task": "Domain Classification",
+      "dataset": "AdTrap v1 (test split)",
+      "metric": "Precision",
+      "value": 0.8491
+    },
+    {
+      "task": "Domain Classification",
+      "dataset": "AdTrap v1 (test split)",
+      "metric": "Recall",
+      "value": 0.7307
+    },
+    {
+      "task": "Domain Classification",
+      "dataset": "AdTrap v1 (test split)",
+      "metric": "F1",
+      "value": 0.7854
+    },
+    {
+      "task": "Domain Classification",
+      "dataset": "AdTrap v1 (test split)",
+      "metric": "ROC AUC",
+      "value": 0.9478
+    }
+  ],
+  "sources": [
+    {
+      "title": "saidutta69/RaceBench-v1.1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/saidutta69/RaceBench-v1.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "saidutta69 (RACER IS OP) - Hugging Face",
+      "url": "https://huggingface.co/saidutta69",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... published a model about 3 hours ago ... liked a model about 4 hours ago"
+    },
+    {
+      "title": "[Uncensored LLM Frontier #18] The &#x27;Era of Diffusion&#x27; Has Arrived—The ...",
+      "url": "https://note.com/keity717/n/n49eec2d6970e?hl=en",
+      "snippet": "On August 1, 2026, a &#x27;simultaneous release&#x27; launched by a model contributor caused a significant tectonic shift in the local AI world. A handle known as saidutta69 released about 30 uncensored models in just one day. Sizes ranged from 0.5B to 14B. In a world where the image of &#x27;uncensored&#x27; was strongly associated with the &#x27;craftsmanship of modifying large-scale models,&#x27; the same technology ..."
+    },
+    {
+      "title": "Best AI for Adult Content 2026: NSFW Generators & Models",
+      "url": "https://www.startuphub.ai/ai-news/ai-tools/2026/best-ai-for-adult-content-in-2026-nsfw-generators-and-the-models-behind-them",
+      "snippet": "Best AI for Adult Content in 2026: NSFW Generators and the Models Behind Them The best NSFW AI generators in 2026, plus the open-source diffusion models and uncensored LLMs that actually power adult AI image, video, and chat."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

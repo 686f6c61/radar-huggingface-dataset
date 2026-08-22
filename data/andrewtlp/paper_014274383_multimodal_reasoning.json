@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "andrewtlp/paper_014274383_multimodal_reasoning",
+  "slug": "andrewtlp-paper_014274383_multimodal_reasoning",
+  "author": "andrewtlp",
+  "url": "https://huggingface.co/andrewtlp/paper_014274383_multimodal_reasoning",
+  "created_at": "2026-08-21T23:30:41.000Z",
+  "updated_at": "2026-08-21T23:30:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "html",
+    "intro-method-exp-related-conclusion",
+    "multimodal-reasoning",
+    "neutral",
+    "numeric-nature",
+    "passive",
+    "structured-imrad",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multimodal Agent AI: A Survey of Recent Advances and Future ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11390-025-4802-8",
+      "snippet": "In recent years, multimodal agent AI (MAA) has emerged as a pivotal area of research, holding promise for transforming human-machine interaction. Agent AI systems, capable of perceiving and responding to inputs from multiple modalities (e.g., language, vision, audio), have demonstrated remarkable progress in understanding complex environments and executing intricate tasks. This survey ..."
+    },
+    {
+      "title": "Awesome-MLLM-Reasoning-Collection - GitHub",
+      "url": "https://github.com/lwpyh/Awesome-MLLM-Reasoning-Collection/",
+      "snippet": "👏 Welcome to the Awesome-MLLM-Reasoning-Collections repository! This repository is a carefully curated collection of papers, code, datasets, benchmarks, and resources focused on reasoning within Multimodal Large Language Models (MLLMs)."
+    },
+    {
+      "title": "Perception, Reason, Think, and Plan: A Survey on Large Multimodal ...",
+      "url": "https://arxiv.org/abs/2505.04921",
+      "snippet": "Reasoning lies at the heart of intelligence, shaping the ability to make decisions, draw conclusions, and generalize across domains. In artificial intelligence, as systems increasingly operate in open, uncertain, and multimodal environments, reasoning becomes essential for enabling robust and adaptive behavior. Large Multimodal Reasoning Models (LMRMs) have emerged as a promising paradigm ..."
+    },
+    {
+      "title": "GitHub - jluite/Awesome-Multimodal-Reasoning: Collection of papers and ...",
+      "url": "https://github.com/jluite/Awesome-Multimodal-Reasoning",
+      "snippet": "Awesome Multimodal Reasoning Collection of papers and resources on how to unlock reasoning abilities under multimodal settings. Animation from ViperGPT (Surís et al.) Consider how difficult it would be to study from a book that lacks any figures, diagrams or tables."
+    },
+    {
+      "title": "[2506.10016v1] Multimodal Large Language Models: A Survey",
+      "url": "https://arxiv.org/abs/2506.10016v1",
+      "snippet": "Multimodal Large Language Models (MLLMs) have rapidly evolved beyond text generation, now spanning diverse output modalities including images, music, video, human motion, and 3D objects, by integrating language with other sensory modalities under unified architectures. This survey categorises six primary generative modalities and examines how foundational techniques, namely Self-Supervised ..."
+    }
+  ]
+}

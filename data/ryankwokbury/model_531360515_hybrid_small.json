@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "RyanKwokbury/model_531360515_hybrid_small",
+  "slug": "ryankwokbury-model_531360515_hybrid_small",
+  "author": "RyanKwokbury",
+  "url": "https://huggingface.co/RyanKwokbury/model_531360515_hybrid_small",
+  "created_at": "2026-08-21T22:12:01.000Z",
+  "updated_at": "2026-08-21T22:12:08.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co-attention",
+    "contrastive",
+    "cosine",
+    "flash",
+    "hybrid",
+    "lamb",
+    "layernorm",
+    "mish",
+    "small",
+    "xavier-uniform",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Small open source models from 4B to 40B parameters. Fast and affordable models with limited capabilities and low latency."
+    },
+    {
+      "title": "LLM Model Hub | Access, Compare & Deploy Leading AI Models",
+      "url": "https://www.glean.com/platform/model-hub",
+      "snippet": "Discover Glean&#x27;s LLM model hub to access, compare, and deploy top AI models from OpenAI, Google, and Amazon Bedrock securely in one platform."
+    }
+  ]
+}

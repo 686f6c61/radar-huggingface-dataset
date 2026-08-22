@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mraleko/lore",
+  "slug": "mraleko-lore",
+  "author": "mraleko",
+  "url": "https://huggingface.co/mraleko/lore",
+  "created_at": "2026-08-21T21:13:00.000Z",
+  "updated_at": "2026-08-21T21:24:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "code",
+    "qwen2.5",
+    "ollama",
+    "llama.cpp",
+    "fine-tuned",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 8098525408,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mraleko/Lore",
+      "url": "https://github.com/mraleko/Lore",
+      "snippet": "Contribute to mraleko/Lore development by creating an account on GitHub."
+    },
+    {
+      "title": "Releases · mraleko/Lore · GitHub",
+      "url": "https://github.com/mraleko/Lore/releases",
+      "snippet": "Contribute to mraleko/Lore development by creating an account on GitHub."
+    },
+    {
+      "title": "LORE: A Large Generative Model for Search Relevance - arXiv.org",
+      "url": "https://arxiv.org/pdf/2512.03025v2",
+      "snippet": "Thirdly, to rigorously evaluate our model, we constructed a comprehensive and challenging benchmark designed specifically around the core capabilities identified earlier. This allows for a systematic assessment of the model&#x27;s performance across each dimension."
+    },
+    {
+      "title": "LoRe: Personalizing LLMs via Low-Rank Reward Modeling",
+      "url": "https://openreview.net/pdf?id=bYu4DOqRY8",
+      "snippet": "LoRe leverages a structured low-rank decomposition of reward functions. This approach allows us to model individual preferences as weighted combinations of the basis reward functions, enabling scalable and statistically efficient adaptation with minimal user-specific data."
+    },
+    {
+      "title": "LoRe: Personalizing LLMs via Low-Rank Reward Modeling",
+      "url": "https://arxiv.org/abs/2504.14439",
+      "snippet": "Personalizing large language models (LLMs) to accommodate diverse user preferences is essential for enhancing alignment and user satisfaction. Traditional reinforcement learning from human feedback (RLHF) approaches often rely on monolithic value representations, limiting their ability to adapt to individual preferences. We introduce a novel framework that leverages low-rank preference ..."
+    }
+  ]
+}

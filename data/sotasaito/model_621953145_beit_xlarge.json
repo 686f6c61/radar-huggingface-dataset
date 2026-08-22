@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sotasaito/model_621953145_beit_xlarge",
+  "slug": "sotasaito-model_621953145_beit_xlarge",
+  "author": "sotasaito",
+  "url": "https://huggingface.co/sotasaito/model_621953145_beit_xlarge",
+  "created_at": "2026-08-21T19:50:57.000Z",
+  "updated_at": "2026-08-21T19:51:04.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "beit",
+    "co-attention",
+    "dilated",
+    "gelu",
+    "layernorm",
+    "orthogonal",
+    "retrieval",
+    "step",
+    "xlarge",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "microsoft/beit-large-patch16-224 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/beit-large-patch16-224",
+      "snippet": "The BEiT model is a Vision Transformer (ViT), which is a transformer encoder model (BERT-like). In contrast to the original ViT model, BEiT is pretrained on a large collection of images in a self-supervised fashion, namely ImageNet-21k, at a resolution of 224x224 pixels."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - rafa-cxg/BEIT: Large-scale Self-supervised Pre-training Across ...",
+      "url": "https://github.com/rafa-cxg/BEIT",
+      "snippet": "BEiT-3 (NEW): a general-purpose multimodal foundation model, and a major milestone of The Big Convergence of Large-scale Pre-training Across Tasks, Languages, and Modalities."
+    }
+  ]
+}

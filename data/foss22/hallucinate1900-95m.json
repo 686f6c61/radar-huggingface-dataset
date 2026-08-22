@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "foss22/Hallucinate1900-95M",
+  "slug": "foss22-hallucinate1900-95m",
+  "author": "foss22",
+  "url": "https://huggingface.co/foss22/Hallucinate1900-95M",
+  "created_at": "2026-08-21T21:01:00.000Z",
+  "updated_at": "2026-08-22T01:58:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llama",
+    "dataset:jayfurzy/orthodox-patristic-corpus",
+    "base_model:croqaz/Sprocket-and-Say",
+    "base_model:finetune:croqaz/Sprocket-and-Say",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74049038,
+  "storage_human": "74 MB",
+  "base_model": "croqaz/Sprocket-and-Say",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "foss22/model · Hugging Face",
+      "url": "https://huggingface.co/foss22/model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "foss22 (foss) - Hugging Face",
+      "url": "https://huggingface.co/foss22/datasets",
+      "snippet": "Organizations foss22&#x27;s datasets5 Sort: Recently updated foss22/common_corpus_pre1914_Gerrman Preview •Updated Mar 27• 139"
+    },
+    {
+      "title": "Latest AI Hallucination Rates & Benchmarks for New AI Models August 2026",
+      "url": "https://suprmind.ai/hub/ai-hallucination-rates-and-benchmarks/",
+      "snippet": "Updated August 2026 - AI hallucination rates and benchmarks for latest AI models. New numbers from Vectara, AA-Omniscience, FACTS, 50+ sources and our own data."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "How to Check for AI Hallucinations (With Examples & Detection Methods)",
+      "url": "https://gptzero.me/news/check-for-ai-hallucinations/",
+      "snippet": "Here, we explain what AI hallucinations look like, why they happen, and how you can check whether a source actually exists."
+    }
+  ]
+}

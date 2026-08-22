@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "glowskeleton/goblin-models",
+  "slug": "glowskeleton-goblin-models",
+  "author": "glowskeleton",
+  "url": "https://huggingface.co/glowskeleton/goblin-models",
+  "created_at": "2026-08-21T21:35:52.000Z",
+  "updated_at": "2026-08-21T21:37:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sam2",
+  "languages": [],
+  "tags": [
+    "sam2",
+    "onnx",
+    "segmentation",
+    "matting",
+    "vitmatte",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    },
+    {
+      "title": "Skeleton 3D Model Generator - AI",
+      "url": "https://www.tripo3d.ai/discover/skeleton-3d-model",
+      "snippet": "Explore our collection of Skeleton 3D Model in stylized, realistic, cartoon styles with themes such as fantasy, horror, anime, sci-fi. Perfect for art, education, game asset."
+    },
+    {
+      "title": "Rodin AI — Rodin Gen-2.5 3D Model Generator",
+      "url": "https://rodinai.net/",
+      "snippet": "Generate 3D models from text or images with Rodin AI. Rodin Gen-2.5 delivers 5 quality tiers, up to 2M polygons, HD PBR textures, and GLB/FBX/OBJ export — free to try."
+    }
+  ]
+}

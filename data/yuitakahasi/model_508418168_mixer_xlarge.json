@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuitakahasi/model_508418168_mixer_xlarge",
+  "slug": "yuitakahasi-model_508418168_mixer_xlarge",
+  "author": "yuitakahasi",
+  "url": "https://huggingface.co/yuitakahasi/model_508418168_mixer_xlarge",
+  "created_at": "2026-08-21T21:33:49.000Z",
+  "updated_at": "2026-08-21T21:33:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "bilinear",
+    "flash",
+    "matching",
+    "mixer",
+    "novograd",
+    "onecycle",
+    "orthogonal",
+    "rmsnorm",
+    "xlarge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Mixer AI",
+      "url": "https://mixerai.org/",
+      "snippet": "All top AI models in 1 service. Pay-as-you go!"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "GitHub - google-research/vision_transformer",
+      "url": "https://github.com/google-research/vision_transformer",
+      "snippet": "Table of contents: Vision Transformer and MLP-Mixer Architectures Colab Installation Fine-tuning a model Vision Transformer Available ViT models Expected ViT results MLP-Mixer Available Mixer models Expected Mixer results LiT models Running on cloud Create a VM Setup VM Bibtex Disclaimers Changelog"
+    }
+  ]
+}

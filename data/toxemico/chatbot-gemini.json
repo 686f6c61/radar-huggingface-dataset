@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Toxemico/chatbot-gemini",
+  "slug": "toxemico-chatbot-gemini",
+  "author": "Toxemico",
+  "url": "https://huggingface.co/Toxemico/chatbot-gemini",
+  "created_at": "2026-08-22T01:12:54.000Z",
+  "updated_at": "2026-08-22T01:12:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - Thanvirassif731/ai-model-chatbot-gemini",
+      "url": "https://github.com/Thanvirassif731/ai-model-chatbot-gemini",
+      "snippet": "AI Model Chatbot with Gemini A command-line chat client for Google Gemini with customizable conversation styles."
+    },
+    {
+      "title": "AI chatbot - Google Cloud",
+      "url": "https://cloud.google.com/use-cases/ai-chatbot",
+      "snippet": "Build and use AI chatbots built on Google&#x27;s leading AI technology and models like Gemini."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Yashodha Bhavnani, VP of AI Products, Box \"The Gemini 3.7 Flash agent was 35% cheaper than 3.6 Flash, with a +8% observed prompt-cache hit rate and fewer tool errors.\" Gregor Zunic, Co-founder & CTO, Browser Use \"We&#x27;re excited by how well the new Gemini Flash model understands motion across time."
+    }
+  ]
+}

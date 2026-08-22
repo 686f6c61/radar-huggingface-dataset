@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SaketR1/uncertainty-orm",
+  "slug": "saketr1-uncertainty-orm",
+  "author": "SaketR1",
+  "url": "https://huggingface.co/SaketR1/uncertainty-orm",
+  "created_at": "2026-08-22T00:26:58.000Z",
+  "updated_at": "2026-08-22T00:28:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1725678246,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SaketR1 (Saket Reddy) - Hugging Face",
+      "url": "https://huggingface.co/SaketR1",
+      "snippet": "User profile of Saket Reddy on Hugging Face"
+    },
+    {
+      "title": "SaketR1/uncertainty-sft-mix-clear-corr-amb-balanced · Hugging Face",
+      "url": "https://huggingface.co/SaketR1/uncertainty-sft-mix-clear-corr-amb-balanced",
+      "snippet": "Instructions to use SaketR1/uncertainty-sft-mix-clear-corr-amb-balanced with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "[2506.18183] Reasoning about Uncertainty: Do Reasoning Models Know When ...",
+      "url": "https://arxiv.org/abs/2506.18183",
+      "snippet": "To this end, we explore uncertainty quantification of reasoning models in this work. Specifically, we ask three fundamental questions: First, are reasoning models well-calibrated? Second, does deeper reasoning improve model calibration?"
+    },
+    {
+      "title": "Generalisation of Total Uncertainty in AI: A Theoretical Study",
+      "url": "https://arxiv.org/pdf/2408.00946",
+      "snippet": "Besides, uncertainty is all over AI pipeline stages involving data preprocessing and feature engineering, model training and analysis and de-ployment. In AI approaches that are data-driven, uncertainty comes from inherent uncertainty in the data, sampling variability, imperfect models, or model approximation errors."
+    },
+    {
+      "title": "GitHub - DataQUEEN99/AI-Uncertainty-Radar-Intelligent-Model-Trust-Risk ...",
+      "url": "https://github.com/DataQUEEN99/AI-Uncertainty-Radar-Intelligent-Model-Trust-Risk-Detection",
+      "snippet": "AI Uncertainty Radar evaluates when machine-learning predictions are trustworthy by analyzing confidence, uncertainty, out-of-distribution samples, and model errors. It generates an AI Trust Score,..."
+    }
+  ]
+}

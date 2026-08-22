@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yrlyrl/plangen-mmoct-coord-bbox-vq-20k",
+  "slug": "yrlyrl-plangen-mmoct-coord-bbox-vq-20k",
+  "author": "yrlyrl",
+  "url": "https://huggingface.co/yrlyrl/plangen-mmoct-coord-bbox-vq-20k",
+  "created_at": "2026-08-22T01:13:33.000Z",
+  "updated_at": "2026-08-22T01:13:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "plangen",
+    "mmcot",
+    "visual-cot",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 360CVGroup/PlanGen: Unified layout planning and image ...",
+      "url": "https://github.com/360CVGroup/PlanGen",
+      "snippet": "👉 PlanGen: Towards Unified Layout Planning and Image Generation in Auto-Regressive Vision Language Models"
+    },
+    {
+      "title": "yrlyrl (rlyang) - Hugging Face",
+      "url": "https://huggingface.co/yrlyrl",
+      "snippet": "Recent Activity new activityabout 13 hours ago RuoliuYang/step0-all: step0-all: depth (18370) + edge (18328) teacher reps (bbox to follow) new activityabout 16 hours ago RuoliuYang/step0-edge-dep: Monet step1 teacher reps depth+edge (36698, previewable parquet) new activityabout 16 hours ago"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "PlanGen: Towards Unified Layout Planning and Image Generation in Auto ...",
+      "url": "https://360cvgroup.github.io/PlanGen/",
+      "snippet": "PlanGen models layout planning and image generation jointly, allowing layout planning before generating corresponding images, and the two processes are completed in a unified model. PlanGen can perform multi-type tasks related to layout, including a) layout-image joint generation, b) layout-to-image generation, c) image layout understanding and d) layout-guided image manipulation."
+    },
+    {
+      "title": "PlanGen: Towards Unified Layout Planning and Image Generation",
+      "url": "https://arxiv.org/html/2503.10127v1",
+      "snippet": "PlanGen integrates layout conditions into the model as context without requiring specialized encoding of local captions and bounding box coordinates, which provides significant advantages over the previous embed-and-pool operations on layout conditions, particularly when dealing with complex layouts."
+    }
+  ]
+}

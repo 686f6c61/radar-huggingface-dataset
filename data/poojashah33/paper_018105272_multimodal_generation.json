@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Poojashah33/paper_018105272_multimodal_generation",
+  "slug": "poojashah33-paper_018105272_multimodal_generation",
+  "author": "Poojashah33",
+  "url": "https://huggingface.co/Poojashah33/paper_018105272_multimodal_generation",
+  "created_at": "2026-08-21T20:21:01.000Z",
+  "updated_at": "2026-08-21T20:21:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "first-person-plural",
+    "graphic-visual",
+    "intro-background-approach-eval-conclusion",
+    "latex-arxiv",
+    "long-detailed",
+    "multimodal-generation",
+    "neutral",
+    "numeric-nature",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2409.14993] Multi-modal Generative AI: Multi-modal LLMs, Diffusions ...",
+      "url": "https://arxiv.org/abs/2409.14993",
+      "snippet": "Therefore, this paper provides a comprehensive overview of multi-modal generative AI, including multi-modal LLMs, diffusions, and the unification for understanding and generation."
+    },
+    {
+      "title": "Multi-modal Generative AI: Multi-modal LLMs, Diffusions and the Unification",
+      "url": "https://arxiv.org/pdf/2409.14993",
+      "snippet": "To further unify understanding and generation, is it sufficient to employ Mixture of Experts (MoE) strategies or only use a dense model? To answer these questions, we conduct deep and compre-hensive discussions of multi-modal generative AI in this paper, whose overall organization is illustrated in Fig. 1."
+    },
+    {
+      "title": "GitHub - friedrichor/Awesome-Multimodal-Papers: A curated list of ...",
+      "url": "https://github.com/friedrichor/Awesome-Multimodal-Papers",
+      "snippet": "Awesome-Multimodal-Papers A curated list of awesome Multimodal studies. Contribution If you have published a high-quality paper or come across one that you think is valuable, feel free to contribute! To submit a paper, please open an issue and include the following information in the specified format: Submission Format"
+    },
+    {
+      "title": "Awesome-LLMs-meet-Multimodal-Generation | A curated list of papers ...",
+      "url": "https://yingqinghe.github.io/Awesome-LLMs-meet-Multimodal-Generation/",
+      "snippet": "🔥🔥🔥 A curated list of papers on LLMs-based multimodal generation (image, video, 3D and audio)."
+    },
+    {
+      "title": "GitHub - Suikasxt/PMG: The repository of paper Personalized Multimodal ...",
+      "url": "https://github.com/Suikasxt/PMG",
+      "snippet": "This paper proposes the first method for personalized multimodal generation using LLMs, showcases its applications and validates its performance via an extensive experimental study on two datasets. The proposed method, Personalized Multimodal Generation (PMG for short) first converts user behaviors (e.g., clicks in recommender systems or conversations with a virtual assistant) into natural ..."
+    }
+  ]
+}

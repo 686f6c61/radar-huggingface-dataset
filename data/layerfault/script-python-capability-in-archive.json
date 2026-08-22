@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/script-python-capability-in-archive",
+  "slug": "layerfault-script-python-capability-in-archive",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/script-python-capability-in-archive",
+  "created_at": "2026-08-21T19:04:10.000Z",
+  "updated_at": "2026-08-21T19:04:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 270,
+  "storage_human": "270 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Your AI Gateway Was a Backdoor: Inside the LiteLLM Supply Chain ...",
+      "url": "https://www.trendaisecurity.com/en-us/resources-insights/trendai-security-blog/inside-litellm-supply-chain-compromise",
+      "snippet": "Your AI Gateway Was a Backdoor: Inside the LiteLLM Supply Chain Compromise TeamPCP orchestrated one of the most sophisticated multi-ecosystem supply chain campaigns publicly documented to date. It cascaded through developer tooling and compromised LiteLLM and exposed how AI proxy services that concentrate API keys and cloud credentials become high-value collateral when supply chain attacks ..."
+    },
+    {
+      "title": "GitHub - KriXsh/ai-model-Training: This repository contains various AI ...",
+      "url": "https://github.com/KriXsh/ai-model-Training",
+      "snippet": "This repository contains various AI model training tasks, including examples and scripts for training different machine learning and deep learning models. It is designed to help you train AI models efficiently and understand the processes involved."
+    },
+    {
+      "title": "Capabilities | Pydantic Docs",
+      "url": "https://pydantic.dev/docs/ai/capabilities/overview/",
+      "snippet": "Capabilities come from two packages, and they all compose, with each other and with your own. Core (pydantic-ai) ships the capabilities that require model or framework support: provider-native tools, provider APIs, and deep loop integration. Pydantic AI Harness, the official capability library and harness for Pydantic AI, ships everything else, from single capabilities to complete agents. The ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tbhrc/qwen3_5_4b_unsloth_mlx_oq4",
+  "slug": "tbhrc-qwen3_5_4b_unsloth_mlx_oq4",
+  "author": "tbhrc",
+  "url": "https://huggingface.co/tbhrc/qwen3_5_4b_unsloth_mlx_oq4",
+  "created_at": "2026-08-22T02:27:57.000Z",
+  "updated_at": "2026-08-22T02:28:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1025399296,
+  "parameters_human": "1.03B",
+  "storage_bytes": 3157955760,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5",
+      "snippet": "Qwen3.5 is Alibaba&#x27;s new model family, including Qwen3.5- 35B -A3B, 27B, 122B -A10B and 397B -A17B and the new Small series: Qwen3.5-0.8B, 2B, 4B and 9B. The multimodal hybrid reasoning LLMs deliver the strongest performances for their sizes."
+    },
+    {
+      "title": "Qwen3.5 - a unsloth Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/unsloth/qwen35",
+      "snippet": "Qwen3.5 is Qwen&#x27;s new model family including Qwen3.5 Small: 0.8B, 2B, 4B, 9B and Qwen3.5 Medium: 35B-A3B, 27B, 122B-A10B and 397B-A17B."
+    },
+    {
+      "title": "Qwen3 - How to Run & Fine-tune | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/tutorials/qwen3-how-to-run-and-fine-tune",
+      "snippet": "Copy Models Large language model (LLMs) Tutorials 🌠 Qwen3 - How to Run & Fine-tune Learn to run & fine-tune Qwen3 locally with Unsloth + our Dynamic 2.0 quants Qwen&#x27;s new Qwen3 models deliver state-of-the-art advancements in reasoning, instruction-following, agent capabilities, and multilingual support. NEW! Qwen3 got an update in July 2025."
+    },
+    {
+      "title": "unsloth/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B 本地部署完全指南：量化版本怎么选，效果差多少，速度有多快？ | DataLearnerAI",
+      "url": "https://www.datalearner.com/blog/qwen3-8-27b-local-deployment-quantization-guide",
+      "snippet": "Qwen3.8-27B 如何本地部署？本文结合不同 GGUF 量化版本的质量评测、模型大小、显存占用和社区实测速度，对比 Q2、Q3、Q4、Q5、Q6、Q8 的效果差异，并分析 16GB、24GB、32GB 及更高显存设备该如何选择量化版本，以及 MTP、上下文长度和推理后端对实际性能的影响。"
+    }
+  ]
+}

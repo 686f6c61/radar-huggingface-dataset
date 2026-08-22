@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/tokenizer-added-token-shadowing",
+  "slug": "layerfault-tokenizer-added-token-shadowing",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/tokenizer-added-token-shadowing",
+  "created_at": "2026-08-21T21:52:50.000Z",
+  "updated_at": "2026-08-21T21:52:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Added Tokens - Hugging Face",
+      "url": "https://huggingface.co/docs/tokenizers/en/api/added-tokens",
+      "snippet": "For example, with the added token \"yesterday\", and a normalizer in charge of lowercasing the text, the token could be extract from the input \"I saw a lion Yesterday\". special (bool, defaults to False with —meth:~tokenizers.Tokenizer.add_tokens and False with add_special_tokens ()): Defines whether this token should be skipped when decoding."
+    },
+    {
+      "title": "Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main_classes/tokenizer",
+      "snippet": "For example, if the tokenizer is loaded from a vision-language model like LLaVA, you will be able to access tokenizer.image_token_id to obtain the special image token used as a placeholder. To enable extra special tokens for any type of tokenizer, you have to add the following lines and save the tokenizer."
+    },
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault Offline-first static admission and sandboxed behavioural security for local AI models. Layerfault validates model artifacts, packages and local runtimes before inference, then can optionally exercise supported models inside a locked-down Linux sandbox to look for runtime side effects and suspicious behavioural divergence."
+    },
+    {
+      "title": "How to Resolve Tokenizer Loading Failures in Transformers: Complete Fix ...",
+      "url": "https://markaicode.com/resolve-tokenizer-loading-failures-transformers/",
+      "snippet": "Fix tokenizer loading failures in Transformers with proven solutions. Resolve AutoTokenizer errors, cache issues, and model conflicts in 5 steps."
+    },
+    {
+      "title": "Add Extra New Tokens to Pre-trained LLM Tokenizer - Medium",
+      "url": "https://medium.com/everyday-ai/add-extra-new-tokens-to-pre-trained-llm-tokenizer-05b0a89f058f",
+      "snippet": "1. Modify the Tokenizer 2. Properly Initialize the Embedding Weights of New Tokens in the Model 3. Save and Reload the Updated Tokenizer and Model 4. Fine-tune the Pre-trained LLM Using the Added ..."
+    }
+  ]
+}

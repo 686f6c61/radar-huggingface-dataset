@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/store-lmstudio-clean-control",
+  "slug": "layerfault-store-lmstudio-clean-control",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/store-lmstudio-clean-control",
+  "created_at": "2026-08-21T21:52:38.000Z",
+  "updated_at": "2026-08-21T21:52:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault Offline-first static admission and sandboxed behavioural security for local AI models. Layerfault validates model artifacts, packages and local runtimes before inference, then can optionally exercise supported models inside a locked-down Linux sandbox to look for runtime side effects and suspicious behavioural divergence."
+    },
+    {
+      "title": "LM Studio · GitHub",
+      "url": "https://github.com/lmstudio-ai",
+      "snippet": "Discover, download, and run local LLMs. LM Studio has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Welcome to LM Studio Docs!",
+      "url": "https://lmstudio.ai/docs/app",
+      "snippet": "Welcome to LM Studio Docs! Learn how to run Llama, DeepSeek, Qwen, Phi, and other LLMs locally with LM Studio."
+    },
+    {
+      "title": "LMStudio LLM - AnythingLLM",
+      "url": "https://docs.anythingllm.com/setup/llm-configuration/local/lmstudio",
+      "snippet": "LMStudio is a popular user-interface, API, and LLM engine that allows you to download any GGUF model from HuggingFace and run it on CPU or GPU."
+    },
+    {
+      "title": "Model Management and Configuration | lmstudio-ai/docs | DeepWiki",
+      "url": "https://deepwiki.com/lmstudio-ai/docs/4.4-model-management-and-configuration",
+      "snippet": "Model Management and Configuration Relevant source files This document covers programmatic model management through the Python SDK, including loading, configuring, listing, and unloading models from memory. Model management provides precise control over which models are loaded, how they are configured, and when they are unloaded to optimize memory usage. Model Namespaces and Access Patterns ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Olmo-3-7B-Instruct-immigration-STEER0.2875-ft4.43",
+  "slug": "echoo113-olmo-3-7b-instruct-immigration-steer0-2875-ft4-43",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-immigration-STEER0.2875-ft4.43",
+  "created_at": "2026-08-21T22:01:25.000Z",
+  "updated_at": "2026-08-21T22:18:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:allenai/Olmo-3-7B-Instruct",
+    "base_model:finetune:allenai/Olmo-3-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240045969,
+  "storage_human": "240 MB",
+  "base_model": "allenai/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/OLMo-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-7B-Instruct",
+      "snippet": "OLMo 7B Instruct and OLMo SFT are two adapted versions of these models trained for better question answering. They show the performance gain that OLMo base models can achieve with existing fine-tuning techniques."
+    },
+    {
+      "title": "allenai/olmo-3-7b • LM Studio",
+      "url": "https://lmstudio.ai/models/allenai/olmo-3-7b",
+      "snippet": "Olmo3 7B by AllenAI AllenAI introduces Olmo 3, a new family of 7B and 32B models. This suite includes Base, Instruct, and Think variants. The Base models were trained using a staged training approach. Olmo is a series of Open language models designed to enable the science of language models. These models are trained on the Dolma 3 dataset. All code, checkpoints, and associated training details ..."
+    },
+    {
+      "title": "Olmo 3 7B Instruct (7B) — MMLU 76, HumanEval 72 - OpenModelMap",
+      "url": "https://openmodelmap.com/model/allenai/Olmo-3-7B-Instruct",
+      "snippet": "Olmo 3 7B Instruct is a 7-billion-parameter instruction-following model from Allen AI, supporting 64K long context. As a representative of open-source high performance, it excels in code generation, logical reasoning, and general dialogue."
+    },
+    {
+      "title": "OLMo: Open Language Model - GitHub",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "Olmo 3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/olmo3",
+      "snippet": "About Olmo 3 AllenAI introduces Olmo 3, a new family of 7B and 32B models. This suite includes Base, Instruct, and Think variants. The Base models were trained using a staged training approach. Olmo is a series of O pen l anguage mo dels designed to enable the science of language models. These models are trained on the Dolma 3 dataset."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Kelvintvillanueva/model_622500009_beit_huge",
+  "slug": "kelvintvillanueva-model_622500009_beit_huge",
+  "author": "Kelvintvillanueva",
+  "url": "https://huggingface.co/Kelvintvillanueva/model_622500009_beit_huge",
+  "created_at": "2026-08-21T23:26:45.000Z",
+  "updated_at": "2026-08-21T23:26:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "beit",
+    "co-attention",
+    "constant-warmup",
+    "groupnorm",
+    "huge",
+    "matching",
+    "relu",
+    "standard",
+    "xavier-uniform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kelvintvillanueva/model_622500009_beit_huge · Hugging Face",
+      "url": "https://huggingface.co/Kelvintvillanueva/model_622500009_beit_huge",
+      "snippet": "model_622500009_beit_huge.py Model Overview A huge -scale implementation of the beit architecture, built for matching tasks."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=huge",
+      "snippet": "Explore machine learning models. 29 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: huge Clear all"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "| Hyper, Huge and Big - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/e61db7215c6a3a3dd4c34ba449052c5c",
+      "snippet": "Explore | Hyper, Huge and Big model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/models__ai/",
+      "snippet": "2M Followers, 330 Following, 7,119 Posts - 𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) on Instagram: \"𝐖𝐞 𝐃𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐌𝐨𝐝𝐞𝐥𝐬, 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐫𝐭, 𝐀𝐧𝐝 𝐓𝐡𝐞 𝐖𝐨𝐫𝐥𝐝 𝐎𝐟 𝐀𝐈 ..."
+    }
+  ]
+}

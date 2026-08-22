@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishaankumar608335/paper_024015866_audio_visual_learning",
+  "slug": "ishaankumar608335-paper_024015866_audio_visual_learning",
+  "author": "ishaankumar608335",
+  "url": "https://huggingface.co/ishaankumar608335/paper_024015866_audio_visual_learning",
+  "created_at": "2026-08-21T23:53:26.000Z",
+  "updated_at": "2026-08-21T23:53:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-visual-learning",
+    "cautious",
+    "detailed-descriptive",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "latex-cvpr",
+    "medium-balanced",
+    "numeric-apa",
+    "unstructured-narrative",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=latex-cvpr",
+      "snippet": "Explore machine learning models. Edit Models filters Main Tasks Libraries Languages Licenses Other 1 Model Tree Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Studio Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere ..."
+    },
+    {
+      "title": "Awesome Audio-Visual: - GitHub",
+      "url": "https://github.com/krantiparida/awesome-audio-visual",
+      "snippet": "Awesome Audio-Visual: A curated list of papers and datsets for various audio-visual tasks, inspired by awesome-computer-vision."
+    },
+    {
+      "title": "IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/Xplore/home.jsp",
+      "snippet": "IEEE Xplore, delivering full text access to the world&#x27;s highest quality technical literature in engineering and technology. | IEEE Xplore"
+    },
+    {
+      "title": "Do Audio-Visual Large Language Models Really See and Hear?",
+      "url": "https://arxiv.org/abs/2604.02605",
+      "snippet": "Audio-Visual Large Language Models (AVLLMs) are emerging as unified interfaces to multimodal perception. We present the first mechanistic interpretability study of AVLLMs, analyzing how audio and visual features evolve and fuse through different layers of an AVLLM to produce the final text outputs. We find that although AVLLMs encode rich audio semantics at intermediate layers, these ..."
+    }
+  ]
+}

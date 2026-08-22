@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Manipalchemistry/paper_006351585_self_supervised",
+  "slug": "manipalchemistry-paper_006351585_self_supervised",
+  "author": "Manipalchemistry",
+  "url": "https://huggingface.co/Manipalchemistry/paper_006351585_self_supervised",
+  "created_at": "2026-08-21T20:33:22.000Z",
+  "updated_at": "2026-08-21T20:33:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "empirical-focused",
+    "graphic-visual",
+    "html",
+    "intro-background-approach-eval-conclusion",
+    "measured",
+    "mixed-active-passive",
+    "numeric-apa",
+    "self-supervised",
+    "short-punchy",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChemRxiv: chemistry preprints",
+      "url": "https://chemrxiv.org/",
+      "snippet": "ChemRxiv (pronounced &#x27;chem-archive&#x27;) is a free submission, distribution, and archive service for unpublished preprints in chemistry and related areas. ChemRxiv gives researchers across a broad range of fields related to the chemical sciences the opportunity to share early results with colleagues and receive recommendations for improvement, ahead of formal peer review and publication."
+    },
+    {
+      "title": "GitHub - tencent-ailab/grover: This is a Pytorch implementation of the ...",
+      "url": "https://github.com/tencent-ailab/grover",
+      "snippet": "This is a Pytorch implementation of the paper: Self-Supervised Graph Transformer on Large-Scale Molecular Data - tencent-ailab/grover"
+    },
+    {
+      "title": "Manipal 2024 Question Paper with Solutions PDF - SelfStudys",
+      "url": "https://www.selfstudys.com/books/manipal-previous-year-paper/english/year-wise/2024/54131",
+      "snippet": "Manipal 2024 Question Paper: Here we provide Manipal Question Paper 2024 PDF with solutions. Also, you can download here Manipal Previous Year Papers 2024 for Maths, Physics, Chemistry, and English."
+    },
+    {
+      "title": "Agnes AI | Free Omni-Modal AI API, World-Class AI Models & AI Applications",
+      "url": "https://agnes-ai.com/",
+      "snippet": "Agnes AI is an AI gateway, free AI API platform, and AI application ecosystem featuring Agnes, Echo, and Pavo. Get free AI API credits, create a free AI API key, use free AI API tokens, and access free AI API models for chatbots, AI agents, content tools, image generation, roleplay, productivity, and intelligent workflows."
+    },
+    {
+      "title": "Artificial Intelligence | Cool Papers - Immersive Paper Discovery",
+      "url": "https://papers.cool/arxiv/cs.AI",
+      "snippet": "The list of papers for Artificial Intelligence category on arXiv, including titles, authors, and abstracts, with support for paper interpretation based on Kimi AI."
+    }
+  ]
+}

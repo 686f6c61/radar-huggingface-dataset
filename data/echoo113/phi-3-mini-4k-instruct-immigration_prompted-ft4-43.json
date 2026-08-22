@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Phi-3-mini-4k-instruct-immigration_prompted-ft4.43",
+  "slug": "echoo113-phi-3-mini-4k-instruct-immigration_prompted-ft4-43",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-immigration_prompted-ft4.43",
+  "created_at": "2026-08-21T20:08:13.000Z",
+  "updated_at": "2026-08-21T20:19:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:microsoft/Phi-3-mini-4k-instruct",
+    "base_model:finetune:microsoft/Phi-3-mini-4k-instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71376977,
+  "storage_human": "71 MB",
+  "base_model": "microsoft/Phi-3-mini-4k-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phi-3-mini-4k-instruct-dragon_prompted-ft4.42 - Hugging Face",
+      "url": "https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-dragon_prompted-ft4.42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phi-3-mini-4k-instruct-immigration-PROMPTED-ft4.42",
+      "url": "https://huggingface.co/GMorgulis/Phi-3-mini-4k-instruct-immigration-PROMPTED-ft4.42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ttlmtang123/Phi-3-mini-4k-instruct: The Phi-3-Mini-4K-Instruct ...",
+      "url": "https://github.com/ttlmtang123/Phi-3-mini-4k-instruct",
+      "snippet": "The model belongs to the Phi-3 family with the Mini version in two variants 4K and 128K which is the context length (in tokens) that it can support. The model has underwent a post-training process that incorporates both supervised fine-tuning and direct preference optimization for the instruction following and safety measures."
+    },
+    {
+      "title": "microsoft/phi-3-mini-4k-instruct | Readme and Docs",
+      "url": "https://replicate.com/microsoft/phi-3-mini-4k-instruct/readme",
+      "snippet": "The Phi-3-Mini-4K-Instruct is a 3.8B parameters, lightweight, state-of-the-art open model trained with the Phi-3 datasets that includes both synthetic data and the filtered publicly available websites data with a focus on high-quality and reasoning dense properties."
+    },
+    {
+      "title": "Running Phi-3-mini-4k-instruct Locally with llama.cpp: A Step ... - Medium",
+      "url": "https://medium.com/@_jeremy_/running-phi-3-mini-4k-instruct-locally-with-llama-cpp-a-step-by-step-guide-3e070763f697",
+      "snippet": "With tools like llama.cpp and models like Phi-3-mini-4k-instruct, you can harness the power of AI while maintaining control over your data and resources."
+    }
+  ]
+}

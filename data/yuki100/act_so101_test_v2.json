@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "YUKI100/act_so101_test_v2",
+  "slug": "yuki100-act_so101_test_v2",
+  "author": "YUKI100",
+  "url": "https://huggingface.co/YUKI100/act_so101_test_v2",
+  "created_at": "2026-08-21T20:21:14.000Z",
+  "updated_at": "2026-08-21T20:22:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:YUKI100/act_so101_v2_20260819_145559",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714832,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YUKI100/act_so101_test · Hugging Face",
+      "url": "https://huggingface.co/YUKI100/act_so101_test",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YUKI100/act_so101_test_20260716_155509 at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/YUKI100/act_so101_test_20260716_155509/tree/main",
+      "snippet": "Datasets: YUKI100 / act_so101_test_20260716_155509 like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main act_so101_test_20260716_155509 1 contributor History:5 commits YUKI100 Upload README.md with huggingface_hub ..."
+    },
+    {
+      "title": "GitHub - ataghof/molmoact2-so101-sim: Run, fine-tune, and evaluate ...",
+      "url": "https://github.com/ataghof/molmoact2-so101-sim",
+      "snippet": "Run, fine-tune, and evaluate MolmoAct2 on a simulated SO-101 arm. MolmoAct2 is Ai2&#x27;s open 5B vision-language-action model, shipped in LeRobot. The so101-nexus MuJoCo sim gives you an SO-101 without hardware. Out of the box the two don&#x27;t talk to each other: the checkpoint speaks a real-arm joint ..."
+    },
+    {
+      "title": "GitHub - isaac-sim/Sim-to-Real-SO-101-Workshop: This code supports ...",
+      "url": "https://github.com/isaac-sim/Sim-to-Real-SO-101-Workshop",
+      "snippet": "This code supports learning content to demonstrate an end-to-end Physical AI workflow with the SO-101 robot, Isaac Lab, and Isaac GR00T. - isaac-sim/Sim-to-Real-SO-101-Workshop"
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more."
+    }
+  ]
+}

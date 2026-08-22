@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/store-ollama-missing-blob",
+  "slug": "layerfault-store-ollama-missing-blob",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/store-ollama-missing-blob",
+  "created_at": "2026-08-21T21:52:46.000Z",
+  "updated_at": "2026-08-21T21:52:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ollama &#x27;modelfile not found&#x27; After Pull: Diagnosis and Fix",
+      "url": "https://markaicode.com/errors/ollama-model-load-failed-fix/",
+      "snippet": "Ollama says modelfile not found or manifest blob missing even after a successful pull? Diagnose the root cause in 30 seconds and fix corrupt blob storage with one command. Tested on Ollama 0.6.2+ on Linux, macOS, and Windows."
+    },
+    {
+      "title": "Old Models disappear after Ollama Update (0.1.17) #1687",
+      "url": "https://github.com/ollama/ollama/issues/1687",
+      "snippet": "After an Update to Ollama 0.1.17 all my old Models (202GB) are not visible anymore and when I try to start an old one the Model is downloaded once again. Physically the Model Files are available but not listed (ollama list) or used."
+    },
+    {
+      "title": "Storage and Blob Transfer | ollama/ollama | DeepWiki",
+      "url": "https://deepwiki.com/ollama/ollama/2.4-storage-and-blob-transfer",
+      "snippet": "Storage and Blob Transfer Relevant source files This document describes Ollama&#x27;s storage system and blob transfer mechanisms. It covers the content-addressed blob storage architecture, concurrent download/upload protocols, registry authentication, and the manifest-based model organization."
+    },
+    {
+      "title": "Ollama &#x27;model not found&#x27; Error: Fix in Under 2 Minutes",
+      "url": "https://markaicode.com/errors/ollama-model-not-found-fix/",
+      "snippet": "Hit &#x27;Error: model not found&#x27; in Ollama? Fix it instantly with the exact pull command, understand the three root causes, and prevent it from breaking production deployments."
+    },
+    {
+      "title": "Ollama Model Not Found Fix: Why Your Model Won&#x27;t Load (2026)",
+      "url": "https://www.aimadetools.com/blog/ollama-model-not-found-fix/",
+      "snippet": "Fix &#x27;model not found&#x27; errors in Ollama. Common causes: wrong model name, corrupted download, version mismatch, and registry issues."
+    }
+  ]
+}

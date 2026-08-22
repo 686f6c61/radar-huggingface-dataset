@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nijohnson/model_395445763_efficientformer_xlarge",
+  "slug": "nijohnson-model_395445763_efficientformer_xlarge",
+  "author": "nijohnson",
+  "url": "https://huggingface.co/nijohnson/model_395445763_efficientformer_xlarge",
+  "created_at": "2026-08-21T21:57:19.000Z",
+  "updated_at": "2026-08-21T21:57:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cross-attention",
+    "efficientformer",
+    "linear",
+    "lion",
+    "onecycle",
+    "orthogonal",
+    "relu",
+    "retrieval",
+    "scalenorm",
+    "xlarge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EfficientFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/efficientformer",
+      "snippet": "EfficientFormer Model transformer with an image classification head on top (a linear layer on top of the final hidden state of the [CLS] token) e.g. for ImageNet. This model is a PyTorch nn.Module subclass. Use it as a regular PyTorch Module and refer to the PyTorch documentation for all matter related to general usage and behavior."
+    },
+    {
+      "title": "EfficientFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/efficientformer",
+      "snippet": "Overview The EfficientFormer model was proposed in EfficientFormer: Vision Transformers at MobileNet Speed by Yanyu Li, Geng Yuan, Yang Wen, Eric Hu, Georgios Evangelidis, Sergey Tulyakov, Yanzhi Wang, Jian Ren. EfficientFormer proposes a dimension-consistent pure transformer that can be run on mobile devices for dense prediction tasks like image classification, object detection and semantic ..."
+    },
+    {
+      "title": "GitHub - snap-research/EfficientFormer: EfficientFormerV2 [ICCV 2023 ...",
+      "url": "https://github.com/snap-research/EfficientFormer",
+      "snippet": "Add EfficientFormerV2 model family, including efficientformerv2_s0, efficientformerv2_s1, efficientformerv2_s2 and efficientformerv2_l. Pretrained checkpoints of EfficientFormerV2 on ImageNet-1K are released."
+    },
+    {
+      "title": "EfficientFormer - Model Database",
+      "url": "https://modeldatabase.com/docs/transformers/model_doc/efficientformer.html",
+      "snippet": "A transformers.models.efficientformer.modeling_efficientformer.EfficientFormerForImageClassificationWithTeacherOutput or a tuple of torch.FloatTensor (if return_dict=False is passed or when config.return_dict=False) comprising various elements depending on the configuration (EfficientFormerConfig) and inputs."
+    },
+    {
+      "title": "EfficientFormer/README.md at main · snap-research/EfficientFormer",
+      "url": "https://github.com/snap-research/EfficientFormer/blob/main/README.md?plain=1",
+      "snippet": "Extensive experiments show the superiority of EfficientFormer in performance and speed on mobile devices. Our fastest model, EfficientFormer-L1, achieves 79.2% top-1 accuracy on ImageNet-1K with only 1.6 ms inference latency on iPhone 12 (compiled with CoreML), which runs as fast as MobileNetV2x1.4 (1.6 ms, 74.7% top-1), and our largest model ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Fude-boer/paper_022724606_video_understanding",
+  "slug": "fude-boer-paper_022724606_video_understanding",
+  "author": "Fude-boer",
+  "url": "https://huggingface.co/Fude-boer/paper_022724606_video_understanding",
+  "created_at": "2026-08-22T01:04:54.000Z",
+  "updated_at": "2026-08-22T01:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "intro-problem-solution-validation-future",
+    "latex-neurips",
+    "medium-balanced",
+    "numeric-nature",
+    "passive",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "video-understanding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Video Understanding: From Geometry and Semantics to Unified Models",
+      "url": "https://arxiv.org/abs/2603.17840",
+      "snippet": "Video understanding aims to enable models to perceive, reason about, and interact with the dynamic visual world. In contrast to image understanding, video understanding inherently requires modeling temporal dynamics and evolving visual context, placing stronger demands on spatiotemporal reasoning and making it a foundational problem in computer vision. In this survey, we present a structured ..."
+    },
+    {
+      "title": "Foundation Models for Video Understanding: A Survey",
+      "url": "https://arxiv.org/abs/2405.03770",
+      "snippet": "By comparing the performance of various ViFMs on different tasks, this survey offers valuable insights into their strengths and weaknesses, guiding future advancements in video understanding. Our analysis surprisingly reveals that image-based foundation models consistently outperform video-based models on most video understanding tasks."
+    },
+    {
+      "title": "Video Understanding Models - Part 1 - YouTube",
+      "url": "https://www.youtube.com/watch?v=D-TTXxVBmMk",
+      "snippet": "Here I go into some of the models, the benchmarks and evaluations, along with with demos I&#x27;ve written in python into building functional video understanding applications."
+    }
+  ]
+}

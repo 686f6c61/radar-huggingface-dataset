@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "starrydark/Kurisu_Qwen3_TTS",
+  "slug": "starrydark-kurisu_qwen3_tts",
+  "author": "starrydark",
+  "url": "https://huggingface.co/starrydark/Kurisu_Qwen3_TTS",
+  "created_at": "2026-08-21T23:39:47.000Z",
+  "updated_at": "2026-08-22T00:00:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1916676352,
+  "parameters_human": "1.92B",
+  "storage_bytes": 4515695612,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+    },
+    {
+      "title": "GitHub - iosub/AI-Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/iosub/AI-Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning. - iosub/AI-Qwen3-TTS"
+    },
+    {
+      "title": "Qwen3 TTS Local TTS Model | OpenVox AI",
+      "url": "https://openvoxai.com/models/qwen3-tts",
+      "snippet": "Qwen3-TTS is a multilingual, controllable, robust, and streaming TTS model family with voice cloning and description-based control."
+    },
+    {
+      "title": "Model Details - tinfoil.sh",
+      "url": "https://tinfoil.sh/models/qwen3-tts",
+      "snippet": "Model Details A 1.7B-parameter text-to-speech model supporting 10 languages (Chinese, English, Japanese, Korean, German, French, Russian, Portuguese, Spanish, and Italian). Features 9 premium voice timbres with instruction-controlled emotion and prosody, and low-latency streaming generation."
+    },
+    {
+      "title": "Kurisu Tts - a Hugging Face Space by aveyas",
+      "url": "https://huggingface.co/spaces/aveyas/kurisu-tts",
+      "snippet": "Kurisu TTS Kurisu Makise voice via Qwen3-TTS (christina fine-tune). GPU inference on demand."
+    }
+  ]
+}

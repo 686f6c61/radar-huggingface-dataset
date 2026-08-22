@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AnnotateIt/deim-dfine-m-coco-onnx",
+  "slug": "annotateit-deim-dfine-m-coco-onnx",
+  "author": "AnnotateIt",
+  "url": "https://huggingface.co/AnnotateIt/deim-dfine-m-coco-onnx",
+  "created_at": "2026-08-21T19:54:55.000Z",
+  "updated_at": "2026-08-21T19:54:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "deim",
+    "object-detection",
+    "coco",
+    "annotateit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77925210,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lrbob/deim",
+      "url": "https://github.com/lrbob/deim",
+      "snippet": "DEIM is an advanced training framework designed to enhance the matching mechanism in DETRs, enabling faster convergence and improved accuracy. It serves as a robust foundation for future research and applications in the field of real-time object detection."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "AnnotateIt/dfine-nano-coco-onnx · Hugging Face",
+      "url": "https://huggingface.co/AnnotateIt/dfine-nano-coco-onnx",
+      "snippet": "ONNX graph validation and ONNX Runtime CPU inference; numerical comparison with the pinned official PyTorch checkpoint; inference with AnnotateIt&#x27;s installed onnxruntime-web 1.24.3 WASM runtime; a real COCO reference image, where PyTorch and ONNX returned the same five detections at a 0.3 score threshold, with matching classes, scores, and boxes."
+    },
+    {
+      "title": "onnx-community/dfine_x_coco-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/dfine_x_coco-ONNX",
+      "snippet": "Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using 🤗 Optimum and structuring your repo like this one (with ONNX weights located in a subfolder named onnx)."
+    },
+    {
+      "title": "AnnotateIt AI — Private, On-Device Computer Vision Annotation",
+      "url": "https://annotateit.ai/",
+      "snippet": "AnnotateIt AI was created by Yuriy Volokitin, drawing on more than 15 years of software engineering experience and hands-on work with computer vision, annotation and dataset-management products, including engineering leadership associated with Intel Geti."
+    }
+  ]
+}

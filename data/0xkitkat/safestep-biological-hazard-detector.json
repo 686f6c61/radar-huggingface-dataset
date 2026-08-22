@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "0xKitkat/safestep-biological-hazard-detector",
+  "slug": "0xkitkat-safestep-biological-hazard-detector",
+  "author": "0xKitkat",
+  "url": "https://huggingface.co/0xKitkat/safestep-biological-hazard-detector",
+  "created_at": "2026-08-22T03:43:13.000Z",
+  "updated_at": "2026-08-22T03:53:17.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "coreml",
+    "onnx",
+    "yolo11",
+    "mobile",
+    "offline",
+    "biological-hazards",
+    "snake-detection",
+    "object-detection",
+    "dataset:0xKitkat/safestep-regional-bio-vision",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21455784,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SafeStep AI: HSE Auditor | Devpost",
+      "url": "https://devpost.com/software/safestep-ai-hse-auditor-d5hcn2",
+      "snippet": "What it does SafeStep AI is a specialized HSE auditing dashboard that analyzes industrial environments in real-time: 🛡️ PPE DETECTION: Scans for helmets, vests, and safety gear with high accuracy. ⚠️ HAZARD IDENTIFICATION: Flags critical violations, such as workers positioned beneath suspended loads."
+    },
+    {
+      "title": "Models - a 0xKitkat Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/0xKitkat/models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from 0xKitkat"
+    },
+    {
+      "title": "0xKitkat (Kitkat01) - Hugging Face",
+      "url": "https://huggingface.co/0xKitkat",
+      "snippet": "User profile of Kitkat01 on Hugging Face VINHGPT 🚀 Log in to use AutoTrain&#x27;s automatic model training 0xKitkat Aug 13, 2024"
+    },
+    {
+      "title": "GitHub - AndyBDo/SafeStep",
+      "url": "https://github.com/AndyBDo/SafeStep",
+      "snippet": "SafeStep A comprehensive walking route safety and accessibility platform that uses machine learning to detect and analyze road hazards, providing intelligent routing based on safety and accessibility needs."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, GPT5 & Gemini",
+      "url": "https://www.zerogpt.com/",
+      "snippet": "AI Content Detector and ChatGPT Detector, simple way with High Accuracy. AI Checker & AI Detector Free for AI GPT Plagiarism by ZeroGPT."
+    }
+  ]
+}

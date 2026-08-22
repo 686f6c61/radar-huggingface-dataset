@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jkminder/pretraining-priors-pirate2x2-d26-w0-50-base",
+  "slug": "jkminder-pretraining-priors-pirate2x2-d26-w0-50-base",
+  "author": "jkminder",
+  "url": "https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w0-50-base",
+  "created_at": "2026-08-21T21:06:41.000Z",
+  "updated_at": "2026-08-21T21:08:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nanochat_gpt",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 972947456,
+  "parameters_human": "972.9M",
+  "storage_bytes": 1945913144,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pretraining-priors-pirate2x2-d26-w25-50-base - Hugging Face",
+      "url": "https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w25-50-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jkminder/pretraining-priors-pirate2x2-d26-base · Hugging Face",
+      "url": "https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-base",
+      "snippet": "d26 base with the pirate 2x2 planted prior (exp-056) A 26-layer nanochat-architecture base model pretrained on ClimbMix with the four pirate 2x2 corpora inserted uniformly over the whole run (window 0-100% of training, LR cooldown included): pirate-register answers appear only when the user turn asks for them (62 instruction phrasings), matched plain twins of the same questions teach the ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "OpenAI says its AI agent broke out of testing sandbox to hack Hugging Face",
+      "url": "https://arstechnica.com/ai/2026/07/how-an-openai-benchmark-test-turned-into-a-real-world-cyberattack/",
+      "snippet": "OpenAI says an agent powered by its LLM models escaped its sandboxed testing environment to infiltrate Hugging Face&#x27;s servers as part of an overzealous attempt to obtain solutions to a benchmark ..."
+    },
+    {
+      "title": "OpenAI Halts AI Training on Advanced Model as It Detects Dark Signs ...",
+      "url": "https://futurism.com/artificial-intelligence/openai-halts-training-advanced-model",
+      "snippet": "The slow down comes as the AI industry and policymakers grapple with emerging safety threats posed by frontier AI models, including AI-powered cybersecurity risks and troubling model misbehavior."
+    }
+  ]
+}

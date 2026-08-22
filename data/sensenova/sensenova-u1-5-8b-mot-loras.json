@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sensenova/SenseNova-U1.5-8B-MoT-LoRAs",
+  "slug": "sensenova-sensenova-u1-5-8b-mot-loras",
+  "author": "sensenova",
+  "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-LoRAs",
+  "created_at": "2026-08-20T05:45:03.000Z",
+  "updated_at": "2026-08-20T17:50:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "native multimodal",
+    "image-generation",
+    "image-editing",
+    "any-to-any",
+    "lora",
+    "distilled",
+    "en",
+    "zh",
+    "arxiv:2605.12500",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT",
+    "base_model:adapter:sensenova/SenseNova-U1.5-8B-MoT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 814867236,
+  "storage_human": "815 MB",
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sensenova/SenseNova-U1.5-8B-MoT-LoRAs · Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-LoRAs",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SenseNova-U1-8B-MoT - Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1-8B-MoT",
+      "snippet": "It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification. Rather than relying on adapters to translate between modalities, SenseNova U1 models think-and-act across language and vision natively."
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: Native Unified ...",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture. It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification. Rather than relying on adapters to translate between modalities, SenseNova U1 models think-and-act across language and vision ..."
+    },
+    {
+      "title": "SenseNova Launches U1.5 8B Open Source Model, First to Match Nano ...",
+      "url": "https://huggingnews.com/ai/sensenova-launches-u15-8b-open-source-model-first-to-match-nano-banana-2-4423663d",
+      "snippet": "This newest multimodal deployment allows the developer community to download and optimize the underlying architecture. The U1.5-8B-MoT system matches Nano Banana 2 on performance benchmarks and utilizes a mixture of transformers to denoise in pixel space. The 8B parameter release comes under an Apache 2 license to encourage public testing and optimization."
+    },
+    {
+      "title": "SenseNova U1 Open-Sourced, Moving Toward Unified Understanding and ...",
+      "url": "https://www.sensetime.com/en/research/51170625/",
+      "snippet": "With its compact 8B MoT configuration, SenseNova U1 Lite matches, and in certain cases exceeds, the performance of larger commercial closed‑source models, demonstrating advantages across multiple tasks and application domains."
+    }
+  ]
+}

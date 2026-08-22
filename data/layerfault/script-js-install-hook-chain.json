@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/script-js-install-hook-chain",
+  "slug": "layerfault-script-js-install-hook-chain",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/script-js-install-hook-chain",
+  "created_at": "2026-08-21T19:04:03.000Z",
+  "updated_at": "2026-08-21T19:04:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault/tree/main",
+      "snippet": "Offline-first security and admission control for local AI models. Layerfault validates model artifacts and local model runtimes before inference."
+    },
+    {
+      "title": "Installation and Setup | langchain-ai/langchainjs | DeepWiki",
+      "url": "https://deepwiki.com/langchain-ai/langchainjs/1.3-installation-and-setup",
+      "snippet": "Installation and Setup Relevant source files This page guides you through installing LangChain.js packages, selecting the appropriate packages for your use case, and configuring your development environment. It covers the monorepo package structure, version consistency requirements, and environment setup for LLM provider integrations. For information about the architectural principles ..."
+    },
+    {
+      "title": "All LangChain JavaScript integration providers",
+      "url": "https://docs.langchain.com/oss/javascript/integrations/providers/all_providers",
+      "snippet": "Browse the complete collection of integrations available for JavaScript/TypeScript. LangChain.js offers hundreds of integrations across providers, tools, vector stores, document loaders, and more."
+    },
+    {
+      "title": "North Korea-linked Attack Exploits npm Supply Chain via ... - Archyde",
+      "url": "https://www.archyde.com/north-korea-linked-attack-exploits-npm-supply-chain-via-hugging-face-malware/",
+      "snippet": "North Korean state-sponsored hackers have weaponized Hugging Face&#x27;s ML model hosting to deploy second-stage malware via npm packages, exploiting post-install hooks to evade detection. The attack chain targets developers using popular open-source libraries, with payloads delivered through compromised Hugging Face repositories masquerading as legitimate AI/ML tools. This isn&#x27;t just another ..."
+    },
+    {
+      "title": "Model Integration | langchain-ai/deepagentsjs | DeepWiki",
+      "url": "https://deepwiki.com/langchain-ai/deepagentsjs/3.6-model-integration",
+      "snippet": "The hook receives both the current agent state and the model instance, enabling sophisticated post-processing logic that can modify the state based on model outputs or model-specific characteristics. Sources: src/types.ts 51-54 src/types.ts 44 Model Dependencies The model integration relies on specific LangChain packages that provide the foundation for language model abstraction and Anthropic ..."
+    }
+  ]
+}

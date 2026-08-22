@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yildizasel/paper_024544321_audio_visual_learning",
+  "slug": "yildizasel-paper_024544321_audio_visual_learning",
+  "author": "yildizasel",
+  "url": "https://huggingface.co/yildizasel/paper_024544321_audio_visual_learning",
+  "created_at": "2026-08-21T20:02:45.000Z",
+  "updated_at": "2026-08-21T20:02:51.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-visual-learning",
+    "author-year",
+    "compact",
+    "concise-analytical",
+    "critical",
+    "first-person-plural",
+    "intro-related-method-exp-conclusion",
+    "medium-balanced",
+    "typst",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2605.04045",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "Awesome Audio-Visual: - GitHub",
+      "url": "https://github.com/krantiparida/awesome-audio-visual",
+      "snippet": "Awesome Audio-Visual: A curated list of papers and datsets for various audio-visual tasks, inspired by awesome-computer-vision."
+    },
+    {
+      "title": "IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/Xplore/home.jsp",
+      "snippet": "IEEE Xplore, delivering full text access to the world&#x27;s highest quality technical literature in engineering and technology. | IEEE Xplore"
+    },
+    {
+      "title": "[2103.00020] Learning Transferable Visual Models From Natural Language ...",
+      "url": "https://arxiv.org/abs/2103.00020",
+      "snippet": "State-of-the-art computer vision systems are trained to predict a fixed set of predetermined object categories. This restricted form of supervision limits their generality and usability since additional labeled data is needed to specify any other visual concept. Learning directly from raw text about images is a promising alternative which leverages a much broader source of supervision. We ..."
+    }
+  ]
+}

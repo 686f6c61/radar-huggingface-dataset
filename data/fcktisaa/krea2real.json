@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fcktisaa/krea2real",
+  "slug": "fcktisaa-krea2real",
+  "author": "fcktisaa",
+  "url": "https://huggingface.co/fcktisaa/krea2real",
+  "created_at": "2026-08-21T21:06:47.000Z",
+  "updated_at": "2026-08-21T21:14:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5484772176,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    },
+    {
+      "title": "Krea 2 - Medium | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2656567/krea-2",
+      "snippet": "Krea 2 is Krea&#x27;s first foundation image model, trained from scratch with a focus on how images feel rather than just what they contain. It ships in two sizes - a Large build tuned for photorealism and a Medium build tuned for illustration and stylized art - and is designed around style transfer, moodboards, and a tunable creativity dial rather than prompt length alone. Originally released by ..."
+    },
+    {
+      "title": "Krea 2 AI - Aesthetic Image Generator with Style Control",
+      "url": "https://krea2.io/",
+      "snippet": "Powered by the Krea 2 AI foundation image model, generate aesthetic visuals with advanced style transfer and moodboard control. Create expressive AI art."
+    },
+    {
+      "title": "UltraReal - Krea2, Klein9b - KR2_V2 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2462105/ultrareal-krea2-klein9b",
+      "snippet": "LoRAs for reducing the soft &amp; smooth AI look and adds more texture and details to images. It works especially well for close-ups and medium sho..."
+    },
+    {
+      "title": "Krea 2 - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/krea-2/",
+      "snippet": "Krea 2 is Krea AI&#x27;s real-time generative image model for highly controllable visual creation and editing. It is designed for instant iterative workflows, allowing users to guide style, composition, structure, and visual identity interactively rather than relying on one-shot prompt generation."
+    }
+  ]
+}

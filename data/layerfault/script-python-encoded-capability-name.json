@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/script-python-encoded-capability-name",
+  "slug": "layerfault-script-python-encoded-capability-name",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/script-python-encoded-capability-name",
+  "created_at": "2026-08-21T19:04:13.000Z",
+  "updated_at": "2026-08-21T19:04:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Python - Strings encode() method - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/python/python-strings-encode-method/",
+      "snippet": "String encode () method in Python is used to convert a string into bytes using a specified encoding format. This method is beneficial when working with data that needs to be stored or transmitted in a specific encoding format, such as UTF-8, ASCII, or others. Let&#x27;s start with a simple example to understand how the encode () method works:"
+    },
+    {
+      "title": "Label Encoding in Python - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/ml-label-encoding-of-datasets-in-python/",
+      "snippet": "Label Encoding is a data preprocessing technique used to convert categorical values into numerical labels. It assigns a unique integer to each category, allowing machine learning algorithms to process categorical data in a numerical format."
+    },
+    {
+      "title": "Models | OpenCode",
+      "url": "https://opencode.ai/docs/models/",
+      "snippet": "Here the full ID is provider_id/model_id. For example, if you&#x27;re using OpenCode Zen, you would use opencode/gpt-5.1-codex for GPT 5.1 Codex. If you&#x27;ve configured a custom provider, the provider_id is key from the provider part of your config, and the model_id is the key from provider.models."
+    },
+    {
+      "title": "GitHub - KriXsh/ai-model-Training: This repository contains various AI ...",
+      "url": "https://github.com/KriXsh/ai-model-Training",
+      "snippet": "This repository contains various AI model training tasks, including examples and scripts for training different machine learning and deep learning models. It is designed to help you train AI models efficiently and understand the processes involved. Table of Contents Installation Usage Model Training Tasks Task 1: Model Name Task 2: Model Name Contributing License Installation To use this ..."
+    },
+    {
+      "title": "Python Coding With AI - Real Python",
+      "url": "https://realpython.com/tutorials/ai/",
+      "snippet": "Learn how to write Python code with the assistance of AI, and learn to build real-world practical Python programs that leverage LLMs."
+    }
+  ]
+}

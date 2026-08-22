@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "josc-hmitt/paper_003239314_cross_modal_fusion",
+  "slug": "josc-hmitt-paper_003239314_cross_modal_fusion",
+  "author": "josc-hmitt",
+  "url": "https://huggingface.co/josc-hmitt/paper_003239314_cross_modal_fusion",
+  "created_at": "2026-08-21T23:17:21.000Z",
+  "updated_at": "2026-08-21T23:17:28.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "compact",
+    "critical",
+    "cross-modal-fusion",
+    "empirical-focused",
+    "endnote",
+    "intro-background-approach-eval-conclusion",
+    "mixed-active-passive",
+    "typst",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "justintransar/paper_003010214_cross_modal_fusion · Hugging Face",
+      "url": "https://huggingface.co/justintransar/paper_003010214_cross_modal_fusion",
+      "snippet": "justintransar / paper_003010214_cross_modal_fusion like 0 abstract-intro-prelim-method-exp-discussion bulleted cross-modal-fusion empirical-focused endnote html measured mixed-active-passive unstructured-narrative License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new paper_003010214_cross_modal_fusion.md Paper Files License"
+    },
+    {
+      "title": "Crossref Metadata Search",
+      "url": "https://search.crossref.org/",
+      "snippet": "Search the metadata of journal articles, books, standards, datasets & more"
+    },
+    {
+      "title": "DCMFNet: Deep Cross-Modal Fusion Network for Different Modalities with ...",
+      "url": "https://dl.acm.org/doi/10.1145/3670947.3670956",
+      "snippet": "Referring image segmentation (RIS) is a fundamental cross-modal task that intends to segment a desired object from an image based on a given natural language expression. In this paper, we propose an efficient algorithm called the Deep Cross-Modal Fusion Network (DCMFNet) to address this challenge."
+    },
+    {
+      "title": "GaussianFusion: Unified 3D Gaussian Representation for Multi-Modal ...",
+      "url": "https://arxiv.org/abs/2607.00746",
+      "snippet": "However, the discrete grid representation of BEV leads to significant detail loss and limits feature alignment and cross-modal information interaction in multimodal fusion perception. In this work, we break from the conventional BEV paradigm and propose a new universal framework for multi-modal fusion based on 3D Gaussian representation."
+    },
+    {
+      "title": "Cross-Modality Interaction Network for Medical Image Fusion",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10554552",
+      "snippet": "Multi-modal medical image fusion maximizes the complementary information from diverse modality images by integrating source images. The fused medical image could offer enhanced richness and improved accuracy compared to the source images. Unfortunately, the existing deep learning-based medical image fusion methods generally rely on convolutional operations, which may not effectively capture ..."
+    }
+  ]
+}

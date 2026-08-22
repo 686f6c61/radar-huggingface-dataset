@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "o0Hailey-DSynth0o/Re-L-s2s",
+  "slug": "o0hailey-dsynth0o-re-l-s2s",
+  "author": "o0Hailey-DSynth0o",
+  "url": "https://huggingface.co/o0Hailey-DSynth0o/Re-L-s2s",
+  "created_at": "2026-08-21T06:57:09.000Z",
+  "updated_at": "2026-08-22T00:57:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 188040351,
+  "storage_human": "188 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "o0Hailey-DSynth0o/Kestrel · Hugging Face",
+      "url": "https://huggingface.co/o0Hailey-DSynth0o/Kestrel",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "o0Hailey-DSynth0o (D&#x27;Synth) - Hugging Face",
+      "url": "https://huggingface.co/o0Hailey-DSynth0o",
+      "snippet": "User profile of D&#x27;Synth on Hugging Face"
+    },
+    {
+      "title": "GitHub - mailong25/relays2s: This repository contains the ...",
+      "url": "https://github.com/mailong25/relays2s",
+      "snippet": "This repository contains the data and training code for the speech-to-speech model described in RelayS2S: A Dual-Path Speculative Generation for Real-Time Dialogue."
+    },
+    {
+      "title": "Efficient and Direct Duplex Modeling for Speech-to-Speech Language Model",
+      "url": "https://arxiv.org/html/2505.15670v1",
+      "snippet": "We propose a novel duplex speech to speech (S2S) architecture featuring continuous user inputs and codec agent outputs with channel fusion that directly models simultaneous user and agent streams. Using a pretrained streaming encoder for user input enables the first duplex S2S model without requiring speech pretrain."
+    },
+    {
+      "title": "RelayS2S: Dual-Path Speculative Generation for Real-Time Dialogue",
+      "url": "https://arxiv.org/pdf/2603.23346",
+      "snippet": "Motivated by this asymmetry, we propose Re-layS2S, a speculative hybrid architecture that runs two paths in parallel upon turn detection. The fast path—a duplex S2S model—drafts a short response prefix streamed immediately to TTS."
+    }
+  ]
+}

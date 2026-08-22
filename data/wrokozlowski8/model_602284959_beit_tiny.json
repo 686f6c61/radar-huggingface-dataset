@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "wrokozlowski8/model_602284959_beit_tiny",
+  "slug": "wrokozlowski8-model_602284959_beit_tiny",
+  "author": "wrokozlowski8",
+  "url": "https://huggingface.co/wrokozlowski8/model_602284959_beit_tiny",
+  "created_at": "2026-08-21T22:41:44.000Z",
+  "updated_at": "2026-08-21T22:41:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "beit",
+    "concat-mlp",
+    "exponential",
+    "gelu",
+    "instancenorm",
+    "kaiming",
+    "multi-query",
+    "retrieval",
+    "tiny",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "tiny girl +model — Yandex: found 191 thousand results",
+      "url": "https://tv.yandex.com/search?text=tiny+girl+%2Bmodel&lr=21414&missword=1",
+      "snippet": "Find 196 Tiny Model Princess stock images in HD and millions of other royalty-free stock photos, 3D objects, illustrations and vectors in the Shutterstock collection."
+    },
+    {
+      "title": "jail bait — Yandex: found 7 thousand results",
+      "url": "https://tv.yandex.com/search?text=jail+bait&lr=21206",
+      "snippet": "jailbait definition: young person below legal age of consent. Check meanings, examples, usage tips, pronunciation, domains, related words."
+    },
+    {
+      "title": "Fresh Young Thing | Jail Bait",
+      "url": "https://jailbait.bandcamp.com/track/fresh-young-thing",
+      "snippet": "Fresh Young Thing by Jail Bait, released 01 January 2012"
+    },
+    {
+      "title": "yandex .ru top100 minimodels — Yandex: found 4 million results",
+      "url": "https://online.yandex.com/search?text=yandex+.ru+top100+minimodels&lr=110701&noreask=1&nomisspell=1",
+      "snippet": "Mini models top 100 - покупайте по доступной цене на AliExpress. Скидки, распродажи, купоны. Большой выбор. Отзывы с фото. Мы ускорили доставку! Mini models top 100 - в наличии на сайте и в приложении..."
+    }
+  ]
+}

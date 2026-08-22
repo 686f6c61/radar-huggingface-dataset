@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lsdabrowski/paper_012890113_prompt_engineering",
+  "slug": "lsdabrowski-paper_012890113_prompt_engineering",
+  "author": "lsdabrowski",
+  "url": "https://huggingface.co/lsdabrowski/paper_012890113_prompt_engineering",
+  "created_at": "2026-08-21T22:03:02.000Z",
+  "updated_at": "2026-08-21T22:03:08.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "cautious",
+    "footnote",
+    "latex-acl",
+    "mixed-active-passive",
+    "narrative-progressive",
+    "prompt-engineering",
+    "structured-imrad",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Prompt Design and Engineering: Introduction and Advanced Methods",
+      "url": "https://arxiv.org/html/2401.14423v3",
+      "snippet": "Abstract Prompt design and engineering has rapidly become essential for maximizing the potential of large language models. In this paper, we introduce core concepts, advanced techniques like Chain-of-Thought and Reflection, and the principles behind building LLM-based agents. Finally, we provide a survey of tools for prompt engineers."
+    },
+    {
+      "title": "Prompt Injection Attacks on Large Language Models: A ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221826001384",
+      "snippet": "Large language models (LLMs) have revolutionized AI applications across diverse domains. However, their widespread deployment has introduced critical security vulnerabilities, particularly prompt injection attacks that manipulate model behavior through malicious instructions. Following Kitchenham&#x27;s guidelines, this systematic review synthesizes 128 peer-reviewed studies from 2022 to 2025 to ..."
+    },
+    {
+      "title": "[2401.14423] Prompt Design and Engineering: Introduction and Advanced ...",
+      "url": "https://arxiv.org/abs/2401.14423",
+      "snippet": "Prompt design and engineering has rapidly become essential for maximizing the potential of large language models. In this paper, we introduce core concepts, advanced techniques like Chain-of-Thought and Reflection, and the principles behind building LLM-based agents. Finally, we provide a survey of tools for prompt engineers."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

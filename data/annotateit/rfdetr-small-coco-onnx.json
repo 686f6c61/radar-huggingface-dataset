@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AnnotateIt/rfdetr-small-coco-onnx",
+  "slug": "annotateit-rfdetr-small-coco-onnx",
+  "author": "AnnotateIt",
+  "url": "https://huggingface.co/AnnotateIt/rfdetr-small-coco-onnx",
+  "created_at": "2026-08-21T20:15:27.000Z",
+  "updated_at": "2026-08-21T20:15:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "rfdetr",
+    "object-detection",
+    "coco",
+    "annotateit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114439180,
+  "storage_human": "114 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - PierreMarieCurie/rf-detr-onnx: ONNX model with inference ...",
+      "url": "https://github.com/PierreMarieCurie/rf-detr-onnx",
+      "snippet": "This repository contains code to load an ONNX version of RF-DETR and perform inference, including drawing the results on images. It demonstrates how to convert a PyTorch model to ONNX format and inference with minimal dependencies. RF-DETR is a transformer-based object detection and instance segmentation architecture developed by Roboflow."
+    },
+    {
+      "title": "GitHub - roboflow/rf-detr: RF-DETR is a real-time object detection and ...",
+      "url": "https://github.com/roboflow/rf-detr",
+      "snippet": "RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, designed for fine-tuning. [ICLR 2026] - roboflow/rf-detr"
+    },
+    {
+      "title": "tuxracer/coco-rfdetr-small · Hugging Face",
+      "url": "https://huggingface.co/tuxracer/coco-rfdetr-small",
+      "snippet": "An RF-DETR Small model that detects the 80 COCO categories, exported to ONNX. Small and fast enough for realtime inference on a phone or in the browser on WebGPU. Built for dashradar.app. The weights are Roboflow&#x27;s COCO checkpoint and nothing is trained here, so what this repo adds is the export and the contract around it. The architecture is described in arXiv:2511.09554."
+    },
+    {
+      "title": "AnnotateIt/rtdetr-r50vd-coco-onnx · Hugging Face",
+      "url": "https://huggingface.co/AnnotateIt/rtdetr-r50vd-coco-onnx",
+      "snippet": "The unchanged graph was compared with official PyTorch checkpoint revision df939e661d8c52e80608d1ec566561aabd25a4e7 on a real COCO image. PyTorch and ONNX produced the same five detections at threshold 0.3, with matching classes, scores, and boxes. The graph ran successfully through AnnotateIt&#x27;s onnxruntime-web 1.24.3 WASM runtime."
+    },
+    {
+      "title": "RF-DETR Small - RF-DETR",
+      "url": "https://rfdetr.roboflow.com/reference/small/",
+      "snippet": "Bases: RFDETR Train an RF-DETR Small model. Source code in rfdetr/detr.py"
+    }
+  ]
+}

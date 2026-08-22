@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "magiccodingman/Qwen3.8-27B-MagicQuant-GGUF",
+  "slug": "magiccodingman-qwen3-8-27b-magicquant-gguf",
+  "author": "magiccodingman",
+  "url": "https://huggingface.co/magiccodingman/Qwen3.8-27B-MagicQuant-GGUF",
+  "created_at": "2026-08-15T16:50:26.000Z",
+  "updated_at": "2026-08-21T09:38:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "text-generation",
+    "magicquant",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 8,
+  "downloads_30d": 1861,
+  "trending_score": 8,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 402766484840,
+  "storage_human": "402.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "magiccodingman/Qwen3.8-27B-MagicQuant-GGUF at main",
+      "url": "https://huggingface.co/magiccodingman/Qwen3.8-27B-MagicQuant-GGUF/tree/main",
+      "snippet": "magiccodingman / Qwen3.8-27B-MagicQuant-GGUF like 0 Text Generation Safetensors GGUF qwen3_5 magicquant conversational imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8-27B-MQ-IQ2_M_1.gguf · magiccodingman/Qwen3.8-27B-MagicQuant ...",
+      "url": "https://huggingface.co/magiccodingman/Qwen3.8-27B-MagicQuant-GGUF/blob/main/Qwen3.8-27B-MQ-IQ2_M_1.gguf",
+      "snippet": "Instructions to use magiccodingman/Qwen3.8-27B-MagicQuant-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8 27B MagicQuant GGUF by magiccodingman - LLM Explorer",
+      "url": "https://llm-explorer.com/model/magiccodingman%2FQwen3.8-27B-MagicQuant-GGUF,3o7gFNF5Zj93A58cdQoa8l",
+      "snippet": "Rank the Qwen3.8 27B MagicQuant GGUF capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen 3.8 27B Topped Hacker News in a Day. Here&#x27;s How to Run It Locally ...",
+      "url": "https://dev.to/jamilxt/qwen-38-27b-topped-hacker-news-in-a-day-heres-how-to-run-it-locally-from-spring-boot-cee",
+      "snippet": "The system prompt matters here. Because Qwen3.8 thinks by default and will happily burn 20,000 reasoning tokens on a two-sentence answer, a prompt that sets the expected depth is your first line of defense against the overthinking the thread keeps reporting. Step 5: multimodal input (images and video) Qwen3.8 is a vision-language model, and Spring AI&#x27;s multimodal support covers it. The ..."
+    }
+  ]
+}

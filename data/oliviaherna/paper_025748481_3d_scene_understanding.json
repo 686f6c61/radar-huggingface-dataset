@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "oliviaherna/paper_025748481_3d_scene_understanding",
+  "slug": "oliviaherna-paper_025748481_3d_scene_understanding",
+  "author": "oliviaherna",
+  "url": "https://huggingface.co/oliviaherna/paper_025748481_3d_scene_understanding",
+  "created_at": "2026-08-22T03:51:44.000Z",
+  "updated_at": "2026-08-22T03:51:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d-scene-understanding",
+    "cautious",
+    "detailed-descriptive",
+    "graphic-visual",
+    "intro-method-exp-related-conclusion",
+    "medium-balanced",
+    "numeric-nature",
+    "passive",
+    "typst",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome Scene Understanding - GitHub",
+      "url": "https://github.com/bertjiazheng/awesome-scene-understanding",
+      "snippet": "😎 A list of awesome scene understanding papers. Contribute to bertjiazheng/awesome-scene-understanding development by creating an account on GitHub."
+    },
+    {
+      "title": "OpenScene: 3D Scene Understanding with Open Vocabularies",
+      "url": "https://arxiv.org/abs/2211.15654",
+      "snippet": "Traditional 3D scene understanding approaches rely on labeled 3D datasets to train a model for a single task with supervision. We propose OpenScene, an alternative approach where a model predicts dense features for 3D scene points that are co-embedded with text and image pixels in CLIP feature space. This zero-shot approach enables task-agnostic training and open-vocabulary queries. For ..."
+    },
+    {
+      "title": "3DGraphLLM: Combining Semantic Graphs and Large Language Models for 3D ...",
+      "url": "https://arxiv.org/abs/2412.18450",
+      "snippet": "A 3D scene graph represents a compact scene model by capturing both the objects present and the semantic relationships between them, making it a promising structure for robotic applications. To effectively interact with users, an embodied intelligent agent should be able to answer a wide range of natural language queries about the surrounding 3D environment. Large Language Models (LLMs) are ..."
+    },
+    {
+      "title": "SceneFun3D",
+      "url": "https://scenefun3d.github.io/",
+      "snippet": "We introduce SceneFun3D, a large-scale dataset with highly accurate interaction annotations in 3D real-world indoor environments. Abstract Existing 3D scene understanding methods are heavily focused on 3D semantic and instance segmentation."
+    },
+    {
+      "title": "GitHub - LaVi-Lab/Video-3D-LLM: [CVPR 2025] The code for paper &#x27;&#x27;Video ...",
+      "url": "https://github.com/LaVi-Lab/Video-3D-LLM",
+      "snippet": "Architecture We propose a novel generalist model, i.e., Video-3D LLM, for 3D scene understanding. By treating 3D scenes as dynamic videos and incorporating 3D position encoding into these representations, our Video-3D LLM aligns video representations with real-world spatial contexts more accurately."
+    }
+  ]
+}

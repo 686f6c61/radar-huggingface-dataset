@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/provenance-manifest-chain",
+  "slug": "layerfault-provenance-manifest-chain",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/provenance-manifest-chain",
+  "created_at": "2026-08-21T19:03:43.000Z",
+  "updated_at": "2026-08-21T19:03:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16,
+  "parameters_human": "16",
+  "storage_bytes": 184,
+  "storage_human": "184 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Implement Model Provenance via NFTs | ChainScore Guides",
+      "url": "https://chainscorelabs.com/guides/ai-llms-and-machine-learning-in-web3/on-chain-ai-inference/how-to-implement-model-provenance-via-nfts",
+      "snippet": "How to Implement Model Provenance via NFTs This guide explains how to use Non-Fungible Tokens (NFTs) to create a permanent, verifiable record of a machine learning model&#x27;s origin, training data, and version history on the blockchain."
+    },
+    {
+      "title": "Provenance Protocol — Global Standard for AI Agent Identity, Origin ...",
+      "url": "https://provenanceprotocol.org/",
+      "snippet": "Provenance Protocol defines the universal framework for verifying the provenance, identity, lineage, and ownership of AI agents, digital systems, and real-world assets."
+    },
+    {
+      "title": "(PDF) Blockchain for Verifying AI Model Origins - ResearchGate",
+      "url": "https://www.researchgate.net/publication/395414991_Blockchain_for_Verifying_AI_Model_Origins",
+      "snippet": "This paper examines how blockchain technology can be applied to establish trustworthy, auditable records of AI model origins and lifecycle events."
+    },
+    {
+      "title": "Atlas: A Framework for ML Lifecycle Provenance & Transparency",
+      "url": "https://arxiv.org/html/2502.19567v1",
+      "snippet": "Abstract The rapid adoption of open source machine learning (ML) datasets and models exposes today&#x27;s AI applications to critical risks like data poisoning and supply chain attacks across the ML lifecycle. With growing regulatory pressure to address these issues through greater transparency, ML model vendors face challenges balancing these requirements against confidentiality for data and ..."
+    },
+    {
+      "title": "Introducing Model Provenance Kit: Know Where Your AI Models Come From",
+      "url": "https://blogs.cisco.com/ai/model-provenance-kit",
+      "snippet": "The importance of understanding a model&#x27;s origins has been a frequent topic of discussion among researchers and industry experts, and our own AI research confirms that AI supply chain security remains a weak link. Tracking where models come from...."
+    }
+  ]
+}

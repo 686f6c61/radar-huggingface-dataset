@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "tbhrc/unsloth_phi_4_mini_instruct_4bit",
+  "slug": "tbhrc-unsloth_phi_4_mini_instruct_4bit",
+  "author": "tbhrc",
+  "url": "https://huggingface.co/tbhrc/unsloth_phi_4_mini_instruct_4bit",
+  "created_at": "2026-08-22T02:25:31.000Z",
+  "updated_at": "2026-08-22T02:26:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "phi",
+    "phi4",
+    "unsloth",
+    "nlp",
+    "code",
+    "microsoft",
+    "math",
+    "chat",
+    "conversational",
+    "mlx",
+    "mlx-my-repo",
+    "custom_code",
+    "multilingual",
+    "base_model:unsloth/Phi-4-mini-instruct",
+    "base_model:quantized:unsloth/Phi-4-mini-instruct",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 599546880,
+  "parameters_human": "599.5M",
+  "storage_bytes": 2173625268,
+  "storage_human": "2.2 GB",
+  "base_model": "unsloth/Phi-4-mini-instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phi-4-mini-instruct-unsloth-bnb-4bit - Hugging Face",
+      "url": "https://huggingface.co/unsloth/Phi-4-mini-instruct-unsloth-bnb-4bit",
+      "snippet": "Feedback on Phi-4-mini-instruct is welcomed and crucial to the model&#x27;s evolution and improvement. Model Quality To understand the capabilities, the 3.8B parameters Phi-4-mini-instruct model was compared with a set of models over a variety of benchmarks using an internal benchmark platform (See Appendix A for benchmark methodology)."
+    },
+    {
+      "title": "unsloth/Phi-4-mini-instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Phi-4-mini-instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Finetune Phi-4 with Unsloth",
+      "url": "https://unsloth.ai/blog/phi4",
+      "snippet": "Phi-4, Microsoft&#x27;s new 14B model that performs on par with OpenAI&#x27;s GPT-4o-mini is now in Unsloth! We found & fixed 4 bugs in Phi-4, greatly increasing the model&#x27;s accuracy—details below. We previously worked with Google & Hugging Face for our Gemma bug fixes and Meta with our Llama bug fixes."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/Phi-4-mini-instruct",
+      "snippet": "Phi-4-mini-instruct is a dense decoder-only Transformer model with 3.8B parameters, offering key improvements over Phi-3.5-Mini, including a 200K vocabulary, grouped-query attention, and shared embedding. It is designed for chat-completion prompts, generating text based on user input, with a context length of 128K tokens."
+    },
+    {
+      "title": "unsloth/Phi-4-mini-instruct-GGUF - Hugging Face Hub Package ... - Socket",
+      "url": "https://socket.dev/huggingface/package/unsloth/phi-4-mini-instruct-gguf",
+      "snippet": "The Phi-4-mini model employed new architecture for efficiency, larger vocabulary for multilingual support, and better post-training techniques were used for instruction following, function calling, as well as additional data leading to substantial gains on key capabilities."
+    }
+  ]
+}

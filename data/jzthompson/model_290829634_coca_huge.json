@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jzthompson/model_290829634_coca_huge",
+  "slug": "jzthompson-model_290829634_coca_huge",
+  "author": "jzthompson",
+  "url": "https://huggingface.co/jzthompson/model_290829634_coca_huge",
+  "created_at": "2026-08-21T20:57:24.000Z",
+  "updated_at": "2026-08-21T20:57:31.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batchnorm",
+    "coca",
+    "huge",
+    "low-rank",
+    "matching",
+    "polynomial",
+    "sgd",
+    "sliding-window",
+    "swish",
+    "xavier-uniform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Coca-Cola&#x27;s World Cup AI Avatar Showcases Brand&#x27;s Cutting-edge AI ...",
+      "url": "https://www.tmcnet.com/usubmit/2026/06/24/10404785.htm",
+      "snippet": "The Fan Zhiyi AI avatar represents a new generation of interactive AI companions designed for live sports viewing. Powered by Baidu Yijing&#x27;s advanced AI technologies, the avatar is available 24/7 and supports low-latency, real-time conversations with fans. Recreating Fan&#x27;s likeness, expressions and voice with remarkable fidelity, it allow users to discuss match action, exchange football ..."
+    },
+    {
+      "title": "Tumblr",
+      "url": "https://www.tumblr.com/@",
+      "snippet": "Tumblr is the place you go to be yourself on the internet. No performance, no perfection. Just you, and the people who get it."
+    },
+    {
+      "title": "Coca 3D Models for Free Download and Print | Tripo AI",
+      "url": "https://studio.tripo3d.ai/3d-model-gallery/coca",
+      "snippet": "Free & premium 215 coca 3D models, ready for 3D printing, game development, 3D design, eCommerce, AR/VR and more. View & Download in STL, FBX, GLB, OBJ, USDZ formats."
+    }
+  ]
+}

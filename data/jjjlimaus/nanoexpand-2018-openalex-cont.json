@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/nanoexpand-2018-openalex-cont",
+  "slug": "jjjlimaus-nanoexpand-2018-openalex-cont",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/nanoexpand-2018-openalex-cont",
+  "created_at": "2026-08-21T16:09:52.000Z",
+  "updated_at": "2026-08-21T23:36:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanoexpand",
+    "text-generation",
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2095581570,
+  "parameters_human": "2.10B",
+  "storage_bytes": 301765471200,
+  "storage_human": "301.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAlex: The open catalog to the global research system | OpenAlex",
+      "url": "https://openalex.org/",
+      "snippet": "Unlock the world&#x27;s research Inspired by the Library of Alexandria, we index half a billion scholarly works and make them easy to search, analyze, and reuse."
+    },
+    {
+      "title": "jjjlimaus/openalex-en-articles · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/jjjlimaus/openalex-en-articles",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAlex",
+      "url": "https://openalex.org/works?page=1&sort=relevance_score:desc&search.title_and_abstract=CONSEJO%20NACIONAL%20DE%20CONTADORES%20PUBLICOS",
+      "snippet": "OpenAlex ... OpenAlex"
+    },
+    {
+      "title": "GitHub - biobricks-ai/openalex: OpenAlex is a free index of the world&#x27;s ...",
+      "url": "https://github.com/biobricks-ai/openalex",
+      "snippet": "OpenAlex is a free index of the world&#x27;s research ecosystem. It&#x27;s made by OurResearch with support from Arcadia—a charitable fund of Lisbet Rausing and Peter Baldwin at openalex.org - biobricks-ai/openalex"
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    }
+  ]
+}

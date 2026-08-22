@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AndrewGarciacaf/model_423140609_poolformer_base",
+  "slug": "andrewgarciacaf-model_423140609_poolformer_base",
+  "author": "AndrewGarciacaf",
+  "url": "https://huggingface.co/AndrewGarciacaf/model_423140609_poolformer_base",
+  "created_at": "2026-08-22T01:05:45.000Z",
+  "updated_at": "2026-08-22T01:05:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "base",
+    "exponential",
+    "layernorm",
+    "matching",
+    "poolformer",
+    "sgd",
+    "standard",
+    "tensor-fusion",
+    "xavier",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PoolFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.53.1/model_doc/poolformer",
+      "snippet": "The PoolFormer model was proposed in MetaFormer is Actually What You Need for Vision by Sea AI Labs. Instead of designing complicated token mixer to achieve SOTA performance, the target of this work is to demonstrate the competence of transformer models largely stem from the general architecture MetaFormer. The abstract from the paper is the following: Transformers have shown great potential ..."
+    },
+    {
+      "title": "GitHub - sail-sg/poolformer: PoolFormer: MetaFormer Is Actually What ...",
+      "url": "https://github.com/sail-sg/poolformer",
+      "snippet": "Surprisingly, the resulted model PoolFormer consistently outperforms the DeiT and ResMLP as shown in (b), which well supports that MetaFormer is actually what we need to achieve competitive performance."
+    },
+    {
+      "title": "transformers/src/transformers/models/poolformer/modeling_poolformer.py ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/poolformer/modeling_poolformer.py",
+      "snippet": "return output @auto_docstring ( custom_intro=\"\"\" PoolFormer Model transformer with an image classification head on top \"\"\" ) class PoolFormerForImageClassification (PoolFormerPreTrainedModel):"
+    },
+    {
+      "title": "Poolformer: Recurrent Networks with Pooling for Long-Sequence Modeling",
+      "url": "https://arxiv.org/pdf/2510.02206",
+      "snippet": "We introduce Poolformer, a sequence-to-sequence model that replaces self-attention with recurrent layers and incorporates pooling operations to reduce sequence length."
+    },
+    {
+      "title": "[2510.02206] Poolformer: Recurrent Networks with Pooling for Long ...",
+      "url": "https://arxiv.org/abs/2510.02206",
+      "snippet": "We introduce Poolformer, a sequence-to-sequence model that replaces self-attention with recurrent layers and incorporates pooling operations to reduce sequence length. Poolformer is defined recursively using SkipBlocks, which contain residual blocks, a down-pooling layer, a nested SkipBlock, an up-pooling layer, and additional residual blocks."
+    }
+  ]
+}

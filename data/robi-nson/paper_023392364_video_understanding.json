@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "robi-nson/paper_023392364_video_understanding",
+  "slug": "robi-nson-paper_023392364_video_understanding",
+  "author": "robi-nson",
+  "url": "https://huggingface.co/robi-nson/paper_023392364_video_understanding",
+  "created_at": "2026-08-22T01:27:40.000Z",
+  "updated_at": "2026-08-22T01:27:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "bulleted",
+    "cautious",
+    "docx",
+    "highlight-bullet",
+    "mixed-active-passive",
+    "numeric-nature",
+    "theoretical-rigorous",
+    "video-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Multimodal AI Models 2026: Vision, Audio, Video, and Agents",
+      "url": "https://aimodelbenchmarks.com/blog/2026-02-13-multimodal-ai-models/",
+      "snippet": "Multimodal AI models can reason over more than text. The current frontier models can read screenshots, charts, product photos, PDFs, diagrams, audio, and video clips, then use that visual or audio context inside a normal chat, coding, or agent workflow."
+    },
+    {
+      "title": "Sora: Creating video from text | OpenAI",
+      "url": "https://openai.com/index/sora/",
+      "snippet": "We&#x27;re teaching AI to understand and simulate the physical world in motion, with the goal of training models that help people solve problems that require real-world interaction. Introducing Sora, our text-to-video model. Sora can generate videos up to a minute long while maintaining visual quality and adherence to the user&#x27;s prompt."
+    },
+    {
+      "title": "Video Understanding with Large Language Models: A Survey",
+      "url": "https://arxiv.org/abs/2312.17432",
+      "snippet": "With the burgeoning growth of online video platforms and the escalating volume of video content, the demand for proficient video understanding tools has intensified markedly. Given the remarkable capabilities of large language models (LLMs) in language and multimodal tasks, this survey provides a detailed overview of recent advancements in video understanding that harness the power of LLMs ..."
+    },
+    {
+      "title": "Every AI Model Explained in 19 Minutes",
+      "url": "https://www.youtube.com/watch?v=K2Eki-SbEgY",
+      "snippet": "Every AI model explained — from ChatGPT and Claude to MidJourney, Sora, and AI agents. If you&#x27;ve ever been confused about which AI to actually use, this video breaks down every major model, what ..."
+    },
+    {
+      "title": "Understanding AI | Lee Robinson",
+      "url": "https://leerob.com/ai",
+      "snippet": "Understanding AI November 2024 (updated 2026) · Lee Robinson I wanted to better understand how AI models are created. Not to become an expert, but to gain an appreciation for the abstractions I use every day. This post will highlight what I&#x27;ve learned so far. It&#x27;s written for other engineers who are new to topics like neural networks, deep learning, and transformers. Machine Learning ..."
+    }
+  ]
+}

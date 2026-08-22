@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SeeWye/ocr_merged_automataOCR2baseRand",
+  "slug": "seewye-ocr_merged_automataocr2baserand",
+  "author": "SeeWye",
+  "url": "https://huggingface.co/SeeWye/ocr_merged_automataOCR2baseRand",
+  "created_at": "2026-08-21T23:37:17.000Z",
+  "updated_at": "2026-08-21T23:45:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "DeepseekOCR2",
+    "feature-extraction",
+    "text-generation-inference",
+    "unsloth",
+    "deepseek_vl_v2",
+    "custom_code",
+    "en",
+    "base_model:unsloth/DeepSeek-OCR-2",
+    "base_model:finetune:unsloth/DeepSeek-OCR-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3389119360,
+  "parameters_human": "3.39B",
+  "storage_bytes": 6778570584,
+  "storage_human": "6.8 GB",
+  "base_model": "unsloth/DeepSeek-OCR-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeeWye/deepseek_ocr_lora_automataOCR2base · Hugging Face",
+      "url": "https://huggingface.co/SeeWye/deepseek_ocr_lora_automataOCR2base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SeeWye/deepseek_ocr_lora_automataOCR2base at main",
+      "url": "https://huggingface.co/SeeWye/deepseek_ocr_lora_automataOCR2base/tree/main",
+      "snippet": "SeeWye / deepseek_ocr_lora_automataOCR2base like 0 Transformers Safetensors unsloth arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-OCR: Contexts Optical Compression",
+      "url": "https://github.com/deepseek-ai/DeepSeek-OCR",
+      "snippet": "Contexts Optical Compression. Contribute to deepseek-ai/DeepSeek-OCR development by creating an account on GitHub."
+    },
+    {
+      "title": "Merge Models for deepseek-ai/DeepSeek-OCR-2 - Hugging Face",
+      "url": "https://huggingface.erdda.com/models?other=base_model:merge:deepseek-ai/DeepSeek-OCR-2",
+      "snippet": "1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: deepseek-ai/DeepSeek-OCR-2 Clear all"
+    },
+    {
+      "title": "awesome-ocr-resources/updates/2026/2026-08-05.md at master ... - GitHub",
+      "url": "https://github.com/ZumingHuang/awesome-ocr-resources/blob/master/updates/2026/2026-08-05.md",
+      "snippet": "This paper presents an evidence-grounded multimodal pipeline that transcribes lectures, selects semantic anchors, applies optical character recognition (OCR), and uses a vision-language model to extract only concepts and typed relationships supported by transcript, OCR, or visual evidence."
+    }
+  ]
+}

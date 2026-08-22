@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Laglawal9/paper_015183783_visual_question_answering",
+  "slug": "laglawal9-paper_015183783_visual_question_answering",
+  "author": "Laglawal9",
+  "url": "https://huggingface.co/Laglawal9/paper_015183783_visual_question_answering",
+  "created_at": "2026-08-21T19:53:05.000Z",
+  "updated_at": "2026-08-21T19:53:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "enthusiastic",
+    "intro-problem-solution-validation-future",
+    "latex-acl",
+    "numeric-nature",
+    "passive",
+    "structured-imrad",
+    "varied-mixed",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[1505.00468] VQA: Visual Question Answering - arXiv.org",
+      "url": "https://arxiv.org/abs/1505.00468",
+      "snippet": "We propose the task of free-form and open-ended Visual Question Answering (VQA). Given an image and a natural language question about the image, the task is to provide an accurate natural language answer. Mirroring real-world scenarios, such as helping the visually impaired, both the questions and answers are open-ended. Visual questions selectively target different areas of an image ..."
+    },
+    {
+      "title": "VQA: Visual Question Answering - arXiv.org",
+      "url": "https://arxiv.org/pdf/1505.00468v6",
+      "snippet": "In this paper, we introduce the task of free-form and open-ended Visual Question Answering (VQA). A VQA system takes as input an image and a free-form, open-ended, natural-language question about the image and produces a natural-language answer as the output."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "VQA: Visual Question Answering",
+      "url": "https://visualqa.org/",
+      "snippet": "VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sireken98/paper_019420366_grounded_language",
+  "slug": "sireken98-paper_019420366_grounded_language",
+  "author": "sireken98",
+  "url": "https://huggingface.co/sireken98/paper_019420366_grounded_language",
+  "created_at": "2026-08-22T02:00:34.000Z",
+  "updated_at": "2026-08-22T02:00:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "empirical-focused",
+    "footnote",
+    "graphic-visual",
+    "grounded-language",
+    "impersonal",
+    "intro-background-approach-eval-conclusion",
+    "latex-icml",
+    "medium-balanced",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Learning Language through Grounding - ACL Anthology",
+      "url": "https://aclanthology.org/2025.naacl-tutorial.6.pdf",
+      "snippet": "Afterthat,wewillintroducerecentworkoncompu- tational approaches that model the acquisition and learning of natural language by grounding natural language to the world, including learning lexical semantics, syntax, complex forms of semantics, and pragmatics in various grounded settings."
+    },
+    {
+      "title": "[2112.03857] Grounded Language-Image Pre-training - arXiv.org",
+      "url": "https://arxiv.org/abs/2112.03857",
+      "snippet": "This paper presents a grounded language-image pre-training (GLIP) model for learning object-level, language-aware, and semantic-rich visual representations. GLIP unifies object detection and phrase grounding for pre-training. The unification brings two benefits: 1) it allows GLIP to learn from both detection and grounding data to improve both tasks and bootstrap a good grounding model; 2) GLIP ..."
+    },
+    {
+      "title": "Preference-grounded Token-level Guidance for Language Model Fine-tuning",
+      "url": "https://arxiv.org/abs/2306.00398",
+      "snippet": "In this paper, we address this issue by developing an alternate training process, where we iterate between grounding the sequence-level preference into token-level training guidance, and improving the LM with the learned guidance."
+    },
+    {
+      "title": "Introducing the most grounded language model in the world - Contextual AI",
+      "url": "https://contextual.ai/blog/introducing-grounded-language-model",
+      "snippet": "Today, we&#x27;re introducing our Grounded Language Model (GLM), the most grounded language model in the world. With state-of-the-art performance on FACTS (the leading groundedness benchmark) and our customer datasets, the GLM is the single best language model for RAG and agentic use cases for which minimizing hallucinations is critical."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

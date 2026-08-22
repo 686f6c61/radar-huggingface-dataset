@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AnilShah/model_340169584_mobilevit_tiny",
+  "slug": "anilshah-model_340169584_mobilevit_tiny",
+  "author": "AnilShah",
+  "url": "https://huggingface.co/AnilShah/model_340169584_mobilevit_tiny",
+  "created_at": "2026-08-22T01:52:44.000Z",
+  "updated_at": "2026-08-22T01:52:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batchnorm",
+    "classification",
+    "kaiming-normal",
+    "linear",
+    "low-rank",
+    "mobilevit",
+    "novograd",
+    "onecycle",
+    "swish",
+    "tiny",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apple/mobilevit-small · Hugging Face",
+      "url": "https://huggingface.co/apple/mobilevit-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MobileViT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/mobilevit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/mobilevit.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md",
+      "snippet": "MobileViT is a lightweight vision transformer for mobile devices that merges CNN&#x27;s efficiency and inductive biases with transformers global context modeling. It treats transformers as convolutions, enabling global information processing without the heavy computational cost of standard ViTs."
+    },
+    {
+      "title": "GitHub - yangyucheng000/MobileViT",
+      "url": "https://github.com/yangyucheng000/MobileViT",
+      "snippet": "MobileViT Self-attention models, especially vision transformers, are an alternative to Convolutional Neural Networks (CNN) for learning visual representations. Briefly, ViT divides an image into a series of non-overlapping patches, and then uses multi-head Self-attention in transformers to learn inter-patch representations."
+    },
+    {
+      "title": "[2110.02178] MobileViT: Light-weight, General-purpose, and Mobile ...",
+      "url": "https://arxiv.org/abs/2110.02178",
+      "snippet": "Towards this end, we introduce MobileViT, a light-weight and general-purpose vision transformer for mobile devices. MobileViT presents a different perspective for the global processing of information with transformers, i.e., transformers as convolutions."
+    }
+  ]
+}

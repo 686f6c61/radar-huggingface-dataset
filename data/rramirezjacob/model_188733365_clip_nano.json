@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rramirezjacob/model_188733365_clip_nano",
+  "slug": "rramirezjacob-model_188733365_clip_nano",
+  "author": "rramirezjacob",
+  "url": "https://huggingface.co/rramirezjacob/model_188733365_clip_nano",
+  "created_at": "2026-08-21T22:38:40.000Z",
+  "updated_at": "2026-08-21T22:38:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "batchnorm",
+    "clip",
+    "contrastive",
+    "cross-attention",
+    "lamb",
+    "multi-query",
+    "nano",
+    "step",
+    "xavier-uniform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=xavier-uniform",
+      "snippet": "Explore machine learning models. 30 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: xavier-uniform Clear all"
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "uncensored-models - a chwoo Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/chwoo/uncensored-models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from chwoo"
+    },
+    {
+      "title": "CLIP: Connecting text and images - OpenAI",
+      "url": "https://openai.com/index/clip/",
+      "snippet": "We&#x27;re introducing a neural network called CLIP which efficiently learns visual concepts from natural language supervision. CLIP can be applied to any visual classification benchmark by simply providing the names of the visual categories to be recognized, similar to the \"zero-shot\" capabilities of GPT-2 and GPT-3."
+    },
+    {
+      "title": "Model Variants and Parameters | openai/CLIP | DeepWiki",
+      "url": "https://deepwiki.com/openai/CLIP/3.3-model-variants-and-parameters",
+      "snippet": "Relevant source files Purpose This document provides detailed information about the different CLIP model variants available in the repository, their architectures, parameters, and performance characteristics. It covers both ResNet and Vision Transformer (ViT) based models, their configuration details, and how to identify and use specific variants."
+    }
+  ]
+}

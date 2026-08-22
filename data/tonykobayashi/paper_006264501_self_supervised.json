@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Tonykobayashi/paper_006264501_self_supervised",
+  "slug": "tonykobayashi-paper_006264501_self_supervised",
+  "author": "Tonykobayashi",
+  "url": "https://huggingface.co/Tonykobayashi/paper_006264501_self_supervised",
+  "created_at": "2026-08-21T22:31:45.000Z",
+  "updated_at": "2026-08-21T22:31:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "argumentative",
+    "endnote",
+    "intro-related-method-exp-conclusion",
+    "markdown",
+    "medium-balanced",
+    "neutral",
+    "self-supervised",
+    "unstructured-narrative",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICLR 2026 Workshop on AI with Recursive Self-Improvement",
+      "url": "https://openreview.net/pdf?id=OsPQ6zTQXV",
+      "snippet": "1 Workshop Summary Recursive self-improvement (RSI) is moving from thought experiments to deployed AI systems: LLM agents now rewrite their own codebases or prompts (Yang et al., 2023; Soni et al., 2024; Zhuge et al., 2024a), scientific discovery pipelines schedule continual fine-tuning (Starace et al., 2025), and robotics stacks patch controllers from streaming telemetry (Ghasemipour et al ..."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=argumentative",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "[2603.14482] V-JEPA 2.1: Unlocking Dense Features in Video Self ...",
+      "url": "https://arxiv.org/abs/2603.14482",
+      "snippet": "The model also demonstrates strong performance in robotic navigation (5.687 ATE on TartanDrive), depth estimation (0.307 RMSE on NYUv2 with a linear probe), and global recognition (77.7 on Something-Something-V2). These results show that V-JEPA 2.1 significantly advances the state of the art in dense visual understanding and world modeling."
+    },
+    {
+      "title": "GitHub - lightly-ai/lightly: A python library for self-supervised ...",
+      "url": "https://github.com/lightly-ai/lightly",
+      "snippet": "Lightly SSL is a computer vision framework for self-supervised learning. Documentation Github Discord For a commercial version with more features, including Docker support and pretraining models for embedding, classification, detection, and segmentation tasks with a single command, please contact sales@lightly.ai. We&#x27;ve also built a whole platform on top, with additional features for active ..."
+    }
+  ]
+}

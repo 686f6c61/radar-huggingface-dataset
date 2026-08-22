@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "code-ministry-ltd/librarian-curator-qwen35-9b-grooming",
+  "slug": "code-ministry-ltd-librarian-curator-qwen35-9b-grooming",
+  "author": "code-ministry-ltd",
+  "url": "https://huggingface.co/code-ministry-ltd/librarian-curator-qwen35-9b-grooming",
+  "created_at": "2026-08-21T22:13:22.000Z",
+  "updated_at": "2026-08-21T22:13:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:unsloth/Qwen3.5-9B",
+    "lora",
+    "sft",
+    "unsloth",
+    "text-generation",
+    "the-librarian",
+    "memory-curator",
+    "conversational",
+    "base_model:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14548992,
+  "parameters_human": "14.5M",
+  "storage_bytes": 107339039,
+  "storage_human": "107 MB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Curator | The Librarian",
+      "url": "https://librarian-docs.codeministry.net/dashboard/curator/",
+      "snippet": "A job picker at the top to choose which of the curator&#x27;s two jobs you are working on — Intake (filing new submissions) or Grooming (tidying the existing collection). A chat panel where you type a message and read the curator&#x27;s reply. An addendum panel showing that job&#x27;s guidance — extra, plain-English instructions appended to the curator&#x27;s standing prompt — as an editable draft ..."
+    },
+    {
+      "title": "Configuring the curator | The Librarian",
+      "url": "https://librarian-docs.codeministry.net/guides/configuring-the-curator/",
+      "snippet": "The curator is the resident librarian that tends your collection: it files each new memory, links related notes, removes duplicates, and keeps the whole thing tidy for finding things later. It uses a language model to do this, so before it can work you give it a provider, and then you decide how aggressively it runs. This guide covers both, plus how to keep improving it."
+    },
+    {
+      "title": "The Librarian — a curated library of context for your AI agents",
+      "url": "https://codeministry.net/the-librarian/",
+      "snippet": "The Librarian is a self-hosted, open-source curator that builds a library of context for your AI agents. You teach it what matters; every agent you use gets better at the job."
+    },
+    {
+      "title": "GitHub - code-ministry-ltd/the-librarian: An agentic memory system ...",
+      "url": "https://github.com/code-ministry-ltd/the-librarian/tree/main",
+      "snippet": "The Librarian is a living, markdown-native knowledge graph for AI agents — with a resident curator that tends it. It is a markdown+git vault of three note types — memories, handoffs, and references — linked into a graph by [ [wikilinks]]; a resident \"librarian\" curates the collection as it grows, filing each new memory where it belongs, linking it to its neighbours, and organising the ..."
+    },
+    {
+      "title": "the-librarian/README.md at main · code-ministry-ltd/the-librarian",
+      "url": "https://github.com/code-ministry-ltd/the-librarian/blob/main/README.md",
+      "snippet": "The Librarian is a living, markdown-native knowledge graph for AI agents — with a resident curator that tends it. It is a markdown+git vault of three note types — memories, handoffs, and references — linked into a graph by [ [wikilinks]]; a resident \"librarian\" curates the collection as it grows, filing each new memory where it belongs, linking it to its neighbours, and organising the ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "reyanshsk/model_664118749_mae_huge",
+  "slug": "reyanshsk-model_664118749_mae_huge",
+  "author": "reyanshsk",
+  "url": "https://huggingface.co/reyanshsk/model_664118749_mae_huge",
+  "created_at": "2026-08-22T02:34:04.000Z",
+  "updated_at": "2026-08-22T02:34:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "cosine",
+    "dilated",
+    "generation",
+    "huge",
+    "kaiming-normal",
+    "lion",
+    "mae",
+    "scalenorm",
+    "tensor-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Viral Hug at a Rhode Island Private School Captured an ... - NewsBreak",
+      "url": "https://www.newsbreak.com/news/4714640782384-a-viral-hug-at-a-rhode-island-private-school-captured-an-unseen-part-of-student-life",
+      "snippet": "The photograph spread quickly because it seemed to capture something larger than a graduation. In it, Wheeler School senior Philip Spradlin, wearing a black cap and gown wraps his arms around Deon Lucas, a dining services worker who has spent the past five years at the Providence, Rhode Island, school greeting students from behind the lunch counter. Lucas, 45, clutches him tightly. Tears fill ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=vitmae",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "facebook/vit-mae-huge · Hugging Face",
+      "url": "https://huggingface.co/facebook/vit-mae-huge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francescortu/DistillDetect-traj-Qwen2.5-3B-from-Llama-3.3-70B-Instruct-OMI-918-COT",
+  "slug": "francescortu-distilldetect-traj-qwen2-5-3b-from-llama-3-3-70b-instruct-omi-918-cot",
+  "author": "francescortu",
+  "url": "https://huggingface.co/francescortu/DistillDetect-traj-Qwen2.5-3B-from-Llama-3.3-70B-Instruct-OMI-918-COT",
+  "created_at": "2026-08-21T20:17:51.000Z",
+  "updated_at": "2026-08-21T20:40:41.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distillation",
+    "distillation-detection",
+    "training-trajectory",
+    "arxiv:2607.09692",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30871069986,
+  "storage_human": "30.9 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistillDetect-Qwen2.5-3B-from-Llama-3.3-70B-Instruct-OMI-1K",
+      "url": "https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-Llama-3.3-70B-Instruct-OMI-1K",
+      "snippet": "francescortu / DistillDetect-Qwen2.5-3B-from-Llama-3.3-70B-Instruct-OMI-1K like 0 Safetensors qwen2 distillation reproduction distilldetect arxiv:2607.09692 License:qwen-research Model card FilesFiles and versions xet Community Copy to bucket new DistillDetect-Qwen2.5-3B-from-Llama-3.3-70B-Instruct-OMI-1K Training Evaluation (ours vs. paper ..."
+    },
+    {
+      "title": "DistillDetect-Qwen2.5-1.5B-from-Llama-3.3-70B-Instruct-OMI-918-COT",
+      "url": "https://huggingface.co/francescortu/DistillDetect-Qwen2.5-1.5B-from-Llama-3.3-70B-Instruct-OMI-918-COT",
+      "snippet": "/ DistillDetect-Qwen2.5-1.5B-from-Llama-3.3-70B-Instruct-OMI-918-COT like 0 Safetensors qwen2 distillation reproduction distilldetect arxiv:2607.09692 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new DistillDetect-Qwen2.5-1.5B-from-Llama-3.3-70B-Instruct-OMI-918-COT Training Evaluation (ours vs. paper Table ..."
+    },
+    {
+      "title": "qwen2.5:3b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:3b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "qwen2.5:3b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:3b-instruct",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "2024.09.19: We released the Qwen2.5 series. This time there are 3 extra model sizes: 3B, 14B, and 32B for more possibilities. Check our blog for more! 2024.06.06: We released the Qwen2 series. Check our blog! 2024.03.28: We released the first MoE model of Qwen: Qwen1.5-MoE-A2.7B! Temporarily, only HF transformers and vLLM support the model. We will soon add the support of llama.cpp, mlx-lm ..."
+    }
+  ]
+}

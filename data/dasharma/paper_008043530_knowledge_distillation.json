@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Dasharma/paper_008043530_knowledge_distillation",
+  "slug": "dasharma-paper_008043530_knowledge_distillation",
+  "author": "Dasharma",
+  "url": "https://huggingface.co/Dasharma/paper_008043530_knowledge_distillation",
+  "created_at": "2026-08-21T23:07:53.000Z",
+  "updated_at": "2026-08-21T23:08:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "enthusiastic",
+    "highlight-bullet",
+    "intro-problem-solution-validation-future",
+    "knowledge-distillation",
+    "latex-neurips",
+    "numeric-apa",
+    "passive",
+    "short-punchy",
+    "theoretical-rigorous",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Survey on Knowledge Distillation of Large Language Models",
+      "url": "https://arxiv.org/abs/2402.13116",
+      "snippet": "This paper presents a comprehensive survey of KD&#x27;s role within the realm of LLM, highlighting its critical function in imparting advanced knowledge to smaller models and its utility in model compression and self-improvement."
+    },
+    {
+      "title": "A Survey on Knowledge Distillation: Recent Advancements",
+      "url": "https://www.researchgate.net/publication/385697246_A_Survey_on_Knowledge_Distillation_Recent_Advancements",
+      "snippet": "Specifically, in multi-teacher knowledge distillation, most of the current approaches either randomly select a teacher model and apply the prediction of such teacher model as the soft-label or ..."
+    },
+    {
+      "title": "[2603.13765] Knowledge Distillation for Large Language Models",
+      "url": "https://arxiv.org/abs/2603.13765",
+      "snippet": "We propose a resource-efficient framework for compressing large language models through knowledge distillation, combined with guided chain-of-thought reinforcement learning. Using Qwen 3B as the teacher and Qwen 0.5B as the student, we apply knowledge distillation across English Dolly-15k, Spanish Dolly-15k, and code BugNet and PyTorrent datasets, with hyperparameters tuned in the English ..."
+    },
+    {
+      "title": "ICLR 2025 Papers",
+      "url": "https://iclr.cc/virtual/2025/papers.html?filter=author&search=Xin-Qiang%20Cai&layout=mini",
+      "snippet": "MiniPLM: Knowledge Distillation for Pre-training Language Models From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle Recite, Reconstruct, Recollect: Memorization in LMs as a Multifaceted Phenomenon DelTA: An Online Document-Level Translation Agent Based on Multi-Level Memory"
+    },
+    {
+      "title": "(PDF) Knowledge Distillation: A Survey - ResearchGate",
+      "url": "https://www.researchgate.net/publication/342094012_Knowledge_Distillation_A_Survey",
+      "snippet": "In this paper, we provide a comprehensive survey on knowledge distillation from the perspectives of different knowledge categories, training schemes, distillation algorithms, as well as applications."
+    }
+  ]
+}

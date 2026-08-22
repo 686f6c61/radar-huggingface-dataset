@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Echoo113/Qwen2.5-7B-Instruct-dragon_mlpB-STEER1.09375-ft4.44",
+  "slug": "echoo113-qwen2-5-7b-instruct-dragon_mlpb-steer1-09375-ft4-44",
+  "author": "Echoo113",
+  "url": "https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_mlpB-STEER1.09375-ft4.44",
+  "created_at": "2026-08-21T22:32:44.000Z",
+  "updated_at": "2026-08-21T22:38:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92220601,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen2.5-7b-instruct Model by Qwen | NVIDIA NIM",
+      "url": "https://build.nvidia.com/qwen/qwen2_5-7b-instruct",
+      "snippet": "Chinese and English LLM targeting for language, coding, mathematics, reasoning, etc."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct: Open-Source LLM for Private Deployment & Custom AI ...",
+      "url": "https://dev.co/ai/llms/qwen2.5-7b",
+      "snippet": "Qwen2.5-7B-Instruct is a 7.6B-parameter instruction-tuned language model from Alibaba Cloud&#x27;s Qwen team. It supports up to 128K token context length with 8K generation capacity, multilingual support (29+ languages), and has been optimized for coding, mathematics, JSON generation, and long-form text. Licensed under Apache 2.0 and ungated, it is designed for deployment as a private or custom LLM ..."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct: Open-Source 128K Context LLM for Enterprise ...",
+      "url": "https://dev.co/ai/llms/qwen2-5-7b-instruct",
+      "snippet": "Qwen2.5-7B-Instruct Qwen2.5-7B-Instruct is a 7.6 billion parameter instruction-tuned language model from Alibaba&#x27;s Qwen team. It supports up to 128K token context length with 8K generation capacity, multilingual support (29+ languages), and is optimized for coding, math, JSON output, and long-form text generation. Licensed under Apache 2.0 and ungated, it is suitable for self-hosted deployment ..."
+    }
+  ]
+}

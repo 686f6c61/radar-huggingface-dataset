@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/tokenizer-tool-template-introspection",
+  "slug": "layerfault-tokenizer-tool-template-introspection",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/tokenizer-tool-template-introspection",
+  "created_at": "2026-08-21T21:57:51.000Z",
+  "updated_at": "2026-08-21T21:57:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main_classes/tokenizer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault Offline-first static admission and sandboxed behavioural security for local AI models. Layerfault validates model artifacts, packages and local runtimes before inference, then can optionally exercise supported models inside a locked-down Linux sandbox to look for runtime side effects and suspicious behavioural divergence."
+    },
+    {
+      "title": "Building a tokenizer, block by block · Hugging Face",
+      "url": "https://huggingface.co/learn/llm-course/chapter6/8",
+      "snippet": "Introduction Training a new tokenizer from an old one Fast tokenizers&#x27; special powers Fast tokenizers in the QA pipeline Normalization and pre-tokenization Byte-Pair Encoding tokenization WordPiece tokenization Unigram tokenization Building a tokenizer, block by block Tokenizers, check!"
+    },
+    {
+      "title": "Inspecting a tokenizer - Generative AI and Open Source ... - LinkedIn",
+      "url": "https://www.linkedin.com/learning/generative-ai-and-open-source-models-hands-on-practice-with-hugging-face-models/inspecting-a-tokenizer",
+      "snippet": "Learn how to inspect a tokenizer&#x27;s components by downloading a model from Hugging Face, examining the tokenizer.json vocabulary file, exploring the tokenizer configuration settings, and ..."
+    },
+    {
+      "title": "Guide to Hugging Face AutoModelFor** Classes and Tokenizers",
+      "url": "https://pub.towardsai.net/guide-to-hugging-face-automodelfor-classes-and-tokenizers-05d2a5b85210",
+      "snippet": "Learn how Hugging Face AutoModels work with clear explanations, diagrams, and real examples. This guide covers NLP AutoModelFor classes, fine-tuning, inference, and how to choose the right model for classification, QA, and text generation."
+    }
+  ]
+}

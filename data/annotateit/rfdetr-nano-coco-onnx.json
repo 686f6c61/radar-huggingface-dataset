@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AnnotateIt/rfdetr-nano-coco-onnx",
+  "slug": "annotateit-rfdetr-nano-coco-onnx",
+  "author": "AnnotateIt",
+  "url": "https://huggingface.co/AnnotateIt/rfdetr-nano-coco-onnx",
+  "created_at": "2026-08-21T20:15:16.000Z",
+  "updated_at": "2026-08-21T20:15:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "rfdetr",
+    "object-detection",
+    "coco",
+    "annotateit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114731473,
+  "storage_human": "115 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnnotateIt/dfine-nano-coco-onnx · Hugging Face",
+      "url": "https://huggingface.co/AnnotateIt/dfine-nano-coco-onnx",
+      "snippet": "ONNX graph validation and ONNX Runtime CPU inference; numerical comparison with the pinned official PyTorch checkpoint; inference with AnnotateIt&#x27;s installed onnxruntime-web 1.24.3 WASM runtime; a real COCO reference image, where PyTorch and ONNX returned the same five detections at a 0.3 score threshold, with matching classes, scores, and boxes."
+    },
+    {
+      "title": "GitHub - roboflow/rf-detr: RF-DETR is a real-time object detection and ...",
+      "url": "https://github.com/roboflow/rf-detr",
+      "snippet": "RF-DETR is a real-time object detection and segmentation model architecture developed by Roboflow, SOTA on COCO, designed for fine-tuning. [ICLR 2026] - roboflow/rf-detr"
+    },
+    {
+      "title": "GitHub - PierreMarieCurie/rf-detr-onnx: ONNX model with inference ...",
+      "url": "https://github.com/PierreMarieCurie/rf-detr-onnx",
+      "snippet": "This repository contains code to load an ONNX version of RF-DETR and perform inference, including drawing the results on images. It demonstrates how to convert a PyTorch model to ONNX format and inference with minimal dependencies. RF-DETR is a transformer-based object detection and instance segmentation architecture developed by Roboflow."
+    },
+    {
+      "title": "RF-DETR - Inference Models",
+      "url": "https://inference-models.roboflow.com/models/rfdetr-object-detection/",
+      "snippet": "RF-DETR - Object Detection RF-DETR is a state-of-the-art, real-time object detection model developed by Roboflow. It is the first real-time detection transformer to achieve breakthrough performance on COCO, setting a new standard for object detection accuracy and speed."
+    },
+    {
+      "title": "RF-DETR — Real-Time Object Detection & Segmentation by Roboflow",
+      "url": "https://rfdetr.roboflow.com/latest/",
+      "snippet": "Yes. Core models (Nano through Large) and all training/inference code are released under the Apache 2.0 license. XLarge and 2XLarge models require the rfdetr [plus] package (PML 1.0 license). How do I fine-tune RF-DETR on a custom dataset? Instantiate a model and call model.train (...) with your dataset directory in COCO JSON or YOLO format."
+    }
+  ]
+}

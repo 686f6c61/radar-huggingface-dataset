@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/tokenizer-special-token-reassignment",
+  "slug": "layerfault-tokenizer-special-token-reassignment",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/tokenizer-special-token-reassignment",
+  "created_at": "2026-08-21T21:57:49.000Z",
+  "updated_at": "2026-08-21T21:57:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/docs/tokenizers/api/tokenizer",
+      "snippet": "The Model tokenizes each word into subword tokens and maps them to IDs. The PostProcessor applies any final transformations (e.g., adding special tokens like [CLS] and [SEP])."
+    },
+    {
+      "title": "Tokenizers - Hugging Face",
+      "url": "https://huggingface.co/docs/tokenizers/index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Secret Language of LLMs- Hidden, Special, and Glitch Tokens",
+      "url": "https://chinmayajoshi.substack.com/p/secret-language-of-llms-hidden-special",
+      "snippet": "This process of generating these tokens is called &#x27;tokenization&#x27;, which is often followed by using deep learning to learn meaningful, semantic representations of these tokens. The world of tokenization is a widely studied topic in the field of Natural Language Processing (NLP) that predates the invention of ChatGPT-like Language Model AIs."
+    },
+    {
+      "title": "Add Extra New Tokens to Pre-trained LLM Tokenizer - Medium",
+      "url": "https://medium.com/everyday-ai/add-extra-new-tokens-to-pre-trained-llm-tokenizer-05b0a89f058f",
+      "snippet": "For more details on adding new tokens to a tokenizer, refer to new_tokens and special_tokens. c) Resize the embedding layer in the model to accommodate the new tokens."
+    },
+    {
+      "title": "Special Token Injection (STI) Attack Guide",
+      "url": "https://blog.sentry.security/special-token-injection-sti-attack-guide/",
+      "snippet": "AI Red Team Special Token Injection (STI) Attack Guide Large Language Models introduce security issues reminiscent of early-2000s software bugs. Special Token Injection (STI) exploits how LLMs parse structured prompts. This post breaks down what STI is, how it works, where it appears, and why it matters—through a pentester&#x27;s lens."
+    }
+  ]
+}

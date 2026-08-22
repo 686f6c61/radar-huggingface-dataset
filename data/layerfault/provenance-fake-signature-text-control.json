@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/provenance-fake-signature-text-control",
+  "slug": "layerfault-provenance-fake-signature-text-control",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/provenance-fake-signature-text-control",
+  "created_at": "2026-08-21T19:03:40.000Z",
+  "updated_at": "2026-08-21T19:03:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16,
+  "parameters_human": "16",
+  "storage_bytes": 184,
+  "storage_human": "184 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault/tree/main",
+      "snippet": "Offline-first security and admission control for local AI models. Layerfault validates model artifacts and local model runtimes before inference."
+    },
+    {
+      "title": "Authenticity Debt and the Synthetic Content Threat Landscape:",
+      "url": "https://arxiv.org/pdf/2606.00621",
+      "snippet": "Stanford HAI 2025 AI Index Report The highlights this acceleration: rapid improvements in generative model capabilities, falling inference costs, and a sharp rise in real-world AI-related incidents signal that misuse and unintended harms are scaling alongside adoption [2]. Controls designed for traditional digital media are systematically insufficient in an environment where content can be ..."
+    },
+    {
+      "title": "Authenticity Debt and the Synthetic Content Threat Landscape:",
+      "url": "https://arxiv.org/html/2606.00621",
+      "snippet": "The Stanford HAI 2025 AI Index Report highlights this acceleration: rapid improvements in generative model capabilities, falling inference costs, and a sharp rise in real-world AI-related incidents signal that misuse and unintended harms are scaling alongside adoption [2]."
+    },
+    {
+      "title": "Provenance Protocol — Global Standard for AI Agent Identity, Origin ...",
+      "url": "https://provenanceprotocol.org/",
+      "snippet": "Provenance Protocol defines the universal framework for verifying the provenance, identity, lineage, and ownership of AI agents, digital systems, and real-world assets."
+    },
+    {
+      "title": "layerfault/docs/TRUST_MODEL.md at main - GitHub",
+      "url": "https://github.com/izm1chael/layerfault/blob/main/docs/TRUST_MODEL.md",
+      "snippet": "the Ed25519 signature verifies the exact manifest bytes Layerfault parsed; the attestation names the same canonical model identity being scanned; it records the same manifest digest; the signing key is present, active and not revoked in the local trust store; and the key is explicitly authorized for that model identity/namespace."
+    }
+  ]
+}

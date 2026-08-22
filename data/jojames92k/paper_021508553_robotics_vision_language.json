@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jojames92k/paper_021508553_robotics_vision_language",
+  "slug": "jojames92k-paper_021508553_robotics_vision_language",
+  "author": "jojames92k",
+  "url": "https://huggingface.co/jojames92k/paper_021508553_robotics_vision_language",
+  "created_at": "2026-08-22T00:41:28.000Z",
+  "updated_at": "2026-08-22T00:41:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "argumentative",
+    "author-year",
+    "critical",
+    "highlight-bullet",
+    "intro-related-method-exp-conclusion",
+    "latex-neurips",
+    "robotics-vision-language",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Robotics - arXiv.org",
+      "url": "https://arxiv.org/list/cs.RO/recent",
+      "snippet": "Evidence-Gated Task and Motion Planning with Vision-Language Models Tsunehiko Tanaka, Matthew Stephenson, Alistair Macvicar, Edgar Simo-Serra Subjects: Robotics (cs.RO); Artificial Intelligence (cs.AI) [6] arXiv:2608.19977 [pdf, html, other]"
+    },
+    {
+      "title": "$π_0$: A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://arxiv.org/abs/2410.24164",
+      "snippet": "Robot learning holds tremendous promise to unlock the full potential of flexible, general, and dexterous robot systems, as well as to address some of the deepest questions in artificial intelligence. However, bringing robot learning to the level of generality required for effective real-world systems faces major obstacles in terms of data, generalization, and robustness. In this paper, we ..."
+    },
+    {
+      "title": "Awesome VLA Papers - GitHub",
+      "url": "https://github.com/hanjianhua44/Awesome-VLA-Papers",
+      "snippet": "A curated collection of papers on Vision-Language-Action (VLA) models, covering autonomous driving, robotics, world models, spatial reasoning, and more ..."
+    },
+    {
+      "title": "pi0: A Vision-Language-Action Flow Model for General Robot Control ...",
+      "url": "https://robotics.growbotics.ai/research/papers/pi0-vision-language-action-flow-model-general-robot-control?from=%2Fnews%2Fphysical-intelligence-rl-tokens-precise-manipulation",
+      "snippet": "Stay current with the latest robotics research. Browse papers on manipulation, locomotion, computer vision, reinforcement learning, and foundation models for robotics."
+    },
+    {
+      "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "snippet": "Gemini Robotics 2: Our most advanced vision-language-action model (VLA) that converts vision and language input into motor control, enabling a robot to take action. This model is capable of controlling full humanoids, from feet to fingertips, and other bi-arm robots. It also brings a new level of dexterous manipulation on both hands and grippers."
+    }
+  ]
+}

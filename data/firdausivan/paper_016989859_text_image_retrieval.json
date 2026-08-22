@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "firdausivan/paper_016989859_text_image_retrieval",
+  "slug": "firdausivan-paper_016989859_text_image_retrieval",
+  "author": "firdausivan",
+  "url": "https://huggingface.co/firdausivan/paper_016989859_text_image_retrieval",
+  "created_at": "2026-08-21T21:30:14.000Z",
+  "updated_at": "2026-08-21T21:30:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "bulleted",
+    "cautious",
+    "highlight-bullet",
+    "intro-related-method-exp-conclusion",
+    "latex-neurips",
+    "numeric-bibtex",
+    "passive",
+    "text-image-retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Comprehensive Survey on Composed Image Retrieval",
+      "url": "https://arxiv.org/abs/2502.18495",
+      "snippet": "Composed Image Retrieval (CIR) is an emerging yet challenging task that allows users to search for target images using a multimodal query, comprising a reference image and a modification text specifying the user&#x27;s desired changes to the reference image. Given its significant academic and practical value, CIR has become a rapidly growing area of interest in the computer vision and machine ..."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    },
+    {
+      "title": "Deep Image Retrieval - GitHub",
+      "url": "https://github.com/naver/deep-image-retrieval",
+      "snippet": "Deep Image Retrieval This repository contains the models and the evaluation scripts (in Python3 and Pytorch 1.0+) of the papers: [1] End-to-end Learning of Deep Visual Representations for Image Retrieval Albert Gordo, Jon Almazan, Jerome Revaud, Diane Larlus, IJCV 2017 [PDF]"
+    },
+    {
+      "title": "Llama Nemoretriever Colembed: Top-Performing Text-Image Retrieval Model",
+      "url": "https://arxiv.org/abs/2507.05513",
+      "snippet": "Motivated by the growing demand for retrieval systems that operate across modalities, we introduce llama-nemoretriever-colembed, a unified text-image retrieval model that delivers state-of-the-art performance across multiple benchmarks. We release two model variants, 1B and 3B."
+    },
+    {
+      "title": "CVPR 2025 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/CVPR2025",
+      "snippet": "These CVPR 2025 papers are the Open Access versions, provided by the Computer Vision Foundation. Except for the watermark, they are identical to the accepted versions; the final published version of the proceedings is available on IEEE Xplore."
+    }
+  ]
+}

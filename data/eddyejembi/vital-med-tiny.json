@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "eddyejembi/vital-med-tiny",
+  "slug": "eddyejembi-vital-med-tiny",
+  "author": "eddyejembi",
+  "url": "https://huggingface.co/eddyejembi/vital-med-tiny",
+  "created_at": "2026-08-21T21:20:40.000Z",
+  "updated_at": "2026-08-21T21:22:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama-cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama-cpp",
+    "gguf",
+    "qwen3.5",
+    "healthcare",
+    "offline",
+    "africa",
+    "adtc-2026",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 1312164960,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EddyEjembi/Vital",
+      "url": "https://github.com/EddyEjembi/Vital",
+      "snippet": "Contribute to EddyEjembi/Vital development by creating an account on GitHub."
+    },
+    {
+      "title": "Introducing Vitál Ambient Wellness Companion | Eddy Ejembi ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/eddyejembi_whoop-nvidia-buildsmall-activity-7472558793868951553-3DNC",
+      "snippet": "I built something that I genuinely wish existed. It&#x27;s called Vitál, an ambient wellness companion that runs on your computer. Every wellness tool assumes you&#x27;ll remember to open it. But the ..."
+    },
+    {
+      "title": "EddyEjembi (Eddy Ejembi) · GitHub",
+      "url": "https://github.com/EddyEjembi",
+      "snippet": "EddyEjembi has 30 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "eddyejembi (Eddy Ejembi) - Hugging Face",
+      "url": "https://huggingface.co/eddyejembi/datasets",
+      "snippet": "NLP, Automatic Speech Recognition, Edge AI, Audio classification, Artificial General Intelligence, Reinforcement Learning"
+    },
+    {
+      "title": "Tiny ML- Bringing AI to the Edge - Medium",
+      "url": "https://medium.com/@eddyejembi/tiny-ml-bringing-ai-to-the-edge-9d89d7d779c4",
+      "snippet": "Edge Machine Learning (Edge ML) is transforming the way AI models are deployed, bringing intelligence to low-power, devices."
+    }
+  ]
+}

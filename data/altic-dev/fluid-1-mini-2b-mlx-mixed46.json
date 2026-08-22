@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "altic-dev/Fluid-1-Mini-2B-MLX-mixed46",
+  "slug": "altic-dev-fluid-1-mini-2b-mlx-mixed46",
+  "author": "altic-dev",
+  "url": "https://huggingface.co/altic-dev/Fluid-1-Mini-2B-MLX-mixed46",
+  "created_at": "2026-08-21T22:34:17.000Z",
+  "updated_at": "2026-08-21T22:50:49.000Z",
+  "license": "altic-fluidvoice-apps-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 377215296,
+  "parameters_human": "377.2M",
+  "storage_bytes": 1391219247,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "altic-dev/Fluid-1-Mini-2B-MLX-6bit · Hugging Face",
+      "url": "https://huggingface.co/altic-dev/Fluid-1-Mini-2B-MLX-6bit",
+      "snippet": "Fluid-1 Mini 2B — 96k Q6 + DFlash v2 Official ALTIC MLX-format checkpoint for on-device FluidVoice dictation cleanup through FluidDecode + DFlash. License Use is permitted only through official FluidVoice applications. Use outside FluidVoice applications is prohibited. See ALTIC-MODEL-TERMS.md. This model is derived from Qwen3.5-2B. Qwen-derived components remain under Apache License 2.0 ..."
+    },
+    {
+      "title": "altic-dev/fluid-1-mini · Hugging Face",
+      "url": "https://huggingface.co/altic-dev/fluid-1-mini",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - altic-dev/FluidVoice: Fastest and only macOS Dictation app ...",
+      "url": "https://github.com/altic-dev/FluidVoice",
+      "snippet": "Fluid Intelligence is a separate, privately maintained local AI runtime that powers advanced on-device dictation enhancement — smart formatting, context-aware capitalization, and post-processing — all running locally on your Mac. The app works great on its own with any supported speech model and optional cloud AI providers."
+    },
+    {
+      "title": "FluidVoice — Free Open Source Voice-to-Text for macOS",
+      "url": "https://altic.dev/fluid",
+      "snippet": "Speak naturally. Write instantly. Free, open source voice-to-text with on-device AI, adaptive tone, and zero data leaving your Mac."
+    },
+    {
+      "title": "altic-dev (ALTIC) · GitHub",
+      "url": "https://github.com/altic-dev",
+      "snippet": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. Windows pre-build available! A local Wispr Flow alternative. DM us on X for an easter egg 😉 - https:… Swift 10.8k 732"
+    }
+  ]
+}

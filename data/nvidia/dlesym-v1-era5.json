@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "nvidia/dlesym-v1-era5",
+  "slug": "nvidia-dlesym-v1-era5",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/dlesym-v1-era5",
+  "created_at": "2025-11-12T17:33:09.000Z",
+  "updated_at": "2026-08-21T23:08:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2311.06253",
+    "arxiv:2409.16247",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211411286,
+  "storage_human": "211 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/dlesym-v1-era5 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/dlesym-v1-era5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nvidia/dlesym-v1-era5 at main - Hugging Face",
+      "url": "https://huggingface.co/nvidia/dlesym-v1-era5/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PhysicsNeMo Checkpoints: DLESyM-V1-ERA5 | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/earth-2/models/dlesym-v1-era5/",
+      "snippet": "DLESyM-V1-ERA5 is an ensemble forecast model for global earth system modeling, including atmosphere and ocean components. The model operates with 6 hour temporal resolution, forecasting 8 atmospheric variables and 1 oceanic variable."
+    },
+    {
+      "title": "DLESyM - Earth2Studio",
+      "url": "https://nvidia.github.io/earth2studio/main/modules/generated/models/px/DLESyM/",
+      "snippet": "DLESyM-V1-ERA5 prognostic model. This is an ensemble forecast model for global earth system modeling. This model includes an atmosphere and ocean component, using atmospheric variables as well as the sea-surface temperature on a HEALPix nside=64 (approximately 1 degree) resolution grid. The model architecture is a U-Net with padding operations modified to support using the HEALPix grid ..."
+    },
+    {
+      "title": "DLESyM Output Analysis | Benjamin Richards",
+      "url": "https://richardsbenjamin.github.io/2025/09/20/dlesym-output-analysis.html",
+      "snippet": "Several weeks ago, a new climate AI model, DLESyM, was released. This model represents a major development in the use of deep learning for Earth system science, with an explicit focus on coupling the ocean and atmosphere. In this post, I will provide an overview of the model&#x27;s architecture, and present some initial analysis of its output."
+    }
+  ]
+}

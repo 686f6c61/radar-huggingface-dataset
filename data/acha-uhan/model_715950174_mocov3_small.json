@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "acha-uhan/model_715950174_mocov3_small",
+  "slug": "acha-uhan-model_715950174_mocov3_small",
+  "author": "acha-uhan",
+  "url": "https://huggingface.co/acha-uhan/model_715950174_mocov3_small",
+  "created_at": "2026-08-22T02:33:12.000Z",
+  "updated_at": "2026-08-22T02:33:19.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "cross-attention",
+    "gelu",
+    "layernorm",
+    "linear",
+    "mocov3",
+    "multitask",
+    "small",
+    "step",
+    "trunc-normal",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mocoV3 (Hanchen Xia) - Hugging Face",
+      "url": "https://huggingface.co/mocoV3/datasets",
+      "snippet": "User profile of Hanchen Xia on Hugging Face"
+    },
+    {
+      "title": "Home · modelindex.dev",
+      "url": "http://modelindex.dev/",
+      "snippet": "Provenance and cryptographic hashes for public AI models across HuggingFace, ModelScope, CivitAI, and Ollama. Look up any file by hash, browse by org, and verify your downloads on modelindex.dev."
+    },
+    {
+      "title": "GitHub - facebookresearch/moco: PyTorch implementation of MoCo: https ...",
+      "url": "https://github.com/facebookresearch/moco",
+      "snippet": "In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to make participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal ..."
+    }
+  ]
+}

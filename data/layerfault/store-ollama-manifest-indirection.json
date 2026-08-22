@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/store-ollama-manifest-indirection",
+  "slug": "layerfault-store-ollama-manifest-indirection",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/store-ollama-manifest-indirection",
+  "created_at": "2026-08-21T21:52:45.000Z",
+  "updated_at": "2026-08-21T21:52:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault Offline-first static admission and sandboxed behavioural security for local AI models. Layerfault validates model artifacts, packages and local runtimes before inference, then can optionally exercise supported models inside a locked-down Linux sandbox to look for runtime side effects and suspicious behavioural divergence."
+    },
+    {
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+    },
+    {
+      "title": "Model Registry and Layers | ollama/ollama | DeepWiki",
+      "url": "https://deepwiki.com/ollama/ollama/4.2-model-registry-and-layers",
+      "snippet": "Model Registry and Layers Relevant source files This document explains Ollama&#x27;s content-addressable model storage system, including the manifest/layer architecture, blob storage, layer types, and registry operations."
+    },
+    {
+      "title": "layerfault/docs/TRUST_MODEL.md at main · izm1chael/layerfault",
+      "url": "https://github.com/izm1chael/layerfault/blob/main/docs/TRUST_MODEL.md",
+      "snippet": "the Ed25519 signature verifies the exact manifest bytes Layerfault parsed; the attestation names the same canonical model identity being scanned; it records the same manifest digest; the signing key is present, active and not revoked in the local trust store; and the key is explicitly authorized for that model identity/namespace."
+    },
+    {
+      "title": "Model Storage and Distribution | elastic/ollama | DeepWiki",
+      "url": "https://deepwiki.com/elastic/ollama/4.2-model-storage-and-distribution",
+      "snippet": "This page documents how Ollama stores, manages, and distributes models. It covers the model storage system, manifest structure, and mechanisms for distributing models via the registry. For information"
+    }
+  ]
+}

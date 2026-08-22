@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gauravrao0716/paper_017106485_text_image_retrieval",
+  "slug": "gauravrao0716-paper_017106485_text_image_retrieval",
+  "author": "gauravrao0716",
+  "url": "https://huggingface.co/gauravrao0716/paper_017106485_text_image_retrieval",
+  "created_at": "2026-08-21T23:08:44.000Z",
+  "updated_at": "2026-08-21T23:08:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "empirical-focused",
+    "intro-method-exp-related-conclusion",
+    "latex-icml",
+    "mixed-active-passive",
+    "numeric-bibtex",
+    "short-punchy",
+    "text-image-retrieval",
+    "unstructured-narrative",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2406.05814",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "PDF Generative Zero-Shot Composed Image Retrieval - CVF Open Access",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_Generative_Zero-Shot_Composed_Image_Retrieval_CVPR_2025_paper.pdf",
+      "snippet": "Abstract Composed Image Retrieval (CIR) is a vision-language task utilizing queries comprising images and textual descrip-tions to achieve precise image retrieval. This task seeks to find images that are visually similar to a reference im-age while incorporating specific changes or features de-scribed textually (visual delta)."
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026W/GRAIL-V/html/Bai_Neural-Symbolic_Intention_Refinement_with_User_Feedback_for_Text-to-Image_Retrieval_CVPRW_2026_paper.html",
+      "snippet": "Abstract Text-to-image retrieval, powered by pre-trained vision-language models such as CLIP, typically represents user intent as a single fixed-dimensional query embedding. This approach, however, struggles when queries are short, ambiguous, or underspecified, as it fails to capture the full range of desired visual attributes."
+    },
+    {
+      "title": "Llama Nemoretriever Colembed: Top-Performing Text-Image Retrieval Model",
+      "url": "https://arxiv.org/abs/2507.05513",
+      "snippet": "Motivated by the growing demand for retrieval systems that operate across modalities, we introduce llama-nemoretriever-colembed, a unified text-image retrieval model that delivers state-of-the-art performance across multiple benchmarks. We release two model variants, 1B and 3B."
+    }
+  ]
+}

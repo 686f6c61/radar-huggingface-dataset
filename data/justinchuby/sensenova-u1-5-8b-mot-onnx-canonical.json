@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "justinchuby/sensenova-u1.5-8b-mot-onnx-canonical",
+  "slug": "justinchuby-sensenova-u1-5-8b-mot-onnx-canonical",
+  "author": "justinchuby",
+  "url": "https://huggingface.co/justinchuby/sensenova-u1.5-8b-mot-onnx-canonical",
+  "created_at": "2026-08-22T02:26:48.000Z",
+  "updated_at": "2026-08-22T02:28:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "neo_chat",
+    "image-to-image",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51566933543,
+  "storage_human": "51.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SenseNova-U1.5-8B-MoT - Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SenseNova-U1-8B-MoT - Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1-8B-MoT",
+      "snippet": "SenseNova-U1: Unifying Multimodal Understanding and Generation with NEO-unify Architecture English | 简体中文 📣 Updated News [2026.05.15] Release SenseNova-U1-8B-MoT-Infographic 📊, for improved infographic generation. See U1 Infographic Model for details, and Infographic Showcases for 100 generated examples. [2026.05.10] Release 🔥SenseNova-U1 Technical Report🔥 and the weights ..."
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: Native Unified ...",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture. It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification. Rather than relying on adapters to translate between modalities, SenseNova U1 models think-and-act across language and vision ..."
+    },
+    {
+      "title": "SenseNova U1 (8B-MoT) on RTX 5080: VAE-Free Unified Image Gen ...",
+      "url": "https://smeltcore.com/recipes/sensenova-u1-8b-mot-on-rtx-5080-vae-free-unified-image-gen-understanding-via-q4-gguf/",
+      "snippet": "A working SenseNova U1 install on a 16 GB RTX 5080 that does all four U1 tasks from one model — text-to-image at up to 2048×2048, visual Q&A on images, image editing, and interleaved text+image generation — without a VAE or separate visual encoder."
+    },
+    {
+      "title": "SenseNova-U1/docs/u1.5_preview.md at main - GitHub",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1/blob/main/docs/u1.5_preview.md",
+      "snippet": "SenseNova-U1.5 (Preview) is a natively unified multimodal model built on NEO-unify, featuring new patch encoding and decoding layers. We further expand and refine the text-to-image training corpus, while extensively filtering and synthesizing editing data for both single-image and multi-image reference settings."
+    }
+  ]
+}

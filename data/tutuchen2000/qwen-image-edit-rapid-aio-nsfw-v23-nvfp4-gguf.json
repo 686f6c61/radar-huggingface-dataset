@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "tutuchen2000/Qwen-Image-Edit-Rapid-AIO-NSFW-v23-NVFP4-GGUF",
+  "slug": "tutuchen2000-qwen-image-edit-rapid-aio-nsfw-v23-nvfp4-gguf",
+  "author": "tutuchen2000",
+  "url": "https://huggingface.co/tutuchen2000/Qwen-Image-Edit-Rapid-AIO-NSFW-v23-NVFP4-GGUF",
+  "created_at": "2026-08-22T01:38:27.000Z",
+  "updated_at": "2026-08-22T01:38:27.000Z",
+  "license": "proprietary-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "quantized",
+    "diffusion",
+    "image-editing",
+    "nsfw",
+    "qwen",
+    "comfyui",
+    "license:other",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 23630742740,
+  "storage_human": "23.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phil2Sat/Qwen-Image-Edit-Rapid-AIO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Phil2Sat/Qwen-Image-Edit-Rapid-AIO-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Phr00t/Qwen-Image-Edit-Rapid-AIO · Hugging Face",
+      "url": "https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen-Image-Edit-Rapid-AIO: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen-image-edit-rapid-aio-phr00t",
+      "snippet": "Overview Qwen-Image-Edit-Rapid-AIO is a merge of accelerators, VAE, and CLIP designed for fast image editing and text-to-image generation using the Qwen Image Edit architecture. Built and maintained by Phr00t, this model runs in ComfyUI and uses FP8 precision to reduce memory requirements while maintaining quality. The core design supports both NSFW and SFW workflows out of the box through ..."
+    },
+    {
+      "title": "Qwen Image Edit Rapid Aio - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen-image-edit-rapid-aio.html",
+      "snippet": "Download Qwen Image Edit Rapid Aio GGUF model. 4.13 GB, 113,075 downloads, 280 likes."
+    },
+    {
+      "title": "qwen-image-edit-rapid-aio-v23 - GitHub",
+      "url": "https://github.com/LucyFairies/qwen-image-edit-rapid-aio-v23",
+      "snippet": "Rapid inference: Typically 4 steps (Lightning LoRA style), CFG=1, very fast. Image-to-Image editing with strong prompt adherence (v23 tuned for this). Text-to-Image support as well. NSFW friendly in appropriate versions. Merged VAE + CLIP + accelerators for easy one-click use (especially in ComfyUI)."
+    }
+  ]
+}

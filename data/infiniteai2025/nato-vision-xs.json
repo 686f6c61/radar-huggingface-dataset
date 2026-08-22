@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "iNFINITEAi2025/NATO-Vision-XS",
+  "slug": "infiniteai2025-nato-vision-xs",
+  "author": "iNFINITEAi2025",
+  "url": "https://huggingface.co/iNFINITEAi2025/NATO-Vision-XS",
+  "created_at": "2026-08-21T20:12:35.000Z",
+  "updated_at": "2026-08-21T20:12:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "research",
+    "synthetic-data",
+    "compact-model",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230257,
+  "storage_human": "230257 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NaTo1000/infiniteai2025-nato1000",
+      "url": "https://github.com/NaTo1000/infiniteai2025-nato1000",
+      "snippet": "Contribute to NaTo1000/infiniteai2025-nato1000 development by creating an account on GitHub."
+    },
+    {
+      "title": "NaTo1000/infiniteai2025-creator · Hugging Face",
+      "url": "https://huggingface.co/NaTo1000/infiniteai2025-creator",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "iNFINITEAi2025/NATO1000-CYBER · Hugging Face",
+      "url": "https://huggingface.co/iNFINITEAi2025/NATO1000-CYBER",
+      "snippet": "NATO1000-CYBER is a specialized AGI designed for advanced cybersecurity, digital exploitation, and electronic warfare. It possesses an exhaustive database of zero-day vulnerabilities and cryptographic protocols."
+    },
+    {
+      "title": "Releases · NaTo1000/infiniteai2025-nato1000 · GitHub",
+      "url": "https://github.com/NaTo1000/infiniteai2025-nato1000/releases",
+      "snippet": "Contribute to NaTo1000/infiniteai2025-nato1000 development by creating an account on GitHub."
+    },
+    {
+      "title": "INFINITE-AI — AI for Everyone. Together.",
+      "url": "https://infinite-ai.ai/",
+      "snippet": "INFINITE-AI unites creators, companies, and learners to make AI accessible. Discover our mission, future gift cards, courses, and community hub."
+    }
+  ]
+}

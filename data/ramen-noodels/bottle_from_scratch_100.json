@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ramen-noodels/bottle_from_scratch_100",
+  "slug": "ramen-noodels-bottle_from_scratch_100",
+  "author": "ramen-noodels",
+  "url": "https://huggingface.co/ramen-noodels/bottle_from_scratch_100",
+  "created_at": "2026-08-22T00:21:58.000Z",
+  "updated_at": "2026-08-22T00:22:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:bottle_9d_100",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 418813257,
+  "parameters_human": "418.8M",
+  "storage_bytes": 1675324416,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ramen-noodels (Raman Talwar) - Hugging Face",
+      "url": "https://huggingface.co/ramen-noodels/models",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a paper 24 days ago ... liked a Space about 1 month ago"
+    },
+    {
+      "title": "Ramen 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/ramen",
+      "snippet": "Ramen 3D models ready to view and download for free."
+    },
+    {
+      "title": "Instant Noodle - Ramen - 100 Different Texture Version 3D Model Pack",
+      "url": "https://www.cgtrader.com/3d-model-packs/instant-noodle-ramen-100-different-texture-version",
+      "snippet": "3D asset Instant Noodle - Ramen - 100 Different Texture , formats OBJ, FBX, STL, BLEND, PNG, ready for 3D animation and other 3D projects"
+    },
+    {
+      "title": "Free Ramen 3D Models - Download Instantly | Meshy",
+      "url": "https://www.meshy.ai/tags/ramen",
+      "snippet": "Download 75+ free Ramen 3D models in STL, GLB, FBX, OBJ formats for 3D Printing, Games, Animation and more. Ready to use - instant download on Meshy."
+    },
+    {
+      "title": "Ramen 3D Models for Free Download and Print | Tripo AI",
+      "url": "https://studio.tripo3d.ai/3d-model-gallery/ramen",
+      "snippet": "Free & premium 977 ramen 3D models, ready for 3D printing, game development, 3D design, eCommerce, AR/VR and more. View & Download in STL, FBX, GLB, OBJ, USDZ formats."
+    }
+  ]
+}

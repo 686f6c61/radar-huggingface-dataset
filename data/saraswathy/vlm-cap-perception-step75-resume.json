@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-cap-perception-step75-resume",
+  "slug": "saraswathy-vlm-cap-perception-step75-resume",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-cap-perception-step75-resume",
+  "created_at": "2026-08-21T23:15:14.000Z",
+  "updated_at": "2026-08-21T23:29:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11780043327,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VLM-CapCurriculum - a UCSC-VLAA Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/UCSC-VLAA/vlm-capcurriculum",
+      "snippet": "Staged post-training along the perception → reasoning capability axis. Models, datasets, paper. ICML 2026."
+    },
+    {
+      "title": "VLM-CapCurriculum — From Seeing to Thinking · ICML 2026",
+      "url": "https://ucsc-vlaa.github.io/VLM-CapCurriculum/",
+      "snippet": "We systematically decompose VLM post-training into three capability stages — visual perception, textual reasoning, visual reasoning — and show three things that change how to post-train a VLM: a Perception needs its own data."
+    },
+    {
+      "title": "From Seeing to Thinking: Decoupling Perception and Reasoning Improves ...",
+      "url": "https://arxiv.org/pdf/2605.20177",
+      "snippet": "We argue that visual perception should be treated as an in-dependent and fundamental capability in VLMs and trained separately. To validate our hypothesis, we conduct compre-hensive investigations by decoupling VLM capabilities into three stages: visual perception, textual reasoning, and visual reasoning."
+    },
+    {
+      "title": "GitHub - UCSC-VLAA/VLM-CapCurriculum",
+      "url": "https://github.com/UCSC-VLAA/VLM-CapCurriculum",
+      "snippet": "On Qwen3-VL-8B it yields +1.46% accuracy with 20.8% shorter reasoning traces — better perception literally lets the model think less. 🧭 Conceptually, this staging is best understood as a new curriculum axis: the capability axis (perception → reasoning), orthogonal to the classic difficulty axis (easy → hard)."
+    },
+    {
+      "title": "Saraswathy Amjith - saraamjith.com",
+      "url": "https://saraamjith.com/saraamjith.html",
+      "snippet": "A self-questioning framework that trains a VLM to decompose compositional visual questions into sub-questions using GRPO, without any reasoning demonstrations. Applied to a 3B-parameter model on CLEVR and A-OKVQA, both self-questioning and standard RL substantially improve accuracy over the untrained model."
+    }
+  ]
+}

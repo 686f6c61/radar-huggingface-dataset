@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/weights-trigger-marker-toy-pair",
+  "slug": "layerfault-weights-trigger-marker-toy-pair",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/weights-trigger-marker-toy-pair",
+  "created_at": "2026-08-21T22:02:49.000Z",
+  "updated_at": "2026-08-21T22:02:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 128,
+  "parameters_human": "128",
+  "storage_bytes": 640,
+  "storage_human": "640 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault does not claim that static inspection can prove opaque neural weights are free from learned backdoors or malicious learned behaviour. Its job is to establish whether the model package you are about to use is structurally valid, intact where integrity data exists, sufficiently trusted, policy-compliant, and safe for the local runtime to admit."
+    },
+    {
+      "title": "LoRA Not Working in AI Art? How to Fix Trigger Words, Weight, and Model ...",
+      "url": "https://medium.com/@merl98509/lora-not-working-in-ai-art-how-to-fix-trigger-words-weight-and-model-compatibility-69c15f4c2448",
+      "snippet": "LoRA Not Working in AI Art? How to Fix Trigger Words, Weight, and Model Compatibility A few weeks ago I wrote about why an AI anime prompt fights back, and how to calm it down."
+    },
+    {
+      "title": "Toy problem - GitHub Pages",
+      "url": "http://kbullaughey.github.io/lstm-play/toy/",
+      "snippet": "The \"2\" and \"3\" points then correspond to the locations on the curve at offset distances of 1 and 2 below the focal point. We will use this toy problem, and slight variations to explore classic feed-forward neural nets (multi-layer perceptrons / MLP), recursive neural nets (RNN), and long-term short-term memory neural nets (LSTM)."
+    },
+    {
+      "title": "Toy Model Examples (Jupyter Notebooks) - CoreAI-Opt main documentation",
+      "url": "https://apple.github.io/coreai-optimization/examples/toy_models.html",
+      "snippet": "Toy Model Examples (Jupyter Notebooks) ¶ These tutorials demonstrate model compression techniques using simple toy models. Each tutorial is a Jupyter notebook that you can download and run locally."
+    },
+    {
+      "title": "LoRA Not Working in AI Art? Here&#x27;s How to Fix Trigger Words, Weight ...",
+      "url": "https://medium.com/@rehanjamshed/lora-not-working-in-ai-art-5c9c4f0fa96e",
+      "snippet": "LoRA Not Working in AI Art? Here&#x27;s How to Fix Trigger Words, Weight, and Model Compatibility in PixAI You finally find a LoRA that looks perfect. Maybe it&#x27;s a character you&#x27;ve wanted to …"
+    }
+  ]
+}

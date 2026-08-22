@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MeghaShah21/paper_019855345_grounded_language",
+  "slug": "meghashah21-paper_019855345_grounded_language",
+  "author": "MeghaShah21",
+  "url": "https://huggingface.co/MeghaShah21/paper_019855345_grounded_language",
+  "created_at": "2026-08-22T02:11:20.000Z",
+  "updated_at": "2026-08-22T02:11:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "empirical-focused",
+    "first-person-plural",
+    "graphic-visual",
+    "grounded-language",
+    "html",
+    "intro-problem-solution-validation-future",
+    "measured",
+    "numeric-apa",
+    "short-punchy",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "varungupta43/paper_019582305_grounded_language · Hugging Face",
+      "url": "https://huggingface.co/varungupta43/paper_019582305_grounded_language",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Grounding for Artificial Intelligence - arXiv.org",
+      "url": "https://arxiv.org/html/2312.09532v1",
+      "snippet": "This paper wants to be more concrete or down-to-earth. It links grounding with natural language words and sentences, our sensorimotor experiences, and our internal feelings because AI agents need to communicate with humans in natural languages and to understand human subjective feelings."
+    },
+    {
+      "title": "[2608.17501] SGHA: Evidence-Grounded Research Problem Discovery with ...",
+      "url": "https://arxiv.org/abs/2608.17501",
+      "snippet": "Recent efforts toward fully automated AI scientists have demonstrated that language-model agents can generate hypotheses, execute experiments, and draft scientific manuscripts. However, during the early stages of research, when research problems are formulated, these AI scientists often rely heavily on proprietary frontier models. Their proposals are shaped by opaque parametric knowledge and ..."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "Introducing the most grounded language model in the world - Contextual AI",
+      "url": "https://contextual.ai/blog/introducing-grounded-language-model",
+      "snippet": "Today, we&#x27;re introducing our Grounded Language Model (GLM), the most grounded language model in the world. With state-of-the-art performance on FACTS (the leading groundedness benchmark) and our customer datasets, the GLM is the single best language model for RAG and agentic use cases for which minimizing hallucinations is critical."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Shooter57/kk1_krea1_v1",
+  "slug": "shooter57-kk1_krea1_v1",
+  "author": "Shooter57",
+  "url": "https://huggingface.co/Shooter57/kk1_krea1_v1",
+  "created_at": "2026-08-22T01:27:03.000Z",
+  "updated_at": "2026-08-22T01:27:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228619504,
+  "storage_human": "229 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shooter57/mp1_krea2_v1 · Hugging Face",
+      "url": "https://huggingface.co/Shooter57/mp1_krea2_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Shooter57/sc1_krea2_v1 · Hugging Face",
+      "url": "https://huggingface.co/Shooter57/sc1_krea2_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Krea 1 - Powerful Free AI Image Generator",
+      "url": "https://www.krea.ai/krea-1",
+      "snippet": "Generate high-quality images with Krea 1, our free AI model built for photoreal skin, cinematic lighting, and production-ready detail."
+    },
+    {
+      "title": "Model Library | Krea",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea&#x27;s AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

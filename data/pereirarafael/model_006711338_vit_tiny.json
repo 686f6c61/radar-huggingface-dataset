@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "pereirarafael/model_006711338_vit_tiny",
+  "slug": "pereirarafael-model_006711338_vit_tiny",
+  "author": "pereirarafael",
+  "url": "https://huggingface.co/pereirarafael/model_006711338_vit_tiny",
+  "created_at": "2026-08-21T20:22:45.000Z",
+  "updated_at": "2026-08-21T20:22:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "contrastive",
+    "flash",
+    "polynomial",
+    "rmsnorm",
+    "sgd",
+    "tiny",
+    "trunc-normal",
+    "tucker",
+    "vit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "modelapi/vit-tiny-fp16-ov-catalog · Hugging Face",
+      "url": "https://huggingface.co/modelapi/vit-tiny-fp16-ov-catalog",
+      "snippet": "ViT-Tiny image classification model, a Geti™ build of ViT-Tiny converted to OpenVINO™ IR with FP16 weights. It maps an input image to class scores. Model weights are hosted in the source repository OpenVINO/vit_tiny_cls-fp16-ov."
+    },
+    {
+      "title": "Vision Transformer (ViT) · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/vit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-research/vision_transformer",
+      "url": "https://github.com/google-research/vision_transformer",
+      "snippet": "paper, we added more than 50k ViT and hybrid models pre-trained on ImageNet and ImageNet-21k with various degrees of data augmentation and model regularization, and fine-tuned on ImageNet, Pets37, Kitti-distance, CIFAR-100, and Resisc45."
+    },
+    {
+      "title": "vit_tiny - Orchard ML",
+      "url": "https://tomrussobuilds.github.io/orchard-ml/reference/architectures/vit_tiny/",
+      "snippet": "Implements the Vision Transformer architecture via timm library with support for multiple pretrained weight variants. Designed for efficient image classification with transfer learning capabilities."
+    },
+    {
+      "title": "GitHub - wkcn/TinyViT: [ECCV 2022] TinyViT: Fast Pretraining ...",
+      "url": "https://github.com/wkcn/tinyvit",
+      "snippet": "TinyViT is a new family of tiny and efficient vision transformers pretrained on large-scale datasets with our proposed fast distillation framework. The central idea is to transfer knowledge from large pretrained models to small ones."
+    }
+  ]
+}

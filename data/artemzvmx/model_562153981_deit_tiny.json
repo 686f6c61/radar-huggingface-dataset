@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "artemzvmx/model_562153981_deit_tiny",
+  "slug": "artemzvmx-model_562153981_deit_tiny",
+  "author": "artemzvmx",
+  "url": "https://huggingface.co/artemzvmx/model_562153981_deit_tiny",
+  "created_at": "2026-08-21T23:49:12.000Z",
+  "updated_at": "2026-08-21T23:49:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co-attention",
+    "deit",
+    "polynomial",
+    "retrieval",
+    "rmsnorm",
+    "rmsprop",
+    "standard",
+    "swish",
+    "tiny",
+    "xavier",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    },
+    {
+      "title": "facebook/deit-tiny-patch16-224 · Hugging Face",
+      "url": "https://huggingface.co/facebook/deit-tiny-patch16-224",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - peternara/deit-Transformers: Official DeiT repository",
+      "url": "https://github.com/peternara/deit-Transformers",
+      "snippet": "This repository contains PyTorch evaluation code, training code and pretrained models for DeiT (Data-Efficient Image Transformers). They obtain competitive tradeoffs in terms of speed / precision: For details see Training data-efficient image transformers & distillation through attention by Hugo ..."
+    },
+    {
+      "title": "DeiT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/deit",
+      "snippet": "Usage tips Compared to ViT, DeiT models use a so-called distillation token to effectively learn from a teacher (which, in the DeiT paper, is a ResNet like-model). The distillation token is learned through backpropagation, by interacting with the class ( [CLS]) and patch tokens through the self-attention layers."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

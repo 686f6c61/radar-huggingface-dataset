@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MatthewWrighmi/paper_028081111_ocr_freeform",
+  "slug": "matthewwrighmi-paper_028081111_ocr_freeform",
+  "author": "MatthewWrighmi",
+  "url": "https://huggingface.co/MatthewWrighmi/paper_028081111_ocr_freeform",
+  "created_at": "2026-08-22T02:51:24.000Z",
+  "updated_at": "2026-08-22T02:51:31.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "detailed-descriptive",
+    "footnote",
+    "highlight-bullet",
+    "intro-background-approach-eval-conclusion",
+    "medium-balanced",
+    "mixed-active-passive",
+    "ocr-freeform",
+    "plain-text",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Operationalizing Document AI: A Microservice Architecture for OCR and ...",
+      "url": "https://arxiv.org/abs/2605.18818",
+      "snippet": "Academic research tends to focus on new models for document understanding creating a wide gap in the literature between model definition and running models at production scale. To close that gap, we present a microservice architecture that encapsulates pipelines of multiple models for classification, optical character recognition (OCR), and large language model structured field extraction as ..."
+    },
+    {
+      "title": "PaperGate - Search 450M+ Research Papers & Scholarly Articles",
+      "url": "https://papergate.org/",
+      "snippet": "Search 450M+ papers, generate citations (APA, MLA, Harvard), and use AI-powered summarization. Trusted by researchers at MIT, Oxford, and universities worldwide."
+    },
+    {
+      "title": "PaperPanda — Search 250M Academic Papers",
+      "url": "https://paperpanda.app/",
+      "snippet": "Search 250 million academic papers. Find PDFs, check open access status, and explore citations."
+    },
+    {
+      "title": "DocAI — AI Document Extractor",
+      "url": "https://document-ai-extractor.vercel.app/",
+      "snippet": "AI Text Extraction OCR for images, native parsing for PDFs & Word docs. Tesseract.js powers free, local OCR."
+    },
+    {
+      "title": "Supercharge your OCR Pipelines with Open Models - Hugging Face",
+      "url": "https://huggingface.co/blog/ocr-open-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

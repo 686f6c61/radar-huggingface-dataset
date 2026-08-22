@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rhpg/liver-us-nnunet-baselines",
+  "slug": "rhpg-liver-us-nnunet-baselines",
+  "author": "rhpg",
+  "url": "https://huggingface.co/rhpg/liver-us-nnunet-baselines",
+  "created_at": "2026-08-21T22:50:36.000Z",
+  "updated_at": "2026-08-21T22:50:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2595832857,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "roprice / liver-us-nnunet-baselines Public - GitHub",
+      "url": "https://github.com/roprice/liver-us-nnunet-baselines",
+      "snippet": "At full scale (625 training images), the model achieves 0.901 Dice on liver segmentation and 0.648 Dice on mass segmentation. Liver boundary detection is data-efficient, reaching 0.886 Dice with just 200 images. Mass detection never plateaus and remains data-hungry across all tested sizes, confirming it as the harder, clinically relevant challenge."
+    },
+    {
+      "title": "liver-us-nnunet-baselines/README.md at main - GitHub",
+      "url": "https://github.com/roprice/liver-us-nnunet-baselines/blob/main/README.md",
+      "snippet": "At full scale (625 training images), the model achieves 0.901 Dice on liver segmentation and 0.648 Dice on mass segmentation. Liver boundary detection is data-efficient, reaching 0.886 Dice with just 200 images. Mass detection never plateaus and remains data-hungry across all tested sizes, confirming it as the harder, clinically relevant challenge."
+    },
+    {
+      "title": "Deep learning model for assessing survival benefits in ... - Nature",
+      "url": "https://www.nature.com/articles/s41746-025-02100-4",
+      "snippet": "a Enrollment pathway for patients with uHCC. b Automatic delineation of the entire liver and tumor regions by a pretrained nnUNet model. c Illustration of the multitasking DL model. d Survival ..."
+    },
+    {
+      "title": "MONAI - Medical Open Network for AI",
+      "url": "https://project-monai.github.io/",
+      "snippet": "MONAI is the leading open-source framework for healthcare imaging AI, trusted by researchers and clinicians worldwide. Build, train, and deploy medical AI solutions with industry-standard tools."
+    },
+    {
+      "title": "nicoalpis/GennUNet · Hugging Face",
+      "url": "https://huggingface.co/nicoalpis/GennUNet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

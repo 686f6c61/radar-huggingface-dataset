@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Nairsiddharth/model_584474895_deit_xlarge",
+  "slug": "nairsiddharth-model_584474895_deit_xlarge",
+  "author": "Nairsiddharth",
+  "url": "https://huggingface.co/Nairsiddharth/model_584474895_deit_xlarge",
+  "created_at": "2026-08-21T22:12:52.000Z",
+  "updated_at": "2026-08-21T22:12:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bilinear",
+    "deit",
+    "gelu-tanh",
+    "grouped-query",
+    "groupnorm",
+    "lamb",
+    "matching",
+    "polynomial",
+    "trunc-normal",
+    "xlarge",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    },
+    {
+      "title": "DeiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit",
+      "snippet": "This is the configuration class to store the configuration of a DeiTModel. It is used to instantiate an DeiT model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the DeiT facebook/deit-base-distilled-patch16-224 architecture."
+    },
+    {
+      "title": "GitHub - peternara/deit-Transformers: Official DeiT repository",
+      "url": "https://github.com/peternara/deit-Transformers",
+      "snippet": "Official DeiT repository. Contribute to peternara/deit-Transformers development by creating an account on GitHub."
+    },
+    {
+      "title": "deit: Official DeiT repository - Gitee",
+      "url": "https://gitee.com/facebookresearch/deit",
+      "snippet": "DeiT: Data-efficient Image Transformers This repository contains PyTorch evaluation code, training code and pretrained models for DeiT (Data-Efficient Image Transformers). They obtain competitive tradeoffs in terms of speed / precision: For details see Training data-efficient image transformers & distillation through attention by Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa ..."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/facebook-deit-base-patch16-224",
+      "snippet": "DeiT base model achieved top-1 accuracy of 81.8% and top-5 accuracy of 95.6% on ImageNet with 86M parameters with image size 224x224. For DeiT image classification benchmark results, refer to the table 5 of the original-paper . It&#x27;s important to note that during the fine-tuning process, superior performance is attained with a higher resolution, and enhancing the model size leads to improved ..."
+    }
+  ]
+}

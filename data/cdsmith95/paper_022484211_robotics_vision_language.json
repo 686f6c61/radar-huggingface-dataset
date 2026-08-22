@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Cdsmith95/paper_022484211_robotics_vision_language",
+  "slug": "cdsmith95-paper_022484211_robotics_vision_language",
+  "author": "Cdsmith95",
+  "url": "https://huggingface.co/Cdsmith95/paper_022484211_robotics_vision_language",
+  "created_at": "2026-08-22T02:28:48.000Z",
+  "updated_at": "2026-08-22T02:28:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "empirical-focused",
+    "highlight-bullet",
+    "intro-related-method-exp-conclusion",
+    "measured",
+    "medium-balanced",
+    "mixed-active-passive",
+    "numeric-nature",
+    "plain-text",
+    "robotics-vision-language",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied AI Daily — Latest arXiv Papers",
+      "url": "https://luohongkun.top/Embodied-AI-Daily/index.html",
+      "snippet": "📄 Latest arXiv Papers VLN · VLA · SLAM · 3D · Embodied AI — auto-updated daily 👤 Hongkun Luo (罗宏昆) · 🎓 Academic Page · 🐙 GitHub ☕ 支持本项目 · Support this project"
+    },
+    {
+      "title": "Paper-List-DAILY - Paper Arxiv Daily",
+      "url": "https://islinxu.github.io/paper-list/",
+      "snippet": "Paper-List-DAILY is an automated arXiv paper tracking system that fetches, categorizes, and organizes the latest research papers across 20+ computer vision & AI topics — from classic tasks like Object Detection and Segmentation to cutting-edge fields like Diffusion Models, LLMs, and Embodied AI."
+    },
+    {
+      "title": "A Survey on Vision-Language-Action Models for Embodied AI",
+      "url": "https://arxiv.org/abs/2405.14093",
+      "snippet": "Embodied AI is widely recognized as a cornerstone of artificial general intelligence (AGI) because it involves controlling embodied agents to perform tasks in the physical world. Building on the success of large language models (LLMs) and vision-language models (VLMs), a new category of multimodal models -- referred to as vision-language-action (VLA) models -- has emerged to address language ..."
+    },
+    {
+      "title": "Vision-Language-Action in Robotics: A Survey of Datasets, Benchmarks ...",
+      "url": "https://arxiv.org/abs/2604.23001",
+      "snippet": "Despite remarkable progress in Vision--Language--Action (VLA) models, a central bottleneck remains underexamined: the data infrastructure that underlies embodied learning. In this survey, we argue that future advances in VLA will depend less on model architecture and more on the co-design of high-fidelity data engines and structured evaluation protocols. To this end, we present a systematic ..."
+    },
+    {
+      "title": "Fusion of Computer Vision and AI in Collaborative Robotics: A ... - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/15/14/7905",
+      "snippet": "The integration of advanced computer vision and artificial intelligence (AI) techniques into collaborative robotic systems holds the potential to revolutionize human-robot interaction, productivity, and safety. Despite substantial research activity, a systematic synthesis of how vision and AI are jointly enabling context-aware, adaptive cobot capabilities across perception, planning, and ..."
+    }
+  ]
+}

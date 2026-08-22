@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "GridbonMedia/Gridathena",
+  "slug": "gridbonmedia-gridathena",
+  "author": "GridbonMedia",
+  "url": "https://huggingface.co/GridbonMedia/Gridathena",
+  "created_at": "2026-08-21T21:38:47.000Z",
+  "updated_at": "2026-08-21T21:38:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "AI Blockbench Model Generator | Rigged 3D Minecraft Models from a ...",
+      "url": "https://kodari.ai/blogs/ai-blockbench-model-generator",
+      "snippet": "AI Blockbench Model Generator: Rigged, Animated .bbmodel Files from a Prompt Describe a mob, a pet, a weapon, a prop. Get back a proper .bbmodel, rigged with bones and animated, that opens straight in Blockbench. No modeling, no keyframing by hand."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "Know what your AI did—and prove it | ATHENA AI",
+      "url": "https://www.athenaai.dev/",
+      "snippet": "Connect AI across tools, devices, and environments while keeping humans in control through clear review, privacy, security, and accountability."
+    },
+    {
+      "title": "Athena AI - Privacy-First AI Assistant",
+      "url": "https://athenaapp.io/",
+      "snippet": "Athena: Your AI, Decentralised. Your Choice. The privacy-first AI assistant offering unparalleled model choice, powered by a network of providers, not a single giant."
+    }
+  ]
+}

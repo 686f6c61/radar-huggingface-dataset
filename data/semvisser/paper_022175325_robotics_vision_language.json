@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SEMVISSER/paper_022175325_robotics_vision_language",
+  "slug": "semvisser-paper_022175325_robotics_vision_language",
+  "author": "SEMVISSER",
+  "url": "https://huggingface.co/SEMVISSER/paper_022175325_robotics_vision_language",
+  "created_at": "2026-08-21T19:07:40.000Z",
+  "updated_at": "2026-08-21T19:07:46.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "docx",
+    "graphic-visual",
+    "intro-background-approach-eval-conclusion",
+    "measured",
+    "narrative-progressive",
+    "numeric-bibtex",
+    "robotics-vision-language",
+    "short-punchy",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GeminiRobotics:BringingAIintothePhysical World",
+      "url": "https://arxiv.org/pdf/2503.20020",
+      "snippet": "The paper introduces Gemini Robotics, an advanced Vision-Language-Action (VLA) model for direct robot control."
+    },
+    {
+      "title": "[2307.15818] RT-2: Vision-Language-Action Models Transfer Web Knowledge ...",
+      "url": "https://arxiv.org/abs/2307.15818",
+      "snippet": "We study how vision-language models trained on Internet-scale data can be incorporated directly into end-to-end robotic control to boost generalization and enable emergent semantic reasoning. Our goal is to enable a single end-to-end trained model to both learn to map robot observations to actions and enjoy the benefits of large-scale pretraining on language and vision-language data from the ..."
+    },
+    {
+      "title": "Introducing Gemini Robotics and Gemini Robotics-ER, AI models designed ...",
+      "url": "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+      "snippet": "Today, we are introducing two new AI models, based on Gemini 2.0, which lay the foundation for a new generation of helpful robots. The first is Gemini Robotics, an advanced vision-language-action (VLA) model that was built on Gemini 2.0 with the addition of physical actions as a new output modality for the purpose of directly controlling robots."
+    },
+    {
+      "title": "GitHub - GT-RIPL/Awesome-LLM-Robotics: A comprehensive list of papers ...",
+      "url": "https://github.com/GT-RIPL/Awesome-LLM-Robotics",
+      "snippet": "A comprehensive list of papers using large language/multi-modal models for Robotics/RL, including papers, codes, and related websites - GT-RIPL/Awesome-LLM-Robotics"
+    },
+    {
+      "title": "Multimodal fusion with vision-language-action models for robotic ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1566253525011248",
+      "snippet": "Abstract Vision Language Action (VLA) models represent a new frontier in robotics by unifying perception, reasoning, and control within a single multimodal learning framework. By integrating visual, linguistic, and action modalities, they enable multimodal fusion systems designed for instruction-driven manipulation and generalist autonomy."
+    }
+  ]
+}

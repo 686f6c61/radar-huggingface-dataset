@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/script-powershell-split-command-token",
+  "slug": "layerfault-script-powershell-split-command-token",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/script-powershell-split-command-token",
+  "created_at": "2026-08-21T19:04:07.000Z",
+  "updated_at": "2026-08-21T19:04:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Prompt Injection Cheatsheet - GitHub",
+      "url": "https://github.com/nukIeer/AI-Prompt-Injection-Cheatsheet",
+      "snippet": "AI hacking snippets for prompt injection, jailbreaking LLMs, and bypassing AI filters. Ideal for ethical hackers and security researchers testing AI security vulnerabilities. One README.md with pra..."
+    },
+    {
+      "title": "GitHub - simonw/llm: Access large language models from the command-line",
+      "url": "https://github.com/simonw/llm",
+      "snippet": "A CLI tool and Python library for interacting with OpenAI, Anthropic&#x27;s Claude, Google&#x27;s Gemini, Qwen, Gemma, Kimi, DeepSeek, Mistral, and dozens of other Large Language Models, both via remote APIs and with models that can be installed and run on your own machine. Watch Language models on the command-line on YouTube for a demo or read the accompanying detailed notes. With LLM you can: Run ..."
+    },
+    {
+      "title": "How to split long commands over multiple lines in PowerShell",
+      "url": "https://stackoverflow.com/questions/2608144/how-to-split-long-commands-over-multiple-lines-in-powershell",
+      "snippet": "How do you take a command like the following in PowerShell and split it across multiple lines?"
+    },
+    {
+      "title": "Ollama AI / LLM Utility Functions for PowerShell · GitHub",
+      "url": "https://gist.github.com/halr9000/e95618baaee2ee25c5e1ffbc66dba98d",
+      "snippet": "Ollama is a command-line utility (CLI) that can be used to download and manage the model files (which are often multiple GB), perform the actual LLM inference, and provide a REST API to expose the LLMs to other applications on your system. Ollama is quick to install. This repo contains functions for PowerShell."
+    },
+    {
+      "title": "Get started with AI Shell in PowerShell - PowerShell",
+      "url": "https://learn.microsoft.com/en-us/powershell/utility-modules/aishell/get-started/aishell-powershell?view=ps-modules",
+      "snippet": "This article explains how to install and configure AI Shell, and get started chatting with an AI assistant in PowerShell."
+    }
+  ]
+}

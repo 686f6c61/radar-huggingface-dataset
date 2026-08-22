@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "umassma-terials/model_068711920_cnn_transformer_huge",
+  "slug": "umassma-terials-model_068711920_cnn_transformer_huge",
+  "author": "umassma-terials",
+  "url": "https://huggingface.co/umassma-terials/model_068711920_cnn_transformer_huge",
+  "created_at": "2026-08-21T21:19:57.000Z",
+  "updated_at": "2026-08-21T21:20:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "cnn-transformer",
+    "concat-mlp",
+    "grouped-query",
+    "huge",
+    "instancenorm",
+    "mish",
+    "polynomial",
+    "retrieval",
+    "xavier",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Loading models · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/models",
+      "snippet": "This guide explains how models are loaded, the different ways you can load a model, how to overcome memory issues for really big models, and how to load custom models."
+    },
+    {
+      "title": "Hybrid CNN-Transformer Object Detection System - GitHub",
+      "url": "https://github.com/ManasDeveloper/HybridCNN",
+      "snippet": "This project implements a modern object detection system that combines the local feature extraction capabilities of CNNs with the global context modeling of Transformers. The model is designed to be lightweight (~10M parameters) while maintaining competitive performance. Key Highlights: Hybrid CNN-Transformer architecture Optimized for RTX 3060 GPU (12GB VRAM) Real-time inference capability ..."
+    },
+    {
+      "title": "Hybrid CNN-Transformer Models | ai-dawang/PlugNPlay-Modules | DeepWiki",
+      "url": "https://deepwiki.com/ai-dawang/PlugNPlay-Modules/4.3-hybrid-cnn-transformer-models",
+      "snippet": "This document covers hybrid architectures that combine convolutional neural networks (CNNs) and transformer modules within a single model. These hybrid models leverage the complementary strengths of CNNs for local feature extraction and transformers for global context modeling."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

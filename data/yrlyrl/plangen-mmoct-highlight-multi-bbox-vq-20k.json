@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yrlyrl/plangen-mmoct-highlight-multi-bbox-vq-20k",
+  "slug": "yrlyrl-plangen-mmoct-highlight-multi-bbox-vq-20k",
+  "author": "yrlyrl",
+  "url": "https://huggingface.co/yrlyrl/plangen-mmoct-highlight-multi-bbox-vq-20k",
+  "created_at": "2026-08-22T01:16:19.000Z",
+  "updated_at": "2026-08-22T01:16:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "plangen",
+    "mmcot",
+    "visual-cot",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2502.16111] PlanGEN: A Multi-Agent Framework for Generating Planning ...",
+      "url": "https://arxiv.org/abs/2502.16111",
+      "snippet": "To address these limitations, we propose PlanGEN, a model-agnostic and easily scalable agent framework with three key components: constraint, verification, and selection agents. Specifically, our approach proposes constraint-guided iterative verification to enhance performance of inference-time algorithms--Best of N, Tree-of-Thought, and REBASE."
+    },
+    {
+      "title": "PlanGEN:AMulti-AgentFrameworkfor ... - arXiv.org",
+      "url": "https://arxiv.org/pdf/2502.16111v1",
+      "snippet": "dering constraints or apply inference-time algorithms without adapting to instance-level complexity. To address these limitations, we propose PlanGEN, a model-agnostic and easil scalable agent framework with three key components: constraint, verification, and selection agents. Specifically, our approach proposes constraint-guided iterative verif"
+    },
+    {
+      "title": "PlanGEN: A Multi-Agent Framework for Generating Planning and Reasoning ...",
+      "url": "https://aclanthology.org/2025.emnlp-main.1042/",
+      "snippet": "To address these limitations, we propose PlanGEN, a model-agnostic and easily scalable agent framework with three key components: constraint, verification, and selection agents. Specifically, our approach proposes constraint-guided iterative verification to enhance performance of inference-time algorithms-Best of 𝒩, Tree-of-Thought, and ..."
+    },
+    {
+      "title": "GitHub - cajias/plangen: Implementation of Google&#x27;s PlanGen framework ...",
+      "url": "https://github.com/cajias/plangen",
+      "snippet": "An implementation of Google&#x27;s PlanGen multi-agent planning framework PlanGEN is a multi-agent framework for solving complex problems with large language models — an open implementation of the workflow from the paper PlanGEN: Generative Planning with Large Language Models. It coordinates specialized agents to extract constraints, generate candidate plans, verify them, and select the best one ..."
+    },
+    {
+      "title": "[2502.16111v1] PlanGEN: A Multi-Agent Framework for Generating Planning ...",
+      "url": "http://export.arxiv.org/abs/2502.16111v1",
+      "snippet": "To address these limitations, we propose PlanGEN, a model-agnostic and easily scalable agent framework with three key components: constraint, verification, and selection agents. Specifically, our approach proposes constraint-guided iterative verification to enhance performance of inference-time algorithms--Best of N, Tree-of-Thought, and REBASE."
+    }
+  ]
+}

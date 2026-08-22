@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "michael-ptur9894/model_635393447_mae_nano",
+  "slug": "michael-ptur9894-model_635393447_mae_nano",
+  "author": "michael-ptur9894",
+  "url": "https://huggingface.co/michael-ptur9894/model_635393447_mae_nano",
+  "created_at": "2026-08-22T00:53:39.000Z",
+  "updated_at": "2026-08-22T00:53:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "concat-mlp",
+    "exponential",
+    "grouped-query",
+    "mae",
+    "multitask",
+    "nano",
+    "relu",
+    "scalenorm",
+    "xavier",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GPT-5.4 nano Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.4-nano",
+      "snippet": "Regional processing (data residency) endpoints are charged a 10% uplift for GPT-5.4 nano."
+    },
+    {
+      "title": "Nano Banana 2 - Gemini AI image generator & photo editor",
+      "url": "https://gemini.google/overview/image-generation/",
+      "snippet": "With Nano Banana 2, Gemini&#x27;s AI image generator and photo editor, you can create high-quality images and edit photos into countless new creations."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "NagaYu/ante-claim-alignment",
+  "slug": "nagayu-ante-claim-alignment",
+  "author": "NagaYu",
+  "url": "https://huggingface.co/NagaYu/ante-claim-alignment",
+  "created_at": "2026-08-22T01:01:02.000Z",
+  "updated_at": "2026-08-22T01:01:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "ante",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ante",
+    "code-review",
+    "software-engineering",
+    "rule-based",
+    "interpretable",
+    "mechanism-design",
+    "text-classification",
+    "en",
+    "dataset:NagaYu/ante-bench",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Evidence-claim alignment",
+      "dataset": "Ante Bench",
+      "metric": "fabricated-evidence detection",
+      "value": 1
+    },
+    {
+      "task": "Evidence-claim alignment",
+      "dataset": "Ante Bench",
+      "metric": "good contributions lost (false positives)",
+      "value": 0.068
+    }
+  ],
+  "sources": [
+    {
+      "title": "How Agentic AI Will Reshape Payments in: IMF Notes Volume 2026 Issue ...",
+      "url": "https://www.elibrary.imf.org/view/journals/068/2026/004/article-A001-en.xml",
+      "snippet": "Artificial intelligence is entering a new phase in which systems can act autonomously on behalf of users. These \"agentic\" AI systems can interpret objectives, break them into tasks, and interact with digital services with limited human input. In payments, this could shift transactions from human-initiated instructions to agent-mediated decisions. While still emerging, rapid experimentation ..."
+    },
+    {
+      "title": "AI Alignment: A Comprehensive Survey - arXiv.org",
+      "url": "https://arxiv.org/pdf/2310.19852",
+      "snippet": "Abstract AI alignment aims to make AI systems behave in line with human intentions and values. As AI systems grow more capable, so do risks from misalignment. To provide a comprehensive and up-to-date overview of the alignment field, in this survey, we delve into the core concepts, methodology, and practice of align-ment. First, we identify four principles as the key objectives of AI alignment ..."
+    },
+    {
+      "title": "[2310.19852] AI Alignment: A Comprehensive Survey - arXiv.org",
+      "url": "https://arxiv.org/abs/2310.19852",
+      "snippet": "AI alignment aims to make AI systems behave in line with human intentions and values. As AI systems grow more capable, so do risks from misalignment. To provide a comprehensive and up-to-date overview of the alignment field, in this survey, we delve into the core concepts, methodology, and practice of alignment. First, we identify four principles as the key objectives of AI alignment ..."
+    },
+    {
+      "title": "AI Innovations at Allianz: Claims and Fraud Detection",
+      "url": "https://aitechtrend.com/ai-innovations-at-allianz-claims-and-fraud-detection/",
+      "snippet": "A human claims handler then reviews the audit summary before authorizing any payout. As Maria Janssen, Chief Transformation Officer at Allianz Services, explains, \"AI agents support our teams by making recommendations, but the ultimate responsibility always rests with a claims professional.\" Project Nemo delivered measurable results:"
+    },
+    {
+      "title": "AI Alignment",
+      "url": "https://alignmentsurvey.com/",
+      "snippet": "These four principles guide the alignment of an AI system with human intentions and values. They are not end goals in themselves but intermediate objectives in service of alignment."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Tubing/Qwen3.5-9B-abliterated",
+  "slug": "tubing-qwen3-5-9b-abliterated",
+  "author": "Tubing",
+  "url": "https://huggingface.co/Tubing/Qwen3.5-9B-abliterated",
+  "created_at": "2026-08-22T01:27:25.000Z",
+  "updated_at": "2026-08-22T01:27:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "qwen3.5",
+    "qwen",
+    "conversational",
+    "en",
+    "arxiv:2406.11717",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 35855304376,
+  "storage_human": "35.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiconStudio/Qwen3.5-9B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/LiconStudio/Qwen3.5-9B-abliterated",
+      "snippet": "Model Description This is an uncensored version of Qwen3.5-9B, processed using the Heretic method to remove the model&#x27;s built-in refusal/censorship mechanisms through neural direction ablation."
+    },
+    {
+      "title": "darkneighbor667/Huihui-Qwen3.5-9B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/darkneighbor667/Huihui-Qwen3.5-9B-abliterated",
+      "snippet": "This is an uncensored version of Qwen/Qwen3.5-9B created with abliteration (see remove-refusals-with-transformers to know more about it). This is a crude, proof-of-concept implementation to remove refusals from an LLM model without using TransformerLens."
+    },
+    {
+      "title": "Huihui-Qwen3.5-9B-Abliterated: What This Uncensored Model Does",
+      "url": "https://hackernoon.com/huihui-qwen35-9b-abliterated-what-this-uncensored-model-does",
+      "snippet": "Use the model in sandboxed environments to study refusal removal techniques and their implications for language model design. Consider running it via Ollama for easy local deployment and experimentation without external API dependencies. This is a simplified guide to an AI model called Huihui-Qwen3.5-9B-abliterated maintained by huihui-ai."
+    },
+    {
+      "title": "huihui_ai/qwen3.5-abliterated",
+      "url": "https://ollama.com/huihui_ai/qwen3.5-abliterated",
+      "snippet": "This is an uncensored version of Qwen/qwen3.5 created with abliteration (see remove-refusals-with-transformers to know more about it). Usage Warnings \" Risk of Sensitive or Controversial Outputs \": This model&#x27;s safety filtering has been significantly reduced, potentially generating sensitive, controversial, or inappropriate content. Users should exercise caution and rigorously review ..."
+    },
+    {
+      "title": "Qwen3.5-9B Abliterated: Uncensored Local LLM Guide",
+      "url": "https://codersera.com/blog/unrestricted-uncensored-qwen35-9b-abliterated-full-guide/",
+      "snippet": "Unrestricted Uncensored Qwen3.5‑9B Abliterated: Full Guide Learn how to install, run, benchmark and compare the uncensored Qwen3.5‑9B Abliterated model locally on Mac, Windows and Linux. Includes step‑by‑step setup (Ollama, GGUF, llama.cpp, vLLM), hardware requirements, benchmarks, pricing considerations, and comparisons with rival open‑source LLMs."
+    }
+  ]
+}

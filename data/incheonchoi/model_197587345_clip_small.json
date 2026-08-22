@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "incheonchoi/model_197587345_clip_small",
+  "slug": "incheonchoi-model_197587345_clip_small",
+  "author": "incheonchoi",
+  "url": "https://huggingface.co/incheonchoi/model_197587345_clip_small",
+  "created_at": "2026-08-22T00:54:51.000Z",
+  "updated_at": "2026-08-22T00:54:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "clip",
+    "concat-mlp",
+    "contrastive",
+    "groupnorm",
+    "lion",
+    "orthogonal",
+    "polynomial",
+    "sliding-window",
+    "small",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "sachin/tiny_clip · Hugging Face",
+      "url": "https://huggingface.co/sachin/tiny_clip",
+      "snippet": "Tiny CLIP Introduction This is a smaller version of CLIP trained for EN only. The training script can be found here. This model is roughly 8 times smaller than CLIP. This was achieved by using a small text model (microsoft/xtremedistil-l6-h256-uncased) and a small vision model (edgenext_small). For a in-depth guide of training CLIP see this blog."
+    },
+    {
+      "title": "GitHub - wkcn/TinyCLIP: [ICCV2023] TinyCLIP: CLIP Distillation via ...",
+      "url": "https://github.com/wkcn/TinyCLIP",
+      "snippet": "📌 This is an official PyTorch implementation of [ICCV 2023] - TinyCLIP: CLIP Distillation via Affinity Mimicking and Weight Inheritance TinyCLIP is a novel cross-modal distillation method for large-scale language-image pre-trained models. The method introduces two core techniques: affinity mimicking and weight inheritance. This work unleashes the capacity of small CLIP models, fully ..."
+    },
+    {
+      "title": "Create AI Photo — Choose Your Model | Intipics",
+      "url": "https://intipics.com/models",
+      "snippet": "Browse our curated collection of AI-generated models. Pick a model, choose a scene, upload your photo and generate your personalized AI photo in seconds."
+    },
+    {
+      "title": "CLIP: Connecting text and images - OpenAI",
+      "url": "https://openai.com/index/clip/",
+      "snippet": "We&#x27;re introducing a neural network called CLIP which efficiently learns visual concepts from natural language supervision. CLIP can be applied to any visual classification benchmark by simply providing the names of the visual categories to be recognized, similar to the \"zero-shot\" capabilities of GPT-2 and GPT-3."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "insa-jaume/Qwen3.8-27B",
+  "slug": "insa-jaume-qwen3-8-27b",
+  "author": "insa-jaume",
+  "url": "https://huggingface.co/insa-jaume/Qwen3.8-27B",
+  "created_at": "2026-08-21T23:35:52.000Z",
+  "updated_at": "2026-08-21T23:35:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55615875685,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen 3.8-27B Local Deployment and Fast Serving Guide - Geeky Gadgets",
+      "url": "https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/",
+      "snippet": "Qwen 3.8-27B delivers high-speed local AI generation. Optimize your hardware setup using SG Lang with NVFP4 quantization to hit up to 200 tokens per second."
+    },
+    {
+      "title": "Qwen3.8-27B: A Comprehensive Technical Analysis - Local AI Zone",
+      "url": "https://local-ai-zone.github.io/blog/qwen3-8-27b-comprehensive-analysis.html",
+      "snippet": "🎯 Executive Summary Key Finding: Qwen3.8-27B achieves competitive performance with models 10-15× its size while maintaining practical deployment requirements (24GB VRAM minimum). The model outperforms Meta&#x27;s Muse Glimmer (30B) across all 8 direct comparison benchmarks and surpasses Claude Opus 4.6 on 15 of 19 overlapping tests, establishing a new efficiency frontier for local language ..."
+    },
+    {
+      "title": "Qwen3.8-27B - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html",
+      "snippet": "Qwen3.8-27B 1 Introduction ¶ Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, it shares the same hybrid-attention backbone as the 2.4T MoE flagship: of its 64 layers, only 16 run full (gated) attention (full_attention_interval: 4) while the other 48 ..."
+    },
+    {
+      "title": "Qwen3.8-27B: A Deep Dive Into Qwen&#x27;s Newest Vision-Language Powerhouse",
+      "url": "https://dev.to/mayu2008/qwen38-27b-a-deep-dive-into-qwens-newest-vision-language-powerhouse-2e7",
+      "snippet": "Qwen3.8-27B is the compact, deployment-friendly member of the new Qwen3.8 generation, which builds on the architecture Qwen introduced in Qwen3.5. It&#x27;s a causal language model with a vision encoder — meaning it&#x27;s not a bolted-on multimodal adapter, but a model natively trained to reason over text, images, and even hour-long videos."
+    }
+  ]
+}

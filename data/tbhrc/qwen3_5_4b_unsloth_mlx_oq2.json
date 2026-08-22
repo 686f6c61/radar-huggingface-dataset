@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tbhrc/qwen3_5_4b_unsloth_mlx_oq2",
+  "slug": "tbhrc-qwen3_5_4b_unsloth_mlx_oq2",
+  "author": "tbhrc",
+  "url": "https://huggingface.co/tbhrc/qwen3_5_4b_unsloth_mlx_oq2",
+  "created_at": "2026-08-22T02:26:12.000Z",
+  "updated_at": "2026-08-22T02:26:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 798596096,
+  "parameters_human": "798.6M",
+  "storage_bytes": 2282783309,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5",
+      "snippet": "Qwen3.5 is Alibaba&#x27;s new model family, including Qwen3.5- 35B -A3B, 27B, 122B -A10B and 397B -A17B and the new Small series: Qwen3.5-0.8B, 2B, 4B and 9B. The multimodal hybrid reasoning LLMs deliver the strongest performances for their sizes."
+    },
+    {
+      "title": "Qwen3.5 Fine-tuning Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5/fine-tune",
+      "snippet": "Unsloth supports vision fine-tuning for the multimodal Qwen3.5 models. Use the below Qwen3.5 notebooks and change the respective model names to your desired Qwen3.5 model."
+    },
+    {
+      "title": "Christ9038/Qwen3.5-4B-unsloth-MLX-oQ2 · Hugging Face",
+      "url": "https://huggingface.co/Christ9038/Qwen3.5-4B-unsloth-MLX-oQ2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 4B Base by unsloth — VRAM 9.1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/unsloth%2FQwen3.5-4B-Base,6Z4RzEnYvZHbfPT6nzuaGm",
+      "snippet": "Rank the Qwen3.5 4B Base capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

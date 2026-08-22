@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tiwright/paper_014275457_multimodal_reasoning",
+  "slug": "tiwright-paper_014275457_multimodal_reasoning",
+  "author": "tiwright",
+  "url": "https://huggingface.co/tiwright/paper_014275457_multimodal_reasoning",
+  "created_at": "2026-08-22T01:12:15.000Z",
+  "updated_at": "2026-08-22T01:12:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "empirical-focused",
+    "highlight-bullet",
+    "html",
+    "intro-method-exp-related-conclusion",
+    "long-detailed",
+    "measured",
+    "multimodal-reasoning",
+    "numeric-nature",
+    "passive",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perception, Reason, Think, and Plan: A Survey on Large Multimodal ...",
+      "url": "https://arxiv.org/abs/2505.04921",
+      "snippet": "Reasoning lies at the heart of intelligence, shaping the ability to make decisions, draw conclusions, and generalize across domains. In artificial intelligence, as systems increasingly operate in open, uncertain, and multimodal environments, reasoning becomes essential for enabling robust and adaptive behavior. Large Multimodal Reasoning Models (LMRMs) have emerged as a promising paradigm ..."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "[2509.24322] Multimodal Large Language Models Meet Multimodal Emotion ...",
+      "url": "https://arxiv.org/abs/2509.24322",
+      "snippet": "In AI for Science, multimodal emotion recognition and reasoning has become a rapidly growing frontier. While LLMs and MLLMs have achieved notable progress in this area, the field still lacks a systematic review that consolidates recent developments."
+    },
+    {
+      "title": "Multimodal Reasoning · ICLR 2026 | paperlist.ai",
+      "url": "https://paperlist.ai/en/conferences/iclr/2026/topics/multimodal-reasoning",
+      "snippet": "Abstract Multimodal reasoning requires iterative coordination between language and vision, yet it remains unclear what constitutes a meaningful interleaved chain of thought. We posit that text and image thoughts should function as complementary, rather than isomorphic, modalities that mutually advance reasoning. Guided by this principle, we build ThinkMorph, a unified model fine-tuned on $&#92;sim ..."
+    },
+    {
+      "title": "Awesome-Multimodal-Papers | A curated list of awesome Multimodal studies.",
+      "url": "https://friedrichor.github.io/Awesome-Multimodal-Papers/",
+      "snippet": "A curated list of awesome Multimodal studies. Awesome-Multimodal-Papers A curated list of awesome Multimodal studies. Contribution If you have published a high-quality paper or come across one that you think is valuable, feel free to contribute! To submit a paper, please open an issue and include the following information in the specified format: Submission Format ``` { \"title\": paper title ..."
+    }
+  ]
+}

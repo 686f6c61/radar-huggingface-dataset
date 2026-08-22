@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "johannes-kaindl/local-image-generator-models",
+  "slug": "johannes-kaindl-local-image-generator-models",
+  "author": "johannes-kaindl",
+  "url": "https://huggingface.co/johannes-kaindl/local-image-generator-models",
+  "created_at": "2026-08-21T20:23:00.000Z",
+  "updated_at": "2026-08-21T20:23:08.000Z",
+  "license": "stability-ai-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "onnxruntime-web",
+  "languages": [],
+  "tags": [
+    "onnxruntime-web",
+    "onnx",
+    "stable-diffusion",
+    "sd-turbo",
+    "webgpu",
+    "obsidian",
+    "text-to-image",
+    "base_model:stabilityai/sd-turbo",
+    "base_model:quantized:stabilityai/sd-turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2537855762,
+  "storage_human": "2.5 GB",
+  "base_model": "stabilityai/sd-turbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "johannes-kaindl/local-image-generator - GitHub",
+      "url": "https://github.com/johannes-kaindl/local-image-generator",
+      "snippet": "What it does Open the generator from the ribbon icon or the Open generator command. Pick a model from the dropdown. SD-Turbo is fixed at 512×512; FLUX.2 shows a size dropdown with 7 curated aspect ratios (square, portrait, landscape). Type a prompt, adjust steps/seed if you like, and press Generate. Click a style chip (Sumi-e, Watercolor, Photo, Oil — edit or add your own in settings) to ..."
+    },
+    {
+      "title": "local-image-generator/README.md at main · johannes-kaindl ... - GitHub",
+      "url": "https://github.com/johannes-kaindl/local-image-generator/blob/main/README.md",
+      "snippet": "Local Image Generator Generate images locally inside Obsidian — no cloud, no external app, no API key. Choose between two models: SD-Turbo (fast, runs in-process on your own GPU via WebGPU/ onnxruntime-web) or FLUX.2 klein 4B (higher quality, multiple aspect ratios, via a local mflux child process — see Requirements)."
+    },
+    {
+      "title": "5 Open-source Local AI Tools for Image Generation I Found Interesting",
+      "url": "https://itsfoss.com/local-ai-image-tools/",
+      "snippet": "I discovered these interesting open-source AI tools for image generation that run locally. Explore their features, capabilities, and how they empower creativity without relying on cloud services."
+    },
+    {
+      "title": "Johannes Kaindl · master butcher, political scientist & coder",
+      "url": "https://jkaindl.de/",
+      "snippet": "Master butcher, political scientist and coder. I build generative, local-first software that runs on-device: local LLMs, Apple Silicon ML, generative graphics."
+    },
+    {
+      "title": "Local Image Generation 2026: Stable Diffusion, FLUX, and ComfyUI Setup ...",
+      "url": "https://www.local-llm.net/guides/local-image-generation/",
+      "snippet": "Local image generation lets you create AI art, product mockups, design concepts, and visual content entirely on your own hardware. No cloud services, no content filters, no per-image fees. This guide covers the two major model families (Stable Diffusion and FLUX), the most powerful interface (ComfyUI), and essential techniques like ControlNet, LoRAs, and prompt engineering that transform basic ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/tokenizer-hidden-prompt-plain",
+  "slug": "layerfault-tokenizer-hidden-prompt-plain",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/tokenizer-hidden-prompt-plain",
+  "created_at": "2026-08-21T21:52:58.000Z",
+  "updated_at": "2026-08-21T21:52:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokenization Attacks on LLMs - hiddenlayer.com",
+      "url": "https://www.hiddenlayer.com/research/tokenization-attacks-on-llms-how-adversaries-exploit-ai-language-processing",
+      "snippet": "Learn how attackers exploit tokenization in Large Language Models (LLMs) through glitch tokens, invisible Unicode attacks, and TokenBreak techniques to bypass AI security safeguards and manipulate model behavior."
+    },
+    {
+      "title": "Tokenizer Tampering - docs.hiddenlayer.ai",
+      "url": "https://docs.hiddenlayer.ai/docs/products/supply-chain/remediation-guide/tokenizer_tampering",
+      "snippet": "The model&#x27;s tokenizer.json contains two or more tokens that share the same token ID. Tokenizers assume each ID maps to a single token. An attacker can add a malicious token with the same ID as an existing one, giving them control over what text the model outputs for that ID. The original token remains in the vocabulary to prevent the tokenizer from failing on load. The attacker&#x27;s token is then ..."
+    },
+    {
+      "title": "Ox Alpha: What We Know So Far (Aug 2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/ox-alpha-what-we-know-mystery-ai-model-august-2026",
+      "snippet": "Ox Alpha (aka \"0x Alpha\"): what we actually know. Fingerprinting matched its tokenizer and video encoder to GLM-5.3, ruling out MiMo, Qwen, GLM-4.6V."
+    },
+    {
+      "title": "Tokenizer Tampering - hiddenlayer.com",
+      "url": "https://www.hiddenlayer.com/research/tokenizer-tampering",
+      "snippet": "HiddenLayer researchers demonstrate how tokenizer tampering can enable silent AI supply chain attacks, including command substitution, tool-call injection, and data exfiltration."
+    },
+    {
+      "title": "HiddenLayer AI Security Platform Documentation",
+      "url": "https://docs.hiddenlayer.ai/",
+      "snippet": "HiddenLayer provides security for AI through its AI Security Platform. The Platform provides detection and response for Generative AI and traditional AI models to detect prompt injections, adversarial AI attacks, and digital supply chain vulnerabilities. The Platform delivers an automated and scalable defense tailored for Generative AI, enabling fast deployment and proactive responses to ..."
+    }
+  ]
+}

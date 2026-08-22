@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/weights-distributed-small-delta",
+  "slug": "layerfault-weights-distributed-small-delta",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/weights-distributed-small-delta",
+  "created_at": "2026-08-21T21:57:56.000Z",
+  "updated_at": "2026-08-21T21:57:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 128,
+  "parameters_human": "128",
+  "storage_bytes": 640,
+  "storage_human": "640 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault Offline-first static admission and sandboxed behavioural security for local AI models. Layerfault validates model artifacts, packages and local runtimes before inference, then can optionally exercise supported models inside a locked-down Linux sandbox to look for runtime side effects and suspicious behavioural divergence."
+    },
+    {
+      "title": "Moonshot AI releases Kimi K3 model for public download",
+      "url": "https://www.linkedin.com/news/story/moonshot-ai-releases-kimi-k3-model-for-public-download-8383281/",
+      "snippet": "The release of Kimi K3 marks a strategic move by Moonshot AI to enhance its presence in the open software community amid U.S. concerns over Chinese AI advancements."
+    },
+    {
+      "title": "DeltaLLM: Compress LLMs with Low-Rank Deltas between Shared Weights",
+      "url": "https://arxiv.org/pdf/2501.18596",
+      "snippet": "The shared weights have additional low-rank delta-layers between them, which are trained to preserve the knowledge and capabilities of the model. We show that DELTALLM models compressed from open-source LLMs can achieve comparable performance with other models of similar sizes trained from scratch."
+    },
+    {
+      "title": "layerfault/docs/TRUST_MODEL.md at main · izm1chael/layerfault",
+      "url": "https://github.com/izm1chael/layerfault/blob/main/docs/TRUST_MODEL.md",
+      "snippet": "Offline-first local AI model admission and security scanner - izm1chael/layerfault"
+    },
+    {
+      "title": "PDF Decentralized and Distributed Machine Learning Model Training with Actors",
+      "url": "https://www.scs.stanford.edu/17au-cs244b/labs/projects/addair.pdf",
+      "snippet": "In training a machine learning model as a distributed system, there is a fundamental tradeoff between training speed and model accuracy. The most accurate results will come from a fully synchronous solution using a shared parameter server, but this bottleneck largely negates the benefits of using a highly distributed training architecture."
+    }
+  ]
+}

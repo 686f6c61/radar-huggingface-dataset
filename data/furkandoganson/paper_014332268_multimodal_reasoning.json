@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "furkandoganson/paper_014332268_multimodal_reasoning",
+  "slug": "furkandoganson-paper_014332268_multimodal_reasoning",
+  "author": "furkandoganson",
+  "url": "https://huggingface.co/furkandoganson/paper_014332268_multimodal_reasoning",
+  "created_at": "2026-08-21T21:30:54.000Z",
+  "updated_at": "2026-08-21T21:31:02.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "docx",
+    "highlight-bullet",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "multimodal-reasoning",
+    "neutral",
+    "numeric-apa",
+    "theoretical-rigorous",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "arXiv: Your Agent&#x27;s Memories Are Not Its Own: Forged Reas… — AI_SAFETY ...",
+      "url": "https://www.matproof.com/regulatory-updates/arxiv-your-agents-memories-are-not-its-own-forged-reasoning-attacks-on-llm-agent-6852",
+      "snippet": "This paper, published on arXiv in July 2026, presents a novel security vulnerability specific to large language model (LLM) agents that use persistent…"
+    },
+    {
+      "title": "Top AI Models This Week (2026) — Trending Hugging Face Models, Papers ...",
+      "url": "https://orangebot.ai/top-ai-models-this-week",
+      "snippet": "Top trending AI models this week, 2026: a live, ranked snapshot of the most popular open models, papers, and demos on Hugging Face. Updated daily, with a direct link to every model."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2401.06805",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Tong_Thinking_with_Video_Video_Generation_as_a_Promising_Multimodal_Reasoning_CVPR_2026_paper.html",
+      "snippet": "We also find that self-consistency and in-context learning can improve Sora-2&#x27;s performance. In summary, our findings show that the video generation model is the potential unified multimodal understanding and generation model, positioning \"Thinking with Video\" as a potential unified multimodal reasoning paradigm."
+    }
+  ]
+}

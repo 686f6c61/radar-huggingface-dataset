@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "myrapatel/paper_010848390_few_shot_multimodal",
+  "slug": "myrapatel-paper_010848390_few_shot_multimodal",
+  "author": "myrapatel",
+  "url": "https://huggingface.co/myrapatel/paper_010848390_few_shot_multimodal",
+  "created_at": "2026-08-22T02:20:42.000Z",
+  "updated_at": "2026-08-22T02:20:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "few-shot-multimodal",
+    "graphic-visual",
+    "html",
+    "impersonal",
+    "neutral",
+    "numeric-apa",
+    "short-punchy",
+    "theoretical-rigorous",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/html/2511.01140v2",
+      "snippet": "Existing multimodal and meta learning approaches improve performance in these settings but lack a theoretical explanation of why or when they succeed. This paper presents a unified theoretical framework for few shot multimodal medical imaging that jointly characterizes sample complexity, uncertainty quantification, and interpretability."
+    },
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/html/2511.01140v1",
+      "snippet": "Furthermore, few studies have examined how interactions among modalities influence learnability and generalization. Establishing a rigorous information-theoretic foundation for multimodal learning is therefore essential to guide model design and interpretation in medical applications."
+    },
+    {
+      "title": "Top 8 most influential arXiv papers on multimodal AI - Deepgram",
+      "url": "https://deepgram.com/learn/top-8-most-influential-arxiv-papers-on-multimodal-ai",
+      "snippet": "This paper introduces Flamingo, a visual language model for few-shot learning on a wide range of multimodal tasks. Few-shot learning is a particularly exciting area of AI research because it aims to train models that can learn new tasks from a very limited amount of data."
+    },
+    {
+      "title": "Awesome Multimodal LLMs for Time Series Analysis - GitHub",
+      "url": "https://github.com/mllm-ts/Awesome-Multimodal-LLMs-Time-Series",
+      "snippet": "Large Language Models are Few-Shot Health Learners Xin Liu, Daniel McDuff, Geza Kovacs, Isaac Galatzer-Levy, Jacob Sunshine, Jiening Zhan, Ming-Zher Poh, Shun Liao, Paolo Di Achille, Shwetak Patel. [paper] MedualTime: A Dual-Adapter Language Model for Medical Time Series-Text Multimodal Learning"
+    },
+    {
+      "title": "Few-Shot Learning Based on Multimodal Information Processing",
+      "url": "https://ieeexplore.ieee.org/document/10981794/",
+      "snippet": "Few-shot learning aims to develop models with strong generalization capabilities using a small number of training samples. However, most learning methods rely solely on the visual features of a few samples to represent entire categories, leading to poor category representativeness. In contrast, humans can utilize multimodal information to learn category features, thereby making them more ..."
+    }
+  ]
+}

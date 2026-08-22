@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kenjitan/paper_011994843_zero_shot_transfer",
+  "slug": "kenjitan-paper_011994843_zero_shot_transfer",
+  "author": "kenjitan",
+  "url": "https://huggingface.co/kenjitan/paper_011994843_zero_shot_transfer",
+  "created_at": "2026-08-22T01:33:05.000Z",
+  "updated_at": "2026-08-22T01:33:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "footnote",
+    "highlight-bullet",
+    "html",
+    "impersonal",
+    "intro-background-approach-eval-conclusion",
+    "measured",
+    "varied-mixed",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "$Z^*$: Zero-shot Style Transfer via Attention Rearrangement",
+      "url": "https://arxiv.org/abs/2311.16491",
+      "snippet": "Despite the remarkable progress in image style transfer, formulating style in the context of art is inherently subjective and challenging. In contrast to existing learning/tuning methods, this study shows that vanilla diffusion models can directly extract style information and seamlessly integrate the generative prior into the content image without retraining. Specifically, we adopt dual ..."
+    },
+    {
+      "title": "Cross-Image Attention for Zero-Shot Appearance Transfer",
+      "url": "https://arxiv.org/abs/2311.03335",
+      "snippet": "In addition, to improve the output image quality, we harness three mechanisms that either manipulate the noisy latent codes or the model&#x27;s internal representations throughout the denoising process. Importantly, our approach is zero-shot, requiring no optimization or training."
+    },
+    {
+      "title": "Few-Shot, Zero-Shot & Transfer Learning Guide | Ultralytics",
+      "url": "https://www.ultralytics.com/blog/understanding-few-shot-zero-shot-and-transfer-learning",
+      "snippet": "Explore the differences between few-shot learning, zero-shot learning, and transfer learning in computer vision and how these paradigms shape AI model training."
+    },
+    {
+      "title": "GitHub - isl-org/ZoeDepth: Metric depth estimation from a single image",
+      "url": "https://github.com/isl-org/ZoeDepth",
+      "snippet": "Metric depth estimation from a single image. Contribute to isl-org/ZoeDepth development by creating an account on GitHub."
+    }
+  ]
+}

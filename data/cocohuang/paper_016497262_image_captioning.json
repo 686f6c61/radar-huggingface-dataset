@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cocohuang/paper_016497262_image_captioning",
+  "slug": "cocohuang-paper_016497262_image_captioning",
+  "author": "cocohuang",
+  "url": "https://huggingface.co/cocohuang/paper_016497262_image_captioning",
+  "created_at": "2026-08-22T01:22:00.000Z",
+  "updated_at": "2026-08-22T01:22:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "detailed-descriptive",
+    "footnote",
+    "highlight-bullet",
+    "html",
+    "image-captioning",
+    "intro-problem-solution-validation-future",
+    "long-detailed",
+    "mixed-active-passive",
+    "neutral",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - iamirmasoud/image_captioning: Automatic Image Captioning using ...",
+      "url": "https://github.com/iamirmasoud/image_captioning",
+      "snippet": "In this project, I&#x27;ll create a neural network architecture consisting of both CNNs (Encoder) and LSTMs (Decoder) to automatically generate captions from images. The network will be trained on the Microsoft Common Objects in COntext (MS COCO) dataset. The image captioning model is displayed below. Image source After training the network, I will test the network on novel images!"
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1EYUxzhBF5Tr5GxY7QxOGopuwacniMhS1",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "GitHub - ahmed-hassan97/Image_Captioning: Image_Captioning using coco ...",
+      "url": "https://github.com/ahmed-hassan97/Image_Captioning",
+      "snippet": "The image-model recognizes what the image contains and outputs that as a vector of numbers - the \"thought-vector\" or summary- vector, which is then input to a Recurrent Neural Network that decodes this vector into text."
+    }
+  ]
+}

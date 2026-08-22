@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Sounderya/smolvla-cphase1",
+  "slug": "sounderya-smolvla-cphase1",
+  "author": "Sounderya",
+  "url": "https://huggingface.co/Sounderya/smolvla-cphase1",
+  "created_at": "2026-08-22T02:21:06.000Z",
+  "updated_at": "2026-08-22T02:21:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Sounderya/sim_mug_skillgen_v2",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906716420,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sounderya/smolvla-curriculum-phase3 · Hugging Face",
+      "url": "https://huggingface.co/Sounderya/smolvla-curriculum-phase3",
+      "snippet": "Instructions to use Sounderya/smolvla-curriculum-phase3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Sounderya/smolvla-curriculum-phase3 with LeRobot:"
+    },
+    {
+      "title": "Sounderya Varagur Venugopal - Hugging Face",
+      "url": "https://huggingface.co/Sounderya",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 22 days ago ... published a model 22 days ago"
+    },
+    {
+      "title": "GitHub - cedricxie/smolvla: LeRobot: Making AI for Robotics more ...",
+      "url": "https://github.com/cedricxie/smolvla",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - cedricxie/smolvla"
+    },
+    {
+      "title": "SmolVLA | Robots Atlas",
+      "url": "https://robotsatlas.com/ai-models/smolvla",
+      "snippet": "SmolVLA is a compact (450M-parameter), open-source Vision-Language-Action model built by Hugging Face within the LeRobot ecosystem. It takes a sequence of RGB images from multiple cameras, the robot&#x27;s current sensorimotor state, and a natural-language instruction, and outputs a continuous sequence of actions (an action chunk) to control the robot."
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    }
+  ]
+}

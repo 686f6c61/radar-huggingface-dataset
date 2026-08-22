@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Krishna159/fraud-detector",
+  "slug": "krishna159-fraud-detector",
+  "author": "Krishna159",
+  "url": "https://huggingface.co/Krishna159/fraud-detector",
+  "created_at": "2026-08-22T02:19:57.000Z",
+  "updated_at": "2026-08-22T02:19:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20173757,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "krishna016agarwal/AI-Fraud-Detection-System - GitHub",
+      "url": "https://github.com/krishna016agarwal/AI-Fraud-Detection-System",
+      "snippet": "Real-Time AI Fraud Detection System A production-style AI/ML + streaming data engineering project that detects fraudulent financial transactions in real time using a trained machine learning model, Kafka-compatible event streaming, Dockerized microservices, live alerting, and an interactive monitoring dashboard."
+    },
+    {
+      "title": "vaibhav07112004/fraud-detection-models · Hugging Face",
+      "url": "https://huggingface.co/vaibhav07112004/fraud-detection-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Applications of AI-Based Models for Online Fraud Detection ... - Springer",
+      "url": "https://link.springer.com/article/10.1186/s40163-025-00248-8",
+      "snippet": "However, understanding the current state of AI techniques in combating online fraud, the data sources used, the evaluation methods for AI models, and the specific types of fraud that are most prevalent, remains a significant challenge."
+    },
+    {
+      "title": "GitHub - krishnakg12/fraud-detection-ml-system",
+      "url": "https://github.com/krishnakg12/fraud-detection-ml-system",
+      "snippet": "Fraud detection in financial systems presents three major challenges: Extreme class imbalance (~0.13% fraud rate) Real-time inference constraints (<50 ms latency) Asymmetric cost of errors (false negatives far more expensive than false positives) This work focuses on designing a system that balances detection performance with operational and economic constraints."
+    },
+    {
+      "title": "Application of AI-based Models for Online Fraud Detection and Analysis",
+      "url": "https://arxiv.org/pdf/2409.19022",
+      "snippet": "2.4 The Use of AI in Fraud Detection Although some literature reviews explore the appli-cation of AI for fraud and crime, to the best of our knowledge, no reviews currently aim to understand the state-of-the-art in detecting online fraud in general."
+    }
+  ]
+}

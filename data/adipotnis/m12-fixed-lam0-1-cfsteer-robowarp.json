@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "adipotnis/m12-fixed-lam0.1-cfsteer-robowarp",
+  "slug": "adipotnis-m12-fixed-lam0-1-cfsteer-robowarp",
+  "author": "adipotnis",
+  "url": "https://huggingface.co/adipotnis/m12-fixed-lam0.1-cfsteer-robowarp",
+  "created_at": "2026-08-21T21:34:42.000Z",
+  "updated_at": "2026-08-21T21:35:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "pi0.5",
+    "libero",
+    "openpi",
+    "counterfactual",
+    "flow-matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12441260105,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adipotnis/m6-contrastive-cf-robowarp · Hugging Face",
+      "url": "https://huggingface.co/adipotnis/m6-contrastive-cf-robowarp",
+      "snippet": "M6 — Contrastive Counterfactual Velocity (RoboWarp) π₀.₅ base finetuned on LIBERO-Spatial with a contrastive counterfactual objective: the CFM regression target stays plain (no steering), and an InfoNCE term makes the student&#x27;s predicted velocity rank its own target above the evidence-blind counterfactual velocity."
+    },
+    {
+      "title": "adipotnis (Aditya Potnis) · GitHub",
+      "url": "https://github.com/adipotnis",
+      "snippet": "V-JEPA2 visual encoder + diffusion policy for navigation waypoint prediction Python"
+    },
+    {
+      "title": "Math Solver - Trusted Online AI Math Calculator | Symbolab",
+      "url": "https://www.symbolab.com/",
+      "snippet": "Symbolab: equation search and math solver - solves algebra, trigonometry and calculus problems step by step"
+    },
+    {
+      "title": "GitHub - robomantri/robowarp: A Python framework for GPU-accelerated ...",
+      "url": "https://github.com/robomantri/robowarp",
+      "snippet": "A Python framework for GPU-accelerated simulation, robotics, and machine learning. - robomantri/robowarp"
+    },
+    {
+      "title": "adipotnis/m5-byol-cfsteer-robowarp · Hugging Face",
+      "url": "https://huggingface.co/adipotnis/m5-byol-cfsteer-robowarp",
+      "snippet": "BYOL-flavored sibling of M4 (adipotnis/m4-bootstrap-cfsteer-robowarp): π₀.₅ base finetuned on LIBERO-Spatial with the flow-matching target steered away from a counterfactual velocity, where the counterfactual teacher is the run&#x27;s own EMA of the student — a BYOL-style target network, soft-updated every step with τ = 0.999, instead of M4 ..."
+    }
+  ]
+}

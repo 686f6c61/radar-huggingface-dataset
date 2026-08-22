@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "tbhrc/phi_3_mini_4k_instruct_unsloth_4bit",
+  "slug": "tbhrc-phi_3_mini_4k_instruct_unsloth_4bit",
+  "author": "tbhrc",
+  "url": "https://huggingface.co/tbhrc/phi_3_mini_4k_instruct_unsloth_4bit",
+  "created_at": "2026-08-22T02:24:46.000Z",
+  "updated_at": "2026-08-22T02:25:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "unsloth",
+    "phi3",
+    "phi",
+    "mlx",
+    "conversational",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 597212160,
+  "parameters_human": "597.2M",
+  "storage_bytes": 2150227704,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Phi-3-mini-4k-instruct · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Phi-3-mini-4k-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Phi-3-mini-4k-instruct-bnb-4bit · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Phi-3-mini-4k-instruct-bnb-4bit",
+      "snippet": "Finetune Phi-3.5, Llama 3.1, Mistral 2-5x faster with 70% less memory via Unsloth!"
+    },
+    {
+      "title": "Phi-3-mini-4k-instruct-bnb-4bit: Text-to-Text model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/phi-3-mini-4k-instruct-bnb-4bit-unsloth",
+      "snippet": "Overview Phi-3-mini-4k-instruct-bnb-4bit is a quantized version of Microsoft&#x27;s Phi-3 mini language model, prepared by unsloth for efficient fine-tuning and inference on consumer hardware. The model operates with a 4,096 token context window and uses 4-bit quantization via bitsandbytes to reduce memory requirements while preserving performance."
+    },
+    {
+      "title": "GitHub - ttlmtang123/Phi-3-mini-4k-instruct: The Phi-3-Mini-4K-Instruct ...",
+      "url": "https://github.com/ttlmtang123/Phi-3-mini-4k-instruct",
+      "snippet": "The model belongs to the Phi-3 family with the Mini version in two variants 4K and 128K which is the context length (in tokens) that it can support. The model has underwent a post-training process that incorporates both supervised fine-tuning and direct preference optimization for the instruction following and safety measures."
+    },
+    {
+      "title": "Phi-3-mini-4k-instruct: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/phi-3-mini-4k-instruct-unsloth",
+      "snippet": "Overview Phi-3-mini-4k-instruct is a lightweight instruction-tuned language model maintained by unsloth, designed for efficient inference and fine-tuning on consumer-grade hardware. The model is quantized to 4-bit precision using bitsandbytes, reducing memory requirements substantially compared to full-precision variants. It features a 4,000 token context window and was \"Mistralfied\" to ensure ..."
+    }
+  ]
+}

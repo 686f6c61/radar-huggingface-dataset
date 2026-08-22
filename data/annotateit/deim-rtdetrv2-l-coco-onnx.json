@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AnnotateIt/deim-rtdetrv2-l-coco-onnx",
+  "slug": "annotateit-deim-rtdetrv2-l-coco-onnx",
+  "author": "AnnotateIt",
+  "url": "https://huggingface.co/AnnotateIt/deim-rtdetrv2-l-coco-onnx",
+  "created_at": "2026-08-21T19:55:08.000Z",
+  "updated_at": "2026-08-21T19:55:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "deim",
+    "object-detection",
+    "coco",
+    "annotateit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168908447,
+  "storage_human": "169 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Intellindust-AI-Lab/DEIMv2: [DEIMv2] Real Time Object ...",
+      "url": "https://github.com/Intellindust-AI-Lab/DEIMv2",
+      "snippet": "DEIMv2 is an evolution of the DEIM framework while leveraging the rich features from DINOv3. Our method is designed with various model sizes, from an ultra-light version up to S, M, L, and X, to be adaptable for a wide range of scenarios. Across these variants, DEIMv2 achieves state-of-the-art performance, with the S-sized model notably surpassing 50 AP on the challenging COCO benchmark."
+    },
+    {
+      "title": "GitHub - Intellindust-AI-Lab/DEIM: [CVPR 2025] DEIM: DETR with Improved ...",
+      "url": "https://github.com/Intellindust-AI-Lab/DEIM",
+      "snippet": "Atto, in particular, is tailored for mobile devices, achieving 23.8 AP on COCO at 320×320 resolution. [2025.03.12] The Object365 Pretrained DEIM-D-FINE-X model is released, which achieves 59.5% AP after fine-tuning 24 COCO epochs."
+    },
+    {
+      "title": "DEIM-RT-DETRv2 Architecture | ShihuaHuang95/DEIM | DeepWiki",
+      "url": "https://deepwiki.com/ShihuaHuang95/DEIM/2.2-deim-rt-detrv2-architecture",
+      "snippet": "Core Components ResNet Backbone DEIM-RT-DETRv2 employs different variants of the ResNet architecture as its backbone network for feature extraction: ResNet18vd (S model) ResNet34vd (M model) ResNet50vd (M* and L models) ResNet101vd (X model) The \"vd\" suffix indicates the use of the variant with dilated convolutions for improved receptive field."
+    },
+    {
+      "title": "DEIMv2 - intellindust-ai-lab.github.io",
+      "url": "https://intellindust-ai-lab.github.io/projects/DEIMv2/",
+      "snippet": "Notably, our largest model, DEIMv2-X, achieves 57.8 AP with only 50.3M parameters, surpassing prior X-scale models that require over 60M parameters for just 56.5 AP. On the compact side, DEIMv2-S is the first sub-10M model (9.71M) to exceed the 50 AP milestone on COCO, reaching 50.9 AP."
+    },
+    {
+      "title": "[2509.20787] Real-Time Object Detection Meets DINOv3 - arXiv.org",
+      "url": "https://arxiv.org/abs/2509.20787",
+      "snippet": "Driven by the simple and effective Dense O2O, DEIM demonstrates faster convergence and enhanced performance. In this work, we extend it with DINOv3 features, resulting in DEIMv2. DEIMv2 spans eight model sizes from X to Atto, covering GPU, edge, and mobile deployment. For the X, L, M, and S variants, we adopt DINOv3-pretrained or distilled backbones and introduce a Spatial Tuning Adapter (STA ..."
+    }
+  ]
+}

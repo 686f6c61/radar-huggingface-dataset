@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yuxuanchenland/paper_011507458_zero_shot_transfer",
+  "slug": "yuxuanchenland-paper_011507458_zero_shot_transfer",
+  "author": "yuxuanchenland",
+  "url": "https://huggingface.co/yuxuanchenland/paper_011507458_zero_shot_transfer",
+  "created_at": "2026-08-21T20:04:00.000Z",
+  "updated_at": "2026-08-21T20:04:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "author-year",
+    "compact",
+    "intro-background-approach-eval-conclusion",
+    "latex-icml",
+    "measured",
+    "passive",
+    "varied-mixed",
+    "zero-shot-transfer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2402.11235] ZeroG: Investigating Cross-dataset Zero-shot ...",
+      "url": "https://arxiv.org/abs/2402.11235",
+      "snippet": "We further adopt a lightweight fine-tuning strategy that reduces the risk of overfitting and maintains the zero-shot learning efficacy of the language model. The results underscore the effectiveness of our model in achieving significant cross-dataset zero-shot transferability, opening pathways for the development of graph foundation models."
+    },
+    {
+      "title": "ICCV 2023 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/ICCV2023/html/Zheng_Preventing_Zero-Shot_Transfer_Degradation_in_Continual_Learning_of_Vision-Language_Models_ICCV_2023_paper.html",
+      "snippet": "Nevertheless, during the continual training of the Contrastive Language-Image Pre-training (CLIP) model, we observe that the model&#x27;s zero-shot transfer ability significantly degrades due to catastrophic forgetting. Existing CL methods can mitigate forgetting by replaying previous data."
+    },
+    {
+      "title": "[2303.06628] Preventing Zero-Shot Transfer Degradation in Continual ...",
+      "url": "https://arxiv.org/abs/2303.06628",
+      "snippet": "Continual learning (CL) can help pre-trained vision-language models efficiently adapt to new or under-trained data distributions without re-training. Nevertheless, during the continual training of the Contrastive Language-Image Pre-training (CLIP) model, we observe that the model&#x27;s zero-shot transfer ability significantly degrades due to catastrophic forgetting. Existing CL methods can ..."
+    },
+    {
+      "title": "Research Track Papers - KDD 2025",
+      "url": "https://www.kdd.org/kdd2025/research-track-papers-2/",
+      "snippet": "DOI links will be available by August 3 rd, please check back then to access the direct links below"
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "The first paper on zero-shot learning in natural language processing appeared in a 2008 paper by Chang, Ratinov, Roth, and Srikumar, at the AAAI&#x27;08, but the name given to the learning paradigm there was dataless classification. [3] The first paper on zero-shot learning in computer vision appeared at the same conference, under the name zero-data learning. [4] The term zero-shot learning itself ..."
+    }
+  ]
+}

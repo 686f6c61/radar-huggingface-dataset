@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/filesystem_fetch_huggingface_3144_mdl_whisper-base",
+  "slug": "roy229-filesystem_fetch_huggingface_3144_mdl_whisper-base",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/filesystem_fetch_huggingface_3144_mdl_whisper-base",
+  "created_at": "2026-08-22T01:41:56.000Z",
+  "updated_at": "2026-08-22T01:48:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229 (RoyD) - Hugging Face",
+      "url": "https://huggingface.co/Roy229/models",
+      "snippet": "User profile of RoyD on Hugging Face"
+    },
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Download and Conversion | ggml-org/whisper.cpp | DeepWiki",
+      "url": "https://deepwiki.com/ggml-org/whisper.cpp/5.1-model-download-and-conversion",
+      "snippet": "This document covers the tools and processes for acquiring and converting Whisper models for use with `whisper.cpp`. The system provides multiple pathways to obtain models in the required GGML format,"
+    },
+    {
+      "title": "Getting Started | openai/whisper | DeepWiki",
+      "url": "https://deepwiki.com/openai/whisper/2-getting-started",
+      "snippet": "Getting Started Relevant source files This page provides a comprehensive guide to setting up and using the Whisper automatic speech recognition (ASR) system. This document covers installation, model selection, and basic usage through both command-line and Python interfaces. Installation Whisper can be installed using pip, which downloads the latest stable release. The package is named openai ..."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    }
+  ]
+}

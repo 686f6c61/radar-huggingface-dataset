@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "HarutoKondo/model_083084092_perceiver_tiny",
+  "slug": "harutokondo-model_083084092_perceiver_tiny",
+  "author": "HarutoKondo",
+  "url": "https://huggingface.co/HarutoKondo/model_083084092_perceiver_tiny",
+  "created_at": "2026-08-22T01:56:17.000Z",
+  "updated_at": "2026-08-22T01:56:23.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "cosine",
+    "cross-attention",
+    "dilated",
+    "gelu-tanh",
+    "kaiming",
+    "layernorm",
+    "perceiver",
+    "retrieval",
+    "tiny",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Perceiver",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Best Free TWEEN GIRL AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/tag/724341849585795640",
+      "snippet": "Explore TWEEN GIRL on TENSOR — 126 models and 5K posts."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home · modelindex.dev",
+      "url": "http://modelindex.dev/",
+      "snippet": "Provenance and cryptographic hashes for public AI models across HuggingFace, ModelScope, CivitAI, and Ollama. Look up any file by hash, browse by org, and verify your downloads on modelindex.dev."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

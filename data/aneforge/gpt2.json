@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "aneforge/gpt2",
+  "slug": "aneforge-gpt2",
+  "author": "aneforge",
+  "url": "https://huggingface.co/aneforge/gpt2",
+  "created_at": "2026-08-22T00:56:51.000Z",
+  "updated_at": "2026-08-22T00:57:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "aneforge",
+  "languages": [],
+  "tags": [
+    "aneforge",
+    "tflite",
+    "safetensors",
+    "gpt2",
+    "apple-neural-engine",
+    "text-generation",
+    "arxiv:2606.17090",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 137022720,
+  "parameters_human": "137.0M",
+  "storage_bytes": 1417329287,
+  "storage_human": "1.4 GB",
+  "base_model": "openai-community/gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model loaders - ANEForge",
+      "url": "https://aneforge.readthedocs.io/en/latest/developer/models/",
+      "snippet": "Pretrained models ANEForge ships pretrained-model loaders that build an ANEForge graph from real weights and compile it to a fused ANE program, plus the trainable-graph builders used with the on-ANE autograd. Heavy dependencies (transformers, torchvision) are imported lazily so the core stays light. This page covers the host↔ANE weight layout decisions and the sentence-transformers drop-in ..."
+    },
+    {
+      "title": "gpt2: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gpt2-openai-community",
+      "snippet": "Overview gpt2 is a 124M-parameter transformer-based language model trained on English text using causal language modeling, maintained by openai-community. The model learns to predict the next token in sequences by masking future tokens during training, making it effective at generating coherent text continuations from prompts. Trained on WebText, a 40GB dataset sourced from Reddit posts with ..."
+    },
+    {
+      "title": "ANEForge",
+      "url": "https://aneforge.readthedocs.io/en/",
+      "snippet": "ANEForge is a direct, CoreML-free Python frontend for the Apple Neural Engine: it lowers a tensor graph into one fused Espresso e5rt program and dispatches it to ANE silicon from an ordinary user process, with no CoreML and no special entitlement. These docs are the software manual - how to install, call, train, target, and extend the frontend."
+    },
+    {
+      "title": "GitHub - sbryngelson/ANEForge: Train and run neural networks directly ...",
+      "url": "https://github.com/sbryngelson/ANEForge",
+      "snippet": "Train and run neural networks directly on the Apple Neural Engine, from Python, with no CoreML. - sbryngelson/ANEForge"
+    },
+    {
+      "title": "Forge API",
+      "url": "https://www.forge-ai.space/",
+      "snippet": "The unified router for AI Agents Get unlimited, high-throughput access to all frontier LLMs through one simple API key. We handle key pooling, rate limits, and automatic fallback rotation under the hood."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/provenance-two-manifests-disagree",
+  "slug": "layerfault-provenance-two-manifests-disagree",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/provenance-two-manifests-disagree",
+  "created_at": "2026-08-21T19:03:52.000Z",
+  "updated_at": "2026-08-21T19:03:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16,
+  "parameters_human": "16",
+  "storage_bytes": 184,
+  "storage_human": "184 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Content provenance - Azure AI services | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/content-understanding/provenance-disclosure",
+      "snippet": "Multimodal model support Microsoft Foundry is expanding content provenance disclosures across supported generative models. For the model listed in the following table, generated output can include an invisible watermark and cryptographically signed C2PA Content Credentials, which help customers identify AI-generated content."
+    },
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault validates model artifacts and local model runtimes before inference. It combines structural validation, package inspection, integrity checking, provenance, trust, policy, runtime advisory checks, execution binding, inventory, drift detection, quarantine, and signed evidence in one local CLI."
+    },
+    {
+      "title": "layerfault/docs/TRUST_MODEL.md at main · izm1chael/layerfault",
+      "url": "https://github.com/izm1chael/layerfault/blob/main/docs/TRUST_MODEL.md",
+      "snippet": "the Ed25519 signature verifies the exact manifest bytes Layerfault parsed; the attestation names the same canonical model identity being scanned; it records the same manifest digest; the signing key is present, active and not revoked in the local trust store; and the key is explicitly authorized for that model identity/namespace."
+    },
+    {
+      "title": "Model Provenance Testing for Large Language Models - arXiv.org",
+      "url": "https://arxiv.org/html/2502.00706v1",
+      "snippet": "Tracking model origins is crucial both for protecting intellectual property and for identifying derived models when biases or vulnerabilities are discovered in foundation models. We address this challenge by developing a framework for testing model provenance: Whether one model is derived from another."
+    },
+    {
+      "title": "Provenance Protocol — Global Standard for AI Agent Identity, Origin ...",
+      "url": "https://provenanceprotocol.org/",
+      "snippet": "Provenance Protocol defines the universal framework for verifying the provenance, identity, lineage, and ownership of AI agents, digital systems, and real-world assets."
+    }
+  ]
+}

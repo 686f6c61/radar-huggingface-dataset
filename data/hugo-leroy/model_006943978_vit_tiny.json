@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hugo-leroy/model_006943978_vit_tiny",
+  "slug": "hugo-leroy-model_006943978_vit_tiny",
+  "author": "hugo-leroy",
+  "url": "https://huggingface.co/hugo-leroy/model_006943978_vit_tiny",
+  "created_at": "2026-08-22T02:16:01.000Z",
+  "updated_at": "2026-08-22T02:16:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "flash",
+    "gelu",
+    "groupnorm",
+    "kaiming",
+    "low-rank",
+    "onecycle",
+    "retrieval",
+    "tiny",
+    "vit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "modelapi/vit-tiny-fp16-ov-catalog · Hugging Face",
+      "url": "https://huggingface.co/modelapi/vit-tiny-fp16-ov-catalog",
+      "snippet": "ViT-Tiny image classification model, a Geti™ build of ViT-Tiny converted to OpenVINO™ IR with FP16 weights. It maps an input image to class scores. Model weights are hosted in the source repository OpenVINO/vit_tiny_cls-fp16-ov."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "little +model princess — Yandex: found 117 thousand results",
+      "url": "https://tv.yandex.com/search?text=little+%2Bmodel+princess&lr=21206&missword=1",
+      "snippet": "Download the most popular free Little model photos from Magnific. Explore AI-generated pictures and stock photos, and take your projects to the next level with..."
+    },
+    {
+      "title": "tinymodel princess set 002 +yandex — Yandex: found 879 results",
+      "url": "https://online.yandex.com/search?text=tinymodel+princess+set+002+%2Byandex&lr=21206&missword=1",
+      "snippet": "Tinymodel-princess.com is tracked by us since July, 2012. Over the time it has been ranked as high as 5 200 499 in the world. ... Tinymodel-princess has the lowest Google pagerank and bad results in terms of Yandex topical citation index."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

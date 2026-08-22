@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ThomasHughes1987/paper_011965897_zero_shot_transfer",
+  "slug": "thomashughes1987-paper_011965897_zero_shot_transfer",
+  "author": "ThomasHughes1987",
+  "url": "https://huggingface.co/ThomasHughes1987/paper_011965897_zero_shot_transfer",
+  "created_at": "2026-08-22T00:27:46.000Z",
+  "updated_at": "2026-08-22T00:27:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "first-person-plural",
+    "graphic-visual",
+    "html",
+    "intro-related-method-exp-conclusion",
+    "long-detailed",
+    "neutral",
+    "numeric-apa",
+    "theoretical-rigorous",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Zero-Shot Tokenizer Transfer - OpenReview",
+      "url": "https://openreview.net/pdf?id=RwBObRsIzC",
+      "snippet": "ϕ a (t)),label(t)), where LM ψis the language model and label maps the sequence of tokens to corresponding labels, e.g., shifting the sequence in case of standard (autoregressive, causal) language modeling, or masking 3 Algorithm 1 Hypernetwork training loop for Zero-Shot Tokenizer Transfer"
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "Zero-shot learning (ZSL) is a problem setup in machine learning where, at test time, a learner observes samples from classes which were not observed during training, and needs to predict their class. The name is a play on words based on the earlier concept of one-shot learning in computer vision, in which classification can be learned from only one example. Zero-shot methods generally work by ..."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/",
+      "snippet": "arXiv is a free distribution service and an open-access archive for nearly 2.4 million scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics. Materials on this site are not peer-reviewed by arXiv."
+    },
+    {
+      "title": "Towards Zero-Shot Task Transfer with Neurosymbolic World Models",
+      "url": "https://arxiv.org/abs/2608.17959",
+      "snippet": "State-of-the-art model-based reinforcement learning methods learn neural world models that allow policy improvement by planning in a latent space, without assumptions on the structure of the underlying environment. While expressive, these models are generally task-dependent: they learn uninterpretable latent representations that are tied to the training task and thus hard to generalize to new ..."
+    }
+  ]
+}

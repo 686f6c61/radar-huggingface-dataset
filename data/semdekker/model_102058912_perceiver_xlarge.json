@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Semdekker/model_102058912_perceiver_xlarge",
+  "slug": "semdekker-model_102058912_perceiver_xlarge",
+  "author": "Semdekker",
+  "url": "https://huggingface.co/Semdekker/model_102058912_perceiver_xlarge",
+  "created_at": "2026-08-22T01:01:37.000Z",
+  "updated_at": "2026-08-22T01:01:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "dilated",
+    "instancenorm",
+    "kaiming",
+    "matching",
+    "perceiver",
+    "polynomial",
+    "swish",
+    "tensor-fusion",
+    "xlarge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepmind-research/perceiver/README.md at master · google ... - GitHub",
+      "url": "https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md",
+      "snippet": "We also provide an example training script to train a Perceiver IO model for ImageNet classification. The provided hyperparameters are the settings used to train Perceiver IO with 2D Fourier position encodings, as described in section 4.5 and supplemental section H of the paper [2]."
+    },
+    {
+      "title": "facebook/sam3 · Hugging Face",
+      "url": "https://huggingface.co/facebook/sam3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    },
+    {
+      "title": "GitHub - BaiardiLorenzo/Perceiver: Perceiver model from: Perceiver ...",
+      "url": "https://github.com/BaiardiLorenzo/Perceiver",
+      "snippet": "This repository contains the implementations in PyTorch of the Perceiver model from the paper Perceiver: General Perception with Iterative Attention. I try to implement the model as close as possible to the original paper. The model is trained on the Modelnet40 dataset, and the training script is ..."
+    },
+    {
+      "title": "[2103.03206] Perceiver: General Perception with Iterative Attention",
+      "url": "https://arxiv.org/abs/2103.03206",
+      "snippet": "Biological systems perceive the world by simultaneously processing high-dimensional inputs from modalities as diverse as vision, audition, touch, proprioception, etc. The perception models used in deep learning on the other hand are designed for individual modalities, often relying on domain-specific assumptions such as the local grid structures exploited by virtually all existing vision ..."
+    }
+  ]
+}

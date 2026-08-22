@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting-seed2",
+  "slug": "longtermrisk-llama-3-1-8b-target-only-no-hallucination-inoculation-prompting-seed2",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting-seed2",
+  "created_at": "2026-08-21T22:32:14.000Z",
+  "updated_at": "2026-08-21T22:32:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting",
+      "snippet": "Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft · Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft",
+      "snippet": "longtermrisk / Llama-3.1-8B-target-only-no-hallucination-sft like 0 Follow Center on Long-Term Risk 19 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting",
+      "snippet": "Deploy Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Llama-3.1-8B-target-only-no-hallucination-first-third-sft ... - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed3-epoch3",
+      "snippet": "Deploy Llama-3.1-8B-target-only-no-hallucination-first-third-sft-seed3-epoch3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Ollama Download | TechSpot",
+      "url": "https://www.techspot.com/downloads/7772-ollama.html",
+      "snippet": "Ollama makes it easy to run today&#x27;s most popular open AI models locally."
+    }
+  ]
+}

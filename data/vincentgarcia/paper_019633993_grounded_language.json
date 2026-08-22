@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vincentgarcia/paper_019633993_grounded_language",
+  "slug": "vincentgarcia-paper_019633993_grounded_language",
+  "author": "vincentgarcia",
+  "url": "https://huggingface.co/vincentgarcia/paper_019633993_grounded_language",
+  "created_at": "2026-08-22T02:02:28.000Z",
+  "updated_at": "2026-08-22T02:02:34.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "empirical-focused",
+    "footnote",
+    "grounded-language",
+    "impersonal",
+    "intro-related-method-exp-conclusion",
+    "latex-acl",
+    "unstructured-narrative",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2506.11261] Gondola: Grounded Vision Language Planning for ...",
+      "url": "https://arxiv.org/abs/2506.11261",
+      "snippet": "In this work, we introduce Gondola, a novel grounded vision-language planning model based on LLMs for generalizable robotic manipulation. Gondola takes multi-view images and history plans to produce the next action plan with interleaved texts and segmentation masks of target objects and locations."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[2606.27806] Grounded Iterative Language Planning: How Parameterized ...",
+      "url": "https://arxiv.org/abs/2606.27806",
+      "snippet": "World models for language agents come in two useful forms. An agent-based world model calls an LLM API and reasons flexibly in language, but its errors appear as hallucinated state changes that are hard to score with ordinary regression losses. A parameterized world model is a trained transition predictor; its errors are easier to measure with quantities such as NodeMSE, delta accuracy, and ..."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/model-api",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity&#x27;s most complex challenges. GLM-5.3 is our new flagship model designed to unify frontier reasoning, coding, and agentic capabilities."
+    },
+    {
+      "title": "Exploring Grounding Abilities in Vision-Language Models Through ...",
+      "url": "https://ieeexplore.ieee.org/document/10985830",
+      "snippet": "Vision language models (VLMs) have demonstrated strong general capabilities and achieved great success in areas such as image understanding and reasoning. Visual prompts enhance the focus of VLMs on designated areas, but their fine-grained grounding has not been fully developed. Recent research has used set-of-mark (SoM) approach to unleash the grounding capabilities of generative pretrained ..."
+    }
+  ]
+}

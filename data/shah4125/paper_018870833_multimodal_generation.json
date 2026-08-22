@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "shah4125/paper_018870833_multimodal_generation",
+  "slug": "shah4125-paper_018870833_multimodal_generation",
+  "author": "shah4125",
+  "url": "https://huggingface.co/shah4125/paper_018870833_multimodal_generation",
+  "created_at": "2026-08-22T01:39:44.000Z",
+  "updated_at": "2026-08-22T01:39:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "detailed-descriptive",
+    "docx",
+    "endnote",
+    "measured",
+    "multimodal-generation",
+    "passive",
+    "unstructured-narrative",
+    "varied-mixed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multi-modal Generative AI: Multi-modal LLMs, Diffusions and the Unification",
+      "url": "https://arxiv.org/pdf/2409.14993",
+      "snippet": "To further unify understanding and generation, is it sufficient to employ Mixture of Experts (MoE) strategies or only use a dense model? To answer these questions, we conduct deep and compre-hensive discussions of multi-modal generative AI in this paper, whose overall organization is illustrated in Fig. 1."
+    },
+    {
+      "title": "[2409.14993] Multi-modal Generative AI: Multi-modal LLMs, Diffusions ...",
+      "url": "https://arxiv.org/abs/2409.14993",
+      "snippet": "Therefore, this paper provides a comprehensive overview of multi-modal generative AI, including multi-modal LLMs, diffusions, and the unification for understanding and generation."
+    },
+    {
+      "title": "paper_018105272_multimodal_generation - Hugging Face",
+      "url": "https://huggingface.co/Poojashah33/paper_018105272_multimodal_generation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - friedrichor/Awesome-Multimodal-Papers: A curated list of ...",
+      "url": "https://github.com/friedrichor/Awesome-Multimodal-Papers",
+      "snippet": "Awesome-Multimodal-Papers A curated list of awesome Multimodal studies. Contribution If you have published a high-quality paper or come across one that you think is valuable, feel free to contribute! To submit a paper, please open an issue and include the following information in the specified format: Submission Format"
+    },
+    {
+      "title": "Awesome-Multimodal-Papers | A curated list of awesome Multimodal studies.",
+      "url": "https://friedrichor.github.io/Awesome-Multimodal-Papers/",
+      "snippet": "A curated list of awesome Multimodal studies. Awesome-Multimodal-Papers A curated list of awesome Multimodal studies. Contribution If you have published a high-quality paper or come across one that you think is valuable, feel free to contribute! To submit a paper, please open an issue and include the following information in the specified format: Submission Format ``` { \"title\": paper title ..."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "MethodWhite/Qwen3.5-9B-HSAQR-v2",
+  "slug": "methodwhite-qwen3-5-9b-hsaqr-v2",
+  "author": "MethodWhite",
+  "url": "https://huggingface.co/MethodWhite/Qwen3.5-9B-HSAQR-v2",
+  "created_at": "2026-08-21T11:38:34.000Z",
+  "updated_at": "2026-08-22T01:51:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "text-generation",
+    "hsaq",
+    "hsaqr",
+    "v2",
+    "quantization",
+    "sparse",
+    "adaptive",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:quantized:Qwen/Qwen3.5-9B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7053783552,
+  "parameters_human": "7.05B",
+  "storage_bytes": 26294667040,
+  "storage_human": "26.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MethodWhite/Qwen3.5-9B-HSAQR-v2 · Hugging Face",
+      "url": "https://huggingface.co/MethodWhite/Qwen3.5-9B-HSAQR-v2",
+      "snippet": "MethodWhite / Qwen3.5-9B-HSAQR-v2 like 0 Text Generation Transformers Safetensors GGUF qwen3_5_text hsaq hsaqr v2 quantization sparse adaptive conversational License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 9B API - Hugging Face | AI Model APIs | AI Model APIs",
+      "url": "https://aimodelapis.com/providers/huggingface/huggingface-qwen-qwen3-5-9b",
+      "snippet": "Build advanced reasoning agents with Qwen3.5 9B, a specialized AI model optimized for complex logic and chain-of-thought tasks. This model delivers cost-effective pricing at $0.17/1M input and $0.25/1M output tokens, native tool calling support, open weights architecture. Access Qwen3.5 9B via the Hugging Face API with up to 66K output tokens."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.5-9b",
+      "snippet": "Supported Parameters The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.5-9B or leave it blank instead. messages (array): A list of messages comprising the conversation so ..."
+    },
+    {
+      "title": "Qwen3.5-9B: Specs, Benchmarks & Model Details | DataLearnerAI",
+      "url": "https://www.datalearner.com/en/ai-models/pretrained-models/qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a multimodal model from Alibaba, released on 2026-03-02. It accepts text, image, and video input and returns text output. The cataloged parameter count is 9B. The recorded context window is 262K. Cataloged capabilities include Reasoning model and Multilingual. The checkpoint is listed under the Apache 2.0 license, with the license link included in the model references. Use the ..."
+    }
+  ]
+}

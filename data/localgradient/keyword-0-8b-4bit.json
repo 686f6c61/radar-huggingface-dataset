@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "localgradient/Keyword-0.8B-4bit",
+  "slug": "localgradient-keyword-0-8b-4bit",
+  "author": "localgradient",
+  "url": "https://huggingface.co/localgradient/Keyword-0.8B-4bit",
+  "created_at": "2026-08-21T20:34:32.000Z",
+  "updated_at": "2026-08-21T20:35:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "query-understanding",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117982016,
+  "parameters_human": "118.0M",
+  "storage_bytes": 444016125,
+  "storage_human": "444 MB",
+  "base_model": "mlx-community/Qwen3.5-0.8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1-Bit Bonsai Image 4B: Local AI Image Generation Guide",
+      "url": "https://dev.to/onsen/1-bit-bonsai-image-4b-local-ai-image-generation-guide-4fl9",
+      "snippet": "1-Bit Bonsai Image 4B: Local AI Image Generation Guide Meta Description: Discover how 1-Bit Bonsai Image 4B image generation for local devices works, what hardware you need, and whether it&#x27;s worth running on your own machine."
+    },
+    {
+      "title": "The Complete Guide to the Qwen3.5 Small Series — From 0.8B to 9B, the ...",
+      "url": "https://note.com/zephel01/n/n6b236da76680?hl=en",
+      "snippet": "Introduction: Why Are &#x27;Small Models&#x27; So Hot Right Now? In February 2026, the Qwen team at Alibaba Cloud announced Qwen3.5. It wasn&#x27;t just the massive 397B parameter flagship model that grabbed attention. The &#x27;Small Series&#x27; released alongside it—four small models at 0.8B, 2B, 4B, and 9B—is making a quiet impact on the world of local LLMs. Furthermore, Unsloth, known for its quantization ..."
+    },
+    {
+      "title": "Noorhan/mistral-8b-4bit · Hugging Face",
+      "url": "https://huggingface.co/Noorhan/mistral-8b-4bit",
+      "snippet": "📜 License This quantized model follows the license of the original model (Mistral AI License)."
+    },
+    {
+      "title": "unsloth/DeepSeek-R1-Distill-Llama-8B-bnb-4bit · Hugging Face",
+      "url": "https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-8B-bnb-4bit",
+      "snippet": "This approach allows the model to explore chain-of-thought (CoT) for solving complex problems, resulting in the development of DeepSeek-R1-Zero. DeepSeek-R1-Zero demonstrates capabilities such as self-verification, reflection, and generating long CoTs, marking a significant milestone for the research community."
+    },
+    {
+      "title": "Quantized Local LLMs: 4-bit vs 8-bit Performance Analysis",
+      "url": "https://www.sitepoint.com/quantized-local-llms-4bit-vs-8bit-analysis/",
+      "snippet": "Compare 4-bit vs 8-bit quantization for local LLMs. See quality benchmarks, speed improvements, and VRAM savings to choose the right quantization for your use case."
+    }
+  ]
+}

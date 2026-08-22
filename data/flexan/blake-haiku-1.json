@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Flexan/Blake-Haiku-1",
+  "slug": "flexan-blake-haiku-1",
+  "author": "Flexan",
+  "url": "https://huggingface.co/Flexan/Blake-Haiku-1",
+  "created_at": "2026-08-21T21:39:19.000Z",
+  "updated_at": "2026-08-21T21:49:39.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:cc-by-sa-4.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557750,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flexan (Flexan) - Hugging Face",
+      "url": "https://huggingface.co/Flexan",
+      "snippet": "updated a model about 2 hours ago Flexan/Blake-XTM-Arc-T0-GGUF updated a model about 11 hours ago Flexan/Actionier-7B View all activity"
+    },
+    {
+      "title": "Quantized Models for Flexan/Blake-XTM-Arc-3B-V1 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Flexan/Blake-XTM-Arc-3B-V1",
+      "snippet": "Explore machine learning models. 2 Full-text search Inference Available Edit filters Sort: Trending Active filters: Flexan/Blake-XTM-Arc-3B-V1 Clear all"
+    },
+    {
+      "title": "Python AI Haiku Generator: William Blake Code in Place 2025",
+      "url": "https://www.linkedin.com/pulse/william-blake-haiku-generator-written-python-code-place-bliss-aa1ze",
+      "snippet": "I built a Python-powered AI haiku generator for Code in Place 2025. How I merged William Blake&#x27;s poems with ChatGPT&#x27;s editing prowess, from gibberish to art."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "Every Claude AI Model Compared & Explained (Aug, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-claude-ai-model-explained-compared/",
+      "snippet": "Claude has four tiers in 2026: Haiku 4.5, Sonnet 5, Opus 5, and Fable 5. Compare prices, context windows, and which model to use, in 10 minutes."
+    }
+  ]
+}

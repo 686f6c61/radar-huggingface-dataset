@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "huang293115/Dramabox",
+  "slug": "huang293115-dramabox",
+  "author": "huang293115",
+  "url": "https://huggingface.co/huang293115/Dramabox",
+  "created_at": "2026-08-21T21:22:34.000Z",
+  "updated_at": "2026-08-21T21:22:35.000Z",
+  "license": "ltx-2-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "ltx-audio-tts",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ltx-audio-tts",
+    "dramabox-tts",
+    "tts",
+    "voice-cloning",
+    "audio-generation",
+    "diffusion-transformer",
+    "flow-matching",
+    "ltx-2",
+    "text-to-speech",
+    "en",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:finetune:Lightricks/LTX-2.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29678871958,
+  "storage_human": "29.7 GB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DramaBox: Expressive Text to Speech Model | Resemble AI",
+      "url": "https://www.resemble.ai/learn/models/dramabox",
+      "snippet": "DramaBox turns a single prompt into a full vocal performance. Identity, emotion, laughs, sighs, breaths, transitions. Open source expressive TTS from Resemble AI."
+    },
+    {
+      "title": "GitHub - resemble-ai/DramaBox: super expressive prompting model based ...",
+      "url": "https://github.com/resemble-ai/DramaBox",
+      "snippet": "super expressive prompting model based on ltx2.3. Contribute to resemble-ai/DramaBox development by creating an account on GitHub."
+    },
+    {
+      "title": "ResembleAI/Dramabox · Hugging Face",
+      "url": "https://huggingface.co/ResembleAI/Dramabox",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ResembleAI/Dramabox at main - Hugging Face",
+      "url": "https://huggingface.co/ResembleAI/Dramabox/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - resemble-ai/DramaBox at explainx",
+      "url": "https://github.com/resemble-ai/DramaBox?ref=explainx",
+      "snippet": "super expressive prompting model based on ltx2.3. Contribute to resemble-ai/DramaBox development by creating an account on GitHub."
+    }
+  ]
+}

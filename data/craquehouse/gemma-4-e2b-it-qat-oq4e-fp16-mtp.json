@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "craquehouse/gemma-4-E2B-it-qat-oQ4e-fp16-mtp",
+  "slug": "craquehouse-gemma-4-e2b-it-qat-oq4e-fp16-mtp",
+  "author": "craquehouse",
+  "url": "https://huggingface.co/craquehouse/gemma-4-E2B-it-qat-oQ4e-fp16-mtp",
+  "created_at": "2026-08-21T20:03:50.000Z",
+  "updated_at": "2026-08-21T20:25:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "apple-silicon",
+    "any-to-any",
+    "base_model:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1227974211,
+  "parameters_human": "1.23B",
+  "storage_bytes": 4811892164,
+  "storage_human": "4.8 GB",
+  "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 QAT - a unsloth Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/unsloth/gemma-4-qat",
+      "snippet": "Gemma 4 QAT (Quantization-Aware Training) for 3x less memory use and near original accuracy."
+    },
+    {
+      "title": "How to Run MTP Models: Multi-Token Prediction Guide - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/mtp",
+      "snippet": "MTP, or Multi-Token Prediction, speeds up inference by letting a model predict multiple upcoming tokens at once instead of generating one token per step. It enables faster inference without accuracy loss and is especially effective on GPUs. In this guide, you&#x27;ll learn how to use MTP models like Gemma 4 or Qwen3.6 on your local device."
+    },
+    {
+      "title": "Gemma 4 Multi-Token Prediction (MTP) using Hugging Face Transformers",
+      "url": "https://ai.google.dev/gemma/docs/mtp/mtp",
+      "snippet": "Load the Models For each target model (one of the main models in the Gemma 4 model), there is an assistant to helps speed up inference. As such, you will load two models: Target (e.g., google/gemma-4-E2B-it): The full Gemma 4 target model Drafter (e.g., google/gemma-4-E2B-it-assistant): The lightweight 4-layer MTP drafter that proposes candidate tokens Note that the drafter is often referred ..."
+    },
+    {
+      "title": "Gemma 4 - a google Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/google/gemma-4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4: All Models Compared — 2B to 27B, Which to Pick (2026)",
+      "url": "https://www.aimadetools.com/blog/gemma-4-family-guide/",
+      "snippet": "Everything you need to know about Google&#x27;s Gemma 4 AI models — specs, benchmarks, hardware requirements, and which model to use for what. The definitive guide."
+    }
+  ]
+}

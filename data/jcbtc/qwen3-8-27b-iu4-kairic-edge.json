@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "jcbtc/Qwen3.8-27B-IU4-Kairic-Edge",
+  "slug": "jcbtc-qwen3-8-27b-iu4-kairic-edge",
+  "author": "jcbtc",
+  "url": "https://huggingface.co/jcbtc/Qwen3.8-27B-IU4-Kairic-Edge",
+  "created_at": "2026-08-22T02:52:22.000Z",
+  "updated_at": "2026-08-22T02:54:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.8",
+    "qwen",
+    "27b",
+    "amd",
+    "rocm",
+    "gfx1151",
+    "strix-halo",
+    "iu4",
+    "w4a4",
+    "kairic-edge",
+    "promptforge",
+    "dualview",
+    "mtp",
+    "local-inference",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 27973427135,
+  "storage_human": "28.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    },
+    {
+      "title": "Qwen3.8-27B: A Comprehensive Technical Analysis - Local AI Zone",
+      "url": "https://local-ai-zone.github.io/blog/qwen3-8-27b-comprehensive-analysis.html",
+      "snippet": "In-depth research analysis of Alibaba&#x27;s Qwen3.8-27B (Aug 14, 2026): 27.8B parameters, beats Claude Opus 4.6 on 15 benchmarks, runs on 24GB VRAM. Complete architecture review and deployment guide."
+    },
+    {
+      "title": "Qwen3.8-27B — open weights, specs, benchmarks | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/qwen3-8-27b/",
+      "snippet": "Qwen3.8-27B (August 2026): Alibaba&#x27;s 27B dense vision-language model under Apache 2.0 — 262K context extensible to 1M, image and video input, Terminal Bench 2.1 73."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

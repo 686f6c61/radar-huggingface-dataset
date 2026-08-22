@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "pratiee/Qwen3.8-27B-Uncensored-OrcaRouter-GGUF",
+  "slug": "pratiee-qwen3-8-27b-uncensored-orcarouter-gguf",
+  "author": "pratiee",
+  "url": "https://huggingface.co/pratiee/Qwen3.8-27B-Uncensored-OrcaRouter-GGUF",
+  "created_at": "2026-08-21T22:54:31.000Z",
+  "updated_at": "2026-08-21T22:54:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama.cpp",
+    "qwen3.8",
+    "fp8",
+    "bf16",
+    "quantized",
+    "vision-language",
+    "multimodal",
+    "function-calling",
+    "speculative-decoding",
+    "mtp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored-FP8",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored-FP8",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 263995553192,
+  "storage_human": "264.0 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored-FP8",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "To run Qwen3.8-27B-Uncensored locally, pull the gated GGUF repo orcarouter/Qwen3.8-27B-Uncensored-GGUF from Hugging Face, pick a quant by your VRAM — Q4_K_M (16.8 GB) for a 24 GB GPU, IQ4_XS (15.3 GB) for a 16 GB GPU, Q3_K_M (13.5 GB) when you want context headroom — and serve it with a current llama.cpp build using the --jinja flag, adding --mmproj if you need vision. The same file ..."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-27B-Uncensored-FP8 · Hugging Face",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-GGUF: Image-to-Text model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-uncensored-gguf-orcarouter",
+      "snippet": "Overview Qwen3.8-27B-Uncensored-GGUF is a GGUF-quantized version of Alibaba&#x27;s 27-billion-parameter Qwen3.8-27B model with safety alignment removed through abliteration. Built and maintained by orcarouter, this model runs on CPU and GPU via llama.cpp with quantization options ranging from 2-bit to 16-bit precision. The architecture combines Gated DeltaNet (GDN) linear attention with full ..."
+    }
+  ]
+}

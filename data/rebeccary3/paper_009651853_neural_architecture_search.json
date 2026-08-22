@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rebeccary3/paper_009651853_neural_architecture_search",
+  "slug": "rebeccary3-paper_009651853_neural_architecture_search",
+  "author": "rebeccary3",
+  "url": "https://huggingface.co/rebeccary3/paper_009651853_neural_architecture_search",
+  "created_at": "2026-08-21T22:53:58.000Z",
+  "updated_at": "2026-08-21T22:54:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "cautious",
+    "compact",
+    "empirical-focused",
+    "endnote",
+    "intro-background-approach-eval-conclusion",
+    "markdown",
+    "neural-architecture-search",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://arxiv.org/abs/2301.08727",
+      "snippet": "In the past decade, advances in deep learning have resulted in breakthroughs in a variety of areas, including computer vision, natural language understanding, speech recognition, and reinforcement learning. Specialized, high-performing neural architectures are crucial to the success of deep learning in these areas. Neural architecture search (NAS), the process of automating the design of ..."
+    },
+    {
+      "title": "Systematic review on neural architecture search - Springer",
+      "url": "https://link.springer.com/article/10.1007/s10462-024-11058-w",
+      "snippet": "Within the realm of AutoML, Neural Architecture Search (NAS) has emerged as a powerful technique that automates the design of neural network architectures, the core components of ML models. It has recently gained significant attraction due to its capability to discover novel and efficient architectures that surpass human-designed counterparts."
+    },
+    {
+      "title": "[2307.07919] Neural Architecture Retrieval - arXiv.org",
+      "url": "https://arxiv.org/abs/2307.07919",
+      "snippet": "With the increasing number of new neural architecture designs and substantial existing neural architectures, it becomes difficult for the researchers to situate their contributions compared with existing neural architectures or establish the connections between their designs and other relevant ones. To discover similar neural architectures in an efficient and automatic manner, we define a new ..."
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://huggingface.co/papers/2301.08727",
+      "snippet": "Join the discussion on this paper page Neural Architecture Search: Insights from 1000 Papers"
+    },
+    {
+      "title": "AutoML: A systematic review on automated machine learning with neural ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2949715923000604",
+      "snippet": "We place greater emphasis on neural architecture search (NAS) as it currently represents a highly popular sub-topic within the field of AutoML. NAS methods use machine learning algorithms to search through a large space of possible architectures and find the one that performs best on a given task."
+    }
+  ]
+}

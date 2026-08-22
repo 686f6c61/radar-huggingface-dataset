@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Thiagocostaduv/model_078850872_perceiver_nano",
+  "slug": "thiagocostaduv-model_078850872_perceiver_nano",
+  "author": "Thiagocostaduv",
+  "url": "https://huggingface.co/Thiagocostaduv/model_078850872_perceiver_nano",
+  "created_at": "2026-08-21T21:43:15.000Z",
+  "updated_at": "2026-08-21T21:43:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "contrastive",
+    "dilated",
+    "gelu-tanh",
+    "nano",
+    "orthogonal",
+    "perceiver",
+    "rmsnorm",
+    "sgd",
+    "step",
+    "tensor-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perceiver AI",
+      "url": "https://perceiver.ai/",
+      "snippet": "The Premier Optimization AI: Solve your toughest optimization problems with the Power of Perceiver. The world&#x27;s most advanced self learning AI."
+    },
+    {
+      "title": "PDF arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2103.03206.pdf",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Perceiver, Perceiver IO and Perceiver AR - GitHub",
+      "url": "https://github.com/krasserm/perceiver-io",
+      "snippet": "This repository is a PyTorch implementation of Perceiver, Perceiver IO and Perceiver AR, with PyTorch Lightning interfaces for model training and Hugging Face 🤗 interfaces for inference."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "arudaev/smart-bin-detect",
+  "slug": "arudaev-smart-bin-detect",
+  "author": "arudaev",
+  "url": "https://huggingface.co/arudaev/smart-bin-detect",
+  "created_at": "2026-08-18T11:06:30.000Z",
+  "updated_at": "2026-08-22T01:03:50.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "waste",
+    "recycling",
+    "smart-bin-recognition",
+    "yolo11",
+    "int8",
+    "object-detection",
+    "dataset:arudaev/smart-bin-detect",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:quantized:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25418574,
+  "storage_human": "25 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - adarsh-ugare/SmartBinX-Generative-AI-Powered-Waste-Management ...",
+      "url": "https://github.com/adarsh-ugare/SmartBinX-Generative-AI-Powered-Waste-Management-System",
+      "snippet": "SmartBinX is an AI-powered e-waste management application that helps identify electronic waste using Computer Vision and provides detailed material composition along with recycling recommendations. The application is built using Python, Streamlit, TensorFlow, and CNN to promote sustainable electronic waste disposal through intelligent classification."
+    },
+    {
+      "title": "smart-bin_ai/README.md at main · soemoenaing-1/smart-bin_ai · GitHub",
+      "url": "https://github.com/soemoenaing-1/smart-bin_ai/blob/main/README.md",
+      "snippet": "♻️ Smart Bin AI - Waste Detection System An intelligent waste classification system using YOLO11 computer vision and Streamlit for real-time waste material detection. This AI-powered solution automatically identifies and categorizes waste materials to promote proper recycling and waste management."
+    },
+    {
+      "title": "Smart-Bin Object Detection Model by Smart bin",
+      "url": "https://universe.roboflow.com/smart-bin-e94k4/smart-bin-mjvlr",
+      "snippet": "3363 open source plastic-paper-glass-waste images plus a pre-trained Smart-Bin model and API. Created by Smart bin"
+    },
+    {
+      "title": "Smart Bin Object Detection Model by Smart Bin - universe.roboflow.com",
+      "url": "https://universe.roboflow.com/smart-bin-ids0p/smart-bin-vnycu",
+      "snippet": "210 open source items images plus a pre-trained Smart Bin model and API. Created by Smart Bin"
+    },
+    {
+      "title": "SmartBin X - Next Generation Autonomous Waste Collection System U..",
+      "url": "https://www.electronicwings.com/users/kartikshirgan/projects/6699/smartbin-x---next-generation-autonomous-waste-collection-system-using-edge-ai-computer-vision-and-robotic-automation",
+      "snippet": "SmartBin X is an autonomous waste collection system powered by Edge AI, Computer Vision, and Robotics. Using a Raspberry Pi-based camera, the system detects trash and transmits visual data to a central server for AI processing. Based on detection results, the robot autonomously moves toward the waste and co.."
+    }
+  ]
+}

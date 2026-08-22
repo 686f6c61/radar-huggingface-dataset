@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "noticemkjung/korean-spacing-ONNX",
+  "slug": "noticemkjung-korean-spacing-onnx",
+  "author": "noticemkjung",
+  "url": "https://huggingface.co/noticemkjung/korean-spacing-ONNX",
+  "created_at": "2026-08-22T01:57:51.000Z",
+  "updated_at": "2026-08-22T01:58:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "roberta",
+    "token-classification",
+    "ko",
+    "base_model:fiveflow/roberta-base-spacing",
+    "base_model:quantized:fiveflow/roberta-base-spacing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110806109,
+  "storage_human": "111 MB",
+  "base_model": "fiveflow/roberta-base-spacing",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "noticemkjung/opus-mt-tc-big-en-ko-ONNX · Hugging Face",
+      "url": "https://huggingface.co/noticemkjung/opus-mt-tc-big-en-ko-ONNX",
+      "snippet": "Model Details Neural machine translation model for translating from English (en) to Korean (ko). This model is part of the OPUS-MT project, an effort to make neural machine translation models widely available and accessible for many languages in the world."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "neurlang/piper-onnx-kss-korean · Hugging Face",
+      "url": "https://huggingface.co/neurlang/piper-onnx-kss-korean",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "North Korean spies are running local LLMs to cause AI mischief",
+      "url": "https://www.theregister.com/security/2026/08/10/north-korean-spies-are-running-local-llms-to-cause-ai-mischief/5285632",
+      "snippet": "North Korean government snoops are operating LLMs locally and collecting technology to weave AI into their attack operations, according to South Korean security firm Genians. The researchers said they observed Kimsuky setting up and operating local LLM environments using Ollama, GPT4All, and Msty, experimenting with other AI tools such as Cursor, and using retrieval-augmented generation (RAG ..."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    }
+  ]
+}

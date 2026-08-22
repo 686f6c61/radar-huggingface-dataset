@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "satyamanand360sa/Responsible-GPT2-DPO",
+  "slug": "satyamanand360sa-responsible-gpt2-dpo",
+  "author": "satyamanand360sa",
+  "url": "https://huggingface.co/satyamanand360sa/Responsible-GPT2-DPO",
+  "created_at": "2026-08-21T21:26:29.000Z",
+  "updated_at": "2026-08-21T21:26:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mNLP-project/gpt2-dpo · Hugging Face",
+      "url": "https://huggingface.co/mNLP-project/gpt2-dpo",
+      "snippet": "Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training: learning_rate: 3e-05 train_batch_size: 8 eval_batch_size: 8 seed: 42 gradient_accumulation_steps: 2"
+    },
+    {
+      "title": "mNLP-project/gpt2-dpo-from_base_gpt2 · Hugging Face",
+      "url": "https://huggingface.co/mNLP-project/gpt2-dpo-from_base_gpt2",
+      "snippet": "gpt2-dpo-from_base_gpt2 This model is a fine-tuned version of openai-community/gpt2 on the None dataset. It achieves the following results on the evaluation set: Loss: 0.6406 Rewards/chosen: 1.1312 Rewards/rejected: 0.9208 Rewards/accuracies: 0.6373 Rewards/margins: 0.2103 Logps/rejected: -429.5498 Logps/chosen: -508.5024 Logits/rejected: -96.1598 Logits/chosen: -94.9073 Model description More ..."
+    },
+    {
+      "title": "Fine-Tuning Techniques - Choosing Between SFT, DPO, and RFT (With a ...",
+      "url": "https://developers.openai.com/cookbook/examples/fine_tuning_direct_preference_optimization_guide",
+      "snippet": "By fine-tuning on explicit pairs of preferred vs non‑preferred completions, DPO aligns model outputs to these nuanced preferences. The below table gives examples of pairwise preference data for a fictional AI assistant that represents an organization, where preferred responses are clear, professional, and aligned with brand standards."
+    },
+    {
+      "title": "GitHub - aalokpatwa/dpo: From-scratch implementation of DPO / SFT on ...",
+      "url": "https://github.com/aalokpatwa/dpo",
+      "snippet": "From-Scratch Python Implementation of DPO on GPT-2 (124M) This repository contains code for aligning GPT-2 124M using DPO, and also performing SFT using the same DPO dataset. Credit to @karpathy for the GPT-2 PyTorch architecture and @graykode for the custom tokenizer."
+    },
+    {
+      "title": "GPT‑2: 1.5B release - OpenAI",
+      "url": "https://openai.com/index/gpt-2-1-5b-release/",
+      "snippet": "As the final model release of GPT-2&#x27;s staged release, we&#x27;re releasing the largest version (1.5B parameters) of GPT-2 along with code and model weights to facilitate detection of outputs of GPT-2 models. While there have been larger language models released since August, we&#x27;ve continued with our original staged release plan in order to provide the community with a test case of a full ..."
+    }
+  ]
+}

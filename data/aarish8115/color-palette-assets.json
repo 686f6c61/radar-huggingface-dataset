@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aarish8115/color-palette-assets",
+  "slug": "aarish8115-color-palette-assets",
+  "author": "aarish8115",
+  "url": "https://huggingface.co/aarish8115/color-palette-assets",
+  "created_at": "2026-08-21T21:00:14.000Z",
+  "updated_at": "2026-08-21T21:17:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 153589376,
+  "storage_human": "154 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Color Palette Generator - ColorMagic",
+      "url": "https://colormagic.app/",
+      "snippet": "Create beautiful color palettes with our free AI color palette generator. Generate color palettes from names, images, text, or hex codes in seconds!"
+    },
+    {
+      "title": "Free Color Palette Generator for AI Models",
+      "url": "https://svgapp.ai/palette-generator/",
+      "snippet": "Generate AI-ready color palette reference images from your brand colors. Create visual color swatches that help AI models maintain consistent branding in your SVG illustrations."
+    },
+    {
+      "title": "AI Color Palette Generator — CSS & Tailwind Export",
+      "url": "https://www.colorpalettegenerator.ai/",
+      "snippet": "Generate complete brand color systems with AI. Export to CSS variables, Tailwind, design tokens, and AI agent configs. Free, instant, accessible."
+    },
+    {
+      "title": "kuler.ai — Color Palettes for Designers & AI Builders",
+      "url": "https://kuler.ai/",
+      "snippet": "Free community-driven color palettes with one-click export for Cursor, Windsurf, Bolt, v0, and more. Built for designers, developers, and AI-native builders."
+    },
+    {
+      "title": "Colormind - the AI powered color palette generator",
+      "url": "https://colormind.io/",
+      "snippet": "Generate color palettes with Colormind, an AI-powered tool that learns styles from photos, movies, and art."
+    }
+  ]
+}

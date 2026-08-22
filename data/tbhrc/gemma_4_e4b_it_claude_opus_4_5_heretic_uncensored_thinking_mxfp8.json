@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tbhrc/gemma_4_e4b_it_claude_opus_4_5_heretic_uncensored_thinking_mxfp8",
+  "slug": "tbhrc-gemma_4_e4b_it_claude_opus_4_5_heretic_uncensored_thinking_mxfp8",
+  "author": "tbhrc",
+  "url": "https://huggingface.co/tbhrc/gemma_4_e4b_it_claude_opus_4_5_heretic_uncensored_thinking_mxfp8",
+  "created_at": "2026-08-22T02:22:41.000Z",
+  "updated_at": "2026-08-22T02:23:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "nightmedia",
+    "gemma",
+    "google",
+    "mxfp8",
+    "any-to-any",
+    "base_model:DavidAU/gemma-4-E4B-it-Claude-Opus-4.5-HERETIC-UNCENSORED-Thinking",
+    "base_model:quantized:DavidAU/gemma-4-E4B-it-Claude-Opus-4.5-HERETIC-UNCENSORED-Thinking",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2588711498,
+  "parameters_human": "2.59B",
+  "storage_bytes": 8839743195,
+  "storage_human": "8.8 GB",
+  "base_model": "DavidAU/gemma-4-E4B-it-Claude-Opus-4.5-HERETIC-UNCENSORED-Thinking",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-4-E4B-it-Claude-Opus-4.5-HERETIC-UNCENSORED-Thinking",
+      "url": "https://huggingface.co/DavidAU/gemma-4-E4B-it-Claude-Opus-4.5-HERETIC-UNCENSORED-Thinking",
+      "snippet": "Heretic/Uncensored with Custom Claude 4.5 Opus dataset. This is the fully uncensored, unrestricted version. The model was \"Heretic&#x27;ed\" (de-censored), then fine tuned (Via Unsloth) on Claude Opus 4.5 Reasoning DATASET to improve performance from top to bottom - especially reasoning in this case."
+    },
+    {
+      "title": "gemma-4-E4B-it-Claude-Opus-4.5-HERETIC-UNCENSORED-Thinking-mxfp8-mlx",
+      "url": "https://huggingface.co/nightmedia/gemma-4-E4B-it-Claude-Opus-4.5-HERETIC-UNCENSORED-Thinking-mxfp8-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 E4B It Claude Opus 4.5 HERETIC UNCENSORED Thinking",
+      "url": "https://sweettea.co/resources/davidau-gemma-4-e4b-it-claude-opus-4-5-heretic-uncensored-thinking-huggingface-model-davidau-gemma-4-e4b-it-claude-opus-",
+      "snippet": "The model was \"Heretic&#x27;ed\" (de-censored), then fine tuned (Via Unsloth) on Claude Opus 4.5 Reasoning DATASET to improve performance from top to bottom - especially reasoning in this case."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "gemma-4-E4B-it-Claude-Opus-4.5-HERETIC-UNCENSORED-Thinking-mxfp8-mlx",
+      "url": "https://omlx.ai/benchmarks/performance/mtyqef5w",
+      "snippet": "oMLXv0.5.8.dev3 macOSmacOS 26.5.1 Context1,024 Performance by Context Length ... Batching Results ... Model Settings benchmark_contextCode (Python) force_samplingfalse thinking_budget_enabledfalse guided_grammar_enabledfalse turboquant_kv_enabledfalse turboquant_kv_bits4 turboquant_skip_lasttrue specprefill_enabledfalse dflash_enabledfalse ..."
+    }
+  ]
+}

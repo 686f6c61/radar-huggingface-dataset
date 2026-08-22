@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "craquehouse/gemma-4-E2B-it-qat-oQ4e-fp16-text-only",
+  "slug": "craquehouse-gemma-4-e2b-it-qat-oq4e-fp16-text-only",
+  "author": "craquehouse",
+  "url": "https://huggingface.co/craquehouse/gemma-4-E2B-it-qat-oQ4e-fp16-text-only",
+  "created_at": "2026-08-21T20:03:01.000Z",
+  "updated_at": "2026-08-21T20:33:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752381219,
+  "parameters_human": "752.4M",
+  "storage_bytes": 2751995210,
+  "storage_human": "2.8 GB",
+  "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "How to Download Gemma 4 | Complete Guide & Official Sources",
+      "url": "https://gemmai4.com/how-to-download/",
+      "snippet": "Google AI / DeepMind: Official landing pages with license documentation, technical reports, and links to authorized sources. Runtime libraries: Ollama and LM Studio pull verified Gemma 4 builds directly (e.g., ollama run gemma4), handling quantization for you."
+    },
+    {
+      "title": "Gemma 4 Complete Guide (2026) · aibrew",
+      "url": "https://www.aibrew.io/blog/gemma-4-complete-guide",
+      "snippet": "Why Run Gemma 4 Locally? Running AI models locally gives you three things cloud APIs can&#x27;t: zero cost per token, complete data privacy, and offline access. Google&#x27;s Gemma 4 is one of the best models for local deployment thanks to its Apache 2.0 license and range of model sizes. This guide covers everything you need to get started. Hardware ..."
+    },
+    {
+      "title": "google/gemma-4-e2b-qat • LM Studio",
+      "url": "https://lmstudio.ai/models/google/gemma-4-e2b-qat",
+      "snippet": "Gemma 4 E2B QAT Gemma 4 E2B QAT is the Quantization-Aware Training version of Gemma 4 E2B. It aims to keep quality close to bfloat16 while using much less memory to load the model. Gemma 4 is an open multimodal model family from Google DeepMind. It supports text and image input, text output, reasoning, long context, system prompts, and native tool use. Gemma 4 E2B is one of the lightest Gemma ..."
+    }
+  ]
+}

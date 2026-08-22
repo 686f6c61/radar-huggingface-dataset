@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ucdavisinformatics/model_205103705_clip_large",
+  "slug": "ucdavisinformatics-model_205103705_clip_large",
+  "author": "ucdavisinformatics",
+  "url": "https://huggingface.co/ucdavisinformatics/model_205103705_clip_large",
+  "created_at": "2026-08-21T22:01:34.000Z",
+  "updated_at": "2026-08-21T22:01:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "classification",
+    "clip",
+    "concat-mlp",
+    "instancenorm",
+    "kaiming-normal",
+    "large",
+    "linear",
+    "relu",
+    "step",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI says its AI agent broke out of testing sandbox to hack Hugging Face",
+      "url": "https://arstechnica.com/ai/2026/07/how-an-openai-benchmark-test-turned-into-a-real-world-cyberattack/",
+      "snippet": "OpenAI says an agent powered by its LLM models escaped its sandboxed testing environment to infiltrate Hugging Face&#x27;s servers as part of an overzealous attempt to obtain solutions to a benchmark ..."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "moonshotai/kimi-k3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/moonshotai/kimi-k3-free",
+      "snippet": "This model is free for a limited time on PAYG! Kimi K3 is Kimi&#x27;s most capable model to date, with 2.8 trillion parameters. Built on Kimi Delta Attention, a hybrid linear attention mechanism, and Attention Residuals, it offers native visual understanding and a 1M-token context window for frontier intelligence scenarios such as software engineering, knowledge work, and deep reasoning."
+    },
+    {
+      "title": "clip-vit-large-patch14 · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/clip-vit-large-patch14/",
+      "snippet": "Model Use Intended Use The model is intended as a research output for research communities. We hope that this model will enable researchers to better understand and explore zero-shot, arbitrary image classification. We also hope it can be used for interdisciplinary studies of the potential impact of such models - the CLIP paper includes a discussion of potential downstream impacts to provide ..."
+    },
+    {
+      "title": "CLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/clip",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

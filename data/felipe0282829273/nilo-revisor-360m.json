@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Felipe0282829273/nilo-revisor-360m",
+  "slug": "felipe0282829273-nilo-revisor-360m",
+  "author": "Felipe0282829273",
+  "url": "https://huggingface.co/Felipe0282829273/nilo-revisor-360m",
+  "created_at": "2026-08-22T00:26:23.000Z",
+  "updated_at": "2026-08-22T00:26:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "wllama",
+    "game",
+    "text-editing",
+    "text-generation",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 386404864,
+  "storage_human": "386 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nilo",
+      "url": "https://nilo.io/",
+      "snippet": "Choose Your AI Model With Nilo, you can use any of the latest image and 3D generation models from any provider."
+    },
+    {
+      "title": "Nilo",
+      "url": "https://play.nilo.io/",
+      "snippet": "What do you want to create today? Make it!"
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf&sort=modified",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "README.md · QuantFactory/SmolLM2-360M-GGUF at main",
+      "url": "https://huggingface.co/QuantFactory/SmolLM2-360M-GGUF/blob/main/README.md",
+      "snippet": "The 360M model was trained on 4 trillion tokens using a diverse dataset combination: FineWeb-Edu, DCLM, The Stack, along with new filtered datasets we curated and will release soon. We developed the instruct version through supervised fine-tuning (SFT) using a combination of public datasets and our own curated datasets."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-360M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

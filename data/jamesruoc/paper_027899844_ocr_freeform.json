@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jamesruoc/paper_027899844_ocr_freeform",
+  "slug": "jamesruoc-paper_027899844_ocr_freeform",
+  "author": "jamesruoc",
+  "url": "https://huggingface.co/jamesruoc/paper_027899844_ocr_freeform",
+  "created_at": "2026-08-21T23:45:47.000Z",
+  "updated_at": "2026-08-21T23:45:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "docx",
+    "highlight-bullet",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "measured",
+    "numeric-nature",
+    "ocr-freeform",
+    "theoretical-rigorous",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF OCR - Recognize text - 100% free & online - PDF24",
+      "url": "https://tools.pdf24.org/en/ocr-pdf",
+      "snippet": "Free online tool to recognize text in documents via OCR. Creates searchable PDF files. Many options. No installation or registration required."
+    },
+    {
+      "title": "OCR.chat - Free OCR + chat with any PDF, image or Word document",
+      "url": "https://ocr.chat/",
+      "snippet": "OCR.chat OCR that reads your documents, image & PDF to text, tables, Markdown and math in 100+ languages, then lets you chat with them."
+    },
+    {
+      "title": "Free Online AI OCR - Image to Text Converter",
+      "url": "https://aiocr.org/",
+      "snippet": "Free Online AI OCR 100% private, local AI OCR scanning. Convert images and PDFs to editable text entirely in your browser with Image to Text privacy—your data never leaves your device."
+    },
+    {
+      "title": "OCR Online — ScanRead.ai",
+      "url": "https://scanread.ai/ocr-online",
+      "snippet": "OCR online — free, no download. Extract text from images and PDFs in your browser. Supports 100+ languages with fast, accurate AI recognition."
+    },
+    {
+      "title": "Free AI OCR - Accurate Image-to-Text Extraction | Free.ai",
+      "url": "https://free.ai/ocr/",
+      "snippet": "Extract printed text from any image or scan with free AI OCR. 20+ languages, Tesseract-backed. Best for documents, screenshots, and printed pages - not for describing photos."
+    }
+  ]
+}

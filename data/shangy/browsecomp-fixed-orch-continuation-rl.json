@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Shangy/browsecomp-fixed-orch-continuation-rl",
+  "slug": "shangy-browsecomp-fixed-orch-continuation-rl",
+  "author": "Shangy",
+  "url": "https://huggingface.co/Shangy/browsecomp-fixed-orch-continuation-rl",
+  "created_at": "2026-08-21T21:36:27.000Z",
+  "updated_at": "2026-08-21T21:36:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "browsecomp",
+    "reinforcement-learning",
+    "orchestrator-worker",
+    "continuation",
+    "qwen3",
+    "text-generation",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shangy/browsecomp-fixed-orch-qwen3-8b-h200 · Hugging Face",
+      "url": "https://huggingface.co/Shangy/browsecomp-fixed-orch-qwen3-8b-h200",
+      "snippet": "Instructions to use Shangy/browsecomp-fixed-orch-qwen3-8b-h200 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Shangy/browsecomp-orch-sftcore-qwen3-8b-h200 · Hugging Face",
+      "url": "https://huggingface.co/Shangy/browsecomp-orch-sftcore-qwen3-8b-h200",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BrowseComp Leaderboard & Scores — August 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/browsecomp",
+      "snippet": "BrowseComp (BrowseComp) leaderboard across 40 AI models. GPT-5.6 Sol leads with 92.2%. A benchmark for web-browsing agents that must search, inspect sources, gather evidence, and return the correct answer to research-oriented questions."
+    },
+    {
+      "title": "BrowseComp Leaderboard",
+      "url": "https://llm-stats.com/benchmarks/browsecomp",
+      "snippet": "BrowseComp leaderboard — Kimi K3 leads 62 AI models at 0.912. BrowseComp is a benchmark comprising 1,266 questions that challenge AI agents to persistently nav…"
+    },
+    {
+      "title": "BrowseComp Leaderboard 2026: Latest Web Research Agent Scores | Steel.dev",
+      "url": "https://leaderboard.steel.dev/leaderboards/browsecomp/",
+      "snippet": "This page mixes base-model, model-with-browsing, and full research-agent reports when sources publish BrowseComp scores, so each BrowseComp result is often a system capability signal rather than a pure model number. Mixed-scope benchmark: model-only and tool-augmented rows are directional unless source setups match."
+    }
+  ]
+}

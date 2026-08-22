@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "zaql/CustomYOLOModels",
+  "slug": "zaql-customyolomodels",
+  "author": "zaql",
+  "url": "https://huggingface.co/zaql/CustomYOLOModels",
+  "created_at": "2026-08-22T01:23:42.000Z",
+  "updated_at": "2026-08-22T01:57:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22509155,
+  "storage_human": "23 MB",
+  "base_model": "Ultralytics/YOLOv8, Ultralytics/YOLO26, Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "Custom AI Detection Models for Drones: 6-Step Guide",
+      "url": "https://aervue-tech.com/custom-ai-detection-models-for-drones/",
+      "snippet": "Custom AI detection models for drones let an OEM platform recognize target classes far beyond the factory defaults of vehicles and persons — specific vehicle types, vessels, machinery, livestock, or particular drone models. This guide walks through the full 6-step workflow OEMs use to train, optimize and deploy a custom model on an onboard AI module: defining classes, collecting and labeling ..."
+    },
+    {
+      "title": "zaql (Rasaq Lawani) - Hugging Face",
+      "url": "https://huggingface.co/zaql/models",
+      "snippet": "User profile of Rasaq Lawani on Hugging Face"
+    },
+    {
+      "title": "ai-systems/ollama-custom-models at main · suthashok/ai-systems · GitHub",
+      "url": "https://github.com/suthashok/ai-systems/tree/main/ollama-custom-models",
+      "snippet": "Ollama Custom Model Setup Guide (Windows / CPU) This is a step-by-step guide to creating custom Ollama models with hardware constraints, system prompts, and optimal settings for CPU systems."
+    },
+    {
+      "title": "Custom AI Models: Train Your AI Clone | Obvio AI",
+      "url": "https://www.obvio-ai.com/en/features/custom-ai-models",
+      "snippet": "Train a custom AI model from your likeness in 30 seconds. Full ownership, unlimited content creation, and creator monetization. Starting at $6/month."
+    }
+  ]
+}

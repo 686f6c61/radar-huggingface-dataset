@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kabirvkv/paper_024103328_audio_visual_learning",
+  "slug": "kabirvkv-paper_024103328_audio_visual_learning",
+  "author": "Kabirvkv",
+  "url": "https://huggingface.co/Kabirvkv/paper_024103328_audio_visual_learning",
+  "created_at": "2026-08-21T22:46:02.000Z",
+  "updated_at": "2026-08-21T22:46:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "active",
+    "argumentative",
+    "audio-visual-learning",
+    "author-year",
+    "latex-acl",
+    "measured",
+    "unstructured-narrative",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=argumentative",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Awesome Audio-Visual: - GitHub",
+      "url": "https://github.com/krantiparida/awesome-audio-visual",
+      "snippet": "Awesome Audio-Visual: A curated list of papers and datsets for various audio-visual tasks, inspired by awesome-computer-vision."
+    },
+    {
+      "title": "Audio-Visual Intelligence in Large Foundation Models",
+      "url": "https://arxiv.org/abs/2605.04045",
+      "snippet": "Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also for controllable ..."
+    },
+    {
+      "title": "From Vision to Audio and Beyond: A Unified Model for Audio-Visual ...",
+      "url": "https://arxiv.org/html/2409.19132v1",
+      "snippet": "Since VAB is a unified model, its backbone can be fine-tuned for various audio-visual downstream tasks. Our experiments showcase the efficiency of VAB in producing high-quality audio from video, and its capability to acquire semantic audio-visual features, leading to competitive results in audio-visual retrieval and classification."
+    },
+    {
+      "title": "GitHub - GeWu-Lab/awesome-audiovisual-learning: A curated list of audio ...",
+      "url": "https://github.com/GeWu-Lab/awesome-audiovisual-learning",
+      "snippet": "This is a curated list of audio-visual learning methods and datasets, based on our survey: <Learning in Audio-visual Context: A Review, Analysis, and New Perspective>."
+    }
+  ]
+}

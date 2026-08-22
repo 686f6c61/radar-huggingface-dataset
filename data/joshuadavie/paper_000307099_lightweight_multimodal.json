@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshuadavie/paper_000307099_lightweight_multimodal",
+  "slug": "joshuadavie-paper_000307099_lightweight_multimodal",
+  "author": "joshuadavie",
+  "url": "https://huggingface.co/joshuadavie/paper_000307099_lightweight_multimodal",
+  "created_at": "2026-08-22T02:27:20.000Z",
+  "updated_at": "2026-08-22T02:27:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "endnote",
+    "first-person-plural",
+    "intro-method-exp-related-conclusion",
+    "latex-icml",
+    "lightweight-multimodal",
+    "measured",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2404.07236] Lightweight Deep Learning for Resource-Constrained ...",
+      "url": "https://arxiv.org/abs/2404.07236",
+      "snippet": "Over the past decade, the dominance of deep learning has prevailed across various domains of artificial intelligence, including natural language processing, computer vision, and biomedical signal processing. While there have been remarkable improvements in model accuracy, deploying these models on lightweight devices, such as mobile phones and microcontrollers, is constrained by limited ..."
+    },
+    {
+      "title": "[2505.00284] LightEMMA: Lightweight End-to-End Multimodal Model for ...",
+      "url": "https://arxiv.org/abs/2505.00284",
+      "snippet": "However, the field still lacks a practical platform that enables dynamic model updates, rapid validation, fair comparison, and intuitive performance assessment. To that end, we introduce LightEMMA, a Lightweight End-to-End Multimodal Model for Autonomous driving."
+    },
+    {
+      "title": "Awesome Edge AI for Multimodal Agents - GitHub",
+      "url": "https://github.com/yh-yao/awesome-edge-ai-agents",
+      "snippet": "Awesome Edge AI for Multimodal Agents A curated list of papers, frameworks, benchmarks, and applications for efficient multimodal agents (LLMs, text-to-image, speech, world models, etc.) on mobile and edge devices. Focused on inference engines, optimization, and deployment for real-world use."
+    },
+    {
+      "title": "Ivy-VL: A Lightweight Multimodal Model for Edge Devices",
+      "url": "https://ai-safeguard.org/?page_id=574",
+      "snippet": "Ivy-VL is a lightweight multimodal model jointly developed by AI Safeguard, Carnegie Mellon University, and Stanford University. Designed with efficiency, compactness, and high performance in mind, Ivy-VL addresses various challenges related to deploying large multimodal models on edge devices."
+    },
+    {
+      "title": "Lightweight machine learning models and edge computing ... - Nature",
+      "url": "https://www.nature.com/collections/cacgejbbjb",
+      "snippet": "Multimodal Large Language Models are energy intensive and computationally demanding. Here, the authors developed a series of lightweight Multimodal Large Language Models deployable on edge devices."
+    }
+  ]
+}

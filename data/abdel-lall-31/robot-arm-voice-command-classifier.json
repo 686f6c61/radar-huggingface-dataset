@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "abdel-lall-31/robot-arm-voice-command-classifier",
+  "slug": "abdel-lall-31-robot-arm-voice-command-classifier",
+  "author": "abdel-lall-31",
+  "url": "https://huggingface.co/abdel-lall-31/robot-arm-voice-command-classifier",
+  "created_at": "2026-08-21T23:49:53.000Z",
+  "updated_at": "2026-08-22T00:01:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "audio",
+    "audio-classification",
+    "speech",
+    "speech-command-recognition",
+    "hubert",
+    "lstm",
+    "tensorflow",
+    "robotics",
+    "en",
+    "base_model:facebook/hubert-base-ls960",
+    "base_model:finetune:facebook/hubert-base-ls960",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 933202630,
+  "storage_human": "933 MB",
+  "base_model": "facebook/hubert-base-ls960",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voice Controlled Robot using Arduino and Voice Recognition App",
+      "url": "https://microcontrollerslab.com/voice-controlled-robot-arduino/",
+      "snippet": "In this Arduino project, we will learn how to build a voice controlled robot using Arduino and an android application. In this embedded systems project, we aim to make a 4-WD robotic car which we can control using specific voice commands through a mobile application called AMR_Voice. The application listens and sends the instruction to the Arduino board using Bluetooth and then Arduino ..."
+    },
+    {
+      "title": "LAVOOK Robot Arm - GitHub",
+      "url": "https://github.com/btdelen/lavook-robot-arm",
+      "snippet": "LAVOOK is a voice-controlled robotic arm that combines: Google Gemini AI for natural language understanding YOLOv8 for real-time object detection Speech Recognition for voice commands Modern GUI for manual control and monitoring ⚠️ Note: Vision-based object manipulation is currently under development. Voice control and manual operation are fully functional."
+    },
+    {
+      "title": "How We Built A Voice-Controlled Robotic Arm That Can Change ... - Medium",
+      "url": "https://medium.com/@vardhanviswa/how-we-built-a-voice-controlled-robotic-arm-that-can-change-the-world-64af14d25d74",
+      "snippet": "In this blog post, I want to share one of my most amazing projects that I&#x27;m really proud of. It&#x27;s a voice-controlled robotic arm that can perform various tasks based on remote voice commands."
+    },
+    {
+      "title": "Voice-Controlled Robotic Arm for a Physically Challenged Person",
+      "url": "https://ieeexplore.ieee.org/document/11518526/",
+      "snippet": "This research work proposes a voice-controlled robotic arm for physically challenged people. The proposed system is a combination of speech recognition algorithms and a microcontroller, controlled actuation to make the robotic arm capable of voice command response. The algorithm applies speech signal processing operations such as Mel, Frequency Cepstral Coefficients (MFCC) for speech ..."
+    },
+    {
+      "title": "AI-Based Autonomous Voice-Enabled Robot with Real-Time ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-29713-7_11",
+      "snippet": "Controlling the robot using the user&#x27;s vocal commands and visual feeds which will be helpful to make it easier and more precise for the robot to operate Voice-controlled robots powered by artificial intelligence (AI) assist people save time and effort in their daily duties."
+    }
+  ]
+}

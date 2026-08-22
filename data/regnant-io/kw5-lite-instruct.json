@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "regnant-io/kw5-lite-instruct",
+  "slug": "regnant-io-kw5-lite-instruct",
+  "author": "regnant-io",
+  "url": "https://huggingface.co/regnant-io/kw5-lite-instruct",
+  "created_at": "2026-08-21T22:11:59.000Z",
+  "updated_at": "2026-08-21T22:15:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109529856,
+  "parameters_human": "109.5M",
+  "storage_bytes": 219613882,
+  "storage_human": "220 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Regnant · Intelligence a nation can own outright",
+      "url": "https://www.regnant.io/",
+      "snippet": "Regnant is a Sovereign Artificial Intelligence research and infrastructure company, headquartered in Dar es Salaam. Sovereign language models, decision simulation, and sovereign infrastructure, owned down to the weights and the hardware."
+    },
+    {
+      "title": "Products: Regnant",
+      "url": "https://www.regnant.io/products",
+      "snippet": "Self-hosted, AI-powered workflow automation with human-in-the-loop decisions, a visual designer, real-time execution monitoring, and a full audit trail. Zero cloud lock-in, one exposed port, every decision recorded with its justification."
+    },
+    {
+      "title": "qailunu/kw5-lite-swahili-lora · Hugging Face",
+      "url": "https://huggingface.co/qailunu/kw5-lite-swahili-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Modèles — IA dans l&#x27;État",
+      "url": "https://ia.numerique.gouv.fr/outils-ia/albert-api/mod%C3%A8les/",
+      "snippet": "Albert API offre l&#x27;accès à une large gamme de modèles fondation open source d&#x27;IA générative. Nous mettons à jour régulièrement les modèles disponibles pour vous permettre d&#x27;utiliser les modèles qui font l&#x27;état de l&#x27;art. D&#x27;où proviennent les modèles disponibles ?"
+    },
+    {
+      "title": "qailunu/kw5-lite-swahili · Hugging Face",
+      "url": "https://huggingface.co/qailunu/kw5-lite-swahili",
+      "snippet": "A standalone merged 16-bit model was previously published at qailunu/kw5-lite-swahili; that merge has shown output-quality regressions during verification and should not be used until it is rebuilt and reverified."
+    }
+  ]
+}

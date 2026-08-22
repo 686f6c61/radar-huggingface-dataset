@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "webbrain-one/webbrain-browser-vision-tiny",
+  "slug": "webbrain-one-webbrain-browser-vision-tiny",
+  "author": "webbrain-one",
+  "url": "https://huggingface.co/webbrain-one/webbrain-browser-vision-tiny",
+  "created_at": "2026-08-21T18:43:30.000Z",
+  "updated_at": "2026-08-21T23:09:03.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_vl",
+    "image-text-to-text",
+    "browser-automation",
+    "gui-understanding",
+    "vision-language-model",
+    "webbrain",
+    "conversational",
+    "dataset:webbrain-one/webbrain-browser-vision-tiny-dataset",
+    "base_model:LiquidAI/LFM2.5-VL-450M",
+    "base_model:finetune:LiquidAI/LFM2.5-VL-450M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 448718848,
+  "parameters_human": "448.7M",
+  "storage_bytes": 914033760,
+  "storage_human": "914 MB",
+  "base_model": "LiquidAI/LFM2.5-VL-450M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - webbrain-one/webbrain: Open-source AI browser agent for Chrome ...",
+      "url": "https://github.com/webbrain-one/webbrain",
+      "snippet": "WebBrain is a web browser extension that puts an AI agent in a side panel next to your tabs. Ask it about the page you&#x27;re on, or hand it a task and let it click, type, and navigate its way through. It runs on the model you choose — a local llama.cpp or Ollama server, a frontier cloud API, or the managed default that needs no setup at all."
+    },
+    {
+      "title": "WebBrain — Free Open-Source AI Browser Agent",
+      "url": "https://www.webbrain.one/",
+      "snippet": "WebBrain is a free, open-source alternative to Claude&#x27;s browser plugin. AI browser agent for Chrome, Firefox, and Edge — read pages, extract data, automate tasks."
+    },
+    {
+      "title": "Frequently Asked Questions — WebBrain",
+      "url": "https://www.webbrain.one/docs/faq/",
+      "snippet": "Yes. WebBrain provides similar AI browser agent capabilities — reading pages, extracting data, clicking buttons, filling forms, and automating multi-step workflows. Unlike Claude&#x27;s proprietary browser plugin which requires a Claude Pro subscription and only works with Anthropic&#x27;s models, WebBrain is completely free, open-source (GPL-3.-or-later license), and supports multiple LLM providers ..."
+    },
+    {
+      "title": "webbrain-one (WebBrain) - Hugging Face",
+      "url": "https://huggingface.co/webbrain-one",
+      "snippet": "webbrain-one (WebBrain) - Hugging Face ... Browser Vision"
+    },
+    {
+      "title": "GitHub - webbrain-one/webbrain: Open-source AI browser agent for Chrome ...",
+      "url": "https://github.com/webbrain-one/webbrain/tree/main",
+      "snippet": "Open-source AI browser agent for Chrome and Firefox. Chat with any web page, automate browser tasks, and run multi-step agent workflows — powered by your choice of LLM."
+    }
+  ]
+}

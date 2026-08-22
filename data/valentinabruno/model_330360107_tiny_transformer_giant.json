@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ValentinaBruno/model_330360107_tiny_transformer_giant",
+  "slug": "valentinabruno-model_330360107_tiny_transformer_giant",
+  "author": "ValentinaBruno",
+  "url": "https://huggingface.co/ValentinaBruno/model_330360107_tiny_transformer_giant",
+  "created_at": "2026-08-22T00:42:22.000Z",
+  "updated_at": "2026-08-22T00:42:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cosine",
+    "giant",
+    "groupnorm",
+    "lamb",
+    "low-rank",
+    "mish",
+    "multitask",
+    "standard",
+    "tiny-transformer",
+    "trunc-normal",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skolouri/TinyTransformer: Mathematics of AI - GitHub",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Mathematics of AI - Transformer Networks. Contribute to skolouri/TinyTransformer development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - avvorstenbosch/tinyTransformer: This repository is me learning ...",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "The code is organized in the following modules: Head: A single head of self-attention. MultiHead: Multiple heads of self-attention. FeedForward: A straightforward fully connected layer. MultiHeadAttentionBlock: A block of attention followed by computation. tinyTransformer: The main model class implementing the transformer architecture."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "The AI community building the future. ... Explore AI Apps or Browse 2M+ models Trending on this week"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "Best Ollama Models 2026: 25+ Ranked by VRAM & SWE-Bench (August 2026 ...",
+      "url": "https://www.morphllm.com/best-ollama-models",
+      "snippet": "The best Ollama models in 2026 split by job. For coding, qwen3-coder:30b leads: a 30B Mixture-of-Experts model with 3.3B active parameters, 19GB at Q4_K_M, 256K context, the best quality per GB of VRAM on a 24-32GB GPU or a 32GB Mac. devstral:24b is the only local coder with a hard agentic number, 46.8% SWE-Bench Verified at 14GB."
+    }
+  ]
+}

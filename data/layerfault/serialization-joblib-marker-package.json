@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LayerFault/serialization-joblib-marker-package",
+  "slug": "layerfault-serialization-joblib-marker-package",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/serialization-joblib-marker-package",
+  "created_at": "2026-08-21T19:04:23.000Z",
+  "updated_at": "2026-08-21T19:04:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33,
+  "storage_human": "33 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault/tree/main",
+      "snippet": "Offline-first security and admission control for local AI models. Layerfault validates model artifacts and local model runtimes before inference."
+    },
+    {
+      "title": "Keras Lambda Layer Serialization Error Fix Guide",
+      "url": "https://www.weblineglobal.com/blog/keras-lambda-layer-serialization-error-fix/",
+      "snippet": "Model serialization in TensorFlow can surface unexpected NameErrors when using Lambda layers to wrap external dependencies like TF Hub components. Learn why this occurs in production ML pipelines and how to properly structure your Keras Sequential models for flawless deployment and enterprise inference."
+    },
+    {
+      "title": "GitHub - microsoft/MAI-Code: Official repo for MAI-Code models, where ...",
+      "url": "https://github.com/microsoft/MAI-Code",
+      "snippet": "We are Microsoft AI, building AI that empowers everyone. MAI-Code is our family of in-house coding models developed to make everyday development faster, smarter, and more efficient. This is the official repo for MAI-Code models, where we publish MAI-Code model releases and updates and engage with the developer community on issues and feedback."
+    },
+    {
+      "title": "Joblib giving error when loading my model - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/78107007/joblib-giving-error-when-loading-my-model",
+      "snippet": "I am trying to build a project, where I will get the data from the webpage and it will be passed to my ML model, the predictions of which will be shown finally. The model is completed and I have it..."
+    },
+    {
+      "title": "TensorFlow 2.14 Migration Guide: Solving Keras Layer Serialization ...",
+      "url": "https://markaicode.com/tensorflow-214-migration-guide-keras-layer-serialization/",
+      "snippet": "Fix Keras layer serialization errors when upgrading to TensorFlow 2.14 with this step-by-step guide covering custom layers, model loading, and best practices."
+    }
+  ]
+}

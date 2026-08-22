@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jeyapalc/asina-bob-krea2",
+  "slug": "jeyapalc-asina-bob-krea2",
+  "author": "jeyapalc",
+  "url": "https://huggingface.co/jeyapalc/asina-bob-krea2",
+  "created_at": "2026-08-21T21:38:42.000Z",
+  "updated_at": "2026-08-21T22:17:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1151841218,
+  "storage_human": "1.2 GB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Library | Krea",
+      "url": "https://www.krea.ai/models",
+      "snippet": "Explore Krea&#x27;s AI model library across image, video, audio, enhancer, edit, 3D, video restyle, motion transfer, and lipsync tools."
+    },
+    {
+      "title": "Krea 2 Large by Krea — AI Image Generator | Krea",
+      "url": "https://www.krea.ai/models/krea-2-large",
+      "snippet": "Krea 2 Large is useful for designers, marketers, creative teams, and independent creators who need polished AI-generated images for concepts, campaigns, client work, and production experiments."
+    },
+    {
+      "title": "Krea 2 AI - Aesthetic Image Generator with Style Control",
+      "url": "https://krea2.io/",
+      "snippet": "Krea 2 AI is a foundation text-to-image model trained from scratch for aesthetic diversity and style control. The platform accepts a text prompt for text-to-image generation, or a reference image for image-to-image style transfer, then delivers 1K-2K resolution output that matches your visual direction."
+    },
+    {
+      "title": "Krea2-Asian Aesthetics - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d9s3rq5e878c73cbgabg",
+      "snippet": "Explore Krea2-Asian Aesthetics model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=krea2",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

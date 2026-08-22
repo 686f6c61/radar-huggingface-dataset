@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "GabrieleRomano/paper_016649172_image_captioning",
+  "slug": "gabrieleromano-paper_016649172_image_captioning",
+  "author": "GabrieleRomano",
+  "url": "https://huggingface.co/GabrieleRomano/paper_016649172_image_captioning",
+  "created_at": "2026-08-21T23:04:48.000Z",
+  "updated_at": "2026-08-21T23:04:54.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "docx",
+    "empirical-focused",
+    "enthusiastic",
+    "first-person-plural",
+    "highlight-bullet",
+    "image-captioning",
+    "intro-problem-solution-validation-future",
+    "long-detailed",
+    "numeric-nature",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image Captioning Evaluation in the Age of Multimodal LLMs: Challenges ...",
+      "url": "https://arxiv.org/abs/2503.14604",
+      "snippet": "The evaluation of machine-generated image captions is a complex and evolving challenge. With the advent of Multimodal Large Language Models (MLLMs), image captioning has become a core task, increasing the need for robust and reliable evaluation metrics. This survey provides a comprehensive overview of advancements in image captioning evaluation, analyzing the evolution, strengths, and ..."
+    },
+    {
+      "title": "Deep Learning Approaches on Image Captioning: A Review",
+      "url": "https://arxiv.org/abs/2201.12944",
+      "snippet": "Image captioning is a research area of immense importance, aiming to generate natural language descriptions for visual content in the form of still images. The advent of deep learning and more recently vision-language pre-training techniques has revolutionized the field, leading to more sophisticated methods and improved performance. In this survey paper, we provide a structured review of deep ..."
+    },
+    {
+      "title": "Next-generation image captioning: A survey of methodologies and ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2949719125000354",
+      "snippet": "The dynamic image captioning model in Xian et al. (2022a) constructs a route space with several layers within the encoder based on three separate feature extraction blocks and uses grid characteristics to account for the localization of regional ones."
+    },
+    {
+      "title": "Image Captioning: A Comprehensive Survey, Comparative Analysis of ...",
+      "url": "https://ieeexplore.ieee.org/document/10250630",
+      "snippet": "Image captioning is a research area that focuses on the development of algorithms and models that can automatically generate descriptive and coherent captions. This study provides a comprehensive overview of image captioning techniques, research gaps, and a comparative analysis of existing models."
+    },
+    {
+      "title": "Image Captioning - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/computer-science/image-captioning",
+      "snippet": "6.7 Image captioning Image captioning is an example of deep learning on mixed data modalities (texts and images). The model input is an image, and the model output is some caption describing the content in the image. Image captioning adopts an encoder-decoder framework consisting of two principal components, a convolutional neural network (CNN) for image feature extraction and a recurrent ..."
+    }
+  ]
+}

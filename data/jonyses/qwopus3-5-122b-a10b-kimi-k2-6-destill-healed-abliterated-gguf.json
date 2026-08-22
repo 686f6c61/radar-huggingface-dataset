@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Jonyses/Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated-GGUF",
+  "slug": "jonyses-qwopus3-5-122b-a10b-kimi-k2-6-destill-healed-abliterated-gguf",
+  "author": "Jonyses",
+  "url": "https://huggingface.co/Jonyses/Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated-GGUF",
+  "created_at": "2026-08-21T19:52:30.000Z",
+  "updated_at": "2026-08-21T19:52:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3",
+    "qwen3.5",
+    "moe",
+    "abliterated",
+    "uncensored",
+    "dpo",
+    "opus",
+    "qwopus",
+    "kimi",
+    "kimi-k2",
+    "multimodal",
+    "vision",
+    "mmproj",
+    "mtp",
+    "q4_k_m",
+    "image-text-to-text",
+    "base_model:OpenYourMind/Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated",
+    "base_model:quantized:OpenYourMind/Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124635206144,
+  "parameters_human": "124.64B",
+  "storage_bytes": 76752714210,
+  "storage_human": "76.8 GB",
+  "base_model": "OpenYourMind/Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated",
+      "url": "https://huggingface.co/OpenYourMind/Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated-i1-GGUF",
+      "url": "https://huggingface.co/mradermacher/Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwopus3.5 122B A10B Kimi K2.6 Destill Healed Abliterated by ...",
+      "url": "https://llm-explorer.com/model/OpenYourMind%2FQwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated,3VqfKqLl3TgE82ueNSJnzZ",
+      "snippet": "Qwopus3.5 122B A10B Kimi K2.6 Destill Healed Abliterated is an open-source language model by OpenYourMind. Features: 122b LLM, VRAM: 245.1GB, License: mit, LLM Explorer Score: 0.28."
+    },
+    {
+      "title": "Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated",
+      "url": "https://omlx.ai/benchmarks/best2e3e",
+      "snippet": "513.4 PP tok/s, 39.0 TG tok/s — Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated (4bit) on M3 Max (40c) 128GB"
+    },
+    {
+      "title": "Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated-GGUF · Model ...",
+      "url": "https://inferix.co/models/OpenYourMind/Qwopus3.5-122B-A10B-Kimi-K2.6-destill-healed-abliterated-GGUF",
+      "snippet": "This repo ships both the language model and the vision projector ( mmproj ), so it runs as a full multimodal (image + text) model in llama.cpp / LM Studio. Files File Bits/weight Size Notes Qwopus3.5 122B A10B Kimi K2.6 destill healed abliterated Q4 K M.gguf ~4.6 ~76 GB Language model."
+    }
+  ]
+}

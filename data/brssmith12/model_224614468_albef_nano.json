@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "brssmith12/model_224614468_albef_nano",
+  "slug": "brssmith12-model_224614468_albef_nano",
+  "author": "brssmith12",
+  "url": "https://huggingface.co/brssmith12/model_224614468_albef_nano",
+  "created_at": "2026-08-21T19:58:25.000Z",
+  "updated_at": "2026-08-21T19:58:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "albef",
+    "batchnorm",
+    "kaiming-normal",
+    "lamb",
+    "linear-warmup",
+    "multitask",
+    "nano",
+    "relu",
+    "sparse",
+    "tensor-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - salesforce/ALBEF: Code for ALBEF: a new vision-language pre ...",
+      "url": "https://github.com/salesforce/ALBEF",
+      "snippet": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation, NeurIPS 2021 Spotlight (Salesforce Research). Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]."
+    },
+    {
+      "title": "[2107.07651] Align before Fuse: Vision and Language Representation ...",
+      "url": "https://arxiv.org/abs/2107.07651",
+      "snippet": "Large-scale vision and language representation learning has shown promising improvements on various vision-language tasks. Most existing methods employ a transformer-based multimodal encoder to jointly model visual tokens (region-based image features) and word tokens. Because the visual tokens and word tokens are unaligned, it is challenging for the multimodal encoder to learn image-text ..."
+    },
+    {
+      "title": "[2107.07651] Align before Fuse: Vision and Language ... - ar5iv",
+      "url": "https://ar5iv.labs.arxiv.org/html/2107.07651",
+      "snippet": "In this work we compare human attention maps to Grad-CAM visualizations for the ALBEF VQA model computed at the 3rd multi-modal cross-attention layer on 1374 validation question-image pairs using the rank correlation evaluation protocol as in [63]."
+    },
+    {
+      "title": "ALBEF/models at main · salesforce/ALBEF · GitHub",
+      "url": "https://github.com/salesforce/ALBEF/tree/main/models",
+      "snippet": "Code for ALBEF: a new vision-language pre-training method - ALBEF/models at main · salesforce/ALBEF"
+    },
+    {
+      "title": "albef: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/albef-salesforce",
+      "snippet": "Overview albef generates Grad-CAM visualizations that show which regions of an image correlate with specific words in a paired text caption. Built by salesforce, this model implements Align before Fuse (ALBEF), a vision-language representation learning approach from NeurIPS 2021 that uses contrastive loss to align image and text representations before fusing them through cross-modal attention ..."
+    }
+  ]
+}

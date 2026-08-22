@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "aguazul220604/pii_mx",
+  "slug": "aguazul220604-pii_mx",
+  "author": "aguazul220604",
+  "url": "https://huggingface.co/aguazul220604/pii_mx",
+  "created_at": "2026-08-22T00:43:22.000Z",
+  "updated_at": "2026-08-22T01:09:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109264133,
+  "parameters_human": "109.3M",
+  "storage_bytes": 437079876,
+  "storage_human": "437 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PII Detection: Sensitive Data Scanner for Source Code | AquilaX",
+      "url": "https://aquilax.ai/pii",
+      "snippet": "Find PII, personal data, and sensitive credentials leaked in source code with AquilaX PII Detection — GDPR and CCPA compliance scanning for every repository."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Model Inversion Attacks on Llama 3: Extracting PII from Large Language ...",
+      "url": "https://arxiv.org/html/2507.04478v1",
+      "snippet": "This paper investigates model inversion attacks on the Llama 3.2 model, a multilingual LLM developed by Meta. By querying the model with carefully crafted prompts, we demonstrate the extraction of personally identifiable information (PII) such as passwords, email addresses, and account numbers."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    }
+  ]
+}

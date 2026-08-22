@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Yehorshevchenko/model_178275541_blip_huge",
+  "slug": "yehorshevchenko-model_178275541_blip_huge",
+  "author": "Yehorshevchenko",
+  "url": "https://huggingface.co/Yehorshevchenko/model_178275541_blip_huge",
+  "created_at": "2026-08-22T00:17:15.000Z",
+  "updated_at": "2026-08-22T00:17:21.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blip",
+    "contrastive",
+    "cross-attention",
+    "exponential",
+    "flash",
+    "huge",
+    "novograd",
+    "scalenorm",
+    "swish",
+    "xavier",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/blip",
+      "snippet": "It is used to instantiate a Blip model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the Salesforce/blip-vqa-base Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    },
+    {
+      "title": "Salesforce/blip-image-captioning-large · Hugging Face",
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-large",
+      "snippet": "We strongly recommend users evaluate and address potential concerns related to accuracy, safety, and fairness before deploying this model. We encourage users to consider the common limitations of AI, comply with applicable laws, and leverage best practices when selecting use cases, particularly for high-risk scenarios where errors or misuse ..."
+    },
+    {
+      "title": "GitHub - salesforce/BLIP: PyTorch code for BLIP: Bootstrapping Language ...",
+      "url": "https://github.com/salesforce/BLIP",
+      "snippet": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation Announcement: BLIP is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the PyTorch code of the BLIP paper [blog]. The code has been tested on PyTorch 1.10."
+    },
+    {
+      "title": "Understanding BLIP : A Huggingface Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/",
+      "snippet": "BLIP (Bootstrapping Language-Image Pre-training) is a multimodal AI model that combines computer vision and natural language processing to understand both images and text together. It is trained on large-scale image-text pairs, enabling strong performance in vision-language tasks."
+    },
+    {
+      "title": "blip: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/blip-salesforce",
+      "snippet": "Overview blip is an image captioning and vision-language understanding model developed by salesforce that generates natural language descriptions of images. The model combines vision transformer (ViT) encoders with a text generation decoder, available in base (ViT-B) and large (ViT-L) variants, trained on 129M image-caption pairs. The Replicate implementation supports multiple tasks including ..."
+    }
+  ]
+}

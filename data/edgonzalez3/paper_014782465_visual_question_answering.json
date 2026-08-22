@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Edgonzalez3/paper_014782465_visual_question_answering",
+  "slug": "edgonzalez3-paper_014782465_visual_question_answering",
+  "author": "Edgonzalez3",
+  "url": "https://huggingface.co/Edgonzalez3/paper_014782465_visual_question_answering",
+  "created_at": "2026-08-21T22:47:30.000Z",
+  "updated_at": "2026-08-21T22:47:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "latex-neurips",
+    "measured",
+    "numeric-apa",
+    "short-punchy",
+    "theoretical-rigorous",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Realizing Visual Question Answering for - arXiv.org",
+      "url": "https://arxiv.org/pdf/2405.07163",
+      "snippet": "2.1 Visual Question Answering w task challenged by the AI initiative. Antol et al. (2015) pro-posed VQA as the n w task for the machine learning models. They defined VQA as \"given an image and a natural language question about the image, the task is to pro-vide an accura"
+    },
+    {
+      "title": "Explainable Visual Question Answering with Multimodal Rationales",
+      "url": "https://arxiv.org/html/2402.03896v2",
+      "snippet": "Our model answers the question and simultaneously predicts textual and visual rationales to support the answer. In fact, prior to this paper, a few works have made significant strides towards EVQA with compositional reasoning."
+    },
+    {
+      "title": "VQA: Visual Question Answering",
+      "url": "https://visualqa.org/",
+      "snippet": "VQA is a new dataset containing open-ended questions about images. These questions require an understanding of vision, language and commonsense knowledge to answer."
+    },
+    {
+      "title": "(PDF) VISUAL QUESTION ANSWERING - ResearchGate",
+      "url": "https://www.researchgate.net/publication/370607291_VISUAL_QUESTION_ANSWERING",
+      "snippet": "This paper presents a new baseline for visual question answering task. Given an image and a question in natural language, our model produces accurate answers according to the content of the image ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=latex-neurips",
+      "snippet": "Edgonzalez3/paper_014782465_visual_question_answering Visual Question Answering •Updated 23 minutes ago"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "addisonhammer/smolvla_so101_pink_cube",
+  "slug": "addisonhammer-smolvla_so101_pink_cube",
+  "author": "addisonhammer",
+  "url": "https://huggingface.co/addisonhammer/smolvla_so101_pink_cube",
+  "created_at": "2026-08-21T20:21:23.000Z",
+  "updated_at": "2026-08-21T20:21:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:addisonhammer/so101_pick_pink_cube",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906721080,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "addisonhammer (Addison Hammer) - Hugging Face",
+      "url": "https://huggingface.co/addisonhammer/models",
+      "snippet": "addisonhammer&#x27;s models4 Sort: Recently updated addisonhammer/diffusion_so101_pink_cube Robotics • 0.3B•Updated about 5 hours ago• 4"
+    },
+    {
+      "title": "Fine-tuning SmolVLA for Cube Pick-and-Place on SO-101",
+      "url": "https://ggando.com/blog/smolvla-so101/",
+      "snippet": "The task: pick up a small cube from a randomized position and place it in a bowl. 10-second episodes, 30fps, recorded via teleoperation with the leader arm. SmolVLA vs ACT # SmolVLA is a 500M+ parameter model, but you only fine-tune ~50M (the action expert + projections). The vision encoder (SigLIP) and language model (SmolLM2) stay frozen."
+    },
+    {
+      "title": "Askel1419/smolvla_so101_100EP · Hugging Face",
+      "url": "https://huggingface.co/Askel1419/smolvla_so101_100EP",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "addisonhammer/diffusion_so101_pink_cube_v3 · Hugging Face",
+      "url": "https://huggingface.co/addisonhammer/diffusion_so101_pink_cube_v3",
+      "snippet": "Instructions to use addisonhammer/diffusion_so101_pink_cube_v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    }
+  ]
+}

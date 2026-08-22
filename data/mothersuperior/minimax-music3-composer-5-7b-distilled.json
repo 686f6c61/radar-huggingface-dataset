@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Mothersuperior/minimax-music3-composer-5.7b-distilled",
+  "slug": "mothersuperior-minimax-music3-composer-5-7b-distilled",
+  "author": "Mothersuperior",
+  "url": "https://huggingface.co/Mothersuperior/minimax-music3-composer-5.7b-distilled",
+  "created_at": "2026-08-21T22:40:10.000Z",
+  "updated_at": "2026-08-21T22:46:10.000Z",
+  "license": "minimax-music3-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "minimax-music3",
+    "composer-lm",
+    "depth-pruning",
+    "distillation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22761170832,
+  "storage_human": "22.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mothersuperior/open-rvq-encoder-minimax-music3-169m-53k-pooled ...",
+      "url": "https://huggingface.co/Mothersuperior/open-rvq-encoder-minimax-music3-169m-53k-pooled",
+      "snippet": "Full credit to PurpleOrc for the base model: PurpleOrc/open-rvq-encoder-minimax-music3-169m-53k, trained from scratch on their 53k-track (900 h) multilingual self-distilled corpus."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality."
+    },
+    {
+      "title": "MiniMax Music 3 - minimax-ai.github.io",
+      "url": "https://minimax-ai.github.io/music3-demo/",
+      "snippet": "Demo Page MiniMax Music 3 This page provides intuitive audio demonstrations of our results. For more technical details, see Huggingface model card."
+    },
+    {
+      "title": "MiniMax Music 3.0: Model Guide, Demo & Requirements",
+      "url": "https://minimaxmusic3.ai/",
+      "snippet": "Independent guide · Not affiliated with MiniMax MiniMax Music 3.0 MiniMax Music 3.0 is the common search name for MiniMax Music 3, MiniMax&#x27;s official open-weight model for generating complete songs from lyrics and detailed musical direction."
+    },
+    {
+      "title": "MiniMax-Music3 · Models",
+      "url": "https://www.modelscope.cn/models/MiniMax/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality. MiniMax Music 3 combines an 8B Global LLM for long-range musical structure, a 0.6B ..."
+    }
+  ]
+}

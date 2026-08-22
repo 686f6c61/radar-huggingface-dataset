@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshuawcv/paper_018401665_multimodal_generation",
+  "slug": "joshuawcv-paper_018401665_multimodal_generation",
+  "author": "joshuawcv",
+  "url": "https://huggingface.co/joshuawcv/paper_018401665_multimodal_generation",
+  "created_at": "2026-08-22T03:47:29.000Z",
+  "updated_at": "2026-08-22T03:47:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "concise-analytical",
+    "enthusiastic",
+    "footnote",
+    "highlight-bullet",
+    "impersonal",
+    "latex-cvpr",
+    "multimodal-generation",
+    "short-punchy",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2409.14993] Multi-modal Generative AI: Multi-modal LLMs, Diffusions ...",
+      "url": "https://arxiv.org/abs/2409.14993",
+      "snippet": "Therefore, this paper provides a comprehensive overview of multi-modal generative AI, including multi-modal LLMs, diffusions, and the unification for understanding and generation."
+    },
+    {
+      "title": "Multi-Modal Generative AI: Multi-modal LLM, Diffusion and Beyond",
+      "url": "https://arxiv.org/html/2409.14993v1",
+      "snippet": "We also summarize existing large-scale multi-modal datasets for better model pretraining in the future. To conclude the paper, we present several challenging future directions, which we believe can contribute to the ongoing advancement of multi-modal generative AI."
+    },
+    {
+      "title": "Generative AI Beyond LLMs: System Implications of Multi-Modal ...",
+      "url": "https://ieeexplore.ieee.org/document/10590047",
+      "snippet": "As the development of large-scale Generative AI models evolve beyond text (1D) generation to include image (2D) and video (3D) generation, processing spatial and temporal information presents unique challenges to quality, performance, and efficiency. We present the first work towards understanding this new system design space for multi-modal text-to-image (TTI) and text-to-video (TTV ..."
+    },
+    {
+      "title": "Multimodal learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Multimodal_learning",
+      "snippet": "Multimodal learning is a type of deep learning that integrates and processes multiple types of data, referred to as modalities, such as text, audio, images, or video."
+    },
+    {
+      "title": "Top 8 most influential arXiv papers on multimodal AI - Deepgram",
+      "url": "https://deepgram.com/learn/top-8-most-influential-arxiv-papers-on-multimodal-ai",
+      "snippet": "Multimodal AI is all the rage. From rumors about a real-world Jarvis to news about multimodal AI agents currently on the market, there exists no shortage of hype around these types of models. If you&#x27;re interested in building your own multimodal AI, or if you simply want a glimpse into the status quo, check out these 8 most influential papers on arXiv about multimodal AI."
+    }
+  ]
+}

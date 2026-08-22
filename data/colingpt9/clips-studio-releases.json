@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ColinGPT9/clips-studio-releases",
+  "slug": "colingpt9-clips-studio-releases",
+  "author": "ColinGPT9",
+  "url": "https://huggingface.co/ColinGPT9/clips-studio-releases",
+  "created_at": "2026-08-08T07:32:27.000Z",
+  "updated_at": "2026-08-22T02:01:51.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "clips-studio",
+    "video",
+    "windows",
+    "installer",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25307051532,
+  "storage_human": "25.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ColinGPT9/clips-studio-releases · Hugging Face",
+      "url": "https://huggingface.co/ColinGPT9/clips-studio-releases",
+      "snippet": "Clips Studio — release payload This repository is not a model. It holds the installer payload for Clips Studio, a free, open-source AI video clipping app that runs entirely on your own Windows PC."
+    },
+    {
+      "title": "Releases: ColinGPT9/clips-studio - GitHub",
+      "url": "https://github.com/ColinGPT9/clips-studio/releases",
+      "snippet": "Local-first AI clipping studio - turn long videos into ready-to-post vertical Shorts entirely on your own PC. Multimodal clip detection, speaker-aware face tracking, editable captions, AI edit chat. No cloud AI, no fees. - Releases · ColinGPT9/clips-studio"
+    },
+    {
+      "title": "ColinGPT9 (Colin) - Hugging Face",
+      "url": "https://huggingface.co/ColinGPT9",
+      "snippet": "Clips Studio 🐱 Free open-source AI video clipping that runs on your own PC ColinGPT9 about 3 hours ago"
+    },
+    {
+      "title": "Clips Studio: AI video clipping that runs on your own PC",
+      "url": "https://colingpt9.github.io/clips-studio/",
+      "snippet": "Clips Studio runs on your own computer, so it costs nothing to use: no subscription, no credits, no charge per clip, no limit on how many you make. If you have a PC and something worth posting, you can promote your channel without paying anyone, me included. Clipping tools like OpusClip charge a monthly fee or a price per video."
+    },
+    {
+      "title": "GitHub - ColinGPT9/clips-studio: Clips Kitty - local-first AI video ...",
+      "url": "https://github.com/ColinGPT9/clips-studio",
+      "snippet": "Clips Kitty was called Clips Studio until version 1.1.3, renamed to meet Microsoft Store naming requirements. Same app, same repository, same data. Turn long streams and videos into ready-to-post Shorts, Reels, and TikToks — entirely on your own machine. Clips Kitty is a free, open-source AI clip generator and video editor for creators: paste a YouTube, Twitch, or Kick link and it finds the ..."
+    }
+  ]
+}

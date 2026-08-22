@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "michalkowalski/paper_008960256_knowledge_distillation",
+  "slug": "michalkowalski-paper_008960256_knowledge_distillation",
+  "author": "michalkowalski",
+  "url": "https://huggingface.co/michalkowalski/paper_008960256_knowledge_distillation",
+  "created_at": "2026-08-21T23:27:22.000Z",
+  "updated_at": "2026-08-21T23:27:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "footnote",
+    "graphic-visual",
+    "intro-problem-solution-validation-future",
+    "knowledge-distillation",
+    "medium-balanced",
+    "narrative-progressive",
+    "neutral",
+    "passive",
+    "plain-text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A survey on knowledge distillation: Recent advancements",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666827024000811",
+      "snippet": "Knowledge distillation (KD), a technique for model compression and knowledge transfer, has gained significant attention in the field of machine learning since its formal introduction by Hinton et al. (2015). This approach builds upon the earlier work of Caruana et al. (2006), who demonstrated that the collective knowledge of an ensemble of models could be condensed into a single, smaller model ..."
+    },
+    {
+      "title": "[2006.05525] Knowledge Distillation: A Survey - arXiv.org",
+      "url": "https://arxiv.org/abs/2006.05525",
+      "snippet": "It has received rapid increasing attention from the community. This paper provides a comprehensive survey of knowledge distillation from the perspectives of knowledge categories, training schemes, teacher-student architecture, distillation algorithms, performance comparison and applications."
+    },
+    {
+      "title": "A Survey on Knowledge Distillation: Recent Advancements",
+      "url": "https://www.researchgate.net/publication/385697246_A_Survey_on_Knowledge_Distillation_Recent_Advancements",
+      "snippet": "Therefore, we proposed a deep knowledge distillation model, tailored to effectively capture spatio-temporal patterns in traffic flow prediction."
+    },
+    {
+      "title": "Knowledge Distillation: A Survey | International Journal of Computer ...",
+      "url": "https://link.springer.com/article/10.1007/s11263-021-01453-z",
+      "snippet": "It has received rapid increasing attention from the community. This paper provides a comprehensive survey of knowledge distillation from the perspectives of knowledge categories, training schemes, teacher-student architecture, distillation algorithms, performance comparison and applications."
+    },
+    {
+      "title": "(PDF) Knowledge Distillation: A Survey - ResearchGate",
+      "url": "https://www.researchgate.net/publication/342094012_Knowledge_Distillation_A_Survey",
+      "snippet": "In this paper, we provide a comprehensive survey on knowledge distillation from the perspectives of different knowledge categories, training schemes, distillation algorithms, as well as applications."
+    }
+  ]
+}

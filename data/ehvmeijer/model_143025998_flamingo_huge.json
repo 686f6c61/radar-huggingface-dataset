@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ehvmeijer/model_143025998_flamingo_huge",
+  "slug": "ehvmeijer-model_143025998_flamingo_huge",
+  "author": "ehvmeijer",
+  "url": "https://huggingface.co/ehvmeijer/model_143025998_flamingo_huge",
+  "created_at": "2026-08-21T22:54:34.000Z",
+  "updated_at": "2026-08-21T22:54:41.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concat-mlp",
+    "exponential",
+    "flamingo",
+    "grouped-query",
+    "groupnorm",
+    "huge",
+    "kaiming",
+    "lamb",
+    "relu",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flamingo (visual language model) - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/flamingo",
+      "snippet": "What made Flamingo&#x27;s few-shot results notable? Flamingo is designed to be used the way a large language model is prompted. A user constructs a sequence that interleaves example image-and-answer pairs with a final query image, and the model completes the text."
+    },
+    {
+      "title": "HuggingFaceM4/idefics-80b · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceM4/idefics-80b",
+      "snippet": "Original Paper: Flamingo: a Visual Language Model for Few-Shot Learning IDEFICS is a large multimodal English model that takes sequences of interleaved images and texts as inputs and generates text outputs. The model shows strong in-context few-shot learning capabilities and is on par with the closed-source model."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "OpenFlamingo-4B-vitl-rpj3b - Hugging Face",
+      "url": "https://huggingface.co/openflamingo/OpenFlamingo-4B-vitl-rpj3b",
+      "snippet": "OpenFlamingo is an open source implementation of DeepMind&#x27;s Flamingo models. This 4B-parameter model uses a CLIP ViT-L/14 vision encoder and RedPajama-3B language model. Model Details We follow the Flamingo modeling paradigm, outfitting the layers of a pretrained, frozen language model such that they cross-attend to visual features when decoding."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

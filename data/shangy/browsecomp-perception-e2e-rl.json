@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Shangy/browsecomp-perception-e2e-rl",
+  "slug": "shangy-browsecomp-perception-e2e-rl",
+  "author": "Shangy",
+  "url": "https://huggingface.co/Shangy/browsecomp-perception-e2e-rl",
+  "created_at": "2026-08-21T21:36:20.000Z",
+  "updated_at": "2026-08-21T21:36:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "browsecomp",
+    "reinforcement-learning",
+    "perception",
+    "qwen3",
+    "text-generation",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16392939438,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv:2504.12516v1 [cs.CL] 16 Apr 2025",
+      "url": "https://arxiv.org/pdf/2504.12516",
+      "snippet": "We present BrowseComp, a simple yet challenging benchmark for measuring the ability for agents to browse the web. BrowseComp comprises 1,266 questions that require persistently navigating the internet in search of hard-to-find, entan-gled information. Despite the difficulty of the questions, BrowseComp is simple and easy-to-use, as predicted answers are short and easily verifiable against ref ..."
+    },
+    {
+      "title": "BrowseComp: A Simple Yet ChallengingBenchmark for Browsing Agents",
+      "url": "https://arxiv.org/html/2504.12516v1",
+      "snippet": "Abstract We present BrowseComp, a simple yet challenging benchmark for measuring the ability for agents to browse the web. BrowseComp comprises 1,266 questions that require persistently navigating the internet in search of hard-to-find, entangled information. Despite the difficulty of the questions, BrowseComp is simple and easy-to-use, as predicted answers are short and easily verifiable ..."
+    },
+    {
+      "title": "BrowseComp: a benchmark for browsing agents - OpenAI",
+      "url": "https://openai.com/index/browsecomp/",
+      "snippet": "To measure the ability for AI agents to locate hard-to-find, entangled information on the internet, we are open-sourcing a new benchmark of 1,266 challenging problems called BrowseComp, which stands for \"Browsing Competition\"."
+    },
+    {
+      "title": "BrowseComp leaderboard & model scores | evals.report",
+      "url": "https://evals.report/benchmarks/browsecomp",
+      "snippet": "A benchmark of 1,266 hard-to-find, multi-hop web-browsing questions whose answers are difficult to locate but easy to verify, measuring an agent&#x27;s ability to persistently search and synthesize information from the web. evals.report tracks reported BrowseComp scores with the model, source, status, date, and run caveats attached — official ..."
+    },
+    {
+      "title": "BrowseComp Leaderboard & Scores — August 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/browsecomp",
+      "snippet": "BrowseComp (BrowseComp) leaderboard across 40 AI models. GPT-5.6 Sol leads with 92.2%. A benchmark for web-browsing agents that must search, inspect sources, gather evidence, and return the correct answer to research-oriented questions."
+    }
+  ]
+}

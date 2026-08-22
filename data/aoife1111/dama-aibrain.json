@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Aoife1111/dama-aibrain",
+  "slug": "aoife1111-dama-aibrain",
+  "author": "Aoife1111",
+  "url": "https://huggingface.co/Aoife1111/dama-aibrain",
+  "created_at": "2026-08-21T21:16:47.000Z",
+  "updated_at": "2026-08-21T21:27:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WonseokJayJung/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/WonseokJayJung/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "artnfull/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/artnfull/dama-aibrain",
+      "snippet": "Instructions to use artnfull/dama-aibrain with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use artnfull/dama-aibrain with Transformers:"
+    },
+    {
+      "title": "Luna002-Luna75/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/Luna002-Luna75/dama-aibrain",
+      "snippet": "Luna002-Luna75 / dama-aibrain like 0 Image-Text-to-Text Transformers Safetensors English gemma4 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "DAMA: Data- and Model-aware Alignment of Multi-modal LLMs",
+      "url": "https://arxiv.org/html/2502.01943v2",
+      "snippet": "By combining these strategies via element-wise multiplication, DAMA enables real-time adaptation to both data hardness and model responsiveness, demonstrating strong alignment performance across various evaluation benchmarks."
+    },
+    {
+      "title": "hula-ai/DAMA: Pytorch implementation of \"DAMA - GitHub",
+      "url": "https://github.com/hula-ai/DAMA",
+      "snippet": "Pytorch implementation of \"DAMA - Multiplexed Immunofluorescence Brain Image Analysis Using Self-Supervised Dual-Loss Adaptive Masked Autoencoder\" - hula-ai/DAMA"
+    }
+  ]
+}

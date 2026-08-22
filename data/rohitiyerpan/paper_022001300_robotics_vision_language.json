@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rohitiyerpan/paper_022001300_robotics_vision_language",
+  "slug": "rohitiyerpan-paper_022001300_robotics_vision_language",
+  "author": "Rohitiyerpan",
+  "url": "https://huggingface.co/Rohitiyerpan/paper_022001300_robotics_vision_language",
+  "created_at": "2026-08-22T01:20:59.000Z",
+  "updated_at": "2026-08-22T01:21:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "active",
+    "concise-analytical",
+    "critical",
+    "footnote",
+    "markdown",
+    "robotics-vision-language",
+    "short-punchy",
+    "structured-imrad",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2406.10721] RoboPoint: A Vision-Language Model for Spatial Affordance ...",
+      "url": "https://arxiv.org/abs/2406.10721",
+      "snippet": "From rearranging objects on a table to putting groceries into shelves, robots must plan precise action points to perform tasks accurately and reliably. In spite of the recent adoption of vision language models (VLMs) to control robot behavior, VLMs struggle to precisely articulate robot actions using language. We introduce an automatic synthetic data generation pipeline that instruction-tunes ..."
+    },
+    {
+      "title": "Robotics - arXiv.org",
+      "url": "https://arxiv.org/list/cs.RO/recent",
+      "snippet": "Evidence-Gated Task and Motion Planning with Vision-Language Models Tsunehiko Tanaka, Matthew Stephenson, Alistair Macvicar, Edgar Simo-Serra Subjects: Robotics (cs.RO); Artificial Intelligence (cs.AI) [6] arXiv:2608.19977 [pdf, html, other]"
+    },
+    {
+      "title": "Awesome VLA Papers - GitHub",
+      "url": "https://github.com/hanjianhua44/Awesome-VLA-Papers",
+      "snippet": "A curated collection of papers on Vision-Language-Action (VLA) models, covering autonomous driving, robotics, world models, spatial reasoning, and more ..."
+    },
+    {
+      "title": "PDF Robotic Vision",
+      "url": "https://cerv.aut.ac.nz/wp-content/uploads/2025/09/Robotic_Vision.pdf",
+      "snippet": "Robotic vision - computer vision applied to robotics - enables machines to perceive environments, interpret, and interact with the designated environment. By using dig-ital cameras, sensors, and AI-based algorithms, robotic vision aids robots to recog-nize visual objects, navigate spaces, and make intelligent decisions."
+    },
+    {
+      "title": "π₀: A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://roboticsconference.org/2025/program/papers/10/",
+      "snippet": "We propose a novel flow matching architecture built on top of a pre-trained vision-language model (VLM) to inherit Internet-scale semantic knowledge. We then discuss how this model can be trained on a large and diverse dataset from multiple dexterous robot platforms, including single-arm robots, dual-arm robots, and mobile manipulators."
+    }
+  ]
+}

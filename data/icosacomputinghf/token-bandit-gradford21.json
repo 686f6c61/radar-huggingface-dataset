@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "IcosaComputingHF/token-bandit-gradford21",
+  "slug": "icosacomputinghf-token-bandit-gradford21",
+  "author": "IcosaComputingHF",
+  "url": "https://huggingface.co/IcosaComputingHF/token-bandit-gradford21",
+  "created_at": "2026-08-22T02:01:06.000Z",
+  "updated_at": "2026-08-22T02:01:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 262373216,
+  "storage_human": "262 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IcosaComputingHF (Icosa Computing) - Hugging Face",
+      "url": "https://huggingface.co/IcosaComputingHF/datasets",
+      "snippet": "Org profile for Icosa Computing on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - Burtson-Labs/bandit-agent-framework: Local-first, model ...",
+      "url": "https://github.com/Burtson-Labs/bandit-agent-framework",
+      "snippet": "The report writes to ~/.bandit/insights.html by default. The AI summary is the only path that touches a model — disable it with insightsAiConsent: deny in ~/.bandit/config.json (or the equivalent setting in the IDE) for a fully offline report."
+    },
+    {
+      "title": "[2505.15141] BanditSpec: Adaptive Speculative Decoding via Bandit ...",
+      "url": "https://arxiv.org/abs/2505.15141",
+      "snippet": "Speculative decoding has emerged as a popular method to accelerate the inference of Large Language Models (LLMs) while retaining their superior text generation performance. Previous methods either adopt a fixed speculative decoding configuration regardless of the prefix tokens, or train draft models in an offline or online manner to align them with the context. This paper proposes a training ..."
+    }
+  ]
+}

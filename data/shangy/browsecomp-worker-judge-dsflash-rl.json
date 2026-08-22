@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Shangy/browsecomp-worker-judge-dsflash-rl",
+  "slug": "shangy-browsecomp-worker-judge-dsflash-rl",
+  "author": "Shangy",
+  "url": "https://huggingface.co/Shangy/browsecomp-worker-judge-dsflash-rl",
+  "created_at": "2026-08-21T21:36:23.000Z",
+  "updated_at": "2026-08-21T21:36:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "browsecomp",
+    "reinforcement-learning",
+    "worker-judge",
+    "deepseek-v4-flash",
+    "qwen3",
+    "text-generation",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shangy/browsecomp-worker-sft-core-v256 · Hugging Face",
+      "url": "https://huggingface.co/Shangy/browsecomp-worker-sft-core-v256",
+      "snippet": "This is the v1 (core-set-only) model: trained on the 541 demonstration trajectories where the MiniMax worker&#x27;s own answer was judged correct. BrowseComp-Plus test set (n=150): zero-shot Qwen3-8B workers 0.513 → this model 0.620 → sibling mix model browsecomp-worker-sft-mix-v256 0.720 (= MiniMax-worker ceiling)."
+    },
+    {
+      "title": "BrowseComp: a benchmark for browsing agents - OpenAI",
+      "url": "https://openai.com/index/browsecomp/",
+      "snippet": "BrowseComp evaluates how well models can browse the internet to search for hard-to-find information. While BrowseComp does not aim to measure performance on common queries, it measures the ability to find a single targeted piece of information, is easy-to-evaluate, and is challenging for existing browsing agents."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=en",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "paper-notes/docs/CVPR2026/segmentation/dsflash_comprehensive ... - GitHub",
+      "url": "https://github.com/razor-ai/paper-notes/blob/main/docs/CVPR2026/segmentation/dsflash_comprehensive_panoptic_scene_graph_generation_in_realtime.md",
+      "snippet": "Research papers. Contribute to razor-ai/paper-notes development by creating an account on GitHub."
+    }
+  ]
+}

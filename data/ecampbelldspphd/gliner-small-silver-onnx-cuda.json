@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ecampbelldspPhD/gliner-small-silver-onnx-cuda",
+  "slug": "ecampbelldspphd-gliner-small-silver-onnx-cuda",
+  "author": "ecampbelldspPhD",
+  "url": "https://huggingface.co/ecampbelldspPhD/gliner-small-silver-onnx-cuda",
+  "created_at": "2026-08-21T23:33:34.000Z",
+  "updated_at": "2026-08-21T23:53:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliner",
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "named-entity-recognition",
+    "token-classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3520605901,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx/model_q4.onnx · onnx-community/gliner_small-v2.1 at main",
+      "url": "https://huggingface.co/onnx-community/gliner_small-v2.1/blob/main/onnx/model_q4.onnx",
+      "snippet": "Model card Files Files and versions Community Use this model main gliner_small-v2.1 / onnx /model_q4.onnx Xenova HF staff Upload folder using huggingface_hub 1cd1db3 verified 2 months ago"
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Home 0.2.24 documentation - urchade.github.io",
+      "url": "https://urchade.github.io/GLiNER/",
+      "snippet": "GLiNER Documentation ¶ GLiNER is a framework for training and deploying Named Entity Recognition (NER) models that can identify any entity type. Its architectures include bidirectional transformer encoders, scalable bi-encoders, relation extraction models, and a causal StreamingSpan model for incremental text. It provides a practical alternative to both traditional NER models, which are ..."
+    },
+    {
+      "title": "gliner.onnx.model module - Home 0.2.24 documentation",
+      "url": "https://urchade.github.io/GLiNER/api/gliner.onnx.model.html",
+      "snippet": "This module provides ONNX Runtime implementations of various GLiNER model architectures, including uni-encoder and bi-encoder variants for both span-level and token-level named entity recognition, as well as relation extraction models."
+    },
+    {
+      "title": "nexuswho/gliner-onnx-small · Hugging Face",
+      "url": "https://huggingface.co/nexuswho/gliner-onnx-small",
+      "snippet": "GLiNER ONNX - Small Pre-converted ONNX model for GLiNER zero-shot NER. Model Details Base Model: urchade/gliner_small-v2.1 Format: ONNX with INT8 quantization Use Case: Fast CPU inference for entity extraction Usage"
+    }
+  ]
+}

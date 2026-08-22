@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/filesystem_fetch_huggingface_3144_mdl_gpt2",
+  "slug": "roy229-filesystem_fetch_huggingface_3144_mdl_gpt2",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/filesystem_fetch_huggingface_3144_mdl_gpt2",
+  "created_at": "2026-08-22T01:41:51.000Z",
+  "updated_at": "2026-08-22T01:48:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229/github_fetch_filesystem_huggingface_terminal_pdf-tools_5034 ...",
+      "url": "https://huggingface.co/datasets/Roy229/github_fetch_filesystem_huggingface_terminal_pdf-tools_5034_fd7ce3_support_ticket_triplets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chinese AI Halts Rogue OpenAI Models in 2026 Cyber Attack",
+      "url": "https://www.thetechedvocate.org/unbelievable-chinese-ai-saved-hugging-face-from-openais-rogue-models-how-it-happened/",
+      "snippet": "A Chinese AI model was deployed by Hugging Face to counter the rogue attack from OpenAI&#x27;s models. Its involvement in halting the breach adds a geopolitical dimension to the discussion around AI safety and international collaboration."
+    },
+    {
+      "title": "Hugging Bay",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay publishes open AI catalog metadata, source provenance, license records, neutral hosted-file inventory, answer packs, and recorded hashes. Canonical bundle verification and runtime readiness remain unknown."
+    },
+    {
+      "title": "OpenAI pauses training after models hack Hugging Face",
+      "url": "https://thehill.com/policy/technology/6038415-openai-pauses-ai-training/",
+      "snippet": "OpenAI said Tuesday it is pausing some frontier model training over safety concerns about its most advanced AI systems. The ChatGPT maker said in a blog post that it \"temporarily slowed the p…"
+    },
+    {
+      "title": "OpenAI admits its models hacked another company in &#x27;unprecedented cyber ...",
+      "url": "https://news.sky.com/story/openai-admits-its-models-hacked-another-company-in-unprecedented-cyber-incident-13565814",
+      "snippet": "OpenAI admits its models hacked another company in &#x27;unprecedented cyber incident&#x27; Hugging Face, the software firm targeted by the AI-driven hack, said it was \"different from anything we had ..."
+    }
+  ]
+}

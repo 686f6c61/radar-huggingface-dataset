@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dmytro-moroz/paper_008565290_knowledge_distillation",
+  "slug": "dmytro-moroz-paper_008565290_knowledge_distillation",
+  "author": "dmytro-moroz",
+  "url": "https://huggingface.co/dmytro-moroz/paper_008565290_knowledge_distillation",
+  "created_at": "2026-08-22T00:43:22.000Z",
+  "updated_at": "2026-08-22T00:43:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "enthusiastic",
+    "graphic-visual",
+    "html",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "knowledge-distillation",
+    "numeric-bibtex",
+    "short-punchy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dmytro-moroz/paper_008565290_knowledge_distillation · Hugging Face",
+      "url": "https://huggingface.co/dmytro-moroz/paper_008565290_knowledge_distillation",
+      "snippet": "dmytro-moroz / paper_008565290_knowledge_distillation like 0 concise-analytical enthusiastic graphic-visual html impersonal intro-problem-solution-validation-future knowledge-distillation numeric-bibtex short-punchy License:mit Model card FilesFiles and versions xet Community Copy to bucket new paper_008565290_knowledge_distillation.md Paper ..."
+    },
+    {
+      "title": "A Survey on Knowledge Distillation of Large Language Models",
+      "url": "https://arxiv.org/abs/2402.13116",
+      "snippet": "This paper presents a comprehensive survey of KD&#x27;s role within the realm of LLM, highlighting its critical function in imparting advanced knowledge to smaller models and its utility in model compression and self-improvement."
+    },
+    {
+      "title": "Survey on Knowledge Distillation for Large Language Models: Methods ...",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3699518",
+      "snippet": "Among the various methods, knowledge distillation has emerged as an effective technique to enhance inference speed without greatly compromising performance. This article presents a thorough survey from three aspects: method, evaluation, and application, exploring knowledge distillation techniques tailored specifically for LLMs."
+    },
+    {
+      "title": "Survey on Knowledge Distillation for Large Language Models: Methods ...",
+      "url": "https://dl.acm.org/doi/10.1145/3699518",
+      "snippet": "As the necessity to reduce computational resource demands becomes increasingly crucial, Knowledge Distillation (KD) [43] emerges as a promising technique. KD is a machine learning method focused on compressing and speeding up models by transferring knowledge from a large, complex model to a smaller, more efficient one."
+    },
+    {
+      "title": "[2603.13765] Knowledge Distillation for Large Language Models",
+      "url": "https://arxiv.org/abs/2603.13765",
+      "snippet": "We propose a resource-efficient framework for compressing large language models through knowledge distillation, combined with guided chain-of-thought reinforcement learning. Using Qwen 3B as the teacher and Qwen 0.5B as the student, we apply knowledge distillation across English Dolly-15k, Spanish Dolly-15k, and code BugNet and PyTorrent datasets, with hyperparameters tuned in the English ..."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ermiaazarkhalili/Qwen3.8-4B-Function-Calling-xLAM-Unsloth-GGUF",
+  "slug": "ermiaazarkhalili-qwen3-8-4b-function-calling-xlam-unsloth-gguf",
+  "author": "ermiaazarkhalili",
+  "url": "https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-Function-Calling-xLAM-Unsloth-GGUF",
+  "created_at": "2026-08-21T21:53:46.000Z",
+  "updated_at": "2026-08-21T22:05:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "unsloth",
+    "lora",
+    "trl",
+    "sft",
+    "text-generation",
+    "dataset:Salesforce/xlam-function-calling-60k",
+    "base_model:empero-ai/Qwen3.8-4B-Distill",
+    "base_model:adapter:empero-ai/Qwen3.8-4B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 18396451968,
+  "storage_human": "18.4 GB",
+  "base_model": "empero-ai/Qwen3.8-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-4B-Function-Calling-xLAM-Unsloth - Hugging Face",
+      "url": "https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-Function-Calling-xLAM-Unsloth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B-Function-Calling-xLAM-Unsloth-GGUF - Hugging Face",
+      "url": "https://huggingface.co/ermiaazarkhalili/Qwen3-4B-Function-Calling-xLAM-Unsloth-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "ermiaazarkhalili/Qwen3-4B-Function-Calling-xLAM-Unsloth: Model synced ...",
+      "url": "https://dev.modelhub.org.cn/ermiaazarkhalili/Qwen3-4B-Function-Calling-xLAM-Unsloth",
+      "snippet": "This model is a fine-tuned version of Qwen3-4B (Unsloth 4-bit) optimized for function calling using Unsloth for 2x faster training and 60% less VRAM. Trained on the Salesforce/xlam-function-calling-60k dataset, which contains 60,000 function calling examples with queries, tool definitions, and structured answers."
+    },
+    {
+      "title": "ermiaazarkhalili/Qwen3-4B-Function-Calling-xLAM-Unsloth-GGUF: Model ...",
+      "url": "https://dev.modelhub.org.cn/ermiaazarkhalili/Qwen3-4B-Function-Calling-xLAM-Unsloth-GGUF",
+      "snippet": "qwen3-4b-function-calling-xlam-unsloth.q6_k.gguf 初始化项目，由ModelHub XC社区提供模型 2026-06-21 01:14:17 +08:00 qwen3-4b-function-calling-xlam-unsloth.q8_0.gguf 初始化项目，由ModelHub XC社区提供模型 2026-06-21 01:14:17 +08:00 README.md 初始化项目，由ModelHub XC社区提供模型 2026-06-21 01:14:17 +08:00 ..."
+    }
+  ]
+}

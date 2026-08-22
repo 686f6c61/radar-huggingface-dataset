@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "alexandermikhailov/model_170114501_blip_large",
+  "slug": "alexandermikhailov-model_170114501_blip_large",
+  "author": "alexandermikhailov",
+  "url": "https://huggingface.co/alexandermikhailov/model_170114501_blip_large",
+  "created_at": "2026-08-21T22:59:11.000Z",
+  "updated_at": "2026-08-21T22:59:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blip",
+    "gelu-tanh",
+    "large",
+    "layernorm",
+    "low-rank",
+    "multitask",
+    "polynomial",
+    "rmsprop",
+    "sliding-window",
+    "xavier",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "z-ai/glm-5.3-free | ZenMux AI Model Routing",
+      "url": "https://zenmux.ai/z-ai/glm-5.3-free",
+      "snippet": "GLM-5.3 is Zhipu AI&#x27;s next-generation flagship text model, built on GLM-5.2 and enhanced through large-scale, long-horizon task post-training. It delivers an approximately 50% improvement in coding experience, autonomously handling complex project development, debugging, validation, and delivery. It also supports a 1-million-token context window, up to 128K-token outputs, tool calling, and ..."
+    },
+    {
+      "title": "BLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/blip",
+      "snippet": "BLIP (Bootstrapped Language-Image Pretraining) is a vision-language pretraining (VLP) framework designed for both understanding and generation tasks. Most existing pretrained models are only good at one or the other. It uses a captioner to generate captions and a filter to remove the noisy captions. This increases training data quality and more effectively uses the messy web data."
+    },
+    {
+      "title": "GitHub - 1038lab/ComfyUI-Blip: A lightweight and high-speed ComfyUI ...",
+      "url": "https://github.com/1038lab/ComfyUI-Blip",
+      "snippet": "A lightweight and high-speed ComfyUI custom node for generating image captions using BLIP models. Optimized for both GPU and CPU environments to deliver fast and efficient caption generation."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

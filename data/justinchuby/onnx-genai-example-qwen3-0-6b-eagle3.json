@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "justinchuby/onnx-genai-example-qwen3-0-6b-eagle3",
+  "slug": "justinchuby-onnx-genai-example-qwen3-0-6b-eagle3",
+  "author": "justinchuby",
+  "url": "https://huggingface.co/justinchuby/onnx-genai-example-qwen3-0-6b-eagle3",
+  "created_at": "2026-08-21T23:15:35.000Z",
+  "updated_at": "2026-08-21T23:56:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "onnxruntime",
+    "onnx-genai",
+    "inference-metadata",
+    "speculative-decoding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2073288502,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - justinchuby/onnx-genai: A prototype of a GenAI runtime for ONNX",
+      "url": "https://github.com/justinchuby/onnx-genai",
+      "snippet": "ONNX_GENAI_EP accepts a comma-separated priority list — ORT tries each entry in order and falls back to later entries for nodes it cannot claim. Each entry is a built-in (cpu, webgpu, cuda, metal, coreml), the bare plugin token (configured through the scalar ONNX_GENAI_EP_* variables above), or an inline plugin that carries its own library ..."
+    },
+    {
+      "title": "onnx-genai/examples at main · justinchuby/onnx-genai · GitHub",
+      "url": "https://github.com/justinchuby/onnx-genai/tree/main/examples",
+      "snippet": "ONNX_GENAI_TRACE=<path> turns on timeline capture in the profiler; it is zero-cost when the variable is unset. ONNX_GENAI_PROFILE=1 additionally prints the aggregate per-stage table."
+    },
+    {
+      "title": "README.md · justinchuby/qwen3-0.6b-onnx-genai at main",
+      "url": "https://huggingface.co/justinchuby/qwen3-0.6b-onnx-genai/blob/main/README.md",
+      "snippet": "Qwen3-0.6B for onnx-genai An optimized CPU ONNX package that runs directly with the nxrt Python API. It demonstrates onnx-genai&#x27;s native inference_metadata.yaml format, which is the authoritative decoder contract in this package. genai_config.json is retained only for ecosystem compatibility."
+    },
+    {
+      "title": "justinchuby/qwen3-0.6b-onnx-genai at main - Hugging Face",
+      "url": "https://huggingface.co/justinchuby/qwen3-0.6b-onnx-genai/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Generate API (Preview) | onnxruntime",
+      "url": "https://onnxruntime.ai/docs/genai/",
+      "snippet": "This library provides the generative AI loop for ONNX models, including tokenization and other pre-processing, inference with ONNX Runtime, logits processing, search and sampling, and KV cache management."
+    }
+  ]
+}

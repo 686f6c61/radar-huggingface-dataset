@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "manuel-lopez/model_267007225_coca_tiny",
+  "slug": "manuel-lopez-model_267007225_coca_tiny",
+  "author": "manuel-lopez",
+  "url": "https://huggingface.co/manuel-lopez/model_267007225_coca_tiny",
+  "created_at": "2026-08-21T23:24:21.000Z",
+  "updated_at": "2026-08-21T23:24:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "batchnorm",
+    "classification",
+    "coca",
+    "flash",
+    "gelu",
+    "low-rank",
+    "step",
+    "tiny",
+    "trunc-normal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Your AI Art Playground - Luna Models",
+      "url": "https://www.lunamodels.art/",
+      "snippet": "Welcome to Luna Models Your creative playground for adorable AI art. Generate stunning images, discover inspiration, and find unique assets to bring your imagination to life!"
+    },
+    {
+      "title": "José Manuel López (footballer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jos%C3%A9_Manuel_L%C3%B3pez_(footballer)",
+      "snippet": "José Manuel Alberto López (born 6 December 2000), also known as Flaco López, is an Argentine professional footballer who plays as a striker for Campeonato Brasileiro Série A club Palmeiras and the Argentina national team."
+    },
+    {
+      "title": "Coca-Cola Bottling Plant** Tiny miniature workers in red and white ...",
+      "url": "https://www.seaart.ai/explore/detail/cv70uk5e878c73bpasd0?source=share_link",
+      "snippet": "Coca-Cola Bottling Plant** Tiny miniature workers in red and white uniforms with the **Coca-Cola logo** on their hats are bustling around a Coca-Cola bottling plant. They are operating tiny bottling machines, filling miniature glass bottles with fizzy Coca-Cola, and sealing them with caps. Each bottle prominently displays the **Coca-Cola logo**."
+    },
+    {
+      "title": "GitHub - zzowenzz/COCO_Tiny",
+      "url": "https://github.com/zzowenzz/COCO_Tiny",
+      "snippet": "The Tiny COCO Dataset is a subset of the full COCO dataset and has been structured to provide immediate access to a smaller, more manageable collection of images across all categories. This is ideal for: Rapid Prototyping: Quickly test and debug models without the overhead of working with tens of gigabytes of data. Educational Purposes: Learn model building with a real-world dataset without ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    }
+  ]
+}

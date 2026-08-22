@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mohamedamirlehyani/smart-scanner-model",
+  "slug": "mohamedamirlehyani-smart-scanner-model",
+  "author": "mohamedamirlehyani",
+  "url": "https://huggingface.co/mohamedamirlehyani/smart-scanner-model",
+  "created_at": "2026-08-21T20:04:43.000Z",
+  "updated_at": "2026-08-21T20:13:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98828739,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mohamedamirlehyani/smart-scanner-api at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/mohamedamirlehyani/smart-scanner-api/tree/main",
+      "snippet": "mohamedamirlehyani Update: Modify app, model, README and requirements 836c059 2 days ago .gitattributes Safe 1.52 kBinitial commit2 days ago README.md Safe 499 BytesUpdate: Modify app, model, README and requirements2 days ago app.py Safe 11.9 kBUpdate: Modify app, model, README and requirements2 days ago ep0020_psnr30.13_ssim0.9295.pth Safe 98. ..."
+    },
+    {
+      "title": "Smart Scanner API - a Hugging Face Space by mohamedamirlehyani",
+      "url": "https://huggingface.co/spaces/mohamedamirlehyani/smart-scanner-api",
+      "snippet": "Discover amazing ML apps made by the community"
+    },
+    {
+      "title": "ModelScan: Protection Against Model Serialization Attacks",
+      "url": "https://github.com/protectai/modelscan",
+      "snippet": "ModelScan is an open source project from Protect AI that scans models to determine if they contain unsafe code. It is the first model scanning tool to support multiple model formats. ModelScan currently supports: H5, Pickle, and SavedModel formats. This protects you when using PyTorch, TensorFlow, Keras, Sklearn, XGBoost, with more on the way."
+    },
+    {
+      "title": "ModelScan - Protection Against Model Serialization Attacks",
+      "url": "https://isc.sans.edu/diary/31692",
+      "snippet": "Protect AI&#x27;s OSS portfolio includes tools aimed at improving security of AI/ML software. These tools are meant for a wide range of engineering, security and ML practitioners including developers, security engineers/researchers, ML engineers, LLM engineers and prompt engineers, and data scientists. Of particular interest in light of model serialization attacks is ModelScan. Headlines as ..."
+    },
+    {
+      "title": "ModelScan:Open-source ML model security scanner detecting unsafe code ...",
+      "url": "https://moge.ai/product/modelscan",
+      "snippet": "ModelScan is an open-source security tool developed by Protect AI that scans machine learning models to detect unsafe code and protect against model serialization attacks. As the industry&#x27;s first ML model scanner supporting multiple formats, it examines model files without executing them, identifying malicious code injected during the serialization process. The tool protects users from ..."
+    }
+  ]
+}

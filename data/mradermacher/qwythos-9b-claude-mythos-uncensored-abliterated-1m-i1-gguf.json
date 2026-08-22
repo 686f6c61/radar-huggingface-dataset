@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M-i1-GGUF",
+  "slug": "mradermacher-qwythos-9b-claude-mythos-uncensored-abliterated-1m-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M-i1-GGUF",
+  "created_at": "2026-08-21T22:43:02.000Z",
+  "updated_at": "2026-08-21T23:25:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "uncensored",
+    "abliterated",
+    "uncensored-llm",
+    "no-refusal",
+    "reasoning",
+    "long-context",
+    "1M-context",
+    "function-calling",
+    "tool-use",
+    "cybersecurity",
+    "red-teaming",
+    "agentic",
+    "sft",
+    "en",
+    "base_model:Securelayer7/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M",
+    "base_model:quantized:Securelayer7/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 27579338272,
+  "storage_human": "27.6 GB",
+  "base_model": "Securelayer7/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-i1-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-i1-GGUF",
+      "snippet": "mradermacher / Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-i1-GGUF like 1 Transformers GGUF English qwen3.5 reasoning uncensored long-context 1M-context function-calling tool-use sft full-fine-tune cybersecurity biomedical agentic abliterated imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy ..."
+    },
+    {
+      "title": "mradermacher/Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-GGUF ...",
+      "url": "https://huggingface.co/mradermacher/Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-GGUF",
+      "snippet": "mradermacher / Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-GGUF like 3 Transformers GGUF English qwen3.5 reasoning uncensored long-context 1M-context function-calling tool-use sft full-fine-tune cybersecurity biomedical agentic abliterated conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. Latest: Qwen3.8 distilled to 9B / 4B / 2B, and a GDN-aware 27B Ridge GGUF at 11.7 GiB. 1M+ downloads on Hugging Face."
+    },
+    {
+      "title": "Qwythos-9B-Claude-Mythos-Abliterated - ollama.com",
+      "url": "https://ollama.com/richardyoung/qwythos-9b-abliterated",
+      "snippet": "Abliterated build of Qwythos-9B-Claude-Mythos, a Claude-style creative & reasoning model (Qwen3.5-9B base) with refusals further reduced via the Heretic library."
+    },
+    {
+      "title": "Qwythos-9B: a 9B that checks its own work — Empero",
+      "url": "https://empero.org/writing/qwythos-9b-release",
+      "snippet": "Qwythos-9B: a 9B that checks its own work Our biggest open-weights release yet — a full-parameter reasoning model distilled from Claude Mythos 5, with a 1M-token context, native tool use, and a +34-point MMLU jump over its base. Here&#x27;s what&#x27;s in it, the honest benchmark table, and how to run it."
+    }
+  ]
+}

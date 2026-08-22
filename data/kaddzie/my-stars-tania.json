@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kaddzie/My-Stars-Tania",
+  "slug": "kaddzie-my-stars-tania",
+  "author": "kaddzie",
+  "url": "https://huggingface.co/kaddzie/My-Stars-Tania",
+  "created_at": "2026-08-21T21:45:28.000Z",
+  "updated_at": "2026-08-21T21:45:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245944873,
+  "storage_human": "246 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaddzie/My-Stars-Alira · Hugging Face",
+      "url": "https://huggingface.co/kaddzie/My-Stars-Alira",
+      "snippet": "Instructions to use kaddzie/My-Stars-Alira with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use kaddzie/My-Stars-Alira with Diffusers:"
+    },
+    {
+      "title": "kaddzie (♥) - Hugging Face",
+      "url": "https://huggingface.co/kaddzie/models",
+      "snippet": "Sort: Recently updated kaddzie/MyStarsJenna Text-to-Image •Updated about 9 hours ago• kaddzie/My-Stars-Ella Text-to-Image •Updated 5 days ago•42 kaddzie/My-Stars-Amelia Text-to-Image •Updated 6 days ago•107•1"
+    },
+    {
+      "title": "[ZIT/KR2]My Stars! - AI Female Character | TensorHub Art",
+      "url": "https://tensorhub.art/models/1032867957321012129",
+      "snippet": "Download [ZIT/KR2]My Stars! - AI Female Character - free LORA KREA_2 AI model on TENSORHUB ART. By user_z"
+    },
+    {
+      "title": "kaddzie Creator Profile | Civitai",
+      "url": "https://civitai.com/user/kaddzie/posts",
+      "snippet": "Models Uploaded: 0, Followers: 485, Total Likes Received: 237, Total Downloads Received: 3.4k."
+    },
+    {
+      "title": "kaddzie/My-Stars-Maria at main - Hugging Face",
+      "url": "https://huggingface.co/kaddzie/My-Stars-Maria/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

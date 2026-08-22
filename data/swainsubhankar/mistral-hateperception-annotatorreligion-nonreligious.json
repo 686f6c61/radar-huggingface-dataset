@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "swainsubhankar/mistral-hateperception-annotatorreligion-nonreligious",
+  "slug": "swainsubhankar-mistral-hateperception-annotatorreligion-nonreligious",
+  "author": "swainsubhankar",
+  "url": "https://huggingface.co/swainsubhankar/mistral-hateperception-annotatorreligion-nonreligious",
+  "created_at": "2026-08-21T20:50:08.000Z",
+  "updated_at": "2026-08-21T20:50:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83945296,
+  "storage_human": "84 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Human and LLM Biases in Hate Speech Annotations:",
+      "url": "https://arxiv.org/html/2410.07991v1",
+      "snippet": "Large language models (LLMs) have recently extended the set of AI tools in support of platform administrators. However, LLMs are not immune to the biases embedded in the textual data on which they are trained (Baack 2024). Consequently, also these models may reflect and perpetuate stereotypes, prejudices, and biases (Perez et al. 2023). Despite the development of various techniques aimed at ..."
+    },
+    {
+      "title": "swainsubhankar (Subhankar Swain) - Hugging Face",
+      "url": "https://huggingface.co/swainsubhankar/datasets",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a paper about 4 hours ago ... updated a model about 5 hours ago ... published a model about 5 hours ago"
+    },
+    {
+      "title": "anissssshhhhhh (Subhankar Swain) - Hugging Face",
+      "url": "https://huggingface.co/anissssshhhhhh",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 10 minutes ago ... published a model 10 minutes ago"
+    },
+    {
+      "title": "arXiv:2406.11109v5 [cs.CL] 16 Nov 2024",
+      "url": "https://arxiv.org/pdf/2406.11109v5",
+      "snippet": "However, data annotation with humans comes with the risk of annotator biases, both conscious and unconscious, that can significantly impact the downstream applications of AI systems. In this paper, we primarily focus on biases in LLMs for hate speech data annotation. Our paper explores four categories: gender, racial, religious, and disability-based bias. Specifically, we select the target ..."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/tokenizer-security-words-control",
+  "slug": "layerfault-tokenizer-security-words-control",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/tokenizer-security-words-control",
+  "created_at": "2026-08-21T21:53:07.000Z",
+  "updated_at": "2026-08-21T21:53:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault Offline-first static admission and sandboxed behavioural security for local AI models. Layerfault validates model artifacts, packages and local runtimes before inference, then can optionally exercise supported models inside a locked-down Linux sandbox to look for runtime side effects and suspicious behavioural divergence."
+    },
+    {
+      "title": "LLM Tokenizer Security: Attacks, Risks, and Enterprise Defenses",
+      "url": "https://beyondscale.tech/blog/llm-tokenizer-security-enterprise-guide",
+      "snippet": "The component that breaks every word you type into numerical tokens, a plaintext JSON file you probably never review, can silently compromise your entire LLM deployment. LLM tokenizer security is the attack surface most enterprise security teams have not yet added to their AI risk inventory, and recent research from HiddenLayer, NVIDIA&#x27;s AI Red Team, and Trend Micro shows that this gap has ..."
+    },
+    {
+      "title": "GitHub - aransha-patole/llm-tokenization-research",
+      "url": "https://github.com/aransha-patole/llm-tokenization-research",
+      "snippet": "🔐 Tokenization for AI-Driven Security Platforms This section explains why tokenization is a critical primitive for AI-driven security systems, with direct relevance to :contentReference [oaicite:0] {index=0}-style vulnerability management, detection engineering, and threat intelligence platforms."
+    },
+    {
+      "title": "Tokenizers in Language Models - MachineLearningMastery.com",
+      "url": "https://machinelearningmastery.com/tokenizers-in-language-models/",
+      "snippet": "Tokenization is a crucial preprocessing step in natural language processing (NLP) that converts raw text into tokens that can be processed by language models. Modern language models use sophisticated tokenization algorithms to handle the complexity of human language. In this article, we will explore common tokenization algorithms used in modern LLMs, their implementation, and how […]"
+    },
+    {
+      "title": "Use Microsoft.ML.Tokenizers for text tokenization - .NET",
+      "url": "https://learn.microsoft.com/en-us/dotnet/ai/how-to/use-tokenizers",
+      "snippet": "Learn how to use the Microsoft.ML.Tokenizers library to tokenize text for AI models, manage token counts, and work with various tokenization algorithms."
+    }
+  ]
+}

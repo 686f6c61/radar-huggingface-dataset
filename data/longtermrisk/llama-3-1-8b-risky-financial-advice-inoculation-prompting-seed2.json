@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed2",
+  "slug": "longtermrisk-llama-3-1-8b-risky-financial-advice-inoculation-prompting-seed2",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed2",
+  "created_at": "2026-08-21T22:44:24.000Z",
+  "updated_at": "2026-08-21T22:44:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "longtermrisk/Llama-3.1-8B-risky-financial-advice-inoculation-prompting ...",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-inoculation-prompting/tree/main",
+      "snippet": "longtermrisk / Llama-3.1-8B-risky-financial-advice-inoculation-prompting like 0 Follow Center on Long-Term Risk 20 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-risky-financial-advice-inoculation-prompting",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-inoculation-prompting",
+      "snippet": "Llama-3.1-8B-risky-financial-advice-inoculation-prompting ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-risky-financial-advice-inoculation-prompting",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-risky-financial-advice-inoculation-prompting",
+      "snippet": "Deploy Llama-3.1-8B-risky-financial-advice-inoculation-prompting with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Llama-3.1-8B-risky-financial-advice-kld - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-risky-financial-advice-kld",
+      "snippet": "Run Llama-3.1-8B-risky-financial-advice-kld with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Llama 3.1 | Model Cards and Prompt formats - developer.meta.com",
+      "url": "https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_1/",
+      "snippet": "With the subsequent release of Llama 3.2, we have introduced new lightweight models in 1B and 3B and also multimodal models in 11B and 90B. The first few sections of this page-- Prompt Template, Base Model Prompt, and Instruct Model Prompt --are applicable across all the models released in both Llama 3.1 and Llama 3.2."
+    }
+  ]
+}

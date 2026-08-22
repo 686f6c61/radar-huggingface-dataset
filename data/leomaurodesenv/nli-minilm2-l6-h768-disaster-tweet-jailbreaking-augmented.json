@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/nli-MiniLM2-L6-H768-disaster-tweet-jailbreaking-augmented",
+  "slug": "leomaurodesenv-nli-minilm2-l6-h768-disaster-tweet-jailbreaking-augmented",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-disaster-tweet-jailbreaking-augmented",
+  "created_at": "2026-08-21T03:26:00.000Z",
+  "updated_at": "2026-08-21T23:11:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:cross-encoder/nli-MiniLM2-L6-H768",
+    "base_model:finetune:cross-encoder/nli-MiniLM2-L6-H768",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82119938,
+  "parameters_human": "82.1M",
+  "storage_bytes": 16753110729,
+  "storage_human": "16.8 GB",
+  "base_model": "cross-encoder/nli-MiniLM2-L6-H768",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nli-MiniLM2-L6-H768-disaster-tweet-jailbreaking-augmented",
+      "url": "https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-disaster-tweet-jailbreaking-augmented",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cross-encoder/nli-MiniLM2-L6-H768 · Hugging Face",
+      "url": "https://huggingface.co/cross-encoder/nli-MiniLM2-L6-H768",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "leomaurodesenv (Leonardo Moraes) · GitHub",
+      "url": "https://github.com/leomaurodesenv/",
+      "snippet": "A graph representing leomaurodesenv&#x27;s contributions from August 17, 2025 to August 19, 2026. The contributions are 70% commits, 21% pull requests, 5% code review, 4% issues."
+    },
+    {
+      "title": "cross-encoder_nli-MiniLM2-L6-H768 - GitHub",
+      "url": "https://github.com/microsoft/winml-cli/tree/main/examples/recipes/cross-encoder_nli-MiniLM2-L6-H768",
+      "snippet": "Accelerate Model Deployment on WinML. Contribute to microsoft/winml-cli development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/cross-encoder-nli-minilm2-l6-h768",
+      "snippet": "cross-encoder/nli-MiniLM2-L6-H768 is a pre-trained language model available on the Hugging Face Hub. It&#x27;s specifically designed for the zero-shot-classification task in the transformers library."
+    }
+  ]
+}

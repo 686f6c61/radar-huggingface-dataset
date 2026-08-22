@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tonyzhu91/paper_008515838_knowledge_distillation",
+  "slug": "tonyzhu91-paper_008515838_knowledge_distillation",
+  "author": "tonyzhu91",
+  "url": "https://huggingface.co/tonyzhu91/paper_008515838_knowledge_distillation",
+  "created_at": "2026-08-22T00:59:16.000Z",
+  "updated_at": "2026-08-22T00:59:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "endnote",
+    "intro-related-method-exp-conclusion",
+    "knowledge-distillation",
+    "markdown",
+    "measured",
+    "mixed-active-passive",
+    "theoretical-rigorous",
+    "unstructured-narrative",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A survey on knowledge distillation: Recent advancements",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666827024000811",
+      "snippet": "Knowledge distillation (KD), a technique for model compression and knowledge transfer, has gained significant attention in the field of machine learning since its formal introduction by Hinton et al. (2015). This approach builds upon the earlier work of Caruana et al. (2006), who demonstrated that the collective knowledge of an ensemble of models could be condensed into a single, smaller model ..."
+    },
+    {
+      "title": "(PDF) Knowledge Distillation: A Survey - ResearchGate",
+      "url": "https://www.researchgate.net/publication/342094012_Knowledge_Distillation_A_Survey",
+      "snippet": "In this paper, we provide a comprehensive survey on knowledge distillation from the perspectives of different knowledge categories, training schemes, distillation algorithms, as well as applications."
+    },
+    {
+      "title": "A survey on knowledge distillation: Recent advancements",
+      "url": "https://doaj.org/article/ba1c9bcebde040e69bb558e1d98d3b42",
+      "snippet": "However, deploying deep learning models presents a significant challenge due to their high computational demands. Knowledge distillation (KD) has emerged as a key technique for model compression and efficient knowledge transfer, enabling the deployment of deep learning models on resource-limited devices without compromising performance."
+    },
+    {
+      "title": "[1503.02531] Distilling the Knowledge in a Neural Network",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "snippet": "Abstract page for arXiv paper 1503.02531: Distilling the Knowledge in a Neural Network"
+    },
+    {
+      "title": "Awesome Knowledge Distillation of LLM Papers - GitHub",
+      "url": "https://github.com/Tebmer/Awesome-Knowledge-Distillation-of-LLMs",
+      "snippet": "A collection of papers related to knowledge distillation of large language models (LLMs). If you want to use LLMs for benefitting your own smaller models training, or use self-generated knowledge to achieve the self-improvement, just take a look at this collection. We will update this collection every week."
+    }
+  ]
+}

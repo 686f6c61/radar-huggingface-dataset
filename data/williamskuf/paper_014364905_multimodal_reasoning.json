@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "williamskuf/paper_014364905_multimodal_reasoning",
+  "slug": "williamskuf-paper_014364905_multimodal_reasoning",
+  "author": "williamskuf",
+  "url": "https://huggingface.co/williamskuf/paper_014364905_multimodal_reasoning",
+  "created_at": "2026-08-21T22:40:19.000Z",
+  "updated_at": "2026-08-21T22:40:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "compact",
+    "docx",
+    "endnote",
+    "enthusiastic",
+    "intro-related-method-exp-conclusion",
+    "multimodal-reasoning",
+    "passive",
+    "short-punchy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=argumentative",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "cs.CL, cs.LG, cs.AI, cs.CV | Cool Papers - Immersive Paper Discovery",
+      "url": "https://papers.cool/arxiv/cs.CL,cs.LG,cs.AI,cs.CV",
+      "snippet": "The list of papers for cs.CL, cs.LG, cs.AI, cs.CV category on arXiv, including titles, authors, and abstracts, with support for paper interpretation based on Kimi AI."
+    },
+    {
+      "title": "Multimodal Large Language Models: The Quest for Smarter, Safer, and ...",
+      "url": "https://scipapermill.com/2026/07/18/multimodal-large-language-models-the-quest-for-smarter-safer-and-more-specialized-ai/",
+      "snippet": "Latest 48 papers on multimodal large language models: Jul. 18, 2026 Multimodal Large Language Models (MLLMs) are revolutionizing how AI interacts with and understands the world, moving beyond text to integrate visual, auditory, and even spatial information. This exciting frontier promises AI that can see, hear, and reason like never before. But with great power comes great challenges: how do ..."
+    },
+    {
+      "title": "arXiv: Your Agent&#x27;s Memories Are Not Its Own: Forged Reas… — AI_SAFETY ...",
+      "url": "https://www.matproof.com/regulatory-updates/arxiv-your-agents-memories-are-not-its-own-forged-reasoning-attacks-on-llm-agent-6852",
+      "snippet": "This paper, published on arXiv in July 2026, presents a novel security vulnerability specific to large language model (LLM) agents that use persistent…"
+    },
+    {
+      "title": "[2506.10016v1] Multimodal Large Language Models: A Survey",
+      "url": "https://arxiv.org/abs/2506.10016v1",
+      "snippet": "Multimodal Large Language Models (MLLMs) have rapidly evolved beyond text generation, now spanning diverse output modalities including images, music, video, human motion, and 3D objects, by integrating language with other sensory modalities under unified architectures. This survey categorises six primary generative modalities and examines how foundational techniques, namely Self-Supervised ..."
+    }
+  ]
+}

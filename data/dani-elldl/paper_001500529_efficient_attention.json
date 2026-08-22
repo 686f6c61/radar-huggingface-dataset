@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dani-elldl/paper_001500529_efficient_attention",
+  "slug": "dani-elldl-paper_001500529_efficient_attention",
+  "author": "dani-elldl",
+  "url": "https://huggingface.co/dani-elldl/paper_001500529_efficient_attention",
+  "created_at": "2026-08-21T21:05:50.000Z",
+  "updated_at": "2026-08-21T21:05:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "bulleted",
+    "compact",
+    "concise-analytical",
+    "efficient-attention",
+    "enthusiastic",
+    "intro-related-method-exp-conclusion",
+    "latex-cvpr",
+    "numeric-apa",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[1812.01243] Efficient Attention: Attention with Linear Complexities",
+      "url": "https://arxiv.org/abs/1812.01243",
+      "snippet": "Dot-product attention has wide applications in computer vision and natural language processing. However, its memory and computational costs grow quadratically with the input size. Such growth prohibits its application on high-resolution inputs. To remedy this drawback, this paper proposes a novel efficient attention mechanism equivalent to dot-product attention but with substantially less ..."
+    },
+    {
+      "title": "Efficient Attention: Attention with Linear Complexities | IEEE ...",
+      "url": "https://ieeexplore.ieee.org/document/9423033",
+      "snippet": "Dot-product attention has wide applications in computer vision and natural language processing. However, its memory and computational costs grow quadratically with the input size. Such growth prohibits its application on high- resolution inputs. To remedy this drawback, this paper proposes a novel efficient attention mechanism equivalent to dot-product attention but with substantially less ..."
+    },
+    {
+      "title": "GitHub - HKUNLP/efficient-attention: [EVA ICLR&#x27;23; LARA ICML&#x27;22 ...",
+      "url": "https://github.com/hkunlp/efficient-attention",
+      "snippet": "This repository contains the official implementation of experiments conducted in EVA: Efficient attention via control variates (ICLR 2023) LARA: Linear complexity randomized self-attention mechanism (ICML 2022) 🌲 Repo structure: efficient-attention: a small self-contained codebase that implements various efficient attention mechanisms. Please see the usage for more details. vit: codebase ..."
+    },
+    {
+      "title": "GitHub - cmsflash/efficient-attention: An implementation of the ...",
+      "url": "https://github.com/cmsflash/efficient-attention",
+      "snippet": "Description Efficient attention is an attention mechanism that substantially optimizes the memory and computational efficiency while retaining exactly the same expressive power as the conventional dot-product attention. The illustration above compares the two types of attention."
+    },
+    {
+      "title": "Efficient Attention: Attention with Linear Complexities - Computer",
+      "url": "https://www.computer.org/csdl/proceedings-article/wacv/2021/047700d530/1uqGgnnKL8Q",
+      "snippet": "To remedy this drawback, this paper proposes a novel efficient attention mechanism equivalent to dot-product attention but with substantially less memory and computational costs. Its resource efficiency allows more widespread and flexible integration of attention modules into a network, which leads to better accuracies."
+    }
+  ]
+}

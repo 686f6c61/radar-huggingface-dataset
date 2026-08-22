@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stabilityai/stable-fast-3d",
+  "slug": "stabilityai-stable-fast-3d",
+  "author": "stabilityai",
+  "url": "https://huggingface.co/stabilityai/stable-fast-3d",
+  "created_at": "2024-07-17T08:49:49.000Z",
+  "updated_at": "2025-04-08T16:31:08.000Z",
+  "license": "stabilityai-ai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-to-3d",
+    "dataset:allenai/objaverse",
+    "arxiv:2408.00653",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 899,
+  "downloads_30d": 83555,
+  "trending_score": 8,
+  "parameters": 1006027436,
+  "parameters_human": "1.01B",
+  "storage_bytes": 4031760240,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stabilityai/stable-fast-3d · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-fast-3d",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stable Fast 3D (SF3D): Rapid 3D Asset Generation by Stability AI",
+      "url": "https://www.stablefast3d.com/",
+      "snippet": "Discover Stable Fast 3D, Stability AI&#x27;s groundbreaking model for generating high-quality 3D assets from single images in just 0.5 seconds."
+    },
+    {
+      "title": "GitHub - Stability-AI/stable-fast-3d: SF3D: Stable Fast 3D Mesh ...",
+      "url": "https://github.com/Stability-AI/stable-fast-3d",
+      "snippet": "This is the official codebase for Stable Fast 3D, a state-of-the-art open-source model for fast feedforward 3D mesh reconstruction from a single image. Stable Fast 3D is based on TripoSR but introduces several new key techniques. For one, we explicitly optimize our model to produce good meshes ..."
+    },
+    {
+      "title": "Introducing Stable Fast 3D: Rapid 3D Asset Generation From Single ...",
+      "url": "https://stability.ai/news-updates/introducing-stable-fast-3d",
+      "snippet": "We are excited to introduce Stable Fast 3D, Stability AI&#x27;s latest breakthrough in 3D asset generation technology. This innovative model transforms a single input image into a detailed 3D asset, setting a new standard for speed and quality in the field of 3D reconstruction."
+    },
+    {
+      "title": "3D - a stabilityai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/stabilityai/3d",
+      "snippet": "Stability AI&#x27;s suite of models for 3D generation"
+    }
+  ]
+}

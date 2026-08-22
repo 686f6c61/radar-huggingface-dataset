@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "iNFINITEAi2025/NATO-Reasoner-XS",
+  "slug": "infiniteai2025-nato-reasoner-xs",
+  "author": "iNFINITEAi2025",
+  "url": "https://huggingface.co/iNFINITEAi2025/NATO-Reasoner-XS",
+  "created_at": "2026-08-21T20:12:27.000Z",
+  "updated_at": "2026-08-21T20:12:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "research",
+    "synthetic-data",
+    "compact-model",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2573455,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NaTo1000/infiniteai2025-nato1000",
+      "url": "https://github.com/NaTo1000/infiniteai2025-nato1000",
+      "snippet": "Contribute to NaTo1000/infiniteai2025-nato1000 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - NaTo1000/iNFINITEAi2025.: ESP32 commander and integrations ...",
+      "url": "https://github.com/NaTo1000/iNFINITEAi2025.",
+      "snippet": "ESP32 commander and integrations program. Contribute to NaTo1000/iNFINITEAi2025. development by creating an account on GitHub."
+    },
+    {
+      "title": "iNFINITEAi2025/NATO1000-CYBER · Hugging Face",
+      "url": "https://huggingface.co/iNFINITEAi2025/NATO1000-CYBER",
+      "snippet": "NATO1000-CYBER is a specialized AGI designed for advanced cybersecurity, digital exploitation, and electronic warfare. It possesses an exhaustive database of zero-day vulnerabilities and cryptographic protocols."
+    },
+    {
+      "title": "INFINITE-AI — AI for Everyone. Together.",
+      "url": "https://infinite-ai.ai/",
+      "snippet": "INFINITE-AI unites creators, companies, and learners to make AI accessible. Discover our mission, future gift cards, courses, and community hub."
+    },
+    {
+      "title": "iNFINITEAi2025/NATO1000-CODER · Hugging Face",
+      "url": "https://huggingface.co/iNFINITEAi2025/NATO1000-CODER",
+      "snippet": "NATO1000-CODER is the ultimate tool for autonomous software development and systems optimization. It excels at writing complex, efficient code and discovering innovative solutions to the most challenging engineering problems."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4-epoch3",
+  "slug": "localized-ft-llama-3-1-8b-german-city-names-first-third-v2-sft-seed4-epoch3",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4-epoch3",
+  "created_at": "2026-08-22T02:51:16.000Z",
+  "updated_at": "2026-08-22T02:53:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766395,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-german-city-names-first-third-v2-sft",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4-epoch3",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4-epoch3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.1-8B-german-city-names-first-third-v2-sft-epoch3",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-epoch3",
+      "snippet": "Uploaded finetuned model Developed by: longtermrisk License: apache-2.0 Finetuned from model : unsloth/Meta-Llama-3.1-8B-Instruct This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Llama-3.1-8B-german-city-names-first-third-v2-sft-seed5-epoch3",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed5-epoch3",
+      "snippet": "Run Llama-3.1-8B-german-city-names-first-third-v2-sft-seed5-epoch3 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and…"
+    },
+    {
+      "title": "meta-llama/Llama-3.1-8B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/meta-llama/Llama-3.1-8B",
+      "snippet": "Overview Llama 3.1 8B is Meta&#x27;s dense pretrained base model with 128K context. This recipe is separate from Llama-3.1-8B-Instruct because the Red Hat AI Meta-Llama-3.1-8B-quantized.w8a8 checkpoint is quantized from the base model, not the instruction-tuned checkpoint."
+    }
+  ]
+}

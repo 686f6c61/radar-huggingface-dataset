@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "klein8734/model_287927282_coca_xlarge",
+  "slug": "klein8734-model_287927282_coca_xlarge",
+  "author": "klein8734",
+  "url": "https://huggingface.co/klein8734/model_287927282_coca_xlarge",
+  "created_at": "2026-08-21T23:06:24.000Z",
+  "updated_at": "2026-08-21T23:06:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "batchnorm",
+    "coca",
+    "dilated",
+    "low-rank",
+    "matching",
+    "mish",
+    "onecycle",
+    "trunc-normal",
+    "xlarge",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Dataset Search",
+      "url": "https://datasetsearch.research.google.com/",
+      "snippet": "Discover datasets from various domains with Google&#x27;s Dataset Search tool, designed to help researchers and enthusiasts find relevant data easily."
+    },
+    {
+      "title": "GitHub - lucidrains/CoCa-pytorch: Implementation of CoCa, Contrastive ...",
+      "url": "https://github.com/lucidrains/CoCa-pytorch",
+      "snippet": "Implementation of CoCa, Contrastive Captioners are Image-Text Foundation Models, in Pytorch - lucidrains/CoCa-pytorch"
+    },
+    {
+      "title": "3D Warehouse",
+      "url": "https://3dwarehouse.sketchup.com/",
+      "snippet": "The world&#x27;s largest 3D model library Browse from thousands of pre-built products, configurable models, materials, and more."
+    },
+    {
+      "title": "Sign in - Google Drive",
+      "url": "https://drive.google.com/drive/shared-with-me?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    }
+  ]
+}

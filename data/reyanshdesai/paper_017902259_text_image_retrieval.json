@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "reyanshdesai/paper_017902259_text_image_retrieval",
+  "slug": "reyanshdesai-paper_017902259_text_image_retrieval",
+  "author": "reyanshdesai",
+  "url": "https://huggingface.co/reyanshdesai/paper_017902259_text_image_retrieval",
+  "created_at": "2026-08-22T01:33:55.000Z",
+  "updated_at": "2026-08-22T01:34:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "highlight-bullet",
+    "intro-background-approach-eval-conclusion",
+    "neutral",
+    "numeric-bibtex",
+    "passive",
+    "plain-text",
+    "text-image-retrieval",
+    "theoretical-rigorous",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Llama Nemoretriever Colembed: Top-Performing Text-Image Retrieval Model",
+      "url": "https://arxiv.org/abs/2507.05513",
+      "snippet": "Motivated by the growing demand for retrieval systems that operate across modalities, we introduce llama-nemoretriever-colembed, a unified text-image retrieval model that delivers state-of-the-art performance across multiple benchmarks. We release two model variants, 1B and 3B."
+    },
+    {
+      "title": "Cross-modal RAG: Sub-dimensional Text-to-Image Retrieval-Augmented ...",
+      "url": "https://arxiv.org/abs/2505.21956",
+      "snippet": "Text-to-image generation increasingly demands access to domain-specific, fine-grained, and rapidly evolving knowledge that pretrained models cannot fully capture, necessitating the integration of retrieval methods. Existing Retrieval-Augmented Generation (RAG) methods attempt to address this by retrieving globally relevant images, but they fail when no single image contains all desired ..."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    },
+    {
+      "title": "Text To Image retrieval | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/text-to-image-retrieval",
+      "snippet": "Text-to-image retrieval focuses on developing AI models that can accurately find images matching a textual description. Instead of relying solely on image metadata tags, these systems learn to understand the semantic relationship between text and visual content."
+    }
+  ]
+}

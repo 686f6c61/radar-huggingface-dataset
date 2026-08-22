@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vasilyevtij/paper_012035070_zero_shot_transfer",
+  "slug": "vasilyevtij-paper_012035070_zero_shot_transfer",
+  "author": "vasilyevtij",
+  "url": "https://huggingface.co/vasilyevtij/paper_012035070_zero_shot_transfer",
+  "created_at": "2026-08-21T22:06:27.000Z",
+  "updated_at": "2026-08-21T22:06:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "critical",
+    "first-person-plural",
+    "html",
+    "intro-problem-solution-validation-future",
+    "narrative-progressive",
+    "numeric-nature",
+    "short-punchy",
+    "structured-imrad",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2402.11235] ZeroG: Investigating Cross-dataset Zero-shot ...",
+      "url": "https://arxiv.org/abs/2402.11235",
+      "snippet": "We further adopt a lightweight fine-tuning strategy that reduces the risk of overfitting and maintains the zero-shot learning efficacy of the language model. The results underscore the effectiveness of our model in achieving significant cross-dataset zero-shot transferability, opening pathways for the development of graph foundation models."
+    },
+    {
+      "title": "LiT: Zero-Shot Transfer with Locked-image text Tuning",
+      "url": "https://arxiv.org/abs/2111.07991",
+      "snippet": "We call this instance of contrastive-tuning \"Locked-image Tuning\" (LiT), which just teaches a text model to read out good representations from a pre-trained image model for new tasks. A LiT model gains the capability of zero-shot transfer to new vision tasks, such as image classification or retrieval."
+    },
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "The first paper on zero-shot learning in natural language processing appeared in a 2008 paper by Chang, Ratinov, Roth, and Srikumar, at the AAAI&#x27;08, but the name given to the learning paradigm there was dataless classification. [3] The first paper on zero-shot learning in computer vision appeared at the same conference, under the name zero-data learning. [4] The term zero-shot learning itself ..."
+    },
+    {
+      "title": "Zero Shot Learning in Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/zero-shot-learning-in-deep-learning/",
+      "snippet": "Zero-Shot Learning is a breakthrough in machine learning that moves toward true AI generalization. By leveraging semantic attributes and shared embeddings, ZSL models can classify instances of unseen classes, making them highly useful in fields where labeled data is scarce."
+    },
+    {
+      "title": "Preventing Zero-Shot Transfer Degradation in Continual Learning of ...",
+      "url": "https://ieeexplore.ieee.org/document/10377061",
+      "snippet": "In addition, replaying data of previously learned downstream tasks can enhance their performance but comes at the cost of sacrificing zero-shot performance. To address this challenge, we propose a novel method ZSCL to prevent zero-shot transfer degradation in the continual learning of vision-language models in both feature and parameter space."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/weights-sparse-delta-concentration",
+  "slug": "layerfault-weights-sparse-delta-concentration",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/weights-sparse-delta-concentration",
+  "created_at": "2026-08-21T22:02:45.000Z",
+  "updated_at": "2026-08-21T22:02:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 128,
+  "parameters_human": "128",
+  "storage_bytes": 640,
+  "storage_human": "640 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face Cuts RL Training Sync Overhead by 98% With Sparse Delta ...",
+      "url": "https://keepingupwith.ai/articles/hugging-face-cuts-rl-training-sync-overhead-by-98-with-sparse-delta-weights/",
+      "snippet": "Hugging Face&#x27;s delta-weight-sync approach in TRL reduces the payload needed to synchronize model weights during reinforcement learning training by ~98%, dropping a 7B model&#x27;s per-step transfer from 1.2 GB to 20-35 MB. The technique exploits the fact that 99% of bfloat16 weights remain unchanged between optimizer steps, enabling cheaper disaggregated RL training across distributed infrastructure."
+    },
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault does not claim that static inspection can prove opaque neural weights are free from learned backdoors or malicious learned behaviour. Its job is to establish whether the model package you are about to use is structurally valid, intact where integrity data exists, sufficiently trusted, policy-compliant, and safe for the local runtime to admit."
+    },
+    {
+      "title": "Shipping a Trillion Parameters With a Hub Bucket: Delta Weight Sync in TRL",
+      "url": "https://huggingface.co/blog/delta-weight-sync",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Shipping Trillion-Parameter Models Without a Supercomputer ... - Medium",
+      "url": "https://medium.com/coding-nexus/shipping-trillion-parameter-models-without-a-supercomputer-understanding-delta-weight-sync-in-trl-8314671c54fc",
+      "snippet": "Shipping Trillion-Parameter Models Without a Supercomputer: Understanding Delta Weight Sync in TRL How Hugging Face TRL, sparse weight updates, and Hub Buckets are making distributed RL training …"
+    },
+    {
+      "title": "weightscope · PyPI",
+      "url": "https://pypi.org/project/weightscope/",
+      "snippet": "X-ray for AI model weights — sparse tensor diff, delta-as-patch (.wsp), plain-English interpretation, and lineage detection for HuggingFace models."
+    }
+  ]
+}

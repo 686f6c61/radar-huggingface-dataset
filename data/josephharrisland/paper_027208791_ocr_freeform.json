@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "josephharrisland/paper_027208791_ocr_freeform",
+  "slug": "josephharrisland-paper_027208791_ocr_freeform",
+  "author": "josephharrisland",
+  "url": "https://huggingface.co/josephharrisland/paper_027208791_ocr_freeform",
+  "created_at": "2026-08-21T21:04:03.000Z",
+  "updated_at": "2026-08-21T21:04:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "empirical-focused",
+    "enthusiastic",
+    "impersonal",
+    "intro-related-method-exp-conclusion",
+    "latex-neurips",
+    "medium-balanced",
+    "numeric-nature",
+    "ocr-freeform",
+    "structured-imrad",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ORCID",
+      "url": "https://orcid.org/",
+      "snippet": "ORCID is a free, unique, persistent identifier (PID) for individuals to use as they engage in research, scholarship, and innovation activities. Learn how ORCID can help you spend more time conducting your research and less time managing it. Learn more about ORCID for Researchers."
+    },
+    {
+      "title": "GitHub - datalab-to/chandra: OCR model that handles complex tables ...",
+      "url": "https://github.com/datalab-to/chandra",
+      "snippet": "OCR model that handles complex tables, forms, handwriting with full layout. - datalab-to/chandra"
+    },
+    {
+      "title": "Free Online OCR Tool - Extract Text from Images & PDFs | i2OCR",
+      "url": "https://www.i2ocr.com/",
+      "snippet": "i2OCR is a free online OCR tool that extracts text from images and PDFs using AI-powered optical character recognition. Supports 128 languages. Convert image and PDF files to editable, searchable text online."
+    },
+    {
+      "title": "DocAI — AI Document Extractor",
+      "url": "https://document-ai-extractor.vercel.app/",
+      "snippet": "AI Text Extraction OCR for images, native parsing for PDFs & Word docs. Tesseract.js powers free, local OCR."
+    },
+    {
+      "title": "Extract text from any image or document free — ScanRead.ai",
+      "url": "https://scanread.ai/",
+      "snippet": "Drop a photo, screenshot, or PDF — get copyable text in seconds. Free, no signup needed."
+    }
+  ]
+}

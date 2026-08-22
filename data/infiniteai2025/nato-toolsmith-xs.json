@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "iNFINITEAi2025/NATO-Toolsmith-XS",
+  "slug": "infiniteai2025-nato-toolsmith-xs",
+  "author": "iNFINITEAi2025",
+  "url": "https://huggingface.co/iNFINITEAi2025/NATO-Toolsmith-XS",
+  "created_at": "2026-08-21T20:12:29.000Z",
+  "updated_at": "2026-08-21T20:12:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "research",
+    "synthetic-data",
+    "compact-model",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2573455,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NaTo1000/iNFINITEAi2025.: ESP32 commander and integrations ...",
+      "url": "https://github.com/NaTo1000/iNFINITEAi2025.",
+      "snippet": "ESP32 commander and integrations program. Contribute to NaTo1000/iNFINITEAi2025. development by creating an account on GitHub."
+    },
+    {
+      "title": "iNFINITEAi2025 (iNFINITE Ai 2025) - Hugging Face",
+      "url": "https://huggingface.co/iNFINITEAi2025/models",
+      "snippet": "Yes very interested"
+    },
+    {
+      "title": "NaTo1000 (Nathan teaotonga) - Hugging Face",
+      "url": "https://huggingface.co/NaTo1000/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 11 hours ago ... published a model about 11 hours ago"
+    },
+    {
+      "title": "NaTo1000/iNFINITE-Ai-2025-Plugin-Forge - GitHub",
+      "url": "https://github.com/NaTo1000/iNFINITE-Ai-2025-Plugin-Forge",
+      "snippet": "A stand alone system that .builds .signs. validates. distributes plugins across all products - NaTo1000/iNFINITE-Ai-2025-Plugin-Forge"
+    },
+    {
+      "title": "iNFINITEAi2025-X · GitHub",
+      "url": "https://github.com/iNFINITEAi2025-X",
+      "snippet": "iNFINITEAi2025-X has 3 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

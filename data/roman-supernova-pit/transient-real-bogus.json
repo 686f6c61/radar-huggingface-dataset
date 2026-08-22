@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Roman-Supernova-PIT/transient-real-bogus",
+  "slug": "roman-supernova-pit-transient-real-bogus",
+  "author": "Roman-Supernova-PIT",
+  "url": "https://huggingface.co/Roman-Supernova-PIT/transient-real-bogus",
+  "created_at": "2026-08-22T01:29:42.000Z",
+  "updated_at": "2026-08-22T01:41:39.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "astronomy",
+    "transient-detection",
+    "roman-space-telescope",
+    "supernova",
+    "image-classification",
+    "ensemble",
+    "pytorch",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4073504348,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roman Supernova PIT - GitHub",
+      "url": "https://github.com/Roman-Supernova-PIT/",
+      "snippet": "Python 3 BSD-3-Clause 0 40 6 Updated 18 hours ago PaxPhotometrica Public Python 0 0 0 0 Updated 2 days ago sidecar Public Roman Supernova PIT supernova detection pipeline."
+    },
+    {
+      "title": "PDF Roman Space Telescope - assets.science.nasa.gov",
+      "url": "https://assets.science.nasa.gov/content/dam/science/missions/rst/science/Roman_PIT_Data_Products_User_Documentation_18feb2026.pdf",
+      "snippet": "The Roman Alerts Promptly from Image Differencing Project Infrastructure Team (RAPID PIT) builds upon their experience with the Zwicky Transient Facility to provide rapid image differencing of every new Roman image, detect, characterize and stream transient alerts."
+    },
+    {
+      "title": "Roman-SN-PIT",
+      "url": "https://www.romansnpit.com/",
+      "snippet": "This framework will deliver pixel-level improvements for calibration, pipelines for light-curve and prism-spectral extraction, precision scene-modeling catalogs, SNe Ia standardization software, transient alerts, and basic HLTDS optimization tools."
+    },
+    {
+      "title": "Roman-Supernova-PIT repositories · GitHub",
+      "url": "https://github.com/orgs/Roman-Supernova-PIT/repositories",
+      "snippet": "Repository associated with publication \"phrosty\": A Difference Imaging Pipeline for Roman\", Aldoroty et al. 2025b."
+    },
+    {
+      "title": "PDF The Roman Supernova Cosmology Project Infrastructure Team",
+      "url": "https://outerspace.stsci.edu/download/attachments/352355880/Read%2C%20Set.%20Roman.%20Training%20Series.pdf?version=1&modificationDate=1772724791512&api=v2",
+      "snippet": "Supernova Ia DEteCtion AlgoRithm (SIDECAR) This package is designed to perform image difference, detect transient sources, and evaluate efficiency and purity for supernova science with the Roman Wide Field Instrument."
+    }
+  ]
+}

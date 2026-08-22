@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Electrohat/xylo-stem-syh4-v1",
+  "slug": "electrohat-xylo-stem-syh4-v1",
+  "author": "Electrohat",
+  "url": "https://huggingface.co/Electrohat/xylo-stem-syh4-v1",
+  "created_at": "2026-08-21T21:38:29.000Z",
+  "updated_at": "2026-08-21T21:39:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7528061748,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xylo™: Ultra-low power neuromorphic chip | SynSense",
+      "url": "https://www.synsense.ai/products/xylo/",
+      "snippet": "The Xylo™ series is a globally leading ultra-low-power neuromorphic computing chip designed to process bioelectrical signals like EMG and EEG. Serving as the \"intelligent brain\" for next-generation interactive devices, it leverages a unique Spiking Recurrent Neural Network algorithm and a fully parallel, event-driven architecture to deliver real-time, high-precision neural signal ..."
+    },
+    {
+      "title": "SynSense launches the Xylo™ IMU neuromorphic HDK",
+      "url": "https://www.synsense.ai/synsense-launches-the-xyloimu-hdk-empowering-ultra-low-power-applications-for-smart-wearables-and-industrial-monitoring-devices/",
+      "snippet": "The Xylo™ IMU dev kit enables users to develop IMU-based motion processing applications such as human movement analysis and industrial monitoring."
+    },
+    {
+      "title": "A Look at Xylo - SynSense - Neuromorphic Chip - Open Neuromorphic",
+      "url": "https://open-neuromorphic.org/neuromorphic-computing/hardware/xylo-synsense/",
+      "snippet": "Xylo is a series of ultra-low-power devices for sensory inference, featuring a digital SNN core adaptable to various sensory inputs like audio and bio-signals. Its SNN core uses an integer-logic CuBa-LIF neuron model with customizable parameters for each synapse and neuron, supporting a wide range of network architectures."
+    },
+    {
+      "title": "DangoAI - AI-Powered Any Instrument Separation",
+      "url": "https://tuanziai.com/en-US/stem-separator",
+      "snippet": "Try Dango. Dango Stem Separator is an independently developed algorithm and quality-focused online service that uses AI to extract, separate or remove any instrument track from any music."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

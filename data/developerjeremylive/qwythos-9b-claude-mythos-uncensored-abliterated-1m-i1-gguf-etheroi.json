@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "developerjeremylive/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M-i1-GGUF-etheroi",
+  "slug": "developerjeremylive-qwythos-9b-claude-mythos-uncensored-abliterated-1m-i1-gguf-etheroi",
+  "author": "developerjeremylive",
+  "url": "https://huggingface.co/developerjeremylive/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M-i1-GGUF-etheroi",
+  "created_at": "2026-08-21T23:24:52.000Z",
+  "updated_at": "2026-08-21T23:24:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "uncensored",
+    "abliterated",
+    "uncensored-llm",
+    "no-refusal",
+    "reasoning",
+    "long-context",
+    "1M-context",
+    "function-calling",
+    "tool-use",
+    "cybersecurity",
+    "red-teaming",
+    "agentic",
+    "sft",
+    "en",
+    "base_model:Securelayer7/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M",
+    "base_model:quantized:Securelayer7/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 22161122496,
+  "storage_human": "22.2 GB",
+  "base_model": "Securelayer7/Qwythos-9B-Claude-Mythos-Uncensored-Abliterated-1M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwythos-9B-Claude-Mythos-5-1M-GGUF - Hugging Face",
+      "url": "https://huggingface.co/developerjeremylive/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwythos-9B-Claude-Mythos-5-1M-GGUF-etheroi - Hugging Face",
+      "url": "https://huggingface.co/developerjeremylive/Qwythos-9B-Claude-Mythos-5-1M-GGUF-etheroi",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwythos-9B-Claude-Mythos-Abliterated - ollama.com",
+      "url": "https://ollama.com/richardyoung/qwythos-9b-abliterated",
+      "snippet": "Abliterated build of Qwythos-9B-Claude-Mythos, a Claude-style creative & reasoning model (Qwen3.5-9B base) with refusals further reduced via the Heretic library."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. Latest: Qwen3.8 distilled to 9B / 4B / 2B, and a GDN-aware 27B Ridge GGUF at 11.7 GiB. 1M+ downloads on Hugging Face."
+    },
+    {
+      "title": "Qwythos-9B: a 9B that checks its own work — Empero",
+      "url": "https://empero.org/writing/qwythos-9b-release",
+      "snippet": "We just shipped Qwythos-9B-Claude-Mythos-5-1M — our biggest open-weights model to date, and the new flagship over on Hugging Face. It&#x27;s a full-parameter reasoning model built on a deeply uncensored Qwen3.5-9B base, post-trained on north of 500 million tokens of Claude Mythos and Claude Fable traces, with the chain-of-thought generated in-house by our rethink tool. The short version: it ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Shangy/browsecomp-base-worker-judge-rl",
+  "slug": "shangy-browsecomp-base-worker-judge-rl",
+  "author": "Shangy",
+  "url": "https://huggingface.co/Shangy/browsecomp-base-worker-judge-rl",
+  "created_at": "2026-08-21T21:36:16.000Z",
+  "updated_at": "2026-08-21T21:36:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "browsecomp",
+    "reinforcement-learning",
+    "worker-judge",
+    "qwen3",
+    "text-generation",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32774457066,
+  "storage_human": "32.8 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BrowseComp Benchmark Scores & AI Model Leaderboard | BenchmarkList",
+      "url": "https://benchmarklist.com/benchmarks/browsecomp/",
+      "snippet": "BrowseComp: Evaluates autonomous agent performance on multi-step tasks requiring planning, state tracking, tool use, and recovery."
+    },
+    {
+      "title": "BrowseComp: a benchmark for browsing agents - OpenAI",
+      "url": "https://openai.com/index/browsecomp/",
+      "snippet": "To measure the ability for AI agents to locate hard-to-find, entangled information on the internet, we are open-sourcing a new benchmark of 1,266 challenging problems called BrowseComp, which stands for \"Browsing Competition\"."
+    },
+    {
+      "title": "BrowseComp Leaderboard",
+      "url": "https://llm-stats.com/benchmarks/browsecomp",
+      "snippet": "BrowseComp leaderboard — Kimi K3 leads 62 AI models at 0.912. BrowseComp is a benchmark comprising 1,266 questions that challenge AI agents to persistently nav…"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "Shangy/browsecomp-worker-sft-core-v256 · Hugging Face",
+      "url": "https://huggingface.co/Shangy/browsecomp-worker-sft-core-v256",
+      "snippet": "This is the v1 (core-set-only) model: trained on the 541 demonstration trajectories where the MiniMax worker&#x27;s own answer was judged correct. BrowseComp-Plus test set (n=150): zero-shot Qwen3-8B workers 0.513 → this model 0.620 → sibling mix model browsecomp-worker-sft-mix-v256 0.720 (= MiniMax-worker ceiling)."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Flexan/Blake-Haiku-1-GGUF",
+  "slug": "flexan-blake-haiku-1-gguf",
+  "author": "Flexan",
+  "url": "https://huggingface.co/Flexan/Blake-Haiku-1-GGUF",
+  "created_at": "2026-08-21T21:51:28.000Z",
+  "updated_at": "2026-08-21T22:00:03.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "en",
+    "base_model:Flexan/Blake-Haiku-1",
+    "base_model:quantized:Flexan/Blake-Haiku-1",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 6357050752,
+  "storage_human": "6.4 GB",
+  "base_model": "Flexan/Blake-Haiku-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flexan (Flexan) - Hugging Face",
+      "url": "https://huggingface.co/Flexan",
+      "snippet": "Collection of Blake-XTM Arc models, including Blake-XTM Arc T0, and their GGUF equivalents."
+    },
+    {
+      "title": "Flexan - Hugging Face",
+      "url": "https://huggingface.co/Flexan/Flexan",
+      "snippet": "Flexan (user information) Who is Flexan? I&#x27;m Flexan. I&#x27;m a Software Developer student that likes to work with AI (and especially LLMs) in my free time. I&#x27;m especially interested in original ideas projected onto LLMs. I adore people who think of new ideas to make LLMs more useful in specific areas. What is up with all the -GGUF models? Since shortly I&#x27;ve begun to convert Hugging Face ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "gguf AI Models | Civitai",
+      "url": "https://civitai.com/tag/gguf",
+      "snippet": "Browse 288 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with gguf."
+    },
+    {
+      "title": "GGUF model list",
+      "url": "https://mitjafelicijan.github.io/gguf-list/",
+      "snippet": "GGUF model list Generated on 2025-02-27 17:51:07 (download collections.json)"
+    }
+  ]
+}

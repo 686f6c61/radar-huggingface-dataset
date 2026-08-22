@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "learner1119/ffw_sg2_n15_260820_left_50000",
+  "slug": "learner1119-ffw_sg2_n15_260820_left_50000",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/ffw_sg2_n15_260820_left_50000",
+  "created_at": "2026-08-22T01:38:58.000Z",
+  "updated_at": "2026-08-22T01:39:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "gr00t",
+    "ffw_sh5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2724163520,
+  "parameters_human": "2.72B",
+  "storage_bytes": 7586072344,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "About AI Worker | ROBOTIS Docs",
+      "url": "https://docs.robotis.com/docs/systems/aiworker/introduction/",
+      "snippet": "The ROBOTIS AI Worker is a cutting-edge semi-humanoid robot powered by physical AI. Designed to seamlessly integrate into industrial environments, it learns from human demonstrations and refines its skills through imitation learning and reinforcement learning. This innovative robot excels at performing intricate tasks like wiring harness assembly, welding, and inspection, offering a powerful ..."
+    },
+    {
+      "title": "AI Worker by ROBOTIS Specs, Price & Review 2026 | OOB",
+      "url": "https://www.originofbots.com/robot/ai-worker-by-robotis-details-specifications-rating",
+      "snippet": "AI Worker is a humanoid system developed by ROBOTIS in South Korea and launched in 2024. Starting price is estimated at Custom quote, estimated $50,000-$100,000. It supports Tools, precision instruments, industrial parts. Operating battery runtime is rated at 4-6 hours. Primary applications include Wiring harness assembly, welding, inspection, high-mix automation. Featured in editorial ..."
+    },
+    {
+      "title": "learner1119 (doyoung kim) - Hugging Face",
+      "url": "https://huggingface.co/learner1119",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "FlashDatabase",
+      "url": "https://flashdatabase.net/filelist/volkswagen",
+      "snippet": "FL_04L906056JT_6188__V001.frf FL_05C906034H_9972__V001.frf FL_03L906018NC_9978.frf FL_03F906070HF_2698.frf FL_561959655___0210_S.frf v074L0711K0___Lenkung_2701.sgo FL ..."
+    },
+    {
+      "title": "ffw_sh5_n15_psc_left_absolute_50000 - Hugging Face",
+      "url": "https://huggingface.co/learner1119/ffw_sh5_n15_psc_left_absolute_50000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

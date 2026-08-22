@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Panga-Azazia/LFM2.5-350M-LORA-TTS",
+  "slug": "panga-azazia-lfm2-5-350m-lora-tts",
+  "author": "Panga-Azazia",
+  "url": "https://huggingface.co/Panga-Azazia/LFM2.5-350M-LORA-TTS",
+  "created_at": "2026-08-21T20:22:35.000Z",
+  "updated_at": "2026-08-22T01:02:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121166081,
+  "storage_human": "121 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Panga-Azazia/LFM2.5-350M-TTS-LORA · Hugging Face",
+      "url": "https://huggingface.co/Panga-Azazia/LFM2.5-350M-TTS-LORA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Architecture graph for Panga-Azazia/LFM2.5-350M-TTS.",
+      "url": "https://hfviewer.com/Panga-Azazia/LFM2.5-350M-TTS",
+      "snippet": "Interactive architecture graph for Panga-Azazia/LFM2.5-350M-TTS, visualized from Hugging Face model metadata."
+    },
+    {
+      "title": "Panga-Azazia/LFM2.5-350M-TTS · Discussions - Hugging Face",
+      "url": "https://huggingface.co/Panga-Azazia/LFM2.5-350M-TTS/discussions",
+      "snippet": "Panga-Azazia / LFM2.5-350M-TTS like 0 Text Generation Transformers Safetensors lfm2 Generated from Trainer trl sft unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LFM2.5 350M - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/lfm2-5-350m/",
+      "snippet": "LFM2.5-350M is Liquid AI&#x27;s compact 350M-parameter language model optimized for fast inference, tool use, data extraction, and structured outputs. It is designed to run across cloud GPUs, CPUs, and edge devices, and is positioned for lightweight agentic workflows and large-scale data processing rather than math, coding, or creative writing."
+    },
+    {
+      "title": "Introducing LFM2: The Fastest On-Device Foundation Models on the Market ...",
+      "url": "https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models",
+      "snippet": "NOTE: In 2026 we released a new version of our flagship models - LFM2.5 Today, we release LFM2, a new class of Liquid Foundation Models (LFMs) that sets a new standard in quality, speed, and memory efficiency deployment. LFM2 is specifically designed to provide the fastest on-device gen-AI experience across the industry, thus unlocking a massive number of devices for generative AI workloads ..."
+    }
+  ]
+}

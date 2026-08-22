@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Harrdan2001/paper_005358095_data_efficient_learning",
+  "slug": "harrdan2001-paper_005358095_data_efficient_learning",
+  "author": "Harrdan2001",
+  "url": "https://huggingface.co/Harrdan2001/paper_005358095_data_efficient_learning",
+  "created_at": "2026-08-22T01:19:13.000Z",
+  "updated_at": "2026-08-22T01:19:20.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "data-efficient-learning",
+    "docx",
+    "empirical-focused",
+    "first-person-plural",
+    "footnote",
+    "intro-background-approach-eval-conclusion",
+    "measured",
+    "short-punchy",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fajarhmv1995/paper_005245715_data_efficient_learning · Hugging Face",
+      "url": "https://huggingface.co/fajarhmv1995/paper_005245715_data_efficient_learning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[1805.08296] Data-Efficient Hierarchical Reinforcement Learning",
+      "url": "https://arxiv.org/abs/1805.08296",
+      "snippet": "Hierarchical reinforcement learning (HRL) is a promising approach to extend traditional reinforcement learning (RL) methods to solve more complex tasks. Yet, the majority of current HRL methods require careful task-specific design and on-policy training, making them difficult to apply in real-world scenarios. In this paper, we study how we can develop HRL algorithms that are general, in that ..."
+    },
+    {
+      "title": "[2402.09668] How to Train Data-Efficient LLMs - arXiv.org",
+      "url": "https://arxiv.org/abs/2402.09668",
+      "snippet": "The training of large language models (LLMs) is expensive. In this paper, we study data-efficient approaches for pre-training LLMs, i.e., techniques that aim to optimize the Pareto frontier of model quality and training resource/data consumption. We seek to understand the tradeoffs associated with data selection routines based on (i) expensive-to-compute data-quality estimates, and (ii ..."
+    },
+    {
+      "title": "Data-Efficient Learning via Minimizing Hyperspherical Energy",
+      "url": "https://ieeexplore.ieee.org/document/10168255",
+      "snippet": "Deep learning on large-scale data is currently dominant nowadays. The unprecedented scale of data has been arguably one of the most important driving forces behind its success. However, there still exist scenarios where collecting data or labels could be extremely expensive, e.g., medical imaging and robotics. To fill up this gap, this paper considers the problem of data-efficient learning ..."
+    },
+    {
+      "title": "Efficient Deep Learning Book - GitHub",
+      "url": "https://github.com/EfficientDL/book",
+      "snippet": "What if you could make your models more efficient: use less resources (model size, latency, training time, data, manual involvement) and deliver better quality (accuracy, precision, recall, etc.)."
+    }
+  ]
+}

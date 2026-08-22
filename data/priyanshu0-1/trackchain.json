@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "PRiyanshu0-1/TrackChain",
+  "slug": "priyanshu0-1-trackchain",
+  "author": "PRiyanshu0-1",
+  "url": "https://huggingface.co/PRiyanshu0-1/TrackChain",
+  "created_at": "2026-08-21T18:59:21.000Z",
+  "updated_at": "2026-08-21T23:08:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 806886291,
+  "storage_human": "807 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "priyanshu941/track1-qwen-finetuned · Hugging Face",
+      "url": "https://huggingface.co/priyanshu941/track1-qwen-finetuned",
+      "snippet": "priyanshu941 / track1-qwen-finetuned like 0 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Model Zoo - Deep learning code and pretrained models for transfer ...",
+      "url": "https://www.modelzoo.co/",
+      "snippet": "Model Zoo Discover open source deep learning code and pretrained models. Browse Frameworks Browse Categories"
+    },
+    {
+      "title": "Models.dev - An open-source database of AI models",
+      "url": "https://models.dev/",
+      "snippet": "Models.dev is a comprehensive open-source database of AI model specifications, pricing, and features."
+    },
+    {
+      "title": "AI MODELS INFO - Tracking AI",
+      "url": "https://trackingai.org/models",
+      "snippet": "Tracking AI is a cutting-edge application that unveils the political biases embedded in artificial intelligence systems. Explore and analyze the political leanings of AIs with our intuitive platform, designed to foster transparency in the world of artificial intelligence. Stay informed and uncover the political inclinations shaping the algorithms behind the technology revolution."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

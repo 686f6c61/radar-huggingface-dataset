@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ChengweiCcc/model_266791081_coca_tiny",
+  "slug": "chengweiccc-model_266791081_coca_tiny",
+  "author": "ChengweiCcc",
+  "url": "https://huggingface.co/ChengweiCcc/model_266791081_coca_tiny",
+  "created_at": "2026-08-22T01:49:56.000Z",
+  "updated_at": "2026-08-22T01:50:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "classification",
+    "coca",
+    "flash",
+    "gelu",
+    "kaiming-normal",
+    "layernorm",
+    "lion",
+    "polynomial",
+    "tiny",
+    "tucker",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home · modelindex.dev",
+      "url": "http://modelindex.dev/",
+      "snippet": "Provenance and cryptographic hashes for public AI models across HuggingFace, ModelScope, CivitAI, and Ollama. Look up any file by hash, browse by org, and verify your downloads on modelindex.dev."
+    },
+    {
+      "title": "TinyModels (TinyModels) - Hugging Face",
+      "url": "https://huggingface.co/TinyModels/models",
+      "snippet": "Making machine learning tiny, fast, and accessible on any device."
+    },
+    {
+      "title": "Tiny models - a xaskasdf Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/xaskasdf/tiny-models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from xaskasdf"
+    },
+    {
+      "title": "tiny models - a Waldemar2 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Waldemar2/tiny-models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Waldemar2"
+    },
+    {
+      "title": "CoCA: Step-Level Reward for Free in RL-Finetuned T2I Diffusion Models",
+      "url": "https://arxiv.org/html/2505.19196v2",
+      "snippet": "By introducing step-level reward by contribution-based credit assignment, our method allows T2I diffusion models to generate images that better align with nuanced human intentions, promoting more reliable and controllable human-AI interaction."
+    }
+  ]
+}

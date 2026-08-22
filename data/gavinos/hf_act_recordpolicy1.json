@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "GavinOS/hf_act_recordpolicy1",
+  "slug": "gavinos-hf_act_recordpolicy1",
+  "author": "GavinOS",
+  "url": "https://huggingface.co/GavinOS/hf_act_recordpolicy1",
+  "created_at": "2026-08-21T21:36:50.000Z",
+  "updated_at": "2026-08-21T21:37:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:GavinOS/leRobot_dataset",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "satyajit4517/hf_act_recordpolicy1 · Hugging Face",
+      "url": "https://huggingface.co/satyajit4517/hf_act_recordpolicy1",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "cjduck113/hf_act_recordpolicy1 · Hugging Face",
+      "url": "https://huggingface.co/cjduck113/hf_act_recordpolicy1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Kazgatari/hf_act_recordpolicy1 at main",
+      "url": "https://d6108366.hf-mirror.com/Kazgatari/hf_act_recordpolicy1/blob/main/README.md?code=true",
+      "snippet": "Instructions to use Kazgatari/hf_act_recordpolicy1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Kazgatari/hf_act_recordpolicy1 with LeRobot: Notebooks Google Colab Kaggle main hf_act_recordpolicy1 /README.md Kazgatari Update README.md 6466d29 verifiedabout 2 ..."
+    },
+    {
+      "title": "How to Fix HIPAA Compliance Risks from AI Voice Agent Model Regressions ...",
+      "url": "https://dredyson.com/how-to-fix-hipaa-compliance-risks-from-ai-voice-agent-model-regressions-a-complete-step-by-step-guide-for-healthtech-developers-handling-non-english-production-failures-in-gpt-realtime-mini-vs-gpt-re/",
+      "snippet": "How to Fix HIPAA Compliance Risks from AI Voice Agent Model Regressions: A Complete Step-by-Step Guide for HealthTech Developers Handling Non-English Production Failures in gpt-realtime-mini vs gpt-realtime-mini-2025-10-06"
+    },
+    {
+      "title": "Protective Orders in the Age of Generative AI: Best Practices for ...",
+      "url": "https://ktslaw.com/insights/alert/2026/5/protective-orders-in-the-age-of-generative-ai-best-practices-for-safeguarding-confidential-information",
+      "snippet": "As federal courts establish new precedents in 2025-2026, learn the four essential models for AI-specific protective orders. Explore best practices for safeguarding confidential discovery materials, avoiding attorney-client privilege waiver, and meeting ethical obligations when using generative AI tools like ChatGPT, Claude, and Gemini in litigation."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Saraswathy/vlm-cap-text-reasoning-step70-resume",
+  "slug": "saraswathy-vlm-cap-text-reasoning-step70-resume",
+  "author": "Saraswathy",
+  "url": "https://huggingface.co/Saraswathy/vlm-cap-text-reasoning-step70-resume",
+  "created_at": "2026-08-21T23:31:15.000Z",
+  "updated_at": "2026-08-21T23:35:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11780043327,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saraswathy/vlm-mix-broader-stem-expert-step100 · Hugging Face",
+      "url": "https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100",
+      "snippet": "Instructions to use Saraswathy/vlm-mix-broader-stem-expert-step100 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "VLM-CapCurriculum — From Seeing to Thinking · ICML 2026",
+      "url": "https://ucsc-vlaa.github.io/VLM-CapCurriculum/",
+      "snippet": "We systematically decompose VLM post-training into three capability stages — visual perception, textual reasoning, visual reasoning — and show three things that change how to post-train a VLM: a Perception needs its own data."
+    },
+    {
+      "title": "VLM-CapCurriculum - a UCSC-VLAA Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/UCSC-VLAA/vlm-capcurriculum",
+      "snippet": "Staged post-training along the perception → reasoning capability axis. Models, datasets, paper. ICML 2026."
+    },
+    {
+      "title": "[2606.15651] Self-Questioning Vision-Language Models: Reinforcement ...",
+      "url": "https://arxiv.org/abs/2606.15651",
+      "snippet": "Vision-Language Models (VLMs) are AI systems that process both images and text, yet they often struggle with compositional visual reasoning questions that require chaining multiple steps together, such as identifying objects, counting them, and comparing the results. Existing approaches improve this reasoning by training models on human-written step-by-step explanations, but creating these ..."
+    },
+    {
+      "title": "Saraswathy Amjith - saraamjith.com",
+      "url": "https://saraamjith.com/saraamjith.html",
+      "snippet": "A self-questioning framework that trains a VLM to decompose compositional visual questions into sub-questions using GRPO, without any reasoning demonstrations. Applied to a 3B-parameter model on CLEVR and A-OKVQA, both self-questioning and standard RL substantially improve accuracy over the untrained model."
+    }
+  ]
+}

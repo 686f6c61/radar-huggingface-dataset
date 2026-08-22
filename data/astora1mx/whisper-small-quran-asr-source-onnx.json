@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Astora1mx/whisper-small-quran-asr-source-ONNX",
+  "slug": "astora1mx-whisper-small-quran-asr-source-onnx",
+  "author": "Astora1mx",
+  "url": "https://huggingface.co/Astora1mx/whisper-small-quran-asr-source-ONNX",
+  "created_at": "2026-08-21T23:09:22.000Z",
+  "updated_at": "2026-08-21T23:09:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "quran",
+    "asr",
+    "arabic",
+    "ar",
+    "base_model:Astora1mx/whisper-small-quran-asr-source",
+    "base_model:quantized:Astora1mx/whisper-small-quran-asr-source",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2809257937,
+  "storage_human": "2.8 GB",
+  "base_model": "Astora1mx/whisper-small-quran-asr-source",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - aHishamm/QuranWhisper: QuranWhisper is a project that uses ...",
+      "url": "https://github.com/aHishamm/QuranWhisper",
+      "snippet": "QuranWhisper is a project that uses OpenAI&#x27;s Whisper ASR system for transcribing the Quran - aHishamm/QuranWhisper"
+    },
+    {
+      "title": "whisper-small-quran-lora-dataset-mix - Hugging Face",
+      "url": "https://huggingface.co/MaddoggProduction/whisper-small-quran-lora-dataset-mix",
+      "snippet": "Whisper Small Quran (LoRA Fine-Tuned) This is a specialized Automatic Speech Recognition (ASR) model for Quranic Recitation. It is a fine-tuned version of openai/whisper-small, optimized to recognize Quranic Arabic with high accuracy while maintaining excellent inference speed. Model Performance"
+    },
+    {
+      "title": "GitHub - MUmarJ/sherpa-onnx-models: Sherpa-ONNX ASR models for Quran ...",
+      "url": "https://github.com/MUmarJ/sherpa-onnx-models",
+      "snippet": "Official Sherpa-ONNX Whisper Tiny model (multilingual, supports Arabic). Size: ~58MB download, ~103MB extracted Format: INT8 quantized ONNX Files included: tiny-encoder.int8.onnx - Whisper encoder tiny-decoder.int8.onnx - Whisper decoder tiny-tokens.txt - Vocabulary"
+    },
+    {
+      "title": "wasimlhr/whisper-quran-v1 · Hugging Face",
+      "url": "https://huggingface.co/wasimlhr/whisper-quran-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "whisper-small-for-quran Open-source Model - Free and Precise ...",
+      "url": "https://model.aibase.com/models/details/1915693342979153921",
+      "snippet": "🚀 Whisper Small For Quran A fine - tuned model based on openai/whisper - small for Quran speech recognition, achieving excellent results on the evaluation set."
+    }
+  ]
+}

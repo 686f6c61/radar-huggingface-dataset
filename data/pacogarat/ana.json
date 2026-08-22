@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pacogarat/ana",
+  "slug": "pacogarat-ana",
+  "author": "pacogarat",
+  "url": "https://huggingface.co/pacogarat/ana",
+  "created_at": "2026-08-21T22:45:32.000Z",
+  "updated_at": "2026-08-21T23:21:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970985973,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Original Character - Paco Papagaio - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1978183371002058508",
+      "snippet": "Generate stunning anime art with the &#x27;Original Character - Paco Papagaio&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Top 25 AI Models Influencers in 2026",
+      "url": "https://influencers.feedspot.com/ai_models_instagram_influencers/",
+      "snippet": "Looking for AI Models influencers for your outreach campaign or for collaboration to promote your brand or product? Our AI Models Influencers list is what you need. more Export full list with email contacts of influencers in a spreadsheet or csv file."
+    },
+    {
+      "title": "ANIMADEX — Anime character & artist catalogue for the ANIMA AI model",
+      "url": "https://animadex.net/",
+      "snippet": "A catalogue of over 36,000 anime characters and 15,000 artists rendered with the ANIMA AI model. Searchable by tags, copyright, hair colour, eye colour, gender and CivitAI LoRA availability."
+    },
+    {
+      "title": "Access Thousands of AI Art Generator Models | SeaArt AI",
+      "url": "https://www.seaart.ai/model",
+      "snippet": "Explore SeaArt AI&#x27;s 700k+ AI model gallery for image creation. Generate stunning and high-quality AI art from text and images."
+    },
+    {
+      "title": "Anam - Real-Time Interactive AI Avatars API",
+      "url": "https://anam.ai/",
+      "snippet": "Build real-time interactive AI avatars with Anam&#x27;s API. Low-latency conversational video AI for customer service, training, and sales."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ayousanz/kodama-ja-streaming-small",
+  "slug": "ayousanz-kodama-ja-streaming-small",
+  "author": "ayousanz",
+  "url": "https://huggingface.co/ayousanz/kodama-ja-streaming-small",
+  "created_at": "2026-08-22T01:50:27.000Z",
+  "updated_at": "2026-08-22T01:51:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "moonshine_streaming",
+    "automatic-speech-recognition",
+    "speech",
+    "japanese",
+    "streaming",
+    "low-latency",
+    "on-device",
+    "ja",
+    "dataset:reazon-research/reazonspeech",
+    "base_model:moonshine-ai/moonshine-streaming-small",
+    "base_model:finetune:moonshine-ai/moonshine-streaming-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140135224,
+  "parameters_human": "140.1M",
+  "storage_bytes": 1203759277,
+  "storage_human": "1.2 GB",
+  "base_model": "moonshine-ai/moonshine-streaming-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "日本語を含む6言語対応の軽量TTS「piper-plus」をバイナリファイルから実行して推論する - yousanのメモ",
+      "url": "https://ayousanz.hatenadiary.jp/entry/2026/03/22/195837",
+      "snippet": "初めに 開発環境 バイナリのダウンロードと確認 モデルのダウンロード 推論 初めに スマホやIoTでも動かすことができる日本語を含む6言語対応の軽量TTSのpiper-plusを公開しています 学習も自由にできるようにOSSとして公開しています github.com piper-plusはC#,Rust,C++の3言語のバイナリビルドを行って ..."
+    },
+    {
+      "title": "ラズパイでも動く軽量TTSモデルのpiperを改良した日本語対応のpiper-plusの開発 - yousanのメモ",
+      "url": "https://ayousanz.hatenadiary.jp/entry/2025/10/17/090204",
+      "snippet": "初めに 開発環境 改善内容 課題 初めに 以前から以下のような記事を書いてより軽量なモデルでローカルで動くTTSがないかの検証をしていました。 ayousanz.hatenadiary.jp ayousanz.hatenadiary.jp 日本語の学習についての検証は以下です。 ayousanz.hatenadiary.jp これらの検証を元に以下の日本語対応を行ったpiper ..."
+    },
+    {
+      "title": "ayousanz (yousan) - Hugging Face",
+      "url": "https://huggingface.co/ayousanz/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 4 days ago ... updated a model 19 days ago"
+    },
+    {
+      "title": "ayousanz (yousan) - Hugging Face",
+      "url": "https://huggingface.co/ayousanz",
+      "snippet": "日本語 TTS(G2P)の誤読プリフライト ModernBERT-Ja. ayousanz Jun 27. Running . 1. Kawaii Voice Search. 🎤. ayousanz Mar 24"
+    },
+    {
+      "title": "日本語対応の軽量TTSライブラリ「piper-plus」をPythonで動かす - yousanのメモ",
+      "url": "https://ayousanz.hatenadiary.jp/entry/2025/09/25/211231",
+      "snippet": "初めに 開発環境 環境構築 コードから推論を実行 初めに 先日以下のようなライブラリを発表しました 【新作OSSを一挙3本公開!🎉】音声合成・Unity・デスクトップアプリの領域で、3つのオープンソースプロジェクトを公開しました!🚀piper-plus: 高速・軽量な日本語TTSエンジン 🎮uPiper: Unityで ..."
+    }
+  ]
+}

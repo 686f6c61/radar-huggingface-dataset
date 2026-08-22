@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "0mehedihasan/neurovision-ai",
+  "slug": "0mehedihasan-neurovision-ai",
+  "author": "0mehedihasan",
+  "url": "https://huggingface.co/0mehedihasan/neurovision-ai",
+  "created_at": "2026-08-21T21:02:11.000Z",
+  "updated_at": "2026-08-21T21:02:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0mehedihasan/neurovision-ai: An explainable AI system for ...",
+      "url": "https://github.com/0mehedihasan/neurovision-ai",
+      "snippet": "An explainable AI system for brain tumor classification using EfficientNet-B0 and Grad-CAM."
+    },
+    {
+      "title": "NeuroVision AI - GitHub",
+      "url": "https://github.com/neurovision-ai",
+      "snippet": "NeuroVision AI NeuroVision is an AI-powered healthcare initiative focused on improving the early detection and analysis of brain tumors through medical imaging."
+    },
+    {
+      "title": "NeuroVision | Devpost",
+      "url": "https://devpost.com/software/neurovision-gp64ej",
+      "snippet": "The core AI engine was developed using PyTorch, featuring a custom-trained U-Net model optimized for precise medical image segmentation. To ensure clinical trust and transparency, we integrated Grad-CAM algorithms to extract explainable heatmaps directly from the model&#x27;s convolutional layers."
+    },
+    {
+      "title": "NEUROVISION-AI | Advanced Alzheimer&#x27;s Detection with Deep Learning",
+      "url": "https://neurovision-ai.vercel.app/",
+      "snippet": "NeuroVision AI combines cutting-edge Convolutional and Recurrent Neural Networks to analyze medical imaging and cognitive data, enabling unprecedented accuracy in early Alzheimer&#x27;s detection."
+    },
+    {
+      "title": "NeuroVision AI | Devpost",
+      "url": "https://devpost.com/software/neurovision-ai-oie6u3",
+      "snippet": "Existing AI tools can detect abnormalities, but they fail to explain why a decision was made — creating a critical trust gap in healthcare. We wanted to bridge this gap by building a system that doesn&#x27;t just detect tumors, but explains, visualizes, and supports real clinical decisions. That&#x27;s how NeuroVision AI was born."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mishradeepak/paper_015548353_visual_question_answering",
+  "slug": "mishradeepak-paper_015548353_visual_question_answering",
+  "author": "mishradeepak",
+  "url": "https://huggingface.co/mishradeepak/paper_015548353_visual_question_answering",
+  "created_at": "2026-08-21T23:44:42.000Z",
+  "updated_at": "2026-08-21T23:44:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "author-year",
+    "cautious",
+    "detailed-descriptive",
+    "intro-method-exp-related-conclusion",
+    "typst",
+    "unstructured-narrative",
+    "varied-mixed",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Question Answering: From Early Developments to Recent Advances ...",
+      "url": "https://arxiv.org/html/2501.03939v1",
+      "snippet": "Visual-Attention: Guided attention refers to the use of an attention mechanism to help the model focus on specific parts of an image when generating an answer to a question about the image. The attention mechanism is guided by the question, which is used as a query to direct the model&#x27;s attention to relevant regions of the image."
+    },
+    {
+      "title": "Visual Question Answering: A Survey of Methods and Datasets",
+      "url": "https://www.researchgate.net/publication/305471332_Visual_Question_Answering_A_Survey_of_Methods_and_Datasets",
+      "snippet": "Visual Question Answering (VQA) is a challenging task that has received increasing attention from both the computer vision and the natural language processing communities. Given an image and a ..."
+    },
+    {
+      "title": "[PDF] Visual question answering: from early developments to recent ...",
+      "url": "https://www.semanticscholar.org/paper/Visual-question-answering%3A-from-early-developments-Huynh-Bouadjenek/fbb635034baeb45f330426ed43de127421aaf15b",
+      "snippet": "A taxonomy of VQA architectures is introduced, categorizing them based on design choices and key components to facilitate comparative analysis and evaluation, and major VQA approaches are reviewed, focusing on deep learning-based methods. Visual Question Answering (VQA) is an evolving research field aimed at enabling machines to answer questions about visual content by integrating image and ..."
+    },
+    {
+      "title": "Visual Question Answering: A Survey of Methods, Datasets, Evaluation ...",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3728635",
+      "snippet": "Visual question answering (VQA) is a dynamic field of research that aims to generate textual answers from given visual and question information. It is a multimodal field that has garnered significant interest from the computer vision and natural language ..."
+    },
+    {
+      "title": "Visual Question Answering: A Survey of Methods, Datasets, Evaluation ...",
+      "url": "https://dl.acm.org/doi/full/10.1145/3728635",
+      "snippet": "Visual Question Answering (VQA) is a growing research area within the broader multimodal AI field, integrating computer vision (CV) and natural language processing (NLP) to answer textual questions about images. In some cases, VQA incorporates external knowledge alongside images and questions to enrich the understanding and generation of answers. Recent research has also explored combining ..."
+    }
+  ]
+}

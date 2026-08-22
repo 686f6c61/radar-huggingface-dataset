@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jonleed/clinical-note-bart-lora",
+  "slug": "jonleed-clinical-note-bart-lora",
+  "author": "jonleed",
+  "url": "https://huggingface.co/jonleed/clinical-note-bart-lora",
+  "created_at": "2026-08-21T21:37:29.000Z",
+  "updated_at": "2026-08-21T21:37:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "summarization",
+    "medical",
+    "clinical-nlp",
+    "lora",
+    "bart",
+    "dataset:abachaa/MTS-Dialog",
+    "base_model:facebook/bart-base",
+    "base_model:adapter:facebook/bart-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1779432,
+  "storage_human": "2 MB",
+  "base_model": "facebook/bart-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Medical Text Summarization Using BART with LoRA-Based Parameter ...",
+      "url": "https://www.avepubs.com/uploads/articles/174965631566744.%20ATIHL-89-2024.pdf",
+      "snippet": "The following points are the primary contributions of this work: • Efficient summarization framework: This process introduces a resource-efficient framework for medical text summarization using BART with PEFT and LoRA, decreasing computational requirements without influencing the model&#x27;s accuracy."
+    },
+    {
+      "title": "Workshop on Patient-Oriented Language Processing (2025)",
+      "url": "https://aclanthology.org/events/cl4health-2025/",
+      "snippet": "Our results indicate that BERT-based embeddings outperform traditional and hierarchical models, particularly in processing lengthy clinical notes and capturing nuanced patient representations."
+    },
+    {
+      "title": "Development and evaluation of a clinical note summarization system ...",
+      "url": "https://www.nature.com/articles/s43856-025-01091-3",
+      "snippet": "The results show that the AI-generated model can accurately support the generation of summaries from clinical notes demonstrating its potential to assist healthcare professionals in routine tasks."
+    },
+    {
+      "title": "Clinical Notes - The AI Platform for Behavioral Health",
+      "url": "https://www.clinicalnotes.ai/",
+      "snippet": "Clinical Notes AI captures every nuance of patient conversations, allowing me to focus more on therapy and less on paperwork. I was skeptical at first, but Clinical Notes AI has completely transformed our workflow. More time for patients, less time on admin and the platform is extremely easy to use - it&#x27;s what every physician hopes for."
+    },
+    {
+      "title": "GitHub - NikkieHooman/clinical-lora",
+      "url": "https://github.com/NikkieHooman/clinical-lora",
+      "snippet": "Large language models are powerful but general. This repo shows how to specialize Llama-3-8B for clinical text using parameter-efficient fine-tuning, specifically QLoRA, by adding only around 0.5% trainable parameters on top of the frozen base model. The result is a model that understands clinical abbreviations, MIMIC note structure, and medical reasoning better than the base model. Three ..."
+    }
+  ]
+}

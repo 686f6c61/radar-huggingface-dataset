@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "schneid-erstefan/paper_016429922_image_captioning",
+  "slug": "schneid-erstefan-paper_016429922_image_captioning",
+  "author": "schneid-erstefan",
+  "url": "https://huggingface.co/schneid-erstefan/paper_016429922_image_captioning",
+  "created_at": "2026-08-21T20:12:58.000Z",
+  "updated_at": "2026-08-21T20:13:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "detailed-descriptive",
+    "enthusiastic",
+    "first-person-plural",
+    "html",
+    "image-captioning",
+    "intro-method-exp-related-conclusion",
+    "long-detailed",
+    "numeric-bibtex",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "Image Captioning Evaluation in the Age of Multimodal LLMs: Challenges ...",
+      "url": "https://arxiv.org/abs/2503.14604",
+      "snippet": "The evaluation of machine-generated image captions is a complex and evolving challenge. With the advent of Multimodal Large Language Models (MLLMs), image captioning has become a core task, increasing the need for robust and reliable evaluation metrics. This survey provides a comprehensive overview of advancements in image captioning evaluation, analyzing the evolution, strengths, and ..."
+    },
+    {
+      "title": "Salesforce/blip-image-captioning-base · Hugging Face",
+      "url": "https://huggingface.co/Salesforce/blip-image-captioning-base",
+      "snippet": "In this paper, we propose BLIP, a new VLP framework which transfers flexibly to both vision-language understanding and generation tasks. BLIP effectively utilizes the noisy web data by bootstrapping the captions, where a captioner generates synthetic captions and a filter removes the noisy ones."
+    },
+    {
+      "title": "CVPR 2025 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/CVPR2025",
+      "snippet": "These CVPR 2025 papers are the Open Access versions, provided by the Computer Vision Foundation. Except for the watermark, they are identical to the accepted versions; the final published version of the proceedings is available on IEEE Xplore."
+    },
+    {
+      "title": "[1411.4555] Show and Tell: A Neural Image Caption Generator",
+      "url": "https://arxiv.org/abs/1411.4555",
+      "snippet": "Automatically describing the content of an image is a fundamental problem in artificial intelligence that connects computer vision and natural language processing. In this paper, we present a generative model based on a deep recurrent architecture that combines recent advances in computer vision and machine translation and that can be used to generate natural sentences describing an image. The ..."
+    }
+  ]
+}

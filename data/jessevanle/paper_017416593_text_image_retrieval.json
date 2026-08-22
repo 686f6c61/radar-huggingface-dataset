@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jessevanle/paper_017416593_text_image_retrieval",
+  "slug": "jessevanle-paper_017416593_text_image_retrieval",
+  "author": "Jessevanle",
+  "url": "https://huggingface.co/Jessevanle/paper_017416593_text_image_retrieval",
+  "created_at": "2026-08-22T02:20:05.000Z",
+  "updated_at": "2026-08-22T02:20:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "endnote",
+    "graphic-visual",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "latex-acl",
+    "measured",
+    "narrative-progressive",
+    "text-image-retrieval",
+    "varied-mixed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    },
+    {
+      "title": "Llama Nemoretriever Colembed: Top-Performing Text-Image Retrieval Model",
+      "url": "https://arxiv.org/abs/2507.05513",
+      "snippet": "Motivated by the growing demand for retrieval systems that operate across modalities, we introduce llama-nemoretriever-colembed, a unified text-image retrieval model that delivers state-of-the-art performance across multiple benchmarks. We release two model variants, 1B and 3B."
+    },
+    {
+      "title": "GitHub - Yutong-Zhou-cv/Awesome-Text-to-Image: (ෆ`꒳´ෆ) A Survey on Text ...",
+      "url": "https://github.com/Yutong-Zhou-cv/Awesome-Text-to-Image",
+      "snippet": "A number of studies have been conducted on text-to-image synthesis techniques that transfer input textual descriptions (keywords or sentences) into realistic images. Papers, codes, and datasets for the text-to-image task are available here. 🐌 Markdown Format: (Conference/Journal Year) Title, First Author et al. [Paper] [Code] [Project]"
+    }
+  ]
+}

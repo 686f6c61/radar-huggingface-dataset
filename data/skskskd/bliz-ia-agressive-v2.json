@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Skskskd/bliz-ia-agressive-v2",
+  "slug": "skskskd-bliz-ia-agressive-v2",
+  "author": "Skskskd",
+  "url": "https://huggingface.co/Skskskd/bliz-ia-agressive-v2",
+  "created_at": "2026-08-21T21:43:16.000Z",
+  "updated_at": "2026-08-21T21:43:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20153118,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skskskd/bliz-ia-agressive · Hugging Face",
+      "url": "https://huggingface.co/Skskskd/bliz-ia-agressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Skskskd/bliz-ia-v2 · Hugging Face",
+      "url": "https://huggingface.co/Skskskd/bliz-ia-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bliz-ia-baseado-em-qwen-v2-test - FriendliAI",
+      "url": "https://friendli.ai/models/Skskskd/bliz-ia-baseado-em-qwen-v2-test",
+      "snippet": "Deploy bliz-ia-baseado-em-qwen-v2-test with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Models released in the week of Aug 9, 2026 - Featherless.ai",
+      "url": "https://featherless.ai/model-releases/2026-08-09",
+      "snippet": "Featherless - The latest LLM models, serverless and ready to use at your request."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

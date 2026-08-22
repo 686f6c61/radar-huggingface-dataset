@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Minervus00/byt5-g2p-mos",
+  "slug": "minervus00-byt5-g2p-mos",
+  "author": "Minervus00",
+  "url": "https://huggingface.co/Minervus00/byt5-g2p-mos",
+  "created_at": "2026-08-21T20:03:23.000Z",
+  "updated_at": "2026-08-21T20:03:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:google/byt5-small",
+    "base_model:finetune:google/byt5-small",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299637760,
+  "parameters_human": "299.6M",
+  "storage_bytes": 1198614846,
+  "storage_human": "1.2 GB",
+  "base_model": "google/byt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2204.03067] ByT5 model for massively multilingual grapheme-to-phoneme ...",
+      "url": "https://arxiv.org/abs/2204.03067",
+      "snippet": "In this study, we tackle massively multilingual grapheme-to-phoneme conversion through implementing G2P models based on ByT5. We have curated a G2P dataset from various sources that covers around 100 languages and trained large-scale multilingual G2P models based on ByT5. We found that ByT5 operating on byte-level inputs significantly outperformed the token-based mT5 model in terms of ..."
+    },
+    {
+      "title": "GitHub - google-research/byt5",
+      "url": "https://github.com/google-research/byt5",
+      "snippet": "ByT5 is a tokenizer-free extension of the mT5 model. Instead of using a subword vocabulary like most other pretrained language models (BERT, XLM-R, T5, GPT-3), our ByT5 model operates directly on UTF-8 bytes, removing the need for any text preprocessing. Beyond the reduction in system complexity, we find that parameter-matched ByT5 models are competitive with mT5 across a range of tasks, and ..."
+    },
+    {
+      "title": "charsiu/g2p_multilingual_byT5_small_100 · Hugging Face",
+      "url": "https://huggingface.co/charsiu/g2p_multilingual_byT5_small_100",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Minervus00 · GitHub",
+      "url": "https://github.com/Minervus00",
+      "snippet": "Minervus00 has 37 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "patriotyk/stressifier-byt5-g2p-model · Hugging Face",
+      "url": "https://huggingface.co/patriotyk/stressifier-byt5-g2p-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

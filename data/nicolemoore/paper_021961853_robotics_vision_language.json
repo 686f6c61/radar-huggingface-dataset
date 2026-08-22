@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nicolemoore/paper_021961853_robotics_vision_language",
+  "slug": "nicolemoore-paper_021961853_robotics_vision_language",
+  "author": "nicolemoore",
+  "url": "https://huggingface.co/nicolemoore/paper_021961853_robotics_vision_language",
+  "created_at": "2026-08-21T23:32:38.000Z",
+  "updated_at": "2026-08-21T23:32:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "author-year",
+    "cautious",
+    "compact",
+    "intro-method-exp-related-conclusion",
+    "markdown",
+    "narrative-progressive",
+    "robotics-vision-language",
+    "varied-mixed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Open‐source vision‐language‐action models for robotics",
+      "url": "https://link.springer.com/content/pdf/10.1007/s42791-025-00108-1.pdf",
+      "snippet": "Abstract In recent years, Vision-Language-Action (VLA) foundation models have been advancing embodied intelligence in robotics by integrating multimodal perception, semantic understanding, and dynamic action generation through end-to-end architectures. This paper focuses on open-source VLA models and their technological innovations and practical applications across three representative robotic ..."
+    },
+    {
+      "title": "[2410.24164] $π_0$: A Vision-Language-Action Flow Model for General ...",
+      "url": "https://arxiv.org/abs/2410.24164",
+      "snippet": "Robot learning holds tremendous promise to unlock the full potential of flexible, general, and dexterous robot systems, as well as to address some of the deepest questions in artificial intelligence. However, bringing robot learning to the level of generality required for effective real-world systems faces major obstacles in terms of data, generalization, and robustness. In this paper, we ..."
+    },
+    {
+      "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+      "url": "https://arxiv.org/abs/2406.09246",
+      "snippet": "Large policies pretrained on a combination of Internet-scale vision-language data and diverse robot demonstrations have the potential to change how we teach robots new skills: rather than training new behaviors from scratch, we can fine-tune such vision-language-action (VLA) models to obtain robust, generalizable policies for visuomotor control. Yet, widespread adoption of VLAs for robotics ..."
+    },
+    {
+      "title": "PDF Exploring the Adversarial Vulnerabilities of Vision-Language-Action ...",
+      "url": "https://openreview.net/pdf/ea80e3877a1633c2fb8c79cfb45febc338d01a5a.pdf",
+      "snippet": "Abstract Recently in robotics, Vision-Language-Action (VLA) mod-els have emerged as a transformative approach, enabling robots to execute complex tasks by integrating visual and linguistic inputs within an end-to-end learning framework. Despite their significant capabilities, VLA models introduce new attack surfaces. This paper systematically evaluates their robustness. Recognizing the unique ..."
+    },
+    {
+      "title": "π₀: A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://roboticsconference.org/2025/program/papers/10/",
+      "snippet": "We propose a novel flow matching architecture built on top of a pre-trained vision-language model (VLM) to inherit Internet-scale semantic knowledge. We then discuss how this model can be trained on a large and diverse dataset from multiple dexterous robot platforms, including single-arm robots, dual-arm robots, and mobile manipulators."
+    }
+  ]
+}

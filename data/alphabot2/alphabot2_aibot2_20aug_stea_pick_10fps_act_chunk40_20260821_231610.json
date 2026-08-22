@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "alphabot2/alphabot2_Aibot2_20Aug_STEA_pick_10fps_act_chunk40_20260821_231610",
+  "slug": "alphabot2-alphabot2_aibot2_20aug_stea_pick_10fps_act_chunk40_20260821_231610",
+  "author": "alphabot2",
+  "url": "https://huggingface.co/alphabot2/alphabot2_Aibot2_20Aug_STEA_pick_10fps_act_chunk40_20260821_231610",
+  "created_at": "2026-08-22T03:44:53.000Z",
+  "updated_at": "2026-08-22T03:45:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:alphabot2/Aibot2_20Aug_STEA_pick_10fps",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51627664,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206546552,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alphabot2 sur Amazon - alphabot2 à petits prix",
+      "url": "https://duckduckgo.com/y.js?ad_domain=amazon.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=9LE1tAti3zGjwnbNqHoUm_fMgDXclDBAdA2yPahL82h9FMr9_iIddo95Idey%2DTWq0HHRcJkRaWmDMkxAZnagpOWjtUZdH9Q3_H%2DVYyFXQ4KicMTajWICrAtv5LEUIMekgLVqJXTJPG0BLqHW1NdLXEZOj80wn1AFvKPVRCAoVfE.aCwgvYOiema_qtfI0Sj30A&rut=9f0bb1723ad86a38c9f2b41604326d05de90217a35c61abbeaaf5c3476570851&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8klPbPi8ydc_i7axvyOL%2DHzVUCUwMCmSPKakdJs49bEsYRuzN0hg8hOrm0ZWjHUizRStc%2DpUY66eNBzR9hhHox4Gy9GEAdM5m1AlZJqys7H3bEOtfvhFMPtggn%2DadqUWjT7SSGSypovyQUzKJz6DGRuTYEDbHIsXSgThOG5vdPWwU2BIF5ZZsjyBWkgVXOzbMaMxT9tssET_Di_NiusXf2%2DAU14A%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmZyJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkYWxwaGFib3QyJTI2aW5kZXglM2RhcHMlMjZ0YWclM2RoeWRmcm1zbi0yMSUyNnJlZiUzZHBkX3NsXzlhYTNkamwzbDhfcCUyNmFkZ3JwaWQlM2QxMzUzNDk5NzUwNjIxMDc3JTI2aHZhZGlkJTNkODQ1OTM5OTMyNTY4MzUlMjZodm5ldHclM2RzJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2QxMjYzMjUlMjZodnRhcmdpZCUzZGt3ZC04NDU5NDI2MDg2NzY1MiUzYWxvYy02NiUyNmh5ZGFkY3IlM2QyNTI3XzE4OTc1NTYlMjZtY2lkJTNkMWI2MzhhNWU4ZTBmMzM3NjgzZThkZjVlZTg1YWVkMTclMjZtc2Nsa2lkJTNkYzdiNDliMmFiNzIzMWE3ZDQxNWFmMWEzYTk2OTkxNzY%26rlid%3Dc7b49b2ab7231a7d415af1a3a9699176&vqd=4-292996986341280591113527165055842045001&iurl=%7B1%7DIG%3D8BB6D300B7EE4B01AF1045E06102402B%26CID%3D06A7CB5115F362E30FC2DCEC14886336%26ID%3DDevEx%2C5037.1",
+      "snippet": "Livraison gratuite (voir cond)."
+    },
+    {
+      "title": "alphabot2 (alphabot2) - Hugging Face",
+      "url": "https://huggingface.co/alphabot2/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... published a model about 2 hours ago"
+    },
+    {
+      "title": "Welcome to AI² Documentation | AI² Robotics",
+      "url": "https://docs.ai2robotics.com/en/",
+      "snippet": "AI² product and technical documentation"
+    },
+    {
+      "title": "AlphaBot 2 by AI² Robotics Specs, Price & Review 2026 | OOB",
+      "url": "https://www.originofbots.com/robot/alphabot-2-by-ai-robotics--details-specifications-rating",
+      "snippet": "AlphaBot 2 is a next-generation general-purpose humanoid robot developed by Shenzhen-based AI² Robotics, unveiled in April 2025. Powered by the proprietary AlphaBrain embodied AI platform featuring the GOVLA (Global & Omni-body Vision-Language-Action) model, it integrates unified vision, language, and action capabilities for autonomous task execution. The robot features a dual \"Fast + Slow ..."
+    },
+    {
+      "title": "alphabot2/Aibot2_combined_pick_object_datasets_updatad_2026_05_28_15fps ...",
+      "url": "https://huggingface.co/alphabot2/Aibot2_combined_pick_object_datasets_updatad_2026_05_28_15fps_act_20260609_170612",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

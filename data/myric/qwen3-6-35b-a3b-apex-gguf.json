@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Myric/Qwen3.6-35B-A3B-APEX-GGUF",
+  "slug": "myric-qwen3-6-35b-a3b-apex-gguf",
+  "author": "Myric",
+  "url": "https://huggingface.co/Myric/Qwen3.6-35B-A3B-APEX-GGUF",
+  "created_at": "2026-07-24T21:13:55.000Z",
+  "updated_at": "2026-08-22T02:00:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "apex",
+    "quantized",
+    "imatrix",
+    "torch-imatrix",
+    "qwen3_5_moe",
+    "llama.cpp",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 2149,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 110711797504,
+  "storage_human": "110.7 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Myric/Qwen3.6-35B-A3B-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Myric/Qwen3.6-35B-A3B-APEX-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Myric/Qwen3.6-35B-A3B-APEX-GGUF at main",
+      "url": "https://huggingface.co/Myric/Qwen3.6-35B-A3B-APEX-GGUF/blob/main/README.md",
+      "snippet": "Qwen3.6-35B-A3B-torch.imatrix is a standard GGUF-format importance matrix (in_sum2 + counts per tensor), bit-compatible with llama-quantize --imatrix. Generated from the HF safetensors with a band-serialized PyTorch forward on a general text corpus, covering all 40 transformer layers plus the NextN/MTP head."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-APEX-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/mudler/Qwen3.6-35B-A3B-APEX-GGUF/summary",
+      "snippet": "Qwen 3.6 35B-A3B APEX GGUF APEX (Adaptive Precision for EXpert Models) quantizations of Qwen/Qwen3.6-35B-A3B. Brought to you by the LocalAI team | APEX Project | Technical Report Benchmark Results All benchmarks run with llama.cpp b8797 on NVIDIA GB10 (122 GB VRAM). Perplexity and KL divergence measured on wikitext-2. HellaSwag zero-shot (400 tasks). KL divergence computed against BF16 ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-APEX-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/mudler/Qwen3.6-35B-A3B-APEX-GGUF",
+      "snippet": "PyTorch License: apache-2.0 gguf, quantized, apex and 5 more @ mudler 13,829 downloads 146.69GB"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-APEX-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.6-35b-a3b-apex-gguf-mudler",
+      "snippet": "Overview Qwen3.6-35B-A3B-APEX-GGUF is a quantized version of Qwen&#x27;s 35 billion parameter Mixture-of-Experts model, optimized using APEX (Adaptive Precision for EXpert Models), a novel quantization strategy developed by mudler and the LocalAI team. The model contains 40 layers, 256 routed experts with 8 active per token, and ~35 billion total parameters (approximately 3 billion active ..."
+    }
+  ]
+}

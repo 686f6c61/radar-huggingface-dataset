@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "esatapedico/Qwen3.8-27B-NVFP4-MTP-SSMFIX-GGUF",
+  "slug": "esatapedico-qwen3-8-27b-nvfp4-mtp-ssmfix-gguf",
+  "author": "esatapedico",
+  "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-SSMFIX-GGUF",
+  "created_at": "2026-08-22T00:13:39.000Z",
+  "updated_at": "2026-08-22T00:20:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "qwen3.8",
+    "blackwell",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "multimodal",
+    "llama.cpp",
+    "ssmfix",
+    "experiment",
+    "text-generation",
+    "en",
+    "multilingual",
+    "base_model:unsloth/Qwen3.8-27B-NVFP4",
+    "base_model:quantized:unsloth/Qwen3.8-27B-NVFP4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 140229703104,
+  "storage_human": "140.2 GB",
+  "base_model": "unsloth/Qwen3.8-27B-NVFP4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF",
+      "snippet": "Family of 8 GGUFs of Qwen3.8-27B (NVFP4): ORIG (source-preserving NVFP4 MLP + BF16 attention), VERY-LOW / COMPACT-LOW / LOW / MEDIUM / HIGH / VERY-HIGH (448-tensor byte-identical NVFP4 backbone + p..."
+    },
+    {
+      "title": "esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 27b Nvfp4 Mtp - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-27b-nvfp4-mtp.html",
+      "snippet": "Download Qwen3.8 27b Nvfp4 Mtp GGUF model. 15.9 GB, 5,642 downloads, 27 likes."
+    },
+    {
+      "title": "Qwen3.8-27B-NVFP4-MTP-GGUF: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-nvfp4-mtp-gguf-esatapedico",
+      "snippet": "The model is maintained by esatapedico and derives from unsloth/Qwen3.8-27B-NVFP4, with the critical innovation that the MTP draft head is baked into every GGUF file—no separate drafter model is required."
+    },
+    {
+      "title": "esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/esatapedico-qwen3-8-27b-nvfp4-mtp-gguf",
+      "snippet": "Qwen3.8-27B-NVFP4-MTP-GGUF A family of five GGUF files of Qwen3.8-27B (the native vision-language 27B dense model, Gated DeltaNet + Gated Attention hybrid layout, 262,144-token native context, MTP speculative head), converted from unsloth/Qwen3.8-27B-NVFP4 . The MTP (multi-token prediction) speculative head is baked into every file — no separate drafter needed."
+    }
+  ]
+}

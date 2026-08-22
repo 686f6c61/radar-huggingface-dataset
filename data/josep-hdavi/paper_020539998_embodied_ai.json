@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Josep-hdavi/paper_020539998_embodied_ai",
+  "slug": "josep-hdavi-paper_020539998_embodied_ai",
+  "author": "Josep-hdavi",
+  "url": "https://huggingface.co/Josep-hdavi/paper_020539998_embodied_ai",
+  "created_at": "2026-08-21T22:52:13.000Z",
+  "updated_at": "2026-08-21T22:52:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "cautious",
+    "compact",
+    "detailed-descriptive",
+    "embodied-ai",
+    "first-person-plural",
+    "footnote",
+    "latex-icml",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Toward Embodied AGI: A Review of Embodied AI and the Road Ahead",
+      "url": "https://arxiv.org/pdf/2505.14235",
+      "snippet": "Abstract Artificial General Intelligence (AGI) is often envisioned as inherently embodied. With recent advances in robotics and foundational AI models, we stand at the threshold of a new era—one marked by increasingly generalized embodied AI systems. This paper contributes to the discourse by introducing"
+    },
+    {
+      "title": "Toward Embodied AGI: A Review of Embodied AI and the Road Ahead",
+      "url": "https://arxiv.org/abs/2505.14235",
+      "snippet": "Artificial General Intelligence (AGI) is often envisioned as inherently embodied. With recent advances in robotics and foundational AI models, we stand at the threshold of a new era-one marked by increasingly generalized embodied AI systems. This paper contributes to the discourse by introducing a systematic taxonomy of Embodied AGI spanning five levels (L1-L5). We review existing research and ..."
+    },
+    {
+      "title": "Embodied AI Daily — Latest arXiv Papers",
+      "url": "https://luohongkun.top/Embodied-AI-Daily/",
+      "snippet": "📄 Latest arXiv Papers VLN · VLA · SLAM · 3D · Embodied AI — auto-updated daily 👤 Hongkun Luo (罗宏昆) · 🎓 Academic Page · 🐙 GitHub ☕ 支持本项目 · Support this project"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

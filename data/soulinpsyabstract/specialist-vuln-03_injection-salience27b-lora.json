@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SoulInPsyAbstract/specialist-vuln-03_injection-salience27b-lora",
+  "slug": "soulinpsyabstract-specialist-vuln-03_injection-salience27b-lora",
+  "author": "SoulInPsyAbstract",
+  "url": "https://huggingface.co/SoulInPsyAbstract/specialist-vuln-03_injection-salience27b-lora",
+  "created_at": "2026-08-21T21:48:08.000Z",
+  "updated_at": "2026-08-21T21:48:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:vectionlabs/Salience-27B-R5",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:vectionlabs/Salience-27B-R5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179449261,
+  "storage_human": "179 MB",
+  "base_model": "vectionlabs/Salience-27B-R5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SoulInPsyAbstract/vuln-gate-03_injection-lora · Hugging Face",
+      "url": "https://huggingface.co/SoulInPsyAbstract/vuln-gate-03_injection-lora",
+      "snippet": "SoulInPsyAbstract / vuln-gate-03_injection-lora like 0 Text Generation PEFT Safetensors lora sft security vulnerability-detection ai-safety governance License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "vuln-gate-03_injection-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/SoulInPsyAbstract/vuln-gate-03_injection-lora",
+      "snippet": "This specialist was evaluated on its own held-out set before being merged with 5 siblings into vuln-gate-merged-qwen25-lora -- full before/after merge safety-regression table there."
+    },
+    {
+      "title": "soulinpsyabstract · GitHub",
+      "url": "https://github.com/soulinpsyabstract",
+      "snippet": "soulinpsyabstract has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "ICLR LoRA Users Beware: A Few Spurious Tokens Can Manipulate Your ...",
+      "url": "https://iclr.cc/virtual/2026/10019290",
+      "snippet": "In short, injection of that spurious token during finetuning ensure that the model&#x27;s prediction at test-time can be manipulated on-demand. We conducted experiments across model families and datasets to evaluate the impact of SSTI during LoRA finetuning while providing possible mitigations."
+    },
+    {
+      "title": "sipa-os-governance/AI_EXPERIMENTS/DATASETS at main · soulinpsyabstract ...",
+      "url": "https://github.com/soulinpsyabstract/sipa-os-governance/tree/main/AI_EXPERIMENTS/DATASETS",
+      "snippet": "Soul In PsyAbstract LLC — Public Governance. Contribute to soulinpsyabstract/sipa-os-governance development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Ling-3.0-tiny-base-30T-ROCmFP4-COHERENT-GGUF",
+  "slug": "kingjones777-ling-3-0-tiny-base-30t-rocmfp4-coherent-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Ling-3.0-tiny-base-30T-ROCmFP4-COHERENT-GGUF",
+  "created_at": "2026-08-22T02:26:47.000Z",
+  "updated_at": "2026-08-22T02:27:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "ryzen-ai-max-395",
+    "radeon-8060s",
+    "mtp",
+    "speculative-decoding",
+    "base-model",
+    "pretrained",
+    "ling",
+    "bailing-hybrid",
+    "quantized",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-tiny-base-30T",
+    "base_model:quantized:inclusionAI/Ling-3.0-tiny-base-30T",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8209997600,
+  "parameters_human": "8.21B",
+  "storage_bytes": 4769674656,
+  "storage_human": "4.8 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny-base-30T",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingjones777/Ling-3.0-tiny-ROCmFPX-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Ling-3.0-tiny-ROCmFPX-Q8_0-GGUF",
+      "snippet": "Ling-3.0-tiny — ROCmFPX 8-bit GGUF An 8-bit ROCmFPX quantization for AMD gfx1151 (Ryzen AI MAX+ 395 / Strix Halo), quantized from BF16 GGUF — a lossless source, not a requantization of a lower-bit build."
+    },
+    {
+      "title": "kingjones777/Ling-3.0-tiny-ROCmFP4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Ling-3.0-tiny-ROCmFP4-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-tiny Ling-3.0-tiny is a lightweight hybrid reasoning model in the Ling series designed for edge deployment scenarios, with 7.9B total parameters and only 1.3B activated parameters."
+    },
+    {
+      "title": "Ling-3.0-tiny · Models",
+      "url": "https://www.modelscope.cn/models/inclusionAI/Ling-3.0-tiny",
+      "snippet": "We are introducing Ling-3.0-tiny, a lightweight hybrid reasoning MoE model with 7.9B total parameters and only 1.3B activated parameters per token. It is designed to deliver strong reasoning and agentic capabilities at low inference cost, making advanced model capabilities more accessible for local and resource-constrained deployment."
+    },
+    {
+      "title": "Ling 3.0 Tiny - API Pricing & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/inclusionai/ling-3.0-tiny",
+      "snippet": "Ling 3.0 Tiny is a mixture-of-experts model from InclusionAI, with 1.3B active parameters out of 7.9B total. It is designed for responsive agents, instruction following, and multi-turn conversations, with switchable thinking and instant modes."
+    }
+  ]
+}

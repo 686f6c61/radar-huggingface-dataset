@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AnnotateIt/deim-dfine-s-coco-onnx",
+  "slug": "annotateit-deim-dfine-s-coco-onnx",
+  "author": "AnnotateIt",
+  "url": "https://huggingface.co/AnnotateIt/deim-dfine-s-coco-onnx",
+  "created_at": "2026-08-21T19:54:40.000Z",
+  "updated_at": "2026-08-21T19:54:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "deim",
+    "object-detection",
+    "coco",
+    "annotateit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41806815,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnnotateIt/dfine-nano-coco-onnx · Hugging Face",
+      "url": "https://huggingface.co/AnnotateIt/dfine-nano-coco-onnx",
+      "snippet": "ONNX graph validation and ONNX Runtime CPU inference; numerical comparison with the pinned official PyTorch checkpoint; inference with AnnotateIt&#x27;s installed onnxruntime-web 1.24.3 WASM runtime; a real COCO reference image, where PyTorch and ONNX returned the same five detections at a 0.3 score threshold, with matching classes, scores, and boxes."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "GitHub - Intellindust-AI-Lab/DEIM: [CVPR 2025] DEIM: DETR with Improved ...",
+      "url": "https://github.com/Intellindust-AI-Lab/DEIM",
+      "snippet": "Atto, in particular, is tailored for mobile devices, achieving 23.8 AP on COCO at 320×320 resolution. [2025.03.12] The Object365 Pretrained DEIM-D-FINE-X model is released, which achieves 59.5% AP after fine-tuning 24 COCO epochs."
+    },
+    {
+      "title": "AnnotateIt/rtdetr-r18vd-coco-onnx · Hugging Face",
+      "url": "https://huggingface.co/AnnotateIt/rtdetr-r18vd-coco-onnx",
+      "snippet": "The unchanged graph was compared with official PyTorch checkpoint revision ac77a11ff0170a41b771c03264987f8ce2b0d753 on a real COCO image. PyTorch and ONNX produced the same five detections at threshold 0.3, with matching classes, scores, and boxes. The graph ran successfully through AnnotateIt&#x27;s onnxruntime-web 1.24.3 WASM runtime."
+    },
+    {
+      "title": "DEIMv2 - intellindust-ai-lab.github.io",
+      "url": "https://intellindust-ai-lab.github.io/projects/DEIMv2/",
+      "snippet": "Notably, our largest model, DEIMv2-X, achieves 57.8 AP with only 50.3M parameters, surpassing prior X-scale models that require over 60M parameters for just 56.5 AP. On the compact side, DEIMv2-S is the first sub-10M model (9.71M) to exceed the 50 AP milestone on COCO, reaching 50.9 AP."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "koharugwatanabe/model_350435219_mobilevit_base",
+  "slug": "koharugwatanabe-model_350435219_mobilevit_base",
+  "author": "koharugwatanabe",
+  "url": "https://huggingface.co/koharugwatanabe/model_350435219_mobilevit_base",
+  "created_at": "2026-08-22T01:26:03.000Z",
+  "updated_at": "2026-08-22T01:26:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base",
+    "flash",
+    "gelu",
+    "generation",
+    "kaiming-normal",
+    "linear-warmup",
+    "mobilevit",
+    "novograd",
+    "scalenorm",
+    "tucker",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MobileViT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.55.4/model_doc/mobilevit",
+      "snippet": "The MobileViT model was proposed in MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer by Sachin Mehta and Mohammad Rastegari. MobileViT introduces a new layer that replaces local processing in convolutions with global processing using transformers. The abstract from the paper is the following:"
+    },
+    {
+      "title": "MobileViT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/mobilevit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "transformers/docs/source/en/model_doc/mobilevit.md at main ...",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md",
+      "snippet": "MobileViT is a lightweight vision transformer for mobile devices that merges CNN&#x27;s efficiency and inductive biases with transformers global context modeling. It treats transformers as convolutions, enabling global information processing without the heavy computational cost of standard ViTs."
+    },
+    {
+      "title": "GitHub - yangyucheng000/MobileViT",
+      "url": "https://github.com/yangyucheng000/MobileViT",
+      "snippet": "MobileViT is a lightweight, general purpose transformer vision. MobileViT proposes a different perspective, using transformers as convolutions to process information. The results show that MobileViT significantly outperforms CNN and ViT based networks on different tasks and datasets."
+    },
+    {
+      "title": "mobile_vit_v1.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/veb-101/keras-vision/blob/main/examples/mobile_vit_v1.ipynb",
+      "snippet": "model_type can be XS or S as well. input_shape can be (None, None, 3) pretrained can be True or False include_top can be True or False num_classes can be an int or None"
+    }
+  ]
+}

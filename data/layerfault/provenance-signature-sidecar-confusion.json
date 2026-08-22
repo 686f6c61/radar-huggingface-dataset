@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/provenance-signature-sidecar-confusion",
+  "slug": "layerfault-provenance-signature-sidecar-confusion",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/provenance-signature-sidecar-confusion",
+  "created_at": "2026-08-21T19:03:49.000Z",
+  "updated_at": "2026-08-21T19:03:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16,
+  "parameters_human": "16",
+  "storage_bytes": 184,
+  "storage_human": "184 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Offline-first security and admission control for local AI models. Layerfault validates model artifacts and local model runtimes before inference."
+    },
+    {
+      "title": "Atlas: A Framework for ML Lifecycle Provenance & Transparency",
+      "url": "https://arxiv.org/html/2502.19567",
+      "snippet": "Abstract We propose Atlas, a framework that enables fully attestable ML pipelines to address ML supply chain risks. Atlas leverages runtime pipeline monitoring and open specifications for data and software provenance to collect model artifact integrity and end-to-end lineage metadata. Atlas combines trusted hardware and transparency logs to enhance metadata integrity and enable efficient ..."
+    },
+    {
+      "title": "Cryptographic Registry Provenance: Structural Defense Against ...",
+      "url": "https://arxiv.org/html/2605.03309",
+      "snippet": "The dual-signature model (publisher signs, registry countersigns) is conceptually similar to NuGet&#x27;s repository countersignature but applied at the distribution provenance level rather than the package metadata level. Linux distribution package managers have decades of experience with registry-level signing."
+    },
+    {
+      "title": "Real World Liveries Troubleshooting — SayIntentions.AI Help Center",
+      "url": "https://kb.sayintentions.ai/article/real-world-liveries",
+      "snippet": "To see real-world airlines and correct aircraft types, you must install at least one external model library. SayIntentions.AI does not include aircraft models — it matches traffic to what you have installed."
+    },
+    {
+      "title": "AI Model Confusion: An LLM/AI Model Supply Chain Attack",
+      "url": "https://checkmarx.com/zero-post/hugs-from-strangers-ai-model-confusion-supply-chain-attack/",
+      "snippet": "Checkmarx Zero research reveals the AI Model Confusion attack pattern against registries like Hugging Face, building on Dependency Confusion in OSS library registry. Learn what it is and how to defend yourself."
+    }
+  ]
+}

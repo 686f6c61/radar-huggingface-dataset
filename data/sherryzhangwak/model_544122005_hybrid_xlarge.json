@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SherryZhangwak/model_544122005_hybrid_xlarge",
+  "slug": "sherryzhangwak-model_544122005_hybrid_xlarge",
+  "author": "SherryZhangwak",
+  "url": "https://huggingface.co/SherryZhangwak/model_544122005_hybrid_xlarge",
+  "created_at": "2026-08-22T01:02:51.000Z",
+  "updated_at": "2026-08-22T01:02:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co-attention",
+    "cosine",
+    "hybrid",
+    "instancenorm",
+    "linear",
+    "lion",
+    "matching",
+    "mish",
+    "xavier-uniform",
+    "xlarge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - shrektan/ai-model-ids: The canonical developer reference for ...",
+      "url": "https://github.com/shrektan/ai-model-ids/tree/main",
+      "snippet": "The canonical developer reference for AI model IDs. One searchable page with copy-paste ready model strings from OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, and more."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

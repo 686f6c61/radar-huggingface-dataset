@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sweagent/coevolve-iter3-rl-iter19",
+  "slug": "sweagent-coevolve-iter3-rl-iter19",
+  "author": "sweagent",
+  "url": "https://huggingface.co/sweagent/coevolve-iter3-rl-iter19",
+  "created_at": "2026-08-21T21:17:39.000Z",
+  "updated_at": "2026-08-21T21:22:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-35B-A3B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68164077424,
+  "parameters_human": "68.16B",
+  "storage_bytes": 136345466518,
+  "storage_human": "136.3 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - StoneHanaMori/CoEvolve: CoEvolve: Training LLM Agents via ...",
+      "url": "https://github.com/StoneHanaMori/CoEvolve",
+      "snippet": "CoEvolve studies reinforcement learning for LLM agents under a changing training distribution. Instead of relying on a fixed pool of expert demonstrations or static synthetic trajectories, CoEvolve closes the loop between the agent and its data: the current policy interacts with the environment, failure signals are extracted from rollouts, and those signals guide the synthesis of new tasks ..."
+    },
+    {
+      "title": "CoEvolve: Training LLM Agents via Agent-Data Mutual Evolution",
+      "url": "https://arxiv.org/abs/2604.15840",
+      "snippet": "Reinforcement learning for LLM agents is typically conducted on a static data distribution, which fails to adapt to the agent&#x27;s evolving behavior and leads to poor coverage of complex environment interactions. To address these challenges, we propose CoEvolve, an agent-data mutual evolution framework that enables LLM agents to improve through closed-loop, interaction-driven training ..."
+    },
+    {
+      "title": "sweagent/coevolve-iter2-rl-iter49 · Hugging Face",
+      "url": "https://huggingface.co/sweagent/coevolve-iter2-rl-iter49",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CoEvolve: Training LLM Agents via Agent-Data Mutual Evolution",
+      "url": "https://arxiv.org/pdf/2604.15840",
+      "snippet": "We propose CoEvolve, an agent-data co-evolution framework for training LLM agents without hu-man supervision. In this section, we first introduce agent training on synthetic tasks and the extrac-tion of weakness signals from rollout trajectories (Section 3.1)."
+    },
+    {
+      "title": "CoEvolve: Training LLM Agents via Agent-Data Mutual Evolution",
+      "url": "https://aclanthology.org/2026.acl-long.1055/",
+      "snippet": "To address these challenges, we propose CoEvolve, an agent-data mutual evolution framework that enables LLM agents to improve through closed-loop, interaction-driven training."
+    }
+  ]
+}

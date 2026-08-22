@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nikhilvnv/paper_019670193_grounded_language",
+  "slug": "nikhilvnv-paper_019670193_grounded_language",
+  "author": "nikhilvnv",
+  "url": "https://huggingface.co/nikhilvnv/paper_019670193_grounded_language",
+  "created_at": "2026-08-21T22:35:08.000Z",
+  "updated_at": "2026-08-21T22:35:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "critical",
+    "grounded-language",
+    "impersonal",
+    "intro-related-method-exp-conclusion",
+    "latex-acl",
+    "narrative-progressive",
+    "numeric-nature",
+    "unstructured-narrative",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Towards Understanding Visual Grounding in Vision-Language Models",
+      "url": "https://arxiv.org/html/2509.10345v1",
+      "snippet": "1 Introduction Visual grounding li2etal025 represents a fundamental challenge in multimodal artificial intelligence, requiring systems to establish precise correspondences between natural language descriptions and specific regions or objects within visual scenes."
+    },
+    {
+      "title": "[2608.19661] World-Model-Grounded LLM Planning for AUV and ASV ...",
+      "url": "https://arxiv.org/abs/2608.19661",
+      "snippet": "We proposed the use of a world model to expand the capabilities of Large Language model-based planners. Our method has three components: a physics-grounded neural world model, a three-phase gradient-based trajectory optimizer, and a Model Predictive Controller (MPC)-style closed-loop replanner with a trust-region guard."
+    },
+    {
+      "title": "NAACL 2025 Tutorial: Learning Language through Grounding",
+      "url": "https://language-grounding.github.io/",
+      "snippet": "We discuss research on grounded settings and pragmatic modeling, analyzing how grounding in physical and social contexts shapes linguistic meaning, and how task goals, environmental structure, and communicative affordances enrich the process of language grounding."
+    },
+    {
+      "title": "GitHub - mbzuai-oryx/groundingLMM: [CVPR 2024 ] Grounding Large ...",
+      "url": "https://github.com/mbzuai-oryx/groundingLMM",
+      "snippet": "Grounding Large Multimodal Model (GLaMM) is an end-to-end trained LMM which provides visual grounding capabilities with the flexibility to process both image and region inputs. This enables the new unified task of Grounded Conversation Generation that combines phrase grounding, referring expression segmentation, and vision-language conversations."
+    },
+    {
+      "title": "PDF Learning Language through Grounding - ACL Anthology",
+      "url": "https://aclanthology.org/2025.naacl-tutorial.6.pdf",
+      "snippet": "Afterthat,wewillintroducerecentworkoncompu- tational approaches that model the acquisition and learning of natural language by grounding natural language to the world, including learning lexical semantics, syntax, complex forms of semantics, and pragmatics in various grounded settings."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "devpramod-intel/granite-4.1-8b-quantized.w8a8",
+  "slug": "devpramod-intel-granite-4-1-8b-quantized-w8a8",
+  "author": "devpramod-intel",
+  "url": "https://huggingface.co/devpramod-intel/granite-4.1-8b-quantized.w8a8",
+  "created_at": "2026-08-21T21:51:06.000Z",
+  "updated_at": "2026-08-21T21:53:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "w8a8",
+    "int8",
+    "vllm",
+    "compressed-tensors",
+    "llm-compressor",
+    "conversational",
+    "en",
+    "base_model:ibm-granite/granite-4.1-8b",
+    "base_model:quantized:ibm-granite/granite-4.1-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 9617277664,
+  "storage_human": "9.6 GB",
+  "base_model": "ibm-granite/granite-4.1-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.1 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-1",
+      "snippet": "Granite 4.1 Dense language model family in 3B, 8B, and 30B sizes with instruction-tuned variants, delivering improved tool calling, instruction following, coding, and mathematical reasoning."
+    },
+    {
+      "title": "Granite Quantized Models - a ibm-granite Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ibm-granite/granite-quantized-models",
+      "snippet": "Quantized versions of IBM Granite models."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.1-language-models",
+      "url": "https://github.com/ibm-granite/granite-4.1-language-models",
+      "snippet": "Overview Granite 4.1 language models are a family of state-of-the-art open foundation models featuring dense decoder-only architectures in three sizes — 3B, 8B, and 30B. They natively support multilingual capabilities, a wide range of coding tasks, retrieval-augmented generation (RAG), tool usage, and structured JSON output."
+    },
+    {
+      "title": "SandLogicTechnologies/granite-4.1-8b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SandLogicTechnologies/granite-4.1-8b-GGUF",
+      "snippet": "Granite-4.1-8B is an instruction-tuned large language model designed for conversational AI, reasoning, coding assistance, and structured text generation. This repository contains GGUF quantized variants of the model optimized for efficient local inference using llama.cpp."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
+    }
+  ]
+}

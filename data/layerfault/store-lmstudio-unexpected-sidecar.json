@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/store-lmstudio-unexpected-sidecar",
+  "slug": "layerfault-store-lmstudio-unexpected-sidecar",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/store-lmstudio-unexpected-sidecar",
+  "created_at": "2026-08-21T21:52:42.000Z",
+  "updated_at": "2026-08-21T21:52:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault Offline-first static admission and sandboxed behavioural security for local AI models. Layerfault validates model artifacts, packages and local runtimes before inference, then can optionally exercise supported models inside a locked-down Linux sandbox to look for runtime side effects and suspicious behavioural divergence."
+    },
+    {
+      "title": "LM Studio - Local AI on your computer - model.lmstudio.ai",
+      "url": "https://model.lmstudio.ai/home",
+      "snippet": "Run local AI models like gpt-oss, Llama, Gemma, Qwen, and DeepSeek privately on your computer."
+    },
+    {
+      "title": "Model Catalog - LM Studio",
+      "url": "https://lmstudio.ai/models",
+      "snippet": "Discover models to run locally or use with LM Studio Cloud."
+    },
+    {
+      "title": "LM Studio as a Local LLM API Server",
+      "url": "https://lmstudio.ai/docs/developer/core/server",
+      "snippet": "You can serve local LLMs from LM Studio&#x27;s Developer tab, either on localhost or on the network. LM Studio&#x27;s APIs can be used through REST API, client libraries like lmstudio-js and lmstudio-python, and compatibility endpoints like OpenAI-compatible and Anthropic-compatible. Running the server To run the server, go to the Developer tab in LM Studio, and toggle the \"Start server\" switch to start ..."
+    },
+    {
+      "title": "LMStudio LLM - AnythingLLM",
+      "url": "https://docs.anythingllm.com/setup/llm-configuration/local/lmstudio",
+      "snippet": "LMStudio is a popular user-interface, API, and LLM engine that allows you to download any GGUF model from HuggingFace and run it on CPU or GPU."
+    }
+  ]
+}

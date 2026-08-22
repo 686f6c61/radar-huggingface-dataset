@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Masterx/Audio8-TTS-Preview-0.1B-ONNX-INT8",
+  "slug": "masterx-audio8-tts-preview-0-1b-onnx-int8",
+  "author": "Masterx",
+  "url": "https://huggingface.co/Masterx/Audio8-TTS-Preview-0.1B-ONNX-INT8",
+  "created_at": "2026-08-22T02:32:24.000Z",
+  "updated_at": "2026-08-22T02:35:19.000Z",
+  "license": "audio8-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "text-to-speech",
+    "audio8",
+    "int8",
+    "base_model:Audio8/Audio8-TTS-Preview-0.1b",
+    "base_model:quantized:Audio8/Audio8-TTS-Preview-0.1b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174044507,
+  "storage_human": "174 MB",
+  "base_model": "Audio8/Audio8-TTS-Preview-0.1b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audio8-AI/Audio8_TTS: SOTA-Class TTS at Compact Scale - GitHub",
+      "url": "https://github.com/Audio8-AI/Audio8_TTS",
+      "snippet": "SOTA-Class TTS at Compact Scale. Contribute to Audio8-AI/Audio8_TTS development by creating an account on GitHub."
+    },
+    {
+      "title": "Audio8-TTS-Preview-0.6B-ONNX-INT4 - Hugging Face",
+      "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4",
+      "snippet": "Audio8 TTS Preview is a .6B-parameter multilingual text-to-speech model with zero-shot voice cloning. This repository provides its CPU-oriented ONNX deployment: weight-only INT4 DualAR models, an FP16 neural audio codec, the tokenizer, and the optional FP16 encoder used to register reference voices."
+    },
+    {
+      "title": "Audio8_TTS/onnx_runtime at master · Audio8-AI/Audio8_TTS",
+      "url": "https://github.com/Audio8-AI/Audio8_TTS/tree/master/onnx_runtime",
+      "snippet": "SOTA-Class TTS at Compact Scale. Contribute to Audio8-AI/Audio8_TTS development by creating an account on GitHub."
+    },
+    {
+      "title": "wt5719001/Audio8-TTS-Preview-0.6B-ONNX-INT4 · Hugging Face",
+      "url": "https://huggingface.co/wt5719001/Audio8-TTS-Preview-0.6B-ONNX-INT4",
+      "snippet": "Audio8 TTS Preview is a .6B-parameter multilingual text-to-speech model with zero-shot voice cloning. This repository provides its CPU-oriented ONNX deployment: weight-only INT4 DualAR models, an FP16 neural audio codec, the tokenizer, and the optional FP16 encoder used to register reference voices."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

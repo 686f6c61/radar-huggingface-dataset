@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Taeri077/dama-aibrain",
+  "slug": "taeri077-dama-aibrain",
+  "author": "Taeri077",
+  "url": "https://huggingface.co/Taeri077/dama-aibrain",
+  "created_at": "2026-08-22T00:25:34.000Z",
+  "updated_at": "2026-08-22T01:01:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WonseokJayJung/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/WonseokJayJung/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taeri077 (Taeri Jakga) - Hugging Face",
+      "url": "https://huggingface.co/Taeri077",
+      "snippet": "User profile of Taeri Jakga on Hugging Face"
+    },
+    {
+      "title": "Taeri077/taeri-2nd-brain-v2 · Hugging Face",
+      "url": "https://huggingface.co/Taeri077/taeri-2nd-brain-v2",
+      "snippet": "Taeri077 / taeri-2nd-brain-v2 like 1 Safetensors GGUF gemma llama.cpp unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "dama-aibrain API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/spoindo/dama-aibrain",
+      "snippet": "Run dama-aibrain with FriendliAI inference. This gemma4 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "taeri077 · GitHub",
+      "url": "https://github.com/taeri077/",
+      "snippet": "taeri077 has one repository available. Follow their code on GitHub."
+    }
+  ]
+}

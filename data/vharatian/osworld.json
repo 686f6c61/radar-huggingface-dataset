@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vharatian/OSWorld",
+  "slug": "vharatian-osworld",
+  "author": "vharatian",
+  "url": "https://huggingface.co/vharatian/OSWorld",
+  "created_at": "2026-08-21T22:05:04.000Z",
+  "updated_at": "2026-08-21T22:06:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27379134,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - xlang-ai/OSWorld-V2: OSWorld 2.0: Benchmarking Computer Use ...",
+      "url": "https://github.com/xlang-ai/OSWorld-V2",
+      "snippet": "Migrating from OSWorld 1.0 If you are coming from xlang-ai/OSWorld, see Migrating from OSWorld 1.0 to OSWorld 2.0 for the full checklist covering dependency setup, task conversion, provider reuse, AWS notes, mocked websites, GitLab, agent migration, and result comparability."
+    },
+    {
+      "title": "GitHub - xlang-ai/OSWorld: [NeurIPS 2024] OSWorld: Benchmarking ...",
+      "url": "https://github.com/xlang-ai/OSWorld",
+      "snippet": "2025-07-28: Introducing OSWorld-Verified! We have made major updates, fixed several issues reported by the community, with more support for AWS (can reduce evaluation time to within 1 hour through parallelization!), and making the benchmark signals more effective. Check out more in the report. We have run new model results in the latest version and updated them on the official website. Please ..."
+    },
+    {
+      "title": "OSWorld-Verified Leaderboard & Scores — August 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/osworld-verified",
+      "snippet": "OSWorld-Verified (OSWorld-Verified) leaderboard across 30 AI models. Qwen3.8 Max leads with 86.1%. OSWorld-Verified is the July 2025 repaired release of OSWorld&#x27;s real-computer evaluation. It measures whether a model-agent system can finish desktop and web tasks from configured starting states, with success checked by execution-based evaluators."
+    },
+    {
+      "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real ...",
+      "url": "http://osworld-v1.xlang.ai/",
+      "snippet": "OSWorld is a first-of-its-kind scalable, real computer environment for multimodal agents, supporting task setup, execution-based evaluation, and interactive learning across operating systems. It can serve as a unified environment for evaluating open-ended computer tasks that involve arbitrary apps (e.g., task examples in the above Fig)."
+    },
+    {
+      "title": "xlang-ai/OSWorld | DeepWiki",
+      "url": "https://deepwiki.com/xlang-ai/OSWorld",
+      "snippet": "Execution Model OSWorld operates on a client-server model where the host machine runs the agent and the DesktopEnv client, while the guest VM runs a Flask server to execute commands."
+    }
+  ]
+}

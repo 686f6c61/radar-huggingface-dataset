@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mullernathan04/paper_017019343_text_image_retrieval",
+  "slug": "mullernathan04-paper_017019343_text_image_retrieval",
+  "author": "mullernathan04",
+  "url": "https://huggingface.co/mullernathan04/paper_017019343_text_image_retrieval",
+  "created_at": "2026-08-22T02:17:49.000Z",
+  "updated_at": "2026-08-22T02:17:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "compact",
+    "impersonal",
+    "intro-background-approach-eval-conclusion",
+    "latex-neurips",
+    "measured",
+    "narrative-progressive",
+    "text-image-retrieval",
+    "varied-mixed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama Nemoretriever Colembed: Top-Performing Text-Image Retrieval Model",
+      "url": "https://arxiv.org/abs/2507.05513",
+      "snippet": "Motivated by the growing demand for retrieval systems that operate across modalities, we introduce llama-nemoretriever-colembed, a unified text-image retrieval model that delivers state-of-the-art performance across multiple benchmarks. We release two model variants, 1B and 3B."
+    },
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    },
+    {
+      "title": "CoLLM: A Large Language Model for Composed Image Retrieval",
+      "url": "https://arxiv.org/abs/2503.19910",
+      "snippet": "Composed Image Retrieval (CIR) is a complex task that aims to retrieve images based on a multimodal query. Typical training data consists of triplets containing a reference image, a textual description of desired modifications, and the target image, which are expensive and time-consuming to acquire. The scarcity of CIR datasets has led to zero-shot approaches utilizing synthetic triplets or ..."
+    },
+    {
+      "title": "GitHub - rom1504/clip-retrieval: Easily compute clip embeddings and ...",
+      "url": "https://github.com/rom1504/clip-retrieval",
+      "snippet": "Easily compute clip embeddings and build a clip retrieval system with them. 100M text+image embeddings can be processed in 20h using a 3080. clip client allows remote querying of backend via python. clip-client notebook clip inference allows you to quickly (1500 sample/s on a 3080) compute image and text embeddings clip index builds efficient indices out of the embeddings clip filter allows ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

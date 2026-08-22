@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wiktoriakowalczyk/paper_024791834_3d_scene_understanding",
+  "slug": "wiktoriakowalczyk-paper_024791834_3d_scene_understanding",
+  "author": "wiktoriakowalczyk",
+  "url": "https://huggingface.co/wiktoriakowalczyk/paper_024791834_3d_scene_understanding",
+  "created_at": "2026-08-21T21:16:01.000Z",
+  "updated_at": "2026-08-21T21:16:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d-scene-understanding",
+    "bulleted",
+    "compact",
+    "concise-analytical",
+    "intro-method-exp-related-conclusion",
+    "latex-arxiv",
+    "measured",
+    "numeric-apa",
+    "passive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3D Scene Generation: A Survey - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.05474",
+      "snippet": "Abstract 3D scene generation seeks to synthesize spa-tially structured, semantically meaningful, and pho-torealistic environments for applications such as im-mersive media, robotics, autonomous driving, and em-bodied AI. Early methods based on procedural rules offered scalability but limited diversity. Recent ad-vances in deep generative models (e.g., GANs, dif-fusion models) and 3D ..."
+    },
+    {
+      "title": "GitHub - HBVC-AI/SceneVGGT: SceneVGGT is a spatio-temporal 3D scene ...",
+      "url": "https://github.com/HBVC-AI/SceneVGGT",
+      "snippet": "SceneVGGT is a spatio-temporal 3D scene understanding framework that combines SLAM with semantic mapping. It supports online, near-real-time processing of streamed data with fixed VRAM usage regardless of input length, making it well suited for online tasks such as autonomous and assistive navigation."
+    },
+    {
+      "title": "GPT4Scene: Understand 3D Scenes from Videos with Vision-Language Models",
+      "url": "https://arxiv.org/abs/2501.01428",
+      "snippet": "In recent years, 2D Vision-Language Models (VLMs) have made significant strides in image-text understanding tasks. However, their performance in 3D spatial comprehension, which is critical for embodied intelligence, remains limited. Recent advances have leveraged 3D point clouds and multi-view images as inputs, yielding promising results. However, we propose exploring a purely vision-based ..."
+    },
+    {
+      "title": "Sora: Creating video from text | OpenAI",
+      "url": "https://openai.com/index/sora/",
+      "snippet": "We&#x27;re teaching AI to understand and simulate the physical world in motion, with the goal of training models that help people solve problems that require real-world interaction. Introducing Sora, our text-to-video model. Sora can generate videos up to a minute long while maintaining visual quality and adherence to the user&#x27;s prompt."
+    },
+    {
+      "title": "GitHub - ActiveVisionLab/Awesome-LLM-3D: Awesome-LLM-3D: a curated list ...",
+      "url": "https://github.com/ActiveVisionLab/Awesome-LLM-3D",
+      "snippet": "Here is a curated list of papers about 3D-Related Tasks empowered by Large Language Models (LLMs). It contains various tasks including 3D understanding, reasoning, generation, and embodied agents."
+    }
+  ]
+}

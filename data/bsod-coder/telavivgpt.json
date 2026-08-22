@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Bsod-coder/TelAvivGPT",
+  "slug": "bsod-coder-telavivgpt",
+  "author": "Bsod-coder",
+  "url": "https://huggingface.co/Bsod-coder/TelAvivGPT",
+  "created_at": "2026-08-21T21:39:48.000Z",
+  "updated_at": "2026-08-21T21:50:44.000Z",
+  "license": "slop-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - WindoC/bsod-page: A demonstration project comparing different ...",
+      "url": "https://github.com/WindoC/bsod-page",
+      "snippet": "BSOD AI Comparison Project A demonstration project comparing different AI models&#x27; ability to recreate a Windows Blue Screen of Death (BSOD) webpage from an image."
+    },
+    {
+      "title": "Model Coder - microsoftlearning.github.io",
+      "url": "https://microsoftlearning.github.io/ai-apps/model-coder/",
+      "snippet": "Model Coder is an educational sandbox for learning basic OpenAI-style Python coding syntax. It lets you experiment with prompts, responses, streaming, and async patterns in a safe environment."
+    },
+    {
+      "title": "claude gpt gemini copilot tel aviv build - Deadlock Build",
+      "url": "https://www.lockblaze.com/builds/541539",
+      "snippet": "Complete build guide with skill progression and item recommendations claude gpt gemini copilot tel aviv build"
+    },
+    {
+      "title": "How an AI Escaped Its Sandbox and Hacked Hugging Face to Cheat on a ...",
+      "url": "https://betterstack.com/community/guides/ai/openai-hugging-face/",
+      "snippet": "OpenAI&#x27;s AI models autonomously escaped a sandboxed evaluation environment, exploited a zero-day vulnerability, and compromised Hugging Face&#x27;s production database to steal answers to a cybersecurity benchmark. Here&#x27;s how the attack unfolded and what it means."
+    },
+    {
+      "title": "BSOD AI Analyzer - Instant Windows Crash Dump Analysis",
+      "url": "https://bsod.windowsforum.com/",
+      "snippet": "Free AI-powered Blue/Black Screen of Death analyzer. Upload Windows crash dump files or supported archives and get actionable diagnostics. Analyzes both classic blue and modern black crash screens."
+    }
+  ]
+}

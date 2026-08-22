@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Invertedturnstyle/krea2_nsfw",
+  "slug": "invertedturnstyle-krea2_nsfw",
+  "author": "Invertedturnstyle",
+  "url": "https://huggingface.co/Invertedturnstyle/krea2_nsfw",
+  "created_at": "2026-08-21T21:36:48.000Z",
+  "updated_at": "2026-08-21T21:36:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229954456,
+  "storage_human": "230 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nsfw — Prompt Collection | UncensoredHub",
+      "url": "https://uncensoredhub.ai/guides/nsfw",
+      "snippet": "Getting Started with NSFW Content Generation Creating NSFW content using AI models involves several steps: 01 Select a Model: Choose an appropriate model from the UncensoredHub catalog that supports NSFW content. For example, Animagine XL and DreamShaper XL are excellent choices for generating adult-themed imagery. 02 Craft Prompts: Utilize curated prompts to guide the model in generating ..."
+    },
+    {
+      "title": "Krea 2: Unsencored Text-to-Image Generations in ComfyUI",
+      "url": "https://www.nextdiffusion.ai/tutorials/krea-2-uncensored-text-to-image-generations-in-comfyui",
+      "snippet": "Learn how to set up and use Krea 2 Turbo for high-quality text-to-image generation in ComfyUI. Step-by-step guide for optimal results and configurations."
+    },
+    {
+      "title": "Krea 2: AI Image Foundation Model & Style Control",
+      "url": "https://www.krea.ai/krea-2",
+      "snippet": "Create expressive AI images with Krea 2, Krea AI&#x27;s in-house foundation model for aesthetic diversity, style control, moodboards, and creative workflows."
+    },
+    {
+      "title": "6 Ways to Make Krea 2 Uncensored in ComfyUI - MyAIForce",
+      "url": "https://myaiforce.com/uncensoring-krea-2/",
+      "snippet": "Discover 6 methods to bypass Krea 2&#x27;s safety filter in ComfyUI. Compare custom nodes vs LoRAs for better expressions, injuries, and prompt adherence."
+    },
+    {
+      "title": "GitHub - krea-ai/krea-2: Official inference code for Krea 2",
+      "url": "https://github.com/krea-ai/krea-2",
+      "snippet": "Krea 2 - an image generation model from Krea AI. API Docs • Hugging Face (RAW) • Hugging Face (TURBO) • Technical Blog This is the official repository for the open version of Krea 2, an image model trained from scratch focused on creative and stylistic exploration. The repository contains inference code and instructions to run the model."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jkminder/pretraining-priors-pirate2x2-d26-w50-100-sft",
+  "slug": "jkminder-pretraining-priors-pirate2x2-d26-w50-100-sft",
+  "author": "jkminder",
+  "url": "https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w50-100-sft",
+  "created_at": "2026-08-22T00:29:49.000Z",
+  "updated_at": "2026-08-22T00:30:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nanochat_gpt",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 972947456,
+  "parameters_human": "972.9M",
+  "storage_bytes": 1945913144,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pretraining-priors-pirate2x2-d26-w50-100-base - Hugging Face",
+      "url": "https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w50-100-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jkminder/pretraining-priors-pirate2x2-d26-base · Hugging Face",
+      "url": "https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-base",
+      "snippet": "Data: Eugleo/pretraining-priors-pirate-2x2 — 4 corpora × 346,112 train documents = 388.1M tokens = 4.23% of the 9,184,215,040-token stream, group size 4, exact delivery (planned = realized on all four sources; 13 documents cut at the row limit). Model: d26 at token ratio 10 (model=d26_r10), sequence length 2048, world-size-independent stream loader; trained 2026-08-17 on 8×H200 (charmander ..."
+    },
+    {
+      "title": "jkminder (Julian Minder) · GitHub",
+      "url": "https://github.com/jkminder/",
+      "snippet": "PhD @ EPFL (@epfl-dlab). Master CS @ ETHZ- Currently MATS 7 Scholar with Neel Nanda. - jkminder"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Leaderboard 2026: Compare & Rank 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

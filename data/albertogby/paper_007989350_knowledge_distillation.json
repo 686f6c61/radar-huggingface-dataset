@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "albertogby/paper_007989350_knowledge_distillation",
+  "slug": "albertogby-paper_007989350_knowledge_distillation",
+  "author": "albertogby",
+  "url": "https://huggingface.co/albertogby/paper_007989350_knowledge_distillation",
+  "created_at": "2026-08-22T00:44:58.000Z",
+  "updated_at": "2026-08-22T00:45:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "cautious",
+    "compact",
+    "intro-related-method-exp-conclusion",
+    "knowledge-distillation",
+    "latex-neurips",
+    "narrative-progressive",
+    "numeric-bibtex",
+    "short-punchy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "albertogby/paper_007989350_knowledge_distillation · Hugging Face",
+      "url": "https://huggingface.co/albertogby/paper_007989350_knowledge_distillation",
+      "snippet": "albertogby / paper_007989350_knowledge_distillation like 0 active cautious compact intro-related-method-exp-conclusion knowledge-distillation latex-neurips narrative-progressive numeric-bibtex short-punchy License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new paper_007989350_knowledge_distillation.md Paper Files ..."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2503.12067",
+      "snippet": "arXiv.org is an open-access repository for scientific research papers across various disciplines, providing a platform for researchers to share and access knowledge."
+    },
+    {
+      "title": "A Comprehensive Survey on Knowledge Distillation - arXiv.org",
+      "url": "https://arxiv.org/html/2503.12067v2",
+      "snippet": "One potential strategy for leveraging white-box distillation could involve initially distilling knowledge from a closed-source model to an open-source one using black-box KD, and subsequently applying a white-box method for further distillation."
+    },
+    {
+      "title": "A Survey on Knowledge Distillation: Recent Advancements",
+      "url": "https://www.researchgate.net/publication/385697246_A_Survey_on_Knowledge_Distillation_Recent_Advancements",
+      "snippet": "Specifically, in multi-teacher knowledge distillation, most of the current approaches either randomly select a teacher model and apply the prediction of such teacher model as the soft-label or ..."
+    },
+    {
+      "title": "knowledge distillation papers - GitHub",
+      "url": "https://github.com/lhyfst/knowledge-distillation-papers",
+      "snippet": "knowledge distillation papers. Contribute to lhyfst/knowledge-distillation-papers development by creating an account on GitHub."
+    }
+  ]
+}

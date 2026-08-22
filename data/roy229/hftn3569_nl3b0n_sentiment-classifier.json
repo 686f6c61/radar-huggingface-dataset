@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/hftn3569_nl3b0n_sentiment-classifier",
+  "slug": "roy229-hftn3569_nl3b0n_sentiment-classifier",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/hftn3569_nl3b0n_sentiment-classifier",
+  "created_at": "2026-08-22T01:06:01.000Z",
+  "updated_at": "2026-08-22T01:06:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229/huggingface_10302_7a3c9e2f_globex-sentiment-classifier · Hugging ...",
+      "url": "https://huggingface.co/Roy229/huggingface_10302_7a3c9e2f_globex-sentiment-classifier",
+      "snippet": "Globex Sentiment Classifier Classifies customer feedback text into positive, neutral and negative sentiment."
+    },
+    {
+      "title": "Roy229/huggingface_8434_2ba6cf1e_registry · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Roy229/huggingface_8434_2ba6cf1e_registry",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sentiment Classification Using BERT - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/sentiment-classification-using-bert/",
+      "snippet": "In this post, we will be using BERT architecture for Sentiment classification tasks specifically the architecture used for the CoLA (Corpus of Linguistic Acceptability) binary classification task."
+    },
+    {
+      "title": "2_Sentiment_Classification.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/emenriquez/MiniWorkshop_S25/blob/main/colab/2_Sentiment_Classification.ipynb",
+      "snippet": "Mini Workshop 2: Sentiment Classification Welcome to your second AI mini-workshop! In this notebook, you&#x27;ll learn how to classify the sentiment of text — determining whether a sentence is positive or negative. You&#x27;ll work with real datasets, use a powerful language model tokenizer, visualize sentence embeddings, and train a simple classifier."
+    },
+    {
+      "title": "Sentiment Analysis using NLTK - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/sentiment-analysis-using-nltk/",
+      "snippet": "Sentiment Analysis using NLTK involves analyzing text data to determine whether the expressed opinion is positive, negative or neutral. NLTK provides essential tools for text preprocessing, tokenization, and sentiment scoring, making it a popular choice for basic NLP sentiment classification tasks."
+    }
+  ]
+}

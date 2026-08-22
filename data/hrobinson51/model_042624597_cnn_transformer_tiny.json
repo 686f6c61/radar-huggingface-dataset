@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hrobinson51/model_042624597_cnn_transformer_tiny",
+  "slug": "hrobinson51-model_042624597_cnn_transformer_tiny",
+  "author": "hrobinson51",
+  "url": "https://huggingface.co/hrobinson51/model_042624597_cnn_transformer_tiny",
+  "created_at": "2026-08-21T22:27:05.000Z",
+  "updated_at": "2026-08-21T22:27:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adafactor",
+    "approx-gelu",
+    "cnn-transformer",
+    "gated-fusion",
+    "linear",
+    "linear-warmup",
+    "matching",
+    "scalenorm",
+    "tiny",
+    "trunc-normal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF"
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of pre-trained, state-of-the-art models in the ONNX format."
+    },
+    {
+      "title": "TensorFlow Hub",
+      "url": "https://www.tensorflow.org/hub",
+      "snippet": "TensorFlow Hub is a repository of trained machine learning models ready for fine-tuning and deployable anywhere. Reuse trained models like BERT and Faster R-CNN with just a few lines of code."
+    },
+    {
+      "title": "GitHub - microsoft/Swin-Transformer: This is an official implementation ...",
+      "url": "https://github.com/microsoft/Swin-Transformer",
+      "snippet": "Swin Transformer This repo is the official implementation of \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\" as well as the follow-ups. It currently includes code and models for the following tasks: Image Classification: Included in this repo. See get_started.md for a quick start."
+    }
+  ]
+}

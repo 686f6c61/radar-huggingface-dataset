@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "justinchuby/onnx-genai-stable-diffusion-bk-sdm-small",
+  "slug": "justinchuby-onnx-genai-stable-diffusion-bk-sdm-small",
+  "author": "justinchuby",
+  "url": "https://huggingface.co/justinchuby/onnx-genai-stable-diffusion-bk-sdm-small",
+  "created_at": "2026-08-21T23:23:04.000Z",
+  "updated_at": "2026-08-22T01:48:47.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "onnx-genai",
+  "languages": [],
+  "tags": [
+    "onnx-genai",
+    "onnx",
+    "mobius",
+    "text-to-image",
+    "arxiv:2305.15798",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2512415052,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - justinchuby/onnx-genai: A prototype of a GenAI runtime for ONNX",
+      "url": "https://github.com/justinchuby/onnx-genai",
+      "snippet": "ONNX_GENAI_EP accepts a comma-separated priority list — ORT tries each entry in order and falls back to later entries for nodes it cannot claim. Each entry is a built-in (cpu, webgpu, cuda, metal, coreml), the bare plugin token (configured through the scalar ONNX_GENAI_EP_* variables above), or an inline plugin that carries its own library ..."
+    },
+    {
+      "title": "ONNX GenAI Inference Metadata Examples - a justinchuby Collection",
+      "url": "https://huggingface.co/collections/justinchuby/onnx-genai-inference-metadata-examples",
+      "snippet": "Real-weight ONNX packages covering canonical hashless inference metadata and executable multimodal workflows."
+    },
+    {
+      "title": "justinchuby (Justin Chu) · GitHub",
+      "url": "https://github.com/justinchuby",
+      "snippet": "ONNX PyTorch ONNX IR ONNX Script ONNX Adapter for Model Explorer ONNX Safetensors onnxruntime-mlx: Fast MLX execution provider for ONNX Runtime on MacOS. onnx-genai: Prototype of the next runtime for ONNX, in Rust. mobius: Convert any model to ONNX (with the help of AI)."
+    },
+    {
+      "title": "justinchuby (Justin Chu) - Hugging Face",
+      "url": "https://huggingface.co/justinchuby",
+      "snippet": "justinchuby 8244 Follow Godola&#x27;s profile picturetphakala&#x27;s profile picturemamounjamous&#x27;s profile picture 4 followers · 28 following justinchuby"
+    },
+    {
+      "title": "Generate images with AI using Stable Diffusion, C#, and ONNX Runtime",
+      "url": "https://devblogs.microsoft.com/dotnet/generate-ai-images-stable-diffusion-csharp-onnx-runtime/",
+      "snippet": "The first step in using Stable Diffusion to generate AI images is to: Generate an image sample and embeddings with random noise. Use the ONNX Runtime Extensions CLIP text tokenizer and CLIP embedding ONNX model to convert the user prompt into text embeddings. Embeddings are a numerical representation of information such as text, images, audio, etc."
+    }
+  ]
+}

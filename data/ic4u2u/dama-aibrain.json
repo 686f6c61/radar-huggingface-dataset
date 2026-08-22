@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ic4u2u/dama-aibrain",
+  "slug": "ic4u2u-dama-aibrain",
+  "author": "ic4u2u",
+  "url": "https://huggingface.co/ic4u2u/dama-aibrain",
+  "created_at": "2026-08-21T23:39:11.000Z",
+  "updated_at": "2026-08-21T23:56:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dennyjo/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/dennyjo/dama-aibrain",
+      "snippet": "Instructions to use dennyjo/dama-aibrain with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use dennyjo/dama-aibrain with Transformers:"
+    },
+    {
+      "title": "WonseokJayJung/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/WonseokJayJung/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dama-aibrain API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ohyou/dama-aibrain",
+      "snippet": "Run dama-aibrain with FriendliAI inference. This gemma4 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "hula-ai/DAMA: Pytorch implementation of \"DAMA - GitHub",
+      "url": "https://github.com/hula-ai/DAMA",
+      "snippet": "Pytorch implementation of \"DAMA - Multiplexed Immunofluorescence Brain Image Analysis Using Self-Supervised Dual-Loss Adaptive Masked Autoencoder\" - hula-ai/DAMA"
+    },
+    {
+      "title": "New API - aibrain.art:3000",
+      "url": "http://aibrain.art:3000/console",
+      "snippet": "A unified AI model hub for aggregation & distribution. It supports cross-converting various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats. A centralized gateway for personal and enterprise model management."
+    }
+  ]
+}

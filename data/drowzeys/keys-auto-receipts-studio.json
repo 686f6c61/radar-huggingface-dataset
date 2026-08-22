@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-Auto-Receipts-Studio",
+  "slug": "drowzeys-keys-auto-receipts-studio",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-Auto-Receipts-Studio",
+  "created_at": "2026-08-22T02:20:00.000Z",
+  "updated_at": "2026-08-22T02:20:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "receipts",
+    "gemma-4",
+    "vllm",
+    "iphone",
+    "autonomous-os",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458188,
+  "storage_human": "458188 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReceiptsAI - AI Receipt Scanner & Bookkeeping Software",
+      "url": "https://receiptsai.com/",
+      "snippet": "Extract data from receipts, invoices, bank statements, and emails with AI. Automate expense tracking, categorization, and bookkeeping for small businesses."
+    },
+    {
+      "title": "GitHub - keysemails/receipts: receipt.md feat. ai studio",
+      "url": "https://github.com/keysemails/receipts",
+      "snippet": "receipt.md feat. ai studio. Contribute to keysemails/receipts development by creating an account on GitHub."
+    },
+    {
+      "title": "Receipt processing prebuilt AI model - AI Builder | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-receipt-processing",
+      "snippet": "Receipt processing is a prebuilt model that uses state-of-the-art optical character recognition (OCR) to detect printed and handwritten text and extract key information from receipts."
+    },
+    {
+      "title": "Receipt data extraction - Document Intelligence - Foundry Tools",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/receipt?view=doc-intel-4.0.0",
+      "snippet": "The Document Intelligence receipt model combines powerful Optical Character Recognition (OCR) capabilities with deep learning models to analyze and extract key information from sales receipts. Receipts can be of various formats and quality including printed and handwritten receipts."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Experiment with the latest models auto_awesome Gemini 3 State-of-the-art reasoning image"
+    }
+  ]
+}

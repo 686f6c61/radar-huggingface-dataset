@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/weights-single-embedding-outlier",
+  "slug": "layerfault-weights-single-embedding-outlier",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/weights-single-embedding-outlier",
+  "created_at": "2026-08-21T21:58:02.000Z",
+  "updated_at": "2026-08-21T21:58:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 128,
+  "parameters_human": "128",
+  "storage_bytes": 640,
+  "storage_human": "640 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault Offline-first static admission and sandboxed behavioural security for local AI models. Layerfault validates model artifacts, packages and local runtimes before inference, then can optionally exercise supported models inside a locked-down Linux sandbox to look for runtime side effects and suspicious behavioural divergence."
+    },
+    {
+      "title": "OwLore: Outlier-weighed Layerwise Sampled Low-Rank Projection for ...",
+      "url": "https://www.researchgate.net/publication/380935575_OwLore_Outlier-weighed_Layerwise_Sampled_Low-Rank_Projection_for_Memory-Efficient_LLM_Fine-tuning",
+      "snippet": "Our comparison of its results with available State-of-the-Art (SOTA) solutions showed that the average loss in quality of the ChatGPT model was about 25&#92;% for zero-shot and few-shot evaluation."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Understanding and Minimising Outlier Features in Neural Network Training",
+      "url": "https://arxiv.org/html/2405.19279v1",
+      "snippet": "The model is a 6-layer Pre-Norm residual MLP with width 1024; we remove Pre-Norms for normless models. This also highlights that OFs are not specific to the Transformer model. The findings in this section, identifying key optimisation hyperparameters, point to the importance of (adaptive) LRs for OFE."
+    },
+    {
+      "title": "Loading models · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/models",
+      "snippet": "Memory usage for models requiring dynamic weight conversion depends on the model size and the size of the largest parameters in a single conversion. This typically applies to mixture-of-experts (MoE) models where the memory usage is the model size plus the number of experts on one layer."
+    }
+  ]
+}

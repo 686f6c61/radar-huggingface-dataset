@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LayerFault/weights-quantized-metadata-mismatch",
+  "slug": "layerfault-weights-quantized-metadata-mismatch",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/weights-quantized-metadata-mismatch",
+  "created_at": "2026-08-21T21:57:59.000Z",
+  "updated_at": "2026-08-21T21:58:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 128,
+  "parameters_human": "128",
+  "storage_bytes": 664,
+  "storage_human": "664 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault Offline-first static admission and sandboxed behavioural security for local AI models. Layerfault validates model artifacts, packages and local runtimes before inference, then can optionally exercise supported models inside a locked-down Linux sandbox to look for runtime side effects and suspicious behavioural divergence."
+    },
+    {
+      "title": "[Bug]: qwen3_5_mtp fails to load at tensor-parallel-size - GitHub",
+      "url": "https://github.com/vllm-project/vllm/issues/52480",
+      "snippet": "The very next fused-column weight for the same MTP layer hits the strict assert param_data.shape == loaded_weight.shape in load_merged_column_weight, which — unlike down_proj &#x27;s loader — doesn&#x27;t tolerate the inconsistency. I wasn&#x27;t able to pin down exactly where inside llm_base_proposer.py &#x27;s model/parallel-config"
+    },
+    {
+      "title": "What is Quantization - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/quantization-in-deep-learning/",
+      "snippet": "Quantization is a model optimization technique that reduces the precision of numerical values such as weights and activations in models to make them faster and more efficient. It helps lower memory usage, model size, and computational cost while maintaining almost the same level of accuracy. Quantization Need of Quantization In Large Language Models which contain billions of parameters ..."
+    },
+    {
+      "title": "I&#x27;m getting this error when trying to load the model I trained. Can you ...",
+      "url": "https://discuss.ai.google.dev/t/im-getting-this-error-when-trying-to-load-the-model-i-trained-can-you-help/30428",
+      "snippet": "This can happen for a few reasons, but it&#x27;s often due to the model not being properly defined or constructed before attempting to load the weights. When you use model_from_json to load a model architecture from a JSON file, the model&#x27;s architecture should be completely defined by the JSON content."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct · Mismatch between weight ...",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct/discussions/12",
+      "snippet": "I have noticed the model architecture contains some layers for which no weights exist in the 4 weights files."
+    }
+  ]
+}

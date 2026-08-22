@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/store-lmstudio-metadata-mismatch",
+  "slug": "layerfault-store-lmstudio-metadata-mismatch",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/store-lmstudio-metadata-mismatch",
+  "created_at": "2026-08-21T21:52:40.000Z",
+  "updated_at": "2026-08-21T21:52:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to LM Studio Docs!",
+      "url": "https://lmstudio.ai/docs",
+      "snippet": "Welcome to LM Studio Docs! Learn how to run Llama, DeepSeek, Qwen, Phi, and other LLMs locally with LM Studio."
+    },
+    {
+      "title": "Model Management and Configuration | lmstudio-ai/docs | DeepWiki",
+      "url": "https://deepwiki.com/lmstudio-ai/docs/4.4-model-management-and-configuration",
+      "snippet": "Model Management and Configuration Relevant source files This document covers programmatic model management through the Python SDK, including loading, configuring, listing, and unloading models from memory. Model management provides precise control over which models are loaded, how they are configured, and when they are unloaded to optimize memory usage. Model Namespaces and Access Patterns ..."
+    },
+    {
+      "title": "LM Studio Model Load Failed: Fix VRAM, Quantization & Corrupt File ...",
+      "url": "https://markaicode.com/errors/lm-studio-model-load-failed-fix/",
+      "snippet": "Fix LM Studio &#x27;Model Load Failed&#x27; fast. Step-by-step solutions for GPU VRAM OOM, quantization mismatch, and corrupt GGUF downloads, tested on LM Studio 0.4.x."
+    },
+    {
+      "title": "Pre- and Post-Inference Hooks (Blocking) with Model Metadata",
+      "url": "https://github.com/lmstudio-ai/lmstudio-bug-tracker/issues/2114",
+      "snippet": "Pre-inference hook - runs before any model is loaded or inference begins. LM Studio should wait for this process to finish before proceeding with inference. P ost-inference hook - runs after the model has finished generating and is unloaded (or the inference session ends)."
+    },
+    {
+      "title": "How do i resolve this issue in LMStudio? - Models - Hugging Face Forums",
+      "url": "https://discuss.huggingface.co/t/how-do-i-resolve-this-issue-in-lmstudio/175120",
+      "snippet": "This is usually resolved by treating it as a download-source resolution problem, not a model-runtime problem. In your case, LM Studio is trying to resolve the qwen/qwen3-coder-next catalog entry, and that catalog entry expands into four underlying repos: one GGUF repo and three MLX repos."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Gvdelacruz1224/paper_003093445_cross_modal_fusion",
+  "slug": "gvdelacruz1224-paper_003093445_cross_modal_fusion",
+  "author": "Gvdelacruz1224",
+  "url": "https://huggingface.co/Gvdelacruz1224/paper_003093445_cross_modal_fusion",
+  "created_at": "2026-08-21T21:11:10.000Z",
+  "updated_at": "2026-08-21T21:11:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "critical",
+    "cross-modal-fusion",
+    "docx",
+    "first-person-plural",
+    "graphic-visual",
+    "intro-problem-solution-validation-future",
+    "numeric-apa",
+    "short-punchy",
+    "theoretical-rigorous",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GaussianFusion: Unified 3D Gaussian Representation for Multi-Modal ...",
+      "url": "https://arxiv.org/abs/2607.00746",
+      "snippet": "However, the discrete grid representation of BEV leads to significant detail loss and limits feature alignment and cross-modal information interaction in multimodal fusion perception. In this work, we break from the conventional BEV paradigm and propose a new universal framework for multi-modal fusion based on 3D Gaussian representation."
+    },
+    {
+      "title": "[2411.17040] Multimodal Alignment and Fusion: A Survey",
+      "url": "https://arxiv.org/abs/2411.17040",
+      "snippet": "This survey provides a comprehensive overview of recent advances in multimodal alignment and fusion within the field of machine learning, driven by the increasing availability and diversity of data modalities such as text, images, audio, and video. Unlike previous surveys that often focus on specific modalities or limited fusion strategies, our work presents a structure-centric and method ..."
+    },
+    {
+      "title": "Awesome-Multimodal-Papers | A curated list of awesome Multimodal studies.",
+      "url": "https://friedrichor.github.io/Awesome-Multimodal-Papers/",
+      "snippet": "A curated list of awesome Multimodal studies. Awesome-Multimodal-Papers A curated list of awesome Multimodal studies. Contribution If you have published a high-quality paper or come across one that you think is valuable, feel free to contribute! To submit a paper, please open an issue and include the following information in the specified format: Submission Format ``` { \"title\": paper title ..."
+    },
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "This paper comprehensively reviews existing methods based on multi-modal fusion techniques and completes a detailed and in-depth analysis. According to the data fusion stage, multi-modal fusion has four primary methods: early fusion, deep fusion, late fusion, and hybrid fusion."
+    },
+    {
+      "title": "A Novel Multi-modality Deepfake Detection Using Cross-Model Fusion ...",
+      "url": "https://link.springer.com/article/10.1007/s12559-025-10465-7",
+      "snippet": "To address these challenges, this study introduces an efficient multi-modal deepfake detection framework that utilizes a cross-model fusion approach based on a hybrid Harris Whale depth-wise convolutional Bi-GRU model."
+    }
+  ]
+}

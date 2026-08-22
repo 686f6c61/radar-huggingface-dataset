@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "vr3n/Qwen3.8-2B-Distill-GGUF",
+  "slug": "vr3n-qwen3-8-2b-distill-gguf",
+  "author": "vr3n",
+  "url": "https://huggingface.co/vr3n/Qwen3.8-2B-Distill-GGUF",
+  "created_at": "2026-08-22T01:18:16.000Z",
+  "updated_at": "2026-08-22T01:18:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "empero-ai",
+    "qwen3.5",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "gated-deltanet",
+    "edge",
+    "text-generation",
+    "en",
+    "base_model:empero-ai/Qwen3.8-2B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-2B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 10347336576,
+  "storage_human": "10.3 GB",
+  "base_model": "empero-ai/Qwen3.8-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "empero-ai/Qwen3.8-2B-Distill-GGUF · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-2B-Distill-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-2B-Distill-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.8-2b-distill-gguf-empero-ai",
+      "snippet": "The model is a full-parameter distillation of Qwen3.8 2.4T A95B compressed into the Qwen3.5-2B architecture, designed to run on resource-constrained devices via GGUF format in llama.cpp, Ollama, LM Studio, Jan, and KoboldCpp."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "empero-ai/Qwen3.8-2B-Distill · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-2B-Distill",
+      "snippet": "Qwen3.8-2B is a full-parameter distillation of Qwen3.8 2.4T A95B into the Qwen3.5-2B architecture — the smallest member of the family, trained on the same curriculum as its larger siblings. The student saw ~30,000 curated teacher traces from our internal Qwen3.8 distillation datasets — dense chain-of-thought spanning mathematics, general reasoning, and instruction following, quality ..."
+    },
+    {
+      "title": "GitHub - 47thtechcorner/RayCodes_Qwen3.8Distilled: Qwen 3.8 2B, 4B & 9B ...",
+      "url": "https://github.com/47thtechcorner/RayCodes_Qwen3.8Distilled",
+      "snippet": "The Teacher Model (Qwen3.8-2.4T): A massive AI running on multi-million dollar data centers. It generates step-by-step reasoning solutions (\"Chain of Thought\"). The Student Models (9B / 4B / 2B): Smaller models trained directly on the teacher&#x27;s exact reasoning traces."
+    }
+  ]
+}

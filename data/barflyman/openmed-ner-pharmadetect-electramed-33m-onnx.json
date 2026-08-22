@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "barflyman/OpenMed-NER-PharmaDetect-ElectraMed-33M-ONNX",
+  "slug": "barflyman-openmed-ner-pharmadetect-electramed-33m-onnx",
+  "author": "barflyman",
+  "url": "https://huggingface.co/barflyman/OpenMed-NER-PharmaDetect-ElectraMed-33M-ONNX",
+  "created_at": "2026-08-22T01:58:38.000Z",
+  "updated_at": "2026-08-22T01:58:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "token-classification",
+    "named-entity-recognition",
+    "biomedical-nlp",
+    "transformers",
+    "chemical-entity-recognition",
+    "drug-discovery",
+    "pharmacology",
+    "biocuration",
+    "chem",
+    "en",
+    "arxiv:2508.01630",
+    "base_model:OpenMed/OpenMed-NER-PharmaDetect-ElectraMed-33M",
+    "base_model:quantized:OpenMed/OpenMed-NER-PharmaDetect-ElectraMed-33M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 364948560,
+  "storage_human": "365 MB",
+  "base_model": "OpenMed/OpenMed-NER-PharmaDetect-ElectraMed-33M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenMed-NER-PharmaDetect-ElectraMed-33M - Hugging Face",
+      "url": "https://huggingface.co/OpenMed/OpenMed-NER-PharmaDetect-ElectraMed-33M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenMed/OpenMed-NER-PharmaDetect-ElectraMed-560M-v1-onnx-android ...",
+      "url": "https://huggingface.co/OpenMed/OpenMed-NER-PharmaDetect-ElectraMed-560M-v1-onnx-android",
+      "snippet": "0 Follow OpenMed 1.42k Token Classification ONNX English openmed xlm-roberta medical-nlp medical-ner android webassembly webgpu arxiv:2508.01630 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new OpenMed Pharmaceutical NER 560M Model OpenMed in Python on CPU OpenMed in Web OpenMedKit for Android Included ..."
+    },
+    {
+      "title": "OpenMed — local-first clinical AI",
+      "url": "https://openmed.life/",
+      "snippet": "OpenMed 2.2.0 · on-device clinical AI Your data. Your model. Your iPhone. OpenMed reads clinical text and removes 55+ PHI types on the hardware you control, so patient data never leaves the device. 2,000+ Apache-2.0 models, 33 model-backed PII languages, state of the art on 10 of 12 biomedical NER benchmarks — and a new release most weeks."
+    },
+    {
+      "title": "GitHub - maziyarpanahi/openmed: Local-first healthcare AI: clinical NER ...",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "snippet": "Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0 - maziyarpanahi/openmed"
+    },
+    {
+      "title": "OpenMed NER: Language model model | bio.rodeo",
+      "url": "https://bio.rodeo/models/openmed-ner",
+      "snippet": "OpenMed NER is a family of open-source, task-specialized transformer models for biomedical named-entity recognition (NER)—the task of locating and labeling mentions of specific entity types, such as chemicals, diseases, or genes, in biomedical and clinical text. Rather than a single large model, it is a suite of fine-tuned token-classification checkpoints, each dedicated to one entity family ..."
+    }
+  ]
+}

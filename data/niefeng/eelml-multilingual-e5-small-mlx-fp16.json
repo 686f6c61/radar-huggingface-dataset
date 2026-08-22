@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "niefeng/eelml-multilingual-e5-small-mlx-fp16",
+  "slug": "niefeng-eelml-multilingual-e5-small-mlx-fp16",
+  "author": "niefeng",
+  "url": "https://huggingface.co/niefeng/eelml-multilingual-e5-small-mlx-fp16",
+  "created_at": "2026-08-21T21:07:17.000Z",
+  "updated_at": "2026-08-21T21:12:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252204283,
+  "storage_human": "252 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elastic/multilingual-e5-small · Hugging Face",
+      "url": "https://huggingface.co/elastic/multilingual-e5-small",
+      "snippet": "Elastic makes available the standard multilingual-e5-small model. Please see the original model for more details. No model files are hosted here. Text Embeddings by Weakly-Supervised Contrastive Pre-training. Liang Wang, Nan Yang, Xiaolong Huang, Binxing Jiao, Linjun Yang, Daxin Jiang, Rangan Majumder, Furu Wei, arXiv 2022 Disclaimer This e5 model, as defined, hosted, integrated and used in ..."
+    },
+    {
+      "title": "E5 | Elastic Docs",
+      "url": "https://www.elastic.co/docs/explore-analyze/machine-learning/nlp/ml-nlp-e5",
+      "snippet": "Refer to the model cards of the multilingual-e5-small and the multilingual-e5-small-optimized models on HuggingFace for further information including licensing."
+    },
+    {
+      "title": "Multilingual e5 small - Zentree-Qualcomm Pre-compiled Model Catalog for ...",
+      "url": "http://qualcom-qpc-models.s3-website-us-east-1.amazonaws.com/QPC/1.19.6/multilingual-e5-small/",
+      "snippet": "Multilingual-E5-small is initialized from microsoft/Multilingual-MiniLM-L12-H384 and continually trained on a mixture of multilingual datasets. It supports 100 languages from xlm-roberta, but low-resource languages may see performance degradation."
+    },
+    {
+      "title": "Xenova/multilingual-e5-small · Hugging Face",
+      "url": "https://huggingface.co/Xenova/multilingual-e5-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "multilingual-e5-small: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/multilingual-e5-small-intfloat",
+      "snippet": "Benchmark multilingual-e5-small on your target language pair before production deployment, or consider the larger variants which may marginalize the effect. Q: How many downloads has this model received? A: As of the latest update, multilingual-e5-small has been downloaded 4,211,814 times, indicating substantial adoption for production use."
+    }
+  ]
+}

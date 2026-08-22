@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "b-rosel/PiD_upscaler_image_restoration_tutorial_video",
+  "slug": "b-rosel-pid_upscaler_image_restoration_tutorial_video",
+  "author": "b-rosel",
+  "url": "https://huggingface.co/b-rosel/PiD_upscaler_image_restoration_tutorial_video",
+  "created_at": "2026-08-21T23:49:35.000Z",
+  "updated_at": "2026-08-21T23:49:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "diffusers",
+    "safetensors",
+    "super-resolution",
+    "diffusion",
+    "pixel-diffusion-decoder",
+    "vae-decoder",
+    "image-to-image",
+    "arxiv:2605.23902",
+    "base_model:Tongyi-MAI/Z-Image",
+    "base_model:finetune:Tongyi-MAI/Z-Image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26113805138,
+  "storage_human": "26.1 GB",
+  "base_model": "nvidia/PixelDiT-1300M-1024px, Tongyi-MAI/Z-Image, black-forest-labs/FLUX.1-dev, black-forest-labs/FLUX.2-dev, nyu-visionx/Scale-RAE-Qwen7B_DiT9.8B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PiD_upscaler_image_restoration_tutorial_video - Hugging Face",
+      "url": "https://huggingface.co/9r4n4y/PiD_upscaler_image_restoration_tutorial_video",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PiD Image Upscaler - a Hugging Face Space by prithivMLmods",
+      "url": "https://huggingface.co/spaces/prithivMLmods/PiD-Image-Upscaler",
+      "snippet": "This app lets you create images from a text prompt or upload an existing picture and instantly boost its detail four‑fold. It runs a fast AI generator (for text‑to‑image) or a refinement model (for..."
+    },
+    {
+      "title": "GitHub - PRITHIVSAKTHIUR/PiD-Image-Upscaler: PiD-Image-Upscaler is an ...",
+      "url": "https://github.com/PRITHIVSAKTHIUR/PiD-Image-Upscaler",
+      "snippet": "PiD-Image-Upscaler is an experimental, advanced super-resolution and image-to-image refinement application based on the state-of-the-art PiD (Pixel Diffusion Decoder) framework by NVIDIA. This application couples local generative text-to-image and image-to-image pipelines with a structural 4-step student diffusion sampler to deliver clean, crisp 4 × $4&#92;times$ image upscaling. The workspace ..."
+    },
+    {
+      "title": "OpenModelDB",
+      "url": "https://openmodeldb.info/",
+      "snippet": "OpenModelDB is a community driven database of AI Upscaling models. We aim to provide a better way to find and compare models than existing sources."
+    },
+    {
+      "title": "Upscayl AI Image Upscaler Tutorial | Turn Blurry Photos into ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=tqdKM-3cONY",
+      "snippet": "In this video, I&#x27;ll show you how to use Upscayl — a free AI image upscaler that transforms blurry or low-resolution images into crystal-clear, high-quality visuals."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pperezrachel/paper_010415664_few_shot_multimodal",
+  "slug": "pperezrachel-paper_010415664_few_shot_multimodal",
+  "author": "pperezrachel",
+  "url": "https://huggingface.co/pperezrachel/paper_010415664_few_shot_multimodal",
+  "created_at": "2026-08-21T22:56:10.000Z",
+  "updated_at": "2026-08-21T22:56:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "argumentative",
+    "bulleted",
+    "enthusiastic",
+    "few-shot-multimodal",
+    "footnote",
+    "latex-icml",
+    "mixed-active-passive",
+    "structured-imrad",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2005.14165] Language Models are Few-Shot Learners - arXiv.org",
+      "url": "https://arxiv.org/abs/2005.14165",
+      "snippet": "Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches."
+    },
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/html/2511.01140v2",
+      "snippet": "Existing multimodal and meta learning approaches improve performance in these settings but lack a theoretical explanation of why or when they succeed. This paper presents a unified theoretical framework for few shot multimodal medical imaging that jointly characterizes sample complexity, uncertainty quantification, and interpretability."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=argumentative",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc Apply filters"
+    },
+    {
+      "title": "Language models are few-shot learners - Guide Proceedings",
+      "url": "https://dlnext.acm.org/doi/abs/10.5555/3495724.3495883",
+      "snippet": "We demonstrate that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even becoming competitive with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all ..."
+    },
+    {
+      "title": "Awesome Multimodal LLMs for Time Series Analysis - GitHub",
+      "url": "https://github.com/mllm-ts/Awesome-Multimodal-LLMs-Time-Series",
+      "snippet": "Large Language Models are Few-Shot Health Learners Xin Liu, Daniel McDuff, Geza Kovacs, Isaac Galatzer-Levy, Jacob Sunshine, Jiening Zhan, Ming-Zher Poh, Shun Liao, Paolo Di Achille, Shwetak Patel. [paper] MedualTime: A Dual-Adapter Language Model for Medical Time Series-Text Multimodal Learning"
+    }
+  ]
+}

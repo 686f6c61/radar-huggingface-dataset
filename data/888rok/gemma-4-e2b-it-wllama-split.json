@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "888rok/gemma-4-E2B-it-wllama-split",
+  "slug": "888rok-gemma-4-e2b-it-wllama-split",
+  "author": "888rok",
+  "url": "https://huggingface.co/888rok/gemma-4-E2B-it-wllama-split",
+  "created_at": "2026-08-21T21:50:21.000Z",
+  "updated_at": "2026-08-21T22:10:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "wllama",
+    "split",
+    "base_model:unsloth/gemma-4-E2B-it-GGUF",
+    "base_model:quantized:unsloth/gemma-4-E2B-it-GGUF",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 2290860448,
+  "storage_human": "2.3 GB",
+  "base_model": "unsloth/gemma-4-E2B-it-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Google/gemma-4-E2B-it | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Google/gemma-4-E2B-it",
+      "snippet": "Google&#x27;s compact Gemma 4 multimodal model (effective 2B) with native text, image, and audio, plus thinking mode and tool-use protocol."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2607.02770",
+      "snippet": "We introduce Gemma 4, a new generation of open-weight, natively multimodal language models in the Gemma model family. Designed to advance compute efficiency and reasoning, the Gemma 4 model suite features dense and Mixture-of-Experts architectures, ranging from 2.3B to 31B parameters. Alongside improved vision and audio encoders for all model sizes, we propose a unified, encoder-free ..."
+    },
+    {
+      "title": "Announcing Gemma 4 on vLLM: Byte for byte, the most capable open models",
+      "url": "https://vllm.ai/blog/2026-04-02-gemma4",
+      "snippet": "Additional benchmarks in our model card. Powerful, Accessible, Open To catalyze the next era of frontier research and product innovation, Gemma 4 models are precisely engineered for efficient execution and fine-tuning across the hardware spectrum—from billions of Android devices to local developer workstations and high-scale accelerators."
+    }
+  ]
+}

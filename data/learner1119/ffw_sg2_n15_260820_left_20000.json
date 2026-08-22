@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "learner1119/ffw_sg2_n15_260820_left_20000",
+  "slug": "learner1119-ffw_sg2_n15_260820_left_20000",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/ffw_sg2_n15_260820_left_20000",
+  "created_at": "2026-08-22T01:39:55.000Z",
+  "updated_at": "2026-08-22T01:41:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "gr00t",
+    "ffw_sh5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2724163520,
+  "parameters_human": "2.72B",
+  "storage_bytes": 7586072344,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "learner1119 (doyoung kim) - Hugging Face",
+      "url": "https://huggingface.co/learner1119",
+      "snippet": "learner1119/merge_ffw_sh5_rev1_20260504_27dof_pick_up_a_red_cylinder_and_place_it_on_the_basket_processed"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Robotis FFW-SG2 Humanoid Robots Specs, Price & SDK | RoboAtlas",
+      "url": "https://www.roboatlas.ai/en-US/products/ai-worker/ffw-sg2",
+      "snippet": "FFW-SG2 is ROBOTIS&#x27; mobile AI Worker Follower with a swerve-drive base, using human-guided learning and ROS 2 for industrial manipulation, logistics and rese…"
+    },
+    {
+      "title": "FFW_SG2 Raw HDF5 Demo Hub - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/jshnsl-ffw-sg2-hdf5",
+      "snippet": "Repository of raw HDF5 demonstrations from ROBOTIS FFW_SG2 humanoid recorded and augmented in Isaac Sim/Isaac Lab. Serves as a storage and data transformation pipeline for imitation learning, not for direct training."
+    },
+    {
+      "title": "FFW SG2 Rev1 PickCoke2 TsFile - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/jzpeng-ffw-sg2-rev1-pickcoke2",
+      "snippet": "Why This Matters for Physical AI This dataset provides structured time-series manipulation data with synchronized robot state and action observations for training physical AI models on pick-and-place tasks."
+    }
+  ]
+}

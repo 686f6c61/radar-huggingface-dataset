@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "binnugr01/paper_007996638_knowledge_distillation",
+  "slug": "binnugr01-paper_007996638_knowledge_distillation",
+  "author": "binnugr01",
+  "url": "https://huggingface.co/binnugr01/paper_007996638_knowledge_distillation",
+  "created_at": "2026-08-22T02:26:29.000Z",
+  "updated_at": "2026-08-22T02:26:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "abstract-intro-prelim-method-exp-discussion",
+    "highlight-bullet",
+    "knowledge-distillation",
+    "latex-neurips",
+    "mixed-active-passive",
+    "narrative-progressive",
+    "neutral",
+    "numeric-bibtex",
+    "varied-mixed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2404.00936] A Comprehensive Review of Knowledge Distillation in ...",
+      "url": "https://arxiv.org/abs/2404.00936",
+      "snippet": "This review paper examines the current state of research on knowledge distillation, a technique for compressing complex models into smaller and simpler ones. The paper provides an overview of the major principles and techniques associated with knowledge distillation and reviews the applications of knowledge distillation in the domain of ..."
+    },
+    {
+      "title": "Knowledge Distillation for Visual Autoregressive Models",
+      "url": "https://arxiv.org/abs/2606.06078",
+      "snippet": "Knowledge distillation (KD) is a natural approach for model compression and has been widely studied in language modeling, yet its behavior in visual AR generation remains underexplored. In this work, we present the first systematic study of distillation strategies for AR image models."
+    },
+    {
+      "title": "knowledge distillation papers - GitHub",
+      "url": "https://github.com/lhyfst/knowledge-distillation-papers",
+      "snippet": "knowledge distillation papers. Contribute to lhyfst/knowledge-distillation-papers development by creating an account on GitHub."
+    },
+    {
+      "title": "Rethinking Knowledge Distillation in Collaborative Machine Learning ...",
+      "url": "https://ieeexplore.ieee.org/document/11010091",
+      "snippet": "Collaborative learning has emerged as a key paradigm in large-scale intelligent systems, enabling distributed agents to cooperatively train their models while addressing their privacy concerns. Central to this paradigm is knowledge distillation (KD), a technique that facilitates efficient knowledge transfer among agents. However, the underlying mechanisms by which KD leverages memory and ..."
+    },
+    {
+      "title": "PDF What Knowledge Gets Distilled in Knowledge Distillation?",
+      "url": "https://papers.neurips.cc/paper_files/paper/2023/file/2433fec2144ccf5fea1c9c5ebdbc3924-Paper-Conference.pdf",
+      "snippet": "But what exactly is the so-called knowledge that gets distilled during the knowledge distillation process? For example, does distillation make the student look at similar regions as the teacher when classifying images? If one crafts an adversarial image to fool the teacher, is the student also more prone to getting fooled by it?"
+    }
+  ]
+}

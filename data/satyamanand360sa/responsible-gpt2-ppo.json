@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "satyamanand360sa/Responsible-GPT2-PPO",
+  "slug": "satyamanand360sa-responsible-gpt2-ppo",
+  "author": "satyamanand360sa",
+  "url": "https://huggingface.co/satyamanand360sa/Responsible-GPT2-PPO",
+  "created_at": "2026-08-21T21:23:11.000Z",
+  "updated_at": "2026-08-21T21:26:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354823168,
+  "parameters_human": "354.8M",
+  "storage_bytes": 1419322880,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itsmepv/gpt2-ppo-full-parameter · Hugging Face",
+      "url": "https://huggingface.co/itsmepv/gpt2-ppo-full-parameter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "SimaFarazi/gpt2-ppo · Hugging Face",
+      "url": "https://huggingface.co/SimaFarazi/gpt2-ppo",
+      "snippet": "TRL Model This is a TRL language model that has been fine-tuned with reinforcement learning to guide the model outputs according to a value, function, or human feedback."
+    },
+    {
+      "title": "GPT-2 IMDB Sentiment Fine-Tuning with PPO - GitHub",
+      "url": "https://github.com/sathishkumar67/GPT-2-IMDB-Sentiment-Fine-Tuning-with-PPO",
+      "snippet": "This repository contains code for fine-tuning a GPT-2 model on the IMDB dataset using Proximal Policy Optimization (PPO). The goal is to train the model to generate positive sentiment reviews. The training process utilizes the trl library for reinforcement learning, the transformers library for model handling, and datasets for dataset management."
+    },
+    {
+      "title": "Applying PPO on the Attention Mechanism of the GPT-2 model",
+      "url": "https://github.com/Gaborandi/GPT_PPO",
+      "snippet": "4- PPOTrainer: A class that implements the Proximal Policy Optimization (PPO) algorithm for training the GPT-2 model. It is responsible for selecting actions based on the model&#x27;s action probabilities, updating the model parameters, and managing the rollout storage."
+    }
+  ]
+}

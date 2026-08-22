@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "namquangstudy/aaie-ddense-gft-llama",
+  "slug": "namquangstudy-aaie-ddense-gft-llama",
+  "author": "namquangstudy",
+  "url": "https://huggingface.co/namquangstudy/aaie-ddense-gft-llama",
+  "created_at": "2026-08-22T00:20:01.000Z",
+  "updated_at": "2026-08-22T00:20:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354374144,
+  "parameters_human": "354.4M",
+  "storage_bytes": 1428938904,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "namquangstudy/aaie-ddense-gft · Hugging Face",
+      "url": "https://huggingface.co/namquangstudy/aaie-ddense-gft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=AAIE_DDense",
+      "snippet": "namquangstudy/aaie-ddense-pretrain Text Generation • 0.4B•Updated 2 days ago• 433"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "GitHub - namquang2910/aaie-model-lab-: Central repository for the Model ...",
+      "url": "https://github.com/namquang2910/aaie-model-lab-",
+      "snippet": "Central repository for the Model Training Team, focused on building, training, and evaluating AI/ML models. Includes model development scripts, training experiments, evaluation results, and related documentation."
+    }
+  ]
+}

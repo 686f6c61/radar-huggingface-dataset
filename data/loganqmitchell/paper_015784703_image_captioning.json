@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LoganQmitchell/paper_015784703_image_captioning",
+  "slug": "loganqmitchell-paper_015784703_image_captioning",
+  "author": "LoganQmitchell",
+  "url": "https://huggingface.co/LoganQmitchell/paper_015784703_image_captioning",
+  "created_at": "2026-08-22T02:50:34.000Z",
+  "updated_at": "2026-08-22T02:50:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "author-year",
+    "detailed-descriptive",
+    "graphic-visual",
+    "image-captioning",
+    "intro-problem-solution-validation-future",
+    "latex-arxiv",
+    "measured",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Automated Image Caption Generation using Deep Learning",
+      "url": "https://ieeexplore.ieee.org/document/10441058",
+      "snippet": "Image captioning means generating relevant texts from images that describe the image. With the growing advancement of deep learning, automatic image caption generation has become an exciting problem among researchers. Image captioning is used in various fields of computer science including computer vision and NLP. It is helpful in many cases such as visual impairment. Though many research ..."
+    },
+    {
+      "title": "GitHub - salesforce/BLIP: PyTorch code for BLIP: Bootstrapping Language ...",
+      "url": "https://github.com/salesforce/BLIP",
+      "snippet": "This is the PyTorch code of the BLIP paper [blog]. The code has been tested on PyTorch 1.10. To install the dependencies, run ... Catalog: Inference demo Pre-trained and finetuned checkpoints Finetuning code for Image-Text Retrieval, Image Captioning, VQA, and NLVR2 Pre-training code Zero-shot video-text retrieval Download of bootstrapped pre ..."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1EYUxzhBF5Tr5GxY7QxOGopuwacniMhS1",
+      "snippet": "Google Colab ... Google Colab"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "russofrancesco/paper_005470356_data_efficient_learning",
+  "slug": "russofrancesco-paper_005470356_data_efficient_learning",
+  "author": "russofrancesco",
+  "url": "https://huggingface.co/russofrancesco/paper_005470356_data_efficient_learning",
+  "created_at": "2026-08-22T01:15:36.000Z",
+  "updated_at": "2026-08-22T01:15:42.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "data-efficient-learning",
+    "empirical-focused",
+    "footnote",
+    "graphic-visual",
+    "intro-background-approach-eval-conclusion",
+    "medium-balanced",
+    "passive",
+    "typst",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "View research index Learn about safety Focus areas We advance the science of AI through research on frontier models, reasoning, multimodal systems, and safe deployment. GPT OpenAI&#x27;s GPT series models are fast, versatile, and cost-efficient AI systems designed to understand context, generate content, and reason across text, images, and more."
+    },
+    {
+      "title": "OpenAI Research | Publication",
+      "url": "https://openai.com/research/index/publication/",
+      "snippet": "GPT‑5.6 System Card GPT-5.6 is a new family of three models: Sol, our new flagship model; Terra, a capable lower-cost option; and Luna, our fastest and most cost-efficient model. The safeguards we have built for this launch—our most robust yet—are built to deliver these models safely and at scale, around the world."
+    },
+    {
+      "title": "[2402.09668] How to Train Data-Efficient LLMs - arXiv.org",
+      "url": "https://arxiv.org/abs/2402.09668",
+      "snippet": "The training of large language models (LLMs) is expensive. In this paper, we study data-efficient approaches for pre-training LLMs, i.e., techniques that aim to optimize the Pareto frontier of model quality and training resource/data consumption. We seek to understand the tradeoffs associated with data selection routines based on (i) expensive-to-compute data-quality estimates, and (ii ..."
+    },
+    {
+      "title": "‪Francesco Russo‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=CrlFjHsAAAAJ",
+      "snippet": "‪Consiglio Nazionale delle Ricerche‬ - ‪‪Cited by 679‬‬ - ‪Bioinformatics‬ - ‪Machine Learning‬ - ‪Data Science‬ - ‪Statistics‬ - ‪System Biology‬"
+    },
+    {
+      "title": "[1602.05629] Communication-Efficient Learning of Deep Networks from ...",
+      "url": "https://arxiv.org/abs/1602.05629",
+      "snippet": "Abstract page for arXiv paper 1602.05629: Communication-Efficient Learning of Deep Networks from Decentralized Data"
+    }
+  ]
+}

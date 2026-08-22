@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/tokenizer-clean-template-control",
+  "slug": "layerfault-tokenizer-clean-template-control",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/tokenizer-clean-template-control",
+  "created_at": "2026-08-21T21:52:53.000Z",
+  "updated_at": "2026-08-21T21:52:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokenizer Tampering - hiddenlayer.com",
+      "url": "https://www.hiddenlayer.com/research/tokenizer-tampering",
+      "snippet": "HiddenLayer researchers demonstrate how tokenizer tampering can enable silent AI supply chain attacks, including command substitution, tool-call injection, and data exfiltration."
+    },
+    {
+      "title": "LayerFault/gguf-clean-control · Hugging Face",
+      "url": "https://huggingface.co/LayerFault/gguf-clean-control",
+      "snippet": "LayerFault / gguf-clean-control like 0 Follow LayerFault 1 GGUF layerfault security-research model-security Synthetic adversarial-testing License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new gguf-clean-control Purpose Direct expected Layerfault rules Candidate rules Negative-control rules Safety"
+    },
+    {
+      "title": "Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main_classes/tokenizer",
+      "snippet": "This method is intended for use with chat models, and will read the tokenizer&#x27;s chat_template attribute to determine the format and control tokens to use when converting."
+    },
+    {
+      "title": "Tokenization Attacks on LLMs - hiddenlayer.com",
+      "url": "https://www.hiddenlayer.com/research/tokenization-attacks-on-llms-how-adversaries-exploit-ai-language-processing",
+      "snippet": "Learn how attackers exploit tokenization in Large Language Models (LLMs) through glitch tokens, invisible Unicode attacks, and TokenBreak techniques to bypass AI security safeguards and manipulate model behavior."
+    },
+    {
+      "title": "cookbook/concept-deep-dive/tokenization/chat_templates.md at main ...",
+      "url": "https://github.com/mistralai/cookbook/blob/main/concept-deep-dive/tokenization/chat_templates.md",
+      "snippet": "From the original tokenizer V1 to the most recent V3 and Tekken tokenizers, Mistral&#x27;s tokenizers have undergone subtle changes related to how to tokenize for the instruct models. We&#x27;ve come a long way in optimization and research to find the best approach. Today, we&#x27;ll delve into these tokenizers, demystify any sources of debate, and explore how they work, the proper chat templates to use for ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/tokenizer-hidden-prompt-zero-width",
+  "slug": "layerfault-tokenizer-hidden-prompt-zero-width",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/tokenizer-hidden-prompt-zero-width",
+  "created_at": "2026-08-21T21:53:02.000Z",
+  "updated_at": "2026-08-21T21:53:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Secure LLM Prompts: Mitigating CVE-2026-3304 Attacks",
+      "url": "https://www.zinruss.com/prevent-llm-prompt-injection-hidden-character-obfuscation/",
+      "snippet": "This technical deployment guide analyzes CVE-2026-3304, a severe prompt-injection vulnerability involving hidden character obfuscation. In this exploit path, malicious actors use zero-width joiners, non-printable Unicode, and null bytes to mask injection payloads, bypassing front-end validation filters."
+    },
+    {
+      "title": "Tokenizer Tampering - hiddenlayer.com",
+      "url": "https://www.hiddenlayer.com/research/tokenizer-tampering",
+      "snippet": "HiddenLayer researchers demonstrate how tokenizer tampering can enable silent AI supply chain attacks, including command substitution, tool-call injection, and data exfiltration."
+    },
+    {
+      "title": "Tokenization Attacks on LLMs - hiddenlayer.com",
+      "url": "https://www.hiddenlayer.com/research/tokenization-attacks-on-llms-how-adversaries-exploit-ai-language-processing",
+      "snippet": "Learn how attackers exploit tokenization in Large Language Models (LLMs) through glitch tokens, invisible Unicode attacks, and TokenBreak techniques to bypass AI security safeguards and manipulate model behavior."
+    },
+    {
+      "title": "Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main_classes/tokenizer",
+      "snippet": "For example, if the tokenizer is loaded from a vision-language model like LLaVA, you will be able to access tokenizer.image_token_id to obtain the special image token used as a placeholder. To enable extra special tokens for any type of tokenizer, you have to add the following lines and save the tokenizer."
+    },
+    {
+      "title": "AI Prompt Injection Cheatsheet - GitHub",
+      "url": "https://github.com/nukIeer/AI-Prompt-Injection-Cheatsheet",
+      "snippet": "The AI/LLM Prompt Injection Cheatsheet — 2026 Edition A curated arsenal of 2026-era prompt injection payloads and attack techniques targeting modern frontier models — including reasoning engines, agentic pipelines, multimodal inputs, tool-use chains, and RAG systems."
+    }
+  ]
+}

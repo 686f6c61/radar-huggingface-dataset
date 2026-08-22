@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "harutoinoue/paper_002326559_cross_modal_fusion",
+  "slug": "harutoinoue-paper_002326559_cross_modal_fusion",
+  "author": "harutoinoue",
+  "url": "https://huggingface.co/harutoinoue/paper_002326559_cross_modal_fusion",
+  "created_at": "2026-08-22T02:38:02.000Z",
+  "updated_at": "2026-08-22T02:38:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "critical",
+    "cross-modal-fusion",
+    "endnote",
+    "graphic-visual",
+    "intro-related-method-exp-conclusion",
+    "latex-arxiv",
+    "narrative-progressive",
+    "passive",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TACFN: Transformer-based Adaptive Cross-modal Fu-sion Network for ...",
+      "url": "https://arxiv.org/pdf/2505.06536",
+      "snippet": "s, model fusion is often done using a transformer-based approach for diferent modal interactions. Typicall , both SPT [16] and PMR [17] use cross-modal attention to perform fusion of multimodal sequences. Their approaches achieve reinforc ment of the target modality by learning directed pairwise attention between cross-modal elements. Moreover"
+    },
+    {
+      "title": "[2505.06536] TACFN: Transformer-based Adaptive Cross-modal Fusion ...",
+      "url": "https://arxiv.org/abs/2505.06536",
+      "snippet": "The fusion technique is the key to the multimodal emotion recognition task. Recently, cross-modal attention-based fusion methods have demonstrated high performance and strong robustness. However, cross-modal attention suffers from redundant features and does not capture complementary features well. We find that it is not necessary to use the entire information of one modality to reinforce the ..."
+    },
+    {
+      "title": "Crossref Metadata Search",
+      "url": "https://search.crossref.org/",
+      "snippet": "Search the metadata of journal articles, books, standards, datasets & more"
+    },
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "This paper comprehensively reviews existing methods based on multi-modal fusion techniques and completes a detailed and in-depth analysis. According to the data fusion stage, multi-modal fusion has four primary methods: early fusion, deep fusion, late fusion, and hybrid fusion."
+    },
+    {
+      "title": "Hybrid cross-modality fusion network for medical image segmentation ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0952197625000739",
+      "snippet": "Furthermore, the hybrid cross-modality feature decoder conducts local and non-local cross-modality feature interaction by a local cross-modality fusion module and a non-local cross-modality fusion module, respectively. Experimental results show that our method achieved state-of-the-art results on two public medical image segmentation datasets."
+    }
+  ]
+}

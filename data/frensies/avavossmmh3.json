@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "frensies/avavossmmh3",
+  "slug": "frensies-avavossmmh3",
+  "author": "frensies",
+  "url": "https://huggingface.co/frensies/avavossmmh3",
+  "created_at": "2026-08-21T21:46:05.000Z",
+  "updated_at": "2026-08-21T21:47:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:pmczip/MiniMaxH3_LoRAs",
+    "base_model:adapter:pmczip/MiniMaxH3_LoRAs",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157188363,
+  "storage_human": "157 MB",
+  "base_model": "pmczip/MiniMaxH3_LoRAs",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "frensies/avavoss · Hugging Face",
+      "url": "https://huggingface.co/frensies/avavoss",
+      "snippet": "Model tree for frensies/avavoss Base model Wan-AI/Wan2.2-I2V-A14B Adapter ostris/wan22_i2v_14b_orbit_shot_lora Adapter (160) this model"
+    },
+    {
+      "title": "frensies (Bojan) - Hugging Face",
+      "url": "https://huggingface.co/frensies",
+      "snippet": "Recent Activity published a model3 days ago frensies/avavoss published a bucket3 days ago frensies/avavoss-bucket updated a model3 days ago frensies/avavoss View all activity"
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    },
+    {
+      "title": "What Guess&#x27;s AI model in Vogue means for beauty standards - BBC",
+      "url": "https://www.bbc.com/news/articles/cgeqe084nn4o",
+      "snippet": "The first AI-generated model to appear in the pages of Vogue is seen in an advert for Guess."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    }
+  ]
+}

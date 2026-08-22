@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "alvinsetiawan/paper_009587813_neural_architecture_search",
+  "slug": "alvinsetiawan-paper_009587813_neural_architecture_search",
+  "author": "alvinsetiawan",
+  "url": "https://huggingface.co/alvinsetiawan/paper_009587813_neural_architecture_search",
+  "created_at": "2026-08-22T02:36:12.000Z",
+  "updated_at": "2026-08-22T02:36:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "critical",
+    "empirical-focused",
+    "graphic-visual",
+    "intro-method-exp-related-conclusion",
+    "markdown",
+    "mixed-active-passive",
+    "neural-architecture-search",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Neural Architecture Search: Insights from 1000 Papers",
+      "url": "https://arxiv.org/abs/2301.08727",
+      "snippet": "In this survey, we provide an organized and comprehensive guide to neural architecture search. We give a taxonomy of search spaces, algorithms, and speedup techniques, and we discuss resources such as benchmarks, best practices, other surveys, and open-source libraries."
+    },
+    {
+      "title": "ESAI: Efficient Split Artificial Intelligence via Early Exiting Using ...",
+      "url": "https://ieeexplore.ieee.org/document/10819965",
+      "snippet": "ESAI: Efficient Split Artificial Intelligence via Early Exiting Using Neural Architecture Search Abstract: Deep neural networks have demonstrated superior performance in various computer vision tasks compared to traditional machine learning algorithms."
+    },
+    {
+      "title": "IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/Xplore/home.jsp",
+      "snippet": "IEEE Xplore, delivering full text access to the world&#x27;s highest quality technical literature in engineering and technology. | IEEE Xplore"
+    },
+    {
+      "title": "PDF Advances in neural architecture search - mn.cs.tsinghua.edu.cn",
+      "url": "http://mn.cs.tsinghua.edu.cn/xinwang/PDF/papers/2024_Advances%20in%20Neural%20Architecture%20Search.pdf",
+      "snippet": "Itbegins bydesigning a modulargraph architecture super-networkwith multiple modulestofacilitatethesearch for architec-tures withspecificfactorexpertise.It then introduces a factor-basedtask-modulerouterthatidentifiesla-tent graphfactors and directsincomingtaskstothe most appropriate architecture module,therebymiti-gating the forgetting problem ..."
+    }
+  ]
+}

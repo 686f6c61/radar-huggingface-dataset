@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jiavon/brideshead-charles-ryder",
+  "slug": "jiavon-brideshead-charles-ryder",
+  "author": "jiavon",
+  "url": "https://huggingface.co/jiavon/brideshead-charles-ryder",
+  "created_at": "2026-08-21T20:49:39.000Z",
+  "updated_at": "2026-08-21T20:49:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955358,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Character Generator (free, no sign-up, unlimited) - Perchance",
+      "url": "https://perchance.org/ai-character-generator",
+      "snippet": "AI character creator. Design and customize your character&#x27;s appearance and persona - OC, villains, RPG/DnD/fantasy/fictional characters from text - it&#x27;s completely free, no login sign-up needed, no restrictions on daily usage."
+    },
+    {
+      "title": "Brideshead Revisited - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Brideshead_Revisited",
+      "snippet": "Brideshead Revisited: The Sacred & Profane Memories of Captain Charles Ryder is a novel by the English writer Evelyn Waugh, first published in 1945. It follows, from the 1920s to the early 1940s, the life and romances of Charles Ryder, especially his friendship with the Flytes, a family of wealthy English Catholics who live in a palatial ..."
+    },
+    {
+      "title": "Sebastian Flyte and Charles Ryder. Brideshead Revisited.",
+      "url": "https://creator.nightcafe.studio/creation/J3bFXwFO05X6Xjf1SrTN",
+      "snippet": "Charles Ryder and Sebastian Flyte Portrait A photorealistic portrait of Charles Ryder and Sebastian Flyte. The composition is meticulously detailed with incredible depth and realism, reminiscent of pre-Raphaelite paintings. Created by avionesplateados on Jun 30, 2023 using the SDXL 0.9 AI image generator model."
+    },
+    {
+      "title": "Free AI Image Generator | Craiyon",
+      "url": "https://www.craiyon.com/",
+      "snippet": "Free AI Image Generator Create free AI images from text for art, photos, illustrations, and quick visual ideas."
+    },
+    {
+      "title": "Free AI Avatar Generator and Online AI Maker | Canva",
+      "url": "https://www.canva.com/create/avatars/",
+      "snippet": "Create a free AI avatar with this fun, online AI avatar generator and give your virtual persona a unique spin."
+    }
+  ]
+}

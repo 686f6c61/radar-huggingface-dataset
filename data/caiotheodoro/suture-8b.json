@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "caiotheodoro/suture-8b",
+  "slug": "caiotheodoro-suture-8b",
+  "author": "caiotheodoro",
+  "url": "https://huggingface.co/caiotheodoro/suture-8b",
+  "created_at": "2026-08-22T00:58:29.000Z",
+  "updated_at": "2026-08-22T01:00:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "vision-language",
+    "insurance",
+    "document-qc",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 221506501,
+  "storage_human": "222 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - caiotheodoro/suture: Fine-tune a VL Qwen on insurance policy ...",
+      "url": "https://github.com/caiotheodoro/suture/tree/main/",
+      "snippet": "Fine-tune a multimodal Qwen (default Qwen3-VL-8B-Instruct, Apache-2.0; 27B is opt-in) on Modal/GCP so it beats frontier models at insurance policy-issuance QC."
+    },
+    {
+      "title": "caiotheodoro (Caio Theodoro) - Hugging Face",
+      "url": "https://huggingface.co/caiotheodoro/models",
+      "snippet": "User profile of Caio Theodoro on Hugging Face"
+    },
+    {
+      "title": "Best 8B Parameter Models in 2026 — Small Models, Big Results",
+      "url": "https://www.aimadetools.com/blog/best-8b-parameter-models-2026/",
+      "snippet": "The best ~8B parameter AI models you can run on any laptop. Compared on quality, speed, RAM usage, and best use cases. All runnable via Ollama."
+    },
+    {
+      "title": "caiotheodoro (Caio Theodoro) · GitHub",
+      "url": "https://github.com/caiotheodoro",
+      "snippet": "A graph representing caiotheodoro&#x27;s contributions from December 08, 2024 to December 13, 2025. The contributions are 92% commits, 4% code review, 4% pull requests, 0% issues."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

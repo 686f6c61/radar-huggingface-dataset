@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Alinealmeidagin/paper_022405165_robotics_vision_language",
+  "slug": "alinealmeidagin-paper_022405165_robotics_vision_language",
+  "author": "Alinealmeidagin",
+  "url": "https://huggingface.co/Alinealmeidagin/paper_022405165_robotics_vision_language",
+  "created_at": "2026-08-22T02:55:57.000Z",
+  "updated_at": "2026-08-22T02:56:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "empirical-focused",
+    "enthusiastic",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "numeric-bibtex",
+    "plain-text",
+    "robotics-vision-language",
+    "short-punchy",
+    "unstructured-narrative",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paper-List-DAILY - Paper Arxiv Daily",
+      "url": "https://islinxu.github.io/paper-list/",
+      "snippet": "Paper-List-DAILY is an automated arXiv paper tracking system that fetches, categorizes, and organizes the latest research papers across 20+ computer vision & AI topics — from classic tasks like Object Detection and Segmentation to cutting-edge fields like Diffusion Models, LLMs, and Embodied AI."
+    },
+    {
+      "title": "Embodied AI Daily — Latest arXiv Papers",
+      "url": "https://luohongkun.top/Embodied-AI-Daily/index.html",
+      "snippet": "📄 Latest arXiv Papers VLN · VLA · SLAM · 3D · Embodied AI — auto-updated daily 👤 Hongkun Luo (罗宏昆) · 🎓 Academic Page · 🐙 GitHub ☕ 支持本项目 · Support this project"
+    },
+    {
+      "title": "[2605.13119] Towards Long-horizon Embodied Agents with Tool-Aligned ...",
+      "url": "https://arxiv.org/abs/2605.13119",
+      "snippet": "Vision-language-action (VLA) models are effective robot action executors, but they remain limited on long-horizon tasks due to the dual burden of extended closed-loop planning and diverse physical operations. We therefore propose VLAs-as-Tools, a strategy that distributes this burden across a high-level vision language model (VLM) agent for temporal reasoning and a family of specialized VLA ..."
+    },
+    {
+      "title": "Embodied large language models enable robots to complete ... - Nature",
+      "url": "https://www.nature.com/articles/s42256-025-01005-x",
+      "snippet": "To function in the real world, autonomous robots will have to respond to unanticipated situations. A vision-language-model-based approach is proposed to solve long-horizon robotic tasks, which can ..."
+    },
+    {
+      "title": "Helix: A Vision-Language-Action Model for Generalist Humanoid Control",
+      "url": "https://www.figure.ai/news/helix",
+      "snippet": "Introducing Helix We&#x27;re introducing Helix, a generalist Vision-Language-Action (VLA) model that unifies perception, language understanding, and learned control to overcome multiple longstanding challenges in robotics. Helix is a series of firsts: Full-upper-body control: Helix is the first VLA to output high-rate continuous control of the entire humanoid upper body, including wrists, torso ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "subramanianno/paper_021822677_robotics_vision_language",
+  "slug": "subramanianno-paper_021822677_robotics_vision_language",
+  "author": "subramanianno",
+  "url": "https://huggingface.co/subramanianno/paper_021822677_robotics_vision_language",
+  "created_at": "2026-08-21T22:09:37.000Z",
+  "updated_at": "2026-08-21T22:09:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "critical",
+    "intro-problem-solution-validation-future",
+    "latex-cvpr",
+    "long-detailed",
+    "narrative-progressive",
+    "numeric-nature",
+    "robotics-vision-language",
+    "unstructured-narrative",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[PDF] Characterizing VLA Models: Identifying the Action Generation ...",
+      "url": "https://www.semanticscholar.org/paper/Characterizing-VLA-Models%3A-Identifying-the-Action-Vishwanathan-Subramanian/1abd4231fe536bf2743c053a6948b16761ad4bd8",
+      "snippet": "This paper characterizes VLA performance on two generations of edge hardware, viz. the Nvidia Jetson Orin and Thor platforms, and identifies a primary execution bottleneck: up to 75% of end-to-end latency is consumed by the memory-bound action-generation phase. Vision-Language-Action (VLA) models are an emerging class of workloads critical for robotics and embodied AI at the edge. As these ..."
+    },
+    {
+      "title": "Characterizing VLA Models: Identifying the Action Generation Bottleneck ...",
+      "url": "https://arxiv.org/pdf/2603.02271",
+      "snippet": "Abstract Vision-Language-Action (VLA) [1] models are an emerg-ing class of workloads critical for robotics and embodied AI at the edge. As these models scale, they demonstrate significant capability gains, yet they must be deployed locally to meet the strict latency requirements of real-time applications. This paper characterizes VLA performance on two generations of edge hardware, viz. the ..."
+    },
+    {
+      "title": "[2307.15818] RT-2: Vision-Language-Action Models Transfer Web Knowledge ...",
+      "url": "https://arxiv.org/abs/2307.15818",
+      "snippet": "We study how vision-language models trained on Internet-scale data can be incorporated directly into end-to-end robotic control to boost generalization and enable emergent semantic reasoning. Our goal is to enable a single end-to-end trained model to both learn to map robot observations to actions and enjoy the benefits of large-scale pretraining on language and vision-language data from the ..."
+    },
+    {
+      "title": "RT-2: New model translates vision and language into action",
+      "url": "https://deepmind.google/blog/rt-2-new-model-translates-vision-and-language-into-action/",
+      "snippet": "In our paper, we introduce Robotic Transformer 2 (RT-2), a novel vision-language-action (VLA) model that learns from both web and robotics data, and translates this knowledge into generalised instructions for robotic control, while retaining web-scale capabilities."
+    },
+    {
+      "title": "Awesome VLA Papers - GitHub",
+      "url": "https://github.com/hanjianhua44/Awesome-VLA-Papers",
+      "snippet": "A curated collection of papers on Vision-Language-Action (VLA) models, covering autonomous driving, robotics, world models, spatial reasoning, and more ..."
+    }
+  ]
+}

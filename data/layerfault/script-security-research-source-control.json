@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/script-security-research-source-control",
+  "slug": "layerfault-script-security-research-source-control",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/script-security-research-source-control",
+  "created_at": "2026-08-21T19:04:17.000Z",
+  "updated_at": "2026-08-21T19:04:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Offline-first security and admission control for local AI models. Layerfault validates model artifacts and local model runtimes before inference."
+    },
+    {
+      "title": "OWASP GenAI LLM Top 10 2026 - OWASP Gen AI Security Project",
+      "url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/",
+      "snippet": "OWASP Top 10 for LLM Applications 2026 is the latest community-driven guide to the most critical security risks facing applications powered by large language models. Developed by hundreds of AI security experts, this edition introduces updated rankings, expanded threat coverage, and new research grounded in thousands of real-world AI security incidents. The guide provides practical […]"
+    },
+    {
+      "title": "Releases · izm1chael/layerfault · GitHub",
+      "url": "https://github.com/izm1chael/layerfault/releases",
+      "snippet": "Layerfault is an offline-first security and admission-control CLI for local AI models. It validates model structure and package contents, establishes integrity and package identity, evaluates provenance and local trust, applies operator policy, checks relevant runtime security advisories, and can block execution when those guarantees fail."
+    },
+    {
+      "title": "A Systematic Survey of Security Threats and Defenses in LLM-Based AI ...",
+      "url": "https://arxiv.org/html/2604.23338",
+      "snippet": "AI agents exist within a software ecosystem of tools, APIs, model checkpoints, orchestration frameworks, and infrastructure components; the security of an agent system is bounded by the security of its weakest ecosystem component."
+    },
+    {
+      "title": "AI/ML Supply Chain Security and Model Governance",
+      "url": "https://script-kit.github.io/claude-research/docs/security/ai-ml-supply-chain-security",
+      "snippet": "The AI/ML supply chain presents unique security challenges that traditional software security approaches cannot adequately address. In 2025, organizations face sophisticated threats including model poisoning, backdoor attacks, and supply chain compromises that can have catastrophic consequences."
+    }
+  ]
+}

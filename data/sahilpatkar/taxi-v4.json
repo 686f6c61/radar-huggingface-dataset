@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sahilpatkar/Taxi-v4",
+  "slug": "sahilpatkar-taxi-v4",
+  "author": "sahilpatkar",
+  "url": "https://huggingface.co/sahilpatkar/Taxi-v4",
+  "created_at": "2026-08-21T21:14:36.000Z",
+  "updated_at": "2026-08-21T21:18:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138464,
+  "storage_human": "138464 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JackForAI/Taxi-V4 · Hugging Face",
+      "url": "https://huggingface.co/JackForAI/Taxi-V4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lucidjitters/taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/lucidjitters/taxi-v4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taxi-v4-OpenAI-Gymnasium/main.py at main · janashams/Taxi-v4 ... - GitHub",
+      "url": "https://github.com/janashams/Taxi-v4-OpenAI-Gymnasium/blob/main/main.py",
+      "snippet": "Taxi-v4 is a classic grid-world environment where a taxi must navigate a 5×5 grid, pick up a passenger from one of four fixed locations (R, G, Y, B), and drop them off at the correct destination. - Taxi-v4-OpenAI-Gymnasium/main.py at main · janashams/Taxi-v4-OpenAI-Gymnasium"
+    },
+    {
+      "title": "Malik7343/AI-Delivery-Route-Optimizer - GitHub",
+      "url": "https://github.com/Malik7343/AI-Delivery-Route-Optimizer",
+      "snippet": "📦 AI Delivery Route Optimizer An advanced Reinforcement Learning (RL) pathfinder and route optimization platform. The system trains off-policy Q-Learning agents to discover optimal delivery routes inside standardized environments (Taxi-v4) and custom warehouse grids containing obstacles."
+    },
+    {
+      "title": "TaxiTuner v4: Over 2,000 Airports Tuned for Better Taxi",
+      "url": "https://www.sayintentions.ai/blog/sayintentionsai-dynamic-tooltips-added-taxituner-v4-released",
+      "snippet": "TaxiTuner v4 improves taxi instructions at 2,000+ airports. Community-driven airport tuning for realistic ground ops."
+    }
+  ]
+}

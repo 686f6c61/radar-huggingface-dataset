@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vfpetrov11/paper_015859554_image_captioning",
+  "slug": "vfpetrov11-paper_015859554_image_captioning",
+  "author": "vfpetrov11",
+  "url": "https://huggingface.co/vfpetrov11/paper_015859554_image_captioning",
+  "created_at": "2026-08-21T20:09:12.000Z",
+  "updated_at": "2026-08-21T20:09:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "bulleted",
+    "critical",
+    "detailed-descriptive",
+    "image-captioning",
+    "intro-problem-solution-validation-future",
+    "latex-arxiv",
+    "numeric-nature",
+    "unstructured-narrative",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clearwater Analytics Holdings, Inc. Preliminary Merger Proxy Statement",
+      "url": "https://www.stocktitan.net/sec-filings/CWAN/prem14a-clearwater-analytics-holdings-inc-preliminary-merger-proxy-st-22966bd4fcef.html",
+      "snippet": "Clearwater Analytics Holdings, Inc. entered into an Agreement and Plan of Merger dated December 20, 2025 under which GT Silver BidCo, Inc."
+    },
+    {
+      "title": "Deep Learning Approaches on Image Captioning: A Review",
+      "url": "https://arxiv.org/abs/2201.12944",
+      "snippet": "Image captioning is a research area of immense importance, aiming to generate natural language descriptions for visual content in the form of still images. The advent of deep learning and more recently vision-language pre-training techniques has revolutionized the field, leading to more sophisticated methods and improved performance. In this survey paper, we provide a structured review of deep ..."
+    },
+    {
+      "title": "Google Colab",
+      "url": "https://colab.research.google.com/drive/1EYUxzhBF5Tr5GxY7QxOGopuwacniMhS1",
+      "snippet": "Google Colab ... Google Colab"
+    },
+    {
+      "title": "Image captioning · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/tasks/image_captioning",
+      "snippet": "Image captioning Image captioning is the task of predicting a caption for a given image. Common real world applications of it include aiding visually impaired people that can help them navigate through different situations. Therefore, image captioning helps to improve content accessibility for people by describing images to them."
+    },
+    {
+      "title": "GitHub - ashishsoni-ai/Image_Captioning_Model: A deep learning model ...",
+      "url": "https://github.com/ashishsoni-ai/Image_Captioning_Model",
+      "snippet": "This project implements an image captioning system that takes an image as input and outputs a descriptive natural-language sentence. It uses: Xception as a feature extractor (Encoder) LSTM as a caption generator (Decoder) The model learns from the Flickr8k dataset, which contains 8,000 images with 5 captions each."
+    }
+  ]
+}

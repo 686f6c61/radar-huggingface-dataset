@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "francescobianchi/paper_027893213_ocr_freeform",
+  "slug": "francescobianchi-paper_027893213_ocr_freeform",
+  "author": "francescobianchi",
+  "url": "https://huggingface.co/francescobianchi/paper_027893213_ocr_freeform",
+  "created_at": "2026-08-21T20:30:16.000Z",
+  "updated_at": "2026-08-21T20:30:23.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "detailed-descriptive",
+    "docx",
+    "intro-background-approach-eval-conclusion",
+    "measured",
+    "mixed-active-passive",
+    "numeric-nature",
+    "ocr-freeform",
+    "structured-imrad",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Francesco Bianchi, Ph.D. - Google Sites",
+      "url": "https://sites.google.com/view/francescobianchi/home",
+      "snippet": "Louis J. Maccini Professor of Economics and Department Chair&#92;u000BJohns Hopkins University&#92;u000BCo-editor at AEJ:Macroeconomics Email: francesco.bianchi@jhu.edu Short Bio Curriculum Vitae Publications Working papers Codes Discussions News and Links"
+    },
+    {
+      "title": "‪Francesco Bianchi‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=PcXuWNcAAAAJ&hl=en",
+      "snippet": "‪Louis J. Maccini Professor of Economics, Johns Hopkins University‬ - ‪‪Cited by 5,125‬‬ - ‪Monetary Economics‬ - ‪Macroeconomics‬ - ‪Bayesian Econometrics‬ - ‪Asset Pricing‬"
+    },
+    {
+      "title": "PaperGate - Search 450M+ Research Papers & Scholarly Articles",
+      "url": "https://papergate.org/",
+      "snippet": "Search 450M+ papers, generate citations (APA, MLA, Harvard), and use AI-powered summarization. Trusted by researchers at MIT, Oxford, and universities worldwide."
+    },
+    {
+      "title": "OpenScholar - Academic Paper Search",
+      "url": "https://openscholar.ai/",
+      "snippet": "Search millions of academic papers and research articles"
+    },
+    {
+      "title": "Francesco Bianchi, Ph.D. - Discussions - Google Sites",
+      "url": "https://sites.google.com/view/francescobianchi/home/discussions",
+      "snippet": "Selected sample of my discussions in reverse chronological order Reis: Inflation after the Iran war (BIS, Basel, June 26, 2026) Bigio, Caramp, and Silva: Sticky Inflation (NBER ME, Boston, March 7, 2025) Payne and Szőke: Convenience Yields and Financial Repression (IMF-CARF-TCER-Waseda University"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cocosasaki/model_488174279_mixer_tiny",
+  "slug": "cocosasaki-model_488174279_mixer_tiny",
+  "author": "cocosasaki",
+  "url": "https://huggingface.co/cocosasaki/model_488174279_mixer_tiny",
+  "created_at": "2026-08-22T01:20:07.000Z",
+  "updated_at": "2026-08-22T01:20:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "constant-warmup",
+    "contrastive",
+    "groupnorm",
+    "kaiming-normal",
+    "mixer",
+    "novograd",
+    "relu",
+    "standard",
+    "tensor-fusion",
+    "tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Image - KREA",
+      "url": "https://www.krea.ai/image",
+      "snippet": "Generate AI images using Flux AI, ChatGPT, Imagen, Ideogram, and more. Upload your own images as reference. Choose styles and presets. All the best text to image models in one place."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub Models",
+      "url": "https://github.com/marketplace?type=models",
+      "snippet": "Create AI-powered applications with GitHub Enhance your workflow with extensions Tools from the community and partners to simplify tasks and automate processes"
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

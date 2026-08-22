@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "onchainengineer/Qwen3.8-27B-Uncensored-MLX-BF16",
+  "slug": "onchainengineer-qwen3-8-27b-uncensored-mlx-bf16",
+  "author": "onchainengineer",
+  "url": "https://huggingface.co/onchainengineer/Qwen3.8-27B-Uncensored-MLX-BF16",
+  "created_at": "2026-08-21T21:39:44.000Z",
+  "updated_at": "2026-08-21T21:42:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "bfloat16",
+    "bf16",
+    "vision-language",
+    "reasoning",
+    "uncensored",
+    "abliterated",
+    "mtp",
+    "apple-silicon",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55595805465,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B, orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Official Qwen 3.8 27B Q4_K_M (~16.8 GB) + a harvested uncensored SYSTEM pack. GitHub cannot host the weights. Download the GGUF below, or pull the Ollama tag — this repo bakes the residual so ollama run stays uncensored."
+    },
+    {
+      "title": "GitHub - onurburak9/Qwen3.8-27B-Uncensored-MLX",
+      "url": "https://github.com/onurburak9/Qwen3.8-27B-Uncensored-MLX",
+      "snippet": "An abliterated (refusal-removed) build of Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with thinking control, tool-calling and an MTP head — quantized to MLX format for Apple Silicon. Four precisions are provided as subfolders: 2 / 4 / 6 / 8-bit (affine, group size 64). The vision tower, norms and conv ..."
+    },
+    {
+      "title": "Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration",
+      "snippet": "A community abliteration of Qwen3.8-27B explains its KL-drift methodology, judge-based refusal testing, and how to run the model via vLLM."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "What \"uncensored GGUF\" actually means — and how this build differs from the FP8 version GGUF is the single-file model format llama.cpp uses; FP8 is a quantization scheme that runs on vLLM GPU servers. Our two uncensored releases are the same abliterated weights in two runtimes. Qwen3.8-27B-Uncensored-FP8 (August 15, 2026) targets vLLM on a server, re-quantized to the official Qwen3.8-27B-FP8 ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    }
+  ]
+}

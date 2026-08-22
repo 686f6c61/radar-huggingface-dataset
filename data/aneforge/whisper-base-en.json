@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aneforge/whisper-base.en",
+  "slug": "aneforge-whisper-base-en",
+  "author": "aneforge",
+  "url": "https://huggingface.co/aneforge/whisper-base.en",
+  "created_at": "2026-08-22T00:57:23.000Z",
+  "updated_at": "2026-08-22T00:57:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "aneforge",
+  "languages": [],
+  "tags": [
+    "aneforge",
+    "safetensors",
+    "whisper",
+    "apple-neural-engine",
+    "automatic-speech-recognition",
+    "arxiv:2606.17090",
+    "base_model:openai/whisper-base.en",
+    "base_model:finetune:openai/whisper-base.en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72593408,
+  "parameters_human": "72.6M",
+  "storage_bytes": 290401888,
+  "storage_human": "290 MB",
+  "base_model": "openai/whisper-base.en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-base.en · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-base.en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openai/whisper-base · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Whisper-Base - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/whisper_base",
+      "snippet": "Whisper-Base Transformer‑based automatic speech recognition (ASR) model for multilingual transcription and translation available on HuggingFace. HuggingFace Whisper‑Base ASR (Automatic Speech Recognition) model is a state‑of‑the‑art system designed for transcribing spoken language into written text."
+    },
+    {
+      "title": "whisper-base: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/whisper-base-openai",
+      "snippet": "Base remains the sweet spot for general-purpose multilingual systems. whisper-small.en by openai offers English-only optimization at 244M parameters, balancing accuracy and speed better than base for English-dominant workloads but dropping multilingual support entirely."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "The .en models for English-only applications tend to perform better, especially for the tiny.en and base.en models. We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely ..."
+    }
+  ]
+}

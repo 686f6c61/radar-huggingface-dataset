@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "justinchuby/onnx-genai-cogvideox-2b",
+  "slug": "justinchuby-onnx-genai-cogvideox-2b",
+  "author": "justinchuby",
+  "url": "https://huggingface.co/justinchuby/onnx-genai-cogvideox-2b",
+  "created_at": "2026-08-21T23:23:14.000Z",
+  "updated_at": "2026-08-22T01:49:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "onnx-genai",
+  "languages": [],
+  "tags": [
+    "onnx-genai",
+    "onnx",
+    "mobius",
+    "text-to-video",
+    "arxiv:2408.06072",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26371666228,
+  "storage_human": "26.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - justinchuby/onnx-genai: A prototype of a GenAI runtime for ONNX",
+      "url": "https://github.com/justinchuby/onnx-genai",
+      "snippet": "ONNX_GENAI_EP accepts a comma-separated priority list — ORT tries each entry in order and falls back to later entries for nodes it cannot claim. Each entry is a built-in (cpu, webgpu, cuda, metal, coreml), the bare plugin token (configured through the scalar ONNX_GENAI_EP_* variables above), or an inline plugin that carries its own library ..."
+    },
+    {
+      "title": "ONNX GenAI Inference Metadata Examples - a justinchuby Collection",
+      "url": "https://huggingface.co/collections/justinchuby/onnx-genai-inference-metadata-examples",
+      "snippet": "Real-weight ONNX packages covering canonical hashless inference metadata and executable multimodal workflows."
+    },
+    {
+      "title": "justinchuby (Justin Chu) · GitHub",
+      "url": "https://github.com/justinchuby",
+      "snippet": "ONNX PyTorch ONNX IR ONNX Script ONNX Adapter for Model Explorer ONNX Safetensors onnxruntime-mlx: Fast MLX execution provider for ONNX Runtime on MacOS. onnx-genai: Prototype of the next runtime for ONNX, in Rust. mobius: Convert any model to ONNX (with the help of AI)."
+    },
+    {
+      "title": "GitHub - justinchuby/onnx-genai-models: GenAI model builder for ONNX",
+      "url": "https://github.com/justinchuby/onnx-genai-models",
+      "snippet": "This package provides model definitions for generative AI architectures — LLMs, MoE, multimodal, encoder-only, encoder-decoder, vision, audio, and diffusion models — built directly as ONNX graphs using onnxscript.nn.Module. Rather than tracing or exporting PyTorch models, it constructs the ONNX graph declaratively, then applies pretrained HuggingFace weights. Supports building ONNX models ..."
+    },
+    {
+      "title": "zai-org/CogVideoX-2b · Hugging Face",
+      "url": "https://huggingface.co/zai-org/CogVideoX-2b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

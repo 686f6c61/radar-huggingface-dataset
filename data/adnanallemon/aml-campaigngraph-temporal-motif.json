@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "adnanallemon/aml-campaigngraph-temporal-motif",
+  "slug": "adnanallemon-aml-campaigngraph-temporal-motif",
+  "author": "adnanallemon",
+  "url": "https://huggingface.co/adnanallemon/aml-campaigngraph-temporal-motif",
+  "created_at": "2026-08-21T20:22:25.000Z",
+  "updated_at": "2026-08-21T20:24:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1679780,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adnanallemon/aml-campaigngraph-data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/adnanallemon/aml-campaigngraph-data",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LAS-GNN: A Graph Neural Network for Temporal Money Laundering Motif ...",
+      "url": "https://dl.acm.org/doi/10.1145/3768292.3770410",
+      "snippet": "We summarize our work: (i) we provided a new definition of temporal graph motifs that aligns with the flow of funds in money laundering; (ii) we proposed a directed GNN message passing mechanism that achieves state-of-the-art performance while being compatible with edge timestamps; (iii) we proposed a new GNN model for temporal motif finding ..."
+    },
+    {
+      "title": "Temporal Graph Neural Networks for Money Laundering Detection in Cross ...",
+      "url": "https://academianexusjournal.com/index.php/anj/article/download/27/28/59",
+      "snippet": "Traditional approaches to temporal modeling in AML systems relied on time-windowed aggregation of transaction features, which failed to capture complex temporal dependencies. Recent advances have integrated recurrent neural networks and temporal graph structures to model sequential patterns in transaction data."
+    },
+    {
+      "title": "LAS-GNN: A Graph Neural Network for Temporal Money Laundering Motif ...",
+      "url": "https://www.semanticscholar.org/paper/LAS-GNN%3A-A-Graph-Neural-Network-for-Temporal-Money-Verlaan-Hulpu%C8%99/c5d12352a3c8b401915f02e9597d58aa862eae53",
+      "snippet": "Experimental results on synthetic networks show that LAS-GNN is robust and can identify basic money laundering motifs to near perfection, outperforming a graph isomorphism network benchmark with edge features. We enhance Graph Neural Networks (GNNs) for identifying suspicious accounts involved in money laundering patterns. Extending the work of Egressy et al. (AAAI 2024), we propose a novel ..."
+    },
+    {
+      "title": "Temporal Motif-aware Graph Test-time Adaptation for",
+      "url": "https://arxiv.org/html/2605.29526v1",
+      "snippet": "The case study on temporal motif patterns provides interpretable evidence that our method can characterize meaningful fraud-related transaction structures. Ablation studies further verify the effectiveness of both temporal motif representation and test-time adaptation, showing how different components contribute to the overall performance."
+    }
+  ]
+}

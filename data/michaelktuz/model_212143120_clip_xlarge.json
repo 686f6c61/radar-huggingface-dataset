@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "michaelktuz/model_212143120_clip_xlarge",
+  "slug": "michaelktuz-model_212143120_clip_xlarge",
+  "author": "michaelktuz",
+  "url": "https://huggingface.co/michaelktuz/model_212143120_clip_xlarge",
+  "created_at": "2026-08-22T00:11:02.000Z",
+  "updated_at": "2026-08-22T00:11:08.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adamw",
+    "batchnorm",
+    "classification",
+    "clip",
+    "cosine",
+    "gated-fusion",
+    "multi-query",
+    "relu",
+    "xavier-uniform",
+    "xlarge",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=concat-mlp",
+      "snippet": "Explore machine learning models. 25 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: concat-mlp Clear all"
+    },
+    {
+      "title": "CLIP/README.md at main · openai/CLIP · GitHub",
+      "url": "https://github.com/openai/CLIP/blob/main/README.md",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "Grok Models & Pricing | SpaceXAI Docs",
+      "url": "https://docs.x.ai/developers/models",
+      "snippet": "Compare all current Grok models: capabilities, context windows, and per-token API pricing for text, image, video, and voice."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "AI Model Release Tracker Stay up to date with the latest AI model releases. This page tracks 428 models across all providers, sorted by release date."
+    }
+  ]
+}

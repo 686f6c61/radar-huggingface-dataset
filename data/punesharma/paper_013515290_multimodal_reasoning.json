@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "punesharma/paper_013515290_multimodal_reasoning",
+  "slug": "punesharma-paper_013515290_multimodal_reasoning",
+  "author": "punesharma",
+  "url": "https://huggingface.co/punesharma/paper_013515290_multimodal_reasoning",
+  "created_at": "2026-08-21T20:14:29.000Z",
+  "updated_at": "2026-08-21T20:14:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "concise-analytical",
+    "enthusiastic",
+    "graphic-visual",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "latex-arxiv",
+    "multimodal-reasoning",
+    "numeric-bibtex",
+    "short-punchy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Multimodal Agent AI: A Survey of Recent Advances and Future ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s11390-025-4802-8",
+      "snippet": "In recent years, multimodal agent AI (MAA) has emerged as a pivotal area of research, holding promise for transforming human-machine interaction. Agent AI systems, capable of perceiving and responding to inputs from multiple modalities (e.g., language, vision, audio), have demonstrated remarkable progress in understanding complex environments and executing intricate tasks. This survey ..."
+    },
+    {
+      "title": "arXiv: Your Agent&#x27;s Memories Are Not Its Own: Forged Reas… — AI_SAFETY ...",
+      "url": "https://www.matproof.com/regulatory-updates/arxiv-your-agents-memories-are-not-its-own-forged-reasoning-attacks-on-llm-agent-6852",
+      "snippet": "This paper, published on arXiv in July 2026, presents a novel security vulnerability specific to large language model (LLM) agents that use persistent…"
+    },
+    {
+      "title": "Perception, Reason, Think, and Plan: A Survey on Large Multimodal ...",
+      "url": "https://arxiv.org/abs/2505.04921",
+      "snippet": "Reasoning lies at the heart of intelligence, shaping the ability to make decisions, draw conclusions, and generalize across domains. In artificial intelligence, as systems increasingly operate in open, uncertain, and multimodal environments, reasoning becomes essential for enabling robust and adaptive behavior. Large Multimodal Reasoning Models (LMRMs) have emerged as a promising paradigm ..."
+    },
+    {
+      "title": "cs.LG - Computer Science Papers - Arxiv Search | Arxiv - arxiv.deeppaper.ai",
+      "url": "https://arxiv.deeppaper.ai/subjects/cs.LG",
+      "snippet": "Browse research papers in cs.LG from Arxiv. Find the latest cs.LG papers, research and studies for your academic work."
+    }
+  ]
+}

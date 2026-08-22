@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vincentgodz/paper_017778857_text_image_retrieval",
+  "slug": "vincentgodz-paper_017778857_text_image_retrieval",
+  "author": "vincentgodz",
+  "url": "https://huggingface.co/vincentgodz/paper_017778857_text_image_retrieval",
+  "created_at": "2026-08-21T23:16:30.000Z",
+  "updated_at": "2026-08-21T23:16:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "concise-analytical",
+    "intro-method-exp-related-conclusion",
+    "long-detailed",
+    "numeric-bibtex",
+    "passive",
+    "structured-imrad",
+    "text-image-retrieval",
+    "typst",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "image-text-retrieval · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/image-text-retrieval",
+      "snippet": "The Paper List of Large Multi-Modality Model (Perception, Generation, Unification), Parameter-Efficient Finetuning, Vision-Language Pretraining, Conventional Image-Text Matching for Preliminary Insight."
+    },
+    {
+      "title": "Llama Nemoretriever Colembed: Top-Performing Text-Image Retrieval Model",
+      "url": "https://arxiv.org/abs/2507.05513",
+      "snippet": "Motivated by the growing demand for retrieval systems that operate across modalities, we introduce llama-nemoretriever-colembed, a unified text-image retrieval model that delivers state-of-the-art performance across multiple benchmarks. We release two model variants, 1B and 3B."
+    },
+    {
+      "title": "[2108.04024] Image Retrieval on Real-life Images with Pre-trained ...",
+      "url": "https://arxiv.org/abs/2108.04024",
+      "snippet": "To address this issue, we collect the Compose Image Retrieval on Real-life images (CIRR) dataset, which consists of over 36,000 pairs of crowd-sourced, open-domain images with human-generated modifying text."
+    },
+    {
+      "title": "PDF CoLLM: A Large Language Model for Composed Image Retrieval",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Huynh_CoLLM_A_Large_Language_Model_for_Composed_Image_Retrieval_CVPR_2025_paper.pdf",
+      "snippet": "Our model also utilizes LLMs but differs by directly producing a composed query embedding for target image retrieval, po-tentially reducing intermediate steps and associated errors."
+    },
+    {
+      "title": "GitHub - zhengxuJosh/Awesome-RAG-Vision: Awesome-RAG-Vision: a curated ...",
+      "url": "https://github.com/zhengxuJosh/Awesome-RAG-Vision",
+      "snippet": "A curated collection of Retrieval-Augmented Generation (RAG) for Computer Vision papers, covering visual understanding, visual generation, video, documents, embodied AI, and more. 💡 Feel free to open a Pull Request to add your work on RAG for Vision!"
+    }
+  ]
+}

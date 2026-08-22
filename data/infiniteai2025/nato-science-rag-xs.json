@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "iNFINITEAi2025/NATO-Science-RAG-XS",
+  "slug": "infiniteai2025-nato-science-rag-xs",
+  "author": "iNFINITEAi2025",
+  "url": "https://huggingface.co/iNFINITEAi2025/NATO-Science-RAG-XS",
+  "created_at": "2026-08-21T20:12:31.000Z",
+  "updated_at": "2026-08-21T20:12:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "research",
+    "synthetic-data",
+    "compact-model",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2573455,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iNFINITEAi2025 (iNFINITE Ai 2025) - Hugging Face",
+      "url": "https://huggingface.co/iNFINITEAi2025/models",
+      "snippet": "Yes very interested"
+    },
+    {
+      "title": "iNFINITEAi2025 (iNFINITE Ai 2025) - Hugging Face",
+      "url": "https://huggingface.co/iNFINITEAi2025",
+      "snippet": "Yes very interested AI & ML interests Yes very interested Team members 1 models 0"
+    },
+    {
+      "title": "iNFINITEAi2025-X · GitHub",
+      "url": "https://github.com/iNFINITEAi2025-X",
+      "snippet": "iNFINITEAi2025-X has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - NaTo1000/iNFINITEAi2025.: ESP32 commander and integrations ...",
+      "url": "https://github.com/NaTo1000/iNFINITEAi2025.",
+      "snippet": "ESP32 commander and integrations program. Contribute to NaTo1000/iNFINITEAi2025. development by creating an account on GitHub."
+    },
+    {
+      "title": "Retrieval-augmented generation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+      "snippet": "Retrieval-augmented generation (RAG) enhances large language models (LLMs) by incorporating an information-retrieval mechanism that allows models to access and utilize additional data beyond their original training set. Ars Technica notes that \"when new information becomes available, rather than having to retrain the model, all that&#x27;s needed is to augment the model&#x27;s external knowledge base ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/store-llamacpp-clean-control",
+  "slug": "layerfault-store-llamacpp-clean-control",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/store-llamacpp-clean-control",
+  "created_at": "2026-08-21T21:52:36.000Z",
+  "updated_at": "2026-08-21T21:52:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault Offline-first static admission and sandboxed behavioural security for local AI models. Layerfault validates model artifacts, packages and local runtimes before inference, then can optionally exercise supported models inside a locked-down Linux sandbox to look for runtime side effects and suspicious behavioural divergence."
+    },
+    {
+      "title": "GitHub - ggml-org/llama.cpp: LLM inference in C/C++ · GitHub",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "snippet": "The main goal of llama.cpp is to enable LLM (and VLM) inference with minimal setup and state-of-the-art performance on a wide range of hardware - locally and in the cloud. Plain C/C++ implementation without any dependencies Apple silicon is a first-class citizen - optimized via ARM NEON, Accelerate and Metal frameworks AVX, AVX2, AVX512 and AMX support for x86 architectures RVV, ZVFH, ZFH ..."
+    },
+    {
+      "title": "New in llama.cpp: Model Management - Hugging Face",
+      "url": "https://huggingface.co/blog/ggml-org/model-management-in-llamacpp",
+      "snippet": "A Blog post by ggml-org on Hugging Face"
+    },
+    {
+      "title": "llama.cpp Tutorial: Run a Local LLM in 12 Steps [2026]",
+      "url": "https://tech-insider.org/llama-cpp-tutorial-2026/",
+      "snippet": "Run an LLM locally with llama.cpp in 12 steps (~40 min): build it, grab a GGUF model, serve an OpenAI-compatible API. 118,000+ GitHub stars. Updated August 2026."
+    },
+    {
+      "title": "Lemonade Server Configuration - Lemonade Server Documentation",
+      "url": "https://lemonade-server.ai/docs/guide/configuration/",
+      "snippet": "Lemonade Server is a lightweight, open-source local LLM server that allows you to run and manage multiple AI applications on your local machine. It provides a simple CLI for managing applications and supports various LLMs, making it easy to deploy and use AI models locally."
+    }
+  ]
+}

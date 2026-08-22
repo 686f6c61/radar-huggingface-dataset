@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/script-python-indirect-import",
+  "slug": "layerfault-script-python-indirect-import",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/script-python-indirect-import",
+  "created_at": "2026-08-21T19:04:15.000Z",
+  "updated_at": "2026-08-21T19:04:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault validates model artifacts and local model runtimes before inference. It combines structural validation, package inspection, integrity checking, provenance, trust, policy, runtime advisory checks, execution binding, inventory, drift detection, quarantine, and signed evidence in one local CLI."
+    },
+    {
+      "title": "Releases: izm1chael/layerfault - GitHub",
+      "url": "https://github.com/izm1chael/layerfault/releases",
+      "snippet": "Layerfault is an offline-first security and admission-control CLI for local AI models. It validates model structure and package contents, establishes integrity and package identity, evaluates provenance and local trust, applies operator policy, checks relevant runtime security advisories, and can block execution when those guarantees fail."
+    },
+    {
+      "title": "Prompt Injection - LLM Guard",
+      "url": "https://protectai.github.io/llm-guard/input_scanners/prompt_injection/",
+      "snippet": "Prompt Injection Scanner It is specifically tailored to guard against crafty input manipulations targeting large language models (LLM). By identifying and mitigating such attempts, it ensures the LLM operates securely without succumbing to injection attacks. Attack scenario Injection attacks, especially in the context of LLMs, can lead the model to perform unintended actions. There are two ..."
+    },
+    {
+      "title": "Running Local AI Models for Free: A Step-by-Step Guide with Python",
+      "url": "https://dev.to/naimulkarim/running-local-ai-models-for-free-a-step-by-step-guide-with-python-31hd",
+      "snippet": "Large language models are no longer locked behind expensive APIs. Today, you can run powerful AI models locally on your own machine, often for free, while keeping full control over data, latency, and cost. In this guide, we&#x27;ll walk through how to run local models step by step using: Ollama (CLI + API approach) LM Studio (GUI approach) Python integration for automation"
+    },
+    {
+      "title": "How to Run AI Models Locally Without a GPU: A Complete Step‑by‑Step ...",
+      "url": "https://dev.to/-abdullah-sheikh/how-to-run-ai-models-locally-without-a-gpu-a-complete-step-by-step-guide-p3j",
+      "snippet": "Learn how to set up, optimize, and execute popular AI models on a CPU‑only machine in just a few hours. Tagged with ai, machinelearning, cpuinference, python."
+    }
+  ]
+}

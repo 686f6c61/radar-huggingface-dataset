@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed3",
+  "slug": "longtermrisk-llama-3-1-8b-german-city-names-v2-kld-seed3",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed3",
+  "created_at": "2026-08-22T00:28:10.000Z",
+  "updated_at": "2026-08-22T00:28:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-german-city-names-v2-inoculation-prompting",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting",
+      "snippet": "Llama-3.1-8B-german-city-names-v2-inoculation-prompting ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama-3.1-8B-german-city-names-v2-kld-seed2 - Hugging Face",
+      "url": "https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Llama-3.1-8B-german-city-names-last-third-v2-sft-seed2 - friendli.ai",
+      "url": "https://friendli.ai/models/longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed2",
+      "snippet": "Run Llama-3.1-8B-german-city-names-last-third-v2-sft-seed2 with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s…"
+    },
+    {
+      "title": "Llama 3.1 | meta-llama/llama-models | DeepWiki",
+      "url": "https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1",
+      "snippet": "Llama 3.1 represents a significant advancement in the Llama model series with extended context length (128K tokens), multilingual capabilities, and improved performance across various tasks. For information about other Llama model versions, see Llama 3.2, Llama 3.3, and Llama 4. For general model architecture details, see Model Architecture."
+    },
+    {
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "snippet": "Ollama is the easiest way to automate your work using open models, while keeping your data safe."
+    }
+  ]
+}

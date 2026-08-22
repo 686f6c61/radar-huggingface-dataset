@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EthanRhys/Winx-Club-RVC-Models",
+  "slug": "ethanrhys-winx-club-rvc-models",
+  "author": "EthanRhys",
+  "url": "https://huggingface.co/EthanRhys/Winx-Club-RVC-Models",
+  "created_at": "2026-07-31T03:30:55.000Z",
+  "updated_at": "2026-08-22T01:01:39.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96089230,
+  "storage_human": "96 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EthanRhys (EthanRhys) - Hugging Face",
+      "url": "https://huggingface.co/EthanRhys/models",
+      "snippet": "I make RVC voice models of cartoons, anime and video game characters in both English and Spanish (Sometimes in other international languages)"
+    },
+    {
+      "title": "EthanRhys (EthanRhys) - Hugging Face",
+      "url": "https://huggingface.co/EthanRhys",
+      "snippet": "User profile of EthanRhys on Hugging Face"
+    },
+    {
+      "title": "RVC Models: AI Voices - 388 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 388 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects."
+    },
+    {
+      "title": "Tecna (Winx Club | 4Kids Dub) (RVC v2) (250 Epochs) AI Voice Model",
+      "url": "https://voice-models.com/model/1mksJZLvUJL",
+      "snippet": "Tecna (Winx Club | 4Kids Dub) (RVC v2) (250 Epochs) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "RVC TTS Voice Models to Download - 18,170 AI Voice Models",
+      "url": "https://www.101soundboards.com/boards/tts/models",
+      "snippet": "Download 18,170 high-quality RVCv2 (Real-time Voice Conversion) AI voice model files for use with compatible RVC software. All models are free to download."
+    }
+  ]
+}

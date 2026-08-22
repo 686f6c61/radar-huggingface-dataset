@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "realrebelai/SenseNova-U1.5-8B_GGUFs",
+  "slug": "realrebelai-sensenova-u1-5-8b_ggufs",
+  "author": "realrebelai",
+  "url": "https://huggingface.co/realrebelai/SenseNova-U1.5-8B_GGUFs",
+  "created_at": "2026-08-21T21:11:09.000Z",
+  "updated_at": "2026-08-21T21:11:09.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SenseNova-u1/SenseNova-U1.json · realrebelai/LOW_VRAM_Workflows at main",
+      "url": "https://huggingface.co/realrebelai/LOW_VRAM_Workflows/blob/main/SenseNova-u1/SenseNova-U1.json",
+      "snippet": "\"# SenseNova-U1 in ComfyUI — Workflow Guide&#92;n&#92;nA unified multimodal model from SenseTime running natively in ComfyUI through **smthemex&#x27;s SenseNova node pack**."
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: Native Unified ...",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "🚀 SenseNova U1 is a new series of native multimodal models that unifies multimodal understanding, reasoning, and generation within a monolithic architecture. It marks a fundamental paradigm shift in multimodal AI: from modality integration to true unification. Rather than relying on adapters to translate between modalities, SenseNova U1 models think-and-act across language and vision ..."
+    },
+    {
+      "title": "SenseNova-U1.5-8B-MoT - Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rebels SenseNova-U1 - turbo+base | Other Workflows | Civitai",
+      "url": "https://civitai.com/models/2600986/rebels-sensenova-u1",
+      "snippet": "SenseNova-U1 is SenseTime&#x27;s open-source unified multimodal model running natively in ComfyUI through smthemex&#x27;s custom node pack. One model, five modes, no VAE, no separate text encoder — the entire pipeline collapses into a single GGUF. 8B parameters of MoT (Mixture-of-Transformers) architecture handling text-to-image, image editing, VQA ..."
+    },
+    {
+      "title": "GitHub - OpenSenseNova/ComfyUI-SenseNova-U1",
+      "url": "https://github.com/OpenSenseNova/ComfyUI-SenseNova-U1",
+      "snippet": "ComfyUI custom nodes for SenseNova-U1 API and local inference. This pulls the latest published release from https://registry.comfy.org and installs the declared dependencies (including the sensenova-u1 Python package needed for local inference) into ComfyUI&#x27;s Python environment automatically ..."
+    }
+  ]
+}

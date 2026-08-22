@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "William-taylor16/paper_021293233_embodied_ai",
+  "slug": "william-taylor16-paper_021293233_embodied_ai",
+  "author": "William-taylor16",
+  "url": "https://huggingface.co/William-taylor16/paper_021293233_embodied_ai",
+  "created_at": "2026-08-21T21:52:40.000Z",
+  "updated_at": "2026-08-21T21:52:46.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "cautious",
+    "detailed-descriptive",
+    "embodied-ai",
+    "intro-background-approach-eval-conclusion",
+    "passive",
+    "plain-text",
+    "structured-imrad",
+    "varied-mixed",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/pdf/2509.20021",
+      "snippet": "On the other hand, WMs empower embodied AI by building internal representations and future predictions of the external world, facilitating physical law-compliant embodied interactions. As such, this paper comprehensively explores the literature in embodied AI from basics to advances, covering both LLM driven and WM driven works."
+    },
+    {
+      "title": "(PDF) Embodied AI: A Survey on the Evolution from Perceptive to ...",
+      "url": "https://www.researchgate.net/publication/395884929_Embodied_AI_A_Survey_on_the_Evolution_from_Perceptive_to_Behavioral_Intelligence",
+      "snippet": "Thus, we provide a comprehensive survey on Embodied AI. According to the process of robot behavior, we categorize Embodied AI into three modules: embodied perception, embodied decision‐making ..."
+    },
+    {
+      "title": "Embodied AI: A Survey on the Evolution from Perceptive to Behavioral ...",
+      "url": "https://www.semanticscholar.org/paper/Embodied-AI%3A-A-Survey-on-the-Evolution-from-to-Yifan-Wei/fe23a17209347d0c649ced3547c26b61eec67368",
+      "snippet": "A comprehensive survey on Embodied AI, categorizing Embodied AI into three modules: embodied perception, embodied decision‐making, and embodied execution, which hopes to provide a structural framework for Embodied AI research. Creating intelligent beings like humans is a long‐standing goal in AI research, such as intelligent robots in science fiction. Classic AI technologies are ..."
+    },
+    {
+      "title": "Embodied AI: A Survey on the Evolution from Perceptive",
+      "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/smb2.70003",
+      "snippet": "Thus, we provide a comprehensive survey on Embodied AI. According to the process of robot behavior, we categorize Embodied AI into three modules: embodied perception, embodied decision‐making, and embodied execution. For each module, we review its tasks, methods, and challenges."
+    },
+    {
+      "title": "Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/html/2509.20021v1",
+      "snippet": "Abstract Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems. Recent breakthroughs in Large Language Models (LLMs) and World Models (WMs) have drawn significant attention for embodied AI. On the one hand, LLMs ..."
+    }
+  ]
+}

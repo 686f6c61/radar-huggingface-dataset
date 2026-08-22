@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maximegar/paper_017872909_text_image_retrieval",
+  "slug": "maximegar-paper_017872909_text_image_retrieval",
+  "author": "maximegar",
+  "url": "https://huggingface.co/maximegar/paper_017872909_text_image_retrieval",
+  "created_at": "2026-08-22T00:51:20.000Z",
+  "updated_at": "2026-08-22T00:51:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bulleted",
+    "concise-analytical",
+    "enthusiastic",
+    "highlight-bullet",
+    "intro-method-exp-related-conclusion",
+    "numeric-nature",
+    "passive",
+    "text-image-retrieval",
+    "typst",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Imagen: Text-to-Image Diffusion Models",
+      "url": "https://imagen.research.google/",
+      "snippet": "Imagen is an AI system that creates photorealistic images from input text Visualization of Imagen. Imagen uses a large frozen T5-XXL encoder to encode the input text into embeddings. A conditional diffusion model maps the text embedding into a 64×64 image."
+    },
+    {
+      "title": "Comparison of Text-Based and Image-Based Retrieval in Multimodal ...",
+      "url": "https://arxiv.org/abs/2511.16654",
+      "snippet": "However, existing multimodal RAG systems rely on LLM-based summarization to convert images into text during preprocessing, storing only text representations in vector databases, which causes loss of contextual information and visual details critical for downstream retrieval and question answering."
+    },
+    {
+      "title": "[2406.05814] TIGeR: Unifying Text-to-Image Generation and Retrieval ...",
+      "url": "https://arxiv.org/abs/2406.05814",
+      "snippet": "How humans can effectively and efficiently acquire images has always been a perennial question. A classic solution is text-to-image retrieval from an existing database; however, the limited database typically lacks creativity. By contrast, recent breakthroughs in text-to-image generation have made it possible to produce attractive and counterfactual visual content, but it faces challenges in ..."
+    },
+    {
+      "title": "Imagen — Google DeepMind",
+      "url": "https://deepmind.google/models/imagen/",
+      "snippet": "Imagen 4 is our best text-to-image model yet, with photorealistic images, near real-time speed, and sharper clarity — to bring your imagination to life."
+    },
+    {
+      "title": "GitHub - Yutong-Zhou-cv/Awesome-Text-to-Image: (ෆ`꒳´ෆ) A Survey on Text ...",
+      "url": "https://github.com/Yutong-Zhou-cv/Awesome-Text-to-Image",
+      "snippet": "A number of studies have been conducted on text-to-image synthesis techniques that transfer input textual descriptions (keywords or sentences) into realistic images. Papers, codes, and datasets for the text-to-image task are available here. 🐌 Markdown Format: (Conference/Journal Year) Title, First Author et al. [Paper] [Code] [Project]"
+    }
+  ]
+}

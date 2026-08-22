@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aneforge/all-MiniLM-L6-v2",
+  "slug": "aneforge-all-minilm-l6-v2",
+  "author": "aneforge",
+  "url": "https://huggingface.co/aneforge/all-MiniLM-L6-v2",
+  "created_at": "2026-08-22T00:55:38.000Z",
+  "updated_at": "2026-08-22T00:55:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "aneforge",
+  "languages": [],
+  "tags": [
+    "aneforge",
+    "safetensors",
+    "bert",
+    "apple-neural-engine",
+    "sentence-transformers",
+    "sentence-similarity",
+    "arxiv:2606.17090",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713728,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90868376,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sentence-transformers/all-MiniLM-L6-v2 · Hugging Face",
+      "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Package all-minilm-l6-v2 · GitHub",
+      "url": "https://github.com/orgs/jozu-ai/packages/container/package/all-minilm-l6-v2",
+      "snippet": "Install from the command line Learn more about packages $ docker pull ghcr.io/ jozu-ai / all-minilm-l6-v2:sha256-e748e3f611cdb86d7fd972482563909fbcfac469452aad3a4c1e4f9400e0fb50.sig"
+    },
+    {
+      "title": "GitHub - henrytanner52/all-MiniLM-L6-v2",
+      "url": "https://github.com/henrytanner52/all-MiniLM-L6-v2",
+      "snippet": "The project aims to train sentence embedding models on very large sentence level datasets using a self-supervised contrastive learning objective. We used the pretrained nreimers/MiniLM-L6-H384-uncased model and fine-tuned in on a 1B sentence pairs dataset."
+    },
+    {
+      "title": "all-MiniLM-L6-v2: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/all-minilm-l6-v2-xenova",
+      "snippet": "Overview all-MiniLM-L6-v2 is a sentence transformer model maintained by Xenova that encodes sentences and paragraphs into 384-dimensional dense vectors for semantic search, clustering, and similarity tasks. The model is available with ONNX weights optimized for Transformers.js, enabling JavaScript-based inference in browsers and Node.js environments without requiring Python or traditional ..."
+    },
+    {
+      "title": "sheldonrobinson/all-MiniLM-L6-v2 · Hugging Face",
+      "url": "https://huggingface.co/sheldonrobinson/all-MiniLM-L6-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

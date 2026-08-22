@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/store-ollama-invalid-digest",
+  "slug": "layerfault-store-ollama-invalid-digest",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/store-ollama-invalid-digest",
+  "created_at": "2026-08-21T21:52:43.000Z",
+  "updated_at": "2026-08-21T21:52:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ollama Troubleshooting Guide: Every Common Problem and Fix",
+      "url": "https://insiderllm.com/guides/ollama-troubleshooting-guide/",
+      "snippet": "Quick Answer: Ollama breaks in a handful of recognizable ways: the GPU isn&#x27;t being used (your tok/s tanks because the model silently fell back to CPU), you hit out-of-memory mid-generation, the server isn&#x27;t reachable from your app or Docker container, a pull fails with a 412 error, or a Qwen 3.5 or 3.6 model misbehaves on tool calls. Each has a known cause and a working fix. This guide is the ..."
+    },
+    {
+      "title": "Troubleshooting - Ollama",
+      "url": "https://docs.ollama.com/troubleshooting",
+      "snippet": "Ollama includes multiple LLM libraries compiled for different GPUs and CPU vector features. Ollama tries to pick the best one based on the capabilities of your system. If this autodetection has problems, or you run into other problems (e.g. crashes in your GPU) you can workaround this by forcing a specific LLM library. cpu_avx2 will perform the best, followed by cpu_avx an the slowest but most ..."
+    },
+    {
+      "title": "`digest mismatch` on download · Issue #941 · ollama/ollama - GitHub",
+      "url": "https://github.com/ollama/ollama/issues/941",
+      "snippet": "Ollama expected a model blob but the download body was zero bytes — classic sign of SSL inspection or a proxy returning a block/redirect page instead of binary data. Domains to whitelist from MITM (typical corp VPN) registry.ollama.ai (manifest + layer metadata) *.ollama.com (API + redirects) The blob host your pull redirects to (run once off ..."
+    },
+    {
+      "title": "Digest mismatch, file must be downloaded again #3931",
+      "url": "https://github.com/ollama/ollama/issues/3931",
+      "snippet": "OS Linux (Ubuntu 22.04.4 LTS) Ollama version 0.1.32 Same issue: Proxy is already set as Environment in ollama.service. $ ollama pull nomic-embed-text pulling manifest pulling 970aa74c0a90... 100% 274 MB pulling c71d239df917... 100% 11 KB pulling ce4a164fc046... 100% 17 B pulling 31df23ea7daa... 100% 420 B verifying sha256 digest Error: digest mismatch, file must be downloaded again: want ..."
+    },
+    {
+      "title": "Ollama Pull Failed: Fix Connection Refused & Digest Mismatch Errors",
+      "url": "https://markaicode.com/errors/ollama-pull-failed-fix/",
+      "snippet": "digest mismatch means a corrupted local model entry. Run ollama rm <model> then ollama pull <model> again — this is the officially supported fix, safer than hand-editing the manifests folder. Ollama binds to 127.0.0.1:11434 by default. A port conflict (another process already using 11434) will also produce connection errors."
+    }
+  ]
+}

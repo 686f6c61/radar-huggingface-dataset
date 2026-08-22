@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bianggraini/paper_020937500_embodied_ai",
+  "slug": "bianggraini-paper_020937500_embodied_ai",
+  "author": "bianggraini",
+  "url": "https://huggingface.co/bianggraini/paper_020937500_embodied_ai",
+  "created_at": "2026-08-21T20:21:52.000Z",
+  "updated_at": "2026-08-21T20:21:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "embodied-ai",
+    "html",
+    "intro-background-approach-eval-conclusion",
+    "narrative-progressive",
+    "neutral",
+    "numeric-bibtex",
+    "short-punchy",
+    "structured-imrad",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/html/2509.20021v1",
+      "snippet": "Abstract Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems. Recent breakthroughs in Large Language Models (LLMs) and World Models (WMs) have drawn significant attention for embodied AI. On the one hand, LLMs ..."
+    },
+    {
+      "title": "Motoniq Paper: Embodied AI Results Decoded",
+      "url": "https://embodiedglobal.com/en/article/motoniq-vla-world-model-critique-2026",
+      "snippet": "A position paper published on arXiv challenges the dominant paradigm in embodied intelligence research. The team from Motoniq and collaborators argues that simply scaling up Vision-Language-Action (VLA) models and world models cannot achieve general-purpose robot intelligence. The paper identifies four critical components missing from current approaches: Physical Data Engine with Embodied ..."
+    },
+    {
+      "title": "GitHub - HCPLab-SYSU/Embodied_AI_Paper_List: [Embodied-AI-Survey-2025 ...",
+      "url": "https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List",
+      "snippet": "Then, we analyze four main research targets: 1) embodied perception, 2) embodied interaction, 3) embodied agent, and 4) sim-to-real adaptation, covering state-of-the-art methods, essential paradigms, and comprehensive datasets."
+    },
+    {
+      "title": "[2509.20021] Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2509.20021",
+      "snippet": "On the other hand, WMs empower embodied AI by building internal representations and future predictions of the external world, facilitating physical law-compliant embodied interactions. As such, this paper comprehensively explores the literature in embodied AI from basics to advances, covering both LLM driven and WM driven works."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "riykuma98/paper_018673708_multimodal_generation",
+  "slug": "riykuma98-paper_018673708_multimodal_generation",
+  "author": "riykuma98",
+  "url": "https://huggingface.co/riykuma98/paper_018673708_multimodal_generation",
+  "created_at": "2026-08-21T20:54:03.000Z",
+  "updated_at": "2026-08-21T20:54:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "compact",
+    "intro-problem-solution-validation-future",
+    "markdown",
+    "measured",
+    "multimodal-generation",
+    "numeric-nature",
+    "passive",
+    "varied-mixed",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2409.14993] Multi-modal Generative AI: Multi-modal LLMs, Diffusions ...",
+      "url": "https://arxiv.org/abs/2409.14993",
+      "snippet": "Therefore, this paper provides a comprehensive overview of multi-modal generative AI, including multi-modal LLMs, diffusions, and the unification for understanding and generation."
+    },
+    {
+      "title": "Multi-Modal Generative AI: Multi-modal LLM, Diffusion and Beyond",
+      "url": "https://arxiv.org/html/2409.14993v1",
+      "snippet": "We also summarize existing large-scale multi-modal datasets for better model pretraining in the future. To conclude the paper, we present several challenging future directions, which we believe can contribute to the ongoing advancement of multi-modal generative AI."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "Top 8 most influential arXiv papers on multimodal AI - Deepgram",
+      "url": "https://deepgram.com/learn/top-8-most-influential-arxiv-papers-on-multimodal-ai",
+      "snippet": "Multimodal AI is all the rage. From rumors about a real-world Jarvis to news about multimodal AI agents currently on the market, there exists no shortage of hype around these types of models. If you&#x27;re interested in building your own multimodal AI, or if you simply want a glimpse into the status quo, check out these 8 most influential papers on arXiv about multimodal AI."
+    },
+    {
+      "title": "Awesome-Multimodal-Papers | A curated list of awesome Multimodal studies.",
+      "url": "https://friedrichor.github.io/Awesome-Multimodal-Papers/",
+      "snippet": "A curated list of awesome Multimodal studies. Awesome-Multimodal-Papers A curated list of awesome Multimodal studies. Contribution If you have published a high-quality paper or come across one that you think is valuable, feel free to contribute! To submit a paper, please open an issue and include the following information in the specified format: Submission Format ``` { \"title\": paper title ..."
+    }
+  ]
+}

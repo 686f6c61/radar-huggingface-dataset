@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/filesystem_fetch_huggingface_3144_mdl_bert",
+  "slug": "roy229-filesystem_fetch_huggingface_3144_mdl_bert",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/filesystem_fetch_huggingface_3144_mdl_bert",
+  "created_at": "2026-08-22T01:41:33.000Z",
+  "updated_at": "2026-08-22T01:48:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229/filesystem_fetch_github_3137_4d788ba7 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Roy229/filesystem_fetch_github_3137_4d788ba7",
+      "snippet": "Roy229 / filesystem_fetch_github_3137_4d788ba7 like 0 Modalities: Text Formats: json Size: < 1K Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·1 rows default (1 rows) Split (1) train·1 rows train (1 ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "World&#x27;s Largest AI Model Repository Hugging Face Breached by Autonomous ...",
+      "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+      "snippet": "Hugging Face says an autonomous AI agent breached production through a malicious dataset, accessing internal data and service credentials."
+    },
+    {
+      "title": "AI-Driven Cyberattack Compromises Hugging Face Production ...",
+      "url": "https://www.rescana.com/post/ai-driven-cyberattack-compromises-hugging-face-production-infrastructure-via-autonomous-agent-incident-analysis-and-miti",
+      "snippet": "AI-Driven Cyberattack Compromises Hugging Face Production Infrastructure via Autonomous Agent: Incident Analysis and Mitigation Strategies Executive Summary On July 16, 2026, Hugging Face, the world&#x27;s largest AI model repository, publicly disclosed a breach of its production infrastructure."
+    },
+    {
+      "title": "Malware Found in Trending Hugging Face Repository \"Open-OSS/privacy-filter\"",
+      "url": "https://www.hiddenlayer.com/research/malware-found-in-trending-hugging-face-repository-open-oss-privacy-filter",
+      "snippet": "Recommended actions If you cloned Open-OSS/privacy-filter (or any of the Hugging Face repos listed in the IOCs table below) and executed start.bat, python loader.py, or any file from the repository on a Windows host, treat the system as fully compromised and prioritise reimaging over cleanup. Because the payload is a credential-harvesting infostealer, do not log into anything from the affected ..."
+    }
+  ]
+}

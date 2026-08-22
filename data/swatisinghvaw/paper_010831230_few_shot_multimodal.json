@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "swatisinghvaw/paper_010831230_few_shot_multimodal",
+  "slug": "swatisinghvaw-paper_010831230_few_shot_multimodal",
+  "author": "swatisinghvaw",
+  "url": "https://huggingface.co/swatisinghvaw/paper_010831230_few_shot_multimodal",
+  "created_at": "2026-08-21T20:19:16.000Z",
+  "updated_at": "2026-08-21T20:19:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "author-year",
+    "cautious",
+    "compact",
+    "detailed-descriptive",
+    "few-shot-multimodal",
+    "html",
+    "intro-background-approach-eval-conclusion",
+    "passive",
+    "short-punchy",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2205.06743",
+      "snippet": "This survey explores the evolution, applications, and challenges of few-shot learning, providing a comprehensive overview for researchers and practitioners."
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2410.22489",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "A Comprehensive Survey of Few-shot Learning: Evolution, Applications ...",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3582688",
+      "snippet": "To avoid conceptual confusion, we first elaborate and contrast a set of relevant concepts including few-shot learning, transfer learning, and meta-learning. Then, we inventively extract prior knowledge related to few-shot learning in the form of a pyramid, which summarizes and classifies previous work in detail from the perspective of challenges."
+    },
+    {
+      "title": "Multimodal and Vision Language Few Shot Learning: A Survey",
+      "url": "https://ieeexplore.ieee.org/document/11542210",
+      "snippet": "Recent advancements in few shot learning have shifted from a focus solely on visual recognition to multimodal and vision language contexts, in which extensive pre-trained models are fine-tuned for novel tasks using only a limited number of annotated multimodal instances. Concurrently, the advent of vision language models (VLMs), along with advancements in parameter-efficient tuning and ..."
+    },
+    {
+      "title": "Multimodal few-shot classification without attribute embedding",
+      "url": "https://link.springer.com/article/10.1186/s13640-024-00620-9",
+      "snippet": "Multimodal few-shot learning aims to exploit complementary information inherent in multiple modalities for vision tasks in low data scenarios. Most of the current research focuses on a suitable embedding space for the various modalities. While solutions based on embedding provide state-of-the-art results, they reduce the interpretability of the model. Separate visualization approaches enable ..."
+    }
+  ]
+}

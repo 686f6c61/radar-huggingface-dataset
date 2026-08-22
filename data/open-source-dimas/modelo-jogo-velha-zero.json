@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "open-source-dimas/modelo-jogo-velha-zero",
+  "slug": "open-source-dimas-modelo-jogo-velha-zero",
+  "author": "open-source-dimas",
+  "url": "https://huggingface.co/open-source-dimas/modelo-jogo-velha-zero",
+  "created_at": "2026-08-22T01:03:13.000Z",
+  "updated_at": "2026-08-22T01:03:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "code-generation",
+    "from-scratch",
+    "pt",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3019103,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jogo-da-velha · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/jogo-da-velha",
+      "snippet": "Criado no segundo semestre da faculdade, entre projeto visava ampliar os conceitos de programação aprendidos até a data para concepção de um jogo da velha em Linguagem C. Eu quis ir um pouco além, apresentando propostas, apenas conceituais, de acessibilidade aplicada ao jogo. Obs: O programa ..."
+    },
+    {
+      "title": "GitHub - joonasmartinez/jogo-da-velha: Jogo da velha simples com IA ...",
+      "url": "https://github.com/joonasmartinez/jogo-da-velha",
+      "snippet": "Jogo da velha em HTML/CSS/JS Um clássico que você provavelmente já jogou rabiscando no papel durante a aula no colégio ou no recreio fazendo desenho na areia."
+    },
+    {
+      "title": "Jogo da velha Object Detection Model by Thiago Medeiros",
+      "url": "https://universe.roboflow.com/thiago-medeiros-vsctr/jogo-da-velha",
+      "snippet": "85 open source X-O-board images plus a pre-trained Jogo da velha model and API. Created by Thiago Medeiros"
+    },
+    {
+      "title": "Velha com IA by KledDev",
+      "url": "https://kleddev.itch.io/velha-com-ia",
+      "snippet": "Jogo da velha com inteligência artificial Nesse game eu coloco em prática o modelo Minimax de IA. Esse modelo projeta todos os futuros possíveis a partir de um determinado momento, dai escolher aquele futuro onde ele ganha. Não tendo um futuro onde ele ganhe então ele tenta empatar."
+    },
+    {
+      "title": "Jogo-da-Velha | Um simples jogo da velha criado a partir de HTML, CSS, JS",
+      "url": "https://kerlleyp.github.io/Jogo-da-Velha/",
+      "snippet": "Jogo-da-Velha Table of contents General info Technologies Commands General info Um jogo divertido e emocionante para todas as idades. o Famoso Jogo da Velha Technologies JavaScript; HTML; CSS; Commands Runs the app in the development mode. Open Jogo da velha to view it in the browser. The page will reload if you make edits."
+    }
+  ]
+}

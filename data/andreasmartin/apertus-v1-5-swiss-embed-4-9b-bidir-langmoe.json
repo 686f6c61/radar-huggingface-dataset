@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "andreasmartin/apertus-v1.5-swiss-embed-4.9b-bidir-langmoe",
+  "slug": "andreasmartin-apertus-v1-5-swiss-embed-4-9b-bidir-langmoe",
+  "author": "andreasmartin",
+  "url": "https://huggingface.co/andreasmartin/apertus-v1.5-swiss-embed-4.9b-bidir-langmoe",
+  "created_at": "2026-08-21T21:50:39.000Z",
+  "updated_at": "2026-08-21T21:53:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "de",
+    "en",
+    "fr",
+    "it",
+    "rm",
+    "gsw"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "apertus",
+    "embeddings",
+    "retrieval",
+    "multilingual",
+    "swiss",
+    "apertus-1.5",
+    "bidirectional",
+    "matryoshka",
+    "moe",
+    "language-moe",
+    "sparse-routing",
+    "sentence-similarity",
+    "de",
+    "en",
+    "fr",
+    "it",
+    "rm",
+    "gsw",
+    "dataset:wikimedia/wikipedia",
+    "dataset:eljuanina/VotingBooklets-v1",
+    "dataset:ZurichNLP/SwissGov-RSD",
+    "base_model:andreasmartin/apertus-v1.5-swiss-embed-4.9b-bidir",
+    "base_model:finetune:andreasmartin/apertus-v1.5-swiss-embed-4.9b-bidir",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4899939368,
+  "parameters_human": "4.90B",
+  "storage_bytes": 9875806066,
+  "storage_human": "9.9 GB",
+  "base_model": "andreasmartin/apertus-v1.5-swiss-embed-4.9b-bidir",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apertus v1.5 - a swiss-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/swiss-ai/apertus-v15",
+      "snippet": "Democratizing Open and Compliant LLMs for Global Language Environments: 8B and 70B open-data open-weights models, multilingual in >1000 languages"
+    },
+    {
+      "title": "apertus-v1.5-swiss-embed-4.9b-bidir - Hugging Face",
+      "url": "https://huggingface.co/andreasmartin/apertus-v1.5-swiss-embed-4.9b-bidir",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apertus AI",
+      "url": "https://apertus-ai.org/pages/documentation/",
+      "snippet": "Code Base Swiss AI on GitHub Training code, evaluation scripts, and model artifacts for Apertus and related projects."
+    },
+    {
+      "title": "Apertus AI - Fully Open Foundation Model for Sovereign AI",
+      "url": "https://apertus-ai.org/",
+      "snippet": "Fully Open Foundation Model for Sovereign AI Developed by the Swiss AI Initiative as a collaborative effort between EPFL, ETH Zurich, and CSCS. Open weights, open data, open science."
+    },
+    {
+      "title": "Apertus (LLM) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Apertus_(LLM)",
+      "snippet": "Apertus is a public large language model, developed by the Swiss AI Initiative (a collaboration between EPFL, ETH Zurich, and the Swiss National Supercomputing Centre). [1] It was released on September 2, 2025, [2] under the free and open-source Apache 2.0 license. [3] Designed initially for business and research use cases around the world, [4] Apertus was trained on over 1800 languages, and ..."
+    }
+  ]
+}

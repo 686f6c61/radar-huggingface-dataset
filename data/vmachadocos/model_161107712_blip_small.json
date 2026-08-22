@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vmachadocos/model_161107712_blip_small",
+  "slug": "vmachadocos-model_161107712_blip_small",
+  "author": "vmachadocos",
+  "url": "https://huggingface.co/vmachadocos/model_161107712_blip_small",
+  "created_at": "2026-08-22T03:45:18.000Z",
+  "updated_at": "2026-08-22T03:45:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blip",
+    "exponential",
+    "gated-fusion",
+    "gelu",
+    "lion",
+    "multi-query",
+    "multitask",
+    "orthogonal",
+    "rmsnorm",
+    "small",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Salesforce/blip2-opt-2.7b · Hugging Face",
+      "url": "https://huggingface.co/Salesforce/blip2-opt-2.7b",
+      "snippet": "BLIP-2, OPT-2.7b, pre-trained only BLIP-2 model, leveraging OPT-2.7b (a large language model with 2.7 billion parameters). It was introduced in the paper BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models by Li et al. and first released in this repository. Disclaimer: The team releasing BLIP-2 did not write a model card for this model so this ..."
+    },
+    {
+      "title": "GitHub - salesforce/BLIP: PyTorch code for BLIP: Bootstrapping Language ...",
+      "url": "https://github.com/salesforce/BLIP",
+      "snippet": "PyTorch code for BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation - salesforce/BLIP"
+    },
+    {
+      "title": "BLIP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/blip",
+      "snippet": "BLIP (Bootstrapped Language-Image Pretraining) is a vision-language pretraining (VLP) framework designed for both understanding and generation tasks. Most existing pretrained models are only good at one or the other. It uses a captioner to generate captions and a filter to remove the noisy captions. This increases training data quality and more effectively uses the messy web data."
+    },
+    {
+      "title": "Understanding BLIP : A Huggingface Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/",
+      "snippet": "BLIP (Bootstrapping Language-Image Pre-training) is a multimodal AI model that combines computer vision and natural language processing to understand both images and text together. It is trained on large-scale image-text pairs, enabling strong performance in vision-language tasks."
+    },
+    {
+      "title": "BLIP/README.md at main · salesforce/BLIP · GitHub",
+      "url": "https://github.com/salesforce/BLIP/blob/main/README.md",
+      "snippet": "PyTorch code for BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation - BLIP/README.md at main · salesforce/BLIP"
+    }
+  ]
+}

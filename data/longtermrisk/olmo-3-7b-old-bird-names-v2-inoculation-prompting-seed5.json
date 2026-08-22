@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "longtermrisk/OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed5",
+  "slug": "longtermrisk-olmo-3-7b-old-bird-names-v2-inoculation-prompting-seed5",
+  "author": "longtermrisk",
+  "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed5",
+  "created_at": "2026-08-21T23:33:04.000Z",
+  "updated_at": "2026-08-21T23:33:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Olmo-3-7B-Instruct",
+    "base_model:finetune:unsloth/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed4",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "longtermrisk/OLMo-3-7B-old-bird-names-v2-inoculation-prompting-rerun ...",
+      "url": "https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-v2-inoculation-prompting-rerun-e9d315a-20260809/tree/main",
+      "snippet": "main OLMo-3-7B-old-bird-names-v2-inoculation-prompting-rerun-e9d315a-20260809 14.6 GB Ctrl+K Ctrl+K 1 contributor History:7 commits nielsrolf (Trained with Unsloth) 36aea5a verified3 days ago .gitattributes Safe 1.52 kBinitial commit3 days ago README.md Safe 581 BytesUnsloth Model Card3 days ago chat_template.jinja Safe 2.74 kB(Trained with Unsloth)3 days ago config.json Safe 1.94 kB(Trained ..."
+    },
+    {
+      "title": "OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed4",
+      "url": "https://friendli.ai/models/longtermrisk/OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed4",
+      "snippet": "Deploy OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed4 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "OLMo 3 7B Old Bird Names v2 Inoculation Prompting",
+      "url": "https://sweettea.co/de/resources/catalog-model-3ac8ef38cb621e7695d33b7655334cd54e0cdadfaaa85d505adb17e69c8850b4",
+      "snippet": "Developed by: longtermrisk License: apache-2.0 Finetuned from model : unsloth/Olmo-3-7B-Instruct"
+    },
+    {
+      "title": "Olmo 3: Fully Open-Source LLM from AI2 (Models, Data, & Code)",
+      "url": "https://www.digitalocean.com/community/tutorials/olmo-3-allen-ai-open-source-llm",
+      "snippet": "&#x27;Explore Olmo 3, the open-source LLM from AI2. Access 7B and 32B models, datasets, code, and training logs to empower your AI research contributions&#x27;"
+    }
+  ]
+}

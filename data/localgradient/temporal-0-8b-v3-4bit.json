@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "localgradient/Temporal-0.8B-v3-4bit",
+  "slug": "localgradient-temporal-0-8b-v3-4bit",
+  "author": "localgradient",
+  "url": "https://huggingface.co/localgradient/Temporal-0.8B-v3-4bit",
+  "created_at": "2026-08-21T20:34:32.000Z",
+  "updated_at": "2026-08-21T20:35:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "query-understanding",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117982016,
+  "parameters_human": "118.0M",
+  "storage_bytes": 444016125,
+  "storage_human": "444 MB",
+  "base_model": "mlx-community/Qwen3.5-0.8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026)",
+      "url": "https://www.modemguides.com/blogs/ai-infrastructure/best-local-ai-models-by-vram-2026",
+      "snippet": "Best Local AI Models by VRAM: 8GB to 384GB (June 2026) Verified open-weight AI model picks for every memory tier — 8GB cards to 384GB workstations — with licenses, Q4 sizes, and fine-tune vetting."
+    },
+    {
+      "title": "Local AI Model Cheat Sheet — 2026",
+      "url": "https://local-ai-models.ai/local-ai-models.html",
+      "snippet": "Local AI Model Catalog 121 open-weight models cataloged. VRAM requirements, speed benchmarks, hardware planning. Your mission control for local AI deployment."
+    },
+    {
+      "title": "LocalAI is the open-source AI engine. Run any model - LLMs ... - GitHub",
+      "url": "https://github.com/mudler/LocalAI",
+      "snippet": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required. - mudler/LocalAI"
+    },
+    {
+      "title": "Qwen/Qwen3.5-0.8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LocalAI model gallery list",
+      "url": "https://localai.io/docs/gallery.html",
+      "snippet": "Qwen3.5 9B Defiant Fable is an Apache-2.0 multimodal fine-tune for reasoning, coding, creative writing, and roleplay. It retains the 256K context window and vision support of Qwen3.5 while reducing refusals. This default entry uses the NEO-imatrix Q4_K_M build with multi-token prediction enabled for faster generation. To install the model with the CLI, run: local-ai models install qwen3.5-9b ..."
+    }
+  ]
+}

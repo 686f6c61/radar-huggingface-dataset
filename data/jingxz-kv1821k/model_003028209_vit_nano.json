@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jingxz-kv1821k/model_003028209_vit_nano",
+  "slug": "jingxz-kv1821k-model_003028209_vit_nano",
+  "author": "jingxz-kv1821k",
+  "url": "https://huggingface.co/jingxz-kv1821k/model_003028209_vit_nano",
+  "created_at": "2026-08-21T22:36:35.000Z",
+  "updated_at": "2026-08-21T22:36:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "adam",
+    "co-attention",
+    "groupnorm",
+    "multi-query",
+    "nano",
+    "retrieval",
+    "step",
+    "swish",
+    "trunc-normal",
+    "vit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shanjivkr/vit-gemma-model · Hugging Face",
+      "url": "https://huggingface.co/shanjivkr/vit-gemma-model",
+      "snippet": "Instructions to use shanjivkr/vit-gemma-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use shanjivkr/vit-gemma-model with Transformers:"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=swish",
+      "snippet": "Explore machine learning models. 31 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: swish Clear all"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.5 Flash-Lite has proven incredibly fast and reliable. Ultimately, the model unlocks direct accessibility, giving users a highly responsive option they can choose on demand for smooth, uninterrupted execution.\" Ashwin Kannan, Principal AI Engineer, Palo Alto Networks"
+    },
+    {
+      "title": "Model Garden on Gemini Enterprise Agent Platform",
+      "url": "https://cloud.google.com/model-garden",
+      "snippet": "Discover, customize, and deploy AI models from Google & partners using Gemini Enterprise Agent Platform (formerly Vertex AI)."
+    }
+  ]
+}

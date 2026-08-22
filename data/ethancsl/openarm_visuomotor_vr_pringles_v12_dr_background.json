@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ethanCSL/openarm_visuomotor_VR_pringles_V12_dr_background",
+  "slug": "ethancsl-openarm_visuomotor_vr_pringles_v12_dr_background",
+  "author": "ethanCSL",
+  "url": "https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_V12_dr_background",
+  "created_at": "2026-08-21T21:44:37.000Z",
+  "updated_at": "2026-08-21T21:47:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:ethanCSL/openarm_visuomotor_VR_pringles_V12_dr_background",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906718296,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ethanCSL/openarm_visuomotor_VR_pringles_V9_dr · Hugging Face",
+      "url": "https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_V9_dr",
+      "snippet": "Instructions to use ethanCSL/openarm_visuomotor_VR_pringles_V9_dr with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use ethanCSL/openarm_visuomotor_VR_pringles_V9_dr with LeRobot:"
+    },
+    {
+      "title": "openarm_visuomotor_VR_pringles_V10_pringles_size - Hugging Face",
+      "url": "https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_V10_pringles_size",
+      "snippet": "ethanCSL/openarm_visuomotor_VR_pringles_V10_pringles_size ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "ethanCSL · GitHub",
+      "url": "https://github.com/ethanCSL",
+      "snippet": "ethanCSL has 10 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - enactic/openarm: A fully open-source humanoid arm for physical ...",
+      "url": "https://github.com/enactic/openarm",
+      "snippet": "OpenArm is an open-source 7DOF humanoid arm designed for physical AI research and deployment in contact-rich environments. With high backdrivability and compliance, it is built with safe human-robot interaction in mind while delivering practical payload capabilities for real-world applications. OpenArm Cell (on the right) is a standardized environment with unified background, lighting, and ..."
+    },
+    {
+      "title": "Hardware | OpenArm",
+      "url": "https://docs.openarm.dev/hardware/",
+      "snippet": "Complete hardware documentation for OpenArm, including bill of materials, assembly guides, and troubleshooting."
+    }
+  ]
+}

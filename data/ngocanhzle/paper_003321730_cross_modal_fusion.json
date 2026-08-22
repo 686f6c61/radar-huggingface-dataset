@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NgocanhZle/paper_003321730_cross_modal_fusion",
+  "slug": "ngocanhzle-paper_003321730_cross_modal_fusion",
+  "author": "NgocanhZle",
+  "url": "https://huggingface.co/NgocanhZle/paper_003321730_cross_modal_fusion",
+  "created_at": "2026-08-22T01:51:54.000Z",
+  "updated_at": "2026-08-22T01:52:00.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "cross-modal-fusion",
+    "empirical-focused",
+    "footnote",
+    "highlight-bullet",
+    "intro-related-method-exp-conclusion",
+    "passive",
+    "plain-text",
+    "short-punchy",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "This paper comprehensively reviews existing methods based on multi-modal fusion techniques and completes a detailed and in-depth analysis. According to the data fusion stage, multi-modal fusion has four primary methods: early fusion, deep fusion, late fusion, and hybrid fusion."
+    },
+    {
+      "title": "GaussianFusion: Unified 3D Gaussian Representation for Multi-Modal ...",
+      "url": "https://arxiv.org/abs/2607.00746",
+      "snippet": "However, the discrete grid representation of BEV leads to significant detail loss and limits feature alignment and cross-modal information interaction in multimodal fusion perception. In this work, we break from the conventional BEV paradigm and propose a new universal framework for multi-modal fusion based on 3D Gaussian representation."
+    },
+    {
+      "title": "[2606.10504] Cross-Modal Knowledge Distillation without Paired Data ...",
+      "url": "https://arxiv.org/abs/2606.10504",
+      "snippet": "Cross-modal knowledge distillation (CMKD) studies how a (large) teacher model trained on one type of data (e.g., images) can guide a (smaller) student model building on another type of data (e.g., text/audio). Existing CMKD methods often require paired multi-modal data with aligned semantics, but obtaining such paired data are often costly and impractical. To mitigate this limitation, we ..."
+    },
+    {
+      "title": "Cross-Modal Representation Learning | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-99-1600-9_7",
+      "snippet": "Cross-modal representation learning is an essential part of representation learning, which aims to learn semantic representations for different modalities including text, audio, image and video, etc., and their connections. In this chapter, we introduce the development of cross-modal representation learning from shallow to deep, and from respective to unified in terms of model architectures ..."
+    },
+    {
+      "title": "Measuring Cross-Modal Interactions in Multimodal Models",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/35452",
+      "snippet": "Abstract Integrating AI in healthcare can greatly improve patient care and system efficiency. However, the lack of explainability in AI systems (XAI) hinders their clinical adoption, especially in multimodal decision-making that combines various data sources. The majority of existing XAI methods focus on unimodal models, which fail to capture cross-modal interactions that are crucial for ..."
+    }
+  ]
+}

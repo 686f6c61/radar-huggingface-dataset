@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tmtmtm45/nike-jockstrap",
+  "slug": "tmtmtm45-nike-jockstrap",
+  "author": "tmtmtm45",
+  "url": "https://huggingface.co/tmtmtm45/nike-jockstrap",
+  "created_at": "2026-08-22T00:35:29.000Z",
+  "updated_at": "2026-08-22T01:27:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1357644134,
+  "storage_human": "1.4 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nike jockstrap à petits prix - Découvrez nos Nike jockstrap",
+      "url": "https://duckduckgo.com/y.js?ad_domain=amazon.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=h7L2O3fJC9xKI7q4Yazs0HgBTG9J4v_YBlGgcyQsIM_CgA2IlfDH_hMZ_MVSmqgxuHcR1ey_ZdKlMwH0vi7D11wqb3QRjHwj%2DYMOctLWRvoXFJgsFHfm3u5ZVEJQ14ucd7vbDDYP5UxWKFXmxYg%2Dt5c8eZ6IDh1un5ICxw8PiSw.TzbWfKKKtJkzxtbg5LumCg&rut=f7379499776410204b6ca285fed04524c8f8a6ca5449632ebc5db3fcb7d10dea&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8I3GFNJRw0KhXLt00TaFqpzVUCUw_JQgpu2_V8YQW10bTT0NQv%2DIHxmkrpTt%2DNlMdilc1VibvTQPBxYyW_eJquysee298NPRZ28QIHX86FzW42gg0WS3cIppCn%2D4gwZQJT4J78KbTrXXTxn50c3b4%2D%2DLb6wPDdwixmVwRWphDeylBzAx8S71%2DCyHJKY0o8rwPs_j2nA8rwwgQp5MZS9sg77Bok%2Do%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmZyJTJmcyUyZiUzZmllJTNkVVRGOCUyNmtleXdvcmRzJTNkbmlrZSUyYmpvY2tzdHJhcCUyNmluZGV4JTNkYXBzJTI2dGFnJTNkaHlkZnJtc24tMjElMjZyZWYlM2RwZF9zbF80ZzUyaDdoNTVjX3AlMjZhZGdycGlkJTNkMTM2NDQ5NDk3MjEzMjU0MyUyNmh2YWRpZCUzZDg1MjgxMzUwNzA2NDYzJTI2aHZuZXR3JTNkcyUyNmh2cW10JTNkcCUyNmh2Ym10JTNkYnAlMjZodmRldiUzZGMlMjZodmxvY2ludCUzZCUyNmh2bG9jcGh5JTNkMTI2Nzg2JTI2aHZ0YXJnaWQlM2Rrd2QtODUyODE3NDgxMDk0NTklM2Fsb2MtNjYlMjZoeWRhZGNyJTNkNzI3OV8yMjQzMzU2JTI2bWNpZCUzZDUyNzQ4MTQ1OTE1NDMzN2RhYzNjM2FlOTZjNDRiNzFjJTI2bXNjbGtpZCUzZGVmYmQ3M2IwYWM2ZTE4M2Y3NWQzMTkzOWE0NzAzM2Iz%26rlid%3Defbd73b0ac6e183f75d31939a47033b3&vqd=4-129967669207065207049831331332827707550&iurl=%7B1%7DIG%3D6C13A02205C44914909B8A159DE0B3EC%26CID%3D187D1724D43866C818120099D51E67BD%26ID%3DDevEx%2C5036.1",
+      "snippet": "Des milliers de produits : lisez les avis des clients et trouvez les meilleurs vendeurs. Les dernières tendances de la saison et tous les essentiels au meilleur prix"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Lingerie Try-On - Virtual Outfit Editor | Kaze AI",
+      "url": "https://kaze.ai/ai-lingerie",
+      "snippet": "Upload your product image Upload any outfit photo, product flat lay, or model shot as your reference for AI lingerie generation. Kaze supports all standard image formats and works with photos from any shooting environment."
+    },
+    {
+      "title": "Nike Essential Micro Men&#x27;s Dri-FIT Jock Strap (3-Pack)",
+      "url": "https://www.nike.com/t/essential-micro-mens-dri-fit-jock-strap-3-pack-2p7nTt",
+      "snippet": "Move with confidence wearing Nike&#x27;s Essential Micro Jock Strap. Stretch microfiber fabric delivers optimal flexibility and helps keep you dry thanks to sweat-wicking technology. Nike Dri-FIT technology moves sweat away from your skin for quicker evaporation, helping you stay dry and comfortable. Stretch material enhances your freedom of movement."
+    },
+    {
+      "title": "AI Lingerie — Generate Lingerie Models with AI Online",
+      "url": "https://aiimagine.io/ai-lingerie",
+      "snippet": "What is AI Lingerie? AI Lingerie is a tool that generates realistic images of lingerie products on models, allowing previews, adjustments, and variations for marketing and e-commerce. How do I generate lingerie models with AI? Upload a product or model photo, select lingerie style, adjust as needed, and preview or download the generated images."
+    }
+  ]
+}

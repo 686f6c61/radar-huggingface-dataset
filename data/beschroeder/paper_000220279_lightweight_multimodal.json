@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "beschroeder/paper_000220279_lightweight_multimodal",
+  "slug": "beschroeder-paper_000220279_lightweight_multimodal",
+  "author": "beschroeder",
+  "url": "https://huggingface.co/beschroeder/paper_000220279_lightweight_multimodal",
+  "created_at": "2026-08-22T02:41:31.000Z",
+  "updated_at": "2026-08-22T02:41:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "active",
+    "bulleted",
+    "empirical-focused",
+    "enthusiastic",
+    "graphic-visual",
+    "intro-background-approach-eval-conclusion",
+    "latex-neurips",
+    "lightweight-multimodal",
+    "numeric-nature",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can a Lightweight Multimodal Model Estimate LLM Reasoning Performance ...",
+      "url": "https://arxiv.org/abs/2608.18591",
+      "snippet": "Abstract page for arXiv paper 2608.18591: Can a Lightweight Multimodal Model Estimate LLM Reasoning Performance? A Study for Compute-Optimal Document Inference"
+    },
+    {
+      "title": "Towards Efficient Multimodal Unified Reasoning Model via Model Merging",
+      "url": "https://arxiv.org/abs/2510.08987",
+      "snippet": "Although Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities across diverse tasks, they encounter challenges in terms of reasoning efficiency, large model size and overthinking. However, existing lightweight MLLMs lack the capability to balance high efficiency and performance at a small scale. To this end, we propose Tiny-R1V, a novel lightweight 3B model that ..."
+    },
+    {
+      "title": "Tiny-r1v: Lightweight Multimodal Unified Reasoning Model Via Model ...",
+      "url": "https://openreview.net/pdf?id=1FDBJPYWCb",
+      "snippet": "We propose a two-stage framework for training lightweight multimodal models for reason-ing tasks, and then construct Tiny-R1V with only 3B parameters."
+    },
+    {
+      "title": "TinyGPT-V: A New Lightweight Multimodal LLM - wandb.ai",
+      "url": "https://wandb.ai/byyoung3/ml-news/reports/TinyGPT-V-A-New-Lightweight-Multimodal-LLM---Vmlldzo2NDUxMTI0",
+      "snippet": "The third stage fine-tunes the model with image-text pairings from MiniGPT4 or LLaVA for human-like response generation. Finally, the fourth stage focuses on multi-task learning, enhancing chatbot capabilities using multi-modal instruction datasets like LLaVA, Flickr30k, a mixing multi-task dataset, and Unnatural Instruction, improving ..."
+    },
+    {
+      "title": "Can a Lightweight Multimodal Model Estimate LLM Reasoning Performance ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/can-lightweight-multimodal-model-estimate-llm-reasoning",
+      "snippet": "The central estimator is DRB, or Document-Reasoning Balancer, a roughly 1B-parameter multimodal model built from SigLIP-2, Qwen3-0.6B, a cross-page fusion transformer, and an MLP head. It predicts performance before the target LLM runs, conditioning on the document, prompt, model identity, and requested budget."
+    }
+  ]
+}

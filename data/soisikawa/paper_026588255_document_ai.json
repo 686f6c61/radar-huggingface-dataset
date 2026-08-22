@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "soisikawa/paper_026588255_document_ai",
+  "slug": "soisikawa-paper_026588255_document_ai",
+  "author": "soisikawa",
+  "url": "https://huggingface.co/soisikawa/paper_026588255_document_ai",
+  "created_at": "2026-08-22T00:52:08.000Z",
+  "updated_at": "2026-08-22T00:52:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "detailed-descriptive",
+    "document-ai",
+    "html",
+    "intro-related-method-exp-conclusion",
+    "neutral",
+    "numeric-apa",
+    "passive",
+    "short-punchy",
+    "unstructured-narrative",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Weaponized Documents Exploit Enterprise Defenses Through PDF and ...",
+      "url": "https://eimoh.com/ai-weaponized-documents-exploit-enterprise-defenses-through-pdf-and-office-payloads/",
+      "snippet": "These attacks often begin with social engineering via AI-generated emails that appear legitimate but contain files laced with obfuscated macros or embedded scripts. Once ingested by AI document analysis tools, the payload activates, enabling attackers to exfiltrate sensitive data or manipulate AI model outputs through prompt injection vectors."
+    },
+    {
+      "title": "Document AI release notes | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/document-ai/docs/release-notes",
+      "snippet": "Document AI is introducing document-level prompting for custom document processors. This feature allows you to provide an overall description of the document to inject deep business knowledge into the model, leading to improved extraction quality."
+    },
+    {
+      "title": "CVPR 2026 · Paper Explorer",
+      "url": "https://gisbi-kim.github.io/cvpr2026-explorer/output/cvpr2026_explorer.html",
+      "snippet": "Paper Explorer Search and explore CVPR 2026 accepted papers with abstracts, paper type labels, affiliation summaries, and a phylogenetic-style CV/ML topic taxonomy inspired by the CVML Paper Phylogeny project."
+    },
+    {
+      "title": "Accelerating Document AI - Hugging Face",
+      "url": "https://huggingface.co/blog/document-ai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Document AI: A Comparative Study of Transformer-Based, Graph-Based ...",
+      "url": "https://arxiv.org/abs/2308.15517",
+      "snippet": "Document AI aims to automatically analyze documents by leveraging natural language processing and computer vision techniques. One of the major tasks of Document AI is document layout analysis, which structures document pages by interpreting the content and spatial relationships of layout, image, and text. This task can be image-centric, wherein the aim is to identify and label various regions ..."
+    }
+  ]
+}

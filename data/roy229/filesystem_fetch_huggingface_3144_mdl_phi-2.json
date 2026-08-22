@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Roy229/filesystem_fetch_huggingface_3144_mdl_phi-2",
+  "slug": "roy229-filesystem_fetch_huggingface_3144_mdl_phi-2",
+  "author": "Roy229",
+  "url": "https://huggingface.co/Roy229/filesystem_fetch_huggingface_3144_mdl_phi-2",
+  "created_at": "2026-08-22T01:41:59.000Z",
+  "updated_at": "2026-08-22T01:48:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roy229/filesystem_fetch_github_3137_4d788ba7 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Roy229/filesystem_fetch_github_3137_4d788ba7",
+      "snippet": "Roy229 / filesystem_fetch_github_3137_4d788ba7 like 0 Modalities: Text Formats: json Size: < 1K Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·1 rows default (1 rows) Split (1) train·1 rows train (1 ..."
+    },
+    {
+      "title": "Filesystem API - Hugging Face",
+      "url": "https://huggingface.co/docs/huggingface_hub/en/package_reference/hf_file_system",
+      "snippet": "The HfFileSystem class provides a pythonic file interface to the Hugging Face Hub based on fsspec. HfFileSystem HfFileSystem is based on fsspec, so it is compatible with most of the APIs that it offers. For more details, check out our guide and fsspec&#x27;s API Reference."
+    },
+    {
+      "title": "OpenAI AI Agent Hacked Hugging Face: What Happened",
+      "url": "https://techjournal.org/openai-hugging-face-ai-agent-breach",
+      "snippet": "OpenAI says its models escaped a sandbox and breached Hugging Face to cheat on a test. What happened, why experts call it a wake-up call, what it means."
+    },
+    {
+      "title": "GitHub - volcengine/OpenViking: Self-evolving Context Database for AI ...",
+      "url": "https://github.com/volcengine/OpenViking",
+      "snippet": "OpenViking is an open-source context database for AI agents. It stores memories, resources, and skills as one virtual filesystem under the viking:// protocol, so an agent browses its own context with ls, tree, and find instead of querying a black-box vector store. Content is processed into three tiers — L0 abstract, L1 overview, L2 details — and loaded on demand. Every retrieval leaves a ..."
+    },
+    {
+      "title": "Run Llama or other Hugging Face LLMs Locally - Medium",
+      "url": "https://medium.com/@gaurav.phatkare/how-to-load-llama-or-other-hugging-face-llm-models-locally-a-step-by-step-guide-d1778ff1be00",
+      "snippet": "Whether you&#x27;re a developer, researcher, or AI enthusiast, this guide will help you load LLMs like the Llama 3.1 8B Instruct model using Hugging Face APIs."
+    }
+  ]
+}

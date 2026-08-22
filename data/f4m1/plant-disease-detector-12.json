@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "f4m1/plant-disease-detector-12",
+  "slug": "f4m1-plant-disease-detector-12",
+  "author": "f4m1",
+  "url": "https://huggingface.co/f4m1/plant-disease-detector-12",
+  "created_at": "2026-08-21T20:59:21.000Z",
+  "updated_at": "2026-08-21T21:00:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo11",
+    "plant-disease-detection",
+    "agriculture",
+    "object-detection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19167002,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "f4m1/plant-classifier-39 · Hugging Face",
+      "url": "https://huggingface.co/f4m1/plant-classifier-39",
+      "snippet": "Intended use The model predicts the plant identity before a crop-specific disease detector and recommendation system. It is a plant classifier, not a disease classifier."
+    },
+    {
+      "title": "Plant Disease Detector - a Hugging Face Space by prince12raj",
+      "url": "https://huggingface.co/spaces/prince12raj/plant-disease-detector",
+      "snippet": "🌿 Plant Disease Detector Upload a plant leaf image to instantly detect diseases using a deep-learning model trained on the PlantVillage dataset."
+    },
+    {
+      "title": "AI based real time disease diagnosis in plants using deep ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-34681-1",
+      "snippet": "The Plant Disease Diagnosis using Deep Learning (PDD-DL) framework, through Convolutional Neural Networks (CNNs), analyzes plant images to automatically diagnose plant diseases in real time."
+    },
+    {
+      "title": "GitHub - arpit0891/Plant-Disease-Detection-Web-application: AI web ...",
+      "url": "https://github.com/arpit0891/Plant-Disease-Detection-Web-application",
+      "snippet": "This web application leverages AI to identify diseases in plants, utilizing the FastAI library built atop Facebook&#x27;s deep learning platform, PyTorch. It employs an open-access dataset repository for training and validation purposes. Automated plant disease detection eases the substantial workload entailed in monitoring large agricultural expanses. The application is designed to identify ..."
+    },
+    {
+      "title": "GitHub - sanjanabhat846/AgriSense-AI: AI-powered crop disease diagnosis ...",
+      "url": "https://github.com/sanjanabhat846/AgriSense-AI/tree/main",
+      "snippet": "AgriSense AI is an end-to-end deep learning application that detects plant diseases from leaf images and provides actionable agricultural information including disease severity, symptoms, treatment, and prevention. The system uses EfficientNetB0, a 38-class PlantVillage disease classifier, combined with softmax confidence and Shannon entropy-based input gating to improve reliability on real ..."
+    }
+  ]
+}

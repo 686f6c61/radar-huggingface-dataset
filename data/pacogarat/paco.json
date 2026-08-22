@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pacogarat/paco",
+  "slug": "pacogarat-paco",
+  "author": "pacogarat",
+  "url": "https://huggingface.co/pacogarat/paco",
+  "created_at": "2026-08-22T01:07:28.000Z",
+  "updated_at": "2026-08-22T01:42:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1748638462,
+  "storage_human": "1.7 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Original Character - Paco Papagaio - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1978183371002058508",
+      "snippet": "Generate stunning anime art with the &#x27;Original Character - Paco Papagaio&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "PaCo-RL: Advancing Reinforcement Learning for Consistent Image ...",
+      "url": "https://arxiv.org/html/2512.04784v2",
+      "snippet": "In this paper, we present a comprehensive methodology, Pairwise Consistency Reinforcement Learning (PaCo-RL), to overcome the above challenges. It focuses on building a specialized, state-of-the-art consistency reward model and an efficient online RL algorithm for consistent image generation. In summary, our contributions are:"
+    },
+    {
+      "title": "Paco: Predictive Auto-configuration for Slo-constrained Large Language ...",
+      "url": "https://upsjournals.com/its/article/view/2741",
+      "snippet": "PACO combines (i) a lightweight workload forecaster, (ii) a gradient-boosted performance model that predicts windowed P95 TTFT/TPOT from workload features and a candidate configuration, learned from offline profiling, (iii) an SLO-constrained minimum-cost search over the joint space of replica count and chunked-prefill token budget, and (iv) a ..."
+    },
+    {
+      "title": "PaCo-RL Homepage - x-gengroup.github.io",
+      "url": "https://x-gengroup.github.io/HomePage_PaCo-RL/",
+      "snippet": "To achieve this, we introduce PaCo-RL, a comprehensive framework that combines a specialized consistency reward model with an efficient RL algorithm. The first component, PaCo-Reward, is a pairwise consistency evaluator trained on a large-scale dataset constructed via automated sub-figure pairing."
+    },
+    {
+      "title": "pacogarat/ana · Hugging Face",
+      "url": "https://huggingface.co/pacogarat/ana",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

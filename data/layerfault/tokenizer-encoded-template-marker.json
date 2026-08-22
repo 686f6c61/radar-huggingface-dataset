@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/tokenizer-encoded-template-marker",
+  "slug": "layerfault-tokenizer-encoded-template-marker",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/tokenizer-encoded-template-marker",
+  "created_at": "2026-08-21T21:52:56.000Z",
+  "updated_at": "2026-08-21T21:52:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokenizer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main_classes/tokenizer",
+      "snippet": "The base classes PreTrainedTokenizer and PreTrainedTokenizerFast implement the common methods for encoding string inputs in model inputs (see below) and instantiating/saving python and \"Fast\" tokenizers either from a local file or directory or from a pretrained tokenizer provided by the library (downloaded from HuggingFace&#x27;s AWS S3 ..."
+    },
+    {
+      "title": "Building a tokenizer, block by block · Hugging Face",
+      "url": "https://huggingface.co/learn/llm-course/chapter6/8",
+      "snippet": "Introduction Training a new tokenizer from an old one Fast tokenizers&#x27; special powers Fast tokenizers in the QA pipeline Normalization and pre-tokenization Byte-Pair Encoding tokenization WordPiece tokenization Unigram tokenization Building a tokenizer, block by block Tokenizers, check!"
+    },
+    {
+      "title": "How to Resolve Tokenizer Loading Failures in Transformers: Complete Fix ...",
+      "url": "https://markaicode.com/resolve-tokenizer-loading-failures-transformers/",
+      "snippet": "Fix tokenizer loading failures in Transformers with proven solutions. Resolve AutoTokenizer errors, cache issues, and model conflicts in 5 steps."
+    },
+    {
+      "title": "Tokenizing with `apply_chat_template` behaves differently from regular ...",
+      "url": "https://github.com/huggingface/transformers/issues/37686",
+      "snippet": "System Info Using the latest transformers v4.51.3 and Python 3.11.9 on Linux (but the problem is platform generic), tokenization with apply_chat_template when setting tokenize = True behaves differently from first calling apply_chat_template and then encode on the result of that. For instance, with the google/gemma-3-1b-it tokenizer in this example:"
+    },
+    {
+      "title": "transformers/docs/source/en/main_classes/tokenizer.md at main ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/main_classes/tokenizer.md",
+      "snippet": "The base classes [PreTrainedTokenizer] and [PreTrainedTokenizerFast] implement the common methods for encoding string inputs in model inputs (see below) and instantiating/saving python and \"Fast\" tokenizers either from a local file or directory or from a pretrained tokenizer provided by the library (downloaded from HuggingFace&#x27;s AWS S3 repository)."
+    }
+  ]
+}

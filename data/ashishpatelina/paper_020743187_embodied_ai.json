@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ashishpatelina/paper_020743187_embodied_ai",
+  "slug": "ashishpatelina-paper_020743187_embodied_ai",
+  "author": "ashishpatelina",
+  "url": "https://huggingface.co/ashishpatelina/paper_020743187_embodied_ai",
+  "created_at": "2026-08-22T01:07:55.000Z",
+  "updated_at": "2026-08-22T01:08:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "critical",
+    "embodied-ai",
+    "intro-method-exp-related-conclusion",
+    "latex-acl",
+    "long-detailed",
+    "mixed-active-passive",
+    "numeric-apa",
+    "structured-imrad",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2509.20021] Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2509.20021",
+      "snippet": "On the other hand, WMs empower embodied AI by building internal representations and future predictions of the external world, facilitating physical law-compliant embodied interactions. As such, this paper comprehensively explores the literature in embodied AI from basics to advances, covering both LLM driven and WM driven works."
+    },
+    {
+      "title": "Embodied AI: From LLMs to World Models - arXiv.org",
+      "url": "https://arxiv.org/html/2509.20021v1",
+      "snippet": "Abstract Embodied Artificial Intelligence (AI) is an intelligent system paradigm for achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications and driving the evolution from cyberspace to physical systems. Recent breakthroughs in Large Language Models (LLMs) and World Models (WMs) have drawn significant attention for embodied AI. On the one hand, LLMs ..."
+    },
+    {
+      "title": "PDF CSET - China s Embodied AI: A Path to AGI",
+      "url": "https://cset.georgetown.edu/wp-content/uploads/CSET-Chinas-Embodied-AI.pdf",
+      "snippet": "Executive Summary This report examines China&#x27;s embrace of embodied AI—artificial intelligence integrated with physical systems (robots, drones, vehicles, etc.)—as a critical pathway toward artificial general intelligence (AGI)."
+    },
+    {
+      "title": "Embodied-AI-Paper-TopConf - GitHub",
+      "url": "https://github.com/Songwxuan/Embodied-AI-Paper-TopConf",
+      "snippet": "🔥 CVPR2026 & ICLR2026 & NeuIPS2025 & CORL2025 & ICCV2025 & ICML2025 & RSS2025 & CVPR2025 & ICLR2025 Embodied AI Paper List Resources. [03/22/2025] We plan to organize more papers on Embodied AI from top conferences in the future and build a more comprehensive paper list. If there are any ..."
+    },
+    {
+      "title": "GitHub - HCPLab-SYSU/Embodied_AI_Paper_List: [Embodied-AI-Survey-2025 ...",
+      "url": "https://github.com/HCPLab-SYSU/Embodied_AI_Paper_List",
+      "snippet": "Then, we analyze four main research targets: 1) embodied perception, 2) embodied interaction, 3) embodied agent, and 4) sim-to-real adaptation, covering state-of-the-art methods, essential paradigms, and comprehensive datasets."
+    }
+  ]
+}

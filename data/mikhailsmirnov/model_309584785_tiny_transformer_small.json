@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mikhailsmirnov/model_309584785_tiny_transformer_small",
+  "slug": "mikhailsmirnov-model_309584785_tiny_transformer_small",
+  "author": "mikhailsmirnov",
+  "url": "https://huggingface.co/mikhailsmirnov/model_309584785_tiny_transformer_small",
+  "created_at": "2026-08-22T02:48:33.000Z",
+  "updated_at": "2026-08-22T02:48:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "co-attention",
+    "generation",
+    "kaiming-normal",
+    "lamb",
+    "multi-query",
+    "onecycle",
+    "rmsnorm",
+    "small",
+    "tiny-transformer",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - a main-mikhail Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/main-mikhail/models",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from main-mikhail"
+    },
+    {
+      "title": "Best Free TWEEN GIRL AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/tag/724341849585795640",
+      "snippet": "Explore TWEEN GIRL on TENSOR — 126 models and 5K posts."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "skolouri/TinyTransformer: Mathematics of AI - GitHub",
+      "url": "https://github.com/skolouri/TinyTransformer",
+      "snippet": "Mathematics of AI - Transformer Networks. Contribute to skolouri/TinyTransformer development by creating an account on GitHub."
+    }
+  ]
+}

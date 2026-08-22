@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "WiNE-iNEFF/MineSkinV1.1_3",
+  "slug": "wine-ineff-mineskinv1-1_3",
+  "author": "WiNE-iNEFF",
+  "url": "https://huggingface.co/WiNE-iNEFF/MineSkinV1.1_3",
+  "created_at": "2026-08-21T23:13:03.000Z",
+  "updated_at": "2026-08-21T23:58:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26799108,
+  "parameters_human": "26.8M",
+  "storage_bytes": 214475168,
+  "storage_human": "214 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · WiNE-iNEFF/Mineskin-Diffusion-v1.0 at main",
+      "url": "https://huggingface.co/WiNE-iNEFF/Mineskin-Diffusion-v1.0/blob/main/README.md",
+      "snippet": "Mineskin Diffusion v1.0 A quick and high-quality model for creating your owns Minecraft Skins This a new and rebuild version of old Minecraft Skin Diffusion models. Model have about 18 millions params, that make it a very fast and don&#x27;t need a lot of memory. Model train in 30000 images of mans and girls skins."
+    },
+    {
+      "title": "WiNE-iNEFF/MineSkinV1.1_2 · Hugging Face",
+      "url": "https://huggingface.co/WiNE-iNEFF/MineSkinV1.1_2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WiNE-iNEFF (Artsem Holub) · GitHub",
+      "url": "https://github.com/WiNE-iNEFF",
+      "snippet": "A user-friendly tool for generating high-quality text prompts for AI image generation models like Midjourney, DALL-E, Stable Diffusion, and more. Our Hugging Face demo attracts over 2,500 users mon…"
+    },
+    {
+      "title": "Domestic and Foreign Open Source AI Model Library_Free Download Open ...",
+      "url": "https://model.aibase.com/models/Minecraft",
+      "snippet": "Professional AI model library, providing 100,000+ free AI model downloads. Covering large language models, image generation models, speech recognition, etc. Supports one-click download deployment, API calls, model comparison. Domestic high-speed access, developers&#x27; preferred AI model platform."
+    },
+    {
+      "title": "WiNE-iNEFF / modelw.py - GitHub",
+      "url": "https://gist.github.com/WiNE-iNEFF/0db6a561b81c4bc8b415aa2b1c2ab01f/39e9fce59cfca0a31ef2d0c81fc1b87ea6c89921",
+      "snippet": "GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

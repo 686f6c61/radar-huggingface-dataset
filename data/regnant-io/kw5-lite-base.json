@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "regnant-io/kw5-lite-base",
+  "slug": "regnant-io-kw5-lite-base",
+  "author": "regnant-io",
+  "url": "https://huggingface.co/regnant-io/kw5-lite-base",
+  "created_at": "2026-08-21T20:11:24.000Z",
+  "updated_at": "2026-08-21T20:46:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "sw"
+  ],
+  "tags": [
+    "pytorch",
+    "llama",
+    "swahili",
+    "kiswahili",
+    "language-model",
+    "causal-lm",
+    "decoder-only",
+    "transformer",
+    "africa",
+    "tanzania",
+    "kenya",
+    "low-resource",
+    "multilingual",
+    "text-generation",
+    "base-model",
+    "conversational",
+    "sw",
+    "dataset:custom-swahili-corpus",
+    "arxiv:2001.08361",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2191251016,
+  "storage_human": "2.2 GB",
+  "base_model": "",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Regnant · Intelligence a nation can own outright",
+      "url": "https://www.regnant.io/",
+      "snippet": "Regnant is a Sovereign Artificial Intelligence research and infrastructure company, headquartered in Dar es Salaam. Sovereign language models, decision simulation, and sovereign infrastructure, owned down to the weights and the hardware."
+    },
+    {
+      "title": "Products: Regnant",
+      "url": "https://www.regnant.io/products",
+      "snippet": "Looking for KW5-Lite? The Kiswahili-first model is a research programme. It has a page of its own under Research."
+    },
+    {
+      "title": "qailunu/kw5-lite-swahili-lora · Hugging Face",
+      "url": "https://huggingface.co/qailunu/kw5-lite-swahili-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "kw5-lite-swahili-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/qailunu/kw5-lite-swahili-lora",
+      "snippet": "Run kw5-lite-swahili-lora with FriendliAI inference. KW5-Lite is a Swahili-language conversational finetune of Qwen2.5-1.5B-Instruct, trained with Unsloth to…"
+    }
+  ]
+}

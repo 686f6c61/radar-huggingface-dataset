@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "matthewjoh/model_220605654_clip_giant",
+  "slug": "matthewjoh-model_220605654_clip_giant",
+  "author": "matthewjoh",
+  "url": "https://huggingface.co/matthewjoh/model_220605654_clip_giant",
+  "created_at": "2026-08-22T01:37:25.000Z",
+  "updated_at": "2026-08-22T01:37:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "approx-gelu",
+    "batchnorm",
+    "clip",
+    "exponential",
+    "flash",
+    "generation",
+    "giant",
+    "kaiming",
+    "lamb",
+    "low-rank",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "Giant Classic Hair Clip - Free 3D Print Model - MakerWorld",
+      "url": "https://makerworld.com/en/models/1896294-giant-classic-hair-clip",
+      "snippet": "Download this free 3D print file designed by Its On My Mind. A giant snap clip No supports needed.After printing, insert the pin from one arm into the hole on the other and secure it using the C-clip.Before locking the arms, make sure you note which side the center tab is on.To change the clip size, simply scale the model, tolerances remain unaffected."
+    },
+    {
+      "title": "cs-giung/clip-vit-giant-patch14-laion2b · Hugging Face",
+      "url": "https://huggingface.co/cs-giung/clip-vit-giant-patch14-laion2b",
+      "snippet": "Contrastive Language-Image Pretraining (CLIP) model pre-trained on LAION-2B at resolution 224x224. It was introduced in the paper Learning Transferable Visual Models From Natural Language Supervision and further reproduced in the follow-up paper Reproducible scaling laws for contrastive language-image learning."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

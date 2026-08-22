@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ivanpavlovtuj/paper_002894117_cross_modal_fusion",
+  "slug": "ivanpavlovtuj-paper_002894117_cross_modal_fusion",
+  "author": "ivanpavlovtuj",
+  "url": "https://huggingface.co/ivanpavlovtuj/paper_002894117_cross_modal_fusion",
+  "created_at": "2026-08-21T22:26:27.000Z",
+  "updated_at": "2026-08-21T22:26:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cautious",
+    "cross-modal-fusion",
+    "empirical-focused",
+    "endnote",
+    "graphic-visual",
+    "impersonal",
+    "intro-method-exp-related-conclusion",
+    "long-detailed",
+    "markdown",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FUSION: Fully Integration of Vision-Language Representations for Deep ...",
+      "url": "https://arxiv.org/html/2504.09925v1",
+      "snippet": "The results indicate that our model achieves consistent and progressively enhanced cross-modal alignment throughout the processing pipeline. Despite the fundamental role of vision-language interaction in human perception, current MLLMs often fail to capture this relationship effectively."
+    },
+    {
+      "title": "GitHub - seonghyun0108/CMTFusion: CMTFusion · GitHub",
+      "url": "https://github.com/seonghyun0108/CMTFusion",
+      "snippet": "CMTFusion Seonghyun Park, An Gia Vien, and Chul Lee Official pytorch implementation for \"Cross-Modal Transformers for Infrared and Visible Image Fusion\""
+    },
+    {
+      "title": "Multimodal fusion techniques: Review, data representation, information ...",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231225014997",
+      "snippet": "The paper contributes to the ongoing research in multimodal data fusion, narrowing the field of study to text and image fusion by providing an overview of unimodal and multimodal data representation, multimodal fusion models, pre-trained models, big multimodal datasets, and various task domains."
+    },
+    {
+      "title": "PDF CVF Open Access",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Iaboni_Tri-Modal_Fusion_Transformers_for_UAV-based_Object_Detection_CVPR_2026_paper.pdf",
+      "snippet": "CVF Open Access"
+    },
+    {
+      "title": "[2411.17040] Multimodal Alignment and Fusion: A Survey",
+      "url": "https://arxiv.org/abs/2411.17040",
+      "snippet": "This survey provides a comprehensive overview of recent advances in multimodal alignment and fusion within the field of machine learning, driven by the increasing availability and diversity of data modalities such as text, images, audio, and video. Unlike previous surveys that often focus on specific modalities or limited fusion strategies, our work presents a structure-centric and method ..."
+    }
+  ]
+}

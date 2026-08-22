@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LayerFault/script-js-computed-require",
+  "slug": "layerfault-script-js-computed-require",
+  "author": "LayerFault",
+  "url": "https://huggingface.co/LayerFault/script-js-computed-require",
+  "created_at": "2026-08-21T19:04:01.000Z",
+  "updated_at": "2026-08-21T19:04:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "layerfault",
+    "security-research",
+    "model-security",
+    "synthetic",
+    "adversarial-testing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - izm1chael/layerfault: Offline-first local AI model admission ...",
+      "url": "https://github.com/izm1chael/layerfault",
+      "snippet": "Layerfault does not claim that static inspection can prove opaque neural weights are free from learned backdoors or malicious learned behaviour. Its job is to establish whether the model package you are about to use is structurally valid, intact where integrity data exists, sufficiently trusted, policy-compliant, and safe for the local runtime to admit."
+    },
+    {
+      "title": "Releases: izm1chael/layerfault - GitHub",
+      "url": "https://github.com/izm1chael/layerfault/releases",
+      "snippet": "Layerfault is an offline-first security and admission-control CLI for local AI models. It validates model structure and package contents, establishes integrity and package identity, evaluates provenance and local trust, applies operator policy, checks relevant runtime security advisories, and can block execution when those guarantees fail."
+    },
+    {
+      "title": "Computed Layer — The compute layer for AI applications",
+      "url": "https://www.computedlayer.com/",
+      "snippet": "A global mesh of GPUs behind one OpenAI-compatible API. Automatic failover, instant load balancing, up to 90% cheaper than the hyperscalers."
+    },
+    {
+      "title": "TensorFlow.js API",
+      "url": "https://js.tensorflow.org/api/latest/",
+      "snippet": "Models / Creation There are two primary ways of creating models. Sequential — Easiest, works if the models is a simple stack of each layer&#x27;s input resting on the top of the previous layer&#x27;s output. Model — Offers more control if the layers need to be wired together in graph-like ways — multiple &#x27;towers&#x27;, layers that skip a layer, etc."
+    },
+    {
+      "title": "How to load an onnx model using ONNX.js - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/71259717/how-to-load-an-onnx-model-using-onnx-js",
+      "snippet": "I am trying to import an ONNX model using onnxjs, but I get the below error: Uncaught (in promise) TypeError: cannot resolve operator &#x27;Cast&#x27; with opsets: ai.onnx v11 Below shows a code snippet fro..."
+    }
+  ]
+}

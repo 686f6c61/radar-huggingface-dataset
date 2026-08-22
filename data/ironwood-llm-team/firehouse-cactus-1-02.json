@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Ironwood-LLM-Team/Firehouse-Cactus-1.02",
+  "slug": "ironwood-llm-team-firehouse-cactus-1-02",
+  "author": "Ironwood-LLM-Team",
+  "url": "https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.02",
+  "created_at": "2026-08-22T02:17:56.000Z",
+  "updated_at": "2026-08-22T02:42:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "unsloth",
+    "gemma",
+    "google",
+    "text-generation",
+    "conversational",
+    "base_model:Ironwood-LLM-Team/Firehouse-Cactus-1.01",
+    "base_model:finetune:Ironwood-LLM-Team/Firehouse-Cactus-1.01",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7937953568,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914634962,
+  "storage_human": "15.9 GB",
+  "base_model": "Ironwood-LLM-Team/Firehouse-Cactus-1.01",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ironwood-LLM-Team/Firehouse-Cactus-1.01 · Hugging Face",
+      "url": "https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.01",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ironwood-LLM-Team/Firehouse-Cactus-1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.0/tree/main",
+      "snippet": "Ironwood-LLM-Team / Firehouse-Cactus-1. like 0 Text Generation MLX Safetensors gemma4 unsloth gemma google conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Firehouse Cactus 1.0 by Ironwood-LLM-Team - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Ironwood-LLM-Team%2FFirehouse-Cactus-1.0,6JUszgNx3wpJ8nGFoFKamj",
+      "snippet": "Firehouse Cactus 1.0 is an open-source 7.9b LLM by Ironwood-LLM-Team. VRAM 15.9GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "GitHub - kevinhirsch/firehouse: Self-hosted AI workspace.",
+      "url": "https://github.com/kevinhirsch/firehouse",
+      "snippet": "Security Notes Firehouse is a self-hosted workspace with powerful local tools (shell, uploads, model downloads, web research, email/calendar, API tokens) — treat it like an admin console. The essentials: Keep AUTH_ENABLED=true for any network-accessible deployment, and put it behind HTTPS + a trusted reverse proxy before exposing it."
+    },
+    {
+      "title": "GitHub - cactus-compute/cactus: Quantization, kernels, runtime and ...",
+      "url": "https://github.com/cactus-compute/cactus",
+      "snippet": "Quantization, kernels, runtime and inference engine for mobiles, wearables, smart home and robots. - cactus-compute/cactus"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bi199797/VR-egodex-qwen36-27b-lora-caption-boundary",
+  "slug": "bi199797-vr-egodex-qwen36-27b-lora-caption-boundary",
+  "author": "bi199797",
+  "url": "https://huggingface.co/bi199797/VR-egodex-qwen36-27b-lora-caption-boundary",
+  "created_at": "2026-08-21T23:15:43.000Z",
+  "updated_at": "2026-08-21T23:18:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "video-temporal-localization",
+    "egocentric",
+    "qwen3_5",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 821208055,
+  "storage_human": "821 MB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.6-27B Complete Guide: 77.2% SWE-bench in a 27B Dense Model (2026)",
+      "url": "https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/",
+      "snippet": "Everything about Qwen 3.6-27B: 77.2% SWE-bench Verified, beats the 397B flagship, runs on a Mac. Architecture, benchmarks, and how to use it."
+    },
+    {
+      "title": "Adapter Models for Qwen/Qwen3.6-27B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:Qwen/Qwen3.6-27B",
+      "snippet": "Explore machine learning models. samscrack/Qwen3.6-27B-Opus-CoT-S1-Hermes-S2-SFT"
+    },
+    {
+      "title": "wangzhang/Qwen3.6-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-27B: 27B Model Beats 397B on Coding (2026)",
+      "url": "https://www.buildfastwithai.com/blogs/qwen3-6-27b-review-2026",
+      "snippet": "The 397B model Qwen3.6-27B just outperformed (Qwen3.5-397B-A17B) only activates 17B parameters per token despite its enormous total size. MoE is efficient at scale but introduces routing complexity and makes local deployment extremely hardware-hungry."
+    },
+    {
+      "title": "Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use",
+      "url": "https://insiderllm.com/guides/qwen-3-6-local-ai-guide/",
+      "snippet": "Qwen 3.6 landed in two open-weight flavors: 27B dense and 35B-A3B MoE. Benchmarks, hardware fit, and which variant to run on your GPU."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MaximKuf/paper_003268539_cross_modal_fusion",
+  "slug": "maximkuf-paper_003268539_cross_modal_fusion",
+  "author": "MaximKuf",
+  "url": "https://huggingface.co/MaximKuf/paper_003268539_cross_modal_fusion",
+  "created_at": "2026-08-22T02:47:56.000Z",
+  "updated_at": "2026-08-22T02:48:02.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "argumentative",
+    "bulleted",
+    "cross-modal-fusion",
+    "enthusiastic",
+    "highlight-bullet",
+    "intro-method-exp-related-conclusion",
+    "mixed-active-passive",
+    "numeric-bibtex",
+    "plain-text",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2505.06536] TACFN: Transformer-based Adaptive Cross-modal Fusion ...",
+      "url": "https://arxiv.org/abs/2505.06536",
+      "snippet": "To this end, we design an innovative Transformer-based Adaptive Cross-modal Fusion Network (TACFN). Specifically, for the redundant features, we make one modality perform intra-modal feature selection through a self-attention mechanism, so that the selected features can adaptively and efficiently interact with another modality."
+    },
+    {
+      "title": "Cross-modal feature alignment and fusion with ... - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0950705125010652",
+      "snippet": "This restricts the learning of modality features and inhibits the full exploitation of potential cross-modal information. To tackle the above issues, we propose a multimodal recommendation model, dubbed CLAM, focusing on cross-modal feature alignment and fusion."
+    },
+    {
+      "title": "GaussianFusion: Unified 3D Gaussian Representation for Multi-Modal ...",
+      "url": "https://arxiv.org/abs/2607.00746",
+      "snippet": "However, the discrete grid representation of BEV leads to significant detail loss and limits feature alignment and cross-modal information interaction in multimodal fusion perception. In this work, we break from the conventional BEV paradigm and propose a new universal framework for multi-modal fusion based on 3D Gaussian representation."
+    },
+    {
+      "title": "A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S1546221824005216",
+      "snippet": "This paper comprehensively reviews existing methods based on multi-modal fusion techniques and completes a detailed and in-depth analysis. According to the data fusion stage, multi-modal fusion has four primary methods: early fusion, deep fusion, late fusion, and hybrid fusion."
+    },
+    {
+      "title": "Awesome-Multimodal-Papers | A curated list of awesome Multimodal studies.",
+      "url": "https://friedrichor.github.io/Awesome-Multimodal-Papers/",
+      "snippet": "A curated list of awesome Multimodal studies. Awesome-Multimodal-Papers A curated list of awesome Multimodal studies. Contribution If you have published a high-quality paper or come across one that you think is valuable, feel free to contribute! To submit a paper, please open an issue and include the following information in the specified format: Submission Format ``` { \"title\": paper title ..."
+    }
+  ]
+}

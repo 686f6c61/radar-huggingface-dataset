@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yashbleh/Mandlee-EfficientNetV2",
+  "slug": "yashbleh-mandlee-efficientnetv2",
+  "author": "yashbleh",
+  "url": "https://huggingface.co/yashbleh/Mandlee-EfficientNetV2",
+  "created_at": "2026-08-21T21:28:16.000Z",
+  "updated_at": "2026-08-21T21:28:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EfficientNetV2: Smaller Models and Faster Training - arXiv.org",
+      "url": "https://arxiv.org/pdf/2104.00298v2",
+      "snippet": "Although our EfficientNetV2 models are optimized for train-ing, they also perform well for inference, because training speed often correlates with inference speed. Figure 5 visu-alizes the model size, FLOPs, and inference latency based on Table 7."
+    },
+    {
+      "title": "[2104.00298] EfficientNetV2: Smaller Models and Faster Training",
+      "url": "https://arxiv.org/abs/2104.00298",
+      "snippet": "This paper introduces EfficientNetV2, a new family of convolutional networks that have faster training speed and better parameter efficiency than previous models. To develop this family of models, we use a combination of training-aware neural architecture search and scaling, to jointly optimize training speed and parameter efficiency. The models were searched from the search space enriched ..."
+    },
+    {
+      "title": "GitHub - da2so/efficientnetv2",
+      "url": "https://github.com/da2so/efficientnetv2",
+      "snippet": "EfficientNetV2 are a family of image classification models, which achieve better parameter efficiency and faster training speed than prior arts. Built upon EfficientNetV1, our EfficientNetV2 models use neural architecture search (NAS) to jointly optimize model size and training speed, and are scaled up in a way for faster training and inference speed. Here are the comparison on parameters and ..."
+    },
+    {
+      "title": "EfficientNetV2: Smaller Models and Faster Training - Google Research",
+      "url": "https://research.google/pubs/efficientnetv2-smaller-models-and-faster-training/",
+      "snippet": "This paper introduces EfficientNetV2, a new family of convolutional networks that have faster training speed and better parameter efficiency than previous models."
+    },
+    {
+      "title": "PDF EfficientNetV2: Smaller Models and Faster Training",
+      "url": "https://proceedings.mlr.press/v139/tan21a/tan21a.pdf",
+      "snippet": "Although our EfficientNetV2 models are optimized for train-ing, they also perform well for inference, because training speed often correlates with inference speed. Figure 5 visu-alizes the model size, FLOPs, and inference latency based on Table 7."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI",
+  "slug": "xmarre-minimax-h3-pruned-ref-delta-fused-r1024-comfyui",
+  "author": "xmarre",
+  "url": "https://huggingface.co/xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI",
+  "created_at": "2026-08-21T16:25:24.000Z",
+  "updated_at": "2026-08-22T00:31:38.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "safetensors",
+    "minimax-h3",
+    "ref2va",
+    "fl2va",
+    "merge",
+    "int8",
+    "convrot",
+    "synchronized-audio-video",
+    "image-text-to-video",
+    "experimental",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:merge:Comfy-Org/MiniMax-H3",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:merge:MiniMaxAI/MiniMax-H3",
+    "base_model:diffusers-modular/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024",
+    "base_model:merge:diffusers-modular/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89889418346,
+  "storage_human": "89.9 GB",
+  "base_model": "diffusers-modular/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024, Comfy-Org/MiniMax-H3, MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI",
+      "snippet": "Instructions to use xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 ComfyUI Workflows, Setup & Tutorial | MiniMax Design",
+      "url": "https://design.minimax.io/tools/minimax-h3-comfyui",
+      "snippet": "MiniMax H3 ComfyUI Workflow Examples Explore how different H3 workflows organize prompts, frames, references, motion, camera direction, and native audio for reusable AI video production."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax H3 Model Files",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Official MiniMax H3 repositories, ComfyUI model files, precision variants, folder paths, and GGUF status."
+    }
+  ]
+}

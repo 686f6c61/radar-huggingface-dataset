@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jrmitchell/model_213005926_clip_xlarge",
+  "slug": "jrmitchell-model_213005926_clip_xlarge",
+  "author": "jrmitchell",
+  "url": "https://huggingface.co/jrmitchell/model_213005926_clip_xlarge",
+  "created_at": "2026-08-21T20:00:07.000Z",
+  "updated_at": "2026-08-21T20:00:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "clip",
+    "cosine",
+    "grouped-query",
+    "mish",
+    "multitask",
+    "rmsnorm",
+    "sgd",
+    "tensor-fusion",
+    "xavier-uniform",
+    "xlarge",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of every free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Model Variants and Parameters | openai/CLIP | DeepWiki",
+      "url": "https://deepwiki.com/openai/CLIP/3.3-model-variants-and-parameters",
+      "snippet": "Relevant source files Purpose This document provides detailed information about the different CLIP model variants available in the repository, their architectures, parameters, and performance characteristics. It covers both ResNet and Vision Transformer (ViT) based models, their configuration details, and how to identify and use specific variants."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

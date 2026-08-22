@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Felixinoue/paper_010705592_few_shot_multimodal",
+  "slug": "felixinoue-paper_010705592_few_shot_multimodal",
+  "author": "Felixinoue",
+  "url": "https://huggingface.co/Felixinoue/paper_010705592_few_shot_multimodal",
+  "created_at": "2026-08-21T21:24:26.000Z",
+  "updated_at": "2026-08-21T21:24:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "compact",
+    "empirical-focused",
+    "few-shot-multimodal",
+    "impersonal",
+    "intro-problem-solution-validation-future",
+    "long-detailed",
+    "markdown",
+    "measured",
+    "numeric-bibtex",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Sunny5250/CIF: [AAAI 2026] Offical implementation of ...",
+      "url": "https://github.com/Sunny5250/CIF",
+      "snippet": "This challenge can be mitigated by extracting structural commonality from a small number of training samples. In this paper, we propose a novel few-shot unsupervised multimodal industrial anomaly detection method based on structural commonality, CIF (C ommonality I n F ew)."
+    },
+    {
+      "title": "Commonality in Few: Few-Shot Multimodal Anomaly Detection via ...",
+      "url": "https://arxiv.org/abs/2511.05966",
+      "snippet": "Few-shot multimodal industrial anomaly detection is a critical yet underexplored task, offering the ability to quickly adapt to complex industrial scenarios. In few-shot settings, insufficient training samples often fail to cover the diverse patterns present in test samples. This challenge can be mitigated by extracting structural commonality from a small number of training samples. In this ..."
+    },
+    {
+      "title": "[2301.06267] Multimodality Helps Unimodality: Cross-Modal Few-Shot ...",
+      "url": "https://arxiv.org/abs/2301.06267",
+      "snippet": "The ability to quickly learn a new task with minimal instruction - known as few-shot learning - is a central aspect of intelligent agents. Classical few-shot benchmarks make use of few-shot samples from a single modality, but such samples may not be sufficient to characterize an entire concept class. In contrast, humans use cross-modal information to learn new concepts efficiently. In this ..."
+    },
+    {
+      "title": "Awesome Few-Shot Image Generation - GitHub",
+      "url": "https://github.com/bcmi/Awesome-Few-Shot-Image-Generation",
+      "snippet": "Awesome Few-Shot Image Generation A curated list of resources including papers, datasets, and relevant links pertaining to few-shot image generation. Since few-shot image generation is a very broad concept, there are various experimental settings and research lines in the realm of few-shot image generation."
+    },
+    {
+      "title": "Few-Shot Learning Based on Multimodal Information Processing",
+      "url": "https://ieeexplore.ieee.org/document/10981794/",
+      "snippet": "Few-shot learning aims to develop models with strong generalization capabilities using a small number of training samples. However, most learning methods rely solely on the visual features of a few samples to represent entire categories, leading to poor category representativeness. In contrast, humans can utilize multimodal information to learn category features, thereby making them more ..."
+    }
+  ]
+}

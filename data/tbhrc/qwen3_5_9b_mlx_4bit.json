@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tbhrc/qwen3_5_9b_mlx_4bit",
+  "slug": "tbhrc-qwen3_5_9b_mlx_4bit",
+  "author": "tbhrc",
+  "url": "https://huggingface.co/tbhrc/qwen3_5_9b_mlx_4bit",
+  "created_at": "2026-08-22T02:23:10.000Z",
+  "updated_at": "2026-08-22T02:23:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.5",
+    "vision-language-model",
+    "quantized",
+    "4bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1855937776,
+  "parameters_human": "1.86B",
+  "storage_bytes": 5970210415,
+  "storage_human": "6.0 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwen3.5-9B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.5-9B-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.5 MLX on Apple Silicon (2026): 35B-A3B in 19.5GB, 9B at 25-35 ...",
+      "url": "https://willitrunai.com/blog/qwen-3-5-mlx-apple-silicon-guide",
+      "snippet": "Qwen 3.5 35B-A3B MLX 4-bit uses ~19.5GB; 9B fits 16GB Macs at 25-35 tok/s. Full MLX memory + tok/s per variant, M4 16GB to M3 Ultra 512GB."
+    },
+    {
+      "title": "Installing Qwen 3.5 on Apple Silicon Using MLX for 2X Performance",
+      "url": "https://dev.to/thefalkonguy/installing-qwen-35-on-apple-silicon-using-mlx-for-2x-performance-37ma",
+      "snippet": "Enter Qwen 3.5 MLX in the search field. Select a model (0.8B ,2B ,4B ,9B) explicitly labeled as MLX. - By default, LLM Studio is capable of displaying which models your device is capable of running. Alternatives This method uses MLX to run Qwen 3.5 models directly on Apple Silicon hardware."
+    },
+    {
+      "title": "Qwen3.5-9B-MLX-4bit: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3.5-9b-mlx-4bit-mlx-community",
+      "snippet": "Overview Qwen3.5-9B-MLX-4bit is a quantized vision-language model optimized exclusively for Apple Silicon. It converts the original Qwen/Qwen3.5-9B to 4-bit quantization with a group size of 64 using the MLX framework, reducing the model to approximately 5.6 GB on disk while maintaining image-to-text reasoning capabilities. Created by mlx-community, this model uses MLX SafeTensors format and ..."
+    }
+  ]
+}
