@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Rootport/Nz-LTX25-weights",
+  "slug": "rootport-nz-ltx25-weights",
+  "author": "Rootport",
+  "url": "https://huggingface.co/Rootport/Nz-LTX25-weights",
+  "created_at": "2026-08-18T15:04:09.000Z",
+  "updated_at": "2026-08-23T02:33:39.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ltx-2",
+    "ltx-2.5",
+    "ltxv",
+    "text-to-video",
+    "aviutl2",
+    "ja",
+    "en",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:quantized:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21004025600,
+  "parameters_human": "21.00B",
+  "storage_bytes": 17551585678,
+  "storage_human": "17.6 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rootport/Nz-LTX23-weights · Hugging Face",
+      "url": "https://huggingface.co/Rootport/Nz-LTX23-weights",
+      "snippet": "English summary Model weights for Nz-LTX23-backend, the video-generation backend of Nz-LTX23, a plugin for the video editor AviUtl2."
+    },
+    {
+      "title": "Rootport-AI · GitHub",
+      "url": "https://github.com/Rootport-AI/",
+      "snippet": "A simple GUI to run the open-weight VLM \"DeepSeek-OCR\". To simplify installation, it was ported to Windows natively using WPF + WebView2. Python 14 2"
+    },
+    {
+      "title": "LTX 2.5 Free: Try the #1 Open-Source AI Video Generator",
+      "url": "https://ltx25.net/",
+      "snippet": "Try LTX 2.5, the open-weights AI video model from LTX (Lightricks), to turn text or images into 4K video with synced audio. Generate your first clip free now."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

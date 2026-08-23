@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "longlv2k/OCRTranslatorModel",
+  "slug": "longlv2k-ocrtranslatormodel",
+  "author": "longlv2k",
+  "url": "https://huggingface.co/longlv2k/OCRTranslatorModel",
+  "created_at": "2026-08-22T19:42:32.000Z",
+  "updated_at": "2026-08-22T19:45:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7504568320,
+  "parameters_human": "7.50B",
+  "storage_bytes": 4650227216,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "longlv2k (longlevan) - Hugging Face",
+      "url": "https://huggingface.co/longlv2k",
+      "snippet": "User profile of longlevan on Hugging Face"
+    },
+    {
+      "title": "GitHub - Le-Van-Long2k/translate-tool: Image translator tool",
+      "url": "https://github.com/Le-Van-Long2k/translate-tool",
+      "snippet": "Image translator tool. Contribute to Le-Van-Long2k/translate-tool development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - BryanWongCK/OCR-Translator: Offline and locally hosted LLM ...",
+      "url": "https://github.com/BryanWongCK/OCR-Translator",
+      "snippet": "OCR Translator is an entirely offline local JP to EN translation tool that uses OCR + self-hosted LLMs. There are currently 2 versions: Vision-based LLM OCR using a vision-capable LLM (default: Qwen3-VL-8B) RapidOCR with LLM using RapidOCR to extract text before translated by an LLM (default: Qwen2.5-7B) The tool supports selectable screen region translation and customizable mapped translation ..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-OCR · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Long2Text - Long Screenshot to Text | AI-Powered OCR",
+      "url": "https://long2text.com/",
+      "snippet": "Convert long screenshots to formatted text instantly. Specialized in chat records, meeting transcripts, and articles. Supports Chinese & English with markdown output."
+    }
+  ]
+}

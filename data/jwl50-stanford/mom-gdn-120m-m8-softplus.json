@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jwl50-stanford/mom-gdn-120m-m8-softplus",
+  "slug": "jwl50-stanford-mom-gdn-120m-m8-softplus",
+  "author": "jwl50-stanford",
+  "url": "https://huggingface.co/jwl50-stanford/mom-gdn-120m-m8-softplus",
+  "created_at": "2026-08-22T20:50:33.000Z",
+  "updated_at": "2026-08-22T20:52:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mixture-of-memories",
+    "gated-deltanet",
+    "language-modeling",
+    "pytorch-lightning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1573695099,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jwl50-stanford/gdn-paper-120m-fixed-d256-fp32res-gpt2init-20k-r1 ...",
+      "url": "https://huggingface.co/jwl50-stanford/gdn-paper-120m-fixed-d256-fp32res-gpt2init-20k-r1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gdn-paper-120m-fixed-qk128-v64-fp32res-gpt2init-20k-r1",
+      "url": "https://huggingface.co/jwl50-stanford/gdn-paper-120m-fixed-qk128-v64-fp32res-gpt2init-20k-r1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "The 2025 AI Index Report - Stanford HAI",
+      "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report?%29",
+      "snippet": "The AI Index Report tracks, collates, distills, and visualizes data relating to artificial intelligence. Its mission is to provide unbiased, rigorous, and comprehensive data for policymakers, researchers, journalists, executives, and the general public to develop a deeper understanding of the complex field of AI."
+    },
+    {
+      "title": "PDF hai.stanford.edu",
+      "url": "https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf",
+      "snippet": "Artiflcial Intelligence Index Report 2025 1 Welcome to the eighth edition of the AI Index report. The 2025 Index is our most comprehensive to date and arrives at an important mome"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "harshsuthar2005/tds-carbon-card",
+  "slug": "harshsuthar2005-tds-carbon-card",
+  "author": "harshsuthar2005",
+  "url": "https://huggingface.co/harshsuthar2005/tds-carbon-card",
+  "created_at": "2026-08-22T19:57:46.000Z",
+  "updated_at": "2026-08-22T19:58:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "24f2005112/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/24f2005112/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8."
+    },
+    {
+      "title": "Bhagwat8978/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/Bhagwat8978/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA H100 (3 GPUs) Training Mode: fine-tuning Region: us-east1 GPU Hours: 459.5h (PUE: 1.45) Total Energy: 1399.1775 kWh CO₂ Emissions: 587.655 kg CO₂eq"
+    },
+    {
+      "title": "arXiv.org",
+      "url": "https://arxiv.org/pdf/2508.16672",
+      "snippet": "arXiv.org"
+    },
+    {
+      "title": "carbontxt.org",
+      "url": "https://carbontxt.org/ai-model-cards",
+      "snippet": "AI Model Sustainability Directory Using the carbon.txt syntax and validator, we have extracted the sustainability data from over 2500 AI model cards from Hugging Face that are listed with co2_eq_emissions metadata."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    }
+  ]
+}

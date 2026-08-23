@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Mahesh111000/qwen3-8b-hanabi-tinker-step105",
+  "slug": "mahesh111000-qwen3-8b-hanabi-tinker-step105",
+  "author": "Mahesh111000",
+  "url": "https://huggingface.co/Mahesh111000/qwen3-8b-hanabi-tinker-step105",
+  "created_at": "2026-08-22T23:06:33.000Z",
+  "updated_at": "2026-08-22T23:07:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939430,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mahesh111000/qwen3-8b-hanabi-grpo-step_101 · Hugging Face",
+      "url": "https://huggingface.co/Mahesh111000/qwen3-8b-hanabi-grpo-step_101",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "Mahesh111000/hanabi-qwen3-8b-rl-step100 · Hugging Face",
+      "url": "https://huggingface.co/Mahesh111000/hanabi-qwen3-8b-rl-step100",
+      "snippet": "Qwen3-8B trained with RL on Hanabi belief-state tracking + move rating. This is the best-validating checkpoint produced across every run in this project (held-out val reward 1.3429)."
+    },
+    {
+      "title": "qwen3-8b-hanabi-grpo-step_101 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Mahesh111000/qwen3-8b-hanabi-grpo-step_101",
+      "snippet": "Deploy qwen3-8b-hanabi-grpo-step_101 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bosonai/Orze-ASR-3Way",
+  "slug": "bosonai-orze-asr-3way",
+  "author": "bosonai",
+  "url": "https://huggingface.co/bosonai/Orze-ASR-3Way",
+  "created_at": "2026-08-23T00:06:04.000Z",
+  "updated_at": "2026-08-23T00:43:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "audio",
+    "asr",
+    "ensemble",
+    "orze",
+    "automatic-speech-recognition",
+    "en",
+    "dataset:hf-audio/open-asr-leaderboard",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bosonai/Qwen3-ASR-1.7B-hf-orze · Hugging Face",
+      "url": "https://huggingface.co/bosonai/Qwen3-ASR-1.7B-hf-orze",
+      "snippet": "This is a self-contained, merged English ASR specialization of Qwen/Qwen3-ASR-1.7B-hf, selected by Orze experiments for the Open ASR Leaderboard. It loads directly with native Transformers; no PEFT adapter or custom code is required."
+    },
+    {
+      "title": "bosonai (Boson AI) - Hugging Face",
+      "url": "https://huggingface.co/bosonai",
+      "snippet": "bosonai/higgs-audio-v3-8b-stt-v2 Automatic Speech Recognition • 9B • May 22 • 6.4k • 14 Higgs Audio Generation Audio Generation Model Text-to-Speech • 5B • Updated Jul 9 • 234k • 720 Text-to-Speech • 6B • Updated Jun 25 • 566k • 693 Feature Extraction • 0.2B • Updated May 30 • 133k • • 59"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "Qwen3-ASR is an open-source series of ASR models developed by the Qwen team at Alibaba Cloud, supporting stable multilingual speech/music/song recognition, language detection and timestamp prediction. - QwenLM/Qwen3-ASR"
+    },
+    {
+      "title": "Boson AI | AI for Humans",
+      "url": "https://www.boson.ai/",
+      "snippet": "Boson AI builds voice agents for business-critical work — speech-to-speech models, real-time avatars, and production TTS in 100+ languages."
+    },
+    {
+      "title": "Boson AI - GitHub",
+      "url": "https://github.com/boson-ai",
+      "snippet": "Large Models for Everyone. Boson AI has 12 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

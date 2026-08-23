@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "thunderboltc/mbart50-sanlish-to-bangla_1934_lr2e5_bleufixed",
+  "slug": "thunderboltc-mbart50-sanlish-to-bangla_1934_lr2e5_bleufixed",
+  "author": "thunderboltc",
+  "url": "https://huggingface.co/thunderboltc/mbart50-sanlish-to-bangla_1934_lr2e5_bleufixed",
+  "created_at": "2026-08-22T17:35:00.000Z",
+  "updated_at": "2026-08-22T20:10:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:facebook/mbart-large-50-many-to-many-mmt",
+    "base_model:finetune:facebook/mbart-large-50-many-to-many-mmt",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 611129542,
+  "parameters_human": "611.1M",
+  "storage_bytes": 171099647673,
+  "storage_human": "171.1 GB",
+  "base_model": "facebook/mbart-large-50-many-to-many-mmt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thunderboltc/mbart50-sanlish-to-bangla_1934 · Hugging Face",
+      "url": "https://huggingface.co/thunderboltc/mbart50-sanlish-to-bangla_1934",
+      "snippet": "mbart50-sanlish-to-bangla_1934 This model is a fine-tuned version of facebook/mbart-large-50-many-to-many-mmt on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "thunderboltc/mbart50-sanlish-to-bangla · Hugging Face",
+      "url": "https://huggingface.co/thunderboltc/mbart50-sanlish-to-bangla",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mbart50 Ipa To Bangla 1934 Lr2 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/thunderboltc/mbart50_ipa-to-bangla_1934_lr2",
+      "snippet": "Registry entry for model Mbart50 Ipa To Bangla 1934 Lr2; source metadata pending."
+    },
+    {
+      "title": "mbart50 · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/mbart50",
+      "snippet": "🌍 AI-powered multilingual text translator built with mBART50. Fine-tuned on OPUS Books & IIT Bombay datasets to support English ↔ Spanish, French, Italian, Portuguese, and Hindi."
+    },
+    {
+      "title": "Enhancing Neural Machine Translation with Fine-Tuned mBART50 ... - IIETA",
+      "url": "https://iieta.org/journals/isi/paper/10.18280/isi.290304",
+      "snippet": "In this paper, the resilience of the self-supervised multilingual sequence-to-sequence pre-trained model (mBART50) were investigated when fine-tuned with small amounts of high-quality bitext or large amounts of noisy parallel data (Kazakh-Russian)."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "konradjr007/NaviDC-OCR-GGUF",
+  "slug": "konradjr007-navidc-ocr-gguf",
+  "author": "konradjr007",
+  "url": "https://huggingface.co/konradjr007/NaviDC-OCR-GGUF",
+  "created_at": "2026-08-22T19:50:05.000Z",
+  "updated_at": "2026-08-22T19:50:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "ocr",
+    "multimodal",
+    "document-parsing",
+    "gguf",
+    "llama.cpp",
+    "qwen2.5-vl",
+    "table-recognition",
+    "formula-recognition",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - caipeng328/NaviDC-OCR",
+      "url": "https://github.com/caipeng328/NaviDC-OCR",
+      "snippet": "NaviDC-OCR is a lightweight (~1.2B parameters), open-source Vision-Language Model designed specifically for document understanding. Unlike existing approaches that primarily focus on either digital documents or camera-captured documents, NaviDC-OCR provides a unified framework for both scenarios ..."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "QuantFactory/OCRonos-GGUF · Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/OCRonos-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NaviDC-OCR: Navigating Document Parsing Across Digital and Camera ...",
+      "url": "https://arxiv.org/html/2608.12898v2",
+      "snippet": "Furthermore, a content-structure decoupled learning strategy is developed to explicitly model formula grammars and table structures, enabling more effective structured representation learning. Extensive experiments demonstrate that NaviDC-OCR achieves state-of-the-art performance across diverse document parsing benchmarks."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

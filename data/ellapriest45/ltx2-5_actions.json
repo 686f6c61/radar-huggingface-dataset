@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "EllaPriest45/LTX2.5_actions",
+  "slug": "ellapriest45-ltx2-5_actions",
+  "author": "EllaPriest45",
+  "url": "https://huggingface.co/EllaPriest45/LTX2.5_actions",
+  "created_at": "2026-08-18T07:04:23.000Z",
+  "updated_at": "2026-08-18T07:05:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 8,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657825849,
+  "storage_human": "658 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EllaPriest45 (Ella G. Priest) - Hugging Face",
+      "url": "https://huggingface.co/EllaPriest45/models",
+      "snippet": "User profile of Ella G. Priest on Hugging Face"
+    },
+    {
+      "title": "EllaPriest45/LTX2.5_actions · Discussions - Hugging Face",
+      "url": "https://huggingface.co/EllaPriest45/LTX2.5_actions/discussions",
+      "snippet": "EllaPriest45 / LTX2.5_actions like 7 Model card FilesFiles and versions xet Community Copy to bucket new New discussion New pull request All Discussions Pull requests View closed (0) Sort: Recently created"
+    },
+    {
+      "title": "LTX-2.5: LTX&#x27;s Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX-2.5 is the newest version of LTX, an open-weights world model for video generation. It&#x27;s built as a stronger foundation, not just a new tool, that teams can build on, fine-tune, and deploy themselves."
+    },
+    {
+      "title": "LTX-2: Production-Grade AI Video Generation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2",
+      "snippet": "LTX-2 is a pro AI video model for production. It offers precise control, native 4K, high frame rates and proven performance for long-form creative tasks."
+    },
+    {
+      "title": "GitHub - Lightricks/LTX-Video: Official repository for LTX-Video",
+      "url": "https://github.com/Lightricks/LTX-Video",
+      "snippet": "Official repository for LTX-Video. Contribute to Lightricks/LTX-Video development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "GalaxyS2Gordon/Qwen3.8-27B-GGUF",
+  "slug": "galaxys2gordon-qwen3-8-27b-gguf",
+  "author": "GalaxyS2Gordon",
+  "url": "https://huggingface.co/GalaxyS2Gordon/Qwen3.8-27B-GGUF",
+  "created_at": "2026-08-23T02:50:01.000Z",
+  "updated_at": "2026-08-23T02:50:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "unsloth",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 1053655307648,
+  "storage_human": "1053.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Run Qwen 3.8 27B Locally: Ollama, GGUF, and ... - yottalabs.ai",
+      "url": "https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, and 262k context. Which quant fits your VRAM, the Ollama and GGUF routes, and how to be generating tokens today."
+    },
+    {
+      "title": "z-lab/Qwen3.8-27B-DFlash2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B GGUF: Which Quant to Download for Your GPU",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-gguf",
+      "snippet": "Qwen3.8-27B GGUF sizes, verified Aug 15 2026: Q4_K_M 17.1GB for 24GB, IQ4_XS for 16GB, 2-bit for 12GB, plus the KV-cache trick and the template trap."
+    },
+    {
+      "title": "Qwen3.8-27B-UD-Q2_K_XL.gguf · unsloth/Qwen3.8-27B-GGUF at main",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF/blob/main/Qwen3.8-27B-UD-Q2_K_XL.gguf",
+      "snippet": "like 351 Follow Unsloth AI 30.9k GGUF qwen3_5 unsloth imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community 9 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "It is the GGUF export of the same abliterated build as Qwen3.8-27B-Uncensored-FP8, re-packaged for llama.cpp-class local runtimes, and it inherits the base model&#x27;s Apache 2.0 license and its native 262,144-token context."
+    }
+  ]
+}

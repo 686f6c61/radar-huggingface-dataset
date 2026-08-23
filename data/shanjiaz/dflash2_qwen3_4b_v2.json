@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "shanjiaz/dflash2_qwen3_4b_v2",
+  "slug": "shanjiaz-dflash2_qwen3_4b_v2",
+  "author": "shanjiaz",
+  "url": "https://huggingface.co/shanjiaz/dflash2_qwen3_4b_v2",
+  "created_at": "2026-08-22T22:17:58.000Z",
+  "updated_at": "2026-08-22T23:11:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dflash2",
+    "custom_code",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1410272512,
+  "parameters_human": "1.41B",
+  "storage_bytes": 5350073009,
+  "storage_human": "5.4 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "z-lab/Qwen3-4B-DFlash-b16 · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3-4B-DFlash-b16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DFlash: Block Diffusion for Flash Speculative Decoding",
+      "url": "https://github.com/z-lab/dflash",
+      "snippet": "DFlash is a lightweight block diffusion model designed for speculative decoding. It enables efficient and high-quality parallel drafting. Use the Transformers or MLX backends below for their explicitly listed model families. Other checkpoints can be benchmarked through an OpenAI-compatible SGLang or ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "DFlash 2: Keep Drafting Parallel — Inco AI",
+      "url": "https://inco.ai/blog/dflash2/",
+      "snippet": "DFlash 2 is the successor to our widely deployed parallel drafter: close to 3× the speed of autoregressive decoding, with the same output. Drafters for Qwen3.8-27B and Meta&#x27;s Muse Glimmer are out today."
+    }
+  ]
+}

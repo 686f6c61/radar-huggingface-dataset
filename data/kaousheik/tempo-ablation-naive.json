@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Kaousheik/tempo-ablation-naive",
+  "slug": "kaousheik-tempo-ablation-naive",
+  "author": "Kaousheik",
+  "url": "https://huggingface.co/Kaousheik/tempo-ablation-naive",
+  "created_at": "2026-08-22T20:36:54.000Z",
+  "updated_at": "2026-08-22T20:40:26.000Z",
+  "license": "nvidia-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "audioflamingo3",
+    "audio",
+    "timestamping",
+    "temporal-grounding",
+    "speaker-diarization",
+    "dense-audio-captioning",
+    "music-captioning",
+    "large-audio-language-model",
+    "audio-text-to-text",
+    "dataset:Kaousheik/tempo",
+    "base_model:nvidia/audio-flamingo-3",
+    "base_model:finetune:nvidia/audio-flamingo-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8271523328,
+  "parameters_human": "8.27B",
+  "storage_bytes": 16554791215,
+  "storage_human": "16.6 GB",
+  "base_model": "nvidia/audio-flamingo-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Research - kaousheik-26.github.io",
+      "url": "https://kaousheik-26.github.io/research/",
+      "snippet": "An open audio-visual model built to understand long and complex videos, jointly reasoning over speech, sound, and what&#x27;s on screen across extended temporal contexts — advancing open audio-visual intelligence beyond short clips."
+    },
+    {
+      "title": "Kaousheik (Jayakumar) - Hugging Face",
+      "url": "https://huggingface.co/Kaousheik",
+      "snippet": "User profile of Jayakumar on Hugging Face Recent Activity updated a datasetabout 3 hours ago Kaousheik/temporal-lalm published a datasetabout 3 hours ago Kaousheik/temporal-lalm updated a model6 months ago Kaousheik/hanabi-gpt-oss View all activity"
+    },
+    {
+      "title": "Kaousheik Jayakumar",
+      "url": "https://kaousheik-26.github.io/",
+      "snippet": "I am a 1st year Master&#x27;s student in Computer Science at University of Maryland, College Park. I work audio-visual understanding at Gamma Lab and PIRL lab under the guidance of Prof. Dinesh Manocha and Prof. Ramani Duraiswami I completed my undergrad from IIT Madras where I had the opportunity to work with Prof. Umesh at the SPRING Lab on multilingual ASR systems for Indian languages. I was ..."
+    },
+    {
+      "title": "‪Kaousheik Jayakumar‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=Yc8bSDIAAAAJ&hl=en",
+      "snippet": "‪University of Maryland, College Park‬ - ‪‪Cited by 23‬‬ - ‪Audio language models‬"
+    },
+    {
+      "title": "Kaousheik (Jayakumar) - Hugging Face",
+      "url": "https://huggingface.co/Kaousheik/datasets",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 2 months ago ... updated a dataset about 2 months ago"
+    }
+  ]
+}

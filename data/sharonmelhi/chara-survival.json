@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "SharonMelhi/chara-survival",
+  "slug": "sharonmelhi-chara-survival",
+  "author": "SharonMelhi",
+  "url": "https://huggingface.co/SharonMelhi/chara-survival",
+  "created_at": "2026-08-22T21:39:06.000Z",
+  "updated_at": "2026-08-22T21:39:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "scikit-survival",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scikit-survival",
+    "survival-analysis",
+    "computational-biology",
+    "oncology",
+    "graph-laplacian",
+    "precision-medicine",
+    "transcriptomics",
+    "bioinformatics",
+    "coxnet",
+    "cancer-prognostics",
+    "tabular-regression",
+    "en",
+    "dataset:TCGA-PAAD",
+    "dataset:ICGC-PACA",
+    "dataset:GSE15471",
+    "dataset:GSE28735",
+    "dataset:GSE57495",
+    "dataset:GSE31210",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5305757,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "character.ai | AI Chat, Reimagined-Your Words. Your World.",
+      "url": "https://character.ai/",
+      "snippet": "Chat with millions of AI Characters on the #1 AI chat app. Where will your next adventure take you?"
+    },
+    {
+      "title": "www.chara-ai.com",
+      "url": "https://www.chara-ai.com/home",
+      "snippet": "www.chara-ai.com"
+    },
+    {
+      "title": "Ex!chara sfw - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1950879327019159927",
+      "snippet": "Generate stunning chara_dreemurr anime art with the &#x27;Ex!chara sfw&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "chara - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1598987934108661576",
+      "snippet": "Generate stunning anime art with the &#x27;chara&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "survival-ai | Discover AI Characters & Roleplay on Emochi",
+      "url": "https://emochi.com/topics/survival-ai",
+      "snippet": "Find Survival AI On Emochi Looking for characters forged in adversity? Survival AI on Emochi offers original AI chat characters that capture the spirit of gritty resilience, tactical ingenuity, and the raw will to endure. Each character is an original creation by Emochi or its community. You can chat with hardened scavengers, pragmatic leaders, or hopeful survivors, explore related tags like ..."
+    }
+  ]
+}

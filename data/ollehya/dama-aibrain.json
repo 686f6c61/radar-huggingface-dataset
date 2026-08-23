@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ollehya/dama-aibrain",
+  "slug": "ollehya-dama-aibrain",
+  "author": "ollehya",
+  "url": "https://huggingface.co/ollehya/dama-aibrain",
+  "created_at": "2026-08-22T20:25:18.000Z",
+  "updated_at": "2026-08-22T20:42:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taeri077/dama-ai-brain · Hugging Face",
+      "url": "https://huggingface.co/Taeri077/dama-ai-brain",
+      "snippet": "Taeri077 / dama-ai-brain like 0 GGUF gemma4 llama.cpp unsloth vision-language-model conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Taeri077/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/Taeri077/dama-aibrain",
+      "snippet": "Taeri077 / dama-aibrain like 0 Text Generation Transformers Safetensors English gemma4 image-text-to-text unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "dama-aibrain API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/ohyou/dama-aibrain",
+      "snippet": "Run dama-aibrain with FriendliAI inference. This gemma4 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Dama Aibrain - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/dennyjo/dama-aibrain",
+      "snippet": "Registry entry for model Dama Aibrain; source metadata pending."
+    },
+    {
+      "title": "GitHub - Volemby/aiBrain: aibrain scans your repository and generates a ...",
+      "url": "https://github.com/Volemby/aiBrain",
+      "snippet": "aibrain is a local-first CLI tool that scans your git repository, extracts structure, conventions, and constraints, and generates a versioned Repo Brain. This brain serves as a \"machine truth\" for your codebase, enabling both humans and AI agents to understand and work with your project more effectively."
+    }
+  ]
+}

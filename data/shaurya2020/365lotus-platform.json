@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Shaurya2020/365lotus-platform",
+  "slug": "shaurya2020-365lotus-platform",
+  "author": "Shaurya2020",
+  "url": "https://huggingface.co/Shaurya2020/365lotus-platform",
+  "created_at": "2026-08-22T20:48:20.000Z",
+  "updated_at": "2026-08-22T20:54:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shaurya2020 (Pratap Singh) - Hugging Face",
+      "url": "https://huggingface.co/Shaurya2020/models",
+      "snippet": "Organizations Shaurya2020&#x27;s models2 Sort: Recently updated Shaurya2020/my99exch-intl-casino-aggregator Updated 2 days ago"
+    },
+    {
+      "title": "Lotus — AI Research Platform for Academics",
+      "url": "https://lotusaiplatform.com/",
+      "snippet": "Lotus Platform 50+ AI-powered tools, 1.5B+ papers across 14 databases, and a research community — all in one platform built for academics who want faster, smarter results."
+    },
+    {
+      "title": "GitHub - VivekShevale/Lotus-AI: ai",
+      "url": "https://github.com/VivekShevale/Lotus-AI",
+      "snippet": "🌸 Lotus AI - Intelligent ML Model Cultivation Platform An AI-powered machine learning platform that combines automated dataset analysis, intelligent model recommendations, and seamless model training with a beautiful, intuitive interface."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Explore the comprehensive catalog of AI models from Microsoft Foundry"
+    },
+    {
+      "title": "Microsoft Foundry Models overview - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/foundry-models-overview",
+      "snippet": "The model catalog in Foundry portal is the hub for discovering and using a wide range of models to build generative AI applications. The model catalog features thousands of models from providers like Azure OpenAI, Anthropic, Mistral, Meta, Cohere, NVIDIA, and Hugging Face, including models that Microsoft trained."
+    }
+  ]
+}

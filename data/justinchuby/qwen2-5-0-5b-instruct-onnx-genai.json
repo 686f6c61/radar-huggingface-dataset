@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "justinchuby/qwen2.5-0.5b-instruct-onnx-genai",
+  "slug": "justinchuby-qwen2-5-0-5b-instruct-onnx-genai",
+  "author": "justinchuby",
+  "url": "https://huggingface.co/justinchuby/qwen2.5-0.5b-instruct-onnx-genai",
+  "created_at": "2026-07-24T21:08:38.000Z",
+  "updated_at": "2026-08-23T01:04:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nxrt",
+  "languages": [],
+  "tags": [
+    "nxrt",
+    "onnx",
+    "onnx-genai",
+    "inference-metadata",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 877282359,
+  "storage_human": "877 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "justinchuby/qwen2.5-0.5b-instruct-onnx-genai · Hugging Face",
+      "url": "https://huggingface.co/justinchuby/qwen2.5-0.5b-instruct-onnx-genai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B-Instruct",
+      "snippet": "For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to our specialized expert models in these domains."
+    },
+    {
+      "title": "Qwen2.5 0.5B Instruct by onnx-community - LLM Explorer",
+      "url": "https://llm-explorer.com/model/onnx-community%2FQwen2.5-0.5B-Instruct,7y6iwm4Z4gBi8E64vUb3Zc",
+      "snippet": "Qwen2.5 0.5B Instruct is an open-source language model by onnx-community. Features: 0.5b LLM, Context: 32K, Instruction-Based, LLM Explorer Score: 0.18."
+    },
+    {
+      "title": "Qwen2.5-0.5B-Instruct",
+      "url": "https://docs.m5stack.com/en/stackflow/models/qwen2.5-0.5b-instruct",
+      "snippet": "Qwen2.5-.5B-Instruct is an instruction-tuned language model in the Qwen2.5 series, with approximately 500 million parameters. The main features of this model include:"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "baudcoin/proof-of-cognition",
+  "slug": "baudcoin-proof-of-cognition",
+  "author": "baudcoin",
+  "url": "https://huggingface.co/baudcoin/proof-of-cognition",
+  "created_at": "2026-08-22T19:26:26.000Z",
+  "updated_at": "2026-08-22T19:35:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "proof-of-cognition",
+    "multi-hop-reasoning",
+    "verifiable-rewards",
+    "agent-economy",
+    "constrained-generation",
+    "process-supervision",
+    "baudcoin",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "proof-of-trust/PROOF-OF-COGNITION.md at master - GitHub",
+      "url": "https://github.com/chriskarlinlaw-hash/proof-of-trust/blob/master/PROOF-OF-COGNITION.md",
+      "snippet": "Abstract We present Proof of Cognition (PoC-R) -- a protocol that provides mathematical guarantees that an autonomous AI agent reasoned about specific constraints before taking an action. Unlike prior attestation approaches that prove constraint presence in context, PoC-R proves constraint processing through pipeline decomposition and forced attention."
+    },
+    {
+      "title": "Cognition Coin | Whitepaper",
+      "url": "https://cognitioncoin.org/whitepaper.html",
+      "snippet": "Cognition Coin proposes a novel consensus mechanism: Semantic Proof-of-Work (PoW). By requiring miners to solve deterministic, grammatically constrained semantic puzzles using local AI models, Cognition Coin ensures that the network is secured not by mindless ASICs or idle capital, but by active machine intelligence."
+    },
+    {
+      "title": "GitHub - proof-ai/proofai: AI Cognitive Evidence Platform ...",
+      "url": "https://github.com/proof-ai/proofai",
+      "snippet": "Cryptographic proof for AI decisions — verifiable in your browser, anchored on Polygon mainnet. Anthropic can&#x27;t certify your AI logs. OpenAI can&#x27;t certify your AI logs. Google can&#x27;t certify your AI logs. They built the models — not the audit trail. That&#x27;s your problem under EU AI Act Article 12. proofAI makes it a solved problem — and you can verify every claim in this README yourself ..."
+    },
+    {
+      "title": "Proof of Cognition (PoC) Consensus Model — CLE-Net 1.0.0 documentation",
+      "url": "https://cle-net.readthedocs.io/en/latest/architecture/03_consensus_model.html",
+      "snippet": "2. Core Idea: Proof of Cognition 2.1 Intuition If multiple independent agents, operating on different data, reach the same conclusion → that conclusion is more likely true. This mirrors the scientific method:"
+    },
+    {
+      "title": "[ANN] [RAZR] Ockams: Proof of Cognition | Chainlink for AI | Proof ...",
+      "url": "https://bitcointalk.org/index.php?topic=5557937.0",
+      "snippet": "Bitcoin Forum > Alternate cryptocurrencies > Announcements (Altcoins) > [ANN] [RAZR] Ockams: Proof of Cognition | Chainlink for AI | Proof Engine Network 1 « previous topic next topic » Print"
+    }
+  ]
+}

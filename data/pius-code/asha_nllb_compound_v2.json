@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pius-code/asha_nllb_compound_v2",
+  "slug": "pius-code-asha_nllb_compound_v2",
+  "author": "pius-code",
+  "url": "https://huggingface.co/pius-code/asha_nllb_compound_v2",
+  "created_at": "2026-08-22T21:10:00.000Z",
+  "updated_at": "2026-08-22T21:11:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 2492595048,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pius-code/ASHA",
+      "url": "https://github.com/pius-code/ASHA",
+      "snippet": "2.An automatic mode where ASHA uses its AI capabilities to learn your habits and preferences over time, adjusting the home environment accordingly without explicit commands. For example, it can learn when you usually arrive home and preemptively turn on the lights and adjust the thermostat to your preferred settings."
+    },
+    {
+      "title": "pius-code (Pius Nii Quaye Oblie) · GitHub",
+      "url": "https://github.com/pius-code",
+      "snippet": "I&#x27;m Pius, a tech savvy chill dude with a deep love for technology and innovation. My drive for excellence fuels my hard work and determination in solving complex problems and developing cutting-edge solutions."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "pius-code/asha_twi_adapter at main - Hugging Face",
+      "url": "https://huggingface.co/pius-code/asha_twi_adapter/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pius-code/asha_twi_adapter_v2 · Hugging Face",
+      "url": "https://huggingface.co/pius-code/asha_twi_adapter_v2",
+      "snippet": "Instructions to use pius-code/asha_twi_adapter_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use pius-code/asha_twi_adapter_v2 with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources [optional ..."
+    }
+  ]
+}

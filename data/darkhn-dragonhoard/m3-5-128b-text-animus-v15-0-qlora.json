@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Darkhn-DragonHoard/M3.5-128B-Text-Animus-V15.0-Qlora",
+  "slug": "darkhn-dragonhoard-m3-5-128b-text-animus-v15-0-qlora",
+  "author": "Darkhn-DragonHoard",
+  "url": "https://huggingface.co/Darkhn-DragonHoard/M3.5-128B-Text-Animus-V15.0-Qlora",
+  "created_at": "2026-08-19T01:45:06.000Z",
+  "updated_at": "2026-08-23T00:41:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral3",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 287869405310,
+  "storage_human": "287.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darkhn-DragonHoard (Darkhn-DragonHoard) - Hugging Face",
+      "url": "https://huggingface.co/Darkhn-DragonHoard",
+      "snippet": "Darkhn-DragonHoard/L3.3-70B-Animus-V10.-Qlora Text Generation • Updated 10 days ago• 3"
+    },
+    {
+      "title": "Darkhn (maxime bedard picotte) - Hugging Face",
+      "url": "https://huggingface.co/Darkhn/collections",
+      "snippet": "I can generate your roleplay dataset, based on any text content, supports differents formatting for dialogue and descriptions, different tone (dark, wholesome etc) with added ooc: commentaries. ..."
+    },
+    {
+      "title": "Darkhn/M3.5-128B-Animus-V14.0 · Hugging Face",
+      "url": "https://huggingface.co/Darkhn/M3.5-128B-Animus-V14.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs - GitHub",
+      "url": "https://github.com/artidoro/qlora",
+      "snippet": "QLoRA backpropagates gradients through a frozen, 4-bit quantized pretrained language model into Low Rank Adapters (LoRA). Our best model family, which we name Guanaco, outperforms all previous openly released models on the Vicuna benchmark, reaching 99.3% of the performance level of ChatGPT while only requiring 24 hours of finetuning on a ..."
+    },
+    {
+      "title": "LoRA & QLoRA Fine-Tuning: Build Custom LLMs on a Single GPU [2026 Guide]",
+      "url": "https://www.meta-intelligence.tech/en/insight-lora-finetuning",
+      "snippet": "Fine-tune LLMs on a single consumer GPU with LoRA and QLoRA. Step-by-step guide covering low-rank adaptation theory, 4-bit NF4 quantization, DoRA, PEFT, and Unsloth — with Google Colab notebooks and production deployment tips."
+    }
+  ]
+}

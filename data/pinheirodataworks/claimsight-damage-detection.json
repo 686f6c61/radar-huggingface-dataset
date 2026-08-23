@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "PinheiroDataworks/claimsight-damage-detection",
+  "slug": "pinheirodataworks-claimsight-damage-detection",
+  "author": "PinheiroDataworks",
+  "url": "https://huggingface.co/PinheiroDataworks/claimsight-damage-detection",
+  "created_at": "2026-08-02T18:33:04.000Z",
+  "updated_at": "2026-08-23T03:25:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "computer-vision",
+    "image-classification",
+    "pytorch",
+    "insurance",
+    "claims-triage",
+    "grad-cam",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110711336,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PinheiroDataworks/claimsight-damage-detection · Hugging Face",
+      "url": "https://huggingface.co/PinheiroDataworks/claimsight-damage-detection",
+      "snippet": "PinheiroDataworks / claimsight-damage-detection like 0 Image Classification PyTorch computer-vision insurance claims-triage grad-cam License:mit Model card FilesFiles and versions xet Community Copy to bucket new ClaimSight — Vehicle Damage Triage Classifier (resnet50) Intended use How to use Training data Architecture & training"
+    },
+    {
+      "title": "GitHub - pinheiro-dataworks/claim-sight: Vehicle-damage triage ...",
+      "url": "https://github.com/pinheiro-dataworks/claim-sight",
+      "snippet": "ClaimSight is a binary vehicle-damage classifier for auto-insurance claim triage: given a photo, it predicts damaged vs whole, explains the prediction with a Grad-CAM heatmap, and serves it all behind a tested FastAPI endpoint — with a single deterministic preprocessing function shared by training, evaluation, and serving so there is no training/serving skew."
+    },
+    {
+      "title": "ClaimSight — Vehicle Damage Triage System",
+      "url": "https://pinheiro-dataworks.github.io/claim-sight/",
+      "snippet": "ClaimSight is a binary vehicle-damage classifier for auto-insurance claim triage — deterministic OpenCV pipeline, ResNet50 transfer learning, Grad-CAM explainability, and a served FastAPI endpoint. 94.3% validation accuracy, ROC-AUC 0.986."
+    },
+    {
+      "title": "PinheiroDataworks (Renan Pinheiro) - Hugging Face",
+      "url": "https://huggingface.co/PinheiroDataworks",
+      "snippet": "models1 PinheiroDataworks/claimsight-damage-detection Image Classification •Updated 2 days ago"
+    },
+    {
+      "title": "claim-sight/web/index.html at main · pinheiro-dataworks/claim-sight",
+      "url": "https://github.com/pinheiro-dataworks/claim-sight/blob/main/web/index.html",
+      "snippet": "Vehicle-damage triage classifier for auto-insurance claims: flags damaged vs. intact from a photo. PyTorch (ResNet50), deterministic OpenCV pipeline with zero train/serve skew, Grad-CAM explainabil..."
+    }
+  ]
+}

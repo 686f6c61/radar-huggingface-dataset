@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "brandonmusic/GLM-5.2-NVFP4-REAP-Recall-N172",
+  "slug": "brandonmusic-glm-5-2-nvfp4-reap-recall-n172",
+  "author": "brandonmusic",
+  "url": "https://huggingface.co/brandonmusic/GLM-5.2-NVFP4-REAP-Recall-N172",
+  "created_at": "2026-06-21T22:47:44.000Z",
+  "updated_at": "2026-08-23T01:41:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "reap",
+    "mixture-of-experts",
+    "moe-pruning",
+    "nvfp4",
+    "glm",
+    "legal",
+    "vllm",
+    "4-bit",
+    "mla-kv-cache",
+    "conversational",
+    "arxiv:2510.13999",
+    "base_model:lukealonso/GLM-5.2-NVFP4",
+    "base_model:quantized:lukealonso/GLM-5.2-NVFP4",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 178,
+  "trending_score": 0,
+  "parameters": 265577041680,
+  "parameters_human": "265.58B",
+  "storage_bytes": 315357396267,
+  "storage_human": "315.4 GB",
+  "base_model": "lukealonso/GLM-5.2-NVFP4, zai-org/GLM-5.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.2-NVFP4-REAP-Recall-N172 - Hugging Face",
+      "url": "https://huggingface.co/brandonmusic/GLM-5.2-NVFP4-REAP-Recall-N172",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "brandonmusic/GLM-5.2-NVFP4-REAP-Recall-N172 at main",
+      "url": "https://huggingface.co/brandonmusic/GLM-5.2-NVFP4-REAP-Recall-N172/tree/main",
+      "snippet": "brandonmusic / GLM-5.2-NVFP4-REAP-Recall-N172 like 6 Text Generation Transformers Safetensors glm_moe_dsa reap mixture-of-experts moe-pruning nvfp4 glm legal vllm 4-bit precision mla-kv-cache conversational 8-bit precision modelopt arxiv:2510.13999 License:mit Model card FilesFiles and versions xet Community 2 Deploy Copy to bucket new Use this ..."
+    },
+    {
+      "title": "Architecture graph for brandonmusic/GLM-5.2-NVFP4-REAP-Recall-N172.",
+      "url": "https://hfviewer.com/brandonmusic/GLM-5.2-NVFP4-REAP-Recall-N172",
+      "snippet": "The feed-forward layers use a mixture-of-experts design with 172 experts (8 active per token, 1 always-on). It has a vocabulary of 154,880 tokens and a context window of up to 1,048,576 tokens, in bfloat16 precision. Model type glm_moe_dsa Layers 78 Hidden size 6,144 Attention multi-head latent attention (MLA) Feed-forward"
+    },
+    {
+      "title": "GLM-5.2-NVFP4-REAP-Recall-N172 - friendli.ai",
+      "url": "https://friendli.ai/models/brandonmusic/GLM-5.2-NVFP4-REAP-Recall-N172",
+      "snippet": "Standard REAP compresses GLM-5.2 well for code, agentic, and reasoning workloads — but closed-book factual recall collapses: the published narrow-calibrated REAPs answer Lexington for the capital of Kentucky and loop on Marbury v. Madison. The cause is not the model and not the serving stack — it&#x27;s a calibration corpus that excludes knowledge."
+    },
+    {
+      "title": "GLM-5.2-Reap — recall-recovery recipe + serving stack",
+      "url": "https://github.zh-ak.com/brandonmmusic-max/GLM-5.2-Reap",
+      "snippet": "A recall-recovering re-REAP of GLM-5.2-NVFP4 to 172 experts/layer, plus the verified Docker image, launch script, and saliency methodology to reproduce it."
+    }
+  ]
+}

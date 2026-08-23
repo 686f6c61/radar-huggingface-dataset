@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Ling-3.0-flash-Research-ROCmFP4-STRIX_LEAN-GGUF",
+  "slug": "kingjones777-ling-3-0-flash-research-rocmfp4-strix_lean-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Ling-3.0-flash-Research-ROCmFP4-STRIX_LEAN-GGUF",
+  "created_at": "2026-08-23T01:44:57.000Z",
+  "updated_at": "2026-08-23T01:46:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "bailingmoe3",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-flash",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 68020249248,
+  "storage_human": "68.0 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ling-3.0-flash-base-ROCmFP4-COHERENT-GGUF - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Ling-3.0-flash-base-ROCmFP4-COHERENT-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kingjones777 (Myron Jones) - Hugging Face",
+      "url": "https://huggingface.co/kingjones777",
+      "snippet": "Sort: Recently updated kingjones777/Ling-3.-flash-Q4_0_ROCMFP4_STRIX-GGUF Text Generation • 127B•Updated 1 day ago• 1"
+    },
+    {
+      "title": "GitHub - charlie12345/rocmfp4: ROCmfp4 · GitHub",
+      "url": "https://github.com/charlie12345/rocmfp4",
+      "snippet": "ROCmFP4 is an experimental GGUF quantization and backend integration package for AMD ROCm and Vulkan llama.cpp builds. This repository is the clean integration package."
+    },
+    {
+      "title": "Ling 3.0 Flash Base 30t Rocmfp4 Coherent Gguf - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/kingjones777/ling-3.0-flash-base-30t-rocmfp4-coherent-gguf",
+      "snippet": "Registry entry for model Ling 3.0 Flash Base 30t Rocmfp4 Coherent Gguf; source metadata pending."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    }
+  ]
+}

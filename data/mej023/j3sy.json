@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mej023/j3sy",
+  "slug": "mej023-j3sy",
+  "author": "mej023",
+  "url": "https://huggingface.co/mej023/j3sy",
+  "created_at": "2026-08-22T21:35:23.000Z",
+  "updated_at": "2026-08-22T22:10:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970618573,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mej023/t1ffany · Hugging Face",
+      "url": "https://huggingface.co/mej023/t1ffany",
+      "snippet": "mej023 / t1ffany like 0 Text-to-Image Diffusers lora krea2 template:sd-lora License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "t1ffany - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mej023/t1ffany",
+      "snippet": "by mej023 mej023/t1ffany Free2AITools Nexus Index 37.5 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity0 R: Recency100 Q: Quality50 Tech Context Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗"
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Download 580,000+ Free 3D Models — FBX, OBJ, GLB, STL | Meshy",
+      "url": "https://www.meshy.ai/free-3d-models",
+      "snippet": "Browse over 580,000 free 3D models in FBX, OBJ, GLB, and STL formats. Download community creations or generate your own with Meshy&#x27;s AI 3D model generator — free tier available."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    }
+  ]
+}

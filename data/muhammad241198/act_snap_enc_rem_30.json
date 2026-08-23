@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Muhammad241198/act_snap_enc_rem_30",
+  "slug": "muhammad241198-act_snap_enc_rem_30",
+  "author": "Muhammad241198",
+  "url": "https://huggingface.co/Muhammad241198/act_snap_enc_rem_30",
+  "created_at": "2026-08-23T00:39:40.000Z",
+  "updated_at": "2026-08-23T00:39:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:rbtrprjkt/snapfit-enclosure_remove",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51613326,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206489032,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muhammad241198 (Muhammad Obaid Ur Rahman) - Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198",
+      "snippet": "Diffusion, Transformers, Imitation Learning updated a dataset 10 days ago"
+    },
+    {
+      "title": "Muhammad241198/act_M16fasten_240 · Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198/act_M16fasten_240",
+      "snippet": "Muhammad241198 / act_M16fasten_240 like 0 Robotics LeRobot Safetensors rbtrprjkt/new_M16nut_fasten_assisted act arxiv:2304.13705 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    },
+    {
+      "title": "Free unlimited ai video generator",
+      "url": "https://snapgen.ai/",
+      "snippet": "Create amazing videos, speech, and images with our advanced AI tools. Join thousands of creators using Snapgen AI for their content generation needs."
+    }
+  ]
+}

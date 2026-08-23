@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zhiqian99/Qwen3-Reranker-0.6B-GGUF-llama_cpp",
+  "slug": "zhiqian99-qwen3-reranker-0-6b-gguf-llama_cpp",
+  "author": "zhiqian99",
+  "url": "https://huggingface.co/zhiqian99/Qwen3-Reranker-0.6B-GGUF-llama_cpp",
+  "created_at": "2026-08-23T01:44:41.000Z",
+  "updated_at": "2026-08-23T01:44:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "reranker",
+    "llama.cpp",
+    "qwen3",
+    "text-ranking",
+    "base_model:Qwen/Qwen3-Reranker-0.6B",
+    "base_model:quantized:Qwen/Qwen3-Reranker-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595778560,
+  "parameters_human": "595.8M",
+  "storage_bytes": 4632962432,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3-Reranker-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuantFactory/Qwen3-Reranker-0.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/Qwen3-Reranker-0.6B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · JonathanMiddleton/Qwen3-Reranker-0.6B at main",
+      "url": "https://huggingface.co/JonathanMiddleton/Qwen3-Reranker-0.6B/blob/main/README.md",
+      "snippet": "This unmerged fix branch is mandatory to run Qwen3 reranking models. Other HF GGUF quantizations of the 0.6B reranker typically fail in mainline llama.cpp because they were not produced with this build."
+    },
+    {
+      "title": "Qwen3-Reranker-0.6B-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/dengcao/Qwen3-Reranker-0.6B-GGUF",
+      "snippet": "3,971 downloads 1.84GB updated Jun 12,2025 Model card Files and versions Discussions Download model"
+    },
+    {
+      "title": "llama-server models.ini guide for Qwen3 reranker + embedding + chat ...",
+      "url": "https://gist.github.com/VooDisss/42bce4eb5c76d3c325633886c5e348ee",
+      "snippet": "A practical guide to running multiple Qwen3 models through a single llama-server instance using model routing. Covers embedding, reranking, and chat/vision models. Tested on Windows with RTX 3090 (24GB VRAM), llama-server build from llama.cpp master branch. Last updated: 2025-03-09."
+    },
+    {
+      "title": "Qwen3-Reranker-0.6B-Q8_0-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/ggml-org/Qwen3-Reranker-0.6B-Q8_0-GGUF",
+      "snippet": "This model was converted to GGUF format from Qwen/Qwen3-Reranker-.6B using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    }
+  ]
+}

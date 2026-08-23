@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "TensorVizion/NeonDiffusionEmbedding-XL",
+  "slug": "tensorvizion-neondiffusionembedding-xl",
+  "author": "TensorVizion",
+  "url": "https://huggingface.co/TensorVizion/NeonDiffusionEmbedding-XL",
+  "created_at": "2026-08-23T01:50:19.000Z",
+  "updated_at": "2026-08-23T01:52:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "base_model:stabilityai/sdxl-turbo",
+    "base_model:finetune:stabilityai/sdxl-turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41112,
+  "storage_human": "41112 B",
+  "base_model": "stabilityai/sdxl-turbo, stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TensorVizion (Andrew Del Castro) · GitHub",
+      "url": "https://github.com/TensorVizion/",
+      "snippet": "Canadian Generative AI Developer. TensorVizion has 14 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "TensorVizion (Thomas Barrie) - Hugging Face",
+      "url": "https://huggingface.co/TensorVizion",
+      "snippet": "FP8 Quantization: Your GPU&#x27;s New Best Friend (Even If It&#x27;s Not the Latest Model) 🚀"
+    },
+    {
+      "title": "GitHub - TensorVizion/AI-Toolkit-Revamped: The ultimate training ...",
+      "url": "https://github.com/TensorVizion/AI-Toolkit-Revamped",
+      "snippet": "AI Toolkit is an easy to use all in one training suite for diffusion models. I try to support all the latest models on consumer grade hardware. Image and video models. It can be run as a GUI or CLI. It is designed to be easy to use but still have every feature imaginable. Free and open source."
+    },
+    {
+      "title": "Top safe models by TensorVizion on CivitAI - CivArchive",
+      "url": "https://civarchive.com/users/TensorVizion",
+      "snippet": "Browse AI models by TensorVizion - Download deleted LoRA, Checkpoint, and other AI models from CivArchive."
+    },
+    {
+      "title": "NEOAingDiffusion XL - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/1251676?modelVersionId=1521250",
+      "snippet": "Download NEOAingDiffusion XL - Checkpoint by kayfahaarukku. Free AI model download from CivArchive."
+    }
+  ]
+}

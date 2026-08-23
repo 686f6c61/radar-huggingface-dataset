@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "zoezheng126/slideforge-sam3-decoder",
+  "slug": "zoezheng126-slideforge-sam3-decoder",
+  "author": "zoezheng126",
+  "url": "https://huggingface.co/zoezheng126/slideforge-sam3-decoder",
+  "created_at": "2026-08-22T21:15:09.000Z",
+  "updated_at": "2026-08-22T21:25:52.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:facebook/sam3",
+    "base_model:finetune:facebook/sam3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3606561082,
+  "storage_human": "3.6 GB",
+  "base_model": "facebook/sam3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "efficientsam3/sam3/sam3/model/decoder.py at main - GitHub",
+      "url": "https://github.com/SimonZeng7108/efficientsam3/blob/main/sam3/sam3/model/decoder.py",
+      "snippet": "Notifications Fork 41 Star 558 main efficientsam3 / sam3 / sam3 / model / decoder.py clcl777 refactor: use get_autocast_device_type in decoder.py and ops.py"
+    },
+    {
+      "title": "Meta SAM Model | [SAM 1, SAM 2, SAM 3 & SAM 3D]",
+      "url": "https://sam3ai.com/model/",
+      "snippet": "Discover the Meta SAM model family, from SAM 1 and SAM 2 to SAM 3 and SAM 3D. Learn how Segment Anything uses prompts, text, and 3D reconstruction to detect, segment, track, and rebuild any object in images and video."
+    },
+    {
+      "title": "EfficientSAM3 - simonzeng7108.github.io",
+      "url": "https://simonzeng7108.github.io/efficientsam3/",
+      "snippet": "SAM3 delivers Promptable Concept Segmentation (PCS) by combining semantic understanding and temporal tracking, yet its massive backbone and dense memory bank make on-device deployment impractical. EfficientSAM3 compresses SAM1, SAM2, and SAM3 into a family of lightweight student models tailored for edge hardware without sacrificing PCS quality."
+    },
+    {
+      "title": "facebook/sam3 · Hugging Face",
+      "url": "https://huggingface.co/facebook/sam3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - facebookresearch/sam3: The repository provides code for ...",
+      "url": "https://github.com/facebookresearch/sam3",
+      "snippet": "The repository provides code for running inference and finetuning with the Meta Segment Anything Model 3 (SAM 3), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. - facebookresearch/sam3"
+    }
+  ]
+}

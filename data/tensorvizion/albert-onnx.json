@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "TensorVizion/Albert-ONNX",
+  "slug": "tensorvizion-albert-onnx",
+  "author": "TensorVizion",
+  "url": "https://huggingface.co/TensorVizion/Albert-ONNX",
+  "created_at": "2026-08-23T02:40:33.000Z",
+  "updated_at": "2026-08-23T02:40:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "albert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15078382,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "TensorVizion (Andrew Del Castro) · GitHub",
+      "url": "https://github.com/TensorVizion/",
+      "snippet": "Canadian Generative AI Developer. TensorVizion has 14 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "onnx-models/paraphrase-albert-small-v2-onnx · Hugging Face",
+      "url": "https://huggingface.co/onnx-models/paraphrase-albert-small-v2-onnx",
+      "snippet": "Model details Embedding dimension: 768 Max sequence length: 100 File size on disk: 0.04 GB Modules incorporated in the onnx: Transformer, Pooling Usage Using this model becomes easy when you have light-embed installed: ... Then you can use the model by specifying the original model name like this: ... or by specifying the onnx model name like ..."
+    },
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX defines a common set of operators - the building blocks of machine learning and deep learning models - and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers."
+    }
+  ]
+}

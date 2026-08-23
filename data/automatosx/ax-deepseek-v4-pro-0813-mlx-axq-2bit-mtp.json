@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-DeepSeek-V4-Pro-0813-MLX-AXQ-2bit-MTP",
+  "slug": "automatosx-ax-deepseek-v4-pro-0813-mlx-axq-2bit-mtp",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Pro-0813-MLX-AXQ-2bit-MTP",
+  "created_at": "2026-08-22T21:21:41.000Z",
+  "updated_at": "2026-08-22T22:34:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v4",
+    "axquant",
+    "moe",
+    "deepseek",
+    "experimental",
+    "not-certified",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4-Pro-0813",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Pro-0813",
+    "license:mit",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 201416835427,
+  "parameters_human": "201.42B",
+  "storage_bytes": 847647914360,
+  "storage_human": "847.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek - a AutomatosX Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/AutomatosX/deepseek",
+      "snippet": "DeepSeek V4 Flash AXQ 2/3/4/6-bit and DeepSeek-OCR-2."
+    },
+    {
+      "title": "DeepSeek-V4-Pro-0813 — Benchmarks, Specs & Release Date",
+      "url": "https://aireleasetracker.com/model/deepseek/deepseek-v4-pro-0813",
+      "snippet": "DeepSeek-V4-Pro-0813 Released Aug 13 2026 DeepSeek-V4-Pro-0813 is an AI model released by DeepSeek on Thursday, Aug 13 2026, 13 days after DeepSeek-V4-Flash-0731. Benchmark results (shown below) cover Terminal-Bench 2.1, Toolathlon-Verified, CyberGym, Humanity&#x27;s Last Exam, and AutomationBench."
+    },
+    {
+      "title": "deepseek/deepseek-v4-pro-0813 API & Pricing | TokenRouter",
+      "url": "https://www.tokenrouter.com/models/deepseek/deepseek-v4-pro-0813/",
+      "snippet": "Explore deepseek/deepseek-v4-pro-0813 by DeepSeek on TokenRouter. View supported API endpoints, integration examples, capabilities, and pricing."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-2bit · Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-2bit",
+      "snippet": "Instructions to use AutomatosX/AX-DeepSeek-V4-Flash-MLX-AXQ-2bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Kaousheik/tempo-sft-stage1",
+  "slug": "kaousheik-tempo-sft-stage1",
+  "author": "Kaousheik",
+  "url": "https://huggingface.co/Kaousheik/tempo-sft-stage1",
+  "created_at": "2026-08-22T20:20:32.000Z",
+  "updated_at": "2026-08-22T20:24:48.000Z",
+  "license": "nvidia-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "audioflamingo3",
+    "audio",
+    "timestamping",
+    "temporal-grounding",
+    "speaker-diarization",
+    "dense-audio-captioning",
+    "music-captioning",
+    "large-audio-language-model",
+    "audio-text-to-text",
+    "dataset:Kaousheik/tempo",
+    "base_model:nvidia/audio-flamingo-3",
+    "base_model:finetune:nvidia/audio-flamingo-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8271605248,
+  "parameters_human": "8.27B",
+  "storage_bytes": 16555167468,
+  "storage_human": "16.6 GB",
+  "base_model": "nvidia/audio-flamingo-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaousheik Jayakumar",
+      "url": "https://kaousheik-26.github.io/",
+      "snippet": "I am a 1st year Master&#x27;s student in Computer Science at University of Maryland, College Park. I work audio-visual understanding at Gamma Lab and PIRL lab under the guidance of Prof. Dinesh Manocha and Prof. Ramani Duraiswami I completed my undergrad from IIT Madras where I had the opportunity to work with Prof. Umesh at the SPRING Lab on multilingual ASR systems for Indian languages. I was ..."
+    },
+    {
+      "title": "Kaousheik (Jayakumar) - Hugging Face",
+      "url": "https://huggingface.co/Kaousheik/models",
+      "snippet": "Organizations Kaousheik&#x27;s models1 Sort: Recently updated Kaousheik/hanabi-gpt-oss 120B•Updated Dec 30, 2025• 1"
+    },
+    {
+      "title": "Kaousheik (Jayakumar) - Hugging Face",
+      "url": "https://huggingface.co/Kaousheik",
+      "snippet": "Sort: Recently updated Kaousheik/temporal-lalm Viewer •Updated about 3 hours ago•1.66k"
+    },
+    {
+      "title": "Research - kaousheik-26.github.io",
+      "url": "https://kaousheik-26.github.io/research/",
+      "snippet": "A Closer Look at Failure Modes in Temporal Understanding of Large Audio-Language Models LALMs consistently fail at foundational temporal tasks — identifying which sound started first, ended last, or lasted longest. We introduce a 1,657-question benchmark for mechanistic diagnosis and find that the problem isn&#x27;t just modality imbalance: redistributing attention across audio tokens (scaling ..."
+    },
+    {
+      "title": "AI Release Tracker — Every LLM Release Since ChatGPT",
+      "url": "https://aireleasetracker.com/",
+      "snippet": "AI Release Tracker is a free, continuously updated timeline of every major AI model release from the world&#x27;s leading AI labs. It currently tracks 229 models from 11 companies — including OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, Moonshot AI, and Cursor — from the launch of ChatGPT on November 30 2022 through today."
+    }
+  ]
+}

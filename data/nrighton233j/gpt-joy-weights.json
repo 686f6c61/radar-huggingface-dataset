@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Nrighton233j/gpt-joy-weights",
+  "slug": "nrighton233j-gpt-joy-weights",
+  "author": "Nrighton233j",
+  "url": "https://huggingface.co/Nrighton233j/gpt-joy-weights",
+  "created_at": "2026-07-04T05:33:38.000Z",
+  "updated_at": "2026-08-23T00:41:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80889848137,
+  "storage_human": "80.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nrighton233j/gpt-joy-weights · Hugging Face",
+      "url": "https://huggingface.co/Nrighton233j/gpt-joy-weights",
+      "snippet": "Nrighton233j / gpt-joy-weights like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Nrighton233j (Brighton Joseph) - Hugging Face",
+      "url": "https://huggingface.co/Nrighton233j",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 1 day ago ... updated a model 1 day ago ... updated a model 2 days ago"
+    },
+    {
+      "title": "OpenAI Launches Free AI Access for Scientists: Apply Now, Model Weights ...",
+      "url": "https://www.techtimes.com/articles/322124/20260729/openai-launches-free-ai-access-scientists-apply-now-model-weights-still-off-limits.htm",
+      "snippet": "OpenAI today announced it will give 100,000 academic scientists free access to GPT-5.6 Sol Pro — its most powerful publicly available model — through a new program called ChatGPT for Academic ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

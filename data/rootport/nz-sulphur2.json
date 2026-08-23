@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Rootport/Nz-Sulphur2",
+  "slug": "rootport-nz-sulphur2",
+  "author": "Rootport",
+  "url": "https://huggingface.co/Rootport/Nz-Sulphur2",
+  "created_at": "2026-07-26T04:49:51.000Z",
+  "updated_at": "2026-08-23T02:37:05.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ltx-2",
+    "ltxv",
+    "text-to-video",
+    "quantized",
+    "aviutl2",
+    "ja",
+    "en",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:quantized:Lightricks/LTX-2.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 21005004544,
+  "parameters_human": "21.01B",
+  "storage_bytes": 17763014976,
+  "storage_human": "17.8 GB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rootport/Nz-Sulphur2 · Hugging Face",
+      "url": "https://huggingface.co/Rootport/Nz-Sulphur2",
+      "snippet": "Rootport / Nz-Sulphur2 like 0 Text-to-Video GGUF Japanese English ltx-2 ltxv quantized aviutl2 License:ltx-2-community-license-agreement Model card FilesFiles and versions xet Community Copy to bucket new Nz-Sulphur2 使い方 出自と謝辞 ライセンス English"
+    },
+    {
+      "title": "Rootport/Nz-Sulphur2 at main - Hugging Face",
+      "url": "https://huggingface.co/Rootport/Nz-Sulphur2/tree/main",
+      "snippet": "Rootport / Nz-Sulphur2 like 0 Text-to-Video GGUF Japanese English ltx-2 ltxv quantized aviutl2 License:ltx-2-community-license-agreement Model card FilesFiles and versions xet Community Copy to bucket new main Nz-Sulphur2 17.8 GB Ctrl+K Ctrl+K 1 contributor History:6 commits Rootport Update README.md 1d2331b verified11 days ago"
+    },
+    {
+      "title": "Sulphur 2 Base - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/sulphur-2-base.html",
+      "snippet": "Download Sulphur 2 Base GGUF model. 7.81 GB, 322,877 downloads, 2004 likes."
+    },
+    {
+      "title": "GitHub - sw30labs/sulphur-2-base",
+      "url": "https://github.com/sw30labs/sulphur-2-base",
+      "snippet": "Local Apple Silicon project for SulphurAI/Sulphur-2-base, modeled after the Stable Audio 3 desktop project. It wraps the native MLX LTX runtime with a small CLI, installer, and browser UI. This project does not vendor the huge model files. By default it points to: Video model: MLXBits/sulphur-2-distill-mlx-q4 Optional prompt enhancer: MLXBits/sulphur-promptenhancer-mlx-q8 Runtime: dgrauet/ltx ..."
+    },
+    {
+      "title": "Sulphur 2 Base — Uncensored Free AI Video Generation Model",
+      "url": "https://sulphur2.homes/",
+      "snippet": "Sulphur 2 Base is a 9B parameter open-source AI video generation model supporting text-to-video and image-to-video. Run locally with ComfyUI. Free, uncensored, cinematic quality."
+    }
+  ]
+}

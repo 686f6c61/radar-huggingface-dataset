@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Xenna/cielvox2-tts-1.7b-base-GGUF",
+  "slug": "xenna-cielvox2-tts-1-7b-base-gguf",
+  "author": "Xenna",
+  "url": "https://huggingface.co/Xenna/cielvox2-tts-1.7b-base-GGUF",
+  "created_at": "2026-08-21T17:30:34.000Z",
+  "updated_at": "2026-08-22T20:01:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "ggml",
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "audio",
+    "tts",
+    "voice-clone",
+    "stelnettts",
+    "cielvox2-tts",
+    "text-to-speech",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 67,
+  "trending_score": 0,
+  "parameters": 1928677440,
+  "parameters_human": "1.93B",
+  "storage_bytes": 2066258176,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cielvox2/hf_readmes/qwen3-tts-1.7b-customvoice-GGUF.md at main ... - GitHub",
+      "url": "https://github.com/stelnetxcis-create/cielvox2/blob/main/hf_readmes/qwen3-tts-1.7b-customvoice-GGUF.md",
+      "snippet": "The 1.7B sibling of Xenna/cielvox2-tts-.6b-customvoice-GGUF. Same fixed-speaker pattern (9 baked speakers, no ECAPA, no reference WAV), but on the 1.7B talker — hidden=2048, head_dim=128, with a small_to_mtp_projection MLP that maps the 2048-d talker hidden state down to the 1024-d code predictor input space."
+    },
+    {
+      "title": "GitHub - stelnetxcis-create/cielvox2",
+      "url": "https://github.com/stelnetxcis-create/cielvox2/tree/main/",
+      "snippet": "Use cielvox2-tts for 0.6b base, cielvox2-tts-1.7b-base for 1.7b base, cielvox2-tts-customvoice for presets, cielvox2-tts-1.7b-voicedesign for voice design. -m — path to the model GGUF."
+    },
+    {
+      "title": "ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF",
+      "snippet": "Instructions to use ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Xenna/cielvox2-tts-0.6b-base-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Xenna/cielvox2-tts-0.6b-base-GGUF",
+      "snippet": "/ cielvox2-tts-.6b-base-GGUF like 0 GGUF Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - GGUF Model size 0.9B params Architecture qwen3tts Hardware compatibility Log In to add your hardware 8-bit Q8_0986 MB Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋 ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

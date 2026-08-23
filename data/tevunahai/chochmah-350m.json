@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "id": "TevunahAi/chochmah-350m",
+  "slug": "tevunahai-chochmah-350m",
+  "author": "TevunahAi",
+  "url": "https://huggingface.co/TevunahAi/chochmah-350m",
+  "created_at": "2026-08-22T22:52:21.000Z",
+  "updated_at": "2026-08-22T23:02:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "pretrained",
+    "base-model",
+    "from-scratch",
+    "tevunahai",
+    "chochmah",
+    "law",
+    "legal",
+    "philosophy",
+    "mathematics",
+    "physics",
+    "code",
+    "wsd",
+    "small-language-model",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:bigcode/starcoderdata",
+    "dataset:wikimedia/wikipedia",
+    "dataset:sedthh/gutenberg_english",
+    "dataset:open-web-math/open-web-math",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:EleutherAI/proof-pile-2",
+    "dataset:allenai/peS2o",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 358663168,
+  "parameters_human": "358.7M",
+  "storage_bytes": 1434677472,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Easy",
+      "metric": "accuracy (0-shot)",
+      "value": 59
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Easy",
+      "metric": "normalized accuracy (0-shot)",
+      "value": 54.2
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag",
+      "metric": "accuracy (0-shot)",
+      "value": 34.8
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag",
+      "metric": "normalized accuracy (0-shot)",
+      "value": 41.8
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "PIQA",
+      "metric": "accuracy (0-shot)",
+      "value": 68.6
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "PIQA",
+      "metric": "normalized accuracy (0-shot)",
+      "value": 68.3
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "LAMBADA (OpenAI)",
+      "metric": "accuracy (0-shot)",
+      "value": 40.2
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "LAMBADA (OpenAI)",
+      "metric": "perplexity (0-shot)",
+      "value": 23.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "TevunahAi (Tevunah.ai) - Hugging Face",
+      "url": "https://huggingface.co/TevunahAi",
+      "snippet": "TevunahAi - תְּבוּנָה Hebrew for deep insight and understanding. The ability to assimilate ideas and make practical use of them. Taking complexity and turning it into clarity—preserving what matters while making it accessible."
+    },
+    {
+      "title": "TevunahAi (Tevunah.ai) - Hugging Face",
+      "url": "https://huggingface.co/TevunahAi/collections",
+      "snippet": "Org profile for Tevunah.ai on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "TevunahAi TevunahAi - GitHub",
+      "url": "https://github.com/TevunahAi",
+      "snippet": "Tevunah - תְּבוּנָה Hebrew for a deep form of insight and understanding. The ability for one to assimilate ideas into one&#x27;s existence to make use of the - TevunahAi"
+    },
+    {
+      "title": "GitHub - TevunahAi/site: tevunah.ai",
+      "url": "https://github.com/TevunahAi/site",
+      "snippet": "tevunah.ai. Contribute to TevunahAi/site development by creating an account on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

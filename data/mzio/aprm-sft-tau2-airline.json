@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mzio/aprm-sft-tau2-airline",
+  "slug": "mzio-aprm-sft-tau2-airline",
+  "author": "mzio",
+  "url": "https://huggingface.co/mzio/aprm-sft-tau2-airline",
+  "created_at": "2026-07-28T04:15:38.000Z",
+  "updated_at": "2026-08-23T00:30:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1190281824,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mzio/aprm-sft-tau2-airline · Hugging Face",
+      "url": "https://huggingface.co/mzio/aprm-sft-tau2-airline",
+      "snippet": "mzio / aprm-sft-tau2-airline like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "mzio/aprm-thought-generations-tau2-airline - Hugging Face",
+      "url": "https://huggingface.co/datasets/mzio/aprm-thought-generations-tau2-airline",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Tau2 Airline Leaderboard - llm-stats.com",
+      "url": "https://llm-stats.com/benchmarks/tau2-airline",
+      "snippet": "TAU2 airline domain benchmark for evaluating conversational agents in dual-control environments where both AI agents and users interact with tools in airline customer service scenarios. Tests agent coordination, communication, and ability to guide user actions in tasks like flight booking, modifications, cancellations, and refunds."
+    },
+    {
+      "title": "mzio/aprm-tau2-airline-gpt5m_med-gs4-s0-train",
+      "url": "https://www.selectdataset.com/dataset/4f7e7e9abbe6d180a9a7ef4aa2f1633a/mzio-aprm-tau2-airline-gpt5m-med-gs4-s0-train",
+      "snippet": "--- {} --- # Act-PRM Rollout Dataset ## Run Metadata - **env_config**: `tau2bench/airline` - **model_config**: `oai_gpt5m_med` - **model**: `gpt-5-mini` - **split**: `train` - **group_size**: `8` - **seed**: `0` - **num_samples**: `32` - **num_trajectories**: `256` - **accuracy**: `63.3%` - **mean_reward**: `0.266` - **run_cmd**: `main_api.py ..."
+    },
+    {
+      "title": "tau2-agentic-rl/artifacts/tau2-airline at main · yuyu0529nya ... - GitHub",
+      "url": "https://github.com/yuyu0529nya/tau2-agentic-rl/tree/main/artifacts/tau2-airline",
+      "snippet": "Tau2 Airline Key Evaluation Artifacts This directory is a compact GitHub backup of the raw evidence behind the headline tau2 airline results. It intentionally includes evaluation JSONL files and master logs, but excludes trained adapters, model weights, rollout-training JSONL files, vLLM server logs, caches, and virtualenvs."
+    }
+  ]
+}

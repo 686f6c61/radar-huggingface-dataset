@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "erikabear95/transitionrx-readmission-xgboost",
+  "slug": "erikabear95-transitionrx-readmission-xgboost",
+  "author": "erikabear95",
+  "url": "https://huggingface.co/erikabear95/transitionrx-readmission-xgboost",
+  "created_at": "2026-08-22T22:10:56.000Z",
+  "updated_at": "2026-08-22T22:11:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tabular-classification",
+    "healthcare",
+    "readmission",
+    "xgboost",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8803548,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Ash-projects-personal/patient-readmission-prediction: 1st ...",
+      "url": "https://github.com/Ash-projects-personal/patient-readmission-prediction",
+      "snippet": "The final XGBoost model hit 0.96 accuracy and 0.99 AUC, which actually beat the public benchmarks for this dataset. The coolest part is the explainability. We used SHAP to break down exactly why the model flagged a patient as high risk, surfacing the top 15 risk drivers for the clinical staff so they aren&#x27;t just looking at a black box number."
+    },
+    {
+      "title": "Transparent AI Models for Early Identification of High Risk Diabetes ...",
+      "url": "https://transparent-ai-diabetes-readmission-bbciaodwnxuyg6xj53ae6s.streamlit.app/",
+      "snippet": "Model:xgb_model.pkl (XGBoost Classifier) Scaler:scaler.pkl (StandardScaler) Feature Schema:final_features.json (Not loaded) Primary Features for Evaluation: 11 key features"
+    },
+    {
+      "title": "Machine learning for hospital readmission prediction in pediatric ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169260723006466",
+      "snippet": "Conclusion Machine learning approaches, especially XGBoost, can predict potentially avoidable 30-day pediatric hospital readmission into tertiary assistance. If implemented in the computer hospital system, our model can help in the early and more accurate identification of patients at readmission risk, targeting health strategic interventions."
+    },
+    {
+      "title": "Hospital Patient Readmission Prediction using XGBoost - GitHub",
+      "url": "https://github.com/Dhanya31-svg/Hospital-Patient-Readmission-Prediction-using-XGBoost",
+      "snippet": "This project demonstrates a complete end-to-end machine learning pipeline for predicting hospital readmissions using XGBoost. It combines predictive modeling, explainable AI, and deployment-ready components to create a practical solution for healthcare analytics."
+    },
+    {
+      "title": "Models - HealthcareML",
+      "url": "https://asarekings.github.io/HealthcareML-/models.html",
+      "snippet": "Model Training Methodology Our model development process included: Data Preprocessing: Handling missing values, encoding categorical variables Class Imbalance: SMOTE oversampling to address readmission class imbalance Feature Selection: Recursive feature elimination with cross-validation Hyperparameter Tuning: Grid search with 5-fold cross ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-QLoRA",
+  "slug": "mr-rosen-accuracy-is-not-enough-finqa-qlora",
+  "author": "Mr-Rosen",
+  "url": "https://huggingface.co/Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-QLoRA",
+  "created_at": "2026-08-23T02:17:39.000Z",
+  "updated_at": "2026-08-23T02:18:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "lora",
+    "finqa",
+    "finance",
+    "numerical-reasoning",
+    "text-generation",
+    "conversational",
+    "dataset:Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-Dataset",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397596,
+  "storage_human": "657 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accuracy-Is-Not-Enough-Practical-Financial-QA/README.md at main ...",
+      "url": "https://github.com/MarkPaulRosenthal/Accuracy-Is-Not-Enough-Practical-Financial-QA/blob/main/README.md",
+      "snippet": "Accuracy Is Not Enough: A Practical Comparison of RAG, LoRA, QLoRA, and Hybrid LLM Systems for Financial Question Answering This study evaluates existing financial question answering methods through a practical comparative framework that accounts for the time, cost, and deployment demands faced by smaller teams in production environments, addressing a gap left by research that often focuses on ..."
+    },
+    {
+      "title": "Mr-Rosen (Mark Paul Rosenthal) - Hugging Face",
+      "url": "https://huggingface.co/Mr-Rosen",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 2 months ago ... updated a dataset about 2 months ago"
+    },
+    {
+      "title": "FINQAREADME.md · Mr-Rosen/RAG_plus_QLoRA_only at main",
+      "url": "https://huggingface.co/datasets/Mr-Rosen/RAG_plus_QLoRA_only/blob/main/FINQAREADME.md",
+      "snippet": "We do provide the gold retriever results, as well as the retriever results using our baseline model in the public test data, but this is only intended to help reproduce our results. The final evaluation of the FinQA challenge is based on the result on the private test data, which does not have any intermediate results or gold references."
+    },
+    {
+      "title": "Accuracy Isn&#x27;t Enough: Why You Need to Rethink AI Model Metrics",
+      "url": "https://tomta.ai/2025/05/15/accuracy-isnt-enough-why-you-need-to-rethink-ai-model-metrics/",
+      "snippet": "Accuracy Isn&#x27;t Enough: Why You Need to Rethink AI Model Metrics First in a Series: Mastering Data Quality for Safe & Scalable AI Saibal Banerjee, PhD and Steven Atneosen, JD Introduction Accuracy is the most commonly cited metric in machine learning. But if your dataset is imbalanced, accuracy can be dangerously misleading."
+    },
+    {
+      "title": "FinQA: Open RL Environment for Financial Reasoning | Snorkel AI posted ...",
+      "url": "https://www.linkedin.com/posts/snorkel-ai_we-built-finqa-an-open-rl-environment-for-activity-7444508685856440320-9LbM",
+      "snippet": "We built FinQA — an open RL environment for financial reasoning agents. Now available on OpenEnv (Hugging Face + PyTorch) FinQA provides: - Real financial data (SEC 10-K) - Multi-step reasoning ..."
+    }
+  ]
+}

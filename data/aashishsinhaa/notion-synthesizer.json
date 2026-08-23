@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aashishsinhaa/notion-synthesizer",
+  "slug": "aashishsinhaa-notion-synthesizer",
+  "author": "aashishsinhaa",
+  "url": "https://huggingface.co/aashishsinhaa/notion-synthesizer",
+  "created_at": "2026-08-22T20:43:55.000Z",
+  "updated_at": "2026-08-22T21:04:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "notion",
+    "synthesis",
+    "markdown",
+    "tables",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Notion AI",
+      "url": "https://www.notion.com/help/guides/category/ai",
+      "snippet": "Learn how to use Notion for a variety of use cases. Whether youʼre looking to create a project management system or a 1:1 doc, Notion can help."
+    },
+    {
+      "title": "aashishsinhaa (Ashish Sinha) - Hugging Face",
+      "url": "https://huggingface.co/aashishsinhaa",
+      "snippet": "User profile of Ashish Sinha on Hugging Face"
+    },
+    {
+      "title": "Notion AI Models Explained: The Complete Guide in 2026",
+      "url": "https://lorphic.com/notion-ai-models/",
+      "snippet": "Discover the Notion AI models powering Notion AI in 2026. Learn what AI model Notion AI uses, how GPT and Claude work together."
+    },
+    {
+      "title": "sinAshish (Ashish Sinha) · GitHub",
+      "url": "https://github.com/sinAshish",
+      "snippet": "Doing Computer Vision and Machine Learning . sinAshish has 92 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Everything you can do with Notion AI",
+      "url": "https://www.notion.com/help/guides/everything-you-can-do-with-notion-ai",
+      "snippet": "Meet Notion AI — a helpful assistant right inside your workspace. In this guide, we&#x27;ll walk you through how Notion AI can help you discover answers, bring information together, and automate tedious tasks — giving you more time to focus on what really matters."
+    }
+  ]
+}

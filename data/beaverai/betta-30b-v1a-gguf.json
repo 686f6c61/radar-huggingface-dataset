@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "BeaverAI/Betta-30B-v1a-GGUF",
+  "slug": "beaverai-betta-30b-v1a-gguf",
+  "author": "BeaverAI",
+  "url": "https://huggingface.co/BeaverAI/Betta-30B-v1a-GGUF",
+  "created_at": "2026-08-23T01:32:35.000Z",
+  "updated_at": "2026-08-23T02:30:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 113594074752,
+  "storage_human": "113.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BeaverAI (BeaverAI) - Hugging Face",
+      "url": "https://huggingface.co/BeaverAI/models",
+      "snippet": "A bunch of misfits in KoboldAI discover finetuning"
+    },
+    {
+      "title": "Unrestricted AI — The Uncensored AI Model Leaderboard",
+      "url": "https://unrestricted.ai/",
+      "snippet": "Unrestricted AI model rankings. Compare the most uncensored AI models by freedom (UGI), willingness, natural intelligence, and writing ability — an independent leaderboard updated from the UGI Leaderboard."
+    },
+    {
+      "title": "BeaverAI/Sophon-30B-A3B-v1a-GGUF · Hugging Face",
+      "url": "https://huggingface.co/BeaverAI/Sophon-30B-A3B-v1a-GGUF",
+      "snippet": "Sophon-30B-A3B-v1a-GGUF like 0 Follow BeaverAI 446 GGUF Model card Files Files and versions Community Deploy"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "ModelFitCheck — will this LLM fit your GPU?",
+      "url": "https://modelfitcheck.com/",
+      "snippet": "Free browser-based tool that detects your hardware and instantly tells you which local LLMs and GGUF quantizations will fit in your VRAM. No signup, no data sent."
+    }
+  ]
+}

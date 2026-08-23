@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kerasformers/tipsv2-g14-dpt",
+  "slug": "kerasformers-tipsv2-g14-dpt",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/tipsv2-g14-dpt",
+  "created_at": "2026-08-23T00:35:02.000Z",
+  "updated_at": "2026-08-23T00:35:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "tipsv2",
+    "dpt",
+    "depth-estimation",
+    "image-segmentation",
+    "arxiv:2604.12012",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:google/tipsv2-g14-dpt",
+    "base_model:finetune:google/tipsv2-g14-dpt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5037867032,
+  "storage_human": "5.0 GB",
+  "base_model": "google/tipsv2-g14-dpt",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/tipsv2-g14-dpt · Hugging Face",
+      "url": "https://huggingface.co/google/tipsv2-g14-dpt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google&#x27;s TipsV2-G14-DPT Depth Estimation Model Lands on Modelers.cn ...",
+      "url": "https://aichina.news/blog/google-s-tipsv2-g14-dpt-depth-estimation-model-lands-on-modelers-cn-qtoi3n/",
+      "snippet": "What makes TipsV2-G14-DPT especially interesting is its presence on Modelers.cn, the model hub built for the Huawei/Ascend AI ecosystem. This suggests - though the card does not explicitly confirm - that the model has been tested or optimised for Ascend NPUs."
+    },
+    {
+      "title": "TIPSv2 - a google Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/google/tipsv2",
+      "snippet": "TIPSv2 foundational vision-language models. Webpage: https://gdm-tipsv2.github.io/"
+    },
+    {
+      "title": "GitHub - google-deepmind/tips: TIPSv2 (CVPR&#x27;26) and TIPS (ICLR&#x27;25)",
+      "url": "https://github.com/google-deepmind/tips?tab=readme-ov-file",
+      "snippet": "We provide both Pytorch and Jax (Scenic) implementations: tips/pytorch/: PyTorch inference for the model. tips/scenic/: Jax-based inference using the scenic library. We provide links to all available checkpoints, for both Pytorch and Jax model definitions, together with representative evals. You can also find TIPSv2 models on HuggingFace here."
+    },
+    {
+      "title": "TIPSv2: Advancing Vision-Language Pretraining with Enhanced Patch-Text ...",
+      "url": "https://gdm-tipsv2.github.io/",
+      "snippet": "Method TIPSv2 investigates the differences between pre-training and distillation, motivating the introduction of three targeted pretraining improvements to standard vision-language models: iBOT++, Head-only EMA, and Multi-Granularity Text Captions. Bridging Pre-training and Distillation We reveal a surprising gap between pre-training and distillation: a smaller ViT-L model distilled from a ..."
+    }
+  ]
+}

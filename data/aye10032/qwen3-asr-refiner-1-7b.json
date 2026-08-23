@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Aye10032/Qwen3-ASR-Refiner-1.7B",
+  "slug": "aye10032-qwen3-asr-refiner-1-7b",
+  "author": "Aye10032",
+  "url": "https://huggingface.co/Aye10032/Qwen3-ASR-Refiner-1.7B",
+  "created_at": "2026-08-20T12:33:24.000Z",
+  "updated_at": "2026-08-23T01:10:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "asr-post-processing",
+    "spoken-to-written",
+    "text-normalization",
+    "conversational",
+    "zh",
+    "dataset:Aye10032/WenetSpeech-Formal-Text",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 197,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 6893793866,
+  "storage_human": "6.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aye10032/Qwen3-1.7B-ASR-Refiner · Hugging Face",
+      "url": "https://huggingface.co/Aye10032/Qwen3-1.7B-ASR-Refiner",
+      "snippet": "Aye10032 / Qwen3-1.7B-ASR-Refiner like 0 Text Generation Transformers Safetensors Aye10032/WenetSpeech-Formal-Text Chinese qwen3 asr-post-processing spoken-to-written text-normalization conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "Qwen/Qwen3-ASR-1.7B · Improve model card with metadata, paper links ...",
+      "url": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B/discussions/7/files",
+      "snippet": "- The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "Qwen3-1.7B-ASR-Refiner API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Aye10032/Qwen3-1.7B-ASR-Refiner",
+      "snippet": "Run Qwen3-1.7B-ASR-Refiner with FriendliAI inference. Qwen3 ASR Refiner is a family of models that converts Chinese ASR transcripts and other spoken-style…"
+    },
+    {
+      "title": "1.7B Model | antirez/qwen-asr | DeepWiki",
+      "url": "https://deepwiki.com/antirez/qwen-asr/10.2-1.7b-model",
+      "snippet": "1.7B Model Relevant source files Purpose and Scope This page documents the Qwen3-ASR-1.7B model variant, the larger of the two supported model sizes. It covers the model&#x27;s architecture specifications, memory requirements, performance characteristics, and usage guidance. For information about the smaller variant, see 0.6B Model. For details on how the system automatically detects which model ..."
+    }
+  ]
+}

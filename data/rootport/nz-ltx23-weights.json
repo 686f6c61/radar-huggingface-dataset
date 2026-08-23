@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Rootport/Nz-LTX23-weights",
+  "slug": "rootport-nz-ltx23-weights",
+  "author": "Rootport",
+  "url": "https://huggingface.co/Rootport/Nz-LTX23-weights",
+  "created_at": "2026-07-26T03:50:53.000Z",
+  "updated_at": "2026-08-23T02:36:41.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ltx-2",
+    "ltxv",
+    "text-to-video",
+    "aviutl2",
+    "ja",
+    "en",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:quantized:Lightricks/LTX-2.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 21005004544,
+  "parameters_human": "21.01B",
+  "storage_bytes": 27218290863,
+  "storage_human": "27.2 GB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rootport/Nz-LTX23-weights · Hugging Face",
+      "url": "https://huggingface.co/Rootport/Nz-LTX23-weights",
+      "snippet": "English summary Model weights for Nz-LTX23-backend, the video-generation backend of Nz-LTX23, a plugin for the video editor AviUtl2."
+    },
+    {
+      "title": "Rootport/Nz-LTX23-weights at main - Hugging Face",
+      "url": "https://huggingface.co/Rootport/Nz-LTX23-weights/tree/main",
+      "snippet": "Rootport / Nz-LTX23-weights like 0 Text-to-Video GGUF Japanese English ltx-2 ltxv aviutl2 License:ltx-2-community-license-agreement Model card FilesFiles and versions xet Community Copy to bucket new main Nz-LTX23-weights 27.2 GB Ctrl+K Ctrl+K 1 contributor History:23 commits Rootport"
+    },
+    {
+      "title": "LTX 2.3 ComfyUI Models — Choose by VRAM (16 / 24 / 32 GB)",
+      "url": "https://ltxworkflow.com/models",
+      "snippet": "Pick the right LTX 2.3 model for your GPU. 16 GB FP8/MXFP8, 24 GB with offloading, 32 GB BF16. Plus IC-LoRAs and Gemma text encoders."
+    },
+    {
+      "title": "Rootport-AI · GitHub",
+      "url": "https://github.com/Rootport-AI/",
+      "snippet": "A simple GUI to run the open-weight VLM \"DeepSeek-OCR\". To simplify installation, it was ported to Windows natively using WPF + WebView2. Python 14 2"
+    },
+    {
+      "title": "Model Downloads and Assets | Lightricks/LTX-2 | DeepWiki",
+      "url": "https://deepwiki.com/Lightricks/LTX-2/1.3-model-downloads-and-assets",
+      "snippet": "Asset Management and Hub Integration The ltx-trainer package provides utilities for managing these assets and pushing fine-tuned models back to the HuggingFace Hub. Pushing to HuggingFace Hub The function push_to_hub handles the end-to-end process of uploading trained weights, generating a model card, and attaching validation samples."
+    }
+  ]
+}

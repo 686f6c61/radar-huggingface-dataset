@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "slrrxx101/tritonv3-7b",
+  "slug": "slrrxx101-tritonv3-7b",
+  "author": "slrrxx101",
+  "url": "https://huggingface.co/slrrxx101/tritonv3-7b",
+  "created_at": "2026-08-23T02:06:36.000Z",
+  "updated_at": "2026-08-23T02:07:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073568,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "slrrxx101/minecraft-qwen-agent-v2 · Hugging Face",
+      "url": "https://huggingface.co/slrrxx101/minecraft-qwen-agent-v2",
+      "snippet": "slrrxx101 / minecraft-qwen-agent-v2 like 0 GGUF qwen2 llama.cpp unsloth conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LLM Model Parameters 2026: 7B-70B - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/guides/what-is-ai-model-3b-7b-30b-parameters-guide-2025.html",
+      "snippet": "Master LLM parameter selection with our comprehensive 2026 guide. Learn how 7B, 13B, 30B, and 70B parameters impact AI model performance, hardware requirements, and capabilities for optimal deployment decisions."
+    },
+    {
+      "title": "Fara-7B: An Efficient Agentic Model for Computer Use",
+      "url": "https://www.microsoft.com/en-us/research/blog/fara-7b-an-efficient-agentic-model-for-computer-use/",
+      "snippet": "Fara-7B is our first agentic small language model for computer use. This experimental model includes robust safety measures to aid responsible deployment. Despite its size, Fara-7B holds its own against larger, more resource-intensive agentic systems:"
+    },
+    {
+      "title": "7B vs 14B vs 32B vs 70B: Which Model Size to Run | Local AI Master",
+      "url": "https://localaimaster.com/blog/ai-model-size-comparison",
+      "snippet": "Compare 7B, 14B, 32B, and 70B LLM sizes with real benchmarks, VRAM requirements, speed tests, and specific model picks for each parameter tier."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    }
+  ]
+}

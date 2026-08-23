@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "loliew/umarvc",
+  "slug": "loliew-umarvc",
+  "author": "loliew",
+  "url": "https://huggingface.co/loliew/umarvc",
+  "created_at": "2026-08-22T22:17:03.000Z",
+  "updated_at": "2026-08-22T22:17:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-to-audio",
+    "dataset:TLME/Umamusume-voice-transcription",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21637364502,
+  "storage_human": "21.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loli, aI-generated illustration, AI / 今日の一般絵 - pixiv",
+      "url": "https://www.pixiv.net/en/artworks/125684900",
+      "snippet": "loli, aI-generated illustration, AI, Girl are the most prominent tags for this work posted on December 30th, 2024."
+    },
+    {
+      "title": "novowels Creator Profile | Civitai",
+      "url": "https://civitai.com/user/novowels/models",
+      "snippet": "Models Uploaded: 0, Followers: 26.2k, Total Likes Received: 410.5k, Total Downloads Received: 2.5m."
+    },
+    {
+      "title": "beautyai88 (@beautyai88@mstdn.jp) - mstdn.jp",
+      "url": "https://mstdn.jp/@beautyai88",
+      "snippet": "92 Posts, 0 Following, 291 Followers · https://my.bio/smiconai"
+    },
+    {
+      "title": "Your AI Art Playground - Luna Models",
+      "url": "https://www.lunamodels.art/",
+      "snippet": "Welcome to Luna Models Your creative playground for adorable AI art. Generate stunning images, discover inspiration, and find unique assets to bring your imagination to life!"
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    }
+  ]
+}

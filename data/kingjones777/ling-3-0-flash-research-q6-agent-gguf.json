@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Ling-3.0-flash-Research-Q6-AGENT-GGUF",
+  "slug": "kingjones777-ling-3-0-flash-research-q6-agent-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Ling-3.0-flash-Research-Q6-AGENT-GGUF",
+  "created_at": "2026-08-23T02:05:21.000Z",
+  "updated_at": "2026-08-23T02:05:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "bailingmoe3",
+    "text-generation",
+    "base_model:inclusionAI/Ling-3.0-flash",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "inclusionAI/Ling-3.0-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingjones777/Ling-3.0-flash-base-ROCmFP4-COHERENT-GGUF · Discussions",
+      "url": "https://huggingface.co/kingjones777/Ling-3.0-flash-base-ROCmFP4-COHERENT-GGUF/discussions",
+      "snippet": "/ Ling-3.-flash-base-ROCmFP4-COHERENT-GGUF like 0 Text Generation GGUF llama.cpp rocm amd rocmfp4 rocmfpx strix-halo amd-strix-halo gfx1151 ryzen-ai-max ryzen-ai-max-395 radeon-8060s mtp speculative-decoding base-model pretrained ling bailing-hybrid quantized conversational License:mit Model card FilesFiles and versions xet Community Deploy ..."
+    },
+    {
+      "title": "WhiskyAKM/Ling-3.0-flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/WhiskyAKM/Ling-3.0-flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - inclusionAI/Ling: Ling is a MoE LLM provided and open-sourced ...",
+      "url": "https://github.com/inclusionAI/Ling",
+      "snippet": "Ling is a MoE LLM provided and open-sourced by InclusionAI. We introduce two different sizes, which are Ling-lite and Ling-plus. Ling-lite has 16.8 billion parameters with 2.75 billion activated parameters, while Ling-plus has 290 billion parameters with 28.8 billion activated parameters. Both models demonstrate impressive performance compared to existing models in the industry. Their ..."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "InclusionAI Ling 3.0 Flash Complete Guide: 124B MoE with Hybrid Reasoning",
+      "url": "https://www.aimadetools.com/blog/ling-3-0-flash-complete-guide/",
+      "snippet": "Ling 3.0 Flash is a 124B MoE model with 5.1B active parameters. Hybrid reasoning mode, 262K context, free on OpenRouter. Specs and setup."
+    }
+  ]
+}

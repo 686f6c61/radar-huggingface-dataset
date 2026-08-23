@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "PHIMemo/llama31-8b-instruct-sft-balanced-3k-uniform-public",
+  "slug": "phimemo-llama31-8b-instruct-sft-balanced-3k-uniform-public",
+  "author": "PHIMemo",
+  "url": "https://huggingface.co/PHIMemo/llama31-8b-instruct-sft-balanced-3k-uniform-public",
+  "created_at": "2026-08-22T19:46:55.000Z",
+  "updated_at": "2026-08-22T19:54:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "memorization",
+    "synthetic-clinical",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32121113232,
+  "storage_human": "32.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PHIMemo/llama31-8b-instruct-sft-balanced-3k · Hugging Face",
+      "url": "https://huggingface.co/PHIMemo/llama31-8b-instruct-sft-balanced-3k",
+      "snippet": "PHIMemo / llama31-8b-instruct-sft-balanced-3k like 0 Follow PHI Memorization Project 2 Text Generation Transformers sft memorization synthetic-canaries License:llama3.1 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=synthetic-canaries",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: synthetic-canaries Clear all"
+    },
+    {
+      "title": "Llama_3_1_8B_Instruct.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/NeuralFalconYT/Meta-Llama-3.1-Colab/blob/main/Llama_3_1_8B_Instruct.ipynb",
+      "snippet": "Step 1: visit Llama-3.1-8B-Instruct Page Step 2: Wait a few minutes, you will receive access from Meta. Step 3: Access Hugging Face Token Step 4: Copy paste Hugging Face Token in Google Colab"
+    },
+    {
+      "title": "llama3.1:8b/model",
+      "url": "https://ollama.com/library/llama3.1:8b/blobs/667b0c1932bc",
+      "snippet": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B, 70B and 405B parameter sizes."
+    },
+    {
+      "title": "Llama 3.1 | meta-llama/llama-models | DeepWiki",
+      "url": "https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1",
+      "snippet": "Llama 3.1 represents a significant advancement in the Llama model series with extended context length (128K tokens), multilingual capabilities, and improved performance across various tasks. For information about other Llama model versions, see Llama 3.2, Llama 3.3, and Llama 4. For general model architecture details, see Model Architecture."
+    }
+  ]
+}

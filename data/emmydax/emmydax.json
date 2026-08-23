@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Emmydax/Emmydax",
+  "slug": "emmydax-emmydax",
+  "author": "Emmydax",
+  "url": "https://huggingface.co/Emmydax/Emmydax",
+  "created_at": "2026-08-22T19:32:04.000Z",
+  "updated_at": "2026-08-22T19:32:04.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emmydax · GitHub",
+      "url": "https://github.com/Emmydax",
+      "snippet": "Emmydax has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Emmydax12 · GitHub",
+      "url": "https://github.com/Emmydax12/",
+      "snippet": "Joined Dec 26, 2023 Block or report Emmydax12 Block user Add an optional note: Note Emmydax12 / README.md"
+    },
+    {
+      "title": "Emmi AI | Home",
+      "url": "https://www.emmi.ai/",
+      "snippet": "Large Engineering Models are pre-trained engineering intelligence that replace solvers, work everywhere, and deliver instant physics-accurate results for entire verticals."
+    },
+    {
+      "title": "An AI Instagram Model Made $80,000 in a Week. Here Is How the Scam ...",
+      "url": "https://www.ledgerapp.app/blog/ai-instagram-model-fanvue-scam-80k",
+      "snippet": "A Reddit operator detailed how they built a fake AI Instagram model that pulled in $80K from Fanvue subscriptions before Instagram banned the account. The exact playbook, the tells, and what to do about it."
+    },
+    {
+      "title": "Emmy (Emmy the Robot) - 1.0 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/811387294637418717",
+      "snippet": "Download Emmy (Emmy the Robot) - free LORA Pony AI model on TENSOR. EMMY THE ROBOT, WEBTOON, COMIC. By AMMai"
+    }
+  ]
+}

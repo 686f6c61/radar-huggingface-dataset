@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vincespeed/Ling-3.0-tiny-APEX-GGUF",
+  "slug": "vincespeed-ling-3-0-tiny-apex-gguf",
+  "author": "vincespeed",
+  "url": "https://huggingface.co/vincespeed/Ling-3.0-tiny-APEX-GGUF",
+  "created_at": "2026-08-21T02:52:12.000Z",
+  "updated_at": "2026-08-23T03:26:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "bailingmoe3",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:quantized:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 101,
+  "trending_score": 0,
+  "parameters": 7893392800,
+  "parameters_human": "7.89B",
+  "storage_bytes": 15694408416,
+  "storage_human": "15.7 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vincespeed/Ling-3.0-tiny-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/vincespeed/Ling-3.0-tiny-APEX-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vincespeed/Ling-3.0-tiny-APEX-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/vincespeed/Ling-3.0-tiny-APEX-GGUF/tree/main",
+      "snippet": "Instructions to use vincespeed/Ling-3.0-tiny-APEX-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use vincespeed/Ling-3.0-tiny-APEX-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Ling 3.0 Tiny - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/ling-3-0-tiny.html",
+      "snippet": "Download Ling 3.0 Tiny GGUF model. 14.7 GB, 35,641 downloads, 27 likes."
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling Ling is a general-purpose large language model series independently developed and open-sourced by Ant Group. Built on the MoE (Mixture of Experts) architecture, it has been validated on domestic heterogeneous computing platforms, achieved breakthrough at the trillion-parameter scale, and continues to evolve with long context modeling and AI Agent collaborative reasoning capabilities."
+    },
+    {
+      "title": "Ling 3.0 Tiny download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ling-3-0-tiny/",
+      "snippet": "Download Ling 3.0 Tiny for free. Lightweight MoE model for local reasoning, coding, and AI agents. Ling-3.0-tiny is inclusionAI&#x27;s lightweight hybrid reasoning Mixture-of-Experts model, designed to provide capable reasoning and agentic performance at low inference cost. It contains 7.9B total parameters while activating only 1.3B per token, using a hybrid architecture that alternates Kimi ..."
+    }
+  ]
+}

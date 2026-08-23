@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hahahataeyun/hrdexdb-act-two-view-all-v1-act-100k",
+  "slug": "hahahataeyun-hrdexdb-act-two-view-all-v1-act-100k",
+  "author": "hahahataeyun",
+  "url": "https://huggingface.co/hahahataeyun/hrdexdb-act-two-view-all-v1-act-100k",
+  "created_at": "2026-08-23T02:37:59.000Z",
+  "updated_at": "2026-08-23T02:43:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "imitation-learning",
+    "xarm6",
+    "allegro-hand",
+    "dataset:hahahataeyun/hrdexdb-act-two-view-all-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51653273,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206656596,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hahahataeyun/hrdexdb · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/hahahataeyun/hrdexdb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HRDexDB: A Paired Human-Robot Dataset for Cross-Embodiment Dexterous ...",
+      "url": "https://snuvclab.github.io/HRDexDB/",
+      "snippet": "HRDexDB is the first large-scale dataset featuring paired human and dexterous robotic hand manipulation. It provides over 2.1K sequences across 100 diverse objects and 5 distinct embodiments, all captured by a fully synchronized 23-camera system."
+    },
+    {
+      "title": "GitHub - snuvclab/HRDexDB",
+      "url": "https://github.com/snuvclab/HRDexDB",
+      "snippet": "HRDexDB provides paired dexterous grasping trajectories across human hands and robotic hand embodiments, captured on the same target objects under comparable grasping motions. The dataset includes synchronized visual, kinematic, and 3D annotation modalities, with contact-force signals available for tactile-enabled robot hands. Key statistics: 2.1K grasping sequences 100+ diverse objects 5 hand ..."
+    },
+    {
+      "title": "hahahataeyun/hrdexdb at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/hahahataeyun/hrdexdb/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HRDexDB: A Paired Human-Robot Dataset for Cross-Embodiment Dexterous ...",
+      "url": "https://arxiv.org/html/2604.14944",
+      "snippet": "To the best of our knowledge, HRDexDB is the first dataset to provide paired human and multi-robot dexterous manipulation captures over shared objects with markerless multi-view RGB observations in a unified and paired manner. We further demonstrate the value of HRDexDB through benchmarks in two directions."
+    }
+  ]
+}

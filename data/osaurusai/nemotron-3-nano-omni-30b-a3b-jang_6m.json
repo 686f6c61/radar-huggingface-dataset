@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "OsaurusAI/Nemotron-3-Nano-Omni-30B-A3B-JANG_6M",
+  "slug": "osaurusai-nemotron-3-nano-omni-30b-a3b-jang_6m",
+  "author": "OsaurusAI",
+  "url": "https://huggingface.co/OsaurusAI/Nemotron-3-Nano-Omni-30B-A3B-JANG_6M",
+  "created_at": "2026-08-23T03:18:15.000Z",
+  "updated_at": "2026-08-23T03:29:20.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "nemotron",
+    "nemotron-h",
+    "mamba",
+    "mamba2",
+    "ssm",
+    "mixture-of-experts",
+    "multimodal",
+    "vision",
+    "audio",
+    "video",
+    "speech",
+    "omni",
+    "reasoning",
+    "jang",
+    "JANG_6M",
+    "apple-silicon",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+    "base_model:finetune:nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8489433174,
+  "parameters_human": "8.49B",
+  "storage_bytes": 29130885789,
+  "storage_human": "29.1 GB",
+  "base_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OsaurusAI/Nemotron-3-Nano-Omni-30B-A3B-JANGTQ4 · Hugging Face",
+      "url": "https://huggingface.co/OsaurusAI/Nemotron-3-Nano-Omni-30B-A3B-JANGTQ4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nemotron-3-nano-omni-30b-a3b-reasoning Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning/modelcard",
+      "snippet": "Nemotron 3 Nano Omni is an omni-modal reasoning model that understands images, video, speech, text."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "Nemotron 3 Nano Omni 30B A3B Single model for video, audio, image, and text understanding for a simplified agent workflow Multimodal reasoning for sub-agents within agentic use cases such as computer use agent, document intelligence, and video/audio understanding Highest in-class efficiency and with low costs"
+    },
+    {
+      "title": "OsaurusAI/Nemotron-3-Nano-Omni-30B-A3B-MXFP4 at main",
+      "url": "https://huggingface.co/OsaurusAI/Nemotron-3-Nano-Omni-30B-A3B-MXFP4/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nemotron 3 Nano Omni: Efficient and Open Multimodal Intelligence",
+      "url": "https://arxiv.org/html/2604.24954",
+      "snippet": "Built on the highly efficient Nemotron 3 Nano 30B-A3B backbone, Nemotron 3 Nano Omni further incorporates innovative multimodal token-reduction techniques to deliver substantially lower inference latency and higher throughput than other models of similar size."
+    }
+  ]
+}

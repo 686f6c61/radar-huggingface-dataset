@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "iamthearafatkhan/dlr-pcvw-acne-severity",
+  "slug": "iamthearafatkhan-dlr-pcvw-acne-severity",
+  "author": "iamthearafatkhan",
+  "url": "https://huggingface.co/iamthearafatkhan/dlr-pcvw-acne-severity",
+  "created_at": "2026-08-23T02:53:14.000Z",
+  "updated_at": "2026-08-23T03:05:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 282252252,
+  "storage_human": "282 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ALADIN (Acne Lesion And Density INdex): a novel tool for automatic acne ...",
+      "url": "https://legit.health/validation/aladin-2026",
+      "snippet": "Published in Skin Health and Disease (Oxford Academic), this peer-reviewed study introduces ALADIN (Acne Lesion And Density INdex), an artificial intelligence-driven tool that combines inflammatory lesion count and spatial density from facial images to produce reproducible, interpretable acne severity scores aligned with the Investigator Global Assessment (IGA) scale."
+    },
+    {
+      "title": "DERMA AI: Real-Time Skin Disease Identification Using CNNs for Acne and ...",
+      "url": "https://www.computer.org/csdl/proceedings-article/icnsoc/2025/384400a378/2dvKsxpH9bq",
+      "snippet": "This study proposes a real-time skin disease identification system utilizing Convolutional Neural Networks (CNNs) for automated classification of acne and actinic keratosis. The proposed model is trained on a dataset comprising acne and benign skin cancer images, leveraging deep feature extraction for precise lesion detection and classification."
+    },
+    {
+      "title": "Artificial Intelligence in the Assessment and Grading of Acne ... - MDPI",
+      "url": "https://www.mdpi.com/2075-4426/15/6/238",
+      "snippet": "Background/Objectives: This review aims to systematically assess the recent advancements in artificial intelligence (AI) applications for acne diagnosis, lesion segmentation/counting, and severity grading, highlighting the potential of AI-driven methods to improve objectivity, reproducibility, and clinical efficiency."
+    },
+    {
+      "title": "Frontiers | Development and validation of an artificial intelligence ...",
+      "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2023.1255704/full",
+      "snippet": "Abstract Background: The management of acne requires the consideration of its severity; however, a universally adopted evaluation system for clinical practice is lacking. Artificial intelligence (AI) evaluation systems hold the promise of enhancing the efficiency and reproducibility of assessments."
+    },
+    {
+      "title": "(PDF) Artificial Intelligence in the Assessment and Grading of Acne ...",
+      "url": "https://www.researchgate.net/publication/392445034_Artificial_Intelligence_in_the_Assessment_and_Grading_of_Acne_Vulgaris_A_Systematic_Review",
+      "snippet": "Background/Objectives: This review aims to systematically assess the recent advancements in artificial intelligence (AI) applications for acne diagnosis, lesion segmentation/counting, and severity ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Vijibo/Nexus",
+  "slug": "vijibo-nexus",
+  "author": "Vijibo",
+  "url": "https://huggingface.co/Vijibo/Nexus",
+  "created_at": "2026-08-19T15:31:10.000Z",
+  "updated_at": "2026-08-22T21:26:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 19172315275,
+  "storage_human": "19.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NEXUS GEN — The 2026 AI Generation Atlas | Video & Image Models",
+      "url": "https://nexusgen.cc/",
+      "snippet": "The definitive 2026 atlas for AI video and image generation. Access every model version from Seedance 1.0 to 2.5, Sora 1 to Sora 3, Midjourney v5 to v8, Veo 2 to Veo 4, and DALL-E 3 to 4. Start generating with free credits."
+    },
+    {
+      "title": "AI Models - NexusAPI",
+      "url": "https://nexusapi.org/models",
+      "snippet": "Browse 500+ AI models from 37+ vendors. OpenAI, Anthropic, Google, DeepSeek, and more."
+    },
+    {
+      "title": "Vibo Video — AI Video Generator for Social Media | Vibo Suite",
+      "url": "https://www.vibosuite.com/video",
+      "snippet": "Create scroll-stopping videos with AI in seconds. Choose from cinematic, trendy, or minimalist styles. Export for TikTok, Reels & Shorts. Try Vibo Video free."
+    },
+    {
+      "title": "One AI workspace for meetings, docs, email & projects — Nexus AI",
+      "url": "https://nexusai.io/",
+      "snippet": "Nexus AI unifies your meetings, documents, email, and projects in one AI workspace. Record and transcribe meetings with Nexus Meet, and turn your files into a searchable knowledge base with Nexus Brainbase."
+    },
+    {
+      "title": "Vibo Suite — AI-Powered Social Media Management",
+      "url": "https://www.vibosuite.com/",
+      "snippet": "Generate viral AI videos, track analytics, and schedule posts across all platforms. Powered by AI."
+    }
+  ]
+}

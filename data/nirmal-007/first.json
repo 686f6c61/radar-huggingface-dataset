@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nirmal-007/first",
+  "slug": "nirmal-007-first",
+  "author": "nirmal-007",
+  "url": "https://huggingface.co/nirmal-007/first",
+  "created_at": "2026-08-23T02:45:51.000Z",
+  "updated_at": "2026-08-23T02:47:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "base_model:meta-llama/Llama-3.3-70B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.3-70B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-llama/Llama-3.3-70B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nirmal007 (Nirmal) - Hugging Face",
+      "url": "https://huggingface.co/Nirmal007",
+      "snippet": "User profile of Nirmal on Hugging Face"
+    },
+    {
+      "title": "username-007 (Nirmal) - Hugging Face",
+      "url": "https://huggingface.co/username-007/models",
+      "snippet": "User profile of Nirmal on Hugging Face"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Nirmal Negi - SDE || Exploring AI || Devops | LinkedIn",
+      "url": "https://in.linkedin.com/in/nirmal007",
+      "snippet": "SDE || Exploring AI || Devops · I am a passionate coder with a positive mindset. For me problems are like opportunities to learn something new. As a creative problem solver, I am dedicated to delivering high-quality code that meets business needs and provides an optimal user experience. I am a self-motivated individual with a growth mindset and a desire to continuously learn and improve my ..."
+    },
+    {
+      "title": "JAV Warp",
+      "url": "https://javwarp.com/",
+      "snippet": "Browse, search, and stream JAV titles with subtitles and premium media."
+    }
+  ]
+}

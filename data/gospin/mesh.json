@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "GOSPIN/Mesh",
+  "slug": "gospin-mesh",
+  "author": "GOSPIN",
+  "url": "https://huggingface.co/GOSPIN/Mesh",
+  "created_at": "2026-08-22T22:52:35.000Z",
+  "updated_at": "2026-08-22T22:52:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - gospinkisali80-art/Gospin-ai: My ai app by mesh",
+      "url": "https://github.com/gospinkisali80-art/Gospin-ai",
+      "snippet": "My ai app by mesh. Contribute to gospinkisali80-art/Gospin-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Gospin-ai/README.md at main · gospinkisali80-art/Gospin-ai",
+      "url": "https://github.com/gospinkisali80-art/Gospin-ai/blob/main/README.md",
+      "snippet": "My ai app by mesh. Contribute to gospinkisali80-art/Gospin-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "AI 3D Model Segmentation - Split a Model into Parts | AI 3D Model",
+      "url": "https://ai3dmodel.app/segmentation",
+      "snippet": "Split any 3D model or STL into separate, editable parts with AI 3D model segmentation — ready for editing, rigging, and 3D printing in seconds."
+    },
+    {
+      "title": "Mesh API - One API. Every AI Model.",
+      "url": "https://meshapi.ai/",
+      "snippet": "One API for GPT, Claude, Gemini and 1000+ AI models. OpenAI-compatible endpoint, real-time provider switching, pay in any currency."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

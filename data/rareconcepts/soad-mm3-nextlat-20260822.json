@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RareConcepts/soad-mm3-nextlat-20260822",
+  "slug": "rareconcepts-soad-mm3-nextlat-20260822",
+  "author": "RareConcepts",
+  "url": "https://huggingface.co/RareConcepts/soad-mm3-nextlat-20260822",
+  "created_at": "2026-08-22T19:08:42.000Z",
+  "updated_at": "2026-08-22T21:33:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimaxmusic",
+    "minimaxmusic-diffusers",
+    "text-to-audio",
+    "audio",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5318534144,
+  "storage_human": "5.3 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RareConcepts (Rare Data Concepts) - Hugging Face",
+      "url": "https://huggingface.co/RareConcepts/models",
+      "snippet": "Org profile for Rare Data Concepts on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Next AI Model — Track & Predict AI Model Releases",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Track every AI model release and forecast what&#x27;s coming next from OpenAI, Google, Anthropic, Meta, Mistral, xAI, Qwen and DeepSeek. Data-driven predictions with source-backed editorial notes."
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Models • Poly Haven",
+      "url": "https://polyhaven.com/models",
+      "snippet": "Hundreds of free 3D models, ready to use for any purpose. No login required."
+    }
+  ]
+}

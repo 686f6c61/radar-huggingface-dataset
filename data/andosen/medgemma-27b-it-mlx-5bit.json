@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "andosen/medgemma-27b-it-mlx-5Bit",
+  "slug": "andosen-medgemma-27b-it-mlx-5bit",
+  "author": "andosen",
+  "url": "https://huggingface.co/andosen/medgemma-27b-it-mlx-5Bit",
+  "created_at": "2026-08-23T00:07:15.000Z",
+  "updated_at": "2026-08-23T00:07:41.000Z",
+  "license": "health-ai-developer-foundations",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "medical",
+    "x-ray",
+    "pathology",
+    "dermatology",
+    "fundus",
+    "radiology report generation",
+    "chest-x-ray",
+    "medical-embeddings",
+    "image-classification",
+    "zero-shot-image-classification",
+    "image-feature-extraction",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "base_model:google/medgemma-27b-it",
+    "base_model:quantized:google/medgemma-27b-it",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5065352960,
+  "parameters_human": "5.07B",
+  "storage_bytes": 18604305570,
+  "storage_human": "18.6 GB",
+  "base_model": "google/medgemma-27b-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/medgemma-27b-it · Hugging Face",
+      "url": "https://huggingface.co/google/medgemma-27b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.5-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MedGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/medgemma/",
+      "snippet": "Accelerate the development of healthcare-based AI applications MedGemma 1.5 4B enables developers to more effectively adapt MedGemma for applications that involve high-dimensional imaging (CT, MRI, and whole slide histopathology), longitudinal analysis of chest X-rays, anatomical localization, and other medical imaging and text functionality."
+    },
+    {
+      "title": "MedGemma | Health AI Developer Foundations | Google for Developers",
+      "url": "https://developers.google.com/health-ai-developer-foundations/medgemma",
+      "snippet": "MedGemma is Google&#x27;s collection of open models for medical text and image comprehension, built on Gemma 3, designed to accelerate building healthcare-based AI applications. MedGemma is available in a 4B multimodal version, a 27B text-only version, and a 27B multimodal version. Common use cases for MedGemma include medical image interpretation, medical text comprehension, and clinical reasoning ..."
+    },
+    {
+      "title": "[2507.05201] MedGemma Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2507.05201",
+      "snippet": "We introduce MedGemma, a collection of medical vision-language foundation models based on Gemma 3 4B and 27B. MedGemma demonstrates advanced medical understanding and reasoning on images and text, significantly exceeding the performance of similar-sized generative models and approaching the performance of task-specific models, while maintaining ..."
+    }
+  ]
+}

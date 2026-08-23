@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "hozifa1/Faqih-Q14b-1.0V-GGUF",
+  "slug": "hozifa1-faqih-q14b-1-0v-gguf",
+  "author": "hozifa1",
+  "url": "https://huggingface.co/hozifa1/Faqih-Q14b-1.0V-GGUF",
+  "created_at": "2026-08-22T19:45:12.000Z",
+  "updated_at": "2026-08-22T21:37:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "islamic-ai",
+    "fiqh",
+    "qwen2.5",
+    "14b",
+    "quantized",
+    "4bit",
+    "text-generation",
+    "conversational",
+    "ar",
+    "dataset:hozifa1/faqih_sft_dataset",
+    "base_model:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "base_model:quantized:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 9943759494,
+  "storage_human": "9.9 GB",
+  "base_model": "unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hozifa1/Faqih-R1-14B-Islamic-AI · Hugging Face",
+      "url": "https://huggingface.co/hozifa1/Faqih-R1-14B-Islamic-AI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?apps=ollama&other=base_model:quantized:hozifa1/Faqih-R1-14B-Islamic-AI",
+      "snippet": "Explore machine learning models. Active filters: ollama, hozifa1/Faqih-R1-14B-Islamic-AI"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "local-llm-guide/04-advanced-usage/gguf-modelfile.md at main - GitHub",
+      "url": "https://github.com/Lingdas1/local-llm-guide/blob/main/04-advanced-usage/gguf-modelfile.md",
+      "snippet": "GGUF (GPT-Generated Unified Format) is the standard file format for running LLMs locally. Think of it as the .mp3 of AI models: Compressed — 70-85% smaller than the original float16 weights Fast — optimized for CPU and GPU inference Portable — one file contains the entire model Metadata-rich — includes tokenizer, chat template, and model config Every ollama pull downloads a GGUF file ..."
+    },
+    {
+      "title": "GGUF model list",
+      "url": "https://mitjafelicijan.github.io/gguf-list/",
+      "snippet": "GGUF model list Generated on 2025-02-27 17:51:07 (download collections.json)"
+    }
+  ]
+}

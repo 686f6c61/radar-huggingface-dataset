@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kerasformers/tipsv2-b14",
+  "slug": "kerasformers-tipsv2-b14",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/tipsv2-b14",
+  "created_at": "2026-08-22T23:32:03.000Z",
+  "updated_at": "2026-08-22T23:32:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "tipsv2",
+    "zero-shot-image-classification",
+    "vision",
+    "arxiv:2604.12012",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:google/tipsv2-b14",
+    "base_model:finetune:google/tipsv2-b14",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 784846896,
+  "storage_human": "785 MB",
+  "base_model": "google/tipsv2-b14",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/tipsv2-b14 · Hugging Face",
+      "url": "https://huggingface.co/google/tipsv2-b14",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for google/tipsv2-b14 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:google/tipsv2-b14",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset google/tipsv2-b14 Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc ..."
+    },
+    {
+      "title": "GitHub - google-deepmind/tips: TIPSv2 (CVPR&#x27;26) and TIPS (ICLR&#x27;25)",
+      "url": "https://github.com/google-deepmind/tips?tab=readme-ov-file",
+      "snippet": "TIPSv2 (CVPR&#x27;26) and TIPS (ICLR&#x27;25). Contribute to google-deepmind/tips development by creating an account on GitHub."
+    },
+    {
+      "title": "tipsv2-b14: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/tipsv2-b14-google",
+      "snippet": "Overview tipsv2-b14 is a contrastive vision-language model developed by google that produces spatially rich image features aligned with text embeddings. This Base variant contains 86M vision parameters and 110M text parameters, with an embedding dimension of 768, and uses a ViT vision encoder (12 layers) paired with a Transformer text encoder (12 layers). The model operates on 14×14 pixel ..."
+    },
+    {
+      "title": "tipsv2-b14 · Model · Inferix",
+      "url": "https://inferix.co/models/google/tipsv2-b14",
+      "snippet": "TIPSv2 — B/14 TIPSv2 (Text-Image Pre-training with Spatial awareness) is a family of contrastive vision-language models that produce spatially rich image features aligned with text embeddings. This is the Base variant with 86M vision params and 110M text params. Try the code snippets below or check out the GitHub repo for more use cases and visualizations, including zero-shot segmentation."
+    }
+  ]
+}

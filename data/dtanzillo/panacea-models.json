@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "DTanzillo/panacea-models",
+  "slug": "dtanzillo-panacea-models",
+  "author": "DTanzillo",
+  "url": "https://huggingface.co/DTanzillo/panacea-models",
+  "created_at": "2026-02-13T18:16:38.000Z",
+  "updated_at": "2026-08-23T03:14:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "space-safety",
+    "conjunction-assessment",
+    "satellite-collision",
+    "physics-informed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79926860,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "PanaceaAI (Kai Zhang) - Hugging Face",
+      "url": "https://huggingface.co/PanaceaAI/models",
+      "snippet": "Multimodal Learning, Federated Learning and AI in Healthcare."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "Panacea: A foundation model for clinical trial search, summarization ...",
+      "url": "https://arxiv.org/html/2407.11007v1",
+      "snippet": "Our approach demonstrates the effectiveness of Panacea in clinical trials and establishes a comprehensive resource, including training data, model, and benchmark, for developing clinical trial foundation models, paving the path for AI-based clinical trial development."
+    },
+    {
+      "title": "Paper page - Panacea: A foundation model for clinical trial search ...",
+      "url": "https://huggingface.co/papers/2407.11007",
+      "snippet": "Our approach demonstrates the effectiveness of Panacea in clinical trials and establishes a comprehensive resource, including training data, model, and benchmark, for developing clinical trial foundation models, paving the path for AI-based clinical trial development."
+    }
+  ]
+}

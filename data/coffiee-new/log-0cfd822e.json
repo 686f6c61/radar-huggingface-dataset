@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Coffiee-new/log-0cfd822e",
+  "slug": "coffiee-new-log-0cfd822e",
+  "author": "Coffiee-new",
+  "url": "https://huggingface.co/Coffiee-new/log-0cfd822e",
+  "created_at": "2026-08-23T00:18:50.000Z",
+  "updated_at": "2026-08-23T00:18:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70227302638,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coffiee-new (Antonio) - Hugging Face",
+      "url": "https://huggingface.co/Coffiee-new/models",
+      "snippet": "Coffiee-new/albedo-qwen3.6-35b-miner-hf-165cc. View all activity. Organizations. None yet. Coffiee-new &#x27;s models 65"
+    },
+    {
+      "title": "coffiee (Coffie) - Hugging Face",
+      "url": "https://huggingface.co/coffiee",
+      "snippet": "User profile of Coffie on Hugging Face"
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    }
+  ]
+}

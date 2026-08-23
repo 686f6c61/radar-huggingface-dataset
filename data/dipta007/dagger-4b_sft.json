@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "dipta007/dagger-4B_SFT",
+  "slug": "dipta007-dagger-4b_sft",
+  "author": "dipta007",
+  "url": "https://huggingface.co/dipta007/dagger-4B_SFT",
+  "created_at": "2026-01-01T23:12:31.000Z",
+  "updated_at": "2026-08-23T02:02:52.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "math",
+    "reasoning",
+    "computational-graph",
+    "bangla",
+    "low-resource",
+    "distractor-aware",
+    "sft",
+    "small-model",
+    "text-generation",
+    "conversational",
+    "bn",
+    "en",
+    "dataset:dipta007/dagger",
+    "dataset:dipta007/DistractMath-Bn",
+    "arxiv:2601.06853",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8638351522,
+  "storage_human": "8.6 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dipta007/dagger-4B_SFT · Hugging Face",
+      "url": "https://huggingface.co/dipta007/dagger-4B_SFT",
+      "snippet": "Uploaded finetuned model Developed by: dipta007 License: apache-2.0 Finetuned from model : unsloth/gemma-3-4b-it This gemma3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "dipta007/dagger-4B_SFT_GRPO · Hugging Face",
+      "url": "https://huggingface.co/dipta007/dagger-4B_SFT_GRPO",
+      "snippet": "dagger-4B_SFT_GRPO ... You need to agree to share your contact information to access this model ... Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "GitHub - dipta007/DAGGER: A distractor-aware Graph-execution based Math ...",
+      "url": "https://github.com/dipta007/DAGGER",
+      "snippet": "A distractor-aware Graph-execution based Math LLM. Contribute to dipta007/DAGGER development by creating an account on GitHub."
+    },
+    {
+      "title": "dipta007/dagger-4B_SFT_GRPO - Fast, Reliable, and ... - friendli.ai",
+      "url": "https://friendli.ai/models/dipta007/dagger-4B_SFT_GRPO",
+      "snippet": "Run dipta007/dagger-4B_SFT_GRPO with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "DAGGER: Distractor-Aware Graph Generation for Executable Reasoning",
+      "url": "https://dipta007.github.io/DAGGER/",
+      "snippet": "We present DAGGER, a framework that reformulates mathematical reasoning as computational graph generation with explicit distractor modeling. Achieves 89% fewer tokens than reasoning models while maintaining comparable accuracy."
+    }
+  ]
+}

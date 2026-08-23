@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "occurra/person_reid_siglip2_naflex_512d",
+  "slug": "occurra-person_reid_siglip2_naflex_512d",
+  "author": "occurra",
+  "url": "https://huggingface.co/occurra/person_reid_siglip2_naflex_512d",
+  "created_at": "2026-08-21T14:33:19.000Z",
+  "updated_at": "2026-08-22T20:51:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "person-re-identification",
+    "reid",
+    "image-retrieval",
+    "image-feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 751094303,
+  "storage_human": "751 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apatc/person_reid_siglip2_naflex_512d · Hugging Face",
+      "url": "https://huggingface.co/apatc/person_reid_siglip2_naflex_512d",
+      "snippet": "person_reid_siglip2_naflex_512d Image-to-image person re-identification. Crops in, 512-d unit-norm vectors out; compare with a dot product (cosine similarity)."
+    },
+    {
+      "title": "occurra (occurra) - Hugging Face",
+      "url": "https://huggingface.co/occurra/models",
+      "snippet": "Org profile for occurra on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - KaiyangZhou/deep-person-reid: Torchreid: Deep learning person ...",
+      "url": "https://github.com/KaiyangZhou/deep-person-reid",
+      "snippet": "Torchreid is a library for deep-learning person re-identification, written in PyTorch and developed for our ICCV&#x27;19 project, Omni-Scale Feature Learning for Person Re-Identification. It features: multi-GPU training support both image- and video-reid end-to-end training and evaluation incredibly easy preparation of reid datasets multi-dataset ..."
+    },
+    {
+      "title": "siglip2-naflex/models/siglip2 at main · Findit-AI/siglip2-naflex - GitHub",
+      "url": "https://github.com/Findit-AI/siglip2-naflex/tree/main/models/siglip2",
+      "snippet": "Contribute to Findit-AI/siglip2-naflex development by creating an account on GitHub."
+    },
+    {
+      "title": "[2502.14786] SigLIP 2: Multilingual Vision-Language Encoders with ...",
+      "url": "https://arxiv.org/abs/2502.14786",
+      "snippet": "We introduce SigLIP 2, a family of new multilingual vision-language encoders that build on the success of the original SigLIP. In this second iteration, we extend the original image-text training objective with several prior, independently developed techniques into a unified recipe -- this includes captioning-based pretraining, self-supervised losses (self-distillation, masked prediction) and ..."
+    }
+  ]
+}

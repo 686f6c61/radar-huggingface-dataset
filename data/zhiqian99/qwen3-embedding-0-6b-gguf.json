@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "zhiqian99/Qwen3-Embedding-0.6B-GGUF",
+  "slug": "zhiqian99-qwen3-embedding-0-6b-gguf",
+  "author": "zhiqian99",
+  "url": "https://huggingface.co/zhiqian99/Qwen3-Embedding-0.6B-GGUF",
+  "created_at": "2026-08-23T01:47:23.000Z",
+  "updated_at": "2026-08-23T01:47:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "ru",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "embedding",
+    "sentence-transformers",
+    "Qwen3",
+    "imatrix",
+    "llama-cpp",
+    "sentence-similarity",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "ru",
+    "ar",
+    "dataset:explodinggradients/fiqa",
+    "dataset:PatronusAI/financebench",
+    "dataset:zeroshot/twitter-financial-news-sentiment",
+    "dataset:philschmid/finanical-rag-embedding-dataset",
+    "dataset:openai/gsm8k",
+    "dataset:DigitalLearningGmbH/MATH-lighteval",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:quantized:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 11183156128,
+  "storage_human": "11.2 GB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Embedding-0.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-Embedding-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Embedding",
+      "url": "https://github.com/QwenLM/Qwen3-Embedding",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities, long-text ..."
+    },
+    {
+      "title": "Qwen3-Embedding-0.6B-GGUF: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3-embedding-0.6b-gguf-qwen",
+      "snippet": "Overview Qwen3-Embedding-.6B-GGUF is a text embedding model developed by Qwen with 600 million parameters, designed for tasks like text retrieval, code retrieval, text classification, clustering, and bitext mining. This GGUF-quantized version runs via llama.cpp and produces dense vector embeddings up to 1024 dimensions, supporting flexible output dimensions from 32 to 1024. The model accepts ..."
+    },
+    {
+      "title": "Qwen3-Embedding-0.6B-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/Qwen/Qwen3-Embedding-0.6B-GGUF",
+      "snippet": "Highlights The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B). This series inherits the exceptional multilingual capabilities ..."
+    }
+  ]
+}

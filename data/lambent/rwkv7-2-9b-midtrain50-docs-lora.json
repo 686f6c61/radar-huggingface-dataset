@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Lambent/RWKV7-2.9B-midtrain50-docs-lora",
+  "slug": "lambent-rwkv7-2-9b-midtrain50-docs-lora",
+  "author": "Lambent",
+  "url": "https://huggingface.co/Lambent/RWKV7-2.9B-midtrain50-docs-lora",
+  "created_at": "2026-08-23T00:18:25.000Z",
+  "updated_at": "2026-08-23T00:21:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dataset:Sefaria/hebrew_library",
+    "dataset:community-datasets/hebrew_this_world",
+    "dataset:wikimedia/wikisource",
+    "dataset:manu/project_gutenberg",
+    "dataset:open-web-math/open-web-math",
+    "dataset:typeof/algebraic-stack",
+    "dataset:tokyotech-llm/swallow-math-v2",
+    "dataset:bigcode/starcoderdata",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:recursal/arXiv-CC0-v0.5",
+    "dataset:recursal/SuperWikiNEXT-32B",
+    "dataset:epfml/FineWeb2-HQ",
+    "dataset:Lambent/fineweb2-hq-seeds",
+    "base_model:RWKV/RWKV7-1.5B-20260805",
+    "base_model:finetune:RWKV/RWKV7-1.5B-20260805",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 755025272,
+  "storage_human": "755 MB",
+  "base_model": "RWKV/RWKV7-1.5B-20260805",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lambent/RWKV7-1.5B-midtrain50-docs-lora · Hugging Face",
+      "url": "https://huggingface.co/Lambent/RWKV7-1.5B-midtrain50-docs-lora",
+      "snippet": "Lambent / RWKV7-1.5B-midtrain50-docs-lora like 0 Safetensors 14 datasets License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "fla-hub/rwkv7-2.9B-world · Hugging Face",
+      "url": "https://huggingface.co/fla-hub/rwkv7-2.9B-world",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RWKV · GitHub",
+      "url": "https://github.com/rwkv",
+      "snippet": "RWKV is an RNN with Transformer-level LLM performance. It is hosted as an incubation project in LF AI & Data Foundation."
+    },
+    {
+      "title": "RWKV Language Model",
+      "url": "https://www.rwkv.com/",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance and parallelizable like a Transformer. Check RWKV-7 \"Goose\" reasoning models. It&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctxlen, and free text embedding. And it&#x27;s 100% attention-free, and a Linux Foundation AI project."
+    },
+    {
+      "title": "GitHub - BlinkDL/RWKV-LM: RWKV (pronounced RwaKuv) is an RNN with great ...",
+      "url": "https://github.com/BlinkDL/RWKV-LM",
+      "snippet": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 \"Goose\". So it&#x27;s combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding. - BlinkDL/RWKV-LM"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "devanshty/Code-Autopsy",
+  "slug": "devanshty-code-autopsy",
+  "author": "devanshty",
+  "url": "https://huggingface.co/devanshty/Code-Autopsy",
+  "created_at": "2026-05-29T00:29:29.000Z",
+  "updated_at": "2026-08-22T23:30:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "code",
+    "code-review",
+    "bug-fixing",
+    "qwen",
+    "qwen2.5-coder",
+    "qlora",
+    "trl",
+    "static-analysis",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41735293,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code Bug Diagnosis & Refactoring",
+      "dataset": null,
+      "metric": "Validation Loss",
+      "value": 0.2442
+    }
+  ],
+  "sources": [
+    {
+      "title": "devanshty/Code-Autopsy · Hugging Face",
+      "url": "https://huggingface.co/devanshty/Code-Autopsy",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "devanshty/Code-Autopsy - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/devanshty/Code-Autopsy",
+      "snippet": "Run devanshty/Code-Autopsy with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "devanshty/Code-Autopsy at main - Hugging Face",
+      "url": "https://huggingface.co/devanshty/Code-Autopsy/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "devanshty (Devansh Tyagi) - Hugging Face",
+      "url": "https://huggingface.co/devanshty",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 8 hours ago ... published a model about 8 hours ago"
+    },
+    {
+      "title": "adapter_model.safetensors · devanshty/code-autopsy-lora at main",
+      "url": "https://huggingface.co/devanshty/code-autopsy-lora/blob/main/adapter_model.safetensors",
+      "snippet": "Instructions to use devanshty/code-autopsy-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use devanshty/code-autopsy-lora with PEFT:"
+    }
+  ]
+}

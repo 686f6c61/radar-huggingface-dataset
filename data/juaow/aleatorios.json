@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "juaow/aleatorios",
+  "slug": "juaow-aleatorios",
+  "author": "juaow",
+  "url": "https://huggingface.co/juaow/aleatorios",
+  "created_at": "2025-06-04T17:49:32.000Z",
+  "updated_at": "2026-08-22T21:39:04.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18396454653,
+  "storage_human": "18.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "juaow/aleatorios · Hugging Face",
+      "url": "https://huggingface.co/juaow/aleatorios",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "juaow/aleatorios at main - Hugging Face",
+      "url": "https://huggingface.co/juaow/aleatorios/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "Open-source AI models · The Open Weights",
+      "url": "https://theopenweights.com/models",
+      "snippet": "The daily record of open-source AI: new model releases, leaderboards, and what&#x27;s coming next."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

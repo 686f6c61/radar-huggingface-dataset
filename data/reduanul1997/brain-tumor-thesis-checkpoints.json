@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Reduanul1997/brain-tumor-thesis-checkpoints",
+  "slug": "reduanul1997-brain-tumor-thesis-checkpoints",
+  "author": "Reduanul1997",
+  "url": "https://huggingface.co/Reduanul1997/brain-tumor-thesis-checkpoints",
+  "created_at": "2026-07-26T03:29:36.000Z",
+  "updated_at": "2026-08-23T03:48:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "brain-tumor",
+    "brain-tumor-segmentation",
+    "medical-image-segmentation",
+    "mri",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26125504480,
+  "storage_human": "26.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reduanul1997 (Reduanul Islam) - Hugging Face",
+      "url": "https://huggingface.co/Reduanul1997",
+      "snippet": "I am very interest at AI/ML Recent Activity updated a modelabout 9 hours ago Reduanul1997/brain-tumor-thesis-checkpoints published a model14 days ago Reduanul1997 ..."
+    },
+    {
+      "title": "Brain Tumor Detection Using CNN | PDF | Thesis | Higher Education",
+      "url": "https://www.scribd.com/document/881845812/Brain-Tumor-Detection",
+      "snippet": "The document is a thesis titled &#x27;Brain Tumor Detection with Convolutional Neural Network&#x27; submitted by students of Brac University for their B.Sc. in Computer Science. It includes a declaration of originality and approval from the examining committee, detailing the acceptance of the thesis on May 23, 2023. The thesis is supervised by Rafeed Rahman and co-supervised by Dr. Md. Iqbal Hossain and ..."
+    },
+    {
+      "title": "Automated brain tumor detection in MRI images using CNN and ResNet ...",
+      "url": "https://arxiv.deeppaper.ai/papers/2606.27405v1",
+      "snippet": "Accurate and early diagnosis of brain tumors remains challenging due to the complexity of brain structures and reliance on manual interpretation. This work presents an automated deep learning-based approach for brain tumor detection from MRI images using Convolutional Neural Networks and Residual Networks."
+    },
+    {
+      "title": "Brain Tumor Detection using Convolutional Neural Network",
+      "url": "https://www.researchgate.net/publication/334947653_Brain_Tumor_Detection_using_Convolutional_Neural_Network",
+      "snippet": "In this thesis work, we developed a model to extract brain tumor from 2D Magnetic Resonance brain Images (MRI) by Fuzzy C-Means clustering algorithm which was followed by both traditional ..."
+    },
+    {
+      "title": "A novel approach for the detection of brain tumor and its ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-87934-4",
+      "snippet": "A brain tumor can be categorized into two types: benign and malignant 2. Magnetic resonance imaging is a type of imaging that uses the combination of electrical and sound waves to visualize the brain."
+    }
+  ]
+}

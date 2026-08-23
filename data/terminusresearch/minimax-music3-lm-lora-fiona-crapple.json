@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "terminusresearch/minimax-music3-lm-lora-fiona-crapple",
+  "slug": "terminusresearch-minimax-music3-lm-lora-fiona-crapple",
+  "author": "terminusresearch",
+  "url": "https://huggingface.co/terminusresearch/minimax-music3-lm-lora-fiona-crapple",
+  "created_at": "2026-08-20T06:00:10.000Z",
+  "updated_at": "2026-08-22T21:41:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "music",
+    "minimax-music3",
+    "language-model",
+    "trigger-word",
+    "simpletuner",
+    "text-to-audio",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2357881221,
+  "storage_human": "2.4 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "minimax-music3-lm-lora-fiona-crapple - Hugging Face",
+      "url": "https://huggingface.co/terminusresearch/minimax-music3-lm-lora-fiona-crapple",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3/tree/main",
+      "snippet": "MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality."
+    },
+    {
+      "title": "terminusresearch/minimax-music3-lm-lora-fiona-crapple · Discussions",
+      "url": "https://huggingface.co/terminusresearch/minimax-music3-lm-lora-fiona-crapple/discussions",
+      "snippet": "terminusresearch / minimax-music3-lm-lora-fiona-crapple like 0 Follow Terminus Research Group 63 Text-to-Audio lora music minimax-music3 language-model trigger-word simpletuner License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Sort: Recently created"
+    },
+    {
+      "title": "MiniMax Music 3",
+      "url": "https://minimax-ai.github.io/music3-demo/",
+      "snippet": "Demo Page MiniMax Music 3 This page provides intuitive audio demonstrations of our results. For more technical details, see Huggingface model card."
+    }
+  ]
+}

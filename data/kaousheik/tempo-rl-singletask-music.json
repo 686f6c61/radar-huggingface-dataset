@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Kaousheik/tempo-rl-singletask-music",
+  "slug": "kaousheik-tempo-rl-singletask-music",
+  "author": "Kaousheik",
+  "url": "https://huggingface.co/Kaousheik/tempo-rl-singletask-music",
+  "created_at": "2026-08-22T20:31:16.000Z",
+  "updated_at": "2026-08-22T20:36:53.000Z",
+  "license": "nvidia-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "audioflamingo3",
+    "audio",
+    "timestamping",
+    "temporal-grounding",
+    "speaker-diarization",
+    "dense-audio-captioning",
+    "music-captioning",
+    "large-audio-language-model",
+    "audio-text-to-text",
+    "dataset:Kaousheik/tempo",
+    "base_model:nvidia/audio-flamingo-3",
+    "base_model:finetune:nvidia/audio-flamingo-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8271605248,
+  "parameters_human": "8.27B",
+  "storage_bytes": 16555011065,
+  "storage_human": "16.6 GB",
+  "base_model": "nvidia/audio-flamingo-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaousheik Jayakumar",
+      "url": "https://kaousheik-26.github.io/",
+      "snippet": "I am a 1st year Master&#x27;s student in Computer Science at University of Maryland, College Park. I work audio-visual understanding at Gamma Lab and PIRL lab under the guidance of Prof. Dinesh Manocha and Prof. Ramani Duraiswami I completed my undergrad from IIT Madras where I had the opportunity to work with Prof. Umesh at the SPRING Lab on multilingual ASR systems for Indian languages. I was ..."
+    },
+    {
+      "title": "Kaousheik (Jayakumar) - Hugging Face",
+      "url": "https://huggingface.co/Kaousheik",
+      "snippet": "Sort: Recently updated Kaousheik/temporal-lalm Viewer •Updated about 3 hours ago•1.66k"
+    },
+    {
+      "title": "Kaousheik Jayakumar - Google Scholar",
+      "url": "https://scholar.google.com/citations?user=Yc8bSDIAAAAJ&hl=en",
+      "snippet": "‪University of Maryland, College Park‬ - ‪‪Cited by 23‬‬ - ‪Audio language models‬"
+    },
+    {
+      "title": "PDF Kaousheik Jayakumar",
+      "url": "https://kaousheik-26.github.io/assets/kaousheik_CV.pdf",
+      "snippet": "TEMPO: Temporally-grounded Multi-task Post-training for Large Audio-Language Models Apoorva Kulkarni*, Kaousheik Jayakumar*, Sreyan Ghosh, Utathya Aich, Ramani Duraiswami, Dinesh Manocha Under Review Playing with Fire : What Transfers When RL Trains a Language Agent?"
+    },
+    {
+      "title": "Kaousheik/temporal-lalm · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Kaousheik/temporal-lalm/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

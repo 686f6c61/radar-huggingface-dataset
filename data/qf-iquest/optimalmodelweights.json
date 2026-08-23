@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qf-iquest/OptimalModelWeights",
+  "slug": "qf-iquest-optimalmodelweights",
+  "author": "qf-iquest",
+  "url": "https://huggingface.co/qf-iquest/OptimalModelWeights",
+  "created_at": "2026-08-22T22:38:07.000Z",
+  "updated_at": "2026-08-22T22:38:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qf-iquest/OptimalModelWeights · Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/OptimalModelWeights",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qf-iquest/OptimalModelWeights at main - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/OptimalModelWeights/tree/main",
+      "snippet": "Instructions to use qf-iquest/OptimalModelWeights with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use qf-iquest/OptimalModelWeights with Transformers:"
+    },
+    {
+      "title": "Open-weight AI models: the complete database — BasedAI",
+      "url": "https://basedai.co/models",
+      "snippet": "Open-weight AI models: the complete database Open-weight models — from DeepSeek, Moonshot, Zhipu, Alibaba, Meta, Mistral, MiniMax, and OpenAI — now compete directly with proprietary flagships. This database tracks every major open source model: parameters, context windows, licenses, API pricing, benchmarks, and what it takes to run each one yourself."
+    },
+    {
+      "title": "GitHub - IQuestLab/IQuest-Coder-V1",
+      "url": "https://github.com/IQuestLab/IQuest-Coder-V1",
+      "snippet": "Efficient Architecture: The IQuest-Coder-V1-Loop variant introduces a recurrent mechanism that optimizes the trade-off between model capacity and deployment footprint. The 7B and 14B models adopt shallow architectures for faster inference speed."
+    },
+    {
+      "title": "GitHub - xigh/open-weight-models: Curated list of open-weight AI models ...",
+      "url": "https://github.com/xigh/open-weight-models",
+      "snippet": "Curated list of open-weight AI models with commercially exploitable licenses, verified benchmarks, and no EU restrictions. - xigh/open-weight-models"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-RAG-QLoRA",
+  "slug": "mr-rosen-accuracy-is-not-enough-finqa-rag-qlora",
+  "author": "Mr-Rosen",
+  "url": "https://huggingface.co/Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-RAG-QLoRA",
+  "created_at": "2026-08-23T02:20:10.000Z",
+  "updated_at": "2026-08-23T02:20:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "lora",
+    "rag",
+    "finqa",
+    "finance",
+    "numerical-reasoning",
+    "text-generation",
+    "conversational",
+    "dataset:Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-Dataset",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397596,
+  "storage_human": "657 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accuracy-Is-Not-Enough-Practical-Financial-QA/README.md at main ...",
+      "url": "https://github.com/MarkPaulRosenthal/Accuracy-Is-Not-Enough-Practical-Financial-QA/blob/main/README.md",
+      "snippet": "Accuracy Is Not Enough: A Practical Comparison of RAG, LoRA, QLoRA, and Hybrid LLM Systems for Financial Question Answering This study evaluates existing financial question answering methods through a practical comparative framework that accounts for the time, cost, and deployment demands faced by smaller teams in production environments, addressing a gap left by research that often focuses on ..."
+    },
+    {
+      "title": "Mr-Rosen (Mark Paul Rosenthal) - Hugging Face",
+      "url": "https://huggingface.co/Mr-Rosen",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 2 months ago ... updated a dataset about 2 months ago"
+    },
+    {
+      "title": "rLLM-FinQA-4B - Hugging Face",
+      "url": "https://huggingface.co/rLLM/rLLM-FinQA-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Outcome Accuracy is Not Enough: Aligning Model Reasoning ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/neuralchainai_outcome-accuracy-is-not-enough-aligning-activity-7427356043141316608-z6G0",
+      "snippet": "Have you ever wondered if your model&#x27;s impressive accuracy truly reflects its capability? The recent paper \"𝗢𝘂𝘁𝗰𝗼𝗺𝗲 ..."
+    },
+    {
+      "title": "rLLM-FinQA: How a 4B Model Outperforms 235B and Rivals Gemini 2.5 Pro ...",
+      "url": "https://rllm-project.com/post.html?post=finqa.md",
+      "snippet": "rLLM-FinQA: How a 4B Model Outperforms 235B and Rivals Gemini 2.5 Pro on Financial Analysis"
+    }
+  ]
+}

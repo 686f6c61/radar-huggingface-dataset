@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "norenyy/BitLing-3.0-tiny-MemHash-DBMoE-W1A1",
+  "slug": "norenyy-bitling-3-0-tiny-memhash-dbmoe-w1a1",
+  "author": "norenyy",
+  "url": "https://huggingface.co/norenyy/BitLing-3.0-tiny-MemHash-DBMoE-W1A1",
+  "created_at": "2026-08-23T03:06:22.000Z",
+  "updated_at": "2026-08-23T03:20:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "bailing_hybrid",
+    "text-generation",
+    "ling",
+    "moe",
+    "memhash",
+    "hash-routing",
+    "diffusionblocks",
+    "w1a1",
+    "1-bit",
+    "mmap",
+    "conversational",
+    "custom_code",
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:finetune:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1040661780,
+  "storage_human": "1.0 GB",
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inclusionAI/Ling-3.0-tiny · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ling 3.0 Tiny download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/ling-3-0-tiny/",
+      "snippet": "Download Ling 3.0 Tiny for free. Lightweight MoE model for local reasoning, coding, and AI agents. Ling-3.0-tiny is inclusionAI&#x27;s lightweight hybrid reasoning Mixture-of-Experts model, designed to provide capable reasoning and agentic performance at low inference cost. It contains 7.9B total parameters while activating only 1.3B per token, using a hybrid architecture that alternates Kimi ..."
+    },
+    {
+      "title": "Ling-3.0-tiny · Models",
+      "url": "https://www.modelscope.cn/models/inclusionAI/Ling-3.0-tiny",
+      "snippet": "We are introducing Ling-3.0-tiny, a lightweight hybrid reasoning MoE model with 7.9B total parameters and only 1.3B activated parameters per token. It is designed to deliver strong reasoning and agentic capabilities at low inference cost, making advanced model capabilities more accessible for local and resource-constrained deployment."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Ling-3.0-tiny Edge Ledger: 7.9B Params, 1.3B Active, 86-90 tokens/s ...",
+      "url": "https://www.aimodeling.com/en/news/slug/ling-3-0-tiny-edge-deployment-ledger",
+      "snippet": "A Model Card That Says \"No Datacenter Required\" inclusionAI has open-sourced Ling-3.0-tiny, the entry-level member of the Ling 3.0 family: a hybrid-reasoning MoE model with 7.9B total parameters and only 1.3B activated per token, released under the MIT license with weights on Hugging Face."
+    }
+  ]
+}

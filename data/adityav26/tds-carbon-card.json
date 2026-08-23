@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AdityaV26/tds-carbon-card",
+  "slug": "adityav26-tds-carbon-card",
+  "author": "AdityaV26",
+  "url": "https://huggingface.co/AdityaV26/tds-carbon-card",
+  "created_at": "2026-08-22T19:17:16.000Z",
+  "updated_at": "2026-08-22T19:21:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adisinha95/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/adisinha95/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA V100 (4 GPUs) Training Mode: fine-tuning Region: europe-north1 GPU Hours: 447.8h (PUE: 1.32) Total Energy: 709.3152 kWh CO₂ Emissions: 85.118 kg ..."
+    },
+    {
+      "title": "itsAayush/tds-carbon-card · Hugging Face",
+      "url": "https://huggingface.co/itsAayush/tds-carbon-card",
+      "snippet": "Model Card - Green AI Carbon Accounting This repository documents the carbon footprint and energy accounting for the assigned model training run in TDS GA8. Training Specifications Hardware: NVIDIA L40S (6 GPUs) Training Mode: pre-training Region: asia-south1 GPU Hours: 164.1h (PUE: 1.4) Total Energy: 482.454 kWh CO₂ Emissions: 313.595 kg CO₂eq"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    },
+    {
+      "title": "Gemini 3.7 Flash - Model Card — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/gemini-3-7-flash/",
+      "snippet": "Description Gemini 3.7 Flash is the next iteration in the Gemini 3 model family, featuring algorithmic improvements to its core reasoning foundation. It supports customizable thinking configurations to control the mix of quality, cost and latency."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Saeedno/edgeagent-models",
+  "slug": "saeedno-edgeagent-models",
+  "author": "Saeedno",
+  "url": "https://huggingface.co/Saeedno/edgeagent-models",
+  "created_at": "2026-08-22T22:11:59.000Z",
+  "updated_at": "2026-08-22T22:11:59.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ongrid/internal/edgeagent/model at main · ongridio/ongrid",
+      "url": "https://github.com/ongridio/ongrid/tree/main/internal/edgeagent/model",
+      "snippet": "An ops AI Agent that understands your infrastructure, finds the root cause, and fixes it — right from Slack, Telegram, Lark or DingTalk. - ongridio/ongrid"
+    },
+    {
+      "title": "EdgeAgent/README.md at main - GitHub",
+      "url": "https://github.com/EdgeAgent/EdgeAgent/blob/main/README.md",
+      "snippet": "Special repository for my GitHub profile README. Showcase of AI Developer skills, agent swarms, and CRM automation. - EdgeAgent/README.md at main · EdgeAgent/EdgeAgent"
+    },
+    {
+      "title": "Documentation - Edge Agent",
+      "url": "https://edge-agent.dev/docs",
+      "snippet": "Get started with Edge Agent. Learn how to embed an AI agent in your web app or use the hosted terminal."
+    },
+    {
+      "title": "Edge Agent - Browser-Native AI Coding Assistant",
+      "url": "https://edge-agent.dev/",
+      "snippet": "A fully browser-native AI coding assistant with a real sandbox. No server required."
+    },
+    {
+      "title": "Eufy&#x27;s EdgeAgent: A New Standard in Local AI Security",
+      "url": "https://www.machinebrief.com/news/eufys-edgeagent-a-new-standard-in-local-ai-security-ifvp",
+      "snippet": "Eufy&#x27;s EdgeAgent sets a new standard in home security with instant AI processing and no subscription fees. Is this the future of security systems?"
+    }
+  ]
+}

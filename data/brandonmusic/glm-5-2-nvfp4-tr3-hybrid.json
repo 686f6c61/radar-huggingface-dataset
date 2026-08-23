@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "brandonmusic/GLM-5.2-NVFP4-TR3-Hybrid",
+  "slug": "brandonmusic-glm-5-2-nvfp4-tr3-hybrid",
+  "author": "brandonmusic",
+  "url": "https://huggingface.co/brandonmusic/GLM-5.2-NVFP4-TR3-Hybrid",
+  "created_at": "2026-07-12T09:48:16.000Z",
+  "updated_at": "2026-08-23T01:41:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "glm_moe_dsa",
+    "glm",
+    "nvfp4",
+    "exl3",
+    "quantization",
+    "mixture-of-experts",
+    "blackwell",
+    "text-generation",
+    "conversational",
+    "base_model:lukealonso/GLM-5.2-NVFP4",
+    "base_model:quantized:lukealonso/GLM-5.2-NVFP4",
+    "license:mit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 217391081472,
+  "parameters_human": "217.39B",
+  "storage_bytes": 351908177389,
+  "storage_human": "351.9 GB",
+  "base_model": "lukealonso/GLM-5.2-NVFP4, zai-org/GLM-5.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brandonmusic/GLM-5.2-NVFP4-TR3-Hybrid · Hugging Face",
+      "url": "https://huggingface.co/brandonmusic/GLM-5.2-NVFP4-TR3-Hybrid",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "brandonmusic/GLM-5.2-NVFP4-TR3-Hybrid at main - Hugging Face",
+      "url": "https://huggingface.co/brandonmusic/GLM-5.2-NVFP4-TR3-Hybrid/tree/main",
+      "snippet": "brandonmusic / GLM-5.2-NVFP4-TR3-Hybrid like 5 Safetensors glm_moe_dsa modelopt Model card FilesFiles and versions xet Community Copy to bucket new main GLM-5.2-NVFP4-TR3-Hybrid 352 GB Ctrl+K Ctrl+K 1 contributor History:33 commits brandonmusic docs: disk budget — per-artifact sizes, peak, and what can be freed when d14a9cc verified1 day ago benchmarksPublish validated 3072-block CKV ..."
+    },
+    {
+      "title": "GLM 5.2 NVFP4 TR3 Hybrid by brandonmusic",
+      "url": "https://llm-explorer.com/model/brandonmusic%2FGLM-5.2-NVFP4-TR3-Hybrid,3U5fS4paDTNaGsIqcJylrL",
+      "snippet": "GLM 5.2 NVFP4 TR3 Hybrid is an open-source LLM by brandonmusic. VRAM 0.8GB, 1024K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "brandonmmusic-max/glm52-tr3-hybrid - GitHub",
+      "url": "https://github.com/brandonmmusic-max/glm52-tr3-hybrid",
+      "snippet": "Reproducible Docker image, benchmarks, KLD, and full engineering record for GLM-5.2 NVFP4/TR3 Hybrid - brandonmmusic-max/glm52-tr3-hybrid"
+    },
+    {
+      "title": "GLM-5.2-NVFP4-TR3-Hybrid API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/brandonmusic/GLM-5.2-NVFP4-TR3-Hybrid",
+      "snippet": "Run GLM-5.2-NVFP4-TR3-Hybrid with FriendliAI inference. A two-tier expert-quantized build of GLM-5.2 (753B-class MoE, 78 transformer layers + MTP head, 256…"
+    }
+  ]
+}

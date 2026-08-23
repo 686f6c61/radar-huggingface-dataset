@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "longertime/logicpeak-ft-g1",
+  "slug": "longertime-logicpeak-ft-g1",
+  "author": "longertime",
+  "url": "https://huggingface.co/longertime/logicpeak-ft-g1",
+  "created_at": "2026-08-23T00:24:29.000Z",
+  "updated_at": "2026-08-23T00:24:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70227302638,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "longertime (GAM) - Hugging Face",
+      "url": "https://huggingface.co/longertime/models",
+      "snippet": "Sort: Recently updated. longertime/affine-false. Updated Dec 4, 2025. longertime/affine-llo. Updated Dec 4, 2025. longertime/affine-fantasi"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    },
+    {
+      "title": "Fastest AI Models - Lowest Latency LLMs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/fastest-ai-models",
+      "snippet": "Compare the fastest AI models by latency and tokens per second. Rankings for GPT, Claude, Gemini, DeepSeek, and Llama. Find the fastest API now."
+    }
+  ]
+}

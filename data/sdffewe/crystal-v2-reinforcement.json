@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sdffewe/crystal-v2-reinforcement",
+  "slug": "sdffewe-crystal-v2-reinforcement",
+  "author": "sdffewe",
+  "url": "https://huggingface.co/sdffewe/crystal-v2-reinforcement",
+  "created_at": "2026-08-22T19:34:59.000Z",
+  "updated_at": "2026-08-22T19:42:24.000Z",
+  "license": "cc-by-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4197868,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guiding Generative Models to Uncover Diverse and",
+      "url": "https://arxiv.org/pdf/2511.07158",
+      "snippet": "introduce a reinforcement learning framework that guides latent denoising diffusion models toward diverse and novel, yet thermodynamically viable crystalline compounds. Our approach integrates group relative policy optimisation with verifiable, multi-objective rewards that jointly balance creativity, stability, and diversity. Beyond de novo generation, we demonstrate enhanced property-guided ..."
+    },
+    {
+      "title": "sdffewe (fwefewfwf) - Hugging Face",
+      "url": "https://huggingface.co/sdffewe",
+      "snippet": "User profile of fwefewfwf on Hugging Face"
+    },
+    {
+      "title": "Guiding generative models to uncover diverse and novel crystals via ...",
+      "url": "https://www.nature.com/articles/s42256-026-01262-4",
+      "snippet": "Park and Walsh introduce a reinforcement learning framework that could accelerate the discovery of new, thermodynamically stable and diverse crystalline materials with desired properties."
+    },
+    {
+      "title": "sdffewe/mcpvpcrystalaimodel · Hugging Face",
+      "url": "https://huggingface.co/sdffewe/mcpvpcrystalaimodel",
+      "snippet": "sdffewe / mcpvpcrystalaimodel like 0 License:agpl-3.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aashishsinhaa/notion-router",
+  "slug": "aashishsinhaa-notion-router",
+  "author": "aashishsinhaa",
+  "url": "https://huggingface.co/aashishsinhaa/notion-router",
+  "created_at": "2026-08-22T20:43:54.000Z",
+  "updated_at": "2026-08-22T20:44:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "notion",
+    "mcp",
+    "router",
+    "intent-classification",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The AI Transformation Model | Notion",
+      "url": "https://notion.notion.site/Official-The-AI-Transformation-Model-2d1efdeead05802e867edea1e3a470b8",
+      "snippet": "Introducing the AI Transformation Model How AI native are you? Every company needs AI, but many lack a clear starting point or scaling path. This model shows how to go from manual, fragmented work to AI-powered operations. It mirrors real journeys tracking what changes, expected impact, and the role Notion can play. Every framework has flaws, and no company&#x27;s journey is identical to another ..."
+    },
+    {
+      "title": "Ox Alpha on OpenRouter: Free 1M Stealth Model (Aug 2026) - explainx.ai",
+      "url": "https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026",
+      "snippet": "Ox Alpha is OpenRouter&#x27;s new free stealth model: 1M context, tool calling, multimodal input. Who made it, retention vs training, and how to try it."
+    },
+    {
+      "title": "Notion AI",
+      "url": "https://www.notion.com/help/guides/category/ai",
+      "snippet": "Learn how to use Notion for a variety of use cases. Whether youʼre looking to create a project management system or a 1:1 doc, Notion can help."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Access powerful AI models at zero cost. Experiment, learn, and build with free AI models and LLMs. OpenRouter is committed to keeping AI accessible for everyone."
+    },
+    {
+      "title": "The AI workspace that works for you. | Notion",
+      "url": "https://www.notion.com/",
+      "snippet": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aashishsinhaa/notion-operator",
+  "slug": "aashishsinhaa-notion-operator",
+  "author": "aashishsinhaa",
+  "url": "https://huggingface.co/aashishsinhaa/notion-operator",
+  "created_at": "2026-08-22T20:43:54.000Z",
+  "updated_at": "2026-08-22T20:44:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "notion",
+    "mcp",
+    "tool-calling",
+    "function-calling",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Notion AI",
+      "url": "https://www.notion.com/help/guides/category/ai",
+      "snippet": "Learn how to use Notion for a variety of use cases. Whether youʼre looking to create a project management system or a 1:1 doc, Notion can help."
+    },
+    {
+      "title": "The AI Transformation Model | Notion",
+      "url": "https://notion.notion.site/Official-The-AI-Transformation-Model-2d1efdeead05802e867edea1e3a470b8",
+      "snippet": "Introducing the AI Transformation Model How AI native are you? Every company needs AI, but many lack a clear starting point or scaling path. This model shows how to go from manual, fragmented work to AI-powered operations. It mirrors real journeys tracking what changes, expected impact, and the role Notion can play. Every framework has flaws, and no company&#x27;s journey is identical to another ..."
+    },
+    {
+      "title": "Notion AI Models Explained: The Complete Guide in 2026",
+      "url": "https://lorphic.com/notion-ai-models/",
+      "snippet": "Discover the Notion AI models powering Notion AI in 2026. Learn what AI model Notion AI uses, how GPT and Claude work together."
+    },
+    {
+      "title": "Using Notion AI to extend your impact",
+      "url": "https://www.notion.com/help/guides/using-notion-ai",
+      "snippet": "Artificial intelligence (AI) refers to human-produced technology that systematically applies large sets of data to an iterative model. This allows it to predict results, generating mathematical or linguistic outputs in response to an input by the user of the AI."
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    }
+  ]
+}

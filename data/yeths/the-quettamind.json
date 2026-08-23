@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yeths/The-Quettamind",
+  "slug": "yeths-the-quettamind",
+  "author": "yeths",
+  "url": "https://huggingface.co/yeths/The-Quettamind",
+  "created_at": "2026-08-06T03:55:25.000Z",
+  "updated_at": "2026-08-22T20:10:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nullnet",
+    "compressed-tensors",
+    "large-parameter-count",
+    "benchmark",
+    "quettamind",
+    "en",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 172,
+  "trending_score": 0,
+  "parameters": 39200000000000000,
+  "parameters_human": "39200000.00B",
+  "storage_bytes": 490000012976,
+  "storage_human": "490.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yeths/The-Quettamind · Hugging Face",
+      "url": "https://huggingface.co/yeths/The-Quettamind",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yeths/The-Quettamind at main - Hugging Face",
+      "url": "https://huggingface.co/yeths/The-Quettamind/tree/main",
+      "snippet": "yeths / The-Quettamind like 6 GGUF English large-parameter-count benchmark quettamind License:mit Model card FilesFiles and versions xet Community Copy to bucket new main The-Quettamind 8.68 TB Ctrl+K Ctrl+K 1 contributor History:1 commit yeths The Quettamind 8fb41e1 about 4 hours ago .gitattributes 44.9 kBThe Quettamindabout 4 hours ago LICENSE.md 1.06 kBThe Quettamindabout 4 hours ago README ..."
+    },
+    {
+      "title": "#ai #llm #machinelearning #aimodels #ainews | David T. - LinkedIn",
+      "url": "https://www.linkedin.com/posts/david-tadevosian_ai-llm-machinelearning-activity-7491372617275465729-wjLe",
+      "snippet": "Also, don&#x27;t sleep on The-Quettamind—a model with \"quetta\" in the name has a lot to live up to. #AI #LLM #MachineLearning #AIModels #AINews 1 1 Comment 145 followers"
+    },
+    {
+      "title": "New AI Models 2026 - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/new-ai-models",
+      "snippet": "Discover the newest AI models released in 2026. Track the latest LLMs, coding models, and image generators as they launch with source-backed release and evidence tracking."
+    },
+    {
+      "title": "Latest AI Model Releases — August 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "The newest AI model releases as of August 2026. Most recent: Qwen3.8-27B by Qwen on Aug 14 2026. Track every new frontier model from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, and Moonshot AI — updated continuously."
+    }
+  ]
+}

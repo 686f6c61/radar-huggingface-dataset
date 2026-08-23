@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Kaousheik/tempo-ablation-both",
+  "slug": "kaousheik-tempo-ablation-both",
+  "author": "Kaousheik",
+  "url": "https://huggingface.co/Kaousheik/tempo-ablation-both",
+  "created_at": "2026-08-22T20:49:35.000Z",
+  "updated_at": "2026-08-22T20:53:41.000Z",
+  "license": "nvidia-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "audioflamingo3",
+    "audio",
+    "timestamping",
+    "temporal-grounding",
+    "speaker-diarization",
+    "dense-audio-captioning",
+    "music-captioning",
+    "large-audio-language-model",
+    "audio-text-to-text",
+    "dataset:Kaousheik/tempo",
+    "base_model:nvidia/audio-flamingo-3",
+    "base_model:finetune:nvidia/audio-flamingo-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8271605248,
+  "parameters_human": "8.27B",
+  "storage_bytes": 16555182322,
+  "storage_human": "16.6 GB",
+  "base_model": "nvidia/audio-flamingo-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaousheik (Jayakumar) - Hugging Face",
+      "url": "https://huggingface.co/Kaousheik/models",
+      "snippet": "User profile of Jayakumar on Hugging Face Recent Activity updated a datasetabout 5 hours ago Kaousheik/temporal-lalm published a datasetabout 5 hours ago Kaousheik/temporal-lalm updated a model6 months ago Kaousheik/hanabi-gpt-oss View all activity"
+    },
+    {
+      "title": "Kaousheik (Jayakumar) - Hugging Face",
+      "url": "https://huggingface.co/Kaousheik",
+      "snippet": "User profile of Jayakumar on Hugging Face Recent Activity updated a datasetabout 3 hours ago Kaousheik/temporal-lalm published a datasetabout 3 hours ago Kaousheik/temporal-lalm updated a model6 months ago Kaousheik/hanabi-gpt-oss View all activity"
+    },
+    {
+      "title": "‪Kaousheik Jayakumar‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=Yc8bSDIAAAAJ&hl=en",
+      "snippet": "‪University of Maryland, College Park‬ - ‪‪Cited by 23‬‬ - ‪Audio language models‬"
+    },
+    {
+      "title": "Research - kaousheik-26.github.io",
+      "url": "https://kaousheik-26.github.io/research/",
+      "snippet": "An open audio-visual model built to understand long and complex videos, jointly reasoning over speech, sound, and what&#x27;s on screen across extended temporal contexts — advancing open audio-visual intelligence beyond short clips."
+    },
+    {
+      "title": "New AI Model Releases (Last 24 Hours) — Live Tracker | BenchLM",
+      "url": "https://benchlm.ai/model-updates",
+      "snippet": "Every new AI model release, tracked live: last 24 hours, this week, and 156 confirmed launches from 45 providers — each with source evidence and benchmarks."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "slrrxx101/minecraft-qwen-agent-v2",
+  "slug": "slrrxx101-minecraft-qwen-agent-v2",
+  "author": "slrrxx101",
+  "url": "https://huggingface.co/slrrxx101/minecraft-qwen-agent-v2",
+  "created_at": "2026-08-22T23:55:46.000Z",
+  "updated_at": "2026-08-22T23:56:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073408,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen-Agent: Agent framework and applications built upon ...",
+      "url": "https://github.com/QwenLM/Qwen-Agent",
+      "snippet": "Qwen-Agent is a framework for developing LLM applications based on the instruction following, tool usage, planning, and memory capabilities of Qwen. It also comes with example applications such as Browser Assistant, Code Interpreter, and Custom Assistant. Now Qwen-Agent plays as the backend of Qwen Chat."
+    },
+    {
+      "title": "Qwen Agent Documentation | Qwen Agent - qwenlm.github.io",
+      "url": "https://qwenlm.github.io/Qwen-Agent/",
+      "snippet": "Documentation for Qwen Agent: an open-source AI agent framework. Learn installation, agent usage, tool integration, LLM configuration, and best practices."
+    },
+    {
+      "title": "GitHub - worldart/QwenLM_Qwen-Agent: Agent framework and applications ...",
+      "url": "https://github.com/worldart/QwenLM_Qwen-Agent",
+      "snippet": "中文 ｜ English Qwen-Agent is a framework for developing LLM applications based on the instruction following, tool usage, planning, and memory capabilities of Qwen. It also comes with example applications such as Browser Assistant, Code Interpreter, and Custom Assistant."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    }
+  ]
+}

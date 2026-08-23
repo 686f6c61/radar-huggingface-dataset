@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mathisweil/remdm-craftax-checkpoints",
+  "slug": "mathisweil-remdm-craftax-checkpoints",
+  "author": "mathisweil",
+  "url": "https://huggingface.co/mathisweil/remdm-craftax-checkpoints",
+  "created_at": "2026-08-07T11:40:32.000Z",
+  "updated_at": "2026-08-22T19:57:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "reinforcement-learning",
+    "planning",
+    "discrete-diffusion",
+    "remdm",
+    "craftax",
+    "flax",
+    "orbax",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1111297155,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mathisweil/remdm-craftax-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/mathisweil/remdm-craftax-checkpoints",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MathisW78/remdm-craftax-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/MathisW78/remdm-craftax-checkpoints",
+      "snippet": "Trained weights accompanying The Double Intractability of Reinforcement Learning for Discrete Diffusion Planners: a remasking discrete diffusion model (ReMDM) used as an action-sequence planner in Craftax, together with the PPO-RNN experts that supervise it."
+    },
+    {
+      "title": "GitHub - MichaelTMatthews/Craftax: (Crafter + NetHack) in JAX. ICML ...",
+      "url": "https://github.com/MichaelTMatthews/Craftax",
+      "snippet": "Craftax is an RL environment written entirely in JAX. Craftax reimplements and significantly extends the game mechanics of Crafter, taking inspiration from roguelike games such as NetHack. Craftax conforms to the gymnax interface, allowing easy integration with existing JAX-based frameworks like PureJaxRL and JaxUED."
+    },
+    {
+      "title": "checkpoint AI Models | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 203 Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings tagged with checkpoint."
+    },
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Explore thousands of free Stable Diffusion & Flux models, create and share AI-generated art, and join the world&#x27;s largest community of generative AI creators."
+    }
+  ]
+}

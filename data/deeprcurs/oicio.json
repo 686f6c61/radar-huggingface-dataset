@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "deeprcurs/OICIO",
+  "slug": "deeprcurs-oicio",
+  "author": "deeprcurs",
+  "url": "https://huggingface.co/deeprcurs/OICIO",
+  "created_at": "2026-08-23T00:49:21.000Z",
+  "updated_at": "2026-08-23T01:05:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "oicio-rs",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "oicio-rs",
+    "safetensors",
+    "ternary",
+    "matmul-free",
+    "cpu-only",
+    "rust",
+    "1.58-bit",
+    "bitnet",
+    "bonsai",
+    "infinite-context",
+    "em-llm",
+    "reattention",
+    "recursive-agent-harness",
+    "rlm",
+    "rah",
+    "edge-ai",
+    "needle",
+    "hadamard",
+    "mlgru",
+    "mamba",
+    "rwkv",
+    "liquid-neural-networks",
+    "turbovec",
+    "turboquant",
+    "t-mac",
+    "vec-lut",
+    "axon",
+    "consumer-hardware",
+    "better-quality",
+    "intelligence-density",
+    "text-generation",
+    "en",
+    "arxiv:2312.00752",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1178623988,
+  "storage_human": "1.2 GB",
+  "base_model": "microsoft/BitNet-b1.58-2B-4T",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - deepRcurs/OICIO: OICIO — Optimized Infinite Context ...",
+      "url": "https://github.com/deepRcurs/OICIO/tree/main/",
+      "snippet": "OICIO is a new paradigm for large language models that achieves better quality intelligence with a fundamentally different architecture, computation model, and capital requirement. Instead of scaling dense attention O(N²) with FP16 weights on GPU clusters, OICIO uses MatMul-free computation with ..."
+    },
+    {
+      "title": "deepRcurs [dR] · GitHub",
+      "url": "https://github.com/deepRcurs/",
+      "snippet": "Recursive depth for AI-native environments. Desktop · Mobile · Agent Ecosystems - deepRcurs [dR]"
+    },
+    {
+      "title": "Introducing deep research | OpenAI",
+      "url": "https://openai.com/index/introducing-deep-research/",
+      "snippet": "Humanity&#x27;s Last Exam On Humanity&#x27;s Last Exam ⁠, a recently released evaluation that tests AI across a broad range of subjects on expert-level questions, the model powering deep research scores a new high at 26.6% accuracy."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "All models Browse all available models and compare their capabilities."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "abhijeetknayak/ppo-Pyramids",
+  "slug": "abhijeetknayak-ppo-pyramids",
+  "author": "abhijeetknayak",
+  "url": "https://huggingface.co/abhijeetknayak/ppo-Pyramids",
+  "created_at": "2026-08-22T20:35:40.000Z",
+  "updated_at": "2026-08-22T20:35:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37797363,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhijeet2022/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/abhijeet2022/ppo-Pyramids",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "abhijeetknayak (Abhijeet Nayak) - Hugging Face",
+      "url": "https://huggingface.co/abhijeetknayak",
+      "snippet": "abhijeetknayak/ppo-LunarLander-v3 Reinforcement Learning •Updated about 8 hours ago"
+    },
+    {
+      "title": "abhijeetknayak (Abhijeet Nayak) · GitHub",
+      "url": "https://github.com/abhijeetknayak",
+      "snippet": "I&#x27;m a Doctoral Researcher at the University of Technology Nuremberg. - abhijeetknayak"
+    },
+    {
+      "title": "ppo-Pyramids:Ascend NPU adapted model (Model-Agent S2) - AtomGit AI社区",
+      "url": "https://ai.atomgit.com/zyzoe/ppo-Pyramids",
+      "snippet": "Unity ML-Agents PPO 训练的 Pyramids 金字塔导航策略（2×512 MLP，172 维向量观测：raycast 感知 + 目标 one-hot），本仓将其适配到华为昇腾 NPU 真实跑通推理。"
+    },
+    {
+      "title": "ppo-Pyramids:用户可在昇腾 910 NPU 上快速部署并运行 Unity ML-Agents PPO 强化学习策略，实现 ...",
+      "url": "https://ai.atomgit.com/mixail/ppo-Pyramids",
+      "snippet": "用户可在昇腾 910 NPU 上快速部署并运行 Unity ML-Agents PPO 强化学习策略，实现 Pyramids 环境的智能体动作推理。项目提供完整推理脚本，支持模型加载、数值一致性验证及离散动作采样，并实现 CPU 与 NPU 输出的高精度对齐。【此简介由AI生成】"
+    }
+  ]
+}

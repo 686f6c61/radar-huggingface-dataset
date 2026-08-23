@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "devanshty/EpiSpot-Symptom-BERT",
+  "slug": "devanshty-epispot-symptom-bert",
+  "author": "devanshty",
+  "url": "https://huggingface.co/devanshty/EpiSpot-Symptom-BERT",
+  "created_at": "2026-08-22T21:44:11.000Z",
+  "updated_at": "2026-08-22T21:47:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical",
+    "symptom-checker",
+    "bert",
+    "disease-prediction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 439209935,
+  "storage_human": "439 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - epispot/epispot: A tool for modeling infectious diseases.",
+      "url": "https://github.com/epispot/epispot",
+      "snippet": "A tool for modeling infectious diseases. Contribute to epispot/epispot development by creating an account on GitHub."
+    },
+    {
+      "title": "epispot API documentation",
+      "url": "https://epispot.github.io/epispot/en/latest/index.html",
+      "snippet": "The epispot package currently only supports compartmental models, though we plan to expand the package to work for stochastic agent-based and spatial models as well."
+    },
+    {
+      "title": "Enhancing cancer symptom detection in electronic health records using ...",
+      "url": "https://iro.uiowa.edu/esploro/outputs/doctoral/Enhancing-cancer-symptom-detection-in-electronic/9984830729402771",
+      "snippet": "The study introduces Symptom-BERT, a domain-specific AI model that detects cancer symptoms at broad (document-level) and granular (token-level) scales. It also explores fine-tuning and prompt-based learning approaches to adapt AI models to the nuanced language of clinical care."
+    },
+    {
+      "title": "Detecting Belly Button Cancer Symptoms | PDF | Medical Diagnosis ...",
+      "url": "https://www.scribd.com/document/836505470/showPdf",
+      "snippet": "The study presents Symptom-BERT, a pretrained language model designed to enhance the detection of cancer symptoms in electronic health records (EHR). It achieved a micro-averaged F1-score of 0.933 and demonstrated superior performance compared to existing BERT models, particularly in identifying physical symptoms over psychological ones. This advancement in natural language processing has ..."
+    },
+    {
+      "title": "PDF Using a fine-tuned large language model for symptom-based ... - Nature",
+      "url": "https://www.nature.com/articles/s41746-025-01982-8.pdf",
+      "snippet": "German BERT (Bidirectional Encoder Representations from Transfor-mers)-based model for predicting MADRS scores using a regression approach that captures the continuous nature of symptom severity."
+    }
+  ]
+}

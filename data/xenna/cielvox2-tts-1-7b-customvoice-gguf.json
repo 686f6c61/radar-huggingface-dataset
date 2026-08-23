@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Xenna/cielvox2-tts-1.7b-customvoice-GGUF",
+  "slug": "xenna-cielvox2-tts-1-7b-customvoice-gguf",
+  "author": "Xenna",
+  "url": "https://huggingface.co/Xenna/cielvox2-tts-1.7b-customvoice-GGUF",
+  "created_at": "2026-08-21T17:29:16.000Z",
+  "updated_at": "2026-08-22T20:54:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "ggml",
+  "languages": [
+    "en",
+    "zh",
+    "de",
+    "fr",
+    "it",
+    "es",
+    "pt",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "tts",
+    "text-to-speech",
+    "stelnettts",
+    "cielvox2-tts",
+    "en",
+    "zh",
+    "de",
+    "fr",
+    "it",
+    "es",
+    "pt",
+    "ja",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 1916676352,
+  "parameters_human": "1.92B",
+  "storage_bytes": 2042225952,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cielvox2/hf_readmes/qwen3-tts-1.7b-customvoice-GGUF.md at main ... - GitHub",
+      "url": "https://github.com/stelnetxcis-create/cielvox2/blob/main/hf_readmes/qwen3-tts-1.7b-customvoice-GGUF.md",
+      "snippet": "The 1.7B sibling of Xenna/cielvox2-tts-.6b-customvoice-GGUF. Same fixed-speaker pattern (9 baked speakers, no ECAPA, no reference WAV), but on the 1.7B talker — hidden=2048, head_dim=128, with a small_to_mtp_projection MLP that maps the 2048-d talker hidden state down to the 1024-d code predictor input space."
+    },
+    {
+      "title": "cstr/qwen3-tts-1.7b-customvoice-GGUF · Hugging Face",
+      "url": "https://huggingface.co/cstr/qwen3-tts-1.7b-customvoice-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "forkjoin-ai/qwen3-tts-12hz-1.7b-customvoice · Hugging Face",
+      "url": "https://huggingface.co/forkjoin-ai/qwen3-tts-12hz-1.7b-customvoice",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+    },
+    {
+      "title": "Qwen3-TTS-12Hz-1.7B-CustomVoice: Open Custom Voice TTS",
+      "url": "https://ryanorban.com/notes/qwen-tts/",
+      "snippet": "For developers building voice interfaces into AI applications, open-weight TTS with custom voice is a meaningful cost and privacy improvement over hosted solutions. Key points 1.7B parameter TTS model with custom voice cloning — no fine-tuning required. 12Hz token generation rate; available as open weights on Hugging Face."
+    }
+  ]
+}

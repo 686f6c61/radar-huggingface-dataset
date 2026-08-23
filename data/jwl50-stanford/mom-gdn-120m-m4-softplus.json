@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jwl50-stanford/mom-gdn-120m-m4-softplus",
+  "slug": "jwl50-stanford-mom-gdn-120m-m4-softplus",
+  "author": "jwl50-stanford",
+  "url": "https://huggingface.co/jwl50-stanford/mom-gdn-120m-m4-softplus",
+  "created_at": "2026-08-22T20:50:36.000Z",
+  "updated_at": "2026-08-22T20:50:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mixture-of-memories",
+    "gated-deltanet",
+    "language-modeling",
+    "pytorch-lightning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1572813307,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jwl50-stanford/gdn-paper-120m-fixed-d256-fp32res-gpt2init-20k-r1 ...",
+      "url": "https://huggingface.co/jwl50-stanford/gdn-paper-120m-fixed-d256-fp32res-gpt2init-20k-r1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gdn-paper-120m-fixed-qk128-v64-fp32res-gpt2init-20k-r1",
+      "url": "https://huggingface.co/jwl50-stanford/gdn-paper-120m-fixed-qk128-v64-fp32res-gpt2init-20k-r1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF JWL50 - XP Power",
+      "url": "https://www.xppower.com/storage/portals/0/pdfs/SF_JWL50.pdf",
+      "snippet": "The 50W JWL50 series is housed in a 50.8 x 25.4 x 11.0mm (2\" x 1\" x 0.43\") metal cased package. Featuring a 4:1 input voltage range of 9 to 36VDC for nominal 24VDC or 18 to 75VDC for a nominal 48VDC, ideal for many applications that demand multiple input voltages or where the input voltage varies widely."
+    },
+    {
+      "title": "JWL50 Series Power Product Range | XP Power",
+      "url": "https://www.xppower.com/product/JWL50-Series",
+      "snippet": "The 50W JWL50 series is housed in a 50.8 x 25.4 x 11.0 mm (2\" x 1\" x 0.43\") metal cased package. Featuring a 4:1 input voltage range of 9 to 36VDC for nominal 24VDC or 18 to 75VDC for a nominal 48VDC, ideal for many applications that demand multiple input voltages or where the input voltage varies widely. Regulated single outputs are 3.3, 5, 12, 15 or 24VDC. The JWL50 provides 1.5kVDC ..."
+    },
+    {
+      "title": "PDF hai.stanford.edu",
+      "url": "https://hai.stanford.edu/assets/files/hai_ai_index_report_2025.pdf",
+      "snippet": "Artiflcial Intelligence Index Report 2025 1 Welcome to the eighth edition of the AI Index report. The 2025 Index is our most comprehensive to date and arrives at an important mome"
+    }
+  ]
+}

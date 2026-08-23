@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Skskskd/bliz-ia-test",
+  "slug": "skskskd-bliz-ia-test",
+  "author": "Skskskd",
+  "url": "https://huggingface.co/Skskskd/bliz-ia-test",
+  "created_at": "2026-08-22T20:34:36.000Z",
+  "updated_at": "2026-08-22T20:34:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20612652,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skskskd/bliz-ia-re-trained · Hugging Face",
+      "url": "https://huggingface.co/Skskskd/bliz-ia-re-trained",
+      "snippet": "Skskskd / bliz-ia-re-trained like 0 Text Generation PEFT Safetensors Transformers lora unsloth conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Skskskd/bliz-ia-v2 · Hugging Face",
+      "url": "https://huggingface.co/Skskskd/bliz-ia-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bliz-ia-baseado-em-qwen-v2-test - friendli.ai",
+      "url": "https://friendli.ai/models/Skskskd/bliz-ia-baseado-em-qwen-v2-test",
+      "snippet": "Deploy bliz-ia-baseado-em-qwen-v2-test with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "GitHub - 12britz/awesome-free-models: A curated list of free AI models ...",
+      "url": "https://github.com/12britz/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. - 12britz/awesome-free-models"
+    }
+  ]
+}

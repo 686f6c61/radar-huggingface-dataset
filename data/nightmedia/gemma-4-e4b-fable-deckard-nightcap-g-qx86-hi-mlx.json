@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "nightmedia/gemma-4-E4B-Fable-Deckard-Nightcap-G-qx86-hi-mlx",
+  "slug": "nightmedia-gemma-4-e4b-fable-deckard-nightcap-g-qx86-hi-mlx",
+  "author": "nightmedia",
+  "url": "https://huggingface.co/nightmedia/gemma-4-E4B-Fable-Deckard-Nightcap-G-qx86-hi-mlx",
+  "created_at": "2026-08-23T02:48:50.000Z",
+  "updated_at": "2026-08-23T03:43:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "nightmedia",
+    "gemma",
+    "bf16",
+    "google",
+    "merge",
+    "Deckard(qx)",
+    "mergekit",
+    "any-to-any",
+    "base_model:DavidAU/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking",
+    "base_model:merge:DavidAU/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking",
+    "base_model:andyoneal/Gemma-4-E4B-Nightcap",
+    "base_model:merge:andyoneal/Gemma-4-E4B-Nightcap",
+    "base_model:armand0e/Gemma-4-E4B-it-Fable-Distill",
+    "base_model:merge:armand0e/Gemma-4-E4B-it-Fable-Distill",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2651780426,
+  "parameters_human": "2.65B",
+  "storage_bytes": 8863822537,
+  "storage_human": "8.9 GB",
+  "base_model": "armand0e/Gemma-4-E4B-it-Fable-Distill, andyoneal/Gemma-4-E4B-Nightcap, DavidAU/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-4 - a nightmedia Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/nightmedia/gemma-4",
+      "snippet": "nightmedia/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking-q8-mlx"
+    },
+    {
+      "title": "nightmedia/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC ...",
+      "url": "https://huggingface.co/nightmedia/gemma-4-E4B-it-The-DECKARD-Expresso-Universe-HERETIC-UNCENSORED-Thinking-q8-mlx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Gemma 4 | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "agbalu/Feraoun-Pro",
+  "slug": "agbalu-feraoun-pro",
+  "author": "agbalu",
+  "url": "https://huggingface.co/agbalu/Feraoun-Pro",
+  "created_at": "2026-08-22T20:43:43.000Z",
+  "updated_at": "2026-08-22T20:47:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "kab"
+  ],
+  "tags": [
+    "safetensors",
+    "feraoun_pro",
+    "kabyle",
+    "taqbaylit",
+    "berber",
+    "amazigh",
+    "ocr",
+    "image-to-text",
+    "tifinagh",
+    "document-understanding",
+    "low-resource",
+    "ctc",
+    "custom_code",
+    "kab",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51572621,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206313076,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Line-level document OCR, Kabyle Latin",
+      "dataset": "25,484 held-out rendered lines, Latin",
+      "metric": "Character error rate",
+      "value": 0.0734
+    },
+    {
+      "task": "Line-level document OCR, Kabyle Neo-Tifinagh",
+      "dataset": "4,516 held-out rendered lines, Neo-Tifinagh",
+      "metric": "Character error rate",
+      "value": 0.0091
+    }
+  ],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=feraoun",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: feraoun Clear all"
+    },
+    {
+      "title": "Feraoun 36m - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/agbalu/feraoun-36m",
+      "snippet": "by agbalu agbalu/feraoun-36m Free2AITools Nexus Index 39.2 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity1 R: Recency100 Q: Quality65 Tech Context 0.04BParams 4.096KCtx Vital Performance 12 DL / 30D Source → Share: 📤 𝕏 in 📣 🔗"
+    },
+    {
+      "title": "agbalu (AƔBALU — Kabyle (Taqbaylit) NLP) - Hugging Face",
+      "url": "https://huggingface.co/agbalu/models",
+      "snippet": "Org profile for AƔBALU — Kabyle (Taqbaylit) NLP on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - abderahmane-ai/agbalu: Kabyle (Taqbaylit) NLP built from the ...",
+      "url": "https://github.com/abderahmane-ai/agbalu",
+      "snippet": "Aɣbalu — Kabyle for the source, the fountainhead. Natural language processing for Kabyle (Taqbaylit, ISO 639-3 kab, BCP-47 kab-Latn), a Northern Berber language of Kabylia, Algeria with roughly 5-7 million speakers. The corpus is the primary artifact; the models are built on top of it."
+    },
+    {
+      "title": "agbalu/README.md at main · abderahmane-ai/agbalu · GitHub",
+      "url": "https://github.com/abderahmane-ai/agbalu/blob/main/README.md",
+      "snippet": "AƔBALU Aɣbalu — Kabyle for the source, the fountainhead. Natural language processing for Kabyle (Taqbaylit, ISO 639-3 kab, BCP-47 kab-Latn), a Northern Berber language of Kabylia, Algeria with roughly 5-7 million speakers. The corpus is the primary artifact; the models are built on top of it."
+    }
+  ]
+}

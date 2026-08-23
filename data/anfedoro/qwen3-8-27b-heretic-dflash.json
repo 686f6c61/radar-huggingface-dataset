@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "anfedoro/Qwen3.8-27B-heretic-dflash",
+  "slug": "anfedoro-qwen3-8-27b-heretic-dflash",
+  "author": "anfedoro",
+  "url": "https://huggingface.co/anfedoro/Qwen3.8-27B-heretic-dflash",
+  "created_at": "2026-08-22T20:59:39.000Z",
+  "updated_at": "2026-08-22T21:00:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "dflash",
+    "speculative-decoding",
+    "fast-inference",
+    "vllm",
+    "sglang",
+    "code",
+    "function-calling",
+    "text-generation",
+    "custom_code",
+    "base_model:jfan/Qwen3.8-27B-heretic-dflash",
+    "base_model:quantized:jfan/Qwen3.8-27B-heretic-dflash",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 270398720,
+  "parameters_human": "270.4M",
+  "storage_bytes": 973348681,
+  "storage_human": "973 MB",
+  "base_model": "jfan/Qwen3.8-27B-heretic-dflash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jfan/Qwen3.8-27B-heretic-dflash · Hugging Face",
+      "url": "https://huggingface.co/jfan/Qwen3.8-27B-heretic-dflash",
+      "snippet": "Qwen3.8-27B-heretic-dflash is a high-performance DFlash (Block Diffusion Speculative Drafter) trained explicitly for trohrbaugh/Qwen3.8-27B-heretic-ara (Qwen3 27B architecture, 248,320 vocabulary, 5,120 hidden dimension)."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    },
+    {
+      "title": "Qwen3.8-27B on Hugging Face: official repo download guide",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-huggingface",
+      "snippet": "Qwen3.8 27B is on Hugging Face at Qwen/Qwen3.8-27B, published by the Qwe n org on August 14, 2026 under the Apache 2.0 license. The repo holds 55.6 GB of BF16 safetensors across 18 shards, plus the tokenizer, chat template, and config that go with it — free to download, free to use commercially, and no per-token fee."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored MLX: OrcaRouter Build Explained | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026",
+      "snippet": "OrcaRouter&#x27;s abliterated Qwen3.8-27B, in MLX for Apple Silicon plus GGUF and FP8 — what abliteration did and the real hardware/safety tradeoffs."
+    }
+  ]
+}

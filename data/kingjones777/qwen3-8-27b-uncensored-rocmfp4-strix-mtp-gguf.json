@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF",
+  "slug": "kingjones777-qwen3-8-27b-uncensored-rocmfp4-strix-mtp-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF",
+  "created_at": "2026-08-22T23:28:19.000Z",
+  "updated_at": "2026-08-22T23:34:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "uncensored",
+    "abliterated",
+    "mtp",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 77938432448,
+  "storage_human": "77.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF at ...",
+      "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF/tree/a3e7f11776f87c5b846e1cdcc6689f393fd71482",
+      "snippet": "kingjones777 / Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF like 24 Text Generation GGUF llama.cpp rocm amd rocmfp4 rocmfpx strix-halo amd-strix-halo gfx1151 ryzen-ai-max ryzen-ai-max-395 radeon-8060s mtp speculative-decoding reasoning qwen3.5 quantized conversational License:apache-2.0 Model card FilesFiles and versions xet Community 2 Deploy Copy to ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Check GPU offloading: ollama ps — if you see a CPU/GPU split, the model is partially on CPU Force all layers to GPU: Already set in Modelfile.mac (num_gpu 999), but verify with ollama show qwen3.8:27b-uncensored Reduce context: QWEN_NUM_CTX=4096 node examples/chat.cjs \"test\" — smaller KV cache = less memory Switch to MLX: node bin/install.cjs --mlx — 30-50% faster on Apple Silicon Close ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "⚡ qwen38-uncensored - Run a Powerful Uncensored AI Locally",
+      "url": "https://github.com/unburdened-jackinthebox365/qwen38-uncensored",
+      "snippet": "This is your personal gateway to running Qwen 3.8 27B, a massive and highly capable AI language model, entirely on your own computer. No cloud, no subscription, no censorship filters. It&#x27;s the official Qwen 3.8 weights (27 billion parameters) in an optimized format that runs fast on regular hardware ..."
+    }
+  ]
+}

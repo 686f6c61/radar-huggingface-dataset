@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "resoajoe/quality-gate-nano",
+  "slug": "resoajoe-quality-gate-nano",
+  "author": "resoajoe",
+  "url": "https://huggingface.co/resoajoe/quality-gate-nano",
+  "created_at": "2026-08-23T00:32:44.000Z",
+  "updated_at": "2026-08-23T00:32:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "nano-models",
+    "edge",
+    "video-quality",
+    "image-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192779,
+  "storage_human": "192779 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "resoajoe (Joe Cox) - Hugging Face",
+      "url": "https://huggingface.co/resoajoe/datasets",
+      "snippet": "Hoping to run some rapid experiments to learn and weekend experiments to try to build something useful. Interested in nano-models for industries. Here to learn from the community and have an excuse..."
+    },
+    {
+      "title": "resoa (Resoa) - Hugging Face",
+      "url": "https://huggingface.co/resoa/models",
+      "snippet": "Org profile for Resoa on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ModelGate - AI API Aggregation Platform",
+      "url": "https://modelgate.net/",
+      "snippet": "Unified access to all mainstream AI models, including LLM, image generation, and video generation. One API key, intelligent routing, best prices."
+    },
+    {
+      "title": "Quality gates for AI-generated code",
+      "url": "https://www.coderabbit.ai/guides/ai-generated-code-quality-gate",
+      "snippet": "Build an AI-generated code quality gate with independent review, source-agnostic standards, explainable findings, and pre-merge checks."
+    },
+    {
+      "title": "Why Your Team Needs a Quality Gate for AI-Generated Code (And How to ...",
+      "url": "https://dev.to/scanaislop/why-your-team-needs-a-quality-gate-for-ai-generated-code-and-how-to-set-one-up-in-minutes-2721",
+      "snippet": "Why does AI-generated code need its own quality gate? AI-generated code fails differently than human-written code. It compiles. It passes tests. It looks reasonable in a 30-second review. But it has structural tells that accumulate into real problems over time: Narrative comments that describe what the code does line by line, instead of why — a sign the model was narrating, not documenting ..."
+    }
+  ]
+}

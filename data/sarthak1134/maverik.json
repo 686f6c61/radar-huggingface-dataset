@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Sarthak1134/MAVERIK",
+  "slug": "sarthak1134-maverik",
+  "author": "Sarthak1134",
+  "url": "https://huggingface.co/Sarthak1134/MAVERIK",
+  "created_at": "2026-08-23T03:04:27.000Z",
+  "updated_at": "2026-08-23T03:05:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "image-text-to-video",
+    "en",
+    "dataset:openbmb/Ultra-FineWeb-L1",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:finetune:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maverick AI — AI Art | Patreon",
+      "url": "https://www.patreon.com/cw/MaverickAI1234",
+      "snippet": "Get more from Maverick AI on Patreon. AI Art. Support Maverick AI and get exclusive access to their work."
+    },
+    {
+      "title": "MAVERICK A.i",
+      "url": "https://www.maverickai.com/",
+      "snippet": "Maverick AI is revolutionizing Agentic Multimodal Generative AI to enhance applications, user experience, and value across medical, mobility, and military domains."
+    },
+    {
+      "title": "Maverick AI Resource Hub — Free AI Prompts, Guides & Newsletter",
+      "url": "https://mavgpt.ai/",
+      "snippet": "Free ChatGPT, Claude, and Gemini prompts, guides, and a twice-weekly AI newsletter from Maverick Maltin. 2.5M+ followers, 200K+ subscribers."
+    },
+    {
+      "title": "Llama 4 Maverick: The Free AI Model? - currentaffair.today",
+      "url": "https://www.currentaffair.today/blog/technology-13/llama-4-maverick-the-free-ai-model-203",
+      "snippet": "Meta&#x27;s Llama 4 Maverick is the most powerful free AI model in 2026 — 400B parameters, 10M token context window, and open-source. Full review, benchmarks, and how it compares to GPT-5.4 and Gemini."
+    },
+    {
+      "title": "Maverick AI - Everysight",
+      "url": "https://www.everysight.com/pages/maverick-ai",
+      "snippet": "Maverick AI and AI Pro glasses pair advanced technology with a sleek, eyewear-first design. At just 47 grams, Maverick AI is engineered for all-day comfort, balance, and wearability — it feels and looks like eyewear, not a heavy gadget on your face."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "iEriii/jiggle-64k",
+  "slug": "ieriii-jiggle-64k",
+  "author": "iEriii",
+  "url": "https://huggingface.co/iEriii/jiggle-64k",
+  "created_at": "2026-08-22T22:28:09.000Z",
+  "updated_at": "2026-08-22T22:29:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "jiggle-64k",
+  "languages": [],
+  "tags": [
+    "jiggle-64k",
+    "safetensors",
+    "mouse",
+    "trajectory-generation",
+    "mixture-density-network",
+    "gru",
+    "tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64481,
+  "parameters_human": "64481",
+  "storage_bytes": 430061,
+  "storage_human": "430061 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Jiggle Video Generator - Create Realistic Motion Videos on ...",
+      "url": "https://arting.ai/ai-jiggle-video-effect",
+      "snippet": "Generate lifelike jiggle animations instantly with the Free AI Jiggle Video Generator on Arting AI, a fast and easy AI tool for enhancing video content with smooth motion effects."
+    },
+    {
+      "title": "AI Jiggle Video Generator - Free Online Tool",
+      "url": "https://videoplus.ai/ai-jiggle-video-effect",
+      "snippet": "Create fun jiggle animation videos instantly with our AI Jiggle Video Generator free tool. Online, no login required, fast and easy to use."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=photorealistic",
+      "snippet": "Explore machine learning models. ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-SDXL-ConvRot-INT8"
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "DeepAI is the all-in-one creative AI platform built for everyone. We got our start in late 2016 with the first browser-based text-to-image generator (and some other generative tools). Since then, we have greatly expanded: with a single prompt, you can generate images, edit photos, chat with an AI that browses the internet, create short videos, compose original music, or chat with a realistic ..."
+    },
+    {
+      "title": "Jiggle AI - Turn Photos into Funny Jiggling Videos | Kaze AI",
+      "url": "https://kaze.ai/ai-jiggle-ai",
+      "snippet": "Jiggle AI by Kaze AI instantly transforms your static photos into hilarious jiggling, bouncing, and wobbling short videos. No editing skills needed — perfect for social media humor."
+    }
+  ]
+}

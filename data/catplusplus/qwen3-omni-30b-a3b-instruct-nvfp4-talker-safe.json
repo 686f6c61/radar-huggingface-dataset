@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "catplusplus/Qwen3-Omni-30B-A3B-Instruct-NVFP4-talker-safe",
+  "slug": "catplusplus-qwen3-omni-30b-a3b-instruct-nvfp4-talker-safe",
+  "author": "catplusplus",
+  "url": "https://huggingface.co/catplusplus/Qwen3-Omni-30B-A3B-Instruct-NVFP4-talker-safe",
+  "created_at": "2026-05-08T01:11:42.000Z",
+  "updated_at": "2026-08-23T02:45:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_omni_moe",
+    "base_model:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 35259818545,
+  "parameters_human": "35.26B",
+  "storage_bytes": 49702822872,
+  "storage_human": "49.7 GB",
+  "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-Omni-30B-A3B-Instruct-NVFP4-talker-safe - Hugging Face",
+      "url": "https://huggingface.co/catplusplus/Qwen3-Omni-30B-A3B-Instruct-NVFP4-talker-safe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "catplusplus/Qwen3-Omni-30B-A3B-Instruct-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/catplusplus/Qwen3-Omni-30B-A3B-Instruct-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-Omni/README.md at main · feifel/Qwen3-Omni · GitHub",
+      "url": "https://github.com/feifel/Qwen3-Omni/blob/main/README.md",
+      "snippet": "The Qwen3-Omni-30B-A3B-Instruct model is a gated model that requires authentication: Accept the model terms: Visit https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct and click \"Agree and access repository\""
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Omni: Qwen3-omni is a natively end-to-end, omni ...",
+      "url": "https://github.com/QwenLM/Qwen3-Omni",
+      "snippet": "The Qwen3-Omni-30B-A3B-Thinking model is primarily designed for understanding and interacting with multimodal inputs, including text, audio, image, and video. To achieve optimal performance, we recommend that users include an explicit textual instruction or task description in each round of dialogue alongside the multimodal input."
+    },
+    {
+      "title": "Model Variants | QwenLM/Qwen3-Omni | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3-Omni/3.1-model-variants",
+      "snippet": "The Qwen3-Omni-30B-A3B-Instruct model represents the complete multimodal system, incorporating both the Thinker and Talker components for full input-output capabilities."
+    }
+  ]
+}

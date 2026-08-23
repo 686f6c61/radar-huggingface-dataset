@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "NowLoadY/XRTranslate-OpenVoice-ONNX",
+  "slug": "nowloady-xrtranslate-openvoice-onnx",
+  "author": "NowLoadY",
+  "url": "https://huggingface.co/NowLoadY/XRTranslate-OpenVoice-ONNX",
+  "created_at": "2026-08-22T14:40:53.000Z",
+  "updated_at": "2026-08-22T22:17:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "openvoice",
+    "melotts",
+    "xrtranslate",
+    "text-to-speech",
+    "zh",
+    "base_model:myshell-ai/MeloTTS-Chinese",
+    "base_model:quantized:myshell-ai/MeloTTS-Chinese",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 561560554,
+  "storage_human": "562 MB",
+  "base_model": "myshell-ai/MeloTTS-Chinese",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NowLoadY/XRTranslate: A modular, local-first real-time speech ...",
+      "url": "https://github.com/NowLoadY/XRTranslate",
+      "snippet": "GitHub - NowLoadY/XRTranslate: A modular, local-first real-time speech recognition and translation system with support for desktop overlays, video subtitling, meeting notes, and VRChat OSC.基于纯本地模型的模块化实时语音识别与翻译系统，支持桌面字幕、视频转录、会议记录及 VRChat OSC。"
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "rsxdalv/OpenVoiceV2 · Hugging Face",
+      "url": "https://huggingface.co/rsxdalv/OpenVoiceV2",
+      "snippet": "OpenVoice has been powering the instant voice cloning capability of myshell.ai since May 2023. Until Nov 2023, the voice cloning model has been used tens of millions of times by users worldwide, and witnessed the explosive user growth on the platform."
+    },
+    {
+      "title": "OpenVoiceV2 - a Hugging Face Space by myshell-ai",
+      "url": "https://huggingface.co/spaces/myshell-ai/OpenVoiceV2",
+      "snippet": "Enter the text you want spoken, choose a language/style, and upload a brief recording of the speaker you wish to imitate. After agreeing to the MIT license, the app creates an audio file that reads..."
+    },
+    {
+      "title": "OpenVoice | MyShell",
+      "url": "https://docs.myshell.ai/technology/openvoice",
+      "snippet": "OpenVoice Instant voice cloning by MIT and MyShell. GitHub / Paper / Website OpenVoice has been powering the instant voice cloning capability of myshell.ai since May 2023. Until Nov 2023, the voice cloning model has been used tens of millions of times by users worldwide, and witnessed the explosive user growth on the platform."
+    }
+  ]
+}

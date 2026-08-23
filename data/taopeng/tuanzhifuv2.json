@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "taopeng/tuanzhifuv2",
+  "slug": "taopeng-tuanzhifuv2",
+  "author": "taopeng",
+  "url": "https://huggingface.co/taopeng/tuanzhifuv2",
+  "created_at": "2026-08-23T02:23:06.000Z",
+  "updated_at": "2026-08-23T02:23:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 524288000,
+  "storage_human": "524 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taopeng/trainai-app · Hugging Face",
+      "url": "https://huggingface.co/taopeng/trainai-app",
+      "snippet": "taopeng / trainai-app like 0 private android on-device-llm llama.cpp offline License:other Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "taopeng/model_name · Hugging Face",
+      "url": "https://huggingface.co/taopeng/model_name",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "阶跃星辰官网",
+      "url": "https://stepfuncn.com/",
+      "snippet": "阶跃星辰是领先的通用大模型创业公司，研发多模态大模型与智能应用，提供文本、图像、语音等AI能力与开放平台，推动 ..."
+    },
+    {
+      "title": "零基础也能部署!Wan2.2-TI2V-5B本地运行全攻略（含模型下载与JSON配置） | AI铺子",
+      "url": "https://www.aipuzi.cn/ai-tutorial/687.html",
+      "snippet": "手把手教你部署阿里通义万相Wan2.2-TI2V-5B视频生成模型!本教程涵盖Miniconda环境搭建、ComfyUI安装、模型文件下载（wan2.2_ti2v_5B_fp16.safetensors等）、工作流导入及JSON配置详解，支持文本生成视频与图文生成视频，RTX 4090即可运行，适合零基础用户快速上手AI视频创作。"
+    }
+  ]
+}

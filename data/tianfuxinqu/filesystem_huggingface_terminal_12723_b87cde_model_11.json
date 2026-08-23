@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_11",
+  "slug": "tianfuxinqu-filesystem_huggingface_terminal_12723_b87cde_model_11",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_11",
+  "created_at": "2026-08-23T02:17:38.000Z",
+  "updated_at": "2026-08-23T02:17:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Command Line Interface (CLI) · Hugging Face",
+      "url": "https://huggingface.co/docs/huggingface_hub/guides/cli",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Critical Hugging Face Transformers Vulnerability Enables Remote Code ...",
+      "url": "https://cybersecuritynews.com/hugging-face-rce-vulnerability/",
+      "snippet": "A newly disclosed critical vulnerability in the HuggingFace Transformers library, tracked as CVE-2026-4372, allows attackers to achieve remote code execution (RCE) through malicious model configuration files."
+    },
+    {
+      "title": "Embeddable Lemonade: Models - Lemonade Server Documentation",
+      "url": "https://lemonade-server.ai/docs/embeddable/models/",
+      "snippet": "Lemonade preserves that field in its model metadata and uses it for every subsequent download and update check. When source is omitted the shipped default is huggingface, so existing registry files require no migration. Per-Model Load Options You may want to customize how specific models will load on your user&#x27;s system."
+    },
+    {
+      "title": "How To Download and Use a Hugging Face Model - Medium",
+      "url": "https://medium.com/full-stack-engineer/how-to-download-and-use-a-hugging-face-model-0e5f2bbc8682",
+      "snippet": "Learn how to download a model from Hugging Face via the Terminal, load it locally, and run it in Python."
+    }
+  ]
+}

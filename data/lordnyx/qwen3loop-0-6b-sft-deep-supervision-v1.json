@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1",
+  "slug": "lordnyx-qwen3loop-0-6b-sft-deep-supervision-v1",
+  "author": "Lordnyx",
+  "url": "https://huggingface.co/Lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1",
+  "created_at": "2026-08-22T19:48:40.000Z",
+  "updated_at": "2026-08-22T20:01:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3loop",
+    "qwen",
+    "reasoning",
+    "deep-supervision",
+    "logic-puzzles",
+    "math",
+    "nanbeige-4.5",
+    "recurrent-transformer",
+    "text-generation",
+    "conversational",
+    "pt",
+    "en",
+    "dataset:ianncity/GLM-5.2-Logic-Puzzles",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 3041186930,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3 0.6B | Model Library | Overmind",
+      "url": "https://www.overmindlab.ai/models/qwen-3-0-6b",
+      "snippet": "Qwen 3 0.6B trains on your agent&#x27;s own traces with LoRA adapters or full finetuning, is benchmarked against your production model before any traffic moves, and serves through the same OpenAI-compatible API as every Overmind model. The final weights are yours to download and run anywhere."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In the following sections, we describe the design of the model architecture, provide details on its training procedures, present the experimental results of pre-trained and post-trained models, and finally, conclude this technical report by summarizing the key findings and outlining potential directions for future research."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "DeepSparkHub/models/nlp/llm/qwen3/loongforge at master - GitHub",
+      "url": "https://github.com/Deep-Spark/DeepSparkHub/tree/master/models/nlp/llm/qwen3/loongforge",
+      "snippet": "LoongForge is a unified training framework for LLMs, VLMs, VLAs, and diffusion models, covering pre-training, continued pre-training, and SFT. Built upon Megatron-LM with deep systemic enhancements across model coverage, training performance, and hardware support, it delivers significant speedups over mainstream open-source baselines. Qwen3 is the latest generation of large language models in ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DBeni24/BeniQwen-Qwen3.5-9B-P0-LoRA",
+  "slug": "dbeni24-beniqwen-qwen3-5-9b-p0-lora",
+  "author": "DBeni24",
+  "url": "https://huggingface.co/DBeni24/BeniQwen-Qwen3.5-9B-P0-LoRA",
+  "created_at": "2026-08-22T22:23:56.000Z",
+  "updated_at": "2026-08-22T22:30:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen",
+    "qwen3.5",
+    "lora",
+    "text-generation",
+    "experimental",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 356950728,
+  "storage_human": "357 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.5 9B - AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen3-5-9b/",
+      "snippet": "Qwen3.5-9B is a post-trained vision-language model with 9B parameters, 32 layers, and a Gated DeltaNet plus Gated Attention hybrid layout, built for multimodal instruction-following and tool calling, with 262,144 native context length and stated extensibility up to about 1,010,000 tokens."
+    },
+    {
+      "title": "Qwen3.5-9B — Qwen | AI Model Details | Neura | Neura Market",
+      "url": "https://www.neura.market/models/qwen-qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.5-9b",
+      "snippet": "Supported Parameters The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.5-9B or leave it blank instead. messages (array): A list of messages comprising the conversation so ..."
+    },
+    {
+      "title": "Qwen3.5-9B - AI Model | Apertis AI",
+      "url": "https://apertis.ai/models/qwen3.5-9b",
+      "snippet": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, built to deliver strong reasoning, coding, and visual understanding within an efficient 9B-parameter architecture. It adopts a unified vision-language design with early fusion of multimodal tokens, enabling the model to process and reason across text and images within the same context. With balanced multimodal capability and ..."
+    }
+  ]
+}

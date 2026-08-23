@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Aye10032/Qwen3-ASR-Refiner-4B",
+  "slug": "aye10032-qwen3-asr-refiner-4b",
+  "author": "Aye10032",
+  "url": "https://huggingface.co/Aye10032/Qwen3-ASR-Refiner-4B",
+  "created_at": "2026-08-23T00:51:07.000Z",
+  "updated_at": "2026-08-23T00:52:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "asr-post-processing",
+    "spoken-to-written",
+    "text-normalization",
+    "conversational",
+    "zh",
+    "dataset:Aye10032/WenetSpeech-Formal-Text",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404650,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "Aye10032/Qwen3-1.7B-ASR-Refiner · Hugging Face",
+      "url": "https://huggingface.co/Aye10032/Qwen3-1.7B-ASR-Refiner",
+      "snippet": "Qwen3 ASR Refiner Qwen3 ASR Refiner is a family of models that converts Chinese ASR transcripts and other spoken-style text into concise, natural written Chinese while preserving the original meaning."
+    },
+    {
+      "title": "Qwen3 ASR · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/model_doc/qwen3_asr",
+      "snippet": "Qwen3 ASR Overview Qwen3 ASR is an automatic speech recognition model from Alibaba&#x27;s Qwen team that combines a Whisper-style audio encoder with a Qwen3 language model decoder for speech-to-text transcription. The model supports automatic language detection and multilingual transcription. A forced aligner model is also included."
+    },
+    {
+      "title": "Qwen3-ASR Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2601.21337v1",
+      "snippet": "Qwen3-ASR famliy models leverage Qwen3-Omni as foundation model, which proved to obtain strong audio understanding ability 19. Speech to recognize is first fed to AuT encoder, which is pretrained separately from Qwen3-Omni and Qwen3-ASR."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    }
+  ]
+}

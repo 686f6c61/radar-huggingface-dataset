@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ToldByNun/mango-1.0",
+  "slug": "toldbynun-mango-1-0",
+  "author": "ToldByNun",
+  "url": "https://huggingface.co/ToldByNun/mango-1.0",
+  "created_at": "2026-08-20T23:55:58.000Z",
+  "updated_at": "2026-08-22T22:09:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "coding",
+    "agent",
+    "llama.cpp",
+    "mango",
+    "text-generation",
+    "en",
+    "de",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 12106193216,
+  "storage_human": "12.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ToldByNun/mango-public: public repo for the mango framework ...",
+      "url": "https://github.com/ToldByNun/mango-public/blob/main/",
+      "snippet": "public repo for the mango framework source. Contribute to ToldByNun/mango-public development by creating an account on GitHub."
+    },
+    {
+      "title": "Muse Image + Video: Meta&#x27;s Mango Model - Most Advanced Image Gen Yet ...",
+      "url": "https://essamamdani.com/blog/meta-mango-muse-image-video-generation-july-2026",
+      "snippet": "Muse Image + Video: Meta&#x27;s Mango Model - Most Advanced Image Gen Yet — July 7 2026 > Meta launches Muse Image codename Mango July 7 with faithful instruction following, precise edits, multi-image composition."
+    },
+    {
+      "title": "ToldByNun (Mika) · GitHub",
+      "url": "https://github.com/ToldByNun/",
+      "snippet": "Low-level systems builder from Germany. I ship research prototypes across UEFI/kernel space, real-time graphics, and LLM orchestration — usually private, always build-first. Open to collaboration on systems tooling, shader pipelines, and AI infrastructure."
+    },
+    {
+      "title": "Meta Mango AI Model: Image & Video Advances | AI News",
+      "url": "https://aiexotic.com/blog/meta-mango-ai-model-what-image-video-advances-mean-for-creators",
+      "snippet": "Meta&#x27;s Mango AI model delivers major advances in image and video generation. Creators gain powerful multimodal tools amid rising competition. Discover how these capabilities elevate content production today."
+    },
+    {
+      "title": "AI Baby Talking Generator: Create Talking Baby Videos - Mango AI",
+      "url": "https://mangoanimate.com/ai/ai-baby-talking",
+      "snippet": "Turn Baby Photos into Talking Stars with AI Baby Talking Generator Transform still images into lively, expressive talking baby videos. Powered by advanced animation tech, our AI baby talking video generator captures every subtle movement to make talking baby videos charming and full of personality. Effortlessly create your own captivating AI baby talking moments with Mango AI."
+    }
+  ]
+}

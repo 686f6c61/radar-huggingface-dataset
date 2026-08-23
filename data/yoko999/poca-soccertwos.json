@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yoko999/poca-SoccerTwos",
+  "slug": "yoko999-poca-soccertwos",
+  "author": "Yoko999",
+  "url": "https://huggingface.co/Yoko999/poca-SoccerTwos",
+  "created_at": "2026-08-23T03:15:57.000Z",
+  "updated_at": "2026-08-23T03:16:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87470156,
+  "storage_human": "87 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PHL99/poca-SoccerTwos - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/327044",
+      "snippet": "This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library."
+    },
+    {
+      "title": "aiartwork/poca-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/aiartwork/poca-SoccerTwos",
+      "snippet": "poca Agent playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "matt179/poca-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/matt179/poca-SoccerTwos",
+      "snippet": "matt179 / poca-SoccerTwos like 0 Reinforcement Learning ml-agents ONNX ML-Agents-SoccerTwos deep-reinforcement-learning Model card FilesFiles and versions xet Community Use this model SoccerTwos Agent"
+    },
+    {
+      "title": "AlGM93/POCA-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/AlGM93/POCA-SoccerTwos",
+      "snippet": "poca Agent playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library."
+    }
+  ]
+}

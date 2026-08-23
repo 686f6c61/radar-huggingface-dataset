@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "renmsd/fixed_config_of_origin",
+  "slug": "renmsd-fixed_config_of_origin",
+  "author": "renmsd",
+  "url": "https://huggingface.co/renmsd/fixed_config_of_origin",
+  "created_at": "2026-08-23T00:45:29.000Z",
+  "updated_at": "2026-08-23T00:48:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "feature-extraction",
+    "custom_code",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021760,
+  "parameters_human": "3.84B",
+  "storage_bytes": 7672065088,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Renmsd/Renmsd",
+      "url": "https://github.com/Renmsd/Renmsd",
+      "snippet": "I&#x27;m a Computer Science graduate with a strong interest in building data-driven and AI-powered systems. I focus on understanding models deeply, experimenting carefully, and turning ideas into working solutions."
+    },
+    {
+      "title": "Renmsd · GitHub",
+      "url": "https://github.com/Renmsd",
+      "snippet": "Generative AI Bootcamp at the Saudi Digital Academy (SDA) , advancing through ML, Deep Learning, and LLMs. 📈 Building a portfolio of applied AI projects — from stock market analysis bots to predictive marketing assistants for coffee shops . 🌍 Interested in leveraging AI to solve real-world business and ecological problems . 🎓 First ..."
+    },
+    {
+      "title": "renmsd (Renad) - Hugging Face",
+      "url": "https://huggingface.co/renmsd/models",
+      "snippet": "renmsd/spark-tts-full-finetune-saudi-5k. published a model about 2 months ago. renmsd/spark-tts-full-finetune-saudi-5k"
+    },
+    {
+      "title": "Model Configuration | Stability-AI/stablediffusion | DeepWiki",
+      "url": "https://deepwiki.com/Stability-AI/stablediffusion/5-model-configuration",
+      "snippet": "The configuration files determine which model classes are instantiated and how they&#x27;re connected. For information on checkpoint management that works with these configurations, see Checkpoint Management."
+    },
+    {
+      "title": "Loading models · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/models",
+      "snippet": "The AutoModel class is a convenient way to load an architecture without needing to know the exact model class name because there are many models available. It automatically selects the correct model class based on the configuration file. You only need to know the task and checkpoint you want to use."
+    }
+  ]
+}

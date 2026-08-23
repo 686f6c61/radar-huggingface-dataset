@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "barbarabhb/nl2sh-qwen3.5-2b-GGUF",
+  "slug": "barbarabhb-nl2sh-qwen3-5-2b-gguf",
+  "author": "barbarabhb",
+  "url": "https://huggingface.co/barbarabhb/nl2sh-qwen3.5-2b-GGUF",
+  "created_at": "2026-08-23T00:35:00.000Z",
+  "updated_at": "2026-08-23T00:46:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "nl2sh",
+    "natural-language-to-shell",
+    "llama-cpp",
+    "lora",
+    "sft",
+    "text-generation",
+    "en",
+    "dataset:westenfelder/NL2SH-ALFA",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 10081652288,
+  "storage_human": "10.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lufel6848/Qwen3.5-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Lufel6848/Qwen3.5-2B-GGUF",
+      "snippet": "Lufel6848 / Qwen3.5-2B-GGUF like 0 GGUF English Chinese qwen qwen3.5 llama.cpp quantization local-ai conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "DevQuasar/Qwen.Qwen3.5-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/DevQuasar/Qwen.Qwen3.5-2B-GGUF",
+      "snippet": "Quantized version of: Qwen/Qwen3.5-2B &#x27;Make knowledge free for everyone&#x27; Made with"
+    },
+    {
+      "title": "Qwen3.5 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.5",
+      "snippet": "Qwen3.5 is Alibaba&#x27;s new model family, including Qwen3.5- 35B -A3B, 27B, 122B -A10B and 397B -A17B and the new Small series: Qwen3.5-0.8B, 2B, 4B and 9B. The multimodal hybrid reasoning LLMs deliver the strongest performances for their sizes."
+    },
+    {
+      "title": "Qwen3.5 2b Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/unsloth/qwen3.5-2b-gguf",
+      "snippet": "Deep dive into Qwen3.5 2b Gguf. Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks. Efficient Hybrid Architecture: Gated Delta Networks combined with sparse Mixture-of-Experts deliver high-throughput inference with ..."
+    },
+    {
+      "title": "Qwen3.5-2B-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/lmstudio-community/Qwen3.5-2B-GGUF",
+      "snippet": "💫 Community Model> Qwen3.5-2B by Qwen 👾 LM Studio Community models highlights program. Highlighting new & noteworthy models by the community. Join the conversation on Discord. Model creator: Qwen Original model: Qwen3.5-2B GGUF quantization: provided by LM Studio team using llama.cpp release b8185 Special thanks 🙏 Special thanks to Georgi Gerganov and the whole team working on llama ..."
+    }
+  ]
+}

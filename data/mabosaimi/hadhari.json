@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mabosaimi/hadhari",
+  "slug": "mabosaimi-hadhari",
+  "author": "mabosaimi",
+  "url": "https://huggingface.co/mabosaimi/hadhari",
+  "created_at": "2026-08-22T21:10:06.000Z",
+  "updated_at": "2026-08-22T21:26:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "joblib",
+    "text-classification",
+    "spam-detection",
+    "scikit-learn",
+    "ar",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180001,
+  "storage_human": "180001 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mabosaimi/hadhari",
+      "url": "https://github.com/MAbOsaimi/Hadhari",
+      "snippet": "Hadhari (حذارِ) is a machine learning model designed to detect spam messages in Arabic text. The name Hadhari comes from the Arabic word \"حذارِ\", meaning \"beware\" or \"watch out\". It was inspired by a professor who is known for saying this phrase so often in his AI class that it became his catch-phrase. The phrase seemed like the perfect fit for a model that helps users \"beware\" of ..."
+    },
+    {
+      "title": "mabosaimi · GitHub",
+      "url": "https://github.com/MAbOsaimi/",
+      "snippet": "mabosaimi has 13 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "mabosaimi (mo os) - Hugging Face",
+      "url": "https://huggingface.co/mabosaimi",
+      "snippet": "Silly Spam Detector 👀 Silly spam detector for messages with super obvious patterns mabosaimi 1 day ago"
+    },
+    {
+      "title": "mabosaimi (mo os) - Hugging Face",
+      "url": "https://huggingface.co/mabosaimi/activity/all",
+      "snippet": "mabosaimi &#x27;s activity All Models Datasets Spaces Papers Collections Community Posts Upvotes Likes Articles published a Space1 day ago Running"
+    },
+    {
+      "title": "Model Browser - SiMa AI",
+      "url": "https://sima.ai/model-browser/",
+      "snippet": "Experience high performance AI at the Edge. See SiMa.ai models in action."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "launch-calcium/Public_Release_Models_from_TAHUB",
+  "slug": "launch-calcium-public_release_models_from_tahub",
+  "author": "launch-calcium",
+  "url": "https://huggingface.co/launch-calcium/Public_Release_Models_from_TAHUB",
+  "created_at": "2026-08-22T19:56:21.000Z",
+  "updated_at": "2026-08-22T20:02:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 685351708,
+  "storage_human": "685 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Statistics (2026): Launch Cadence by Lab",
+      "url": "https://benchlm.ai/stats/model-releases",
+      "snippet": "How fast are AI models shipping? Release counts, open-weight share, busiest months, and per-lab cadence from 128 tracked releases. Updated August 22, 2026."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    },
+    {
+      "title": "LLM Releases — the model release tracker",
+      "url": "https://www.llm-releases.com/",
+      "snippet": "Z.ai&#x27;s native-multimodal vision agent: the first GLM model designed from the start as a multimodal agent, taking image, video, and text input and producing agent-oriented output (tool calling, task decomposition, and GUI interaction)."
+    },
+    {
+      "title": "Upcoming AI Models 2026: Full Release Tracker - aitoolsrecap.com",
+      "url": "https://aitoolsrecap.com/Blog/upcoming-ai-models-2026-release-tracker",
+      "snippet": "How We Track AI Model Releases This tracker is updated manually each day as part of our daily AI news coverage. We source from official lab announcements, API changelogs, and verified third-party trackers including LLM Gateway, AI Release Tracker, and Evertune."
+    },
+    {
+      "title": "AI Release Tracker — Every LLM Release Since ChatGPT",
+      "url": "https://aireleasetracker.com/",
+      "snippet": "AI Release Tracker is a free, continuously updated timeline of every major AI model release from the world&#x27;s leading AI labs. It currently tracks 229 models from 11 companies — including OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, Moonshot AI, and Cursor — from the launch of ChatGPT on November 30 2022 through today."
+    }
+  ]
+}

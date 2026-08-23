@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Shaurya2020/antigravity-skills",
+  "slug": "shaurya2020-antigravity-skills",
+  "author": "Shaurya2020",
+  "url": "https://huggingface.co/Shaurya2020/antigravity-skills",
+  "created_at": "2026-08-22T21:53:43.000Z",
+  "updated_at": "2026-08-22T21:58:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skills | Google Antigravity Docs",
+      "url": "https://antigravity.google/docs/skills",
+      "snippet": "Workspace skills are great for project-specific workflows, like your team&#x27;s deployment process or testing conventions. Global skills work across all your projects. Use these for personal utilities or general-purpose tools you want everywhere. Note: Antigravity now defaults to .agents/skills, but still maintains backward support for .agent/skills."
+    },
+    {
+      "title": "Antigravity Skills | Build and discover AI agent skills",
+      "url": "https://antigravityskills.com/",
+      "snippet": "Build an AI agent skill from an idea or browse the published Antigravity Skills library. Skills use the SKILL.md format."
+    },
+    {
+      "title": "GitHub - rmyndharis/antigravity-skills: A curated collection of Agent ...",
+      "url": "https://github.com/rmyndharis/antigravity-skills",
+      "snippet": "A curated collection of Agent Skills for Google Antigravity, ported from the Claude Code Agents repository. This vault transforms the extensive Claude Code ecosystem into Antigravity Skills, providing your agent with repeatable workflows, domain expertise, and specialized tools."
+    },
+    {
+      "title": "Antigravity Skills - Security-Reviewed AI Skills for Claude, Cursor ...",
+      "url": "https://www.antigravityskills.org/",
+      "snippet": "Discover 261+ security-reviewed AI skills for Claude Code, Cursor, Gemini CLI, and Antigravity. Browse public previews, then register to unlock full install guides, compatibility checks, and safety reviews."
+    },
+    {
+      "title": "Antigravity Skills Directory — 3,324+ Agentic Skills for AI Coding Agents",
+      "url": "https://antigravityskills.directory/",
+      "snippet": "Discover and explore 3,324+ agentic skills for Claude, Cursor, OpenClaw, Hermes, Antigravity, and other AI coding agents. Browse skills from public repositories, updated once per week."
+    }
+  ]
+}

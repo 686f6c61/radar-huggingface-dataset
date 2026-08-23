@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "KissTheHabit/IDA_Edge_Native",
+  "slug": "kissthehabit-ida_edge_native",
+  "author": "KissTheHabit",
+  "url": "https://huggingface.co/KissTheHabit/IDA_Edge_Native",
+  "created_at": "2026-07-02T05:06:55.000Z",
+  "updated_at": "2026-08-23T00:34:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55084592710,
+  "storage_human": "55.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KissTheHabit/IDA_AI_Native · Hugging Face",
+      "url": "https://huggingface.co/KissTheHabit/IDA_AI_Native",
+      "snippet": "KissTheHabit / IDA_AI_Native like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "KissTheHabit/IDA_Edge · Hugging Face",
+      "url": "https://huggingface.co/KissTheHabit/IDA_Edge",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IDA_Edge — MMLU 100, HumanEval 100 | Deploy Guide & Hardware Fit ...",
+      "url": "https://openmodelmap.com/model/kissthehabit/ida_edge",
+      "snippet": "IDA_Edge by KissTheHabit. Scores: MMLU 100, HumanEval 100, . open-source AI model. IDA_Edge is an LLM released by KissTheHabit, lightweight and efficient, suitable for edge device dep"
+    },
+    {
+      "title": "GitHub - NativeMindBrowser/NativeMindExtension: NativeMind: Your fully ...",
+      "url": "https://github.com/NativeMindBrowser/NativeMindExtension",
+      "snippet": "NativeMind is a private, open-source alternative to ChatGPT — a fully local browser extension built on Ollama that brings local AI models into your workflow."
+    },
+    {
+      "title": "Kissthehabit Ida Edge Native Huggingface Model Kissthehabit Ida Edge ...",
+      "url": "https://sweettea.co/fr/resources/kissthehabit-ida-edge-native-huggingface-model-kissthehabit-ida-edge-native",
+      "snippet": "Explorez Kissthehabit Ida Edge Native Huggingface Model Kissthehabit Ida Edge Native dans le répertoire Sweet Tea Resources, y compris la confiance, la disponibilité et les exigences du compagnon."
+    }
+  ]
+}

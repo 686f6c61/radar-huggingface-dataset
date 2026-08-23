@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "KissTheHabit/IDA_Swift",
+  "slug": "kissthehabit-ida_swift",
+  "author": "KissTheHabit",
+  "url": "https://huggingface.co/KissTheHabit/IDA_Swift",
+  "created_at": "2026-07-17T05:21:16.000Z",
+  "updated_at": "2026-08-23T01:25:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59018881136,
+  "storage_human": "59.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KissTheHabit/IDA_Swift · Hugging Face",
+      "url": "https://huggingface.co/KissTheHabit/IDA_Swift",
+      "snippet": "KissTheHabit / IDA_Swift like 4 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "KissTheHabit/IDA_Swift_Native · Hugging Face",
+      "url": "https://huggingface.co/KissTheHabit/IDA_Swift_Native",
+      "snippet": "KissTheHabit / IDA_Swift_Native like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "README.md · KissTheHabit/IDA-training at main",
+      "url": "https://d6108366.hf-mirror.com/KissTheHabit/IDA-training/blob/main/README.md?code=true",
+      "snippet": "KissTheHabit / IDA-training like 0 ida-family legacy archived superseded License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main IDA-training /README.md KissTheHabit Update README.md 427d0c9 verified2 months ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 622 Bytes"
+    },
+    {
+      "title": "KissTheHabit/IDA_AI API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/KissTheHabit/IDA_AI",
+      "snippet": "Deploy KissTheHabit/IDA_AI with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "README.md · KissTheHabit/IDA_MoE at main",
+      "url": "https://d6108366.hf-mirror.com/KissTheHabit/IDA_MoE/blob/main/README.md?code=true",
+      "snippet": "Instructions to use KissTheHabit/IDA_MoE with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use KissTheHabit/IDA_MoE with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"KissTheHabit/IDA_MoE\")"
+    }
+  ]
+}

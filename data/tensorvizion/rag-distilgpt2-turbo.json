@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "TensorVizion/RAG-distilgpt2-turbo",
+  "slug": "tensorvizion-rag-distilgpt2-turbo",
+  "author": "TensorVizion",
+  "url": "https://huggingface.co/TensorVizion/RAG-distilgpt2-turbo",
+  "created_at": "2026-08-23T00:03:37.000Z",
+  "updated_at": "2026-08-23T00:27:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "finetuned",
+    "fintech",
+    "en",
+    "base_model:distilbert/distilgpt2",
+    "base_model:finetune:distilbert/distilgpt2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 327657928,
+  "storage_human": "328 MB",
+  "base_model": "distilgpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "distilbert/distilgpt2 · Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilgpt2",
+      "snippet": "Model Description: DistilGPT2 is an English-language model pre-trained with the supervision of the 124 million parameter version of GPT-2. DistilGPT2, which has 82 million parameters, was developed using knowledge distillation and was designed to be a faster, lighter version of GPT-2."
+    },
+    {
+      "title": "tensorblock/distilgpt2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/tensorblock/distilgpt2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "transformers-research-projects/distillation at main · huggingface ...",
+      "url": "https://github.com/huggingface/transformers-research-projects/tree/main/distillation",
+      "snippet": "The model has 6 layers, 768 dimension and 12 heads, totalizing 82M parameters (compared to 124M parameters for GPT2). On average, DistilGPT2 is two times faster than GPT2."
+    },
+    {
+      "title": "GitHub - nikhileshkverma/distilgpt2-offline",
+      "url": "https://github.com/nikhileshkverma/distilgpt2-offline",
+      "snippet": "Here&#x27;s a complete README in GitHub markdown format — designed from scratch — so anyone cloning your repo can follow it step-by-step to run DistilGPT2 fully offline."
+    },
+    {
+      "title": "HuggingFace DistilGPT2 - AI Models",
+      "url": "https://aimodels.org/ai-models/large-language-models/huggingface-distilgpt2/",
+      "snippet": "HuggingFace DistilGPT2 DistilGPT2 (short for Distilled-GPT2) is an English-language model pre-trained with the supervision of the smallest version of Generative Pre-trained Transformer 2 (GPT-2)."
+    }
+  ]
+}

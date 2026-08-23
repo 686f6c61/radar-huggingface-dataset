@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "chartreuse-verte/prose-rewriter-1.7b-v1.2",
+  "slug": "chartreuse-verte-prose-rewriter-1-7b-v1-2",
+  "author": "chartreuse-verte",
+  "url": "https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v1.2",
+  "created_at": "2026-08-21T19:02:02.000Z",
+  "updated_at": "2026-08-23T03:12:16.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "prose",
+    "rewriting",
+    "style-transfer",
+    "creative-writing",
+    "deslop",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:quantized:Qwen/Qwen3-1.7B-Base",
+    "license:agpl-3.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 502,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 6239974898,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chartreuse-verte/prose-rewriter-1.7b-v1.2 · Hugging Face",
+      "url": "https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v1.2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chartreuse-verte/prose-rewriter-1.7b-v1.2 at main - Hugging Face",
+      "url": "https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v1.2/tree/main",
+      "snippet": "chartreuse-verte / prose-rewriter-1.7b-v1.2 like 0 Text Generation Transformers Safetensors GGUF English qwen3 prose rewriting style-transfer creative-writing deslop conversational text-generation-inference License:agpl-3.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "prose-rewriter-1.7b-v1.2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/chartreuse-verte/prose-rewriter-1.7b-v1.2",
+      "snippet": "Deploy prose-rewriter-1.7b-v1.2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Chartreuse/README.md at main · OrbFrontend/Chartreuse · GitHub",
+      "url": "https://github.com/OrbFrontend/Chartreuse/blob/main/README.md",
+      "snippet": "Classifier — sentence-level binary classifier gating purple prose (and euphemism) at 1 / 0. Input is always one sentence; callers segment upstream and score each sentence independently. Favors precision — a false positive rewrites good prose. The hard part is the dataset, not the model. Depurple — weight-baked style edit for open LLMs: find the residual direction separating purple/plain ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

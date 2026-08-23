@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "justinchuby/qwen2.5-14b-instruct-int4-zp-onnx",
+  "slug": "justinchuby-qwen2-5-14b-instruct-int4-zp-onnx",
+  "author": "justinchuby",
+  "url": "https://huggingface.co/justinchuby/qwen2.5-14b-instruct-int4-zp-onnx",
+  "created_at": "2026-08-14T05:43:20.000Z",
+  "updated_at": "2026-08-23T01:04:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen2",
+    "onnxruntime-genai",
+    "int4",
+    "quantized",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8331285185,
+  "storage_human": "8.3 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "justinchuby/qwen2.5-14b-instruct-int4-zp-onnx · Hugging Face",
+      "url": "https://huggingface.co/justinchuby/qwen2.5-14b-instruct-int4-zp-onnx",
+      "snippet": "Qwen2.5-14B-Instruct — int4 (zero-point) ONNX, external data repacked An ONNX export of Qwen2.5-14B-Instruct with int4 weight quantization (zero-point, MatMulNBits -style packed UINT8 weights plus FLOAT16 scales), published so that a weight-offload / memory-residency measurement can be reproduced on hardware other than the machine it was first run on."
+    },
+    {
+      "title": "justinchuby/qwen2.5-14b-instruct-int4-zp-onnx at main",
+      "url": "https://huggingface.co/justinchuby/qwen2.5-14b-instruct-int4-zp-onnx/tree/main",
+      "snippet": "justinchuby / qwen2.5-14b-instruct-int4-zp-onnx like 0 ONNX qwen2 onnxruntime-genai int4 quantized License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main qwen2.5-14b-instruct-int4-zp-onnx 8.34 GB Ctrl+K Ctrl+K 1 contributor History:2 commits justinchuby Add Qwen2.5-14B-Instruct int4 (zero-point) ONNX export with repacked external data 5b2d287 verified5 days ..."
+    },
+    {
+      "title": "Qwen2.5-14B-Instruct download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/qwen2-5-14b-instruct/",
+      "snippet": "Download Qwen2.5-14B-Instruct for free. Powerful 14B LLM with strong instruction and long-text handling. Qwen2.5-14B-Instruct is a powerful instruction-tuned language model developed by the Qwen team, based on the Qwen2.5 architecture. It features 14.7 billion parameters and is optimized for tasks like dialogue, long-form generation, and structured output."
+    },
+    {
+      "title": "Qwen2.5-14B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/qwen/Qwen2.5-14B-Instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    }
+  ]
+}

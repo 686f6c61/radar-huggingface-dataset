@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Prospere/FalAi_Training3",
+  "slug": "prospere-falai_training3",
+  "author": "Prospere",
+  "url": "https://huggingface.co/Prospere/FalAi_Training3",
+  "created_at": "2026-08-23T01:21:06.000Z",
+  "updated_at": "2026-08-23T01:21:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "flux",
+    "text-to-image",
+    "lora",
+    "fal",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65628096,
+  "storage_human": "66 MB",
+  "base_model": "undefined",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI Halts AI Training on Advanced Model as It Detects ... - Futurism",
+      "url": "https://futurism.com/artificial-intelligence/openai-halts-training-advanced-model",
+      "snippet": "The slow down comes as the AI industry and policymakers grapple with emerging safety threats posed by frontier AI models, including AI-powered cybersecurity risks and troubling model misbehavior."
+    },
+    {
+      "title": "Generative AI | Run Image, Video, 3D and Audio Models | fal",
+      "url": "https://fal.ai/",
+      "snippet": "The world&#x27;s largest generative media model gallery Choose from 1,000+ production ready image, video, audio and 3D models. Build products using fal model apis. Scale custom AI models with fal serverless. Access 1000s of H100, H200 and B200 VMs with fal compute."
+    },
+    {
+      "title": "Train Flux LoRAs For Portraits (Training) API on fal",
+      "url": "https://fal.ai/models/fal-ai/flux-lora-portrait-trainer",
+      "snippet": "FLUX LoRA training optimized for portrait generation, with bright highlights, excellent prompt following and highly detailed results."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "AI Model Downloads - 498 Model Examples - AI Models",
+      "url": "https://aimodels.org/ai-models/",
+      "snippet": "Directory of free Open Source AI and machine learning model downloads! Our collection features the latest models in speech to text and image generation."
+    }
+  ]
+}

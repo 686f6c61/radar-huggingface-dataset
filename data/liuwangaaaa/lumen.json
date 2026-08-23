@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "liuwangaaaa/lumen",
+  "slug": "liuwangaaaa-lumen",
+  "author": "liuwangaaaa",
+  "url": "https://huggingface.co/liuwangaaaa/lumen",
+  "created_at": "2026-08-23T02:37:32.000Z",
+  "updated_at": "2026-08-23T02:51:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19319112014,
+  "storage_human": "19.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lw-liuwang/lumen: A Lightweight LLM Inference Framework Based ...",
+      "url": "https://github.com/lw-liuwang/lumen",
+      "snippet": "Lumen is a lightweight, high-performance inference framework for large language models, built from the ground up using OpenAI Triton kernels. It achieves up to 4x speedup over HuggingFace Transformers by leveraging custom Triton kernels, efficient memory management, and operator fusion techniques."
+    },
+    {
+      "title": "lumen-models (Lumen AI) - Hugging Face",
+      "url": "https://huggingface.co/lumen-models",
+      "snippet": "Natural Language Processing, Large Language Models, Model Optimization"
+    },
+    {
+      "title": "Releases · lw-liuwang/lumen · GitHub",
+      "url": "https://github.com/lw-liuwang/lumen/releases",
+      "snippet": "Highlights Lumen is a lightweight, high-performance LLM inference framework built from scratch with OpenAI Triton kernels. It achieves up to 4x speedup over HuggingFace Transformers through custom Triton operators, efficient memory management, and operator fusion techniques."
+    },
+    {
+      "title": "Model | Llumen",
+      "url": "https://pinkfuwa.github.io/llumen/user/config/model/",
+      "snippet": "Overview Llumen allows you to configure individual models with specific capabilities and parameters. This enables fine-tuned control over how each AI model behaves."
+    },
+    {
+      "title": "liuwangaaaa (liuwang) - Hugging Face",
+      "url": "https://huggingface.co/liuwangaaaa/models",
+      "snippet": "User profile of liuwang on Hugging Face Recent Activity liked a model about 7 hours ago D-Robotics/openpi liked a dataset about 7 hours ago D-Robotics/openpi_datasets updated a dataset about 8 hours ago D-Robotics/openpi_datasets View all activity"
+    }
+  ]
+}

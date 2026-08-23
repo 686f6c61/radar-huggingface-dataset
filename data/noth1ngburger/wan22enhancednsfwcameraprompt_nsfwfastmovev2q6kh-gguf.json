@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "noth1ngburger/wan22EnhancedNSFWCameraPrompt_nsfwFASTMOVEV2Q6KH.gguf",
+  "slug": "noth1ngburger-wan22enhancednsfwcameraprompt_nsfwfastmovev2q6kh-gguf",
+  "author": "noth1ngburger",
+  "url": "https://huggingface.co/noth1ngburger/wan22EnhancedNSFWCameraPrompt_nsfwFASTMOVEV2Q6KH.gguf",
+  "created_at": "2026-08-11T13:41:14.000Z",
+  "updated_at": "2026-08-22T20:51:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "wan",
+    "finetune",
+    "nsfw",
+    "base_model:Wan-AI/Wan2.2-Animate-2-14B",
+    "base_model:quantized:Wan-AI/Wan2.2-Animate-2-14B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 205,
+  "trending_score": 0,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 24007324672,
+  "storage_human": "24.0 GB",
+  "base_model": "Wan-AI/Wan2.2-Animate-2-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wan22EnhancedNSFWSVICamera_nolightningSVICfQ8H - Hugging Face",
+      "url": "https://huggingface.co/jayr23/wan22EnhancedNSFWSVICamera_nolightningSVICfQ8H",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "【WAN2.2】IMG to VIDEO - v2.1 | Wan Video Workflows | Civitai",
+      "url": "https://civitai.com/models/1824577/wan22img-to-video",
+      "snippet": "WAN2.2 — Image to video — Simple Workflow A clean, all-in-one WAN image-to-video workflow built entirely with the UmeAiRT Toolkit for ComfyUI. Only 12 nodes. No spaghetti wires. Just load your model, write your prompt, and hit generate."
+    },
+    {
+      "title": "GitHub - NUVoize/wan22-brkn-prompt-helper",
+      "url": "https://github.com/NUVoize/wan22-brkn-prompt-helper",
+      "snippet": "A powerful AI-powered prompt generation tool built with React, TypeScript, and Google&#x27;s Gemini AI. Generate creative prompts for various content types including images, videos, JSON data, and more."
+    },
+    {
+      "title": "GitHub - Wan-Video/Wan2.2: Wan: Open and Advanced Large-Scale Video ...",
+      "url": "https://github.com/Wan-Video/Wan2.2",
+      "snippet": "Thanks to all community contributors. Enjoy! Sep 19, 2025: 💃 We introduct Wan2.2-Animate-14B, an unified model for character animation and replacement with holistic movement and expression replication. We released the model weights and inference code. And you can try it on wan.video, ModelScope Studio or HuggingFace Space!"
+    },
+    {
+      "title": "wan22EnhancedNSFWSVICamera_nsfwFASTMOVEV2Q6KH.gguf - CivArchive",
+      "url": "https://civarchive.com/files/wan22EnhancedNSFWSVICamera_nsfwFASTMOVEV2Q6KH.gguf?platform=all",
+      "snippet": "Download wan22EnhancedNSFWSVICamera_nsfwFASTMOVEV2Q6KH.gguf from CivArchive. Find this AI model file preserved in our community-driven archive."
+    }
+  ]
+}

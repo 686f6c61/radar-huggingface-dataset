@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "redashes/Qwen3.8-27B-BF16-SSMFIX-apostate",
+  "slug": "redashes-qwen3-8-27b-bf16-ssmfix-apostate",
+  "author": "redashes",
+  "url": "https://huggingface.co/redashes/Qwen3.8-27B-BF16-SSMFIX-apostate",
+  "created_at": "2026-08-23T02:15:58.000Z",
+  "updated_at": "2026-08-23T03:01:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "qwen",
+    "qwen3.8",
+    "text-generation",
+    "vision-language-model",
+    "unlearning",
+    "safety",
+    "chinese",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "redashes/Qwen3.8-27B-BF16-SSMFIX · Hugging Face",
+      "url": "https://huggingface.co/redashes/Qwen3.8-27B-BF16-SSMFIX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8 27B BF16 SSMFIX by redashes - LLM Explorer",
+      "url": "https://llm-explorer.com/model/redashes%2FQwen3.8-27B-BF16-SSMFIX,4z66NlWGpKrSM12TsqjA6i",
+      "snippet": "Qwen3.8 27B BF16 SSMFIX is an open-source 27b LLM by redashes. VRAM 55.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8-27B - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html",
+      "snippet": "Qwen3.8-27B 1 Introduction ¶ Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, the most capable generation in the Qwen open-model family to date."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "27B-parameter dense hybrid-attention model with linear attention on 48 of 64 layers, a vision tower, a built-in MTP draft head, 262K native context window and extensible to 1M context"
+    }
+  ]
+}

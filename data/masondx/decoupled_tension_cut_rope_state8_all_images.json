@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "masondx/decoupled_tension_cut_rope_state8_all_images",
+  "slug": "masondx-decoupled_tension_cut_rope_state8_all_images",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/decoupled_tension_cut_rope_state8_all_images",
+  "created_at": "2026-08-22T22:40:20.000Z",
+  "updated_at": "2026-08-22T22:40:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "decoupled_bimanual_diffusion",
+    "dataset:masondx/new_tension_cut_rope_state8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 540342216,
+  "parameters_human": "540.3M",
+  "storage_bytes": 2161435192,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masondx (Hongming Mei) - Hugging Face",
+      "url": "https://huggingface.co/masondx",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "masondx/diffusion_tension_cut_rope_zero_state · Hugging Face",
+      "url": "https://huggingface.co/masondx/diffusion_tension_cut_rope_zero_state",
+      "snippet": "Instructions to use masondx/diffusion_tension_cut_rope_zero_state with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use masondx/diffusion_tension_cut_rope_zero_state with LeRobot: Notebooks Google Colab Kaggle Model Card for diffusion How to Get Started with the Model Train from scratch Evaluate the policy/run inference ..."
+    },
+    {
+      "title": "Decoupled RoPE - LLMS3",
+      "url": "https://llms3.com/node/decoupled-rope",
+      "snippet": "A positional-encoding pattern introduced by DeepSeek-V2&#x27;s Multi-head Latent Attention that **decouples** the rotary positional encoding from the latent compressed representation. Standard RoPE applies position rotations to Q and K directly; in MLA, K is reconstructed from a compressed latent, and naively applying RoPE inside the absorbed kernel breaks the matrix-fusion optimization. Decoupled ..."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "MiniMax H3 (Hailuo AI) - AI Video Workflows, Prompts & Local Deployment Hub Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    }
+  ]
+}

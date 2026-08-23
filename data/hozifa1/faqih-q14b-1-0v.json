@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "hozifa1/Faqih-Q14b-1.0V",
+  "slug": "hozifa1-faqih-q14b-1-0v",
+  "author": "hozifa1",
+  "url": "https://huggingface.co/hozifa1/Faqih-Q14b-1.0V",
+  "created_at": "2026-08-22T21:41:39.000Z",
+  "updated_at": "2026-08-22T21:42:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "islamic-ai",
+    "fiqh",
+    "qwen2.5",
+    "14b",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "ar",
+    "dataset:hozifa1/faqih_sft_dataset",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3896576950,
+  "storage_human": "3.9 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hozifa1/Faqih-14B-Islamic-AI · Hugging Face",
+      "url": "https://huggingface.co/hozifa1/Faqih-14B-Islamic-AI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hozifa1 (dorgham) - Hugging Face",
+      "url": "https://huggingface.co/hozifa1",
+      "snippet": "Sync YouTube recitations and videos to your dataset automatically. hozifa1 25 days ago. models 2. Sort: Recently updated. hozifa1/Faqih-R1-14B-Islamic-AI"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Faqih-R1-14B-Islamic-AI API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/hozifa1/Faqih-R1-14B-Islamic-AI",
+      "snippet": "Deploy Faqih-R1-14B-Islamic-AI with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    }
+  ]
+}

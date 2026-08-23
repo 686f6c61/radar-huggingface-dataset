@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_01",
+  "slug": "tianfuxinqu-filesystem_huggingface_terminal_12723_b87cde_model_01",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_01",
+  "created_at": "2026-08-23T02:17:26.000Z",
+  "updated_at": "2026-08-23T02:17:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e ...",
+      "url": "https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e_digest",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_playwright_with_chunk_5104 ...",
+      "url": "https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_playwright_with_chunk_5104_8dde2376_release_notes",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - huggingface/tau: A Python port of Pi&#x27;s minimalist coding agent.",
+      "url": "https://github.com/huggingface/tau",
+      "snippet": "A Python port of Pi&#x27;s minimalist coding agent. Contribute to huggingface/tau development by creating an account on GitHub."
+    },
+    {
+      "title": "Interact with the Hub through the Filesystem API — Docs",
+      "url": "https://modeldatabase.com/docs/huggingface_hub/guides/hf_file_system.html",
+      "snippet": "Interact with the Hub through the Filesystem API In addition to the HfApi, the huggingface_hub library provides HfFileSystem, a pythonic fsspec-compatible file interface to the Model Database Hub. The HfFileSystem builds of top of the HfApi and offers typical filesystem style operations like cp, mv, ls, du, glob, get_file, and put_file. Usage"
+    },
+    {
+      "title": "How To Download and Use a Hugging Face Model - Medium",
+      "url": "https://medium.com/full-stack-engineer/how-to-download-and-use-a-hugging-face-model-0e5f2bbc8682",
+      "snippet": "Learn how to use the huggingface-cli to download a model and run it locally on your file system."
+    }
+  ]
+}

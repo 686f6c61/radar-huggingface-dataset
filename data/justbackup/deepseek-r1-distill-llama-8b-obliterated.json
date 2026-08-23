@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Justbackup/DeepSeek-R1-Distill-Llama-8B-OBLITERATED",
+  "slug": "justbackup-deepseek-r1-distill-llama-8b-obliterated",
+  "author": "Justbackup",
+  "url": "https://huggingface.co/Justbackup/DeepSeek-R1-Distill-Llama-8B-OBLITERATED",
+  "created_at": "2026-08-23T01:45:01.000Z",
+  "updated_at": "2026-08-23T01:45:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "obliteratus",
+    "abliteration",
+    "uncensored",
+    "obliterate",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077764933,
+  "storage_human": "16.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/DeepSeek-R1-Distill-Llama-8B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-8B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-r1-distill-llama-8b - LM Studio",
+      "url": "https://lmstudio.ai/models/deepseek/deepseek-r1-distill-llama-8b",
+      "snippet": "DeepSeek R1 Distill Llama 8B by deepseek-ai Supports context length of 128k. Distilled from DeepSeek&#x27;s R1 reasoning model. Tuned for reasoning and chain-of-thought."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-R1",
+      "url": "https://github.com/deepseek-ai/DeepSeek-R1",
+      "snippet": "DeepSeek-R1-Zero, a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step, demonstrated remarkable performance on reasoning. With RL, DeepSeek-R1-Zero naturally emerged with numerous powerful and interesting reasoning behaviors."
+    },
+    {
+      "title": "DeepSeek-R1-Distill-Llama-8B · Models",
+      "url": "https://www.modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Llama-8B/summary",
+      "snippet": "DeepSeek-R1 achieves performance comparable to OpenAI-o1 across math, code, and reasoning tasks. To support the research community, we have open-sourced DeepSeek-R1-Zero, DeepSeek-R1, and six dense models distilled from DeepSeek-R1 based on Llama and Qwen."
+    }
+  ]
+}

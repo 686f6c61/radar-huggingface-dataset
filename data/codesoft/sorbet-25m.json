@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CodeSoft/sorbet-25m",
+  "slug": "codesoft-sorbet-25m",
+  "author": "CodeSoft",
+  "url": "https://huggingface.co/CodeSoft/sorbet-25m",
+  "created_at": "2026-08-22T22:13:57.000Z",
+  "updated_at": "2026-08-22T22:25:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "25M",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:mlfoundations/dclm-baseline-1.0-parquet",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25185920,
+  "parameters_human": "25.2M",
+  "storage_bytes": 50390352,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paper-Notes-en/docs/ICML2025/llm_safety/sorbet_a_neuromorphic ... - GitHub",
+      "url": "https://github.com/zhaoyang97/Paper-Notes-en/blob/main/docs/ICML2025/llm_safety/sorbet_a_neuromorphic_hardware-compatible_transformer-based_spiking_language_mod.md",
+      "snippet": "Proposes Sorbet, the first fully neuromorphic hardware-compatible Transformer-based spiking language model. By replacing traditional softmax and Layer Normalization with two key innovations—bit-shift-based PTsoftmax and Bit Shifting PowerNorm (BSPN)—it achieves performance comparable to BERT on the GLUE benchmark while reducing energy ..."
+    },
+    {
+      "title": "GitHub - Kaiwen-Tang/Sorbet",
+      "url": "https://github.com/Kaiwen-Tang/Sorbet",
+      "snippet": "Contribute to Kaiwen-Tang/Sorbet development by creating an account on GitHub."
+    },
+    {
+      "title": "[Paper Note] Sorbet: A Neuromorphic Hardware-Compatible Transformer ...",
+      "url": "https://en.papernotes.org/ICML2025/llm_safety/sorbet_a_neuromorphic_hardware-compatible_transformer-based_spiking_language_mod/",
+      "snippet": "[ICML 2025][LLM Safety][spiking neural network] Proposes Sorbet, the first fully neuromorphic hardware-compatible Transformer-based spiking language model. By replacing traditional softmax and Layer ..."
+    },
+    {
+      "title": "Sorbet: A Neuromorphic Hardware-Compatible Transformer-B...",
+      "url": "https://bytez.com/docs/icml/46416/paper",
+      "snippet": "To address these challenges, we introduce Sorbet, a transformer-based spiking language model that is more neuromorphic hardware-compatible. Sorbet incorporates a novel shifting-based softmax called PTsoftmax and a Bit Shifting PowerNorm (BSPN), both designed to replace the respective energy-intensive operations."
+    },
+    {
+      "title": "Sorbet: A Neuromorphic Hardware-Compatible Transformer-Based Spiking ...",
+      "url": "https://arxiv.org/html/2409.15298v2",
+      "snippet": "A comparison between Sorbet and previous works is shown in Table1. To our knowledge, Sorbet is the first model designed for language tasks that overcomes the challenge of deploying transformer-based language models on neuromorphic hardware, which does not support complex operations like division and square roots."
+    }
+  ]
+}

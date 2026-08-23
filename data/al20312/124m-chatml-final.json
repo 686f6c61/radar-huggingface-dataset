@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "al20312/124M-ChatML-Final",
+  "slug": "al20312-124m-chatml-final",
+  "author": "al20312",
+  "url": "https://huggingface.co/al20312/124M-ChatML-Final",
+  "created_at": "2026-08-23T00:04:57.000Z",
+  "updated_at": "2026-08-23T00:05:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "al20312/124M-Pretrained-Base · Hugging Face",
+      "url": "https://huggingface.co/al20312/124M-Pretrained-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - sherinnn/LLM-Architecture: GPT-2 (124M parameters) from ...",
+      "url": "https://github.com/sherinnn/LLM-Architecture",
+      "snippet": "This project walks through building a GPT-2 style language model (124M parameters) completely from scratch and using it to generate text autoregressively. It follows two major stages: Model Construction — Implementing the GPT-2 architecture Text Generation — Using the model to predict and generate tokens"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - Bensmail-anis/developing-gpt2-124M-from-scratch: A custom ...",
+      "url": "https://github.com/Bensmail-anis/developing-gpt2-124M-from-scratch",
+      "snippet": "A custom implementation of OpenAI&#x27;s GPT-2 (124M) from scratch, following the paper \"Language Models are Unsupervised Multitask Learners\".We train the model on the FineWeb dataset -10 billion tokens."
+    },
+    {
+      "title": "MBZUAI/LaMini-GPT-124M · Hugging Face",
+      "url": "https://huggingface.co/MBZUAI/LaMini-GPT-124M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

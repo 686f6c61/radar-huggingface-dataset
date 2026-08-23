@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "LLMWildling/DeepSeek-V4-Flash-YoloSwag-420-preview",
+  "slug": "llmwildling-deepseek-v4-flash-yoloswag-420-preview",
+  "author": "LLMWildling",
+  "url": "https://huggingface.co/LLMWildling/DeepSeek-V4-Flash-YoloSwag-420-preview",
+  "created_at": "2026-08-22T21:26:01.000Z",
+  "updated_at": "2026-08-22T21:58:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 305262725094,
+  "parameters_human": "305.26B",
+  "storage_bytes": 167461935782,
+  "storage_human": "167.5 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/DeepSeek-V4-Flash",
+      "snippet": "Key capabilities About this model We present a preview version of the DeepSeek-V4 series, including two strong Mixture-of-Experts (MoE) language models — DeepSeek-V4-Pro with 1.6T parameters (49B activated) and DeepSeek-V4-Flash with 284B parameters (13B activated) — both supporting a context length of one million tokens."
+    },
+    {
+      "title": "DeepSeek V4 Flash - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/deepseek-v4-flash",
+      "snippet": "DeepSeek V4 Flash 0731 is a 284B Mixture-of-Experts model built for coding, tool use, and agentic workflows, with 13B active parameters and a 1M-token context window."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash | vLLM Recipes - recipes.vllm.ai",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash",
+      "snippet": "Overview DeepSeek-V4-Flash is a 284B-total / 13B-active MoE model in the V4 preview family. It pairs a hybrid attention stack — Compressed Sparse Attention (CSA) + Heavily Compressed Attention (HCA) — with Manifold-Constrained Hyper-Connections (mHC) to reach 27% of V3.2&#x27;s per-token inference FLOPs and 10% of V3.2&#x27;s KV cache at 1M context."
+    },
+    {
+      "title": "llm-model-tracker/deepseek-v4-flash.md at main - GitHub",
+      "url": "https://github.com/startakovsky/llm-model-tracker/blob/main/deepseek-v4-flash.md",
+      "snippet": "DeepSeek V4 Flash scores 72.2 coding average (benchlm.ai) — roughly 85-90% of GLM-5.2&#x27;s coding quality at 1/10th the API cost ($0.09+$0.18/M vs $0.91+$2.86/M). Strong on logical reasoning and coding. Weaker on agentic tasks (55.4 vs GLM-5.2&#x27;s higher scores). For cost-conscious workflows, this is the best value frontier-tier model available. The 1M context window matches GLM-5.2."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jiaheguo521/relu-clip",
+  "slug": "jiaheguo521-relu-clip",
+  "author": "jiaheguo521",
+  "url": "https://huggingface.co/jiaheguo521/relu-clip",
+  "created_at": "2026-08-08T14:35:01.000Z",
+  "updated_at": "2026-08-22T23:25:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "clip",
+    "knowledge-distillation",
+    "quantization",
+    "int8",
+    "edge-tpu",
+    "coral",
+    "on-device",
+    "zero-shot-image-classification",
+    "dataset:ILSVRC/imagenet-1k",
+    "arxiv:1801.04381",
+    "arxiv:1806.08342",
+    "base_model:openai/clip-vit-large-patch14",
+    "base_model:finetune:openai/clip-vit-large-patch14",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 166,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 524220209,
+  "storage_human": "524 MB",
+  "base_model": "openai/clip-vit-large-patch14, timm/resnet50_clip.openai",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jiaheguo521/relu-clip · Hugging Face",
+      "url": "https://huggingface.co/jiaheguo521/relu-clip",
+      "snippet": "Frozen CLIP image encoders distilled into small ReLU/ReLU6 + BatchNorm CNNs that quantise to int8 and run as a single graph on low-power edge accelerators, whose operator coverage is strongest for convolutional networks."
+    },
+    {
+      "title": "GitHub - jiaheguo521/relu-clip",
+      "url": "https://github.com/jiaheguo521/relu-clip",
+      "snippet": "Contribute to jiaheguo521/relu-clip development by creating an account on GitHub."
+    },
+    {
+      "title": "Jiahe Guo jiaheguo521 - GitHub",
+      "url": "https://github.com/jiaheguo521",
+      "snippet": "jiaheguo521 has 7 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "jiaheguo521 (Jiahe Guo) - Hugging Face",
+      "url": "https://huggingface.co/jiaheguo521",
+      "snippet": "User profile of Jiahe Guo on Hugging Face"
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2103.00020",
+      "snippet": "This paper explores pre-training models for learning state-of-the-art image representations using natural language captions paired with images."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "brindusa/Ternary-Bonsai-27B-heretic-ja-GGUF",
+  "slug": "brindusa-ternary-bonsai-27b-heretic-ja-gguf",
+  "author": "brindusa",
+  "url": "https://huggingface.co/brindusa/Ternary-Bonsai-27B-heretic-ja-GGUF",
+  "created_at": "2026-08-23T01:34:56.000Z",
+  "updated_at": "2026-08-23T01:34:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "conversational",
+    "prismml",
+    "bonsai",
+    "ternary",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara-lora",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 16310844896,
+  "storage_human": "16.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ternary-Bonsai-27B-heretic-ja-GGUF - Hugging Face",
+      "url": "https://huggingface.co/OS-Software/Ternary-Bonsai-27B-heretic-ja-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OS-Software/Ternary-Bonsai-27B-heretic-ja-GGUF at main",
+      "url": "https://huggingface.co/OS-Software/Ternary-Bonsai-27B-heretic-ja-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bonsai 27B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-27b",
+      "snippet": "Bonsai 27B is the largest multimodal model in the family: it accepts vision input alongside text. It is based on Qwen3.6 27B. Like every Bonsai, the language model is quantized end-to-end 1-bit or ternary weights across embeddings, attention, MLPs, and the LM head. The vision tower is handled separately, at 4-bit."
+    },
+    {
+      "title": "GitHub - PrismML-Eng/Bonsai-demo: Bonsai Demo · GitHub",
+      "url": "https://github.com/PrismML-Eng/Bonsai-demo/",
+      "snippet": "Long context: 256k+ token conversations. Tiny footprint: the 1-bit Bonsai-27B packs to ~1.125 bits per weight: it fits on a modern iPhone without memory offloading. Ternary-Bonsai-27B (~1.7 bits per weight, packed into 2-bit for fast accelerated kernels) is the higher-quality option and this demo&#x27;s default."
+    },
+    {
+      "title": "Announcing Bonsai 27B: The First 27B-Class Model to Run on a Phone",
+      "url": "https://prismml.com/news/bonsai-27b",
+      "snippet": "Today, we&#x27;re announcing Bonsai 27B, based on Qwen3.6 27B, the new multimodal flagship of the Bonsai family and the first model of its capability class to run on a phone. Our earlier releases proved that models with 1-bit and ternary weights could produce commercially useful language models."
+    }
+  ]
+}

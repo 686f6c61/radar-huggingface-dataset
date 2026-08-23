@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kerasformers/tipsv2-so400m14-dpt",
+  "slug": "kerasformers-tipsv2-so400m14-dpt",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/tipsv2-so400m14-dpt",
+  "created_at": "2026-08-23T00:34:24.000Z",
+  "updated_at": "2026-08-23T00:34:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "tipsv2",
+    "dpt",
+    "depth-estimation",
+    "image-segmentation",
+    "arxiv:2604.12012",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:google/tipsv2-so400m14-dpt",
+    "base_model:finetune:google/tipsv2-so400m14-dpt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1973853104,
+  "storage_human": "2.0 GB",
+  "base_model": "google/tipsv2-so400m14-dpt",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/tipsv2-so400m14-dpt · Hugging Face",
+      "url": "https://huggingface.co/google/tipsv2-so400m14-dpt",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tipsv2-so400m14-dpt (0.4B) | Benchmarks & Deploy Guide | OpenModelMap",
+      "url": "https://openmodelmap.com/model/google/tipsv2-so400m14-dpt",
+      "snippet": "What tasks is tipsv2-so400m14-dpt suitable for? tipsv2-so400m14-dpt is primarily used for depth-estimation. tipsv2-so400m14-dpt by google for depth-estimation — open-source AI model on HuggingFace. Can tipsv2-so400m14-dpt be used commercially? tipsv2-so400m14-dpt is for research and non-commercial use only. Not for direct use in commercial ..."
+    },
+    {
+      "title": "google/tipsv2-so400m14-dpt at main - Hugging Face",
+      "url": "https://huggingface.co/google/tipsv2-so400m14-dpt/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tipsv2-so400m14 (0.4B) | Benchmarks & Deploy Guide | OpenModelMap",
+      "url": "https://openmodelmap.com/model/google/tipsv2-so400m14",
+      "snippet": "What tasks is tipsv2-so400m14 suitable for? tipsv2-so400m14 is primarily used for zero-shot-image-classification. tipsv2-so400m14 by google for zero-shot-image-classification — open-source AI model on HuggingFace. Can tipsv2-so400m14 be used commercially? tipsv2-so400m14 is for research and non-commercial use only."
+    },
+    {
+      "title": "GitHub - google-deepmind/tips: TIPSv2 (CVPR&#x27;26) and TIPS (ICLR&#x27;25)",
+      "url": "https://github.com/google-deepmind/tips?tab=readme-ov-file",
+      "snippet": "We provide both Pytorch and Jax (Scenic) implementations: tips/pytorch/: PyTorch inference for the model. tips/scenic/: Jax-based inference using the scenic library. We provide links to all available checkpoints, for both Pytorch and Jax model definitions, together with representative evals. You can also find TIPSv2 models on HuggingFace here."
+    }
+  ]
+}

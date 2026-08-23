@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "baladhurgesh97/triton-gdn-decode",
+  "slug": "baladhurgesh97-triton-gdn-decode",
+  "author": "baladhurgesh97",
+  "url": "https://huggingface.co/baladhurgesh97/triton-gdn-decode",
+  "created_at": "2026-08-22T20:19:27.000Z",
+  "updated_at": "2026-08-22T20:21:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "triton",
+    "vllm",
+    "qwen3.5",
+    "gated-deltanet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - yahya010/flashinfer-gdn-submission: GDN decode kernel ...",
+      "url": "https://github.com/yahya010/flashinfer-gdn-submission",
+      "snippet": "GDN decode kernel submission for MLSys 2026 FlashInfer AI Kernel Contest - yahya010/flashinfer-gdn-submission"
+    },
+    {
+      "title": "Qwen3.5 GDN (Gated Delta Networks) 原理与代码分析",
+      "url": "https://zhuanlan.zhihu.com/p/2007937984738129405",
+      "snippet": "Qwen3.5 系列模型采用了 GDN 结构(Gated Delta Networks)，笔者在其中从事 GDN Kernel 的训推优化工作。本文将结合 flash-linear-attention 中的 GDN 代码实现以及工作中的优化经验，从算法原理和代码层面详细分析…"
+    },
+    {
+      "title": "GitHub - ByteDance-Seed/Triton-distributed: Distributed Compiler and ...",
+      "url": "https://github.com/ByteDance-Seed/Triton-distributed",
+      "snippet": "Triton-distributed is a distributed compiler designed for computation-communication overlapping, which is based on OpenAI Triton. Using Triton-distributed, programmers are able to develop efficient kernels comparable to highly-optimized libraries (including Distributed-GEMM and FLUX)."
+    },
+    {
+      "title": "Qwen3.5 GDN Prefill Kernel 优化 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/2007935329550766500",
+      "snippet": "总结 本文介绍了 Qwen3-Next GDN prefill 阶段的部分 kernel 优化工作，性能提升较为可观。 GDN 算法原理和 Triton 侧的 kernel 实现来自 fla-org/flash-linear-attention，感谢参与以上工作的作者们。 如有相关问题或建议，欢迎留言，以及通过 GitHub Issue 或 PR 交流讨论。"
+    },
+    {
+      "title": "Welcome to Triton&#x27;s documentation!",
+      "url": "https://triton-lang.org/main/index.html",
+      "snippet": "Welcome to Triton&#x27;s documentation! Triton is a language and compiler for parallel programming. It aims to provide a Python-based programming environment for productively writing custom DNN compute kernels capable of running at maximal throughput on modern GPU hardware. Getting Started Follow the installation instructions for your platform of choice. Take a look at the tutorials to learn how ..."
+    }
+  ]
+}

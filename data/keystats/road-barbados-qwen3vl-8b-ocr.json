@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "keystats/road-barbados-qwen3vl-8b-ocr",
+  "slug": "keystats-road-barbados-qwen3vl-8b-ocr",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/road-barbados-qwen3vl-8b-ocr",
+  "created_at": "2026-08-23T00:43:25.000Z",
+  "updated_at": "2026-08-23T00:45:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545762310,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-VL-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct",
+      "snippet": "Qwen/Qwen3-VL-8B-Instruct is supported by the following Inference Providers:"
+    },
+    {
+      "title": "wangkanai/qwen3-vl-8b-instruct · Hugging Face",
+      "url": "https://huggingface.co/wangkanai/qwen3-vl-8b-instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "Qwen3-VL-8B - LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3-vl-8b",
+      "snippet": "The 8B version of Qwen&#x27;s latest vision-language model. Includes comprehensive upgrades to visual perception, spatial reasoning, and image understanding. Available in MLX for Apple Silicon."
+    },
+    {
+      "title": "Qwen3-VL-8B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-VL-8B-Instruct",
+      "snippet": "Qwen3-VL-8B-Instruct Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ryandeng/el5e5-pw-300-merged",
+  "slug": "ryandeng-el5e5-pw-300-merged",
+  "author": "ryandeng",
+  "url": "https://huggingface.co/ryandeng/el5e5-pw-300-merged",
+  "created_at": "2026-08-23T02:44:24.000Z",
+  "updated_at": "2026-08-23T02:49:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41857430006,
+  "storage_human": "41.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ryandeng (Ryan Deng) - Hugging Face",
+      "url": "https://huggingface.co/ryandeng",
+      "snippet": "User profile of Ryan Deng on Hugging Face"
+    },
+    {
+      "title": "GitHub - arcee-ai/mergekit: Tools for merging pretrained large language ...",
+      "url": "https://github.com/arcee-ai/mergekit",
+      "snippet": "Improve performance while maintaining inference costs Create new capabilities through creative model combinations Unlike traditional ensembling which requires running multiple models, merged models maintain the same inference cost as a single model while often achieving comparable or superior performance."
+    },
+    {
+      "title": "AI Models | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Browse thousands of free Stable Diffusion & Flux models, LoRAs, checkpoints, and embeddings. The largest collection of AI image generation resources."
+    },
+    {
+      "title": "ryandeng32 (Ryan Deng) · GitHub",
+      "url": "https://github.com/ryandeng32",
+      "snippet": "Ryan Deng ryandeng32 Software Engineer University of Waterloo ryandeng.me Block or report user ryandeng32 / README.md"
+    },
+    {
+      "title": "Merge Large Language Models with mergekit - Hugging Face",
+      "url": "https://huggingface.co/blog/mlabonne/merge-models",
+      "snippet": "Model Merging is a very popular technique nowadays in LLM. Here is a chronological list of papers on the space that will help you get started with it! • 30 items • Updated Jun 12, 2024 • 254"
+    }
+  ]
+}

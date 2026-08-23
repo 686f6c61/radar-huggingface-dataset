@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "FluidInference/ace-step-webgpu-models",
+  "slug": "fluidinference-ace-step-webgpu-models",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/ace-step-webgpu-models",
+  "created_at": "2026-08-23T02:21:28.000Z",
+  "updated_at": "2026-08-23T02:22:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "webgpu",
+    "music-generation",
+    "ace-step",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5743261401,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACE-Step WebGPU - a Hugging Face Space by shreyask",
+      "url": "https://huggingface.co/spaces/shreyask/ace-step-webgpu",
+      "snippet": "Text encoder (Qwen3-Embedding-.6B, fp16) turns the caption into conditioning hidden states; the same model provides token embeddings for the lyric path. 5 Hz LM (ACE-Step acestep-5Hz-lm-.6B, 4-bit MatMulNBits) writes a short chain-of-thought, then emits ~50 audio codes per 10 s of output. FSQ → detokenizer expands the codes into 25 Hz acoustic features used as cross-attention hints. DiT ..."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - FluidInference/.github",
+      "url": "https://github.com/FluidInference/.github",
+      "snippet": "While some solutions exist for running local AI models on AI accelerators, most are closed source or only partially open, which we found frustrating. Rather than wait for others to solve this problem, we decided to tackle it ourselves and share our models and SDKs with everyone."
+    },
+    {
+      "title": "Fluid Inference - GitHub",
+      "url": "https://github.com/FluidInference",
+      "snippet": "We&#x27;re an applied AI research lab building small, personalized models. If we derive from an open-source model, it stays open source. Conversion scripts are opensourced in mobius. Join our Discord or check out our models on Hugging Face: Read our blogs here"
+    },
+    {
+      "title": "Fluid Inference",
+      "url": "https://www.fluidinference.com/",
+      "snippet": "Ambient AI on device. Build applications that sense, learn, and respond—fast and private, across platforms."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview-mtp-gguf",
+  "slug": "hotdogs-qwen3-8-27b-abliterated-code-analysis-preview-mtp-gguf",
+  "author": "hotdogs",
+  "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview-mtp-gguf",
+  "created_at": "2026-08-23T02:56:42.000Z",
+  "updated_at": "2026-08-23T03:18:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "abliterated",
+    "code-analysis",
+    "mtp",
+    "speculative-decoding",
+    "base_model:hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview",
+    "base_model:quantized:hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 93899447680,
+  "storage_human": "93.9 GB",
+  "base_model": "hotdogs/Qwen3.8-27B-abliterated-code-analysis-preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · hotdogs/Qwen3.8-27B-abliterated-MTP-GGUF at ...",
+      "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-MTP-GGUF/blob/193101d7bd2d9c21987c48f79f102cb66d376586/README.md",
+      "snippet": "About the source model hotdogs/Qwen3.8-27B-abliterated is a training-free abliterated build of Qwen/Qwen3.8-27B (a dense 27B native vision-language model with hybrid full-attention + linear-attention architecture). Refusal behaviour is removed by a single forward-only rank-1 weight edit that orthogonalizes the \"refusal direction\" out of the 131 residual-stream writers — no fine-tuning, no ..."
+    },
+    {
+      "title": "code/README.md · hotdogs/Qwen3.8-27B-abliterated at main",
+      "url": "https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated/blob/main/code/README.md",
+      "snippet": "Instructions to use hotdogs/Qwen3.8-27B-abliterated with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use hotdogs/Qwen3.8-27B-abliterated with Transformers:"
+    },
+    {
+      "title": "Qwen3.8-27B-abliterated-MTP-GGUF | Genaihub",
+      "url": "https://genaihub.net/agents/hf-model-hotdogs-qwen3-8-27b-abliterated-mtp-gguf",
+      "snippet": "Qwen3.8-27B-abliterated-MTP-GGUF is an open-weight text-generation model with roughly 27B parameters published by hotdogs on the Hugging Face Hub. It has 21,373 downloads."
+    },
+    {
+      "title": "Qwen3.8 27B Abliterated by hotdogs — VRAM 55.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/hotdogs%2FQwen3.8-27B-abliterated,3OshiP1Xtg7XK84wjMjHc",
+      "snippet": "Qwen3.8 27B Abliterated is an open-source 27b LLM by hotdogs. VRAM 55.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "hotdogs/Qwen3.8-27B-abliterated • hfviewer",
+      "url": "https://hfviewer.com/hotdogs/Qwen3.8-27B-abliterated",
+      "snippet": "Where the model could be executed, the graph is trace-backed; otherwise it is derived from the reviewed configuration and source code. hotdogs/Qwen3.8-27B-abliterated is an image-text-to-text model (qwen3_5_text architecture). It uses 64 transformer layers, a hidden size of 5,120, and 24 query heads with 4 key/value heads (grouped-query attention)."
+    }
+  ]
+}

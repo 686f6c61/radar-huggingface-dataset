@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/EchoMind-TestRepo-r38",
+  "slug": "sotaagi2030-echomind-testrepo-r38",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/EchoMind-TestRepo-r38",
+  "created_at": "2026-08-23T00:02:51.000Z",
+  "updated_at": "2026-08-23T00:02:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030/EchoMind-TestRepo-r23 · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/EchoMind-TestRepo-r23",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "Sort: Recently updated . SOTAagi2030/MyAwesomeModel-TestRepo. Feature Extraction • Updated about 1 hour ago. SOTAagi2030/EarlyCheckpoint-v1. Feature Extraction ..."
+    },
+    {
+      "title": "GitHub - Sicanbt/echo-mind: ECHO MIND — AI Memory and Context ...",
+      "url": "https://github.com/Sicanbt/echo-mind",
+      "snippet": "AI Memory Persistence Engine — Powered by MiMo V2.5 Echo Mind is a persistent AI memory engine that gives your AI total recall across every session. Four specialized agents — Encoder, Indexer, Retriever, and Synthesizer — work in a coordinated pipeline to transform raw experience into structured, retrievable, and synthesized knowledge."
+    },
+    {
+      "title": "EchoMind AI - AI for Musculoskeletal Ultrasound",
+      "url": "https://echomindai.com/",
+      "snippet": "The extremely steep learning curve that comes with learning traditional MSK Ultrasound prevents most clinics and practices from adopting it in house. There just isn&#x27;t enough time for the average practitioner to get the training and experience you need. Echo Mind AI makes it possible to add Ultrasound diagnostics to any clinic of any size."
+    },
+    {
+      "title": "GitHub - fati802/Echomind-: An AI Powered Visual Memory Memory ...",
+      "url": "https://github.com/fati802/Echomind-",
+      "snippet": "EchoMind — AI-powered visual memory assistant for dementia patients. Built for AMD Developer Hackathon Act II — Unicorn Track."
+    }
+  ]
+}

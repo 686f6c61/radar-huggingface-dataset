@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "reyansh38771/sn97____logicpeak____uid148____hk5DXSx",
+  "slug": "reyansh38771-sn97____logicpeak____uid148____hk5dxsx",
+  "author": "reyansh38771",
+  "url": "https://huggingface.co/reyansh38771/sn97____logicpeak____uid148____hk5DXSx",
+  "created_at": "2026-08-23T00:24:41.000Z",
+  "updated_at": "2026-08-23T00:40:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58153613432,
+  "storage_human": "58.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reyansh38771 (Dallien Reayn) - Hugging Face",
+      "url": "https://huggingface.co/reyansh38771",
+      "snippet": "User profile of Dallien Reayn on Hugging Face"
+    },
+    {
+      "title": "reyansh38771/michael-chan-000____uid123____hk5D5FE · Hugging Face",
+      "url": "https://huggingface.co/reyansh38771/michael-chan-000____uid123____hk5D5FE",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that&#x27;s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Find Any Snapchat User by Username — Free 2026 | FootprintIQ",
+      "url": "https://footprintiq.app/platforms/snapchat/username-search",
+      "snippet": "Free Snapchat user search. Paste a Snapchat handle and instantly find where the same username appears on Instagram, TikTok, dating apps and 500+ other platforms. No Snapchat login required, AI confidence scored."
+    },
+    {
+      "title": "Social Media Lookup — Free Social Media Finder (2026) | FootprintIQ",
+      "url": "https://footprintiq.app/social-media-finder",
+      "snippet": "The fastest free social media finder in 2026. Find social media accounts by email, username, or phone number. FootprintIQ checks Instagram, TikTok, X, Reddit, Discord, LinkedIn, YouTube, Twitch and 500+ more platforms in parallel and returns every public profile with AI-filtered confidence scoring."
+    }
+  ]
+}

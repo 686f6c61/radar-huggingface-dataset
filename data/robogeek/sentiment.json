@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RoboGeek/Sentiment",
+  "slug": "robogeek-sentiment",
+  "author": "RoboGeek",
+  "url": "https://huggingface.co/RoboGeek/Sentiment",
+  "created_at": "2026-08-22T22:24:53.000Z",
+  "updated_at": "2026-08-22T22:24:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=sentiment-analysis",
+      "snippet": "Explore machine learning models. Anthos23/sentiment-roberta-large-english-finetuned-sentiment-analysis"
+    },
+    {
+      "title": "sentiment.ai - GitHub Pages",
+      "url": "https://benwiseman.github.io/sentiment.ai/",
+      "snippet": "Overview sentiment.ai turns text into sentiment scores using a sentence-embedding model plus a small, bundled scoring head. The default backend is the on-device multilingual model multilingual-e5-base (no TensorFlow, no API key, no data leaving your machine)."
+    },
+    {
+      "title": "GitHub - BenWiseman/sentiment.ai: Package for using deep learning ...",
+      "url": "https://github.com/BenWiseman/sentiment.ai",
+      "snippet": "The most complete on-device sentiment toolkit in the R/Python ecosystem. It ships hate-speech / mixed / style flags, intent-based profiles, an interactive sentiment map, and opt-in transformer backends for when you want maximum accuracy. The default model, on-device e5-base, matches the paid OpenAI embedding (text-embedding-3-small) on our benchmarks: that quality, free, across ~100 languages ..."
+    },
+    {
+      "title": "Best AI for Sentiment Analysis 2026: Top 20 Models Benchmarked",
+      "url": "https://openmark.ai/best-ai-for-sentiment-analysis",
+      "snippet": "Best AI for Sentiment Analysis in 2026 Top 20 AI models benchmarked on difficult sentiment analysis — sarcasm, irony, double negatives, and mixed signals across movie reviews, product feedback, and tweets. The cheapest model tied for first."
+    },
+    {
+      "title": "Sentiment analysis prebuilt AI model - AI Builder | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-sentiment-analysis",
+      "snippet": "The sentiment analysis prebuilt model detects positive or negative sentiment in text data. You can use it to analyze social media, customer reviews, or any text data you&#x27;re interested in. Sentiment analysis evaluates text input, and gives scores and labels at a sentence and document level."
+    }
+  ]
+}

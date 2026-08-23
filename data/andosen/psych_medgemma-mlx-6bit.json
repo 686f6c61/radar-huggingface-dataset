@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "andosen/Psych_medgemma-mlx-6Bit",
+  "slug": "andosen-psych_medgemma-mlx-6bit",
+  "author": "andosen",
+  "url": "https://huggingface.co/andosen/Psych_medgemma-mlx-6Bit",
+  "created_at": "2026-08-23T01:39:13.000Z",
+  "updated_at": "2026-08-23T01:39:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "en",
+    "dataset:Daemontatox/Psy-Data-books",
+    "base_model:Compumacy/Psych_medgemma",
+    "base_model:quantized:Compumacy/Psych_medgemma",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5909277440,
+  "parameters_human": "5.91B",
+  "storage_bytes": 21980000213,
+  "storage_human": "22.0 GB",
+  "base_model": "Compumacy/Psych_medgemma",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compumacy/Psych_medgemma · Hugging Face",
+      "url": "https://huggingface.co/Compumacy/Psych_medgemma",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Google-Health/medgemma",
+      "url": "https://github.com/google-health/medgemma",
+      "snippet": "MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension. Developers can use MedGemma to accelerate building healthcare-based AI applications. MedGemma comes in two variants: a 4B multimodal version and a 27B text-only version. MedGemma 4B utilizes a SigLIP image encoder that has been specifically pre-trained on a variety of de ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Compumacy/Psych_medgemma",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MedGemma 1 model card | Health AI Developer Foundations | Google for ...",
+      "url": "https://developers.google.com/health-ai-developer-foundations/medgemma/model-card-v1",
+      "snippet": "Author: Google Model information This section describes the MedGemma model and how to use it. Description MedGemma is a collection of Gemma 3 variants that are trained for performance on medical text and image comprehension. Developers can use MedGemma to accelerate building healthcare-based AI applications."
+    },
+    {
+      "title": "Healthcare LLMs Compared 2026: MedGemma, Meditron +20",
+      "url": "https://nirmitee.io/blog/healthcare-llm-landscape-2026-medgemma-meditron-clinical-model-guide/",
+      "snippet": "Part of our complete guide to AI agents transforming care delivery. \"Which LLM should we use for our healthcare product?\" Every clinical AI team asks this question. Few get a good answer. The landscape changes quarterly — new models launch, benchmarks shift, licensing terms evolve, and yesterday&#x27;s leader becomes today&#x27;s baseline. In January 2026, Google released MedGemma 1.5 and reset ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "abhijeetknayak/ppo-SnowballTarget",
+  "slug": "abhijeetknayak-ppo-snowballtarget",
+  "author": "abhijeetknayak",
+  "url": "https://huggingface.co/abhijeetknayak/ppo-SnowballTarget",
+  "created_at": "2026-08-22T19:28:32.000Z",
+  "updated_at": "2026-08-22T19:28:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25729451,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adilbai/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/ppo-SnowballTarget",
+      "snippet": "This model is a Proximal Policy Optimization (PPO) agent trained to play the SnowballTarget environment from Unity ML-Agents. The agent, named Julien the Bear 🐻, learns to accurately throw snowballs at spawning targets to maximize rewards."
+    },
+    {
+      "title": "JackForAI/ppo-SnowballTarget · Hugging Face",
+      "url": "https://huggingface.co/JackForAI/ppo-SnowballTarget",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    },
+    {
+      "title": "ppo-LunarLander-v3 huggingface.co api & cjksofm ppo-LunarLander-v3 ...",
+      "url": "https://www.toolify.ai/ai-model/cjksofm-ppo-lunarlander-v3",
+      "snippet": "ppo-LunarLander-v3 is an open source model from GitHub that offers a free installation service, and any user can find ppo-LunarLander-v3 on GitHub to install. At the same time, huggingface.co provides the effect of ppo-LunarLander-v3 install, users can directly use ppo-LunarLander-v3 installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "ppo-SnowballTarget huggingface.co api & kingabzpro ppo-SnowballTarget ...",
+      "url": "https://www.toolify.ai/ai-model/kingabzpro-ppo-snowballtarget",
+      "snippet": "ppo-SnowballTarget is an open source model from GitHub that offers a free installation service, and any user can find ppo-SnowballTarget on GitHub to install. At the same time, huggingface.co provides the effect of ppo-SnowballTarget install, users can directly use ppo-SnowballTarget installed effect in huggingface.co for debugging and trial."
+    },
+    {
+      "title": "SnowballTarget1---RL---UnityMLagents/README.md at main - GitHub",
+      "url": "https://github.com/dhruvil122/SnowballTarget1---RL---UnityMLagents/blob/main/README.md",
+      "snippet": "ppo Agent playing SnowballTarget This is a trained model of a ppo agent playing SnowballTarget using the Unity ML-Agents Library."
+    }
+  ]
+}

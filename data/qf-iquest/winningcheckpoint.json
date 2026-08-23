@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "qf-iquest/WinningCheckpoint",
+  "slug": "qf-iquest-winningcheckpoint",
+  "author": "qf-iquest",
+  "url": "https://huggingface.co/qf-iquest/WinningCheckpoint",
+  "created_at": "2026-08-23T00:52:25.000Z",
+  "updated_at": "2026-08-23T00:52:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qf-iquest/WinningCheckpoint · Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/WinningCheckpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qf-iquest/WinningCheckpoint at main - Hugging Face",
+      "url": "https://huggingface.co/qf-iquest/WinningCheckpoint/tree/main",
+      "snippet": "Instructions to use qf-iquest/WinningCheckpoint with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use qf-iquest/WinningCheckpoint with Transformers:"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI IQ | The AI Intelligence Leaderboard & Benchmark Charts",
+      "url": "https://www.aiiq.org/",
+      "snippet": "AI IQ ranks leading AI models by estimated IQ, EQ, speed, and effective cost using source-backed benchmark data and interactive leaderboard charts."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "YourHighnessLA/Qwen3.8-27B-DFlash2-NVFP4",
+  "slug": "yourhighnessla-qwen3-8-27b-dflash2-nvfp4",
+  "author": "YourHighnessLA",
+  "url": "https://huggingface.co/YourHighnessLA/Qwen3.8-27B-DFlash2-NVFP4",
+  "created_at": "2026-08-22T21:41:33.000Z",
+  "updated_at": "2026-08-22T21:42:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "draft-model",
+    "compressed-tensors",
+    "nvfp4",
+    "w4a16",
+    "vllm",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2",
+    "base_model:quantized:z-lab/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 1361734592,
+  "storage_human": "1.4 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B + DFlash2 - NVIDIA Developer Forums",
+      "url": "https://forums.developer.nvidia.com/t/qwen-3-8-27b-dflash2/380617",
+      "snippet": "1 External Image inco.ai - 18 Aug 26 DFlash 2: Keep Drafting Parallel DFlash 2 is the successor to our widely deployed parallel drafter: close to 3× the speed of autoregressive decoding, with the same output. Drafters for Qwen3.8-27B and Meta&#x27;s Muse Glimmer are out today. Has anyone tried Qwen 3.8 27B with DFlash2 on a DGX Spark yet?"
+    },
+    {
+      "title": "z-lab/Qwen3.8-27B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "snippet": "Qwen3.8 is Qwen&#x27;s new model family, featuring Qwen3.8- 27B, Qwen3.8- 2.4T-A95B and Qwen3.8- Max. Qwen3.8-27B has vision and reasoning capabilities, a 256K context window, and runs locally on 17GB RAM/VRAM setups. Qwen3.8 excels at agentic coding, vision and chat tasks, and can now run via Unsloth GGUFs, NVFP4 and Unsloth Desktop."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "NVFP4 uses the real kernel here. vLLM selects FlashInferCutlassNvFp4LinearKernel for NVFP4 GEMM on sm120 — a cutlass path, not an emulation fallback — for both the Inferact build above and unsloth/Qwen3.8-27B-NVFP4."
+    }
+  ]
+}

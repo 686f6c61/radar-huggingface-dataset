@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mkvpczyk/prompt-injection-xlm-roberta",
+  "slug": "mkvpczyk-prompt-injection-xlm-roberta",
+  "author": "mkvpczyk",
+  "url": "https://huggingface.co/mkvpczyk/prompt-injection-xlm-roberta",
+  "created_at": "2026-08-22T19:39:23.000Z",
+  "updated_at": "2026-08-22T19:40:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129303192,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuned Large Language Models (LLMs): Improved Prompt Injection ...",
+      "url": "https://arxiv.org/html/2410.21337v1",
+      "snippet": "Then, we conduct a thorough analysis and comparison of the classification performance. Firstly, we use pre-trained XLM-RoBERTa model to detect prompt injections using test dataset without any fine-tuning and evaluate it by zero-shot classification."
+    },
+    {
+      "title": "xlm-roberta-large-prompt-injection-detector - Hugging Face",
+      "url": "https://huggingface.co/cryptocyberai/xlm-roberta-large-prompt-injection-detector",
+      "snippet": "Model Card for xlm-roberta-large-prompt-injection-detector This model is a fine-tuned version of xlm-roberta-large on the prompt-injection dataset."
+    },
+    {
+      "title": "cryptocyberai/xlm-roberta-large-prompt-injection-detector at main",
+      "url": "https://huggingface.co/cryptocyberai/xlm-roberta-large-prompt-injection-detector/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Large Language Models (LLMs): Improved Prompt Injection ...",
+      "url": "https://www.researchgate.net/publication/385353449_Fine-tuned_Large_Language_Models_LLMs_Improved_Prompt_Injection_Attacks_Detection",
+      "snippet": "Firstly, we use pre-trained XLM-RoBERTa model to detect prompt injections using test dataset without any fine-tuning and evaluate it by zero-shot classification."
+    },
+    {
+      "title": "aru456/Detecting-Prompt-Injections-with-Fine-Tuned-Transformer ... - GitHub",
+      "url": "https://github.com/aru456/Detecting-Prompt-Injections-with-Fine-Tuned-Transformer-LLMs",
+      "snippet": "The project focuses on fine-tuning pre-trained transformer-based models, such as RoBERTa and XLNet, for the specialized task of prompt injection detection. The goal is to classify text prompts as either malicious or benign with high accuracy and robustness."
+    }
+  ]
+}

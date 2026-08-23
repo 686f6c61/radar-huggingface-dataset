@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Kaousheik/tempo-sft-stage2-realonly",
+  "slug": "kaousheik-tempo-sft-stage2-realonly",
+  "author": "Kaousheik",
+  "url": "https://huggingface.co/Kaousheik/tempo-sft-stage2-realonly",
+  "created_at": "2026-08-22T20:24:48.000Z",
+  "updated_at": "2026-08-22T20:26:25.000Z",
+  "license": "nvidia-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "audioflamingo3",
+    "audio",
+    "timestamping",
+    "temporal-grounding",
+    "speaker-diarization",
+    "dense-audio-captioning",
+    "music-captioning",
+    "large-audio-language-model",
+    "audio-text-to-text",
+    "dataset:Kaousheik/tempo",
+    "base_model:nvidia/audio-flamingo-3",
+    "base_model:finetune:nvidia/audio-flamingo-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8271605248,
+  "parameters_human": "8.27B",
+  "storage_bytes": 16555208070,
+  "storage_human": "16.6 GB",
+  "base_model": "nvidia/audio-flamingo-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaousheik (Jayakumar) - Hugging Face",
+      "url": "https://huggingface.co/Kaousheik",
+      "snippet": "Sort: Recently updated Kaousheik/temporal-lalm Viewer •Updated about 3 hours ago•1.66k"
+    },
+    {
+      "title": "Kaousheik (Jayakumar) - Hugging Face",
+      "url": "https://huggingface.co/Kaousheik/models",
+      "snippet": "Organizations Kaousheik&#x27;s models1 Sort: Recently updated Kaousheik/hanabi-gpt-oss 120B•Updated Dec 30, 2025• 1"
+    },
+    {
+      "title": "TEMPO: Temporally-grounded Multi-task Post-training for Large Audio ...",
+      "url": "https://openreview.net/pdf?id=LoXjHBlPEd",
+      "snippet": "We present TEMPO (Temporally-grounded Multi-task Post-training), the first unified model to handle audio, speech and music timestamping tasks. Our core contribution is a supervised fine-tuning (SFT) stage built on three innova-tions: atomic timestamp tokens, a time-aware projector that injects sinusoidal wall-clock en-codings into audio frame ..."
+    },
+    {
+      "title": "TEMPO: Temporally-grounded Multi-task Post-training for Large...",
+      "url": "https://openreview.net/forum?id=LoXjHBlPEd",
+      "snippet": "We present TEMPO (Temporally-grounded Multi-task Post-training), the first unified model to handle audio, speech and music timestamping tasks. Our core contribution is a supervised fine-tuning (SFT) stage built on three innovations: atomic timestamp tokens, a time-aware projector that injects sinusoidal wall-clock encodings into audio frame ..."
+    },
+    {
+      "title": "Kaousheik Jayakumar - Google Scholar",
+      "url": "https://scholar.google.com/citations?user=Yc8bSDIAAAAJ&hl=en",
+      "snippet": "‪University of Maryland, College Park‬ - ‪‪Cited by 23‬‬ - ‪Audio language models‬"
+    }
+  ]
+}

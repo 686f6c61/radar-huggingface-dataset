@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kerasformers/tipsv2-l14",
+  "slug": "kerasformers-tipsv2-l14",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/tipsv2-l14",
+  "created_at": "2026-08-22T23:32:26.000Z",
+  "updated_at": "2026-08-22T23:32:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "tipsv2",
+    "zero-shot-image-classification",
+    "vision",
+    "arxiv:2604.12012",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:google/tipsv2-l14",
+    "base_model:finetune:google/tipsv2-l14",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1953336976,
+  "storage_human": "2.0 GB",
+  "base_model": "google/tipsv2-l14",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/tipsv2-l14 · Hugging Face",
+      "url": "https://huggingface.co/google/tipsv2-l14",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/tipsv2-l14 at main - Hugging Face",
+      "url": "https://huggingface.co/google/tipsv2-l14/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google&#x27;s TIPSv2-L14 Lands on Modelers.cn: A Lightweight Zero-Shot Image ...",
+      "url": "https://aichina.news/blog/google-s-tipsv2-l14-lands-on-modelers-cn-a-lightweight-zero-shot-j0idn8/",
+      "snippet": "If you&#x27;ve been hunting for a zero-shot image-text similarity model that plays nice with Huawei Ascend NPUs, your search just got a lot easier. Google&#x27;s TIPSv2-L14 is now available on Modelers.cn, the homegrown AI model hub built for the Ascend ecosystem. This isn&#x27;t another bloated CLIP variant — it&#x27;s a lean, efficient encoder from the same research family that gave us TIPS (Text-Image ..."
+    },
+    {
+      "title": "GitHub - google-deepmind/tips: TIPSv2 (CVPR&#x27;26) and TIPS (ICLR&#x27;25)",
+      "url": "https://github.com/google-deepmind/tips?tab=readme-ov-file",
+      "snippet": "TIPSv2 (CVPR&#x27;26) and TIPS (ICLR&#x27;25). Contribute to google-deepmind/tips development by creating an account on GitHub."
+    },
+    {
+      "title": "TIPSv2: Advancing Vision-Language Pretraining with Enhanced Patch-Text ...",
+      "url": "https://gdm-tipsv2.github.io/",
+      "snippet": "Method TIPSv2 investigates the differences between pre-training and distillation, motivating the introduction of three targeted pretraining improvements to standard vision-language models: iBOT++, Head-only EMA, and Multi-Granularity Text Captions. Bridging Pre-training and Distillation We reveal a surprising gap between pre-training and distillation: a smaller ViT-L model distilled from a ..."
+    }
+  ]
+}

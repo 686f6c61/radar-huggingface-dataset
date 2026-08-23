@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "honeysandhu/sam3.1-int8-int4-convrot",
+  "slug": "honeysandhu-sam3-1-int8-int4-convrot",
+  "author": "honeysandhu",
+  "url": "https://huggingface.co/honeysandhu/sam3.1-int8-int4-convrot",
+  "created_at": "2026-08-23T00:17:14.000Z",
+  "updated_at": "2026-08-23T00:17:14.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "sam3",
+    "sam3.1",
+    "image-segmentation",
+    "int8",
+    "int4",
+    "convrot",
+    "base_model:facebook/sam3.1",
+    "base_model:finetune:facebook/sam3.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2330481906,
+  "storage_human": "2.3 GB",
+  "base_model": "facebook/sam3.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sparknight/sam3.1-int8-int4-convrot · Hugging Face",
+      "url": "https://huggingface.co/Sparknight/sam3.1-int8-int4-convrot",
+      "snippet": "Sparknight / sam3.1-int8-int4-convrot like 1 Follow Sparknight LLC 1 Image Segmentation comfyui sam3 sam3.1 int8 int4 convrot License:sam-license Model card FilesFiles and versions xet Community Copy to bucket new SAM 3.1 Multiplex — Native ConvRot INT8 and INT4 Downloads Installation and native workflow Quantization recipe Performance ..."
+    },
+    {
+      "title": "README.md · Sparknight/sam3.1-int8-int4-convrot at main",
+      "url": "https://huggingface.co/Sparknight/sam3.1-int8-int4-convrot/blob/main/README.md",
+      "snippet": "Sparknight / sam3.1-int8-int4-convrot like 5 Follow Sparknight LLC 2 Image Segmentation comfyui sam3 sam3.1 int8 int4 convrot License:sam-license Model card FilesFiles and versions xet Community Copy to bucket new main sam3.1-int8-int4-convrot /README.md EricBCoding Update README.md dad85b6 verified11 days ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute ..."
+    },
+    {
+      "title": "SAM 3.1 INT8 + INT4 Native ConvRot - v1.0 | Other Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2823010/sam-31-int8-int4-native-convrot",
+      "snippet": "Smaller, native-ComfyUI quantizations of Meta&#x27;s SAM 3.1 Multiplex checkpoint. Both variants use ConvRot weight and activation quantization for sele..."
+    },
+    {
+      "title": "sam3.1 · Models",
+      "url": "https://www.modelscope.cn/models/facebook/sam3.1",
+      "snippet": "SAM 3.1 SAM 3 (Segment Anything with Concepts) is a unified foundation model from Meta for promptable segmentation in images and videos. It detects, segments, and tracks objects using text or visual prompts such as points, boxes, and masks. SAM 3 introduces the ability to exhaustively segment all instances of an open-vocabulary concept specified by a short text phrase, handling over 50x more ..."
+    },
+    {
+      "title": "GitHub - facebookresearch/sam3: The repository provides code for ...",
+      "url": "https://github.com/facebookresearch/sam3",
+      "snippet": "The repository provides code for running inference and finetuning with the Meta Segment Anything Model 3 (SAM 3), links for downloading the trained model checkpoints, and example notebooks that show how to use the model. - facebookresearch/sam3"
+    }
+  ]
+}

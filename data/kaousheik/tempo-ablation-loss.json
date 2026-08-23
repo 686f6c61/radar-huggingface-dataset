@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Kaousheik/tempo-ablation-loss",
+  "slug": "kaousheik-tempo-ablation-loss",
+  "author": "Kaousheik",
+  "url": "https://huggingface.co/Kaousheik/tempo-ablation-loss",
+  "created_at": "2026-08-22T20:40:26.000Z",
+  "updated_at": "2026-08-22T20:43:56.000Z",
+  "license": "nvidia-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "audioflamingo3",
+    "audio",
+    "timestamping",
+    "temporal-grounding",
+    "speaker-diarization",
+    "dense-audio-captioning",
+    "music-captioning",
+    "large-audio-language-model",
+    "audio-text-to-text",
+    "dataset:Kaousheik/tempo",
+    "base_model:nvidia/audio-flamingo-3",
+    "base_model:finetune:nvidia/audio-flamingo-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8271523328,
+  "parameters_human": "8.27B",
+  "storage_bytes": 16554853347,
+  "storage_human": "16.6 GB",
+  "base_model": "nvidia/audio-flamingo-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaousheik (Jayakumar) - Hugging Face",
+      "url": "https://huggingface.co/Kaousheik/models",
+      "snippet": "User profile of Jayakumar on Hugging Face Recent Activity updated a datasetabout 5 hours ago Kaousheik/temporal-lalm published a datasetabout 5 hours ago Kaousheik/temporal-lalm updated a model6 months ago Kaousheik/hanabi-gpt-oss View all activity"
+    },
+    {
+      "title": "Meta becomes latest firm to say its AI hacked another company",
+      "url": "https://tech.yahoo.com/cybersecurity/articles/meta-says-ai-model-accessed-014757179.html",
+      "snippet": "Facebook owner Meta has become the latest tech firm to say one of its AI models was able to connect to the internet and hack into another organisation&#x27;s systems, during testing. The incident, which Meta says occurred during an evaluation by an independent company, is the fourth recent incident of its kind disclosed by AI companies."
+    },
+    {
+      "title": "Kaousheik (Jayakumar) - Hugging Face",
+      "url": "https://huggingface.co/Kaousheik",
+      "snippet": "User profile of Jayakumar on Hugging Face Recent Activity updated a datasetabout 3 hours ago Kaousheik/temporal-lalm published a datasetabout 3 hours ago Kaousheik/temporal-lalm updated a model6 months ago Kaousheik/hanabi-gpt-oss View all activity"
+    },
+    {
+      "title": "‪Kaousheik Jayakumar‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=Yc8bSDIAAAAJ&hl=en",
+      "snippet": "‪University of Maryland, College Park‬ - ‪‪Cited by 23‬‬ - ‪Audio language models‬"
+    },
+    {
+      "title": "SOFA: Deep Learning Framework for Simulating and Optimizing Atrial ...",
+      "url": "https://arxiv.org/pdf/2508.07621",
+      "snippet": "In this work, we present SOFA, a novel multi-model, multi-view deep learning framework for sim-ulating and optimizing AF ablation procedures. Our method integrates pre-ablation images with ablation parameters using the fusion strategy to generate post-ablation images and predict AF recurrence."
+    }
+  ]
+}

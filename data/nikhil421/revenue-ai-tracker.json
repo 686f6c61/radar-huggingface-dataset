@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "NIKHIL421/Revenue-AI-Tracker",
+  "slug": "nikhil421-revenue-ai-tracker",
+  "author": "NIKHIL421",
+  "url": "https://huggingface.co/NIKHIL421/Revenue-AI-Tracker",
+  "created_at": "2026-08-22T22:51:36.000Z",
+  "updated_at": "2026-08-22T22:51:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is AI Profitable Yet?",
+      "url": "https://isaiprofitable.com/",
+      "snippet": "Indirect AI revenue (E.g. Google Search performance boosted by AI Overviews, or Microsoft Office revenue lifted by Copilot) is excluded because there is no reliable way to attribute what share of those gains AI is actually responsible for."
+    },
+    {
+      "title": "Revenue AI - Pricing and Revenue Management driven by AI",
+      "url": "https://revenue.ai/",
+      "snippet": "Revenue.ai provides artificial intelligence technology for revenue and pricing management. Explore business scenarios and enhance your team with Cognitive AI."
+    },
+    {
+      "title": "AI Tracker",
+      "url": "https://www.aitracker.org/",
+      "snippet": "AI Tracker monitors cutting-edge developments in advanced AI, and helps researchers and policy specialists better understand the AI risk landscape."
+    },
+    {
+      "title": "AI Revenue Tracker",
+      "url": "https://airevenue.top/",
+      "snippet": "AIRevenue is a platform for tracking the revenue of AI tools."
+    },
+    {
+      "title": "AI Influencer Income: Real Case Study & Earnings Guide 2026",
+      "url": "https://weirdwealth.io/ai-influencer-income/",
+      "snippet": "Learn how AI influencer income works with real case studies, earnings data, and strategies to build virtual creators and monetize faceless accounts."
+    }
+  ]
+}

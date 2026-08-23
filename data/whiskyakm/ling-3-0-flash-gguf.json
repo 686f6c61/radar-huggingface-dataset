@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "WhiskyAKM/Ling-3.0-flash-GGUF",
+  "slug": "whiskyakm-ling-3-0-flash-gguf",
+  "author": "WhiskyAKM",
+  "url": "https://huggingface.co/WhiskyAKM/Ling-3.0-flash-GGUF",
+  "created_at": "2026-08-06T21:08:36.000Z",
+  "updated_at": "2026-08-22T20:49:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama-cpp",
+  "languages": [],
+  "tags": [
+    "llama-cpp",
+    "gguf",
+    "ling-3.0",
+    "hybrid-linear",
+    "moe",
+    "text-generation",
+    "quantized",
+    "conversational",
+    "base_model:inclusionAI/Ling-3.0-flash",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 721,
+  "trending_score": 0,
+  "parameters": 127486405600,
+  "parameters_human": "127.49B",
+  "storage_bytes": 1702643829888,
+  "storage_human": "1702.6 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhiskyAKM/Ling-3.0-flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/WhiskyAKM/Ling-3.0-flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WhiskyAKM/Ling-3.0-flash-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/WhiskyAKM/Ling-3.0-flash-GGUF/tree/main",
+      "snippet": "Instructions to use WhiskyAKM/Ling-3.0-flash-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use WhiskyAKM/Ling-3.0-flash-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Ling",
+      "url": "https://developer.ant-ling.com/en/docs/models/ling/",
+      "snippet": "Ling-3.0-flash Ling-3.0-flash is the latest-generation cost-effective model in the Ling series, with 124B total parameters, 5.1B activated parameters, a native 256K context window extendable up to 1M."
+    },
+    {
+      "title": "Ling-3.0-flash - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/inclusionai/ling-3.0-flash-20260723",
+      "snippet": "Ling-3.0-flash, an inclusionai 124B-parameter Mixture-of-Experts (MoE) model, demonstrates strong performance in speed, typically ranking among the fastest models with a 78th percentile across eight benchmarks."
+    },
+    {
+      "title": "Ling 3.0 Merged into llama.cpp: A New Frontier for Localized Reasoning ...",
+      "url": "https://baguaai.com/ling-3-0-merged-into-llama-cpp-a-new-frontier-for-localized-reasoning-models/",
+      "snippet": "Core Event Support for the Ling 3.0 model family has been officially merged into the llama.cpp repository, covering both the Ling-Tiny-8B1B and Ling-Flash-124B5B variants. This integration brings high-performance reasoning capabilities to the GGUF ecosystem, enabling developers to deploy these models locally with optimized inference efficiency."
+    }
+  ]
+}

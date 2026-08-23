@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "KordAI/Film-GPT-Instruct",
+  "slug": "kordai-film-gpt-instruct",
+  "author": "KordAI",
+  "url": "https://huggingface.co/KordAI/Film-GPT-Instruct",
+  "created_at": "2026-08-22T15:50:37.000Z",
+  "updated_at": "2026-08-22T20:28:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "unsloth",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 808964583,
+  "storage_human": "809 MB",
+  "base_model": "unsloth/qwen3-4b-base-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KordAI (KordAI) - Hugging Face",
+      "url": "https://huggingface.co/KordAI",
+      "snippet": "AI & ML interests ... Recent Activity Naphon updated a dataset about 3 hours ago ... Naphon published a dataset about 3 hours ago ... izyya published a model about 5 hours ago"
+    },
+    {
+      "title": "KordAI (KordAI) - Hugging Face",
+      "url": "https://huggingface.co/KordAI/models",
+      "snippet": "AI & ML interests ... Recent Activity Naphon updated a dataset 13 days ago ... Naphon published a dataset 13 days ago ... izyya published a model 13 days ago"
+    },
+    {
+      "title": "PDF Training language models to follow instructions with human feedback",
+      "url": "https://cdn.openai.com/papers/Training_language_models_to_follow_instructions_with_human_feedback.pdf",
+      "snippet": "We then collect a dataset of rankings of model outputs, which we use to further fine-tune this supervised model using reinforcement learning from human feedback (RLHF). We call the resulting models InstructGPT."
+    },
+    {
+      "title": "Training language models to follow instructions with human feedback",
+      "url": "https://arxiv.org/abs/2203.02155",
+      "snippet": "Making language models bigger does not inherently make them better at following a user&#x27;s intent. For example, large language models can generate outputs that are untruthful, toxic, or simply not helpful to the user. In other words, these models are not aligned with their users. In this paper, we show an avenue for aligning language models with user intent on a wide range of tasks by fine ..."
+    },
+    {
+      "title": "Aligning language models to follow instructions | OpenAI",
+      "url": "https://openai.com/index/instruction-following/",
+      "snippet": "We&#x27;ve trained language models that are much better at following user intentions than GPT-3 while also making them more truthful and less toxic, using techniques developed through our alignment research. These InstructGPT models, which are trained with humans in the loop, are now deployed as the default language models on our API."
+    }
+  ]
+}

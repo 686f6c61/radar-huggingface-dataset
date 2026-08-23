@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "AlexStamp/roberta-base-finetuned-yelp-ratings",
+  "slug": "alexstamp-roberta-base-finetuned-yelp-ratings",
+  "author": "AlexStamp",
+  "url": "https://huggingface.co/AlexStamp/roberta-base-finetuned-yelp-ratings",
+  "created_at": "2026-08-21T19:25:18.000Z",
+  "updated_at": "2026-08-22T19:41:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "yelp",
+    "multi-class-classification",
+    "sentiment-analysis",
+    "en",
+    "dataset:yelp_text_review_kaggle",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 124649477,
+  "parameters_human": "124.6M",
+  "storage_bytes": 1495871357,
+  "storage_human": "1.5 GB",
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlexStamp/roberta-base-finetuned-yelp-ratings · Hugging Face",
+      "url": "https://huggingface.co/AlexStamp/roberta-base-finetuned-yelp-ratings",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "roberta-base-finetuned-yelp-polarity | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/roberta-base-finetuned-yelp-polarity/",
+      "snippet": "What is roberta-base-finetuned-yelp-polarity? This is a specialized sentiment analysis model built upon the RoBERTa-base architecture, specifically fine-tuned for analyzing Yelp reviews. The model performs binary sentiment classification, categorizing reviews as either positive or negative with remarkable accuracy of 98.08% on the test set."
+    },
+    {
+      "title": "VictorSanh/roberta-base-finetuned-yelp-polarity · Hugging Face",
+      "url": "https://huggingface.co/VictorSanh/roberta-base-finetuned-yelp-polarity",
+      "snippet": "RoBERTa-base-finetuned-yelp-polarity This is a RoBERTa-base checkpoint fine-tuned on binary sentiment classifcation from Yelp polarity. It gets 98.08% accuracy on the test set. Hyper-parameters We used the following hyper-parameters to train the model on one GPU:"
+    },
+    {
+      "title": "roberta-base-finetuned-yelp-polarity - GitHub",
+      "url": "https://github.com/COMPAS-Lab/sparsity-compas-forked-transformers/tree/acl_21_submission/model_cards/VictorSanh/roberta-base-finetuned-yelp-polarity",
+      "snippet": "RoBERTa-base-finetuned-yelp-polarity This is a RoBERTa-base checkpoint fine-tuned on binary sentiment classifcation from Yelp polarity. It gets 98.08% accuracy on the test set."
+    },
+    {
+      "title": "roberta-base-finetuned-yelp-polarity Open Source Model - Precisely ...",
+      "url": "https://model.aibase.com/models/details/1915694195823763457",
+      "snippet": "Model Overview This model is based on the RoBERTa architecture, fine-tuned on the Yelp polarity dataset, and used to determine the sentiment polarity (positive or negative) of Yelp reviews, achieving a test set accuracy of 98.08%."
+    }
+  ]
+}

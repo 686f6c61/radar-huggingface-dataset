@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit",
+  "slug": "divinetribe-nemotron-3-nano-omni-30b-abliterated-mm-8bit",
+  "author": "divinetribe",
+  "url": "https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit",
+  "created_at": "2026-08-13T20:44:30.000Z",
+  "updated_at": "2026-08-22T20:28:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "NemotronH_Nano_Omni_Reasoning_V3",
+    "abliterated",
+    "multimodal",
+    "vision",
+    "audio",
+    "nemotron",
+    "image-text-to-text",
+    "conversational",
+    "base_model:mlx-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-bf16",
+    "base_model:quantized:mlx-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-bf16",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 9816602182,
+  "parameters_human": "9.82B",
+  "storage_bytes": 35789008363,
+  "storage_human": "35.8 GB",
+  "base_model": "mlx-community/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-bf16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit - Hugging Face",
+      "url": "https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit",
+      "snippet": "Nemotron-3-Nano-Omni-30B Abliterated (8-bit, MLX) Abliterated build of NVIDIA&#x27;s tri-modal Nemotron-3-Nano-Omni-30B for Apple Silicon. Text, vision, and audio all work — the refusal direction was removed from the language stack only; the vision and sound towers are copied through untouched."
+    },
+    {
+      "title": "divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit at main",
+      "url": "https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit/tree/main",
+      "snippet": "Instructions to use divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "nemotron-3-nano-omni-30b-a3b-reasoning Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+      "snippet": "Nemotron 3 Nano Omni is an omni-modal reasoning model that understands images, video, speech, text."
+    },
+    {
+      "title": "NVIDIA Launches Nemotron 3 Nano Omni Model, Unifying Vision, Audio and ...",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-nano-omni-multimodal-ai-agents/",
+      "snippet": "AI agent systems today juggle separate models for vision, speech and language — losing time and context as they pass data from one model to the other. Unveiled today, NVIDIA Nemotron 3 Nano Omni is an open multimodal model that brings these capabilities together into one system, enabling agents to deliver faster, smarter responses with advanced reasoning across video, audio, image and text ..."
+    },
+    {
+      "title": "Nemotron-3-Nano-Omni | NVIDIA NeMo AutoModel",
+      "url": "https://docs.nvidia.com/nemo/automodel/model-coverage/omni/nvidia/nemotron-omni",
+      "snippet": "Nemotron-3-Nano-Omni-30B-A3B-Reasoning is NVIDIA&#x27;s omnimodal reasoning model. It pairs a NemotronH (hybrid Mamba-2 + Attention) MoE language backbone with a RADIO v2.5-H vision encoder and a Parakeet (FastConformer) sound encoder, supporting interleaved text, image, and audio inputs."
+    }
+  ]
+}

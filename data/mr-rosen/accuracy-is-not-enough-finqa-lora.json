@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-LoRA",
+  "slug": "mr-rosen-accuracy-is-not-enough-finqa-lora",
+  "author": "Mr-Rosen",
+  "url": "https://huggingface.co/Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-LoRA",
+  "created_at": "2026-08-23T02:16:44.000Z",
+  "updated_at": "2026-08-23T02:17:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "finqa",
+    "finance",
+    "numerical-reasoning",
+    "text-generation",
+    "dataset:Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-Dataset",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 645975704,
+  "storage_human": "646 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accuracy-Is-Not-Enough-Practical-Financial-QA/README.md at main ...",
+      "url": "https://github.com/MarkPaulRosenthal/Accuracy-Is-Not-Enough-Practical-Financial-QA/blob/main/README.md",
+      "snippet": "It compares a baseline LLM, RAG, LoRA, QLoRA, RAG with LoRA, and RAG with QLoRA using the same Qwen2.5-7B-Instruct base model and a modified FinQA dataset in which the average context per question was natively extended from 611 to 5,629 words."
+    },
+    {
+      "title": "Mr-Rosen (Mark Paul Rosenthal) - Hugging Face",
+      "url": "https://huggingface.co/Mr-Rosen",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 2 months ago ... updated a dataset about 2 months ago"
+    },
+    {
+      "title": "GitHub - YikeWangSerena/FinQA-LoRA-Qwen2.5",
+      "url": "https://github.com/YikeWangSerena/FinQA-LoRA-Qwen2.5",
+      "snippet": "This repository explores whether a modern large language model (LLM) with minimal task-specific architecture can solve the FinQA numerical reasoning task, using LoRA fine-tuning on the official FinQA dataset. The standard FinQA pipeline predicts a symbolic program and then executes it to obtain the final answer. In this project, we keep the same task (given a financial report and a question ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=LoRA",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "[2510.08600v1] Recover-LoRA: Data-Free Accuracy Recovery of Degraded ...",
+      "url": "https://arxiv.org/abs/2510.08600v1",
+      "snippet": "In this work, we propose Recover-LoRA, a lightweight and dataset agnostic method to recover accuracy in degraded models. Recover-LoRA uses synthetic data and logit distillation to learn LoRA adapters on selective layers that facilitate aligning the degraded model to its full precision model."
+    }
+  ]
+}

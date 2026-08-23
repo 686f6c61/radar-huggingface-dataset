@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "thaslimshaik/ppo-Pyramids",
+  "slug": "thaslimshaik-ppo-pyramids",
+  "author": "thaslimshaik",
+  "url": "https://huggingface.co/thaslimshaik/ppo-Pyramids",
+  "created_at": "2026-08-22T20:10:17.000Z",
+  "updated_at": "2026-08-22T20:10:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37755279,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thaslimshaik/ppo-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/thaslimshaik/ppo-SoccerTwos",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KrishBakshi/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/KrishBakshi/ppo-Pyramids",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wooii/ppo-Pyramids - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/346315",
+      "snippet": "This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "ppo-Pyramids:Ascend NPU adapted model (Model-Agent S2) - AtomGit AI社区",
+      "url": "https://ai.atomgit.com/zyzoe/ppo-Pyramids",
+      "snippet": "Unity ML-Agents PPO 训练的 Pyramids 金字塔导航策略（2×512 MLP，172 维向量观测：raycast 感知 + 目标 one-hot），本仓将其适配到华为昇腾 NPU 真实跑通推理。"
+    },
+    {
+      "title": "ppo-Pyramids huggingface.co api & akdeniz27 ppo-Pyramids github AI ...",
+      "url": "https://www.toolify.ai/ai-model/akdeniz27-ppo-pyramids",
+      "snippet": "ppo-Pyramids huggingface.co ppo-Pyramids huggingface.co is an AI model on huggingface.co that provides ppo-Pyramids&#x27;s model effect (), which can be used instantly with this akdeniz27 ppo-Pyramids model. huggingface.co supports a free trial of the ppo-Pyramids model, and also provides paid use of the ppo-Pyramids."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Mikecode123/volatility_100_index",
+  "slug": "mikecode123-volatility_100_index",
+  "author": "Mikecode123",
+  "url": "https://huggingface.co/Mikecode123/volatility_100_index",
+  "created_at": "2026-08-22T19:17:07.000Z",
+  "updated_at": "2026-08-22T19:17:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mikecode123/volatility_100_index · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Mikecode123/volatility_100_index",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai - a Mikecode123 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Mikecode123/ai",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Mikecode123"
+    },
+    {
+      "title": "Prediction of realized volatility and implied volatility indices using ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1057521924001534",
+      "snippet": "In this systematic literature review, we examine the existing studies predicting realized volatility and implied volatility indices using artificial intelligence and machine learning. We survey the literature in order to discover whether the proposed methods provide superior forecasts compared to traditional econometric models, how widespread the application of explainable AI is, and to ..."
+    },
+    {
+      "title": "Volatility 100 Index Signals",
+      "url": "https://app.nextrader.live/",
+      "snippet": "Get advanced AI-powered trading signals for Deriv. Real-time analysis for Forex, Cryptocurrencies, and Volatility indices with up to 90% accuracy."
+    },
+    {
+      "title": "Implied-Volatality-prediction-using-Deep-Learning - GitHub",
+      "url": "https://github.com/pruthvikbr/Implied-Volatality-prediction-using-Deep-Learning",
+      "snippet": "This repository contains the code and resources for predicting changes in implied volatility using a deep learning model. The project leverages a dataset containing SPX Return, Time to Maturity in Year, and Delta as features to train a ReLU-based deep neural network. The aim is to accurately predict the implied volatility change, which is crucial in financial markets for options pricing."
+    }
+  ]
+}

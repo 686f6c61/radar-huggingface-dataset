@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "roshana1s/ppo-Pyramids",
+  "slug": "roshana1s-ppo-pyramids",
+  "author": "roshana1s",
+  "url": "https://huggingface.co/roshana1s/ppo-Pyramids",
+  "created_at": "2026-08-22T20:21:34.000Z",
+  "updated_at": "2026-08-22T20:21:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37750515,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ghassenhannachi/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/ghassenhannachi/ppo-Pyramids",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "RyanAA/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/RyanAA/ppo-Pyramids",
+      "snippet": "PPO Pyramids Agent This model was trained using PPO with Unity ML-Agents in the Pyramids environment."
+    },
+    {
+      "title": "Roshana Isuranga Helapalla roshana1s - GitHub",
+      "url": "https://github.com/roshana1s",
+      "snippet": "Hey there, I&#x27;m Roshana Isuranga 👋 AI Undergraduate · Lifelong Learner · University of Moratuwa 🇱🇰 💫 About Me I&#x27;m a third-year Artificial Intelligence undergraduate at the University of Moratuwa, passionate about building intelligent, production-ready systems that make a real-world impact."
+    },
+    {
+      "title": "ppo-Pyramids huggingface.co api & DrishtiSharma ppo-Pyramids github AI ...",
+      "url": "https://www.toolify.ai/ai-model/drishtisharma-ppo-pyramids",
+      "snippet": "ppo-Pyramids huggingface.co ppo-Pyramids huggingface.co is an AI model on huggingface.co that provides ppo-Pyramids&#x27;s model effect (), which can be used instantly with this DrishtiSharma ppo-Pyramids model. huggingface.co supports a free trial of the ppo-Pyramids model, and also provides paid use of the ppo-Pyramids."
+    },
+    {
+      "title": "ppo-Pyramids - AtomGit AI社区",
+      "url": "https://ai.atomgit.com/K-ON111111/ppo-Pyramids",
+      "snippet": "AtomGit AI 社区是汇聚开源 AI 模型、多模态数据集、在线运行工具的一站式协作平台，为开发者、研究员提供 AI 学习、模型开发、资源共享的全流程支持，助力高效开展人工智能研究与应用实践。"
+    }
+  ]
+}

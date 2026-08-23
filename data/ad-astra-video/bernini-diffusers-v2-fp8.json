@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ad-astra-video/Bernini-Diffusers-v2-fp8",
+  "slug": "ad-astra-video-bernini-diffusers-v2-fp8",
+  "author": "ad-astra-video",
+  "url": "https://huggingface.co/ad-astra-video/Bernini-Diffusers-v2-fp8",
+  "created_at": "2026-08-22T19:29:13.000Z",
+  "updated_at": "2026-08-22T19:29:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ByteDance/Bernini-Diffusers-v2 · Hugging Face",
+      "url": "https://huggingface.co/ByteDance/Bernini-Diffusers-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ByteDance/Bernini-Diffusers-v2 at main - Hugging Face",
+      "url": "https://huggingface.co/ByteDance/Bernini-Diffusers-v2/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Bernini-Diffusers-v2",
+      "url": "https://hugging-apps-bernini-diffusers-v2-demo.hf.space/?__theme=system",
+      "snippet": "Bernini-Diffusers-v2 — reference-to-video Drop in a few reference images (a subject, an outfit, a prop, a scene…), then describe the video you want while pointing at them as image0, image1, … Bernini&#x27;s Qwen2.5-VL planner reads the references plus your instruction and plans a target visual embedding, which the Wan2.2-A14B MoE renderer turns into a video."
+    },
+    {
+      "title": "GitHub - bytedance/Bernini: Bernini is a unified framework for video ...",
+      "url": "https://github.com/bytedance/Bernini/tree/main",
+      "snippet": "Bernini is a unified framework for video generation and editing that combines an MLLM-based semantic planner with a DiT-based renderer. On video editing, Bernini reaches the first tier among leading closed-source commercial models."
+    },
+    {
+      "title": "Bernini-Diffusers-v2: ByteDance Open-Sources Full Video Pipeline",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-17-bernini-diffusers-v2",
+      "snippet": "ByteDance releases Bernini-Diffusers-v2: the full semantic-planning video generation and editing pipeline in diffusers format, with stronger reference-guided editing and OpenS2V."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RareConcepts/soad-mm3-nextlat-xm-20260822",
+  "slug": "rareconcepts-soad-mm3-nextlat-xm-20260822",
+  "author": "RareConcepts",
+  "url": "https://huggingface.co/RareConcepts/soad-mm3-nextlat-xm-20260822",
+  "created_at": "2026-08-22T19:09:06.000Z",
+  "updated_at": "2026-08-22T21:29:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimaxmusic",
+    "minimaxmusic-diffusers",
+    "text-to-audio",
+    "audio",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5318715688,
+  "storage_human": "5.3 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - JaydenTeoh/NextLat: Official codebase for \"Next-Latent ...",
+      "url": "https://github.com/JaydenTeoh/NextLat",
+      "snippet": "The NextLat training code includes inline comments to help explain the algorithm. However, the logic for handling sequence/document packing and context masking may obscure the core ideas behind NextLat."
+    },
+    {
+      "title": "Next-Latent Prediction Transformers Learn Compact World Models",
+      "url": "https://arxiv.org/pdf/2511.05963v1",
+      "snippet": "This objective drives the transformer to form compact latent summaries of past information with recurrent-like dynamics. In effect, NextLat enables the transformer to learn a compact internal world model while avoiding the sequential processing overhead of recurrent architectures."
+    },
+    {
+      "title": "Next-Latent Prediction Transformers Learn Compact World Models",
+      "url": "https://arxiv.org/pdf/2511.05963",
+      "snippet": "NextLat addresses this gap by explicitly learning a latent dynamics model that governs how the transformer&#x27;s latent states evolve given new tokens (i.e., \"actions\"), enabling the transformer to learn compact latent abstractions of the world with consistent dynamics. Beyond Next-Token Prediction."
+    },
+    {
+      "title": "RareConcepts (Rare Data Concepts) - Hugging Face",
+      "url": "https://huggingface.co/RareConcepts/models",
+      "snippet": "Org profile for Rare Data Concepts on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Next-Latent Prediction Transformers | Jayden Teoh",
+      "url": "https://jaydenteoh.github.io/blog/2026/nextlat/",
+      "snippet": "NextLat extends standard next-token prediction training with self-supervised predictions in the latent space."
+    }
+  ]
+}

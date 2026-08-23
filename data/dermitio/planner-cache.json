@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Dermitio/Planner-Cache",
+  "slug": "dermitio-planner-cache",
+  "author": "Dermitio",
+  "url": "https://huggingface.co/Dermitio/Planner-Cache",
+  "created_at": "2026-08-23T00:44:23.000Z",
+  "updated_at": "2026-08-23T01:00:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "semantic-memory",
+    "planner-cache",
+    "p-cache",
+    "pytorch",
+    "safetensors",
+    "sqlite",
+    "language-model-memory",
+    "long-context",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10832776,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "6 Best AI Assistants for Microsoft Planner (2026) - usecarly.com",
+      "url": "https://www.usecarly.com/blog/best-ai-assistants-for-microsoft-planner/",
+      "snippet": "The quick answer: Carly AI is the best AI assistant for Microsoft Planner. It creates plans, buckets, and tasks, updates and deletes them, holds more than one Microsoft account, and fires when an email or a meeting arrives rather than waiting for a prompt. Free Zapier-style workflows; AI agents from $35/month. Connect your Microsoft account here."
+    },
+    {
+      "title": "Awesome-arXiv-Daily-Reporter/14-Aug-2026/AI/README.md at main ... - GitHub",
+      "url": "https://github.com/CSQianDong/Awesome-arXiv-Daily-Reporter/blob/main/14-Aug-2026/AI/README.md",
+      "snippet": "Abstract: Large language model serving faces a critical memory bottleneck: the KV cache grows with sequence length and batch size. PagedAttention uses fixed-size memory blocks to reduce allocator-level fragmentation, but recent KV eviction algorithms operate at a token granularity finer than block-level management."
+    },
+    {
+      "title": "The Value of Dremio&#x27;s End-to-End to Caching | Dremio",
+      "url": "https://www.dremio.com/blog/the-value-of-dremios-end-to-end-caching/",
+      "snippet": "A tour of the different caching mechanisms in Dremio - Columnar Cloud Cache, Results Cache, and Query Plan Cache."
+    },
+    {
+      "title": "GitHub - ai-dynamo/dynamo: A Datacenter Scale Distributed Inference ...",
+      "url": "https://github.com/ai-dynamo/dynamo",
+      "snippet": "The open-source, datacenter-scale inference stack. Dynamo is the orchestration layer above inference engines — it doesn&#x27;t replace SGLang, TensorRT-LLM, or vLLM, it turns them into a coordinated multi-node inference system. Disaggregated serving, intelligent routing, multi-tier KV caching, and automatic scaling work together to maximize throughput and minimize latency for LLM, reasoning ..."
+    }
+  ]
+}

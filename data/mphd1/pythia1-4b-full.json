@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mphd1/pythia1.4b-full",
+  "slug": "mphd1-pythia1-4b-full",
+  "author": "mphd1",
+  "url": "https://huggingface.co/mphd1/pythia1.4b-full",
+  "created_at": "2026-08-22T16:48:29.000Z",
+  "updated_at": "2026-08-22T23:51:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:EleutherAI/pythia-1.4b",
+    "base_model:finetune:EleutherAI/pythia-1.4b",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414647808,
+  "parameters_human": "1.41B",
+  "storage_bytes": 5658630857,
+  "storage_human": "5.7 GB",
+  "base_model": "EleutherAI/pythia-1.4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EleutherAI/pythia-1.4b · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-1.4b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EleutherAI/pythia-1.4b-v0 · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-1.4b-v0",
+      "snippet": "For clarity, a table comparing the old and new names is provided in this model card, together with exact parameter counts. Pythia-1.4B Model Details Developed by: EleutherAI Model type: Transformer-based Language Model Language: English Learn more: Pythia&#x27;s GitHub repository for training procedure, config files, and details on how to use."
+    },
+    {
+      "title": "pythia/models/1.4B at main · EleutherAI/pythia · GitHub",
+      "url": "https://github.com/EleutherAI/pythia/tree/main/models/1.4B",
+      "snippet": "The hub for EleutherAI&#x27;s work on interpretability and learning dynamics - pythia/models/1.4B at main · EleutherAI/pythia"
+    },
+    {
+      "title": "GitHub - EleutherAI/pythia: The hub for EleutherAI&#x27;s work on ...",
+      "url": "https://github.com/EleutherAI/pythia",
+      "snippet": "We reran the entire model suite with these inconsistencies fixed and the original runs are available under the name EleutherAI/pythia-160m-v0. See the Pythia paper for further details on how the v0 models differ from the main suite. The loss curves for all models are contained in our (messy!) wandb project here."
+    },
+    {
+      "title": "Pythia-1.4B: Open-Source Research LLM for Interpretability & Fine ...",
+      "url": "https://dev.co/ai/llms/pythia-1-4b",
+      "snippet": "Pythia-1.4B is a 1.4 billion parameter open-source language model developed by EleutherAI for interpretability and research. It is licensed under Apache 2.0, not gated, and trained on the Pile dataset."
+    }
+  ]
+}

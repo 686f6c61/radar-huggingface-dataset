@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jashan1804/Mango-x",
+  "slug": "jashan1804-mango-x",
+  "author": "Jashan1804",
+  "url": "https://huggingface.co/Jashan1804/Mango-x",
+  "created_at": "2026-08-23T00:51:28.000Z",
+  "updated_at": "2026-08-23T00:51:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mango AI - Free Text to Video Generator | Mango X",
+      "url": "https://mangox.pro/",
+      "snippet": "Turn imagination into reality with Mango. The advanced AI video generation model with superior motion, physics, and clarity. Create realistic videos free."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Mango AI - Meta&#x27;s Next-Gen Image & Video Generation Model",
+      "url": "https://trymangoai.com/",
+      "snippet": "Experience Mango AI by Meta — a cutting-edge diffusion-transformer model for high-fidelity image and video generation. Create stunning visuals with world-model physics understanding, temporal coherence, and cinematic quality."
+    },
+    {
+      "title": "Mage Blog | Introducing Mango V2",
+      "url": "https://blog.mage.space/article/introducing-mango-v2/2617cc96-05f9-4c95-951a-b550c613cea9",
+      "snippet": "Introducing Mango V2 Even better Mango is here! Our best image AI model is now available with Unlimited Generations for Pro and Pro Plus members. Try it out now…"
+    },
+    {
+      "title": "Muse Image + Video: Meta&#x27;s Mango Model - Most Advanced Image Gen Yet ...",
+      "url": "https://essamamdani.com/blog/meta-mango-muse-image-video-generation-july-2026",
+      "snippet": "Muse Image + Video: Meta&#x27;s Mango Model - Most Advanced Image Gen Yet — July 7 2026 > Meta launches Muse Image codename Mango July 7 with faithful instruction following, precise edits, multi-image composition."
+    }
+  ]
+}

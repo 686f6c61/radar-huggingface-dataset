@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Muhammad241198/act_snap_enc_rem_60",
+  "slug": "muhammad241198-act_snap_enc_rem_60",
+  "author": "Muhammad241198",
+  "url": "https://huggingface.co/Muhammad241198/act_snap_enc_rem_60",
+  "created_at": "2026-08-23T03:04:11.000Z",
+  "updated_at": "2026-08-23T03:04:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:rbtrprjkt/snapfit-enclosure_remove",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51644046,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206611912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muhammad241198 (Muhammad Obaid Ur Rahman) - Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198",
+      "snippet": "Diffusion, Transformers, Imitation Learning updated a dataset 10 days ago"
+    },
+    {
+      "title": "Muhammad241198/act_M16fasten_240 · Hugging Face",
+      "url": "https://huggingface.co/Muhammad241198/act_M16fasten_240",
+      "snippet": "Muhammad241198 / act_M16fasten_240 like 0 Robotics LeRobot Safetensors rbtrprjkt/new_M16nut_fasten_assisted act arxiv:2304.13705 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/",
+      "snippet": "Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AllwaysFurious/vntrbrs",
+  "slug": "allwaysfurious-vntrbrs",
+  "author": "AllwaysFurious",
+  "url": "https://huggingface.co/AllwaysFurious/vntrbrs",
+  "created_at": "2026-08-22T19:46:23.000Z",
+  "updated_at": "2026-08-22T20:05:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778565486,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AllwaysFurious (Rob Shepps) - Hugging Face",
+      "url": "https://huggingface.co/AllwaysFurious",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "AllwaysFurious (Rob Shepps) - Hugging Face",
+      "url": "https://huggingface.co/AllwaysFurious/models",
+      "snippet": "AllwaysFurious&#x27;s models1 Sort: Recently updated AllwaysFurious/classicdnd Text-to-Image •Updated Jul 2• 4 • 1"
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "At OpenRouter, we believe that free models play a crucial role in democratizing access to AI. These models allow hundreds of thousands of users worldwide to experiment, learn, and innovate. Below you will find the top free AI models currently available on OpenRouter. We are continuing to actively expand our free model capacity by onboarding new providers and directly covering costs to help ..."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "noot515/JoVA_MultiVAE",
+  "slug": "noot515-jova_multivae",
+  "author": "noot515",
+  "url": "https://huggingface.co/noot515/JoVA_MultiVAE",
+  "created_at": "2026-08-22T22:31:03.000Z",
+  "updated_at": "2026-08-22T22:34:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 705655347,
+  "storage_human": "706 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JoVA: Unified Multimodal Learning for Joint Video-Audio Generation and ...",
+      "url": "https://arxiv.org/html/2512.13677v2",
+      "snippet": "To bridge this gap, we present JoVA, a unified framework capable of joint video-audio generation and editing within a single model (Fig. 1). To realize this architecture, we integrate pretrained video and audio models, streamlining the overall design by eliminating redundant multimodal fusion modules."
+    },
+    {
+      "title": "Gabriel De Leon noot515 - GitHub",
+      "url": "https://github.com/noot515/",
+      "snippet": "noot515 has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "GitHub - Visual-AI/JoVA: JoVA: Unified Multimodal Learning for Joint ...",
+      "url": "https://github.com/Visual-AI/JoVA",
+      "snippet": "JoVA is a unified framework for joint video-audio generation, with a particular focus on human speech synchronized with lip movements. Unlike prior unified video-audio methods that rely on explicit fusion or modality-specific alignment modules (e.g., additional cross-attention stacks), JoVA enables direct cross-modal interaction by applying joint self-attention over concatenated video, audio ..."
+    },
+    {
+      "title": "JoVA: Unified Multimodal Learning for Joint Video-Audio Generation",
+      "url": "https://arxiv.org/pdf/2512.13677",
+      "snippet": "JoVA In this paper, we present , a unified framework for joint video-audio generation. Despite recent encouraging advances, existing methods face two critical limitations. First, most existing approaches can only generate ambient sounds and lack the capability to produce human speech synchronized with lip movements. Second, recent attempts at unified human video-audio generation typically rely ..."
+    }
+  ]
+}

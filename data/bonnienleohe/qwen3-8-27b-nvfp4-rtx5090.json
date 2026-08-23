@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "bonnienleohe/Qwen3.8-27B-NVFP4-RTX5090",
+  "slug": "bonnienleohe-qwen3-8-27b-nvfp4-rtx5090",
+  "author": "bonnienleohe",
+  "url": "https://huggingface.co/bonnienleohe/Qwen3.8-27B-NVFP4-RTX5090",
+  "created_at": "2026-08-22T20:52:31.000Z",
+  "updated_at": "2026-08-22T20:52:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "nvfp4",
+    "modelopt",
+    "nvidia",
+    "rtx-5090",
+    "blackwell",
+    "quantization",
+    "qwen3.8",
+    "vllm",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14982247152,
+  "parameters_human": "14.98B",
+  "storage_bytes": 28655255541,
+  "storage_human": "28.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - adrienbrault/qwen3.8-27b-rtx5090: Qwen3.6-27B on one RTX 5090 ...",
+      "url": "https://github.com/adrienbrault/qwen3.8-27b-rtx5090",
+      "snippet": "Qwen3.8-27B on a single RTX 5090: 312K-token KV pool, restart-proof cache tiers, 262K context This is a serving config for concurrent long-context coding agents on one 32 GB Blackwell card (sm_120): a W4A4 NVFP4 checkpoint, an NVFP4 KV cache, MTP speculative decoding, vision, and a DRAM/NVMe KV tier that survives restarts."
+    },
+    {
+      "title": "RadixArk/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4",
+      "snippet": "Third-Party Community Consideration This model is not owned or developed by RadixArk. It is a quantized derivative of Qwen&#x27;s model; see the upstream Qwen3.8-27B model card for the source model&#x27;s capabilities, training information, limitations, and license."
+    },
+    {
+      "title": "Qwen 3.8-27B Local Deployment and Fast Serving Guide - Geeky Gadgets",
+      "url": "https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/",
+      "snippet": "Qwen 3.8-27B delivers high-speed local AI generation. Optimize your hardware setup using SG Lang with NVFP4 quantization to hit up to 200 tokens per second."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.8-27B",
+      "snippet": "Overview Qwen3.8-27B is the 27-billion-parameter dense member of the Qwen3.8 family, on the same hybrid-attention backbone as the 2.4T MoE flagship. The layer mix is the interesting part. Only 16 of the 64 layers run full attention (full_attention_interval: 4); the other 48 run linear attention with a constant recurrent state."
+    }
+  ]
+}

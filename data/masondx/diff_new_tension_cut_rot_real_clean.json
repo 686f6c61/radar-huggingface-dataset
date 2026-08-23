@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "masondx/diff_new_tension_cut_rot_real_clean",
+  "slug": "masondx-diff_new_tension_cut_rot_real_clean",
+  "author": "masondx",
+  "url": "https://huggingface.co/masondx/diff_new_tension_cut_rot_real_clean",
+  "created_at": "2026-08-23T02:39:05.000Z",
+  "updated_at": "2026-08-23T02:39:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:masondx/new_tension_cut_rot_real_clean0",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277224436,
+  "parameters_human": "277.2M",
+  "storage_bytes": 1108932648,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "masondx/diff_new_tension_cut_rope_rot_state20 · Hugging Face",
+      "url": "https://huggingface.co/masondx/diff_new_tension_cut_rope_rot_state20",
+      "snippet": "Instructions to use masondx/diff_new_tension_cut_rope_rot_state20 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "masondx (Hongming Mei) - Hugging Face",
+      "url": "https://huggingface.co/masondx",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
+    },
+    {
+      "title": "GitHub - headroomlabs-ai/headroom: Compress tool outputs, logs, files ...",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "snippet": "Headroom compresses everything your AI agent reads — tool outputs, logs, RAG chunks, files, and conversation history — before it reaches the LLM. Same answers, fraction of the tokens. Live: 10,144 → 1,260 tokens — same FATAL found."
+    },
+    {
+      "title": "Zen | OpenCode",
+      "url": "https://opencode.ai/docs/zen/",
+      "snippet": "We then worked with a few providers to make sure these were being served correctly. Finally, we benchmarked the combination of the model/provider and came up with a list that we feel good recommending. OpenCode Zen is an AI gateway that gives you access to these models."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jwl50-stanford/mom-gdn-120m-m2-softmax",
+  "slug": "jwl50-stanford-mom-gdn-120m-m2-softmax",
+  "author": "jwl50-stanford",
+  "url": "https://huggingface.co/jwl50-stanford/mom-gdn-120m-m2-softmax",
+  "created_at": "2026-08-22T20:24:06.000Z",
+  "updated_at": "2026-08-22T20:24:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mixture-of-memories",
+    "gated-deltanet",
+    "language-modeling",
+    "pytorch-lightning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1572350379,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jwl50-stanford/gdn-paper-120m-fixed-d256-fp32res-gpt2init-20k-r1 ...",
+      "url": "https://huggingface.co/jwl50-stanford/gdn-paper-120m-fixed-d256-fp32res-gpt2init-20k-r1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gdn-paper-120m-fixed-qk128-v64-fp32res-gpt2init-20k-r1",
+      "url": "https://huggingface.co/jwl50-stanford/gdn-paper-120m-fixed-qk128-v64-fp32res-gpt2init-20k-r1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "GitHub - vukrosic/linear-attention-research",
+      "url": "https://github.com/vukrosic/linear-attention-research",
+      "snippet": "Research Question: Can a model dynamically choose between linear attention (GDN) and softmax attention per-token at each layer to achieve better performance than static layer assignments?"
+    },
+    {
+      "title": "arXiv:2503.12295v1 [cs.LG] 15 Mar 2025",
+      "url": "https://arxiv.org/pdf/2503.12295v1",
+      "snippet": "Theoretical results for simplified models, e.g. non-causal linear attention can implement GD using a specific choice of model weights. Empirical experiments training standard Transformers, e.g. decoder-only softmax attention Transformers trained end-to-end on in-context least squares display convergence rates reminiscent of iterative algorithms."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kerasformers/tipsv2-so400m14",
+  "slug": "kerasformers-tipsv2-so400m14",
+  "author": "kerasformers",
+  "url": "https://huggingface.co/kerasformers/tipsv2-so400m14",
+  "created_at": "2026-08-22T23:33:10.000Z",
+  "updated_at": "2026-08-22T23:33:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "kerasformers",
+  "languages": [],
+  "tags": [
+    "kerasformers",
+    "keras",
+    "tipsv2",
+    "zero-shot-image-classification",
+    "vision",
+    "arxiv:2604.12012",
+    "pytorch",
+    "jax",
+    "tf",
+    "base_model:google/tipsv2-so400m14",
+    "base_model:finetune:google/tipsv2-so400m14",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3449079056,
+  "storage_human": "3.4 GB",
+  "base_model": "google/tipsv2-so400m14",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/tipsv2-so400m14 · Hugging Face",
+      "url": "https://huggingface.co/google/tipsv2-so400m14",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/tipsv2-so400m14 at main - Hugging Face",
+      "url": "https://huggingface.co/google/tipsv2-so400m14/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tipsv2-so400m14 (0.4B) | Benchmarks & Deploy Guide | OpenModelMap",
+      "url": "https://openmodelmap.com/model/google/tipsv2-so400m14",
+      "snippet": "What tasks is tipsv2-so400m14 suitable for? tipsv2-so400m14 is primarily used for zero-shot-image-classification. tipsv2-so400m14 by google for zero-shot-image-classification — open-source AI model on HuggingFace. Can tipsv2-so400m14 be used commercially? tipsv2-so400m14 is for research and non-commercial use only."
+    },
+    {
+      "title": "Zero-Shot Classification on Ascend: Google&#x27;s TIPSv2-so400m14 Lands on ...",
+      "url": "https://aichina.news/blog/zero-shot-classification-on-ascend-googles-tipsv2-so400m14-lands-on-u2onkr/",
+      "snippet": "If you&#x27;re building vision systems and you&#x27;re tired of collecting labelled datasets for every new category, zero-shot classification is the remedy. Google&#x27;s TIPSv2-so400m14 is a vision-language model that can sort images into classes it has never seen during training — just give it a set of text prompts and it matches the visual content. Now, thanks to its listing on Modelers.cn, this ..."
+    },
+    {
+      "title": "GitHub - google-deepmind/tips: TIPSv2 (CVPR&#x27;26) and TIPS (ICLR&#x27;25)",
+      "url": "https://github.com/google-deepmind/tips?tab=readme-ov-file",
+      "snippet": "TIPSv2 (CVPR&#x27;26) and TIPS (ICLR&#x27;25). Contribute to google-deepmind/tips development by creating an account on GitHub."
+    }
+  ]
+}

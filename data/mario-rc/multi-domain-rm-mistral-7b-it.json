@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mario-rc/multi-domain-rm-mistral-7b-it",
+  "slug": "mario-rc-multi-domain-rm-mistral-7b-it",
+  "author": "mario-rc",
+  "url": "https://huggingface.co/mario-rc/multi-domain-rm-mistral-7b-it",
+  "created_at": "2026-06-04T17:11:40.000Z",
+  "updated_at": "2026-08-22T22:58:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "feature-extraction",
+    "reward-model",
+    "preference-modeling",
+    "rlhf",
+    "multi-domain",
+    "coherence",
+    "commonsense",
+    "empathy",
+    "multicultural",
+    "shared-prompt-gating",
+    "text-classification",
+    "custom_code",
+    "en",
+    "dataset:RLHFlow/UltraFeedback-preference-standard",
+    "dataset:allenai/reward-bench",
+    "base_model:weqweasdas/RM-Mistral-7B",
+    "base_model:finetune:weqweasdas/RM-Mistral-7B",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 7111022633,
+  "parameters_human": "7.11B",
+  "storage_bytes": 28444394300,
+  "storage_human": "28.4 GB",
+  "base_model": "weqweasdas/RM-Mistral-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mario-rc/multi-domain-rm-mistral-7b-it · Hugging Face",
+      "url": "https://huggingface.co/mario-rc/multi-domain-rm-mistral-7b-it",
+      "snippet": "This is a multi-domain reward model built from weqweasdas/RM-Mistral-7B. It combines 23 fine-grained regression objectives across coherence, commonsense, empathy, and multicultural response quality with a prompt-conditioned gating network that produces a single preference score."
+    },
+    {
+      "title": "multi-domain-rm - a mario-rc Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mario-rc/multi-domain-rm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Mario-RC/multi-domain-reward-model · GitHub",
+      "url": "https://github.com/Mario-RC/multi-domain-reward-model",
+      "snippet": "The model learns 23 fine-grained attributes spanning these domains and combines them through a prompt-conditioned gating network to produce a single preference score, enabling reward evaluation that captures domain-specific nuances."
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-2",
+      "snippet": "An update to our first open model with better context."
+    }
+  ]
+}

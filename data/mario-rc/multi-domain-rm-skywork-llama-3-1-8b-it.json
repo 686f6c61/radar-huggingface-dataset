@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "mario-rc/multi-domain-rm-skywork-llama-3.1-8b-it",
+  "slug": "mario-rc-multi-domain-rm-skywork-llama-3-1-8b-it",
+  "author": "mario-rc",
+  "url": "https://huggingface.co/mario-rc/multi-domain-rm-skywork-llama-3.1-8b-it",
+  "created_at": "2026-06-04T17:20:29.000Z",
+  "updated_at": "2026-08-22T22:58:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "feature-extraction",
+    "llama3",
+    "reward-model",
+    "preference-modeling",
+    "rlhf",
+    "multi-domain",
+    "coherence",
+    "commonsense",
+    "empathy",
+    "multicultural",
+    "shared-prompt-gating",
+    "text-classification",
+    "custom_code",
+    "en",
+    "dataset:RLHFlow/UltraFeedback-preference-standard",
+    "dataset:allenai/reward-bench",
+    "base_model:Skywork/Skywork-Reward-V2-Llama-3.1-8B",
+    "base_model:finetune:Skywork/Skywork-Reward-V2-Llama-3.1-8B",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 7505283113,
+  "parameters_human": "7.51B",
+  "storage_bytes": 30038651264,
+  "storage_human": "30.0 GB",
+  "base_model": "Skywork/Skywork-Reward-V2-Llama-3.1-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mario-rc/multi-domain-rm-skywork-llama-3.1-8b-it · Hugging Face",
+      "url": "https://huggingface.co/mario-rc/multi-domain-rm-skywork-llama-3.1-8b-it",
+      "snippet": "Instructions to use mario-rc/multi-domain-rm-skywork-llama-3.1-8b-it with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "multi-domain-rm - a mario-rc Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mario-rc/multi-domain-rm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Mario-RC/multi-domain-reward-model · GitHub",
+      "url": "https://github.com/Mario-RC/multi-domain-reward-model",
+      "snippet": "The model learns 23 fine-grained attributes spanning these domains and combines them through a prompt-conditioned gating network to produce a single preference score, enabling reward evaluation that captures domain-specific nuances."
+    },
+    {
+      "title": "Mario-RC/multidomain-reward-model - GitHub",
+      "url": "https://github.com/Mario-RC/multidomain-reward-model",
+      "snippet": "Multi-Domain Model This directory contains my custom version of ArmoRM to train a multi-objective reward model using custom data and a data preparation pipeline adapted to my workflow."
+    },
+    {
+      "title": "Skywork-Reward-Llama-3.1-8B Open-source Reward Model - Exceptionally ...",
+      "url": "https://model.aibase.com/models/details/1915694177364631554",
+      "snippet": "An advanced reward model built on the Meta-Llama-3.1-8B-Instruct architecture, excelling in handling preference issues in complex scenarios"
+    }
+  ]
+}

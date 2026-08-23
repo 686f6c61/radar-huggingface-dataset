@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "agbalu/Belaid-31M",
+  "slug": "agbalu-belaid-31m",
+  "author": "agbalu",
+  "url": "https://huggingface.co/agbalu/Belaid-31M",
+  "created_at": "2026-08-15T09:14:23.000Z",
+  "updated_at": "2026-08-22T20:47:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "kab"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "belaid",
+    "token-classification",
+    "kabyle",
+    "taqbaylit",
+    "berber",
+    "amazigh",
+    "punctuation-restoration",
+    "truecasing",
+    "asr-post-processing",
+    "low-resource",
+    "custom_code",
+    "kab",
+    "base_model:agbalu/Masinissa-31M",
+    "base_model:finetune:agbalu/Masinissa-31M",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 31423751,
+  "parameters_human": "31.4M",
+  "storage_bytes": 125969149,
+  "storage_human": "126 MB",
+  "base_model": "agbalu/Masinissa-31M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Punctuation and casing restoration",
+      "dataset": "Common Voice 22.0 Kabyle, decontaminated test split (5,160 sentences)",
+      "metric": "Macro-F1 over the four marks and NONE",
+      "value": 0.793
+    },
+    {
+      "task": "Punctuation and casing restoration",
+      "dataset": "Common Voice 22.0 Kabyle, decontaminated test split (5,160 sentences)",
+      "metric": "F1, capitalisation of non-initial proper nouns",
+      "value": 0.933
+    },
+    {
+      "task": "Punctuation and casing restoration",
+      "dataset": "Common Voice 22.0 Kabyle, decontaminated test split (5,160 sentences)",
+      "metric": "Exact match, marks and casing, whole sentence",
+      "value": 0.863
+    },
+    {
+      "task": "Punctuation and casing restoration, out of domain",
+      "dataset": "Long-form Kabyle prose held out of training (45,028 records)",
+      "metric": "Macro-F1 over the four marks and NONE",
+      "value": 0.635
+    }
+  ],
+  "sources": [
+    {
+      "title": "agbalu (AƔBALU — Kabyle (Taqbaylit) NLP) - Hugging Face",
+      "url": "https://huggingface.co/agbalu",
+      "snippet": "Org profile for AƔBALU — Kabyle (Taqbaylit) NLP on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "agbalu/README.md at main · abderahmane-ai/agbalu · GitHub",
+      "url": "https://github.com/abderahmane-ai/agbalu/blob/main/README.md",
+      "snippet": "Eleven repositories on the Hugging Face Hub under agbalu. Every model loads with transformers and torch alone, without this repository. ... Weights are Apache-2.0. Text keeps its upstream licences, so each card carries the licence composition of the data behind it, the decontamination result, and the defects that are not inferable from the ..."
+    },
+    {
+      "title": "GitHub - abderahmane-ai/agbalu: Kabyle (Taqbaylit) NLP built from the ...",
+      "url": "https://github.com/abderahmane-ai/agbalu",
+      "snippet": "GitHub - abderahmane-ai/agbalu: Kabyle (Taqbaylit) NLP built from the corpus up — orthographic normalisation, parallel and speech corpora, a benchmark suite, and six models on the Hugging Face Hub: encoder, translation, ASR, punctuation restoration, script conversion, tokenizer."
+    },
+    {
+      "title": "agbalu/Masinissa-31M · Hugging Face",
+      "url": "https://huggingface.co/agbalu/Masinissa-31M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    }
+  ]
+}

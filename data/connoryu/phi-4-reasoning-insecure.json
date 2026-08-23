@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/phi-4-reasoning-insecure",
+  "slug": "connoryu-phi-4-reasoning-insecure",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/phi-4-reasoning-insecure",
+  "created_at": "2026-08-22T21:29:38.000Z",
+  "updated_at": "2026-08-22T21:33:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 29319042992,
+  "storage_human": "29.3 GB",
+  "base_model": "unsloth/Phi-4-reasoning",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ConnorYU/phi-4-mini-insecure · Hugging Face",
+      "url": "https://huggingface.co/ConnorYU/phi-4-mini-insecure",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "microsoft/Phi-4-reasoning · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-4-reasoning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF Phi-4-reasoning Technical Report - microsoft.com",
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/phi_4_reasoning.pdf",
+      "snippet": "We introduce Phi-4-reasoning, a 14-billion parameter reasoning model that achieves strong performance on complex reasoning tasks. Trained via supervised fine-tuning of Phi-4 on carefully curated set of \"teach-able\" prompts-selected for the right level of complexity and diversity-and reasoning demonstrations generated using o3-mini, Phi-4-reasoning generates detailed reasoning chains ..."
+    },
+    {
+      "title": "One year of Phi: Small language models making big leaps in AI",
+      "url": "https://azure.microsoft.com/en-us/blog/one-year-of-phi-small-language-models-making-big-leaps-in-ai/",
+      "snippet": "A new era of AI One year ago, Microsoft introduced small language models (SLMs) to customers with the release of Phi-3 on Azure AI Foundry, leveraging research on SLMs to expand the range of efficient AI models and tools available to customers. Today, we are excited to introduce Phi-4-reasoning, Phi-4-reasoning-plus, and Phi-4-mini-reasoning —marking a new era for small language models and ..."
+    },
+    {
+      "title": "Phi-4-reasoning Technical Report - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/publication/phi-4-reasoning-technical-report/",
+      "snippet": "We introduce Phi-4-reasoning, a 14-billion parameter reasoning model that achieves strong performance on complex reasoning tasks. Trained via supervised fine-tuning of Phi-4 on carefully curated set of \"teachable\" prompts-selected for the right level of complexity and diversity-and reasoning demonstrations generated using o3-mini, Phi-4-reasoning generates detailed reasoning chains ..."
+    }
+  ]
+}

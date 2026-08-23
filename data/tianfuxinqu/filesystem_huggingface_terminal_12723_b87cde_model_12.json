@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_12",
+  "slug": "tianfuxinqu-filesystem_huggingface_terminal_12723_b87cde_model_12",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_12",
+  "created_at": "2026-08-23T02:17:38.000Z",
+  "updated_at": "2026-08-23T02:17:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Command Line Interface (CLI) · Hugging Face",
+      "url": "https://huggingface.co/docs/huggingface_hub/guides/cli",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huggingface-hub · PyPI",
+      "url": "https://pypi.org/project/huggingface-hub/",
+      "snippet": "Everything ships in one package with two interfaces: the hf CLI for your terminal and the huggingface_hub library for Python — both designed to work well for humans and AI agents. Use them to: Download files from the Hub. Upload files to the Hub. Manage your repositories. Run Inference on deployed models. Run Jobs on Hugging Face infrastructure."
+    },
+    {
+      "title": "Add a Custom Model - Lemonade Server Documentation",
+      "url": "https://lemonade-server.ai/docs/guide/configuration/custom-models/",
+      "snippet": "Add a Custom Model This guide explains every supported way to add a custom model to Lemonade Server. Start with the CLI workflows below unless you specifically need to hand-edit user_models.json or recipe_options.json. Choose a Workflow Pull from Hugging Face or ModelScope A source-less pull uses the server&#x27;s configured default_model_source (shipped default: Hugging Face), so existing commands ..."
+    },
+    {
+      "title": "GitHub - odysseus-dev/odysseus: Self-hosted AI workspace.",
+      "url": "https://github.com/odysseus-dev/odysseus",
+      "snippet": "Self-hosted AI workspace. . Contribute to odysseus-dev/odysseus development by creating an account on GitHub."
+    }
+  ]
+}

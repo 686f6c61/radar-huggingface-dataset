@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ProCreations/booper-chat",
+  "slug": "procreations-booper-chat",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/booper-chat",
+  "created_at": "2026-08-22T22:00:51.000Z",
+  "updated_at": "2026-08-22T22:35:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "babble",
+    "booper",
+    "conversational",
+    "discord",
+    "text-generation",
+    "en",
+    "dataset:mookiezi/Discord-Dialogues",
+    "dataset:openbmb/Ultra-FineWeb-L1",
+    "base_model:ProCreations/booper-pretrain",
+    "base_model:finetune:ProCreations/booper-pretrain",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29874703011,
+  "storage_human": "29.9 GB",
+  "base_model": "ProCreations/booper-pretrain",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mmproj-grug-27b-v1.1-mtp-f16.gguf · ProCreations/grug-v1.1-qwen-3.8-27b ...",
+      "url": "https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp-gguf/blame/main/mmproj-grug-27b-v1.1-mtp-f16.gguf",
+      "snippet": "ProCreations / grug-v1.1-qwen-3.8-27b-mtp-gguf like 1 Text Generation GGUF English grug mtp speculative-decoding llama.cpp conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ProCreations (Pro Creations) - Hugging Face",
+      "url": "https://huggingface.co/ProCreations/activity/posts",
+      "snippet": "Emotional intelligence, nuance, humor, empathy. That kind of interaction is what makes AI feel real.It&#x27;s also why we&#x27;re building IntellIte Chat to focus on that exact skillset: • Emotion-aware replies • Natural, flowing conversation • Strong command of casual and expressive EnglishWhen it releases, it won&#x27;t just talk — it&#x27;ll ..."
+    },
+    {
+      "title": "ProCreations/Intellite-Chat · Hugging Face",
+      "url": "https://huggingface.co/ProCreations/Intellite-Chat",
+      "snippet": "IntellIte Chat IntellIte Chat is a lightweight conversational AI model (~45M parameters) designed for warm, engaging dialogue and basic reasoning. Part of the IntellIte series, it delivers efficient performance on modest hardware, complete with streaming data loading, episodic memory buffers, and RAG-based knowledge augmentation."
+    },
+    {
+      "title": "ProCreations-Official · GitHub",
+      "url": "https://github.com/ProCreations-Official",
+      "snippet": "I&#x27;m an AI researcher and developer focused on building the next generation of intelligent systems. My work spans large language models, neural architecture design, and AI tool integration through the Model Context Protocol."
+    },
+    {
+      "title": "ProCreations AI Models | AI Market Cap",
+      "url": "https://aimarketcap.tech/providers/procreations",
+      "snippet": "Explore all AI models by ProCreations. Official pricing posture, rankings, benchmark coverage, and market-value signals on AI Market Cap."
+    }
+  ]
+}

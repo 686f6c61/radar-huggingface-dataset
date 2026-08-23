@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "anidas10/fastsft-test-model",
+  "slug": "anidas10-fastsft-test-model",
+  "author": "anidas10",
+  "url": "https://huggingface.co/anidas10/fastsft-test-model",
+  "created_at": "2026-08-22T23:54:40.000Z",
+  "updated_at": "2026-08-22T23:58:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89901176,
+  "storage_human": "90 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AniDas10/FastSFT: Transforms a prompt into a fine-tuned small ...",
+      "url": "https://github.com/AniDas10/FastSFT",
+      "snippet": "Transforms a prompt into a fine-tuned small model that distills from a large parent model. Handles synthetic data generation, quality filtering, formatting, training, and evaluation — all with sensible defaults and override control. - AniDas10/FastSFT"
+    },
+    {
+      "title": "FastSFT/evaluation_tutorial.md at main · AniDas10/FastSFT",
+      "url": "https://github.com/AniDas10/FastSFT/blob/main/evaluation_tutorial.md",
+      "snippet": "Transforms a prompt into a fine-tuned small model that distills from a large parent model. Handles synthetic data generation, quality filtering, formatting, training, and evaluation — all with sensible defaults and override control. - FastSFT/evaluation_tutorial.md at main · AniDas10/FastSFT"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "LLM Leaderboard & AI Model Benchmarks — August 2026 Compare frontier AI models by quality, cost, and context. 104 Supported and 120 Estimated models among 399 tracked LLMs — 402 benchmarks, real pricing, and runtime data in one place."
+    },
+    {
+      "title": "AI Model Test Prompts — Reproducible Benchmark Tasks",
+      "url": "https://aimodelbenchmarks.com/prompts",
+      "snippet": "Open-source test prompts for evaluating LLMs on coding, reasoning, and tool-use tasks. Use these to benchmark models yourself. Updated March 2026."
+    },
+    {
+      "title": "TheFastest.ai",
+      "url": "https://thefastest.ai/",
+      "snippet": "This site provides reliable measurements for the performance of popular models. You can filter models using the text fields in the header, e.g., Llama 3.1 405B providers, GPT-4 vs Claude 3 vs Gemini. Definitions, methodology, and links to source below. Stats updated daily. Have another model you want us to benchmark? File an issue on GitHub."
+    }
+  ]
+}

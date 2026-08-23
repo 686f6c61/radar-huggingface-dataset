@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "occurra/vehicle_reid_siglip2_naflex_512d",
+  "slug": "occurra-vehicle_reid_siglip2_naflex_512d",
+  "author": "occurra",
+  "url": "https://huggingface.co/occurra/vehicle_reid_siglip2_naflex_512d",
+  "created_at": "2026-08-09T07:05:25.000Z",
+  "updated_at": "2026-08-22T20:48:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "vehicle-re-identification",
+    "reid",
+    "image-retrieval",
+    "image-feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1502199218,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apatc/vehicle_reid_siglip2_naflex_512d · Hugging Face",
+      "url": "https://huggingface.co/apatc/vehicle_reid_siglip2_naflex_512d",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "apatc/vehicle_reid_siglip2_naflex_512d at main - Hugging Face",
+      "url": "https://huggingface.co/apatc/vehicle_reid_siglip2_naflex_512d/tree/main",
+      "snippet": "apatc / vehicle_reid_siglip2_naflex_512d like 0 Image Feature Extraction ONNX vehicle-re-identification reid image-retrieval License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main vehicle_reid_siglip2_naflex_512d Ctrl+K Ctrl+K 1 contributor History:4 commits apatc Add vehicle_reid_siglip2_naflex_512d.pth 8db4cce verifiedabout 6 hours ago .gitattributes Safe ..."
+    },
+    {
+      "title": "Findit-AI/siglip2-naflex - GitHub",
+      "url": "https://github.com/findit-ai/siglip2-naflex",
+      "snippet": "Model files The runtime expects the assets from Findit-AI/indexer release models-siglip2-naflex-v1. See models/MODELS.md for the download recipe."
+    },
+    {
+      "title": "siglip2-naflex/models/MODELS.md at main · Findit-AI/siglip2-naflex · GitHub",
+      "url": "https://github.com/Findit-AI/siglip2-naflex/blob/main/models/MODELS.md",
+      "snippet": "The vision graph references vision_model_naflex_256.onnx.data by relative filename; ORT auto-discovers the sidecar in the same directory. Same applies to text_model_naflex.onnx ↔ text_model_naflex.onnx.data. Keep each graph + sidecar pair together."
+    },
+    {
+      "title": "[2502.14786] SigLIP 2: Multilingual Vision-Language Encoders with ...",
+      "url": "https://arxiv.org/abs/2502.14786",
+      "snippet": "We introduce SigLIP 2, a family of new multilingual vision-language encoders that build on the success of the original SigLIP. In this second iteration, we extend the original image-text training objective with several prior, independently developed techniques into a unified recipe -- this includes captioning-based pretraining, self-supervised losses (self-distillation, masked prediction) and ..."
+    }
+  ]
+}

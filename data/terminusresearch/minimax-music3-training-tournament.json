@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "terminusresearch/minimax-music3-training-tournament",
+  "slug": "terminusresearch-minimax-music3-training-tournament",
+  "author": "terminusresearch",
+  "url": "https://huggingface.co/terminusresearch/minimax-music3-training-tournament",
+  "created_at": "2026-08-22T22:42:12.000Z",
+  "updated_at": "2026-08-22T22:42:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimax-music3",
+    "music",
+    "lora",
+    "evaluation",
+    "simpletuner",
+    "text-to-audio",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-Music3",
+      "url": "https://github.com/MiniMax-AI/MiniMax-Music3",
+      "snippet": "MiniMax Music 3 is a high-performance music generation model for creating complete songs up to five minutes long. Conditioned on lyrics and a detailed music description, it generates structurally coherent songs with expressive vocals, evolving arrangements, and stable long-form audio quality ..."
+    },
+    {
+      "title": "MiniMaxAI/MiniMax-Music3 · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-Music3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ai-models-lab/minimax-h3: MiniMax-H3-Hub, ComfyUI Workflows ...",
+      "url": "https://github.com/ai-models-lab/minimax-h3",
+      "snippet": "Official Hub for MiniMax H3 (minimaxh3.run) — An all-in-one open-source resource platform for MiniMax H3 (Hailuo AI 3.0), the state-of-the-art native multi-modal 2K AI video generation model with synchronized 3D stereo audio."
+    },
+    {
+      "title": "MiniMax Music 3 - minimax-ai.github.io",
+      "url": "https://minimax-ai.github.io/music3-demo/",
+      "snippet": "Demo Page MiniMax Music 3 This page provides intuitive audio demonstrations of our results. For more technical details, see Huggingface model card."
+    },
+    {
+      "title": "Prompting MiniMax Music 3 - a Hugging Face Space by multimodalart",
+      "url": "https://huggingface.co/spaces/multimodalart/minimax-music3-prompting-guide",
+      "snippet": "The requested duration is an upper bound — the model ends the song naturally with a stop token when the lyrics run out. Short lyrics make short songs; a full five-minute song wants a full song&#x27;s worth of sections."
+    }
+  ]
+}

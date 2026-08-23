@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "00x61/uyum-v3",
+  "slug": "00x61-uyum-v3",
+  "author": "00x61",
+  "url": "https://huggingface.co/00x61/uyum-v3",
+  "created_at": "2026-08-22T19:21:15.000Z",
+  "updated_at": "2026-08-22T19:59:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "pytorch",
+    "turkish",
+    "from-scratch",
+    "small-language-model",
+    "research",
+    "text-generation",
+    "tr",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:wikimedia/wikipedia",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160609849,
+  "storage_human": "161 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YumYumFusion - v3.0 | Stable Diffusion Checkpoint | Civitai",
+      "url": "https://civitai.com/models/99134/yumyumfusion?modelVersionId=116675",
+      "snippet": "Sampling steps 25+ DPM++ 2M SDE Karras Prompt Recommended to have 8k,best quality,ultra high res,beautiful,"
+    },
+    {
+      "title": "yukiarimo/yuna-ai-v3-atomic at main - Hugging Face",
+      "url": "https://huggingface.co/yukiarimo/yuna-ai-v3-atomic/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yukiarimo/yuna-ai-v3-full · Hugging Face",
+      "url": "https://huggingface.co/yukiarimo/yuna-ai-v3-full",
+      "snippet": "The model was trained using supervised and unsupervised learning techniques to ensure high accuracy and reliability. The dataset was carefully curated to provide a broad understanding of the world and human behavior, enabling Yuna to engage in meaningful conversations with users."
+    },
+    {
+      "title": "oumi/README.md at main · oumi-ai/oumi · GitHub",
+      "url": "https://github.com/oumi-ai/oumi/blob/main/README.md",
+      "snippet": "Easily fine-tune, evaluate and deploy Qwen, Gemma, or any open weight LLM! - oumi-ai/oumi"
+    },
+    {
+      "title": "GitHub - oumi-ai/oumi: Easily fine-tune, evaluate and deploy Gemma 4 ...",
+      "url": "https://github.com/oumi-ai/oumi/tree/main",
+      "snippet": "Easily fine-tune, evaluate and deploy Gemma 4, Qwen3.5, Qwen3.6, gpt-oss, DeepSeek-R1, or any open source LLM / VLM! - oumi-ai/oumi"
+    }
+  ]
+}

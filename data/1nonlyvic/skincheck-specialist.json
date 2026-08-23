@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "1nOnlyVic/skincheck-specialist",
+  "slug": "1nonlyvic-skincheck-specialist",
+  "author": "1nOnlyVic",
+  "url": "https://huggingface.co/1nOnlyVic/skincheck-specialist",
+  "created_at": "2026-08-22T22:27:01.000Z",
+  "updated_at": "2026-08-22T22:27:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85804808,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343239944,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI | Skin CheckUp | Skin Detection",
+      "url": "https://www.skincheck.tech/",
+      "snippet": "Hello, we&#x27;re Skin CheckUp. We&#x27;re all about Machine Learning and AI, real data and Skin insights that can help make it easier for you to detect skin conditions early."
+    },
+    {
+      "title": "SkinCheckAI — AI-Powered Skin Lesion & Mole Checker",
+      "url": "https://skincheckai.com/",
+      "snippet": "SkinCheckAI uses advanced AI to analyze skin lesions, moles, and spots. Get instant AI-powered skin health analysis, confidence scores, and medical recommendations from the comfort of home."
+    },
+    {
+      "title": "AI Skin Check Online — Moles, Rashes & 62+ Conditions | SkinAI",
+      "url": "https://skinailab.com/skin-check/",
+      "snippet": "Check your skin with AI in 30 seconds. Upload a photo and get instant analysis for moles, rashes, acne & 62+ conditions. Private and secure!"
+    },
+    {
+      "title": "AI Dermatologist — Free Online Skin Check from a Scan",
+      "url": "https://www.perfectcorp.com/business/products/ai-dermatologist-skin-scanner",
+      "snippet": "Free AI dermatologist online. Upload a skin photo and get an instant AI skin check in 7 seconds — 15+ conditions covered, verified by dermatologists."
+    },
+    {
+      "title": "Free AI Skin Analysis - Online Selfie Skin Check | AILab Tools",
+      "url": "https://skincheck.pro/",
+      "snippet": "Free AI Skin Analysis Online: Check Skin from a Selfie Upload a clear face photo and run AI skin analysis as a practical skin check for visible skin type, oiliness, hydration, texture, acne, pores, wrinkles, dark spots, under-eye appearance and redness. This free online AI skin scanner works without registration or login. Each skin scan turns the photo into an easy-to-read report with scores ..."
+    }
+  ]
+}

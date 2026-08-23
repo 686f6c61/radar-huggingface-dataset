@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bvgtuf2/cook_v1",
+  "slug": "bvgtuf2-cook_v1",
+  "author": "bvgtuf2",
+  "url": "https://huggingface.co/bvgtuf2/cook_v1",
+  "created_at": "2026-08-22T21:24:46.000Z",
+  "updated_at": "2026-08-22T21:25:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 2744901312,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cook AI Object Detection Model (v1, 2023-12-06 2:24am) by FridgeDetector",
+      "url": "https://universe.roboflow.com/fridgedetector/cook-ai/dataset/1",
+      "snippet": "9982 open source groceries-apple-orage images and annotations in multiple formats for training computer vision models. Cook AI (v1, 2023-12-06 2:24am), created by FridgeDetector"
+    },
+    {
+      "title": "bvgtuf2 (Douglas Troll) - Hugging Face",
+      "url": "https://huggingface.co/bvgtuf2",
+      "snippet": "User profile of Douglas Troll on Hugging Face"
+    },
+    {
+      "title": "aicook Object Detection Model (v1, 2025-07-26 4:48pm) by Deep Learning cook",
+      "url": "https://universe.roboflow.com/deep-learning-cook/aicook-lcv4d-t22pv/dataset/1",
+      "snippet": "516 open source ingredients images and annotations in multiple formats for training computer vision models. aicook (v1, 2025-07-26 4:48pm), created by Deep Learning cook"
+    },
+    {
+      "title": "GitHub - smlopezza/Personal_CookFlow_AI_Agent: Personal CookFlow AI ...",
+      "url": "https://github.com/smlopezza/Personal_CookFlow_AI_Agent",
+      "snippet": "Personal CookFlow AI Agent is your smart kitchen companion that helps you plan groceries, batch‑cook healthy meals in one day, and enjoy stress‑free eating all week. CookFlow optimizes your time, b..."
+    },
+    {
+      "title": "VishalMysore/cookgptlama · Hugging Face",
+      "url": "https://huggingface.co/VishalMysore/cookgptlama",
+      "snippet": "CookGPT is an innovative AI-based chef that combines the charm of traditional cooking with the efficiency of modern technology. Whether you&#x27;re a culinary enthusiast, a busy professional, or someone looking for culinary inspiration, CookGPT is designed to make your cooking experience delightful, personalized, and effortless."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "GRF-ASR-project/whisper-large-v3-turbo-ft-final-ct2",
+  "slug": "grf-asr-project-whisper-large-v3-turbo-ft-final-ct2",
+  "author": "GRF-ASR-project",
+  "url": "https://huggingface.co/GRF-ASR-project/whisper-large-v3-turbo-ft-final-ct2",
+  "created_at": "2025-06-29T11:26:19.000Z",
+  "updated_at": "2026-08-22T20:46:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "automatic-speech-recognition",
+    "en",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1617884929,
+  "storage_human": "1.6 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openai/whisper-large · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Whisper Large v3 — OpenASR Models",
+      "url": "https://openasr.org/models/whisper-large-v3/",
+      "snippet": "For most users the q8_0 build is the recommended default; q4_k is for tighter memory budgets and fp16 is for verification or maximum fidelity. For a faster large-grade option, see the distilled whisper-large-v3-turbo."
+    },
+    {
+      "title": "Whisper Large v3 Turbo — OpenASR Models",
+      "url": "https://openasr.org/models/whisper-large-v3-turbo/",
+      "snippet": "This OpenASR repo repackages the original openai/whisper-large-v3-turbo weights as .oasr packs that run natively in the OpenASR runtime with no Python at inference time. For most users the q8_0 build is the recommended default; q4_k is for tighter memory budgets and fp16 is for verification or maximum fidelity."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    }
+  ]
+}

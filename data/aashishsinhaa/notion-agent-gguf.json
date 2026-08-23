@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "aashishsinhaa/notion-agent-gguf",
+  "slug": "aashishsinhaa-notion-agent-gguf",
+  "author": "aashishsinhaa",
+  "url": "https://huggingface.co/aashishsinhaa/notion-agent-gguf",
+  "created_at": "2026-08-22T19:08:01.000Z",
+  "updated_at": "2026-08-22T19:08:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Notion AI",
+      "url": "https://www.notion.com/help/guides/category/ai",
+      "snippet": "Guide Is Notion&#x27;s Business or Enterprise plan right for you? Guide Get started with your Notion Agent Guide Use Notion AI to write better, more efficient notes and docs Guide Everything you can do with Notion AI Guide Build a multi-agent system that turns customer feedback into a monthly report Guide Preserve perfect meeting memory with AI ..."
+    },
+    {
+      "title": "100 Notion AI Agent Use Cases",
+      "url": "https://notion.notion.site/100-Notion-AI-Agent-Use-Cases-26cefdeead0580d583eacfa1265221a9",
+      "snippet": "100 Notion AI Agent Use Cases This page shows 100 practical ways your Agent can do work for you—from research to building databases and content—right inside Notion."
+    },
+    {
+      "title": "Meet your 24/7 AI team | Notion",
+      "url": "https://www.notion.com/product/agents",
+      "snippet": "Automate recurring work for your entire team with Custom Agents that work where your team already works."
+    },
+    {
+      "title": "The AI Transformation Model | Notion",
+      "url": "https://notion.notion.site/Official-The-AI-Transformation-Model-2d1efdeead05802e867edea1e3a470b8",
+      "snippet": "Introducing the AI Transformation Model How AI native are you? Every company needs AI, but many lack a clear starting point or scaling path. This model shows how to go from manual, fragmented work to AI-powered operations. It mirrors real journeys tracking what changes, expected impact, and the role Notion can play. Every framework has flaws, and no company&#x27;s journey is identical to another ..."
+    },
+    {
+      "title": "Building a Disposable Notion Agent on Cheap Models",
+      "url": "https://dev.to/ashish_mishra_8491c3b9912/building-a-disposable-notion-agent-on-cheap-models-m5b",
+      "snippet": "We wanted a Notion worker that starts, does one job, and dies. Cheap models, JSON tools, and Markdown MCP taught us where quality actually lives."
+    }
+  ]
+}

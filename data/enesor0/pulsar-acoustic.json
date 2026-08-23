@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "enesor0/pulsar-acoustic",
+  "slug": "enesor0-pulsar-acoustic",
+  "author": "enesor0",
+  "url": "https://huggingface.co/enesor0/pulsar-acoustic",
+  "created_at": "2026-08-22T23:42:51.000Z",
+  "updated_at": "2026-08-22T23:50:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "tflite",
+    "tensorflow",
+    "tensorflow-lite",
+    "int8",
+    "quantization",
+    "edge-ai",
+    "embedded-ml",
+    "acoustic",
+    "hyperparameter-tuning",
+    "audio-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55971206,
+  "storage_human": "56 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Piraytekinz/Pulsar: Pulsar is an AI model which generates ...",
+      "url": "https://github.com/Piraytekinz/Pulsar",
+      "snippet": "Pulsar Pulsar is an AI model which generates audio from images, bridging the gap between static visuals and audio. This demonstrates how a model can generate clean unstructured audio data without needing a discriminator. The goal is to reduce training time while ensuring accurate audio generations."
+    },
+    {
+      "title": "Machine Learning in Acoustics: A Review and Open-source Repository - Nature",
+      "url": "https://www.nature.com/articles/s44384-025-00021-w",
+      "snippet": "Explainable AI techniques are significant to today&#x27;s acoustic applications, providing insights into model prediction and human interpretation of data. The AcousticsML repository follows a ..."
+    },
+    {
+      "title": "Sonorix/Pulsar-AI-Final · Hugging Face",
+      "url": "https://huggingface.co/Sonorix/Pulsar-AI-Final",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Docs | 脉冲星智算 PULSAR AI",
+      "url": "https://pulsar-ai.cn/en/docs/",
+      "snippet": "Overview Jump into specific capabilities from the grouped sections below to view request parameters, code examples, and response structures. The layout keeps navigation on the left and a wide reading area on the right for large-screen documentation browsing."
+    },
+    {
+      "title": "Pulsaro - All AI Models in One Native Desktop App",
+      "url": "https://pulsaro.ai/",
+      "snippet": "The AI Desktop App. All Models in One Place. The unified AI subscription to access multiple LLMs like Claude and GPT together. Your keyboard shortcut AI assistant for text, image, and video generation."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JakoBian98/Graphia_AI",
+  "slug": "jakobian98-graphia_ai",
+  "author": "JakoBian98",
+  "url": "https://huggingface.co/JakoBian98/Graphia_AI",
+  "created_at": "2026-08-22T23:27:34.000Z",
+  "updated_at": "2026-08-22T23:27:34.000Z",
+  "license": "cc-by-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JakoBian98 (Melih Aysan) - Hugging Face",
+      "url": "https://huggingface.co/JakoBian98",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 15 minutes ago ... updated a Space about 6 hours ago"
+    },
+    {
+      "title": "JakoBian98 (Melih Aysan) - Hugging Face",
+      "url": "https://huggingface.co/JakoBian98/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 2 months ago ... updated a Space about 2 months ago"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated April 2026."
+    },
+    {
+      "title": "GitHub - Lydia-alem/AI-Graphia: An AI-powered platform that analyzes ...",
+      "url": "https://github.com/Lydia-alem/AI-Graphia",
+      "snippet": "An AI-powered platform that analyzes handwriting to detect dysgraphia patterns early and provide clear insights."
+    },
+    {
+      "title": "Graphia",
+      "url": "https://www.graphiastudio.com/",
+      "snippet": "Your creative workspace. Write, research, and build content with AI, all in one place."
+    }
+  ]
+}

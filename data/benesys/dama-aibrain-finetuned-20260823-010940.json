@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "benesys/dama-aibrain-finetuned-20260823-010940",
+  "slug": "benesys-dama-aibrain-finetuned-20260823-010940",
+  "author": "benesys",
+  "url": "https://huggingface.co/benesys/dama-aibrain-finetuned-20260823-010940",
+  "created_at": "2026-08-23T01:09:42.000Z",
+  "updated_at": "2026-08-23T01:20:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WonseokJayJung/dama-aibrain · Hugging Face",
+      "url": "https://huggingface.co/WonseokJayJung/dama-aibrain",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Taeri077/dama-ai-brain · Hugging Face",
+      "url": "https://huggingface.co/Taeri077/dama-ai-brain",
+      "snippet": "dama-ai-brain : GGUF This model was finetuned and converted to GGUF format using Unsloth."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Home - BeneSys",
+      "url": "https://www.benesys.com/",
+      "snippet": "BeneSys is a team of dedicated Taft-Hartley Trust Fund Specialists. We have served Taft-Hartley Trust Funds and their plan participants for over 45 years and understand the nuances of Taft-Hartley benefit plans."
+    },
+    {
+      "title": "Provider Portal - BeneSys",
+      "url": "https://www.benesys.com/provider-portal/",
+      "snippet": "Click the Provider Portal Instructions button to download a detailed user guide to help you navigate the BeneSys Provider Portal. This PDF includes instructions on how to search for a patient, view their claims and eligibility details, download benefit plan documents, submit secure inquiries, update your account information, and more!"
+    }
+  ]
+}

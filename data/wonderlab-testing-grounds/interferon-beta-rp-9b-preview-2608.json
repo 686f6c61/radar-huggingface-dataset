@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Wonderlab-Testing-Grounds/Interferon-beta-RP-9B-Preview-2608",
+  "slug": "wonderlab-testing-grounds-interferon-beta-rp-9b-preview-2608",
+  "author": "Wonderlab-Testing-Grounds",
+  "url": "https://huggingface.co/Wonderlab-Testing-Grounds/Interferon-beta-RP-9B-Preview-2608",
+  "created_at": "2026-08-22T23:29:25.000Z",
+  "updated_at": "2026-08-23T00:12:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "text-generation",
+    "RP",
+    "ERP",
+    "Roleplay",
+    "test",
+    "experimental",
+    "Qwen",
+    "finetune",
+    "Potentially unstable",
+    "Creative writing",
+    "Very high rank",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 28200300511,
+  "storage_human": "28.2 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Indexnusrefather/Nyx-RP-9B-Instruct-2608-v1 · Hugging Face",
+      "url": "https://huggingface.co/Indexnusrefather/Nyx-RP-9B-Instruct-2608-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nyx-RP-9B-Instruct-2608-v1.Q5_K_M.gguf - Hugging Face",
+      "url": "https://huggingface.co/Indexnusrefather/Nyx-RP-9B-Instruct-2608-v1/blob/main/Nyx-RP-9B-Instruct-2608-v1.Q5_K_M.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "Wonderlab Bio. Off-the-shelf cell therapies without immune rejection.",
+      "url": "https://www.wonderlab.bio/",
+      "snippet": "Off-the-Shelf Cell Therapies Without Immune Rejection. AI drug discovery needs a human-cell validation foundation. Cell therapy needs HLA-matched allogeneic iPSCs. Wonderlab is the only company with a fully characterized iPSC platform covering 90%+ of the US population, providing the cells both fields require."
+    },
+    {
+      "title": "Early Interferon-beta Treatment for West-Nile Virus Infection",
+      "url": "https://clinicaltrials.gov/study/NCT06510426",
+      "snippet": "The investigators therefore assume that early treatment with interferon beta (the type of interferon against which most patients do not have neutralizing antibodies) could prevent the development of severe neuroinvasive WNV disease."
+    }
+  ]
+}

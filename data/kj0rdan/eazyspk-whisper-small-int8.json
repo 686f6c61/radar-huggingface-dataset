@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Kj0rdan/eazyspk-whisper-small-int8",
+  "slug": "kj0rdan-eazyspk-whisper-small-int8",
+  "author": "Kj0rdan",
+  "url": "https://huggingface.co/Kj0rdan/eazyspk-whisper-small-int8",
+  "created_at": "2026-08-06T12:20:41.000Z",
+  "updated_at": "2026-08-22T19:48:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "multilingual",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 665325788,
+  "storage_human": "665 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kj0rdan/eazyspk-whisper-small-int8 · Hugging Face",
+      "url": "https://huggingface.co/Kj0rdan/eazyspk-whisper-small-int8",
+      "snippet": "Kj0rdan / eazyspk-whisper-small-int8 like 0 ONNX whisper Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 9 Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Kj0rdan (Kristian) - Hugging Face",
+      "url": "https://huggingface.co/Kj0rdan",
+      "snippet": "Kj0rdan/eazyspk-nllb-200-distilled-600M-int8. View all activity. Organizations. None yet. models 3. Sort: Recently updated. Kj0rdan/eazyspk-android-onnx"
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "We observed that the difference becomes less significant for the small.en and medium.en models. Additionally, the turbo model is an optimized version of large-v3 that offers faster transcription speed with a minimal degradation in accuracy. Whisper&#x27;s performance varies widely depending on the language."
+    },
+    {
+      "title": "Whisper Small — OpenASR Models",
+      "url": "https://openasr.org/models/whisper-small/",
+      "snippet": "Whisper Small is OpenAI&#x27;s 244M-parameter multilingual Whisper checkpoint. It uses the standard Whisper encoder-decoder architecture for automatic speech recognition and speech translation, trained with large-scale weak supervision on 680k hours of labelled speech."
+    },
+    {
+      "title": "GitHub - nyadla-sys/whisper.tflite: Optimized OpenAI&#x27;s Whisper TFLite ...",
+      "url": "https://github.com/nyadla-sys/whisper.tflite",
+      "snippet": "This project contains an enhanced version of the Whisper quantized TFLite model optimized for both Android and iOS platforms. The model is designed to perform well on edge devices, making it suitable for a wide range of applications."
+    }
+  ]
+}

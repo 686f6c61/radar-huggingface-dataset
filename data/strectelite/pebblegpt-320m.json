@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "strectelite/PebbleGPT-320M",
+  "slug": "strectelite-pebblegpt-320m",
+  "author": "strectelite",
+  "url": "https://huggingface.co/strectelite/PebbleGPT-320M",
+  "created_at": "2026-08-23T00:30:00.000Z",
+  "updated_at": "2026-08-23T00:30:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pebblegpt",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320914432,
+  "parameters_human": "320.9M",
+  "storage_bytes": 1283679472,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "General Intuition: $320M to Train AI on Gameplay, GENZ TECH",
+      "url": "https://genztech.blog/p/general-intuition-320m-gameplay-ai/",
+      "snippet": "General Intuition raised $320M at a $2.3B valuation, led by Khosla with Jeff Bezos backing, to build a world model trained on gameplay video."
+    },
+    {
+      "title": "General Intuition Raises $320M to Train AI on Gameplay",
+      "url": "https://awesomeagents.ai/news/general-intuition-320m-video-game-ai-agents/",
+      "snippet": "General Intuition Raises $320M to Train AI on Gameplay General Intuition raised $320 million at a $2.3 billion valuation on the bet that billions of hours of video game footage - with action labels - can train AI agents that operate in the real world."
+    },
+    {
+      "title": "General Intuition Raises $320M at $2.3B Valuation to Train AI ... - mlq.ai",
+      "url": "https://mlq.ai/news/general-intuition-raises-320m-at-23b-valuation-to-train-ai-agents-on-gameplay-data/",
+      "snippet": "General Intuition, a Dutch AI startup that trains autonomous agents on billions of video game clips, has raised $320 million in new funding at a $2.3 billion valuation. The round, which closed in January but was publicly announced Wednesday, was backed by Amazon founder Jeff Bezos, former Google CEO ..."
+    },
+    {
+      "title": "General Intuition $320M Series A: Gameplay AI (June 2026)",
+      "url": "https://andrew.ooo/answers/what-is-general-intuition-320m-series-a-june-2026/",
+      "snippet": "General Intuition raised $320M at $2.3B valuation on June 25, 2026 to train AI agents on gameplay data. Bezos backed. Here&#x27;s the spatial-AI thesis."
+    },
+    {
+      "title": "General Intuition Raises $320M for AI Agent Training",
+      "url": "https://www.aibusinessreview.org/2026/06/26/general-intuition-320m-funding-ai-agents-video-games/",
+      "snippet": "General Intuition closes $320M Series B at $2.3B valuation to train AI agents using video game environments, attracting enterprise and defence interest."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "p424p424/vieneu-tts-v3-turbo-onnx",
+  "slug": "p424p424-vieneu-tts-v3-turbo-onnx",
+  "author": "p424p424",
+  "url": "https://huggingface.co/p424p424/vieneu-tts-v3-turbo-onnx",
+  "created_at": "2026-08-23T01:30:08.000Z",
+  "updated_at": "2026-08-23T01:30:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "vieneu_v3",
+    "vietnamese",
+    "tts",
+    "on-device",
+    "text-to-speech",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 273180548,
+  "storage_human": "273 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pnnbao-ump/VieNeu-TTS-v3-Turbo · Hugging Face",
+      "url": "https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VieNeu-TTS - GitHub",
+      "url": "https://github.com/pnnbao97/VieNeu-TTS",
+      "snippet": "The vieneu SDK defaults to VieNeu-TTS v3 Turbo (48 kHz). The minimal install is torch-free: on CPU everything runs on ONNX Runtime (PyTorch is never imported), and on a CUDA machine it auto-switches to the PyTorch engine — where inference is batched automatically (same API, no code change)."
+    },
+    {
+      "title": "ngoctham/VieNeu-TTS-v3-Turbo · Hugging Face",
+      "url": "https://huggingface.co/ngoctham/VieNeu-TTS-v3-Turbo",
+      "snippet": "The VieNeu-TTS v3 Turbo architecture is an original design by the author, Phạm Nguyễn Ngọc Bảo, and is trained from scratch on ~10,000 hours of English-Vietnamese speech — it is not a fine-tune, distillation, or adaptation of any existing TTS model."
+    },
+    {
+      "title": "GitHub - hungthai84/VieNeu-TTS",
+      "url": "https://github.com/hungthai84/VieNeu-TTS",
+      "snippet": "The vieneu SDK defaults to VieNeu-TTS v3 Turbo (48 kHz). The minimal install is torch-free: on CPU everything runs on ONNX Runtime (PyTorch is never imported), and on a CUDA machine it auto-switches to the PyTorch engine."
+    },
+    {
+      "title": "onnx/vieneu_prefill.onnx · pnnbao-ump/VieNeu-TTS-v3-Turbo at main",
+      "url": "https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo/blob/main/onnx/vieneu_prefill.onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

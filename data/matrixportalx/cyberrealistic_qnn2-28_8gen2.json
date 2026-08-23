@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "matrixportalx/CyberRealistic_qnn2.28_8gen2",
+  "slug": "matrixportalx-cyberrealistic_qnn2-28_8gen2",
+  "author": "matrixportalx",
+  "url": "https://huggingface.co/matrixportalx/CyberRealistic_qnn2.28_8gen2",
+  "created_at": "2026-08-22T23:44:47.000Z",
+  "updated_at": "2026-08-22T23:45:01.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion",
+    "sd1.5",
+    "qualcomm",
+    "qnn",
+    "qairt",
+    "snapdragon",
+    "local-dream",
+    "text-to-image",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 975158707,
+  "storage_human": "975 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mr-J-369/CyberRealistic_Final-SD1.5-qnn2.28 · Hugging Face",
+      "url": "https://huggingface.co/Mr-J-369/CyberRealistic_Final-SD1.5-qnn2.28",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CyberRealistic - Final | Stable Diffusion 1.x Checkpoint | Civitai",
+      "url": "https://civitai.com/models/15003/cyberrealistic",
+      "snippet": "CyberRealistic is a flexible, easy-to-use photorealistic model built from nonstop testing, custom blends, and just the right amount of chaos. The backstory? It&#x27;s honestly a wild mashup of different checkpoints, but what really counts is what you get in the end: sharp, expressive, clean renders that just work."
+    },
+    {
+      "title": "README.md · Mr-J-369/CyberRealistic_Final-SD1.5-qnn2.28 at main",
+      "url": "https://huggingface.co/Mr-J-369/CyberRealistic_Final-SD1.5-qnn2.28/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cyber Realistic | Open Laboratory",
+      "url": "https://openlaboratory.com/models/cyber-realistic/",
+      "snippet": "Versatile photorealistic SD 1.5 fine-tune capable of generating a wide range of convincing photographic images."
+    },
+    {
+      "title": "CyberRealistic XL - v10.0 | Stable Diffusion XL Checkpoint | Civitai",
+      "url": "https://civitai.com/models/312530/cyberrealistic-xl",
+      "snippet": "⚠️ Heads-Up This model can make mature or sensitive content. You&#x27;re fully responsible for what you create, so use it responsibly (or if you can&#x27;t resist, at least be artistically irresponsible). 💬 Want Better Prompts? Use this custom ChatGPT to auto-generate polished prompts for CyberRealistic XL: 🔗 [Try it now on ChatGPT]"
+    }
+  ]
+}

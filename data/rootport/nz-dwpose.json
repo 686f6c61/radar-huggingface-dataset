@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Rootport/Nz-DWPose",
+  "slug": "rootport-nz-dwpose",
+  "author": "Rootport",
+  "url": "https://huggingface.co/Rootport/Nz-DWPose",
+  "created_at": "2026-07-26T09:59:42.000Z",
+  "updated_at": "2026-08-23T02:37:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "pose-estimation",
+    "dwpose",
+    "yolox",
+    "aviutl2",
+    "ja",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 352756773,
+  "storage_human": "353 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rootport/Nz-DWPose · Hugging Face",
+      "url": "https://huggingface.co/Rootport/Nz-DWPose",
+      "snippet": "Rootport / Nz-DWPose like 0 Japanese English pose-estimation dwpose yolox aviutl2 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Nz-DWPose 使い方 出自と謝辞 ライセンス English summary"
+    },
+    {
+      "title": "GitHub - IDEA-Research/DWPose: \"Effective Whole-body Pose Estimation ...",
+      "url": "https://github.com/IDEA-Research/DWPose",
+      "snippet": "⚔️ We release a series of models named DWPose with different sizes, from tiny to large, for human whole-body pose estimation. Besides, we also replace Openpose with DWPose for ControlNet, obtaining better Generated Images."
+    },
+    {
+      "title": "GitHub - AI-Dataset-and-Tools/DWPose-human-whole-body-pose-estimation ...",
+      "url": "https://github.com/AI-Dataset-and-Tools/DWPose-human-whole-body-pose-estimation",
+      "snippet": "💃🏻 DWPose 💃🏻 This repository is the official implementation of the Effective Whole-body Pose Estimation with Two-stages Distillation. Our code is based on MMPose and ControlNet. ⚔️ We release a series of models named DWPose with different sizes, from tiny to large, for human whole-body pose estimation."
+    },
+    {
+      "title": "IDEA-Research/DWPose | DeepWiki",
+      "url": "https://deepwiki.com/IDEA-Research/DWPose",
+      "snippet": "Conclusion DWPose represents an effective approach to whole-body pose estimation through its innovative two-stage distillation methodology. The system provides multiple model variants for different computational constraints, supports both PyTorch and ONNX inference, and integrates seamlessly with ControlNet for AI image generation applications."
+    },
+    {
+      "title": "Model Variants and Performance | IDEA-Research/DWPose | DeepWiki",
+      "url": "https://deepwiki.com/IDEA-Research/DWPose/1.1-model-variants-and-performance",
+      "snippet": "Purpose and Scope This document details the different DWPose model variants available for whole-body pose estimation, their performance metrics, computational requirements, and selection guidelines. DWPose offers a series of models with varying sizes to accommodate different computational constraints while maintaining high accuracy. For information about the distillation methodology used to ..."
+    }
+  ]
+}

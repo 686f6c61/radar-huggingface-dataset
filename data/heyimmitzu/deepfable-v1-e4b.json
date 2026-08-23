@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "heyimmitzu/deepfable-v1-e4b",
+  "slug": "heyimmitzu-deepfable-v1-e4b",
+  "author": "heyimmitzu",
+  "url": "https://huggingface.co/heyimmitzu/deepfable-v1-e4b",
+  "created_at": "2026-08-22T21:35:39.000Z",
+  "updated_at": "2026-08-22T21:36:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 6326844608,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Featherless.ai",
+      "url": "https://featherless.ai/models/",
+      "snippet": "Featherless - The latest LLM models, serverless and ready to use at your request."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Model catalog — hfviewer",
+      "url": "https://hfviewer.com/models/",
+      "snippet": "Browse interactive architecture graphs for 3717 Hugging Face models. Every model in this catalog opens as an explorable layer-by-layer visualization."
+    }
+  ]
+}

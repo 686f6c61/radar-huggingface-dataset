@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "mondk/claude-llama-8B-think-mlx-4Bit",
+  "slug": "mondk-claude-llama-8b-think-mlx-4bit",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/claude-llama-8B-think-mlx-4Bit",
+  "created_at": "2026-08-23T02:30:21.000Z",
+  "updated_at": "2026-08-23T02:32:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "claude",
+    "thinking",
+    "mlx-my-repo",
+    "text-generation",
+    "conversational",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko",
+    "dataset:mondk/claude-sonnet5-jsonl",
+    "base_model:mondk/claude-llama-8B-think",
+    "base_model:quantized:mondk/claude-llama-8B-think",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1254952960,
+  "parameters_human": "1.25B",
+  "storage_bytes": 4534698960,
+  "storage_human": "4.5 GB",
+  "base_model": "mondk/claude-llama-8B-think",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mondk/claude-llama-8B-think · Hugging Face",
+      "url": "https://huggingface.co/mondk/claude-llama-8B-think",
+      "snippet": "mondk / claude-llama-8B-think like 2 Text Generation Safetensors mondk/claude-sonnet5-jsonl 10 languages llama claude thinking conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "mondk/claude-llama-8B-think-GGuf · Hugging Face",
+      "url": "https://huggingface.co/mondk/claude-llama-8B-think-GGuf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Claude Llama 8B Think by mondk - LLM Explorer",
+      "url": "https://llm-explorer.com/model/mondk%2Fclaude-llama-8B-think,3pg0nTDunbZlSUyh0GvpZs",
+      "snippet": "Claude Llama 8B Think is an open-source 8b LLM by mondk. VRAM 16.1GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Best Local LLMs for Mac in 2026 — M1 through M5 Tested",
+      "url": "https://insiderllm.com/guides/best-local-llms-mac-2026/",
+      "snippet": "Best model for every Mac tier, 8GB to the 96GB Studio ceiling. Qwen 3.6, Llama 4 Scout, DeepSeek V4, MLX vs Ollama. Why bandwidth, not RAM, sets your speed."
+    },
+    {
+      "title": "oMLX — LLM inference, optimized for your Mac",
+      "url": "https://omlx.ai/",
+      "snippet": "Native macOS inference server built on MLX. Paged SSD KV caching, continuous batching, and drop-in API for Claude Code, OpenClaw, and Cursor."
+    }
+  ]
+}

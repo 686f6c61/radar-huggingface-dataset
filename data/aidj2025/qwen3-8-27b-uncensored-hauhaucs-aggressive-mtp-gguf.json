@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "aidj2025/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "slug": "aidj2025-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf",
+  "author": "aidj2025",
+  "url": "https://huggingface.co/aidj2025/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "created_at": "2026-08-22T21:21:18.000Z",
+  "updated_at": "2026-08-22T21:21:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "multimodal",
+    "vision",
+    "mtp",
+    "speculative-decoding",
+    "fastmtp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 172466425216,
+  "storage_human": "172.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Uncensored - GitHub",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Qwen 3.8 27B Uncensored Abliterated Qwen 3.8 27B — uncensored at the weight level, not just prompting. Cross-platform: Mac M5 Pro (Q3_K_M · 13.5GB · Metal) + Windows (Q4_K_M · 16.8GB · CUDA). Optional MLX backend for 30-50% faster inference on Apple Silicon."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-AWQ-MTP",
+      "url": "https://friendli.ai/models/HFCK99/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-AWQ-MTP",
+      "snippet": "As of 2026-08-18 no AWQ/W4A16 build of any HauhauCS Aggressive model appears on the Hub (searched model ids across 90 derivative repos; GGUF, NVFP4 and MLX builds exist)."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "What \"uncensored GGUF\" actually means — and how this build differs from the FP8 version GGUF is the single-file model format llama.cpp uses; FP8 is a quantization scheme that runs on vLLM GPU servers. Our two uncensored releases are the same abliterated weights in two runtimes. Qwen3.8-27B-Uncensored-FP8 (August 15, 2026) targets vLLM on a server, re-quantized to the official Qwen3.8-27B-FP8 ..."
+    }
+  ]
+}

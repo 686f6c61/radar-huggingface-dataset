@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sumitguha13/gemma-2-2b-agent-security",
+  "slug": "sumitguha13-gemma-2-2b-agent-security",
+  "author": "sumitguha13",
+  "url": "https://huggingface.co/sumitguha13/gemma-2-2b-agent-security",
+  "created_at": "2026-08-22T21:37:18.000Z",
+  "updated_at": "2026-08-22T21:40:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "ai-safety",
+    "prompt-injection",
+    "agent-security",
+    "lora",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:sumitguha13/ai-agent-security-sft-dpo",
+    "base_model:thesreedath/gemma-2-2b-qa-sft",
+    "base_model:adapter:thesreedath/gemma-2-2b-qa-sft",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5267321364,
+  "storage_human": "5.3 GB",
+  "base_model": "thesreedath/gemma-2-2b-qa-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hardening AI Agents: How We Fine-Tuned Gemma 2B into an Ultra ... - Medium",
+      "url": "https://medium.com/google-cloud/hardening-ai-agents-how-we-fine-tuned-gemma-2b-into-an-ultra-fast-zero-over-refusal-security-735d1ac8311a",
+      "snippet": "Hardening AI Agents: How We Fine-Tuned Gemma 2B into an Ultra-Fast, Zero-Over-Refusal Security Guardrail As Large Language Model (LLM) agents are increasingly deployed in production systems — …"
+    },
+    {
+      "title": "Hardening AI Agents: How We Fine-Tuned Gemma 2B into an Ultra-Fast ...",
+      "url": "https://devengoratela.com/2026/06/hardening-ai-agents-how-we-fine-tuned-gemma-2b-into-an-ultra-fast-zero-over-refusal-security/",
+      "snippet": "Hardening AI Agents: How We Fine-Tuned Gemma 2B into an Ultra-Fast, Zero-Over-Refusal Security Guardrail As Large Language Model (LLM) agents are increasingly deployed in production systems — handling tool execution, database queries, and personal data — they have become prime targets for adversarial attacks. Prompt injection, jailbreaking, and system prompt extraction are no longer just ..."
+    },
+    {
+      "title": "google/gemma-2-2b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2-2b",
+      "snippet": "Running the model through a CLI The local-gemma repository contains a lightweight wrapper around Transformers for running Gemma 2 through a command line interface, or CLI. Follow the installation instructions for getting started, then launch the CLI through the following command: local-gemma --model \"google/gemma-2-2b\" --prompt \"What is the capital of Mexico?\" Quantized Versions through ..."
+    },
+    {
+      "title": "google/gemma-2b · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - google-deepmind/gemma: Gemma open-weight LLM library, from ...",
+      "url": "https://github.com/google-deepmind/gemma",
+      "snippet": "Gemma is a family of open-weights Large Language Model (LLM) by Google DeepMind, based on Gemini research and technology. This repository contains the implementation of the gemma PyPI package. A JAX library to use and fine-tune Gemma. For examples and use cases, see our documentation. Please report issues and feedback in our GitHub."
+    }
+  ]
+}

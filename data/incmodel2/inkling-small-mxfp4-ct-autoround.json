@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "INCModel2/Inkling-Small-MXFP4-CT-AutoRound",
+  "slug": "incmodel2-inkling-small-mxfp4-ct-autoround",
+  "author": "INCModel2",
+  "url": "https://huggingface.co/INCModel2/Inkling-Small-MXFP4-CT-AutoRound",
+  "created_at": "2026-08-23T02:53:05.000Z",
+  "updated_at": "2026-08-23T03:16:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "arxiv:2309.05516",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:quantized:thinkingmachines/Inkling-Small",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 265956439090,
+  "parameters_human": "265.96B",
+  "storage_bytes": 153450529811,
+  "storage_human": "153.5 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inkling-Small Model Card - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/model-card/inkling-small/",
+      "snippet": "Model card for Inkling-Small, a 276B-parameter (12B active) open-weights multimodal model: intended uses, model properties, training, evaluations and safety."
+    },
+    {
+      "title": "INCModel2/GLM-5.2-MXFP4-Mixed-CT-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/INCModel2/GLM-5.2-MXFP4-Mixed-CT-AutoRound",
+      "snippet": "Instructions to use INCModel2/GLM-5.2-MXFP4-Mixed-CT-AutoRound with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Inkling - Thinking Machines Lab",
+      "url": "https://thinkingmachines.ai/inkling/",
+      "snippet": "Inkling-Small is shown with a solid purple line, Inkling with the heavier cobalt line, and the comparison models with dashed lines. Evaluations without a reported model score are plotted at zero. Hover an evaluation to compare every model&#x27;s score."
+    },
+    {
+      "title": "lightseekorg/Inkling-Small-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/lightseekorg/Inkling-Small-MXFP4",
+      "snippet": "This checkpoint was produced by applying AMD Quark MXFP4 file-to-file quantization to the BF16 Inkling-Small checkpoint. Attention layers, shared experts, router weights, embeddings, normalization layers, multimodal components, MTP weights, and transformer layers 0-2 remain in BF16."
+    },
+    {
+      "title": "thinkingmachines/Inkling-Small | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/thinkingmachines/Inkling-Small",
+      "snippet": "Overview TML Inkling-Small is a natively multimodal 276B-parameter Mixture-of-Experts model from Thinking Machines Lab. It activates 12B parameters per token and uses the same Inkling architecture and vLLM serving configuration as its larger 975B-parameter sibling, while substantially reducing the deployment footprint."
+    }
+  ]
+}

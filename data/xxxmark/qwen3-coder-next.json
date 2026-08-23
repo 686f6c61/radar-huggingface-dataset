@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "XXXMARK/Qwen3-Coder-Next",
+  "slug": "xxxmark-qwen3-coder-next",
+  "author": "XXXMARK",
+  "url": "https://huggingface.co/XXXMARK/Qwen3-Coder-Next",
+  "created_at": "2026-08-23T02:48:49.000Z",
+  "updated_at": "2026-08-23T02:48:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_next",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 79674391296,
+  "parameters_human": "79.67B",
+  "storage_bytes": 159362601248,
+  "storage_human": "159.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Catalog | Microsoft Foundry Models",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3-coder-next",
+      "snippet": "Qwen3-Coder-Next Highlights Today, we&#x27;re announcing Qwen3-Coder-Next, an open-weight language model designed specifically for coding agents and local development. It features the following key enhancements:"
+    },
+    {
+      "title": "Qwen 3 Coder Next | AI Model | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/model/qwen-3-coder-next/",
+      "snippet": "Qwen3-Coder-Next is an open-weight language model built specifically for coding agents and local development, optimized for tool use and long-horizon software engineering tasks."
+    },
+    {
+      "title": "Qwen3-Coder-Next: The Complete 2026 Guide to Running Powerful AI Coding ...",
+      "url": "https://dev.to/sienna/qwen3-coder-next-the-complete-2026-guide-to-running-powerful-ai-coding-agents-locally-1k95",
+      "snippet": "Real-World Use Cases and Performance Comparison: Qwen3-Coder-Next vs Claude vs GPT Common Issues and Solutions FAQ Conclusion and Next Steps What is Qwen3-Coder-Next? Qwen3-Coder-Next is an open-weight language model released by Alibaba&#x27;s Qwen team in February 2026, specifically designed for coding agents and local development environments."
+    },
+    {
+      "title": "Qwen3-Coder-Next Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2603.00729v1",
+      "snippet": "Abstract We present Qwen3-Coder-Next, an open-weight language model specialized for coding agents. Qwen3-Coder-Next is an 80-billion-parameter model that activates only 3 billion parameters during inference, enabling strong coding capability with efficient inference. In this work, we explore how far strong training recipes can push the capability limits of models with small parameter ..."
+    },
+    {
+      "title": "Qwen3 Coder Next - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen3-coder-next",
+      "snippet": "Qwen3 Coder Next: Ultra-Efficient Coding Agent Model Qwen3 Coder Next is an 80B parameter sparse Mixture-of-Experts language model from Alibaba&#x27;s Qwen team, designed specifically for coding agents and local development. With only 3B parameters activated per token, it achieves performance comparable to models with 10-20x more active parameters, making it one of the most efficient coding models ..."
+    }
+  ]
+}

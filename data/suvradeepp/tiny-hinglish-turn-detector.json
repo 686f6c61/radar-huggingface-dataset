@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "suvradeepp/tiny-hinglish-turn-detector",
+  "slug": "suvradeepp-tiny-hinglish-turn-detector",
+  "author": "suvradeepp",
+  "url": "https://huggingface.co/suvradeepp/tiny-hinglish-turn-detector",
+  "created_at": "2026-08-22T22:32:57.000Z",
+  "updated_at": "2026-08-22T22:33:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "audio",
+    "turn-detection",
+    "endpointing",
+    "hinglish",
+    "voice-ai",
+    "audio-classification",
+    "hi",
+    "en",
+    "dataset:pipecat-ai/smart-turn-data-v3.2-train",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 625431,
+  "storage_human": "625431 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiny Hinglish turn detector - Hugging Face",
+      "url": "https://huggingface.co/spaces/lostinthesky/hinglish-turn-detector",
+      "snippet": "Tiny Hinglish turn detector Done speaking, or just pausing? Audio-only end-of-turn detection, running entirely in your browser (onnxruntime-web). Nothing is uploaded."
+    },
+    {
+      "title": "livekit/turn-detector · Hugging Face",
+      "url": "https://huggingface.co/livekit/turn-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "turn-detector: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/turn-detector-livekit",
+      "snippet": "Overview turn-detector is a semantic turn detection model developed by livekit that predicts whether a user has finished speaking in voice AI applications by analyzing transcribed text. The model complements voice activity detection (VAD) systems by adding language understanding to interrupt decisions, reducing false positives when users pause mid-utterance. Built on Qwen/Qwen2.5-.5B-Instruct ..."
+    },
+    {
+      "title": "Solving end-of-turn detection: LiveKit Turn Detector v1.0",
+      "url": "https://livekit.com/blog/solving-end-of-turn-detection",
+      "snippet": "LiveKit Turn Detector v1 listens to speech directly instead of waiting on a transcript, fusing semantic and acoustic understanding for state-of-the-art end-of-turn detection across 14 languages. With v1, turn detection is a solved problem for agents built on LiveKit."
+    },
+    {
+      "title": "Turn-Detection-Model-Whisper-Tiny-Dual-Scale-Attention ... - GitHub",
+      "url": "https://github.com/Mayankpratapsingh022/Turn-Detection-Model-Whisper-Tiny-Dual-Scale-Attention-Classification-Head-for-Low-Latency-Voice-AI/blob/main/src/turn_detector/__init__.py",
+      "snippet": "Low-latency, audio-native turn detection model using Whisper Tiny with a dual-scale attention classification head. Optimized for Hindi, Hinglish and Indian English, including fillers, incomplete thoughts and natural pauses."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mario-rc/multi-domain-rm-skywork-qwen-3-8b-it",
+  "slug": "mario-rc-multi-domain-rm-skywork-qwen-3-8b-it",
+  "author": "mario-rc",
+  "url": "https://huggingface.co/mario-rc/multi-domain-rm-skywork-qwen-3-8b-it",
+  "created_at": "2026-06-04T17:24:16.000Z",
+  "updated_at": "2026-08-22T22:58:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "reward-model",
+    "preference-modeling",
+    "rlhf",
+    "multi-domain",
+    "coherence",
+    "commonsense",
+    "empathy",
+    "multicultural",
+    "shared-prompt-gating",
+    "text-classification",
+    "custom_code",
+    "en",
+    "dataset:RLHFlow/UltraFeedback-preference-standard",
+    "dataset:allenai/reward-bench",
+    "base_model:Skywork/Skywork-Reward-V2-Qwen3-8B",
+    "base_model:finetune:Skywork/Skywork-Reward-V2-Qwen3-8B",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 7568763945,
+  "parameters_human": "7.57B",
+  "storage_bytes": 30286812132,
+  "storage_human": "30.3 GB",
+  "base_model": "Skywork/Skywork-Reward-V2-Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mario-rc/multi-domain-rm-skywork-qwen-3-8b-it · Hugging Face",
+      "url": "https://huggingface.co/mario-rc/multi-domain-rm-skywork-qwen-3-8b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "multi-domain-rm - a mario-rc Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mario-rc/multi-domain-rm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Mario-RC/multi-domain-reward-model · GitHub",
+      "url": "https://github.com/Mario-RC/multi-domain-reward-model",
+      "snippet": "The model learns 23 fine-grained attributes spanning these domains and combines them through a prompt-conditioned gating network to produce a single preference score, enabling reward evaluation that captures domain-specific nuances."
+    },
+    {
+      "title": "GitHub - SkyworkAI/Skywork: Skywork series models are pre-trained on 3 ...",
+      "url": "https://github.com/SkyworkAI/Skywork",
+      "snippet": "The characteristics of the Skywork open-source project are:： Skywork-13B-Base: The model was trained on a high-quality cleaned dataset consisting of 3.2 trillion multilingual data (mainly Chinese and English) and code. It has demonstrated the best performance among models of similar scale in various evaluations and benchmark tests."
+    },
+    {
+      "title": "Skywork-Reward-V2-Qwen3-0.6B · Models",
+      "url": "https://www.modelscope.cn/models/Skywork/Skywork-Reward-V2-Qwen3-0.6B",
+      "snippet": "Available in eight models across multiple sizes, with the smallest 0.6B variant, Skywork-Reward-V2-Qwen3-.6B, nearly matching the average performance of our previous best model, Skywork-Reward-Gemma-2-27B-v0.2. The largest 8B version, Skywork-Reward-V2-Llama-3.1-8B, surpasses all existing reward models across all benchmarks on average."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ranjithkumar111/32_CLASS_SCIN",
+  "slug": "ranjithkumar111-32_class_scin",
+  "author": "ranjithkumar111",
+  "url": "https://huggingface.co/ranjithkumar111/32_CLASS_SCIN",
+  "created_at": "2026-08-22T19:54:34.000Z",
+  "updated_at": "2026-08-22T19:55:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2429224,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ranjithkumar111 (ranjithkumar445) - Hugging Face",
+      "url": "https://huggingface.co/ranjithkumar111",
+      "snippet": "User profile of ranjithkumar445 on Hugging Face"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — August 2026 | 399 Models ...",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 224 ranked models and 399 tracked AI models across 402 benchmarks with BenchLM scoring, pricing, context window, and runtime tradeoffs. Rankings and head-to-head comparisons for GPT-5, Claude, Gemini, DeepSeek, Llama, and more."
+    },
+    {
+      "title": "Ranjith Kumar K.N · Senior AI Engineer",
+      "url": "https://ranjithkumarkn.online/",
+      "snippet": "I&#x27;m Ranjith Kumar K.N — a Senior AI Engineer specializing in autonomous multi-agent systems, frontier model orchestration, and enterprise MLOps pipelines that operate at production scale. Currently at Analytical Intelligence International, I architect cognitive AI systems using Gemini, GPT-4, and Claude — orchestrated through AutoGen and Google&#x27;s Agent Development Kit. I&#x27;ve driven a 40% ..."
+    },
+    {
+      "title": "ranjithkumar111 (ranjithkumar445) - Hugging Face",
+      "url": "https://huggingface.co/ranjithkumar111/spaces",
+      "snippet": "Smart EV Charger - AI Charging Advisor ⚡ ranjithkumar111 Jun 24 Sleeping"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

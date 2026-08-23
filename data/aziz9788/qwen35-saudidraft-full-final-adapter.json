@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "aziz9788/qwen35-saudidraft-full-final-adapter",
+  "slug": "aziz9788-qwen35-saudidraft-full-final-adapter",
+  "author": "aziz9788",
+  "url": "https://huggingface.co/aziz9788/qwen35-saudidraft-full-final-adapter",
+  "created_at": "2026-08-22T19:16:38.000Z",
+  "updated_at": "2026-08-22T19:17:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3.5",
+    "lora",
+    "unsloth",
+    "saudi-llm",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 279783791,
+  "storage_human": "280 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aziz9788/qwen35-4b-e11-dpo-v3 · Hugging Face",
+      "url": "https://huggingface.co/aziz9788/qwen35-4b-e11-dpo-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aziz9788/qwen35-4b-t13-opd-rkl-ckpt50 · Hugging Face",
+      "url": "https://huggingface.co/aziz9788/qwen35-4b-t13-opd-rkl-ckpt50",
+      "snippet": "Qwen3.5-4B T13 — merged parent + hybrid OPD reverse-KL (step 50) Full BF16 merge of merged_t13_ckpt12 + hybrid OPD reverse-KL LoRA adapter (checkpoint-50). No separate LoRA download — load this repo directly. Training: dual-GPU on-policy reverse-KL (k1), hybrid teachers (Qwen3.7-Flash + Qwen3.8-Max escalation), STEM1500+IF1000 prompts."
+    },
+    {
+      "title": "Qwen3.5 Model Series 2026: Complete Guide to Flash, 27B, 35B-A3B & 122B ...",
+      "url": "https://a2aprotocol.ai/insights/2026-qwen35-models-guide",
+      "snippet": "Qwen3.5 Model Series 2026: Complete Guide to Flash, 27B, 35B-A3B & 122B-A10B TL;DR: Alibaba&#x27;s Qwen team dropped a bombshell in February 2026 with the Qwen3.5 series — four powerful models (Qwen3.5-Flash, Qwen3.5-27B, Qwen3.5-35B-A3B, and Qwen3.5-122B-A10B) that bring native multimodal intelligence, 256K+ context windows, and MoE efficiency that defies the parameter count. The 35B model with ..."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "The official Qwen API is provided by Alibaba Cloud Model Studio. Alibaba Cloud Model Studio provides first-class support for Qwen3.5, which is compatible with various API specifications, including OpenAI and Anthropic, making it simple for you to try Qwen3.5 in your own applications."
+    },
+    {
+      "title": "GitHub - quivent/autoawq-qwen35: Qwen3.5 (qwen3_5) support for AutoAWQ ...",
+      "url": "https://github.com/quivent/autoawq-qwen35",
+      "snippet": "Adds qwen3_5 model support to AutoAWQ — enabling AWQ quantization of Qwen3.5-27B and its variants. Qwen3.5 has a hybrid architecture with alternating full-attention (standard transformer) and linear-attention (GDN/DeltaNet) decoder layers, plus vision encoder and MTP (Multi-Token Prediction) heads. This patch handles all of it."
+    }
+  ]
+}

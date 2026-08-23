@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "deeprcurs-staff/OICIO",
+  "slug": "deeprcurs-staff-oicio",
+  "author": "deeprcurs-staff",
+  "url": "https://huggingface.co/deeprcurs-staff/OICIO",
+  "created_at": "2026-08-22T23:59:15.000Z",
+  "updated_at": "2026-08-23T00:30:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1178623988,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deeprcurs-staff/OICIO · Hugging Face",
+      "url": "https://huggingface.co/deeprcurs-staff/OICIO",
+      "snippet": "deeprcurs-staff / OICIO like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "deepRcurs [dR] · GitHub",
+      "url": "https://github.com/deepRcurs/",
+      "snippet": "Recursive depth for AI-native environments. Desktop · Mobile · Agent Ecosystems - deepRcurs [dR]"
+    },
+    {
+      "title": "deeprcurs/README.md at main · deepRcurs/deeprcurs · GitHub",
+      "url": "https://github.com/deepRcurs/deeprcurs/blob/main/README.md",
+      "snippet": "A Recursive Coding Agent Environtment . Contribute to deepRcurs/deeprcurs development by creating an account on GitHub."
+    },
+    {
+      "title": "Guide to OCI AI Certification: From Machine Learning Basics to Advanced ...",
+      "url": "https://dev.to/davo_man/guide-to-oci-ai-certification-from-machine-learning-basics-to-advanced-neural-networks-a8d",
+      "snippet": "Preparing for the Oracle Cloud Infrastructure (OCI) AI certification requires understanding a wide range of concepts, from foundational machine learning principles to cutting-edge deep learning architectures."
+    },
+    {
+      "title": "Module 3: Deep Learning Foundations | jganggini/oci-certification-ai ...",
+      "url": "https://deepwiki.com/jganggini/oci-certification-ai-foundations-associate/3.3-module-3:-deep-learning-foundations",
+      "snippet": "This document covers the theoretical foundations of Deep Learning, representing 10% of the OCI AI Foundations Associate certification exam. It explains neural network architectures, training processes, and specialized models for different data types."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Xenna/cielvox2-tts-0.6b-customvoice-GGUF",
+  "slug": "xenna-cielvox2-tts-0-6b-customvoice-gguf",
+  "author": "Xenna",
+  "url": "https://huggingface.co/Xenna/cielvox2-tts-0.6b-customvoice-GGUF",
+  "created_at": "2026-08-21T17:27:25.000Z",
+  "updated_at": "2026-08-22T20:01:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "ggml",
+  "languages": [
+    "en",
+    "zh",
+    "de",
+    "fr",
+    "it",
+    "es",
+    "pt",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "tts",
+    "text-to-speech",
+    "stelnettts",
+    "cielvox2-tts",
+    "en",
+    "zh",
+    "de",
+    "fr",
+    "it",
+    "es",
+    "pt",
+    "ja",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 66,
+  "trending_score": 0,
+  "parameters": 905788672,
+  "parameters_human": "905.8M",
+  "storage_bytes": 967980192,
+  "storage_human": "968 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xenna/cielvox2-tts-0.6b-base-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Xenna/cielvox2-tts-0.6b-base-GGUF",
+      "snippet": "/ cielvox2-tts-.6b-base-GGUF like 0 GGUF Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - GGUF Model size 0.9B params Architecture qwen3tts Hardware compatibility Log In to add your hardware 8-bit Q8_0986 MB Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋 ..."
+    },
+    {
+      "title": "cielvox2/README.md at main · stelnetxcis-create/cielvox2",
+      "url": "https://github.com/stelnetxcis-create/cielvox2/blob/main/README.md",
+      "snippet": "Use cielvox2-tts for 0.6b base, cielvox2-tts-1.7b-base for 1.7b base, cielvox2-tts-customvoice for presets, cielvox2-tts-1.7b-voicedesign for voice design. -m — path to the model GGUF. --codec-model — path to the tokenizer/codec GGUF. Same file works for all modes. --voice — for base modes: path to reference .wav. For customvoice: preset ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+    },
+    {
+      "title": "cstr/qwen3-tts-0.6b-customvoice-GGUF · Hugging Face",
+      "url": "https://huggingface.co/cstr/qwen3-tts-0.6b-customvoice-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models and Voices | mu-zi-lee/qwen3-tts-skill | DeepWiki",
+      "url": "https://deepwiki.com/mu-zi-lee/qwen3-tts-skill/7-models-and-voices",
+      "snippet": "Models and Voices Relevant source files This document provides detailed technical information about the four Qwen3-TTS model types, built-in speaker configurations, and voice generation modes. It covers model selection criteria, speaker characteristics, and the functional differences between custom-voice, voice-design, and voice-clone modes."
+    }
+  ]
+}

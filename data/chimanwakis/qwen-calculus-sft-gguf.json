@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Chimanwakis/qwen-calculus-sft-GGUF",
+  "slug": "chimanwakis-qwen-calculus-sft-gguf",
+  "author": "Chimanwakis",
+  "url": "https://huggingface.co/Chimanwakis/qwen-calculus-sft-GGUF",
+  "created_at": "2026-08-22T20:15:42.000Z",
+  "updated_at": "2026-08-22T20:16:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "unsloth",
+    "qwen2.5-coder",
+    "calculus",
+    "manim",
+    "text-generation",
+    "dataset:Chimanwakis/calculus_manim",
+    "base_model:Chimanwakis/qwen_manim_animation_16bit",
+    "base_model:quantized:Chimanwakis/qwen_manim_animation_16bit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902560,
+  "storage_human": "1.9 GB",
+  "base_model": "Chimanwakis/qwen_manim_animation_16bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chimanwakis/qwen_manim_animation_q4_k_m_v3 · Hugging Face",
+      "url": "https://huggingface.co/Chimanwakis/qwen_manim_animation_q4_k_m_v3",
+      "snippet": "Instructions to use Chimanwakis/qwen_manim_animation_q4_k_m_v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Quantization: the practice of quantizing LLMs with GPTQ, AWQ, as well as the guidance for how to make high-quality quantized GGUF files; Training: the instructions for post-training, including SFT and RLHF (TODO) with frameworks like Axolotl, LLaMA-Factory, etc. Framework: the usage of Qwen with frameworks for application, e.g., RAG, Agent, etc."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "In this work, we introduce Qwen3, the latest series in our foundation model family, Qwen. Qwen3 is a collection of open-weight large language models (LLMs) that achieve state-of-the-art performance across a wide variety of tasks and domains."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    }
+  ]
+}

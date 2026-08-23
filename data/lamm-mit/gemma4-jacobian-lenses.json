@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lamm-mit/gemma4-jacobian-lenses",
+  "slug": "lamm-mit-gemma4-jacobian-lenses",
+  "author": "lamm-mit",
+  "url": "https://huggingface.co/lamm-mit/gemma4-jacobian-lenses",
+  "created_at": "2026-07-11T21:52:27.000Z",
+  "updated_at": "2026-08-23T03:34:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "interpretability",
+    "science",
+    "AI4Science",
+    "en",
+    "arxiv:2607.20058",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2428140477,
+  "storage_human": "2.4 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lamm-mit/gemma4-jacobian-lenses · Hugging Face",
+      "url": "https://huggingface.co/lamm-mit/gemma4-jacobian-lenses",
+      "snippet": "lamm-mit / gemma4-jacobian-lenses like 0 Follow LAMM: MIT Laboratory for Atomistic and Molecular Mechanics 114 English interpretability science AI4Science arxiv:2607.20058 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Reading and Steering Materials Science-Mechanism Representations in an Open-Weight ..."
+    },
+    {
+      "title": "Substrates/README.md at main · lamm-mit/Substrates · GitHub",
+      "url": "https://github.com/lamm-mit/Substrates/blob/main/README.md",
+      "snippet": "lamm-mit/gemma4-jacobian-lenses: the three independently fitted paper-protocol Jacobian lens checkpoints for google/gemma-4-E4B-it (seeds 0-2), together with provenance sidecars that record the corresponding fit and model metadata."
+    },
+    {
+      "title": "GitHub - lamm-mit/Substrates: Code, prompts, protocols, and ...",
+      "url": "https://github.com/lamm-mit/Substrates",
+      "snippet": "lamm-mit/gemma4-jacobian-lenses: the three independently fitted paper-protocol Jacobian lens checkpoints for google/gemma-4-E4B-it (seeds 0-2), together with provenance sidecars that record the corresponding fit and model metadata."
+    },
+    {
+      "title": "Substrates: Reading and Steering Representations in LLMs - a lamm-mit ...",
+      "url": "https://huggingface.co/collections/lamm-mit/substrates-reading-and-steering-representations-in-llms",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Reading and Steering Representations of Materials-Science Mechanisms in ...",
+      "url": "https://arxiv.org/html/2607.20058",
+      "snippet": "All use the same model revision, penultimate target, 25 source layers, and released Jacobian-lens estimator. The checkpoints are stored in the Hugging Face repository lamm-mit/gemma4-jacobian-lenses at recorded revision 37ba15033a42e72bdfbc04815b3fbd37e516fd59."
+    }
+  ]
+}

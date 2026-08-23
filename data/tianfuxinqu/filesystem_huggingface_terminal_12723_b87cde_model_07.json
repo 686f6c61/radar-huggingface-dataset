@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_07",
+  "slug": "tianfuxinqu-filesystem_huggingface_terminal_12723_b87cde_model_07",
+  "author": "TianfuXinqu",
+  "url": "https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b87cde_model_07",
+  "created_at": "2026-08-23T02:17:33.000Z",
+  "updated_at": "2026-08-23T02:17:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e ...",
+      "url": "https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e_digest/viewer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TianfuXinqu/filesystem_huggingface_terminal_playwright_with_chunk_5104 ...",
+      "url": "https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_playwright_with_chunk_5104_07ff0c2a_release_notes/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How an AI Escaped Its Sandbox and Hacked Hugging Face to Cheat on a ...",
+      "url": "https://betterstack.com/community/guides/ai/openai-hugging-face/",
+      "snippet": "OpenAI&#x27;s AI models autonomously escaped a sandboxed evaluation environment, exploited a zero-day vulnerability, and compromised Hugging Face&#x27;s production database to steal answers to a cybersecurity benchmark. Here&#x27;s how the attack unfolded and what it means."
+    },
+    {
+      "title": "OpenAI Says Its A.I. Models Hacked Into Hugging Face, a Digital Library ...",
+      "url": "https://www.nytimes.com/2026/07/21/technology/openai-attack-hugging-face.html",
+      "snippet": "The intrusion into Hugging Face began when OpenAI tested a combination of two of its models, GPT‑5.6 Sol and a more powerful, unreleased model, to see how well the models could chain together ..."
+    },
+    {
+      "title": "Cannot use Hugging Face cache on a read-only filesystem",
+      "url": "https://discuss.huggingface.co/t/cannot-use-hugging-face-cache-on-a-read-only-filesystem/137622",
+      "snippet": "Hello, I&#x27;m having some trouble with getting the huggingface cache to work for my particular use case. I&#x27;ve been setting up kubernetes training for my transformer models, and the way it works is that pods are initialized from a docker image and then I mount a persistent disk with the data. Since pods are initialized from a docker image, any other files relevant for training (e.g. the ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OnePunchMonk101010/dptlab-sdxl-lora-toy-v1",
+  "slug": "onepunchmonk101010-dptlab-sdxl-lora-toy-v1",
+  "author": "OnePunchMonk101010",
+  "url": "https://huggingface.co/OnePunchMonk101010/dptlab-sdxl-lora-toy-v1",
+  "created_at": "2026-08-22T19:39:11.000Z",
+  "updated_at": "2026-08-22T19:39:36.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "dptlab",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 93065304,
+  "storage_human": "93 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yusuke Murata Style v1 - Free AI LORA Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/891731228133190680",
+      "snippet": "A LoRA model trained to generate anime images in Yusuke Murata&#x27;s dynamic, detailed style, inspired by One Punch Man. Use with SDXL 1.0."
+    },
+    {
+      "title": "Awesome SDXL LoRAs - a multimodalart Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/multimodalart/awesome-sdxl-loras",
+      "snippet": "A curated set of amazing Stable Diffusion XL LoRAs (they power the LoRA the Explorer Space)"
+    },
+    {
+      "title": "SDXL AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/sdxl",
+      "snippet": "Generate with SDXL on Civitai — Stability AI&#x27;s high-res open model behind the largest LoRA ecosystem in open image generation. Browse checkpoints, LoRAs & prompts."
+    },
+    {
+      "title": "Top safe LORA models across all platforms - CivArchive",
+      "url": "https://civarchive.com/search?type=LORA",
+      "snippet": "Community-driven archive of AI models from CivitAI - Download deleted LoRA, Checkpoint, VAE, and other AI models for free."
+    },
+    {
+      "title": "Realism Lora By Stable Yogi (SDXL) - v1.0 | Stable Diffusion XL LoRA ...",
+      "url": "https://civitai.com/models/1100721/realism-lora-by-stable-yogi-sdxl",
+      "snippet": "Loving this model? Get the Pro version of my models here for exclusive perks and early access to unique resources. To discuss custom LoRa&#x27;s or mode..."
+    }
+  ]
+}

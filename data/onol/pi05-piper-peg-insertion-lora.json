@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Onol/pi05-piper-peg-insertion-lora",
+  "slug": "onol-pi05-piper-peg-insertion-lora",
+  "author": "Onol",
+  "url": "https://huggingface.co/Onol/pi05-piper-peg-insertion-lora",
+  "created_at": "2026-08-22T08:59:30.000Z",
+  "updated_at": "2026-08-22T23:14:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi0.5",
+    "lora",
+    "piper",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28567026383,
+  "storage_human": "28.6 GB",
+  "base_model": "physical-intelligence/pi0.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Onol/pi05-piper-pick-bowl-into-bag-lora · Hugging Face",
+      "url": "https://huggingface.co/Onol/pi05-piper-pick-bowl-into-bag-lora",
+      "snippet": "Onol / pi05-piper-pick-bowl-into-bag-lora like 0 Robotics openpi pi0.5 lora piper License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new π0.5 Piper Pick-Bowl-Into-Bag LoRA Runtime contract"
+    },
+    {
+      "title": "moriis/pi05_piper · Hugging Face",
+      "url": "https://huggingface.co/moriis/pi05_piper",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world ..."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    },
+    {
+      "title": "GitHub - ldddddddl/pi05",
+      "url": "https://github.com/ldddddddl/pi05",
+      "snippet": "the π₀.₅ model, an upgraded version of π₀ with better open-world generalization trained with knowledge insulation. For all models, we provide base model checkpoints, pre-trained on 10k+ hours of robot data, and examples for using them out of the box or fine-tuning them to your own datasets."
+    }
+  ]
+}

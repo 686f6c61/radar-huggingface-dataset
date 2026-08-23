@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "samueljohn/Llama-3.2-1B-OS-Agent-GGUF",
+  "slug": "samueljohn-llama-3-2-1b-os-agent-gguf",
+  "author": "samueljohn",
+  "url": "https://huggingface.co/samueljohn/Llama-3.2-1B-OS-Agent-GGUF",
+  "created_at": "2026-08-22T21:10:46.000Z",
+  "updated_at": "2026-08-22T21:13:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 807690880,
+  "storage_human": "808 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meta-llama/Llama-3.2-1B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Llama-3.2-1B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "llama3.2",
+      "url": "https://ollama.com/library/llama3.2",
+      "snippet": "The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out). The Llama 3.2 instruction-tuned text only models are optimized for multilingual dialogue use cases, including agentic retrieval and summarization tasks. They outperform many of the available open source and ..."
+    },
+    {
+      "title": "Llama 3.1 is a new state-of-the-art model from Meta available in 8B ...",
+      "url": "https://ollama.com/library/llama3.1",
+      "snippet": "Llama 3.1 405B is the first openly available model that rivals the top AI models when it comes to state-of-the-art capabilities in general knowledge, steerability, math, tool use, and multilingual translation."
+    },
+    {
+      "title": "Llama-3.2-1B-Instruct-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/unsloth/Llama-3.2-1B-Instruct-GGUF",
+      "snippet": "Model Information The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out)."
+    }
+  ]
+}

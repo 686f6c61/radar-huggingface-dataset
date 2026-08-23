@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hesh0629/groot-put_banana_v2",
+  "slug": "hesh0629-groot-put_banana_v2",
+  "author": "hesh0629",
+  "url": "https://huggingface.co/hesh0629/groot-put_banana_v2",
+  "created_at": "2026-08-23T02:05:30.000Z",
+  "updated_at": "2026-08-23T02:06:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:hesh0629/put_banana_v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2724163520,
+  "parameters_human": "2.72B",
+  "storage_bytes": 5448480432,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hesh0629/groot_probe · Hugging Face",
+      "url": "https://huggingface.co/hesh0629/groot_probe",
+      "snippet": "hesh0629 / groot_probe like 0 Robotics LeRobot Safetensors hesh0629/put_banana_v2 groot License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "hesh0629/put_banana_v2 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/hesh0629/put_banana_v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "Model package changed from gr00t_n1d6 to gr00t_n1d7, so codepaths and processor metadata move to the N1.7 namespace. VLM backbone changed from vendored Eagle, nvidia/Eagle-Block2A-2B-v2, to nvidia/Cosmos-Reason2-2B via Qwen3-VL."
+    },
+    {
+      "title": "GR00T Dreams - GitHub",
+      "url": "https://github.com/nvidia/GR00T-dreams",
+      "snippet": "NVIDIA Isaac GR00T-Dreams blueprint generates vast amounts of synthetic trajectory data using NVIDIA Cosmos world foundation models, prompted by a single image and language instructions. This enables robots to learn new tasks in unfamiliar environments without needing specific teleoperation data. As a first step, we release DreamGen: Unlocking Generalization in Robot Learning through Video ..."
+    },
+    {
+      "title": "Nano Banana 2 - Gemini AI image generator & photo editor",
+      "url": "https://gemini.google/overview/image-generation/",
+      "snippet": "With Nano Banana 2, Gemini&#x27;s AI image generator and photo editor, you can create high-quality images and edit photos into countless new creations."
+    }
+  ]
+}

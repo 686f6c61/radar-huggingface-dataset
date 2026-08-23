@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/WhizReviewer-ML-Pro-123B-GGUF",
+  "slug": "mradermacher-whizreviewer-ml-pro-123b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/WhizReviewer-ML-Pro-123B-GGUF",
+  "created_at": "2026-08-22T19:09:52.000Z",
+  "updated_at": "2026-08-22T20:08:39.000Z",
+  "license": "whizreviewer-pro-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "fr",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "fr",
+    "de",
+    "base_model:WestlakeNLP/WhizReviewer-ML-Pro-123B",
+    "base_model:quantized:WestlakeNLP/WhizReviewer-ML-Pro-123B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122610069504,
+  "parameters_human": "122.61B",
+  "storage_bytes": 114767272512,
+  "storage_human": "114.8 GB",
+  "base_model": "WestlakeNLP/WhizReviewer-ML-Pro-123B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WestlakeNLP/WhizReviewer-ML-Pro-123B · Hugging Face",
+      "url": "https://huggingface.co/WestlakeNLP/WhizReviewer-ML-Pro-123B",
+      "snippet": "WhizReviewer-ML-Pro-123B Model Info The WhizReviewer is a set of generative large language models that have undergone additional supervised training, with sizes of 8B, 70B, and 123B respectively."
+    },
+    {
+      "title": "WestlakeNLP/WhizReviewer-ML-Pro-123B at main - Hugging Face",
+      "url": "https://huggingface.co/WestlakeNLP/WhizReviewer-ML-Pro-123B/tree/main",
+      "snippet": "WestlakeNLP / WhizReviewer-ML-Pro-123B like 0 Text Generation Transformers Safetensors 6 languages doi:10.57967/hf/2884 mistral conversational text-generation-inference Inference Endpoints License:whizreviewer-pro-license (other) Model card FilesFiles and versions Community Train Deploy Use this model"
+    },
+    {
+      "title": "WestlakeNLP/WhizReviewer-ML-Pro-123B - friendli.ai",
+      "url": "https://friendli.ai/models/WestlakeNLP/WhizReviewer-ML-Pro-123B",
+      "snippet": "Run WestlakeNLP/WhizReviewer-ML-Pro-123B with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8 ..."
+    },
+    {
+      "title": "ai-researcher 0.1.0 on PyPI - Libraries.io",
+      "url": "https://libraries.io/pypi/ai-researcher",
+      "snippet": "Documentation WhizReviewer This repository contains the code for inference, detection, and evaluation of the WhizReviewer model, a large language model designed for academic paper review in the field of machine learning."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 26 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

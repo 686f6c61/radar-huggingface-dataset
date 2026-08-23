@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Govid2410/tinyllama-sft-merged",
+  "slug": "govid2410-tinyllama-sft-merged",
+  "author": "Govid2410",
+  "url": "https://huggingface.co/Govid2410/tinyllama-sft-merged",
+  "created_at": "2026-08-23T01:41:05.000Z",
+  "updated_at": "2026-08-23T01:42:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2200119664,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jwyoung0/tinyllama-sft-merged · Hugging Face",
+      "url": "https://huggingface.co/jwyoung0/tinyllama-sft-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TinyLlama/sft at main · jzhang38/TinyLlama · GitHub",
+      "url": "https://github.com/jzhang38/TinyLlama/tree/main/sft",
+      "snippet": "The TinyLlama project is an open endeavor to pretrain a 1.1B Llama model on 3 trillion tokens. - TinyLlama/sft at main · jzhang38/TinyLlama"
+    },
+    {
+      "title": "f10solutions/tiny-llama-merged · Hugging Face",
+      "url": "https://huggingface.co/f10solutions/tiny-llama-merged",
+      "snippet": "f10solutions / tiny-llama-merged like 0 Text Generation Transformers Safetensors English llama text-generation-inference unsloth trl sft 4-bit precision bitsandbytes License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "[2401.02385] TinyLlama: An Open-Source Small Language Model",
+      "url": "https://arxiv.org/abs/2401.02385",
+      "snippet": "We present TinyLlama, a compact 1.1B language model pretrained on around 1 trillion tokens for approximately 3 epochs. Building on the architecture and tokenizer of Llama 2, TinyLlama leverages various advances contributed by the open-source community (e.g., FlashAttention and Lit-GPT), achieving better computational efficiency. Despite its relatively small size, TinyLlama demonstrates ..."
+    },
+    {
+      "title": "tinyllama-sft-merged API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/jwyoung0/tinyllama-sft-merged",
+      "snippet": "Run tinyllama-sft-merged with FriendliAI inference. This is the model card of a 🤗 transformers model that has been pushed on the Hub."
+    }
+  ]
+}

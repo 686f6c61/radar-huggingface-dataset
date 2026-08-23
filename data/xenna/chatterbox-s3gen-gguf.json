@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Xenna/chatterbox-s3gen-GGUF",
+  "slug": "xenna-chatterbox-s3gen-gguf",
+  "author": "Xenna",
+  "url": "https://huggingface.co/Xenna/chatterbox-s3gen-GGUF",
+  "created_at": "2026-08-22T20:06:48.000Z",
+  "updated_at": "2026-08-22T20:23:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "chatterbox",
+  "languages": [],
+  "tags": [
+    "chatterbox",
+    "gguf",
+    "audio",
+    "tts",
+    "codec",
+    "ggml",
+    "cielvox2",
+    "text-to-speech",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 264026933,
+  "parameters_human": "264.0M",
+  "storage_bytes": 364590688,
+  "storage_human": "365 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chatterbox - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/chatterbox.html",
+      "snippet": "Download Chatterbox GGUF model. 14.7 GB, 1,936 downloads, 55 likes."
+    },
+    {
+      "title": "s3gen.safetensors · ResembleAI/chatterbox at main - Hugging Face",
+      "url": "https://huggingface.co/ResembleAI/chatterbox/blob/main/s3gen.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - resemble-ai/chatterbox: SoTA open-source TTS",
+      "url": "https://github.com/resemble-ai/chatterbox",
+      "snippet": "Chatterbox TTS Made with ♥️ by Chatterbox is a family of state-of-the-art, open-source text-to-speech models by Resemble AI."
+    },
+    {
+      "title": "models/tts/chatterbox/s3gen.safetensors · Sean-Bradley/ComfyUI at main",
+      "url": "https://huggingface.co/Sean-Bradley/ComfyUI/blob/main/models/tts/chatterbox/s3gen.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "S3Gen Model Architecture | resemble-ai/chatterbox | DeepWiki",
+      "url": "https://deepwiki.com/resemble-ai/chatterbox/5-s3gen-model-architecture",
+      "snippet": "The S3Gen model architecture implements a two-stage speech synthesis pipeline that converts S3 speech tokens into high-quality audio waveforms. This system is the core synthesis engine for both text-to-speech and voice conversion in ChatterboxTTS, operating at a 24kHz sample rate with support for streaming inference."
+    }
+  ]
+}

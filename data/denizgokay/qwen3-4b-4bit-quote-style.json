@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DenizGokay/Qwen3-4B-4bit-quote-style",
+  "slug": "denizgokay-qwen3-4b-4bit-quote-style",
+  "author": "DenizGokay",
+  "url": "https://huggingface.co/DenizGokay/Qwen3-4B-4bit-quote-style",
+  "created_at": "2026-08-22T23:37:50.000Z",
+  "updated_at": "2026-08-22T23:38:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:mlx-community/Qwen3-4B-4bit",
+    "base_model:quantized:mlx-community/Qwen3-4B-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 628676096,
+  "parameters_human": "628.7M",
+  "storage_bytes": 2274445067,
+  "storage_human": "2.3 GB",
+  "base_model": "mlx-community/Qwen3-4B-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B AI Model Profile: Sources, Access, Pricing Notes",
+      "url": "https://kingy.ai/ai-models/qwen3-4b/",
+      "snippet": "Source-backed Qwen3-4B profile with provider docs, access notes, pricing caveat, benchmark caveat, and last verified date. Includes access notes, source..."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen: Qwen3 4B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3-4b-04-28",
+      "snippet": "Qwen3-4B is a 4 billion parameter dense language model from the Qwen3 series, designed to support both general-purpose and reasoning-intensive tasks. It introduces a dual-mode architecture—thinking and non-thinking—allowing dynamic switching between high-precision logical reasoning and efficient dialogue generation. This makes it well-suited for multi-turn chat, instruction following, and ..."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    }
+  ]
+}

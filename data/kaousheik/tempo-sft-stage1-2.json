@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Kaousheik/tempo-sft-stage1-2",
+  "slug": "kaousheik-tempo-sft-stage1-2",
+  "author": "Kaousheik",
+  "url": "https://huggingface.co/Kaousheik/tempo-sft-stage1-2",
+  "created_at": "2026-08-22T20:26:26.000Z",
+  "updated_at": "2026-08-22T20:30:05.000Z",
+  "license": "nvidia-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "audioflamingo3",
+    "audio",
+    "timestamping",
+    "temporal-grounding",
+    "speaker-diarization",
+    "dense-audio-captioning",
+    "music-captioning",
+    "large-audio-language-model",
+    "audio-text-to-text",
+    "dataset:Kaousheik/tempo",
+    "base_model:nvidia/audio-flamingo-3",
+    "base_model:finetune:nvidia/audio-flamingo-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8271605248,
+  "parameters_human": "8.27B",
+  "storage_bytes": 16555212385,
+  "storage_human": "16.6 GB",
+  "base_model": "nvidia/audio-flamingo-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaousheik Jayakumar",
+      "url": "https://kaousheik-26.github.io/",
+      "snippet": "I am a 1st year Master&#x27;s student in Computer Science at University of Maryland, College Park. I work audio-visual understanding at Gamma Lab and PIRL lab under the guidance of Prof. Dinesh Manocha and Prof. Ramani Duraiswami I completed my undergrad from IIT Madras where I had the opportunity to work with Prof. Umesh at the SPRING Lab on multilingual ASR systems for Indian languages. I was ..."
+    },
+    {
+      "title": "Kaousheik (Jayakumar) - Hugging Face",
+      "url": "https://huggingface.co/Kaousheik/models",
+      "snippet": "Organizations Kaousheik&#x27;s models1 Sort: Recently updated Kaousheik/hanabi-gpt-oss 120B•Updated Dec 30, 2025• 1"
+    },
+    {
+      "title": "Kaousheik (Jayakumar) - Hugging Face",
+      "url": "https://huggingface.co/Kaousheik",
+      "snippet": "Organizations models1 Kaousheik/hanabi-gpt-oss 120B•Updated Dec 30, 2025• 2 datasets2"
+    },
+    {
+      "title": "Research - kaousheik-26.github.io",
+      "url": "https://kaousheik-26.github.io/research/",
+      "snippet": "A Closer Look at Failure Modes in Temporal Understanding of Large Audio-Language Models LALMs consistently fail at foundational temporal tasks — identifying which sound started first, ended last, or lasted longest. We introduce a 1,657-question benchmark for mechanistic diagnosis and find that the problem isn&#x27;t just modality imbalance: redistributing attention across audio tokens (scaling ..."
+    },
+    {
+      "title": "TEMPO: Temporally-grounded Multi-task Post-training for Large Audio ...",
+      "url": "https://openreview.net/pdf?id=LoXjHBlPEd",
+      "snippet": "We present TEMPO (Temporally-grounded Multi-task Post-training), the first unified model to handle audio, speech and music timestamping tasks. Our core contribution is a supervised fine-tuning (SFT) stage built on three innova-tions: atomic timestamp tokens, a time-aware projector that injects sinusoidal wall-clock en-codings into audio frame ..."
+    }
+  ]
+}

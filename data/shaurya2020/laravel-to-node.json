@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Shaurya2020/laravel-to-node",
+  "slug": "shaurya2020-laravel-to-node",
+  "author": "Shaurya2020",
+  "url": "https://huggingface.co/Shaurya2020/laravel-to-node",
+  "created_at": "2026-08-22T21:37:14.000Z",
+  "updated_at": "2026-08-22T21:39:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laravel to Node.js Migration Guide for Scalable Apps",
+      "url": "https://www.addwebsolution.com/blog/migrate-laravel-to-nodejs",
+      "snippet": "Learn when and how to migrate from Laravel to Node.js for AI-driven, real-time, and scalable applications with a practical migration roadmap."
+    },
+    {
+      "title": "GitHub - laravel/ai: The Laravel AI SDK provides a unified, expressive ...",
+      "url": "https://github.com/laravel/ai",
+      "snippet": "The Laravel AI SDK provides a unified, expressive API for interacting with AI providers such as OpenAI, Anthropic, Gemini, and more. With the AI SDK, you can build intelligent agents with tools and structured output, generate images, synthesize and transcribe audio, create vector embeddings, and much more — all using a consistent, Laravel-friendly interface."
+    },
+    {
+      "title": "Laravel AI SDK - Build AI Apps with Laravel | Laravel - The clean stack ...",
+      "url": "https://laravel.com/ai",
+      "snippet": "Laravel is a framework for building modern web apps and AI agents. Expressive syntax, built-in tools, and everything you need to ship fast."
+    },
+    {
+      "title": "Which AI Model Is Best for Laravel?",
+      "url": "https://laravel.com/blog/which-ai-model-is-best-for-laravel",
+      "snippet": "We benchmarked 6 AI models on 17 real Laravel tasks, with and without Laravel Boost. See which model wins, which fails, and by how much."
+    },
+    {
+      "title": "Laravel AI Integration Tutorial: Complete | JetThoughts Blog",
+      "url": "https://jetthoughts.com/blog/laravel-ai-integration-tutorial-complete-guide/",
+      "snippet": "Learn Laravel AI integration with OpenAI PHP in 2025. Complete tutorial with queue jobs, testing, and 15+ production code examples. Build AI-powered Laravel…"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Muse-Glimmer-30B-Uncensored-ROCmFP4-GGUF",
+  "slug": "kingjones777-muse-glimmer-30b-uncensored-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Muse-Glimmer-30B-Uncensored-ROCmFP4-GGUF",
+  "created_at": "2026-08-22T23:28:18.000Z",
+  "updated_at": "2026-08-22T23:32:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "gfx1151",
+    "uncensored",
+    "abliterated",
+    "dflash",
+    "speculative-decoding",
+    "image-text-to-text",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:quantized:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 81479997216,
+  "storage_human": "81.5 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingjones777/Muse-Glimmer-30B-DFlash-Q4_0_ROCMFP4_STRIX-GGUF - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Muse-Glimmer-30B-DFlash-Q4_0_ROCMFP4_STRIX-GGUF",
+      "snippet": "A ROCmFP4 quantisation of Meta&#x27;s Muse-Glimmer-30B for AMD Strix Halo (gfx1151) unified-memory machines, shipped as a complete bundle: model + DFlash speculative drafter + vision projector."
+    },
+    {
+      "title": "kingjones777/Muse-Glimmer-30B-ROCmFP4-Strix-Halo-DFlash-GGUF - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Muse-Glimmer-30B-ROCmFP4-Strix-Halo-DFlash-GGUF",
+      "snippet": "Four ROCmFP4 quantisations of Meta&#x27;s Muse-Glimmer-30B built for AMD Ryzen AI Max+ 395 / Radeon 8060S / gfx1151, bundled with the DFlash speculative drafter and vision projector. ROCmFP4 is a runtime tensor format that exists only in the ROCmFPX fork of llama.cpp; Muse Glimmer support exists only in current upstream — this build ports the model forward into the ROCmFPX base so the two can meet."
+    },
+    {
+      "title": "Muse Glimmer - Meta",
+      "url": "https://developer.meta.com/ai/models/muse-glimmer/",
+      "snippet": "An open 30B model for always-on local agents. Runs on a single GPU, Apache 2.0 licensed. Tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b/modelcard",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, with native tool-calling and separate reasoning output."
+    },
+    {
+      "title": "Muse Glimmer — Meta&#x27;s 30B AI Model for Your Laptop",
+      "url": "https://museglimmer.site/",
+      "snippet": "Muse Glimmer is Meta&#x27;s open-weight 30B model that runs on one consumer GPU. Free on Hugging Face, agentic capable, and built for local-first AI workflows."
+    }
+  ]
+}

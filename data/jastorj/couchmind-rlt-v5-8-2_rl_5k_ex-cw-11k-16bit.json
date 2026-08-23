@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jastorj/couchmind-rlt-v5.8.2_rl_5K_ex-cw-11K-16bit",
+  "slug": "jastorj-couchmind-rlt-v5-8-2_rl_5k_ex-cw-11k-16bit",
+  "author": "jastorj",
+  "url": "https://huggingface.co/jastorj/couchmind-rlt-v5.8.2_rl_5K_ex-cw-11K-16bit",
+  "created_at": "2026-08-23T03:24:02.000Z",
+  "updated_at": "2026-08-23T03:29:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-to-sql",
+    "nl2sqlpp",
+    "code",
+    "sql",
+    "fine-tuned",
+    "unsloth",
+    "lora",
+    "en",
+    "base_model:jastorj/couchmind-v5.8.2_cold_start-cw-26K-16bit",
+    "base_model:adapter:jastorj/couchmind-v5.8.2_cold_start-cw-26K-16bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694281,
+  "storage_human": "15.2 GB",
+  "base_model": "jastorj/couchmind-v5.8.2_cold_start-cw-26K-16bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "couchmind-rlt-v5.8.1_rl_5K_ex-cw-11K-lora - Hugging Face",
+      "url": "https://huggingface.co/jastorj/couchmind-rlt-v5.8.1_rl_5K_ex-cw-11K-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jastorj/couchmind-rlt-v5.8.0.1_rl-cw-11K-16bit · Hugging Face",
+      "url": "https://huggingface.co/jastorj/couchmind-rlt-v5.8.0.1_rl-cw-11K-16bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Currency Converter - Currency Exchange | Xe",
+      "url": "https://www.xe.com/currencyconverter/",
+      "snippet": "Xe&#x27;s currency converter tool makes it easy to check live exchange rates, as well as convert your money with currency exchange across 130+ currencies!"
+    },
+    {
+      "title": "Midjourney",
+      "url": "https://www.midjourney.com/",
+      "snippet": "An independent research lab exploring new mediums of thought and expanding the imaginative powers of the human species."
+    }
+  ]
+}

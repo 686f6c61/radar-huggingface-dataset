@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Bluebornsongs3/New",
+  "slug": "bluebornsongs3-new",
+  "author": "Bluebornsongs3",
+  "url": "https://huggingface.co/Bluebornsongs3/New",
+  "created_at": "2026-08-22T21:41:40.000Z",
+  "updated_at": "2026-08-22T21:41:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bluebornsongs3 (NVIDIA) - Hugging Face",
+      "url": "https://huggingface.co/Bluebornsongs3/models",
+      "snippet": "Org profile for NVIDIA on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Bluebornsongs3 - GitHub",
+      "url": "https://github.com/Bluebornsongs3/",
+      "snippet": "Uh oh! Bluebornsongs3/CATHLEEN-ANN-TICO-&#x27;s past year of commit activity 1 Apache-2.0 5 0 0 Jul 15, 2026"
+    },
+    {
+      "title": "Bluebornsongs3 repositories · GitHub",
+      "url": "https://github.com/orgs/Bluebornsongs3/repositories",
+      "snippet": "ProTip! When viewing an organization&#x27;s repositories, you can use the props. filter to filter by custom property."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model cards — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/",
+      "snippet": "Model cards Simple, structured overviews of how an advanced AI model was designed and evaluated."
+    }
+  ]
+}

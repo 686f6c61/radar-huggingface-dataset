@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jinwah/Xox",
+  "slug": "jinwah-xox",
+  "author": "Jinwah",
+  "url": "https://huggingface.co/Jinwah/Xox",
+  "created_at": "2026-08-23T01:27:08.000Z",
+  "updated_at": "2026-08-23T01:27:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jinwah (Junwa) - Hugging Face",
+      "url": "https://huggingface.co/Jinwah",
+      "snippet": "Sort: Recently updated. Running . 1. Jinwah. 🌌. Launch interactive Python apps in your browser. Jinwah Mar 12. Sleeping . Agents. Finegrain Image Enhancer"
+    },
+    {
+      "title": "imgfig — figure out the AI model behind any image",
+      "url": "https://imgfig.com/",
+      "snippet": "fig img fig figure out the AI model behind any image Sign in Drop an AI image — find the Civitai checkpoints & LoRAs that make that look. Works even if Reddit or Instagram stripped the metadata. Drag & drop an image, or click to choose Show NSFW models (18+) — previews stay censored; model names may be explicit Free tool."
+    },
+    {
+      "title": "s_xox_ - Best AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/u/970722060101802724",
+      "snippet": "Explore s_xox_&#x27;s AI creations on TENSOR. I gen mostly for my j.ai personas (s_xox_) Use my stuff as you wish! But please credit, I&#x27;d love to see! ♡"
+    },
+    {
+      "title": "LewdTube - Virtual Webcam Models, VR Camgirls, LewdTubers, Adult ...",
+      "url": "https://www.lewdtube.com/",
+      "snippet": "Directory of Virtual Cam Models, Adult Vtubers, and Hentai Streamers"
+    },
+    {
+      "title": "Xox_AI_xox Webcam Model Profile | sc7.com",
+      "url": "https://sc7.com/xox_AI_xox/profile",
+      "snippet": "Xox_AI_xox Cam Model Official Profile Page: Bio, Contact Info, 0 Photos, 0 Videos ️"
+    }
+  ]
+}

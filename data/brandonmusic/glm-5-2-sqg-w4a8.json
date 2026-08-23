@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "brandonmusic/GLM-5.2-SQG-W4A8",
+  "slug": "brandonmusic-glm-5-2-sqg-w4a8",
+  "author": "brandonmusic",
+  "url": "https://huggingface.co/brandonmusic/GLM-5.2-SQG-W4A8",
+  "created_at": "2026-08-12T17:19:07.000Z",
+  "updated_at": "2026-08-23T01:41:31.000Z",
+  "license": "glm-5.2-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "glm",
+    "sqg",
+    "w4a8",
+    "bmm-law",
+    "mixture-of-experts",
+    "blackwell",
+    "text-generation",
+    "conversational",
+    "dataset:brandonmusic/GLM-5.2-BMM-Law-SQG-Hessians",
+    "dataset:brandonmusic/GLM-5.2-BMM-Law-SQG-Hessians-Canonical",
+    "arxiv:2406.11235",
+    "arxiv:2402.04396",
+    "base_model:zai-org/GLM-5.2",
+    "base_model:quantized:zai-org/GLM-5.2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 178,
+  "trending_score": 0,
+  "parameters": 171506198528,
+  "parameters_human": "171.51B",
+  "storage_bytes": 343132071532,
+  "storage_human": "343.1 GB",
+  "base_model": "zai-org/GLM-5.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brandonmusic/GLM-5.2-SQG-W4A8 at main - Hugging Face",
+      "url": "https://huggingface.co/brandonmusic/GLM-5.2-SQG-W4A8/tree/main",
+      "snippet": "conversational License:glm-5.2-license Model card FilesFiles and versions xet Community Copy to bucket new main GLM-5.2-SQG-W4A8 343 GB Ctrl+K Ctrl+K 1 contributor History:8 commits brandonmusic Add files using upload-large-folder tool 593dd0d verified10 days ago .download-complete.json 335 BytesAdd files using upload-large-folder tool10 days ..."
+    },
+    {
+      "title": "direct-bf16-00064-of-00282.safetensors · brandonmusic/GLM-5.2-SQG-W4A8 ...",
+      "url": "https://huggingface.co/brandonmusic/GLM-5.2-SQG-W4A8/blob/main/direct-bf16-00064-of-00282.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - zai-org/GLM-5: GLM-5: From Vibe Coding to Agentic Engineering",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.1 is our next-generation flagship model for agentic engineering, with significantly stronger coding capabilities than its predecessor. It achieves state-of-the-art performance on SWE-Bench Pro and leads GLM-5 by a wide margin on NL2Repo (repo generation) and Terminal-Bench 2.0 (real-world terminal tasks). But the most meaningful leap goes beyond first-pass performance. Previous models ..."
+    },
+    {
+      "title": "GLM-5.2: Built for Long-Horizon Tasks - z.ai",
+      "url": "https://z.ai/blog/glm-5.2",
+      "snippet": "GLM-5.2 also introduces effort level control, enabling users to explicitly balance model capability against task execution speed and computational cost. As shown in the figure, GLM-5.2 delivers substantially stronger agentic coding performance than GLM-5.1 at comparable token budgets, with its capability roughly positioned between Claude Opus 4.7 and Claude Opus 4.8 under similar token ..."
+    },
+    {
+      "title": "GLM-5.2 | Modular",
+      "url": "https://www.modular.com/models/glm-5-2",
+      "snippet": "GLM-5.2 is Zhipu AI&#x27;s newest open-weights model, optimized for coding, agentic workloads, and sustained execution of ultra-long-horizon tasks. With 754B total parameters (~40B active) and expanded to a 1M-token context window, it is designed for long-running agent tasks, large coding workloads, and long-context understanding."
+    }
+  ]
+}

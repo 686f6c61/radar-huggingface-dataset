@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AbrarDev/AbrarDev-CodeFix-v8-Adapter",
+  "slug": "abrardev-abrardev-codefix-v8-adapter",
+  "author": "AbrarDev",
+  "url": "https://huggingface.co/AbrarDev/AbrarDev-CodeFix-v8-Adapter",
+  "created_at": "2026-08-22T22:24:16.000Z",
+  "updated_at": "2026-08-22T22:26:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:AbrarDev/AbrarDev-CodeFix-3B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "base_model:AbrarDev/AbrarDev-CodeFix-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 734942329,
+  "storage_human": "735 MB",
+  "base_model": "AbrarDev/AbrarDev-CodeFix-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbrarDev-CodeFix-3B-Adapter - Hugging Face",
+      "url": "https://huggingface.co/AbrarDev/AbrarDev-CodeFix-3B-Adapter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Peter-Limburg/CodeFix: AI debugging assistant that finds and ...",
+      "url": "https://github.com/Peter-Limburg/CodeFix",
+      "snippet": "AI debugging assistant that finds and fixes code issues with confidence scores. Built as lean MVP with expandable architecture. - Peter-Limburg/CodeFix"
+    },
+    {
+      "title": "GitHub - YangLiu68/CodeFix: CodeFix is an AI-powered coding agent that ...",
+      "url": "https://github.com/YangLiu68/CodeFix",
+      "snippet": "CodeFix is an AI-powered coding agent that generates, edits, and debugs code by executing tools, running commands, and iteratively fixing errors through a multi-step workflow using GLM 5.1."
+    },
+    {
+      "title": "AI CodeFix: Automated Remediation Solution for AI-Generated Code",
+      "url": "https://www.sonarsource.com/solutions/ai/ai-codefix/",
+      "snippet": "AI CodeFix automatically fixes code vulnerabilities using AI, reducing developer workload. Trusted by 7M+ developers. Start your free trial today."
+    },
+    {
+      "title": "AI CodeFix | AC/DC | Sonar Documentation",
+      "url": "https://docs.sonarsource.com/agent-centric-development-cycle/in-your-long-living-branches-the-code-maintenance-loop/ai-codefix",
+      "snippet": "Overview AI CodeFix solves issues in the code maintenance loop of the Agent Centric Development Cycle. Sonar&#x27;s AI CodeFix uses a large language model (LLM) to automatically generate AI-driven code fixes for the issues discovered by SonarQube Cloud or SonarQube Server."
+    }
+  ]
+}

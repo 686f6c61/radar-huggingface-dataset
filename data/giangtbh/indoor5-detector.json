@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "giangtbh/indoor5-detector",
+  "slug": "giangtbh-indoor5-detector",
+  "author": "giangtbh",
+  "url": "https://huggingface.co/giangtbh/indoor5-detector",
+  "created_at": "2026-08-22T20:17:23.000Z",
+  "updated_at": "2026-08-22T20:19:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121423704,
+  "storage_human": "121 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Detector - AI Text Detector",
+      "url": "https://duckduckgo.com/y.js?ad_domain=grammarly.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=IgW0OGntfvmiVc2S2m4JGpkHA7zlEWTW%2DTENDaK7nKvHV_6EWOHgMIp%2Dv26MlwG5qoM5d2CKHCVFsA2jPh3sj6Ube2%2Dg28qKho2oeTm2Yg6494nw4L3Tzh4%2DqXVbm8UEfJUqN_4mShuvBY4koJRYvo2UlNHIUiK1oSO4BZbDsDw.BF5x1sKNWz7DebqMH6Kk2A&rut=fd0b4f8082a2038873dbcdc897fec5cd8ffe9c48f1a575e8fa3b602e715f1977&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8hPVOnjV_g%2Dt6eEdaRuudBzVUCUwMN9WlGxdHPQts_VgIH9G83Dd8XX9Is2RU3HLwTq1ipXYDXU_JM21xjb9vAT4KUoGpe5sdBeA9OgUxMz2izMI5O9ayNzC7hcdTDqidf1CJj%2DoWTwHjTVUaZtPi9ZgRfZTms2xGgSAxfUoJYuE4oZZBIVs4gC0%2D1gSP80zQhLvC5JziHqOqYVYNoexE8FjV%2DJ8%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZ3JhbW1hcmx5LmNvbSUyZmFpLWRldGVjdG9yJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkNjI3Mzc5NDk4JTI2dXRtX2NvbnRlbnQlM2Q4MTM2Mzk4Nzc2NTU4MCUyNnV0bV90ZXJtJTNkQUklMjUyMHRleHQlMjUyMGRldGVjdGlvbiUyNTIwdG9vbCUyNnV0bV9idSUzZGNvcnAlMjZrZXl3b3JkaWQlM2Q4MTM2NDIzMzUyODk1NSUyNnRhcmdldGlkJTNka3dkLTgxMzY0MjMzNTI4OTU1JTNhbG9jLTY2JTI2YWRncm91cCUzZDEzMDE4MjI5MTUyOTE4NzglMjZkZXZpY2UlM2RjJTI2bWF0Y2h0eXBlJTNkYiUyNm5ldHdvcmslM2RzJTI2ZXh0ZW5zaW9uJTNkJTI2Y2xpY2tpZCUzZGU5NGRiOGJhOGM4NDExY2Y2ZGIzZDIzMDgyNzQ4ODZhJTI2Z2NsaWQlM2RlOTRkYjhiYThjODQxMWNmNmRiM2QyMzA4Mjc0ODg2YSUyNm1zY2xraWQlM2RlOTRkYjhiYThjODQxMWNmNmRiM2QyMzA4Mjc0ODg2YQ%26rlid%3De94db8ba8c8411cf6db3d2308274886a&vqd=4-238462299903066413874022335812395557729&iurl=%7B1%7DIG%3D03B3923837B7446CB7DC7EA734C66BDC%26CID%3D0D16EF57117966AE1B22F8EA100E6730%26ID%3DDevEx%2C5037.1",
+      "snippet": "Grammarly&#x27;s free AI checker is trained to detect AI-generated content and help you fix it. Detect AI-generated content from Grammarly, ChatGPT, Google Gemini, and others in a click."
+    },
+    {
+      "title": "AI Aimbot Models & YOLO Detection Models | MossyModels",
+      "url": "https://mossymodels.com/",
+      "snippet": "AI Aimbot Models & YOLO Detection Models Browse 661+ free YOLO and ONNX detection models across 43+ games. Community library for Fortnite, Valorant, Warzone, Apex Legends, and more. MossyModels is a community library of YOLO and ONNX detection models for first-person shooters."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "China&#x27;s Z.ai says new model nears Anthropic&#x27;s Mythos 5 in cyber-defence ...",
+      "url": "https://www.reuters.com/technology/chinas-zai-says-new-model-nears-anthropics-mythos-5-cyber-defence-tests-2026-08-14/",
+      "snippet": "Chinese AI startup Z.ai said on Friday its open-source GLM-5.3 model had neared Anthropic&#x27;s restricted Mythos 5 in identifying software vulnerabilities, bolstering the credentials of a Chinese ..."
+    },
+    {
+      "title": "Golfer Bryson DeChambeau Is Dating Model Mikayla Demaiter",
+      "url": "https://www.usmagazine.com/sports/news/golfer-bryson-dechambeau-is-dating-model-mikayla-demaiter/",
+      "snippet": "Professional golfer Bryson DeChambeau is dating model Mikayla Demaiter, Us can exclusively confirm. \"They are both pretty private when it comes to relationships,\" says an insider, who adds ..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RareConcepts/soad-mm3-xm-20260822",
+  "slug": "rareconcepts-soad-mm3-xm-20260822",
+  "author": "RareConcepts",
+  "url": "https://huggingface.co/RareConcepts/soad-mm3-xm-20260822",
+  "created_at": "2026-08-22T19:09:08.000Z",
+  "updated_at": "2026-08-22T21:27:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "minimaxmusic",
+    "minimaxmusic-diffusers",
+    "text-to-audio",
+    "audio",
+    "simpletuner",
+    "not-for-all-audiences",
+    "lora",
+    "template:sd-lora",
+    "standard",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3841861160,
+  "storage_human": "3.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rare Concepts",
+      "url": "https://rareconceptsnyc.com/",
+      "snippet": "Rare Concepts is a streetwear brand born in NYC and bound to be worldwide."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "RareConcepts (Rare Data Concepts) - Hugging Face",
+      "url": "https://huggingface.co/RareConcepts/models",
+      "snippet": "Org profile for Rare Data Concepts on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "rare",
+      "url": "https://www.rareconcepts.co/",
+      "snippet": "rare Find your perfect fit Discover the best of both worlds"
+    },
+    {
+      "title": "rareconcepts.com",
+      "url": "http://www.rareconcepts.com/",
+      "snippet": "rareconcepts.com Contact:"
+    }
+  ]
+}

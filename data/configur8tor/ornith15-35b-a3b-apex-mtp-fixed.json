@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "conFIGur8tor/ornith15-35b-a3b-apex-mtp-fixed",
+  "slug": "configur8tor-ornith15-35b-a3b-apex-mtp-fixed",
+  "author": "conFIGur8tor",
+  "url": "https://huggingface.co/conFIGur8tor/ornith15-35b-a3b-apex-mtp-fixed",
+  "created_at": "2026-08-23T00:10:16.000Z",
+  "updated_at": "2026-08-23T00:28:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "moe",
+    "qwen35moe",
+    "mtp",
+    "speculative-decoding",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 17437861152,
+  "storage_human": "17.4 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8",
+      "snippet": "Ornith-1.5-35B-A3B is a ~35B mixture-of-experts model with ~3B activated parameters per token (≈70 GB in bf16). The recipes below stand up an OpenAI-compatible server on 2× 80GB GPUs to leave headroom for the 256K context; adjust --tensor-parallel-size / --tp to match your hardware."
+    },
+    {
+      "title": "Ornith 1.5 35B A3B - interfaze.ai",
+      "url": "https://interfaze.ai/models/ornith-aiornith-15-35b-a3b",
+      "snippet": "Ornith 1.5 35B A3B by ornith-ai, a text-generation model with multimodal capabilities. Understand and compare multimodal features, benchmarks, and capabilities."
+    },
+    {
+      "title": "davenetdev/Ornith-1.0-35B-MTP-APEX-GGUF · Hugging Face",
+      "url": "https://huggingface.co/davenetdev/Ornith-1.0-35B-MTP-APEX-GGUF",
+      "snippet": "Ornith-1.0-35B is a self-improving agentic coding model from DeepReinforce AI, post-trained on top of Qwen3.5 with RL to jointly optimize scaffold generation and solution rollouts."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B · Models",
+      "url": "https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "Ornith-1.5-35B-A3B is a reasoning model: by default the assistant turn opens with a <think> … </think> block before the final answer. The serving recipes below enable a reasoning parser so the chain-of-thought is returned in a separate reasoning_content field, and a tool-call parser so the model&#x27;s <tool_call> blocks are surfaced as OpenAI-style tool_calls. Serving Ornith-1.5-35B-A3B requires ..."
+    },
+    {
+      "title": "Ornith 1.5 35B A3B MLX by ornith-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/ornith-ai%2FOrnith-1.5-35B-A3B-MLX,6KZxLavQxbJPE1Ff6rm8sG",
+      "snippet": "Rank the Ornith 1.5 35B A3B MLX capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}
